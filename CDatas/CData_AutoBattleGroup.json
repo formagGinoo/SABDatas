@@ -1,0 +1,1407 @@
+{
+  "className": "CData_AutoBattleGroup",
+  "timestamp": "2025-07-08T13:35:23.580Z",
+  "data": {
+    "90001": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90001",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200001,200001,200001,200001,200001]"
+    },
+    "90002": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90002",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200002,200002,200002,200002,200002]"
+    },
+    "90003": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90003",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200003,200003,200003,200003,200003]"
+    },
+    "90004": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90004",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200004,200004,200004,200004,200004]"
+    },
+    "90005": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90005",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200005,200005,200005,200005,200005]"
+    },
+    "90006": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90006",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200006,200006,200006,200006,200006]"
+    },
+    "90007": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90007",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200007,200007,200007,200007,200007]"
+    },
+    "90008": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90008",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200008,200008,200008,200008,200008]"
+    },
+    "90009": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90009",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200009,200009,200009,200009,200009]"
+    },
+    "90010": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90010",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200010,200010,200010,200010,200010]"
+    },
+    "90011": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90011",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200011,200011,200011,200011,200011]"
+    },
+    "90012": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90012",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200012,200012,200012,200012,200012]"
+    },
+    "90013": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90013",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200013,200013,200013,200013,200013]"
+    },
+    "90014": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90014",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200014,200014,200014,200014,200014]"
+    },
+    "90015": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90015",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200015,200015,200015,200015,200015]"
+    },
+    "90016": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90016",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200016,200016,200016,200016,200016]"
+    },
+    "90017": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90017",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200017,200017,200017,200017,200017]"
+    },
+    "90018": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90018",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200018,200018,200018,200018,200018]"
+    },
+    "90019": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90019",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200019,200019,200019,200019,200019]"
+    },
+    "90020": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90020",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200020,200020,200020,200020,200020]"
+    },
+    "90021": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90021",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200021,200021,200021,200021,200021]"
+    },
+    "90022": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90022",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200022,200022,200022,200022,200022]"
+    },
+    "90023": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90023",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200023,200023,200023,200023,200023]"
+    },
+    "90024": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90024",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200024,200024,200024,200024,200024]"
+    },
+    "90025": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90025",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200025,200025,200025,200025,200025]"
+    },
+    "90026": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90026",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200026,200026,200026,200026,200026]"
+    },
+    "90027": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90027",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200027,200027,200027,200027,200027]"
+    },
+    "90028": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90028",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200028,200028,200028,200028,200028]"
+    },
+    "90029": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90029",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200029,200029,200029,200029,200029]"
+    },
+    "90030": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90030",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200030,200030,200030,200030,200030]"
+    },
+    "90031": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90031",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200031,200031,200031,200031,200031]"
+    },
+    "90032": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90032",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200032,200032,200032,200032,200032]"
+    },
+    "90033": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90033",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200033,200033,200033,200033,200033]"
+    },
+    "90034": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90034",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200034,200034,200034,200034,200034]"
+    },
+    "90035": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90035",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200035,200035,200035,200035,200035]"
+    },
+    "90036": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90036",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200036,200036,200036,200036,200036]"
+    },
+    "90037": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90037",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200037,200037,200037,200037,200037]"
+    },
+    "90038": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90038",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200038,200038,200038,200038,200038]"
+    },
+    "90039": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90039",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200039,200039,200039,200039,200039]"
+    },
+    "90040": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90040",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200040,200040,200040,200040,200040]"
+    },
+    "90041": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90041",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200041,200041,200041,200041,200041]"
+    },
+    "90042": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90042",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200042,200042,200042,200042,200042]"
+    },
+    "90043": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90043",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200043,200043,200043,200043,200043]"
+    },
+    "90044": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90044",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200044,200044,200044,200044,200044]"
+    },
+    "90045": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90045",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200045,200045,200045,200045,200045]"
+    },
+    "90046": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90046",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200046,200046,200046,200046,200046]"
+    },
+    "90047": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90047",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200047,200047,200047,200047,200047]"
+    },
+    "90048": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90048",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200048,200048,200048,200048,200048]"
+    },
+    "90049": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90049",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200049,200049,200049,200049,200049]"
+    },
+    "90050": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90050",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200050,200050,200050,200050,200050]"
+    },
+    "90051": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90051",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200051,200051,200051,200051,200051]"
+    },
+    "90052": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90052",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200052,200052,200052,200052,200052]"
+    },
+    "90053": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90053",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200053,200053,200053,200053,200053]"
+    },
+    "90054": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90054",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200054,200054,200054,200054,200054]"
+    },
+    "90055": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90055",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200055,200055,200055,200055,200055]"
+    },
+    "90056": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90056",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200056,200056,200056,200056,200056]"
+    },
+    "90057": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90057",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200057,200057,200057,200057,200057]"
+    },
+    "90058": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90058",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200058,200058,200058,200058,200058]"
+    },
+    "90059": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90059",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200059,200059,200059,200059,200059]"
+    },
+    "90060": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90060",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200060,200060,200060,200060,200060]"
+    },
+    "90061": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90061",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200061,200061,200061,200061,200061]"
+    },
+    "90062": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90062",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200062,200062,200062,200062,200062]"
+    },
+    "90063": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90063",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200063,200063,200063,200063,200063]"
+    },
+    "90064": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90064",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200064,200064,200064,200064,200064]"
+    },
+    "90065": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90065",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200065,200065,200065,200065,200065]"
+    },
+    "90066": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90066",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200066,200066,200066,200066,200066]"
+    },
+    "90067": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90067",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200067,200067,200067,200067,200067]"
+    },
+    "90068": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90068",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200068,200068,200068,200068,200068]"
+    },
+    "90069": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90069",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200069,200069,200069,200069,200069]"
+    },
+    "90070": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90070",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200070,200070,200070,200070,200070]"
+    },
+    "90071": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90071",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200071,200071,200071,200071,200071]"
+    },
+    "90072": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90072",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200072,200072,200072,200072,200072]"
+    },
+    "90073": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90073",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200073,200073,200073,200073,200073]"
+    },
+    "90074": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90074",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200074,200074,200074,200074,200074]"
+    },
+    "90075": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90075",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200075,200075,200075,200075,200075]"
+    },
+    "90076": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90076",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200076,200076,200076,200076,200076]"
+    },
+    "90077": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90077",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200077,200077,200077,200077,200077]"
+    },
+    "90078": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90078",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200078,200078,200078,200078,200078]"
+    },
+    "90079": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90079",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200079,200079,200079,200079,200079]"
+    },
+    "90080": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90080",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200080,200080,200080,200080,200080]"
+    },
+    "90081": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90081",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200081,200081,200081,200081,200081]"
+    },
+    "90082": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90082",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200082,200082,200082,200082,200082]"
+    },
+    "90083": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90083",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200083,200083,200083,200083,200083]"
+    },
+    "90084": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90084",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200084,200084,200084,200084,200084]"
+    },
+    "90085": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90085",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200085,200085,200085,200085,200085]"
+    },
+    "90086": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90086",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200086,200086,200086,200086,200086]"
+    },
+    "90087": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90087",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200087,200087,200087,200087,200087]"
+    },
+    "90088": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90088",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200088,200088,200088,200088,200088]"
+    },
+    "90089": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90089",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200089,200089,200089,200089,200089]"
+    },
+    "90090": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90090",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200090,200090,200090,200090,200090]"
+    },
+    "90091": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90091",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200091,200091,200091,200091,200091]"
+    },
+    "90092": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90092",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200092,200092,200092,200092,200092]"
+    },
+    "90093": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90093",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200093,200093,200093,200093,200093]"
+    },
+    "90094": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90094",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200094,200094,200094,200094,200094]"
+    },
+    "90095": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90095",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200095,200095,200095,200095,200095]"
+    },
+    "90096": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90096",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200096,200096,200096,200096,200096]"
+    },
+    "90097": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90097",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200097,200097,200097,200097,200097]"
+    },
+    "90098": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90098",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200098,200098,200098,200098,200098]"
+    },
+    "90099": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90099",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200099,200099,200099,200099,200099]"
+    },
+    "90100": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90100",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200100,200100,200100,200100,200100]"
+    },
+    "90101": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90101",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200101,200101,200101,200101,200101]"
+    },
+    "90102": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90102",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200102,200102,200102,200102,200102]"
+    },
+    "90103": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90103",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200103,200103,200103,200103,200103]"
+    },
+    "90104": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90104",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200104,200104,200104,200104,200104]"
+    },
+    "90105": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90105",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200105,200105,200105,200105,200105]"
+    },
+    "90106": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90106",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200106,200106,200106,200106,200106]"
+    },
+    "90107": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90107",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200107,200107,200107,200107,200107]"
+    },
+    "90108": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90108",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200108,200108,200108,200108,200108]"
+    },
+    "90109": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90109",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200109,200109,200109,200109,200109]"
+    },
+    "90110": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90110",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200110,200110,200110,200110,200110]"
+    },
+    "90111": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90111",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200111,200111,200111,200111,200111]"
+    },
+    "90112": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90112",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200112,200112,200112,200112,200112]"
+    },
+    "90113": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90113",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200113,200113,200113,200113,200113]"
+    },
+    "90114": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90114",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200114,200114,200114,200114,200114]"
+    },
+    "90115": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90115",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200115,200115,200115,200115,200115]"
+    },
+    "90116": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90116",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200116,200116,200116,200116,200116]"
+    },
+    "90117": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90117",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200117,200117,200117,200117,200117]"
+    },
+    "90118": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90118",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200118,200118,200118,200118,200118]"
+    },
+    "90119": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90119",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200119,200119,200119,200119,200119]"
+    },
+    "90120": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90120",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200120,200120,200120,200120,200120]"
+    },
+    "90121": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90121",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200121,200121,200121,200121,200121]"
+    },
+    "90122": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90122",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200122,200122,200122,200122,200122]"
+    },
+    "90123": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90123",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200123,200123,200123,200123,200123]"
+    },
+    "90124": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90124",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200124,200124,200124,200124,200124]"
+    },
+    "90125": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90125",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200125,200125,200125,200125,200125]"
+    },
+    "90126": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90126",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200126,200126,200126,200126,200126]"
+    },
+    "90127": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90127",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200127,200127,200127,200127,200127]"
+    },
+    "90128": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90128",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200128,200128,200128,200128,200128]"
+    },
+    "90129": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90129",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200129,200129,200129,200129,200129]"
+    },
+    "90130": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90130",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200130,200130,200130,200130,200130]"
+    },
+    "90131": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90131",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200131,200131,200131,200131,200131]"
+    },
+    "90132": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90132",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200132,200132,200132,200132,200132]"
+    },
+    "90133": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90133",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200133,200133,200133,200133,200133]"
+    },
+    "90134": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90134",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200134,200134,200134,200134,200134]"
+    },
+    "90135": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90135",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200135,200135,200135,200135,200135]"
+    },
+    "90136": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90136",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200136,200136,200136,200136,200136]"
+    },
+    "90137": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90137",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200137,200137,200137,200137,200137]"
+    },
+    "90138": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90138",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200138,200138,200138,200138,200138]"
+    },
+    "90139": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90139",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200139,200139,200139,200139,200139]"
+    },
+    "90140": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90140",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200140,200140,200140,200140,200140]"
+    },
+    "90141": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90141",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200141,200141,200141,200141,200141]"
+    },
+    "90142": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90142",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200142,200142,200142,200142,200142]"
+    },
+    "90143": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90143",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200143,200143,200143,200143,200143]"
+    },
+    "90144": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90144",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200144,200144,200144,200144,200144]"
+    },
+    "90145": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90145",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200145,200145,200145,200145,200145]"
+    },
+    "90146": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90146",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200146,200146,200146,200146,200146]"
+    },
+    "90147": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90147",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200147,200147,200147,200147,200147]"
+    },
+    "90148": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90148",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200148,200148,200148,200148,200148]"
+    },
+    "90149": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90149",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200149,200149,200149,200149,200149]"
+    },
+    "90150": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90150",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200150,200150,200150,200150,200150]"
+    },
+    "90151": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90151",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200151,200151,200151,200151,200151]"
+    },
+    "90152": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90152",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200152,200152,200152,200152,200152]"
+    },
+    "90153": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90153",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200153,200153,200153,200153,200153]"
+    },
+    "90154": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90154",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200154,200154,200154,200154,200154]"
+    },
+    "90155": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90155",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200155,200155,200155,200155,200155]"
+    },
+    "90156": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90156",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200156,200156,200156,200156,200156]"
+    },
+    "90157": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90157",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200157,200157,200157,200157,200157]"
+    },
+    "90158": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90158",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200158,200158,200158,200158,200158]"
+    },
+    "90159": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90159",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200159,200159,200159,200159,200159]"
+    },
+    "90160": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90160",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200160,200160,200160,200160,200160]"
+    },
+    "90161": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90161",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200161,200161,200161,200161,200161]"
+    },
+    "90162": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90162",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200162,200162,200162,200162,200162]"
+    },
+    "90163": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90163",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200163,200163,200163,200163,200163]"
+    },
+    "90164": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90164",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200164,200164,200164,200164,200164]"
+    },
+    "90165": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90165",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200165,200165,200165,200165,200165]"
+    },
+    "90166": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90166",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200166,200166,200166,200166,200166]"
+    },
+    "90167": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90167",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200167,200167,200167,200167,200167]"
+    },
+    "90168": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90168",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200168,200168,200168,200168,200168]"
+    },
+    "90169": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90169",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200169,200169,200169,200169,200169]"
+    },
+    "90170": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90170",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200170,200170,200170,200170,200170]"
+    },
+    "90171": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90171",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200171,200171,200171,200171,200171]"
+    },
+    "90172": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90172",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200172,200172,200172,200172,200172]"
+    },
+    "90173": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90173",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200173,200173,200173,200173,200173]"
+    },
+    "90174": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90174",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200174,200174,200174,200174,200174]"
+    },
+    "90175": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90175",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200175,200175,200175,200175,200175]"
+    },
+    "90176": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90176",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200176,200176,200176,200176,200176]"
+    },
+    "90177": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90177",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200177,200177,200177,200177,200177]"
+    },
+    "90178": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90178",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200178,200178,200178,200178,200178]"
+    },
+    "90179": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90179",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200179,200179,200179,200179,200179]"
+    },
+    "90180": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90180",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200180,200180,200180,200180,200180]"
+    },
+    "90181": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90181",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200181,200181,200181,200181,200181]"
+    },
+    "90182": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90182",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200182,200182,200182,200182,200182]"
+    },
+    "90183": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90183",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200183,200183,200183,200183,200183]"
+    },
+    "90184": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90184",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200184,200184,200184,200184,200184]"
+    },
+    "90185": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90185",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200185,200185,200185,200185,200185]"
+    },
+    "90186": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90186",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200186,200186,200186,200186,200186]"
+    },
+    "90187": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90187",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200187,200187,200187,200187,200187]"
+    },
+    "90188": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90188",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200188,200188,200188,200188,200188]"
+    },
+    "90189": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90189",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200189,200189,200189,200189,200189]"
+    },
+    "90190": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90190",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200190,200190,200190,200190,200190]"
+    },
+    "90191": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90191",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200191,200191,200191,200191,200191]"
+    },
+    "90192": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90192",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200192,200192,200192,200192,200192]"
+    },
+    "90193": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90193",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200193,200193,200193,200193,200193]"
+    },
+    "90194": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90194",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200194,200194,200194,200194,200194]"
+    },
+    "90195": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90195",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200195,200195,200195,200195,200195]"
+    },
+    "90196": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90196",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200196,200196,200196,200196,200196]"
+    },
+    "90197": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90197",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200197,200197,200197,200197,200197]"
+    },
+    "90198": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90198",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200198,200198,200198,200198,200198]"
+    },
+    "90199": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90199",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200199,200199,200199,200199,200199]"
+    },
+    "90200": {
+      "m_bError": null,
+      "m_AutoBattleGroupID": "90200",
+      "m_CharacterID": "[20180,20080,20100,20290,20390]",
+      "m_Pos": "[2,3,8,7,13]",
+      "m_StandardBattleID": "[200200,200200,200200,200200,200200]"
+    }
+  },
+  "status": "processed_200_items"
+}

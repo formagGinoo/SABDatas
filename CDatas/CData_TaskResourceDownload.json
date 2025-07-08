@@ -1,0 +1,91 @@
+{
+  "className": "CData_TaskResourceDownload",
+  "timestamp": "2025-07-08T13:35:52.198Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_TaskID": "1",
+      "m_mTaskName": "\"Basic Feature Pack\"",
+      "m_TaskTag": null,
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "10",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pack_Hall\",\"1\"],[\"Pack_UI_Char\",\"2\"],[\"Pack_UI_Basic\",\"3\"],[\"Pack_Gacha_Video\",\"4\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_TaskID": "2",
+      "m_mTaskName": "\"Basic Stage Pack\"",
+      "m_TaskTag": null,
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "20",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pack_MainLevel_1\",\"1\"],[\"Pack_MainLevel_2\",\"2\"],[\"Pack_MainLevel_3\",\"3\"],[\"Pack_MainLevel_4\",\"4\"],[\"Pack_MainLevel_5\",\"5\"],[\"Pack_MainLevel_6\",\"6\"],[\"Pack_PermanentLevel_1\",\"7\"],[\"Pack_MainLevel_7\",\"8\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_TaskID": "3",
+      "m_mTaskName": "\"Character Resource Pack\"",
+      "m_TaskTag": null,
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "30",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pack_Char\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_TaskID": "4",
+      "m_mTaskName": "\"Extended Stages\"",
+      "m_TaskTag": null,
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "40",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pack_UI_Extended\",\"1\"],[\"Pack_MainLevel_8\",\"2\"],[\"Pack_MainLevel_9\",\"3\"],[\"Pack_PermanentLevel_2\",\"4\"],[\"Pack_MainLevel_10\",\"5\"],[\"Pack_MainLevel_11\",\"6\"],[\"Pack_MainLevel_12\",\"7\"],[\"Pack_MainLevel_13\",\"8\"],[\"Pack_MainLevel_14\",\"9\"],[\"Pack_MainLevel_15\",\"10\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_TaskID": "5",
+      "m_mTaskName": "\"Extended Features\"",
+      "m_TaskTag": null,
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "50",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"All\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_TaskID": "11",
+      "m_mTaskName": "\"New Player Resources\"",
+      "m_TaskTag": "1",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "1",
+      "m_Reward": "[]",
+      "m_ResourcePackage": "[[\"Pack_0-3\",\"1\"],[\"Pack_Hall\",\"2\"],[\"Pack_NewUser_UI\",\"3\"],[\"Pack_Gacha_Video_1st\",\"4\"],[\"Pack_2-1\",\"5\"],[\"Pack_Gacha_Video\",\"6\"],[\"Pack_MainLevel_1\",\"7\"],[\"Pack_MainLevel_2\",\"8\"],[\"Pack_MainLevel_3\",\"9\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "999": {
+      "m_bError": null,
+      "m_TaskID": "999",
+      "m_mTaskName": "\"Discarded Resources\"",
+      "m_TaskTag": "4",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "200",
+      "m_Reward": "[]",
+      "m_ResourcePackage": "[[\"Custom_Pack_Draft\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    }
+  },
+  "status": "processed_7_items"
+}

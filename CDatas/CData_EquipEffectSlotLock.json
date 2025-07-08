@@ -1,0 +1,31 @@
+{
+  "className": "CData_EquipEffectSlotLock",
+  "timestamp": "2025-07-08T13:35:33.497Z",
+  "data": {
+    "0": {
+      "m_bError": null,
+      "m_LockCnt": null,
+      "m_LockCost": "[1070,1]",
+      "m_ReOverloadCost": "[1070,1]"
+    },
+    "1": {
+      "m_bError": null,
+      "m_LockCnt": "1",
+      "m_LockCost": "[1070,2]",
+      "m_ReOverloadCost": "[1070,2]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_LockCnt": "2",
+      "m_LockCost": "[1070,3]",
+      "m_ReOverloadCost": "[1070,3]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_LockCnt": "3",
+      "m_LockCost": "[1070,4]",
+      "m_ReOverloadCost": "[1070,4]"
+    }
+  },
+  "status": "processed_4_items"
+}

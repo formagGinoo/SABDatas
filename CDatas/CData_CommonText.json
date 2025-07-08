@@ -1,0 +1,2942 @@
+{
+  "className": "CData_CommonText",
+  "timestamp": "2025-07-08T13:35:33.238Z",
+  "data": {
+    "3": {
+      "m_bError": null,
+      "m_Id": "3",
+      "m_mMessage": "\"Clear [Threads of Fate] {0}\""
+    },
+    "21": {
+      "m_bError": null,
+      "m_Id": "21",
+      "m_mMessage": "\"Obtained {0}\""
+    },
+    "1001": {
+      "m_bError": null,
+      "m_Id": "1001",
+      "m_mMessage": "\"N\""
+    },
+    "1002": {
+      "m_bError": null,
+      "m_Id": "1002",
+      "m_mMessage": "\"R\""
+    },
+    "1003": {
+      "m_bError": null,
+      "m_Id": "1003",
+      "m_mMessage": "\"SR\""
+    },
+    "1004": {
+      "m_bError": null,
+      "m_Id": "1004",
+      "m_mMessage": "\"SSR\""
+    },
+    "1005": {
+      "m_bError": null,
+      "m_Id": "1005",
+      "m_mMessage": "\"SP\""
+    },
+    "1101": {
+      "m_bError": null,
+      "m_Id": "1101",
+      "m_mMessage": "\"Tier 1\""
+    },
+    "1102": {
+      "m_bError": null,
+      "m_Id": "1102",
+      "m_mMessage": "\"Tier 2\""
+    },
+    "1103": {
+      "m_bError": null,
+      "m_Id": "1103",
+      "m_mMessage": "\"Tier 3\""
+    },
+    "1104": {
+      "m_bError": null,
+      "m_Id": "1104",
+      "m_mMessage": "\"Tier 4\""
+    },
+    "1105": {
+      "m_bError": null,
+      "m_Id": "1105",
+      "m_mMessage": "\"Tier 5\""
+    },
+    "1106": {
+      "m_bError": null,
+      "m_Id": "1106",
+      "m_mMessage": "\"Tier 6\""
+    },
+    "1107": {
+      "m_bError": null,
+      "m_Id": "1107",
+      "m_mMessage": "\"Tier 7\""
+    },
+    "1108": {
+      "m_bError": null,
+      "m_Id": "1108",
+      "m_mMessage": "\"Tier 8\""
+    },
+    "1109": {
+      "m_bError": null,
+      "m_Id": "1109",
+      "m_mMessage": "\"Tier 9\""
+    },
+    "1110": {
+      "m_bError": null,
+      "m_Id": "1110",
+      "m_mMessage": "\"Echo\""
+    },
+    "1200": {
+      "m_bError": null,
+      "m_Id": "1200",
+      "m_mMessage": "\"Story\""
+    },
+    "1201": {
+      "m_bError": null,
+      "m_Id": "1201",
+      "m_mMessage": "\"Eliminate\""
+    },
+    "1202": {
+      "m_bError": null,
+      "m_Id": "1202",
+      "m_mMessage": "\"Guard\""
+    },
+    "1203": {
+      "m_bError": null,
+      "m_Id": "1203",
+      "m_mMessage": "\"Assault\""
+    },
+    "1301": {
+      "m_bError": null,
+      "m_Id": "1301",
+      "m_mMessage": "\"Evolution\""
+    },
+    "1302": {
+      "m_bError": null,
+      "m_Id": "1302",
+      "m_mMessage": "\"Upgrade\""
+    },
+    "2000": {
+      "m_bError": null,
+      "m_Id": "2000",
+      "m_mMessage": "\"Blood Power\""
+    },
+    "2001": {
+      "m_bError": null,
+      "m_Id": "2001",
+      "m_mMessage": "\"Rarity\""
+    },
+    "2002": {
+      "m_bError": null,
+      "m_Id": "2002",
+      "m_mMessage": "\"Level\""
+    },
+    "2003": {
+      "m_bError": null,
+      "m_Id": "2003",
+      "m_mMessage": "\"Acquisition Time\""
+    },
+    "2004": {
+      "m_bError": null,
+      "m_Id": "2004",
+      "m_mMessage": "\"Preparing the candle holder...\""
+    },
+    "2005": {
+      "m_bError": null,
+      "m_Id": "2005",
+      "m_mMessage": "\"Opening the music box...\""
+    },
+    "2006": {
+      "m_bError": null,
+      "m_Id": "2006",
+      "m_mMessage": "\"Servants are shipping the ancient book...\""
+    },
+    "2007": {
+      "m_bError": null,
+      "m_Id": "2007",
+      "m_mMessage": "\"Sealing the ancient book...\""
+    },
+    "2008": {
+      "m_bError": null,
+      "m_Id": "2008",
+      "m_mMessage": "\"Check Home Decor Step 1...\""
+    },
+    "2009": {
+      "m_bError": null,
+      "m_Id": "2009",
+      "m_mMessage": "\"Check Home Decor Step 2...\""
+    },
+    "2010": {
+      "m_bError": null,
+      "m_Id": "2010",
+      "m_mMessage": "\"Cleaning the main hall...\""
+    },
+    "2011": {
+      "m_bError": null,
+      "m_Id": "2011",
+      "m_mMessage": "\"Cleaning the corridor...\""
+    },
+    "2012": {
+      "m_bError": null,
+      "m_Id": "2012",
+      "m_mMessage": "\"Updating territory resources...\""
+    },
+    "2013": {
+      "m_bError": null,
+      "m_Id": "2013",
+      "m_mMessage": "\"Connecting to territory...\""
+    },
+    "2014": {
+      "m_bError": null,
+      "m_Id": "2014",
+      "m_mMessage": "\"Ready soon...\""
+    },
+    "2015": {
+      "m_bError": null,
+      "m_Id": "2015",
+      "m_mMessage": "\"Spirit Siphon LV.\""
+    },
+    "2020": {
+      "m_bError": null,
+      "m_Id": "2020",
+      "m_mMessage": "\"Insufficient items. Unable to use.\""
+    },
+    "2021": {
+      "m_bError": null,
+      "m_Id": "2021",
+      "m_mMessage": "\"<style=Highlight>%s</style><style=Positive>▶%s</style>\""
+    },
+    "2022": {
+      "m_bError": null,
+      "m_Id": "2022",
+      "m_mMessage": "\"<style=Highlight>%s%%</style><style=Positive>▶%s%%</style>\""
+    },
+    "2023": {
+      "m_bError": null,
+      "m_Id": "2023",
+      "m_mMessage": "\"<color=#FF0000>*Note: Downloading resources without Wi-Fi will use mobile data. Please check your connection before downloading.</color>\""
+    },
+    "2024": {
+      "m_bError": null,
+      "m_Id": "2024",
+      "m_mMessage": "\"Don't show again today.\""
+    },
+    "2025": {
+      "m_bError": null,
+      "m_Id": "2025",
+      "m_mMessage": "\"B\""
+    },
+    "2026": {
+      "m_bError": null,
+      "m_Id": "2026",
+      "m_mMessage": "\"KB\""
+    },
+    "2027": {
+      "m_bError": null,
+      "m_Id": "2027",
+      "m_mMessage": "\"MB\""
+    },
+    "2028": {
+      "m_bError": null,
+      "m_Id": "2028",
+      "m_mMessage": "\"GB\""
+    },
+    "2029": {
+      "m_bError": null,
+      "m_Id": "2029",
+      "m_mMessage": "\"Extracting resources:\""
+    },
+    "2030": {
+      "m_bError": null,
+      "m_Id": "2030",
+      "m_mMessage": "\"Initializing shaders...<br><alpha=#50>First launch may take longer than usual. Please be patient.\""
+    },
+    "2100": {
+      "m_bError": null,
+      "m_Id": "2100",
+      "m_mMessage": "\"※ Crescent Moon\n• Only Scroll of Firstborn can be used to perform Herald.\n• There is a limit on the number of Herald attempts (as shown). Once all attempts are used, this event will close.\n• Lords are guaranteed at least 1 SSR Vassal per certain number of Herald attempts.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive the Spirit of that Vassal instead.\n• Spirits can be used to perform Spirit Siphon on Vassals, increasing their level cap.\n\n※ Spirit Scraps\n• When a Vassal you own has reached its Spirit Siphon limit, or you have enough Spirits for them to reach their Spirit Siphon limit, you will receive Spirit Scraps instead.\n• Can be used to redeem items in the Shop - Covenant Shop.\""
+    },
+    "2101": {
+      "m_bError": null,
+      "m_Id": "2101",
+      "m_mMessage": "\"※ Special Pity Rule\n• In the Blue Dawn event, <style=Highlight>if no SSR Vassal is obtained after 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal</style>\n• This is a common Herald Event whose pity counter is not shared with other events.\n\n※ Blue Dawn\n• Herald using Soothing Embrace or Moon Tear.\n• Limits for daily Heralds apply, and attempts reset every day.\n\n※ Altar of Invocation\n• Altar of Invocation will be unlocked after Heralding 40 times in the Blue Dawn event.\n• You may select 5 SSR Vassals from each of the three factions in Altar of Invocation: The Church, Kingdom, and Bloodborn\n• When obtaining an SSR Vassal from these three factions through Herald, it is guaranteed to be one of those chosen in Altar of Invocation.\n• SSR Vassals from factions not listed above (e.g., Ancestral) are not affected by Altar of Invocation.\n• Note: Altar of Invocation requires 15 Vassals to take effect\n\n※ Fragrant Residue\n• Each Herald in the Blue Dawn event will provide 1 Fragrant Residue.\n• Can be redeemed for items in the Shop - Echo Shop.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2102": {
+      "m_bError": null,
+      "m_Id": "2102",
+      "m_mMessage": "\"<style=Highlight>※ Pity Rule\n• SSR Vassal x1 is guaranteed every 60 Heralds\n• Counter resets upon obtaining an SSR Vassal</style>\n\n<style=InfoTitle>※ Special Event\n• Herald using Vestige of Love or Moon Tear\n• The drop rate of featured Vassals is significantly increased here\n• Limit for daily Herald attempts applies\n\n<style=InfoTitle>※ Quaint Residue\n• Each Herald will provide 1 Quaint Residue\n• Can be redeemed for items in the Shop - Echo Shop\n• Unused Quaint Residue won't be removed after the limited Embrace ends\n\n<style=InfoTitle>※ Spirit\n• Receive a corresponding Spirit upon obtaining duplicate Vassals\n• Spirits are used for Spirit Siphon, increasing a Vassal's level cap\n\n<style=InfoTitle>※ Spirit Scraps\n• When obtaining a duplicate Vassal whose Spirit Siphon is already at its limit, or if you already have enough Spirits to max out a Vassal's Spirit Siphon, you will receive Spirit Scraps instead\n• Can be used to redeem items in Shop - Covenant Shop\""
+    },
+    "2103": {
+      "m_bError": null,
+      "m_Id": "2103",
+      "m_mMessage": "\"The displayed rates of all Blessings will be rounded to 4 decimals.\""
+    },
+    "2104": {
+      "m_bError": null,
+      "m_Id": "2104",
+      "m_mMessage": "\"<style=Highlight>Refining</style> regenerates the <style=Highlight>level</style> of Blessings without changing effect types. Note that by doing so, each effect will be regenerated.\nThe level and effect types of locked Blessings, however, will not change.\nAfter refining, confirm whether to keep the original or replace it with newly generated values.\nLocked Blessings will remain locked.\""
+    },
+    "2105": {
+      "m_bError": null,
+      "m_Id": "2105",
+      "m_mMessage": "\"The displayed rates of all Blessings will be rounded to 4 decimals.\""
+    },
+    "2106": {
+      "m_bError": null,
+      "m_Id": "2106",
+      "m_mMessage": "\"Each slot can be granted with 1 Blessing, and the rate for each slot is independent.\nRate :\""
+    },
+    "2107": {
+      "m_bError": null,
+      "m_Id": "2107",
+      "m_mMessage": "\"For each Blessing Slot, if the check (roll) passes, a Blessing will be granted. If not, the original Blessing will be removed.\nDifferent Blessing types have different drop rates (listed below).\nEach Blessing type has multiple levels (usually 15), each featuring different drop rates.\nThe same type of Blessing cannot be obtained repeatedly, and Blessings already obtained are excluded from rolls.\nThe roll formula is as follows: [Listed Rate of a Blessing ÷ (100% - Total Rate of Excluded Blessings)].\nFor locked Blessings, their level and type won't change during Recast or Refinement.\""
+    },
+    "2108": {
+      "m_bError": null,
+      "m_Id": "2108",
+      "m_mMessage": "\"※ Celestial Concerto\n• Herald using Perennial Band\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2109": {
+      "m_bError": null,
+      "m_Id": "2109",
+      "m_mMessage": "\"※ Herald Rules\nThe Lost Heirs of Hecate limited Herald Event is now open. This is a limited Herald Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Lamia</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lamia</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Lost Heirs of Hecate limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2110": {
+      "m_bError": null,
+      "m_Id": "2110",
+      "m_mMessage": "\"※ Herald Rules\nThe Whispers of the Deep limited Herald Event is now open. This is a limited Herald Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Dalcarlo</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Dalcarlo</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Whispers of the Deep limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2111": {
+      "m_bError": null,
+      "m_Id": "2111",
+      "m_mMessage": "\"{0}/<color=#d2b265>{1}</color>\""
+    },
+    "2121": {
+      "m_bError": null,
+      "m_Id": "2121",
+      "m_mMessage": "\"Permission Request\""
+    },
+    "2122": {
+      "m_bError": null,
+      "m_Id": "2122",
+      "m_mMessage": "\"Allow 'Silver and Blood' to send you notifications?\""
+    },
+    "2123": {
+      "m_bError": null,
+      "m_Id": "2123",
+      "m_mMessage": "\"Allow\""
+    },
+    "2124": {
+      "m_bError": null,
+      "m_Id": "2124",
+      "m_mMessage": "\"Deny\""
+    },
+    "3001": {
+      "m_bError": null,
+      "m_Id": "3001",
+      "m_mMessage": "\"Max: LV. {0}\""
+    },
+    "10001": {
+      "m_bError": null,
+      "m_Id": "10001",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "10002": {
+      "m_bError": null,
+      "m_Id": "10002",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "10003": {
+      "m_bError": null,
+      "m_Id": "10003",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "10004": {
+      "m_bError": null,
+      "m_Id": "10004",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "10005": {
+      "m_bError": null,
+      "m_Id": "10005",
+      "m_mMessage": "\"Mock Hunt\""
+    },
+    "10006": {
+      "m_bError": null,
+      "m_Id": "10006",
+      "m_mMessage": "\"Round {0}\""
+    },
+    "10007": {
+      "m_bError": null,
+      "m_Id": "10007",
+      "m_mMessage": "\"Day {0}\""
+    },
+    "10008": {
+      "m_bError": null,
+      "m_Id": "10008",
+      "m_mMessage": "\"（{0}/{1}）\""
+    },
+    "10009": {
+      "m_bError": null,
+      "m_Id": "10009",
+      "m_mMessage": "\"Remaining Time: {0}\""
+    },
+    "20001": {
+      "m_bError": null,
+      "m_Id": "20001",
+      "m_mMessage": "\"Consumables\""
+    },
+    "20002": {
+      "m_bError": null,
+      "m_Id": "20002",
+      "m_mMessage": "\"Materials\""
+    },
+    "20003": {
+      "m_bError": null,
+      "m_Id": "20003",
+      "m_mMessage": "\"Equipment\""
+    },
+    "20004": {
+      "m_bError": null,
+      "m_Id": "20004",
+      "m_mMessage": "\"Error\""
+    },
+    "20005": {
+      "m_bError": null,
+      "m_Id": "20005",
+      "m_mMessage": "\"An Error Occurred\""
+    },
+    "20006": {
+      "m_bError": null,
+      "m_Id": "20006",
+      "m_mMessage": "\"Confirm\""
+    },
+    "20007": {
+      "m_bError": null,
+      "m_Id": "20007",
+      "m_mMessage": "\"Owned:\""
+    },
+    "20008": {
+      "m_bError": null,
+      "m_Id": "20008",
+      "m_mMessage": "\"Level:\""
+    },
+    "20009": {
+      "m_bError": null,
+      "m_Id": "20009",
+      "m_mMessage": "\"Chapter Reward can be claimed\""
+    },
+    "20010": {
+      "m_bError": null,
+      "m_Id": "20010",
+      "m_mMessage": "\"Next stage of tasks unlocks in {time}\""
+    },
+    "20011": {
+      "m_bError": null,
+      "m_Id": "20011",
+      "m_mMessage": "\"●Might +30% DMG → Intellect -15% DMG\n●Intellect +30% DMG → Agility -15% DMG\n●Agility +30% DMG → Might -15% DMG\""
+    },
+    "20012": {
+      "m_bError": null,
+      "m_Id": "20012",
+      "m_mMessage": "\"h\""
+    },
+    "20013": {
+      "m_bError": null,
+      "m_Id": "20013",
+      "m_mMessage": "\"%s<size=54>%%</size>\""
+    },
+    "20014": {
+      "m_bError": null,
+      "m_Id": "20014",
+      "m_mMessage": "\"<style=Negative>%s</style>/%s\""
+    },
+    "20015": {
+      "m_bError": null,
+      "m_Id": "20015",
+      "m_mMessage": "\"<color=white>%s</color>/%s\""
+    },
+    "20016": {
+      "m_bError": null,
+      "m_Id": "20016",
+      "m_mMessage": "\"-Locked-\""
+    },
+    "20017": {
+      "m_bError": null,
+      "m_Id": "20017",
+      "m_mMessage": "\"No remaining challenge attempts of the current raid\""
+    },
+    "20018": {
+      "m_bError": null,
+      "m_Id": "20018",
+      "m_mMessage": "\"No Available Rewards\""
+    },
+    "20019": {
+      "m_bError": null,
+      "m_Id": "20019",
+      "m_mMessage": "\"Survey\""
+    },
+    "20020": {
+      "m_bError": null,
+      "m_Id": "20020",
+      "m_mMessage": "\"Close\""
+    },
+    "20021": {
+      "m_bError": null,
+      "m_Id": "20021",
+      "m_mMessage": "\"Feature not available\""
+    },
+    "20022": {
+      "m_bError": null,
+      "m_Id": "20022",
+      "m_mMessage": "\"The name cannot be blank.\""
+    },
+    "20023": {
+      "m_bError": null,
+      "m_Id": "20023",
+      "m_mMessage": "\"The Campaign unlocks on 10/28/2023 00:00:00 (GMT-8)\""
+    },
+    "20024": {
+      "m_bError": null,
+      "m_Id": "20024",
+      "m_mMessage": "\"Starts in {num}s\""
+    },
+    "20025": {
+      "m_bError": null,
+      "m_Id": "20025",
+      "m_mMessage": "\"Copied\""
+    },
+    "20026": {
+      "m_bError": null,
+      "m_Id": "20026",
+      "m_mMessage": "\"Insufficient %s\""
+    },
+    "20027": {
+      "m_bError": null,
+      "m_Id": "20027",
+      "m_mMessage": "\"The name has been taken.\""
+    },
+    "20028": {
+      "m_bError": null,
+      "m_Id": "20028",
+      "m_mMessage": "\"0-0\""
+    },
+    "20032": {
+      "m_bError": null,
+      "m_Id": "20032",
+      "m_mMessage": "\"Reset Level\""
+    },
+    "20033": {
+      "m_bError": null,
+      "m_Id": "20033",
+      "m_mMessage": "\"LV.%s\""
+    },
+    "20034": {
+      "m_bError": null,
+      "m_Id": "20034",
+      "m_mMessage": "\"The character must be above LV. 1\""
+    },
+    "20035": {
+      "m_bError": null,
+      "m_Id": "20035",
+      "m_mMessage": "\"Must not exceed 16 characters.\""
+    },
+    "20036": {
+      "m_bError": null,
+      "m_Id": "20036",
+      "m_mMessage": "\"Daily Chances %s/%s\""
+    },
+    "20037": {
+      "m_bError": null,
+      "m_Id": "20037",
+      "m_mMessage": "\"Currently unavailable\""
+    },
+    "20038": {
+      "m_bError": null,
+      "m_Id": "20038",
+      "m_mMessage": "\"Locked\""
+    },
+    "20039": {
+      "m_bError": null,
+      "m_Id": "20039",
+      "m_mMessage": "\"Round %d/%d\""
+    },
+    "20040": {
+      "m_bError": null,
+      "m_Id": "20040",
+      "m_mMessage": "\"%s%% off\""
+    },
+    "20041": {
+      "m_bError": null,
+      "m_Id": "20041",
+      "m_mMessage": "\"Free\""
+    },
+    "20042": {
+      "m_bError": null,
+      "m_Id": "20042",
+      "m_mMessage": "\"Items update in %s\""
+    },
+    "20043": {
+      "m_bError": null,
+      "m_Id": "20043",
+      "m_mMessage": "\"Owned: %s\""
+    },
+    "20044": {
+      "m_bError": null,
+      "m_Id": "20044",
+      "m_mMessage": "\"Stage %s\""
+    },
+    "20045": {
+      "m_bError": null,
+      "m_Id": "20045",
+      "m_mMessage": "\"%s/%s\""
+    },
+    "20046": {
+      "m_bError": null,
+      "m_Id": "20046",
+      "m_mMessage": "\"%s<color=#616161><size=44>-%s</size></color>\""
+    },
+    "20047": {
+      "m_bError": null,
+      "m_Id": "20047",
+      "m_mMessage": "\"Stock: %s/%s\""
+    },
+    "20048": {
+      "m_bError": null,
+      "m_Id": "20048",
+      "m_mMessage": "\"%s/%s\""
+    },
+    "20049": {
+      "m_bError": null,
+      "m_Id": "20049",
+      "m_mMessage": "\"x%s\""
+    },
+    "20050": {
+      "m_bError": null,
+      "m_Id": "20050",
+      "m_mMessage": "\"<color=black>%s</color>/%s\""
+    },
+    "20051": {
+      "m_bError": null,
+      "m_Id": "20051",
+      "m_mMessage": "\"Free to Join\""
+    },
+    "20052": {
+      "m_bError": null,
+      "m_Id": "20052",
+      "m_mMessage": "\"Upon Approval\""
+    },
+    "20053": {
+      "m_bError": null,
+      "m_Id": "20053",
+      "m_mMessage": "\"Invite Only\""
+    },
+    "20054": {
+      "m_bError": null,
+      "m_Id": "20054",
+      "m_mMessage": "\"Unlocks at Clan LV. {0}.\""
+    },
+    "20055": {
+      "m_bError": null,
+      "m_Id": "20055",
+      "m_mMessage": "\"Activity:\""
+    },
+    "20056": {
+      "m_bError": null,
+      "m_Id": "20056",
+      "m_mMessage": "\"Blood Power\""
+    },
+    "20057": {
+      "m_bError": null,
+      "m_Id": "20057",
+      "m_mMessage": "\"Level\""
+    },
+    "20058": {
+      "m_bError": null,
+      "m_Id": "20058",
+      "m_mMessage": "\"Today's Activity\""
+    },
+    "20059": {
+      "m_bError": null,
+      "m_Id": "20059",
+      "m_mMessage": "\"Recent Login\""
+    },
+    "20060": {
+      "m_bError": null,
+      "m_Id": "20060",
+      "m_mMessage": "\"Clan Level: {0}\""
+    },
+    "20061": {
+      "m_bError": null,
+      "m_Id": "20061",
+      "m_mMessage": "\"Clan Notice\""
+    },
+    "20062": {
+      "m_bError": null,
+      "m_Id": "20062",
+      "m_mMessage": "\"Edit the Clan notice.\""
+    },
+    "20063": {
+      "m_bError": null,
+      "m_Id": "20063",
+      "m_mMessage": "\"Clan Bio\""
+    },
+    "20064": {
+      "m_bError": null,
+      "m_Id": "20064",
+      "m_mMessage": "\"Edit the Clan Bio\""
+    },
+    "20065": {
+      "m_bError": null,
+      "m_Id": "20065",
+      "m_mMessage": "\"Clan 7-Day's Activity: {0}\""
+    },
+    "20066": {
+      "m_bError": null,
+      "m_Id": "20066",
+      "m_mMessage": "\"Total DMG\""
+    },
+    "20067": {
+      "m_bError": null,
+      "m_Id": "20067",
+      "m_mMessage": "\"Battle Attempts\""
+    },
+    "20068": {
+      "m_bError": null,
+      "m_Id": "20068",
+      "m_mMessage": "\"Not Available Yet\""
+    },
+    "20069": {
+      "m_bError": null,
+      "m_Id": "20069",
+      "m_mMessage": "\"Previous Ranking: {0}\""
+    },
+    "20070": {
+      "m_bError": null,
+      "m_Id": "20070",
+      "m_mMessage": "\"Clan War in Progress\""
+    },
+    "20071": {
+      "m_bError": null,
+      "m_Id": "20071",
+      "m_mMessage": "\"End Time: {0}\""
+    },
+    "20072": {
+      "m_bError": null,
+      "m_Id": "20072",
+      "m_mMessage": "\"Round {0}\""
+    },
+    "20073": {
+      "m_bError": null,
+      "m_Id": "20073",
+      "m_mMessage": "\"Today's Remaining Battle Attempts: {0}\""
+    },
+    "20074": {
+      "m_bError": null,
+      "m_Id": "20074",
+      "m_mMessage": "\"Other Lords enter combat within 2 minutes.\""
+    },
+    "20075": {
+      "m_bError": null,
+      "m_Id": "20075",
+      "m_mMessage": "\"Not Listed\""
+    },
+    "20076": {
+      "m_bError": null,
+      "m_Id": "20076",
+      "m_mMessage": "\"DMG Dealt: {0}\""
+    },
+    "20077": {
+      "m_bError": null,
+      "m_Id": "20077",
+      "m_mMessage": "\"No Rankings\""
+    },
+    "20078": {
+      "m_bError": null,
+      "m_Id": "20078",
+      "m_mMessage": "\"Total DMG: {0}\""
+    },
+    "20079": {
+      "m_bError": null,
+      "m_Id": "20079",
+      "m_mMessage": "\"Battle Attempts: {0}\""
+    },
+    "20080": {
+      "m_bError": null,
+      "m_Id": "20080",
+      "m_mMessage": "\"No Records\""
+    },
+    "20081": {
+      "m_bError": null,
+      "m_Id": "20081",
+      "m_mMessage": "\"No Applications\""
+    },
+    "20082": {
+      "m_bError": null,
+      "m_Id": "20082",
+      "m_mMessage": "\"Clan Hunt Settlement in progress.\""
+    },
+    "20083": {
+      "m_bError": null,
+      "m_Id": "20083",
+      "m_mMessage": "\"Ended\""
+    },
+    "20084": {
+      "m_bError": null,
+      "m_Id": "20084",
+      "m_mMessage": "\"Equipment Refinement\""
+    },
+    "20085": {
+      "m_bError": null,
+      "m_Id": "20085",
+      "m_mMessage": "\"Refining regenerates the level of Blessings without changing their effect types.\""
+    },
+    "20086": {
+      "m_bError": null,
+      "m_Id": "20086",
+      "m_mMessage": "\"Equipment Recasting\""
+    },
+    "20087": {
+      "m_bError": null,
+      "m_Id": "20087",
+      "m_mMessage": "\"Recasting results in a recast check (roll) for each slot, potentially altering/losing/adding existing blessings.\""
+    },
+    "20088": {
+      "m_bError": null,
+      "m_Id": "20088",
+      "m_mMessage": "\"Defeated all bosses of this Clan War.\""
+    },
+    "20089": {
+      "m_bError": null,
+      "m_Id": "20089",
+      "m_mMessage": "\"Exiting midway will not consume daily battle attempts.\""
+    },
+    "20090": {
+      "m_bError": null,
+      "m_Id": "20090",
+      "m_mMessage": "\"Effective DMG: {0}\""
+    },
+    "20091": {
+      "m_bError": null,
+      "m_Id": "20091",
+      "m_mMessage": "\"Battle invalid. Clan War already ended.\""
+    },
+    "20092": {
+      "m_bError": null,
+      "m_Id": "20092",
+      "m_mMessage": "\"{0}: {1}\""
+    },
+    "20093": {
+      "m_bError": null,
+      "m_Id": "20093",
+      "m_mMessage": "\"LV. {0} - {1} {2}\""
+    },
+    "20094": {
+      "m_bError": null,
+      "m_Id": "20094",
+      "m_mMessage": "\"+%s\""
+    },
+    "20095": {
+      "m_bError": null,
+      "m_Id": "20095",
+      "m_mMessage": "\"Don't show again today.\""
+    },
+    "20096": {
+      "m_bError": null,
+      "m_Id": "20096",
+      "m_mMessage": "\"Do not show again\""
+    },
+    "20097": {
+      "m_bError": null,
+      "m_Id": "20097",
+      "m_mMessage": "\"{0}\""
+    },
+    "20098": {
+      "m_bError": null,
+      "m_Id": "20098",
+      "m_mMessage": "\"Remaining Time: {0}\""
+    },
+    "20100": {
+      "m_bError": null,
+      "m_Id": "20100",
+      "m_mMessage": "\"Get {0} to <color=#d67e31>LV. {1}</color>\""
+    },
+    "20101": {
+      "m_bError": null,
+      "m_Id": "20101",
+      "m_mMessage": "\"Recast\""
+    },
+    "20102": {
+      "m_bError": null,
+      "m_Id": "20102",
+      "m_mMessage": "\"Refinement\""
+    },
+    "20103": {
+      "m_bError": null,
+      "m_Id": "20103",
+      "m_mMessage": "\"Recast Result\""
+    },
+    "20104": {
+      "m_bError": null,
+      "m_Id": "20104",
+      "m_mMessage": "\"Refinement Result\""
+    },
+    "20105": {
+      "m_bError": null,
+      "m_Id": "20105",
+      "m_mMessage": "\"To Be Confirmed\""
+    },
+    "20106": {
+      "m_bError": null,
+      "m_Id": "20106",
+      "m_mMessage": "\"Tap to view all tasks.\""
+    },
+    "20107": {
+      "m_bError": null,
+      "m_Id": "20107",
+      "m_mMessage": "\"There are task rewards to be claimed.\""
+    },
+    "20108": {
+      "m_bError": null,
+      "m_Id": "20108",
+      "m_mMessage": "\"When equipped by a {0} Vassal, the attributes of this piece will increase by 30%.\""
+    },
+    "20109": {
+      "m_bError": null,
+      "m_Id": "20109",
+      "m_mMessage": "\"Guaranteed 1 <color=#f14646>SSR</color> Vassal in 10 Heralds!\""
+    },
+    "20110": {
+      "m_bError": null,
+      "m_Id": "20110",
+      "m_mMessage": "\"Bearer: {0}\""
+    },
+    "20111": {
+      "m_bError": null,
+      "m_Id": "20111",
+      "m_mMessage": "\"Not in a Clan\""
+    },
+    "20112": {
+      "m_bError": null,
+      "m_Id": "20112",
+      "m_mMessage": "\"Lineup {0}\""
+    },
+    "20200": {
+      "m_bError": null,
+      "m_Id": "20200",
+      "m_mMessage": "\"Free: {0}\""
+    },
+    "20201": {
+      "m_bError": null,
+      "m_Id": "20201",
+      "m_mMessage": "\"Paid: {0}\""
+    },
+    "20202": {
+      "m_bError": null,
+      "m_Id": "20202",
+      "m_mMessage": "\"???\""
+    },
+    "20203": {
+      "m_bError": null,
+      "m_Id": "20203",
+      "m_mMessage": "\"Heading to destination... {0}%\""
+    },
+    "20204": {
+      "m_bError": null,
+      "m_Id": "20204",
+      "m_mMessage": "\"Vassals' levels will be set to LV.{0}\""
+    },
+    "20205": {
+      "m_bError": null,
+      "m_Id": "20205",
+      "m_mMessage": "\"Remaining: {0}\""
+    },
+    "20206": {
+      "m_bError": null,
+      "m_Id": "20206",
+      "m_mMessage": "\"Edit\nCurrent: Defense Lineup {0}\""
+    },
+    "20207": {
+      "m_bError": null,
+      "m_Id": "20207",
+      "m_mMessage": "\"Round {0} Start\""
+    },
+    "20208": {
+      "m_bError": null,
+      "m_Id": "20208",
+      "m_mMessage": "\"Round {0} End\""
+    },
+    "20209": {
+      "m_bError": null,
+      "m_Id": "20209",
+      "m_mMessage": "\"Round {0}\""
+    },
+    "20210": {
+      "m_bError": null,
+      "m_Id": "20210",
+      "m_mMessage": "\"<color=#FEF1CB><size=42>{0}</size></color> <color=#9F9179><size=24>Fragment</size></color>\""
+    },
+    "20211": {
+      "m_bError": null,
+      "m_Id": "20211",
+      "m_mMessage": "\"Leadership will automatically transfer after a 60-minute cooldown.\""
+    },
+    "20212": {
+      "m_bError": null,
+      "m_Id": "20212",
+      "m_mMessage": "\"Leadership will automatically transfer in {0}.\""
+    },
+    "20300": {
+      "m_bError": null,
+      "m_Id": "20300",
+      "m_mMessage": "\"Request All\""
+    },
+    "20301": {
+      "m_bError": null,
+      "m_Id": "20301",
+      "m_mMessage": "\"Accept All\""
+    },
+    "20302": {
+      "m_bError": null,
+      "m_Id": "20302",
+      "m_mMessage": "\"Send/Receive\""
+    },
+    "20303": {
+      "m_bError": null,
+      "m_Id": "20303",
+      "m_mMessage": "\"Current Rank: {0}\""
+    },
+    "20304": {
+      "m_bError": null,
+      "m_Id": "20304",
+      "m_mMessage": "\"Recommended Friends\""
+    },
+    "20305": {
+      "m_bError": null,
+      "m_Id": "20305",
+      "m_mMessage": "\"Search Results\""
+    },
+    "20306": {
+      "m_bError": null,
+      "m_Id": "20306",
+      "m_mMessage": "\"Friend List\""
+    },
+    "20307": {
+      "m_bError": null,
+      "m_Id": "20307",
+      "m_mMessage": "\"Block List\""
+    },
+    "20308": {
+      "m_bError": null,
+      "m_Id": "20308",
+      "m_mMessage": "\"Friend Request\""
+    },
+    "20309": {
+      "m_bError": null,
+      "m_Id": "20309",
+      "m_mMessage": "\"No Friends\""
+    },
+    "20310": {
+      "m_bError": null,
+      "m_Id": "20310",
+      "m_mMessage": "\"No Friend Recommendations\""
+    },
+    "20311": {
+      "m_bError": null,
+      "m_Id": "20311",
+      "m_mMessage": "\"No Friend Requests\""
+    },
+    "20312": {
+      "m_bError": null,
+      "m_Id": "20312",
+      "m_mMessage": "\"No Blocked Players\""
+    },
+    "20313": {
+      "m_bError": null,
+      "m_Id": "20313",
+      "m_mMessage": "\"<color=#656565>{0} min ago</color>.\""
+    },
+    "20314": {
+      "m_bError": null,
+      "m_Id": "20314",
+      "m_mMessage": "\"<color=#656565>{0} hr ago</color>.\""
+    },
+    "20315": {
+      "m_bError": null,
+      "m_Id": "20315",
+      "m_mMessage": "\"<color=#656565>{0} d ago </color>.\""
+    },
+    "20316": {
+      "m_bError": null,
+      "m_Id": "20316",
+      "m_mMessage": "\"<color=#368e72>Online</color>.\""
+    },
+    "20321": {
+      "m_bError": null,
+      "m_Id": "20321",
+      "m_mMessage": "\"Recommend\""
+    },
+    "20322": {
+      "m_bError": null,
+      "m_Id": "20322",
+      "m_mMessage": "\"Friends\""
+    },
+    "20323": {
+      "m_bError": null,
+      "m_Id": "20323",
+      "m_mMessage": "\"Clan\""
+    },
+    "20324": {
+      "m_bError": null,
+      "m_Id": "20324",
+      "m_mMessage": "\"{0}\""
+    },
+    "20325": {
+      "m_bError": null,
+      "m_Id": "20325",
+      "m_mMessage": "\"Completed.\""
+    },
+    "20326": {
+      "m_bError": null,
+      "m_Id": "20326",
+      "m_mMessage": "\"Maximum {0} Records Stored\""
+    },
+    "20327": {
+      "m_bError": null,
+      "m_Id": "20327",
+      "m_mMessage": "\"Slot 1: {0}\""
+    },
+    "20328": {
+      "m_bError": null,
+      "m_Id": "20328",
+      "m_mMessage": "\"Slot 2: {0}\""
+    },
+    "20329": {
+      "m_bError": null,
+      "m_Id": "20329",
+      "m_mMessage": "\"Slot 3: {0}\""
+    },
+    "20330": {
+      "m_bError": null,
+      "m_Id": "20330",
+      "m_mMessage": "\"Let the hunt begin. Seize their throats before first light.\""
+    },
+    "20331": {
+      "m_bError": null,
+      "m_Id": "20331",
+      "m_mMessage": "\"Challenge Countdown\""
+    },
+    "20332": {
+      "m_bError": null,
+      "m_Id": "20332",
+      "m_mMessage": "\"Display Countdown\""
+    },
+    "20333": {
+      "m_bError": null,
+      "m_Id": "20333",
+      "m_mMessage": "\"{0}: <color=#B2452B>{1} </color>\""
+    },
+    "20334": {
+      "m_bError": null,
+      "m_Id": "20334",
+      "m_mMessage": "\"Rewards will be distributed based on All Rankings after all Challenges are concluded.\""
+    },
+    "20335": {
+      "m_bError": null,
+      "m_Id": "20335",
+      "m_mMessage": "\"Points are calculated based on Stage Rankings then rounded towards All Rankings.\""
+    },
+    "20336": {
+      "m_bError": null,
+      "m_Id": "20336",
+      "m_mMessage": "\"Top 500 Rewards\""
+    },
+    "20337": {
+      "m_bError": null,
+      "m_Id": "20337",
+      "m_mMessage": "\"Bottom 500 Rewards\""
+    },
+    "20338": {
+      "m_bError": null,
+      "m_Id": "20338",
+      "m_mMessage": "\"Rank Rules: 1-3000\""
+    },
+    "20339": {
+      "m_bError": null,
+      "m_Id": "20339",
+      "m_mMessage": "\"Rank Rules: Unranked (3000+)\""
+    },
+    "20340": {
+      "m_bError": null,
+      "m_Id": "20340",
+      "m_mMessage": "\"{0}s\""
+    },
+    "20341": {
+      "m_bError": null,
+      "m_Id": "20341",
+      "m_mMessage": "\"{0} time(s) daily\""
+    },
+    "20342": {
+      "m_bError": null,
+      "m_Id": "20342",
+      "m_mMessage": "\"Free (<color=#8CC774>{0}</color>/{1})\""
+    },
+    "20343": {
+      "m_bError": null,
+      "m_Id": "20343",
+      "m_mMessage": "\"Free after {0}.\""
+    },
+    "20344": {
+      "m_bError": null,
+      "m_Id": "20344",
+      "m_mMessage": "\"Refresh after {0}.\""
+    },
+    "20345": {
+      "m_bError": null,
+      "m_Id": "20345",
+      "m_mMessage": "\"All Rankings update daily at 04:00 (delays may occur).\""
+    },
+    "20346": {
+      "m_bError": null,
+      "m_Id": "20346",
+      "m_mMessage": "\"Stage Rankings update in real-time.\""
+    },
+    "20347": {
+      "m_bError": null,
+      "m_Id": "20347",
+      "m_mMessage": "\"Not Yet Attempted\""
+    },
+    "20348": {
+      "m_bError": null,
+      "m_Id": "20348",
+      "m_mMessage": "\"Daily Herald x10(<color=#8CC774>{0}</color>/{1})\""
+    },
+    "20349": {
+      "m_bError": null,
+      "m_Id": "20349",
+      "m_mMessage": "\"Free after {0}.\""
+    },
+    "30001": {
+      "m_bError": null,
+      "m_Id": "30001",
+      "m_mMessage": "\"Penalty\""
+    },
+    "30002": {
+      "m_bError": null,
+      "m_Id": "30002",
+      "m_mMessage": "\"Repent\""
+    },
+    "30003": {
+      "m_bError": null,
+      "m_Id": "30003",
+      "m_mMessage": "\"Stun\""
+    },
+    "30004": {
+      "m_bError": null,
+      "m_Id": "30004",
+      "m_mMessage": "\"Vulnerability\""
+    },
+    "30005": {
+      "m_bError": null,
+      "m_Id": "30005",
+      "m_mMessage": "\"Bleed\""
+    },
+    "30006": {
+      "m_bError": null,
+      "m_Id": "30006",
+      "m_mMessage": "\"Burn\""
+    },
+    "30007": {
+      "m_bError": null,
+      "m_Id": "30007",
+      "m_mMessage": "\"50% DMG IMM.\""
+    },
+    "30008": {
+      "m_bError": null,
+      "m_Id": "30008",
+      "m_mMessage": "\"90% DMG IMM.\""
+    },
+    "30009": {
+      "m_bError": null,
+      "m_Id": "30009",
+      "m_mMessage": "\"Hardening x10\""
+    },
+    "30010": {
+      "m_bError": null,
+      "m_Id": "30010",
+      "m_mMessage": "\"Hardening x15\""
+    },
+    "30011": {
+      "m_bError": null,
+      "m_Id": "30011",
+      "m_mMessage": "\"Invincibility\""
+    },
+    "31001": {
+      "m_bError": null,
+      "m_Id": "31001",
+      "m_mMessage": "\"ATK Up\""
+    },
+    "31002": {
+      "m_bError": null,
+      "m_Id": "31002",
+      "m_mMessage": "\"ATK Down\""
+    },
+    "31003": {
+      "m_bError": null,
+      "m_Id": "31003",
+      "m_mMessage": "\"P. DEF Up\""
+    },
+    "31004": {
+      "m_bError": null,
+      "m_Id": "31004",
+      "m_mMessage": "\"P. DEF Down\""
+    },
+    "31005": {
+      "m_bError": null,
+      "m_Id": "31005",
+      "m_mMessage": "\"M. DEF Up\""
+    },
+    "31006": {
+      "m_bError": null,
+      "m_Id": "31006",
+      "m_mMessage": "\"M. DEF Down\""
+    },
+    "31007": {
+      "m_bError": null,
+      "m_Id": "31007",
+      "m_mMessage": "\"All DEF Up\""
+    },
+    "31008": {
+      "m_bError": null,
+      "m_Id": "31008",
+      "m_mMessage": "\"All DEF Down\""
+    },
+    "31009": {
+      "m_bError": null,
+      "m_Id": "31009",
+      "m_mMessage": "\"HP Up\""
+    },
+    "31010": {
+      "m_bError": null,
+      "m_Id": "31010",
+      "m_mMessage": "\"HP Down\""
+    },
+    "31011": {
+      "m_bError": null,
+      "m_Id": "31011",
+      "m_mMessage": "\"P. DMG Up\""
+    },
+    "31012": {
+      "m_bError": null,
+      "m_Id": "31012",
+      "m_mMessage": "\"P. DMG Down\""
+    },
+    "31013": {
+      "m_bError": null,
+      "m_Id": "31013",
+      "m_mMessage": "\"M. DMG Up\""
+    },
+    "31014": {
+      "m_bError": null,
+      "m_Id": "31014",
+      "m_mMessage": "\"M. DMG Down\""
+    },
+    "31015": {
+      "m_bError": null,
+      "m_Id": "31015",
+      "m_mMessage": "\"All DMG Up\""
+    },
+    "31016": {
+      "m_bError": null,
+      "m_Id": "31016",
+      "m_mMessage": "\"All DMG Down\""
+    },
+    "31017": {
+      "m_bError": null,
+      "m_Id": "31017",
+      "m_mMessage": "\"ATK SPD Up\""
+    },
+    "31018": {
+      "m_bError": null,
+      "m_Id": "31018",
+      "m_mMessage": "\"ATK SPD Down\""
+    },
+    "31019": {
+      "m_bError": null,
+      "m_Id": "31019",
+      "m_mMessage": "\"MOV SPD Up\""
+    },
+    "31020": {
+      "m_bError": null,
+      "m_Id": "31020",
+      "m_mMessage": "\"MOV SPD Down\""
+    },
+    "31021": {
+      "m_bError": null,
+      "m_Id": "31021",
+      "m_mMessage": "\"CRIT Up\""
+    },
+    "31022": {
+      "m_bError": null,
+      "m_Id": "31022",
+      "m_mMessage": "\"CRIT Down\""
+    },
+    "31023": {
+      "m_bError": null,
+      "m_Id": "31023",
+      "m_mMessage": "\"CRIT DMG Up\""
+    },
+    "31024": {
+      "m_bError": null,
+      "m_Id": "31024",
+      "m_mMessage": "\"CRIT DMG Down\""
+    },
+    "31025": {
+      "m_bError": null,
+      "m_Id": "31025",
+      "m_mMessage": "\"P. DMG Taken Up\""
+    },
+    "31026": {
+      "m_bError": null,
+      "m_Id": "31026",
+      "m_mMessage": "\"P. DMG Taken Down\""
+    },
+    "31027": {
+      "m_bError": null,
+      "m_Id": "31027",
+      "m_mMessage": "\"M. DMG Taken Up\""
+    },
+    "31028": {
+      "m_bError": null,
+      "m_Id": "31028",
+      "m_mMessage": "\"M. DMG Taken Down\""
+    },
+    "31029": {
+      "m_bError": null,
+      "m_Id": "31029",
+      "m_mMessage": "\"All DMG Taken Up\""
+    },
+    "31030": {
+      "m_bError": null,
+      "m_Id": "31030",
+      "m_mMessage": "\"All DMG Taken Down\""
+    },
+    "31031": {
+      "m_bError": null,
+      "m_Id": "31031",
+      "m_mMessage": "\"CRIT Resist Rate Up\""
+    },
+    "31032": {
+      "m_bError": null,
+      "m_Id": "31032",
+      "m_mMessage": "\"CRIT Resist Rate Down\""
+    },
+    "31033": {
+      "m_bError": null,
+      "m_Id": "31033",
+      "m_mMessage": "\"CRIT DMG Taken Up\""
+    },
+    "31034": {
+      "m_bError": null,
+      "m_Id": "31034",
+      "m_mMessage": "\"CRIT DMG Taken Down\""
+    },
+    "31035": {
+      "m_bError": null,
+      "m_Id": "31035",
+      "m_mMessage": "\"Healing Dealt Up\""
+    },
+    "31036": {
+      "m_bError": null,
+      "m_Id": "31036",
+      "m_mMessage": "\"Healing Dealt Down\""
+    },
+    "31037": {
+      "m_bError": null,
+      "m_Id": "31037",
+      "m_mMessage": "\"HP Recovery Up\""
+    },
+    "31038": {
+      "m_bError": null,
+      "m_Id": "31038",
+      "m_mMessage": "\"HP Recovery Down\""
+    },
+    "31039": {
+      "m_bError": null,
+      "m_Id": "31039",
+      "m_mMessage": "\"Dodge Rate Up\""
+    },
+    "31040": {
+      "m_bError": null,
+      "m_Id": "31040",
+      "m_mMessage": "\"Dodge Rate Down\""
+    },
+    "31041": {
+      "m_bError": null,
+      "m_Id": "31041",
+      "m_mMessage": "\"Continuous Regen\""
+    },
+    "31042": {
+      "m_bError": null,
+      "m_Id": "31042",
+      "m_mMessage": "\"Shield Received UP\""
+    },
+    "31043": {
+      "m_bError": null,
+      "m_Id": "31043",
+      "m_mMessage": "\"Shield Received DOWN\""
+    },
+    "31044": {
+      "m_bError": null,
+      "m_Id": "31044",
+      "m_mMessage": "\"CRIT DMG Dealt UP\""
+    },
+    "31045": {
+      "m_bError": null,
+      "m_Id": "31045",
+      "m_mMessage": "\"CRIT DMG Dealt DOWN\""
+    },
+    "32001": {
+      "m_bError": null,
+      "m_Id": "32001",
+      "m_mMessage": "\"Immunity\""
+    },
+    "32002": {
+      "m_bError": null,
+      "m_Id": "32002",
+      "m_mMessage": "\"Dodge\""
+    },
+    "32003": {
+      "m_bError": null,
+      "m_Id": "32003",
+      "m_mMessage": "\"{0}d\""
+    },
+    "32004": {
+      "m_bError": null,
+      "m_Id": "32004",
+      "m_mMessage": "\"{0}h\""
+    },
+    "32005": {
+      "m_bError": null,
+      "m_Id": "32005",
+      "m_mMessage": "\"{0}m\""
+    },
+    "32006": {
+      "m_bError": null,
+      "m_Id": "32006",
+      "m_mMessage": "\"{0}s\""
+    },
+    "40001": {
+      "m_bError": null,
+      "m_Id": "40001",
+      "m_mMessage": "\"Basic ATK\""
+    },
+    "40002": {
+      "m_bError": null,
+      "m_Id": "40002",
+      "m_mMessage": "\"Special\""
+    },
+    "40003": {
+      "m_bError": null,
+      "m_Id": "40003",
+      "m_mMessage": "\"Ultimate\""
+    },
+    "40004": {
+      "m_bError": null,
+      "m_Id": "40004",
+      "m_mMessage": "\"Talent\""
+    },
+    "40005": {
+      "m_bError": null,
+      "m_Id": "40005",
+      "m_mMessage": "\"Passive\""
+    },
+    "50001": {
+      "m_bError": null,
+      "m_Id": "50001",
+      "m_mMessage": "\"Hypertension: 30%\""
+    },
+    "50002": {
+      "m_bError": null,
+      "m_Id": "50002",
+      "m_mMessage": "\"Hypertension: 60%\""
+    },
+    "50003": {
+      "m_bError": null,
+      "m_Id": "50003",
+      "m_mMessage": "\"Hypertension: 80%\""
+    },
+    "50004": {
+      "m_bError": null,
+      "m_Id": "50004",
+      "m_mMessage": "\"Hypertension: 85%\""
+    },
+    "50005": {
+      "m_bError": null,
+      "m_Id": "50005",
+      "m_mMessage": "\"Hypertension: 90%\""
+    },
+    "50006": {
+      "m_bError": null,
+      "m_Id": "50006",
+      "m_mMessage": "\"Hypertension: 95%\""
+    },
+    "50007": {
+      "m_bError": null,
+      "m_Id": "50007",
+      "m_mMessage": "\"Hypertension: 25%\""
+    },
+    "50008": {
+      "m_bError": null,
+      "m_Id": "50008",
+      "m_mMessage": "\"Hypertension: 50%\""
+    },
+    "50009": {
+      "m_bError": null,
+      "m_Id": "50009",
+      "m_mMessage": "\"Hypertension: 75%\""
+    },
+    "50101": {
+      "m_bError": null,
+      "m_Id": "50101",
+      "m_mMessage": "\"Defeat Baphomet's summons to deal DMG to it.\""
+    },
+    "50102": {
+      "m_bError": null,
+      "m_Id": "50102",
+      "m_mMessage": "\"Destroy the Sun Cross swiftly to stop the meteor fall.\""
+    },
+    "50103": {
+      "m_bError": null,
+      "m_Id": "50103",
+      "m_mMessage": "\"Destroy the Decaying Biomass swiftly to stop the charging.\""
+    },
+    "50104": {
+      "m_bError": null,
+      "m_Id": "50104",
+      "m_mMessage": "\"Defeat the summons to deal DMG to the Astrolabe.\""
+    },
+    "50105": {
+      "m_bError": null,
+      "m_Id": "50105",
+      "m_mMessage": "\"Quickly break both 'Discipline' and 'Punishment' crystals to reduce Phantom of Aeon's Hypertension buildup.\""
+    },
+    "50106": {
+      "m_bError": null,
+      "m_Id": "50106",
+      "m_mMessage": "\"The 'Judgement' crystal creates Malediction cards and must be destroyed first.\""
+    },
+    "50107": {
+      "m_bError": null,
+      "m_Id": "50107",
+      "m_mMessage": "\"Deal enough DMG to interrupt Phantom of Aeon's charged skill!\""
+    },
+    "50108": {
+      "m_bError": null,
+      "m_Id": "50108",
+      "m_mMessage": "\"Defeat the Elite Pale Bloodwolf on wings to prevent summoning.\""
+    },
+    "50109": {
+      "m_bError": null,
+      "m_Id": "50109",
+      "m_mMessage": "\"Destroy the Moonlight Sword swiftly to interrupt the skill.\""
+    },
+    "50110": {
+      "m_bError": null,
+      "m_Id": "50110",
+      "m_mMessage": "\"Destroy the Anchor quickly to rescue allied units.\""
+    },
+    "50111": {
+      "m_bError": null,
+      "m_Id": "50111",
+      "m_mMessage": "\"Ranna's tentacles can be attacked before retracting.\""
+    },
+    "50112": {
+      "m_bError": null,
+      "m_Id": "50112",
+      "m_mMessage": "\"Ranna is Weakened! Attack her Head!\""
+    },
+    "50113": {
+      "m_bError": null,
+      "m_Id": "50113",
+      "m_mMessage": "\"Destroy Blake's Thunder Blade to obtain Electric Essence.\""
+    },
+    "50114": {
+      "m_bError": null,
+      "m_Id": "50114",
+      "m_mMessage": "\"Deal enough DMG to interrupt Blake's Silver Voltaic Beam.\""
+    },
+    "50115": {
+      "m_bError": null,
+      "m_Id": "50115",
+      "m_mMessage": "\"The Vassal holding Electric Essence will take DMG over time. Use Ultimate to release Electric Essence.\""
+    },
+    "50116": {
+      "m_bError": null,
+      "m_Id": "50116",
+      "m_mMessage": "\"Destroy all Spirit Bone Towers to remove the Nightmare Lord's damage reduction shield.\""
+    },
+    "50117": {
+      "m_bError": null,
+      "m_Id": "50117",
+      "m_mMessage": "\"The Spirit Bone Tower is Detached! Use Piera's Ultimate to capture it!\""
+    },
+    "50118": {
+      "m_bError": null,
+      "m_Id": "50118",
+      "m_mMessage": "\"Eliminating Plague Hatchlings deals strong DMG to Sheila the Firstborn.\""
+    },
+    "100001": {
+      "m_bError": null,
+      "m_Id": "100001",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "100002": {
+      "m_bError": null,
+      "m_Id": "100002",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "100003": {
+      "m_bError": null,
+      "m_Id": "100003",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "100004": {
+      "m_bError": null,
+      "m_Id": "100004",
+      "m_mMessage": "\"Victory\""
+    },
+    "100005": {
+      "m_bError": null,
+      "m_Id": "100005",
+      "m_mMessage": "\"Defeat\""
+    },
+    "100006": {
+      "m_bError": null,
+      "m_Id": "100006",
+      "m_mMessage": "\"{0} {1}/{2}\""
+    },
+    "100007": {
+      "m_bError": null,
+      "m_Id": "100007",
+      "m_mMessage": "\"Mission{0}\""
+    },
+    "100008": {
+      "m_bError": null,
+      "m_Id": "100008",
+      "m_mMessage": "\"%s/m\""
+    },
+    "100009": {
+      "m_bError": null,
+      "m_Id": "100009",
+      "m_mMessage": "\"%s%%\""
+    },
+    "100010": {
+      "m_bError": null,
+      "m_Id": "100010",
+      "m_mMessage": "\"%s/h\""
+    },
+    "100011": {
+      "m_bError": null,
+      "m_Id": "100011",
+      "m_mMessage": "\"SSR drop rate: <style=Highlight>%s%%</style>\""
+    },
+    "100012": {
+      "m_bError": null,
+      "m_Id": "100012",
+      "m_mMessage": "\"SR drop rate: <style=Highlight>%s%%</style>\""
+    },
+    "100013": {
+      "m_bError": null,
+      "m_Id": "100013",
+      "m_mMessage": "\"Basic Drop Rate: <style=Highlight>%s%%</style>\""
+    },
+    "100014": {
+      "m_bError": null,
+      "m_Id": "100014",
+      "m_mMessage": "\"Basic Drop Rate: <style=Highlight>%s%%</style>\""
+    },
+    "100015": {
+      "m_bError": null,
+      "m_Id": "100015",
+      "m_mMessage": "\"Basic Drop Rate: <style=Highlight>%s%%</style>\""
+    },
+    "100016": {
+      "m_bError": null,
+      "m_Id": "100016",
+      "m_mMessage": "\"%s ~ %s\""
+    },
+    "100017": {
+      "m_bError": null,
+      "m_Id": "100017",
+      "m_mMessage": "\"≥%s\""
+    },
+    "100018": {
+      "m_bError": null,
+      "m_Id": "100018",
+      "m_mMessage": "\"Use {0} x{1} to purchase?\""
+    },
+    "100019": {
+      "m_bError": null,
+      "m_Id": "100019",
+      "m_mMessage": "\"Exit\""
+    },
+    "100020": {
+      "m_bError": null,
+      "m_Id": "100020",
+      "m_mMessage": "\"Exit\""
+    },
+    "100021": {
+      "m_bError": null,
+      "m_Id": "100021",
+      "m_mMessage": "\"Quit\""
+    },
+    "100022": {
+      "m_bError": null,
+      "m_Id": "100022",
+      "m_mMessage": "\"Just Now\""
+    },
+    "100023": {
+      "m_bError": null,
+      "m_Id": "100023",
+      "m_mMessage": "\"%s min ago\""
+    },
+    "100024": {
+      "m_bError": null,
+      "m_Id": "100024",
+      "m_mMessage": "\"%s hr ago\""
+    },
+    "100025": {
+      "m_bError": null,
+      "m_Id": "100025",
+      "m_mMessage": "\"%s d ago\""
+    },
+    "100027": {
+      "m_bError": null,
+      "m_Id": "100027",
+      "m_mMessage": "\"Auto Blood Augmentation\""
+    },
+    "100028": {
+      "m_bError": null,
+      "m_Id": "100028",
+      "m_mMessage": "\"In the Gauntlet, Vassal levels are set to a fixed LV.{0}\""
+    },
+    "100029": {
+      "m_bError": null,
+      "m_Id": "100029",
+      "m_mMessage": "\"<style=Positive>+%s</style>\""
+    },
+    "100030": {
+      "m_bError": null,
+      "m_Id": "100030",
+      "m_mMessage": "\"Downloading necessary resources...\""
+    },
+    "100031": {
+      "m_bError": null,
+      "m_Id": "100031",
+      "m_mMessage": "\"Background Download\""
+    },
+    "100032": {
+      "m_bError": null,
+      "m_Id": "100032",
+      "m_mMessage": "\"Downloading Voice Pack\""
+    },
+    "100033": {
+      "m_bError": null,
+      "m_Id": "100033",
+      "m_mMessage": "\"Downloading texts...\""
+    },
+    "100034": {
+      "m_bError": null,
+      "m_Id": "100034",
+      "m_mMessage": "\"Cancel Download\""
+    },
+    "100035": {
+      "m_bError": null,
+      "m_Id": "100035",
+      "m_mMessage": "\"<size=68>%s</size>/%s\""
+    },
+    "100036": {
+      "m_bError": null,
+      "m_Id": "100036",
+      "m_mMessage": "\"<size=90>%s</size>/%s\""
+    },
+    "100037": {
+      "m_bError": null,
+      "m_Id": "100037",
+      "m_mMessage": "\"{0}<style=Highlight><color=#a65f30>{1}</style>\""
+    },
+    "100038": {
+      "m_bError": null,
+      "m_Id": "100038",
+      "m_mMessage": "\"Signed in for <color=#a38125>%s</color> day(s) in total.\""
+    },
+    "100039": {
+      "m_bError": null,
+      "m_Id": "100039",
+      "m_mMessage": "\"Log in to the game for <color=#a38125>%s</color> day(s) and choose your own SSR Vassal!\""
+    },
+    "100040": {
+      "m_bError": null,
+      "m_Id": "100040",
+      "m_mMessage": "\"Insufficient Transfusion Level\""
+    },
+    "100041": {
+      "m_bError": null,
+      "m_Id": "100041",
+      "m_mMessage": "\"Today's Activity: {0}\""
+    },
+    "100042": {
+      "m_bError": null,
+      "m_Id": "100042",
+      "m_mMessage": "\"<color=#BBBBBB>{0} min ago</color>\""
+    },
+    "100043": {
+      "m_bError": null,
+      "m_Id": "100043",
+      "m_mMessage": "\"<color=#BBBBBB>{0} hr ago</color>\""
+    },
+    "100044": {
+      "m_bError": null,
+      "m_Id": "100044",
+      "m_mMessage": "\"<color=#BBBBBB>{0} d ago </color>\""
+    },
+    "100045": {
+      "m_bError": null,
+      "m_Id": "100045",
+      "m_mMessage": "\"<color=#368e72>Online</color>\""
+    },
+    "100046": {
+      "m_bError": null,
+      "m_Id": "100046",
+      "m_mMessage": "\"Upgrade available after reaching Awakening Ritual LV. {0}\""
+    },
+    "100047": {
+      "m_bError": null,
+      "m_Id": "100047",
+      "m_mMessage": "\"Upgrade available after reaching Blood Transfusion LV. {0}.\""
+    },
+    "100048": {
+      "m_bError": null,
+      "m_Id": "100048",
+      "m_mMessage": "\"Max level reached.\""
+    },
+    "100050": {
+      "m_bError": null,
+      "m_Id": "100050",
+      "m_mMessage": "\"Player not found.\""
+    },
+    "100051": {
+      "m_bError": null,
+      "m_Id": "100051",
+      "m_mMessage": "\"Player has already joined a clan. Cannot invite.\""
+    },
+    "100052": {
+      "m_bError": null,
+      "m_Id": "100052",
+      "m_mMessage": "\"Member: {0}\""
+    },
+    "100053": {
+      "m_bError": null,
+      "m_Id": "100053",
+      "m_mMessage": "\"UID: {0}\""
+    },
+    "100054": {
+      "m_bError": null,
+      "m_Id": "100054",
+      "m_mMessage": "\"Title Page\""
+    },
+    "100055": {
+      "m_bError": null,
+      "m_Id": "100055",
+      "m_mMessage": "\"Memoir\""
+    },
+    "100056": {
+      "m_bError": null,
+      "m_Id": "100056",
+      "m_mMessage": "\"Sonnet\""
+    },
+    "100057": {
+      "m_bError": null,
+      "m_Id": "100057",
+      "m_mMessage": "\"Quotes\""
+    },
+    "100058": {
+      "m_bError": null,
+      "m_Id": "100058",
+      "m_mMessage": "\"<color=#64625E>{0} min ago</color>\""
+    },
+    "100059": {
+      "m_bError": null,
+      "m_Id": "100059",
+      "m_mMessage": "\"<color=#64625E>{0} hr ago</color>\""
+    },
+    "100060": {
+      "m_bError": null,
+      "m_Id": "100060",
+      "m_mMessage": "\"<color=#64625E>{0} d ago </color>\""
+    },
+    "100061": {
+      "m_bError": null,
+      "m_Id": "100061",
+      "m_mMessage": "\"<color=#64625E>Online</color>\""
+    },
+    "100062": {
+      "m_bError": null,
+      "m_Id": "100062",
+      "m_mMessage": "\"Join Date: {0}\""
+    },
+    "100063": {
+      "m_bError": null,
+      "m_Id": "100063",
+      "m_mMessage": "\"Reach Affinity Rank {0}.\""
+    },
+    "100064": {
+      "m_bError": null,
+      "m_Id": "100064",
+      "m_mMessage": "\"Progress [Threads of Fate] to {0}.\""
+    },
+    "100065": {
+      "m_bError": null,
+      "m_Id": "100065",
+      "m_mMessage": "\"Insufficient Crucible Passes. Redeem with {0}×{1}?<line-height=105%>\n<size=32><alpha=#80><line-height=125%>Free Challenge Attempts will be used first. When out of free attempts, each attempt costs 1 Crucible Pass.\""
+    },
+    "100067": {
+      "m_bError": null,
+      "m_Id": "100067",
+      "m_mMessage": "\"{1} x{0} needed to proceed. Would you like to spend {3} x{2} to purchase?<line-height=105%>\n<size=32><alpha=#80><line-height=125%>Consumes Moon Tears (Free).\nMoon Tears (Paid) are consumed when Moon Tears (Free) are insufficient.\""
+    },
+    "100068": {
+      "m_bError": null,
+      "m_Id": "100068",
+      "m_mMessage": "\"Unlock Memoir {0}\""
+    },
+    "100069": {
+      "m_bError": null,
+      "m_Id": "100069",
+      "m_mMessage": "\"Unlock Sonnet {0}\""
+    },
+    "100070": {
+      "m_bError": null,
+      "m_Id": "100070",
+      "m_mMessage": "\"Unlock Interlude {0}\""
+    },
+    "100071": {
+      "m_bError": null,
+      "m_Id": "100071",
+      "m_mMessage": "\"Unlock Quote {0}\""
+    },
+    "100072": {
+      "m_bError": null,
+      "m_Id": "100072",
+      "m_mMessage": "\"Event Time Remaining\""
+    },
+    "100073": {
+      "m_bError": null,
+      "m_Id": "100073",
+      "m_mMessage": "\"Reward Time Remaining\""
+    },
+    "100074": {
+      "m_bError": null,
+      "m_Id": "100074",
+      "m_mMessage": "\"LV. {0}\""
+    },
+    "100075": {
+      "m_bError": null,
+      "m_Id": "100075",
+      "m_mMessage": "\"<color=#B2452B>LV. {0}</color>\""
+    },
+    "100076": {
+      "m_bError": null,
+      "m_Id": "100076",
+      "m_mMessage": "\"Complete {0} to unlock\""
+    },
+    "100077": {
+      "m_bError": null,
+      "m_Id": "100077",
+      "m_mMessage": "\"%s<size=30>/%s</size>\""
+    },
+    "100078": {
+      "m_bError": null,
+      "m_Id": "100078",
+      "m_mMessage": "\"<color=#FF0000>{0}</color>s until Auto-Deploy and Blood Augmentation activate.\""
+    },
+    "100079": {
+      "m_bError": null,
+      "m_Id": "100079",
+      "m_mMessage": "\"<color=#FF0000>{0}</color>s until Auto-Deploy and Battle commence.\""
+    },
+    "100081": {
+      "m_bError": null,
+      "m_Id": "100081",
+      "m_mMessage": "\"Ultimates will be automatically triggered in a Proxy Battle.\""
+    },
+    "100082": {
+      "m_bError": null,
+      "m_Id": "100082",
+      "m_mMessage": "\"Unlocks at Hall of Honor LV. {0}\""
+    },
+    "100083": {
+      "m_bError": null,
+      "m_Id": "100083",
+      "m_mMessage": "\"<color=#98FF00>Unlocked</color>\""
+    },
+    "100084": {
+      "m_bError": null,
+      "m_Id": "100084",
+      "m_mMessage": "\"Day {0}\""
+    },
+    "100085": {
+      "m_bError": null,
+      "m_Id": "100085",
+      "m_mMessage": "\"Previous Constellation {0} observed.\""
+    },
+    "100086": {
+      "m_bError": null,
+      "m_Id": "100086",
+      "m_mMessage": "\"Required {0} observed.\""
+    },
+    "100087": {
+      "m_bError": null,
+      "m_Id": "100087",
+      "m_mMessage": "\"{0}/{1}\""
+    },
+    "100088": {
+      "m_bError": null,
+      "m_Id": "100088",
+      "m_mMessage": "\"Time does not match.\""
+    },
+    "100089": {
+      "m_bError": null,
+      "m_Id": "100089",
+      "m_mMessage": "\"Time matches.\""
+    },
+    "100090": {
+      "m_bError": null,
+      "m_Id": "100090",
+      "m_mMessage": "\"Location does not match.\""
+    },
+    "100091": {
+      "m_bError": null,
+      "m_Id": "100091",
+      "m_mMessage": "\"Location matches.\""
+    },
+    "100092": {
+      "m_bError": null,
+      "m_Id": "100092",
+      "m_mMessage": "\"Herald {0} times to unlock.\""
+    },
+    "100093": {
+      "m_bError": null,
+      "m_Id": "100093",
+      "m_mMessage": "\"Unowned\""
+    },
+    "100094": {
+      "m_bError": null,
+      "m_Id": "100094",
+      "m_mMessage": "\"More Vassal slots are still available. Let system auto-fill Lineup and enter battle? Tap Cancel to enter with current selection.\""
+    },
+    "100095": {
+      "m_bError": null,
+      "m_Id": "100095",
+      "m_mMessage": "\"Today's Remaining Attempts: {0}/{1}\""
+    },
+    "100100": {
+      "m_bError": null,
+      "m_Id": "100100",
+      "m_mMessage": "\"Dear users, \n\nBefore you officially start the next process of the termination of the game account (the “Account”) for Silver and Blood(the “Game”), we'd like to make the following statements for your attention: after termination of the Account, all data (the “Data” which includes but not limited to the avatars, nicknames, battle histories, heroes, skins and other virtual props or items purchased or acquired in the Game, speeches, regions, chat records in the Game, etc. of all characters in the Account) in the Account will be deleted or anonymized, and the related products and services that have been previously connected to the Account will no longer be available, unless otherwise provided by laws and regulations or this Agreement. Once the Account is terminated, it cannot be restored. Please be careful.\n\nIf you decide to terminate your Account after deliberation, please be sure to carefully read and fully understand this Agreement and agree to all the contents hereof. Some important clauses may be bolded, color-marked or otherwise reasonably brought to your attention. This Agreement is jointly concluded by you and VIZTA PTE.LTD. (hereinafter referred to as VIZTA or we/us) as a legally binding instrument. By starting the termination process you shall be deemed to have agreed to and complied with this Agreement entirety.        \n\n1.You acknowledge and agree that upon termination of your Account, there will (may) be consequences including but not limited to the following, which you are solely liable for:\n\n1.1 You will not be able to access the Account, and your in-Game friends will not be able to interact with you in the Game.\n\n1.2 You will no longer be able to retrieve, access, obtain, continue to use, and recall your Data in Game, nor will you have the right to ask us to retrieve the aforementioned Data, including, but not limited to, the following Account information, character information, and database information.\n\n1.3 You are aware that when the Account is terminated, the in-Game property of the Account will also be deleted. Therefore, you are specifically advised to confirm if your in-Game property, or in-Game property associated with the Account has been settled before termination of your Account. Once you terminate the Account, you will be deemed to have voluntarily forfeited any in-Game property that may exist in your Account (including but not limited to any in-Game property that has accrued during your use of the Game and that may accrue in the future) and that we have the right to clear any such in-Game property, you shall be responsible for such risk related to the above clear and you agree that you will not seek recovery or compensation from us for any such in-Game property.\n         \nThe aforesaid in-Game property include but are not limited to: the rights and interests and levels of additional paid membership; all data related to the growth and upgrading of Game characters (including but not limited to experience value, honor value, prestige value, title, etc.); unused in-Game virtual currency, virtual props and other virtual items (such as diamonds, bundles, props, subscriptions, etc.); unexpired services that have been purchased; other in-Game property generated but not used or expected in-Game property in the future, etc.\n\n1.4 Once the Account is terminated, it cannot be recovered. If you log onto the Game again with the same device after termination, a new Account will be generated. If only the character is deleted, the character cannot be recovered once terminated. When you log onto the Game using this device again after deletion, a new character will be created in the original Account if no other characters are available; If there are still characters that have not been deleted in the original Account, no new characters will be generated.\n\n1.5 Once the Account is terminated (referring to the expiration of the Cooling-Off Period), the Terms of Service signed by and between you and us regarding the Game will be terminated (except for those that have been agreed to continue to take effect). However, the termination of such Agreement and Terms of Service shall not affect the liabilities you should bear for using this Game service before the termination of the Account, which you are still obliged to bear, including but not limited to the possible liabilities for breach of aforesaid contract, damages and performance obligations.\n\n1.6 If you use the platform account for third-party login on other platforms, canceling this Game account will generally not affect your continued use of other platforms. However, please confirm the rules for the use of related accounts by such other platforms to avoid unnecessary losses. This platform is not responsible for related problems caused by account cancellation.\n       \n1.7 Other consequences (if any) arising from Account termination.\n\n2.Before you apply or continue to apply for termination of your Account, in order to protect your Account security and related rights and interests, you should check first and ensure that the Account you apply for termination has met the following conditions in the meantime, which include but are not limited to:\n\n2.1 The Account is legally owned and accessed by yourself and complies with the provisions on Account in the Terms of Service and relevant applicable rules.\n\n2.2 The Account is in in safe and normal operation status: there is no risk of being blocked or stolen; there have been no banning or frozen records in the past 14 days; there have been no sensitive operations such as device replacement, password replacement, and Account switching in the past 14 days.\n\n2.3 The in-Game property in the Account has been settled or properly handled, including but not limited to tickets, diamonds, battle points, items, subscription benefits, etc. In addition, there are no outstanding refunds, payables or orders:including but not limited to recharged diamonds, bundles, subscriptions, etc.\n\n2.4 There are no disputes in this Account: including complaint, being complained, investigations by state agencies, arbitration, litigation, and other disputes.\n\n2.5 Other conditions (if any) officially announced by VIZTA.\n\nYou may first try to handle the above problems by yourself. If you are unable to handle the problem or have any doubts in the process, please contact customer service for assistance.\n\n3. Account termination process:\n3.1 You may terminate your Account on the relevant function setting page according to the termination process and operation guidelines provided by official channels.\n\n3.2 After you click Confirm to Terminate, VIZTA will review your Account and inform you of the result afterward. In order to further protect your legitimate rights and interests, we have the right to verify whether you meet the termination conditions stipulated in Article 2 hereof as appropriate, and comprehensively judge whether your Account meets the termination conditions according to the security status of your Account and your use of the relevant products and services. In order to protect your Account security and property rights, we have the right to conduct identity authentication for the termination application, so as to determine that you are the authorized user of the Account (e.g. email authentication, etc.). If it is found that the Account does not meet the termination conditions after comprehensive judgment, or if the identity authentication fails, your termination may fail, please contact customer service for assistance.\n          \nEven if we determine that you meet the termination conditions, it is merely a formality examination based on your commitment (i.e. your own commitment ensuring that the Account meets the above termination conditions), and you will be liable for ensuring that the Account meets the above termination conditions, and we will not bear corresponding legal liabilities for this.\n\n3.3 After you have successfully completed the steps in Section 3.2 above, you are deemed to have successfully submitted your Account termination application to us. We will provide your Account with a cooling-off period (the Cooling-Off Period) of 30 days. During the Cooling-Off Period, we will not delete or anonymize the information related to the Account for the time being (for example, your avatar, nickname and other Account information are still visible to your friends), except as otherwise provided by laws, regulations or relevant policies.\n          \nIn order to ensure the successful completion of termination, we strongly advice not to access the Account during the Cooling-Off Period, otherwise you will be deemed to have suspended your application to terminate this Account.\n\n3.4 After the expiration of the Cooling-Off Period, if we do not receive your declaration of intention to cancel the termination, or there is no other reason that precludes the termination, the Account will be terminated. Data in this Account will be deleted or anonymized (except as otherwise provided by laws and regulations and this Agreement). However, you understand and agree that, before the deletion or anonymization of the Data under this Account, a certain period of time shall be allowed for us to sort out and process the Data in this Account accordingly, so as to protect the legitimate rights and interests of you and other users to the greatest extent. Therefore, after the expiration of the Cooling-Off Period, there may be some delay in the deletion or anonymization of the Data in this Account.\n\n3.5 The specific termination process and operation shall be subject to the official announcement of the Game. You understand and agree that during the period of your application for Account termination (including the Cooling-off Period), if we need to verify relevant transactions, complaints or other matters related to your Account, or if we have other reasonable causes, we have the right to freeze your Account termination application and not to provide you with termination services for the time being, and shall have the right to report any fraud or illegal act to the regulatory or judicial authorities if necessary.\n\n4. Miscellaneous\n4.1 This Agreement is an integral part of the Terms of Service (the Master Agreement), and matters not covered herein shall be governed by the Master Agreement. In case of any inconsistency between this Agreement and the Master Agreement, this Agreement shall prevail.\n\n4.2 The termination of your Account will not relieve or exempt you from the relevant liabilities (which may be) required to assume according to relevant laws and regulations, relevant agreements, rules, etc.\""
+    },
+    "100101": {
+      "m_bError": null,
+      "m_Id": "100101",
+      "m_mMessage": "\"Account cancellation requested.\nCool-off period ends in: <color=#9E8439>{0}</color>. You won't be able to log in during this period. Cancellation completes automatically when the cool-off period ends.\nTap <color=#9E8439>[Revoke Cancellation]</color> should you wish to change your mind.\""
+    },
+    "100102": {
+      "m_bError": null,
+      "m_Id": "100102",
+      "m_mMessage": "\"Account Canceled\""
+    },
+    "100103": {
+      "m_bError": null,
+      "m_Id": "100103",
+      "m_mMessage": "\"Constellation Observation enabled.\""
+    },
+    "100104": {
+      "m_bError": null,
+      "m_Id": "100104",
+      "m_mMessage": "\"Read the prequel story {0}.\""
+    },
+    "100105": {
+      "m_bError": null,
+      "m_Id": "100105",
+      "m_mMessage": "\"No Vassals available for Transfusion.\""
+    },
+    "100201": {
+      "m_bError": null,
+      "m_Id": "100201",
+      "m_mMessage": "\"{0}'s Odyssey ended.\""
+    },
+    "100202": {
+      "m_bError": null,
+      "m_Id": "100202",
+      "m_mMessage": "\"Final reward for this area has been obtained.\""
+    },
+    "100203": {
+      "m_bError": null,
+      "m_Id": "100203",
+      "m_mMessage": "\"All areas at current difficulty already complete.\""
+    },
+    "100204": {
+      "m_bError": null,
+      "m_Id": "100204",
+      "m_mMessage": "\"After obtaining the final reward, you can continue exploring for remaining rewards.\""
+    },
+    "100205": {
+      "m_bError": null,
+      "m_Id": "100205",
+      "m_mMessage": "\"Chamber already cleared. Please come back after reset.\""
+    },
+    "100206": {
+      "m_bError": null,
+      "m_Id": "100206",
+      "m_mMessage": "\"Obtain the clue by clearing [Threads of Fate] {0}.\""
+    },
+    "100207": {
+      "m_bError": null,
+      "m_Id": "100207",
+      "m_mMessage": "\"Read story to obtain rewards.\""
+    },
+    "100208": {
+      "m_bError": null,
+      "m_Id": "100208",
+      "m_mMessage": "\"Subsect—{0}\""
+    },
+    "100209": {
+      "m_bError": null,
+      "m_Id": "100209",
+      "m_mMessage": "\"Collection Completed\""
+    },
+    "100210": {
+      "m_bError": null,
+      "m_Id": "100210",
+      "m_mMessage": "\"<color=#368E72>{0}</color>\""
+    },
+    "100211": {
+      "m_bError": null,
+      "m_Id": "100211",
+      "m_mMessage": "\"Aspect Type:\""
+    },
+    "100212": {
+      "m_bError": null,
+      "m_Id": "100212",
+      "m_mMessage": "\"Grade:\""
+    },
+    "100213": {
+      "m_bError": null,
+      "m_Id": "100213",
+      "m_mMessage": "\"Explore the locations in Chapter {0} to obtain this Lost Memory.\""
+    },
+    "100301": {
+      "m_bError": null,
+      "m_Id": "100301",
+      "m_mMessage": "\"Season ends in: {0}\""
+    },
+    "100302": {
+      "m_bError": null,
+      "m_Id": "100302",
+      "m_mMessage": "\"Season Settlement in Progress\""
+    },
+    "100303": {
+      "m_bError": null,
+      "m_Id": "100303",
+      "m_mMessage": "\"Today's Attempts: {0}\""
+    },
+    "100304": {
+      "m_bError": null,
+      "m_Id": "100304",
+      "m_mMessage": "\"Today's Attempts (Challenge Mode): {0}\""
+    },
+    "100305": {
+      "m_bError": null,
+      "m_Id": "100305",
+      "m_mMessage": "\"Remaining Challenge Attempts: {0}\""
+    },
+    "100306": {
+      "m_bError": null,
+      "m_Id": "100306",
+      "m_mMessage": "\"{0}% ~ {1}%\""
+    },
+    "100307": {
+      "m_bError": null,
+      "m_Id": "100307",
+      "m_mMessage": "\"{0}%\""
+    },
+    "100308": {
+      "m_bError": null,
+      "m_Id": "100308",
+      "m_mMessage": "\"Unranked\""
+    },
+    "100401": {
+      "m_bError": null,
+      "m_Id": "100401",
+      "m_mMessage": "\"Rank {0}\""
+    },
+    "100402": {
+      "m_bError": null,
+      "m_Id": "100402",
+      "m_mMessage": "\"Rank {0} Reward Preview\""
+    },
+    "100403": {
+      "m_bError": null,
+      "m_Id": "100403",
+      "m_mMessage": "\"Special Rewards will be sent via mail.\""
+    },
+    "100404": {
+      "m_bError": null,
+      "m_Id": "100404",
+      "m_mMessage": "\"1st Place\""
+    },
+    "100405": {
+      "m_bError": null,
+      "m_Id": "100405",
+      "m_mMessage": "\"2nd Place\""
+    },
+    "100406": {
+      "m_bError": null,
+      "m_Id": "100406",
+      "m_mMessage": "\"3rd Place\""
+    },
+    "100407": {
+      "m_bError": null,
+      "m_Id": "100407",
+      "m_mMessage": "\"4th Place\""
+    },
+    "100408": {
+      "m_bError": null,
+      "m_Id": "100408",
+      "m_mMessage": "\"5th Place\""
+    },
+    "100409": {
+      "m_bError": null,
+      "m_Id": "100409",
+      "m_mMessage": "\"6th Place\""
+    },
+    "100410": {
+      "m_bError": null,
+      "m_Id": "100410",
+      "m_mMessage": "\"7th Place\""
+    },
+    "100411": {
+      "m_bError": null,
+      "m_Id": "100411",
+      "m_mMessage": "\"8th Place\""
+    },
+    "100412": {
+      "m_bError": null,
+      "m_Id": "100412",
+      "m_mMessage": "\"9th Place\""
+    },
+    "100413": {
+      "m_bError": null,
+      "m_Id": "100413",
+      "m_mMessage": "\"10th Place\""
+    },
+    "100414": {
+      "m_bError": null,
+      "m_Id": "100414",
+      "m_mMessage": "\"All objectives complete. Please stay tuned for new ones!\""
+    },
+    "100415": {
+      "m_bError": null,
+      "m_Id": "100415",
+      "m_mMessage": "\"No Record yet.\""
+    },
+    "100501": {
+      "m_bError": null,
+      "m_Id": "100501",
+      "m_mMessage": "\"Unlocks after completing [Threads of Fate] {0}.\""
+    },
+    "100502": {
+      "m_bError": null,
+      "m_Id": "100502",
+      "m_mMessage": "\"Clear Dutchman's Revenge {0} to unlock.\""
+    },
+    "100503": {
+      "m_bError": null,
+      "m_Id": "100503",
+      "m_mMessage": "\"Complete previous stage first.\""
+    },
+    "100504": {
+      "m_bError": null,
+      "m_Id": "100504",
+      "m_mMessage": "\"No Reset Required\""
+    },
+    "100505": {
+      "m_bError": null,
+      "m_Id": "100505",
+      "m_mMessage": "\"Behold an Undiscovered Artifact. Enter [Dutchman's Revenge] to obtain it.\""
+    },
+    "100506": {
+      "m_bError": null,
+      "m_Id": "100506",
+      "m_mMessage": "\"This unlocks when Artifact reaches LV. {0}.\""
+    },
+    "100507": {
+      "m_bError": null,
+      "m_Id": "100507",
+      "m_mMessage": "\"Saved successfully.\""
+    },
+    "100508": {
+      "m_bError": null,
+      "m_Id": "100508",
+      "m_mMessage": "\"No changes made.\""
+    },
+    "100509": {
+      "m_bError": null,
+      "m_Id": "100509",
+      "m_mMessage": "\"Once their Alert level reaches 100%, the heist is over. \"Death\" shows no mercy!\""
+    },
+    "100510": {
+      "m_bError": null,
+      "m_Id": "100510",
+      "m_mMessage": "\"Alert level above 50%. Proceed with caution, like the \"Hermit.\"\""
+    },
+    "100511": {
+      "m_bError": null,
+      "m_Id": "100511",
+      "m_mMessage": "\"Alert level above 80%. One wrong move and \"Judgment\" will descend. Plan your route carefully!\""
+    },
+    "100512": {
+      "m_bError": null,
+      "m_Id": "100512",
+      "m_mMessage": "\"Round {0}\""
+    },
+    "100601": {
+      "m_bError": null,
+      "m_Id": "100601",
+      "m_mMessage": "\"All\""
+    },
+    "100602": {
+      "m_bError": null,
+      "m_Id": "100602",
+      "m_mMessage": "\"{0}亿\""
+    },
+    "100603": {
+      "m_bError": null,
+      "m_Id": "100603",
+      "m_mMessage": "\"{0}万\""
+    },
+    "100701": {
+      "m_bError": null,
+      "m_Id": "100701",
+      "m_mMessage": "\"Affects <color=#368E72>all</color> deployed Vassals\""
+    },
+    "100702": {
+      "m_bError": null,
+      "m_Id": "100702",
+      "m_mMessage": "\"Affects specified Role: <color=#368E72>{0}</color>\""
+    },
+    "100703": {
+      "m_bError": null,
+      "m_Id": "100703",
+      "m_mMessage": "\"Affects specified Faction: <color=#368E72>{0}</color>\""
+    },
+    "100704": {
+      "m_bError": null,
+      "m_Id": "100704",
+      "m_mMessage": "\"Affects specified Vassal: <color=#368E72>{0}</color>\""
+    },
+    "100705": {
+      "m_bError": null,
+      "m_Id": "100705",
+      "m_mMessage": "\"Affects <color=#368E72>summons</color>.\""
+    },
+    "100706": {
+      "m_bError": null,
+      "m_Id": "100706",
+      "m_mMessage": "\"Activate all previous talents to unlock.\""
+    },
+    "100707": {
+      "m_bError": null,
+      "m_Id": "100707",
+      "m_mMessage": "\"Unlocks upon completing Threads of Fate {0}.\""
+    },
+    "100708": {
+      "m_bError": null,
+      "m_Id": "100708",
+      "m_mMessage": "\"Unlocks after clearing Threads of Fate {0}.\""
+    },
+    "100709": {
+      "m_bError": null,
+      "m_Id": "100709",
+      "m_mMessage": "\"Complete previous stage first.\""
+    },
+    "100710": {
+      "m_bError": null,
+      "m_Id": "100710",
+      "m_mMessage": "\"LV.{0}-LV.{1}\""
+    },
+    "100711": {
+      "m_bError": null,
+      "m_Id": "100711",
+      "m_mMessage": "\"Reward LV.: {0}\""
+    },
+    "100712": {
+      "m_bError": null,
+      "m_Id": "100712",
+      "m_mMessage": "\"Escaped Phantoms: {0}/{1}\""
+    },
+    "100713": {
+      "m_bError": null,
+      "m_Id": "100713",
+      "m_mMessage": "\"Escaped Monsters: {0}/{1}\""
+    },
+    "100714": {
+      "m_bError": null,
+      "m_Id": "100714",
+      "m_mMessage": "\"Claimable\""
+    },
+    "100715": {
+      "m_bError": null,
+      "m_Id": "100715",
+      "m_mMessage": "\"Max LV.\""
+    },
+    "100716": {
+      "m_bError": null,
+      "m_Id": "100716",
+      "m_mMessage": "\"Select 2 ({0}/{1})\""
+    },
+    "100801": {
+      "m_bError": null,
+      "m_Id": "100801",
+      "m_mMessage": "\"Unlocks at Affinity LV. {0}.\""
+    },
+    "100802": {
+      "m_bError": null,
+      "m_Id": "100802",
+      "m_mMessage": "\"Complete previous sections to unlock.\""
+    },
+    "100803": {
+      "m_bError": null,
+      "m_Id": "100803",
+      "m_mMessage": "\"Unlocks after clearing Threads of Fate {0}.\""
+    },
+    "100804": {
+      "m_bError": null,
+      "m_Id": "100804",
+      "m_mMessage": "\"Tap to view new anecdotes.\""
+    },
+    "100805": {
+      "m_bError": null,
+      "m_Id": "100805",
+      "m_mMessage": "\"Tap to read the new letter.\""
+    },
+    "100806": {
+      "m_bError": null,
+      "m_Id": "100806",
+      "m_mMessage": "\"Tap to collect the new letter.\""
+    },
+    "100807": {
+      "m_bError": null,
+      "m_Id": "100807",
+      "m_mMessage": "\"Someone awaits you. Tap to meet beneath the moon.\""
+    },
+    "100808": {
+      "m_bError": null,
+      "m_Id": "100808",
+      "m_mMessage": "\"Tap to collect this precious memory.\""
+    },
+    "100809": {
+      "m_bError": null,
+      "m_Id": "100809",
+      "m_mMessage": "\"Affinity: LV. {0}\""
+    },
+    "200001": {
+      "m_bError": null,
+      "m_Id": "200001",
+      "m_mMessage": "\"Ancestry\""
+    },
+    "200002": {
+      "m_bError": null,
+      "m_Id": "200002",
+      "m_mMessage": "\"Returning Home\""
+    },
+    "200003": {
+      "m_bError": null,
+      "m_Id": "200003",
+      "m_mMessage": "\"Tempus Church\""
+    },
+    "200004": {
+      "m_bError": null,
+      "m_Id": "200004",
+      "m_mMessage": "\"Forbidden Grounds\""
+    },
+    "200005": {
+      "m_bError": null,
+      "m_Id": "200005",
+      "m_mMessage": "\"Gravekeeper\""
+    },
+    "200006": {
+      "m_bError": null,
+      "m_Id": "200006",
+      "m_mMessage": "\"Starfall Valley\""
+    },
+    "200007": {
+      "m_bError": null,
+      "m_Id": "200007",
+      "m_mMessage": "\"Blood Beast\""
+    },
+    "200008": {
+      "m_bError": null,
+      "m_Id": "200008",
+      "m_mMessage": "\"Lupine Forest\""
+    },
+    "200009": {
+      "m_bError": null,
+      "m_Id": "200009",
+      "m_mMessage": "\"Ashen Garden\""
+    },
+    "200010": {
+      "m_bError": null,
+      "m_Id": "200010",
+      "m_mMessage": "\"El Dorado\""
+    },
+    "200011": {
+      "m_bError": null,
+      "m_Id": "200011",
+      "m_mMessage": "\"El Dorado's Cabin\""
+    },
+    "200012": {
+      "m_bError": null,
+      "m_Id": "200012",
+      "m_mMessage": "\"The Crossroads\""
+    },
+    "200013": {
+      "m_bError": null,
+      "m_Id": "200013",
+      "m_mMessage": "\"First Bloodmoon\""
+    },
+    "200014": {
+      "m_bError": null,
+      "m_Id": "200014",
+      "m_mMessage": "\"Sealed Area\""
+    },
+    "200115": {
+      "m_bError": null,
+      "m_Id": "200115",
+      "m_mMessage": "\"Clear [Threads of Fate] Chapter {0} to claim the rewards.\""
+    },
+    "210001": {
+      "m_bError": null,
+      "m_Id": "210001",
+      "m_mMessage": "\"The first twelve alchemists consumed the blood of \"Abel the Martyr\" and mastered the secret of \"Rebirth.\" The price, however, was to experience life rooted in the cycle of \"truth,\" with each life playing out the same.\""
+    },
+    "210002": {
+      "m_bError": null,
+      "m_Id": "210002",
+      "m_mMessage": "\"Legend has it that when all the \"Moonblessed\" gather, they will be able to return to their distant homeland—The Moon.\nThey hold their own philosophies, be it meek or radical, all in pursuit of their dream of returning home.\""
+    },
+    "210003": {
+      "m_bError": null,
+      "m_Id": "210003",
+      "m_mMessage": "\"They oversee Tempus and steer the course of history.\nThey move through the ages and transgress the boundaries of life and death.\""
+    },
+    "210004": {
+      "m_bError": null,
+      "m_Id": "210004",
+      "m_mMessage": "\"The forebears of the great kingdoms drew strength from consuming the Divine Body and received assurances from The Church for yielding to Tempus.\nToday, both have decayed into rotten curses, plaguing our realm.\""
+    },
+    "210005": {
+      "m_bError": null,
+      "m_Id": "210005",
+      "m_mMessage": "\"One of the strongest warriors chosen by the Kingdom. Guards the Divine Body sealed within the forbidden grounds.To fulfill the next periodic cycle, known as the 'future,' they willingly remain trapped between present and past.\""
+    },
+    "210006": {
+      "m_bError": null,
+      "m_Id": "210006",
+      "m_mMessage": "\"The Oracle descended here in the form of a meteorite, which was mined heavily by the Church, leading to the fulfillment of one prophecy after another.\nAnd so, the story begins here, right where it ended. Like a point on a circle, it loops endlessly.\""
+    },
+    "210007": {
+      "m_bError": null,
+      "m_Id": "210007",
+      "m_mMessage": "\"Creatures unable to withstand the surge of Black Blood will transform into Blood Beasts. They vary in form and cannot be wholly vanquished.\nThey will become puppets of memory, needing to continuously consume fresh blood to fill the void within.\""
+    },
+    "210008": {
+      "m_bError": null,
+      "m_Id": "210008",
+      "m_mMessage": "\"Territory of the Ganelon family, once a place where the wolves thrived.\nSince the spread of the plague, no living being remains. The emotions and memories of those who once lived here have formed into a collective consciousness, lingering in the forest pine.\""
+    },
+    "210009": {
+      "m_bError": null,
+      "m_Id": "210009",
+      "m_mMessage": "\"A name long-since sealed. Only a few remember the ebb and flow of time in those repetitive twenty years.Those who don't understand the mystery of cause and effect still call it the \"Ganelon Forbidden Grounds.\"\""
+    },
+    "210010": {
+      "m_bError": null,
+      "m_Id": "210010",
+      "m_mMessage": "\"The El Dorado, a grand merchant ship built with Goldland's vast inheritance, is but a gilded shell with rotten stuffing.\nIt has long traveled the Sea of Medimar's trade routes, with the ultimate goal of reviving a glorious civilization now under water.\""
+    },
+    "210011": {
+      "m_bError": null,
+      "m_Id": "210011",
+      "m_mMessage": "\"Goldland intended to imprison and smuggle Blood Beasts, but instead brought upon themselves an even greater Calamity. \nSuch ambition mirrors that of the Landis Family, who once attempted to harness the power of Calamity. It is hardly surprising that they met their demise at its hand.\""
+    },
+    "210012": {
+      "m_bError": null,
+      "m_Id": "210012",
+      "m_mMessage": "\"At the crossroads between the Plane of the Living and the Other Side, phantasmal remnants of Aeon still linger. \nIf destiny on the Living Plane is a preconceived notion, perhaps the Other Side, with its promise of infinite possibilities, is actual reality.\""
+    },
+    "210013": {
+      "m_bError": null,
+      "m_Id": "210013",
+      "m_mMessage": "\"Empowered by alchemy, the forces inside the Seeds of Calamity intertwined, awakening Dracula's last remaining bloodline. Can the Pure Bloodmoon, the primordial \"son of the demon,\" truly contend with the truth of Tempus?\""
+    },
+    "210014": {
+      "m_bError": null,
+      "m_Id": "210014",
+      "m_mMessage": "\"The holy land closely guarded by the Church conceals the ultimate secret of the world: chaos and order are merely two sides of the same coin, born from the expansion of the void.\""
+    },
+    "210015": {
+      "m_bError": null,
+      "m_Id": "210015",
+      "m_mMessage": "\"Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping agree, you acknowledge the content of these terms. By tapping refuse, you will be unable to proceed.\""
+    },
+    "210016": {
+      "m_bError": null,
+      "m_Id": "210016",
+      "m_mMessage": "\"I have read and agree to the <link=220013><#b2452b><u>User Terms</u></color></link> and <link=220014><#b2452b><u>Privacy Policy.</u></color></link>\""
+    },
+    "210018": {
+      "m_bError": null,
+      "m_Id": "210018",
+      "m_mMessage": "\"Please check the agreement before confirming.\""
+    },
+    "210023": {
+      "m_bError": null,
+      "m_Id": "210023",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/read/id/11112.html\""
+    },
+    "210024": {
+      "m_bError": null,
+      "m_Id": "210024",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/privacy/id/11112.html\""
+    },
+    "210025": {
+      "m_bError": null,
+      "m_Id": "210025",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/share/id/11112.html\""
+    },
+    "210026": {
+      "m_bError": null,
+      "m_Id": "210026",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/appPermission/id/11112.html\""
+    },
+    "210027": {
+      "m_bError": null,
+      "m_Id": "210027",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/getinfo/id/11112.html\""
+    },
+    "210028": {
+      "m_bError": null,
+      "m_Id": "210028",
+      "m_mMessage": "\"<link=WebView_Url;https://beian.miit.gov.cn/#/Integrated/index><u>沪ICP备2022014223号-3A</u></link>\""
+    },
+    "210113": {
+      "m_bError": null,
+      "m_Id": "210113",
+      "m_mMessage": "\"https://sdkapi.yyf.muyinetwork.com/agreement/show?productCode=92974436132822467243322227012902&type=2\""
+    },
+    "220001": {
+      "m_bError": null,
+      "m_Id": "220001",
+      "m_mMessage": "\"Affinity\""
+    },
+    "220002": {
+      "m_bError": null,
+      "m_Id": "220002",
+      "m_mMessage": "\"<link=1193><#b2452b><u>Diagnostics</u></color></link>\""
+    },
+    "220003": {
+      "m_bError": null,
+      "m_Id": "220003",
+      "m_mMessage": "\"The Custom Package lets you select its contents freely. While purchasing, you can customize the pack to your liking.\n\nThe first item is fixed and cannot be edited, but you can personalize the remaining items.\n\nTap the pack to access the customization interface. Once all items are selected, you can proceed with the purchase.\""
+    },
+    "220004": {
+      "m_bError": null,
+      "m_Id": "220004",
+      "m_mMessage": "\"Step-Up Bundle Details\""
+    },
+    "220005": {
+      "m_bError": null,
+      "m_Id": "220005",
+      "m_mMessage": "\"Step-Up Bundle Details\""
+    },
+    "220007": {
+      "m_bError": null,
+      "m_Id": "220007",
+      "m_mMessage": "\"Select from the following: {0}/{1}\""
+    },
+    "220008": {
+      "m_bError": null,
+      "m_Id": "220008",
+      "m_mMessage": "\"220010|220009\""
+    },
+    "220009": {
+      "m_bError": null,
+      "m_Id": "220009",
+      "m_mMessage": "\"提供会社\nVIZTA PTE. LTD.\n\n9 Battery Road, #28-01, MYP Centre, 049910 Singapore\n\n代表者\nTian Qianru\n\nお問い合わせ先 \nsilverblood.help@gmail.com\n\n商品価格\n対象となるデジタルコンテンツ（以下「コンテンツ」といいます。）ごとに表示される金額（コンテンツごとに異なります）なお、消費税は税込として表示しております。\n\n販売価格以外の費用\n電気通信回線の通信料金（インターネット接続料金を含みます。）等は、お客様のご負担となります。\n\nお支払い時期\n商品購入画面の購入ボタンを押した後、コンテンツの提供前。\n\nコンテンツの利用可能時期\n特別な定めがある場合を除き、お支払い手続き完了後直ちにご利用いただけます。\n\nお支払い方法\nご利用端末により利用可能なお支払い方法が異なります。 \nお客様が選択される支払方法については、各決済サービス提供元（例：PayPay、コンビニ決済、App Store、Google Wallet等）の利用規約が適用されます。 \n※ 詳細は各商品・サービスページをご参照ください。\n\n動作環境\niOS版必須環境：IPhone 6s 以降\nAndroid版必須環境：Android 6.0以降\n各アプリケーションのダウンロードの前に、必ず各アプリケーションの詳細ページで利用環境·対応機種をご確認ください。\n\n返品に関する特約\n商品の特性上、購入後の返品、キャンセルはできません。\""
+    },
+    "220010": {
+      "m_bError": null,
+      "m_Id": "220010",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "220011": {
+      "m_bError": null,
+      "m_Id": "220011",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "220012": {
+      "m_bError": null,
+      "m_Id": "220012",
+      "m_mMessage": "\"Reserved String\""
+    },
+    "220013": {
+      "m_bError": null,
+      "m_Id": "220013",
+      "m_mMessage": "\"10|https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html;6|https://www.mpub-static.com/agreement/userterms/4400/eu/gp/zh.html;22|https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ja.html;23|https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ko.html;41|https://www.mpub-static.com/agreement/userterms/4400/eu/gp/tc.html\""
+    },
+    "220014": {
+      "m_bError": null,
+      "m_Id": "220014",
+      "m_mMessage": "\"10|https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html;6|https://www.mpub-static.com/agreement/privacy/4400/eu/gp/zh.html;22|https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ja.html;23|https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ko.html;41|https://www.mpub-static.com/agreement/privacy/4400/eu/gp/tc.html\""
+    },
+    "220015": {
+      "m_bError": null,
+      "m_Id": "220015",
+      "m_mMessage": "\"220012|220011\""
+    },
+    "220016": {
+      "m_bError": null,
+      "m_Id": "220016",
+      "m_mMessage": "\"Purchase <color=#a27f31>{0}</color>?\""
+    },
+    "220017": {
+      "m_bError": null,
+      "m_Id": "220017",
+      "m_mMessage": "\"Purchase this Bundle?\""
+    },
+    "220018": {
+      "m_bError": null,
+      "m_Id": "220018",
+      "m_mMessage": "\"Event ends in {0}.\""
+    },
+    "220019": {
+      "m_bError": null,
+      "m_Id": "220019",
+      "m_mMessage": "\"Refreshes in {0}.\""
+    },
+    "220020": {
+      "m_bError": null,
+      "m_Id": "220020",
+      "m_mMessage": "\"Purchase ends in {0}.\""
+    },
+    "230001": {
+      "m_bError": null,
+      "m_Id": "230001",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>User Agreement</u></color></link>\""
+    },
+    "230002": {
+      "m_bError": null,
+      "m_Id": "230002",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>\""
+    },
+    "230003": {
+      "m_bError": null,
+      "m_Id": "230003",
+      "m_mMessage": "\"I am 13 years or older.\""
+    },
+    "230004": {
+      "m_bError": null,
+      "m_Id": "230004",
+      "m_mMessage": "\"More Info\""
+    },
+    "230005": {
+      "m_bError": null,
+      "m_Id": "230005",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>\""
+    },
+    "230006": {
+      "m_bError": null,
+      "m_Id": "230006",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Terms of Service</u></color></link>\""
+    },
+    "230007": {
+      "m_bError": null,
+      "m_Id": "230007",
+      "m_mMessage": "\"Silver and Blood\""
+    },
+    "230008": {
+      "m_bError": null,
+      "m_Id": "230008",
+      "m_mMessage": "\"Privacy Data Encryption Failed. Please check your network connection and restart the game.\""
+    },
+    "230009": {
+      "m_bError": null,
+      "m_Id": "230009",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Privacy Policy</u></color></link>\""
+    },
+    "230010": {
+      "m_bError": null,
+      "m_Id": "230010",
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>User Agreement</u></color></link>\""
+    },
+    "230011": {
+      "m_bError": null,
+      "m_Id": "230011",
+      "m_mMessage": "\"https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html\""
+    },
+    "230012": {
+      "m_bError": null,
+      "m_Id": "230012",
+      "m_mMessage": "\"https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html\""
+    },
+    "230013": {
+      "m_bError": null,
+      "m_Id": "230013",
+      "m_mMessage": "\"資金決済法に基づく表示\""
+    },
+    "230014": {
+      "m_bError": null,
+      "m_Id": "230014",
+      "m_mMessage": "\"前払式支払手段の名称\n月の涙\n\n発行会社\nVIZTA PTE. LTD.\n\n支払可能金額等\n支払可能金額の上限はございません。\n\n販売価格\n購入画面に記載（表示価格は消費税を含みます）。\n\n有効期間または期限\n有効期限はありません。\n\nお問い合わせは下記のアドレスまでお願い致します：\nsilverblood.help@gmail.com\n\n使用場所\nゲーム「シルバー アンド ブラッド」内においてのみ使用することができます。\n\nキャンセル\n商品の特性上、購入後の返品、キャンセルはできません。\n\n未使用残高の確認方法\nゲーム内に表示されているゲーム内通貨のアイコンをタップすると、その保有数が表示されます。\n\n利用規約\nゲーム内の利用規約をご覧ください。\""
+    },
+    "230015": {
+      "m_bError": null,
+      "m_Id": "230015",
+      "m_mMessage": "\"特定商取引法に基づき表示\""
+    },
+    "230016": {
+      "m_bError": null,
+      "m_Id": "230016",
+      "m_mMessage": "\"提供会社\nVIZTA PTE. LTD.\n\n9 Battery Road, #28-01, MYP Centre, 049910 Singapore\n\n代表者\nTian Qianru\n\nお問い合わせ先 \nsilverblood.help@gmail.com\n\n商品価格\n対象となるデジタルコンテンツ（以下「コンテンツ」といいます。）ごとに表示される金額（コンテンツごとに異なります）なお、消費税は税込として表示しております。\n\n販売価格以外の費用\n電気通信回線の通信料金（インターネット接続料金を含みます。）等は、お客様のご負担となります。\n\nお支払い時期\n商品購入画面の購入ボタンを押した後、コンテンツの提供前。\n\nコンテンツの利用可能時期\n特別な定めがある場合を除き、お支払い手続き完了後直ちにご利用いただけます。\n\nお支払い方法\nご利用端末により利用可能なお支払い方法が異なります。 \nお客様が選択される支払方法については、各決済サービス提供元（DMM GAME PLAYER）の利用規約が適用されます。 \n※ 詳細は各商品・サービスページをご参照ください。\n\n動作環境\niOS版必須環境：iPhone XS 以降\nAndroid版必須環境：Android 6.0以降\nDMM GAME PLAYER版必須環境：\nOS：Windows 7（64bit）\nプロセッサー：Intel Core i3 または同等のCPU\nメモリ：8GB\nGPU：GeForce GT 1030 以上\nDirectX：バージョン10.0以上\nストレージ：空き容量20GB以上を確保してください\n\n各アプリケーションのダウンロードの前に、必ず各アプリケーションの詳細ページで利用環境·対応機種をご確認ください。\n\n返品に関する特約\n商品の特性上、購入後の返品、キャンセルはできません。\""
+    },
+    "230017": {
+      "m_bError": null,
+      "m_Id": "230017",
+      "m_mMessage": "\"230013|230014\""
+    },
+    "230018": {
+      "m_bError": null,
+      "m_Id": "230018",
+      "m_mMessage": "\"230015|230016\""
+    },
+    "501080": {
+      "m_bError": null,
+      "m_Id": "501080",
+      "m_mMessage": "\"Defeat the wolf pack to interrupt the skill.\""
+    }
+  },
+  "status": "processed_587_items"
+}

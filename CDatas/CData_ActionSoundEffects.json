@@ -1,0 +1,962 @@
+{
+  "className": "CData_ActionSoundEffects",
+  "timestamp": "2025-07-08T13:35:14.856Z",
+  "data": {
+    "\"B_Nair_Run\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_Run\"",
+      "m_AudioEvent": "\"Play_B_20050_Run\""
+    },
+    "\"B_Nair_IntoBattle02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_IntoBattle02\"",
+      "m_AudioEvent": "\"Play_B_Nair_IntoBattle02\""
+    },
+    "\"B_Aorin_Walk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Walk01_End\"",
+      "m_AudioEvent": "\"Play_B_40001_Clip02_03\""
+    },
+    "\"B_Nevernight_Walk01_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Walk01_Loop\"",
+      "m_AudioEvent": "\"Play_B_20010_Walk01_Loop\""
+    },
+    "\"B_Nevernight_Walk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Walk01_End\"",
+      "m_AudioEvent": "\"Play_B_20001_Clip02b_01\""
+    },
+    "\"B_Nevernight_Battle_StarUp\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Battle_StarUp\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Battle_StarUp\""
+    },
+    "\"B_Nevernight_TurnLeft01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_TurnLeft01\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_TurnLeft01\""
+    },
+    "\"B_Nevernight_Talk07_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Talk07_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Talk07_Start\""
+    },
+    "\"B_Nevernight_Run01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Run01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Run01_Start\""
+    },
+    "\"B_Nevernight_TurnRight01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_TurnRight01\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_TurnRight01\""
+    },
+    "\"B_Nevernight_Run01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Run01_End\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Run01_End\""
+    },
+    "\"B_Nevernight_WalkEnd\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_WalkEnd\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_WalkEnd\""
+    },
+    "\"B_Nevernight_Talk07_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Talk07_End\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Talk07_End\""
+    },
+    "\"B_Nevernight_Run01_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_Run01_Loop\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_Run01_Loop\""
+    },
+    "\"B_Nevernight_A_Rain01_Base01_Connect\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Rain01_Base01_Connect\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Rain01_Base01_Connect\""
+    },
+    "\"B_Nevernight_A_Retreat_Run02_Connect\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Retreat_Run02_Connect\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Retreat_Run02_Connect\""
+    },
+    "\"B_Nevernight_A_Vomit01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Vomit01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Vomit01_Start\""
+    },
+    "\"B_Nevernight_A_Blood_StandUp\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Blood_StandUp\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Blood_StandUp\""
+    },
+    "\"B_Nevernight_A_Get_Weapon01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Get_Weapon01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Get_Weapon01_Start\""
+    },
+    "\"B_Nevernight_A_Turn_Walk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Turn_Walk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Turn_Walk01_Start\""
+    },
+    "\"B_Nevernight_A_Attack03_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Attack03_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Attack03_Start\""
+    },
+    "\"B_Nevernight_A_Run01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Run01_End\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Run01_End\""
+    },
+    "\"B_Nevernight_A_Retreat01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Retreat01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Retreat01_Start\""
+    },
+    "\"B_Nevernight_A_Weapon_Scare_02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Weapon_Scare_02_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Weapon_Scare_02_Start\""
+    },
+    "\"B_Nevernight_A_Weapon_Walk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Weapon_Walk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Weapon_Walk01_Start\""
+    },
+    "\"B_Nevernight_A_Run\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Run\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Run\""
+    },
+    "\"B_Nevernight_A_Talk09_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Talk09_End\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Talk09_End\""
+    },
+    "\"B_Nevernight_A_Talk09_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Talk09_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Talk09_Start\""
+    },
+    "\"B_Nevernight_A_Talk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_Talk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_Talk01_Start\""
+    },
+    "\"B_Nevernight_A_WalkEnd\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nevernight_A_WalkEnd\"",
+      "m_AudioEvent": "\"Play_B_Nevernight_A_WalkEnd\""
+    },
+    "\"B_Empusae_WalkEnd\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_WalkEnd\"",
+      "m_AudioEvent": "\"Play_B_Empusae_WalkEnd\""
+    },
+    "\"B_Cain_IntoBattle\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Cain_IntoBattle\"",
+      "m_AudioEvent": "\"Play_C_20090_Array\""
+    },
+    "\"B_Aorin_TurnRight_WalkEnd_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnRight_WalkEnd_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnRight_WalkEnd_Start\""
+    },
+    "\"B_Aorin_Kneel01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Kneel01_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Kneel01_End\""
+    },
+    "\"B_Aorin_Think01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Think01_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Think01_End\""
+    },
+    "\"B_Aorin_Skill03_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Skill03_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Skill03_Start\""
+    },
+    "\"B_Aorin_TurnRight_WalkEnd_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnRight_WalkEnd_Loop\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnRight_WalkEnd_Loop\""
+    },
+    "\"B_Aorin_Dodge\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Dodge\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Dodge\""
+    },
+    "\"B_Aorin_Think01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Think01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Think01_Start\""
+    },
+    "\"B_Aorin_TurnLeft02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnLeft02\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnLeft02\""
+    },
+    "\"B_Aorin_War_Srart\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_War_Srart\"",
+      "m_AudioEvent": "\"Play_B_Aorin_War_Srart\""
+    },
+    "\"B_Aorin_shake01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_shake01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_shake01\""
+    },
+    "\"B_Aorin_shake01_Kneel_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_shake01_Kneel_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_shake01_Kneel_End\""
+    },
+    "\"B_Aorin_Turn\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Turn\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Turn\""
+    },
+    "\"B_Aorin_TurnLeft01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnLeft01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnLeft01\""
+    },
+    "\"B_Aorin_Attack01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Attack01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Attack01\""
+    },
+    "\"B_Aorin_Finger01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Finger01_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Finger01_End\""
+    },
+    "\"B_Aorin_War_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_War_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_War_End\""
+    },
+    "\"B_Aorin_Walk01_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Walk01_Loop\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Walk01_Loop\""
+    },
+    "\"B_Aorin_Walk01End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Walk01End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Walk01End\""
+    },
+    "\"B_Aorin_Breathe01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Breathe01_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Breathe01_End\""
+    },
+    "\"B_Aorin_Finger01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Finger01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Finger01_Start\""
+    },
+    "\"B_Aorin_Alert01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Alert01_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Alert01_End\""
+    },
+    "\"B_Aorin_Kizuna_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Kizuna_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Kizuna_Start\""
+    },
+    "\"B_Aorin_Kneel01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Kneel01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Kneel01_Start\""
+    },
+    "\"B_Aorin_WalkEnd\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_WalkEnd\"",
+      "m_AudioEvent": "\"Play_B_Aorin_WalkEnd\""
+    },
+    "\"B_Aorin_Breathe01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Breathe01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Breathe01_Start\""
+    },
+    "\"B_Aorin_shake01_Kneel_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_shake01_Kneel_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_shake01_Kneel_Start\""
+    },
+    "\"B_Aorin_RunEnd\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_RunEnd\"",
+      "m_AudioEvent": "\"Play_B_Aorin_RunEnd\""
+    },
+    "\"B_Aorin_Walk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Walk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Walk01_Start\""
+    },
+    "\"B_Aorin_Skill03_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Skill03_End\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Skill03_End\""
+    },
+    "\"B_Aorin_Turn01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Turn01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Turn01\""
+    },
+    "\"B_Aorin_TurnRight01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnRight01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnRight01\""
+    },
+    "\"B_Aorin_TurnRight02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_TurnRight02\"",
+      "m_AudioEvent": "\"Play_B_Aorin_TurnRight02\""
+    },
+    "\"B_Aorin_WalkEnd01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_WalkEnd01\"",
+      "m_AudioEvent": "\"Play_B_Aorin_WalkEnd01\""
+    },
+    "\"B_Aorin_Skill01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aorin_Skill01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aorin_Skill01_Start\""
+    },
+    "\"B_Empusae_villagewoman_idle_Smelly_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_idle_Smelly_Start\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_idle_Smelly_Start\""
+    },
+    "\"B_Empusae_villagewoman_TurnRight02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_TurnRight02\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_TurnRight02\""
+    },
+    "\"B_Empusae_villagewoman_TurnLeft02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_TurnLeft02\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_TurnLeft02\""
+    },
+    "\"B_Empusae_villagewoman_idle_Talk02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_idle_Talk02_Start\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_idle_Talk02_Start\""
+    },
+    "\"B_Empusae_villagewoman_Run\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_Run\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_Run\""
+    },
+    "\"B_Empusae_villagewoman_idle_Finger01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_idle_Finger01_Start\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_idle_Finger01_Start\""
+    },
+    "\"B_Empusae_villagewoman_idle_WalkEnd06\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_idle_WalkEnd06\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_idle_WalkEnd06\""
+    },
+    "\"B_Empusae_villagewoman_idle_Talk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_idle_Talk01_End\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_idle_Talk01_End\""
+    },
+    "\"B_Empusae_villagewoman_Helpless_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_Helpless_Start\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_Helpless_Start\""
+    },
+    "\"B_Empusae_villagewoman_Helpless_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Empusae_villagewoman_Helpless_End\"",
+      "m_AudioEvent": "\"Play_B_Empusae_villagewoman_Helpless_End\""
+    },
+    "\"B_CorruptedWolf_Base_Turn_Left\"": {
+      "m_bError": null,
+      "m_ID": "\"B_CorruptedWolf_Base_Turn_Left\"",
+      "m_AudioEvent": "\"Play_B_CorruptedWolf_Base_Turn_Left\""
+    },
+    "\"B_CorruptedWolf_Middle_Turn_Right\"": {
+      "m_bError": null,
+      "m_ID": "\"B_CorruptedWolf_Middle_Turn_Right\"",
+      "m_AudioEvent": "\"Play_B_CorruptedWolf_Middle_Turn_Right\""
+    },
+    "\"B_Garlic_Sit01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sit01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sit01_End\""
+    },
+    "\"B_Garlic_Parry_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry_End\""
+    },
+    "\"B_Garlic_Sit01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sit01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sit01_Start\""
+    },
+    "\"B_Garlic_Parry_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry_Start\""
+    },
+    "\"B_Garlic_Hit_KnockBack\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Hit_KnockBack\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Hit_KnockBack\""
+    },
+    "\"B_Garlic_Run_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Run_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Run_Start\""
+    },
+    "\"B_Garlic_GoodBye\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_GoodBye\"",
+      "m_AudioEvent": "\"Play_B_Garlic_GoodBye\""
+    },
+    "\"B_Garlic_Parry_Pickup_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry_Pickup_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry_Pickup_End\""
+    },
+    "\"B_Garlic_MaxSkill01_Attack\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_MaxSkill01_Attack\"",
+      "m_AudioEvent": "\"Play_B_Garlic_MaxSkill01_Attack\""
+    },
+    "\"B_Garlic_LookBack01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_LookBack01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_LookBack01_End\""
+    },
+    "\"B_Garlic_Laugh\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Laugh\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Laugh\""
+    },
+    "\"B_Garlic_Intercept01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Intercept01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Intercept01_End\""
+    },
+    "\"B_Garlic_Parry02_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry02_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry02_End\""
+    },
+    "\"B_Garlic_Parry02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry02_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry02_Start\""
+    },
+    "\"B_Garlic_Intercept01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Intercept01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Intercept01_Start\""
+    },
+    "\"B_Garlic_Run_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Run_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Run_End\""
+    },
+    "\"B_Garlic_Idle_to_Base\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Idle_to_Base\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Idle_to_Base\""
+    },
+    "\"B_Garlic_Rise_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Rise_Loop\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Rise_Loop\""
+    },
+    "\"B_Garlic_Sigh01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sigh01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sigh01_End\""
+    },
+    "\"B_Garlic_Parry_Pickup_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Parry_Pickup_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Parry_Pickup_Start\""
+    },
+    "\"B_Garlic_Sigh01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sigh01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sigh01_Start\""
+    },
+    "\"B_Garlic_Sing01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sing01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sing01_End\""
+    },
+    "\"B_Garlic_LookBack01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_LookBack01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_LookBack01_Start\""
+    },
+    "\"B_Garlic_Sing01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sing01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sing01_Start\""
+    },
+    "\"B_Garlic_GetHead_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_GetHead_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_GetHead_Start\""
+    },
+    "\"B_Garlic_Fist_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Fist_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Fist_End\""
+    },
+    "\"B_Garlic_Fist_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Fist_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Fist_Start\""
+    },
+    "\"B_Garlic_Walk_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Walk_Loop\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Walk_Loop\""
+    },
+    "\"B_Garlic_Run_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Run_Loop\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Run_Loop\""
+    },
+    "\"B_Garlic_FightExclaim_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_FightExclaim_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_FightExclaim_End\""
+    },
+    "\"B_Garlic_Applause\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Applause\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Applause\""
+    },
+    "\"B_Garlic_GetHead_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_GetHead_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_GetHead_End\""
+    },
+    "\"B_Garlic_Angry_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Angry_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Angry_Start\""
+    },
+    "\"B_Garlic_Finger01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Finger01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Finger01_Start\""
+    },
+    "\"B_Garlic_Finger02_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Finger02_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Finger02_End\""
+    },
+    "\"B_Garlic_FightExclaim_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_FightExclaim_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_FightExclaim_Start\""
+    },
+    "\"B_Garlic_Finger02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Finger02_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Finger02_Start\""
+    },
+    "\"B_Garlic_Array\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Array\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Array\""
+    },
+    "\"B_Garlic_Attack01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Attack01\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Attack01\""
+    },
+    "\"B_Garlic_Walk_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Walk_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Walk_End\""
+    },
+    "\"B_Garlic_Turn\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Turn\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Turn\""
+    },
+    "\"B_Garlic_TurnLeft01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_TurnLeft01\"",
+      "m_AudioEvent": "\"Play_B_Garlic_TurnLeft01\""
+    },
+    "\"B_Garlic_TurnLeft02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_TurnLeft02\"",
+      "m_AudioEvent": "\"Play_B_Garlic_TurnLeft02\""
+    },
+    "\"B_Garlic_StandUp01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_StandUp01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_StandUp01_End\""
+    },
+    "\"B_Garlic_Struggle01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Struggle01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Struggle01_End\""
+    },
+    "\"B_Garlic_Sit02_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sit02_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sit02_End\""
+    },
+    "\"B_Garlic_Sit_Talk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sit_Talk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sit_Talk01_Start\""
+    },
+    "\"B_Garlic_Struggle01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Struggle01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Struggle01_Start\""
+    },
+    "\"B_Garlic_Talk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Talk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Talk01_Start\""
+    },
+    "\"B_Garlic_Talk02_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Talk02_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Talk02_End\""
+    },
+    "\"B_Garlic_Sit_Talk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Sit_Talk01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Sit_Talk01_End\""
+    },
+    "\"B_Garlic_Skill01_Attack02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Skill01_Attack02\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Skill01_Attack02\""
+    },
+    "\"B_Garlic_Talk02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Talk02_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Talk02_Start\""
+    },
+    "\"B_Garlic_Skill01_Cast\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Skill01_Cast\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Skill01_Cast\""
+    },
+    "\"B_Garlic_StarUp\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_StarUp\"",
+      "m_AudioEvent": "\"Play_B_Garlic_StarUp\""
+    },
+    "\"B_Garlic_Talk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Talk01_End\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Talk01_End\""
+    },
+    "\"B_Garlic_Walk_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Garlic_Walk_Start\"",
+      "m_AudioEvent": "\"Play_B_Garlic_Walk_Start\""
+    },
+    "\"B_ResidentFork_Pain_Standup\"": {
+      "m_bError": null,
+      "m_ID": "\"B_ResidentFork_Pain_Standup\"",
+      "m_AudioEvent": "\"Play_B_ResidentFork_Pain_Standup\""
+    },
+    "\"B_ResidentFork_Pain_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_ResidentFork_Pain_Start\"",
+      "m_AudioEvent": "\"Play_B_ResidentFork_Pain_Start\""
+    },
+    "\"B_ResidentFork_Standup\"": {
+      "m_bError": null,
+      "m_ID": "\"B_ResidentFork_Standup\"",
+      "m_AudioEvent": "\"Play_B_ResidentFork_Standup\""
+    },
+    "\"B_ResidentFork_Die\"": {
+      "m_bError": null,
+      "m_ID": "\"B_ResidentFork_Die\"",
+      "m_AudioEvent": "\"Play_B_ResidentFork_Die\""
+    },
+    "\"B_Flailman_Attack01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Attack01\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Attack01\""
+    },
+    "\"B_Flailman_Skill01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Skill01\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Skill01\""
+    },
+    "\"B_Flailman_Die\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Die\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Die\""
+    },
+    "\"B_Flailman_Run\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Run\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Run\""
+    },
+    "\"B_Flailman_Enter02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Enter02\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Enter02\""
+    },
+    "\"B_Flailman_Finger01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Flailman_Finger01_Start\"",
+      "m_AudioEvent": "\"Play_B_Flailman_Finger01_Start\""
+    },
+    "\"B_Swordsman_Die02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_Die02\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_Die02\""
+    },
+    "\"B_Aile_Angry01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Angry01_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Angry01_End\""
+    },
+    "\"B_Aile_Angry01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Angry01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Angry01_Start\""
+    },
+    "\"B_Aile_Angry01_Start02\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Angry01_Start02\"",
+      "m_AudioEvent": "\"Play_B_Aile_Angry01_Start02\""
+    },
+    "\"B_Aile_LookatRight_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_LookatRight_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_LookatRight_End\""
+    },
+    "\"B_Aile_LookatRight_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_LookatRight_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_LookatRight_Start\""
+    },
+    "\"B_Aile_Ponder01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Ponder01_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Ponder01_End\""
+    },
+    "\"B_Aile_Ponder01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Ponder01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Ponder01_Start\""
+    },
+    "\"B_Aile_Run_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Run_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Run_End\""
+    },
+    "\"B_Aile_Run_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Run_Loop\"",
+      "m_AudioEvent": "\"Play_B_Aile_Run_Loop\""
+    },
+    "\"B_Aile_Run_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Run_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Run_Start\""
+    },
+    "\"B_Aile_Squat01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Squat01_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Squat01_End\""
+    },
+    "\"B_Aile_Squat01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Squat01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Squat01_Start\""
+    },
+    "\"B_Aile_Suprise01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Suprise01_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Suprise01_End\""
+    },
+    "\"B_Aile_Suprise01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Suprise01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Suprise01_Start\""
+    },
+    "\"B_Aile_Talk01_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk01_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk01_End\""
+    },
+    "\"B_Aile_Talk01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk01_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk01_Start\""
+    },
+    "\"B_Aile_Talk02_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk02_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk02_End\""
+    },
+    "\"B_Aile_Talk02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk02_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk02_Start\""
+    },
+    "\"B_Aile_Talk02_TurnLeft01_connect_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk02_TurnLeft01_connect_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk02_TurnLeft01_connect_Start\""
+    },
+    "\"B_Aile_Talk02_TurnRight01_connect_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk02_TurnRight01_connect_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk02_TurnRight01_connect_End\""
+    },
+    "\"B_Aile_Talk02_TurnRight01_connect_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk02_TurnRight01_connect_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk02_TurnRight01_connect_Start\""
+    },
+    "\"B_Aile_Talk03_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk03_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk03_Start\""
+    },
+    "\"B_Aile_Talk05_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk05_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk05_End\""
+    },
+    "\"B_Aile_Talk05_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk05_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk05_Start\""
+    },
+    "\"B_Aile_Talk06_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk06_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk06_End\""
+    },
+    "\"B_Aile_Talk06_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk06_Start\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk06_Start\""
+    },
+    "\"B_Aile_Turn\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Turn\"",
+      "m_AudioEvent": "\"Play_B_Aile_Turn\""
+    },
+    "\"B_Aile_TurnRight01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_TurnRight01\"",
+      "m_AudioEvent": "\"Play_B_Aile_TurnRight01\""
+    },
+    "\"B_Aile_Turnleft01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Turnleft01\"",
+      "m_AudioEvent": "\"Play_B_Aile_Turnleft01\""
+    },
+    "\"B_Aile_Walk_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Walk_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Walk_End\""
+    },
+    "\"B_Aile_Walk_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Walk_Loop\"",
+      "m_AudioEvent": "\"Play_B_Aile_Walk_Loop\""
+    },
+    "\"B_Aile_War_Srart\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_War_Srart\"",
+      "m_AudioEvent": "\"Play_B_Aile_War_Srart\""
+    },
+    "\"B_Aile_Talk03_End\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Talk03_End\"",
+      "m_AudioEvent": "\"Play_B_Aile_Talk03_End\""
+    },
+    "\"B_Aile_Walk_Srart\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Aile_Walk_Srart\"",
+      "m_AudioEvent": "\"Play_B_Aile_Walk_Srart\""
+    },
+    "\"B_Swordsman_ReadyAttack02_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_ReadyAttack02_Start\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_ReadyAttack02_Start\""
+    },
+    "\"B_Swordsman_Exploration_Walk02_Finger01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_Exploration_Walk02_Finger01\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_Exploration_Walk02_Finger01\""
+    },
+    "\"B_Swordsman_ExplorationWalk02_ReadyAttack01_Connect\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_ExplorationWalk02_ReadyAttack01_Connect\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_ExplorationWalk02_ReadyAttack01_Connect\""
+    },
+    "\"B_Swordsman_GetUp02_Die_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_GetUp02_Die_Start\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_GetUp02_Die_Start\""
+    },
+    "\"B_Swordsman_ReadyAttack_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_ReadyAttack_Start\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_ReadyAttack_Start\""
+    },
+    "\"B_Swordsman_Exploration_Walk02_Loop\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_Exploration_Walk02_Loop\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_Exploration_Walk02_Loop\""
+    },
+    "\"B_Swordsman_ExplorationWalk02_Frighten01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Swordsman_ExplorationWalk02_Frighten01_Start\"",
+      "m_AudioEvent": "\"Play_B_Swordsman_ExplorationWalk02_Frighten01_Start\""
+    },
+    "\"B_Nair_Attack01_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_Attack01_Start\"",
+      "m_AudioEvent": "\"Play_B_Nair_Attack01_Start\""
+    },
+    "\"B_Nair_Fist_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_Fist_Start\"",
+      "m_AudioEvent": "\"Play_B_Nair_Fist_Start\""
+    },
+    "\"B_Nair_Talk02_Finger_Start\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_Talk02_Finger_Start\"",
+      "m_AudioEvent": "\"Play_B_Nair_Talk02_Finger_Start\""
+    },
+    "\"B_Nair_Born01\"": {
+      "m_bError": null,
+      "m_ID": "\"B_Nair_Born01\"",
+      "m_AudioEvent": "\"Play_B_Nair_Born01\""
+    }
+  },
+  "status": "processed_191_items"
+}

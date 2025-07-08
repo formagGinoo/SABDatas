@@ -1,0 +1,37 @@
+{
+  "className": "CData_TaskWeeklyReward",
+  "timestamp": "2025-07-08T13:35:52.202Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_RequiredScore": "2",
+      "m_Reward": "[[40003,1],[800001,1]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_RequiredScore": "4",
+      "m_Reward": "[[800002,1],[1101,100]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_RequiredScore": "6",
+      "m_Reward": "[[50004,10],[40003,1]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_RequiredScore": "8",
+      "m_Reward": "[[1050,1],[40001,1]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_RequiredScore": "10",
+      "m_Reward": "[[101,300],[40001,1]]"
+    }
+  },
+  "status": "processed_5_items"
+}

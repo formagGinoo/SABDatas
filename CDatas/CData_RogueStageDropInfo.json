@@ -1,0 +1,3496 @@
+{
+  "className": "CData_RogueStageDropInfo",
+  "timestamp": "2025-07-08T13:35:47.178Z",
+  "data": {
+    "1001": {
+      "_type": "nested_dictionary",
+      "_count": 40,
+      "_processed": 40,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000006,1000006]"
+        },
+        "10001": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10001",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[7101100,1000002,7101101,1000002]"
+        },
+        "10002": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10002",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[7101102,7101103,1000001,1000002]"
+        },
+        "10003": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10003",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[7101104,7101106,7101107,1000002]"
+        },
+        "10004": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10004",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[7101104,7101105,7101107,1000002]"
+        },
+        "10005": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10005",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[7101104,7101106,7101107,1000002]"
+        },
+        "10006": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10006",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[6]",
+          "m_RandomGroupID": "[1000005,7101105,7101106,1000002]"
+        },
+        "10007": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10007",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[7]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "10008": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10008",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "10009": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10009",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10010": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10010",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "10011": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10011",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "10012": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10012",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[12]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "10013": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10013",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[13]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10014": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10014",
+          "m_LevelId": "7101100",
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "10015": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10015",
+          "m_LevelId": "7101100",
+          "m_DropType": "2",
+          "m_DropValue": "[70012]",
+          "m_RandomGroupID": "[1001002,1001003,1000001,1000002]"
+        },
+        "10016": {
+          "m_bError": null,
+          "m_StageID": "1001",
+          "m_ID": "10016",
+          "m_LevelId": "7101100",
+          "m_DropType": "2",
+          "m_DropValue": "[70022]",
+          "m_RandomGroupID": "[7101104,7101105,7101107,1000002]"
+        }
+      }
+    },
+    "1002": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "1002",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000006,1000006]"
+        }
+      }
+    },
+    "1003": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "1003",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000006,1000006]"
+        }
+      }
+    },
+    "2001": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "2001",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000006,1000006]"
+        }
+      }
+    },
+    "2002": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000007,1000001,1000006]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000007,1000001,1000006]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000008,1000007,1000001,1000006]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "2002",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000006,1000006]"
+        }
+      }
+    },
+    "2003": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "2003",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "3001": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "3001",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "3002": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "3002",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "3003": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "3003",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "4001": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "4001",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "4002": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "4002",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "4003": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "4003",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "5001": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "5001",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "5002": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "5002",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    },
+    "5003": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "1",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[1]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "2",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[2]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "3",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[3]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "4",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[4]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "5",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[5]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "6",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[6,7]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "7",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[8]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "8",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[9]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "9",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[10]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "10",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[11]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "11",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[12,13]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "12",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[14]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "13",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[15,16]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "14",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[17]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "15",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[18,19]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "16",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[20]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "17",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[21,22]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "18",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[23]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "19",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[24,25]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "20",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[26]",
+          "m_RandomGroupID": "[1001003,1000004,1000001,1000002]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "21",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[27,28]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "22",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[29]",
+          "m_RandomGroupID": "[1001002,1000004,1000001,1000002]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "23",
+          "m_LevelId": null,
+          "m_DropType": "1",
+          "m_DropValue": "[30]",
+          "m_RandomGroupID": "[1000005,1000004,1000001,1000002]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_StageID": "5003",
+          "m_ID": "24",
+          "m_LevelId": null,
+          "m_DropType": "2",
+          "m_DropValue": "[70012,70022,70032,70042,70052,70062,70071,70081,70091,70101,70111,70122,70132,70142,70152,70162,70172,70181,70191,70201,70211,70221,70232,70242,70252,70262,70272,70282,70291,70301,70311,70321,70331,70341,70411,70421,70431,70441,70451,70521,70531,70541,70551,70561]",
+          "m_RandomGroupID": "[1001001,1000001,1000002,1000002]"
+        }
+      }
+    }
+  },
+  "status": "processed_15_items"
+}

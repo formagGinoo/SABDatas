@@ -1,0 +1,824 @@
+{
+  "className": "CData_SkillTemplate",
+  "timestamp": "2025-07-08T13:35:50.744Z",
+  "data": {
+    "11": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1301,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1301,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1301,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1301,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1301,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1301,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "11",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "12": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1302,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1302,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1302,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1302,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1302,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1302,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "12",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "13": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1303,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1303,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1303,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1303,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1303,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1303,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "13",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "14": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1304,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1304,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1304,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1304,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1304,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1304,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "14",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "15": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1305,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1305,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1305,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1305,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1305,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1305,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "15",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "16": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1204,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1204,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1204,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1204,84],[1205,120],[1306,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1204,252],[1205,180],[1306,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1204,336],[1205,240],[1306,60]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1204,420],[1205,300],[1206,180],[1306,140]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1204,462],[1205,330],[1206,210],[1306,200]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1204,546],[1205,380],[1206,240],[1306,270]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "16",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "21": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1301,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1301,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1301,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1301,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1301,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1301,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "21",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "22": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1302,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1302,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1302,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1302,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1302,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1302,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "22",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "23": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1303,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1303,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1303,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1303,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1303,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1303,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "23",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "24": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1304,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1304,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1304,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1304,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1304,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1304,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "24",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "25": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1305,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1305,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1305,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1305,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1305,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1305,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "25",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "26": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[[1201,16]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "2",
+          "m_SkillLevelUpCost": "[[1201,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "3",
+          "m_SkillLevelUpCost": "[[1201,52]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "4",
+          "m_SkillLevelUpCost": "[[1201,84],[1202,120],[1306,40]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "5",
+          "m_SkillLevelUpCost": "[[1201,252],[1202,180],[1306,60]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "6",
+          "m_SkillLevelUpCost": "[[1201,336],[1202,240],[1306,120]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "7",
+          "m_SkillLevelUpCost": "[[1201,420],[1202,300],[1203,180],[1306,280]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "8",
+          "m_SkillLevelUpCost": "[[1201,462],[1202,330],[1203,210],[1306,400]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "9",
+          "m_SkillLevelUpCost": "[[1201,546],[1202,380],[1203,240],[1306,540]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_SkillTemplateID": "26",
+          "m_SkillLevel": "10",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    },
+    "9999": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_SkillTemplateID": "9999",
+          "m_SkillLevel": "1",
+          "m_SkillLevelUpCost": "[]"
+        }
+      }
+    }
+  },
+  "status": "processed_13_items"
+}

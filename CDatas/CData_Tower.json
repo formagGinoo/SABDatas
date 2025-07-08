@@ -1,0 +1,77 @@
+{
+  "className": "CData_Tower",
+  "timestamp": "2025-07-08T13:35:52.203Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_LevelSubType": "1",
+      "m_mName": "\"Tower of Purification\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1104020]",
+      "m_ClientMessage": null,
+      "m_OpenDate": "[1,2,3,4,5,6,7]",
+      "m_Times": "999",
+      "m_CampResID": null,
+      "m_mOpeningDays": "\"\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp6_5\"",
+      "m_mHeroHeartText": "\"Tower of Purification\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_LevelSubType": "2",
+      "m_mName": "\"Tower of Ancestry - Decay\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1109010]",
+      "m_ClientMessage": "21003",
+      "m_OpenDate": "[3,7]",
+      "m_Times": "3",
+      "m_CampResID": "1",
+      "m_mOpeningDays": "\"Available on Wed and Sun.\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp1_5\"",
+      "m_mHeroHeartText": "\"Tower of Ancestry - Decay\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_LevelSubType": "3",
+      "m_mName": "\"Tower of the Church - Original Sin\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1109010]",
+      "m_ClientMessage": "21003",
+      "m_OpenDate": "[1,4,7]",
+      "m_Times": "3",
+      "m_CampResID": "2",
+      "m_mOpeningDays": "\"Available on Mon, Thur, and Sun.\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp2_5\"",
+      "m_mHeroHeartText": "\"Tower of The Church - Original Sin\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_LevelSubType": "4",
+      "m_mName": "\"Tower of The Bloodborn - Desire\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1109010]",
+      "m_ClientMessage": "21003",
+      "m_OpenDate": "[2,5,7]",
+      "m_Times": "3",
+      "m_CampResID": "3",
+      "m_mOpeningDays": "\"Available on Tues, Fri, and Sun.\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp3_5\"",
+      "m_mHeroHeartText": "\"Tower of The Bloodborn - Desire\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_LevelSubType": "5",
+      "m_mName": "\"Tower of The Kingdom - Deception\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1109010]",
+      "m_ClientMessage": "21003",
+      "m_OpenDate": "[3,6,7]",
+      "m_Times": "3",
+      "m_CampResID": "4",
+      "m_mOpeningDays": "\"Available on Wed, Sat, and Sun.\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp4_5\"",
+      "m_mHeroHeartText": "\"Tower of The Kingdom - Deception\""
+    }
+  },
+  "status": "processed_5_items"
+}

@@ -1,0 +1,55 @@
+{
+  "className": "CData_CharacterCareer",
+  "timestamp": "2025-07-08T13:35:26.694Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_CareerID": "1",
+      "m_mCareerName": "\"Warrior\"",
+      "m_mCareerDesc": "\"Has strong survivability and DPS. Performs well in varying scenarios.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career1\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career1\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_CareerID": "2",
+      "m_mCareerName": "\"Assassin\"",
+      "m_mCareerDesc": "\"Adept at breaking through or avoiding the front line, directly striking the weaker middle and backline enemies.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career2\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career2\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_CareerID": "3",
+      "m_mCareerName": "\"Defender\"",
+      "m_mCareerDesc": "\"A hero with reliable survivability and protection skills.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career3\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career3\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_CareerID": "4",
+      "m_mCareerName": "\"Marksman\"",
+      "m_mCareerDesc": "\"Deals consistent, strong DMG to a single target or targets in a small area.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career4\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career4\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_CareerID": "5",
+      "m_mCareerName": "\"Sorcerer\"",
+      "m_mCareerDesc": "\"A hero with a versatile attack style who can destroy many enemies using various methods.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career5\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career5\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_CareerID": "6",
+      "m_mCareerName": "\"Enchanter\"",
+      "m_mCareerDesc": "\"Each possesses distinctive abilities, offering various benefits to their teams.\"",
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career6\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career6\""
+    }
+  },
+  "status": "processed_6_items"
+}

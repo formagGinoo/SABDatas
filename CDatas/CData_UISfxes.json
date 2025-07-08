@@ -1,0 +1,175 @@
+{
+  "className": "CData_UISfxes",
+  "timestamp": "2025-07-08T13:35:52.980Z",
+  "data": {
+    "\"Form_Activity_m_BtnClose\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_m_BtnClose\"",
+      "m_Form": "\"Form_Activity\"",
+      "m_Path": "\"m_BtnClose\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Activity_c_BtnActivityTitle\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_c_BtnActivityTitle\"",
+      "m_Form": "\"Form_Activity\"",
+      "m_Path": "\"m_ActivityTitleList/ActivityTitlePanel/c_BtnActivityTitle\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Activity_c_BtnActivity\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_c_BtnActivity\"",
+      "m_Form": "\"Form_Activity\"",
+      "m_Path": "\"m_ActivityListPanel/ActivityPanel/c_BtnActivity\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Activity_001_m_BtnReward\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_001_m_BtnReward\"",
+      "m_Form": "\"Form_Activity_001\"",
+      "m_Path": "\"m_MainPanel/m_BtnReward\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Activity_001_m_BtnRule\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_001_m_BtnRule\"",
+      "m_Form": "\"Form_Activity_001\"",
+      "m_Path": "\"m_MainPanel/m_BtnRule\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Activity_002_m_BtnReward\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Activity_002_m_BtnReward\"",
+      "m_Form": "\"Form_Activity_002\"",
+      "m_Path": "\"m_MainPanel/m_BtnReward\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Announcement_m_BtnUpdate\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Announcement_m_BtnUpdate\"",
+      "m_Form": "\"Form_Announcement\"",
+      "m_Path": "\"m_BtnUpdate\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Announcement_m_BtnConfirm\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Announcement_m_BtnConfirm\"",
+      "m_Form": "\"Form_Announcement\"",
+      "m_Path": "\"m_BtnConfirm\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Battle_m_btnReturn\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Battle_m_btnReturn\"",
+      "m_Form": "\"Form_Battle\"",
+      "m_Path": "\"m_btnReturn\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Download_m_Button_Pause\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Download_m_Button_Pause\"",
+      "m_Form": "\"Form_Download\"",
+      "m_Path": "\"m_DownloadShow/m_DownloadTips/m_Button_Pause\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Log_m_btnShowLog\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Log_m_btnShowLog\"",
+      "m_Form": "\"Form_Log\"",
+      "m_Path": "\"m_btnShowLog\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Login_m_MTArgeement\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Login_m_MTArgeement\"",
+      "m_Form": "\"Form_Login\"",
+      "m_Path": "\"m_BottomPanel/m_MTArgeement\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnHelloworld\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnHelloworld\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_btnHelloworld\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnMultiLanguage\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnMultiLanguage\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_testBtnPanel/m_btnMultiLanguage\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnActivity\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnActivity\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_testBtnPanel/m_btnActivity\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_testClickable\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_testClickable\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_testClickable\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnCN\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnCN\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_MultiLanguatePanel/multiLImage/m_btnCN\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnEN\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnEN\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_MultiLanguatePanel/multiLImage/m_btnEN\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnJP\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnJP\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_MultiLanguatePanel/multiLImage/m_btnJP\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MainCity_m_btnCloseMultiLanguage\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MainCity_m_btnCloseMultiLanguage\"",
+      "m_Form": "\"Form_MainCity\"",
+      "m_Path": "\"m_MultiLanguatePanel/multiLImage/m_btnCloseMultiLanguage\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_MTAgreement_m_BtnConfirm\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_MTAgreement_m_BtnConfirm\"",
+      "m_Form": "\"Form_MTAgreement\"",
+      "m_Path": "\"m_BtnConfirm\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_Prompt_m_BtnClose\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_Prompt_m_BtnClose\"",
+      "m_Form": "\"Form_Prompt\"",
+      "m_Path": "\"m_PromptPanel/m_BtnClose\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_SystemTips_m_Confirm\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_SystemTips_m_Confirm\"",
+      "m_Form": "\"Form_SystemTips\"",
+      "m_Path": "\"m_tipsPanel/m_Confirm\"",
+      "m_Event": "\"Play_Test\""
+    },
+    "\"Form_SystemTips_m_Cancel\"": {
+      "m_bError": null,
+      "m_ID": "\"Form_SystemTips_m_Cancel\"",
+      "m_Form": "\"Form_SystemTips\"",
+      "m_Path": "\"m_tipsPanel/m_Cancel\"",
+      "m_Event": "\"Play_Test\""
+    }
+  },
+  "status": "processed_24_items"
+}

@@ -1,0 +1,177 @@
+{
+  "className": "CData_HuntingRaidAchieve",
+  "timestamp": "2025-07-08T13:35:34.802Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "1",
+          "m_Sequence": "1",
+          "m_AchieveType": "2",
+          "m_GoalNum": "90000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "1",
+          "m_Sequence": "2",
+          "m_AchieveType": "2",
+          "m_GoalNum": "70000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "1",
+          "m_Sequence": "3",
+          "m_AchieveType": "2",
+          "m_GoalNum": "50000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "2",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "1000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "2",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "1500000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "2",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "2000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "3",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "40",
+          "m_mText": "\"Defeat {0} Blood Servant(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "3",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "80",
+          "m_mText": "\"Defeat {0} Blood Servant(s).\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "3",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "120",
+          "m_mText": "\"Defeat {0} Blood Servant(s).\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "4",
+          "m_Sequence": "1",
+          "m_AchieveType": "2",
+          "m_GoalNum": "130000",
+          "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "4",
+          "m_Sequence": "2",
+          "m_AchieveType": "2",
+          "m_GoalNum": "115000",
+          "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "4",
+          "m_Sequence": "3",
+          "m_AchieveType": "2",
+          "m_GoalNum": "100000",
+          "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "5",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "30",
+          "m_mText": "\"Defeat {0} Puppet(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "5",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "45",
+          "m_mText": "\"Defeat {0} Puppet(s).\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "5",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "60",
+          "m_mText": "\"Defeat {0} Puppet(s).\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    }
+  },
+  "status": "processed_5_items"
+}

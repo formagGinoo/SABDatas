@@ -1,0 +1,62 @@
+{
+  "className": "CData_Event",
+  "timestamp": "2025-07-08T13:35:34.078Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ActivityID": "1",
+      "m_SystemID": "5",
+      "m_mName": "\"Infinite Abyss\"",
+      "m_Rewards": "[50004,101]",
+      "m_Img": "\"\"",
+      "m_Tab": "1",
+      "m_IsShow": "1",
+      "m_Jump": "4"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ActivityID": "2",
+      "m_SystemID": "58",
+      "m_mName": "\"Timeworn Mausoleum\"",
+      "m_Rewards": "[1203,1206]",
+      "m_Img": "\"\"",
+      "m_Tab": "1",
+      "m_IsShow": "1",
+      "m_Jump": "26"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ActivityID": "3",
+      "m_SystemID": "47",
+      "m_mName": "\"Dutchman's Revenge\"",
+      "m_Rewards": "[90006,900006]",
+      "m_Img": "\"\"",
+      "m_Tab": "1",
+      "m_IsShow": "1",
+      "m_Jump": "1903"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ActivityID": "4",
+      "m_SystemID": "13",
+      "m_mName": "\"Tomb of the Fallen\"",
+      "m_Rewards": "[1072,1102]",
+      "m_Img": "\"\"",
+      "m_Tab": "1",
+      "m_IsShow": "1",
+      "m_Jump": "14"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ActivityID": "5",
+      "m_SystemID": "28",
+      "m_mName": "\"Blood Arena\"",
+      "m_Rewards": "[1059,101]",
+      "m_Img": "\"\"",
+      "m_Tab": "1",
+      "m_IsShow": "1",
+      "m_Jump": "1904"
+    }
+  },
+  "status": "processed_5_items"
+}

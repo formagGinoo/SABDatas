@@ -1,0 +1,73 @@
+{
+  "className": "CData_GuildBadge",
+  "timestamp": "2025-07-08T13:35:34.741Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_BadgeID": "1",
+      "m_UnlockLevel": null,
+      "m_IconPath": "\"Atlas_Guild/guild_badge02\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_BadgeID": "2",
+      "m_UnlockLevel": null,
+      "m_IconPath": "\"Atlas_Guild/guild_badge03\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_BadgeID": "3",
+      "m_UnlockLevel": null,
+      "m_IconPath": "\"Atlas_Guild/guild_badge04\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_BadgeID": "4",
+      "m_UnlockLevel": "2",
+      "m_IconPath": "\"Atlas_Guild/guild_badge05\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_BadgeID": "5",
+      "m_UnlockLevel": "2",
+      "m_IconPath": "\"Atlas_Guild/guild_badge06\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_BadgeID": "6",
+      "m_UnlockLevel": "3",
+      "m_IconPath": "\"Atlas_Guild/guild_badge07\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_BadgeID": "7",
+      "m_UnlockLevel": "3",
+      "m_IconPath": "\"Atlas_Guild/guild_badge08\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_BadgeID": "8",
+      "m_UnlockLevel": "4",
+      "m_IconPath": "\"Atlas_Guild/guild_badge09\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_BadgeID": "9",
+      "m_UnlockLevel": "4",
+      "m_IconPath": "\"Atlas_Guild/guild_badge10\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_BadgeID": "10",
+      "m_UnlockLevel": "5",
+      "m_IconPath": "\"Atlas_Guild/guild_badge11\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_BadgeID": "11",
+      "m_UnlockLevel": "5",
+      "m_IconPath": "\"Atlas_Guild/guild_badge12\""
+    }
+  },
+  "status": "processed_11_items"
+}

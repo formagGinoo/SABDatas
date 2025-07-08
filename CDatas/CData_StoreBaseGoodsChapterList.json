@@ -1,0 +1,301 @@
+{
+  "className": "CData_StoreBaseGoodsChapterList",
+  "timestamp": "2025-07-08T13:35:51.457Z",
+  "data": {
+    "301001": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": null,
+          "m_mLevelName": "\"1-9\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1102090",
+          "m_Type": null
+        },
+        "1": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "1",
+          "m_mLevelName": "\"2-6\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1103060",
+          "m_Type": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "2",
+          "m_mLevelName": "\"3-6\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1104060",
+          "m_Type": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "3",
+          "m_mLevelName": "\"4-7\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1105070",
+          "m_Type": null
+        },
+        "4": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "4",
+          "m_mLevelName": "\"5-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1106080",
+          "m_Type": null
+        },
+        "5": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "5",
+          "m_mLevelName": "\"6-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1107080",
+          "m_Type": null
+        },
+        "6": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "6",
+          "m_mLevelName": "\"7-9\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1108090",
+          "m_Type": null
+        },
+        "7": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "7",
+          "m_mLevelName": "\"8-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1109080",
+          "m_Type": null
+        },
+        "8": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "8",
+          "m_mLevelName": "\"9-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1110080",
+          "m_Type": null
+        },
+        "9": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "9",
+          "m_mLevelName": "\"10-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1111080",
+          "m_Type": null
+        },
+        "10": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "10",
+          "m_mLevelName": "\"1-9\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,800]]",
+          "m_MainLevelID": "1102090",
+          "m_Type": "1"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "11",
+          "m_mLevelName": "\"2-6\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,800]]",
+          "m_MainLevelID": "1103060",
+          "m_Type": "1"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "12",
+          "m_mLevelName": "\"3-6\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,800]]",
+          "m_MainLevelID": "1104060",
+          "m_Type": "1"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "13",
+          "m_mLevelName": "\"4-7\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,800]]",
+          "m_MainLevelID": "1105070",
+          "m_Type": "1"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "14",
+          "m_mLevelName": "\"5-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,800]]",
+          "m_MainLevelID": "1106080",
+          "m_Type": "1"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "15",
+          "m_mLevelName": "\"6-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,1000]]",
+          "m_MainLevelID": "1107080",
+          "m_Type": "1"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "16",
+          "m_mLevelName": "\"7-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,1000]]",
+          "m_MainLevelID": "1108090",
+          "m_Type": "1"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "17",
+          "m_mLevelName": "\"8-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,1000]]",
+          "m_MainLevelID": "1109080",
+          "m_Type": "1"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "18",
+          "m_mLevelName": "\"9-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,1000]]",
+          "m_MainLevelID": "1110080",
+          "m_Type": "1"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GoodsID": "301001",
+          "m_Level": "19",
+          "m_mLevelName": "\"10-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,1000]]",
+          "m_MainLevelID": "1111080",
+          "m_Type": "1"
+        }
+      }
+    },
+    "301002": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": null,
+          "m_mLevelName": "\"11-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1112080",
+          "m_Type": null
+        },
+        "1": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "1",
+          "m_mLevelName": "\"12-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1113070",
+          "m_Type": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "2",
+          "m_mLevelName": "\"13-8\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1114090",
+          "m_Type": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "3",
+          "m_mLevelName": "\"14-9\"",
+          "m_FreeReward": "[[101,50]]",
+          "m_PayReward": "[]",
+          "m_MainLevelID": "1115090",
+          "m_Type": null
+        },
+        "4": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "4",
+          "m_mLevelName": "\"11-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,2000]]",
+          "m_MainLevelID": "1112080",
+          "m_Type": "1"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "5",
+          "m_mLevelName": "\"12-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,2000]]",
+          "m_MainLevelID": "1113070",
+          "m_Type": "1"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "6",
+          "m_mLevelName": "\"13-8\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,2500]]",
+          "m_MainLevelID": "1114090",
+          "m_Type": "1"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GoodsID": "301002",
+          "m_Level": "7",
+          "m_mLevelName": "\"14-9\"",
+          "m_FreeReward": "[]",
+          "m_PayReward": "[[101,2500]]",
+          "m_MainLevelID": "1115090",
+          "m_Type": "1"
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

@@ -1,0 +1,151 @@
+{
+  "className": "CData_SpineRole",
+  "timestamp": "2025-07-08T13:35:51.281Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_Note": "\"盾妹\"",
+      "m_Spine_res": "\"aile_base\"",
+      "m_XPosition": "-61.70000076293945",
+      "m_YPosition": "-248.39999389648438",
+      "m_Action": "\"idle\"",
+      "m_Scale": "0.5",
+      "m_StartTime": "245",
+      "m_EndTime": "305"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_Note": "\"黑妹\"",
+      "m_Spine_res": "\"shila_base\"",
+      "m_XPosition": "22.450000762939453",
+      "m_YPosition": "-177.1999969482422",
+      "m_Action": "\"chuchang\"",
+      "m_Scale": "0.44999998807907104",
+      "m_StartTime": "92",
+      "m_EndTime": "152"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_Note": "\"安普莎SSR\"",
+      "m_Spine_res": "\"empusae_final\"",
+      "m_XPosition": "1.2999999523162842",
+      "m_YPosition": "-141.2899932861328",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.3199999928474426",
+      "m_StartTime": "2",
+      "m_EndTime": "62"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_Note": "\"希德哈尔\"",
+      "m_Spine_res": "\"cidhall_base\"",
+      "m_XPosition": "-17.899999618530273",
+      "m_YPosition": "-112.5",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.25",
+      "m_StartTime": "22",
+      "m_EndTime": "82"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_Note": "\"光骑\"",
+      "m_Spine_res": "\"friedrich_base\"",
+      "m_XPosition": "-3.4000000953674316",
+      "m_YPosition": "-110.30000305175781",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.25",
+      "m_StartTime": null,
+      "m_EndTime": "60"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_Note": "\"火法\"",
+      "m_Spine_res": "\"faust_base\"",
+      "m_XPosition": "-29",
+      "m_YPosition": "-107.19999694824219",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.20999999344348907",
+      "m_StartTime": null,
+      "m_EndTime": "60"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_Note": "\"主角初阶\"",
+      "m_Spine_res": "\"nevernight_base\"",
+      "m_XPosition": "-0.699999988079071",
+      "m_YPosition": "-147.52999877929688",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.3499999940395355",
+      "m_StartTime": null,
+      "m_EndTime": "60"
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_Note": "\"苍凛\"",
+      "m_Spine_res": "\"aorin_base\"",
+      "m_XPosition": "71.30000305175781",
+      "m_YPosition": "-141.3000030517578",
+      "m_Action": "\"idle\"",
+      "m_Scale": "0.4399999976158142",
+      "m_StartTime": "193",
+      "m_EndTime": "253"
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_Note": "\"安普莎花女\"",
+      "m_Spine_res": "\"empusae_base\"",
+      "m_XPosition": "-15.699999809265137",
+      "m_YPosition": "-111.5999984741211",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.25",
+      "m_StartTime": "4",
+      "m_EndTime": "64"
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_Note": "\"狼妹\"",
+      "m_Spine_res": "\"silvan_base\"",
+      "m_XPosition": "-39.70000076293945",
+      "m_YPosition": "-83.5",
+      "m_Action": "\"chuchang\"",
+      "m_Scale": "0.25",
+      "m_StartTime": "48",
+      "m_EndTime": "108"
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_Note": "\"该隐\"",
+      "m_Spine_res": "\"cain_base\"",
+      "m_XPosition": "-7.170000076293945",
+      "m_YPosition": "-90.5",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.20000000298023224",
+      "m_StartTime": null,
+      "m_EndTime": "60"
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_Note": "\"人偶\"",
+      "m_Spine_res": "\"merchant\"",
+      "m_XPosition": "-18",
+      "m_YPosition": "-127.4000015258789",
+      "m_Action": "\"xp\"",
+      "m_Scale": "0.25",
+      "m_StartTime": "4",
+      "m_EndTime": "64"
+    }
+  },
+  "status": "processed_12_items"
+}

@@ -1,0 +1,168 @@
+{
+  "className": "CData_MLActionTask",
+  "timestamp": "2025-07-08T13:35:36.351Z",
+  "data": {
+    "100": {
+      "_type": "nested_dictionary",
+      "_count": 14,
+      "_processed": 14,
+      "data": {
+        "102001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "102001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "106",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,250],[2,2,250],[2,3,250],[2,4,250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "102002": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "102002",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "106",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "5",
+          "m_RolePropertyCorrect": "[[2,1,250],[2,2,250],[2,3,250],[2,4,250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "103001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "103001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "134",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,200],[2,2,200],[2,3,200],[2,4,200]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "104001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "104001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "101",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,200],[2,2,200],[2,3,200],[2,4,200]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "105001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "105001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "124",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,200],[2,2,200],[2,3,200],[2,4,200]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "106001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "106001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "122",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,200],[2,2,200],[2,3,200],[2,4,200]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "107001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "107001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "104",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "1",
+          "m_RolePropertyCorrect": "[[2,1,200],[2,2,200],[2,3,200],[2,4,200]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "108001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "108001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "901",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "500",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "108002": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "108002",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "901",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "2900",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "108003": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "108003",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "901",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "4900",
+          "m_RolePropertyCorrect": "[[2,1,1000],[2,2,1000],[2,3,1000],[2,4,1000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "109001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "109001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "902",
+          "m_ObjectiveData": "[1]",
+          "m_ObjectiveCount": "1800",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "109002": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "109002",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "902",
+          "m_ObjectiveData": "[1]",
+          "m_ObjectiveCount": "7200",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "110001": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "110001",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "903",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "2",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        },
+        "110002": {
+          "m_bError": null,
+          "m_ActionTaskGroup": "100",
+          "m_TaskID": "110002",
+          "m_MainlevelType": "1",
+          "m_ObjectiveType": "903",
+          "m_ObjectiveData": "[]",
+          "m_ObjectiveCount": "5",
+          "m_RolePropertyCorrect": "[[2,1,500],[2,2,500],[2,3,500],[2,4,500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,0],[2,2,0],[2,3,0],[2,4,0]]"
+        }
+      }
+    }
+  },
+  "status": "processed_1_items"
+}

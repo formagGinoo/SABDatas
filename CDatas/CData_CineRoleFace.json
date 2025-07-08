@@ -1,0 +1,434 @@
+{
+  "className": "CData_CineRoleFace",
+  "timestamp": "2025-07-08T13:35:27.135Z",
+  "data": {
+    "\"Acappella_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Acappella_Base003\"",
+      "m_PosX": "128",
+      "m_PosY": "171",
+      "m_Replace": null
+    },
+    "\"Agares_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Agares_Base003\"",
+      "m_PosX": "102",
+      "m_PosY": "144",
+      "m_Replace": null
+    },
+    "\"Aiona_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Aiona_Base003\"",
+      "m_PosX": "131",
+      "m_PosY": "144",
+      "m_Replace": null
+    },
+    "\"Aiona_CoveLight003\"": {
+      "m_bError": null,
+      "m_ID": "\"Aiona_CoveLight003\"",
+      "m_PosX": "121",
+      "m_PosY": "155",
+      "m_Replace": null
+    },
+    "\"Aiona_Lily003\"": {
+      "m_bError": null,
+      "m_ID": "\"Aiona_Lily003\"",
+      "m_PosX": "126",
+      "m_PosY": "154",
+      "m_Replace": null
+    },
+    "\"Albert_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Albert_Base003\"",
+      "m_PosX": "107",
+      "m_PosY": "154",
+      "m_Replace": null
+    },
+    "\"Ami_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ami_Base003\"",
+      "m_PosX": "128",
+      "m_PosY": "161",
+      "m_Replace": null
+    },
+    "\"Augustine_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Augustine_Base003\"",
+      "m_PosX": "133",
+      "m_PosY": "164",
+      "m_Replace": null
+    },
+    "\"Baphomet_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Baphomet_Base003\"",
+      "m_PosX": "122",
+      "m_PosY": "116",
+      "m_Replace": null
+    },
+    "\"Bella_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bella_Base003\"",
+      "m_PosX": "131",
+      "m_PosY": "147",
+      "m_Replace": null
+    },
+    "\"Bella_Doll003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bella_Doll003\"",
+      "m_PosX": "131",
+      "m_PosY": "147",
+      "m_Replace": null
+    },
+    "\"Cain_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Cain_Base003\"",
+      "m_PosX": "79",
+      "m_PosY": "156",
+      "m_Replace": null
+    },
+    "\"Cecia_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Cecia_Base003\"",
+      "m_PosX": "142",
+      "m_PosY": "153",
+      "m_Replace": null
+    },
+    "\"Clive_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Clive_Base003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"CliveJR_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"CliveJR_Base003\"",
+      "m_PosX": "125",
+      "m_PosY": "141",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Base003\"",
+      "m_PosX": "130",
+      "m_PosY": "133",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Full003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Full003\"",
+      "m_PosX": "156",
+      "m_PosY": "156",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Mask003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Mask003\"",
+      "m_PosX": "156",
+      "m_PosY": "156",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Veil003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Veil003\"",
+      "m_PosX": "131",
+      "m_PosY": "184",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Cat003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Cat003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"Jacinta_Cat003\"": {
+      "m_bError": null,
+      "m_ID": "\"Jacinta_Cat003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"Bainisi_Cat003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bainisi_Cat003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"Darcias_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Darcias_Base003\"",
+      "m_PosX": "129",
+      "m_PosY": "136",
+      "m_Replace": null
+    },
+    "\"Edina_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Edina_Base003\"",
+      "m_PosX": "121",
+      "m_PosY": "124",
+      "m_Replace": null
+    },
+    "\"Empousa_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Empousa_Base003\"",
+      "m_PosX": "56",
+      "m_PosY": "142",
+      "m_Replace": null
+    },
+    "\"Florent_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Florent_Base003\"",
+      "m_PosX": "127",
+      "m_PosY": "155",
+      "m_Replace": null
+    },
+    "\"Friedrich_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Friedrich_Base003\"",
+      "m_PosX": "127",
+      "m_PosY": "128",
+      "m_Replace": null
+    },
+    "\"Garlic_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Garlic_Base003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"Gilrain_Alter003\"": {
+      "m_bError": null,
+      "m_ID": "\"Gilrain_Alter003\"",
+      "m_PosX": "160",
+      "m_PosY": "153",
+      "m_Replace": null
+    },
+    "\"Gilrain_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Gilrain_Base003\"",
+      "m_PosX": "131",
+      "m_PosY": "170",
+      "m_Replace": null
+    },
+    "\"Goldland_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Goldland_Base003\"",
+      "m_PosX": "130",
+      "m_PosY": "135",
+      "m_Replace": null
+    },
+    "\"Hati_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Hati_Base003\"",
+      "m_PosX": "108",
+      "m_PosY": "121",
+      "m_Replace": null
+    },
+    "\"Hippocratic_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Hippocratic_Base003\"",
+      "m_PosX": "99",
+      "m_PosY": "181",
+      "m_Replace": null
+    },
+    "\"Jestel_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Jestel_Base003\"",
+      "m_PosX": "122",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Joan_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Joan_Base003\"",
+      "m_PosX": "123",
+      "m_PosY": "153",
+      "m_Replace": null
+    },
+    "\"Lamia_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Lamia_Base003\"",
+      "m_PosX": "163",
+      "m_PosY": "139",
+      "m_Replace": null
+    },
+    "\"Lamia_Clone003\"": {
+      "m_bError": null,
+      "m_ID": "\"Lamia_Clone003\"",
+      "m_PosX": "163",
+      "m_PosY": "139",
+      "m_Replace": null
+    },
+    "\"Lamia_Gentle003\"": {
+      "m_bError": null,
+      "m_ID": "\"Lamia_Gentle003\"",
+      "m_PosX": "163",
+      "m_PosY": "139",
+      "m_Replace": null
+    },
+    "\"Noah_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Noah_Base003\"",
+      "m_PosX": "113",
+      "m_PosY": "149",
+      "m_Replace": null
+    },
+    "\"Noah_Full003\"": {
+      "m_bError": null,
+      "m_ID": "\"Noah_Full003\"",
+      "m_PosX": "114",
+      "m_PosY": "159",
+      "m_Replace": null
+    },
+    "\"Noah_Covenant003\"": {
+      "m_bError": null,
+      "m_ID": "\"Noah_Covenant003\"",
+      "m_PosX": "120",
+      "m_PosY": "149",
+      "m_Replace": null
+    },
+    "\"Ottavia_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ottavia_Base003\"",
+      "m_PosX": "152",
+      "m_PosY": "162",
+      "m_Replace": null
+    },
+    "\"Pavana_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Pavana_Base003\"",
+      "m_PosX": "121",
+      "m_PosY": "168",
+      "m_Replace": null
+    },
+    "\"Piera_Astray003\"": {
+      "m_bError": null,
+      "m_ID": "\"Piera_Astray003\"",
+      "m_PosX": "109",
+      "m_PosY": "158",
+      "m_Replace": null
+    },
+    "\"Piera_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Piera_Base003\"",
+      "m_PosX": "126",
+      "m_PosY": "148",
+      "m_Replace": null
+    },
+    "\"Ressa_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ressa_Base003\"",
+      "m_PosX": "129",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Selena_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Selena_Base003\"",
+      "m_PosX": "107",
+      "m_PosY": "154",
+      "m_Replace": null
+    },
+    "\"Seth_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Seth_Base003\"",
+      "m_PosX": "132",
+      "m_PosY": "156",
+      "m_Replace": null
+    },
+    "\"Setti_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Setti_Base003\"",
+      "m_PosX": "158",
+      "m_PosY": "130",
+      "m_Replace": null
+    },
+    "\"Stella_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Stella_Base003\"",
+      "m_PosX": "121",
+      "m_PosY": "152",
+      "m_Replace": null
+    },
+    "\"Theophane_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Theophane_Base003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
+    },
+    "\"Tris_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Tris_Base003\"",
+      "m_PosX": "169",
+      "m_PosY": "129",
+      "m_Replace": null
+    },
+    "\"VanHellsing_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"VanHellsing_Base003\"",
+      "m_PosX": "107",
+      "m_PosY": "182",
+      "m_Replace": null
+    },
+    "\"Yggdrasill_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Yggdrasill_Base003\"",
+      "m_PosX": "113",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Bob_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bob_Base003\"",
+      "m_PosX": "130",
+      "m_PosY": "105",
+      "m_Replace": null
+    },
+    "\"Noah_BlackEye003\"": {
+      "m_bError": null,
+      "m_ID": "\"Noah_BlackEye003\"",
+      "m_PosX": "113",
+      "m_PosY": "149",
+      "m_Replace": null
+    },
+    "\"WilliamGoldland_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"WilliamGoldland_Base003\"",
+      "m_PosX": "130",
+      "m_PosY": "135",
+      "m_Replace": null
+    },
+    "\"Joyce_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Joyce_Base003\"",
+      "m_PosX": "261",
+      "m_PosY": "296",
+      "m_Replace": null
+    },
+    "\"Limine_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Limine_Base003\"",
+      "m_PosX": "122",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Selena_Summer003\"": {
+      "m_bError": null,
+      "m_ID": "\"Selena_Summer003\"",
+      "m_PosX": "130",
+      "m_PosY": "135",
+      "m_Replace": null
+    },
+    "\"Agares_Covenant003\"": {
+      "m_bError": null,
+      "m_ID": "\"Agares_Covenant003\"",
+      "m_PosX": "111",
+      "m_PosY": "156",
+      "m_Replace": null
+    }
+  },
+  "status": "processed_61_items"
+}

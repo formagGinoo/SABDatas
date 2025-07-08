@@ -1,0 +1,133 @@
+{
+  "className": "CData_LegacyStageLevelTips",
+  "timestamp": "2025-07-08T13:35:35.585Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mTips": "\"Keys and Chests\"",
+      "m_mText": "\"You'll need a key to open chests. Defeat the Artifact Captain to obtain chest keys.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_2\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mTips": "\"Doors and Mechanisms\"",
+      "m_mText": "\"Certain mechanisms activate certain gates. Be sure to pay attention to the colors!\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_3\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_mTips": "\"Staying Alert\"",
+      "m_mText": "\"Alert level increases the more Rounds that pass. When Alert level becomes high, battles become increasingly difficult. The heist fails after Alert level reaches 100.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_4\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_mTips": "\"Avoiding Unnecessary Combat\"",
+      "m_mText": "\"Act carefully during the heist, avoiding direct confrontation with Artifact Guards unless necessary. Engaging in battle increases their Alert level, and defeat will result in immediate failure.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_5\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_mTips": "\"Keeping Hidden\"",
+      "m_mText": "\"Stay out of any Guards' line of sight during the heist. Being spotted will greatly increase their Alert level, and units will be sent to capture you.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_6\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_mTips": "\"One-way Doors\"",
+      "m_mText": "\"Some doors can only be used in one direction. Once you've crossed through, there's no going back.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_7\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_mTips": "\"Secret Passages\"",
+      "m_mText": "\"Secret passages will instantly transport you, like a portal.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_8\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_mTips": "\"Mechanism Types\"",
+      "m_mText": "\"Note that there are different types of mechanisms. Some only activate while standing on them, and deactivate as soon as you step off.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_9\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_mTips": "\"Multiple Mechanisms\"",
+      "m_mText": "\"Some doors require multiple triggers to open. The number of lights on the door indicates how many triggers need to be activated.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_18\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_mTips": "\"Patrol Routes\"",
+      "m_mText": "\"Artifact Patrol are special units that patrol through the ship's cabin. Memorize their routes to avoid being spotted.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_19\""
+    },
+    "100": {
+      "m_bError": null,
+      "m_ID": "100",
+      "m_mTips": "\"Illusory Deception\"",
+      "m_mText": "\"\"The Fool's\" Illusion distracts nearby enemies, who will come to investigate in the following round.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_10\""
+    },
+    "101": {
+      "m_bError": null,
+      "m_ID": "101",
+      "m_mTips": "\"Breakneck Speed\"",
+      "m_mText": "\"\"The Fool\" can instantly defeat any enemy, except for Artifact Captains. To obtain keys, you must still face them directly.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_11\""
+    },
+    "102": {
+      "m_bError": null,
+      "m_ID": "102",
+      "m_mTips": "\"Stealth Flight\"",
+      "m_mText": "\"\"The Moon's\" bat form can pass under low bars or between boxes all while avoiding detection.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_12\""
+    },
+    "103": {
+      "m_bError": null,
+      "m_ID": "103",
+      "m_mTips": "\"Roche Limit\"",
+      "m_mText": "\"\"The Moon\" can apply gravitational force to select enemies, who will move towards that direction in the following round.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_13\""
+    },
+    "104": {
+      "m_bError": null,
+      "m_ID": "104",
+      "m_mTips": "\"Temporal Dislocation\"",
+      "m_mText": "\"\"The High Priestess\" can return any unit to their position at the beginning of the current round.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_14\""
+    },
+    "105": {
+      "m_bError": null,
+      "m_ID": "105",
+      "m_mTips": "\"Temporal Paradox\"",
+      "m_mText": "\"\"The High Priestess\" can immobilize enemies, who lose their vision and cannot move in the following round.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_15\""
+    },
+    "106": {
+      "m_bError": null,
+      "m_ID": "106",
+      "m_mTips": "\"Chain Reaction\"",
+      "m_mText": "\"\"The Star\" can fire an arrow in a select direction, eliminating the first enemy in its path and lighting any torch mechanisms it passes. The fire arrow has no effect on Artifact Captains.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_16\""
+    },
+    "107": {
+      "m_bError": null,
+      "m_ID": "107",
+      "m_mTips": "\"Distracting Shot\"",
+      "m_mText": "\"\"The Star\" can fire a signal arrow drawing the attention of surrounding units, who will come investigate in the following round.\"",
+      "m_Pic": "\"\""
+    }
+  },
+  "status": "processed_18_items"
+}

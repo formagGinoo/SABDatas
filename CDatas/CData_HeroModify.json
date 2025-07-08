@@ -1,0 +1,467 @@
+{
+  "className": "CData_HeroModify",
+  "timestamp": "2025-07-08T13:35:34.790Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_ForceLevel": "20",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_ForceLevel": null,
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_ForceLevel": "50",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "1001": {
+      "m_bError": null,
+      "m_ID": "1001",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1002": {
+      "m_bError": null,
+      "m_ID": "1002",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1003": {
+      "m_bError": null,
+      "m_ID": "1003",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1004": {
+      "m_bError": null,
+      "m_ID": "1004",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1005": {
+      "m_bError": null,
+      "m_ID": "1005",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1006": {
+      "m_bError": null,
+      "m_ID": "1006",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1007": {
+      "m_bError": null,
+      "m_ID": "1007",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1008": {
+      "m_bError": null,
+      "m_ID": "1008",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1009": {
+      "m_bError": null,
+      "m_ID": "1009",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1010": {
+      "m_bError": null,
+      "m_ID": "1010",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1011": {
+      "m_bError": null,
+      "m_ID": "1011",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1012": {
+      "m_bError": null,
+      "m_ID": "1012",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1013": {
+      "m_bError": null,
+      "m_ID": "1013",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1014": {
+      "m_bError": null,
+      "m_ID": "1014",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1015": {
+      "m_bError": null,
+      "m_ID": "1015",
+      "m_ForceLevel": "160",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "1016": {
+      "m_bError": null,
+      "m_ID": "1016",
+      "m_ForceLevel": "230",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2001": {
+      "m_bError": null,
+      "m_ID": "2001",
+      "m_ForceLevel": "30",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2002": {
+      "m_bError": null,
+      "m_ID": "2002",
+      "m_ForceLevel": "60",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2003": {
+      "m_bError": null,
+      "m_ID": "2003",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2004": {
+      "m_bError": null,
+      "m_ID": "2004",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2005": {
+      "m_bError": null,
+      "m_ID": "2005",
+      "m_ForceLevel": "120",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "3001": {
+      "m_bError": null,
+      "m_ID": "3001",
+      "m_ForceLevel": "200",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "4001": {
+      "m_bError": null,
+      "m_ID": "4001",
+      "m_ForceLevel": "200",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5000": {
+      "m_bError": null,
+      "m_ID": "5000",
+      "m_ForceLevel": "20",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5001": {
+      "m_bError": null,
+      "m_ID": "5001",
+      "m_ForceLevel": "30",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5002": {
+      "m_bError": null,
+      "m_ID": "5002",
+      "m_ForceLevel": "40",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5003": {
+      "m_bError": null,
+      "m_ID": "5003",
+      "m_ForceLevel": "50",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5004": {
+      "m_bError": null,
+      "m_ID": "5004",
+      "m_ForceLevel": "60",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5005": {
+      "m_bError": null,
+      "m_ID": "5005",
+      "m_ForceLevel": "70",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5006": {
+      "m_bError": null,
+      "m_ID": "5006",
+      "m_ForceLevel": "80",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5007": {
+      "m_bError": null,
+      "m_ID": "5007",
+      "m_ForceLevel": "85",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5008": {
+      "m_bError": null,
+      "m_ID": "5008",
+      "m_ForceLevel": "90",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5009": {
+      "m_bError": null,
+      "m_ID": "5009",
+      "m_ForceLevel": "95",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5010": {
+      "m_bError": null,
+      "m_ID": "5010",
+      "m_ForceLevel": "100",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5011": {
+      "m_bError": null,
+      "m_ID": "5011",
+      "m_ForceLevel": "105",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5012": {
+      "m_bError": null,
+      "m_ID": "5012",
+      "m_ForceLevel": "110",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5013": {
+      "m_bError": null,
+      "m_ID": "5013",
+      "m_ForceLevel": "120",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5014": {
+      "m_bError": null,
+      "m_ID": "5014",
+      "m_ForceLevel": "130",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5015": {
+      "m_bError": null,
+      "m_ID": "5015",
+      "m_ForceLevel": "140",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5016": {
+      "m_bError": null,
+      "m_ID": "5016",
+      "m_ForceLevel": "150",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "5017": {
+      "m_bError": null,
+      "m_ID": "5017",
+      "m_ForceLevel": "160",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "6001": {
+      "m_bError": null,
+      "m_ID": "6001",
+      "m_ForceLevel": "200",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
+    "9001": {
+      "m_bError": null,
+      "m_ID": "9001",
+      "m_ForceLevel": "200",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    }
+  },
+  "status": "processed_46_items"
+}

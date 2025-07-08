@@ -1,0 +1,350 @@
+{
+  "className": "CData_CineDialogueOption",
+  "timestamp": "2025-07-08T13:35:27.019Z",
+  "data": {
+    "\"B_20001_Clip01_001a\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_001a\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_001a\"",
+      "m_DialogueList": "[\"B_20001_Clip01_001a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"B_20001_Clip01_001b\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_001b\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_001b\"",
+      "m_DialogueList": "[\"B_20001_Clip01_001a_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"B_20001_Clip01_001c\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_001c\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_001c\"",
+      "m_DialogueList": "[\"B_20001_Clip01_001a_03\"]",
+      "m_OptionList": "[]"
+    },
+    "\"B_20001_Clip01_004a\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_004a\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_004a\"",
+      "m_DialogueList": "[\"B_20001_Clip01_004a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"B_20001_Clip01_004b\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_004b\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_004b\"",
+      "m_DialogueList": "[\"B_20001_Clip01_004b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"B_20001_Clip01_004c\"": {
+      "m_bError": null,
+      "m_ID": "\"B_20001_Clip01_004c\"",
+      "m_OptionContent": "\"Dialogue_B_20001_Clip01_004c\"",
+      "m_DialogueList": "[\"B_20001_Clip01_004c_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Ami_10_07a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Ami_10_07a\"",
+      "m_OptionContent": "\"Dialogue_L_Ami_10_07a\"",
+      "m_DialogueList": "[\"L_Ami_10_07a_1\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Ami_10_07b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Ami_10_07b\"",
+      "m_OptionContent": "\"Dialogue_L_Ami_10_07b\"",
+      "m_DialogueList": "[\"L_Ami_10_07b_1\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Hati_10_04a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Hati_10_04a\"",
+      "m_OptionContent": "\"Dialogue_L_Hati_10_04a\"",
+      "m_DialogueList": "[\"L_Hati_10_04a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Hati_10_04b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Hati_10_04b\"",
+      "m_OptionContent": "\"Dialogue_L_Hati_10_04b\"",
+      "m_DialogueList": "[\"L_Hati_10_04b_01\",\"L_Hati_10_04b_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Lamia_09_04a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Lamia_09_04a\"",
+      "m_OptionContent": "\"Dialogue_L_Lamia_09_04a\"",
+      "m_DialogueList": "[\"L_Lamia_09_04a_01\",\"L_Lamia_09_04a_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Lamia_09_04b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Lamia_09_04b\"",
+      "m_OptionContent": "\"Dialogue_L_Lamia_09_04b\"",
+      "m_DialogueList": "[\"L_Lamia_09_04b_01\",\"L_Lamia_09_04b_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Cain_10_10a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Cain_10_10a\"",
+      "m_OptionContent": "\"Dialogue_L_Cain_10_10a\"",
+      "m_DialogueList": "[\"L_Cain_10_10b\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Cain_10_10a_1\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Cain_10_10a_1\"",
+      "m_OptionContent": "\"Dialogue_L_Cain_10_10a_1\"",
+      "m_DialogueList": "[\"L_Cain_10_10b_1\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Dalcarlo_10_18a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Dalcarlo_10_18a\"",
+      "m_OptionContent": "\"Dialogue_L_Dalcarlo_10_18a\"",
+      "m_DialogueList": "[\"L_Dalcarlo_10_18a_01\",\"L_Dalcarlo_10_18a_02\",\"L_Dalcarlo_10_18a_03\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Dalcarlo_10_18b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Dalcarlo_10_18b\"",
+      "m_OptionContent": "\"Dialogue_L_Dalcarlo_10_18b\"",
+      "m_DialogueList": "[\"L_Dalcarlo_10_18b_01\",\"L_Dalcarlo_10_18b_02\",\"L_Dalcarlo_10_18b_03\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Dalcarlo_10_18c\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Dalcarlo_10_18c\"",
+      "m_OptionContent": "\"Dialogue_L_Dalcarlo_10_18c\"",
+      "m_DialogueList": "[\"L_Dalcarlo_10_18c_01\",\"L_Dalcarlo_10_18c_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Dalcarlo_10_47a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Dalcarlo_10_47a\"",
+      "m_OptionContent": "\"Dialogue_L_Dalcarlo_10_47a\"",
+      "m_DialogueList": "[\"L_Dalcarlo_10_47a_01\",\"L_Dalcarlo_10_47a_02\",\"L_Dalcarlo_10_47a_03\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Dalcarlo_10_47b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Dalcarlo_10_47b\"",
+      "m_OptionContent": "\"Dialogue_L_Dalcarlo_10_47b\"",
+      "m_DialogueList": "[\"L_Dalcarlo_10_47b_01\",\"L_Dalcarlo_10_47b_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Ami_Covenant_10_04a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Ami_Covenant_10_04a\"",
+      "m_OptionContent": "\"Dialogue_L_Ami_Covenant_10_04a\"",
+      "m_DialogueList": "[\"L_Ami_Covenant_10_04a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Ami_Covenant_10_04b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Ami_Covenant_10_04b\"",
+      "m_OptionContent": "\"Dialogue_L_Ami_Covenant_10_04b\"",
+      "m_DialogueList": "[\"L_Ami_Covenant_10_04b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_VanHellsing_10_17_a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_VanHellsing_10_17_a\"",
+      "m_OptionContent": "\"Dialogue_L_VanHellsing_10_17_a\"",
+      "m_DialogueList": "[\"L_VanHellsing_10_17_c\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_VanHellsing_10_17_b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_VanHellsing_10_17_b\"",
+      "m_OptionContent": "\"Dialogue_L_VanHellsing_10_17_b\"",
+      "m_DialogueList": "[\"L_VanHellsing_10_18\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Piera_10_06a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Piera_10_06a\"",
+      "m_OptionContent": "\"Dialogue_L_Piera_10_06a\"",
+      "m_DialogueList": "[\"L_Piera_10_06a_01\",\"L_Piera_10_06a_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Piera_10_06b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Piera_10_06b\"",
+      "m_OptionContent": "\"Dialogue_L_Piera_10_06b\"",
+      "m_DialogueList": "[\"L_Piera_10_06b_01\",\"L_Piera_10_06b_02\",\"L_Piera_10_06b_03\",\"L_Piera_10_06b_04\",\"L_Piera_10_06b_05\",\"L_Piera_10_06b_06\",\"L_Piera_10_06b_07\",\"L_Piera_10_06b_08\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Piera_10_06c\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Piera_10_06c\"",
+      "m_OptionContent": "\"Dialogue_L_Piera_10_06c\"",
+      "m_DialogueList": "[\"L_Piera_10_06c_01\",\"L_Piera_10_06c_02\",\"L_Piera_10_06c_03\",\"L_Piera_10_06c_04\",\"L_Piera_10_06c_05\",\"L_Piera_10_06c_06\",\"L_Piera_10_06c_07\",\"L_Piera_10_06c_08\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_10_25a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_10_25a\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_10_25a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_10_25b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_10_25b\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_10_25b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Darcias_09_13a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Darcias_09_13a\"",
+      "m_OptionContent": "\"Dialogue_L_Darcias_09_13a\"",
+      "m_DialogueList": "[\"L_Darcias_09_13a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Darcias_09_13b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Darcias_09_13b\"",
+      "m_OptionContent": "\"Dialogue_L_Darcias_09_13b\"",
+      "m_DialogueList": "[\"L_Darcias_09_13b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_24a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_24a\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_24a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_24b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_24b\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_24b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_33a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_33a\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_33a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_33b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_33b\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_33b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_44a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_44a\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_44a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_44b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_44b\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_44b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_62a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_62a\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_62a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Acappella_10_62b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Acappella_10_62b\"",
+      "m_OptionContent": "\"Dialogue_L_Acappella_10_62b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Noah_Covenant_10_05a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Noah_Covenant_10_05a\"",
+      "m_OptionContent": "\"Dialogue_L_Noah_Covenant_10_05a\"",
+      "m_DialogueList": "[\"L_Noah_Covenant_10_05a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Noah_Covenant_10_05b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Noah_Covenant_10_05b\"",
+      "m_OptionContent": "\"Dialogue_L_Noah_Covenant_10_05b\"",
+      "m_DialogueList": "[\"L_Noah_Covenant_10_05b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Aiona_Lily_07_13a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Aiona_Lily_07_13a\"",
+      "m_OptionContent": "\"Dialogue_L_Aiona_Lily_07_13a\"",
+      "m_DialogueList": "[\"L_Aiona_Lily_07_13a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Aiona_Lily_07_13b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Aiona_Lily_07_13b\"",
+      "m_OptionContent": "\"Dialogue_L_Aiona_Lily_07_13b\"",
+      "m_DialogueList": "[\"L_Aiona_Lily_07_13b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_Summer_02_13aa\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_Summer_02_13aa\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_Summer_02_13aa\"",
+      "m_DialogueList": "[\"L_Bella_Summer_02_13aa_01\",\"L_Bella_Summer_02_13a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_Summer_02_13ab\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_Summer_02_13ab\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_Summer_02_13ab\"",
+      "m_DialogueList": "[\"L_Bella_Summer_02_13ab_01\",\"L_Bella_Summer_02_13a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_Summer_02_13ba\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_Summer_02_13ba\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_Summer_02_13ba\"",
+      "m_DialogueList": "[\"L_Bella_Summer_02_13b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Bella_Summer_02_13bb\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Bella_Summer_02_13bb\"",
+      "m_OptionContent": "\"Dialogue_L_Bella_Summer_02_13bb\"",
+      "m_DialogueList": "[\"L_Bella_Summer_02_13b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Lorelie_10_18a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Lorelie_10_18a\"",
+      "m_OptionContent": "\"Dialogue_L_Lorelie_10_18a\"",
+      "m_DialogueList": "[\"L_Lorelie_10_18a_01\",\"L_Lorelie_10_18a_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Lorelie_10_18b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Lorelie_10_18b\"",
+      "m_OptionContent": "\"Dialogue_L_Lorelie_10_18b\"",
+      "m_DialogueList": "[\"L_Lorelie_10_18b_01\",\"L_Lorelie_10_18b_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Lorelie_10_18c\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Lorelie_10_18c\"",
+      "m_OptionContent": "\"Dialogue_L_Lorelie_10_18c\"",
+      "m_DialogueList": "[\"L_Lorelie_10_18c_01\",\"L_Lorelie_10_18c_02\"]",
+      "m_OptionList": "[]"
+    }
+  },
+  "status": "processed_49_items"
+}

@@ -1,0 +1,917 @@
+{
+  "className": "CData_InitLangTxt",
+  "timestamp": "2025-07-08T13:35:35.022Z",
+  "data": {
+    "\"InitShaders\"": {
+      "m_bError": null,
+      "m_Index": "\"InitShaders\"",
+      "m_Name": "\"##6:初始化着色器...<br><alpha=#50>首次启动时间可能较长，请耐心等待。##10:Initializing shaders...<br><alpha=#50>First launch may take longer than usual. Please be patient.##14:Initialisation des shaders...<br><alpha=#50>Le premier lancement peut prendre plus de temps que d'habitude. Merci de patienter.##15:Shader werden initialisiert...<br><alpha=#50>Der erste Start kann länger dauern als gewöhnlich. Bitte habe etwas Geduld.##22:シェーダーを初期化中...<br><alpha=#50>初回起動には時間がかかる場合があります。しばらくお待ちください。##23:셰이더 초기화 중...<br><alpha=#50>최초 실행 시 시간이 다소 소요될 수 있으니 잠시만 기다려 주세요.##34:Iniciando sombreadores...<br><alpha=#50>El primer inicio puede tardar más de lo normal. Por favor, ten paciencia.##36:กำลังเตรียมเชดเดอร์...<br><alpha=#50>การเปิดใช้งานครั้งแรกอาจใช้เวลานานกว่าปกติ โปรดรอสักครู่##41:初始化著色器……<br><alpha=#50>首次啟動時間可能較長，請耐心等待。\""
+    },
+    "\"WinGameName\"": {
+      "m_bError": null,
+      "m_Index": "\"WinGameName\"",
+      "m_Name": "\"##6:银与血##10:Silver and Blood##14:Silver and Blood##15:Silver and Blood##22:シルバー・アンド・ブラッド##23:실버 앤 블러드##34:Silver and Blood##36:Silver and Blood##41:銀與血\""
+    },
+    "\"LoginInitMSDK\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitMSDK\"",
+      "m_Name": "\"##6:正在清扫主厅...##10:Cleaning the main hall...##14:Nettoyage de la salle principale en cours...##15:Die Haupthalle wird aufgeräumt ...##22:メインホールを掃除中……##23:메인 홀 청소 중...##34:Limpiando el salón principal…##36:กำลังทำความสะอาดโถงหลัก...##41:正在清掃主廳……\""
+    },
+    "\"LoginInitNetwork\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitNetwork\"",
+      "m_Name": "\"##6:正在清扫回廊...##10:Cleaning the corridor...##14:Nettoyage du couloir en cours...##15:Der Korridor wird aufgeräumt ...##22:廊下を掃除中……##23:복도 청소 중...##34:Limpiando el pasillo…##36:กำลังทำความสะอาดทางเดิน...##41:正在清掃迴廊……\""
+    },
+    "\"LoginVersionDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginVersionDesc\"",
+      "m_Name": "\"##6:版本号：##10:Version:##14:Version :##15:Version:##22:バージョン：##23:버전:##34:Versión:##36:เวอร์ชัน:##41:版本編號：\""
+    },
+    "\"LoginZoneDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginZoneDesc\"",
+      "m_Name": "\"##6:领主大区：##10:Server:##14:Serveur :##15:Server:##22:領主サーバー：##23:영주 서버:##34:Servidor:##36:เซิร์ฟเวอร์:##41:領主伺服器：\""
+    },
+    "\"LoginAccountDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginAccountDesc\"",
+      "m_Name": "\"##6:领主编号：##10:Lord No.:##14:No. de Seigneur :##15:Lord Nr.:##22:領主ID：##23:영주 No:##34:N.º de señor:##36:หมายเลขลอร์ด:##41:領主編號：\""
+    },
+    "\"CommonError\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonError\"",
+      "m_Name": "\"##6:错误##10:Error##14:Erreur##15:Fehler##22:エラー##23:오류##34:Error##36:ผิดพลาด##41:錯誤\""
+    },
+    "\"CommonRetry\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonRetry\"",
+      "m_Name": "\"##6:重试##10:Try Again##14:Réessayer##15:Erneut versuchen##22:リトライ##23:재시도##34:Volver a intentar##36:ลองใหม่##41:重試\""
+    },
+    "\"InitMSDKInitFail\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKInitFail\"",
+      "m_Name": "\"##6:获取设备ID失败##10:Failed to Retrieve Device ID##14:Impossible de récupérer l'identifiant de l'appareil.##15:Abrufen der Geräte-ID fehlgeschlagen##22:デバイスIDの取得に失敗しました##23:기기 ID 가져오기 실패##34:Error al recuperar la ID del dispositivo##36:ไม่สามารถดึง ID อุปกรณ์ได้##41:裝置ID取得失敗\""
+    },
+    "\"InitMSDKAccountInitFail\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKAccountInitFail\"",
+      "m_Name": "\"##6:账号初始化失败##10:Account Initialization Failed##14:Échec de l'initialisation du compte.##15:Kontoinitialisierung fehlgeschlagen##22:アカウントの初期化に失敗しました##23:계정 초기화 실패##34:Error en la inicialización de la cuenta##36:การเริ่มต้นบัญชีล้มเหลว##41:帳號初始化失敗\""
+    },
+    "\"InitMSDKGetAccountInfoFail\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKGetAccountInfoFail\"",
+      "m_Name": "\"##6:账号信息获取失败##10:Failed to Retrieve Account Info##14:Impossible de récupérer les informations sur le compte.##15:Abrufen der Kontoinformationen fehlgeschlagen##22:アカウント情報の取得に失敗しました##23:계정 정보 가져오기 실패##34:Error al recuperar la información de la cuenta##36:ไม่สามารถดึงข้อมูลบัญชีได้##41:帳號資訊取得失敗\""
+    },
+    "\"PlayerProtocolContent\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerProtocolContent\"",
+      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping agree, you acknowledge the content of these terms. By tapping refuse, you will be unable to proceed.##14:Merci de soutenir L'Argent et le Sang ! Nous vous demandons de lire le Contrat d'utilisation et la Politique de confidentialité suivants avant de continuer. En appuyant sur accepter, vous reconnaissez le contenu de ces conditions. En appuyant sur refuser, vous ne pourrez pas continuer.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgenden Nutzungsbedingungen und Datenschutzrichtlinien, bevor du fortfährst. Durch Tippen auf „Zustimmen“ bestätigst du, dass du die Inhalte dieser Bedingungen zur Kenntnis genommen hast. Wenn du auf „Ablehnen“ tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar _$$Silver and Blood_$$! Te pedimos que leas el siguiente Acuerdo de Usuario y la Política de Privacidad antes de continuar. Al pulsar aceptar, reconoces el contenido de estos términos. Al pulsar rechazar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน Silver and Blood ขอความกรุณาอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกดยอมรับ หมายถึงท่านรับทราบเนื้อหาของข้อตกลงเหล่านี้ การกดปฏิเสธ จะทำให้ท่านไม่สามารถดำเนินการต่อได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
+    },
+    "\"PlayerUserToggle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerUserToggle\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/zh.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>User Agreement</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Contrat d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/de.html><#b2452b><u>Nutzungsbedingungen</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ja.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ko.html><#b2452b><u>이용 약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Acuerdo de Usuario</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>ข้อตกลงผู้ใช้</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/tc.html><#b2452b><u>服務條款</u></color></link>\""
+    },
+    "\"PlayerPrivacyToggle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerPrivacyToggle\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/zh.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/de.html><#b2452b><u>Datenschutzrichtlinien</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ja.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ko.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Política de Privacidad</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/tc.html><#b2452b><u>隱私權政策</u></color></link>\""
+    },
+    "\"PlayerAgeToggle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerAgeToggle\"",
+      "m_Name": "\"##6:我已满13周岁##10:I am 13 years or older.##14:J'ai 13 ans ou plus.##15:Ich bin 13 Jahre oder älter.##22:私は13歳以上です##23:만 14세 이상입니다.##34:Tengo 13 años o más.##36:ข้าพเจ้ามีอายุ 13 ปี หรือมากกว่า##41:我已滿13歲\""
+    },
+    "\"PlayerProtocolTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerProtocolTitle\"",
+      "m_Name": "\"##6:用户协议和隐私协议提示##10:User Agreement and Privacy Policy Notice##14:Conditions d'utilisation et confidentialité##15:Hinweis zu Nutzungsvereinbarung und Datenschutzerklärung##22:利用規約とプライバシーポリシー##23:이용약관 및 개인정보 처리방침 안내##34:Aviso del acuerdo de usuario y política de privacidad##36:ข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัว##41:服務條款和隱私權政策提示\""
+    },
+    "\"PlayerProtocolYes\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerProtocolYes\"",
+      "m_Name": "\"##6:确定##10:Confirm##14:Confirmer##15:Bestätigen##22:決定##23:확인##34:Confirmar##36:ยืนยัน##41:確定\""
+    },
+    "\"PlayerProtocolNo\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerProtocolNo\"",
+      "m_Name": "\"##6:取消##10:Cancel##14:Annuler##15:Abbrechen##22:いいえ##23:취소##34:Cancelar##36:ยกเลิก##41:取消\""
+    },
+    "\"PlayerProtocolConfirmWarning\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerProtocolConfirmWarning\"",
+      "m_Name": "\"##6:请您勾选同意后再确认##10:Please check the agreement before confirming.##14:Veuillez lire l'accord avant de confirmer.##15:Bitte lies die Vereinbarung vor der Bestätigung.##22:「同意する」にチェックを入れてから確認してください##23:동의에 체크한 후 확인해 주세요.##34:Comprueba el acuerdo antes de confirmar.##36:โปรดตรวจสอบ 'ข้อตกลง' ก่อนยืนยัน##41:請您勾選同意後再確認\""
+    },
+    "\"PlayerCancelInfoYes\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCancelInfoYes\"",
+      "m_Name": "\"##6:确认##10:Confirm##14:Confirmer##15:Bestätigen##22:OK##23:확인##34:Confirmar##36:ยืนยัน##41:確定\""
+    },
+    "\"PlayerCenterAccountBindTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindTitle\"",
+      "m_Name": "\"##6:登录游戏##10:Log In##14:Se connecter##15:Login##22:ログイン##23:게임 접속##34:Iniciar sesión##36:ล็อกอิน##41:登入遊戲\""
+    },
+    "\"PlayerCenterAccountBindDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindDesc\"",
+      "m_Name": "\"\"##6:点击下方按钮可绑定您的第三方账户。如果您需要切至已有账号，可以选择“游客登录”，在开始游戏前通过右上角的 [用户中心] 进行账户切换。##10:Tap the button below to bind your third-party account. If you need to switch to a bound account, you can select \"\"Guest Login\"\" and switch accounts through the [User Center] in the top-right corner before starting the game.##14:Appuyez sur le bouton ci-dessous pour lier votre compte tiers. Si vous devez basculer vers un compte existant, vous pouvez sélectionner « Connexion invité » et changer de compte via le [Centre utilisateur] dans le coin supérieur droit avant de commencer le jeu.##15:Tippe auf die Schaltfläche unten, um dein Drittanbieter-Konto zu verknüpfen. Wenn du zu einem bestehenden Konto wechseln musst, kannst du \"\"Gast-Login\"\" auswählen und vor Spielstart über das [Nutzerzentrum] in der oberen rechten Ecke zwischen Konten wechseln.##22:下のボタンから外部アカウントを連携できます。既存のアカウントを使う場合は「ゲストログイン」を選択し、【ゲームログイン画面】右上の「ユーザーセンター」からアカウントを切り替えてください。##23:아래 버튼을 터치하여 서드파티 계정을 연동할 수 있습니다. 기존 계정으로 전환하려면 \"\"게스트 로그인\"\"을 선택한 후, 게임 시작 전 우상단의 [사용자 센터]에서 계정을 전환하세요.##34:Toca el botón de abajo para vincular tu cuenta de terceros. Si necesitas cambiar a una cuenta vinculada, puedes seleccionar ‘Acceso de invitado’y cambiar de cuenta desde el ‘Centro de usuarios’ en la esquina superior derecha antes de iniciar el juego.##36:กดปุ่มด้านล่างเพื่อผูกมัดบัญชีบุคคลที่สามของท่าน หากท่านต้องการเปลี่ยนไปใช้บัญชีที่มีอยู่แล้ว ท่านสามารถเลือก \"\"Guest Login\"\" และเปลี่ยนบัญชีผ่าน [User Center] ที่มุมขวาบนก่อนเริ่มเกม##41:點擊下方按鈕可綁定您的第三方帳戶。如果您需要切至已有帳號，可以選擇「遊客登入」，在開始遊戲前透過右上角的[用戶中心]進行帳戶切換。\"\""
+    },
+    "\"PlayerCenterAccountBindFacebook\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindFacebook\"",
+      "m_Name": "\"##6:绑定Facebook##10:Bind Facebook##14:Lier Facebook##15:Facebook binden##22:Facebookで連携##23:Facebook 연동##34:Vincular Facebook##36:ผูกมัด Facebook##41:綁定Facebook\""
+    },
+    "\"PlayerCenterAccountBindGoogle\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindGoogle\"",
+      "m_Name": "\"##6:绑定Google##10:Bind Google##14:Lier Google##15:Google binden##22:Googleで連携##23:Google 연동##34:Vincular Google##36:ผูกมัด Google##41:綁定Google\""
+    },
+    "\"PlayerCenterAccountBindGuest\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindGuest\"",
+      "m_Name": "\"##6:游客登录##10:Continue As Guest##14:Continuer comme invité##15:Als Gast fortfahren##22:ゲストログイン##23:게스트 로그인##34:Continuar como invitado##36:ดำเนินการต่อในฐานะแขก##41:訪客登入\""
+    },
+    "\"LoginConnectServerFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginConnectServerFail\"",
+      "m_Name": "\"##6:连接登录服务器失败##10:Failed to connect to the login server.##14:Connexion au serveur impossible.##15:Verbindung zum Login-Server fehlgeschlagen.##22:ログインサーバーへの接続に失敗しました##23:로그인 서버 연결 실패##34:Error al conectar al servidor de inicio de sesión.##36:ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ล็อกอินได้##41:登入伺服器連線失敗\""
+    },
+    "\"LoginCheckUpgradeDownloadFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeDownloadFail\"",
+      "m_Name": "\"##6:下载更新失败，请领主大人检查网络环境##10:Update failed. Please check network connection.##14:Échec de la mise à jour. Veuillez vérifier votre connexion réseau.##15:Update fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung.##22:アップデートをダウンロードできませんでした。ネットワーク環境をご確認ください##23:업데이트 다운로드 실패. 네트워크 연결을 확인해 주세요.##34:Error en la actualización. Comprueba la conexión a la red.##36:อัปเดตไม่สำเร็จ โปรดตรวจสอบการเชื่อมต่อเครือข่าย##41:更新下載失敗，請領主大人檢查網路環境\""
+    },
+    "\"CommonReLogin\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonReLogin\"",
+      "m_Name": "\"##6:重新登陆##10:Re-login##14:Se reconnecter##15:Neu anmelden##22:再ログイン##23:다시 로그인##34:Volver a iniciar sesión##36:ล็อกอินใหม่##41:重新登入\""
+    },
+    "\"CommonPrompt\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonPrompt\"",
+      "m_Name": "\"##6:提示##10:Notice##14:Notification##15:Mitteilung##22:Tips##23:알림##34:Aviso##36:ประกาศ##41:提示\""
+    },
+    "\"LoginCheckUpgradeForce\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeForce\"",
+      "m_Name": "\"##6:检测到版本强更新，请领主大人点击下载按钮，移步至应用商店下载并安装新客户端##10:Mandatory update detected. Please tap [Download] and install the new client from the app store.##14:Mise à jour obligatoire détectée. Veuillez toucher « Télécharger » et installer le nouveau client depuis la boutique d'applications.##15:Ein notwendiges Update ist da. Bitte tippe auf [Herunterladen] und installiere den neuen Client aus dem App-Store.##22:大型のアップデートがあります。ダウンロードボタンをタップして、ストアにてゲームアプリを更新してください##23:버전 업데이트가 감지되었습니다. 다운로드 버튼을 터치하여 앱스토어로 이동해 새로운 클라이언트를 다운로드 및 설치해 주세요.##34:Se ha detectado una actualización obligatoria. Pulsa [Descargar] e instala el nuevo cliente en la tienda de aplicaciones.##36:ตรวจพบการอัปเดตที่จำเป็น โปรดกดตรง [ดาวน์โหลด] และติดตั้งไคลเอนต์ใหม่จากร้านค้าแอป##41:偵測到版本強制更新，請領主大人點擊下載按鈕，前往應用程式商店下載並安裝新的用戶端\""
+    },
+    "\"CommonDownload\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonDownload\"",
+      "m_Name": "\"##6:下载##10:Download##14:Télécharger##15:Herunterladen##22:ダウンロード##23:다운로드##34:Descargar##36:ดาวน์โหลด##41:下載\""
+    },
+    "\"LoginCheckUpgradeVersionErrorTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeVersionErrorTitle\"",
+      "m_Name": "\"##6:版本错误##10:Version Error##14:Erreur de version##15:Versionsfehler##22:バージョンエラー##23:버전 오류##34:Error de versión##36:ข้อผิดพลาดเกี่ยวกับเวอร์ชัน##41:版本錯誤\""
+    },
+    "\"LogicCheckUpgradeVersionErrorDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LogicCheckUpgradeVersionErrorDesc\"",
+      "m_Name": "\"##6:游戏客户端版本不匹配，下载更新失败##10:Update failed. Game client version mismatch.##14:Échec de la mise à jour. La version client du jeu ne correspond pas.##15:Update fehlgeschlagen. Client-Version des Spiels stimmt nicht überein.##22:ゲームバージョンが一致してないため、アップデートできませんでした##23:게임 클라이언트 버전 불일치. 다운로드 후 업데이트에 실패하였습니다.##34:Error en la actualización. No coincide la versión del cliente del juego.##36:อัปเดตไม่สำเร็จ เวอร์ชันไคลเอนต์เกมไม่ตรงกัน##41:遊戲用戶端版本不正確，更新下載失敗\""
+    },
+    "\"CommonExit\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonExit\"",
+      "m_Name": "\"##6:退出##10:Exit##14:Quitter##15:Beenden##22:終了##23:나가기##34:Salir##36:ออก##41:退出\""
+    },
+    "\"LoginCheckUpgradeFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeFail\"",
+      "m_Name": "\"##6:检查更新失败##10:Failed to check for updates.##14:Impossible de consulter les mises à jour.##15:Suche nach Updates fehlgeschlagen.##22:更新データのチェックに失敗しました##23:업데이트 검사 실패##34:Error al comprobar las actualizaciones.##36:ไม่สามารถตรวจสอบการอัปเดตได้##41:更新檢查失敗\""
+    },
+    "\"CommonRestart\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonRestart\"",
+      "m_Name": "\"##6:重新启动##10:Restart##14:Redémarrer##15:Neu starten##22:再起動##23:재실행##34:Reiniciar##36:รีสตาร์ท##41:重新啟動\""
+    },
+    "\"LoginMiniPatchUpgradeDownloadFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginMiniPatchUpgradeDownloadFail\"",
+      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
+    },
+    "\"CommonConfirm\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonConfirm\"",
+      "m_Name": "\"##6:确认##10:Confirm##14:Confirmer##15:Bestätigen##22:OK##23:확인##34:Confirmar##36:ยืนยัน##41:確定\""
+    },
+    "\"InitTGRPAddResNotEnoughSpace\"": {
+      "m_bError": null,
+      "m_Index": "\"InitTGRPAddResNotEnoughSpace\"",
+      "m_Name": "\"##6:存储空间不足。更新共需{total_size}存储空间，设备剩余存储空间为{available_size}。请释放至少{needed_size}的存储空间后重试。##10:Insufficient storage. Update requires {total_size} of storage, but your device only has {available_size} available. Please free up (at least) {needed_size} of storage and try again.##14:Espace de stockage insuffisant. La mise à jour requiert {total_size} d'espace libre, mais votre appareil ne dispose que de {available_size}. Veuillez libérer au moins {needed_size} d'espace et réessayez.##15:Nicht genügend Speicherplatz. Das Update benötigt {total_size} Speicherplatz, aber auf deinem Gerät sind nur {available_size} verfügbar. Bitte schaffe mindestens {needed_size} Speicherplatz und versuche es erneut.##22:ストレージ容量が足りません。アップデートには合計 {total_size} のストレージが必要ですが、デバイスの空き容量は {available_size} です。 {needed_size} 以上のストレージを空けてから、もう一度お試しください。##23:저장 공간이 부족합니다. 업데이트에는 총 {total_size}의 저장 공간이 필요하며, 현재 기기의 남은 저장 공간은 {available_size}입니다. 저장 공간을 {needed_size} 이상 확보하고 다시 시도해 주세요.##34:Espacio insuficiente. La actualización requiere {total_size} de almacenamiento, pero tu dispositivo solo tiene {available_size} disponibles. Libera (al menos) {needed_size} de almacenamiento y vuelve a intentarlo.##36:พื้นที่เก็บข้อมูลไม่เพียงพอ การอัปเดตจะต้องใช้พื้นที่เก็บข้อมูล {total_size} แต่อุปกรณ์ของท่านมีเพียง {available_size} โปรดเพิ่มพื้นที่ (อย่างน้อย) {needed_size} แล้วลองใหม่อีกครั้ง##41:儲存空間不足。更新共需 {total_size} 儲存空間，裝置剩餘儲存空間為 {available_size}。請釋放至少 {needed_size} 的儲存空間後再重試\""
+    },
+    "\"LoginInitTGRPFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitTGRPFail\"",
+      "m_Name": "\"##6:资源初始化失败，请确保网络通畅并重新启动游戏##10:Resources Initialization Failed. Please check your network connection and restart the game.##14:Échec de l'initialisation des ressources. Veuillez vérifier votre connexion réseau et redémarrer le jeu.##15:Ressourcen-Initialisierung fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und starte das Spiel neu.##22:リソースの初期化に失敗しました。ネットワークを確認し、ゲームを再起動してください。##23:리소스 초기화 실패. 네트워크 연결을 확인한 후 게임을 재실행하세요.##34:Fallo en la inicialización de recursos. Comprueba tu conexión de red y reinicia el juego.##36:การเริ่มต้นทรัพยากรล้มเหลว โปรดตรวจสอบการเชื่อมต่อเครือข่ายของท่านและรีสตาร์ทเกม##41:資料初始化失敗，請保持網路連線正常並重新啟動遊戲\""
+    },
+    "\"StartCheckNetworkFail\"": {
+      "m_bError": null,
+      "m_Index": "\"StartCheckNetworkFail\"",
+      "m_Name": "\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\""
+    },
+    "\"LowStorageWarning\"": {
+      "m_bError": null,
+      "m_Index": "\"LowStorageWarning\"",
+      "m_Name": "\"\"##6:设备空间不足，请清理后重试。\n（可用空间{size1}，需要{size2}）##10:Insufficient device storage. Please free up space and try again!\n(Available: {size1}, Required: {size2})##14:Espace de stockage insuffisant. Veuillez libérer de l'espace et réessayer !\n(Disponible : {size1}, Requis : {size2})##15:Unzureichender Gerätespeicher. Bitte gib Speicherplatz frei und versuche es erneut!\n(Verfügbar: {size1}, Benötigt: {size2})##22:端末の容量がありません。空き容量を確保してから再度お試しください。\n（空き容量：{size1}、必要容量：{size2}）##23:기기 저장 공간이 부족합니다. 정리 후 다시 시도해 주세요.\n(사용 가능 공간: {size1}, {size2} 필요)##34:¡Espacio de almacenamiento insuficiente! Libera espacio e inténtalo de nuevo.\n(Disponible: {size1}, necesario: {size2})##36:พื้นที่จัดเก็บอุปกรณ์ไม่เพียงพอ โปรดเพิ่มพื้นที่ว่างและลองใหม่อีกครั้ง!\n(พื้นที่พร้อมใช้งาน: {size1}, ต้องมี: {size2})##41:裝置空間不足，請清理後重試。\n（可用空間{size1}，需要{size2}）\"\""
+    },
+    "\"MByte\"": {
+      "m_bError": null,
+      "m_Index": "\"MByte\"",
+      "m_Name": "\"##6:MB##10:MB##14:MB##15:MB##22:MB##23:MB##34:MB##36:Mb##41:MB\""
+    },
+    "\"LoginConnectGameServerFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginConnectGameServerFail\"",
+      "m_Name": "\"##6:连接游戏服务器失败##10:Failed to connect to the game.##14:Connexion au jeu impossible.##15:Verbindung zum Spiel fehlgeschlagen.##22:ゲームサーバーへの接続に失敗しました##23:게임 서버 연결 실패##34:Error al conectarse al juego.##36:ไม่สามารถเชื่อมต่อกับเกมได้##41:遊戲伺服器連線失敗\""
+    },
+    "\"LoginRoleInitFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginRoleInitFail\"",
+      "m_Name": "\"##6:眷属信息拉取失败##10:Failed to retrieve Vassal information.##14:Impossible de récupérer les informations sur le Vassal.##15:Vasalleninformationen konnten nicht abgerufen werden.##22:眷属情報の取得に失敗しました##23:권속 정보 가져오기 실패##34:Error al recuperar la información del vasallo.##36:ไม่สามารถดึงข้อมูลบริพารได้##41:眷屬資訊讀取失敗\""
+    },
+    "\"LoginRoleBanTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginRoleBanTitle\"",
+      "m_Name": "\"##6:账号已封禁##10:Account has been banned##14:Compte banni##15:Konto wurde gesperrt##22:アカウントが停止されています##23:계정 정지##34:Se ha bloqueado la cuenta##36:บัญชีนี้ถูกแบน##41:帳號遭到封鎖\""
+    },
+    "\"LoginRoleBanDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginRoleBanDesc\"",
+      "m_Name": "\"##6:您的账号已封禁到{0}，如有疑问您可以前往客服处反馈。##10:Your account has been banned until {0}. If you have any questions, you can contact customer service for feedback.##14:Votre compte est banni jusqu'au {0}. En cas de question, adressez-vous au service client pour en savoir plus.##15:Dein Konto wurde bis {0} gesperrt. Falls du Fragen hast, wende dich bitte an den Kundendienst.##22:アカウントは{0}まで制限されています。ご不明な点がございましたら、カスタマーサポートにお問い合わせください。##23:귀하의 계정은 {0}까지 정지되었습니다. 문의 사항은 고객센터로 연락해 주시기 바랍니다.##34:Tu cuenta ha sido bloqueada hasta {0}. Si tienes alguna pregunta, puedes ponerte en contacto con el servicio de atención al cliente para más información.##36:บัญชีของท่านถูกแบนจนถึง {0} หากท่านมีคำถามใด ๆ สามารถติดต่อบริการลูกค้าเพื่อขอข้อมูลเพิ่มเติมได้เสมอ##41:您的帳號已遭封鎖，將持續到{0}，如有疑問可向客服反應\""
+    },
+    "\"LoginRoleBanChangeAccount\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginRoleBanChangeAccount\"",
+      "m_Name": "\"##6:切换账号##10:Switch Account##14:Changer de compte##15:Account wechseln##22:アカウント切り替え##23:계정 전환##34:Cambiar de cuenta##36:เปลี่ยนบัญชี##41:切換帳號\""
+    },
+    "\"LoginRoleBanCustomer\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginRoleBanCustomer\"",
+      "m_Name": "\"##6:客服##10:Support##14:Assistance##15:Hilfe##22:カスタマーサポート##23:고객센터##34:Soporte##36:ซัพพอร์ต##41:客服\""
+    },
+    "\"LoginDownloadNecessaryResourceFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceFail\"",
+      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
+    },
+    "\"LoginDownloadNecessaryResourceTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTitle\"",
+      "m_Name": "\"##6:资源下载##10:Resource Download##14:Téléchargement de ressources##15:Ressourcen herunterladen##22:リソースダウンロード##23:리소스 다운로드##34:Descarga de recursos##36:ดาวน์โหลดทรัพยากร##41:檔案下載\""
+    },
+    "\"LoginDownloadNecessaryResourceNewbieDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceNewbieDesc\"",
+      "m_Name": "\"\"##6:检测到必要资源，进入领地前需要下载{size}必要资源，是否开始下载？\n*注：进入游戏后，若设备处在WIFI环境，会后台下载后续的{size_all}资源。##10:Necessary resources detected. You need to download {size} of resources before entering your territory. Download now?\n*Note: Once in game, if your device is connected to a Wi-Fi network, the remaining {size_all} of resources will download in the background.##14:Ressources requises détectées. Vous devez télécharger {size} de ressources pour entrer sur votre territoire. Télécharger maintenant ?\n*Remarque : une fois en jeu, si votre appareil est connecté à un réseau Wi-Fi, les {size_all} de ressources restantes sont téléchargées en arrière-plan.##15:Notwendige Ressourcen entdeckt. Du musst {size} Ressourcen herunterladen, bevor du dein Territorium betreten kannst. Jetzt herunterladen?\n*Hinweis: Sobald du das Spiel betreten hast, werden die übrigen {size_all} Ressourcen im Hintergrund heruntergeladen, insofern dein Gerät mit dem Internet verbunden ist.##22:不足なリソースが検出されました。領土に入るために{size}のリソースをダウンロードする必要があります。ダウンロードを開始しますか？\n*注：ゲーム開始後、デバイスがWi-Fi環境にない場合、バックグラウンドで残り{size_all}のリソースをダウンロードします。##23:필수 리소스가 감지되었습니다. 영지에 입장하기 전에 {size}의 필수 리소스를 다운로드해야 합니다. 다운로드를 시작하시겠습니까?\n*주의: 게임 입장 후 기기가 Wi-Fi에 연결되어 있을 경우 백그라운드에서 남은 {size_all}의 리소스를 다운로드합니다.##34:Recursos necesarios detectados. Necesita descargar {size} de recursos antes de entrar en su territorio. ¿Descargar ahora?\n*Aviso: Una vez en el juego, si tu dispositivo está conectado a una red wifi, el {size_all} restante de recursos se descargará en segundo plano.##36:พบเจอทรัพยากรที่จำเป็น ท่านจะต้องดาวน์โหลดทรัพยากร {size} ก่อนเข้าอาณาเขตของท่านเอง ดาวน์โหลดเลยไหม\n*หมายเหตุ: เมื่อท่านอยู่ในเกมแล้ว และมีการเชื่อมต่อ Wi-Fi อยู่ จะมีการดาวน์โหลดทรัพยากรที่เหลือ {size_all} อยู่ในเบื้องหลัง##41:偵測到必要檔案，進入領地前需要下載{size}必要檔案，是否開始下載？\n*註：進入遊戲後，若裝置處於Wi-Fi環境，會於背景程式下載後續的{size_all}檔案。\"\""
+    },
+    "\"LoginDownloadNecessaryResourceBasicDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceBasicDesc\"",
+      "m_Name": "\"\"##6:检测到必要资源，进入领地前需要下载{size}必要资源，是否开始下载？\n*注：进入游戏后，若设备处在WIFI环境，会后台下载后续的{size_all}资源。##10:Necessary resources detected. You need to download {size} of resources before entering your territory. Download now?\n*Note: Once in game, if your device is connected to a Wi-Fi network, the remaining {size_all} of resources will download in the background.##14:Ressources requises détectées. Vous devez télécharger {size} de ressources pour entrer sur votre territoire. Télécharger maintenant ?\n*Remarque : une fois en jeu, si votre appareil est connecté à un réseau Wi-Fi, les {size_all} de ressources restantes sont téléchargées en arrière-plan.##15:Notwendige Ressourcen entdeckt. Du musst {size} Ressourcen herunterladen, bevor du dein Territorium betreten kannst. Jetzt herunterladen?\n*Hinweis: Sobald du das Spiel betreten hast, werden die übrigen {size_all} Ressourcen im Hintergrund heruntergeladen, insofern dein Gerät mit dem Internet verbunden ist.##22:不足なリソースが検出されました。領土に入るために{size}のリソースをダウンロードする必要があります。ダウンロードを開始しますか？\n*注：ゲーム開始後、デバイスがWi-Fi環境にない場合、バックグラウンドで残り{size_all}のリソースをダウンロードします。##23:필수 리소스가 감지되었습니다. 영지에 입장하기 전에 {size}의 필수 리소스를 다운로드해야 합니다. 다운로드를 시작하시겠습니까?\n*주의: 게임 입장 후 기기가 Wi-Fi에 연결되어 있을 경우 백그라운드에서 남은 {size_all}의 리소스를 다운로드합니다.##34:Recursos necesarios detectados. Necesita descargar {size} de recursos antes de entrar en su territorio. ¿Descargar ahora?\n*Aviso: Una vez en el juego, si tu dispositivo está conectado a una red wifi, el {size_all} restante de recursos se descargará en segundo plano.##36:พบเจอทรัพยากรที่จำเป็น ท่านจะต้องดาวน์โหลดทรัพยากร {size} ก่อนเข้าอาณาเขตของท่านเอง ดาวน์โหลดเลยไหม\n*หมายเหตุ: เมื่อท่านอยู่ในเกมแล้ว และมีการเชื่อมต่อ Wi-Fi อยู่ จะมีการดาวน์โหลดทรัพยากรที่เหลือ {size_all} อยู่ในเบื้องหลัง##41:偵測到必要檔案，進入領地前需要下載{size}必要檔案，是否開始下載？\n*註：進入遊戲後，若裝置處於Wi-Fi環境，會於背景程式下載後續的{size_all}檔案。\"\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsForce\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsForce\"",
+      "m_Name": "\"##6:进入领地前需要下载{size}必要资源，请问是否现在开始下载？##10:You need to download {size} of necessary resources before entering your territory. Start downloading now?##14:Certaines ressources du jeu doivent être téléchargées avant de jouer. Veuillez télécharger le pack de ressources le mieux adapté à l'espace de stockage et aux conditions réseau de votre appareil. Des ressources supplémentaires peuvent être téléchargées en arrière-plan pendant le jeu (uniquement disponible en Wi-Fi).##15:Bestimmte Spielressourcen müssen heruntergeladen werden, bevor du spielst. Bitte lade das Ressourcenpaket herunter, das am besten für deinen Gerätespeicher und deine Netzwerkverbindung geeignet ist. Zusätzliche Ressourcen können im Hintergrund heruntergeladen werden, während du spielst (nur mit WLAN verfügbar).##22:領地に入る前に、{size}の必要なリソースをダウンロードする必要があります。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size}의 필수 리소스를 다운로드해야 합니다. 지금 다운로드를 시작하시겠습니까?##34:Hay que descargar unos recursos del juego para poder jugar. Descarga el paquete de recursos más adecuado según el almacenamiento de tu dispositivo y tu conexión de red. Puedes descargar recursos adicionales mientras juegas en segundo plano (solo disponible con wifi).##36:ทรัพยากรเกมบางส่วนจำเป็นต้องดาวน์โหลดก่อนจึงจะสามารถเล่นได้ โปรดดาวน์โหลดแพ็กทรัพยากรที่เหมาะสมกับพื้นที่จัดเก็บข้อมูลของอุปกรณ์ และการเชื่อมต่อเครือข่ายของท่าน โดยสามารถดาวน์โหลดทรัพยากรเพิ่มเติมเบื้องหลังขณะเล่นได้ (ใช้ได้เฉพาะเมื่อเชื่อมต่อ Wi-Fi เท่านั้น)##41:進入領地前需要下載{size}必要檔案，請問是否現在開始下載？\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsDownload\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsDownload\"",
+      "m_Name": "\"##6:开始下载##10:Download Now##14:Télécharger maintenant##15:Jetzt herunterladen##22:ダウンロード開始##23:다운로드 시작##34:Descargar ya##36:ดาวน์โหลดเลย##41:開始下載\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsCountDown\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsCountDown\"",
+      "m_Name": "\"##6:倒计时:<color=#b2452b>{count}</color>##10:Countdown: <color=#b2452b>{count}</color>##14:Compte à rebours : <color=#b2452b>{count}</color>##15:Countdown: <color=#b2452b>{count}</color>##22:カウントダウン:<color=#b2452b>{count}</color>##23:남은 시간: <color=#b2452b>{count}</color>##34:Cuenta atrás: <color=#b2452b>{count}</color>##36:นับถอยหลัง: <color=#b2452b>{count}</color>##41:倒數計時：<color=#b2452b>{count}</color>\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"",
+      "m_Name": "\"##6:进入领地前需要下载{size1}必要资源。后续全量资源较大，为了您有更好的游戏体验，可以选择提前下载{size2}基础资源。请问是否现在开始下载？##10:You need to download {size1} of necessary resources before entering your territory. The remaining resources ({size2}) can be downloaded in advance for a better gaming experience. Start download now?##14:Vous devez télécharger {size1} de ressources nécessaires avant d'entrer dans votre territoire. Les ressources restantes ({size2}) peuvent être téléchargées à l'avance pour une meilleure expérience de jeu. Commencer le téléchargement maintenant ?##15:Du musst {size1} an notwendigen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Die verbleibenden Ressourcen ({size2}) kannst du für ein besseres Spielerlebnis im Voraus herunterladen. Jetzt herunterladen?##22:領地に入る前に、{size1}の必要なリソースをダウンロードする必要があります。また、ゲーム全体のリソース容量が大きいため、より快適にプレイしていただくために、{size2}の基本リソースを事前にダウンロードすることもできます。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size1}의 필수 리소스를 다운로드해야 합니다. 이후 전체 리소스 용량이 크므로 원활한 플레이를 위해 {size2}의 기본 리소스를 미리 다운로드할 수 있습니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size1} de recursos necesarios antes de acceder a tu territorio. Los recursos restantes ({size2}) pueden descargarse por adelantado para una mejor experiencia de juego. ¿Empezar la descarga ahora?##36:ท่านจำเป็นต้องดาวน์โหลดทรัพยากรที่จำเป็น {size1} ก่อนเข้าสู่อาณาเขตของท่าน ส่วนทรัพยากรที่เหลือ ({size2}) สามารถดาวน์โหลดล่วงหน้าเพื่อประสบการณ์การเล่นที่ดียิ่งขึ้น ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size1}必要檔案。後續完整檔案較大，為了讓您有更好的遊戲體驗，可以選擇提前下載{size2}基礎檔案。請問是否現在開始下載？\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsAllNormal\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsAllNormal\"",
+      "m_Name": "\"\"##6:游戏全量资源较大，为了您有更好的游戏体验，可以提前下载{size}基础资源。同时也支持在游戏过程中“边玩边下”。请问是否现在开始下载？##10:The game contains a large amount of resources ({size}). For a better gaming experience, you can download the basic resources in advance. Alternatively, you can choose to \"\"download while playing.\"\" Start download now?##14:Certaines ressources du jeu doivent être téléchargées avant de jouer. Veuillez télécharger le pack de ressources le mieux adapté à l'espace de stockage et aux conditions réseau de votre appareil. Des ressources supplémentaires peuvent être téléchargées en arrière-plan pendant le jeu (uniquement disponible en Wi-Fi).##15:Bestimmte Spielressourcen müssen heruntergeladen werden, bevor du spielst. Bitte lade das Ressourcenpaket herunter, das am besten für deinen Gerätespeicher und deine Netzwerkverbindung geeignet ist. Zusätzliche Ressourcen können im Hintergrund heruntergeladen werden, während du spielst (nur mit WLAN verfügbar).##22:ゲームの全リソース容量が大きいため、より快適にプレイしていただくために、{size}の基本リソースを事前にダウンロードすることをおすすめします。ゲーム中に「プレイしながらのダウンロード」にも対応しています。今すぐダウンロードを開始しますか？##23:게임 전체 리소스 용량이 큽니다. 원활한 플레이를 위해 {size}의 기본 리소스를 미리 다운로드할 수 있습니다. 게임 도중 '플레이하면서 다운로드'도 지원합니다. 지금 다운로드를 시작하시겠습니까?##34:Hay que descargar unos recursos del juego para poder jugar. Descarga el paquete de recursos más adecuado según el almacenamiento de tu dispositivo y tu conexión de red. Puedes descargar recursos adicionales mientras juegas en segundo plano (solo disponible con wifi).##36:ทรัพยากรเกมบางส่วนจำเป็นต้องดาวน์โหลดก่อนจึงจะสามารถเล่นได้ โปรดดาวน์โหลดแพ็กทรัพยากรที่เหมาะสมกับพื้นที่จัดเก็บข้อมูลของอุปกรณ์ และการเชื่อมต่อเครือข่ายของท่าน โดยสามารถดาวน์โหลดทรัพยากรเพิ่มเติมเบื้องหลังขณะเล่นได้ (ใช้ได้เฉพาะเมื่อเชื่อมต่อ Wi-Fi เท่านั้น)##41:遊戲完整檔案較大，為了讓您有更好的遊戲體驗，可以提前下載{size}基礎檔案。同時也支援在遊戲過程中「邊玩邊下載」。請問是否現在開始下載？\"\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsDownloadNecessary\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsDownloadNecessary\"",
+      "m_Name": "\"##6:下载必要资源##10:Downloading resources...##14:Téléchargement des ressources...##15:Ressourcen herunterladen ...##22:必要なリソースをダウンロード中##23:필수 리소스 다운로드##34:Descargando recursos...##36:กำลังดาวน์โหลดทรัพยากร...##41:下載必要檔案\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsLater\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsLater\"",
+      "m_Name": "\"##6:游戏内边下边玩##10:Background Download##14:Téléchargement en arrière-plan##15:Herunterladen im Hintergrund##22:ゲーム中にダウンロード可能##23:플레이하면서 다운로드##34:Descarga en segundo plano##36:ดาวน์โหลดเบื้องหลัง##41:遊戲中邊玩邊下載\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsSpaceDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsSpaceDesc\"",
+      "m_Name": "\"##6:当前设备可用容量{device_size}。##10:Available storage: {device_size}##14:Stockage disponible : {device_size}##15:Verfügbarer Lager: {device_size}##22:現在のデバイスの残り容量は{device_size}です。##23:기기 사용 가능 공간: {device_size}##34:Almacenamiento disponible: {device_size}##36:พื้นที่ว่าง: {device_size}##41:目前裝置可用容量{device_size}\""
+    },
+    "\"LoginDownloadNecessaryResourceTipsMobilePrompt\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceTipsMobilePrompt\"",
+      "m_Name": "\"##6:注:当前处于非WiFi状态，下载资源会消耗对应的流量##10:Note: Not connected to WiFi. Downloading now will consume mobile data.##14:Remarque : Pas de Wi-Fi. Le téléchargement utilisera les données mobiles.##15:Hinweis: Keine WLAN-Verbindung. Der Download verbraucht jetzt mobile Daten.##22:注意：現在Wi-Fi接続ではないため、リソースのダウンロードは通信量を消費します##23:주의: 현재 Wi-Fi 환경이 아니므로 리소스 다운로드 시 데이터 요금이 발생할 수 있습니다.##34:Nota: Sin conexión wifi. La descarga consumirá datos móviles.##36:หมายเหตุ: ไม่ได้เชื่อมต่อ WiFi การดาวน์โหลดตอนนี้ จะมีการใช้ข้อมูลมือถือ##41:注：目前處於非Wi-Fi狀態，下載資源將會消耗對應的流量\""
+    },
+    "\"CMPinformation\"": {
+      "m_bError": null,
+      "m_Index": "\"CMPinformation\"",
+      "m_Name": "\"##6:更多信息##10:More Info##14:Plus d'infos##15:Mehr Infos##22:詳細情報##23:자세히 보기##34:Más Información##36:ข้อมูลเพิ่มเติม##41:更多資訊\""
+    },
+    "\"ClientErrorDesc\"": {
+      "m_bError": null,
+      "m_Index": "\"ClientErrorDesc\"",
+      "m_Name": "\"##6:客户端发生意外错误，需重启游戏##10:A client error has occurred. Please relaunch the game.##14:Une erreur client est survenue. Veuillez relancer le jeu.##15:Ein Client-Fehler ist aufgetreten. Bitte starte das Spiel neu.##22:エラーが発生しました。ゲームを再起動してください##23:클라이언트 오류 발생. 게임을 재실행하세요.##34:Se ha producido un error de cliente. Vuelve a iniciar el juego.##36:เกิดข้อผิดพลาดของไคลเอนต์ โปรดรีสตาร์ทเกม##41:用戶端發生意外錯誤，需要重新啟動遊戲\""
+    },
+    "\"LoginInitNetworkGame\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitNetworkGame\"",
+      "m_Name": "\"##6:正在连接至领地...##10:Connecting to territory...##14:Connexion au territoire...##15:Mit Gebiet verbinden ...##22:領土に接続中……##23:영지에 연결 중...##34:Conectando con el territorio…##36:กำลังเชื่อมต่อกับเขตแดน...##41:正在連線到領地……\""
+    },
+    "\"LoginDownloadUIDetail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadUIDetail\"",
+      "m_Name": "\"##6:必要资源下载中：##10:Downloading necessary resources:##14:Téléchargement des ressources nécessaires :##15:Benötigte Ressourcen herunterladen:##22:必要なリソースダウンロード中：##23:필수 리소스 다운로드 중:##34:Descargando los recursos:##36:กำลังดาวน์โหลดทรัพยากรที่จำเป็น:##41:必要檔案下載中：\""
+    },
+    "\"Byte\"": {
+      "m_bError": null,
+      "m_Index": "\"Byte\"",
+      "m_Name": "\"##6:B##10:B##14:B##15:B##22:B##23:B##34:B##36:B##41:B\""
+    },
+    "\"KByte\"": {
+      "m_bError": null,
+      "m_Index": "\"KByte\"",
+      "m_Name": "\"##6:KB##10:KB##14:KB##15:KB##22:KB##23:KB##34:KB##36:Kb##41:KB\""
+    },
+    "\"GByte\"": {
+      "m_bError": null,
+      "m_Index": "\"GByte\"",
+      "m_Name": "\"##6:GB##10:GB##14:GB##15:GB##22:GB##23:GB##34:GB##36:Gb##41:GB\""
+    },
+    "\"InitMSDKPermissionRequestTipsNo\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKPermissionRequestTipsNo\"",
+      "m_Name": "\"##6:不允许##10:Deny##14:Refuser##15:Ablehnen##22:許可しない##23:허용 안 함##34:Denegar##36:ปฏิเสธ##41:不允許\""
+    },
+    "\"InitMSDKPermissionRequestTipsYes\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKPermissionRequestTipsYes\"",
+      "m_Name": "\"##6:允许##10:Allow##14:Autoriser##15:Erlauben##22:許可する##23:허용##34:Permitir##36:อนุญาต##41:允許\""
+    },
+    "\"InitMSDKPermissionRequestTipsNote\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKPermissionRequestTipsNote\"",
+      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Erlauben, dass „Silber und Blut“ dir Benachrichtigungen sendet?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
+    },
+    "\"InitMSDKPermissionRequestTipsTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"InitMSDKPermissionRequestTipsTitle\"",
+      "m_Name": "\"##6:权限申请##10:Permission Request##14:Demande d'autorisation##15:Berechtigungsanfrage##22:権限のリクエスト##23:권한 요청##34:Solicitud de permisos##36:คำขออนุญาต##41:權限申請\""
+    },
+    "\"PlayerUserToggleUs\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerUserToggleUs\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Terms of Service</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Conditions d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Nutzungsbedingungen</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>이용약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Términos del servicio</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>ข้อตกลงการให้บริการ</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>服務條款</u></color></link>\""
+    },
+    "\"PlayerPrivacyToggleUs\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerPrivacyToggleUs\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Datenschutzerklärung</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Política de privacidad</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>隱私權政策</u></color></link>\""
+    },
+    "\"LoginCheckUpgradeChangeZoneTitle\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeChangeZoneTitle\"",
+      "m_Name": "\"##6:切换服务器##10:Switch Server##14:Changer de serveur##15:Server wechseln##22:サーバー切替##23:서버 교체##34:Cambiar servidor##36:เปลี่ยนเซิร์ฟเวอร์##41:切換伺服器\""
+    },
+    "\"LoginCheckUpgradeChangeZoneDescMatch\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeChangeZoneDescMatch\"",
+      "m_Name": "\"##6:检测到客户端版本%s，与当前服务器%s不匹配，是否要切换账号%s至服务器%s？##10:Client Version %s does not match current server %s. Would you like to switch your account %s to %s server?##14:La version client %s ne correspond pas au serveur actuel %s. Voulez-vous faire passer votre compte du serveur %s au serveur %s ?##15:Client-Version %s passt nicht zum aktuellen Server %s. Möchtest du dein Konto %s auf den Server %s wechseln?##22:現在のクライアントバージョン%sが今のサーバー%sとマッチしていません。アカウント%sをサーバー%sに移行しますか？##23:클라이언트 버전 %s이(가) 현재 서버 %s와(과) 일치하지 않습니다. 계정 %s을(를) 서버 %s(으)로 교체하시겠습니까?##34:La versión del cliente %s no coincide con el servidor actual %s. ¿Quieres cambiar la cuenta %s al servidor %s?##36:'ไคลเอนต์เวอร์ชัน' %s ไม่ตรงกับเซิร์ฟเวอร์ปัจจุบัน %s ท่านต้องการเปลี่ยนบัญชี %s ไปยังเซิร์ฟเวอร์ %s หรือไม่##41:偵測到用戶端版本%s與目前伺服器%s不一致，是否要切換帳號%s至伺服器%s？\""
+    },
+    "\"LoginCheckUpgradeChangeZoneDescNoMatch\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeChangeZoneDescNoMatch\"",
+      "m_Name": "\"##6:检测到客户端版本%s，无匹配服务器，请前往GM页面确认详情（当前服务器%s，账号%s）##10:Client Version %s has been detected, but no matching server was found. Please check the details on the GM page (Current Server: %s. Account: %s).##14:La version client %s a été détectée, mais aucun serveur correspondant n'a été trouvé. Veuillez consulter les détails sur la page GM (serveur actuel : %s ; compte : %s).##15:Client-Version %s wurde erkannt, aber kein passender Server gefunden. Bitte überprüfe die Details auf der GM-Seite (Aktueller Server: %s. Konto: %s)##22:現在のクライアントバージョン%sにマッチするサーバーがありません。詳しくはGMページにてご確認ください。（現在のサーバー%s、アカウント%s）##23:클라이언트 버전 %s와(과) 매칭되는 서버가 없습니다. GM 화면으로 이동해 상세 내용을 확인하세요(현재 서버: %s, 계정: %s).##34:Se ha detectado la versión de cliente %s, pero no se ha encontrado ningún servidor que coincida. Comprueba los detalles en la página de GM (Servidor actual: %s. Cuenta: %s).##36:ตรวจพบ 'ไคลเอนต์เวอร์ชัน' %s แต่ไม่พบเซิร์ฟเวอร์ที่ตรงกัน โปรดตรวจสอบรายละเอียดในหน้า GM (เซิร์ฟเวอร์ปัจจุบัน: %s บัญชี: %s)##41:偵測到用戶端版本%s無相符伺服器，請前往GM頁面確認詳情（目前伺服器%s，帳號%s）\""
+    },
+    "\"LoginCheckUpgradeWindowsForce\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeWindowsForce\"",
+      "m_Name": "\"##6:检测当前客户端不是最新版本，请领主大人点击下载按钮，移步至官网下载并安装新客户端##10:#N/A##14:#N/A##15:#N/A##22:現在ご利用のクライアントは最新版ではありません。ロード様、ダウンロードボタンをタップし、公式サイトより最新クライアントのダウンロードとインストールをお願いいたします。##23:#N/A##34:#N/A##36:#N/A##41:#N/A\""
+    },
+    "\"LoginDownloadNecessaryResourceMobilePrompt\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginDownloadNecessaryResourceMobilePrompt\"",
+      "m_Name": "\"##6:<color=#FF0000>*注：当前处于非WIFI环境下，下载资源会消耗相应的流量，请确认当前的网络环境后开始下载</color>##10:<color=#FF0000>*Note: Downloading resources without Wi-Fi will use mobile data. Please check your connection before downloading.</color>##14:<color=#FF0000>*Remarque : le téléchargement des ressources sans Wi-Fi utilisera les données mobiles. Veuillez vérifier votre connexion avant de télécharger.</color>##15:<color=#FF0000>*Hinweis: Das Herunterladen von Ressourcen ohne Wi-Fi verbraucht mobile Daten. Bitte überprüfe deine Verbindung vor dem Download.</color>##22:<color=#FF0000>*注：現在はWi-Fi環境ではないため、リソースのダウンロードにデータ通信量を消費します。ネットワーク環境を確認してからダウンロードを開始してください。</color>##23:<color=#FF0000>*주의: 현재 Wi-Fi에 연결되어 있지 않아 리소스 다운로드 시 데이터가 소모됩니다. 네트워크 환경을 확인한 후 다운로드를 시작해 주세요.</color>##34:<color=#FF0000>*Aviso: La descarga de recursos sin conexión consumirá datos móviles. Comprueba tu conexión antes de descargar.</color>##36:<color=#FF0000>*หมายเหตุ: การดาวน์โหลดทรัพยากรโดยไม่ใช้ Wi-Fi จะใช้ข้อมูลมือถือ โปรดตรวจสอบการเชื่อมต่อของคุณก่อนดาวน์โหลด</color>##41:<color=#FF0000>*注意：目前處於非Wi-Fi環境，下載檔案會消耗相應的行動數據，請先確認目前的網路環境再開始下載</color>\""
+    },
+    "\"DataAnonymFail\"": {
+      "m_bError": null,
+      "m_Index": "\"DataAnonymFail\"",
+      "m_Name": "\"##6:个人隐私数据加密失败，请检查网络状态，重启游戏##10:Privacy Data Encryption Failed. Please check your network connection and restart the game.##14:Privacy Data Encryption Failed. Please check your network connection and restart the game.##15:Privacy Data Encryption Failed. Please check your network connection and restart the game.##22:個人情報データの暗号化に失敗しました。ネットワーク状況を確認し、ゲームを再起動してください。##23:개인정보 데이터 암호화에 실패했습니다. 네트워크 상태를 확인한 후 게임을 재시작하세요.##34:Privacy Data Encryption Failed. Please check your network connection and restart the game.##36:การเข้ารหัสข้อมูลส่วนบุคคลล้มเหลว โปรดตรวจสอบการเชื่อมต่อเครือข่ายของท่านและรีสตาร์ทเกม##41:個人隱私資料加密失敗，請檢查網路狀態，並重新啟動遊戲\""
+    },
+    "\"LoginProtocolHandlingFail\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginProtocolHandlingFail\"",
+      "m_Name": "\"##6:服务器数据处理异常，请稍后尝试重新登录##10:Server is experiencing an error. Please try again later.##14:Le serveur est en panne. Merci de réessayer plus tard.##15:Es ist ein Serverfehler aufgetreten. Bitte versuche es später erneut.##22:サーバーデータの処理に異常が発生しました。しばらくしてから再ログインをお試しください。##23:서버 데이터 처리에 오류가 발생했습니다. 잠시 후 다시 로그인해 주세요.##34:El servidor está teniendo un problema. Vuelve a intentarlo más tarde.##36:เซิร์ฟเวอร์เกิดข้อผิดพลาด โปรดลองใหม่อีกครั้งภายหลัง##41:伺服器資料處理異常，請稍後嘗試重新登入。\""
+    },
+    "\"UpdateRestartConfirm\"": {
+      "m_bError": null,
+      "m_Index": "\"UpdateRestartConfirm\"",
+      "m_Name": "\"##6:版本更新完成，请立即重启游戏##10:Update completed. Please restart the game.##14:Mise à jour terminée. Veuillez redémarrer le jeu.##15:Update abgeschlossen. Bitte starte das Spiel neu.##22:アップデートが完了しました。すぐにゲームを再起動してください。##23:버전 업데이트가 완료되었습니다. 게임을 재실행해 주세요.##34:Actualización completada. Reinicia el juego.##36:การอัปเดตเสร็จสมบูรณ์แล้ว โปรดรีสตาร์ทเกม##41:版本更新完成，請立即重新啟動遊戲。\""
+    },
+    "\"UpdateComplete\"": {
+      "m_bError": null,
+      "m_Index": "\"UpdateComplete\"",
+      "m_Name": "\"##6:更新完成##10:Update Complete##14:MàJ terminée##15:Update abgeschlossen##22:アップデート完了。ゲームの再起動が必要です。##23:업데이트 완료##34:Actualización completada##36:อัปเดตลุล่วง##41:更新完成\""
+    },
+    "\"PlayerCenterAccountBindAppleID\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountBindAppleID\"",
+      "m_Name": "\"##6:绑定Apple ID##10:Bind Apple ID##14:Lier l'Identifiant Apple##15:Apple ID binden##22:Apple IDで連携##23:Apple ID 연동##34:Vincular Apple ID##36:ผูกมัด Apple ID##41:綁定Apple ID\""
+    },
+    "\"LoginCheckUpgradeUnzip\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginCheckUpgradeUnzip\"",
+      "m_Name": "\"##6:解压资源中：##10:Extracting resources:##14:Décompression des ressources :##15:Ressourcen werden extrahiert:##22:リソースを解凍中：##23:리소스 압축 해제 중:##34:Extrayendo recursos:##36:กำลังสกัดทรัพยากร...##41:正在解壓縮檔案：\""
+    },
+    "\"MSDKErrorCode5002050\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002050\"",
+      "m_Name": "\"##6:error code:5002050##10:error code:5002050##14:error code:5002050##15:error code:5002050##22:error code:5002050##23:error code:5002050##34:error code:5002050##36:error code:5002050##41:error code:5002050\""
+    },
+    "\"MSDKErrorCode5002030\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002030\"",
+      "m_Name": "\"##6:error code:5002030##10:error code:5002030##14:error code:5002030##15:error code:5002030##22:error code:5002030##23:error code:5002030##34:error code:5002030##36:error code:5002030##41:error code:5002030\""
+    },
+    "\"MSDKErrorCode5002014\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002014\"",
+      "m_Name": "\"##6:error code:5002014##10:error code:5002014##14:error code:5002014##15:error code:5002014##22:error code:5002014##23:error code:5002014##34:error code:5002014##36:error code:5002014##41:error code:5002014\""
+    },
+    "\"MSDKErrorCode5002013\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002013\"",
+      "m_Name": "\"##6:error code:5002013##10:error code:5002013##14:error code:5002013##15:error code:5002013##22:error code:5002013##23:error code:5002013##34:error code:5002013##36:error code:5002013##41:error code:5002013\""
+    },
+    "\"MSDKErrorCode5002012\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002012\"",
+      "m_Name": "\"##6:error code:5002012##10:error code:5002012##14:error code:5002012##15:error code:5002012##22:error code:5002012##23:error code:5002012##34:error code:5002012##36:error code:5002012##41:error code:5002012\""
+    },
+    "\"MSDKErrorCode5002010\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002010\"",
+      "m_Name": "\"##6:error code:5002010##10:error code:5002010##14:error code:5002010##15:error code:5002010##22:error code:5002010##23:error code:5002010##34:error code:5002010##36:error code:5002010##41:error code:5002010\""
+    },
+    "\"MSDKErrorCode5002001\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002001\"",
+      "m_Name": "\"##6:error code:5002001##10:error code:5002001##14:error code:5002001##15:error code:5002001##22:error code:5002001##23:error code:5002001##34:error code:5002001##36:error code:5002001##41:error code:5002001\""
+    },
+    "\"MSDKErrorCode5010601\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010601\"",
+      "m_Name": "\"##6:error code:5010601##10:error code:5010601##14:error code:5010601##15:error code:5010601##22:error code:5010601##23:error code:5010601##34:error code:5010601##36:error code:5010601##41:error code:5010601\""
+    },
+    "\"MSDKErrorCode5010508\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010508\"",
+      "m_Name": "\"##6:error code:5010508##10:error code:5010508##14:error code:5010508##15:error code:5010508##22:error code:5010508##23:error code:5010508##34:error code:5010508##36:error code:5010508##41:error code:5010508\""
+    },
+    "\"MSDKErrorCode5010507\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010507\"",
+      "m_Name": "\"##6:error code:5010507##10:error code:5010507##14:error code:5010507##15:error code:5010507##22:error code:5010507##23:error code:5010507##34:error code:5010507##36:error code:5010507##41:error code:5010507\""
+    },
+    "\"MSDKErrorCode5010505\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010505\"",
+      "m_Name": "\"##6:error code:5010505##10:error code:5010505##14:error code:5010505##15:error code:5010505##22:error code:5010505##23:error code:5010505##34:error code:5010505##36:error code:5010505##41:error code:5010505\""
+    },
+    "\"MSDKErrorCode5010504\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010504\"",
+      "m_Name": "\"##6:error code:5010504##10:error code:5010504##14:error code:5010504##15:error code:5010504##22:error code:5010504##23:error code:5010504##34:error code:5010504##36:error code:5010504##41:error code:5010504\""
+    },
+    "\"MSDKErrorCode5010503\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010503\"",
+      "m_Name": "\"##6:error code:5010503##10:error code:5010503##14:error code:5010503##15:error code:5010503##22:error code:5010503##23:error code:5010503##34:error code:5010503##36:error code:5010503##41:error code:5010503\""
+    },
+    "\"MSDKErrorCode5010502\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010502\"",
+      "m_Name": "\"##6:error code:5010502##10:error code:5010502##14:error code:5010502##15:error code:5010502##22:error code:5010502##23:error code:5010502##34:error code:5010502##36:error code:5010502##41:error code:5010502\""
+    },
+    "\"MSDKErrorCode5010205\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010205\"",
+      "m_Name": "\"##6:error code:5010205##10:error code:5010205##14:error code:5010205##15:error code:5010205##22:error code:5010205##23:error code:5010205##34:error code:5010205##36:error code:5010205##41:error code:5010205\""
+    },
+    "\"MSDKErrorCode5010204\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010204\"",
+      "m_Name": "\"##6:error code:5010204##10:error code:5010204##14:error code:5010204##15:error code:5010204##22:error code:5010204##23:error code:5010204##34:error code:5010204##36:error code:5010204##41:error code:5010204\""
+    },
+    "\"MSDKErrorCode5010203\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010203\"",
+      "m_Name": "\"##6:error code:5010203##10:error code:5010203##14:error code:5010203##15:error code:5010203##22:error code:5010203##23:error code:5010203##34:error code:5010203##36:error code:5010203##41:error code:5010203\""
+    },
+    "\"MSDKErrorCode5010110\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010110\"",
+      "m_Name": "\"##6:error code:5010110##10:error code:5010110##14:error code:5010110##15:error code:5010110##22:error code:5010110##23:error code:5010110##34:error code:5010110##36:error code:5010110##41:error code:5010110\""
+    },
+    "\"MSDKErrorCode5010109\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010109\"",
+      "m_Name": "\"##6:error code:5010109##10:error code:5010109##14:error code:5010109##15:error code:5010109##22:error code:5010109##23:error code:5010109##34:error code:5010109##36:error code:5010109##41:error code:5010109\""
+    },
+    "\"MSDKErrorCode5010108\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010108\"",
+      "m_Name": "\"##6:error code:5010108##10:error code:5010108##14:error code:5010108##15:error code:5010108##22:error code:5010108##23:error code:5010108##34:error code:5010108##36:error code:5010108##41:error code:5010108\""
+    },
+    "\"MSDKErrorCode5010106\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010106\"",
+      "m_Name": "\"##6:error code:5010106##10:error code:5010106##14:error code:5010106##15:error code:5010106##22:error code:5010106##23:error code:5010106##34:error code:5010106##36:error code:5010106##41:error code:5010106\""
+    },
+    "\"MSDKErrorCode5010104\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010104\"",
+      "m_Name": "\"##6:error code:5010104##10:error code:5010104##14:error code:5010104##15:error code:5010104##22:error code:5010104##23:error code:5010104##34:error code:5010104##36:error code:5010104##41:error code:5010104\""
+    },
+    "\"MSDKErrorCode5010103\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010103\"",
+      "m_Name": "\"##6:error code:5010103##10:error code:5010103##14:error code:5010103##15:error code:5010103##22:error code:5010103##23:error code:5010103##34:error code:5010103##36:error code:5010103##41:error code:5010103\""
+    },
+    "\"MSDKErrorCode5010102\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010102\"",
+      "m_Name": "\"##6:error code:5010102##10:error code:5010102##14:error code:5010102##15:error code:5010102##22:error code:5010102##23:error code:5010102##34:error code:5010102##36:error code:5010102##41:error code:5010102\""
+    },
+    "\"MSDKErrorCode5010101\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010101\"",
+      "m_Name": "\"##6:error code:5010101##10:error code:5010101##14:error code:5010101##15:error code:5010101##22:error code:5010101##23:error code:5010101##34:error code:5010101##36:error code:5010101##41:error code:5010101\""
+    },
+    "\"MSDKErrorCode5010081\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010081\"",
+      "m_Name": "\"##6:error code:5010081##10:error code:5010081##14:error code:5010081##15:error code:5010081##22:error code:5010081##23:error code:5010081##34:error code:5010081##36:error code:5010081##41:error code:5010081\""
+    },
+    "\"MSDKErrorCode5010080\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010080\"",
+      "m_Name": "\"##6:error code:5010080##10:error code:5010080##14:error code:5010080##15:error code:5010080##22:error code:5010080##23:error code:5010080##34:error code:5010080##36:error code:5010080##41:error code:5010080\""
+    },
+    "\"MSDKErrorCode5010074\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010074\"",
+      "m_Name": "\"##6:error code:5010074##10:error code:5010074##14:error code:5010074##15:error code:5010074##22:error code:5010074##23:error code:5010074##34:error code:5010074##36:error code:5010074##41:error code:5010074\""
+    },
+    "\"MSDKErrorCode5010073\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010073\"",
+      "m_Name": "\"##6:error code:5010073##10:error code:5010073##14:error code:5010073##15:error code:5010073##22:error code:5010073##23:error code:5010073##34:error code:5010073##36:error code:5010073##41:error code:5010073\""
+    },
+    "\"MSDKErrorCode5010072\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010072\"",
+      "m_Name": "\"##6:error code:5010072##10:error code:5010072##14:error code:5010072##15:error code:5010072##22:error code:5010072##23:error code:5010072##34:error code:5010072##36:error code:5010072##41:error code:5010072\""
+    },
+    "\"MSDKErrorCode5010071\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010071\"",
+      "m_Name": "\"##6:error code:5010071##10:error code:5010071##14:error code:5010071##15:error code:5010071##22:error code:5010071##23:error code:5010071##34:error code:5010071##36:error code:5010071##41:error code:5010071\""
+    },
+    "\"MSDKErrorCode5010070\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010070\"",
+      "m_Name": "\"##6:error code:5010070##10:error code:5010070##14:error code:5010070##15:error code:5010070##22:error code:5010070##23:error code:5010070##34:error code:5010070##36:error code:5010070##41:error code:5010070\""
+    },
+    "\"MSDKErrorCode5010061\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010061\"",
+      "m_Name": "\"##6:error code:5010061##10:error code:5010061##14:error code:5010061##15:error code:5010061##22:error code:5010061##23:error code:5010061##34:error code:5010061##36:error code:5010061##41:error code:5010061\""
+    },
+    "\"MSDKErrorCode5010060\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010060\"",
+      "m_Name": "\"##6:error code:5010060##10:error code:5010060##14:error code:5010060##15:error code:5010060##22:error code:5010060##23:error code:5010060##34:error code:5010060##36:error code:5010060##41:error code:5010060\""
+    },
+    "\"MSDKErrorCode5010054\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010054\"",
+      "m_Name": "\"##6:error code:5010054##10:error code:5010054##14:error code:5010054##15:error code:5010054##22:error code:5010054##23:error code:5010054##34:error code:5010054##36:error code:5010054##41:error code:5010054\""
+    },
+    "\"MSDKErrorCode5010053\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010053\"",
+      "m_Name": "\"##6:error code:5010053##10:error code:5010053##14:error code:5010053##15:error code:5010053##22:error code:5010053##23:error code:5010053##34:error code:5010053##36:error code:5010053##41:error code:5010053\""
+    },
+    "\"MSDKErrorCode5010052\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010052\"",
+      "m_Name": "\"##6:error code:5010052##10:error code:5010052##14:error code:5010052##15:error code:5010052##22:error code:5010052##23:error code:5010052##34:error code:5010052##36:error code:5010052##41:error code:5010052\""
+    },
+    "\"MSDKErrorCode5010051\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010051\"",
+      "m_Name": "\"##6:error code:5010051##10:error code:5010051##14:error code:5010051##15:error code:5010051##22:error code:5010051##23:error code:5010051##34:error code:5010051##36:error code:5010051##41:error code:5010051\""
+    },
+    "\"MSDKErrorCode5010050\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010050\"",
+      "m_Name": "\"##6:error code:5010050##10:error code:5010050##14:error code:5010050##15:error code:5010050##22:error code:5010050##23:error code:5010050##34:error code:5010050##36:error code:5010050##41:error code:5010050\""
+    },
+    "\"MSDKErrorCode5010047\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010047\"",
+      "m_Name": "\"##6:error code:5010047##10:error code:5010047##14:error code:5010047##15:error code:5010047##22:error code:5010047##23:error code:5010047##34:error code:5010047##36:error code:5010047##41:error code:5010047\""
+    },
+    "\"MSDKErrorCode5010046\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010046\"",
+      "m_Name": "\"##6:error code:5010046##10:error code:5010046##14:error code:5010046##15:error code:5010046##22:error code:5010046##23:error code:5010046##34:error code:5010046##36:error code:5010046##41:error code:5010046\""
+    },
+    "\"MSDKErrorCode5010045\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010045\"",
+      "m_Name": "\"##6:error code:5010045##10:error code:5010045##14:error code:5010045##15:error code:5010045##22:error code:5010045##23:error code:5010045##34:error code:5010045##36:error code:5010045##41:error code:5010045\""
+    },
+    "\"MSDKErrorCode5010044\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010044\"",
+      "m_Name": "\"##6:error code:5010044##10:error code:5010044##14:error code:5010044##15:error code:5010044##22:error code:5010044##23:error code:5010044##34:error code:5010044##36:error code:5010044##41:error code:5010044\""
+    },
+    "\"MSDKErrorCode5010043\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010043\"",
+      "m_Name": "\"##6:error code:5010043##10:error code:5010043##14:error code:5010043##15:error code:5010043##22:error code:5010043##23:error code:5010043##34:error code:5010043##36:error code:5010043##41:error code:5010043\""
+    },
+    "\"MSDKErrorCode5010042\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010042\"",
+      "m_Name": "\"##6:error code:5010042##10:error code:5010042##14:error code:5010042##15:error code:5010042##22:error code:5010042##23:error code:5010042##34:error code:5010042##36:error code:5010042##41:error code:5010042\""
+    },
+    "\"MSDKErrorCode5010041\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010041\"",
+      "m_Name": "\"##6:error code:5010041##10:error code:5010041##14:error code:5010041##15:error code:5010041##22:error code:5010041##23:error code:5010041##34:error code:5010041##36:error code:5010041##41:error code:5010041\""
+    },
+    "\"MSDKErrorCode5010040\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010040\"",
+      "m_Name": "\"##6:error code:5010040##10:error code:5010040##14:error code:5010040##15:error code:5010040##22:error code:5010040##23:error code:5010040##34:error code:5010040##36:error code:5010040##41:error code:5010040\""
+    },
+    "\"MSDKErrorCode5010032\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010032\"",
+      "m_Name": "\"##6:error code:5010032##10:error code:5010032##14:error code:5010032##15:error code:5010032##22:error code:5010032##23:error code:5010032##34:error code:5010032##36:error code:5010032##41:error code:5010032\""
+    },
+    "\"MSDKErrorCode5010030\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010030\"",
+      "m_Name": "\"##6:error code:5010030##10:error code:5010030##14:error code:5010030##15:error code:5010030##22:error code:5010030##23:error code:5010030##34:error code:5010030##36:error code:5010030##41:error code:5010030\""
+    },
+    "\"MSDKErrorCode5010026\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010026\"",
+      "m_Name": "\"##6:error code:5010026##10:error code:5010026##14:error code:5010026##15:error code:5010026##22:error code:5010026##23:error code:5010026##34:error code:5010026##36:error code:5010026##41:error code:5010026\""
+    },
+    "\"MSDKErrorCode5010025\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010025\"",
+      "m_Name": "\"##6:error code:5010025##10:error code:5010025##14:error code:5010025##15:error code:5010025##22:error code:5010025##23:error code:5010025##34:error code:5010025##36:error code:5010025##41:error code:5010025\""
+    },
+    "\"MSDKErrorCode5010023\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010023\"",
+      "m_Name": "\"##6:error code:5010023##10:error code:5010023##14:error code:5010023##15:error code:5010023##22:error code:5010023##23:error code:5010023##34:error code:5010023##36:error code:5010023##41:error code:5010023\""
+    },
+    "\"MSDKErrorCode5010022\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010022\"",
+      "m_Name": "\"##6:error code:5010022##10:error code:5010022##14:error code:5010022##15:error code:5010022##22:error code:5010022##23:error code:5010022##34:error code:5010022##36:error code:5010022##41:error code:5010022\""
+    },
+    "\"MSDKErrorCode5010021\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010021\"",
+      "m_Name": "\"##6:error code:5010021##10:error code:5010021##14:error code:5010021##15:error code:5010021##22:error code:5010021##23:error code:5010021##34:error code:5010021##36:error code:5010021##41:error code:5010021\""
+    },
+    "\"MSDKErrorCode5010020\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010020\"",
+      "m_Name": "\"##6:error code:5010020##10:error code:5010020##14:error code:5010020##15:error code:5010020##22:error code:5010020##23:error code:5010020##34:error code:5010020##36:error code:5010020##41:error code:5010020\""
+    },
+    "\"MSDKErrorCode5010010\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010010\"",
+      "m_Name": "\"##6:error code:5010010##10:error code:5010010##14:error code:5010010##15:error code:5010010##22:error code:5010010##23:error code:5010010##34:error code:5010010##36:error code:5010010##41:error code:5010010\""
+    },
+    "\"MSDKErrorCode5000000\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5000000\"",
+      "m_Name": "\"##6:error code:5000000##10:error code:5000000##14:error code:5000000##15:error code:5000000##22:error code:5000000##23:error code:5000000##34:error code:5000000##36:error code:5000000##41:error code:5000000\""
+    },
+    "\"MSDKErrorCode5010031\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010031\"",
+      "m_Name": "\"##6:锁定账号 ID 失败，请稍后再试##10:Lock Account ID failed. Please try again later##14:Impossible de verrouiller l'ID du compte. Réessayez ultérieurement.##15:Sperrung der Konto-ID fehlgeschlagen. Bitte versuche es später erneut.##22:アカウントIDロック失敗。後でもう一度試してください。##23:계정 ID 잠금에 실패하였습니다. 잠시 후 다시 시도해 주세요.##34:No se ha podido bloquear la ID de cuenta. Vuelve a intentarlo más tarde##36:การล็อก ID บัญชีล้มเหลว โปรดลองใหม่อีกครั้งในภายหลัง##41:帳號ID鎖定失敗，請稍後再試\""
+    },
+    "\"MSDKErrorCode5010011\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010011\"",
+      "m_Name": "\"##6:锁定设备 ID 失败，请稍后再试##10:Lock Device ID failed. Please try again later##14:Impossible de verrouiller l'identifiant de l'appareil. Réessayez ultérieurement.##15:Sperrung der Geräte-ID fehlgeschlagen. Bitte versuche es später erneut.##22:端末IDロック失敗。後でもう一度試してください。##23:기기 ID 잠금에 실패하였습니다. 잠시 후 다시 시도해 주세요.##34:No se ha podido bloquear la ID de dispositivo. Vuelve a intentarlo más tarde##36:การล็อก ID อุปกรณ์ล้มเหลว โปรดลองใหม่อีกครั้งในภายหลัง##41:裝置ID鎖定失敗，請稍後再試\""
+    },
+    "\"MSDKErrorCode5002051\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002051\"",
+      "m_Name": "\"##6:锁定引继码失败##10:Lock Transfer Code failed.##14:Impossible de verrouiller le code de transfert.##15:Sperrung des Übertragungscodes fehlgeschlagen.##22:引き継ぎコードのロックに失敗しました。##23:계정 이전 코드 잠금에 실패하였습니다.##34:No se ha podido bloquear el código de transferencia.##36:การล็อกรหัสถ่ายโอนล้มเหลว##41:引繼碼鎖定失敗\""
+    },
+    "\"MSDKErrorCode5002043\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002043\"",
+      "m_Name": "\"##6:密码错误##10:Incorrect Password##14:Mot de passe erroné.##15:Falsches Passwort##22:パスワードが正しくありません。##23:잘못된 비밀번호입니다.##34:Contraseña incorrecta##36:รหัสผ่านไม่ถูกต้อง##41:密碼錯誤\""
+    },
+    "\"MSDKErrorCode5002042\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002042\"",
+      "m_Name": "\"##6:密码格式异常##10:Invalid password: Format error.##14:Mot de passe non valide : erreur de format.##15:Ungültiges Passwort: Formatfehler.##22:パスワードのフォーマットが正しくありません。##23:유효하지 않은 비밀번호 형식입니다.##34:Contraseña no válida: error de formato.##36:รหัสผ่านไม่ถูกต้อง: รูปแบบไม่ถูกต้อง##41:密碼格式異常\""
+    },
+    "\"MSDKErrorCode5002041\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002041\"",
+      "m_Name": "\"##6:引继码已使用或已过期##10:Transfer Code used or expired.##14:Code de transfert utilisé ou expiré.##15:Übertragungscode bereits verwendet oder abgelaufen.##22:引き継ぎコードはすでに使用済みまたは期限切れです##23:계정 이전 코드가 이미 사용되었거나 만료되었습니다.##34:Código de transferencia usado o caducado.##36:รหัสถ่ายโอนถูกใช้ไปแล้วหรือหมดอายุ##41:引繼碼已使用或已過期\""
+    },
+    "\"MSDKErrorCode5002040\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002040\"",
+      "m_Name": "\"##6:引继码格式异常##10:Invalid Transfer Code: Format error.##14:Code de transfert non valide : erreur de format.##15:Ungültiger Übertragungscode: Formatfehler.##22:引き継ぎコードのフォーマットが正しくありません。##23:유효하지 않은 계정 이전 코드 형식입니다.##34:Código de transferencia no válido: error de formato.##36:รหัสถ่ายโอนไม่ถูกต้อง: รูปแบบไม่ถูกต้อง##41:引繼碼格式異常\""
+    },
+    "\"MSDKErrorCode5002031\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002031\"",
+      "m_Name": "\"##6:请求被拒绝，触发风控保护##10:Request denied. Unusual activity detected.##14:Demande rejetée. Activité inhabituelle détectée.##15:Anfrage abgelehnt. Ungewöhnliche Aktivität festgestellt.##22:リクエストが拒否され、リスク管理保護機能が発動しました。##23:요청이 거부되어 보안 보호가 활성화되었습니다.##34:Solicitud denegada. Se ha detectado actividad inusual.##36:คำขอถูกปฏิเสธ ตรวจพบกิจกรรมที่ผิดปกติ##41:請求遭拒，觸發風險控管保護\""
+    },
+    "\"MSDKErrorCode5002021\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002021\"",
+      "m_Name": "\"##6:账号已处于登录状态##10:Account already logged in.##14:Compte déjà connecté.##15:Konto bereits angemeldet.##22:このアカウントはすでにログインしています##23:계정은 이미 로그인 상태입니다.##34:La cuenta ya ha iniciado sesión.##36:บัญชีนี้ล็อกอินอยู่แล้ว##41:帳號已處於登入狀態\""
+    },
+    "\"MSDKErrorCode5002020\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002020\"",
+      "m_Name": "\"##6:账号存在三方账号绑定关系，无法进行引继码操作##10:Transfer Code unavailable: Account bound to a third-party.##14:Code de transfert non disponible : le compte est lié à un tiers.##15:Übertragungscode nicht verfügbar: Konto mit Drittanbieter verknüpft.##22:アカウントはサードパーティアカウントと連携しているため、引き継ぎコード関連の操作はできません。##23:계정에 연동된 제3자 계정 정보가 있습니다. 계정 이전 코드 작업을 할 수 없습니다.##34:Código de transferencia no disponible. Cuenta asociada a un tercero.##36:ไม่สามารถใช้รหัสถ่ายโอนได้: บัญชีได้ผูกกับบุคคลที่สามไว้อยู่##41:帳號具備第三方帳號綁定關係，無法進行引繼碼操作\""
+    },
+    "\"MSDKErrorCode5002011\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002011\"",
+      "m_Name": "\"##6:存在有效的引继码##10:Transfer Code available.##14:Code de transfert disponible.##15:Übertragungscode verfügbar.##22:有効な引き継ぎコードが存在します##23:유효한 계정 이전 코드가 존재합니다.##34:Código de transferencia disponible.##36:รหัสถ่ายโอนสามารถใช้ได้##41:存在有效的引繼碼\""
+    },
+    "\"MSDKErrorCode5002004\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002004\"",
+      "m_Name": "\"##6:请求的语言或地区不在白名单内##10:Requested language or region unavailable.##14:Langue ou région demandée non disponible.##15:Gewünschte Sprache oder Region nicht verfügbar.##22:リクエストした言語、または地域はホワイトリストに入っていません。##23:요청한 언어 또는 지역은 화이트 리스트에 포함되지 않습니다.##34:Idioma o región solicitados no disponibles.##36:ไม่มีภาษาหรือภูมิภาคที่ร้องขอ##41:請求的語言或地區不在允許名單內\""
+    },
+    "\"MSDKErrorCode5002003\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002003\"",
+      "m_Name": "\"##6:引继码功能未开启##10:Transfer Code unavailable.##14:Code de transfert non disponible.##15:Übertragungscode nicht verfügbar.##22:引き継ぎコード機能が解放されていません。##23:계정 이전 코드 기능이 개방되지 않았습니다.##34:Código de transferencia no disponible.##36:ไม่สามารถใช้รหัสถ่ายโอนได้##41:引繼碼功能未開啟\""
+    },
+    "\"MSDKErrorCode5002002\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5002002\"",
+      "m_Name": "\"##6:引继码配置不存在##10:Transfer Code not found.##14:Code de transfert introuvable.##15:Übertragungscode nicht gefunden.##22:引き継ぎコードが存在しません。##23:계정 이전 코드 설정이 존재하지 않습니다.##34:Código de transferencia no encontrado.##36:ไม่พบรหัสถ่ายโอน##41:引繼碼配置不存在\""
+    },
+    "\"MSDKErrorCode5010701\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010701\"",
+      "m_Name": "\"##6:PC Access Token 为空##10:PC Access Token 为空##14:PC Access Token 为空##15:PC Access Token is null.##22:PCアクセストークンがありません。##23:PC Access Token is null.##34:PC Access Token is null.##36:PC Access Token is null.##41:PC Access Token 为空\""
+    },
+    "\"MSDKErrorCode5010510\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010510\"",
+      "m_Name": "\"##6:账号已经注销##10:Account already cancelled.##14:Compte déjà résilié.##15:Konto bereits gelöscht.##22:アカウントは削除されました。##23:계정 삭제가 완료되었습니다.##34:Cuenta ya cancelada.##36:บัญชีถูกยกเลิกไปแล้ว##41:帳號已經刪除\""
+    },
+    "\"MSDKErrorCode5010509\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010509\"",
+      "m_Name": "\"##6:注销条件不满足，无法注销##10:Conditions unmet, cannot cancel account.##14:Conditions non remplies pour résilier le compte.##15:Bedingungen nicht erfüllt, Konto kann nicht gelöscht werden.##22:削除条件を満たしてないため、削除できません。##23:계정 삭제 조건을 충족하지 않아 삭제할 수 없습니다.##34:No se cumplen los requisitos, no se puede cancelar la cuenta.##36:เงื่อนไขไม่ครบถ้วน ไม่สามารถยกเลิกบัญชีได้##41:刪除條件不滿足，無法刪除\""
+    },
+    "\"MSDKErrorCode5010506\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010506\"",
+      "m_Name": "\"##6:尚未提交注销##10:Cancellation request not yet submitted.##14:Demande de résiliation pas encore envoyée.##15:Löschanfrage noch nicht gesendet.##22:まだ削除を申請していません。##23:아직 계정 삭제를 요청하지 않았습니다.##34:Solicitud de cancelación sin enviar.##36:ยังไม่มีการส่งคำขอยกเลิกบัญชี##41:尚未申請刪除帳號\""
+    },
+    "\"MSDKErrorCode5010501\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010501\"",
+      "m_Name": "\"##6:已经提交过注销了##10:Cancellation request already submitted.##14:Demande de résiliation déjà envoyée.##15:Löschanfrage bereits gesendet.##22:既に削除を申請しています。##23:이미 계정 삭제를 요청하였습니다.##34:Solicitud de cancelación enviada.##36:ส่งคำขอยกเลิกบัญชีเรียบร้อยแล้ว##41:已經申請過刪除帳號\""
+    },
+    "\"MSDKErrorCode5010401\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010401\"",
+      "m_Name": "\"##6:切换的三方账号未绑定account id##10:Third-party account not previously bound.##14:Le compte tiers n'était pas lié.##15:Drittanbieter-Konto bislang nicht verknüpft.##22:切り替え先はアカウントIDと連携されていません##23:전환한 제3자 계정은 account ID에 연동되지 않았습니다.##34:La cuenta de terceros no se ha vinculado anteriormente.##36:บัญชีGoogle/Facebook/APPLEที่ใช้ยังไม่ได้ผูกกับบัญชีเกม##41:切換的三方帳號未綁定account id\""
+    },
+    "\"MSDKErrorCode5010304\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010304\"",
+      "m_Name": "\"##6:解绑失败，绑定关系不存在##10:Unbind failed: Account not bound.##14:Échec de la dissociation : aucun compte lié.##15:Entfernen der Verknüpfung fehlgeschlagen: Konto nicht verknüpft.##22:連携解除失敗。連携関係が存在しません。##23:연동 해제 실패. 연동된 정보가 없습니다.##34:Ha fallado la desvinculación: cuenta no vinculada.##36:ยกเลิกผูกบัญชีล้มเหลว: บัญชีนี้ยังไม่ได้ผูกเอาไว้##41:綁定解除失敗，綁定關係不存在\""
+    },
+    "\"MSDKErrorCode5010303\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010303\"",
+      "m_Name": "\"##6:解绑失败，三方账号不一致##10:Unbind failed: Third-party account mismatch.##14:Échec de la dissociation : le compte tiers ne correspond pas.##15:Entfernen der Verknüpfung fehlgeschlagen: Drittanbieter-Konto stimmt nicht überein.##22:連携解除失敗。サードパーティアカウントが一致していません。##23:연동 해제 실패. 제3자 계정이 일치하지 않습니다.##34:Ha fallado la desvinculación: no se corresponde la cuenta de terceros.##36:ยกเลิกผูกบัญชีล้มเหลว: ID บัญชีบุคคลที่สามไม่ตรงกัน##41:綁定解除失敗，第三方帳號不一致\""
+    },
+    "\"MSDKErrorCode5010302\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010302\"",
+      "m_Name": "\"##6:解绑失败，账号 ID 不一致##10:Unbind failed: Account ID mismatch.##14:Échec de la dissociation : l'ID du compte ne correspond pas.##15:Entfernen der Verknüpfung fehlgeschlagen: Konto-ID stimmt nicht überein.##22:連携解除失敗。アカウントIDが一致していません。##23:연동 해제 실패. 계정 ID가 일치하지 않습니다.##34:Ha fallado la desvinculación: no se corresponde la ID de cuenta.##36:ยกเลิกผูกบัญชีล้มเหลว: ID บัญชีไม่ตรงกัน##41:綁定解除失敗，帳號ID不一致\""
+    },
+    "\"MSDKErrorCode5010301\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010301\"",
+      "m_Name": "\"##6:解绑失败，触达解绑限制##10:Unbind failed: Limit reached.##14:Échec de la dissociation : limite atteinte.##15:Entfernen der Verknüpfung fehlgeschlagen: Limit erreicht.##22:連携解除失敗。連携解除制限が発動しました。##23:연동 해제 실패. 연동 해제가 제한됩니다.##34:Ha fallado la desvinculación: límite alcanzado.##36:ยกเลิกผูกบัญชีล้มเหลว: ถึงขีดจำกัดแล้ว##41:綁定解除失敗，觸及綁定解除限制\""
+    },
+    "\"MSDKErrorCode5010206\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010206\"",
+      "m_Name": "\"##6:绑定失败，账号注销中##10:Bind failed: Account cancellation in-progress.##14:Échec du lien : annulation du compte en cours.##15:Verknüpfung fehlgeschlagen: Kontolöschung im Gange.##22:連携失敗。アカウントが削除中です。##23:연동 실패. 계정 삭제 중입니다.##34:Ha fallado la vinculación: cancelación de cuenta en curso.##36:การผูกบัญชีล้มเหลว: กำลังอยู่ในขั้นตอนยกเลิกบัญชี##41:綁定失敗，帳號刪除中\""
+    },
+    "\"MSDKErrorCode5010202\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010202\"",
+      "m_Name": "\"##6:当前账号已绑定三方账号##10:Already bound to a third-party account.##14:Déjà lié à un compte tiers.##15:Bereits mit einem Drittanbieter-Konto verknüpft.##22:現在のアカウントは既に外部アカウントと連携しています##23:현재 계정은 제3자 계정에 연동되어 있습니다.##34:Ya vinculado a una cuenta de terceros.##36:ผูกอยู่กับบัญชีบุคคลที่สามอยู่แล้ว##41:當前帳號已綁定三方帳號\""
+    },
+    "\"MSDKErrorCode5010201\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010201\"",
+      "m_Name": "\"##6:绑定关系已存在##10:Account already bound.##14:Compte déjà lié.##15:Konto bereits verknüpft.##22:既に連携されています。##23:이미 연동되었습니다.##34:La cuenta ya está vinculada.##36:บัญชีนี้ได้ผูกไว้แล้ว##41:綁定關係已存在\""
+    },
+    "\"MSDKErrorCode5010107\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010107\"",
+      "m_Name": "\"##6:触发限额人数限制##10:User limit reached.##14:Limite d'utilisateurs atteinte.##15:Nutzerlimit erreicht.##22:最大人数制限が発動しました。##23:사용자 한도에 도달했습니다.##34:Límite de usuarios alcanzado.##36:ถึงขีดจำกัดผู้ใช้แล้ว##41:觸發限額人數限制\""
+    },
+    "\"MSDKErrorCode5010105\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010105\"",
+      "m_Name": "\"##6:触发 IP 限制##10:Restricted IP.##14:IP restreinte.##15:Eingeschränkte IP.##22:接続元のIPアドレスは制限されています。##23:제한된 IP입니다.##34:IP restringida.##36:IP ถูกจำกัดการเข้าถึง##41:觸發IP限制\""
+    },
+    "\"MSDKErrorCode5010091\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010091\"",
+      "m_Name": "\"##6:账号id和分组信息不匹配##10:Account ID and group info do not match.##14:L'ID du compte et les infos du groupe ne correspondent pas.##15:Konto-ID und Gruppeninfo stimmen nicht überein.##22:アカウントIDとグループ情報が一致していません。##23:계정 ID와 그룹 정보가 일치하지 않습니다.##34:La ID de cuenta y la información de grupo no coinciden.##36:ID บัญชีและข้อมูลกลุ่มไม่ตรงกัน##41:帳號ID和分組資訊不相符\""
+    },
+    "\"MSDKErrorCode5010090\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCode5010090\"",
+      "m_Name": "\"##6:设备id和账号id不匹配##10:Device ID and account ID do not match.##14:Les identifiants de l'appareil et du compte ne correspondent pas.##15:Geräte-ID und Konto-ID stimmen nicht überein.##22:端末IDとアカウントIDが一致していません。##23:기기 ID와 계정 ID가 일치하지 않습니다.##34:La ID de dispositivo y de cuenta no coinciden.##36:ID อุปกรณ์ และ ID บัญชีไม่ตรงกัน##41:裝置ID和帳號ID不相符\""
+    },
+    "\"MSDKErrorCodeM4\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCodeM4\"",
+      "m_Name": "\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\""
+    },
+    "\"MSDKErrorCodeM3\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCodeM3\"",
+      "m_Name": "\"##6:授权登录失败请重新尝试##10:Authorization failed. Please try again.##14:Échec de l'autorisation. Merci de réessayer.##15:Autorisierung fehlgeschlagen. Bitte versuche es erneut.##22:ログイン認証に失敗しました。再試行してください。##23:로그인 실패, 다시 시도해 주세요.##34:La autorización falló. Vuelve a intentarlo.##36:การอนุญาตล้มเหลว โปรดลองใหม่อีกครั้ง##41:授權登入失敗，請重新嘗試\""
+    },
+    "\"MSDKErrorCodeM2\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCodeM2\"",
+      "m_Name": "\"##6:授权已取消##10:Permissions Revoked##14:Autorisations révoquées##15:Berechtigungen widerrufen##22:認証が取り消されました。##23:취소되었습니다.##34:Permisos revocados##36:สิทธิ์ถูกเพิกถอน##41:授權已取消\""
+    },
+    "\"MSDKErrorCodeM1\"": {
+      "m_bError": null,
+      "m_Index": "\"MSDKErrorCodeM1\"",
+      "m_Name": "\"##6:登录初始化失败##10:Login Initialization Failed##14:Échec de l'initialisation de la connexion##15:Anmeldeinitialisierung fehlgeschlagen##22:ログイン初期化に失敗しました。##23:로그인 초기화 실패##34:Error de inicio de sesión##36:การเริ่มต้นเข้าสู่ระบบล้มเหลว##41:登入初始化失敗\""
+    },
+    "\"PlayerUserToggleDMM\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerUserToggleDMM\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>User Agreement</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Contrat d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Nutzungsbedingungen</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>이용 약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Acuerdo de Usuario</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>ข้อตกลงผู้ใช้</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>服務條款</u></color></link>\""
+    },
+    "\"PlayerPrivacyToggleDMM\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerPrivacyToggleDMM\"",
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Datenschutzrichtlinien</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:Missing##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隱私權政策</u></color></link>\""
+    },
+    "\"PlayerCenterAccountUnpack\"": {
+      "m_bError": null,
+      "m_Index": "\"PlayerCenterAccountUnpack\"",
+      "m_Name": "\"##6:解绑三方账户需要您使用当前绑定的三方账户进行授权##10:To unbind a third-party account, you need to authorize using the currently bound third-party account##14:Pour délier un compte tiers, vous devez autoriser en utilisant le compte tiers actuellement lié##15:Um ein Drittanbieter-Konto zu entfernen, musst du dich mit dem aktuell verknüpften Drittanbieter-Konto autorisieren##22:連携解除には、現在連携中の外部アカウントでの認証が必要です。##23:서드파티 계정 연동 해제를 위해서는 현재 연동된 서드파티 계정으로 인증해야 합니다##34:Para desvincular una cuenta de terceros, necesitas autorizar usando la cuenta de terceros actualmente vinculada##36:หากต้องการเลิกผูกมัดบัญชีบุคคลที่สาม ท่านจะต้องยืนยันตัวตนผ่านบัญชีบุคคลที่สามที่ผูกมัดอยู่ในปัจจุบัน##41:解綁第三方帳戶需要您使用目前綁定的第三方帳戶進行授權\""
+    }
+  },
+  "status": "processed_182_items"
+}

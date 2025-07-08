@@ -1,0 +1,322 @@
+{
+  "className": "CData_GMCommand",
+  "timestamp": "2025-07-08T13:35:34.224Z",
+  "data": {
+    "\"get_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"get_server_time\"",
+      "m_ShowName": "\"获取服务器时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"\""
+    },
+    "\"set_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"set_server_time\"",
+      "m_ShowName": "\"设置服务器时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"YY-MM-DD HH:MM:SS\""
+    },
+    "\"reset_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"reset_server_time\"",
+      "m_ShowName": "\"恢复服务器时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"\""
+    },
+    "\"get_arena_match_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"get_arena_match_server_time\"",
+      "m_ShowName": "\"查看PVP服时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"\""
+    },
+    "\"set_arena_match_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"set_arena_match_server_time\"",
+      "m_ShowName": "\"设置PVP服时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"YY-MM-DD HH:MM:SS\""
+    },
+    "\"reset_arena_match_server_time\"": {
+      "m_bError": null,
+      "m_Key": "\"reset_arena_match_server_time\"",
+      "m_ShowName": "\"重置PVP服时间\"",
+      "m_InsertUID": null,
+      "m_Param": "\"\""
+    },
+    "\"add_coin\"": {
+      "m_bError": null,
+      "m_Key": "\"add_coin\"",
+      "m_ShowName": "\"增加金币\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"sub_coin\"": {
+      "m_bError": null,
+      "m_Key": "\"sub_coin\"",
+      "m_ShowName": "\"减少金币\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"set_coin\"": {
+      "m_bError": null,
+      "m_Key": "\"set_coin\"",
+      "m_ShowName": "\"设置金币\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"add_diamond\"": {
+      "m_bError": null,
+      "m_Key": "\"add_diamond\"",
+      "m_ShowName": "\"增加钻石\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"sub_diamond\"": {
+      "m_bError": null,
+      "m_Key": "\"sub_diamond\"",
+      "m_ShowName": "\"减少钻石\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"set_diamond\"": {
+      "m_bError": null,
+      "m_Key": "\"set_diamond\"",
+      "m_ShowName": "\"设置钻石\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数值\""
+    },
+    "\"add_item\"": {
+      "m_bError": null,
+      "m_Key": "\"add_item\"",
+      "m_ShowName": "\"添加道具(道具有限制)\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"道具ID 数量\""
+    },
+    "\"add_all_item\"": {
+      "m_bError": null,
+      "m_Key": "\"add_all_item\"",
+      "m_ShowName": "\"添加所有道具(道具表)\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"道具子类型(可选) 数量(可选)\""
+    },
+    "\"sub_item\"": {
+      "m_bError": null,
+      "m_Key": "\"sub_item\"",
+      "m_ShowName": "\"减少道具\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"道具ID 数量\""
+    },
+    "\"del_item\"": {
+      "m_bError": null,
+      "m_Key": "\"del_item\"",
+      "m_ShowName": "\"删除道具\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"道具ID\""
+    },
+    "\"add_all_equip\"": {
+      "m_bError": null,
+      "m_Key": "\"add_all_equip\"",
+      "m_ShowName": "\"添加所有装备\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"装备等级(可选,默认为0)\""
+    },
+    "\"del_equip\"": {
+      "m_bError": null,
+      "m_Key": "\"del_equip\"",
+      "m_ShowName": "\"删除装备\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"装备UID\""
+    },
+    "\"clear_all_equip\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_all_equip\"",
+      "m_ShowName": "\"卸载并清除所有装备\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"\""
+    },
+    "\"set_equip_level\"": {
+      "m_bError": null,
+      "m_Key": "\"set_equip_level\"",
+      "m_ShowName": "\"设置装备等级\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"装备UID 等级\""
+    },
+    "\"add_equip_exp\"": {
+      "m_bError": null,
+      "m_Key": "\"add_equip_exp\"",
+      "m_ShowName": "\"加装备经验\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"装备UID 经验\""
+    },
+    "\"init_equip_overload\"": {
+      "m_bError": null,
+      "m_Key": "\"init_equip_overload\"",
+      "m_ShowName": "\"重置装备过载\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"装备UID\""
+    },
+    "\"add_all_legacy\"": {
+      "m_bError": null,
+      "m_Key": "\"add_all_legacy\"",
+      "m_ShowName": "\"添加所有遗产\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"等级(可选,默认为1)\""
+    },
+    "\"add_legacy\"": {
+      "m_bError": null,
+      "m_Key": "\"add_legacy\"",
+      "m_ShowName": "\"添加遗产\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"遗产id 等级(可选,默认为1)\""
+    },
+    "\"del_legacy\"": {
+      "m_bError": null,
+      "m_Key": "\"del_legacy\"",
+      "m_ShowName": "\"删除遗产\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"遗产id\""
+    },
+    "\"clear_all_legacy\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_all_legacy\"",
+      "m_ShowName": "\"清空遗产\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"\""
+    },
+    "\"set_legacy_level\"": {
+      "m_bError": null,
+      "m_Key": "\"set_legacy_level\"",
+      "m_ShowName": "\"设置遗产等级\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"遗产id 等级\""
+    },
+    "\"pass_stage\"": {
+      "m_bError": null,
+      "m_Key": "\"pass_stage\"",
+      "m_ShowName": "\"通过关卡(带物品奖励)\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"关卡类型 关卡ID 得分(可选)\""
+    },
+    "\"pass_to_stage\"": {
+      "m_bError": null,
+      "m_Key": "\"pass_to_stage\"",
+      "m_ShowName": "\"通过到某一关卡\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"关卡类型 关卡ID(此关之前全通)\""
+    },
+    "\"pass_stage_main\"": {
+      "m_bError": null,
+      "m_Key": "\"pass_stage_main\"",
+      "m_ShowName": "\"通过主线关卡\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"关卡ID(可选,没有则是下一关,每章第一关需要手动填)\""
+    },
+    "\"pass_all_stage_main\"": {
+      "m_bError": null,
+      "m_Key": "\"pass_all_stage_main\"",
+      "m_ShowName": "\"通过所有主线关卡\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"章节(可选)\""
+    },
+    "\"clear_stage\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_stage\"",
+      "m_ShowName": "\"清除某一关卡数据\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"关卡类型 关卡ID\""
+    },
+    "\"clear_all_stage\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_all_stage\"",
+      "m_ShowName": "\"清除所有关卡\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"关卡类型\""
+    },
+    "\"set_afk_level\"": {
+      "m_bError": null,
+      "m_Key": "\"set_afk_level\"",
+      "m_ShowName": "\"设置挂机等级\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"挂机等级\""
+    },
+    "\"set_afk_exp\"": {
+      "m_bError": null,
+      "m_Key": "\"set_afk_exp\"",
+      "m_ShowName": "\"设置挂机经验\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"挂机经验\""
+    },
+    "\"add_afk_level\"": {
+      "m_bError": null,
+      "m_Key": "\"add_afk_level\"",
+      "m_ShowName": "\"增加挂机等级\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"增加等级\""
+    },
+    "\"set_afk_instant_times\"": {
+      "m_bError": null,
+      "m_Key": "\"set_afk_instant_times\"",
+      "m_ShowName": "\"设置挂机扫荡次数\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"次数\""
+    },
+    "\"set_afk_reward_time\"": {
+      "m_bError": null,
+      "m_Key": "\"set_afk_reward_time\"",
+      "m_ShowName": "\"设置挂机领奖时间\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"%Y-%m-%d %H:%M:%S\""
+    },
+    "\"clear_heartsend\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_heartsend\"",
+      "m_ShowName": "\"清除赠送爱心次数\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"\""
+    },
+    "\"add_robot_friend\"": {
+      "m_bError": null,
+      "m_Key": "\"add_robot_friend\"",
+      "m_ShowName": "\"增加测试用机器人好友\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"好友个数\""
+    },
+    "\"clear_robot_friend\"": {
+      "m_bError": null,
+      "m_Key": "\"clear_robot_friend\"",
+      "m_ShowName": "\"删除所有机器人好友\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"\""
+    },
+    "\"set_attract_rank\"": {
+      "m_bError": null,
+      "m_Key": "\"set_attract_rank\"",
+      "m_ShowName": "\"设置好感度等级\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"英雄id, 契约等级, 经验(可选,不填则等级最大值)\""
+    },
+    "\"add_attract_gift\"": {
+      "m_bError": null,
+      "m_Key": "\"add_attract_gift\"",
+      "m_ShowName": "\"增加所有好感度礼物\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"数量(可选,没有就100)\""
+    },
+    "\"add_hero\"": {
+      "m_bError": null,
+      "m_Key": "\"add_hero\"",
+      "m_ShowName": "\"添加英雄\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"英雄ID [可选: 等级  突破]\""
+    },
+    "\"add_all_hero\"": {
+      "m_bError": null,
+      "m_Key": "\"add_all_hero\"",
+      "m_ShowName": "\"添加所有英雄\"",
+      "m_InsertUID": "1",
+      "m_Param": "\"\""
+    }
+  },
+  "status": "processed_45_items"
+}

@@ -1,0 +1,28 @@
+{
+  "className": "CData_MoonType",
+  "timestamp": "2025-07-08T13:35:40.475Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_MoontypeID": "1",
+      "m_mMoontypeName": "\"Moon Phase: New Moon\"",
+      "m_mMoontypeDesc": "\"Activate Moon Phase: New Moon by using Ultimate in battle. While Blood Moon is active, all Vassals gain <style=Highlight>Ultimate Bloodsoul Cost -1</style> and deal <style=Highlight>25% more DMG</style>.\"",
+      "m_FilterIcon": "\"Atlas_CharacterMoon/filter_icon_moon3\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_MoontypeID": "2",
+      "m_mMoontypeName": "\"Moon Phase: Crescent Moon\"",
+      "m_mMoontypeDesc": "\"Activate Moon Phase: Crescent Moon by using Ultimate in battle. While Blood Moon is active, all Vassals gain <style=Highlight>Ultimate Bloodsoul Cost -1</style> and deal <style=Highlight>25% more DMG</style>.\"",
+      "m_FilterIcon": "\"Atlas_CharacterMoon/filter_icon_moon2\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_MoontypeID": "3",
+      "m_mMoontypeName": "\"Moon Phase: Full Moon\"",
+      "m_mMoontypeDesc": "\"Activate Moon Phase: Full Moon by using Ultimate in battle. While Blood Moon is active, all Vassals gains <style=Highlight>Ultimate Bloodsoul Cost -1</style> and <style=Highlight>25% more DMG</style>.\"",
+      "m_FilterIcon": "\"Atlas_CharacterMoon/filter_icon_moon1\""
+    }
+  },
+  "status": "processed_3_items"
+}

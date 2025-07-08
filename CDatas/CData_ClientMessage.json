@@ -1,0 +1,2197 @@
+{
+  "className": "CData_ClientMessage",
+  "timestamp": "2025-07-08T13:35:33.154Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mContent": "\"Unlocked by default.\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-9</style> to unlock.\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>3-2</style> to unlock.\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-5</style> to unlock.\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-5</style> to unlock\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>Chapter 00</style> to unlock.\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_mContent": "\"Auto-battle unlocks at [Threads of Fate] <style=Clientmessage01>1-5</style>.\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_mContent": "\"Double Speed unlocks at [Threads of Fate] <style=Clientmessage01>1-2</style>.\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>3-6</style> to unlock.\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_mContent": "\"Feature Disabled\""
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_mContent": "\"Feature Disabled\""
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_mContent": "\"Story in progress.\""
+    },
+    "17": {
+      "m_bError": null,
+      "m_ID": "17",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "18": {
+      "m_bError": null,
+      "m_ID": "18",
+      "m_mContent": "\"Unlocked by default.\""
+    },
+    "19": {
+      "m_bError": null,
+      "m_ID": "19",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "20": {
+      "m_bError": null,
+      "m_ID": "20",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_mContent": "\"Auto-battle unlocks in [Threads of Fate] <style=Clientmessage01>1-5</style>.\""
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "23": {
+      "m_bError": null,
+      "m_ID": "23",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "24": {
+      "m_bError": null,
+      "m_ID": "24",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>4-5</style> to unlock.\""
+    },
+    "25": {
+      "m_bError": null,
+      "m_ID": "25",
+      "m_mContent": "\"Complete Tutorial to unlock.\""
+    },
+    "26": {
+      "m_bError": null,
+      "m_ID": "26",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-1</style> to unlock.\""
+    },
+    "27": {
+      "m_bError": null,
+      "m_ID": "27",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>4-4</style> to unlock.\""
+    },
+    "28": {
+      "m_bError": null,
+      "m_ID": "28",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>4-4</style> to unlock.\""
+    },
+    "29": {
+      "m_bError": null,
+      "m_ID": "29",
+      "m_mContent": "\"Module Disabled\""
+    },
+    "30": {
+      "m_bError": null,
+      "m_ID": "30",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>6-4</style> to unlock.\""
+    },
+    "31": {
+      "m_bError": null,
+      "m_ID": "31",
+      "m_mContent": "\"Join a clan to unlock.\""
+    },
+    "32": {
+      "m_bError": null,
+      "m_ID": "32",
+      "m_mContent": "\"Unlocks at Clan <style=Clientmessage01>LV. 3</style>.\""
+    },
+    "33": {
+      "m_bError": null,
+      "m_ID": "33",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>6-1</style> to unlock.\""
+    },
+    "36": {
+      "m_bError": null,
+      "m_ID": "36",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>Chapter 00</style> to unlock.\""
+    },
+    "37": {
+      "m_bError": null,
+      "m_ID": "37",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+    },
+    "38": {
+      "m_bError": null,
+      "m_ID": "38",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-2</style> to unlock.\""
+    },
+    "39": {
+      "m_bError": null,
+      "m_ID": "39",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+    },
+    "40": {
+      "m_bError": null,
+      "m_ID": "40",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>3-3</style> to unlock.\""
+    },
+    "41": {
+      "m_bError": null,
+      "m_ID": "41",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+    },
+    "42": {
+      "m_bError": null,
+      "m_ID": "42",
+      "m_mContent": "\"Explore [Threads of Fate - Normal] Chapter 3 to obtain the key.\""
+    },
+    "43": {
+      "m_bError": null,
+      "m_ID": "43",
+      "m_mContent": "\"Explore [Threads of Fate - Normal] Chapter 3 to obtain the key.\""
+    },
+    "44": {
+      "m_bError": null,
+      "m_ID": "44",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-1</style> to unlock.\""
+    },
+    "45": {
+      "m_bError": null,
+      "m_ID": "45",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "46": {
+      "m_bError": null,
+      "m_ID": "46",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>12-3</style> to unlock.\""
+    },
+    "47": {
+      "m_bError": null,
+      "m_ID": "47",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>6-1</style> to unlock.\""
+    },
+    "48": {
+      "m_bError": null,
+      "m_ID": "48",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-1</style> to unlock.\""
+    },
+    "49": {
+      "m_bError": null,
+      "m_ID": "49",
+      "m_mContent": "\"Unlocked by default.\""
+    },
+    "50": {
+      "m_bError": null,
+      "m_ID": "50",
+      "m_mContent": "\"Complete Tutorial to unlock.\""
+    },
+    "51": {
+      "m_bError": null,
+      "m_ID": "51",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+    },
+    "55": {
+      "m_bError": null,
+      "m_ID": "55",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "56": {
+      "m_bError": null,
+      "m_ID": "56",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-6</style> to unlock.\""
+    },
+    "59": {
+      "m_bError": null,
+      "m_ID": "59",
+      "m_mContent": "\"Unlocked by default.\""
+    },
+    "60": {
+      "m_bError": null,
+      "m_ID": "60",
+      "m_mContent": "\"Clear [Threads of Fate] <style=\"Clientmessage01\">2-1</style> to unlock.\""
+    },
+    "101": {
+      "m_bError": null,
+      "m_ID": "101",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "102": {
+      "m_bError": null,
+      "m_ID": "102",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "103": {
+      "m_bError": null,
+      "m_ID": "103",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "104": {
+      "m_bError": null,
+      "m_ID": "104",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "105": {
+      "m_bError": null,
+      "m_ID": "105",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "200": {
+      "m_bError": null,
+      "m_ID": "200",
+      "m_mContent": "\"Feature Disabled\""
+    },
+    "201": {
+      "m_bError": null,
+      "m_ID": "201",
+      "m_mContent": "\"Clear [Threads of Fate] 3-3 to unlock this Hunting Ground.\""
+    },
+    "202": {
+      "m_bError": null,
+      "m_ID": "202",
+      "m_mContent": "\"Clear [Threads of Fate] 4-1 to unlock this Hunting Ground.\""
+    },
+    "203": {
+      "m_bError": null,
+      "m_ID": "203",
+      "m_mContent": "\"Clear [Threads of Fate] 5-10 to unlock this Hunting Ground.\""
+    },
+    "204": {
+      "m_bError": null,
+      "m_ID": "204",
+      "m_mContent": "\"A new Hunting Ground is being prepared. Please stay tuned.\""
+    },
+    "205": {
+      "m_bError": null,
+      "m_ID": "205",
+      "m_mContent": "\"A new Hunting Ground is being prepared. Please stay tuned.\""
+    },
+    "300": {
+      "m_bError": null,
+      "m_ID": "300",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "311": {
+      "m_bError": null,
+      "m_ID": "311",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "312": {
+      "m_bError": null,
+      "m_ID": "312",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-5</style> to unlock.\""
+    },
+    "313": {
+      "m_bError": null,
+      "m_ID": "313",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "321": {
+      "m_bError": null,
+      "m_ID": "321",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>5-1</style> to unlock.\""
+    },
+    "322": {
+      "m_bError": null,
+      "m_ID": "322",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>5-1</style> to unlock.\""
+    },
+    "323": {
+      "m_bError": null,
+      "m_ID": "323",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>5-1</style> to unlock.\""
+    },
+    "331": {
+      "m_bError": null,
+      "m_ID": "331",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>8-3</style> to unlock.\""
+    },
+    "332": {
+      "m_bError": null,
+      "m_ID": "332",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>8-3</style> to unlock.\""
+    },
+    "333": {
+      "m_bError": null,
+      "m_ID": "333",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>8-3</style> to unlock.\""
+    },
+    "341": {
+      "m_bError": null,
+      "m_ID": "341",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>11-3</style> to unlock.\""
+    },
+    "342": {
+      "m_bError": null,
+      "m_ID": "342",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>11-3</style> to unlock.\""
+    },
+    "343": {
+      "m_bError": null,
+      "m_ID": "343",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>11-3</style> to unlock.\""
+    },
+    "351": {
+      "m_bError": null,
+      "m_ID": "351",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>14-2</style> to unlock.\""
+    },
+    "352": {
+      "m_bError": null,
+      "m_ID": "352",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>14-2</style> to unlock.\""
+    },
+    "353": {
+      "m_bError": null,
+      "m_ID": "353",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>14-2</style> to unlock.\""
+    },
+    "901": {
+      "m_bError": null,
+      "m_ID": "901",
+      "m_mContent": "\"Story in progress.\""
+    },
+    "902": {
+      "m_bError": null,
+      "m_ID": "902",
+      "m_mContent": "\"Story in progress.\""
+    },
+    "903": {
+      "m_bError": null,
+      "m_ID": "903",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock [Initial Hand Edit].\""
+    },
+    "904": {
+      "m_bError": null,
+      "m_ID": "904",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+    },
+    "905": {
+      "m_bError": null,
+      "m_ID": "905",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-6</style> to unlock.\""
+    },
+    "1000": {
+      "m_bError": null,
+      "m_ID": "1000",
+      "m_mContent": "\"Google Play Link Error (1000)\""
+    },
+    "1001": {
+      "m_bError": null,
+      "m_ID": "1001",
+      "m_mContent": "\"Payment not supported. (1001)\""
+    },
+    "2001": {
+      "m_bError": null,
+      "m_ID": "2001",
+      "m_mContent": "\"Item Query Error (2001)\""
+    },
+    "2002": {
+      "m_bError": null,
+      "m_ID": "2002",
+      "m_mContent": "\"Empty Item ID (2002)\""
+    },
+    "3001": {
+      "m_bError": null,
+      "m_ID": "3001",
+      "m_mContent": "\"Item ID Error (3001)\""
+    },
+    "3002": {
+      "m_bError": null,
+      "m_ID": "3002",
+      "m_mContent": "\"Purchase Request Error (3002)\""
+    },
+    "3003": {
+      "m_bError": null,
+      "m_ID": "3003",
+      "m_mContent": "\"Google Play Purchase Return Error (3003)\""
+    },
+    "3004": {
+      "m_bError": null,
+      "m_ID": "3004",
+      "m_mContent": "\"Order Upload Error (3004)\""
+    },
+    "3005": {
+      "m_bError": null,
+      "m_ID": "3005",
+      "m_mContent": "\"Order creation failed. (iOS) / Canceled by user. (Android) (3005)\""
+    },
+    "4001": {
+      "m_bError": null,
+      "m_ID": "4001",
+      "m_mContent": "\"Consumable Item Error (4001)\""
+    },
+    "5001": {
+      "m_bError": null,
+      "m_ID": "5001",
+      "m_mContent": "\"Undefined Error (5001)\""
+    },
+    "10001": {
+      "m_bError": null,
+      "m_ID": "10001",
+      "m_mContent": "\"The current team is full!\""
+    },
+    "10002": {
+      "m_bError": null,
+      "m_ID": "10002",
+      "m_mContent": "\"Vassal List empty.\""
+    },
+    "10003": {
+      "m_bError": null,
+      "m_ID": "10003",
+      "m_mContent": "\"Lineups are the same.\""
+    },
+    "10004": {
+      "m_bError": null,
+      "m_ID": "10004",
+      "m_mContent": "\"Lowest level selected.\""
+    },
+    "10005": {
+      "m_bError": null,
+      "m_ID": "10005",
+      "m_mContent": "\"Highest level selected.\""
+    },
+    "10006": {
+      "m_bError": null,
+      "m_ID": "10006",
+      "m_mContent": "\"Insufficient items to upgrade.\""
+    },
+    "10007": {
+      "m_bError": null,
+      "m_ID": "10007",
+      "m_mContent": "\"Max LV. reached.\""
+    },
+    "10008": {
+      "m_bError": null,
+      "m_ID": "10008",
+      "m_mContent": "\"Vassals in Transfusion state have restricted upgrades.\""
+    },
+    "10009": {
+      "m_bError": null,
+      "m_ID": "10009",
+      "m_mContent": "\"The same Vassal cannot be deployed simultaneously.\""
+    },
+    "10010": {
+      "m_bError": null,
+      "m_ID": "10010",
+      "m_mContent": "\"Vassal already deployed.\""
+    },
+    "10029": {
+      "m_bError": null,
+      "m_ID": "10029",
+      "m_mContent": "\"System Notification\""
+    },
+    "10031": {
+      "m_bError": null,
+      "m_ID": "10031",
+      "m_mContent": "\"Cancel\""
+    },
+    "10032": {
+      "m_bError": null,
+      "m_ID": "10032",
+      "m_mContent": "\"Quit\""
+    },
+    "10102": {
+      "m_bError": null,
+      "m_ID": "10102",
+      "m_mContent": "\"Sold Out\""
+    },
+    "10103": {
+      "m_bError": null,
+      "m_ID": "10103",
+      "m_mContent": "\"Insufficient Resources\""
+    },
+    "10104": {
+      "m_bError": null,
+      "m_ID": "10104",
+      "m_mContent": "\"Purchase limit reached.\""
+    },
+    "10105": {
+      "m_bError": null,
+      "m_ID": "10105",
+      "m_mContent": "\"Refresh limit reached.\""
+    },
+    "10106": {
+      "m_bError": null,
+      "m_ID": "10106",
+      "m_mContent": "\"The shop cannot be manually refreshed.\""
+    },
+    "10107": {
+      "m_bError": null,
+      "m_ID": "10107",
+      "m_mContent": "\"Shop not yet open.\""
+    },
+    "10201": {
+      "m_bError": null,
+      "m_ID": "10201",
+      "m_mContent": "\"{0} established the Clan.\""
+    },
+    "10202": {
+      "m_bError": null,
+      "m_ID": "10202",
+      "m_mContent": "\"{0} joined the Clan.\""
+    },
+    "10203": {
+      "m_bError": null,
+      "m_ID": "10203",
+      "m_mContent": "\"{0} left the Clan.\""
+    },
+    "10204": {
+      "m_bError": null,
+      "m_ID": "10204",
+      "m_mContent": "\"{0} removed {1} from the Clan.\""
+    },
+    "10205": {
+      "m_bError": null,
+      "m_ID": "10205",
+      "m_mContent": "\"{0} has been promoted to Elder.\""
+    },
+    "10206": {
+      "m_bError": null,
+      "m_ID": "10206",
+      "m_mContent": "\"The clan has upgraded to LV. {0}.\""
+    },
+    "10207": {
+      "m_bError": null,
+      "m_ID": "10207",
+      "m_mContent": "\"Please try again later.\""
+    },
+    "10208": {
+      "m_bError": null,
+      "m_ID": "10208",
+      "m_mContent": "\"Cannot leave the Clan during Clan Hunt.\""
+    },
+    "10209": {
+      "m_bError": null,
+      "m_ID": "10209",
+      "m_mContent": "\"Cannot expel members from the clan during Clan Hunt.\""
+    },
+    "10210": {
+      "m_bError": null,
+      "m_ID": "10210",
+      "m_mContent": "\"The season has not started yet. Stay tuned!\""
+    },
+    "10211": {
+      "m_bError": null,
+      "m_ID": "10211",
+      "m_mContent": "\"Invitation successful.\""
+    },
+    "10212": {
+      "m_bError": null,
+      "m_ID": "10212",
+      "m_mContent": "\"Lord not found.\""
+    },
+    "10213": {
+      "m_bError": null,
+      "m_ID": "10213",
+      "m_mContent": "\"Clan is full.\""
+    },
+    "10214": {
+      "m_bError": null,
+      "m_ID": "10214",
+      "m_mContent": "\"The Lord has already joined a Clan.\""
+    },
+    "10215": {
+      "m_bError": null,
+      "m_ID": "10215",
+      "m_mContent": "\"Application info has expired.\""
+    },
+    "10216": {
+      "m_bError": null,
+      "m_ID": "10216",
+      "m_mContent": "\"{0}s\""
+    },
+    "10217": {
+      "m_bError": null,
+      "m_ID": "10217",
+      "m_mContent": "\"You must transfer leadership before leaving the clan.\""
+    },
+    "10218": {
+      "m_bError": null,
+      "m_ID": "10218",
+      "m_mContent": "\"Clan application requirements not met.\""
+    },
+    "10219": {
+      "m_bError": null,
+      "m_ID": "10219",
+      "m_mContent": "\"Information cannot be empty.\""
+    },
+    "10220": {
+      "m_bError": null,
+      "m_ID": "10220",
+      "m_mContent": "\"No matching clan found.\""
+    },
+    "10221": {
+      "m_bError": null,
+      "m_ID": "10221",
+      "m_mContent": "\"Clan does not exist.\""
+    },
+    "10222": {
+      "m_bError": null,
+      "m_ID": "10222",
+      "m_mContent": "\"Unable to join clan.\""
+    },
+    "10223": {
+      "m_bError": null,
+      "m_ID": "10223",
+      "m_mContent": "\"Clan successfully established.\""
+    },
+    "10224": {
+      "m_bError": null,
+      "m_ID": "10224",
+      "m_mContent": "\"Clan settings updated.\""
+    },
+    "10225": {
+      "m_bError": null,
+      "m_ID": "10225",
+      "m_mContent": "\"You cannot apply for other clans within 1 hour of leaving a clan.\""
+    },
+    "10226": {
+      "m_bError": null,
+      "m_ID": "10226",
+      "m_mContent": "\"Lords cannot be invited for 1 hour after leaving Clan.\""
+    },
+    "10227": {
+      "m_bError": null,
+      "m_ID": "10227",
+      "m_mContent": "\"Leader\""
+    },
+    "10228": {
+      "m_bError": null,
+      "m_ID": "10228",
+      "m_mContent": "\"Elder\""
+    },
+    "10229": {
+      "m_bError": null,
+      "m_ID": "10229",
+      "m_mContent": "\"Member\""
+    },
+    "10230": {
+      "m_bError": null,
+      "m_ID": "10230",
+      "m_mContent": "\"{0} is now the Clan Leader.\""
+    },
+    "10231": {
+      "m_bError": null,
+      "m_ID": "10231",
+      "m_mContent": "\"Promote\""
+    },
+    "10232": {
+      "m_bError": null,
+      "m_ID": "10232",
+      "m_mContent": "\"Demote\""
+    },
+    "10233": {
+      "m_bError": null,
+      "m_ID": "10233",
+      "m_mContent": "\"Clan established.\""
+    },
+    "10234": {
+      "m_bError": null,
+      "m_ID": "10234",
+      "m_mContent": "\"Leadership passed.\""
+    },
+    "10235": {
+      "m_bError": null,
+      "m_ID": "10235",
+      "m_mContent": "\"Position changed.\""
+    },
+    "10236": {
+      "m_bError": null,
+      "m_ID": "10236",
+      "m_mContent": "\"Clan name cannot be empty.\""
+    },
+    "10237": {
+      "m_bError": null,
+      "m_ID": "10237",
+      "m_mContent": "\"Not Available\""
+    },
+    "10238": {
+      "m_bError": null,
+      "m_ID": "10238",
+      "m_mContent": "\"You can only like 1 member per day.\""
+    },
+    "10239": {
+      "m_bError": null,
+      "m_ID": "10239",
+      "m_mContent": "\"You've received likes from {0} member(s).\""
+    },
+    "10240": {
+      "m_bError": null,
+      "m_ID": "10240",
+      "m_mContent": "\"Removed successfully.\""
+    },
+    "10241": {
+      "m_bError": null,
+      "m_ID": "10241",
+      "m_mContent": "\"Today's reward claimed.\""
+    },
+    "10242": {
+      "m_bError": null,
+      "m_ID": "10242",
+      "m_mContent": "\"No Clan invitations received.\""
+    },
+    "10243": {
+      "m_bError": null,
+      "m_ID": "10243",
+      "m_mContent": "\"Not a Clan member.\""
+    },
+    "10244": {
+      "m_bError": null,
+      "m_ID": "10244",
+      "m_mContent": "\"Failed to save. Your Clan position has changed.\""
+    },
+    "10245": {
+      "m_bError": null,
+      "m_ID": "10245",
+      "m_mContent": "\"Please deploy at least 1 Vassal in each team.\""
+    },
+    "10246": {
+      "m_bError": null,
+      "m_ID": "10246",
+      "m_mContent": "\"Duelist Tier does not generate Hourly Rewards.\""
+    },
+    "10247": {
+      "m_bError": null,
+      "m_ID": "10247",
+      "m_mContent": "\"Available after unlocking Moonlight Tribute by clearing [Threads of Fate] <style=Clientmessage01>2-5</style>.\""
+    },
+    "10248": {
+      "m_bError": null,
+      "m_ID": "10248",
+      "m_mContent": "\"Vote Complete!\""
+    },
+    "10249": {
+      "m_bError": null,
+      "m_ID": "10249",
+      "m_mContent": "\"Please select Agree or Disagree.\""
+    },
+    "10300": {
+      "m_bError": null,
+      "m_ID": "10300",
+      "m_mContent": "\"Perennial Band collected.\""
+    },
+    "10301": {
+      "m_bError": null,
+      "m_ID": "10301",
+      "m_mContent": "\"No longer friends.\""
+    },
+    "10302": {
+      "m_bError": null,
+      "m_ID": "10302",
+      "m_mContent": "\"Perennial Band sent.\""
+    },
+    "10303": {
+      "m_bError": null,
+      "m_ID": "10303",
+      "m_mContent": "\"{0}d\""
+    },
+    "10304": {
+      "m_bError": null,
+      "m_ID": "10304",
+      "m_mContent": "\"{0}h\""
+    },
+    "10305": {
+      "m_bError": null,
+      "m_ID": "10305",
+      "m_mContent": "\"{0}m\""
+    },
+    "10306": {
+      "m_bError": null,
+      "m_ID": "10306",
+      "m_mContent": "\"No Perennial Band to collect or send.\""
+    },
+    "10307": {
+      "m_bError": null,
+      "m_ID": "10307",
+      "m_mContent": "\"Friend Request sent.\""
+    },
+    "10308": {
+      "m_bError": null,
+      "m_ID": "10308",
+      "m_mContent": "\"Friend List full.\""
+    },
+    "10309": {
+      "m_bError": null,
+      "m_ID": "10309",
+      "m_mContent": "\"Player's Friend List full.\""
+    },
+    "10310": {
+      "m_bError": null,
+      "m_ID": "10310",
+      "m_mContent": "\"Friend Request limit reached.\""
+    },
+    "10311": {
+      "m_bError": null,
+      "m_ID": "10311",
+      "m_mContent": "\"Player's Friend Request limit reached.\""
+    },
+    "10312": {
+      "m_bError": null,
+      "m_ID": "10312",
+      "m_mContent": "\"Player has blocked you.\""
+    },
+    "10313": {
+      "m_bError": null,
+      "m_ID": "10313",
+      "m_mContent": "\"Enter Lord UID.\""
+    },
+    "10314": {
+      "m_bError": null,
+      "m_ID": "10314",
+      "m_mContent": "\"Try again later.\""
+    },
+    "10315": {
+      "m_bError": null,
+      "m_ID": "10315",
+      "m_mContent": "\"Friend Request expired.\""
+    },
+    "10316": {
+      "m_bError": null,
+      "m_ID": "10316",
+      "m_mContent": "\"Player is on your block list.\""
+    },
+    "10317": {
+      "m_bError": null,
+      "m_ID": "10317",
+      "m_mContent": "\"Block List full.\""
+    },
+    "10318": {
+      "m_bError": null,
+      "m_ID": "10318",
+      "m_mContent": "\"Perennial Band sent.\""
+    },
+    "10319": {
+      "m_bError": null,
+      "m_ID": "10319",
+      "m_mContent": "\"Daily Gift limit reached.\""
+    },
+    "10320": {
+      "m_bError": null,
+      "m_ID": "10320",
+      "m_mContent": "\"Perennial Band received.\""
+    },
+    "10321": {
+      "m_bError": null,
+      "m_ID": "10321",
+      "m_mContent": "\"Already Friends.\""
+    },
+    "10322": {
+      "m_bError": null,
+      "m_ID": "10322",
+      "m_mContent": "\"Request submitted, awaiting confirmation.\""
+    },
+    "10323": {
+      "m_bError": null,
+      "m_ID": "10323",
+      "m_mContent": "\"No friends available.\""
+    },
+    "10324": {
+      "m_bError": null,
+      "m_ID": "10324",
+      "m_mContent": "\"No friend requests.\""
+    },
+    "10325": {
+      "m_bError": null,
+      "m_ID": "10325",
+      "m_mContent": "\"Cannot add yourself as a friend.\""
+    },
+    "10326": {
+      "m_bError": null,
+      "m_ID": "10326",
+      "m_mContent": "\"Cannot add yourself to block list.\""
+    },
+    "10327": {
+      "m_bError": null,
+      "m_ID": "10327",
+      "m_mContent": "\"Not in a Clan.\""
+    },
+    "10328": {
+      "m_bError": null,
+      "m_ID": "10328",
+      "m_mContent": "\"Clan Hunt is locked.\""
+    },
+    "10400": {
+      "m_bError": null,
+      "m_ID": "10400",
+      "m_mContent": "\"Clan Hunt not available.\""
+    },
+    "10401": {
+      "m_bError": null,
+      "m_ID": "10401",
+      "m_mContent": "\"Boss Defeated\""
+    },
+    "10402": {
+      "m_bError": null,
+      "m_ID": "10402",
+      "m_mContent": "\"No remaining Hunt attempts today.\""
+    },
+    "10403": {
+      "m_bError": null,
+      "m_ID": "10403",
+      "m_mContent": "\"This Vassal has battled today. Cannot be deployed.\""
+    },
+    "10404": {
+      "m_bError": null,
+      "m_ID": "10404",
+      "m_mContent": "\"Can only deploy 1 assist Vassal.\""
+    },
+    "10408": {
+      "m_bError": null,
+      "m_ID": "10408",
+      "m_mContent": "\"Settling Clan Hunt results. Rewards will be sent via mail.\""
+    },
+    "10420": {
+      "m_bError": null,
+      "m_ID": "10420",
+      "m_mContent": "\"Evolution unlocks at Transfusion LV. 200.\""
+    },
+    "10421": {
+      "m_bError": null,
+      "m_ID": "10421",
+      "m_mContent": "\"Max level reached. Upgrade Vassal's Spirit Siphon to increase level cap.\""
+    },
+    "10430": {
+      "m_bError": null,
+      "m_ID": "10430",
+      "m_mContent": "\"Pre-Registration Complete!\""
+    },
+    "11126": {
+      "m_bError": null,
+      "m_ID": "11126",
+      "m_mContent": "\"Upload complete!\""
+    },
+    "11127": {
+      "m_bError": null,
+      "m_ID": "11127",
+      "m_mContent": "\"You can only upload one replay file at a time.\""
+    },
+    "12001": {
+      "m_bError": null,
+      "m_ID": "12001",
+      "m_mContent": "\"Upgrade available after reaching Blood Transfusion LV. {0}.\""
+    },
+    "12002": {
+      "m_bError": null,
+      "m_ID": "12002",
+      "m_mContent": "\"No material selected.\""
+    },
+    "12003": {
+      "m_bError": null,
+      "m_ID": "12003",
+      "m_mContent": "\"Upgrade available after reaching Awakening Ritual LV. {0}.\""
+    },
+    "12004": {
+      "m_bError": null,
+      "m_ID": "12004",
+      "m_mContent": "\"Max level reached.\""
+    },
+    "12005": {
+      "m_bError": null,
+      "m_ID": "12005",
+      "m_mContent": "\"No available material.\""
+    },
+    "12006": {
+      "m_bError": null,
+      "m_ID": "12006",
+      "m_mContent": "\"Cancellation failed, please try again.\""
+    },
+    "12007": {
+      "m_bError": null,
+      "m_ID": "12007",
+      "m_mContent": "\"Cancelled\""
+    },
+    "13000": {
+      "m_bError": null,
+      "m_ID": "13000",
+      "m_mContent": "\"Complete {0} to unlock.\""
+    },
+    "13001": {
+      "m_bError": null,
+      "m_ID": "13001",
+      "m_mContent": "\"Insufficient Attempts.\""
+    },
+    "13002": {
+      "m_bError": null,
+      "m_ID": "13002",
+      "m_mContent": "\"Challenge Attempts exhausted. Please reset the Battle.\""
+    },
+    "13003": {
+      "m_bError": null,
+      "m_ID": "13003",
+      "m_mContent": "\"Please complete the current challenge first.\""
+    },
+    "13004": {
+      "m_bError": null,
+      "m_ID": "13004",
+      "m_mContent": "\"Season Settlement in progress.\""
+    },
+    "13006": {
+      "m_bError": null,
+      "m_ID": "13006",
+      "m_mContent": "\"Please complete the current challenge first.\""
+    },
+    "13007": {
+      "m_bError": null,
+      "m_ID": "13007",
+      "m_mContent": "\"This Vassal has already been used. Unable to deploy.\""
+    },
+    "13008": {
+      "m_bError": null,
+      "m_ID": "13008",
+      "m_mContent": "\"Quick Assault unlocks after the first clear (resets daily).\""
+    },
+    "13009": {
+      "m_bError": null,
+      "m_ID": "13009",
+      "m_mContent": "\"Spirit Siphon level cap reached.\""
+    },
+    "13010": {
+      "m_bError": null,
+      "m_ID": "13010",
+      "m_mContent": "\"Event ended.\""
+    },
+    "13011": {
+      "m_bError": null,
+      "m_ID": "13011",
+      "m_mContent": "\"Quick Sending unlocks after the first clear (resets daily).\""
+    },
+    "13012": {
+      "m_bError": null,
+      "m_ID": "13012",
+      "m_mContent": "\"No remaining Exorcise attempts today.\""
+    },
+    "13013": {
+      "m_bError": null,
+      "m_ID": "13013",
+      "m_mContent": "\"No Memory selected.\""
+    },
+    "13014": {
+      "m_bError": null,
+      "m_ID": "13014",
+      "m_mContent": "\"No Memory selected.\""
+    },
+    "13015": {
+      "m_bError": null,
+      "m_ID": "13015",
+      "m_mContent": "\"No changes made.\""
+    },
+    "13016": {
+      "m_bError": null,
+      "m_ID": "13016",
+      "m_mContent": "\"Changes saved!\""
+    },
+    "13017": {
+      "m_bError": null,
+      "m_ID": "13017",
+      "m_mContent": "\"No more attempts today.\""
+    },
+    "13018": {
+      "m_bError": null,
+      "m_ID": "13018",
+      "m_mContent": "\"Cannot obtain more.\""
+    },
+    "13019": {
+      "m_bError": null,
+      "m_ID": "13019",
+      "m_mContent": "\"Skill must be upgraded before reset.\""
+    },
+    "13020": {
+      "m_bError": null,
+      "m_ID": "13020",
+      "m_mContent": "\"Slot cooldown completed.\""
+    },
+    "13021": {
+      "m_bError": null,
+      "m_ID": "13021",
+      "m_mContent": "\"#N/A\""
+    },
+    "13022": {
+      "m_bError": null,
+      "m_ID": "13022",
+      "m_mContent": "\"Pacts Successfully Extended\""
+    },
+    "13023": {
+      "m_bError": null,
+      "m_ID": "13023",
+      "m_mContent": "\"Pact has exceeded 180 days. Unable to purchase.\""
+    },
+    "13024": {
+      "m_bError": null,
+      "m_ID": "13024",
+      "m_mContent": "\"Pact has exceeded 180 days. Unable to use.\""
+    },
+    "20000": {
+      "m_bError": null,
+      "m_ID": "20000",
+      "m_mContent": "\"Deploy your lineup!\""
+    },
+    "20001": {
+      "m_bError": null,
+      "m_ID": "20001",
+      "m_mContent": "\"Settings\""
+    },
+    "20002": {
+      "m_bError": null,
+      "m_ID": "20002",
+      "m_mContent": "\"Stage progress won't be saved if you quit now. \nAre you sure you want to quit?\""
+    },
+    "20003": {
+      "m_bError": null,
+      "m_ID": "20003",
+      "m_mContent": "\"Insufficient Bloodsoul.\""
+    },
+    "20005": {
+      "m_bError": null,
+      "m_ID": "20005",
+      "m_mContent": "\"Confirm\""
+    },
+    "20006": {
+      "m_bError": null,
+      "m_ID": "20006",
+      "m_mContent": "\"Notice\""
+    },
+    "20007": {
+      "m_bError": null,
+      "m_ID": "20007",
+      "m_mContent": "\"No characters selected. Unable to start battle.\""
+    },
+    "20008": {
+      "m_bError": null,
+      "m_ID": "20008",
+      "m_mContent": "\"No Bloodsouls consumed, no need to reset.\""
+    },
+    "20009": {
+      "m_bError": null,
+      "m_ID": "20009",
+      "m_mContent": "\"Extra Sermon attempts have reached today's limit!\""
+    },
+    "20010": {
+      "m_bError": null,
+      "m_ID": "20010",
+      "m_mContent": "\"No items to claim yet. Please check back later.\""
+    },
+    "20011": {
+      "m_bError": null,
+      "m_ID": "20011",
+      "m_mContent": "\"Final adjustments to character positions.\""
+    },
+    "20012": {
+      "m_bError": null,
+      "m_ID": "20012",
+      "m_mContent": "\"Battle verification error. Tap confirm to exit.\""
+    },
+    "20013": {
+      "m_bError": null,
+      "m_ID": "20013",
+      "m_mContent": "\"Maximum quantity reached.\""
+    },
+    "20014": {
+      "m_bError": null,
+      "m_ID": "20014",
+      "m_mContent": "\"Minimum quantity reached.\""
+    },
+    "20015": {
+      "m_bError": null,
+      "m_ID": "20015",
+      "m_mContent": "\"Disconnection error. Return to the last unfinished battle?\""
+    },
+    "20016": {
+      "m_bError": null,
+      "m_ID": "20016",
+      "m_mContent": "\"Must deploy {0}\""
+    },
+    "20017": {
+      "m_bError": null,
+      "m_ID": "20017",
+      "m_mContent": "\"Some Vassals cannot be deployed.\""
+    },
+    "20018": {
+      "m_bError": null,
+      "m_ID": "20018",
+      "m_mContent": "\"You must deploy a Vassal to save the lineup.\""
+    },
+    "20019": {
+      "m_bError": null,
+      "m_ID": "20019",
+      "m_mContent": "\"Function currently unavailable.\""
+    },
+    "20020": {
+      "m_bError": null,
+      "m_ID": "20020",
+      "m_mContent": "\"Deployed\""
+    },
+    "20021": {
+      "m_bError": null,
+      "m_ID": "20021",
+      "m_mContent": "\"Timeout error. Now exiting.\""
+    },
+    "20022": {
+      "m_bError": null,
+      "m_ID": "20022",
+      "m_mContent": "\"The season has ended. Now Exiting.\""
+    },
+    "20023": {
+      "m_bError": null,
+      "m_ID": "20023",
+      "m_mContent": "\"Battle error. Tap OK to exit.\""
+    },
+    "20024": {
+      "m_bError": null,
+      "m_ID": "20024",
+      "m_mContent": "\"This Vassal cannot be deployed.\""
+    },
+    "20025": {
+      "m_bError": null,
+      "m_ID": "20025",
+      "m_mContent": "\"UID copied successfully.\""
+    },
+    "20026": {
+      "m_bError": null,
+      "m_ID": "20026",
+      "m_mContent": "\"Only <color=#A38125>{0}</color> Vassals can be deployed.\""
+    },
+    "20027": {
+      "m_bError": null,
+      "m_ID": "20027",
+      "m_mContent": "\"Cannot deploy the same Vassal.\""
+    },
+    "20028": {
+      "m_bError": null,
+      "m_ID": "20028",
+      "m_mContent": "\"Initial Hand Edit invalid. Please reconfigure.\""
+    },
+    "20034": {
+      "m_bError": null,
+      "m_ID": "20034",
+      "m_mContent": "\"Can only reset after advancing beyond 1.\""
+    },
+    "20035": {
+      "m_bError": null,
+      "m_ID": "20035",
+      "m_mContent": "\"The skill cannot be cast.\""
+    },
+    "20036": {
+      "m_bError": null,
+      "m_ID": "20036",
+      "m_mContent": "\"[Boutique Shop - Moon Tear] Under Development\""
+    },
+    "20037": {
+      "m_bError": null,
+      "m_ID": "20037",
+      "m_mContent": "\"Locked.\""
+    },
+    "20038": {
+      "m_bError": null,
+      "m_ID": "20038",
+      "m_mContent": "\"Unlocked successfully.\""
+    },
+    "20039": {
+      "m_bError": null,
+      "m_ID": "20039",
+      "m_mContent": "\"No Equipment to unequip.\""
+    },
+    "20040": {
+      "m_bError": null,
+      "m_ID": "20040",
+      "m_mContent": "\"No equipment available.\""
+    },
+    "20041": {
+      "m_bError": null,
+      "m_ID": "20041",
+      "m_mContent": "\"No claimable rewards.\""
+    },
+    "20042": {
+      "m_bError": null,
+      "m_ID": "20042",
+      "m_mContent": "\"Insufficient materials.\""
+    },
+    "20043": {
+      "m_bError": null,
+      "m_ID": "20043",
+      "m_mContent": "\"Auto-Select can select equipment up to Tier {0}.\""
+    },
+    "20044": {
+      "m_bError": null,
+      "m_ID": "20044",
+      "m_mContent": "\"Max level.\""
+    },
+    "20050": {
+      "m_bError": null,
+      "m_ID": "20050",
+      "m_mContent": "\"Unlocking requirements not met.\""
+    },
+    "20051": {
+      "m_bError": null,
+      "m_ID": "20051",
+      "m_mContent": "\"Observation requirement not met.\""
+    },
+    "20052": {
+      "m_bError": null,
+      "m_ID": "20052",
+      "m_mContent": "\"Observer requirement not met.\""
+    },
+    "20053": {
+      "m_bError": null,
+      "m_ID": "20053",
+      "m_mContent": "\"Insufficient Solis\""
+    },
+    "20054": {
+      "m_bError": null,
+      "m_ID": "20054",
+      "m_mContent": "\"Unable to use this preset Lineup.\""
+    },
+    "20055": {
+      "m_bError": null,
+      "m_ID": "20055",
+      "m_mContent": "\"While Blood Moon is active, DMG dealt is increased by 25%, and the Bloodsoul cost for each Ultimate is reduced by 1.\""
+    },
+    "20100": {
+      "m_bError": null,
+      "m_ID": "20100",
+      "m_mContent": "\"Level purchase successful.\""
+    },
+    "20101": {
+      "m_bError": null,
+      "m_ID": "20101",
+      "m_mContent": "\"No claimable rewards.\""
+    },
+    "20102": {
+      "m_bError": null,
+      "m_ID": "20102",
+      "m_mContent": "\"No claimable rewards.\""
+    },
+    "21002": {
+      "m_bError": null,
+      "m_ID": "21002",
+      "m_mContent": "\"Abyss being prepared.\""
+    },
+    "21003": {
+      "m_bError": null,
+      "m_ID": "21003",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>8-1</style> to unlock.\""
+    },
+    "21006": {
+      "m_bError": null,
+      "m_ID": "21006",
+      "m_mContent": "\"Currently unavailable\""
+    },
+    "21007": {
+      "m_bError": null,
+      "m_ID": "21007",
+      "m_mContent": "\"Chapter in progress.\""
+    },
+    "21008": {
+      "m_bError": null,
+      "m_ID": "21008",
+      "m_mContent": "\"Cannot deploy duplicate Vassals.\""
+    },
+    "30001": {
+      "m_bError": null,
+      "m_ID": "30001",
+      "m_mContent": "\"Equipped\""
+    },
+    "30002": {
+      "m_bError": null,
+      "m_ID": "30002",
+      "m_mContent": "\"Please select an equipment.\""
+    },
+    "30003": {
+      "m_bError": null,
+      "m_ID": "30003",
+      "m_mContent": "\"There is nothing equipped.\""
+    },
+    "30004": {
+      "m_bError": null,
+      "m_ID": "30004",
+      "m_mContent": "\"Insufficient items.\""
+    },
+    "30005": {
+      "m_bError": null,
+      "m_ID": "30005",
+      "m_mContent": "\"City module under preparation.\""
+    },
+    "30006": {
+      "m_bError": null,
+      "m_ID": "30006",
+      "m_mContent": "\"Chapter locked. Complete the previous chapter to unlock.\""
+    },
+    "30007": {
+      "m_bError": null,
+      "m_ID": "30007",
+      "m_mContent": "\"No Vassals deployed.\""
+    },
+    "30008": {
+      "m_bError": null,
+      "m_ID": "30008",
+      "m_mContent": "\"Current stage has been cleared.\""
+    },
+    "30009": {
+      "m_bError": null,
+      "m_ID": "30009",
+      "m_mContent": "\"Clear [Threads of Fate - Normal] <style=Clientmessage01>Chapter 04</style> to unlock Hard Mode.\""
+    },
+    "30010": {
+      "m_bError": null,
+      "m_ID": "30010",
+      "m_mContent": "\"Stage Locked\""
+    },
+    "30011": {
+      "m_bError": null,
+      "m_ID": "30011",
+      "m_mContent": "\"Complete the current chapter to unlock the next one.\""
+    },
+    "30012": {
+      "m_bError": null,
+      "m_ID": "30012",
+      "m_mContent": "\"Must use different name.\""
+    },
+    "30013": {
+      "m_bError": null,
+      "m_ID": "30013",
+      "m_mContent": "\"Contains offensive words.\""
+    },
+    "30014": {
+      "m_bError": null,
+      "m_ID": "30014",
+      "m_mContent": "\"Event ended.\""
+    },
+    "30015": {
+      "m_bError": null,
+      "m_ID": "30015",
+      "m_mContent": "\"Clear [Threads of Fate] %s to unlock.\""
+    },
+    "30016": {
+      "m_bError": null,
+      "m_ID": "30016",
+      "m_mContent": "\"Reach Lord Level %s to unlock.\""
+    },
+    "30017": {
+      "m_bError": null,
+      "m_ID": "30017",
+      "m_mContent": "\"Complete Tutorial %s to unlock.\""
+    },
+    "30018": {
+      "m_bError": null,
+      "m_ID": "30018",
+      "m_mContent": "\"Must contain letters.\""
+    },
+    "30019": {
+      "m_bError": null,
+      "m_ID": "30019",
+      "m_mContent": "\"Please select a Vassal.\""
+    },
+    "30020": {
+      "m_bError": null,
+      "m_ID": "30020",
+      "m_mContent": "\"Cannot start with a space.\""
+    },
+    "30021": {
+      "m_bError": null,
+      "m_ID": "30021",
+      "m_mContent": "\"Insufficient skill upgrade materials.\""
+    },
+    "30022": {
+      "m_bError": null,
+      "m_ID": "30022",
+      "m_mContent": "\"Max Equipment level reached.\""
+    },
+    "30023": {
+      "m_bError": null,
+      "m_ID": "30023",
+      "m_mContent": "\"Choose materials for enhancement.\""
+    },
+    "30024": {
+      "m_bError": null,
+      "m_ID": "30024",
+      "m_mContent": "\"Clear Chapter {0}.\""
+    },
+    "30025": {
+      "m_bError": null,
+      "m_ID": "30025",
+      "m_mContent": "\"Item has expired.\""
+    },
+    "30026": {
+      "m_bError": null,
+      "m_ID": "30026",
+      "m_mContent": "\"Insufficient Herald Attempts.\""
+    },
+    "30027": {
+      "m_bError": null,
+      "m_ID": "30027",
+      "m_mContent": "\"Cannot remove required Vassals.\""
+    },
+    "30028": {
+      "m_bError": null,
+      "m_ID": "30028",
+      "m_mContent": "\"No valid target for Ultimate.\""
+    },
+    "30029": {
+      "m_bError": null,
+      "m_ID": "30029",
+      "m_mContent": "\"Cannot move this Vassal.\""
+    },
+    "40000": {
+      "m_bError": null,
+      "m_ID": "40000",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 20 Vassals.\""
+    },
+    "40001": {
+      "m_bError": null,
+      "m_ID": "40001",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 40 Vassals.\""
+    },
+    "40002": {
+      "m_bError": null,
+      "m_ID": "40002",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 60 Vassals.\""
+    },
+    "40003": {
+      "m_bError": null,
+      "m_ID": "40003",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 80 Vassals.\""
+    },
+    "40004": {
+      "m_bError": null,
+      "m_ID": "40004",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 100 Vassals.\""
+    },
+    "40005": {
+      "m_bError": null,
+      "m_ID": "40005",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 120 Vassals.\""
+    },
+    "40006": {
+      "m_bError": null,
+      "m_ID": "40006",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 140 Vassals.\""
+    },
+    "40007": {
+      "m_bError": null,
+      "m_ID": "40007",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 160 Vassals.\""
+    },
+    "40008": {
+      "m_bError": null,
+      "m_ID": "40008",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 180 Vassals.\""
+    },
+    "40009": {
+      "m_bError": null,
+      "m_ID": "40009",
+      "m_mContent": "\"Upgrade available after obtaining 5 LV. 200 Vassals.\""
+    },
+    "40010": {
+      "m_bError": null,
+      "m_ID": "40010",
+      "m_mContent": "\"Entry limit exceeded.\""
+    },
+    "40011": {
+      "m_bError": null,
+      "m_ID": "40011",
+      "m_mContent": "\"Material Raid stage uncleared today.\""
+    },
+    "40012": {
+      "m_bError": null,
+      "m_ID": "40012",
+      "m_mContent": "\"Character limit exceeded.\""
+    },
+    "40013": {
+      "m_bError": null,
+      "m_ID": "40013",
+      "m_mContent": "\"Insufficient items for Embrace.\""
+    },
+    "40014": {
+      "m_bError": null,
+      "m_ID": "40014",
+      "m_mContent": "\"New Season soon.\""
+    },
+    "40015": {
+      "m_bError": null,
+      "m_ID": "40015",
+      "m_mContent": "\"Daily purchase limit reached.\""
+    },
+    "40016": {
+      "m_bError": null,
+      "m_ID": "40016",
+      "m_mContent": "\"Insufficient currency.\""
+    },
+    "40017": {
+      "m_bError": null,
+      "m_ID": "40017",
+      "m_mContent": "\"Refreshing too frequently. Please wait.\""
+    },
+    "40018": {
+      "m_bError": null,
+      "m_ID": "40018",
+      "m_mContent": "\"Lineup saved.\""
+    },
+    "40019": {
+      "m_bError": null,
+      "m_ID": "40019",
+      "m_mContent": "\"Configuration currently not supported on your device.\""
+    },
+    "40020": {
+      "m_bError": null,
+      "m_ID": "40020",
+      "m_mContent": "\"Switched to {0} voice pack.\""
+    },
+    "40021": {
+      "m_bError": null,
+      "m_ID": "40021",
+      "m_mContent": "\"You can't uninstall a voice pack in use.\""
+    },
+    "40022": {
+      "m_bError": null,
+      "m_ID": "40022",
+      "m_mContent": "\"Redeem successful. Please check your in-game mail.\""
+    },
+    "40023": {
+      "m_bError": null,
+      "m_ID": "40023",
+      "m_mContent": "\"Redeem failed. Please check the code and try again.\""
+    },
+    "40024": {
+      "m_bError": null,
+      "m_ID": "40024",
+      "m_mContent": "\"Pool not yet open.\""
+    },
+    "40025": {
+      "m_bError": null,
+      "m_ID": "40025",
+      "m_mContent": "\"Season ended.\""
+    },
+    "40026": {
+      "m_bError": null,
+      "m_ID": "40026",
+      "m_mContent": "\"Ranking not available.\""
+    },
+    "40027": {
+      "m_bError": null,
+      "m_ID": "40027",
+      "m_mContent": "\"Insufficient Spirits.\""
+    },
+    "40028": {
+      "m_bError": null,
+      "m_ID": "40028",
+      "m_mContent": "\"Insufficient Transfusion Level.\""
+    },
+    "40029": {
+      "m_bError": null,
+      "m_ID": "40029",
+      "m_mContent": "\"Countdown ended. This round will not count.\""
+    },
+    "40030": {
+      "m_bError": null,
+      "m_ID": "40030",
+      "m_mContent": "\"Removed Successfully\""
+    },
+    "40031": {
+      "m_bError": null,
+      "m_ID": "40031",
+      "m_mContent": "\"Equipped Successfully\""
+    },
+    "40032": {
+      "m_bError": null,
+      "m_ID": "40032",
+      "m_mContent": "\"<style=Highlight>Affinity</style> limit reached. <style=Positive>Spirit Siphon</style> to increase limit.\""
+    },
+    "40033": {
+      "m_bError": null,
+      "m_ID": "40033",
+      "m_mContent": "\"<style=Highlight>Affinity</style> limit reached.\""
+    },
+    "40034": {
+      "m_bError": null,
+      "m_ID": "40034",
+      "m_mContent": "\"Please select the time of the memory.\""
+    },
+    "40035": {
+      "m_bError": null,
+      "m_ID": "40035",
+      "m_mContent": "\"Clear <style=Highlight>{0}</style> to obtain a Memento.\""
+    },
+    "40036": {
+      "m_bError": null,
+      "m_ID": "40036",
+      "m_mContent": "\"Unlocking Requirement: Clear <style=Highlight>{0}</style>.\""
+    },
+    "40037": {
+      "m_bError": null,
+      "m_ID": "40037",
+      "m_mContent": "\"Quick Clear unlocks after first victory.\""
+    },
+    "40038": {
+      "m_bError": null,
+      "m_ID": "40038",
+      "m_mContent": "\"Insufficient attempts.\""
+    },
+    "40039": {
+      "m_bError": null,
+      "m_ID": "40039",
+      "m_mContent": "\"Requirement: Clear <style=Highlight>{0}</style>, reaching a time of <style=Highlight>{1}</style>.\""
+    },
+    "40040": {
+      "m_bError": null,
+      "m_ID": "40040",
+      "m_mContent": "\"Insufficient Attempts.\""
+    },
+    "40041": {
+      "m_bError": null,
+      "m_ID": "40041",
+      "m_mContent": "\"No Claimable Rewards\""
+    },
+    "40042": {
+      "m_bError": null,
+      "m_ID": "40042",
+      "m_mContent": "\"Purchase bundle to claim.\""
+    },
+    "40043": {
+      "m_bError": null,
+      "m_ID": "40043",
+      "m_mContent": "\"Cannot clear stage repeatedly.\""
+    },
+    "40044": {
+      "m_bError": null,
+      "m_ID": "40044",
+      "m_mContent": "\"Unlocking Requirement: Time reaches <style=Highlight>{0}</style>.\""
+    },
+    "40045": {
+      "m_bError": null,
+      "m_ID": "40045",
+      "m_mContent": "\"After <style=Highlight>{0}</style>, obtain Memento <style=Highlight>{1}</style> and read the required memory to enter.\""
+    },
+    "40046": {
+      "m_bError": null,
+      "m_ID": "40046",
+      "m_mContent": "\"After <style=Highlight>{0}</style>, collect all other memory fragments to obtain Memento <style=Highlight>Torn Pages</style> and enter.\""
+    },
+    "40047": {
+      "m_bError": null,
+      "m_ID": "40047",
+      "m_mContent": "\"Advance [Threads of Fate] to reveal clues.\""
+    },
+    "40048": {
+      "m_bError": null,
+      "m_ID": "40048",
+      "m_mContent": "\"No Honor Statues available to view!\""
+    },
+    "40049": {
+      "m_bError": null,
+      "m_ID": "40049",
+      "m_mContent": "\"Try another direction.\""
+    },
+    "40050": {
+      "m_bError": null,
+      "m_ID": "40050",
+      "m_mContent": "\"Vassal pinned to top.\""
+    },
+    "41001": {
+      "m_bError": null,
+      "m_ID": "41001",
+      "m_mContent": "\"Please select a Catalyst first.\""
+    },
+    "41002": {
+      "m_bError": null,
+      "m_ID": "41002",
+      "m_mContent": "\"Select an effect.\""
+    },
+    "41003": {
+      "m_bError": null,
+      "m_ID": "41003",
+      "m_mContent": "\"Conditions not met. Cannot select.\""
+    },
+    "41004": {
+      "m_bError": null,
+      "m_ID": "41004",
+      "m_mContent": "\"This area is not unlocked!\""
+    },
+    "41005": {
+      "m_bError": null,
+      "m_ID": "41005",
+      "m_mContent": "\"Please select an area first!\""
+    },
+    "41006": {
+      "m_bError": null,
+      "m_ID": "41006",
+      "m_mContent": "\"Exploration of the current area completed.\""
+    },
+    "41007": {
+      "m_bError": null,
+      "m_ID": "41007",
+      "m_mContent": "\"Continue exploring other areas for more rewards.\""
+    },
+    "41008": {
+      "m_bError": null,
+      "m_ID": "41008",
+      "m_mContent": "\"Final area cleared.\""
+    },
+    "41009": {
+      "m_bError": null,
+      "m_ID": "41009",
+      "m_mContent": "\"Insufficient Blood Power for Quick Battle.\""
+    },
+    "41010": {
+      "m_bError": null,
+      "m_ID": "41010",
+      "m_mContent": "\"Complete the previous Chamber first!\""
+    },
+    "41011": {
+      "m_bError": null,
+      "m_ID": "41011",
+      "m_mContent": "\"Clear Previous Chamber First!\""
+    },
+    "41012": {
+      "m_bError": null,
+      "m_ID": "41012",
+      "m_mContent": "\"You can't select any more.\""
+    },
+    "41013": {
+      "m_bError": null,
+      "m_ID": "41013",
+      "m_mContent": "\"No Catalyst selected. Please select one!\""
+    },
+    "42001": {
+      "m_bError": null,
+      "m_ID": "42001",
+      "m_mContent": "\"Altar of Invocation already full!\""
+    },
+    "42002": {
+      "m_bError": null,
+      "m_ID": "42002",
+      "m_mContent": "\"Altar of Invocation settings saved.\""
+    },
+    "43001": {
+      "m_bError": null,
+      "m_ID": "43001",
+      "m_mContent": "\"System temporarily under maintenance. Please check announcements for more information!\""
+    },
+    "44001": {
+      "m_bError": null,
+      "m_ID": "44001",
+      "m_mContent": "\"Objective not yet complete.\""
+    },
+    "45001": {
+      "m_bError": null,
+      "m_ID": "45001",
+      "m_mContent": "\"Missions refreshed.\""
+    },
+    "45002": {
+      "m_bError": null,
+      "m_ID": "45002",
+      "m_mContent": "\"Mission has been cancelled.\""
+    },
+    "45003": {
+      "m_bError": null,
+      "m_ID": "45003",
+      "m_mContent": "\"Upgrade Hall of Honor to unlock Quick Dispatch.\""
+    },
+    "45004": {
+      "m_bError": null,
+      "m_ID": "45004",
+      "m_mContent": "\"Upgrade Hall of Honor to unlock Quick Claim.\""
+    },
+    "45005": {
+      "m_bError": null,
+      "m_ID": "45005",
+      "m_mContent": "\"No Missions available for Quick Dispatch.\""
+    },
+    "45006": {
+      "m_bError": null,
+      "m_ID": "45006",
+      "m_mContent": "\"Upgrade [Hall of Honor] to unlock Quick Dispatch.\""
+    },
+    "45007": {
+      "m_bError": null,
+      "m_ID": "45007",
+      "m_mContent": "\"No eligible Vassals.\""
+    },
+    "45008": {
+      "m_bError": null,
+      "m_ID": "45008",
+      "m_mContent": "\"Please deploy Vassals.\""
+    },
+    "45009": {
+      "m_bError": null,
+      "m_ID": "45009",
+      "m_mContent": "\"Please select a Mission to start.\""
+    },
+    "45010": {
+      "m_bError": null,
+      "m_ID": "45010",
+      "m_mContent": "\"Mission complete. Please claim your reward.\""
+    },
+    "45011": {
+      "m_bError": null,
+      "m_ID": "45011",
+      "m_mContent": "\"{0}-{1}\""
+    },
+    "45012": {
+      "m_bError": null,
+      "m_ID": "45012",
+      "m_mContent": "\"No Mission Rewards available.\""
+    },
+    "45013": {
+      "m_bError": null,
+      "m_ID": "45013",
+      "m_mContent": "\"No Missions available for refresh.\""
+    },
+    "45014": {
+      "m_bError": null,
+      "m_ID": "45014",
+      "m_mContent": "\"Field cannot be empty.\""
+    },
+    "46001": {
+      "m_bError": null,
+      "m_ID": "46001",
+      "m_mContent": "\"This Artifact has been equipped by the maximum number of Vassals.\""
+    },
+    "47001": {
+      "m_bError": null,
+      "m_ID": "47001",
+      "m_mContent": "\"Please select a Vassal to participate in the Meeting.\""
+    },
+    "47002": {
+      "m_bError": null,
+      "m_ID": "47002",
+      "m_mContent": "\"Today's Meeting has already been held. Please return tomorrow.\""
+    },
+    "47003": {
+      "m_bError": null,
+      "m_ID": "47003",
+      "m_mContent": "\"No Vassal selected.\""
+    },
+    "47004": {
+      "m_bError": null,
+      "m_ID": "47004",
+      "m_mContent": "\"Same Vassal invited. Cannot select both {1} and {0}.\""
+    },
+    "48001": {
+      "m_bError": null,
+      "m_ID": "48001",
+      "m_mContent": "\"No Candles available. Candles refresh at 4:00 AM every Monday.\""
+    },
+    "48002": {
+      "m_bError": null,
+      "m_ID": "48002",
+      "m_mContent": "\"No Starlit Memoir available.\""
+    },
+    "48003": {
+      "m_bError": null,
+      "m_ID": "48003",
+      "m_mContent": "\"Entering [{0}] requires Candles. Begin the story?\""
+    },
+    "48004": {
+      "m_bError": null,
+      "m_ID": "48004",
+      "m_mContent": "\"Narrator\""
+    },
+    "49001": {
+      "m_bError": null,
+      "m_ID": "49001",
+      "m_mContent": "\"Cannot Revert, tile occupied.\""
+    },
+    "49002": {
+      "m_bError": null,
+      "m_ID": "49002",
+      "m_mContent": "\"No valid targets in range.\""
+    },
+    "49003": {
+      "m_bError": null,
+      "m_ID": "49003",
+      "m_mContent": "\"No actions to undo.\""
+    },
+    "49004": {
+      "m_bError": null,
+      "m_ID": "49004",
+      "m_mContent": "\"Skill has already been used this round.\""
+    },
+    "49005": {
+      "m_bError": null,
+      "m_ID": "49005",
+      "m_mContent": "\"No remaining uses.\""
+    },
+    "49006": {
+      "m_bError": null,
+      "m_ID": "49006",
+      "m_mContent": "\"You need a key to open this chest!\""
+    },
+    "49007": {
+      "m_bError": null,
+      "m_ID": "49007",
+      "m_mContent": "\"No stamina left. Cannot move!\""
+    },
+    "50001": {
+      "m_bError": null,
+      "m_ID": "50001",
+      "m_mContent": "\"Bound successfully!\""
+    },
+    "51001": {
+      "m_bError": null,
+      "m_ID": "51001",
+      "m_mContent": "\"Successfully saved!\""
+    },
+    "51002": {
+      "m_bError": null,
+      "m_ID": "51002",
+      "m_mContent": "\"Content unclaimed, cannot save.\""
+    },
+    "51003": {
+      "m_bError": null,
+      "m_ID": "51003",
+      "m_mContent": "\"No changes made.\""
+    },
+    "51004": {
+      "m_bError": null,
+      "m_ID": "51004",
+      "m_mContent": "\"No preview available.\""
+    },
+    "52001": {
+      "m_bError": null,
+      "m_ID": "52001",
+      "m_mContent": "\"The lineup cannot be copied as not all Vassals have been obtained.\""
+    },
+    "52003": {
+      "m_bError": null,
+      "m_ID": "52003",
+      "m_mContent": "\"Purchase the previous tier Bundle first.\""
+    },
+    "52004": {
+      "m_bError": null,
+      "m_ID": "52004",
+      "m_mContent": "\"Please select the desired items for your Custom Package before proceeding with the purchase.\""
+    },
+    "52005": {
+      "m_bError": null,
+      "m_ID": "52005",
+      "m_mContent": "\"Save successful!\""
+    },
+    "52006": {
+      "m_bError": null,
+      "m_ID": "52006",
+      "m_mContent": "\"Order(s) pending. Try again later or contact customer service.\""
+    },
+    "53001": {
+      "m_bError": null,
+      "m_ID": "53001",
+      "m_mContent": "\"Insufficient materials. Cannot activate.\""
+    },
+    "53002": {
+      "m_bError": null,
+      "m_ID": "53002",
+      "m_mContent": "\"Under development. Please stay tuned!\""
+    },
+    "53003": {
+      "m_bError": null,
+      "m_ID": "53003",
+      "m_mContent": "\"Stage locked.\""
+    },
+    "54001": {
+      "m_bError": null,
+      "m_ID": "54001",
+      "m_mContent": "\"No Rewards Available\""
+    },
+    "54002": {
+      "m_bError": null,
+      "m_ID": "54002",
+      "m_mContent": "\"Stage Locked\""
+    },
+    "54003": {
+      "m_bError": null,
+      "m_ID": "54003",
+      "m_mContent": "\"Challenge to unlock the ranking.\""
+    },
+    "54004": {
+      "m_bError": null,
+      "m_ID": "54004",
+      "m_mContent": "\"Save successful.\""
+    },
+    "54005": {
+      "m_bError": null,
+      "m_ID": "54005",
+      "m_mContent": "\"Changes unsaved.\""
+    },
+    "55001": {
+      "m_bError": null,
+      "m_ID": "55001",
+      "m_mContent": "\"Coming soon. Please stay tuned!\""
+    },
+    "56001": {
+      "m_bError": null,
+      "m_ID": "56001",
+      "m_mContent": "\"Payment Cancelled\""
+    },
+    "56002": {
+      "m_bError": null,
+      "m_ID": "56002",
+      "m_mContent": "\"Failed to Retrieve Item Details\""
+    },
+    "56003": {
+      "m_bError": null,
+      "m_ID": "56003",
+      "m_mContent": "\"Item Not Found\""
+    },
+    "56004": {
+      "m_bError": null,
+      "m_ID": "56004",
+      "m_mContent": "\"Event Unavailable\""
+    },
+    "56005": {
+      "m_bError": null,
+      "m_ID": "56005",
+      "m_mContent": "\"All rewards claimed, event closing.\""
+    },
+    "99999": {
+      "m_bError": null,
+      "m_ID": "99999",
+      "m_mContent": "\"Unlocked by default.\""
+    }
+  },
+  "status": "processed_438_items"
+}

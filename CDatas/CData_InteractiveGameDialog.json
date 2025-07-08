@@ -1,0 +1,19 @@
+{
+  "className": "CData_InteractiveGameDialog",
+  "timestamp": "2025-07-08T13:35:35.064Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_PicturePath": "\"E30001_Detective01\"",
+      "m_ButtonGroupName": "\"E30001_Detective01Bottom\"",
+      "m_StartDialogue": "[\"E_30001_Clip06_24\"]",
+      "m_EndDialogue": "[\"E_30001_Clip06_65\",\"E_30001_Clip06_66\"]",
+      "m_SpaceDialogue": "[\"E_30001_Clip03_07\"]",
+      "m_FinishDialogue": "[\"E_30001_Clip03_07\"]",
+      "m_Scale": "[[\"01\",\"100\",\"100\"],[\"02\",\"400\",\"300\"],[\"03\",\"400\",\"400\"],[\"04\",\"200\",\"200\"]]",
+      "m_PlayDialogue": "[[\"01\",\"0\",\"E_30001_Clip06_38\"],[\"02\",\"0\",\"E_30001_Clip06_39\",\"E_30001_Clip06_40\",\"E_30001_Clip06_41\",\"E_30001_Clip06_42\",\"E_30001_Clip06_43\",\"E_30001_Clip06_44\",\"E_30001_Clip06_45\"],[\"03\",\"0\",\"E_30001_Clip06_46\",\"E_30001_Clip06_47\",\"E_30001_Clip06_48\",\"E_30001_Clip06_49\",\"E_30001_Clip06_50\",\"E_30001_Clip06_51\",\"E_30001_Clip06_52\",\"E_30001_Clip06_53\",\"E_30001_Clip06_54\"],[\"04\",\"1\",\"E_30001_Clip06_66\",\"E_30001_Clip06_67\"]]"
+    }
+  },
+  "status": "processed_1_items"
+}

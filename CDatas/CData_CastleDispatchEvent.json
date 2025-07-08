@@ -1,0 +1,1859 @@
+{
+  "className": "CData_CastleDispatchEvent",
+  "timestamp": "2025-07-08T13:35:26.094Z",
+  "data": {
+    "10000": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,2]]",
+          "m_Reward": "[[101,10]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,2]]",
+          "m_Reward": "[[101,10]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,2]]",
+          "m_Reward": "[[101,10]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,2]]",
+          "m_Reward": "[[101,10]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,2]]",
+          "m_Reward": "[[101,10]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "6",
+          "m_Sort": "2",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "7",
+          "m_Sort": "2",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "8",
+          "m_Sort": "2",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "9",
+          "m_Sort": "2",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "11",
+          "m_Sort": "3",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "12",
+          "m_Sort": "3",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "13",
+          "m_Sort": "3",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "14",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,2]]",
+          "m_Reward": "[[800001,1]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "15",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,2]]",
+          "m_Reward": "[[800001,1]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "16",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,2]]",
+          "m_Reward": "[[1101,5]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "17",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,2]]",
+          "m_Reward": "[[1101,5]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "18",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,2]]",
+          "m_Reward": "[[1101,5]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "19",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,2]]",
+          "m_Reward": "[[1101,5]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "10000",
+          "m_EventID": "20",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,2]]",
+          "m_Reward": "[[1101,5]]"
+        }
+      }
+    },
+    "20000": {
+      "_type": "nested_dictionary",
+      "_count": 35,
+      "_processed": 35,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[3,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[4,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[2,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[4,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "6",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[2,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "7",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[3,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "8",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "9",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "11",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "12",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "13",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "14",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "15",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "16",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "17",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "18",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "19",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "20",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "21",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "22",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "23",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "24",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "25",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "26",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "27",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "28",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "29",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "30",
+          "m_Sort": "4",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[40001,1]]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "31",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "32",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "33",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "34",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_GroupID": "20000",
+          "m_EventID": "35",
+          "m_Sort": "5",
+          "m_Grade": "1",
+          "m_TimeMin": "30",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[40021,1]]"
+        }
+      }
+    },
+    "21000": {
+      "_type": "nested_dictionary",
+      "_count": 21,
+      "_processed": 21,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[3,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[4,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[2,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[4,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "6",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[2,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "7",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[3,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "8",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "9",
+          "m_Sort": "1",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[101,15]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "11",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "12",
+          "m_Sort": "2",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[800001,2]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "13",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "14",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "15",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[0,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "16",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "17",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[2,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "18",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "19",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[3,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "20",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_GroupID": "21000",
+          "m_EventID": "21",
+          "m_Sort": "3",
+          "m_Grade": "2",
+          "m_TimeMin": "60",
+          "m_Slot": "[[4,3],[0,2]]",
+          "m_Reward": "[[1101,10]]"
+        }
+      }
+    },
+    "30000": {
+      "_type": "nested_dictionary",
+      "_count": 35,
+      "_processed": 35,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "6",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "7",
+          "m_Sort": "1",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[101,20]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "8",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "9",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "11",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "12",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "13",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "14",
+          "m_Sort": "2",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "15",
+          "m_Sort": "3",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "16",
+          "m_Sort": "3",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "17",
+          "m_Sort": "3",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "18",
+          "m_Sort": "3",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "19",
+          "m_Sort": "4",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[800001,3]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "20",
+          "m_Sort": "4",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[800001,3]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "21",
+          "m_Sort": "4",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[800001,3]]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "22",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "23",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "24",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "25",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "26",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "27",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "28",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "29",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "30",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "31",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "32",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "33",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,3]]",
+          "m_Reward": "[[1101,15]]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "34",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[50001,1]]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_GroupID": "30000",
+          "m_EventID": "35",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,3]]",
+          "m_Reward": "[[50001,1]]"
+        }
+      }
+    },
+    "40000": {
+      "_type": "nested_dictionary",
+      "_count": 35,
+      "_processed": 35,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "6",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "7",
+          "m_Sort": "1",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[101,25]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "8",
+          "m_Sort": "2",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[800002,2]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "9",
+          "m_Sort": "2",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[800002,2]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[800002,2]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "11",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "12",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "13",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "14",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "15",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "16",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "17",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "18",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "19",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "20",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "21",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "22",
+          "m_Sort": "3",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[1102,2]]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "23",
+          "m_Sort": "4",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[50001,2]]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "24",
+          "m_Sort": "4",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[50001,2]]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "25",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "26",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "27",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "28",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "29",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "30",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "31",
+          "m_Sort": "5",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[4,4],[0,4]]",
+          "m_Reward": "[[40001,2]]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "32",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,4]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "33",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "34",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[2,4],[0,4]]",
+          "m_Reward": "[[40021,2]]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_GroupID": "40000",
+          "m_EventID": "35",
+          "m_Sort": "6",
+          "m_Grade": "3",
+          "m_TimeMin": "90",
+          "m_Slot": "[[3,4],[0,4]]",
+          "m_Reward": "[[40021,2]]"
+        }
+      }
+    },
+    "50000": {
+      "_type": "nested_dictionary",
+      "_count": 35,
+      "_processed": 35,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "2",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "3",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "4",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "5",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "6",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "7",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,30]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "8",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "9",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "10",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "11",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "12",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "13",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "14",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[40001,3]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "15",
+          "m_Sort": "3",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[40021,3]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "16",
+          "m_Sort": "3",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[40021,3]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "17",
+          "m_Sort": "3",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[40021,3]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "18",
+          "m_Sort": "3",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[40021,3]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "19",
+          "m_Sort": "4",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[800002,3]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "20",
+          "m_Sort": "4",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[800002,3]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "21",
+          "m_Sort": "4",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[800002,3]]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "22",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "23",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "24",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "25",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "26",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "27",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "28",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "29",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "30",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "31",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[2,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "32",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "33",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[3,4],[0,4],[0,3]]",
+          "m_Reward": "[[1102,3]]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "34",
+          "m_Sort": "6",
+          "m_Grade": "5",
+          "m_TimeMin": "150",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[50004,1]]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_GroupID": "50000",
+          "m_EventID": "35",
+          "m_Sort": "7",
+          "m_Grade": "4",
+          "m_TimeMin": "120",
+          "m_Slot": "[[4,4],[0,4],[0,3]]",
+          "m_Reward": "[[50001,2]]"
+        }
+      }
+    }
+  },
+  "status": "processed_6_items"
+}

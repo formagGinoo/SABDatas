@@ -1,0 +1,91 @@
+{
+  "className": "CData_ActMemoryChoice",
+  "timestamp": "2025-07-08T13:35:14.934Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_Type": "1",
+          "m_ChoiceID": "1",
+          "m_mText": "\"Daytime\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice101\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_Type": "1",
+          "m_ChoiceID": "2",
+          "m_mText": "\"Full Moon\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice102\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_Type": "1",
+          "m_ChoiceID": "3",
+          "m_mText": "\"Half Moon\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice103\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_Type": "1",
+          "m_ChoiceID": "4",
+          "m_mText": "\"Waning Moon\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice104\""
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "1",
+          "m_mText": "\"Cradle of Life\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice201\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "2",
+          "m_mText": "\"Hall of the Elders\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice202\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "3",
+          "m_mText": "\"Inner Sanctum\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice203\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "4",
+          "m_mText": "\"Moonlit Hall\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice204\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "5",
+          "m_mText": "\"Cell\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice205\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_Type": "2",
+          "m_ChoiceID": "6",
+          "m_mText": "\"Astrolabe Hall\"",
+          "m_Pic1": "\"Atlas_Activity101Lamia/Choice206\""
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

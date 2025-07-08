@@ -1,0 +1,1420 @@
+{
+  "className": "CData_EquipEffect",
+  "timestamp": "2025-07-08T13:35:33.457Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "900001",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"4%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "900002",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"4.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "900003",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"5.1%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "900004",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"5.7%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "900005",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"6.3%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "900006",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"6.9%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "900007",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"7.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "900008",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"8%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "900009",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"8.6%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "900010",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"9.1%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "900011",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"9.7%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "900012",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"10.3%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "900013",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"10.9%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "900014",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"11.4%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "1",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "900015",
+          "m_mDesc": "\"CRIT Rate\"",
+          "m_Data": "\"12%\""
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "901001",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"4%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "901002",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"4.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "901003",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"5.1%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "901004",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"5.7%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "901005",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"6.3%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "901006",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"6.9%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "901007",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"7.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "901008",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"8%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "901009",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"8.6%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "901010",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"9.1%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "901011",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"9.7%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "901012",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"10.3%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "901013",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"10.9%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "901014",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"11.4%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "2",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "901015",
+          "m_mDesc": "\"P. DMG Bonus\"",
+          "m_Data": "\"12%\""
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "902001",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"6.7%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "902002",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"7.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "902003",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"8.6%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "902004",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"9.5%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "902005",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"10.5%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "902006",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"11.4%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "902007",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"12.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "902008",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"13.3%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "902009",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"14.3%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "902010",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"15.2%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "902011",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"16.2%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "902012",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"17.1%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "902013",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"18.1%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "902014",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"19%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "3",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "902015",
+          "m_mDesc": "\"CRIT DMG\"",
+          "m_Data": "\"20%\""
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "903001",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"4%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "903002",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"4.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "903003",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"5.1%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "903004",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"5.7%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "903005",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"6.3%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "903006",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"6.9%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "903007",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"7.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "903008",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"8%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "903009",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"8.6%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "903010",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"9.1%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "903011",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"9.7%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "903012",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"10.3%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "903013",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"10.9%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "903014",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"11.4%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "4",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "903015",
+          "m_mDesc": "\"M. DMG Bonus\"",
+          "m_Data": "\"12%\""
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "904001",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"4%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "904002",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"4.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "904003",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"5.1%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "904004",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"5.7%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "904005",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"6.3%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "904006",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"6.9%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "904007",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"7.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "904008",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"8%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "904009",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"8.6%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "904010",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"9.1%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "904011",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"9.7%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "904012",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"10.3%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "904013",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"10.9%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "904014",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"11.4%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "5",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "904015",
+          "m_mDesc": "\"All DMG Bonus\"",
+          "m_Data": "\"12%\""
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "905001",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"4%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "905002",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"4.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "905003",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"5.1%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "905004",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"5.7%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "905005",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"6.3%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "905006",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"6.9%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "905007",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"7.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "905008",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"8%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "905009",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"8.6%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "905010",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"9.1%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "905011",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"9.7%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "905012",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"10.3%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "905013",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"10.9%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "905014",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"11.4%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "6",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "905015",
+          "m_mDesc": "\"All DMG Reduction\"",
+          "m_Data": "\"12%\""
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "906001",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"6.7%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "906002",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"7.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "906003",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"8.6%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "906004",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"9.5%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "906005",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"10.5%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "906006",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"11.4%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "906007",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"12.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "906008",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"13.3%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "906009",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"14.3%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "906010",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"15.2%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "906011",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"16.2%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "906012",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"17.1%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "906013",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"18.1%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "906014",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"19%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "7",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "906015",
+          "m_mDesc": "\"Received Healing Bonus\"",
+          "m_Data": "\"20%\""
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "907001",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"6.6%\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "907002",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"7.6%\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "907003",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"8.6%\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "907004",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"9.6%\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "907005",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"10.4%\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "907006",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"11.4%\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "907007",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"12.4%\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "907008",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"13.4%\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "907009",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"14.2%\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "907010",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"15.2%\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "907011",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"16.2%\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "907012",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"17.2%\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "907013",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"18%\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "907014",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"19%\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "8",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "907015",
+          "m_mDesc": "\"ATK SPD\"",
+          "m_Data": "\"20%\""
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "1",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "908001",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"30\""
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "2",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "908002",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"35\""
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "3",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "908003",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"40\""
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "4",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "908004",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"45\""
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "5",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "1200",
+          "m_PropertyID": "908005",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"50\""
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "6",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "908006",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"55\""
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "7",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "908007",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"60\""
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "8",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "908008",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"65\""
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "9",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "908009",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"70\""
+        },
+        "10": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "10",
+          "m_HighQuality": null,
+          "m_RelatedWeight": "700",
+          "m_PropertyID": "908010",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"75\""
+        },
+        "11": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "11",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "908011",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"80\""
+        },
+        "12": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "12",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "908012",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"85\""
+        },
+        "13": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "13",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "908013",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"90\""
+        },
+        "14": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "14",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "908014",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"95\""
+        },
+        "15": {
+          "m_bError": null,
+          "m_GroupID": "9",
+          "m_EffectLevel": "15",
+          "m_HighQuality": "1",
+          "m_RelatedWeight": "100",
+          "m_PropertyID": "908015",
+          "m_mDesc": "\"Bloodsoul Recovery\"",
+          "m_Data": "\"100\""
+        }
+      }
+    }
+  },
+  "status": "processed_9_items"
+}

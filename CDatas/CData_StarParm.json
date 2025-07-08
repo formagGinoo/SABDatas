@@ -1,0 +1,27 @@
+{
+  "className": "CData_StarParm",
+  "timestamp": "2025-07-08T13:35:51.375Z",
+  "data": {
+    "0": {
+      "m_bError": null,
+      "m_StarLevel": null,
+      "m_Param": "[[1,10000],[2,10000],[3,10000],[4,10000]]"
+    },
+    "1": {
+      "m_bError": null,
+      "m_StarLevel": "1",
+      "m_Param": "[[1,10000],[2,10000],[3,10000],[4,10000]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_StarLevel": "2",
+      "m_Param": "[[1,10000],[2,10000],[3,10000],[4,10000]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_StarLevel": "3",
+      "m_Param": "[[1,10000],[2,10000],[3,10000],[4,10000]]"
+    }
+  },
+  "status": "processed_4_items"
+}

@@ -1,0 +1,73 @@
+{
+  "className": "CData_AFKInstantReward",
+  "timestamp": "2025-07-08T13:35:15.025Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_Times": "1",
+      "m_Consumption": "[[101,0]]",
+      "m_Reward": "7200"
+    },
+    "2": {
+      "m_bError": null,
+      "m_Times": "2",
+      "m_Consumption": "[[101,50]]",
+      "m_Reward": "7200"
+    },
+    "3": {
+      "m_bError": null,
+      "m_Times": "3",
+      "m_Consumption": "[[101,70]]",
+      "m_Reward": "7200"
+    },
+    "4": {
+      "m_bError": null,
+      "m_Times": "4",
+      "m_Consumption": "[[101,100]]",
+      "m_Reward": "7200"
+    },
+    "5": {
+      "m_bError": null,
+      "m_Times": "5",
+      "m_Consumption": "[[101,150]]",
+      "m_Reward": "7200"
+    },
+    "6": {
+      "m_bError": null,
+      "m_Times": "6",
+      "m_Consumption": "[[101,200]]",
+      "m_Reward": "7200"
+    },
+    "7": {
+      "m_bError": null,
+      "m_Times": "7",
+      "m_Consumption": "[[101,250]]",
+      "m_Reward": "7200"
+    },
+    "8": {
+      "m_bError": null,
+      "m_Times": "8",
+      "m_Consumption": "[[101,300]]",
+      "m_Reward": "7200"
+    },
+    "9": {
+      "m_bError": null,
+      "m_Times": "9",
+      "m_Consumption": "[[101,350]]",
+      "m_Reward": "7200"
+    },
+    "10": {
+      "m_bError": null,
+      "m_Times": "10",
+      "m_Consumption": "[[101,400]]",
+      "m_Reward": "7200"
+    },
+    "11": {
+      "m_bError": null,
+      "m_Times": "11",
+      "m_Consumption": "[[101,500]]",
+      "m_Reward": "7200"
+    }
+  },
+  "status": "processed_11_items"
+}

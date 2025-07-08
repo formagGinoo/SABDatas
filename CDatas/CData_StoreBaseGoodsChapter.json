@@ -1,0 +1,37 @@
+{
+  "className": "CData_StoreBaseGoodsChapter",
+  "timestamp": "2025-07-08T13:35:51.456Z",
+  "data": {
+    "301001": {
+      "m_bError": null,
+      "m_GoodsID": "301001",
+      "m_StoreID": "1002",
+      "m_IsOn": "1",
+      "m_mItemName": "\"Journey Together Pack I\"",
+      "m_mItemDesc": "\"\"",
+      "m_ItemID": "[[101,10000]]",
+      "m_GainItemID": "[[101,1000]]",
+      "m_ProductID": "\"com.moonton.nova_gift1999\"",
+      "m_ProductSubID": "58",
+      "m_NextGoods": "301002",
+      "m_mItemHint": "\"Instantly receive <style=Highlight>1000 Moon Tears (Free)</style> upon purchase, and up to <style=Highlight>10000 Moon Tears (Free)</style> in total.\"",
+      "m_DiscountNum": "650"
+    },
+    "301002": {
+      "m_bError": null,
+      "m_GoodsID": "301002",
+      "m_StoreID": "1002",
+      "m_IsOn": "1",
+      "m_mItemName": "\"Journey Together Pack II\"",
+      "m_mItemDesc": "\"\"",
+      "m_ItemID": "[[101,10000]]",
+      "m_GainItemID": "[[101,1000]]",
+      "m_ProductID": "\"com.moonton.nova_gift1999\"",
+      "m_ProductSubID": "59",
+      "m_NextGoods": null,
+      "m_mItemHint": "\"Instantly receive <style=Highlight>1000 Moon Tears (Free)</style> upon purchase, and up to <style=Highlight>10000 Moon Tears (Free)</style> in total.\"",
+      "m_DiscountNum": "650"
+    }
+  },
+  "status": "processed_2_items"
+}

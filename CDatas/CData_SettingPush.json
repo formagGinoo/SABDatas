@@ -1,0 +1,43 @@
+{
+  "className": "CData_SettingPush",
+  "timestamp": "2025-07-08T13:35:47.693Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_PushID": "1",
+      "m_PushType": "1",
+      "m_Sort": "1",
+      "m_PushSDK": "\"AFKFullMessage\"",
+      "m_mSettingTitle": "\"Moonlight Tribute Storage Notice\"",
+      "m_mSettingTip": "\"Activate to receive a notice when Moonlight Tribute storage is full.\"",
+      "m_mPushTitle": "\"Silver and Blood\"",
+      "m_mPushText": "\"Moonlight Tribute storage maxed out. Don't forget to claim your yields!\"",
+      "m_Default": "1"
+    },
+    "2": {
+      "m_bError": null,
+      "m_PushID": "2",
+      "m_PushType": "2",
+      "m_Sort": "2",
+      "m_PushSDK": "\"MailMajorMessage\"",
+      "m_mSettingTitle": "\"Important Letter\"",
+      "m_mSettingTip": "\"Switch it on to receive a notice when an important letter arrives.\"",
+      "m_mPushTitle": "\"Silver and Blood\"",
+      "m_mPushText": "\"Attention Lord, you have received a new letter.\"",
+      "m_Default": "1"
+    },
+    "3": {
+      "m_bError": null,
+      "m_PushID": "3",
+      "m_PushType": "2",
+      "m_Sort": "3",
+      "m_PushSDK": "\"ElvaMessage\"",
+      "m_mSettingTitle": "\"Customer Service Message\"",
+      "m_mSettingTip": "\"Customer Service Reminder\"",
+      "m_mPushTitle": "\"Reserved String\"",
+      "m_mPushText": "\"Noble Lord, you have a new customer service message.\"",
+      "m_Default": "1"
+    }
+  },
+  "status": "processed_3_items"
+}

@@ -1,0 +1,39 @@
+{
+  "className": "CData_SettingGraphicsInfo",
+  "timestamp": "2025-07-08T13:35:47.686Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_GraphicID": "1",
+      "m_mSettingTitle": "\"Graphics Quality\"",
+      "m_mSettingTip": "\"Higher graphics settings increase your device's power consumption, potentially causing overheating and lag.\"",
+      "m_Hide": null,
+      "m_Order": "3"
+    },
+    "2": {
+      "m_bError": null,
+      "m_GraphicID": "2",
+      "m_mSettingTitle": "\"Frame Rate\"",
+      "m_mSettingTip": "\"Higher frame rates increase your device's power consumption, potentially causing overheating and lag.\"",
+      "m_Hide": null,
+      "m_Order": "4"
+    },
+    "3": {
+      "m_bError": null,
+      "m_GraphicID": "3",
+      "m_mSettingTitle": "\"Window Mode\"",
+      "m_mSettingTip": "\"Adjust Window Size\"",
+      "m_Hide": null,
+      "m_Order": "1"
+    },
+    "4": {
+      "m_bError": null,
+      "m_GraphicID": "4",
+      "m_mSettingTitle": "\"Aspect Ratio\"",
+      "m_mSettingTip": "\"Adjust Aspect Ratio\"",
+      "m_Hide": null,
+      "m_Order": "2"
+    }
+  },
+  "status": "processed_4_items"
+}

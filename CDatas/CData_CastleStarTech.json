@@ -1,0 +1,406 @@
+{
+  "className": "CData_CastleStarTech",
+  "timestamp": "2025-07-08T13:35:26.174Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "101": {
+          "m_bError": null,
+          "m_ConstellationID": "1",
+          "m_StarID": "101",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 1-1: Order\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "1",
+          "m_ItemConsume": "[[999,5000]]",
+          "m_CharacterList": "[20260]"
+        },
+        "102": {
+          "m_bError": null,
+          "m_ConstellationID": "1",
+          "m_StarID": "102",
+          "m_FrontStar": "101",
+          "m_Position": "3",
+          "m_mStarName": "\"Star 1-2: Balance\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1001,10]]",
+          "m_mEffectDes": "\"Pure Blood Essence +10% from Moonlight Tribute\"",
+          "m_CharacterCount": "1",
+          "m_ItemConsume": "[[999,5000]]",
+          "m_CharacterList": "[20550]"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "201": {
+          "m_bError": null,
+          "m_ConstellationID": "2",
+          "m_StarID": "201",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 2-1: Perseverance\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Difficulty LV. 2 Missions unlock.\"",
+          "m_CharacterCount": "1",
+          "m_ItemConsume": "[[999,10000]]",
+          "m_CharacterList": "[20250]"
+        },
+        "202": {
+          "m_bError": null,
+          "m_ConstellationID": "2",
+          "m_StarID": "202",
+          "m_FrontStar": "201",
+          "m_Position": "5",
+          "m_mStarName": "\"Star 2-2: Tenacity\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,10000]]",
+          "m_CharacterList": "[20260,20020]"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "301": {
+          "m_bError": null,
+          "m_ConstellationID": "3",
+          "m_StarID": "301",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 3-1: Guardian\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1002,10]]",
+          "m_mEffectDes": "\"Divine Blood Drops +10% from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,15000]]",
+          "m_CharacterList": "[20250,20010]"
+        },
+        "302": {
+          "m_bError": null,
+          "m_ConstellationID": "3",
+          "m_StarID": "302",
+          "m_FrontStar": "301",
+          "m_Position": "3",
+          "m_mStarName": "\"Star 3-2: Acuity\"",
+          "m_EffectType": "3",
+          "m_EffectData": "[[1,60000]]",
+          "m_mEffectDes": "\"When challenging [Tomb of the Fallen] - Insatiate Spirit, additionally grants Smelting Ore x10.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,15000]]",
+          "m_CharacterList": "[20260,20050]"
+        },
+        "303": {
+          "m_bError": null,
+          "m_ConstellationID": "3",
+          "m_StarID": "303",
+          "m_FrontStar": "302",
+          "m_Position": "5",
+          "m_mStarName": "\"Star 3-3: Independence\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Difficulty LV. 3 Missions unlock.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,15000]]",
+          "m_CharacterList": "[20240,20030]"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "401": {
+          "m_bError": null,
+          "m_ConstellationID": "4",
+          "m_StarID": "401",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 4-1: Innovation\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,20000]]",
+          "m_CharacterList": "[20530,20010]"
+        },
+        "402": {
+          "m_bError": null,
+          "m_ConstellationID": "4",
+          "m_StarID": "402",
+          "m_FrontStar": "401",
+          "m_Position": "4",
+          "m_mStarName": "\"Star 4-2: Challenge\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Difficulty LV. 4 Missions unlock.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,20000]]",
+          "m_CharacterList": "[20540,20010]"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "501": {
+          "m_bError": null,
+          "m_ConstellationID": "5",
+          "m_StarID": "501",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 5-1: Insight\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1001,15]]",
+          "m_mEffectDes": "\"Pure Blood Essence +15% from Moonlight Tribute\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,50000]]",
+          "m_CharacterList": "[20260,20040]"
+        },
+        "502": {
+          "m_bError": null,
+          "m_ConstellationID": "5",
+          "m_StarID": "502",
+          "m_FrontStar": "501",
+          "m_Position": "5",
+          "m_mStarName": "\"Star 5-2: Control\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,50000]]",
+          "m_CharacterList": "[20530,20020]"
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "601": {
+          "m_bError": null,
+          "m_ConstellationID": "6",
+          "m_StarID": "601",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 6-1: Pioneer\"",
+          "m_EffectType": "4",
+          "m_EffectData": "[[5]]",
+          "m_mEffectDes": "\"Unlock 5 Bloodline Transfusion slots.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,80000]]",
+          "m_CharacterList": "[20540,20040]"
+        },
+        "602": {
+          "m_bError": null,
+          "m_ConstellationID": "6",
+          "m_StarID": "602",
+          "m_FrontStar": "601",
+          "m_Position": "4",
+          "m_mStarName": "\"Star 6-2: Glory\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1002,10]]",
+          "m_mEffectDes": "\"Divine Blood Drops +10% from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,80000]]",
+          "m_CharacterList": "[20250,20040]"
+        },
+        "603": {
+          "m_bError": null,
+          "m_ConstellationID": "6",
+          "m_StarID": "603",
+          "m_FrontStar": "602",
+          "m_Position": "6",
+          "m_mStarName": "\"Star 6-3: Ferity\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Higher Difficulty Missions unlock.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,80000]]",
+          "m_CharacterList": "[20250,20020]"
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "701": {
+          "m_bError": null,
+          "m_ConstellationID": "7",
+          "m_StarID": "701",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 7-1: Mercy\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,200000]]",
+          "m_CharacterList": "[20240,20030]"
+        },
+        "702": {
+          "m_bError": null,
+          "m_ConstellationID": "7",
+          "m_StarID": "702",
+          "m_FrontStar": "701",
+          "m_Position": "5",
+          "m_mStarName": "\"Star 7-2: Atonement\"",
+          "m_EffectType": "3",
+          "m_EffectData": "[[2,70000]]",
+          "m_mEffectDes": "\"When challenging [Tomb of the Fallen] - Armored Spirit, additionally grants Blackened Smelting Ore x5.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,200000]]",
+          "m_CharacterList": "[20550,20010]"
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "801": {
+          "m_bError": null,
+          "m_ConstellationID": "8",
+          "m_StarID": "801",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 8-1: Prosperity\"",
+          "m_EffectType": "4",
+          "m_EffectData": "[[5]]",
+          "m_mEffectDes": "\"Unlock 5 Bloodline Transfusion slots.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,400000]]",
+          "m_CharacterList": "[20240,20030]"
+        },
+        "802": {
+          "m_bError": null,
+          "m_ConstellationID": "8",
+          "m_StarID": "802",
+          "m_FrontStar": "801",
+          "m_Position": "2",
+          "m_mStarName": "\"Star 8-2: Mission\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1001,20]]",
+          "m_mEffectDes": "\"Pure Blood Essence +20% from Moonlight Tribute\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,400000]]",
+          "m_CharacterList": "[20250,20030]"
+        },
+        "803": {
+          "m_bError": null,
+          "m_ConstellationID": "8",
+          "m_StarID": "803",
+          "m_FrontStar": "802",
+          "m_Position": "4",
+          "m_mStarName": "\"Star 8-3: Perpetuity\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[999,10]]",
+          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,400000]]",
+          "m_CharacterList": "[20250,20010]"
+        },
+        "804": {
+          "m_bError": null,
+          "m_ConstellationID": "8",
+          "m_StarID": "804",
+          "m_FrontStar": "803",
+          "m_Position": "6",
+          "m_mStarName": "\"Star 8-4: Diligence\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Difficulty LV. 5 Missions unlock.\"",
+          "m_CharacterCount": "2",
+          "m_ItemConsume": "[[999,400000]]",
+          "m_CharacterList": "[20240,20010]"
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "901": {
+          "m_bError": null,
+          "m_ConstellationID": "9",
+          "m_StarID": "901",
+          "m_FrontStar": null,
+          "m_Position": "1",
+          "m_mStarName": "\"Star 9-1: Mediation\"",
+          "m_EffectType": "4",
+          "m_EffectData": "[[5]]",
+          "m_mEffectDes": "\"Unlock 5 Transfusion slots.\"",
+          "m_CharacterCount": "3",
+          "m_ItemConsume": "[[999,600000]]",
+          "m_CharacterList": "[20240,20050,20010]"
+        },
+        "902": {
+          "m_bError": null,
+          "m_ConstellationID": "9",
+          "m_StarID": "902",
+          "m_FrontStar": "901",
+          "m_Position": "3",
+          "m_mStarName": "\"Star 9-2: Wisdom\"",
+          "m_EffectType": "1",
+          "m_EffectData": "[[1002,5]]",
+          "m_mEffectDes": "\"Divine Blood Drops +10% from Moonlight Tribute.\"",
+          "m_CharacterCount": "3",
+          "m_ItemConsume": "[[999,600000]]",
+          "m_CharacterList": "[20240,20020,20040]"
+        },
+        "903": {
+          "m_bError": null,
+          "m_ConstellationID": "9",
+          "m_StarID": "903",
+          "m_FrontStar": "902",
+          "m_Position": "5",
+          "m_mStarName": "\"Star 9-3: Meticulousness\"",
+          "m_EffectType": "3",
+          "m_EffectData": "[[3,80000],[4,80000],[5,80000],[6,80000],[7,80000]]",
+          "m_mEffectDes": "\"[Tomb of the Fallen] - Restless Spirit I & II additionally grant Blackened Smelting Ore x5.\"",
+          "m_CharacterCount": "3",
+          "m_ItemConsume": "[[999,600000]]",
+          "m_CharacterList": "[20250,20040,20030]"
+        },
+        "904": {
+          "m_bError": null,
+          "m_ConstellationID": "9",
+          "m_StarID": "904",
+          "m_FrontStar": "903",
+          "m_Position": "6",
+          "m_mStarName": "\"Star 9-4: Harmony\"",
+          "m_EffectType": "2",
+          "m_EffectData": "[[1]]",
+          "m_mEffectDes": "\"Dispatch Rating Up. Higher Difficulty Missions unlock.\"",
+          "m_CharacterCount": "3",
+          "m_ItemConsume": "[[999,600000]]",
+          "m_CharacterList": "[20240,20020,20040]"
+        }
+      }
+    }
+  },
+  "status": "processed_9_items"
+}

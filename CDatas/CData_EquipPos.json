@@ -1,0 +1,31 @@
+{
+  "className": "CData_EquipPos",
+  "timestamp": "2025-07-08T13:35:34.076Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_PosRes": "1",
+      "m_mPosname": "\"Head\"",
+      "m_posicon": "\"Atlas_Equipment/Pos1\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_PosRes": "2",
+      "m_mPosname": "\"Body\"",
+      "m_posicon": "\"Atlas_Equipment/Pos2\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_PosRes": "3",
+      "m_mPosname": "\"Ring\"",
+      "m_posicon": "\"Atlas_Equipment/Pos3\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_PosRes": "4",
+      "m_mPosname": "\"Amulet\"",
+      "m_posicon": "\"Atlas_Equipment/Pos4\""
+    }
+  },
+  "status": "processed_4_items"
+}

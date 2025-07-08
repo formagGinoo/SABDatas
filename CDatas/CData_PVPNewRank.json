@@ -1,0 +1,295 @@
+{
+  "className": "CData_PVPNewRank",
+  "timestamp": "2025-07-08T13:35:47.012Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mName": "\"\"",
+      "m_RankMin": null,
+      "m_RankMax": "1",
+      "m_DailyReward": "[[1059,1250]]",
+      "m_SeasonReward": "[[1400011,1],[1059,15250],[30025,10]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mName": "\"\"",
+      "m_RankMin": "2",
+      "m_RankMax": "3",
+      "m_DailyReward": "[[1059,1240]]",
+      "m_SeasonReward": "[[1400012,1],[1059,15130],[30025,8]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_mName": "\"\"",
+      "m_RankMin": "4",
+      "m_RankMax": "6",
+      "m_DailyReward": "[[1059,1230]]",
+      "m_SeasonReward": "[[1400013,1],[1059,15010],[30026,10]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_mName": "\"\"",
+      "m_RankMin": "7",
+      "m_RankMax": "9",
+      "m_DailyReward": "[[1059,1220]]",
+      "m_SeasonReward": "[[1400013,1],[1059,14890],[30026,9]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_mName": "\"\"",
+      "m_RankMin": "10",
+      "m_RankMax": "12",
+      "m_DailyReward": "[[1059,1210]]",
+      "m_SeasonReward": "[[1400014,1],[1059,14770],[30026,9]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_mName": "\"\"",
+      "m_RankMin": "13",
+      "m_RankMax": "15",
+      "m_DailyReward": "[[1059,1200]]",
+      "m_SeasonReward": "[[1400014,1],[1059,14650],[30026,8]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_mName": "\"\"",
+      "m_RankMin": "16",
+      "m_RankMax": "18",
+      "m_DailyReward": "[[1059,1190]]",
+      "m_SeasonReward": "[[1400014,1],[1059,14530],[30026,8]]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_mName": "\"\"",
+      "m_RankMin": "19",
+      "m_RankMax": "22",
+      "m_DailyReward": "[[1059,1180]]",
+      "m_SeasonReward": "[[1400014,1],[1059,14410],[30026,7]]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_mName": "\"\"",
+      "m_RankMin": "23",
+      "m_RankMax": "25",
+      "m_DailyReward": "[[1059,1170]]",
+      "m_SeasonReward": "[[1400014,1],[1059,14290],[30026,7]]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_mName": "\"\"",
+      "m_RankMin": "26",
+      "m_RankMax": "29",
+      "m_DailyReward": "[[1059,1160]]",
+      "m_SeasonReward": "[[1059,14170],[30026,6]]"
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_mName": "\"\"",
+      "m_RankMin": "30",
+      "m_RankMax": "33",
+      "m_DailyReward": "[[1059,1150]]",
+      "m_SeasonReward": "[[1059,14050],[30026,6]]"
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_mName": "\"\"",
+      "m_RankMin": "34",
+      "m_RankMax": "37",
+      "m_DailyReward": "[[1059,1140]]",
+      "m_SeasonReward": "[[1059,13930],[30026,6]]"
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_mName": "\"\"",
+      "m_RankMin": "38",
+      "m_RankMax": "40",
+      "m_DailyReward": "[[1059,1130]]",
+      "m_SeasonReward": "[[1059,13810],[30026,5]]"
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_mName": "\"\"",
+      "m_RankMin": "41",
+      "m_RankMax": "50",
+      "m_DailyReward": "[[1059,1120]]",
+      "m_SeasonReward": "[[1059,13690],[30026,5]]"
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_mName": "\"\"",
+      "m_RankMin": "51",
+      "m_RankMax": "60",
+      "m_DailyReward": "[[1059,1110]]",
+      "m_SeasonReward": "[[1059,13570],[30026,5]]"
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_mName": "\"\"",
+      "m_RankMin": "61",
+      "m_RankMax": "70",
+      "m_DailyReward": "[[1059,1100]]",
+      "m_SeasonReward": "[[1059,13450],[30026,4]]"
+    },
+    "17": {
+      "m_bError": null,
+      "m_ID": "17",
+      "m_mName": "\"\"",
+      "m_RankMin": "71",
+      "m_RankMax": "80",
+      "m_DailyReward": "[[1059,1090]]",
+      "m_SeasonReward": "[[1059,13330],[30026,4]]"
+    },
+    "18": {
+      "m_bError": null,
+      "m_ID": "18",
+      "m_mName": "\"\"",
+      "m_RankMin": "81",
+      "m_RankMax": "100",
+      "m_DailyReward": "[[1059,1080]]",
+      "m_SeasonReward": "[[1059,13210],[30026,4]]"
+    },
+    "19": {
+      "m_bError": null,
+      "m_ID": "19",
+      "m_mName": "\"\"",
+      "m_RankMin": "101",
+      "m_RankMax": "120",
+      "m_DailyReward": "[[1059,1070]]",
+      "m_SeasonReward": "[[1059,13090],[101,400]]"
+    },
+    "20": {
+      "m_bError": null,
+      "m_ID": "20",
+      "m_mName": "\"\"",
+      "m_RankMin": "121",
+      "m_RankMax": "140",
+      "m_DailyReward": "[[1059,1060]]",
+      "m_SeasonReward": "[[1059,12970],[101,380]]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_mName": "\"\"",
+      "m_RankMin": "141",
+      "m_RankMax": "160",
+      "m_DailyReward": "[[1059,1050]]",
+      "m_SeasonReward": "[[1059,12850],[101,360]]"
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_mName": "\"\"",
+      "m_RankMin": "161",
+      "m_RankMax": "180",
+      "m_DailyReward": "[[1059,1040]]",
+      "m_SeasonReward": "[[1059,12730],[101,340]]"
+    },
+    "23": {
+      "m_bError": null,
+      "m_ID": "23",
+      "m_mName": "\"\"",
+      "m_RankMin": "181",
+      "m_RankMax": "200",
+      "m_DailyReward": "[[1059,1030]]",
+      "m_SeasonReward": "[[1059,12610],[101,320]]"
+    },
+    "24": {
+      "m_bError": null,
+      "m_ID": "24",
+      "m_mName": "\"\"",
+      "m_RankMin": "201",
+      "m_RankMax": "250",
+      "m_DailyReward": "[[1059,1020]]",
+      "m_SeasonReward": "[[1059,12490],[101,300]]"
+    },
+    "25": {
+      "m_bError": null,
+      "m_ID": "25",
+      "m_mName": "\"\"",
+      "m_RankMin": "251",
+      "m_RankMax": "300",
+      "m_DailyReward": "[[1059,1010]]",
+      "m_SeasonReward": "[[1059,12370],[101,280]]"
+    },
+    "26": {
+      "m_bError": null,
+      "m_ID": "26",
+      "m_mName": "\"\"",
+      "m_RankMin": "301",
+      "m_RankMax": "350",
+      "m_DailyReward": "[[1059,1000]]",
+      "m_SeasonReward": "[[1059,12250],[101,260]]"
+    },
+    "27": {
+      "m_bError": null,
+      "m_ID": "27",
+      "m_mName": "\"\"",
+      "m_RankMin": "351",
+      "m_RankMax": "400",
+      "m_DailyReward": "[[1059,990]]",
+      "m_SeasonReward": "[[1059,12130],[101,240]]"
+    },
+    "28": {
+      "m_bError": null,
+      "m_ID": "28",
+      "m_mName": "\"\"",
+      "m_RankMin": "401",
+      "m_RankMax": "600",
+      "m_DailyReward": "[[1059,980]]",
+      "m_SeasonReward": "[[1059,12010],[101,220]]"
+    },
+    "29": {
+      "m_bError": null,
+      "m_ID": "29",
+      "m_mName": "\"\"",
+      "m_RankMin": "601",
+      "m_RankMax": "800",
+      "m_DailyReward": "[[1059,970]]",
+      "m_SeasonReward": "[[1059,11890],[101,200]]"
+    },
+    "30": {
+      "m_bError": null,
+      "m_ID": "30",
+      "m_mName": "\"\"",
+      "m_RankMin": "801",
+      "m_RankMax": "900",
+      "m_DailyReward": "[[1059,960]]",
+      "m_SeasonReward": "[[1059,11770],[101,180]]"
+    },
+    "31": {
+      "m_bError": null,
+      "m_ID": "31",
+      "m_mName": "\"\"",
+      "m_RankMin": "901",
+      "m_RankMax": "1000",
+      "m_DailyReward": "[[1059,950]]",
+      "m_SeasonReward": "[[1059,11650],[101,150]]"
+    },
+    "32": {
+      "m_bError": null,
+      "m_ID": "32",
+      "m_mName": "\"\"",
+      "m_RankMin": "1001",
+      "m_RankMax": "99999999",
+      "m_DailyReward": "[[1059,940]]",
+      "m_SeasonReward": "[[1059,11530]]"
+    }
+  },
+  "status": "processed_32_items"
+}

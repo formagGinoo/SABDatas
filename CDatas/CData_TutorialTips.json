@@ -1,0 +1,638 @@
+{
+  "className": "CData_TutorialTips",
+  "timestamp": "2025-07-08T13:35:52.378Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "1",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Reserved String\"",
+          "m_mText1": "\"Reserved String\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "1",
+          "m_Page": "2",
+          "m_Template": "2",
+          "m_mTitle": "\"Reserved String\"",
+          "m_mText1": "\"Reserved String\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Reserved String\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_TutorialTipsID": "1",
+          "m_Page": "3",
+          "m_Template": "3",
+          "m_mTitle": "\"Reserved String\"",
+          "m_mText1": "\"Reserved String\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Reserved String\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"Reserved String\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "2",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Reserved String\"",
+          "m_mText1": "\"Reserved String\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "3",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Skill Casting\"",
+          "m_mText1": "\"Noah's skill deals damage to all enemies ahead in a cone. Choose the direction carefully before casting.\"",
+          "m_MultiLanguagePic1": "900001",
+          "m_mText2": "\"Empousa's skill can hit enemies in a circle at range. You may freely adjust the position of the target area when casting.\"",
+          "m_MultiLanguagePic2": "900002",
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "3",
+          "m_Page": "2",
+          "m_Template": "1",
+          "m_mTitle": "\"Bloodsoul Pool\"",
+          "m_mText1": "\"All Vassals share the same Bloodsoul pool, with different skills consuming different amounts. Decide carefully when to use which skills, based upon the circumstances.\"",
+          "m_MultiLanguagePic1": "900003",
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "4",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Empousa Skill Tutorial 01\"",
+          "m_mText1": "\"Be aware of some ranged enemies possessing potent destructive capabilities on the battlefield; it's crucial to prioritize their elimination!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "4",
+          "m_Page": "2",
+          "m_Template": "1",
+          "m_mTitle": "\"Empousa Skill Tutorial 02\"",
+          "m_mText1": "\"Empousa's Talent allows her to instantly deal DMG to the first enemy in a straight line the moment she enters the battle!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "5",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Jestel Skill Tutorial 01\"",
+          "m_mText1": "\"Sometimes, powerful enemies may cast Shields on their nearby allies to absorb incoming damage.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "5",
+          "m_Page": "2",
+          "m_Template": "1",
+          "m_mTitle": "\"Jestel Skill Tutorial 02\"",
+          "m_mText1": "\"Upon reaching 2 stars, Jestel gains the ability to use her Ultimate: Shield Break, instantly shattering the Shields of enemies within her reach.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "60000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "60000",
+          "m_Page": "1",
+          "m_Template": "3",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mText1": "\"Tap Upgrade in Overview to access the upgrade panel.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Adjust the counter to view level effects and materials required.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"Tap Upgrade to enhance Vassals and improve Blood Power!\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "70000": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "70000",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Blood Variant Counter ①\"",
+          "m_mText1": "\"Each character/enemy has a Blood Variant.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Arrows indicate the enemies that can be countered.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "70000",
+          "m_Page": "2",
+          "m_Template": "2",
+          "m_mTitle": "\"Blood Variant Counter ②\"",
+          "m_mText1": "\"Counter an enemy to deal 30% more DMG to them!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Being countered by the target reduces the DMG you deal by 20%!\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "70001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "70001",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Operations Desc\"",
+          "m_mText1": "\"Reserved String\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "80000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "80000",
+          "m_Page": "1",
+          "m_Template": "3",
+          "m_mTitle": "\"Blood Bond\"",
+          "m_mText1": "\"Tap here to view all the Blood Bonds available for activation.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Deploying characters bound by the same Blood Bond activates the Link effect.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"Tap the icon to access the effect details panel.\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "80001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "80001",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Blood Bond - Advanced Effect\"",
+          "m_mText1": "\"Moonblessed activated for 4 characters!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"The more characters that are bound by the same Blood Bond, the stronger the Link effect!\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "90000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "90000",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Lowered Combat Burden\"",
+          "m_mText1": "\"Auto-battle, 2x Speed, and Quick Deploy unlocked!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Tap function icons to aid your decision-making process!\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "100000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "100000",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Blood Bond - Desecrater\"",
+          "m_mText1": "\"You have activated a new Team Blood Bond: Desecrater!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Desecrater can now trigger bonus DMG after casting his Special.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110000": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110000",
+          "m_Page": "1",
+          "m_Template": "3",
+          "m_mTitle": "\"Territory Collection\"",
+          "m_mText1": "\"Clear special stages on Threads of Fate to progress through Territory Prosperity.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Territory Prosperity will upgrade once the progress bar is filled.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"With higher Territory Prosperity comes greater Collection value!\"",
+          "m_MultiLanguagePic3": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110000",
+          "m_Page": "2",
+          "m_Template": "2",
+          "m_mTitle": "\"Territory Collection\"",
+          "m_mText1": "\"Collection storage is limited. Don't forget to claim!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Retax can be performed for a fixed number of times per day.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110001",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Reset Vassal Level\"",
+          "m_mText1": "\"Once a Vassal advances past LV. 1, Level Reset will be available.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Level Reset will refund 100% of materials used.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110002",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Defense Stage\"",
+          "m_mText1": "\"Survive monster attacks for 30s!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Use Bloodsoul wisely to build up a defensive team!\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110003",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Double-Flanked\"",
+          "m_mText1": "\"Monsters will attack from 2 directions simultaneously\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Adjust the angle of characters based on their deployment spot.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110004",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Defeat marked enemy\"",
+          "m_mText1": "\"Defeat marked monsters\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"The key to victory lies in how to approach monsters quickly.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110005",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Defeat quickly\"",
+          "m_mText1": "\"Defeat the monsters in time!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Timing your Specials correctly is important.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "110006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "110006",
+          "m_Page": "1",
+          "m_Template": "2",
+          "m_mTitle": "\"Protection Stage\"",
+          "m_mText1": "\"Protect marked NPCs, don't let them get killed!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Keep an eye out for the enemy's Talent.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "120000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "120000",
+          "m_Page": "1",
+          "m_Template": "3",
+          "m_mTitle": "\"Equipment\"",
+          "m_mText1": "\"Each Vassal has 4 equipment slots.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"Each gear slot corresponds to a body part.\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"Tap Quick Equip to put on the strongest equipment in stock!\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "130000": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "130000",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Boss: Abel, The Soulless\"",
+          "m_mText1": "\"The upper Servant increases Abel's ATK by 2% each sec, while the lower Servant restores 1% of his Max HP each sec. Kill the Servants first!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "200001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "200001",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Boss Fight: Zagon, The Blood Beast\"",
+          "m_mText1": "\"Zagon gains 5 stacks of Hardening periodically. Hardening: Takes no DMG; Each instance of Special DMG taken removes 1 stack.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "200002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "200002",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Boss Fight: Baphomet, The Soulless\"",
+          "m_mText1": "\"The Servant restores 2% of the Soulless' HP each sec for up to 30s, and DMG Bonus is capped at 30 stacks. Chant can be interrupted by a Control effect.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "200003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "200003",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Boss Fight: Jeff, The Werewolf\"",
+          "m_mText1": "\"Jeff summons Wolf Spirits to track the enemy. Each wolf prioritizes units yet to be hit by this skill.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "300001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "300001",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Level Feature: Ambush\"",
+          "m_mText1": "\"All your characters will be inflicted with a debuff that deals Continuous DMG. End the battle as soon as possible!\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "300003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "300003",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Level Feature: Wolfsbane\"",
+          "m_mText1": "\"Wolfsbane Tile Effect: Characters deployed on it deal 50% more DMG.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    },
+    "300004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TutorialTipsID": "300004",
+          "m_Page": "1",
+          "m_Template": "1",
+          "m_mTitle": "\"Level Feature: The Blackblood Tree\"",
+          "m_mText1": "\"The Blackblood Tree will execute any character whose HP falls below 30%.\"",
+          "m_MultiLanguagePic1": null,
+          "m_mText2": "\"\"",
+          "m_MultiLanguagePic2": null,
+          "m_mText3": "\"\"",
+          "m_MultiLanguagePic3": null
+        }
+      }
+    }
+  },
+  "status": "processed_27_items"
+}

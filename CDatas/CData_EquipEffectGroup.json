@@ -1,0 +1,61 @@
+{
+  "className": "CData_EquipEffectGroup",
+  "timestamp": "2025-07-08T13:35:33.493Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_GroupID": "1",
+      "m_RelatedWeight": "1200",
+      "m_mDesc": "\"CRIT Rate\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_GroupID": "2",
+      "m_RelatedWeight": "1200",
+      "m_mDesc": "\"P. DMG Bonus\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_GroupID": "3",
+      "m_RelatedWeight": "1200",
+      "m_mDesc": "\"CRIT DMG\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_GroupID": "4",
+      "m_RelatedWeight": "1200",
+      "m_mDesc": "\"M. DMG Bonus\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_GroupID": "5",
+      "m_RelatedWeight": "1100",
+      "m_mDesc": "\"All DMG Bonus\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_GroupID": "6",
+      "m_RelatedWeight": "1100",
+      "m_mDesc": "\"All DMG Reduction\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_GroupID": "7",
+      "m_RelatedWeight": "1000",
+      "m_mDesc": "\"Received Healing Bonus\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_GroupID": "8",
+      "m_RelatedWeight": "1000",
+      "m_mDesc": "\"ATK SPD\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_GroupID": "9",
+      "m_RelatedWeight": "1000",
+      "m_mDesc": "\"Bloodsoul Recovery\""
+    }
+  },
+  "status": "processed_9_items"
+}

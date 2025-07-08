@@ -1,0 +1,56 @@
+{
+  "className": "CData_GuildSign",
+  "timestamp": "2025-07-08T13:35:34.785Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_SignReward": "[40001,2]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"01\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_SignReward": "[1102,2]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"02\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_SignReward": "[40011,2]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"03\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_SignReward": "[101,50]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"04\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_SignReward": "[800002,1]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"05\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_SignReward": "[40021,2]",
+      "m_DailySignReward": "[1060,50]",
+      "m_SignName": "\"06\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_SignReward": "[101,100]",
+      "m_DailySignReward": "[1060,100]",
+      "m_SignName": "\"07\""
+    }
+  },
+  "status": "processed_7_items"
+}

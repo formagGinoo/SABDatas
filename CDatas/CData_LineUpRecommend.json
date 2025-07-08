@@ -1,0 +1,98 @@
+{
+  "className": "CData_LineUpRecommend",
+  "timestamp": "2025-07-08T13:35:35.601Z",
+  "data": {
+    "101": {
+      "m_bError": null,
+      "m_ID": "101",
+      "m_FuncID": "104",
+      "m_mFuncName": "\"Popularity\"",
+      "m_TabType": "1",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "1",
+      "m_ThreeLevelTabs": "[0,1,2,3,4]",
+      "m_HelpID": "1155",
+      "m_ThreeLevelTabIcon": "\"CharacterCamp\""
+    },
+    "102": {
+      "m_bError": null,
+      "m_ID": "102",
+      "m_FuncID": "105",
+      "m_mFuncName": "\"Recommendation\"",
+      "m_TabType": "1",
+      "m_IsTreeStructure": "1",
+      "m_SubTab": "[205,201,202,203,204]",
+      "m_UIType": null,
+      "m_ThreeLevelTabs": "[]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"\""
+    },
+    "201": {
+      "m_bError": null,
+      "m_ID": "201",
+      "m_FuncID": "13",
+      "m_mFuncName": "\"Tomb of the Fallen\"",
+      "m_TabType": "2",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "3",
+      "m_ThreeLevelTabs": "[1,2,3]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"DungeonChapter\""
+    },
+    "202": {
+      "m_bError": null,
+      "m_ID": "202",
+      "m_FuncID": "5",
+      "m_mFuncName": "\"Infinite Abyss\"",
+      "m_TabType": "2",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "3",
+      "m_ThreeLevelTabs": "[1,2,3,4,5]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"Tower\""
+    },
+    "203": {
+      "m_bError": null,
+      "m_ID": "203",
+      "m_FuncID": "28",
+      "m_mFuncName": "\"Gauntlet\"",
+      "m_TabType": "2",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "2",
+      "m_ThreeLevelTabs": "[]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"\""
+    },
+    "204": {
+      "m_bError": null,
+      "m_ID": "204",
+      "m_FuncID": "46",
+      "m_mFuncName": "\"Crucible\"",
+      "m_TabType": "2",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "2",
+      "m_ThreeLevelTabs": "[]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"\""
+    },
+    "205": {
+      "m_bError": null,
+      "m_ID": "205",
+      "m_FuncID": "2",
+      "m_mFuncName": "\"Threads of Fate\"",
+      "m_TabType": "2",
+      "m_IsTreeStructure": null,
+      "m_SubTab": "[]",
+      "m_UIType": "2",
+      "m_ThreeLevelTabs": "[]",
+      "m_HelpID": "1156",
+      "m_ThreeLevelTabIcon": "\"\""
+    }
+  },
+  "status": "processed_7_items"
+}

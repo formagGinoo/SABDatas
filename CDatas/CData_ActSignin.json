@@ -1,0 +1,147 @@
+{
+  "className": "CData_ActSignin",
+  "timestamp": "2025-07-08T13:35:14.985Z",
+  "data": {
+    "1014": {
+      "_type": "nested_dictionary",
+      "_count": 7,
+      "_processed": 7,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "1",
+          "m_Reward": "[[101,300]]",
+          "m_UIType": null,
+          "m_Auto": "1",
+          "m_MailID": "800105"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "2",
+          "m_Reward": "[[1420001,1],[31001,15]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "3",
+          "m_Reward": "[[800033,5]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "4": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "4",
+          "m_Reward": "[[50001,50],[50004,10]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "5": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "5",
+          "m_Reward": "[[1051,3]]",
+          "m_UIType": "1",
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "6": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "6",
+          "m_Reward": "[[30004,1]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "7": {
+          "m_bError": null,
+          "m_ActivitySubID": "1014",
+          "m_Day": "7",
+          "m_Reward": "[[1050,10]]",
+          "m_UIType": "1",
+          "m_Auto": null,
+          "m_MailID": null
+        }
+      }
+    },
+    "1024": {
+      "_type": "nested_dictionary",
+      "_count": 7,
+      "_processed": 7,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "1",
+          "m_Reward": "[[101,300]]",
+          "m_UIType": null,
+          "m_Auto": "1",
+          "m_MailID": "800105"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "2",
+          "m_Reward": "[[1420002,1],[31001,15]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "3",
+          "m_Reward": "[[800033,5]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "4": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "4",
+          "m_Reward": "[[50001,50],[50004,10]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "5": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "5",
+          "m_Reward": "[[1051,3]]",
+          "m_UIType": "1",
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "6": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "6",
+          "m_Reward": "[[30004,1]]",
+          "m_UIType": null,
+          "m_Auto": null,
+          "m_MailID": null
+        },
+        "7": {
+          "m_bError": null,
+          "m_ActivitySubID": "1024",
+          "m_Day": "7",
+          "m_Reward": "[[1050,10]]",
+          "m_UIType": "1",
+          "m_Auto": null,
+          "m_MailID": null
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

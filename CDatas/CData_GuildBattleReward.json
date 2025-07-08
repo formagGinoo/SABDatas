@@ -1,0 +1,487 @@
+{
+  "className": "CData_GuildBattleReward",
+  "timestamp": "2025-07-08T13:35:34.761Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_Rank": "[1]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,12000]]",
+      "m_GradeID": "1"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_Rank": "[2]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,10000]]",
+      "m_GradeID": "2"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_Rank": "[3]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,8500]]",
+      "m_GradeID": "3"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_Rank": "[4]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7500]]",
+      "m_GradeID": "4"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_Rank": "[5]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7400]]",
+      "m_GradeID": "4"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_Rank": "[6]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7300]]",
+      "m_GradeID": "4"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_Rank": "[7]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7200]]",
+      "m_GradeID": "4"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_Rank": "[8]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7100]]",
+      "m_GradeID": "4"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_Rank": "[9]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,7000]]",
+      "m_GradeID": "4"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_Rank": "[10]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,6900]]",
+      "m_GradeID": "4"
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_Rank": "[11,15]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,6600]]",
+      "m_GradeID": "5"
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_Rank": "[16,20]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,6500]]",
+      "m_GradeID": "5"
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_Rank": "[21,30]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,5500]]",
+      "m_GradeID": "5"
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_Rank": "[31,40]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,5300]]",
+      "m_GradeID": "5"
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_Rank": "[41,50]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,5000]]",
+      "m_GradeID": "5"
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_Rank": "[51,60]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,4500]]",
+      "m_GradeID": "5"
+    },
+    "17": {
+      "m_bError": null,
+      "m_ID": "17",
+      "m_Rank": "[61,70]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,4400]]",
+      "m_GradeID": "5"
+    },
+    "18": {
+      "m_bError": null,
+      "m_ID": "18",
+      "m_Rank": "[71,80]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,4300]]",
+      "m_GradeID": "5"
+    },
+    "19": {
+      "m_bError": null,
+      "m_ID": "19",
+      "m_Rank": "[81,90]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,4200]]",
+      "m_GradeID": "5"
+    },
+    "20": {
+      "m_bError": null,
+      "m_ID": "20",
+      "m_Rank": "[91,100]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1060,4100]]",
+      "m_GradeID": "5"
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_Rank": "[]",
+      "m_RankPercent": "[0,300]",
+      "m_Award": "[[1060,3850]]",
+      "m_GradeID": "6"
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_Rank": "[]",
+      "m_RankPercent": "[300,400]",
+      "m_Award": "[[1060,3825]]",
+      "m_GradeID": "6"
+    },
+    "23": {
+      "m_bError": null,
+      "m_ID": "23",
+      "m_Rank": "[]",
+      "m_RankPercent": "[400,500]",
+      "m_Award": "[[1060,3800]]",
+      "m_GradeID": "6"
+    },
+    "24": {
+      "m_bError": null,
+      "m_ID": "24",
+      "m_Rank": "[]",
+      "m_RankPercent": "[500,600]",
+      "m_Award": "[[1060,3775]]",
+      "m_GradeID": "6"
+    },
+    "25": {
+      "m_bError": null,
+      "m_ID": "25",
+      "m_Rank": "[]",
+      "m_RankPercent": "[600,700]",
+      "m_Award": "[[1060,3750]]",
+      "m_GradeID": "6"
+    },
+    "26": {
+      "m_bError": null,
+      "m_ID": "26",
+      "m_Rank": "[]",
+      "m_RankPercent": "[700,800]",
+      "m_Award": "[[1060,3725]]",
+      "m_GradeID": "6"
+    },
+    "27": {
+      "m_bError": null,
+      "m_ID": "27",
+      "m_Rank": "[]",
+      "m_RankPercent": "[800,900]",
+      "m_Award": "[[1060,3700]]",
+      "m_GradeID": "6"
+    },
+    "28": {
+      "m_bError": null,
+      "m_ID": "28",
+      "m_Rank": "[]",
+      "m_RankPercent": "[900,1000]",
+      "m_Award": "[[1060,3675]]",
+      "m_GradeID": "6"
+    },
+    "29": {
+      "m_bError": null,
+      "m_ID": "29",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1000,1100]",
+      "m_Award": "[[1060,3650]]",
+      "m_GradeID": "6"
+    },
+    "30": {
+      "m_bError": null,
+      "m_ID": "30",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1100,1200]",
+      "m_Award": "[[1060,3625]]",
+      "m_GradeID": "6"
+    },
+    "31": {
+      "m_bError": null,
+      "m_ID": "31",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1200,1450]",
+      "m_Award": "[[1060,3475]]",
+      "m_GradeID": "7"
+    },
+    "32": {
+      "m_bError": null,
+      "m_ID": "32",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1450,1700]",
+      "m_Award": "[[1060,3450]]",
+      "m_GradeID": "7"
+    },
+    "33": {
+      "m_bError": null,
+      "m_ID": "33",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1700,1950]",
+      "m_Award": "[[1060,3425]]",
+      "m_GradeID": "7"
+    },
+    "34": {
+      "m_bError": null,
+      "m_ID": "34",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1950,2200]",
+      "m_Award": "[[1060,3400]]",
+      "m_GradeID": "7"
+    },
+    "35": {
+      "m_bError": null,
+      "m_ID": "35",
+      "m_Rank": "[]",
+      "m_RankPercent": "[2200,2450]",
+      "m_Award": "[[1060,3375]]",
+      "m_GradeID": "7"
+    },
+    "36": {
+      "m_bError": null,
+      "m_ID": "36",
+      "m_Rank": "[]",
+      "m_RankPercent": "[2450,2700]",
+      "m_Award": "[[1060,3350]]",
+      "m_GradeID": "7"
+    },
+    "37": {
+      "m_bError": null,
+      "m_ID": "37",
+      "m_Rank": "[]",
+      "m_RankPercent": "[2700,2950]",
+      "m_Award": "[[1060,3325]]",
+      "m_GradeID": "7"
+    },
+    "38": {
+      "m_bError": null,
+      "m_ID": "38",
+      "m_Rank": "[]",
+      "m_RankPercent": "[2950,3200]",
+      "m_Award": "[[1060,3300]]",
+      "m_GradeID": "7"
+    },
+    "39": {
+      "m_bError": null,
+      "m_ID": "39",
+      "m_Rank": "[]",
+      "m_RankPercent": "[3200,3450]",
+      "m_Award": "[[1060,3275]]",
+      "m_GradeID": "7"
+    },
+    "40": {
+      "m_bError": null,
+      "m_ID": "40",
+      "m_Rank": "[]",
+      "m_RankPercent": "[3450,3700]",
+      "m_Award": "[[1060,3250]]",
+      "m_GradeID": "7"
+    },
+    "41": {
+      "m_bError": null,
+      "m_ID": "41",
+      "m_Rank": "[]",
+      "m_RankPercent": "[3700,4000]",
+      "m_Award": "[[1060,3100]]",
+      "m_GradeID": "8"
+    },
+    "42": {
+      "m_bError": null,
+      "m_ID": "42",
+      "m_Rank": "[]",
+      "m_RankPercent": "[4000,4300]",
+      "m_Award": "[[1060,3075]]",
+      "m_GradeID": "8"
+    },
+    "43": {
+      "m_bError": null,
+      "m_ID": "43",
+      "m_Rank": "[]",
+      "m_RankPercent": "[4300,4600]",
+      "m_Award": "[[1060,3050]]",
+      "m_GradeID": "8"
+    },
+    "44": {
+      "m_bError": null,
+      "m_ID": "44",
+      "m_Rank": "[]",
+      "m_RankPercent": "[4600,4900]",
+      "m_Award": "[[1060,3025]]",
+      "m_GradeID": "8"
+    },
+    "45": {
+      "m_bError": null,
+      "m_ID": "45",
+      "m_Rank": "[]",
+      "m_RankPercent": "[4900,5200]",
+      "m_Award": "[[1060,3000]]",
+      "m_GradeID": "8"
+    },
+    "46": {
+      "m_bError": null,
+      "m_ID": "46",
+      "m_Rank": "[]",
+      "m_RankPercent": "[5200,5500]",
+      "m_Award": "[[1060,2975]]",
+      "m_GradeID": "8"
+    },
+    "47": {
+      "m_bError": null,
+      "m_ID": "47",
+      "m_Rank": "[]",
+      "m_RankPercent": "[5500,5800]",
+      "m_Award": "[[1060,2950]]",
+      "m_GradeID": "8"
+    },
+    "48": {
+      "m_bError": null,
+      "m_ID": "48",
+      "m_Rank": "[]",
+      "m_RankPercent": "[5800,6100]",
+      "m_Award": "[[1060,2925]]",
+      "m_GradeID": "8"
+    },
+    "49": {
+      "m_bError": null,
+      "m_ID": "49",
+      "m_Rank": "[]",
+      "m_RankPercent": "[6100,6400]",
+      "m_Award": "[[1060,2900]]",
+      "m_GradeID": "8"
+    },
+    "50": {
+      "m_bError": null,
+      "m_ID": "50",
+      "m_Rank": "[]",
+      "m_RankPercent": "[6400,6700]",
+      "m_Award": "[[1060,2875]]",
+      "m_GradeID": "8"
+    },
+    "51": {
+      "m_bError": null,
+      "m_ID": "51",
+      "m_Rank": "[]",
+      "m_RankPercent": "[6700,7030]",
+      "m_Award": "[[1060,2725]]",
+      "m_GradeID": "9"
+    },
+    "52": {
+      "m_bError": null,
+      "m_ID": "52",
+      "m_Rank": "[]",
+      "m_RankPercent": "[7030,7360]",
+      "m_Award": "[[1060,2700]]",
+      "m_GradeID": "9"
+    },
+    "53": {
+      "m_bError": null,
+      "m_ID": "53",
+      "m_Rank": "[]",
+      "m_RankPercent": "[7360,7690]",
+      "m_Award": "[[1060,2675]]",
+      "m_GradeID": "9"
+    },
+    "54": {
+      "m_bError": null,
+      "m_ID": "54",
+      "m_Rank": "[]",
+      "m_RankPercent": "[7690,8020]",
+      "m_Award": "[[1060,2650]]",
+      "m_GradeID": "9"
+    },
+    "55": {
+      "m_bError": null,
+      "m_ID": "55",
+      "m_Rank": "[]",
+      "m_RankPercent": "[8020,8350]",
+      "m_Award": "[[1060,2625]]",
+      "m_GradeID": "9"
+    },
+    "56": {
+      "m_bError": null,
+      "m_ID": "56",
+      "m_Rank": "[]",
+      "m_RankPercent": "[8350,8680]",
+      "m_Award": "[[1060,2600]]",
+      "m_GradeID": "9"
+    },
+    "57": {
+      "m_bError": null,
+      "m_ID": "57",
+      "m_Rank": "[]",
+      "m_RankPercent": "[8680,9010]",
+      "m_Award": "[[1060,2575]]",
+      "m_GradeID": "9"
+    },
+    "58": {
+      "m_bError": null,
+      "m_ID": "58",
+      "m_Rank": "[]",
+      "m_RankPercent": "[9010,9340]",
+      "m_Award": "[[1060,2550]]",
+      "m_GradeID": "9"
+    },
+    "59": {
+      "m_bError": null,
+      "m_ID": "59",
+      "m_Rank": "[]",
+      "m_RankPercent": "[9340,9670]",
+      "m_Award": "[[1060,2525]]",
+      "m_GradeID": "9"
+    },
+    "60": {
+      "m_bError": null,
+      "m_ID": "60",
+      "m_Rank": "[]",
+      "m_RankPercent": "[9670,10000]",
+      "m_Award": "[[1060,2500]]",
+      "m_GradeID": "9"
+    }
+  },
+  "status": "processed_60_items"
+}

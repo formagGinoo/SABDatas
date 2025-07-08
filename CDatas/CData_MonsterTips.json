@@ -1,0 +1,1168 @@
+{
+  "className": "CData_MonsterTips",
+  "timestamp": "2025-07-08T13:35:40.438Z",
+  "data": {
+    "10238": {
+      "m_bError": null,
+      "m_MonsterID": "10238",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Defeat the enemy with the power of Illusion.\"",
+      "m_MonsterIcon": "\"Atlas_Role/Dalcarlo_Cat001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "10241": {
+      "m_bError": null,
+      "m_MonsterID": "10241",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Dalcarlo has learned the art of tarot and Illusion is now much more powerful.\"",
+      "m_MonsterIcon": "\"Atlas_Role/Dalcarlo_Cat001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "10251": {
+      "m_bError": null,
+      "m_MonsterID": "10251",
+      "m_MonsterType": "2",
+      "m_mIntroduce": "\"An experienced naval combatant and second mate. They self-heal when HP is low, and hurl bombs that deal AoE DMG. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorElite_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "10371": {
+      "m_bError": null,
+      "m_MonsterID": "10371",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Elite Vassals with greatly increased stats. Brimming with energy, they gain extra Energy from Basic ATK. Challenge them in battle!\"",
+      "m_MonsterIcon": "\"Atlas_Role/Cross_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30010": {
+      "m_bError": null,
+      "m_MonsterID": "30010",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Summons scarlet bats and deals additional DMG to Bleeding targets. <color=#D63536>Save AoE skills</color>.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Monster_001_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30012": {
+      "m_bError": null,
+      "m_MonsterID": "30012",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Inhabited by a Lost Maiden. Will summon another Lost Maiden upon death.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Gargoyle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30020": {
+      "m_bError": null,
+      "m_MonsterID": "30020",
+      "m_MonsterType": "3",
+      "m_mIntroduce": "\"Summons scarlet bats and deals additional DMG to Bleeding targets. <color=#D63536>Save AoE skills</color>.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Monster_004_base001\"",
+      "m_SkillCount": "[2000200,2000201,2000202]",
+      "m_Video1": "[\"UI_LoginDownload\",\"UI_LoginDownload\",\"UI_LoginDownload\"]"
+    },
+    "30030": {
+      "m_bError": null,
+      "m_MonsterID": "30030",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"These bats flock in groups. AoE Attacks are advised for a swift victory.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Bat_Blood001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30036": {
+      "m_bError": null,
+      "m_MonsterID": "30036",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Inhabited by a Lost Maiden. Will summon another Lost Maiden upon death.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Bat_Blood001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30040": {
+      "m_bError": null,
+      "m_MonsterID": "30040",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A bat that uses Sound Waves to attack enemies. It is recommended to kill them first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Bat_Sound001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30061": {
+      "m_bError": null,
+      "m_MonsterID": "30061",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A low-ranking Knight of Tempus Church, clad in holy armor. They possess strong defensive capabilities.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Flailman_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30070": {
+      "m_bError": null,
+      "m_MonsterID": "30070",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An elite Knight of Tempus Church, clad in radiant holy armor. They possess strong offensive capabilities.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Swordsman_Final001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30134": {
+      "m_bError": null,
+      "m_MonsterID": "30134",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An unmistakably canid-like creature discovered in Lupine Forest. It summons its allies when the battle begins. It's better to either stop their summoning or eliminate them first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_CorruptedWolf_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30143": {
+      "m_bError": null,
+      "m_MonsterID": "30143",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An unmistakably canid-like creature discovered in Lupine Forest, known for its deadly pounce. Stay alert for its attacks.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_CorruptedWolf_Middle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30150": {
+      "m_bError": null,
+      "m_MonsterID": "30150",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A farmer from Lupine Forest. Fights with scythes and heals through strikes when their HP is low.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_ResidentSickle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30160": {
+      "m_bError": null,
+      "m_MonsterID": "30160",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A farmer from Lupine Forest. Fights with crossbows and has high damage output.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_ResidentCrossbow_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30200": {
+      "m_bError": null,
+      "m_MonsterID": "30200",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A squad leader of the Silver Cross, skilled with shields and strong durability.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Hammerman_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30210": {
+      "m_bError": null,
+      "m_MonsterID": "30210",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A junior warrior of the Silver Cross armed with flails, their sweeping melee attacks deal fatal damage to targets.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Flailman_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30220": {
+      "m_bError": null,
+      "m_MonsterID": "30220",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A farmer from Lupine Forest. Attacks in melee range with their pitchfork, dealing powerful AoE DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_ResidentFork_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30230": {
+      "m_bError": null,
+      "m_MonsterID": "30230",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A spectral entity capable of marking and assaulting enemies from afar. It's advised to steer clear of its attack range.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Spear_New_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30234": {
+      "m_bError": null,
+      "m_MonsterID": "30234",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The Four Spear Knights share their HP. Try to deal damage to multiple Spear Knights to eliminate them more efficiently.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Spear_New_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30240": {
+      "m_bError": null,
+      "m_MonsterID": "30240",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A basic melee spirit, and combat veteran demonstrating an even distribution of attributes.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Sword_New_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30250": {
+      "m_bError": null,
+      "m_MonsterID": "30250",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A melee Defender spirit armed with a sturdy shield, boasting remarkable DEF.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Shield_New_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30252": {
+      "m_bError": null,
+      "m_MonsterID": "30252",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Inhabited by a Lost Maiden. Will summon another Lost Maiden upon death.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Sword_New_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30280": {
+      "m_bError": null,
+      "m_MonsterID": "30280",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The eldest of the Bathory family. Wielding a titanic axe, he smites anyone who dare oppose him, consuming lives indiscriminately to sustain his waning essence.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Soulless_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30311": {
+      "m_bError": null,
+      "m_MonsterID": "30311",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The current Gravekeeper of the Ganelon lineage, he rends enemies apart with his dreadful claws and fangs. Unwelcome visitors to the graveyard are greeted by the Wolf Spirits under his command.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Jeffy_Wolf_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30360": {
+      "m_bError": null,
+      "m_MonsterID": "30360",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Plague host. Its attacks slow enemies down.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Flea_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30361": {
+      "m_bError": null,
+      "m_MonsterID": "30361",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The egg of a Plague Hatchling. Highly susceptible to DMG before hatching.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive_8001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30370": {
+      "m_bError": null,
+      "m_MonsterID": "30370",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An egg with a Plague Hatchling inside. It is weak, but births a Plague Hatchling after a while.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive8_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30400": {
+      "m_bError": null,
+      "m_MonsterID": "30400",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Divine Body that sealed the Calamity \"Death,\", the one Divine Body closest to Aeon's own will. Inflict Silence and Taunt to limit her damage.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Ainosoracle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30410": {
+      "m_bError": null,
+      "m_MonsterID": "30410",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A junior monk of the Tempus Church. Enemies tainted by the Black Blood are set aflame under their candlestick.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_PureMonk_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30490": {
+      "m_bError": null,
+      "m_MonsterID": "30490",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature infected with Black Blood, now transformed into a beast. At low HP, its ATK Speed and DMG will increase.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Werewolf_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30510": {
+      "m_bError": null,
+      "m_MonsterID": "30510",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"This bat flies forward with blistering speed. Warriors or Defenders are ideal for blocking its swift onslaught.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Bat_Rush001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30520": {
+      "m_bError": null,
+      "m_MonsterID": "30520",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Proficient in melee combat, this sailor wields a hatchet with deadly precision. Once their HP is low, they commence self-healing. Concentrate fire to eliminate them quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorAxe_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30521": {
+      "m_bError": null,
+      "m_MonsterID": "30521",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"This sailor excels at ranged attacks. Once their HP is low, they commence self-healing. Concentrate fire to eliminate them quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorAxe_Base2001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30530": {
+      "m_bError": null,
+      "m_MonsterID": "30530",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Skilled in striking from afar, this sailor commences self-healing once their HP is low. As the battle unfolds, they swiftly mark targets and deal DMG. It's advised to steer clear of their attack range.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorBow_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30531": {
+      "m_bError": null,
+      "m_MonsterID": "30531",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A skilled marksman who can self-heal when at low HP. Once their <color=#D63536>chant is complete</color>, they will summon more sailors. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorBowSummon_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30550": {
+      "m_bError": null,
+      "m_MonsterID": "30550",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An immensely powerful creature. Its wide-reaching sweeps impacts all enemies in range. It is recommended to counter them with Defenders.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Werewolf_Final001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30560": {
+      "m_bError": null,
+      "m_MonsterID": "30560",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A bestial creature using blood magic. Their attacks bounce between enemies, and when their <color=#D63536>chant is complete</color>, they deal high DMG to the farthest enemy.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Werewolf_Staff001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30570": {
+      "m_bError": null,
+      "m_MonsterID": "30570",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A formidable soldier of the Silver Cross. Their weighty hammer possesses the ability to strike through targets, impacting enemies positioned behind.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Heavyhammer_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30580": {
+      "m_bError": null,
+      "m_MonsterID": "30580",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Infected Head Chef excels at dashing attacks. It is recommended to stay out of their attack range, or counter them with Defenders.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorDoctor_Zombie001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30590": {
+      "m_bError": null,
+      "m_MonsterID": "30590",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An infected first mate carrying explosives. When their <color=#D63536>chant is complete</color>, they throw a bomb dealing high DMG to surrounding enemies. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorElite_Zombie001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30600": {
+      "m_bError": null,
+      "m_MonsterID": "30600",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Infected Sailors use their Active Skills to target the farthest enemy. It is recommended to kill them first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorAxe_Zombie001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30610": {
+      "m_bError": null,
+      "m_MonsterID": "30610",
+      "m_MonsterType": "2",
+      "m_mIntroduce": "\"The captain of the \"El Dorado.\" Capable of dealing powerful, ranged single-target and AoE DMG. He restores HP for himself when his HP is low.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/C_Goldenland_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30620": {
+      "m_bError": null,
+      "m_MonsterID": "30620",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Pursuer of Wicked Blood. This entity brandishes mutated arms to inflict severe AoE DMG in a conical area. Matter spouted from these arms continually weaken enemies while dealing DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Goldenland_Zombie_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30630": {
+      "m_bError": null,
+      "m_MonsterID": "30630",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mysterious copy of Goldland. When it dies, it crumples into a slithering mass of mysterious flesh. Quickly eliminate all copies, or this entity will regenerate!\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Goldenland_Zombie_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30640": {
+      "m_bError": null,
+      "m_MonsterID": "30640",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"If left alone, these tentacles will deal high AoE DMG. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SirenTentacle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30650": {
+      "m_bError": null,
+      "m_MonsterID": "30650",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The form Ami takes after fusing with a Blood Beast by using the power of the Divine Body. She summons tentacles to attack, and defeating all tentacles will weaken Ranna. Once the first tentacle is defeated, Ranna begins to accumulate Hypertension.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Siren_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30660": {
+      "m_bError": null,
+      "m_MonsterID": "30660",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The wellspring of the plague and the harbinger of the Black Blood.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Plague_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30666": {
+      "m_bError": null,
+      "m_MonsterID": "30666",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Source of the Plague and spreader of Black Blood. When Sheila the Firstborn uses her Ultimate, she summons an army of Plague Hatchlings.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Plague_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30670": {
+      "m_bError": null,
+      "m_MonsterID": "30670",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A sailor wielding a greatsword who self-heals at low HP. At the start of the battle, they attack enemies in front of them. Stay out of range, or deploy a Defender.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorDoctor_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30680": {
+      "m_bError": null,
+      "m_MonsterID": "30680",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An experienced naval combatant and second mate. They self-heal when HP is low, and hurl bombs that deal AoE DMG. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorElite_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30700": {
+      "m_bError": null,
+      "m_MonsterID": "30700",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A melee creature mutated by Black Blood. Focus fire to eliminate quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_JellyfishMan_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30720": {
+      "m_bError": null,
+      "m_MonsterID": "30720",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A lowly cleric in the Tempus Church who uses incense to ward off Black Blood. When their <color=#D63536>chant is complete</color>, they heal nearby allies. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/C_PureMonk_Middle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30740": {
+      "m_bError": null,
+      "m_MonsterID": "30740",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A ranged creature mutated by Black Blood. When their <color=#D63536>chanting</color> is complete, they deal high DMG and inflict Stun. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_JellyfishManElite_Final001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30745": {
+      "m_bError": null,
+      "m_MonsterID": "30745",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A ranged creature mutated by Black Blood. Their blood orbs can penetrate targets. Keep your formation spread out.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_JellyfishManElite_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30750": {
+      "m_bError": null,
+      "m_MonsterID": "30750",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"If left alone, these tentacles will deal high AoE DMG. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SirenTentacle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30761": {
+      "m_bError": null,
+      "m_MonsterID": "30761",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Inhabited by a Lost Maiden. Will summon another Lost Maiden upon death.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/C_Conifer_Base_Weapon08001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30771": {
+      "m_bError": null,
+      "m_MonsterID": "30771",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Inhabited by a Lost Maiden. Will summon another Lost Maiden upon death.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/C_Conifer_BigMob001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30780": {
+      "m_bError": null,
+      "m_MonsterID": "30780",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The crab's body has been fully crystallized by salt. Land CRIT Hits to shatter the crystal and reduce its DEF.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Base_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30790": {
+      "m_bError": null,
+      "m_MonsterID": "30790",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The crab's body has been fully crystallized by salt. Land CRIT Hits to shatter the crystal, but be cautious of its corrosive acid that hits in a straight line.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Corruption_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30792": {
+      "m_bError": null,
+      "m_MonsterID": "30792",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An over-charged crab that can cast skills more frequently to deal DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Corruption_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30800": {
+      "m_bError": null,
+      "m_MonsterID": "30800",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A roamer of the beaches, this crab uses its sharp claws for melee attacks, allowing it to deal significant single-target DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30810": {
+      "m_bError": null,
+      "m_MonsterID": "30810",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A crab infected by Black Blood. When their <color=#D63536>chant is complete</color>, they spray acid, dealing high DMG to enemies. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Corruption001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30820": {
+      "m_bError": null,
+      "m_MonsterID": "30820",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"This wild boar excels in melee combat and has balanced attributes.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WildBoar_Black001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30830": {
+      "m_bError": null,
+      "m_MonsterID": "30830",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A wild boar with broken tusks. After a while, it will leave the battlefield to sleep and recover HP, but soon enters Frenzy upon waking. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WildBoar_Brown001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30840": {
+      "m_bError": null,
+      "m_MonsterID": "30840",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Infected with Black Blood, this wild boar rushes into battle. It is advised to either stay clear of its charge path or confront it with a Defender.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WildBoar_Corruption001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30850": {
+      "m_bError": null,
+      "m_MonsterID": "30850",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"This crab's body has been fully crystallized by salt. Land CRIT Hits to shatter the crystal and be sure to avoid its rushing attacks.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WildBoar_Black_Crysta001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30860": {
+      "m_bError": null,
+      "m_MonsterID": "30860",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A wandering apparition, it excels at haunting the unit near its target to launch attacks. It is advised to put the ranged Vassals in the back rows.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30870": {
+      "m_bError": null,
+      "m_MonsterID": "30870",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A wandering nightmare that continuously inflicts Sleep on enemies while <color=#D63536>channeling</color>. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Corruption001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30880": {
+      "m_bError": null,
+      "m_MonsterID": "30880",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mutated Black Blood creature excels in melee combat and deals significant single-target DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_OceanSpider_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30890": {
+      "m_bError": null,
+      "m_MonsterID": "30890",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature mutated by the Black Blood that approaches its target and self-destructs after <color=#D63536>chanting a spell</color>, dealing high AoE DMG. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_OceanSpiderMini_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30910": {
+      "m_bError": null,
+      "m_MonsterID": "30910",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that roams the unstable space that deals AoE DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Worm_Phy_Long001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30912": {
+      "m_bError": null,
+      "m_MonsterID": "30912",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A varmint born in an unstable space. Highly rich in energy, it can cast skills more frequently to deal DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Worm_Phy_Circle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30930": {
+      "m_bError": null,
+      "m_MonsterID": "30930",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast outside the sealed area. Burrows underground after taking heavy DMG, but can't escape ranged attacks.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mole_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30940": {
+      "m_bError": null,
+      "m_MonsterID": "30940",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast outside the sealed area. It has been sleeping underground, but approaching it will awaken Crystallized Moles who grant massive DEF. Attack before awakening them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mole_Middle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30960": {
+      "m_bError": null,
+      "m_MonsterID": "30960",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that roams through unstable space rifts. Its skills increase Vassals' Ultimate cost. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Worm_Phy_Circle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30970": {
+      "m_bError": null,
+      "m_MonsterID": "30970",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. It excels at area close combats and stuns the target after <color=#D63536>channeling</color>.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SaltGiant_Warrior001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30972": {
+      "m_bError": null,
+      "m_MonsterID": "30972",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Salt Effigy clad in powerful armor. Land multiple CRIT hits to shatter its defenses.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SaltGiant_Warrior001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30980": {
+      "m_bError": null,
+      "m_MonsterID": "30980",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. It excels at dashing and disrupting the targets' formation.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SaltGiant_Cavalry001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30990": {
+      "m_bError": null,
+      "m_MonsterID": "30990",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. It excels in chain attacks and deals continuous DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SaltGiant_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "30992": {
+      "m_bError": null,
+      "m_MonsterID": "30992",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An over-charged Salt Effigy that can cast skills more frequently to deal DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SaltGiant_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31000": {
+      "m_bError": null,
+      "m_MonsterID": "31000",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast outside the sealed area. Randomly targets ranged enemies, who will be assailed by Skeleton Crows if too sparse.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MutatedCrow_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31010": {
+      "m_bError": null,
+      "m_MonsterID": "31010",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Agares' flag-bearer. Boosts nearby soldiers' ATK and ATK SPD.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_FlagBearer_Red001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31020": {
+      "m_bError": null,
+      "m_MonsterID": "31020",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Joan's flag-bearer. Boosts nearby soldiers' ATK and DEF.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_FlagBearer_Blue001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31100": {
+      "m_bError": null,
+      "m_MonsterID": "31100",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast outside the sealed area. Self-destructs on death. Eliminate it quickly to avoid Self-destruct DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MutatedCrow_Middle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31200": {
+      "m_bError": null,
+      "m_MonsterID": "31200",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. Land CRIT Hits to shatter its crystal, reducing its DEF.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Swordsman_Final_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31300": {
+      "m_bError": null,
+      "m_MonsterID": "31300",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. Land CRIT Hits to shatter its crystal, reducing its DEF.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Wizard_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31320": {
+      "m_bError": null,
+      "m_MonsterID": "31320",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A wandering nightmare. Proficient in melee combat with balanced attributes.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Warrior001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31330": {
+      "m_bError": null,
+      "m_MonsterID": "31330",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An incarnation of the Calamity \"Death\", avoid getting too close when it charges up. Below certain HP, it plants a Seed of Calamity that Self-Destructs once charged up, dealing strong DMG to all enemies. Prioritize destroying the seed.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Lord001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31350": {
+      "m_bError": null,
+      "m_MonsterID": "31350",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Tentacles hidden beneath the deck can suddenly emerge, dealing strong AoE DMG. Stay alert and dodge!\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SirenTentacle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31351": {
+      "m_bError": null,
+      "m_MonsterID": "31351",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Tentacles hidden beneath the deck can suddenly emerge, dealing strong AoE DMG. Stay alert and dodge!\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SirenTentacle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31360": {
+      "m_bError": null,
+      "m_MonsterID": "31360",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A creature that roams through unstable space, capable of reducing damage taken.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Worm_Tank_Long001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31400": {
+      "m_bError": null,
+      "m_MonsterID": "31400",
+      "m_MonsterType": "2",
+      "m_mIntroduce": "\"A choir musician deals high DMG with their lute while increasing allies' damage output. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Choir_Elite001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31412": {
+      "m_bError": null,
+      "m_MonsterID": "31412",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Upon shattering the bones, deals massive DMG to Zagon and stuns it.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Bone_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31451": {
+      "m_bError": null,
+      "m_MonsterID": "31451",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Continuously recovers HP while inside its crystal tomb. Upon the destruction of the tomb, they will be re-awakened and join the battle. Prioritize destroying the tomb to prevent its recovery.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Corruption_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31590": {
+      "m_bError": null,
+      "m_MonsterID": "31590",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Bob's hook pulls Vassals close to deal strong DMG. Break the hook quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SailorCaptain_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31600": {
+      "m_bError": null,
+      "m_MonsterID": "31600",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"War Machines cast spells that envelop targets, dealing Continuous DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WarMachine_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31700": {
+      "m_bError": null,
+      "m_MonsterID": "31700",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"War Machines shoot arrows that penetrate targets, dealing Continuous DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_WarMachine_Archer001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31800": {
+      "m_bError": null,
+      "m_MonsterID": "31800",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast hidden in the sealed area, the Blood Beast uses its powerful claws to send out Shockwaves, reducing its target's Energy Regen Rate.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_BlackBloodBat_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31900": {
+      "m_bError": null,
+      "m_MonsterID": "31900",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blood Beast hidden in the sealed area. Uses its wings to generate Sound Waves which reduce the target's Energy Regen Rate.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_BlackBloodBat_Soldie001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31910": {
+      "m_bError": null,
+      "m_MonsterID": "31910",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A test subject No. 0 found on the island. After <color=#D63536>channeling</color>, this crab deals high DMG to enemies in a straight line. Interrupt quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Bottle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31920": {
+      "m_bError": null,
+      "m_MonsterID": "31920",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A test subject No. 2 found on the island. Its conch shell resists certain P. DMG. Use M. ATK to deal DMG.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Murex001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31930": {
+      "m_bError": null,
+      "m_MonsterID": "31930",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A test subject No. 1 found on the island. The barnacle will Self-Destruct to deal massive DMG to nearby enemies. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Barnacle001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "32000": {
+      "m_bError": null,
+      "m_MonsterID": "32000",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Agares enters Beast Form, enveloping himself with a fire shield as he begins to charge. Once his charging is complete, he releases his Ultimate to deal massive DMG as well as inflict Continuous DMG on all targets hit. To survive, one must break his shield quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Faust_Final001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "32100": {
+      "m_bError": null,
+      "m_MonsterID": "32100",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"If Piera's HP is above 15%, she will assist allies in battle.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/C_Paimile_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "32400": {
+      "m_bError": null,
+      "m_MonsterID": "32400",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A rough-skinned newt possessed by Famine. It summons young newts that Self-Destruct near enemies—eliminate them first. When it burrows, watch out for vortex coils.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_OceanSpider_Lord001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "40039": {
+      "m_bError": null,
+      "m_MonsterID": "40039",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Bell Ringer No. II utilizes flames to deal Continuous DMG as well as additional DMG. Dispel the Continuous DMG as soon as possible.\"",
+      "m_MonsterIcon": "\"Atlas_Role/Nikola_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "40040": {
+      "m_bError": null,
+      "m_MonsterID": "40040",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"After forming a covenant, Agares enters a special state when near death, significantly increasing the DMG he inflicts. Focus fire to eliminate him quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Role/Agares_Covenant_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50020": {
+      "m_bError": null,
+      "m_MonsterID": "50020",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Erupting Fungi are active and explode upon contact, dealing AoE DMG while also detonating other Erupting Fungi in range.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive3_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50040": {
+      "m_bError": null,
+      "m_MonsterID": "50040",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Attack powder kegs to create an enhanced tile, dealing DMG and inflicting Anti-healing on enemies.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive9_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50050": {
+      "m_bError": null,
+      "m_MonsterID": "50050",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Attack tipped-over powder kegs to make them roll and expand the terrain, or detonate other powder kegs.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive7_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50060": {
+      "m_bError": null,
+      "m_MonsterID": "50060",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The chandelier drops due to the shaking ship and smashes on the floor, dealing DMG and inflicting Stun.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive5_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50070": {
+      "m_bError": null,
+      "m_MonsterID": "50070",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The hatches will produce powerful Black Blood Mutant Sailors in battle. It is recommended to kill them first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Cabin01a_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50100": {
+      "m_bError": null,
+      "m_MonsterID": "50100",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Units that pass through the Werewolf's Blood Trail will be inflicted with Pestilence, taking DMG every sec but gaining DMG UP. This effect lasts until the end of the round.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive4_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50101": {
+      "m_bError": null,
+      "m_MonsterID": "50101",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Units crossing the Fungal Mucus can be periodically Bound.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive2_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50102": {
+      "m_bError": null,
+      "m_MonsterID": "50102",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Units within the Spore Circle are inflicted with All DMG Taken Up (Moderate) until they leave the area.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive10_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50103": {
+      "m_bError": null,
+      "m_MonsterID": "50103",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Flames in the cabin. Enemies will take DMG over time if standing in the flames.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive1_base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50108": {
+      "m_bError": null,
+      "m_MonsterID": "50108",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Use at select locations to gather all allies for a feast.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/propcard_03_dish001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50109": {
+      "m_bError": null,
+      "m_MonsterID": "50109",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Use at select locations to deal DMG and Stun nearby enemies for a period of time.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/propcard_05_coconut001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50110": {
+      "m_bError": null,
+      "m_MonsterID": "50110",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The cabin barrier which obstructs the movement of passengers. It is unbreakable and cannot be destroyed.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive_Obstacle_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50120": {
+      "m_bError": null,
+      "m_MonsterID": "50120",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Located around the deck, cannons may be adjusted to target enemies and deal significant DMG to units in range.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive_Gun_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50150": {
+      "m_bError": null,
+      "m_MonsterID": "50150",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An ancient nameless statue on the island. Upon defeat, deals DMG and inflicts Stun to nearby enemies.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_ArchedRock_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50160": {
+      "m_bError": null,
+      "m_MonsterID": "50160",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Deals AoE DMG. Keep out of its way.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/Interactive_OceanWave_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "50170": {
+      "m_bError": null,
+      "m_MonsterID": "50170",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Crabs will continuously emerge from the cave. Prioritize destroying the cave.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_CrabCave_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "60010": {
+      "m_bError": null,
+      "m_MonsterID": "60010",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Enveloped in nutrient solution, this failed copy loses additional HP upon receiving CRIT Hits.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Slime_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "60020": {
+      "m_bError": null,
+      "m_MonsterID": "60020",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Enveloped in nutrient solution, this failed copy loses additional HP upon receiving CRIT Hits.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Slime_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "60030": {
+      "m_bError": null,
+      "m_MonsterID": "60030",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Enveloped by nutrient solution, this failed copy leaps to the enemy with the highest ATK and begins launching AoE attacks. Remain vigilant during battle!\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Slime_Elite001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "60031": {
+      "m_bError": null,
+      "m_MonsterID": "60031",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Enveloped by nutrient solution, this failed copy deals heavy DMG from a distance. Prioritize their elimination in the battle.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Slime_EliteMage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    }
+  },
+  "status": "processed_129_items"
+}

@@ -1,0 +1,97 @@
+{
+  "className": "CData_CirculationType",
+  "timestamp": "2025-07-08T13:35:33.148Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_CirculationTypeID": "1",
+      "m_mCirculationName": "\"Awakening Ritual\"",
+      "m_CirculationType": "1",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": null,
+      "m_PropertyIndexID": "[1,2]",
+      "m_mValueDesc": "\"Increases all Vassals' HP and ATK.\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_CirculationTypeID": "2",
+      "m_mCirculationName": "\"Light Equipment\"",
+      "m_CirculationType": "2",
+      "m_EquipTypeID": "1",
+      "m_CharacterCampID": null,
+      "m_PropertyIndexID": "[1,3]",
+      "m_mValueDesc": "\"Increases HP and P. DEF of Vassals with Light Equipment.\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_CirculationTypeID": "3",
+      "m_mCirculationName": "\"Medium Equipment\"",
+      "m_CirculationType": "2",
+      "m_EquipTypeID": "2",
+      "m_CharacterCampID": null,
+      "m_PropertyIndexID": "[1,3]",
+      "m_mValueDesc": "\"Increases HP and P. DEF of Vassals with Medium Equipment.\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_CirculationTypeID": "4",
+      "m_mCirculationName": "\"Heavy Equipment\"",
+      "m_CirculationType": "2",
+      "m_EquipTypeID": "3",
+      "m_CharacterCampID": null,
+      "m_PropertyIndexID": "[1,3]",
+      "m_mValueDesc": "\"Increases HP and P. DEF of Vassals with Heavy Equipment.\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_CirculationTypeID": "5",
+      "m_mCirculationName": "\"Ancestry\"",
+      "m_CirculationType": "3",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": "1",
+      "m_PropertyIndexID": "[2,4]",
+      "m_mValueDesc": "\"Increases ATK and M. DEF of Ancestral Vassals.\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_CirculationTypeID": "6",
+      "m_mCirculationName": "\"Church\"",
+      "m_CirculationType": "3",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": "2",
+      "m_PropertyIndexID": "[2,4]",
+      "m_mValueDesc": "\"Increases ATK and M. DEF of Church Vassals.\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_CirculationTypeID": "7",
+      "m_mCirculationName": "\"Bloodborn\"",
+      "m_CirculationType": "3",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": "3",
+      "m_PropertyIndexID": "[2,4]",
+      "m_mValueDesc": "\"Increases ATK and M. DEF of Bloodborn Vassals.\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_CirculationTypeID": "8",
+      "m_mCirculationName": "\"Kingdom\"",
+      "m_CirculationType": "3",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": "4",
+      "m_PropertyIndexID": "[2,4]",
+      "m_mValueDesc": "\"Increases ATK and M. DEF of Kingdom Vassals.\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_CirculationTypeID": "9",
+      "m_mCirculationName": "\"Otherworldly\"",
+      "m_CirculationType": "3",
+      "m_EquipTypeID": null,
+      "m_CharacterCampID": "5",
+      "m_PropertyIndexID": "[2,4]",
+      "m_mValueDesc": "\"Increases ATK and M. DEF of Otherworldly Vassals.\""
+    }
+  },
+  "status": "processed_9_items"
+}

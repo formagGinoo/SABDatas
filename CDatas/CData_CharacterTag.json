@@ -1,0 +1,112 @@
+{
+  "className": "CData_CharacterTag",
+  "timestamp": "2025-07-08T13:35:26.990Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_TagID": "1",
+      "m_mTagName": "\"Single-Target DMG\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_TagID": "2",
+      "m_mTagName": "\"AoE DMG\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_TagID": "3",
+      "m_mTagName": "\"Bounce DMG\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_TagID": "4",
+      "m_mTagName": "\"Continuous DMG\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_TagID": "5",
+      "m_mTagName": "\"Buff\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_TagID": "6",
+      "m_mTagName": "\"Debuff\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_TagID": "7",
+      "m_mTagName": "\"Control\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_TagID": "8",
+      "m_mTagName": "\"Healing\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_TagID": "9",
+      "m_mTagName": "\"Shield\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_TagID": "10",
+      "m_mTagName": "\"Rush\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_TagID": "11",
+      "m_mTagName": "\"Teleport\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_TagID": "12",
+      "m_mTagName": "\"Target Lock\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_TagID": "13",
+      "m_mTagName": "\"Summon\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_TagID": "14",
+      "m_mTagName": "\"Purify\""
+    },
+    "15": {
+      "m_bError": null,
+      "m_TagID": "15",
+      "m_mTagName": "\"Dispel\""
+    },
+    "16": {
+      "m_bError": null,
+      "m_TagID": "16",
+      "m_mTagName": "\"Melee\""
+    },
+    "17": {
+      "m_bError": null,
+      "m_TagID": "17",
+      "m_mTagName": "\"Mid-Range\""
+    },
+    "18": {
+      "m_bError": null,
+      "m_TagID": "18",
+      "m_mTagName": "\"Ranged\""
+    },
+    "19": {
+      "m_bError": null,
+      "m_TagID": "19",
+      "m_mTagName": "\"Long-Range\""
+    },
+    "20": {
+      "m_bError": null,
+      "m_TagID": "20",
+      "m_mTagName": "\"Gather\""
+    },
+    "21": {
+      "m_bError": null,
+      "m_TagID": "21",
+      "m_mTagName": "\"Move\""
+    }
+  },
+  "status": "processed_21_items"
+}

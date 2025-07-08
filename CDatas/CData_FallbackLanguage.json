@@ -1,0 +1,126 @@
+{
+  "className": "CData_FallbackLanguage",
+  "timestamp": "2025-07-08T13:35:34.079Z",
+  "data": {
+    "\"and_usa\"": {
+      "m_bError": null,
+      "m_channel": "\"and_usa\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"win_eu\"": {
+      "m_bError": null,
+      "m_channel": "\"win_eu\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    },
+    "\"and_jp\"": {
+      "m_bError": null,
+      "m_channel": "\"and_jp\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"and_cn\"": {
+      "m_bError": null,
+      "m_channel": "\"and_cn\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"and_cn_channel\"": {
+      "m_bError": null,
+      "m_channel": "\"and_cn_channel\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"and_cn_bili\"": {
+      "m_bError": null,
+      "m_channel": "\"and_cn_bili\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"and_ap\"": {
+      "m_bError": null,
+      "m_channel": "\"and_ap\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"and_eu\"": {
+      "m_bError": null,
+      "m_channel": "\"and_eu\"",
+      "m_ios": "[]",
+      "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
+      "m_windows": "[]"
+    },
+    "\"ios_usa\"": {
+      "m_bError": null,
+      "m_channel": "\"ios_usa\"",
+      "m_ios": "[\"SFUI\",\"PingFangSC-Regular\",\"PingFang:PingFangSC-Regular\",\"PingFangTC-Regular\",\"PingFang:PingFangTC-Regular\",\"HiraginoSans-W3\",\"HiraginoKakuGothic:HiraginoSans-W3\",\"AppleSDGothicNeo-Regular\",\"AppleSDGothicNeo:AppleSDGothicNeo-Regular\",\"Thonburi\",\"Thonburi:Thonburi-Regular\"]",
+      "m_android": "[]",
+      "m_windows": "[]"
+    },
+    "\"ios_jp\"": {
+      "m_bError": null,
+      "m_channel": "\"ios_jp\"",
+      "m_ios": "[\"SFUI\",\"PingFangSC-Regular\",\"PingFang:PingFangSC-Regular\",\"PingFangTC-Regular\",\"PingFang:PingFangTC-Regular\",\"HiraginoSans-W3\",\"HiraginoKakuGothic:HiraginoSans-W3\",\"AppleSDGothicNeo-Regular\",\"AppleSDGothicNeo:AppleSDGothicNeo-Regular\",\"Thonburi\",\"Thonburi:Thonburi-Regular\"]",
+      "m_android": "[]",
+      "m_windows": "[]"
+    },
+    "\"ios_cn\"": {
+      "m_bError": null,
+      "m_channel": "\"ios_cn\"",
+      "m_ios": "[\"SFUI\",\"PingFangSC-Regular\",\"PingFang:PingFangSC-Regular\",\"PingFangTC-Regular\",\"PingFang:PingFangTC-Regular\",\"HiraginoSans-W3\",\"HiraginoKakuGothic:HiraginoSans-W3\",\"AppleSDGothicNeo-Regular\",\"AppleSDGothicNeo:AppleSDGothicNeo-Regular\",\"Thonburi\",\"Thonburi:Thonburi-Regular\"]",
+      "m_android": "[]",
+      "m_windows": "[]"
+    },
+    "\"ios_ap\"": {
+      "m_bError": null,
+      "m_channel": "\"ios_ap\"",
+      "m_ios": "[\"SFUI\",\"PingFangSC-Regular\",\"PingFang:PingFangSC-Regular\",\"PingFangTC-Regular\",\"PingFang:PingFangTC-Regular\",\"HiraginoSans-W3\",\"HiraginoKakuGothic:HiraginoSans-W3\",\"AppleSDGothicNeo-Regular\",\"AppleSDGothicNeo:AppleSDGothicNeo-Regular\",\"Thonburi\",\"Thonburi:Thonburi-Regular\"]",
+      "m_android": "[]",
+      "m_windows": "[]"
+    },
+    "\"ios_eu\"": {
+      "m_bError": null,
+      "m_channel": "\"ios_eu\"",
+      "m_ios": "[\"SFUI\",\"PingFangSC-Regular\",\"PingFang:PingFangSC-Regular\",\"PingFangTC-Regular\",\"PingFang:PingFangTC-Regular\",\"HiraginoSans-W3\",\"HiraginoKakuGothic:HiraginoSans-W3\",\"AppleSDGothicNeo-Regular\",\"AppleSDGothicNeo:AppleSDGothicNeo-Regular\",\"Thonburi\",\"Thonburi:Thonburi-Regular\"]",
+      "m_android": "[]",
+      "m_windows": "[]"
+    },
+    "\"win_ap_dmm\"": {
+      "m_bError": null,
+      "m_channel": "\"win_ap_dmm\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    },
+    "\"win_ap\"": {
+      "m_bError": null,
+      "m_channel": "\"win_ap\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    },
+    "\"win_usa\"": {
+      "m_bError": null,
+      "m_channel": "\"win_usa\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    },
+    "\"win_cn\"": {
+      "m_bError": null,
+      "m_channel": "\"win_cn\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    }
+  },
+  "status": "processed_17_items"
+}

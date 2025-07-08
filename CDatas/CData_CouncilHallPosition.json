@@ -1,0 +1,37 @@
+{
+  "className": "CData_CouncilHallPosition",
+  "timestamp": "2025-07-08T13:35:33.410Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_SceneType": "1",
+      "m_PositionList": "[3]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_SceneType": "1",
+      "m_PositionList": "[3,4]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_SceneType": "1",
+      "m_PositionList": "[2,3,4]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_SceneType": "1",
+      "m_PositionList": "[2,3,4,5]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_SceneType": "1",
+      "m_PositionList": "[1,2,3,4,5]"
+    }
+  },
+  "status": "processed_5_items"
+}

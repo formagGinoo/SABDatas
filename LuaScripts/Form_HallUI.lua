@@ -1,0 +1,19 @@
+local Form_HallUI = class("Form_HallUI", require("UI/Common/UIBase"))
+
+function Form_HallUI:Init(gameObject, csui)
+  if gameObject == nil then
+    return
+  end
+  self.m_csui = csui
+  CS.UI.UILuaHelper.BindViewObjects(self, self.m_csui)
+end
+
+function Form_HallUI:GetID()
+  return UIDefines.ID_FORM_HALL
+end
+
+function Form_HallUI:GetFramePrefabName()
+  return "Form_Hall"
+end
+
+return Form_HallUI

@@ -1,0 +1,340 @@
+{
+  "className": "CData_CineInLoading",
+  "timestamp": "2025-07-08T13:35:27.126Z",
+  "data": {
+    "11": {
+      "m_bError": null,
+      "m_GroupID": "11",
+      "m_TitleID": "200001",
+      "m_DescID": "210001",
+      "m_Picture": "\"loading_battle_s13\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,0,0]"
+    },
+    "12": {
+      "m_bError": null,
+      "m_GroupID": "12",
+      "m_TitleID": "200001",
+      "m_DescID": "210001",
+      "m_Picture": "\"loading_battle_s13\"",
+      "m_Type": "2",
+      "m_Data": "[4,0,0,0]"
+    },
+    "13": {
+      "m_bError": null,
+      "m_GroupID": "13",
+      "m_TitleID": "200001",
+      "m_DescID": "210001",
+      "m_Picture": "\"loading_battle_s13\"",
+      "m_Type": "2",
+      "m_Data": "[3,0,0,0]"
+    },
+    "14": {
+      "m_bError": null,
+      "m_GroupID": "14",
+      "m_TitleID": "200001",
+      "m_DescID": "210001",
+      "m_Picture": "\"loading_battle_s13\"",
+      "m_Type": "2",
+      "m_Data": "[10,0,0,0]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_GroupID": "21",
+      "m_TitleID": "200002",
+      "m_DescID": "210002",
+      "m_Picture": "\"loading_battle_s14\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,0,0]"
+    },
+    "22": {
+      "m_bError": null,
+      "m_GroupID": "22",
+      "m_TitleID": "200002",
+      "m_DescID": "210002",
+      "m_Picture": "\"loading_battle_s14\"",
+      "m_Type": "2",
+      "m_Data": "[4,0,0,0]"
+    },
+    "23": {
+      "m_bError": null,
+      "m_GroupID": "23",
+      "m_TitleID": "200002",
+      "m_DescID": "210002",
+      "m_Picture": "\"loading_battle_s14\"",
+      "m_Type": "2",
+      "m_Data": "[3,0,0,0]"
+    },
+    "24": {
+      "m_bError": null,
+      "m_GroupID": "24",
+      "m_TitleID": "200002",
+      "m_DescID": "210002",
+      "m_Picture": "\"loading_battle_s14\"",
+      "m_Type": "2",
+      "m_Data": "[10,0,0,0]"
+    },
+    "31": {
+      "m_bError": null,
+      "m_GroupID": "31",
+      "m_TitleID": "200003",
+      "m_DescID": "210003",
+      "m_Picture": "\"loading_battle_s8\"",
+      "m_Type": "1",
+      "m_Data": "[0]"
+    },
+    "41": {
+      "m_bError": null,
+      "m_GroupID": "41",
+      "m_TitleID": "200004",
+      "m_DescID": "210004",
+      "m_Picture": "\"loading_battle_s9\"",
+      "m_Type": "1",
+      "m_Data": "[0]"
+    },
+    "51": {
+      "m_bError": null,
+      "m_GroupID": "51",
+      "m_TitleID": "200005",
+      "m_DescID": "210005",
+      "m_Picture": "\"loading_battle_s11\"",
+      "m_Type": "1",
+      "m_Data": "[0]"
+    },
+    "61": {
+      "m_bError": null,
+      "m_GroupID": "61",
+      "m_TitleID": "200006",
+      "m_DescID": "210006",
+      "m_Picture": "\"loading_battle_s6\"",
+      "m_Type": "1",
+      "m_Data": "[0]"
+    },
+    "71": {
+      "m_bError": null,
+      "m_GroupID": "71",
+      "m_TitleID": "200007",
+      "m_DescID": "210007",
+      "m_Picture": "\"loading_battle_s3\"",
+      "m_Type": "1",
+      "m_Data": "[0]"
+    },
+    "81": {
+      "m_bError": null,
+      "m_GroupID": "81",
+      "m_TitleID": "200008",
+      "m_DescID": "210008",
+      "m_Picture": "\"loading_battle_s5\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,3,0]"
+    },
+    "82": {
+      "m_bError": null,
+      "m_GroupID": "82",
+      "m_TitleID": "200008",
+      "m_DescID": "210008",
+      "m_Picture": "\"loading_battle_s5\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,4,0]"
+    },
+    "83": {
+      "m_bError": null,
+      "m_GroupID": "83",
+      "m_TitleID": "200008",
+      "m_DescID": "210008",
+      "m_Picture": "\"loading_battle_s5\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,5,0]"
+    },
+    "84": {
+      "m_bError": null,
+      "m_GroupID": "84",
+      "m_TitleID": "200008",
+      "m_DescID": "210008",
+      "m_Picture": "\"loading_battle_s5\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,6,0]"
+    },
+    "91": {
+      "m_bError": null,
+      "m_GroupID": "91",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,3,0]"
+    },
+    "92": {
+      "m_bError": null,
+      "m_GroupID": "92",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,4,0]"
+    },
+    "93": {
+      "m_bError": null,
+      "m_GroupID": "93",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,5,0]"
+    },
+    "94": {
+      "m_bError": null,
+      "m_GroupID": "94",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,6,0]"
+    },
+    "95": {
+      "m_bError": null,
+      "m_GroupID": "95",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[2,2,0,0]"
+    },
+    "96": {
+      "m_bError": null,
+      "m_GroupID": "96",
+      "m_TitleID": "200009",
+      "m_DescID": "210009",
+      "m_Picture": "\"loading_battle_s10\"",
+      "m_Type": "2",
+      "m_Data": "[2,5,0,0]"
+    },
+    "101": {
+      "m_bError": null,
+      "m_GroupID": "101",
+      "m_TitleID": "200010",
+      "m_DescID": "210010",
+      "m_Picture": "\"loading_battle_s4\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,7,0]"
+    },
+    "102": {
+      "m_bError": null,
+      "m_GroupID": "102",
+      "m_TitleID": "200010",
+      "m_DescID": "210010",
+      "m_Picture": "\"loading_battle_s4\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,8,0]"
+    },
+    "103": {
+      "m_bError": null,
+      "m_GroupID": "103",
+      "m_TitleID": "200010",
+      "m_DescID": "210010",
+      "m_Picture": "\"loading_battle_s4\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,9,0]"
+    },
+    "104": {
+      "m_bError": null,
+      "m_GroupID": "104",
+      "m_TitleID": "200010",
+      "m_DescID": "210010",
+      "m_Picture": "\"loading_battle_s4\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,10,0]"
+    },
+    "111": {
+      "m_bError": null,
+      "m_GroupID": "111",
+      "m_TitleID": "200011",
+      "m_DescID": "210011",
+      "m_Picture": "\"loading_battle_s7\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,9,0]"
+    },
+    "112": {
+      "m_bError": null,
+      "m_GroupID": "112",
+      "m_TitleID": "200011",
+      "m_DescID": "210011",
+      "m_Picture": "\"loading_battle_s7\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,10,0]"
+    },
+    "121": {
+      "m_bError": null,
+      "m_GroupID": "121",
+      "m_TitleID": "200012",
+      "m_DescID": "210012",
+      "m_Picture": "\"loading_battle_s1\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,11,0]"
+    },
+    "122": {
+      "m_bError": null,
+      "m_GroupID": "122",
+      "m_TitleID": "200012",
+      "m_DescID": "210012",
+      "m_Picture": "\"loading_battle_s1\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,12,0]"
+    },
+    "123": {
+      "m_bError": null,
+      "m_GroupID": "123",
+      "m_TitleID": "200012",
+      "m_DescID": "210012",
+      "m_Picture": "\"loading_battle_s1\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,13,0]"
+    },
+    "124": {
+      "m_bError": null,
+      "m_GroupID": "124",
+      "m_TitleID": "200012",
+      "m_DescID": "210012",
+      "m_Picture": "\"loading_battle_s1\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,14,0]"
+    },
+    "131": {
+      "m_bError": null,
+      "m_GroupID": "131",
+      "m_TitleID": "200013",
+      "m_DescID": "210013",
+      "m_Picture": "\"loading_battle_s12\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,17,0]"
+    },
+    "141": {
+      "m_bError": null,
+      "m_GroupID": "141",
+      "m_TitleID": "200014",
+      "m_DescID": "210014",
+      "m_Picture": "\"loading_battle_s2\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,15,0]"
+    },
+    "142": {
+      "m_bError": null,
+      "m_GroupID": "142",
+      "m_TitleID": "200014",
+      "m_DescID": "210014",
+      "m_Picture": "\"loading_battle_s2\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,16,0]"
+    },
+    "143": {
+      "m_bError": null,
+      "m_GroupID": "143",
+      "m_TitleID": "200014",
+      "m_DescID": "210014",
+      "m_Picture": "\"loading_battle_s2\"",
+      "m_Type": "2",
+      "m_Data": "[1,0,17,0]"
+    }
+  },
+  "status": "processed_37_items"
+}

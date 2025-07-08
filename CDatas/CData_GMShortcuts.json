@@ -1,0 +1,97 @@
+{
+  "className": "CData_GMShortcuts",
+  "timestamp": "2025-07-08T13:35:34.234Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_Index": "1",
+      "m_Name": "\"全角色\"",
+      "m_Command": "\"add_all_hero UID\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_Index": "2",
+      "m_Name": "\"200级全角色\"",
+      "m_Command": "\"add_all_hero UID 200 4\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_Index": "3",
+      "m_Name": "\"全道具\"",
+      "m_Command": "\"add_all_item UID\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_Index": "4",
+      "m_Name": "\"全装备\"",
+      "m_Command": "\"add_all_equip UID\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_Index": "5",
+      "m_Name": "\"全遗产\"",
+      "m_Command": "\"add_all_legacy UID\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_Index": "6",
+      "m_Name": "\"大量养成资源\"",
+      "m_Command": "\"add_item UID 999 10000000000|add_item UID 1001 10000000000|add_item UID 1002 100000000\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_Index": "7",
+      "m_Name": "\"大量装备养成\"",
+      "m_Command": "\"add_item UID 1101 3000|add_item UID 1102 1000|add_item UID 1070 30\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_Index": "8",
+      "m_Name": "\"大量钻石\"",
+      "m_Command": "\"add_item UID 100 100000|add_item UID 101 100000\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_Index": "9",
+      "m_Name": "\"大量代金券\"",
+      "m_Command": "\"add_item UID 2 100000\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_Index": "10",
+      "m_Name": "\"跳过所有引导\"",
+      "m_Command": "\"pass_all_guide UID\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_Index": "11",
+      "m_Name": "\"清除特殊引导\"",
+      "m_Command": "\"clear_guide UID 999999\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_Index": "12",
+      "m_Name": "\"通关全部主线\"",
+      "m_Command": "\"pass_all_stage_main UID\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_Index": "13",
+      "m_Name": "\"清除主线进度\"",
+      "m_Command": "\"clear_all_stage UID 1\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_Index": "14",
+      "m_Name": "\"刷新所有日常次数\"",
+      "m_Command": "\"daily_refresh UID\""
+    },
+    "15": {
+      "m_bError": null,
+      "m_Index": "15",
+      "m_Name": "\"清除账号（需重新登陆）\"",
+      "m_Command": "\"del_role UID\""
+    }
+  },
+  "status": "processed_15_items"
+}

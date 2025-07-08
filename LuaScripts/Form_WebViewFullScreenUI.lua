@@ -1,0 +1,19 @@
+local Form_WebViewFullScreenUI = class("Form_WebViewFullScreenUI", require("UI/Common/UIBase"))
+
+function Form_WebViewFullScreenUI:Init(gameObject, csui)
+  if gameObject == nil then
+    return
+  end
+  self.m_csui = csui
+  CS.UI.UILuaHelper.BindViewObjects(self, self.m_csui)
+end
+
+function Form_WebViewFullScreenUI:GetID()
+  return UIDefines.ID_FORM_WEBVIEWFULLSCREEN
+end
+
+function Form_WebViewFullScreenUI:GetFramePrefabName()
+  return "Form_WebViewFullScreen"
+end
+
+return Form_WebViewFullScreenUI

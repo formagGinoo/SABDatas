@@ -1,0 +1,49 @@
+{
+  "className": "CData_MainBackground",
+  "timestamp": "2025-07-08T13:35:35.618Z",
+  "data": {
+    "1600001": {
+      "m_bError": null,
+      "m_BDID": "1600001",
+      "m_mBDName": "\"Black Blood and Silver Hair\"",
+      "m_DefaultType": "1",
+      "m_Prefabs": "\"ui_panel_bgmain\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner01\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_01\"",
+      "m_mGetwayDes": "\"Unlocked by default.\"",
+      "m_mItemName": "\"Memory: Black Blood and Silver Hair\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_01_s\"",
+      "m_mItemDec": "\"\"",
+      "m_HideType": null
+    },
+    "1600002": {
+      "m_bError": null,
+      "m_BDID": "1600002",
+      "m_mBDName": "\"Far Side of the Moon\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg101lamia\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner02\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_02\"",
+      "m_mGetwayDes": "\"Far Side of the Moon Redemption\"",
+      "m_mItemName": "\"Memory: Far Side of the Moon\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_02_s\"",
+      "m_mItemDec": "\"Unlock the Far Side of the Moon in [Customize] - Memories.\n<alpha=#80>Ambling down the dim corridor, will the moon present itself to me at long last?\"",
+      "m_HideType": "1"
+    },
+    "1600003": {
+      "m_bError": null,
+      "m_BDID": "1600003",
+      "m_mBDName": "\"As Tears Fade Into The Sunset\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg102dalcaro\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner03\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_03\"",
+      "m_mGetwayDes": "\"As Tears Fade Into The Sunset Redemption\"",
+      "m_mItemName": "\"Memory: As Tears Fade Into The Sunset\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
+      "m_mItemDec": "\"Unlock the Scene As Tears Fade Into The Sunset in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
+      "m_HideType": "1"
+    }
+  },
+  "status": "processed_3_items"
+}

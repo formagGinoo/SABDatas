@@ -1,0 +1,34 @@
+{
+  "className": "CData_EquipType",
+  "timestamp": "2025-07-08T13:35:34.077Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_EquiptypeID": "1",
+      "m_mEquiptypeName": "\"Light\"",
+      "m_mEquiptypeDesc": "\"It fits light equipment, offering outstanding attack.\"",
+      "m_EquiptypeIcon": "\"Atlas_EquipType/EquipType_Light\"",
+      "m_FilterIcon": "\"Atlas_EquipType/EquipType_Light_Filter\"",
+      "m_CirculationIcon": "\"Atlas_EquipType/EquipType_Light_2\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_EquiptypeID": "2",
+      "m_mEquiptypeName": "\"Medium\"",
+      "m_mEquiptypeDesc": "\"It fits medium equipment, offering balanced attributes.\"",
+      "m_EquiptypeIcon": "\"Atlas_EquipType/EquipType_Medium\"",
+      "m_FilterIcon": "\"Atlas_EquipType/EquipType_Medium_Filter\"",
+      "m_CirculationIcon": "\"Atlas_EquipType/EquipType_Medium_2\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_EquiptypeID": "3",
+      "m_mEquiptypeName": "\"Heavy\"",
+      "m_mEquiptypeDesc": "\"It fits heavy equipment, offering outstanding survival.\"",
+      "m_EquiptypeIcon": "\"Atlas_EquipType/EquipType_Heavy\"",
+      "m_FilterIcon": "\"Atlas_EquipType/EquipType_Heavy_Filter\"",
+      "m_CirculationIcon": "\"Atlas_EquipType/EquipType_Heavy_2\""
+    }
+  },
+  "status": "processed_3_items"
+}

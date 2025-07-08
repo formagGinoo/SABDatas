@@ -1,0 +1,1951 @@
+{
+  "className": "CData_BattleResultCondition",
+  "timestamp": "2025-07-08T13:35:24.188Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mDesc": "\"Eliminate all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mDesc": "\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10200080]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_mDesc": "\"\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[102]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_mDesc": "\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10200060]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_mDesc": "\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[2,101]"
+    },
+    "3101": {
+      "m_bError": null,
+      "m_ID": "3101",
+      "m_mDesc": "\"Repel the wolves.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3102": {
+      "m_bError": null,
+      "m_ID": "3102",
+      "m_mDesc": "\"Rescue the <#A65F30>Knight</color> and drive back the wolves.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,3102]"
+    },
+    "3103": {
+      "m_bError": null,
+      "m_ID": "3103",
+      "m_mDesc": "\"Repel the wolves.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3120": {
+      "m_bError": null,
+      "m_ID": "3120",
+      "m_mDesc": "\"Defeat <#A65F30>Clive</color>, the Gravekeeper.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3201": {
+      "m_bError": null,
+      "m_ID": "3201",
+      "m_mDesc": "\"Have a friendly competition with <#A65F30>Sir Gadric</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3303": {
+      "m_bError": null,
+      "m_ID": "3303",
+      "m_mDesc": "\"Defeat Hati and the infected villagers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3401": {
+      "m_bError": null,
+      "m_ID": "3401",
+      "m_mDesc": "\"Defeat attacking enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3402": {
+      "m_bError": null,
+      "m_ID": "3402",
+      "m_mDesc": "\"Defeat attacking enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3500": {
+      "m_bError": null,
+      "m_ID": "3500",
+      "m_mDesc": "\"Free the infected villagers from their suffering.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "3700": {
+      "m_bError": null,
+      "m_ID": "3700",
+      "m_mDesc": "\"Defeat the enemies and secure the safety of <#A65F30>the man in monk's robes</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,3700]"
+    },
+    "207001": {
+      "m_bError": null,
+      "m_ID": "207001",
+      "m_mDesc": "\"Don't let more than <#A65F30>100000</color> Mausoleum phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,207001]"
+    },
+    "1000401": {
+      "m_bError": null,
+      "m_ID": "1000401",
+      "m_mDesc": "\"Break the seal of the forbidden grounds.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000402": {
+      "m_bError": null,
+      "m_ID": "1000402",
+      "m_mDesc": "\"Repel the pursuing church soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000403": {
+      "m_bError": null,
+      "m_ID": "1000403",
+      "m_mDesc": "\"Survive assault of the Church for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000404": {
+      "m_bError": null,
+      "m_ID": "1000404",
+      "m_mDesc": "\"Defeat the attacking Mutated Sacrifices.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000405": {
+      "m_bError": null,
+      "m_ID": "1000405",
+      "m_mDesc": "\"Defeat the Mutated Sacrifices with <#A65F30>Erupting Fungus</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000406": {
+      "m_bError": null,
+      "m_ID": "1000406",
+      "m_mDesc": "\"Repel the relentless Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000407": {
+      "m_bError": null,
+      "m_ID": "1000407",
+      "m_mDesc": "\"Rescue the <#A65F30>lamb</color> and ensure its safety.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,1000407]"
+    },
+    "1000408": {
+      "m_bError": null,
+      "m_ID": "1000408",
+      "m_mDesc": "\"Defeat the Plague Hatchlings.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[100,1000408]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000409": {
+      "m_bError": null,
+      "m_ID": "1000409",
+      "m_mDesc": "\"Repel the mutated <#A65F30>Clive Jr.</color>\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1000409]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000410": {
+      "m_bError": null,
+      "m_ID": "1000410",
+      "m_mDesc": "\"Defeat the Plague Hatchlings.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000411": {
+      "m_bError": null,
+      "m_ID": "1000411",
+      "m_mDesc": "\"Defeat the attacking Mutated Sacrifices.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000412": {
+      "m_bError": null,
+      "m_ID": "1000412",
+      "m_mDesc": "\"Defeat the Plague Hatchlings.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000413": {
+      "m_bError": null,
+      "m_ID": "1000413",
+      "m_mDesc": "\"Defeat the Mutated Sacrifices and stop the ritual.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000414": {
+      "m_bError": null,
+      "m_ID": "1000414",
+      "m_mDesc": "\"Defeat the Plague Hatchlings in front of Sheila's remains.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000415": {
+      "m_bError": null,
+      "m_ID": "1000415",
+      "m_mDesc": "\"Defeat <#A65F30>Sheila the Firstborn, \"Child of the Plague\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000416": {
+      "m_bError": null,
+      "m_ID": "1000416",
+      "m_mDesc": "\"Bid farewell to <#A65F30>Clive</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000501": {
+      "m_bError": null,
+      "m_ID": "1000501",
+      "m_mDesc": "\"Defeat the Serious Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000502": {
+      "m_bError": null,
+      "m_ID": "1000502",
+      "m_mDesc": "\"Defeat the First Mate's Loyal Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000503": {
+      "m_bError": null,
+      "m_ID": "1000503",
+      "m_mDesc": "\"Survive Van Helsing's barrage.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000504": {
+      "m_bError": null,
+      "m_ID": "1000504",
+      "m_mDesc": "\"Defeat the hostile Church Knights.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000505": {
+      "m_bError": null,
+      "m_ID": "1000505",
+      "m_mDesc": "\"Withstand Bob's attack.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000506": {
+      "m_bError": null,
+      "m_ID": "1000506",
+      "m_mDesc": "\"Defeat the Crazed Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000507": {
+      "m_bError": null,
+      "m_ID": "1000507",
+      "m_mDesc": "\"Defeat the Crazed Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000508": {
+      "m_bError": null,
+      "m_ID": "1000508",
+      "m_mDesc": "\"Defeat Bob.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1000508]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000509": {
+      "m_bError": null,
+      "m_ID": "1000509",
+      "m_mDesc": "\"Defeat the Crazed Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000510": {
+      "m_bError": null,
+      "m_ID": "1000510",
+      "m_mDesc": "\"Defeat infected William and Mutated Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000511": {
+      "m_bError": null,
+      "m_ID": "1000511",
+      "m_mDesc": "\"Defeat infected William and Mutated Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000512": {
+      "m_bError": null,
+      "m_ID": "1000512",
+      "m_mDesc": "\"Defeat the Blood Beasts emerging from incubation pods.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000513": {
+      "m_bError": null,
+      "m_ID": "1000513",
+      "m_mDesc": "\"Defeat the descending Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000514": {
+      "m_bError": null,
+      "m_ID": "1000514",
+      "m_mDesc": "\"Defeat William.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1000510]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000515": {
+      "m_bError": null,
+      "m_ID": "1000515",
+      "m_mDesc": "\"Defeat the Blood Beasts emerging from incubation pods.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000516": {
+      "m_bError": null,
+      "m_ID": "1000516",
+      "m_mDesc": "\"Defeat <#A65F30>William</color>, who is now lost to Black Blood.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000601": {
+      "m_bError": null,
+      "m_ID": "1000601",
+      "m_mDesc": "\"Protect <#A65F30>Insatiable Hati</color> and defeat the Blood Beasts and Mutated Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10006011]"
+    },
+    "1000602": {
+      "m_bError": null,
+      "m_ID": "1000602",
+      "m_mDesc": "\"Defeat the Blood Beasts and Mutated Sailors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000603": {
+      "m_bError": null,
+      "m_ID": "1000603",
+      "m_mDesc": "\"Defeat the Blood Beasts and break free from Famine's control.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000604": {
+      "m_bError": null,
+      "m_ID": "1000604",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000605": {
+      "m_bError": null,
+      "m_ID": "1000605",
+      "m_mDesc": "\"Defeat the Tentacles and Blood Beasts in the Spirit Realm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000606": {
+      "m_bError": null,
+      "m_ID": "1000606",
+      "m_mDesc": "\"Defeat <#A65F30>Insatiable William</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10006061]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000607": {
+      "m_bError": null,
+      "m_ID": "1000607",
+      "m_mDesc": "\"Survive the Blood Beasts.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000608": {
+      "m_bError": null,
+      "m_ID": "1000608",
+      "m_mDesc": "\"Defeat the Insatiable Newt.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10006081]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000609": {
+      "m_bError": null,
+      "m_ID": "1000609",
+      "m_mDesc": "\"Protect <#A65F30>Sailor Jack</color> and defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10006091]"
+    },
+    "1000610": {
+      "m_bError": null,
+      "m_ID": "1000610",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000611": {
+      "m_bError": null,
+      "m_ID": "1000611",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000612": {
+      "m_bError": null,
+      "m_ID": "1000612",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000613": {
+      "m_bError": null,
+      "m_ID": "1000613",
+      "m_mDesc": "\"Defeat the Blood Beasts on the deck.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000614": {
+      "m_bError": null,
+      "m_ID": "1000614",
+      "m_mDesc": "\"Use <#A65F30>cannons</color> to create an escape route from the surrounding Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10006141]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000615": {
+      "m_bError": null,
+      "m_ID": "1000615",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000616": {
+      "m_bError": null,
+      "m_ID": "1000616",
+      "m_mDesc": "\"Defeat Atoll Devourer <#A65F30>Ranna</color>, Seed of Famine.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10006161]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000801": {
+      "m_bError": null,
+      "m_ID": "1000801",
+      "m_mDesc": "\"Defeat the attacking Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000802": {
+      "m_bError": null,
+      "m_ID": "1000802",
+      "m_mDesc": "\"Defeat the attacking Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000803": {
+      "m_bError": null,
+      "m_ID": "1000803",
+      "m_mDesc": "\"Defeat the attacking Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000804": {
+      "m_bError": null,
+      "m_ID": "1000804",
+      "m_mDesc": "\"Stop Dreamfeeders from devouring Wild Boars and defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000805": {
+      "m_bError": null,
+      "m_ID": "1000805",
+      "m_mDesc": "\"Protect <#A65F30>Jason</color> and defeat the attacking Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10070912]"
+    },
+    "1000806": {
+      "m_bError": null,
+      "m_ID": "1000806",
+      "m_mDesc": "\"Defeat Sora and the attacking Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000807": {
+      "m_bError": null,
+      "m_ID": "1000807",
+      "m_mDesc": "\"Defeat the Choristers and Church Soilders.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000808": {
+      "m_bError": null,
+      "m_ID": "1000808",
+      "m_mDesc": "\"Defeat the Choristers and Tris's party.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000809": {
+      "m_bError": null,
+      "m_ID": "1000809",
+      "m_mDesc": "\"Defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000810": {
+      "m_bError": null,
+      "m_ID": "1000810",
+      "m_mDesc": "\"Defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000811": {
+      "m_bError": null,
+      "m_ID": "1000811",
+      "m_mDesc": "\"Defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000812": {
+      "m_bError": null,
+      "m_ID": "1000812",
+      "m_mDesc": "\"Defeat Agares and the Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000813": {
+      "m_bError": null,
+      "m_ID": "1000813",
+      "m_mDesc": "\"Withstand the Bell Ringer's attack.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1000814": {
+      "m_bError": null,
+      "m_ID": "1000814",
+      "m_mDesc": "\"Defeat the Illusion of \"Death.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1000814]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000815": {
+      "m_bError": null,
+      "m_ID": "1000815",
+      "m_mDesc": "\"Defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000816": {
+      "m_bError": null,
+      "m_ID": "1000816",
+      "m_mDesc": "\"Defeat <#A65F30>the Phantom of Aeon</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000901": {
+      "m_bError": null,
+      "m_ID": "1000901",
+      "m_mDesc": "\"Defeat the attacking Church soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000902": {
+      "m_bError": null,
+      "m_ID": "1000902",
+      "m_mDesc": "\"Save the trapped villagers from the Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10009020]"
+    },
+    "1000903": {
+      "m_bError": null,
+      "m_ID": "1000903",
+      "m_mDesc": "\"Defeat the suddenly appearing Blood Beast.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000904": {
+      "m_bError": null,
+      "m_ID": "1000904",
+      "m_mDesc": "\"Defeat Joan and her soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000905": {
+      "m_bError": null,
+      "m_ID": "1000905",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000906": {
+      "m_bError": null,
+      "m_ID": "1000906",
+      "m_mDesc": "\"Defeat Thibault and her soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000907": {
+      "m_bError": null,
+      "m_ID": "1000907",
+      "m_mDesc": "\"Defeat Acappella and her choir\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000908": {
+      "m_bError": null,
+      "m_ID": "1000908",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000909": {
+      "m_bError": null,
+      "m_ID": "1000909",
+      "m_mDesc": "\"Defeat Heir of Zagon.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000910": {
+      "m_bError": null,
+      "m_ID": "1000910",
+      "m_mDesc": "\"Keep Agares alive and defeat all slaves\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10009101]"
+    },
+    "1000911": {
+      "m_bError": null,
+      "m_ID": "1000911",
+      "m_mDesc": "\"Defeat the Carrelle family guards\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000912": {
+      "m_bError": null,
+      "m_ID": "1000912",
+      "m_mDesc": "\"Hold out until Brennholt arrives and defeat all Carrelle family guards\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000913": {
+      "m_bError": null,
+      "m_ID": "1000913",
+      "m_mDesc": "\"Defeat the spirits obstructing Agares\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000914": {
+      "m_bError": null,
+      "m_ID": "1000914",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000915": {
+      "m_bError": null,
+      "m_ID": "1000915",
+      "m_mDesc": "\"Defeat Darcias and her soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000916": {
+      "m_bError": null,
+      "m_ID": "1000916",
+      "m_mDesc": "\"Defeat the Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1000917": {
+      "m_bError": null,
+      "m_ID": "1000917",
+      "m_mDesc": "\"Defeat <#A65F30>Blake</color>, \"Shrine of the Unknown Hero\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001001": {
+      "m_bError": null,
+      "m_ID": "1001001",
+      "m_mDesc": "\"Defeat the emerging Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001002": {
+      "m_bError": null,
+      "m_ID": "1001002",
+      "m_mDesc": "\"Defeat the emerging Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001003": {
+      "m_bError": null,
+      "m_ID": "1001003",
+      "m_mDesc": "\"Defeat the emerging Blood Beasts and Black Blood Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001004": {
+      "m_bError": null,
+      "m_ID": "1001004",
+      "m_mDesc": "\"Survive <#A65F30>Thibault's</color> attacks for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1001005": {
+      "m_bError": null,
+      "m_ID": "1001005",
+      "m_mDesc": "\"Defeat the emerging War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001006": {
+      "m_bError": null,
+      "m_ID": "1001006",
+      "m_mDesc": "\"Defeat the emerging War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001007": {
+      "m_bError": null,
+      "m_ID": "1001007",
+      "m_mDesc": "\"Defeat the emerging War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001008": {
+      "m_bError": null,
+      "m_ID": "1001008",
+      "m_mDesc": "\"Survive <#A65F30>Acappella's</color> attack for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1001009": {
+      "m_bError": null,
+      "m_ID": "1001009",
+      "m_mDesc": "\"Defeat all the Blood Beasts and War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001010": {
+      "m_bError": null,
+      "m_ID": "1001010",
+      "m_mDesc": "\"Protect <#A65F30>Ressa</color> and defeat all Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,1001010]"
+    },
+    "1001011": {
+      "m_bError": null,
+      "m_ID": "1001011",
+      "m_mDesc": "\"Defeat the Tentacles and Blood Beasts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001012": {
+      "m_bError": null,
+      "m_ID": "1001012",
+      "m_mDesc": "\"Defeat the wolf pack.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001013": {
+      "m_bError": null,
+      "m_ID": "1001013",
+      "m_mDesc": "\"Defeat the <#A65F30>Soulless</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1001013]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001014": {
+      "m_bError": null,
+      "m_ID": "1001014",
+      "m_mDesc": "\"Defeat all the Black Blood Church Soldiers and War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001015": {
+      "m_bError": null,
+      "m_ID": "1001015",
+      "m_mDesc": "\"Defeat <#A65F30>Agares</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001016": {
+      "m_bError": null,
+      "m_ID": "1001016",
+      "m_mDesc": "\"Defeat Agares in his <#A65F30>Covenant Form</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[1001016]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001017": {
+      "m_bError": null,
+      "m_ID": "1001017",
+      "m_mDesc": "\"Defeat <#A65F30>Agares Samael</color>, \"Fallen Red Lotus.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003061": {
+      "m_bError": null,
+      "m_ID": "1003061",
+      "m_mDesc": "\"Repel the Church's elite forces sweeping through the village.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003071": {
+      "m_bError": null,
+      "m_ID": "1003071",
+      "m_mDesc": "\"Repel the infected Church Soldiers and Priests.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003091": {
+      "m_bError": null,
+      "m_ID": "1003091",
+      "m_mDesc": "\"Defeat the mutated villagers and infected priests.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003101": {
+      "m_bError": null,
+      "m_ID": "1003101",
+      "m_mDesc": "\"Repel the Church's elite forces sweeping through the village.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003111": {
+      "m_bError": null,
+      "m_ID": "1003111",
+      "m_mDesc": "\"Repel the Church's elite forces sweeping through the village.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1003121": {
+      "m_bError": null,
+      "m_ID": "1003121",
+      "m_mDesc": "\"Repel the Church's elite forces sweeping through the village.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007011": {
+      "m_bError": null,
+      "m_ID": "1007011",
+      "m_mDesc": "\"Defeat the encircling crabs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007021": {
+      "m_bError": null,
+      "m_ID": "1007021",
+      "m_mDesc": "\"Protect <#A65F30>Piera</color> and defeat the crabs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10070211]"
+    },
+    "1007031": {
+      "m_bError": null,
+      "m_ID": "1007031",
+      "m_mDesc": "\"Defeat the relentless crabs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007041": {
+      "m_bError": null,
+      "m_ID": "1007041",
+      "m_mDesc": "\"Defeat the suspicious Islanders.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007051": {
+      "m_bError": null,
+      "m_ID": "1007051",
+      "m_mDesc": "\"Defeat the crabs and wild boars encroaching from behind.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007061": {
+      "m_bError": null,
+      "m_ID": "1007061",
+      "m_mDesc": "\"Defeat the enraged Islanders.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007071": {
+      "m_bError": null,
+      "m_ID": "1007071",
+      "m_mDesc": "\"Defeat the Wild Boars and crabs visible only to Noah.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007081": {
+      "m_bError": null,
+      "m_ID": "1007081",
+      "m_mDesc": "\"Defeat the <#A65F30>Avatar of Death</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10070811]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007091": {
+      "m_bError": null,
+      "m_ID": "1007091",
+      "m_mDesc": "\"Protect <#A65F30>Jason</color> and defeat the mutated villager.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10070912]"
+    },
+    "1007101": {
+      "m_bError": null,
+      "m_ID": "1007101",
+      "m_mDesc": "\"Defeat the pursuing Nightmares.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007111": {
+      "m_bError": null,
+      "m_ID": "1007111",
+      "m_mDesc": "\"Defeat the Nightmares blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007121": {
+      "m_bError": null,
+      "m_ID": "1007121",
+      "m_mDesc": "\"Defeat the horde of Nightmares.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007131": {
+      "m_bError": null,
+      "m_ID": "1007131",
+      "m_mDesc": "\"Survive the siege of the Nightmares for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1007141": {
+      "m_bError": null,
+      "m_ID": "1007141",
+      "m_mDesc": "\"Defeat the old Gravekeeper and Nightmares.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007151": {
+      "m_bError": null,
+      "m_ID": "1007151",
+      "m_mDesc": "\"Defeat the <#A65F30>Avatar of Death</color> again.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1007161": {
+      "m_bError": null,
+      "m_ID": "1007161",
+      "m_mDesc": "\"Stop <#A65F30>Piera's</color> ritual.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10071611]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10071612]"
+    },
+    "1007162": {
+      "m_bError": null,
+      "m_ID": "1007162",
+      "m_mDesc": "\"Stop <#A65F30>Piera's</color> ritual.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10071611]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10071613]"
+    },
+    "1020001": {
+      "m_bError": null,
+      "m_ID": "1020001",
+      "m_mDesc": "\"Defeat the ambushing Blood Servants.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1020003": {
+      "m_bError": null,
+      "m_ID": "1020003",
+      "m_mDesc": "\"Resist the siege of the Elders.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1020004": {
+      "m_bError": null,
+      "m_ID": "1020004",
+      "m_mDesc": "\"Defeat the Spirit Jailers blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1020005": {
+      "m_bError": null,
+      "m_ID": "1020005",
+      "m_mDesc": "\"Defeat the Spirit Guards blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1020006": {
+      "m_bError": null,
+      "m_ID": "1020006",
+      "m_mDesc": "\"Drive back the souls and rescue <#A65F30>Empousa</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10200060]"
+    },
+    "1020007": {
+      "m_bError": null,
+      "m_ID": "1020007",
+      "m_mDesc": "\"Release all Soulless girls from their misery.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1020008": {
+      "m_bError": null,
+      "m_ID": "1020008",
+      "m_mDesc": "\"Release <#A65F30>Jestel's family members</color> from their misery.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10200080]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1200402": {
+      "m_bError": null,
+      "m_ID": "1200402",
+      "m_mDesc": "\"Reserved String\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[100,1200402]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1200502": {
+      "m_bError": null,
+      "m_ID": "1200502",
+      "m_mDesc": "\"Teach the attacking enemies a lesson.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1200504": {
+      "m_bError": null,
+      "m_ID": "1200504",
+      "m_mDesc": "\"Keep escaped sailors under <#A65F30>6</color> counts.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,1200504]"
+    },
+    "1200601": {
+      "m_bError": null,
+      "m_ID": "1200601",
+      "m_mDesc": "\"Interrupt the tentacle's charging and defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1200604": {
+      "m_bError": null,
+      "m_ID": "1200604",
+      "m_mDesc": "\"Defend the cannons, aim them at the summoned Sailors, and eliminate all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2001001": {
+      "m_bError": null,
+      "m_ID": "2001001",
+      "m_mDesc": "\"Defeat Baphomet's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2001001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2002001": {
+      "m_bError": null,
+      "m_ID": "2002001",
+      "m_mDesc": "\"Defeat Sheila the Firstborn's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2002001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2003001": {
+      "m_bError": null,
+      "m_ID": "2003001",
+      "m_mDesc": "\"Defeat Ranna's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2003001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2004001": {
+      "m_bError": null,
+      "m_ID": "2004001",
+      "m_mDesc": "\"Defeat Zagon's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2004001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2005001": {
+      "m_bError": null,
+      "m_ID": "2005001",
+      "m_mDesc": "\"Defeat Clive's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2006001": {
+      "m_bError": null,
+      "m_ID": "2006001",
+      "m_mDesc": "\"Defeat Agares Samael's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2007001": {
+      "m_bError": null,
+      "m_ID": "2007001",
+      "m_mDesc": "\"Defeat Phantom of Aeon's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2050001": {
+      "m_bError": null,
+      "m_ID": "2050001",
+      "m_mDesc": "\"Reserved String\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100011": {
+      "m_bError": null,
+      "m_ID": "2100011",
+      "m_mDesc": "\"Defeat Clive Ganelon.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100018": {
+      "m_bError": null,
+      "m_ID": "2100018",
+      "m_mDesc": "\"Deal massive DMG to Clive.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[100,6,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "2100021": {
+      "m_bError": null,
+      "m_ID": "2100021",
+      "m_mDesc": "\"Defeat Zagon's Spirit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100021]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2200001": {
+      "m_bError": null,
+      "m_ID": "2200001",
+      "m_mDesc": "\"Defeat the Dire Wolf Siblings\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[22000011]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2200002": {
+      "m_bError": null,
+      "m_ID": "2200002",
+      "m_mDesc": "\"Protect the injured hunter and defeat the Doomed Captain.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[22000021]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,22000022]"
+    },
+    "2200003": {
+      "m_bError": null,
+      "m_ID": "2200003",
+      "m_mDesc": "\"Defeat the Silverwing Assassin.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[22000031]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2200004": {
+      "m_bError": null,
+      "m_ID": "2200004",
+      "m_mDesc": "\"Defeat the Rusted Soul Armor.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[22000041]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2200005": {
+      "m_bError": null,
+      "m_ID": "2200005",
+      "m_mDesc": "\"Defeat the Fire-stealing Phoenix.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[22000051]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2400001": {
+      "m_bError": null,
+      "m_ID": "2400001",
+      "m_mDesc": "\"Defeat the monsters in the Nightmare without delay.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2400002": {
+      "m_bError": null,
+      "m_ID": "2400002",
+      "m_mDesc": "\"Deal as much DMG to enemies as possible.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[6,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400003": {
+      "m_bError": null,
+      "m_ID": "2400003",
+      "m_mDesc": "\"Defeat as many Blood Servants as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400004": {
+      "m_bError": null,
+      "m_ID": "2400004",
+      "m_mDesc": "\"Defeat the Heretic Inquisitor without delay.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2400004]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2400005": {
+      "m_bError": null,
+      "m_ID": "2400005",
+      "m_mDesc": "\"Capture as many Puppets as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "4000001": {
+      "m_bError": null,
+      "m_ID": "4000001",
+      "m_mDesc": "\"Defeat as many enemies as possible in a limited time!\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "4000005": {
+      "m_bError": null,
+      "m_ID": "4000005",
+      "m_mDesc": "\"Rush Stage Mock Lineup\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000112": {
+      "m_bError": null,
+      "m_ID": "6000112",
+      "m_mDesc": "\"Complete the <#A65F30>\"Final Trial\"</color>.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[6000112,1000502]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000113": {
+      "m_bError": null,
+      "m_ID": "6000113",
+      "m_mDesc": "\"Complete the <#A65F30>Final Trial</color>.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[6000113,1000502]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000123": {
+      "m_bError": null,
+      "m_ID": "6000123",
+      "m_mDesc": "\"Defeat 2 Marble Gargoyle Bosses.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[600012301,600012302]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000124": {
+      "m_bError": null,
+      "m_ID": "6000124",
+      "m_mDesc": "\"Defeat the Four Spear Knights.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000124]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000201": {
+      "m_bError": null,
+      "m_ID": "6000201",
+      "m_mDesc": "\"Defeat the crabs infected with Black Blood.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000202": {
+      "m_bError": null,
+      "m_ID": "6000202",
+      "m_mDesc": "\"Protect the <#A65F30>little black cat</color> from the Pontos.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000202]"
+    },
+    "6000203": {
+      "m_bError": null,
+      "m_ID": "6000203",
+      "m_mDesc": "\"Defeat the attacking monsters.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000204": {
+      "m_bError": null,
+      "m_ID": "6000204",
+      "m_mDesc": "\"Defeat the crabs infected with Black Blood.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000205": {
+      "m_bError": null,
+      "m_ID": "6000205",
+      "m_mDesc": "\"Defeat Captain Patchen and his infected crew.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000206": {
+      "m_bError": null,
+      "m_ID": "6000206",
+      "m_mDesc": "\"Defeat the crabs blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000207": {
+      "m_bError": null,
+      "m_ID": "6000207",
+      "m_mDesc": "\"Defeat the Wild Boars and crabs blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000208": {
+      "m_bError": null,
+      "m_ID": "6000208",
+      "m_mDesc": "\"Use the true power of the Tarot to defeat the enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000209": {
+      "m_bError": null,
+      "m_ID": "6000209",
+      "m_mDesc": "\"Defeat the crabs infected with Black Blood.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000211": {
+      "m_bError": null,
+      "m_ID": "6000211",
+      "m_mDesc": "\"Defeat the Black Blood Tentacles occupying the island.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000212": {
+      "m_bError": null,
+      "m_ID": "6000212",
+      "m_mDesc": "\"Defeat the <#A65F30>Black Blood Tentacle</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000212]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000225": {
+      "m_bError": null,
+      "m_ID": "6000225",
+      "m_mDesc": "\"Defeat the <#A65F31>Black Blood Tentacle</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000225]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "7101101": {
+      "m_bError": null,
+      "m_ID": "7101101",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7101101]"
+    },
+    "7101201": {
+      "m_bError": null,
+      "m_ID": "7101201",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7101201]"
+    },
+    "7101301": {
+      "m_bError": null,
+      "m_ID": "7101301",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7101301]"
+    },
+    "7102101": {
+      "m_bError": null,
+      "m_ID": "7102101",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102101]"
+    },
+    "7102201": {
+      "m_bError": null,
+      "m_ID": "7102201",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102201]"
+    },
+    "7102301": {
+      "m_bError": null,
+      "m_ID": "7102301",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102301]"
+    },
+    "7103101": {
+      "m_bError": null,
+      "m_ID": "7103101",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103101]"
+    },
+    "7103201": {
+      "m_bError": null,
+      "m_ID": "7103201",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103201]"
+    },
+    "7103301": {
+      "m_bError": null,
+      "m_ID": "7103301",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103301]"
+    },
+    "7104101": {
+      "m_bError": null,
+      "m_ID": "7104101",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102101]"
+    },
+    "7104201": {
+      "m_bError": null,
+      "m_ID": "7104201",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102201]"
+    },
+    "7104301": {
+      "m_bError": null,
+      "m_ID": "7104301",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7102301]"
+    },
+    "7105101": {
+      "m_bError": null,
+      "m_ID": "7105101",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103101]"
+    },
+    "7105201": {
+      "m_bError": null,
+      "m_ID": "7105201",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103201]"
+    },
+    "7105301": {
+      "m_bError": null,
+      "m_ID": "7105301",
+      "m_mDesc": "\"Defend the Rift. Don't let more than <#A65F30>10</color> phantoms escape.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,7103301]"
+    },
+    "10000113": {
+      "m_bError": null,
+      "m_ID": "10000113",
+      "m_mDesc": "\"Defeat the infected Church search party.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10000113]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10000121": {
+      "m_bError": null,
+      "m_ID": "10000121",
+      "m_mDesc": "\"Defeat the infected Church search party.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10000131": {
+      "m_bError": null,
+      "m_ID": "10000131",
+      "m_mDesc": "\"Defeat <#A65F30>Zagon</color>, The Rat King of Starfall Valley.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10000131]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10004151": {
+      "m_bError": null,
+      "m_ID": "10004151",
+      "m_mDesc": "\"Defeat <#A65F30>Sheila the Firstborn, \"Child of the Plague\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10004152": {
+      "m_bError": null,
+      "m_ID": "10004152",
+      "m_mDesc": "\"Defeat <#A65F30>Sheila the Firstborn, \"Child of the Plague\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10009021": {
+      "m_bError": null,
+      "m_ID": "10009021",
+      "m_mDesc": "\"Save the trapped villagers from the Church Soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,10009020,10009021]"
+    },
+    "10009022": {
+      "m_bError": null,
+      "m_ID": "10009022",
+      "m_mDesc": "\"Defeat the attacking Church soldiers together with Sir Gadric\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10009171": {
+      "m_bError": null,
+      "m_ID": "10009171",
+      "m_mDesc": "\"Defeat Joan, the War Goddess.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10200021": {
+      "m_bError": null,
+      "m_ID": "10200021",
+      "m_mDesc": "\"Defeat <#A65F30>Lamia</color>, who is blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10200022": {
+      "m_bError": null,
+      "m_ID": "10200022",
+      "m_mDesc": "\"Defeat <#A65F30>Lamia</color>, who is blocking the way.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10200022]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10200091": {
+      "m_bError": null,
+      "m_ID": "10200091",
+      "m_mDesc": "\"Defeat <#A65F30>Baphomet, \"The Soulless\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10200092": {
+      "m_bError": null,
+      "m_ID": "10200092",
+      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10200092]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "10200093": {
+      "m_bError": null,
+      "m_ID": "10200093",
+      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless\"</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10200093]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    }
+  },
+  "status": "processed_216_items"
+}

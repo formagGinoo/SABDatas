@@ -1,0 +1,95 @@
+{
+  "className": "CData_SettingGraphicsChoice",
+  "timestamp": "2025-07-08T13:35:47.684Z",
+  "data": {
+    "101": {
+      "m_bError": null,
+      "m_ChoiceID": "101",
+      "m_GraphicID": "1",
+      "m_GameValue": "4",
+      "m_mSettingText": "\"Ultra\"",
+      "m_Hide": null
+    },
+    "102": {
+      "m_bError": null,
+      "m_ChoiceID": "102",
+      "m_GraphicID": "1",
+      "m_GameValue": "3",
+      "m_mSettingText": "\"High\"",
+      "m_Hide": null
+    },
+    "103": {
+      "m_bError": null,
+      "m_ChoiceID": "103",
+      "m_GraphicID": "1",
+      "m_GameValue": "2",
+      "m_mSettingText": "\"Medium\"",
+      "m_Hide": null
+    },
+    "104": {
+      "m_bError": null,
+      "m_ChoiceID": "104",
+      "m_GraphicID": "1",
+      "m_GameValue": "1",
+      "m_mSettingText": "\"Low\"",
+      "m_Hide": null
+    },
+    "105": {
+      "m_bError": null,
+      "m_ChoiceID": "105",
+      "m_GraphicID": "1",
+      "m_GameValue": null,
+      "m_mSettingText": "\"Very Low\"",
+      "m_Hide": null
+    },
+    "201": {
+      "m_bError": null,
+      "m_ChoiceID": "201",
+      "m_GraphicID": "2",
+      "m_GameValue": "2",
+      "m_mSettingText": "\"90 fps\"",
+      "m_Hide": null
+    },
+    "202": {
+      "m_bError": null,
+      "m_ChoiceID": "202",
+      "m_GraphicID": "2",
+      "m_GameValue": "1",
+      "m_mSettingText": "\"60 fps\"",
+      "m_Hide": null
+    },
+    "203": {
+      "m_bError": null,
+      "m_ChoiceID": "203",
+      "m_GraphicID": "2",
+      "m_GameValue": null,
+      "m_mSettingText": "\"30 fps\"",
+      "m_Hide": null
+    },
+    "301": {
+      "m_bError": null,
+      "m_ChoiceID": "301",
+      "m_GraphicID": "3",
+      "m_GameValue": null,
+      "m_mSettingText": "\"Windowed\"",
+      "m_Hide": null
+    },
+    "401": {
+      "m_bError": null,
+      "m_ChoiceID": "401",
+      "m_GraphicID": "4",
+      "m_GameValue": "1",
+      "m_mSettingText": "\"16:9\"",
+      "m_Hide": null
+    },
+    "402": {
+      "m_bError": null,
+      "m_ChoiceID": "402",
+      "m_GraphicID": "4",
+      "m_GameValue": null,
+      "m_mSettingText": "\"21:9\"",
+      "m_Hide": null
+    }
+  },
+  "status": "processed_11_items"
+}

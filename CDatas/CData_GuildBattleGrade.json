@@ -1,0 +1,61 @@
+{
+  "className": "CData_GuildBattleGrade",
+  "timestamp": "2025-07-08T13:35:34.748Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_GradeID": "1",
+      "m_mGradeName": "\"God Slayer III\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade09\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_GradeID": "2",
+      "m_mGradeName": "\"God Slayer II\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade08\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_GradeID": "3",
+      "m_mGradeName": "\"God Slayer I\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade07\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_GradeID": "4",
+      "m_mGradeName": "\"Demigod Slayer\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade06\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_GradeID": "5",
+      "m_mGradeName": "\"Master Hunter\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade05\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_GradeID": "6",
+      "m_mGradeName": "\"Legendary Hunter\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade04\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_GradeID": "7",
+      "m_mGradeName": "\"Veteran Hunter\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade03\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_GradeID": "8",
+      "m_mGradeName": "\"Expert Hunter\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade02\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_GradeID": "9",
+      "m_mGradeName": "\"Adept Hunter\"",
+      "m_IconPath": "\"Atlas_Guild/GuildGrade01\""
+    }
+  },
+  "status": "processed_9_items"
+}

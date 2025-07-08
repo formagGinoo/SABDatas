@@ -1,0 +1,149 @@
+{
+  "className": "CData_ActLamiaBonusCha",
+  "timestamp": "2025-07-08T13:35:14.892Z",
+  "data": {
+    "1010": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20110",
+          "m_Rate": "60"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "2",
+          "m_Sort": "2",
+          "m_Character": "20080",
+          "m_Rate": "40"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "3",
+          "m_Sort": "3",
+          "m_Character": "20090",
+          "m_Rate": "40"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "4",
+          "m_Sort": "4",
+          "m_Character": "20140",
+          "m_Rate": "40"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "5",
+          "m_Sort": "5",
+          "m_Character": "20160",
+          "m_Rate": "20"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "6",
+          "m_Sort": "6",
+          "m_Character": "20170",
+          "m_Rate": "20"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "7",
+          "m_Sort": "7",
+          "m_Character": "20490",
+          "m_Rate": "10"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "8",
+          "m_Sort": "8",
+          "m_Character": "20030",
+          "m_Rate": "10"
+        }
+      }
+    },
+    "1020": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20230",
+          "m_Rate": "60"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "2",
+          "m_Sort": "2",
+          "m_Character": "20110",
+          "m_Rate": "40"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "3",
+          "m_Sort": "3",
+          "m_Character": "20290",
+          "m_Rate": "40"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "4",
+          "m_Sort": "4",
+          "m_Character": "20180",
+          "m_Rate": "40"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "5",
+          "m_Sort": "5",
+          "m_Character": "20170",
+          "m_Rate": "20"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "6",
+          "m_Sort": "6",
+          "m_Character": "20140",
+          "m_Rate": "20"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "7",
+          "m_Sort": "7",
+          "m_Character": "20010",
+          "m_Rate": "10"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "8",
+          "m_Sort": "8",
+          "m_Character": "20040",
+          "m_Rate": "10"
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

@@ -1,0 +1,463 @@
+{
+  "className": "CData_RogueStageItemCombination",
+  "timestamp": "2025-07-08T13:35:47.285Z",
+  "data": {
+    "20100010": {
+      "m_bError": null,
+      "m_RougeItemID": "20100010",
+      "m_MaterialID_1": "10300010",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100020",
+      "m_MaterialID_4": null
+    },
+    "20100020": {
+      "m_bError": null,
+      "m_RougeItemID": "20100020",
+      "m_MaterialID_1": "10300020",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100007",
+      "m_MaterialID_4": null
+    },
+    "20100030": {
+      "m_bError": null,
+      "m_RougeItemID": "20100030",
+      "m_MaterialID_1": "10300030",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    },
+    "20100040": {
+      "m_bError": null,
+      "m_RougeItemID": "20100040",
+      "m_MaterialID_1": "10300040",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100016",
+      "m_MaterialID_4": null
+    },
+    "20100050": {
+      "m_bError": null,
+      "m_RougeItemID": "20100050",
+      "m_MaterialID_1": "10300050",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20100060": {
+      "m_bError": null,
+      "m_RougeItemID": "20100060",
+      "m_MaterialID_1": "10300060",
+      "m_MaterialID_2": "10100023",
+      "m_MaterialID_3": "10100012",
+      "m_MaterialID_4": null
+    },
+    "20100070": {
+      "m_bError": null,
+      "m_RougeItemID": "20100070",
+      "m_MaterialID_1": "10300070",
+      "m_MaterialID_2": "10100025",
+      "m_MaterialID_3": "10100015",
+      "m_MaterialID_4": null
+    },
+    "20100080": {
+      "m_bError": null,
+      "m_RougeItemID": "20100080",
+      "m_MaterialID_1": "10300080",
+      "m_MaterialID_2": "10100025",
+      "m_MaterialID_3": "10100016",
+      "m_MaterialID_4": null
+    },
+    "20100090": {
+      "m_bError": null,
+      "m_RougeItemID": "20100090",
+      "m_MaterialID_1": "10300090",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100024",
+      "m_MaterialID_4": null
+    },
+    "20100100": {
+      "m_bError": null,
+      "m_RougeItemID": "20100100",
+      "m_MaterialID_1": "10300100",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100013",
+      "m_MaterialID_4": null
+    },
+    "20100110": {
+      "m_bError": null,
+      "m_RougeItemID": "20100110",
+      "m_MaterialID_1": "10300110",
+      "m_MaterialID_2": "10100020",
+      "m_MaterialID_3": "10100024",
+      "m_MaterialID_4": null
+    },
+    "20100120": {
+      "m_bError": null,
+      "m_RougeItemID": "20100120",
+      "m_MaterialID_1": "10300120",
+      "m_MaterialID_2": "10100011",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": null
+    },
+    "20100130": {
+      "m_bError": null,
+      "m_RougeItemID": "20100130",
+      "m_MaterialID_1": "10300130",
+      "m_MaterialID_2": "10100020",
+      "m_MaterialID_3": "10100005",
+      "m_MaterialID_4": null
+    },
+    "20100140": {
+      "m_bError": null,
+      "m_RougeItemID": "20100140",
+      "m_MaterialID_1": "10300140",
+      "m_MaterialID_2": "10100020",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": null
+    },
+    "20100150": {
+      "m_bError": null,
+      "m_RougeItemID": "20100150",
+      "m_MaterialID_1": "10300150",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20100160": {
+      "m_bError": null,
+      "m_RougeItemID": "20100160",
+      "m_MaterialID_1": "10300160",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100014",
+      "m_MaterialID_4": null
+    },
+    "20100170": {
+      "m_bError": null,
+      "m_RougeItemID": "20100170",
+      "m_MaterialID_1": "10300170",
+      "m_MaterialID_2": "10100011",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": null
+    },
+    "20100180": {
+      "m_bError": null,
+      "m_RougeItemID": "20100180",
+      "m_MaterialID_1": "10300180",
+      "m_MaterialID_2": "10100014",
+      "m_MaterialID_3": "10100003",
+      "m_MaterialID_4": null
+    },
+    "20100190": {
+      "m_bError": null,
+      "m_RougeItemID": "20100190",
+      "m_MaterialID_1": "10300190",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100011",
+      "m_MaterialID_4": null
+    },
+    "20100200": {
+      "m_bError": null,
+      "m_RougeItemID": "20100200",
+      "m_MaterialID_1": "10300200",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100007",
+      "m_MaterialID_4": null
+    },
+    "20100210": {
+      "m_bError": null,
+      "m_RougeItemID": "20100210",
+      "m_MaterialID_1": "10300210",
+      "m_MaterialID_2": "10100013",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    },
+    "20100220": {
+      "m_bError": null,
+      "m_RougeItemID": "20100220",
+      "m_MaterialID_1": "10300220",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100016",
+      "m_MaterialID_4": "10100026"
+    },
+    "20100230": {
+      "m_bError": null,
+      "m_RougeItemID": "20100230",
+      "m_MaterialID_1": "10300230",
+      "m_MaterialID_2": "10100023",
+      "m_MaterialID_3": "10100015",
+      "m_MaterialID_4": null
+    },
+    "20100270": {
+      "m_bError": null,
+      "m_RougeItemID": "20100270",
+      "m_MaterialID_1": "10300270",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100003",
+      "m_MaterialID_4": null
+    },
+    "20100280": {
+      "m_bError": null,
+      "m_RougeItemID": "20100280",
+      "m_MaterialID_1": "10300280",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100012",
+      "m_MaterialID_4": null
+    },
+    "20100290": {
+      "m_bError": null,
+      "m_RougeItemID": "20100290",
+      "m_MaterialID_1": "10300290",
+      "m_MaterialID_2": "10100016",
+      "m_MaterialID_3": "10100026",
+      "m_MaterialID_4": null
+    },
+    "20100300": {
+      "m_bError": null,
+      "m_RougeItemID": "20100300",
+      "m_MaterialID_1": "10300300",
+      "m_MaterialID_2": "10100016",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    },
+    "20100310": {
+      "m_bError": null,
+      "m_RougeItemID": "20100310",
+      "m_MaterialID_1": "10300310",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100024",
+      "m_MaterialID_4": null
+    },
+    "20100330": {
+      "m_bError": null,
+      "m_RougeItemID": "20100330",
+      "m_MaterialID_1": "10300330",
+      "m_MaterialID_2": "10100012",
+      "m_MaterialID_3": "10100012",
+      "m_MaterialID_4": null
+    },
+    "20100340": {
+      "m_bError": null,
+      "m_RougeItemID": "20100340",
+      "m_MaterialID_1": "10300340",
+      "m_MaterialID_2": "10100013",
+      "m_MaterialID_3": "10100015",
+      "m_MaterialID_4": null
+    },
+    "20100350": {
+      "m_bError": null,
+      "m_RougeItemID": "20100350",
+      "m_MaterialID_1": "10300350",
+      "m_MaterialID_2": "10100021",
+      "m_MaterialID_3": "10100026",
+      "m_MaterialID_4": "10100022"
+    },
+    "20100370": {
+      "m_bError": null,
+      "m_RougeItemID": "20100370",
+      "m_MaterialID_1": "10300370",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20100380": {
+      "m_bError": null,
+      "m_RougeItemID": "20100380",
+      "m_MaterialID_1": "10300380",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100012",
+      "m_MaterialID_4": null
+    },
+    "20100390": {
+      "m_bError": null,
+      "m_RougeItemID": "20100390",
+      "m_MaterialID_1": "10300390",
+      "m_MaterialID_2": "10100021",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": "10100022"
+    },
+    "20100400": {
+      "m_bError": null,
+      "m_RougeItemID": "20100400",
+      "m_MaterialID_1": "10300400",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100001",
+      "m_MaterialID_4": null
+    },
+    "20100420": {
+      "m_bError": null,
+      "m_RougeItemID": "20100420",
+      "m_MaterialID_1": "10300420",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100014",
+      "m_MaterialID_4": null
+    },
+    "20100430": {
+      "m_bError": null,
+      "m_RougeItemID": "20100430",
+      "m_MaterialID_1": "10300430",
+      "m_MaterialID_2": "10100012",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    },
+    "20100450": {
+      "m_bError": null,
+      "m_RougeItemID": "20100450",
+      "m_MaterialID_1": "10300450",
+      "m_MaterialID_2": "10100005",
+      "m_MaterialID_3": "10100021",
+      "m_MaterialID_4": "10100022"
+    },
+    "20100470": {
+      "m_bError": null,
+      "m_RougeItemID": "20100470",
+      "m_MaterialID_1": "10300470",
+      "m_MaterialID_2": "10100016",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    },
+    "20100480": {
+      "m_bError": null,
+      "m_RougeItemID": "20100480",
+      "m_MaterialID_1": "10300480",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100023",
+      "m_MaterialID_4": "10100022"
+    },
+    "20100490": {
+      "m_bError": null,
+      "m_RougeItemID": "20100490",
+      "m_MaterialID_1": "10300490",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": null
+    },
+    "20100500": {
+      "m_bError": null,
+      "m_RougeItemID": "20100500",
+      "m_MaterialID_1": "10300500",
+      "m_MaterialID_2": "10100005",
+      "m_MaterialID_3": "10100007",
+      "m_MaterialID_4": null
+    },
+    "20100510": {
+      "m_bError": null,
+      "m_RougeItemID": "20100510",
+      "m_MaterialID_1": "10300510",
+      "m_MaterialID_2": "10100005",
+      "m_MaterialID_3": "10100012",
+      "m_MaterialID_4": null
+    },
+    "20100520": {
+      "m_bError": null,
+      "m_RougeItemID": "20100520",
+      "m_MaterialID_1": "10300520",
+      "m_MaterialID_2": "10100012",
+      "m_MaterialID_3": "10100001",
+      "m_MaterialID_4": null
+    },
+    "20100570": {
+      "m_bError": null,
+      "m_RougeItemID": "20100570",
+      "m_MaterialID_1": "10300570",
+      "m_MaterialID_2": "10100006",
+      "m_MaterialID_3": "10100015",
+      "m_MaterialID_4": "10100022"
+    },
+    "20200001": {
+      "m_bError": null,
+      "m_RougeItemID": "20200001",
+      "m_MaterialID_1": "10200001",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100021",
+      "m_MaterialID_4": null
+    },
+    "20200003": {
+      "m_bError": null,
+      "m_RougeItemID": "20200003",
+      "m_MaterialID_1": "10200003",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100007",
+      "m_MaterialID_4": null
+    },
+    "20200004": {
+      "m_bError": null,
+      "m_RougeItemID": "20200004",
+      "m_MaterialID_1": "10200004",
+      "m_MaterialID_2": "10100016",
+      "m_MaterialID_3": "10100020",
+      "m_MaterialID_4": null
+    },
+    "20200005": {
+      "m_bError": null,
+      "m_RougeItemID": "20200005",
+      "m_MaterialID_1": "10200005",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100015",
+      "m_MaterialID_4": null
+    },
+    "20200006": {
+      "m_bError": null,
+      "m_RougeItemID": "20200006",
+      "m_MaterialID_1": "10200006",
+      "m_MaterialID_2": "10100012",
+      "m_MaterialID_3": "10100014",
+      "m_MaterialID_4": null
+    },
+    "20200007": {
+      "m_bError": null,
+      "m_RougeItemID": "20200007",
+      "m_MaterialID_1": "10200007",
+      "m_MaterialID_2": "10100019",
+      "m_MaterialID_3": "10100013",
+      "m_MaterialID_4": null
+    },
+    "20200008": {
+      "m_bError": null,
+      "m_RougeItemID": "20200008",
+      "m_MaterialID_1": "10200008",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20200009": {
+      "m_bError": null,
+      "m_RougeItemID": "20200009",
+      "m_MaterialID_1": "10200009",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100011",
+      "m_MaterialID_4": null
+    },
+    "20200013": {
+      "m_bError": null,
+      "m_RougeItemID": "20200013",
+      "m_MaterialID_1": "10200013",
+      "m_MaterialID_2": "10100019",
+      "m_MaterialID_3": "10100013",
+      "m_MaterialID_4": null
+    },
+    "20200017": {
+      "m_bError": null,
+      "m_RougeItemID": "20200017",
+      "m_MaterialID_1": "10200017",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20200020": {
+      "m_bError": null,
+      "m_RougeItemID": "20200020",
+      "m_MaterialID_1": "10200020",
+      "m_MaterialID_2": "10100001",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
+    "20300001": {
+      "m_bError": null,
+      "m_RougeItemID": "20300001",
+      "m_MaterialID_1": "10200010",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100019",
+      "m_MaterialID_4": null
+    }
+  },
+  "status": "processed_57_items"
+}

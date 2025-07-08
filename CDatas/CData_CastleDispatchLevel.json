@@ -1,0 +1,49 @@
+{
+  "className": "CData_CastleDispatchLevel",
+  "timestamp": "2025-07-08T13:35:26.155Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_DispatchLevel": "1",
+      "m_SpecialStar": "2",
+      "m_DispatchList": "[[10000,100]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_DispatchLevel": "2",
+      "m_SpecialStar": "2",
+      "m_DispatchList": "[[10000,70],[20000,30]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_DispatchLevel": "3",
+      "m_SpecialStar": "3",
+      "m_DispatchList": "[[10000,50],[20000,30],[30000,20]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_DispatchLevel": "4",
+      "m_SpecialStar": "3",
+      "m_DispatchList": "[[10000,20],[20000,30],[30000,30],[40000,20]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_DispatchLevel": "5",
+      "m_SpecialStar": "3",
+      "m_DispatchList": "[[10000,15],[20000,15],[30000,50],[40000,20]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_DispatchLevel": "6",
+      "m_SpecialStar": "4",
+      "m_DispatchList": "[[21000,20],[30000,30],[40000,30],[50000,20]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_DispatchLevel": "7",
+      "m_SpecialStar": "4",
+      "m_DispatchList": "[[21000,15],[30000,15],[40000,50],[50000,20]]"
+    }
+  },
+  "status": "processed_7_items"
+}

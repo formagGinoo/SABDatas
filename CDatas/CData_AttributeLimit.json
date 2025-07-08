@@ -1,0 +1,32 @@
+{
+  "className": "CData_AttributeLimit",
+  "timestamp": "2025-07-08T13:35:23.579Z",
+  "data": {
+    "3": {
+      "m_bError": null,
+      "m_AttributeLimitID": "3",
+      "m_MaxHp": "1",
+      "m_Attack": null,
+      "m_PhyDefence": null,
+      "m_MagDefence": null,
+      "m_AttackSpeed": null,
+      "m_Crit_Rate": null,
+      "m_AntiCrit_Rate": null,
+      "m_Crit_Ratio": null,
+      "m_AntiCrit_Ratio": null,
+      "m_AllDmg_AddRate": null,
+      "m_AllDmg_ReduceRate": null,
+      "m_PhyDmg_AddRate": null,
+      "m_PhyDmg_ReduceRate": null,
+      "m_MagDmg_AddRate": null,
+      "m_MagDmg_ReduceRate": null,
+      "m_AllDmg_Add": null,
+      "m_AllDmg_Reduce": null,
+      "m_PhyDmg_Add": null,
+      "m_PhyDmg_Reduce": null,
+      "m_MagDmg_Add": null,
+      "m_MagDmg_Reduce": null
+    }
+  },
+  "status": "processed_1_items"
+}

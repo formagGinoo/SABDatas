@@ -1,0 +1,411 @@
+{
+  "className": "CData_MainLostStory",
+  "timestamp": "2025-07-08T13:35:36.333Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "1",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Mysteries of Black Blood\"",
+          "m_mSubsectionTitle": "\"Old Manuscript\"",
+          "m_mText": "\"April 25th, 1213. Experiment #12.\nSubject: Survivor of the Ganelon family clash.\nCondition: Human-like appearance with partial black coarse hair; abnormal tailbone growth observed. Pupils constricted, highly sensitive to light and water. Presumably in the mid-to-late stages of Black Blood disease.\nCondition of Blood: Blood separated through layering process, darker than average in hue, composition of red blood cells only 10%.\nExperiment Record: Blood transfusion slowed the spread of the Black Blood but eventually proved ineffective and was abandoned. A new mixture of Pure Blood extracted from Pure Blood Essence and combined with a sample of Black Blood from a Bloodborn (Cain) was injected into the neck, chest, and legs. The body was then stored in a wooden coffin in the cellar for seven days.\nResults: The subject reverted to human form, with the Black Blood fully suppressed after further refinement of the blood. The seventh, ninth, and eleventh experiments confirmed the Pure Blood Essence's suppressive effect, but the subject's native Black Blood could not merge with Bloodborn fluids. Dissection revealed swollen organs, abnormal bone growth, and Black Blood clots encasing red blood. The subject ultimately succumbed to Black Blood disease. Experiment failed.\n— Baphomet\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1415,1]",
+          "m_MainChapterClue": "[2,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "1",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Mysteries of Black Blood\"",
+          "m_mSubsectionTitle": "\"Silver Blood Trials Record\"",
+          "m_mText": "\"To the venerable Saint Seth and my fellow members of the Church Tribunal:\nI, David Petri, the appointed trial witness, hereby document the thirteenth Silver Blood Trial.\nSeven individuals, including two heretics, were chosen from the monastery by Aeon's will.\nAfter baptism and confession, they were each seated at the Blood Purification Altar for Holy Communion and ablution with Holy Water.\nUpon the first dose, using Divine Blood, three who did not have Black Blood disease perished, unable to withstand Aeon's grace. The remaining four showed no abnormalities.\nAfter the second dose, with Silver Blood this time, a woman who did not have Black Blood disease and a male heretic died from excessive hemorrhaging, accompanied by severe convulsions and incontinence. The remaining two survived, though the female heretic experienced hair loss and molting of the skin.\nAfter the third dose, once again with Silver Blood, a man who did not have Black Blood disease bled from eyes, nose, and ears, then died from a sudden rise in body temperature. The female heretic, despite her earlier symptoms, rapidly recovered and revealed a 'divine mark' on her hand.\nUpon examination, her blood had turned a semi-transparent silver, free of Black Blood, and she retained her consciousness and memories. Moreover, she inherited the memories of an individual known as 'Darcias.'\nMay the martyrs return to Aeon.\nAn esteemed Bell Ringer will administer the next trial for the Silver Blood successor.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[2,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "1",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Mysteries of Black Blood\"",
+          "m_mSubsectionTitle": "\"Wrinkled Note\"",
+          "m_mText": "\"Who the hell was it that told me Wolfsbane could combat Black Blood disease?\nI traveled all the way from the eastern continent, and for what? Not a damn thing!\nThere's no cure to this infernal curse—it continues to rage within me.\nBloodletting, herbal remedies, holy water, Wolfsbane... is there anything I haven't tried?\nDamn it! Damn it all!\nMy fingers are swollen, my stomach's on fire, and this itch on my back—makes me want to rip my skin right off.\nI'm sorry, my darling. I don't think I'll ever see you again.\nIf only...\nIf only someone could bring this note to you...\nI'm so exhausted. I think I'll rest here for a while.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[2,3]"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "2",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Excerpts from a Travel Log\"",
+          "m_mSubsectionTitle": "\"Graveyard of Bones\"",
+          "m_mText": "\"Tempus Sequence VII, Central Howling Peninsula, Lupine Forest, Southern Region.\nFollow the mountain path to the hilltop, and you will find an open area before you. The rocky ground is loose and prone to collapse, with white bones lying all about. To my knowledge, this area has not been recorded by any cartographer.\nKnowing my mentor, he had a habit of leaving subtle traces whenever he ventured into unexplored territory.\nBut so far, I haven't found any evidence of his visit.\nCould it be in another sequence?\nIn the heart of the hill lies a colossal bleached-out skeleton with a broad, flat face and a pointed mouth several meters long. It seems to be the remains of an unrecorded creature.\nBeneath the skeleton, a note is pinned which reads 'Eye of God.'\nWait... this is my mentor's handwriting. He was here—could he be heading for that place called the Eye of God?\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1416,1]",
+          "m_MainChapterClue": "[3,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "2",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Excerpts from a Travel Log\"",
+          "m_mSubsectionTitle": "\"The Eye of God\"",
+          "m_mText": "\"Tempus Sequence VII, Central Howling Peninsula, Lupine Forest, Northern Region.\nMoving north from the graveyard, I entered a birch forest shrouded in thick mist that obscured my vision and hampered my navigation. Caution was my only guide.\nAccording to my mentor's notes, at the end of this birch forest lies the remains of what looks like a giant eye, which he named the Eye of God. He had not yet discovered the graveyard in the south at that time. Perhaps there was no path leading south when he was here.\nThe area is mountainous, and the further north I go, the more red minerals I see in the rock layers.\nIt's unlikely he came here, but I had to see for myself this Eye of God that he spoke of with such reverence.\nAnd indeed, the sight was as captivating as he described—at the top of the hill lies a large azure lake, surrounded by lush undergrowth, with a cave at the bottom that stretches from both side to side. The colors grow deeper and deeper, like the eye of God descending into the world. The sight evoked a profound awareness of one's insignificance and the vastness of the unknown.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[3,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "2",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Excerpts from a Travel Log\"",
+          "m_mSubsectionTitle": "\"Town of Mouret\"",
+          "m_mText": "\"Tempus Sequence VII, Northwestern Howling Peninsula, Mouret.\nUpon reaching the town of Mouret, I found the area enveloped in mist due to an abundance of Wolfsbane.\nAccording to what my mentor once told me, the Divine Body guarded by the Ganelon family lies somewhere deep within this town.\nMy mentor was obsessed with the Divine Body and the Calamity. Is that why he came to this town?\nEntering Mouret, I found it completely overrun by the Black Blood. But as the records stated, Black Blood werewolves interestingly still retain a basic level of intelligence and the ability to use tools.\nThankfully, as a chronographer, they could not sense me, so I had ample time to search for my mentor.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[4,3]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StoryID": "2",
+          "m_SubsectionID": "4",
+          "m_mStoryTitle": "\"Excerpts from a Travel Log\"",
+          "m_mSubsectionTitle": "\"Sea of the Divine Crown\"",
+          "m_mText": "\"Tempus Sequence VI, Central Minexus, Sea of the Divine Crown.\nThe sea lacks any distinctive landmarks and most of it remains uncharted.\nHowever, in this sequence, the sea level has not yet risen, allowing me to still see the Pillars of Hercules in the distance.\nWhile tracing my mentor's footsteps, I learned that he once set sail from these docks. Unfortunately, I cannot determine whether he aimed to fill in the incomplete maps of the seas, or to mourn his old friend, who was devoured by Calamity when he was still human.\nHowever, the Cartographer's Code prohibits us from interfering with established history or contacting the deceased. As a seasoned cartographer, he surely would have remembered this.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[7,2]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StoryID": "2",
+          "m_SubsectionID": "5",
+          "m_mStoryTitle": "\"Excerpts from a Travel Log\"",
+          "m_mSubsectionTitle": "\"The Pillars of Hercules\"",
+          "m_mText": "\"Tempus Sequence XXXIII, Central Minexus, The Pillars of Hercules.\nI didn't expect the Pillars of Hercules to be swallowed by the sea in all the previous sequences.\nHere in Sequence XXXIII, they remain above water. Unfortunately, my 'stone' is running low on energy, so I cannot return just yet.\nAs past records state, the Landis family relies heavily on trade and military prowess, though they've always lacked resources.\nNumerous ships from the Church continue to sail into port, likely preparing to retaliate against the Landises for their aggression.\nHowever, none of the existing texts explain how the Landis family fell under the influence of the Calamity \"Famine.\" As a chronographer, I must document this.\nBut could I be hallucinating? It's absurd, yet I thought I saw my mentor's stone in the hands of the Landis patriarch.\nCome to think of it, the chronographer stones we use to etch history could have some effect on the Calamities as well...\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[9,2]"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "3",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Writings from Mouret\"",
+          "m_mSubsectionTitle": "\"A Worn Love Letter\"",
+          "m_mText": "\"A letter carefully tucked away in a dresser reads:\nTo My Dearest Claire Magnier,\nThough the day is long, it pales in comparison to my endless longing for you; though the night is deep, it cannot match the depth of my love for you.\nI've won my father's approval and will soon ask your parents for your hand. May the god of love bless us, so that I may spend the rest of my life with you by my side.\nAlas, mere words could never hope to express the profundity of my love. Though all things must end, not even death could separate us.\nA million embraces till the ends of eternity,\nSamuel Ganelon\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1412,1]",
+          "m_MainChapterClue": "[5,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "3",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Writings from Mouret\"",
+          "m_mSubsectionTitle": "\"Wedding Banquet Checklist\"",
+          "m_mText": "\"A memo on the table, with most of the items already crossed out.\nFood:\n20 loaves of rye bread, 5 loaves of white wheat bread\n1 roast pig (marinate the day before)\n2 roast chickens\n2 smoked fish\n2 wheels of cheese\n2 barrels of ale, 1 barrel of wine, 1 barrel of mead\nFurnishings:\n3 long tables (courtesy of Uncle Clive)\n20 benches\n10 lanterns\n30 candles\n1 tuned lute (for Samuel's ballad)\nOther:\nWool wedding dress\nHeirloom emerald ring\n...\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[6,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "3",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Writings from Mouret\"",
+          "m_mSubsectionTitle": "\"The Opened Family Letter\"",
+          "m_mText": "\"\n...That filthy, vile wolf ruined our wedding! It even took your father away... Tears have withered your beautiful face. I know nothing can erase the pain in your heart, but I still want to do something. While you are still dreaming, I have taken my father's sword and will head into the forest to slay that foul beast in the name of vengeance.\nDo not worry about me, my love. I shall bring you good news soon!\nA million embraces till the ends of eternity,\nSamuel Ganelon\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[5,3]"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "4",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Stories from Mouret\"",
+          "m_mSubsectionTitle": "\"Tear-Stained Diary\"",
+          "m_mText": "\"Father says you won't be coming back, but I don't believe him. We've only just married—how could you leave me?\nI asked Father if you were still alive, but he wouldn't answer. His eyes were full of pity. Was this why he tried to keep us apart from the start?\nSince you left, Father often takes food to the cemetery. Could you... I hold onto the sliver of hope that you might still be out there. But if you're alive, why haven't you come back to see me?\nMaybe all the answers are in the cemetery. Tonight, I will follow Father in secret. Whatever awaits me there, I have no regrets, for you said that not even death could separate us.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1412,1]",
+          "m_MainChapterClue": "[4,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "4",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Stories from Mouret\"",
+          "m_mSubsectionTitle": "\"Rotting Remains\"",
+          "m_mText": "\"In the cemetery, among the grotesque display of werewolves slain by the knights, two still cling to each other even in death. Each of their necks bears a pendant:\none contains a portrait of a man, and the other, a woman. Both pendants have the initials 'S&C' engraved on the back.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[6,2]"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "5",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Collection of Family Ballads\"",
+          "m_mSubsectionTitle": "\"Ganelon\"",
+          "m_mText": "\"In the forest, the wind sings of sorrow,\nFallen leaves, oh, who has left you for tomorrow?\nWolfsbane blooms beneath the moon's soft grace,\nThe promised home waits beyond the sky's embrace.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1416,1]",
+          "m_MainChapterClue": "[4,2]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "5",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Collection of Family Ballads\"",
+          "m_mSubsectionTitle": "\"Landis\"",
+          "m_mText": "\"With a tranquil heart, I gaze across the sea,\nWhere familiar mountains stand steadfast and free.\nTonight, I pray for peace from where I stand,\nMay you find the courage to explore new lands,\nAnd may you raise the sails on your journey home.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[8,6]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "5",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Collection of Family Ballads\"",
+          "m_mSubsectionTitle": "\"Nevernight\"",
+          "m_mText": "\"I was born to chase the sun's bright glow,\nThe little man sings through the day's ebb and flow,\nYearning for the light, for home's embrace.\nAs the long night comes, the sunset parts its final glow,\nThe little man continues to sing, with a voice never dull.\nDarkness looms, shadows stretch across the sky,\nYet I will chase the sun, alone, with hope held high.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[11,2]"
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "6",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Sailor's Diary\"",
+          "m_mSubsectionTitle": "\"Sailor's Diary I\"",
+          "m_mText": "\"\"Yesterday the Captain had some cargo brought aboard and specifically instructed us to keep our distance. Yet I keep catching whiffs of a peculiar fishy smell. What could be so mysterious?\"\n\n\"Met the Captain's brother on deck tonight. William, I think his name was? He was pouring something into the sea while muttering about not disappointing his brother again. Rather unsettling.\"\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1412,1]",
+          "m_MainChapterClue": "[7,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "6",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Sailor's Diary\"",
+          "m_mSubsectionTitle": "\"Sailor's Diary II\"",
+          "m_mText": "\"\"Ran into the Captain on deck. He was in high spirits and smelled of alcohol, kept bragging about his clever brother. Why not tell that to the man himself?\"\n\n\"There've been strange thuds coming from the lower deck where the mysterious cargo is stored, as if something's alive down there... Some crew members suggest it might be haunted, but I doubt it. They're betting on who'll dare to check it out tonight. I hope everything turns out alright.\"\n\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[7,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "6",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Sailor's Diary\"",
+          "m_mSubsectionTitle": "\"Sailor's Diary III\"",
+          "m_mText": "\"The hold where the cargo is kept always hums with eerie sounds, like things moving around. Some of the crew think it's ghosts, but I doubt that. Tonight, they've decided to go investigate in secret. I can only hope what they find isn't as sinister as what they feared.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[8,2]"
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "7",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
+          "m_mSubsectionTitle": "\"Bloodborn Lore Notes I\"",
+          "m_mText": "\"'Just got a mission to track the Bloodborn and document it. She said it's too risky, but the reward is too good to pass up...'\n'I'm taking it. Luck is always on my side—I'm always one step ahead of death. This'll be no different.'\n'What a coincidence! I won a map from an El Dorado crew member in a dice game. It shows where the Bloodborn were last seen.'\n'On my way to the spot on the map, I ran into a red-eyed traveler. I've made a note, but he looked pretty ordinary.'\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1415,1]",
+          "m_MainChapterClue": "[16,3]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "7",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
+          "m_mSubsectionTitle": "\"Bloodborn Lore Notes II\"",
+          "m_mText": "\"'Today I tracked the trail to the 'depths.' The air here is thick and damp, and the whole place feels eerie.'\n'Yesterday's rainfall washed away the soil along the riverbank and uncovered what looked like freshly spilled blood. Oddly, I didn't hear a sound all night.'\n'I'm nearing the legendary Bloodborn territory, and the forest is growing denser as well.'\n'Tonight's moon is rather unsettling, and it sounds like someone in the forest is calling for help. I need to investigate.'\n...\nThe rest of the notes are blank, with only a few dried bloodstains smeared across the yellowed paper.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[15,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "7",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
+          "m_mSubsectionTitle": "\"Bloodborn Lore Notes III\"",
+          "m_mText": "\"When the silver-haired, red-eyed one arrives, the land will be engulfed in strife.\nIn the end, silence will reign.\nAs moonlight blankets the countless graves of those lost.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[14,1]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StoryID": "7",
+          "m_SubsectionID": "4",
+          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
+          "m_mSubsectionTitle": "\"Bloodborn Lore Notes IV\"",
+          "m_mText": "\"When the ■■■■ is stained crimson, the land will bleed, and the Bloodborn will return to their promised home.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[16,1]"
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "8",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Legend of the Sea God\"",
+          "m_mSubsectionTitle": "\"Legend of the Sea God I\"",
+          "m_mText": "\"Anyone who has passed through this sea has heard legends surrounding the terrifying entity purported to lurk in these depths. Its body is clad in the bones of the drowned, and light has never graced its domain. Darkness and terror follow it like an unshakable shadow, with countless islands devoured and ill omens scattered in its wake.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1415,1]",
+          "m_MainChapterClue": "[9,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "8",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Legend of the Sea God\"",
+          "m_mSubsectionTitle": "\"Legend of the Sea God II\"",
+          "m_mText": "\"'I saw... I saw His silhouette. I was aboard the El Dorado, en route to the mainland. At night, whispers clawed at my ears without end. On a moonless night, I went up to the deck for fresh air and was met with the most terrifying sight of my life. His appearance defied description, but the moment you lay eyes on His form, you know—it's Him. A terror came over me so profound that I lost consciousness. When I awoke, it was already morning.'\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[10,4]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "8",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Legend of the Sea God\"",
+          "m_mSubsectionTitle": "\"Legend of the Sea God III\"",
+          "m_mText": "\"Years ago, this sea was not so treacherous. The Landis family was still flourishing, acting as protectors of the ocean, and the Sea God was merely a protective deity in their family's lore. But one day, their island suddenly crumbled, rumored to be a result of the Sea God's almighty wrath. Not only did the entire family vanish without a trace, but the sea itself has been shrouded in mystery ever since.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[12,1]"
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "9",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Prophet's Revelation\"",
+          "m_mSubsectionTitle": "\"Prophet's Revelation: The Beginning\"",
+          "m_mText": "\"Inspired by the prophet, a revelation was given.\nAt the dawn of life, the fall of Minexus gave birth to existence: from its shattered remains, the earth was formed and gave rise to space. This is known as the 'Divine Body.'\nAt the dawn of time, the descent of the temporal deity Aeon ushered in life: the deity's will shaped the heavens and the earth, weaving the fabric of time itself. This is known as the 'Tempus.'\nThe Divine Body and the Tempus are two sides of the same coin, giving rise to all that exists—they are the genesis of the world.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1416,1]",
+          "m_MainChapterClue": "[10,6]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "9",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Prophet's Revelation\"",
+          "m_mSubsectionTitle": "\"Prophet's Revelation: Civilization\"",
+          "m_mText": "\"Inspired by the prophet, a revelation was given.\nAll things in the world emerged from the fall of Minexus.\nIts body nurtured life and gifted twenty-four primal beings.\nClothes and spices, the flesh and blood they bestowed;\nWords and language, the soul they granted;\nFire and the forge, the will they empowered.\nThey passed down their bloodlines and gave shape to what would be humanity.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[10,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "9",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Prophet's Revelation\"",
+          "m_mSubsectionTitle": "\"Prophet's Revelation: Memory\"",
+          "m_mText": "\"Inspired by the prophet, a revelation was given.\nThe memory of history begins at time's end, holding secrets beyond our grasp: the circular ouroboros, the dot of the raven's eye, the linear black tortoise.\nThe memory of war starts where history fades, veiling visions beyond our understanding: soaring silver wings, swimming rusted fish, and pounding steel hooves.\nThese are the vestiges granted by the great prophet.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[12,2]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StoryID": "9",
+          "m_SubsectionID": "4",
+          "m_mStoryTitle": "\"Prophet's Revelation\"",
+          "m_mSubsectionTitle": "\"Prophet's Revelation: The Other Side\"",
+          "m_mText": "\"Inspired by the prophet, a revelation was given.\nIt is a realm we cannot behold.\nIn the depths of darkness lies a mirror of our world, severed by invisible threads.\nIn the distant, dreamlike glow, the same mountains rise, the same cities stretch, and the same 'us' wander.\nIt appears as if our homeland arises from the reflection in our eyes.\nYet, that homeland does not truly exist.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[13,1]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StoryID": "9",
+          "m_SubsectionID": "5",
+          "m_mStoryTitle": "\"Prophet's Revelation\"",
+          "m_mSubsectionTitle": "\"Prophet's Revelation: The End\"",
+          "m_mText": "\"Inspired by the prophet, a revelation was given.\nThese words have not been seen by anyone else—not inherited from the primal beings but penned by the prophet.\nThough their meaning remains elusive, within the vertical lines and curved circles, we seem to glimpse the essence of the world, touch the pulse of life, and feel the whisper of the soul.\nSuch enigmatic scripture. Perhaps this is the final legacy the prophet bestowed upon us before his departure.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[15,3]"
+        }
+      }
+    }
+  },
+  "status": "processed_9_items"
+}

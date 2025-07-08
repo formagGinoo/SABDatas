@@ -1,0 +1,41 @@
+{
+  "className": "CData_ActLamiaPowerCha",
+  "timestamp": "2025-07-08T13:35:14.932Z",
+  "data": {
+    "1010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1010",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20110",
+          "m_SkillBuffID": "[1108,1117]",
+          "m_mBuffDes": "\"DMG Dealt +{0}, All DMG Received -{1}.\"",
+          "m_SkillValue": "[\"30%\",\"30%\"]"
+        }
+      }
+    },
+    "1020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1020",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20230",
+          "m_SkillBuffID": "[1108,1117]",
+          "m_mBuffDes": "\"DMG Dealt +{0}, All DMG Received -{1}\"",
+          "m_SkillValue": "[\"30%\",\"30%\"]"
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

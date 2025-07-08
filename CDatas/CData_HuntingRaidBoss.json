@@ -1,0 +1,82 @@
+{
+  "className": "CData_HuntingRaidBoss",
+  "timestamp": "2025-07-08T13:35:34.810Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_BOSSID": "1",
+      "m_mName": "\"Moonlit Gaol\"",
+      "m_mDesc": "\"<style=Highlight>Lamia urges you to defeat the monsters in the Nightmare.</style>\nMemories of spilling the blood of her own kind still linger in Lamia's mind, replaying over and over like a recurring nightmare.\nBut tonight, a different intruder trespasses into her dreams. 'This is my hell to endure, not a playground for others.'\nDrive out the beast defiling Lamia's dream. Expel it.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20110",
+      "m_mRequire": "\"This is hardly worth my attention. I'll leave it to you.\"",
+      "m_LevelID": "2102010",
+      "m_mTitle1": "\"Best Time (sec)\"",
+      "m_mTitle2": "\"Clear Time (sec)\"",
+      "m_AchieveType": "2",
+      "m_BuffPool": "[4901000,4902000,4903000,4906000,4908000,4910000,4913000]",
+      "m_Use64Rank": null
+    },
+    "2": {
+      "m_bError": null,
+      "m_BOSSID": "2",
+      "m_mName": "\"Illuminated Path\"",
+      "m_mDesc": "\"<style=Highlight>Fight alongside Hati once more. Deal as much DMG as possible to the guards within the time limit.</style>\nThe illuminated path appears calm—a rare moment of peace for Hati, a guest of the Bathory Castle.\nYet the guards have mistaken her for an intruder. Best not to let their blunder ruin such a lovely night.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20130",
+      "m_mRequire": "\"Is this how the Bathory family treats their guests? I'm relieved you're here.\"",
+      "m_LevelID": "2102020",
+      "m_mTitle1": "\"Highest DMG\"",
+      "m_mTitle2": "\"DMG Dealt\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4906000,4907000,4911000,4912000]",
+      "m_Use64Rank": "1"
+    },
+    "3": {
+      "m_bError": null,
+      "m_BOSSID": "3",
+      "m_mName": "\"Crimson Corridor\"",
+      "m_mDesc": "\"<style=Highlight>Defeat as many Blood Servants as possible. Cain is offering a generous reward.</style>\nThe wine still half full when shadows tore through the corridor. Such a waste.\nCain taps his glass with measured calm, his expression unreadable. 'A bit too much chaos for such fine wine, isn't it?'\nHis gaze flickers. It's time to clean house.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20090",
+      "m_mRequire": "\"These naughty little things are ruining our precious moments together.\"",
+      "m_LevelID": "2102030",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4904000,4905000,4909000,4914000]",
+      "m_Use64Rank": null
+    },
+    "4": {
+      "m_bError": null,
+      "m_BOSSID": "4",
+      "m_mName": "\"Duskborn Glory\"",
+      "m_mDesc": "\"<style=Highlight>Quickly strike down the Heretic Inquisitor for Gilrain and let your name bask in glory.</style>\nThe elder, long cloaked in shadow, has emerged in the castle for the first time in years. But before any reunion could unfold, armed soldiers of the Church stormed in.\nSnuff out the light, the very thing Gilrain loathes most.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20140",
+      "m_mRequire": "\"Followers of The Light... That explains the stench.\"",
+      "m_LevelID": "2102040",
+      "m_mTitle1": "\"Best Time (sec)\"",
+      "m_mTitle2": "\"Clear Time (sec)\"",
+      "m_AchieveType": "2",
+      "m_BuffPool": "[4901000,4902000,4903000,4907000,4908000,4915000,4917000]",
+      "m_Use64Rank": null
+    },
+    "5": {
+      "m_bError": null,
+      "m_BOSSID": "5",
+      "m_mName": "\"Binding Threads\"",
+      "m_mDesc": "\"<style=Highlight>Capture as many escaped puppets as possible to earn Bella's reward.</style>\nJoints creak, strings quiver, and under moonlight, the puppets perform their final dance.\nThen, a snap. Strings recoil into the dark, and the puppets scatter into the night.\nBella remains still upon the balcony, unfazed. Perhaps... she foresaw this?\n'Return my naughty little dolls back to me, would you?'\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20080",
+      "m_mRequire": "\"The fate of my shop rests in your hands, Noah.\"",
+      "m_LevelID": "2102050",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4905000,4909000,4913000,4916000]",
+      "m_Use64Rank": null
+    }
+  },
+  "status": "processed_5_items"
+}

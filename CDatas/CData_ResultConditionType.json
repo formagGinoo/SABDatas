@@ -1,0 +1,43 @@
+{
+  "className": "CData_ResultConditionType",
+  "timestamp": "2025-07-08T13:35:47.120Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ConditionTypeID": "1",
+      "m_mNote": "\"Eliminate\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type2\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ConditionTypeID": "2",
+      "m_mNote": "\"Defense\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type1\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ConditionTypeID": "3",
+      "m_mNote": "\"Survival\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type4\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ConditionTypeID": "4",
+      "m_mNote": "\"Decapitation\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type3\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ConditionTypeID": "5",
+      "m_mNote": "\"Hunting\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type2\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_ConditionTypeID": "8",
+      "m_mNote": "\"Tower Defense\"",
+      "m_ConditionTypeMark": "\"Atlas_LevelTag/level_battlenews_type5\""
+    }
+  },
+  "status": "processed_6_items"
+}

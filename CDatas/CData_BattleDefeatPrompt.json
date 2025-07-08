@@ -1,0 +1,91 @@
+{
+  "className": "CData_BattleDefeatPrompt",
+  "timestamp": "2025-07-08T13:35:24.070Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_DefeatPromptID": "1",
+      "m_mDefeatPrompt": "\"Using Vassal skills at the right moment might just turn the tide of battle.\"",
+      "m_IsDefault": "1"
+    },
+    "2": {
+      "m_bError": null,
+      "m_DefeatPromptID": "2",
+      "m_mDefeatPrompt": "\"Eliminate the Shield Spirit to clear the stage.\"",
+      "m_IsDefault": null
+    },
+    "3": {
+      "m_bError": null,
+      "m_DefeatPromptID": "3",
+      "m_mDefeatPrompt": "\"Blood Moon reduces Ultimate Bloodsoul cost.\"",
+      "m_IsDefault": "1"
+    },
+    "4": {
+      "m_bError": null,
+      "m_DefeatPromptID": "4",
+      "m_mDefeatPrompt": "\"Interrupt enemies attempting to charge. Eliminate those charging first.\"",
+      "m_IsDefault": null
+    },
+    "5": {
+      "m_bError": null,
+      "m_DefeatPromptID": "5",
+      "m_mDefeatPrompt": "\"Survive until the countdown ends, even if enemies remain. Survival is victory.\"",
+      "m_IsDefault": null
+    },
+    "6": {
+      "m_bError": null,
+      "m_DefeatPromptID": "6",
+      "m_mDefeatPrompt": "\"Losing Vassals will slow down the Bloodsoul Recovery.\"",
+      "m_IsDefault": "1"
+    },
+    "7": {
+      "m_bError": null,
+      "m_DefeatPromptID": "7",
+      "m_mDefeatPrompt": "\"Assassins and Marksmen excel at targeting backline enemies.\"",
+      "m_IsDefault": null
+    },
+    "8": {
+      "m_bError": null,
+      "m_DefeatPromptID": "8",
+      "m_mDefeatPrompt": "\"Utilize AoE skills effectively to deal DMG to more enemies.\"",
+      "m_IsDefault": null
+    },
+    "9": {
+      "m_bError": null,
+      "m_DefeatPromptID": "9",
+      "m_mDefeatPrompt": "\"DMG dealt by Marksmen increases with distance—the farther, the stronger.\"",
+      "m_IsDefault": null
+    },
+    "10": {
+      "m_bError": null,
+      "m_DefeatPromptID": "10",
+      "m_mDefeatPrompt": "\"Some enemies can bypass Defenders to assault your ranged Vassals.\"",
+      "m_IsDefault": null
+    },
+    "11": {
+      "m_bError": null,
+      "m_DefeatPromptID": "11",
+      "m_mDefeatPrompt": "\"Destroying objects in the environment may swing the battle in your favor.\"",
+      "m_IsDefault": null
+    },
+    "12": {
+      "m_bError": null,
+      "m_DefeatPromptID": "12",
+      "m_mDefeatPrompt": "\"Deploy Vassals skilled in frontline combat to enhance durability for the team.\"",
+      "m_IsDefault": null
+    },
+    "13": {
+      "m_bError": null,
+      "m_DefeatPromptID": "13",
+      "m_mDefeatPrompt": "\"Set up your Initial Hand wisely to gain an advantage in battle.\"",
+      "m_IsDefault": "1"
+    },
+    "14": {
+      "m_bError": null,
+      "m_DefeatPromptID": "14",
+      "m_mDefeatPrompt": "\"Don’t lose heart, Lord. Try a different lineup and keep challenging.\"",
+      "m_IsDefault": "1"
+    }
+  },
+  "status": "processed_14_items"
+}

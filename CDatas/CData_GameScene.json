@@ -1,0 +1,49 @@
+{
+  "className": "CData_GameScene",
+  "timestamp": "2025-07-08T13:35:34.116Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_SceneName": "\"MainCity\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_SceneName": "\"LevelMap\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_SceneName": "\"Battle\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_SceneName": "\"Castle\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_SceneName": "\"Castle_CouncilHall_1\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_SceneName": "\"Castle_StudyRoom\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_SceneName": "\"ActExplore\"",
+      "m_LoadingImg": "\"loading_battle_s12\""
+    }
+  },
+  "status": "processed_7_items"
+}

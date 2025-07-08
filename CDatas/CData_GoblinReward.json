@@ -1,0 +1,282 @@
+{
+  "className": "CData_GoblinReward",
+  "timestamp": "2025-07-08T13:35:34.241Z",
+  "data": {
+    "4100001": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "1",
+          "m_CountType": "1",
+          "m_CountMin": null,
+          "m_FirstBonusClient": "[[40011,1],[1204,6],[1201,3]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "2",
+          "m_CountType": "1",
+          "m_CountMin": "15",
+          "m_FirstBonusClient": "[[40011,2],[1204,8],[1201,4]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "3",
+          "m_CountType": "1",
+          "m_CountMin": "25",
+          "m_FirstBonusClient": "[[40011,3],[1204,12],[1201,6]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "4",
+          "m_CountType": "1",
+          "m_CountMin": "45",
+          "m_FirstBonusClient": "[[40011,4],[1204,16],[1201,8]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "5",
+          "m_CountType": "1",
+          "m_CountMin": "65",
+          "m_FirstBonusClient": "[[40011,5],[1204,20],[1201,10]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100001",
+          "m_StageID": "6",
+          "m_CountType": "1",
+          "m_CountMin": "88",
+          "m_FirstBonusClient": "[[40011,6],[1204,24],[1201,12]]"
+        }
+      }
+    },
+    "4100002": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "1",
+          "m_CountType": "1",
+          "m_CountMin": null,
+          "m_FirstBonusClient": "[[40011,6],[1204,26],[1201,13]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "2",
+          "m_CountType": "1",
+          "m_CountMin": "20",
+          "m_FirstBonusClient": "[[40011,7],[1204,30],[1201,15]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "3",
+          "m_CountType": "1",
+          "m_CountMin": "40",
+          "m_FirstBonusClient": "[[40011,7],[1204,32],[1201,16]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "4",
+          "m_CountType": "1",
+          "m_CountMin": "60",
+          "m_FirstBonusClient": "[[40011,8],[1204,36],[1201,18]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "5",
+          "m_CountType": "1",
+          "m_CountMin": "80",
+          "m_FirstBonusClient": "[[40011,8],[1204,38],[1201,19]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100002",
+          "m_StageID": "6",
+          "m_CountType": "1",
+          "m_CountMin": "103",
+          "m_FirstBonusClient": "[[40011,9],[1204,42],[1201,21]]"
+        }
+      }
+    },
+    "4100003": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "1",
+          "m_CountType": "1",
+          "m_CountMin": null,
+          "m_FirstBonusClient": "[[40011,9],[1204,42],[1201,21],[1205,4],[1202,2],[32001,1]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "2",
+          "m_CountType": "1",
+          "m_CountMin": "15",
+          "m_FirstBonusClient": "[[40011,10],[1204,42],[1201,21],[1205,6],[1202,3],[32001,1]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "3",
+          "m_CountType": "1",
+          "m_CountMin": "25",
+          "m_FirstBonusClient": "[[40011,10],[1204,42],[1201,21],[1205,8],[1202,4],[32001,1]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "4",
+          "m_CountType": "1",
+          "m_CountMin": "45",
+          "m_FirstBonusClient": "[[40011,11],[1204,42],[1201,21],[1205,12],[1202,6],[32001,2]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "5",
+          "m_CountType": "1",
+          "m_CountMin": "65",
+          "m_FirstBonusClient": "[[40011,11],[1204,42],[1201,21],[1205,14],[1202,8],[32001,2]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100003",
+          "m_StageID": "6",
+          "m_CountType": "1",
+          "m_CountMin": "86",
+          "m_FirstBonusClient": "[[40011,12],[1204,42],[1201,21],[1205,18],[1202,9],[32001,3]]"
+        }
+      }
+    },
+    "4100004": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "1",
+          "m_CountType": "1",
+          "m_CountMin": "15",
+          "m_FirstBonusClient": "[[40011,12],[1204,42],[1201,21],[1205,20],[1202,10],[32001,3]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "2",
+          "m_CountType": "1",
+          "m_CountMin": "35",
+          "m_FirstBonusClient": "[[40011,13],[1204,42],[1201,21],[1205,22],[1202,11],[32001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "3",
+          "m_CountType": "1",
+          "m_CountMin": "50",
+          "m_FirstBonusClient": "[[40011,13],[1204,42],[1201,21],[1205,24],[1202,12],[32001,3]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "4",
+          "m_CountType": "1",
+          "m_CountMin": "70",
+          "m_FirstBonusClient": "[[40011,14],[1204,42],[1201,21],[1205,26],[1202,13],[32001,3]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "5",
+          "m_CountType": "1",
+          "m_CountMin": "85",
+          "m_FirstBonusClient": "[[40011,14],[1204,42],[1201,21],[1205,28],[1202,14],[32001,3]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100004",
+          "m_StageID": "6",
+          "m_CountType": "1",
+          "m_CountMin": "100",
+          "m_FirstBonusClient": "[[40011,15],[1204,42],[1201,21],[1205,30],[1202,15],[32001,3]]"
+        }
+      }
+    },
+    "4100005": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "1",
+          "m_CountType": "1",
+          "m_CountMin": "15",
+          "m_FirstBonusClient": "[[40011,15],[1204,42],[1201,21],[1205,30],[1202,15],[32001,3],[1206,2],[1203,1]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "2",
+          "m_CountType": "1",
+          "m_CountMin": "35",
+          "m_FirstBonusClient": "[[40011,16],[1204,42],[1201,21],[1205,30],[1202,15],[32001,4],[1206,4],[1203,2]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "3",
+          "m_CountType": "1",
+          "m_CountMin": "50",
+          "m_FirstBonusClient": "[[40011,16],[1204,42],[1201,21],[1205,30],[1202,15],[32001,4],[1206,6],[1203,3]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "4",
+          "m_CountType": "1",
+          "m_CountMin": "70",
+          "m_FirstBonusClient": "[[40011,17],[1204,42],[1201,21],[1205,30],[1202,15],[32001,5],[1206,8],[1203,4]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "5",
+          "m_CountType": "1",
+          "m_CountMin": "85",
+          "m_FirstBonusClient": "[[40011,17],[1204,42],[1201,21],[1205,30],[1202,15],[32001,5],[1206,10],[1203,5]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RewardGroupID": "4100005",
+          "m_StageID": "6",
+          "m_CountType": "1",
+          "m_CountMin": "100",
+          "m_FirstBonusClient": "[[40011,18],[1204,42],[1201,21],[1205,30],[1202,15],[32001,6],[1206,12],[1203,6]]"
+        }
+      }
+    }
+  },
+  "status": "processed_5_items"
+}

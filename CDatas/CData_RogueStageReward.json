@@ -1,0 +1,463 @@
+{
+  "className": "CData_RogueStageReward",
+  "timestamp": "2025-07-08T13:35:47.489Z",
+  "data": {
+    "0": {
+      "m_bError": null,
+      "m_KeyLevel": null,
+      "m_Rewards": "[]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "1": {
+      "m_bError": null,
+      "m_KeyLevel": "1",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_KeyLevel": "2",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_KeyLevel": "3",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_KeyLevel": "4",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_KeyLevel": "5",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_KeyLevel": "6",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_KeyLevel": "7",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_KeyLevel": "8",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_KeyLevel": "9",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_KeyLevel": "10",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_KeyLevel": "11",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_KeyLevel": "12",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_KeyLevel": "13",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_KeyLevel": "14",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "15": {
+      "m_bError": null,
+      "m_KeyLevel": "15",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "16": {
+      "m_bError": null,
+      "m_KeyLevel": "16",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "17": {
+      "m_bError": null,
+      "m_KeyLevel": "17",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "18": {
+      "m_bError": null,
+      "m_KeyLevel": "18",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "19": {
+      "m_bError": null,
+      "m_KeyLevel": "19",
+      "m_Rewards": "[[1075,20],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "20": {
+      "m_bError": null,
+      "m_KeyLevel": "20",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "21": {
+      "m_bError": null,
+      "m_KeyLevel": "21",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "22": {
+      "m_bError": null,
+      "m_KeyLevel": "22",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "23": {
+      "m_bError": null,
+      "m_KeyLevel": "23",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "24": {
+      "m_bError": null,
+      "m_KeyLevel": "24",
+      "m_Rewards": "[[1075,20],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "25": {
+      "m_bError": null,
+      "m_KeyLevel": "25",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "26": {
+      "m_bError": null,
+      "m_KeyLevel": "26",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "27": {
+      "m_bError": null,
+      "m_KeyLevel": "27",
+      "m_Rewards": "[[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "28": {
+      "m_bError": null,
+      "m_KeyLevel": "28",
+      "m_Rewards": "[[1075,20],[1204,2],[1201,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "29": {
+      "m_bError": null,
+      "m_KeyLevel": "29",
+      "m_Rewards": "[[1075,20],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "30": {
+      "m_bError": null,
+      "m_KeyLevel": "30",
+      "m_Rewards": "[[40011,1],[1204,4],[1201,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "31": {
+      "m_bError": null,
+      "m_KeyLevel": "31",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "32": {
+      "m_bError": null,
+      "m_KeyLevel": "32",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "33": {
+      "m_bError": null,
+      "m_KeyLevel": "33",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "34": {
+      "m_bError": null,
+      "m_KeyLevel": "34",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "35": {
+      "m_bError": null,
+      "m_KeyLevel": "35",
+      "m_Rewards": "[[40011,1],[1205,4],[1202,2],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "36": {
+      "m_bError": null,
+      "m_KeyLevel": "36",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "37": {
+      "m_bError": null,
+      "m_KeyLevel": "37",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "38": {
+      "m_bError": null,
+      "m_KeyLevel": "38",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "39": {
+      "m_bError": null,
+      "m_KeyLevel": "39",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "40": {
+      "m_bError": null,
+      "m_KeyLevel": "40",
+      "m_Rewards": "[[40011,1],[1205,4],[1202,2],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "41": {
+      "m_bError": null,
+      "m_KeyLevel": "41",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "42": {
+      "m_bError": null,
+      "m_KeyLevel": "42",
+      "m_Rewards": "[[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "43": {
+      "m_bError": null,
+      "m_KeyLevel": "43",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "44": {
+      "m_bError": null,
+      "m_KeyLevel": "44",
+      "m_Rewards": "[[1075,20],[1205,2],[1202,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "45": {
+      "m_bError": null,
+      "m_KeyLevel": "45",
+      "m_Rewards": "[[40011,1],[1205,4],[1202,2],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "46": {
+      "m_bError": null,
+      "m_KeyLevel": "46",
+      "m_Rewards": "[[1205,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "47": {
+      "m_bError": null,
+      "m_KeyLevel": "47",
+      "m_Rewards": "[[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "48": {
+      "m_bError": null,
+      "m_KeyLevel": "48",
+      "m_Rewards": "[[1075,25],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "49": {
+      "m_bError": null,
+      "m_KeyLevel": "49",
+      "m_Rewards": "[[1075,25],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "50": {
+      "m_bError": null,
+      "m_KeyLevel": "50",
+      "m_Rewards": "[[40011,1],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "51": {
+      "m_bError": null,
+      "m_KeyLevel": "51",
+      "m_Rewards": "[[1205,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "52": {
+      "m_bError": null,
+      "m_KeyLevel": "52",
+      "m_Rewards": "[[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "53": {
+      "m_bError": null,
+      "m_KeyLevel": "53",
+      "m_Rewards": "[[1075,25],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "54": {
+      "m_bError": null,
+      "m_KeyLevel": "54",
+      "m_Rewards": "[[1075,25],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "55": {
+      "m_bError": null,
+      "m_KeyLevel": "55",
+      "m_Rewards": "[[40011,1],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "56": {
+      "m_bError": null,
+      "m_KeyLevel": "56",
+      "m_Rewards": "[[1205,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "57": {
+      "m_bError": null,
+      "m_KeyLevel": "57",
+      "m_Rewards": "[[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "58": {
+      "m_bError": null,
+      "m_KeyLevel": "58",
+      "m_Rewards": "[[1075,25],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "59": {
+      "m_bError": null,
+      "m_KeyLevel": "59",
+      "m_Rewards": "[[1075,25],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "60": {
+      "m_bError": null,
+      "m_KeyLevel": "60",
+      "m_Rewards": "[[40011,1],[1205,2],[1202,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "61": {
+      "m_bError": null,
+      "m_KeyLevel": "61",
+      "m_Rewards": "[[1206,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "62": {
+      "m_bError": null,
+      "m_KeyLevel": "62",
+      "m_Rewards": "[[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "63": {
+      "m_bError": null,
+      "m_KeyLevel": "63",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "64": {
+      "m_bError": null,
+      "m_KeyLevel": "64",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "65": {
+      "m_bError": null,
+      "m_KeyLevel": "65",
+      "m_Rewards": "[[40011,1],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "66": {
+      "m_bError": null,
+      "m_KeyLevel": "66",
+      "m_Rewards": "[[1206,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "67": {
+      "m_bError": null,
+      "m_KeyLevel": "67",
+      "m_Rewards": "[[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "68": {
+      "m_bError": null,
+      "m_KeyLevel": "68",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "69": {
+      "m_bError": null,
+      "m_KeyLevel": "69",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "70": {
+      "m_bError": null,
+      "m_KeyLevel": "70",
+      "m_Rewards": "[[40011,1],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "71": {
+      "m_bError": null,
+      "m_KeyLevel": "71",
+      "m_Rewards": "[[1206,2]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "72": {
+      "m_bError": null,
+      "m_KeyLevel": "72",
+      "m_Rewards": "[[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "73": {
+      "m_bError": null,
+      "m_KeyLevel": "73",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "74": {
+      "m_bError": null,
+      "m_KeyLevel": "74",
+      "m_Rewards": "[[1075,25],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    },
+    "75": {
+      "m_bError": null,
+      "m_KeyLevel": "75",
+      "m_Rewards": "[[40011,1],[1206,2],[1203,1],[32001,1]]",
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+    }
+  },
+  "status": "processed_76_items"
+}

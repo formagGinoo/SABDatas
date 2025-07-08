@@ -1,0 +1,67 @@
+{
+  "className": "CData_GachaDisplay",
+  "timestamp": "2025-07-08T13:35:34.090Z",
+  "data": {
+    "1001": {
+      "m_bError": null,
+      "m_DisplayID": "1001",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": null,
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[]",
+      "m_PreviewCharacter": "[]",
+      "m_PoolID": "1001"
+    },
+    "1002": {
+      "m_bError": null,
+      "m_DisplayID": "1002",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": null,
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[]",
+      "m_PreviewCharacter": "[]",
+      "m_PoolID": "1002"
+    },
+    "1003": {
+      "m_bError": null,
+      "m_DisplayID": "1003",
+      "m_SSRTotalWeight": "200",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5500",
+      "m_UpSSRWeight": null,
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[]",
+      "m_PreviewCharacter": "[]",
+      "m_PoolID": "100"
+    },
+    "1004": {
+      "m_bError": null,
+      "m_DisplayID": "1004",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20110]",
+      "m_PreviewCharacter": "[20110]",
+      "m_PoolID": "2001"
+    },
+    "1005": {
+      "m_bError": null,
+      "m_DisplayID": "1005",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20230]",
+      "m_PreviewCharacter": "[20230]",
+      "m_PoolID": "3001"
+    }
+  },
+  "status": "processed_5_items"
+}

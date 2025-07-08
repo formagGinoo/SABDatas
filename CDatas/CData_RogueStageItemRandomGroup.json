@@ -1,0 +1,2659 @@
+{
+  "className": "CData_RogueStageItemRandomGroup",
+  "timestamp": "2025-07-08T13:35:47.421Z",
+  "data": {
+    "1000001": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "3001001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3001001",
+          "m_weigth": "500",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[1]",
+          "m_IsTech": null
+        },
+        "3002001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3002001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[8]",
+          "m_IsTech": null
+        },
+        "3003001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3003001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[8]",
+          "m_IsTech": null
+        },
+        "3004001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3004001",
+          "m_weigth": "2000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[15]",
+          "m_IsTech": null
+        },
+        "3005001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3005001",
+          "m_weigth": "2000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[15]",
+          "m_IsTech": null
+        },
+        "3010001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3010001",
+          "m_weigth": "3000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[29]",
+          "m_IsTech": null
+        },
+        "3011001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3011001",
+          "m_weigth": "3000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[29]",
+          "m_IsTech": null
+        },
+        "3012001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3012001",
+          "m_weigth": "3000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[29]",
+          "m_IsTech": null
+        },
+        "3029001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3029001",
+          "m_weigth": "5000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[43]",
+          "m_IsTech": null
+        },
+        "3030001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000001",
+          "m_ItemID": "3030001",
+          "m_weigth": "5000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[43]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000002": {
+      "_type": "nested_dictionary",
+      "_count": 26,
+      "_processed": 26,
+      "data": {
+        "10100001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100002": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100002",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100004": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100004",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100005",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100006": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100008": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100009": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100009",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100010",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100011": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100011",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100012": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100012",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100013",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100014": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100014",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100015": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100015",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100016": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100016",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100017": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100017",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100018": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100018",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100019": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100019",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100021": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100021",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100022": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100022",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100023": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100023",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100024": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100024",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100025": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100025",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100026": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000002",
+          "m_ItemID": "10100026",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000003": {
+      "_type": "nested_dictionary",
+      "_count": 12,
+      "_processed": 12,
+      "data": {
+        "20200009": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200009",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200009]",
+          "m_IsTech": null
+        },
+        "20200010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200010",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200010]",
+          "m_IsTech": null
+        },
+        "20200011": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200011",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200011]",
+          "m_IsTech": null
+        },
+        "20200012": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200012",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200012]",
+          "m_IsTech": null
+        },
+        "20200013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200013",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200013]",
+          "m_IsTech": null
+        },
+        "20200014": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200014",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200014]",
+          "m_IsTech": null
+        },
+        "20200015": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200015",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200015]",
+          "m_IsTech": null
+        },
+        "20200016": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200016",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200016]",
+          "m_IsTech": null
+        },
+        "20200017": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200017",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200017]",
+          "m_IsTech": null
+        },
+        "20200018": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200018",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200018]",
+          "m_IsTech": null
+        },
+        "20200019": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20200019",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20200019]",
+          "m_IsTech": null
+        },
+        "20300003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000003",
+          "m_ItemID": "20300003",
+          "m_weigth": null,
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[20300003]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000004": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "10100001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100006": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100008": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100012": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100012",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100015": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100015",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100016": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100016",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100019": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100019",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000004",
+          "m_ItemID": "10100020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000005": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "10100005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100005",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100011": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100011",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100013",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100014": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100014",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100021": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100021",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100022": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100022",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100023": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100023",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100024": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100024",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100025": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100025",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100026": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000005",
+          "m_ItemID": "10100026",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "4",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000006": {
+      "_type": "nested_dictionary",
+      "_count": 26,
+      "_processed": 26,
+      "data": {
+        "10100001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100002": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100002",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100004": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100004",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100005",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100006": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100008": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100009": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100009",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100010",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100011": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100011",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100012": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100012",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100013",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100014": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100014",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100015": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100015",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100016": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100016",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100017": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100017",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100018": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100018",
+          "m_weigth": null,
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100019": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100019",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100021": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100021",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100022": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100022",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100023": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100023",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100024": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100024",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100025": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100025",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "1",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100026": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000006",
+          "m_ItemID": "10100026",
+          "m_weigth": "500",
+          "m_MaterialWeigth": "2500",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000007": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "10100001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100006": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100008": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100012": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100012",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100015": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100015",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100016": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100016",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100019": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100019",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000007",
+          "m_ItemID": "10100020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1000008": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "10100005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100005",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100011": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100011",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100013",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100014": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100014",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100021": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100021",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100022": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100022",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100023": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100023",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100024": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100024",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100025": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100025",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        },
+        "10100026": {
+          "m_bError": null,
+          "m_RandomGroupID": "1000008",
+          "m_ItemID": "10100026",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": "5000",
+          "m_SurelyDropNum": "2",
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1001001": {
+      "_type": "nested_dictionary",
+      "_count": 57,
+      "_processed": 50,
+      "data": {
+        "10200001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10200001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200001,20200001]",
+          "m_IsTech": "1"
+        },
+        "10200003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10200003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200003,20200003]",
+          "m_IsTech": null
+        },
+        "10200004": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10200004",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200004,20200004]",
+          "m_IsTech": null
+        },
+        "10200005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10200005",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200005,20200005]",
+          "m_IsTech": null
+        },
+        "10200007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10200007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200007,20200007]",
+          "m_IsTech": "1"
+        },
+        "10300010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300010",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300010,20100010]",
+          "m_IsTech": null
+        },
+        "10300020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300020,20100020]",
+          "m_IsTech": null
+        },
+        "10300030": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300030",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300030,20100030]",
+          "m_IsTech": null
+        },
+        "10300040": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300040",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300040,20100040]",
+          "m_IsTech": null
+        },
+        "10300050": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300050",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300050,20100050]",
+          "m_IsTech": null
+        },
+        "10300060": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300060",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300060,20100060]",
+          "m_IsTech": null
+        },
+        "10300070": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300070",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300070,20100070]",
+          "m_IsTech": null
+        },
+        "10300080": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300080",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300080,20100080]",
+          "m_IsTech": null
+        },
+        "10300090": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300090",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300090,20100090]",
+          "m_IsTech": null
+        },
+        "10300100": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300100",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300100,20100100]",
+          "m_IsTech": null
+        },
+        "10300110": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300110",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300110,20100110]",
+          "m_IsTech": null
+        },
+        "10300120": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300120",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300120,20100120]",
+          "m_IsTech": null
+        },
+        "10300130": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300130",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300130,20100130]",
+          "m_IsTech": null
+        },
+        "10300140": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300140",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300140,20100140]",
+          "m_IsTech": null
+        },
+        "10300150": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300150",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300150,20100150]",
+          "m_IsTech": null
+        },
+        "10300160": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300160",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300160,20100160]",
+          "m_IsTech": null
+        },
+        "10300170": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300170",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300170,20100170]",
+          "m_IsTech": null
+        },
+        "10300180": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300180",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300180,20100180]",
+          "m_IsTech": null
+        },
+        "10300190": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300190",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300190,20100190]",
+          "m_IsTech": null
+        },
+        "10300200": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300200",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300200,20100200]",
+          "m_IsTech": null
+        },
+        "10300210": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300210",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300210,20100210]",
+          "m_IsTech": null
+        },
+        "10300220": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300220",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300220,20100220]",
+          "m_IsTech": null
+        },
+        "10300230": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300230",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300230,20100230]",
+          "m_IsTech": null
+        },
+        "10300270": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300270",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300270,20100270]",
+          "m_IsTech": null
+        },
+        "10300280": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300280",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300280,20100280]",
+          "m_IsTech": null
+        },
+        "10300290": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300290",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300290,20100290]",
+          "m_IsTech": null
+        },
+        "10300300": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300300",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300300,20100300]",
+          "m_IsTech": null
+        },
+        "10300310": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300310",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300310,20100310]",
+          "m_IsTech": null
+        },
+        "10300330": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300330",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300330,20100330]",
+          "m_IsTech": null
+        },
+        "10300340": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300340",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300340,20100340]",
+          "m_IsTech": null
+        },
+        "10300350": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300350",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300350,20100350]",
+          "m_IsTech": null
+        },
+        "10300370": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300370",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300370,20100370]",
+          "m_IsTech": null
+        },
+        "10300380": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300380",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300380,20100380]",
+          "m_IsTech": null
+        },
+        "10300390": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300390",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300390,20100390]",
+          "m_IsTech": null
+        },
+        "10300400": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300400",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300400,20100400]",
+          "m_IsTech": null
+        },
+        "10300420": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300420",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300420,20100420]",
+          "m_IsTech": null
+        },
+        "10300430": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300430",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300430,20100430]",
+          "m_IsTech": null
+        },
+        "10300450": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300450",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300450,20100450]",
+          "m_IsTech": null
+        },
+        "10300470": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300470",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300470,20100470]",
+          "m_IsTech": null
+        },
+        "10300480": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300480",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300480,20100480]",
+          "m_IsTech": null
+        },
+        "10300490": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300490",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300490,20100490]",
+          "m_IsTech": null
+        },
+        "10300500": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300500",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300500,20100500]",
+          "m_IsTech": null
+        },
+        "10300510": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300510",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300510,20100510]",
+          "m_IsTech": null
+        },
+        "10300520": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300520",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300520,20100520]",
+          "m_IsTech": null
+        },
+        "10300570": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300570",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300570,20100570]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1001002": {
+      "_type": "nested_dictionary",
+      "_count": 45,
+      "_processed": 45,
+      "data": {
+        "10300010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300010",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300010,20100010]",
+          "m_IsTech": null
+        },
+        "10300020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300020,20100020]",
+          "m_IsTech": null
+        },
+        "10300030": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300030",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300030,20100030]",
+          "m_IsTech": null
+        },
+        "10300040": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300040",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300040,20100040]",
+          "m_IsTech": null
+        },
+        "10300050": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300050",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300050,20100050]",
+          "m_IsTech": null
+        },
+        "10300060": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300060",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300060,20100060]",
+          "m_IsTech": null
+        },
+        "10300070": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300070",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300070,20100070]",
+          "m_IsTech": null
+        },
+        "10300080": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300080",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300080,20100080]",
+          "m_IsTech": null
+        },
+        "10300090": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300090",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300090,20100090]",
+          "m_IsTech": null
+        },
+        "10300100": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300100",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300100,20100100]",
+          "m_IsTech": null
+        },
+        "10300110": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300110",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300110,20100110]",
+          "m_IsTech": null
+        },
+        "10300120": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300120",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300120,20100120]",
+          "m_IsTech": null
+        },
+        "10300130": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300130",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300130,20100130]",
+          "m_IsTech": null
+        },
+        "10300140": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300140",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300140,20100140]",
+          "m_IsTech": null
+        },
+        "10300150": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300150",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300150,20100150]",
+          "m_IsTech": null
+        },
+        "10300160": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300160",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300160,20100160]",
+          "m_IsTech": null
+        },
+        "10300170": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300170",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300170,20100170]",
+          "m_IsTech": null
+        },
+        "10300180": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300180",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300180,20100180]",
+          "m_IsTech": null
+        },
+        "10300190": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300190",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300190,20100190]",
+          "m_IsTech": null
+        },
+        "10300200": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300200",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300200,20100200]",
+          "m_IsTech": null
+        },
+        "10300210": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300210",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300210,20100210]",
+          "m_IsTech": null
+        },
+        "10300220": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300220",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300220,20100220]",
+          "m_IsTech": null
+        },
+        "10300230": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300230",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300230,20100230]",
+          "m_IsTech": null
+        },
+        "10300270": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300270",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300270,20100270]",
+          "m_IsTech": null
+        },
+        "10300280": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300280",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300280,20100280]",
+          "m_IsTech": null
+        },
+        "10300290": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300290",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300290,20100290]",
+          "m_IsTech": null
+        },
+        "10300300": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300300",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300300,20100300]",
+          "m_IsTech": null
+        },
+        "10300310": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300310",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300310,20100310]",
+          "m_IsTech": null
+        },
+        "10300330": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300330",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300330,20100330]",
+          "m_IsTech": null
+        },
+        "10300340": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300340",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300340,20100340]",
+          "m_IsTech": null
+        },
+        "10300350": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300350",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300350,20100350]",
+          "m_IsTech": null
+        },
+        "10300370": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300370",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300370,20100370]",
+          "m_IsTech": null
+        },
+        "10300380": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300380",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300380,20100380]",
+          "m_IsTech": null
+        },
+        "10300390": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300390",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300390,20100390]",
+          "m_IsTech": null
+        },
+        "10300400": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300400",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300400,20100400]",
+          "m_IsTech": null
+        },
+        "10300420": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300420",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300420,20100420]",
+          "m_IsTech": null
+        },
+        "10300430": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300430",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300430,20100430]",
+          "m_IsTech": null
+        },
+        "10300450": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300450",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300450,20100450]",
+          "m_IsTech": null
+        },
+        "10300470": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300470",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300470,20100470]",
+          "m_IsTech": null
+        },
+        "10300480": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300480",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300480,20100480]",
+          "m_IsTech": null
+        },
+        "10300490": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300490",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300490,20100490]",
+          "m_IsTech": null
+        },
+        "10300500": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300500",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300500,20100500]",
+          "m_IsTech": null
+        },
+        "10300510": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300510",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300510,20100510]",
+          "m_IsTech": null
+        },
+        "10300520": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300520",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300520,20100520]",
+          "m_IsTech": null
+        },
+        "10300570": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300570",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300570,20100570]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "1001003": {
+      "_type": "nested_dictionary",
+      "_count": 12,
+      "_processed": 12,
+      "data": {
+        "10200001": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200001",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200001,20200001]",
+          "m_IsTech": "1"
+        },
+        "10200003": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200003",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200003,20200003]",
+          "m_IsTech": null
+        },
+        "10200004": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200004",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200004,20200004]",
+          "m_IsTech": null
+        },
+        "10200005": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200005",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200005,20200005]",
+          "m_IsTech": null
+        },
+        "10200006": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200006,20200006]",
+          "m_IsTech": "1"
+        },
+        "10200007": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200007,20200007]",
+          "m_IsTech": "1"
+        },
+        "10200008": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200008,20200008]",
+          "m_IsTech": null
+        },
+        "10200009": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200009",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200009,20200009]",
+          "m_IsTech": "1"
+        },
+        "10200010": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200010",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200010,20300001]",
+          "m_IsTech": "1"
+        },
+        "10200013": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200013",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200013,20200013]",
+          "m_IsTech": "1"
+        },
+        "10200017": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200017",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200017,20200017]",
+          "m_IsTech": "1"
+        },
+        "10200020": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001003",
+          "m_ItemID": "10200020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10200020,20200020]",
+          "m_IsTech": "1"
+        }
+      }
+    },
+    "7101100": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10300050": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101100",
+          "m_ItemID": "10300050",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300090,20100090]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101101": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "3005001": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101101",
+          "m_ItemID": "3005001",
+          "m_weigth": "3000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[18]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101102": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10100008": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101102",
+          "m_ItemID": "10100008",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101103": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10100006": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101103",
+          "m_ItemID": "10100006",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101104": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10300010": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101104",
+          "m_ItemID": "10300010",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300010,20100010]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101105": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10100007": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101105",
+          "m_ItemID": "10100007",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101106": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "10100020": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101106",
+          "m_ItemID": "10100020",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": null,
+          "m_LimitValue": "[]",
+          "m_IsTech": null
+        }
+      }
+    },
+    "7101107": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "3010001": {
+          "m_bError": null,
+          "m_RandomGroupID": "7101107",
+          "m_ItemID": "3010001",
+          "m_weigth": "3000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "2",
+          "m_LimitValue": "[18]",
+          "m_IsTech": null
+        }
+      }
+    }
+  },
+  "status": "processed_19_items"
+}

@@ -1,0 +1,34 @@
+{
+  "className": "CData_GuildEvent",
+  "timestamp": "2025-07-08T13:35:34.780Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_EventID": "1",
+      "m_WindowID": "27001",
+      "m_mEventName": "\"Clan Sign-in\"",
+      "m_Path": "\"Atlas_Guild/guild_img_big01\"",
+      "m_JumpID": "2701",
+      "m_SystemUnlockID": "31"
+    },
+    "2": {
+      "m_bError": null,
+      "m_EventID": "2",
+      "m_WindowID": "26005",
+      "m_mEventName": "\"Clan Shop\"",
+      "m_Path": "\"Atlas_Guild/guild_img_big02\"",
+      "m_JumpID": "2605",
+      "m_SystemUnlockID": "26"
+    },
+    "3": {
+      "m_bError": null,
+      "m_EventID": "3",
+      "m_WindowID": "27002",
+      "m_mEventName": "\"Clan Hunt\"",
+      "m_Path": "\"Atlas_Guild/guild_img_big03\"",
+      "m_JumpID": "2702",
+      "m_SystemUnlockID": "32"
+    }
+  },
+  "status": "processed_3_items"
+}

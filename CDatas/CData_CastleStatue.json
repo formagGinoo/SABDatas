@@ -1,0 +1,260 @@
+{
+  "className": "CData_CastleStatue",
+  "timestamp": "2025-07-08T13:35:26.187Z",
+  "data": {
+    "1011": {
+      "m_bError": null,
+      "m_StatueID": "1011",
+      "m_StatueLevel": "1",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1011\"",
+      "m_mStatueName": "\"Harvest Season\"",
+      "m_mStatueDes": "\"Unlock [Wilderness Expedition] Quick Claim\"",
+      "m_Type": "\"StatueEffect_UnlockAllReceive\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1032\""
+    },
+    "1021": {
+      "m_bError": null,
+      "m_StatueID": "1021",
+      "m_StatueLevel": "2",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1021\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 4.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1032\""
+    },
+    "1031": {
+      "m_bError": null,
+      "m_StatueID": "1031",
+      "m_StatueLevel": "3",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1031\"",
+      "m_mStatueName": "\"City of Dominion\"",
+      "m_mStatueDes": "\"Unlock [Wilderness Expedition] Quick Dispatch.\"",
+      "m_Type": "\"StatueEffect_UnlockAutoDispatch\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1032": {
+      "m_bError": null,
+      "m_StatueID": "1032",
+      "m_StatueLevel": "3",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1032\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1032\""
+    },
+    "1041": {
+      "m_bError": null,
+      "m_StatueID": "1041",
+      "m_StatueLevel": "4",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1041\"",
+      "m_mStatueName": "\"Ode to the Sun\"",
+      "m_mStatueDes": "\"Increase weekly [Starlit Memoir] dialogues to 3.\"",
+      "m_Type": "\"StatueEffect_StaminaMaxCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1041\""
+    },
+    "1042": {
+      "m_bError": null,
+      "m_StatueID": "1042",
+      "m_StatueLevel": "4",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1042\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1042\""
+    },
+    "1051": {
+      "m_bError": null,
+      "m_StatueID": "1051",
+      "m_StatueLevel": "5",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1051\"",
+      "m_mStatueName": "\"Lord's Counsel\"",
+      "m_mStatueDes": "\"Unlock [Wilderness Expedition] Quick Expedition.\"",
+      "m_Type": "\"StatueEffect_UnlockFastDispatch\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1052": {
+      "m_bError": null,
+      "m_StatueID": "1052",
+      "m_StatueLevel": "5",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1052\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 5.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1061": {
+      "m_bError": null,
+      "m_StatueID": "1061",
+      "m_StatueLevel": "6",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1061\"",
+      "m_mStatueName": "\"Thorned Rose\"",
+      "m_mStatueDes": "\"Daily Challenge attempts (Free) for the Gauntlet increased to 4.\"",
+      "m_Type": "\"StatueEffect_PVPFreeCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1061\""
+    },
+    "1071": {
+      "m_bError": null,
+      "m_StatueID": "1071",
+      "m_StatueLevel": "7",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1071\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1071\""
+    },
+    "1081": {
+      "m_bError": null,
+      "m_StatueID": "1081",
+      "m_StatueLevel": "8",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1081\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 6.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1091": {
+      "m_bError": null,
+      "m_StatueID": "1091",
+      "m_StatueLevel": "9",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1091\"",
+      "m_mStatueName": "\"Ode to the Sun\"",
+      "m_mStatueDes": "\"Increase weekly [Starlit Memoir] dialogues to 4.\"",
+      "m_Type": "\"StatueEffect_StaminaMaxCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1091\""
+    },
+    "1101": {
+      "m_bError": null,
+      "m_StatueID": "1101",
+      "m_StatueLevel": "10",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1101\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1101\""
+    },
+    "1111": {
+      "m_bError": null,
+      "m_StatueID": "1111",
+      "m_StatueLevel": "11",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1111\"",
+      "m_mStatueName": "\"One-Stop-Shop\"",
+      "m_mStatueDes": "\"Extra 1 free daily reset for the Shop.\"",
+      "m_Type": "\"StatueEffect_ShopNormalFreeResetMaxCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1111\""
+    },
+    "1112": {
+      "m_bError": null,
+      "m_StatueID": "1112",
+      "m_StatueLevel": "11",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1112\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 7.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1113": {
+      "m_bError": null,
+      "m_StatueID": "1113",
+      "m_StatueLevel": "11",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1113\"",
+      "m_mStatueName": "\"Thorned Rose\"",
+      "m_mStatueDes": "\"Daily Challenge attempts (Free) for the Gauntlet increased to 5.\"",
+      "m_Type": "\"StatueEffect_PVPFreeCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1113\""
+    },
+    "1121": {
+      "m_bError": null,
+      "m_StatueID": "1121",
+      "m_StatueLevel": "12",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1121\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1121\""
+    },
+    "1131": {
+      "m_bError": null,
+      "m_StatueID": "1131",
+      "m_StatueLevel": "13",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1131\"",
+      "m_mStatueName": "\"Ode to the Sun\"",
+      "m_mStatueDes": "\"Increase weekly [Starlit Memoir] dialogues to 5.\"",
+      "m_Type": "\"StatueEffect_StaminaMaxCount\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"Statue/1131\""
+    },
+    "1141": {
+      "m_bError": null,
+      "m_StatueID": "1141",
+      "m_StatueLevel": "14",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1141\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 8.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1151": {
+      "m_bError": null,
+      "m_StatueID": "1151",
+      "m_StatueLevel": "15",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1151\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1151\""
+    },
+    "1171": {
+      "m_bError": null,
+      "m_StatueID": "1171",
+      "m_StatueLevel": "17",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1171\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 9.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    },
+    "1181": {
+      "m_bError": null,
+      "m_StatueID": "1181",
+      "m_StatueLevel": "18",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1181\"",
+      "m_mStatueName": "\"Fireside Chat\"",
+      "m_mStatueDes": "\"Increase Affinity gained by Vassals invited to the Council Chamber.\"",
+      "m_Type": "\"StatueEffect_TodayCouncilHallAttractNum\"",
+      "m_Num": "[10,15]",
+      "m_NotShow": "\"Statue/1181\""
+    },
+    "1201": {
+      "m_bError": null,
+      "m_StatueID": "1201",
+      "m_StatueLevel": "20",
+      "m_StatuePic": "\"Atlas_CastleStatue/statue_icon_1201\"",
+      "m_mStatueName": "\"Veiled Luminary\"",
+      "m_mStatueDes": "\"Wilderness Expedition: Number of destinations increased to 10.\"",
+      "m_Type": "\"StatueEffect_DispatchLocation\"",
+      "m_Num": "[1]",
+      "m_NotShow": "\"\""
+    }
+  },
+  "status": "processed_23_items"
+}

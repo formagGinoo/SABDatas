@@ -1,0 +1,229 @@
+{
+  "className": "CData_ResourcesCheckSwitch",
+  "timestamp": "2025-07-08T13:35:47.113Z",
+  "data": {
+    "\"empusae_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"empusae_base\"",
+      "m_CheckResources": "\"empusae_base@HeGui\"",
+      "m_Desc": "\"安普莎Spine\""
+    },
+    "\"aorin_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"aorin_base\"",
+      "m_CheckResources": "\"aorin_base@HeGui\"",
+      "m_Desc": "\"苍凛Spine\""
+    },
+    "\"shila_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"shila_base\"",
+      "m_CheckResources": "\"shila_base@HeGui\"",
+      "m_Desc": "\"黑妹Spine\""
+    },
+    "\"aile_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"aile_base\"",
+      "m_CheckResources": "\"aile_base@HeGui\"",
+      "m_Desc": "\"盾妹Spine\""
+    },
+    "\"silvan_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"silvan_base\"",
+      "m_CheckResources": "\"silvan_base@HeGui\"",
+      "m_Desc": "\"狼妹Spine\""
+    },
+    "\"saint_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"saint_base\"",
+      "m_CheckResources": "\"saint_base@HeGui\"",
+      "m_Desc": "\"赛特Spine\""
+    },
+    "\"joan_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"joan_base\"",
+      "m_CheckResources": "\"joan_base@HeGui\"",
+      "m_Desc": "\"琼安Spine\""
+    },
+    "\"resha_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"resha_base\"",
+      "m_CheckResources": "\"resha_base@HeGui\"",
+      "m_Desc": "\"莱夏Spine\""
+    },
+    "\"cecia_base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"cecia_base\"",
+      "m_CheckResources": "\"cecia_base@HeGui\"",
+      "m_Desc": "\"切西亚Spine\""
+    },
+    "\"Nicole_Base\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Nicole_Base\"",
+      "m_CheckResources": "\"Nicole_Base@HeGui\"",
+      "m_Desc": "\"妮可Spine\""
+    },
+    "\"Atlas_Role/Aiona_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Aiona_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Aiona_Base001@HeGui\"",
+      "m_Desc": "\"苍凛头像\""
+    },
+    "\"Atlas_Role/Aiona_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Aiona_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Aiona_Base002@HeGui\"",
+      "m_Desc": "\"苍凛头像\""
+    },
+    "\"Atlas_Role/Aiona_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Aiona_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Aiona_Base003@HeGui\"",
+      "m_Desc": "\"苍凛头像\""
+    },
+    "\"Atlas_Role/Empousa_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Empousa_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Empousa_Base001@HeGui\"",
+      "m_Desc": "\"安普莎头像\""
+    },
+    "\"Atlas_Role/Empousa_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Empousa_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Empousa_Base002@HeGui\"",
+      "m_Desc": "\"安普莎头像\""
+    },
+    "\"Atlas_Role/Empousa_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Empousa_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Empousa_Base003@HeGui\"",
+      "m_Desc": "\"安普莎头像\""
+    },
+    "\"Atlas_Role/Hati_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Hati_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Hati_Base001@HeGui\"",
+      "m_Desc": "\"狼妹头像\""
+    },
+    "\"Atlas_Role/Hati_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Hati_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Hati_Base002@HeGui\"",
+      "m_Desc": "\"狼妹头像\""
+    },
+    "\"Atlas_Role/Hati_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Hati_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Hati_Base003@HeGui\"",
+      "m_Desc": "\"狼妹头像\""
+    },
+    "\"Atlas_Role/Jestel_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Jestel_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Jestel_Base001@HeGui\"",
+      "m_Desc": "\"盾妹头像\""
+    },
+    "\"Atlas_Role/Jestel_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Jestel_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Jestel_Base002@HeGui\"",
+      "m_Desc": "\"盾妹头像\""
+    },
+    "\"Atlas_Role/Jestel_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Jestel_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Jestel_Base003@HeGui\"",
+      "m_Desc": "\"盾妹头像\""
+    },
+    "\"Atlas_Role/Joan_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Joan_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Joan_Base001@HeGui\"",
+      "m_Desc": "\"琼安头像\""
+    },
+    "\"Atlas_Role/Joan_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Joan_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Joan_Base002@HeGui\"",
+      "m_Desc": "\"琼安头像\""
+    },
+    "\"Atlas_Role/Joan_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Joan_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Joan_Base003@HeGui\"",
+      "m_Desc": "\"琼安头像\""
+    },
+    "\"Atlas_Role/Nicole_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Nicole_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Nicole_Base001@HeGui\"",
+      "m_Desc": "\"妮可头像\""
+    },
+    "\"Atlas_Role/Nicole_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Nicole_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Nicole_Base002@HeGui\"",
+      "m_Desc": "\"妮可头像\""
+    },
+    "\"Atlas_Role/Nicole_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Nicole_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Nicole_Base003@HeGui\"",
+      "m_Desc": "\"妮可头像\""
+    },
+    "\"Atlas_Role/Ressa_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Ressa_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Ressa_Base001@HeGui\"",
+      "m_Desc": "\"莱夏头像\""
+    },
+    "\"Atlas_Role/Ressa_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Ressa_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Ressa_Base002@HeGui\"",
+      "m_Desc": "\"莱夏头像\""
+    },
+    "\"Atlas_Role/Ressa_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Ressa_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Ressa_Base003@HeGui\"",
+      "m_Desc": "\"莱夏头像\""
+    },
+    "\"Atlas_Role/Seth_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Seth_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Seth_Base001@HeGui\"",
+      "m_Desc": "\"赛特头像\""
+    },
+    "\"Atlas_Role/Seth_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Seth_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Seth_Base002@HeGui\"",
+      "m_Desc": "\"赛特头像\""
+    },
+    "\"Atlas_Role/Seth_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Seth_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Seth_Base003@HeGui\"",
+      "m_Desc": "\"赛特头像\""
+    },
+    "\"Atlas_Role/Setti_Base001\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Setti_Base001\"",
+      "m_CheckResources": "\"Atlas_Role/Setti_Base001@HeGui\"",
+      "m_Desc": "\"黑妹头像\""
+    },
+    "\"Atlas_Role/Setti_Base002\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Setti_Base002\"",
+      "m_CheckResources": "\"Atlas_Role/Setti_Base002@HeGui\"",
+      "m_Desc": "\"黑妹头像\""
+    },
+    "\"Atlas_Role/Setti_Base003\"": {
+      "m_bError": null,
+      "m_OriginalResources": "\"Atlas_Role/Setti_Base003\"",
+      "m_CheckResources": "\"Atlas_Role/Setti_Base003@HeGui\"",
+      "m_Desc": "\"黑妹头像\""
+    }
+  },
+  "status": "processed_37_items"
+}

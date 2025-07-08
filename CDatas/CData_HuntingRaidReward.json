@@ -1,0 +1,56 @@
+{
+  "className": "CData_HuntingRaidReward",
+  "timestamp": "2025-07-08T13:35:34.855Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_Rank": "[1,50]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1411001,1],[101,1500]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_Rank": "[51,200]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1411002,1],[101,1000]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_Rank": "[201,500]",
+      "m_RankPercent": "[]",
+      "m_Award": "[[1411003,1],[101,800]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_Rank": "[]",
+      "m_RankPercent": "[0,1000]",
+      "m_Award": "[[101,600]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_Rank": "[]",
+      "m_RankPercent": "[1000,2500]",
+      "m_Award": "[[101,500]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_Rank": "[]",
+      "m_RankPercent": "[2500,5000]",
+      "m_Award": "[[101,400]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_Rank": "[]",
+      "m_RankPercent": "[5000,10000]",
+      "m_Award": "[[101,300]]"
+    }
+  },
+  "status": "processed_7_items"
+}

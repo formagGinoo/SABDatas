@@ -1,0 +1,742 @@
+{
+  "className": "CData_MainExplore",
+  "timestamp": "2025-07-08T13:35:35.634Z",
+  "data": {
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "2",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1102020",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[1,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "2",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1102050",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[1,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "2",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1102070",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[1,3]"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "3",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1103010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[2,2]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "3",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1103030",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "3",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1103040",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "3",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1103050",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[2,1]"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1104010",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1104020",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[5,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1104021",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[2,3]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1104031",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[4,1]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "5",
+          "m_UnlockLevel": "1104040",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1421,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_MainChapter": "4",
+          "m_ClueID": "6",
+          "m_UnlockLevel": "1104050",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1402,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "5",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1105010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[3,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "5",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1105030",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1422,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "5",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1105050",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[3,3]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "5",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1105061",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1403,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "6",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1106010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[3,2]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "6",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1106040",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[4,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "6",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1106060",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1404,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "6",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1106071",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1420,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1107010",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[6,2]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1107020",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[2,4]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1107030",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1423,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1107040",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[6,1]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "5",
+          "m_UnlockLevel": "1107050",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1405,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_MainChapter": "7",
+          "m_ClueID": "6",
+          "m_UnlockLevel": "1107060",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1424,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1108010",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1425,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1108020",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[6,3]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1108040",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1108050",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1406,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "5",
+          "m_UnlockLevel": "1108060",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1426,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_MainChapter": "8",
+          "m_ClueID": "6",
+          "m_UnlockLevel": "1108073",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[5,2]"
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "9",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1109020",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "9",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1109031",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[2,5]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "9",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1109041",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1407,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "9",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1109060",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[8,1]"
+        }
+      }
+    },
+    "10": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1110020",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1427,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1110030",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[9,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1110041",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1408,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1110050",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[8,2]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "5",
+          "m_UnlockLevel": "1110060",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[1428,1]]",
+          "m_SubsectionID": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_MainChapter": "10",
+          "m_ClueID": "6",
+          "m_UnlockLevel": "1110070",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[9,1]"
+        }
+      }
+    },
+    "11": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "11",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1111020",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,100]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "11",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1111030",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[5,3]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "11",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1111041",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1409,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "12": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "12",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1112010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[8,3]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "12",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1112030",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[9,3]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "12",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1112050",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[1429,1]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "13": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "13",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1113010",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[9,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "13",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1113030",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "13",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1113050",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "14": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "14",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1114010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[7,3]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "14",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1114040",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "14",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1114060",
+          "m_Type": "1",
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "15": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "15",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1115020",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "15",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1115030",
+          "m_Type": "1",
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[7,2]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "15",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1115050",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[9,5]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "15",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1115070",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    },
+    "16": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "16",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1116010",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[7,4]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "16",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1116020",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "16",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1116040",
+          "m_Type": null,
+          "m_RewardType": "2",
+          "m_Reward": "[]",
+          "m_SubsectionID": "[7,1]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "16",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1116060",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        }
+      }
+    }
+  },
+  "status": "processed_15_items"
+}

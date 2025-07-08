@@ -1,0 +1,61 @@
+{
+  "className": "CData_GuildLevel",
+  "timestamp": "2025-07-08T13:35:34.781Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_Level": "1",
+      "m_NeedExp": "90",
+      "m_Member": "20"
+    },
+    "2": {
+      "m_bError": null,
+      "m_Level": "2",
+      "m_NeedExp": "250",
+      "m_Member": "25"
+    },
+    "3": {
+      "m_bError": null,
+      "m_Level": "3",
+      "m_NeedExp": "500",
+      "m_Member": "32"
+    },
+    "4": {
+      "m_bError": null,
+      "m_Level": "4",
+      "m_NeedExp": "1000",
+      "m_Member": "32"
+    },
+    "5": {
+      "m_bError": null,
+      "m_Level": "5",
+      "m_NeedExp": "3000",
+      "m_Member": "32"
+    },
+    "6": {
+      "m_bError": null,
+      "m_Level": "6",
+      "m_NeedExp": "9000",
+      "m_Member": "32"
+    },
+    "7": {
+      "m_bError": null,
+      "m_Level": "7",
+      "m_NeedExp": "10000",
+      "m_Member": "32"
+    },
+    "8": {
+      "m_bError": null,
+      "m_Level": "8",
+      "m_NeedExp": "11000",
+      "m_Member": "32"
+    },
+    "9": {
+      "m_bError": null,
+      "m_Level": "9",
+      "m_NeedExp": "12600",
+      "m_Member": "32"
+    }
+  },
+  "status": "processed_9_items"
+}

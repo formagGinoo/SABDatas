@@ -1,0 +1,547 @@
+{
+  "className": "CData_RogueTaskAchieveReward",
+  "timestamp": "2025-07-08T13:35:47.639Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_RequiredCount": "10",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_RequiredCount": "20",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_RequiredCount": "30",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_RequiredCount": "40",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_RequiredCount": "50",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_RequiredCount": "60",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_RequiredCount": "70",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_RequiredCount": "80",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_RequiredCount": "90",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_RequiredCount": "100",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_RequiredCount": "110",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_RequiredCount": "120",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_RequiredCount": "130",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_RequiredCount": "140",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_RequiredCount": "150",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_RequiredCount": "160",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "17": {
+      "m_bError": null,
+      "m_ID": "17",
+      "m_RequiredCount": "170",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "18": {
+      "m_bError": null,
+      "m_ID": "18",
+      "m_RequiredCount": "180",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "19": {
+      "m_bError": null,
+      "m_ID": "19",
+      "m_RequiredCount": "190",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "20": {
+      "m_bError": null,
+      "m_ID": "20",
+      "m_RequiredCount": "200",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_RequiredCount": "210",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_RequiredCount": "220",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "23": {
+      "m_bError": null,
+      "m_ID": "23",
+      "m_RequiredCount": "230",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "24": {
+      "m_bError": null,
+      "m_ID": "24",
+      "m_RequiredCount": "240",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "25": {
+      "m_bError": null,
+      "m_ID": "25",
+      "m_RequiredCount": "250",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "26": {
+      "m_bError": null,
+      "m_ID": "26",
+      "m_RequiredCount": "260",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "27": {
+      "m_bError": null,
+      "m_ID": "27",
+      "m_RequiredCount": "270",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "28": {
+      "m_bError": null,
+      "m_ID": "28",
+      "m_RequiredCount": "280",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "29": {
+      "m_bError": null,
+      "m_ID": "29",
+      "m_RequiredCount": "290",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "30": {
+      "m_bError": null,
+      "m_ID": "30",
+      "m_RequiredCount": "300",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "31": {
+      "m_bError": null,
+      "m_ID": "31",
+      "m_RequiredCount": "310",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "32": {
+      "m_bError": null,
+      "m_ID": "32",
+      "m_RequiredCount": "320",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "33": {
+      "m_bError": null,
+      "m_ID": "33",
+      "m_RequiredCount": "330",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "34": {
+      "m_bError": null,
+      "m_ID": "34",
+      "m_RequiredCount": "340",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "35": {
+      "m_bError": null,
+      "m_ID": "35",
+      "m_RequiredCount": "350",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "36": {
+      "m_bError": null,
+      "m_ID": "36",
+      "m_RequiredCount": "360",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "37": {
+      "m_bError": null,
+      "m_ID": "37",
+      "m_RequiredCount": "370",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "38": {
+      "m_bError": null,
+      "m_ID": "38",
+      "m_RequiredCount": "380",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "39": {
+      "m_bError": null,
+      "m_ID": "39",
+      "m_RequiredCount": "390",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "40": {
+      "m_bError": null,
+      "m_ID": "40",
+      "m_RequiredCount": "400",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "41": {
+      "m_bError": null,
+      "m_ID": "41",
+      "m_RequiredCount": "410",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "42": {
+      "m_bError": null,
+      "m_ID": "42",
+      "m_RequiredCount": "420",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "43": {
+      "m_bError": null,
+      "m_ID": "43",
+      "m_RequiredCount": "430",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "44": {
+      "m_bError": null,
+      "m_ID": "44",
+      "m_RequiredCount": "440",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "45": {
+      "m_bError": null,
+      "m_ID": "45",
+      "m_RequiredCount": "450",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "46": {
+      "m_bError": null,
+      "m_ID": "46",
+      "m_RequiredCount": "460",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "47": {
+      "m_bError": null,
+      "m_ID": "47",
+      "m_RequiredCount": "470",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "48": {
+      "m_bError": null,
+      "m_ID": "48",
+      "m_RequiredCount": "480",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "49": {
+      "m_bError": null,
+      "m_ID": "49",
+      "m_RequiredCount": "490",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "50": {
+      "m_bError": null,
+      "m_ID": "50",
+      "m_RequiredCount": "500",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "51": {
+      "m_bError": null,
+      "m_ID": "51",
+      "m_RequiredCount": "510",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "52": {
+      "m_bError": null,
+      "m_ID": "52",
+      "m_RequiredCount": "520",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "53": {
+      "m_bError": null,
+      "m_ID": "53",
+      "m_RequiredCount": "530",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "54": {
+      "m_bError": null,
+      "m_ID": "54",
+      "m_RequiredCount": "540",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "55": {
+      "m_bError": null,
+      "m_ID": "55",
+      "m_RequiredCount": "550",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "56": {
+      "m_bError": null,
+      "m_ID": "56",
+      "m_RequiredCount": "560",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "57": {
+      "m_bError": null,
+      "m_ID": "57",
+      "m_RequiredCount": "570",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "58": {
+      "m_bError": null,
+      "m_ID": "58",
+      "m_RequiredCount": "580",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "59": {
+      "m_bError": null,
+      "m_ID": "59",
+      "m_RequiredCount": "590",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "60": {
+      "m_bError": null,
+      "m_ID": "60",
+      "m_RequiredCount": "600",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "61": {
+      "m_bError": null,
+      "m_ID": "61",
+      "m_RequiredCount": "610",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "62": {
+      "m_bError": null,
+      "m_ID": "62",
+      "m_RequiredCount": "620",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "63": {
+      "m_bError": null,
+      "m_ID": "63",
+      "m_RequiredCount": "630",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "64": {
+      "m_bError": null,
+      "m_ID": "64",
+      "m_RequiredCount": "640",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "65": {
+      "m_bError": null,
+      "m_ID": "65",
+      "m_RequiredCount": "650",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "66": {
+      "m_bError": null,
+      "m_ID": "66",
+      "m_RequiredCount": "660",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "67": {
+      "m_bError": null,
+      "m_ID": "67",
+      "m_RequiredCount": "670",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "68": {
+      "m_bError": null,
+      "m_ID": "68",
+      "m_RequiredCount": "680",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "69": {
+      "m_bError": null,
+      "m_ID": "69",
+      "m_RequiredCount": "690",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "70": {
+      "m_bError": null,
+      "m_ID": "70",
+      "m_RequiredCount": "700",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "71": {
+      "m_bError": null,
+      "m_ID": "71",
+      "m_RequiredCount": "710",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "72": {
+      "m_bError": null,
+      "m_ID": "72",
+      "m_RequiredCount": "720",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "73": {
+      "m_bError": null,
+      "m_ID": "73",
+      "m_RequiredCount": "730",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "74": {
+      "m_bError": null,
+      "m_ID": "74",
+      "m_RequiredCount": "740",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "75": {
+      "m_bError": null,
+      "m_ID": "75",
+      "m_RequiredCount": "750",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "76": {
+      "m_bError": null,
+      "m_ID": "76",
+      "m_RequiredCount": "760",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "77": {
+      "m_bError": null,
+      "m_ID": "77",
+      "m_RequiredCount": "770",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "78": {
+      "m_bError": null,
+      "m_ID": "78",
+      "m_RequiredCount": "780",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "79": {
+      "m_bError": null,
+      "m_ID": "79",
+      "m_RequiredCount": "790",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "80": {
+      "m_bError": null,
+      "m_ID": "80",
+      "m_RequiredCount": "800",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "81": {
+      "m_bError": null,
+      "m_ID": "81",
+      "m_RequiredCount": "810",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "82": {
+      "m_bError": null,
+      "m_ID": "82",
+      "m_RequiredCount": "820",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "83": {
+      "m_bError": null,
+      "m_ID": "83",
+      "m_RequiredCount": "830",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "84": {
+      "m_bError": null,
+      "m_ID": "84",
+      "m_RequiredCount": "840",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "85": {
+      "m_bError": null,
+      "m_ID": "85",
+      "m_RequiredCount": "850",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "86": {
+      "m_bError": null,
+      "m_ID": "86",
+      "m_RequiredCount": "860",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "87": {
+      "m_bError": null,
+      "m_ID": "87",
+      "m_RequiredCount": "870",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "88": {
+      "m_bError": null,
+      "m_ID": "88",
+      "m_RequiredCount": "880",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "89": {
+      "m_bError": null,
+      "m_ID": "89",
+      "m_RequiredCount": "890",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "90": {
+      "m_bError": null,
+      "m_ID": "90",
+      "m_RequiredCount": "900",
+      "m_Reward": "[[101,50],[30011,1]]"
+    }
+  },
+  "status": "processed_90_items"
+}

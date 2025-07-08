@@ -1,0 +1,1267 @@
+{
+  "className": "CData_AttractTouch",
+  "timestamp": "2025-07-08T13:35:22.622Z",
+  "data": {
+    "20010": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20010",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2001017,2001018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20010",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2001019,2001020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20010",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2001021,2001022]"
+        }
+      }
+    },
+    "20020": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20020",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2002017,2002018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20020",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2002019,2002020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20020",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2002021,2002022]"
+        }
+      }
+    },
+    "20030": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20030",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2003017,2003018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20030",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2003019,2003020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20030",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2003021,2003022]"
+        }
+      }
+    },
+    "20040": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20040",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2004017,2004018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20040",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2004019,2004020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20040",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2004021,2004022]"
+        }
+      }
+    },
+    "20050": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20050",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2005017,2005018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20050",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2005019,2005020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20050",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2005021,2005022]"
+        }
+      }
+    },
+    "20060": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20060",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2006017,2006018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20060",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2006019,2006020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20060",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2006021,2006022]"
+        }
+      }
+    },
+    "20070": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20070",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2007017,2007018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20070",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2007019,2007020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20070",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2007021,2007022]"
+        }
+      }
+    },
+    "20080": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20080",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2008017,2008018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20080",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2008019,2008020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20080",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2008021,2008022]"
+        }
+      }
+    },
+    "20090": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20090",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2009017,2009018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20090",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2009019,2009020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20090",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2009021,2009022]"
+        }
+      }
+    },
+    "20100": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20100",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2010017,2010018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20100",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2010019,2010020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20100",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2010021,2010022]"
+        }
+      }
+    },
+    "20110": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20110",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2011017,2011018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20110",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2011019,2011020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20110",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2011021,2011022]"
+        }
+      }
+    },
+    "20120": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20120",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2012017,2012018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20120",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2012019,2012020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20120",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2012021,2012022]"
+        }
+      }
+    },
+    "20130": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20130",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2013017,2013018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20130",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2013019,2013020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20130",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2013021,2013022]"
+        }
+      }
+    },
+    "20140": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20140",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2014017,2014018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20140",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2014019,2014020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20140",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2014021,2014022]"
+        }
+      }
+    },
+    "20150": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20150",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2015017,2015018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20150",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2015019,2015020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20150",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2015021,2015022]"
+        }
+      }
+    },
+    "20160": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20160",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2016017,2016018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20160",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2016019,2016020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20160",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2016021,2016022]"
+        }
+      }
+    },
+    "20170": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20170",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2017017,2017018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20170",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2017019,2017020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20170",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2017021,2017022]"
+        }
+      }
+    },
+    "20180": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20180",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2018017,2018018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20180",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2018019,2018020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20180",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2018021,2018022]"
+        }
+      }
+    },
+    "20190": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20190",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2019017,2019018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20190",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2019019,2019020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20190",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2019021,2019022]"
+        }
+      }
+    },
+    "20200": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20200",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2020017,2020018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20200",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2020019,2020020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20200",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2020021,2020022]"
+        }
+      }
+    },
+    "20210": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20210",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2021017,2021018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20210",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2021019,2021020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20210",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2021021,2021022]"
+        }
+      }
+    },
+    "20220": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20220",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2022017,2022018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20220",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2022019,2022020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20220",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2022021,2022022]"
+        }
+      }
+    },
+    "20230": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20230",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2023017,2023018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20230",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2023019,2023020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20230",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2023021,2023022]"
+        }
+      }
+    },
+    "20270": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20270",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2027017,2027018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20270",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2027019,2027020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20270",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2027021,2027022]"
+        }
+      }
+    },
+    "20280": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20280",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2028017,2028018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20280",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2028019,2028020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20280",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2028021,2028022]"
+        }
+      }
+    },
+    "20290": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20290",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2029017,2029018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20290",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2029019,2029020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20290",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2029021,2029022]"
+        }
+      }
+    },
+    "20300": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20300",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2030017,2030018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20300",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2030019,2030020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20300",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2030021,2030022]"
+        }
+      }
+    },
+    "20310": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20310",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2031017,2031018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20310",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2031019,2031020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20310",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2031021,2031022]"
+        }
+      }
+    },
+    "20330": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20330",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2033017,2033018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20330",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2033019,2033020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20330",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2033021,2033022]"
+        }
+      }
+    },
+    "20340": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20340",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2034017,2034018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20340",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2034019,2034020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20340",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2034021,2034022]"
+        }
+      }
+    },
+    "20350": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20350",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2035017,2035018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20350",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2035019,2035020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20350",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2035021,2035022]"
+        }
+      }
+    },
+    "20370": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20370",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2037017,2037018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20370",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2037019,2037020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20370",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2037021,2037022]"
+        }
+      }
+    },
+    "20380": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20380",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2038017,2038018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20380",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2038019,2038020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20380",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2038021,2038022]"
+        }
+      }
+    },
+    "20390": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20390",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2039017,2039018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20390",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2039019,2039020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20390",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2039021,2039022]"
+        }
+      }
+    },
+    "20400": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20400",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2040017,2040018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20400",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2040019,2040020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20400",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2040021,2040022]"
+        }
+      }
+    },
+    "20420": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20420",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2042017,2042018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20420",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2042019,2042020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20420",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2042021,2042022]"
+        }
+      }
+    },
+    "20430": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20430",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2043017,2043018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20430",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2043019,2043020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20430",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2043021,2043022]"
+        }
+      }
+    },
+    "20450": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20450",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2045017,2045018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20450",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2045019,2045020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20450",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2045021,2045022]"
+        }
+      }
+    },
+    "20470": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20470",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2047017,2047018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20470",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2047019,2047020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20470",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2047021,2047022]"
+        }
+      }
+    },
+    "20480": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20480",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2048017,2048018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20480",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2048019,2048020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20480",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2048021,2048022]"
+        }
+      }
+    },
+    "20490": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20490",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2049017,2049018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20490",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2049019,2049020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20490",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2049021,2049022]"
+        }
+      }
+    },
+    "20500": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20500",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2050017,2050018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20500",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2050019,2050020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20500",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2050021,2050022]"
+        }
+      }
+    },
+    "20510": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20510",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2051017,2051018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20510",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2051019,2051020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20510",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2051021,2051022]"
+        }
+      }
+    },
+    "20520": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20520",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2052017,2052018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20520",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2052019,2052020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20520",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2052021,2052022]"
+        }
+      }
+    },
+    "20570": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20570",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2057017,2057018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20570",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2057019,2057020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20570",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2057021,2057022]"
+        }
+      }
+    }
+  },
+  "status": "processed_45_items"
+}

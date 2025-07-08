@@ -1,0 +1,21 @@
+{
+  "className": "CData_CharacterDamageType",
+  "timestamp": "2025-07-08T13:35:26.695Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_DamageType": "1",
+      "m_mDamageTypeName": "\"P. DMG\"",
+      "m_mDamageTypeDesc": "\"DMG dealt through physical means like swords and bows. Increasing P. DEF reduces DMG taken from this type.\"",
+      "m_DamageTypeIcon": "\"Atlas_LevelTag/level_info_icon_attack_03\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_DamageType": "2",
+      "m_mDamageTypeName": "\"M. DMG\"",
+      "m_mDamageTypeDesc": "\"DMG dealt through magical means like blood formulas and alchemical formulas. Increasing M. DEF reduces DMG taken from this type.\"",
+      "m_DamageTypeIcon": "\"Atlas_LevelTag/level_info_icon_attack_02\""
+    }
+  },
+  "status": "processed_2_items"
+}

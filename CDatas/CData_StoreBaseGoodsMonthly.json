@@ -1,0 +1,35 @@
+{
+  "className": "CData_StoreBaseGoodsMonthly",
+  "timestamp": "2025-07-08T13:35:51.467Z",
+  "data": {
+    "201001": {
+      "m_bError": null,
+      "m_GoodsID": "201001",
+      "m_StoreID": "1001",
+      "m_IsOn": "1",
+      "m_mItemName": "\"New Moon Pact\"",
+      "m_mItemDesc": "\"For each purchase, item effect will be extended by 30 days. Purchase Rewards are available immediately, and Daily Rewards are available upon login each day.\"",
+      "m_ItemID": "[[100,330]]",
+      "m_DailyReward": "[[101,180]]",
+      "m_Duration": "2592000",
+      "m_MaxDuration": "15552000",
+      "m_ProductID": "\"com.moonton.nova_gift499\"",
+      "m_ProductSubID": "56"
+    },
+    "201002": {
+      "m_bError": null,
+      "m_GoodsID": "201002",
+      "m_StoreID": "1001",
+      "m_IsOn": "1",
+      "m_mItemName": "\"Full Moon Pact\"",
+      "m_mItemDesc": "\"For each purchase, item effect will be extended by 30 days. Purchase Rewards are available immediately, and Daily Rewards are available upon login each day.\"",
+      "m_ItemID": "[[100,1210]]",
+      "m_DailyReward": "[[30014,1]]",
+      "m_Duration": "2592000",
+      "m_MaxDuration": "15552000",
+      "m_ProductID": "\"com.moonton.nova_gift1499\"",
+      "m_ProductSubID": "57"
+    }
+  },
+  "status": "processed_2_items"
+}

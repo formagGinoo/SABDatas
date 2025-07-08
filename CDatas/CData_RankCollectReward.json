@@ -1,0 +1,190 @@
+{
+  "className": "CData_RankCollectReward",
+  "timestamp": "2025-07-08T13:35:47.036Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 9,
+      "_processed": 9,
+      "data": {
+        "10": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "10",
+          "m_Reward": "[[1410009,1]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "15",
+          "m_Reward": "[[1410008,1]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "20",
+          "m_Reward": "[[1410007,1]]"
+        },
+        "50": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "50",
+          "m_Reward": "[[1410006,1]]"
+        },
+        "100": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "100",
+          "m_Reward": "[[1410005,1]]"
+        },
+        "150": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "150",
+          "m_Reward": "[[1410004,1]]"
+        },
+        "200": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "200",
+          "m_Reward": "[[1410003,1]]"
+        },
+        "275": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "275",
+          "m_Reward": "[[1410002,1]]"
+        },
+        "350": {
+          "m_bError": null,
+          "m_Rank": "1",
+          "m_Number": "350",
+          "m_Reward": "[[1410001,1]]"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 9,
+      "_processed": 9,
+      "data": {
+        "10": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "10",
+          "m_Reward": "[[1410018,1]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "15",
+          "m_Reward": "[[1410017,1]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "20",
+          "m_Reward": "[[1410016,1]]"
+        },
+        "50": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "50",
+          "m_Reward": "[[1410015,1]]"
+        },
+        "100": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "100",
+          "m_Reward": "[[1410014,1]]"
+        },
+        "150": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "150",
+          "m_Reward": "[[1410013,1]]"
+        },
+        "200": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "200",
+          "m_Reward": "[[1410012,1]]"
+        },
+        "275": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "275",
+          "m_Reward": "[[1410011,1]]"
+        },
+        "350": {
+          "m_bError": null,
+          "m_Rank": "5",
+          "m_Number": "350",
+          "m_Reward": "[[1410010,1]]"
+        }
+      }
+    },
+    "10": {
+      "_type": "nested_dictionary",
+      "_count": 9,
+      "_processed": 9,
+      "data": {
+        "10": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "10",
+          "m_Reward": "[[1410027,1]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "15",
+          "m_Reward": "[[1410026,1]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "20",
+          "m_Reward": "[[1410025,1]]"
+        },
+        "50": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "50",
+          "m_Reward": "[[1410024,1]]"
+        },
+        "100": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "100",
+          "m_Reward": "[[1410023,1]]"
+        },
+        "150": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "150",
+          "m_Reward": "[[1410022,1]]"
+        },
+        "200": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "200",
+          "m_Reward": "[[1410021,1]]"
+        },
+        "275": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "275",
+          "m_Reward": "[[1410020,1]]"
+        },
+        "350": {
+          "m_bError": null,
+          "m_Rank": "10",
+          "m_Number": "350",
+          "m_Reward": "[[1410019,1]]"
+        }
+      }
+    }
+  },
+  "status": "processed_3_items"
+}

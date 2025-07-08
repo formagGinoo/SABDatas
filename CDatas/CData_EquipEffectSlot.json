@@ -1,0 +1,22 @@
+{
+  "className": "CData_EquipEffectSlot",
+  "timestamp": "2025-07-08T13:35:33.495Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_SlotID": "1",
+      "m_Percentage": "10000"
+    },
+    "2": {
+      "m_bError": null,
+      "m_SlotID": "2",
+      "m_Percentage": "5000"
+    },
+    "3": {
+      "m_bError": null,
+      "m_SlotID": "3",
+      "m_Percentage": "3000"
+    }
+  },
+  "status": "processed_3_items"
+}

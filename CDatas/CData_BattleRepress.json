@@ -1,0 +1,1008 @@
+{
+  "className": "CData_BattleRepress",
+  "timestamp": "2025-07-08T13:35:24.131Z",
+  "data": {
+    "101": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "1",
+          "m_RepressType": null,
+          "m_MinLevel": "-3",
+          "m_MaxLevel": "-99999",
+          "m_RolePropertyCorrect": "[[2,1,8000],[2,2,8000],[2,3,8000],[2,4,8000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,12000],[2,2,12000],[2,3,12000],[2,4,12000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "2",
+          "m_RepressType": null,
+          "m_MinLevel": "-2",
+          "m_MaxLevel": "-2",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,20000],[2,3,9000],[2,4,9000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,11000],[2,3,11000],[2,4,11000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "3",
+          "m_RepressType": null,
+          "m_MinLevel": "-1",
+          "m_MaxLevel": "-1",
+          "m_RolePropertyCorrect": "[[1,1,-100],[1,2,-100],[1,3,-100],[1,4,-100]]",
+          "m_MonsterPropertyCorrect": "[[1,1,100000],[1,2,100],[1,3,100],[1,4,100]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "4",
+          "m_RepressType": null,
+          "m_MinLevel": null,
+          "m_MaxLevel": null,
+          "m_RolePropertyCorrect": "[[1,1,100],[1,2,100],[1,3,100],[1,4,100]]",
+          "m_MonsterPropertyCorrect": "[[1,1,-100],[1,2,-100],[1,3,-100],[1,4,-100]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "5",
+          "m_RepressType": null,
+          "m_MinLevel": "1",
+          "m_MaxLevel": "1",
+          "m_RolePropertyCorrect": "[[2,1,11000],[2,2,11000],[2,3,11000],[2,4,11000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,9000],[2,2,9000],[2,3,9000],[2,4,9000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RepressID": "101",
+          "m_RepressNum": "6",
+          "m_RepressType": null,
+          "m_MinLevel": "2",
+          "m_MaxLevel": "999",
+          "m_RolePropertyCorrect": "[[2,1,12000],[2,2,12000],[2,3,12000],[2,4,12000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,8000],[2,2,8000],[2,3,8000],[2,4,8000]]"
+        }
+      }
+    },
+    "102": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "102",
+          "m_RepressNum": "1",
+          "m_RepressType": null,
+          "m_MinLevel": "-9999",
+          "m_MaxLevel": "-10",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,15000],[2,2,15000],[2,3,15000],[2,4,15000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "102",
+          "m_RepressNum": "2",
+          "m_RepressType": null,
+          "m_MinLevel": "-9",
+          "m_MaxLevel": "-2",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,13000],[2,2,14000],[2,3,13000],[2,4,13000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "102",
+          "m_RepressNum": "3",
+          "m_RepressType": null,
+          "m_MinLevel": "-1",
+          "m_MaxLevel": "-1",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,12000],[2,2,13000],[2,3,12000],[2,4,12000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "102",
+          "m_RepressNum": "4",
+          "m_RepressType": null,
+          "m_MinLevel": null,
+          "m_MaxLevel": "99999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    },
+    "103": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "103",
+          "m_RepressNum": "1",
+          "m_RepressType": null,
+          "m_MinLevel": "-9999",
+          "m_MaxLevel": "-10",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,15000],[2,2,15000],[2,3,15000],[2,4,15000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "103",
+          "m_RepressNum": "2",
+          "m_RepressType": null,
+          "m_MinLevel": "-9",
+          "m_MaxLevel": "-2",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,12000],[2,2,13000],[2,3,12000],[2,4,12000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "103",
+          "m_RepressNum": "3",
+          "m_RepressType": null,
+          "m_MinLevel": "-1",
+          "m_MaxLevel": "-1",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,11500],[2,2,12000],[2,3,12000],[2,4,12000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "103",
+          "m_RepressNum": "4",
+          "m_RepressType": null,
+          "m_MinLevel": null,
+          "m_MaxLevel": "99999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,9000],[2,2,9000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    },
+    "104": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "104",
+          "m_RepressNum": "1",
+          "m_RepressType": "1",
+          "m_MinLevel": "-9999",
+          "m_MaxLevel": "-1000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,15000],[2,2,15000],[2,3,15000],[2,4,15000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "104",
+          "m_RepressNum": "2",
+          "m_RepressType": "1",
+          "m_MinLevel": "-999",
+          "m_MaxLevel": "-100",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,12000],[2,2,13000],[2,3,12000],[2,4,12000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "104",
+          "m_RepressNum": "3",
+          "m_RepressType": "1",
+          "m_MinLevel": "-99",
+          "m_MaxLevel": null,
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "104",
+          "m_RepressNum": "4",
+          "m_RepressType": "1",
+          "m_MinLevel": "1",
+          "m_MaxLevel": "999999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    },
+    "105": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "105",
+          "m_RepressNum": "1",
+          "m_RepressType": "2",
+          "m_MinLevel": "-99999",
+          "m_MaxLevel": "-10000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,15000],[2,2,15000],[2,3,15000],[2,4,15000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "105",
+          "m_RepressNum": "2",
+          "m_RepressType": "2",
+          "m_MinLevel": "-9999",
+          "m_MaxLevel": "-1000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,12000],[2,2,13000],[2,3,12000],[2,4,12000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "105",
+          "m_RepressNum": "3",
+          "m_RepressType": "2",
+          "m_MinLevel": "-999",
+          "m_MaxLevel": null,
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "105",
+          "m_RepressNum": "4",
+          "m_RepressType": "2",
+          "m_MinLevel": "1",
+          "m_MaxLevel": "999999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    },
+    "106": {
+      "_type": "nested_dictionary",
+      "_count": 7,
+      "_processed": 7,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "1",
+          "m_RepressType": "2",
+          "m_MinLevel": "-9999999",
+          "m_MaxLevel": "-4000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,40000],[2,2,30000],[2,3,20000],[2,4,20000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "2",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4000",
+          "m_MaxLevel": "-2000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,20000],[2,2,20000],[2,3,15000],[2,4,15000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "3",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2000",
+          "m_MaxLevel": "-1500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,18000],[2,2,20000],[2,3,13000],[2,4,13000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "4",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1500",
+          "m_MaxLevel": "-1000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,14000],[2,2,15000],[2,3,12000],[2,4,12000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "5",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1000",
+          "m_MaxLevel": "-500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,11000],[2,2,12000],[2,3,11000],[2,4,11000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "6",
+          "m_RepressType": "2",
+          "m_MinLevel": "-500",
+          "m_MaxLevel": null,
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_RepressID": "106",
+          "m_RepressNum": "7",
+          "m_RepressType": "2",
+          "m_MinLevel": null,
+          "m_MaxLevel": "999999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,9000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    },
+    "110": {
+      "_skipped": "Nested Dictionary (501 items - too large)",
+      "_type": "Dictionary`2",
+      "_count": 501
+    },
+    "120": {
+      "_type": "nested_dictionary",
+      "_count": 15,
+      "_processed": 15,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "1",
+          "m_RepressType": "2",
+          "m_MinLevel": "-99999999",
+          "m_MaxLevel": "-3500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "2",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3500",
+          "m_MaxLevel": "-3000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "3",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3000",
+          "m_MaxLevel": "-2500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "4",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2500",
+          "m_MaxLevel": "-2000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "5",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2000",
+          "m_MaxLevel": "-1500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "6",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1500",
+          "m_MaxLevel": "-1000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "7",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1000",
+          "m_MaxLevel": "-500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "8",
+          "m_RepressType": "2",
+          "m_MinLevel": "-500",
+          "m_MaxLevel": null,
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "9",
+          "m_RepressType": "2",
+          "m_MinLevel": null,
+          "m_MaxLevel": "500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,9000],[2,3,9000],[2,4,9000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "10",
+          "m_RepressType": "2",
+          "m_MinLevel": "500",
+          "m_MaxLevel": "1000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,8500],[2,3,8000],[2,4,8000]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "11",
+          "m_RepressType": "2",
+          "m_MinLevel": "1000",
+          "m_MaxLevel": "1500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,8000],[2,3,7500],[2,4,7500]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "12",
+          "m_RepressType": "2",
+          "m_MinLevel": "1500",
+          "m_MaxLevel": "2000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,7500],[2,3,7000],[2,4,7000]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "13",
+          "m_RepressType": "2",
+          "m_MinLevel": "2000",
+          "m_MaxLevel": "2500",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,7000],[2,3,6500],[2,4,6500]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "14",
+          "m_RepressType": "2",
+          "m_MinLevel": "2500",
+          "m_MaxLevel": "3000",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,6500],[2,3,6000],[2,4,6000]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_RepressID": "120",
+          "m_RepressNum": "15",
+          "m_RepressType": "2",
+          "m_MinLevel": "3000",
+          "m_MaxLevel": "99999999",
+          "m_RolePropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,6000],[2,3,6000],[2,4,6000]]"
+        }
+      }
+    },
+    "210": {
+      "_type": "nested_dictionary",
+      "_count": 77,
+      "_processed": 50,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "1",
+          "m_RepressType": "2",
+          "m_MinLevel": "-99999999",
+          "m_MaxLevel": "-5000",
+          "m_RolePropertyCorrect": "[[2,1,1000],[2,2,1000],[2,3,1000],[2,4,1000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "2",
+          "m_RepressType": "2",
+          "m_MinLevel": "-5000",
+          "m_MaxLevel": "-4900",
+          "m_RolePropertyCorrect": "[[2,1,1000],[2,2,1000],[2,3,1000],[2,4,1000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "3",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4900",
+          "m_MaxLevel": "-4800",
+          "m_RolePropertyCorrect": "[[2,1,2380],[2,2,2380],[2,3,2380],[2,4,2380]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "4",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4800",
+          "m_MaxLevel": "-4700",
+          "m_RolePropertyCorrect": "[[2,1,2480],[2,2,2480],[2,3,2480],[2,4,2480]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "5",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4700",
+          "m_MaxLevel": "-4600",
+          "m_RolePropertyCorrect": "[[2,1,2580],[2,2,2580],[2,3,2580],[2,4,2580]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "6",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4600",
+          "m_MaxLevel": "-4500",
+          "m_RolePropertyCorrect": "[[2,1,2680],[2,2,2680],[2,3,2680],[2,4,2680]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "7",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4500",
+          "m_MaxLevel": "-4400",
+          "m_RolePropertyCorrect": "[[2,1,2780],[2,2,2780],[2,3,2780],[2,4,2780]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "8",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4400",
+          "m_MaxLevel": "-4300",
+          "m_RolePropertyCorrect": "[[2,1,2880],[2,2,2880],[2,3,2880],[2,4,2880]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "9",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4300",
+          "m_MaxLevel": "-4200",
+          "m_RolePropertyCorrect": "[[2,1,2980],[2,2,2980],[2,3,2980],[2,4,2980]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "10",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4200",
+          "m_MaxLevel": "-4100",
+          "m_RolePropertyCorrect": "[[2,1,3080],[2,2,3080],[2,3,3080],[2,4,3080]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "11",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4100",
+          "m_MaxLevel": "-4000",
+          "m_RolePropertyCorrect": "[[2,1,3180],[2,2,3180],[2,3,3180],[2,4,3180]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "12",
+          "m_RepressType": "2",
+          "m_MinLevel": "-4000",
+          "m_MaxLevel": "-3900",
+          "m_RolePropertyCorrect": "[[2,1,3280],[2,2,3280],[2,3,3280],[2,4,3280]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "13",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3900",
+          "m_MaxLevel": "-3800",
+          "m_RolePropertyCorrect": "[[2,1,3380],[2,2,3380],[2,3,3380],[2,4,3380]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "14",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3800",
+          "m_MaxLevel": "-3700",
+          "m_RolePropertyCorrect": "[[2,1,3480],[2,2,3480],[2,3,3480],[2,4,3480]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "15",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3700",
+          "m_MaxLevel": "-3600",
+          "m_RolePropertyCorrect": "[[2,1,3580],[2,2,3580],[2,3,3580],[2,4,3580]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "16",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3600",
+          "m_MaxLevel": "-3500",
+          "m_RolePropertyCorrect": "[[2,1,3680],[2,2,3680],[2,3,3680],[2,4,3680]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "17",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3500",
+          "m_MaxLevel": "-3400",
+          "m_RolePropertyCorrect": "[[2,1,3780],[2,2,3780],[2,3,3780],[2,4,3780]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "18",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3400",
+          "m_MaxLevel": "-3300",
+          "m_RolePropertyCorrect": "[[2,1,3880],[2,2,3880],[2,3,3880],[2,4,3880]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "19",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3300",
+          "m_MaxLevel": "-3200",
+          "m_RolePropertyCorrect": "[[2,1,3980],[2,2,3980],[2,3,3980],[2,4,3980]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "20",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3200",
+          "m_MaxLevel": "-3100",
+          "m_RolePropertyCorrect": "[[2,1,4080],[2,2,4080],[2,3,4080],[2,4,4080]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "21",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3100",
+          "m_MaxLevel": "-3000",
+          "m_RolePropertyCorrect": "[[2,1,4180],[2,2,4180],[2,3,4180],[2,4,4180]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "22",
+          "m_RepressType": "2",
+          "m_MinLevel": "-3000",
+          "m_MaxLevel": "-2900",
+          "m_RolePropertyCorrect": "[[2,1,4280],[2,2,4280],[2,3,4280],[2,4,4280]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "23",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2900",
+          "m_MaxLevel": "-2800",
+          "m_RolePropertyCorrect": "[[2,1,4380],[2,2,4380],[2,3,4380],[2,4,4380]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "24",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2800",
+          "m_MaxLevel": "-2700",
+          "m_RolePropertyCorrect": "[[2,1,4480],[2,2,4480],[2,3,4480],[2,4,4480]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "25",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2700",
+          "m_MaxLevel": "-2600",
+          "m_RolePropertyCorrect": "[[2,1,4580],[2,2,4580],[2,3,4580],[2,4,4580]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "26",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2600",
+          "m_MaxLevel": "-2500",
+          "m_RolePropertyCorrect": "[[2,1,4680],[2,2,4680],[2,3,4680],[2,4,4680]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "27",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2500",
+          "m_MaxLevel": "-2400",
+          "m_RolePropertyCorrect": "[[2,1,4780],[2,2,4780],[2,3,4780],[2,4,4780]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "28",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2400",
+          "m_MaxLevel": "-2300",
+          "m_RolePropertyCorrect": "[[2,1,4880],[2,2,4880],[2,3,4880],[2,4,4880]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "29",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2300",
+          "m_MaxLevel": "-2200",
+          "m_RolePropertyCorrect": "[[2,1,5250],[2,2,5250],[2,3,5250],[2,4,5250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "30",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2200",
+          "m_MaxLevel": "-2100",
+          "m_RolePropertyCorrect": "[[2,1,5500],[2,2,5500],[2,3,5500],[2,4,5500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "31",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2100",
+          "m_MaxLevel": "-2000",
+          "m_RolePropertyCorrect": "[[2,1,5750],[2,2,5750],[2,3,5750],[2,4,5750]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "32",
+          "m_RepressType": "2",
+          "m_MinLevel": "-2000",
+          "m_MaxLevel": "-1900",
+          "m_RolePropertyCorrect": "[[2,1,6000],[2,2,6000],[2,3,6000],[2,4,6000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "33",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1900",
+          "m_MaxLevel": "-1800",
+          "m_RolePropertyCorrect": "[[2,1,6250],[2,2,6250],[2,3,6250],[2,4,6250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "34",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1800",
+          "m_MaxLevel": "-1700",
+          "m_RolePropertyCorrect": "[[2,1,6500],[2,2,6500],[2,3,6500],[2,4,6500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "35",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1700",
+          "m_MaxLevel": "-1600",
+          "m_RolePropertyCorrect": "[[2,1,6750],[2,2,6750],[2,3,6750],[2,4,6750]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "36": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "36",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1600",
+          "m_MaxLevel": "-1500",
+          "m_RolePropertyCorrect": "[[2,1,7000],[2,2,7000],[2,3,7000],[2,4,7000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "37": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "37",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1500",
+          "m_MaxLevel": "-1400",
+          "m_RolePropertyCorrect": "[[2,1,7250],[2,2,7250],[2,3,7250],[2,4,7250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "38": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "38",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1400",
+          "m_MaxLevel": "-1300",
+          "m_RolePropertyCorrect": "[[2,1,7500],[2,2,7500],[2,3,7500],[2,4,7500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "39": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "39",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1300",
+          "m_MaxLevel": "-1200",
+          "m_RolePropertyCorrect": "[[2,1,7750],[2,2,7750],[2,3,7750],[2,4,7750]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "40": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "40",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1200",
+          "m_MaxLevel": "-1100",
+          "m_RolePropertyCorrect": "[[2,1,8000],[2,2,8000],[2,3,8000],[2,4,8000]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "41": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "41",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1100",
+          "m_MaxLevel": "-1000",
+          "m_RolePropertyCorrect": "[[2,1,8250],[2,2,8250],[2,3,8250],[2,4,8250]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "42": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "42",
+          "m_RepressType": "2",
+          "m_MinLevel": "-1000",
+          "m_MaxLevel": "-900",
+          "m_RolePropertyCorrect": "[[2,1,8500],[2,2,8500],[2,3,8500],[2,4,8500]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "43": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "43",
+          "m_RepressType": "2",
+          "m_MinLevel": "-900",
+          "m_MaxLevel": "-800",
+          "m_RolePropertyCorrect": "[[2,1,8665],[2,2,8665],[2,3,8665],[2,4,8665]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "44": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "44",
+          "m_RepressType": "2",
+          "m_MinLevel": "-800",
+          "m_MaxLevel": "-700",
+          "m_RolePropertyCorrect": "[[2,1,8815],[2,2,8815],[2,3,8815],[2,4,8815]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "45": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "45",
+          "m_RepressType": "2",
+          "m_MinLevel": "-700",
+          "m_MaxLevel": "-600",
+          "m_RolePropertyCorrect": "[[2,1,8965],[2,2,8965],[2,3,8965],[2,4,8965]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "46": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "46",
+          "m_RepressType": "2",
+          "m_MinLevel": "-600",
+          "m_MaxLevel": "-500",
+          "m_RolePropertyCorrect": "[[2,1,9115],[2,2,9115],[2,3,9115],[2,4,9115]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "47": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "47",
+          "m_RepressType": "2",
+          "m_MinLevel": "-500",
+          "m_MaxLevel": "-400",
+          "m_RolePropertyCorrect": "[[2,1,9265],[2,2,9265],[2,3,9265],[2,4,9265]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "48": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "48",
+          "m_RepressType": "2",
+          "m_MinLevel": "-400",
+          "m_MaxLevel": "-300",
+          "m_RolePropertyCorrect": "[[2,1,9415],[2,2,9415],[2,3,9415],[2,4,9415]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "49": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "49",
+          "m_RepressType": "2",
+          "m_MinLevel": "-300",
+          "m_MaxLevel": "-200",
+          "m_RolePropertyCorrect": "[[2,1,9565],[2,2,9565],[2,3,9565],[2,4,9565]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        },
+        "50": {
+          "m_bError": null,
+          "m_RepressID": "210",
+          "m_RepressNum": "50",
+          "m_RepressType": "2",
+          "m_MinLevel": "-200",
+          "m_MaxLevel": "-100",
+          "m_RolePropertyCorrect": "[[2,1,9715],[2,2,9715],[2,3,9715],[2,4,9715]]",
+          "m_MonsterPropertyCorrect": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]"
+        }
+      }
+    }
+  },
+  "status": "processed_9_items"
+}

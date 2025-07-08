@@ -1,0 +1,121 @@
+{
+  "className": "CData_SkillTip",
+  "timestamp": "2025-07-08T13:35:50.775Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mName": "\"Bounce\"",
+      "m_mDesc": "\"After every attack, the following attack will target the nearest eligible unit within the specified range of the hit target.\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mName": "\"Teleport\"",
+      "m_mDesc": "\"Teleports without being affected by movement-impairing effects.\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_mName": "\"Summon\"",
+      "m_mDesc": "\"A unit summoned into battle who disappears when the caster dies.\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_mName": "\"True DMG\"",
+      "m_mDesc": "\"A type of DMG that is neither Physical nor Magic. Requires 200% Shield Strength to resist.\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_mName": "\"Cone\"",
+      "m_mDesc": "\"Selects units within a 120° cone.\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_mName": "\"Rush\"",
+      "m_mDesc": "\"Quickly moves towards selected target or direction. Cannot be targeted during this effect.\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_mName": "\"Lifesteal\"",
+      "m_mDesc": "\"Lifesteal: Converts a portion of damage dealt into HP recovery.\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_mName": "\"Channel\"",
+      "m_mDesc": "\"A channeled spell with a long cast time. Interruption cancels any effects.\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_mName": "\"Purify\"",
+      "m_mDesc": "\"Purifies the most recently applied debuff or Control effect of the same type.\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_mName": "\"Effective Range\"",
+      "m_mDesc": "\"DMG dealt by this Vassal varies with range. It increases by up to 50% at the farthest target while decreasing by up to 50% at the target nearby.\""
+    },
+    "20080": {
+      "m_bError": null,
+      "m_ID": "20080",
+      "m_mName": "\"Joyce the Miser\"",
+      "m_mDesc": "\"A summon that performs Basic ATK on enemies ahead in a cone. Only 1 can exist at the same time.\""
+    },
+    "20081": {
+      "m_bError": null,
+      "m_ID": "20081",
+      "m_mName": "\"Animated Puppet\"",
+      "m_mDesc": "\"A summon that performs Basic ATK. Only 3 can exist at the same time.\""
+    },
+    "20140": {
+      "m_bError": null,
+      "m_ID": "20140",
+      "m_mName": "\"Shadowy Apparition\"",
+      "m_mDesc": "\"Summons up to 2 units that perform Basic ATKs on Spectral Gilrain's target.\""
+    },
+    "20270": {
+      "m_bError": null,
+      "m_ID": "20270",
+      "m_mName": "\"Spirit Bone Tower\"",
+      "m_mDesc": "\"Summons up to 3 units. When 2 present, their Basic ATK turns into a beam, DMG Up by 20%. When 3 present, their Basic ATK can <link=Tips_ID;1><#508499><u>Bounce</u></color></link> up to 3 times.\""
+    },
+    "20350": {
+      "m_bError": null,
+      "m_ID": "20350",
+      "m_mName": "\"Flames of Creation\"",
+      "m_mDesc": "\"Purifies all debuffs and fully restores HP.\""
+    },
+    "20390": {
+      "m_bError": null,
+      "m_ID": "20390",
+      "m_mName": "\"Shade\"",
+      "m_mDesc": "\"A summon that performs ranged Basic ATK in sync with Transcendent Noah. Only 5 can exist at the same time.\""
+    },
+    "20400": {
+      "m_bError": null,
+      "m_ID": "20400",
+      "m_mName": "\"Explosive Bow Form\"",
+      "m_mDesc": "\"Basic ATK targets all enemies in a circle around the target. This form ends when all stacks of Swift Hunt are consumed.\""
+    },
+    "20420": {
+      "m_bError": null,
+      "m_ID": "20420",
+      "m_mName": "\"Electrified\"",
+      "m_mDesc": "\"Basic ATK transforms into an electrified circular saw. ATK SPD is increased during this time.\""
+    },
+    "30130": {
+      "m_bError": null,
+      "m_ID": "30130",
+      "m_mName": "\"Red Wolf\"",
+      "m_mDesc": "\"A summon that performs Basic ATKs.\""
+    }
+  },
+  "status": "processed_19_items"
+}

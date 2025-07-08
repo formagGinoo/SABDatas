@@ -1,0 +1,62 @@
+{
+  "className": "CData_HuntingRaidLevel",
+  "timestamp": "2025-07-08T13:35:34.813Z",
+  "data": {
+    "2102010": {
+      "m_bError": null,
+      "m_LevelID": "2102010",
+      "m_MapID": "2400001",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "1",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "1",
+      "m_CountType": "2"
+    },
+    "2102020": {
+      "m_bError": null,
+      "m_LevelID": "2102020",
+      "m_MapID": "2400002",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[90201]",
+      "m_BOSSID": "2",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "2",
+      "m_CountType": "1"
+    },
+    "2102030": {
+      "m_bError": null,
+      "m_LevelID": "2102030",
+      "m_MapID": "2400003",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "3",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "3",
+      "m_CountType": "3"
+    },
+    "2102040": {
+      "m_bError": null,
+      "m_LevelID": "2102040",
+      "m_MapID": "2400004",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "4",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "4",
+      "m_CountType": "2"
+    },
+    "2102050": {
+      "m_bError": null,
+      "m_LevelID": "2102050",
+      "m_MapID": "2400005",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "5",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "5",
+      "m_CountType": "3"
+    }
+  },
+  "status": "processed_5_items"
+}

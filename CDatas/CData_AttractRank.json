@@ -1,0 +1,581 @@
+{
+  "className": "CData_AttractRank",
+  "timestamp": "2025-07-08T13:35:22.409Z",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 40,
+      "_processed": 40,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "1",
+          "m_RankExp": null,
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "2",
+          "m_RankExp": "150",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "3",
+          "m_RankExp": "460",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "4",
+          "m_RankExp": "780",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "5",
+          "m_RankExp": "1110",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "6",
+          "m_RankExp": "1450",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "7",
+          "m_RankExp": "1800",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "8",
+          "m_RankExp": "2160",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "9",
+          "m_RankExp": "2530",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "10",
+          "m_RankExp": "2910",
+          "m_BreakCondition": "1",
+          "m_BreakItems": "[]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "11",
+          "m_RankExp": "3300",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "12",
+          "m_RankExp": "3700",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "13",
+          "m_RankExp": "4120",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "14",
+          "m_RankExp": "4550",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "15",
+          "m_RankExp": "4990",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "16",
+          "m_RankExp": "5440",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "17",
+          "m_RankExp": "5910",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "18",
+          "m_RankExp": "6390",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "19",
+          "m_RankExp": "6890",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "20",
+          "m_RankExp": "7400",
+          "m_BreakCondition": "2",
+          "m_BreakItems": "[]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "21",
+          "m_RankExp": "7930",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "22",
+          "m_RankExp": "8470",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "23",
+          "m_RankExp": "9030",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "24",
+          "m_RankExp": "9610",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "25",
+          "m_RankExp": "10200",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "26",
+          "m_RankExp": "10810",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "27",
+          "m_RankExp": "11440",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "28",
+          "m_RankExp": "12090",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "29",
+          "m_RankExp": "12760",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "30",
+          "m_RankExp": "13450",
+          "m_BreakCondition": "3",
+          "m_BreakItems": "[]"
+        },
+        "31": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "31",
+          "m_RankExp": "14160",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "32": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "32",
+          "m_RankExp": "14890",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "33": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "33",
+          "m_RankExp": "15640",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "34": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "34",
+          "m_RankExp": "16410",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "35": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "35",
+          "m_RankExp": "17210",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "36": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "36",
+          "m_RankExp": "18030",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "37": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "37",
+          "m_RankExp": "18870",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "38": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "38",
+          "m_RankExp": "19740",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "39": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "39",
+          "m_RankExp": "20640",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "40": {
+          "m_bError": null,
+          "m_RankTemplateID": "1",
+          "m_RankID": "40",
+          "m_RankExp": "21560",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 30,
+      "_processed": 30,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "1",
+          "m_RankExp": null,
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "2",
+          "m_RankExp": "150",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "3",
+          "m_RankExp": "460",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "4",
+          "m_RankExp": "780",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "5",
+          "m_RankExp": "1110",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "6",
+          "m_RankExp": "1450",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "7",
+          "m_RankExp": "1800",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "8",
+          "m_RankExp": "2160",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "9",
+          "m_RankExp": "2530",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "10",
+          "m_RankExp": "2910",
+          "m_BreakCondition": "1",
+          "m_BreakItems": "[]"
+        },
+        "11": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "11",
+          "m_RankExp": "3300",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "12": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "12",
+          "m_RankExp": "3700",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "13": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "13",
+          "m_RankExp": "4120",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "14": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "14",
+          "m_RankExp": "4550",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "15": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "15",
+          "m_RankExp": "4990",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "16": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "16",
+          "m_RankExp": "5440",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "17": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "17",
+          "m_RankExp": "5910",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "18": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "18",
+          "m_RankExp": "6390",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "19": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "19",
+          "m_RankExp": "6890",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "20": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "20",
+          "m_RankExp": "7400",
+          "m_BreakCondition": "2",
+          "m_BreakItems": "[]"
+        },
+        "21": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "21",
+          "m_RankExp": "7930",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "22": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "22",
+          "m_RankExp": "8470",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "23": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "23",
+          "m_RankExp": "9030",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "24": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "24",
+          "m_RankExp": "9610",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "25": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "25",
+          "m_RankExp": "10200",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "26": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "26",
+          "m_RankExp": "10810",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "27": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "27",
+          "m_RankExp": "11440",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "28": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "28",
+          "m_RankExp": "12090",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "29": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "29",
+          "m_RankExp": "12760",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        },
+        "30": {
+          "m_bError": null,
+          "m_RankTemplateID": "2",
+          "m_RankID": "30",
+          "m_RankExp": "13450",
+          "m_BreakCondition": null,
+          "m_BreakItems": "[]"
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

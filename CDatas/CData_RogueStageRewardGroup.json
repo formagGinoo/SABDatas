@@ -1,0 +1,637 @@
+{
+  "className": "CData_RogueStageRewardGroup",
+  "timestamp": "2025-07-08T13:35:47.510Z",
+  "data": {
+    "1001": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "1",
+          "m_Condition": "20",
+          "m_KeyLevel": "1"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "2",
+          "m_Condition": "40",
+          "m_KeyLevel": "2"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "3",
+          "m_Condition": "60",
+          "m_KeyLevel": "3"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "4",
+          "m_Condition": "85",
+          "m_KeyLevel": "4"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "5",
+          "m_Condition": "111",
+          "m_KeyLevel": "5"
+        }
+      }
+    },
+    "1002": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "1",
+          "m_Condition": "20",
+          "m_KeyLevel": "6"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "2",
+          "m_Condition": "50",
+          "m_KeyLevel": "7"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "3",
+          "m_Condition": "80",
+          "m_KeyLevel": "8"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "4",
+          "m_Condition": "110",
+          "m_KeyLevel": "9"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "5",
+          "m_Condition": "158",
+          "m_KeyLevel": "10"
+        }
+      }
+    },
+    "1003": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "1",
+          "m_Condition": "30",
+          "m_KeyLevel": "11"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "2",
+          "m_Condition": "50",
+          "m_KeyLevel": "12"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "3",
+          "m_Condition": "110",
+          "m_KeyLevel": "13"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "4",
+          "m_Condition": "150",
+          "m_KeyLevel": "14"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "5",
+          "m_Condition": "209",
+          "m_KeyLevel": "15"
+        }
+      }
+    },
+    "2001": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "2001",
+          "m_Gear": "1",
+          "m_Condition": "40",
+          "m_KeyLevel": "16"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "2001",
+          "m_Gear": "2",
+          "m_Condition": "80",
+          "m_KeyLevel": "17"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "2001",
+          "m_Gear": "3",
+          "m_Condition": "130",
+          "m_KeyLevel": "18"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "2001",
+          "m_Gear": "4",
+          "m_Condition": "185",
+          "m_KeyLevel": "19"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "2001",
+          "m_Gear": "5",
+          "m_Condition": "249",
+          "m_KeyLevel": "20"
+        }
+      }
+    },
+    "2002": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "2002",
+          "m_Gear": "1",
+          "m_Condition": "50",
+          "m_KeyLevel": "21"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "2002",
+          "m_Gear": "2",
+          "m_Condition": "100",
+          "m_KeyLevel": "22"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "2002",
+          "m_Gear": "3",
+          "m_Condition": "150",
+          "m_KeyLevel": "23"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "2002",
+          "m_Gear": "4",
+          "m_Condition": "200",
+          "m_KeyLevel": "24"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "2002",
+          "m_Gear": "5",
+          "m_Condition": "270",
+          "m_KeyLevel": "25"
+        }
+      }
+    },
+    "2003": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "2003",
+          "m_Gear": "1",
+          "m_Condition": "50",
+          "m_KeyLevel": "26"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "2003",
+          "m_Gear": "2",
+          "m_Condition": "100",
+          "m_KeyLevel": "27"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "2003",
+          "m_Gear": "3",
+          "m_Condition": "160",
+          "m_KeyLevel": "28"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "2003",
+          "m_Gear": "4",
+          "m_Condition": "230",
+          "m_KeyLevel": "29"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "2003",
+          "m_Gear": "5",
+          "m_Condition": "301",
+          "m_KeyLevel": "30"
+        }
+      }
+    },
+    "3001": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "3001",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "31"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "3001",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "32"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "3001",
+          "m_Gear": "3",
+          "m_Condition": "190",
+          "m_KeyLevel": "33"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "3001",
+          "m_Gear": "4",
+          "m_Condition": "270",
+          "m_KeyLevel": "34"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "3001",
+          "m_Gear": "5",
+          "m_Condition": "354",
+          "m_KeyLevel": "35"
+        }
+      }
+    },
+    "3002": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "3002",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "36"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "3002",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "37"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "3002",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "38"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "3002",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "39"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "3002",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "40"
+        }
+      }
+    },
+    "3003": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "3003",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "41"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "3003",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "42"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "3003",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "43"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "3003",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "44"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "3003",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "45"
+        }
+      }
+    },
+    "4001": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "4001",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "46"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "4001",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "47"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "4001",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "48"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "4001",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "49"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "4001",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "50"
+        }
+      }
+    },
+    "4002": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "4002",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "51"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "4002",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "52"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "4002",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "53"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "4002",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "54"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "4002",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "55"
+        }
+      }
+    },
+    "4003": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "4003",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "56"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "4003",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "57"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "4003",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "58"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "4003",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "59"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "4003",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "60"
+        }
+      }
+    },
+    "5001": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "5001",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "61"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "5001",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "62"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "5001",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "63"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "5001",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "64"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "5001",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "65"
+        }
+      }
+    },
+    "5002": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "5002",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "66"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "5002",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "67"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "5002",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "68"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "5002",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "69"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "5002",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "70"
+        }
+      }
+    },
+    "5003": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "5003",
+          "m_Gear": "1",
+          "m_Condition": "60",
+          "m_KeyLevel": "71"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "5003",
+          "m_Gear": "2",
+          "m_Condition": "120",
+          "m_KeyLevel": "72"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "5003",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "73"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "5003",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "74"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "5003",
+          "m_Gear": "5",
+          "m_Condition": "400",
+          "m_KeyLevel": "75"
+        }
+      }
+    }
+  },
+  "status": "processed_15_items"
+}

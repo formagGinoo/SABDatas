@@ -1,0 +1,826 @@
+{
+  "className": "CData_LegacyLevel",
+  "timestamp": "2025-07-08T13:35:35.490Z",
+  "data": {
+    "90001": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900001,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900001,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900001,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900001,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900001,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900001,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900001,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900001,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900001,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90001",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90002": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900002,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900002,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900002,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900002,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900002,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900002,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900002,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900002,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900002,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90002",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90003": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900003,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900003,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900003,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900003,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900003,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900003,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900003,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900003,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900003,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90003",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90004": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900004,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900004,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900004,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900004,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900004,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900004,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900004,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900004,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900004,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90004",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90005": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900005,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900005,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900005,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900005,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900005,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900005,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900005,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900005,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900005,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90005",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90006": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900006,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900006,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900006,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900006,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900006,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900006,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900006,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900006,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900006,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90006",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    },
+    "90007": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "1",
+          "m_PropertyID": "1000001",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "1",
+          "m_ItemCost": "[[900007,10],[999,10000]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "2",
+          "m_PropertyID": "1000002",
+          "m_SkillLevel1": "1",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900007,10],[999,20000]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "3",
+          "m_PropertyID": "1000003",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "2",
+          "m_ItemCost": "[[900007,30],[999,40000]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "4",
+          "m_PropertyID": "1000004",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": null,
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900007,30],[999,80000]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "5",
+          "m_PropertyID": "1000005",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "3",
+          "m_ItemCost": "[[900007,50],[999,160000]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "6",
+          "m_PropertyID": "1000006",
+          "m_SkillLevel1": "2",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900007,50],[999,240000]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "7",
+          "m_PropertyID": "1000007",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "4",
+          "m_ItemCost": "[[900007,70],[999,320000]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "8",
+          "m_PropertyID": "1000008",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "1",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900007,70],[999,400000]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "9",
+          "m_PropertyID": "1000009",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "2",
+          "m_SkillLevel3": null,
+          "m_Wearable": "5",
+          "m_ItemCost": "[[900007,100],[999,480000]]"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ID": "90007",
+          "m_Level": "10",
+          "m_PropertyID": "1000010",
+          "m_SkillLevel1": "3",
+          "m_SkillLevel2": "3",
+          "m_SkillLevel3": null,
+          "m_Wearable": "6",
+          "m_ItemCost": "[]"
+        }
+      }
+    }
+  },
+  "status": "processed_7_items"
+}

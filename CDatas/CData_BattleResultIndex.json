@@ -1,0 +1,1217 @@
+{
+  "className": "CData_BattleResultIndex",
+  "timestamp": "2025-07-08T13:35:24.254Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_Conditontype": "1001",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Time's Up</color>, Defeat\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_Conditontype": "1001",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": "3",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_Conditontype": "1006",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[3]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_Conditontype": "1001",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": "1",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_Conditontype": "1001",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "100": {
+      "m_bError": null,
+      "m_ID": "100",
+      "m_Conditontype": "1002",
+      "m_ConditonParam": "[0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "101": {
+      "m_bError": null,
+      "m_ID": "101",
+      "m_Conditontype": "1003",
+      "m_ConditonParam": "[0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "102": {
+      "m_bError": null,
+      "m_ID": "102",
+      "m_Conditontype": "1003",
+      "m_ConditonParam": "[4]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "103": {
+      "m_bError": null,
+      "m_ID": "103",
+      "m_Conditontype": "1003",
+      "m_ConditonParam": "[3]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "104": {
+      "m_bError": null,
+      "m_ID": "104",
+      "m_Conditontype": "1003",
+      "m_ConditonParam": "[2]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "105": {
+      "m_bError": null,
+      "m_ID": "105",
+      "m_Conditontype": "1003",
+      "m_ConditonParam": "[1]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "3102": {
+      "m_bError": null,
+      "m_ID": "3102",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30711,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Knight</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "3700": {
+      "m_bError": null,
+      "m_ID": "3700",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30412,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Stranger</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "207001": {
+      "m_bError": null,
+      "m_ID": "207001",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[100000]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000101": {
+      "m_bError": null,
+      "m_ID": "1000101",
+      "m_Conditontype": "1004",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000102": {
+      "m_bError": null,
+      "m_ID": "1000102",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000407": {
+      "m_bError": null,
+      "m_ID": "1000407",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30500,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Lamb</color> Devoured\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000408": {
+      "m_bError": null,
+      "m_ID": "1000408",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31580,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"PH-<#F11E1D>小羊</color>被分食\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000409": {
+      "m_bError": null,
+      "m_ID": "1000409",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30296,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000411": {
+      "m_bError": null,
+      "m_ID": "1000411",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50030,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000502": {
+      "m_bError": null,
+      "m_ID": "1000502",
+      "m_Conditontype": "1002",
+      "m_ConditonParam": "[1]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000506": {
+      "m_bError": null,
+      "m_ID": "1000506",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10060,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Ami</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000508": {
+      "m_bError": null,
+      "m_ID": "1000508",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31590,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000510": {
+      "m_bError": null,
+      "m_ID": "1000510",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30610,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000511": {
+      "m_bError": null,
+      "m_ID": "1000511",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10132,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Empousa</color> Devoured\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000514": {
+      "m_bError": null,
+      "m_ID": "1000514",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30621,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000517": {
+      "m_bError": null,
+      "m_ID": "1000517",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30095,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Van Helsing</color> Devoured\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000804": {
+      "m_bError": null,
+      "m_ID": "1000804",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10280,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Piera's Grandmother</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1000808": {
+      "m_bError": null,
+      "m_ID": "1000808",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50107,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1000814": {
+      "m_bError": null,
+      "m_ID": "1000814",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10103,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1001010": {
+      "m_bError": null,
+      "m_ID": "1001010",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10274,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Ressa</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "1001013": {
+      "m_bError": null,
+      "m_ID": "1001013",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10278,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1001016": {
+      "m_bError": null,
+      "m_ID": "1001016",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10277,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1200402": {
+      "m_bError": null,
+      "m_ID": "1200402",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10030,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "1200504": {
+      "m_bError": null,
+      "m_ID": "1200504",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[6]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Sailor Escaped</color>, Black Blood Spreads\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "2001001": {
+      "m_bError": null,
+      "m_ID": "2001001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30281,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2001002": {
+      "m_bError": null,
+      "m_ID": "2001002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30286,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2001003": {
+      "m_bError": null,
+      "m_ID": "2001003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30287,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2001004": {
+      "m_bError": null,
+      "m_ID": "2001004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30288,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2002001": {
+      "m_bError": null,
+      "m_ID": "2002001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30666,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2002002": {
+      "m_bError": null,
+      "m_ID": "2002002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30666,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2002003": {
+      "m_bError": null,
+      "m_ID": "2002003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30667,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2002004": {
+      "m_bError": null,
+      "m_ID": "2002004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30668,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2003001": {
+      "m_bError": null,
+      "m_ID": "2003001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30650,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2003002": {
+      "m_bError": null,
+      "m_ID": "2003002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30653,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2003003": {
+      "m_bError": null,
+      "m_ID": "2003003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30654,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2003004": {
+      "m_bError": null,
+      "m_ID": "2003004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30655,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2004001": {
+      "m_bError": null,
+      "m_ID": "2004001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31411,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2004002": {
+      "m_bError": null,
+      "m_ID": "2004002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31411,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2004003": {
+      "m_bError": null,
+      "m_ID": "2004003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31411,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2004004": {
+      "m_bError": null,
+      "m_ID": "2004004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31411,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2005001": {
+      "m_bError": null,
+      "m_ID": "2005001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30314,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2005002": {
+      "m_bError": null,
+      "m_ID": "2005002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30315,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2005003": {
+      "m_bError": null,
+      "m_ID": "2005003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30316,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2005004": {
+      "m_bError": null,
+      "m_ID": "2005004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30317,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2100021": {
+      "m_bError": null,
+      "m_ID": "2100021",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31414,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2400004": {
+      "m_bError": null,
+      "m_ID": "2400004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[90401,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000112": {
+      "m_bError": null,
+      "m_ID": "6000112",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50104,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000113": {
+      "m_bError": null,
+      "m_ID": "6000113",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50105,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000124": {
+      "m_bError": null,
+      "m_ID": "6000124",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50106,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000202": {
+      "m_bError": null,
+      "m_ID": "6000202",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10234,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Little Black Cat</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "6000203": {
+      "m_bError": null,
+      "m_ID": "6000203",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10235,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000205": {
+      "m_bError": null,
+      "m_ID": "6000205",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30591,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000208": {
+      "m_bError": null,
+      "m_ID": "6000208",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30675,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000210": {
+      "m_bError": null,
+      "m_ID": "6000210",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10236,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000212": {
+      "m_bError": null,
+      "m_ID": "6000212",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30644,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000222": {
+      "m_bError": null,
+      "m_ID": "6000222",
+      "m_Conditontype": "1002",
+      "m_ConditonParam": "[1]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000223": {
+      "m_bError": null,
+      "m_ID": "6000223",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10234,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000225": {
+      "m_bError": null,
+      "m_ID": "6000225",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30644,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "7101101": {
+      "m_bError": null,
+      "m_ID": "7101101",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7101201": {
+      "m_bError": null,
+      "m_ID": "7101201",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7101301": {
+      "m_bError": null,
+      "m_ID": "7101301",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7102101": {
+      "m_bError": null,
+      "m_ID": "7102101",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7102201": {
+      "m_bError": null,
+      "m_ID": "7102201",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7102301": {
+      "m_bError": null,
+      "m_ID": "7102301",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7103101": {
+      "m_bError": null,
+      "m_ID": "7103101",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7103201": {
+      "m_bError": null,
+      "m_ID": "7103201",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7103301": {
+      "m_bError": null,
+      "m_ID": "7103301",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7104101": {
+      "m_bError": null,
+      "m_ID": "7104101",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7104201": {
+      "m_bError": null,
+      "m_ID": "7104201",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7104301": {
+      "m_bError": null,
+      "m_ID": "7104301",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7105101": {
+      "m_bError": null,
+      "m_ID": "7105101",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7105201": {
+      "m_bError": null,
+      "m_ID": "7105201",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "7105301": {
+      "m_bError": null,
+      "m_ID": "7105301",
+      "m_Conditontype": "1007",
+      "m_ConditonParam": "[10]",
+      "m_ConditionStart": "8",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Phantoms escaped through the Rift</color>.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10000113": {
+      "m_bError": null,
+      "m_ID": "10000113",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10020,20]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10000131": {
+      "m_bError": null,
+      "m_ID": "10000131",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31410,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10004031": {
+      "m_bError": null,
+      "m_ID": "10004031",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[15041,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Clive Jr.</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10006011": {
+      "m_bError": null,
+      "m_ID": "10006011",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10141,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Hati</color> was consumed by Famine.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10006061": {
+      "m_bError": null,
+      "m_ID": "10006061",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30611,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10006081": {
+      "m_bError": null,
+      "m_ID": "10006081",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32400,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10006091": {
+      "m_bError": null,
+      "m_ID": "10006091",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30533,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Jock</color> was consumed by Famine.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10006111": {
+      "m_bError": null,
+      "m_ID": "10006111",
+      "m_Conditontype": "1001",
+      "m_ConditonParam": "[]",
+      "m_ConditionStart": "3",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10006141": {
+      "m_bError": null,
+      "m_ID": "10006141",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30730,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10006151": {
+      "m_bError": null,
+      "m_ID": "10006151",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50080,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Ship's Helm</color> Destroyed\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10006161": {
+      "m_bError": null,
+      "m_ID": "10006161",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30650,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10009020": {
+      "m_bError": null,
+      "m_ID": "10009020",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31030,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Villager</color> Executed\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10009021": {
+      "m_bError": null,
+      "m_ID": "10009021",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31031,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Villager</color> Executed\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10009081": {
+      "m_bError": null,
+      "m_ID": "10009081",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10072,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10009101": {
+      "m_bError": null,
+      "m_ID": "10009101",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31610,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Agares</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10009141": {
+      "m_bError": null,
+      "m_ID": "10009141",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10481,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"Pathfinder <#F11E1D>Ami</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10070211": {
+      "m_bError": null,
+      "m_ID": "10070211",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10270,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"Fearful <#F11E1D>Girl</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10070811": {
+      "m_bError": null,
+      "m_ID": "10070811",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31330,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10070911": {
+      "m_bError": null,
+      "m_ID": "10070911",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30822,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10070912": {
+      "m_bError": null,
+      "m_ID": "10070912",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30528,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"Islander <#F11E1D>Jason</color> Defeated\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10071611": {
+      "m_bError": null,
+      "m_ID": "10071611",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[50200,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10071612": {
+      "m_bError": null,
+      "m_ID": "10071612",
+      "m_Conditontype": "1004",
+      "m_ConditonParam": "[1000716,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Piera</color> got devoured.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10071613": {
+      "m_bError": null,
+      "m_ID": "10071613",
+      "m_Conditontype": "1004",
+      "m_ConditonParam": "[1300716,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Piera</color> got devoured.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10200022": {
+      "m_bError": null,
+      "m_ID": "10200022",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10030,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10200060": {
+      "m_bError": null,
+      "m_ID": "10200060",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10131,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Empousa</color> Executed\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10200080": {
+      "m_bError": null,
+      "m_ID": "10200080",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30260,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10200092": {
+      "m_bError": null,
+      "m_ID": "10200092",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30280,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "10200093": {
+      "m_bError": null,
+      "m_ID": "10200093",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30281,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000011": {
+      "m_bError": null,
+      "m_ID": "22000011",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32300,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000021": {
+      "m_bError": null,
+      "m_ID": "22000021",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32301,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000022": {
+      "m_bError": null,
+      "m_ID": "22000022",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10401,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000031": {
+      "m_bError": null,
+      "m_ID": "22000031",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32302,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000041": {
+      "m_bError": null,
+      "m_ID": "22000041",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30320,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "22000051": {
+      "m_bError": null,
+      "m_ID": "22000051",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32010,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "600012301": {
+      "m_bError": null,
+      "m_ID": "600012301",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30014,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "600012302": {
+      "m_bError": null,
+      "m_ID": "600012302",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30015,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    }
+  },
+  "status": "processed_121_items"
+}

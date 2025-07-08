@@ -1,0 +1,72 @@
+{
+  "className": "CData_CharacterCamp",
+  "timestamp": "2025-07-08T13:35:26.687Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_CampID": "1",
+      "m_mCampName": "\"Ancestors\"",
+      "m_mCampDesc": "\"At time's end we gaze upon divinity, until life and death fade from memory. Only the sword of law hangs eternally overhead, reminding us of our unfulfilled destiny.\n<i>— \"Embracing the cycle of life and death, or preserving the repetition of order, what would be your choice?\"</i>\"",
+      "m_CampIcon": "\"Atlas_CharacterCamp/Camp1\"",
+      "m_FilterIcon": "\"Atlas_CharacterCamp/filter_camp1_5\"",
+      "m_TowerIcon": "\"Atlas_CharacterCamp/Camp1_tower\"",
+      "m_CirculationIcon": "\"Atlas_CharacterCamp/Camp1_tower\"",
+      "m_WishListIcon": "\"Atlas_CharacterCamp/Camp1_big\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp1_5\"",
+      "m_mHeroHeartText": "\"Recommended for Ancestry\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_CampID": "2",
+      "m_mCampName": "\"Church\"",
+      "m_mCampDesc": "\"The heroes of the Church embark on their crusade, defending preordained History with unwavering faith and loyalty.\n<i>— Time defines existence; Order bestows meaning upon us.</i>\"",
+      "m_CampIcon": "\"Atlas_CharacterCamp/Camp2\"",
+      "m_FilterIcon": "\"Atlas_CharacterCamp/filter_camp2_5\"",
+      "m_TowerIcon": "\"Atlas_CharacterCamp/Camp2_tower\"",
+      "m_CirculationIcon": "\"Atlas_CharacterCamp/Camp2_tower\"",
+      "m_WishListIcon": "\"Atlas_CharacterCamp/Camp2_big\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp2_5\"",
+      "m_mHeroHeartText": "\"Recommended for the Church\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_CampID": "3",
+      "m_mCampName": "\"Bloodborn\"",
+      "m_mCampDesc": "\"The blood-drinking seers achieved immortality, unearthing \"Calamities\" in an attempt to restore their ancestors' former glory, who reigned supreme over mankind in an era now lost to time.\n<i>— Alas, mortals have been imprisoned in their flesh far too long; They've forgotten whom they serve.\n</i>\"",
+      "m_CampIcon": "\"Atlas_CharacterCamp/Camp3\"",
+      "m_FilterIcon": "\"Atlas_CharacterCamp/filter_camp3_5\"",
+      "m_TowerIcon": "\"Atlas_CharacterCamp/Camp3_tower\"",
+      "m_CirculationIcon": "\"Atlas_CharacterCamp/Camp3_tower\"",
+      "m_WishListIcon": "\"Atlas_CharacterCamp/Camp3_big\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp3_5\"",
+      "m_mHeroHeartText": "\"Recommended for Bloodborn\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_CampID": "4",
+      "m_mCampName": "\"Kingdom\"",
+      "m_mCampDesc": "\"Our forebears drew strength from consuming the Divine Body, and received assurances for yielding to Tempus. Today, both have decayed into rotten curses, plaguing our realm.\n<i>—\"It is kill or be killed - Vae Victis!\"\n</i>\"",
+      "m_CampIcon": "\"Atlas_CharacterCamp/Camp4\"",
+      "m_FilterIcon": "\"Atlas_CharacterCamp/filter_camp4_5\"",
+      "m_TowerIcon": "\"Atlas_CharacterCamp/Camp4_tower\"",
+      "m_CirculationIcon": "\"Atlas_CharacterCamp/Camp4_tower\"",
+      "m_WishListIcon": "\"Atlas_CharacterCamp/Camp4_big\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp4_5\"",
+      "m_mHeroHeartText": "\"Recommended for Kingdom\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_CampID": "5",
+      "m_mCampName": "\"Otherworldly\"",
+      "m_mCampDesc": "\"We are anomalies, bred from within Tempus itself; We are entities forbidden by History. Only the Ark, resting on the far side of the moon, can deliver us from this hellish vortex of Blood and Silver.\n<i>—In a world spun from order and chaos, all things persist without an end.\n</i>\"",
+      "m_CampIcon": "\"Atlas_CharacterCamp/Camp5\"",
+      "m_FilterIcon": "\"Atlas_CharacterCamp/filter_camp5_5\"",
+      "m_TowerIcon": "\"Atlas_CharacterCamp/Camp5_tower\"",
+      "m_CirculationIcon": "\"Atlas_CharacterCamp/Camp5_tower\"",
+      "m_WishListIcon": "\"Atlas_CharacterCamp/Camp5_big\"",
+      "m_HeroHeartIcon": "\"Atlas_CharacterCamp/Camp5_5\"",
+      "m_mHeroHeartText": "\"Recommended for the Otherworldly\""
+    }
+  },
+  "status": "processed_5_items"
+}

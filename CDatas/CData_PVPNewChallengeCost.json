@@ -1,0 +1,57 @@
+{
+  "className": "CData_PVPNewChallengeCost",
+  "timestamp": "2025-07-08T13:35:47.010Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_Times": "1",
+      "m_Cost": "[[101,10]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_Times": "2",
+      "m_Cost": "[[101,20]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_Times": "3",
+      "m_Cost": "[[101,40]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_Times": "4",
+      "m_Cost": "[[101,80]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_Times": "5",
+      "m_Cost": "[[101,100]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_Times": "6",
+      "m_Cost": "[[101,100]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_Times": "7",
+      "m_Cost": "[[101,100]]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_Times": "8",
+      "m_Cost": "[[101,100]]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_Times": "9",
+      "m_Cost": "[[101,100]]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_Times": "10",
+      "m_Cost": "[[101,100]]"
+    }
+  },
+  "status": "processed_10_items"
+}

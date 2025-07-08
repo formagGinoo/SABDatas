@@ -1,0 +1,103 @@
+{
+  "className": "CData_CharacterCampSub",
+  "timestamp": "2025-07-08T13:35:26.690Z",
+  "data": {
+    "101": {
+      "m_bError": null,
+      "m_CampSubID": "101",
+      "m_mCampSubName": "\"Progenitors\"",
+      "m_CampID": "\"1\"",
+      "m_mCampSubDesc": "\"Inheriting Black Blood's most primal power, they became a calamity. Though the sun's scorching blaze illuminates a future known as \"hope,\" they lurk in the shadow of the silver moon, echoing a past known as \"despair.\"\n— \"People only remember the warmth of the blazing sun, forgetting that in this world, there still exists the chill of the moon.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp101\""
+    },
+    "102": {
+      "m_bError": null,
+      "m_CampSubID": "102",
+      "m_mCampSubName": "\"Harbingers\"",
+      "m_CampID": "\"1\"",
+      "m_mCampSubDesc": "\"Though they imbibed Divine Blood, they refused to become enslaved by Black Blood. They are all strangers, unable to integrate into the world or feel the pulse of their own heartbeats. Their only wish is to return \"home,\" to the Other Side, distant as it may be.\n—\"The exiles attempted to find a new place to call home. Yet when they finally gazed back, they realized they had long since left their homeland behind.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp102\""
+    },
+    "103": {
+      "m_bError": null,
+      "m_CampSubID": "103",
+      "m_mCampSubName": "\"Ritualists\"",
+      "m_CampID": "\"1\"",
+      "m_mCampSubDesc": "\"Drawing new blood from celestial meteorites, we shape our new exterior with unprecedented power. Tempus is merely a vessel, containing all life in endless cycles of rebirth. It is we who are the masters of this vessel.\n—\"Tempus is omnipresent, much like the ocean. All life can feel its flow, yet none can prevent its passing.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp103\""
+    },
+    "201": {
+      "m_bError": null,
+      "m_CampSubID": "201",
+      "m_mCampSubName": "\"Bell Ringers\"",
+      "m_CampID": "\"2\"",
+      "m_mCampSubDesc": "\"The twelve Bell Ringers situated at the apex of the Tempus Church, baptized by divine Silver Blood, can rival or even surpass miracles with just their mortal form. The truth of Tempus is cyclical in nature. Much like a ring, it is both contradictory and unified; no thing nor self exists, only the eternal tolling of the bell remains.\n—\"With a stopped clock held in hand, they believe they can control time, yet the ticking of Tempus still echoes in their ears.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp201\""
+    },
+    "202": {
+      "m_bError": null,
+      "m_CampSubID": "202",
+      "m_mCampSubName": "\"Silver Cross\"",
+      "m_CampID": "\"2\"",
+      "m_mCampSubDesc": "\"Elites secretly cultivated by the Church, specializing in enforcing another form of \"justice,\" one in the shadows where the bright light of faith cannot reach. Tempus created twelve primary colors, serving as the only form of light; all other forms of color are destined to be consumed by the shadow of the cross.\n—\"Shadow is not the opposite of light, but rather its subordinate.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp202\""
+    },
+    "203": {
+      "m_bError": null,
+      "m_CampSubID": "203",
+      "m_mCampSubName": "\"Ascendants\"",
+      "m_CampID": "\"2\"",
+      "m_mCampSubDesc": "\"Humanoid weapons used by the Church who enhance their combat prowess through physical modifications. For the sake of victory, they have long since removed all unnecessary bodily functions, leaving only battle memories inside.\n—\"Form gives the spirit meaning, known as life, yet through this the spirit loses its original significance.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp203\""
+    },
+    "301": {
+      "m_bError": null,
+      "m_CampSubID": "301",
+      "m_mCampSubName": "\"Moonblessed\"",
+      "m_CampID": "\"3\"",
+      "m_mCampSubDesc": "\"The romantic idealists of the Bloodborn who firmly believe the moon is their home to return to. Though the body is born of the earth, any mark left behind is insignificant, for only the bright moon above is the true resting place of the soul.\n—\"Awakening amid the sun's dream, we are children of the moon.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp301\""
+    },
+    "302": {
+      "m_bError": null,
+      "m_CampSubID": "302",
+      "m_mCampSubName": "\"Demon Banquet\"",
+      "m_CampID": "\"3\"",
+      "m_mCampSubDesc": "\"The extreme radicals of the Bloodborn who are proponents of clan supremacy. The crimson moon gazes coldly upon the world, observing the destruction of all life; Bathed in the scarlet moonlight, their bodies are branded with blood-colored markings.\n—\"Far away in a foreign land, nowhere is home, yet everywhere is home.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp302\""
+    },
+    "303": {
+      "m_bError": null,
+      "m_CampSubID": "303",
+      "m_mCampSubName": "\"Alliance\"",
+      "m_CampID": "\"3\"",
+      "m_mCampSubDesc": "\"The moderate-conservatives of the Bloodborn who enjoy a hidden and reclusive lifestyle. The world mocks our faith, exiled by the sun; Yet, our fabled home is also a cage, imprisoning the light.\n—\"Fate is much like the moon, waxing and waning, but never fully fading away.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp303\""
+    },
+    "401": {
+      "m_bError": null,
+      "m_CampSubID": "401",
+      "m_mCampSubName": "\"Gravekeeper\"",
+      "m_CampID": "\"4\"",
+      "m_mCampSubDesc": "\"The powerful individuals from each Kingdom who guard the Divine Body relics day and night. Will endlessly guarding the remnants of fallen gods bring mortals closer to the Divine?\n—\"The weak worship the strong, and strong follow the stronger. This is how gods are born.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp401\""
+    },
+    "402": {
+      "m_bError": null,
+      "m_CampSubID": "402",
+      "m_mCampSubName": "\"Chosen One\"",
+      "m_CampID": "\"4\"",
+      "m_mCampSubDesc": "\"The devout Church followers from each Kingdom. Their interlocked fingers radiate a warm glow— a blessing bestowed upon the chosen ones.\n—\"The pain of devotion is a double-edged sword granted to the spirit by God: Though one edge points towards non-believers, the other is pointed at oneself.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp402\""
+    },
+    "403": {
+      "m_bError": null,
+      "m_CampSubID": "403",
+      "m_mCampSubName": "\"Enlightener\"",
+      "m_CampID": "\"4\"",
+      "m_mCampSubDesc": "\"Rebels from each Kingdom who are dissatisfied with the Church's power. \"God\" is merely a fool's delusion. The time has come, and the light of the morning star shall pierce through the decadent lies of the Divine.\n—\"When faith is lost, gods disappear; When faith is needed again, gods become tools to be exploited.\"\"",
+      "m_CampSubIcon": "\"Atlas_CharacterCamp/Camp403\""
+    }
+  },
+  "status": "processed_12_items"
+}

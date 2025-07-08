@@ -1,0 +1,70 @@
+{
+  "className": "CData_CharacterLevelLock",
+  "timestamp": "2025-07-08T13:35:26.979Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_LockMaxLevel": "40",
+      "m_UnlockLevel": "40",
+      "m_TipsID": "40001"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_LockMaxLevel": "60",
+      "m_UnlockLevel": "60",
+      "m_TipsID": "40002"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_LockMaxLevel": "80",
+      "m_UnlockLevel": "80",
+      "m_TipsID": "40003"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_LockMaxLevel": "100",
+      "m_UnlockLevel": "100",
+      "m_TipsID": "40004"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_LockMaxLevel": "120",
+      "m_UnlockLevel": "120",
+      "m_TipsID": "40005"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_LockMaxLevel": "140",
+      "m_UnlockLevel": "140",
+      "m_TipsID": "40006"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_LockMaxLevel": "160",
+      "m_UnlockLevel": "160",
+      "m_TipsID": "40007"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_LockMaxLevel": "180",
+      "m_UnlockLevel": "180",
+      "m_TipsID": "40008"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_LockMaxLevel": "200",
+      "m_UnlockLevel": "200",
+      "m_TipsID": "40009"
+    }
+  },
+  "status": "processed_9_items"
+}

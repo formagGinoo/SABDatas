@@ -1,0 +1,6791 @@
+{
+  "className": "CData_ShowMessage",
+  "timestamp": "2025-07-08T13:35:47.920Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mMessage": "\"IDIP requires that when a Lord does not correspond to the Openid, the error code must be 1.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1000": {
+      "m_bError": null,
+      "m_ID": "1000",
+      "m_mMessage": "\"Player not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1001": {
+      "m_bError": null,
+      "m_ID": "1001",
+      "m_mMessage": "\"GM Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1002": {
+      "m_bError": null,
+      "m_ID": "1002",
+      "m_mMessage": "\"GM Command Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1003": {
+      "m_bError": null,
+      "m_ID": "1003",
+      "m_mMessage": "\"Player does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1004": {
+      "m_bError": null,
+      "m_ID": "1004",
+      "m_mMessage": "\"Protocol Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1005": {
+      "m_bError": null,
+      "m_ID": "1005",
+      "m_mMessage": "\"Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1006": {
+      "m_bError": null,
+      "m_ID": "1006",
+      "m_mMessage": "\"Repeating UUID\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1007": {
+      "m_bError": null,
+      "m_ID": "1007",
+      "m_mMessage": "\"GM Command Execution Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1008": {
+      "m_bError": null,
+      "m_ID": "1008",
+      "m_mMessage": "\"Protocol Execution Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1009": {
+      "m_bError": null,
+      "m_ID": "1009",
+      "m_mMessage": "\"Configuration data not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1010": {
+      "m_bError": null,
+      "m_ID": "1010",
+      "m_mMessage": "\"Insufficient Inventory Space\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1011": {
+      "m_bError": null,
+      "m_ID": "1011",
+      "m_mMessage": "\"Insufficient Items\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1012": {
+      "m_bError": null,
+      "m_ID": "1012",
+      "m_mMessage": "\"Item not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1013": {
+      "m_bError": null,
+      "m_ID": "1013",
+      "m_mMessage": "\"Item configuration not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1014": {
+      "m_bError": null,
+      "m_ID": "1014",
+      "m_mMessage": "\"Incorrect Game Server ID\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1015": {
+      "m_bError": null,
+      "m_ID": "1015",
+      "m_mMessage": "\"UUID Allocation Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1016": {
+      "m_bError": null,
+      "m_ID": "1016",
+      "m_mMessage": "\"Insufficient Solis\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1017": {
+      "m_bError": null,
+      "m_ID": "1017",
+      "m_mMessage": "\"Insufficient Moon Tears.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1018": {
+      "m_bError": null,
+      "m_ID": "1018",
+      "m_mMessage": "\"Insufficient Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1019": {
+      "m_bError": null,
+      "m_ID": "1019",
+      "m_mMessage": "\"Inventory full. Items sent via mail.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1020": {
+      "m_bError": null,
+      "m_ID": "1020",
+      "m_mMessage": "\"Item Cannot Be Sold\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1021": {
+      "m_bError": null,
+      "m_ID": "1021",
+      "m_mMessage": "\"Item Cannot Be Used\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1022": {
+      "m_bError": null,
+      "m_ID": "1022",
+      "m_mMessage": "\"Clear [Threads of Fate] <style=Clientmessage01>2-5</style> to unlock Territory Collection.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1023": {
+      "m_bError": null,
+      "m_ID": "1023",
+      "m_mMessage": "\"Consumables Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1024": {
+      "m_bError": null,
+      "m_ID": "1024",
+      "m_mMessage": "\"Too many operations.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1025": {
+      "m_bError": null,
+      "m_ID": "1025",
+      "m_mMessage": "\"Battle Verification Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1026": {
+      "m_bError": null,
+      "m_ID": "1026",
+      "m_mMessage": "\"Name is empty.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1027": {
+      "m_bError": null,
+      "m_ID": "1027",
+      "m_mMessage": "\"Data Unchanged\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1028": {
+      "m_bError": null,
+      "m_ID": "1028",
+      "m_mMessage": "\"Insufficient VIP Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1029": {
+      "m_bError": null,
+      "m_ID": "1029",
+      "m_mMessage": "\"Parameter duplicate.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1031": {
+      "m_bError": null,
+      "m_ID": "1031",
+      "m_mMessage": "\"Account Has Been Banned\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1032": {
+      "m_bError": null,
+      "m_ID": "1032",
+      "m_mMessage": "\"Muted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1033": {
+      "m_bError": null,
+      "m_ID": "1033",
+      "m_mMessage": "\"Usage Limit Exceeded\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1034": {
+      "m_bError": null,
+      "m_ID": "1034",
+      "m_mMessage": "\"Not A New User\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1035": {
+      "m_bError": null,
+      "m_ID": "1035",
+      "m_mMessage": "\"Has Not Recharged\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1038": {
+      "m_bError": null,
+      "m_ID": "1038",
+      "m_mMessage": "\"Level Too High\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1039": {
+      "m_bError": null,
+      "m_ID": "1039",
+      "m_mMessage": "\"Protocol Closed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1041": {
+      "m_bError": null,
+      "m_ID": "1041",
+      "m_mMessage": "\"Channel Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1042": {
+      "m_bError": null,
+      "m_ID": "1042",
+      "m_mMessage": "\"Cannot bind multiple accounts of the same type.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1045": {
+      "m_bError": null,
+      "m_ID": "1045",
+      "m_mMessage": "\"Incorrect Platform\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1046": {
+      "m_bError": null,
+      "m_ID": "1046",
+      "m_mMessage": "\"Incorrect Country\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1047": {
+      "m_bError": null,
+      "m_ID": "1047",
+      "m_mMessage": "\"No Battle Replay\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1048": {
+      "m_bError": null,
+      "m_ID": "1048",
+      "m_mMessage": "\"Data Unchanged\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1049": {
+      "m_bError": null,
+      "m_ID": "1049",
+      "m_mMessage": "\"This avatar is already selected.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1050": {
+      "m_bError": null,
+      "m_ID": "1050",
+      "m_mMessage": "\"You cannot use this avatar.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1051": {
+      "m_bError": null,
+      "m_ID": "1051",
+      "m_mMessage": "\"Gender has already been set.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1053": {
+      "m_bError": null,
+      "m_ID": "1053",
+      "m_mMessage": "\"In-App Purchase Channel Restricted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1055": {
+      "m_bError": null,
+      "m_ID": "1055",
+      "m_mMessage": "\"Mail Disabled\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1056": {
+      "m_bError": null,
+      "m_ID": "1056",
+      "m_mMessage": "\"Error with bonus items when claiming the purchased item.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1057": {
+      "m_bError": null,
+      "m_ID": "1057",
+      "m_mMessage": "\"Cannot Use Custom Avatar\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1058": {
+      "m_bError": null,
+      "m_ID": "1058",
+      "m_mMessage": "\"You've been banned from logging in.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1059": {
+      "m_bError": null,
+      "m_ID": "1059",
+      "m_mMessage": "\"You've been banned from recharging.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1061": {
+      "m_bError": null,
+      "m_ID": "1061",
+      "m_mMessage": "\"Cannot Report Default Avatar\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1062": {
+      "m_bError": null,
+      "m_ID": "1062",
+      "m_mMessage": "\"Avatar Upload on cooldown\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1063": {
+      "m_bError": null,
+      "m_ID": "1063",
+      "m_mMessage": "\"Avatar Upload feature is not available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1064": {
+      "m_bError": null,
+      "m_ID": "1064",
+      "m_mMessage": "\"It is not the Daily Refresh time yet.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1075": {
+      "m_bError": null,
+      "m_ID": "1075",
+      "m_mMessage": "\"Server Updating\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1082": {
+      "m_bError": null,
+      "m_ID": "1082",
+      "m_mMessage": "\"Server is Full\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1083": {
+      "m_bError": null,
+      "m_ID": "1083",
+      "m_mMessage": "\"Cache Not Found\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1084": {
+      "m_bError": null,
+      "m_ID": "1084",
+      "m_mMessage": "\"Refund Blocked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1085": {
+      "m_bError": null,
+      "m_ID": "1085",
+      "m_mMessage": "\"OrderID has been processed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1086": {
+      "m_bError": null,
+      "m_ID": "1086",
+      "m_mMessage": "\"Reward Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1087": {
+      "m_bError": null,
+      "m_ID": "1087",
+      "m_mMessage": "\"Reward being issued.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1088": {
+      "m_bError": null,
+      "m_ID": "1088",
+      "m_mMessage": "\"Disable notifications for online characters.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1089": {
+      "m_bError": null,
+      "m_ID": "1089",
+      "m_mMessage": "\"Push notifications not enabled.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1090": {
+      "m_bError": null,
+      "m_ID": "1090",
+      "m_mMessage": "\"No content to display.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1091": {
+      "m_bError": null,
+      "m_ID": "1091",
+      "m_mMessage": "\"Array Index Out of Bounds\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1092": {
+      "m_bError": null,
+      "m_ID": "1092",
+      "m_mMessage": "\"Bio encoding error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1093": {
+      "m_bError": null,
+      "m_ID": "1093",
+      "m_mMessage": "\"Bio length limit.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1094": {
+      "m_bError": null,
+      "m_ID": "1094",
+      "m_mMessage": "\"Bio contains offensive words.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1095": {
+      "m_bError": null,
+      "m_ID": "1095",
+      "m_mMessage": "\"Battle Type Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1096": {
+      "m_bError": null,
+      "m_ID": "1096",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1097": {
+      "m_bError": null,
+      "m_ID": "1097",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1098": {
+      "m_bError": null,
+      "m_ID": "1098",
+      "m_mMessage": "\"Too Many Requests\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1100": {
+      "m_bError": null,
+      "m_ID": "1100",
+      "m_mMessage": "\"Daily Limit Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1101": {
+      "m_bError": null,
+      "m_ID": "1101",
+      "m_mMessage": "\"Report Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1121": {
+      "m_bError": null,
+      "m_ID": "1121",
+      "m_mMessage": "\"Task Not Accepted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1122": {
+      "m_bError": null,
+      "m_ID": "1122",
+      "m_mMessage": "\"Task Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1123": {
+      "m_bError": null,
+      "m_ID": "1123",
+      "m_mMessage": "\"Task Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1124": {
+      "m_bError": null,
+      "m_ID": "1124",
+      "m_mMessage": "\"Task in Progress\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1125": {
+      "m_bError": null,
+      "m_ID": "1125",
+      "m_mMessage": "\"Pre-task Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1126": {
+      "m_bError": null,
+      "m_ID": "1126",
+      "m_mMessage": "\"Task Variable Operation Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1127": {
+      "m_bError": null,
+      "m_ID": "1127",
+      "m_mMessage": "\"Main Story Tasks Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1128": {
+      "m_bError": null,
+      "m_ID": "1128",
+      "m_mMessage": "\"Main Story Task Rewards Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1129": {
+      "m_bError": null,
+      "m_ID": "1129",
+      "m_mMessage": "\"Conditions Not Met\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1130": {
+      "m_bError": null,
+      "m_ID": "1130",
+      "m_mMessage": "\"Task Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1131": {
+      "m_bError": null,
+      "m_ID": "1131",
+      "m_mMessage": "\"Task Expired\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1132": {
+      "m_bError": null,
+      "m_ID": "1132",
+      "m_mMessage": "\"No Claimable Rewards\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1133": {
+      "m_bError": null,
+      "m_ID": "1133",
+      "m_mMessage": "\"Event Task Days Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1134": {
+      "m_bError": null,
+      "m_ID": "1134",
+      "m_mMessage": "\"Event Tasks Insufficient\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1135": {
+      "m_bError": null,
+      "m_ID": "1135",
+      "m_mMessage": "\"Achievement Rewards Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1136": {
+      "m_bError": null,
+      "m_ID": "1136",
+      "m_mMessage": "\"Insufficient Achievement Points\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1137": {
+      "m_bError": null,
+      "m_ID": "1137",
+      "m_mMessage": "\"Task Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1139": {
+      "m_bError": null,
+      "m_ID": "1139",
+      "m_mMessage": "\"Trial Stage Only\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1140": {
+      "m_bError": null,
+      "m_ID": "1140",
+      "m_mMessage": "\"Empty lineup.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1141": {
+      "m_bError": null,
+      "m_ID": "1141",
+      "m_mMessage": "\"Preset Lineup Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1142": {
+      "m_bError": null,
+      "m_ID": "1142",
+      "m_mMessage": "\"Cannot deploy identical Vassals.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1143": {
+      "m_bError": null,
+      "m_ID": "1143",
+      "m_mMessage": "\"Maximum Number of Vassals\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1144": {
+      "m_bError": null,
+      "m_ID": "1144",
+      "m_mMessage": "\"Lineup Unchanged\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1145": {
+      "m_bError": null,
+      "m_ID": "1145",
+      "m_mMessage": "\"Vassal Faction Restricted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1146": {
+      "m_bError": null,
+      "m_ID": "1146",
+      "m_mMessage": "\"Battle Mode Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1147": {
+      "m_bError": null,
+      "m_ID": "1147",
+      "m_mMessage": "\"Cannot deploy Vassals of the same name.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1148": {
+      "m_bError": null,
+      "m_ID": "1148",
+      "m_mMessage": "\"Cannot save the lineup.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1149": {
+      "m_bError": null,
+      "m_ID": "1149",
+      "m_mMessage": "\"Invalid Position\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1150": {
+      "m_bError": null,
+      "m_ID": "1150",
+      "m_mMessage": "\"Feature Not Available\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1151": {
+      "m_bError": null,
+      "m_ID": "1151",
+      "m_mMessage": "\"System Closed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1152": {
+      "m_bError": null,
+      "m_ID": "1152",
+      "m_mMessage": "\"Insufficient Lord level.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1153": {
+      "m_bError": null,
+      "m_ID": "1153",
+      "m_mMessage": "\"Main Story Stage Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1154": {
+      "m_bError": null,
+      "m_ID": "1154",
+      "m_mMessage": "\"Tutorial Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1160": {
+      "m_bError": null,
+      "m_ID": "1160",
+      "m_mMessage": "\"Incorrect Stage Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1161": {
+      "m_bError": null,
+      "m_ID": "1161",
+      "m_mMessage": "\"Incorrect Stage Subtype\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1162": {
+      "m_bError": null,
+      "m_ID": "1162",
+      "m_mMessage": "\"Incorrect Chapter\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1163": {
+      "m_bError": null,
+      "m_ID": "1163",
+      "m_mMessage": "\"Stage has not initialized.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1164": {
+      "m_bError": null,
+      "m_ID": "1164",
+      "m_mMessage": "\"Stage Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1165": {
+      "m_bError": null,
+      "m_ID": "1165",
+      "m_mMessage": "\"Stage cannot be replayed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1166": {
+      "m_bError": null,
+      "m_ID": "1166",
+      "m_mMessage": "\"Previous Stage incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1167": {
+      "m_bError": null,
+      "m_ID": "1167",
+      "m_mMessage": "\"Stage Not Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1168": {
+      "m_bError": null,
+      "m_ID": "1168",
+      "m_mMessage": "\"Stage Battle Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1169": {
+      "m_bError": null,
+      "m_ID": "1169",
+      "m_mMessage": "\"Stage cannot be quick cleared.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1170": {
+      "m_bError": null,
+      "m_ID": "1170",
+      "m_mMessage": "\"Incorrect stage rounds.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1171": {
+      "m_bError": null,
+      "m_ID": "1171",
+      "m_mMessage": "\"Currently unable to unlock stage.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1172": {
+      "m_bError": null,
+      "m_ID": "1172",
+      "m_mMessage": "\"Tower not available today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1173": {
+      "m_bError": null,
+      "m_ID": "1173",
+      "m_mMessage": "\"Skill Raid hasn't been challenged today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1174": {
+      "m_bError": null,
+      "m_ID": "1174",
+      "m_mMessage": "\"Skill Raid has no score reward.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1175": {
+      "m_bError": null,
+      "m_ID": "1175",
+      "m_mMessage": "\"fightid Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1176": {
+      "m_bError": null,
+      "m_ID": "1176",
+      "m_mMessage": "\"Required Vassals not deployed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1177": {
+      "m_bError": null,
+      "m_ID": "1177",
+      "m_mMessage": "\"Forbidden Vassal deployed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1178": {
+      "m_bError": null,
+      "m_ID": "1178",
+      "m_mMessage": "\"Battle star verification failed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1179": {
+      "m_bError": null,
+      "m_ID": "1179",
+      "m_mMessage": "\"Chamber complete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1180": {
+      "m_bError": null,
+      "m_ID": "1180",
+      "m_mMessage": "\"Chamber error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1181": {
+      "m_bError": null,
+      "m_ID": "1181",
+      "m_mMessage": "\"Chapter Not Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1182": {
+      "m_bError": null,
+      "m_ID": "1182",
+      "m_mMessage": "\"Stage updating, please try again later!\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1183": {
+      "m_bError": null,
+      "m_ID": "1183",
+      "m_mMessage": "\"Banned class has been deployed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1184": {
+      "m_bError": null,
+      "m_ID": "1184",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1185": {
+      "m_bError": null,
+      "m_ID": "1185",
+      "m_mMessage": "\"Equipment Raid hasn't been challenged today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1190": {
+      "m_bError": null,
+      "m_ID": "1190",
+      "m_mMessage": "\"Idle Rewards viewed too frequently\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1191": {
+      "m_bError": null,
+      "m_ID": "1191",
+      "m_mMessage": "\"Idle Rewards claimed too frequently\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1192": {
+      "m_bError": null,
+      "m_ID": "1192",
+      "m_mMessage": "\"No Idle Rewards\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1193": {
+      "m_bError": null,
+      "m_ID": "1193",
+      "m_mMessage": "\"Claim All Max Attempts\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1200": {
+      "m_bError": null,
+      "m_ID": "1200",
+      "m_mMessage": "\"Failed to generate Battle Record\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1201": {
+      "m_bError": null,
+      "m_ID": "1201",
+      "m_mMessage": "\"Battle Record Expired\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1202": {
+      "m_bError": null,
+      "m_ID": "1202",
+      "m_mMessage": "\"Invalid Battle Record\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1203": {
+      "m_bError": null,
+      "m_ID": "1203",
+      "m_mMessage": "\"Battle Record is Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1204": {
+      "m_bError": null,
+      "m_ID": "1204",
+      "m_mMessage": "\"Lineup Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1205": {
+      "m_bError": null,
+      "m_ID": "1205",
+      "m_mMessage": "\"Vassal not in lineup.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1206": {
+      "m_bError": null,
+      "m_ID": "1206",
+      "m_mMessage": "\"Battle Verification Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1207": {
+      "m_bError": null,
+      "m_ID": "1207",
+      "m_mMessage": "\"Vassal is dead.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1208": {
+      "m_bError": null,
+      "m_ID": "1208",
+      "m_mMessage": "\"Cannot be skipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1262": {
+      "m_bError": null,
+      "m_ID": "1262",
+      "m_mMessage": "\"Insufficient Arena Opponents\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1263": {
+      "m_bError": null,
+      "m_ID": "1263",
+      "m_mMessage": "\"Arena Rank Has Changed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1270": {
+      "m_bError": null,
+      "m_ID": "1270",
+      "m_mMessage": "\"Lord Mail Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1271": {
+      "m_bError": null,
+      "m_ID": "1271",
+      "m_mMessage": "\"Mail Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1272": {
+      "m_bError": null,
+      "m_ID": "1272",
+      "m_mMessage": "\"No Attachment\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1273": {
+      "m_bError": null,
+      "m_ID": "1273",
+      "m_mMessage": "\"Too Many Characters\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1274": {
+      "m_bError": null,
+      "m_ID": "1274",
+      "m_mMessage": "\"Please Claim Mail Attachment\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1275": {
+      "m_bError": null,
+      "m_ID": "1275",
+      "m_mMessage": "\"Mail Attachment Unclaimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1276": {
+      "m_bError": null,
+      "m_ID": "1276",
+      "m_mMessage": "\"Recipient Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1277": {
+      "m_bError": null,
+      "m_ID": "1277",
+      "m_mMessage": "\"Cannot Send to Yourself\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1278": {
+      "m_bError": null,
+      "m_ID": "1278",
+      "m_mMessage": "\"Mail Attachment Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1279": {
+      "m_bError": null,
+      "m_ID": "1279",
+      "m_mMessage": "\"Mail Cannot Be Deleted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1280": {
+      "m_bError": null,
+      "m_ID": "1280",
+      "m_mMessage": "\"Cannot send this type of mail.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1281": {
+      "m_bError": null,
+      "m_ID": "1281",
+      "m_mMessage": "\"Title is Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1282": {
+      "m_bError": null,
+      "m_ID": "1282",
+      "m_mMessage": "\"Content is Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1283": {
+      "m_bError": null,
+      "m_ID": "1283",
+      "m_mMessage": "\"Cannot Report System Mail\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1284": {
+      "m_bError": null,
+      "m_ID": "1284",
+      "m_mMessage": "\"Invalid Mail\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1285": {
+      "m_bError": null,
+      "m_ID": "1285",
+      "m_mMessage": "\"Cannot claim this mail attachment.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1286": {
+      "m_bError": null,
+      "m_ID": "1286",
+      "m_mMessage": "\"Already Read\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1287": {
+      "m_bError": null,
+      "m_ID": "1287",
+      "m_mMessage": "\"No Claimable Mail\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1290": {
+      "m_bError": null,
+      "m_ID": "1290",
+      "m_mMessage": "\"Name has already been taken.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1291": {
+      "m_bError": null,
+      "m_ID": "1291",
+      "m_mMessage": "\"This name has already been taken.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1293": {
+      "m_bError": null,
+      "m_ID": "1293",
+      "m_mMessage": "\"Must contain 1 to 10 characters.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1296": {
+      "m_bError": null,
+      "m_ID": "1296",
+      "m_mMessage": "\"Contains offensive text\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1297": {
+      "m_bError": null,
+      "m_ID": "1297",
+      "m_mMessage": "\"Contains restricted symbols\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1298": {
+      "m_bError": null,
+      "m_ID": "1298",
+      "m_mMessage": "\"Must contain 2 to 16 characters.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1299": {
+      "m_bError": null,
+      "m_ID": "1299",
+      "m_mMessage": "\"Must contain letters.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "1301": {
+      "m_bError": null,
+      "m_ID": "1301",
+      "m_mMessage": "\"Cannot send chat messages while on cooldown.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1302": {
+      "m_bError": null,
+      "m_ID": "1302",
+      "m_mMessage": "\"Chat Channel Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1303": {
+      "m_bError": null,
+      "m_ID": "1303",
+      "m_mMessage": "\"Message is Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1304": {
+      "m_bError": null,
+      "m_ID": "1304",
+      "m_mMessage": "\"Player already blocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1305": {
+      "m_bError": null,
+      "m_ID": "1305",
+      "m_mMessage": "\"Player not blocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1306": {
+      "m_bError": null,
+      "m_ID": "1306",
+      "m_mMessage": "\"Message Character Format Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1307": {
+      "m_bError": null,
+      "m_ID": "1307",
+      "m_mMessage": "\"Cannot send messages to System Chat.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1308": {
+      "m_bError": null,
+      "m_ID": "1308",
+      "m_mMessage": "\"Blocked player limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1309": {
+      "m_bError": null,
+      "m_ID": "1309",
+      "m_mMessage": "\"Sent too many messages.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1310": {
+      "m_bError": null,
+      "m_ID": "1310",
+      "m_mMessage": "\"Chat Creation Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1311": {
+      "m_bError": null,
+      "m_ID": "1311",
+      "m_mMessage": "\"Chat Not Created\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1312": {
+      "m_bError": null,
+      "m_ID": "1312",
+      "m_mMessage": "\"You are talking to yourself.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1313": {
+      "m_bError": null,
+      "m_ID": "1313",
+      "m_mMessage": "\"Too Many Operations\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1315": {
+      "m_bError": null,
+      "m_ID": "1315",
+      "m_mMessage": "\"You do not have this emoji.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1316": {
+      "m_bError": null,
+      "m_ID": "1316",
+      "m_mMessage": "\"Language ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1317": {
+      "m_bError": null,
+      "m_ID": "1317",
+      "m_mMessage": "\"Channel already joined.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1318": {
+      "m_bError": null,
+      "m_ID": "1318",
+      "m_mMessage": "\"Channel not joined.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1319": {
+      "m_bError": null,
+      "m_ID": "1319",
+      "m_mMessage": "\"Recruit Messages limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1320": {
+      "m_bError": null,
+      "m_ID": "1320",
+      "m_mMessage": "\"Prohibited Language\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1321": {
+      "m_bError": null,
+      "m_ID": "1321",
+      "m_mMessage": "\"Prohibited Chat Group\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1322": {
+      "m_bError": null,
+      "m_ID": "1322",
+      "m_mMessage": "\"Not in the Cross-server Chat Group.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1323": {
+      "m_bError": null,
+      "m_ID": "1323",
+      "m_mMessage": "\"Cross-server Chat Group player limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1324": {
+      "m_bError": null,
+      "m_ID": "1324",
+      "m_mMessage": "\"You are not the owner of the Chat Group.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1325": {
+      "m_bError": null,
+      "m_ID": "1325",
+      "m_mMessage": "\"Chat Group Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1326": {
+      "m_bError": null,
+      "m_ID": "1326",
+      "m_mMessage": "\"No player invited.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1327": {
+      "m_bError": null,
+      "m_ID": "1327",
+      "m_mMessage": "\"You cannot invite yourself.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1370": {
+      "m_bError": null,
+      "m_ID": "1370",
+      "m_mMessage": "\"Redeemable on designated server only.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1371": {
+      "m_bError": null,
+      "m_ID": "1371",
+      "m_mMessage": "\"Invalid Redeem Code.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1372": {
+      "m_bError": null,
+      "m_ID": "1372",
+      "m_mMessage": "\"Redeem Code expired.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1373": {
+      "m_bError": null,
+      "m_ID": "1373",
+      "m_mMessage": "\"Invalid Redeem Code Format\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1374": {
+      "m_bError": null,
+      "m_ID": "1374",
+      "m_mMessage": "\"This code has already been redeemed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1375": {
+      "m_bError": null,
+      "m_ID": "1375",
+      "m_mMessage": "\"The Redeem Code does not belong to the account.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1376": {
+      "m_bError": null,
+      "m_ID": "1376",
+      "m_mMessage": "\"Redeem limit exceeded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1377": {
+      "m_bError": null,
+      "m_ID": "1377",
+      "m_mMessage": "\"Redeemable on designated server only.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1378": {
+      "m_bError": null,
+      "m_ID": "1378",
+      "m_mMessage": "\"Restriction Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1379": {
+      "m_bError": null,
+      "m_ID": "1379",
+      "m_mMessage": "\"Sending rewards. Cannot redeem again.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1380": {
+      "m_bError": null,
+      "m_ID": "1380",
+      "m_mMessage": "\"Cannot use this Redeem Code yet.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1381": {
+      "m_bError": null,
+      "m_ID": "1381",
+      "m_mMessage": "\"Redeem limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1382": {
+      "m_bError": null,
+      "m_ID": "1382",
+      "m_mMessage": "\"Not a new user.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1383": {
+      "m_bError": null,
+      "m_ID": "1383",
+      "m_mMessage": "\"Not topped-up.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1384": {
+      "m_bError": null,
+      "m_ID": "1384",
+      "m_mMessage": "\"Level too high.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1385": {
+      "m_bError": null,
+      "m_ID": "1385",
+      "m_mMessage": "\"Redeem Code Configured Channel Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1386": {
+      "m_bError": null,
+      "m_ID": "1386",
+      "m_mMessage": "\"Account Redeem Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1387": {
+      "m_bError": null,
+      "m_ID": "1387",
+      "m_mMessage": "\"Redeem Code Attempt Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1388": {
+      "m_bError": null,
+      "m_ID": "1388",
+      "m_mMessage": "\"Group redeem limit exceeded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1400": {
+      "m_bError": null,
+      "m_ID": "1400",
+      "m_mMessage": "\"Clan does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1401": {
+      "m_bError": null,
+      "m_ID": "1401",
+      "m_mMessage": "\"The Lord is not in a Clan.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1402": {
+      "m_bError": null,
+      "m_ID": "1402",
+      "m_mMessage": "\"The Lord has already joined the Clan.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1403": {
+      "m_bError": null,
+      "m_ID": "1403",
+      "m_mMessage": "\"Clan Leader cannot leave the clan.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1404": {
+      "m_bError": null,
+      "m_ID": "1404",
+      "m_mMessage": "\"You are not the Clan Leader.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1405": {
+      "m_bError": null,
+      "m_ID": "1405",
+      "m_mMessage": "\"The Lord is not on the member list.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1406": {
+      "m_bError": null,
+      "m_ID": "1406",
+      "m_mMessage": "\"Invalid Action.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1407": {
+      "m_bError": null,
+      "m_ID": "1407",
+      "m_mMessage": "\"Clan is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1408": {
+      "m_bError": null,
+      "m_ID": "1408",
+      "m_mMessage": "\"You are no longer a Clan Member.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1409": {
+      "m_bError": null,
+      "m_ID": "1409",
+      "m_mMessage": "\"Clan Name Contains Sensitive Words\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1410": {
+      "m_bError": null,
+      "m_ID": "1410",
+      "m_mMessage": "\"Unknown Application Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1411": {
+      "m_bError": null,
+      "m_ID": "1411",
+      "m_mMessage": "\"Recommended Data Unavailable\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1412": {
+      "m_bError": null,
+      "m_ID": "1412",
+      "m_mMessage": "\"Not the Leader or Elder\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1413": {
+      "m_bError": null,
+      "m_ID": "1413",
+      "m_mMessage": "\"The Lord has already joined a Clan or the application has expired.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1414": {
+      "m_bError": null,
+      "m_ID": "1414",
+      "m_mMessage": "\"Invalid Clan Position\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1415": {
+      "m_bError": null,
+      "m_ID": "1415",
+      "m_mMessage": "\"Maximum Elders appointed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1416": {
+      "m_bError": null,
+      "m_ID": "1416",
+      "m_mMessage": "\"Contains restricted words.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1417": {
+      "m_bError": null,
+      "m_ID": "1417",
+      "m_mMessage": "\"Contains restricted words.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1418": {
+      "m_bError": null,
+      "m_ID": "1418",
+      "m_mMessage": "\"Clan doesn't take applications.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1419": {
+      "m_bError": null,
+      "m_ID": "1419",
+      "m_mMessage": "\"Clan Like limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1420": {
+      "m_bError": null,
+      "m_ID": "1420",
+      "m_mMessage": "\"Cannot like again.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1421": {
+      "m_bError": null,
+      "m_ID": "1421",
+      "m_mMessage": "\"Insufficient Clan Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1422": {
+      "m_bError": null,
+      "m_ID": "1422",
+      "m_mMessage": "\"Insufficient Clan Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1423": {
+      "m_bError": null,
+      "m_ID": "1423",
+      "m_mMessage": "\"Max Clan Level Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1424": {
+      "m_bError": null,
+      "m_ID": "1424",
+      "m_mMessage": "\"Cannot disband Clan until member list is empty.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1425": {
+      "m_bError": null,
+      "m_ID": "1425",
+      "m_mMessage": "\"Level requirement not met.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1426": {
+      "m_bError": null,
+      "m_ID": "1426",
+      "m_mMessage": "\"Unknown Application Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1427": {
+      "m_bError": null,
+      "m_ID": "1427",
+      "m_mMessage": "\"Unknown Badge\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1428": {
+      "m_bError": null,
+      "m_ID": "1428",
+      "m_mMessage": "\"Badge Locked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1429": {
+      "m_bError": null,
+      "m_ID": "1429",
+      "m_mMessage": "\"After leaving the clan, you need to wait for 60 min before joining a new one.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1430": {
+      "m_bError": null,
+      "m_ID": "1430",
+      "m_mMessage": "\"Application already sent.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1431": {
+      "m_bError": null,
+      "m_ID": "1431",
+      "m_mMessage": "\"Clan Permission Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1432": {
+      "m_bError": null,
+      "m_ID": "1432",
+      "m_mMessage": "\"Clan Establish Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1433": {
+      "m_bError": null,
+      "m_ID": "1433",
+      "m_mMessage": "\"Clan Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1434": {
+      "m_bError": null,
+      "m_ID": "1434",
+      "m_mMessage": "\"Clan purchase limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1435": {
+      "m_bError": null,
+      "m_ID": "1435",
+      "m_mMessage": "\"Already signed in today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1436": {
+      "m_bError": null,
+      "m_ID": "1436",
+      "m_mMessage": "\"Maximum number of Clan applicants has been reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1437": {
+      "m_bError": null,
+      "m_ID": "1437",
+      "m_mMessage": "\"Maximum number of applications reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1438": {
+      "m_bError": null,
+      "m_ID": "1438",
+      "m_mMessage": "\"Leadership already transferred.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1439": {
+      "m_bError": null,
+      "m_ID": "1439",
+      "m_mMessage": "\"Leadership not yet transferred.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1440": {
+      "m_bError": null,
+      "m_ID": "1440",
+      "m_mMessage": "\"Clan Name Already Taken\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1480": {
+      "m_bError": null,
+      "m_ID": "1480",
+      "m_mMessage": "\"Invalid Mail Content\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1481": {
+      "m_bError": null,
+      "m_ID": "1481",
+      "m_mMessage": "\"Clan Mail Restriction\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1482": {
+      "m_bError": null,
+      "m_ID": "1482",
+      "m_mMessage": "\"Lord already invited.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1483": {
+      "m_bError": null,
+      "m_ID": "1483",
+      "m_mMessage": "\"Repeated invites from Clan.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1484": {
+      "m_bError": null,
+      "m_ID": "1484",
+      "m_mMessage": "\"Not invited by this Clan.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1500": {
+      "m_bError": null,
+      "m_ID": "1500",
+      "m_mMessage": "\"Clan Hunt error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1501": {
+      "m_bError": null,
+      "m_ID": "1501",
+      "m_mMessage": "\"Clan Hunt unavailable.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1502": {
+      "m_bError": null,
+      "m_ID": "1502",
+      "m_mMessage": "\"Clan Hunt has ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1503": {
+      "m_bError": null,
+      "m_ID": "1503",
+      "m_mMessage": "\"Calculating Clan Hunt results.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1504": {
+      "m_bError": null,
+      "m_ID": "1504",
+      "m_mMessage": "\"Cannot leave Clan during a Clan Hunt.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1505": {
+      "m_bError": null,
+      "m_ID": "1505",
+      "m_mMessage": "\"Cannot remove members during a Clan Hunt.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1506": {
+      "m_bError": null,
+      "m_ID": "1506",
+      "m_mMessage": "\"Cannot disband during a Clan Hunt.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1507": {
+      "m_bError": null,
+      "m_ID": "1507",
+      "m_mMessage": "\"Boss not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1508": {
+      "m_bError": null,
+      "m_ID": "1508",
+      "m_mMessage": "\"Boss defeated.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1509": {
+      "m_bError": null,
+      "m_ID": "1509",
+      "m_mMessage": "\"Clan Hunt round error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1510": {
+      "m_bError": null,
+      "m_ID": "1510",
+      "m_mMessage": "\"No remaining Clan Hunt attempts today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1511": {
+      "m_bError": null,
+      "m_ID": "1511",
+      "m_mMessage": "\"Vassal has already participated today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1512": {
+      "m_bError": null,
+      "m_ID": "1512",
+      "m_mMessage": "\"Clan Hunt Boss HP error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1600": {
+      "m_bError": null,
+      "m_ID": "1600",
+      "m_mMessage": "\"Shop not yet open.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1601": {
+      "m_bError": null,
+      "m_ID": "1601",
+      "m_mMessage": "\"Shop not available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1602": {
+      "m_bError": null,
+      "m_ID": "1602",
+      "m_mMessage": "\"Shop closed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1603": {
+      "m_bError": null,
+      "m_ID": "1603",
+      "m_mMessage": "\"The shop cannot be manually refreshed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1604": {
+      "m_bError": null,
+      "m_ID": "1604",
+      "m_mMessage": "\"Shop refresh limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1605": {
+      "m_bError": null,
+      "m_ID": "1605",
+      "m_mMessage": "\"Shop data expired. Please refresh.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1606": {
+      "m_bError": null,
+      "m_ID": "1606",
+      "m_mMessage": "\"Item does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1607": {
+      "m_bError": null,
+      "m_ID": "1607",
+      "m_mMessage": "\"Not enough items in stock.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1608": {
+      "m_bError": null,
+      "m_ID": "1608",
+      "m_mMessage": "\"Limited Item\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1609": {
+      "m_bError": null,
+      "m_ID": "1609",
+      "m_mMessage": "\"Item not available for sale.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1610": {
+      "m_bError": null,
+      "m_ID": "1610",
+      "m_mMessage": "\"The item is not available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1650": {
+      "m_bError": null,
+      "m_ID": "1650",
+      "m_mMessage": "\"Purchase Price Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1651": {
+      "m_bError": null,
+      "m_ID": "1651",
+      "m_mMessage": "\"Not for sale.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1652": {
+      "m_bError": null,
+      "m_ID": "1652",
+      "m_mMessage": "\"Item purchase limit exceeded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1653": {
+      "m_bError": null,
+      "m_ID": "1653",
+      "m_mMessage": "\"Too many purchases. Please try again tomorrow.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1700": {
+      "m_bError": null,
+      "m_ID": "1700",
+      "m_mMessage": "\"Shop not yet open.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1701": {
+      "m_bError": null,
+      "m_ID": "1701",
+      "m_mMessage": "\"Shop not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1702": {
+      "m_bError": null,
+      "m_ID": "1702",
+      "m_mMessage": "\"Shop closed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1703": {
+      "m_bError": null,
+      "m_ID": "1703",
+      "m_mMessage": "\"Shop cannot be manually refreshed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1704": {
+      "m_bError": null,
+      "m_ID": "1704",
+      "m_mMessage": "\"Refresh limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1705": {
+      "m_bError": null,
+      "m_ID": "1705",
+      "m_mMessage": "\"Shop expired, please refresh.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1706": {
+      "m_bError": null,
+      "m_ID": "1706",
+      "m_mMessage": "\"Item not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1707": {
+      "m_bError": null,
+      "m_ID": "1707",
+      "m_mMessage": "\"Item out of stock.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1708": {
+      "m_bError": null,
+      "m_ID": "1708",
+      "m_mMessage": "\"Limited Item\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1709": {
+      "m_bError": null,
+      "m_ID": "1709",
+      "m_mMessage": "\"Item not for sale.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1710": {
+      "m_bError": null,
+      "m_ID": "1710",
+      "m_mMessage": "\"Item no longer available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1711": {
+      "m_bError": null,
+      "m_ID": "1711",
+      "m_mMessage": "\"Item Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1712": {
+      "m_bError": null,
+      "m_ID": "1712",
+      "m_mMessage": "\"Exceeded the max duration of the pact. Unable to purchase.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1713": {
+      "m_bError": null,
+      "m_ID": "1713",
+      "m_mMessage": "\"Threads of Fate Bundle purchased.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1714": {
+      "m_bError": null,
+      "m_ID": "1714",
+      "m_mMessage": "\"Threads of Fate Bundle prerequisite item not configured.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1715": {
+      "m_bError": null,
+      "m_ID": "1715",
+      "m_mMessage": "\"Threads of Fate Bundle prerequisite item not purchased.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1716": {
+      "m_bError": null,
+      "m_ID": "1716",
+      "m_mMessage": "\"Threads of Fate Bundle prerequisite item incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1717": {
+      "m_bError": null,
+      "m_ID": "1717",
+      "m_mMessage": "\"Item not for sale.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1718": {
+      "m_bError": null,
+      "m_ID": "1718",
+      "m_mMessage": "\"Threads of Fate Bundle not configured.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1719": {
+      "m_bError": null,
+      "m_ID": "1719",
+      "m_mMessage": "\"Threads of Fate Bundle not purchased.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1720": {
+      "m_bError": null,
+      "m_ID": "1720",
+      "m_mMessage": "\"Threads of Fate Bundle level too low.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1721": {
+      "m_bError": null,
+      "m_ID": "1721",
+      "m_mMessage": "\"Threads of Fate Bundle claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1722": {
+      "m_bError": null,
+      "m_ID": "1722",
+      "m_mMessage": "\"Threads of Fate Bundle level not configured.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1723": {
+      "m_bError": null,
+      "m_ID": "1723",
+      "m_mMessage": "\"Shop ID Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1724": {
+      "m_bError": null,
+      "m_ID": "1724",
+      "m_mMessage": "\"Unsupported shop type.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1750": {
+      "m_bError": null,
+      "m_ID": "1750",
+      "m_mMessage": "\"Shop not yet open.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1751": {
+      "m_bError": null,
+      "m_ID": "1751",
+      "m_mMessage": "\"Shop Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1752": {
+      "m_bError": null,
+      "m_ID": "1752",
+      "m_mMessage": "\"Shop not yet available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1753": {
+      "m_bError": null,
+      "m_ID": "1753",
+      "m_mMessage": "\"Shop Level Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1754": {
+      "m_bError": null,
+      "m_ID": "1754",
+      "m_mMessage": "\"Shop Main Story Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1755": {
+      "m_bError": null,
+      "m_ID": "1755",
+      "m_mMessage": "\"Shop Restriction Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1756": {
+      "m_bError": null,
+      "m_ID": "1756",
+      "m_mMessage": "\"Shop Not Activated\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1757": {
+      "m_bError": null,
+      "m_ID": "1757",
+      "m_mMessage": "\"Shop Rewards prerequisite not purchased.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1758": {
+      "m_bError": null,
+      "m_ID": "1758",
+      "m_mMessage": "\"Free Items\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1759": {
+      "m_bError": null,
+      "m_ID": "1759",
+      "m_mMessage": "\"Shop data has expired.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2000": {
+      "m_bError": null,
+      "m_ID": "2000",
+      "m_mMessage": "\"Crucible: Group not yet started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2001": {
+      "m_bError": null,
+      "m_ID": "2001",
+      "m_mMessage": "\"Crucible: Not in season.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2002": {
+      "m_bError": null,
+      "m_ID": "2002",
+      "m_mMessage": "\"Crucible: Opponent not found.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2003": {
+      "m_bError": null,
+      "m_ID": "2003",
+      "m_mMessage": "\"Crucible: Opponent refresh on CD.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2004": {
+      "m_bError": null,
+      "m_ID": "2004",
+      "m_mMessage": "\"Crucible: Season or Group mismatch.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2005": {
+      "m_bError": null,
+      "m_ID": "2005",
+      "m_mMessage": "\"Crucible: Season player grouping error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2006": {
+      "m_bError": null,
+      "m_ID": "2006",
+      "m_mMessage": "\"Crucible: Ticket configuration error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2007": {
+      "m_bError": null,
+      "m_ID": "2007",
+      "m_mMessage": "\"Crucible: Tickets insufficient.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2008": {
+      "m_bError": null,
+      "m_ID": "2008",
+      "m_mMessage": "\"Crucible: Opponent details required.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2009": {
+      "m_bError": null,
+      "m_ID": "2009",
+      "m_mMessage": "\"Crucible: Battle in progress.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2010": {
+      "m_bError": null,
+      "m_ID": "2010",
+      "m_mMessage": "\"Crucible: Battle lineup error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2011": {
+      "m_bError": null,
+      "m_ID": "2011",
+      "m_mMessage": "\"Crucible: Season changed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2012": {
+      "m_bError": null,
+      "m_ID": "2012",
+      "m_mMessage": "\"Crucible: Not in a battle.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2013": {
+      "m_bError": null,
+      "m_ID": "2013",
+      "m_mMessage": "\"Crucible: Battle settlement error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2014": {
+      "m_bError": null,
+      "m_ID": "2014",
+      "m_mMessage": "\"Crucible: Enemy group error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2015": {
+      "m_bError": null,
+      "m_ID": "2015",
+      "m_mMessage": "\"Crucible: Enemy Rank change lower than player.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2016": {
+      "m_bError": null,
+      "m_ID": "2016",
+      "m_mMessage": "\"Crucible: Idle Rewards not yet available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2017": {
+      "m_bError": null,
+      "m_ID": "2017",
+      "m_mMessage": "\"Crucible: Your Rank has changed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2018": {
+      "m_bError": null,
+      "m_ID": "2018",
+      "m_mMessage": "\"Crucible: Opponent's Rank has changed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2019": {
+      "m_bError": null,
+      "m_ID": "2019",
+      "m_mMessage": "\"Crucible: Rank initialization error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2100": {
+      "m_bError": null,
+      "m_ID": "2100",
+      "m_mMessage": "\"Prophecy Unbound: Event has ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2101": {
+      "m_bError": null,
+      "m_ID": "2101",
+      "m_mMessage": "\"Prophecy Unbound: Event updated.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2102": {
+      "m_bError": null,
+      "m_ID": "2102",
+      "m_mMessage": "\"Prophecy Unbound: Boss error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2103": {
+      "m_bError": null,
+      "m_ID": "2103",
+      "m_mMessage": "\"Prophecy Unbound: Stage not unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2104": {
+      "m_bError": null,
+      "m_ID": "2104",
+      "m_mMessage": "\"Prophecy Unbound: Stage unavailable.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2105": {
+      "m_bError": null,
+      "m_ID": "2105",
+      "m_mMessage": "\"Prophecy Unbound: Complete challenge within the same day.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2106": {
+      "m_bError": null,
+      "m_ID": "2106",
+      "m_mMessage": "\"Prophecy Unbound: Boss already defeated.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2107": {
+      "m_bError": null,
+      "m_ID": "2107",
+      "m_mMessage": "\"Prophecy Unbound: No Assaults left today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2108": {
+      "m_bError": null,
+      "m_ID": "2108",
+      "m_mMessage": "\"Prophecy Unbound: Challenge Attempts exhausted.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2109": {
+      "m_bError": null,
+      "m_ID": "2109",
+      "m_mMessage": "\"Prophecy Unbound: Vassal in use.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2110": {
+      "m_bError": null,
+      "m_ID": "2110",
+      "m_mMessage": "\"Prophecy Unbound: Boss undefeated.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2111": {
+      "m_bError": null,
+      "m_ID": "2111",
+      "m_mMessage": "\"Prophecy Unbound: Boss undefeated today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2112": {
+      "m_bError": null,
+      "m_ID": "2112",
+      "m_mMessage": "\"Prophecy Unbound: Quick Assault unavailable in Nightmare Mode.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2113": {
+      "m_bError": null,
+      "m_ID": "2113",
+      "m_mMessage": "\"Prophecy Unbound: Please select a stage.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2114": {
+      "m_bError": null,
+      "m_ID": "2114",
+      "m_mMessage": "\"Prophecy Unbound: Stage already selected.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2115": {
+      "m_bError": null,
+      "m_ID": "2115",
+      "m_mMessage": "\"Prophecy Unbound: Event in Settlement phase.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2151": {
+      "m_bError": null,
+      "m_ID": "2151",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2152": {
+      "m_bError": null,
+      "m_ID": "2152",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2153": {
+      "m_bError": null,
+      "m_ID": "2153",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2154": {
+      "m_bError": null,
+      "m_ID": "2154",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2155": {
+      "m_bError": null,
+      "m_ID": "2155",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2156": {
+      "m_bError": null,
+      "m_ID": "2156",
+      "m_mMessage": "\"Night of the Hunt: Buff Limit Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2157": {
+      "m_bError": null,
+      "m_ID": "2157",
+      "m_mMessage": "\"Night of the Hunt: Boss Unavailable\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2158": {
+      "m_bError": null,
+      "m_ID": "2158",
+      "m_mMessage": "\"Night of the Hunt: Boss Reward Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2159": {
+      "m_bError": null,
+      "m_ID": "2159",
+      "m_mMessage": "\"Night of the Hunt: Boss Reward Locked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2160": {
+      "m_bError": null,
+      "m_ID": "2160",
+      "m_mMessage": "\"Night of the Hunt: Buff Unavailable for the Boss\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2161": {
+      "m_bError": null,
+      "m_ID": "2161",
+      "m_mMessage": "\"Night of the Hunt: Unranked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2162": {
+      "m_bError": null,
+      "m_ID": "2162",
+      "m_mMessage": "\"Night of the Hunt: Settlement Control Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2163": {
+      "m_bError": null,
+      "m_ID": "2163",
+      "m_mMessage": "\"Night of the Hunt: Duplicate Rewards Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2400": {
+      "m_bError": null,
+      "m_ID": "2400",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2401": {
+      "m_bError": null,
+      "m_ID": "2401",
+      "m_mMessage": "\"Battle Group has not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2402": {
+      "m_bError": null,
+      "m_ID": "2402",
+      "m_mMessage": "\"Data Not Ready\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2403": {
+      "m_bError": null,
+      "m_ID": "2403",
+      "m_mMessage": "\"Not Ranked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2404": {
+      "m_bError": null,
+      "m_ID": "2404",
+      "m_mMessage": "\"Battle Groups are not the same.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2405": {
+      "m_bError": null,
+      "m_ID": "2405",
+      "m_mMessage": "\"Player's rank has changed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2408": {
+      "m_bError": null,
+      "m_ID": "2408",
+      "m_mMessage": "\"In the Defense Lineup for the Gauntlet.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2409": {
+      "m_bError": null,
+      "m_ID": "2409",
+      "m_mMessage": "\"Gauntlet is not open at this time.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2410": {
+      "m_bError": null,
+      "m_ID": "2410",
+      "m_mMessage": "\"No reward in Gauntlet.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2450": {
+      "m_bError": null,
+      "m_ID": "2450",
+      "m_mMessage": "\"Insufficient robots.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2451": {
+      "m_bError": null,
+      "m_ID": "2451",
+      "m_mMessage": "\"No opponent.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2452": {
+      "m_bError": null,
+      "m_ID": "2452",
+      "m_mMessage": "\"Season ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2453": {
+      "m_bError": null,
+      "m_ID": "2453",
+      "m_mMessage": "\"Not available\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2454": {
+      "m_bError": null,
+      "m_ID": "2454",
+      "m_mMessage": "\"Purchase Attempts Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2455": {
+      "m_bError": null,
+      "m_ID": "2455",
+      "m_mMessage": "\"Refresh in cooldown.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2456": {
+      "m_bError": null,
+      "m_ID": "2456",
+      "m_mMessage": "\"Unknown Opponent\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2457": {
+      "m_bError": null,
+      "m_ID": "2457",
+      "m_mMessage": "\"Season not active.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2458": {
+      "m_bError": null,
+      "m_ID": "2458",
+      "m_mMessage": "\"Cannot refresh for free.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2459": {
+      "m_bError": null,
+      "m_ID": "2459",
+      "m_mMessage": "\"Insufficient tickets.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2460": {
+      "m_bError": null,
+      "m_ID": "2460",
+      "m_mMessage": "\"Challenge ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2461": {
+      "m_bError": null,
+      "m_ID": "2461",
+      "m_mMessage": "\"Repeated initialization.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2500": {
+      "m_bError": null,
+      "m_ID": "2500",
+      "m_mMessage": "\"Insufficient Vassals.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2501": {
+      "m_bError": null,
+      "m_ID": "2501",
+      "m_mMessage": "\"Vassal level too high.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2502": {
+      "m_bError": null,
+      "m_ID": "2502",
+      "m_mMessage": "\"Vassal does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2503": {
+      "m_bError": null,
+      "m_ID": "2503",
+      "m_mMessage": "\"Already own this Vassal.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2504": {
+      "m_bError": null,
+      "m_ID": "2504",
+      "m_mMessage": "\"Incorrect Vassal Star Level.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2505": {
+      "m_bError": null,
+      "m_ID": "2505",
+      "m_mMessage": "\"Vassal List is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2506": {
+      "m_bError": null,
+      "m_ID": "2506",
+      "m_mMessage": "\"No Equipment in slot.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2507": {
+      "m_bError": null,
+      "m_ID": "2507",
+      "m_mMessage": "\"Incorrect Equipment Slot\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2508": {
+      "m_bError": null,
+      "m_ID": "2508",
+      "m_mMessage": "\"Equipment type not matched.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2509": {
+      "m_bError": null,
+      "m_ID": "2509",
+      "m_mMessage": "\"Vassals not equipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2510": {
+      "m_bError": null,
+      "m_ID": "2510",
+      "m_mMessage": "\"No need to reset Vassal level.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2511": {
+      "m_bError": null,
+      "m_ID": "2511",
+      "m_mMessage": "\"Vassal cannot break through.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2512": {
+      "m_bError": null,
+      "m_ID": "2512",
+      "m_mMessage": "\"Breakthrough maxed out.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2513": {
+      "m_bError": null,
+      "m_ID": "2513",
+      "m_mMessage": "\"Skill cannot be upgraded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2514": {
+      "m_bError": null,
+      "m_ID": "2514",
+      "m_mMessage": "\"Skill level maxed out.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2515": {
+      "m_bError": null,
+      "m_ID": "2515",
+      "m_mMessage": "\"LV. cannot be changed while in Bloodline Transfusion.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2516": {
+      "m_bError": null,
+      "m_ID": "2516",
+      "m_mMessage": "\"Unable to upgrade due to level limit.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2517": {
+      "m_bError": null,
+      "m_ID": "2517",
+      "m_mMessage": "\"No Changes Made\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2518": {
+      "m_bError": null,
+      "m_ID": "2518",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2519": {
+      "m_bError": null,
+      "m_ID": "2519",
+      "m_mMessage": "\"Costume doesn't belong to this Vassal.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2520": {
+      "m_bError": null,
+      "m_ID": "2520",
+      "m_mMessage": "\"Vassal's Costume unchanged.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2521": {
+      "m_bError": null,
+      "m_ID": "2521",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2522": {
+      "m_bError": null,
+      "m_ID": "2522",
+      "m_mMessage": "\"Main Vassal's LV. cannot be changed during Bloodline Transfusion.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2523": {
+      "m_bError": null,
+      "m_ID": "2523",
+      "m_mMessage": "\"Skill reset event is not available\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2524": {
+      "m_bError": null,
+      "m_ID": "2524",
+      "m_mMessage": "\"No skills available for reset\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2550": {
+      "m_bError": null,
+      "m_ID": "2550",
+      "m_mMessage": "\"Equipment Storage is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2551": {
+      "m_bError": null,
+      "m_ID": "2551",
+      "m_mMessage": "\"Equipment Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "2552": {
+      "m_bError": null,
+      "m_ID": "2552",
+      "m_mMessage": "\"Already Equipped\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2553": {
+      "m_bError": null,
+      "m_ID": "2553",
+      "m_mMessage": "\"Equipment level maxed out.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2554": {
+      "m_bError": null,
+      "m_ID": "2554",
+      "m_mMessage": "\"Equipment Enhancement error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2555": {
+      "m_bError": null,
+      "m_ID": "2555",
+      "m_mMessage": "\"Equipment Overloaded\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2556": {
+      "m_bError": null,
+      "m_ID": "2556",
+      "m_mMessage": "\"Equipment quality too low.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2557": {
+      "m_bError": null,
+      "m_ID": "2557",
+      "m_mMessage": "\"This equipment cannot be echoed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2558": {
+      "m_bError": null,
+      "m_ID": "2558",
+      "m_mMessage": "\"Not Equipped\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2559": {
+      "m_bError": null,
+      "m_ID": "2559",
+      "m_mMessage": "\"Equipment does not fit Vassal faction!\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2560": {
+      "m_bError": null,
+      "m_ID": "2560",
+      "m_mMessage": "\"Equipment not upgraded to max level.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2561": {
+      "m_bError": null,
+      "m_ID": "2561",
+      "m_mMessage": "\"Equipment not echoed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2562": {
+      "m_bError": null,
+      "m_ID": "2562",
+      "m_mMessage": "\"Equipment echo changes not saved.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2563": {
+      "m_bError": null,
+      "m_ID": "2563",
+      "m_mMessage": "\"No echo effects.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2564": {
+      "m_bError": null,
+      "m_ID": "2564",
+      "m_mMessage": "\"Equipment Echo not changed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2565": {
+      "m_bError": null,
+      "m_ID": "2565",
+      "m_mMessage": "\"All Blessings locked. Cannot refine.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "2566": {
+      "m_bError": null,
+      "m_ID": "2566",
+      "m_mMessage": "\"The selected enhancement materials contain duplicates.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2567": {
+      "m_bError": null,
+      "m_ID": "2567",
+      "m_mMessage": "\"Unlock 1 Blessing to reforge.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2600": {
+      "m_bError": null,
+      "m_ID": "2600",
+      "m_mMessage": "\"Main Vassal cannot enter Bloodline Transfusion.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2601": {
+      "m_bError": null,
+      "m_ID": "2601",
+      "m_mMessage": "\"Vassal already in Bloodline Transfusion.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2602": {
+      "m_bError": null,
+      "m_ID": "2602",
+      "m_mMessage": "\"Vassal not in Bloodline Transfusion.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2603": {
+      "m_bError": null,
+      "m_ID": "2603",
+      "m_mMessage": "\"Transfusion Slot not unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2604": {
+      "m_bError": null,
+      "m_ID": "2604",
+      "m_mMessage": "\"Transfusion Slot on cooldown.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2605": {
+      "m_bError": null,
+      "m_ID": "2605",
+      "m_mMessage": "\"Transfusion Slot unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2606": {
+      "m_bError": null,
+      "m_ID": "2606",
+      "m_mMessage": "\"Transfusion Slot full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2607": {
+      "m_bError": null,
+      "m_ID": "2607",
+      "m_mMessage": "\"Vassal already in Transfusion Slot.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2608": {
+      "m_bError": null,
+      "m_ID": "2608",
+      "m_mMessage": "\"Transfusion Slot not on cooldown.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2609": {
+      "m_bError": null,
+      "m_ID": "2609",
+      "m_mMessage": "\"Bloodline Transfusion upgraded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2610": {
+      "m_bError": null,
+      "m_ID": "2610",
+      "m_mMessage": "\"Insufficient Level for Bloodline Transfusion upgrade.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2611": {
+      "m_bError": null,
+      "m_ID": "2611",
+      "m_mMessage": "\"Bloodline Transfusion not upgraded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2612": {
+      "m_bError": null,
+      "m_ID": "2612",
+      "m_mMessage": "\"Bloodline Transfusion max level reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2630": {
+      "m_bError": null,
+      "m_ID": "2630",
+      "m_mMessage": "\"Tap Character Reward Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2631": {
+      "m_bError": null,
+      "m_ID": "2631",
+      "m_mMessage": "\"Covenant Level Cap\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2632": {
+      "m_bError": null,
+      "m_ID": "2632",
+      "m_mMessage": "\"Affinity unavailable for this Vassal.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2633": {
+      "m_bError": null,
+      "m_ID": "2633",
+      "m_mMessage": "\"Story Rewards claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2634": {
+      "m_bError": null,
+      "m_ID": "2634",
+      "m_mMessage": "\"Vassal Story locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2635": {
+      "m_bError": null,
+      "m_ID": "2635",
+      "m_mMessage": "\"Insufficient Affinity Level\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2636": {
+      "m_bError": null,
+      "m_ID": "2636",
+      "m_mMessage": "\"Vassal Story viewed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2637": {
+      "m_bError": null,
+      "m_ID": "2637",
+      "m_mMessage": "\"Character Touch Reward Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2638": {
+      "m_bError": null,
+      "m_ID": "2638",
+      "m_mMessage": "\"Council already held today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2639": {
+      "m_bError": null,
+      "m_ID": "2639",
+      "m_mMessage": "\"Not a valid topic for Council.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2640": {
+      "m_bError": null,
+      "m_ID": "2640",
+      "m_mMessage": "\"No Vassals invited to Council.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2641": {
+      "m_bError": null,
+      "m_ID": "2641",
+      "m_mMessage": "\"This Vassal cannot be invited.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2642": {
+      "m_bError": null,
+      "m_ID": "2642",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2643": {
+      "m_bError": null,
+      "m_ID": "2643",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2644": {
+      "m_bError": null,
+      "m_ID": "2644",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2645": {
+      "m_bError": null,
+      "m_ID": "2645",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2646": {
+      "m_bError": null,
+      "m_ID": "2646",
+      "m_mMessage": "\"Invalid Letter Replies\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2647": {
+      "m_bError": null,
+      "m_ID": "2647",
+      "m_mMessage": "\"Invalid Letter Reply ID\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2648": {
+      "m_bError": null,
+      "m_ID": "2648",
+      "m_mMessage": "\"Letter Task Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2650": {
+      "m_bError": null,
+      "m_ID": "2650",
+      "m_mMessage": "\"Event not open yet.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2651": {
+      "m_bError": null,
+      "m_ID": "2651",
+      "m_mMessage": "\"Event ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2652": {
+      "m_bError": null,
+      "m_ID": "2652",
+      "m_mMessage": "\"Herald limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2653": {
+      "m_bError": null,
+      "m_ID": "2653",
+      "m_mMessage": "\"This item cannot be used in the current event.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2654": {
+      "m_bError": null,
+      "m_ID": "2654",
+      "m_mMessage": "\"Pool configuration error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2655": {
+      "m_bError": null,
+      "m_ID": "2655",
+      "m_mMessage": "\"Pool not yet open.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2656": {
+      "m_bError": null,
+      "m_ID": "2656",
+      "m_mMessage": "\"Altar of Invocation: Locked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2657": {
+      "m_bError": null,
+      "m_ID": "2657",
+      "m_mMessage": "\"Altar of Invocation: Incorrect Quantity\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2658": {
+      "m_bError": null,
+      "m_ID": "2658",
+      "m_mMessage": "\"Altar of Invocation: Vassal Not Found\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2659": {
+      "m_bError": null,
+      "m_ID": "2659",
+      "m_mMessage": "\"Daily Herald attempts here maxed out.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2670": {
+      "m_bError": null,
+      "m_ID": "2670",
+      "m_mMessage": "\"Invalid Discount Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2671": {
+      "m_bError": null,
+      "m_ID": "2671",
+      "m_mMessage": "\"Discount Limit Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2672": {
+      "m_bError": null,
+      "m_ID": "2672",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2673": {
+      "m_bError": null,
+      "m_ID": "2673",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2700": {
+      "m_bError": null,
+      "m_ID": "2700",
+      "m_mMessage": "\"No Artifacts\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2701": {
+      "m_bError": null,
+      "m_ID": "2701",
+      "m_mMessage": "\"Artifact already equipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2702": {
+      "m_bError": null,
+      "m_ID": "2702",
+      "m_mMessage": "\"No Artifact equipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2703": {
+      "m_bError": null,
+      "m_ID": "2703",
+      "m_mMessage": "\"Cannot be equipped by more Vassals.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2704": {
+      "m_bError": null,
+      "m_ID": "2704",
+      "m_mMessage": "\"Max Artifact Level Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2705": {
+      "m_bError": null,
+      "m_ID": "2705",
+      "m_mMessage": "\"Selected Artifact already equipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2800": {
+      "m_bError": null,
+      "m_ID": "2800",
+      "m_mMessage": "\"Unlock Dispatch All first.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2801": {
+      "m_bError": null,
+      "m_ID": "2801",
+      "m_mMessage": "\"Unlock Claim All first.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2802": {
+      "m_bError": null,
+      "m_ID": "2802",
+      "m_mMessage": "\"Dispatch rewards claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2803": {
+      "m_bError": null,
+      "m_ID": "2803",
+      "m_mMessage": "\"Invalid dispatch location.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2804": {
+      "m_bError": null,
+      "m_ID": "2804",
+      "m_mMessage": "\"Event Dispatched\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2805": {
+      "m_bError": null,
+      "m_ID": "2805",
+      "m_mMessage": "\"Dispatch needs to be refreshed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2806": {
+      "m_bError": null,
+      "m_ID": "2806",
+      "m_mMessage": "\"Cannot be deployed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2807": {
+      "m_bError": null,
+      "m_ID": "2807",
+      "m_mMessage": "\"Vassal in use.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2808": {
+      "m_bError": null,
+      "m_ID": "2808",
+      "m_mMessage": "\"Dispatch limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2809": {
+      "m_bError": null,
+      "m_ID": "2809",
+      "m_mMessage": "\"Incorrect Faction.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2810": {
+      "m_bError": null,
+      "m_ID": "2810",
+      "m_mMessage": "\"Insufficient Level.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2811": {
+      "m_bError": null,
+      "m_ID": "2811",
+      "m_mMessage": "\"Not dispatched.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2812": {
+      "m_bError": null,
+      "m_ID": "2812",
+      "m_mMessage": "\"Dispatch complete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2813": {
+      "m_bError": null,
+      "m_ID": "2813",
+      "m_mMessage": "\"Dispatch incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2814": {
+      "m_bError": null,
+      "m_ID": "2814",
+      "m_mMessage": "\"Explore rewards claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2815": {
+      "m_bError": null,
+      "m_ID": "2815",
+      "m_mMessage": "\"Explore mode locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2816": {
+      "m_bError": null,
+      "m_ID": "2816",
+      "m_mMessage": "\"Uncollected\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2818": {
+      "m_bError": null,
+      "m_ID": "2818",
+      "m_mMessage": "\"Unwatched\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2819": {
+      "m_bError": null,
+      "m_ID": "2819",
+      "m_mMessage": "\"Unwatched\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2820": {
+      "m_bError": null,
+      "m_ID": "2820",
+      "m_mMessage": "\"Rewards already claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2821": {
+      "m_bError": null,
+      "m_ID": "2821",
+      "m_mMessage": "\"No Gallery Level Rewards Available\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2822": {
+      "m_bError": null,
+      "m_ID": "2822",
+      "m_mMessage": "\"Observatory Constellation Unlocked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2823": {
+      "m_bError": null,
+      "m_ID": "2823",
+      "m_mMessage": "\"Previous Constellation not fully observed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2824": {
+      "m_bError": null,
+      "m_ID": "2824",
+      "m_mMessage": "\"Observatory Constellation Locked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2825": {
+      "m_bError": null,
+      "m_ID": "2825",
+      "m_mMessage": "\"Stars Observed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2826": {
+      "m_bError": null,
+      "m_ID": "2826",
+      "m_mMessage": "\"Previous Stars not observed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2827": {
+      "m_bError": null,
+      "m_ID": "2827",
+      "m_mMessage": "\"Insufficient Star Observers\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2828": {
+      "m_bError": null,
+      "m_ID": "2828",
+      "m_mMessage": "\"Castle location doesn't need to be unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2829": {
+      "m_bError": null,
+      "m_ID": "2829",
+      "m_mMessage": "\"Castle Key location locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2830": {
+      "m_bError": null,
+      "m_ID": "2830",
+      "m_mMessage": "\"Castle Key location unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2831": {
+      "m_bError": null,
+      "m_ID": "2831",
+      "m_mMessage": "\"No pending Contingencies.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2832": {
+      "m_bError": null,
+      "m_ID": "2832",
+      "m_mMessage": "\"Previous Contingency Incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2833": {
+      "m_bError": null,
+      "m_ID": "2833",
+      "m_mMessage": "\"Story Stage Incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2834": {
+      "m_bError": null,
+      "m_ID": "2834",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2835": {
+      "m_bError": null,
+      "m_ID": "2835",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2941": {
+      "m_bError": null,
+      "m_ID": "2941",
+      "m_mMessage": "\"Required Stage locked in [Timeworn Mausoleum].\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2942": {
+      "m_bError": null,
+      "m_ID": "2942",
+      "m_mMessage": "\"Talent unlocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2943": {
+      "m_bError": null,
+      "m_ID": "2943",
+      "m_mMessage": "\"Required Talent locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2944": {
+      "m_bError": null,
+      "m_ID": "2944",
+      "m_mMessage": "\"Calculation Error in Timeworn Mausoleum.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2945": {
+      "m_bError": null,
+      "m_ID": "2945",
+      "m_mMessage": "\"Past Relic locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2946": {
+      "m_bError": null,
+      "m_ID": "2946",
+      "m_mMessage": "\"No Claimable Rewards for Timeworn Mausoleum.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2947": {
+      "m_bError": null,
+      "m_ID": "2947",
+      "m_mMessage": "\"Defeat Limit Exceeded\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2948": {
+      "m_bError": null,
+      "m_ID": "2948",
+      "m_mMessage": "\"Enemy Defeat Limit Exceeded\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2949": {
+      "m_bError": null,
+      "m_ID": "2949",
+      "m_mMessage": "\"R-Rarity Vassals cannot be deployed in Timeworn Mausoleum.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3000": {
+      "m_bError": null,
+      "m_ID": "3000",
+      "m_mMessage": "\"Event does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3001": {
+      "m_bError": null,
+      "m_ID": "3001",
+      "m_mMessage": "\"Event expired.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3002": {
+      "m_bError": null,
+      "m_ID": "3002",
+      "m_mMessage": "\"Event requirement not met.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3003": {
+      "m_bError": null,
+      "m_ID": "3003",
+      "m_mMessage": "\"Requirements not met. Unable to claim reward.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3004": {
+      "m_bError": null,
+      "m_ID": "3004",
+      "m_mMessage": "\"Reward already claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3005": {
+      "m_bError": null,
+      "m_ID": "3005",
+      "m_mMessage": "\"Event already completed. Do not show again.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3006": {
+      "m_bError": null,
+      "m_ID": "3006",
+      "m_mMessage": "\"Incorrect Event Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3007": {
+      "m_bError": null,
+      "m_ID": "3007",
+      "m_mMessage": "\"Event Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3008": {
+      "m_bError": null,
+      "m_ID": "3008",
+      "m_mMessage": "\"Event not available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3009": {
+      "m_bError": null,
+      "m_ID": "3009",
+      "m_mMessage": "\"Hide before event ends.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3010": {
+      "m_bError": null,
+      "m_ID": "3010",
+      "m_mMessage": "\"Event item purchased.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3011": {
+      "m_bError": null,
+      "m_ID": "3011",
+      "m_mMessage": "\"Incorrect Event Configuration\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3012": {
+      "m_bError": null,
+      "m_ID": "3012",
+      "m_mMessage": "\"Cannot claim reward at this time.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3013": {
+      "m_bError": null,
+      "m_ID": "3013",
+      "m_mMessage": "\"Reward claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3014": {
+      "m_bError": null,
+      "m_ID": "3014",
+      "m_mMessage": "\"Incorrect Event Version\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3015": {
+      "m_bError": null,
+      "m_ID": "3015",
+      "m_mMessage": "\"Redeem Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3016": {
+      "m_bError": null,
+      "m_ID": "3016",
+      "m_mMessage": "\"Event Started\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3017": {
+      "m_bError": null,
+      "m_ID": "3017",
+      "m_mMessage": "\"Reward claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3018": {
+      "m_bError": null,
+      "m_ID": "3018",
+      "m_mMessage": "\"Event not active.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3019": {
+      "m_bError": null,
+      "m_ID": "3019",
+      "m_mMessage": "\"Stage Requirements Not Met\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3020": {
+      "m_bError": null,
+      "m_ID": "3020",
+      "m_mMessage": "\"Tutorial Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3392": {
+      "m_bError": null,
+      "m_ID": "3392",
+      "m_mMessage": "\"Login Notification on cooldown.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3393": {
+      "m_bError": null,
+      "m_ID": "3393",
+      "m_mMessage": "\"Account creation time is not in the event duration.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3394": {
+      "m_bError": null,
+      "m_ID": "3394",
+      "m_mMessage": "\"Complete the required stage to link to the inviter's account.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3400": {
+      "m_bError": null,
+      "m_ID": "3400",
+      "m_mMessage": "\"Grand Reward Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3401": {
+      "m_bError": null,
+      "m_ID": "3401",
+      "m_mMessage": "\"Conditions Not Met\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3402": {
+      "m_bError": null,
+      "m_ID": "3402",
+      "m_mMessage": "\"Repeat Selection\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3403": {
+      "m_bError": null,
+      "m_ID": "3403",
+      "m_mMessage": "\"Grand Reward Not Selected\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3421": {
+      "m_bError": null,
+      "m_ID": "3421",
+      "m_mMessage": "\"Boss Challenge Attempt Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3422": {
+      "m_bError": null,
+      "m_ID": "3422",
+      "m_mMessage": "\"Boss Challenge Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3425": {
+      "m_bError": null,
+      "m_ID": "3425",
+      "m_mMessage": "\"Sign-in error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3426": {
+      "m_bError": null,
+      "m_ID": "3426",
+      "m_mMessage": "\"Daily Bundle refreshed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3427": {
+      "m_bError": null,
+      "m_ID": "3427",
+      "m_mMessage": "\"Daily Bundle refresh limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3428": {
+      "m_bError": null,
+      "m_ID": "3428",
+      "m_mMessage": "\"Daily Bundle refresh not available.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3429": {
+      "m_bError": null,
+      "m_ID": "3429",
+      "m_mMessage": "\"Cannot claim First Top-up Bundle.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3430": {
+      "m_bError": null,
+      "m_ID": "3430",
+      "m_mMessage": "\"First Recharge Bundle claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3431": {
+      "m_bError": null,
+      "m_ID": "3431",
+      "m_mMessage": "\"Not enough copies meet the requirement.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3432": {
+      "m_bError": null,
+      "m_ID": "3432",
+      "m_mMessage": "\"Limited Item error.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3433": {
+      "m_bError": null,
+      "m_ID": "3433",
+      "m_mMessage": "\"Limited item not selected.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3440": {
+      "m_bError": null,
+      "m_ID": "3440",
+      "m_mMessage": "\"Rebate issued to character.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3441": {
+      "m_bError": null,
+      "m_ID": "3441",
+      "m_mMessage": "\"ID not eligible for a rebate.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3442": {
+      "m_bError": null,
+      "m_ID": "3442",
+      "m_mMessage": "\"Rebate issued to test character.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3443": {
+      "m_bError": null,
+      "m_ID": "3443",
+      "m_mMessage": "\"Rebate issued to test account.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3444": {
+      "m_bError": null,
+      "m_ID": "3444",
+      "m_mMessage": "\"Rebate issued to account.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3445": {
+      "m_bError": null,
+      "m_ID": "3445",
+      "m_mMessage": "\"Rebate issued to 3rd-party account.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3446": {
+      "m_bError": null,
+      "m_ID": "3446",
+      "m_mMessage": "\"Must Top-up to receive rebate.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4000": {
+      "m_bError": null,
+      "m_ID": "4000",
+      "m_mMessage": "\"Achievement reward claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4001": {
+      "m_bError": null,
+      "m_ID": "4001",
+      "m_mMessage": "\"You have not reached the Achievement level to claim the next reward.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4400": {
+      "m_bError": null,
+      "m_ID": "4400",
+      "m_mMessage": "\"No Perennial Bands to claim.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4401": {
+      "m_bError": null,
+      "m_ID": "4401",
+      "m_mMessage": "\"You are not friends with the player.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4402": {
+      "m_bError": null,
+      "m_ID": "4402",
+      "m_mMessage": "\"Perennial Band already sent.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4403": {
+      "m_bError": null,
+      "m_ID": "4403",
+      "m_mMessage": "\"Friend request has been withdrawn.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4404": {
+      "m_bError": null,
+      "m_ID": "4404",
+      "m_mMessage": "\"Friend List is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4405": {
+      "m_bError": null,
+      "m_ID": "4405",
+      "m_mMessage": "\"The player's Friend List is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4406": {
+      "m_bError": null,
+      "m_ID": "4406",
+      "m_mMessage": "\"You are already friends.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4407": {
+      "m_bError": null,
+      "m_ID": "4407",
+      "m_mMessage": "\"Cannot set yourself as the target.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4408": {
+      "m_bError": null,
+      "m_ID": "4408",
+      "m_mMessage": "\"Perennial Band limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4409": {
+      "m_bError": null,
+      "m_ID": "4409",
+      "m_mMessage": "\"Friend request declined.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4410": {
+      "m_bError": null,
+      "m_ID": "4410",
+      "m_mMessage": "\"Friend's Daily Friendship Hearts limit reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4411": {
+      "m_bError": null,
+      "m_ID": "4411",
+      "m_mMessage": "\"Lord does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4589": {
+      "m_bError": null,
+      "m_ID": "4589",
+      "m_mMessage": "\"Not Ranked\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4590": {
+      "m_bError": null,
+      "m_ID": "4590",
+      "m_mMessage": "\"Blood Moon Rising: Objective Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4591": {
+      "m_bError": null,
+      "m_ID": "4591",
+      "m_mMessage": "\"Blood Moon Rising: Blood Hunt Rewards Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4690": {
+      "m_bError": null,
+      "m_ID": "4690",
+      "m_mMessage": "\"Abnormal top-up detected on current device.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4691": {
+      "m_bError": null,
+      "m_ID": "4691",
+      "m_mMessage": "\"Item purchase limit has been reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4692": {
+      "m_bError": null,
+      "m_ID": "4692",
+      "m_mMessage": "\"Top-up disabled due to security concerns about this IP address.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4750": {
+      "m_bError": null,
+      "m_ID": "4750",
+      "m_mMessage": "\"Failed to add to Block List.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4751": {
+      "m_bError": null,
+      "m_ID": "4751",
+      "m_mMessage": "\"Failed to remove from Block List.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4752": {
+      "m_bError": null,
+      "m_ID": "4752",
+      "m_mMessage": "\"You've been blocked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4753": {
+      "m_bError": null,
+      "m_ID": "4753",
+      "m_mMessage": "\"You've blocked player.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "4754": {
+      "m_bError": null,
+      "m_ID": "4754",
+      "m_mMessage": "\"Decline Strangers\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "5642": {
+      "m_bError": null,
+      "m_ID": "5642",
+      "m_mMessage": "\"Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "5643": {
+      "m_bError": null,
+      "m_ID": "5643",
+      "m_mMessage": "\"Event Closed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "5644": {
+      "m_bError": null,
+      "m_ID": "5644",
+      "m_mMessage": "\"Too Many Operations\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "5645": {
+      "m_bError": null,
+      "m_ID": "5645",
+      "m_mMessage": "\"Exceeded single-time limit.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6200": {
+      "m_bError": null,
+      "m_ID": "6200",
+      "m_mMessage": "\"Player in battle.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6201": {
+      "m_bError": null,
+      "m_ID": "6201",
+      "m_mMessage": "\"Player is busy.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6202": {
+      "m_bError": null,
+      "m_ID": "6202",
+      "m_mMessage": "\"Invalid Matchmaking Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6203": {
+      "m_bError": null,
+      "m_ID": "6203",
+      "m_mMessage": "\"Still being kicked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6204": {
+      "m_bError": null,
+      "m_ID": "6204",
+      "m_mMessage": "\"Team does not support.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6205": {
+      "m_bError": null,
+      "m_ID": "6205",
+      "m_mMessage": "\"Battle failed to start.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6206": {
+      "m_bError": null,
+      "m_ID": "6206",
+      "m_mMessage": "\"Invalid Status\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6216": {
+      "m_bError": null,
+      "m_ID": "6216",
+      "m_mMessage": "\"Too Many Operations\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6230": {
+      "m_bError": null,
+      "m_ID": "6230",
+      "m_mMessage": "\"Insufficient Strategy Points\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6251": {
+      "m_bError": null,
+      "m_ID": "6251",
+      "m_mMessage": "\"You are not the host.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6252": {
+      "m_bError": null,
+      "m_ID": "6252",
+      "m_mMessage": "\"You cannot kick yourself out.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6253": {
+      "m_bError": null,
+      "m_ID": "6253",
+      "m_mMessage": "\"Already in the lobby.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6254": {
+      "m_bError": null,
+      "m_ID": "6254",
+      "m_mMessage": "\"Lobby does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6255": {
+      "m_bError": null,
+      "m_ID": "6255",
+      "m_mMessage": "\"Lobby is full.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6256": {
+      "m_bError": null,
+      "m_ID": "6256",
+      "m_mMessage": "\"Failed to save Battle Record.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6301": {
+      "m_bError": null,
+      "m_ID": "6301",
+      "m_mMessage": "\"Survey Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6302": {
+      "m_bError": null,
+      "m_ID": "6302",
+      "m_mMessage": "\"Survey Already Answered\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6303": {
+      "m_bError": null,
+      "m_ID": "6303",
+      "m_mMessage": "\"Survey ID Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6304": {
+      "m_bError": null,
+      "m_ID": "6304",
+      "m_mMessage": "\"Reward Display Type Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6305": {
+      "m_bError": null,
+      "m_ID": "6305",
+      "m_mMessage": "\"Survey Not Answered\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6306": {
+      "m_bError": null,
+      "m_ID": "6306",
+      "m_mMessage": "\"Survey Rewards Already Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "6351": {
+      "m_bError": null,
+      "m_ID": "6351",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6352": {
+      "m_bError": null,
+      "m_ID": "6352",
+      "m_mMessage": "\"Insufficient Vassals\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6353": {
+      "m_bError": null,
+      "m_ID": "6353",
+      "m_mMessage": "\"Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6401": {
+      "m_bError": null,
+      "m_ID": "6401",
+      "m_mMessage": "\"GSDK Offensive Words Filter Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6402": {
+      "m_bError": null,
+      "m_ID": "6402",
+      "m_mMessage": "\"Max level reached.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6403": {
+      "m_bError": null,
+      "m_ID": "6403",
+      "m_mMessage": "\"Insufficient Bloodline Transfusion LV.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6501": {
+      "m_bError": null,
+      "m_ID": "6501",
+      "m_mMessage": "\"Lamia does not exist.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6502": {
+      "m_bError": null,
+      "m_ID": "6502",
+      "m_mMessage": "\"Lamia Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6503": {
+      "m_bError": null,
+      "m_ID": "6503",
+      "m_mMessage": "\"Lamia Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6504": {
+      "m_bError": null,
+      "m_ID": "6504",
+      "m_mMessage": "\"No Claimable Rewards\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6505": {
+      "m_bError": null,
+      "m_ID": "6505",
+      "m_mMessage": "\"Task reward cannot be claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6506": {
+      "m_bError": null,
+      "m_ID": "6506",
+      "m_mMessage": "\"Story Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6507": {
+      "m_bError": null,
+      "m_ID": "6507",
+      "m_mMessage": "\"No Claimable Progress Rewards\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6508": {
+      "m_bError": null,
+      "m_ID": "6508",
+      "m_mMessage": "\"Previous Stage incomplete.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6509": {
+      "m_bError": null,
+      "m_ID": "6509",
+      "m_mMessage": "\"Insufficient Challenge Attempts.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6510": {
+      "m_bError": null,
+      "m_ID": "6510",
+      "m_mMessage": "\"Stage Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6511": {
+      "m_bError": null,
+      "m_ID": "6511",
+      "m_mMessage": "\"Stage Cleared\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6512": {
+      "m_bError": null,
+      "m_ID": "6512",
+      "m_mMessage": "\"Cannot attempt repeatedly.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6513": {
+      "m_bError": null,
+      "m_ID": "6513",
+      "m_mMessage": "\"Invalid Stage Time\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6514": {
+      "m_bError": null,
+      "m_ID": "6514",
+      "m_mMessage": "\"Lamia Event not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6515": {
+      "m_bError": null,
+      "m_ID": "6515",
+      "m_mMessage": "\"Lamia Sub-Event not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6516": {
+      "m_bError": null,
+      "m_ID": "6516",
+      "m_mMessage": "\"Lamia Stage not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6551": {
+      "m_bError": null,
+      "m_ID": "6551",
+      "m_mMessage": "\"Team Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6552": {
+      "m_bError": null,
+      "m_ID": "6552",
+      "m_mMessage": "\"Wrong Team Number\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6553": {
+      "m_bError": null,
+      "m_ID": "6553",
+      "m_mMessage": "\"Season ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6554": {
+      "m_bError": null,
+      "m_ID": "6554",
+      "m_mMessage": "\"Round ended.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6555": {
+      "m_bError": null,
+      "m_ID": "6555",
+      "m_mMessage": "\"Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6556": {
+      "m_bError": null,
+      "m_ID": "6556",
+      "m_mMessage": "\"Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6560": {
+      "m_bError": null,
+      "m_ID": "6560",
+      "m_mMessage": "\"Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6561": {
+      "m_bError": null,
+      "m_ID": "6561",
+      "m_mMessage": "\"Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6562": {
+      "m_bError": null,
+      "m_ID": "6562",
+      "m_mMessage": "\"Status error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6601": {
+      "m_bError": null,
+      "m_ID": "6601",
+      "m_mMessage": "\"Stage locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6602": {
+      "m_bError": null,
+      "m_ID": "6602",
+      "m_mMessage": "\"Chapter locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6603": {
+      "m_bError": null,
+      "m_ID": "6603",
+      "m_mMessage": "\"Round move limit exceeded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6604": {
+      "m_bError": null,
+      "m_ID": "6604",
+      "m_mMessage": "\"Round limit exceeded.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6605": {
+      "m_bError": null,
+      "m_ID": "6605",
+      "m_mMessage": "\"Stage not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6606": {
+      "m_bError": null,
+      "m_ID": "6606",
+      "m_mMessage": "\"Key guardian not defeated!\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6607": {
+      "m_bError": null,
+      "m_ID": "6607",
+      "m_mMessage": "\"Round moves empty.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6608": {
+      "m_bError": null,
+      "m_ID": "6608",
+      "m_mMessage": "\"Chapter not cleared.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6609": {
+      "m_bError": null,
+      "m_ID": "6609",
+      "m_mMessage": "\"Chapter rewards claimed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6610": {
+      "m_bError": null,
+      "m_ID": "6610",
+      "m_mMessage": "\"Selected monster defeated!\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6621": {
+      "m_bError": null,
+      "m_ID": "6621",
+      "m_mMessage": "\"Reward Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6622": {
+      "m_bError": null,
+      "m_ID": "6622",
+      "m_mMessage": "\"Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6623": {
+      "m_bError": null,
+      "m_ID": "6623",
+      "m_mMessage": "\"Time Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6631": {
+      "m_bError": null,
+      "m_ID": "6631",
+      "m_mMessage": "\"Configuration Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6632": {
+      "m_bError": null,
+      "m_ID": "6632",
+      "m_mMessage": "\"Purchase Limit Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6633": {
+      "m_bError": null,
+      "m_ID": "6633",
+      "m_mMessage": "\"All Rewards Claimed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6634": {
+      "m_bError": null,
+      "m_ID": "6634",
+      "m_mMessage": "\"Limited Purchase Time\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6641": {
+      "m_bError": null,
+      "m_ID": "6641",
+      "m_mMessage": "\"Battle Pass Cannot Be Redeemed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6642": {
+      "m_bError": null,
+      "m_ID": "6642",
+      "m_mMessage": "\"Battle Pass Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1": {
+      "m_bError": null,
+      "m_ID": "-1",
+      "m_mMessage": "\"Unknown Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-2": {
+      "m_bError": null,
+      "m_ID": "-2",
+      "m_mMessage": "\"Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-3": {
+      "m_bError": null,
+      "m_ID": "-3",
+      "m_mMessage": "\"Protocol Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-4": {
+      "m_bError": null,
+      "m_ID": "-4",
+      "m_mMessage": "\"Unable to Parse\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-5": {
+      "m_bError": null,
+      "m_ID": "-5",
+      "m_mMessage": "\"Unable to Authenticate\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-6": {
+      "m_bError": null,
+      "m_ID": "-6",
+      "m_mMessage": "\"No Account\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-7": {
+      "m_bError": null,
+      "m_ID": "-7",
+      "m_mMessage": "\"No Account Name\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-8": {
+      "m_bError": null,
+      "m_ID": "-8",
+      "m_mMessage": "\"Session Expired\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-9": {
+      "m_bError": null,
+      "m_ID": "-9",
+      "m_mMessage": "\"Server Under Maintenance\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-10": {
+      "m_bError": null,
+      "m_ID": "-10",
+      "m_mMessage": "\"Risky GM Restriction\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-11": {
+      "m_bError": null,
+      "m_ID": "-11",
+      "m_mMessage": "\"Account Name Already Exists\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "-12": {
+      "m_bError": null,
+      "m_ID": "-12",
+      "m_mMessage": "\"Login Database Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-13": {
+      "m_bError": null,
+      "m_ID": "-13",
+      "m_mMessage": "\"Channel Already Exists\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-14": {
+      "m_bError": null,
+      "m_ID": "-14",
+      "m_mMessage": "\"Channel Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-15": {
+      "m_bError": null,
+      "m_ID": "-15",
+      "m_mMessage": "\"Channel Address Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-16": {
+      "m_bError": null,
+      "m_ID": "-16",
+      "m_mMessage": "\"Account Bound\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-17": {
+      "m_bError": null,
+      "m_ID": "-17",
+      "m_mMessage": "\"Account Binding Authentication Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-18": {
+      "m_bError": null,
+      "m_ID": "-18",
+      "m_mMessage": "\"APNS Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-19": {
+      "m_bError": null,
+      "m_ID": "-19",
+      "m_mMessage": "\"Failed to Send Protocol\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-20": {
+      "m_bError": null,
+      "m_ID": "-20",
+      "m_mMessage": "\"Outdated Client Version\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-21": {
+      "m_bError": null,
+      "m_ID": "-21",
+      "m_mMessage": "\"Server Has Been Merged\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-22": {
+      "m_bError": null,
+      "m_ID": "-22",
+      "m_mMessage": "\"Region locked.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-23": {
+      "m_bError": null,
+      "m_ID": "-23",
+      "m_mMessage": "\"Deleted Server\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-24": {
+      "m_bError": null,
+      "m_ID": "-24",
+      "m_mMessage": "\"Incorrect Verification Code\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-25": {
+      "m_bError": null,
+      "m_ID": "-25",
+      "m_mMessage": "\"Already Registered\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-26": {
+      "m_bError": null,
+      "m_ID": "-26",
+      "m_mMessage": "\"Incorrect Password\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-27": {
+      "m_bError": null,
+      "m_ID": "-27",
+      "m_mMessage": "\"Incorrect Account Name\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-28": {
+      "m_bError": null,
+      "m_ID": "-28",
+      "m_mMessage": "\"Service Closed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-100": {
+      "m_bError": null,
+      "m_ID": "-100",
+      "m_mMessage": "\"Server ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-101": {
+      "m_bError": null,
+      "m_ID": "-101",
+      "m_mMessage": "\"Server Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-102": {
+      "m_bError": null,
+      "m_ID": "-102",
+      "m_mMessage": "\"Server Already Exists\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-103": {
+      "m_bError": null,
+      "m_ID": "-103",
+      "m_mMessage": "\"Server Database Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-104": {
+      "m_bError": null,
+      "m_ID": "-104",
+      "m_mMessage": "\"Server Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-105": {
+      "m_bError": null,
+      "m_ID": "-105",
+      "m_mMessage": "\"Version outdated\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-106": {
+      "m_bError": null,
+      "m_ID": "-106",
+      "m_mMessage": "\"Version too new\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-107": {
+      "m_bError": null,
+      "m_ID": "-107",
+      "m_mMessage": "\"Region Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-108": {
+      "m_bError": null,
+      "m_ID": "-108",
+      "m_mMessage": "\"Region Already Exists\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-109": {
+      "m_bError": null,
+      "m_ID": "-109",
+      "m_mMessage": "\"Region ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-121": {
+      "m_bError": null,
+      "m_ID": "-121",
+      "m_mMessage": "\"Announcement ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-122": {
+      "m_bError": null,
+      "m_ID": "-122",
+      "m_mMessage": "\"Announcement Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-124": {
+      "m_bError": null,
+      "m_ID": "-124",
+      "m_mMessage": "\"Announcement Database Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-126": {
+      "m_bError": null,
+      "m_ID": "-126",
+      "m_mMessage": "\"Announcement Time Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-127": {
+      "m_bError": null,
+      "m_ID": "-127",
+      "m_mMessage": "\"Notification ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-128": {
+      "m_bError": null,
+      "m_ID": "-128",
+      "m_mMessage": "\"Notification Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-130": {
+      "m_bError": null,
+      "m_ID": "-130",
+      "m_mMessage": "\"Notification Time Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-202": {
+      "m_bError": null,
+      "m_ID": "-202",
+      "m_mMessage": "\"ID Already Exists\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-203": {
+      "m_bError": null,
+      "m_ID": "-203",
+      "m_mMessage": "\"Connection Not In Manager\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-204": {
+      "m_bError": null,
+      "m_ID": "-204",
+      "m_mMessage": "\"Server ID Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-301": {
+      "m_bError": null,
+      "m_ID": "-301",
+      "m_mMessage": "\"Project Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-302": {
+      "m_bError": null,
+      "m_ID": "-302",
+      "m_mMessage": "\"Invalid Redeem Code ID\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-306": {
+      "m_bError": null,
+      "m_ID": "-306",
+      "m_mMessage": "\"Redeem Code has no more uses.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-307": {
+      "m_bError": null,
+      "m_ID": "-307",
+      "m_mMessage": "\"Database Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-308": {
+      "m_bError": null,
+      "m_ID": "-308",
+      "m_mMessage": "\"Repeated Redeem Code.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-309": {
+      "m_bError": null,
+      "m_ID": "-309",
+      "m_mMessage": "\"Insufficient Redeem Codes.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-321": {
+      "m_bError": null,
+      "m_ID": "-321",
+      "m_mMessage": "\"Group Not Found\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-401": {
+      "m_bError": null,
+      "m_ID": "-401",
+      "m_mMessage": "\"Shared Memory Acquisition Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-402": {
+      "m_bError": null,
+      "m_ID": "-402",
+      "m_mMessage": "\"Shared Memory Setup Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-403": {
+      "m_bError": null,
+      "m_ID": "-403",
+      "m_mMessage": "\"Database Initialization Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-408": {
+      "m_bError": null,
+      "m_ID": "-408",
+      "m_mMessage": "\"Battle Record Memory Initialization Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-409": {
+      "m_bError": null,
+      "m_ID": "-409",
+      "m_mMessage": "\"Account deleted.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-501": {
+      "m_bError": null,
+      "m_ID": "-501",
+      "m_mMessage": "\"Mail ID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-502": {
+      "m_bError": null,
+      "m_ID": "-502",
+      "m_mMessage": "\"Mail Database Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-504": {
+      "m_bError": null,
+      "m_ID": "-504",
+      "m_mMessage": "\"Mail Not Directed to Server\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-601": {
+      "m_bError": null,
+      "m_ID": "-601",
+      "m_mMessage": "\"Forwarding Target Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-602": {
+      "m_bError": null,
+      "m_ID": "-602",
+      "m_mMessage": "\"Forwarding Target Setup Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-603": {
+      "m_bError": null,
+      "m_ID": "-603",
+      "m_mMessage": "\"Forwarding Server Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-604": {
+      "m_bError": null,
+      "m_ID": "-604",
+      "m_mMessage": "\"Forwarding Target UID Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-701": {
+      "m_bError": null,
+      "m_ID": "-701",
+      "m_mMessage": "\"Order Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-702": {
+      "m_bError": null,
+      "m_ID": "-702",
+      "m_mMessage": "\"Repeat Order\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-703": {
+      "m_bError": null,
+      "m_ID": "-703",
+      "m_mMessage": "\"Order Expired\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-704": {
+      "m_bError": null,
+      "m_ID": "-704",
+      "m_mMessage": "\"Order Verification Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-705": {
+      "m_bError": null,
+      "m_ID": "-705",
+      "m_mMessage": "\"Order Authentication Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-706": {
+      "m_bError": null,
+      "m_ID": "-706",
+      "m_mMessage": "\"Order Confirmation Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-710": {
+      "m_bError": null,
+      "m_ID": "-710",
+      "m_mMessage": "\"Apple Pay Verification Network Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-712": {
+      "m_bError": null,
+      "m_ID": "-712",
+      "m_mMessage": "\"Apple Pay Verification Name Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-720": {
+      "m_bError": null,
+      "m_ID": "-720",
+      "m_mMessage": "\"Google Pay Purchase Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-721": {
+      "m_bError": null,
+      "m_ID": "-721",
+      "m_mMessage": "\"Google Pay Purchase Status Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-722": {
+      "m_bError": null,
+      "m_ID": "-722",
+      "m_mMessage": "\"Google Pay Purchase Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-723": {
+      "m_bError": null,
+      "m_ID": "-723",
+      "m_mMessage": "\"Google Pay Name Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-793": {
+      "m_bError": null,
+      "m_ID": "-793",
+      "m_mMessage": "\"Incorrect Payment Channel Currency\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-794": {
+      "m_bError": null,
+      "m_ID": "-794",
+      "m_mMessage": "\"Incorrect Payment Channel Price\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-901": {
+      "m_bError": null,
+      "m_ID": "-901",
+      "m_mMessage": "\"IDIP Request is Empty\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-902": {
+      "m_bError": null,
+      "m_ID": "-902",
+      "m_mMessage": "\"IDIP Packet Parsing Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-903": {
+      "m_bError": null,
+      "m_ID": "-903",
+      "m_mMessage": "\"IDIP Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-904": {
+      "m_bError": null,
+      "m_ID": "-904",
+      "m_mMessage": "\"IDIP requires that when a Lord does not correspond to the Openid, the error code must be 1.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-905": {
+      "m_bError": null,
+      "m_ID": "-905",
+      "m_mMessage": "\"Incorrect IDIP Forwarding Server\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-906": {
+      "m_bError": null,
+      "m_ID": "-906",
+      "m_mMessage": "\"Incorrect IDIP Zone\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-907": {
+      "m_bError": null,
+      "m_ID": "-907",
+      "m_mMessage": "\"IDIP Command Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1001": {
+      "m_bError": null,
+      "m_ID": "-1001",
+      "m_mMessage": "\"GCM Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1002": {
+      "m_bError": null,
+      "m_ID": "-1002",
+      "m_mMessage": "\"CGM Push Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1006": {
+      "m_bError": null,
+      "m_ID": "-1006",
+      "m_mMessage": "\"FCM Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1007": {
+      "m_bError": null,
+      "m_ID": "-1007",
+      "m_mMessage": "\"FCM Push Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1008": {
+      "m_bError": null,
+      "m_ID": "-1008",
+      "m_mMessage": "\"FBP Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1101": {
+      "m_bError": null,
+      "m_ID": "-1101",
+      "m_mMessage": "\"Unknown Report Type\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1201": {
+      "m_bError": null,
+      "m_ID": "-1201",
+      "m_mMessage": "\"Invalid Lord Expedition Data\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1202": {
+      "m_bError": null,
+      "m_ID": "-1202",
+      "m_mMessage": "\"Unused Lord Expedition Data\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1301": {
+      "m_bError": null,
+      "m_ID": "-1301",
+      "m_mMessage": "\"Exceeded Load\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1401": {
+      "m_bError": null,
+      "m_ID": "-1401",
+      "m_mMessage": "\"Table Name Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1402": {
+      "m_bError": null,
+      "m_ID": "-1402",
+      "m_mMessage": "\"Failed to Load Database\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1403": {
+      "m_bError": null,
+      "m_ID": "-1403",
+      "m_mMessage": "\"Field Name Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1404": {
+      "m_bError": null,
+      "m_ID": "-1404",
+      "m_mMessage": "\"Field Inconsistency\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1501": {
+      "m_bError": null,
+      "m_ID": "-1501",
+      "m_mMessage": "\"Alt Account Deletion still in Progress\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1502": {
+      "m_bError": null,
+      "m_ID": "-1502",
+      "m_mMessage": "\"No Alt Account Deletion Created\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1503": {
+      "m_bError": null,
+      "m_ID": "-1503",
+      "m_mMessage": "\"Alt Account Deletion Stopped\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1504": {
+      "m_bError": null,
+      "m_ID": "-1504",
+      "m_mMessage": "\"Alt Account Deletion Completed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1505": {
+      "m_bError": null,
+      "m_ID": "-1505",
+      "m_mMessage": "\"Alt Account Deletion in Progress\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1506": {
+      "m_bError": null,
+      "m_ID": "-1506",
+      "m_mMessage": "\"Alt Account Deletion Paused\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1507": {
+      "m_bError": null,
+      "m_ID": "-1507",
+      "m_mMessage": "\"Alt Account Deletion Not Started\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1508": {
+      "m_bError": null,
+      "m_ID": "-1508",
+      "m_mMessage": "\"MiscRole Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1509": {
+      "m_bError": null,
+      "m_ID": "-1509",
+      "m_mMessage": "\"Role is Online\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1510": {
+      "m_bError": null,
+      "m_ID": "-1510",
+      "m_mMessage": "\"MiscRole Condition Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1511": {
+      "m_bError": null,
+      "m_ID": "-1511",
+      "m_mMessage": "\"BlobRole Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1512": {
+      "m_bError": null,
+      "m_ID": "-1512",
+      "m_mMessage": "\"BlobRole Condition Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1513": {
+      "m_bError": null,
+      "m_ID": "-1513",
+      "m_mMessage": "\"BlobRole Deserialization Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1514": {
+      "m_bError": null,
+      "m_ID": "-1514",
+      "m_mMessage": "\"Role is in Memory\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1517": {
+      "m_bError": null,
+      "m_ID": "-1517",
+      "m_mMessage": "\"Clear Login Time cannot be less than 1 month\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1518": {
+      "m_bError": null,
+      "m_ID": "-1518",
+      "m_mMessage": "\"Clear Account Level cannot go higher than 10\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1600": {
+      "m_bError": null,
+      "m_ID": "-1600",
+      "m_mMessage": "\"Unable to Download CSharp List\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1601": {
+      "m_bError": null,
+      "m_ID": "-1601",
+      "m_mMessage": "\"Unable to Download CSharpDll\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1602": {
+      "m_bError": null,
+      "m_ID": "-1602",
+      "m_mMessage": "\"hostfxr Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-29": {
+      "m_bError": null,
+      "m_ID": "-29",
+      "m_mMessage": "\"Abnormal data.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-30": {
+      "m_bError": null,
+      "m_ID": "-30",
+      "m_mMessage": "\"Account ID increases too much.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-303": {
+      "m_bError": null,
+      "m_ID": "-303",
+      "m_mMessage": "\"Redeem Code Quantity Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-304": {
+      "m_bError": null,
+      "m_ID": "-304",
+      "m_mMessage": "\"Redeem Code Method Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-305": {
+      "m_bError": null,
+      "m_ID": "-305",
+      "m_mMessage": "\"Redeem Code Generation Method Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1009": {
+      "m_bError": null,
+      "m_ID": "-1009",
+      "m_mMessage": "\"MSDK Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1010": {
+      "m_bError": null,
+      "m_ID": "-1010",
+      "m_mMessage": "\"MSDK push failed.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-730": {
+      "m_bError": null,
+      "m_ID": "-730",
+      "m_mMessage": "\"MSDK Payment Signature Verification Failure\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-731": {
+      "m_bError": null,
+      "m_ID": "-731",
+      "m_mMessage": "\"MSDK Payment App Name Mismatch\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-818": {
+      "m_bError": null,
+      "m_ID": "-818",
+      "m_mMessage": "\"MSDK Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-110": {
+      "m_bError": null,
+      "m_ID": "-110",
+      "m_mMessage": "\"Review Server Version Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-111": {
+      "m_bError": null,
+      "m_ID": "-111",
+      "m_mMessage": "\"Game version higher than test server.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1603": {
+      "m_bError": null,
+      "m_ID": "-1603",
+      "m_mMessage": "\"Error (#C)\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-740": {
+      "m_bError": null,
+      "m_ID": "-740",
+      "m_mMessage": "\"QuickSDK Payment Method Not Found\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-741": {
+      "m_bError": null,
+      "m_ID": "-741",
+      "m_mMessage": "\"QuickSDK Payment Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-819": {
+      "m_bError": null,
+      "m_ID": "-819",
+      "m_mMessage": "\"QuickSDK Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-820": {
+      "m_bError": null,
+      "m_ID": "-820",
+      "m_mMessage": "\"QuickSDK Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-821": {
+      "m_bError": null,
+      "m_ID": "-821",
+      "m_mMessage": "\"QuickGame Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-822": {
+      "m_bError": null,
+      "m_ID": "-822",
+      "m_mMessage": "\"QuickGame Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-823": {
+      "m_bError": null,
+      "m_ID": "-823",
+      "m_mMessage": "\"QuickGame PC Service Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-824": {
+      "m_bError": null,
+      "m_ID": "-824",
+      "m_mMessage": "\"QuickGame PC Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-796": {
+      "m_bError": null,
+      "m_ID": "-796",
+      "m_mMessage": "\"DMM Failed to retrieve order.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-797": {
+      "m_bError": null,
+      "m_ID": "-797",
+      "m_mMessage": "\"Payment Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-798": {
+      "m_bError": null,
+      "m_ID": "-798",
+      "m_mMessage": "\"Extra Parameter Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-799": {
+      "m_bError": null,
+      "m_ID": "-799",
+      "m_mMessage": "\"OAuth Verification Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1701": {
+      "m_bError": null,
+      "m_ID": "-1701",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1702": {
+      "m_bError": null,
+      "m_ID": "-1702",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1703": {
+      "m_bError": null,
+      "m_ID": "-1703",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1704": {
+      "m_bError": null,
+      "m_ID": "-1704",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1705": {
+      "m_bError": null,
+      "m_ID": "-1705",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1706": {
+      "m_bError": null,
+      "m_ID": "-1706",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1707": {
+      "m_bError": null,
+      "m_ID": "-1707",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1708": {
+      "m_bError": null,
+      "m_ID": "-1708",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1709": {
+      "m_bError": null,
+      "m_ID": "-1709",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1710": {
+      "m_bError": null,
+      "m_ID": "-1710",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1711": {
+      "m_bError": null,
+      "m_ID": "-1711",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-1712": {
+      "m_bError": null,
+      "m_ID": "-1712",
+      "m_mMessage": "\"Reserved String\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-795": {
+      "m_bError": null,
+      "m_ID": "-795",
+      "m_mMessage": "\"DMM Payment Verification Network Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-800": {
+      "m_bError": null,
+      "m_ID": "-800",
+      "m_mMessage": "\"Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-801": {
+      "m_bError": null,
+      "m_ID": "-801",
+      "m_mMessage": "\"Purchase Status Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-802": {
+      "m_bError": null,
+      "m_ID": "-802",
+      "m_mMessage": "\"Signature Verification Failed\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-732": {
+      "m_bError": null,
+      "m_ID": "-732",
+      "m_mMessage": "\"MSDK Payment Refund Notification Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-707": {
+      "m_bError": null,
+      "m_ID": "-707",
+      "m_mMessage": "\"分区不支持此支付方式\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    }
+  },
+  "status": "processed_848_items"
+}

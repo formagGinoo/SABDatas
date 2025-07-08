@@ -1,0 +1,6007 @@
+{
+  "className": "CData_AccountLevel",
+  "timestamp": "2025-07-08T13:35:14.648Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_AccountLv": "1",
+      "m_AccountlvupEXP": "100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_AccountLv": "2",
+      "m_AccountlvupEXP": "300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_AccountLv": "3",
+      "m_AccountlvupEXP": "600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_AccountLv": "4",
+      "m_AccountlvupEXP": "1000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_AccountLv": "5",
+      "m_AccountlvupEXP": "1500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_AccountLv": "6",
+      "m_AccountlvupEXP": "2100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_AccountLv": "7",
+      "m_AccountlvupEXP": "2700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_AccountLv": "8",
+      "m_AccountlvupEXP": "3400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_AccountLv": "9",
+      "m_AccountlvupEXP": "4100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_AccountLv": "10",
+      "m_AccountlvupEXP": "5000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "11": {
+      "m_bError": null,
+      "m_AccountLv": "11",
+      "m_AccountlvupEXP": "5800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "12": {
+      "m_bError": null,
+      "m_AccountLv": "12",
+      "m_AccountlvupEXP": "6800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "13": {
+      "m_bError": null,
+      "m_AccountLv": "13",
+      "m_AccountlvupEXP": "7800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "14": {
+      "m_bError": null,
+      "m_AccountLv": "14",
+      "m_AccountlvupEXP": "8800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "15": {
+      "m_bError": null,
+      "m_AccountLv": "15",
+      "m_AccountlvupEXP": "9900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "16": {
+      "m_bError": null,
+      "m_AccountLv": "16",
+      "m_AccountlvupEXP": "11100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "17": {
+      "m_bError": null,
+      "m_AccountLv": "17",
+      "m_AccountlvupEXP": "12300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "18": {
+      "m_bError": null,
+      "m_AccountLv": "18",
+      "m_AccountlvupEXP": "13600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "19": {
+      "m_bError": null,
+      "m_AccountLv": "19",
+      "m_AccountlvupEXP": "14900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "20": {
+      "m_bError": null,
+      "m_AccountLv": "20",
+      "m_AccountlvupEXP": "16200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_AccountLv": "21",
+      "m_AccountlvupEXP": "17600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "22": {
+      "m_bError": null,
+      "m_AccountLv": "22",
+      "m_AccountlvupEXP": "19100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "23": {
+      "m_bError": null,
+      "m_AccountLv": "23",
+      "m_AccountlvupEXP": "20600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "24": {
+      "m_bError": null,
+      "m_AccountLv": "24",
+      "m_AccountlvupEXP": "22200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "25": {
+      "m_bError": null,
+      "m_AccountLv": "25",
+      "m_AccountlvupEXP": "23700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "26": {
+      "m_bError": null,
+      "m_AccountLv": "26",
+      "m_AccountlvupEXP": "25400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "27": {
+      "m_bError": null,
+      "m_AccountLv": "27",
+      "m_AccountlvupEXP": "27100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "28": {
+      "m_bError": null,
+      "m_AccountLv": "28",
+      "m_AccountlvupEXP": "28800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "29": {
+      "m_bError": null,
+      "m_AccountLv": "29",
+      "m_AccountlvupEXP": "30600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "30": {
+      "m_bError": null,
+      "m_AccountLv": "30",
+      "m_AccountlvupEXP": "32400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "31": {
+      "m_bError": null,
+      "m_AccountLv": "31",
+      "m_AccountlvupEXP": "34300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "32": {
+      "m_bError": null,
+      "m_AccountLv": "32",
+      "m_AccountlvupEXP": "36200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "33": {
+      "m_bError": null,
+      "m_AccountLv": "33",
+      "m_AccountlvupEXP": "38100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "34": {
+      "m_bError": null,
+      "m_AccountLv": "34",
+      "m_AccountlvupEXP": "40100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "35": {
+      "m_bError": null,
+      "m_AccountLv": "35",
+      "m_AccountlvupEXP": "42100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "36": {
+      "m_bError": null,
+      "m_AccountLv": "36",
+      "m_AccountlvupEXP": "44200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "37": {
+      "m_bError": null,
+      "m_AccountLv": "37",
+      "m_AccountlvupEXP": "46300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "38": {
+      "m_bError": null,
+      "m_AccountLv": "38",
+      "m_AccountlvupEXP": "48400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "39": {
+      "m_bError": null,
+      "m_AccountLv": "39",
+      "m_AccountlvupEXP": "50600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "40": {
+      "m_bError": null,
+      "m_AccountLv": "40",
+      "m_AccountlvupEXP": "52900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "41": {
+      "m_bError": null,
+      "m_AccountLv": "41",
+      "m_AccountlvupEXP": "55100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "42": {
+      "m_bError": null,
+      "m_AccountLv": "42",
+      "m_AccountlvupEXP": "57400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "43": {
+      "m_bError": null,
+      "m_AccountLv": "43",
+      "m_AccountlvupEXP": "59800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "44": {
+      "m_bError": null,
+      "m_AccountLv": "44",
+      "m_AccountlvupEXP": "62200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "45": {
+      "m_bError": null,
+      "m_AccountLv": "45",
+      "m_AccountlvupEXP": "64600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "46": {
+      "m_bError": null,
+      "m_AccountLv": "46",
+      "m_AccountlvupEXP": "67000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "47": {
+      "m_bError": null,
+      "m_AccountLv": "47",
+      "m_AccountlvupEXP": "69500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "48": {
+      "m_bError": null,
+      "m_AccountLv": "48",
+      "m_AccountlvupEXP": "72100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "49": {
+      "m_bError": null,
+      "m_AccountLv": "49",
+      "m_AccountlvupEXP": "74700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "50": {
+      "m_bError": null,
+      "m_AccountLv": "50",
+      "m_AccountlvupEXP": "77300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "51": {
+      "m_bError": null,
+      "m_AccountLv": "51",
+      "m_AccountlvupEXP": "79900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "52": {
+      "m_bError": null,
+      "m_AccountLv": "52",
+      "m_AccountlvupEXP": "82600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "53": {
+      "m_bError": null,
+      "m_AccountLv": "53",
+      "m_AccountlvupEXP": "85300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "54": {
+      "m_bError": null,
+      "m_AccountLv": "54",
+      "m_AccountlvupEXP": "88100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "55": {
+      "m_bError": null,
+      "m_AccountLv": "55",
+      "m_AccountlvupEXP": "90900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "56": {
+      "m_bError": null,
+      "m_AccountLv": "56",
+      "m_AccountlvupEXP": "93700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "57": {
+      "m_bError": null,
+      "m_AccountLv": "57",
+      "m_AccountlvupEXP": "96600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "58": {
+      "m_bError": null,
+      "m_AccountLv": "58",
+      "m_AccountlvupEXP": "99500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "59": {
+      "m_bError": null,
+      "m_AccountLv": "59",
+      "m_AccountlvupEXP": "102400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "60": {
+      "m_bError": null,
+      "m_AccountLv": "60",
+      "m_AccountlvupEXP": "105400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "61": {
+      "m_bError": null,
+      "m_AccountLv": "61",
+      "m_AccountlvupEXP": "108400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "62": {
+      "m_bError": null,
+      "m_AccountLv": "62",
+      "m_AccountlvupEXP": "111400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "63": {
+      "m_bError": null,
+      "m_AccountLv": "63",
+      "m_AccountlvupEXP": "114500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "64": {
+      "m_bError": null,
+      "m_AccountLv": "64",
+      "m_AccountlvupEXP": "117600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "65": {
+      "m_bError": null,
+      "m_AccountLv": "65",
+      "m_AccountlvupEXP": "120700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "66": {
+      "m_bError": null,
+      "m_AccountLv": "66",
+      "m_AccountlvupEXP": "123900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "67": {
+      "m_bError": null,
+      "m_AccountLv": "67",
+      "m_AccountlvupEXP": "127100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "68": {
+      "m_bError": null,
+      "m_AccountLv": "68",
+      "m_AccountlvupEXP": "130300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "69": {
+      "m_bError": null,
+      "m_AccountLv": "69",
+      "m_AccountlvupEXP": "133600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "70": {
+      "m_bError": null,
+      "m_AccountLv": "70",
+      "m_AccountlvupEXP": "136900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "71": {
+      "m_bError": null,
+      "m_AccountLv": "71",
+      "m_AccountlvupEXP": "140300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "72": {
+      "m_bError": null,
+      "m_AccountLv": "72",
+      "m_AccountlvupEXP": "143700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "73": {
+      "m_bError": null,
+      "m_AccountLv": "73",
+      "m_AccountlvupEXP": "147100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "74": {
+      "m_bError": null,
+      "m_AccountLv": "74",
+      "m_AccountlvupEXP": "150500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "75": {
+      "m_bError": null,
+      "m_AccountLv": "75",
+      "m_AccountlvupEXP": "154000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "76": {
+      "m_bError": null,
+      "m_AccountLv": "76",
+      "m_AccountlvupEXP": "157500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "77": {
+      "m_bError": null,
+      "m_AccountLv": "77",
+      "m_AccountlvupEXP": "161000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "78": {
+      "m_bError": null,
+      "m_AccountLv": "78",
+      "m_AccountlvupEXP": "164600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "79": {
+      "m_bError": null,
+      "m_AccountLv": "79",
+      "m_AccountlvupEXP": "168200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "80": {
+      "m_bError": null,
+      "m_AccountLv": "80",
+      "m_AccountlvupEXP": "171800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "81": {
+      "m_bError": null,
+      "m_AccountLv": "81",
+      "m_AccountlvupEXP": "175500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "82": {
+      "m_bError": null,
+      "m_AccountLv": "82",
+      "m_AccountlvupEXP": "179200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "83": {
+      "m_bError": null,
+      "m_AccountLv": "83",
+      "m_AccountlvupEXP": "182900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "84": {
+      "m_bError": null,
+      "m_AccountLv": "84",
+      "m_AccountlvupEXP": "186700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "85": {
+      "m_bError": null,
+      "m_AccountLv": "85",
+      "m_AccountlvupEXP": "190500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "86": {
+      "m_bError": null,
+      "m_AccountLv": "86",
+      "m_AccountlvupEXP": "194300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "87": {
+      "m_bError": null,
+      "m_AccountLv": "87",
+      "m_AccountlvupEXP": "198200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "88": {
+      "m_bError": null,
+      "m_AccountLv": "88",
+      "m_AccountlvupEXP": "202100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "89": {
+      "m_bError": null,
+      "m_AccountLv": "89",
+      "m_AccountlvupEXP": "206000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "90": {
+      "m_bError": null,
+      "m_AccountLv": "90",
+      "m_AccountlvupEXP": "209900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "91": {
+      "m_bError": null,
+      "m_AccountLv": "91",
+      "m_AccountlvupEXP": "213900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "92": {
+      "m_bError": null,
+      "m_AccountLv": "92",
+      "m_AccountlvupEXP": "217900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "93": {
+      "m_bError": null,
+      "m_AccountLv": "93",
+      "m_AccountlvupEXP": "222000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "94": {
+      "m_bError": null,
+      "m_AccountLv": "94",
+      "m_AccountlvupEXP": "226100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "95": {
+      "m_bError": null,
+      "m_AccountLv": "95",
+      "m_AccountlvupEXP": "230200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "96": {
+      "m_bError": null,
+      "m_AccountLv": "96",
+      "m_AccountlvupEXP": "234300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "97": {
+      "m_bError": null,
+      "m_AccountLv": "97",
+      "m_AccountlvupEXP": "238500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "98": {
+      "m_bError": null,
+      "m_AccountLv": "98",
+      "m_AccountlvupEXP": "242700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "99": {
+      "m_bError": null,
+      "m_AccountLv": "99",
+      "m_AccountlvupEXP": "246900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "100": {
+      "m_bError": null,
+      "m_AccountLv": "100",
+      "m_AccountlvupEXP": "251100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "101": {
+      "m_bError": null,
+      "m_AccountLv": "101",
+      "m_AccountlvupEXP": "255400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "102": {
+      "m_bError": null,
+      "m_AccountLv": "102",
+      "m_AccountlvupEXP": "259700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "103": {
+      "m_bError": null,
+      "m_AccountLv": "103",
+      "m_AccountlvupEXP": "264100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "104": {
+      "m_bError": null,
+      "m_AccountLv": "104",
+      "m_AccountlvupEXP": "268500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "105": {
+      "m_bError": null,
+      "m_AccountLv": "105",
+      "m_AccountlvupEXP": "272900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "106": {
+      "m_bError": null,
+      "m_AccountLv": "106",
+      "m_AccountlvupEXP": "277300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "107": {
+      "m_bError": null,
+      "m_AccountLv": "107",
+      "m_AccountlvupEXP": "281800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "108": {
+      "m_bError": null,
+      "m_AccountLv": "108",
+      "m_AccountlvupEXP": "286200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "109": {
+      "m_bError": null,
+      "m_AccountLv": "109",
+      "m_AccountlvupEXP": "290800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "110": {
+      "m_bError": null,
+      "m_AccountLv": "110",
+      "m_AccountlvupEXP": "295300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "111": {
+      "m_bError": null,
+      "m_AccountLv": "111",
+      "m_AccountlvupEXP": "299900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "112": {
+      "m_bError": null,
+      "m_AccountLv": "112",
+      "m_AccountlvupEXP": "304500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "113": {
+      "m_bError": null,
+      "m_AccountLv": "113",
+      "m_AccountlvupEXP": "309100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "114": {
+      "m_bError": null,
+      "m_AccountLv": "114",
+      "m_AccountlvupEXP": "313800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "115": {
+      "m_bError": null,
+      "m_AccountLv": "115",
+      "m_AccountlvupEXP": "318500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "116": {
+      "m_bError": null,
+      "m_AccountLv": "116",
+      "m_AccountlvupEXP": "323200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "117": {
+      "m_bError": null,
+      "m_AccountLv": "117",
+      "m_AccountlvupEXP": "328000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "118": {
+      "m_bError": null,
+      "m_AccountLv": "118",
+      "m_AccountlvupEXP": "332800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "119": {
+      "m_bError": null,
+      "m_AccountLv": "119",
+      "m_AccountlvupEXP": "337600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "120": {
+      "m_bError": null,
+      "m_AccountLv": "120",
+      "m_AccountlvupEXP": "342400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "121": {
+      "m_bError": null,
+      "m_AccountLv": "121",
+      "m_AccountlvupEXP": "347300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "122": {
+      "m_bError": null,
+      "m_AccountLv": "122",
+      "m_AccountlvupEXP": "352200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "123": {
+      "m_bError": null,
+      "m_AccountLv": "123",
+      "m_AccountlvupEXP": "357100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "124": {
+      "m_bError": null,
+      "m_AccountLv": "124",
+      "m_AccountlvupEXP": "362000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "125": {
+      "m_bError": null,
+      "m_AccountLv": "125",
+      "m_AccountlvupEXP": "367000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "126": {
+      "m_bError": null,
+      "m_AccountLv": "126",
+      "m_AccountlvupEXP": "372000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "127": {
+      "m_bError": null,
+      "m_AccountLv": "127",
+      "m_AccountlvupEXP": "377100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "128": {
+      "m_bError": null,
+      "m_AccountLv": "128",
+      "m_AccountlvupEXP": "382100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "129": {
+      "m_bError": null,
+      "m_AccountLv": "129",
+      "m_AccountlvupEXP": "387200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "130": {
+      "m_bError": null,
+      "m_AccountLv": "130",
+      "m_AccountlvupEXP": "392300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "131": {
+      "m_bError": null,
+      "m_AccountLv": "131",
+      "m_AccountlvupEXP": "397500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "132": {
+      "m_bError": null,
+      "m_AccountLv": "132",
+      "m_AccountlvupEXP": "402600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "133": {
+      "m_bError": null,
+      "m_AccountLv": "133",
+      "m_AccountlvupEXP": "407800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "134": {
+      "m_bError": null,
+      "m_AccountLv": "134",
+      "m_AccountlvupEXP": "413100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "135": {
+      "m_bError": null,
+      "m_AccountLv": "135",
+      "m_AccountlvupEXP": "418300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "136": {
+      "m_bError": null,
+      "m_AccountLv": "136",
+      "m_AccountlvupEXP": "423600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "137": {
+      "m_bError": null,
+      "m_AccountLv": "137",
+      "m_AccountlvupEXP": "428900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "138": {
+      "m_bError": null,
+      "m_AccountLv": "138",
+      "m_AccountlvupEXP": "434300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "139": {
+      "m_bError": null,
+      "m_AccountLv": "139",
+      "m_AccountlvupEXP": "439600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "140": {
+      "m_bError": null,
+      "m_AccountLv": "140",
+      "m_AccountlvupEXP": "445000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "141": {
+      "m_bError": null,
+      "m_AccountLv": "141",
+      "m_AccountlvupEXP": "450400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "142": {
+      "m_bError": null,
+      "m_AccountLv": "142",
+      "m_AccountlvupEXP": "455900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "143": {
+      "m_bError": null,
+      "m_AccountLv": "143",
+      "m_AccountlvupEXP": "461300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "144": {
+      "m_bError": null,
+      "m_AccountLv": "144",
+      "m_AccountlvupEXP": "466800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "145": {
+      "m_bError": null,
+      "m_AccountLv": "145",
+      "m_AccountlvupEXP": "472400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "146": {
+      "m_bError": null,
+      "m_AccountLv": "146",
+      "m_AccountlvupEXP": "477900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "147": {
+      "m_bError": null,
+      "m_AccountLv": "147",
+      "m_AccountlvupEXP": "483500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "148": {
+      "m_bError": null,
+      "m_AccountLv": "148",
+      "m_AccountlvupEXP": "489100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "149": {
+      "m_bError": null,
+      "m_AccountLv": "149",
+      "m_AccountlvupEXP": "494700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "150": {
+      "m_bError": null,
+      "m_AccountLv": "150",
+      "m_AccountlvupEXP": "500400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "151": {
+      "m_bError": null,
+      "m_AccountLv": "151",
+      "m_AccountlvupEXP": "506100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "152": {
+      "m_bError": null,
+      "m_AccountLv": "152",
+      "m_AccountlvupEXP": "511800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "153": {
+      "m_bError": null,
+      "m_AccountLv": "153",
+      "m_AccountlvupEXP": "517500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "154": {
+      "m_bError": null,
+      "m_AccountLv": "154",
+      "m_AccountlvupEXP": "523300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "155": {
+      "m_bError": null,
+      "m_AccountLv": "155",
+      "m_AccountlvupEXP": "529100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "156": {
+      "m_bError": null,
+      "m_AccountLv": "156",
+      "m_AccountlvupEXP": "534900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "157": {
+      "m_bError": null,
+      "m_AccountLv": "157",
+      "m_AccountlvupEXP": "540700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "158": {
+      "m_bError": null,
+      "m_AccountLv": "158",
+      "m_AccountlvupEXP": "546600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "159": {
+      "m_bError": null,
+      "m_AccountLv": "159",
+      "m_AccountlvupEXP": "552500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "160": {
+      "m_bError": null,
+      "m_AccountLv": "160",
+      "m_AccountlvupEXP": "558400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "161": {
+      "m_bError": null,
+      "m_AccountLv": "161",
+      "m_AccountlvupEXP": "564400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "162": {
+      "m_bError": null,
+      "m_AccountLv": "162",
+      "m_AccountlvupEXP": "570300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "163": {
+      "m_bError": null,
+      "m_AccountLv": "163",
+      "m_AccountlvupEXP": "576300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "164": {
+      "m_bError": null,
+      "m_AccountLv": "164",
+      "m_AccountlvupEXP": "582400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "165": {
+      "m_bError": null,
+      "m_AccountLv": "165",
+      "m_AccountlvupEXP": "588400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "166": {
+      "m_bError": null,
+      "m_AccountLv": "166",
+      "m_AccountlvupEXP": "594500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "167": {
+      "m_bError": null,
+      "m_AccountLv": "167",
+      "m_AccountlvupEXP": "600600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "168": {
+      "m_bError": null,
+      "m_AccountLv": "168",
+      "m_AccountlvupEXP": "606700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "169": {
+      "m_bError": null,
+      "m_AccountLv": "169",
+      "m_AccountlvupEXP": "612900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "170": {
+      "m_bError": null,
+      "m_AccountLv": "170",
+      "m_AccountlvupEXP": "619100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "171": {
+      "m_bError": null,
+      "m_AccountLv": "171",
+      "m_AccountlvupEXP": "625300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "172": {
+      "m_bError": null,
+      "m_AccountLv": "172",
+      "m_AccountlvupEXP": "631500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "173": {
+      "m_bError": null,
+      "m_AccountLv": "173",
+      "m_AccountlvupEXP": "637700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "174": {
+      "m_bError": null,
+      "m_AccountLv": "174",
+      "m_AccountlvupEXP": "644000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "175": {
+      "m_bError": null,
+      "m_AccountLv": "175",
+      "m_AccountlvupEXP": "650300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "176": {
+      "m_bError": null,
+      "m_AccountLv": "176",
+      "m_AccountlvupEXP": "656700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "177": {
+      "m_bError": null,
+      "m_AccountLv": "177",
+      "m_AccountlvupEXP": "663000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "178": {
+      "m_bError": null,
+      "m_AccountLv": "178",
+      "m_AccountlvupEXP": "669400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "179": {
+      "m_bError": null,
+      "m_AccountLv": "179",
+      "m_AccountlvupEXP": "675800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "180": {
+      "m_bError": null,
+      "m_AccountLv": "180",
+      "m_AccountlvupEXP": "682200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "181": {
+      "m_bError": null,
+      "m_AccountLv": "181",
+      "m_AccountlvupEXP": "688700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "182": {
+      "m_bError": null,
+      "m_AccountLv": "182",
+      "m_AccountlvupEXP": "695200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "183": {
+      "m_bError": null,
+      "m_AccountLv": "183",
+      "m_AccountlvupEXP": "701700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "184": {
+      "m_bError": null,
+      "m_AccountLv": "184",
+      "m_AccountlvupEXP": "708200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "185": {
+      "m_bError": null,
+      "m_AccountLv": "185",
+      "m_AccountlvupEXP": "714800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "186": {
+      "m_bError": null,
+      "m_AccountLv": "186",
+      "m_AccountlvupEXP": "721300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "187": {
+      "m_bError": null,
+      "m_AccountLv": "187",
+      "m_AccountlvupEXP": "727900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "188": {
+      "m_bError": null,
+      "m_AccountLv": "188",
+      "m_AccountlvupEXP": "734600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "189": {
+      "m_bError": null,
+      "m_AccountLv": "189",
+      "m_AccountlvupEXP": "741200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "190": {
+      "m_bError": null,
+      "m_AccountLv": "190",
+      "m_AccountlvupEXP": "747900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "191": {
+      "m_bError": null,
+      "m_AccountLv": "191",
+      "m_AccountlvupEXP": "754600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "192": {
+      "m_bError": null,
+      "m_AccountLv": "192",
+      "m_AccountlvupEXP": "761300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "193": {
+      "m_bError": null,
+      "m_AccountLv": "193",
+      "m_AccountlvupEXP": "768100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "194": {
+      "m_bError": null,
+      "m_AccountLv": "194",
+      "m_AccountlvupEXP": "774900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "195": {
+      "m_bError": null,
+      "m_AccountLv": "195",
+      "m_AccountlvupEXP": "781700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "196": {
+      "m_bError": null,
+      "m_AccountLv": "196",
+      "m_AccountlvupEXP": "788500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "197": {
+      "m_bError": null,
+      "m_AccountLv": "197",
+      "m_AccountlvupEXP": "795400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "198": {
+      "m_bError": null,
+      "m_AccountLv": "198",
+      "m_AccountlvupEXP": "802200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "199": {
+      "m_bError": null,
+      "m_AccountLv": "199",
+      "m_AccountlvupEXP": "809100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "200": {
+      "m_bError": null,
+      "m_AccountLv": "200",
+      "m_AccountlvupEXP": "816100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "201": {
+      "m_bError": null,
+      "m_AccountLv": "201",
+      "m_AccountlvupEXP": "823000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "202": {
+      "m_bError": null,
+      "m_AccountLv": "202",
+      "m_AccountlvupEXP": "830000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "203": {
+      "m_bError": null,
+      "m_AccountLv": "203",
+      "m_AccountlvupEXP": "837000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "204": {
+      "m_bError": null,
+      "m_AccountLv": "204",
+      "m_AccountlvupEXP": "844000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "205": {
+      "m_bError": null,
+      "m_AccountLv": "205",
+      "m_AccountlvupEXP": "851100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "206": {
+      "m_bError": null,
+      "m_AccountLv": "206",
+      "m_AccountlvupEXP": "858100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "207": {
+      "m_bError": null,
+      "m_AccountLv": "207",
+      "m_AccountlvupEXP": "865200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "208": {
+      "m_bError": null,
+      "m_AccountLv": "208",
+      "m_AccountlvupEXP": "872300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "209": {
+      "m_bError": null,
+      "m_AccountLv": "209",
+      "m_AccountlvupEXP": "879500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "210": {
+      "m_bError": null,
+      "m_AccountLv": "210",
+      "m_AccountlvupEXP": "886600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "211": {
+      "m_bError": null,
+      "m_AccountLv": "211",
+      "m_AccountlvupEXP": "893800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "212": {
+      "m_bError": null,
+      "m_AccountLv": "212",
+      "m_AccountlvupEXP": "901000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "213": {
+      "m_bError": null,
+      "m_AccountLv": "213",
+      "m_AccountlvupEXP": "908300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "214": {
+      "m_bError": null,
+      "m_AccountLv": "214",
+      "m_AccountlvupEXP": "915500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "215": {
+      "m_bError": null,
+      "m_AccountLv": "215",
+      "m_AccountlvupEXP": "922800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "216": {
+      "m_bError": null,
+      "m_AccountLv": "216",
+      "m_AccountlvupEXP": "930100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "217": {
+      "m_bError": null,
+      "m_AccountLv": "217",
+      "m_AccountlvupEXP": "937500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "218": {
+      "m_bError": null,
+      "m_AccountLv": "218",
+      "m_AccountlvupEXP": "944800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "219": {
+      "m_bError": null,
+      "m_AccountLv": "219",
+      "m_AccountlvupEXP": "952200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "220": {
+      "m_bError": null,
+      "m_AccountLv": "220",
+      "m_AccountlvupEXP": "959600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "221": {
+      "m_bError": null,
+      "m_AccountLv": "221",
+      "m_AccountlvupEXP": "967000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "222": {
+      "m_bError": null,
+      "m_AccountLv": "222",
+      "m_AccountlvupEXP": "974500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "223": {
+      "m_bError": null,
+      "m_AccountLv": "223",
+      "m_AccountlvupEXP": "982000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "224": {
+      "m_bError": null,
+      "m_AccountLv": "224",
+      "m_AccountlvupEXP": "989500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "225": {
+      "m_bError": null,
+      "m_AccountLv": "225",
+      "m_AccountlvupEXP": "997000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "226": {
+      "m_bError": null,
+      "m_AccountLv": "226",
+      "m_AccountlvupEXP": "1004500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "227": {
+      "m_bError": null,
+      "m_AccountLv": "227",
+      "m_AccountlvupEXP": "1012100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "228": {
+      "m_bError": null,
+      "m_AccountLv": "228",
+      "m_AccountlvupEXP": "1019700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "229": {
+      "m_bError": null,
+      "m_AccountLv": "229",
+      "m_AccountlvupEXP": "1027300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "230": {
+      "m_bError": null,
+      "m_AccountLv": "230",
+      "m_AccountlvupEXP": "1034900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "231": {
+      "m_bError": null,
+      "m_AccountLv": "231",
+      "m_AccountlvupEXP": "1042600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "232": {
+      "m_bError": null,
+      "m_AccountLv": "232",
+      "m_AccountlvupEXP": "1050300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "233": {
+      "m_bError": null,
+      "m_AccountLv": "233",
+      "m_AccountlvupEXP": "1058000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "234": {
+      "m_bError": null,
+      "m_AccountLv": "234",
+      "m_AccountlvupEXP": "1065700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "235": {
+      "m_bError": null,
+      "m_AccountLv": "235",
+      "m_AccountlvupEXP": "1073500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "236": {
+      "m_bError": null,
+      "m_AccountLv": "236",
+      "m_AccountlvupEXP": "1081300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "237": {
+      "m_bError": null,
+      "m_AccountLv": "237",
+      "m_AccountlvupEXP": "1089100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "238": {
+      "m_bError": null,
+      "m_AccountLv": "238",
+      "m_AccountlvupEXP": "1096900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "239": {
+      "m_bError": null,
+      "m_AccountLv": "239",
+      "m_AccountlvupEXP": "1104700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "240": {
+      "m_bError": null,
+      "m_AccountLv": "240",
+      "m_AccountlvupEXP": "1112600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "241": {
+      "m_bError": null,
+      "m_AccountLv": "241",
+      "m_AccountlvupEXP": "1120500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "242": {
+      "m_bError": null,
+      "m_AccountLv": "242",
+      "m_AccountlvupEXP": "1128400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "243": {
+      "m_bError": null,
+      "m_AccountLv": "243",
+      "m_AccountlvupEXP": "1136300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "244": {
+      "m_bError": null,
+      "m_AccountLv": "244",
+      "m_AccountlvupEXP": "1144300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "245": {
+      "m_bError": null,
+      "m_AccountLv": "245",
+      "m_AccountlvupEXP": "1152300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "246": {
+      "m_bError": null,
+      "m_AccountLv": "246",
+      "m_AccountlvupEXP": "1160300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "247": {
+      "m_bError": null,
+      "m_AccountLv": "247",
+      "m_AccountlvupEXP": "1168300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "248": {
+      "m_bError": null,
+      "m_AccountLv": "248",
+      "m_AccountlvupEXP": "1176400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "249": {
+      "m_bError": null,
+      "m_AccountLv": "249",
+      "m_AccountlvupEXP": "1184500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "250": {
+      "m_bError": null,
+      "m_AccountLv": "250",
+      "m_AccountlvupEXP": "1192600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "251": {
+      "m_bError": null,
+      "m_AccountLv": "251",
+      "m_AccountlvupEXP": "1200700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "252": {
+      "m_bError": null,
+      "m_AccountLv": "252",
+      "m_AccountlvupEXP": "1208800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "253": {
+      "m_bError": null,
+      "m_AccountLv": "253",
+      "m_AccountlvupEXP": "1217000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "254": {
+      "m_bError": null,
+      "m_AccountLv": "254",
+      "m_AccountlvupEXP": "1225200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "255": {
+      "m_bError": null,
+      "m_AccountLv": "255",
+      "m_AccountlvupEXP": "1233400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "256": {
+      "m_bError": null,
+      "m_AccountLv": "256",
+      "m_AccountlvupEXP": "1241600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "257": {
+      "m_bError": null,
+      "m_AccountLv": "257",
+      "m_AccountlvupEXP": "1249900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "258": {
+      "m_bError": null,
+      "m_AccountLv": "258",
+      "m_AccountlvupEXP": "1258200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "259": {
+      "m_bError": null,
+      "m_AccountLv": "259",
+      "m_AccountlvupEXP": "1266500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "260": {
+      "m_bError": null,
+      "m_AccountLv": "260",
+      "m_AccountlvupEXP": "1274800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "261": {
+      "m_bError": null,
+      "m_AccountLv": "261",
+      "m_AccountlvupEXP": "1283100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "262": {
+      "m_bError": null,
+      "m_AccountLv": "262",
+      "m_AccountlvupEXP": "1291500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "263": {
+      "m_bError": null,
+      "m_AccountLv": "263",
+      "m_AccountlvupEXP": "1299900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "264": {
+      "m_bError": null,
+      "m_AccountLv": "264",
+      "m_AccountlvupEXP": "1308300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "265": {
+      "m_bError": null,
+      "m_AccountLv": "265",
+      "m_AccountlvupEXP": "1316700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "266": {
+      "m_bError": null,
+      "m_AccountLv": "266",
+      "m_AccountlvupEXP": "1325200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "267": {
+      "m_bError": null,
+      "m_AccountLv": "267",
+      "m_AccountlvupEXP": "1333700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "268": {
+      "m_bError": null,
+      "m_AccountLv": "268",
+      "m_AccountlvupEXP": "1342200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "269": {
+      "m_bError": null,
+      "m_AccountLv": "269",
+      "m_AccountlvupEXP": "1350700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "270": {
+      "m_bError": null,
+      "m_AccountLv": "270",
+      "m_AccountlvupEXP": "1359300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "271": {
+      "m_bError": null,
+      "m_AccountLv": "271",
+      "m_AccountlvupEXP": "1367800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "272": {
+      "m_bError": null,
+      "m_AccountLv": "272",
+      "m_AccountlvupEXP": "1376400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "273": {
+      "m_bError": null,
+      "m_AccountLv": "273",
+      "m_AccountlvupEXP": "1385000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "274": {
+      "m_bError": null,
+      "m_AccountLv": "274",
+      "m_AccountlvupEXP": "1393700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "275": {
+      "m_bError": null,
+      "m_AccountLv": "275",
+      "m_AccountlvupEXP": "1402300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "276": {
+      "m_bError": null,
+      "m_AccountLv": "276",
+      "m_AccountlvupEXP": "1411000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "277": {
+      "m_bError": null,
+      "m_AccountLv": "277",
+      "m_AccountlvupEXP": "1419700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "278": {
+      "m_bError": null,
+      "m_AccountLv": "278",
+      "m_AccountlvupEXP": "1428400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "279": {
+      "m_bError": null,
+      "m_AccountLv": "279",
+      "m_AccountlvupEXP": "1437200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "280": {
+      "m_bError": null,
+      "m_AccountLv": "280",
+      "m_AccountlvupEXP": "1446000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "281": {
+      "m_bError": null,
+      "m_AccountLv": "281",
+      "m_AccountlvupEXP": "1454700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "282": {
+      "m_bError": null,
+      "m_AccountLv": "282",
+      "m_AccountlvupEXP": "1463600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "283": {
+      "m_bError": null,
+      "m_AccountLv": "283",
+      "m_AccountlvupEXP": "1472400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "284": {
+      "m_bError": null,
+      "m_AccountLv": "284",
+      "m_AccountlvupEXP": "1481200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "285": {
+      "m_bError": null,
+      "m_AccountLv": "285",
+      "m_AccountlvupEXP": "1490100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "286": {
+      "m_bError": null,
+      "m_AccountLv": "286",
+      "m_AccountlvupEXP": "1499000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "287": {
+      "m_bError": null,
+      "m_AccountLv": "287",
+      "m_AccountlvupEXP": "1507900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "288": {
+      "m_bError": null,
+      "m_AccountLv": "288",
+      "m_AccountlvupEXP": "1516900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "289": {
+      "m_bError": null,
+      "m_AccountLv": "289",
+      "m_AccountlvupEXP": "1525900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "290": {
+      "m_bError": null,
+      "m_AccountLv": "290",
+      "m_AccountlvupEXP": "1534800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "291": {
+      "m_bError": null,
+      "m_AccountLv": "291",
+      "m_AccountlvupEXP": "1543800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "292": {
+      "m_bError": null,
+      "m_AccountLv": "292",
+      "m_AccountlvupEXP": "1552900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "293": {
+      "m_bError": null,
+      "m_AccountLv": "293",
+      "m_AccountlvupEXP": "1561900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "294": {
+      "m_bError": null,
+      "m_AccountLv": "294",
+      "m_AccountlvupEXP": "1571000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "295": {
+      "m_bError": null,
+      "m_AccountLv": "295",
+      "m_AccountlvupEXP": "1580100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "296": {
+      "m_bError": null,
+      "m_AccountLv": "296",
+      "m_AccountlvupEXP": "1589200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "297": {
+      "m_bError": null,
+      "m_AccountLv": "297",
+      "m_AccountlvupEXP": "1598400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "298": {
+      "m_bError": null,
+      "m_AccountLv": "298",
+      "m_AccountlvupEXP": "1607500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "299": {
+      "m_bError": null,
+      "m_AccountLv": "299",
+      "m_AccountlvupEXP": "1616700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "300": {
+      "m_bError": null,
+      "m_AccountLv": "300",
+      "m_AccountlvupEXP": "1625900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "301": {
+      "m_bError": null,
+      "m_AccountLv": "301",
+      "m_AccountlvupEXP": "1635100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "302": {
+      "m_bError": null,
+      "m_AccountLv": "302",
+      "m_AccountlvupEXP": "1644400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "303": {
+      "m_bError": null,
+      "m_AccountLv": "303",
+      "m_AccountlvupEXP": "1653600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "304": {
+      "m_bError": null,
+      "m_AccountLv": "304",
+      "m_AccountlvupEXP": "1662900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "305": {
+      "m_bError": null,
+      "m_AccountLv": "305",
+      "m_AccountlvupEXP": "1672200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "306": {
+      "m_bError": null,
+      "m_AccountLv": "306",
+      "m_AccountlvupEXP": "1681600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "307": {
+      "m_bError": null,
+      "m_AccountLv": "307",
+      "m_AccountlvupEXP": "1690900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "308": {
+      "m_bError": null,
+      "m_AccountLv": "308",
+      "m_AccountlvupEXP": "1700300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "309": {
+      "m_bError": null,
+      "m_AccountLv": "309",
+      "m_AccountlvupEXP": "1709700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "310": {
+      "m_bError": null,
+      "m_AccountLv": "310",
+      "m_AccountlvupEXP": "1719100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "311": {
+      "m_bError": null,
+      "m_AccountLv": "311",
+      "m_AccountlvupEXP": "1728500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "312": {
+      "m_bError": null,
+      "m_AccountLv": "312",
+      "m_AccountlvupEXP": "1738000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "313": {
+      "m_bError": null,
+      "m_AccountLv": "313",
+      "m_AccountlvupEXP": "1747500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "314": {
+      "m_bError": null,
+      "m_AccountLv": "314",
+      "m_AccountlvupEXP": "1757000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "315": {
+      "m_bError": null,
+      "m_AccountLv": "315",
+      "m_AccountlvupEXP": "1766500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "316": {
+      "m_bError": null,
+      "m_AccountLv": "316",
+      "m_AccountlvupEXP": "1776100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "317": {
+      "m_bError": null,
+      "m_AccountLv": "317",
+      "m_AccountlvupEXP": "1785600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "318": {
+      "m_bError": null,
+      "m_AccountLv": "318",
+      "m_AccountlvupEXP": "1795200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "319": {
+      "m_bError": null,
+      "m_AccountLv": "319",
+      "m_AccountlvupEXP": "1804800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "320": {
+      "m_bError": null,
+      "m_AccountLv": "320",
+      "m_AccountlvupEXP": "1814400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "321": {
+      "m_bError": null,
+      "m_AccountLv": "321",
+      "m_AccountlvupEXP": "1824100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "322": {
+      "m_bError": null,
+      "m_AccountLv": "322",
+      "m_AccountlvupEXP": "1833800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "323": {
+      "m_bError": null,
+      "m_AccountLv": "323",
+      "m_AccountlvupEXP": "1843500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "324": {
+      "m_bError": null,
+      "m_AccountLv": "324",
+      "m_AccountlvupEXP": "1853200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "325": {
+      "m_bError": null,
+      "m_AccountLv": "325",
+      "m_AccountlvupEXP": "1862900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "326": {
+      "m_bError": null,
+      "m_AccountLv": "326",
+      "m_AccountlvupEXP": "1872700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "327": {
+      "m_bError": null,
+      "m_AccountLv": "327",
+      "m_AccountlvupEXP": "1882400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "328": {
+      "m_bError": null,
+      "m_AccountLv": "328",
+      "m_AccountlvupEXP": "1892200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "329": {
+      "m_bError": null,
+      "m_AccountLv": "329",
+      "m_AccountlvupEXP": "1902000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "330": {
+      "m_bError": null,
+      "m_AccountLv": "330",
+      "m_AccountlvupEXP": "1911900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "331": {
+      "m_bError": null,
+      "m_AccountLv": "331",
+      "m_AccountlvupEXP": "1921700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "332": {
+      "m_bError": null,
+      "m_AccountLv": "332",
+      "m_AccountlvupEXP": "1931600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "333": {
+      "m_bError": null,
+      "m_AccountLv": "333",
+      "m_AccountlvupEXP": "1941500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "334": {
+      "m_bError": null,
+      "m_AccountLv": "334",
+      "m_AccountlvupEXP": "1951500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "335": {
+      "m_bError": null,
+      "m_AccountLv": "335",
+      "m_AccountlvupEXP": "1961400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "336": {
+      "m_bError": null,
+      "m_AccountLv": "336",
+      "m_AccountlvupEXP": "1971400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "337": {
+      "m_bError": null,
+      "m_AccountLv": "337",
+      "m_AccountlvupEXP": "1981300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "338": {
+      "m_bError": null,
+      "m_AccountLv": "338",
+      "m_AccountlvupEXP": "1991300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "339": {
+      "m_bError": null,
+      "m_AccountLv": "339",
+      "m_AccountlvupEXP": "2001400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "340": {
+      "m_bError": null,
+      "m_AccountLv": "340",
+      "m_AccountlvupEXP": "2011400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "341": {
+      "m_bError": null,
+      "m_AccountLv": "341",
+      "m_AccountlvupEXP": "2021500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "342": {
+      "m_bError": null,
+      "m_AccountLv": "342",
+      "m_AccountlvupEXP": "2031600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "343": {
+      "m_bError": null,
+      "m_AccountLv": "343",
+      "m_AccountlvupEXP": "2041700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "344": {
+      "m_bError": null,
+      "m_AccountLv": "344",
+      "m_AccountlvupEXP": "2051800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "345": {
+      "m_bError": null,
+      "m_AccountLv": "345",
+      "m_AccountlvupEXP": "2062000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "346": {
+      "m_bError": null,
+      "m_AccountLv": "346",
+      "m_AccountlvupEXP": "2072100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "347": {
+      "m_bError": null,
+      "m_AccountLv": "347",
+      "m_AccountlvupEXP": "2082300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "348": {
+      "m_bError": null,
+      "m_AccountLv": "348",
+      "m_AccountlvupEXP": "2092500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "349": {
+      "m_bError": null,
+      "m_AccountLv": "349",
+      "m_AccountlvupEXP": "2102800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "350": {
+      "m_bError": null,
+      "m_AccountLv": "350",
+      "m_AccountlvupEXP": "2113000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "351": {
+      "m_bError": null,
+      "m_AccountLv": "351",
+      "m_AccountlvupEXP": "2123300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "352": {
+      "m_bError": null,
+      "m_AccountLv": "352",
+      "m_AccountlvupEXP": "2133600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "353": {
+      "m_bError": null,
+      "m_AccountLv": "353",
+      "m_AccountlvupEXP": "2143900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "354": {
+      "m_bError": null,
+      "m_AccountLv": "354",
+      "m_AccountlvupEXP": "2154200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "355": {
+      "m_bError": null,
+      "m_AccountLv": "355",
+      "m_AccountlvupEXP": "2164600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "356": {
+      "m_bError": null,
+      "m_AccountLv": "356",
+      "m_AccountlvupEXP": "2175000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "357": {
+      "m_bError": null,
+      "m_AccountLv": "357",
+      "m_AccountlvupEXP": "2185400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "358": {
+      "m_bError": null,
+      "m_AccountLv": "358",
+      "m_AccountlvupEXP": "2195800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "359": {
+      "m_bError": null,
+      "m_AccountLv": "359",
+      "m_AccountlvupEXP": "2206200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "360": {
+      "m_bError": null,
+      "m_AccountLv": "360",
+      "m_AccountlvupEXP": "2216700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "361": {
+      "m_bError": null,
+      "m_AccountLv": "361",
+      "m_AccountlvupEXP": "2227200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "362": {
+      "m_bError": null,
+      "m_AccountLv": "362",
+      "m_AccountlvupEXP": "2237700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "363": {
+      "m_bError": null,
+      "m_AccountLv": "363",
+      "m_AccountlvupEXP": "2248200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "364": {
+      "m_bError": null,
+      "m_AccountLv": "364",
+      "m_AccountlvupEXP": "2258700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "365": {
+      "m_bError": null,
+      "m_AccountLv": "365",
+      "m_AccountlvupEXP": "2269300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "366": {
+      "m_bError": null,
+      "m_AccountLv": "366",
+      "m_AccountlvupEXP": "2279900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "367": {
+      "m_bError": null,
+      "m_AccountLv": "367",
+      "m_AccountlvupEXP": "2290500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "368": {
+      "m_bError": null,
+      "m_AccountLv": "368",
+      "m_AccountlvupEXP": "2301100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "369": {
+      "m_bError": null,
+      "m_AccountLv": "369",
+      "m_AccountlvupEXP": "2311700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "370": {
+      "m_bError": null,
+      "m_AccountLv": "370",
+      "m_AccountlvupEXP": "2322400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "371": {
+      "m_bError": null,
+      "m_AccountLv": "371",
+      "m_AccountlvupEXP": "2333100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "372": {
+      "m_bError": null,
+      "m_AccountLv": "372",
+      "m_AccountlvupEXP": "2343800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "373": {
+      "m_bError": null,
+      "m_AccountLv": "373",
+      "m_AccountlvupEXP": "2354500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "374": {
+      "m_bError": null,
+      "m_AccountLv": "374",
+      "m_AccountlvupEXP": "2365200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "375": {
+      "m_bError": null,
+      "m_AccountLv": "375",
+      "m_AccountlvupEXP": "2376000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "376": {
+      "m_bError": null,
+      "m_AccountLv": "376",
+      "m_AccountlvupEXP": "2386800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "377": {
+      "m_bError": null,
+      "m_AccountLv": "377",
+      "m_AccountlvupEXP": "2397600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "378": {
+      "m_bError": null,
+      "m_AccountLv": "378",
+      "m_AccountlvupEXP": "2408400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "379": {
+      "m_bError": null,
+      "m_AccountLv": "379",
+      "m_AccountlvupEXP": "2419200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "380": {
+      "m_bError": null,
+      "m_AccountLv": "380",
+      "m_AccountlvupEXP": "2430100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "381": {
+      "m_bError": null,
+      "m_AccountLv": "381",
+      "m_AccountlvupEXP": "2441000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "382": {
+      "m_bError": null,
+      "m_AccountLv": "382",
+      "m_AccountlvupEXP": "2451900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "383": {
+      "m_bError": null,
+      "m_AccountLv": "383",
+      "m_AccountlvupEXP": "2462800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "384": {
+      "m_bError": null,
+      "m_AccountLv": "384",
+      "m_AccountlvupEXP": "2473700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "385": {
+      "m_bError": null,
+      "m_AccountLv": "385",
+      "m_AccountlvupEXP": "2484700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "386": {
+      "m_bError": null,
+      "m_AccountLv": "386",
+      "m_AccountlvupEXP": "2495700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "387": {
+      "m_bError": null,
+      "m_AccountLv": "387",
+      "m_AccountlvupEXP": "2506700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "388": {
+      "m_bError": null,
+      "m_AccountLv": "388",
+      "m_AccountlvupEXP": "2517700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "389": {
+      "m_bError": null,
+      "m_AccountLv": "389",
+      "m_AccountlvupEXP": "2528700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "390": {
+      "m_bError": null,
+      "m_AccountLv": "390",
+      "m_AccountlvupEXP": "2539800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "391": {
+      "m_bError": null,
+      "m_AccountLv": "391",
+      "m_AccountlvupEXP": "2550900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "392": {
+      "m_bError": null,
+      "m_AccountLv": "392",
+      "m_AccountlvupEXP": "2562000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "393": {
+      "m_bError": null,
+      "m_AccountLv": "393",
+      "m_AccountlvupEXP": "2573100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "394": {
+      "m_bError": null,
+      "m_AccountLv": "394",
+      "m_AccountlvupEXP": "2584300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "395": {
+      "m_bError": null,
+      "m_AccountLv": "395",
+      "m_AccountlvupEXP": "2595400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "396": {
+      "m_bError": null,
+      "m_AccountLv": "396",
+      "m_AccountlvupEXP": "2606600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "397": {
+      "m_bError": null,
+      "m_AccountLv": "397",
+      "m_AccountlvupEXP": "2617800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "398": {
+      "m_bError": null,
+      "m_AccountLv": "398",
+      "m_AccountlvupEXP": "2629000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "399": {
+      "m_bError": null,
+      "m_AccountLv": "399",
+      "m_AccountlvupEXP": "2640300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "400": {
+      "m_bError": null,
+      "m_AccountLv": "400",
+      "m_AccountlvupEXP": "2651500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "401": {
+      "m_bError": null,
+      "m_AccountLv": "401",
+      "m_AccountlvupEXP": "2662800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "402": {
+      "m_bError": null,
+      "m_AccountLv": "402",
+      "m_AccountlvupEXP": "2674100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "403": {
+      "m_bError": null,
+      "m_AccountLv": "403",
+      "m_AccountlvupEXP": "2685400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "404": {
+      "m_bError": null,
+      "m_AccountLv": "404",
+      "m_AccountlvupEXP": "2696700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "405": {
+      "m_bError": null,
+      "m_AccountLv": "405",
+      "m_AccountlvupEXP": "2708100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "406": {
+      "m_bError": null,
+      "m_AccountLv": "406",
+      "m_AccountlvupEXP": "2719500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "407": {
+      "m_bError": null,
+      "m_AccountLv": "407",
+      "m_AccountlvupEXP": "2730900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "408": {
+      "m_bError": null,
+      "m_AccountLv": "408",
+      "m_AccountlvupEXP": "2742300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "409": {
+      "m_bError": null,
+      "m_AccountLv": "409",
+      "m_AccountlvupEXP": "2753700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "410": {
+      "m_bError": null,
+      "m_AccountLv": "410",
+      "m_AccountlvupEXP": "2765200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "411": {
+      "m_bError": null,
+      "m_AccountLv": "411",
+      "m_AccountlvupEXP": "2776700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "412": {
+      "m_bError": null,
+      "m_AccountLv": "412",
+      "m_AccountlvupEXP": "2788200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "413": {
+      "m_bError": null,
+      "m_AccountLv": "413",
+      "m_AccountlvupEXP": "2799700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "414": {
+      "m_bError": null,
+      "m_AccountLv": "414",
+      "m_AccountlvupEXP": "2811200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "415": {
+      "m_bError": null,
+      "m_AccountLv": "415",
+      "m_AccountlvupEXP": "2822800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "416": {
+      "m_bError": null,
+      "m_AccountLv": "416",
+      "m_AccountlvupEXP": "2834300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "417": {
+      "m_bError": null,
+      "m_AccountLv": "417",
+      "m_AccountlvupEXP": "2845900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "418": {
+      "m_bError": null,
+      "m_AccountLv": "418",
+      "m_AccountlvupEXP": "2857500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "419": {
+      "m_bError": null,
+      "m_AccountLv": "419",
+      "m_AccountlvupEXP": "2869200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "420": {
+      "m_bError": null,
+      "m_AccountLv": "420",
+      "m_AccountlvupEXP": "2880800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "421": {
+      "m_bError": null,
+      "m_AccountLv": "421",
+      "m_AccountlvupEXP": "2892500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "422": {
+      "m_bError": null,
+      "m_AccountLv": "422",
+      "m_AccountlvupEXP": "2904200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "423": {
+      "m_bError": null,
+      "m_AccountLv": "423",
+      "m_AccountlvupEXP": "2915900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "424": {
+      "m_bError": null,
+      "m_AccountLv": "424",
+      "m_AccountlvupEXP": "2927600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "425": {
+      "m_bError": null,
+      "m_AccountLv": "425",
+      "m_AccountlvupEXP": "2939400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "426": {
+      "m_bError": null,
+      "m_AccountLv": "426",
+      "m_AccountlvupEXP": "2951100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "427": {
+      "m_bError": null,
+      "m_AccountLv": "427",
+      "m_AccountlvupEXP": "2962900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "428": {
+      "m_bError": null,
+      "m_AccountLv": "428",
+      "m_AccountlvupEXP": "2974700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "429": {
+      "m_bError": null,
+      "m_AccountLv": "429",
+      "m_AccountlvupEXP": "2986600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "430": {
+      "m_bError": null,
+      "m_AccountLv": "430",
+      "m_AccountlvupEXP": "2998400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "431": {
+      "m_bError": null,
+      "m_AccountLv": "431",
+      "m_AccountlvupEXP": "3010300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "432": {
+      "m_bError": null,
+      "m_AccountLv": "432",
+      "m_AccountlvupEXP": "3022100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "433": {
+      "m_bError": null,
+      "m_AccountLv": "433",
+      "m_AccountlvupEXP": "3034000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "434": {
+      "m_bError": null,
+      "m_AccountLv": "434",
+      "m_AccountlvupEXP": "3046000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "435": {
+      "m_bError": null,
+      "m_AccountLv": "435",
+      "m_AccountlvupEXP": "3057900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "436": {
+      "m_bError": null,
+      "m_AccountLv": "436",
+      "m_AccountlvupEXP": "3069900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "437": {
+      "m_bError": null,
+      "m_AccountLv": "437",
+      "m_AccountlvupEXP": "3081800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "438": {
+      "m_bError": null,
+      "m_AccountLv": "438",
+      "m_AccountlvupEXP": "3093800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "439": {
+      "m_bError": null,
+      "m_AccountLv": "439",
+      "m_AccountlvupEXP": "3105900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "440": {
+      "m_bError": null,
+      "m_AccountLv": "440",
+      "m_AccountlvupEXP": "3117900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "441": {
+      "m_bError": null,
+      "m_AccountLv": "441",
+      "m_AccountlvupEXP": "3130000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "442": {
+      "m_bError": null,
+      "m_AccountLv": "442",
+      "m_AccountlvupEXP": "3142000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "443": {
+      "m_bError": null,
+      "m_AccountLv": "443",
+      "m_AccountlvupEXP": "3154100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "444": {
+      "m_bError": null,
+      "m_AccountLv": "444",
+      "m_AccountlvupEXP": "3166200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "445": {
+      "m_bError": null,
+      "m_AccountLv": "445",
+      "m_AccountlvupEXP": "3178400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "446": {
+      "m_bError": null,
+      "m_AccountLv": "446",
+      "m_AccountlvupEXP": "3190500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "447": {
+      "m_bError": null,
+      "m_AccountLv": "447",
+      "m_AccountlvupEXP": "3202700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "448": {
+      "m_bError": null,
+      "m_AccountLv": "448",
+      "m_AccountlvupEXP": "3214900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "449": {
+      "m_bError": null,
+      "m_AccountLv": "449",
+      "m_AccountlvupEXP": "3227100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "450": {
+      "m_bError": null,
+      "m_AccountLv": "450",
+      "m_AccountlvupEXP": "3239300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "451": {
+      "m_bError": null,
+      "m_AccountLv": "451",
+      "m_AccountlvupEXP": "3251600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "452": {
+      "m_bError": null,
+      "m_AccountLv": "452",
+      "m_AccountlvupEXP": "3263800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "453": {
+      "m_bError": null,
+      "m_AccountLv": "453",
+      "m_AccountlvupEXP": "3276100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "454": {
+      "m_bError": null,
+      "m_AccountLv": "454",
+      "m_AccountlvupEXP": "3288400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "455": {
+      "m_bError": null,
+      "m_AccountLv": "455",
+      "m_AccountlvupEXP": "3300800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "456": {
+      "m_bError": null,
+      "m_AccountLv": "456",
+      "m_AccountlvupEXP": "3313100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "457": {
+      "m_bError": null,
+      "m_AccountLv": "457",
+      "m_AccountlvupEXP": "3325500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "458": {
+      "m_bError": null,
+      "m_AccountLv": "458",
+      "m_AccountlvupEXP": "3337800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "459": {
+      "m_bError": null,
+      "m_AccountLv": "459",
+      "m_AccountlvupEXP": "3350200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "460": {
+      "m_bError": null,
+      "m_AccountLv": "460",
+      "m_AccountlvupEXP": "3362700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "461": {
+      "m_bError": null,
+      "m_AccountLv": "461",
+      "m_AccountlvupEXP": "3375100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "462": {
+      "m_bError": null,
+      "m_AccountLv": "462",
+      "m_AccountlvupEXP": "3387500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "463": {
+      "m_bError": null,
+      "m_AccountLv": "463",
+      "m_AccountlvupEXP": "3400000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "464": {
+      "m_bError": null,
+      "m_AccountLv": "464",
+      "m_AccountlvupEXP": "3412500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "465": {
+      "m_bError": null,
+      "m_AccountLv": "465",
+      "m_AccountlvupEXP": "3425000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "466": {
+      "m_bError": null,
+      "m_AccountLv": "466",
+      "m_AccountlvupEXP": "3437600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "467": {
+      "m_bError": null,
+      "m_AccountLv": "467",
+      "m_AccountlvupEXP": "3450100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "468": {
+      "m_bError": null,
+      "m_AccountLv": "468",
+      "m_AccountlvupEXP": "3462700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "469": {
+      "m_bError": null,
+      "m_AccountLv": "469",
+      "m_AccountlvupEXP": "3475300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "470": {
+      "m_bError": null,
+      "m_AccountLv": "470",
+      "m_AccountlvupEXP": "3487900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "471": {
+      "m_bError": null,
+      "m_AccountLv": "471",
+      "m_AccountlvupEXP": "3500500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "472": {
+      "m_bError": null,
+      "m_AccountLv": "472",
+      "m_AccountlvupEXP": "3513100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "473": {
+      "m_bError": null,
+      "m_AccountLv": "473",
+      "m_AccountlvupEXP": "3525800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "474": {
+      "m_bError": null,
+      "m_AccountLv": "474",
+      "m_AccountlvupEXP": "3538500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "475": {
+      "m_bError": null,
+      "m_AccountLv": "475",
+      "m_AccountlvupEXP": "3551200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "476": {
+      "m_bError": null,
+      "m_AccountLv": "476",
+      "m_AccountlvupEXP": "3563900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "477": {
+      "m_bError": null,
+      "m_AccountLv": "477",
+      "m_AccountlvupEXP": "3576600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "478": {
+      "m_bError": null,
+      "m_AccountLv": "478",
+      "m_AccountlvupEXP": "3589400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "479": {
+      "m_bError": null,
+      "m_AccountLv": "479",
+      "m_AccountlvupEXP": "3602200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "480": {
+      "m_bError": null,
+      "m_AccountLv": "480",
+      "m_AccountlvupEXP": "3615000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "481": {
+      "m_bError": null,
+      "m_AccountLv": "481",
+      "m_AccountlvupEXP": "3627800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "482": {
+      "m_bError": null,
+      "m_AccountLv": "482",
+      "m_AccountlvupEXP": "3640600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "483": {
+      "m_bError": null,
+      "m_AccountLv": "483",
+      "m_AccountlvupEXP": "3653500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "484": {
+      "m_bError": null,
+      "m_AccountLv": "484",
+      "m_AccountlvupEXP": "3666300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "485": {
+      "m_bError": null,
+      "m_AccountLv": "485",
+      "m_AccountlvupEXP": "3679200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "486": {
+      "m_bError": null,
+      "m_AccountLv": "486",
+      "m_AccountlvupEXP": "3692100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "487": {
+      "m_bError": null,
+      "m_AccountLv": "487",
+      "m_AccountlvupEXP": "3705000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "488": {
+      "m_bError": null,
+      "m_AccountLv": "488",
+      "m_AccountlvupEXP": "3718000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "489": {
+      "m_bError": null,
+      "m_AccountLv": "489",
+      "m_AccountlvupEXP": "3730900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "490": {
+      "m_bError": null,
+      "m_AccountLv": "490",
+      "m_AccountlvupEXP": "3743900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "491": {
+      "m_bError": null,
+      "m_AccountLv": "491",
+      "m_AccountlvupEXP": "3756900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "492": {
+      "m_bError": null,
+      "m_AccountLv": "492",
+      "m_AccountlvupEXP": "3769900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "493": {
+      "m_bError": null,
+      "m_AccountLv": "493",
+      "m_AccountlvupEXP": "3783000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "494": {
+      "m_bError": null,
+      "m_AccountLv": "494",
+      "m_AccountlvupEXP": "3796000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "495": {
+      "m_bError": null,
+      "m_AccountLv": "495",
+      "m_AccountlvupEXP": "3809100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "496": {
+      "m_bError": null,
+      "m_AccountLv": "496",
+      "m_AccountlvupEXP": "3822200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "497": {
+      "m_bError": null,
+      "m_AccountLv": "497",
+      "m_AccountlvupEXP": "3835300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "498": {
+      "m_bError": null,
+      "m_AccountLv": "498",
+      "m_AccountlvupEXP": "3848400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "499": {
+      "m_bError": null,
+      "m_AccountLv": "499",
+      "m_AccountlvupEXP": "3861600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "500": {
+      "m_bError": null,
+      "m_AccountLv": "500",
+      "m_AccountlvupEXP": "3874700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "501": {
+      "m_bError": null,
+      "m_AccountLv": "501",
+      "m_AccountlvupEXP": "3887900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "502": {
+      "m_bError": null,
+      "m_AccountLv": "502",
+      "m_AccountlvupEXP": "3901100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "503": {
+      "m_bError": null,
+      "m_AccountLv": "503",
+      "m_AccountlvupEXP": "3914400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "504": {
+      "m_bError": null,
+      "m_AccountLv": "504",
+      "m_AccountlvupEXP": "3927600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "505": {
+      "m_bError": null,
+      "m_AccountLv": "505",
+      "m_AccountlvupEXP": "3940800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "506": {
+      "m_bError": null,
+      "m_AccountLv": "506",
+      "m_AccountlvupEXP": "3954100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "507": {
+      "m_bError": null,
+      "m_AccountLv": "507",
+      "m_AccountlvupEXP": "3967400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "508": {
+      "m_bError": null,
+      "m_AccountLv": "508",
+      "m_AccountlvupEXP": "3980700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "509": {
+      "m_bError": null,
+      "m_AccountLv": "509",
+      "m_AccountlvupEXP": "3994100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "510": {
+      "m_bError": null,
+      "m_AccountLv": "510",
+      "m_AccountlvupEXP": "4007400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "511": {
+      "m_bError": null,
+      "m_AccountLv": "511",
+      "m_AccountlvupEXP": "4020800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "512": {
+      "m_bError": null,
+      "m_AccountLv": "512",
+      "m_AccountlvupEXP": "4034200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "513": {
+      "m_bError": null,
+      "m_AccountLv": "513",
+      "m_AccountlvupEXP": "4047600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "514": {
+      "m_bError": null,
+      "m_AccountLv": "514",
+      "m_AccountlvupEXP": "4061000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "515": {
+      "m_bError": null,
+      "m_AccountLv": "515",
+      "m_AccountlvupEXP": "4074400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "516": {
+      "m_bError": null,
+      "m_AccountLv": "516",
+      "m_AccountlvupEXP": "4087900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "517": {
+      "m_bError": null,
+      "m_AccountLv": "517",
+      "m_AccountlvupEXP": "4101400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "518": {
+      "m_bError": null,
+      "m_AccountLv": "518",
+      "m_AccountlvupEXP": "4114900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "519": {
+      "m_bError": null,
+      "m_AccountLv": "519",
+      "m_AccountlvupEXP": "4128400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "520": {
+      "m_bError": null,
+      "m_AccountLv": "520",
+      "m_AccountlvupEXP": "4141900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "521": {
+      "m_bError": null,
+      "m_AccountLv": "521",
+      "m_AccountlvupEXP": "4155500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "522": {
+      "m_bError": null,
+      "m_AccountLv": "522",
+      "m_AccountlvupEXP": "4169000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "523": {
+      "m_bError": null,
+      "m_AccountLv": "523",
+      "m_AccountlvupEXP": "4182600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "524": {
+      "m_bError": null,
+      "m_AccountLv": "524",
+      "m_AccountlvupEXP": "4196200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "525": {
+      "m_bError": null,
+      "m_AccountLv": "525",
+      "m_AccountlvupEXP": "4209800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "526": {
+      "m_bError": null,
+      "m_AccountLv": "526",
+      "m_AccountlvupEXP": "4223500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "527": {
+      "m_bError": null,
+      "m_AccountLv": "527",
+      "m_AccountlvupEXP": "4237100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "528": {
+      "m_bError": null,
+      "m_AccountLv": "528",
+      "m_AccountlvupEXP": "4250800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "529": {
+      "m_bError": null,
+      "m_AccountLv": "529",
+      "m_AccountlvupEXP": "4264500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "530": {
+      "m_bError": null,
+      "m_AccountLv": "530",
+      "m_AccountlvupEXP": "4278200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "531": {
+      "m_bError": null,
+      "m_AccountLv": "531",
+      "m_AccountlvupEXP": "4292000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "532": {
+      "m_bError": null,
+      "m_AccountLv": "532",
+      "m_AccountlvupEXP": "4305700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "533": {
+      "m_bError": null,
+      "m_AccountLv": "533",
+      "m_AccountlvupEXP": "4319500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "534": {
+      "m_bError": null,
+      "m_AccountLv": "534",
+      "m_AccountlvupEXP": "4333300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "535": {
+      "m_bError": null,
+      "m_AccountLv": "535",
+      "m_AccountlvupEXP": "4347100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "536": {
+      "m_bError": null,
+      "m_AccountLv": "536",
+      "m_AccountlvupEXP": "4360900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "537": {
+      "m_bError": null,
+      "m_AccountLv": "537",
+      "m_AccountlvupEXP": "4374700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "538": {
+      "m_bError": null,
+      "m_AccountLv": "538",
+      "m_AccountlvupEXP": "4388600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "539": {
+      "m_bError": null,
+      "m_AccountLv": "539",
+      "m_AccountlvupEXP": "4402500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "540": {
+      "m_bError": null,
+      "m_AccountLv": "540",
+      "m_AccountlvupEXP": "4416400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "541": {
+      "m_bError": null,
+      "m_AccountLv": "541",
+      "m_AccountlvupEXP": "4430300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "542": {
+      "m_bError": null,
+      "m_AccountLv": "542",
+      "m_AccountlvupEXP": "4444200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "543": {
+      "m_bError": null,
+      "m_AccountLv": "543",
+      "m_AccountlvupEXP": "4458200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "544": {
+      "m_bError": null,
+      "m_AccountLv": "544",
+      "m_AccountlvupEXP": "4472100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "545": {
+      "m_bError": null,
+      "m_AccountLv": "545",
+      "m_AccountlvupEXP": "4486100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "546": {
+      "m_bError": null,
+      "m_AccountLv": "546",
+      "m_AccountlvupEXP": "4500100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "547": {
+      "m_bError": null,
+      "m_AccountLv": "547",
+      "m_AccountlvupEXP": "4514100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "548": {
+      "m_bError": null,
+      "m_AccountLv": "548",
+      "m_AccountlvupEXP": "4528200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "549": {
+      "m_bError": null,
+      "m_AccountLv": "549",
+      "m_AccountlvupEXP": "4542200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "550": {
+      "m_bError": null,
+      "m_AccountLv": "550",
+      "m_AccountlvupEXP": "4556300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "551": {
+      "m_bError": null,
+      "m_AccountLv": "551",
+      "m_AccountlvupEXP": "4570400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "552": {
+      "m_bError": null,
+      "m_AccountLv": "552",
+      "m_AccountlvupEXP": "4584500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "553": {
+      "m_bError": null,
+      "m_AccountLv": "553",
+      "m_AccountlvupEXP": "4598600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "554": {
+      "m_bError": null,
+      "m_AccountLv": "554",
+      "m_AccountlvupEXP": "4612800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "555": {
+      "m_bError": null,
+      "m_AccountLv": "555",
+      "m_AccountlvupEXP": "4626900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "556": {
+      "m_bError": null,
+      "m_AccountLv": "556",
+      "m_AccountlvupEXP": "4641100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "557": {
+      "m_bError": null,
+      "m_AccountLv": "557",
+      "m_AccountlvupEXP": "4655300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "558": {
+      "m_bError": null,
+      "m_AccountLv": "558",
+      "m_AccountlvupEXP": "4669500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "559": {
+      "m_bError": null,
+      "m_AccountLv": "559",
+      "m_AccountlvupEXP": "4683800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "560": {
+      "m_bError": null,
+      "m_AccountLv": "560",
+      "m_AccountlvupEXP": "4698000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "561": {
+      "m_bError": null,
+      "m_AccountLv": "561",
+      "m_AccountlvupEXP": "4712300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "562": {
+      "m_bError": null,
+      "m_AccountLv": "562",
+      "m_AccountlvupEXP": "4726600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "563": {
+      "m_bError": null,
+      "m_AccountLv": "563",
+      "m_AccountlvupEXP": "4740900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "564": {
+      "m_bError": null,
+      "m_AccountLv": "564",
+      "m_AccountlvupEXP": "4755200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "565": {
+      "m_bError": null,
+      "m_AccountLv": "565",
+      "m_AccountlvupEXP": "4769600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "566": {
+      "m_bError": null,
+      "m_AccountLv": "566",
+      "m_AccountlvupEXP": "4783900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "567": {
+      "m_bError": null,
+      "m_AccountLv": "567",
+      "m_AccountlvupEXP": "4798300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "568": {
+      "m_bError": null,
+      "m_AccountLv": "568",
+      "m_AccountlvupEXP": "4812700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "569": {
+      "m_bError": null,
+      "m_AccountLv": "569",
+      "m_AccountlvupEXP": "4827100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "570": {
+      "m_bError": null,
+      "m_AccountLv": "570",
+      "m_AccountlvupEXP": "4841500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "571": {
+      "m_bError": null,
+      "m_AccountLv": "571",
+      "m_AccountlvupEXP": "4856000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "572": {
+      "m_bError": null,
+      "m_AccountLv": "572",
+      "m_AccountlvupEXP": "4870400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "573": {
+      "m_bError": null,
+      "m_AccountLv": "573",
+      "m_AccountlvupEXP": "4884900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "574": {
+      "m_bError": null,
+      "m_AccountLv": "574",
+      "m_AccountlvupEXP": "4899400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "575": {
+      "m_bError": null,
+      "m_AccountLv": "575",
+      "m_AccountlvupEXP": "4914000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "576": {
+      "m_bError": null,
+      "m_AccountLv": "576",
+      "m_AccountlvupEXP": "4928500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "577": {
+      "m_bError": null,
+      "m_AccountLv": "577",
+      "m_AccountlvupEXP": "4943000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "578": {
+      "m_bError": null,
+      "m_AccountLv": "578",
+      "m_AccountlvupEXP": "4957600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "579": {
+      "m_bError": null,
+      "m_AccountLv": "579",
+      "m_AccountlvupEXP": "4972200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "580": {
+      "m_bError": null,
+      "m_AccountLv": "580",
+      "m_AccountlvupEXP": "4986800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "581": {
+      "m_bError": null,
+      "m_AccountLv": "581",
+      "m_AccountlvupEXP": "5001400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "582": {
+      "m_bError": null,
+      "m_AccountLv": "582",
+      "m_AccountlvupEXP": "5016100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "583": {
+      "m_bError": null,
+      "m_AccountLv": "583",
+      "m_AccountlvupEXP": "5030700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "584": {
+      "m_bError": null,
+      "m_AccountLv": "584",
+      "m_AccountlvupEXP": "5045400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "585": {
+      "m_bError": null,
+      "m_AccountLv": "585",
+      "m_AccountlvupEXP": "5060100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "586": {
+      "m_bError": null,
+      "m_AccountLv": "586",
+      "m_AccountlvupEXP": "5074800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "587": {
+      "m_bError": null,
+      "m_AccountLv": "587",
+      "m_AccountlvupEXP": "5089600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "588": {
+      "m_bError": null,
+      "m_AccountLv": "588",
+      "m_AccountlvupEXP": "5104300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "589": {
+      "m_bError": null,
+      "m_AccountLv": "589",
+      "m_AccountlvupEXP": "5119100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "590": {
+      "m_bError": null,
+      "m_AccountLv": "590",
+      "m_AccountlvupEXP": "5133900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "591": {
+      "m_bError": null,
+      "m_AccountLv": "591",
+      "m_AccountlvupEXP": "5148700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "592": {
+      "m_bError": null,
+      "m_AccountLv": "592",
+      "m_AccountlvupEXP": "5163500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "593": {
+      "m_bError": null,
+      "m_AccountLv": "593",
+      "m_AccountlvupEXP": "5178300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "594": {
+      "m_bError": null,
+      "m_AccountLv": "594",
+      "m_AccountlvupEXP": "5193200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "595": {
+      "m_bError": null,
+      "m_AccountLv": "595",
+      "m_AccountlvupEXP": "5208000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "596": {
+      "m_bError": null,
+      "m_AccountLv": "596",
+      "m_AccountlvupEXP": "5222900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "597": {
+      "m_bError": null,
+      "m_AccountLv": "597",
+      "m_AccountlvupEXP": "5237800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "598": {
+      "m_bError": null,
+      "m_AccountLv": "598",
+      "m_AccountlvupEXP": "5252800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "599": {
+      "m_bError": null,
+      "m_AccountLv": "599",
+      "m_AccountlvupEXP": "5267700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "600": {
+      "m_bError": null,
+      "m_AccountLv": "600",
+      "m_AccountlvupEXP": "5282700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "601": {
+      "m_bError": null,
+      "m_AccountLv": "601",
+      "m_AccountlvupEXP": "5297600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "602": {
+      "m_bError": null,
+      "m_AccountLv": "602",
+      "m_AccountlvupEXP": "5312600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "603": {
+      "m_bError": null,
+      "m_AccountLv": "603",
+      "m_AccountlvupEXP": "5327600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "604": {
+      "m_bError": null,
+      "m_AccountLv": "604",
+      "m_AccountlvupEXP": "5342700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "605": {
+      "m_bError": null,
+      "m_AccountLv": "605",
+      "m_AccountlvupEXP": "5357700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "606": {
+      "m_bError": null,
+      "m_AccountLv": "606",
+      "m_AccountlvupEXP": "5372800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "607": {
+      "m_bError": null,
+      "m_AccountLv": "607",
+      "m_AccountlvupEXP": "5387900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "608": {
+      "m_bError": null,
+      "m_AccountLv": "608",
+      "m_AccountlvupEXP": "5403000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "609": {
+      "m_bError": null,
+      "m_AccountLv": "609",
+      "m_AccountlvupEXP": "5418100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "610": {
+      "m_bError": null,
+      "m_AccountLv": "610",
+      "m_AccountlvupEXP": "5433200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "611": {
+      "m_bError": null,
+      "m_AccountLv": "611",
+      "m_AccountlvupEXP": "5448400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "612": {
+      "m_bError": null,
+      "m_AccountLv": "612",
+      "m_AccountlvupEXP": "5463500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "613": {
+      "m_bError": null,
+      "m_AccountLv": "613",
+      "m_AccountlvupEXP": "5478700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "614": {
+      "m_bError": null,
+      "m_AccountLv": "614",
+      "m_AccountlvupEXP": "5493900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "615": {
+      "m_bError": null,
+      "m_AccountLv": "615",
+      "m_AccountlvupEXP": "5509100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "616": {
+      "m_bError": null,
+      "m_AccountLv": "616",
+      "m_AccountlvupEXP": "5524400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "617": {
+      "m_bError": null,
+      "m_AccountLv": "617",
+      "m_AccountlvupEXP": "5539600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "618": {
+      "m_bError": null,
+      "m_AccountLv": "618",
+      "m_AccountlvupEXP": "5554900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "619": {
+      "m_bError": null,
+      "m_AccountLv": "619",
+      "m_AccountlvupEXP": "5570200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "620": {
+      "m_bError": null,
+      "m_AccountLv": "620",
+      "m_AccountlvupEXP": "5585500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "621": {
+      "m_bError": null,
+      "m_AccountLv": "621",
+      "m_AccountlvupEXP": "5600800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "622": {
+      "m_bError": null,
+      "m_AccountLv": "622",
+      "m_AccountlvupEXP": "5616200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "623": {
+      "m_bError": null,
+      "m_AccountLv": "623",
+      "m_AccountlvupEXP": "5631500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "624": {
+      "m_bError": null,
+      "m_AccountLv": "624",
+      "m_AccountlvupEXP": "5646900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "625": {
+      "m_bError": null,
+      "m_AccountLv": "625",
+      "m_AccountlvupEXP": "5662300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "626": {
+      "m_bError": null,
+      "m_AccountLv": "626",
+      "m_AccountlvupEXP": "5677700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "627": {
+      "m_bError": null,
+      "m_AccountLv": "627",
+      "m_AccountlvupEXP": "5693100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "628": {
+      "m_bError": null,
+      "m_AccountLv": "628",
+      "m_AccountlvupEXP": "5708600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "629": {
+      "m_bError": null,
+      "m_AccountLv": "629",
+      "m_AccountlvupEXP": "5724000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "630": {
+      "m_bError": null,
+      "m_AccountLv": "630",
+      "m_AccountlvupEXP": "5739500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "631": {
+      "m_bError": null,
+      "m_AccountLv": "631",
+      "m_AccountlvupEXP": "5755000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "632": {
+      "m_bError": null,
+      "m_AccountLv": "632",
+      "m_AccountlvupEXP": "5770500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "633": {
+      "m_bError": null,
+      "m_AccountLv": "633",
+      "m_AccountlvupEXP": "5786100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "634": {
+      "m_bError": null,
+      "m_AccountLv": "634",
+      "m_AccountlvupEXP": "5801600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "635": {
+      "m_bError": null,
+      "m_AccountLv": "635",
+      "m_AccountlvupEXP": "5817200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "636": {
+      "m_bError": null,
+      "m_AccountLv": "636",
+      "m_AccountlvupEXP": "5832800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "637": {
+      "m_bError": null,
+      "m_AccountLv": "637",
+      "m_AccountlvupEXP": "5848300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "638": {
+      "m_bError": null,
+      "m_AccountLv": "638",
+      "m_AccountlvupEXP": "5864000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "639": {
+      "m_bError": null,
+      "m_AccountLv": "639",
+      "m_AccountlvupEXP": "5879600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "640": {
+      "m_bError": null,
+      "m_AccountLv": "640",
+      "m_AccountlvupEXP": "5895300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "641": {
+      "m_bError": null,
+      "m_AccountLv": "641",
+      "m_AccountlvupEXP": "5910900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "642": {
+      "m_bError": null,
+      "m_AccountLv": "642",
+      "m_AccountlvupEXP": "5926600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "643": {
+      "m_bError": null,
+      "m_AccountLv": "643",
+      "m_AccountlvupEXP": "5942300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "644": {
+      "m_bError": null,
+      "m_AccountLv": "644",
+      "m_AccountlvupEXP": "5958000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "645": {
+      "m_bError": null,
+      "m_AccountLv": "645",
+      "m_AccountlvupEXP": "5973800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "646": {
+      "m_bError": null,
+      "m_AccountLv": "646",
+      "m_AccountlvupEXP": "5989500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "647": {
+      "m_bError": null,
+      "m_AccountLv": "647",
+      "m_AccountlvupEXP": "6005300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "648": {
+      "m_bError": null,
+      "m_AccountLv": "648",
+      "m_AccountlvupEXP": "6021100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "649": {
+      "m_bError": null,
+      "m_AccountLv": "649",
+      "m_AccountlvupEXP": "6036900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "650": {
+      "m_bError": null,
+      "m_AccountLv": "650",
+      "m_AccountlvupEXP": "6052700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "651": {
+      "m_bError": null,
+      "m_AccountLv": "651",
+      "m_AccountlvupEXP": "6068500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "652": {
+      "m_bError": null,
+      "m_AccountLv": "652",
+      "m_AccountlvupEXP": "6084400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "653": {
+      "m_bError": null,
+      "m_AccountLv": "653",
+      "m_AccountlvupEXP": "6100300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "654": {
+      "m_bError": null,
+      "m_AccountLv": "654",
+      "m_AccountlvupEXP": "6116200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "655": {
+      "m_bError": null,
+      "m_AccountLv": "655",
+      "m_AccountlvupEXP": "6132100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "656": {
+      "m_bError": null,
+      "m_AccountLv": "656",
+      "m_AccountlvupEXP": "6148000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "657": {
+      "m_bError": null,
+      "m_AccountLv": "657",
+      "m_AccountlvupEXP": "6163900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "658": {
+      "m_bError": null,
+      "m_AccountLv": "658",
+      "m_AccountlvupEXP": "6179900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "659": {
+      "m_bError": null,
+      "m_AccountLv": "659",
+      "m_AccountlvupEXP": "6195900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "660": {
+      "m_bError": null,
+      "m_AccountLv": "660",
+      "m_AccountlvupEXP": "6211900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "661": {
+      "m_bError": null,
+      "m_AccountLv": "661",
+      "m_AccountlvupEXP": "6227900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "662": {
+      "m_bError": null,
+      "m_AccountLv": "662",
+      "m_AccountlvupEXP": "6243900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "663": {
+      "m_bError": null,
+      "m_AccountLv": "663",
+      "m_AccountlvupEXP": "6259900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "664": {
+      "m_bError": null,
+      "m_AccountLv": "664",
+      "m_AccountlvupEXP": "6276000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "665": {
+      "m_bError": null,
+      "m_AccountLv": "665",
+      "m_AccountlvupEXP": "6292100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "666": {
+      "m_bError": null,
+      "m_AccountLv": "666",
+      "m_AccountlvupEXP": "6308200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "667": {
+      "m_bError": null,
+      "m_AccountLv": "667",
+      "m_AccountlvupEXP": "6324300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "668": {
+      "m_bError": null,
+      "m_AccountLv": "668",
+      "m_AccountlvupEXP": "6340400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "669": {
+      "m_bError": null,
+      "m_AccountLv": "669",
+      "m_AccountlvupEXP": "6356500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "670": {
+      "m_bError": null,
+      "m_AccountLv": "670",
+      "m_AccountlvupEXP": "6372700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "671": {
+      "m_bError": null,
+      "m_AccountLv": "671",
+      "m_AccountlvupEXP": "6388900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "672": {
+      "m_bError": null,
+      "m_AccountLv": "672",
+      "m_AccountlvupEXP": "6405100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "673": {
+      "m_bError": null,
+      "m_AccountLv": "673",
+      "m_AccountlvupEXP": "6421300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "674": {
+      "m_bError": null,
+      "m_AccountLv": "674",
+      "m_AccountlvupEXP": "6437500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "675": {
+      "m_bError": null,
+      "m_AccountLv": "675",
+      "m_AccountlvupEXP": "6453800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "676": {
+      "m_bError": null,
+      "m_AccountLv": "676",
+      "m_AccountlvupEXP": "6470000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "677": {
+      "m_bError": null,
+      "m_AccountLv": "677",
+      "m_AccountlvupEXP": "6486300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "678": {
+      "m_bError": null,
+      "m_AccountLv": "678",
+      "m_AccountlvupEXP": "6502600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "679": {
+      "m_bError": null,
+      "m_AccountLv": "679",
+      "m_AccountlvupEXP": "6518900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "680": {
+      "m_bError": null,
+      "m_AccountLv": "680",
+      "m_AccountlvupEXP": "6535200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "681": {
+      "m_bError": null,
+      "m_AccountLv": "681",
+      "m_AccountlvupEXP": "6551600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "682": {
+      "m_bError": null,
+      "m_AccountLv": "682",
+      "m_AccountlvupEXP": "6568000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "683": {
+      "m_bError": null,
+      "m_AccountLv": "683",
+      "m_AccountlvupEXP": "6584300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "684": {
+      "m_bError": null,
+      "m_AccountLv": "684",
+      "m_AccountlvupEXP": "6600700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "685": {
+      "m_bError": null,
+      "m_AccountLv": "685",
+      "m_AccountlvupEXP": "6617100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "686": {
+      "m_bError": null,
+      "m_AccountLv": "686",
+      "m_AccountlvupEXP": "6633600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "687": {
+      "m_bError": null,
+      "m_AccountLv": "687",
+      "m_AccountlvupEXP": "6650000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "688": {
+      "m_bError": null,
+      "m_AccountLv": "688",
+      "m_AccountlvupEXP": "6666500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "689": {
+      "m_bError": null,
+      "m_AccountLv": "689",
+      "m_AccountlvupEXP": "6683000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "690": {
+      "m_bError": null,
+      "m_AccountLv": "690",
+      "m_AccountlvupEXP": "6699500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "691": {
+      "m_bError": null,
+      "m_AccountLv": "691",
+      "m_AccountlvupEXP": "6716000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "692": {
+      "m_bError": null,
+      "m_AccountLv": "692",
+      "m_AccountlvupEXP": "6732500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "693": {
+      "m_bError": null,
+      "m_AccountLv": "693",
+      "m_AccountlvupEXP": "6749100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "694": {
+      "m_bError": null,
+      "m_AccountLv": "694",
+      "m_AccountlvupEXP": "6765600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "695": {
+      "m_bError": null,
+      "m_AccountLv": "695",
+      "m_AccountlvupEXP": "6782200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "696": {
+      "m_bError": null,
+      "m_AccountLv": "696",
+      "m_AccountlvupEXP": "6798800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "697": {
+      "m_bError": null,
+      "m_AccountLv": "697",
+      "m_AccountlvupEXP": "6815400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "698": {
+      "m_bError": null,
+      "m_AccountLv": "698",
+      "m_AccountlvupEXP": "6832100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "699": {
+      "m_bError": null,
+      "m_AccountLv": "699",
+      "m_AccountlvupEXP": "6848700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "700": {
+      "m_bError": null,
+      "m_AccountLv": "700",
+      "m_AccountlvupEXP": "6865400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "701": {
+      "m_bError": null,
+      "m_AccountLv": "701",
+      "m_AccountlvupEXP": "6882000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "702": {
+      "m_bError": null,
+      "m_AccountLv": "702",
+      "m_AccountlvupEXP": "6898700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "703": {
+      "m_bError": null,
+      "m_AccountLv": "703",
+      "m_AccountlvupEXP": "6915500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "704": {
+      "m_bError": null,
+      "m_AccountLv": "704",
+      "m_AccountlvupEXP": "6932200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "705": {
+      "m_bError": null,
+      "m_AccountLv": "705",
+      "m_AccountlvupEXP": "6948900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "706": {
+      "m_bError": null,
+      "m_AccountLv": "706",
+      "m_AccountlvupEXP": "6965700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "707": {
+      "m_bError": null,
+      "m_AccountLv": "707",
+      "m_AccountlvupEXP": "6982500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "708": {
+      "m_bError": null,
+      "m_AccountLv": "708",
+      "m_AccountlvupEXP": "6999300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "709": {
+      "m_bError": null,
+      "m_AccountLv": "709",
+      "m_AccountlvupEXP": "7016100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "710": {
+      "m_bError": null,
+      "m_AccountLv": "710",
+      "m_AccountlvupEXP": "7032900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "711": {
+      "m_bError": null,
+      "m_AccountLv": "711",
+      "m_AccountlvupEXP": "7049800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "712": {
+      "m_bError": null,
+      "m_AccountLv": "712",
+      "m_AccountlvupEXP": "7066600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "713": {
+      "m_bError": null,
+      "m_AccountLv": "713",
+      "m_AccountlvupEXP": "7083500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "714": {
+      "m_bError": null,
+      "m_AccountLv": "714",
+      "m_AccountlvupEXP": "7100400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "715": {
+      "m_bError": null,
+      "m_AccountLv": "715",
+      "m_AccountlvupEXP": "7117300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "716": {
+      "m_bError": null,
+      "m_AccountLv": "716",
+      "m_AccountlvupEXP": "7134300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "717": {
+      "m_bError": null,
+      "m_AccountLv": "717",
+      "m_AccountlvupEXP": "7151200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "718": {
+      "m_bError": null,
+      "m_AccountLv": "718",
+      "m_AccountlvupEXP": "7168200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "719": {
+      "m_bError": null,
+      "m_AccountLv": "719",
+      "m_AccountlvupEXP": "7185200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "720": {
+      "m_bError": null,
+      "m_AccountLv": "720",
+      "m_AccountlvupEXP": "7202200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "721": {
+      "m_bError": null,
+      "m_AccountLv": "721",
+      "m_AccountlvupEXP": "7219200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "722": {
+      "m_bError": null,
+      "m_AccountLv": "722",
+      "m_AccountlvupEXP": "7236200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "723": {
+      "m_bError": null,
+      "m_AccountLv": "723",
+      "m_AccountlvupEXP": "7253200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "724": {
+      "m_bError": null,
+      "m_AccountLv": "724",
+      "m_AccountlvupEXP": "7270300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "725": {
+      "m_bError": null,
+      "m_AccountLv": "725",
+      "m_AccountlvupEXP": "7287400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "726": {
+      "m_bError": null,
+      "m_AccountLv": "726",
+      "m_AccountlvupEXP": "7304500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "727": {
+      "m_bError": null,
+      "m_AccountLv": "727",
+      "m_AccountlvupEXP": "7321600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "728": {
+      "m_bError": null,
+      "m_AccountLv": "728",
+      "m_AccountlvupEXP": "7338700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "729": {
+      "m_bError": null,
+      "m_AccountLv": "729",
+      "m_AccountlvupEXP": "7355900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "730": {
+      "m_bError": null,
+      "m_AccountLv": "730",
+      "m_AccountlvupEXP": "7373000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "731": {
+      "m_bError": null,
+      "m_AccountLv": "731",
+      "m_AccountlvupEXP": "7390200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "732": {
+      "m_bError": null,
+      "m_AccountLv": "732",
+      "m_AccountlvupEXP": "7407400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "733": {
+      "m_bError": null,
+      "m_AccountLv": "733",
+      "m_AccountlvupEXP": "7424600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "734": {
+      "m_bError": null,
+      "m_AccountLv": "734",
+      "m_AccountlvupEXP": "7441800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "735": {
+      "m_bError": null,
+      "m_AccountLv": "735",
+      "m_AccountlvupEXP": "7459100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "736": {
+      "m_bError": null,
+      "m_AccountLv": "736",
+      "m_AccountlvupEXP": "7476300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "737": {
+      "m_bError": null,
+      "m_AccountLv": "737",
+      "m_AccountlvupEXP": "7493600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "738": {
+      "m_bError": null,
+      "m_AccountLv": "738",
+      "m_AccountlvupEXP": "7510900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "739": {
+      "m_bError": null,
+      "m_AccountLv": "739",
+      "m_AccountlvupEXP": "7528200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "740": {
+      "m_bError": null,
+      "m_AccountLv": "740",
+      "m_AccountlvupEXP": "7545600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "741": {
+      "m_bError": null,
+      "m_AccountLv": "741",
+      "m_AccountlvupEXP": "7562900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "742": {
+      "m_bError": null,
+      "m_AccountLv": "742",
+      "m_AccountlvupEXP": "7580300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "743": {
+      "m_bError": null,
+      "m_AccountLv": "743",
+      "m_AccountlvupEXP": "7597600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "744": {
+      "m_bError": null,
+      "m_AccountLv": "744",
+      "m_AccountlvupEXP": "7615000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "745": {
+      "m_bError": null,
+      "m_AccountLv": "745",
+      "m_AccountlvupEXP": "7632400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "746": {
+      "m_bError": null,
+      "m_AccountLv": "746",
+      "m_AccountlvupEXP": "7649900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "747": {
+      "m_bError": null,
+      "m_AccountLv": "747",
+      "m_AccountlvupEXP": "7667300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "748": {
+      "m_bError": null,
+      "m_AccountLv": "748",
+      "m_AccountlvupEXP": "7684800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "749": {
+      "m_bError": null,
+      "m_AccountLv": "749",
+      "m_AccountlvupEXP": "7702200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "750": {
+      "m_bError": null,
+      "m_AccountLv": "750",
+      "m_AccountlvupEXP": "7719700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "751": {
+      "m_bError": null,
+      "m_AccountLv": "751",
+      "m_AccountlvupEXP": "7737200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "752": {
+      "m_bError": null,
+      "m_AccountLv": "752",
+      "m_AccountlvupEXP": "7754700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "753": {
+      "m_bError": null,
+      "m_AccountLv": "753",
+      "m_AccountlvupEXP": "7772300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "754": {
+      "m_bError": null,
+      "m_AccountLv": "754",
+      "m_AccountlvupEXP": "7789800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "755": {
+      "m_bError": null,
+      "m_AccountLv": "755",
+      "m_AccountlvupEXP": "7807400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "756": {
+      "m_bError": null,
+      "m_AccountLv": "756",
+      "m_AccountlvupEXP": "7825000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "757": {
+      "m_bError": null,
+      "m_AccountLv": "757",
+      "m_AccountlvupEXP": "7842600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "758": {
+      "m_bError": null,
+      "m_AccountLv": "758",
+      "m_AccountlvupEXP": "7860200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "759": {
+      "m_bError": null,
+      "m_AccountLv": "759",
+      "m_AccountlvupEXP": "7877900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "760": {
+      "m_bError": null,
+      "m_AccountLv": "760",
+      "m_AccountlvupEXP": "7895500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "761": {
+      "m_bError": null,
+      "m_AccountLv": "761",
+      "m_AccountlvupEXP": "7913200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "762": {
+      "m_bError": null,
+      "m_AccountLv": "762",
+      "m_AccountlvupEXP": "7930900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "763": {
+      "m_bError": null,
+      "m_AccountLv": "763",
+      "m_AccountlvupEXP": "7948600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "764": {
+      "m_bError": null,
+      "m_AccountLv": "764",
+      "m_AccountlvupEXP": "7966300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "765": {
+      "m_bError": null,
+      "m_AccountLv": "765",
+      "m_AccountlvupEXP": "7984000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "766": {
+      "m_bError": null,
+      "m_AccountLv": "766",
+      "m_AccountlvupEXP": "8001800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "767": {
+      "m_bError": null,
+      "m_AccountLv": "767",
+      "m_AccountlvupEXP": "8019500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "768": {
+      "m_bError": null,
+      "m_AccountLv": "768",
+      "m_AccountlvupEXP": "8037300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "769": {
+      "m_bError": null,
+      "m_AccountLv": "769",
+      "m_AccountlvupEXP": "8055100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "770": {
+      "m_bError": null,
+      "m_AccountLv": "770",
+      "m_AccountlvupEXP": "8072900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "771": {
+      "m_bError": null,
+      "m_AccountLv": "771",
+      "m_AccountlvupEXP": "8090800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "772": {
+      "m_bError": null,
+      "m_AccountLv": "772",
+      "m_AccountlvupEXP": "8108600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "773": {
+      "m_bError": null,
+      "m_AccountLv": "773",
+      "m_AccountlvupEXP": "8126500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "774": {
+      "m_bError": null,
+      "m_AccountLv": "774",
+      "m_AccountlvupEXP": "8144400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "775": {
+      "m_bError": null,
+      "m_AccountLv": "775",
+      "m_AccountlvupEXP": "8162300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "776": {
+      "m_bError": null,
+      "m_AccountLv": "776",
+      "m_AccountlvupEXP": "8180200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "777": {
+      "m_bError": null,
+      "m_AccountLv": "777",
+      "m_AccountlvupEXP": "8198100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "778": {
+      "m_bError": null,
+      "m_AccountLv": "778",
+      "m_AccountlvupEXP": "8216000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "779": {
+      "m_bError": null,
+      "m_AccountLv": "779",
+      "m_AccountlvupEXP": "8234000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "780": {
+      "m_bError": null,
+      "m_AccountLv": "780",
+      "m_AccountlvupEXP": "8252000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "781": {
+      "m_bError": null,
+      "m_AccountLv": "781",
+      "m_AccountlvupEXP": "8270000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "782": {
+      "m_bError": null,
+      "m_AccountLv": "782",
+      "m_AccountlvupEXP": "8288000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "783": {
+      "m_bError": null,
+      "m_AccountLv": "783",
+      "m_AccountlvupEXP": "8306000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "784": {
+      "m_bError": null,
+      "m_AccountLv": "784",
+      "m_AccountlvupEXP": "8324100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "785": {
+      "m_bError": null,
+      "m_AccountLv": "785",
+      "m_AccountlvupEXP": "8342100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "786": {
+      "m_bError": null,
+      "m_AccountLv": "786",
+      "m_AccountlvupEXP": "8360200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "787": {
+      "m_bError": null,
+      "m_AccountLv": "787",
+      "m_AccountlvupEXP": "8378300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "788": {
+      "m_bError": null,
+      "m_AccountLv": "788",
+      "m_AccountlvupEXP": "8396400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "789": {
+      "m_bError": null,
+      "m_AccountLv": "789",
+      "m_AccountlvupEXP": "8414500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "790": {
+      "m_bError": null,
+      "m_AccountLv": "790",
+      "m_AccountlvupEXP": "8432600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "791": {
+      "m_bError": null,
+      "m_AccountLv": "791",
+      "m_AccountlvupEXP": "8450800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "792": {
+      "m_bError": null,
+      "m_AccountLv": "792",
+      "m_AccountlvupEXP": "8469000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "793": {
+      "m_bError": null,
+      "m_AccountLv": "793",
+      "m_AccountlvupEXP": "8487100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "794": {
+      "m_bError": null,
+      "m_AccountLv": "794",
+      "m_AccountlvupEXP": "8505400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "795": {
+      "m_bError": null,
+      "m_AccountLv": "795",
+      "m_AccountlvupEXP": "8523600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "796": {
+      "m_bError": null,
+      "m_AccountLv": "796",
+      "m_AccountlvupEXP": "8541800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "797": {
+      "m_bError": null,
+      "m_AccountLv": "797",
+      "m_AccountlvupEXP": "8560100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "798": {
+      "m_bError": null,
+      "m_AccountLv": "798",
+      "m_AccountlvupEXP": "8578300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "799": {
+      "m_bError": null,
+      "m_AccountLv": "799",
+      "m_AccountlvupEXP": "8596600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "800": {
+      "m_bError": null,
+      "m_AccountLv": "800",
+      "m_AccountlvupEXP": "8614900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "801": {
+      "m_bError": null,
+      "m_AccountLv": "801",
+      "m_AccountlvupEXP": "8633200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "802": {
+      "m_bError": null,
+      "m_AccountLv": "802",
+      "m_AccountlvupEXP": "8651500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "803": {
+      "m_bError": null,
+      "m_AccountLv": "803",
+      "m_AccountlvupEXP": "8669900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "804": {
+      "m_bError": null,
+      "m_AccountLv": "804",
+      "m_AccountlvupEXP": "8688300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "805": {
+      "m_bError": null,
+      "m_AccountLv": "805",
+      "m_AccountlvupEXP": "8706600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "806": {
+      "m_bError": null,
+      "m_AccountLv": "806",
+      "m_AccountlvupEXP": "8725000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "807": {
+      "m_bError": null,
+      "m_AccountLv": "807",
+      "m_AccountlvupEXP": "8743400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "808": {
+      "m_bError": null,
+      "m_AccountLv": "808",
+      "m_AccountlvupEXP": "8761900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "809": {
+      "m_bError": null,
+      "m_AccountLv": "809",
+      "m_AccountlvupEXP": "8780300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "810": {
+      "m_bError": null,
+      "m_AccountLv": "810",
+      "m_AccountlvupEXP": "8798800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "811": {
+      "m_bError": null,
+      "m_AccountLv": "811",
+      "m_AccountlvupEXP": "8817200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "812": {
+      "m_bError": null,
+      "m_AccountLv": "812",
+      "m_AccountlvupEXP": "8835700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "813": {
+      "m_bError": null,
+      "m_AccountLv": "813",
+      "m_AccountlvupEXP": "8854200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "814": {
+      "m_bError": null,
+      "m_AccountLv": "814",
+      "m_AccountlvupEXP": "8872800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "815": {
+      "m_bError": null,
+      "m_AccountLv": "815",
+      "m_AccountlvupEXP": "8891300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "816": {
+      "m_bError": null,
+      "m_AccountLv": "816",
+      "m_AccountlvupEXP": "8909900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "817": {
+      "m_bError": null,
+      "m_AccountLv": "817",
+      "m_AccountlvupEXP": "8928400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "818": {
+      "m_bError": null,
+      "m_AccountLv": "818",
+      "m_AccountlvupEXP": "8947000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "819": {
+      "m_bError": null,
+      "m_AccountLv": "819",
+      "m_AccountlvupEXP": "8965600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "820": {
+      "m_bError": null,
+      "m_AccountLv": "820",
+      "m_AccountlvupEXP": "8984200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "821": {
+      "m_bError": null,
+      "m_AccountLv": "821",
+      "m_AccountlvupEXP": "9002900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "822": {
+      "m_bError": null,
+      "m_AccountLv": "822",
+      "m_AccountlvupEXP": "9021500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "823": {
+      "m_bError": null,
+      "m_AccountLv": "823",
+      "m_AccountlvupEXP": "9040200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "824": {
+      "m_bError": null,
+      "m_AccountLv": "824",
+      "m_AccountlvupEXP": "9058900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "825": {
+      "m_bError": null,
+      "m_AccountLv": "825",
+      "m_AccountlvupEXP": "9077600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "826": {
+      "m_bError": null,
+      "m_AccountLv": "826",
+      "m_AccountlvupEXP": "9096300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "827": {
+      "m_bError": null,
+      "m_AccountLv": "827",
+      "m_AccountlvupEXP": "9115000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "828": {
+      "m_bError": null,
+      "m_AccountLv": "828",
+      "m_AccountlvupEXP": "9133800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "829": {
+      "m_bError": null,
+      "m_AccountLv": "829",
+      "m_AccountlvupEXP": "9152500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "830": {
+      "m_bError": null,
+      "m_AccountLv": "830",
+      "m_AccountlvupEXP": "9171300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "831": {
+      "m_bError": null,
+      "m_AccountLv": "831",
+      "m_AccountlvupEXP": "9190100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "832": {
+      "m_bError": null,
+      "m_AccountLv": "832",
+      "m_AccountlvupEXP": "9208900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "833": {
+      "m_bError": null,
+      "m_AccountLv": "833",
+      "m_AccountlvupEXP": "9227700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "834": {
+      "m_bError": null,
+      "m_AccountLv": "834",
+      "m_AccountlvupEXP": "9246600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "835": {
+      "m_bError": null,
+      "m_AccountLv": "835",
+      "m_AccountlvupEXP": "9265400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "836": {
+      "m_bError": null,
+      "m_AccountLv": "836",
+      "m_AccountlvupEXP": "9284300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "837": {
+      "m_bError": null,
+      "m_AccountLv": "837",
+      "m_AccountlvupEXP": "9303200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "838": {
+      "m_bError": null,
+      "m_AccountLv": "838",
+      "m_AccountlvupEXP": "9322100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "839": {
+      "m_bError": null,
+      "m_AccountLv": "839",
+      "m_AccountlvupEXP": "9341000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "840": {
+      "m_bError": null,
+      "m_AccountLv": "840",
+      "m_AccountlvupEXP": "9359900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "841": {
+      "m_bError": null,
+      "m_AccountLv": "841",
+      "m_AccountlvupEXP": "9378900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "842": {
+      "m_bError": null,
+      "m_AccountLv": "842",
+      "m_AccountlvupEXP": "9397800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "843": {
+      "m_bError": null,
+      "m_AccountLv": "843",
+      "m_AccountlvupEXP": "9416800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "844": {
+      "m_bError": null,
+      "m_AccountLv": "844",
+      "m_AccountlvupEXP": "9435800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "845": {
+      "m_bError": null,
+      "m_AccountLv": "845",
+      "m_AccountlvupEXP": "9454800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "846": {
+      "m_bError": null,
+      "m_AccountLv": "846",
+      "m_AccountlvupEXP": "9473900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "847": {
+      "m_bError": null,
+      "m_AccountLv": "847",
+      "m_AccountlvupEXP": "9492900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "848": {
+      "m_bError": null,
+      "m_AccountLv": "848",
+      "m_AccountlvupEXP": "9512000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "849": {
+      "m_bError": null,
+      "m_AccountLv": "849",
+      "m_AccountlvupEXP": "9531100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "850": {
+      "m_bError": null,
+      "m_AccountLv": "850",
+      "m_AccountlvupEXP": "9550100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "851": {
+      "m_bError": null,
+      "m_AccountLv": "851",
+      "m_AccountlvupEXP": "9569300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "852": {
+      "m_bError": null,
+      "m_AccountLv": "852",
+      "m_AccountlvupEXP": "9588400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "853": {
+      "m_bError": null,
+      "m_AccountLv": "853",
+      "m_AccountlvupEXP": "9607500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "854": {
+      "m_bError": null,
+      "m_AccountLv": "854",
+      "m_AccountlvupEXP": "9626700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "855": {
+      "m_bError": null,
+      "m_AccountLv": "855",
+      "m_AccountlvupEXP": "9645800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "856": {
+      "m_bError": null,
+      "m_AccountLv": "856",
+      "m_AccountlvupEXP": "9665000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "857": {
+      "m_bError": null,
+      "m_AccountLv": "857",
+      "m_AccountlvupEXP": "9684200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "858": {
+      "m_bError": null,
+      "m_AccountLv": "858",
+      "m_AccountlvupEXP": "9703400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "859": {
+      "m_bError": null,
+      "m_AccountLv": "859",
+      "m_AccountlvupEXP": "9722700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "860": {
+      "m_bError": null,
+      "m_AccountLv": "860",
+      "m_AccountlvupEXP": "9741900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "861": {
+      "m_bError": null,
+      "m_AccountLv": "861",
+      "m_AccountlvupEXP": "9761200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "862": {
+      "m_bError": null,
+      "m_AccountLv": "862",
+      "m_AccountlvupEXP": "9780500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "863": {
+      "m_bError": null,
+      "m_AccountLv": "863",
+      "m_AccountlvupEXP": "9799800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "864": {
+      "m_bError": null,
+      "m_AccountLv": "864",
+      "m_AccountlvupEXP": "9819100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "865": {
+      "m_bError": null,
+      "m_AccountLv": "865",
+      "m_AccountlvupEXP": "9838400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "866": {
+      "m_bError": null,
+      "m_AccountLv": "866",
+      "m_AccountlvupEXP": "9857800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "867": {
+      "m_bError": null,
+      "m_AccountLv": "867",
+      "m_AccountlvupEXP": "9877100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "868": {
+      "m_bError": null,
+      "m_AccountLv": "868",
+      "m_AccountlvupEXP": "9896500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "869": {
+      "m_bError": null,
+      "m_AccountLv": "869",
+      "m_AccountlvupEXP": "9915900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "870": {
+      "m_bError": null,
+      "m_AccountLv": "870",
+      "m_AccountlvupEXP": "9935300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "871": {
+      "m_bError": null,
+      "m_AccountLv": "871",
+      "m_AccountlvupEXP": "9954700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "872": {
+      "m_bError": null,
+      "m_AccountLv": "872",
+      "m_AccountlvupEXP": "9974100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "873": {
+      "m_bError": null,
+      "m_AccountLv": "873",
+      "m_AccountlvupEXP": "9993600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "874": {
+      "m_bError": null,
+      "m_AccountLv": "874",
+      "m_AccountlvupEXP": "10013100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "875": {
+      "m_bError": null,
+      "m_AccountLv": "875",
+      "m_AccountlvupEXP": "10032600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "876": {
+      "m_bError": null,
+      "m_AccountLv": "876",
+      "m_AccountlvupEXP": "10052100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "877": {
+      "m_bError": null,
+      "m_AccountLv": "877",
+      "m_AccountlvupEXP": "10071600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "878": {
+      "m_bError": null,
+      "m_AccountLv": "878",
+      "m_AccountlvupEXP": "10091100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "879": {
+      "m_bError": null,
+      "m_AccountLv": "879",
+      "m_AccountlvupEXP": "10110600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "880": {
+      "m_bError": null,
+      "m_AccountLv": "880",
+      "m_AccountlvupEXP": "10130200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "881": {
+      "m_bError": null,
+      "m_AccountLv": "881",
+      "m_AccountlvupEXP": "10149800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "882": {
+      "m_bError": null,
+      "m_AccountLv": "882",
+      "m_AccountlvupEXP": "10169400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "883": {
+      "m_bError": null,
+      "m_AccountLv": "883",
+      "m_AccountlvupEXP": "10189000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "884": {
+      "m_bError": null,
+      "m_AccountLv": "884",
+      "m_AccountlvupEXP": "10208600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "885": {
+      "m_bError": null,
+      "m_AccountLv": "885",
+      "m_AccountlvupEXP": "10228300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "886": {
+      "m_bError": null,
+      "m_AccountLv": "886",
+      "m_AccountlvupEXP": "10247900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "887": {
+      "m_bError": null,
+      "m_AccountLv": "887",
+      "m_AccountlvupEXP": "10267600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "888": {
+      "m_bError": null,
+      "m_AccountLv": "888",
+      "m_AccountlvupEXP": "10287300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "889": {
+      "m_bError": null,
+      "m_AccountLv": "889",
+      "m_AccountlvupEXP": "10307000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "890": {
+      "m_bError": null,
+      "m_AccountLv": "890",
+      "m_AccountlvupEXP": "10326700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "891": {
+      "m_bError": null,
+      "m_AccountLv": "891",
+      "m_AccountlvupEXP": "10346400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "892": {
+      "m_bError": null,
+      "m_AccountLv": "892",
+      "m_AccountlvupEXP": "10366200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "893": {
+      "m_bError": null,
+      "m_AccountLv": "893",
+      "m_AccountlvupEXP": "10385900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "894": {
+      "m_bError": null,
+      "m_AccountLv": "894",
+      "m_AccountlvupEXP": "10405700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "895": {
+      "m_bError": null,
+      "m_AccountLv": "895",
+      "m_AccountlvupEXP": "10425500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "896": {
+      "m_bError": null,
+      "m_AccountLv": "896",
+      "m_AccountlvupEXP": "10445300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "897": {
+      "m_bError": null,
+      "m_AccountLv": "897",
+      "m_AccountlvupEXP": "10465100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "898": {
+      "m_bError": null,
+      "m_AccountLv": "898",
+      "m_AccountlvupEXP": "10485000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "899": {
+      "m_bError": null,
+      "m_AccountLv": "899",
+      "m_AccountlvupEXP": "10504800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "900": {
+      "m_bError": null,
+      "m_AccountLv": "900",
+      "m_AccountlvupEXP": "10524700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "901": {
+      "m_bError": null,
+      "m_AccountLv": "901",
+      "m_AccountlvupEXP": "10544600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "902": {
+      "m_bError": null,
+      "m_AccountLv": "902",
+      "m_AccountlvupEXP": "10564500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "903": {
+      "m_bError": null,
+      "m_AccountLv": "903",
+      "m_AccountlvupEXP": "10584400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "904": {
+      "m_bError": null,
+      "m_AccountLv": "904",
+      "m_AccountlvupEXP": "10604400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "905": {
+      "m_bError": null,
+      "m_AccountLv": "905",
+      "m_AccountlvupEXP": "10624300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "906": {
+      "m_bError": null,
+      "m_AccountLv": "906",
+      "m_AccountlvupEXP": "10644300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "907": {
+      "m_bError": null,
+      "m_AccountLv": "907",
+      "m_AccountlvupEXP": "10664300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "908": {
+      "m_bError": null,
+      "m_AccountLv": "908",
+      "m_AccountlvupEXP": "10684200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "909": {
+      "m_bError": null,
+      "m_AccountLv": "909",
+      "m_AccountlvupEXP": "10704300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "910": {
+      "m_bError": null,
+      "m_AccountLv": "910",
+      "m_AccountlvupEXP": "10724300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "911": {
+      "m_bError": null,
+      "m_AccountLv": "911",
+      "m_AccountlvupEXP": "10744300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "912": {
+      "m_bError": null,
+      "m_AccountLv": "912",
+      "m_AccountlvupEXP": "10764400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "913": {
+      "m_bError": null,
+      "m_AccountLv": "913",
+      "m_AccountlvupEXP": "10784500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "914": {
+      "m_bError": null,
+      "m_AccountLv": "914",
+      "m_AccountlvupEXP": "10804500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "915": {
+      "m_bError": null,
+      "m_AccountLv": "915",
+      "m_AccountlvupEXP": "10824600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "916": {
+      "m_bError": null,
+      "m_AccountLv": "916",
+      "m_AccountlvupEXP": "10844800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "917": {
+      "m_bError": null,
+      "m_AccountLv": "917",
+      "m_AccountlvupEXP": "10864900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "918": {
+      "m_bError": null,
+      "m_AccountLv": "918",
+      "m_AccountlvupEXP": "10885100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "919": {
+      "m_bError": null,
+      "m_AccountLv": "919",
+      "m_AccountlvupEXP": "10905200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "920": {
+      "m_bError": null,
+      "m_AccountLv": "920",
+      "m_AccountlvupEXP": "10925400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "921": {
+      "m_bError": null,
+      "m_AccountLv": "921",
+      "m_AccountlvupEXP": "10945600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "922": {
+      "m_bError": null,
+      "m_AccountLv": "922",
+      "m_AccountlvupEXP": "10965800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "923": {
+      "m_bError": null,
+      "m_AccountLv": "923",
+      "m_AccountlvupEXP": "10986000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "924": {
+      "m_bError": null,
+      "m_AccountLv": "924",
+      "m_AccountlvupEXP": "11006300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "925": {
+      "m_bError": null,
+      "m_AccountLv": "925",
+      "m_AccountlvupEXP": "11026500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "926": {
+      "m_bError": null,
+      "m_AccountLv": "926",
+      "m_AccountlvupEXP": "11046800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "927": {
+      "m_bError": null,
+      "m_AccountLv": "927",
+      "m_AccountlvupEXP": "11067100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "928": {
+      "m_bError": null,
+      "m_AccountLv": "928",
+      "m_AccountlvupEXP": "11087400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "929": {
+      "m_bError": null,
+      "m_AccountLv": "929",
+      "m_AccountlvupEXP": "11107700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "930": {
+      "m_bError": null,
+      "m_AccountLv": "930",
+      "m_AccountlvupEXP": "11128000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "931": {
+      "m_bError": null,
+      "m_AccountLv": "931",
+      "m_AccountlvupEXP": "11148400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "932": {
+      "m_bError": null,
+      "m_AccountLv": "932",
+      "m_AccountlvupEXP": "11168800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "933": {
+      "m_bError": null,
+      "m_AccountLv": "933",
+      "m_AccountlvupEXP": "11189100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "934": {
+      "m_bError": null,
+      "m_AccountLv": "934",
+      "m_AccountlvupEXP": "11209500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "935": {
+      "m_bError": null,
+      "m_AccountLv": "935",
+      "m_AccountlvupEXP": "11229900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "936": {
+      "m_bError": null,
+      "m_AccountLv": "936",
+      "m_AccountlvupEXP": "11250400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "937": {
+      "m_bError": null,
+      "m_AccountLv": "937",
+      "m_AccountlvupEXP": "11270800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "938": {
+      "m_bError": null,
+      "m_AccountLv": "938",
+      "m_AccountlvupEXP": "11291300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "939": {
+      "m_bError": null,
+      "m_AccountLv": "939",
+      "m_AccountlvupEXP": "11311700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "940": {
+      "m_bError": null,
+      "m_AccountLv": "940",
+      "m_AccountlvupEXP": "11332200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "941": {
+      "m_bError": null,
+      "m_AccountLv": "941",
+      "m_AccountlvupEXP": "11352700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "942": {
+      "m_bError": null,
+      "m_AccountLv": "942",
+      "m_AccountlvupEXP": "11373300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "943": {
+      "m_bError": null,
+      "m_AccountLv": "943",
+      "m_AccountlvupEXP": "11393800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "944": {
+      "m_bError": null,
+      "m_AccountLv": "944",
+      "m_AccountlvupEXP": "11414300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "945": {
+      "m_bError": null,
+      "m_AccountLv": "945",
+      "m_AccountlvupEXP": "11434900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "946": {
+      "m_bError": null,
+      "m_AccountLv": "946",
+      "m_AccountlvupEXP": "11455500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "947": {
+      "m_bError": null,
+      "m_AccountLv": "947",
+      "m_AccountlvupEXP": "11476100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "948": {
+      "m_bError": null,
+      "m_AccountLv": "948",
+      "m_AccountlvupEXP": "11496700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "949": {
+      "m_bError": null,
+      "m_AccountLv": "949",
+      "m_AccountlvupEXP": "11517300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "950": {
+      "m_bError": null,
+      "m_AccountLv": "950",
+      "m_AccountlvupEXP": "11537900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "951": {
+      "m_bError": null,
+      "m_AccountLv": "951",
+      "m_AccountlvupEXP": "11558600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "952": {
+      "m_bError": null,
+      "m_AccountLv": "952",
+      "m_AccountlvupEXP": "11579300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "953": {
+      "m_bError": null,
+      "m_AccountLv": "953",
+      "m_AccountlvupEXP": "11599900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "954": {
+      "m_bError": null,
+      "m_AccountLv": "954",
+      "m_AccountlvupEXP": "11620600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "955": {
+      "m_bError": null,
+      "m_AccountLv": "955",
+      "m_AccountlvupEXP": "11641400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "956": {
+      "m_bError": null,
+      "m_AccountLv": "956",
+      "m_AccountlvupEXP": "11662100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "957": {
+      "m_bError": null,
+      "m_AccountLv": "957",
+      "m_AccountlvupEXP": "11682800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "958": {
+      "m_bError": null,
+      "m_AccountLv": "958",
+      "m_AccountlvupEXP": "11703600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "959": {
+      "m_bError": null,
+      "m_AccountLv": "959",
+      "m_AccountlvupEXP": "11724400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "960": {
+      "m_bError": null,
+      "m_AccountLv": "960",
+      "m_AccountlvupEXP": "11745200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "961": {
+      "m_bError": null,
+      "m_AccountLv": "961",
+      "m_AccountlvupEXP": "11766000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "962": {
+      "m_bError": null,
+      "m_AccountLv": "962",
+      "m_AccountlvupEXP": "11786800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "963": {
+      "m_bError": null,
+      "m_AccountLv": "963",
+      "m_AccountlvupEXP": "11807600",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "964": {
+      "m_bError": null,
+      "m_AccountLv": "964",
+      "m_AccountlvupEXP": "11828500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "965": {
+      "m_bError": null,
+      "m_AccountLv": "965",
+      "m_AccountlvupEXP": "11849400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "966": {
+      "m_bError": null,
+      "m_AccountLv": "966",
+      "m_AccountlvupEXP": "11870200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "967": {
+      "m_bError": null,
+      "m_AccountLv": "967",
+      "m_AccountlvupEXP": "11891100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "968": {
+      "m_bError": null,
+      "m_AccountLv": "968",
+      "m_AccountlvupEXP": "11912000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "969": {
+      "m_bError": null,
+      "m_AccountLv": "969",
+      "m_AccountlvupEXP": "11933000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "970": {
+      "m_bError": null,
+      "m_AccountLv": "970",
+      "m_AccountlvupEXP": "11953900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "971": {
+      "m_bError": null,
+      "m_AccountLv": "971",
+      "m_AccountlvupEXP": "11974900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "972": {
+      "m_bError": null,
+      "m_AccountLv": "972",
+      "m_AccountlvupEXP": "11995800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "973": {
+      "m_bError": null,
+      "m_AccountLv": "973",
+      "m_AccountlvupEXP": "12016800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "974": {
+      "m_bError": null,
+      "m_AccountLv": "974",
+      "m_AccountlvupEXP": "12037800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "975": {
+      "m_bError": null,
+      "m_AccountLv": "975",
+      "m_AccountlvupEXP": "12058900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "976": {
+      "m_bError": null,
+      "m_AccountLv": "976",
+      "m_AccountlvupEXP": "12079900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "977": {
+      "m_bError": null,
+      "m_AccountLv": "977",
+      "m_AccountlvupEXP": "12100900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "978": {
+      "m_bError": null,
+      "m_AccountLv": "978",
+      "m_AccountlvupEXP": "12122000",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "979": {
+      "m_bError": null,
+      "m_AccountLv": "979",
+      "m_AccountlvupEXP": "12143100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "980": {
+      "m_bError": null,
+      "m_AccountLv": "980",
+      "m_AccountlvupEXP": "12164200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "981": {
+      "m_bError": null,
+      "m_AccountLv": "981",
+      "m_AccountlvupEXP": "12185300",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "982": {
+      "m_bError": null,
+      "m_AccountLv": "982",
+      "m_AccountlvupEXP": "12206400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "983": {
+      "m_bError": null,
+      "m_AccountLv": "983",
+      "m_AccountlvupEXP": "12227500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "984": {
+      "m_bError": null,
+      "m_AccountLv": "984",
+      "m_AccountlvupEXP": "12248700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "985": {
+      "m_bError": null,
+      "m_AccountLv": "985",
+      "m_AccountlvupEXP": "12269900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "986": {
+      "m_bError": null,
+      "m_AccountLv": "986",
+      "m_AccountlvupEXP": "12291100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "987": {
+      "m_bError": null,
+      "m_AccountLv": "987",
+      "m_AccountlvupEXP": "12312200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "988": {
+      "m_bError": null,
+      "m_AccountLv": "988",
+      "m_AccountlvupEXP": "12333500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "989": {
+      "m_bError": null,
+      "m_AccountLv": "989",
+      "m_AccountlvupEXP": "12354700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "990": {
+      "m_bError": null,
+      "m_AccountLv": "990",
+      "m_AccountlvupEXP": "12375900",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "991": {
+      "m_bError": null,
+      "m_AccountLv": "991",
+      "m_AccountlvupEXP": "12397200",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "992": {
+      "m_bError": null,
+      "m_AccountLv": "992",
+      "m_AccountlvupEXP": "12418500",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "993": {
+      "m_bError": null,
+      "m_AccountLv": "993",
+      "m_AccountlvupEXP": "12439800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "994": {
+      "m_bError": null,
+      "m_AccountLv": "994",
+      "m_AccountlvupEXP": "12461100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "995": {
+      "m_bError": null,
+      "m_AccountLv": "995",
+      "m_AccountlvupEXP": "12482400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "996": {
+      "m_bError": null,
+      "m_AccountLv": "996",
+      "m_AccountlvupEXP": "12503700",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "997": {
+      "m_bError": null,
+      "m_AccountLv": "997",
+      "m_AccountlvupEXP": "12525100",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "998": {
+      "m_bError": null,
+      "m_AccountLv": "998",
+      "m_AccountlvupEXP": "12546400",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "999": {
+      "m_bError": null,
+      "m_AccountLv": "999",
+      "m_AccountlvupEXP": "12567800",
+      "m_AccountlvBonus": "[[101,30]]"
+    },
+    "1000": {
+      "m_bError": null,
+      "m_AccountLv": "1000",
+      "m_AccountlvupEXP": null,
+      "m_AccountlvBonus": "[[101,30]]"
+    }
+  },
+  "status": "processed_1000_items"
+}
