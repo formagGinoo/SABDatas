@@ -7,6 +7,6 @@ TO-DO:
 - [x] Add LuaScripts
 - [X] Add Tables (CData)
 - [ ] Add BytesData
-- [ ] Add Protos
+- [X] Add Protos
 
 ### Gonna publish all the tools to extract this resources after i add protos and bytesData
