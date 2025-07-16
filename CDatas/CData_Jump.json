@@ -1,6 +1,6 @@
 {
   "className": "CData_Jump",
-  "timestamp": "2025-07-08T13:35:35.431Z",
+  "timestamp": "2025-07-16T14:14:06.931Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -360,7 +360,7 @@
       "m_SystemID": "26",
       "m_WindowID": "26008",
       "m_Param": "[]",
-      "m_mName": "\"Reserved String\""
+      "m_mName": "\"Sapphire Isle Auction House\""
     },
     "2701": {
       "m_bError": null,
@@ -393,6 +393,14 @@
       "m_WindowID": "27004",
       "m_Param": "[]",
       "m_mName": "\"Clan\""
+    },
+    "2705": {
+      "m_bError": null,
+      "m_JumpID": "2705",
+      "m_SystemID": "27",
+      "m_WindowID": "27005",
+      "m_Param": "[]",
+      "m_mName": "\"Ancestral Vault\""
     },
     "5101": {
       "m_bError": null,
@@ -522,6 +530,22 @@
       "m_Param": "[]",
       "m_mName": "\"Embrace - Whispers of the Deep\""
     },
+    "25006": {
+      "m_bError": null,
+      "m_JumpID": "25006",
+      "m_SystemID": "25",
+      "m_WindowID": "1003",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Midsummer Eclipse\""
+    },
+    "25007": {
+      "m_bError": null,
+      "m_JumpID": "25007",
+      "m_SystemID": "25",
+      "m_WindowID": "1004",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Promise in the Wind\""
+    },
     "30001": {
       "m_bError": null,
       "m_JumpID": "30001",
@@ -593,6 +617,78 @@
       "m_WindowID": "40007",
       "m_Param": "[]",
       "m_mName": "\"Inception Ritual\""
+    },
+    "40008": {
+      "m_bError": null,
+      "m_JumpID": "40008",
+      "m_SystemID": null,
+      "m_WindowID": "40008",
+      "m_Param": "[]",
+      "m_mName": "\"Custom Couture\""
+    },
+    "50001": {
+      "m_bError": null,
+      "m_JumpID": "50001",
+      "m_SystemID": null,
+      "m_WindowID": "500001",
+      "m_Param": "[3,6023001]",
+      "m_mName": "\"Go to Event\""
+    },
+    "50002": {
+      "m_bError": null,
+      "m_JumpID": "50002",
+      "m_SystemID": null,
+      "m_WindowID": "500001",
+      "m_Param": "[2,6010001]",
+      "m_mName": "\"Go to Event\""
+    },
+    "60010": {
+      "m_bError": null,
+      "m_JumpID": "60010",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1031]",
+      "m_mName": "\"Sapphire Isle!\""
+    },
+    "60011": {
+      "m_bError": null,
+      "m_JumpID": "60011",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1040]",
+      "m_mName": "\"Critical Hour\""
+    },
+    "60012": {
+      "m_bError": null,
+      "m_JumpID": "60012",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1033]",
+      "m_mName": "\"Selena's Agenda\""
+    },
+    "60013": {
+      "m_bError": null,
+      "m_JumpID": "60013",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1035]",
+      "m_mName": "\"Ami's Vacation\""
+    },
+    "60014": {
+      "m_bError": null,
+      "m_JumpID": "60014",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1036]",
+      "m_mName": "\"Whack-A-Siren!\""
+    },
+    "60015": {
+      "m_bError": null,
+      "m_JumpID": "60015",
+      "m_SystemID": null,
+      "m_WindowID": "60010",
+      "m_Param": "[1030,1032]",
+      "m_mName": "\"Cosmic Singularity\""
     },
     "90001": {
       "m_bError": null,
@@ -1891,5 +1987,5 @@
       "m_mName": "\"[Threads of Fate] Hard 16-8\""
     }
   },
-  "status": "processed_236_items"
+  "status": "processed_248_items"
 }

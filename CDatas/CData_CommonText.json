@@ -1,6 +1,6 @@
 {
   "className": "CData_CommonText",
-  "timestamp": "2025-07-08T13:35:33.238Z",
+  "timestamp": "2025-07-16T14:14:04.799Z",
   "data": {
     "3": {
       "m_bError": null,
@@ -331,6 +331,16 @@
       "m_bError": null,
       "m_Id": "2124",
       "m_mMessage": "\"Deny\""
+    },
+    "2125": {
+      "m_bError": null,
+      "m_Id": "2125",
+      "m_mMessage": "\"※ Herald Rules\nThe Midsummer Eclipse limited Embrace Event is now open. \nThis is a limited Embrace Event witch shares pity mechanics with other limited Embrace events.\nDuring the event, SSR Vassal <style=Highlight>Lorelei</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lorelei</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates).</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Lorelei</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Midsummer Eclipse limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2126": {
+      "m_bError": null,
+      "m_Id": "2126",
+      "m_mMessage": "\"※ Herald Rules\nThe Promise in the Wind limited Embrace Event is now open.\nThis is a limited Embrace Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Fleeting Bella</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Fleeting Bella</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>.\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Fleeting Bella</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Promise in the Wind limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "3001": {
       "m_bError": null,
@@ -1165,7 +1175,7 @@
     "20339": {
       "m_bError": null,
       "m_Id": "20339",
-      "m_mMessage": "\"Rank Rules: Unranked (3000+)\""
+      "m_mMessage": "\"Bottom 3000 Rules\""
     },
     "20340": {
       "m_bError": null,
@@ -1210,12 +1220,22 @@
     "20348": {
       "m_bError": null,
       "m_Id": "20348",
-      "m_mMessage": "\"Daily Herald x10(<color=#8CC774>{0}</color>/{1})\""
+      "m_mMessage": "\"Free Daily Herald x10 (<color=#8CC774>{0}</color>/{1})\""
     },
     "20349": {
       "m_bError": null,
       "m_Id": "20349",
       "m_mMessage": "\"Free after {0}.\""
+    },
+    "20350": {
+      "m_bError": null,
+      "m_Id": "20350",
+      "m_mMessage": "\"10x Herald results are displayed from left to right in order of acquisition.\""
+    },
+    "20351": {
+      "m_bError": null,
+      "m_Id": "20351",
+      "m_mMessage": "\"Rank {0}\""
     },
     "30001": {
       "m_bError": null,
@@ -1610,7 +1630,7 @@
     "50103": {
       "m_bError": null,
       "m_Id": "50103",
-      "m_mMessage": "\"Destroy the Decaying Biomass swiftly to stop the charging.\""
+      "m_mMessage": "\"Quickly destroy the Crimson Crystal to stop the channeling.\""
     },
     "50104": {
       "m_bError": null,
@@ -1686,6 +1706,31 @@
       "m_bError": null,
       "m_Id": "50118",
       "m_mMessage": "\"Eliminating Plague Hatchlings deals strong DMG to Sheila the Firstborn.\""
+    },
+    "50119": {
+      "m_bError": null,
+      "m_Id": "50119",
+      "m_mMessage": "\"Defeat Joyce's Puppet Army to deal DMG to Joyce.\""
+    },
+    "50120": {
+      "m_bError": null,
+      "m_Id": "50120",
+      "m_mMessage": "\"\"Blazing Eye\" exposed! Defeat \"Blazing Eye\" to seal this skill.\""
+    },
+    "50121": {
+      "m_bError": null,
+      "m_Id": "50121",
+      "m_mMessage": "\"Deal enough DMG to interrupt Bella No. 13's charged skill!\""
+    },
+    "50122": {
+      "m_bError": null,
+      "m_Id": "50122",
+      "m_mMessage": "\"Use movement or purify abilities to break free from Bella No. 13!\""
+    },
+    "50123": {
+      "m_bError": null,
+      "m_Id": "50123",
+      "m_mMessage": "\"\""
     },
     "100001": {
       "m_bError": null,
@@ -2142,6 +2187,11 @@
       "m_Id": "100095",
       "m_mMessage": "\"Today's Remaining Attempts: {0}/{1}\""
     },
+    "100096": {
+      "m_bError": null,
+      "m_Id": "100096",
+      "m_mMessage": "\"\""
+    },
     "100100": {
       "m_bError": null,
       "m_Id": "100100",
@@ -2552,6 +2602,31 @@
       "m_Id": "100809",
       "m_mMessage": "\"Affinity: LV. {0}\""
     },
+    "100810": {
+      "m_bError": null,
+      "m_Id": "100810",
+      "m_mMessage": "\"Herald {0}{1} time(s) ({2}/{3})\""
+    },
+    "100811": {
+      "m_bError": null,
+      "m_Id": "100811",
+      "m_mMessage": "\"Progress: {0}%\""
+    },
+    "100812": {
+      "m_bError": null,
+      "m_Id": "100812",
+      "m_mMessage": "\"<color=#B2452B>{0}</color>/{1}\""
+    },
+    "100813": {
+      "m_bError": null,
+      "m_Id": "100813",
+      "m_mMessage": "\"<color=#368E72>{0}</color>/{1}\""
+    },
+    "100814": {
+      "m_bError": null,
+      "m_Id": "100814",
+      "m_mMessage": "\"Herald limit reached.\""
+    },
     "200001": {
       "m_bError": null,
       "m_Id": "200001",
@@ -2621,6 +2696,11 @@
       "m_bError": null,
       "m_Id": "200014",
       "m_mMessage": "\"Sealed Area\""
+    },
+    "200015": {
+      "m_bError": null,
+      "m_Id": "200015",
+      "m_mMessage": "\"\""
     },
     "200115": {
       "m_bError": null,
@@ -2700,7 +2780,7 @@
     "210015": {
       "m_bError": null,
       "m_Id": "210015",
-      "m_mMessage": "\"Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping agree, you acknowledge the content of these terms. By tapping refuse, you will be unable to proceed.\""
+      "m_mMessage": "\"Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge the content of these terms. By tapping Cancel, you will be unable to proceed.\""
     },
     "210016": {
       "m_bError": null,
@@ -2741,6 +2821,61 @@
       "m_bError": null,
       "m_Id": "210028",
       "m_mMessage": "\"<link=WebView_Url;https://beian.miit.gov.cn/#/Integrated/index><u>沪ICP备2022014223号-3A</u></link>\""
+    },
+    "210030": {
+      "m_bError": null,
+      "m_Id": "210030",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nBob confronts Empousa as she tends to Hati, while Van Helsing and Noah investigate the murder method.\""
+    },
+    "210031": {
+      "m_bError": null,
+      "m_Id": "210031",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nNoah and Ami encounter rabid sailors in the cabin.\""
+    },
+    "210032": {
+      "m_bError": null,
+      "m_Id": "210032",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nTo escape the sailors' attack, Noah and Ami head to the storage on the third deck; meanwhile, an intense conflict breaks out between Bob and Van Helsing's group.\""
+    },
+    "210033": {
+      "m_bError": null,
+      "m_Id": "210033",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nThe suspect William's body is found hanging from the mast.\""
+    },
+    "210034": {
+      "m_bError": null,
+      "m_Id": "210034",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nVan Helsing's group retreats to the Captain's cabin after encountering a Blood Beast.\""
+    },
+    "210035": {
+      "m_bError": null,
+      "m_Id": "210035",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nVan Helsing examines William's body.\""
+    },
+    "210036": {
+      "m_bError": null,
+      "m_Id": "210036",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nHati makes her way to the lowest deck by mistake after recovering.\""
+    },
+    "210037": {
+      "m_bError": null,
+      "m_Id": "210037",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nNoah discovers a hidden door in the storage room and reunites with Van Helsing on the third deck.\""
+    },
+    "210038": {
+      "m_bError": null,
+      "m_Id": "210038",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nVan Helsing tracks William, who is disguised as Goldland, to the third deck.\""
+    },
+    "210039": {
+      "m_bError": null,
+      "m_Id": "210039",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nNoah and others pursue William to the lowest deck.\""
+    },
+    "210040": {
+      "m_bError": null,
+      "m_Id": "210040",
+      "m_mMessage": "\"Current situation aboard the El Dorado—\nNoah and Van Helsing confront William on the lowest deck.\""
     },
     "210113": {
       "m_bError": null,
@@ -2790,17 +2925,17 @@
     "220010": {
       "m_bError": null,
       "m_Id": "220010",
-      "m_mMessage": "\"Reserved String\""
+      "m_mMessage": "\"特定商取引法に基づき表示\""
     },
     "220011": {
       "m_bError": null,
       "m_Id": "220011",
-      "m_mMessage": "\"Reserved String\""
+      "m_mMessage": "\"前払式支払手段の名称\n月の涙\n\n発行会社\nVIZTA PTE. LTD.\n\n支払可能金額等\n支払可能金額の上限はございません。\n\n販売価格\n購入画面に記載（表示価格は消費税を含みます）。\n\n有効期間または期限\n有効期限はありません。\n\nお問い合わせは下記のアドレスまでお願い致します：\nsilverblood.help@gmail.com\n\n使用場所\nゲーム「シルバー アンド ブラッド」内においてのみ使用することができます。\n\nキャンセル\n商品の特性上、購入後の返品、キャンセルはできません。\n\n未使用残高の確認方法\nゲーム内に表示されているゲーム内通貨のアイコンをタップすると、その保有数が表示されます。\n\n利用規約\nゲーム内の利用規約をご覧ください。\""
     },
     "220012": {
       "m_bError": null,
       "m_Id": "220012",
-      "m_mMessage": "\"Reserved String\""
+      "m_mMessage": "\"資金決済法に基づく表示\""
     },
     "220013": {
       "m_bError": null,
@@ -2841,6 +2976,11 @@
       "m_bError": null,
       "m_Id": "220020",
       "m_mMessage": "\"Purchase ends in {0}.\""
+    },
+    "220021": {
+      "m_bError": null,
+      "m_Id": "220021",
+      "m_mMessage": "\"LV. {0}\""
     },
     "230001": {
       "m_bError": null,
@@ -2885,12 +3025,12 @@
     "230009": {
       "m_bError": null,
       "m_Id": "230009",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Privacy Policy</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隐私协议</u></color></link>\""
     },
     "230010": {
       "m_bError": null,
       "m_Id": "230010",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>User Agreement</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>用户协议</u></color></link>\""
     },
     "230011": {
       "m_bError": null,
@@ -2910,7 +3050,7 @@
     "230014": {
       "m_bError": null,
       "m_Id": "230014",
-      "m_mMessage": "\"前払式支払手段の名称\n月の涙\n\n発行会社\nVIZTA PTE. LTD.\n\n支払可能金額等\n支払可能金額の上限はございません。\n\n販売価格\n購入画面に記載（表示価格は消費税を含みます）。\n\n有効期間または期限\n有効期限はありません。\n\nお問い合わせは下記のアドレスまでお願い致します：\nsilverblood.help@gmail.com\n\n使用場所\nゲーム「シルバー アンド ブラッド」内においてのみ使用することができます。\n\nキャンセル\n商品の特性上、購入後の返品、キャンセルはできません。\n\n未使用残高の確認方法\nゲーム内に表示されているゲーム内通貨のアイコンをタップすると、その保有数が表示されます。\n\n利用規約\nゲーム内の利用規約をご覧ください。\""
+      "m_mMessage": "\"前払式支払手段の名称\n月の涙\n\n発行会社\nVIZTA PTE. LTD.\n\n支払可能金額等\n支払可能金額の上限はございません。\n\n販売価格\n購入画面に記載（表示価格は消費税を含みます）。\n\n有効期間または期限\n有効期限はありません。\n\nお問い合わせは下記のアドレスまでお願い致します：\n silverblood.help@gmail.com\n\n使用場所\nゲーム「シルバー アンド ブラッド」内においてのみ使用することができます。\n\nキャンセル\n商品の特性上、購入後の返品、キャンセルはできません。\n\n未使用残高の確認方法\nゲーム内に表示されているゲーム内通貨のアイコンをタップすると、その保有数が表示されます。\n\n利用規約\nゲーム内の利用規約をご覧ください。\""
     },
     "230015": {
       "m_bError": null,
@@ -2920,7 +3060,7 @@
     "230016": {
       "m_bError": null,
       "m_Id": "230016",
-      "m_mMessage": "\"提供会社\nVIZTA PTE. LTD.\n\n9 Battery Road, #28-01, MYP Centre, 049910 Singapore\n\n代表者\nTian Qianru\n\nお問い合わせ先 \nsilverblood.help@gmail.com\n\n商品価格\n対象となるデジタルコンテンツ（以下「コンテンツ」といいます。）ごとに表示される金額（コンテンツごとに異なります）なお、消費税は税込として表示しております。\n\n販売価格以外の費用\n電気通信回線の通信料金（インターネット接続料金を含みます。）等は、お客様のご負担となります。\n\nお支払い時期\n商品購入画面の購入ボタンを押した後、コンテンツの提供前。\n\nコンテンツの利用可能時期\n特別な定めがある場合を除き、お支払い手続き完了後直ちにご利用いただけます。\n\nお支払い方法\nご利用端末により利用可能なお支払い方法が異なります。 \nお客様が選択される支払方法については、各決済サービス提供元（DMM GAME PLAYER）の利用規約が適用されます。 \n※ 詳細は各商品・サービスページをご参照ください。\n\n動作環境\niOS版必須環境：iPhone XS 以降\nAndroid版必須環境：Android 6.0以降\nDMM GAME PLAYER版必須環境：\nOS：Windows 7（64bit）\nプロセッサー：Intel Core i3 または同等のCPU\nメモリ：8GB\nGPU：GeForce GT 1030 以上\nDirectX：バージョン10.0以上\nストレージ：空き容量20GB以上を確保してください\n\n各アプリケーションのダウンロードの前に、必ず各アプリケーションの詳細ページで利用環境·対応機種をご確認ください。\n\n返品に関する特約\n商品の特性上、購入後の返品、キャンセルはできません。\""
+      "m_mMessage": "\"提供会社\nVIZTA PTE. LTD.\n\n9 Battery Road, #28-01, MYP Centre, 049910 Singapore\n\n代表者\nTian Qianru\n\nお問い合わせ先 \nsilverblood.help@gmail.com\n\n商品価格\n対象となるデジタルコンテンツ（以下「コンテンツ」といいます。）ごとに表示される金額（コンテンツごとに異なります）なお、消費税は税込として表示しております。\n\n販売価格以外の費用\n電気通信回線の通信料金（インターネット接続料金を含みます。）等は、お客様のご負担となります。\n\nお支払い時期\n商品購入画面の購入ボタンを押した後、コンテンツの提供前。\n\nコンテンツの利用可能時期\n特別な定めがある場合を除き、お支払い手続き完了後直ちにご利用いただけます。\n\nお支払い方法\nご利用端末により利用可能なお支払い方法が異なります。  \nお客様が選択される支払方法については、各決済サービス提供元（例：PayPay、コンビニ決済、App Store、Google Wallet等）の利用規約が適用されます。  \n※ 詳細は各商品・サービスページをご参照ください。\n\n動作環境\niOS版必須環境：IPhone 6s 以降\nAndroid版必須環境：Android 6.0以降\n各アプリケーションのダウンロードの前に、必ず各アプリケーションの詳細ページで利用環境·対応機種をご確認ください。\n\n返品に関する特約\n商品の特性上、購入後の返品、キャンセルはできません。\""
     },
     "230017": {
       "m_bError": null,
@@ -2932,11 +3072,21 @@
       "m_Id": "230018",
       "m_mMessage": "\"230015|230016\""
     },
+    "230019": {
+      "m_bError": null,
+      "m_Id": "230019",
+      "m_mMessage": "\"https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html\""
+    },
+    "230020": {
+      "m_bError": null,
+      "m_Id": "230020",
+      "m_mMessage": "\"https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html\""
+    },
     "501080": {
       "m_bError": null,
       "m_Id": "501080",
       "m_mMessage": "\"Defeat the wolf pack to interrupt the skill.\""
     }
   },
-  "status": "processed_587_items"
+  "status": "processed_617_items"
 }

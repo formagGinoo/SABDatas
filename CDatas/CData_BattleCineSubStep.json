@@ -1,214 +1,159 @@
 {
   "className": "CData_BattleCineSubStep",
-  "timestamp": "2025-07-08T13:35:23.845Z",
+  "timestamp": "2025-07-16T14:13:55.284Z",
   "data": {
-    "11101": {
+    "239904": {
       "m_bError": null,
-      "m_ID": "11101",
-      "m_Expression": "\"Atlas_Role/Noah_Base003\"",
+      "m_ID": "239904",
+      "m_Expression": "\"Atlas_Monster/M_SailorBowSummon_Base001\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11101\"",
+      "m_DialogueContent": "\"QE_30001_Clip99_04\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3",
-      "m_Duration": "3.75",
+      "m_Delay": null,
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "11102": {
+    "239905": {
       "m_bError": null,
-      "m_ID": "11102",
-      "m_Expression": "\"Atlas_Role/Noah_Base003\"",
+      "m_ID": "239905",
+      "m_Expression": "\"Atlas_Monster/M_Wizard_Middle_Crystal001\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11102\"",
+      "m_DialogueContent": "\"QE_30001_Clip99_05\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.5",
+      "m_Delay": null,
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "239906"
+    },
+    "239906": {
+      "m_bError": null,
+      "m_ID": "239906",
+      "m_Expression": "\"Atlas_Monster/M_Wizard_Middle_Crystal001\"",
+      "m_DialogueStyle": "1",
+      "m_DialogueContent": "\"QE_30001_Clip99_06\"",
+      "m_Voice": "\"Test\"",
+      "m_Delay": "2",
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "11201": {
+    "239907": {
       "m_bError": null,
-      "m_ID": "11201",
-      "m_Expression": "\"Atlas_Role/Noah_Base003\"",
+      "m_ID": "239907",
+      "m_Expression": "\"Atlas_Role/Noah_Full003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11201\"",
+      "m_DialogueContent": "\"QE_30001_Clip99_07\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "11202"
-    },
-    "11202": {
-      "m_bError": null,
-      "m_ID": "11202",
-      "m_Expression": "\"Atlas_Role/Noah_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11202\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "11203"
-    },
-    "11203": {
-      "m_bError": null,
-      "m_ID": "11203",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11203\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.5",
+      "m_Delay": null,
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "11301": {
+    "239908": {
       "m_bError": null,
-      "m_ID": "11301",
-      "m_Expression": "\"Atlas_Role/Setti_Base003\"",
+      "m_ID": "239908",
+      "m_Expression": "\"Atlas_Role/Lorelei_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11301\"",
+      "m_DialogueContent": "\"QE_30001_Clip99_08\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "11302"
+      "m_Delay": null,
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "239909"
     },
-    "11302": {
+    "239909": {
       "m_bError": null,
-      "m_ID": "11302",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
+      "m_ID": "239909",
+      "m_Expression": "\"Atlas_Role/Lorelei_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_11302\"",
+      "m_DialogueContent": "\"QE_30001_Clip99_09\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.75",
+      "m_Delay": "2",
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "12101": {
+    "249901": {
       "m_bError": null,
-      "m_ID": "12101",
-      "m_Expression": "\"Atlas_Role/Setti_Base003\"",
+      "m_ID": "249901",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_12101\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_01\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "4.5",
-      "m_Duration": "2.75",
-      "m_NextInBattleCineSubStepID": "12102"
+      "m_Delay": null,
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "249902"
     },
-    "12102": {
+    "249902": {
       "m_bError": null,
-      "m_ID": "12102",
-      "m_Expression": "\"Atlas_Role/Setti_Base003\"",
+      "m_ID": "249902",
+      "m_Expression": "\"Atlas_Role/Noah_Full003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_12102\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_02\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "4.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "12103"
-    },
-    "12103": {
-      "m_bError": null,
-      "m_ID": "12103",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_12103\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.75",
+      "m_Delay": "2",
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "13101": {
+    "249903": {
       "m_bError": null,
-      "m_ID": "13101",
-      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_ID": "249903",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13101\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_03\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13102"
-    },
-    "13102": {
-      "m_bError": null,
-      "m_ID": "13102",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13102\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13103"
-    },
-    "13103": {
-      "m_bError": null,
-      "m_ID": "13103",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13103\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.5",
+      "m_Delay": null,
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
-    "13301": {
+    "249904": {
       "m_bError": null,
-      "m_ID": "13301",
-      "m_Expression": "\"Atlas_Role/Agares_Base003\"",
+      "m_ID": "249904",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13301\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_04\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13302"
+      "m_Delay": null,
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "249905"
     },
-    "13302": {
+    "249905": {
       "m_bError": null,
-      "m_ID": "13302",
-      "m_Expression": "\"Atlas_Role/Agares_Base003\"",
+      "m_ID": "249905",
+      "m_Expression": "\"Atlas_Role/Noah_Full003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13302\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_05\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13303"
+      "m_Delay": "2",
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "249906"
     },
-    "13303": {
+    "249906": {
       "m_bError": null,
-      "m_ID": "13303",
-      "m_Expression": "\"Atlas_Role/Noah_Base003\"",
+      "m_ID": "249906",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13303\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_06\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.5",
-      "m_NextInBattleCineSubStepID": "13304"
+      "m_Delay": "2",
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": null
     },
-    "13304": {
+    "249907": {
       "m_bError": null,
-      "m_ID": "13304",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
+      "m_ID": "249907",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13304\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_07\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13305"
+      "m_Delay": null,
+      "m_Duration": "4",
+      "m_NextInBattleCineSubStepID": "249908"
     },
-    "13305": {
+    "249908": {
       "m_bError": null,
-      "m_ID": "13305",
-      "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
+      "m_ID": "249908",
+      "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
       "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13305\"",
+      "m_DialogueContent": "\"QE_40001_Clip99_08\"",
       "m_Voice": "\"Test\"",
-      "m_Delay": "3.5",
-      "m_Duration": "3.75",
-      "m_NextInBattleCineSubStepID": "13306"
-    },
-    "13306": {
-      "m_bError": null,
-      "m_ID": "13306",
-      "m_Expression": "\"Atlas_Role/Agares_Base003\"",
-      "m_DialogueStyle": "1",
-      "m_DialogueContent": "\"InBattle_Dialogue_13306\"",
-      "m_Voice": "\"Test\"",
-      "m_Delay": "2.5",
-      "m_Duration": "2.75",
+      "m_Delay": "2",
+      "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
     "1011101": {
@@ -4479,6 +4424,39 @@
       "m_Duration": "4",
       "m_NextInBattleCineSubStepID": null
     },
+    "2310101": {
+      "m_bError": null,
+      "m_ID": "2310101",
+      "m_Expression": "\"Atlas_Monster/M_Swordsman_Middle001\"",
+      "m_DialogueStyle": "1",
+      "m_DialogueContent": "\"Dialogue_E_30001_Clip10_48\"",
+      "m_Voice": "\"Test\"",
+      "m_Delay": null,
+      "m_Duration": "3",
+      "m_NextInBattleCineSubStepID": "2310102"
+    },
+    "2310102": {
+      "m_bError": null,
+      "m_ID": "2310102",
+      "m_Expression": "\"Atlas_Monster/M_Swordsman_Middle001\"",
+      "m_DialogueStyle": "1",
+      "m_DialogueContent": "\"Dialogue_E_30001_Clip10_49\"",
+      "m_Voice": "\"Test\"",
+      "m_Delay": "1.5",
+      "m_Duration": "3",
+      "m_NextInBattleCineSubStepID": "2310103"
+    },
+    "2310103": {
+      "m_bError": null,
+      "m_ID": "2310103",
+      "m_Expression": "\"Atlas_Monster/M_Swordsman_Middle001\"",
+      "m_DialogueStyle": "1",
+      "m_DialogueContent": "\"Dialogue_E_30001_Clip10_50\"",
+      "m_Voice": "\"Test\"",
+      "m_Delay": "1.5",
+      "m_Duration": "3",
+      "m_NextInBattleCineSubStepID": null
+    },
     "2501101": {
       "m_bError": null,
       "m_ID": "2501101",
@@ -6438,5 +6416,5 @@
       "m_NextInBattleCineSubStepID": null
     }
   },
-  "status": "processed_585_items"
+  "status": "processed_583_items"
 }

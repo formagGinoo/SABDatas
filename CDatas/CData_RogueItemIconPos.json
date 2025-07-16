@@ -1,6 +1,6 @@
 {
   "className": "CData_RogueItemIconPos",
-  "timestamp": "2025-07-08T13:35:47.122Z",
+  "timestamp": "2025-07-16T14:14:19.463Z",
   "data": {
     "3001001": {
       "m_bError": null,
@@ -10,7 +10,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3002001": {
       "m_bError": null,
@@ -20,7 +21,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3003001": {
       "m_bError": null,
@@ -30,7 +32,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3004001": {
       "m_bError": null,
@@ -40,7 +43,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3005001": {
       "m_bError": null,
@@ -50,7 +54,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3010001": {
       "m_bError": null,
@@ -60,7 +65,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3011001": {
       "m_bError": null,
@@ -70,7 +76,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3012001": {
       "m_bError": null,
@@ -80,7 +87,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3029001": {
       "m_bError": null,
@@ -90,7 +98,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "3030001": {
       "m_bError": null,
@@ -100,7 +109,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100001": {
       "m_bError": null,
@@ -110,7 +120,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100002": {
       "m_bError": null,
@@ -120,7 +131,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100003": {
       "m_bError": null,
@@ -130,7 +142,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100004": {
       "m_bError": null,
@@ -140,7 +153,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100005": {
       "m_bError": null,
@@ -150,7 +164,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100006": {
       "m_bError": null,
@@ -160,7 +175,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100007": {
       "m_bError": null,
@@ -170,7 +186,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100008": {
       "m_bError": null,
@@ -180,7 +197,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100009": {
       "m_bError": null,
@@ -190,7 +208,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100010": {
       "m_bError": null,
@@ -200,7 +219,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100011": {
       "m_bError": null,
@@ -210,7 +230,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100012": {
       "m_bError": null,
@@ -220,7 +241,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100013": {
       "m_bError": null,
@@ -230,7 +252,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100014": {
       "m_bError": null,
@@ -240,7 +263,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100015": {
       "m_bError": null,
@@ -250,7 +274,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100016": {
       "m_bError": null,
@@ -260,7 +285,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100017": {
       "m_bError": null,
@@ -270,7 +296,8 @@
       "m_TipsPos": "[0,0,80]",
       "m_CombinationPos": "[0,0,90]",
       "m_HandBookPos": "[0,60,90]",
-      "m_SmallBagItemPos": "[0,0,270]"
+      "m_SmallBagItemPos": "[0,0,270]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100018": {
       "m_bError": null,
@@ -280,7 +307,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100019": {
       "m_bError": null,
@@ -290,7 +318,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100020": {
       "m_bError": null,
@@ -300,7 +329,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100021": {
       "m_bError": null,
@@ -310,7 +340,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100022": {
       "m_bError": null,
@@ -320,7 +351,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100023": {
       "m_bError": null,
@@ -330,7 +362,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100024": {
       "m_bError": null,
@@ -340,7 +373,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100025": {
       "m_bError": null,
@@ -350,7 +384,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10100026": {
       "m_bError": null,
@@ -360,7 +395,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200001": {
       "m_bError": null,
@@ -370,7 +406,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200003": {
       "m_bError": null,
@@ -380,7 +417,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200004": {
       "m_bError": null,
@@ -390,7 +428,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200005": {
       "m_bError": null,
@@ -400,7 +439,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200006": {
       "m_bError": null,
@@ -410,7 +450,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200007": {
       "m_bError": null,
@@ -420,7 +461,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200008": {
       "m_bError": null,
@@ -430,7 +472,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200009": {
       "m_bError": null,
@@ -440,7 +483,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200010": {
       "m_bError": null,
@@ -450,7 +494,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200013": {
       "m_bError": null,
@@ -460,7 +505,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200017": {
       "m_bError": null,
@@ -470,7 +516,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10200020": {
       "m_bError": null,
@@ -480,7 +527,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "10300010": {
       "m_bError": null,
@@ -490,7 +538,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300020": {
       "m_bError": null,
@@ -500,7 +549,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300030": {
       "m_bError": null,
@@ -510,7 +560,8 @@
       "m_TipsPos": "[0,0,50]",
       "m_CombinationPos": "[0,0,50]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300040": {
       "m_bError": null,
@@ -520,7 +571,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300050": {
       "m_bError": null,
@@ -530,7 +582,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300060": {
       "m_bError": null,
@@ -540,7 +593,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300070": {
       "m_bError": null,
@@ -550,7 +604,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300080": {
       "m_bError": null,
@@ -560,7 +615,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300090": {
       "m_bError": null,
@@ -570,7 +626,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,70,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300100": {
       "m_bError": null,
@@ -580,7 +637,8 @@
       "m_TipsPos": "[5,0,35]",
       "m_CombinationPos": "[5,0,35]",
       "m_HandBookPos": "[10,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300110": {
       "m_bError": null,
@@ -590,7 +648,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,70,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300120": {
       "m_bError": null,
@@ -600,7 +659,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300130": {
       "m_bError": null,
@@ -610,7 +670,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300140": {
       "m_bError": null,
@@ -620,7 +681,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300150": {
       "m_bError": null,
@@ -630,7 +692,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300160": {
       "m_bError": null,
@@ -640,7 +703,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300170": {
       "m_bError": null,
@@ -650,7 +714,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300180": {
       "m_bError": null,
@@ -660,7 +725,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300190": {
       "m_bError": null,
@@ -670,7 +736,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300200": {
       "m_bError": null,
@@ -680,7 +747,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300210": {
       "m_bError": null,
@@ -690,7 +758,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300220": {
       "m_bError": null,
@@ -700,7 +769,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300230": {
       "m_bError": null,
@@ -710,7 +780,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300270": {
       "m_bError": null,
@@ -720,7 +791,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300280": {
       "m_bError": null,
@@ -730,7 +802,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300290": {
       "m_bError": null,
@@ -740,7 +813,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300300": {
       "m_bError": null,
@@ -750,7 +824,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300310": {
       "m_bError": null,
@@ -760,7 +835,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300330": {
       "m_bError": null,
@@ -770,7 +846,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300340": {
       "m_bError": null,
@@ -780,7 +857,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300350": {
       "m_bError": null,
@@ -790,7 +868,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300370": {
       "m_bError": null,
@@ -800,7 +879,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300380": {
       "m_bError": null,
@@ -810,7 +890,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300390": {
       "m_bError": null,
@@ -820,7 +901,8 @@
       "m_TipsPos": "[0,-70,50]",
       "m_CombinationPos": "[0,-90,60]",
       "m_HandBookPos": "[0,70,45]",
-      "m_SmallBagItemPos": "[0,0,70]"
+      "m_SmallBagItemPos": "[0,0,70]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300400": {
       "m_bError": null,
@@ -830,7 +912,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300420": {
       "m_bError": null,
@@ -840,7 +923,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300430": {
       "m_bError": null,
@@ -850,7 +934,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300450": {
       "m_bError": null,
@@ -860,7 +945,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300470": {
       "m_bError": null,
@@ -870,7 +956,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300480": {
       "m_bError": null,
@@ -880,7 +967,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300490": {
       "m_bError": null,
@@ -890,7 +978,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300500": {
       "m_bError": null,
@@ -900,7 +989,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300510": {
       "m_bError": null,
@@ -910,7 +1000,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300520": {
       "m_bError": null,
@@ -920,7 +1011,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "10300570": {
       "m_bError": null,
@@ -930,7 +1022,52 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300640": {
+      "m_bError": null,
+      "m_ItemID": "10300640",
+      "m_Desc": "\"尘封的「海妖之泪」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300650": {
+      "m_bError": null,
+      "m_ItemID": "10300650",
+      "m_Desc": "\"尘封的「贵族手弩」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300660": {
+      "m_bError": null,
+      "m_ItemID": "10300660",
+      "m_Desc": "\"尘封的「被遗忘的誓言」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300700": {
+      "m_bError": null,
+      "m_ItemID": "10300700",
+      "m_Desc": "\"尘封的「血巫斗篷」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100010": {
       "m_bError": null,
@@ -940,7 +1077,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100020": {
       "m_bError": null,
@@ -950,7 +1088,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100030": {
       "m_bError": null,
@@ -960,7 +1099,8 @@
       "m_TipsPos": "[0,0,50]",
       "m_CombinationPos": "[0,0,50]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100040": {
       "m_bError": null,
@@ -970,7 +1110,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100050": {
       "m_bError": null,
@@ -980,7 +1121,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100060": {
       "m_bError": null,
@@ -990,7 +1132,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100070": {
       "m_bError": null,
@@ -1000,7 +1143,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100080": {
       "m_bError": null,
@@ -1010,7 +1154,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100090": {
       "m_bError": null,
@@ -1020,7 +1165,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100100": {
       "m_bError": null,
@@ -1030,7 +1176,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100110": {
       "m_bError": null,
@@ -1040,7 +1187,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100120": {
       "m_bError": null,
@@ -1050,7 +1198,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100130": {
       "m_bError": null,
@@ -1060,7 +1209,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100140": {
       "m_bError": null,
@@ -1070,7 +1220,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100150": {
       "m_bError": null,
@@ -1080,7 +1231,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100160": {
       "m_bError": null,
@@ -1090,7 +1242,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100170": {
       "m_bError": null,
@@ -1100,7 +1253,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100180": {
       "m_bError": null,
@@ -1110,7 +1264,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100190": {
       "m_bError": null,
@@ -1120,7 +1275,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100200": {
       "m_bError": null,
@@ -1130,7 +1286,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100210": {
       "m_bError": null,
@@ -1140,7 +1297,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100220": {
       "m_bError": null,
@@ -1150,7 +1308,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100230": {
       "m_bError": null,
@@ -1160,7 +1319,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100270": {
       "m_bError": null,
@@ -1170,7 +1330,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100280": {
       "m_bError": null,
@@ -1180,7 +1341,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100290": {
       "m_bError": null,
@@ -1190,7 +1352,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100300": {
       "m_bError": null,
@@ -1200,7 +1363,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100310": {
       "m_bError": null,
@@ -1210,7 +1374,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100330": {
       "m_bError": null,
@@ -1220,7 +1385,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100340": {
       "m_bError": null,
@@ -1230,7 +1396,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,40]",
       "m_HandBookPos": "[0,70,60]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100350": {
       "m_bError": null,
@@ -1240,7 +1407,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100370": {
       "m_bError": null,
@@ -1250,7 +1418,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100380": {
       "m_bError": null,
@@ -1260,7 +1429,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100390": {
       "m_bError": null,
@@ -1270,7 +1440,8 @@
       "m_TipsPos": "[0,-70,50]",
       "m_CombinationPos": "[0,-90,60]",
       "m_HandBookPos": "[0,70,45]",
-      "m_SmallBagItemPos": "[0,0,70]"
+      "m_SmallBagItemPos": "[0,0,70]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100400": {
       "m_bError": null,
@@ -1280,7 +1451,8 @@
       "m_TipsPos": "[10,0,35]",
       "m_CombinationPos": "[10,0,35]",
       "m_HandBookPos": "[10,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100420": {
       "m_bError": null,
@@ -1290,7 +1462,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100430": {
       "m_bError": null,
@@ -1300,7 +1473,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100450": {
       "m_bError": null,
@@ -1310,7 +1484,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100470": {
       "m_bError": null,
@@ -1320,7 +1495,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100480": {
       "m_bError": null,
@@ -1330,7 +1506,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100490": {
       "m_bError": null,
@@ -1340,7 +1517,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100500": {
       "m_bError": null,
@@ -1350,7 +1528,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100510": {
       "m_bError": null,
@@ -1360,7 +1539,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100520": {
       "m_bError": null,
@@ -1370,7 +1550,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100570": {
       "m_bError": null,
@@ -1380,7 +1561,52 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100640": {
+      "m_bError": null,
+      "m_ItemID": "20100640",
+      "m_Desc": "\"海妖之泪\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100650": {
+      "m_bError": null,
+      "m_ItemID": "20100650",
+      "m_Desc": "\"贵族手弩\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100660": {
+      "m_bError": null,
+      "m_ItemID": "20100660",
+      "m_Desc": "\"被遗忘的誓言\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100700": {
+      "m_bError": null,
+      "m_ItemID": "20100700",
+      "m_Desc": "\"血巫斗篷\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20200001": {
       "m_bError": null,
@@ -1390,7 +1616,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200003": {
       "m_bError": null,
@@ -1400,7 +1627,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200004": {
       "m_bError": null,
@@ -1410,7 +1638,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200005": {
       "m_bError": null,
@@ -1420,7 +1649,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200006": {
       "m_bError": null,
@@ -1430,7 +1660,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200007": {
       "m_bError": null,
@@ -1440,7 +1671,8 @@
       "m_TipsPos": "[0,0,25]",
       "m_CombinationPos": "[0,0,30]",
       "m_HandBookPos": "[0,60,40]",
-      "m_SmallBagItemPos": "[0,0,90]"
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200008": {
       "m_bError": null,
@@ -1450,7 +1682,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200009": {
       "m_bError": null,
@@ -1460,7 +1693,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200013": {
       "m_bError": null,
@@ -1470,7 +1704,8 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200017": {
       "m_bError": null,
@@ -1480,7 +1715,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20200020": {
       "m_bError": null,
@@ -1490,7 +1726,8 @@
       "m_TipsPos": "[0,0,35]",
       "m_CombinationPos": "[0,0,35]",
       "m_HandBookPos": "[0,60,50]",
-      "m_SmallBagItemPos": "[0,0,120]"
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[0,0,0]"
     },
     "20300001": {
       "m_bError": null,
@@ -1500,8 +1737,9 @@
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
-      "m_SmallBagItemPos": "[0,0,170]"
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[0,0,0]"
     }
   },
-  "status": "processed_150_items"
+  "status": "processed_158_items"
 }

@@ -1,0 +1,457 @@
+{
+  "className": "CData_FashionVoiceText",
+  "timestamp": "2025-07-16T14:14:05.670Z",
+  "data": {
+    "60001001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_battle_attack_A2_01\""
+        }
+      }
+    },
+    "60001002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This time, it's your life I'm after.\"",
+          "m_voice": "\"Play_vo_20230_battle_maxskill01_A2_01\""
+        }
+      }
+    },
+    "60001003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_battle_maxskill02_A2_01\""
+        }
+      }
+    },
+    "60001004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'm going to enjoy watching you squirm.\"",
+          "m_voice": "\"Play_vo_20230_battle_skill01_A2_01\""
+        }
+      }
+    },
+    "60001005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_battle_hit_A2_01\""
+        }
+      }
+    },
+    "60001006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"What a shameless way to go... meow.\"",
+          "m_voice": "\"Play_vo_20230_battle_death_A2_01\""
+        }
+      }
+    },
+    "60001007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Want my help? Just know—I always collect what's owed.\"",
+          "m_voice": "\"Play_vo_20230_battle_array_A2_01\""
+        }
+      }
+    },
+    "60001008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"There's more than one way to take what you desire, meow.\"",
+          "m_voice": "\"Play_vo_20230_battle_stagewin_A2_01\""
+        }
+      }
+    },
+    "60001009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It seems you still haven't realized what's of value to me.\"",
+          "m_voice": "\"Play_vo_20230_system_show_A2_01\""
+        }
+      }
+    },
+    "60001010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You seem awfully interested in my secrets.\"",
+          "m_voice": "\"Play_vo_20230_system_greet_A2_01\""
+        }
+      }
+    },
+    "60001011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"All this treasure... You do know how to please a lady.\"",
+          "m_voice": "\"Play_vo_20230_system_levelup_A2_01\""
+        }
+      }
+    },
+    "60001012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"So, got our next mark in mind?\"",
+          "m_voice": "\"Play_vo_20230_system_breakthrough_A2_01\""
+        }
+      }
+    },
+    "60001013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Found any new baubles, meow?\"",
+          "m_voice": "\"Play_vo_20230_system_dispatch_A2_01\""
+        }
+      }
+    },
+    "60001014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hmm? Where was I? That's for me to know.\"",
+          "m_voice": "\"Play_vo_20230_system_idle_A2_01\""
+        }
+      }
+    },
+    "60001015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"All I need in this life of crime, is you.\"",
+          "m_voice": "\"Play_vo_20230_system_transfusion_A2_01\""
+        }
+      }
+    },
+    "60001016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The one piece missing from my collection.\"",
+          "m_voice": "\"Play_vo_20230_system_gift01_A2_01\""
+        }
+      }
+    },
+    "60001017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You're not giving it to me? Am I not your most precious treasure?\"",
+          "m_voice": "\"Play_vo_20230_system_gift02_A2_01\""
+        }
+      }
+    },
+    "60001018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'm enjoying your little surprises.\"",
+          "m_voice": "\"Play_vo_20230_system_affinityup_A2_01\""
+        }
+      }
+    },
+    "60001019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Still keeping your heart from me, even now?\"",
+          "m_voice": "\"Play_vo_20230_system_affinitymax_A2_01\""
+        }
+      }
+    },
+    "60001020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hmm? Nothing escapes my eyes.\"",
+          "m_voice": "\"Play_vo_20230_system_tapgeneric01_A2_01\""
+        }
+      }
+    },
+    "60001021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Need an outfit for sneaking around? I'd love to see how you look in it.\"",
+          "m_voice": "\"Play_vo_20230_system_tapgeneric02_A2_01\""
+        }
+      }
+    },
+    "60001022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Cover your eyes—it's time for sensory training. Let's see if you can detect me.\"",
+          "m_voice": "\"Play_vo_20230_system_taphead01_A2_01\""
+        }
+      }
+    },
+    "60001023": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001023",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You can't hide from me with your little facade.\"",
+          "m_voice": "\"Play_vo_20230_system_taphead02_A2_01\""
+        }
+      }
+    },
+    "60001024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Find anything interesting?\"",
+          "m_voice": "\"Play_vo_20230_system_tapsp01_A2_01\""
+        }
+      }
+    },
+    "60001025": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001025",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Want it? Then take it yourself, like a true burglar.\"",
+          "m_voice": "\"Play_vo_20230_system_tapsp02_A2_01\""
+        }
+      }
+    },
+    "60001026": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001026",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_str_surprised_A2_01\""
+        }
+      }
+    },
+    "60001027": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001027",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_str_joyful_A2_01\""
+        }
+      }
+    },
+    "60001028": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001028",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_str_irritated_A2_01\""
+        }
+      }
+    },
+    "60001029": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001029",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_str_confused_A2_01\""
+        }
+      }
+    },
+    "60001030": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60001030",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20230_str_calm_A2_01\""
+        }
+      }
+    }
+  },
+  "status": "processed_30_items"
+}

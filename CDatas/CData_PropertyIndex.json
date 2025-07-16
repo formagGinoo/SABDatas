@@ -1,6 +1,6 @@
 {
   "className": "CData_PropertyIndex",
-  "timestamp": "2025-07-08T13:35:46.975Z",
+  "timestamp": "2025-07-16T14:14:19.306Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -1457,7 +1457,39 @@
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
       "m_Compute": "2"
+    },
+    "134": {
+      "m_bError": null,
+      "m_PropertyID": "134",
+      "m_PropertyIcon": "\"\"",
+      "m_mCNName": "\"Sleep DMG Taken Up\"",
+      "m_ENName": "\"SleepbuffDmg_Add\"",
+      "m_Type": "2",
+      "m_Show": "2",
+      "m_FVNum": null,
+      "m_FVPercent": null,
+      "m_PropertyType": "2",
+      "m_MinNum": null,
+      "m_MaxNum": "2147483647",
+      "m_InheriteType": null,
+      "m_Compute": "2"
+    },
+    "135": {
+      "m_bError": null,
+      "m_PropertyID": "135",
+      "m_PropertyIcon": "\"\"",
+      "m_mCNName": "\"Extended Control\"",
+      "m_ENName": "\"CtrlTime_Add\"",
+      "m_Type": "2",
+      "m_Show": "2",
+      "m_FVNum": null,
+      "m_FVPercent": null,
+      "m_PropertyType": "2",
+      "m_MinNum": null,
+      "m_MaxNum": "2147483647",
+      "m_InheriteType": null,
+      "m_Compute": "2"
     }
   },
-  "status": "processed_91_items"
+  "status": "processed_93_items"
 }

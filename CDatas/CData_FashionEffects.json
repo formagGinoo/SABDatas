@@ -1,0 +1,598 @@
+{
+  "className": "CData_FashionEffects",
+  "timestamp": "2025-07-16T14:14:05.595Z",
+  "data": {
+    "6013001": {
+      "_type": "nested_dictionary",
+      "_count": 40,
+      "_processed": 40,
+      "data": {
+        "\"Fx_C_Silvan_Base_MaxSkill_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_1\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_1_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_2\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_2_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_3\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_3\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_3_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_4\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_4\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_4_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_5\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_5\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_5_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_6\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_6\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_6_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_7\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_7\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_7_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_Hit_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_Hit_1\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_hit_1_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_Hit_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_Hit_2\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_hit_2_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_Hit_3\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_Hit_3\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_hit_3_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_MaxSkill_Hit_4\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_MaxSkill_Hit_4\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_hit_4_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_Attack01_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_Attack01_1\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_attack01_01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_Attack01_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_Attack01_2\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_attack01_02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_Attack02\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_Attack02\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_attack02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_Hit01\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_Hit01\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_hit01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_1\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Duel02\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Duel02\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_duel02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Duel\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Duel\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_duel_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_1\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_hit_01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_2\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_hit_02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_3\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_3\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_hit_03_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_4\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit_4\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_hit_04_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Hit\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_hit_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Shield02\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Shield02\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_shield02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill01_Shield\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Shield\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_shield_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack01\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack01\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack01_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack02\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack02\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack02_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack03\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack03\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack03_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack04\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack04\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack04_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack05\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack05\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack05_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Attack06\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Attack06\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_attack06_a1_01\""
+        },
+        "\"Fx_C_Silvan_Base_New_MaxSkill_Start\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill_Start\"",
+          "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_start_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_bullet_hit_rogue_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_bullet_hit_rogue_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_bullet_hit_rogue_rogue_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_bullet_rogue_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_bullet_rogue_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_bullet_rogue_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_trap2_end_hit_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_trap2_end_hit_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_trap2_end_hit_rogue_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_trap2_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_trap2_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_trap2_rogue_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_trap_end_hit_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_trap_end_hit_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_trap_end_hit_rogue_a1_01\""
+        },
+        "\"fx_c_silvan_base_maxskill_trap_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6013001",
+          "m_InitFX": "\"fx_c_silvan_base_maxskill_trap_rogue\"",
+          "m_FashionFX": "\"fx_c_silvan_base_maxskill_trap_rogue_a1_01\""
+        }
+      }
+    },
+    "6023001": {
+      "_type": "nested_dictionary",
+      "_count": 31,
+      "_processed": 31,
+      "data": {
+        "\"Fx_C_Mary_Base_Attack01\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Attack01\"",
+          "m_FashionFX": "\"fx_c_mary_base_attack01_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Attack01_Bip001_L_Hand\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Attack01_Bip001_L_Hand\"",
+          "m_FashionFX": "\"fx_c_mary_base_attack01_bip001_l_hand_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Attack01_Bip001_R_Hand\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Attack01_Bip001_R_Hand\"",
+          "m_FashionFX": "\"fx_c_mary_base_attack01_bip001_r_hand_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Bullet01\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Bullet01\"",
+          "m_FashionFX": "\"fx_c_mary_base_bullet01_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Bullet01_Hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Bullet01_Hit\"",
+          "m_FashionFX": "\"fx_c_mary_base_bullet01_hit_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Bullet01_Trail\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Bullet01_Trail\"",
+          "m_FashionFX": "\"fx_c_mary_base_bullet01_trail_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Bip001_L_Hand\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Bip001_L_Hand\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_bip001_l_hand_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Bip001_R_Hand\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Bip001_R_Hand\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_bip001_r_hand_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Bullet01\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Bullet01\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_bullet01_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Bullet01_Trail\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Bullet01_Trail\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_bullet01_trail_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Cast_2Star\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Cast_2Star\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_cast_2star_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Cast_3Star\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Cast_3Star\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_cast_3star_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Cast\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_cast_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_MaxSkill01_Hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_MaxSkill01_Hit\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_hit_a2_01\""
+        },
+        "\"fx_c_mary_base_maxskill01_range_2star_card\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"fx_c_mary_base_maxskill01_range_2star_card\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_range_2star_card_a2_01\""
+        },
+        "\"fx_c_mary_base_maxskill01_range_3star_card\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"fx_c_mary_base_maxskill01_range_3star_card\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_range_3star_card_a2_01\""
+        },
+        "\"fx_c_mary_base_maxskill01_range_3star_magiccircle\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"fx_c_mary_base_maxskill01_range_3star_magiccircle\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_range_3star_magiccircle_a2_01\""
+        },
+        "\"fx_c_mary_base_maxskill01_range_card\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"fx_c_mary_base_maxskill01_range_card\"",
+          "m_FashionFX": "\"fx_c_mary_base_maxskill01_range_card_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Mob_Appear\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Mob_Appear\"",
+          "m_FashionFX": "\"fx_c_mary_base_mob_appear_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Mob_Disappear\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Mob_Disappear\"",
+          "m_FashionFX": "\"fx_c_mary_base_mob_disappear_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_Bip001_R_Hand\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_Bip001_R_Hand\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_bip001_r_hand_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_Cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_Cast\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_cast_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndGeneral\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndGeneral\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endgeneral_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndGeneral_Buff\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndGeneral_Buff\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endgeneral_buff_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndGeneral_Start\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndGeneral_Start\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endgeneral_start_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndMagic\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndMagic\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endmagic_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndPope\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndPope\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endpope_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_EndReaper\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_EndReaper\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_endreaper_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_HeroCast\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_HeroCast\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_herocast_a2_01\""
+        },
+        "\"Fx_C_Mary_Base_Skill01_Hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"Fx_C_Mary_Base_Skill01_Hit\"",
+          "m_FashionFX": "\"fx_c_mary_base_skill01_hit_a2_01\""
+        },
+        "\"fx_e_20001_clip12c_mary_smoke_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitFX": "\"fx_e_20001_clip12c_mary_smoke_rogue\"",
+          "m_FashionFX": "\"fx_e_20001_clip12c_mary_smoke_rogue_a2_01\""
+        }
+      }
+    },
+    "6029001": {
+      "_type": "nested_dictionary",
+      "_count": 24,
+      "_processed": 24,
+      "data": {
+        "\"FX_C_Aiona_Origin_Attack01\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack01\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack01_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack01_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack01_1\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack01_1_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack02\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack02\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack02_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack02_1\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack02_1\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack02_1_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack_Bullet\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack_Bullet\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack_bullet_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack_Bullet_trail\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack_Bullet_trail\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack_bullet_trail_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Attack_Hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack_Hit\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_attack_hit_a1_01\""
+        },
+        "\"fx_c_aiona_origin_maxskill01_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"fx_c_aiona_origin_maxskill01_2\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill01_2_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_MaxSkill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_MaxSkill01\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill01_a1_01\""
+        },
+        "\"fx_c_aiona_origin_maxskill02_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"fx_c_aiona_origin_maxskill02_2\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill02_2_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_MaxSkill02\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_MaxSkill02\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill02_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_MaxSkill03\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_MaxSkill03\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill03_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_MaxSkill_target02\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_MaxSkill_target02\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill_target02_a1_01\""
+        },
+        "\"fx_c_aiona_origin_maxskill_target_2\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"fx_c_aiona_origin_maxskill_target_2\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill_target_2_a1_01\""
+        },
+        "\"fx_c_aiona_origin_maxskill_target_3\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"fx_c_aiona_origin_maxskill_target_3\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill_target_3_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_MaxSkill_target\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_MaxSkill_target\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_maxskill_target_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Shield_Appear\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Shield_Appear\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_shield_appear_a1_01\""
+        },
+        "\"Fx_C_Aiona_Origin_Skill\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"Fx_C_Aiona_Origin_Skill\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_skill_a1_01\""
+        },
+        "\"Fx_C_Aiona_Origin_Skill_Floor\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"Fx_C_Aiona_Origin_Skill_Floor\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_skill_floor_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_Skill_Floor_Cast01\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Skill_Floor_Cast01\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_skill_floor_cast01_a1_01\""
+        },
+        "\"Fx_C_Aiona_Origin_Skill_FloorDostort\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"Fx_C_Aiona_Origin_Skill_FloorDostort\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_skill_floordostort_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_transmit01\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_transmit01\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_transmit01_a1_01\""
+        },
+        "\"FX_C_Aiona_Origin_transmit02\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"FX_C_Aiona_Origin_transmit02\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_transmit02_a1_01\""
+        },
+        "\"fx_c_aiona_origin_passiveskill_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6029001",
+          "m_InitFX": "\"fx_c_aiona_origin_passiveskill_rogue\"",
+          "m_FashionFX": "\"fx_c_aiona_origin_passiveskill_rogue_a1_01\""
+        }
+      }
+    }
+  },
+  "status": "processed_3_items"
+}

@@ -1,6 +1,6 @@
 {
   "className": "CData_ClientMessage",
-  "timestamp": "2025-07-08T13:35:33.154Z",
+  "timestamp": "2025-07-16T14:14:04.732Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -255,7 +255,7 @@
     "60": {
       "m_bError": null,
       "m_ID": "60",
-      "m_mContent": "\"Clear [Threads of Fate] <style=\"Clientmessage01\">2-1</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-1</style> to unlock.\""
     },
     "101": {
       "m_bError": null,
@@ -1002,6 +1002,36 @@
       "m_ID": "10430",
       "m_mContent": "\"Pre-Registration Complete!\""
     },
+    "10500": {
+      "m_bError": null,
+      "m_ID": "10500",
+      "m_mContent": "\"Collected a sturdy wooden hammer.\""
+    },
+    "10501": {
+      "m_bError": null,
+      "m_ID": "10501",
+      "m_mContent": "\"Picked up a strange box.\""
+    },
+    "10502": {
+      "m_bError": null,
+      "m_ID": "10502",
+      "m_mContent": "\"Something seems missing.\""
+    },
+    "10510": {
+      "m_bError": null,
+      "m_ID": "10510",
+      "m_mContent": "\"Complete Stage {0}.\""
+    },
+    "10511": {
+      "m_bError": null,
+      "m_ID": "10511",
+      "m_mContent": "\"Unlocks after {0}.\""
+    },
+    "10512": {
+      "m_bError": null,
+      "m_ID": "10512",
+      "m_mContent": "\"Unlocking Requirement: Clear [Sapphire Isle] <style=Highlight>{0}</style>.\""
+    },
     "11126": {
       "m_bError": null,
       "m_ID": "11126",
@@ -1011,6 +1041,11 @@
       "m_bError": null,
       "m_ID": "11127",
       "m_mContent": "\"You can only upload one replay file at a time.\""
+    },
+    "11128": {
+      "m_bError": null,
+      "m_ID": "11128",
+      "m_mContent": "\"Insufficient Vassals for Transfusion.\""
     },
     "12001": {
       "m_bError": null,
@@ -1150,7 +1185,7 @@
     "13021": {
       "m_bError": null,
       "m_ID": "13021",
-      "m_mContent": "\"#N/A\""
+      "m_mContent": "\"No remaining discounts today.\""
     },
     "13022": {
       "m_bError": null,
@@ -1166,6 +1201,26 @@
       "m_bError": null,
       "m_ID": "13024",
       "m_mContent": "\"Pact has exceeded 180 days. Unable to use.\""
+    },
+    "13025": {
+      "m_bError": null,
+      "m_ID": "13025",
+      "m_mContent": "\"Daily task refresh limit reached.\""
+    },
+    "13026": {
+      "m_bError": null,
+      "m_ID": "13026",
+      "m_mContent": "\"Insufficient resources.\""
+    },
+    "13027": {
+      "m_bError": null,
+      "m_ID": "13027",
+      "m_mContent": "\"Success! Select another Ancient Vassal to summon.\""
+    },
+    "13028": {
+      "m_bError": null,
+      "m_ID": "13028",
+      "m_mContent": "\"Capacity reached. Please summon Ancient Vassal.\""
     },
     "20000": {
       "m_bError": null,
@@ -1200,7 +1255,7 @@
     "20007": {
       "m_bError": null,
       "m_ID": "20007",
-      "m_mContent": "\"No characters selected. Unable to start battle.\""
+      "m_mContent": "\"No Vassals selected. Unable to start battle.\""
     },
     "20008": {
       "m_bError": null,
@@ -1380,7 +1435,7 @@
     "20053": {
       "m_bError": null,
       "m_ID": "20053",
-      "m_mContent": "\"Insufficient Solis\""
+      "m_mContent": "\"Insufficient Soli\""
     },
     "20054": {
       "m_bError": null,
@@ -1431,6 +1486,11 @@
       "m_bError": null,
       "m_ID": "21008",
       "m_mContent": "\"Cannot deploy duplicate Vassals.\""
+    },
+    "21009": {
+      "m_bError": null,
+      "m_ID": "21009",
+      "m_mContent": "\"\""
     },
     "30001": {
       "m_bError": null,
@@ -2162,6 +2222,11 @@
       "m_ID": "55001",
       "m_mContent": "\"Coming soon. Please stay tuned!\""
     },
+    "55002": {
+      "m_bError": null,
+      "m_ID": "55002",
+      "m_mContent": "\"Event Unavailable\""
+    },
     "56001": {
       "m_bError": null,
       "m_ID": "56001",
@@ -2193,5 +2258,5 @@
       "m_mContent": "\"Unlocked by default.\""
     }
   },
-  "status": "processed_438_items"
+  "status": "processed_451_items"
 }

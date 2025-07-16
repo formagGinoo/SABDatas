@@ -1,6 +1,6 @@
 {
   "className": "CData_MainChapter",
-  "timestamp": "2025-07-08T13:35:35.619Z",
+  "timestamp": "2025-07-16T14:14:07.126Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -238,21 +238,21 @@
       "m_Hide": "1",
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "18": {
       "m_bError": null,
       "m_ChapterID": "18",
       "m_ChapterTitle": "\"17\"",
       "m_ChapterType": "1",
-      "m_mChapterName": "\"Silver Blood and Black Hair\"",
+      "m_mChapterName": "\"The End and the Beginning\"",
       "m_UnlockConditionType": "[5]",
       "m_UnlockConditionData": "[17]",
       "m_Order": "18",
       "m_Hide": "1",
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "19": {
       "m_bError": null,
@@ -518,7 +518,7 @@
       "m_Hide": null,
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "517": {
       "m_bError": null,
@@ -532,7 +532,7 @@
       "m_Hide": null,
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "518": {
       "m_bError": null,

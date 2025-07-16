@@ -1,6 +1,6 @@
 {
   "className": "CData_MainLostStory",
-  "timestamp": "2025-07-08T13:35:36.333Z",
+  "timestamp": "2025-07-16T14:14:07.771Z",
   "data": {
     "1": {
       "_type": "nested_dictionary",
@@ -224,7 +224,7 @@
           "m_SubsectionID": "1",
           "m_mStoryTitle": "\"Sailor's Diary\"",
           "m_mSubsectionTitle": "\"Sailor's Diary I\"",
-          "m_mText": "\"\"Yesterday the Captain had some cargo brought aboard and specifically instructed us to keep our distance. Yet I keep catching whiffs of a peculiar fishy smell. What could be so mysterious?\"\n\n\"Met the Captain's brother on deck tonight. William, I think his name was? He was pouring something into the sea while muttering about not disappointing his brother again. Rather unsettling.\"\"",
+          "m_mText": "\"Today marks my first day aboard the El Dorado, and I'm thrilled to have been chosen by Captain Goldland. We enjoyed a fantastic meal with fellow townsfolk this evening—everyone was in high spirits. After all, it's not every day you set out on such an adventure, so a little celebration the night before seems appropriate.\"",
           "m_Reward": "[[101,50]]",
           "m_icon": "[1412,1]",
           "m_MainChapterClue": "[7,4]"
@@ -235,7 +235,7 @@
           "m_SubsectionID": "2",
           "m_mStoryTitle": "\"Sailor's Diary\"",
           "m_mSubsectionTitle": "\"Sailor's Diary II\"",
-          "m_mText": "\"\"Ran into the Captain on deck. He was in high spirits and smelled of alcohol, kept bragging about his clever brother. Why not tell that to the man himself?\"\n\n\"There've been strange thuds coming from the lower deck where the mysterious cargo is stored, as if something's alive down there... Some crew members suggest it might be haunted, but I doubt it. They're betting on who'll dare to check it out tonight. I hope everything turns out alright.\"\n\"",
+          "m_mText": "\"\"Yesterday the Captain had some cargo brought aboard and specifically instructed us to keep our distance. Yet I keep catching whiffs of a peculiar fishy smell. What could be so mysterious?\"\n\n\"Met the Captain's brother on deck tonight. William, I think his name was? He was pouring something into the sea while muttering about not disappointing his brother again. Rather unsettling.\"\"",
           "m_Reward": "[]",
           "m_icon": "[]",
           "m_MainChapterClue": "[7,1]"
@@ -246,7 +246,7 @@
           "m_SubsectionID": "3",
           "m_mStoryTitle": "\"Sailor's Diary\"",
           "m_mSubsectionTitle": "\"Sailor's Diary III\"",
-          "m_mText": "\"The hold where the cargo is kept always hums with eerie sounds, like things moving around. Some of the crew think it's ghosts, but I doubt that. Tonight, they've decided to go investigate in secret. I can only hope what they find isn't as sinister as what they feared.\"",
+          "m_mText": "\"\"Ran into the Captain on deck. He was in high spirits and smelled of alcohol, kept bragging about his clever brother. Why not tell that to the man himself?\"\n\n\"There've been strange thuds coming from the lower deck where the mysterious cargo is stored, as if something's alive down there... Some crew members suggest it might be haunted, but I doubt it. They're betting on who'll dare to check it out tonight. I hope everything turns out alright.\"\"",
           "m_Reward": "[]",
           "m_icon": "[]",
           "m_MainChapterClue": "[8,2]"
@@ -405,7 +405,87 @@
           "m_MainChapterClue": "[15,3]"
         }
       }
+    },
+    "10": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "10",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Crimson Inquisition\"",
+          "m_mSubsectionTitle": "\"The Sentence\"",
+          "m_mText": "\"Vampires are heretics, followers of the demons of chaos, vassals of Dracula, and the source of the sins of the last judgment.\nThey must all be eradicated, purified by the Church.\nThose born with white hair are vampires;\nThose born with red eyes are vampires;\nThose who claim to have memories from a past life are vampires;\nThose who would conduct sorcery against the Church are vampires;\nThose who transform under the blood moon are vampires;\n...\nWitch Hunters will earn Aeon's blessing based on the number of vampires they have slain.\nPurge the sins caused by those who stray from the path and become part of the exalted and eternal.\nBetter to kill an innocent than to allow a vampire to escape judgment.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1415,1]",
+          "m_MainChapterClue": "[18,2]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "10",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Crimson Inquisition\"",
+          "m_mSubsectionTitle": "\"Trial By Flame\"",
+          "m_mText": "\"Vampires can be identified by four physical features: White skin, pointed ears, sharp molars, and blood sigils.\nThey feed on human blood to sustain their bloodless forms;\ntheir ears are tools for capturing living beings;\ntheir teeth are daggers for piercing human skin;\nand their sigils support their deceitful appearances.\nIf identification is uncertain, use holy fire.\nHoly fire shall reveal the truth hidden beneath the blood sigils.\nBind them to a cross and ignite the holy fire with kindling. If they emit a piercing wail and their bones do not melt after the flames die out, you may confirm their identity as a vampire.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[17,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "10",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Crimson Inquisition\"",
+          "m_mSubsectionTitle": "\"Punishing Heretics\"",
+          "m_mText": "\"Vampires are Heretics and corrupted spirits of evil.\nThey roam, hoarding wealth and leeching life, complicit in the apocalypse.\nWhen executed, their crimes must be made known to the faithful:\nOne, for the sin of murder, for bringing death to the living;\nTwo, for the sin of greed, for chasing gold and other treasures;\nThree, for the sin of apostasy, for forsaking the faith and embracing heresy.\nExecuting vampires is both a means to preserve balance and a sacred duty bestowed upon us by Aeon.\nUpon their death, their property and financial assets are to be seized.\nTheir family, friends, and neighbors may also be tainted. If there is even a hint of corruption, they must be eradicated as well.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[18,3]"
+        }
+      }
+    },
+    "11": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StoryID": "11",
+          "m_SubsectionID": "1",
+          "m_mStoryTitle": "\"Song of Durendal\"",
+          "m_mSubsectionTitle": "\"The Other Side\"",
+          "m_mText": "\"I hear the voice at the end of time—\nLike the ancient strings at the dawn of the world,\nLike the soft murmur of all living things.\nThe river flows from that far shore,\nOn this side, it nurtures will, memory, and civilization;\nOn the Other Side, it nurtures the sun, stars, and moon.\nAeon takes my hand as we sail on the river,\nOn the left, the clamor of iron forges and silhouettes of travelers,\nOn the right, the loneliness of home and the morning stars of the night.\nI shall Embark from this shore,\nTaking Aeon's hand, to journey towards the Other Side.\"",
+          "m_Reward": "[[101,50]]",
+          "m_icon": "[1412,1]",
+          "m_MainChapterClue": "[18,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StoryID": "11",
+          "m_SubsectionID": "2",
+          "m_mStoryTitle": "\"Song of Durendal\"",
+          "m_mSubsectionTitle": "\"Death and Legacy\"",
+          "m_mText": "\"Beneath the waterfall, I heard a clamor.\nIt seemed like two voices engaged in an argument,\nOr perhaps the lament of a solitary soul.\nI heard a voice speak of life's torment,\n\"Death is what keeps us from ever smiling again.\"\nAnother voice arose, softly praising life's treasure,\n\"Legacy is what allows us to bask in light.\"\nI moved forward,\nBut there was no one in sight—only a white flower entwined with thriving grass.\nThe petals were withered,\nYet the grass was lush.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[17,4]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StoryID": "11",
+          "m_SubsectionID": "3",
+          "m_mStoryTitle": "\"Song of Durendal\"",
+          "m_mSubsectionTitle": "\"Mountain of Longing\"",
+          "m_mText": "\"As we ventured into the depths of the canyon, Aeon called for me to halt,\n'Look, that is the cliff no one can conquer.'\nA mighty eagle circled above the peak,\nA black serpent licked its fangs within the trees,\nA white lamb wept at the mountain's base.\nI asked the lamb why it wept; it gazed at the cliff,\n'I can no longer reach the Other Side.'\nI asked the serpent why it coiled; it looked at the cliff,\n'I shall drag that eagle down from the peak.'\nI asked the eagle why it refused to land; it did not reply,\nBut dropped skeletal remains at my feet.\nI saw clearly—it was a lamb's bones cloaked in snakeskin,\nThe bones hung their head in sorrow,\nWhile the snakeskin fluttered in the wind's grip.\"",
+          "m_Reward": "[]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[17,3]"
+        }
+      }
     }
   },
-  "status": "processed_9_items"
+  "status": "processed_11_items"
 }

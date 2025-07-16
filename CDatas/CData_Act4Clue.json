@@ -1,0 +1,106 @@
+{
+  "className": "CData_Act4Clue",
+  "timestamp": "2025-07-16T14:13:49.005Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104008",
+      "m_mClueTitle": "\"I. Ninth Hour\"",
+      "m_mClueText": "\"\"Are you the Mysterious Merchant I heard about?\"\nLorelei stepped into the dark room—empty, at first glance. From behind the curtain, a low voice drifted forth, warning her that every piece of merchandise came with a price.\n\"As the finest merchant, the price I demand will always far exceed the value of these goods.\"\nLorelei nodded without a flicker of doubt. She was eight years old then, clutching three luminous pearls and seventy-five Soli saved from her stepfather. She was ready to give everything she had—no, more than that—for something others called impossible:\n\"I want my friend to stop being sick.\"\n\"So that one day… she might become the greatest musician who ever lived.\"\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104008",
+      "m_mClueTitle": "\"II. Sunset Hour\"",
+      "m_mClueText": "\"Constantine gripped the ice-chilled blade and approached the sink.\nIn the flickering candlelight, the unconscious siren no longer seemed monstrous. This was his final living specimen. Tomorrow, he would have Hallon fetch new materials.\nThe obsidian knife parted the scales, cutting through the hide-like fishtail. The sinewy gray-blue muscles twitched, causing the grotesque fins to strike the blade with a high-pitched, mournful ring.\nLike a fish flailing on a market stall.\nConstantine's cuts were precise, measured—blood was never his pursuit. And yet, today, a strange unease festered within him.\nThat unease deepened the moment the basement door burst open.\n'Quick! Help Bella! She collapsed during her birthday banquet!'\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104008",
+      "m_mClueTitle": "\"III. Tenth Hour\"",
+      "m_mClueText": "\"Averdin had never known this basement existed beneath his brother's residence.\nLabeled vials lined the shelves. Inside jars, dark gray tissue floated. As Averdin stepped closer, he saw slender fingers webbed with translucent skin.\n'Averdin, why are you here...'\n'What have you done?! We promised to give the sirens a home—and you did all this behind my back?'\nAn argument erupted at once, escalating from plea to fury to despair, until someone knocked over the reagent shelf. Glass vials shattered like wine glasses from Bella's celebration.\nA shard sliced across Averdin's hand. It burned.\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104008",
+      "m_mClueTitle": "\"IV. Vesper Hour\"",
+      "m_mClueText": "\"The moon had risen quietly above the treetops.\nMyrtle heard beastly cries in the forest. She tried to flee the banquet with Isaac—only to find Averdin emerging from the layered shadows.\nHis teeth were sharper, claws sprouting from his fingers, and blood staining the corners of his lips. What had happened? Myrtle was gripped by terror.\n'I'm starving…' he rasped.\nShe should have fought. She should have struck him down.\nBut how could she tear out the throat of the man who had once saved her? The man who had built a home for her people?\nTonight, the moon looms vast, round, and brilliant.\nTonight, it bleeds with a deep, blood-red hue.\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104008",
+      "m_mClueTitle": "\"V. Compline Hour\"",
+      "m_mClueText": "\"Constantine's research was incomplete. Unproven. But there was no time left.\nHe stared at Bella on the operating table, one leg already lost. This was the best he could do.\nBefore they could clean the blood from her body, Hallon returned to the basement.\n'Come on. We’re getting out of here.'\nAfter five long years, Constantine had finally returned to Sapphire Isle—only to find it reduced to a living hell.\n'What are those reagents in your lab? Why has the Isle turned into this? What are we supposed to do?!'\nConstantine crumpled to the floor. It was over. His homeland would soon become a breeding ground for the Black Blood.\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104010",
+      "m_mClueTitle": "\"VI. Matin Hour\"",
+      "m_mClueText": "\"Bella awoke from unconsciousness, pain stabbing through every inch of her body.\nShe remembered her illness flaring again, being carried to bed by servants, and then...\n'Where am I?'\nShe looked around. Her left leg was missing, but the bandages were clean and tight. In the water tank beside her floated siren corpses, their bodies mutilated beyond recognition.\n'Was I kidnapped? Them too? Who would do this…?'\nGrabbing a stick for balance, Bella limped toward the exit, hopping on one leg. She knew where to find allies who would help her uncover the truth.\n'I have to reach the meeting point. I must warn Lorelei—someone is hunting the sirens!'\n'I can still run...'\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104010",
+      "m_mClueTitle": "\"VII. Rest Hour\"",
+      "m_mClueText": "\"'Joyce has received payment. And Joyce always upholds a deal!'\nBut in this case…\nJoyce stood over Bella's mangled body, hands on her hips in dismay.\n'Oh dear, oh dear. Half the body’s been eaten. Tragic… And the other half? Tainted with Black Blood... Such a pity…'\n'But now Joyce has the answer! If we turn little Bella into a puppet, she'll never be sick again!'\n'A win-win deal! Joyce really is a genius!'\n'Before leaving… there's still time to wrap up one last transaction through Hallon!'\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104010",
+      "m_mClueTitle": "\"VIII. Hymn Hour\"",
+      "m_mClueText": "\"Clovis had never seen waves that high...\nIn a single night, once-familiar elders had grown siren traits and begun tearing into their own kin.\n'The Church will come. When they do, things will return to normal.'\nThat's what Clovis told Isaac. The moon hung cold and pale overhead. Would morning ever come?\nFar across the ink-black sea, a silhouette rose with the sun.\nThe Church's Bell Ringer had arrived. The Isle could be saved!\nBut with a snap of their fingers, the Bell Ringer summoned a flood from the heavens, drowning homes and fleeing villagers alike.\n'No… The Church… they've come to purge us…'\n'They're... they're here!'\n'Run, Isaac... run!'\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104012",
+      "m_mClueTitle": "\"IX. Second Hour\"",
+      "m_mClueText": "\"'Pay the price, and they'll be yours.'\nHallon believed the words in that mysterious letter. He could no longer save the Isle or its people. All he could trade for was the safety of a precious few.\nThe rest—infected or not—would be nothing more than drops in the ocean. That was the Bell Ringer's flawless form of purification.\n'One last request... If you find my nephew, Isaac... If there's any hope left for him...'\nAlbrecht neither nodded nor shook his head. Hallon couldn't read his expression.\nIt had taken all his courage to make a deal with the Bell Ringer—under the guise of establishing liquid metal currency. He fled with Constantine in tow.\nRun! Get Bella from the basement and leave now!\nHe didn't know that what awaited him… was his daughter's lifeless body.\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104012",
+      "m_mClueTitle": "\"X. Starfall Hour\"",
+      "m_mClueText": "\"Isaac despised the sirens.\nIf they had never come, the Isle would never have descended into this nightmare.\nIsaac despised his father.\nIf he had never entered that lab, none of this—his family, his friends, his home—would have been lost.\nIsaac despised himself.\nIf only he had the strength… the courage… he might've stopped it all.\n'Tell me. What will you do?'\nAlbrecht's voice lingered in his mind, but Isaac remained silent, fingers clenched tight around the dagger.\nEven as the Blood Beast tore into him, even when his hands could no longer feel, he kept his grip on the dagger.\nTo destroy all that is evil. To crush its seed before it spreads.\"",
+      "m_Reward": "[[101,50]]"
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_ActivitySubID": "1040",
+      "m_PreLevel": "104012",
+      "m_mClueTitle": "\"XI. Sunrise Hour\"",
+      "m_mClueText": "\"Summer's dawn came early.\nLorelei counted the stars as they faded, one by one, until golden light broke in the east.\nSoft footsteps rustled behind the curtain.\n'You're back. Is Bella better?'\nThe Mysterious Merchant clapped, as if dismissing such a minor favor. 'The air here isn't good for her recovery. I'll take her northward, where it's cold. She'll write to you regularly.'\nLorelei nodded. Bella once said that to humans, a trade was as sacred as a siren's oath.\n'Keep this pact with you. When the time comes to fulfill it, you'll receive a letter.'\n'And don’t forget to check your mailbox. Our deal...'\n'...isn't over yet.'\"",
+      "m_Reward": "[[101,50]]"
+    }
+  },
+  "status": "processed_11_items"
+}

@@ -1,6 +1,6 @@
 {
   "className": "CData_BattleGlobalEffect",
-  "timestamp": "2025-07-08T13:35:24.074Z",
+  "timestamp": "2025-07-16T14:13:55.448Z",
   "data": {
     "1000701": {
       "m_bError": null,
@@ -80,7 +80,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900005\"",
       "m_mName": "\"Piera's Bond\"",
-      "m_mDesc": "\"Piera's Bind. Greatly increases CRIT Rate and CRIT DMG for all allies right away.\"",
+      "m_mDesc": "\"Piera's Bond. Greatly increases CRIT Rate and CRIT DMG for all allies right away.\"",
       "m_Param": "[]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[]",
@@ -194,6 +194,42 @@
       "m_BuffList": "[2008]",
       "m_ShowBuffDesc": "[2008]"
     },
+    "2000001": {
+      "m_bError": null,
+      "m_ID": "2000001",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Malevolent Spirit\"",
+      "m_mDesc": "\"When Continuous DMG takes effect, there is a {0} chance to deal True DMG equal to 100% of the damage dealt to nearby enemies in a circle. Each instance of Continuous DMG on an enemy increases the continuous damage they take by {1}, up to a maximum of {2}.\"",
+      "m_Param": "[20000011,20000012,20000013,20000014]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6001]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000002": {
+      "m_bError": null,
+      "m_ID": "2000002",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Retraction\"",
+      "m_mDesc": "\"When enemy units burrow, they gain {0} DMG Reduction. However, they will surface as Control effects inflicted on them continue. Each instance of Control extends the duration of these effects on the enemy by {1}.\"",
+      "m_Param": "[20000021,20000022]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6002]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000003": {
+      "m_bError": null,
+      "m_ID": "2000003",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Noxious Gas\"",
+      "m_mDesc": "\"While vapors shroud the field, allies lose HP equal to {0} of their Max HP per sec. ATK SPD is reduced by {2} for units with HP Percentage below {1}. Units with HP Percentage below {3} become Stunned.\"",
+      "m_Param": "[20000031,20000032,20000033,20000034]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6003]",
+      "m_ShowBuffDesc": "[]"
+    },
     "3040001": {
       "m_bError": null,
       "m_ID": "3040001",
@@ -284,7 +320,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4901000\"",
       "m_mName": "\"Faded Moon\"",
-      "m_mDesc": "\"When a Waxing Moon Vassal uses their Ultimate, all allies gain Lifesteal and ATK SPD Up (Minor) for <style=Highlight>{0}</style> sec.\"",
+      "m_mDesc": "\"When a New Moon Vassal uses their Ultimate, all allies gain Lifesteal and ATK SPD Up (Minor) for <style=Highlight>{0}</style> sec.\"",
       "m_Param": "[49010001]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4901]",
@@ -295,8 +331,8 @@
       "m_ID": "4902000",
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4902000\"",
-      "m_mName": "\"Crescent Moon\"",
-      "m_mDesc": "\"When a Crescent Moon Vassal uses their Ultimate, all allies gain CRIT Rate UP (Minor) and CRIT DMG Dealt Up (Minor) for <style=Highlight>{0}</style> sec.\"",
+      "m_mName": "\"Rising Moon\"",
+      "m_mDesc": "\"When a Crescent Moon Vassal uses their Ultimate, all allies gain CRIT Rate Up (Minor) and CRIT DMG Dealt Up (Minor) for <style=Highlight>{0}</style> sec.\"",
       "m_Param": "[49020001]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4902]",
@@ -428,7 +464,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4913000\"",
       "m_mName": "\"Master of Puppets\"",
-      "m_mDesc": "\"When there is a summon, gains ATK SPD Up (Major) and All DMG Up (Major).\"",
+      "m_mDesc": "\"Upon each summon, gains ATK SPD Up (Major) and All DMG Up (Major).\"",
       "m_Param": "[]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4913]",
@@ -518,16 +554,76 @@
       "m_BuffList": "[4155]",
       "m_ShowBuffDesc": "[4155]"
     },
-    "6000811": {
+    "6000301": {
       "m_bError": null,
-      "m_ID": "6000811",
-      "m_CampType": null,
+      "m_ID": "6000301",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1001003\"",
+      "m_mName": "\"Siren Slayer\"",
+      "m_mDesc": "\"Siren Slayer: Deals P. DMG to a select target, with damage increasing as the target's HP decreases. If the target is eliminated, next cast costs 0 Blood Soul. Dispels Sleep from all allies 2 sec after casting. Cooldown: {0} sec.\"",
+      "m_Param": "[6003002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "6000311": {
+      "m_bError": null,
+      "m_ID": "6000311",
+      "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000501\"",
-      "m_mName": "\"Reserved String\"",
-      "m_mDesc": "\"Reserved String\"",
+      "m_mName": "\"Fatal Illusion\"",
+      "m_mDesc": "\"Isaac Van Helsing has been given a mysterious drug by Hallon. He will lose a small amount of HP every 2 sec and cannot use his Ultimate.\"",
       "m_Param": "[]",
       "m_ScriptName": "\"\"",
-      "m_BuffList": "[1717]",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "6000322": {
+      "m_bError": null,
+      "m_ID": "6000322",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900005\"",
+      "m_mName": "\"Siren's Call\"",
+      "m_mDesc": "\"In-battle Bloodsoul recovery rate is fixed and unaffected by the number of deployed Vassals.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "6000323": {
+      "m_bError": null,
+      "m_ID": "6000323",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000701\"",
+      "m_mName": "\"Siren's Call\"",
+      "m_mDesc": "\"Enemy Effect: Immune to displacement and will not move.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "6000401": {
+      "m_bError": null,
+      "m_ID": "6000401",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000701\"",
+      "m_mName": "\"Siren's Tears\"",
+      "m_mDesc": "\"Siren's Tear both reduces enemy ATK SPD and inflicts Sleep on enemies in range, while increasing ATK SPD and removes status effects from allies in range.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "6000402": {
+      "m_bError": null,
+      "m_ID": "6000402",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000701\"",
+      "m_mName": "\"Siren's Dream\"",
+      "m_mDesc": "\"Reduces Siren's Tear consumption and increases its area of effect.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
       "m_ShowBuffDesc": "[]"
     },
     "81000601": {
@@ -535,8 +631,8 @@
       "m_ID": "81000601",
       "m_CampType": "1",
       "m_Icon": "\"Atlas_Monster/propcard_03_dish001\"",
-      "m_mName": "\"Horn of Plenty\"",
-      "m_mDesc": "\"Throws a feast at a select location, causing all allies to move there. Upon arrival, they gain ATK Speed UP by <style=Highlight>{0}</style> for {1} sec.\"",
+      "m_mName": "\"Ami's Buffet\"",
+      "m_mDesc": "\"Throws a feast at a select location, causing all allies to move there. Upon arrival, they gain ATK SPD UP by <style=Highlight>{0}</style> for {1} sec.\"",
       "m_Param": "[104301,81000601]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[]",
@@ -567,5 +663,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_47_items"
+  "status": "processed_55_items"
 }

@@ -1,6 +1,6 @@
 {
   "className": "CData_MailTemplate",
-  "timestamp": "2025-07-08T13:35:35.605Z",
+  "timestamp": "2025-07-16T14:14:07.107Z",
   "data": {
     "800001": {
       "m_bError": null,
@@ -15,7 +15,11 @@
       "m_Attachment": "[[999,1000]]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "259200",
-      "m_Push": "1"
+      "m_Push": "1",
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800002": {
       "m_bError": null,
@@ -30,7 +34,11 @@
       "m_Attachment": "[[999,1000]]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "259200",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800003": {
       "m_bError": null,
@@ -45,7 +53,11 @@
       "m_Attachment": "[[101,9000]]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "259200",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800100": {
       "m_bError": null,
@@ -60,7 +72,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "2592000",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800101": {
       "m_bError": null,
@@ -75,7 +91,11 @@
       "m_Attachment": "[[999,1000]]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": null,
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800102": {
       "m_bError": null,
@@ -90,7 +110,11 @@
       "m_Attachment": "[[999,1000]]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "259200",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800103": {
       "m_bError": null,
@@ -105,7 +129,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "3600",
-      "m_Push": "1"
+      "m_Push": "1",
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800104": {
       "m_bError": null,
@@ -120,7 +148,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": null,
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800105": {
       "m_bError": null,
@@ -135,7 +167,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": null,
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800106": {
       "m_bError": null,
@@ -150,7 +186,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800107": {
       "m_bError": null,
@@ -165,7 +205,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": null,
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800108": {
       "m_bError": null,
@@ -180,7 +224,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": "2592000",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800109": {
       "m_bError": null,
@@ -195,7 +243,49 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": "2592000",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
+    },
+    "800110": {
+      "m_bError": null,
+      "m_MailTemplateID": "800110",
+      "m_ClientCanSend": null,
+      "m_Sticky": null,
+      "m_mFrom": "\"Courier\"",
+      "m_mTitle": "\"Monthly Pass Rewards\"",
+      "m_mContent": "\"Attention Lord,\nYou have unclaimed rewards in Monthly Pass, please be sure to claim them.\"",
+      "m_DelTime": "\"\"",
+      "m_DelDurTime": "2592000",
+      "m_Attachment": "[]",
+      "m_SaveAfterRcvAttach": null,
+      "m_DelTimeAfterOpen": null,
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
+    },
+    "800111": {
+      "m_bError": null,
+      "m_MailTemplateID": "800111",
+      "m_ClientCanSend": null,
+      "m_Sticky": null,
+      "m_mFrom": "\"Courier\"",
+      "m_mTitle": "\"Limited Pass Rewards\"",
+      "m_mContent": "\"Attention Lord,\nYou have unclaimed rewards in Timed Pass, please be sure to claim them.\"",
+      "m_DelTime": "\"\"",
+      "m_DelDurTime": "2592000",
+      "m_Attachment": "[]",
+      "m_SaveAfterRcvAttach": null,
+      "m_DelTimeAfterOpen": null,
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800201": {
       "m_bError": null,
@@ -210,7 +300,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800202": {
       "m_bError": null,
@@ -225,7 +319,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800203": {
       "m_bError": null,
@@ -240,7 +338,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800204": {
       "m_bError": null,
@@ -255,7 +357,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800301": {
       "m_bError": null,
@@ -270,7 +376,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "604800",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800302": {
       "m_bError": null,
@@ -285,7 +395,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800401": {
       "m_bError": null,
@@ -300,7 +414,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": null,
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800402": {
       "m_bError": null,
@@ -315,7 +433,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800403": {
       "m_bError": null,
@@ -330,7 +452,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800404": {
       "m_bError": null,
@@ -345,7 +471,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800405": {
       "m_bError": null,
@@ -360,7 +490,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800501": {
       "m_bError": null,
@@ -375,7 +509,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800502": {
       "m_bError": null,
@@ -390,7 +528,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800601": {
       "m_bError": null,
@@ -405,7 +547,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800602": {
       "m_bError": null,
@@ -420,7 +566,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800603": {
       "m_bError": null,
@@ -435,7 +585,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800701": {
       "m_bError": null,
@@ -450,7 +604,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800801": {
       "m_bError": null,
@@ -465,7 +623,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": "2592000",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "800901": {
       "m_bError": null,
@@ -480,7 +642,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": null,
       "m_DelTimeAfterOpen": "2592000",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "801001": {
       "m_bError": null,
@@ -495,7 +661,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "86400",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "801101": {
       "m_bError": null,
@@ -510,7 +680,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "801102": {
       "m_bError": null,
@@ -525,7 +699,11 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
     },
     "801301": {
       "m_bError": null,
@@ -540,8 +718,69 @@
       "m_Attachment": "[]",
       "m_SaveAfterRcvAttach": "1",
       "m_DelTimeAfterOpen": "1209600",
-      "m_Push": null
+      "m_Push": null,
+      "m_ConditionType": null,
+      "m_ConditionValue": "\"\"",
+      "m_TemplateMailType": null,
+      "m_MailIcon": "\"\""
+    },
+    "850007": {
+      "m_bError": null,
+      "m_MailTemplateID": "850007",
+      "m_ClientCanSend": null,
+      "m_Sticky": null,
+      "m_mFrom": "\"Lorelei\"",
+      "m_mTitle": "\"A Letter Carried by the Sea Breeze\"",
+      "m_mContent": "\"Dear Esteemed Guest of the Bathorys,\nHave you heard of Sapphire Isle? Once ruined by the tsunami, it was rebuilt by the hands of the Seven Sages. The tides carried away a heavy past, and from its ruins, a new brilliance has risen.\nLet the warm breeze lift your fatigue, and let fine wine lull your senses. At our well-loved auction house, for but a modest price, anything your heart desires may be yours. Countless travelers arrive with hope, and depart with joy.\nNow, as high summer draws near and the days grow ever warmer, I extend to you my most sincere invitation. Enclosed is a small token of my regard. I await your arrival and may your time here be nothing short of perfect.\"",
+      "m_DelTime": "\"\"",
+      "m_DelDurTime": null,
+      "m_Attachment": "[[500031,1],[101,100]]",
+      "m_SaveAfterRcvAttach": "1",
+      "m_DelTimeAfterOpen": "5184000",
+      "m_Push": null,
+      "m_ConditionType": "1",
+      "m_ConditionValue": "\"2025-07-17\"",
+      "m_TemplateMailType": "1",
+      "m_MailIcon": "\"Atlas_Role/Lorelei_Base003\""
+    },
+    "850008": {
+      "m_bError": null,
+      "m_MailTemplateID": "850008",
+      "m_ClientCanSend": null,
+      "m_Sticky": null,
+      "m_mFrom": "\"Jinxed Selena\"",
+      "m_mTitle": "\"Where Are You!\"",
+      "m_mContent": "\"Silver-hair:\nI had the whole auction house searched. Master Van Helsing wasn't there. And when I got back, you're gone!\nWhat happened? Did you end up neck-deep in debt too? Or did you find a lead and ran off alone? Or... did you never see me as your companion?\nWhatever the case, I've enclosed what little money I had left. Hope it helps. You'd better come find me after reading this.\nIf you don't, I'll haunt you when I become a ghost.\nOr a Bloodborn!\"",
+      "m_DelTime": "\"\"",
+      "m_DelDurTime": null,
+      "m_Attachment": "[[500032,200],[101,50]]",
+      "m_SaveAfterRcvAttach": "1",
+      "m_DelTimeAfterOpen": "5184000",
+      "m_Push": null,
+      "m_ConditionType": "1",
+      "m_ConditionValue": "\"2025-07-24\"",
+      "m_TemplateMailType": "1",
+      "m_MailIcon": "\"Atlas_Role/Selena_Summer003\""
+    },
+    "850009": {
+      "m_bError": null,
+      "m_MailTemplateID": "850009",
+      "m_ClientCanSend": null,
+      "m_Sticky": null,
+      "m_mFrom": "\"Fleeting Bella\"",
+      "m_mTitle": "\"A Letter That Needs No Reply\"",
+      "m_mContent": "\"Noah:\nThank you. Without all of you, I might have remained asleep forever, sealed within that little puppet.\nTell Miss Ami that I believe she will make a fine Sage.\nTell Miss Aiona that I'm grateful for her gentleness and kindness.\nTell Miss Selena that I wish we could've watched <i>Ginokio</i> together one more time.\nWhile I slept, Sapphire Isle became a place I no longer recognized. But after meeting all of you, I came to love what it's become. If fate allowed, I would've gladly gone on another journey with you.\nBut there's a promise I must keep. Lorelei is still waiting for me.\nThey say a letter lets you glimpse someone's truest thoughts. So if you've read this far... I suppose you know this is my last letter.\nThe money enclosed should be enough to buy a few Tidewisp seeds.\nPlease plant them by the sea for me. That's my last request.\"",
+      "m_DelTime": "\"\"",
+      "m_DelDurTime": null,
+      "m_Attachment": "[[500032,200],[101,50]]",
+      "m_SaveAfterRcvAttach": "1",
+      "m_DelTimeAfterOpen": "5184000",
+      "m_Push": null,
+      "m_ConditionType": "1",
+      "m_ConditionValue": "\"2025-07-31\"",
+      "m_TemplateMailType": "1",
+      "m_MailIcon": "\"Atlas_Role/Bella_Summer_Base003\""
     }
   },
-  "status": "processed_36_items"
+  "status": "processed_41_items"
 }

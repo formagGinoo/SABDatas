@@ -1,6 +1,6 @@
 {
   "className": "CData_AttractVoiceText",
-  "timestamp": "2025-07-08T13:35:22.965Z",
+  "timestamp": "2025-07-16T14:13:54.568Z",
   "data": {
     "2001001": {
       "_type": "nested_dictionary",
@@ -7677,7 +7677,7 @@
           "m_VoiceId": "2027006",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Such warmth... I have to keep moving.\"",
+          "m_mText": "\"Such warmth... I can't... I have to keep moving.\"",
           "m_voice": "\"Play_vo_20270_battle_boost02\""
         }
       }
@@ -7692,7 +7692,7 @@
           "m_VoiceId": "2027007",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"I still have a long way to go…\"",
+          "m_mText": "\"I-I still have a long way to go…\"",
           "m_voice": "\"Play_vo_20270_battle_stagewin\""
         }
       }
@@ -7767,7 +7767,7 @@
           "m_VoiceId": "2027012",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Do I... belong here? Ah, I was just thinking aloud.\"",
+          "m_mText": "\"Do I... belong here? Ah, so-sorry, I-I was just thinking aloud.\"",
           "m_voice": "\"Play_vo_20270_system_idle\""
         }
       }
@@ -10917,7 +10917,7 @@
           "m_VoiceId": "2039002",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"The flying arrow, moving yet unmoving.\"",
+          "m_mText": "\"Life, death, tell me what you seek.\"",
           "m_voice": "\"Play_vo_20390_battle_skill01\""
         }
       }
@@ -14217,7 +14217,7 @@
           "m_VoiceId": "2052002",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Follow me, I know the one true way.\"",
+          "m_mText": "\"I will guide them in the only right direction.\"",
           "m_voice": "\"Play_vo_20520_battle_skill01\""
         }
       }
@@ -14851,7 +14851,1312 @@
           "m_voice": "\"Play_vo_20570_system_tapsp02\""
         }
       }
+    },
+    "2064001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Tonight, embrace your eternal slumber.\"",
+          "m_voice": "\"Play_vo_20640_battle_maxskill01\""
+        }
+      }
+    },
+    "2064003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Our promise… I can't keep it after all...\"",
+          "m_voice": "\"Play_vo_20640_battle_death\""
+        }
+      }
+    },
+    "2064004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Need help, little one?\"",
+          "m_voice": "\"Play_vo_20640_battle_array\""
+        }
+      }
+    },
+    "2064007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Finally, the troublemaker falls silent.\"",
+          "m_voice": "\"Play_vo_20640_battle_stagewin\""
+        }
+      }
+    },
+    "2064008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Allow me to be your guide… through a most 'delightful' holiday in Sapphire Isle.\"",
+          "m_voice": "\"Play_vo_20640_system_show\""
+        }
+      }
+    },
+    "2064009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Anywhere you want to go? I'll take you… anywhere.\"",
+          "m_voice": "\"Play_vo_20640_system_greet\""
+        }
+      }
+    },
+    "2064010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Like the flames of vengeance...\"",
+          "m_voice": "\"Play_vo_20640_system_levelup\""
+        }
+      }
+    },
+    "2064011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Come closer. Don't be afraid of how I look.\"",
+          "m_voice": "\"Play_vo_20640_system_breakthrough\""
+        }
+      }
+    },
+    "2064012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Humming)… Ahem! Pretend you didn't see that.\"",
+          "m_voice": "\"Play_vo_20640_system_idle\""
+        }
+      }
+    },
+    "2064013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"They trust me, so I'll protect them.\"",
+          "m_voice": "\"Play_vo_20640_system_transfusion\""
+        }
+      }
+    },
+    "2064014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Oh? Are you blushing?\"",
+          "m_voice": "\"Play_vo_20640_system_gift01\""
+        }
+      }
+    },
+    "2064015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I wonder... what kind of web should I weave to make you fall right into it?\"",
+          "m_voice": "\"Play_vo_20640_system_affinityup\""
+        }
+      }
+    },
+    "2064016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Little one, would you like to become my 'family'?\"",
+          "m_voice": "\"Play_vo_20640_system_affinitymax\""
+        }
+      }
+    },
+    "2064017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"That's not one of the perks covered by your custom coin.\"",
+          "m_voice": "\"Play_vo_20640_system_tapgeneric01\""
+        }
+      }
+    },
+    "2064018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Looking to be spoiled, little one?\"",
+          "m_voice": "\"Play_vo_20640_system_tapgeneric02\""
+        }
+      }
+    },
+    "2064019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"That's not how a gentleman behaves.\"",
+          "m_voice": "\"Play_vo_20640_system_taphead01\""
+        }
+      }
+    },
+    "2064020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Is this as far as you'll go? Or shall I show you how it's done?\"",
+          "m_voice": "\"Play_vo_20640_system_taphead02\""
+        }
+      }
+    },
+    "2064021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Few have touched the blade of the Mistbound Terror… None of them still draw breath.\"",
+          "m_voice": "\"Play_vo_20640_system_tapsp01\""
+        }
+      }
+    },
+    "2064022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Do you wish to be held... entangled... while sinking into the deep sea?\"",
+          "m_voice": "\"Play_vo_20640_system_tapsp02\""
+        }
+      }
+    },
+    "2064023": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064023",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Let blood repay the weight of sin.\"",
+          "m_voice": "\"Play_vo_20641_battle_maxskill01\""
+        }
+      }
+    },
+    "2064024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A simple favor.\"",
+          "m_voice": "\"Play_vo_20640_system_dispatch\""
+        }
+      }
+    },
+    "2064025": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064025",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"There's no going back... to my home beneath the waves...\"",
+          "m_voice": "\"Play_vo_20641_battle_death\""
+        }
+      }
+    },
+    "2064026": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064026",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Who's on tonight's death list?\"",
+          "m_voice": "\"Play_vo_20641_battle_array\""
+        }
+      }
+    },
+    "2064027": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2064027",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The slaughter is over.\"",
+          "m_voice": "\"Play_vo_20641_battle_stagewin\""
+        }
+      }
+    },
+    "2065001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Wind guides, shadow strikes, and my arrows won't fall behind.\"",
+          "m_voice": "\"Play_vo_20650_battle_maxskill01\""
+        }
+      }
+    },
+    "2065002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Supplies matter too! (munching sounds)\"",
+          "m_voice": "\"Play_vo_20650_battle_skill01\""
+        }
+      }
+    },
+    "2065003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The debt I owe… I'll never be able to repay it.\"",
+          "m_voice": "\"Play_vo_20650_battle_death\""
+        }
+      }
+    },
+    "2065004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Make it quick! I've got seafood on the grill!\"",
+          "m_voice": "\"Play_vo_20650_battle_array\""
+        }
+      }
+    },
+    "2065007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Well? I've got what it takes to be a Bell Ringer now, right?\"",
+          "m_voice": "\"Play_vo_20650_battle_stagewin\""
+        }
+      }
+    },
+    "2065008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I am Selena the Deadly Arrow, chief assistant to Silver-haired and first disciple of Lord Van Helsing!\"",
+          "m_voice": "\"Play_vo_20650_system_show\""
+        }
+      }
+    },
+    "2065009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Mr. customer, what'll it be—wait, it's you, Silver-haired.\"",
+          "m_voice": "\"Play_vo_20650_system_greet\""
+        }
+      }
+    },
+    "2065010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Now I can grill even more seafood at once!\"",
+          "m_voice": "\"Play_vo_20650_system_levelup\""
+        }
+      }
+    },
+    "2065011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Feels like my cooking's almost as sharp as my assassinations!\"",
+          "m_voice": "\"Play_vo_20650_system_breakthrough\""
+        }
+      }
+    },
+    "2065012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Huh? No jobs right now?\"",
+          "m_voice": "\"Play_vo_20650_system_idle\""
+        }
+      }
+    },
+    "2065013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ahem. From now on, I'm calling the shots.\"",
+          "m_voice": "\"Play_vo_20650_system_transfusion\""
+        }
+      }
+    },
+    "2065014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This thing... I don't have to pay for it, do I?\"",
+          "m_voice": "\"Play_vo_20650_system_gift01\""
+        }
+      }
+    },
+    "2065015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Silver-haired! I saved the best batch of seafood just for you.\"",
+          "m_voice": "\"Play_vo_20650_system_affinityup\""
+        }
+      }
+    },
+    "2065016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"W-Why are you looking at me like that? I'm not… grilled seafood...\"",
+          "m_voice": "\"Play_vo_20650_system_affinitymax\""
+        }
+      }
+    },
+    "2065017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'm already swamped. Don't make it worse.\"",
+          "m_voice": "\"Play_vo_20650_system_tapgeneric01\""
+        }
+      }
+    },
+    "2065018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"That's your idea of encouragement, Silver-haired? It's... quite unique.\"",
+          "m_voice": "\"Play_vo_20650_system_tapgeneric02\""
+        }
+      }
+    },
+    "2065019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Welcome to One-Shot Wine Stand—Ugh, when will this job ever end...\"",
+          "m_voice": "\"Play_vo_20650_system_taphead01\""
+        }
+      }
+    },
+    "2065020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Heh, admit it—I'm pretty good at this, huh?\"",
+          "m_voice": "\"Play_vo_20650_system_taphead02\""
+        }
+      }
+    },
+    "2065021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"When did the ingredients escape?\"",
+          "m_voice": "\"Play_vo_20650_system_tapsp01\""
+        }
+      }
+    },
+    "2065022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's all sticky... Help me wipe it off!\"",
+          "m_voice": "\"Play_vo_20650_system_tapsp02\""
+        }
+      }
+    },
+    "2065024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2065024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Give me whatever job you've got. As long as it pays, I'm in.\"",
+          "m_voice": "\"Play_vo_20650_system_dispatch\""
+        }
+      }
+    },
+    "2066001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Take my thoughts with you… and keep walking forward.\"",
+          "m_voice": "\"Play_vo_20660_battle_maxskill01\""
+        }
+      }
+    },
+    "2066002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: A promise… no matter what, must be fulfilled.\"",
+          "m_voice": "\"Play_vo_20660_battle_skill01\""
+        }
+      }
+    },
+    "2066003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: This was the ending I should've faced… long ago.\"",
+          "m_voice": "\"Play_vo_20660_battle_death\""
+        }
+      }
+    },
+    "2066004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I still remember how to use 'power'.\nYakov: Remember to protect me, Little Bella!\"",
+          "m_voice": "\"Play_vo_20660_battle_array\""
+        }
+      }
+    },
+    "2066007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: We won… though this game wasn't much fun.\nYakov: So where's our prize, then?\"",
+          "m_voice": "\"Play_vo_20660_battle_stagewin\""
+        }
+      }
+    },
+    "2066008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I've been waiting for you. Let's go together this time.\nYakov: Don't forget me! I'm coming too!\"",
+          "m_voice": "\"Play_vo_20660_system_show\""
+        }
+      }
+    },
+    "2066009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Let's do something fun, shall we?\nYakov: Fun and profitable—now that's the dream!\"",
+          "m_voice": "\"Play_vo_20660_system_greet\""
+        }
+      }
+    },
+    "2066010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I've grown stronger… but this isn't the 'ideal' I longed for.\"",
+          "m_voice": "\"Play_vo_20660_system_levelup\""
+        }
+      }
+    },
+    "2066011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: So this is what growing up feels like…\"",
+          "m_voice": "\"Play_vo_20660_system_breakthrough\""
+        }
+      }
+    },
+    "2066012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Is Lorelei around? I'd like to play with her.\nYakov: So sad… doesn't Little Bella want to play with me too?\"",
+          "m_voice": "\"Play_vo_20660_system_idle\""
+        }
+      }
+    },
+    "2066013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Will this really help someone else…?\"",
+          "m_voice": "\"Play_vo_20660_system_transfusion\""
+        }
+      }
+    },
+    "2066014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Thank you for your kindness, Mr. Nevernight of the Bathory family. Father taught me to always mind my manners.\nYakov: Wait, wait—does that mean Little Bella comes from a rich family?!\"",
+          "m_voice": "\"Play_vo_20660_system_gift01\""
+        }
+      }
+    },
+    "2066015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I don't know why… but when I'm with you, I forget my sadness.\"",
+          "m_voice": "\"Play_vo_20660_system_affinityup\""
+        }
+      }
+    },
+    "2066016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: We'll be friends forever, won't we?\"",
+          "m_voice": "\"Play_vo_20660_system_affinitymax\""
+        }
+      }
+    },
+    "2066017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I don't like being touched without asking.\nYakov: Uh-oh… Little Bella's face looks scary!\"",
+          "m_voice": "\"Play_vo_20660_system_tapgeneric01\""
+        }
+      }
+    },
+    "2066018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Father said I was very sick… and even so, you still want to play with me?\"",
+          "m_voice": "\"Play_vo_20660_system_tapgeneric02\""
+        }
+      }
+    },
+    "2066019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Everyone in Sapphire Isle feels so ordinary—except Lorelei. But I suppose it's not really their fault.\"",
+          "m_voice": "\"Play_vo_20660_system_taphead01\""
+        }
+      }
+    },
+    "2066020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: This warmth… I haven't felt it in a long time…\"",
+          "m_voice": "\"Play_vo_20660_system_taphead02\""
+        }
+      }
+    },
+    "2066021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: If you don't hold tightly to what you cherish… time will wear it away.\"",
+          "m_voice": "\"Play_vo_20660_system_tapsp01\""
+        }
+      }
+    },
+    "2066022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: Would you like to make a 'promise' with me too? I'll remember it—forever and ever.\"",
+          "m_voice": "\"Play_vo_20660_system_tapsp02\""
+        }
+      }
+    },
+    "2066024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2066024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Bella: I'm so glad… I've never been anywhere beyond Sapphire Isle before.\"",
+          "m_voice": "\"Play_vo_20660_system_dispatch\""
+        }
+      }
+    },
+    "2070001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"If you don't struggle now, you'll end up as a small stain on my mantle.\"",
+          "m_voice": "\"Play_vo_20700_battle_maxskill01\""
+        }
+      }
+    },
+    "2070002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"How delightfully pathetic you've become.\"",
+          "m_voice": "\"Play_vo_20700_battle_skill01\""
+        }
+      }
+    },
+    "2070003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You filthy beast… Don't get ahead of yourself!\"",
+          "m_voice": "\"Play_vo_20700_battle_death\""
+        }
+      }
+    },
+    "2070004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"So this is the new Vassal candidate? Would anyone mind if I break them?\"",
+          "m_voice": "\"Play_vo_20700_battle_array\""
+        }
+      }
+    },
+    "2070007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I collected so many new Vassals today! Everyone play nice now!\"",
+          "m_voice": "\"Play_vo_20700_battle_stagewin\""
+        }
+      }
+    },
+    "2070008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A new face? Ooh… you're popular, aren't you? Looks like everyone wants a turn with you!\"",
+          "m_voice": "\"Play_vo_20700_system_show\""
+        }
+      }
+    },
+    "2070009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hey newcomer, let's play together! Don't worry, I won't break you.\"",
+          "m_voice": "\"Play_vo_20700_system_greet\""
+        }
+      }
+    },
+    "2070010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Come newcomer, bring me more tributes.\"",
+          "m_voice": "\"Play_vo_20700_system_levelup\""
+        }
+      }
+    },
+    "2070011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Are you sure? Whatever happens next… I won't take responsibility.\"",
+          "m_voice": "\"Play_vo_20700_system_breakthrough\""
+        }
+      }
+    },
+    "2070012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ignoring me? Then I'll just let the Vassals in my cloak out to play.\"",
+          "m_voice": "\"Play_vo_20700_system_idle\""
+        }
+      }
+    },
+    "2070013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"No! I'm not sharing my Vassals with anyone!\"",
+          "m_voice": "\"Play_vo_20700_system_transfusion\""
+        }
+      }
+    },
+    "2070014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You thought this junk would impress me?\"",
+          "m_voice": "\"Play_vo_20700_system_gift01\""
+        }
+      }
+    },
+    "2070015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'd love to keep you trapped in my mantle forever... Haha! Are you scared?\"",
+          "m_voice": "\"Play_vo_20700_system_affinityup\""
+        }
+      }
+    },
+    "2070016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"If I could become one with my mantle, I could stay perched on your shoulder forever... No, I didn't say anything! Watch where you're going!\"",
+          "m_voice": "\"Play_vo_20700_system_affinitymax\""
+        }
+      }
+    },
+    "2070017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Trying to become one of my Vassals? You're more than welcome to.\"",
+          "m_voice": "\"Play_vo_20700_system_tapgeneric01\""
+        }
+      }
+    },
+    "2070018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hmph. If I'd been as shameless as you back then, us Elders might've gotten along… and we wouldn't have lost the Holy War.\"",
+          "m_voice": "\"Play_vo_20700_system_tapgeneric02\""
+        }
+      }
+    },
+    "2070019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Touch me again and my mantle will snap your neck.\"",
+          "m_voice": "\"Play_vo_20700_system_taphead01\""
+        }
+      }
+    },
+    "2070020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ugh, how humiliating… I should've just stuffed my head inside the mantle too…\"",
+          "m_voice": "\"Play_vo_20700_system_taphead02\""
+        }
+      }
+    },
+    "2070021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A word of advice, newcomer. This mantle? You're not ready for its power.\"",
+          "m_voice": "\"Play_vo_20700_system_tapsp01\""
+        }
+      }
+    },
+    "2070022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Wh-what do you think you're doing?! Don't look! My Vassals... they're shy!\"",
+          "m_voice": "\"Play_vo_20700_system_tapsp02\""
+        }
+      }
+    },
+    "2070024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2070024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Will I ever meet any interesting Vassals?\"",
+          "m_voice": "\"Play_vo_20700_system_dispatch\""
+        }
+      }
     }
   },
-  "status": "processed_990_items"
+  "status": "processed_1077_items"
 }

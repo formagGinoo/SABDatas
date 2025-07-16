@@ -1,6 +1,6 @@
 {
   "className": "CData_ShowMessage",
-  "timestamp": "2025-07-08T13:35:47.920Z",
+  "timestamp": "2025-07-16T14:14:20.318Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -141,7 +141,7 @@
     "1016": {
       "m_bError": null,
       "m_ID": "1016",
-      "m_mMessage": "\"Insufficient Solis\"",
+      "m_mMessage": "\"Insufficient Soli\"",
       "m_IsShow": "1",
       "m_ShowType": "2",
       "m_MultLong": "\"\""
@@ -1190,6 +1190,38 @@
       "m_bError": null,
       "m_ID": "1208",
       "m_mMessage": "\"Cannot be skipped.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1209": {
+      "m_bError": null,
+      "m_ID": "1209",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1210": {
+      "m_bError": null,
+      "m_ID": "1210",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1211": {
+      "m_bError": null,
+      "m_ID": "1211",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1212": {
+      "m_bError": null,
+      "m_ID": "1212",
+      "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -2642,6 +2674,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "1760": {
+      "m_bError": null,
+      "m_ID": "1760",
+      "m_mMessage": "\"Not Available\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "2000": {
       "m_bError": null,
       "m_ID": "2000",
@@ -3034,74 +3074,42 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
-    "2400": {
+    "2201": {
       "m_bError": null,
-      "m_ID": "2400",
-      "m_mMessage": "\"Reserved String\"",
+      "m_ID": "2201",
+      "m_mMessage": "\"Ancient Vassal: Vassal locked.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
-    "2401": {
+    "2202": {
       "m_bError": null,
-      "m_ID": "2401",
-      "m_mMessage": "\"Battle Group has not started.\"",
+      "m_ID": "2202",
+      "m_mMessage": "\"Ancient Vassal: No Vassal data.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
-    "2402": {
+    "2203": {
       "m_bError": null,
-      "m_ID": "2402",
-      "m_mMessage": "\"Data Not Ready\"",
+      "m_ID": "2203",
+      "m_mMessage": "\"Ancient Vassal: Energy limit exceeded.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
-    "2403": {
+    "2204": {
       "m_bError": null,
-      "m_ID": "2403",
-      "m_mMessage": "\"Not Ranked\"",
+      "m_ID": "2204",
+      "m_mMessage": "\"Ancient Vassal: Task refresh limit reached.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
-    "2404": {
+    "2205": {
       "m_bError": null,
-      "m_ID": "2404",
-      "m_mMessage": "\"Battle Groups are not the same.\"",
-      "m_IsShow": "1",
-      "m_ShowType": "1",
-      "m_MultLong": "\"\""
-    },
-    "2405": {
-      "m_bError": null,
-      "m_ID": "2405",
-      "m_mMessage": "\"Player's rank has changed.\"",
-      "m_IsShow": "1",
-      "m_ShowType": "1",
-      "m_MultLong": "\"\""
-    },
-    "2408": {
-      "m_bError": null,
-      "m_ID": "2408",
-      "m_mMessage": "\"In the Defense Lineup for the Gauntlet.\"",
-      "m_IsShow": "1",
-      "m_ShowType": "1",
-      "m_MultLong": "\"\""
-    },
-    "2409": {
-      "m_bError": null,
-      "m_ID": "2409",
-      "m_mMessage": "\"Gauntlet is not open at this time.\"",
-      "m_IsShow": "1",
-      "m_ShowType": "1",
-      "m_MultLong": "\"\""
-    },
-    "2410": {
-      "m_bError": null,
-      "m_ID": "2410",
-      "m_mMessage": "\"No reward in Gauntlet.\"",
+      "m_ID": "2205",
+      "m_mMessage": "\"Ancient Vassal: Insufficient Energy for summoning.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -3402,6 +3410,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "2525": {
+      "m_bError": null,
+      "m_ID": "2525",
+      "m_mMessage": "\"Default\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "2550": {
       "m_bError": null,
       "m_ID": "2550",
@@ -3650,6 +3666,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "2629": {
+      "m_bError": null,
+      "m_ID": "2629",
+      "m_mMessage": "\"Affinity Letters cannot be used in the battle.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "2630": {
       "m_bError": null,
       "m_ID": "2630",
@@ -3802,6 +3826,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "2649": {
+      "m_bError": null,
+      "m_ID": "2649",
+      "m_mMessage": "\"No such task in Affinity Letter.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "2650": {
       "m_bError": null,
       "m_ID": "2650",
@@ -3909,7 +3941,7 @@
     "2673": {
       "m_bError": null,
       "m_ID": "2673",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"Free Herald limit reached.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -5254,6 +5286,30 @@
       "m_bError": null,
       "m_ID": "6516",
       "m_mMessage": "\"Lamia Stage not started.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6517": {
+      "m_bError": null,
+      "m_ID": "6517",
+      "m_mMessage": "\"Lamia Exploration Data Size Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6518": {
+      "m_bError": null,
+      "m_ID": "6518",
+      "m_mMessage": "\"Complete Lamia's previous stage to claim clue rewards.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6519": {
+      "m_bError": null,
+      "m_ID": "6519",
+      "m_mMessage": "\"Obtained Lamia's Clue\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6787,5 +6843,5 @@
       "m_MultLong": "\"\""
     }
   },
-  "status": "processed_848_items"
+  "status": "processed_855_items"
 }

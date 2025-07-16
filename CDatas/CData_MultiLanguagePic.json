@@ -1,6 +1,6 @@
 {
   "className": "CData_MultiLanguagePic",
-  "timestamp": "2025-07-08T13:35:40.490Z",
+  "timestamp": "2025-07-16T14:14:11.932Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -191,6 +191,96 @@
       "m_PicPath41": "\"Atlas_MultiLan_cn_cht/Activity_huntingnight_titleFX_2_cht\"",
       "m_PicPath23": "\"Atlas_MultiLan_kr/Activity_huntingnight_titleFX_2_kr\""
     },
+    "22": {
+      "m_bError": null,
+      "m_PicID": "22",
+      "m_PicPath10": "\"Atlas_MultiLan_en/legacystage_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/legacystage_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/legacystage_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/legacystage_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/legacystage_title_kr\""
+    },
+    "24": {
+      "m_bError": null,
+      "m_PicID": "24",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1003_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1003_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1003_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1003_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1003_title_kr\""
+    },
+    "25": {
+      "m_bError": null,
+      "m_PicID": "25",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1003_titleFX_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1003_titleFX_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1003_titleFX_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1003_titleFX_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1003_titleFX_kr\""
+    },
+    "26": {
+      "m_bError": null,
+      "m_PicID": "26",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1004_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1004_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1004_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1004_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1004_title_kr\""
+    },
+    "27": {
+      "m_bError": null,
+      "m_PicID": "27",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1004_titleFX_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1004_titleFX_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1004_titleFX_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1004_titleFX_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1004_titleFX_kr\""
+    },
+    "28": {
+      "m_bError": null,
+      "m_PicID": "28",
+      "m_PicPath10": "\"Atlas_MultiLan_en/activity103_challenge_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/activity103_challenge_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/activity103_challenge_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/activity103_challenge_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/activity103_challenge_title_kr\""
+    },
+    "29": {
+      "m_bError": null,
+      "m_PicID": "29",
+      "m_PicPath10": "\"Atlas_MultiLan_en/activity103main_img_title01_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/activity103main_img_title01_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/activity103main_img_title01_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/activity103main_img_title01_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/activity103main_img_title01_kr\""
+    },
+    "30": {
+      "m_bError": null,
+      "m_PicID": "30",
+      "m_PicPath10": "\"Atlas_MultiLan_en/activity103main_img_title02_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/activity103main_img_title02_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/activity103main_img_title02_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/activity103main_img_title02_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/activity103main_img_title02_kr\""
+    },
+    "31": {
+      "m_bError": null,
+      "m_PicID": "31",
+      "m_PicPath10": "\"Atlas_MultiLan_en/minigamea3_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/minigamea3_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/minigamea3_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/minigamea3_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/minigamea3_title_kr\""
+    },
+    "32": {
+      "m_bError": null,
+      "m_PicID": "32",
+      "m_PicPath10": "\"Atlas_MultiLan_en/GuildRaid_Preview_maintittle_2_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/GuildRaid_Preview_maintittle_2_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/GuildRaid_Preview_maintittle_2_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/GuildRaid_Preview_maintittle_2_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/GuildRaid_Preview_maintittle_2_kr\""
+    },
     "66601": {
       "m_bError": null,
       "m_PicID": "66601",
@@ -228,5 +318,5 @@
       "m_PicPath23": "\"Atlas_TutorialTips/TutorialTips_3_P2_1\""
     }
   },
-  "status": "processed_25_items"
+  "status": "processed_35_items"
 }

@@ -1,6 +1,6 @@
 {
   "className": "CData_MainExploreReward",
-  "timestamp": "2025-07-08T13:35:35.657Z",
+  "timestamp": "2025-07-16T14:14:07.164Z",
   "data": {
     "2": {
       "m_bError": null,
@@ -76,7 +76,17 @@
       "m_bError": null,
       "m_MainChapter": "16",
       "m_MainChapterReward": "[[101,50]]"
+    },
+    "17": {
+      "m_bError": null,
+      "m_MainChapter": "17",
+      "m_MainChapterReward": "[[101,50]]"
+    },
+    "18": {
+      "m_bError": null,
+      "m_MainChapter": "18",
+      "m_MainChapterReward": "[[101,50]]"
     }
   },
-  "status": "processed_15_items"
+  "status": "processed_17_items"
 }

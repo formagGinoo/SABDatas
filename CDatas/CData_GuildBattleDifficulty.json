@@ -1,6 +1,6 @@
 {
   "className": "CData_GuildBattleDifficulty",
-  "timestamp": "2025-07-08T13:35:34.747Z",
+  "timestamp": "2025-07-16T14:14:06.311Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -20,13 +20,8 @@
     "4": {
       "m_bError": null,
       "m_Difficulty": "4",
-      "m_Rounds": "[16,20]"
-    },
-    "5": {
-      "m_bError": null,
-      "m_Difficulty": "5",
-      "m_Rounds": "[21,0]"
+      "m_Rounds": "[16,0]"
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_4_items"
 }

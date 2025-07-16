@@ -1,12 +1,17 @@
 {
   "className": "CData_GuildBattle",
-  "timestamp": "2025-07-08T13:35:34.745Z",
+  "timestamp": "2025-07-16T14:14:06.307Z",
   "data": {
     "1": {
       "m_bError": null,
       "m_ID": "1",
       "m_BossID": "[1,2,3,4,5]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_BossID": "[6,7,8,9,10]"
     }
   },
-  "status": "processed_1_items"
+  "status": "processed_2_items"
 }

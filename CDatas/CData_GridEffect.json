@@ -1,6 +1,6 @@
 {
   "className": "CData_GridEffect",
-  "timestamp": "2025-07-08T13:35:34.253Z",
+  "timestamp": "2025-07-16T14:14:05.860Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -268,6 +268,25 @@
       "m_AddBuffOnLeave": "[]",
       "m_RemoveBuffOnLeave": "[]"
     },
+    "1008": {
+      "m_bError": null,
+      "m_ID": "1008",
+      "m_Type": "1",
+      "m_Icon": "\"\"",
+      "m_mName": "\"\"",
+      "m_mDesc": "\"\"",
+      "m_DescParam": "[]",
+      "m_GridVFXOnBegin": "\"fx_m_s1_3_raid\"",
+      "m_GridVFXOnDestory": "[]",
+      "m_GridVFXScale": "[1,1,1]",
+      "m_GridVFXPriority": "1",
+      "m_TriggerCount": null,
+      "m_AffectedCamp": null,
+      "m_AddBuffOnEnter": "[]",
+      "m_RemoveBuffOnEnter": "[]",
+      "m_AddBuffOnLeave": "[]",
+      "m_RemoveBuffOnLeave": "[]"
+    },
     "1710": {
       "m_bError": null,
       "m_ID": "1710",
@@ -293,7 +312,7 @@
       "m_Type": null,
       "m_Icon": "\"Atlas_Plot/Plot_1\"",
       "m_mName": "\"Martyr's Blessing\"",
-      "m_mDesc": "\"When the battle begins, units on this tile gain increased ATK Speed and DMG Up for 20 sec.\"",
+      "m_mDesc": "\"When the battle begins, units on this tile gain increased ATK SPD and DMG Up for 20 sec.\"",
       "m_DescParam": "[]",
       "m_GridVFXOnBegin": "\"FX_Common_Dige\"",
       "m_GridVFXOnDestory": "[]",
@@ -705,6 +724,25 @@
       "m_AddBuffOnLeave": "[]",
       "m_RemoveBuffOnLeave": "[]"
     },
+    "2066001": {
+      "m_bError": null,
+      "m_ID": "2066001",
+      "m_Type": "1",
+      "m_Icon": "\"Atlas_Plot/Plot_6\"",
+      "m_mName": "\"Tidewisp Prayer\"",
+      "m_mDesc": "\"When the battle begins, the ally on this tile is granted Tidewisp Blessing and will receive continuous healing.\"",
+      "m_DescParam": "[]",
+      "m_GridVFXOnBegin": "\"fx_c_bella_sea_skill01_floor\"",
+      "m_GridVFXOnDestory": "[]",
+      "m_GridVFXScale": "[1,1,1]",
+      "m_GridVFXPriority": "1",
+      "m_TriggerCount": null,
+      "m_AffectedCamp": null,
+      "m_AddBuffOnEnter": "[]",
+      "m_RemoveBuffOnEnter": "[]",
+      "m_AddBuffOnLeave": "[]",
+      "m_RemoveBuffOnLeave": "[]"
+    },
     "6000301": {
       "m_bError": null,
       "m_ID": "6000301",
@@ -763,5 +801,5 @@
       "m_RemoveBuffOnLeave": "[]"
     }
   },
-  "status": "processed_40_items"
+  "status": "processed_42_items"
 }

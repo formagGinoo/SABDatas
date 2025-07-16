@@ -1,6 +1,6 @@
 {
   "className": "CData_SystemUnlock",
-  "timestamp": "2025-07-08T13:35:51.468Z",
+  "timestamp": "2025-07-16T14:14:24.148Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -572,6 +572,26 @@
       "m_UnlockConditionData": "[[1103060]]",
       "m_ClientMessage": "[37]"
     },
+    "62": {
+      "m_bError": null,
+      "m_SystemID": "62",
+      "m_mName": "\"Ancient Vassal\"",
+      "m_UnlockType": null,
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Ancient\"",
+      "m_UnlockConditionType": "[6]",
+      "m_UnlockConditionData": "[[0]]",
+      "m_ClientMessage": "[31]"
+    },
+    "63": {
+      "m_bError": null,
+      "m_SystemID": "63",
+      "m_mName": "\"Outfit\"",
+      "m_UnlockType": null,
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Ancient\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1102040]]",
+      "m_ClientMessage": "[55]"
+    },
     "101": {
       "m_bError": null,
       "m_SystemID": "101",
@@ -733,5 +753,5 @@
       "m_ClientMessage": "[905]"
     }
   },
-  "status": "processed_73_items"
+  "status": "processed_75_items"
 }

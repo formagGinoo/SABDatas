@@ -161,6 +161,10 @@ enum AllianceSettingsType {
   AllianceSettingsType_Bulletin = 7;
 }
 
+enum AncientHeroType {
+  AncientHeroType_Normal = 0;
+}
+
 enum AttractArchiveType {
   AttractArchiveType_Archive = 1;
   AttractArchiveType_Story = 2;
@@ -350,6 +354,8 @@ enum CmdActPayStoreType {
   CmdActPayStoreType_MonthlyCard = 20;
   CmdActPayStoreType_DaimondBuy = 21;
   CmdActPayStoreType_SignGift = 22;
+  CmdActPayStoreType_FashionStore = 23;
+  CmdActPayStoreType_PickupGiftNew = 24;
 }
 
 enum CmdAllianceHistoryType {
@@ -589,6 +595,21 @@ enum CmdId_Alliance {
   CmdId_Alliance_Battle_GetRankList_SC = 11609;
 }
 
+enum CmdId_Ancient {
+  CmdId_Ancient_GetData_CS = 11101;
+  CmdId_Ancient_GetData_SC = 11102;
+  CmdId_Ancient_ChangeHero_CS = 11103;
+  CmdId_Ancient_ChangeHero_SC = 11104;
+  CmdId_Ancient_TakeQuestAward_CS = 11105;
+  CmdId_Ancient_TakeQuestAward_SC = 11106;
+  CmdId_Ancient_RefreshQuest_CS = 11107;
+  CmdId_Ancient_RefreshQuest_SC = 11108;
+  CmdId_Ancient_AddEnergy_CS = 11109;
+  CmdId_Ancient_AddEnergy_SC = 11110;
+  CmdId_Ancient_SummonHero_CS = 11111;
+  CmdId_Ancient_SummonHero_SC = 11112;
+}
+
 enum CmdId_Arena {
   CmdId_Arena_StartChallenge_CS = 11101;
   CmdId_Arena_StartChallenge_SC = 11102;
@@ -617,6 +638,8 @@ enum CmdId_Attract {
   CmdId_Attract_EndCouncil_SC = 10916;
   CmdId_Attract_SetLetter_CS = 10917;
   CmdId_Attract_SetLetter_SC = 10918;
+  CmdId_Attract_LetterSubmitItem_CS = 10919;
+  CmdId_Attract_LetterSubmitItem_SC = 10920;
 }
 
 enum CmdId_BaseStore {
@@ -1001,8 +1024,10 @@ enum CmdId_Game_Push {
   CmdId_Push_Hunting_Boss = 20326;
   CmdId_Push_Alliance_Battle_Boss = 20327;
   CmdId_Push_Hunting_RankUpdate = 20328;
+  CmdId_Push_Ancient_Quest = 20329;
   CmdId_Push_NewGift = 20330;
   CmdId_Push_LegacyStage = 20331;
+  CmdId_Push_Letter_Quest = 20332;
   CmdId_Push_BaseStoreMonthlyCard = 20630;
   CmdId_Push_BaseStoreMonthlyCardReward = 20631;
   CmdId_Push_BaseStoreChapter = 20632;
@@ -1141,6 +1166,18 @@ enum CmdId_Lamia {
   CmdId_Lamia_MiniGame_GetAllAward_SC = 19112;
   CmdId_Lamia_Stage_Sweep_CS = 19113;
   CmdId_Lamia_Stage_Sweep_SC = 19114;
+  CmdId_Lamia_GetExploreData_CS = 19115;
+  CmdId_Lamia_GetExploreData_SC = 19116;
+  CmdId_Lamia_SetExploreData_CS = 19117;
+  CmdId_Lamia_SetExploreData_SC = 19118;
+  CmdId_Lamia_DailyQuest_GetAward_CS = 19119;
+  CmdId_Lamia_DailyQuest_GetAward_SC = 19120;
+  CmdId_Lamia_GameQuest_GetAward_CS = 19121;
+  CmdId_Lamia_GameQuest_GetAward_SC = 19122;
+  CmdId_Lamia_GameQuest_GetAllAward_CS = 19123;
+  CmdId_Lamia_GameQuest_GetAllAward_SC = 19124;
+  CmdId_Lamia_GetClueAward_CS = 19125;
+  CmdId_Lamia_GetClueAward_SC = 19126;
 }
 
 enum CmdId_Legacy {
@@ -1215,6 +1252,8 @@ enum CmdId_Mail {
   CmdId_Mail_WriteMail_SC = 11218;
   CmdId_Mail_ReportBadMail_CS = 11219;
   CmdId_Mail_ReportBadMail_SC = 11220;
+  CmdId_Mail_DelCollectMail_CS = 11221;
+  CmdId_Mail_DelCollectMail_SC = 11222;
 }
 
 enum CmdId_Merge {
@@ -1582,6 +1621,15 @@ enum CmdSimpleDataType {
   CmdSimpleDataType_ReplaceArenaDefence = 3;
 }
 
+enum CollectMailConditionType {
+  CollectMailConditionType_Date = 1;
+  CollectMailConditionType_Stage = 2;
+  CollectMailConditionType_RegDay = 3;
+  CollectMailConditionType_ContinuousLoginDays = 4;
+  CollectMailConditionType_RoleBirthday = 5;
+  CollectMailConditionType_HeroBirthday = 6;
+}
+
 enum ConnStateChangeType {
   ConnState_Battle_Disconnect = 1;
   ConnState_Battle_ReconnectReady = 2;
@@ -1781,6 +1829,10 @@ enum ErrorCode {
   Error_Fight_VerifyCheat = 1206;
   Error_Fight_HeroDead = 1207;
   Error_Fight_CantSkip = 1208;
+  Error_Fight_WorldIdError = 1209;
+  Error_Fight_PowerError = 1210;
+  Error_Fight_FrameMinLimit = 1211;
+  Error_Fight_MaliciousCheat = 1212;
   Error_Arena_EnemyNotEnough = 1262;
   Error_Arena_RankChanged = 1263;
   Error_Mail_Role_Null = 1270;
@@ -1962,6 +2014,7 @@ enum ErrorCode {
   Error_ActPayStore_PreGoodsNotBuy = 1757;
   Error_ActPayStore_FreeGoods = 1758;
   Error_ActPayStore_Expire = 1759;
+  Error_ActPayStore_GoodsTime = 1760;
   Error_ReplaceArena_RegroupNotOpen = 2000;
   Error_ReplaceArena_NotInPlay = 2001;
   Error_ReplaceArena_Enemy_Null = 2002;
@@ -2011,15 +2064,11 @@ enum ErrorCode {
   Error_Hunting_NoGroupData = 2161;
   Error_Hunting_NoSettleControl = 2162;
   Error_Hunting_SettleAlready = 2163;
-  Error_ArenaBattle_NotMaster = 2400;
-  Error_ArenaBattle_GroupNotOpen = 2401;
-  Error_ArenaBattle_DataNotReady = 2402;
-  Error_ArenaBattle_NotInRank = 2403;
-  Error_ArenaBattle_GroupNotSame = 2404;
-  Error_ArenaBattle_RankChanged = 2405;
-  Error_ArenaBattle_InDefence = 2408;
-  Error_ArenaBattle_NotOpenTime = 2409;
-  Error_ArenaBattle_NoReward = 2410;
+  Error_Ancient_HeroLock = 2201;
+  Error_Ancient_NoHeroData = 2202;
+  Error_Ancient_AddEnergyMax = 2203;
+  Error_Ancient_QuestRefreshMax = 2204;
+  Error_Ancient_EnergyNotEnough = 2205;
   Error_OriginalArena_BotLess = 2450;
   Error_OriginalArena_Enemy_Null = 2451;
   Error_OriginalArena_Over = 2452;
@@ -2057,6 +2106,7 @@ enum ErrorCode {
   Error_Hero_InheritMainLock = 2522;
   Error_Hero_NoSkillResetAct = 2523;
   Error_Hero_NoResetSkill = 2524;
+  Error_Hero_FashionOrigin = 2525;
   Error_Equip_SpaceLimit = 2550;
   Error_Equip_NotExist = 2551;
   Error_Equip_Installed = 2552;
@@ -2088,6 +2138,7 @@ enum ErrorCode {
   Error_Inherit_EvolveLevelLow = 2610;
   Error_Inherit_NotEvolve = 2611;
   Error_Inherit_LevelMax = 2612;
+  Error_Attract_LetterQuestCantFight = 2629;
   Error_Attract_TouchLimit = 2630;
   Error_Attract_MaxRank = 2631;
   Error_Attract_HeroNoAttract = 2632;
@@ -2107,6 +2158,7 @@ enum ErrorCode {
   Error_Attract_LetterReplyNumError = 2646;
   Error_Attract_LetterReplyIdError = 2647;
   Error_Attract_LetterQuestNotFinish = 2648;
+  Error_Attract_NoLetterQuest = 2649;
   Error_Gacha_TimeNotOpen = 2650;
   Error_Gacha_TimeEnd = 2651;
   Error_Gacha_TimesLimit = 2652;
@@ -2289,6 +2341,9 @@ enum ErrorCode {
   Error_Lamia_NotOpen = 6514;
   Error_Lamia_SubActNotOpen = 6515;
   Error_Lamia_StageNotOpen = 6516;
+  Error_Lamia_ExploreDataSizeError = 6517;
+  Error_Lamia_CluPreStageNotPass = 6518;
+  Error_Lamia_ClueAlreadyGet = 6519;
   Error_BalanceFightTest_TeamEmpty = 6551;
   Error_BalanceFightTest_TeamSizeWrong = 6552;
   Error_BalanceFightTest_SeasonFinished = 6553;
@@ -2323,6 +2378,11 @@ enum FaceType {
   FaceType_System = 0;
   FaceType_Facebook = 2;
   FaceType_WeChat = 3;
+}
+
+enum FashionType {
+  FashionType_Origin = 0;
+  FashionType_Normal = 1;
 }
 
 enum FightAllianceBattleSubType {
@@ -2398,6 +2458,7 @@ enum FightType {
   FightType_Rogue = 11;
   FightType_ReplaceArena = 12;
   FightType_Hunting = 13;
+  FightType_Letter = 14;
   FightType_Friend = 33;
   FightType_Test = 99;
 }
@@ -2534,8 +2595,6 @@ enum ItemIdSegment {
   ItemIdSeg_Afk_Max = 49999;
   ItemIdSeg_Fragment_Min = 50001;
   ItemIdSeg_Fragment_Max = 59999;
-  ItemIdSeg_Fashion_Min = 60001;
-  ItemIdSeg_Fashion_Max = 69999;
   ItemIdSeg_Legacy_Min = 90001;
   ItemIdSeg_Legacy_Max = 99999;
   ItemIdSeg_StoreExchange_Min = 110001;
@@ -2558,6 +2617,8 @@ enum ItemIdSegment {
   ItemIdSeg_ShowBackground_Max = 1599999;
   ItemIdSeg_MainBackground_Min = 1600001;
   ItemIdSeg_MainBackground_Max = 1699999;
+  ItemIdSeg_Fashion_Min = 6000001;
+  ItemIdSeg_Fashion_Max = 6999999;
 }
 
 enum ItemQuality {
@@ -2621,6 +2682,12 @@ enum LamiaGameStat {
   LamiaGameStat_Finish = 1;
 }
 
+enum LamiaMiniGameMode {
+  LamiaMiniGameMode_Normal = 1;
+  LamiaMiniGameMode_Boss = 2;
+  LamiaMiniGameMode_Infinite = 3;
+}
+
 enum LamiaMiniGameType {
   LamiaMiniGameType_Memory = 1;
   LamiaMiniGameType_Whacka = 2;
@@ -2640,10 +2707,16 @@ enum LamiaSubActType {
   LamiaSubActType_SignIn = 14;
   LamiaSubActType_Quest = 15;
   LamiaSubActType_MiniGame = 16;
+  LamiaSubActType_DailyQuest = 18;
+  LamiaSubActType_GameQuest = 19;
 }
 
 enum LetterDialogueType {
   LetterDialogueType_Reply = 2;
+}
+
+enum LetterSubType {
+  LetterSubType_Fight = 1;
 }
 
 enum LoginType {
@@ -2683,19 +2756,6 @@ enum MatchState {
   MatchState_None = 0;
   MatchState_Matching = 1;
   MatchState_MatchSuccess = 2;
-}
-
-enum MUFWebRequestMethod {
-  Get = 0;
-  Post = 1;
-}
-
-enum MUFWebRequestStatus {
-  Connecting = 0;
-  Downloading = 1;
-  Success = 2;
-  Failed = 3;
-  Cancel = 4;
 }
 
 enum NoticeType {
@@ -2795,6 +2855,8 @@ enum QuestCond {
   QuestCond_RogueUnlockHandbook = 175;
   QuestCond_RogueUnlockTech = 176;
   QuestCond_RoguePassTimes = 177;
+  QuestCond_LetterFight = 181;
+  QuestCond_LetterSubmitItem = 182;
   QuestCond_MainChapterProgress = 200;
   QuestCond_EnterArena = 201;
   QuestCond_WinArena = 202;
@@ -2807,6 +2869,10 @@ enum QuestCond {
   QuestCond_PassHeroStar = 222;
   QuestCond_ReplaceArena = 231;
   QuestCond_ReplaceArenaWin = 232;
+  QuestCond_OriginalArenaPlayTimesDay = 240;
+  QuestCond_OriginalArenaPlayTimes = 241;
+  QuestCond_ReplaceArenaPlayTimesDay = 242;
+  QuestCond_ReplaceArenaPlayTimes = 243;
   QuestCond_Gacha = 301;
   QuestCond_GachaHeroQuality = 302;
   QuestCond_AddHeroQuality = 303;
@@ -2823,6 +2889,7 @@ enum QuestCond {
   QuestCond_TaskGetScore = 409;
   QuestCond_LamiaFinishQuest = 501;
   QuestCond_LamiaMiniGame = 502;
+  QuestCond_LamiaMiniGameScore = 503;
   QuestCond_PassGuide = 601;
   QuestCond_Recharge = 900;
   QuestCond_RechargePrice = 901;
@@ -3142,6 +3209,8 @@ enum SystemType {
   SystemType_Rogue = 58;
   SystemType_CDKey = 59;
   SystemType_Hunting = 60;
+  SystemType_AttractLetter = 61;
+  SystemType_Ancient = 62;
   SystemType_Hero = 101;
   SystemType_HeroLevel = 102;
   SystemType_Goblin = 200;
@@ -3166,6 +3235,11 @@ enum SystemUnlockCondition {
   SystemUnlockCondition_MainChapter = 7;
   SystemUnlockCondition_Attract = 20;
   SystemUnlockCondition_HasItemNum = 21;
+}
+
+enum TemplateMailType {
+  TemplateMailType_Normal = 0;
+  TemplateMailType_Collect = 1;
 }
 
 enum UserTokenType {
@@ -3396,6 +3470,7 @@ message Cmd_Act_BattlePass_GetLevelReward_CS {
 
 message Cmd_Act_BattlePass_GetLevelReward_SC {
   repeated CmdIDNum vReward = 1;
+  map<SdpUInt, repeated CmdIDNum> mChangeReward = 2;
 }
 
 message Cmd_Act_CommonQuest_TakeDailyReward_CS {
@@ -3846,6 +3921,48 @@ message Cmd_Alliance_Transfer_SC {
   PlayerIDType stNewTransferMaster = 2;
 }
 
+message Cmd_Ancient_AddEnergy_CS {
+  uint32 iAddEnergy = 1;
+}
+
+message Cmd_Ancient_AddEnergy_SC {
+  uint32 iAddEnergy = 1;
+  uint32 iCurEnergy = 2;
+}
+
+message Cmd_Ancient_ChangeHero_CS {
+  uint32 iHeroId = 1;
+}
+
+message Cmd_Ancient_ChangeHero_SC {
+  uint32 iHeroId = 1;
+  CmdAncientHero stHero = 2;
+}
+
+message Cmd_Ancient_GetData_SC {
+  CmdAncient stAncient = 1;
+}
+
+message Cmd_Ancient_RefreshQuest_SC {
+  repeated CmdQuest vQuest = 1;
+}
+
+message Cmd_Ancient_SummonHero_SC {
+  uint32 iHeroId = 1;
+  CmdAncientHero stHero = 2;
+  uint32 iCurHero = 3;
+  repeated CmdIDNum vItem = 4;
+}
+
+message Cmd_Ancient_TakeQuestAward_CS {
+  repeated SdpUInt vQuestId = 1;
+}
+
+message Cmd_Ancient_TakeQuestAward_SC {
+  repeated SdpUInt vQuestId = 1;
+  repeated CmdIDNum vItem = 2;
+}
+
 message Cmd_Arena_FinishChallenge_CS {
   uint32 iFightType = 1;
   uint32 iFightSubType = 2;
@@ -3897,6 +4014,18 @@ message Cmd_Attract_EndCouncil_SC {
 message Cmd_Attract_GetAttract_SC {
   CmdAllAttract stAttract = 1;
   uint32 iTotalTimes = 2;
+}
+
+message Cmd_Attract_LetterSubmitItem_CS {
+  uint32 iHeroId = 1;
+  uint32 iLetterId = 2;
+  uint32 iQuestId = 3;
+}
+
+message Cmd_Attract_LetterSubmitItem_SC {
+  uint32 iHeroId = 1;
+  uint32 iLetterId = 2;
+  uint32 iQuestId = 3;
 }
 
 message Cmd_Attract_SeeStory_CS {
@@ -5265,6 +5394,58 @@ message Cmd_Item_Use_SC {
   map<SdpUInt, repeated CmdIDNum> mChangeReward = 2;
 }
 
+message Cmd_Lamia_DailyQuest_GetAward_CS {
+  uint32 iActId = 1;
+  repeated SdpUInt vQuestId = 2;
+}
+
+message Cmd_Lamia_DailyQuest_GetAward_SC {
+  uint32 iActId = 1;
+  repeated CmdIDNum vAward = 2;
+  repeated CmdQuest vQuest = 3;
+  uint32 iDaiyQuestActive = 4;
+}
+
+message Cmd_Lamia_GameQuest_GetAllAward_CS {
+  uint32 iActId = 1;
+}
+
+message Cmd_Lamia_GameQuest_GetAllAward_SC {
+  uint32 iActId = 1;
+  repeated CmdIDNum vAward = 2;
+  repeated CmdQuest vQuest = 3;
+}
+
+message Cmd_Lamia_GameQuest_GetAward_CS {
+  uint32 iActId = 1;
+  uint32 iQuestId = 2;
+}
+
+message Cmd_Lamia_GameQuest_GetAward_SC {
+  uint32 iActId = 1;
+  repeated CmdIDNum vAward = 2;
+  CmdQuest stQuest = 3;
+}
+
+message Cmd_Lamia_GetClueAward_CS {
+  uint32 iActId = 1;
+  uint32 iClueID = 2;
+}
+
+message Cmd_Lamia_GetClueAward_SC {
+  uint32 iActId = 1;
+  repeated SdpUInt vAwardedClue = 2;
+  repeated CmdIDNum vReward = 3;
+}
+
+message Cmd_Lamia_GetExploreData_CS {
+  uint32 iActId = 1;
+}
+
+message Cmd_Lamia_GetExploreData_SC {
+  repeated CmdActExploreUnitData vExplore = 1;
+}
+
 message Cmd_Lamia_GetList_SC {
   repeated LamiaData vList = 1;
 }
@@ -5273,6 +5454,7 @@ message Cmd_Lamia_MiniGame_Finish_CS {
   uint32 iActId = 1;
   uint32 iSubActId = 2;
   uint32 iGameId = 3;
+  uint32 iScore = 4;
 }
 
 message Cmd_Lamia_MiniGame_Finish_SC {
@@ -5314,6 +5496,11 @@ message Cmd_Lamia_Quest_GetAward_SC {
   uint32 iActId = 1;
   repeated CmdIDNum vAward = 2;
   CmdQuest stQuest = 3;
+}
+
+message Cmd_Lamia_SetExploreData_CS {
+  uint32 iActId = 1;
+  repeated CmdActExploreUnitData vExplore = 2;
 }
 
 message Cmd_Lamia_SignIn_GetAward_CS {
@@ -5589,6 +5776,14 @@ message Cmd_Mail_DelAllRcvMail_SC {
   repeated SdpUInt vMailId = 1;
 }
 
+message Cmd_Mail_DelCollectMail_CS {
+  uint32 iMailId = 1;
+}
+
+message Cmd_Mail_DelCollectMail_SC {
+  uint32 iMailId = 1;
+}
+
 message Cmd_Mail_DelMail_CS {
   repeated SdpUInt vMailId = 1;
 }
@@ -5599,6 +5794,7 @@ message Cmd_Mail_DelMail_SC {
 
 message Cmd_Mail_GetMail_SC {
   repeated MailData vMail = 1;
+  repeated MailData vCollectMail = 2;
 }
 
 message Cmd_Mail_GetNewMail_SC {
@@ -5616,6 +5812,7 @@ message Cmd_Mail_GetOneMail_SC {
 message Cmd_Mail_RcvAllMailAttach_SC {
   repeated MailData vMail = 1;
   repeated SdpUInt vDelMailId = 2;
+  repeated SdpUInt vCollectId = 3;
 }
 
 message Cmd_Mail_RcvMailAttach_CS {
@@ -5629,6 +5826,7 @@ message Cmd_Mail_RcvMailAttach_SC {
   repeated CmdIDNum vReward = 4;
   uint32 iOpenTime = 5;
   uint32 iDelTime = 6;
+  bool bCollect = 7;
 }
 
 message Cmd_Mail_ReadMail_CS {
@@ -5639,6 +5837,7 @@ message Cmd_Mail_ReadMail_SC {
   uint32 iMailId = 1;
   uint32 iOpenTime = 2;
   uint32 iDelTime = 3;
+  bool bCollect = 4;
 }
 
 message Cmd_Mail_ReportBadMail_CS {
@@ -5683,6 +5882,7 @@ message Cmd_Merge_GetInitMust_SC {
   Cmd_Attract_GetAttract_SC stAttract = 12;
   Cmd_Quest_GetInit_SC stQuestInit = 13;
   Cmd_Castle_GetStarRoom_SC stStarRoom = 14;
+  Cmd_Ancient_GetData_SC stAncient = 15;
 }
 
 message Cmd_Misc_QueryPassStageArrange_CS {
@@ -6052,6 +6252,10 @@ message Cmd_Push_AllianceMemberOnline {
   PlayerIDType stRoleId = 1;
 }
 
+message Cmd_Push_Ancient_Quest {
+  repeated CmdQuest vQuest = 1;
+}
+
 message Cmd_Push_BaseStoreChapter {
   CmdBaseStoreChapter stChapter = 1;
 }
@@ -6337,6 +6541,10 @@ message Cmd_Push_LegacyStage {
   repeated SdpUInt vGameLevelId = 1;
 }
 
+message Cmd_Push_Letter_Quest {
+  repeated CmdQuest vQuest = 1;
+}
+
 message Cmd_Push_NewActivityPickupGift {
   uint32 iActivityId = 1;
   uint32 iGiftId = 2;
@@ -6412,6 +6620,7 @@ message Cmd_Push_Notify_OriginalArenaReward {
   uint32 iSeasonId = 2;
   uint32 iGroupId = 3;
   repeated CmdOriginalArenaRewardItem vRewardItem = 4;
+  uint32 iCurDay = 5;
 }
 
 message Cmd_Push_Notify_PersonalChat {
@@ -6803,6 +7012,7 @@ message Cmd_Rogue_GetData_SC {
 message Cmd_Rogue_TakeReward_SC {
   uint32 iTakenReward = 1;
   repeated CmdIDNum vReward = 2;
+  repeated CmdIDNum vActivityReward = 3;
 }
 
 message Cmd_Rogue_UnlockTech_CS {
@@ -7888,6 +8098,8 @@ message CmdActCfgLevelAwardHeroConfig {
   uint32 iJumpType = 5;
   SdpString sJumpParam = 6;
   uint32 iOrder = 7;
+  SdpString sOutsideDesc = 8;
+  SdpString sInsideDesc = 9;
 }
 
 message CmdActCfgLevelAwardMultiHeroConfig {
@@ -7970,6 +8182,8 @@ message CmdActCfgPayStoreGoods {
   uint32 iDiscount = 15;
   uint32 iShowOrder = 16;
   uint32 iRecommend = 17;
+  uint32 iLaunchTime = 18;
+  uint32 iRemovalTime = 19;
 }
 
 message CmdActCfgPayStoreGoodsConfig {
@@ -7985,19 +8199,34 @@ message CmdActCfgPayStoreStore {
   SdpString sStoreDesc = 6;
   SdpString sStorePic = 7;
   uint32 iWindowID = 8;
-  uint32 iShowOrder = 9;
-  uint32 iStoreStatus = 10;
-  uint32 iStoreBeginTime = 11;
-  uint32 iStoreEndTime = 12;
-  uint32 iMinLevel = 13;
-  uint32 iMaxLevel = 14;
-  uint32 iMinMainStage = 15;
-  uint32 iMaxMainStage = 16;
-  uint32 iFirstDouble = 17;
-  CmdActCfgPayStoreGoodsConfig stGoodsConfig = 18;
-  uint32 iShowType = 19;
-  SdpString sColorType = 20;
-  SdpString sWindowName = 21;
+  SdpString sWindowName = 9;
+  uint32 iShowOrder = 10;
+  uint32 iStoreStatus = 11;
+  uint32 iStoreBeginTime = 12;
+  uint32 iStoreEndTime = 13;
+  uint32 iMinLevel = 14;
+  uint32 iMaxLevel = 15;
+  uint32 iMinMainStage = 16;
+  uint32 iMaxMainStage = 17;
+  uint32 iFirstDouble = 18;
+  CmdActCfgPayStoreGoodsConfig stGoodsConfig = 19;
+  uint32 iShowType = 20;
+  SdpString sColorType = 21;
+  uint32 iShowSingleTab = 22;
+  CmdActCfgPayStoreUpInterfaceResourceConfig stUpInterfaceResourceConfig = 23;
+}
+
+message CmdActCfgPayStoreUpInterfaceResourceConfig {
+  SdpString sGiftBackground = 1;
+  SdpString sGiftPackBasePlate = 2;
+  SdpString sPurchasePriceTextColor = 3;
+  SdpString sSoldOutPic = 4;
+  SdpString sSoldOutTextColor = 5;
+  SdpString sGiftPackNameTextColor = 6;
+  SdpString sStockTextColor = 7;
+  SdpString sValueForMoneyBaseImage = 8;
+  SdpString sValueForMoneyMask = 9;
+  SdpString sValueForMoneyTextColor = 10;
 }
 
 message CmdActCfgPickupGift {
@@ -8235,6 +8464,12 @@ message CmdActCfgUpTimeManagerBackground {
   uint32 iShield = 3;
 }
 
+message CmdActCfgUpTimeManagerFashion {
+  uint32 iFashionId = 1;
+  uint32 iUnlockTime = 2;
+  uint32 iShield = 3;
+}
+
 message CmdActCfgUpTimeManagerHeadFrame {
   uint32 iHeadFrameId = 1;
   uint32 iUnlockTime = 2;
@@ -8249,6 +8484,12 @@ message CmdActCfgUpTimeManagerHero {
 
 message CmdActCfgUpTimeManagerPlayerHead {
   uint32 iPlayerHeadId = 1;
+  uint32 iUnlockTime = 2;
+  uint32 iShield = 3;
+}
+
+message CmdActCfgUpTimeManagerRogueItem {
+  uint32 iRogueItemId = 1;
   uint32 iUnlockTime = 2;
   uint32 iShield = 3;
 }
@@ -8281,8 +8522,19 @@ message CmdActClientCfgActivityEntrance {
 
 message CmdActClientCfgBattlePass {
   SdpString sName = 1;
-  uint32 iAvatarId = 2;
-  uint32 iPrefab = 3;
+  uint32 iRoleId = 2;
+  uint32 iAvatarId = 3;
+  uint32 iUIType = 4;
+  uint32 iTitleType = 5;
+  SdpString sPurchaseInterfacePrefabName = 6;
+  SdpString sPurchaseInterfaceLowTierName = 7;
+  SdpString sPurchaseInterfaceHighTierName = 8;
+  SdpString sTitle = 9;
+  SdpString sBackgroundPic = 10;
+  SdpString sBackgroundPicMask = 11;
+  uint32 iActivityRulesPopupId = 12;
+  SdpString sBuyBackgroundPic = 13;
+  SdpString sBuyBackgroundPicMask = 14;
 }
 
 message CmdActClientCfgCommunityEntrance {
@@ -8342,6 +8594,7 @@ message CmdActClientCfgModuleControl {
   CmdActClientCfgFlogReportModuleControl stFlogReport = 2;
   map<SdpUInt, CmdActCfgModuleControlWatermark> mWatermark = 3;
   bool bCloseRogueJumpImprove = 4;
+  repeated SdpUInt vCloseFightCheatType = 5;
 }
 
 message CmdActClientCfgOnePicAct {
@@ -8374,6 +8627,8 @@ message CmdActClientCfgUpTimeManager {
   map<SdpUInt, CmdActCfgUpTimeManagerBackground> mBackground = 2;
   map<SdpUInt, CmdActCfgUpTimeManagerPlayerHead> mPlayerHead = 3;
   map<SdpUInt, CmdActCfgUpTimeManagerHeadFrame> mHeadFrame = 4;
+  map<SdpUInt, CmdActCfgUpTimeManagerFashion> mFashion = 5;
+  map<SdpUInt, CmdActCfgUpTimeManagerRogueItem> mRogueItem = 6;
 }
 
 message CmdActClientCfgWelfareShow {
@@ -8393,19 +8648,20 @@ message CmdActCommonCfgAllianceBattle {
 message CmdActCommonCfgBattlePass {
   SdpString sProductId = 1;
   uint32 iProductSubId = 2;
-  repeated SdpUInt vDailyQuest = 3;
-  uint32 iCostPerExp = 4;
-  uint32 iUpLevelExp = 5;
-  uint32 iSendRewardMailId = 6;
-  uint32 iNormalCostRatio = 7;
-  uint32 iAdvancedCostRatio = 8;
-  SdpString sAdvancedProductId = 9;
-  uint32 iAdvancedProductSubId = 10;
-  SdpString sAdvancedDifferenceProductId = 11;
-  uint32 iAdvancedDifferenceProductSubId = 12;
-  repeated CmdIDNum vAdvancedExtraReward = 13;
-  uint32 iAdvancedExtraLevel = 14;
-  map<SdpUInt, CmdActCfgBattlePassLevelCfg> mLevelCfg = 15;
+  uint32 iItemBaseId = 3;
+  repeated SdpUInt vDailyQuest = 4;
+  uint32 iCostPerExp = 5;
+  uint32 iUpLevelExp = 6;
+  uint32 iSendRewardMailId = 7;
+  uint32 iNormalCostRatio = 8;
+  uint32 iAdvancedCostRatio = 9;
+  SdpString sAdvancedProductId = 10;
+  uint32 iAdvancedProductSubId = 11;
+  SdpString sAdvancedDifferenceProductId = 12;
+  uint32 iAdvancedDifferenceProductSubId = 13;
+  repeated CmdIDNum vAdvancedExtraReward = 14;
+  uint32 iAdvancedExtraLevel = 15;
+  map<SdpUInt, CmdActCfgBattlePassLevelCfg> mLevelCfg = 16;
 }
 
 message CmdActCommonCfgCensor {
@@ -8451,13 +8707,14 @@ message CmdActCommonCfgLamiaTimeManager {
   uint32 iLamiaId = 1;
   uint32 iDisable = 2;
   uint32 iOpenTime = 3;
-  uint32 iCloseTime = 4;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerActivitySubCfg> mActivitySubCfg = 5;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerActLamiaLevelCfg> mActLamiaLevelCfg = 6;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerGachaCfg> mGachaCfg = 7;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerShopCfg> mShopCfg = 8;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerShopGoodsCfg> mShopGoodsCfg = 9;
-  map<SdpUInt, CmdActCfgLamiaTimeManagerMiniGameCfg> mMiniGameCfg = 10;
+  uint32 iChangeTime = 4;
+  uint32 iCloseTime = 5;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerActivitySubCfg> mActivitySubCfg = 6;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerActLamiaLevelCfg> mActLamiaLevelCfg = 7;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerGachaCfg> mGachaCfg = 8;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerShopCfg> mShopCfg = 9;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerShopGoodsCfg> mShopGoodsCfg = 10;
+  map<SdpUInt, CmdActCfgLamiaTimeManagerMiniGameCfg> mMiniGameCfg = 11;
 }
 
 message CmdActCommonCfgLoginSendItem {
@@ -8561,6 +8818,17 @@ message CmdActEmergencyGiftProduct {
   uint32 iSubProductId = 3;
   uint32 iTriggerTime = 4;
   uint32 iBuyTimes = 5;
+}
+
+message CmdActExploreUnitData {
+  int64 iID = 1;
+  int64 iState = 2;
+  float fPosX = 3;
+  float fPosY = 4;
+  float fPosZ = 5;
+  float fRotation = 6;
+  map<SdpString, SdpInt> mCounters = 7;
+  int64 iCfgID = 8;
 }
 
 message CmdActGachaJump_Status {
@@ -8871,6 +9139,7 @@ message CmdAllianceBattleData {
 message CmdAllianceBattleHeroRecord {
   uint32 iHeroId = 1;
   uint32 iLevel = 2;
+  uint32 iFashion = 3;
 }
 
 message CmdAllianceBattleHistory {
@@ -8976,6 +9245,19 @@ message CmdAllianceMemberData {
   uint32 iHeadId = 12;
   uint32 iHeadFrameId = 13;
   uint32 iHeadFrameExpireTime = 14;
+}
+
+message CmdAncient {
+  uint32 iCurHero = 1;
+  map<SdpUInt, CmdAncientHero> mSummonHero = 2;
+  repeated CmdQuest vQuest = 3;
+  uint32 iRefreshTimes = 4;
+}
+
+message CmdAncientHero {
+  uint32 iHeroId = 1;
+  uint32 iCurEnergy = 2;
+  uint32 iSummonTimes = 3;
 }
 
 message CmdAntiCheatAllStat {
@@ -9526,6 +9808,7 @@ message CmdHeroBriefData {
   uint64 iMaxHP = 6;
   map<SdpUInt, CmdEquip> mEquip = 7;
   map<SdpUInt, SdpUInt> mSkill = 8;
+  uint32 iFashion = 9;
 }
 
 message CmdHeroData {
@@ -9587,6 +9870,7 @@ message CmdHuntingRecordHero {
   uint32 iHeroId = 1;
   uint32 iBreak = 2;
   uint32 iType = 3;
+  uint32 iFashion = 4;
 }
 
 message CmdIDNum {
@@ -9653,6 +9937,7 @@ message CmdLetter {
   repeated SdpUInt vReply = 4;
   repeated SdpUInt vRewardStep = 5;
   uint32 iStartTime = 6;
+  CmdQuest stQuest = 7;
 }
 
 message CmdLostStory {
@@ -9792,6 +10077,7 @@ message CmdQuest {
   uint32 iState = 3;
   uint32 iAcceptTime = 4;
   repeated SdpUInt vCondStep = 5;
+  repeated SdpUInt vUniqData = 6;
 }
 
 message CmdRankRoleItem {
@@ -10077,6 +10363,7 @@ message CmdSoloRaidRecordHero {
   uint32 iLevel = 2;
   uint32 iBreak = 3;
   uint32 iPower = 4;
+  uint32 iFashion = 5;
 }
 
 message CmdStageArrange {
@@ -10214,6 +10501,7 @@ message LamiaData {
   LamiaQuest stQuest = 3;
   LamiaMiniGame stMiniGame = 4;
   map<SdpUInt, LamiaStage> mStageStat = 5;
+  repeated SdpUInt vAwardedClue = 6;
 }
 
 message LamiaMiniGame {
@@ -10223,6 +10511,9 @@ message LamiaMiniGame {
 
 message LamiaQuest {
   repeated CmdQuest vQuest = 1;
+  repeated CmdQuest vDailyQuest = 2;
+  repeated CmdQuest vGameQuest = 3;
+  uint32 iDaiyQuestActive = 4;
 }
 
 message LamiaSignIn {

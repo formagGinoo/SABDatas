@@ -1,0 +1,19 @@
+{
+  "className": "CData_LegacyEnemyLine",
+  "timestamp": "2025-07-16T14:14:06.988Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_PlotIDs": "[\"Legacy_Enemy_02_01\",\"Legacy_Enemy_02_02\",\"Legacy_Enemy_02_03\",\"Legacy_Enemy_02_04\"]",
+      "m_Duration": "3"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_PlotIDs": "[\"Legacy_Enemy_01_01\",\"Legacy_Enemy_01_02\",\"Legacy_Enemy_01_03\",\"Legacy_Enemy_01_04\"]",
+      "m_Duration": "3"
+    }
+  },
+  "status": "processed_2_items"
+}

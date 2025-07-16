@@ -1,6 +1,6 @@
 {
   "className": "CData_RogueStageItemInfo",
-  "timestamp": "2025-07-08T13:35:47.301Z",
+  "timestamp": "2025-07-16T14:14:19.668Z",
   "data": {
     "3001001": {
       "m_bError": null,
@@ -30,7 +30,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3002001": {
       "m_bError": null,
@@ -60,7 +61,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3003001": {
       "m_bError": null,
@@ -90,7 +92,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3004001": {
       "m_bError": null,
@@ -120,7 +123,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3005001": {
       "m_bError": null,
@@ -150,7 +154,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3010001": {
       "m_bError": null,
@@ -180,7 +185,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3011001": {
       "m_bError": null,
@@ -210,7 +216,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3012001": {
       "m_bError": null,
@@ -240,7 +247,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3029001": {
       "m_bError": null,
@@ -270,7 +278,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "3030001": {
       "m_bError": null,
@@ -300,7 +309,8 @@
       "m_mItemDesc3": "\"Three years new, three years old, and three years of mending worn holes; the wood caskets in the Timeworn Mausoleum endure, generation after generation.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100001": {
       "m_bError": null,
@@ -330,7 +340,8 @@
       "m_mItemDesc3": "\"One of the three origins of Alchemy. This yellow mineral is extremely flammable, releasing an intense scent when burned. It never fails to stir an alchemist's imagination about souls.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "1",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100002": {
       "m_bError": null,
@@ -360,7 +371,8 @@
       "m_mItemDesc3": "\"A transparent substance that purifies all turbid liquids with its touch. It seems to embody the serene power of order.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100003": {
       "m_bError": null,
@@ -390,7 +402,8 @@
       "m_mItemDesc3": "\"One of the three origins of Alchemy. This white crystal is the cornerstone—containing the power of purification, essential for exorcism rituals.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "3",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100004": {
       "m_bError": null,
@@ -420,7 +433,8 @@
       "m_mItemDesc3": "\"A green gem, said to be the eye of a mythical bird. Alchemists believe that it holds the power to heal and revive the dead.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100005": {
       "m_bError": null,
@@ -450,7 +464,8 @@
       "m_mItemDesc3": "\"A silver-white metal capable of refining other metals by removing impurities. Alchemists call it the \"wolf\" for the howling sound it makes during smelting.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "5",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100006": {
       "m_bError": null,
@@ -480,7 +495,8 @@
       "m_mItemDesc3": "\"Seemingly harmless, this white, crystal-like substance can be transformed into corrosive acid or explosive compounds. Handle with caution.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "6",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100007": {
       "m_bError": null,
@@ -510,7 +526,8 @@
       "m_mItemDesc3": "\"A hard, grey metal that is abundant in nature and easy to forge. A crucial material in the Church's Silver Blood Trial.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "7",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100008": {
       "m_bError": null,
@@ -540,7 +557,8 @@
       "m_mItemDesc3": "\"The origin of Alchemy. This heavy grey metal is disordered—like the nature of the primordial universe itself.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "8",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100009": {
       "m_bError": null,
@@ -570,7 +588,8 @@
       "m_mItemDesc3": "\"Known as \"the unmelted ice\" for its translucent, prismatic structure. Said to reveal glimpses of the future, it's a perfect medium for diviners to commune with spirits.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100010": {
       "m_bError": null,
@@ -600,7 +619,8 @@
       "m_mItemDesc3": "\"A deep grayish ore, symbolizing death through its lethal toxicity. Yet to alchemists, this very power of destruction holds the potential for new life.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100011": {
       "m_bError": null,
@@ -630,7 +650,8 @@
       "m_mItemDesc3": "\"A reddish-brown metal that lasts much longer than iron, though it is less durable than gold or silver. It retains its noble luster through the wear of time.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "11",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100012": {
       "m_bError": null,
@@ -660,7 +681,8 @@
       "m_mItemDesc3": "\"One of the three origins of Alchemy. This silver-like liquid substance is hailed by alchemists as the 'Source of Immortality.' Yet rumors speak of those who drank it meeting gruesome ends.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "12",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100013": {
       "m_bError": null,
@@ -690,7 +712,8 @@
       "m_mItemDesc3": "\"A pristine metal with cleansing power. The Church crafts holy relics and armor with it to battle against heretics.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "13",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100014": {
       "m_bError": null,
@@ -720,7 +743,8 @@
       "m_mItemDesc3": "\"A heavy yellow metal, sought by mortals as a symbol of wealth, and revered by alchemists as their ultimate pursuit.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "14",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100015": {
       "m_bError": null,
@@ -750,7 +774,8 @@
       "m_mItemDesc3": "\"A rounded gem hidden in the ocean depths, known as the 'Moon of the Sea' for its pristine, silvery glow. Said to bestow purity and wisdom.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "15",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100016": {
       "m_bError": null,
@@ -780,7 +805,8 @@
       "m_mItemDesc3": "\"A golden solid often used to craft candlesticks that dispel darkness. Some may coat their bodies with its cooled wax in pursuit of longevity.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "16",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100017": {
       "m_bError": null,
@@ -810,7 +836,8 @@
       "m_mItemDesc3": "\"A golden resin often distilled into essence by alchemists. A single dab applied to the forehead is said to grant a glimpse of insight.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100018": {
       "m_bError": null,
@@ -840,7 +867,8 @@
       "m_mItemDesc3": "\"A twisted root, said to release terrifying screams. Alchemists deem it a potent magical material.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100019": {
       "m_bError": null,
@@ -870,7 +898,8 @@
       "m_mItemDesc3": "\"Fragrant leaves from an evergreen tree. They are said to inspire prophetic dreams and poetic revelation when placed beneath one's pillow.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "18",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100020": {
       "m_bError": null,
@@ -900,7 +929,8 @@
       "m_mItemDesc3": "\"Sharp fangs, often crafted into amulets. Said to drain power from enemies when worn.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "20",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100021": {
       "m_bError": null,
@@ -930,7 +960,8 @@
       "m_mItemDesc3": "\"A transparent sphere filled with liquid. Alchemists claim it holds the key to creating life—though some see it as the birth of Calamity.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "21",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100022": {
       "m_bError": null,
@@ -960,7 +991,8 @@
       "m_mItemDesc3": "\"An eerie crimson liquid said to be distilled from Abel's blood. It grants immortality at the cost of one's humanity.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "22",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100023": {
       "m_bError": null,
@@ -990,7 +1022,8 @@
       "m_mItemDesc3": "\"A red sea creature believed to be the bones of the ocean god. It is said to protect sailors from storms and waves with the power of the sea.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "23",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100024": {
       "m_bError": null,
@@ -1020,7 +1053,8 @@
       "m_mItemDesc3": "\"The antler of a stag. It shares a bond with nature and carries the essence of the changing seasons.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "24",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100025": {
       "m_bError": null,
@@ -1050,7 +1084,8 @@
       "m_mItemDesc3": "\"A shed snakeskin, sought by alchemists for the secret of immortality. Fragile, yet it holds remarkable power of revival when used in potions.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "25",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10100026": {
       "m_bError": null,
@@ -1080,7 +1115,8 @@
       "m_mItemDesc3": "\"A tiny insect bearing divine revelation. God said, 'Let there be light,' and there was light. From that moment, light was separated from darkness.\"",
       "m_HandbookType": "3",
       "m_HandbookOrder": "26",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10200001": {
       "m_bError": null,
@@ -1110,7 +1146,8 @@
       "m_mItemDesc3": "\"A dark, bitter liquid that keeps one alert through the night. Would likely fetch a good price among night watchmen and ascetics.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 1\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 1\"",
+      "m_HideType": null
     },
     "10200003": {
       "m_bError": null,
@@ -1136,11 +1173,12 @@
       "m_EffectRangeValue": "[]",
       "m_Quality": "1",
       "m_mItemDesc1": "\"\"",
-      "m_mItemDesc2": "\"All Melee units deal DMG in a cone.\"",
+      "m_mItemDesc2": "\"When using Basic ATK, all Melee units have a chance to deal DMG in a cone when.\"",
       "m_mItemDesc3": "\"A weapon that fits in the palm. When unfolded, it becomes a fan with razor edges. Favored by eastern assassins, it reaps souls in silence.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10200004": {
       "m_bError": null,
@@ -1166,11 +1204,12 @@
       "m_EffectRangeValue": "[]",
       "m_Quality": "1",
       "m_mItemDesc1": "\"\"",
-      "m_mItemDesc2": "\"All Melee Vassals create Blood Pools nearby, dealing DMG to enemies who enter and restoring HP to the Vassal.\"",
+      "m_mItemDesc2": "\"Creates Blood Pools near all allied Melee Vassals. Enemies inside the Blood Pool take DMG, while nearby Vassal recovers HP.\"",
       "m_mItemDesc3": "\"A syringe with silver spikes. In the hands of The Peace Council, it would be a perfect instrument for drawing blood.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10200005": {
       "m_bError": null,
@@ -1200,7 +1239,8 @@
       "m_mItemDesc3": "\"A container filled with black powder brought from the east by the El Dorado. A single spark is enough to unleash earth-shattering power.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10200006": {
       "m_bError": null,
@@ -1226,11 +1266,12 @@
       "m_EffectRangeValue": "[]",
       "m_Quality": "1",
       "m_mItemDesc1": "\"\"",
-      "m_mItemDesc2": "\"A chance to trigger a chain lightning effect on up to 3 targets, upon hitting enemies in range with Basic ATKs.\"",
+      "m_mItemDesc2": "\"A chance to trigger a chain lightning effect on up to 3 targets, upon hitting enemies with ranged Basic ATKs.\"",
       "m_mItemDesc3": "\"A glasswork device, handcrafted with care.\nSomeone once tried to trap light inside—only to catch a fleeting rainbow instead.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 7\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 7\"",
+      "m_HideType": null
     },
     "10200007": {
       "m_bError": null,
@@ -1260,7 +1301,8 @@
       "m_mItemDesc3": "\"A flaming rock fell from the sky. Is it Aeon's divine punishment, or a harbinger of disaster?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 2\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 2\"",
+      "m_HideType": null
     },
     "10200008": {
       "m_bError": null,
@@ -1290,7 +1332,8 @@
       "m_mItemDesc3": "\"A peculiar wooden device that lifts one up in the sky. One shudders to think what eccentrics the Hermetic Order might make with it.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10200009": {
       "m_bError": null,
@@ -1320,7 +1363,8 @@
       "m_mItemDesc3": "\"A stone altar adorned with candlelight, surrounded by beast heads. Is it a magic circle, or a heretic's sacrifice?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 4\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 4\"",
+      "m_HideType": null
     },
     "10200010": {
       "m_bError": null,
@@ -1350,7 +1394,8 @@
       "m_mItemDesc3": "\"A peculiar device prone to sudden explosions. In the wrong hands, the consequences are unthinkable.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 3\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 3\"",
+      "m_HideType": null
     },
     "10200013": {
       "m_bError": null,
@@ -1380,7 +1425,8 @@
       "m_mItemDesc3": "\"A barrel filled with the nectar of joy. A single taste of euphoria, enough to intoxicate and ease sleepless nights.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 6\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 6\"",
+      "m_HideType": null
     },
     "10200017": {
       "m_bError": null,
@@ -1410,7 +1456,8 @@
       "m_mItemDesc3": "\"A clay instrument with small holes. When the right tune is played, strange phenomena seem to awaken.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 5\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 5\"",
+      "m_HideType": null
     },
     "10200020": {
       "m_bError": null,
@@ -1440,7 +1487,8 @@
       "m_mItemDesc3": "\"A complex mechanical device.\nInspired by an engineer's nightmare, some speculated he dreamed of hellfire raining from the sky.\nIn fact, it was just a dream about complicated parabolic formulas.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 8\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 8\"",
+      "m_HideType": null
     },
     "10300010": {
       "m_bError": null,
@@ -1470,7 +1518,8 @@
       "m_mItemDesc3": "\"A silver sword forgotten by time and space. The blood crusted on its hilt speaks of Noah's glorious victories as the \"Bloodborn hunter\" for the Church. In another life, would he still suffer from doubt, or yearn for an unreachable homeland—even if he no longer dwelled in the shadow of the sun?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300020": {
       "m_bError": null,
@@ -1500,7 +1549,8 @@
       "m_mItemDesc3": "\"A shield forgotten by time and space. Its twisted design was once hailed by the \"great weaponsmith\" Jestel as a work of rare artistry. In another life, would she still recall the tale of the Moonblessed, and share it with her kin?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300030": {
       "m_bError": null,
@@ -1530,7 +1580,8 @@
       "m_mItemDesc3": "\"A bouquet forgotten by time and space. Planting carnations among piles of bones was the wish of Empousa, the \"new leader of the family.\" In another life, would she wonder how fate might have shifted, had she dared venture into Starfall Valley that night?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300040": {
       "m_bError": null,
@@ -1560,7 +1611,8 @@
       "m_mItemDesc3": "\"Observation equipment forgotten by time and space. \"The observer of time,\" Aiona, has worn through thousands like it. In another life, would she abandon her obsession with the end of time—and consider leaving the Alita family to seek a different sky?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300050": {
       "m_bError": null,
@@ -1590,7 +1642,8 @@
       "m_mItemDesc3": "\"A flaming bow forgotten by time and space. Its charred surface bears witness to the \"new Bell Ringer\" Setti’s mastery of fire. In another life, would she have questioned her teacher’s true intentions that night in Starfall Valley, after taking Agares's place?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300060": {
       "m_bError": null,
@@ -1620,7 +1673,8 @@
       "m_mItemDesc3": "\"Seafaring gourmet foods forgotten by time and space. The writhing tentacles on the platter are trophies from Ami, \"Captain of the El Dorado,\" taken from the deep. In another life, would she still yearn for the land while bound to the helm—or would the sea and storm, at last, feel like home?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300070": {
       "m_bError": null,
@@ -1650,7 +1704,8 @@
       "m_mItemDesc3": "\"Bones forgotten by time and space. Precisely modified and fused with the body of Cecia, the \"Ascendant.\" In another life, having refused to be her family's sacrifice, would she have found her true self in flesh and metal?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300080": {
       "m_bError": null,
@@ -1680,7 +1735,8 @@
       "m_mItemDesc3": "\"A music box forgotten by time and space. The little girl dancing atop it glows like \"Lady\" Bella herself. In another life, as pure flesh and blood, would she care about if the puppet in the box had a soul?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300090": {
       "m_bError": null,
@@ -1710,7 +1766,8 @@
       "m_mItemDesc3": "\"A staff forgotten by time and space. The snake coiled atop has guided countless lost souls with Cain, the \"guide to the Other Side.\" In another life, when he walked the world of the living, would things have turned out differently for Cain had he finished that chess game at the Demon Banquet?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300100": {
       "m_bError": null,
@@ -1740,7 +1797,8 @@
       "m_mItemDesc3": "\"A torch forgotten by time and space. Raising it was Agares's first act of feigned loyalty as \"Dracula's follower.\" In another life, where he stands but one step from godhood, would he ever reminisce about the Manor of Eternal Flame?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300110": {
       "m_bError": null,
@@ -1770,7 +1828,8 @@
       "m_mItemDesc3": "\"Some bats forgotten by time and space, endlessly squabbling over food, carefree, like echoes of the newfound joy of Lamia, the \"runaway.\" In another life, would she ever miss those petty battles at home after breaking free?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300120": {
       "m_bError": null,
@@ -1800,7 +1859,8 @@
       "m_mItemDesc3": "\"A sword forgotten by time and space, one that has purged countless heretics, bestowed upon Gilrain by the Church when he was chosen as the \"Bell Ringer of Light.\" In another life, no longer shying away from the light, would he secretly long for a worthy adversary?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300130": {
       "m_bError": null,
@@ -1830,7 +1890,8 @@
       "m_mItemDesc3": "\"A gauntlet forgotten by time and space. The wolf claws on it were the prized weapons of Hati. In another life, no longer the \"warrior of Ganelon,\" would she simply wear the cloak her father made and visit the town for the blooming Wolfsbane?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300140": {
       "m_bError": null,
@@ -1860,7 +1921,8 @@
       "m_mItemDesc3": "\"Shears forgotten by time and space. In the hands of Gilrain, the \"castle gardener,\" it became a tool for shearing sheep and tending to flowers. In another life, where peace is his sole pursuit, would he ever truly quench his hunger for power?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300150": {
       "m_bError": null,
@@ -1890,7 +1952,8 @@
       "m_mItemDesc3": "\"A cloak forgotten by time and space. These massive bat wings are a symbol of loyalty to Dracula as a \"Bloodborn Elder.\" In another life, would Mass move on from that palace after turning her back on the family?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300160": {
       "m_bError": null,
@@ -1920,7 +1983,8 @@
       "m_mItemDesc3": "\"A pair of handwraps forgotten by time and space. The rose pattern adorning them symbolizes the happy ending of \"village girl\" Ressa with her childhood sweetheart. In another life, would she ever realize how precious her simple life on Sunset Isle was?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300170": {
       "m_bError": null,
@@ -1950,7 +2014,8 @@
       "m_mItemDesc3": "\"Remains of beasts forgotten by time and space. The precise cuts speak to the surgical mastery of the \"bounty hunter\" Darcias. In another life, would she look back on her pursuit of wealth as a quiet submission to a darker power?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300180": {
       "m_bError": null,
@@ -1980,7 +2045,8 @@
       "m_mItemDesc3": "\"A longsword forgotten by time and space. Its unique design marks it as belonging to the second son of the Roland family—the Knight. In another life, freed from his fate as a Bell Ringer candidate, would Friedrich ever find his true calling?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300190": {
       "m_bError": null,
@@ -2010,7 +2076,8 @@
       "m_mItemDesc3": "\"Statues forgotten by time and space, this shield-like trinket bearing the crest of deities, handpicked by Theophane the \"humble father\" as a gift for his beloved daughter. In another life, would he simply savor the joy of family in a world untouched by war?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300200": {
       "m_bError": null,
@@ -2040,7 +2107,8 @@
       "m_mItemDesc3": "\"Snacks forgotten by time and space. These black garlics were \"tavern regular\" Gadric's favorite delicacy during tavern nights with friends. In another life, would he have a lighter heart for such simple indulgences?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300210": {
       "m_bError": null,
@@ -2070,7 +2138,8 @@
       "m_mItemDesc3": "\"A violin forgotten by time and space. Bizarrely shaped, yet it served \"dark nursery composer\" Acappella best in crafting her works. In another life, wandering the streets without a home, would she still yearn for a place to belong—while music remained her most delightful companion?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300220": {
       "m_bError": null,
@@ -2100,7 +2169,8 @@
       "m_mItemDesc3": "\"An astrolabe forgotten by time and space. This intricate device helped the \"alchemist\" Seth transform oracles into symbols for study. In another life, would she ever find the power in her lifelong research to shape the world?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300230": {
       "m_bError": null,
@@ -2130,7 +2200,8 @@
       "m_mItemDesc3": "\"Ritual implements forgotten by time and space. Essential tools for the \"village witch\" Dalcarlo to commune with spirits. In another life, would she have glimpsed an alternate fate—one where she became an elder in the castle—during her divinations?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300270": {
       "m_bError": null,
@@ -2160,7 +2231,8 @@
       "m_mItemDesc3": "\"A coffin forgotten by time and space. The messy doodles on the wood are evidence of \"queen of the playground\" Piera leading her little friends into playful trouble. In another life, would she have indulged in an innocent childhood, free from the weight of carrying her family's burden?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300280": {
       "m_bError": null,
@@ -2190,7 +2262,8 @@
       "m_mItemDesc3": "\"A dirk forgotten by time and space. This secret weapon accompanied Augustine the \"Drifter\" on countless missions during his life on the run. In another life, would he ponder the endless wandering through time and space as mere coincidences, or part of a greater design?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300290": {
       "m_bError": null,
@@ -2220,7 +2293,8 @@
       "m_mItemDesc3": "\"A timepiece forgotten by time and space. This fractured device knew well how Aiona, the \"chrono reverter,\" bent the flow of time to her will. In another life, would this extraordinarily gifted girl have found the ultimate answers to the universe through her countless experiments?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300300": {
       "m_bError": null,
@@ -2250,7 +2324,8 @@
       "m_mItemDesc3": "\"Fungi forgotten by time and space. This radiant colony was carefully nurtured by Edina, the \"fungal researcher.\" In another life, would she ever wonder about harmony between humanity and the wild as she wielded nature's power?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300310": {
       "m_bError": null,
@@ -2280,7 +2355,8 @@
       "m_mItemDesc3": "\"Webs forgotten by time and space. Its eerie light was spun into illusions by the \"magician\" Pavana. In another life, would this master of illusions have known she too was caught in the weave of fate?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300330": {
       "m_bError": null,
@@ -2310,7 +2386,8 @@
       "m_mItemDesc3": "\"Blades forgotten by time and space. Once, they were the lethal instruments of the \"merciless blade\" Nicole. In another life, would she still crave to dance beneath the moonlight, even stripped of dreams and humanity?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300340": {
       "m_bError": null,
@@ -2340,7 +2417,8 @@
       "m_mItemDesc3": "\"A plaguemask forgotten by time and space. This precious relic was kept safe in a cabinet by \"the town doctor\" Thibault. In another life, where the plague never came, would she have found new meaning in the quiet practice of medicine?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300350": {
       "m_bError": null,
@@ -2370,7 +2448,8 @@
       "m_mItemDesc3": "\"A chariot forgotten by time and space. Radiating golden brilliance, it was the vessel of Agares as the \"Light Bearer,\" bestowing light and warmth. In another life, would he yearn for mortal pleasures as he traversed from sky to earth?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300370": {
       "m_bError": null,
@@ -2400,7 +2479,8 @@
       "m_mItemDesc3": "\"A spear forgotten by time and space. Wrapped in bandages, this weapon bears witness to the countless triumphs over the Calamity by Tris, \"the Bell Ringer of Glory.\" In another life, returning in triumph, would she live without regret?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300380": {
       "m_bError": null,
@@ -2430,7 +2510,8 @@
       "m_mItemDesc3": "\"A bow forgotten by time and space. This bullhead crossbow witnessed the exceptional marksmanship of Selena, the \"tribal hunter.\" In another life, embraced by the applause of her kin, would she have longed to embark on an unknown adventure?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300390": {
       "m_bError": null,
@@ -2460,7 +2541,8 @@
       "m_mItemDesc3": "\"A halberd forgotten by time and space. Carrying the aura of sin, it belonged to Noah, the \"Phantom of Death,\" who was consumed by the Calamity. In another life, burdened by curse, would he finally break free from the chains of fate?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300400": {
       "m_bError": null,
@@ -2490,7 +2572,8 @@
       "m_mItemDesc3": "\"Twin guns forgotten by time and space, adorned with beast-heads, the proudest creation by the \"charming rascal\" Van Helsing. In another life, as he reveled in joy and madness, would he finally encounter a worthy adversary?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300420": {
       "m_bError": null,
@@ -2520,7 +2603,8 @@
       "m_mItemDesc3": "\"A crown forgotten by time and space. Black was the color for Joan, the \"rebel.\" In another life, after toppling the old order, might she have chosen peace to claim her victory?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300430": {
       "m_bError": null,
@@ -2550,7 +2634,8 @@
       "m_mItemDesc3": "\"A boater hat forgotten by time and space. This eerie relic bore witness to the rightful deaths bestowed by Ottavia, the \"judge.\" In another life, would her devotion to her beliefs have tempered the hatred she held for her sister?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300450": {
       "m_bError": null,
@@ -2580,7 +2665,8 @@
       "m_mItemDesc3": "\"A butterfly knife forgotten by time and space. Carrying the aura of sin, it belonged to Hati, the \"vigil of plague,\" who sealed the Calamity within herself. In another life, after conquering the Calamity, would she have endured the excruciating pain caused by the Black Blood within?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300470": {
       "m_bError": null,
@@ -2610,7 +2696,8 @@
       "m_mItemDesc3": "\"Branches forgotten by time and space. Seemingly ordinary, yet it was part of Yggdrasill, the \"world tree.\" In another life, would he have remained detached from the world, or longed for power over it?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300480": {
       "m_bError": null,
@@ -2640,7 +2727,8 @@
       "m_mItemDesc3": "\"A jellyfish forgotten by time and space. These red and black aquatic creatures were the cherished pets of Ami, the \"head of Landis.\" In another life, as she led her family through the Calamity, would she have realized she unleashed a power that could be a curse?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300490": {
       "m_bError": null,
@@ -2670,7 +2758,8 @@
       "m_mItemDesc3": "\"A great axe forgotten by time and space. Its stunning color was meticulously crafted by a blacksmith for Baphomet, the \"new noble.\" In another life, would this newly fashioned noble have discovered another way to protect his family's legacy?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300500": {
       "m_bError": null,
@@ -2700,7 +2789,8 @@
       "m_mItemDesc3": "\"A grave of sword forgotten by time and space. In another life, where the Calamity never struck, and the \"other gravekeeper\" Clive never had the need to draw the great blade, would he have become friends with that silver-haired traveler?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300510": {
       "m_bError": null,
@@ -2730,7 +2820,8 @@
       "m_mItemDesc3": "\"A wolf head forgotten by time and space. These brutal offerings were symbols of power for Clive Jr., the \"alpha wolf.\" In another life, would he have found someone worthy of his absolute power to protect?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300520": {
       "m_bError": null,
@@ -2760,7 +2851,8 @@
       "m_mItemDesc3": "\"A crossbow forgotten by time and space. Its unique design reflected the distinctive taste of the \"seafaring tycoon\" Goldland. In another life, unburdened by his duty to revive his family's name, would he find pure joy in the endless expanse of the ocean?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "10300570": {
       "m_bError": null,
@@ -2790,7 +2882,132 @@
       "m_mItemDesc3": "\"A pool of blood forgotten by time and space. Its dark stench marked how Limine, the \"Daughter of Dracula, \" turned the land into a Crimson Blood Bath. In another life, would she find fulfillment in endless power and the immortality she sought, even after realizing her own ambitions?\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "10300640": {
+      "m_bError": null,
+      "m_ItemID": "10300640",
+      "m_ItemGroupID": "4059",
+      "m_mItemName": "\"Sealed \"Siren's Tear\"\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_150\"",
+      "m_ItemVolume": "[[1,1,1],[0,1,0]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid20\"",
+      "m_MaskIcon": "\"Atlas_Rouge/mask_20\"",
+      "m_ItemType": "1",
+      "m_ItemSubType": "103",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3]]",
+      "m_Skill": null,
+      "m_Character": "20640",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"\"",
+      "m_mItemDesc3": "\"The blood of a siren, left at the convergence of realms. They gathered around her, collecting every drop that she shed. Her tears ran black, filled with longing for home. In that place where Sapphire Isle sank beneath the waves, for whom do her tears fall?\"",
+      "m_HandbookType": null,
+      "m_HandbookOrder": null,
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "10300650": {
+      "m_bError": null,
+      "m_ItemID": "10300650",
+      "m_ItemGroupID": "4059",
+      "m_mItemName": "\"Sealed \"Noble's Crossbow\"\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_148\"",
+      "m_ItemVolume": "[[0,1,0],[1,1,1],[0,1,0]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid23\"",
+      "m_MaskIcon": "\"Atlas_Rouge/mask_23\"",
+      "m_ItemType": "1",
+      "m_ItemSubType": "103",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,3000,3]]",
+      "m_Skill": null,
+      "m_Character": "20650",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"\"",
+      "m_mItemDesc3": "\"A noble's crossbow, left at the convergence of realms. The bow is exquisite, carved with lavish yet impractical decorations and patterns. More a display of wealth than a weapon. In that place where she became nobility, can she still recall her days of impoverishment?\"",
+      "m_HandbookType": null,
+      "m_HandbookOrder": null,
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "10300660": {
+      "m_bError": null,
+      "m_ItemID": "10300660",
+      "m_ItemGroupID": "4059",
+      "m_mItemName": "\"Sealed \"Forgotten Vow\"\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_147\"",
+      "m_ItemVolume": "[[1,1],[1,1]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid12\"",
+      "m_MaskIcon": "\"Atlas_Rouge/mask_12\"",
+      "m_ItemType": "1",
+      "m_ItemSubType": "103",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3]]",
+      "m_Skill": null,
+      "m_Character": "20660",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"\"",
+      "m_mItemDesc3": "\"A conch shell, left at the convergence of realms. The beautiful shell bears the marks of time and tide. In that place where she became a puppet, can she still recall the promise they made on the beach?\"",
+      "m_HandbookType": null,
+      "m_HandbookOrder": null,
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "10300700": {
+      "m_bError": null,
+      "m_ItemID": "10300700",
+      "m_ItemGroupID": "4059",
+      "m_mItemName": "\"Sealed \"Blood-Smeared Cloak\"\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_149\"",
+      "m_ItemVolume": "[[1,1],[1,1]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid12\"",
+      "m_MaskIcon": "\"Atlas_Rouge/mask_12\"",
+      "m_ItemType": "1",
+      "m_ItemSubType": "103",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3]]",
+      "m_Skill": null,
+      "m_Character": "20700",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"\"",
+      "m_mItemDesc3": "\"A Blood-Smeared Cloak, left at the convergence of realms. The scorch marks and bloodstains on the cloak tell tales of a brutal Holy War. In that place where she stands undefeated on the battlefield, does she still long for peace?\"",
+      "m_HandbookType": null,
+      "m_HandbookOrder": null,
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100010": {
       "m_bError": null,
@@ -2820,7 +3037,8 @@
       "m_mItemDesc3": "\"A silver sword forgotten by time and space. The blood crusted on its hilt speaks of Noah's glorious victories as the \"Bloodborn hunter\" for the Church. In another life, would he still suffer from doubt, or yearn for an unreachable homeland—even if he no longer dwelled in the shadow of the sun?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "1",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100020": {
       "m_bError": null,
@@ -2850,7 +3068,8 @@
       "m_mItemDesc3": "\"A shield forgotten by time and space. Its twisted design was once hailed by the \"great weaponsmith\" Jestel as a work of rare artistry. In another life, would she still recall the tale of the Moonblessed, and share it with her kin?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "2",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100030": {
       "m_bError": null,
@@ -2880,7 +3099,8 @@
       "m_mItemDesc3": "\"A bouquet forgotten by time and space. Planting carnations among piles of bones was the wish of Empousa, the \"new leader of the family.\" In another life, would she wonder how fate might have shifted, had she dared venture into Starfall Valley that night?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "3",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100040": {
       "m_bError": null,
@@ -2910,7 +3130,8 @@
       "m_mItemDesc3": "\"Observation equipment forgotten by time and space. \"The observer of time,\" Aiona, has worn through thousands like it. In another life, would she abandon her obsession with the end of time—and consider leaving the Alita family to seek a different sky?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "4",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100050": {
       "m_bError": null,
@@ -2940,7 +3161,8 @@
       "m_mItemDesc3": "\"A flaming bow forgotten by time and space. Its charred surface bears witness to the \"new Bell Ringer\" Setti’s mastery of fire. In another life, would she have questioned her teacher’s true intentions that night in Starfall Valley, after taking Agares's place?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "5",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100060": {
       "m_bError": null,
@@ -2970,7 +3192,8 @@
       "m_mItemDesc3": "\"Seafaring gourmet foods forgotten by time and space. The writhing tentacles on the platter are trophies from Ami, \"Captain of the El Dorado,\" taken from the deep. In another life, would she still yearn for the land while bound to the helm—or would the sea and storm, at last, feel like home?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "6",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100070": {
       "m_bError": null,
@@ -3000,7 +3223,8 @@
       "m_mItemDesc3": "\"Bones forgotten by time and space. Precisely modified and fused with the body of Cecia, the \"Ascendant.\" In another life, having refused to be her family's sacrifice, would she have found her true self in flesh and metal?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "7",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100080": {
       "m_bError": null,
@@ -3030,7 +3254,8 @@
       "m_mItemDesc3": "\"A music box forgotten by time and space. The little girl dancing atop it glows like \"Lady\" Bella herself. In another life, as pure flesh and blood, would she care about if the puppet in the box had a soul?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "8",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100090": {
       "m_bError": null,
@@ -3060,7 +3285,8 @@
       "m_mItemDesc3": "\"A staff forgotten by time and space. The snake coiled atop has guided countless lost souls with Cain, the \"guide to the Other Side.\" In another life, when he walked the world of the living, would things have turned out differently for Cain had he finished that chess game at the Demon Banquet?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "9",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100100": {
       "m_bError": null,
@@ -3090,7 +3316,8 @@
       "m_mItemDesc3": "\"A torch forgotten by time and space. Raising it was Agares's first act of feigned loyalty as \"Dracula's follower.\" In another life, where he stands but one step from godhood, would he ever reminisce about the Manor of Eternal Flame?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "10",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100110": {
       "m_bError": null,
@@ -3120,7 +3347,8 @@
       "m_mItemDesc3": "\"Some bats forgotten by time and space, endlessly squabbling over food, carefree, like echoes of the newfound joy of Lamia, the \"runaway.\" In another life, would she ever miss those petty battles at home after breaking free?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "11",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100120": {
       "m_bError": null,
@@ -3150,7 +3378,8 @@
       "m_mItemDesc3": "\"A sword forgotten by time and space, one that has purged countless heretics, bestowed upon Gilrain by the Church when he was chosen as the \"Bell Ringer of Light.\" In another life, no longer shying away from the light, would he secretly long for a worthy adversary?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "12",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100130": {
       "m_bError": null,
@@ -3180,7 +3409,8 @@
       "m_mItemDesc3": "\"A gauntlet forgotten by time and space. The wolf claws on it were the prized weapons of Hati. In another life, no longer the \"warrior of Ganelon,\" would she simply wear the cloak her father made and visit the town for the blooming Wolfsbane?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "13",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100140": {
       "m_bError": null,
@@ -3210,7 +3440,8 @@
       "m_mItemDesc3": "\"Shears forgotten by time and space. In the hands of Gilrain, the \"castle gardener,\" it became a tool for shearing sheep and tending to flowers. In another life, where peace is his sole pursuit, would he ever truly quench his hunger for power?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "14",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100150": {
       "m_bError": null,
@@ -3240,7 +3471,8 @@
       "m_mItemDesc3": "\"A mantle forgotten by time and space. The massive bat wings are a symbol of loyalty to Dracula as a \"Bloodborn elder.\" In another life, would Mass move on from that palace after turning her back on the family?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "15",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100160": {
       "m_bError": null,
@@ -3270,7 +3502,8 @@
       "m_mItemDesc3": "\"A pair of handwraps forgotten by time and space. The rose pattern adorning them symbolizes the happy ending of \"village girl\" Ressa with her childhood sweetheart. In another life, would she ever realize how precious her simple life on Sunset Isle was?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "16",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100170": {
       "m_bError": null,
@@ -3300,7 +3533,8 @@
       "m_mItemDesc3": "\"Remains of beasts forgotten by time and space. The precise cuts speak to the surgical mastery of the \"bounty hunter\" Darcias. In another life, would she look back on her pursuit of wealth as a quiet submission to a darker power?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "17",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100180": {
       "m_bError": null,
@@ -3330,7 +3564,8 @@
       "m_mItemDesc3": "\"A longsword forgotten by time and space. Its unique design marks it as belonging to the second son of the Roland family—the Knight. In another life, freed from his fate as a Bell Ringer candidate, would Friedrich ever find his true calling?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "18",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100190": {
       "m_bError": null,
@@ -3360,7 +3595,8 @@
       "m_mItemDesc3": "\"Decorations forgotten by time and space. A shield-like statue bearing the crest of the deities, handpicked by the \"humble dad\" Theophane as a gift for his beloved daughter. In another life, would he simply savor the joy of family in a world untouched by war?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "19",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100200": {
       "m_bError": null,
@@ -3390,7 +3626,8 @@
       "m_mItemDesc3": "\"Snacks forgotten by time and space. These black garlics were \"tavern regular\" Gadric's favorite delicacy during tavern nights with friends. In another life, would he have a lighter heart for such simple indulgences?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "20",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100210": {
       "m_bError": null,
@@ -3420,7 +3657,8 @@
       "m_mItemDesc3": "\"A violin forgotten by time and space. Bizarrely shaped, yet it served \"dark nursery composer\" Acappella best in crafting her works. In another life, wandering the streets without a home, would she still yearn for a place to belong—while music remained her most delightful companion?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "21",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100220": {
       "m_bError": null,
@@ -3450,7 +3688,8 @@
       "m_mItemDesc3": "\"A chronometer forgotten by time and space. This intricate device helped the \"alchemist\" Seth transform oracles into symbols for study. In another life, would she ever find the power in her lifelong research to shape the world?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "22",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100230": {
       "m_bError": null,
@@ -3480,7 +3719,8 @@
       "m_mItemDesc3": "\"Ritual implements forgotten by time and space. Essential tools for the \"village witch\" Dalcarlo to commune with spirits. In another life, would she have glimpsed an alternate fate—one where she became an elder in the castle—during her divinations?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "23",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100270": {
       "m_bError": null,
@@ -3510,7 +3750,8 @@
       "m_mItemDesc3": "\"A coffin forgotten by time and space. The messy doodles on the wood are evidence of \"queen of the playground\" Piera leading her little friends into playful trouble. In another life, would she have indulged in an innocent childhood, free from the weight of carrying her family's burden?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "24",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100280": {
       "m_bError": null,
@@ -3540,7 +3781,8 @@
       "m_mItemDesc3": "\"A dirk forgotten by time and space. This secret weapon witnessed countless missions carried out by the \"drifter\" Augustine during his life on the run. In another life, would he ponder the endless wandering through time and place—mere coincidences, or part of a greater design?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "25",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100290": {
       "m_bError": null,
@@ -3570,7 +3812,8 @@
       "m_mItemDesc3": "\"A timepiece forgotten by time and space. This fractured device knew well how Aiona, the \"Sorceress of Time,\" bent the flow of time to her will. In another life, would this extraordinarily gifted girl have found the ultimate answers to the universe through her countless experiments?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "26",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100300": {
       "m_bError": null,
@@ -3600,7 +3843,8 @@
       "m_mItemDesc3": "\"Fungi forgotten by time and space. This radiant colony was carefully nurtured by Edina, the \"fungal researcher.\" In another life, would she ever wonder harmony between humanity and the wild as she wielded nature's power?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "27",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100310": {
       "m_bError": null,
@@ -3630,7 +3874,8 @@
       "m_mItemDesc3": "\"Webs forgotten by time and space. Its eerie light was spun into illusions by the \"magician\" Pavana. In another life, would this master of illusions have known she too was caught in the weave of fate?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "28",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100330": {
       "m_bError": null,
@@ -3660,7 +3905,8 @@
       "m_mItemDesc3": "\"Blades forgotten by time and space. Once, they were the lethal instruments of the \"merciless blade\" Nicole. In another life, would she still crave to dance beneath the moonlight, even stripped of dreams and humanity?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "29",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100340": {
       "m_bError": null,
@@ -3690,7 +3936,8 @@
       "m_mItemDesc3": "\"A plaguemask forgotten by time and space. This precious relic was kept safe in a cabinet by \"the town doctor\" Thibault. In another life, where the plague never came, would she have found new meaning in the quiet practice of medicine?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "30",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100350": {
       "m_bError": null,
@@ -3720,7 +3967,8 @@
       "m_mItemDesc3": "\"A chariot forgotten by time and space. Radiating golden brilliance, it was the vessel of Agares as the \"light bearer,\" bestowing light and warmth. In another life, would he yearn for mortal pleasures as he traversed from sky to earth?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "31",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100370": {
       "m_bError": null,
@@ -3750,7 +3998,8 @@
       "m_mItemDesc3": "\"A spear forgotten by time and space. Wrapped in bandages, this weapon bears witness to the countless triumphs over the Calamity by Tris, \"the Bell Ringer of Glory.\" In another life, returning in triumph, would she live without regret?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "32",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100380": {
       "m_bError": null,
@@ -3780,7 +4029,8 @@
       "m_mItemDesc3": "\"A bow forgotten by time and space. This bullhead crossbow witnessed the exceptional marksmanship of Selena, the \"tribal hunter.\" In another life, embraced by the applause of her kin, would she have longed to embark on an unknown adventure?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "33",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100390": {
       "m_bError": null,
@@ -3810,7 +4060,8 @@
       "m_mItemDesc3": "\"A halberd forgotten by time and space. Carrying the aura of sin, it belonged to Noah, the \"phantom Death,\" who was consumed by the Calamity. In another life, burdened by the curse, would he finally break free from the chain of fate?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "34",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100400": {
       "m_bError": null,
@@ -3840,7 +4091,8 @@
       "m_mItemDesc3": "\"Twin guns forgotten by time and space, adorned with beast-heads, the proudest creation by the \"charming rascal\" Van Helsing. In another life, as he reveled in joy and madness, would he finally encounter a worthy adversary?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "35",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100420": {
       "m_bError": null,
@@ -3870,7 +4122,8 @@
       "m_mItemDesc3": "\"A crown forgotten by time and space. Black was the color for Joan, the \"rebel.\" In another life, after toppling the old order, might she have chosen peace to claim her victory?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "36",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100430": {
       "m_bError": null,
@@ -3900,13 +4153,14 @@
       "m_mItemDesc3": "\"A boater hat forgotten by time and space. This eerie relic bore witness to the rightful deaths bestowed by Ottavia, the \"judge.\" In another life, would her devotion to her beliefs have tempered the hatred she held for her sister?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "37",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100450": {
       "m_bError": null,
       "m_ItemID": "20100450",
       "m_ItemGroupID": "4069",
-      "m_mItemName": "\"Butterfly Blades\"",
+      "m_mItemName": "\"\nButterfly Blades\"",
       "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_132\"",
       "m_ItemVolume": "[[1,1],[1,1]]",
       "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid12\"",
@@ -3930,7 +4184,8 @@
       "m_mItemDesc3": "\"A butterfly knife forgotten by time and space. Carrying the aura of sin, it belonged to Hati, the \"Plague Bearer,\" who sealed the Calamity within herself. In another life, after conquering the Calamity, would she have endured the excruciating pain caused by the Black Blood within?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "38",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100470": {
       "m_bError": null,
@@ -3960,7 +4215,8 @@
       "m_mItemDesc3": "\"Branches forgotten by time and space. Seemingly ordinary, yet it was part of Yggdrasill, the \"world tree.\" In another life, would he have remained detached from the world, or longed for power over it?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "39",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100480": {
       "m_bError": null,
@@ -3990,7 +4246,8 @@
       "m_mItemDesc3": "\"A jellyfish forgotten by time and space. These red and black aquatic creatures were the cherished pets of Ami, the \"head of Landis.\" In another life, as she led her family through the Calamity, would she have realized she unleashed a power that could be a curse?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "40",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100490": {
       "m_bError": null,
@@ -4020,7 +4277,8 @@
       "m_mItemDesc3": "\"A great axe forgotten by time and space. Its stunning color was meticulously crafted by a blacksmith for Baphomet, the \"new noble.\" In another life, would this newly fashioned noble have discovered another way to protect his family's legacy?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "41",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100500": {
       "m_bError": null,
@@ -4050,7 +4308,8 @@
       "m_mItemDesc3": "\"A grave of sword forgotten by time and space. In another life, where the Calamity never struck, and the \"other gravekeeper\" Clive never had the need to draw the great blade, would he have become friends with that silver-haired traveler?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "42",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100510": {
       "m_bError": null,
@@ -4080,7 +4339,8 @@
       "m_mItemDesc3": "\"A wolf head forgotten by time and space. These brutal offerings were symbols of power for Clive Jr., the \"alpha wolf.\" In another life, would he have found someone worthy of his absolute power to protect?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "43",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100520": {
       "m_bError": null,
@@ -4110,7 +4370,8 @@
       "m_mItemDesc3": "\"A crossbow forgotten by time and space. Its unique design reflected the distinctive taste of the \"seafaring tycoon\" Goldland. In another life, unburdened by his duty to revive his family's name, would he find pure joy in the endless expanse of the ocean?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "44",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20100570": {
       "m_bError": null,
@@ -4140,7 +4401,132 @@
       "m_mItemDesc3": "\"A hunting ground forgotten by time and space. Its eerie scent of blood marked how Limine, the \"Dracula's daughter, \" turned the land into a bloodbath. In another life, would she find fulfillment in the endless power and immortality she sought, after realizing her ambitions?\"",
       "m_HandbookType": "1",
       "m_HandbookOrder": "45",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "20100640": {
+      "m_bError": null,
+      "m_ItemID": "20100640",
+      "m_ItemGroupID": "4077",
+      "m_mItemName": "\"Siren's Blood\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_150\"",
+      "m_ItemVolume": "[[1,1,1],[0,1,0]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid20\"",
+      "m_MaskIcon": "\"\"",
+      "m_ItemType": "2",
+      "m_ItemSubType": "201",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3],[28,2500,0],[5,1000,0]]",
+      "m_Skill": null,
+      "m_Character": "20640",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"In her Siren Form, Lorelei deals cone-shaped AoE damage with both her Basic Attack and Special.\"",
+      "m_mItemDesc3": "\"The blood of a siren, left at the convergence of realms. They gathered around her, collecting every drop that she shed. Her tears ran black, filled with longing for home. In that place where Sapphire Isle sank beneath the waves, for whom do her tears fall?\"",
+      "m_HandbookType": "1",
+      "m_HandbookOrder": "46",
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "20100650": {
+      "m_bError": null,
+      "m_ItemID": "20100650",
+      "m_ItemGroupID": "4078",
+      "m_mItemName": "\"Noble's Crossbow\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_148\"",
+      "m_ItemVolume": "[[0,1,0],[1,1,1],[0,1,0]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid23\"",
+      "m_MaskIcon": "\"\"",
+      "m_ItemType": "2",
+      "m_ItemSubType": "201",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,3000,3],[26,1000,0],[16,1000,0]]",
+      "m_Skill": null,
+      "m_Character": "20650",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"Jinxed Selena's Ultimate updated: Observes enemies in a select range, dealing DMG to all enemies within the area.\"",
+      "m_mItemDesc3": "\"A noble's crossbow, left at the convergence of realms. The bow is exquisite, carved with lavish yet impractical decorations and patterns. More a display of wealth than a weapon. In that place where she became nobility, can she still recall her days of impoverishment?\"",
+      "m_HandbookType": "1",
+      "m_HandbookOrder": "47",
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "20100660": {
+      "m_bError": null,
+      "m_ItemID": "20100660",
+      "m_ItemGroupID": "4079",
+      "m_mItemName": "\"Forgotten Vow\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_147\"",
+      "m_ItemVolume": "[[1,1],[1,1]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid12\"",
+      "m_MaskIcon": "\"\"",
+      "m_ItemType": "2",
+      "m_ItemSubType": "201",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3],[43,500,0],[28,1500,0],[5,1000,0]]",
+      "m_Skill": null,
+      "m_Character": "20660",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"When possessed by Fleeting Bella, both instance of extra DMG and DMG dealt increase for the Basic ATK.\"",
+      "m_mItemDesc3": "\"A conch shell, left at the convergence of realms. The beautiful shell bears the marks of time and tide. In that place where she became a puppet, can she still recall the promise they made on the beach?\"",
+      "m_HandbookType": "1",
+      "m_HandbookOrder": "48",
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
+    },
+    "20100700": {
+      "m_bError": null,
+      "m_ItemID": "20100700",
+      "m_ItemGroupID": "4080",
+      "m_mItemName": "\"Blood-Smeared Cloak\"",
+      "m_ItemIcon": "\"Atlas_Rouge/zhuanwu_149\"",
+      "m_ItemVolume": "[[1,1],[1,1]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid12\"",
+      "m_MaskIcon": "\"\"",
+      "m_ItemType": "2",
+      "m_ItemSubType": "201",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[24,4000,3],[26,2500,0],[5,1000,0],[16,1500,0]]",
+      "m_Skill": null,
+      "m_Character": "20700",
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": null,
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"If Sirene has Dark Intentions, she will only use her Special and releases an additional shadowed spirit at a random enemy for each stack of Festering Desire she has.\"",
+      "m_mItemDesc3": "\"A Blood-Smeared Cloak, left at the convergence of realms. The scorch marks and bloodstains on the cloak tell tales of a brutal Holy War. In that place where she stands undefeated on the battlefield, does she still long for peace?\"",
+      "m_HandbookType": "1",
+      "m_HandbookOrder": "49",
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200001": {
       "m_bError": null,
@@ -4170,7 +4556,8 @@
       "m_mItemDesc3": "\"A dark, bitter liquid that keeps one alert through the night. Would likely fetch a good price among night watchmen and ascetics.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "5",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 1\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 1\"",
+      "m_HideType": null
     },
     "20200002": {
       "m_bError": null,
@@ -4200,7 +4587,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200003": {
       "m_bError": null,
@@ -4230,7 +4618,8 @@
       "m_mItemDesc3": "\"A weapon that fits in the palm. When unfolded, it becomes a fan with razor edges. Favored by eastern assassins, it reaps souls in silence.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "1",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200004": {
       "m_bError": null,
@@ -4260,7 +4649,8 @@
       "m_mItemDesc3": "\"A syringe with silver spikes. In the hands of The Peace Council, it would be a perfect instrument for drawing blood.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "2",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200005": {
       "m_bError": null,
@@ -4290,7 +4680,8 @@
       "m_mItemDesc3": "\"A container filled with black powder brought from the east by the El Dorado. A single spark is enough to unleash earth-shattering power.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "3",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200006": {
       "m_bError": null,
@@ -4316,11 +4707,12 @@
       "m_EffectRangeValue": "[]",
       "m_Quality": "1",
       "m_mItemDesc1": "\"\"",
-      "m_mItemDesc2": "\"Has a chance of triggering chain lightning on up to 3 targets when hitting enemies in range with Basic ATKs. Increased trigger chance, +3 targets, each with a chance for secondary DMG.\"",
+      "m_mItemDesc2": "\"A chance to trigger a chain lightning effect on up to 3 targets, upon hitting enemies with ranged Basic ATKs. Increased trigger chance, +3 targets, each with a chance for secondary.\"",
       "m_mItemDesc3": "\"A glasswork device, handcrafted with care.\nSomeone once tried to trap light inside—only to catch a fleeting rainbow instead.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "9",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 7\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 7\"",
+      "m_HideType": null
     },
     "20200007": {
       "m_bError": null,
@@ -4350,7 +4742,8 @@
       "m_mItemDesc3": "\"A flaming rock fell from the sky. Is it Aeon's divine punishment, or a harbinger of disaster?\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "6",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 2\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 2\"",
+      "m_HideType": null
     },
     "20200008": {
       "m_bError": null,
@@ -4380,7 +4773,8 @@
       "m_mItemDesc3": "\"A peculiar wooden device that lifts one up in the sky. One shudders to think what eccentrics the Hermetic Order might make with it.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "4",
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200009": {
       "m_bError": null,
@@ -4410,7 +4804,8 @@
       "m_mItemDesc3": "\"A stone altar adorned with candlelight, surrounded by beast heads. Is it a magic circle, or a heretic's sacrifice?\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "8",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 4\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 4\"",
+      "m_HideType": null
     },
     "20200010": {
       "m_bError": null,
@@ -4440,7 +4835,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200011": {
       "m_bError": null,
@@ -4470,7 +4866,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200012": {
       "m_bError": null,
@@ -4500,7 +4897,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200013": {
       "m_bError": null,
@@ -4530,7 +4928,8 @@
       "m_mItemDesc3": "\"A barrel filled with the nectar of joy. A single taste of euphoria, enough to intoxicate and ease sleepless nights.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "12",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 6\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 6\"",
+      "m_HideType": null
     },
     "20200014": {
       "m_bError": null,
@@ -4560,7 +4959,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200015": {
       "m_bError": null,
@@ -4590,7 +4990,8 @@
       "m_mItemDesc3": "\"An insect with a demonic appearance. It explodes when startled, releasing repulsive fumes. A true creation of the abyss.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200016": {
       "m_bError": null,
@@ -4620,7 +5021,8 @@
       "m_mItemDesc3": "\"A tissue that binds mother and child. The sisters of the Peace Council deem it a vessel of life, often crafting it into amulets.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200017": {
       "m_bError": null,
@@ -4650,7 +5052,8 @@
       "m_mItemDesc3": "\"A clay instrument with small holes. When the right tune is played, strange phenomena seem to awaken.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "10",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 5\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 5\"",
+      "m_HideType": null
     },
     "20200018": {
       "m_bError": null,
@@ -4680,7 +5083,8 @@
       "m_mItemDesc3": "\"A defensive structure. It's the final line of defense against enemies.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200019": {
       "m_bError": null,
@@ -4710,7 +5114,8 @@
       "m_mItemDesc3": "\"A barricade armed with sharp barbs, a strong defense to ward off Blood Beasts.\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20200020": {
       "m_bError": null,
@@ -4740,7 +5145,8 @@
       "m_mItemDesc3": "\"A complex mechanical device.\nInspired by an engineer's nightmare, some speculated he dreamed of hellfire raining from the sky.\nIn fact, it was just a dream about complicated parabolic formulas.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "11",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 8\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 8\"",
+      "m_HideType": null
     },
     "20300001": {
       "m_bError": null,
@@ -4766,11 +5172,12 @@
       "m_EffectRangeValue": "[]",
       "m_Quality": "1",
       "m_mItemDesc1": "\"\"",
-      "m_mItemDesc2": "\"Card skill that deals fixed AoE DMG in a select area. Initial energy cost is 8, but reduces by 1 for every 20 monsters eliminated, while increasing DMG by 1.\"",
+      "m_mItemDesc2": "\"Card skill that deals fixed AoE DMG in a select area. Initial energy cost is 8, but reduces by 1 for every 20 monsters eliminated, while increasing DMG.\"",
       "m_mItemDesc3": "\"A peculiar device prone to sudden explosions. In the wrong hands, the consequences are unthinkable.\"",
       "m_HandbookType": "2",
       "m_HandbookOrder": "7",
-      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 3\""
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 3\"",
+      "m_HideType": null
     },
     "20300002": {
       "m_bError": null,
@@ -4800,7 +5207,8 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     },
     "20300003": {
       "m_bError": null,
@@ -4830,8 +5238,9 @@
       "m_mItemDesc3": "\"Reserved String\"",
       "m_HandbookType": null,
       "m_HandbookOrder": null,
-      "m_mUnlockText": "\"\""
+      "m_mUnlockText": "\"\"",
+      "m_HideType": null
     }
   },
-  "status": "processed_161_items"
+  "status": "processed_169_items"
 }

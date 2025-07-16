@@ -1,6 +1,6 @@
 {
   "className": "CData_DungeonChapter",
-  "timestamp": "2025-07-08T13:35:33.426Z",
+  "timestamp": "2025-07-16T14:14:05.010Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -127,7 +127,28 @@
       "m_Animator": "\"Ani_M_Ainosoracle_Base_dungeon\"",
       "m_mBossName": "\"Phantom of Aeon\"",
       "m_SoundID": "279"
+    },
+    "7": {
+      "m_bError": null,
+      "m_LevelSubType": "7",
+      "m_mName": "\"Seed of War\"",
+      "m_mDesc": "\"As the torchlight faded, his fervent soul cooled with it. Peace remained a distant dream—only war loomed on the horizon.\"",
+      "m_UnlockConditionType": "[1]",
+      "m_UnlockConditionData": "[1116080]",
+      "m_Order": "4",
+      "m_Hide": null,
+      "m_Jump": "15",
+      "m_Rotation": "3",
+      "m_mNameList": "\"Restless Spirit Ⅱ\"",
+      "m_HeroHeartIcon": "\"Atlas_HeroHeat/boss_equip_6\"",
+      "m_mHeroHeartText": "\"Restless Spirit Ⅱ - The Beguiler's Torch\"",
+      "m_MonsterTypeID": "[2,4]",
+      "m_Point": "\"3DUI_Faust_Last\"",
+      "m_Model": "\"M_Faust_Last\"",
+      "m_Animator": "\"Ani_M_Faust_Last_dungeon\"",
+      "m_mBossName": "\"The Beguiler's Torch\"",
+      "m_SoundID": "159"
     }
   },
-  "status": "processed_6_items"
+  "status": "processed_7_items"
 }

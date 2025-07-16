@@ -1,6 +1,6 @@
 {
   "className": "CData_GachaTemplate",
-  "timestamp": "2025-07-08T13:35:34.111Z",
+  "timestamp": "2025-07-16T14:14:05.723Z",
   "data": {
     "100": {
       "_type": "nested_dictionary",
@@ -77,6 +77,36 @@
         }
       }
     },
+    "1004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1004",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[4001,4001,4001,4001,4001,4001,4001,4001,4001,4001]"
+        }
+      }
+    },
+    "1005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1005",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[5001,5001,5001,5001,5001,5001,5001,5001,5001,5001]"
+        }
+      }
+    },
     "9999999": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -93,5 +123,5 @@
       }
     }
   },
-  "status": "processed_6_items"
+  "status": "processed_8_items"
 }

@@ -1,11 +1,11 @@
 {
   "className": "CData_InitLangTxt",
-  "timestamp": "2025-07-08T13:35:35.022Z",
+  "timestamp": "2025-07-16T14:14:06.558Z",
   "data": {
     "\"InitShaders\"": {
       "m_bError": null,
       "m_Index": "\"InitShaders\"",
-      "m_Name": "\"##6:初始化着色器...<br><alpha=#50>首次启动时间可能较长，请耐心等待。##10:Initializing shaders...<br><alpha=#50>First launch may take longer than usual. Please be patient.##14:Initialisation des shaders...<br><alpha=#50>Le premier lancement peut prendre plus de temps que d'habitude. Merci de patienter.##15:Shader werden initialisiert...<br><alpha=#50>Der erste Start kann länger dauern als gewöhnlich. Bitte habe etwas Geduld.##22:シェーダーを初期化中...<br><alpha=#50>初回起動には時間がかかる場合があります。しばらくお待ちください。##23:셰이더 초기화 중...<br><alpha=#50>최초 실행 시 시간이 다소 소요될 수 있으니 잠시만 기다려 주세요.##34:Iniciando sombreadores...<br><alpha=#50>El primer inicio puede tardar más de lo normal. Por favor, ten paciencia.##36:กำลังเตรียมเชดเดอร์...<br><alpha=#50>การเปิดใช้งานครั้งแรกอาจใช้เวลานานกว่าปกติ โปรดรอสักครู่##41:初始化著色器……<br><alpha=#50>首次啟動時間可能較長，請耐心等待。\""
+      "m_Name": "\"##6:初始化着色器...<br><alpha=#50>首次启动时间可能较长，请耐心等待。##10:Initializing shaders...<br><alpha=#50>First launch may take longer than usual. Please be patient.##14:Initialisation des nuanceurs...<br><alpha=#50>Le premier lancement peut prendre plus de temps que d'habitude. Merci de patienter.##15:Shader werden initialisiert ... <br><alpha=#50>Der Erststart kann länger dauern als gewohnt. Bitte habe etwas Geduld.##22:シェーダーを初期化中...<br><alpha=#50>初回起動には時間がかかる場合があります。しばらくお待ちください。##23:셰이더 초기화 중...<br><alpha=#50>최초 실행 시 시간이 다소 소요될 수 있으니 잠시만 기다려 주세요.##34:Iniciando sombreadores...<br><alpha=#50>El primer inicio puede tardar más de lo normal. Ten paciencia.##36:กำลังเริ่มต้นเชดเดอร์...<br><alpha=#50>การเริ่มครั้งแรกอาจใช้เวลานานกว่าปกติ โปรดรอสักครู่##41:初始化著色器……<br><alpha=#50>首次啟動時間可能較長，請耐心等待。\""
     },
     "\"WinGameName\"": {
       "m_bError": null,
@@ -65,27 +65,27 @@
     "\"PlayerProtocolContent\"": {
       "m_bError": null,
       "m_Index": "\"PlayerProtocolContent\"",
-      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping agree, you acknowledge the content of these terms. By tapping refuse, you will be unable to proceed.##14:Merci de soutenir L'Argent et le Sang ! Nous vous demandons de lire le Contrat d'utilisation et la Politique de confidentialité suivants avant de continuer. En appuyant sur accepter, vous reconnaissez le contenu de ces conditions. En appuyant sur refuser, vous ne pourrez pas continuer.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgenden Nutzungsbedingungen und Datenschutzrichtlinien, bevor du fortfährst. Durch Tippen auf „Zustimmen“ bestätigst du, dass du die Inhalte dieser Bedingungen zur Kenntnis genommen hast. Wenn du auf „Ablehnen“ tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar _$$Silver and Blood_$$! Te pedimos que leas el siguiente Acuerdo de Usuario y la Política de Privacidad antes de continuar. Al pulsar aceptar, reconoces el contenido de estos términos. Al pulsar rechazar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน Silver and Blood ขอความกรุณาอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกดยอมรับ หมายถึงท่านรับทราบเนื้อหาของข้อตกลงเหล่านี้ การกดปฏิเสธ จะทำให้ท่านไม่สามารถดำเนินการต่อได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
+      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge the content of these terms. By tapping Cancel, you will be unable to proceed.##14:Merci de soutenir L'Argent et le Sang ! Veuillez lire les Conditions d'utilisation et la Politique de confidentialité suivantes avant de continuer. En appuyant sur Accepter, vous acceptez le contenu de ces conditions. Si vous appuyez sur Refuser, vous ne pourrez pas aller plus loin.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgende Nutzungsvereinbarung und Datenschutzerklärung durch, bevor du fortfährst. Indem du auf Zustimmen tippst, bestätigst du, dass du den Inhalt dieser Bedingungen verstanden hast. Wenn du auf Ablehnen tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar Silver and Blood! Te pedimos que leas el siguiente Acuerdo de Usuario y la Política de Privacidad antes de continuar. Al pulsar Confirmar, reconoces el contenido de estos términos. Al pulsar Cancelar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน 'Silver and Blood' ขอความกรุณาท่านโปรดอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกด 'ยอมรับ' จะหมายถึงท่านได้รับทราบเนื้อหาของข้อตกลงเหล่านี้แล้ว การกด 'ปฏิเสธ' จะทำให้ท่านไม่สามารถดำเนินการต่อไปได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
     },
     "\"PlayerUserToggle\"": {
       "m_bError": null,
       "m_Index": "\"PlayerUserToggle\"",
-      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/zh.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>User Agreement</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Contrat d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/de.html><#b2452b><u>Nutzungsbedingungen</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ja.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ko.html><#b2452b><u>이용 약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Acuerdo de Usuario</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>ข้อตกลงผู้ใช้</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/tc.html><#b2452b><u>服務條款</u></color></link>\""
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/zh.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>User Agreement</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Conditions d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Nutzungsvereinbarung</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ja.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/ko.html><#b2452b><u>이용 약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>Acuerdo de usuario</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>ข้อตกลงผู้ใช้</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/tc.html><#b2452b><u>服務條款</u></color></link>\""
     },
     "\"PlayerPrivacyToggle\"": {
       "m_bError": null,
       "m_Index": "\"PlayerPrivacyToggle\"",
-      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/zh.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/de.html><#b2452b><u>Datenschutzrichtlinien</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ja.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ko.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Política de Privacidad</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/tc.html><#b2452b><u>隱私權政策</u></color></link>\""
+      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/zh.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Datenschutzerklärung</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ja.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/ko.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Política de privacidad</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/tc.html><#b2452b><u>隱私權政策</u></color></link>\""
     },
     "\"PlayerAgeToggle\"": {
       "m_bError": null,
       "m_Index": "\"PlayerAgeToggle\"",
-      "m_Name": "\"##6:我已满13周岁##10:I am 13 years or older.##14:J'ai 13 ans ou plus.##15:Ich bin 13 Jahre oder älter.##22:私は13歳以上です##23:만 14세 이상입니다.##34:Tengo 13 años o más.##36:ข้าพเจ้ามีอายุ 13 ปี หรือมากกว่า##41:我已滿13歲\""
+      "m_Name": "\"##6:我已满13周岁##10:I am 13 years or older.##14:J'ai 13 ans ou plus.##15:Ich bin 13 Jahre oder älter.##22:私は13歳以上です##23:만 14세 이상입니다.##34:Tengo 13 años o más.##36:ข้าพเจ้ามีอายุ 13 ปีขึ้นไป##41:我已滿13歲\""
     },
     "\"PlayerProtocolTitle\"": {
       "m_bError": null,
       "m_Index": "\"PlayerProtocolTitle\"",
-      "m_Name": "\"##6:用户协议和隐私协议提示##10:User Agreement and Privacy Policy Notice##14:Conditions d'utilisation et confidentialité##15:Hinweis zu Nutzungsvereinbarung und Datenschutzerklärung##22:利用規約とプライバシーポリシー##23:이용약관 및 개인정보 처리방침 안내##34:Aviso del acuerdo de usuario y política de privacidad##36:ข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัว##41:服務條款和隱私權政策提示\""
+      "m_Name": "\"##6:用户协议和隐私协议提示##10:User Agreement and Privacy Policy Notice##14:Avis de conditions d'utilisation et politique de confidentialité##15:Hinweis zur Nutzungsvereinbarung und Datenschutzerklärung##22:利用規約とプライバシーポリシー##23:이용약관 및 개인정보 처리방침 안내##34:Aviso del acuerdo de usuario y política de privacidad##36:ข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัว##41:服務條款和隱私權政策提示\""
     },
     "\"PlayerProtocolYes\"": {
       "m_bError": null,
@@ -95,7 +95,7 @@
     "\"PlayerProtocolNo\"": {
       "m_bError": null,
       "m_Index": "\"PlayerProtocolNo\"",
-      "m_Name": "\"##6:取消##10:Cancel##14:Annuler##15:Abbrechen##22:いいえ##23:취소##34:Cancelar##36:ยกเลิก##41:取消\""
+      "m_Name": "\"##6:一键勾选##10:Select All##14:Tout sélectionner##15:Alle auswählen##22:一括チェック##23:일괄 선택##34:Seleccionar todo##36:เลือกหมดเลย##41:全部勾選\""
     },
     "\"PlayerProtocolConfirmWarning\"": {
       "m_bError": null,
@@ -115,17 +115,17 @@
     "\"PlayerCenterAccountBindDesc\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountBindDesc\"",
-      "m_Name": "\"\"##6:点击下方按钮可绑定您的第三方账户。如果您需要切至已有账号，可以选择“游客登录”，在开始游戏前通过右上角的 [用户中心] 进行账户切换。##10:Tap the button below to bind your third-party account. If you need to switch to a bound account, you can select \"\"Guest Login\"\" and switch accounts through the [User Center] in the top-right corner before starting the game.##14:Appuyez sur le bouton ci-dessous pour lier votre compte tiers. Si vous devez basculer vers un compte existant, vous pouvez sélectionner « Connexion invité » et changer de compte via le [Centre utilisateur] dans le coin supérieur droit avant de commencer le jeu.##15:Tippe auf die Schaltfläche unten, um dein Drittanbieter-Konto zu verknüpfen. Wenn du zu einem bestehenden Konto wechseln musst, kannst du \"\"Gast-Login\"\" auswählen und vor Spielstart über das [Nutzerzentrum] in der oberen rechten Ecke zwischen Konten wechseln.##22:下のボタンから外部アカウントを連携できます。既存のアカウントを使う場合は「ゲストログイン」を選択し、【ゲームログイン画面】右上の「ユーザーセンター」からアカウントを切り替えてください。##23:아래 버튼을 터치하여 서드파티 계정을 연동할 수 있습니다. 기존 계정으로 전환하려면 \"\"게스트 로그인\"\"을 선택한 후, 게임 시작 전 우상단의 [사용자 센터]에서 계정을 전환하세요.##34:Toca el botón de abajo para vincular tu cuenta de terceros. Si necesitas cambiar a una cuenta vinculada, puedes seleccionar ‘Acceso de invitado’y cambiar de cuenta desde el ‘Centro de usuarios’ en la esquina superior derecha antes de iniciar el juego.##36:กดปุ่มด้านล่างเพื่อผูกมัดบัญชีบุคคลที่สามของท่าน หากท่านต้องการเปลี่ยนไปใช้บัญชีที่มีอยู่แล้ว ท่านสามารถเลือก \"\"Guest Login\"\" และเปลี่ยนบัญชีผ่าน [User Center] ที่มุมขวาบนก่อนเริ่มเกม##41:點擊下方按鈕可綁定您的第三方帳戶。如果您需要切至已有帳號，可以選擇「遊客登入」，在開始遊戲前透過右上角的[用戶中心]進行帳戶切換。\"\""
+      "m_Name": "\"\"##6:点击下方按钮可绑定您的第三方账户。如果您需要切至已有账号，可以选择“游客登录”，在开始游戏前通过右上角的 [用户中心] 进行账户切换##10:Tap below to bind your third-party accounts. Should you need to switch to an existing game account, you can select \"\"Guest Login\"\" and switch accounts through [User Center] in the upper right corner before starting the game.##14:Appuyez ci-dessous pour lier vos comptes tiers. Si vous devez passer à un compte de jeu existant, vous pouvez sélectionner \"\"Connexion invité\"\" et changer de compte via le [Centre utilisateur] dans le coin supérieur droit avant de commencer le jeu.##15:Tippe unten, um deine Drittanbieter-Konten zu verknüpfen. Wenn du zu einem vorhandenen Spielkonto wechseln musst, wähle „Gast-Login“ aus und wechsle über das [Nutzerzentrum] oben rechts das Konto, bevor du dem Spiel beitrittst.##22:下のボタンから外部アカウントを連携できます。既存のアカウントを使う場合は「ゲストログイン」を選択し、【ゲームログイン画面】右上の「ユーザーセンター」からアカウントを切り替えてください。##23:아래 버튼을 눌러 제3자 계정을 연동하세요. 기존 계정으로 전환하려면 '게스트 로그인' 후, 게임 시작 전 우측 상단의 [사용자 센터]에서 진행하실 수 있습니다.##34:Toca abajo para vincular tus cuentas de terceros. Si necesitas cambiar a una cuenta de juego existente, puedes seleccionar \"\"Continuar como invitado\"\" y cambiar de cuenta a través del [Centro de usuario] en la esquina superior derecha antes de iniciar el juego.##36:กดที่ด้านล่างนี้เพื่อผูกบัญชีบุคคลที่สามของท่าน หากท่านต้องการสลับไปยังบัญชีเกมที่มีอยู่แล้ว ท่านสามารถเลือก \"\"ล็อกอินแบบผู้เยี่ยมชม\"\" และทำการสลับบัญชีผ่านทาง [ศูนย์ผู้ใช้] ได้ตรงมุมขวาบน ก่อนที่จะเริ่มเกม##41:點擊下方按鈕可綁定您的其他第三方帳戶。如果您需要切換至已有帳號，可以選擇「訪客登入」，在開始遊戲前透過右上角的 [用戶中心] 進行帳戶切換。\"\""
     },
     "\"PlayerCenterAccountBindFacebook\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountBindFacebook\"",
-      "m_Name": "\"##6:绑定Facebook##10:Bind Facebook##14:Lier Facebook##15:Facebook binden##22:Facebookで連携##23:Facebook 연동##34:Vincular Facebook##36:ผูกมัด Facebook##41:綁定Facebook\""
+      "m_Name": "\"##6:绑定Facebook##10:Bind Facebook##14:Lier Facebook##15:Facebook verknüpfen##22:Facebookで連携##23:Facebook 연동##34:Vincular Facebook##36:ผูกกับ Facebook##41:綁定Facebook\""
     },
     "\"PlayerCenterAccountBindGoogle\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountBindGoogle\"",
-      "m_Name": "\"##6:绑定Google##10:Bind Google##14:Lier Google##15:Google binden##22:Googleで連携##23:Google 연동##34:Vincular Google##36:ผูกมัด Google##41:綁定Google\""
+      "m_Name": "\"##6:绑定Google##10:Bind Google##14:Lier Google##15:Google verknüpfen##22:Googleで連携##23:Google 연동##34:Vincular Google##36:ผูกกับ Google##41:綁定Google\""
     },
     "\"PlayerCenterAccountBindGuest\"": {
       "m_bError": null,
@@ -155,7 +155,7 @@
     "\"LoginCheckUpgradeForce\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeForce\"",
-      "m_Name": "\"##6:检测到版本强更新，请领主大人点击下载按钮，移步至应用商店下载并安装新客户端##10:Mandatory update detected. Please tap [Download] and install the new client from the app store.##14:Mise à jour obligatoire détectée. Veuillez toucher « Télécharger » et installer le nouveau client depuis la boutique d'applications.##15:Ein notwendiges Update ist da. Bitte tippe auf [Herunterladen] und installiere den neuen Client aus dem App-Store.##22:大型のアップデートがあります。ダウンロードボタンをタップして、ストアにてゲームアプリを更新してください##23:버전 업데이트가 감지되었습니다. 다운로드 버튼을 터치하여 앱스토어로 이동해 새로운 클라이언트를 다운로드 및 설치해 주세요.##34:Se ha detectado una actualización obligatoria. Pulsa [Descargar] e instala el nuevo cliente en la tienda de aplicaciones.##36:ตรวจพบการอัปเดตที่จำเป็น โปรดกดตรง [ดาวน์โหลด] และติดตั้งไคลเอนต์ใหม่จากร้านค้าแอป##41:偵測到版本強制更新，請領主大人點擊下載按鈕，前往應用程式商店下載並安裝新的用戶端\""
+      "m_Name": "\"##6:检测到版本强更新，请领主大人点击下载按钮，移步至应用商店下载并安装新客户端##10:Mandatory update detected. Please tap [Download] and install the new client from the app store.##14:Mise à jour obligatoire détectée. Veuillez appuyer « Télécharger » et installer le nouveau client depuis la boutique d'applications.##15:Ein notwendiges Update ist da. Bitte tippe auf [Herunterladen] und installiere den neuen Client aus dem App-Store.##22:大型のアップデートがあります。ダウンロードボタンをタップして、ストアにてゲームアプリを更新してください##23:버전 업데이트가 감지되었습니다. 다운로드 버튼을 터치하여 앱스토어로 이동해 새로운 클라이언트를 다운로드 및 설치해 주세요.##34:Se ha detectado una actualización obligatoria. Pulsa [Descargar] e instala el nuevo cliente en la tienda de aplicaciones.##36:ตรวจพบการอัปเดตที่จำเป็น โปรดกดตรง [ดาวน์โหลด] และติดตั้งไคลเอนต์ใหม่จากร้านค้าแอป##41:偵測到版本強制更新，請領主大人點擊下載按鈕，前往應用程式商店下載並安裝新的用戶端\""
     },
     "\"CommonDownload\"": {
       "m_bError": null,
@@ -190,7 +190,7 @@
     "\"LoginMiniPatchUpgradeDownloadFail\"": {
       "m_bError": null,
       "m_Index": "\"LoginMiniPatchUpgradeDownloadFail\"",
-      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
+      "m_Name": "\"\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\"\""
     },
     "\"CommonConfirm\"": {
       "m_bError": null,
@@ -200,7 +200,7 @@
     "\"InitTGRPAddResNotEnoughSpace\"": {
       "m_bError": null,
       "m_Index": "\"InitTGRPAddResNotEnoughSpace\"",
-      "m_Name": "\"##6:存储空间不足。更新共需{total_size}存储空间，设备剩余存储空间为{available_size}。请释放至少{needed_size}的存储空间后重试。##10:Insufficient storage. Update requires {total_size} of storage, but your device only has {available_size} available. Please free up (at least) {needed_size} of storage and try again.##14:Espace de stockage insuffisant. La mise à jour requiert {total_size} d'espace libre, mais votre appareil ne dispose que de {available_size}. Veuillez libérer au moins {needed_size} d'espace et réessayez.##15:Nicht genügend Speicherplatz. Das Update benötigt {total_size} Speicherplatz, aber auf deinem Gerät sind nur {available_size} verfügbar. Bitte schaffe mindestens {needed_size} Speicherplatz und versuche es erneut.##22:ストレージ容量が足りません。アップデートには合計 {total_size} のストレージが必要ですが、デバイスの空き容量は {available_size} です。 {needed_size} 以上のストレージを空けてから、もう一度お試しください。##23:저장 공간이 부족합니다. 업데이트에는 총 {total_size}의 저장 공간이 필요하며, 현재 기기의 남은 저장 공간은 {available_size}입니다. 저장 공간을 {needed_size} 이상 확보하고 다시 시도해 주세요.##34:Espacio insuficiente. La actualización requiere {total_size} de almacenamiento, pero tu dispositivo solo tiene {available_size} disponibles. Libera (al menos) {needed_size} de almacenamiento y vuelve a intentarlo.##36:พื้นที่เก็บข้อมูลไม่เพียงพอ การอัปเดตจะต้องใช้พื้นที่เก็บข้อมูล {total_size} แต่อุปกรณ์ของท่านมีเพียง {available_size} โปรดเพิ่มพื้นที่ (อย่างน้อย) {needed_size} แล้วลองใหม่อีกครั้ง##41:儲存空間不足。更新共需 {total_size} 儲存空間，裝置剩餘儲存空間為 {available_size}。請釋放至少 {needed_size} 的儲存空間後再重試\""
+      "m_Name": "\"\"##6:存储空间不足。更新共需{total_size}存储空间，设备剩余存储空间为{available_size}。请释放至少{needed_size}的存储空间后重试。##10:Insufficient storage. Update requires {total_size} of storage, but your device only has {available_size} available. Please free up (at least) {needed_size} of storage and try again.##14:Espace de stockage insuffisant. La mise à jour requiert {total_size} d'espace libre, mais votre appareil ne dispose que de {available_size}. Veuillez libérer au moins {needed_size} d'espace et réessayez.##15:Nicht genügend Speicherplatz. Das Update benötigt {total_size} Speicherplatz, aber auf deinem Gerät sind nur {available_size} verfügbar. Bitte schaffe mindestens {needed_size} Speicherplatz und versuche es erneut.##22:ストレージ容量が足りません。アップデートには合計 {total_size} のストレージが必要ですが、デバイスの空き容量は {available_size} です。 {needed_size} 以上のストレージを空けてから、もう一度お試しください。##23:저장 공간이 부족합니다. 업데이트에는 총 {total_size}의 저장 공간이 필요하며, 현재 기기의 남은 저장 공간은 {available_size}입니다. 저장 공간을 {needed_size} 이상 확보하고 다시 시도해 주세요.##34:Espacio insuficiente. La actualización requiere {total_size} de almacenamiento, pero tu dispositivo solo tiene {available_size} disponibles. Libera (al menos) {needed_size} de almacenamiento y vuelve a intentarlo.##36:พื้นที่เก็บข้อมูลไม่เพียงพอ การอัปเดตจะต้องใช้พื้นที่เก็บข้อมูล {total_size} แต่อุปกรณ์ของท่านมีเพียง {available_size} โปรดเพิ่มพื้นที่ (อย่างน้อย) {needed_size} แล้วลองใหม่อีกครั้ง##41:儲存空間不足。更新共需 {total_size} 儲存空間，裝置剩餘儲存空間為 {available_size}。請釋放至少 {needed_size} 的儲存空間後再重試\"\""
     },
     "\"LoginInitTGRPFail\"": {
       "m_bError": null,
@@ -210,7 +210,7 @@
     "\"StartCheckNetworkFail\"": {
       "m_bError": null,
       "m_Index": "\"StartCheckNetworkFail\"",
-      "m_Name": "\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\""
+      "m_Name": "\"\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\"\""
     },
     "\"LowStorageWarning\"": {
       "m_bError": null,
@@ -240,7 +240,7 @@
     "\"LoginRoleBanDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginRoleBanDesc\"",
-      "m_Name": "\"##6:您的账号已封禁到{0}，如有疑问您可以前往客服处反馈。##10:Your account has been banned until {0}. If you have any questions, you can contact customer service for feedback.##14:Votre compte est banni jusqu'au {0}. En cas de question, adressez-vous au service client pour en savoir plus.##15:Dein Konto wurde bis {0} gesperrt. Falls du Fragen hast, wende dich bitte an den Kundendienst.##22:アカウントは{0}まで制限されています。ご不明な点がございましたら、カスタマーサポートにお問い合わせください。##23:귀하의 계정은 {0}까지 정지되었습니다. 문의 사항은 고객센터로 연락해 주시기 바랍니다.##34:Tu cuenta ha sido bloqueada hasta {0}. Si tienes alguna pregunta, puedes ponerte en contacto con el servicio de atención al cliente para más información.##36:บัญชีของท่านถูกแบนจนถึง {0} หากท่านมีคำถามใด ๆ สามารถติดต่อบริการลูกค้าเพื่อขอข้อมูลเพิ่มเติมได้เสมอ##41:您的帳號已遭封鎖，將持續到{0}，如有疑問可向客服反應\""
+      "m_Name": "\"\"##6:您的账号已封禁到{0}，如有疑问您可以前往客服处反馈。##10:Your account has been banned until {0}. If you have any questions, you can contact customer service for feedback.##14:Votre compte est banni jusqu'au {0}. En cas de question, adressez-vous au service client pour en savoir plus.##15:Dein Konto wurde bis {0} gesperrt. Falls du Fragen hast, wende dich bitte an den Kundendienst.##22:アカウントは{0}まで制限されています。ご不明な点がございましたら、カスタマーサポートにお問い合わせください。##23:귀하의 계정은 {0}까지 정지되었습니다. 문의 사항은 고객센터로 연락해 주시기 바랍니다.##34:Tu cuenta ha sido bloqueada hasta {0}. Si tienes alguna pregunta, puedes ponerte en contacto con el servicio de atención al cliente para más información.##36:บัญชีของท่านถูกแบนจนถึง {0} หากท่านมีคำถามใด ๆ สามารถติดต่อบริการลูกค้าเพื่อขอข้อมูลเพิ่มเติมได้เสมอ##41:您的帳號已遭封鎖，將持續到{0}，如有疑問可向客服反應\"\""
     },
     "\"LoginRoleBanChangeAccount\"": {
       "m_bError": null,
@@ -255,7 +255,7 @@
     "\"LoginDownloadNecessaryResourceFail\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceFail\"",
-      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
+      "m_Name": "\"\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\"\""
     },
     "\"LoginDownloadNecessaryResourceTitle\"": {
       "m_bError": null,
@@ -275,7 +275,7 @@
     "\"LoginDownloadNecessaryResourceTipsForce\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsForce\"",
-      "m_Name": "\"##6:进入领地前需要下载{size}必要资源，请问是否现在开始下载？##10:You need to download {size} of necessary resources before entering your territory. Start downloading now?##14:Certaines ressources du jeu doivent être téléchargées avant de jouer. Veuillez télécharger le pack de ressources le mieux adapté à l'espace de stockage et aux conditions réseau de votre appareil. Des ressources supplémentaires peuvent être téléchargées en arrière-plan pendant le jeu (uniquement disponible en Wi-Fi).##15:Bestimmte Spielressourcen müssen heruntergeladen werden, bevor du spielst. Bitte lade das Ressourcenpaket herunter, das am besten für deinen Gerätespeicher und deine Netzwerkverbindung geeignet ist. Zusätzliche Ressourcen können im Hintergrund heruntergeladen werden, während du spielst (nur mit WLAN verfügbar).##22:領地に入る前に、{size}の必要なリソースをダウンロードする必要があります。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size}의 필수 리소스를 다운로드해야 합니다. 지금 다운로드를 시작하시겠습니까?##34:Hay que descargar unos recursos del juego para poder jugar. Descarga el paquete de recursos más adecuado según el almacenamiento de tu dispositivo y tu conexión de red. Puedes descargar recursos adicionales mientras juegas en segundo plano (solo disponible con wifi).##36:ทรัพยากรเกมบางส่วนจำเป็นต้องดาวน์โหลดก่อนจึงจะสามารถเล่นได้ โปรดดาวน์โหลดแพ็กทรัพยากรที่เหมาะสมกับพื้นที่จัดเก็บข้อมูลของอุปกรณ์ และการเชื่อมต่อเครือข่ายของท่าน โดยสามารถดาวน์โหลดทรัพยากรเพิ่มเติมเบื้องหลังขณะเล่นได้ (ใช้ได้เฉพาะเมื่อเชื่อมต่อ Wi-Fi เท่านั้น)##41:進入領地前需要下載{size}必要檔案，請問是否現在開始下載？\""
+      "m_Name": "\"\"##6:进入领地前需要下载{size}必要资源，请问是否现在开始下载？##10:You need to download {size} of necessary resources before entering your territory. Start downloading now?##14:Vous devez télécharger {size} de ressources nécessaires avant d'entrer dans votre territoire. Commencer le téléchargement maintenant ?##15:Du musst {size} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Jetzt herunterladen?##22:領地に入る前に、{size}の必要なリソースをダウンロードする必要があります。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size}의 필수 리소스를 다운로드해야 합니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size} de recursos necesarios antes de acceder a tu territorio. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size} ก่อนเข้าสู่อาณาเขตของท่าน ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size}必要檔案，請問是否現在開始下載？\"\""
     },
     "\"LoginDownloadNecessaryResourceTipsDownload\"": {
       "m_bError": null,
@@ -285,32 +285,32 @@
     "\"LoginDownloadNecessaryResourceTipsCountDown\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsCountDown\"",
-      "m_Name": "\"##6:倒计时:<color=#b2452b>{count}</color>##10:Countdown: <color=#b2452b>{count}</color>##14:Compte à rebours : <color=#b2452b>{count}</color>##15:Countdown: <color=#b2452b>{count}</color>##22:カウントダウン:<color=#b2452b>{count}</color>##23:남은 시간: <color=#b2452b>{count}</color>##34:Cuenta atrás: <color=#b2452b>{count}</color>##36:นับถอยหลัง: <color=#b2452b>{count}</color>##41:倒數計時：<color=#b2452b>{count}</color>\""
+      "m_Name": "\"##6:倒计时:<color=#b2452b>{count}</color>##10:Countdown: <color=#b2452b>{count}</color>##14:Compte à reb. : <color=#b2452b>{count}</color>##15:Countdown: <color=#b2452b>{count}</color>##22:カウントダウン:<color=#b2452b>{count}</color>##23:남은 시간: <color=#b2452b>{count}</color>##34:Cuenta atrás: <color=#b2452b>{count}</color>##36:นับถอยหลัง: <color=#b2452b>{count}</color>##41:倒數計時：<color=#b2452b>{count}</color>\""
     },
     "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"",
-      "m_Name": "\"##6:进入领地前需要下载{size1}必要资源。后续全量资源较大，为了您有更好的游戏体验，可以选择提前下载{size2}基础资源。请问是否现在开始下载？##10:You need to download {size1} of necessary resources before entering your territory. The remaining resources ({size2}) can be downloaded in advance for a better gaming experience. Start download now?##14:Vous devez télécharger {size1} de ressources nécessaires avant d'entrer dans votre territoire. Les ressources restantes ({size2}) peuvent être téléchargées à l'avance pour une meilleure expérience de jeu. Commencer le téléchargement maintenant ?##15:Du musst {size1} an notwendigen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Die verbleibenden Ressourcen ({size2}) kannst du für ein besseres Spielerlebnis im Voraus herunterladen. Jetzt herunterladen?##22:領地に入る前に、{size1}の必要なリソースをダウンロードする必要があります。また、ゲーム全体のリソース容量が大きいため、より快適にプレイしていただくために、{size2}の基本リソースを事前にダウンロードすることもできます。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size1}의 필수 리소스를 다운로드해야 합니다. 이후 전체 리소스 용량이 크므로 원활한 플레이를 위해 {size2}의 기본 리소스를 미리 다운로드할 수 있습니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size1} de recursos necesarios antes de acceder a tu territorio. Los recursos restantes ({size2}) pueden descargarse por adelantado para una mejor experiencia de juego. ¿Empezar la descarga ahora?##36:ท่านจำเป็นต้องดาวน์โหลดทรัพยากรที่จำเป็น {size1} ก่อนเข้าสู่อาณาเขตของท่าน ส่วนทรัพยากรที่เหลือ ({size2}) สามารถดาวน์โหลดล่วงหน้าเพื่อประสบการณ์การเล่นที่ดียิ่งขึ้น ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size1}必要檔案。後續完整檔案較大，為了讓您有更好的遊戲體驗，可以選擇提前下載{size2}基礎檔案。請問是否現在開始下載？\""
+      "m_Name": "\"\"##6:进入领地前需要下载{size1}必要资源。后续全量资源较大，为了您有更好的游戏体验，可以选择提前下载{size2}基础资源。请问是否现在开始下载？##10:You need to download {size1} of necessary resources before entering your territory. The remaining resources ({size2}) can be downloaded in advance for a better gaming experience. Start download now?##14:Vous devez télécharger {size1} de ressources nécessaires avant d'entrer dans votre territoire. Les ressources restantes ({size2}) peuvent être téléchargées à l'avance pour une meilleure expérience de jeu. Commencer le téléchargement maintenant ?##15:Du musst {size1} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Die verbleibenden Ressourcen ({size2}) kannst du für ein besseres Spielerlebnis im Voraus herunterladen. Jetzt herunterladen?##22:領地に入る前に、{size1}の必要なリソースをダウンロードする必要があります。また、ゲーム全体のリソース容量が大きいため、より快適にプレイしていただくために、{size2}の基本リソースを事前にダウンロードすることもできます。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size1}의 필수 리소스를 다운로드해야 합니다. 이후 전체 리소스 용량이 크므로 원활한 플레이를 위해 {size2}의 기본 리소스를 미리 다운로드할 수 있습니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size1} de recursos necesarios antes de acceder a tu territorio. Los recursos restantes ({size2}) pueden descargarse por adelantado para una mejor experiencia de juego. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size1} ก่อนเข้าสู่อาณาเขตของท่าน ส่วนทรัพยากรที่เหลือ ({size2}) สามารถดาวน์โหลดล่วงหน้าได้ เพื่อส่งมอบประสบการณ์การเล่นเกมที่ดียิ่งขึ้น ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size1}必要檔案。後續完整檔案較大，為了讓您有更好的遊戲體驗，可以選擇提前下載{size2}基礎檔案。請問是否現在開始下載？\"\""
     },
     "\"LoginDownloadNecessaryResourceTipsAllNormal\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsAllNormal\"",
-      "m_Name": "\"\"##6:游戏全量资源较大，为了您有更好的游戏体验，可以提前下载{size}基础资源。同时也支持在游戏过程中“边玩边下”。请问是否现在开始下载？##10:The game contains a large amount of resources ({size}). For a better gaming experience, you can download the basic resources in advance. Alternatively, you can choose to \"\"download while playing.\"\" Start download now?##14:Certaines ressources du jeu doivent être téléchargées avant de jouer. Veuillez télécharger le pack de ressources le mieux adapté à l'espace de stockage et aux conditions réseau de votre appareil. Des ressources supplémentaires peuvent être téléchargées en arrière-plan pendant le jeu (uniquement disponible en Wi-Fi).##15:Bestimmte Spielressourcen müssen heruntergeladen werden, bevor du spielst. Bitte lade das Ressourcenpaket herunter, das am besten für deinen Gerätespeicher und deine Netzwerkverbindung geeignet ist. Zusätzliche Ressourcen können im Hintergrund heruntergeladen werden, während du spielst (nur mit WLAN verfügbar).##22:ゲームの全リソース容量が大きいため、より快適にプレイしていただくために、{size}の基本リソースを事前にダウンロードすることをおすすめします。ゲーム中に「プレイしながらのダウンロード」にも対応しています。今すぐダウンロードを開始しますか？##23:게임 전체 리소스 용량이 큽니다. 원활한 플레이를 위해 {size}의 기본 리소스를 미리 다운로드할 수 있습니다. 게임 도중 '플레이하면서 다운로드'도 지원합니다. 지금 다운로드를 시작하시겠습니까?##34:Hay que descargar unos recursos del juego para poder jugar. Descarga el paquete de recursos más adecuado según el almacenamiento de tu dispositivo y tu conexión de red. Puedes descargar recursos adicionales mientras juegas en segundo plano (solo disponible con wifi).##36:ทรัพยากรเกมบางส่วนจำเป็นต้องดาวน์โหลดก่อนจึงจะสามารถเล่นได้ โปรดดาวน์โหลดแพ็กทรัพยากรที่เหมาะสมกับพื้นที่จัดเก็บข้อมูลของอุปกรณ์ และการเชื่อมต่อเครือข่ายของท่าน โดยสามารถดาวน์โหลดทรัพยากรเพิ่มเติมเบื้องหลังขณะเล่นได้ (ใช้ได้เฉพาะเมื่อเชื่อมต่อ Wi-Fi เท่านั้น)##41:遊戲完整檔案較大，為了讓您有更好的遊戲體驗，可以提前下載{size}基礎檔案。同時也支援在遊戲過程中「邊玩邊下載」。請問是否現在開始下載？\"\""
+      "m_Name": "\"\"##6:游戏全量资源较大，为了您有更好的游戏体验，可以提前下载{size}基础资源。同时也支持在游戏过程中“边玩边下”。请问是否现在开始下载？##10:The game contains a large amount of resources ({size}). For a better gaming experience, you can download the basic resources in advance. Alternatively, you can choose to \"\"download while playing.\"\" Start download now?##14:Le jeu contient une grande quantité de ressources ({size}). Pour une meilleure expérience de jeu, vous pouvez télécharger les ressources de base à l'avance. Vous pouvez également choisir de « télécharger en jouant ». Commencer le téléchargement maintenant ?##15:Das Spiel enthält eine große Menge an Ressourcen ({size}). Lade für ein besseres Spielerlebnis die grundlegenden Ressourcen im Voraus herunter. Alternativ kannst du auch „während des Spielens herunterladen“ auswählen. Jetzt herunterladen?##22:ゲームの全リソース容量が大きいため、より快適にプレイしていただくために、{size}の基本リソースを事前にダウンロードすることをおすすめします。ゲーム中に「プレイしながらのダウンロード」にも対応しています。今すぐダウンロードを開始しますか？##23:게임 전체 리소스 용량이 큽니다. 원활한 플레이를 위해 {size}의 기본 리소스를 미리 다운로드할 수 있습니다. 게임 도중 '플레이하면서 다운로드'도 지원합니다. 지금 다운로드를 시작하시겠습니까?##34:El juego contiene una gran cantidad de recursos ({size}). Para una mejor experiencia de juego, puedes descargar los recursos básicos por adelantado. Como alternativa, puedes elegir descargarlos mientras juegas. ¿Empezar la descarga ahora?##36:เกมนี้มีทรัพยากรจำนวนมาก ({size}) เพื่อประสบการณ์ในการเล่นเกมที่ดียิ่งขึ้น ท่านสามารถดาวน์โหลดทรัพยากรพื้นฐานล่วงหน้า หรือเลือก \"\"ดาวน์โหลดระหว่างเล่น\"\" ได้ เริ่มดาวน์โหลดตอนนี้เลยหรือไม่##41:遊戲完整檔案較大，為了讓您有更好的遊戲體驗，可以提前下載{size}基礎檔案。同時也支援在遊戲過程中「邊玩邊下載」。請問是否現在開始下載？\"\""
     },
     "\"LoginDownloadNecessaryResourceTipsDownloadNecessary\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsDownloadNecessary\"",
-      "m_Name": "\"##6:下载必要资源##10:Downloading resources...##14:Téléchargement des ressources...##15:Ressourcen herunterladen ...##22:必要なリソースをダウンロード中##23:필수 리소스 다운로드##34:Descargando recursos...##36:กำลังดาวน์โหลดทรัพยากร...##41:下載必要檔案\""
+      "m_Name": "\"##6:下载必要资源##10:Downloading resources...##14:Téléchar. des ress...##15:Lade Ressourcen ...##22:必要なリソースをダウンロード中##23:필수 리소스 다운로드##34:Descargando recursos…##36:ดาวน์โหลดทรัพยากรอยู่##41:下載必要檔案\""
     },
     "\"LoginDownloadNecessaryResourceTipsLater\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsLater\"",
-      "m_Name": "\"##6:游戏内边下边玩##10:Background Download##14:Téléchargement en arrière-plan##15:Herunterladen im Hintergrund##22:ゲーム中にダウンロード可能##23:플레이하면서 다운로드##34:Descarga en segundo plano##36:ดาวน์โหลดเบื้องหลัง##41:遊戲中邊玩邊下載\""
+      "m_Name": "\"##6:游戏内边下边玩##10:Background Download##14:Téléch. en arrière-pl##15:Hintergrund-Download##22:ゲーム中にダウンロード可能##23:플레이하면서 다운로드##34:Descarga en seg. plano##36:ดาวน์โหลดเบื้องหลัง##41:遊戲中邊玩邊下載\""
     },
     "\"LoginDownloadNecessaryResourceTipsSpaceDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsSpaceDesc\"",
-      "m_Name": "\"##6:当前设备可用容量{device_size}。##10:Available storage: {device_size}##14:Stockage disponible : {device_size}##15:Verfügbarer Lager: {device_size}##22:現在のデバイスの残り容量は{device_size}です。##23:기기 사용 가능 공간: {device_size}##34:Almacenamiento disponible: {device_size}##36:พื้นที่ว่าง: {device_size}##41:目前裝置可用容量{device_size}\""
+      "m_Name": "\"##6:当前设备可用容量{device_size}。##10:Available storage: {device_size}##14:Stockage disponible : {device_size}##15:Verfügbares Lager: {device_size}##22:現在のデバイスの残り容量は{device_size}です。##23:기기 사용 가능 공간: {device_size}##34:Almacenamiento disponible: {device_size}##36:พื้นที่ว่าง: {device_size}##41:目前裝置可用容量{device_size}\""
     },
     "\"LoginDownloadNecessaryResourceTipsMobilePrompt\"": {
       "m_bError": null,
@@ -320,7 +320,7 @@
     "\"CMPinformation\"": {
       "m_bError": null,
       "m_Index": "\"CMPinformation\"",
-      "m_Name": "\"##6:更多信息##10:More Info##14:Plus d'infos##15:Mehr Infos##22:詳細情報##23:자세히 보기##34:Más Información##36:ข้อมูลเพิ่มเติม##41:更多資訊\""
+      "m_Name": "\"##6:更多信息##10:More Info##14:Plus d'infos##15:Mehr Infos##22:詳細情報##23:자세히 보기##34:Más información##36:ข้อมูลเพิ่มเติม##41:更多資訊\""
     },
     "\"ClientErrorDesc\"": {
       "m_bError": null,
@@ -365,12 +365,12 @@
     "\"InitMSDKPermissionRequestTipsNote\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKPermissionRequestTipsNote\"",
-      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Erlauben, dass „Silber und Blut“ dir Benachrichtigungen sendet?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
+      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Darf „Silber und Blut“ dir Benachrichtigungen schicken?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
     },
     "\"InitMSDKPermissionRequestTipsTitle\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKPermissionRequestTipsTitle\"",
-      "m_Name": "\"##6:权限申请##10:Permission Request##14:Demande d'autorisation##15:Berechtigungsanfrage##22:権限のリクエスト##23:권한 요청##34:Solicitud de permisos##36:คำขออนุญาต##41:權限申請\""
+      "m_Name": "\"##6:权限申请##10:Permission Request##14:Demande d'autorisation##15:Zugriffsanfrage##22:権限のリクエスト##23:권한 요청##34:Solicitud de permisos##36:คำขออนุญาต##41:權限申請\""
     },
     "\"PlayerUserToggleUs\"": {
       "m_bError": null,
@@ -395,12 +395,12 @@
     "\"LoginCheckUpgradeChangeZoneDescNoMatch\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeChangeZoneDescNoMatch\"",
-      "m_Name": "\"##6:检测到客户端版本%s，无匹配服务器，请前往GM页面确认详情（当前服务器%s，账号%s）##10:Client Version %s has been detected, but no matching server was found. Please check the details on the GM page (Current Server: %s. Account: %s).##14:La version client %s a été détectée, mais aucun serveur correspondant n'a été trouvé. Veuillez consulter les détails sur la page GM (serveur actuel : %s ; compte : %s).##15:Client-Version %s wurde erkannt, aber kein passender Server gefunden. Bitte überprüfe die Details auf der GM-Seite (Aktueller Server: %s. Konto: %s)##22:現在のクライアントバージョン%sにマッチするサーバーがありません。詳しくはGMページにてご確認ください。（現在のサーバー%s、アカウント%s）##23:클라이언트 버전 %s와(과) 매칭되는 서버가 없습니다. GM 화면으로 이동해 상세 내용을 확인하세요(현재 서버: %s, 계정: %s).##34:Se ha detectado la versión de cliente %s, pero no se ha encontrado ningún servidor que coincida. Comprueba los detalles en la página de GM (Servidor actual: %s. Cuenta: %s).##36:ตรวจพบ 'ไคลเอนต์เวอร์ชัน' %s แต่ไม่พบเซิร์ฟเวอร์ที่ตรงกัน โปรดตรวจสอบรายละเอียดในหน้า GM (เซิร์ฟเวอร์ปัจจุบัน: %s บัญชี: %s)##41:偵測到用戶端版本%s無相符伺服器，請前往GM頁面確認詳情（目前伺服器%s，帳號%s）\""
+      "m_Name": "\"\"##6:检测到客户端版本%s，无匹配服务器，请前往GM页面确认详情（当前服务器%s，账号%s）##10:Client Version %s has been detected, but no matching server was found. Please check the details on the GM page (Current Server: %s. Account: %s).##14:La version client %s a été détectée, mais aucun serveur correspondant n'a été trouvé. Veuillez consulter les détails sur la page GM (serveur actuel : %s ; compte : %s).##15:Client-Version %s wurde erkannt, aber kein passender Server gefunden. Bitte überprüfe die Details auf der GM-Seite (Aktueller Server: %s. Konto: %s)##22:現在のクライアントバージョン%sにマッチするサーバーがありません。詳しくはGMページにてご確認ください。（現在のサーバー%s、アカウント%s）##23:클라이언트 버전 %s와(과) 매칭되는 서버가 없습니다. GM 화면으로 이동해 상세 내용을 확인하세요(현재 서버: %s, 계정: %s).##34:Se ha detectado la versión de cliente %s, pero no se ha encontrado ningún servidor que coincida. Comprueba los detalles en la página de GM (Servidor actual: %s. Cuenta: %s).##36:ตรวจพบ 'ไคลเอนต์เวอร์ชัน' %s แต่ไม่พบเซิร์ฟเวอร์ที่ตรงกัน โปรดตรวจสอบรายละเอียดในหน้า GM (เซิร์ฟเวอร์ปัจจุบัน: %s บัญชี: %s)##41:偵測到用戶端版本%s無相符伺服器，請前往GM頁面確認詳情（目前伺服器%s，帳號%s）\"\""
     },
     "\"LoginCheckUpgradeWindowsForce\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeWindowsForce\"",
-      "m_Name": "\"##6:检测当前客户端不是最新版本，请领主大人点击下载按钮，移步至官网下载并安装新客户端##10:#N/A##14:#N/A##15:#N/A##22:現在ご利用のクライアントは最新版ではありません。ロード様、ダウンロードボタンをタップし、公式サイトより最新クライアントのダウンロードとインストールをお願いいたします。##23:#N/A##34:#N/A##36:#N/A##41:#N/A\""
+      "m_Name": "\"\"##6:检测当前客户端不是最新版本，请领主大人点击下载按钮，移步至官网下载并安装新客户端##10:Your current client version is outdated. Please tap the Download button to visit our official website and install the new client.##14:La version actuelle de votre client est obsolète. Veuillez appuyer sur le bouton Télécharger pour installer le nouveau client depuis notre site officiel.##15:Deine aktuelle Client-Version ist veraltet. Bitte tippe auf die Schaltfläche Herunterladen, besuche unsere offizielle Website und installiere den neuen Client.##22:現在ご利用のクライアントは最新版ではありません。ロード様、ダウンロードボタンをタップし、公式サイトより最新クライアントのダウンロードとインストールをお願いいたします。##23:현재 클라이언트 버전이 최신이 아닙니다. 다운로드 버튼을 터치하여 공식 홈페이지에서 최신 클라이언트를 설치해 주세요.##34:Tu versión del cliente está desactualizada. Por favor, pulsa el botón Descargar para visitar nuestra página web oficial e instalar el nuevo cliente.##36:ไคลเอนต์ของท่านล้าสมัยแล้ว โปรดกดที่ปุ่ม 'ดาวน์โหลด' เพื่อไปยังเว็บไซต์อย่างเป็นทางการของเรา และทำการติดตั้งไคลเอนต์ใหม่##41:偵測到目前用戶端非最新版本，請領主大人點擊下載按鈕，移步至官網下載並安裝新用戶端。\"\""
     },
     "\"LoginDownloadNecessaryResourceMobilePrompt\"": {
       "m_bError": null,
@@ -410,7 +410,7 @@
     "\"DataAnonymFail\"": {
       "m_bError": null,
       "m_Index": "\"DataAnonymFail\"",
-      "m_Name": "\"##6:个人隐私数据加密失败，请检查网络状态，重启游戏##10:Privacy Data Encryption Failed. Please check your network connection and restart the game.##14:Privacy Data Encryption Failed. Please check your network connection and restart the game.##15:Privacy Data Encryption Failed. Please check your network connection and restart the game.##22:個人情報データの暗号化に失敗しました。ネットワーク状況を確認し、ゲームを再起動してください。##23:개인정보 데이터 암호화에 실패했습니다. 네트워크 상태를 확인한 후 게임을 재시작하세요.##34:Privacy Data Encryption Failed. Please check your network connection and restart the game.##36:การเข้ารหัสข้อมูลส่วนบุคคลล้มเหลว โปรดตรวจสอบการเชื่อมต่อเครือข่ายของท่านและรีสตาร์ทเกม##41:個人隱私資料加密失敗，請檢查網路狀態，並重新啟動遊戲\""
+      "m_Name": "\"##6:个人隐私数据加密失败，请检查网络状态，重启游戏##10:Privacy Data Encryption Failed. Please check your network connection and restart the game.##14:Échec du chiffrement des données privées. Veuillez vérifier votre connexion réseau et redémarrer le jeu.##15:Die Verschlüsselung deiner persönlichen Daten ist fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und starte das Spiel neu.##22:個人情報データの暗号化に失敗しました。ネットワーク状況を確認し、ゲームを再起動してください。##23:개인정보 데이터 암호화에 실패했습니다. 네트워크 상태를 확인한 후 게임을 재시작하세요.##34:Fallo en el cifrado de datos privados. Comprueba tu conexión de red y reinicia el juego.##36:การเข้ารหัสข้อมูลส่วนบุคคลล้มเหลว โปรดตรวจสอบการเชื่อมต่อเครือข่ายของท่านและรีสตาร์ทเกม##41:個人隱私資料加密失敗，請檢查網路狀態，並重新啟動遊戲\""
     },
     "\"LoginProtocolHandlingFail\"": {
       "m_bError": null,
@@ -430,7 +430,7 @@
     "\"PlayerCenterAccountBindAppleID\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountBindAppleID\"",
-      "m_Name": "\"##6:绑定Apple ID##10:Bind Apple ID##14:Lier l'Identifiant Apple##15:Apple ID binden##22:Apple IDで連携##23:Apple ID 연동##34:Vincular Apple ID##36:ผูกมัด Apple ID##41:綁定Apple ID\""
+      "m_Name": "\"##6:绑定Apple ID##10:Bind Apple ID##14:Lier l'Apple ID##15:Apple ID verknüpfen##22:Apple IDで連携##23:Apple ID 연동##34:Vincular Apple ID##36:ผูกกับ Apple ID##41:綁定Apple ID\""
     },
     "\"LoginCheckUpgradeUnzip\"": {
       "m_bError": null,
@@ -805,7 +805,7 @@
     "\"MSDKErrorCode5010509\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCode5010509\"",
-      "m_Name": "\"##6:注销条件不满足，无法注销##10:Conditions unmet, cannot cancel account.##14:Conditions non remplies pour résilier le compte.##15:Bedingungen nicht erfüllt, Konto kann nicht gelöscht werden.##22:削除条件を満たしてないため、削除できません。##23:계정 삭제 조건을 충족하지 않아 삭제할 수 없습니다.##34:No se cumplen los requisitos, no se puede cancelar la cuenta.##36:เงื่อนไขไม่ครบถ้วน ไม่สามารถยกเลิกบัญชีได้##41:刪除條件不滿足，無法刪除\""
+      "m_Name": "\"\"##6:注销条件不满足，无法注销##10:Conditions unmet, cannot cancel account.##14:Conditions non remplies pour résilier le compte.##15:Bedingungen nicht erfüllt, Konto kann nicht gelöscht werden.##22:削除条件を満たしてないため、削除できません。##23:계정 삭제 조건을 충족하지 않아 삭제할 수 없습니다.##34:No se cumplen los requisitos, no se puede cancelar la cuenta.##36:เงื่อนไขไม่ครบถ้วน ไม่สามารถยกเลิกบัญชีได้##41:刪除條件不滿足，無法刪除\"\""
     },
     "\"MSDKErrorCode5010506\"": {
       "m_bError": null,
@@ -820,7 +820,7 @@
     "\"MSDKErrorCode5010401\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCode5010401\"",
-      "m_Name": "\"##6:切换的三方账号未绑定account id##10:Third-party account not previously bound.##14:Le compte tiers n'était pas lié.##15:Drittanbieter-Konto bislang nicht verknüpft.##22:切り替え先はアカウントIDと連携されていません##23:전환한 제3자 계정은 account ID에 연동되지 않았습니다.##34:La cuenta de terceros no se ha vinculado anteriormente.##36:บัญชีGoogle/Facebook/APPLEที่ใช้ยังไม่ได้ผูกกับบัญชีเกม##41:切換的三方帳號未綁定account id\""
+      "m_Name": "\"\"##6:您切换的第三方账户（如 Facebook账户）尚未绑定游戏角色，无法完成切换。##10:Unable to switch accounts. The third-party account (e.g. Facebook) is not bound to any game profile.##14:Impossible de changer de compte. Le compte tiers (p. ex., Facebook) n'est lié à aucun profil de jeu.##15:Kontowechsel nicht möglich. Das Drittanbieter-Konto (z. B. Facebook) ist mit keinem Spielprofil verknüpft.##22:切り替えようとした外部アカウント（例：Facebookアカウント）は、ゲーム内のキャラクターと連携されていないため、アカウントの切り替えを完了できません。##23:전환한 제3자 계정(Facebook 등)에 연동된 게임 캐릭터가 없어 전환할 수 없습니다.##34:No se ha podido cambiar las cuentas. La cuenta de terceros (p. ej., Facebook) no está vinculada a ningún perfil de juego.##36:ไม่สามารถเปลี่ยนบัญชีได้ เนื่องจากบัญชีบุคคลที่สาม (เช่น Facebook) ไม่ได้ผูกกับโพรไฟล์เกมใด ๆ ไว้เลย##41:您切換的第三方帳戶（如Facebook帳戶）尚未綁定遊戲角色，無法完成切換。\"\""
     },
     "\"MSDKErrorCode5010304\"": {
       "m_bError": null,
@@ -880,12 +880,12 @@
     "\"MSDKErrorCodeM4\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM4\"",
-      "m_Name": "\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\""
+      "m_Name": "\"\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\"\""
     },
     "\"MSDKErrorCodeM3\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM3\"",
-      "m_Name": "\"##6:授权登录失败请重新尝试##10:Authorization failed. Please try again.##14:Échec de l'autorisation. Merci de réessayer.##15:Autorisierung fehlgeschlagen. Bitte versuche es erneut.##22:ログイン認証に失敗しました。再試行してください。##23:로그인 실패, 다시 시도해 주세요.##34:La autorización falló. Vuelve a intentarlo.##36:การอนุญาตล้มเหลว โปรดลองใหม่อีกครั้ง##41:授權登入失敗，請重新嘗試\""
+      "m_Name": "\"\"##6:授权登录失败请重新尝试##10:Authorization failed. Please try again.##14:Échec de l'autorisation. Merci de réessayer.##15:Autorisierung fehlgeschlagen. Bitte versuche es erneut.##22:ログイン認証に失敗しました。再試行してください。##23:로그인 실패, 다시 시도해 주세요.##34:La autorización falló. Vuelve a intentarlo.##36:การอนุญาตล้มเหลว โปรดลองใหม่อีกครั้ง##41:授權登入失敗，請重新嘗試\"\""
     },
     "\"MSDKErrorCodeM2\"": {
       "m_bError": null,
@@ -897,21 +897,156 @@
       "m_Index": "\"MSDKErrorCodeM1\"",
       "m_Name": "\"##6:登录初始化失败##10:Login Initialization Failed##14:Échec de l'initialisation de la connexion##15:Anmeldeinitialisierung fehlgeschlagen##22:ログイン初期化に失敗しました。##23:로그인 초기화 실패##34:Error de inicio de sesión##36:การเริ่มต้นเข้าสู่ระบบล้มเหลว##41:登入初始化失敗\""
     },
-    "\"PlayerUserToggleDMM\"": {
+    "\"LoginAnnouncementMaintainCountDownDesc\"": {
       "m_bError": null,
-      "m_Index": "\"PlayerUserToggleDMM\"",
-      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>用户协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>User Agreement</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Contrat d'utilisation</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Nutzungsbedingungen</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>利用規約</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>이용 약관</u></color></link>##34:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>Acuerdo de Usuario</u></color></link>##36:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>ข้อตกลงผู้ใช้</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>服務條款</u></color></link>\""
+      "m_Index": "\"LoginAnnouncementMaintainCountDownDesc\"",
+      "m_Name": "\"##6:维护剩余时间：##10:Maintenance Time Left:##14:Temps de maintenance restant :##15:Verbleibende Wartungszeit:##22:メンテナンス残り時間：##23:남은 점검 시간:##34:Tiempo restante de mantenimiento:##36:เวลาปิดปรับปรุงที่เหลือ:##41:維護剩餘時間：\""
     },
-    "\"PlayerPrivacyToggleDMM\"": {
+    "\"CommonCountDownDay\"": {
       "m_bError": null,
-      "m_Index": "\"PlayerPrivacyToggleDMM\"",
-      "m_Name": "\"##6:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隐私协议</u></color></link>##10:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Privacy Policy</u></color></link>##14:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Politique de confidentialité</u></color></link>##15:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>Datenschutzrichtlinien</u></color></link>##22:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>プライバシーポリシー</u></color></link>##23:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>개인정보 처리방침</u></color></link>##34:Missing##36:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>นโยบายความเป็นส่วนตัว</u></color></link>##41:<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隱私權政策</u></color></link>\""
+      "m_Index": "\"CommonCountDownDay\"",
+      "m_Name": "\"##6:{0}天##10:{0}d##14:{0}j##15:{0} T.##22:{0}日##23:{0}일##34:{0} d##36:{0} วัน##41:{0}天\""
+    },
+    "\"CommonCountDownHour\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonCountDownHour\"",
+      "m_Name": "\"##6:{0}小时##10:{0}h##14:{0}h##15:{0} Std.##22:{0}時間##23:{0}시간##34:{0} h##36:{0} ชม.##41:{0}小時\""
+    },
+    "\"CommonCountDownMinute\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonCountDownMinute\"",
+      "m_Name": "\"##6:{0}分钟##10:{0}m##14:{0}m##15:{0} Min.##22:{0}分##23:{0}분##34:{0} min##36:{0} น.##41:{0}分鐘\""
+    },
+    "\"CommonCountDownSecond\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonCountDownSecond\"",
+      "m_Name": "\"##6:{0}秒##10:{0}s##14:{0}s##15:{0} Sek.##22:{0}秒##23:{0}초##34:{0} s##36:{0} วินาที##41:{0}秒\""
+    },
+    "\"ConfirmCommonTipsTitle9999\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9999\"",
+      "m_Name": "\"##6:版本更新##10:Version Update##14:Mise à jour de version##15:Versionsupdate##22:アップデート##23:버전 업데이트##34:Actualización de versión##36:อัปเดตเวอร์ชัน##41:版本更新\""
+    },
+    "\"ConfirmCommonTipsContent9999\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9999\"",
+      "m_Name": "\"##6:检测到重要资源更新，需要重新登录。##10:New updates are available. Please re-login to the game.##14:De nouvelles mises à jour sont disponibles. Veuillez vous reconnecter au jeu.##15:Neue Updates verfügbar. Bitte melde dich erneut im Spiel an.##22:アップデートが検出されたため、再ログインしてください。##23:중요한 리소스 업데이트가 감지되었습니다. 다시 로그인하세요.##34:Nuevas actualizaciones disponibles. Vuelve a iniciar sesión en el juego.##36:มีการอัปเดตใหม่ โปรดเข้าสู่ระบบเกมอีกครั้ง##41:偵測到重要的檔案更新，請重新登入\""
+    },
+    "\"ConfirmCommonTipsTitle9998\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9998\"",
+      "m_Name": "\"##6:维护##10:Maintenance##14:Maintenance##15:Wartung##22:メンテナンス##23:점검##34:Mantenimiento##36:การบำรุงรักษา##41:維護\""
+    },
+    "\"ConfirmCommonTipsContent9998\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9998\"",
+      "m_Name": "\"\"##6:服务器日常维护已开始，请在维护结束后重新登录。##10:Routine server maintenance has begun. You can log in after the maintenance is completed.##14:La maintenance de routine du serveur a commencé. Vous pourrez vous connecter une fois la maintenance terminée.##15:Die regelmäßige Serverwartung hat begonnen. Du kannst dich wieder anmelden, wenn die Wartung abgeschlossen wurde.##22:サーバーの定期メンテナンス中です。メンテナンスが終了してから再ログインしてください。##23:서버 정기 점검이 시작되었습니다. 점검이 끝난 후 다시 로그인하세요.##34:Se ha iniciado el mantenimiento rutinario del servidor. Podrás conectarte una vez que termine el mantenimiento.##36:การปรับปรุงเซิร์ฟเวอร์ตามปกติได้เริ่มต้นขึ้นแล้ว หลังปรับปรุงเสร็จสิ้นแล้ว ท่านจะสามารถเข้าสู่ระบบได้ตามปกติ##41:伺服器日常維護已開始，請在維護結束後再重新登入。\"\""
+    },
+    "\"ConfirmCommonTipsTitle9997\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9997\"",
+      "m_Name": "\"##6:防沉迷计划##10:Playtime Limit System##14:Système de limite de jeu##15:Spielzeit-Begrenzungssystem##22:ゲーム依存防止##23:과몰입 예방##34:Sistema de límite de juego##36:ระบบจำกัดเวลาเล่น##41:防沉迷計畫\""
+    },
+    "\"ConfirmCommonTipsContent9997\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9997\"",
+      "m_Name": "\"##6:您当日在线时长已达到防沉迷最大限制时间，将强制下线。##10:You've reached the maximum allowed play time and will not be logged out.##14:Vous avez atteint le temps de jeu maximal autorisé et allez être déconnecté(e).##15:Du hast die maximal erlaubte Spielzeit erreicht und wirst abgemeldet.##22:今日の未成年プレイ時間上限に達したため、強制的にログアウトします。##23:오늘 접속 시간이 과몰입 예방 최대 시간에 도달해 강제로 종료됩니다.##34:Has alcanzado el tiempo máximo de juego permitido y no se cerrará tu sesión.##36:ท่านถึงเวลาเล่นเกมสูงสุดที่อนุญาตแล้วและจะไม่ถูกออกจากระบบ##41:您當日線上時長已達到防沉迷時間限制，將強制下線\""
+    },
+    "\"ConfirmCommonTipsTitle9996\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9996\"",
+      "m_Name": "\"##6:异常##10:Abnormal##14:Anomalie##15:Abnormal##22:異常##23:오류##34:Anomalía##36:ผิดปกติ##41:異常\""
+    },
+    "\"ConfirmCommonTipsContent9996\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9996\"",
+      "m_Name": "\"\"##6:检测到您的账户充值存在异常，系统将暂时限制您的账户；\n开发人员将会尽快排查问题，请您暂时保持离线状态。##10:An abnormality has been detected in your account top-up, and the system will temporarily restrict your account.\nThe dev team will troubleshoot the problem as soon as possible. Please stay offline for the time being.##14:Une anomalie a été détectée lors du rechargement de votre compte ; le système va temporairement restreindre votre accès.\nL'équipe de développement résoudra le problème dans les plus brefs délais. Veuillez rester hors ligne pour le moment.##15:Bei der Aufladung deines Kontos wurde eine Anomalie festgestellt, und das System wird dein Konto vorübergehend sperren.\nDas Entwicklerteam wird das Problem so bald wie möglich beheben. Bitte bleib bis auf Weiteres offline.##22:課金状況に異常が検出されたため、一時的にアカウントに制限をかけました。\nスタッフは早急な問題解決に努力しています。しばらくログインしないでください。##23:계정 충전 시 오류가 발생해 일시적으로 귀하의 계정 사용을 제한합니다.\n최선을 다해 해결 중이니 해결될 때까지 오프라인 상태를 유지해 주세요.##34:Se ha detectado una anomalía en el recargo de tu cuenta, por lo que el sistema la restringirá temporalmente.\nEl equipo de desarrollo resolverá esta incidencia lo antes posible. Desconéctate mientras tanto.##36:ตรวจพบความผิดปกติจากการเติมเงินในบัญชีของท่าน และระบบจะจำกัดบัญชีของท่านชั่วคราว\nทีมพัฒนาจะแก้ไขปัญหาโดยเร็วที่สุด โปรดออฟไลน์สักครู่##41:偵測到您的帳號儲值有所異常，系統將暫時限制您的帳號。\n開發人員將會盡快調查問題，請您暫時保持離線狀態\"\""
+    },
+    "\"ConfirmCommonTipsTitle9995\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9995\"",
+      "m_Name": "\"##6:重复登录##10:Re-login##14:Se reconnecter##15:Neu anmelden##22:再ログイン##23:중복 로그인##34:Volver a iniciar sesión##36:ล็อกอินใหม่##41:重複登入\""
+    },
+    "\"ConfirmCommonTipsContent9995\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9995\"",
+      "m_Name": "\"\"##6:检测到当前帐号重复登录或在多台终端上登录，您将被强制下线；\n请保护好您的账号，如果这是一次不受您控制的异常登录行为，请您立刻修改密码。##10:We have detected repeated login attempts or attempts to log in from multiple devices on the current account. You will now be logged out of the game.\nPlease protect your account information. If you did not initiate these login attempts, please change your password immediately.##14:Nous avons détecté des tentatives de connexion répétées ou des tentatives de connexion depuis plusieurs appareils sur le compte actuel. Vous allez être déconnecté(e) du jeu.\nVeuillez protéger les informations de votre compte. Si vous n'êtes pas à l'origine de ces tentatives de connexion, veuillez modifier votre mot de passe immédiatement.##15:Beim aktuellen Konto wurden wiederholte Anmeldeversuche oder Anmeldeversuche von verschiedenen Geräten festgestellt. Du wirst jetzt aus dem Spiel abgemeldet.\nBitte schütze deine Kontoinformationen. Wenn diese Anmeldeversuche nicht von dir stammen, ändere bitte sofort dein Passwort.##22:現在のアカウントが他のデバイスでログインしたため、強制的にログアウトされます。\nお客様からのログインではない場合、すぐにパスワードを変更してください。##23:현재 계정이 중복 로그인 중이거나 다른 기기에서 로그인 중이므로 강제로 종료됩니다.\n귀하가 조작해 발생한 오류가 아닌 경우 즉시 비밀번호를 변경하시길 바라며, 계정 보호에 주의하세요.##34:Hemos detectado intentos repetidos de inicio de sesión o intentos de inicio de sesión desde varios dispositivos en la cuenta actual. Ahora se cerrará tu sesión en el juego.\nProtege la información de tu cuenta. Si no has realizado estos intentos de inicio de sesión, cambia la contraseña inmediatamente.##36:เราตรวจพบว่ามีผู้พยายามเข้าสู่ระบบซ้ำ ๆ ในบัญชีที่ท่านใช้อยู่ตอนนี้ หรือมีความพยายามในการเข้าสู่ระบบบัญชีนี้จากอุปกรณ์หลายเครื่อง ตอนนี้ท่านจะออกจากระบบเกม\nโปรดปกป้องข้อมูลบัญชีของท่าน หากความพยายามทั้งหลายดังกล่าวไม่ได้มาจากท่านเอง โปรดเปลี่ยนรหัสผ่านของท่านโดยทันที##41:偵測到本帳號重複登入或在多台裝置上登入，您將被強制下線。\n請保護好您的帳號，如果這是不受您控制的異常登入行為，請您立刻修改密碼。\"\""
+    },
+    "\"ConfirmCommonTipsTitle9994\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9994\"",
+      "m_Name": "\"##6:账号已封禁##10:Account has been banned##14:Compte banni##15:Konto wurde gesperrt##22:アカウントが停止されています##23:계정 정지##34:Se ha bloqueado la cuenta##36:บัญชีนี้ถูกแบน##41:帳號遭到封鎖\""
+    },
+    "\"ConfirmCommonTipsContent9994\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9994\"",
+      "m_Name": "\"\"##6:检测到当前帐号由于异常行为被暂时封禁！\n如果您对账号限制有任何疑问，请尽快联系客服团队。##10:This account has been temporarily banned due to abnormal behavior!\nIf you have any questions, please contact the customer service team as soon as possible.##14:Ce compte a été temporairement banni en raison d'un comportement anormal !\nSi vous avez des questions, veuillez contacter l'équipe du service client dès que possible.##15:Dieses Konto wurde aufgrund regelwidrigen Verhaltens vorübergehend gesperrt!\nFalls du Fragen hast, kontaktiere bitte so bald wie möglich den Kundenservice.##22:異常な操作が検出されたため、このアカウントは一時的に制限されています。\n疑問がある場合、カスタマーサービスまでお尋ねください##23:현재 비정상적 행위로 인해 계정이 일시적으로 정지되었습니다! \n계정 정지에 대한 문의 사항이 있으시면 최대한 빨리 고객센터에 문의해 주세요.##34:Se ha bloqueado esta cuenta temporalmente por comportamiento anómalo.\nEn caso de dudas, ponte en contacto con el servicio de atención al cliente lo antes posible.##36:บัญชีนี้ถูกแบนชั่วคราว เนื่องจากพฤติกรรมที่ผิดปกติ!\nหากท่านมีคำถามใด ๆ โปรดติดต่อทีมบริการลูกค้าโดยไวที่สุด##41:偵測到本帳號由於異常行為而遭到暫時封鎖！\n如果您對帳號限制有任何疑問，請盡快聯絡客服團隊。\"\""
+    },
+    "\"CommonUnderstand\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonUnderstand\"",
+      "m_Name": "\"##6:了解##10:Learn More##14:En savoir plus##15:Mehr erfahren##22:OK##23:네##34:Más información##36:ดูเพิ่มเติม##41:了解\""
+    },
+    "\"CommonUnderstandAndLogOut\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonUnderstandAndLogOut\"",
+      "m_Name": "\"##6:了解并登出##10:Confirm & Log Out##14:Confirmer et se déconnecter##15:Bestätigen & Abmelden##22:ログアウト##23:확인 및 종료##34:Confirmar y cerrar sesión##36:ยืนยัน & ออกจากระบบ##41:了解並登出\""
+    },
+    "\"ConfirmCommonTipsContent9988\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9988\"",
+      "m_Name": "\"##6:无法连接服务器，请您尝试切换WiFi或蜂窝数据运营商后再重新登录##10:Unable to connect to the server. Try switching your WiFi or cellular data provider and attempt logging in again.##14:Connexion au serveur impossible. Passez sur Wi-Fi ou sur votre fournisseur de données mobiles et réessayez.##15:Verbindung zum Server fehlgeschlagen. Versuche dein WLAN oder deinen mobilen Datenanbieter zu wechseln und melde dich erneut an.##22:サーバーに接続できません。インターネット接続を確認してから再度ログインしてください##23:서버에 연결할 수 없습니다. Wi-Fi 또는 셀룰러 데이터 운영사로 변경한 후 다시 로그인해 보세요.##34:No se puede conectar al servidor. Prueba cambiar de wifi o proveedor de datos móviles y vuelve a intentar iniciar sesión.##36:ไม่สามารถเชื่อมต่อกับเซิร์ฟเวอร์ได้ ลองเปลี่ยน Wi-Fi หรือข้อมูลมือถือของท่านและพยายามเข้าสู่ระบบใหม่อีกครั้ง##41:無法連線到伺服器，請您嘗試切換Wi-Fi或行動網路後再重新登入\""
+    },
+    "\"ConfirmCommonTipsTitle9967\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle9967\"",
+      "m_Name": "\"##6:资源下载##10:Resource Download##14:Téléchargement de ressources##15:Ressourcen herunterladen##22:リソースダウンロード##23:리소스 다운로드##34:Descarga de recursos##36:ดาวน์โหลดทรัพยากร##41:檔案下載\""
+    },
+    "\"ConfirmCommonTipsContent9967\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent9967\"",
+      "m_Name": "\"\"##6:网络连接异常，请确认您的网络环境后重新尝试下载。若多次尝试失败，请尝试重新登录游戏。##10:Network connection error. Please check your network and try downloading again. If multiple attempts fail, try re-logging into the game.##14:Erreur de connexion réseau. Veuillez vérifier votre réseau et essayer de télécharger à nouveau. Si le problème persiste après plusieurs tentatives, essayez de vous reconnecter au jeu.##15:Fehler bei der Netzwerkverbindung. Bitte überprüfe dein Netzwerk und versuche erneut, die Inhalte herunterzuladen. Wenn mehrere Versuche fehlschlagen, versuche dich erneut im Spiel anzumelden.##22:ネットワーク接続が異常です。ネットワーク環境をご確認の上、再度ダウンロードをお試しください。複数回失敗する場合は、ゲームに再ログインしてください。##23:네트워크 연결이 불안정합니다. 네트워크 환경을 확인한 후 다시 다운로드해 주세요. 여러 번 시도해도 실패할 경우 게임에 다시 로그인해 주세요.##34:Error de conexión de red. Comprueba tu red e intenta descargar de nuevo. Si fallan varios intentos, prueba volver a iniciar sesión en el juego.##36:ข้อผิดพลาดในการเชื่อมต่อเครือข่าย โปรดตรวจสอบเครือข่ายของท่านและลองดาวน์โหลดอีกครั้ง หากพยายามหลายครั้งไม่สำเร็จ ลองออกจากเกมแล้วเข้าสู่เกมใหม่อีกครั้ง##41:網路連線異常，請確認您的網路環境後重新嘗試下載。若多次嘗試失敗，請嘗試重新登入遊戲。\"\""
+    },
+    "\"ConfirmCommonTipsButton19967\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsButton19967\"",
+      "m_Name": "\"##6:继续下载##10:Continue Download##14:Continuer le téléchargement##15:Weiter herunterladen##22:ダウンロードを続ける##23:이어서 다운로드##34:Continuar descarga##36:ดาวน์โหลดต่อไป##41:繼續下載\""
+    },
+    "\"ConfirmCommonTipsTitle1134\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsTitle1134\"",
+      "m_Name": "\"##6:切换账号##10:Switch Account##14:Changer de compte##15:Account wechseln##22:アカウント切り替え##23:계정 전환##34:Cambiar de cuenta##36:เปลี่ยนบัญชี##41:切換帳號\""
+    },
+    "\"ConfirmCommonTipsContent1134\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent1134\"",
+      "m_Name": "\"\"##6:如果您有绑定游戏数据的其他账号，登入后可以继续之前的存档。请注意，如果您当\n前账号未绑定任何三方账号，当前账号可能会无法找回。请谨慎操作!##10:If you have other accounts with bound game data, you can log in to them to continue from your previous save.\nPlease note that if your current account is not bound to any third-party account, it may not be recoverable. Please proceed with caution!##14:Si vous avez d'autres comptes liés à vos données de jeu, connectez-vous-y pour reprendre à partir de votre dernière sauvegarde.\nSi votre compte actuel n'est pas lié à un autre compte tiers, il pourrait ne pas être récupérable. Faites bien attention !##15:Falls du weitere Konten mit verknüpften Spieldaten hast, kannst du dich bei ihnen anmelden, um deinen vorherigen Spielstand fortzusetzen.\nFalls dein aktuelles Konto nicht mit einem Drittanbieter-Konto verknüpft ist, kann es möglicherweise nicht wiederhergestellt werden. Bitte sei vorsichtig!##22:他のアカウントにゲームデータを連携している場合、そのアカウントでログインすると、前のセーブデータを引き続き利用できます。\n現在のアカウントがサードパーティアカウントに連携されていない場合、アカウントが復元できない可能性がありますので、十分にご注意のうえ、慎重に操作してください。##23:게임 데이터를 다른 계정에 연동한 경우, 해당 계정에 로그인해 이전의 세이브파일을 불러올 수 있습니다.\n주의: 계정이 제삼자 계정에 연동되지 않은 상태면 해당 계정은 되찾을 수 없을 수도 있습니다. 신중히 진행하시길 바랍니다!##34:Si tienes otras cuentas con datos de juego vinculados, puedes conectarte a ellas para continuar desde tu partida guardada anterior.\nTen en cuenta que si tu cuenta actual no está vinculada a ninguna cuenta de terceros, es posible que no pueda recuperarse. Procede con precaución.##36:หากท่านมีบัญชีอื่นที่ผูกกับข้อมูลเกมอยู่ ท่านสามารถเข้าสู่ระบบเพื่อดำเนินการต่อจากบันทึกก่อนหน้านี้ได้\nโปรดทราบว่า หากบัญชีตอนนี้ของท่านไม่ได้ผูกกับบัญชีภายนอกไว้ อาจจะไม่สามารถกู้คืนได้ โปรดดำเนินการด้วยความระมัดระวัง!##41:如果您有綁定遊戲資料的其他帳號，登入便可以繼續之前的存檔。請注意，如果您目\n前帳號未綁定任何第三方帳號，則目前的帳號可能會無法復原。請謹慎操作！\"\""
+    },
+    "\"ConfirmCommonTipsButton11134\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsButton11134\"",
+      "m_Name": "\"##6:切换账号##10:Switch Account##14:Changer de compte##15:Account wechseln##22:アカウント切り替え##23:계정 전환##34:Cambiar de cuenta##36:เปลี่ยนบัญชี##41:切換帳號\""
+    },
+    "\"ConfirmCommonTipsContent1198\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent1198\"",
+      "m_Name": "\"##6:数据请求超时，请重试（Error = -1008）##10:Request timed out. Please try again (Error = -1008)##14:Demande expirée. Merci de réessayer (Erreur = -1008)##15:Anfrage abgelaufen. Bitte versuche es später erneut (Error = -1008)##22:データ要求がタイムアウトしました。再試行してください（Error = -1008）##23:데이터 요청 시간이 초과하였습니다. 다시 시도해 주세요(Error = -1008)##34:Tiempo de espera agotado. Vuelve a intentarlo. (Error = -1008)##36:คำขอหมดเวลาแล้ว กรุณาลองใหม่ (ข้อผิดพลาด = -1008)##41:資訊請求逾時，請重試（Error = -1008）\""
+    },
+    "\"ConfirmCommonTipsContent1028\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsContent1028\"",
+      "m_Name": "\"##6:账号注销成功##10:Account Canceled##14:Compte annulé##15:Konto gelöscht##22:アカウントが削除されました##23:계정이 탈퇴되었습니다.##34:Cuenta cancelada##36:ยกเลิกบัญชีแล้ว##41:帳號刪除成功\""
+    },
+    "\"ConfirmCommonTipsAutoStart\"": {
+      "m_bError": null,
+      "m_Index": "\"ConfirmCommonTipsAutoStart\"",
+      "m_Name": "\"##6:将在{num}秒后自动开始##10:Starts in {num}s##14:Commence dans {num}s##15:Beginnt in {num} Sek.##22:{num}秒後に開始する##23:{num}초 후 자동으로 시작됩니다.##34:Empieza en {num} s##36:เริ่มใน {num} วินาที##41:將在{num}秒後自動開始\""
     },
     "\"PlayerCenterAccountUnpack\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountUnpack\"",
-      "m_Name": "\"##6:解绑三方账户需要您使用当前绑定的三方账户进行授权##10:To unbind a third-party account, you need to authorize using the currently bound third-party account##14:Pour délier un compte tiers, vous devez autoriser en utilisant le compte tiers actuellement lié##15:Um ein Drittanbieter-Konto zu entfernen, musst du dich mit dem aktuell verknüpften Drittanbieter-Konto autorisieren##22:連携解除には、現在連携中の外部アカウントでの認証が必要です。##23:서드파티 계정 연동 해제를 위해서는 현재 연동된 서드파티 계정으로 인증해야 합니다##34:Para desvincular una cuenta de terceros, necesitas autorizar usando la cuenta de terceros actualmente vinculada##36:หากต้องการเลิกผูกมัดบัญชีบุคคลที่สาม ท่านจะต้องยืนยันตัวตนผ่านบัญชีบุคคลที่สามที่ผูกมัดอยู่ในปัจจุบัน##41:解綁第三方帳戶需要您使用目前綁定的第三方帳戶進行授權\""
+      "m_Name": "\"\"##6:解绑三方账户需要您使用当前绑定的三方账户进行授权##10:To unbind a third-party account, you must first log in and authorize this action.##14:Pour délier un compte tiers, vous devez d'abord vous connecter et autoriser cette action.##15:Zum Entfernen eines Drittanbieter-Kontos musst du dich zuerst anmelden und die Aktion bestätigen.##22:外部アカウントの連携解除を行うには、現在連携中の外部アカウントでの認証が必要です。##23:제3자 계정 연동을 해제하려면, 현재 연동된 계정으로 인증하셔야 합니다.##34:Para desvincular una cuenta de terceros, primero tienes que iniciar sesión y autorizar esta acción.##36:ในการยกเลิกการผูกบัญชีบุคคลที่สาม ท่านจะต้องล็อกอิน และให้สิทธิ์การดำเนินการนี้ก่อน##41:解除綁定需要您使用目前已綁定的第三方帳戶進行授權\"\""
     }
   },
-  "status": "processed_182_items"
+  "status": "processed_209_items"
 }

@@ -1,6 +1,6 @@
 {
   "className": "CData_CastleStarTech",
-  "timestamp": "2025-07-08T13:35:26.174Z",
+  "timestamp": "2025-07-16T14:13:57.805Z",
   "data": {
     "1": {
       "_type": "nested_dictionary",
@@ -16,7 +16,7 @@
           "m_mStarName": "\"Star 1-1: Order\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "1",
           "m_ItemConsume": "[[999,5000]]",
           "m_CharacterList": "[20260]"
@@ -65,7 +65,7 @@
           "m_mStarName": "\"Star 2-2: Tenacity\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "2",
           "m_ItemConsume": "[[999,10000]]",
           "m_CharacterList": "[20260,20020]"
@@ -135,7 +135,7 @@
           "m_mStarName": "\"Star 4-1: Innovation\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "2",
           "m_ItemConsume": "[[999,20000]]",
           "m_CharacterList": "[20530,20010]"
@@ -184,7 +184,7 @@
           "m_mStarName": "\"Star 5-2: Control\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "2",
           "m_ItemConsume": "[[999,50000]]",
           "m_CharacterList": "[20530,20020]"
@@ -254,7 +254,7 @@
           "m_mStarName": "\"Star 7-1: Mercy\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "2",
           "m_ItemConsume": "[[999,200000]]",
           "m_CharacterList": "[20240,20030]"
@@ -317,7 +317,7 @@
           "m_mStarName": "\"Star 8-3: Perpetuity\"",
           "m_EffectType": "1",
           "m_EffectData": "[[999,10]]",
-          "m_mEffectDes": "\"+10% Solis from Moonlight Tribute.\"",
+          "m_mEffectDes": "\"+10% Soli from Moonlight Tribute.\"",
           "m_CharacterCount": "2",
           "m_ItemConsume": "[[999,400000]]",
           "m_CharacterList": "[20250,20010]"
@@ -365,7 +365,7 @@
           "m_Position": "3",
           "m_mStarName": "\"Star 9-2: Wisdom\"",
           "m_EffectType": "1",
-          "m_EffectData": "[[1002,5]]",
+          "m_EffectData": "[[1002,10]]",
           "m_mEffectDes": "\"Divine Blood Drops +10% from Moonlight Tribute.\"",
           "m_CharacterCount": "3",
           "m_ItemConsume": "[[999,600000]]",

@@ -1,12 +1,12 @@
 {
   "className": "CData_MonsterTips",
-  "timestamp": "2025-07-08T13:35:40.438Z",
+  "timestamp": "2025-07-16T14:14:11.879Z",
   "data": {
     "10238": {
       "m_bError": null,
       "m_MonsterID": "10238",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"Defeat the enemy with the power of Illusion.\"",
+      "m_mIntroduce": "\"Defeat the enemy with the power of Mirage.\"",
       "m_MonsterIcon": "\"Atlas_Role/Dalcarlo_Cat001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -15,7 +15,7 @@
       "m_bError": null,
       "m_MonsterID": "10241",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"Dalcarlo has learned the art of tarot and Illusion is now much more powerful.\"",
+      "m_mIntroduce": "\"Dalcarlo has learned the art of tarot and Mirage is now much more powerful.\"",
       "m_MonsterIcon": "\"Atlas_Role/Dalcarlo_Cat001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -267,7 +267,7 @@
       "m_bError": null,
       "m_MonsterID": "30400",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"A Divine Body that sealed the Calamity \"Death,\", the one Divine Body closest to Aeon's own will. Inflict Silence and Taunt to limit her damage.\"",
+      "m_mIntroduce": "\"A Divine Body that sealed the Calamity \"Death,\" and the one closest to Aeon's own Will. Assassins and melee units are recommended.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Ainosoracle_Base001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -285,7 +285,7 @@
       "m_bError": null,
       "m_MonsterID": "30490",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"A creature infected with Black Blood, now transformed into a beast. At low HP, its ATK Speed and DMG will increase.\"",
+      "m_mIntroduce": "\"A creature infected with Black Blood, now transformed into a beast. At low HP, its ATK SPD and DMG will increase.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Werewolf_Base001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -654,7 +654,7 @@
       "m_bError": null,
       "m_MonsterID": "30910",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"A creature that roams the unstable space that deals AoE DMG.\"",
+      "m_mIntroduce": "\"A creature that roams through unstable space, capable of dealing AoE DMG.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Worm_Phy_Long001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -857,12 +857,75 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "31420": {
+      "m_bError": null,
+      "m_MonsterID": "31420",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mysterious siren from Sapphire Isle, its Special gains power based on the DMG it takes while charging. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nagas_GunShield001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31430": {
+      "m_bError": null,
+      "m_MonsterID": "31430",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mysterious siren from Sapphire Isle, it throws spinning thorns that deal continuous DMG to nearby targets. Stay away from the spinning thorns.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nagas_Archer001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31440": {
+      "m_bError": null,
+      "m_MonsterID": "31440",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mysterious siren from Sapphire Isle, it summons Healing bubbles that continuously restore HP. Focus on destroying the bubbles first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nagas_Support001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31442": {
+      "m_bError": null,
+      "m_MonsterID": "31442",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A mysterious siren from Sapphire Isle, it summons unstable bubbles which attack. Focus on destroying the bubbles first.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Nagas_Support001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "31451": {
       "m_bError": null,
       "m_MonsterID": "31451",
       "m_MonsterType": "1",
       "m_mIntroduce": "\"Continuously recovers HP while inside its crystal tomb. Upon the destruction of the tomb, they will be re-awakened and join the battle. Prioritize destroying the tomb to prevent its recovery.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Crab_Corruption_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31550": {
+      "m_bError": null,
+      "m_MonsterID": "31550",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A guard maintaining order on the Isle, their Basic ATK creates mist clouds by throwing drinks. Their Special ignites these clouds, dealing damage to units in the mist. Interrupt their charge.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mafia_BeerMug001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31560": {
+      "m_bError": null,
+      "m_MonsterID": "31560",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A guard maintaining order on the Isle, they unleash a flurry of flying knives after several Basic ATKs. Mind your positioning.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mafia_Knife001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31570": {
+      "m_bError": null,
+      "m_MonsterID": "31570",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A guard maintaining order on the Isle, they have sequential charging skills, each triggering the next. Interrupt their charges.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mafia_Mace001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
@@ -897,7 +960,7 @@
       "m_bError": null,
       "m_MonsterID": "31800",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"Blood Beast hidden in the sealed area, the Blood Beast uses its powerful claws to send out Shockwaves, reducing its target's Energy Regen Rate.\"",
+      "m_mIntroduce": "\"A Blood Beast lurking in the sealed area, its claw strikes unleash Shockwaves. Vassals hit by Shockwaves deal reduced DMG. Focus fire on the beast or purify affected Vassals.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_BlackBloodBat_Base001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -906,7 +969,7 @@
       "m_bError": null,
       "m_MonsterID": "31900",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"Blood Beast hidden in the sealed area. Uses its wings to generate Sound Waves which reduce the target's Energy Regen Rate.\"",
+      "m_mIntroduce": "\"A Blood Beast lurking in the sealed area, its wing flaps release multiple Sound Waves. Vassals hit by Sound Waves deal reduced DMG. Focus fire on the beast or purify affected Vassals.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_BlackBloodBat_Soldie001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -1162,7 +1225,16 @@
       "m_MonsterIcon": "\"Atlas_Monster/M_Slime_EliteMage001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
+    },
+    "61030": {
+      "m_bError": null,
+      "m_MonsterID": "61030",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Little Bella No. 13 summons a Prototype to assist in the battle. When Little Bella No. 13 uses her Ultimate, use movement or purify abilities as soon as possible to break free from her control!\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_CrazyBear_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
     }
   },
-  "status": "processed_129_items"
+  "status": "processed_137_items"
 }

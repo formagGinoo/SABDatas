@@ -1,6 +1,6 @@
 {
   "className": "CData_BattleResultCondition",
-  "timestamp": "2025-07-08T13:35:24.188Z",
+  "timestamp": "2025-07-16T14:13:55.526Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -212,7 +212,7 @@
     "1000408": {
       "m_bError": null,
       "m_ID": "1000408",
-      "m_mDesc": "\"Defeat the Plague Hatchlings.\"",
+      "m_mDesc": "\"Defeat the Plague Queen.\"",
       "m_SuccessAnd": "1",
       "m_ConditonSuccess": "[100,1000408]",
       "m_FailAnd": "1",
@@ -545,7 +545,7 @@
     "1000613": {
       "m_bError": null,
       "m_ID": "1000613",
-      "m_mDesc": "\"Defeat the Blood Beasts on the deck.\"",
+      "m_mDesc": "\"Defeat the Infected Landis descendant.\"",
       "m_SuccessAnd": "1",
       "m_ConditonSuccess": "[2,100]",
       "m_FailAnd": "1",
@@ -743,7 +743,7 @@
     "1000903": {
       "m_bError": null,
       "m_ID": "1000903",
-      "m_mDesc": "\"Defeat the suddenly appearing Blood Beast.\"",
+      "m_mDesc": "\"Defeat the suddenly appearing Blood Beasts.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -878,7 +878,7 @@
     "1001001": {
       "m_bError": null,
       "m_ID": "1001001",
-      "m_mDesc": "\"Defeat the emerging Blood Beasts.\"",
+      "m_mDesc": "\"Defeat the Bloodborn Vassals.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -887,7 +887,7 @@
     "1001002": {
       "m_bError": null,
       "m_ID": "1001002",
-      "m_mDesc": "\"Defeat the emerging Blood Beasts.\"",
+      "m_mDesc": "\"Defeat the Bloodborn Vassals.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -896,7 +896,7 @@
     "1001003": {
       "m_bError": null,
       "m_ID": "1001003",
-      "m_mDesc": "\"Defeat the emerging Blood Beasts and Black Blood Church Soldiers.\"",
+      "m_mDesc": "\"Defeat the War Machines.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -905,16 +905,16 @@
     "1001004": {
       "m_bError": null,
       "m_ID": "1001004",
-      "m_mDesc": "\"Survive <#A65F30>Thibault's</color> attacks for 60 sec.\"",
-      "m_SuccessAnd": "1",
-      "m_ConditonSuccess": "[2,100]",
+      "m_mDesc": "\"Defeat Pavana and the War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
-      "m_ConditionFail": "[101]"
+      "m_ConditionFail": "[1,101]"
     },
     "1001005": {
       "m_bError": null,
       "m_ID": "1001005",
-      "m_mDesc": "\"Defeat the emerging War Machines.\"",
+      "m_mDesc": "\"Defeat the War Machines.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -923,61 +923,61 @@
     "1001006": {
       "m_bError": null,
       "m_ID": "1001006",
-      "m_mDesc": "\"Defeat the emerging War Machines.\"",
-      "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[100]",
-      "m_FailAnd": "1",
-      "m_ConditionFail": "[1,101]"
-    },
-    "1001007": {
-      "m_bError": null,
-      "m_ID": "1001007",
-      "m_mDesc": "\"Defeat the emerging War Machines.\"",
-      "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[100]",
-      "m_FailAnd": "1",
-      "m_ConditionFail": "[1,101]"
-    },
-    "1001008": {
-      "m_bError": null,
-      "m_ID": "1001008",
-      "m_mDesc": "\"Survive <#A65F30>Acappella's</color> attack for 60 sec.\"",
+      "m_mDesc": "\"Survive <#A65F30>Dalcarlo</color> for 60 sec.\"",
       "m_SuccessAnd": "1",
       "m_ConditonSuccess": "[2,100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[101]"
     },
+    "1001007": {
+      "m_bError": null,
+      "m_ID": "1001007",
+      "m_mDesc": "\"Survive <#A65F30>Cidhall</color> for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1001008": {
+      "m_bError": null,
+      "m_ID": "1001008",
+      "m_mDesc": "\"Defeat Cain and his Blood Servants.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "1001009": {
       "m_bError": null,
       "m_ID": "1001009",
-      "m_mDesc": "\"Defeat all the Blood Beasts and War Machines.\"",
+      "m_mDesc": "\"Defeat the reawakened <#A65F30>Soulless</color>.\"",
       "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[100]",
+      "m_ConditonSuccess": "[1001013]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
     "1001010": {
       "m_bError": null,
       "m_ID": "1001010",
-      "m_mDesc": "\"Protect <#A65F30>Ressa</color> and defeat all Church Soldiers.\"",
-      "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[100]",
-      "m_FailAnd": "1",
-      "m_ConditionFail": "[1,101,1001010]"
-    },
-    "1001011": {
-      "m_bError": null,
-      "m_ID": "1001011",
-      "m_mDesc": "\"Defeat the Tentacles and Blood Beasts.\"",
+      "m_mDesc": "\"Defeat Mass and her Bloodborn Vassals.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "1001011": {
+      "m_bError": null,
+      "m_ID": "1001011",
+      "m_mDesc": "\"Survive William and Jones for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
     "1001012": {
       "m_bError": null,
       "m_ID": "1001012",
-      "m_mDesc": "\"Defeat the wolf pack.\"",
+      "m_mDesc": "\"Defeat the infected Church soldiers.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -986,16 +986,16 @@
     "1001013": {
       "m_bError": null,
       "m_ID": "1001013",
-      "m_mDesc": "\"Defeat the <#A65F30>Soulless</color>.\"",
+      "m_mDesc": "\"Defeat the Blood Servants.\"",
       "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[1001013]",
+      "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
     "1001014": {
       "m_bError": null,
       "m_ID": "1001014",
-      "m_mDesc": "\"Defeat all the Black Blood Church Soldiers and War Machines.\"",
+      "m_mDesc": "\"Defeat Lamia and the Blood Servants.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1004,7 +1004,7 @@
     "1001015": {
       "m_bError": null,
       "m_ID": "1001015",
-      "m_mDesc": "\"Defeat <#A65F30>Agares</color>.\"",
+      "m_mDesc": "\"Reserved String\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1013,16 +1013,7 @@
     "1001016": {
       "m_bError": null,
       "m_ID": "1001016",
-      "m_mDesc": "\"Defeat Agares in his <#A65F30>Covenant Form</color>.\"",
-      "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[1001016]",
-      "m_FailAnd": "1",
-      "m_ConditionFail": "[1,101]"
-    },
-    "1001017": {
-      "m_bError": null,
-      "m_ID": "1001017",
-      "m_mDesc": "\"Defeat <#A65F30>Agares Samael</color>, \"Fallen Red Lotus.\"\"",
+      "m_mDesc": "\"Reserved String\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1202,7 +1193,7 @@
     "1007141": {
       "m_bError": null,
       "m_ID": "1007141",
-      "m_mDesc": "\"Defeat the old Gravekeeper and Nightmares.\"",
+      "m_mDesc": "\"Defeat the Nightmares and Gravekeepers.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1295,6 +1286,24 @@
       "m_mDesc": "\"Release <#A65F30>Jestel's family members</color> from their misery.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200080]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1101045": {
+      "m_bError": null,
+      "m_ID": "1101045",
+      "m_mDesc": "\"Defeat Cain and the War Machines.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1101052": {
+      "m_bError": null,
+      "m_ID": "1101052",
+      "m_mDesc": "\"Defeat all Mass.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
@@ -1442,6 +1451,15 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2100031": {
+      "m_bError": null,
+      "m_ID": "2100031",
+      "m_mDesc": "\"Defeat Little Bella No. 13\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "2200001": {
       "m_bError": null,
       "m_ID": "2200001",
@@ -1531,6 +1549,51 @@
       "m_ConditonSuccess": "[6]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[101]"
+    },
+    "2500001": {
+      "m_bError": null,
+      "m_ID": "2500001",
+      "m_mDesc": "\"Defeat the Undying Armor.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2500001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2500002": {
+      "m_bError": null,
+      "m_ID": "2500002",
+      "m_mDesc": "\"Defeat the Mutant Escapee.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2500002]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2500003": {
+      "m_bError": null,
+      "m_ID": "2500003",
+      "m_mDesc": "\"Defeat the Swarming Carapace.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2500003]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2500004": {
+      "m_bError": null,
+      "m_ID": "2500004",
+      "m_mDesc": "\"Defeat the Blade of Tempus.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2500004]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2500005": {
+      "m_bError": null,
+      "m_ID": "2500005",
+      "m_mDesc": "\"Defeat the Infected Villager.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2500005]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
     },
     "4000001": {
       "m_bError": null,
@@ -1691,6 +1754,222 @@
       "m_mDesc": "\"Defeat the <#A65F31>Black Blood Tentacle</color>.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[6000225]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000301": {
+      "m_bError": null,
+      "m_ID": "6000301",
+      "m_mDesc": "\"Defeat Michel Savich's subordinates.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000302": {
+      "m_bError": null,
+      "m_ID": "6000302",
+      "m_mDesc": "\"Defeat the sirens as they emerge.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000303": {
+      "m_bError": null,
+      "m_ID": "6000303",
+      "m_mDesc": "\"Defeat the monsters.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000304": {
+      "m_bError": null,
+      "m_ID": "6000304",
+      "m_mDesc": "\"Defeat Savich Sr.'s guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000305": {
+      "m_bError": null,
+      "m_ID": "6000305",
+      "m_mDesc": "\"Defeat the sirens threatening your companions.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000306": {
+      "m_bError": null,
+      "m_ID": "6000306",
+      "m_mDesc": "\"Survive the Mysterious siren for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "6000307": {
+      "m_bError": null,
+      "m_ID": "6000307",
+      "m_mDesc": "\"Defeat companions who turned hostile.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000308": {
+      "m_bError": null,
+      "m_ID": "6000308",
+      "m_mDesc": "\"Team up with the Siren to help Isaac Van Helsing escape from prison.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000308]"
+    },
+    "6000309": {
+      "m_bError": null,
+      "m_ID": "6000309",
+      "m_mDesc": "\"Defeat Michel Savich's guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000310": {
+      "m_bError": null,
+      "m_ID": "6000310",
+      "m_mDesc": "\"Defeat the Auction House guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000310]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000311": {
+      "m_bError": null,
+      "m_ID": "6000311",
+      "m_mDesc": "\"Protect Isaac Van Helsing and defeat Hallon's guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000311]"
+    },
+    "6000312": {
+      "m_bError": null,
+      "m_ID": "6000312",
+      "m_mDesc": "\"Defeat Lorelei, the \"Mistbound Terror\".\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000312]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000401": {
+      "m_bError": null,
+      "m_ID": "6000401",
+      "m_mDesc": "\"Defeat Robin von Quinn's henchmen.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000402": {
+      "m_bError": null,
+      "m_ID": "6000402",
+      "m_mDesc": "\"Defeat Alexa Griwsold's henchmen.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000403": {
+      "m_bError": null,
+      "m_ID": "6000403",
+      "m_mDesc": "\"Defeat Viktor Thoreau.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000403]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000404": {
+      "m_bError": null,
+      "m_ID": "6000404",
+      "m_mDesc": "\"Help Bella defeat Noah and obtain Siren's Tear.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000405": {
+      "m_bError": null,
+      "m_ID": "6000405",
+      "m_mDesc": "\"Defeat Alexa Griwsold's guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000406": {
+      "m_bError": null,
+      "m_ID": "6000406",
+      "m_mDesc": "\"Protect Noah from the guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000406]"
+    },
+    "6000407": {
+      "m_bError": null,
+      "m_ID": "6000407",
+      "m_mDesc": "\"Defeat the ship guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000408": {
+      "m_bError": null,
+      "m_ID": "6000408",
+      "m_mDesc": "\"Ensure Constantine's safety.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000408]"
+    },
+    "6000409": {
+      "m_bError": null,
+      "m_ID": "6000409",
+      "m_mDesc": "\"Defeat Hallon's guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000410": {
+      "m_bError": null,
+      "m_ID": "6000410",
+      "m_mDesc": "\"Team up with the Siren and defeat the guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000411": {
+      "m_bError": null,
+      "m_ID": "6000411",
+      "m_mDesc": "\"Defeat Joyce's Puppet Army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000412,1000502]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000412": {
+      "m_bError": null,
+      "m_ID": "6000412",
+      "m_mDesc": "\"Defeat Bella No. 13 and thwart Joyce's plan.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
@@ -1947,5 +2226,5 @@
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_216_items"
+  "status": "processed_247_items"
 }

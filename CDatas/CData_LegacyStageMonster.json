@@ -1,6 +1,6 @@
 {
   "className": "CData_LegacyStageMonster",
-  "timestamp": "2025-07-08T13:35:35.588Z",
+  "timestamp": "2025-07-16T14:14:07.090Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -17,7 +17,10 @@
       "m_ViewPower": "3",
       "m_Alarm": "20",
       "m_BattleAreaID": "1",
-      "m_PatrolType": null
+      "m_PatrolType": null,
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     },
     "13": {
       "m_bError": null,
@@ -34,7 +37,10 @@
       "m_ViewPower": "3",
       "m_Alarm": "20",
       "m_BattleAreaID": "2",
-      "m_PatrolType": "2"
+      "m_PatrolType": "2",
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     },
     "21": {
       "m_bError": null,
@@ -51,7 +57,10 @@
       "m_ViewPower": "3",
       "m_Alarm": "20",
       "m_BattleAreaID": null,
-      "m_PatrolType": null
+      "m_PatrolType": null,
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     },
     "100": {
       "m_bError": null,
@@ -68,7 +77,10 @@
       "m_ViewPower": null,
       "m_Alarm": "20",
       "m_BattleAreaID": "1",
-      "m_PatrolType": null
+      "m_PatrolType": null,
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     },
     "101": {
       "m_bError": null,
@@ -85,7 +97,10 @@
       "m_ViewPower": null,
       "m_Alarm": "20",
       "m_BattleAreaID": null,
-      "m_PatrolType": null
+      "m_PatrolType": null,
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     },
     "10000": {
       "m_bError": null,
@@ -102,7 +117,10 @@
       "m_ViewPower": "3",
       "m_Alarm": "20",
       "m_BattleAreaID": null,
-      "m_PatrolType": "2"
+      "m_PatrolType": "2",
+      "m_LineType1": "1",
+      "m_LineType2": "2",
+      "m_LineType3": null
     }
   },
   "status": "processed_6_items"

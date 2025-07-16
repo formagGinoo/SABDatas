@@ -1,6 +1,6 @@
 {
   "className": "CData_TaskMainReward",
-  "timestamp": "2025-07-08T13:35:52.187Z",
+  "timestamp": "2025-07-16T14:14:24.934Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -10,7 +10,7 @@
       "m_TaskList": "[301001,301002,301003]",
       "m_Reward": "[[50004,5],[1001,170000],[999,5000]]",
       "m_NextMainTaskID": "2",
-      "m_mRewardDes": "\"Main Story Stage-01 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-01 Rewards Available\""
     },
     "2": {
       "m_bError": null,
@@ -20,7 +20,7 @@
       "m_TaskList": "[301004,301005,301006]",
       "m_Reward": "[[101,300],[50004,5]]",
       "m_NextMainTaskID": "3",
-      "m_mRewardDes": "\"Main Story Stage-02 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-02 Rewards Available\""
     },
     "3": {
       "m_bError": null,
@@ -30,7 +30,7 @@
       "m_TaskList": "[301007,301008,301009]",
       "m_Reward": "[[1050,5],[101,100]]",
       "m_NextMainTaskID": "4",
-      "m_mRewardDes": "\"Main Story Stage-03 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-03 Rewards Available\""
     },
     "4": {
       "m_bError": null,
@@ -40,7 +40,7 @@
       "m_TaskList": "[301010,301011,301012]",
       "m_Reward": "[[1050,5],[101,100],[1001,120000]]",
       "m_NextMainTaskID": "5",
-      "m_mRewardDes": "\"Main Story Stage-04 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-04 Rewards Available\""
     },
     "5": {
       "m_bError": null,
@@ -50,7 +50,7 @@
       "m_TaskList": "[301013,301014,301015]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "6",
-      "m_mRewardDes": "\"Main Story Stage-05 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-05 Rewards Available\""
     },
     "6": {
       "m_bError": null,
@@ -60,7 +60,7 @@
       "m_TaskList": "[301016,301017,301018]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "7",
-      "m_mRewardDes": "\"Main Story Stage-06 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-06 Rewards Available\""
     },
     "7": {
       "m_bError": null,
@@ -70,7 +70,7 @@
       "m_TaskList": "[301019,301020,301021]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "8",
-      "m_mRewardDes": "\"Main Story Stage-07 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-07 Rewards Available\""
     },
     "8": {
       "m_bError": null,
@@ -80,7 +80,7 @@
       "m_TaskList": "[301022,301023,301024]",
       "m_Reward": "[[50004,5],[1002,150]]",
       "m_NextMainTaskID": "9",
-      "m_mRewardDes": "\"Main Story Stage-08 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-08 Rewards Available\""
     },
     "9": {
       "m_bError": null,
@@ -90,7 +90,7 @@
       "m_TaskList": "[301025,301026,301027]",
       "m_Reward": "[[50004,5],[1001,200000]]",
       "m_NextMainTaskID": "10",
-      "m_mRewardDes": "\"Main Story Stage-09 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-09 Rewards Available\""
     },
     "10": {
       "m_bError": null,
@@ -100,7 +100,7 @@
       "m_TaskList": "[301028,301029,301030]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "11",
-      "m_mRewardDes": "\"Main Story Stage-10 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-10 Rewards Available\""
     },
     "11": {
       "m_bError": null,
@@ -110,7 +110,7 @@
       "m_TaskList": "[301032,301031,301033]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "12",
-      "m_mRewardDes": "\"Main Story Stage-11 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-11 Rewards Available\""
     },
     "12": {
       "m_bError": null,
@@ -120,7 +120,7 @@
       "m_TaskList": "[301034,301035,301036]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "13",
-      "m_mRewardDes": "\"Main Story Stage-12 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-12 Rewards Available\""
     },
     "13": {
       "m_bError": null,
@@ -130,7 +130,7 @@
       "m_TaskList": "[301037,301038,301039]",
       "m_Reward": "[[50004,5],[101,100]]",
       "m_NextMainTaskID": "14",
-      "m_mRewardDes": "\"Main Story Stage-13 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-13 Rewards Available\""
     },
     "14": {
       "m_bError": null,
@@ -140,7 +140,7 @@
       "m_TaskList": "[301040,301041,301042]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "15",
-      "m_mRewardDes": "\"Main Story Stage-14 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-14 Rewards Available\""
     },
     "15": {
       "m_bError": null,
@@ -150,7 +150,7 @@
       "m_TaskList": "[301043,301044,301045]",
       "m_Reward": "[[50004,10],[1002,200]]",
       "m_NextMainTaskID": "16",
-      "m_mRewardDes": "\"Main Story Stage-15 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-15 Rewards Available\""
     },
     "16": {
       "m_bError": null,
@@ -160,7 +160,7 @@
       "m_TaskList": "[301046,301047,301048]",
       "m_Reward": "[[50004,10],[1001,350000]]",
       "m_NextMainTaskID": "17",
-      "m_mRewardDes": "\"Main Story Stage-16 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-16 Rewards Available\""
     },
     "17": {
       "m_bError": null,
@@ -170,7 +170,7 @@
       "m_TaskList": "[301049,301050,301051]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "18",
-      "m_mRewardDes": "\"Main Story Stage-17 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-17 Rewards Available\""
     },
     "18": {
       "m_bError": null,
@@ -180,7 +180,7 @@
       "m_TaskList": "[301052,301053,301054]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "19",
-      "m_mRewardDes": "\"Main Story Stage-18 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-18 Rewards Available\""
     },
     "19": {
       "m_bError": null,
@@ -190,7 +190,7 @@
       "m_TaskList": "[301055,301056,301057]",
       "m_Reward": "[[50004,10],[1002,250]]",
       "m_NextMainTaskID": "20",
-      "m_mRewardDes": "\"Main Story Stage-19 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-19 Rewards Available\""
     },
     "20": {
       "m_bError": null,
@@ -200,7 +200,7 @@
       "m_TaskList": "[301058,301059,301060]",
       "m_Reward": "[[50004,10],[1001,720000]]",
       "m_NextMainTaskID": "21",
-      "m_mRewardDes": "\"Main Story Stage-20 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-20 Rewards Available\""
     },
     "21": {
       "m_bError": null,
@@ -210,7 +210,7 @@
       "m_TaskList": "[301061,301062,301063]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "22",
-      "m_mRewardDes": "\"Main Story Stage-21 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-21 Rewards Available\""
     },
     "22": {
       "m_bError": null,
@@ -220,7 +220,7 @@
       "m_TaskList": "[301064,301065,301066]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "23",
-      "m_mRewardDes": "\"Main Story Stage-22 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-22 Rewards Available\""
     },
     "23": {
       "m_bError": null,
@@ -230,7 +230,7 @@
       "m_TaskList": "[301067,301068,301069]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "24",
-      "m_mRewardDes": "\"Main Story Stage-23 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-23 Rewards Available\""
     },
     "24": {
       "m_bError": null,
@@ -240,7 +240,7 @@
       "m_TaskList": "[301070,301071,301072]",
       "m_Reward": "[[50004,10],[101,100]]",
       "m_NextMainTaskID": "25",
-      "m_mRewardDes": "\"Main Story Stage-24 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-24 Rewards Available\""
     },
     "25": {
       "m_bError": null,
@@ -250,7 +250,7 @@
       "m_TaskList": "[301073,301074,301075]",
       "m_Reward": "[[50004,10],[1002,350]]",
       "m_NextMainTaskID": "26",
-      "m_mRewardDes": "\"Main Story Stage-25 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-25 Rewards Available\""
     },
     "26": {
       "m_bError": null,
@@ -260,7 +260,7 @@
       "m_TaskList": "[301076,301077,301078]",
       "m_Reward": "[[50004,10],[1001,1000000]]",
       "m_NextMainTaskID": "27",
-      "m_mRewardDes": "\"Main Story Stage-26 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-26 Rewards Available\""
     },
     "27": {
       "m_bError": null,
@@ -270,7 +270,7 @@
       "m_TaskList": "[301079,301080,301081]",
       "m_Reward": "[[50004,10],[1002,350]]",
       "m_NextMainTaskID": "28",
-      "m_mRewardDes": "\"Main Story Stage-27 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-27 Rewards Available\""
     },
     "28": {
       "m_bError": null,
@@ -280,7 +280,7 @@
       "m_TaskList": "[301082,301083,301084]",
       "m_Reward": "[[50004,10],[1001,1500000]]",
       "m_NextMainTaskID": "29",
-      "m_mRewardDes": "\"Main Story Stage-28 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-28 Rewards Available\""
     },
     "29": {
       "m_bError": null,
@@ -290,7 +290,7 @@
       "m_TaskList": "[301085,301086,301087]",
       "m_Reward": "[[50004,10],[1001,1600000]]",
       "m_NextMainTaskID": "30",
-      "m_mRewardDes": "\"Main Story Stage-29 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-29 Rewards Available\""
     },
     "30": {
       "m_bError": null,
@@ -300,7 +300,7 @@
       "m_TaskList": "[301088,301089,301090]",
       "m_Reward": "[[50004,10],[1001,1600000],[1002,350]]",
       "m_NextMainTaskID": "31",
-      "m_mRewardDes": "\"Main Story Stage-30 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-30 Rewards Available\""
     },
     "31": {
       "m_bError": null,
@@ -310,7 +310,7 @@
       "m_TaskList": "[301091,301092,301093]",
       "m_Reward": "[[50004,10],[1002,350]]",
       "m_NextMainTaskID": "32",
-      "m_mRewardDes": "\"Main Story Stage-31 Rewards Available\""
+      "m_mRewardDes": "\"Story Stage-31 Rewards Available\""
     },
     "32": {
       "m_bError": null,
@@ -319,9 +319,49 @@
       "m_mName": "\"Stage\"",
       "m_TaskList": "[301094,301095,301096]",
       "m_Reward": "[[50004,10],[1001,1600000]]",
+      "m_NextMainTaskID": "33",
+      "m_mRewardDes": "\"Story Stage-32 Rewards Available\""
+    },
+    "33": {
+      "m_bError": null,
+      "m_ID": "33",
+      "m_Title": "\"33\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301097,301098,301099]",
+      "m_Reward": "[[50004,10],[1002,350]]",
+      "m_NextMainTaskID": "34",
+      "m_mRewardDes": "\"Story Stage-33 Rewards Available\""
+    },
+    "34": {
+      "m_bError": null,
+      "m_ID": "34",
+      "m_Title": "\"34\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301100,301101,301102]",
+      "m_Reward": "[[50004,10],[1001,1600000]]",
+      "m_NextMainTaskID": "35",
+      "m_mRewardDes": "\"Story Stage-34 Rewards Available\""
+    },
+    "35": {
+      "m_bError": null,
+      "m_ID": "35",
+      "m_Title": "\"35\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301103,301104,301105]",
+      "m_Reward": "[[50004,10],[1002,400]]",
+      "m_NextMainTaskID": "36",
+      "m_mRewardDes": "\"Story Stage-35 Rewards Available\""
+    },
+    "36": {
+      "m_bError": null,
+      "m_ID": "36",
+      "m_Title": "\"36\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301106,301107,301108]",
+      "m_Reward": "[[50004,10],[1001,1600000]]",
       "m_NextMainTaskID": null,
-      "m_mRewardDes": "\"Main Story Stage-32 Rewards Available\""
+      "m_mRewardDes": "\"\""
     }
   },
-  "status": "processed_32_items"
+  "status": "processed_36_items"
 }

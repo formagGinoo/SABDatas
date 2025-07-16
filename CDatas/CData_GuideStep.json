@@ -1,6 +1,6 @@
 {
   "className": "CData_GuideStep",
-  "timestamp": "2025-07-08T13:35:34.275Z",
+  "timestamp": "2025-07-16T14:14:05.885Z",
   "data": {
     "10": {
       "m_bError": null,
@@ -13,7 +13,9 @@
       "m_SubStepIds": "[100001,100002,100003,100004,100005,100006,100007,100008,100009]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "11": {
       "m_bError": null,
@@ -26,7 +28,9 @@
       "m_SubStepIds": "[110001,110002,110003,110004,110005,110006,110007,110008,110009,110010,110011,110012,110013,110014,110015,110016,110017,110018,110019,110020,110021,110022]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "20": {
       "m_bError": null,
@@ -39,7 +43,9 @@
       "m_SubStepIds": "[200001,200002,200003,200004,200005,200006,200007,200008,200009,200010,200011,200012,200013,200014,200015,200016,200017,200018,200019,200020,200021,200022,200023,200024,200025,200026,200027,200028,200029,200030,200031,200032,200033,200034,200035,200036,200037,200038,200039,200040]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "21": {
       "m_bError": null,
@@ -52,7 +58,9 @@
       "m_SubStepIds": "[210001,210002,210003,210004,210005,210006,210007,210008]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "30": {
       "m_bError": null,
@@ -65,7 +73,9 @@
       "m_SubStepIds": "[300001,300002,300003,300004,300005,300006,300007,300008,300009,300010,300011,300012,300013,300014,300015,300016,300017,300018,300019,300020,300021,300022,300023,300024,300025,300026,300027,300028,300029,300030,300031,300032,300033,300034,300035,300036,300037,300038]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "31": {
       "m_bError": null,
@@ -78,7 +88,9 @@
       "m_SubStepIds": "[310001,310002]",
       "m_Priority": "99",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "35": {
       "m_bError": null,
@@ -91,7 +103,9 @@
       "m_SubStepIds": "[350001,350002,350003,350004,350005,350006]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "36": {
       "m_bError": null,
@@ -104,7 +118,9 @@
       "m_SubStepIds": "[360001,360002,360003,360004,360005,360006,360007,360008,360009,360010,360011,360012]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "40": {
       "m_bError": null,
@@ -117,7 +133,9 @@
       "m_SubStepIds": "[400001,400002,400003]",
       "m_Priority": "10000",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[2]",
+      "m_FinishConditionParam": "[1102010]"
     },
     "41": {
       "m_bError": null,
@@ -130,7 +148,9 @@
       "m_SubStepIds": "[410001,410002,410003,410004,410005,410006,410007]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "42": {
       "m_bError": null,
@@ -143,7 +163,9 @@
       "m_SubStepIds": "[420001,420002,420003,420004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "43": {
       "m_bError": null,
@@ -156,7 +178,9 @@
       "m_SubStepIds": "[430001,430002]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "44": {
       "m_bError": null,
@@ -169,7 +193,9 @@
       "m_SubStepIds": "[440001,440002,440003,440004]",
       "m_Priority": "101",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "45": {
       "m_bError": null,
@@ -182,7 +208,9 @@
       "m_SubStepIds": "[450001,450002,450003,450004,450005,450006,450007,450008]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "46": {
       "m_bError": null,
@@ -195,7 +223,9 @@
       "m_SubStepIds": "[460001,460002]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "70": {
       "m_bError": null,
@@ -208,7 +238,9 @@
       "m_SubStepIds": "[700001,700002,700003,700004,700005,700006,700007,700008,700009,700010,700011,700012,700013,700014,700015,700016,700017,700018,700019,700020,700021,700022,700023,700024,700025,700026,700027,700028,700029,700030,700031,700032,700033,700034,700035,700036,700037,700038,700039,700040]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "71": {
       "m_bError": null,
@@ -221,7 +253,9 @@
       "m_SubStepIds": "[710001,710002,710003,710004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "72": {
       "m_bError": null,
@@ -234,7 +268,9 @@
       "m_SubStepIds": "[720001,720002]",
       "m_Priority": "200",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "73": {
       "m_bError": null,
@@ -247,7 +283,9 @@
       "m_SubStepIds": "[730001,730002,730003,730004,730005]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "74": {
       "m_bError": null,
@@ -260,7 +298,9 @@
       "m_SubStepIds": "[740001,740002,740003,740004,740005,740006,740007,740008,740009,740010]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "75": {
       "m_bError": null,
@@ -273,7 +313,9 @@
       "m_SubStepIds": "[750001]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "76": {
       "m_bError": null,
@@ -286,7 +328,9 @@
       "m_SubStepIds": "[760001,760002]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "79": {
       "m_bError": null,
@@ -299,7 +343,9 @@
       "m_SubStepIds": "[790001,790002,790003,790004,790005,790006,790007,790008,790009]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "80": {
       "m_bError": null,
@@ -312,7 +358,9 @@
       "m_SubStepIds": "[800001,800002,800003,800004,800005,800006]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "81": {
       "m_bError": null,
@@ -325,7 +373,9 @@
       "m_SubStepIds": "[810001,810002,810003,810004]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "82": {
       "m_bError": null,
@@ -338,7 +388,9 @@
       "m_SubStepIds": "[820001,820002,820003,820004,820005,820006]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "83": {
       "m_bError": null,
@@ -351,7 +403,9 @@
       "m_SubStepIds": "[830001,830002,830003,830004,830005,830006,830007,830008,830009,830010]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "84": {
       "m_bError": null,
@@ -364,7 +418,9 @@
       "m_SubStepIds": "[840001]",
       "m_Priority": "10000",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[2]",
+      "m_FinishConditionParam": "[1102050]"
     },
     "85": {
       "m_bError": null,
@@ -377,7 +433,9 @@
       "m_SubStepIds": "[850001,850002,850003,850004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "86": {
       "m_bError": null,
@@ -390,7 +448,9 @@
       "m_SubStepIds": "[860001,860002,860003,860004,860005,860006,860007,860008,860009,860010]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "90": {
       "m_bError": null,
@@ -403,7 +463,9 @@
       "m_SubStepIds": "[900001,900002,900003,900004,900005,900006,900007,900008,900009,900010,900011,900012,900013]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": null
+      "m_IsOn": null,
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "91": {
       "m_bError": null,
@@ -416,7 +478,9 @@
       "m_SubStepIds": "[910001,910002,910003,910004,910005,910006,910007,910008,910009,910010,910011,910012,910013,910014,910015]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "92": {
       "m_bError": null,
@@ -429,46 +493,54 @@
       "m_SubStepIds": "[920001,920002,920003,920004,920005,920006,920007,920008,920009,920010,920011]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "93": {
       "m_bError": null,
       "m_ID": "93",
       "m_EventType": "[2]",
       "m_EventParam": "[\"7101100\"]",
-      "m_ConditionType": "[2,2,9]",
-      "m_ConditionParam": "[\"1102040\",\"1102050\",\"0\"]",
-      "m_CheckOut": "[1,0,1]",
+      "m_ConditionType": "[2,9]",
+      "m_ConditionParam": "[\"1102040\",\"0\"]",
+      "m_CheckOut": "[1,1]",
       "m_SubStepIds": "[930001,930002,930003,930004,930005,930006,930007,930008,930009,930010,930011,930012,930013]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "94": {
       "m_bError": null,
       "m_ID": "94",
       "m_EventType": "[1]",
       "m_EventParam": "[\"Form_RogueChose\"]",
-      "m_ConditionType": "[2,2,1,15,16]",
-      "m_ConditionParam": "[\"1102040\",\"1102050\",\"93\",\"1\",\"1001\"]",
-      "m_CheckOut": "[1,0,1,1,0]",
+      "m_ConditionType": "[2,1,15,16]",
+      "m_ConditionParam": "[\"1102040\",\"93\",\"1\",\"1001\"]",
+      "m_CheckOut": "[1,1,1,0]",
       "m_SubStepIds": "[940001,940002,940003,940004,940005,940006,940007,940008,940009,940010,940011,940012,940013,940014]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "95": {
       "m_bError": null,
       "m_ID": "95",
       "m_EventType": "[1]",
       "m_EventParam": "[\"Form_RogueChose\"]",
-      "m_ConditionType": "[2,2,1,15,16]",
-      "m_ConditionParam": "[\"1102040\",\"1102050\",\"94\",\"2\",\"1001\"]",
-      "m_CheckOut": "[1,0,1,1,0]",
+      "m_ConditionType": "[2,1,15,16]",
+      "m_ConditionParam": "[\"1102040\",\"94\",\"2\",\"1001\"]",
+      "m_CheckOut": "[1,1,1,0]",
       "m_SubStepIds": "[950001,950002,950003,950004,950005,950006,950007,950008,950009,950010,950011,950012,950013,950014]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "97": {
       "m_bError": null,
@@ -481,7 +553,9 @@
       "m_SubStepIds": "[970001,970002,970003,970004,970005,970006,970007,970008,970009,970010,970011,970012,970013]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "100": {
       "m_bError": null,
@@ -494,7 +568,9 @@
       "m_SubStepIds": "[1000001,1000002,1000003,1000004,1000005,1000006,1000007]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": null
+      "m_IsOn": null,
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "101": {
       "m_bError": null,
@@ -507,7 +583,9 @@
       "m_SubStepIds": "[1010001,1010002,1010003,1010004]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": null
+      "m_IsOn": null,
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "102": {
       "m_bError": null,
@@ -520,7 +598,9 @@
       "m_SubStepIds": "[1020001,1020002,1020003,1020004,1020005,1020006]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": null
+      "m_IsOn": null,
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "103": {
       "m_bError": null,
@@ -533,7 +613,9 @@
       "m_SubStepIds": "[1030001,1030002]",
       "m_Priority": "99",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "104": {
       "m_bError": null,
@@ -546,7 +628,9 @@
       "m_SubStepIds": "[1040001,1040002,1040003,1040004,1040005,1040006,1040007,1040008,1040009,1040010,1040011]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "110": {
       "m_bError": null,
@@ -559,7 +643,9 @@
       "m_SubStepIds": "[1100001,1100002,1100003,1100004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "111": {
       "m_bError": null,
@@ -572,7 +658,9 @@
       "m_SubStepIds": "[1110001,1110002,1110003,1110004,1110005,1110006,1110007]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "130": {
       "m_bError": null,
@@ -585,7 +673,9 @@
       "m_SubStepIds": "[1300001,1300002,1300003,1300004,1300005]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "140": {
       "m_bError": null,
@@ -598,7 +688,9 @@
       "m_SubStepIds": "[1400001,1400002,1400003,1400004,1400005,1400006,1400007,1400008,1400009,1400010,1400011,1400012,1400013,1400014]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "150": {
       "m_bError": null,
@@ -611,7 +703,9 @@
       "m_SubStepIds": "[1500001,1500002]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "151": {
       "m_bError": null,
@@ -624,7 +718,9 @@
       "m_SubStepIds": "[1510001,1510002,1510003,1510004,1510005,1510006,1510007,1510008,1510009,1510010,1510011,1510012,1510013,1510014,1510015,1510016]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "160": {
       "m_bError": null,
@@ -637,7 +733,9 @@
       "m_SubStepIds": "[1600001,1600002,1600003,1600004,1600005,1600006,1600007,1600008]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "209": {
       "m_bError": null,
@@ -650,7 +748,9 @@
       "m_SubStepIds": "[2090001,2090002,2090003,2090004,2090005,2090006,2090007]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "210": {
       "m_bError": null,
@@ -663,7 +763,9 @@
       "m_SubStepIds": "[2100001,2100002,2100003,2100004,2100005,2100006,2100007,2100008,2100009]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "220": {
       "m_bError": null,
@@ -676,7 +778,9 @@
       "m_SubStepIds": "[2200001,2200002,2200003,2200004,2200005,2200006,2200007,2200008]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "221": {
       "m_bError": null,
@@ -689,7 +793,9 @@
       "m_SubStepIds": "[2210001,2210002,2210003,2210004,2210005]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "222": {
       "m_bError": null,
@@ -702,7 +808,9 @@
       "m_SubStepIds": "[2220001,2220002,2220003,2220004,2220005,2220006,2220007,2220008,2220009,2220010,2220011]",
       "m_Priority": "99",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "260": {
       "m_bError": null,
@@ -715,7 +823,9 @@
       "m_SubStepIds": "[2600001,2600002,2600003,2600004]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "270": {
       "m_bError": null,
@@ -728,7 +838,9 @@
       "m_SubStepIds": "[2700001,2700002,2700003,2700004,2700005,2700006,2700007]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "271": {
       "m_bError": null,
@@ -741,7 +853,69 @@
       "m_SubStepIds": "[2710001,2710002,2710003,2710004,2710005,2710006,2710007,2710008,2710009,2710010]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
+    },
+    "300": {
+      "m_bError": null,
+      "m_ID": "300",
+      "m_EventType": "[1]",
+      "m_EventParam": "[\"Form_Guild\"]",
+      "m_ConditionType": "[]",
+      "m_ConditionParam": "[]",
+      "m_CheckOut": "[1]",
+      "m_SubStepIds": "[3000001,3000002,3000003,3000004,3000005,3000006,3000007,3000008,3000009,3000010,3000011]",
+      "m_Priority": "100",
+      "m_IsRepeat": null,
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
+    },
+    "301": {
+      "m_bError": null,
+      "m_ID": "301",
+      "m_EventType": "[1]",
+      "m_EventParam": "[\"Form_Activity103LuoleilaiMain\"]",
+      "m_ConditionType": "[]",
+      "m_ConditionParam": "[]",
+      "m_CheckOut": "[1]",
+      "m_SubStepIds": "[3010001,3010002,3010003,3010004,3010005]",
+      "m_Priority": "100",
+      "m_IsRepeat": null,
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
+    },
+    "302": {
+      "m_bError": null,
+      "m_ID": "302",
+      "m_EventType": "[1]",
+      "m_EventParam": "[\"Form_Activity103Luoleilai_DialogueMain\"]",
+      "m_ConditionType": "[18]",
+      "m_ConditionParam": "[\"103102\"]",
+      "m_CheckOut": "[1]",
+      "m_SubStepIds": "[3020001,3020002,3020003,3020004,3020005,3020006,3020007,3020008]",
+      "m_Priority": "100",
+      "m_IsRepeat": null,
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
+    },
+    "303": {
+      "m_bError": null,
+      "m_ID": "303",
+      "m_EventType": "[1]",
+      "m_EventParam": "[\"Form_Activity104_DialogueMain\"]",
+      "m_ConditionType": "[18]",
+      "m_ConditionParam": "[\"104008\"]",
+      "m_CheckOut": "[1]",
+      "m_SubStepIds": "[3030001,3030002,3030003,3030004]",
+      "m_Priority": "100",
+      "m_IsRepeat": null,
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "405": {
       "m_bError": null,
@@ -754,7 +928,9 @@
       "m_SubStepIds": "[4050001,4050002,4050003,4050004,4050005,4050006]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "406": {
       "m_bError": null,
@@ -767,46 +943,54 @@
       "m_SubStepIds": "[4060001,4060002,4060003,4060004,4060005,4060006,4060007,4060008,4060009,4060010,4060011,4060012,4060013,4060014,4060015]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "407": {
       "m_bError": null,
       "m_ID": "407",
       "m_EventType": "[7]",
-      "m_EventParam": "[\"4100101\",\"5\",\"5\"]",
+      "m_EventParam": "[\"4100101\",\"5\",\"5\",\"0\"]",
       "m_ConditionType": "[1]",
       "m_ConditionParam": "[\"406\"]",
       "m_CheckOut": "[1]",
       "m_SubStepIds": "[4070001,4070002,4070003,4070004]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "408": {
       "m_bError": null,
       "m_ID": "408",
       "m_EventType": "[7]",
-      "m_EventParam": "[\"4100101\",\"1\",\"5\"]",
+      "m_EventParam": "[\"4100101\",\"1\",\"5\",\"1\"]",
       "m_ConditionType": "[1]",
       "m_ConditionParam": "[\"407\"]",
       "m_CheckOut": "[1]",
       "m_SubStepIds": "[4080001,4080002]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "409": {
       "m_bError": null,
       "m_ID": "409",
       "m_EventType": "[7]",
-      "m_EventParam": "[\"4100101\",\"1\",\"5\"]",
+      "m_EventParam": "[\"4100101\",\"1\",\"5\",\"0\"]",
       "m_ConditionType": "[1]",
-      "m_ConditionParam": "[\"407\"]",
-      "m_CheckOut": "[0]",
+      "m_ConditionParam": "[]",
+      "m_CheckOut": "[]",
       "m_SubStepIds": "[4090001,4090002,4090003]",
       "m_Priority": "100",
-      "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsRepeat": "1",
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "410": {
       "m_bError": null,
@@ -819,7 +1003,9 @@
       "m_SubStepIds": "[4100001,4100002,4100003,4100004,4100005,4100006,4100007,4100008,4100009,4100010,4100011,4100012]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "831": {
       "m_bError": null,
@@ -832,7 +1018,9 @@
       "m_SubStepIds": "[8310001,8310002,8310003,8310004,8310005,8310006]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "832": {
       "m_bError": null,
@@ -845,7 +1033,9 @@
       "m_SubStepIds": "[8320001,8320002,8320003,8320004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1000": {
       "m_bError": null,
@@ -858,7 +1048,9 @@
       "m_SubStepIds": "[10000001,10000002,10000003,10000004]",
       "m_Priority": "50",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1001": {
       "m_bError": null,
@@ -871,7 +1063,9 @@
       "m_SubStepIds": "[10010001,10010002,10010003,10010004,10010005,10010006,10010007,10010008,10010009,10010010]",
       "m_Priority": "50",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1002": {
       "m_bError": null,
@@ -884,7 +1078,9 @@
       "m_SubStepIds": "[10020001,10020002]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1003": {
       "m_bError": null,
@@ -897,7 +1093,9 @@
       "m_SubStepIds": "[10030001,10030002,10030003,10030004]",
       "m_Priority": "100",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1004": {
       "m_bError": null,
@@ -910,7 +1108,9 @@
       "m_SubStepIds": "[10040001,10040002,10040003,10040004,10040005,10040006,10040007,10040008,10040009]",
       "m_Priority": "50",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1010": {
       "m_bError": null,
@@ -923,7 +1123,9 @@
       "m_SubStepIds": "[10100001,10100002]",
       "m_Priority": "50",
       "m_IsRepeat": "1",
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1011": {
       "m_bError": null,
@@ -936,7 +1138,9 @@
       "m_SubStepIds": "[10110001,10110002,10110003,10110004,10110005,10110006,10110007,10110008,10110009]",
       "m_Priority": "50",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "1050": {
       "m_bError": null,
@@ -949,7 +1153,9 @@
       "m_SubStepIds": "[10500001,10500002,10500003,10500004,10500005,10500006]",
       "m_Priority": "50",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2000": {
       "m_bError": null,
@@ -962,7 +1168,9 @@
       "m_SubStepIds": "[20000001,20000002,20000003,20000004,20000005,20000006,20000007,20000008]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2010": {
       "m_bError": null,
@@ -975,7 +1183,9 @@
       "m_SubStepIds": "[20100001,20100002,20100003,20100004,20100005]",
       "m_Priority": "101",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2020": {
       "m_bError": null,
@@ -988,7 +1198,9 @@
       "m_SubStepIds": "[20200001,20200002,20200003,20200004,20200005,20200006,20200007,20200008,20200009,20200010,20200011]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2030": {
       "m_bError": null,
@@ -1001,7 +1213,9 @@
       "m_SubStepIds": "[20300001,20300002,20300003,20300004,20300007,20300008,20300009,20300010,20300011]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2040": {
       "m_bError": null,
@@ -1014,7 +1228,9 @@
       "m_SubStepIds": "[20400001,20400002,20400003,20400004,20400005,20400006,20400007,20400008]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2050": {
       "m_bError": null,
@@ -1027,21 +1243,25 @@
       "m_SubStepIds": "[20500001,20500002,20500003,20500004,20500005,20500006,20500007,20500008,20500009,20500010,20500011,20500012,20500013,20500014]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     },
     "2070": {
       "m_bError": null,
       "m_ID": "2070",
       "m_EventType": "[1]",
       "m_EventParam": "[\"Form_Hall\"]",
-      "m_ConditionType": "[2]",
-      "m_ConditionParam": "[\"1107040\"]",
-      "m_CheckOut": "[1]",
+      "m_ConditionType": "[2,5,19]",
+      "m_ConditionParam": "[\"1107040\",\"901001/10\",\"1/1\"]",
+      "m_CheckOut": "[1,1,1]",
       "m_SubStepIds": "[20700001,20700002,20700003,20700004,20700005,20700006,20700007,20700008,20700009,20700010,20700011,20700012,20700013,20700014,20700015,20700016]",
       "m_Priority": "100",
       "m_IsRepeat": null,
-      "m_IsOn": "1"
+      "m_IsOn": "1",
+      "m_FinishConditionType": "[]",
+      "m_FinishConditionParam": "[]"
     }
   },
-  "status": "processed_80_items"
+  "status": "processed_84_items"
 }

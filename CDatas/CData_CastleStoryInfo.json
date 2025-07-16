@@ -1,6 +1,6 @@
 {
   "className": "CData_CastleStoryInfo",
-  "timestamp": "2025-07-08T13:35:26.197Z",
+  "timestamp": "2025-07-16T14:13:57.830Z",
   "data": {
     "100102": {
       "m_bError": null,
@@ -74,6 +74,18 @@
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
+    "100602": {
+      "m_bError": null,
+      "m_StoryID": "100602",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Nightshade\"",
+      "m_PlaceID": "6",
+      "m_ShowCharacter": "20640",
+      "m_Character": "[20030,20640,20080,20060]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
     "100701": {
       "m_bError": null,
       "m_StoryID": "100701",
@@ -82,6 +94,18 @@
       "m_PlaceID": "7",
       "m_ShowCharacter": "20090",
       "m_Character": "[20090,20030,20570,20110]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
+    "100702": {
+      "m_bError": null,
+      "m_StoryID": "100702",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Mission: Become a Legendary Cook!\"",
+      "m_PlaceID": "7",
+      "m_ShowCharacter": "20660",
+      "m_Character": "[20650,20660]",
       "m_Rewards": "[[800003,1]]",
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
@@ -303,5 +327,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_25_items"
+  "status": "processed_27_items"
 }

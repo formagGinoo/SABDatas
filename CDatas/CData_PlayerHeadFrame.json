@@ -1,6 +1,6 @@
 {
   "className": "CData_PlayerHeadFrame",
-  "timestamp": "2025-07-08T13:35:40.538Z",
+  "timestamp": "2025-07-16T14:14:11.980Z",
   "data": {
     "1400001": {
       "m_bError": null,
@@ -105,8 +105,8 @@
       "m_mGetwayDes": "\"Time-limited reward for achieving Rank 1 in Crucible (Group Stage) seasonal rankings.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1400021\"",
       "m_mHeadFrameDesc": "\"Unlocks by achieving Rank 1 in Crucible (Group Stage) seasonal rankings. Can be changed in Profile Settings.\"",
-      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400021\"",
-      "m_HeadFrameEft": "\"\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1400021\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     },
@@ -123,8 +123,8 @@
       "m_mGetwayDes": "\"Time-limited reward for achieving Rank 2 in Crucible (Group Stage) seasonal rankings.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1400022\"",
       "m_mHeadFrameDesc": "\"Unlocks by achieving Rank 2 in Crucible (Group Stage) seasonal rankings. Can be changed in Profile Settings.\"",
-      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400022\"",
-      "m_HeadFrameEft": "\"\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1400022\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     },
@@ -141,8 +141,8 @@
       "m_mGetwayDes": "\"Time-limited reward for achieving Rank 3 in Crucible (Group Stage) seasonal rankings.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1400023\"",
       "m_mHeadFrameDesc": "\"Unlocks by achieving Rank 3 in Crucible (Group Stage) seasonal rankings. Can be changed in Profile Settings.\"",
-      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400023\"",
-      "m_HeadFrameEft": "\"\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1400023\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     },
@@ -665,7 +665,7 @@
       "m_mHeadFrameDesc": "\"Unlocks by reaching top 50 in Night of the Hunt. Can be changed in Profile Settings. Valid for 14 days.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
       "m_HeadFrameEft": "\"FX_Headframe_1411001\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_QucikChannelCode": null
     },
     "1411002": {
@@ -681,9 +681,9 @@
       "m_mGetwayDes": "\"Time-limited reward for reaching top 200 in Night of the Hunt.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1411002\"",
       "m_mHeadFrameDesc": "\"Unlocks by reaching top 200 in Night of the Hunt. Can be changed in Profile Settings. Valid for 14 days.\"",
-      "m_HeadFramePic": "\"Atlas_Playerheadframe/1411002\"",
-      "m_HeadFrameEft": "\"\"",
-      "m_HideType": "1",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1411002\"",
+      "m_HideType": null,
       "m_QucikChannelCode": null
     },
     "1411003": {
@@ -701,7 +701,7 @@
       "m_mHeadFrameDesc": "\"Unlocks by reaching top 500 in Night of the Hunt. Can be changed in Profile Settings. Valid for 14 days.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1411003\"",
       "m_HeadFrameEft": "\"\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_QucikChannelCode": null
     },
     "1420001": {
@@ -719,7 +719,7 @@
       "m_mHeadFrameDesc": "\"Unlocks the \"Endless Game\" profile frame. Can be changed in Profile Settings.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
       "m_HeadFrameEft": "\"FX_Headframe_1420001\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_QucikChannelCode": null
     },
     "1420002": {
@@ -737,6 +737,42 @@
       "m_mHeadFrameDesc": "\"Unlocks the \"Meow Meow\" profile frame. Can be changed in Profile Settings.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
       "m_HeadFrameEft": "\"FX_Headframe_1420002\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
+    },
+    "1420003": {
+      "m_bError": null,
+      "m_HeadFrameID": "1420003",
+      "m_mHeadName": "\"Everlasting Sun\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Everlasting Sun\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"The Last Summer on Sapphire Isle Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1420003\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Everlasting Sun\" profile frame. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1420003\"",
+      "m_HideType": "1",
+      "m_QucikChannelCode": null
+    },
+    "1420004": {
+      "m_bError": null,
+      "m_HeadFrameID": "1420004",
+      "m_mHeadName": "\"Unwavering Promise\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Unwavering Promise\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"The First Summer on Sapphire Isle Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1420004\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Unwavering Promise\" profile frame. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1420004\"",
       "m_HideType": "1",
       "m_QucikChannelCode": null
     },
@@ -754,7 +790,7 @@
       "m_ItemIcon": "\"Atlas_Playerheadframe/1421001\"",
       "m_mHeadFrameDesc": "\"Unlocks the \"Rose and Nightingale\" profile frame. Can be changed in Profile Settings.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
-      "m_HeadFrameEft": "\"FX_Headframe_1420003\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1421001\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     },
@@ -772,7 +808,7 @@
       "m_ItemIcon": "\"Atlas_Playerheadframe/1421002\"",
       "m_mHeadFrameDesc": "\"Unlocks the \"Twilight Citadel\" profile frame. Can be changed in Profile Settings.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1400000\"",
-      "m_HeadFrameEft": "\"FX_Headframe_1420004\"",
+      "m_HeadFrameEft": "\"FX_Headframe_1421002\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     },
@@ -959,16 +995,16 @@
     "1430011": {
       "m_bError": null,
       "m_HeadFrameID": "1430011",
-      "m_mHeadName": "\"\"",
+      "m_mHeadName": "\"Reserved String\"",
       "m_Tag": "3",
       "m_DefaultType": null,
       "m_TermType": null,
       "m_EffectTime": null,
-      "m_mItemName": "\"\"",
+      "m_mItemName": "\"Reserved String\"",
       "m_ItemRarity": "2",
-      "m_mGetwayDes": "\"\"",
+      "m_mGetwayDes": "\"Reserved String\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1430011\"",
-      "m_mHeadFrameDesc": "\"\"",
+      "m_mHeadFrameDesc": "\"Reserved String\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1430011\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
@@ -1045,7 +1081,43 @@
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
       "m_QucikChannelCode": "32"
+    },
+    "1430016": {
+      "m_bError": null,
+      "m_HeadFrameID": "1430016",
+      "m_mHeadName": "\"Creator's Exclusive Frame\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Creator's Exclusive\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Participate in Creator Events to obtain.\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1430016\"",
+      "m_mHeadFrameDesc": "\"Unlocks the Creator's Exclusive Frame. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1430016\"",
+      "m_HeadFrameEft": "\"\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
+    },
+    "1430017": {
+      "m_bError": null,
+      "m_HeadFrameID": "1430017",
+      "m_mHeadName": "\"Contest Winner\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Contest Winner\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Participate in Art Contests to obtain.\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1430017\"",
+      "m_mHeadFrameDesc": "\"Unlocks the Contest Winner's Frame. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1430017\"",
+      "m_HeadFrameEft": "\"\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
     }
   },
-  "status": "processed_58_items"
+  "status": "processed_62_items"
 }

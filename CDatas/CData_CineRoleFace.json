@@ -1,6 +1,6 @@
 {
   "className": "CData_CineRoleFace",
-  "timestamp": "2025-07-08T13:35:27.135Z",
+  "timestamp": "2025-07-16T14:13:58.774Z",
   "data": {
     "\"Acappella_Base003\"": {
       "m_bError": null,
@@ -404,8 +404,8 @@
     "\"Joyce_Base003\"": {
       "m_bError": null,
       "m_ID": "\"Joyce_Base003\"",
-      "m_PosX": "261",
-      "m_PosY": "296",
+      "m_PosX": "133",
+      "m_PosY": "168",
       "m_Replace": null
     },
     "\"Limine_Base003\"": {
@@ -428,7 +428,63 @@
       "m_PosX": "111",
       "m_PosY": "156",
       "m_Replace": null
+    },
+    "\"Aiona_Lily_Summer003\"": {
+      "m_bError": null,
+      "m_ID": "\"Aiona_Lily_Summer003\"",
+      "m_PosX": "126",
+      "m_PosY": "154",
+      "m_Replace": null
+    },
+    "\"Bella_Summer_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bella_Summer_Base003\"",
+      "m_PosX": "131",
+      "m_PosY": "147",
+      "m_Replace": null
+    },
+    "\"Bella_Summer_Doll003\"": {
+      "m_bError": null,
+      "m_ID": "\"Bella_Summer_Doll003\"",
+      "m_PosX": "131",
+      "m_PosY": "147",
+      "m_Replace": null
+    },
+    "\"Dalcarlo_Summer_Cat003\"": {
+      "m_bError": null,
+      "m_ID": "\"Dalcarlo_Summer_Cat003\"",
+      "m_PosX": "512",
+      "m_PosY": "512",
+      "m_Replace": "1"
+    },
+    "\"Lorelei_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Lorelei_Base003\"",
+      "m_PosX": "126",
+      "m_PosY": "144",
+      "m_Replace": null
+    },
+    "\"Lorelei_Siren003\"": {
+      "m_bError": null,
+      "m_ID": "\"Lorelei_Siren003\"",
+      "m_PosX": "126",
+      "m_PosY": "144",
+      "m_Replace": null
+    },
+    "\"Siegrune_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Siegrune_Base003\"",
+      "m_PosX": "126",
+      "m_PosY": "144",
+      "m_Replace": null
+    },
+    "\"Ami_Covenant003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ami_Covenant003\"",
+      "m_PosX": "156",
+      "m_PosY": "144",
+      "m_Replace": null
     }
   },
-  "status": "processed_61_items"
+  "status": "processed_69_items"
 }

@@ -1,6 +1,6 @@
 {
   "className": "CData_ConfirmCommonTips",
-  "timestamp": "2025-07-08T13:35:33.330Z",
+  "timestamp": "2025-07-16T14:14:04.890Z",
   "data": {
     "1001": {
       "m_bError": null,
@@ -209,12 +209,36 @@
     "1032": {
       "m_bError": null,
       "m_ID": "1032",
-      "m_mtitle": "\"#N/A\"",
-      "m_mcontent": "\"#N/A\"",
+      "m_mtitle": "\"Notice\"",
+      "m_mcontent": "\"Your current client version is outdated. Please tap the Download button to visit our official website and install the new client.\"",
       "m_style": "1",
       "m_NoClosing": "1",
-      "m_mbutton1text": "\"#N/A\"",
+      "m_mbutton1text": "\"Download\"",
       "m_mbutton2text": "\"\"",
+      "m_autoConfirmDelay": null,
+      "m_isShowTitle": null
+    },
+    "1036": {
+      "m_bError": null,
+      "m_ID": "1036",
+      "m_mtitle": "\"Ancestral Vault\"",
+      "m_mcontent": "\"Bathory spirits of yore, manifest as our blade and fight for the Clan!\n\n<style=InfoTitle>※ Ancient Summoning\n<style=InfoText>• Consume Mead of Rebirth to summon Ancient Vassals.\n• The first summon grants a Vassal, and subsequent summons grant Vassal Spirits.\n• Each Ancient can be summoned up to 11 times.\n\n<style=InfoTitle>※ Mead of Rebirth\n<style=InfoText>• Complete Ancestral Vault Tasks to obtain Mead of Rebirth.\n• Mead of Rebirth is also issued based on Clan Hunt Rank.\n\nMore Ancient Vassals will become available over time.\"",
+      "m_style": "4",
+      "m_NoClosing": null,
+      "m_mbutton1text": "\"\"",
+      "m_mbutton2text": "\"\"",
+      "m_autoConfirmDelay": null,
+      "m_isShowTitle": null
+    },
+    "1037": {
+      "m_bError": null,
+      "m_ID": "1037",
+      "m_mtitle": "\"Notice\"",
+      "m_mcontent": "\"Use {0}{1} to refresh tasks? Daily limit: 2.\"",
+      "m_style": "2",
+      "m_NoClosing": null,
+      "m_mbutton1text": "\"Refresh\"",
+      "m_mbutton2text": "\"Cancel\"",
       "m_autoConfirmDelay": null,
       "m_isShowTitle": null
     },
@@ -330,7 +354,7 @@
       "m_bError": null,
       "m_ID": "1109",
       "m_mtitle": "\"Equipment\"",
-      "m_mcontent": "\"Equipment serves as an advanced way to enhance the abilities of Vassals. The higher the quality and level of the equipment, the more noticeable the enhancement effects.\n\n<style=InfoTitle>※ Equipment Part\n<style=InfoText>There are 4 parts that can be equipped: Head, Body, Amulet, and Ring. You may equip the parts only with its corresponding equipment.\n\n<style=InfoTitle>※ Equipment Type\n<style=InfoText>There are 3 types of equipment: Light, Medium, and Heavy. Vassals can only wear equipment that matches their equipment type.\n\n<style=InfoTitle>※ Faction Bonus\n<style=InfoText>Some special equipment enjoys faction bonuses. Such equipment can have its bonus stats (usually 25%) activated if worn by a Vassal of the right faction.\n\n<style=InfoTitle>※ Enhancement \n<style=InfoText>High-quality equipment can be enhanced. The higher the enhancement level, the stronger the attributes provided. \n\n<style=InfoTitle>※ Soul Echo \n<style=InfoText>Soul Echo can be performed with Soulstrike for equipment that meets the following requirements: \n• Belongs to Tier 9 and has faction bonuses.\n• Equipped by Vassals of the right faction. \n• Enhanced to the max level. \nAfter Echo, the equipment is bound to the Vassal and gains the following effects: \n• Cannot be unequipped. \n• Provides more powerful attributes. \n• Gains up to 3 Blessings for a certain chance. Blessings can bring a very significant boost to Vassals. \n• Can be recast or refined later to change Blessing effects.\"",
+      "m_mcontent": "\"Equipment is an advanced method of enhancing Vassal abilities. The higher its level and quality, the more noticeable the effects will be.\n\n<style=InfoTitle>※ Equipment Pieces\n<style=InfoText>There are 4 pieces that can be equipped: Head, Body, Amulet, and Ring. Each slot can only equip the corresponding piece.\n\n<style=InfoTitle>※ Equipment Types\n<style=InfoText>There are 3 types of equipment: Light, Medium, and Heavy. Vassals can only equip pieces from their default type.\n\n<style=InfoTitle>※ Faction Bonus\n<style=InfoText>Certain equipment enjoys faction bonuses, meaning it can have bonus stats activated (usually +25%) if worn by a Vassal of the corresponding faction.\n\n<style=InfoTitle>※ Enhancement\n<style=InfoText>High-quality equipment can be enhanced. The higher its enhance level, the stronger its attributes become.\n\n<style=InfoTitle>※ Soul Echo\n<style=InfoText>Soul Echo can be performed with Soulstrike for equipment that meets the following requirements:\n• Tier 9 equipment with faction bonuses\n• Equipped by Vassals of the right faction\n• Enhanced to the max level\nAfter activation, the equipment is bound to the Vassal and gains the following effects:\n• Cannot be unequipped\n• Provides more powerful attributes\n• Gains up to 3 Blessings. Blessings may offer a significant boost to Vassals\n• Can be Reforged or Refined later to change Blessing effects.\"",
       "m_style": "4",
       "m_NoClosing": null,
       "m_mbutton1text": "\"\"",
@@ -546,7 +570,7 @@
       "m_bError": null,
       "m_ID": "1127",
       "m_mtitle": "\"Blood Crucible\"",
-      "m_mcontent": "\"Duke it out with other Lords in the BO3 matches.\n\n<style=InfoTitle>※ Season\n<style=InfoText>• A season consists of both an Engagement and Armistice period. The Engagement period lasts for 13 days, while the Armistice lasts for 1 day.\n• If you initiate an attack and win, you will switch rankings with your opponent. If you are attacked and fail to defend, you will also switch rankings with your opponent.\n• At the end of each season, the Etched Keystone (Crucible Points) will be reset.\n\n<style=InfoTitle>※ Challenge</style>\n<style=InfoText>• Select an opponent you want to challenge from the Opponent List.\n• You will only be matched against higher-ranking players.\n• You have 2 free challenge attempts per day.\n• Once your free attempts are used up, you may use Crucible Passes to engage in more battles.\n• A challenge consists of a Preparation Phase and a Battle Phase.\n• If you quit or time out during the Preparation Phase, the challenge will end and no attempts will be consumed.\n• If you time out during the Battle Phase, it will be considered a failure (each of the 3 battles is independently timed).\n\n<style=InfoTitle>※ Defense Team\n<style=InfoText>Tap \"Edit Team\" to deploy your lineup. When challenged by other Lords, your Defense Team will defend your glory. You must build 3 teams, ensuring that each team contains 5 Vassals.\n\n<style=InfoTitle>※ Offense Team\n<style=InfoText>You may build your Offense Team after selecting an opponent and entering battle.\n\n<style=InfoTitle>※ Winning Conditions\n<style=InfoText>The team that eliminates the other team first wins. Should the two teams be eliminated at the same time, the attacker wins. If you time out during the Battle Phase, it will be considered a failure (each of the 3 battles is independently timed).\n\n<style=InfoTitle>※ Rewards\n<style=InfoText>• Winning the battle earns you rewards.\n• After a season ends, season ranking rewards will be issued via Mail.\n\n<style=InfoTitle>※ Hourly Rewards\n<style=InfoText> • Hourly idle rewards vary based on your rank; the higher the rank, the greater the rewards.\n• Idle rewards also include Points, so achieving a higher rank can help you earn more Points, allowing you to secure a top spot on the Point Rank!\n\n<style=InfoTitle>※ Quick Battle\n<style=InfoText> • When Quick Battle is enabled, battle results will be displayed directly.\n• Use the Replay function to watch the battle again (may not be 100% accurate).\"",
+      "m_mcontent": "\"Duke it out with other Lords in the BO3 matches.\n\n<style=\"InfoTitle\">※ Season\n<style=\"InfoText\">• A season consists of both an Engagement and Armistice period. The Engagement period lasts for 13 days, while the Armistice lasts for 1 day.\n• If you initiate an attack and win, you will switch rankings with your opponent. If you are attacked and fail to defend, you will also switch rankings with your opponent.\n• At the end of each season, the Etched Keystone (Crucible Points) will be reset.\n\n<style=\"InfoTitle\">※ Challenge</style>\n<style=\"InfoText\">• Select an opponent you want to challenge from the Opponent List.\n• You will only be matched against higher-ranking players.\n• You have 2 free challenge attempts per day.\n• Once your free attempts are used up, you may use Crucible Passes to engage in more battles.\n• A challenge consists of a Preparation Phase and a Battle Phase.\n• If you quit or time out during the Preparation Phase, the challenge will end and no attempts will be consumed.\n• If you time out during the Battle Phase, it will be considered a failure (each of the 3 battles is independently timed).\n\n<style=\"InfoTitle\">※ Defense Team\n<style=\"InfoText\">Tap _$$Edit Team_$$ to deploy your lineup. When challenged by other Lords, your Defense Team will defend your glory. You must build 3 teams, ensuring that each team contains 5 Vassals.\n\n<style=\"InfoTitle\">※ Offense Team\n<style=\"InfoText\">You may build your Offense Team after selecting an opponent and entering battle.\n\n<style=\"InfoTitle\">※ Winning Conditions\n<style=\"InfoText\">The team that eliminates the other team first wins. Should the two teams be eliminated at the same time, the attacker wins. If you time out during the Battle Phase, it will be considered a failure (each of the 3 battles is independently timed).\n\n<style=\"InfoTitle\">※ Rewards\n<style=\"InfoText\">• Winning the battle earns you rewards.\n• After a season ends, season ranking rewards will be issued via Mail.\n\n<style=\"InfoTitle\">※ Hourly Rewards\n<style=\"InfoText\"> • Hourly idle rewards vary based on your rank; the higher the rank, the greater the rewards.\n• Idle rewards also include Points, so achieving a higher rank can help you earn more Points, allowing you to secure a top spot on the Point Rank!\"",
       "m_style": "4",
       "m_NoClosing": null,
       "m_mbutton1text": "\"\"",
@@ -1290,7 +1314,7 @@
       "m_bError": null,
       "m_ID": "1189",
       "m_mtitle": "\"Notice\"",
-      "m_mcontent": "\"Enemy has balanced DEF with no Physical/Magic defense preference.\"",
+      "m_mcontent": "\"Enemy has balanced DEF with no P. DEF/M. DEF advantage.\"",
       "m_style": "1",
       "m_NoClosing": "1",
       "m_mbutton1text": "\"Confirm\"",
@@ -1766,14 +1790,50 @@
       "m_autoConfirmDelay": null,
       "m_isShowTitle": null
     },
+    "1229": {
+      "m_bError": null,
+      "m_ID": "1229",
+      "m_mtitle": "\"Event Details\"",
+      "m_mcontent": "\"Once a month, a mysterious invitation graces your doorstep. Do not delay—claim the exclusive rewards that await within.\n\n<style=InfoTitle>※ Rewards\n<style=InfoText>Complete daily tasks to earn Points and unlock rewards.\nPurchase a Monthly Pass to gain extra rewards.\nUnclaimed rewards will be issued via mail when the event ends.\n\n<style=InfoTitle>※ Tasks\n<style=InfoText>Tasks refresh daily at 4:00 (UTC+8).\nComplete tasks to earn Points for higher levels and more rewards.\n\n<style=InfoTitle>※ Levels\n<style=InfoText>Accumulate Points from tasks to increase your level.\nClaim rewards upon unlocking levels.\nPoints can be obtained with Moon Tear.\"",
+      "m_style": "4",
+      "m_NoClosing": null,
+      "m_mbutton1text": "\"\"",
+      "m_mbutton2text": "\"\"",
+      "m_autoConfirmDelay": null,
+      "m_isShowTitle": null
+    },
+    "1230": {
+      "m_bError": null,
+      "m_ID": "1230",
+      "m_mtitle": "\"Event Details\"",
+      "m_mcontent": "\"Unique stories and circumstances lead to unique invitations. Come. Accept this gift of destiny.\n\n<style=InfoTitle>※ Rewards\n<style=InfoText>Complete daily tasks to earn Points and unlock rewards.\nPurchase a Timed Pass to gain extra rewards.\nUnclaimed rewards will be issued via mail when the event ends.\n\n<style=InfoTitle>※ Tasks\n<style=InfoText>Tasks refresh daily at 4:00 (UTC+8).\nComplete tasks to earn Points for higher levels and more rewards.\n\n<style=InfoTitle>※ Levels\n<style=InfoText>Accumulate Points from tasks to increase your level.\nClaim rewards upon unlocking levels.\nPoints can be obtained with Moon Tear.\"",
+      "m_style": "4",
+      "m_NoClosing": null,
+      "m_mbutton1text": "\"\"",
+      "m_mbutton2text": "\"\"",
+      "m_autoConfirmDelay": null,
+      "m_isShowTitle": null
+    },
     "1231": {
       "m_bError": null,
       "m_ID": "1231",
       "m_mtitle": "\"Notice\"",
-      "m_mcontent": "\"The Herald event has ended. The page will refresh.\"",
+      "m_mcontent": "\"The Embrace event has ended. Confirm to refresh.\"",
       "m_style": "1",
       "m_NoClosing": "1",
       "m_mbutton1text": "\"Confirm\"",
+      "m_mbutton2text": "\"\"",
+      "m_autoConfirmDelay": null,
+      "m_isShowTitle": null
+    },
+    "1232": {
+      "m_bError": null,
+      "m_ID": "1232",
+      "m_mtitle": "\"Event Details\"",
+      "m_mcontent": "\"<style=InfoTitle>※ Limited Stage - Sapphire Isle\n<style=InfoText> • Clear stages in Sapphire Isle to obtain event item Isle Coin.\n• Sunscreen is required for event stages. [Sunscreen x5] will be available daily at 4:00 (UTC+8). Additional Sunscreen can be purchased from the Sapphire Isle Auction House.\n• Using Imbued Vassals increases the drop rate of extra rewards. Once the rate reaches 100%, extra rewards are guaranteed.\n• Quick Clear may be unlocked for some stages upon first clear, and will consume Sunscreen to claim stage rewards.\n\n<style=InfoTitle>※ Limited Stage - Critical Hour\n<style=InfoText> • Stages will unlock after the Sapphire Isle event begins.\n• Clear stages in Critical Hour to obtain event item Isle Coin.\n• Critical Hour consists of Normal and Nightmare stages.\n• Nightmare stages will unlock later in the event and require clearing Normal stages.\n• Sunscreen is required for event stages. [Sunscreen x5] will be available daily. Additional Sunscreen can be purchased from the Sapphire Isle Auction House.\n• Using Imbued Vassals increases the drop rate of extra rewards. Once the rate reaches 100%, extra rewards are guaranteed.\n• Quick Clear may be unlocked for some stages upon first clear, and will consume Sunscreen to claim stage rewards.\n\n<style=InfoTitle>※ Limited Task - Ami's Vacation\n<style=InfoText> • Complete Ami's Vacation tasks to obtain Isle Coins.\n\n<style=InfoTitle>※ Limited Shop - Sapphire Isle Auction House\n<style=InfoText> • The Sapphire Isle Auction House event shop will be open for a limited time.\n• Isle Coins can be redeemed for generous rewards.\n\n<style=InfoTitle>※ Limited Sign-in - Selena's Agenda\n<style=InfoText> • Log in during the event to claim bountiful rewards from Sign-in.\n\n<style=InfoTitle>※ Limited Challenge - Cosmic Singularity\n<style=InfoText> • Clear Cosmic Singularity for generous rewards.\n• New stages open periodically.\n• Challenge Attempts are required to enter stages, and reset daily at 4:00 (UTC+8).\n• Stage clears are required to advance.\n• Use Quick Battle to obtain rewards from cleared stages by consuming Challenge Attempts.\n• First Clear rewards are only granted upon first clear, while Clearance Rewards are granted upon each clear.\n\n<style=InfoTitle>※ Limited Mini-game - Whack-a-Siren\n<style=InfoText> • Complete mini-game tasks to obtain Isle Coins.\n• New stages will unlock throughout the event.\n• No entry limit for stages.\n\n<style=InfoTitle>※ Limited Exploration - Coastal Adventure\n<style=InfoText> • Explore the secrets hidden along the Sapphire Isle coastline to obtain Isle Coins and more.\n• Find and collect lost treasures for rewards.\n• Lost treasures can be found daily during the event.\n• Some lost treasures only be found after completing Isle events.\"",
+      "m_style": "4",
+      "m_NoClosing": null,
+      "m_mbutton1text": "\"\"",
       "m_mbutton2text": "\"\"",
       "m_autoConfirmDelay": null,
       "m_isShowTitle": null
@@ -2643,5 +2703,5 @@
       "m_isShowTitle": null
     }
   },
-  "status": "processed_220_items"
+  "status": "processed_225_items"
 }

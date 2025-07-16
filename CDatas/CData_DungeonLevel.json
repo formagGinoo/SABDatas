@@ -1,6 +1,6 @@
 {
   "className": "CData_DungeonLevel",
-  "timestamp": "2025-07-08T13:35:33.431Z",
+  "timestamp": "2025-07-16T14:14:05.015Z",
   "data": {
     "2101010": {
       "m_bError": null,
@@ -103,7 +103,24 @@
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
       "m_Turn": "1"
+    },
+    "2107010": {
+      "m_bError": null,
+      "m_LevelID": "2107010",
+      "m_MapID": "2006001",
+      "m_LevelType": "2",
+      "m_LevelSubType": "7",
+      "m_mName": "\"Seed of War\"",
+      "m_LevelUnlock": null,
+      "m_HeroModify": "3001",
+      "m_Difficulty": "1",
+      "m_RecoEfficencyType": "2",
+      "m_RecoEfficency": "4350",
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[1102,13],[35001,5]]",
+      "m_ClientProDrop": "[[600811]]",
+      "m_Turn": "1"
     }
   },
-  "status": "processed_6_items"
+  "status": "processed_7_items"
 }

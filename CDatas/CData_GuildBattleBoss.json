@@ -1,6 +1,6 @@
 {
   "className": "CData_GuildBattleBoss",
-  "timestamp": "2025-07-08T13:35:34.745Z",
+  "timestamp": "2025-07-16T14:14:06.308Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -41,7 +41,47 @@
       "m_Avatar": "\"GuildRaid_head2\"",
       "m_BG": "\"boss_role_03\"",
       "m_MonsterTypeID": "[2,5]"
+    },
+    "6": {
+      "m_bError": null,
+      "m_ID": "6",
+      "m_mName": "\"Undying Armor\"",
+      "m_Avatar": "\"GuildRaid_head6\"",
+      "m_BG": "\"boss_role_06\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "7": {
+      "m_bError": null,
+      "m_ID": "7",
+      "m_mName": "\"Mutant Escapee\"",
+      "m_Avatar": "\"GuildRaid_head7\"",
+      "m_BG": "\"boss_role_07\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "8": {
+      "m_bError": null,
+      "m_ID": "8",
+      "m_mName": "\"Swarming Carapace\"",
+      "m_Avatar": "\"GuildRaid_head8\"",
+      "m_BG": "\"boss_role_08\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "9": {
+      "m_bError": null,
+      "m_ID": "9",
+      "m_mName": "\"Blade of Tempus\"",
+      "m_Avatar": "\"GuildRaid_head9\"",
+      "m_BG": "\"boss_role_09\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "10": {
+      "m_bError": null,
+      "m_ID": "10",
+      "m_mName": "\"Infected Villager\"",
+      "m_Avatar": "\"GuildRaid_head10\"",
+      "m_BG": "\"boss_role_10\"",
+      "m_MonsterTypeID": "[1,5]"
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_10_items"
 }

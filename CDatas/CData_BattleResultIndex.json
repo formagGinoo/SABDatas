@@ -1,6 +1,6 @@
 {
   "className": "CData_BattleResultIndex",
-  "timestamp": "2025-07-08T13:35:24.254Z",
+  "timestamp": "2025-07-16T14:13:55.590Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -9,7 +9,7 @@
       "m_ConditonParam": "[]",
       "m_ConditionStart": null,
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Time's Up</color>, Defeat\"",
+      "m_mConditonReason": "\"<#F11E1D>Time's Up</color>, and it was a defeat.\"",
       "m_IsShowConditonReason": "1"
     },
     "2": {
@@ -129,7 +129,7 @@
       "m_ConditonParam": "[30711,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Knight</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Knight</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "3700": {
@@ -139,7 +139,7 @@
       "m_ConditonParam": "[30412,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Stranger</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Stranger</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "207001": {
@@ -179,7 +179,7 @@
       "m_ConditonParam": "[30500,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Lamb</color> Devoured\"",
+      "m_mConditonReason": "\"<#F11E1D>Lamb</color> got devoured.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000408": {
@@ -189,7 +189,7 @@
       "m_ConditonParam": "[31580,0]",
       "m_ConditionStart": "4",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"PH-<#F11E1D>小羊</color>被分食\"",
+      "m_mConditonReason": "\"<#F11E1D>Lamb</color> got devoured.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000409": {
@@ -229,7 +229,7 @@
       "m_ConditonParam": "[10060,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Ami</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Ami</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000508": {
@@ -259,7 +259,7 @@
       "m_ConditonParam": "[10132,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Empousa</color> Devoured\"",
+      "m_mConditonReason": "\"<#F11E1D>Empousa</color> got devoured.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000514": {
@@ -279,7 +279,7 @@
       "m_ConditonParam": "[30095,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Van Helsing</color> Devoured\"",
+      "m_mConditonReason": "\"<#F11E1D>Van Helsing</color> got devoured.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000804": {
@@ -289,7 +289,7 @@
       "m_ConditonParam": "[10280,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Piera's Grandmother</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Piera's Grandmother</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "1000808": {
@@ -319,7 +319,7 @@
       "m_ConditonParam": "[10274,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Ressa</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Ressa</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "1001013": {
@@ -359,7 +359,7 @@
       "m_ConditonParam": "[6]",
       "m_ConditionStart": "8",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Sailor Escaped</color>, Black Blood Spreads\"",
+      "m_mConditonReason": "\"<#F11E1D>Sailor escaped</color>, and Black Blood spreads.\"",
       "m_IsShowConditonReason": "1"
     },
     "2001001": {
@@ -582,6 +582,56 @@
       "m_mConditonReason": "\"\"",
       "m_IsShowConditonReason": null
     },
+    "2500001": {
+      "m_bError": null,
+      "m_ID": "2500001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30256,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2500002": {
+      "m_bError": null,
+      "m_ID": "2500002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31916,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2500003": {
+      "m_bError": null,
+      "m_ID": "2500003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31925,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2500004": {
+      "m_bError": null,
+      "m_ID": "2500004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30417,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2500005": {
+      "m_bError": null,
+      "m_ID": "2500005",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30173,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
     "6000112": {
       "m_bError": null,
       "m_ID": "6000112",
@@ -619,7 +669,7 @@
       "m_ConditonParam": "[10234,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Little Black Cat</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Little Black Cat</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "6000203": {
@@ -698,6 +748,86 @@
       "m_Conditontype": "1005",
       "m_ConditonParam": "[30644,0]",
       "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000308": {
+      "m_bError": null,
+      "m_ID": "6000308",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10403,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Isaac Van Helsing</color> was defeated.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "6000310": {
+      "m_bError": null,
+      "m_ID": "6000310",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31512,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000311": {
+      "m_bError": null,
+      "m_ID": "6000311",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10402,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Isaac Van Helsing</color> died of poison.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "6000312": {
+      "m_bError": null,
+      "m_ID": "6000312",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10640,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000403": {
+      "m_bError": null,
+      "m_ID": "6000403",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[32500,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000406": {
+      "m_bError": null,
+      "m_ID": "6000406",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10493,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Noah</color> was defeated.\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000408": {
+      "m_bError": null,
+      "m_ID": "6000408",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10494,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#F11E1D>Constantine</color> died.\"",
+      "m_IsShowConditonReason": null
+    },
+    "6000411": {
+      "m_bError": null,
+      "m_ID": "6000411",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[30773,0]",
+      "m_ConditionStart": null,
       "m_ConditonEnd": null,
       "m_mConditonReason": "\"\"",
       "m_IsShowConditonReason": null
@@ -879,7 +1009,7 @@
       "m_ConditonParam": "[15041,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Clive Jr.</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Clive Jr.</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "10006011": {
@@ -919,7 +1049,7 @@
       "m_ConditonParam": "[30533,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Jock</color> was consumed by Famine.\"",
+      "m_mConditonReason": "\"<#F11E1D>Jack</color> was consumed by Famine.\"",
       "m_IsShowConditonReason": "1"
     },
     "10006111": {
@@ -949,7 +1079,7 @@
       "m_ConditonParam": "[50080,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Ship's Helm</color> Destroyed\"",
+      "m_mConditonReason": "\"<#F11E1D>Ship's Helm</color> was destroyed.\"",
       "m_IsShowConditonReason": "1"
     },
     "10006161": {
@@ -969,7 +1099,7 @@
       "m_ConditonParam": "[31030,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Villager</color> Executed\"",
+      "m_mConditonReason": "\"<#F11E1D>Villager</color> was executed.\"",
       "m_IsShowConditonReason": "1"
     },
     "10009021": {
@@ -979,7 +1109,7 @@
       "m_ConditonParam": "[31031,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Villager</color> Executed\"",
+      "m_mConditonReason": "\"<#F11E1D>Villager</color> was executed.\"",
       "m_IsShowConditonReason": "1"
     },
     "10009081": {
@@ -999,7 +1129,7 @@
       "m_ConditonParam": "[31610,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Agares</color> Defeated\"",
+      "m_mConditonReason": "\"<#F11E1D>Agares</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "10009141": {
@@ -1009,7 +1139,7 @@
       "m_ConditonParam": "[10481,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"Pathfinder <#F11E1D>Ami</color> Defeated\"",
+      "m_mConditonReason": "\"Pathfinder <#F11E1D>Ami</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "10070211": {
@@ -1019,7 +1149,7 @@
       "m_ConditonParam": "[10270,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"Fearful <#F11E1D>Girl</color> Defeated\"",
+      "m_mConditonReason": "\"Fearful <#F11E1D>Girl</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "10070811": {
@@ -1049,7 +1179,7 @@
       "m_ConditonParam": "[30528,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"Islander <#F11E1D>Jason</color> Defeated\"",
+      "m_mConditonReason": "\"Islander <#F11E1D>Jason</color> was defeated.\"",
       "m_IsShowConditonReason": "1"
     },
     "10071611": {
@@ -1099,7 +1229,7 @@
       "m_ConditonParam": "[10131,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Empousa</color> Executed\"",
+      "m_mConditonReason": "\"<#F11E1D>Empousa</color> was executed.\"",
       "m_IsShowConditonReason": "1"
     },
     "10200080": {
@@ -1213,5 +1343,5 @@
       "m_IsShowConditonReason": null
     }
   },
-  "status": "processed_121_items"
+  "status": "processed_134_items"
 }

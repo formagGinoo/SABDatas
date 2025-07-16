@@ -1,6 +1,6 @@
 {
   "className": "CData_MainBackground",
-  "timestamp": "2025-07-08T13:35:35.618Z",
+  "timestamp": "2025-07-16T14:14:07.124Z",
   "data": {
     "1600001": {
       "m_bError": null,
@@ -43,7 +43,21 @@
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
       "m_mItemDec": "\"Unlock the Scene As Tears Fade Into The Sunset in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
       "m_HideType": "1"
+    },
+    "1600004": {
+      "m_bError": null,
+      "m_BDID": "1600004",
+      "m_mBDName": "\"The Last Summer on Sapphire Isle\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg103\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner04\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_04\"",
+      "m_mGetwayDes": "\"The Last Summer on Sapphire Isle Redemption\"",
+      "m_mItemName": "\"Memories: The Last Summer on Sapphire Isle\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_04_s\"",
+      "m_mItemDec": "\"Unlock the scene The Last Summer on Sapphire Isle in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
+      "m_HideType": "1"
     }
   },
-  "status": "processed_3_items"
+  "status": "processed_4_items"
 }

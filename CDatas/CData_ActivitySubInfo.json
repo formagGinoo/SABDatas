@@ -1,6 +1,6 @@
 {
   "className": "CData_ActivitySubInfo",
-  "timestamp": "2025-07-08T13:35:14.887Z",
+  "timestamp": "2025-07-16T14:13:49.088Z",
   "data": {
     "1011": {
       "m_bError": null,
@@ -18,9 +18,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_DialogueMain\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"1\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"1\"]]"
     },
     "1012": {
       "m_bError": null,
@@ -38,9 +37,8 @@
       "m_UnlockType": "[1]",
       "m_UnlockData": "[[1012]]",
       "m_Prefab": "\"Form_Activity101Lamia_DialogueMain\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"2\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"2\"]]"
     },
     "1013": {
       "m_bError": null,
@@ -58,9 +56,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_Challenge\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"sub_id\",\"1013\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"sub_id\",\"1013\"]]"
     },
     "1014": {
       "m_bError": null,
@@ -78,9 +75,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamiri_Sign\"",
-      "m_PrefabParam": "[]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
     },
     "1015": {
       "m_bError": null,
@@ -98,9 +94,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_Task\"",
-      "m_PrefabParam": "[]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
     },
     "1016": {
       "m_bError": null,
@@ -118,9 +113,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_ShardPersonality\"",
-      "m_PrefabParam": "[]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
     },
     "1021": {
       "m_bError": null,
@@ -138,9 +132,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_DialogueMain\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"1\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"1\"]]"
     },
     "1022": {
       "m_bError": null,
@@ -158,9 +151,8 @@
       "m_UnlockType": "[1]",
       "m_UnlockData": "[[102112]]",
       "m_Prefab": "\"Form_Activity102Dalcaro_DialogueMain\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"2\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"2\"]]"
     },
     "1023": {
       "m_bError": null,
@@ -178,9 +170,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Challenge\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"sub_id\",\"1023\"]]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"sub_id\",\"1023\"]]"
     },
     "1024": {
       "m_bError": null,
@@ -198,9 +189,8 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Sign\"",
-      "m_PrefabParam": "[]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
     },
     "1025": {
       "m_bError": null,
@@ -218,10 +208,218 @@
       "m_UnlockType": "[]",
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Task\"",
-      "m_PrefabParam": "[]",
-      "m_ExploreScene": "\"\"",
-      "m_ExploreSceneChar": "[]"
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1031": {
+      "m_bError": null,
+      "m_ActivitySubID": "1031",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Sapphire Isle!\"",
+      "m_ActivitySubType": "11",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": "1031",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity103Luoleilai_DialogueMain\"",
+      "m_SubPrefab": "\"LevelDetailLuoleilaiSubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]"
+    },
+    "1032": {
+      "m_bError": null,
+      "m_ActivitySubID": "1032",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Cosmic Singularity\"",
+      "m_ActivitySubType": "13",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity103Luoleilai_Challenge\"",
+      "m_SubPrefab": "\"LevelDetailLuoleilaiSubPanel2\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1032\"]]"
+    },
+    "1033": {
+      "m_bError": null,
+      "m_ActivitySubID": "1033",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Selena's Agenda\"",
+      "m_ActivitySubType": "14",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity103Luoleilai_Sign\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1034": {
+      "m_bError": null,
+      "m_ActivitySubID": "1034",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Ami's Vacation\"",
+      "m_ActivitySubType": "15",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_103Achievement\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1035": {
+      "m_bError": null,
+      "m_ActivitySubID": "1035",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Ami's Vacation\"",
+      "m_ActivitySubType": "18",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_103Achievement\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1036": {
+      "m_bError": null,
+      "m_ActivitySubID": "1036",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Whack-A-Siren!\"",
+      "m_ActivitySubType": "16",
+      "m_Part": "1",
+      "m_MiniGameType": "2",
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[1]",
+      "m_UnlockData": "[[103102]]",
+      "m_Prefab": "\"Form_WhackMoleMain\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1036\"]]"
+    },
+    "1037": {
+      "m_bError": null,
+      "m_ActivitySubID": "1037",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Coastal Adventure\"",
+      "m_ActivitySubType": "16",
+      "m_Part": "1",
+      "m_MiniGameType": "1001",
+      "m_SubTypeIndex": "2",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity102Dalcaro_Task\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1038": {
+      "m_bError": null,
+      "m_ActivitySubID": "1038",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Whack-A-Siren!\"",
+      "m_ActivitySubType": "19",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_WhackMoleTask\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1038\"]]"
+    },
+    "1039": {
+      "m_bError": null,
+      "m_ActivitySubID": "1039",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Boon From Afar\"",
+      "m_ActivitySubType": "17",
+      "m_Part": "1",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_WhackMoleMain\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]"
+    },
+    "1040": {
+      "m_bError": null,
+      "m_ActivitySubID": "1040",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Critical Hour\"",
+      "m_ActivitySubType": "11",
+      "m_Part": "2",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "2",
+      "m_LevelLimit": "1031",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-08 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity104_DialogueMain\"",
+      "m_SubPrefab": "\"LevelDetail104SubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]"
+    },
+    "1041": {
+      "m_bError": null,
+      "m_ActivitySubID": "1041",
+      "m_ActivityID": "1030",
+      "m_mActivityTitle": "\"Critical Hour - Nightmare\"",
+      "m_ActivitySubType": "12",
+      "m_Part": "2",
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": "1031",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-08 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[1]",
+      "m_UnlockData": "[[104012]]",
+      "m_Prefab": "\"Form_Activity104_DialogueMain\"",
+      "m_SubPrefab": "\"LevelDetail104SubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"2\"]]"
     }
   },
-  "status": "processed_11_items"
+  "status": "processed_22_items"
 }

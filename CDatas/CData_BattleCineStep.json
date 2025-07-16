@@ -1,85 +1,7 @@
 {
   "className": "CData_BattleCineStep",
-  "timestamp": "2025-07-08T13:35:23.793Z",
+  "timestamp": "2025-07-16T14:13:55.231Z",
   "data": {
-    "111": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "111",
-      "m_InBattleLevelID": "[1001011]",
-      "m_InBattleAreaID": "[[0]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "11101",
-      "m_Available": "1"
-    },
-    "112": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "112",
-      "m_InBattleLevelID": "[1001011]",
-      "m_InBattleAreaID": "[[1]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "11201",
-      "m_Available": "1"
-    },
-    "113": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "113",
-      "m_InBattleLevelID": "[1001011]",
-      "m_InBattleAreaID": "[[2]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "11301",
-      "m_Available": "1"
-    },
-    "121": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "121",
-      "m_InBattleLevelID": "[1011012]",
-      "m_InBattleAreaID": "[[0]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "12101",
-      "m_Available": "1"
-    },
-    "131": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "131",
-      "m_InBattleLevelID": "[1011013]",
-      "m_InBattleAreaID": "[[0]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "13101",
-      "m_Available": "1"
-    },
-    "133": {
-      "m_bError": null,
-      "m_InBattleCineStepID": "133",
-      "m_InBattleLevelID": "[1011013]",
-      "m_InBattleAreaID": "[[2]]",
-      "m_Repeat": "[[0]]",
-      "m_TriggerID": null,
-      "m_EventType": "4",
-      "m_EventData": "\"0\"",
-      "m_WaitMax": "99",
-      "m_InBattleCineSubStepID": "13305",
-      "m_Available": "1"
-    },
     "10111": {
       "m_bError": null,
       "m_InBattleCineStepID": "10111",
@@ -1406,6 +1328,19 @@
       "m_InBattleCineSubStepID": "2212101",
       "m_Available": "1"
     },
+    "23100": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "23100",
+      "m_InBattleLevelID": "[6000310]",
+      "m_InBattleAreaID": "[[0]]",
+      "m_Repeat": "[[0]]",
+      "m_TriggerID": null,
+      "m_EventType": "2",
+      "m_EventData": "\"31512,50\"",
+      "m_WaitMax": "99",
+      "m_InBattleCineSubStepID": "2310101",
+      "m_Available": "1"
+    },
     "130310": {
       "m_bError": null,
       "m_InBattleCineStepID": "130310",
@@ -1718,6 +1653,110 @@
       "m_InBattleCineSubStepID": "1411301",
       "m_Available": "1"
     },
+    "2039900": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2039900",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "239904",
+      "m_Available": "1"
+    },
+    "2039901": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2039901",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "239908",
+      "m_Available": "1"
+    },
+    "2039902": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2039902",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "239905",
+      "m_Available": "1"
+    },
+    "2039903": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2039903",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "239907",
+      "m_Available": "1"
+    },
+    "2049900": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2049900",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "249901",
+      "m_Available": "1"
+    },
+    "2049901": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2049901",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "249903",
+      "m_Available": "1"
+    },
+    "2049902": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2049902",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "249904",
+      "m_Available": "1"
+    },
+    "2049903": {
+      "m_bError": null,
+      "m_InBattleCineStepID": "2049903",
+      "m_InBattleLevelID": "[]",
+      "m_InBattleAreaID": "[]",
+      "m_Repeat": "[]",
+      "m_TriggerID": null,
+      "m_EventType": null,
+      "m_EventData": "\"\"",
+      "m_WaitMax": null,
+      "m_InBattleCineSubStepID": "249907",
+      "m_Available": "1"
+    },
     "9123120": {
       "m_bError": null,
       "m_InBattleCineStepID": "9123120",
@@ -1758,5 +1797,5 @@
       "m_Available": "1"
     }
   },
-  "status": "processed_135_items"
+  "status": "processed_138_items"
 }

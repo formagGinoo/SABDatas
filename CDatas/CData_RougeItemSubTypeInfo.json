@@ -1,55 +1,62 @@
 {
   "className": "CData_RougeItemSubTypeInfo",
-  "timestamp": "2025-07-08T13:35:47.682Z",
+  "timestamp": "2025-07-16T14:14:20.073Z",
   "data": {
     "101": {
       "m_bError": null,
       "m_ItemSubType": "101",
       "m_mTypeName": "\"Basic Materia\"",
       "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag02\"",
-      "m_TypeColor": "[83,131,78,1]"
+      "m_TypeColor": "[83,131,78,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_green\""
     },
     "102": {
       "m_bError": null,
       "m_ItemSubType": "102",
       "m_mTypeName": "\"Sealed Relic\"",
-      "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag04\"",
-      "m_TypeColor": "[82,121,154,1]"
+      "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag03\"",
+      "m_TypeColor": "[82,121,154,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_yellow\""
     },
     "103": {
       "m_bError": null,
       "m_ItemSubType": "103",
       "m_mTypeName": "\"Sealed Relic\"",
-      "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag04\"",
-      "m_TypeColor": "[82,121,154,1]"
+      "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag01\"",
+      "m_TypeColor": "[82,121,154,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_red\""
     },
     "201": {
       "m_bError": null,
       "m_ItemSubType": "201",
       "m_mTypeName": "\"Unique Relic\"",
       "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag01\"",
-      "m_TypeColor": "[138,35,35,1]"
+      "m_TypeColor": "[138,35,35,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_red\""
     },
     "202": {
       "m_bError": null,
       "m_ItemSubType": "202",
       "m_mTypeName": "\"Basic Relic\"",
       "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag03\"",
-      "m_TypeColor": "[170,119,55,1]"
+      "m_TypeColor": "[170,119,55,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_yellow\""
     },
     "203": {
       "m_bError": null,
       "m_ItemSubType": "203",
       "m_mTypeName": "\"Basic Relic\"",
       "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag03\"",
-      "m_TypeColor": "[170,119,55,1]"
+      "m_TypeColor": "[170,119,55,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_yellow\""
     },
     "301": {
       "m_bError": null,
       "m_ItemSubType": "301",
       "m_mTypeName": "\"Expansion Item\"",
       "m_TypeIcon": "\"Atlas_SimulationRogue/rogue_item_tag02\"",
-      "m_TypeColor": "[83,131,78,1]"
+      "m_TypeColor": "[83,131,78,1]",
+      "m_TypeTabPic": "\"Atlas_Rouge/rogue_item_img_frame_title_green\""
     }
   },
   "status": "processed_7_items"

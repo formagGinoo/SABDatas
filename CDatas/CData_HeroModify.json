@@ -1,6 +1,6 @@
 {
   "className": "CData_HeroModify",
-  "timestamp": "2025-07-08T13:35:34.790Z",
+  "timestamp": "2025-07-16T14:14:06.355Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -452,6 +452,16 @@
       "m_IgnoreLegacy": null,
       "m_IgnoreXunHuanShi": null
     },
+    "7001": {
+      "m_bError": null,
+      "m_ID": "7001",
+      "m_ForceLevel": "200",
+      "m_ForceBreak": null,
+      "m_ForceAttractRank": null,
+      "m_IgnoreEquip": null,
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": null
+    },
     "9001": {
       "m_bError": null,
       "m_ID": "9001",
@@ -463,5 +473,5 @@
       "m_IgnoreXunHuanShi": null
     }
   },
-  "status": "processed_46_items"
+  "status": "processed_47_items"
 }

@@ -1,0 +1,161 @@
+{
+  "className": "CData_AncientTask",
+  "timestamp": "2025-07-16T14:13:53.173Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_UID": "1",
+      "m_mTaskName": "\"Attempt [Infinite Abyss] stages {0} time(s).\"",
+      "m_DescParam": "[\"3\"]",
+      "m_ObjectiveType": "203",
+      "m_ObjectiveData": "[3,0]",
+      "m_ObjectiveCount": "3",
+      "m_Reward": "[[1061,100]]",
+      "m_Jump": "4"
+    },
+    "2": {
+      "m_bError": null,
+      "m_UID": "2",
+      "m_mTaskName": "\"Attempt [Infinite Abyss] stages {0} time(s).\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "203",
+      "m_ObjectiveData": "[3,0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "4"
+    },
+    "3": {
+      "m_bError": null,
+      "m_UID": "3",
+      "m_mTaskName": "\"Make a purchase in General Store {0} time(s)\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "403",
+      "m_ObjectiveData": "[101]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "2601"
+    },
+    "4": {
+      "m_bError": null,
+      "m_UID": "4",
+      "m_mTaskName": "\"Challenge Blood Arena - Gauntlet {0} time(s).\"",
+      "m_DescParam": "[\"3\"]",
+      "m_ObjectiveType": "201",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "3",
+      "m_Reward": "[[1061,100]]",
+      "m_Jump": "1901"
+    },
+    "5": {
+      "m_bError": null,
+      "m_UID": "5",
+      "m_mTaskName": "\"Challenge Blood Arena - Gauntlet {0} time(s).\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "201",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "1901"
+    },
+    "6": {
+      "m_bError": null,
+      "m_UID": "6",
+      "m_mTaskName": "\"Upgrade any Vassal {0} time(s)\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "106",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "2"
+    },
+    "7": {
+      "m_bError": null,
+      "m_UID": "7",
+      "m_mTaskName": "\"Accept Moonlight Tribute {0} time(s).\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "406",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "3"
+    },
+    "8": {
+      "m_bError": null,
+      "m_UID": "8",
+      "m_mTaskName": "\"Accept Moonlight Tribute {0} time(s).\"",
+      "m_DescParam": "[\"2\"]",
+      "m_ObjectiveType": "406",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "2",
+      "m_Reward": "[[1061,100]]",
+      "m_Jump": "3"
+    },
+    "9": {
+      "m_bError": null,
+      "m_UID": "9",
+      "m_mTaskName": "\"Give Extra Sermon in Moonlight Tribute {0} time(s).\"",
+      "m_DescParam": "[\"2\"]",
+      "m_ObjectiveType": "407",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "2",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "3"
+    },
+    "10": {
+      "m_bError": null,
+      "m_UID": "10",
+      "m_mTaskName": "\"Begin {0} Mission(s) in Wilderness Expedition.\"",
+      "m_DescParam": "[\"3\"]",
+      "m_ObjectiveType": "160",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "3",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "5101"
+    },
+    "11": {
+      "m_bError": null,
+      "m_UID": "11",
+      "m_mTaskName": "\"Begin {0} Meeting(s) in Council Chamber.\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "161",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "5301"
+    },
+    "12": {
+      "m_bError": null,
+      "m_UID": "12",
+      "m_mTaskName": "\"Enhance any equipment {0} times.\"",
+      "m_DescParam": "[\"1\"]",
+      "m_ObjectiveType": "122",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "2"
+    },
+    "13": {
+      "m_bError": null,
+      "m_UID": "13",
+      "m_mTaskName": "\"Enhance any equipment {0} times.\"",
+      "m_DescParam": "[\"3\"]",
+      "m_ObjectiveType": "122",
+      "m_ObjectiveData": "[0]",
+      "m_ObjectiveCount": "3",
+      "m_Reward": "[[1061,100]]",
+      "m_Jump": "2"
+    },
+    "14": {
+      "m_bError": null,
+      "m_UID": "14",
+      "m_mTaskName": "\"Gift Perennial Band to a friend {0} times.\"",
+      "m_DescParam": "[\"5\"]",
+      "m_ObjectiveType": "408",
+      "m_ObjectiveData": "[1]",
+      "m_ObjectiveCount": "5",
+      "m_Reward": "[[1061,80]]",
+      "m_Jump": "23"
+    }
+  },
+  "status": "processed_14_items"
+}

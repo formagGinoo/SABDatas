@@ -1,6 +1,6 @@
 {
   "className": "CData_RogueStageItemCombination",
-  "timestamp": "2025-07-08T13:35:47.285Z",
+  "timestamp": "2025-07-16T14:14:19.650Z",
   "data": {
     "20100010": {
       "m_bError": null,
@@ -362,6 +362,38 @@
       "m_MaterialID_3": "10100015",
       "m_MaterialID_4": "10100022"
     },
+    "20100640": {
+      "m_bError": null,
+      "m_RougeItemID": "20100640",
+      "m_MaterialID_1": "10300640",
+      "m_MaterialID_2": "10100015",
+      "m_MaterialID_3": "10100023",
+      "m_MaterialID_4": null
+    },
+    "20100650": {
+      "m_bError": null,
+      "m_RougeItemID": "20100650",
+      "m_MaterialID_1": "10300650",
+      "m_MaterialID_2": "10100008",
+      "m_MaterialID_3": "10100001",
+      "m_MaterialID_4": null
+    },
+    "20100660": {
+      "m_bError": null,
+      "m_RougeItemID": "20100660",
+      "m_MaterialID_1": "10300660",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100023",
+      "m_MaterialID_4": null
+    },
+    "20100700": {
+      "m_bError": null,
+      "m_RougeItemID": "20100700",
+      "m_MaterialID_1": "10300700",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100014",
+      "m_MaterialID_4": null
+    },
     "20200001": {
       "m_bError": null,
       "m_RougeItemID": "20200001",
@@ -459,5 +491,5 @@
       "m_MaterialID_4": null
     }
   },
-  "status": "processed_57_items"
+  "status": "processed_61_items"
 }

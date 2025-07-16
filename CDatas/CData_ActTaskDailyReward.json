@@ -1,0 +1,37 @@
+{
+  "className": "CData_ActTaskDailyReward",
+  "timestamp": "2025-07-16T14:13:49.283Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_RequiredScore": "2",
+      "m_Reward": "[[1102,5]]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_RequiredScore": "4",
+      "m_Reward": "[[40021,1]]"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_RequiredScore": "6",
+      "m_Reward": "[[500032,100]]"
+    },
+    "4": {
+      "m_bError": null,
+      "m_ID": "4",
+      "m_RequiredScore": "8",
+      "m_Reward": "[[1102,10]]"
+    },
+    "5": {
+      "m_bError": null,
+      "m_ID": "5",
+      "m_RequiredScore": "10",
+      "m_Reward": "[[30001,1]]"
+    }
+  },
+  "status": "processed_5_items"
+}

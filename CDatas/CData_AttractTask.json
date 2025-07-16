@@ -1,0 +1,27 @@
+{
+  "className": "CData_AttractTask",
+  "timestamp": "2025-07-16T14:13:54.237Z",
+  "data": {
+    "100001": {
+      "m_bError": null,
+      "m_UID": "100001",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_ObjectiveType": "181",
+      "m_ObjectiveData": "[100001]",
+      "m_ObjectiveCount": "1",
+      "m_Reward": "[]",
+      "m_Mapid": "6000101"
+    },
+    "200001": {
+      "m_bError": null,
+      "m_UID": "200001",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_ObjectiveType": "182",
+      "m_ObjectiveData": "[200001,999]",
+      "m_ObjectiveCount": "1000",
+      "m_Reward": "[]",
+      "m_Mapid": "6000101"
+    }
+  },
+  "status": "processed_2_items"
+}
