@@ -1,7 +1,7 @@
 # SABDatas
 Datamined data for the game Silver And Blood
 
-## Target Version : 1.1.370.398.7
+## Target Version : 1.1.374.406.1.0
 
 TO-DO:
 - [x] Add LuaScripts
