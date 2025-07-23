@@ -77,6 +77,10 @@ function IAPManager:GetProductWelfarePrice(productId)
 end
 
 function IAPManager:BuyProduct(productId, productSubId, iStoreType, storeParam, callback, exParam, isBuyWithWelfare)
+  if self.m_purchaseDelay and self.m_purchaseDelay > 0 then
+    log.error("购买延迟中，无法进行购买")
+    return
+  end
   self:RealBuyProduct(productId, productSubId, iStoreType, storeParam, callback, exParam, isBuyWithWelfare)
 end
 
@@ -87,7 +91,17 @@ end
 function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storeParam, callback, exParam, isBuyWithWelfare)
   if self.m_productBuying[productId] and self.m_storeImpl:EnableCheckValid() then
     log.error(tostring(productId) .. "商品正在购买中")
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52006))
+    if ChannelManager:IsIOS() and ChannelManager:IsUsingQSDK() then
+      if self.m_autoReleaseDict == nil then
+        self.m_autoReleaseDict = {}
+      end
+      if self.m_autoReleaseDict[productId] == nil then
+        self.m_autoReleaseDict[productId] = 60
+      end
+      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, "当前存在未完成订单，请1分钟后再次尝试")
+    else
+      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52006))
+    end
     return
   end
   if self:GetStoreType() ~= StoreType.MSDKPc then
@@ -111,6 +125,9 @@ function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storePar
   
   local function OnSdkCallback(isSuccess, param1, param2)
     if isSuccess then
+      if ChannelManager:IsIOS() and self:GetStoreType() == StoreType.QSDK then
+        self.m_purchaseDelay = 0.5
+      end
       if not CS.UnityEngine.Application.isEditor then
         self.m_storeImpl:Report(productId)
       end
@@ -194,7 +211,20 @@ function IAPManager:OnCallbackFail(param1, param2)
       local errorMap = json.decode(param2.message)
       local errorMessage = ConfigManager:GetClientMessageTextById(errorMap.Code or errorMap.err_code)
       if errorMessage == "???" then
-        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, param2.message)
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, "ErrorCode:" .. tostring(errorMap.Code))
+      else
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, errorMessage)
+      end
+    elseif ChannelManager:IsIOS() then
+      local code
+      if ChannelManager:IsExeVerBig("1.1.370") >= 0 then
+        code = param2.status
+      else
+        code = string.match(param2.message, "%-(%d+)")
+      end
+      local errorMessage = ConfigManager:GetClientMessageTextById(code)
+      if errorMessage == "???" then
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, "ErrorCode:" .. tostring(code))
       else
         StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, errorMessage)
       end
@@ -208,11 +238,25 @@ function IAPManager:OnCallbackFail(param1, param2)
 end
 
 function IAPManager:OnUpdate(dt)
-  if self.m_updateTime then
-    self.m_updateTime = self.m_updateTime - dt
-    if self.m_updateTime <= 0 then
-      self.m_lastProductId = nil
-      self.m_updateTime = nil
+  self.m_dt = (self.m_dt or 0) + dt
+  if self.m_dt >= 1.0 then
+    self.m_dt = 0
+    if self.m_autoReleaseDict then
+      for productId, timeLeft in pairs(self.m_autoReleaseDict) do
+        if 0 < timeLeft then
+          self.m_autoReleaseDict[productId] = timeLeft - 1
+        else
+          self.m_productBuying[productId] = nil
+          self.m_autoReleaseDict[productId] = nil
+          log.error("商品限购时间到，自动释放购买限制：" .. tostring(productId))
+        end
+      end
+    end
+  end
+  if self.m_purchaseDelay then
+    self.m_purchaseDelay = self.m_purchaseDelay - dt
+    if 0 >= self.m_purchaseDelay then
+      self.m_purchaseDelay = nil
     end
   end
 end
@@ -233,7 +277,7 @@ function IAPManager:OnPushIAPDelivery(data, msg)
     CS.DMMGameStoreManager.Instance:ConsumeRecept(data.sProductId)
   end
   self.m_productBuying[data.sProductId] = nil
-  if data.vItem and #data.vItem > 0 then
+  if data.vItem and table.getn(data.vItem) > 0 then
     utils.popUpRewardUI(data.vItem, function()
       self:broadcastEvent("eGameEvent_IAPDeliveryOnCloseRewardUI", data)
     end)

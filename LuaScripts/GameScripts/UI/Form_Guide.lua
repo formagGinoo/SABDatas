@@ -408,6 +408,7 @@ function Form_Guide:StartSubStepGuide()
     if globalEnergy >= tonumber(self.subStepData.TypeParam[0]) then
       self:FinishSubStepGuide()
     else
+      CS.UI.UILuaHelper.RegisterGuideCallback(handler(self, self.OnGuideClick))
       CS.UI.UILuaHelper.GuideGlobalLockCastSkill = true
       CS.UI.UILuaHelper.SetLockCastSkill(true)
       if self.battleEnergyEvenHandler then
@@ -855,6 +856,9 @@ function Form_Guide:OnGuideClick(go, mapclick, manualFinish)
   end
   if self.subStepData and not string.IsNullOrEmpty(self.subStepData.WndName) and go and type(go) == "userdata" and go.transform and not CS.UI.UILuaHelper.CheckGuideClickInView(go.transform, self.subStepData.WndName) then
     return false
+  end
+  if self.subStepData and (self.subStepData.Type == "battlewaitenergy" or self.subStepData.Type == "waitingbattletime") then
+    return true
   end
   if self.subStepData and self.subStepData.Type == "battlepre" then
     return true

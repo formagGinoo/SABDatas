@@ -12,7 +12,11 @@ end
 
 function GameOpenGiftSubPanel:RefreshData()
   local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
-  local goodsData = self.m_storeData.stGoodsConfig.mGoods
+  local goodsList = self.m_storeData.stGoodsConfig.mGoods
+  local goodsData = {}
+  for k, v in pairs(goodsList) do
+    table.insert(goodsData, v)
+  end
   table.sort(goodsData, function(a, b)
     return a.iGoodsId < b.iGoodsId
   end)

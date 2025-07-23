@@ -13,6 +13,7 @@ require("ProtoGameHero")
 require("ProtoGameEquip")
 require("ProtoGameGuide")
 require("ProtoGamePush")
+require("ProtoGameAncient")
 module("MTTDProto")
 CmdId_Merge_GetInitMust_CS = 15601
 CmdId_Merge_GetInitMust_SC = 15602
@@ -36,6 +37,7 @@ Cmd_Merge_GetInitMust_SC.Definition = {
   "stAttract",
   "stQuestInit",
   "stStarRoom",
+  "stAncient",
   stNotice = {
     0,
     0,
@@ -118,6 +120,12 @@ Cmd_Merge_GetInitMust_SC.Definition = {
     13,
     0,
     Cmd_Castle_GetStarRoom_SC,
+    nil
+  },
+  stAncient = {
+    14,
+    0,
+    Cmd_Ancient_GetData_SC,
     nil
   }
 }

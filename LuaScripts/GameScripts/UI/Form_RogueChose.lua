@@ -83,6 +83,16 @@ function Form_RogueChose:AfterInit()
   self.m_levelRogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
   self.m_enterRogueStageFlag = true
   self.m_tempRoundCombineItemIDList = {}
+  self.m_tempPosDragItemList = {}
+  for i = 1, MaxTempPosNum do
+    local btnExtension = self["m_temp_pos_btn" .. i]:GetComponent("ButtonExtensions")
+    if btnExtension then
+      btnExtension.BeginDrag = handler(self, self["OnTempPosBeginDrag" .. i], i)
+      btnExtension.Drag = handler(self, self["OnTempPosDrag" .. i], i)
+      btnExtension.EndDrag = handler(self, self["OnTempPosEndDrag" .. i], i)
+      btnExtension.Clicked = handler(self, self["OnTempPosClk" .. i], i)
+    end
+  end
 end
 
 function Form_RogueChose:OnOpen()
@@ -148,18 +158,76 @@ function Form_RogueChose:InitCreateEquipItemDataList(rogueItemIDList)
   if itemNum <= 0 then
     return
   end
+  local recommendList = self:CheckEquipItemIsRecommend(rogueItemIDList)
   for i = 1, itemNum do
     local tempItemID = rogueItemIDList[i - 1]
     local tempRogueStageItemInfoCfg = self.m_levelRogueStageHelper:GetRogueItemCfgByID(tempItemID)
+    local isRecommend = false
+    if 0 < table.getn(recommendList) then
+      isRecommend = table.indexof(recommendList, tempItemID) ~= false and true or false
+    end
     if tempRogueStageItemInfoCfg then
       self.m_equipUID = self.m_equipUID + 1
       local showEquipItemData = {
         uid = self.m_equipUID,
         rogueStageItemCfg = tempRogueStageItemInfoCfg,
-        isHaveChoose = false
+        isHaveChoose = false,
+        isChooseFull = false,
+        isRecommend = isRecommend
       }
       self.m_showRogueEquipItemDataList[#self.m_showRogueEquipItemDataList + 1] = showEquipItemData
     end
+  end
+end
+
+function Form_RogueChose:CheckEquipItemIsRecommend(rogueItemIDList)
+  local recommendList = {}
+  if table.getn(rogueItemIDList) == 0 then
+    return recommendList
+  end
+  for i, tempItemID in pairs(rogueItemIDList) do
+    local recommend = self:CheckEquipItemIsRecommendMat(tempItemID)
+    if recommend then
+      recommendList[#recommendList + 1] = tempItemID
+    end
+  end
+  if table.getn(recommendList) > 0 then
+    return recommendList
+  end
+  for i, tempItemID in pairs(rogueItemIDList) do
+    local recommend = self:CheckEquipItemIsRecommendMap(tempItemID)
+    if recommend then
+      recommendList[#recommendList + 1] = tempItemID
+    end
+  end
+  return recommendList
+end
+
+function Form_RogueChose:CheckEquipItemIsRecommendMat(itemID)
+  if not itemID then
+    return
+  end
+  local rogueStageItemCfg = self.m_levelRogueStageHelper:GetRogueItemCfgByID(itemID)
+  if rogueStageItemCfg.m_ItemType == RogueStageManager.RogueStageItemType.Material then
+    local connectMatIDList = self.m_levelRogueStageHelper:GetRogueCombinationMapIDListByMaterialID(itemID)
+    if table.getn(connectMatIDList) > 0 then
+      for i, matID in ipairs(connectMatIDList) do
+        local tempRogueDragEquipItemCom = self:GetRogueDragEquipItemByID(matID)
+        if tempRogueDragEquipItemCom then
+          return true
+        end
+      end
+    end
+  end
+end
+
+function Form_RogueChose:CheckEquipItemIsRecommendMap(itemID)
+  if not itemID then
+    return
+  end
+  local rogueStageItemCfg = self.m_levelRogueStageHelper:GetRogueItemCfgByID(itemID)
+  if rogueStageItemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CommonMap or rogueStageItemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.ExclusiveMap then
+    return true
   end
 end
 
@@ -431,8 +499,8 @@ function Form_RogueChose:CheckChangeAllEquipItemListUseStatus()
   self.m_dragEquipItem.m_rogueEquipItemData.isHaveChoose = true
   if self.m_isHaveChooseNum + 1 >= __SimRoomBuffListMaxNum then
     for i, v in ipairs(self.m_showRogueEquipItemDataList) do
-      if v then
-        v.isHaveChoose = true
+      if v and v.isHaveChoose ~= true then
+        v.isChooseFull = true
       end
     end
   end
@@ -493,6 +561,7 @@ function Form_RogueChose:EquipDragItemInTempPosFresh(rogueDragEquipItemCom, temp
     UILuaHelper.SetParent(rogueDragEquipItemCom.m_itemRootObj, posRoot)
     UILuaHelper.SetLocalPosition(rogueDragEquipItemCom.m_itemRootObj, 0, 0, 0)
     UILuaHelper.SetLocalScale(rogueDragEquipItemCom.m_itemRootObj, 1, 1, 1)
+    self.m_tempPosDragItemList[tempPosIndex] = rogueDragEquipItemCom
   end
   rogueDragEquipItemCom:OnPutInTempPos(tempPosIndex)
   if self.m_startDragType == DragRectType.BgGrid then
@@ -902,6 +971,7 @@ function Form_RogueChose:OnItemEndDrag(dragPos)
         self:CheckChangeAllEquipItemListUseStatus()
         self:ClearDragData(true)
       else
+        self:DelTempPosDragItemList()
         if not utils.isNull(self.m_dragEquipItem) then
           self.m_dragEquipItem:PlayEquippedAnim()
         end
@@ -938,6 +1008,7 @@ function Form_RogueChose:OnItemEndDrag(dragPos)
       func1 = function()
         self:CheckChangeAllEquipItemListUseStatus()
         self:ClearDragData(true)
+        self:DelTempPosDragItemList()
       end,
       func2 = function()
         self:CheckPutBack()
@@ -1034,6 +1105,138 @@ function Form_RogueChose:OnBtncontinueClicked()
     self.m_levelRogueStageHelper:SetRogueBagData(bagData)
   end
   self:ResetGuideData()
+end
+
+function Form_RogueChose:DelTempPosDragItemList()
+  if table.getn(self.m_tempPosDragItemList) > 0 then
+    local index = table.keyof(self.m_tempPosDragItemList, self.m_dragEquipItem)
+    if index then
+      self.m_tempPosDragItemList[index] = nil
+    end
+  end
+end
+
+function Form_RogueChose:OnTempPosBeginDrag(index, pointerEventData)
+  if not pointerEventData or not index then
+    return
+  end
+  if utils.isNull(self.m_tempPosDragItemList[index]) or utils.isNull(self.m_tempPosDragItemList[index].m_itemRootObj) then
+    self.m_tempPosDragItemList[index] = nil
+    return
+  end
+  self:OnDragEquipItemEnterDrag(self.m_tempPosDragItemList[index], pointerEventData.position)
+end
+
+function Form_RogueChose:OnTempPosDrag(index, pointerEventData)
+  if not pointerEventData or not index then
+    return
+  end
+  if utils.isNull(self.m_tempPosDragItemList[index]) or utils.isNull(self.m_tempPosDragItemList[index].m_itemRootObj) then
+    self.m_tempPosDragItemList[index] = nil
+    return
+  end
+  self:OnItemDrag(pointerEventData.position)
+end
+
+function Form_RogueChose:OnTempPosEndDrag(index, pointerEventData)
+  if not pointerEventData or not index then
+    return
+  end
+  if utils.isNull(self.m_tempPosDragItemList[index]) or utils.isNull(self.m_tempPosDragItemList[index].m_itemRootObj) then
+    self.m_tempPosDragItemList[index] = nil
+    return
+  end
+  self:OnItemEndDrag(pointerEventData.position)
+end
+
+function Form_RogueChose:OnTempPosClk(index)
+  if utils.isNull(self.m_tempPosDragItemList[index]) or utils.isNull(self.m_tempPosDragItemList[index].m_itemRootObj) then
+    self.m_tempPosDragItemList[index] = nil
+    return
+  end
+  if self.m_tempPosDragItemList[index].m_rogueEquipItemData and self.m_tempPosDragItemList[index].m_itemRootObj then
+    self:OnDragEquipItemClk(self.m_tempPosDragItemList[index].m_rogueEquipItemData, self.m_tempPosDragItemList[index].m_itemRootObj.transform)
+  end
+end
+
+function Form_RogueChose:OnTempPosBeginDrag1(pointerEventData)
+  self:OnTempPosBeginDrag(1, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosDrag1(pointerEventData)
+  self:OnTempPosDrag(1, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosEndDrag1(pointerEventData)
+  self:OnTempPosEndDrag(1, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosClk1()
+  self:OnTempPosClk(1)
+end
+
+function Form_RogueChose:OnTempPosBeginDrag2(pointerEventData)
+  self:OnTempPosBeginDrag(2, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosDrag2(pointerEventData)
+  self:OnTempPosDrag(2, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosEndDrag2(pointerEventData)
+  self:OnTempPosEndDrag(2, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosClk2()
+  self:OnTempPosClk(2)
+end
+
+function Form_RogueChose:OnTempPosBeginDrag3(pointerEventData)
+  self:OnTempPosBeginDrag(3, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosDrag3(pointerEventData)
+  self:OnTempPosDrag(3, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosEndDrag3(pointerEventData)
+  self:OnTempPosEndDrag(3, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosClk3()
+  self:OnTempPosClk(3)
+end
+
+function Form_RogueChose:OnTempPosBeginDrag4(pointerEventData)
+  self:OnTempPosBeginDrag(4, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosDrag4(pointerEventData)
+  self:OnTempPosDrag(4, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosEndDrag4(pointerEventData)
+  self:OnTempPosEndDrag(4, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosClk4()
+  self:OnTempPosClk(4)
+end
+
+function Form_RogueChose:OnTempPosBeginDrag5(pointerEventData)
+  self:OnTempPosBeginDrag(5, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosDrag5(pointerEventData)
+  self:OnTempPosDrag(5, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosEndDrag5(pointerEventData)
+  self:OnTempPosEndDrag(5, pointerEventData)
+end
+
+function Form_RogueChose:OnTempPosClk5()
+  self:OnTempPosClk(5)
 end
 
 function Form_RogueChose:GuideTimetowerchoose(fromIdx, toGridX, toGridY, callback, deltaNum)

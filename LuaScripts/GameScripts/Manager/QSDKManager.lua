@@ -172,7 +172,11 @@ function QSDKManager:Pay(productID, productSubID, exParam, price, OnPayCB)
   end
   local orderInfo = {}
   orderInfo.goodsID = productID
-  orderInfo.goodsName = exParam.productName or ""
+  if exParam.productName == nil or exParam.productName == "" then
+    orderInfo.goodsName = "礼包"
+  else
+    orderInfo.goodsName = exParam.productName
+  end
   orderInfo.goodsDesc = exParam.productDesc or ""
   orderInfo.quantifier = "个"
   local vCreateRoleBaseInfo = QSDKManager:CreateRoleBaseInfo()
@@ -245,11 +249,19 @@ function QSDKManager:IsSandBox()
 end
 
 function QSDKManager:IsFunctionSupport(funcId)
-  return CS.QSDKUtils.Instance:IsFunctionSupport(funcId)
+  if ChannelManager:IsWindows() then
+    return false
+  else
+    return CS.QSDKUtils.Instance:IsFunctionSupport(funcId)
+  end
 end
 
 function QSDKManager:CallFunction(successCB, failCB, funcId)
-  return CS.QSDKUtils.Instance:CallFunction(successCB, failCB, funcId)
+  if ChannelManager:IsWindows() then
+    return false
+  else
+    return CS.QSDKUtils.Instance:CallFunction(successCB, failCB, funcId)
+  end
 end
 
 function QSDKManager:GetChannelType()
@@ -273,6 +285,12 @@ function QSDKManager:GetSubChannelCode()
     return self:CallFunction(nil, nil, 0)
   end
   return ""
+end
+
+function QSDKManager:CallTapTap()
+  if self:IsFunctionSupport(207) then
+    self:CallFunction(nil, nil, 207)
+  end
 end
 
 function QSDKManager:GetPackageChannel(sChannel)

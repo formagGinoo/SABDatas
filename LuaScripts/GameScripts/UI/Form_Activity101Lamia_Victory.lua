@@ -29,6 +29,8 @@ function Form_Activity101Lamia_Victory:AfterInit()
   self.m_showHeroID = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_Activity101Lamia_Victory:OnActive()
@@ -131,17 +133,26 @@ function Form_Activity101Lamia_Victory:InsertTopFive(bonusData)
   if not bonusData then
     return
   end
-  local insertIndex = 1
+  local insertIndex
   for i, tempBonusData in ipairs(self.m_heroTopBonus) do
-    if bonusData.sort < tempBonusData.sort then
+    if bonusData.sort <= tempBonusData.sort then
       insertIndex = i
       break
     end
   end
+  if self.m_heroTopBonus and #self.m_heroTopBonus > 0 then
+    if not insertIndex and #self.m_heroTopBonus >= FormPlotMaxNum then
+      return
+    else
+      insertIndex = #self.m_heroTopBonus + 1
+    end
+  else
+    insertIndex = 1
+  end
   table.insert(self.m_heroTopBonus, insertIndex, bonusData)
   local totalLen = #self.m_heroTopBonus
   if totalLen > FormPlotMaxNum then
-    table.remove(self.m_heroTopBonus, FormPlotMaxNum)
+    table.remove(self.m_heroTopBonus, totalLen)
   end
 end
 
@@ -185,23 +196,27 @@ function Form_Activity101Lamia_Victory:GetRandom(beginIndex, endIndex)
   return math.random(beginIndex, endIndex)
 end
 
-function Form_Activity101Lamia_Victory:GetSpineHeroID()
+function Form_Activity101Lamia_Victory:GetSpineFashionInfo()
+  local heroData
   if self.m_showHeroID ~= nil then
-    return self.m_showHeroID
-  end
-  local showHeroDataList
-  if self.m_actSubType ~= HeroActivityManager.SubActTypeEnum.ChallengeLevel then
-    showHeroDataList = HeroManager:GetHeroList()
+    local heroID = self.m_showHeroID
+    heroData = HeroManager:GetHeroDataByID(heroID)
   else
+    local showHeroDataList
     self:FreshHeroBonusData()
     if #self.m_heroTopBonus <= 0 then
       showHeroDataList = HeroManager:GetHeroList()
     else
       showHeroDataList = self.m_heroTopBonus
     end
+    local randomIndex = self:GetRandom(1, #showHeroDataList)
+    heroData = HeroManager:GetHeroDataByID(showHeroDataList[randomIndex].heroID)
   end
-  local randomIndex = self:GetRandom(1, #showHeroDataList)
-  return showHeroDataList[randomIndex].characterCfg.m_HeroID
+  if not heroData then
+    return
+  end
+  local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  return fashionInfo
 end
 
 function Form_Activity101Lamia_Victory:GetShowSpineAndVoice()
@@ -212,20 +227,18 @@ function Form_Activity101Lamia_Victory:GetShowSpineAndVoice()
   if not levelCfg then
     return
   end
-  local heroID = levelCfg.m_Settlement
-  local heroCfg
-  if heroID == nil or heroID == 0 then
-    heroID = self:GetSpineHeroID()
+  local fashionID = levelCfg.m_Settlement
+  local fashionInfo
+  if fashionID == nil or fashionID == 0 then
+    fashionInfo = self:GetSpineFashionInfo()
+  else
+    fashionInfo = self.m_HeroFashion:GetFashionInfoByID(fashionID)
   end
-  if not heroID then
+  if not fashionInfo then
     return
   end
-  heroCfg = HeroManager:GetHeroConfigByID(heroID)
-  if not heroCfg then
-    return
-  end
-  local voice = HeroManager:GetHeroBattleVictoryVoice(heroID)
-  local spineStr = heroCfg.m_Spine
+  local voice = self.m_HeroVoice:GetHeroBattleVictoryVoice(fashionInfo)
+  local spineStr = fashionInfo.m_Spine
   if not spineStr then
     return
   end

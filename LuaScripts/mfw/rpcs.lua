@@ -17,6 +17,7 @@ function NetRPCs:Init()
   local gameClient = RPCS().CsSession:AddClient(NetClientTypes.Game, "game")
   local netUC = CS.com.muf.net.client.mfw.NetUIController.Instance
   netUC:AddIgnoreRequestId(MTTDProto.CmdId_Net_Idle_CS)
+  netUC:AddIgnoreRequestId(MTTDProto.CmdId_Role_ServerTime_CS)
   netUC:Listen()
 end
 

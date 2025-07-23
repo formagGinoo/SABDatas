@@ -27,9 +27,9 @@ local ModuleMustPanelCfg = {
     UIDefines.ID_FORM_HEROUPGRADE,
     UIDefines.ID_FORM_HEROEQUIPREPLACEPOP,
     UIDefines.ID_FORM_HEROSHOW,
-    UIDefines.ID_FORM_ATTRACTMAIN,
+    UIDefines.ID_FORM_ATTRACTMAIN2,
     UIDefines.ID_FORM_ATTRACTLEVELUP,
-    UIDefines.ID_FORM_ATTRACTBOOK,
+    UIDefines.ID_FORM_ATTRACTBOOK2,
     UIDefines.ID_FORM_HEROPREVIEW
   },
   CastleModule = {

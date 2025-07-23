@@ -175,6 +175,7 @@ function Form_HeroDetail:AfterInit()
   self.voiceLimit = tonumber(self.duringHeroVoice[1]) or 0
   self.voiceUpper = tonumber(self.duringHeroVoice[2]) or 0
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_HeroDetail:OnOpen()
@@ -193,7 +194,7 @@ function Form_HeroDetail:OnActive()
       return
     end
     self:StopCurDisPlayPlayingVoice()
-    self:PlayHeroDisPlayVoice(heroCfg)
+    self:PlayHeroDisPlayVoice()
   end
 end
 
@@ -203,7 +204,6 @@ function Form_HeroDetail:OnInactive()
   self.m_doActive = false
   self:RemoveAllEventListeners()
   self:ClearData()
-  self:StopCurPlayingVoice()
   self:PlayTouchDisappearAnimation()
   if self.m_spineClick then
     self.m_spineClick:DestroyFollowerList()
@@ -353,8 +353,9 @@ function Form_HeroDetail:CheckFreshRedDot()
     return
   end
   local iHeroId = self.m_curShowHeroData.serverData.iHeroId
-  self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base, RedDotDefine.ModuleType.HeroBreak, iHeroId)
+  self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base, RedDotDefine.ModuleType.HeroBaseInfoTab, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base2, RedDotDefine.ModuleType.HeroEquipped, iHeroId)
+  self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_skin, RedDotDefine.ModuleType.HeroFashion, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base3, RedDotDefine.ModuleType.HeroSkillLevelUp, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_attract, RedDotDefine.ModuleType.HeroAttractEntry, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base4, RedDotDefine.ModuleType.HeroLegacyTab, iHeroId)
@@ -399,7 +400,8 @@ function Form_HeroDetail:FreshChangeHeroTab(index)
   if index then
     if index == HeroTagCfg.Base then
       local heroId = self.m_curShowHeroData.characterCfg.m_HeroID
-      self:GetRandomTimerPlayVoice(self.voiceLimit, self.voiceUpper, heroId)
+      local fashionID = self.m_curShowHeroData.serverData.iFashion
+      self:GetRandomTimerPlayVoice(self.voiceLimit, self.voiceUpper, heroId, fashionID)
     else
       self:KillVoiceTimer()
     end
@@ -454,6 +456,8 @@ function Form_HeroDetail:FreshChangeHeroTab(index)
       UILuaHelper.SetActive(self.m_pnl_equip_bg, false)
     end
   end
+  local isFashionBtnShow = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.HeroFashion)
+  UILuaHelper.SetActive(self.m_btn_skin, isFashionBtnShow == true and self.m_curChooseTab == HeroTagCfg.Base)
   self.m_blood_bg:SetActive(self.m_curChooseTab == HeroTagCfg.Base)
   self.m_btn_clothe:SetActive(self.m_curChooseTab == HeroTagCfg.Base)
   self.m_btn_attract:SetActive(self.m_curShowHeroData.characterCfg.m_AttractRankTemplate > 0 and self.m_curChooseTab == HeroTagCfg.Base)
@@ -484,13 +488,27 @@ function Form_HeroDetail:FreshShowHeroInfo(isEnterFresh)
   end
   self.m_txt_power_value_Text.text = BigNumFormat(self.m_curShowHeroData.serverData.iPower)
   self.m_txt_power_value2_Text.text = BigNumFormat(self.m_curShowHeroData.serverData.iPower)
-  self:ShowHeroSpine(heroCfg.m_Spine, isEnterFresh)
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local heroFashionSpine = self.m_HeroFashion:GetHeroSpineByHeroFashionID(heroCfg.m_HeroID, fashionID)
+  if not heroFashionSpine then
+    return
+  end
+  self:ShowHeroSpine(heroFashionSpine, isEnterFresh)
   self:FreshShowHeroIndex()
   self:CheckFreshRedDot()
 end
 
-function Form_HeroDetail:PlayHeroDisPlayVoice(heroCfg)
-  local m_PerformanceID = heroCfg.m_PerformanceID[0]
+function Form_HeroDetail:PlayHeroDisPlayVoice()
+  if not self.m_curShowHeroData then
+    return
+  end
+  local heroID = self.m_curShowHeroData.serverData.iHeroId
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local fashionInfoCfg = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroID, fashionID)
+  if not fashionInfoCfg then
+    return
+  end
+  local m_PerformanceID = fashionInfoCfg.m_PerformanceID[0]
   if not m_PerformanceID then
     return
   end
@@ -499,12 +517,12 @@ function Form_HeroDetail:PlayHeroDisPlayVoice(heroCfg)
   if not presentationData.m_GainVoice then
     return
   end
-  CS.UI.UILuaHelper.StartPlaySFX(presentationData.m_CharDisplayVoice, nil, function(playingDisplayId)
+  UILuaHelper.StartPlaySFX(presentationData.m_CharDisplayVoice, nil, function(playingDisplayId)
     self.m_playingDisplayId = playingDisplayId
   end, function()
     self.m_playingDisplayId = nil
   end)
-  CS.UI.UILuaHelper.StartPlaySFX(presentationData.m_GainVoiceEvent, nil, function(playingDisplayId)
+  UILuaHelper.StartPlaySFX(presentationData.m_GainVoiceEvent, nil, function(playingDisplayId)
     self.m_playingDisplayId3 = playingDisplayId
   end, function()
     self.m_playingDisplayId3 = nil
@@ -545,7 +563,12 @@ function Form_HeroDetail:OnRefreshHeroSpine()
   if heroCfg.m_HeroID == 0 then
     return
   end
-  self:ShowHeroSpine(heroCfg.m_Spine)
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local heroFashionSpine = self.m_HeroFashion:GetHeroSpineByHeroFashionID(heroCfg.m_HeroID, fashionID)
+  if not heroFashionSpine then
+    return
+  end
+  self:ShowHeroSpine(heroFashionSpine)
 end
 
 function Form_HeroDetail:ShowHeroSpine(heroSpinePathStr, isEnterFresh)
@@ -921,7 +944,6 @@ function Form_HeroDetail:TryChangeCurHero(toHeroIndex)
     log.info(string.format("Download HeroDetail ChangeCurHero %s,%s Complete: %s", tostring(levelType), tostring(levelID), tostring(ret)))
     self.m_curChooseHeroIndex = toHeroIndex
     self.m_curShowHeroData = self.m_allHeroList[self.m_curChooseHeroIndex]
-    self:StopCurPlayingVoice()
     self:FreshAttractHeroInfo()
     self:FreshShowHeroInfo()
     self:FreshCurTabSubPanelInfo(true)
@@ -1084,8 +1106,7 @@ function Form_HeroDetail:OnBtnattractClicked()
     return
   end
   AttractManager:LoadFavorabilityScene(nil, {
-    hero_id = self.m_curShowHeroData.serverData.iHeroId,
-    curShowHeroData = self.m_curShowHeroData
+    hero_id = self.m_curShowHeroData.serverData.iHeroId
   })
 end
 
@@ -1162,6 +1183,18 @@ function Form_HeroDetail:OnBtncampClicked()
   StackFlow:Push(UIDefines.ID_FORM_HEROCAMPDETAIL, {heroCfg = heroCfg})
 end
 
+function Form_HeroDetail:OnBtnskinClicked()
+  if not self.m_curShowHeroData then
+    return
+  end
+  local heroCfg = self.m_curShowHeroData.characterCfg
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  StackFlow:Push(UIDefines.ID_FORM_FASHION, {
+    heroID = heroCfg.m_HeroID,
+    fashionID = fashionID
+  })
+end
+
 function Form_HeroDetail:IsFullScreen()
   return true
 end
@@ -1170,7 +1203,8 @@ function Form_HeroDetail:GetDownloadResourceExtra(tParam)
   local vSubPanelName = {
     "HeroBaseSubPanel",
     "HeroEquipSubPanel",
-    "HeroSkillSubPanel"
+    "HeroSkillSubPanel",
+    "HeroLegacySubPanel"
   }
   local vPackage = {}
   local vResourceExtra = {}
@@ -1329,36 +1363,11 @@ function Form_HeroDetail:ShowAttractLevelUp()
   self.m_oldRank = self.m_curShowHeroData.serverData.iAttractRank
 end
 
-function Form_HeroDetail:PlayVoice(voiceInfo)
-  CS.UI.UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
-    self.m_playingId = playingId
-    self.m_bg_lines:SetActive(true)
-    self.m_txt_lines_Text.text = voiceInfo.subtitle
-  end, function()
-    self.m_playSubIndex = self.m_playSubIndex + 1
-    local nextVoice = self.m_vVoiceText[self.m_playSubIndex]
-    if nextVoice ~= nil then
-      self:PlayVoice(nextVoice)
-    else
-      self.m_bg_lines:SetActive(false)
-      self.m_playingId = nil
-    end
-  end)
-end
-
-function Form_HeroDetail:StopCurPlayingVoice()
-  self.m_playSubIndex = 1
-  self.m_bg_lines:SetActive(false)
-  if self.m_playingId then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingId)
-  end
-end
-
-function Form_HeroDetail:GetRandomTimerPlayVoice(limit, upper, heroID)
+function Form_HeroDetail:GetRandomTimerPlayVoice(limit, upper, heroID, fashionID)
   local during = self:GetRanomTime(limit, upper)
   if during then
     self.voiceTimer = TimeService:SetTimer(during, 1, function()
-      local voice = HeroManager:GetHeroIdleVoice(heroID)
+      local voice = HeroManager:GetHeroVoice():GetHeroIdleVoice(heroID, fashionID)
       if voice and voice ~= "" then
         CS.UI.UILuaHelper.StartPlaySFX(voice, nil, function(playingDisplayId)
           self.m_playingDisplayId2 = playingDisplayId

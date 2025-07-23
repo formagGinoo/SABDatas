@@ -1,6 +1,5 @@
 {
   "className": "CData_Presentation",
-  "timestamp": "2025-07-16T14:14:15.914Z",
   "data": {
     "10491": {
       "m_bError": null,
@@ -170,7 +169,7 @@
     "20000": {
       "m_bError": null,
       "m_PerformanceID": "20000",
-      "m_SoundEnglishName": "\"哈�\"",
+      "m_SoundEnglishName": "\"20000\"",
       "m_Prefab": "\"C_Nevernight_Base\"",
       "m_Replacematrial": "\"\"",
       "m_ReplaceAnimator": "[]",
@@ -4020,7 +4019,7 @@
     "20500": {
       "m_bError": null,
       "m_PerformanceID": "20500",
-      "m_SoundEnglishName": "\"20500\"",
+      "m_SoundEnglishName": "\"Play_\"",
       "m_Prefab": "\"C_Jeffrey_Sword\"",
       "m_Replacematrial": "\"\"",
       "m_ReplaceAnimator": "[]",
@@ -14856,7 +14855,7 @@
       "m_bError": null,
       "m_PerformanceID": "31332",
       "m_SoundEnglishName": "\"\"",
-      "m_Prefab": "\"G_Nightmare_Seed\"",
+      "m_Prefab": "\"G_Empty_Base\"",
       "m_Replacematrial": "\"\"",
       "m_ReplaceAnimator": "[]",
       "m_BoneID": "1",
@@ -14874,7 +14873,7 @@
       "m_UIkeyword": "\"\"",
       "m_PieceGridWidth": "3",
       "m_PieceGridLength": "3",
-      "m_MaxSkillPrefab": "\"G_Nightmare_Seed\"",
+      "m_MaxSkillPrefab": "\"G_Empty_Base\"",
       "m_BornMovie": "\"\"",
       "m_PlayBornEffect": null,
       "m_DieMovie": "\"\"",

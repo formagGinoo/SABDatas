@@ -1,6 +1,5 @@
 local UIItemBase = require("UI/Common/UIItemBase")
 local UIHeroActTaskItem = class("UIHeroActTaskItem", UIItemBase)
-local PlayerPrefs = CS.UnityEngine.PlayerPrefs
 
 function UIHeroActTaskItem:OnInit()
   self.m_rewardObjList = {}

@@ -91,10 +91,25 @@ end
 
 function Form_ActivityAnnounceLotterypage:OnDestroy()
   self.super.OnDestroy(self)
-  self:RemoveAllEventListeners()
 end
 
 function Form_ActivityAnnounceLotterypage:AddEventListeners()
+  self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnGetActivityResetData))
+end
+
+function Form_ActivityAnnounceLotterypage:OnGetActivityResetData()
+  self:UpdateActivityData()
+  if #self.m_consultDataList > 0 then
+    self.curChooseTopTab = TopTab.ConsultAnnouncement
+  end
+  if 0 < #self.m_systemDataList then
+    self.curChooseTopTab = TopTab.SystemAnnouncement
+  end
+  if 0 < #self.m_activityDataList then
+    self.curChooseTopTab = TopTab.ActivityAnnouncement
+  end
+  self.cur_leftselect_idx = 1
+  self:RefreshUI()
 end
 
 function Form_ActivityAnnounceLotterypage:RemoveAllEventListeners()
@@ -610,6 +625,7 @@ end
 
 function Form_ActivityAnnounceLotterypage:OnInactive()
   self.super.OnInactive(self)
+  self:RemoveAllEventListeners()
   PushFaceManager:CheckShowNextPopPanel()
 end
 

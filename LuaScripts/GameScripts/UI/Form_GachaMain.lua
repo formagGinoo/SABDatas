@@ -42,7 +42,7 @@ function Form_GachaMain:AfterInit()
   local resourceBarRoot = self.m_rootTrans:Find("m_content_node/ui_common_top_resource").gameObject
   self.m_widgetResourceBar = self:createResourceBar(resourceBarRoot)
   local goBackBtnRoot = self.m_csui.m_uiGameObject.transform:Find("m_content_node/ui_common_top_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome))
+  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil)
   self.m_subPanelData = {}
   self.m_curChooseTab = 1
   self:AddEventListeners()
@@ -53,6 +53,7 @@ function Form_GachaMain:OnActive()
   self.super.OnActive(self)
   self.m_content_node:SetActive(true)
   self.m_firstEnter = true
+  self.m_changeTabLockUI = false
   self.m_subPanelData = {}
   self.m_gachaData = nil
   self:GeneratedGachaList()
@@ -232,6 +233,7 @@ function Form_GachaMain:OnInactive()
     TimeService:KillTimer(v)
   end
   self.timerList = nil
+  self.m_changeTabLockUI = false
 end
 
 function Form_GachaMain:refreshTabLoopScroll()
@@ -247,6 +249,9 @@ function Form_GachaMain:refreshTabLoopScroll()
       end,
       click_func = function(index, cell_object, cell_data, click_object, click_name)
         if click_name == "c_btn_go" then
+          if self.m_changeTabLockUI == true then
+            return
+          end
           CS.GlobalManager.Instance:TriggerWwiseBGMState(21)
           if self.m_curChooseTab == index then
             return
@@ -258,8 +263,9 @@ function Form_GachaMain:refreshTabLoopScroll()
       end
     }
     self.m_loop_scroll_view = LoopScrollViewUtil.new(params)
+    self.m_loop_scroll_view:moveToCellIndex(self.m_curChooseTab)
   else
-    self.m_loop_scroll_view:reloadData(data)
+    self.m_loop_scroll_view:reloadData(data, true)
   end
 end
 
@@ -271,7 +277,7 @@ function Form_GachaMain:updateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_go", true)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_select", self.m_curChooseTab == index)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_UIFX_Team_btn", self.m_curChooseTab == index)
-  UIUtil.setLocalScale(c_item_root, self.m_curChooseTab == index and 1 or 0.86, self.m_curChooseTab == index and 1 or 0.86)
+  UIUtil.setLocalScale(c_item_root, self.m_curChooseTab == index and 1 or 0.87, self.m_curChooseTab == index and 1 or 0.87)
   LuaBehaviourUtil.setImg(luaBehaviour, "c_img_herobg", config.m_BannerPic)
   LuaBehaviourUtil.setImg(luaBehaviour, "c_img_herobg_mask", config.m_BannerPic)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_herobg_mask", self.m_curChooseTab ~= index)
@@ -285,6 +291,15 @@ function Form_GachaMain:updateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_txt_time", false)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_txt_count", false)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_RemainTime_icon", false)
+  if config.m_TagType then
+    if config.m_TagType == 1 then
+      LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_bg2", false)
+    else
+      LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_bg2", true)
+      local MultiColorChange = luaBehaviour:FindGameObject("c_img_bg2"):GetComponent("MultiColorChange")
+      MultiColorChange:SetColorByIndex(config.m_TagType - 1)
+    end
+  end
   if config.m_EndTime ~= "" then
     self.timerList = self.timerList or {}
     if self.timerList[config.m_GachaID] then
@@ -340,6 +355,7 @@ function Form_GachaMain:ChangeTab(index, cell_data)
     if curSubPanelData then
       self:RefreshGachaRedDat(index, curSubPanelData)
       if curSubPanelData.subPanelLua == nil then
+        self.m_changeTabLockUI = true
         local initData = curSubPanelData.config
         
         local function loadCallBack(subPanelLua)
@@ -353,6 +369,7 @@ function Form_GachaMain:ChangeTab(index, cell_data)
             self.m_preLoadFlag = nil
             self:PreLoadUI()
           end
+          self.m_changeTabLockUI = false
         end
         
         SubPanelManager:LoadSubPanel(curSubPanelData.subPanelName, curSubPanelData.panelRoot, self, initData, {gachaConfig = initData}, loadCallBack)

@@ -21,6 +21,7 @@ function Form_AttractBook2:OnActive()
   self:InitData()
   self:FreshUI()
   AttractManager:SetRaycastOn(false)
+  self:DealFromBattle()
 end
 
 function Form_AttractBook2:OnInactive()
@@ -63,8 +64,10 @@ end
 function Form_AttractBook2:InitData()
   local tParam = self.m_csui.m_param
   if tParam then
-    self.m_curShowHeroData = tParam.curShowHeroData
+    self.m_curShowHeroData = HeroManager:GetHeroDataByID(tParam.hero_id)
+    self.bIsFromBattle = tParam.bIsFromBattle or false
     self.iCurPage = 0
+    self.fCB = tParam.callback
     self.m_csui.m_param = nil
   end
   if not self.m_curShowHeroData then
@@ -73,12 +76,46 @@ function Form_AttractBook2:InitData()
   local iHeroId = self.m_curShowHeroData.characterCfg.m_HeroID
   self.mAttractBookCfg = AttractManager:GetAttractArchiveSerializationCfgByHeroID(iHeroId)
   self.mCurHeroAttract = AttractManager:GetHeroAttractById(iHeroId)
+  self.iCurPage, self.iCurArchiveId = AttractManager:GetTheNewestPage(iHeroId)
 end
 
 function Form_AttractBook2:FreshUI()
   self.iCurPage = self.iCurPage or 0
   self:FreshFirstPage()
   self:FreshPage()
+end
+
+function Form_AttractBook2:DealFromBattle()
+  if self.bIsFromBattle then
+    self.bIsFromBattle = false
+    local iHeroId = self.m_curShowHeroData.characterCfg.m_HeroID
+    StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {
+      bIsInAttract = true,
+      isReading = true,
+      hero_id = iHeroId,
+      callback = function()
+        local bIsMailSaw = AttractManager:IsMailSaw(iHeroId, self.iCurArchiveId)
+        if bIsMailSaw then
+          AttractManager:ReqTakeArchiveReward(iHeroId, self.iCurArchiveId, function()
+            local cfg = AttractManager:GetAttractArchiveCfgByHeroIDAndArchiveID(iHeroId, self.iCurArchiveId)
+            local aniName = cfg.m_ArchiveSubType == AttractManager.ArchiveSubType.SpecialLetter and "timeline_in" or "new_discovery_in"
+            UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, aniName)
+            if self.timer then
+              TimeService:KillTimer(self.timer)
+              self.timer = nil
+            end
+            self.timer = TimeService:SetTimer(0.1, 1, function()
+              self:FreshPage()
+            end)
+          end)
+        end
+      end
+    })
+    if self.fCB then
+      self.fCB("Form_AttractLetter")
+      self.fCB = nil
+    end
+  end
 end
 
 function Form_AttractBook2:FreshPage()
@@ -101,7 +138,8 @@ function Form_AttractBook2:FreshFirstPage()
   local characterCampSubCfg = ConfigManager:GetConfigInsByName("CharacterCampSub")
   local subCampInfo = characterCampSubCfg:GetValue_ByCampSubID(characterCfg.m_CampSubID)
   self.m_txt_hero_sl_Text.text = campCfg.m_mCampName .. "-" .. subCampInfo.m_mCampSubName
-  ResourceUtil:CreatHeroBust(self.m_img_head_Image, iHeroId)
+  local iFasionId = HeroManager:GetCurUseFashionID(iHeroId) or 0
+  ResourceUtil:CreatHeroBust(self.m_img_head_Image, iHeroId, iFasionId)
   local cfg = AttractManager:GetAttractArchiveCfgByHeroIDAndArchiveID(iHeroId, 1)
   if cfg then
     self.m_txt_desc_Text.text = cfg.m_mText
@@ -400,6 +438,7 @@ function Form_AttractBook2:OnBtnItemClicked(params)
         RequestTakeReward()
       else
         StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {
+          bIsInAttract = true,
           isReading = true,
           hero_id = iHeroId,
           callback = function()
@@ -418,6 +457,7 @@ function Form_AttractBook2:OnBtnItemClicked(params)
   elseif attractArchiveCfg.m_ArchiveType == AttractManager.ArchiveType.Letter then
     if attractArchiveCfg.m_ArchiveSubType == AttractManager.ArchiveSubType.NormalLetter then
       StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {
+        bIsInAttract = true,
         isReading = false,
         hero_id = iHeroId,
         iLetterId = attractArchiveCfg.m_LetterId

@@ -89,6 +89,7 @@ function StargazingManager:OnAfterFreshData()
   local vList = castleStarTechCfg:GetAll()
   local iConstellationID = 0
   local iStarID = 0
+  self.m_vAvailableStarList = {}
   for k, v in pairs(vList) do
     local list2 = v
     for k2, v2 in pairs(list2) do

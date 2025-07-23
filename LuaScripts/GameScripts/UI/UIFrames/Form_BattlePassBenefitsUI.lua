@@ -1,4 +1,4 @@
-local Form_BattlePassBenefitsUI = class("Form_BattlePassBenefitsUI", require("UI/Common/UIBase"))
+local Form_BattlePassBenefitsUI = class("Form_BattlePassBenefitsUI", require("UI/Common/BattlePassBase/UIBattlePassBenefits"))
 
 function Form_BattlePassBenefitsUI:Init(gameObject, csui)
   if gameObject == nil then

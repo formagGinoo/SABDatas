@@ -450,14 +450,14 @@ function Form_Heroheat:OnBtntipsClicked()
 end
 
 function Form_Heroheat:CloseAllTopTabSelectImg()
-  for i = 0, 5 do
+  for i = 0, 7 do
     UILuaHelper.SetActive(self["m_img_tab_sel" .. i], false)
     UILuaHelper.SetColorByMultiIndex(self["m_icon_tab" .. i], 0)
   end
 end
 
 function Form_Heroheat:CloseAllTopTabImg()
-  for i = 0, 5 do
+  for i = 0, 7 do
     UILuaHelper.SetActive(self["m_pnl_tabtop" .. i], false)
   end
 end

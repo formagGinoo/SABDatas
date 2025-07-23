@@ -26,7 +26,7 @@ function Form_AttractMain2:OnActive()
   self.bIsLoading = false
   self:InitData()
   self:FreshUI()
-  StackTop:RemoveUIFromStack(UIDefines.ID_FORM_GAMESCENELOADING)
+  StackTop:DestroyUI(UIDefines.ID_FORM_GAMESCENELOADING)
 end
 
 function Form_AttractMain2:OnInactive()
@@ -153,7 +153,7 @@ function Form_AttractMain2:OnBtncanonClicked()
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_ATTRACTBOOK2, {
-    curShowHeroData = self.m_curShowHeroData
+    hero_id = self.m_curShowHeroData.serverData.iHeroId
   })
 end
 
@@ -162,6 +162,9 @@ function Form_AttractMain2:OnBtncanonlockClicked()
 end
 
 function Form_AttractMain2:OnClickEntryItem(go, index)
+  if GuideManager:CheckGuideIsActive(2030) then
+    return
+  end
   if index == 1 then
     self:OnBtncanonClicked()
   elseif index == 2 then
@@ -193,10 +196,12 @@ function Form_AttractMain2:OnBtnvoiceClicked()
 end
 
 function Form_AttractMain2:OnBackClk()
-  GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity)
-  StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_ATTRACTMAIN2)
-  self.m_curChooseHeroIndex = nil
-  self.m_curShowHeroData = nil
+  GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function()
+    StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_ATTRACTMAIN2)
+    self:GoBackFormHall()
+    self.m_curChooseHeroIndex = nil
+    self.m_curShowHeroData = nil
+  end)
 end
 
 function Form_AttractMain2:OnBackHome()

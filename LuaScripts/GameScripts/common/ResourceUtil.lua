@@ -10,7 +10,8 @@ ResourceUtil.RESOURCE_TYPE = {
   ATTRACT_GIFT = 800001,
   HEAD_ICONS = 1300001,
   HEAD_FRAME_ICONS = 1400001,
-  BackGround = 1600001
+  BackGround = 1600001,
+  Fashion = 6000001
 }
 
 function ResourceUtil:GetProcessRewardData(data, customData)
@@ -90,6 +91,15 @@ function ResourceUtil:GetProcessRewardData(data, customData)
     item_data.icon_name = cfg.m_Icon
     if customData then
       item_data.level = customData.iLevel or 1
+      item_data.is_selected = customData.is_selected
+      item_data.is_have_get = customData.is_have_get
+    end
+  elseif data_type == ResourceUtil.RESOURCE_TYPE.Fashion then
+    local cfg = HeroManager:GetHeroFashion():GetFashionInfoByID(data_id)
+    item_data.name = cfg.m_mFashionName
+    item_data.quality = cfg.m_Quality
+    item_data.icon_name = cfg.m_FashionItemPic
+    if customData then
       item_data.is_selected = customData.is_selected
       item_data.is_have_get = customData.is_have_get
     end
@@ -263,6 +273,8 @@ function ResourceUtil:GetResourceTypeById(id)
     resourceType = ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS
   elseif id >= MTTDProto.ItemIdSeg_MainBackground_Min and id <= MTTDProto.ItemIdSeg_MainBackground_Max then
     resourceType = ResourceUtil.RESOURCE_TYPE.BackGround
+  elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
+    resourceType = ResourceUtil.RESOURCE_TYPE.Fashion
   end
   return resourceType
 end
@@ -283,6 +295,8 @@ function ResourceUtil:CreatIconById(imageItem, id)
     self:CreateLegacyIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_HeadFrame_Min and id <= MTTDProto.ItemIdSeg_HeadFrame_Max then
     self:CreateHeadFrameIcon(imageItem, id)
+  elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
+    self:CreateFashionIcon(imageItem, id)
   else
     self:CreateItemIcon(imageItem, id)
   end
@@ -425,6 +439,30 @@ function ResourceUtil:CreateEquipCampImg(imageItem, camp)
   CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.m_CampIcon, nil, nil, true)
 end
 
+function ResourceUtil:CreateEquipCommonQualityImg(imageItem, quality)
+  local stItemData = GlobalConfig.QUALITY_EQUIP_SETTING[quality]
+  if not stItemData then
+    log.error("ResourceUtil CreateEquipCommonQualityImg quality  " .. tostring(quality))
+    return
+  end
+  if not stItemData.BgImage then
+    return
+  end
+  CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.BgImage, nil, nil, true)
+end
+
+function ResourceUtil:CreateEquipCommonIconImg(imageItem, quality)
+  local stItemData = GlobalConfig.QUALITY_EQUIP_SETTING[quality]
+  if not stItemData then
+    log.error("ResourceUtil CreateEquipCommonQualityImg quality  " .. tostring(quality))
+    return
+  end
+  if not stItemData.itemIcon then
+    return
+  end
+  CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.itemIcon, nil, nil, true)
+end
+
 function ResourceUtil:CreateHeroHeadIcon(imageItem, heroId, star)
   if not heroId then
     return
@@ -469,16 +507,43 @@ function ResourceUtil:CreateHeadFrameIcon(imageItem, headFrameID)
   UILuaHelper.SetAtlasSprite(imageItem, config.m_ItemIcon, nil, nil, true)
 end
 
-function ResourceUtil:CreatHeroBust(imageItem, heroId)
-  local characterIns = ConfigManager:GetConfigInsByName("CharacterInfo")
-  local InGameCharacterIns = characterIns:GetValue_ByHeroID(heroId)
-  if InGameCharacterIns:GetError() or not InGameCharacterIns.m_PerformanceID then
+function ResourceUtil:CreateFashionIcon(imageItem, fashionID)
+  if not fashionID then
     return
   end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
+  local config = HeroManager:GetHeroFashion():GetFashionInfoByID(fashionID)
+  if not config then
     return
   end
+  UILuaHelper.SetAtlasSprite(imageItem, config.m_FashionItemPic, nil, nil, true)
+end
+
+function ResourceUtil:CreateFashionBust(imageItem, fashionID)
+  if not fashionID then
+    return
+  end
+  local config = HeroManager:GetHeroFashion():GetFashionInfoByID(fashionID)
+  if not config then
+    return
+  end
+  local m_PerformanceID = config.m_PerformanceID[0]
+  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
+  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
+  if not presentationData.m_UIkeyword then
+    return
+  end
+  local szIcon = presentationData.m_UIkeyword .. "001"
+  UILuaHelper.SetAtlasSprite(imageItem, szIcon, nil, nil, true)
+end
+
+function ResourceUtil:CreatHeroBust(imageItem, heroId, iFasionId)
+  local m_PerformanceID
+  iFasionId = iFasionId or 0
+  local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroId, iFasionId)
+  if not fashionCfg then
+    return
+  end
+  m_PerformanceID = fashionCfg.m_PerformanceID[0]
   local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
   local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
   if not presentationData.m_UIkeyword then
@@ -509,6 +574,29 @@ function ResourceUtil:GetHeroIconPath(heroId, heroCfg)
     return
   end
   return presentationData.m_UIkeyword .. "002"
+end
+
+function ResourceUtil:GetHeroSkinIconPath(skinId, skinCfg)
+  local m_PerformanceID
+  if not skinCfg then
+    local fashionInfoIns = ConfigManager:GetConfigInsByName("FashionInfo")
+    local InGameCharacterSkinIns = fashionInfoIns:GetValue_ByFashionID(skinId)
+    if InGameCharacterSkinIns:GetError() or not InGameCharacterSkinIns.m_PerformanceID then
+      return
+    end
+    m_PerformanceID = InGameCharacterSkinIns.m_PerformanceID[0]
+  elseif skinCfg.m_PerformanceID then
+    m_PerformanceID = skinCfg.m_PerformanceID[0]
+  end
+  if not m_PerformanceID then
+    return
+  end
+  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
+  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
+  if not presentationData.m_UIkeyword then
+    return
+  end
+  return presentationData.m_UIkeyword .. "003"
 end
 
 function ResourceUtil:CreateHeroSSRQualityImg(imageItem, quality)

@@ -19,8 +19,8 @@ function GameScene_CouncilHall:OnEnterScene(iSceneIDPrev)
       end
       self.ChairList = ChairList
       self.mascotObjList = {}
-      self.mascotObjList[1] = go.transform:Find("Castle_CouncilHall_1/Base/G_MascotBat_Skin")
-      self.mascotObjList[2] = go.transform:Find("Castle_CouncilHall_1/Base/G_MascotGarlic_Base_skin")
+      self.mascotObjList[1] = go.transform:Find("Castle_CouncilHall_1/Base/G_MascotBat_Base")
+      self.mascotObjList[2] = go.transform:Find("Castle_CouncilHall_1/Base/G_MascotGarlic_Base")
     end
   end
   CouncilHallManager:SetCouncilHallChairListAndCamera(self.ChairList, self.m_camera, self.mascotObjList)

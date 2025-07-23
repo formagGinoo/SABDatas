@@ -319,7 +319,10 @@ function Form_AttractMainSendGift:ShowAttractLevelUp()
   StackFlow:Push(UIDefines.ID_FORM_ATTRACTLEVELUP, {
     curShowHeroData = self.m_curShowHeroData,
     iOldRank = self.m_oldRank,
-    iNewRank = newRank
+    iNewRank = newRank,
+    callback = function()
+      AttractManager:LoadFavorabilityHero(self.m_curShowHeroData.serverData.iHeroId)
+    end
   })
   self.m_oldRank = self.m_curShowHeroData.serverData.iAttractRank
 end
@@ -469,9 +472,11 @@ function Form_AttractMainSendGift:OnBtnsendlightClicked()
         local serverData = self.m_curShowHeroData.serverData
         local nextExpInfo = self.m_expList[serverData.iAttractRank + 1]
         if nextExpInfo == nil or nextExpInfo.breakCondition > 0 and serverData.iBreak < nextExpInfo.breakCondition then
-          m_voice, m_FavorText = HeroManager:GetHeroFavorLeveuUpMaxVoice(self.m_curShowHeroData.serverData.iHeroId)
+          local fashionID = self.m_curShowHeroData.serverData.iFashion
+          m_voice, m_FavorText = HeroManager:GetHeroVoice():GetHeroFavorLeveuUpMaxVoice(self.m_curShowHeroData.serverData.iHeroId, fashionID)
         else
-          m_voice, m_FavorText = HeroManager:GetHeroFavorLeveuUpVoice(self.m_curShowHeroData.serverData.iHeroId)
+          local fashionID = self.m_curShowHeroData.serverData.iFashion
+          m_voice, m_FavorText = HeroManager:GetHeroVoice():GetHeroFavorLeveuUpVoice(self.m_curShowHeroData.serverData.iHeroId, fashionID)
         end
         self:StopCurPlayingVoice()
         self.m_vVoiceText = {

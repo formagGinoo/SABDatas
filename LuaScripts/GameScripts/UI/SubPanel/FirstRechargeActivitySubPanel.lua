@@ -1,7 +1,7 @@
 local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local FirstRechargeActivitySubPanel = class("FirstRechargeActivitySubPanel", UISubPanelBase)
 local iMaxCount = 4
-local DefaultShowSpineName = "Hippocratic_Base"
+local DefaultShowSpineName = ConfigManager:GetGlobalSettingsByKey("FirstChargeHeroShow") or "Hippocratic_Base"
 
 function FirstRechargeActivitySubPanel:OnInit()
   self:AddEventListeners()
@@ -71,10 +71,10 @@ function FirstRechargeActivitySubPanel:OnInitItem(go, index, data)
     CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
     utils.openItemDetailPop({iID = iID, iNum = iNum})
   end)
-  local fx = transform:Find("img_light_collect").gameObject
-  fx:SetActive(self.questState.iState == TaskManager.TaskState.Finish)
   self.m_UIFX_firstrecharge_loop:SetActive(self.questState.iState == TaskManager.TaskState.Finish)
   commonItem:SetItemHaveGetActive(self.questState.iState == TaskManager.TaskState.Completed)
+  local m_img_select = transform:Find("m_img_select").gameObject
+  m_img_select:SetActive(self.questState.iState == TaskManager.TaskState.Finish)
 end
 
 function FirstRechargeActivitySubPanel:OnBtnchargeClicked()

@@ -1,9 +1,12 @@
 local Form_RogueStageMain = class("Form_RogueStageMain", require("UI/UIFrames/Form_RogueStageMainUI"))
+local CliveActivityTipsItem = require("UI/Item/HeroActivity/CliveActivityTipsItem")
 local __MaxTower = 5
 local __Roguestagemain_up = "Roguestagemain_up"
 local __Roguestagemain_down = "Roguestagemain_down"
 local __Roguestagemain_ui_out = "Roguestagemain_ui_out"
 local __Roguestagemain_ui_in = "Roguestagemain_ui_in"
+local __CliveActivityTip_ui_out = "clive_tips_out"
+local __CliveActivityTip_ui_in = "clive_tips_in"
 local __Roguestagemain_leftTab = {
   "Roguestagemain_left1",
   "Roguestagemain_left2",
@@ -63,6 +66,7 @@ function Form_RogueStageMain:AfterInit()
   end
   self:RegisterRedDot()
   self.m_rogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
+  self.cliveActivityTip = CliveActivityTipsItem:CreateCliveActivityTipsItem(self.m_panel_tips, {tipType = 2, cliveType = 1})
 end
 
 function Form_RogueStageMain:OnActive()
@@ -79,6 +83,7 @@ function Form_RogueStageMain:OnActive()
   self:RefreshUI()
   RogueStageManager:ResetRogueBagData()
   self:AddEventListeners()
+  self.cliveActivityTip:OnFreshData()
 end
 
 function Form_RogueStageMain:OnInactive()
@@ -100,6 +105,11 @@ end
 
 function Form_RogueStageMain:AddEventListeners()
   self:addEventListener("eGameEvent_RogueStage_TakeReward", handler(self, self.RefreshUI))
+  self:addEventListener("eGameEvent_Activity_FullBurstDayUpdate", handler(self, self.OnFullBurstDayUpdate))
+end
+
+function Form_RogueStageMain:OnFullBurstDayUpdate()
+  self.m_doublereward:SetActive(ActivityManager:IsFullBurstDayOpen())
 end
 
 function Form_RogueStageMain:RemoveAllEventListeners()
@@ -119,6 +129,7 @@ function Form_RogueStageMain:RefreshUI()
   self.m_key_num_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(100074), curLevel)
   self:RefreshSmallTowerState()
   self:RefreshWindowUI()
+  self:OnFullBurstDayUpdate()
   UILuaHelper.SetActive(self.m_img_key_bk_gary, not self.m_rogueStageHelper:IsHaveRewards())
 end
 
@@ -322,6 +333,9 @@ function Form_RogueStageMain:OnRogueStagePanelOut()
     UILuaHelper.PlayAnimationByName(self.m_pnl_bk, __Roguestagemain_leftOutTab[self.m_curStageIndex])
   end
   UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, __Roguestagemain_ui_in)
+  if self.cliveActivityTip then
+    UILuaHelper.PlayAnimationByName(self.m_panel_tips, __CliveActivityTip_ui_in)
+  end
 end
 
 function Form_RogueStageMain:OnChangeStageRefreshUI()
@@ -383,6 +397,9 @@ function Form_RogueStageMain:OnClickedStage()
   if self.m_curDetailLevelID then
     self:FreshLevelDetailShow()
   end
+  if self.cliveActivityTip then
+    UILuaHelper.PlayAnimationByName(self.m_panel_tips, __CliveActivityTip_ui_out)
+  end
 end
 
 function Form_RogueStageMain:OnChangeChapterClickTimer()
@@ -417,6 +434,10 @@ end
 function Form_RogueStageMain:OnBackHome()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+end
+
+function Form_RogueStageMain:OnPnlClivebigClicked()
+  self.cliveActivityTip:OnClick()
 end
 
 function Form_RogueStageMain:GetDownloadResourceExtra(tParam)

@@ -189,7 +189,9 @@ function LevelDetailLamiaSubPanel:FreshLevelInfo()
   local mapID = levelCfg.m_MapID
   self.m_curBattleWorldCfg = ConfigManager:GetBattleWorldCfgById(mapID)
   self.m_levelRefStr = levelRefStr
-  self.m_txt_level_name_Text.text = levelRefStr
+  if not utils.isNull(self.m_txt_level_name_Text) then
+    self.m_txt_level_name_Text.text = levelRefStr
+  end
   self.m_txt_dialogue_desc_Text.text = self.m_levelCfg.m_mLevelName or ""
   self.m_txt_round_Text.text = ConfigManager:BattleWorldMaxRound(self.m_curBattleWorldCfg) or 0
   local isHavePass = self.m_levelHelper:IsLevelHavePass(self.m_curLevelID)
@@ -424,8 +426,12 @@ function LevelDetailLamiaSubPanel:FreshBuffHeroEnterButtons()
     return
   end
   local isChallenge = self.m_actSubType == HeroActivityManager.SubActTypeEnum.ChallengeLevel
-  UILuaHelper.SetActive(self.m_btn_buff_hero, not isChallenge)
-  UILuaHelper.SetActive(self.m_btn_challenge_buff_hero, isChallenge)
+  if not utils.isNull(self.m_btn_buff_hero) then
+    UILuaHelper.SetActive(self.m_btn_buff_hero, not isChallenge)
+  end
+  if not utils.isNull(self.m_btn_challenge_buff_hero) then
+    UILuaHelper.SetActive(self.m_btn_challenge_buff_hero, isChallenge)
+  end
 end
 
 function LevelDetailLamiaSubPanel:FreshEnterBattle()
@@ -504,6 +510,7 @@ function LevelDetailLamiaSubPanel:ConfirmJumpShop()
         StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
         return
       end
+      self.m_parentLua.bIsWaitingShopData = true
       ShopManager:ReqGetShopData(shop_id)
     end
   })
@@ -564,7 +571,6 @@ function LevelDetailLamiaSubPanel:OnBtnbattlegrayClicked()
   if self.m_actSubType == HeroActivityManager.SubActTypeEnum.ChallengeLevel then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 40040)
   else
-    self.m_parentLua.bIsWaitingShopData = true
     self:ConfirmJumpShop()
   end
 end
@@ -600,7 +606,7 @@ function LevelDetailLamiaSubPanel:OnBtnquickgrayClicked()
   end
   local isHaveEnough = self:IsHaveEnoughTimes()
   if not isHaveEnough then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 40038)
+    self:ConfirmJumpShop()
   end
 end
 

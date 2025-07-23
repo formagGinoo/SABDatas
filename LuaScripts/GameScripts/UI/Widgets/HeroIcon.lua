@@ -200,6 +200,25 @@ function HeroIcon:GetHeroMaxBreakLevel()
   return heroBreak
 end
 
+function HeroIcon:GetPerformanceID()
+  if not self.m_heroCfg then
+    return
+  end
+  if not self.m_heroData then
+    return
+  end
+  local heroFashion = HeroManager:GetHeroFashion()
+  if not heroFashion then
+    return
+  end
+  local fashionID = self.m_heroData.iFashion or 0
+  local fashionInfo = heroFashion:GetFashionInfoByHeroIDAndFashionID(self.m_heroCfg.m_HeroID, fashionID)
+  if not fashionInfo then
+    return self.m_heroCfg.m_PerformanceID[0]
+  end
+  return fashionInfo.m_PerformanceID[0]
+end
+
 function HeroIcon:FreshHeroShow()
   if not self.m_heroCfg then
     return
@@ -210,7 +229,8 @@ function HeroIcon:FreshHeroShow()
   local lvNum = self.m_heroData.iLevel or 0
   self:FreshHeroLv(lvNum)
   self:FreshBreak(self.m_heroData.iBreak or 0, self.m_heroCfg.m_Quality, self.m_isHideBreak)
-  self:FreshHeadIcon(self.m_heroCfg.m_PerformanceID[0])
+  local performanceID = self:GetPerformanceID()
+  self:FreshHeadIcon(performanceID)
   self:FreshQuality(self.m_heroCfg.m_Quality)
   self:FreshCareer(self.m_heroCfg.m_Career)
   self:FreshName(self.m_heroCfg.m_mShortname)
@@ -243,19 +263,19 @@ function HeroIcon:FreshNotHave()
 end
 
 function HeroIcon:FreshInherit()
-  local resetFlag = InheritManager:CheckCanResetLvById(self.m_heroData.iHeroId)
+  local resetFlag, isHave = InheritManager:CheckCanResetLvById(self.m_heroData.iHeroId)
   if self.m_inheritTran then
-    self.m_inheritTran.gameObject:SetActive(resetFlag)
+    self.m_inheritTran.gameObject:SetActive(not resetFlag and isHave)
   end
   if self.m_txt_Lv_num then
-    if resetFlag then
+    if not resetFlag and isHave then
       UILuaHelper.SetColor(self.m_txt_Lv_num, 178, 72, 91, 1)
     else
       UILuaHelper.SetColor(self.m_txt_Lv_num, 255, 255, 255, 1)
     end
   end
   if self.m_txt_Lv_num_big then
-    if resetFlag then
+    if not resetFlag and isHave then
       UILuaHelper.SetColor(self.m_txt_Lv_num_big, 178, 72, 91, 1)
     else
       UILuaHelper.SetColor(self.m_txt_Lv_num_big, 255, 255, 255, 1)

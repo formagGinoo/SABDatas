@@ -1,6 +1,5 @@
 {
   "className": "CData_UILanguage",
-  "timestamp": "2025-07-16T14:14:25.239Z",
   "data": {
     "\"Form_AutoFullTips_txt_frame_middle_title\"": {
       "m_bError": null,
@@ -31,6 +30,18 @@
       "m_KeyName": "\"Form_Activity101LamiaMain_txt_activity_name\"",
       "m_mKeyValue": "\"Twilight Path\"",
       "m_MultLong": "\"28\""
+    },
+    "\"Form_Activity103Luoleilai_DialogueMain_txt_consume_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity103Luoleilai_DialogueMain_txt_consume_desc\"",
+      "m_mKeyValue": "\"Resets daily at 04:00.\"",
+      "m_MultLong": "\"33\""
+    },
+    "\"Form_Activity104_DialogueMain_txt_consume_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity104_DialogueMain_txt_consume_desc\"",
+      "m_mKeyValue": "\"Resets daily at 04:00.\"",
+      "m_MultLong": "\"42\""
     },
     "\"Form_AutoFullTips_txt_grey\"": {
       "m_bError": null,
@@ -2204,6 +2215,36 @@
       "m_mKeyValue": "\"- Tomorrow-\"",
       "m_MultLong": "\"\""
     },
+    "\"Form_ActivitySign10Day_txt_click\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivitySign10Day_txt_click\"",
+      "m_mKeyValue": "\"Tap blank area to close.\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_ActivitySign10Day_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivitySign10Day_txt_title\"",
+      "m_mKeyValue": "\"Path of Blooming Lotus\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_ActivitySign10Day_txt_descrption\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivitySign10Day_txt_descrption\"",
+      "m_mKeyValue": "\"Hati is like a black lotus, quietly awaiting her moment of flourishing.\"",
+      "m_MultLong": "\"84\""
+    },
+    "\"Form_ActivitySign10Day_txt_skindesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivitySign10Day_txt_skindesc\"",
+      "m_mKeyValue": "\"Get FREE Outfit On [Sign-In] Day 10\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_ActivitySign10Day_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivitySign10Day_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
     "\"ui_activity_clive_m_z_txt_tab1\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_activity_clive_m_z_txt_tab1\"",
@@ -2425,6 +2466,30 @@
       "m_KeyName": "\"ui_activity_panel_sevendays_txt_nextday7\"",
       "m_mKeyValue": "\"- Tomorrow-\"",
       "m_MultLong": "\"\""
+    },
+    "\"ui_activity_panel_sign10day_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_sign10day_txt_title\"",
+      "m_mKeyValue": "\"Path of Blooming Lotus\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_activity_panel_sign10day_txt_descrption\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_sign10day_txt_descrption\"",
+      "m_mKeyValue": "\"Hati is like a black lotus, quietly awaiting her moment of flourishing.\"",
+      "m_MultLong": "\"84\""
+    },
+    "\"ui_activity_panel_sign10day_txt_skindesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_sign10day_txt_skindesc\"",
+      "m_mKeyValue": "\"Get FREE Outfit On [Sign-In] Day 10\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_activity_panel_sign10day_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_sign10day_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
     },
     "\"ui_activity_rebate_txt_go\"": {
       "m_bError": null,
@@ -4206,7 +4271,7 @@
       "m_bError": null,
       "m_KeyName": "\"Form_103Achievement_txt_uncom2\"",
       "m_mKeyValue": "\"Uncompleted\"",
-      "m_MultLong": "\"147\""
+      "m_MultLong": "\"115\""
     },
     "\"Form_103Achievement_txt_go_item2\"": {
       "m_bError": null,
@@ -4562,12 +4627,6 @@
       "m_mKeyValue": "\"1427.2万\"",
       "m_MultLong": "\"7\""
     },
-    "\"Form_Activity103Luoleilai_DialogueMain_txt_consume_desc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Activity103Luoleilai_DialogueMain_txt_consume_desc\"",
-      "m_mKeyValue": "\"Resets daily at 04:00 (UTC+8).\"",
-      "m_MultLong": "\"33\""
-    },
     "\"Form_Activity103Luoleilai_DialogueMain_txt_shop_name\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Activity103Luoleilai_DialogueMain_txt_shop_name\"",
@@ -4723,12 +4782,6 @@
       "m_KeyName": "\"Form_Activity104_DialogueMain_txt_item_num\"",
       "m_mKeyValue": "\"1427.2万\"",
       "m_MultLong": "\"7\""
-    },
-    "\"Form_Activity104_DialogueMain_txt_consume_desc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Activity104_DialogueMain_txt_consume_desc\"",
-      "m_mKeyValue": "\"Resets daily at 04:00 (UTC+8).\"",
-      "m_MultLong": "\"42\""
     },
     "\"Form_Activity104_DialogueMain_txt_shop_name\"": {
       "m_bError": null,
@@ -18867,5 +18920,5 @@
       "m_MultLong": "\"7\""
     }
   },
-  "status": "processed_3144_items"
+  "status": "processed_3153_items"
 }

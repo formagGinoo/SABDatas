@@ -247,6 +247,9 @@ function GuideManager:InitGuideConfData()
           self.guideItemIds[tonumber(eventParam)] = tonumber(eventParam)
         end
       end
+      itemData.FinishConditionType = v.m_FinishConditionType
+      itemData.FinishConditionParam = v.m_FinishConditionParam
+      self:CheckFinishCondition(itemData)
     end
   end
   if self.guideSubStepConfDic == nil then
@@ -276,6 +279,59 @@ function GuideManager:InitGuideConfData()
         itemData.EndFinishGuide = string.split(v.m_EndFinishGuide, ";")
       end
       self.guideSubStepConfDic[itemData.ID] = itemData
+    end
+  end
+end
+
+function GuideManager:CheckFinishCondition(guideConf)
+  if self.completeGuideDic[guideConf.ID] then
+    return
+  end
+  if guideConf.FinishConditionType.Length > 0 and guideConf.FinishConditionType.Length == guideConf.FinishConditionParam.Length then
+    local finishGuide = true
+    for i = 0, guideConf.FinishConditionType.Length - 1 do
+      local conditionType = guideConf.FinishConditionType[i]
+      local conditionParam = guideConf.FinishConditionParam[i]
+      local ret = false
+      if conditionType == 1 then
+        ret = self.completeGuideDic[tonumber(conditionParam)] ~= nil
+      elseif conditionType == 2 then
+        ret = LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, tonumber(conditionParam))
+      elseif conditionType == 3 then
+        ret = LevelManager:IsLevelHavePass(LevelManager.LevelType.Tower, tonumber(conditionParam))
+      elseif conditionType == 4 then
+        ret = LevelManager:IsLevelHavePass(LevelManager.LevelType.Dungeon, tonumber(conditionParam))
+      elseif conditionType == 16 then
+        ret = RogueStageManager:GetLevelRogueStageHelper():IsLevelHavePass(tonumber(conditionParam))
+      elseif conditionType == 18 then
+        ret = LevelHeroLamiaActivityManager:GetLevelHelper():IsLevelHavePass(tonumber(conditionParam))
+      elseif conditionType == 6 then
+        ret = HeroManager:CheckHadLevelHero(tonumber(conditionParam))
+      elseif conditionType == 7 then
+        local heroData = HeroManager:GetHeroDataByID(tonumber(conditionParam))
+        if heroData then
+          ret = true
+        else
+          ret = false
+        end
+      elseif conditionType == 19 then
+        local strs = string.split(conditionParam, "/")
+        local circulationLevel = HeroManager:GetCirculationLvByID(tonumber(strs[1]))
+        if circulationLevel <= tonumber(strs[2]) then
+          ret = true
+        else
+          ret = false
+        end
+      elseif conditionType == 8 then
+        ret = HeroManager:CheckHeroInPreset(tonumber(conditionParam))
+      end
+      if not ret then
+        finishGuide = false
+        break
+      end
+    end
+    if finishGuide then
+      self:FinishSubStepGuide(guideConf.ID, true)
     end
   end
 end
@@ -318,8 +374,16 @@ function GuideManager:InitActiveGuides(activeType, param, param2, param3)
             end
           elseif activeType == 7 then
             if tonumber(guideConf.EventParam[0]) == param and tonumber(guideConf.EventParam[1]) == param2 and tonumber(guideConf.EventParam[2]) == param3 then
-              acceptFlag = true
-              break
+              if guideConf.EventParam.Length == 4 then
+                local hasKey = 0 < CS.VisualExploreManager.Instance.Logic.KeyCount
+                if hasKey and tonumber(guideConf.EventParam[3]) == 1 or not hasKey and tonumber(guideConf.EventParam[3]) == 0 then
+                  acceptFlag = true
+                  break
+                end
+              else
+                acceptFlag = true
+                break
+              end
             end
           elseif eventParam == param then
             acceptFlag = true
@@ -348,6 +412,8 @@ function GuideManager:InitActiveGuides(activeType, param, param2, param3)
             ret = LevelManager:IsLevelHavePass(LevelManager.LevelType.Dungeon, tonumber(conditionParam))
           elseif conditionType == 16 then
             ret = RogueStageManager:GetLevelRogueStageHelper():IsLevelHavePass(tonumber(conditionParam))
+          elseif conditionType == 18 then
+            ret = LevelHeroLamiaActivityManager:GetLevelHelper():IsLevelHavePass(tonumber(conditionParam))
           elseif conditionType == 5 then
             local items = string.split(conditionParam, "/")
             local itemNum = ItemManager:GetItemNum(tonumber(items[1]), true)
@@ -393,6 +459,14 @@ function GuideManager:InitActiveGuides(activeType, param, param2, param3)
             local wndForm = StackFlow:GetOpenUIInstanceLua(uiid)
             if wndForm ~= nil then
               ret = wndForm:GetGuideConditionIsOpen(conditionType, conditionParam)
+            end
+          elseif conditionType == 19 then
+            local strs = string.split(conditionParam, "/")
+            local circulationLevel = HeroManager:GetCirculationLvByID(tonumber(strs[1]))
+            if circulationLevel <= tonumber(strs[2]) then
+              ret = true
+            else
+              ret = false
             end
           end
           if ret ~= checkRet then

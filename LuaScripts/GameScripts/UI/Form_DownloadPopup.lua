@@ -44,9 +44,19 @@ function Form_DownloadPopup:RefreshTaskDownloadResourceAll()
   local iDownloadingMinPriority = 9999
   for iIndex, stTaskDownloadResourceInfo in ipairs(vTaskDownloadResourceAll) do
     stTaskDownloadResourceInfo.bDownloading = false
-    if stTaskDownloadResourceInfo.iState == MTTDProto.QuestState_Doing and DownloadManager:IsAutoDownloadAddResAllSingle(stTaskDownloadResourceInfo.iID) and iDownloadingMinPriority > stTaskDownloadResourceInfo.tConfig.m_Priority then
-      iDownloadingIndex = iIndex
-      iDownloadingMinPriority = stTaskDownloadResourceInfo.tConfig.m_Priority
+    stTaskDownloadResourceInfo.iStateShow = stTaskDownloadResourceInfo.iState
+    local lCurBytes = 0
+    local lTotalBytes = 0
+    for _, stProgressInfo in pairs(stTaskDownloadResourceInfo.mProgress) do
+      lCurBytes = lCurBytes + stProgressInfo.lCurBytes
+      lTotalBytes = lTotalBytes + stProgressInfo.lTotalBytes
+    end
+    if 0 < lTotalBytes and lCurBytes < lTotalBytes then
+      stTaskDownloadResourceInfo.iStateShow = MTTDProto.QuestState_Doing
+      if DownloadManager:IsAutoDownloadAddResAllSingle(stTaskDownloadResourceInfo.iID) and iDownloadingMinPriority > stTaskDownloadResourceInfo.tConfig.m_Priority then
+        iDownloadingIndex = iIndex
+        iDownloadingMinPriority = stTaskDownloadResourceInfo.tConfig.m_Priority
+      end
     end
   end
   if 0 < iDownloadingIndex then
@@ -57,10 +67,10 @@ function Form_DownloadPopup:RefreshTaskDownloadResourceAll()
       return true
     elseif not a.bDownloading and b.bDownloading then
       return false
-    elseif a.iState == b.iState then
+    elseif a.iStateShow == b.iStateShow then
       return a.tConfig.m_Priority < b.tConfig.m_Priority
     else
-      return TaskStatePriority[a.iState] < TaskStatePriority[b.iState]
+      return TaskStatePriority[a.iStateShow] < TaskStatePriority[b.iStateShow]
     end
   end)
   self.m_TaskListInfinityGrid:ShowItemList(vTaskDownloadResourceAll)

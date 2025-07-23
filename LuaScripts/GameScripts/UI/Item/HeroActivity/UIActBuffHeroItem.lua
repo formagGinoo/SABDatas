@@ -7,7 +7,7 @@ function UIActBuffHeroItem:OnInit()
     self:OnHeroItemClick()
   end)
   self.m_c_txt_lv_num_Text = self.m_itemTemplateCache:TMPPro("c_txt_lv_num")
-  self.m_canvasgroup = self.m_itemRootObj:GetComponent("CanvasGroup")
+  self.m_img_notheld = self.m_itemTemplateCache:GameObject("c_img_notheld")
 end
 
 function UIActBuffHeroItem:OnFreshData()
@@ -24,7 +24,9 @@ function UIActBuffHeroItem:OnFreshData()
   self.m_c_txt_lv_num_Text.text = heroCfg.m_mShortname
   self.m_NotOwned:SetActive(not self.m_itemData.is_owned)
   self.m_bg_bonus:SetActive(true)
-  self.m_canvasgroup.alpha = self.m_itemData.is_owned and 1 or 0.5
+  if not utils.isNull(self.m_img_notheld) then
+    self.m_img_notheld:SetActive(not self.m_itemData.is_owned)
+  end
 end
 
 function UIActBuffHeroItem:OnHeroItemClick()

@@ -11,17 +11,22 @@ local PaystoreType2SubPanel = {
   [MTTDProto.CmdActPayStoreType_MainStage] = "MallGoodsChapterSubPanel",
   [MTTDProto.CmdActPayStoreType_MonthlyCard] = "MallMonthlyCardMainSubPanel",
   [MTTDProto.CmdActPayStoreType_DaimondBuy] = "RechargeSubPanel",
-  [MTTDProto.CmdActPayStoreType_SignGift] = "SignGiftFiveSunPanel"
+  [MTTDProto.CmdActPayStoreType_SignGift] = "SignGiftFiveSunPanel",
+  [MTTDProto.CmdActPayStoreType_FashionStore] = "FashionStoreSubPanel",
+  [MTTDProto.CmdActPayStoreType_PickupGiftNew] = "CommonUpPackSubPanel"
 }
 local TabIdxToRedEunm = {
   [MTTDProto.CmdActPayStoreType_MonthlyCard] = RedDotDefine.ModuleType.MallMonthlyCardTab,
   [MTTDProto.CmdActPayStoreType_MainStage] = RedDotDefine.ModuleType.MallGoodsChapterTab,
-  [MTTDProto.CmdActPayStoreType_PushGift] = RedDotDefine.ModuleType.MallPushGiftTab
+  [MTTDProto.CmdActPayStoreType_PushGift] = RedDotDefine.ModuleType.MallPushGiftTab,
+  [MTTDProto.CmdActPayStoreType_FashionStore] = RedDotDefine.ModuleType.MallFashionTab,
+  [MTTDProto.CmdActPayStoreType_SignGift] = RedDotDefine.ModuleType.MallNewStudentsSupplyPackTab
 }
 local WindowRedEnum = {
   [1] = RedDotDefine.ModuleType.MallNewbieGiftPackTabl,
   [2] = RedDotDefine.ModuleType.ActivityGiftPackTabl,
-  [3] = RedDotDefine.ModuleType.MallDailyPackTabl
+  [3] = RedDotDefine.ModuleType.MallDailyPackTabl,
+  [8] = RedDotDefine.ModuleType.MallFashionTab
 }
 
 function Form_MallMainNew:SetInitParam(param)
@@ -31,7 +36,7 @@ function Form_MallMainNew:AfterInit()
   self.super.AfterInit(self)
   local root_trans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = root_trans.transform:Find("content_node/ui_common_top_back").gameObject
-  self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk))
+  self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome))
   self.m_btn_symbol:SetActive(false)
   local root_trans = self.m_csui.m_uiGameObject.transform
   local resourceBarRoot = root_trans:Find("content_node/ui_common_top_resource").gameObject
@@ -138,22 +143,9 @@ end
 
 function Form_MallMainNew:InitData()
   local params = self.m_csui.m_param
-  self.iCurSelectMainTab = 1
-  self.iCurSelectSubTab = 1
-  if not params or not params.iStoreId then
-    return
-  end
-  local iStoreId = params.iStoreId
+  local iStoreId = params and params.iStoreId or self.iStoreId
+  self:InitCurSelectTab(iStoreId)
   self.m_csui.m_param = nil
-  for i, v in ipairs(self.m_StoreList) do
-    for ii, store in ipairs(v) do
-      if store.iStoreId == iStoreId then
-        self.iCurSelectMainTab = i
-        self.iCurSelectSubTab = ii
-        return
-      end
-    end
-  end
 end
 
 function Form_MallMainNew:OnMallDataRefresh()
@@ -162,14 +154,32 @@ function Form_MallMainNew:OnMallDataRefresh()
   end
   self.is_GoodsChapterOpen, _, self.is_hide = MallGoodsChapterManager:GetCurStoreBaseGoodsChapterCfg()
   self:InitSubPanelInfo()
-  if not self.iCurSelectMainTab or self.iCurSelectMainTab > #self.m_StoreList then
+  self:InitCurSelectTab(self.iStoreId)
+  self:RefreshUI()
+end
+
+function Form_MallMainNew:InitCurSelectTab(iStoreId)
+  if not iStoreId then
+    if not self.iCurSelectMainTab or self.iCurSelectMainTab > #self.m_StoreList then
+      self.iCurSelectMainTab = 1
+      self.iCurSelectSubTab = 1
+    end
+    if not self.iCurSelectSubTab or self.iCurSelectSubTab > #self.m_StoreList[self.iCurSelectMainTab] then
+      self.iCurSelectSubTab = 1
+    end
+  else
     self.iCurSelectMainTab = 1
     self.iCurSelectSubTab = 1
+    for i, v in ipairs(self.m_StoreList) do
+      for ii, store in ipairs(v) do
+        if store.iStoreId == iStoreId then
+          self.iCurSelectMainTab = i
+          self.iCurSelectSubTab = ii
+          return
+        end
+      end
+    end
   end
-  if not self.iCurSelectSubTab or self.iCurSelectSubTab > #self.m_StoreList[self.iCurSelectMainTab] then
-    self.iCurSelectSubTab = 1
-  end
-  self:RefreshUI()
 end
 
 function Form_MallMainNew:RefreshUI(force_fresh)
@@ -190,8 +200,10 @@ function Form_MallMainNew:RefreshTab()
     log.error("Form_MallMainNew:RefreshTab() : store Data error!")
     return
   end
-  local subTabCount = #self.m_StoreList[self.iCurSelectMainTab]
-  if subTabCount <= 1 then
+  local subStoreList = self.m_StoreList[self.iCurSelectMainTab]
+  local store = subStoreList[self.iCurSelectSubTab]
+  local subTabCount = #subStoreList
+  if store and subTabCount <= 1 and (store.iStoreType == MTTDProto.CmdActPayStoreType_PushGift or store.iShowSingleTab and store.iShowSingleTab == 0) then
     self.m_subpnl_tab:SetActive(false)
     return
   end
@@ -238,11 +250,12 @@ function Form_MallMainNew:FreshTime()
     local _, color = CS.UnityEngine.ColorUtility.TryParseHtmlString(store.sColorType)
     self.m_txt_timeleft_Text.color = color
   end
-  if store.iStoreEndTime <= 0 then
-    self.m_img_timeleft:SetActive(false)
-    return
-  end
-  if store.iStoreType == MTTDProto.CmdActPayStoreType_OpenNewShop or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenCard or store.iStoreType == MTTDProto.CmdActPayStoreType_Up or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenBeginner or store.iStoreType == MTTDProto.CmdActPayStoreType_StepupGift or store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGift then
+  self.m_img_timeleft:SetActive(false)
+  if store.iStoreType == MTTDProto.CmdActPayStoreType_OpenNewShop or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenCard or store.iStoreType == MTTDProto.CmdActPayStoreType_Up or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenBeginner or store.iStoreType == MTTDProto.CmdActPayStoreType_StepupGift or store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGiftNew or store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGift then
+    if store.iStoreEndTime <= 0 then
+      self.m_img_timeleft:SetActive(false)
+      return
+    end
     local iEndTime = store.iStoreEndTime
     local iServerTime = TimeUtil:GetServerTimeS()
     local ileftTime = iEndTime - iServerTime
@@ -266,6 +279,10 @@ function Form_MallMainNew:FreshTime()
     end)
     self.m_img_timeleft:SetActive(true)
   elseif store.iStoreType == MTTDProto.CmdActPayStoreType_SignGift then
+    if store.iStoreEndTime <= 0 then
+      self.m_img_timeleft:SetActive(false)
+      return
+    end
     local act = ActivityManager:GetActivityByType(MTTD.ActivityType_SignGift)
     if act then
       local isBuy = act:GetBuyTimes()
@@ -309,10 +326,6 @@ function Form_MallMainNew:FreshTime()
     local iEndTime = store.iStoreEndTime
     local iServerTime = TimeUtil:GetServerTimeS()
     local ileftTime = iEndTime - iServerTime
-    if ileftTime <= 0 then
-      self:RefreshUI(true)
-      return
-    end
     if self.timer then
       TimeService:KillTimer(self.timer)
       self.timer = nil
@@ -323,6 +336,10 @@ function Form_MallMainNew:FreshTime()
       ileftTime = TimeUtil:GetNextWeekResetTime() - iServerTime
     elseif store.iRefreshType == MTTDProto.CmdActPayStoreRefreshType_Month then
       ileftTime = TimeUtil:GetNextMonthResetTime() - iServerTime
+    end
+    if iEndTime ~= 0 and ileftTime <= 0 then
+      self:RefreshUI(true)
+      return
     end
     self.m_txt_timeleft_Text.text = TimeUtil:SecondsToFormatCNStr(ileftTime)
     self.timer = TimeService:SetTimer(1, ileftTime, function()
@@ -361,8 +378,15 @@ function Form_MallMainNew:ExtraCheckStoreOpen(store)
     local isShow = payStoreActivity:GetStoreSoldoutState(store.iStoreType)
     return isShow
   elseif store.iStoreType == MTTDProto.CmdActPayStoreType_SignGift then
+    local signGiftAct = ActivityManager:GetActivityByType(MTTD.ActivityType_SignGift)
+    if not signGiftAct then
+      return false
+    end
+    local isShow = signGiftAct:checkCondition()
+    return isShow
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
     local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
-    local isShow = payStoreActivity:GetSignGiftState()
+    local isShow = payStoreActivity:CheckIsShowFashionStore()
     return isShow
   end
   return true
@@ -438,6 +462,7 @@ function Form_MallMainNew:ChangeSubPanel()
     log.error("Form_MallMainNew:ChangeSubPanel() : store subPanelData error!")
     return
   end
+  self.iStoreId = store.iStoreId
   if subPanel.subPanelLua == nil then
     local initData = subPanel.backFun and {
       backFun = subPanel.backFun
@@ -572,7 +597,7 @@ function Form_MallMainNew:OnBtnCallClicked()
 end
 
 function Form_MallMainNew:OnBtnpaylayerClicked()
-  local urlString = string.replace(ConfigManager:GetCommonTextById(220008), "\"\"", "\"")
+  local urlString = string.replace(ConfigManager:GetCommonTextById(220015), "\"\"", "\"")
   if ChannelManager:IsDMMChannel() then
     urlString = string.replace(ConfigManager:GetCommonTextById(230017), "\"\"", "\"")
   end
@@ -582,7 +607,7 @@ function Form_MallMainNew:OnBtnpaylayerClicked()
 end
 
 function Form_MallMainNew:OnBtnbussinesClicked()
-  local urlString = string.replace(ConfigManager:GetCommonTextById(220015), "\"\"", "\"")
+  local urlString = string.replace(ConfigManager:GetCommonTextById(220008), "\"\"", "\"")
   if ChannelManager:IsDMMChannel() then
     urlString = string.replace(ConfigManager:GetCommonTextById(230018), "\"\"", "\"")
   end
@@ -598,8 +623,32 @@ function Form_MallMainNew:OnBtncouponClicked()
   end
 end
 
+function Form_MallMainNew:RealCloseSelf()
+  for k, v in pairs(self.m_subPanelCache) do
+    if v.subPanelLua and v.subPanelLua.OnClosePanel then
+      v.subPanelLua:OnClosePanel()
+    end
+  end
+end
+
 function Form_MallMainNew:OnBackClk()
+  self.iStoreId = nil
+  self.iCurSelectMainTab = 1
+  self.iCurSelectSubTab = 1
+  self:RealCloseSelf()
   self:CloseForm()
+end
+
+function Form_MallMainNew:OnBackHome()
+  self:RealCloseSelf()
+  if BattleFlowManager:IsInBattle() == true then
+    BattleFlowManager:FromBattleToHall()
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+  end
+  self.iStoreId = nil
+  self.iCurSelectMainTab = 1
+  self.iCurSelectSubTab = 1
 end
 
 function Form_MallMainNew:GetOtherActRedState()

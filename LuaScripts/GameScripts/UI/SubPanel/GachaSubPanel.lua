@@ -4,7 +4,9 @@ local GachaDisplayIns = ConfigManager:GetConfigInsByName("GachaDisplay")
 local DeltaFrameNum = 10
 local SpineStrCfg = {
   ui_gacha_panel_1001 = "empusae_final",
-  ui_gacha_panel_1002 = "jacinta_base"
+  ui_gacha_panel_1002 = "jacinta_base",
+  ui_gacha_panel_1003 = "Loreley_Base",
+  ui_gacha_panel_1004 = "Bella_summer"
 }
 
 function GachaSubPanel:GetSubPanelPrefabNameStr()

@@ -1,4 +1,5 @@
 local Form_HallActivityMain = class("Form_HallActivityMain", require("UI/UIFrames/Form_HallActivityMainUI"))
+local CliveActivityTipsItem = require("UI/Item/HeroActivity/CliveActivityTipsItem")
 local __pnl_enter_info = {
   {
     system_id = GlobalConfig.SYSTEM_ID.Tower,
@@ -56,6 +57,8 @@ function Form_HallActivityMain:AfterInit()
   self.m_widgetTaskEnter = self:createTaskBar(self.m_common_task_enter)
   self.m_widgetResourceBar = self:createResourceBar(self.m_common_top_resource)
   self:CheckRegisterRedDot()
+  self.cliveActivityTips = {}
+  self:InitCliveActivityTipsData()
 end
 
 function Form_HallActivityMain:OnActive()
@@ -81,6 +84,11 @@ end
 function Form_HallActivityMain:AddEventListeners()
   self:addEventListener("eGameEvent_RankGetList", handler(self, self.OnEventRankGetList))
   self:addEventListener("eGameEvent_Activity_FullBurstDayUpdate", handler(self, self.OnFullBurstDayUpdate))
+  self:addEventListener("eGameEvent_Level_ArenaReplaceAFKFresh", handler(self, self.OnEventReplaceAFKFresh))
+end
+
+function Form_HallActivityMain:OnEventReplaceAFKFresh()
+  self:RefreshPvpRewardEnterUI()
 end
 
 function Form_HallActivityMain:RemoveAllEventListeners()
@@ -93,7 +101,7 @@ function Form_HallActivityMain:CheckRegisterRedDot()
 end
 
 function Form_HallActivityMain:OnFullBurstDayUpdate()
-  self.m_doublereward_simroon:SetActive(ActivityManager:IsFullBurstDayOpen())
+  self.m_doublereward_roguestage:SetActive(ActivityManager:IsFullBurstDayOpen())
   self.m_doublereward_boss:SetActive(ActivityManager:IsFullBurstDayOpen())
 end
 
@@ -103,6 +111,7 @@ function Form_HallActivityMain:RefreshUI()
     local redPoint = ActivityManager:CheckHallActivityHaveRedPointBySystemID(v.system_id) or 0
     self:ShowRedPoint(v.system_id, redPoint)
   end
+  self:CheckHeroActivityTips()
   self:OnFullBurstDayUpdate()
   self:RefreshPvpRewardEnterUI()
 end
@@ -115,6 +124,7 @@ function Form_HallActivityMain:RefreshPvpRewardEnterUI()
   end
   local isRankHaveReward = PvpReplaceManager:IsAfkRankCanReward()
   if isRankHaveReward then
+    self.m_btn_reward_pvp:SetActive(true)
     local curServerTime = TimeUtil:GetServerTimeS()
     local limitTimeSecNum = tonumber(ConfigManager:GetGlobalSettingsByKey("ReplaceArenaAFKLimit"))
     local lastTakeTime = afkData.iTakeRewardTime
@@ -174,6 +184,17 @@ function Form_HallActivityMain:RefreshEnterUI(index)
         end
       end
     end
+  end
+end
+
+function Form_HallActivityMain:InitCliveActivityTipsData()
+  self.cliveActivityTips[1] = CliveActivityTipsItem:CreateCliveActivityTipsItem(self.m_panel_tips, {tipType = 3, cliveType = 2})
+  self.cliveActivityTips[2] = CliveActivityTipsItem:CreateCliveActivityTipsItem(self.m_panel_tips02, {tipType = 4, cliveType = 1})
+end
+
+function Form_HallActivityMain:CheckHeroActivityTips()
+  for _, cliveActivityTip in pairs(self.cliveActivityTips) do
+    cliveActivityTip:OnFreshData()
   end
 end
 

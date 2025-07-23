@@ -1,6 +1,5 @@
 {
   "className": "CData_CineExpressionAnimation",
-  "timestamp": "2025-07-16T14:13:58.659Z",
   "data": {
     "\"Acappella_Angry\"": {
       "m_bError": null,
@@ -887,9 +886,9 @@
       "m_MouthSpriteCount": "14",
       "m_MouthSpriteName": "\"Shock_mouth_\""
     },
-    "\"\"Yes, that\"": {
+    "\"Cain_Angry\"": {
       "m_bError": null,
-      "m_ID": "\"\"Yes, that\"",
+      "m_ID": "\"Cain_Angry\"",
       "m_Atlas": "\"Atlas_Cain_Angry\"",
       "m_Main": "\"Angry\"",
       "m_HiddenMain": null,
@@ -1067,9 +1066,9 @@
       "m_MouthSpriteCount": "15",
       "m_MouthSpriteName": "\"Happy_mouth_\""
     },
-    "\"诺亚Sad\"": {
+    "\"Clive_Sad\"": {
       "m_bError": null,
-      "m_ID": "\"诺亚Sad\"",
+      "m_ID": "\"Clive_Sad\"",
       "m_Atlas": "\"Atlas_Clive_Sad\"",
       "m_Main": "\"Sad\"",
       "m_HiddenMain": "1",

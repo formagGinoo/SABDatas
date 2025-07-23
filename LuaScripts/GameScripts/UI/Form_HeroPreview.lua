@@ -4,6 +4,10 @@ local MinScale = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpine
 local MaxScale = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineMax") or 0)
 local MoveRate = 1
 local DefaultScale = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineDefault") or 0)
+local PreviewHeroSpineMinLX = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineMinLX") or 0)
+local PreviewHeroSpineMinRX = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineMinRX") or 0)
+local PreviewHeroSpineMinUY = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineMinUY") or 0)
+local PreviewHeroSpineMinDY = tonumber(ConfigManager:GetGlobalSettingsByKey("PreviewHeroSpineMinDY") or 0)
 local ClickInAnim = "heropreview_touch_in"
 local ClickOutAnim = "heropreview_touch_out"
 
@@ -13,14 +17,12 @@ end
 function Form_HeroPreview:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
-  local goBackBtnRoot = self.m_rootTrans:Find("content_node/m_common_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, nil)
   self.m_curScale = DefaultScale
   self.m_ScreenW = ScreenSafeArea.width
   self.m_ScreenH = ScreenSafeArea.height
   self.m_SpineW = nil
   self.m_SpineH = nil
-  self.m_heroCfg = nil
+  self.m_fashionCfg = nil
   self.m_spineDitherExtension = nil
   self.m_MinX = nil
   self.m_MaxX = nil
@@ -68,8 +70,13 @@ end
 function Form_HeroPreview:OnActive()
   self.super.OnActive(self)
   self:AddEventListeners()
+  self.m_landscapeMode = true
   self.m_dragExtension.isCanRecInput = true
   Input.multiTouchEnabled = true
+  self.m_moveLock = false
+  self.m_rotationLock = false
+  self.m_zoomLock = false
+  self.m_curScale = DefaultScale
   self:FreshData()
   self:FreshUI()
   self:FreshShowBackSliderUI()
@@ -80,6 +87,7 @@ function Form_HeroPreview:OnInactive()
   self:RemoveAllEventListeners()
   self.m_dragExtension.isCanRecInput = false
   Input.multiTouchEnabled = false
+  self.m_landscapeMode = true
 end
 
 function Form_HeroPreview:OnDestroy()
@@ -97,36 +105,45 @@ end
 function Form_HeroPreview:ClearData()
 end
 
+function Form_HeroPreview:SetUILockState(fashionId)
+  local cfg = HeroManager:GetCharacterViewModeCfgById(fashionId)
+  if cfg and cfg.m_MoveLock then
+    self.m_moveLock = cfg.m_MoveLock == 1
+    self.m_rotationLock = cfg.m_RotationLock == 1
+    self.m_zoomLock = cfg.m_ZoomLock == 1
+  end
+end
+
 function Form_HeroPreview:FreshData()
   local tParam = self.m_csui.m_param
   if tParam then
-    local heroID = tParam.heroID
-    self.m_backFun = tParam.backFun
-    self.m_heroCfg = CharacterInfoIns:GetValue_ByHeroID(heroID)
-    if self.m_heroCfg:GetError() then
-      log.error("HeroPreview heroCfgID Cannot Find Check Config: " .. heroID)
+    local fashionId = tParam.fashionId
+    local fashion = HeroManager:GetHeroFashion()
+    if not fashion or not fashionId then
+      log.error("HeroPreview error !!!")
       return
     end
+    local fashionInfoCfg = fashion:GetFashionInfoByID(fashionId)
+    self.m_backFun = tParam.backFun
+    if not fashionInfoCfg then
+      log.error("HeroPreview GetFashionInfoByID Cannot Find Check Config: " .. tostring(fashionId))
+      return
+    end
+    self.m_fashionCfg = fashionInfoCfg
+    self:SetUILockState(fashionId)
     self.m_csui.m_param = nil
   end
 end
 
 function Form_HeroPreview:FreshUI()
-  if not self.m_heroCfg then
-    return
-  end
-  if self.m_heroCfg:GetError() == true then
+  if not self.m_fashionCfg then
     return
   end
   self:FreshShowHeroInfo()
 end
 
 function Form_HeroPreview:FreshShowHeroInfo()
-  local heroCfg = self.m_heroCfg
-  if heroCfg.m_HeroID == 0 then
-    return
-  end
-  self:ShowHeroSpine(heroCfg.m_Spine)
+  self:ShowHeroSpine(self.m_fashionCfg.m_Spine)
 end
 
 function Form_HeroPreview:CheckRecycleSpine(isResetParam)
@@ -170,13 +187,9 @@ function Form_HeroPreview:OnLoadSpineBack()
   if spineRootObj:GetComponent("SpineSkeletonPosControl") then
     spineRootObj:GetComponent("SpineSkeletonPosControl"):OnResetInit()
   end
-  UILuaHelper.SetSpineTimeScale(spineRootObj, 0)
   self.m_spineW, self.m_spineH = UILuaHelper.GetUISize(spineRootObj)
-  local pivotX, pivotY = UILuaHelper.GetRectTransPivot(spineRootObj)
-  local offsetX = (pivotX - 0.5) * self.m_spineW
-  local offsetY = (pivotY - 0.5) * self.m_spineH
   UILuaHelper.SetSizeWithCurrentAnchors(self.m_root_hero, self.m_spineW, self.m_spineH)
-  UILuaHelper.SetAnchoredPosition(spineRootObj, offsetX, offsetY, 0)
+  UILuaHelper.SetAnchoredPosition(spineRootObj, 0, 0, 0)
   self:FreshHeroRootPos(0, 0)
   local scale = self:GetLimitScale(DefaultScale)
   self:FreshHeroRootScale(scale)
@@ -215,19 +228,19 @@ end
 function Form_HeroPreview:FreshBorderParam()
   local scaleW = self.m_spineW * self.m_curScale
   if scaleW <= self.m_ScreenW then
-    self.m_MinX = 0
-    self.m_MaxX = 0
+    self.m_MinX = PreviewHeroSpineMinLX
+    self.m_MaxX = PreviewHeroSpineMinRX
   else
-    self.m_MinX = (self.m_ScreenW - scaleW) / 2
-    self.m_MaxX = (scaleW - self.m_ScreenW) / 2
+    self.m_MinX = math.min((self.m_ScreenW - scaleW) / 2, PreviewHeroSpineMinLX)
+    self.m_MaxX = math.max((scaleW - self.m_ScreenW) / 2, PreviewHeroSpineMinRX)
   end
   local scaleH = self.m_spineH * self.m_curScale
   if scaleH <= self.m_ScreenH then
-    self.m_MinY = 0
-    self.m_MaxY = 0
+    self.m_MinY = PreviewHeroSpineMinDY
+    self.m_MaxY = PreviewHeroSpineMinUY
   else
-    self.m_MinY = (self.m_ScreenH - scaleH) / 2
-    self.m_MaxY = (scaleH - self.m_ScreenH) / 2
+    self.m_MinY = math.min((self.m_ScreenH - scaleH) / 2, PreviewHeroSpineMinDY)
+    self.m_MaxY = math.max((scaleH - self.m_ScreenH) / 2, PreviewHeroSpineMinUY)
   end
 end
 
@@ -248,8 +261,30 @@ function Form_HeroPreview:GetLimitMovePos(x, y)
 end
 
 function Form_HeroPreview:FreshShowBackSliderUI()
-  UILuaHelper.SetActive(self.m_common_back, self.m_isShowBackSliderUI)
-  UILuaHelper.SetActive(self.m_pnl_preview, self.m_isShowBackSliderUI)
+  UILuaHelper.SetActive(self.m_pnl_preview, self.m_isShowBackSliderUI and not self.m_zoomLock)
+  UILuaHelper.SetActive(self.m_top_right_hor, self.m_landscapeMode and self.m_isShowBackSliderUI and not self.m_rotationLock)
+  UILuaHelper.SetActive(self.m_bg_hor, self.m_landscapeMode)
+  UILuaHelper.SetActive(self.m_bg_ver, not self.m_landscapeMode)
+  UILuaHelper.SetActive(self.m_back_hor, self.m_landscapeMode and self.m_isShowBackSliderUI)
+  UILuaHelper.SetActive(self.m_back_ver, not self.m_landscapeMode and self.m_isShowBackSliderUI)
+  UILuaHelper.SetActive(self.m_top_right_ver, not self.m_landscapeMode and self.m_isShowBackSliderUI and not self.m_rotationLock)
+  if self.m_isShowBackSliderUI and not self.m_zoomLock then
+    if self.m_landscapeMode then
+      UILuaHelper.SetParent(self.m_pnl_preview, self.m_slider_root_hor, true)
+      UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 0)
+      UILuaHelper.PlayAnimationByName(self.m_slider_root_hor, "heropreview_hor_in")
+    else
+      UILuaHelper.SetParent(self.m_pnl_preview, self.m_slider_root_ver, true)
+      UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 90)
+      UILuaHelper.PlayAnimationByName(self.m_slider_root_ver, "heropreview_hor_in")
+    end
+  elseif self.m_landscapeMode then
+    UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 0)
+    UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
+  else
+    UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 90)
+    UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
+  end
 end
 
 function Form_HeroPreview:CheckShowClickAnim()
@@ -269,10 +304,39 @@ function Form_HeroPreview:OnBackClk()
   end
 end
 
+function Form_HeroPreview:OnBtnhorClicked()
+  self:OnBackClk()
+end
+
+function Form_HeroPreview:OnBtnverClicked()
+  self:OnBackClk()
+end
+
+function Form_HeroPreview:OnBtnturnhorClicked()
+  if self.m_rotationLock then
+    return
+  end
+  self.m_landscapeMode = false
+  self.m_ClickTurnScreen = true
+  self:FreshShowBackSliderUI()
+end
+
+function Form_HeroPreview:OnBtnturnverClicked()
+  if self.m_rotationLock then
+    return
+  end
+  self.m_landscapeMode = true
+  self.m_ClickTurnScreen = true
+  self:FreshShowBackSliderUI()
+end
+
 function Form_HeroPreview:OnMouseDownEvent(touchData)
 end
 
 function Form_HeroPreview:OnMouseMoveEvent(touchData)
+  if self.m_moveLock then
+    return
+  end
   if touchData.isOnUI then
     return
   end
@@ -287,12 +351,19 @@ function Form_HeroPreview:OnMouseMoveEvent(touchData)
 end
 
 function Form_HeroPreview:OnMouseUpEvent(touchData)
+  if self.m_moveLock then
+    return
+  end
   if touchData.isOnUI then
     return
   end
   if touchData.isClick then
-    self.m_isShowBackSliderUI = not self.m_isShowBackSliderUI
-    self:FreshShowBackSliderUI()
+    if self.m_ClickTurnScreen then
+      self.m_ClickTurnScreen = false
+    else
+      self.m_isShowBackSliderUI = not self.m_isShowBackSliderUI
+      self:FreshShowBackSliderUI()
+    end
     self:CheckShowClickAnim()
   end
   if touchData.isMove and self.m_isShowBackSliderUI == false then
@@ -303,6 +374,9 @@ function Form_HeroPreview:OnMouseUpEvent(touchData)
 end
 
 function Form_HeroPreview:OnScrollWheelEvent(deltaScale)
+  if self.m_zoomLock then
+    return
+  end
   local tempScale = self.m_curScale + deltaScale
   local scale = self:GetLimitScale(tempScale)
   if scale == self.m_curScale then
@@ -315,6 +389,9 @@ function Form_HeroPreview:OnPinchInEvent(pinchData)
 end
 
 function Form_HeroPreview:OnPinchEvent(pinchData)
+  if self.m_zoomLock then
+    return
+  end
   local scale = pinchData.sqr / pinchData.originSqr
   local showScale = self.m_curScale
   showScale = self.m_curScale * scale
@@ -323,6 +400,9 @@ function Form_HeroPreview:OnPinchEvent(pinchData)
 end
 
 function Form_HeroPreview:OnPinchEndEvent(pinchData)
+  if self.m_zoomLock then
+    return
+  end
   if self.m_isShowBackSliderUI == false then
     self.m_isShowBackSliderUI = true
     self:FreshShowBackSliderUI()
@@ -336,15 +416,14 @@ function Form_HeroPreview:OnPinchEndEvent(pinchData)
 end
 
 function Form_HeroPreview:OnScaleValueChange(value)
+  if self.m_zoomLock then
+    return
+  end
   local scale = MinScale + (MaxScale - MinScale) * value
   if scale == self.m_curScale then
     return
   end
   self:FreshHeroRootScale(scale, true)
-end
-
-function Form_HeroPreview:IsFullScreen()
-  return true
 end
 
 function Form_HeroPreview:GetDownloadResourceExtra(tParam)

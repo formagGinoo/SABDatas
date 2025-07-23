@@ -132,6 +132,16 @@ function CouncilHallManager:GetCouncilHallTextByID(heroID)
   return config
 end
 
+function CouncilHallManager:GetCouncilHallRoleSize(iHeroId, iFasionId)
+  iFasionId = iFasionId or 0
+  local cfg = ConfigManager:GetConfigInsByName("CouncilHallRoleSize"):GetValue_ByIDAndFashionID(iHeroId, iFasionId)
+  if cfg:GetError() then
+    log.error("CouncilHallManager:GetCouncilHallRoleSize error, iHeroId = " .. iHeroId)
+    return
+  end
+  return cfg
+end
+
 function CouncilHallManager:GetCouncilHallHeroList()
   local configIns = ConfigManager:GetConfigInsByName("CouncilHallText")
   local allCfg = configIns:GetAll()
@@ -352,7 +362,7 @@ function CouncilHallManager:LoadCouncilHallScene(cancelcallback)
       end
     end
   end, true, function()
-    StackTop:RemoveUIFromStack(UIDefines.ID_FORM_GAMESCENELOADING)
+    StackTop:DestroyUI(UIDefines.ID_FORM_GAMESCENELOADING)
     if cancelcallback then
       cancelcallback()
     end
@@ -392,31 +402,43 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
   local positionList = utils.changeCSArrayToLuaTable(poscfg.m_PositionList)
   local count = 0
   for i, v in pairs(self.mHeroObjList) do
-    v:SetActive(false)
+    if not utils.isNull(v) then
+      v:SetActive(false)
+    end
   end
   for i, hero_id in ipairs(heroList) do
-    local characterIns = ConfigManager:GetConfigInsByName("CharacterInfo")
-    local cfg = characterIns:GetValue_ByHeroID(hero_id)
-    if cfg:GetError() then
-      log.error("can not find hero id in CharacterInfo config  id==" .. tostring(hero_id))
+    local m_PerformanceID
+    local iFasionId = HeroManager:GetCurUseFashionID(hero_id) or 0
+    local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(hero_id, iFasionId)
+    if not fashionCfg then
       return
     end
-    local textCfg = self:GetCouncilHallTextByID(hero_id)
-    local m_PerformanceID = cfg.m_PerformanceID[0]
+    m_PerformanceID = fashionCfg.m_PerformanceID[0]
+    local roleSizeCfg = self:GetCouncilHallRoleSize(hero_id, iFasionId)
     local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
     local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
     local role_name = presentationData.m_Prefab
+    if not role_name then
+      log.error("can not find cfg in Presentation config  id==" .. tostring(m_PerformanceID))
+      self:broadcastEvent("eGameEvent_LoadCouncilHallRoleFinish")
+      return
+    end
     if self:IsLoaded(role_name) then
       self.mHeroObjList[role_name]:SetActive(true)
       self.mHeroObjList[role_name].transform:SetParent(self.ChairList[positionList[i]], true)
-      local posOffset = utils.changeCSArrayToLuaTable(textCfg.m_RoleOffset)
-      if posOffset and 0 < #posOffset then
-        self.mHeroObjList[role_name].transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+      if roleSizeCfg then
+        local posOffset = utils.changeCSArrayToLuaTable(roleSizeCfg.m_RoleOffset)
+        if posOffset and 0 < #posOffset then
+          self.mHeroObjList[role_name].transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+        else
+          self.mHeroObjList[role_name].transform.localPosition = Vector3.zero
+        end
+        self.mHeroObjList[role_name].transform.localScale = Vector3.one * roleSizeCfg.m_RoleScake
       else
         self.mHeroObjList[role_name].transform.localPosition = Vector3.zero
+        self.mHeroObjList[role_name].transform.localScale = Vector3.one
       end
       self.mHeroObjList[role_name].transform.localRotation = Vector3.zero
-      self.mHeroObjList[role_name].transform.localScale = Vector3.one * textCfg.m_RoleScake
       UILuaHelper.PlayAnimatorByNameInChildren(self.mHeroObjList[role_name], "show_idle")
       self.curShowHeroObjList[i] = self.mHeroObjList[role_name]
       count = count + 1
@@ -444,17 +466,27 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
             self.mHeroObjList[role_name] = result
             result.transform:SetParent(self.ChairList[positionList[i]], true)
             result.transform.localRotation = Vector3.zero
-            result.transform.localScale = Vector3.one * textCfg.m_RoleScake
-            local posOffset = utils.changeCSArrayToLuaTable(textCfg.m_RoleOffset)
-            if posOffset and 0 < #posOffset then
-              result.transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+            if roleSizeCfg then
+              local posOffset = utils.changeCSArrayToLuaTable(roleSizeCfg.m_RoleOffset)
+              if posOffset and 0 < #posOffset then
+                result.transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+              else
+                result.transform.localPosition = Vector3.zero
+              end
+              result.transform.localScale = Vector3.one * roleSizeCfg.m_RoleScake
             else
               result.transform.localPosition = Vector3.zero
+              result.transform.localScale = Vector3.one
             end
             self.curShowHeroObjList[i] = result
             count = count + 1
             UILuaHelper.PlayAnimatorByNameInChildren(result, "show_idle")
             self:CheckResCacheOut()
+            if count >= #heroList then
+              self:broadcastEvent("eGameEvent_LoadCouncilHallRoleFinish")
+            end
+          end, function()
+            count = count + 1
             if count >= #heroList then
               self:broadcastEvent("eGameEvent_LoadCouncilHallRoleFinish")
             end
@@ -484,13 +516,15 @@ function CouncilHallManager:UnloadAssets()
   end
   if self.mHeroObjList and table.getn(self.mHeroObjList) > 0 then
     for i, v in pairs(self.mHeroObjList) do
-      GameObject.Destroy(v)
+      if not utils.isNull(v) then
+        GameObject.Destroy(v)
+      end
     end
   end
 end
 
 function CouncilHallManager:CheckIsPlayEntryShow()
-  StackTop:RemoveUIFromStack(UIDefines.ID_FORM_GAMESCENELOADING)
+  StackTop:DestroyUI(UIDefines.ID_FORM_GAMESCENELOADING)
   if self:IsDailyEntryCouncil() then
     UILuaHelper.PlayAnimatorByNameInChildren(self.cameraObj, "CouncilHall_Camera_show")
     self.IsDelayShowTimer = 0

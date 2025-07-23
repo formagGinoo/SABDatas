@@ -128,6 +128,14 @@ function UIInfinityGrid:LocateTo(itemIndex)
   end
 end
 
+function UIInfinityGrid:ScrollTo(itemIndex)
+  itemIndex = itemIndex or 0
+  local num = table.getn(self.m_itemDataList)
+  if 1 < num then
+    self.m_infinityGrid:ScrollTo(itemIndex)
+  end
+end
+
 function UIInfinityGrid:SetCellPerLine(count)
   count = count or 1
   self.m_infinityGrid:SetCellPerLine(count)

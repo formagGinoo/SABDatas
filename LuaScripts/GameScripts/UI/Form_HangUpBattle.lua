@@ -45,6 +45,7 @@ function Form_HangUpBattle:OnInactive()
   if self.m_playingId then
     CS.UI.UILuaHelper.StopPlaySFX(self.m_playingId)
   end
+  self:ClearData()
 end
 
 function Form_HangUpBattle:RemoveAllEventListeners()
@@ -107,6 +108,7 @@ function Form_HangUpBattle:RefreshUI()
 end
 
 function Form_HangUpBattle:RefreshListView()
+  self.m_rewardList = {}
   local levelCfg = AFKLevelConfigInstance:GetValue_ByAFKLevel(self.m_iAfkLevel)
   local instantRewardCfg = AFKInstantRewardConfigInstance:GetValue_ByTimes(self.m_iInstantTimes)
   local noCount = false
@@ -128,12 +130,7 @@ function Form_HangUpBattle:RefreshListView()
           count
         })
       end
-      if not self.m_bIsInit then
-        self.m_rewardListInfinityGrid:ShowItemList(self.m_rewardList)
-        self.m_bIsInit = true
-      else
-        self.m_rewardListInfinityGrid:ReBindAll()
-      end
+      self.m_rewardListInfinityGrid:ShowItemList(self.m_rewardList, true)
     else
       log.error("get AFKLevelConfig error id = " .. tostring(self.m_iAfkLevel))
     end

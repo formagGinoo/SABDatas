@@ -28,6 +28,8 @@ function Form_BattleVictory:AfterInit()
   self.m_groupRewardCfgList = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_BattleVictory:OnActive()
@@ -171,21 +173,24 @@ function Form_BattleVictory:GetLevelSettlementByTypeAndID()
 end
 
 function Form_BattleVictory:GetShowSpineAndVoice()
-  local heroID = self:GetLevelSettlementByTypeAndID()
-  local heroCfg
-  if heroID and heroID ~= 0 then
-    heroCfg = HeroManager:GetHeroConfigByID(heroID)
+  local fashionID = self:GetLevelSettlementByTypeAndID()
+  local fashionInfo
+  if fashionID and fashionID ~= 0 then
+    fashionInfo = self.m_HeroFashion:GetFashionInfoByID(fashionID)
   else
-    heroID = self.m_showHeroID
+    local heroID = self.m_showHeroID
     if heroID then
-      heroCfg = HeroManager:GetHeroConfigByID(heroID)
+      local heroData = HeroManager:GetHeroDataByID(heroID)
+      if heroData then
+        fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroID, heroData.serverData.iFashion or 0)
+      end
     end
   end
-  if not heroCfg then
+  if not fashionInfo then
     return
   end
-  local voice = HeroManager:GetHeroBattleVictoryVoice(heroID)
-  local spineStr = heroCfg.m_Spine
+  local voice = self.m_HeroVoice:GetHeroBattleVictoryVoice(fashionInfo)
+  local spineStr = fashionInfo.m_Spine
   if not spineStr then
     return
   end
@@ -197,6 +202,9 @@ function Form_BattleVictory:GetRoleLevelExpUpList()
   local curRoleLv = RoleManager:GetLevel() or 0
   local oldRoleExp = RoleManager:GetOldRoleExp()
   local roleExp = RoleManager:GetRoleExp() or 0
+  if not oldRoleLv or oldRoleLv == 0 then
+    oldRoleLv = 1
+  end
   local roleLevelUpList = {}
   if curRoleLv == oldRoleLv then
     local roleLvMaxExp = self:GetRoleMaxExpNum(curRoleLv) or 0
@@ -226,7 +234,7 @@ function Form_BattleVictory:GetAFKExpUpList()
   local afkExp = HangUpManager:GetAFKExp()
   local oldAFKExp = HangUpManager:GetOldAFKExp()
   local afkUpList = {}
-  if oldAFKLv == 0 then
+  if not oldAFKLv or oldAFKLv == 0 then
     oldAFKLv = 1
   end
   if afkLv == oldAFKLv then
@@ -404,7 +412,7 @@ end
 
 function Form_BattleVictory:FreshHangUpShow()
   local isShowHangUp = true
-  if self.m_levelType == LevelManager.LevelType.Tower or UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.AFK) ~= true or self.m_levelType == LevelManager.LevelType.Dungeon then
+  if self.m_levelType == LevelManager.LevelType.Tower or UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.AFK) ~= true or self.m_levelType == LevelManager.LevelType.Dungeon or self.m_levelType == AttractManager.FightType_Attract then
     isShowHangUp = false
   end
   if self.m_levelType == LevelManager.LevelType.MainLevel and self.m_levelSubType == LevelManager.MainLevelSubType.ExLevel then

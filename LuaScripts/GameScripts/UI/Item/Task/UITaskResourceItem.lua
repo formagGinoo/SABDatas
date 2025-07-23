@@ -9,21 +9,20 @@ end
 function UITaskResourceItem:OnFreshData()
   local iState = self.m_itemData.iState
   local bDownloading = self.m_itemData.bDownloading
-  if iState == MTTDProto.QuestState_Doing and bDownloading then
+  local lCurBytes = 0
+  local lTotalBytes = 0
+  for _, stProgressInfo in pairs(self.m_itemData.mProgress) do
+    lCurBytes = lCurBytes + stProgressInfo.lCurBytes
+    lTotalBytes = lTotalBytes + stProgressInfo.lTotalBytes
+  end
+  if bDownloading then
     self.m_bg_item_finish:SetActive(false)
     self.m_icon_download:SetActive(true)
     self.m_icon_wait:SetActive(false)
     self.m_btn_receive:SetActive(false)
     self.m_icon_finish:SetActive(false)
     self.m_btn_continue:SetActive(false)
-  elseif iState == MTTDProto.QuestState_Finish then
-    self.m_bg_item_finish:SetActive(false)
-    self.m_icon_download:SetActive(false)
-    self.m_icon_wait:SetActive(false)
-    self.m_btn_receive:SetActive(true)
-    self.m_icon_finish:SetActive(false)
-    self.m_btn_continue:SetActive(false)
-  elseif iState == MTTDProto.QuestState_Doing and not bDownloading then
+  elseif 0 < lTotalBytes and lCurBytes < lTotalBytes then
     if DownloadManager:IsAutoDownloadAddResAllSingle(self.m_itemData.iID) then
       self.m_bg_item_finish:SetActive(false)
       self.m_icon_download:SetActive(false)
@@ -39,6 +38,13 @@ function UITaskResourceItem:OnFreshData()
       self.m_icon_finish:SetActive(false)
       self.m_btn_continue:SetActive(true)
     end
+  elseif iState == MTTDProto.QuestState_Finish then
+    self.m_bg_item_finish:SetActive(false)
+    self.m_icon_download:SetActive(false)
+    self.m_icon_wait:SetActive(false)
+    self.m_btn_receive:SetActive(true)
+    self.m_icon_finish:SetActive(false)
+    self.m_btn_continue:SetActive(false)
   else
     self.m_bg_item_finish:SetActive(true)
     self.m_icon_download:SetActive(false)
@@ -49,7 +55,7 @@ function UITaskResourceItem:OnFreshData()
   end
   local tConfigTaskResourceDownload = self.m_itemData.tConfig
   local vRewardInfo = tConfigTaskResourceDownload.m_Reward
-  if vRewardInfo.Length > 0 then
+  if 0 < vRewardInfo.Length then
     local stRewardInfo = vRewardInfo[0]
     local processData = ResourceUtil:GetProcessRewardData({
       iID = tonumber(stRewardInfo[0]),
@@ -64,29 +70,28 @@ end
 function UITaskResourceItem:RefreshDownloadProgress()
   local iState = self.m_itemData.iState
   local bDownloading = self.m_itemData.bDownloading
-  if iState == MTTDProto.QuestState_Doing and bDownloading then
+  local lCurBytes = 0
+  local lTotalBytes = 0
+  for _, stProgressInfo in pairs(self.m_itemData.mProgress) do
+    lCurBytes = lCurBytes + stProgressInfo.lCurBytes
+    lTotalBytes = lTotalBytes + stProgressInfo.lTotalBytes
+  end
+  if bDownloading then
     self.m_num_percentage:SetActive(true)
     self.m_z_txt_wait:SetActive(false)
     self.m_z_txt_done:SetActive(false)
-    local mProgress = self.m_itemData.mProgress
-    local lTotalBytes = 0
-    local lCurBytes = 0
-    for _, stProgressInfo in pairs(mProgress) do
-      lTotalBytes = lTotalBytes + stProgressInfo.lTotalBytes
-      lCurBytes = lCurBytes + stProgressInfo.lCurBytes
-    end
     self.m_bar_Image.fillAmount = lCurBytes / lTotalBytes
     self.m_num_percentage_Text.text = DownloadManager:GetDownloadProgressStr(lCurBytes, lTotalBytes)
+  elseif 0 < lTotalBytes and lCurBytes < lTotalBytes then
+    self.m_num_percentage:SetActive(false)
+    self.m_z_txt_wait:SetActive(true)
+    self.m_z_txt_done:SetActive(false)
+    self.m_bar_Image.fillAmount = 0
   elseif iState == MTTDProto.QuestState_Finish then
     self.m_num_percentage:SetActive(false)
     self.m_z_txt_wait:SetActive(false)
     self.m_z_txt_done:SetActive(true)
     self.m_bar_Image.fillAmount = 1
-  elseif iState == MTTDProto.QuestState_Doing and not bDownloading then
-    self.m_num_percentage:SetActive(false)
-    self.m_z_txt_wait:SetActive(true)
-    self.m_z_txt_done:SetActive(false)
-    self.m_bar_Image.fillAmount = 0
   else
     self.m_num_percentage:SetActive(false)
     self.m_z_txt_wait:SetActive(false)

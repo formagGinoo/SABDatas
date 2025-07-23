@@ -1,4 +1,4 @@
-local Form_BattlePassLevelUp10UI = class("Form_BattlePassLevelUp10UI", require("UI/Common/UIBase"))
+local Form_BattlePassLevelUp10UI = class("Form_BattlePassLevelUp10UI", require("UI/Common/BattlePassBase/UIBattlePassLevelUp"))
 
 function Form_BattlePassLevelUp10UI:Init(gameObject, csui)
   if gameObject == nil then

@@ -16,6 +16,10 @@ end
 function Form_LoginAnnouncementMaintain:OnActive()
   self.m_stMaintainInfo = self.m_csui.m_param.stMaintainInfo
   self:ResetMaintain()
+  self.m_panelServer.transform:Find("PanelCountDown/TextCountDownDesc"):GetComponent(T_TextMeshProUGUI).text = CS.ConfFact.LangFormat4DataInit("LoginAnnouncementMaintainCountDownDesc")
+  self.m_Btn_Close:GetComponent(T_Button).onClick:RemoveAllListeners()
+  self.m_Btn_Return:SetActive(false)
+  self.m_Btn_Return:GetComponent(T_Button).onClick:RemoveAllListeners()
 end
 
 function Form_LoginAnnouncementMaintain:ResetMaintain()
@@ -25,6 +29,7 @@ function Form_LoginAnnouncementMaintain:ResetMaintain()
   if self.m_iTimeCountDown == 0 then
     self.m_iTimeCountDown = self.m_iRequestServerStatusInterval
   end
+  self.m_iRealTimeSinceStartup = CS.UnityEngine.Time.realtimeSinceStartup
   self.m_textTitle_Text.text = self.m_stMaintainInfo.sTitle
   local iMaintainCount = 0
   if self.m_stMaintainInfo.vContent then
@@ -67,21 +72,39 @@ function Form_LoginAnnouncementMaintain:OnUpdate(dt)
   if self.m_bBulletInRequest then
     return
   end
-  self.m_iRequestServerStatusCountdown = self.m_iRequestServerStatusCountdown - dt
-  if self.m_iRequestServerStatusCountdown <= 0 then
-    self:requestServerStatus()
+  local iDeltaTime = CS.UnityEngine.Time.realtimeSinceStartup - self.m_iRealTimeSinceStartup
+  if iDeltaTime < 0 then
+    log.error("Form_LoginAnnouncementMaintain:OnUpdate() iDeltaTime < 0, reset to 0")
+    iDeltaTime = 0
   end
-  self.m_iTimeCountDown = self.m_iTimeCountDown - dt
-  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond + dt
+  self.m_iRealTimeSinceStartup = CS.UnityEngine.Time.realtimeSinceStartup
+  self.m_iRequestServerStatusCountdown = self.m_iRequestServerStatusCountdown - iDeltaTime
+  if 0 >= self.m_iRequestServerStatusCountdown then
+  end
+  self.m_iTimeCountDown = self.m_iTimeCountDown - iDeltaTime
+  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond + iDeltaTime
   if self.m_iTimeDurationOneSecond >= 1 then
     self.m_iTimeDurationOneSecond = 0
     if 0 >= self.m_iTimeCountDown then
       self.m_iTimeCountDown = 0
       self.m_bBulletInRequest = true
-      self:requestServerStatus()
+      self:TryShowRestart()
     end
     self.m_textCountDown_Text.text = TimeUtil:SecondsToFormatStrDHOrHMS(self.m_iTimeCountDown)
   end
+end
+
+function Form_LoginAnnouncementMaintain:TryShowRestart()
+  utils.CheckAndPushCommonTips({
+    title = "",
+    content = CS.ConfFact.LangFormat4DataInit("UpdateRestartConfirm"),
+    funcText1 = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes"),
+    btnNum = 1,
+    bLockBack = true,
+    func1 = function()
+      CS.ApplicationManager.Instance:RestartGame()
+    end
+  })
 end
 
 function Form_LoginAnnouncementMaintain:requestServerStatus()
@@ -103,7 +126,8 @@ function Form_LoginAnnouncementMaintain:requestServerStatus()
         end
       end
     else
-      CS.ApplicationManager.Instance:RestartGame()
+      self.m_bBulletInRequest = true
+      self:TryShowRestart()
     end
   end
   
@@ -111,14 +135,32 @@ function Form_LoginAnnouncementMaintain:requestServerStatus()
     log.info("--- login get bulletin failed : ", msg.rspcode, " ---")
     self.m_bBulletInRequest = false
     self.m_iRequestServerStatusCountdown = self.m_iRequestServerStatusInterval
-    self.m_iTimeCountDown = self.m_iRequestServerStatusInterval
+    utils.CheckAndPushCommonTips({
+      title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+      content = CS.ConfFact.LangFormat4DataInit("LoginConnectServerFail"),
+      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
+      btnNum = 1,
+      bLockBack = true,
+      func1 = function()
+        CS.ApplicationManager.Instance:RestartGame()
+      end
+    })
   end
   
   local function OnBulletinGetTimeout(rec)
     log.info("--- login get bulletin timeout ---")
     self.m_bBulletInRequest = false
     self.m_iRequestServerStatusCountdown = self.m_iRequestServerStatusInterval
-    self.m_iTimeCountDown = self.m_iRequestServerStatusInterval
+    utils.CheckAndPushCommonTips({
+      title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+      content = CS.ConfFact.LangFormat4DataInit("LoginConnectServerFail"),
+      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
+      btnNum = 1,
+      bLockBack = true,
+      func1 = function()
+        CS.ApplicationManager.Instance:RestartGame()
+      end
+    })
   end
   
   local loginContext = CS.LoginContext.GetContext()

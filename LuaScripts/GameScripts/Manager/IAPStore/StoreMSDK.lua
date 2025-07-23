@@ -75,11 +75,15 @@ function StoreMSDK:GetProductPrice(productId, withCurrency)
 end
 
 function StoreMSDK:RealPay(productId, productSubId, exParam, OnSdkCallback)
-  CS.MSDKPay.Instance:BuyProduct(productId .. self.m_suffix, tostring(productSubId), function(isSuccess, order, message)
-    if isSuccess then
+  CS.MSDKPay.Instance:BuyProduct(productId .. self.m_suffix, tostring(productSubId), function(status, order, message)
+    if status == 0 then
       OnSdkCallback(true, "msdk", {order = order, message = message})
     else
-      OnSdkCallback(false, "msdk", {order = order, message = message})
+      OnSdkCallback(false, "msdk", {
+        status = status,
+        order = order,
+        message = message
+      })
     end
   end)
 end

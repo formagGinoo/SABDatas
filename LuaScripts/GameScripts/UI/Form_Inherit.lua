@@ -65,9 +65,9 @@ function Form_Inherit:RefreshUI()
   local isEvo = InheritManager:GetInheritIsEvo()
   for i = 1, 5 do
     if self.m_topFiveList[i] then
-      local characterCfg = self.m_topFiveList[i].characterCfg
       local serverData = self.m_topFiveList[i].serverData
-      ResourceUtil:CreateHeroHeadIcon(self["m_img_head" .. i .. "_Image"], characterCfg.m_HeroID, serverData.iStar)
+      local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(serverData.iHeroId, serverData.iFashion)
+      ResourceUtil:CreateFashionBust(self["m_img_head" .. i .. "_Image"], fashionInfo.m_FashionID)
       self["m_txt_lv" .. i .. "_Text"].text = tostring(serverData.iLevel)
       self["m_img_bghero_done" .. i]:SetActive(isEvo)
       self["m_bg_lv_done" .. i]:SetActive(isEvo)
@@ -164,6 +164,11 @@ function Form_Inherit:OnEmptyItemClk(index, go)
   local iCdTime = self.m_inheritList[fjItemIndex].iCdTime
   local cdTime = tonumber(INHERIT_SYNC_CD) - (TimeUtil:GetServerTimeS() - iCdTime)
   if self.m_inheritList and cdTime <= 0 then
+    local heroList = InheritManager:GetListOfInheritableHeroes()
+    if table.getn(heroList) == 0 then
+      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 11128)
+      return
+    end
     StackFlow:Push(UIDefines.ID_FORM_INHERITHEROLIST, {pos = fjItemIndex})
   else
     local vInfo = string.split(INHERIT_SYNC_RESET_COST, ",")

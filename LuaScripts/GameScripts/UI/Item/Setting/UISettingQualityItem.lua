@@ -142,12 +142,15 @@ function UISettingQualityItem:OnSelectChoice(iFilterIndex, iChoiceID, iValue)
     return
   elseif iChoiceID == 201 then
     CS.GameQualityManager.Instance:SetFPS(iValue)
+    CS.GameQualityManager.Instance:ApplySettings()
     return
   elseif iChoiceID == 202 then
     CS.GameQualityManager.Instance:SetFPS(iValue)
+    CS.GameQualityManager.Instance:ApplySettings()
     return
   elseif iChoiceID == 203 then
     CS.GameQualityManager.Instance:SetFPS(iValue)
+    CS.GameQualityManager.Instance:ApplySettings()
     return
   elseif iChoiceID == 401 then
     if ChannelManager:IsWindows() then

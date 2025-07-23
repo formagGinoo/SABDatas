@@ -21,6 +21,8 @@ CmdId_Attract_EndCouncil_CS = 10915
 CmdId_Attract_EndCouncil_SC = 10916
 CmdId_Attract_SetLetter_CS = 10917
 CmdId_Attract_SetLetter_SC = 10918
+CmdId_Attract_LetterSubmitItem_CS = 10919
+CmdId_Attract_LetterSubmitItem_SC = 10920
 AttractArchiveType_Archive = 1
 AttractArchiveType_Story = 2
 AttractArchiveType_Letter = 3
@@ -40,6 +42,7 @@ CmdLetter.Definition = {
   "vReply",
   "vRewardStep",
   "iStartTime",
+  "stQuest",
   iLetterId = {
     0,
     0,
@@ -75,6 +78,12 @@ CmdLetter.Definition = {
     0,
     8,
     0
+  },
+  stQuest = {
+    6,
+    0,
+    CmdQuest,
+    nil
   }
 }
 CmdHeroAttract = sdp.SdpStruct("CmdHeroAttract")
@@ -531,5 +540,53 @@ Cmd_Attract_SetLetter_SC.Definition = {
     0,
     sdp.SdpVector(CmdIDNum),
     nil
+  }
+}
+Cmd_Attract_LetterSubmitItem_CS = sdp.SdpStruct("Cmd_Attract_LetterSubmitItem_CS")
+Cmd_Attract_LetterSubmitItem_CS.Definition = {
+  "iHeroId",
+  "iLetterId",
+  "iQuestId",
+  iHeroId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iLetterId = {
+    1,
+    0,
+    8,
+    0
+  },
+  iQuestId = {
+    2,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Attract_LetterSubmitItem_SC = sdp.SdpStruct("Cmd_Attract_LetterSubmitItem_SC")
+Cmd_Attract_LetterSubmitItem_SC.Definition = {
+  "iHeroId",
+  "iLetterId",
+  "iQuestId",
+  iHeroId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iLetterId = {
+    1,
+    0,
+    8,
+    0
+  },
+  iQuestId = {
+    2,
+    0,
+    8,
+    0
   }
 }

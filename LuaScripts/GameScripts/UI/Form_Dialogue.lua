@@ -55,6 +55,7 @@ end
 
 function Form_Dialogue:OnActive()
   self.super.OnActive(self)
+  self.m_pnl_btn:SetActive(true)
   self:RefreshAutoStatus()
   self:RefreshBtn()
 end
@@ -76,12 +77,17 @@ function Form_Dialogue:CloseForm()
   self.speedUp = false
   self:RefreshSpeedUp()
   self:SetDisableSpeedUp(true)
+  self:SetAutoAndManual(false)
+  self.m_btnReview:SetActive(false)
+  self.m_btnSkip:SetActive(false)
+  self.m_btnCannotSkip:SetActive(false)
+  self.m_btnAuto:SetActive(false)
+  self.m_btnManual:SetActive(false)
+  self.m_pnl_btn:SetActive(true)
 end
 
 function Form_Dialogue:OnTimelineEnd()
   self.m_review = {}
-  self:RefreshAutoStatus()
-  self.m_btnReview:SetActive(false)
   self:CloseForm()
 end
 
@@ -106,9 +112,7 @@ end
 
 function Form_Dialogue:RefreshBtn()
   self.m_btnReview:SetActive(not self.closeReview and #self.m_review > 0)
-  local bAuto = StoryManager:getAutoStatus()
-  self.m_btnAuto:SetActive(not self.closeAutoAndManual and bAuto)
-  self.m_btnManual:SetActive(not self.closeAutoAndManual and not bAuto)
+  self:RefreshAutoStatus()
 end
 
 function Form_Dialogue:SetOptions(message)
@@ -126,7 +130,8 @@ function Form_Dialogue:SetOptions(message)
 end
 
 function Form_Dialogue:SetData(message)
-  if message == nil then
+  self.message = message
+  if self.message == nil then
     self:SwitchMode(0)
     return
   end
@@ -137,7 +142,6 @@ function Form_Dialogue:SetData(message)
   end
   self.optionFromTimeline = false
   self:SwitchMode(1)
-  self.message = message
   self.m_textTypeWriter = nil
   self.m_iDialogueStyle = 0
   self.m_bShowContent = false
@@ -348,11 +352,16 @@ function Form_Dialogue:SetExpression(tCineVoiceExpressionInfo)
     end
     local roleFaceInfo = CS.CData_CineRoleFace.GetInstance():GetValue_ByID(name)
     if not roleFaceInfo:GetError() then
-      local rectTrans = self.m_imageFace.transform
-      local pos = rectTrans.anchoredPosition
-      pos.x = roleFaceInfo.m_PosX
-      pos.y = -roleFaceInfo.m_PosY
-      rectTrans.anchoredPosition = pos
+      if roleFaceInfo.m_Replace == 0 then
+        local rectTrans = self.m_imageFace.transform
+        local pos = rectTrans.anchoredPosition
+        pos.x = roleFaceInfo.m_PosX
+        pos.y = -roleFaceInfo.m_PosY
+        rectTrans.anchoredPosition = pos
+      elseif facePath ~= nil then
+        expression = facePath
+        facePath = nil
+      end
     end
     self.expressionAnimation:SetStatic(expression, facePath)
     self.m_imagePortrait:SetActive(true)
@@ -485,11 +494,12 @@ function Form_Dialogue:OnPlaySFXFinish(playingId)
 end
 
 function Form_Dialogue:SetSkip(bCanSkip)
-  if bCanSkip and self.message and not self.message.bHideBtn then
-    self.m_pnl_btn:SetActive(true)
-  end
   self.m_btnSkip:SetActive(bCanSkip)
-  self.m_btnCannotSkip:SetActive(not bCanSkip)
+  if self.message == nil then
+    self.m_btnCannotSkip:SetActive(false)
+  else
+    self.m_btnCannotSkip:SetActive(not bCanSkip)
+  end
 end
 
 function Form_Dialogue:SetReview(bCanReview)
@@ -498,6 +508,7 @@ end
 
 function Form_Dialogue:SetAutoAndManual(bCanAutoAndManual)
   self.closeAutoAndManual = bCanAutoAndManual
+  self:RefreshAutoStatus()
 end
 
 function Form_Dialogue:SetDisableSpeedUp(disable)
@@ -579,8 +590,12 @@ end
 
 function Form_Dialogue:RefreshAutoStatus()
   local bAuto = StoryManager:getAutoStatus()
-  self.m_btnAuto:SetActive(bAuto and not self.closeAutoAndManual)
-  self.m_btnManual:SetActive(not bAuto and not self.closeAutoAndManual)
+  if not utils.isNull(self.m_btnAuto) then
+    self.m_btnAuto:SetActive(bAuto and not self.closeAutoAndManual and self.message ~= nil)
+  end
+  if not utils.isNull(self.m_btnManual) then
+    self.m_btnManual:SetActive(not bAuto and not self.closeAutoAndManual and self.message ~= nil)
+  end
 end
 
 function Form_Dialogue:OnBtnContinueClicked()

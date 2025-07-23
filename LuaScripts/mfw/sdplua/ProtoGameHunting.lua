@@ -308,6 +308,7 @@ CmdHuntingRecordHero.Definition = {
   "iHeroId",
   "iBreak",
   "iType",
+  "iFashion",
   iHeroId = {
     0,
     0,
@@ -322,6 +323,12 @@ CmdHuntingRecordHero.Definition = {
   },
   iType = {
     2,
+    0,
+    8,
+    0
+  },
+  iFashion = {
+    3,
     0,
     8,
     0

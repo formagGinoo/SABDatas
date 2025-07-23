@@ -341,6 +341,7 @@ function Form_TeamHeroList:FreshLeftUI()
   self.m_txt_hero_nike_name_Text.text = heroCfg.m_mTitle
   self.m_txt_hero_name_Text.text = heroCfg.m_mName
   self:FreshCamp(heroCfg.m_Camp)
+  self:FreshMoonType(heroCfg.m_MoonType)
   self:FreshDamageType(heroCfg.m_MainAttribute)
   ResourceUtil:CreateEquipTypeImg(self.m_icon_equip_Image, heroCfg.m_Equiptype)
   local careerCfg = CareerCfgIns:GetValue_ByCareerID(heroCfg.m_Career)
@@ -462,6 +463,15 @@ function Form_TeamHeroList:FreshCamp(heroCamp)
     return
   end
   UILuaHelper.SetAtlasSprite(self.m_img_camp_Image, campCfg.m_CampIcon)
+end
+
+function Form_TeamHeroList:FreshMoonType(heroMoonType)
+  if not heroMoonType then
+    return
+  end
+  UILuaHelper.SetActive(self.m_icon_moon1, heroMoonType == 1)
+  UILuaHelper.SetActive(self.m_icon_moon2, heroMoonType == 2)
+  UILuaHelper.SetActive(self.m_icon_moon3, heroMoonType == 3)
 end
 
 function Form_TeamHeroList:FreshDamageType(heroAttribute)
@@ -625,6 +635,22 @@ end
 
 function Form_TeamHeroList:OnFilterChanged()
   self.m_allShowHeroList = self.m_heroSort:FilterHeroList(self.m_allHeroList, self.m_filterData)
+  local temp = {}
+  for index, value in ipairs(self.m_curChooseHeroDataList) do
+    local is_have = false
+    for _, v in ipairs(self.m_allShowHeroList) do
+      if value.serverData.iHeroId == v.serverData.iHeroId then
+        is_have = true
+        break
+      end
+    end
+    if not is_have then
+      table.insert(temp, value)
+    end
+  end
+  for index, value in ipairs(temp) do
+    table.insert(self.m_allShowHeroList, 1, value)
+  end
   for i, v in ipairs(self.m_allShowHeroList) do
     v.is_cur_hero = self.m_curChooseHeroID == v.serverData.iHeroId
     if v.is_cur_hero then
@@ -676,7 +702,6 @@ function Form_TeamHeroList:OnBtnFilterClicked()
     end
     self.m_curChooseHeroID = nil
     self.m_filterData = filterData
-    self.m_curChooseHeroDataList = {}
     self:OnFilterChanged()
     UILuaHelper.SetActive(self.m_filter_select, false)
     if self.m_filterData then

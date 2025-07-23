@@ -116,11 +116,11 @@ end
 
 function Form_PlayerProtocolPop:OnBtncancleClicked()
   if ChannelManager:IsEUChannel() and not ChannelManager:IsWindows() then
-    CS.UserCentricsCtrl.Instance:DenyAll()
+    CS.UserCentricsCtrl.Instance:AcceptAll()
   end
-  if self.onCloseCallBack then
-    self.onCloseCallBack(false)
-  end
+  self.m_Toggle_user_Toggle.isOn = true
+  self.m_Toggle_privacypolicy_Toggle.isOn = true
+  self.m_Toggle_ageagreement_Toggle.isOn = true
 end
 
 function Form_PlayerProtocolPop:IsOpenGuassianBlur()

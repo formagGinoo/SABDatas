@@ -23,6 +23,7 @@ function Job_Startup_MergeInit_Impl.RequestMergeInit(jobNode)
     DownloadManager:OnTaskGetListSC(sc.mQuest[MTTDProto.QuestType_Resource])
     InheritManager:OnGetInheritDataSC(sc.stInherit)
     StargazingManager:OnGetStarRoomSC(sc.stStarRoom)
+    AncientManager:OnReqAncientGetDataSC(sc.stAncient)
     GameManager:OnAfterFreshData()
     GameManager:initNetwork()
     jobNode.Status = JobStatus.Success

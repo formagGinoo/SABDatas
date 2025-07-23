@@ -84,6 +84,8 @@ function BattleFlowManager:GetManagerByBattleType(battleType)
     return RogueStageManager
   elseif battleType == HuntingRaidManager.FightType_Hunting then
     return HuntingRaidManager
+  elseif battleType == AttractManager.FightType_Attract then
+    return AttractManager
   else
     return LevelManager
   end
@@ -101,10 +103,14 @@ function BattleFlowManager:ChangeBattleStage(stage)
   self.m_curBattleStage = stage
 end
 
-function BattleFlowManager:StartEnterBattle(levelType, ...)
-  local vExtraParam = {
-    ...
-  }
+function BattleFlowManager:EnterDownloadBattleMustResource(levelType, otherParamTab, backFun)
+  if not levelType then
+    if backFun then
+      backFun()
+    end
+    return
+  end
+  local vExtraParam = otherParamTab
   local cLevelManager = self:GetManagerByBattleType(levelType)
   local vPackage = {}
   local vResource = {}
@@ -167,6 +173,19 @@ function BattleFlowManager:StartEnterBattle(levelType, ...)
       table.insert(vResource, v)
     end
   end
+  local iNewbieMainLevelID = tonumber(ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("NewbieResourceCheckLevelID").m_Value)
+  if LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, iNewbieMainLevelID) then
+    DownloadManager:DownloadResourceWithUI(vPackage, vResource, "Battle_" .. tostring(levelType) .. "_" .. tostring(iBattleWorldID), nil, nil, backFun)
+  elseif backFun then
+    backFun()
+  end
+end
+
+function BattleFlowManager:StartEnterBattle(levelType, ...)
+  local vExtraParam = {
+    ...
+  }
+  local cLevelManager = self:GetManagerByBattleType(levelType)
   
   local function OnDownloadComplete(ret)
     log.info(string.format("Download Level %s Complete: %s", tostring(levelType), tostring(ret)))
@@ -175,12 +194,7 @@ function BattleFlowManager:StartEnterBattle(levelType, ...)
     cLevelManager:StartEnterBattle(levelType, table.unpack(vExtraParam))
   end
   
-  local iNewbieMainLevelID = tonumber(ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("NewbieResourceCheckLevelID").m_Value)
-  if LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, iNewbieMainLevelID) then
-    DownloadManager:DownloadResourceWithUI(vPackage, vResource, "Battle_" .. tostring(levelType) .. "_" .. tostring(iBattleWorldID), nil, nil, OnDownloadComplete)
-  else
-    OnDownloadComplete()
-  end
+  self:EnterDownloadBattleMustResource(levelType, vExtraParam, OnDownloadComplete)
 end
 
 function BattleFlowManager:OnBattleEnd(...)
@@ -212,12 +226,21 @@ function BattleFlowManager:ReStartBattle(reStartArea)
 end
 
 function BattleFlowManager:EnterNextBattle(levelType, ...)
-  self:ChangeBattleStage(BattleFlowManager.BattleStage.Before)
-  self.m_BattleType = levelType
+  local vExtraParam = {
+    ...
+  }
   local manager = self:GetManagerByBattleType(self.m_BattleType)
-  if manager and manager.EnterNextBattle then
-    manager:EnterNextBattle(levelType, ...)
+  
+  local function OnDownloadComplete(ret)
+    log.info(string.format("Download Level %s Complete: %s", tostring(levelType), tostring(ret)))
+    self:ChangeBattleStage(BattleFlowManager.BattleStage.Before)
+    self.m_BattleType = levelType
+    if manager and manager.EnterNextBattle then
+      manager:EnterNextBattle(levelType, table.unpack(vExtraParam))
+    end
   end
+  
+  self:EnterDownloadBattleMustResource(levelType, vExtraParam, OnDownloadComplete)
 end
 
 function BattleFlowManager:OnBattleWaveEnd(...)
@@ -437,9 +460,11 @@ function BattleFlowManager:GetAssignAllLoadingInfo(levelType, ...)
   return vAssignAllLoadingInfo
 end
 
-function BattleFlowManager:EnterShowPlot(levelID, mapID, backLobbyBackFun)
-  BattleGlobalManager:EnterPlotReplay(levelID, mapID)
-  self.m_backLobbyBackFun = backLobbyBackFun
+function BattleFlowManager:EnterShowPlot(levelID, mapID, levelType, vExtraParam, backLobbyBackFun)
+  self:EnterDownloadBattleMustResource(levelType, vExtraParam, function()
+    BattleGlobalManager:EnterPlotReplay(levelID, mapID)
+    self.m_backLobbyBackFun = backLobbyBackFun
+  end)
 end
 
 function BattleFlowManager:SavePvpReplaceDetailData(reqEnemyIndex, param)
@@ -497,6 +522,7 @@ function BattleFlowManager:SetLevelData(fightType, fightSubType, fightId)
     levelSubType = fightSubType,
     levelID = fightId,
     heroList = HeroManager:GetHeroServerList(),
+    seasonId = 1,
     isSim = false
   }
   CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)

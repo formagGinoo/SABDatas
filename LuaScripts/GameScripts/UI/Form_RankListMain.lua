@@ -191,7 +191,21 @@ function Form_RankListMain:RefreshRoleInfo(rankID, roleInfo, compnonegts)
     local vTopHero = data.vTopHero
     if vTopHero and 0 < #vTopHero then
       local heroid = vTopHero[1].iHeroId
-      ResourceUtil:CreateHeroHeadIcon(compnonegts.img_head, heroid)
+      local iFasionId = vTopHero[1].iFashion or 0
+      if iFasionId and 0 < iFasionId then
+        local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroid, iFasionId)
+        if not fashionCfg or fashionCfg:GetError() then
+          ResourceUtil:CreateHeroHeadIcon(compnonegts.img_head, heroid)
+          log.error("BattlePass skinCfgID Cannot Find Check Config: " .. iFasionId)
+          return
+        end
+        local performanceID = fashionCfg.m_PerformanceID[0]
+        local presentationData = CS.CData_Presentation.GetInstance():GetValue_ByPerformanceID(performanceID)
+        local szIcon = presentationData.m_UIkeyword .. "001"
+        UILuaHelper.SetAtlasSprite(compnonegts.img_head, szIcon)
+      else
+        ResourceUtil:CreateHeroHeadIcon(compnonegts.img_head, heroid)
+      end
     end
   end)
   compnonegts.txt_name.text = roleInfo.sName

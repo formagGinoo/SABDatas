@@ -2223,6 +2223,7 @@ enum ErrorCode {
   Error_Rogue_ScoreVerifyMax = 2947;
   Error_Rogue_MonsterNumVerifyMax = 2948;
   Error_Rogue_HeroQualityCantFight = 2949;
+  Error_Rogue_LevelChanged = 2950;
   Error_Activity_NoSuch = 3000;
   Error_Activity_Expire = 3001;
   Error_Activity_Condition = 3002;
@@ -8368,6 +8369,7 @@ message CmdActCfgSign {
   uint32 iRestrictStageType = 21;
   uint32 iRestrictStageId = 22;
   uint32 iRestrictGuideId = 23;
+  uint32 iAvatarId = 24;
 }
 
 message CmdActCfgSignGift {

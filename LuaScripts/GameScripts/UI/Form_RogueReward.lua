@@ -79,15 +79,35 @@ function Form_RogueReward:FreshUI()
     end)
   end
   local rewardList = self.m_rogueStageHelper:GetCurRogueStageRewards()
-  local rewards = {}
-  for i, v in ipairs(rewardList) do
-    rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v)
-  end
+  local rewards = self:GetRewards(rewardList)
   self.m_rewardListInfinityGrid:ShowItemList(rewards)
   self.m_btn_get:SetActive(table.getn(rewardList) > 0)
   self.m_btn_get_gary:SetActive(table.getn(rewardList) == 0)
   self.m_pnl_reward:SetActive(table.getn(rewardList) > 0)
   self.m_z_txt_noreward:SetActive(table.getn(rewardList) == 0)
+end
+
+function Form_RogueReward:GetRewards(rewardList)
+  local rewards = {}
+  local customData
+  local GetRewardCounts = 1
+  local isRewardDouble = ActivityManager:IsFullBurstDayOpen()
+  if isRewardDouble then
+    GetRewardCounts = 2
+  end
+  for i = 1, GetRewardCounts do
+    if isRewardDouble then
+      if i == 1 then
+        customData = {is_extra = isRewardDouble}
+      else
+        customData = nil
+      end
+    end
+    for _, v in ipairs(rewardList) do
+      rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v, customData)
+    end
+  end
+  return rewards
 end
 
 function Form_RogueReward:GenerateData()

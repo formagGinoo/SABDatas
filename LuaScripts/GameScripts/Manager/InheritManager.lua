@@ -220,13 +220,15 @@ function InheritManager:CheckCanResetLvById(heroId)
     if evoFlag then
       local index = table.indexof(self.m_mainHero, heroId)
       if index == false then
-        return 0 < iOriLevel
+        return iOriLevel == 0, true
+      else
+        return false, true
       end
     else
-      return 0 < iOriLevel
+      return iOriLevel == 0, true
     end
   end
-  return false
+  return false, false
 end
 
 function InheritManager:GetInheritLevelCfg(level)

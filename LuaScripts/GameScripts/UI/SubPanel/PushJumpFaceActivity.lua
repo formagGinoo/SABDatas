@@ -2,7 +2,8 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local PushJumpFaceActivity = class("PushJumpFaceActivity", UISubPanelBase)
 local SpineStrCfg = {
   ui_activity_lamiaface = "empusae_final",
-  ui_activity_huntingnightface = "cidhall_base"
+  ui_activity_huntingnightface = "cidhall_base",
+  ui_activity_qigelunaface = "siegrune_base"
 }
 
 function PushJumpFaceActivity:OnInit()
@@ -17,9 +18,10 @@ function PushJumpFaceActivity:AddEventListeners()
 end
 
 function PushJumpFaceActivity:OnFreshData()
-  self:AddEventListeners()
   self.openTime = TimeUtil:GetServerTimeS()
   self.activity = ActivityManager:GetActivityByID(self.m_initData)
+  self:OnHidePanel()
+  self:AddEventListeners()
   self.activityData = self.activity:OnGetActData()
   self.clientData = self.activity:OnGetClientConfig()
   if not self.clientData then
@@ -44,7 +46,7 @@ end
 
 function PushJumpFaceActivity:RefreshUI()
   if self.m_txt_desc_Text then
-    self.m_txt_desc_Text.text = self.activity:getLangText(self.activityData.sBriefDesc)
+    self.m_txt_desc_Text.text = self.activity:getLangText(self.activityData.sDetailDesc)
   end
   local isGetReward = self.activity:IsGetReserveState()
   if self.m_z_txt_noReward then
@@ -104,7 +106,7 @@ function PushJumpFaceActivity:OnBtnenterClicked()
     self.activity:SetActReserveRewardState(ActivityManager.ActPushFaceStatue.Reserve)
     self.activity:ReserveDownload()
   end
-  self:OnCloseGachaPushface()
+  self:broadcastEvent("eGameEvent_ActivityFace_CloseNoCheck")
 end
 
 function PushJumpFaceActivity:OnBtncloseClicked()
@@ -175,6 +177,7 @@ function PushJumpFaceActivity:OnInactive()
     TimeService:KillTimer(self.tickTimer)
     self.tickTimer = nil
   end
+  self:OnHidePanel()
 end
 
 function PushJumpFaceActivity:OnEventGetReward(stParam)

@@ -51,25 +51,102 @@ CmdActBattlePass_Status.Definition = {
 CmdActClientCfgBattlePass = sdp.SdpStruct("CmdActClientCfgBattlePass")
 CmdActClientCfgBattlePass.Definition = {
   "sName",
+  "iRoleId",
   "iAvatarId",
-  "iPrefab",
+  "iUIType",
+  "iTitleType",
+  "sPurchaseInterfacePrefabName",
+  "sPurchaseInterfaceLowTierName",
+  "sPurchaseInterfaceHighTierName",
+  "sTitle",
+  "sBackgroundPic",
+  "sBackgroundPicMask",
+  "iActivityRulesPopupId",
+  "sBuyBackgroundPic",
+  "sBuyBackgroundPicMask",
   sName = {
     0,
     0,
     13,
     ""
   },
-  iAvatarId = {
+  iRoleId = {
     1,
     0,
     8,
     0
   },
-  iPrefab = {
+  iAvatarId = {
     2,
     0,
     8,
     0
+  },
+  iUIType = {
+    3,
+    0,
+    8,
+    0
+  },
+  iTitleType = {
+    4,
+    0,
+    8,
+    0
+  },
+  sPurchaseInterfacePrefabName = {
+    5,
+    0,
+    13,
+    ""
+  },
+  sPurchaseInterfaceLowTierName = {
+    6,
+    0,
+    13,
+    ""
+  },
+  sPurchaseInterfaceHighTierName = {
+    7,
+    0,
+    13,
+    ""
+  },
+  sTitle = {
+    8,
+    0,
+    13,
+    ""
+  },
+  sBackgroundPic = {
+    9,
+    0,
+    13,
+    ""
+  },
+  sBackgroundPicMask = {
+    10,
+    0,
+    13,
+    ""
+  },
+  iActivityRulesPopupId = {
+    11,
+    0,
+    8,
+    0
+  },
+  sBuyBackgroundPic = {
+    12,
+    0,
+    13,
+    ""
+  },
+  sBuyBackgroundPicMask = {
+    13,
+    0,
+    13,
+    ""
   }
 }
 CmdActCfgBattlePassLevelCfg = sdp.SdpStruct("CmdActCfgBattlePassLevelCfg")
@@ -100,6 +177,7 @@ CmdActCommonCfgBattlePass = sdp.SdpStruct("CmdActCommonCfgBattlePass")
 CmdActCommonCfgBattlePass.Definition = {
   "sProductId",
   "iProductSubId",
+  "iItemBaseId",
   "vDailyQuest",
   "iCostPerExp",
   "iUpLevelExp",
@@ -125,80 +203,86 @@ CmdActCommonCfgBattlePass.Definition = {
     8,
     0
   },
-  vDailyQuest = {
+  iItemBaseId = {
     2,
+    0,
+    8,
+    0
+  },
+  vDailyQuest = {
+    3,
     0,
     sdp.SdpVector(8),
     nil
   },
   iCostPerExp = {
-    3,
-    0,
-    8,
-    0
-  },
-  iUpLevelExp = {
     4,
     0,
     8,
     0
   },
-  iSendRewardMailId = {
+  iUpLevelExp = {
     5,
     0,
     8,
     0
   },
-  iNormalCostRatio = {
+  iSendRewardMailId = {
     6,
     0,
     8,
     0
   },
-  iAdvancedCostRatio = {
+  iNormalCostRatio = {
     7,
     0,
     8,
     0
   },
-  sAdvancedProductId = {
+  iAdvancedCostRatio = {
     8,
+    0,
+    8,
+    0
+  },
+  sAdvancedProductId = {
+    9,
     0,
     13,
     ""
   },
   iAdvancedProductSubId = {
-    9,
+    10,
     0,
     8,
     0
   },
   sAdvancedDifferenceProductId = {
-    10,
+    11,
     0,
     13,
     ""
   },
   iAdvancedDifferenceProductSubId = {
-    11,
+    12,
     0,
     8,
     0
   },
   vAdvancedExtraReward = {
-    12,
+    13,
     0,
     sdp.SdpVector(CmdIDNum),
     nil
   },
   iAdvancedExtraLevel = {
-    13,
+    14,
     0,
     8,
     0
   },
   mLevelCfg = {
-    14,
+    15,
     0,
     sdp.SdpMap(8, CmdActCfgBattlePassLevelCfg),
     nil
@@ -251,10 +335,17 @@ Cmd_Act_BattlePass_GetLevelReward_CS.Definition = {
 Cmd_Act_BattlePass_GetLevelReward_SC = sdp.SdpStruct("Cmd_Act_BattlePass_GetLevelReward_SC")
 Cmd_Act_BattlePass_GetLevelReward_SC.Definition = {
   "vReward",
+  "mChangeReward",
   vReward = {
     0,
     0,
     sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  mChangeReward = {
+    1,
+    0,
+    sdp.SdpMap(8, sdp.SdpVector(CmdIDNum)),
     nil
   }
 }

@@ -274,11 +274,11 @@ function LevelHeroActivityLamiaHelper:GetLeftFreeTimes(activityID, subActivityID
   end
   local subFunType = subCfg.m_ActivitySubType
   local curUseTimes = self:GetDailyTimesBySubActivityAndSubID(activityID, subActivityID) or 0
-  local totalFreeNum
+  local totalFreeNum = 0
   if subFunType == HeroActivityManager.SubActTypeEnum.ChallengeLevel then
     totalFreeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("ActLamiaChallengeDailyLimit") or 0)
   else
-    totalFreeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("ActLamiaPassDailyLimit") or 0)
+    return 0, 0
   end
   return totalFreeNum - curUseTimes, totalFreeNum
 end

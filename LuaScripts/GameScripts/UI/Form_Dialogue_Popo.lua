@@ -43,6 +43,11 @@ function Form_Dialogue_Popo:OnActive()
   self.m_stSubCineStepInfoNext = nil
   self.m_vSubCineStepInfoStack = {}
   self.m_csui.SortingOrder = self:OwnerStack().Prio + 5
+  local param = self.m_csui.m_param
+  if param ~= nil then
+    self:OnEventAddDialoguePop(param)
+    self.m_csui.m_param = nil
+  end
 end
 
 function Form_Dialogue_Popo:GetPanelInfoCurrent()
@@ -89,6 +94,13 @@ function Form_Dialogue_Popo:OnEventAddDialoguePop(stEventParam)
       fWaitTimeMax = stEventParam.fWaitTimeMax
     }
   end
+  if self.content_node == nil then
+    self.content_node = self.m_csui.m_uiGameObject.transform:Find("content_node")
+  end
+  local bottomOffset = stEventParam.bottomOffset or 0
+  local v = self.content_node.offsetMin
+  v.y = bottomOffset
+  self.content_node.offsetMin = v
 end
 
 function Form_Dialogue_Popo:SetPanelPopByCineSubStepData(panelPop, stCineSubStepData)

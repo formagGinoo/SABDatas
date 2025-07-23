@@ -227,6 +227,14 @@ __funcList[26007] = function(extData)
   end
   StackFlow:Push(UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP, {sel_shop = 26007})
 end
+__funcList[26008] = function(extData)
+  local openFlag = ShopManager:CheckShopIsOpenByWinId(26008)
+  if not openFlag then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
+    return
+  end
+  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP, {sel_shop = 26008})
+end
 __funcList[27001] = function(extData)
   StackPopup:Push(UIDefines.ID_FORM_GUILDSIGN)
 end
@@ -260,6 +268,30 @@ __funcList[27003] = function(extData)
   if not hasAlliance then
     GuildManager:ReqAllianceGetRecommendList()
     return
+  end
+end
+__funcList[27005] = function(extData)
+  local openFlag, tips_id = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Ancient)
+  if not openFlag then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tips_id)
+    return
+  end
+  local allianceId = RoleManager:GetRoleAllianceInfo()
+  local hasAlliance = allianceId and tostring(allianceId) ~= "0"
+  if not hasAlliance then
+    GuildManager:ReqAllianceGetRecommendList()
+    return
+  end
+  local iCurHero = AncientManager:GetCurHeroID()
+  local guildData = GuildManager:GetOwnerGuildDetail()
+  if not iCurHero or iCurHero == 0 then
+    StackFlow:Push(UIDefines.ID_FORM_GUILDELEVATORMAIN, {
+      requestFlag = not guildData
+    })
+  else
+    StackFlow:Push(UIDefines.ID_FORM_GUILDELEVATORCALL, {
+      requestFlag = not guildData
+    })
   end
 end
 __funcList[28001] = function(extData)
@@ -317,6 +349,23 @@ __funcList[30002] = function(extData)
   else
     StackFlow:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetCommonTextById(20068))
   end
+end
+__funcList[30003] = function(extData)
+  local openList = ActivityManager:GetActivityListByType(MTTD.ActivityType_Sign)
+  for i, stActivity in pairs(openList) do
+    if stActivity and stActivity:checkCondition() and extData.ex_param and extData.ex_param[1] and stActivity:GetUIType() == extData.ex_param[1] and tonumber(extData.ex_param[2]) == stActivity:GetSkinId() then
+      local uiInfo = StackFlow:GetUIInstanceLua(UIDefines.ID_FORM_ACTIVITYMAIN)
+      if uiInfo and uiInfo.m_csui and uiInfo:IsActive() then
+        uiInfo:ChooseActivityByID(tonumber(stActivity:getID()))
+      else
+        StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, {
+          activityId = tonumber(stActivity:getID())
+        })
+      end
+      return
+    end
+  end
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 55002)
 end
 __funcList[40001] = function(extData)
   local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
@@ -379,6 +428,15 @@ __funcList[40006] = function(extData)
     end
   end
 end
+__funcList[40008] = function(extData)
+  local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
+  if payStoreActivity then
+    local id = payStoreActivity:GetActivityFashionStoreID()
+    if id ~= 0 then
+      StackFlow:Push(UIDefines.ID_FORM_MALLMAINNEW, {iStoreId = id})
+    end
+  end
+end
 __funcList[53001] = function(extData)
   local placeID = tonumber(ConfigManager:GetGlobalSettingsByKey("CastleCouncilHallPlaceId"))
   local isUnlock, unlockTips = CastleManager:IsCastlePlaceUnlock(placeID)
@@ -425,6 +483,35 @@ __funcList[60001] = function(extData)
   else
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tips_id)
   end
+end
+__funcList[500001] = function(extData)
+  local openBPList = ActivityManager:GetActivityListByType(MTTD.ActivityType_BattlePass)
+  for i, stActivity in pairs(openBPList) do
+    if stActivity and stActivity:checkCondition() and extData.ex_param and extData.ex_param[1] and stActivity:GetUiType() == extData.ex_param[1] and tonumber(extData.ex_param[2]) == stActivity:GetSkinId() then
+      local formUid = stActivity:GetBattlePassMainPrefab()
+      
+      local function requestHandler()
+        StackFlow:Push(formUid, {stActivity = stActivity})
+      end
+      
+      if stActivity:GetCurLevel() > 0 then
+        stActivity:RequestQuests(false, requestHandler)
+      else
+        stActivity:RequestActData(requestHandler)
+      end
+      return
+    end
+  end
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 55002)
+end
+__funcList[60010] = function(extData)
+  if not (extData and extData.ex_param) or not extData.ex_param[1] then
+    log.error("角色活动相关跳转参数错误")
+    return
+  end
+  local main_id = extData.ex_param[1] and tonumber(extData.ex_param[1])
+  local sub_id = extData.ex_param[2] and tonumber(extData.ex_param[2])
+  HeroActivityManager:GotoHeroActivity({main_id = main_id, sub_id = sub_id})
 end
 
 function M:OpenFunc(jumpId, extData)

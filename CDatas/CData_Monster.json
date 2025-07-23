@@ -1,6 +1,5 @@
 {
   "className": "CData_Monster",
-  "timestamp": "2025-07-16T14:14:07.810Z",
   "data": {
     "10020": {
       "m_bError": null,
@@ -1631,7 +1630,7 @@
       "m_OtherParam": "[]",
       "m_AttributeLimit": "[3]",
       "m_Part": "[]",
-      "m_TrueIdentity": "20420",
+      "m_TrueIdentity": null,
       "m_BossType": null
     },
     "10481": {
@@ -1655,7 +1654,7 @@
       "m_OtherParam": "[]",
       "m_AttributeLimit": "[]",
       "m_Part": "[]",
-      "m_TrueIdentity": "20060",
+      "m_TrueIdentity": "20480",
       "m_BossType": null
     },
     "10491": {
@@ -1775,7 +1774,7 @@
       "m_OtherParam": "[]",
       "m_AttributeLimit": "[]",
       "m_Part": "[]",
-      "m_TrueIdentity": "20010",
+      "m_TrueIdentity": null,
       "m_BossType": null
     },
     "10496": {
@@ -1799,7 +1798,7 @@
       "m_OtherParam": "[]",
       "m_AttributeLimit": "[]",
       "m_Part": "[]",
-      "m_TrueIdentity": "20030",
+      "m_TrueIdentity": null,
       "m_BossType": null
     },
     "10497": {
@@ -1823,7 +1822,7 @@
       "m_OtherParam": "[]",
       "m_AttributeLimit": "[]",
       "m_Part": "[]",
-      "m_TrueIdentity": "20040",
+      "m_TrueIdentity": null,
       "m_BossType": null
     },
     "10640": {

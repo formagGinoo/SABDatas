@@ -47,6 +47,7 @@ function UIHeroActDialogueCollectionBase:FreshData()
   if tParam then
     self.m_activityID = tonumber(tParam.activityID)
     self.m_activitySubID = tonumber(tParam.activitySubID)
+    self.m_bIsSecondHalf = tParam.bIsSecondHalf
     self:FreshStoryLevelList()
     self.m_csui.m_param = nil
   end
@@ -151,7 +152,11 @@ function UIHeroActDialogueCollectionBase:OnStoryItemClk(index)
   local mapID = levelCfg.m_MapID
   local activityID = self.m_activityID
   local activitySubID = self.m_activitySubID
-  BattleFlowManager:EnterShowPlot(levelCfg.m_LevelID, mapID, function(backFun)
+  local levelType = HeroActivityManager:GetLevelTypeByActivityID(activityID)
+  BattleFlowManager:EnterShowPlot(levelCfg.m_LevelID, mapID, levelType, {
+    activityID,
+    levelCfg.m_LevelID
+  }, function(backFun)
     GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function(isSuc)
       if isSuc then
         local subCfg = HeroActivityManager:GetSubInfoByID(activitySubID)
@@ -173,10 +178,59 @@ function UIHeroActDialogueCollectionBase:OnStoryItemClk(index)
   end)
 end
 
+function UIHeroActDialogueCollectionBase:OnBackLobby(fCB, formStr, formUIID)
+  local iActID = self.m_activityID
+  if not iActID then
+    GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function(isSuc)
+      if isSuc then
+        StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+        if fCB then
+          fCB("Form_Hall")
+        end
+      end
+    end, true)
+    return
+  end
+  local activityID = self.m_activityID
+  local activitySubID = self.m_activitySubID
+  local paramTab = {
+    activityID = activityID,
+    activitySubID = activitySubID,
+    bIsSecondHalf = self.m_bIsSecondHalf
+  }
+  
+  local function OnLoadFinish(isSuc)
+    log.info("UIHeroActDialogueCollectionBase MainCity LoadBack")
+    StackFlow:Push(formUIID, paramTab)
+    if fCB then
+      fCB(formStr)
+    end
+    self:broadcastEvent("eGameEvent_ActExploreUIReady")
+  end
+  
+  local cfg = HeroActivityManager:GetMainInfoByActID(iActID)
+  if cfg and cfg.m_ActivityType == 2 and cfg.m_ExploreScene ~= "" then
+    local scene = GameSceneManager:GetGameScene(GameSceneManager.SceneID.ActExplore)
+    scene:OpenScene(cfg.m_ExploreScene, iActID, function()
+      OnLoadFinish()
+    end, true)
+    return
+  end
+  GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, OnLoadFinish, true)
+end
+
 function UIHeroActDialogueCollectionBase:OnBtnCloseClicked()
   HeroActivityManager:GotoHeroActivity({
     main_id = self.m_activityID,
-    sub_id = HeroActivityManager:GetSubFuncID(self.m_activityID, HeroActivityManager.SubActTypeEnum.NormalLevel)
+    sub_id = HeroActivityManager:GetSubFuncID(self.m_activityID, HeroActivityManager.SubActTypeEnum.NormalLevel, self.m_bIsSecondHalf and 2 or 1)
+  })
+  self:CloseForm()
+end
+
+function UIHeroActDialogueCollectionBase:OnBtnreturnClicked()
+  HeroActivityManager:GotoHeroActivity({
+    main_id = self.m_activityID,
+    sub_id = HeroActivityManager:GetSubFuncID(self.m_activityID, HeroActivityManager.SubActTypeEnum.NormalLevel, self.m_bIsSecondHalf and 2 or 1)
   })
   self:CloseForm()
 end

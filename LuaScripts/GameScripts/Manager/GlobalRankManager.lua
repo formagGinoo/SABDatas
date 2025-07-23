@@ -71,8 +71,8 @@ function GlobalRankManager:OnRankGetListSC(data)
   self.mmTargetRankTopRole = data.mmTargetRankTopRole
   self:FreshmCollectRankNum(data.mCollectRankNum)
   self:broadcastEvent("eGameEvent_RankGetList")
-  self:IsGlobalRankEntryHaveRedDot()
   self.bHaveNewTargetReddot = false
+  self:IsGlobalRankEntryHaveRedDot()
 end
 
 function GlobalRankManager:FreshmCollectRankNum(mCollectRankNum)

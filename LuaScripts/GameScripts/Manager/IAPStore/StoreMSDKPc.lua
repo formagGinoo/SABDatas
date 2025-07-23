@@ -35,7 +35,7 @@ function StoreMSDKPc:OnAfterFreshData()
 end
 
 function StoreMSDKPc:GetCreateRoleCountry()
-  return RoleManager:GetCreateRoleCountry()
+  return RoleManager:GetLoginRoleCountry()
 end
 
 function StoreMSDKPc:GetProductInfo(productId)
@@ -118,6 +118,9 @@ function StoreMSDKPc:RealPay(productId, productSubId, exParam, OnSdkCallback)
   else
     OnSdkCallback(false, "message", 56003)
   end
+end
+
+function StoreMSDKPc:Report()
 end
 
 function StoreMSDKPc:OnCallback()

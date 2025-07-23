@@ -28,6 +28,7 @@ function Form_Hall:AfterInit()
   self.m_widgetResourceBar = self:createResourceBar(resourceBarRoot)
   self.m_widgetTaskEnter = self:createTaskBar(self.m_common_task_enter)
   self.m_bgPanelCom = self:CreateSubPanel("HallBgSubPanel", self.m_bgPanel, self, nil, nil, nil)
+  self.m_battlePassPanel = self:CreateSubPanel("HallBattlePassSubPanel", self.m_bpPanel, self, nil, nil, nil)
   self.m_isHideContent = false
   self.m_isShowSubPanelOther = false
   self.heroActTimer = nil
@@ -65,6 +66,7 @@ function Form_Hall:OnActive()
   self:InitFxStatus()
   self.iHeroActIdx = 1
   self:FreshUI()
+  self:CheckFreshBattlePassSubPanelShow()
   self:CheckShowGachaDownTime()
   self:CheckFreshBgSubPanelShow()
   self:InitHangUpUI()
@@ -294,6 +296,10 @@ function Form_Hall:OnDestroy()
     TimeService:KillTimer(self.ChangeActTimer)
     self.ChangeActTimer = nil
   end
+  if self.banelAnim then
+    TimeService:KillTimer(self.banelAnim)
+    self.banelAnim = nil
+  end
 end
 
 function Form_Hall:InitFxStatus()
@@ -332,6 +338,12 @@ end
 function Form_Hall:CheckFreshBgSubPanelShow()
   if self.m_bgPanelCom then
     self.m_bgPanelCom:OnActive()
+  end
+end
+
+function Form_Hall:CheckFreshBattlePassSubPanelShow()
+  if self.m_battlePassPanel then
+    self.m_battlePassPanel:OnActive()
   end
 end
 
@@ -564,8 +576,6 @@ function Form_Hall:RefreshLockIconState()
   UILuaHelper.SetActive(self.m_pnl_unlock_3, openFlagCastle)
   local openFlag8 = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Shop)
   self.m_btn_store_free:SetActive(openFlag8)
-  local openFlagBP = ActivityManager:GetActivityInShowTimeByType(MTTD.ActivityType_BattlePass) ~= nil
-  self.m_btn_store_bp:SetActive(openFlagBP)
   local m_PayStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
   if m_PayStoreActivity then
     local m_StoreList = m_PayStoreActivity:GetNewStoreList()
@@ -694,6 +704,7 @@ function Form_Hall:RefreshHallActivityStatus()
   self:RefreshMainActivityUI()
   self:ReFreshWelFareShow()
   self:OnRefreshEmergencyGift(false)
+  self:CheckFreshBattlePassSubPanelShow()
 end
 
 function Form_Hall:RefreshHallActivityStatus_Announment()
@@ -859,8 +870,12 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
       self.iHeroActIdx = 1
     end
     for i, v in ipairs(heroAct_List) do
+      if 2 < i then
+        break
+      end
       local config = v.config
-      self["m_txt_activity" .. i .. "_Text"].text = config.m_mActivityTitle
+      local bIsSecondHalf = HeroActivityManager:IsSecondHalf(config.m_ActivityID)
+      self["m_txt_activity" .. i .. "_Text"].text = bIsSecondHalf and config.m_mActivityTitleExtra or config.m_mActivityTitle
       UILuaHelper.SetAtlasSprite(self["m_bg_activity" .. i .. "_Image"], config.m_ActivityBanner)
       self["m_activity" .. i]:SetActive(true)
       self["m_img_mask" .. i]:SetActive(false)
@@ -915,6 +930,9 @@ function Form_Hall:FreshHeroActSignPush()
 end
 
 function Form_Hall:RefreshMainActivityUI()
+  if self.m_vScrollActivityList == nil then
+    return
+  end
   local activityBannerList = ActivityManager:GetMainBannerActivityList()
   local redDotCount = 0
   local activeCount = 0
@@ -1006,9 +1024,7 @@ function Form_Hall:ReFreshWelFareShow()
     local bShowRed = stActivity:checkShowRed()
     self.m_imageParty:SetActive(bShowRed)
     if stActivity:IsNeedPushFace() then
-      GachaManager:ReqGetGachaData({2}, function(...)
-        StackFlow:Push(UIDefines.ID_FORM_ACTIVITYPARTY, {m_stActivity = stActivity})
-      end)
+      StackFlow:Push(UIDefines.ID_FORM_ACTIVITYPARTY, {m_stActivity = stActivity})
     end
   else
     self.m_btnParty:SetActive(false)
@@ -1225,9 +1241,7 @@ end
 function Form_Hall:OnBtnPartyClicked()
   local stActivity = ActivityManager:GetActivityInShowTimeByType(MTTD.ActivityType_WelfareShow)
   if stActivity then
-    GachaManager:ReqGetGachaData({2}, function(...)
-      StackFlow:Push(UIDefines.ID_FORM_ACTIVITYPARTY, {m_stActivity = stActivity})
-    end)
+    StackFlow:Push(UIDefines.ID_FORM_ACTIVITYPARTY, {m_stActivity = stActivity})
   end
 end
 
@@ -1477,7 +1491,8 @@ end
 function Form_Hall:OnBtnactivityClicked()
   if self.m_HeroActID then
     HeroActivityManager:GotoHeroActivity({
-      main_id = self.m_HeroActID
+      main_id = self.m_HeroActID,
+      isPlayTimeLine = true
     })
     local reportStr = "click_" .. tostring(self.m_HeroActID) .. "_1"
     local params = {Event_id = reportStr}
@@ -1597,7 +1612,7 @@ function Form_Hall:CheckAndShowLetter()
 end
 
 function Form_Hall:OnBtnAttractClicked()
-  StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {isReading = true})
+  StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {bIsInAttract = false, isReading = true})
 end
 
 function Form_Hall:GetDownloadResourceExtra(tParam)

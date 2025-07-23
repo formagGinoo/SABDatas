@@ -538,8 +538,16 @@ function Form_ItemTips:OnPnlusebtnClicked()
         })
       end
     elseif self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_BattlePass then
-      local act = ActivityManager:GetActivityInShowTimeByType(MTTD.ActivityType_BattlePass)
-      local openFlagBP = act ~= nil
+      local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_BattlePass)
+      local act
+      local openFlagBP = false
+      for _, v in ipairs(act_list) do
+        if v:checkCondition() and v:isInActivityShowTime() and v:GetItemBaseId() == self.m_iID then
+          openFlagBP = true
+          act = v
+          break
+        end
+      end
       if not openFlagBP then
         utils.popUpDirectionsUI({
           tipsID = 1027,
@@ -547,7 +555,7 @@ function Form_ItemTips:OnPnlusebtnClicked()
             self:OnBtnCloseClicked()
           end
         })
-      else
+      elseif act then
         local isIsAdvanced = act:IsHaveBuy()
         if not isIsAdvanced then
           ItemManager:RequestItemUse(self.m_iID, 1)

@@ -64,6 +64,7 @@ function Job_ConnectGameServer_Game_Role_Init_Impl.RequestRoleInit(jobNode)
   RPCS():Role_Init(reqMsg, function(sc, msg)
     ReportManager:ReportLoginProcess("InitNetworkGame_RoleInit", "RoleInit_Success")
     CS.UserData.Instance.roleInit = sc
+    CS.UserData.Instance.sLoginRoleCountry = sc.sLoginRoleCountry
     log.info("--- game role init success : ", msg.rspcode, " ---")
     log.info("RoleID: " .. sc.iUid .. ", Name: " .. sc.sName)
     RoleManager:InitRole(sc)

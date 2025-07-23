@@ -45,4 +45,9 @@ function ChannelManager:IsDMMChannel()
   return self.m_versionContext:IsDMMChannel()
 end
 
+function ChannelManager:IsExeVerBig(targetVer)
+  local strBigVer = CS.VersionUtil.GetBigVer(self.m_versionContext.ClientStreamVersion)
+  return CS.VersionUtil.CompareBigVerPart(strBigVer, targetVer)
+end
+
 return ChannelManager

@@ -69,6 +69,7 @@ function UIRogueItemTipsItem:OnFreshData()
     UILuaHelper.SetActive(self.m_rogue_Item_list[i].pnl_equal, i == 1)
   end
   self.m_img_title:SetActive(data.showTitle)
+  UILuaHelper.SetActive(self.m_img_masknotformula, data.sort == RogueStageManager.RegionTypeSort.Exclusive)
 end
 
 function UIRogueItemTipsItem:IsHaveItem(itemId)

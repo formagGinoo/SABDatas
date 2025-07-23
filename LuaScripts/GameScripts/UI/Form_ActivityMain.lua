@@ -17,17 +17,28 @@ function Form_ActivityMain:OnActive()
   self:RefreshActivityList()
   local param = self.m_csui.m_param
   local selectIndex
+  self.subPanelTabIndex = nil
   if param ~= nil then
-    for i, v in ipairs(self.m_vActivityList) do
-      if v:getID() == param then
-        selectIndex = i
-      end
+    if type(param) == "number" then
+      selectIndex = self:GetSelecteIndex(param)
+      self.m_csui.m_param = nil
+    else
+      selectIndex = self:GetSelecteIndex(param.activityId)
+      self.subPanelTabIndex = param.cliveType
+      self.m_csui.m_param = nil
     end
-    self.m_csui.m_param = nil
   end
   selectIndex = selectIndex or self.m_selectIndex or 1
   self.m_selectIndex = nil
   self:OnSelectIndex(selectIndex)
+end
+
+function Form_ActivityMain:GetSelecteIndex(param)
+  for i, v in ipairs(self.m_vActivityList) do
+    if v:getID() == param then
+      return i
+    end
+  end
 end
 
 function Form_ActivityMain:ChooseActivityByID(iActivityID)
@@ -35,6 +46,14 @@ function Form_ActivityMain:ChooseActivityByID(iActivityID)
     if v:getID() == iActivityID then
       self:OnSelectIndex(i)
       break
+    end
+  end
+end
+
+function Form_ActivityMain:GetActivitySubPanel(iActivityID)
+  for i, v in ipairs(self.m_subPanelData) do
+    if i == iActivityID then
+      return v
     end
   end
 end
@@ -142,7 +161,12 @@ function Form_ActivityMain:OnSelectIndex(index)
     if activityType == MTTD.ActivityType_Sign and curSubPanelData.getSubPanelName and curSubPanelData:getSubPanelName() == ActivityManager.ActivitySubPanelName.ActivitySPName_Sign7 then
       SubPanelManager:LoadSubPanel(panelName, self.m_root_sevendays, self, nil, {activity = curActivity}, loadCallBack)
     else
-      SubPanelManager:LoadSubPanel(panelName, self.m_root_activity, self, nil, {activity = curActivity}, loadCallBack)
+      SubPanelManager:LoadSubPanel(panelName, self.m_root_activity, self, {
+        cliveType = self.subPanelTabIndex
+      }, {
+        activity = curActivity,
+        cliveType = self.subPanelTabIndex
+      }, loadCallBack)
     end
   end
   for k, v in pairs(self.m_subPanelData) do
@@ -151,6 +175,10 @@ function Form_ActivityMain:OnSelectIndex(index)
       if v.subPanelLua and v.IsActive ~= isOpen then
         v.subPanelLua:SetActive(isOpen)
         if isOpen then
+          if self.subPanelTabIndex then
+            v.subPanelLua:SetCurTabIdx(self.subPanelTabIndex)
+            self.subPanelTabIndex = nil
+          end
           v.subPanelLua:OnFreshData()
         end
       end
@@ -160,6 +188,10 @@ function Form_ActivityMain:OnSelectIndex(index)
       end
     end
     if v.IsActive and v.subPanelLua and v.subPanelLua.OnFreshData then
+      if self.subPanelTabIndex then
+        v.subPanelLua:SetCurTabIdx(self.subPanelTabIndex)
+        self.subPanelTabIndex = nil
+      end
       v.subPanelLua:OnFreshData()
     end
   end

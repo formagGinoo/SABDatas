@@ -10,7 +10,14 @@ end
 function UIHeroHotItem:OnFreshData()
   local score = self.m_itemData.fScore
   local isNew = self.m_itemData.bIsNew
+  if not self.m_itemData.iHeroId then
+    return
+  end
   local heroCfg = CharacterInfoIns:GetValue_ByHeroID(self.m_itemData.iHeroId)
+  if heroCfg:GetError() then
+    log.error("HeroRecommend HeroCfgIns:GetValue_ByHeroID id is nil  " .. tostring(self.m_itemData.iHeroId))
+    return
+  end
   self:OnFreshUI(heroCfg, score, isNew)
 end
 

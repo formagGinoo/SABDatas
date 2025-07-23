@@ -63,6 +63,7 @@ function Form_PersonalChange:AfterInit()
       nodeSelect = self.m_img_page1,
       contentNode = self.m_head_content,
       animStr = "PersonalChange_hero",
+      checkFreshRedDotFun = self.CheckFreshHeadRedDot,
       freshFun = self.FreshHeadPanelShow,
       changeToggleFun = self.ChangeHeadToggleShow
     },
@@ -72,6 +73,7 @@ function Form_PersonalChange:AfterInit()
       nodeSelect = self.m_img_page2,
       contentNode = self.m_head_frame_content,
       animStr = "PersonalChange_hero",
+      checkFreshRedDotFun = self.CheckFreshHeadFrameRedDot,
       freshFun = self.FreshHeadFramePanelShow,
       changeToggleFun = self.ChangeHeadFrameToggleShow
     }
@@ -349,7 +351,7 @@ function Form_PersonalChange:OnRoleSetCard(paramTab)
     return
   end
   StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 51001)
-  self:CloseForm()
+  self:CloseFormAndCheckFreshRedDot()
 end
 
 function Form_PersonalChange:CreateTabClkBackFunctions()
@@ -567,6 +569,13 @@ function Form_PersonalChange:FreshHeadPanelShow()
   self:FreshButtonsShow()
 end
 
+function Form_PersonalChange:CheckFreshHeadRedDot()
+  if self.m_curPageIndex ~= RolePageType.Head then
+    return
+  end
+  RoleManager:SetAllRoleHeadNewFlag()
+end
+
 function Form_PersonalChange:ChangeHeadToggleShow(pageIndex)
   local headToggleData = self.PageToggleTab[RolePageType.Head]
   if not headToggleData then
@@ -630,6 +639,13 @@ function Form_PersonalChange:FreshHeadFramePanelShow()
   self:FreshHeadFrameContentShow()
   self:FreshLeftHeadFrameShow()
   self:FreshButtonsShow()
+end
+
+function Form_PersonalChange:CheckFreshHeadFrameRedDot()
+  if self.m_curPageIndex ~= RolePageType.HeadFrame then
+    return
+  end
+  RoleManager:SetAllRoleHeadFrameNewFlag()
 end
 
 function Form_PersonalChange:ChangeHeadFrameToggleShow(pageIndex)
@@ -714,6 +730,16 @@ function Form_PersonalChange:FreshShowHeadFrameChild()
   end
 end
 
+function Form_PersonalChange:CloseFormAndCheckFreshRedDot()
+  if self.m_curPageIndex then
+    local toggleTab = self.PageToggleTab[self.m_curPageIndex]
+    if toggleTab and toggleTab.checkFreshRedDotFun then
+      toggleTab.checkFreshRedDotFun(self)
+    end
+  end
+  self:CloseForm()
+end
+
 function Form_PersonalChange:OnRoleHeadItemClk(headIndex)
   if not headIndex then
     return
@@ -796,6 +822,10 @@ function Form_PersonalChange:OnPageClk(index)
   if index == self.m_curPageIndex then
     return
   end
+  local lastToggleTab = self.PageToggleTab[self.m_curPageIndex]
+  if lastToggleTab and lastToggleTab.checkFreshRedDotFun then
+    lastToggleTab.checkFreshRedDotFun(self)
+  end
   self:ChangePageShow(index)
   local toggleTab = self.PageToggleTab[self.m_curPageIndex]
   if not toggleTab then
@@ -846,7 +876,7 @@ function Form_PersonalChange:OnHeadFrameTabClk(index)
 end
 
 function Form_PersonalChange:OnBtnCloseClicked()
-  self:CloseForm()
+  self:CloseFormAndCheckFreshRedDot()
 end
 
 function Form_PersonalChange:OnBtnresetClicked()
@@ -869,13 +899,13 @@ function Form_PersonalChange:OnBtnresetgrayClicked()
 end
 
 function Form_PersonalChange:OnBtnCancelClicked()
-  self:CloseForm()
+  self:CloseFormAndCheckFreshRedDot()
 end
 
 function Form_PersonalChange:OnBtnConfirmClicked()
   if self.m_curHeadID == self.m_curUseHeadID and self.m_curHeadFrameID == self.m_curUseHeadFrameID then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 51003)
-    self:CloseForm()
+    self:CloseFormAndCheckFreshRedDot()
     return
   end
   local isHaveHead = ItemManager:GetItemNum(self.m_curHeadID) > 0
@@ -892,7 +922,26 @@ function Form_PersonalChange:OnBtniconcopybgClicked()
   StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 20025)
 end
 
-local f
-ullscreen = true
+function Form_PersonalChange:GetDownloadResourceExtra(tParam)
+  local vPackage = {}
+  local vResourceExtra = {}
+  local playerFrameIns = ConfigManager:GetConfigInsByName("PlayerHeadFrame")
+  if playerFrameIns then
+    local allHeadFrameCfgDic = playerFrameIns:GetAll()
+    for _, v in pairs(allHeadFrameCfgDic) do
+      local tempHideType = RoleManager:GetPlayerHeadFrameHideTypeValue(v.m_HeadFrameID, v.m_HideType) or 0
+      local tempHideChannel = RoleManager:IsHeadFrameHideByChannel(v.m_HeadFrameID)
+      if tempHideType ~= 1 and not tempHideChannel and v.m_HeadFrameEft and v.m_HeadFrameEft ~= "" then
+        vResourceExtra[#vResourceExtra + 1] = {
+          sName = v.m_HeadFrameEft,
+          eType = DownloadManager.ResourceType.UI
+        }
+      end
+    end
+  end
+  return vPackage, vResourceExtra
+end
+
+local fullscreen = true
 ActiveLuaUI("Form_PersonalChange", Form_PersonalChange)
 return Form_PersonalChange

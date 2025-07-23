@@ -366,19 +366,27 @@ function FriendManager:RqsConfirmFriendRequest(stRoleId, callback)
     end
     self:FreshFriendHaveRqsAddRedDot()
   end, function(fail_msg)
+    local iStrId = 10314
     if fail_msg.rspcode == MTTD.Error_Friend_NoFriendRequest then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10312))
-      for i, v in ipairs(self.mFriendData.vFriendRequest) do
-        if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
-          table.remove(self.mFriendData.vFriendRequest, i)
-          break
-        end
-      end
-      if callback then
-        callback()
-      end
-      self:FreshFriendHaveRqsAddRedDot()
+      iStrId = 10315
+    elseif fail_msg.rspcode == MTTD.Error_Friend_OtherFriendFull then
+      iStrId = 10309
+    elseif fail_msg.rspcode == MTTD.Error_Social_InShield then
+      iStrId = 10312
+    elseif fail_msg.rspcode == MTTD.Error_Social_OtherInShield then
+      iStrId = 10316
     end
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(iStrId))
+    for i, v in ipairs(self.mFriendData.vFriendRequest) do
+      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+        table.remove(self.mFriendData.vFriendRequest, i)
+        break
+      end
+    end
+    if callback then
+      callback()
+    end
+    self:FreshFriendHaveRqsAddRedDot()
   end)
 end
 

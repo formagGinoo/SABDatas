@@ -1,5 +1,5 @@
-local BaseManager = require("Manager/Base/BaseManager")
-local AttractManager = class("AttractManager", BaseManager)
+local BaseLevelManager = require("Manager/Base/BaseLevelManager")
+local AttractManager = class("AttractManager", BaseLevelManager)
 AttractManager.ArchiveType = {
   File = 1,
   Story = 2,
@@ -30,7 +30,9 @@ function AttractManager:CheckHeroRedDotOut(heroID)
 end
 
 function AttractManager:OnInitNetwork()
+  AttractManager.FightType_Attract = MTTDProto.FightType_Letter
   RPCS():Listen_Push_HeroAttract(handler(self, self.OnPushHeroAttract), "AttractManager")
+  RPCS():Listen_Push_Letter_Quest(handler(self, self.OnPushLetterQuest), "AttractManager")
 end
 
 function AttractManager:OnAfterFreshData()
@@ -230,6 +232,21 @@ function AttractManager:OnPushHeroAttract(sc)
   self.m_stAttract.mHeroAttract[stHeroAttract.iHeroId] = stHeroAttract
 end
 
+function AttractManager:OnPushLetterQuest(sc)
+  local vQuest = sc.vQuest
+  for _, v in ipairs(vQuest) do
+    if v.vUniqData and v.vUniqData[1] and v.vUniqData[2] then
+      local heroData = self.m_stAttract.mHeroAttract[v.vUniqData[1]]
+      if heroData and heroData.mLetter then
+        local letterData = heroData.mLetter[v.vUniqData[2]]
+        if letterData then
+          letterData.stQuest = v
+        end
+      end
+    end
+  end
+end
+
 function AttractManager:ReqSetLetter(iHeroId, iLetterId, iCurStep, vNewReply, callback)
   local letterData = self.m_stAttract.mHeroAttract[iHeroId].mLetter[iLetterId]
   if not letterData then
@@ -253,6 +270,7 @@ function AttractManager:ReqSetLetter(iHeroId, iLetterId, iCurStep, vNewReply, ca
     letterData.iCurStep = sc.stLetter.iCurStep
     letterData.vReply = sc.stLetter.vReply
     letterData.vRewardStep = sc.stLetter.vRewardStep
+    letterData.stQuest = sc.stLetter.stQuest
     if callback then
       callback()
     end
@@ -287,6 +305,25 @@ function AttractManager:ReqTakeArchiveReward(iHeroId, iArchiveId, callback)
   end
   
   RPCS():Attract_TakeStoryReward(msg, OnAttractTakeStoryRewardSC)
+end
+
+function AttractManager:ReqLetterSubmitItem(iHeroId, iLetterId, iQuestId, callback)
+  local msg = MTTDProto.Cmd_Attract_LetterSubmitItem_CS()
+  msg.iHeroId = iHeroId
+  msg.iLetterId = iLetterId
+  msg.iQuestId = iQuestId
+  RPCS():Attract_LetterSubmitItem(msg, function(sc, msg)
+    local heroData = self.m_stAttract.mHeroAttract[sc.iHeroId]
+    if heroData and heroData.mLetter then
+      local letterData = heroData.mLetter[sc.iLetterId]
+      if letterData then
+        letterData.stQuest.iState = TaskManager.TaskState.Completed
+      end
+    end
+    if callback then
+      callback()
+    end
+  end)
 end
 
 function AttractManager:GetAttractHeroList()
@@ -422,13 +459,51 @@ function AttractManager:GetAttractLetterCfgByIDAndStep(iLetterID, iStep)
   return cfg
 end
 
-function AttractManager:GetAttractStudyRoleSize(iHeroId)
-  local cfg = ConfigManager:GetConfigInsByName("AttractStudyRoleSize"):GetValue_ByID(iHeroId)
+function AttractManager:GetAttractTaskCfgByID(iTaskID)
+  local cfg = ConfigManager:GetConfigInsByName("AttractTask"):GetValue_ByUID(iTaskID)
+  if cfg:GetError() then
+    log.error("AttractManager:GetAttractTaskCfgByID error, iTaskID = " .. iTaskID)
+    return
+  end
+  return cfg
+end
+
+function AttractManager:GetAttractStudyRoleSize(iHeroId, iFasionId)
+  iFasionId = iFasionId or 0
+  local cfg = ConfigManager:GetConfigInsByName("AttractStudyRoleSize"):GetValue_ByIDAndFashionID(iHeroId, iFasionId)
   if cfg:GetError() then
     log.error("AttractManager:GetAttractStudyRoleSize error, iHeroId = " .. iHeroId)
     return
   end
   return cfg
+end
+
+function AttractManager:GetTheNewestPage(iHeroId)
+  local mAttractBookCfg = self:GetAttractArchiveSerializationCfgByHeroID(iHeroId)
+  if not mAttractBookCfg then
+    return 0
+  end
+  for i = 1, table.getn(mAttractBookCfg), 2 do
+    local t = mAttractBookCfg[i]
+    if t then
+      for _, v in ipairs(t) do
+        local bIsRewardRecived = self:IsArchiveRewardRecived(iHeroId, v.m_ArchiveId)
+        if not bIsRewardRecived then
+          return i - 1, v.m_ArchiveId
+        end
+      end
+    end
+    local t2 = mAttractBookCfg[i + 1]
+    if t2 then
+      for _, v in ipairs(t2) do
+        local bIsRewardRecived = self:IsArchiveRewardRecived(iHeroId, v.m_ArchiveId)
+        if not bIsRewardRecived then
+          return i - 1, v.m_ArchiveId
+        end
+      end
+    end
+  end
+  return 0
 end
 
 function AttractManager:GetHeroAttractById(iHeroId)
@@ -554,7 +629,7 @@ function AttractManager:LoadFavorabilityScene(callback, params)
       end
     end
   end, true, function()
-    StackTop:RemoveUIFromStack(UIDefines.ID_FORM_GAMESCENELOADING)
+    StackTop:DestroyUI(UIDefines.ID_FORM_GAMESCENELOADING)
   end)
 end
 
@@ -572,7 +647,7 @@ function AttractManager:SetFavorabilitySeatPosAndCamera(mSeatPosTransform, mCame
 end
 
 function AttractManager:ResetCamera()
-  if not self.m_camera then
+  if utils.isNull(self.m_camera) then
     return
   end
   self.m_camera.enabled = true
@@ -585,14 +660,14 @@ function AttractManager:SetFavorabilityModel(chairModel, OtherModel)
 end
 
 function AttractManager:SetChairModelActive(bIsActive)
-  if not self.chairModel then
+  if utils.isNull(self.chairModel) then
     return
   end
   self.chairModel:SetActive(bIsActive)
 end
 
 function AttractManager:SetOtherModelActive(bIsActive)
-  if not self.OtherModel then
+  if utils.isNull(self.OtherModel) then
     return
   end
   self.OtherModel:SetActive(bIsActive)
@@ -603,14 +678,20 @@ function AttractManager:GetAttractRoomManager()
 end
 
 function AttractManager:SetRaycastOn(bIsOn)
-  if not self.attractRoomManager then
+  if utils.isNull(self.attractRoomManager) then
     return
   end
   self.attractRoomManager:SetRaycastOn(bIsOn)
 end
 
 function AttractManager:SetCurLightSettings(prefabName)
-  if not self.attractRoomManager then
+  if utils.isNull(self.attractRoomManager) then
+    return
+  end
+  if utils.isNull(self.attractRoomManager.goDetailRoot) then
+    return
+  end
+  if not self.attractRoomManager.goDetailRoot.activeSelf then
     return
   end
   self.attractRoomManager:SetCurLightSettings(prefabName)
@@ -621,7 +702,7 @@ function AttractManager:SetFavorabilityCameraInit(bIsInit)
   self.cameraFocus:SetActive(not bIsInit)
 end
 
-function AttractManager:GetAttractRoleName(iHeroID)
+function AttractManager:GetAttractFasionID(iHeroID)
   local heroData = HeroManager:GetHeroDataByID(iHeroID)
   if not heroData then
     return
@@ -631,13 +712,14 @@ function AttractManager:GetAttractRoleName(iHeroID)
     return
   end
   local iAttractRank = heroData.serverData.iAttractRank
-  local roleName
+  local iFasionId
   for k, v in pairs(cfgs) do
-    if iAttractRank >= v.m_UnlockAttractRank and v.m_Prefab and v.m_Prefab ~= "" then
-      roleName = v.m_Prefab
+    if v.m_UnlockAttractRank == iAttractRank and v.m_Prefab and v.m_Prefab ~= "" then
+      iFasionId = tonumber(v.m_Prefab)
+      break
     end
   end
-  return roleName
+  return iFasionId
 end
 
 function AttractManager:LoadFavorabilityHero(hero_id, params, callback, cancelCallback)
@@ -645,40 +727,55 @@ function AttractManager:LoadFavorabilityHero(hero_id, params, callback, cancelCa
   
   local function OnLoadFavorabilityHeroEnd()
     for i, v in pairs(self.mHeroObjList) do
-      UILuaHelper.SetActive(v, false)
+      if not utils.isNull(v) then
+        UILuaHelper.SetActive(v, false)
+      end
     end
     if callback then
       callback(params)
     end
   end
   
-  local characterIns = ConfigManager:GetConfigInsByName("CharacterInfo")
-  local cfg = characterIns:GetValue_ByHeroID(hero_id)
-  if cfg:GetError() then
-    log.error("can not find hero id in CharacterInfo config  id==" .. tostring(hero_id))
+  local iFasionId = self:GetAttractFasionID(hero_id) or HeroManager:GetCurUseFashionID(hero_id) or 0
+  local m_PerformanceID
+  local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(hero_id, iFasionId)
+  if not fashionCfg then
+    log.error("can not find fashion cfg in HeroFashion config  id==" .. tostring(iFasionId))
     OnLoadFavorabilityHeroEnd()
     return
   end
-  local m_PerformanceID = cfg.m_PerformanceID[0]
+  m_PerformanceID = fashionCfg.m_PerformanceID[0]
   local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
   local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
   local role_name = presentationData.m_Prefab
-  local studyRoleSizeCfg = self:GetAttractStudyRoleSize(hero_id)
+  if not role_name then
+    log.error("can not find cfg in Presentation config  id==" .. tostring(m_PerformanceID))
+    OnLoadFavorabilityHeroEnd()
+    return
+  end
+  local studyRoleSizeCfg = self:GetAttractStudyRoleSize(hero_id, iFasionId)
   if self:IsLoaded(role_name) then
     self.mHeroObjList[role_name].transform:SetParent(self.mSeatPosTransform, true)
-    local posOffset = utils.changeCSArrayToLuaTable(studyRoleSizeCfg.m_RoleOffset)
-    if posOffset and 0 < #posOffset then
-      self.mHeroObjList[role_name].transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+    if studyRoleSizeCfg then
+      local posOffset = utils.changeCSArrayToLuaTable(studyRoleSizeCfg.m_RoleOffset)
+      if posOffset and 0 < #posOffset then
+        self.mHeroObjList[role_name].transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+      else
+        self.mHeroObjList[role_name].transform.localPosition = Vector3.zero
+      end
+      self.mHeroObjList[role_name].transform.localEulerAngles = Vector3.up * studyRoleSizeCfg.m_RoleRotaion
+      self.mHeroObjList[role_name].transform.localScale = Vector3.one * studyRoleSizeCfg.m_RoleScake
+      self:SetChairModelActive(studyRoleSizeCfg.m_IsShowChar == 1)
     else
       self.mHeroObjList[role_name].transform.localPosition = Vector3.zero
+      self.mHeroObjList[role_name].transform.localScale = Vector3.one
+      self:SetChairModelActive(true)
     end
-    self.mHeroObjList[role_name].transform.localEulerAngles = Vector3.up * studyRoleSizeCfg.m_RoleRotaion
-    self.mHeroObjList[role_name].transform.localScale = Vector3.one * studyRoleSizeCfg.m_RoleScake
     UILuaHelper.PlayAnimatorByNameInChildren(self.mHeroObjList[role_name], "study_idle")
     self.curShowHeroObj = self.mHeroObjList[role_name]
     OnLoadFavorabilityHeroEnd()
     self.mHeroObjList[role_name]:SetActive(true)
-    self:SetChairModelActive(studyRoleSizeCfg.m_IsShowChar == 1)
+    self:SetCurLightSettings(role_name .. "_SR_Light")
   else
     local aniName = AnimatorPrefixStr .. role_name .. AnimatorsuffixStr
     local vPackage = {}
@@ -686,31 +783,34 @@ function AttractManager:LoadFavorabilityHero(hero_id, params, callback, cancelCa
       sName = tostring(hero_id),
       eType = DownloadManager.ResourcePackageType.Level_Character
     }
-    local vResourceExtra = {
-      {
-        sName = aniName,
-        eType = DownloadManager.ResourceType.Animation
-      }
-    }
     DownloadManager:DownloadResourceWithUI(vPackage, nil, "AttractManager:LoadFavorabilityHero" .. tostring(hero_id), nil, nil, function()
       Role3DManager:LoadRoleAsync(role_name, aniName, function(name, result)
         self.mLoadedHeroList[#self.mLoadedHeroList + 1] = {role_name = role_name, aniName = aniName}
         self.mHeroObjList[role_name] = result
         result.transform:SetParent(self.mSeatPosTransform, true)
-        result.transform.localEulerAngles = Vector3.up * studyRoleSizeCfg.m_RoleRotaion
-        result.transform.localScale = Vector3.one * studyRoleSizeCfg.m_RoleScake
-        local posOffset = utils.changeCSArrayToLuaTable(studyRoleSizeCfg.m_RoleOffset)
-        if posOffset and 0 < #posOffset then
-          result.transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+        if studyRoleSizeCfg then
+          result.transform.localEulerAngles = Vector3.up * studyRoleSizeCfg.m_RoleRotaion
+          result.transform.localScale = Vector3.one * studyRoleSizeCfg.m_RoleScake
+          local posOffset = utils.changeCSArrayToLuaTable(studyRoleSizeCfg.m_RoleOffset)
+          if posOffset and 0 < #posOffset then
+            result.transform.localPosition = Vector3(posOffset[1], posOffset[2], posOffset[3])
+          else
+            result.transform.localPosition = Vector3.zero
+          end
+          self:SetChairModelActive(studyRoleSizeCfg.m_IsShowChar == 1)
         else
+          result.transform.localScale = Vector3.one
           result.transform.localPosition = Vector3.zero
+          self:SetChairModelActive(true)
         end
         self.curShowHeroObj = result
         UILuaHelper.PlayAnimatorByNameInChildren(result, "study_idle")
         self:CheckResCacheOut()
         OnLoadFavorabilityHeroEnd()
         result:SetActive(true)
-        self:SetChairModelActive(studyRoleSizeCfg.m_IsShowChar == 1)
+        self:SetCurLightSettings(role_name .. "_SR_Light")
+      end, function()
+        OnLoadFavorabilityHeroEnd()
       end)
     end, nil, nil, nil, nil, cancelCallback)
   end
@@ -751,7 +851,9 @@ function AttractManager:UnloadAssets()
   end
   if self.mHeroObjList and table.getn(self.mHeroObjList) > 0 then
     for i, v in pairs(self.mHeroObjList) do
-      GameObject.Destroy(v)
+      if not utils.isNull(v) then
+        GameObject.Destroy(v)
+      end
     end
   end
   self.mHeroObjList = {}
@@ -775,6 +877,125 @@ function AttractManager:CheckHeroRedDot(iHeroId, bForce, isOut, ignoreNotify)
     return 1
   end
   return 0
+end
+
+function AttractManager:StartEnterBattle(levelType, iMapId, iTaskId, bIsInAttract, iCurHeroId, iLetterId)
+  if not levelType then
+    return
+  end
+  if levelType ~= AttractManager.FightType_Attract then
+    return
+  end
+  self.m_curBattleType = levelType
+  self.iCurTaskId = iTaskId
+  self.bIsInAttract = bIsInAttract
+  self.iCurHeroId = iCurHeroId
+  self.iCurLetterId = iLetterId
+  self:BeforeEnterBattle(levelType, iLetterId, iCurHeroId, iTaskId)
+  self:EnterPVEBattle(iMapId)
+end
+
+function AttractManager:BeforeEnterBattle(levelType, iLetterId, iCurHeroId, iTaskId)
+  AttractManager.super.BeforeEnterBattle(self)
+  local inputLevelData = {
+    levelType = levelType or 0,
+    levelID = iLetterId or 0,
+    heroList = HeroManager:GetHeroServerList(),
+    iCurHeroId = iCurHeroId,
+    iTaskId = iTaskId
+  }
+  CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)
+end
+
+function AttractManager:GetLevelMapID(levelType, id)
+  if levelType ~= AttractManager.FightType_Attract then
+    return
+  end
+  return id
+end
+
+function AttractManager:OnBattleEnd(isSuc, stageFinishChallengeSc, finishErrorCode, randomShowHeroID)
+  log.info("AttractManager OnBattleEnd isSuc: ", tostring(isSuc))
+  if finishErrorCode ~= nil and finishErrorCode ~= 0 then
+    local msg = {rspcode = finishErrorCode}
+    NetworkManager:OnRpcCallbackFail(msg, function()
+      BattleFlowManager:ExitBattle()
+    end)
+  else
+    local result = isSuc
+    local levelType = self.m_curBattleType
+    if result then
+      local rewardData, extraReward
+      if stageFinishChallengeSc and stageFinishChallengeSc.stFinishChallengeInfoSC then
+        local stFinishChallengeInfoSC = stageFinishChallengeSc.stFinishChallengeInfoSC
+        rewardData = stFinishChallengeInfoSC.vReward
+        extraReward = stFinishChallengeInfoSC.vExtraReward
+      end
+      StackFlow:Push(UIDefines.ID_FORM_BATTLEVICTORY, {
+        levelType = levelType,
+        levelID = levelID,
+        rewardData = rewardData,
+        extraReward = extraReward,
+        showHeroID = randomShowHeroID
+      })
+    else
+      StackFlow:Push(UIDefines.ID_FORM_BATTLEDEFEAT, {
+        levelType = levelType,
+        levelID = self.m_curBattleLevelID,
+        finishErrorCode = finishErrorCode
+      })
+    end
+  end
+end
+
+function AttractManager:EnterNextBattle(levelType, ...)
+end
+
+function AttractManager:OnBackLobby(fCB)
+  local formStr = "Form_AttractLetter"
+  if self.bIsInAttract then
+    local sceneID = GameSceneManager.SceneID.Favorability
+    GameSceneManager:ChangeGameScene(sceneID, function(isSuc)
+      if isSuc then
+        self:LoadFavorabilityHero(self.iCurHeroId, {
+          hero_id = self.iCurHeroId
+        }, function(params)
+          StackFlow:Push(UIDefines.ID_FORM_ATTRACTMAIN2, params)
+          StackFlow:Push(UIDefines.ID_FORM_ATTRACTBOOK2, {
+            hero_id = self.iCurHeroId,
+            bIsFromBattle = true,
+            callback = fCB
+          })
+        end)
+      end
+    end, true)
+  else
+    GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function(isSuc)
+      if isSuc then
+        StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {
+          bIsInAttract = false,
+          isReading = true,
+          hero_id = self.iCurHeroId
+        })
+        if fCB then
+          fCB(formStr)
+        end
+        self:ClearCurBattleInfo()
+      end
+    end, true)
+  end
+end
+
+function AttractManager:ClearCurBattleInfo()
+  self.m_curBattleType = nil
+  self.iCurHeroId = nil
+  self.bIsInAttract = nil
+  self.iCurTaskId = nil
+end
+
+function AttractManager:FromBattleToHall()
+  self:ClearCurBattleInfo()
+  self:ExitBattle()
 end
 
 return AttractManager

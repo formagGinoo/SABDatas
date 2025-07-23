@@ -35,6 +35,7 @@ function Form_HeroUpgrade:AfterInit()
   self.m_closeUpgradeBackFun = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_HeroUpgrade:OnActive()
@@ -87,7 +88,7 @@ function Form_HeroUpgrade:OnSetHeroData(param)
   if heroServerData.iHeroId == self.m_curShowHeroData.serverData.iHeroId then
     self:FreshShowHeroPower()
     if self.m_playVoice then
-      local voice = HeroManager:GetHeroLevelUpVoice(heroServerData.iHeroId)
+      local voice = HeroManager:GetHeroVoice():GetHeroLevelUpVoice(heroServerData.iHeroId, heroServerData.iFashion)
       if voice and voice ~= "" then
         CS.UI.UILuaHelper.StartPlaySFX(voice)
       end
@@ -145,7 +146,12 @@ function Form_HeroUpgrade:FreshShowHeroInfo(isEnterFresh)
   end
   self.m_playVoice = true
   self.m_txt_power_value_Text.text = BigNumFormat(self.m_curShowHeroData.serverData.iPower)
-  self:ShowHeroSpine(heroCfg.m_Spine, isEnterFresh)
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local heroFashionSpine = self.m_HeroFashion:GetHeroSpineByHeroFashionID(heroCfg.m_HeroID, fashionID)
+  if not heroFashionSpine then
+    return
+  end
+  self:ShowHeroSpine(heroFashionSpine, isEnterFresh)
 end
 
 function Form_HeroUpgrade:CheckRecycleSpine(isResetParam)

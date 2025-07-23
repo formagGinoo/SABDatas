@@ -36,6 +36,14 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_hero_panel_legacy",
     LuaPath = "UI/SubPanel/HeroLegacySubPanel"
   },
+  HeroFashionSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/HeroFashion/HeroFashionSubPanel"
+  },
+  HeroFashionVoiceSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/HeroFashion/HeroFashionVoiceSubPanel"
+  },
   LevelDetailSubPanel = {
     PrefabPath = "ui_level_panel_detail",
     LuaPath = "UI/SubPanel/LevelDetailSubPanel"
@@ -47,6 +55,18 @@ SubPanelManager.SubPanelCfg = {
   LevelDetailDalcaroSubPanel = {
     PrefabPath = "ui_activity102dalcaro_dialoguedetial",
     LuaPath = "UI/SubPanel/LevelDetailDalcaroSubPanel"
+  },
+  LevelDetailLuoleilaiSubPanel = {
+    PrefabPath = "ui_activity103Luoleilai_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetailLuoleilaiSubPanel"
+  },
+  LevelDetailLuoleilaiSubPanel2 = {
+    PrefabPath = "ui_activity103Luoleilai_exdialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetailLuoleilaiSubPanel"
+  },
+  LevelDetail104SubPanel = {
+    PrefabPath = "ui_activity104_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetailLuoleilaiSubPanel"
   },
   LegacyLevelDetailSubPanel = {
     PrefabPath = "ui_legacy_panel_detail",
@@ -92,6 +112,14 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_gacha_panel_1002",
     LuaPath = "UI/SubPanel/GachaSubPanel"
   },
+  GachaSubPanel1003 = {
+    PrefabPath = "ui_gacha_panel_1003",
+    LuaPath = "UI/SubPanel/GachaSubPanels/LoreleyGachaSubPanel"
+  },
+  GachaSubPanel1004 = {
+    PrefabPath = "ui_gacha_panel_1004",
+    LuaPath = "UI/SubPanel/GachaSubPanels/BellaSummerGachaSubPanel"
+  },
   GachaDalCaroPushFaceSubPanel = {
     PrefabPath = "ui_activity_dalcaroface",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
@@ -112,6 +140,22 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_huntingnightface",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
   },
+  ActivityBellaFaceSubPanel = {
+    PrefabPath = "ui_activity_bellaface",
+    LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
+  ActivityLoreleiFaceSubPanel = {
+    PrefabPath = "ui_activity_loreleiface",
+    LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
+  ActivityPersonalRaid2FaceSubPanel = {
+    PrefabPath = "ui_activity_personalraidface2",
+    LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
+  ActivityQigeLunaSubPanel = {
+    PrefabPath = "ui_activity_qigelunaface",
+    LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
   GuildActiveSubPanel = {
     PrefabPath = "ui_guild_panel_event",
     LuaPath = "UI/SubPanel/GuildActiveSubPanel"
@@ -123,22 +167,6 @@ SubPanelManager.SubPanelCfg = {
   GuildNewsSubPanel = {
     PrefabPath = "ui_guild_panel_news",
     LuaPath = "UI/SubPanel/GuildNewsSubPanel"
-  },
-  AttractDialogueSubPanel = {
-    PrefabPath = "ui_attract_panel_dialogue",
-    LuaPath = "UI/SubPanel/AttractDialogueSubPanel"
-  },
-  AttractPrologueSubPanel = {
-    PrefabPath = "ui_attract_panel_prologue",
-    LuaPath = "UI/SubPanel/AttractPrologueSubPanel"
-  },
-  AttractTimelineSubPanel = {
-    PrefabPath = "ui_attract_panel_timeline",
-    LuaPath = "UI/SubPanel/AttractTimeLineSubPanel"
-  },
-  AttractBiographySubPanel = {
-    PrefabPath = "ui_attract_panel_biography",
-    LuaPath = "UI/SubPanel/AttractBiographySubPanel"
   },
   MallMonthlyCardMainSubPanel = {
     PrefabPath = "ui_mall_MonthlyCardMain",
@@ -180,6 +208,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_panel_limitUppack",
     LuaPath = "UI/SubPanel/LimitUpPackSubPanel"
   },
+  CommonUpPackSubPanel = {
+    PrefabPath = "ui_activity_panel_actuppack",
+    LuaPath = "UI/SubPanel/CommonUpPackSubPanel"
+  },
   ChainGiftPackSubPanel = {
     PrefabPath = "ui_mall_ChainPack",
     LuaPath = "UI/SubPanel/ChainGiftPackSubPanel"
@@ -188,6 +220,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_mall_sign5day",
     LuaPath = "UI/SubPanel/SignGiftFiveSunPanel"
   },
+  FashionStoreSubPanel = {
+    PrefabPath = "ui_activity_panel_skinshop",
+    LuaPath = "UI/SubPanel/FashionStoreSubPanel"
+  },
   ActivitySevenDaysSubPanel_ByMain = {
     PrefabPath = "ui_activity_panel_sevendays",
     LuaPath = "UI/SubPanel/ActivitySevenDaysSubPanel_ByMain"
@@ -195,6 +231,10 @@ SubPanelManager.SubPanelCfg = {
   ActivityFourteenSignSubPanel = {
     PrefabPath = "ui_activity_panel_fourteendays",
     LuaPath = "UI/SubPanel/ActivityFourteenSignSubPanel"
+  },
+  ActivitySignTenDaySubPanel = {
+    PrefabPath = "ui_activity_panel_sign10day",
+    LuaPath = "UI/SubPanel/ActivitySignTenDaySubPanel"
   },
   ActivityLoginSendItemSubPanel = {
     PrefabPath = "ui_activity_panel_loginSendItem",
@@ -223,6 +263,10 @@ SubPanelManager.SubPanelCfg = {
   HallBgSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/HallBgSubPanel"
+  },
+  HallBattlePassSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/HallBattlePassSubPanel"
   },
   OnePicActivitySubPanel = {
     PrefabPath = "ui_activity_single_pic",

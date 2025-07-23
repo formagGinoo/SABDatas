@@ -132,16 +132,16 @@ function TimeUtil:TimeTableToOnlyTopDigitStr(timeTb)
   local suffixStr = ""
   if timeTb.day > 0 then
     timeStr = timeTb.day
-    suffixStr = ConfigManager:GetCommonTextById(32003)
+    suffixStr = self:GetCommonCountDownDayStr()
   elseif 0 < timeTb.hour then
     timeStr = timeTb.hour
-    suffixStr = ConfigManager:GetCommonTextById(32004)
+    suffixStr = self:GetCommonCountDownHourStr()
   elseif 0 < timeTb.min then
     timeStr = timeTb.min
-    suffixStr = ConfigManager:GetCommonTextById(32005)
+    suffixStr = self:GetCommonCountDownMinuteStr()
   elseif 0 < timeTb.sec then
     timeStr = timeTb.sec
-    suffixStr = ConfigManager:GetCommonTextById(32006)
+    suffixStr = self:GetCommonCountDownSecondStr()
   end
   return string.CS_Format(suffixStr, timeStr)
 end
@@ -151,16 +151,16 @@ function TimeUtil:TimeTableToOnlyTopDigitStrOnlyToMin(timeTb)
   local suffixStr = ""
   if timeTb.day > 0 then
     timeStr = timeTb.day
-    suffixStr = ConfigManager:GetCommonTextById(32003)
+    suffixStr = self:GetCommonCountDownDayStr()
   elseif 0 < timeTb.hour then
     timeStr = timeTb.hour
-    suffixStr = ConfigManager:GetCommonTextById(32004)
+    suffixStr = self:GetCommonCountDownHourStr()
   elseif 0 < timeTb.min then
     timeStr = timeTb.min
-    suffixStr = ConfigManager:GetCommonTextById(32005)
+    suffixStr = self:GetCommonCountDownMinuteStr()
   elseif 0 < timeTb.sec then
     timeStr = timeTb.sec
-    suffixStr = ConfigManager:GetCommonTextById(32006)
+    suffixStr = self:GetCommonCountDownSecondStr()
   end
   return string.CS_Format(suffixStr, timeStr)
 end
@@ -168,19 +168,19 @@ end
 function TimeUtil:TimeTableToFormatStr(timeTb)
   local str = ""
   if timeTb.day > 0 then
-    local dayFormatStr = ConfigManager:GetCommonTextById(32003)
+    local dayFormatStr = self:GetCommonCountDownDayStr()
     str = str .. string.CS_Format(dayFormatStr, timeTb.day)
   end
   if 0 < timeTb.hour then
-    local hourFormatStr = ConfigManager:GetCommonTextById(32004)
+    local hourFormatStr = self:GetCommonCountDownHourStr()
     str = str .. string.CS_Format(hourFormatStr, timeTb.hour)
   end
   if 0 < timeTb.min then
-    local minFormatStr = ConfigManager:GetCommonTextById(32005)
+    local minFormatStr = self:GetCommonCountDownMinuteStr()
     str = str .. string.CS_Format(minFormatStr, timeTb.min)
   end
   if 0 < timeTb.sec then
-    local secFormatStr = ConfigManager:GetCommonTextById(32006)
+    local secFormatStr = self:GetCommonCountDownSecondStr()
     str = str .. string.CS_Format(secFormatStr, timeTb.sec)
   end
   return str
@@ -189,15 +189,15 @@ end
 function TimeUtil:TimeTableToFormatStrOnlyToMin(timeTb)
   local str = ""
   if timeTb.day > 0 then
-    local dayFormatStr = ConfigManager:GetCommonTextById(32003)
+    local dayFormatStr = self:GetCommonCountDownDayStr()
     str = str .. string.CS_Format(dayFormatStr, timeTb.day)
   end
   if 0 < timeTb.hour then
-    local hourFormatStr = ConfigManager:GetCommonTextById(32004)
+    local hourFormatStr = self:GetCommonCountDownHourStr()
     str = str .. string.CS_Format(hourFormatStr, timeTb.hour)
   end
   if 0 < timeTb.min then
-    local minFormatStr = ConfigManager:GetCommonTextById(32005)
+    local minFormatStr = self:GetCommonCountDownMinuteStr()
     str = str .. string.CS_Format(minFormatStr, timeTb.min)
   end
   return str
@@ -255,8 +255,8 @@ function TimeUtil:TimeTableToFormatStrDHOrHMS(timeTb)
   end
   local sSec = string.format("%02d", math.floor(timeTb.sec))
   if timeTb.day > 0 then
-    local dayFormatStr = ConfigManager:GetCommonTextById(32003)
-    local hourFormatStr = ConfigManager:GetCommonTextById(32004)
+    local dayFormatStr = self:GetCommonCountDownDayStr()
+    local hourFormatStr = self:GetCommonCountDownHourStr()
     return string.CS_Format(dayFormatStr, timeTb.day) .. " " .. string.CS_Format(hourFormatStr, sHour)
   else
     return sHour .. ":" .. sMin .. ":" .. sSec
@@ -282,10 +282,10 @@ function TimeUtil:TimeTableToFormatCNStr(timeTb)
     sMin = timeTb.min
   end
   local sSec = string.format("%02d", math.floor(timeTb.sec))
-  local day_str = ConfigManager:GetCommonTextById(32003)
-  local hour_str = ConfigManager:GetCommonTextById(32004)
-  local min_str = ConfigManager:GetCommonTextById(32005)
-  local sec_str = ConfigManager:GetCommonTextById(32006)
+  local day_str = self:GetCommonCountDownDayStr()
+  local hour_str = self:GetCommonCountDownHourStr()
+  local min_str = self:GetCommonCountDownMinuteStr()
+  local sec_str = self:GetCommonCountDownSecondStr()
   if timeTb.day > 0 then
     return string.gsubNumberReplace(day_str, timeTb.day) .. " " .. string.gsubNumberReplace(hour_str, sHour)
   else
@@ -300,10 +300,10 @@ function TimeUtil:TimeTableToFormatCNStrMax(seconds)
   seconds = seconds % 3600
   local minutes = math.floor(seconds / 60)
   local secs = seconds % 60
-  local day_str = ConfigManager:GetCommonTextById(32003)
-  local hour_str = ConfigManager:GetCommonTextById(32004)
-  local min_str = ConfigManager:GetCommonTextById(32005)
-  local sec_str = ConfigManager:GetCommonTextById(32006)
+  local day_str = self:GetCommonCountDownDayStr()
+  local hour_str = self:GetCommonCountDownHourStr()
+  local min_str = self:GetCommonCountDownMinuteStr()
+  local sec_str = self:GetCommonCountDownSecondStr()
   if 0 <= seconds then
     return string.gsubNumberReplace(day_str, days) .. " " .. string.gsubNumberReplace(hour_str, hours) .. " " .. string.gsubNumberReplace(min_str, minutes) .. " " .. string.gsubNumberReplace(sec_str, secs)
   else
@@ -501,7 +501,7 @@ function TimeUtil:GetPassedServerDay(iBeginTime)
   if time < 0 then
     return 1
   end
-  local days = math.floor(time / 86400) + 1
+  local days = math.floor(time / 86400) + 2
   return days
 end
 
@@ -694,16 +694,16 @@ function TimeUtil:SecondToTimeText(second)
   end
   local timeTb = self:SecondsToFourUnit(second)
   if 0 < timeTb.day then
-    local day_str = ConfigManager:GetCommonTextById(32003)
+    local day_str = self:GetCommonCountDownDayStr()
     return string.gsubNumberReplace(day_str, timeTb.day)
   elseif timeTb.day == 0 and 0 < timeTb.hour then
-    local hour_str = ConfigManager:GetCommonTextById(32004)
+    local hour_str = self:GetCommonCountDownHourStr()
     return string.gsubNumberReplace(hour_str, timeTb.hour)
   elseif timeTb.day == 0 and timeTb.hour == 0 and 0 < timeTb.min then
-    local day_str = ConfigManager:GetCommonTextById(32005)
+    local day_str = self:GetCommonCountDownMinuteStr()
     return string.gsubNumberReplace(day_str, timeTb.min)
   elseif timeTb.day == 0 and timeTb.hour == 0 and timeTb.min == 0 then
-    local day_str = ConfigManager:GetCommonTextById(32006)
+    local day_str = self:GetCommonCountDownSecondStr()
     return string.gsubNumberReplace(day_str, timeTb.sec)
   end
 end
@@ -723,14 +723,46 @@ function TimeUtil:TimeTableToFormatCNStr2(times)
     sMin = timeTb.min
   end
   local sSec = string.format("%02d", math.floor(timeTb.sec))
-  local hour_str = ConfigManager:GetCommonTextById(32004)
-  local min_str = ConfigManager:GetCommonTextById(32005)
-  local sec_str = ConfigManager:GetCommonTextById(32006)
+  local hour_str = self:GetCommonCountDownHourStr()
+  local min_str = self:GetCommonCountDownMinuteStr()
+  local sec_str = self:GetCommonCountDownSecondStr()
   if timeTb.day > 0 then
     local hour = timeTb.day * 24 + sHour
     return string.gsubNumberReplace(hour_str, hour)
   else
     return string.gsubNumberReplace(hour_str, sHour) .. " " .. string.gsubNumberReplace(min_str, sMin) .. " " .. string.gsubNumberReplace(sec_str, sSec)
+  end
+end
+
+function TimeUtil:SecondsToFormatCNStr3(s)
+  local timeTb = self:SecondsToFourUnit(s)
+  return self:TimeTableToFormatCNStr3(timeTb)
+end
+
+function TimeUtil:TimeTableToFormatCNStr3(timeTb)
+  local sHour
+  if timeTb.hour < 10 then
+    sHour = "0" .. timeTb.hour
+  else
+    sHour = timeTb.hour
+  end
+  local sMin
+  if 10 > timeTb.min then
+    sMin = "0" .. timeTb.min
+  else
+    sMin = timeTb.min
+  end
+  local sSec = string.format("%02d", math.floor(timeTb.sec))
+  local day_str = self:GetCommonCountDownDayStr()
+  local hour_str = self:GetCommonCountDownHourStr()
+  local min_str = self:GetCommonCountDownMinuteStr()
+  local sec_str = self:GetCommonCountDownSecondStr()
+  if timeTb.day > 0 then
+    return string.gsubNumberReplace(day_str, timeTb.day) .. string.gsubNumberReplace(hour_str, sHour)
+  elseif timeTb.day == 0 and timeTb.hour > 1 then
+    return string.gsubNumberReplace(hour_str, sHour) .. string.gsubNumberReplace(min_str, sMin)
+  else
+    return string.gsubNumberReplace(min_str, sMin) .. string.gsubNumberReplace(sec_str, sSec)
   end
 end
 
@@ -753,9 +785,11 @@ function TimeUtil:GetIsDuringStartAndEnd(startTime, endTime)
 end
 
 function TimeUtil:GetITimeNextResetDay(iTime)
+  local tempiTime = iTime + self:GetServerTimeGmtOff()
   local commonResetTime = self:GetCommonResetTimeSecond()
-  local sameDay4am = math.floor(iTime / __oneDayOfSecond) * __oneDayOfSecond + commonResetTime - self:GetServerTimeGmtOff()
-  return iTime >= sameDay4am and sameDay4am + __oneDayOfSecond or sameDay4am
+  local sameDay4am = math.floor(tempiTime / __oneDayOfSecond) * __oneDayOfSecond + commonResetTime - self:GetServerTimeGmtOff()
+  local iTime2 = iTime >= sameDay4am and sameDay4am + __oneDayOfSecond or sameDay4am
+  return iTime2
 end
 
 function TimeUtil:GetNowServerDate()
@@ -766,6 +800,34 @@ end
 
 function TimeUtil:GetOneDayOfSecond()
   return __oneDayOfSecond
+end
+
+function TimeUtil:GetCommonCountDownDayStr()
+  if self.m_sCommonCountDownDayStr == nil then
+    self.m_sCommonCountDownDayStr = CS.ConfFact.LangFormat4DataInit("CommonCountDownDay")
+  end
+  return self.m_sCommonCountDownDayStr
+end
+
+function TimeUtil:GetCommonCountDownHourStr()
+  if self.m_sCommonCountDownHourStr == nil then
+    self.m_sCommonCountDownHourStr = CS.ConfFact.LangFormat4DataInit("CommonCountDownHour")
+  end
+  return self.m_sCommonCountDownHourStr
+end
+
+function TimeUtil:GetCommonCountDownMinuteStr()
+  if self.m_sCommonCountDownMinuteStr == nil then
+    self.m_sCommonCountDownMinuteStr = CS.ConfFact.LangFormat4DataInit("CommonCountDownMinute")
+  end
+  return self.m_sCommonCountDownMinuteStr
+end
+
+function TimeUtil:GetCommonCountDownSecondStr()
+  if self.m_sCommonCountDownSecondStr == nil then
+    self.m_sCommonCountDownSecondStr = CS.ConfFact.LangFormat4DataInit("CommonCountDownSecond")
+  end
+  return self.m_sCommonCountDownSecondStr
 end
 
 return TimeUtil

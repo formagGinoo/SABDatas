@@ -31,7 +31,11 @@ function Form_Activity102Dalcaro_DialogueCollection:OnStoryItemClk(index)
   local mapID = levelCfg.m_MapID
   local activityID = self.m_activityID
   local activitySubID = self.m_activitySubID
-  BattleFlowManager:EnterShowPlot(levelCfg.m_LevelID, mapID, function(backFun)
+  local levelType = HeroActivityManager:GetLevelTypeByActivityID(activityID)
+  BattleFlowManager:EnterShowPlot(levelCfg.m_LevelID, mapID, levelType, {
+    self.m_activityID,
+    levelCfg.m_LevelID
+  }, function(backFun)
     GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function(isSuc)
       if isSuc then
         local subCfg = HeroActivityManager:GetSubInfoByID(activitySubID)

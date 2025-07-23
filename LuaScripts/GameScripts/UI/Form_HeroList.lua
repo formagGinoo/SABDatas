@@ -259,12 +259,12 @@ function Form_HeroList:CheckShowEnterAnim()
     UILuaHelper.SetCanvasGroupAlpha(tempObj, 0)
   end
   if self.m_isInit then
-    TimeService:SetTimer(0.6, 1, function()
+    TimeService:SetTimer(0.1, 1, function()
       self:ShowItemListAnim()
     end)
     self.m_isInit = false
   else
-    TimeService:SetTimer(0.5, 1, function()
+    TimeService:SetTimer(0.1, 1, function()
       self:ShowItemListAnim()
     end)
   end

@@ -132,12 +132,7 @@ function Form_BattlePassLevelUpPop:FreshItemRewardData()
     v.itemData = itemData
     self.m_itemDataList[#self.m_itemDataList + 1] = v
   end
-  table.sort(self.m_itemDataList, function(a, b)
-    if a.itemData.quality ~= b.itemData.quality then
-      return a.itemData.quality > b.itemData.quality
-    end
-    return a.iID < b.iID
-  end)
+  table.sort(self.m_itemDataList, self.SortComparator)
 end
 
 function Form_BattlePassLevelUpPop:CreateItemNode(itemObj)
@@ -168,7 +163,7 @@ function Form_BattlePassLevelUpPop:FreshRewardItems()
     UILuaHelper.SetActive(self.m_list_itemhigh, true)
     UILuaHelper.SetActive(self.m_pnl_empty, false)
     local itemNodes = self.m_itemNodeList
-    local parentTrans = self.m_list_itemhigh.transform
+    local parentTrans = self.m_content1.transform
     local childCount = #itemNodes
     local totalFreshNum = dataLen < childCount and childCount or dataLen
     for i = 1, totalFreshNum do
@@ -221,6 +216,18 @@ end
 
 function Form_BattlePassLevelUpPop:IsOpenGuassianBlur()
   return true
+end
+
+function Form_BattlePassLevelUpPop.SortComparator(a, b)
+  local aIsFashion = ResourceUtil:GetResourceTypeById(a.iID) == ResourceUtil.RESOURCE_TYPE.Fashion
+  local bIsFashion = ResourceUtil:GetResourceTypeById(b.iID) == ResourceUtil.RESOURCE_TYPE.Fashion
+  if aIsFashion ~= bIsFashion then
+    return aIsFashion
+  end
+  if a.itemData.quality ~= b.itemData.quality then
+    return a.itemData.quality > b.itemData.quality
+  end
+  return a.iID < b.iID
 end
 
 ActiveLuaUI("Form_BattlePassLevelUpPop", Form_BattlePassLevelUpPop)

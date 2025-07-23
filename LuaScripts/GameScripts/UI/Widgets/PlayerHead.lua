@@ -1,4 +1,4 @@
-local PlayerHead = class("HeroIcon")
+local PlayerHead = class("PlayerHead")
 
 function PlayerHead:ctor(goRoot)
   self.m_objRoot = goRoot

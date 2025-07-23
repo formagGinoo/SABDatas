@@ -18,8 +18,20 @@ function RogueItemIcon:ctor(goRoot)
   self.m_txt_name_Text = self.m_goRootTrans:Find("img_bg_name/c_txt_name"):GetComponent(T_TextMeshProUGUI)
   self.m_img_framevx = self.m_goRootTrans:Find("c_img_framevx")
   self.m_exclusive = self.m_goRootTrans:Find("c_img_exclusive")
-  self.m_frameallowed = self.m_goRootTrans:Find("c_img_frameallowed")
-  self.m_frameunallowed = self.m_goRootTrans:Find("c_img_frameunallowed")
+  self.m_bg_hero_wear = self.m_goRootTrans:Find("c_bg_hero_wear")
+  self.m_bg_hero_wear_mask = self.m_goRootTrans:Find("c_bg_hero_wear/c_img_hero_wearmask")
+  local img_hero_obj = self.m_goRootTrans:Find("c_bg_hero_wear/c_pnl_hero_mask/c_img_hero")
+  if not utils.isNull(img_hero_obj) then
+    self.m_img_hero = img_hero_obj:GetComponent(T_Image)
+  end
+  self.m_img_bg_exclusive = self.m_goRootTrans:Find("c_img_bg_exclusive")
+  self.m_img_bg_drawing = self.m_goRootTrans:Find("c_img_bg_drawing")
+  self.m_pnl_notobtained_drawing = self.m_goRootTrans:Find("c_pnl_notobtained_drawing")
+  self.m_pnl_notobtained = self.m_goRootTrans:Find("c_pnl_notobtained")
+  self.m_txt_notobtained_drawing = self.m_goRootTrans:Find("c_pnl_notobtained_drawing/txt_notobtained_drawing")
+  self.m_txt_notobtained = self.m_goRootTrans:Find("c_pnl_notobtained/txt_notobtained")
+  self.m_pnl_get = self.m_goRootTrans:Find("c_pnl_get")
+  self.m_txtNameMultiColor = self.m_txt_name_Text:GetComponent("MultiColorChange")
   self.m_levelRogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
 end
 
@@ -33,6 +45,10 @@ function RogueItemIcon:SetItemInfo(info)
     return
   end
   self.m_txt_name_Text.text = itemCfg.m_mItemName
+  if not utils.isNull(self.m_txtNameMultiColor) then
+    local colorIndex = itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CharacterEquip and 1 or 0
+    self.m_txtNameMultiColor:SetColorByIndex(colorIndex)
+  end
   UILuaHelper.SetAtlasSprite(self.m_icon_Image, itemCfg.m_ItemIcon, function()
     if self and not utils.isNull(self.m_icon_Image) then
       self.m_icon_Image:SetNativeSize()
@@ -67,6 +83,24 @@ function RogueItemIcon:SetItemInfo(info)
   if not utils.isNull(self.m_exclusive) then
     UILuaHelper.SetActive(self.m_exclusive, itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CharacterEquip)
   end
+  if not utils.isNull(self.m_img_bg_exclusive) then
+    UILuaHelper.SetActive(self.m_img_bg_exclusive, itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CharacterEquip)
+  end
+  if not utils.isNull(self.m_img_bg_drawing) then
+    UILuaHelper.SetActive(self.m_img_bg_drawing, itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.ExclusiveMap or itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CommonMap)
+  end
+  if not utils.isNull(self.m_pnl_notobtained_drawing) then
+    UILuaHelper.SetActive(self.m_pnl_notobtained_drawing, itemCfg.m_ItemSubType ~= RogueStageManager.RogueStageItemSubType.CharacterEquip)
+  end
+  if not utils.isNull(self.m_txt_notobtained_drawing) then
+    UILuaHelper.SetActive(self.m_txt_notobtained_drawing, itemCfg.m_ItemSubType ~= RogueStageManager.RogueStageItemSubType.CharacterEquip and info.checkIsHave and not info.isHave)
+  end
+  if not utils.isNull(self.m_pnl_notobtained) then
+    UILuaHelper.SetActive(self.m_pnl_notobtained, itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CommonMaterial)
+  end
+  if not utils.isNull(self.m_txt_notobtained) then
+    UILuaHelper.SetActive(self.m_txt_notobtained, itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CommonMaterial and info.checkIsHave and not info.isHave)
+  end
   local posCfg = self.m_levelRogueStageHelper:GetRogueItemIconPosById(itemId)
   if info.useTipsPos then
     if posCfg and posCfg.m_TipsPos then
@@ -95,22 +129,43 @@ function RogueItemIcon:SetItemInfo(info)
       end
     end
   end
-  if not utils.isNull(self.m_frameallowed) then
-    UILuaHelper.SetActive(self.m_frameallowed, info.sort == RogueStageManager.RegionTypeSort.Normal)
-  end
-  if not utils.isNull(self.m_frameunallowed) then
-    UILuaHelper.SetActive(self.m_frameunallowed, info.sort == RogueStageManager.RegionTypeSort.Exclusive)
+  if not utils.isNull(self.m_pnl_get) then
+    UILuaHelper.SetActive(self.m_pnl_get, info.isHave)
   end
   if info.isHave or not info.checkIsHave then
     if self.m_icon_Image_Gray then
       UILuaHelper.SetActive(self.m_icon_Image_Gray, false)
     end
     UILuaHelper.SetActive(self.m_icon_Image, true)
-  else
+  elseif itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CommonMap then
     if self.m_icon_Image_Gray then
       UILuaHelper.SetActive(self.m_icon_Image_Gray, true)
     end
     UILuaHelper.SetActive(self.m_icon_Image, false)
+  else
+    UILuaHelper.SetActive(self.m_icon_Image, true)
+  end
+  if itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.CharacterEquip or itemCfg.m_ItemSubType == RogueStageManager.RogueStageItemSubType.ExclusiveMap then
+    local heroId = itemCfg.m_Character
+    if not utils.isNull(self.m_bg_hero_wear) then
+      UILuaHelper.SetActive(self.m_bg_hero_wear, heroId ~= nil and heroId ~= 0)
+    end
+    if heroId and heroId ~= 0 then
+      if not utils.isNull(self.m_img_hero) then
+        ResourceUtil:CreateHeroHeadIcon(self.m_img_hero, heroId)
+      end
+      if not utils.isNull(self.c_img_hero_wearmask) then
+        if info.isHave or not info.checkIsHave then
+          UILuaHelper.SetActive(self.c_img_hero_wearmask, true)
+        else
+          UILuaHelper.SetActive(self.c_img_hero_wearmask, false)
+        end
+      end
+    elseif not utils.isNull(self.c_img_hero_wearmask) then
+      UILuaHelper.SetActive(self.c_img_hero_wearmask, false)
+    end
+  elseif not utils.isNull(self.m_bg_hero_wear) then
+    UILuaHelper.SetActive(self.m_bg_hero_wear, false)
   end
 end
 

@@ -24,6 +24,8 @@ CmdActPayStoreType_MainStage = 19
 CmdActPayStoreType_MonthlyCard = 20
 CmdActPayStoreType_DaimondBuy = 21
 CmdActPayStoreType_SignGift = 22
+CmdActPayStoreType_FashionStore = 23
+CmdActPayStoreType_PickupGiftNew = 24
 CmdActPayStoreBuyParam = sdp.SdpStruct("CmdActPayStoreBuyParam")
 CmdActPayStoreBuyParam.Definition = {
   "iActivityId",
@@ -118,6 +120,8 @@ CmdActCfgPayStoreGoods.Definition = {
   "iDiscount",
   "iShowOrder",
   "iRecommend",
+  "iLaunchTime",
+  "iRemovalTime",
   iGoodsId = {
     0,
     0,
@@ -219,6 +223,18 @@ CmdActCfgPayStoreGoods.Definition = {
     0,
     8,
     0
+  },
+  iLaunchTime = {
+    17,
+    0,
+    8,
+    0
+  },
+  iRemovalTime = {
+    18,
+    0,
+    8,
+    0
   }
 }
 CmdActCfgPayStoreGoodsConfig = sdp.SdpStruct("CmdActCfgPayStoreGoodsConfig")
@@ -231,6 +247,79 @@ CmdActCfgPayStoreGoodsConfig.Definition = {
     nil
   }
 }
+CmdActCfgPayStoreUpInterfaceResourceConfig = sdp.SdpStruct("CmdActCfgPayStoreUpInterfaceResourceConfig")
+CmdActCfgPayStoreUpInterfaceResourceConfig.Definition = {
+  "sGiftBackground",
+  "sGiftPackBasePlate",
+  "sPurchasePriceTextColor",
+  "sSoldOutPic",
+  "sSoldOutTextColor",
+  "sGiftPackNameTextColor",
+  "sStockTextColor",
+  "sValueForMoneyBaseImage",
+  "sValueForMoneyMask",
+  "sValueForMoneyTextColor",
+  sGiftBackground = {
+    0,
+    0,
+    13,
+    ""
+  },
+  sGiftPackBasePlate = {
+    1,
+    0,
+    13,
+    ""
+  },
+  sPurchasePriceTextColor = {
+    3,
+    0,
+    13,
+    ""
+  },
+  sSoldOutPic = {
+    4,
+    0,
+    13,
+    ""
+  },
+  sSoldOutTextColor = {
+    5,
+    0,
+    13,
+    ""
+  },
+  sGiftPackNameTextColor = {
+    6,
+    0,
+    13,
+    ""
+  },
+  sStockTextColor = {
+    7,
+    0,
+    13,
+    ""
+  },
+  sValueForMoneyBaseImage = {
+    8,
+    0,
+    13,
+    ""
+  },
+  sValueForMoneyMask = {
+    9,
+    0,
+    13,
+    ""
+  },
+  sValueForMoneyTextColor = {
+    10,
+    0,
+    13,
+    ""
+  }
+}
 CmdActCfgPayStoreStore = sdp.SdpStruct("CmdActCfgPayStoreStore")
 CmdActCfgPayStoreStore.Definition = {
   "iStoreId",
@@ -241,6 +330,7 @@ CmdActCfgPayStoreStore.Definition = {
   "sStoreDesc",
   "sStorePic",
   "iWindowID",
+  "sWindowName",
   "iShowOrder",
   "iStoreStatus",
   "iStoreBeginTime",
@@ -253,7 +343,8 @@ CmdActCfgPayStoreStore.Definition = {
   "stGoodsConfig",
   "iShowType",
   "sColorType",
-  "sWindowName",
+  "iShowSingleTab",
+  "stUpInterfaceResourceConfig",
   iStoreId = {
     0,
     0,
@@ -302,83 +393,95 @@ CmdActCfgPayStoreStore.Definition = {
     8,
     0
   },
-  iShowOrder = {
+  sWindowName = {
     8,
     0,
-    8,
-    0
+    13,
+    ""
   },
-  iStoreStatus = {
+  iShowOrder = {
     9,
     0,
     8,
     0
   },
-  iStoreBeginTime = {
+  iStoreStatus = {
     10,
     0,
     8,
     0
   },
-  iStoreEndTime = {
+  iStoreBeginTime = {
     11,
     0,
     8,
     0
   },
-  iMinLevel = {
+  iStoreEndTime = {
     12,
     0,
     8,
     0
   },
-  iMaxLevel = {
+  iMinLevel = {
     13,
     0,
     8,
     0
   },
-  iMinMainStage = {
+  iMaxLevel = {
     14,
     0,
     8,
     0
   },
-  iMaxMainStage = {
+  iMinMainStage = {
     15,
     0,
     8,
     0
   },
-  iFirstDouble = {
+  iMaxMainStage = {
     16,
     0,
     8,
     0
   },
-  stGoodsConfig = {
+  iFirstDouble = {
     17,
+    0,
+    8,
+    0
+  },
+  stGoodsConfig = {
+    18,
     0,
     CmdActCfgPayStoreGoodsConfig,
     nil
   },
   iShowType = {
-    18,
+    19,
     0,
     8,
     0
   },
   sColorType = {
-    19,
-    0,
-    13,
-    ""
-  },
-  sWindowName = {
     20,
     0,
     13,
     ""
+  },
+  iShowSingleTab = {
+    21,
+    0,
+    8,
+    0
+  },
+  stUpInterfaceResourceConfig = {
+    22,
+    0,
+    CmdActCfgPayStoreUpInterfaceResourceConfig,
+    nil
   }
 }
 CmdActCommonCfgPayStore = sdp.SdpStruct("CmdActCommonCfgPayStore")

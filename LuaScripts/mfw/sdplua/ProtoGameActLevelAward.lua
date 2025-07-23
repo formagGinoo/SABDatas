@@ -76,6 +76,8 @@ CmdActCfgLevelAwardHeroConfig.Definition = {
   "iJumpType",
   "sJumpParam",
   "iOrder",
+  "sOutsideDesc",
+  "sInsideDesc",
   iHeroId = {
     0,
     0,
@@ -117,6 +119,18 @@ CmdActCfgLevelAwardHeroConfig.Definition = {
     0,
     8,
     0
+  },
+  sOutsideDesc = {
+    7,
+    0,
+    13,
+    ""
+  },
+  sInsideDesc = {
+    8,
+    0,
+    13,
+    ""
   }
 }
 CmdActCfgLevelAwardMultiHeroConfig = sdp.SdpStruct("CmdActCfgLevelAwardMultiHeroConfig")

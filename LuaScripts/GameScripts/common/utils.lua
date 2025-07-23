@@ -622,6 +622,14 @@ function utils.openItemDetailPop(itemData, callBackFun, inBag)
       heroServerData = itemData.heroServerData,
       callBackFun = callBackFun
     })
+  elseif itemType == ResourceUtil.RESOURCE_TYPE.Fashion then
+    local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByID(itemData.iID)
+    if fashionInfo then
+      StackPopup:Push(UIDefines.ID_FORM_FASHION, {
+        heroID = fashionInfo.m_CharacterId,
+        fashionID = itemData.iID
+      })
+    end
   else
     StackPopup:Push(UIDefines.ID_FORM_ITEMTIPS, {
       iID = itemData.iID,
@@ -719,6 +727,12 @@ function utils.popUpRewardUI(vReward, closeCallBack, mChangeReward)
   for i, v in ipairs(tempShowDisPlayNewPlayer) do
     if ResourceUtil:GetResourceTypeById(v.iID) == ResourceUtil.RESOURCE_TYPE.HEROES then
       vHeroID[#vHeroID + 1] = v.iID
+    end
+    if ResourceUtil:GetResourceTypeById(v.iID) == ResourceUtil.RESOURCE_TYPE.Fashion then
+      PushFaceManager:OnNewHeroSkin({
+        fashionID = v.iID,
+        isNew = v.isRepeat ~= true
+      })
     end
   end
   if 0 < #vHeroID then
@@ -829,7 +843,7 @@ end
 
 function utils.ShowDialogueGame(dialogId, finishFc)
   local params = {dialogId = dialogId, finishFc = finishFc}
-  StackPopup:Push(UIDefines.ID_FORM_INTERACTIVEGAME, params)
+  StackFlow:Push(UIDefines.ID_FORM_INTERACTIVEGAME, params)
 end
 
 function utils.openForm_filter(filterData, click_transform, content_pivot, pos_offset, chooseBackFun, isHideShowMoonType, isInBattle, isHideCamp)

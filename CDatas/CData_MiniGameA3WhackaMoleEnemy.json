@@ -1,6 +1,5 @@
 {
   "className": "CData_MiniGameA3WhackaMoleEnemy",
-  "timestamp": "2025-07-16T14:14:07.788Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -24,7 +23,7 @@
       "m_bError": null,
       "m_ID": "2",
       "m_mName": "\"Spark\"",
-      "m_mDesc": "\"'Tingly and numb... wait, am I about to fry myself with my own electricity?'\"",
+      "m_mDesc": "\"贝拉·索莱德... wait, am I about to fry myself with my own electricity?' n\"",
       "m_Type": "1",
       "m_Prefab": "\"ui_mole_ElectricEel\"",
       "m_Scale": "[130,130]",
@@ -83,7 +82,7 @@
       "m_Prefab": "\"ui_mole_Kraken\"",
       "m_Scale": "[140,140]",
       "m_Animator": "\"Kraken\"",
-      "m_RetreatTime": "100",
+      "m_RetreatTime": "1000",
       "m_HP": "1",
       "m_Shield": null,
       "m_DizzinessTime": null,

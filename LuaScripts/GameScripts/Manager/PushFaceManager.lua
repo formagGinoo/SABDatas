@@ -21,13 +21,24 @@ local PopPanelCfg = {
     SortNum = 1,
     paramData = nil
   },
+  HeroNewSkin = {
+    FormID = UIDefines.ID_FORM_GETSKIN,
+    SortNum = 2,
+    paramData = nil
+  },
   CommonRewardShow = {
     FormID = UIDefines.ID_FORM_POPUPRECEIVE,
-    SortNum = 2,
+    SortNum = 3,
     paramData = nil
   },
   ActivitySevenDay = {
     FormID = UIDefines.ID_FORM_ACTIVITYSEVENDAYSFACE,
+    SortNum = 103,
+    paramData = nil,
+    onlyDisplayInLobby = true
+  },
+  ActivitySignTenDay = {
+    FormID = UIDefines.ID_FORM_ACTIVITYSIGN10DAY,
     SortNum = 103,
     paramData = nil,
     onlyDisplayInLobby = true
@@ -222,6 +233,11 @@ function PushFaceManager:OnActivityDailyLogin(param)
       self:PushFacePanel("ActivitySevenDay", param)
       self:CheckIsNotShowAndPopPanel()
     end
+  elseif param == ActivityManager.ActivitySubPanelName.ActivitySPName_Sign10 then
+    if self:CheckIsCanAdd("ActivitySignTenDay") then
+      self:PushFacePanel("ActivitySignTenDay", param)
+      self:CheckIsNotShowAndPopPanel()
+    end
   elseif self:CheckIsCanAdd("ActivityFourteenDay") then
     self:PushFacePanel("ActivityFourteenDay", param)
     self:CheckIsNotShowAndPopPanel()
@@ -282,6 +298,27 @@ function PushFaceManager:OnNewHero(param)
   end
   
   DownloadManager:DownloadResourceWithUI(vPackage, nil, "NewHero_" .. table.concat(vHeroID, "_"), nil, nil, OnDownloadComplete, nil, DownloadManager.NetworkStatus.Mobile)
+end
+
+function PushFaceManager:OnNewHeroSkin(param)
+  if not param then
+    return
+  end
+  local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByID(param.fashionID)
+  if not fashionInfo then
+    return
+  end
+  local heroID = fashionInfo.m_CharacterId
+  local vPackage = {}
+  vPackage[#vPackage + 1] = {
+    sName = tostring(heroID),
+    eType = DownloadManager.ResourcePackageType.Character
+  }
+  DownloadManager:DownloadResourceWithUI(vPackage, nil, "NewHero_" .. heroID, nil, nil, function(ret)
+    log.info(string.format("Download NewFashion %s Complete: %s", tostring(heroID), tostring(ret)))
+    self:PushRewardFacePanel("HeroNewSkin", param)
+    self:CheckIsNotShowAndPopRewardPanel()
+  end, nil, DownloadManager.NetworkStatus.Mobile)
 end
 
 function PushFaceManager:OnGetCommonReward(param)
@@ -357,7 +394,7 @@ function PushFaceManager:CheckShowNextPopPanel()
         StackPopup:Push(firstShowPopPanelCfg.FormID, firstShowPopPanelCfg.paramData)
         self.m_curShowPanelId = firstShowPopPanelCfg.FormID
       else
-        StackPopup:Push(firstShowPopPanelCfg.paramData.FormID, firstShowPopPanelCfg.paramData)
+        StackFlow:Push(firstShowPopPanelCfg.paramData.FormID, firstShowPopPanelCfg.paramData)
         self.m_curShowPanelId = firstShowPopPanelCfg.paramData.FormID
       end
     end

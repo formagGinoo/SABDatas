@@ -88,6 +88,7 @@ function Form_BattlePassTask:AddEventListeners()
   self:addEventListener("eGameEvent_Activity_BattlePass_TaskUpdate", handler(self, self.OnTaskUpdate))
   self:addEventListener("eGameEvent_Activity_BattlePass_ReceiveTaskReward", handler(self, self.OnReceiveTaskReward))
   self:addEventListener("eGameEvent_Activity_BattlePass_BuyExp", handler(self, self.OnBuyExp))
+  self:addEventListener("eGameEvent_Activity_BattlePass_CloseMain", handler(self, self.OnBtnCloseClicked))
 end
 
 function Form_BattlePassTask:RemoveAllEventListeners()
@@ -111,12 +112,18 @@ function Form_BattlePassTask:OnTaskUpdate(data)
 end
 
 function Form_BattlePassTask:OnReceiveTaskReward(data)
+  if not self.m_stActivity then
+    return
+  end
   if data.iActivityID == self.m_stActivity:getID() then
     self:FreshLevelExpInfo()
   end
 end
 
 function Form_BattlePassTask:OnBuyExp(data)
+  if not self.m_stActivity then
+    return
+  end
   if data.iActivityID == self.m_stActivity:getID() then
     self:FreshLevelExpInfo()
   end
@@ -154,6 +161,9 @@ function Form_BattlePassTask:FreshLevelExpInfo()
 end
 
 function Form_BattlePassTask:FreshProgress()
+  if not self.m_stActivity then
+    return
+  end
   local curLevel = self.m_stActivity:GetCurLevel()
   local levelCfg = self.m_stActivity:GetLevelCfg(curLevel)
   if levelCfg then
@@ -183,7 +193,7 @@ function Form_BattlePassTask:CutDownTime()
   local nextResetTimer = TimeUtil:GetServerNextCommonResetTime()
   local curTimer = TimeUtil:GetServerTimeS()
   self.m_activeRefreshTime = nextResetTimer - curTimer
-  local timeStr = TimeUtil:SecondsToFormatStrDHOrHMS(self.m_activeRefreshTime)
+  local timeStr = TimeUtil:SecondsToFormatCNStr(self.m_activeRefreshTime)
   timeStr = string.CS_Format(ConfigManager:GetCommonTextById(220019), timeStr)
   self.m_txt_time_Text.text = timeStr
   self.m_downTimer = TimeService:SetTimer(1, -1, function()
@@ -194,7 +204,7 @@ function Form_BattlePassTask:CutDownTime()
     else
       UILuaHelper.SetActive(self.m_txt_time_Text, true)
     end
-    local tempTimeStr = TimeUtil:SecondsToFormatStrDHOrHMS(self.m_activeRefreshTime)
+    local tempTimeStr = TimeUtil:SecondsToFormatCNStr(self.m_activeRefreshTime)
     tempTimeStr = string.CS_Format(ConfigManager:GetCommonTextById(220019), tempTimeStr)
     self.m_txt_time_Text.text = tempTimeStr
   end)
@@ -213,6 +223,9 @@ function Form_BattlePassTask:PlayGetExpAnim()
 end
 
 function Form_BattlePassTask:CheckShowLevelUp10Panel()
+  if not self.m_stActivity then
+    return
+  end
   local buyStatus = self.m_stActivity:GetBuyStatus()
   if buyStatus == BattlePassBuyStatus.Advanced then
     return
@@ -232,6 +245,9 @@ function Form_BattlePassTask:OnBtnReturnClicked()
 end
 
 function Form_BattlePassTask:OnQuestItemClk(taskCfg, index, item)
+  if not self.m_stActivity then
+    return
+  end
   self.m_isPlayingAnim = true
   self.m_stActivity:RequestReceiveTask({
     taskCfg.m_ID

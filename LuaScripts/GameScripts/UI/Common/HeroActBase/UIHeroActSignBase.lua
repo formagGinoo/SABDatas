@@ -9,6 +9,8 @@ function UIHeroActSignBase:AfterInit()
     itemClkBackFun = handler(self, self.OnSignItemClick)
   }
   self.m_luaSignItemInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_reward_list_InfinityGrid, "HeroActivity/UIActSignItem", initGridData)
+  self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
+  self.m_curHeroSpineObj = nil
 end
 
 function UIHeroActSignBase:OnActive()
@@ -22,6 +24,13 @@ function UIHeroActSignBase:OnActive()
   self:RemoveEventListeners()
   self:BindEventListeners()
   self:FreshUI()
+  local cfg = HeroActivityManager:GetMainInfoByActID(self.act_id)
+  if cfg and cfg.m_SigninSpine and cfg.m_SigninSpine ~= "" then
+    self.m_signinSpineName = cfg.m_SigninSpine
+    self:LoadShowSpine()
+  else
+    self.m_signinSpineName = nil
+  end
 end
 
 function UIHeroActSignBase:OnInactive()
@@ -40,6 +49,7 @@ function UIHeroActSignBase:OnInactive()
     end
   end
   PushFaceManager:CheckShowNextPopPanel()
+  self:CheckRecycleSpine(true)
 end
 
 function UIHeroActSignBase:RemoveEventListeners()
@@ -91,7 +101,10 @@ function UIHeroActSignBase:FreshUI()
   end
   self:FreshSignItemList(act_data.server_data.stSign.iAwardedMaxDays)
   if self.m_csui.m_param.is_pushFace and HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) then
-    HeroActivityManager:RequestRecReward(self.act_id)
+    self.lockId = UILockIns:Lock(0.6)
+    TimeService:SetTimer(0.6, 1, function()
+      HeroActivityManager:RequestRecReward(self.act_id)
+    end)
   end
 end
 
@@ -148,6 +161,37 @@ function UIHeroActSignBase:OnBgblackClicked()
   self:CloseForm()
 end
 
+function UIHeroActSignBase:LoadShowSpine()
+  if not self.m_HeroSpineDynamicLoader then
+    return
+  end
+  if not self.m_signinSpineName then
+    return
+  end
+  self:CheckRecycleSpine()
+  self.m_HeroSpineDynamicLoader:GetObjectByName(self.m_signinSpineName, function(nameStr, object)
+    self:CheckRecycleSpine()
+    UILuaHelper.SetParent(object, self.m_root_hero, true)
+    UILuaHelper.SetActive(object, true)
+    UILuaHelper.SpineResetMatParam(object)
+    self.m_curHeroSpineObj = object
+  end)
+end
+
+function UIHeroActSignBase:CheckRecycleSpine(isResetParam)
+  if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
+    if isResetParam then
+      UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj)
+    end
+    if not self.m_signinSpineName then
+      self.m_curHeroSpineObj = nil
+      return
+    end
+    self.m_HeroSpineDynamicLoader:RecycleObjectByName(self.m_signinSpineName, self.m_curHeroSpineObj)
+    self.m_curHeroSpineObj = nil
+  end
+end
+
 function UIHeroActSignBase:OnDestroy()
   UIHeroActSignBase.super.OnDestroy(self)
   if self.m_luaSignItemInfinityGrid then
@@ -158,6 +202,27 @@ function UIHeroActSignBase:OnDestroy()
     TimeService:KillTimer(self.timer)
     self.timer = nil
   end
+  self:CheckRecycleSpine(true)
+end
+
+function UIHeroActSignBase:GetDownloadResourceExtra(tParam)
+  local vPackage = {}
+  local vResourceExtra = {}
+  local str
+  if tParam then
+    local iActId = tParam.main_id
+    local cfg = HeroActivityManager:GetMainInfoByActID(iActId)
+    if cfg and cfg.m_SigninSpine and cfg.m_SigninSpine ~= "" then
+      str = cfg.m_SigninSpine
+    end
+  end
+  if str then
+    vResourceExtra[#vResourceExtra + 1] = {
+      sName = str,
+      eType = DownloadManager.ResourceType.UI
+    }
+  end
+  return vPackage, vResourceExtra
 end
 
 return UIHeroActSignBase

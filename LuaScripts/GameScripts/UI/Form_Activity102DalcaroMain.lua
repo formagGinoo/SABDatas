@@ -37,6 +37,7 @@ function Form_Activity102DalcaroMain:OnBtnheroClicked()
 end
 
 function Form_Activity102DalcaroMain:GetDownloadResourceExtra(tParam)
+  local _vPackage, _vResourceExtra = Form_Activity102DalcaroMain.super.GetDownloadResourceExtra(self, tParam)
   local vPackage = {}
   local vResourceExtra = {}
   for i, v in ipairs(AudiobnkId) do
@@ -49,6 +50,12 @@ function Form_Activity102DalcaroMain:GetDownloadResourceExtra(tParam)
         }
       end
     end
+  end
+  for i, v in ipairs(_vPackage) do
+    vPackage[#vPackage + 1] = v
+  end
+  for i, v in ipairs(_vResourceExtra) do
+    vResourceExtra[#vResourceExtra + 1] = v
   end
   return vPackage, vResourceExtra
 end

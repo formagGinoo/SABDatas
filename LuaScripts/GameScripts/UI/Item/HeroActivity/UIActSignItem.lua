@@ -17,8 +17,6 @@ local FrameHeightEnum2 = {
 function UIActSignItem:OnInit()
   self.m_txt_day_Text = self.m_itemTemplateCache:TMPPro("c_txt_day1")
   self.m_txt_day_MCC = self.m_itemTemplateCache:GameObject("c_txt_day1"):GetComponent("MultiColorChange")
-  local day_str = self.m_itemIndex > 9 and self.m_itemIndex or "0" .. self.m_itemIndex
-  self.m_txt_day_Text.text = day_str
   self.m_next_get = self.m_itemTemplateCache:GameObject("c_img_got_day_tag")
   self.reward_parent_trans = self.m_pnl_item_reward.transform
   self.reward_item_cache = {}
@@ -27,20 +25,9 @@ function UIActSignItem:OnInit()
     is_got_go = self.m_itemTemplateCache:GameObject("c_img_got")
   })
   local m_PrefabHelper = self.m_pnl_item_reward:GetComponent("PrefabHelper")
-  local config = self.m_itemData.config
-  self.reward_array = utils.changeCSArrayToLuaTable(config.m_Reward)
-  m_PrefabHelper:RegisterCallback(handler(self, self.OnInitRewardItem))
-  m_PrefabHelper:CheckAndCreateObjs(#self.reward_array)
-  local m_img_bg_normal = self.m_itemTemplateCache:GameObject("c_img_bg_normal")
-  local m_img_bg_special = self.m_itemTemplateCache:GameObject("c_img_bg_special")
-  m_img_bg_normal:SetActive(config.m_UIType == 0)
-  m_img_bg_special:SetActive(config.m_UIType == 1)
-  if self.m_img_bk_finish then
-    m_img_bg_normal:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum2.NormalOne or FrameHeightEnum2.NormalTwo
-  else
-    m_img_bg_normal:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum.NormalOne or FrameHeightEnum.NormalTwo
-  end
-  m_img_bg_special:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum.SpecialOne or FrameHeightEnum.SpecialTwo
+  self.m_PrefabHelper = m_PrefabHelper
+  self.m_img_bg_normal = self.m_itemTemplateCache:GameObject("c_img_bg_normal")
+  self.m_img_bg_special = self.m_itemTemplateCache:GameObject("c_img_bg_special")
 end
 
 function UIActSignItem:OnInitRewardItem(go, index)
@@ -82,6 +69,8 @@ end
 
 function UIActSignItem:OnFreshData()
   self.m_itemRootObj.name = self.m_itemIndex
+  local day_str = self.m_itemIndex > 9 and self.m_itemIndex or "0" .. self.m_itemIndex
+  self.m_txt_day_Text.text = day_str
   local server_data = self.m_itemData.server_data
   local is_got = server_data.iAwardedMaxDays >= self.m_itemIndex
   for _, item in ipairs(self.reward_item_cache) do
@@ -91,6 +80,20 @@ function UIActSignItem:OnFreshData()
       item.is_got_go:SetActive(false)
     end
   end
+  local config = self.m_itemData.config
+  self.reward_array = utils.changeCSArrayToLuaTable(config.m_Reward)
+  if not utils.isNull(self.m_PrefabHelper) then
+    self.m_PrefabHelper:RegisterCallback(handler(self, self.OnInitRewardItem))
+    self.m_PrefabHelper:CheckAndCreateObjs(#self.reward_array)
+  end
+  self.m_img_bg_normal:SetActive(config.m_UIType == 0)
+  self.m_img_bg_special:SetActive(config.m_UIType == 1)
+  if self.m_img_bk_finish then
+    self.m_img_bg_normal:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum2.NormalOne or FrameHeightEnum2.NormalTwo
+  else
+    self.m_img_bg_normal:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum.NormalOne or FrameHeightEnum.NormalTwo
+  end
+  self.m_img_bg_special:GetComponent("RectTransform").sizeDelta = #self.reward_array == 1 and FrameHeightEnum.SpecialOne or FrameHeightEnum.SpecialTwo
   self.m_btn_touch:SetActive(not is_got and server_data.iLoginDays >= self.m_itemIndex)
   if is_got then
     self.m_txt_day_MCC:SetColorByIndex(0)

@@ -64,6 +64,10 @@ function Form_CirculationMain:CheckRegisterRedDot()
     if redDotNode then
       self:RegisterOrUpdateRedDotItem(redDotNode, RedDotDefine.ModuleType.HeroCirculationUp, i)
     end
+    local lightCircleNode = self["m_hero_circulation_red_dot" .. i]
+    if lightCircleNode then
+      self:RegisterOrUpdateRedDotItem(lightCircleNode, RedDotDefine.ModuleType.HeroCirculationUp, i)
+    end
   end
 end
 

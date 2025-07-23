@@ -1,6 +1,5 @@
 {
   "className": "CData_FashionInfo",
-  "timestamp": "2025-07-16T14:14:05.614Z",
   "data": {
     "6001000": {
       "m_bError": null,
@@ -39,7 +38,7 @@
       "m_Type": "1",
       "m_Quality": "4",
       "m_Priority": "1",
-      "m_mFashionName": "\"Rooter-haired Heretic\"",
+      "m_mFashionName": "\"Silver-haired Heretic\"",
       "m_FashionTheme": "\"主线用\"",
       "m_mFashionTag": "\"Reserved String\"",
       "m_mFashionDes": "\"Reserved String\"",
@@ -131,7 +130,7 @@
       "m_mFashionTag": "\"Default Outfit\"",
       "m_mFashionDes": "\"Default Outfit\"",
       "m_FashionItemPic": "\"Atlas_Role/Aiona_Base003\"",
-      "m_FashionPic": "\"Root/Bip001/Bip001 Pel\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6004000\"",
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20040]",
@@ -458,9 +457,9 @@
       "m_FashionSuffix": "\"A1_01\"",
       "m_FashionEffectSuffix": "\"A1_01\"",
       "m_HideType": "1",
-      "m_GetType": null,
+      "m_GetType": "2",
       "m_GetTypeValue": "[]",
-      "m_JumpID": null,
+      "m_JumpID": "30003",
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
@@ -755,35 +754,6 @@
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
       "m_mCVEnglish": "\"\""
-    },
-    "6023001": {
-      "m_bError": null,
-      "m_FashionID": "6023001",
-      "m_CharacterId": "20230",
-      "m_Order": "2",
-      "m_Type": "1",
-      "m_Quality": "4",
-      "m_Priority": "5",
-      "m_mFashionName": "\"Paradise Lost\"",
-      "m_FashionTheme": "\"泳装\"",
-      "m_mFashionTag": "\"Luxury Couture\"",
-      "m_mFashionDes": "\"Please keep your shiny things, wallet, and soul safe!\nIf they vanish, it's none's falut.\nMeow? You saw me take them? Cheeky to blame a cat for that.\"",
-      "m_FashionItemPic": "\"Atlas_Role/Dalcarlo_Summer003\"",
-      "m_FashionPic": "\"Atlas_Roleskin/6023001\"",
-      "m_TransformItemID": "[101,1500]",
-      "m_IsShow": "1",
-      "m_PerformanceID": "[2023001]",
-      "m_Spine": "\"jacinta_base_a2_01\"",
-      "m_FashionSuffix": "\"A2_01\"",
-      "m_FashionEffectSuffix": "\"A2_01\"",
-      "m_HideType": "1",
-      "m_GetType": "2",
-      "m_GetTypeValue": "[]",
-      "m_JumpID": "50001",
-      "m_IsShowVoice": "1",
-      "m_mCVChinese": "\"汤舟沉\"",
-      "m_mCVJapanese": "\"Yukana\"",
-      "m_mCVEnglish": "\"Emily Jardine\""
     },
     "6024000": {
       "m_bError": null,
@@ -1830,5 +1800,5 @@
       "m_mCVEnglish": "\"\""
     }
   },
-  "status": "processed_63_items"
+  "status": "processed_62_items"
 }

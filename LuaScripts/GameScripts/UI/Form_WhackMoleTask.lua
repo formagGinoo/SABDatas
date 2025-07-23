@@ -1,4 +1,6 @@
 local Form_WhackMoleTask = class("Form_WhackMoleTask", require("UI/UIFrames/Form_WhackMoleTaskUI"))
+local Form_In = "whackmole_task_in"
+local Form_Out = "whackmole_task_out"
 
 function Form_WhackMoleTask:SetInitParam(param)
 end
@@ -14,15 +16,17 @@ function Form_WhackMoleTask:OnActive()
   if not tParam then
     return
   end
+  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, Form_In)
   self:AddEventListeners()
   self.main_id = tParam.main_id
   self.sub_id = tParam.sub_id
-  self:OnRefreshLevelData()
   self:OnRefreshLevelList()
 end
 
 function Form_WhackMoleTask:AddEventListeners()
-  self:addEventListener("eGameEvent_ActTask_GetReward", handler(self, self.RefreshUI))
+  self:addEventListener("eGameEvent_ActTask_GetReward", function()
+    self:OnRefreshLevelList()
+  end)
 end
 
 function Form_WhackMoleTask:RemoveAllEventListeners()
@@ -34,19 +38,16 @@ function Form_WhackMoleTask:OnInactive()
   self:RemoveAllEventListeners()
 end
 
-function Form_WhackMoleTask:OnDestroy()
-  self.super.OnDestroy(self)
-end
-
-function Form_WhackMoleTask:OnRefreshLevelData()
-end
-
 function Form_WhackMoleTask:OnRefreshLevelList()
-  local taskDataList = HeroActivityManager:GetWhackMoleTaskData(self.main_id, self.sub_id)
-  self.m_taskList_InfinityGrid:ShowItemList(taskDataList)
+  if self.m_taskList_InfinityGrid then
+    local taskDataList = HeroActivityManager:GetWhackMoleTaskData(self.main_id, self.sub_id)
+    self.m_taskList_InfinityGrid:ShowItemList(taskDataList)
+    self.m_taskList_InfinityGrid:LocateTo(0)
+  end
 end
 
 function Form_WhackMoleTask:OnBtnCloseClicked()
+  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, Form_Out)
   self:CloseForm()
 end
 

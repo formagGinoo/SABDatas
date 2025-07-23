@@ -14,6 +14,7 @@ function Form_HallDecorateShow:AfterInit()
   self.m_curHeroSpineObj = nil
   self.m_curBgPrefabStr = nil
   self.m_curBgNodeObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_HallDecorateShow:OnActive()
@@ -50,8 +51,9 @@ function Form_HallDecorateShow:FreshUI()
     return
   end
   local isRole = self.m_curMainBgData.iType == MainBgType.Role
-  UILuaHelper.SetActive(self.m_root_role, isRole)
-  if isRole then
+  local isFashion = self.m_curMainBgData.iType == MainBgType.Fashion
+  UILuaHelper.SetActive(self.m_root_role, isRole or isFashion)
+  if isRole or isFashion then
     self:FreshShowSpine()
   end
   local isBg = self.m_curMainBgData.iType == MainBgType.Activity
@@ -63,11 +65,22 @@ function Form_HallDecorateShow:FreshUI()
 end
 
 function Form_HallDecorateShow:FreshShowSpine()
-  local characterCfg = HeroManager:GetHeroConfigByID(self.m_curMainBgData.iId)
-  if not characterCfg then
+  if not self.m_curMainBgData then
     return
   end
-  self:ShowHeroSpine(characterCfg.m_Spine)
+  local showSpineStr
+  if self.m_curMainBgData.iType == MainBgType.Role then
+    local characterCfg = HeroManager:GetHeroConfigByID(self.m_curMainBgData.iId)
+    if characterCfg then
+      showSpineStr = characterCfg.m_Spine
+    end
+  elseif self.m_curMainBgData.iType == MainBgType.Fashion then
+    local fashionInfo = self.m_HeroFashion:GetFashionInfoByID(self.m_curMainBgData.iId)
+    if fashionInfo then
+      showSpineStr = fashionInfo.m_Spine
+    end
+  end
+  self:ShowHeroSpine(showSpineStr)
 end
 
 function Form_HallDecorateShow:CheckRecycleSpine(isResetParam)

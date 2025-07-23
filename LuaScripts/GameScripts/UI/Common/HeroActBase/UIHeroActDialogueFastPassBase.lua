@@ -71,17 +71,26 @@ function UIHeroActDialogueFastPassBase:InsertTopFive(bonusData)
   if not bonusData then
     return
   end
-  local insertIndex = 1
+  local insertIndex
   for i, tempBonusData in ipairs(self.m_heroTopBonus) do
-    if bonusData.sort < tempBonusData.sort then
+    if bonusData.sort <= tempBonusData.sort then
       insertIndex = i
       break
     end
   end
+  if self.m_heroTopBonus and #self.m_heroTopBonus > 0 then
+    if not insertIndex and #self.m_heroTopBonus >= FormPlotMaxNum then
+      return
+    else
+      insertIndex = #self.m_heroTopBonus + 1
+    end
+  else
+    insertIndex = 1
+  end
   table.insert(self.m_heroTopBonus, insertIndex, bonusData)
   local totalLen = #self.m_heroTopBonus
   if totalLen > FormPlotMaxNum then
-    table.remove(self.m_heroTopBonus, FormPlotMaxNum)
+    table.remove(self.m_heroTopBonus, totalLen)
   end
 end
 
@@ -159,9 +168,8 @@ function UIHeroActDialogueFastPassBase:GetCostItemNum()
 end
 
 function UIHeroActDialogueFastPassBase:GetTotalLeftTimes()
-  local leftTimes = self:GetLeftFreeTimes() or 0
   local itemNum = self:GetCostItemNum() or 0
-  return leftTimes + itemNum
+  return itemNum
 end
 
 function UIHeroActDialogueFastPassBase:AddEventListeners()
@@ -329,18 +337,11 @@ function UIHeroActDialogueFastPassBase:FreshShowCostItemIcon()
 end
 
 function UIHeroActDialogueFastPassBase:FreshCostShow()
-  local freeNum = self:GetLeftFreeTimes()
-  if freeNum >= self.m_curSweepNum then
-    UILuaHelper.SetActive(self.m_icon2, false)
-    UILuaHelper.SetActive(self.m_txt_num2, false)
-    self.m_txt_num1_Text.text = self.m_curSweepNum
-  else
-    UILuaHelper.SetActive(self.m_icon2, true)
-    UILuaHelper.SetActive(self.m_txt_num2, true)
-    self.m_txt_num1_Text.text = freeNum
-    local itemNum = self.m_curSweepNum - freeNum
-    self.m_txt_num2_Text.text = itemNum
-  end
+  UILuaHelper.SetActive(self.m_icon2, true)
+  UILuaHelper.SetActive(self.m_txt_num2, true)
+  self.m_txt_num2_Text.text = self.m_curSweepNum
+  UILuaHelper.SetActive(self.m_icon1, false)
+  UILuaHelper.SetActive(self.m_txt_num1, false)
 end
 
 function UIHeroActDialogueFastPassBase:OnBtncloseClicked()

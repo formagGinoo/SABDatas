@@ -25,7 +25,17 @@ CmdId_Mail_WriteMail_CS = 11217
 CmdId_Mail_WriteMail_SC = 11218
 CmdId_Mail_ReportBadMail_CS = 11219
 CmdId_Mail_ReportBadMail_SC = 11220
+CmdId_Mail_DelCollectMail_CS = 11221
+CmdId_Mail_DelCollectMail_SC = 11222
 MailType_System = 0
+TemplateMailType_Normal = 0
+TemplateMailType_Collect = 1
+CollectMailConditionType_Date = 1
+CollectMailConditionType_Stage = 2
+CollectMailConditionType_RegDay = 3
+CollectMailConditionType_ContinuousLoginDays = 4
+CollectMailConditionType_RoleBirthday = 5
+CollectMailConditionType_HeroBirthday = 6
 MailData = sdp.SdpStruct("MailData")
 MailData.Definition = {
   "iMailId",
@@ -139,8 +149,15 @@ Cmd_Mail_GetMail_CS.Definition = {}
 Cmd_Mail_GetMail_SC = sdp.SdpStruct("Cmd_Mail_GetMail_SC")
 Cmd_Mail_GetMail_SC.Definition = {
   "vMail",
+  "vCollectMail",
   vMail = {
     0,
+    0,
+    sdp.SdpVector(MailData),
+    nil
+  },
+  vCollectMail = {
+    1,
     0,
     sdp.SdpVector(MailData),
     nil
@@ -161,6 +178,7 @@ Cmd_Mail_ReadMail_SC.Definition = {
   "iMailId",
   "iOpenTime",
   "iDelTime",
+  "bCollect",
   iMailId = {
     0,
     0,
@@ -178,6 +196,12 @@ Cmd_Mail_ReadMail_SC.Definition = {
     0,
     8,
     0
+  },
+  bCollect = {
+    3,
+    0,
+    1,
+    false
   }
 }
 Cmd_Mail_DelMail_CS = sdp.SdpStruct("Cmd_Mail_DelMail_CS")
@@ -218,6 +242,7 @@ Cmd_Mail_RcvMailAttach_SC.Definition = {
   "vReward",
   "iOpenTime",
   "iDelTime",
+  "bCollect",
   iMailId = {
     0,
     0,
@@ -253,6 +278,12 @@ Cmd_Mail_RcvMailAttach_SC.Definition = {
     0,
     8,
     0
+  },
+  bCollect = {
+    6,
+    0,
+    1,
+    false
   }
 }
 Cmd_Mail_RcvAllMailAttach_CS = sdp.SdpStruct("Cmd_Mail_RcvAllMailAttach_CS")
@@ -261,6 +292,7 @@ Cmd_Mail_RcvAllMailAttach_SC = sdp.SdpStruct("Cmd_Mail_RcvAllMailAttach_SC")
 Cmd_Mail_RcvAllMailAttach_SC.Definition = {
   "vMail",
   "vDelMailId",
+  "vCollectId",
   vMail = {
     0,
     0,
@@ -269,6 +301,12 @@ Cmd_Mail_RcvAllMailAttach_SC.Definition = {
   },
   vDelMailId = {
     1,
+    0,
+    sdp.SdpVector(8),
+    nil
+  },
+  vCollectId = {
+    2,
     0,
     sdp.SdpVector(8),
     nil
@@ -399,3 +437,23 @@ Cmd_Mail_ReportBadMail_CS.Definition = {
 }
 Cmd_Mail_ReportBadMail_SC = sdp.SdpStruct("Cmd_Mail_ReportBadMail_SC")
 Cmd_Mail_ReportBadMail_SC.Definition = {}
+Cmd_Mail_DelCollectMail_CS = sdp.SdpStruct("Cmd_Mail_DelCollectMail_CS")
+Cmd_Mail_DelCollectMail_CS.Definition = {
+  "iMailId",
+  iMailId = {
+    0,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Mail_DelCollectMail_SC = sdp.SdpStruct("Cmd_Mail_DelCollectMail_SC")
+Cmd_Mail_DelCollectMail_SC.Definition = {
+  "iMailId",
+  iMailId = {
+    0,
+    0,
+    8,
+    0
+  }
+}

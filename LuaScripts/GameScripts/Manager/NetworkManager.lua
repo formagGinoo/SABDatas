@@ -59,11 +59,27 @@ function NetworkManager:RegisterNetwork()
   end)
   self.m_netClientGame:RemoveListenByEventId(CsNetCore.NetworkEvent.ConnectFailed)
   self.m_netClientGame:Listen(CsNetCore.NetworkEvent.ConnectFailed, function()
-    log.error("Connect To Game Server Failed")
-    if self.m_bForceShowReconnect or not self.m_bSessionExpired and RPCS():GetRpcCallbackCount() > 0 then
+    local netUC = CS.com.muf.net.client.mfw.NetUIController.Instance
+    local iRequestLockerCount = 0
+    local sRequestLockerDetail = ""
+    if netUC ~= nil then
+      local dictRequestLockers = netUC:GetRequestLockers()
+      iRequestLockerCount = dictRequestLockers.Count
+      local mRequestLockersInfo = {}
+      for k, v in pairs(dictRequestLockers) do
+        mRequestLockersInfo[tostring(k)] = v.messageId
+      end
+      sRequestLockerDetail = json.encode(mRequestLockersInfo)
+    end
+    log.error("Connect To Game Server Failed, RequestLockerCount " .. tostring(iRequestLockerCount) .. "\n" .. sRequestLockerDetail)
+    if self.m_bForceShowReconnect or not self.m_bSessionExpired and 0 < iRequestLockerCount then
+      ReportManager:ReportClientNetShowReconnect(0, sRequestLockerDetail)
       if ChannelManager:IsWindows() or ChannelManager:IsIOS() then
         utils.CheckAndPushCommonTips({
-          tipsID = 9960,
+          title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+          content = CS.ConfFact.LangFormat4DataInit("LoginConnectGameServerFail"),
+          funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
+          btnNum = 1,
           bLockBack = true,
           func1 = function()
             self.m_iHeartBeatLastReceiveTime = CsTime.realtimeSinceStartup
@@ -73,7 +89,11 @@ function NetworkManager:RegisterNetwork()
         })
       else
         utils.CheckAndPushCommonTips({
-          tipsID = 9989,
+          title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+          content = CS.ConfFact.LangFormat4DataInit("LoginConnectGameServerFail"),
+          funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
+          funcText2 = CS.ConfFact.LangFormat4DataInit("CommonReLogin"),
+          btnNum = 2,
           bLockBack = true,
           func1 = function()
             self.m_iHeartBeatLastReceiveTime = CsTime.realtimeSinceStartup
@@ -121,7 +141,10 @@ function NetworkManager:OnSessionExpired()
     log.error("Session Key Expired")
     
     utils.CheckAndPushCommonTips({
-      tipsID = 9988,
+      title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+      content = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsContent9988"),
+      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonReLogin"),
+      btnNum = 1,
       bLockBack = true,
       func1 = function()
         CS.ApplicationManager.Instance:RestartGame()

@@ -66,6 +66,8 @@ SystemType_CastleDispatch = 51
 SystemType_Rogue = 58
 SystemType_CDKey = 59
 SystemType_Hunting = 60
+SystemType_AttractLetter = 61
+SystemType_Ancient = 62
 SystemType_Hero = 101
 SystemType_HeroLevel = 102
 SystemType_Goblin = 200
@@ -965,6 +967,7 @@ CmdHeroBriefData.Definition = {
   "iMaxHP",
   "mEquip",
   "mSkill",
+  "iFashion",
   iHeroId = {
     0,
     0,
@@ -1012,6 +1015,12 @@ CmdHeroBriefData.Definition = {
     0,
     sdp.SdpMap(8, 8),
     nil
+  },
+  iFashion = {
+    8,
+    0,
+    8,
+    0
   }
 }
 CmdStageCampDataSimple = sdp.SdpStruct("CmdStageCampDataSimple")
@@ -3377,6 +3386,7 @@ CmdQuest.Definition = {
   "iState",
   "iAcceptTime",
   "vCondStep",
+  "vUniqData",
   iId = {
     0,
     0,
@@ -3403,6 +3413,12 @@ CmdQuest.Definition = {
   },
   vCondStep = {
     4,
+    0,
+    sdp.SdpVector(8),
+    nil
+  },
+  vUniqData = {
+    5,
     0,
     sdp.SdpVector(8),
     nil

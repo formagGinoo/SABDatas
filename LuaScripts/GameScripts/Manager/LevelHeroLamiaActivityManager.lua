@@ -353,7 +353,7 @@ function LevelHeroLamiaActivityManager:StartEnterBattle(levelType, activityID, l
   self.m_curActivityID = activityID
   self.m_curBattleLevelID = levelID
   self:BeforeEnterBattle(levelType, activityID, levelID)
-  local mapID = self:GetLevelMapID(levelType, levelID)
+  local mapID = self:GetLevelMapID(levelType, activityID, levelID)
   self:EnterPVEBattle(mapID)
 end
 
@@ -368,7 +368,7 @@ function LevelHeroLamiaActivityManager:BeforeEnterBattle(levelType, activityID, 
   CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)
 end
 
-function LevelHeroLamiaActivityManager:GetLevelMapID(levelType, levelID)
+function LevelHeroLamiaActivityManager:GetLevelMapID(levelType, activityID, levelID)
   if levelType ~= LevelHeroLamiaActivityManager.LevelType.Lamia then
     return
   end
@@ -424,25 +424,39 @@ end
 
 function LevelHeroLamiaActivityManager:OnBackLobby(fCB)
   local formStr
-  GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function(isSuc)
-    if isSuc then
-      log.info("OnBackLobby MainCity LoadBack")
-      local formPanelStr, formUIDefineID, paramTab = self:GetBackLobbyFormAndParam()
-      formStr = formPanelStr
-      StackFlow:Push(formUIDefineID, paramTab)
-      if "Form_Activity102Dalcaro_DialogueMain" == formPanelStr then
-        CS.GlobalManager.Instance:TriggerWwiseBGMState(115)
-        CS.GlobalManager.Instance:TriggerWwiseBGMState(116)
-      elseif "Form_Activity101Lamia_DialogueMain" == formPanelStr then
-        CS.GlobalManager.Instance:TriggerWwiseBGMState(58)
-        CS.GlobalManager.Instance:TriggerWwiseBGMState(93)
-      end
-      if fCB then
-        fCB(formStr)
-      end
-      self:ClearCurBattleInfo()
+  local formPanelStr, formUIDefineID, paramTab = self:GetBackLobbyFormAndParam()
+  
+  local function OnLoadFinish(isSuc)
+    log.info("OnBackLobby MainCity LoadBack")
+    formStr = formPanelStr
+    StackFlow:Push(formUIDefineID, paramTab)
+    if "Form_Activity102Dalcaro_DialogueMain" == formPanelStr then
+      CS.GlobalManager.Instance:TriggerWwiseBGMState(115)
+      CS.GlobalManager.Instance:TriggerWwiseBGMState(116)
+    elseif "Form_Activity101Lamia_DialogueMain" == formPanelStr then
+      CS.GlobalManager.Instance:TriggerWwiseBGMState(58)
+      CS.GlobalManager.Instance:TriggerWwiseBGMState(93)
     end
-  end, true)
+    if fCB then
+      fCB(formStr)
+    end
+    self:broadcastEvent("eGameEvent_ActExploreUIReady")
+    self:ClearCurBattleInfo()
+  end
+  
+  local levelCfg = self:GetLevelCfgByID(self.m_curBattleLevelID)
+  if levelCfg then
+    local iActID = levelCfg.m_ActivityID
+    local cfg = HeroActivityManager:GetMainInfoByActID(iActID)
+    if cfg and cfg.m_ActivityType == 2 and cfg.m_ExploreScene ~= "" then
+      local scene = GameSceneManager:GetGameScene(GameSceneManager.SceneID.ActExplore)
+      scene:OpenScene(cfg.m_ExploreScene, iActID, function()
+        OnLoadFinish()
+      end, true)
+      return
+    end
+  end
+  GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, OnLoadFinish, true)
 end
 
 function LevelHeroLamiaActivityManager:ClearCurBattleInfo()

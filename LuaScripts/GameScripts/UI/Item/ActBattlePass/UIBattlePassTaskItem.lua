@@ -46,8 +46,7 @@ end
 function UIBattlePassTaskItem:OnBtngoClicked()
   QuickOpenFuncUtil:OpenFunc(self.m_taskCfg.m_Jump)
   if self.m_taskCfg.m_Jump == 18 then
-    StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_BATTLEPASSTASK)
-    StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_BATTLEPASS)
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_CloseMain")
   end
 end
 

@@ -22,6 +22,10 @@ function PayStoreActivity:OnRequestGetRewardSC(sc, msg)
 end
 
 function PayStoreActivity:InitData(m_stSdpConfig)
+  self.m_NewSortConfig = {}
+  if not m_stSdpConfig then
+    return
+  end
   local mStore = m_stSdpConfig.stCommonCfg.mStore
   local sort_config = {}
   for _, v in pairs(mStore or {}) do
@@ -80,7 +84,7 @@ function PayStoreActivity:CheckStoreIsOpen(store)
 end
 
 function PayStoreActivity:GetNewStoreList()
-  return self.m_NewSortConfig
+  return self.m_NewSortConfig or {}
 end
 
 function PayStoreActivity:GetRechargeStoreID()
@@ -145,9 +149,9 @@ function PayStoreActivity:GetStoreSoldoutState(iStoreType)
     for index, store in ipairs(v) do
       if store.iStoreType == iStoreType then
         local goodsData = store.stGoodsConfig.mGoods
-        for i = 1, #goodsData do
-          local buyTimes = self:GetBuyCount(store.iStoreId, goodsData[i].iGoodsId)
-          local bIsSoldOut = buyTimes >= goodsData[i].iLimitNum and goodsData[i].iLimitNum > 0
+        for k, data in pairs(goodsData) do
+          local buyTimes = self:GetBuyCount(store.iStoreId, data.iGoodsId)
+          local bIsSoldOut = buyTimes >= data.iLimitNum and data.iLimitNum > 0
           if not bIsSoldOut then
             isCanShow = true
             break
@@ -202,6 +206,152 @@ function PayStoreActivity:GetPushStoreConfigByType(storeType)
   end
 end
 
+function PayStoreActivity:GetActivityFashionStoreID()
+  for i, v in ipairs(self.m_NewSortConfig) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+        return store.iStoreId
+      end
+    end
+  end
+  return 0
+end
+
+function PayStoreActivity:CheckIsShowFashionStore()
+  local isCanShow = false
+  for _, v in ipairs(self.m_NewSortConfig) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+        local goodsData = store.stGoodsConfig.mGoods
+        for m, goodsInfo in pairs(goodsData) do
+          local inTime = true
+          if goodsInfo.iLaunchTime and goodsInfo.iRemovalTime and goodsInfo.iLaunchTime ~= 0 then
+            inTime = TimeUtil:IsInTime(goodsInfo.iLaunchTime, goodsInfo.iRemovalTime)
+          end
+          if inTime then
+            isCanShow = true
+            break
+          end
+        end
+        break
+      end
+    end
+  end
+  return isCanShow
+end
+
+function PayStoreActivity:CheckFashionStoreRedPoint()
+  local redPoint = false
+  for _, v in ipairs(self.m_NewSortConfig) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+        local goodsData = store.stGoodsConfig.mGoods
+        for m, goodsInfo in pairs(goodsData) do
+          local buyTimes = self:GetBuyCount(store.iStoreId, goodsInfo.iGoodsId)
+          local bIsSoldOut = buyTimes >= goodsInfo.iLimitNum and goodsInfo.iLimitNum > 0
+          local inTime = true
+          if goodsInfo.iLaunchTime and goodsInfo.iRemovalTime and goodsInfo.iLaunchTime ~= 0 then
+            inTime = TimeUtil:IsInTime(goodsInfo.iLaunchTime, goodsInfo.iRemovalTime)
+          end
+          if not bIsSoldOut and inTime then
+            local vReward = goodsInfo.vReward
+            if vReward and vReward[1] then
+              local iID = vReward[1].iID
+              local heroFashion = HeroManager:GetHeroFashion()
+              if heroFashion then
+                local isHaveFashion = heroFashion:IsFashionHave(iID)
+                if isHaveFashion then
+                  goto lbl_92
+                end
+              end
+              local red = LocalDataManager:GetIntSimple("Red_Point_FashionStore_" .. tostring(iID) .. tostring(m), 0)
+              if red == 0 then
+                return true
+              end
+            end
+          end
+        end
+        break
+      end
+    end
+    ::lbl_92::
+  end
+  return redPoint
+end
+
+function PayStoreActivity:GetFashionStoreCommodity()
+  local goods = {}
+  for _, v in ipairs(self.m_NewSortConfig) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+        local goodsData = store.stGoodsConfig.mGoods
+        for m, goodsInfo in pairs(goodsData) do
+          local inTime = true
+          if goodsInfo.iLaunchTime and goodsInfo.iRemovalTime and goodsInfo.iLaunchTime ~= 0 then
+            inTime = TimeUtil:IsInTime(goodsInfo.iLaunchTime, goodsInfo.iRemovalTime)
+          end
+          if inTime then
+            if not goodsInfo.goods_index then
+              goodsInfo.goods_index = m
+            end
+            goods[#goods + 1] = goodsInfo
+          end
+        end
+        return goods
+      end
+    end
+  end
+  return goods
+end
+
+function PayStoreActivity:GetFashionStoreCommoditySpine()
+  local skinIdList = {}
+  local goods = self:GetFashionStoreCommodity()
+  if table.getn(goods) > 0 then
+    for i, goodsData in ipairs(goods) do
+      local vReward = goodsData.vReward
+      if vReward and vReward[1] then
+        skinIdList[#skinIdList + 1] = vReward[1].iID
+      end
+    end
+  end
+  return skinIdList
+end
+
+function PayStoreActivity:GetFashionStoreCommodityInfoById(id)
+  local goods = self:GetFashionStoreCommodity()
+  if table.getn(goods) > 0 then
+    for i, goodsData in ipairs(goods) do
+      local vReward = goodsData.vReward
+      if vReward and vReward[1] and vReward[1].iID == id then
+        return goodsData
+      end
+    end
+  end
+end
+
+function PayStoreActivity:GetFashionStoreToBeReleasedCommodity()
+  local goods = {}
+  for _, v in ipairs(self.m_NewSortConfig) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+        local goodsData = store.stGoodsConfig.mGoods
+        for m, goodsInfo in pairs(goodsData) do
+          local inTime = true
+          if goodsInfo.iLaunchTime and goodsInfo.iLaunchTime ~= 0 then
+            inTime = TimeUtil:IsInTime(goodsInfo.iLaunchTime, goodsInfo.iRemovalTime)
+          end
+          if not inTime then
+            goods[#goods + 1] = goodsInfo
+          end
+        end
+        return goods
+      end
+    end
+  end
+  return goods
+end
+
 function PayStoreActivity:OnResetSdpConfig(m_stSdpConfig)
   self:InitData(m_stSdpConfig)
   self:broadcastEvent("eGameEvent_Activity_RefreshPayStore")
@@ -210,14 +360,15 @@ end
 local WindowRedEnum = {
   [1] = RedDotDefine.ModuleType.MallNewbieGiftPackTabl,
   [2] = RedDotDefine.ModuleType.ActivityGiftPackTabl,
-  [3] = RedDotDefine.ModuleType.MallDailyPackTabl
+  [3] = RedDotDefine.ModuleType.MallDailyPackTabl,
+  [8] = RedDotDefine.ModuleType.MallFashionTab
 }
 
 function PayStoreActivity:OnResetStatusData()
   self:broadcastEvent("eGameEvent_Activity_ResetStatus")
   for i, v in ipairs(self.m_NewSortConfig) do
     local redDotEnum
-    if 1 < #v then
+    if v[1] then
       redDotEnum = WindowRedEnum[v[1].iWindowID]
     end
     if redDotEnum then
@@ -232,7 +383,7 @@ end
 function PayStoreActivity:OnGetMallStoreOtherActRed()
   for i, v in ipairs(self.m_NewSortConfig) do
     local redDotEnum
-    if 1 < #v then
+    if v[1] then
       redDotEnum = WindowRedEnum[v[1].iWindowID]
     end
     if redDotEnum then
@@ -260,11 +411,17 @@ function PayStoreActivity:HasStoreRedDot(store)
   if store.iStoreType == MTTDProto.CmdActPayStoreType_SignGift then
     local signGiftAct = ActivityManager:GetActivityByType(MTTD.ActivityType_SignGift)
     if signGiftAct then
+      self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+        redDotKey = RedDotDefine.ModuleType.MallNewStudentsSupplyPackTab,
+        count = signGiftAct:checkShowRed() and 1 or 0
+      })
       return signGiftAct:checkShowRed()
     end
     return false
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
+    return self:CheckFashionStoreRedPoint()
   end
-  for _, good in ipairs(store.stGoodsConfig.mGoods) do
+  for _, good in pairs(store.stGoodsConfig.mGoods) do
     if good.sProductId == "" then
       local count = self:GetBuyCount(store.iStoreId, good.iGoodsId)
       if count < good.iLimitNum then

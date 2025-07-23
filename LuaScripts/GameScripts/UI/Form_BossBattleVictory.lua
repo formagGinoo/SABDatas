@@ -6,12 +6,19 @@ end
 function Form_BossBattleVictory:AfterInit()
   self.super.AfterInit(self)
   self.m_itemDataList = nil
+  self.m_itemDataListEx = nil
   self.m_rewardItemBase = self.m_reward_root.transform:Find("c_common_item")
+  self.m_rewardItemBaseEx = self.m_reward_rootex.transform:Find("c_common_item")
   self.m_ItemNodeList = {}
+  self.m_ItemNodeListEx = {}
   local itemNode = self:CreateItemNode(self.m_rewardItemBase)
+  local itemNodeEx = self:CreateItemNode(self.m_rewardItemBaseEx)
   self.m_itemNameStr = self.m_rewardItemBase.name
+  self.m_itemNameStrEx = self.m_rewardItemBaseEx.name
   self.m_ItemNodeList[#self.m_ItemNodeList + 1] = itemNode
+  self.m_ItemNodeListEx[#self.m_ItemNodeListEx + 1] = itemNodeEx
   UILuaHelper.SetActive(self.m_rewardItemBase, false)
+  UILuaHelper.SetActive(self.m_rewardItemBaseEx, false)
   self.m_levelType = nil
   self.m_curLevelID = nil
   self.m_csRewardList = nil
@@ -26,6 +33,8 @@ function Form_BossBattleVictory:AfterInit()
   self.m_curStageIndex = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_BossBattleVictory:OnActive()
@@ -75,6 +84,7 @@ function Form_BossBattleVictory:FreshRewardListData()
     return
   end
   self.m_itemDataList = {}
+  self.m_itemDataListEx = {}
   if self.m_csExRewardList then
     for _, rewardCsData in pairs(self.m_csExRewardList) do
       if rewardCsData then
@@ -83,7 +93,7 @@ function Form_BossBattleVictory:FreshRewardListData()
           iNum = rewardCsData.iNum,
           is_extra = true
         }
-        self.m_itemDataList[#self.m_itemDataList + 1] = tempReward
+        self.m_itemDataListEx[#self.m_itemDataListEx + 1] = tempReward
       end
     end
   end
@@ -122,13 +132,21 @@ function Form_BossBattleVictory:GetRandom(beginIndex, endIndex)
   return math.random(beginIndex, endIndex)
 end
 
-function Form_BossBattleVictory:GetSpineHeroID()
+function Form_BossBattleVictory:GetSpineFashionInfo()
+  local heroData
   if self.m_showHeroID ~= nil then
-    return self.m_showHeroID
+    local heroID = self.m_showHeroID
+    heroData = HeroManager:GetHeroDataByID(heroID)
+  else
+    local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
+    local randomIndex = self:GetRandom(1, #showHeroDataList)
+    heroData = showHeroDataList[randomIndex]
   end
-  local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
-  local randomIndex = self:GetRandom(1, #showHeroDataList)
-  return showHeroDataList[randomIndex].characterCfg.m_HeroID
+  if not heroData then
+    return
+  end
+  local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  return fashionInfo
 end
 
 function Form_BossBattleVictory:GetShowSpineAndVoice()
@@ -139,20 +157,18 @@ function Form_BossBattleVictory:GetShowSpineAndVoice()
   if not levelCfg then
     return
   end
-  local heroID = levelCfg.m_Settlement
-  local heroCfg
-  if heroID == nil or heroID == 0 then
-    heroID = self:GetSpineHeroID()
+  local fashionID = levelCfg.m_Settlement
+  local fashionInfo
+  if fashionID == nil or fashionID == 0 then
+    fashionInfo = self:GetSpineFashionInfo()
+  else
+    fashionInfo = self.m_HeroFashion:GetFashionInfoByID(fashionID)
   end
-  if not heroID then
+  if not fashionInfo then
     return
   end
-  heroCfg = HeroManager:GetHeroConfigByID(heroID)
-  if not heroCfg then
-    return
-  end
-  local voice = HeroManager:GetHeroBattleVictoryVoice(heroID)
-  local spineStr = heroCfg.m_Spine
+  local voice = self.m_HeroVoice:GetHeroBattleVictoryVoice(fashionInfo)
+  local spineStr = fashionInfo.m_Spine
   if not spineStr then
     return
   end
@@ -245,26 +261,34 @@ function Form_BossBattleVictory:FreshRewardItems()
   if self.m_isSim then
     return
   end
-  if not self.m_itemDataList then
+  self:UpdateRewardItems(self.m_itemDataList, self.m_ItemNodeList, self.m_reward_root, self.m_rewardItemBase, self.m_itemNameStr)
+  local hasExtraRewards = not self.m_isSim and self.m_itemDataListEx and #self.m_itemDataListEx > 0
+  UILuaHelper.SetActive(self.m_pnl_rewardex, hasExtraRewards)
+  UILuaHelper.SetActive(self.m_img_line2, not hasExtraRewards)
+  UILuaHelper.SetActive(self.m_img_line3, hasExtraRewards)
+  if hasExtraRewards then
+    self:UpdateRewardItems(self.m_itemDataListEx, self.m_ItemNodeListEx, self.m_reward_rootex, self.m_rewardItemBaseEx, self.m_itemNameStrEx)
+  end
+end
+
+function Form_BossBattleVictory:UpdateRewardItems(itemDataList, itemNodes, rewardRoot, rewardItemBase, itemNameStr)
+  if not itemDataList then
     return
   end
-  local itemNodes = self.m_ItemNodeList
-  local dataLen = #self.m_itemDataList
-  local parentTrans = self.m_reward_root
+  local dataLen = #itemDataList
   local childCount = #itemNodes
-  local totalFreshNum = dataLen < childCount and childCount or dataLen
+  local totalFreshNum = math.max(childCount, dataLen)
   for i = 1, totalFreshNum do
     if i <= childCount and i <= dataLen then
       local itemNode = itemNodes[i]
-      self:FreshItemNodeShow(itemNode, self.m_itemDataList[i])
+      self:FreshItemNodeShow(itemNode, itemDataList[i])
       itemNode:SetActive(true)
     elseif i > childCount and i <= dataLen then
-      local itemObj = GameObject.Instantiate(self.m_rewardItemBase, parentTrans.transform).gameObject
-      itemObj.name = self.m_itemNameStr .. i
+      local itemObj = GameObject.Instantiate(rewardItemBase, rewardRoot.transform).gameObject
+      itemObj.name = itemNameStr .. i
       local itemNode = self:CreateItemNode(itemObj)
-      itemNodes[#itemNodes + 1] = itemNode
-      local itemData = self.m_itemDataList[i]
-      self:FreshItemNodeShow(itemNode, itemData)
+      table.insert(itemNodes, itemNode)
+      self:FreshItemNodeShow(itemNode, itemDataList[i])
       itemNode:SetActive(true)
     elseif i <= childCount and i > dataLen then
       itemNodes[i]:SetActive(false)

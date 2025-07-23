@@ -97,10 +97,10 @@ function Form_BattleSetting:AfterInit()
     self.m_skill_group:SetActive(true)
   end
   if ChannelManager:IsEUChannel() and not ChannelManager:IsWindows() then
-    self.m_txt_moreinfo:SetActive(true)
-    self.m_txt_moreinfo:GetComponent("ButtonExtensions").Clicked = handler(self, self.OnBtnMoreClicked)
+    self.m_z_txt_moreinfo:SetActive(true)
+    self.m_z_txt_moreinfo:GetComponent("ButtonExtensions").Clicked = handler(self, self.OnBtnMoreClicked)
   else
-    self.m_txt_moreinfo:SetActive(false)
+    self.m_z_txt_moreinfo:SetActive(false)
   end
 end
 
@@ -828,7 +828,7 @@ function Form_BattleSetting:OnBtncustomerlistClicked()
     urlString = SettingManager:GetUrlWithLanguageId(220013)
   end
   if ChannelManager:IsUSChannel() then
-    urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230006).m_mMessage
+    urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230020).m_mMessage
   end
   if ChannelManager:IsDMMChannel() then
     urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230012).m_mMessage
@@ -847,7 +847,7 @@ function Form_BattleSetting:OnBtnsecretClicked()
     urlString = SettingManager:GetUrlWithLanguageId(220014)
   end
   if ChannelManager:IsUSChannel() then
-    urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230005).m_mMessage
+    urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230019).m_mMessage
   end
   if ChannelManager:IsDMMChannel() then
     urlString = ConfigManager:GetConfigInsByName("CommonText"):GetValue_ById(230011).m_mMessage

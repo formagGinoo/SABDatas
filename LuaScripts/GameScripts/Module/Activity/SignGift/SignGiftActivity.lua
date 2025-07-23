@@ -37,6 +37,10 @@ function SignGiftActivity:OnResetStatusData()
       iActivityID = self:getID()
     })
   end
+  self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+    redDotKey = RedDotDefine.ModuleType.MallNewStudentsSupplyPackTab,
+    count = self:checkShowRed() and 1 or 0
+  })
 end
 
 function SignGiftActivity:GetCommonCfg()
@@ -85,6 +89,9 @@ function SignGiftActivity:checkCondition()
     return false
   end
   if not self:CheckOtherCondition() then
+    return false
+  end
+  if self.m_stActivityData.iEndTime == 0 and self.m_buyTimes and 0 < self.m_buyTimes and self.m_maxRewardDays >= maxRewardDay then
     return false
   end
   return true

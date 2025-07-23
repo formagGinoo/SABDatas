@@ -67,6 +67,7 @@ function meta:OnCreate()
   self:loadManager("Manager/BackPressedManager")
   self:loadManager("Manager/RogueStageManager")
   self:loadManager("Manager/HuntingRaidManager")
+  self:loadManager("Manager/AncientManager")
 end
 
 function meta:loadManager(managerpath, ...)

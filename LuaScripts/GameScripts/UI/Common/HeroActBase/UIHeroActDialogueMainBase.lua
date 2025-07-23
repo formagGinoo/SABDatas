@@ -85,6 +85,7 @@ end
 function UIHeroActDialogueMainBase:OnDestroy()
   UIHeroActDialogueMainBase.super.OnDestroy(self)
   self:ClearCacheData()
+  self:UnRegisterAllRedDotItem()
 end
 
 function UIHeroActDialogueMainBase:ClearCacheData()
@@ -252,10 +253,11 @@ function UIHeroActDialogueMainBase:CheckPopUpLastPassSpecialReward()
 end
 
 function UIHeroActDialogueMainBase:FreshFreeNums()
-  local curUseTimes = self.m_levelHelper:GetDailyTimesBySubActivityAndSubID(self.m_activityID, self.DegreeCfgTab[LevelDegree.Normal].activitySubID) or 0
   local totalFreeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("ActLamiaPassDailyLimit") or 0)
-  local leftNum = totalFreeNum - curUseTimes
-  self.m_txt_consume_num_Text.text = leftNum .. "/" .. totalFreeNum
+  local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  local costItemID = mainActInfoCfg.m_PassItem
+  local itemNum = ItemManager:GetItemNum(costItemID)
+  self.m_txt_consume_num_Text.text = itemNum .. "/" .. totalFreeNum
 end
 
 function UIHeroActDialogueMainBase:FreshShopEnterItem()
@@ -399,8 +401,8 @@ function UIHeroActDialogueMainBase:OnBtnshopClicked()
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
     return
   end
-  ShopManager:ReqGetShopData(shop_id)
   self.bIsWaitingShopData = true
+  ShopManager:ReqGetShopData(shop_id)
 end
 
 function UIHeroActDialogueMainBase:OnIconshopClicked()
@@ -415,6 +417,30 @@ function UIHeroActDialogueMainBase:OnLevelDetailBgClick()
     self.m_curDetailLevelID = nil
     self:FreshLevelDetailShow()
   end
+end
+
+function UIHeroActDialogueMainBase:GetDownloadResourceExtra(tParam)
+  local vPackage = {}
+  local vResourceExtra = {}
+  if tParam.main_id then
+    local act_id = tParam.main_id
+    local subActivityID = HeroActivityManager:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.NormalLevel)
+    local subActivityInfoCfg = HeroActivityManager:GetSubInfoByID(subActivityID)
+    if subActivityInfoCfg then
+      local vPackageSub, vResourceExtraSub = SubPanelManager:GetSubPanelDownloadResourceExtra(subActivityInfoCfg.m_SubPrefab)
+      if vPackageSub ~= nil then
+        for m = 1, #vPackageSub do
+          vPackage[#vPackage + 1] = vPackageSub[m]
+        end
+      end
+      if vResourceExtraSub ~= nil then
+        for n = 1, #vResourceExtraSub do
+          vResourceExtra[#vResourceExtra + 1] = vResourceExtraSub[n]
+        end
+      end
+    end
+  end
+  return vPackage, vResourceExtra
 end
 
 function UIHeroActDialogueMainBase:IsFullScreen()

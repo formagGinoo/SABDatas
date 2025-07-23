@@ -510,7 +510,9 @@ function LevelDetailSubPanel:OnBtnStoryBackClicked()
   if not self.m_curLevelID then
     return
   end
-  BattleFlowManager:EnterShowPlot(self.m_curLevelID, self.m_curBattleWorldCfg.m_MapID, function(backFun)
+  BattleFlowManager:EnterShowPlot(self.m_curLevelID, self.m_curBattleWorldCfg.m_MapID, self.m_levelType, {
+    self.m_curLevelID
+  }, function(backFun)
     LevelManager:LoadLevelMapScene(function()
       log.info("LevelDetailSubPanel OnBtnStoryBackClicked LevelMap LoadBack")
       BattleFlowManager:CheckSetEnterTimer(LevelManager.LevelType.MainLevel)

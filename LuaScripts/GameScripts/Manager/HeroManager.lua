@@ -72,7 +72,14 @@ SpinePlaceCfg = {
   MainShow = "mainshow",
   MainShowSmall = "mainshowsmall",
   ActivityGacha = "activity_gacha",
-  HuntingRaid = "huntingraid"
+  HuntingRaid = "huntingraid",
+  HeroFashionItem = "herofashionitem",
+  HeroBpMain = "herobpmain",
+  HeroBpBenefits = "herobpbenefits",
+  HeroFashionStore = "fashionstore",
+  HeroNewSkin = "getskin",
+  SignIn10DayFace = "signin10dayface",
+  SignIn10DaySystem = "signin10daysystem"
 }
 AttrShowType = {
   Camp = 1,
@@ -158,6 +165,7 @@ function HeroManager:OnCreate()
   self.m_circulationDic = nil
   self.m_cacheCharacterCfgDic = {}
   self.m_monsterLevelTemplateCache = {}
+  self.m_cacheCharacterViewModeCfgDic = {}
   self:AddEventListener()
 end
 
@@ -168,6 +176,7 @@ function HeroManager:AddEventListener()
   self:addEventListener("eGameEvent_OtherSystem_UpdateHeroData", handler(self, self.OnHeroEquipDataChange))
   self:addEventListener("eGameEvent_Inherit_Change", handler(self, self.OnInheritChange))
   self:addEventListener("eGameEvent_Inherit_Init", handler(self, self.OnInheritInit))
+  self:addEventListener("eGameEvent_Hero_AttractRedCheck", handler(self, self.OnItemInit))
 end
 
 function HeroManager:OnItemInit()
@@ -200,8 +209,19 @@ function HeroManager:OnInitNetwork()
   RPCS():Listen_Push_SetHeroData(handler(self, self.OnPushSetHeroData), "HeroManager")
   RPCS():Listen_Push_HeroList(handler(self, self.OnPushSetHeroListData), "HeroManager")
   RPCS():Listen_Push_FormPower(handler(self, self.OnPushFormPower), "HeroManager")
+  RPCS():Listen_Push_Hero_AddFashion(handler(self, self.OnPushHeroAddFashion), "HeroManager")
   self:ReqGetCirculation()
   self:ReqGetRecommendData()
+end
+
+function HeroManager:OnAfterInitConfig()
+  local characterViewIns = ConfigManager:GetConfigInsByName("CharacterViewMode")
+  local characterViewAll = characterViewIns:GetAll()
+  if characterViewAll then
+    for i, v in pairs(characterViewAll) do
+      self.m_cacheCharacterViewModeCfgDic[v.m_FashionId] = v
+    end
+  end
 end
 
 function HeroManager:ReqGetRecommendData()
@@ -240,6 +260,8 @@ function HeroManager:OnHeroGetListSC(stHeroListData, msg)
   self.m_CharacterInfoCfg = ConfigManager:GetConfigInsByName("CharacterInfo")
   self.m_HeroAttr = require("Manager/ManagerPlus/HeroAttr").new()
   self.m_HeroGuideHelper = require("Manager/ManagerPlus/HeroGuideHelper").new()
+  self.m_HeroFashion = require("Manager/ManagerPlus/HeroFashion").new()
+  self.m_HeroVoice = require("Manager/ManagerPlus/HeroVoice").new()
   self.CharacterLevelIns = ConfigManager:GetConfigInsByName("CharacterLevel")
   self.GlobalSettingsIns = ConfigManager:GetConfigInsByName("GlobalSettings")
   self.CharacterLevelLockIns = ConfigManager:GetConfigInsByName("CharacterLevelLock")
@@ -262,6 +284,7 @@ function HeroManager:OnHeroGetListSC(stHeroListData, msg)
     end
   end
   self.m_HeroGuideHelper:InitAllHeroGuideList()
+  self.m_HeroFashion:InitFashionStatus(stHeroListData.mHasFashion)
   self:CheckUpdateHeroEntryRedDotCount()
 end
 
@@ -325,6 +348,21 @@ function HeroManager:OnPushFormPower(stFormPowerData, msg)
         end
       end
     end
+  end
+end
+
+function HeroManager:OnPushHeroAddFashion(stHeroAddFashionData, msg)
+  if not stHeroAddFashionData then
+    return
+  end
+  if not self.m_HeroFashion then
+    return
+  end
+  local fashionID = stHeroAddFashionData.iFashionId
+  local isRepeat = stHeroAddFashionData.bSame
+  if isRepeat ~= true then
+    self.m_HeroFashion:AddNewFashion(fashionID)
+    self:broadcastEvent("eGameEvent_Hero_GetNewFashion", {fashionID = fashionID})
   end
 end
 
@@ -588,6 +626,29 @@ function HeroManager:OnHeroSkillResetSC(stData, msg)
   self:broadcastEvent("eGameEvent_Hero_ResetSkillLevel")
 end
 
+function HeroManager:ReqHeroSetFashion(heroID, fashionID)
+  if not heroID then
+    return
+  end
+  if not fashionID then
+    return
+  end
+  local msg = MTTDProto.Cmd_Hero_SetFashion_CS()
+  msg.iHeroId = heroID
+  msg.iFashionId = fashionID
+  RPCS():Hero_SetFashion(msg, handler(self, self.OnHeroSetFashionSC))
+end
+
+function HeroManager:OnHeroSetFashionSC(stData, msg)
+  if not stData then
+    return
+  end
+  local heroID = stData.iHeroId
+  local fashionID = stData.iFashionId
+  self:__FreshHeroDataFashion(heroID, fashionID)
+  self:broadcastEvent("eGameEvent_Hero_SetFashion", {heroID = heroID, fashionID = fashionID})
+end
+
 function HeroManager:__CreateSkillTypeSort()
   local globalConfig = ConfigManager:GetConfigInsByName("GlobalSettings")
   local skillTypeSortStr = globalConfig:GetValue_ByName("SkillTypeSorting").m_Value
@@ -664,6 +725,20 @@ function HeroManager:__FreshHeroData(heroData)
     end
   end
   return isHave, heroID
+end
+
+function HeroManager:__FreshHeroDataFashion(heroID, fashionID)
+  if not heroID then
+    return
+  end
+  if not fashionID then
+    return
+  end
+  local heroData = self:GetHeroDataByID(heroID)
+  if not heroData then
+    return
+  end
+  heroData.serverData.iFashion = fashionID
 end
 
 function HeroManager:__IsHeroLvUpHaveEnoughItem(heroData)
@@ -906,6 +981,14 @@ function HeroManager:GetHeroGuideHelper()
   return self.m_HeroGuideHelper
 end
 
+function HeroManager:GetHeroFashion()
+  return self.m_HeroFashion
+end
+
+function HeroManager:GetHeroVoice()
+  return self.m_HeroVoice
+end
+
 function HeroManager:GetHeroEquippedDataByID(heroID)
   if not heroID then
     return
@@ -931,6 +1014,22 @@ function HeroManager:IsHeroCanUpGrade(heroID)
     return 0
   end
   return self:__IsHeroLvCanUpByHeroData(heroData) and 1 or 0
+end
+
+function HeroManager:IsHeroBaseInfoTabRedDot(heroID)
+  local heroData = self:GetHeroDataByID(heroID)
+  if not heroData then
+    return 0
+  end
+  local redPoint = 0
+  local isCanBreakNum = self:IsHeroCanBreakUp(heroID)
+  redPoint = redPoint + isCanBreakNum
+  if 0 < redPoint then
+    return redPoint
+  end
+  local isFashionNum = self:IsHeroFashionHaveRedDot(heroID)
+  redPoint = redPoint + isFashionNum
+  return redPoint
 end
 
 function HeroManager:IsHeroCanBreakUp(heroID)
@@ -1010,6 +1109,11 @@ function HeroManager:IsHeroListItemHaveRedDot(heroID)
   if 0 < redPoint then
     return redPoint
   end
+  local isFashionNum = self:IsHeroFashionHaveRedDot(heroID)
+  redPoint = redPoint + isFashionNum
+  if 0 < redPoint then
+    return redPoint
+  end
   redPoint = EquipManager:IsHeroCanEquipped(heroID)
   return redPoint
 end
@@ -1028,6 +1132,20 @@ function HeroManager:IsHeroEntryHaveRedDot(heroID)
   local isAttractNum = self:IsHeroAttractRedDot(heroID)
   redPoint = redPoint + isAttractNum
   return redPoint
+end
+
+function HeroManager:IsHeroFashionHaveRedDot(heroID)
+  if not heroID then
+    return 0
+  end
+  if not self.m_HeroFashion then
+    return 0
+  end
+  local isFashionBtnShow = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.HeroFashion)
+  if isFashionBtnShow ~= true then
+    return 0
+  end
+  return self.m_HeroFashion:IsHeroFashionHaveRedDot(heroID)
 end
 
 function HeroManager:GetHeroEntryRedDotCount()
@@ -1573,201 +1691,6 @@ function HeroManager:GetHeroSkillShowTypeDes(heroId, skillId)
   return skillTypeName, skillShowType
 end
 
-function HeroManager:GetHeroGainVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_GainVoice then
-    return
-  end
-  return presentationData.m_GainVoice
-end
-
-function HeroManager:GetHeroShowVoiceText(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return ""
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return ""
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_GainVoiceId or presentationData.m_GainVoiceId == 0 then
-    return ""
-  end
-  local firstId = 1
-  local AttractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("AttractVoiceText")
-  local cfg = AttractVoiceTextCfgIns:GetValue_ByVoiceIdAndTextId(tonumber(presentationData.m_GainVoiceId), firstId) or {}
-  return cfg.m_mText or ""
-end
-
-function HeroManager:GetHeroLevelUpVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_LevelupVoice then
-    return
-  end
-  local voiceList = string.split(presentationData.m_LevelupVoice, ";")
-  if 0 < #voiceList then
-    local random = math.random(1, #voiceList)
-    return voiceList[random]
-  end
-end
-
-function HeroManager:GetHeroTransfusionVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_CharTransfusionVoice then
-    return
-  end
-  return presentationData.m_CharTransfusionVoice
-end
-
-function HeroManager:GetHeroDisPatchVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_CharDispatchVoice then
-    return
-  end
-  return presentationData.m_CharDispatchVoice
-end
-
-function HeroManager:GetHeroIdleVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_CharIdleVoice then
-    return
-  end
-  return presentationData.m_CharIdleVoice
-end
-
-function HeroManager:GetHeroFavorLeveuUpVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_CharAffinityUpVoice then
-    return
-  end
-  local voiceTxtId = presentationData.m_CharAffinityUpVoiceID
-  local AttractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("AttractVoiceText")
-  local vVoiceTextList = AttractVoiceTextCfgIns:GetValue_ByVoiceId(tonumber(voiceTxtId))
-  local vVoiceTextListLua = {}
-  for k2, v2 in pairs(vVoiceTextList) do
-    vVoiceTextListLua[k2] = v2
-  end
-  local firstId = 1
-  local firstText = vVoiceTextListLua[firstId]
-  return presentationData.m_CharAffinityUpVoice, firstText.m_mText or ""
-end
-
-function HeroManager:GetHeroFavorLeveuUpMaxVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_CharAffinityMaxVoice then
-    return
-  end
-  local voiceTxtId = presentationData.m_CharAffinityMaxVoiceID
-  local AttractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("AttractVoiceText")
-  local vVoiceTextList = AttractVoiceTextCfgIns:GetValue_ByVoiceId(tonumber(voiceTxtId))
-  local vVoiceTextListLua = {}
-  for k2, v2 in pairs(vVoiceTextList) do
-    vVoiceTextListLua[k2] = v2
-  end
-  local firstId = 1
-  local firstText = vVoiceTextListLua[firstId]
-  return presentationData.m_CharAffinityMaxVoice, firstText.m_mText or ""
-end
-
-function HeroManager:GetHeroBreakVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_BreakVoice then
-    return
-  end
-  return presentationData.m_BreakVoice
-end
-
-function HeroManager:GetHeroBattleVictoryVoice(heroId)
-  local InGameCharacterIns = self:GetHeroConfigByID(heroId)
-  if not InGameCharacterIns or not InGameCharacterIns.m_PerformanceID then
-    return
-  end
-  local m_PerformanceID = InGameCharacterIns.m_PerformanceID[0]
-  if not m_PerformanceID then
-    return
-  end
-  local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
-  if not presentationData.m_WinVoice then
-    return
-  end
-  return presentationData.m_WinVoice
-end
-
 function HeroManager:GetHeroCfgListByCamp(camp)
   local characterIns = ConfigManager:GetConfigInsByName("CharacterInfo")
   local characterAll = characterIns:GetAll()
@@ -2061,6 +1984,7 @@ function HeroManager:GenerateCommonHeroIconData(serverData)
   commonHeroData.iBaseId = serverData.iBaseId
   commonHeroData.iOriLevel = serverData.iOriLevel or 0
   commonHeroData.iPower = serverData.iPower or 0
+  commonHeroData.iFashion = serverData.iFashion
   return commonHeroData
 end
 
@@ -2188,6 +2112,21 @@ function HeroManager:GetCharacterTrialCfgById(heroId)
     return
   end
   return cfg
+end
+
+function HeroManager:GetCurUseFashionID(heroID)
+  if not heroID then
+    return 0
+  end
+  local heroData = self:GetHeroDataByID(heroID)
+  if not heroData then
+    return 0
+  end
+  return heroData.serverData.iFashion
+end
+
+function HeroManager:GetCharacterViewModeCfgById(fashionId)
+  return self.m_cacheCharacterViewModeCfgDic[fashionId]
 end
 
 return HeroManager

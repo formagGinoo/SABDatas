@@ -45,7 +45,10 @@ function ActivityCommunityEntranceSubPanel:OnIconItemBind(templateCache, gameObj
   local showItem = self.m_stActivityInfoList[itemIndex]
   if showItem then
     local iconImg = templateCache:GameObject("c_img_icon"):GetComponent("Image")
-    UILuaHelper.SetAtlasSprite(iconImg, showItem.sJumpPic)
+    iconImg.gameObject:SetActive(false)
+    UILuaHelper.SetAtlasSprite(iconImg, showItem.sJumpPic, function()
+      iconImg.gameObject:SetActive(true)
+    end)
     templateCache:TMPPro("c_txt_name").text = showItem.sButtonName
     templateCache:TMPPro("c_txt_click").text = showItem.sJumpContent
     local btn = templateCache:GetComponent("Button")
@@ -53,7 +56,15 @@ function ActivityCommunityEntranceSubPanel:OnIconItemBind(templateCache, gameObj
       btn.onClick:RemoveAllListeners()
       btn.onClick:AddListener(function()
         local urlString = showItem.sJumpUrl
-        CS.DeviceUtil.OpenURLNew(urlString)
+        local sURL = ""
+        if string.startsWith(urlString, "LANG_") then
+          if self.m_stActivity then
+            sURL = self.m_stActivity:getLangText(urlString)
+          end
+        else
+          sURL = urlString
+        end
+        CS.DeviceUtil.OpenURLNew(sURL)
       end)
     end
   end

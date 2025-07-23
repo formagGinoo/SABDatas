@@ -39,14 +39,14 @@ function Form_CommonTips:OnActive()
     self.m_txt_yes_countdown_02:SetActive(true)
     self.m_txt_yes_countdown:SetActive(false)
     self.m_fAutoConfirmTime = 0
-    self.m_sAutoConfirmText = CommonTextIns:GetValue_ById(20024).m_mMessage
+    self.m_sAutoConfirmText = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsAutoStart")
     self:RefreshAutoConfirm(0)
   elseif self.m_param.btnNum == ConfirmCommonTipsStyle.TwoButtonAutoConfirm then
     self.m_bShowAutoConfirm = true
     self.m_txt_yes_countdown_02:SetActive(false)
     self.m_txt_yes_countdown:SetActive(true)
     self.m_fAutoConfirmTime = 0
-    self.m_sAutoConfirmText = CommonTextIns:GetValue_ById(20024).m_mMessage
+    self.m_sAutoConfirmText = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsAutoStart")
     self:RefreshAutoConfirm(0)
   else
     self.m_bShowAutoConfirm = false

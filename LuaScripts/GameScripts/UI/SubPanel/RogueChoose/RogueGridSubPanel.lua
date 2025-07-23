@@ -1,13 +1,17 @@
 local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local RogueGridSubPanel = class("RogueGridSubPanel", UISubPanelBase)
 local RogueBgGridItem = require("UI/Item/RogueChoose/RogueBgGridItem")
-local GridSizeX = 106
+local GridSizeX = 108
 local HalfGridSizeX = math.floor(GridSizeX / 2)
-local GridSizeY = 106
+local GridSizeY = 98
 local HalfGridSizeY = math.floor(GridSizeY / 2)
 
 function RogueGridSubPanel:OnInit()
   self:AddEventListeners()
+  GridSizeX = self.m_uiVariables.GridSizeX
+  HalfGridSizeX = math.floor(GridSizeX / 2)
+  GridSizeY = self.m_uiVariables.GridSizeY
+  HalfGridSizeY = math.floor(GridSizeY / 2)
   self.m_rootTran = self.m_rootObj.transform
   self.MaxGridX = self.m_initData.maxGridX
   self.MaxGridY = self.m_initData.maxGridY

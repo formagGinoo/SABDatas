@@ -22,13 +22,8 @@ end
 
 function Form_BattleRecord:AfterInit()
   self.super.AfterInit(self)
-  self.tabCount = 0
-  local id, level = RoleManager:GetRoleAllianceInfo()
-  if id == "0" then
-    self.tabCount = 2
-  else
-    self.tabCount = 3
-  end
+  self.tabCount = 1
+  self:HideSomeTimeTab()
   self.tabList = {}
   self.heroListData = {
     [tabType.Recommend] = {},
@@ -59,6 +54,12 @@ end
 
 function Form_BattleRecord:OnDestroy()
   self.super.OnDestroy(self)
+end
+
+function Form_BattleRecord:HideSomeTimeTab()
+  self.m_btn_tabday:SetActive(false)
+  self.m_btn_tabweek:SetActive(false)
+  self.m_btn_tabmonth:SetActive(false)
 end
 
 function Form_BattleRecord:InitUI()

@@ -98,6 +98,11 @@ end
 function RogueStageManager:OnRogueTakeRewardSC(stData, msg)
   self.m_levelRogueStageHelper:UpdateTakenReward(stData)
   local vReward = stData.vReward
+  if stData.vActivityReward then
+    for _, v in ipairs(stData.vActivityReward) do
+      table.insert(vReward, v)
+    end
+  end
   if vReward and next(vReward) then
     utils.popUpRewardUI(vReward)
   end

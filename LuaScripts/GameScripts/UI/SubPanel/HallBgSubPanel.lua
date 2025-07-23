@@ -37,6 +37,7 @@ function HallBgSubPanel:OnInit()
   self.m_curBgNodeObj = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
   self.m_lastPlayVoiceTime = 0
   self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
   if self.m_spineClick then
@@ -141,6 +142,11 @@ function HallBgSubPanel:FreshCreateShowBgList()
         if tempRoleCfg then
           posData.characterCfg = tempRoleCfg
         end
+      elseif tempPosData.iType == MainBgType.Fashion then
+        local tempFashionInfo = self.m_HeroFashion:GetFashionInfoByID(tempPosData.iId)
+        if tempFashionInfo then
+          posData.fashionInfo = tempFashionInfo
+        end
       else
         local tempMainBgCfg = RoleManager:GetMainBackgroundCfg(tempPosData.iId)
         if tempMainBgCfg then
@@ -212,12 +218,25 @@ function HallBgSubPanel:FreshShowCurrentPos()
   end
   local isShowRole = curChoseData.iType == MainBgType.Role
   local isShowBg = curChoseData.iType == MainBgType.Activity
+  local isShowFashion = curChoseData.iType == MainBgType.Fashion
   self:StopCurPlayingVoice()
-  UILuaHelper.SetActive(self.m_heroDefaultBg, isShowRole)
-  if isShowRole then
+  UILuaHelper.SetActive(self.m_heroDefaultBg, isShowRole or isShowFashion)
+  if isShowRole or isShowFashion then
     self:HideBgRootChild()
-    self.m_curShowHeroData = HeroManager:GetHeroDataByID(curShowPosData.characterCfg.m_HeroID)
-    self:ShowHeroSpine(curShowPosData.characterCfg.m_Spine)
+    local showSpineStr
+    if isShowRole then
+      local heroID = curShowPosData.characterCfg.m_HeroID
+      self.m_curShowHeroData = HeroManager:GetHeroDataByID(heroID)
+      local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroID, 0)
+      if fashionInfo then
+        showSpineStr = fashionInfo.m_Spine
+      end
+    else
+      showSpineStr = curShowPosData.fashionInfo.m_Spine
+    end
+    if showSpineStr ~= nil and showSpineStr ~= "" then
+      self:ShowHeroSpine(showSpineStr)
+    end
   elseif isShowBg then
     self:HideCurSpine()
     self:ShowMainBg()
@@ -368,7 +387,7 @@ function HallBgSubPanel:OnLoadSpineBack()
   UILuaHelper.SetActive(spinePlaceObj, true)
   local spineRootObj = self.m_curHeroSpineObj.spineObj
   self.m_spineDitherExtension = spineRootObj.transform:GetComponent("SpineDitherExtension")
-  self.m_spineDitherExtension:SetSpineMaskAndGray(false)
+  UILuaHelper.SpineResetMatParam(spineRootObj)
   UILuaHelper.SetSpineTimeScale(spineRootObj, 1)
   if self.m_dragEndTimer then
     local leftTime = TimeService:GetTimerLeftTime(self.m_dragEndTimer)

@@ -2,7 +2,6 @@ local Form_Email = class("Form_Email", require("UI/UIFrames/Form_EmailUI"))
 local ipairs = _ENV.ipairs
 local next = _ENV.next
 local defaultChooseIndex = 1
-local CData_ItemInstance = CS.CData_Item.GetInstance()
 local MailLimitCount = 4
 local MailFJLimitCount = 5
 local EmailManager = _ENV.EmailManager
@@ -16,14 +15,20 @@ function Form_Email:AfterInit()
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   self.m_allShowEmailItemDataList = nil
   self.m_curChooseShowItemList = nil
-  self.m_cacheFJItemIconWidget = {}
-  self.m_cacheMailItemIconWidget = {}
+  local initGridData = {
+    itemClkBackFun = function(itemIndex)
+      self:OnEmailTabClick(itemIndex)
+    end
+  }
+  self.m_luaEmailListInfinityGrid = self:CreateInfinityGrid(self.m_email_list_InfinityGrid, "Email/UIEmailItem", initGridData)
+  local initFJGridData = {
+    itemClkBackFun = function(itemIndex)
+      self:OnFjItemClk(itemIndex)
+    end
+  }
+  self.m_luaFjListInfinityGrid = self:CreateInfinityGrid(self.m_fj_item_list_InfinityGrid, "Email/UIEmailFJItem", initFJGridData)
   self.m_curChooseIndex = nil
-  self.m_email_list_InfinityGrid:RegisterBindCallback(handler(self, self.OnEmailItemBind))
-  self.m_email_list_InfinityGrid:RegisterButtonCallback("c_email_tab_item", handler(self, self.OnEmailTabClick))
   self.m_email_list_scroll_rect = self.m_email_list:GetComponent("ScrollRect")
-  self.m_fj_item_list_InfinityGrid:RegisterBindCallback(handler(self, self.OnFjItemBind))
-  self.m_fj_item_list_InfinityGrid:RegisterButtonCallback("c_btnClick", handler(self, self.OnFjItemClk))
   self.m_fj_item_list_scroll_rect = self.m_fj_item_list:GetComponent("ScrollRect")
   local goBackBtnRoot = goRoot.transform:Find("panel_content/ui_common_top_back").gameObject
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk))
@@ -37,17 +42,14 @@ end
 
 function Form_Email:OnActive()
   self.super.OnActive(self)
-  self:RemoveEventListeners()
-  self.m_newEmailEventHandle = self:addEventListener("eGameEvent_Email_GetNewEmail", handler(self, self.OnEventGetNewEmail))
-  self.m_readEmailHandle = self:addEventListener("eGameEvent_Email_ReadEmail", handler(self, self.OnEventReadEmail))
-  self.m_delEmailHandle = self:addEventListener("eGameEvent_Email_DelEmail", handler(self, self.OnEventDelEmail))
-  self.m_attachEmailHandle = self:addEventListener("eGameEvent_Email_AttachEmail", handler(self, self.OnEventAttachEmail))
+  self:AddEventListeners()
   self:InitData()
   self:FreshUI()
 end
 
 function Form_Email:OnInactive()
   self.super.OnInactive(self)
+  self:RemoveAllEventListeners()
   self:ClearData()
 end
 
@@ -65,12 +67,6 @@ function Form_Email:InitData()
 end
 
 function Form_Email:ClearData()
-  if self.m_cacheFJItemIconWidget then
-    self.m_cacheFJItemIconWidget = {}
-  end
-  if self.m_cacheMailItemIconWidget then
-    self.m_cacheMailItemIconWidget = {}
-  end
   self.m_curChooseIndex = nil
 end
 
@@ -80,11 +76,17 @@ function Form_Email:FreshAllShowEmailItemData()
   if allEmailDataList and next(allEmailDataList) then
     for _, v in ipairs(allEmailDataList) do
       if v then
-        showItemList[#showItemList + 1] = v
+        local tempData = {mailData = v, isChoose = false}
+        showItemList[#showItemList + 1] = tempData
       end
     end
   end
   self.m_allShowEmailItemDataList = showItemList
+  local chooseIndex = self.m_curChooseIndex or defaultChooseIndex
+  if self.m_allShowEmailItemDataList[chooseIndex] then
+    self.m_allShowEmailItemDataList[chooseIndex].isChoose = true
+    self.m_curChooseIndex = chooseIndex
+  end
 end
 
 function Form_Email:FreshUI()
@@ -118,13 +120,6 @@ function Form_Email:SplitItemStrToArray(itemStr)
   return showItemList
 end
 
-function Form_Email:GetFirstItemStrIDAndNum(itemDataList)
-  if not itemDataList then
-    return
-  end
-  return itemDataList[1].iID, itemDataList[1].iNum
-end
-
 function Form_Email:CheckReqReadEmail()
   if not self.m_curChooseIndex then
     return
@@ -133,13 +128,13 @@ function Form_Email:CheckReqReadEmail()
   if not curEmailData then
     return
   end
-  local serverData = curEmailData.serverData
+  local serverData = curEmailData.mailData.serverData
   local attachmentItems = serverData.vItems
   if attachmentItems and next(attachmentItems) and serverData.iRcvAttachTime == 0 then
     return
   end
-  if curEmailData.serverData.iOpenTime == 0 then
-    EmailManager:ReqReadMail(curEmailData.serverData.iMailId)
+  if curEmailData.mailData.serverData.iOpenTime == 0 then
+    EmailManager:ReqReadMail(curEmailData.mailData.serverData.iMailId)
   end
 end
 
@@ -151,7 +146,7 @@ function Form_Email:GetShowMailIndexByID(emailID)
     return
   end
   for i, v in ipairs(self.m_allShowEmailItemDataList) do
-    if emailID == v.serverData.iMailId then
+    if emailID == v.mailData.serverData.iMailId then
       return i
     end
   end
@@ -162,7 +157,7 @@ function Form_Email:RemoveMailDataByID(emailID)
     return
   end
   for i, v in ipairs(self.m_allShowEmailItemDataList) do
-    if v.serverData.iMailId == emailID then
+    if v.mailData.serverData.iMailId == emailID then
       table.remove(self.m_allShowEmailItemDataList, i)
     end
   end
@@ -172,7 +167,7 @@ function Form_Email:IsMailFJItemHaveOverMaxNum(mailData)
   if not mailData then
     return
   end
-  local serverData = mailData.serverData
+  local serverData = mailData.mailData.serverData
   local attachmentItems = serverData.vItems
   local isHaveItemOverMax = false
   if attachmentItems and next(attachmentItems) then
@@ -190,8 +185,8 @@ function Form_Email:IsMailDataIsOverDelTime(mailData)
   if not mailData then
     return
   end
-  local serverData = mailData.serverData
-  if serverData and serverData.iDelTime then
+  local serverData = mailData.mailData.serverData
+  if serverData and serverData.iDelTime ~= nil and serverData.iDelTime > 0 then
     local curServerTime = TimeUtil:GetServerTimeS()
     return curServerTime >= serverData.iDelTime
   end
@@ -207,7 +202,7 @@ function Form_Email:IsHaveReadOrAttachMailData()
   local isCanDelMail = false
   for _, mailData in ipairs(self.m_allShowEmailItemDataList) do
     if mailData then
-      local serverData = mailData.serverData
+      local serverData = mailData.mailData.serverData
       local delTime = serverData.iDelTime
       local curServerTime = TimeUtil:GetServerTimeS()
       local isOverDelTime = delTime ~= 0 and delTime < curServerTime
@@ -234,7 +229,7 @@ function Form_Email:IsHaveCanAttachMailData()
   local isCanAttach = false
   for _, mailData in ipairs(self.m_allShowEmailItemDataList) do
     if mailData then
-      local serverData = mailData.serverData
+      local serverData = mailData.mailData.serverData
       if serverData.vItems and next(serverData.vItems) and serverData.iRcvAttachTime == 0 and ItemManager:IsItemAddNumOverMaxNum(mailData) ~= true then
         isCanAttach = true
         return isCanAttach
@@ -244,23 +239,29 @@ function Form_Email:IsHaveCanAttachMailData()
   return isCanAttach
 end
 
-function Form_Email:RemoveEventListeners()
-  if self.m_newEmailEventHandle then
-    self:removeEventListener("eGameEvent_Email_GetNewEmail", self.m_newEmailEventHandle)
-    self.m_newEmailEventHandle = nil
+function Form_Email:GetContentRewardList(rewardList)
+  if not rewardList then
+    return
   end
-  if self.m_readEmailHandle then
-    self:removeEventListener("eGameEvent_Email_ReadEmail", self.m_readEmailHandle)
-    self.m_readEmailHandle = nil
+  local emailFJItemDataList = {}
+  local curChooseEmailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
+  local isRcv = curChooseEmailData.mailData.serverData.iRcvAttachTime ~= 0
+  for i, v in ipairs(rewardList) do
+    local tempData = {isChoose = isRcv, itemData = v}
+    emailFJItemDataList[#emailFJItemDataList + 1] = tempData
   end
-  if self.m_delEmailHandle then
-    self:removeEventListener("eGameEvent_Email_DelEmail", self.m_delEmailHandle)
-    self.m_delEmailHandle = nil
-  end
-  if self.m_attachEmailHandle then
-    self:removeEventListener("eGameEvent_Email_AttachEmail", self.m_attachEmailHandle)
-    self.m_attachEmailHandle = nil
-  end
+  return emailFJItemDataList
+end
+
+function Form_Email:AddEventListeners()
+  self:addEventListener("eGameEvent_Email_GetNewEmail", handler(self, self.OnEventGetNewEmail))
+  self:addEventListener("eGameEvent_Email_ReadEmail", handler(self, self.OnEventReadEmail))
+  self:addEventListener("eGameEvent_Email_DelEmail", handler(self, self.OnEventDelEmail))
+  self:addEventListener("eGameEvent_Email_AttachEmail", handler(self, self.OnEventAttachEmail))
+end
+
+function Form_Email:RemoveAllEventListeners()
+  self:clearEventListener()
 end
 
 function Form_Email:OnEventGetNewEmail()
@@ -288,7 +289,7 @@ function Form_Email:OnEventDelEmail(emailIDList)
   if not curChooseEmailData then
     return
   end
-  local curEmailID = curChooseEmailData.serverData.iMailId
+  local curEmailID = curChooseEmailData.mailData.serverData.iMailId
   local removeCurChoose = false
   for _, v in pairs(emailIDList) do
     if v == curEmailID then
@@ -300,7 +301,15 @@ function Form_Email:OnEventDelEmail(emailIDList)
   if allItemNum <= 0 then
     self:FreshUI()
   elseif removeCurChoose == true then
+    local lastChooseItem = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
+    if lastChooseItem then
+      lastChooseItem.isChoose = false
+    end
     self.m_curChooseIndex = defaultChooseIndex
+    local curChooseItem = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
+    if curChooseItem then
+      curChooseItem.isChoose = false
+    end
     self:FreshUI()
   else
     self:FreshUI()
@@ -335,13 +344,9 @@ function Form_Email:InitShowEmailList()
   self.m_bg_01:SetActive(true)
   self.m_bg_02:SetActive(true)
   self.m_bg_empty:SetActive(false)
-  if self.m_curChooseIndex == nil then
-    self.m_curChooseIndex = defaultChooseIndex
-  end
   self:UnRegisterAllRedDotItem()
   self:RegisterOrUpdateRedDotItem(self.m_img_red_dot_rec_all, RedDotDefine.ModuleType.MailHaveRec)
-  self.m_email_list_InfinityGrid:Clear()
-  self.m_email_list_InfinityGrid.TotalItemCount = #self.m_allShowEmailItemDataList
+  self.m_luaEmailListInfinityGrid:ShowItemList(self.m_allShowEmailItemDataList, true)
   if #self.m_allShowEmailItemDataList <= MailLimitCount then
     self.m_email_list_scroll_rect.movementType = ScrollRect_MovementType.Clamped
   else
@@ -360,9 +365,9 @@ function Form_Email:FreshShowContent()
   if not emailData then
     return
   end
-  local serverData = emailData.serverData
-  local templateId = emailData.iTemplateId
-  local templateCfg = emailData.templateConfigData or {}
+  local serverData = emailData.mailData.serverData
+  local templateId = serverData.iTemplateId
+  local templateCfg = emailData.mailData.templateConfigData or {}
   self:RegisterOrUpdateRedDotItem(self.m_img_red_dot_rec, RedDotDefine.ModuleType.MainItemCanRec, serverData.iMailId)
   local titleStr = templateId ~= 0 and templateCfg.m_mTitle or serverData.sTitle
   if serverData.mTitleParam and next(serverData.mTitleParam) then
@@ -373,7 +378,7 @@ function Form_Email:FreshShowContent()
   if serverData.mTemplateParam and next(serverData.mTemplateParam) then
     contentStr = EmailManager:ReplaceParamStrByServerDic(contentStr, serverData.mTemplateParam)
   end
-  local sendTime = emailData.serverData.iTime
+  local sendTime = emailData.mailData.serverData.iTime
   local timerStr = self:GetFormatSendTimeStr(sendTime)
   self.m_txt_title_Text.text = titleStr
   self.m_txt_name_Text.text = fromStr
@@ -383,15 +388,14 @@ function Form_Email:FreshShowContent()
   local isCanRcv = false
   if attachmentItems and next(attachmentItems) then
     self.m_img_bg_line02:SetActive(true)
-    self.m_curChooseShowItemList = attachmentItems
-    self.m_fj_item_list_InfinityGrid:Clear()
-    self.m_fj_item_list_InfinityGrid.TotalItemCount = #self.m_curChooseShowItemList
+    self.m_curChooseShowItemList = self:GetContentRewardList(attachmentItems)
+    self.m_luaFjListInfinityGrid:ShowItemList(self.m_curChooseShowItemList, true)
     if #self.m_curChooseShowItemList <= MailFJLimitCount then
       self.m_fj_item_list_scroll_rect.movementType = ScrollRect_MovementType.Clamped
     else
       self.m_fj_item_list_scroll_rect.movementType = ScrollRect_MovementType.Elastic
     end
-    if emailData.serverData.iRcvAttachTime == 0 then
+    if emailData.mailData.serverData.iRcvAttachTime == 0 then
       isCanRcv = true
     end
   else
@@ -416,107 +420,36 @@ function Form_Email:DelCurChooseOverTimeEmail()
   self:FreshUI()
 end
 
-function Form_Email:OnEmailItemBind(templateCache, gameObject, index)
-  local itemIndex = index + 1
-  gameObject.name = itemIndex
-  local isSelect = itemIndex == self.m_curChooseIndex
-  templateCache:GameObject("c_bg_tab_selected"):SetActive(isSelect)
-  local emailData = self.m_allShowEmailItemDataList[itemIndex]
-  if not emailData then
-    return
-  end
-  local serverData = emailData.serverData
-  local templateId = serverData.iTemplateId
-  local templateCfg = emailData.templateConfigData or {}
-  self:RegisterOrUpdateRedDotItem(templateCache:GameObject("c_img_redpoint"), RedDotDefine.ModuleType.MainItem, serverData.iMailId)
-  local titleStr = templateId ~= 0 and templateCfg.m_mTitle or serverData.sTitle
-  local fromStr = templateId ~= 0 and templateCfg.m_mFrom or serverData.sFrom
-  local delTime = serverData.iDelTime
-  local curServerTime = TimeUtil:GetServerTimeS()
-  local leftTime = delTime - curServerTime
-  leftTime = 0 < leftTime and leftTime or 0
-  local leftTimeStr = TimeUtil:SecondsToFormatStrOnlyToMin(leftTime, true)
-  templateCache:TMPPro("c_txt_email_title").text = titleStr
-  templateCache:TMPPro("c_txt_people_name").text = fromStr
-  templateCache:TMPPro("c_txt_email_time").text = leftTimeStr
-  local attachmentItems = serverData.vItems
-  local isCanRcv = false
-  if attachmentItems and next(attachmentItems) and serverData.iRcvAttachTime == 0 then
-    isCanRcv = true
-    local itemID, _ = self:GetFirstItemStrIDAndNum(attachmentItems)
-    local gameObjectHashCode = gameObject:GetHashCode()
-    if not self.m_cacheMailItemIconWidget[gameObjectHashCode] then
-      local tempWidgetCom = self:createCommonItem(templateCache:GameObject("c_common_item"))
-      self.m_cacheMailItemIconWidget[gameObjectHashCode] = tempWidgetCom
-    end
-    local iconWidget = self.m_cacheMailItemIconWidget[gameObjectHashCode]
-    local processData = ResourceUtil:GetProcessRewardData({iID = itemID, iNum = nil})
-    iconWidget:SetItemInfo(processData)
-  end
-  templateCache:GameObject("c_common_item"):SetActive(isCanRcv)
-  local isRead = serverData.iOpenTime ~= 0
-  templateCache:GameObject("c_bg_tab_red"):SetActive(isRead)
-  local isShowRead = not isCanRcv and isRead
-  local isShowNoRead = not isCanRcv and not isRead
-  templateCache:GameObject("c_img_icon02"):SetActive(isShowRead)
-  templateCache:GameObject("c_img_icon01"):SetActive(isShowNoRead)
-  local isImportant = serverData.bSticky
-  templateCache:GameObject("c_img_important"):SetActive(isImportant and not isRead)
-end
-
-function Form_Email:OnEmailTabClick(index, go)
-  local itemIndex = index + 1
+function Form_Email:OnEmailTabClick(index)
+  local itemIndex = index
   if itemIndex == self.m_curChooseIndex then
     return
   end
   local lastChooseIndex = self.m_curChooseIndex
-  self.m_curChooseIndex = itemIndex
-  if lastChooseIndex ~= nil then
-    self.m_email_list_InfinityGrid:ReBind(lastChooseIndex - 1)
+  local lastShowItem = self.m_luaEmailListInfinityGrid:GetShowItemByIndex(lastChooseIndex)
+  if lastShowItem then
+    lastShowItem:ChangeChooseStatus(false)
+  else
+    self.m_allShowEmailItemDataList[lastChooseIndex].isChoose = false
   end
-  self.m_email_list_InfinityGrid:ReBind(index)
+  self.m_curChooseIndex = itemIndex
+  local curChooseItem = self.m_luaEmailListInfinityGrid:GetShowItemByIndex(self.m_curChooseIndex)
+  if curChooseItem then
+    curChooseItem:ChangeChooseStatus(true)
+  else
+    self.m_allShowEmailItemDataList[self.m_curChooseIndex].isChoose = true
+  end
   self:CheckReqReadEmail()
   self:FreshShowContent()
 end
 
-function Form_Email:OnFjItemBind(templateCache, gameObject, index)
-  local itemIndex = index + 1
-  local fjItemData = self.m_curChooseShowItemList[itemIndex]
-  if not fjItemData then
-    return
-  end
-  local gameObjectHashCode = gameObject:GetHashCode()
-  if not self.m_cacheFJItemIconWidget[gameObjectHashCode] then
-    self.m_cacheFJItemIconWidget[gameObjectHashCode] = self:createCommonItem(templateCache:GameObject("c_common_item"))
-  end
-  local iconWidget = self.m_cacheFJItemIconWidget[gameObjectHashCode]
-  local processData = ResourceUtil:GetProcessRewardData({
-    iID = fjItemData.iID,
-    iNum = fjItemData.iNum
-  })
-  iconWidget:SetItemInfo(processData)
-  iconWidget:SetItemIconClickCB(function()
-    self:OnFjItemClk(itemIndex - 1, templateCache:GameObject("c_common_item"))
-  end)
-  local curChooseEmailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
-  if curChooseEmailData.serverData.iRcvAttachTime ~= 0 then
-    iconWidget:SetItemHaveGetActive(true)
-  else
-    iconWidget:SetItemHaveGetActive(false)
-  end
-end
-
 function Form_Email:OnFjItemClk(index, go)
-  local fjItemIndex = index + 1
-  if not fjItemIndex then
-    return
-  end
   if not self.m_curChooseIndex then
     return
   end
-  local chooseFJItemData = self.m_curChooseShowItemList[fjItemIndex]
+  local chooseFJItemData = self.m_curChooseShowItemList[index]
   if chooseFJItemData then
-    utils.openItemDetailPop(chooseFJItemData)
+    utils.openItemDetailPop(chooseFJItemData.itemData)
   end
 end
 
@@ -538,7 +471,7 @@ function Form_Email:OnBtnreceiveClicked()
     utils.CheckAndPushCommonTips({tipsID = 1212})
     return
   end
-  EmailManager:ReqRcvMailAttach(emailData.serverData.iMailId)
+  EmailManager:ReqRcvMailAttach(emailData.mailData.serverData.iMailId)
 end
 
 function Form_Email:OnBtndeleteClicked()
@@ -557,7 +490,7 @@ function Form_Email:OnBtndeleteClicked()
   utils.CheckAndPushCommonTips({
     tipsID = 1213,
     func1 = function()
-      EmailManager:ReqDelMail(emailData.serverData.iMailId)
+      EmailManager:ReqDelMail(emailData.mailData.serverData.iMailId)
     end
   })
 end

@@ -4,6 +4,7 @@ local RogueHandBookItemState = {
   UnActive = 2,
   Locked = 3
 }
+local __RogueHandBook_itemin = "RogueHandBook_itemin"
 
 function Form_RogueHandBook:SetInitParam(param)
 end
@@ -24,11 +25,34 @@ function Form_RogueHandBook:OnActive()
   self.vClearNewMarkTab = {}
   self.iCurTabIdx = RogueStageManager.HandBookType.Exclusive
   self:FreshUI()
+  self:PlayerEnterAnim()
 end
 
 function Form_RogueHandBook:OnInactive()
   self.super.OnInactive(self)
+  if self.m_sequence then
+    self.m_sequence:Kill()
+    self.m_sequence = nil
+  end
   self:ClearNewMark()
+end
+
+function Form_RogueHandBook:PlayerEnterAnim()
+  if self.m_sequence then
+    self.m_sequence:Kill()
+    self.m_sequence = nil
+  end
+  self.m_sequence = Tweening.DOTween.Sequence()
+  self.m_sequence:AppendInterval(0.255)
+  self.m_sequence:OnComplete(function()
+    self:PlayerAnim()
+  end)
+  self.m_sequence:SetAutoKill(true)
+end
+
+function Form_RogueHandBook:PlayerAnim()
+  UILuaHelper.ResetAnimationByName(self.m_Content, __RogueHandBook_itemin)
+  UILuaHelper.PlayAnimationByName(self.m_Content, __RogueHandBook_itemin)
 end
 
 function Form_RogueHandBook:OnDestroy()
@@ -139,6 +163,7 @@ function Form_RogueHandBook:OnPnltabexclusiveClicked()
   end
   self.iCurTabIdx = RogueStageManager.HandBookType.Exclusive
   self:FreshUI()
+  self:PlayerAnim()
   GlobalManagerIns:TriggerWwiseBGMState(62)
 end
 
@@ -148,6 +173,7 @@ function Form_RogueHandBook:OnPnltabcommonClicked()
   end
   self.iCurTabIdx = RogueStageManager.HandBookType.Normal
   self:FreshUI()
+  self:PlayerAnim()
   GlobalManagerIns:TriggerWwiseBGMState(62)
 end
 
@@ -157,6 +183,7 @@ function Form_RogueHandBook:OnPnltabmaterialClicked()
   end
   self.iCurTabIdx = RogueStageManager.HandBookType.Material
   self:FreshUI()
+  self:PlayerAnim()
   GlobalManagerIns:TriggerWwiseBGMState(62)
 end
 

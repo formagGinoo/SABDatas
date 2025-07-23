@@ -1,6 +1,5 @@
 {
   "className": "CData_PlotText",
-  "timestamp": "2025-07-16T14:14:12.338Z",
   "data": {
     "\"Role_Name_Acappella\"": {
       "m_bError": null,
@@ -21159,7 +21158,7 @@
     "\"Dialogue_B_60001_Clip04_43\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip04_43\"",
-      "m_mContent": "\"1o they're actually brothers?\"",
+      "m_mContent": "\"So they're actually brothers?\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -47217,13 +47216,6 @@
       "m_Type": "[]",
       "m_RoleName": "\"琪安德\""
     },
-    "\"Dialogue_B_90001_Clip10_017\"": {
-      "m_bError": null,
-      "m_Key": "\"Dialogue_B_90001_Clip10_017\"",
-      "m_mContent": "\"Such a child... huh?\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"琪安德\""
-    },
     "\"Dialogue_B_90001_Clip10_018\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip10_018\"",
@@ -53786,7 +53778,7 @@
     "\"Dialogue_B_100001_Clip11_019\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_100001_Clip11_019\"",
-      "m_mContent": "\"Yes, my Lord. It's the Carrelle family's banner, representing honor and freedom.\"",
+      "m_mContent": "\"0Yes, my Lord. It's the Carrelle family's banner, representing honor and freedom.\"",
       "m_Type": "[]",
       "m_RoleName": "\"敬畏的士兵\""
     },
@@ -67884,7 +67876,7 @@
     "\"Dialogue_E_20001_Clip03_06\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_20001_Clip03_06\"",
-      "m_mContent": "\"Right in front of us.\"",
+      "m_mContent": "\"0/CouncilHall_Accepte\"",
       "m_Type": "[]",
       "m_RoleName": "\"达尔卡罗\""
     },
@@ -84639,6 +84631,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"小贝拉7号\""
     },
+    "\"Dialogue_E_40001_Clip11_54\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_E_40001_Clip11_54\"",
+      "m_mContent": "\"Yes, that's the one.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"诺亚\""
+    },
     "\"Dialogue_E_40001_Clip11_55\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_40001_Clip11_55\"",
@@ -89920,7 +89919,7 @@
     "\"QE_50001_Clip02_101\"": {
       "m_bError": null,
       "m_Key": "\"QE_50001_Clip02_101\"",
-      "m_mContent": "\"They really did come prepared...\"",
+      "m_mContent": "\"Atlas_Gacha/Gacha_2e prepared...\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -91110,7 +91109,7 @@
     "\"Tutor_11_01\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_11_01\"",
-      "m_mContent": "\"Well done, Noah.\"",
+      "m_mContent": "\"A shield forgotte\"",
       "m_Type": "[]",
       "m_RoleName": "\"0\""
     },
@@ -94540,7 +94539,7 @@
     "\"B_60001_Clip09_020b\"": {
       "m_bError": null,
       "m_Key": "\"B_60001_Clip09_020b\"",
-      "m_mContent": "\"The room on the right with junk piled up at the entrance.\"",
+      "m_mContent": "\"艾米om on the right with junk piled up at the entrance.\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -98761,7 +98760,7 @@
     "\"Dialogue_L_Ami_10_17\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_L_Ami_10_17\"",
-      "m_mContent": "\"Play_vo_20170_battle_maxskill01r from the El Dorado, corrupted by Black Blood. Even after losing his will, he still held onto this drawing with all his strength.\"",
+      "m_mContent": "\"It was in the hands of a sailor from the El Dorado, corrupted by Black Blood. Even after losing his will, he still held onto this drawing with all his strength.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -103206,7 +103205,7 @@
     "\"Dialogue_L_Acappella_10_62b\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_L_Acappella_10_62b\"",
-      "m_mContent": "\"Beca_vo_20130_battle_stagewinhis little game of cat and mouse.\"",
+      "m_mContent": "\"Because I'm rather enjoying this little game of cat and mouse.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },

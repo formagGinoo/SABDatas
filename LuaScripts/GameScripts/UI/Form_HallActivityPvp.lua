@@ -1,4 +1,5 @@
 local Form_HallActivityPvp = class("Form_HallActivityPvp", require("UI/UIFrames/Form_HallActivityPvpUI"))
+local CliveActivityTipsItem = require("UI/Item/HeroActivity/CliveActivityTipsItem")
 
 function Form_HallActivityPvp:SetInitParam(param)
 end
@@ -9,6 +10,7 @@ function Form_HallActivityPvp:AfterInit()
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome))
   self.m_PvPEnterSubPanelCom = nil
   self.m_PvpReplaceSubPanelCom = nil
+  self.cliveActivityTip = CliveActivityTipsItem:CreateCliveActivityTipsItem(self.m_panel_tips, {tipType = 3, cliveType = 2})
 end
 
 function Form_HallActivityPvp:OnActive()
@@ -21,6 +23,9 @@ function Form_HallActivityPvp:OnActive()
   end
   self:AddEventListeners()
   self:RefreshUI()
+  if self.cliveActivityTip and self.cliveActivityTip.OnFreshData then
+    self.cliveActivityTip:OnFreshData()
+  end
 end
 
 function Form_HallActivityPvp:OnInactive()

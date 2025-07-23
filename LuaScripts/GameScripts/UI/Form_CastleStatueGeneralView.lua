@@ -106,6 +106,10 @@ function Form_CastleStatueGeneralView:OnDestroy()
   self.statue_item_cache = {}
 end
 
+function Form_CastleStatueGeneralView:IsOpenGuassianBlur()
+  return true
+end
+
 local fullscreen = true
 ActiveLuaUI("Form_CastleStatueGeneralView", Form_CastleStatueGeneralView)
 return Form_CastleStatueGeneralView

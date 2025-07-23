@@ -3,10 +3,12 @@ local RogueDragEquipItem = class("RogueDragEquipItem", UIItemBase)
 local RogueBagGridItem = require("UI/Item/RogueChoose/RogueBagGridItem")
 local DragRectType = RogueStageManager.DragRectType
 local LimitDragDis = 0.1
-local GridSizeX = 105
+local GridSizeX = 108
 local HalfGridSizeX = GridSizeX / 2
-local GridSizeY = 105
+local GridSizeY = 98
 local HalfGridSizeY = GridSizeY / 2
+local BorderWidth = 3
+local BorderHeight = 4
 local __RogueChose_iconloop = "RogueChose_iconloop"
 
 function RogueDragEquipItem:OnInit()
@@ -196,21 +198,21 @@ function RogueDragEquipItem:FreshIconShow()
     return
   end
   UILuaHelper.SetAtlasSprite(self.m_icon_Image, self.m_rogueEquipItemData.rogueStageItemCfg.m_ItemIcon)
-  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_Image, self.m_GridXNum * GridSizeX, self.m_GridYNum * GridSizeY)
+  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
   UILuaHelper.SetLocalPosition(self.m_icon, 0, 0, 0)
   local maskIcon = self.m_rogueEquipItemData.rogueStageItemCfg.m_MaskIcon
   if maskIcon and maskIcon ~= "" then
     UILuaHelper.SetAtlasSprite(self.m_icon_dust_Image, maskIcon)
-    UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_dust_Image, self.m_GridXNum * GridSizeX, self.m_GridYNum * GridSizeY)
+    UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_dust_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
     UILuaHelper.SetLocalPosition(self.m_icon_dust_Image, 0, 0, 0)
     UILuaHelper.SetAtlasSprite(self.m_icon_black_Image, self.m_rogueEquipItemData.rogueStageItemCfg.m_ItemIcon)
-    UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_black_Image, self.m_GridXNum * GridSizeX, self.m_GridYNum * GridSizeY)
+    UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon_black_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
     UILuaHelper.SetLocalPosition(self.m_icon_black_Image, 0, 0, 0)
   end
   UILuaHelper.SetActive(self.m_icon_dust, maskIcon and maskIcon ~= "")
   UILuaHelper.SetActive(self.m_icon_black, maskIcon and maskIcon ~= "")
   UILuaHelper.SetAtlasSprite(self.m_icon2_Image, self.m_rogueEquipItemData.rogueStageItemCfg.m_ItemIcon)
-  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon2_Image, self.m_GridXNum * GridSizeX, self.m_GridYNum * GridSizeY)
+  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon2_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
   UILuaHelper.SetLocalPosition(self.m_icon2, 0, 0, 0)
 end
 

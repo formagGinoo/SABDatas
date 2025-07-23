@@ -112,7 +112,7 @@ function PVPEnterSubPanel:FreshShowArenaDetail()
   if rank == 0 then
     rank = "- -"
   end
-  self.m_txt_rank_Text.text = rank
+  self.m_txt_rank_Text.text = string.CS_Format(ConfigManager:GetCommonTextById(20351), rank)
   local ticketFreeCount = ArenaManager:GetSeasonTicketFreeCount() or 0
   local totalFreeNum = ArenaManager:GetFreeCountMaxNum() or 3
   if ticketFreeCount < 0 then

@@ -96,6 +96,7 @@ function Form_HeroShow:AfterInit()
   self.m_curQuality = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_HeroShow:OnActive()
@@ -215,7 +216,7 @@ function Form_HeroShow:FreshShowHeroInfo()
     CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
     self.m_playingDisplayId = nil
   end
-  local voice = HeroManager:GetHeroGainVoice(heroCfg.m_HeroID)
+  local voice = self.m_HeroVoice:GetHeroGainVoice(heroCfg.m_HeroID)
   if voice and voice ~= "" then
     self.m_playingVoiceStr = voice
     CS.UI.UILuaHelper.StartPlaySFX(voice, nil, function(playingDisplayId)
@@ -275,6 +276,8 @@ function Form_HeroShow:CheckShowSpineAnim()
     log.error("Form_HeroShow CheckShowSpineAnim is error ")
     return
   end
+  UILuaHelper.SpineResetMatParam(heroSpineObj)
+  UILuaHelper.SetSpineTimeScale(heroSpineObj, 1)
   if UILuaHelper.CheckIsHaveSpineAnim(heroSpineObj, "idle2") then
     UILuaHelper.SpinePlayAnim(heroSpineObj, 0, "idle2", true)
   else

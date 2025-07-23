@@ -1,6 +1,5 @@
 {
   "className": "CData_ActTask",
-  "timestamp": "2025-07-16T14:13:49.231Z",
   "data": {
     "101501": {
       "m_bError": null,
@@ -1739,8 +1738,8 @@
       "m_Pin": null,
       "m_Sort": "1",
       "m_PreTask": null,
-      "m_ObjectiveType": "205",
-      "m_ObjectiveData": "[5,0]",
+      "m_ObjectiveType": "204",
+      "m_ObjectiveData": "[5,0,0]",
       "m_ObjectiveCount": "1",
       "m_mTaskName": "\"Clear Event Stage 1 time.\"",
       "m_Reward": "[]",

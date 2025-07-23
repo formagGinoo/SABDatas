@@ -146,9 +146,6 @@ function ReportManager:CanReportLoginProcess()
 end
 
 function ReportManager:ReportLoginProcess(sJobName, sJobDetail, bImmediately)
-  if not self:CanReportLoginProcess() then
-    return
-  end
   local stReportData = CS.ReportDataPool.Instance:RequestReportDataByType(CS.ReportDataDefines.Client_login_process)
   stReportData.Job_name = sJobName
   stReportData.Job_detail = sJobDetail
@@ -369,6 +366,15 @@ function ReportManager:ReportClientDebugInfo(debugInfoStr, debugInfoDescStr)
   if debugInfoDescStr then
     stReportData.Detail_desc = debugInfoDescStr
   end
+  CS.ReportService.Instance:Report(stReportData)
+  CS.ReportDataPool.Instance:ReturnReportDataByType(stReportData)
+end
+
+function ReportManager:ReportClientNetShowReconnect(iStatus, sDetail)
+  local stReportData = CS.ReportDataPool.Instance:RequestReportDataByType(CS.ReportDataDefines.Net_show_reconnect)
+  stReportData.Status = iStatus
+  stReportData.Detail = sDetail
+  stReportData.Login_country = CS.UserData.Instance.sLoginRoleCountry
   CS.ReportService.Instance:Report(stReportData)
   CS.ReportDataPool.Instance:ReturnReportDataByType(stReportData)
 end

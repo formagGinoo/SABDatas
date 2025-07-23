@@ -201,6 +201,7 @@ CmdAllianceBattleHeroRecord = sdp.SdpStruct("CmdAllianceBattleHeroRecord")
 CmdAllianceBattleHeroRecord.Definition = {
   "iHeroId",
   "iLevel",
+  "iFashion",
   iHeroId = {
     0,
     0,
@@ -209,6 +210,12 @@ CmdAllianceBattleHeroRecord.Definition = {
   },
   iLevel = {
     1,
+    0,
+    8,
+    0
+  },
+  iFashion = {
+    2,
     0,
     8,
     0

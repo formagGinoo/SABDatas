@@ -144,7 +144,6 @@ end
 
 function GuildManager:OnAfterInitConfig()
   self.m_guildBattleTimesCfgNum = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildBattleTimes"))
-  self.m_simBattleStr = ConfigManager:GetCommonTextById(10005)
   GuildManager.FightType_AllianceBattle = MTTDProto.FightType_AllianceBattle
   GuildManager.FightAllianceBattleSubType_Battle = MTTDProto.FightAllianceBattleSubType_Battle
 end
@@ -1162,6 +1161,10 @@ function GuildManager:CheckGuildEntryHaveRedPoint()
     return flag
   end
   flag = self:GuildBossIsHaveRedDot()
+  if 0 < flag then
+    return flag
+  end
+  flag = AncientManager:CheckAncientEnterRedDot()
   return flag
 end
 
@@ -1265,7 +1268,7 @@ function GuildManager:GetPersonalHistory()
         personalInfo.battleCount = table.getn(v)
         personalInfo.iRealDamage = 0
       end
-      personalInfo.iRealDamage = n.iRealDamage + personalInfo.iRealDamage
+      personalInfo.iRealDamage = tonumber(n.iRealDamage) + tonumber(personalInfo.iRealDamage)
       local memberData = self:GetOwnerGuildMemberDataByUID(personalInfo.stRoleId.iUid)
       if memberData then
         personalInfo.iPower = memberData.iPower
@@ -1525,7 +1528,7 @@ function GuildManager:EnterBattleBefore(levelID, simFlag)
   end
   local levelName = cfg.m_mName
   if simFlag then
-    levelName = cfg.m_mName .. tostring(self.m_simBattleStr)
+    levelName = cfg.m_mName .. tostring(ConfigManager:GetCommonTextById(10005))
   end
   local data = {
     vUseHero = vUseHero,
@@ -1599,16 +1602,34 @@ function GuildManager:OnBattleEnd(isSuc, stageFinishChallengeSc, finishErrorCode
   else
     local battleData = self:GetGuildBossBattleResult()
     stageFinishChallengeSc = stageFinishChallengeSc or {}
-    local param = {
-      iActivityId = battleData.iActivityId,
-      levelID = stageFinishChallengeSc.stFinishChallengeInfoSC.stVerifyInfo.iFightId,
-      iBossId = battleData.iBossId,
-      iDamage = battleData.iDamage,
-      iRealDamage = battleData.iRealDamage,
-      iBossHp = battleData.iBossHp,
-      bKill = battleData.bKill,
-      showHeroID = randomShowHeroID
-    }
+    local param
+    if 0 < table.getn(battleData) then
+      param = {
+        iActivityId = battleData.iActivityId,
+        levelID = stageFinishChallengeSc.stFinishChallengeInfoSC.stVerifyInfo.iFightId,
+        iBossId = battleData.iBossId,
+        iDamage = battleData.iDamage,
+        iRealDamage = battleData.iRealDamage,
+        iBossHp = battleData.iBossHp,
+        bKill = battleData.bKill,
+        showHeroID = randomShowHeroID
+      }
+    elseif stageFinishChallengeSc and stageFinishChallengeSc.stFinishChallengeInfoSC then
+      local guildBossData = self:GetGuildBossData()
+      local serverData = self:GetBossServerDataByID(stageFinishChallengeSc.iBossId)
+      local maxHp = serverData and serverData.iBossHp or self:GetBossMaxHp(stageFinishChallengeSc.stFinishChallengeInfoSC.stVerifyInfo.iFightId)
+      local curHp = math.max(tonumber(maxHp) - tonumber(stageFinishChallengeSc.iScore), 0)
+      param = {
+        iActivityId = guildBossData.iActivityId,
+        levelID = stageFinishChallengeSc.stFinishChallengeInfoSC.stVerifyInfo.iFightId,
+        iBossId = stageFinishChallengeSc.iBossId,
+        iDamage = stageFinishChallengeSc.iScore,
+        iRealDamage = stageFinishChallengeSc.iScore,
+        iBossHp = curHp,
+        bKill = curHp == 0,
+        showHeroID = randomShowHeroID
+      }
+    end
     StackFlow:Push(UIDefines.ID_FORM_GUILDRAIDBATTLEDETIAL, param)
     self.m_battleResultData = {}
   end

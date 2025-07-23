@@ -68,6 +68,9 @@ function ActivityFourteenSignSubPanel:OnEventUpdateSign(stParam)
   if self.m_rootObj.activeInHierarchy then
     utils.popUpRewardUI(stParam.vReward)
     self:RefreshReward()
+    if self.m_parentLua then
+      self.m_parentLua:RefreshTableButtonList()
+    end
   end
 end
 

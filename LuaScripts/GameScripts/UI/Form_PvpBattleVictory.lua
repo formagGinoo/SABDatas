@@ -18,6 +18,7 @@ function Form_PvpBattleVictory:AfterInit()
   self.m_showHeroID = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_PvpBattleVictory:OnActive()
@@ -86,8 +87,11 @@ function Form_PvpBattleVictory:GetShowSpinePath()
   if not heroData then
     return
   end
-  local heroCfg = heroData.characterCfg
-  local spineStr = heroCfg.m_Spine
+  local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion or 0)
+  if not fashionInfo then
+    return
+  end
+  local spineStr = fashionInfo.m_Spine
   if not spineStr then
     return
   end

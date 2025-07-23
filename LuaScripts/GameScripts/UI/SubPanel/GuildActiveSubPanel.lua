@@ -81,6 +81,7 @@ function GuildActiveSubPanel:updateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_event_name", cell_data.m_mEventName)
   local c_img_event_bg = UIUtil.findImage(transform, "offset/mask_bg/c_img_event_bg")
   CS.UI.UILuaHelper.SetAtlasSprite(c_img_event_bg, cell_data.m_Path, nil, nil, true)
+  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_common_redpoint", false)
   if cell_data.m_SystemUnlockID == GlobalConfig.SYSTEM_ID.GuildSign then
     local _, time = GuildManager:GetGuildSignNum()
     local flag = TimeUtil:CheckTimeIsToDay(time)
@@ -123,6 +124,10 @@ function GuildActiveSubPanel:updateScrollViewCell(index, cell_object, cell_data)
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_bg_raid_open", false)
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_bg_raid_time", false)
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_bg_raid_rank", false)
+  end
+  if cell_data.m_SystemUnlockID == GlobalConfig.SYSTEM_ID.Ancient then
+    local flag = AncientManager:CheckAncientEnterRedDot()
+    LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_common_redpoint", flag ~= 0)
   end
 end
 

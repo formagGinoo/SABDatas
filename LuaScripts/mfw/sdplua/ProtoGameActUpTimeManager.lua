@@ -29,6 +29,30 @@ CmdActCfgUpTimeManagerBackground.Definition = {
     0
   }
 }
+CmdActCfgUpTimeManagerFashion = sdp.SdpStruct("CmdActCfgUpTimeManagerFashion")
+CmdActCfgUpTimeManagerFashion.Definition = {
+  "iFashionId",
+  "iUnlockTime",
+  "iShield",
+  iFashionId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iUnlockTime = {
+    1,
+    0,
+    8,
+    0
+  },
+  iShield = {
+    2,
+    0,
+    8,
+    0
+  }
+}
 CmdActCfgUpTimeManagerHeadFrame = sdp.SdpStruct("CmdActCfgUpTimeManagerHeadFrame")
 CmdActCfgUpTimeManagerHeadFrame.Definition = {
   "iHeadFrameId",
@@ -101,12 +125,38 @@ CmdActCfgUpTimeManagerPlayerHead.Definition = {
     0
   }
 }
+CmdActCfgUpTimeManagerRogueItem = sdp.SdpStruct("CmdActCfgUpTimeManagerRogueItem")
+CmdActCfgUpTimeManagerRogueItem.Definition = {
+  "iRogueItemId",
+  "iUnlockTime",
+  "iShield",
+  iRogueItemId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iUnlockTime = {
+    1,
+    0,
+    8,
+    0
+  },
+  iShield = {
+    2,
+    0,
+    8,
+    0
+  }
+}
 CmdActClientCfgUpTimeManager = sdp.SdpStruct("CmdActClientCfgUpTimeManager")
 CmdActClientCfgUpTimeManager.Definition = {
   "mHero",
   "mBackground",
   "mPlayerHead",
   "mHeadFrame",
+  "mFashion",
+  "mRogueItem",
   mHero = {
     0,
     0,
@@ -129,6 +179,18 @@ CmdActClientCfgUpTimeManager.Definition = {
     3,
     0,
     sdp.SdpMap(8, CmdActCfgUpTimeManagerHeadFrame),
+    nil
+  },
+  mFashion = {
+    4,
+    0,
+    sdp.SdpMap(8, CmdActCfgUpTimeManagerFashion),
+    nil
+  },
+  mRogueItem = {
+    5,
+    0,
+    sdp.SdpMap(8, CmdActCfgUpTimeManagerRogueItem),
     nil
   }
 }

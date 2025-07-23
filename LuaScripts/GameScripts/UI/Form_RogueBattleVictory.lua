@@ -27,6 +27,8 @@ function Form_RogueBattleVictory:AfterInit()
   for i = 1, 5 do
     self.m_text_color_list[#self.m_text_color_list + 1] = self["m_z_txt_num" .. i .. "_Text"]:GetComponent("MultiColorChange")
   end
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_RogueBattleVictory:OnActive()
@@ -139,27 +141,30 @@ function Form_RogueBattleVictory:EnterAnim()
   end
 end
 
-function Form_RogueBattleVictory:GetSpineHeroID()
+function Form_RogueBattleVictory:GetSpineFashionInfo()
+  local heroData
   if self.m_showHeroID ~= nil then
-    return self.m_showHeroID
+    local heroID = self.m_showHeroID
+    heroData = HeroManager:GetHeroDataByID(heroID)
+  else
+    local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
+    local randomIndex = self:GetRandom(1, #showHeroDataList)
+    heroData = showHeroDataList[randomIndex]
   end
-  local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
-  local randomIndex = self:GetRandom(1, #showHeroDataList)
-  return showHeroDataList[randomIndex].characterCfg.m_HeroID
+  if not heroData then
+    return
+  end
+  local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  return fashionInfo
 end
 
 function Form_RogueBattleVictory:GetShowSpineAndVoice()
-  local heroID = self:GetSpineHeroID()
-  local heroCfg
-  if not heroID then
+  local fashionInfo = self:GetSpineFashionInfo()
+  if not fashionInfo then
     return
   end
-  heroCfg = HeroManager:GetHeroConfigByID(heroID)
-  if not heroCfg then
-    return
-  end
-  local voice = HeroManager:GetHeroBattleVictoryVoice(heroID)
-  local spineStr = heroCfg.m_Spine
+  local voice = self.m_HeroVoice:GetHeroBattleVictoryVoice(fashionInfo)
+  local spineStr = fashionInfo.m_Spine
   if not spineStr then
     return
   end

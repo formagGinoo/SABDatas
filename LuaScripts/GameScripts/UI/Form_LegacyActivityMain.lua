@@ -1,6 +1,13 @@
 local Form_LegacyActivityMain = class("Form_LegacyActivityMain", require("UI/UIFrames/Form_LegacyActivityMainUI"))
 local SubPanelManager = _ENV.SubPanelManager
 local LegacyLevelManager = _ENV.LegacyLevelManager
+local titleAnimationData = {
+  en = "m_PicPath10",
+  ja = "m_PicPath22",
+  cn = "m_PicPath6",
+  ht = "m_PicPath41",
+  kr = "m_PicPath23"
+}
 
 function Form_LegacyActivityMain:SetInitParam(param)
 end
@@ -42,6 +49,7 @@ function Form_LegacyActivityMain:AfterInit()
   self.m_rotationParamDeltaNum = nil
   self:InitViewPortParam()
   self:CheckRegisterRedDot()
+  self:InitTitleAnimation()
   self.m_isHaveInitList = false
 end
 
@@ -159,6 +167,19 @@ function Form_LegacyActivityMain:InitViewPortParam()
     self.m_isInitParam = true
     self:FreshRotationShow()
   end)
+end
+
+function Form_LegacyActivityMain:InitTitleAnimation()
+  for _, v in pairs(titleAnimationData) do
+    self[v]:SetActive(false)
+  end
+  local picId = self.m_img_frame:GetComponent("UIMultiLanPic").PicID
+  local multiLanPicPath = UILuaHelper.GetMultiLanguagePicPath(picId)
+  local last_two_chars = string.sub(multiLanPicPath, -2)
+  local animationObj = self[titleAnimationData[last_two_chars]]
+  if animationObj then
+    animationObj:SetActive(true)
+  end
 end
 
 function Form_LegacyActivityMain:FreshUI()

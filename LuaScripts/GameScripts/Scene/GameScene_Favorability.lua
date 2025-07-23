@@ -14,7 +14,7 @@ function GameScene_Favorability:OnEnterScene(iSceneIDPrev)
       cameraInit = go.transform:Find("Castle_StudyRoom/Base/camera/NodeInit").gameObject
       cameraFocus = go.transform:Find("Castle_StudyRoom/Base/camera/NodeFocus").gameObject
       mSeatPosTransform = go.transform:Find("Castle_StudyRoom/Base/Char/Seatpos_1").transform
-      manager = go.transform:Find("Castle_StudyRoom"):GetComponent("AttractRoomManager")
+      manager = go.transform:Find("Castle_StudyRoom"):GetComponent(typeof(CS.NewAttractRoomManager))
       chairModel = go.transform:Find("Castle_StudyRoom/Base/StudyRoom_Scence/Char_Scence/ChairNode").gameObject
       OtherModel = go.transform:Find("Castle_StudyRoom/Base/StudyRoom_Scence/Char_Scence/OtherModelNode").gameObject
     end

@@ -751,7 +751,6 @@ function Form_PvpReplaceMain:OnBackClk()
 end
 
 function Form_PvpReplaceMain:OnBackHome()
-  PvpReplaceManager:ClearCacheMineSeasonInfo()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   GameSceneManager:CheckChangeSceneToMainCity(nil, true)
 end

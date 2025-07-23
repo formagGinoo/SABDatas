@@ -1,6 +1,5 @@
 {
   "className": "CData_BattleWorld",
-  "timestamp": "2025-07-16T14:13:55.623Z",
   "data": {
     "11": {
       "m_bError": null,
@@ -28661,7 +28660,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6000403": {
@@ -28695,7 +28694,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6000405": {
@@ -28712,7 +28711,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6000406": {
@@ -28814,7 +28813,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6000412": {
@@ -29341,7 +29340,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6100403": {
@@ -29375,7 +29374,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6100405": {
@@ -29392,7 +29391,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6100406": {
@@ -29426,7 +29425,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6100408": {
@@ -29494,7 +29493,7 @@
       "m_RepressType": "2",
       "m_RepressIndex": "110",
       "m_RepressLevel": "1",
-      "m_CloseCheck": null,
+      "m_CloseCheck": "1",
       "m_TestFightType": null
     },
     "6100412": {

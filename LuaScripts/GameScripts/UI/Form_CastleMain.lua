@@ -199,6 +199,9 @@ function Form_CastleMain:RemoveAllEventListeners()
 end
 
 function Form_CastleMain:OnCastleOpenForm(param)
+  if not self.m_ownerModule then
+    return
+  end
   if not param then
     return
   end
@@ -218,6 +221,9 @@ function Form_CastleMain:OnCastleOpenForm(param)
 end
 
 function Form_CastleMain:OnCastleCloseForm(param)
+  if not self.m_ownerModule then
+    return
+  end
   if not param then
     return
   end
@@ -241,6 +247,9 @@ function Form_CastleMain:FreshUI()
 end
 
 function Form_CastleMain:RefreshRedPoint()
+  if not self.m_ownerModule then
+    return
+  end
   local redPoint = CastleDispatchManager:CheckDispatchRedPoint()
   self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
     redDotKey = RedDotDefine.ModuleType.DispatchEntry,
@@ -318,6 +327,9 @@ function Form_CastleMain:FreLockStatus()
 end
 
 function Form_CastleMain:FreshStoryState()
+  if not self.m_ownerModule then
+    return
+  end
   if not UnlockManager:IsSystemOpen(GlobalConfig.SYSTEM_ID.NightConversation) then
     self.m_btn_strength:SetActive(false)
     self.m_btn_event:SetActive(false)
@@ -440,13 +452,11 @@ function Form_CastleMain:ShowPopPanelEnterCastleAnim()
 end
 
 function Form_CastleMain:OnBackClk()
-  self:RemoveAllEventListeners()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity)
 end
 
 function Form_CastleMain:OnHomeClk()
-  self:RemoveAllEventListeners()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity)
 end
@@ -517,7 +527,12 @@ function Form_CastleMain:OnPlaceEnterItemClk(placeID, subPlaceID)
 end
 
 function Form_CastleMain:OnBtnlobbyClicked()
-  self.m_ownerModule:ChangeToDetailShow(HallPlaceID)
+  if utils.isNull(self.m_rootTrans) then
+    return
+  end
+  if self.m_ownerModule then
+    self.m_ownerModule:ChangeToDetailShow(HallPlaceID)
+  end
   self.m_backLobbyLockerID = UILockIns:Lock(BackToHomeTimeNum)
   UILuaHelper.PlayAnimationByName(self.m_rootTrans, self.m_uiVariables.CastleOutAnimStr)
   TimeService:SetTimer(BackToHomeTimeNum, 1, function()
@@ -527,7 +542,12 @@ function Form_CastleMain:OnBtnlobbyClicked()
 end
 
 function Form_CastleMain:OnFloatWindowCloseBack()
-  self.m_ownerModule:ChangeToTopShow()
+  if utils.isNull(self.m_rootTrans) then
+    return
+  end
+  if self.m_ownerModule then
+    self.m_ownerModule:ChangeToTopShow()
+  end
   local floatWinTime = UILuaHelper.GetAnimationLengthByName(self.m_rootTrans, self.m_uiVariables.CastleFloatWinTime)
   local delayPlayTime = tonumber(ConfigManager:GetGlobalSettingsByKey("DelayCastleOutPopPanelTime"))
   self.m_popPanelLockerID = UILockIns:Lock(floatWinTime + delayPlayTime)
@@ -577,6 +597,9 @@ function Form_CastleMain:OnBtnstrengthClicked()
 end
 
 function Form_CastleMain:OnInheritUnLockResponse()
+  if not self.m_ownerModule then
+    return
+  end
   StackFlow:Push(UIDefines.ID_FORM_INHERIT)
 end
 

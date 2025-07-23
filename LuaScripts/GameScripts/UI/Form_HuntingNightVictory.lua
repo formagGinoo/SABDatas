@@ -8,6 +8,8 @@ function Form_HuntingNightVictory:AfterInit()
   self.m_showHeroID = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_HeroVoice = HeroManager:GetHeroVoice()
 end
 
 function Form_HuntingNightVictory:OnActive()
@@ -53,27 +55,30 @@ function Form_HuntingNightVictory:RefreshUI()
   UILuaHelper.ForceRebuildLayoutImmediate(self.m_txt_damage_title)
 end
 
-function Form_HuntingNightVictory:GetSpineHeroID()
+function Form_HuntingNightVictory:GetSpineFashionInfo()
+  local heroData
   if self.m_showHeroID ~= nil then
-    return self.m_showHeroID
+    local heroID = self.m_showHeroID
+    heroData = HeroManager:GetHeroDataByID(heroID)
+  else
+    local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
+    local randomIndex = self:GetRandom(1, #showHeroDataList)
+    heroData = showHeroDataList[randomIndex]
   end
-  local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
-  local randomIndex = self:GetRandom(1, #showHeroDataList)
-  return showHeroDataList[randomIndex].characterCfg.m_HeroID
+  if not heroData then
+    return
+  end
+  local fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  return fashionInfo
 end
 
 function Form_HuntingNightVictory:GetShowSpineAndVoice()
-  local heroID = self:GetSpineHeroID()
-  local heroCfg
-  if not heroID then
+  local heroFashionInfo = self:GetSpineFashionInfo()
+  if not heroFashionInfo then
     return
   end
-  heroCfg = HeroManager:GetHeroConfigByID(heroID)
-  if not heroCfg then
-    return
-  end
-  local voice = HeroManager:GetHeroBattleVictoryVoice(heroID)
-  local spineStr = heroCfg.m_Spine
+  local voice = self.m_HeroVoice:GetHeroBattleVictoryVoice(heroFashionInfo)
+  local spineStr = heroFashionInfo.m_Spine
   if not spineStr then
     return
   end

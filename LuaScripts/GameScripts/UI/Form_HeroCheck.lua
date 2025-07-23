@@ -21,6 +21,7 @@ end
 
 function Form_HeroCheck:AfterInit()
   self.super.AfterInit(self)
+  self:AddEventListeners()
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = self.m_rootTrans:Find("panel_detail_node/ui_common_top_back").gameObject
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1101)
@@ -43,38 +44,17 @@ end
 
 function Form_HeroCheck:OnActive()
   self.super.OnActive(self)
-  local tParam = self.m_csui.m_param
-  if not tParam then
-    return
-  end
-  local heroID = tParam.heroID
-  if not heroID then
-    return
-  end
-  self.m_closeCallBackFun = tParam.callBackFun
-  self.m_csui.m_param = nil
-  self.m_curHeroID = heroID
-  self.m_heroServerData = tParam.heroServerData
-  self.m_heroCfg = CharacterInfoIns:GetValue_ByHeroID(self.m_curHeroID)
-  if self.m_heroCfg:GetError() then
-    return
-  end
-  self.m_showHeroMaxLv = true
-  self.m_serverPower = nil
-  if self.m_heroServerData then
-    self.m_heroMaxLevelNum = self.m_heroServerData.iLevel or 1
-    self.m_heroBreak = self.m_heroServerData.iBreak or 0
-    self.m_heroAttrList = self.m_heroServerData.mHeroAttr[0] or {}
-    self.m_heroSkillList = self.m_heroServerData.mSkill or {}
-    self.m_serverPower = self.m_heroServerData.iPower or 0
-  else
-    self.m_heroBreak = self:GetHeroCheckBreakNum()
-    self.m_heroMaxLevelNum = self:GetHeroLevelMax()
-    self.m_heroAttrList = self.m_heroAttr:GetLvBreakAllAttr(self.m_curHeroID, self.m_heroMaxLevelNum, self.m_heroBreak or 0)
-    self.m_heroSkillList = self:GetLocalHeroSKills(self.m_heroCfg.m_SkillGroupID[0])
-  end
+  self:FreshData()
   self:FreshUI()
   self:PlayHeroDisPlayVoice(self.m_heroCfg)
+end
+
+function Form_HeroCheck:AddEventListeners()
+  self:addEventListener("eGameEvent_Hero_FashionJump", handler(self, self.OnHeroFashionJump))
+end
+
+function Form_HeroCheck:OnHeroFashionJump()
+  self:CloseForm()
 end
 
 function Form_HeroCheck:PlayHeroDisPlayVoice(heroCfg)
@@ -153,6 +133,39 @@ function Form_HeroCheck:OnDestroy()
   end
 end
 
+function Form_HeroCheck:FreshData()
+  local tParam = self.m_csui.m_param
+  if not tParam then
+    return
+  end
+  local heroID = tParam.heroID
+  if not heroID then
+    return
+  end
+  self.m_closeCallBackFun = tParam.callBackFun
+  self.m_csui.m_param = nil
+  self.m_curHeroID = heroID
+  self.m_heroServerData = tParam.heroServerData
+  self.m_heroCfg = CharacterInfoIns:GetValue_ByHeroID(self.m_curHeroID)
+  if self.m_heroCfg:GetError() then
+    return
+  end
+  self.m_showHeroMaxLv = true
+  self.m_serverPower = nil
+  if self.m_heroServerData then
+    self.m_heroMaxLevelNum = self.m_heroServerData.iLevel or 1
+    self.m_heroBreak = self.m_heroServerData.iBreak or 0
+    self.m_heroAttrList = self.m_heroServerData.mHeroAttr[0] or {}
+    self.m_heroSkillList = self.m_heroServerData.mSkill or {}
+    self.m_serverPower = self.m_heroServerData.iPower or 0
+  else
+    self.m_heroBreak = self:GetHeroCheckBreakNum()
+    self.m_heroMaxLevelNum = self:GetHeroLevelMax()
+    self.m_heroAttrList = self.m_heroAttr:GetLvBreakAllAttr(self.m_curHeroID, self.m_heroMaxLevelNum, self.m_heroBreak or 0)
+    self.m_heroSkillList = self:GetLocalHeroSKills(self.m_heroCfg.m_SkillGroupID[0])
+  end
+end
+
 function Form_HeroCheck:FreshUI(isNoFreshSpine)
   self.m_skillCfgList = nil
   self.m_skillGroupId = nil
@@ -166,6 +179,7 @@ function Form_HeroCheck:FreshUI(isNoFreshSpine)
   self.m_isShowSkillPanel = true
   self:FreshShowHeroBaseInfo()
   self:FreshBreakStatus()
+  self:FreshSkinBtnStatus()
   ResourceUtil:CreateEquipTypeImg(self.m_icon_equip_Image, self.m_heroCfg.m_Equiptype)
 end
 
@@ -230,6 +244,11 @@ function Form_HeroCheck:FreshBreakStatus()
       UILuaHelper.SetActive(self.m_img_break_SSR4, false)
     end
   end
+end
+
+function Form_HeroCheck:FreshSkinBtnStatus()
+  local isFashionBtnShow = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.HeroFashion)
+  UILuaHelper.SetActive(self.m_btn_skin, isFashionBtnShow == true)
 end
 
 function Form_HeroCheck:FreshShowHeroInfo()
@@ -662,12 +681,16 @@ function Form_HeroCheck:OnBtnHeroPreviewClicked()
   if not self.m_heroCfg then
     return
   end
-  StackPopup:Push(UIDefines.ID_FORM_HEROPREVIEW, {
-    heroID = self.m_heroCfg.m_HeroID,
-    backFun = function()
-      self:OnHeroPreviewBack()
-    end
-  })
+  local fashion = HeroManager:GetHeroFashion()
+  if fashion then
+    local cfg = fashion:GetFashionInfoByHeroIDAndFashionID(self.m_heroCfg.m_HeroID, 0)
+    StackFlow:Push(UIDefines.ID_FORM_HEROPREVIEW, {
+      fashionId = cfg.m_FashionID,
+      backFun = function()
+        self:OnHeroPreviewBack()
+      end
+    })
+  end
 end
 
 function Form_HeroCheck:OnHeroPreviewBack()
@@ -696,6 +719,15 @@ function Form_HeroCheck:OnBtndamagetypeClicked()
   end
   StackPopup:Push(UIDefines.ID_FORM_HERODAMAGETYPEDETAIL, {
     heroCfg = self.m_heroCfg
+  })
+end
+
+function Form_HeroCheck:OnBtnskinClicked()
+  if not self.m_heroCfg then
+    return
+  end
+  StackPopup:Push(UIDefines.ID_FORM_FASHION, {
+    heroID = self.m_heroCfg.m_HeroID
   })
 end
 

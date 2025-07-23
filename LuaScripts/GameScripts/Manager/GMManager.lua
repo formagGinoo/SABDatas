@@ -28,7 +28,6 @@ function GMManager:OnInitNetwork()
   self:GMSetEasyAccount()
   self:GMSetUIDestroyMode()
   self:GMEnterHitMole()
-  self:GMEnterHitStory()
   self:GmGuaranteesTips()
   self.m_isAbleDebugger = UILuaHelper.IsAbleDebugger()
   self.m_isEditor = CS.UnityEngine.Application.isEditor
@@ -203,7 +202,11 @@ end
 
 function GMManager:GMEnterHitMole()
   SROptionsModify.AddSROptionMethod("打地鼠", function()
-    HeroActivityManager:GotoHeroActivity({main_id = 1030, sub_id = 1036})
+    StackFlow:Push(UIDefines.ID_FORM_WHACKMOLEBATTLEMAIN, {
+      iSubActId = 1036,
+      iLevelID = 6,
+      iActId = 1030
+    })
   end, "Debug", 0)
 end
 
@@ -219,13 +222,6 @@ function GMManager:GmGuaranteesTips()
         CS.ApplicationManager.Instance:RestartGame()
       end
     })
-  end, "Debug", 0)
-end
-
-function GMManager:GMEnterHitStory()
-  SROptionsModify.AddSROptionMethod("小法玩点击事件", function()
-    UILuaHelper.PlayDialogueGame(1, function()
-    end)
   end, "Debug", 0)
 end
 

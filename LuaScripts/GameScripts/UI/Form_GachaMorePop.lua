@@ -353,6 +353,7 @@ end
 
 function Form_GachaMorePop:RefreshRecordList()
   self.m_txt_recordtips_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(20326), GACHA_RECORD_MAX_CNT)
+  self.m_txt_recordtips_desc_Text.text = ConfigManager:GetCommonTextById(20350)
   self:refreshLoopScroll()
 end
 

@@ -48,6 +48,10 @@ function UIBossRewardItem:FreshRewardList()
   end
   table.insertto(rewardTab, rewardList)
   self:FreshRewardItems(rewardTab, customDataTab)
+  local quality = self.m_dungeonLevelPhaseCfg.m_ClientQuality
+  ResourceUtil:CreateEquipCommonQualityImg(self.m_bg_equipbg_Image, quality)
+  ResourceUtil:CreateEquipCommonIconImg(self.m_icon_equiptype_Image, quality)
+  ResourceUtil:CreateEquipQualityImg(self.m_equipborder_Image, quality)
 end
 
 function UIBossRewardItem:FreshRewardItems(rewardList, customDataTab)

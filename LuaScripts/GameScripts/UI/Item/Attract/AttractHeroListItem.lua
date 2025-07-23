@@ -14,7 +14,21 @@ function AttractHeroListItem:OnFreshData()
   local heroData = self.m_itemData
   self.m_itemRootObj.name = self.m_itemIndex
   self.c_img_bg_selected:SetActive(heroData.bIsAttractSelected)
-  ResourceUtil:CreateHeroIcon(self.c_img_head_Image, heroData.serverData.iHeroId)
+  local iFasionId = heroData.serverData.iFashion or 0
+  if iFasionId and 0 < iFasionId then
+    local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, iFasionId)
+    if not fashionCfg or fashionCfg:GetError() then
+      ResourceUtil:CreateHeroIcon(self.c_img_head_Image, heroData.serverData.iHeroId)
+      log.error("AttractHeroListItem skinCfgID Cannot Find Check Config: " .. iFasionId)
+      return
+    end
+    local performanceID = fashionCfg.m_PerformanceID[0]
+    local presentationData = CS.CData_Presentation.GetInstance():GetValue_ByPerformanceID(performanceID)
+    local szIcon = presentationData.m_UIkeyword .. "002"
+    UILuaHelper.SetAtlasSprite(self.c_img_head_Image, szIcon, nil, nil, true)
+  else
+    ResourceUtil:CreateHeroIcon(self.c_img_head_Image, heroData.serverData.iHeroId)
+  end
   self.c_txt_attract_lv_num_Text.text = heroData.serverData.iAttractRank
   self:RegisterOrUpdateRedDotItem(self.c_red, RedDotDefine.ModuleType.AttractBiographyEntry, heroData.serverData.iHeroId)
 end

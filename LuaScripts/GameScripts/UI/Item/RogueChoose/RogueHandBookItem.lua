@@ -70,11 +70,16 @@ function RogueHandBookItem:FreshNormalUI()
     self.m_img_bg_green:SetActive(cfg.m_HandbookType == 3)
   end
   UILuaHelper.SetAtlasSprite(self.m_img_occupy_Image, cfg.m_VolumeIcon, function()
-    self.m_img_occupy_Image:SetNativeSize()
+    if not utils.isNull(self.m_img_occupy_Image) then
+      self.m_img_occupy_Image:SetNativeSize()
+    end
   end)
   UILuaHelper.SetAtlasSprite(self.m_img_icon_Image, cfg.m_ItemIcon, function()
+    if utils.isNull(self.m_img_icon_Image) then
+      return
+    end
     self.m_img_icon_Image:SetNativeSize()
-    if self.mPosCfg then
+    if self.mPosCfg and not utils.isNull(self.m_img_icon) then
       local posTab = utils.changeCSArrayToLuaTable(self.mPosCfg.m_HandBookPos)
       if posTab and posTab[1] then
         UILuaHelper.SetLocalPosition(self.m_img_icon, posTab[1], posTab[2], 0)
@@ -127,11 +132,16 @@ function RogueHandBookItem:FreshLockUI()
   self.m_pnl_lock:SetActive(true)
   self.m_pnl_normal:SetActive(false)
   UILuaHelper.SetAtlasSprite(self.m_img_occupy_lock_Image, cfg.m_VolumeIcon, function()
-    self.m_img_occupy_lock_Image:SetNativeSize()
+    if not utils.isNull(self.m_img_occupy_lock_Image) then
+      self.m_img_occupy_lock_Image:SetNativeSize()
+    end
   end)
   UILuaHelper.SetAtlasSprite(self.m_img_icon_lock_Image, cfg.m_ItemIcon, function()
+    if utils.isNull(self.m_img_icon_lock_Image) then
+      return
+    end
     self.m_img_icon_lock_Image:SetNativeSize()
-    if self.mPosCfg then
+    if self.mPosCfg and not utils.isNull(self.m_img_icon_lock) then
       local posTab = utils.changeCSArrayToLuaTable(self.mPosCfg.m_HandBookPos)
       if posTab and posTab[1] then
         UILuaHelper.SetLocalPosition(self.m_img_icon_lock, posTab[1], posTab[2], 0)

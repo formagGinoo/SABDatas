@@ -90,10 +90,6 @@ function UIHeroActChallengeBase:ShowLeftTimeStr()
     self.m_isCanUpdateLeftTime = false
     return
   end
-  local showText = self.m_pvp_time_Text
-  if not self.m_isCurSeason then
-    showText = self.m_pvp_time_next_Text
-  end
   self.m_txt_time_Text.text = TimeUtil:SecondsToFormatStrDHOrHMS(leftTimeSec)
 end
 
@@ -275,6 +271,30 @@ end
 
 function UIHeroActChallengeBase:IsFullScreen()
   return true
+end
+
+function UIHeroActChallengeBase:GetDownloadResourceExtra(tParam)
+  local vPackage = {}
+  local vResourceExtra = {}
+  if tParam.main_id then
+    local act_id = tParam.main_id
+    local subActivityID = HeroActivityManager:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.ChallengeLevel)
+    local subActivityInfoCfg = HeroActivityManager:GetSubInfoByID(subActivityID)
+    if subActivityInfoCfg then
+      local vPackageSub, vResourceExtraSub = SubPanelManager:GetSubPanelDownloadResourceExtra(subActivityInfoCfg.m_SubPrefab)
+      if vPackageSub ~= nil then
+        for m = 1, #vPackageSub do
+          vPackage[#vPackage + 1] = vPackageSub[m]
+        end
+      end
+      if vResourceExtraSub ~= nil then
+        for n = 1, #vResourceExtraSub do
+          vResourceExtra[#vResourceExtra + 1] = vResourceExtraSub[n]
+        end
+      end
+    end
+  end
+  return vPackage, vResourceExtra
 end
 
 return UIHeroActChallengeBase

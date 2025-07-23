@@ -200,6 +200,9 @@ function UIRogueEquipItem:FreshItemUI()
     end
     local color = utils.changeCSArrayToLuaTable(cfg.m_TypeColor)
     UILuaHelper.SetColor(self.m_item_volume_icon_Image, table.unpack(color))
+    if not utils.isNull(self.m_img_titlebg_Image) then
+      UILuaHelper.SetAtlasSprite(self.m_img_titlebg_Image, cfg.m_TypeTabPic)
+    end
   end
   local posCfg = self.m_levelRogueStageHelper:GetRogueItemIconPosById(self.m_equipItemData.rogueStageItemCfg.m_ItemID)
   if posCfg and posCfg.m_BagItemPos then
@@ -213,31 +216,40 @@ function UIRogueEquipItem:FreshItemUI()
       UILuaHelper.SetLocalScale(self.m_item_icon, scale, scale, 1)
       UILuaHelper.SetLocalScale(self.m_item_icon_black, scale, scale, 1)
     end
+    local headPosTab = utils.changeCSArrayToLuaTable(posCfg.m_HeroHeadPos)
+    if headPosTab and headPosTab[1] then
+      UILuaHelper.SetLocalPosition(self.m_img_hero, headPosTab[1], headPosTab[2], 0)
+    end
+    if headPosTab[3] then
+      local scale = headPosTab[3] * 0.01
+      UILuaHelper.SetLocalScale(self.m_img_hero, scale, scale, 1)
+    end
   end
+  UILuaHelper.SetActive(self.m_img_recommend, self.m_equipItemData.isRecommend == true)
 end
 
 function UIRogueEquipItem:FreshIsHaveChooseStatus()
   UILuaHelper.SetActive(self.m_bg_equiped, self.m_equipItemData.isHaveChoose)
-  UILuaHelper.SetActive(self.m_bg_wear_equiped, self.m_equipItemData.isHaveChoose and self.m_showHeroWearEquipped)
+  UILuaHelper.SetActive(self.m_bg_full, self.m_equipItemData.isChooseFull)
 end
 
 function UIRogueEquipItem:FreshHeroCampShow()
-  local chapterID = self.m_equipItemData.rogueStageItemCfg.m_Character
+  local characterID = self.m_equipItemData.rogueStageItemCfg.m_Character
   local characterCareerArray = self.m_equipItemData.rogueStageItemCfg.m_Job
   self.m_showHeroWearEquipped = false
-  if chapterID ~= nil and chapterID ~= 0 then
-    local heroConfig = HeroManager:GetHeroConfigByID(chapterID)
+  if characterID ~= nil and characterID ~= 0 then
+    local heroConfig = HeroManager:GetHeroConfigByID(characterID)
     if heroConfig then
       self.m_showHeroWearEquipped = true
-      UILuaHelper.SetActive(self.m_bg_hero_wear, true)
+      UILuaHelper.SetActive(self.m_img_hero, true)
       UILuaHelper.SetActive(self.m_pnl_camp, false)
       self:FreshHeadIcon(heroConfig.m_PerformanceID[0])
     else
-      UILuaHelper.SetActive(self.m_bg_hero_wear, false)
+      UILuaHelper.SetActive(self.m_img_hero, false)
       UILuaHelper.SetActive(self.m_pnl_camp, false)
     end
   elseif characterCareerArray and 0 < characterCareerArray.Length then
-    UILuaHelper.SetActive(self.m_bg_hero_wear, false)
+    UILuaHelper.SetActive(self.m_img_hero, false)
     UILuaHelper.SetActive(self.m_pnl_camp, true)
     local characterArrayLen = characterCareerArray.Length
     for i = 1, MaxCharacterCareerNum do
@@ -247,10 +259,9 @@ function UIRogueEquipItem:FreshHeroCampShow()
       end
     end
   else
-    UILuaHelper.SetActive(self.m_bg_hero_wear, false)
+    UILuaHelper.SetActive(self.m_img_hero, false)
     UILuaHelper.SetActive(self.m_pnl_camp, false)
   end
-  UILuaHelper.SetActive(self.m_bg_wear_equiped, false)
 end
 
 function UIRogueEquipItem:FreshHeadIcon(performanceIDLv)
@@ -288,6 +299,9 @@ function UIRogueEquipItem:OnItemIconBeginDrag(pointerEventData)
   if self.m_equipItemData.isHaveChoose == true then
     return
   end
+  if self.m_equipItemData.isChooseFull == true then
+    return
+  end
   local startPos = pointerEventData.position
   self.m_startDragPos = startPos
 end
@@ -297,6 +311,9 @@ function UIRogueEquipItem:OnItemIconDrag(pointerEventData)
     return
   end
   if self.m_equipItemData.isHaveChoose == true then
+    return
+  end
+  if self.m_equipItemData.isChooseFull == true then
     return
   end
   if not self.m_startDragPos then
@@ -324,6 +341,9 @@ function UIRogueEquipItem:OnItemIconEndDrag(pointerEventData)
   if self.m_equipItemData.isHaveChoose == true then
     return
   end
+  if self.m_equipItemData.isChooseFull == true then
+    return
+  end
   if not pointerEventData then
     return
   end
@@ -336,6 +356,9 @@ end
 
 function UIRogueEquipItem:OnItemIconClk()
   if self.m_equipItemData.isHaveChoose then
+    return
+  end
+  if self.m_equipItemData.isChooseFull == true then
     return
   end
   if self.m_itemClkBackFun then

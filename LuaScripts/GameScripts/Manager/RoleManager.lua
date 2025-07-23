@@ -807,13 +807,28 @@ function RoleManager:GetMainBackgroundHideTypeValue(mainBackgroundID, configHide
   return configHideTypeValue
 end
 
-function RoleManager:SetRoleHeadNewFlag(headID, flagNum)
+function RoleManager:SetAllRoleHeadNewFlag()
+  local headIns = ConfigManager:GetConfigInsByName("PlayerHead")
+  local allCfgDic = headIns:GetAll()
+  for _, v in pairs(allCfgDic) do
+    local headID = v.m_HeadID
+    local isNewFlag = self:GetRoleHeadNewFlag(headID)
+    if isNewFlag == true then
+      self:SetRoleHeadNewFlag(headID, -1, true)
+    end
+  end
+  self:CheckUpdateHeadRedDotCount()
+end
+
+function RoleManager:SetRoleHeadNewFlag(headID, flagNum, isNotFreshRedDot)
   if not headID then
     return
   end
   local keyStr = "RoleHead_" .. headID
   LocalDataManager:SetIntSimple(keyStr, flagNum, true)
-  self:CheckUpdateHeadRedDotCount()
+  if isNotFreshRedDot ~= true then
+    self:CheckUpdateHeadRedDotCount()
+  end
 end
 
 function RoleManager:GetRoleHeadNewFlag(headID)
@@ -825,13 +840,28 @@ function RoleManager:GetRoleHeadNewFlag(headID)
   return newFlagNum == 1
 end
 
-function RoleManager:SetRoleHeadFrameNewFlag(headID, flagNum)
+function RoleManager:SetAllRoleHeadFrameNewFlag()
+  local headFrameIns = ConfigManager:GetConfigInsByName("PlayerHeadFrame")
+  local allCfgDic = headFrameIns:GetAll()
+  for _, v in pairs(allCfgDic) do
+    local headFrameID = v.m_HeadFrameID
+    local isNewFlag = self:GetRoleHeadFrameNewFlag(headFrameID)
+    if isNewFlag == true then
+      self:SetRoleHeadFrameNewFlag(headFrameID, -1, true)
+    end
+  end
+  self:CheckUpdateHeadFrameRedDotCount()
+end
+
+function RoleManager:SetRoleHeadFrameNewFlag(headID, flagNum, isNotFreshRedDot)
   if not headID then
     return
   end
   local keyStr = "RoleHeadFrame_" .. headID
   LocalDataManager:SetIntSimple(keyStr, flagNum, true)
-  self:CheckUpdateHeadFrameRedDotCount()
+  if isNotFreshRedDot ~= true then
+    self:CheckUpdateHeadFrameRedDotCount()
+  end
 end
 
 function RoleManager:GetRoleHeadBackgroundNewFlag(headBackGroundID)
@@ -903,11 +933,18 @@ function RoleManager:ReqGetUserToken(url)
   RPCS():Role_GetUserToken(getUserTokenMsg, function(sc, msg)
     if sc and sc.sUserToken then
       local langId = CS.MultiLanguageManager.g_iLanguageID
+      langId = CS.MultiLanguageManager.Instance:GetLanIDById(langId)
       local uid = self:GetUID()
       local zone = UserDataManager:GetZoneID()
       local param = string.format("auth=promo&usrtoken=%s&clientlang=%s&roleid=%s&zoneid=%s", sc.sUserToken, langId, uid, zone)
       local base64 = UILuaHelper.EncodeBase64(param)
-      local actUrl = string.format("%s/?clientparams=%s", url, base64)
+      local separator
+      if url:find("?") then
+        separator = "&"
+      else
+        separator = "?"
+      end
+      local actUrl = string.format("%s%sclientparams=%s", url, separator, base64)
       CS.DeviceUtil.OpenURLNew(actUrl)
       log.info("Web Act Url:" .. actUrl)
     end

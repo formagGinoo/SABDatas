@@ -52,6 +52,13 @@ function Form_Shop:OnActive()
   end, function()
     self.m_playingId = nil
   end)
+  self.m_changeTabVoice = true
+  self.m_buyVoice = true
+end
+
+function Form_Shop:OnActiveSame()
+  self:refreshTabLoopScroll()
+  self:RefreshShopItemInfo()
 end
 
 function Form_Shop:OnInactive()
@@ -103,6 +110,7 @@ function Form_Shop:RemoveAllEventListeners()
 end
 
 function Form_Shop:OnEventShopRefresh(shopId)
+  self:PlayBuyVoice()
   if self.m_chooseShopCfg then
     local shopList = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Normal)
     if self.m_chooseShopCfg.m_ShopID == shopId then
@@ -114,7 +122,20 @@ function Form_Shop:OnEventShopRefresh(shopId)
   end
 end
 
+function Form_Shop:PlayBuyVoice()
+  if self.m_buyVoice then
+    self.m_buyVoice = false
+    local closeVoice = ConfigManager:GetGlobalSettingsByKey("ShopBuyVoice")
+    CS.UI.UILuaHelper.StartPlaySFX(closeVoice, nil, function(playingId)
+      self.m_playingId = playingId
+    end, function()
+      self.m_playingId = nil
+    end)
+  end
+end
+
 function Form_Shop:OnEventShopItemRefresh()
+  self:PlayBuyVoice()
   self:refreshTabLoopScroll()
   self:RefreshShopItemInfo()
 end
@@ -178,6 +199,7 @@ end
 
 function Form_Shop:RefreshShopItemSoldOutAnim()
   if curBuyItem ~= nil then
+    self:PlayBuyVoice()
     self:NoRefreshShopDiscountAnim(function()
       local animationObj = curBuyItem.transform:Find("c_shopitem_soldout").gameObject
       local pnlItem = curBuyItem.transform:Find("pnl_item").gameObject
@@ -265,13 +287,16 @@ function Form_Shop:ChangeTab(index, cell_data)
   if self.m_GoodsListInfinityGrid then
     self.m_GoodsListInfinityGrid:LocateTo(0)
   end
-  local closeVoice = ConfigManager:GetGlobalSettingsByKey("ShopSwitchVoice")
-  if not self.m_playingId then
-    CS.UI.UILuaHelper.StartPlaySFX(closeVoice, nil, function(playingId)
-      self.m_playingId = playingId
-    end, function()
-      self.m_playingId = nil
-    end)
+  if self.m_changeTabVoice then
+    local closeVoice = ConfigManager:GetGlobalSettingsByKey("ShopSwitchVoice")
+    if not self.m_playingId then
+      self.m_changeTabVoice = false
+      CS.UI.UILuaHelper.StartPlaySFX(closeVoice, nil, function(playingId)
+        self.m_playingId = playingId
+      end, function()
+        self.m_playingId = nil
+      end)
+    end
   end
 end
 

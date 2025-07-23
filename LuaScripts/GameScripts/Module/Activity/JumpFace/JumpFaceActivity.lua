@@ -15,16 +15,24 @@ local subPanelData = {
     Priority = 1
   },
   [2702] = {
-    subPanelName = "ActivityBoqinaFaceSubPanel",
+    subPanelName = "ActivityQigeLunaSubPanel",
     Priority = 3
   },
   [25] = {
-    subPanelName = "ActivityPersonalRaidSubPanel",
+    subPanelName = "ActivityPersonalRaid2FaceSubPanel",
     Priority = 2
   },
   [27] = {
     subPanelName = "ActivityHuntNightSubPanel",
     Priority = 2
+  },
+  [25006] = {
+    subPanelName = "ActivityLoreleiFaceSubPanel",
+    Priority = 1
+  },
+  [25007] = {
+    subPanelName = "ActivityBellaFaceSubPanel",
+    Priority = 1
   }
 }
 
@@ -197,8 +205,14 @@ function JumpFaceActivity:GetReserverDownloadActivityID()
   local iJumpID = self:OnGetClientConfig().iJumpId
   local vActivityMainInfoData = ConfigManager:GetConfigInsByName("ActivityMainInfo"):GetAll()
   for _, stActivityMainInfo in pairs(vActivityMainInfoData) do
-    if stActivityMainInfo.m_GachaJumpID[0] == iJumpID then
-      iActivityMainInfoID = stActivityMainInfo.m_ActivityID
+    local gachaJumpIDArray = utils.changeCSArrayToLuaTable(stActivityMainInfo.m_GachaJumpID)
+    for _, v in ipairs(gachaJumpIDArray) do
+      if v[1] == iJumpID then
+        iActivityMainInfoID = stActivityMainInfo.m_ActivityID
+        break
+      end
+    end
+    if iActivityMainInfoID ~= nil then
       break
     end
   end

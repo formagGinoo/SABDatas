@@ -16,7 +16,6 @@ function Job_Startup_InitUsercentrics_Impl.InitUsercentrics(jobNode)
   CS.UserCentricsCtrl.Instance:Initialize(function(bIsSuccess)
     jobNode.Status = JobStatus.Success
     if bIsSuccess then
-      log.error("UsercentricsCtrl  Initialize Success")
     else
       log.error("UsercentricsCtrl  Initialize Failed")
     end

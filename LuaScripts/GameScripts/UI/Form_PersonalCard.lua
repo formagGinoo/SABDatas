@@ -493,6 +493,20 @@ function Form_PersonalCard:IsOpenGuassianBlur()
   return true
 end
 
+function Form_PersonalCard:GetDownloadResourceExtra(tParam)
+  local vPackage = {}
+  local vResourceExtra = {}
+  local headFrameID = RoleManager:GetHeadFrameID()
+  local roleHeadFrameCfg = RoleManager:GetPlayerHeadFrameCfg(headFrameID)
+  if roleHeadFrameCfg and roleHeadFrameCfg.m_HeadFrameEft and roleHeadFrameCfg.m_HeadFrameEft ~= "" then
+    vResourceExtra[#vResourceExtra + 1] = {
+      sName = roleHeadFrameCfg.m_HeadFrameEft,
+      eType = DownloadManager.ResourceType.UI
+    }
+  end
+  return vPackage, vResourceExtra
+end
+
 local fullscreen = true
 ActiveLuaUI("Form_PersonalCard", Form_PersonalCard)
 return Form_PersonalCard

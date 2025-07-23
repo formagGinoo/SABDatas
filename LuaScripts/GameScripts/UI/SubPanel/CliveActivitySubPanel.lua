@@ -22,6 +22,11 @@ function CliveActivitySubPanel:OnInit()
   self.aniHeroRoot = self.m_old_hero.transform.parent.gameObject
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.LoadedHeroList = {}
+  if self.m_initData.cliveType then
+    self.iCurTabIdx = self.m_initData.cliveType
+  else
+    self.iCurTabIdx = 1
+  end
 end
 
 function CliveActivitySubPanel:OnInActive()
@@ -40,7 +45,6 @@ function CliveActivitySubPanel:OnDestroy()
 end
 
 function CliveActivitySubPanel:OnFreshData()
-  self.iCurTabIdx = 1
   self.m_stActivity = self.m_panelData.activity
   local clientCfg = self.m_stActivity:GetClientCfg()
   table.sort(clientCfg.vHeroConfig, function(a, b)
@@ -85,13 +89,21 @@ function CliveActivitySubPanel:OnFreshData()
   else
     self.m_old_hero.transform:SetAsLastSibling()
     self.m_young_hero.transform:SetAsFirstSibling()
-    local aniLen = UILuaHelper.GetAnimationLengthByName(self.aniHeroRoot, "activity_clive_hero_in")
+    UILuaHelper.PlayAnimationByName(self.aniHeroRoot, "activity_clive_hero_in2")
+    local aniLen = UILuaHelper.GetAnimationLengthByName(self.aniHeroRoot, "activity_clive_hero_in2")
     TimeService:SetTimer(aniLen, 1, function()
       UILuaHelper.PlayAnimationByName(self.aniHeroRoot, "activity_clive_hero_old_loop")
     end)
   end
   self:RefreshUI()
   self:RefreshTopTab()
+end
+
+function CliveActivitySubPanel:SetCurTabIdx(idx)
+  if self.iCurTabIdx == idx then
+    return
+  end
+  self.iCurTabIdx = idx
 end
 
 function CliveActivitySubPanel:AddEventListeners()
@@ -254,10 +266,7 @@ function CliveActivitySubPanel:OnTab2Clicked()
 end
 
 function CliveActivitySubPanel:OnClickTab(idx)
-  if self.iCurTabIdx == idx then
-    return
-  end
-  self.iCurTabIdx = idx
+  self:SetCurTabIdx(idx)
   self:RefreshUI()
   self:DoChangeAni()
 end

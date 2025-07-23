@@ -146,11 +146,6 @@ end
 function Form_GuildList:OnBtnfindClicked()
   local guildId = self.m_inputfield_TMP_InputField.text
   if guildId ~= "" then
-    local bDirty = DirtyCharManager:FilterString(guildId)
-    if bDirty then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30013)
-      return
-    end
     local spacing = string.checkFirstCharIsSpacing(guildId)
     if spacing then
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30020)

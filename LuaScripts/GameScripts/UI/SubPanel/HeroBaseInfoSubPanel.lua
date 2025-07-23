@@ -105,15 +105,15 @@ function HeroBaseInfoSubPanel:InitShowAttr()
 end
 
 function HeroBaseInfoSubPanel:RefreshInheritUI()
-  local resetFlag = InheritManager:CheckCanResetLvById(self.m_curShowHeroData.serverData.iHeroId)
-  self.m_bg_tongbu:SetActive(resetFlag)
+  local resetFlag, isHave = InheritManager:CheckCanResetLvById(self.m_curShowHeroData.serverData.iHeroId)
+  self.m_bg_tongbu:SetActive(not resetFlag and isHave)
   local openFlag = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.LevelReset)
   if not openFlag then
     self.m_btn_reset:SetActive(false)
   else
-    self.m_btn_reset:SetActive(not resetFlag)
+    self.m_btn_reset:SetActive(resetFlag and isHave)
   end
-  if resetFlag then
+  if not resetFlag and isHave then
     UILuaHelper.SetColor(self.m_txt_lv_num_Text, 217, 145, 0, 1)
   else
     UILuaHelper.SetColor(self.m_txt_lv_num_Text, 255, 255, 255, 1)
@@ -232,6 +232,7 @@ function HeroBaseInfoSubPanel:FreshHeroName(name, shortName)
   if shortName then
     self.m_txt_hero_nike_name_Text.text = shortName
   end
+  self.m_btn_Preview:SetActive(true)
 end
 
 function HeroBaseInfoSubPanel:FreshShowHeroBaseAttr()
@@ -381,7 +382,7 @@ function HeroBaseInfoSubPanel:FreshUpgradeBtnShow(lv, heroQuality)
     end
   end
   local resetFlag = InheritManager:CheckCanResetLvById(self.m_curShowHeroData.serverData.iHeroId)
-  if resetFlag then
+  if not resetFlag then
     isShow = false
   end
   UILuaHelper.SetActive(self.m_btn_upgrade, isShow)
@@ -485,7 +486,7 @@ end
 function HeroBaseInfoSubPanel:OnBtnmoreClicked()
   local serverData = self.m_curShowHeroData.serverData
   local heroAttr = serverData.mHeroAttr[HeroManager.TotalServerAttrIndex] or {}
-  StackFlow:Push(UIDefines.ID_FORM_HEROABILITYDETAIL, {heroAttrList = heroAttr})
+  StackPopup:Push(UIDefines.ID_FORM_HEROABILITYDETAIL, {heroAttrList = heroAttr})
 end
 
 function HeroBaseInfoSubPanel:OnBtnskill01Clicked()
@@ -541,11 +542,11 @@ function HeroBaseInfoSubPanel:OnBtncampClicked()
   local heroCfg = self.m_curShowHeroData.characterCfg
   local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Circulation)
   if isOpen ~= true then
-    StackFlow:Push(UIDefines.ID_FORM_HEROCAMPDETAIL, {heroCfg = heroCfg})
+    StackPopup:Push(UIDefines.ID_FORM_HEROCAMPDETAIL, {heroCfg = heroCfg})
   else
     local camp = heroCfg.m_Camp
     local campCirculationID = HeroManager:GetCirculationIDByType(HeroManager.CirculationType.Camp, camp)
-    StackFlow:Push(UIDefines.ID_FORM_CIRCULATIONPOP, {circulationID = campCirculationID, isNeedBackCirculation = true})
+    StackPopup:Push(UIDefines.ID_FORM_CIRCULATIONPOP, {circulationID = campCirculationID, isNeedBackCirculation = true})
   end
 end
 
@@ -560,7 +561,7 @@ function HeroBaseInfoSubPanel:OnBtnequipClicked()
   else
     local equipType = heroCfg.m_Equiptype
     local equipCirculationID = HeroManager:GetCirculationIDByType(HeroManager.CirculationType.Equip, equipType)
-    StackFlow:Push(UIDefines.ID_FORM_CIRCULATIONPOP, {circulationID = equipCirculationID, isNeedBackCirculation = true})
+    StackPopup:Push(UIDefines.ID_FORM_CIRCULATIONPOP, {circulationID = equipCirculationID, isNeedBackCirculation = true})
   end
 end
 
@@ -620,9 +621,15 @@ function HeroBaseInfoSubPanel:OnBtnPreviewClicked()
   if not self.m_curShowHeroData then
     return
   end
-  StackFlow:Push(UIDefines.ID_FORM_HEROPREVIEW, {
-    heroID = self.m_curShowHeroData.characterCfg.m_HeroID
-  })
+  local fashionId = self.m_curShowHeroData.serverData.iFashion
+  local fashion = HeroManager:GetHeroFashion()
+  if fashion and (not fashionId or fashionId == 0) then
+    local cfg = fashion:GetFashionInfoByHeroIDAndFashionID(self.m_curShowHeroData.characterCfg.m_HeroID, fashionId)
+    fashionId = cfg.m_FashionID
+  end
+  if fashionId and fashionId ~= 0 then
+    StackFlow:Push(UIDefines.ID_FORM_HEROPREVIEW, {fashionId = fashionId})
+  end
 end
 
 function HeroBaseInfoSubPanel:OnBtnskillresetgreyClicked()

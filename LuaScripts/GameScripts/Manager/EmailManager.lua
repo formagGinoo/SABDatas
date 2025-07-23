@@ -331,7 +331,7 @@ function EmailManager:GetAllEmailDataList()
   local isDelEmail = false
   for i = allDataNum, 1, -1 do
     local tempMailData = self.m_mailList[i]
-    if tempMailData and curTime >= tempMailData.serverData.iDelTime then
+    if tempMailData and tempMailData.serverData.iDelTime ~= 0 and curTime >= tempMailData.serverData.iDelTime then
       isDelEmail = true
       table.remove(self.m_mailList, i)
     end

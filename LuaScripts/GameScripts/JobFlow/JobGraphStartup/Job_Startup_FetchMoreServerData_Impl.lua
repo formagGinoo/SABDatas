@@ -50,9 +50,24 @@ end
 function Job_Startup_FetchMoreServerData_Impl.StartTimer(jobNode)
   Job_Startup_FetchMoreServerData_Impl.DealTimer()
   Job_Startup_FetchMoreServerData_Impl.timer = TimeService:SetTimer(maxWaitTime, 1, function()
+    local openTime = TimeUtil:GetServerTimeS()
+    local str = "OpenTime" .. tostring(openTime)
+    local lastCSIdList = ""
+    for messageId, manager in pairs(Job_Startup_FetchMoreServerData_Impl.Request) do
+      lastCSIdList = lastCSIdList .. tostring(messageId) .. "_"
+    end
+    local userId = tostring(RoleManager:GetUID()) or ""
+    local serverId = tostring(UserDataManager:GetZoneID()) or ""
+    local userInfo = "UId: " .. tostring(userId) .. "ZoneId : " .. tostring(serverId)
+    local finStr = str .. "_" .. lastCSIdList .. "_" .. userInfo
+    local stReportData = CS.ReportDataPool.Instance:RequestReportDataByType(CS.ReportDataDefines.Client_login_process)
+    stReportData.Job_name = "FetchMoreServerDataError"
+    stReportData.Job_detail = finStr
+    CS.ReportService.Instance:Report(stReportData)
+    CS.ReportDataPool.Instance:ReturnReportDataByType(stReportData)
     utils.CheckAndPushCommonTips({
       title = CS.ConfFact.LangFormat4DataInit("CommonError"),
-      content = CS.ConfFact.LangFormat4DataInit("LoginProtocolHandlingFail"),
+      content = CS.ConfFact.LangFormat4DataInit("LoginConnectServerFail"),
       bLockBack = 2,
       btnNum = 1,
       funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),

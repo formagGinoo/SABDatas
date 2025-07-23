@@ -35,6 +35,7 @@ end
 function GachaManager:OnInitMustRequestInFetchMore()
   self.m_gachaClientData = ClientDataManager:GetClientValueStringByKey(ClientDataManager.ClientKeyType.Gacha) or ""
   self:GetAllGachaWishList()
+  self:GetGachaDataOnLogin()
 end
 
 function GachaManager:GetFirstGachaState()
@@ -66,6 +67,15 @@ function GachaManager:GetOpenGachPoolIDList()
     end
   end
   return gachaIdList
+end
+
+function GachaManager:GetGachaDataOnLogin()
+  local gachaIdList = self:GetOpenGachPoolIDList()
+  local reqMsg = MTTDProto.Cmd_Gacha_GetGacha_CS()
+  reqMsg.vGachaId = gachaIdList
+  RPCS():Gacha_GetGacha(reqMsg, function(sc)
+    self.mGachaPool = sc.mGachaPool
+  end)
 end
 
 function GachaManager:GetGachaData(chooseWindowId)
@@ -529,6 +539,14 @@ function GachaManager:CheckGachaPoolHaveRedDot()
           local userNum = ItemManager:GetItemNum(tonumber(itemId), true)
           if itemNum <= userNum then
             show = true
+          end
+        end
+        local gachaDailyMax = itemCfg.m_DailyMax
+        if gachaDailyMax and 0 < tonumber(gachaDailyMax) then
+          local dailyTimes = self:GetGachaDailyTimesById(itemCfg.m_GachaID)
+          dailyTimes = gachaDailyMax - dailyTimes
+          if dailyTimes < 10 then
+            show = false
           end
         end
         if show then

@@ -20,10 +20,23 @@ function PersonalRaidManager:OnInitNetwork()
   RPCS():Listen_Push_SoloRaid_FinishRaid(handler(self, self.OnPushSoloRaidFinishRaid), "PersonalRaidManager")
   RPCS():Listen_Push_SoloRaid_CurRaid(handler(self, self.OnPushSoloRaidCurRaid), "PersonalRaidManager")
   RPCS():Listen_Push_SoloRaid_RankUpdate(handler(self, self.OnPushSoloRaidRankUpdate), "PersonalRaidManager")
+  self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnGetActiveListCB))
 end
 
 function PersonalRaidManager:OnAfterInitConfig()
   self:InitGlobalCfg()
+end
+
+function PersonalRaidManager:OnGetActiveListCB()
+  local openSoloRaid = ActivityManager:GetActivityInShowTimeByType(MTTD.ActivityType_SoloRaid) ~= nil
+  local activity = ActivityManager:GetActivityByType(MTTD.ActivityType_SoloRaid)
+  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.SoloRaid)
+  if isOpen and openSoloRaid and activity and activity.GetPersonalRaidBattleEndTime then
+    local endTime = activity:GetPersonalRaidBattleEndTime()
+    if endTime - TimeUtil:GetServerTimeS() > 0 then
+      self:ReqSoloRaidLoginGetDataCS()
+    end
+  end
 end
 
 function PersonalRaidManager:OnDailyReset()
@@ -119,6 +132,26 @@ function PersonalRaidManager:OnDailyRefreshSoloRaidGetDataSC(stStageData, msg)
     self.m_dailyChallengePassIds[v] = 1
   end
   self:broadcastEvent("eGameEvent_SoloRaid_DailyRefreshGetData")
+end
+
+function PersonalRaidManager:ReqSoloRaidLoginGetDataCS()
+  local stageGetListCSMsg = MTTDProto.Cmd_SoloRaid_GetData_CS()
+  RPCS():SoloRaid_GetData(stageGetListCSMsg, handler(self, self.OnSoloRaidLoginGetDataSC))
+end
+
+function PersonalRaidManager:OnSoloRaidLoginGetDataSC(stStageData, msg)
+  self.m_stSoloRaid = stStageData.stSoloRaid
+  self.m_normalDailyTimes = stStageData.iNormalTimes
+  self.m_challengeDailyTimes = stStageData.iHardTimes
+  self.m_allPassChapterStagesIds = {}
+  self.m_dailyChallengePassIds = {}
+  self.m_curBossId = self.m_stSoloRaid.iBossId
+  for i, v in pairs(self.m_stSoloRaid.vPassRaid) do
+    self.m_allPassChapterStagesIds[v] = 1
+  end
+  for i, v in pairs(self.m_stSoloRaid.vDailyPassRaid) do
+    self.m_dailyChallengePassIds[v] = 1
+  end
 end
 
 function PersonalRaidManager:ReqSoloRaidChooseRaidCS(iRaidId)

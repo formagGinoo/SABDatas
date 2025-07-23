@@ -43,6 +43,7 @@ end
 
 function Form_AttractLetter:OnActive()
   self.super.OnActive(self)
+  self.bIsActive = true
   self:FreshUI()
 end
 
@@ -57,6 +58,7 @@ function Form_AttractLetter:OnInactive()
   if self.m_UILockID and UILockIns:IsValidLocker(self.m_UILockID) then
     UILockIns:Unlock(self.m_UILockID)
   end
+  self.iPreStep = 0
 end
 
 function Form_AttractLetter:OnDestroy()
@@ -75,6 +77,7 @@ function Form_AttractLetter:FreshUI()
   local bIsReading = tempParams and tempParams.isReading or false
   self.iCurHeroId = tempParams and tempParams.hero_id or 0
   self.iCurLetterId = tempParams and tempParams.iLetterId or 0
+  self.bIsInAttract = tempParams and tempParams.bIsInAttract or false
   self.bIsReading = bIsReading
   if bIsReading then
     self:FreshReadingUI()
@@ -86,6 +89,7 @@ end
 function Form_AttractLetter:FreshReadingUI()
   self.m_HeroTabList:SetActive(true)
   self.m_LetterTabList:SetActive(false)
+  self.iPreStep = 0
   self:FreshHeroList()
   self:FreshLetterInfo()
 end
@@ -99,6 +103,10 @@ end
 
 function Form_AttractLetter:FreshHeroList()
   local letterHeroList = AttractManager:GetLetterHeroList()
+  if not letterHeroList or #letterHeroList == 0 then
+    log.error("Form_AttractLetter:FreshHeroList() 数据异常!")
+    return
+  end
   if not self.iCurHeroId or self.iCurHeroId == 0 then
     self.iCurSelectIdx = 1
     self.iCurHeroId = letterHeroList[1].heroData.serverData.iHeroId
@@ -166,6 +174,7 @@ function Form_AttractLetter:OnHeroItemClick(index, itemRootObj)
   self.letterHeroList[itemIndex].bIsLetterSelected = true
   self.letterData = self.letterHeroList[self.iCurSelectIdx].letterData
   self.iCurHeroId = self.letterHeroList[self.iCurSelectIdx].heroData.serverData.iHeroId
+  self.iPreStep = 0
   self:FreshLetterInfo()
   self.m_luaHeroListInfinityGrid:ReBind(itemIndex)
 end
@@ -241,6 +250,17 @@ function Form_AttractLetter:GetLetterNodeItem(type)
       item.aniName = "pnl_talk_in"
       item.canvasGroup = letterNode:GetComponent("CanvasGroup")
     elseif DialogueType == self.DialogueNodeType.Entrust then
+      item.titleText = letterNode.transform:Find("m_txt_entrust_title"):GetComponent("TMPPro")
+      item.descText = letterNode.transform:Find("m_txt_entrust_desc"):GetComponent("TMPPro")
+      item.prefabHelper = letterNode.transform:Find("pnl_item"):GetComponent("PrefabHelper")
+      item.btn_goto = letterNode.transform:Find("btns/btn_goto"):GetComponent("ButtonExtensions")
+      item.btn_finish = letterNode.transform:Find("btns/btn_finish"):GetComponent("ButtonExtensions")
+      item.btn_finish_gary = letterNode.transform:Find("btns/btn_finish_gary"):GetComponent("ButtonExtensions")
+      item.img_finishall = letterNode.transform:Find("img_finishall").gameObject
+      item.fx1 = letterNode.transform:Find("img_finishall/glow_1").gameObject
+      item.fx2 = letterNode.transform:Find("img_finishall/circle_dot_4").gameObject
+      item.aniName = "pnl_talk_choose_in"
+      item.extraAniName = "pnl_finishall_in"
     elseif DialogueType == self.DialogueNodeType.Invite then
       item.titleText = letterNode.transform:Find("m_txt_invite_title"):GetComponent("TMPPro")
       item.descText = letterNode.transform:Find("m_txt_invite_desc"):GetComponent("TMPPro")
@@ -283,6 +303,12 @@ function Form_AttractLetter:FreshLetterInfo()
     UILuaHelper.ForceRebuildLayoutImmediate(self.m_Content)
     self.mLetterScroll.verticalNormalizedPosition = 1
   end
+  if self.bIsActive then
+    self.bIsActive = false
+    TimeService:SetTimer(0.05, 1, function()
+      UILuaHelper.PlayAnimationByName(self.m_letterScroll, "pnl_talk_in")
+    end)
+  end
 end
 
 function Form_AttractLetter:FreshHistoryNode()
@@ -300,6 +326,9 @@ function Form_AttractLetter:FreshHistoryNode()
       end
       table.insert(historySteps, tempStep)
       local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(letterData.iLetterId, tempStep)
+      if not letterCfg then
+        break
+      end
       local stepList = utils.changeCSArrayToLuaTable(letterCfg.m_NextStep)
       if #stepList <= 1 then
         tempStep = stepList[1] or 0
@@ -347,6 +376,7 @@ function Form_AttractLetter:AddLetterNode()
   end
   if self.curAniItem and self.curAniItem.canvasGroup then
     self.curAniItem.canvasGroup.alpha = 1
+    UILuaHelper.ResetAnimationByName(self.curAniItem.root, self.curAniItem.aniName, -1)
   end
   self.bIsWaitting = false
   local item = self:GetLetterNodeItem()
@@ -356,7 +386,23 @@ function Form_AttractLetter:AddLetterNode()
     log.error("Form_AttractLetter:AddLetterNode() 检查配置表AttractLetter ID：" .. letterData.iLetterId .. " 步骤：" .. self.iCurCreateStep)
     return
   end
+  self:DealNodeWithType(item, letterCfg)
+  if self.bIsInitHostory then
+    return
+  end
+  UILuaHelper.ForceRebuildLayoutImmediate(self.m_Content)
+  if self.iCurCreateStep == 1 then
+    self.mLetterScroll.verticalNormalizedPosition = 1
+  else
+    self.mLetterScroll.verticalNormalizedPosition = 0
+  end
+  UILuaHelper.PlayAnimationByName(item.root, item.aniName)
+  self.curAniItem = item
+end
+
+function Form_AttractLetter:DealNodeWithType(item, letterCfg)
   local DialogueType = letterCfg.m_DialogueType
+  local letterData = self.letterData
   if DialogueType == self.DialogueNodeType.HeroTalk then
     item.roleNameText.text = letterCfg.m_mRoleName
     item.descText.text = letterCfg.m_mPlotText
@@ -392,7 +438,7 @@ function Form_AttractLetter:AddLetterNode()
       self.bIsWaitting = false
       return
     end
-    local preStep = self.iCurCreateStep - 1
+    local preStep = self.iPreStep
     
     local function GetChooseListNext()
       local list = {}
@@ -440,6 +486,9 @@ function Form_AttractLetter:AddLetterNode()
     utils.ShowPrefabHelper(item.prefabHelper, function(go, index, step)
       local transform = go.transform
       local cfg = AttractManager:GetAttractLetterCfgByIDAndStep(letterData.iLetterId, step)
+      if not cfg then
+        return
+      end
       transform:Find("m_txt_choose"):GetComponent("TMPPro").text = cfg.m_mPlotText
       local btn = go:GetComponent("ButtonExtensions")
       btn.Clicked = handler1(self, self.OnClickChoose, {
@@ -453,6 +502,70 @@ function Form_AttractLetter:AddLetterNode()
   elseif DialogueType == self.DialogueNodeType.EndTips then
     item.descText.text = letterCfg.m_mPlotText
   elseif DialogueType == self.DialogueNodeType.Entrust then
+    self.bIsWaitting = true
+    local cfg = AttractManager:GetAttractArchiveCfgByHeroIDAndArchiveID(self.iCurHeroId, letterData.iArchiveId)
+    item.titleText.text = cfg.m_mTitle
+    local taskId = letterCfg.m_TaskID
+    local taskCfg = AttractManager:GetAttractTaskCfgByID(taskId)
+    local name = string.CS_Format(taskCfg.m_mTaskName, taskCfg.m_ObjectiveCount)
+    item.descText.text = name
+    local taskInfo = letterData.stQuest or {}
+    local state = taskInfo.iState or TaskManager.TaskState.Doing
+    if self.iCurCreateStep < letterData.iCurStep then
+      state = TaskManager.TaskState.Completed
+    end
+    if taskCfg.m_ObjectiveType == MTTDProto.QuestCond_LetterFight then
+      item.prefabHelper:CheckAndCreateObjs(0)
+    elseif taskCfg.m_ObjectiveType == MTTDProto.QuestCond_LetterSubmitItem then
+      local taskItem = utils.changeCSArrayToLuaTable(taskCfg.m_ObjectiveData)
+      utils.ShowPrefabHelper(item.prefabHelper, function(go, index, id)
+        local processData = ResourceUtil:GetProcessRewardData({
+          iID = tonumber(id),
+          iNum = tonumber(taskCfg.m_ObjectiveCount)
+        })
+        local itemWidgetIcon = self:createCommonItem(go)
+        itemWidgetIcon:SetItemInfo(processData)
+        itemWidgetIcon:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+          self:OnRewardCommonItemClk(itemID, itemNum, itemCom)
+        end)
+        local curHaveNum = ItemManager:GetItemNum(id, true) or 0
+        curHaveNum = curHaveNum > taskCfg.m_ObjectiveCount and taskCfg.m_ObjectiveCount or curHaveNum
+        itemWidgetIcon:SetNeedNum(taskCfg.m_ObjectiveCount, curHaveNum)
+        itemWidgetIcon:SetItemHaveGetActive(state == TaskManager.TaskState.Completed)
+        item.itemWidgetIcon = itemWidgetIcon
+      end, {
+        taskItem[2]
+      })
+    end
+    if state <= TaskManager.TaskState.Doing then
+      item.btn_goto.gameObject:SetActive(true)
+      item.btn_finish.gameObject:SetActive(false)
+      item.btn_finish_gary.gameObject:SetActive(false)
+      item.img_finishall:SetActive(false)
+      if not self.bIsInitHostory then
+        self:ReqSetLetter()
+      end
+      self.bIsWaitting = true
+    elseif state == TaskManager.TaskState.Completed then
+      item.btn_goto.gameObject:SetActive(false)
+      item.btn_finish.gameObject:SetActive(false)
+      item.btn_finish_gary.gameObject:SetActive(false)
+      item.fx1:SetActive(false)
+      item.fx2:SetActive(false)
+      item.img_finishall:SetActive(true)
+      self.bIsWaitting = false
+    elseif state == TaskManager.TaskState.Finish then
+      local taskItem = utils.changeCSArrayToLuaTable(taskCfg.m_ObjectiveData)
+      local curHaveNum = ItemManager:GetItemNum(taskItem[2], true) or 0
+      local bIsEnough = curHaveNum >= taskCfg.m_ObjectiveCount
+      item.btn_goto.gameObject:SetActive(false)
+      item.btn_finish.gameObject:SetActive(bIsEnough)
+      item.btn_finish_gary.gameObject:SetActive(not bIsEnough)
+      item.img_finishall:SetActive(false)
+      self.bIsWaitting = false
+    end
+    item.btn_goto.Clicked = handler1(self, self.OnClickGoto, {taskId = taskId})
+    item.btn_finish.Clicked = handler1(self, self.OnClickFinish, {taskId = taskId, item = item})
   elseif DialogueType == self.DialogueNodeType.Invite then
     self.bIsWaitting = true
     local cfg = AttractManager:GetAttractArchiveCfgByHeroIDAndArchiveID(self.iCurHeroId, letterData.iArchiveId)
@@ -489,28 +602,49 @@ function Form_AttractLetter:AddLetterNode()
   elseif DialogueType == self.DialogueNodeType.Narration then
     item.descText.text = letterCfg.m_mPlotText
   end
-  if self.bIsInitHostory then
+end
+
+function Form_AttractLetter:OnClickGoto(params)
+  local taskId = params.taskId
+  local taskCfg = AttractManager:GetAttractTaskCfgByID(taskId)
+  BattleFlowManager:StartEnterBattle(AttractManager.FightType_Attract, taskCfg.m_Mapid, taskCfg.m_UID, self.bIsInAttract, self.iCurHeroId, self.letterData.iLetterId)
+end
+
+function Form_AttractLetter:OnClickFinish(params)
+  AttractManager:ReqLetterSubmitItem(self.iCurHeroId, self.letterData.iLetterId, params.taskId, function()
+    local item = params.item
+    item.btn_goto.gameObject:SetActive(false)
+    item.btn_finish.gameObject:SetActive(false)
+    item.btn_finish_gary.gameObject:SetActive(false)
+    item.img_finishall:SetActive(true)
+    UILuaHelper.PlayAnimationByName(item.img_finishall, item.extraAniName)
+    item.fx1:SetActive(true)
+    item.fx2:SetActive(true)
+    item.itemWidgetIcon:SetItemHaveGetActive(true)
+    self.bIsWaitting = false
+  end)
+end
+
+function Form_AttractLetter:OnRewardCommonItemClk(itemID, itemNum, itemCom)
+  if not itemID then
     return
   end
-  UILuaHelper.ForceRebuildLayoutImmediate(self.m_Content)
-  if self.iCurCreateStep == 1 then
-    self.mLetterScroll.verticalNormalizedPosition = 1
-  else
-    self.mLetterScroll.verticalNormalizedPosition = 0
-  end
-  UILuaHelper.PlayAnimationByName(item.root, item.aniName)
-  self.curAniItem = item
+  utils.openItemDetailPop({iID = itemID, iNum = itemNum})
 end
 
 function Form_AttractLetter:OnClickChoose(params)
   self.bIsWaitting = true
   self.vNewReply = {}
   self.vNewReply[#self.vNewReply + 1] = params.step
+  self.iPreStep = self.iCurCreateStep or 0
   self.iCurCreateStep = params.step
   AttractManager:ReqSetLetter(self.iCurHeroId, self.letterData.iLetterId, params.step, self.vNewReply, function()
     self.bIsWaitting = false
     self.vNewReply = {}
     local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, params.step)
+    if not letterCfg then
+      return
+    end
     params.root.transform:SetParent(self.m_recircleNode.transform)
     params.root.transform.localPosition = Vector3.zero
     local item = self:GetLetterNodeItem(self.DialogueNodeType.NoahTalk)
@@ -571,8 +705,12 @@ function Form_AttractLetter:OnClickGift()
   AttractManager:ReqSetLetter(self.iCurHeroId, self.letterData.iLetterId, self.iCurCreateStep, self.vNewReply, function()
     self.vNewReply = {}
     local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, self.iCurCreateStep)
+    if not letterCfg then
+      return
+    end
     local stepList = utils.changeCSArrayToLuaTable(letterCfg.m_NextStep)
     if stepList[1] and stepList[1] ~= 0 then
+      self.iPreStep = self.iCurCreateStep or 0
       self.iCurCreateStep = stepList[1]
       self:AddLetterNode()
     end
@@ -584,10 +722,24 @@ function Form_AttractLetter:OnBtnnextClicked()
     return
   end
   local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, self.iCurCreateStep)
+  if not letterCfg then
+    return
+  end
+  if letterCfg.m_DialogueType == self.DialogueNodeType.Entrust then
+    local taskInfo = self.letterData.stQuest or {}
+    local state = taskInfo.iState or TaskManager.TaskState.Doing
+    if state ~= TaskManager.TaskState.Completed then
+      return
+    end
+  end
   local stepList = utils.changeCSArrayToLuaTable(letterCfg.m_NextStep)
   if stepList[1] and stepList[1] ~= 0 then
     local cfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, stepList[1])
+    if not cfg then
+      return
+    end
     if cfg.m_DialogueType == self.DialogueNodeType.Choose then
+      self.iPreStep = self.iCurCreateStep or 0
       self.iCurCreateStep = stepList[1]
       self:AddLetterNode()
       self.bIsWaitting = true
@@ -595,6 +747,7 @@ function Form_AttractLetter:OnBtnnextClicked()
     end
   end
   if self.iCurCreateStep <= self.letterData.iCurStep and stepList[1] and stepList[1] ~= 0 then
+    self.iPreStep = self.iCurCreateStep or 0
     self.iCurCreateStep = stepList[#stepList]
     self:AddLetterNode()
     return
@@ -602,6 +755,7 @@ function Form_AttractLetter:OnBtnnextClicked()
   if not stepList[1] or stepList[1] == 0 then
     return
   end
+  self.iPreStep = self.iCurCreateStep or 0
   self.iCurCreateStep = stepList[1]
   self:AddLetterNode()
 end
@@ -611,6 +765,9 @@ function Form_AttractLetter:ReqSetLetter(bIsClose)
     return
   end
   local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, self.iCurCreateStep)
+  if not letterCfg then
+    return
+  end
   if letterCfg.m_DialogueType == self.DialogueNodeType.Choose then
     local bIsChoosen = false
     for _, v in ipairs(self.vNewReply) do
@@ -620,38 +777,45 @@ function Form_AttractLetter:ReqSetLetter(bIsClose)
       end
     end
     if not bIsChoosen then
-      self.iCurCreateStep = self.iCurCreateStep - 1
+      self.iCurCreateStep = self.iPreStep or 0
       if self.iCurCreateStep <= self.letterData.iCurStep then
         if bIsClose then
-          self.iCurCreateStep = self.iCurCreateStep + 1
-          self:CloseForm()
+          self:CloseSelfAndCheck2Hall()
         end
         return
       end
     end
   elseif letterCfg.m_DialogueType == self.DialogueNodeType.Invite then
-    self.iCurCreateStep = self.iCurCreateStep - 1
+    self.iCurCreateStep = self.iPreStep or 0
     if self.iCurCreateStep <= self.letterData.iCurStep then
       if bIsClose then
-        self.iCurCreateStep = self.iCurCreateStep + 1
-        self:CloseForm()
+        self:CloseSelfAndCheck2Hall()
       end
       return
     end
   end
   AttractManager:ReqSetLetter(self.iCurHeroId, self.letterData.iLetterId, self.iCurCreateStep, self.vNewReply, function()
     if bIsClose then
-      self:CloseForm()
+      self:CloseSelfAndCheck2Hall()
     end
   end)
 end
 
 function Form_AttractLetter:OnBtncloseClicked()
   if self.iCurCreateStep <= self.letterData.iCurStep then
-    self:CloseForm()
+    self:CloseSelfAndCheck2Hall()
     return
   end
   self:ReqSetLetter(true)
+end
+
+function Form_AttractLetter:CloseSelfAndCheck2Hall()
+  if self.bIsInAttract then
+    self:CloseForm()
+    return
+  end
+  self:CloseForm()
+  self:GoBackFormHall()
 end
 
 function Form_AttractLetter:IsOpenGuassianBlur()

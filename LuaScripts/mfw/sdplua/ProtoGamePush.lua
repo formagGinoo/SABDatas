@@ -144,8 +144,10 @@ CmdId_Push_Rogue_FinishChallenge = 20325
 CmdId_Push_Hunting_Boss = 20326
 CmdId_Push_Alliance_Battle_Boss = 20327
 CmdId_Push_Hunting_RankUpdate = 20328
+CmdId_Push_Ancient_Quest = 20329
 CmdId_Push_NewGift = 20330
 CmdId_Push_LegacyStage = 20331
+CmdId_Push_Letter_Quest = 20332
 CmdId_Push_BaseStoreMonthlyCard = 20630
 CmdId_Push_BaseStoreMonthlyCardReward = 20631
 CmdId_Push_BaseStoreChapter = 20632
@@ -2049,6 +2051,7 @@ Cmd_Push_Notify_OriginalArenaReward.Definition = {
   "iSeasonId",
   "iGroupId",
   "vRewardItem",
+  "iCurDay",
   iType = {
     0,
     0,
@@ -2072,6 +2075,12 @@ Cmd_Push_Notify_OriginalArenaReward.Definition = {
     0,
     sdp.SdpVector(CmdOriginalArenaRewardItem),
     nil
+  },
+  iCurDay = {
+    4,
+    0,
+    8,
+    0
   }
 }
 Cmd_Push_Notify_SoloRaidReward = sdp.SdpStruct("Cmd_Push_Notify_SoloRaidReward")
@@ -2918,5 +2927,25 @@ Cmd_Push_Hunting_RankUpdate.Definition = {
     0,
     8,
     0
+  }
+}
+Cmd_Push_Ancient_Quest = sdp.SdpStruct("Cmd_Push_Ancient_Quest")
+Cmd_Push_Ancient_Quest.Definition = {
+  "vQuest",
+  vQuest = {
+    0,
+    0,
+    sdp.SdpVector(CmdQuest),
+    nil
+  }
+}
+Cmd_Push_Letter_Quest = sdp.SdpStruct("Cmd_Push_Letter_Quest")
+Cmd_Push_Letter_Quest.Definition = {
+  "vQuest",
+  vQuest = {
+    0,
+    0,
+    sdp.SdpVector(CmdQuest),
+    nil
   }
 }

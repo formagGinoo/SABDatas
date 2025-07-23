@@ -92,6 +92,40 @@ function Form_Gacha10:StopSequence()
   self.m_sequenceList = {}
 end
 
+local function pendingStoreReview()
+  if ChannelManager:IsAndroid() and tonumber(CS.DeviceUtil:GetPackageVersionCode()) < 200000505 then
+    return
+  end
+  local lastPendingTime = CS.UnityEngine.PlayerPrefs.GetInt("lastPendingReviewTime", 0)
+  local currentTime = os.time()
+  if 900 < currentTime - lastPendingTime then
+    CS.UnityEngine.PlayerPrefs.SetInt("lastPendingReviewTime", currentTime)
+  else
+    return
+  end
+  local pendingReviewCount = CS.UnityEngine.PlayerPrefs.GetInt("pendingReviewCount", 0)
+  if 2 <= pendingReviewCount then
+    return
+  end
+  pendingReviewCount = pendingReviewCount + 1
+  CS.UnityEngine.PlayerPrefs.SetInt("pendingReviewCount", pendingReviewCount)
+  if ChannelManager:IsAndroid() and not ChannelManager:IsChinaChannel() then
+    CS.MSDKManager.Instance:RequestReview()
+  elseif ChannelManager:IsChinaChannel() and ChannelManager:IsAndroid() then
+    if QSDKManager:IsFunctionSupport(207) then
+      utils.CheckAndPushCommonTips({
+        tipsID = 1233,
+        bLockBack = true,
+        func1 = function()
+          QSDKManager:CallTapTap()
+        end
+      })
+    end
+  elseif ChannelManager:IsIOS() then
+    CS.UnityEngine.iOS.Device.RequestStoreReview()
+  end
+end
+
 function Form_Gacha10:RefreshUI()
   if self.m_scroreItem and self.m_scroreItem[1] then
     ResourceUtil:CreatIconById(self.m_icon_jifen_Image, self.m_scroreItem[1].iID)
@@ -137,6 +171,25 @@ function Form_Gacha10:RefreshUI()
   sequence:OnComplete(function()
     if not utils.isNull(self.m_btn_panel) then
       self.m_btn_panel:SetActive(true)
+      if GuideManager:CheckGuideIsActive(82) then
+        pendingStoreReview()
+      else
+        local count = 0
+        local mItemInfo = self.tParam.vGachaItem
+        for i = 1, table.getn(mItemInfo) do
+          local vItemInfo = mItemInfo[i]
+          if vItemInfo then
+            local heroData = ResourceUtil:GetProcessRewardData(vItemInfo)
+            if heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR then
+              count = count + 1
+            end
+            if 2 <= count then
+              pendingStoreReview()
+              break
+            end
+          end
+        end
+      end
     end
   end)
   sequence:SetAutoKill(true)

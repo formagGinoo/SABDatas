@@ -1,6 +1,5 @@
 {
   "className": "CData_RogueTaskAchieveReward",
-  "timestamp": "2025-07-16T14:14:20.033Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -541,7 +540,67 @@
       "m_ID": "90",
       "m_RequiredCount": "900",
       "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "91": {
+      "m_bError": null,
+      "m_ID": "91",
+      "m_RequiredCount": "910",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "92": {
+      "m_bError": null,
+      "m_ID": "92",
+      "m_RequiredCount": "920",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "93": {
+      "m_bError": null,
+      "m_ID": "93",
+      "m_RequiredCount": "930",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "94": {
+      "m_bError": null,
+      "m_ID": "94",
+      "m_RequiredCount": "940",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "95": {
+      "m_bError": null,
+      "m_ID": "95",
+      "m_RequiredCount": "950",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "96": {
+      "m_bError": null,
+      "m_ID": "96",
+      "m_RequiredCount": "960",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "97": {
+      "m_bError": null,
+      "m_ID": "97",
+      "m_RequiredCount": "970",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "98": {
+      "m_bError": null,
+      "m_ID": "98",
+      "m_RequiredCount": "980",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "99": {
+      "m_bError": null,
+      "m_ID": "99",
+      "m_RequiredCount": "990",
+      "m_Reward": "[[101,50],[30011,1]]"
+    },
+    "100": {
+      "m_bError": null,
+      "m_ID": "100",
+      "m_RequiredCount": "1000",
+      "m_Reward": "[[101,50],[30011,1]]"
     }
   },
-  "status": "processed_90_items"
+  "status": "processed_100_items"
 }

@@ -41,14 +41,12 @@ function BattlePassActivity:RequestGetLevelReward(iLevel, callback)
   reqMsg.iLevel = iLevel
   RPCS():Act_BattlePass_GetLevelReward(reqMsg, function(sc, msg)
     local vReward = sc.vReward
-    utils.popUpRewardUI(vReward)
+    local mChangeReward = sc.mChangeReward or nil
+    utils.popUpRewardUI(vReward, nil, mChangeReward)
     if callback then
       callback()
     end
-    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-      redDotKey = RedDotDefine.ModuleType.BattlePass,
-      count = self:CheckRed()
-    })
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
   end)
 end
 
@@ -63,10 +61,7 @@ function BattlePassActivity:RequestReceiveTask(vQuestId, callback)
     self:broadcastEvent("eGameEvent_Activity_BattlePass_ReceiveTaskReward", {
       iActivityID = self:getID()
     })
-    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-      redDotKey = RedDotDefine.ModuleType.BattlePass,
-      count = self:CheckRed()
-    })
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
   end)
 end
 
@@ -81,10 +76,7 @@ function BattlePassActivity:RequestBuyExp(buyExpNum, callback)
     self:broadcastEvent("eGameEvent_Activity_BattlePass_BuyExp", {
       iActivityID = self:getID()
     })
-    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-      redDotKey = RedDotDefine.ModuleType.BattlePass,
-      count = self:CheckRed()
-    })
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
   end)
 end
 
@@ -98,10 +90,7 @@ function BattlePassActivity:RequestQuests(bForce, callback)
       for k, v in ipairs(vQuest) do
         self.m_questStatus[v.iId] = v
       end
-      self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-        redDotKey = RedDotDefine.ModuleType.BattlePass,
-        count = self:CheckRed()
-      })
+      self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
       if callback then
         callback()
       end
@@ -138,6 +127,9 @@ end
 
 function BattlePassActivity:DrawAllTask(callback)
   local vQuestId = {}
+  if not self.m_questStatus then
+    return
+  end
   for k, v in pairs(self.m_questStatus) do
     if v.iState == MTTDProto.QuestState_Finish then
       table.insert(vQuestId, v.iId)
@@ -190,6 +182,9 @@ function BattlePassActivity:GetFinalLevelCfg()
 end
 
 function BattlePassActivity:GetUpLevelExp()
+  if not self.m_stSdpConfig then
+    return
+  end
   return self.m_stSdpConfig.stCommonCfg.iUpLevelExp
 end
 
@@ -237,8 +232,51 @@ function BattlePassActivity:BuyAdvancedPass(productID, productSubID)
   end)
 end
 
+function BattlePassActivity:GetItemBaseId()
+  return self.m_stCommonCfg and self.m_stCommonCfg.iItemBaseId or 0
+end
+
 function BattlePassActivity:GetProductID()
   return self.m_stCommonCfg.sProductId, self.m_stCommonCfg.iProductSubId
+end
+
+function BattlePassActivity:GetTitleType()
+  return self.m_stSdpConfig.stClientCfg.iTitleType
+end
+
+function BattlePassActivity:GetBuyPanel2Prefab()
+  local uiType = self:GetUiType()
+  if uiType then
+    local ui_name = ActivityManager.BattlePassUIType[uiType].BattlePassLevelUp
+    local ui_id = UIDefines["ID_" .. string.upper(ui_name)]
+    return ui_id
+  end
+end
+
+function BattlePassActivity:GetMainPanelAnimaStr()
+  local uiType = self:GetUiType()
+  if uiType then
+    local mainPanelAnim = ActivityManager.BattlePassUIType[uiType].UnlockAnimation
+    return mainPanelAnim
+  end
+end
+
+function BattlePassActivity:GetBuyPanelPrefab()
+  local uiType = self:GetUiType()
+  if uiType then
+    local ui_name = ActivityManager.BattlePassUIType[uiType].BattlePassBenefits
+    local ui_id = UIDefines["ID_" .. string.upper(ui_name)]
+    return ui_id
+  end
+end
+
+function BattlePassActivity:GetBattlePassMainPrefab()
+  local uiType = self:GetUiType()
+  if uiType then
+    local ui_name = ActivityManager.BattlePassUIType[uiType].BattlePassMain
+    local ui_id = UIDefines["ID_" .. string.upper(ui_name)]
+    return ui_id
+  end
 end
 
 function BattlePassActivity:GetAdvancedProductID()
@@ -261,6 +299,14 @@ function BattlePassActivity:GetAdvancedDifferencePrice()
   return IAPManager:GetProductPrice(self.m_stCommonCfg.sAdvancedDifferenceProductId, true)
 end
 
+function BattlePassActivity:GetBpBgPic(data)
+  return self.m_stSdpConfig.stClientCfg.sBackgroundPic, self.m_stSdpConfig.stClientCfg.sBackgroundPicMask
+end
+
+function BattlePassActivity:GetBpBuyBgPic(data)
+  return self.m_stSdpConfig.stClientCfg.sBuyBackgroundPic, self.m_stSdpConfig.stClientCfg.sBuyBackgroundPicMask
+end
+
 function BattlePassActivity:GetDrawStatus(iLevel)
   if iLevel > #self.m_stStatusData.vDrawStatus then
     return 0
@@ -272,7 +318,91 @@ function BattlePassActivity:GetBpName()
   return self:getLangText(self.m_stSdpConfig.stClientCfg.sName)
 end
 
-function BattlePassActivity:GetAvatarId()
+function BattlePassActivity:GetHeroId()
+  return self.m_stSdpConfig.stClientCfg.iRoleId
+end
+
+function BattlePassActivity:GetRoleName()
+  if not self.m_CharacterInfo then
+    self.m_CharacterInfo = ConfigManager:GetConfigInsByName("CharacterInfo")
+  end
+  local roleId = self:GetHeroId()
+  if roleId and self.m_CharacterInfo then
+    local heroCfg = self.m_CharacterInfo:GetValue_ByHeroID(roleId)
+    if heroCfg:GetError() then
+      log.error("BattlePass heroCfgID Cannot Find Check Config: " .. roleId)
+      return
+    end
+    return heroCfg.m_mShortname
+  end
+  return ""
+end
+
+function BattlePassActivity:GetSkinName()
+  if not self.m_FashionInfo then
+    self.m_FashionInfo = ConfigManager:GetConfigInsByName("FashionInfo")
+  end
+  local skinId = self:GetSkinId()
+  if skinId and self.m_FashionInfo then
+    local skinCfg = self.m_FashionInfo:GetValue_ByFashionID(skinId)
+    if skinCfg:GetError() then
+      log.error("BattlePass skinCfgID Cannot Find Check Config: " .. skinId)
+      return
+    end
+    return skinCfg.m_mFashionName
+  end
+  return ""
+end
+
+function BattlePassActivity:GetAvatarSpineName()
+  local skinId = self:GetSkinId()
+  local CharacterInfoIns = ConfigManager:GetConfigInsByName("CharacterInfo")
+  local FashionInfoIns = ConfigManager:GetConfigInsByName("FashionInfo")
+  if skinId and skinId ~= 0 and FashionInfoIns then
+    local skinCfg = FashionInfoIns:GetValue_ByFashionID(skinId)
+    if not skinCfg:GetError() and skinCfg.m_Spine then
+      return skinCfg.m_Spine
+    elseif CharacterInfoIns then
+      local characterIdCfg = CharacterInfoIns:GetValue_ByHeroID(skinId)
+      if not characterIdCfg:GetError() then
+        return characterIdCfg.m_Spine
+      end
+    end
+  end
+  local characterId = self:GetHeroId()
+  if characterId and characterId ~= 0 and CharacterInfoIns then
+    local characterIdCfg = CharacterInfoIns:GetValue_ByHeroID(characterId)
+    if not characterIdCfg:GetError() then
+      return characterIdCfg.m_Spine
+    end
+  end
+end
+
+function BattlePassActivity:GetTitleAndEnterName()
+  if not self.m_stSdpConfig then
+    return
+  end
+  return self:getLangText(self.m_stSdpConfig.stClientCfg.sTitle)
+end
+
+function BattlePassActivity:GetTipsID()
+  if self.m_stSdpConfig.stClientCfg.iActivityRulesPopupId and self.m_stSdpConfig.stClientCfg.iActivityRulesPopupId == 0 then
+    return 1129
+  end
+  return self.m_stSdpConfig.stClientCfg.iActivityRulesPopupId or 1129
+end
+
+function BattlePassActivity:GetUiType()
+  if not self.m_stSdpConfig then
+    return
+  end
+  if self.m_stSdpConfig.stClientCfg.iUIType and self.m_stSdpConfig.stClientCfg.iUIType == 0 then
+    return 1
+  end
+  return self.m_stSdpConfig.stClientCfg.iUIType or 1
+end
+
+function BattlePassActivity:GetSkinId()
   return self.m_stSdpConfig.stClientCfg.iAvatarId
 end
 
@@ -290,15 +420,17 @@ function BattlePassActivity:GetFirstUnclaimedLevel()
 end
 
 function BattlePassActivity:OnDispose()
+  local actId = self:getID()
   self.m_initActivity = nil
-  RPCS():RemoveListen_Push_SetQuestDataBatch_ByTag("BattlePass")
-  RPCS():RemoveListen_Push_DailyRefresh_ByTag("BattlePass")
+  RPCS():RemoveListen_Push_SetQuestDataBatch_ByTag("BattlePass" .. actId)
+  RPCS():RemoveListen_Push_DailyRefresh_ByTag("BattlePass" .. actId)
 end
 
 function BattlePassActivity:OnResetStatusData()
   if self.m_initActivity == nil then
-    RPCS():Listen_Push_SetQuestDataBatch(handler(self, self.OnPushSetQuestDataBatch), "BattlePass")
-    RPCS():Listen_Push_DailyRefresh(handler(self, self.OnPushDailyRefresh), "BattlePass")
+    local actId = self:getID()
+    RPCS():Listen_Push_SetQuestDataBatch(handler(self, self.OnPushSetQuestDataBatch), "BattlePass" .. actId)
+    RPCS():Listen_Push_DailyRefresh(handler(self, self.OnPushDailyRefresh), "BattlePass" .. actId)
     self:addEventListener("eGameEvent_IAPDelivery_Push", handler(self, self.OnPushIAPDelivery))
     self.m_initActivity = true
   end
@@ -308,6 +440,9 @@ function BattlePassActivity:OnResetStatusData()
 end
 
 function BattlePassActivity:HasUnclaimedTask()
+  if not self.m_questStatus then
+    return false
+  end
   for k, v in pairs(self.m_questStatus) do
     if v.iState == MTTDProto.QuestState_Finish then
       return true
@@ -341,10 +476,7 @@ function BattlePassActivity:OnPushSetQuestDataBatch(sc, msg)
     end
   end
   if bShowRed and not self:ReachMaxLevel() then
-    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-      redDotKey = RedDotDefine.ModuleType.BattlePass,
-      count = 1
-    })
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
   end
   self:broadcastEvent("eGameEvent_Activity_BattlePass_TaskUpdate", {
     iActivityID = self:getID()
@@ -353,6 +485,9 @@ end
 
 function BattlePassActivity:checkCondition()
   if not BattlePassActivity.super.checkCondition(self) then
+    return false
+  end
+  if not self:isInActivityTime() then
     return false
   end
   return true
@@ -370,6 +505,11 @@ end
 
 function BattlePassActivity:checkShowRed()
   return false
+end
+
+function BattlePassActivity:GetBattlePassHasAdvance()
+  local isHasAdvance = self.m_stCommonCfg.sAdvancedProductId or ""
+  return isHasAdvance and isHasAdvance ~= ""
 end
 
 function BattlePassActivity:OnPushIAPDelivery(data)

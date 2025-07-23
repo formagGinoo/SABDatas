@@ -1,6 +1,5 @@
 {
   "className": "CData_CharacterTrial",
-  "timestamp": "2025-07-16T14:13:58.614Z",
   "data": {
     "20701": {
       "m_bError": null,
@@ -834,7 +833,7 @@
       "m_bError": null,
       "m_ID": "6000322",
       "m_SourceID": "20130",
-      "m_Level": "60",
+      "m_Level": "30",
       "m_OverridePropertyID": null,
       "m_OverrideSkillGroupID": "[]",
       "m_OverrideSkillLevel": "[]",
@@ -846,7 +845,7 @@
       "m_bError": null,
       "m_ID": "6000404",
       "m_SourceID": "20660",
-      "m_Level": "60",
+      "m_Level": "90",
       "m_OverridePropertyID": null,
       "m_OverrideSkillGroupID": "[]",
       "m_OverrideSkillLevel": "[]",

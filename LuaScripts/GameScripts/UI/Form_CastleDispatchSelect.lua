@@ -148,7 +148,8 @@ function Form_CastleDispatchSelect:RefreshAutoUI()
     UILuaHelper.SetActive(self.m_list_empty, table.getn(self.m_heroList) == 0)
     self.m_heroListInfinityGrid:OnChooseItem(self.m_chooseHeroList[self.m_selItemIndex].index, true)
     if self.m_chooseHeroList[1] then
-      self:PlayHeroSelectVoice(self.m_chooseHeroList[1].heroID)
+      local heroData = self.m_heroList[self.m_chooseHeroList[1].index]
+      self:PlayHeroSelectVoice(self.m_chooseHeroList[1].heroID, heroData.serverData.iFashion)
     end
   end
   self:RefreshConditionItem()
@@ -177,7 +178,15 @@ function Form_CastleDispatchSelect:RefreshConditionItem()
     local headIconObj = v.transform:Find("c_head_icon").gameObject
     if self.m_chooseHeroList[i] and self.m_chooseHeroList[i].heroID ~= nil then
       local imageItem = headIconObj.transform:GetComponent(T_Image)
-      ResourceUtil:CreateHeroIcon(imageItem, self.m_chooseHeroList[i].heroID)
+      local heroData = self.m_heroList[self.m_chooseHeroList[i].index]
+      if heroData then
+        local heroID = self.m_chooseHeroList[i].heroID
+        local fashionID = heroData.serverData.iFashion
+        local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroID, fashionID)
+        if fashionInfo then
+          UILuaHelper.SetAtlasSprite(imageItem, fashionInfo.m_FashionItemPic)
+        end
+      end
       headIconObj:SetActive(true)
       campImgObj:SetActive(false)
     else
@@ -257,7 +266,8 @@ function Form_CastleDispatchSelect:OnItemClk(index, go)
   if addFlag then
     if self.m_heroList[fjItemIndex] and self.m_heroList[fjItemIndex].characterCfg then
       local HeroId = self.m_heroList[fjItemIndex].characterCfg.m_HeroID
-      self:PlayHeroSelectVoice(HeroId)
+      local fashionID = self.m_heroList[fjItemIndex].serverData.iFashion
+      self:PlayHeroSelectVoice(HeroId, fashionID)
     end
     local nextIndex = self:GetOneEmptyConditionIndex()
     if nextIndex then
@@ -381,8 +391,8 @@ function Form_CastleDispatchSelect:OnDestroy()
   self.super.OnDestroy(self)
 end
 
-function Form_CastleDispatchSelect:PlayHeroSelectVoice(heroID)
-  local voice = HeroManager:GetHeroDisPatchVoice(heroID)
+function Form_CastleDispatchSelect:PlayHeroSelectVoice(heroID, fashionID)
+  local voice = HeroManager:GetHeroVoice():GetHeroDisPatchVoice(heroID, fashionID)
   CS.UI.UILuaHelper.StopPlaySFX(self.playingVoice)
   if voice and voice ~= "" then
     CS.UI.UILuaHelper.StartPlaySFX(voice)

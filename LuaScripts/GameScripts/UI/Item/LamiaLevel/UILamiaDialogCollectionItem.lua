@@ -6,6 +6,12 @@ function UILamiaDialogCollectionItem:OnInit()
     self.m_itemClkBackFun = self.m_itemInitData.itemClkBackFun
   end
   self.m_levelCfg = nil
+  if not utils.isNull(self.m_btn_story_item) then
+    local btn = self.m_btn_story_item:GetComponent("ButtonExtensions")
+    if not utils.isNull(btn) then
+      btn.Clicked = handler(self, self.OnBtnstoryitemClicked)
+    end
+  end
 end
 
 function UILamiaDialogCollectionItem:OnFreshData()

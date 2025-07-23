@@ -33,6 +33,9 @@ local function SDKLoginErrorResult(result)
   if not result.resultCode then
     resultCode = result.code
   end
+  if resultCode == -1 then
+    return
+  end
   if resultCode == 5002010 or resultCode == 4000000 then
     resultCode = 5002041
   end
@@ -162,6 +165,9 @@ end
 
 function SDKUtil.CheckIsShowLoginMode(loginMode)
   if ChannelManager:IsDMMChannel() then
+    return false
+  end
+  if ChannelManager:IsWindows() and loginMode == SDKUtil.LoginMode.InitiationCode then
     return false
   end
   local id = CS.LuaCallCS.GetSystemLanguage()

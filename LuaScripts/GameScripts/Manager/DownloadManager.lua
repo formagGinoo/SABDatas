@@ -79,7 +79,7 @@ function DownloadManager:GetPackageAdditionalResource(sPackageName, ePackageType
           end
         end
       end
-    elseif sPackageName == "Pack_Hall" then
+    elseif sPackageName == "Pack_Hall" and NetworkManager and NetworkManager.m_bNetworkInited then
       local heroPosData = RoleManager:GetMainBackGroundDataList()
       if heroPosData and next(heroPosData) then
         for i, v in pairs(heroPosData) do
@@ -94,6 +94,15 @@ function DownloadManager:GetPackageAdditionalResource(sPackageName, ePackageType
               vExtraResourceAdditional[#vExtraResourceAdditional + 1] = {
                 sName = mainBgCfg.m_Prefabs,
                 eType = self.ResourceType.UI
+              }
+            end
+          elseif v.iType == RoleManager.MainBgType.Fashion then
+            local fashionID = v.iId
+            local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByID(fashionID)
+            if fashionInfo then
+              vPackageAdditional[#vPackageAdditional + 1] = {
+                sName = tostring(fashionInfo.m_CharacterId),
+                eType = self.ResourcePackageType.Character
               }
             end
           end
@@ -209,7 +218,7 @@ function DownloadManager:GetPackageAdditionalResource(sPackageName, ePackageType
         }
       end
     end
-  elseif ePackageType == self.ResourcePackageType.Character and ActivityManager:IsInCensorOpen() == true then
+  elseif ePackageType == self.ResourcePackageType.Character and NetworkManager and NetworkManager.m_bNetworkInited and ActivityManager:IsInCensorOpen() == true then
     local characterID = tonumber(sPackageName)
     local heroCfg = HeroManager:GetHeroConfigByID(characterID)
     if heroCfg and heroCfg.m_Spine then
@@ -694,12 +703,15 @@ function DownloadManager:TryShowDownloadResourceUIError()
   end
   if bSpaceNotEnough then
     utils.CheckAndPushCommonTips({
-      tipsID = 9962,
+      title = CS.ConfFact.LangFormat4DataInit("CommonError"),
+      content = CS.ConfFact.LangFormat4DataInit("LowStorageWarning"),
       fContentCB = function(sContent)
         local sContentNew = string.customizereplace(sContent, {"{size1}"}, DownloadManager:GetDownloadSizeStr(lSpaceFree))
         sContentNew = string.customizereplace(sContentNew, {"{size2}"}, DownloadManager:GetDownloadSizeStr(lSpaceNeed))
         return sContentNew
       end,
+      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonReLogin"),
+      btnNum = 1,
       bLockBack = true,
       func1 = function()
         CS.ApplicationManager.Instance:RestartGame()
@@ -707,7 +719,12 @@ function DownloadManager:TryShowDownloadResourceUIError()
     })
   else
     utils.CheckAndPushCommonTips({
-      tipsID = 9967,
+      title = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsTitle9967"),
+      content = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsContent9967"),
+      fAutoConfirmDelay = 15,
+      funcText1 = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsButton19967"),
+      funcText2 = CS.ConfFact.LangFormat4DataInit("CommonReLogin"),
+      btnNum = 6,
       bLockBack = true,
       func1 = function()
         self.m_bDownloadResourceUIErrorLock = false
@@ -889,33 +906,23 @@ end
 function DownloadManager:SetTaskDownloadProgress(iTaskID, sPackageName, lCurBytes, lTotalBytes, fProgress)
   for i, v in pairs(self.m_vTaskDownloadResourceAll) do
     if v.iID == iTaskID then
-      if v.iState == MTTDProto.QuestState_Doing then
-        do
-          local bComplete = true
-          for sPackageNameTmp, stProgressInfo in pairs(v.mProgress) do
-            if sPackageNameTmp == sPackageName then
-              stProgressInfo.lCurBytes = lCurBytes
-              stProgressInfo.lTotalBytes = lTotalBytes
-              if stProgressInfo.fProgress == 1 or fProgress ~= 1 then
-                bComplete = false
-              end
-              stProgressInfo.fProgress = fProgress
-            elseif stProgressInfo.fProgress ~= 1 then
-              bComplete = false
-            end
-          end
-          if bComplete then
-            self:RequestFinishResourceQuest(v.iID)
-          end
-        end
-        break
-      end
+      local bComplete = true
       for sPackageNameTmp, stProgressInfo in pairs(v.mProgress) do
         if sPackageNameTmp == sPackageName then
           stProgressInfo.lCurBytes = lCurBytes
           stProgressInfo.lTotalBytes = lTotalBytes
+          stProgressInfo.fProgress = fProgress
+        end
+        if stProgressInfo.fProgress ~= 1 then
+          bComplete = false
+        end
+      end
+      if bComplete then
+        if v.iState == MTTDProto.QuestState_Doing then
+          self:RequestFinishResourceQuest(v.iID)
           break
         end
+        self:broadcastEvent("eGameEvent_ResourceDownload_QuestFinish", {iID = iTaskID})
       end
       break
     end

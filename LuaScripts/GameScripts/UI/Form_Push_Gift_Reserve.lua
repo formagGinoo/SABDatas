@@ -193,12 +193,20 @@ function Form_Push_Gift_Reserve:OnBtnpushgiftClicked()
   local baseStoreBuyParam = MTTDProto.CmdActEmergencyGiftBuyParam()
   baseStoreBuyParam.iActivityId = self.m_activity:getID()
   local storeParam = sdp.pack(baseStoreBuyParam)
+  local productNameTemp = "Lucky Gift"
+  local productDescTemp = "Lucky Gift"
+  if ChannelManager:IsChinaChannel() then
+    productNameTemp = "神秘好礼"
+    productDescTemp = "神秘好礼"
+  end
   if self.m_curSelectPackData then
     local ProductInfo = {
       productId = self.m_curSelectPackData.GiftInfo.sProductId,
       productSubId = self.m_curSelectPackData.ProductInfo.iSubProductId,
       iStoreType = MTTDProto.IAPStoreType_ActEmergencyGift,
-      rewardList = self.m_curSelectPackData.GiftInfo.stItem
+      rewardList = self.m_curSelectPackData.GiftInfo.stItem,
+      productName = productNameTemp,
+      productDesc = productDescTemp
     }
     IAPManager:BuyProductByStoreType(ProductInfo, storeParam, handler(self, self.OnBuyResult))
   end

@@ -44,6 +44,10 @@ function ConfigManager:CacheInstance()
       CharacterInfo = CS.CData_CharacterInfo.GetInstance(),
       CharacterLevel = CS.CData_CharacterLevel.GetInstance(),
       CharacterLevelTemplate = CS.CData_CharacterLevelTemplate.GetInstance(),
+      FashionInfo = CS.CData_FashionInfo.GetInstance(),
+      FashionVoiceInfo = CS.CData_FashionVoiceInfo.GetInstance(),
+      FashionVoiceText = CS.CData_FashionVoiceText.GetInstance(),
+      FashionEffects = CS.CData_FashionEffects.GetInstance(),
       Skill = CS.CData_Skill.GetInstance(),
       SkillBuff = CS.CData_SkillBuff.GetInstance(),
       Presentation = CS.CData_Presentation.GetInstance(),
@@ -75,6 +79,7 @@ function ConfigManager:CacheInstance()
       LegacyStageCharacter = CS.CData_LegacyStageCharacter.GetInstance(),
       LegacyStageInteractive = CS.CData_LegacyStageInteractive.GetInstance(),
       LegacyStageMonster = CS.CData_LegacyStageMonster.GetInstance(),
+      LegacyEnemyLine = CS.CData_LegacyEnemyLine.GetInstance(),
       LegacyGameSkill = CS.CData_LegacyGameSkill.GetInstance(),
       LegacyStageLevelTips = CS.CData_LegacyStageLevelTips.GetInstance(),
       ResourcesCheckSwitch = CS.CData_ResourcesCheckSwitch.GetInstance(),
@@ -193,6 +198,7 @@ function ConfigManager:CacheInstance()
       AttractArchive = CS.CData_AttractArchive.GetInstance(),
       AttractLetter = CS.CData_AttractLetter.GetInstance(),
       AttractStudyRoleSize = CS.CData_AttractStudyRoleSize.GetInstance(),
+      AttractTask = CS.CData_AttractTask.GetInstance(),
       ActivityMainInfo = CS.CData_ActivityMainInfo.GetInstance(),
       ActivitySubInfo = CS.CData_ActivitySubInfo.GetInstance(),
       ActSignin = CS.CData_ActSignin.GetInstance(),
@@ -201,6 +207,8 @@ function ConfigManager:CacheInstance()
       ActMemoryChoice = CS.CData_ActMemoryChoice.GetInstance(),
       ActLamiaBonusCha = CS.CData_ActLamiaBonusCha.GetInstance(),
       ActTask = CS.CData_ActTask.GetInstance(),
+      ActTaskDailyReward = CS.CData_ActTaskDailyReward.GetInstance(),
+      Act4Clue = CS.CData_Act4Clue.GetInstance(),
       SkillTip = CS.CData_SkillTip.GetInstance(),
       GMCommand = CS.CData_GMCommand.GetInstance(),
       GMShortcuts = CS.CData_GMShortcuts.GetInstance()
@@ -222,7 +230,8 @@ function ConfigManager:CacheInstance()
       CastleDispatchLevel = CS.CData_CastleDispatchLevel.GetInstance(),
       CastleDispatchLocation = CS.CData_CastleDispatchLocation.GetInstance(),
       CastleStoryInfo = CS.CData_CastleStoryInfo.GetInstance(),
-      CastleStoryPerform = CS.CData_CastleStoryPerform.GetInstance()
+      CastleStoryPerform = CS.CData_CastleStoryPerform.GetInstance(),
+      ActExploreInteractive = CS.CData_ActExploreInteractive.GetInstance()
     },
     {
       GuildLevel = CS.CData_GuildLevel.GetInstance(),
@@ -235,6 +244,8 @@ function ConfigManager:CacheInstance()
       GuildBattleGrade = CS.CData_GuildBattleGrade.GetInstance(),
       GuildBattleLevel = CS.CData_GuildBattleLevel.GetInstance(),
       GuildBattleReward = CS.CData_GuildBattleReward.GetInstance(),
+      AncientCharacter = CS.CData_AncientCharacter.GetInstance(),
+      AncientTask = CS.CData_AncientTask.GetInstance(),
       ActLamiaLevel = CS.CData_ActLamiaLevel.GetInstance(),
       ActLamiaBonusCha = CS.CData_ActLamiaBonusCha.GetInstance(),
       ActLamiaPowerCha = CS.CData_ActLamiaPowerCha.GetInstance(),
@@ -269,8 +280,12 @@ function ConfigManager:CacheInstance()
       CouncilHallIssue = CS.CData_CouncilHallIssue.GetInstance(),
       CouncilHallPosition = CS.CData_CouncilHallPosition.GetInstance(),
       CouncilHallText = CS.CData_CouncilHallText.GetInstance(),
+      CouncilHallRoleSize = CS.CData_CouncilHallRoleSize.GetInstance(),
       InheritLevel = CS.CData_InheritLevel.GetInstance(),
-      RegionMapping = CS.CData_RegionMapping.GetInstance()
+      MiniGameA3WhackaMoleLevel = CS.CData_MiniGameA3WhackaMoleLevel.GetInstance(),
+      MiniGameA3WhackaMoleEnemy = CS.CData_MiniGameA3WhackaMoleEnemy.GetInstance(),
+      RegionMapping = CS.CData_RegionMapping.GetInstance(),
+      CharacterViewMode = CS.CData_CharacterViewMode.GetInstance()
     }
   }
   self.m_mConfigInstanceCache = {}

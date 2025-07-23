@@ -104,14 +104,6 @@ function ShopManager:OnReqShopBuySC(stData, msg)
   local vReward = stData.vReward
   self:SetShopBuyChangeData(stData.iShopId, stData.iGroupId, stData.iGoodsId, stData.iStockBought, stData.iLimitBought)
   if vReward and next(vReward) then
-    if not self.bSkipVoice then
-      local closeVoice = ConfigManager:GetGlobalSettingsByKey("ShopBuyVoice")
-      CS.UI.UILuaHelper.StartPlaySFX(closeVoice, nil, function(playingId)
-        self.m_playingId = playingId
-      end, function()
-        self.m_playingId = nil
-      end)
-    end
     utils.popUpRewardUI(vReward, function()
       local goodCfg = ShopManager:GetShopGoodsConfig(stData.iGroupId, stData.iGoodsId)
       if stData.iStockBought >= goodCfg.m_ItemQuantity then

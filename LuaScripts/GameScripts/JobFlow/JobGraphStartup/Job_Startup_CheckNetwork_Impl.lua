@@ -16,6 +16,7 @@ function Job_Startup_CheckNetwork_Impl.DoCheck(jobNode)
         content = CS.ConfFact.LangFormat4DataInit("LoginConnectServerFail"),
         funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
         btnNum = 1,
+        bLockBack = true,
         func1 = function()
           Job_Startup_CheckNetwork_Impl.DoCheck(jobNode)
         end
@@ -25,6 +26,7 @@ function Job_Startup_CheckNetwork_Impl.DoCheck(jobNode)
         title = CS.ConfFact.LangFormat4DataInit("CommonError"),
         content = CS.ConfFact.LangFormat4DataInit("StartCheckNetworkFail"),
         btnNum = 2,
+        bLockBack = true,
         funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
         func1 = function()
           Job_Startup_CheckNetwork_Impl.DoCheck(jobNode)

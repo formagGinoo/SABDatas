@@ -182,6 +182,7 @@ CmdActCfgSign.Definition = {
   "iRestrictStageType",
   "iRestrictStageId",
   "iRestrictGuideId",
+  "iAvatarId",
   iUiType = {
     0,
     0,
@@ -316,6 +317,12 @@ CmdActCfgSign.Definition = {
   },
   iRestrictGuideId = {
     22,
+    0,
+    8,
+    0
+  },
+  iAvatarId = {
+    23,
     0,
     8,
     0

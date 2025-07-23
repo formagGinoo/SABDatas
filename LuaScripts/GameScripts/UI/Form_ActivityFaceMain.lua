@@ -18,29 +18,48 @@ function Form_ActivityFaceMain:AfterInit()
       backFun = function()
       end
     },
-    [2702] = {
-      obj = self.m_boqina_root,
-      subPanelName = "ActivityBoqinaFaceSubPanel",
+    [27] = {
+      obj = self.m_huntingnight_root,
+      subPanelName = "ActivityHuntNightSubPanel",
       backFun = function()
       end
     },
     [25] = {
       obj = self.m_soloraid_root,
-      subPanelName = "ActivityPersonalRaidSubPanel",
+      subPanelName = "ActivityPersonalRaid2FaceSubPanel",
       backFun = function()
       end
     },
-    [27] = {
-      obj = self.m_huntingnight_root,
-      subPanelName = "ActivityHuntNightSubPanel",
+    [2702] = {
+      obj = self.m_boqina_root,
+      subPanelName = "ActivityQigeLunaSubPanel",
+      backFun = function()
+      end
+    },
+    [25006] = {
+      obj = self.m_lorelei_root,
+      subPanelName = "ActivityLoreleiFaceSubPanel",
+      backFun = function()
+      end
+    },
+    [25007] = {
+      obj = self.m_bella_root,
+      subPanelName = "ActivityBellaFaceSubPanel",
       backFun = function()
       end
     }
   }
 end
 
+function Form_ActivityFaceMain:RemoveAllEventListeners()
+  self:clearEventListener()
+end
+
 function Form_ActivityFaceMain:OnActive()
   self.super.OnActive(self)
+  self.m_isCheck = true
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   if self.m_csui.m_param then
     self.activityId = tonumber(self.m_csui.m_param.activityId)
     self.m_csui.m_param = nil
@@ -74,10 +93,19 @@ function Form_ActivityFaceMain:OnActive()
   end
 end
 
+function Form_ActivityFaceMain:AddEventListeners()
+  self:addEventListener("eGameEvent_ActivityFace_CloseNoCheck", handler(self, self.OnCloseNoCheck))
+end
+
+function Form_ActivityFaceMain:OnCloseNoCheck()
+  self.m_isCheck = false
+  self:CloseForm()
+end
+
 function Form_ActivityFaceMain:OnDestroy()
   self.super.OnDestroy(self)
-  if self.subPanel then
-    for i, panelData in pairs(self.subPanel) do
+  if self.subPanelData then
+    for i, panelData in pairs(self.subPanelData) do
       if panelData.subPanelLua and panelData.subPanelLua.dispose then
         panelData.subPanelLua:dispose()
         panelData.subPanelLua = nil
@@ -88,14 +116,19 @@ end
 
 function Form_ActivityFaceMain:OnInactive()
   self.super.OnInactive(self)
-  if self.subPanel then
-    for i, info in pairs(self.subPanel) do
+  if self.subPanelData then
+    for i, info in pairs(self.subPanelData) do
       if info.subPanelLua and info.subPanelLua.OnInactive then
         info.subPanelLua:OnInactive()
       end
     end
   end
-  PushFaceManager:CheckShowNextPopPanel()
+  self:RemoveAllEventListeners()
+  if self.m_isCheck then
+    PushFaceManager:CheckShowNextPopPanel()
+  else
+    PushFaceManager:CheckClearPopPanelStatus()
+  end
 end
 
 function Form_ActivityFaceMain:OnDestroy()
@@ -113,13 +146,19 @@ function Form_ActivityFaceMain:GetDownloadResourceExtra(tParam)
         subPanelName = "GachaDalCaroPushFaceSubPanel"
       },
       [2702] = {
-        subPanelName = "ActivityBoqinaFaceSubPanel"
+        subPanelName = "ActivityQigeLunaSubPanel"
       },
       [25] = {
-        subPanelName = "ActivityPersonalRaidSubPanel"
+        subPanelName = "ActivityPersonalRaid2FaceSubPanel"
       },
       [27] = {
         subPanelName = "ActivityHuntNightSubPanel"
+      },
+      [25006] = {
+        subPanelName = "ActivityLoreleiFaceSubPanel"
+      },
+      [25007] = {
+        subPanelName = "ActivityBellaFaceSubPanel"
       }
     }
     if activity then

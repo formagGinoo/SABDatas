@@ -154,6 +154,7 @@ CmdActCommonCfgLamiaTimeManager.Definition = {
   "iLamiaId",
   "iDisable",
   "iOpenTime",
+  "iChangeTime",
   "iCloseTime",
   "mActivitySubCfg",
   "mActLamiaLevelCfg",
@@ -179,44 +180,50 @@ CmdActCommonCfgLamiaTimeManager.Definition = {
     8,
     0
   },
-  iCloseTime = {
+  iChangeTime = {
     3,
     0,
     8,
     0
   },
-  mActivitySubCfg = {
+  iCloseTime = {
     4,
+    0,
+    8,
+    0
+  },
+  mActivitySubCfg = {
+    5,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerActivitySubCfg),
     nil
   },
   mActLamiaLevelCfg = {
-    5,
+    6,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerActLamiaLevelCfg),
     nil
   },
   mGachaCfg = {
-    6,
+    7,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerGachaCfg),
     nil
   },
   mShopCfg = {
-    7,
+    8,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerShopCfg),
     nil
   },
   mShopGoodsCfg = {
-    8,
+    9,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerShopGoodsCfg),
     nil
   },
   mMiniGameCfg = {
-    9,
+    10,
     0,
     sdp.SdpMap(8, CmdActCfgLamiaTimeManagerMiniGameCfg),
     nil

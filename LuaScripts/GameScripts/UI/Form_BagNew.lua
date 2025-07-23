@@ -202,7 +202,7 @@ function Form_BagNew:DisplayDiagonalAnim(objList)
       TimeService:KillTimer(self["ItemInitTimer" .. i])
       self["ItemInitTimer" .. i] = nil
     end
-    self["ItemInitTimer" .. i] = TimeService:SetTimer(0.05 * i, 1, function()
+    self["ItemInitTimer" .. i] = TimeService:SetTimer(0.01 * i, 1, function()
       self["ItemInitTimer" .. i] = nil
       for j = 1, i do
         local row = j

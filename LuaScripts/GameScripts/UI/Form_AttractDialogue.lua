@@ -36,6 +36,14 @@ function Form_AttractDialogue:InitData()
   local stAttractVoiceInfo = ConfigManager:GetConfigInsByName("AttractVoiceInfo")
   local vVoiceInfo = {}
   local stVoiceInfo = stAttractVoiceInfo:GetValue_ByHeroID(iHeroId)
+  local iFasionId = HeroManager:GetCurUseFashionID(iHeroId)
+  if iFasionId and 0 < iFasionId then
+    local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(iHeroId, iFasionId)
+    if fashionCfg and not fashionCfg:GetError() and fashionCfg.m_IsShowVoice == 1 then
+      local fashionVoiceInfoIns = ConfigManager:GetConfigInsByName("FashionVoiceInfo")
+      stVoiceInfo = fashionVoiceInfoIns:GetValue_ByFashionID(iFasionId)
+    end
+  end
   for k, v in pairs(stVoiceInfo) do
     vVoiceInfo[#vVoiceInfo + 1] = v
   end
@@ -61,6 +69,14 @@ function Form_AttractDialogue:FreshUI()
   end
   local showData = {}
   local AttractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("AttractVoiceText")
+  local iHeroId = self.m_curShowHeroData.characterCfg.m_HeroID
+  local iFasionId = HeroManager:GetCurUseFashionID(iHeroId)
+  if iFasionId and 0 < iFasionId then
+    local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(iHeroId, iFasionId)
+    if fashionCfg and not fashionCfg:GetError() and fashionCfg.m_IsShowVoice == 1 then
+      AttractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("FashionVoiceText")
+    end
+  end
   self.m_vVoiceText = {}
   for k, v in ipairs(self.m_vVoiceInfo) do
     local vVoiceTextList = AttractVoiceTextCfgIns:GetValue_ByVoiceId(v.m_VoiceId)
@@ -102,7 +118,11 @@ function Form_AttractDialogue:PlayVoice(voice)
     self.m_playingId = playingId
     self.m_vioce_item:SetActive(true)
     self.m_txt_voice_desc_Text.fontSize = 36
-    self.m_txt_voice_desc_Text.text = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex].m_mText
+    if self.m_vVoiceText and self.m_vVoiceText[self.m_iVoiceId] and self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex] then
+      self.m_txt_voice_desc_Text.text = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex].m_mText
+    else
+      self.m_txt_voice_desc_Text.text = ""
+    end
     self:CheckOverFlow()
     local voiceItem = self.m_voiceInfinityGrid:GetShowItemByIndex(self.m_curIdx)
     if voiceItem then
@@ -110,16 +130,18 @@ function Form_AttractDialogue:PlayVoice(voice)
     end
   end, function()
     self.m_playSubIndex = self.m_playSubIndex + 1
-    local nextVoice = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex]
-    if nextVoice ~= nil then
-      self:PlayVoice(nextVoice.m_voice)
-    else
-      self.m_playingId = nil
-      self.m_txt_voice_desc_Text.text = ""
-      self.m_vioce_item:SetActive(false)
-      local voiceItem = self.m_voiceInfinityGrid:GetShowItemByIndex(self.m_curIdx)
-      if voiceItem then
-        voiceItem:StopVoiceAnim()
+    if self.m_vVoiceText and self.m_vVoiceText[self.m_iVoiceId] then
+      local nextVoice = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex]
+      if nextVoice ~= nil then
+        self:PlayVoice(nextVoice.m_voice)
+      else
+        self.m_playingId = nil
+        self.m_txt_voice_desc_Text.text = ""
+        self.m_vioce_item:SetActive(false)
+        local voiceItem = self.m_voiceInfinityGrid:GetShowItemByIndex(self.m_curIdx)
+        if voiceItem then
+          voiceItem:StopVoiceAnim()
+        end
       end
     end
   end)
@@ -141,8 +163,10 @@ function Form_AttractDialogue:OnVoiceClick(idx, gameObject)
   self:StopCurPlayingVoice()
   self.m_curIdx = idx + 1
   self.m_iVoiceId = voiceCfg.m_VoiceId
-  local eventName = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex].m_voice
-  self:PlayVoice(eventName)
+  if self.m_vVoiceText and self.m_vVoiceText[self.m_iVoiceId] and self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex] then
+    local eventName = self.m_vVoiceText[self.m_iVoiceId][self.m_playSubIndex].m_voice
+    self:PlayVoice(eventName)
+  end
 end
 
 function Form_AttractDialogue:OnBackClk()

@@ -22,12 +22,6 @@ function StoreDMM:QueryProductsDetail()
   log.info("StoreDMM:InitStore m_sProductList type:", type(self.m_sProductList))
   log.info("StoreDMM:InitStore m_sProductList length:", #self.m_sProductList)
   log.info("StoreDMM:InitStore products:", self.m_sProductList)
-  CS.UIManager.Instance:LoadSprite("Atlas_DMM/store_icon", function(string, sp)
-    log.info("StoreDMM LoadSprite Success")
-    CS.DMMGameStoreManager.Instance:SetProductIcon(sp)
-  end, function(string)
-    log.info("StoreDMM LoadSprite Fail")
-  end)
 end
 
 function StoreDMM:GetProductPrice(productId, withCurrency)

@@ -20,6 +20,7 @@ function Form_HeroBreakThrough:AfterInit()
   self.m_heroAttr = HeroManager:GetHeroAttr()
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_HeroBreakThrough:OnActive()
@@ -141,7 +142,9 @@ function Form_HeroBreakThrough:FreshBreakStatus()
       UILuaHelper.SetActive(self.m_img_break_SSR4, false)
     end
   end
-  local voice = HeroManager:GetHeroBreakVoice(self.m_curShowHeroData.serverData.iHeroId)
+  local heroID = self.m_curShowHeroData.serverData.iHeroId
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local voice = HeroManager:GetHeroVoice():GetHeroBreakVoice(heroID, fashionID)
   if voice and voice ~= "" then
     CS.UI.UILuaHelper.StartPlaySFX(voice)
   end
@@ -200,8 +203,13 @@ function Form_HeroBreakThrough:FreshShowSpine()
   if not self.m_curShowHeroData then
     return
   end
-  local spineStr = self.m_curShowHeroData.characterCfg.m_Spine
-  self:LoadHeroSpine(spineStr, SpinePlaceCfg.HeroBreak, self.m_hero_root)
+  local fashionID = self.m_curShowHeroData.serverData.iFashion
+  local heroID = self.m_curShowHeroData.serverData.iHeroId
+  local heroFashionSpine = self.m_HeroFashion:GetHeroSpineByHeroFashionID(heroID, fashionID)
+  if not heroFashionSpine then
+    return
+  end
+  self:LoadHeroSpine(heroFashionSpine, SpinePlaceCfg.HeroBreak, self.m_hero_root)
 end
 
 function Form_HeroBreakThrough:CheckRecycleSpine(isResetParam)

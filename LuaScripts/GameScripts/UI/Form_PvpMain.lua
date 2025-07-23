@@ -1,4 +1,5 @@
 local Form_PvpMain = class("Form_PvpMain", require("UI/UIFrames/Form_PvpMainUI"))
+local CliveActivityTipsItem = require("UI/Item/HeroActivity/CliveActivityTipsItem")
 local PvPNewCoinID = tonumber(ConfigManager:GetGlobalSettingsByKey("PVPNewCoin"))
 local PVPNewShopJumpID = ConfigManager:GetGlobalSettingsByKey("PVPNewShopJumpID")
 local PVPNewRankPagecnt = ConfigManager:GetGlobalSettingsByKey("PVPNewRankPagecnt")
@@ -8,7 +9,7 @@ local pairs = _ENV.pairs
 local PVPNewRefreshCD = tonumber(ConfigManager:GetGlobalSettingsByKey("PVPNewRefreshCD"))
 local UpdateDeltaNum = 3
 local EnemyInAnimStr = "m_base_enemy_in"
-local DurationTime = 0.15
+local DurationTime = 0.085
 
 function Form_PvpMain:SetInitParam(param)
 end
@@ -39,6 +40,7 @@ function Form_PvpMain:AfterInit()
   self.m_curDeltaTimeNum = 0
   self.m_mineFormationPower = 0
   self:PlayVoiceOnFirstEnter()
+  self.cliveActivityTip = CliveActivityTipsItem:CreateCliveActivityTipsItem(self.m_panel_tips, {tipType = 1, cliveType = 2})
 end
 
 function Form_PvpMain:OnActive()
@@ -48,6 +50,7 @@ function Form_PvpMain:OnActive()
   BattleFlowManager:CheckSetEnterTimer(BattleFlowManager.ArenaType.Arena)
   self.m_isCanUpdateCDTime = false
   self:CheckInSeasonEndFresh()
+  self.cliveActivityTip:OnFreshData()
 end
 
 function Form_PvpMain:OnInactive()
@@ -578,6 +581,10 @@ function Form_PvpMain:OnBtnrefreshClicked()
   else
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 40017)
   end
+end
+
+function Form_PvpMain:OnPnlClivebigClicked()
+  self.cliveActivityTip:OnClick()
 end
 
 function Form_PvpMain:OnBtnPvPMoneyClicked()

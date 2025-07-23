@@ -168,6 +168,7 @@ function Form_InheritHeroList:OnBtnyesredClicked()
   local heroData = HeroManager:GetHeroDataByID(self.m_curChooseHeroID)
   local oldLv = heroData.serverData.iLevel or 0
   local newLv = InheritManager:GetInheritLevel()
+  local fashionID = heroData.serverData.iFashion
   StackTop:Push(UIDefines.ID_FORM_INHERITTIPS, {
     tipsID = 1217,
     heroId = self.m_curChooseHeroID,
@@ -175,7 +176,7 @@ function Form_InheritHeroList:OnBtnyesredClicked()
     func1 = function()
       InheritManager:ReqInheritAddHero(self.m_curChooseHeroID, self.m_pos)
       self:OnBtnCloseClicked()
-      local voice = HeroManager:GetHeroTransfusionVoice(self.m_curChooseHeroID)
+      local voice = HeroManager:GetHeroVoice():GetHeroTransfusionVoice(self.m_curChooseHeroID, fashionID)
       if voice and voice ~= "" then
         log.error(voice)
         CS.UI.UILuaHelper.StartPlaySFX(voice)

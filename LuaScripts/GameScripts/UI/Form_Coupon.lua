@@ -30,6 +30,7 @@ function Form_Coupon:OnActive()
   self.storeParam = param.storeParam
   self.m_normalBuy = param.normalBuy
   self.welfareBuy = param.welfareBuy
+  self:AddEventListener()
   self.desString = ConfigManager:GetCommonTextById(220016)
   if self.productInfo.rewardList and #self.productInfo.rewardList > 0 then
     self.m_curType = showType.WithItem
@@ -38,12 +39,24 @@ function Form_Coupon:OnActive()
   self:RefreshUI()
 end
 
+function Form_Coupon:AddEventListener()
+  self:addEventListener("eGameEvent_IAPDelivery_Push", handler(self, self.OnIAPDeliveryPushBack))
+end
+
+function Form_Coupon:RemoveAllEventListeners()
+  self:clearEventListener()
+end
+
+function Form_Coupon:OnIAPDeliveryPushBack()
+  self:CloseForm()
+end
+
 function Form_Coupon:RefreshUI()
   UILuaHelper.SetActive(self.m_txt_giftname01, self.m_curType == showType.NoItem)
   UILuaHelper.SetActive(self.m_pnl_giftconfirm, self.m_curType == showType.WithItem)
   local priceText = IAPManager:GetProductPrice(self.productInfo.productId, true)
   local welfareText = IAPManager:GetProductWelfarePrice(self.productInfo.productId)
-  self.m_txt_upgrade_Text.text = priceText or self.m_freeText
+  self.m_txt_upgrade_Text.text = priceText or ""
   self.m_txt_coupon_Text.text = welfareText or self.m_freeText
   local m_curNum = ItemManager:GetItemNum(MTTDProto.SpecialItem_Welfare)
   self.m_enough = tonumber(welfareText) <= tonumber(m_curNum)
@@ -87,7 +100,6 @@ end
 function Form_Coupon:OnBtnupgradeClicked()
   if self.m_normalBuy then
     self.m_normalBuy()
-    self:CloseForm()
   end
 end
 
@@ -95,7 +107,6 @@ function Form_Coupon:OnBtncouponClicked()
   if self.m_enough then
     if self.welfareBuy then
       self.welfareBuy()
-      self:CloseForm()
     end
   else
     utils.CheckAndPushCommonTips({
@@ -115,6 +126,7 @@ end
 
 function Form_Coupon:OnInactive()
   self.super.OnInactive(self)
+  self:RemoveAllEventListeners()
 end
 
 function Form_Coupon:OnDestroy()

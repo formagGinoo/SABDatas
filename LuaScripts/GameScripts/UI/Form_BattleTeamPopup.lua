@@ -80,8 +80,9 @@ function Form_BattleTeamPopup:initHeroView(heroObj, heroID)
   end
   local characterInfoCfg = ConfigManager:GetConfigInsByName("CharacterInfo")
   local characterCfg = characterInfoCfg:GetValue_ByHeroID(heroID)
-  if not characterCfg:GetError() then
-    local performanceID = characterCfg.m_PerformanceID[0]
+  local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  if fashionInfo and not characterCfg:GetError() then
+    local performanceID = fashionInfo.m_PerformanceID[0]
     local presentationData = CS.CData_Presentation.GetInstance():GetValue_ByPerformanceID(performanceID)
     local m_imgHead = heroObj.transform:Find("c_battle_card/pnl_head_mask/c_img_head"):GetComponent(T_Image)
     local szIcon = presentationData.m_UIkeyword .. "001"

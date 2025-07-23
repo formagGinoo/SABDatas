@@ -136,6 +136,7 @@ Cmd_Rogue_TakeReward_SC = sdp.SdpStruct("Cmd_Rogue_TakeReward_SC")
 Cmd_Rogue_TakeReward_SC.Definition = {
   "iTakenReward",
   "vReward",
+  "vActivityReward",
   iTakenReward = {
     0,
     0,
@@ -144,6 +145,12 @@ Cmd_Rogue_TakeReward_SC.Definition = {
   },
   vReward = {
     1,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  vActivityReward = {
+    2,
     0,
     sdp.SdpVector(CmdIDNum),
     nil

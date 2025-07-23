@@ -12,6 +12,7 @@ local MainBackgroundIns = ConfigManager:GetConfigInsByName("MainBackground")
 local HallRoleTabIconAnimStr = "HallDecorate_pagetab_in"
 local HallRoleItemListAnimStr = "HallDecorate_pagerole_in"
 local HallActivityPageAnimStr = "HallDecorate_pageactivity_in"
+local HallFashionPageAnimStr = "HallDecorate_pageactivity_in"
 
 function Form_HallDecorate:Init(gameObject, csui)
   self:CheckCreateVariable(csui)
@@ -41,6 +42,14 @@ function Form_HallDecorate:AfterInit()
       pageNode = self.m_page_activity,
       freshFun = self.ChangeActShow,
       freshLeftUpContentFun = self.FreshLeftUpContentActivity
+    },
+    [MainBgType.Fashion] = {
+      panelNode = self.m_pnl_decoratefashion,
+      contentAnimStr = "HallDecorate_decoratefashion_in",
+      nodeSelect = self.m_img_tab_selfashion,
+      pageNode = self.m_page_fashion,
+      freshFun = self.ChangeFashionShow,
+      freshLeftUpContentFun = self.FreshLeftUpContentFashion
     }
   }
   local initGridData = {
@@ -55,6 +64,12 @@ function Form_HallDecorate:AfterInit()
     end
   }
   self.m_luaActivityInfinityGrid = self:CreateInfinityGrid(self.m_list_act_item_InfinityGrid, "HallDecorate/UIDecorateActivityItem", initActGridData)
+  local initFashionGridData = {
+    itemClkBackFun = function(itemIndex)
+      self:OnFashionItemClk(itemIndex)
+    end
+  }
+  self.m_luaFashionInfinityGrid = self:CreateInfinityGrid(self.m_list_fashion_item_InfinityGrid, "HallDecorate/UIDecorateFashionItem", initFashionGridData)
   self.m_bg_root_trans = self.m_bg_root.transform
   self.m_content_node_Trans = self.m_content_node.transform
   self.m_blurNode_Trans = self.m_blurNode.transform
@@ -64,14 +79,17 @@ function Form_HallDecorate:AfterInit()
   self.m_allRoleDataList = nil
   self.m_filterCampRoleDataList = nil
   self.m_allActivityDataList = nil
+  self.m_allFashionDataList = nil
   self.m_showPosDataList = nil
   self.m_curMainBackgroundCfg = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
   self.m_curShowRoleData = nil
+  self.m_curShowFashionData = nil
   self:InitCloseSubNodeStatus()
   self.m_curBgPrefabStr = nil
   self.m_curBgNodeObj = nil
+  self.m_HeroFashion = HeroManager:GetHeroFashion()
 end
 
 function Form_HallDecorate:OnActive()
@@ -107,6 +125,7 @@ function Form_HallDecorate:FreshData()
   self:InitPosStatus()
   self:InitCreateRoleList()
   self:InitCreateActivityList()
+  self:InitCreateFashionList()
 end
 
 function Form_HallDecorate:ClearCacheData()
@@ -293,6 +312,77 @@ function Form_HallDecorate:GetActivityPosChooseListIndex()
   end
 end
 
+function Form_HallDecorate:InitCreateFashionList()
+  self.m_allFashionDataList = {}
+  local allHaveFashionInfoList = self.m_HeroFashion:GetAllHaveFashionInfoList() or {}
+  for i, tempFashionInfo in ipairs(allHaveFashionInfoList) do
+    local tempFashionData = {
+      isSelect = false,
+      fashionInfo = tempFashionInfo,
+      fashionID = tempFashionInfo.m_FashionID
+    }
+    self.m_allFashionDataList[#self.m_allFashionDataList + 1] = tempFashionData
+  end
+  table.sort(self.m_allFashionDataList, function(a, b)
+    local priorityA = a.fashionInfo.m_Priority
+    local priorityB = b.fashionInfo.m_Priority
+    if priorityA ~= priorityB then
+      return priorityA > priorityB
+    end
+    return a.fashionID < b.fashionID
+  end)
+end
+
+function Form_HallDecorate:FreshFashionDataListChooseStatus()
+  if not self.m_showPosDataList then
+    return
+  end
+  if not self.m_curChoosePosIndex then
+    return
+  end
+  local tempShowPosData = self.m_showPosDataList[self.m_curChoosePosIndex]
+  if not tempShowPosData then
+    return
+  end
+  local curChooseData = tempShowPosData.curChooseData
+  for _, v in ipairs(self.m_allFashionDataList) do
+    v.isSelect = curChooseData.iType == MainBgType.Fashion and v.fashionID == curChooseData.iId
+  end
+end
+
+function Form_HallDecorate:GetFashionDataByID(fashionID)
+  if not fashionID then
+    return
+  end
+  for i, v in ipairs(self.m_allFashionDataList) do
+    if v.fashionID == fashionID then
+      return v
+    end
+  end
+end
+
+function Form_HallDecorate:GetFashionPosChooseListIndex()
+  if not self.m_showPosDataList then
+    return
+  end
+  if not self.m_curChoosePosIndex then
+    return
+  end
+  local tempShowPosData = self.m_showPosDataList[self.m_curChoosePosIndex]
+  if not tempShowPosData then
+    return
+  end
+  local curChooseData = tempShowPosData.curChooseData
+  if curChooseData.iType ~= MainBgType.Fashion then
+    return
+  end
+  for i, v in ipairs(self.m_allFashionDataList) do
+    if v.fashionID == curChooseData.iId then
+      return i
+    end
+  end
+end
+
 function Form_HallDecorate:GetTypeIndexWithChoosePos()
   if not self.m_curChoosePosIndex then
     return
@@ -350,6 +440,11 @@ function Form_HallDecorate:ChangeCurPoseDataChooseStatus(isSelect)
     local tempActData = self:GetActivityDataByID(curChooseData.iId)
     if tempActData then
       tempActData.isSelect = isSelect
+    end
+  elseif type == MainBgType.Fashion then
+    local tempFashionData = self:GetFashionDataByID(curChooseData.iId)
+    if tempFashionData then
+      tempFashionData.isSelect = isSelect
     end
   end
 end
@@ -509,6 +604,7 @@ function Form_HallDecorate:ChangePoseShow(index, isNoChangeSubType, isOnlyFreshL
   UILuaHelper.SetActive(self["m_img_select" .. self.m_curChoosePosIndex], true)
   self:FreshRoleDataListChooseStatus()
   self:FreshActivityDataListChooseStatus()
+  self:FreshFashionDataListChooseStatus()
   local typeIndex = self:GetTypeIndexWithChoosePos()
   self:ChangeBgTypeShow(typeIndex, isNoChangeSubType, isOnlyFreshList, isShowRightPanelAnim)
   self:CheckFreshLeftUpContent(isShowContentAnim)
@@ -577,6 +673,49 @@ function Form_HallDecorate:CheckFreshCurBgTypeListShow()
   end
   if typeToggleTab.freshFun then
     typeToggleTab.freshFun(self, false, true)
+  end
+end
+
+function Form_HallDecorate:CheckRecycleSpine(isResetParam)
+  if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
+    if isResetParam then
+      UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
+    end
+    self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
+    self.m_curHeroSpineObj = nil
+  end
+end
+
+function Form_HallDecorate:ShowHeroSpine(heroSpinePathStr, parentTrans)
+  if not heroSpinePathStr then
+    return
+  end
+  if not self.m_HeroSpineDynamicLoader then
+    return
+  end
+  self:CheckRecycleSpine()
+  local typeStr = SpinePlaceCfg.MainShowSmall
+  self.m_HeroSpineDynamicLoader:LoadHeroSpine(heroSpinePathStr, typeStr, parentTrans, function(spineLoadObj)
+    self:CheckRecycleSpine()
+    self.m_curHeroSpineObj = spineLoadObj
+    self:OnLoadSpineBack()
+  end)
+end
+
+function Form_HallDecorate:OnLoadSpineBack()
+  if not self.m_curHeroSpineObj then
+    return
+  end
+  local spinePlaceObj = self.m_curHeroSpineObj.spinePlaceObj
+  UILuaHelper.SetActive(spinePlaceObj, true)
+  local spineRootObj = self.m_curHeroSpineObj.spineObj
+  UILuaHelper.SpineResetMatParam(spineRootObj)
+  UILuaHelper.SetSpineTimeScale(spineRootObj, 1)
+  UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", false, false)
+  UILuaHelper.SpineResetInit(spineRootObj)
+  UILuaHelper.SetSpineTimeScale(spineRootObj, 0)
+  if spineRootObj:GetComponent("SpineSkeletonPosControl") then
+    spineRootObj:GetComponent("SpineSkeletonPosControl"):OnResetInit()
   end
 end
 
@@ -659,50 +798,7 @@ function Form_HallDecorate:FreshShowSpine()
   if not self.m_curShowRoleData then
     return
   end
-  self:ShowHeroSpine(self.m_curShowRoleData.characterCfg.m_Spine)
-end
-
-function Form_HallDecorate:CheckRecycleSpine(isResetParam)
-  if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
-    if isResetParam then
-      UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
-    end
-    self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
-    self.m_curHeroSpineObj = nil
-  end
-end
-
-function Form_HallDecorate:ShowHeroSpine(heroSpinePathStr)
-  if not heroSpinePathStr then
-    return
-  end
-  if not self.m_HeroSpineDynamicLoader then
-    return
-  end
-  self:CheckRecycleSpine()
-  local typeStr = SpinePlaceCfg.MainShowSmall
-  self.m_HeroSpineDynamicLoader:LoadHeroSpine(heroSpinePathStr, typeStr, self.m_root_hero, function(spineLoadObj)
-    self:CheckRecycleSpine()
-    self.m_curHeroSpineObj = spineLoadObj
-    self:OnLoadSpineBack()
-  end)
-end
-
-function Form_HallDecorate:OnLoadSpineBack()
-  if not self.m_curHeroSpineObj then
-    return
-  end
-  local spinePlaceObj = self.m_curHeroSpineObj.spinePlaceObj
-  UILuaHelper.SetActive(spinePlaceObj, true)
-  local spineRootObj = self.m_curHeroSpineObj.spineObj
-  UILuaHelper.SpineResetMatParam(spineRootObj)
-  UILuaHelper.SetSpineTimeScale(spineRootObj, 1)
-  UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", false, false)
-  UILuaHelper.SpineResetInit(spineRootObj)
-  UILuaHelper.SetSpineTimeScale(spineRootObj, 0)
-  if spineRootObj:GetComponent("SpineSkeletonPosControl") then
-    spineRootObj:GetComponent("SpineSkeletonPosControl"):OnResetInit()
-  end
+  self:ShowHeroSpine(self.m_curShowRoleData.characterCfg.m_Spine, self.m_root_hero)
 end
 
 function Form_HallDecorate:ChangeActShow(isNoChangeSubType, isOnlyFreshList, isShowRightPanelAnim)
@@ -745,6 +841,61 @@ function Form_HallDecorate:FreshLeftUpContentActivity()
       UILuaHelper.SetAtlasSprite(self.m_img_act_bg_Image, actData.mainBackgroundCfg.m_SmallPic)
     end
   end
+end
+
+function Form_HallDecorate:ChangeFashionShow(isNoChangeSubType, isOnlyFreshList, isShowRightPanelAnim)
+  if not self.m_allFashionDataList then
+    return
+  end
+  self:FreshFashionListShow(not isOnlyFreshList)
+  if isShowRightPanelAnim then
+    UILuaHelper.PlayAnimationByName(self.m_list_fashion_item, HallFashionPageAnimStr)
+  else
+    UILuaHelper.StopAnimation(self.m_list_fashion_item)
+    UILuaHelper.ResetAnimationByName(self.m_list_fashion_item, HallFashionPageAnimStr, -1)
+  end
+end
+
+function Form_HallDecorate:FreshFashionListShow(isRePos)
+  local isHaveData = next(self.m_allFashionDataList) ~= nil
+  UILuaHelper.SetActive(self.m_list_fashion_item, isHaveData)
+  UILuaHelper.SetActive(self.m_z_txt_fashion_none, not isHaveData)
+  if isHaveData then
+    self.m_luaFashionInfinityGrid:ShowItemList(self.m_allFashionDataList)
+    if isRePos then
+      self.m_luaFashionInfinityGrid:LocateTo()
+    end
+  end
+end
+
+function Form_HallDecorate:FreshLeftUpContentFashion()
+  if not self.m_curChoosePosIndex then
+    return
+  end
+  local posData = self.m_showPosDataList[self.m_curChoosePosIndex]
+  if not posData then
+    return
+  end
+  local tempCurChooseData = posData.curChooseData
+  local bgType = tempCurChooseData.iType
+  local isNotEmpty = bgType ~= MainBgType.Empty
+  UILuaHelper.SetActive(self.m_pnl_fashion_empty, not isNotEmpty)
+  UILuaHelper.SetActive(self.m_pnl_fashion, isNotEmpty)
+  if isNotEmpty then
+    local fashionData = self:GetFashionDataByID(tempCurChooseData.iId)
+    if fashionData then
+      self.m_txt_fashionname_Text.text = fashionData.fashionInfo.m_mFashionName
+      self.m_curShowFashionData = fashionData
+      self:FreshShowFashionSpine()
+    end
+  end
+end
+
+function Form_HallDecorate:FreshShowFashionSpine()
+  if not self.m_curShowFashionData then
+    return
+  end
+  self:ShowHeroSpine(self.m_curShowFashionData.fashionInfo.m_Spine, self.m_root_fashion)
 end
 
 function Form_HallDecorate:CreateTabClkBackFunctions()
@@ -890,6 +1041,45 @@ function Form_HallDecorate:OnActivityItemClk(itemIndex)
   self:FreshRightDownButtonStatus()
 end
 
+function Form_HallDecorate:OnFashionItemClk(itemIndex)
+  if not itemIndex then
+    return
+  end
+  local curPoseData = self.m_showPosDataList[self.m_curChoosePosIndex]
+  if not curPoseData then
+    return
+  end
+  local curChooseData = curPoseData.curChooseData
+  if curChooseData.iType == MainBgType.Fashion then
+    local showListIndex = self:GetFashionPosChooseListIndex()
+    if showListIndex then
+      local showItem = self.m_luaFashionInfinityGrid:GetShowItemByIndex(showListIndex)
+      if showItem then
+        showItem:ChangeItemChooseStatus(false)
+      else
+        self.m_allFashionDataList[showListIndex].isSelect = false
+      end
+    end
+  else
+    self:ChangeCurPoseDataChooseStatus(false)
+  end
+  local toSelActData = self.m_allFashionDataList[itemIndex]
+  if toSelActData.fashionID == curChooseData.iId then
+    self:ChangeCurPoseChooseData(MainBgType.Empty, 0)
+  else
+    local showItem = self.m_luaFashionInfinityGrid:GetShowItemByIndex(itemIndex)
+    if showItem then
+      showItem:ChangeItemChooseStatus(true)
+    else
+      self.m_allFashionDataList[itemIndex].isSelect = true
+    end
+    self:ChangeCurPoseChooseData(MainBgType.Fashion, self.m_allFashionDataList[itemIndex].fashionID)
+  end
+  self:FreshPoseStatusByIndex(self.m_curChoosePosIndex)
+  self:CheckFreshLeftUpContent(true)
+  self:FreshRightDownButtonStatus()
+end
+
 function Form_HallDecorate:OnBtnresetClicked()
   if not self.m_showPosDataList then
     return
@@ -971,6 +1161,15 @@ function Form_HallDecorate:GetDownloadResourceExtra(tParam)
           eType = DownloadManager.ResourcePackageType.Character
         }
       end
+    end
+  end
+  local allHaveFashionInfoList = HeroManager:GetHeroFashion():GetAllHaveFashionInfoList()
+  if allHaveFashionInfoList and next(allHaveFashionInfoList) then
+    for i, tempFashionInfo in ipairs(allHaveFashionInfoList) do
+      vResourceExtra[#vResourceExtra + 1] = {
+        sName = tempFashionInfo.m_Spine,
+        eType = DownloadManager.ResourceType.UI
+      }
     end
   end
   return vPackage, vResourceExtra

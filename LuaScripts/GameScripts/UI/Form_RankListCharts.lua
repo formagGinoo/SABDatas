@@ -72,6 +72,7 @@ function Form_RankListCharts:RqsRankListData()
 end
 
 function Form_RankListCharts:RefreshRankList(data)
+  data = data or {}
   self.mRankListCache[self.m_CurSelectRankID] = data
   self.iSelfValue = data.iSelfValue
   self.curSelectRankIdx = 1
@@ -198,11 +199,7 @@ function Form_RankListCharts:RefreshMyRankInfo(myRankInfo)
         self.m_txt_achievement_mine_Text.text = ConfigManager:GetCommonTextById(100415)
       end
     elseif valueType == GlobalRankManager.RankValueType.FactionDevelopment then
-      if self.iSelfValue and self.iSelfValue == 0 then
-        self.m_txt_achievement_mine_Text.text = self.iSelfValue
-      else
-        self.m_txt_achievement_mine_Text.text = self.iSelfValue
-      end
+      self.m_txt_achievement_mine_Text.text = self.iSelfValue or 0
     elseif valueType == GlobalRankManager.RankValueType.Tower then
       local m_GetOn = rankInfoCfg.m_GetOn
       local manager = LevelManager:GetLevelHelperByType(LevelManager.LevelType.Tower)
@@ -288,8 +285,9 @@ function Form_RankListCharts:RefreshRightTeamInfo(data)
     local heroData = vHero[i]
     if heroData then
       local hero_ID = heroData.iHeroId
+      local iFashionId = heroData.iFashion
       self["m_img_head" .. i]:SetActive(true)
-      ResourceUtil:CreatHeroBust(self["m_img_head" .. i .. "_Image"], hero_ID)
+      ResourceUtil:CreatHeroBust(self["m_img_head" .. i .. "_Image"], hero_ID, iFashionId)
     else
       self["m_img_head" .. i]:SetActive(false)
     end

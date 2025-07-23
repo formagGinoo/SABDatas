@@ -1,6 +1,5 @@
 {
   "className": "CData_PresentationBase",
-  "timestamp": "2025-07-16T14:14:16.632Z",
   "data": {
     "1": {
       "_type": "nested_dictionary",
@@ -476,10 +475,10 @@
           "m_Key": "\"Root\"",
           "m_Value": "\"root\""
         },
-        "\"Dum_Hit\"": {
+        "\"Katiana\"": {
           "m_bError": null,
           "m_ID": "8",
-          "m_Key": "\"Dum_Hit\"",
+          "m_Key": "\"Katiana\"",
           "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1\""
         }
       }
@@ -568,11 +567,11 @@
           "m_Key": "\"L_Hand\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand\""
         },
-        "\"Atlas_\"": {
+        "\"R_Hand\"": {
           "m_bError": null,
           "m_ID": "10",
-          "m_Key": "\"Atlas_\"",
-          "m_Value": "\"aorin_base1/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
+          "m_Key": "\"R_Hand\"",
+          "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
         },
         "\"L_Foot\"": {
           "m_bError": null,
@@ -615,7 +614,7 @@
           "m_bError": null,
           "m_ID": "11",
           "m_Key": "\"Root\"",
-          "m_Value": "\"Atla\""
+          "m_Value": "\"Root\""
         },
         "\"Center\"": {
           "m_bError": null,
@@ -635,10 +634,10 @@
           "m_Key": "\"L_Hand\"",
           "m_Value": "\"Root/BoneRoot/Bone_Body/Bone_Shengti_01/Bone_Shengti_02/Bone_L_Chushou_01/Bone_L_Chushou_02\""
         },
-        "\"R_Hand\"": {
+        "\"Rie Ta\"": {
           "m_bError": null,
           "m_ID": "11",
-          "m_Key": "\"R_Hand\"",
+          "m_Key": "\"Rie Ta\"",
           "m_Value": "\"Root/BoneRoot/Bone_Body/Bone_Shengti_01/Bone_Shengti_02/Bone_R_Chushou_01/Bone_R_Chushou_02\""
         },
         "\"L_Foot\"": {
@@ -752,16 +751,16 @@
           "m_Key": "\"R_Hand\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
         },
-        "\"L_Foot\"": {
+        "\"\"For a\"": {
           "m_bError": null,
           "m_ID": "14",
-          "m_Key": "\"L_Foot\"",
+          "m_Key": "\"\"For a\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot\""
         },
-        "\"R_Foot\"": {
+        "\"Kate D\"": {
           "m_bError": null,
           "m_ID": "14",
-          "m_Key": "\"R_Foot\"",
+          "m_Key": "\"Kate D\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot\""
         },
         "\"Weapon01\"": {

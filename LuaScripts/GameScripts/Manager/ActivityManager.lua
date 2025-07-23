@@ -16,10 +16,12 @@ ActivityManager.PayStoreSubPanelEnum = {
   "GameOpenGiftSubPanel",
   "LimitUpPackSubPanel",
   "ChainGiftPackSubPanel",
-  "SignGiftFiveSunPanel"
+  "SignGiftFiveSunPanel",
+  "FashionStoreSubPanel"
 }
 ActivityManager.ActivitySubPanelName = {
   ActivitySPName_Sign7 = "ActivitySevenDaysSubPanel_ByMain",
+  ActivitySPName_Sign10 = "ActivitySignTenDaySubPanel",
   ActivitySPName_Sign14 = "ActivityFourteenSignSubPanel",
   ActivitySPName_CommunityEntrance = "ActivityCommunityEntranceSubPanel",
   ActivitySPName_RechargeBack = "ActivityRebateSubPanel",
@@ -56,6 +58,31 @@ ActivityManager.BattlePassBuyStatus = {
   Free = 0,
   Paid = 1,
   Advanced = 2
+}
+ActivityManager.BattlePassType = {
+  StartBp = 1,
+  MonthBp = 2,
+  ActivityUpBp = 3
+}
+ActivityManager.BattlePassUIType = {
+  [ActivityManager.BattlePassType.StartBp] = {
+    BattlePassMain = "Form_BattlePass",
+    BattlePassBenefits = "Form_BattlePassBenefits",
+    BattlePassLevelUp = "Form_BattlePassLevelUp10",
+    UnlockAnimation = "BattlePass_advanced_lock"
+  },
+  [ActivityManager.BattlePassType.MonthBp] = {
+    BattlePassMain = "Form_BattlePass_Monthly",
+    BattlePassBenefits = "Form_BattlePassBenefits_Monthly",
+    BattlePassLevelUp = "Form_BattlePassLevelUp10_Monthly",
+    UnlockAnimation = "BattlePass_Monthly_lock"
+  },
+  [ActivityManager.BattlePassType.ActivityUpBp] = {
+    BattlePassMain = "Form_BattlePass_Up",
+    BattlePassBenefits = "Form_BattlePassBenefits_Up",
+    BattlePassLevelUp = "Form_BattlePassLevelUp10_Up",
+    UnlockAnimation = "BattlePass_Up_lock"
+  }
 }
 
 function ActivityManager:OnCreate()
@@ -108,6 +135,9 @@ function ActivityManager:CanShowRedCurrentLogin(iActivityID)
     return true
   end
   local stActivityData = self:GetActivityDataByID(iActivityID)
+  if not stActivityData then
+    return false
+  end
   if stActivityData.iShowReddotNew and stActivityData.iShowReddotNew == 1 then
     if TimeUtil:GetServerTimeS() < LocalDataManager:GetIntSimple("Red_Point" .. iActivityID, 0) then
       return false
@@ -127,6 +157,9 @@ function ActivityManager:CanShowRedCurrentLoginByType(iActivityID, iShowReddotNe
     return true
   end
   local stActivityData = self:GetActivityDataByID(iActivityID)
+  if not stActivityData then
+    return false
+  end
   if iShowReddotNew == nil then
     iShowReddotNew = stActivityData.iShowReddotNew
   end
@@ -149,6 +182,9 @@ function ActivityManager:SetShowRedCurrentLogin(iActivityID, iShowReddotNew)
     return
   end
   local stActivityData = self:GetActivityDataByID(iActivityID)
+  if not stActivityData then
+    return false
+  end
   if iShowReddotNew == nil then
     iShowReddotNew = stActivityData.iShowReddotNew
   end
@@ -405,6 +441,7 @@ function ActivityManager:GetActivityList(bReload, isShowWaitView)
       DownloadManager:PauseDownloadAddResAll()
       CS.MUF.Download.DownloadResource.Instance:SetOpenDownloadEnsurance(false)
     end
+    self:broadcastEvent("eGameEvent_Activity_AnywayReload")
     self:CheckShowUidAndMaking()
   end, self.OnReqGetListFailed)
 end
@@ -417,7 +454,11 @@ function ActivityManager:OnReqGetListFailed(msg)
   log.error("Message Error Code: ", iErrorCode)
   if iErrorCode == 1008 then
     utils.CheckAndPushCommonTips({
-      tipsID = 1198,
+      title = CS.ConfFact.LangFormat4DataInit("CommonPrompt"),
+      content = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsContent1198"),
+      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonRetry"),
+      funcText2 = CS.ConfFact.LangFormat4DataInit("CommonReLogin"),
+      btnNum = 2,
       bLockBack = true,
       bLockTop = true,
       func1 = function()
@@ -817,21 +858,23 @@ function ActivityManager:SetActivityImage(stActivityData, image, sFileName, fCB)
     sFileNameReal = sFileName
   else
     sFileNameReal = sFileName
-    local mDownloadPictureCDN = stActivityData.mDownloadPictureCDN
-    if mDownloadPictureCDN and mDownloadPictureCDN[sFileName] then
-      local vLanIDAll = string.split(mDownloadPictureCDN[sFileName], ";")
-      local stLanguageElment = CData_MultiLanguage:GetValue_ByID(CS.MultiLanguageManager.g_iLanguageID)
-      local iLanID = stLanguageElment.m_LanID
-      for _, sLanIDTmp in ipairs(vLanIDAll) do
-        if tonumber(sLanIDTmp) == iLanID then
-          if string.endsWith(sFileName, ".png") then
-            sFileNameReal = string.replace(sFileName, ".png", "_" .. sLanIDTmp .. ".png")
+    if stActivityData then
+      local mDownloadPictureCDN = stActivityData.mDownloadPictureCDN
+      if mDownloadPictureCDN and mDownloadPictureCDN[sFileName] then
+        local vLanIDAll = string.split(mDownloadPictureCDN[sFileName], ";")
+        local stLanguageElment = CData_MultiLanguage:GetValue_ByID(CS.MultiLanguageManager.g_iLanguageID)
+        local iLanID = stLanguageElment.m_LanID
+        for _, sLanIDTmp in ipairs(vLanIDAll) do
+          if tonumber(sLanIDTmp) == iLanID then
+            if string.endsWith(sFileName, ".png") then
+              sFileNameReal = string.replace(sFileName, ".png", "_" .. sLanIDTmp .. ".png")
+              break
+            end
+            if string.endsWith(sFileName, ".jpg") then
+              sFileNameReal = string.replace(sFileName, ".jpg", "_" .. sLanIDTmp .. ".jpg")
+            end
             break
           end
-          if string.endsWith(sFileName, ".jpg") then
-            sFileNameReal = string.replace(sFileName, ".jpg", "_" .. sLanIDTmp .. ".jpg")
-          end
-          break
         end
       end
     end
@@ -985,6 +1028,23 @@ function ActivityManager:IsUseClientFightResult()
     local sClientResult = activity:GetCommonParamByKey("use_client_result")
     if sClientResult and sClientResult == "1" then
       return true
+    end
+  end
+  return false
+end
+
+function ActivityManager:IsCloseFightCheatType(cheatype)
+  local activityList = self:GetActivityListByType(MTTD.ActivityType_ModuleControl)
+  if activityList == nil then
+    return false
+  end
+  for _, activity in pairs(activityList) do
+    if activity.m_stSdpConfig and activity.m_stSdpConfig.stClientCfg and activity.m_stSdpConfig.stClientCfg.vCloseFightCheatType then
+      for _, v in pairs(activity.m_stSdpConfig.stClientCfg.vCloseFightCheatType) do
+        if cheatype == v then
+          return true
+        end
+      end
     end
   end
   return false
@@ -1169,6 +1229,16 @@ function ActivityManager:OnCheckVoucherControlAndUrl()
     return act:GetIsControl(), act:GetJumpUrl()
   end
   return false
+end
+
+function ActivityManager:OnCheckBattlePassRedInHall(actId)
+  if actId then
+    local stActivity = self:GetActivityByID(actId)
+    if stActivity and stActivity:checkCondition() and stActivity:CheckRed() > 0 then
+      return 1
+    end
+  end
+  return 0
 end
 
 function ActivityManager:OnInitFetchMoreDataMustFail(messageId, msg)

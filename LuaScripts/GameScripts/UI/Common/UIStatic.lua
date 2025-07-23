@@ -124,6 +124,7 @@ local function resetCallback()
 end
 
 LuaManagerInstance:AddResetCallback(resetCallback)
+StackBottom = CS.UI.UIStatic.StackBottom
 StackFlow = CS.UI.UIStatic.StackFlow
 StackPopup = CS.UI.UIStatic.StackPopup
 StackTop = CS.UI.UIStatic.StackTop

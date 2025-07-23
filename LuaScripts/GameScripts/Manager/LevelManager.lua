@@ -27,6 +27,9 @@ function LevelManager:OnDailyReset()
     self:ReqAllLevelTypeDailyTimes()
     self:ReqAllLevelTypeDetails()
   end
+  if self.m_levelEquipmentHelper then
+    self.m_levelEquipmentHelper:ReqStageGetDungeonChapterMopCS()
+  end
 end
 
 function LevelManager:OnUpdate(dt)

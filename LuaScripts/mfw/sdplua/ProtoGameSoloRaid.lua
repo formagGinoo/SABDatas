@@ -85,6 +85,7 @@ CmdSoloRaidRecordHero.Definition = {
   "iLevel",
   "iBreak",
   "iPower",
+  "iFashion",
   iHeroId = {
     0,
     0,
@@ -105,6 +106,12 @@ CmdSoloRaidRecordHero.Definition = {
   },
   iPower = {
     3,
+    0,
+    8,
+    0
+  },
+  iFashion = {
+    4,
     0,
     8,
     0

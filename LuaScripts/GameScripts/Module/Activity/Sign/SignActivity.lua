@@ -4,7 +4,8 @@ local SignType = {
   thirtySign = 0,
   SevenSign = 1,
   FiveSign = 2,
-  FourTeenSign = 3
+  FourTeenSign = 3,
+  TenSign = 4
 }
 local SignLimitCondition = {
   MainLevel = 1,
@@ -181,6 +182,8 @@ function SignActivity:getSubPanelName()
     return ActivityManager.ActivitySubPanelName.ActivitySPName_Sign7
   elseif self.m_stSdpConfig.iUiType == SignType.FourTeenSign then
     return ActivityManager.ActivitySubPanelName.ActivitySPName_Sign14
+  elseif self.m_stSdpConfig.iUiType == SignType.TenSign then
+    return ActivityManager.ActivitySubPanelName.ActivitySPName_Sign10
   end
 end
 
@@ -189,8 +192,24 @@ function SignActivity:GetSignPushFacePrefabName()
     return "Form_ActivitySevendaysFace"
   elseif self.m_stSdpConfig.iUiType == SignType.FourTeenSign then
     return "Form_ActivityFourteendaysFace"
+  elseif self.m_stSdpConfig.iUiType == SignType.TenSign then
+    return "Form_ActivitySign10Day"
   end
   return ""
+end
+
+function SignActivity:GetUIType()
+  if not self.m_stSdpConfig then
+    return
+  end
+  if self.m_stSdpConfig.iUiType and self.m_stSdpConfig.iUiType == 0 then
+    return 1
+  end
+  return self.m_stSdpConfig.iUiType or 1
+end
+
+function SignActivity:GetSkinId()
+  return self.m_stSdpConfig.iAvatarId
 end
 
 function SignActivity:OnDispose()
@@ -199,8 +218,10 @@ function SignActivity:OnDispose()
     formId = UIDefines.ID_FORM_ACTIVITYSEVENDAYSFACE
   elseif self.m_stSdpConfig and self.m_stSdpConfig.iUiType == SignType.FourTeenSign then
     formId = UIDefines.ID_FORM_ACTIVITYFOURTEENDAYSFACE
+  elseif self.m_stSdpConfig and self.m_stSdpConfig.iUiType == SignType.TenSign then
+    formId = UIDefines.ID_FORM_ACTIVITYSIGN10DAY
   end
-  PushFaceManager:RemoveShowPopPanelList(UIDefines.ID_FORM_ACTIVITYSEVENDAYSFACE, self:getSubPanelName())
+  PushFaceManager:RemoveShowPopPanelList(formId, self:getSubPanelName())
 end
 
 return SignActivity

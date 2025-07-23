@@ -298,7 +298,7 @@ function Form_CastleMeetingrRoom:ShowHeroSoloDialogue(idx)
 end
 
 function Form_CastleMeetingrRoom:CheckAndPushLevelUp()
-  local data = self.LevelUpHeroList[1]
+  local data = self.LevelUpHeroList and self.LevelUpHeroList[1] or nil
   if not data then
     return
   end
