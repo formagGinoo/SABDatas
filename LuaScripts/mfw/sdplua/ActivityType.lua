@@ -58,3 +58,4 @@ ActivityType_WebReward = 139
 ActivityType_Refund = 140
 ActivityType_SignGift = 141
 ActivityType_GachaFree = 142
+ActivityType_TimelineJump = 146

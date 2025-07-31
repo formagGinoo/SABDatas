@@ -513,6 +513,20 @@ __funcList[60010] = function(extData)
   local sub_id = extData.ex_param[2] and tonumber(extData.ex_param[2])
   HeroActivityManager:GotoHeroActivity({main_id = main_id, sub_id = sub_id})
 end
+__funcList[2901] = function(extData)
+  if not extData then
+    log.error("跳转参数错误")
+    return
+  end
+  local act = ActivityManager:GetActivityByID(tonumber(extData.activityId))
+  if not act or not act:checkCondition(true) then
+    StackFlow:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetCommonTextById(20068))
+    return
+  end
+  StackPopup:Push(UIDefines.ID_FORM_ACTIVITY105_PV, {
+    activityId = act:getID()
+  })
+end
 
 function M:OpenFunc(jumpId, extData)
   if jumpId then

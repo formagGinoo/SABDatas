@@ -155,13 +155,6 @@
       "m_Value": "\"2\"",
       "m_Desc": "\"配置初始的突发事件体力上限\""
     },
-    "\"DayTimeOffset\"": {
-      "m_bError": null,
-      "m_Name": "\"DayTimeOffset\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"14400\"",
-      "m_Desc": "\"统一重置时间，相较于0点的秒数偏移\""
-    },
     "\"NewbieMainLevelID\"": {
       "m_bError": null,
       "m_Name": "\"NewbieMainLevelID\"",
@@ -190,12 +183,26 @@
       "m_Value": "\"\"",
       "m_Desc": "\"全量下载的扩展资源包，string数组，填资源包名\""
     },
+    "\"NewBieMainLevelMapResource\"": {
+      "m_bError": null,
+      "m_Name": "\"NewBieMainLevelMapResource\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"序章包内地图资源，填写章节ID，序章包下载第0+1章内容\""
+    },
     "\"ResourceTaskTagMainLevelID\"": {
       "m_bError": null,
       "m_Name": "\"ResourceTaskTagMainLevelID\"",
       "m_Type": "\"int\"",
       "m_Value": "\"1102090\"",
       "m_Desc": "\"后台资源下载新玩家判定标准（填入通关的mainlevelID，通关此关卡之前判定为新玩家）\""
+    },
+    "\"PackNewUserUIMainLevelMapResource\"": {
+      "m_bError": null,
+      "m_Name": "\"PackNewUserUIMainLevelMapResource\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"5\"",
+      "m_Desc": "\"新玩家地图资源下载，填写章节ID，优先下载第0~4章内容\""
     },
     "\"FriendPointsAcceptMax\"": {
       "m_bError": null,
@@ -1142,6 +1149,13 @@
       "m_Value": "\"43200\"",
       "m_Desc": "\"最长挂机存储时长\""
     },
+    "\"DayTimeOffset\"": {
+      "m_bError": null,
+      "m_Name": "\"DayTimeOffset\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"14400\"",
+      "m_Desc": "\"统一重置时间，相较于0点的秒数偏移\""
+    },
     "\"WeekTimeReset\"": {
       "m_bError": null,
       "m_Name": "\"WeekTimeReset\"",
@@ -1750,20 +1764,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"1101020\"",
       "m_Desc": "\"通过该关卡后，进入关卡前可弹出资源下载框，提前下载关卡内对应的资源\""
-    },
-    "\"NewBieMainLevelMapResource\"": {
-      "m_bError": null,
-      "m_Name": "\"NewBieMainLevelMapResource\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"序章包内地图资源，填写章节ID，序章包下载第0+1章内容\""
-    },
-    "\"PackNewUserUIMainLevelMapResource\"": {
-      "m_bError": null,
-      "m_Name": "\"PackNewUserUIMainLevelMapResource\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"5\"",
-      "m_Desc": "\"新玩家地图资源下载，填写章节ID，优先下载第0~4章内容\""
     },
     "\"StreamingResourcePackOnMobileData\"": {
       "m_bError": null,

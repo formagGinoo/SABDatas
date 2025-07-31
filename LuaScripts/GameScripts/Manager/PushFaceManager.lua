@@ -83,6 +83,12 @@ local PopPanelCfg = {
     FormID = UIDefines.ID_FORM_PUSH_GIFT_RESERVE,
     SortNum = 107,
     paramData = nil
+  },
+  TimelinePushface = {
+    FormID = UIDefines.ID_FORM_ACTIVITY105_PV,
+    SortNum = 108,
+    paramData = nil,
+    onlyDisplayInLobby = true
   }
 }
 
@@ -141,6 +147,7 @@ function PushFaceManager:AddEventListeners()
   self:addEventListener("eGameEvent_JumpFaceActivity", handler(self, self.OnPushJumpFace))
   self:addEventListener("eGameEvent_HeroActSign", handler(self, self.OnPushHeroActSign))
   self:addEventListener("eGameEvent_EmergencyGiftPushFace", handler(self, self.OnPushEmergencyGift))
+  self:addEventListener("eGameEvent_TimelinePushface", handler(self, self.OnPushTimelinePushface))
 end
 
 function PushFaceManager:OnHangUpLevelUpSystem(param)
@@ -175,6 +182,14 @@ function PushFaceManager:OnPushHeroActSign(param)
     return
   end
   self:PushFacePanel("HeroActSign", param)
+  self:CheckIsNotShowAndPopPanel()
+end
+
+function PushFaceManager:OnPushTimelinePushface(param)
+  if not param then
+    return
+  end
+  self:PushFacePanel("TimelinePushface", param)
   self:CheckIsNotShowAndPopPanel()
 end
 

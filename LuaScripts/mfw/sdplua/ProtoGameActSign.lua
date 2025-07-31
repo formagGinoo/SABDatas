@@ -183,6 +183,7 @@ CmdActCfgSign.Definition = {
   "iRestrictStageId",
   "iRestrictGuideId",
   "iAvatarId",
+  "iNotifyTime",
   iUiType = {
     0,
     0,
@@ -323,6 +324,12 @@ CmdActCfgSign.Definition = {
   },
   iAvatarId = {
     23,
+    0,
+    8,
+    0
+  },
+  iNotifyTime = {
+    24,
     0,
     8,
     0

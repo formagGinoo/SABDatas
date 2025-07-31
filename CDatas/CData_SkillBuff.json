@@ -1063,7 +1063,7 @@
       "m_AddType": "1",
       "m_GroupType": "1",
       "m_GroupMaxNum": null,
-      "m_CoverPriority": null,
+      "m_CoverPriority": "20",
       "m_LifeTime": "9999999",
       "m_BuffSort": "1",
       "m_BuffScript": "\"Buff_AttackSpeedUp\"",

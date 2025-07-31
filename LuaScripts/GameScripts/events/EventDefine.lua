@@ -325,7 +325,8 @@ local EventName = {
   "eGameEvent_Ancient_RefreshQuest",
   "eGameEvent_Ancient_AddEnergy",
   "eGameEvent_Ancient_SummonHero",
-  "eGameEvent_Ancient_TaskUpdate"
+  "eGameEvent_Ancient_TaskUpdate",
+  "eGameEvent_TimelinePushface"
 }
 
 function EventDefine:GetEventID(str)

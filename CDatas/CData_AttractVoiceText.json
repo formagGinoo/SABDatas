@@ -266,7 +266,7 @@
           "m_VoiceId": "2001018",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"2I feel like I'm gradually beginning to understand you, the other me.\"",
+          "m_mText": "\"I feel like I'm gradually beginning to understand you, the other me.\"",
           "m_voice": "\"Play_vo_20010_system_tapgeneric02\""
         }
       }
@@ -867,7 +867,7 @@
           "m_TextId": "1",
           "m_NextId": null,
           "m_mText": "\"Th-this is for me!?\"",
-          "m_voice": "\"C_Jeffrey_Swordystem_gift01\""
+          "m_voice": "\"Play_vo_20030_system_gift01\""
         }
       }
     },
@@ -3072,7 +3072,7 @@
           "m_TextId": "1",
           "m_NextId": null,
           "m_mText": "\"Good grief... Is it finally over?\"",
-          "m_voice": "\"Play_C_20510_Runttle_stagewin\""
+          "m_voice": "\"Play_vo_20100_battle_stagewin\""
         }
       }
     },
@@ -6116,7 +6116,7 @@
           "m_VoiceId": "2019012",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Yukana\t汤舟\"",
+          "m_mText": "\"Observing...\"",
           "m_voice": "\"Play_vo_20190_system_idle\""
         }
       }

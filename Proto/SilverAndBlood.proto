@@ -99,6 +99,7 @@ enum ActivityType {
   ActivityType_Refund = 140;
   ActivityType_SignGift = 141;
   ActivityType_GachaFree = 142;
+  ActivityType_TimelineJump = 146;
 }
 
 enum ActPushGiftPriceType {
@@ -515,6 +516,11 @@ enum CmdId_Act_SurveyReward {
   CmdId_Act_SurveyReward_GetLink_SC = 59812;
   CmdId_Act_SurveyReward_GetReward_CS = 59813;
   CmdId_Act_SurveyReward_GetReward_SC = 59814;
+}
+
+enum CmdId_Act_TimelineJump {
+  CmdId_Act_TimelineJump_GetReward_CS = 60561;
+  CmdId_Act_TimelineJump_GetReward_SC = 60562;
 }
 
 enum CmdId_Afk {
@@ -2373,6 +2379,8 @@ enum ErrorCode {
   Error_Activity_SignInGift_BuyTimeLimit = 6634;
   Error_Act_BattlePass_AlreadyBuy = 6641;
   Error_Act_BattlePass_None = 6642;
+  Error_Activity_TimelineJump_Error = 6671;
+  Error_Activity_TimelineJump_Rewarded = 6672;
 }
 
 enum FaceType {
@@ -3680,6 +3688,14 @@ message Cmd_Act_SurveyReward_GetReward_SC {
   uint32 iActivityId = 1;
   uint32 iIndexId = 2;
   repeated CmdIDNum vReward = 3;
+}
+
+message Cmd_Act_TimelineJump_GetReward_CS {
+  uint32 iActivityId = 1;
+}
+
+message Cmd_Act_TimelineJump_GetReward_SC {
+  repeated CmdIDNum vReward = 1;
 }
 
 message Cmd_Afk_GetData_CS {
@@ -8370,6 +8386,7 @@ message CmdActCfgSign {
   uint32 iRestrictStageId = 22;
   uint32 iRestrictGuideId = 23;
   uint32 iAvatarId = 24;
+  uint32 iNotifyTime = 25;
 }
 
 message CmdActCfgSignGift {
@@ -8439,6 +8456,11 @@ message CmdActCfgSystemSwitchSystemCfg {
   repeated SdpUInt vClientMessage = 4;
   uint32 iForceClose = 5;
   SdpString sComment = 6;
+}
+
+message CmdActCfgTimelineJump {
+  CmdActClientCfgTimelineJump stClientCfg = 1;
+  CmdActCommonCfgTimelineJump stCommonCfg = 2;
 }
 
 message CmdActCfgTvProjection {
@@ -8620,6 +8642,10 @@ message CmdActClientCfgSignGift {
   SdpString sRule = 2;
 }
 
+message CmdActClientCfgTimelineJump {
+  SdpString sTimelineName = 1;
+}
+
 message CmdActClientCfgTvProjection {
   repeated CmdActCfgTvProjectionTvProjectionCfg sTvProjectionCfg = 1;
 }
@@ -8780,6 +8806,10 @@ message CmdActCommonCfgSurveyReward {
 
 message CmdActCommonCfgSystemSwitch {
   map<SdpUInt, CmdActCfgSystemSwitchSystemCfg> mSystemCfg = 1;
+}
+
+message CmdActCommonCfgTimelineJump {
+  repeated CmdIDNum vReward = 1;
 }
 
 message CmdActCommonCfgVoucherControl {
@@ -9104,6 +9134,10 @@ message CmdActSignGiftBuyParam {
 message CmdActSurveyReward_Status {
   uint32 iActivityId = 1;
   map<SdpUInt, SdpUInt> mSendReward = 2;
+}
+
+message CmdActTimelineJump_Status {
+  bool bIsRewarded = 1;
 }
 
 message CmdAfk {

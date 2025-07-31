@@ -5545,6 +5545,22 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "6671": {
+      "m_bError": null,
+      "m_ID": "6671",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6672": {
+      "m_bError": null,
+      "m_ID": "6672",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "-1": {
       "m_bError": null,
       "m_ID": "-1",
@@ -5684,7 +5700,7 @@
     "-18": {
       "m_bError": null,
       "m_ID": "-18",
-      "m_mMessage": "\"1PNS Service Error\"",
+      "m_mMessage": "\"APNS Service Error\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6866,5 +6882,5 @@
       "m_MultLong": "\"\""
     }
   },
-  "status": "processed_858_items"
+  "status": "processed_860_items"
 }

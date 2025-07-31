@@ -34,6 +34,10 @@ function Job_Startup_DownloadNecessaryResource_Impl.RefreshMultiLan(jobNode)
 end
 
 function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(jobNode)
+  local versionContext = CS.VersionContext.GetContext()
+  local sLocalResVer = CS.VersionUtil.GetResVer(versionContext.ClientLocalVersion)
+  local sCacheResVer = LocalDataManager:GetStringSimple("Login_Download_LocalVersion", sLocalResVer)
+  log.info("Login DownloadNecessaryResource CacheResVersion: " .. sCacheResVer)
   ReportManager:ReportLoginProcess("DownloadNecessaryResource", "Start")
   DownloadManager:SetThrottleNetSpeed(0)
   local vExtraResourceMultiLan = {}
@@ -57,6 +61,7 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
   
   local function OnDownloadCompleteAfter()
     ReportManager:ReportLoginProcess("DownloadNecessaryResource", "Success")
+    LocalDataManager:SetStringSimple("Login_Download_LocalVersion", sLocalResVer)
     if bDownloadMultiLan then
       Job_Startup_DownloadNecessaryResource_Impl.RefreshMultiLan(jobNode)
     else

@@ -75,6 +75,7 @@ function Form_Hall:OnActive()
   end
   StackFlow:DestroyUI(UIDefines.ID_FORM_LOGINNEW)
   self:CheckAndRqsHeroAct()
+  self:CheckAndShowTimelinePushface()
   RequestLuaCodeStatus(function(iSeverityMax)
     if iSeverityMax == 3 then
       utils.CheckAndPushCommonTips({
@@ -128,6 +129,7 @@ function Form_Hall:OnInactive()
     self.ChangeActTimer = nil
   end
   self:ClearEmergencyGiftTimer()
+  self:ClearActEnterTimer()
 end
 
 function Form_Hall:ClearUI3DModel()
@@ -189,6 +191,16 @@ function Form_Hall:CheckAndRqsHeroAct()
         ShopManager:ReqGetShopData(shop_id)
       end
     end
+  end
+end
+
+function Form_Hall:CheckAndShowTimelinePushface()
+  local vActList = ActivityManager:GetActivityListByType(MTTD.ActivityType_TimelineJump)
+  if not vActList or #vActList == 0 then
+    return
+  end
+  for index, value in ipairs(vActList) do
+    value:OnPushPanel()
   end
 end
 
@@ -964,6 +976,9 @@ function Form_Hall:RefreshMainActivityUI()
   end
   self.m_btnActSign:SetActive(0 < activeCount)
   self.m_imageActSignRed:SetActive(0 < redDotCount)
+  if 0 < activeCount then
+    self:CheckShowActEnterTimer()
+  end
   local scrollCount = #self.m_vScrollActivityList
   while bannerCount < scrollCount do
     table.remove(self.m_vScrollActivityList, scrollCount)
@@ -1592,6 +1607,46 @@ function Form_Hall:ClearEmergencyGiftTimer()
   if self.m_countDownTimer ~= nil then
     TimeService:KillTimer(self.m_countDownTimer)
     self.m_countDownTimer = nil
+  end
+end
+
+function Form_Hall:CheckShowActEnterTimer()
+  self.m_z_txt_ActSign:SetActive(true)
+  self.m_txt_ActSign:SetActive(false)
+  local isShowTimer = false
+  local actList = ActivityManager:GetActivityListByType(MTTD.ActivityType_Sign)
+  local endTime = 0
+  for _, v in pairs(actList) do
+    if v and v:checkCondition() and 0 < v:GetShowHallActTimer() and v:GetShowHallActTimer() > TimeUtil:GetServerTimeS() then
+      isShowTimer = true
+      endTime = v:GetShowHallActTimer()
+    end
+  end
+  if isShowTimer then
+    self.m_z_txt_ActSign:SetActive(false)
+    self.m_txt_ActSign:SetActive(true)
+    local lastTime = endTime - TimeUtil:GetServerTimeS()
+    self.m_txt_ActSign_Text.text = TimeUtil:SecondsToFormatStrDHOrHMS(lastTime)
+    self:ClearActEnterTimer()
+    self.m_actEnterTimer = TimeService:SetTimer(1, -1, function()
+      lastTime = endTime - TimeUtil:GetServerTimeS()
+      if lastTime < 0 then
+        self:ClearActEnterTimer()
+        self.m_z_txt_ActSign:SetActive(true)
+        self.m_txt_ActSign:SetActive(false)
+      end
+      self.m_txt_ActSign_Text.text = TimeUtil:SecondsToFormatStrDHOrHMS(lastTime)
+    end)
+  else
+    self.m_z_txt_ActSign:SetActive(true)
+    self.m_txt_ActSign:SetActive(false)
+  end
+end
+
+function Form_Hall:ClearActEnterTimer()
+  if self.m_actEnterTimer then
+    TimeService:KillTimer(self.m_actEnterTimer)
+    self.m_actEnterTimer = nil
   end
 end
 

@@ -240,6 +240,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_panel_loginSendItem",
     LuaPath = "UI/SubPanel/ActivityLoginSendItemSubPanel"
   },
+  ActivitySignSixPuzzleSubPanel = {
+    PrefabPath = "ui_activity_panel_puzzle",
+    LuaPath = "UI/SubPanel/ActivitySignSixPuzzleSubPanel"
+  },
   EmbraceBonusSubPanel = {
     PrefabPath = "ui_activity_embracebonus",
     LuaPath = "UI/SubPanel/EmbraceBonusSubPanel"

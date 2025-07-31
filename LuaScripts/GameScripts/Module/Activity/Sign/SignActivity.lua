@@ -5,7 +5,8 @@ local SignType = {
   SevenSign = 1,
   FiveSign = 2,
   FourTeenSign = 3,
-  TenSign = 4
+  TenSign = 4,
+  SixPuzzle = 5
 }
 local SignLimitCondition = {
   MainLevel = 1,
@@ -50,7 +51,7 @@ function SignActivity:OnResetStatusData()
 end
 
 function SignActivity:OnPushPanel()
-  if self:checkShowRed() and self:isInActivityShowTime() then
+  if self:checkShowRed() and self:isInActivityShowTime() and self.m_stSdpConfig.iUiType ~= SignType.SixPuzzle then
     self:broadcastEvent("eGameEvent_ActivityDailyLogin", self:getSubPanelName())
   end
 end
@@ -73,7 +74,7 @@ function SignActivity:checkCondition(bIsShow)
   if not (self.m_stStatusData and self.m_stStatusData.iActivityId) or self.m_stStatusData.iActivityId == 0 then
     return false
   end
-  if bIsShow and self:GetSignNum() >= #self:GetSignInfoList() then
+  if bIsShow and self:GetSignNum() >= #self:GetSignInfoList() and self.m_stSdpConfig.iUiType ~= SignType.SixPuzzle then
     return false
   end
   if not self:CheckOtherLevelCondition() then
@@ -171,6 +172,7 @@ function SignActivity:RequestSign(iIndex, NoPopWindow)
       self:broadcastEvent("eGameEvent_Activity_Sign_UpdateSign", {
         iActivityID = self:getID(),
         vReward = vReward,
+        index = sc.iIndex,
         vCharacter = vCharacter
       })
     end
@@ -184,6 +186,8 @@ function SignActivity:getSubPanelName()
     return ActivityManager.ActivitySubPanelName.ActivitySPName_Sign14
   elseif self.m_stSdpConfig.iUiType == SignType.TenSign then
     return ActivityManager.ActivitySubPanelName.ActivitySPName_Sign10
+  elseif self.m_stSdpConfig.iUiType == SignType.SixPuzzle then
+    return ActivityManager.ActivitySubPanelName.ActivitySPName_SignSixPuzzle
   end
 end
 
@@ -206,6 +210,21 @@ function SignActivity:GetUIType()
     return 1
   end
   return self.m_stSdpConfig.iUiType or 1
+end
+
+function SignActivity:GetShowHallActTimer()
+  if self.m_stSdpConfig.iUiType == SignType.SixPuzzle then
+    return self:GetNotifyTime()
+  end
+  return 0
+end
+
+function SignActivity:GetSkinId()
+  return self.m_stSdpConfig.iAvatarId
+end
+
+function SignActivity:GetNotifyTime()
+  return self.m_stSdpConfig.iNotifyTime or 0
 end
 
 function SignActivity:GetSkinId()

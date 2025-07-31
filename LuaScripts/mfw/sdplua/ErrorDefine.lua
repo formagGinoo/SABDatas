@@ -861,3 +861,5 @@ Error_Activity_SignInGift_AwardEmpty = 6633
 Error_Activity_SignInGift_BuyTimeLimit = 6634
 Error_Act_BattlePass_AlreadyBuy = 6641
 Error_Act_BattlePass_None = 6642
+Error_Activity_TimelineJump_Error = 6671
+Error_Activity_TimelineJump_Rewarded = 6672

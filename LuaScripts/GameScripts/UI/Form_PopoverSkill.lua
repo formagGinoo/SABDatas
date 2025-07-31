@@ -2,6 +2,7 @@ local Form_PopoverSkill = class("Form_PopoverSkill", require("UI/UIFrames/Form_P
 local InGameSkillInstance = ConfigManager:GetConfigInsByName("Skill")
 local SkillGroupInstance = ConfigManager:GetConfigInsByName("SkillGroup")
 local SkillBuffIns = ConfigManager:GetConfigInsByName("SkillBuff")
+local InitPosTime = 0.06
 
 function Form_PopoverSkill:SetInitParam(param)
 end
@@ -34,20 +35,21 @@ function Form_PopoverSkill:OnActive()
     return
   end
   self:RefreshUI()
-  self:setTimer(0.06, 1, function()
+  self:setTimer(InitPosTime, 1, function()
     if self.m_click_transform then
       self:InitSetPos()
     else
       UILuaHelper.SetLocalPosition(self.m_content_node, 0, 0, 0)
     end
   end)
+  self.m_scrollView_list_scroll_rect = self.m_scrollView_list:GetComponent(T_ScrollRect)
 end
 
 function Form_PopoverSkill:OnInactive()
   self.super.OnInactive(self)
-  if self.m_sequence then
-    self.m_sequence:Kill()
-    self.m_sequence = nil
+  if self.m_waitDescTimer then
+    self.m_waitDescTimer:Kill()
+    self.m_waitDescTimer = nil
   end
 end
 
@@ -56,29 +58,21 @@ function Form_PopoverSkill:RefreshUI()
   if not tempSkillCfg:GetError() then
     UILuaHelper.SetAtlasSprite(self.m_img_icon_skill_Image, tempSkillCfg.m_Skillicon)
     local skillDescription = HeroManager:GetSkillDescriptionBySkillIdAndLv(self.m_skillId, self.m_skillLv)
-    if tempSkillCfg.m_SkillDescriptionType == 1 then
-      self.m_txt_skill_describe:SetActive(false)
-      self.m_scrollView_list:SetActive(true)
-      self.m_txt_desc_Text.text = skillDescription
-    else
-      self.m_txt_skill_describe:SetActive(true)
-      self.m_scrollView_list:SetActive(false)
-      self.m_txt_skill_describe_Text.text = skillDescription
-      local maxSkillLv = HeroManager:GetSkillMaxLevelById(self.m_skillGroupId, self.m_skillId)
-      self.m_txt_skill_lv_num_Text.text = maxSkillLv == 1 and "" or tostring(self.m_skillLv)
-      self.m_img_skill_rectangle:SetActive(maxSkillLv ~= 1)
-    end
+    self.m_txt_skill_describe_Text.text = skillDescription
+    local maxSkillLv = HeroManager:GetSkillMaxLevelById(self.m_skillGroupId, self.m_skillId)
+    self.m_txt_skill_lv_num_Text.text = maxSkillLv == 1 and "" or tostring(self.m_skillLv)
+    self.m_img_skill_rectangle:SetActive(maxSkillLv ~= 1)
     self.m_txt_skill_name_Text.text = tempSkillCfg.m_mName
     self:FreshShowBuffInfo(tempSkillCfg.m_BuffDescID)
-    if self.m_sequence then
-      self.m_sequence:Kill()
-      self.m_sequence = nil
+    UILuaHelper.ForceRebuildLayoutImmediate(self.m_scroll_content)
+    if self.m_waitDescTimer then
+      TimeService:KillTimer(self.m_waitDescTimer)
+      self.m_waitDescTimer = nil
     end
-    self.m_sequence = Tweening.DOTween.Sequence()
-    self.m_sequence:AppendInterval(0.01)
-    self.m_sequence:OnComplete(function()
-      if self and not utils.isNull(self.m_content_node) then
-        UILuaHelper.ForceRebuildLayoutImmediate(self.m_content_node)
+    self.m_waitDescTimer = TimeService:SetTimer(0.01, 1, function()
+      self.m_waitDescTimer = nil
+      if self and not utils.isNull(self.m_scroll_content) then
+        self:CheckSetScrollTypeAndZeroPos()
       end
     end)
   end
@@ -95,6 +89,28 @@ function Form_PopoverSkill:RefreshUI()
   if 0 < cost then
     UILuaHelper.SetActive(self.m_pnl_skillcost, true)
     self.m_txt_skillcost_Text.text = tostring(cost)
+  end
+end
+
+function Form_PopoverSkill:CheckSetScrollTypeAndZeroPos()
+  if utils.isNull(self.m_content_node) then
+    return
+  end
+  local _, scrollContentH = UILuaHelper.GetUISize(self.m_scroll_content)
+  local curListX, _ = UILuaHelper.GetUISize(self.m_scrollView_list)
+  local curListH
+  if scrollContentH > self.m_uiVariables.MaxLimitH then
+    self.m_scrollView_list_scroll_rect.movementType = ScrollRect_MovementType.Elastic
+    curListH = self.m_uiVariables.MaxLimitH
+  else
+    self.m_scrollView_list_scroll_rect.movementType = ScrollRect_MovementType.Clamped
+    curListH = scrollContentH
+  end
+  UILuaHelper.SetSizeWithCurrentAnchors(self.m_scrollView_list, curListX, curListH)
+  local contentX, _, _ = UILuaHelper.GetLocalPosition(self.m_scroll_content)
+  UILuaHelper.SetLocalPosition(self.m_scroll_content, contentX, 0, 0)
+  if self and not utils.isNull(self.m_content_node) then
+    UILuaHelper.ForceRebuildLayoutImmediate(self.m_content_node)
   end
 end
 

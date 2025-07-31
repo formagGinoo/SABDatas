@@ -162,10 +162,10 @@
           "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill01_Shield\"",
           "m_FashionFX": "\"fx_c_silvan_base_new_maxskill01_shield_a1_01\""
         },
-        "\"\"Clear Tomb of the FalleSkilR\"": {
+        "\"Fx_C_Silvan_Base_New_MaxSkill\"": {
           "m_bError": null,
           "m_FashionID": "6013001",
-          "m_InitFX": "\"\"Clear Tomb of the FalleSkilR\"",
+          "m_InitFX": "\"Fx_C_Silvan_Base_New_MaxSkill\"",
           "m_FashionFX": "\"fx_c_silvan_base_new_maxskill_a1_01\""
         },
         "\"Fx_C_Silvan_Base_New_MaxSkill_Attack01\"": {
@@ -476,10 +476,10 @@
           "m_InitFX": "\"FX_C_Aiona_Origin_Attack_Bullet\"",
           "m_FashionFX": "\"fx_c_aiona_origin_attack_bullet_a1_01\""
         },
-        "\"70190Aiona_Origin_Attack_Bullet_trail\"": {
+        "\"FX_C_Aiona_Origin_Attack_Bullet_trail\"": {
           "m_bError": null,
           "m_FashionID": "6029001",
-          "m_InitFX": "\"70190Aiona_Origin_Attack_Bullet_trail\"",
+          "m_InitFX": "\"FX_C_Aiona_Origin_Attack_Bullet_trail\"",
           "m_FashionFX": "\"fx_c_aiona_origin_attack_bullet_trail_a1_01\""
         },
         "\"FX_C_Aiona_Origin_Attack_Hit\"": {
@@ -566,10 +566,10 @@
           "m_InitFX": "\"FX_C_Aiona_Origin_Skill_Floor_Cast01\"",
           "m_FashionFX": "\"fx_c_aiona_origin_skill_floor_cast01_a1_01\""
         },
-        "\"70400Aiona_Origin_Skill_FloorDostort\"": {
+        "\"Fx_C_Aiona_Origin_Skill_FloorDostort\"": {
           "m_bError": null,
           "m_FashionID": "6029001",
-          "m_InitFX": "\"70400Aiona_Origin_Skill_FloorDostort\"",
+          "m_InitFX": "\"Fx_C_Aiona_Origin_Skill_FloorDostort\"",
           "m_FashionFX": "\"fx_c_aiona_origin_skill_floordostort_a1_01\""
         },
         "\"FX_C_Aiona_Origin_transmit01\"": {

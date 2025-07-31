@@ -43,6 +43,24 @@
       "m_mKeyValue": "\"Resets daily at 04:00.\"",
       "m_MultLong": "\"42\""
     },
+    "\"Form_Dialogue_txt_x1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_x1\"",
+      "m_mKeyValue": "\"x1\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Dialogue_txt_x2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_x2\"",
+      "m_mKeyValue": "\"x2\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Dialogue_txt_option\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_option\"",
+      "m_mKeyValue": "\"Reserved String\"",
+      "m_MultLong": "\"37\""
+    },
     "\"Form_AutoFullTips_txt_grey\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_AutoFullTips_txt_grey\"",
@@ -835,10 +853,10 @@
       "m_mKeyValue": "\"7-Day Sign-In\"",
       "m_MultLong": "\"\""
     },
-    "\"Form_Hall_txt_ActSign\"": {
+    "\"Form_Hall_m_z_txt_ActSign\"": {
       "m_bError": null,
-      "m_KeyName": "\"Form_Hall_txt_ActSign\"",
-      "m_mKeyValue": "\"Event\"",
+      "m_KeyName": "\"Form_Hall_m_z_txt_ActSign\"",
+      "m_mKeyValue": "\"\"",
       "m_MultLong": "\"12\""
     },
     "\"Form_Hall_txt_icon03\"": {
@@ -2400,6 +2418,66 @@
       "m_KeyName": "\"ui_activity_panel_loginSendItem_txt_word\"",
       "m_mKeyValue": "\"Global Launch Gift: Create a character and log in to receive <color=#FFD591>[Soothing Embrace] x10</color>\"",
       "m_MultLong": "\"\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress1\"",
+      "m_mKeyValue": "\"1\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress2\"",
+      "m_mKeyValue": "\"2\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress3\"",
+      "m_mKeyValue": "\"3\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress4\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress4\"",
+      "m_mKeyValue": "\"4\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress5\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress5\"",
+      "m_mKeyValue": "\"5\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress6\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress6\"",
+      "m_mKeyValue": "\"6\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"ui_activity_panel_puzzle_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_title\"",
+      "m_mKeyValue": "\"Whispers of Yesterday\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_activity_panel_puzzle_txt_opentime\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_opentime\"",
+      "m_mKeyValue": "\"New Ashes of Time Event Coming 08/07/25\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_activity_panel_puzzle_txt_progress\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_progress\"",
+      "m_mKeyValue": "\"Current Progress\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"ui_activity_panel_puzzle_txt_tips\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity_panel_puzzle_txt_tips\"",
+      "m_mKeyValue": "\"Sign in for 6 days to activate all puzzle fragments and obtain <color=#81BAF5>【Twilight Before The Dawn】</color> Memories!\"",
+      "m_MultLong": "\"64\""
     },
     "\"ui_activity_panel_sevendays_txt_daily_login01\"": {
       "m_bError": null,
@@ -5136,6 +5214,24 @@
       "m_KeyName": "\"ui_activity104_dialoguedetial_txt_have_pass\"",
       "m_mKeyValue": "\"Cleared\"",
       "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity105_PV_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity105_PV_txt_title\"",
+      "m_mKeyValue": "\"Now and Forevermore\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Activity105_PV_txt_title_time\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity105_PV_txt_title_time\"",
+      "m_mKeyValue": "\"New Activity Arrives 08/07/25\"",
+      "m_MultLong": "\"44\""
+    },
+    "\"Form_Activity105_PV_m_z_txt_reward_tip\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity105_PV_m_z_txt_reward_tip\"",
+      "m_mKeyValue": "\"Rewards Available After Viewing\"",
+      "m_MultLong": "\"104\""
     },
     "\"Form_ActivityAnnounceLotterypage_txt_frame_big_title\"": {
       "m_bError": null,
@@ -9642,24 +9738,6 @@
       "m_KeyName": "\"Form_CutinSkip_TextSkip\"",
       "m_mKeyValue": "\"Skip\"",
       "m_MultLong": "\"6\""
-    },
-    "\"Form_Dialogue_txt_x1\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_x1\"",
-      "m_mKeyValue": "\"x1\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_Dialogue_txt_x2\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_x2\"",
-      "m_mKeyValue": "\"x2\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_Dialogue_txt_option\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_option\"",
-      "m_mKeyValue": "\"Reserved String\"",
-      "m_MultLong": "\"37\""
     },
     "\"Form_DialogueReview_txt_back_name\"": {
       "m_bError": null,
@@ -18920,5 +18998,5 @@
       "m_MultLong": "\"7\""
     }
   },
-  "status": "processed_3153_items"
+  "status": "processed_3166_items"
 }

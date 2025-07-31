@@ -24,6 +24,7 @@ ActivityManager.ActivitySubPanelName = {
   ActivitySPName_Sign10 = "ActivitySignTenDaySubPanel",
   ActivitySPName_Sign14 = "ActivityFourteenSignSubPanel",
   ActivitySPName_CommunityEntrance = "ActivityCommunityEntranceSubPanel",
+  ActivitySPName_SignSixPuzzle = "ActivitySignSixPuzzleSubPanel",
   ActivitySPName_RechargeBack = "ActivityRebateSubPanel",
   ActivitySPName_OnePicActivity = "OnePicActivitySubPanel",
   ActivitySPName_LoginSendItem = "ActivityLoginSendItemSubPanel",
@@ -123,6 +124,7 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/VoucherControl/VoucherControlActivity")
   self:LoadActivity("Module/Activity/SignGift/SignGiftActivity")
   self:LoadActivity("Module/Activity/Gacha/Gacha10FreeActivity")
+  self:LoadActivity("Module/Activity/JumpFace/TimelinePushfaceActivity")
 end
 
 function ActivityManager:LoadActivity(sActivityPath)
@@ -1095,6 +1097,28 @@ function ActivityManager:GachaPushFacePanelDownLoadInHall()
     end
   end
   return gachaFacePanelList, vSubResourcesExtra
+end
+
+function ActivityManager:TimelinePushfacePanelDownLoadInHall()
+  local activityTimelinePushfaceList = self:GetActivityListByType(MTTD.ActivityType_TimelineJump)
+  local vPackage = {}
+  local extra = {}
+  for _, act in pairs(activityTimelinePushfaceList) do
+    if act:checkShowRed() then
+      table.insert(vPackage, {
+        sName = act:GetJumpPushFacePanelName(),
+        eType = DownloadManager.ResourcePackageType.UI
+      })
+      local time_line = act:GetClientConfig().sTimelineName
+      if time_line and time_line ~= "" then
+        table.insert(vPackage, {
+          sName = time_line,
+          eType = DownloadManager.ResourcePackageType.Timeline
+        })
+      end
+    end
+  end
+  return vPackage, extra
 end
 
 function ActivityManager:ReportEventLimit(eventName)

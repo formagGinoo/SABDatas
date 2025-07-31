@@ -1,21 +1,6 @@
 {
   "className": "CData_RankTargetReward",
   "data": {
-    "10": {
-      "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
-      "data": {
-        "1967063553": {
-          "m_bError": null,
-          "m_RankID": "10",
-          "m_TargetID": "1967063553",
-          "m_mTargerDesc": "\"\"",
-          "m_Num": "65536",
-          "m_TargetReward": "[]"
-        }
-      }
-    },
     "1002": {
       "_type": "nested_dictionary",
       "_count": 18,
@@ -791,8 +776,8 @@
     },
     "2003": {
       "_type": "nested_dictionary",
-      "_count": 13,
-      "_processed": 13,
+      "_count": 38,
+      "_processed": 38,
       "data": {
         "3000": {
           "m_bError": null,
@@ -897,39 +882,683 @@
           "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 50,000.\"",
           "m_Num": "10",
           "m_TargetReward": "[[30015,1]]"
+        },
+        "54000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "54000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 54,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "58000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "58000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 58,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "62000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "62000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 62,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "66000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "66000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 66,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "70000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "70000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 70,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "74000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "74000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 74,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "78000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "78000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 78,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "82000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "82000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 82,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "86000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "86000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 86,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "90000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "90000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 90,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "94000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "94000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 94,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "98000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "98000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 98,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "102000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "102000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 102,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "106000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "106000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 106,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "110000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "110000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 110,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "114000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "114000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 114,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "118000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "118000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 118,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "122000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "122000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 122,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "126000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "126000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 126,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "130000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "130000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 130,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "134000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "134000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 134,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "138000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "138000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 138,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "142000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "142000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 142,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "146000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "146000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 146,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "150000": {
+          "m_bError": null,
+          "m_RankID": "2003",
+          "m_TargetID": "150000",
+          "m_mTargerDesc": "\"Bloodborn: Reach a Potency Rating of 150,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
         }
       }
     },
-    "512768": {
+    "2004": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 38,
+      "_processed": 38,
       "data": {
-        "14848000": {
+        "3000": {
           "m_bError": null,
-          "m_RankID": "512768",
-          "m_TargetID": "14848000",
-          "m_mTargerDesc": "\"\"",
-          "m_Num": "2560",
-          "m_TargetReward": "[]"
+          "m_RankID": "2004",
+          "m_TargetID": "3000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 3,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "6000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "6000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 6,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "10000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "10000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 10,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "14000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "14000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 14,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "18000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "18000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 18,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "22000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "22000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 22,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "26000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "26000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 26,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "30000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "30000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 30,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "34000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "34000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 34,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "38000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "38000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 38,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "42000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "42000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 42,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "46000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "46000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 46,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "50000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "50000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 50,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "54000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "54000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 54,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "58000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "58000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 58,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "62000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "62000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 62,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "66000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "66000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 66,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "70000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "70000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 70,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "74000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "74000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 74,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "78000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "78000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 78,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "82000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "82000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 82,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "86000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "86000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 86,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "90000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "90000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 90,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "94000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "94000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 94,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "98000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "98000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 98,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "102000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "102000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 102,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "106000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "106000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 106,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "110000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "110000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 110,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "114000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "114000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 114,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "118000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "118000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 118,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "122000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "122000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 122,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "126000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "126000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 126,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "130000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "130000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 130,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "134000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "134000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 134,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "138000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "138000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 138,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "142000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "142000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 142,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "146000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "146000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 146,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "150000": {
+          "m_bError": null,
+          "m_RankID": "2004",
+          "m_TargetID": "150000",
+          "m_mTargerDesc": "\"Kingdom: Reach a Potency Rating of 150,000.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
         }
       }
     },
-    "1967063553": {
+    "3001": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 8,
+      "_processed": 8,
       "data": {
-        "65536": {
+        "3110030": {
           "m_bError": null,
-          "m_RankID": "1967063553",
-          "m_TargetID": "65536",
-          "m_mTargerDesc": "\"\"",
-          "m_Num": "131268608",
-          "m_TargetReward": "[]"
+          "m_RankID": "3001",
+          "m_TargetID": "3110030",
+          "m_mTargerDesc": "\"Progress to Floor 030 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110040": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110040",
+          "m_mTargerDesc": "\"Progress to Floor 040 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110055": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110055",
+          "m_mTargerDesc": "\"Progress to Floor 055 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110070": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110070",
+          "m_mTargerDesc": "\"Progress to Floor 070 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110085": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110085",
+          "m_mTargerDesc": "\"Progress to Floor 085 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110100": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110100",
+          "m_mTargerDesc": "\"Progress to Floor 100 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110125": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110125",
+          "m_mTargerDesc": "\"Progress to Floor 125 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3110150": {
+          "m_bError": null,
+          "m_RankID": "3001",
+          "m_TargetID": "3110150",
+          "m_mTargerDesc": "\"Progress to Floor 150 in Tower of Purification.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        }
+      }
+    },
+    "3002": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3120030": {
+          "m_bError": null,
+          "m_RankID": "3002",
+          "m_TargetID": "3120030",
+          "m_mTargerDesc": "\"Progress to Floor 030 in Tower of Ancestry - Decay.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3120040": {
+          "m_bError": null,
+          "m_RankID": "3002",
+          "m_TargetID": "3120040",
+          "m_mTargerDesc": "\"Progress to Floor 040 in Tower of Ancestry - Decay.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        }
+      }
+    },
+    "3003": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3130030": {
+          "m_bError": null,
+          "m_RankID": "3003",
+          "m_TargetID": "3130030",
+          "m_mTargerDesc": "\"Progress to Floor 030 in Tower of The Church - Original Sin.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3130040": {
+          "m_bError": null,
+          "m_RankID": "3003",
+          "m_TargetID": "3130040",
+          "m_mTargerDesc": "\"Progress to Floor 040 in Tower of The Church - Original Sin.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        }
+      }
+    },
+    "3004": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3140030": {
+          "m_bError": null,
+          "m_RankID": "3004",
+          "m_TargetID": "3140030",
+          "m_mTargerDesc": "\"Progress to Floor 030 in Tower of The Bloodborn - Desire.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3140040": {
+          "m_bError": null,
+          "m_RankID": "3004",
+          "m_TargetID": "3140040",
+          "m_mTargerDesc": "\"Progress to Floor 040 in Tower of The Bloodborn - Desire.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        }
+      }
+    },
+    "3005": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3150030": {
+          "m_bError": null,
+          "m_RankID": "3005",
+          "m_TargetID": "3150030",
+          "m_mTargerDesc": "\"Progress to Floor 030 in Tower of The Kingdom - Deception.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
+        },
+        "3150040": {
+          "m_bError": null,
+          "m_RankID": "3005",
+          "m_TargetID": "3150040",
+          "m_mTargerDesc": "\"Progress to Floor 040 in Tower of The Kingdom - Deception.\"",
+          "m_Num": "10",
+          "m_TargetReward": "[[30015,1]]"
         }
       }
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_10_items"
 }

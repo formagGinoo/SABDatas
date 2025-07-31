@@ -148,6 +148,12 @@ function DownloadManager:GetPackageAdditionalResource(sPackageName, ePackageType
           end
         end
       end
+      local vPackageTimeline = ActivityManager:TimelinePushfacePanelDownLoadInHall()
+      if 0 < #vPackageTimeline then
+        for i, v in ipairs(vPackageTimeline) do
+          vPackageAdditional[#vPackageAdditional + 1] = v
+        end
+      end
       local monthlyCardPanel = MonthlyCardManager:IsCanMonthlyCardPushFace()
       if monthlyCardPanel and monthlyCardPanel ~= "" then
         vPackageAdditional[#vPackageAdditional + 1] = {

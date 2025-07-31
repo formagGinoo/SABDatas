@@ -30878,7 +30878,7 @@
       "m_bError": null,
       "m_SkillID": "30666160",
       "m_SkillScript": "\"30666_Plague_Last_Skill02\"",
-      "m_mName": "\"Sealed Fate\"",
+      "m_mName": "\"Summons 3 Plague Nests at random locations, which last for {7} sec. Plague Nests create Plague Domains around them. If a Plague Nest survives for {7} sec, it explodes, dealing M. DMG to enemies in a circle around it and summoning 3 Plague Hatchlings.\"",
       "m_mSkillDescription": "\"Summons 3 Plague Nests at random locations, which last for {7} sec. Plague Nests create Plague Domains around them. If a Plague Nest survives for {7} sec, it explodes, dealing M. DMG to enemies in a circle around it and summoning 3 Plague Hatchlings.\"",
       "m_BuffDescID": "[30666141]",
       "m_SkillValue": "[3066603,3066604,3066605,3066611,3066612,3066642,3066643,3066644]",
