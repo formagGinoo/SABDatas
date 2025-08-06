@@ -234,9 +234,25 @@ function Form_BattleSetting:InitBattlePanel()
   elseif showCameraShake == 1 then
     self.m_btn_lens_no_ActiveToggle.isOn = true
   end
+  self:RefreshJumpWordOptSet()
 end
 
 function Form_BattleSetting:RefreshBattlePanel()
+  self:RefreshJumpWordOptSet()
+end
+
+function Form_BattleSetting:RefreshJumpWordOptSet()
+  if BattleGlobalManager:IsShowJumpWordOptSet() then
+    self.m_word_group:SetActive(true)
+    local showJumpWordOpt = UILuaHelper.GetPlayerPreference(CS.LogicDefine.ShowJumpWordOptKey, 0)
+    if showJumpWordOpt == 1 then
+      self.m_btn_word_yes_ActiveToggle.isOn = true
+    elseif showJumpWordOpt == 0 then
+      self.m_btn_word_no_ActiveToggle.isOn = true
+    end
+  else
+    self.m_word_group:SetActive(false)
+  end
 end
 
 function Form_BattleSetting:InitSystemPanel()
@@ -363,7 +379,7 @@ function Form_BattleSetting:InitLanguagePanel()
     end
     self:OnSelectLanguageID(vLanguageList[filterIndex].m_ID, filterIndex)
   end, function(item, tabConfig)
-    local itemText = item.transform:Find("common_filter_tab_name"):GetComponent(T_TextMeshProUGUI)
+    local itemText = item.transform:Find("common_filter_tab_name"):GetComponent(T_Text)
     item.transform:Find("common_filter_tab_name").gameObject:SetActive(true)
     local selectBg = item.transform:Find("img_select_bg").gameObject
     item.transform:Find("txt_dis").gameObject:SetActive(false)
@@ -402,7 +418,7 @@ function Form_BattleSetting:InitLanguagePanel()
     local sLabelName = "multilanvo_" .. stLanguageElment.m_SoundType
     local needDownloadSize = DownloadManager:GetTotalBytesByLabel(sLabelName) - DownloadManager:GetDownloadedBytesByLabel(sLabelName)
     tabConfig.needDownloadSize = needDownloadSize
-    local itemText = item.transform:Find("common_filter_tab_name"):GetComponent(T_TextMeshProUGUI)
+    local itemText = item.transform:Find("common_filter_tab_name"):GetComponent(T_Text)
     local selectBg = item.transform:Find("img_select_bg").gameObject
     item.transform:Find("txt_dis").gameObject:SetActive(false)
     item.transform:Find("txt_recommend").gameObject:SetActive(false)
@@ -419,11 +435,11 @@ function Form_BattleSetting:InitLanguagePanel()
         local sizeMB = needDownloadSize / 1024 / 1024
         if 1000 < sizeMB then
           sizeMB = sizeMB / 1024
-          item.transform:Find("txt_contain"):Find("txt_contain2"):GetComponent(T_TextMeshProUGUI).text = string.format(" %.02f%s", sizeMB, DownloadManager:GetGBStr())
+          item.transform:Find("txt_contain"):Find("txt_contain2"):GetComponent(T_Text).text = string.format(" %.02f%s", sizeMB, DownloadManager:GetGBStr())
         else
-          item.transform:Find("txt_contain"):Find("txt_contain2"):GetComponent(T_TextMeshProUGUI).text = string.format(" %.02f%s", sizeMB, DownloadManager:GetMBStr())
+          item.transform:Find("txt_contain"):Find("txt_contain2"):GetComponent(T_Text).text = string.format(" %.02f%s", sizeMB, DownloadManager:GetMBStr())
         end
-        item.transform:Find("txt_contain"):Find("txt_contain1"):GetComponent(T_TextMeshProUGUI).text = tabConfig.sTitle
+        item.transform:Find("txt_contain"):Find("txt_contain1"):GetComponent(T_Text).text = tabConfig.sTitle
         UILuaHelper.ForceRebuildLayoutImmediate(item.transform:Find("txt_contain").gameObject)
       else
         item.transform:Find("txt_contain").gameObject:SetActive(false)
@@ -569,6 +585,33 @@ end
 function Form_BattleSetting:OnBtnautodlClicked()
   DownloadManager:SwitchDownloadInMobile()
   self.m_isChanged = true
+end
+
+function Form_BattleSetting:OnBtnwordyesClicked()
+  if not self.m_btn_word_yes_ActiveToggle.isOn then
+    utils.popUpDirectionsUI({
+      tipsID = 1234,
+      func1 = function()
+        self:ChangeShowJumpWordOptState(1)
+      end,
+      func2 = function()
+        self.m_btn_word_no_ActiveToggle.isOn = true
+      end
+    })
+  end
+end
+
+function Form_BattleSetting:OnBtnwordnoClicked()
+  if not self.m_btn_word_no_ActiveToggle.isOn then
+    self:ChangeShowJumpWordOptState(0)
+  end
+end
+
+function Form_BattleSetting:ChangeShowJumpWordOptState(value)
+  local curShowJumpWordOptValue = UILuaHelper.GetPlayerPreference(CS.LogicDefine.ShowJumpWordOptKey, 0)
+  if curShowJumpWordOptValue ~= value then
+    UILuaHelper.SetPlayerPreference(CS.LogicDefine.ShowJumpWordOptKey, value)
+  end
 end
 
 function Form_BattleSetting:InitItemView(rootGo, iType)

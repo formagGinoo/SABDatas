@@ -28,7 +28,9 @@ function GMManager:OnInitNetwork()
   self:GMSetEasyAccount()
   self:GMSetUIDestroyMode()
   self:GMEnterHitMole()
+  self:GMEnterHitStory()
   self:GmGuaranteesTips()
+  self:OnPassRogueStage()
   self.m_isAbleDebugger = UILuaHelper.IsAbleDebugger()
   self.m_isEditor = CS.UnityEngine.Application.isEditor
   RPCS():Listen_Push_GM_DailyRefresh(handler(self, self.OnPushGMDailyRefresh), "GMManager")
@@ -77,17 +79,16 @@ function GMManager:OnUpdate(dt)
     end
     if self.m_keyBoard_time > 0.2 then
       if U3DUtil and U3DUtil:Input_GetKeyDown("`") then
-        StackTop:Push(UIDefines.ID_FORM_GMNEW)
+        CS.MUF.Resource.ResourceManager.DumpRes("Manual" .. os.time())
       end
       if U3DUtil and U3DUtil:Input_GetKeyUp("`") then
-        StackTop:RemoveUIFromStack(UIDefines.ID_FORM_GMNEW)
         self.m_keyBoard_time = 0
       end
       if U3DUtil and U3DUtil:Input_GetKeyDown("+") then
         UILuaHelper.ShowSRDebugPanel()
         self.m_keyBoard_time = 0
       end
-      if U3DUtil and U3DUtil:Input_GetKeyDown("F1") then
+      if U3DUtil and U3DUtil:Input_GetKeyDown("f1") then
         if self.m_f1Trigger_time > 0 then
           CS.Util.ReloadTables(ConfigManager.m_mConfigInstanceCache)
           StackTop:Push(UIDefines.ID_FORM_COMMON_TOAST, "表格已重载")
@@ -186,6 +187,28 @@ function GMManager:CheckUnlockAllSystem()
   end, "Debug", 0)
 end
 
+function GMManager:OnPassRogueStage()
+  SROptionsModify.AddSROptionMethod("塔楼通关Gm", function()
+    local curZoneID = UserDataManager:GetZoneID()
+    local curAccountID = UserDataManager:GetAccountID()
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass " .. curAccountID .. " " .. 1001 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass " .. curAccountID .. " " .. 1002 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass " .. curAccountID .. " " .. 1003 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass " .. curAccountID .. " " .. 2001 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass " .. curAccountID .. " " .. 2002 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 2003 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 3001 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 3002 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 3003 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 4001 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 4002 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 4003 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 5001 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 5002 .. " " .. 1)
+    Util.RequestGM(curZoneID, "set_rogue_stage_pass  " .. curAccountID .. " " .. 5003 .. " " .. 1)
+  end, "Debug", 0)
+end
+
 function GMManager:OnUnlockAllSystemBack()
   local curZoneID = UserDataManager:GetZoneID()
   local curAccountID = UserDataManager:GetAccountID()
@@ -222,6 +245,12 @@ function GMManager:GmGuaranteesTips()
         CS.ApplicationManager.Instance:RestartGame()
       end
     })
+  end, "Debug", 0)
+end
+
+function GMManager:GMEnterHitStory()
+  SROptionsModify.AddSROptionMethod("转时钟", function()
+    StackFlow:Push(UIDefines.ID_FORM_ACTIVITY105PLOTCLOCK)
   end, "Debug", 0)
 end
 

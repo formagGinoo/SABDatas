@@ -40,7 +40,8 @@ function Form_ShopConfirmPop:RefreshUI()
   local goodCfg = ShopManager:GetShopGoodsConfig(self.m_goodsInfo.iGroupId, self.m_goodsInfo.iGoodsId)
   if goodCfg and not goodCfg:GetError() then
     local boughtNum = ShopManager:GetShopGoodsStockBought(self.m_shopId, self.m_goodsInfo.iGroupId, self.m_goodsInfo.iGoodsId)
-    self.m_stockBoughtMaxNum = goodCfg.m_ItemQuantity - boughtNum
+    local limitMaxNum = ShopManager:GetCurInStockNum(self.m_shopId, self.m_goodsInfo.iGroupId, self.m_goodsInfo.iGoodsId)
+    self.m_stockBoughtMaxNum = limitMaxNum - boughtNum
     self.m_widgetNumStepper:SetNumShowMax(false)
     self.m_widgetNumStepper:SetNumMax(self.m_stockBoughtMaxNum)
     self.m_widgetNumStepper:SetNumCur(1)

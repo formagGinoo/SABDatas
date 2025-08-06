@@ -40,6 +40,7 @@ function Form_Dialogue:AfterInit()
   end
   self.expressionAnimation = self.m_imagePortrait:GetComponent(typeof(CS.CinExpressionAnimation))
   self.expressionAnimation.SpriteLoader = CS.RuntimeSpriteLoader.Instance
+  self.m_panel_end:SetActive(false)
   self:SwitchMode(0)
   self:RefreshSpeedUp()
   self:SetDisableSpeedUp(true)
@@ -84,6 +85,10 @@ function Form_Dialogue:CloseForm()
   self.m_btnAuto:SetActive(false)
   self.m_btnManual:SetActive(false)
   self.m_pnl_btn:SetActive(true)
+  self.expressionAnimation:ReleaseResource()
+  self.m_imagePortrait_Image.sprite = nil
+  self.m_imageFace_Image.sprite = nil
+  self.m_imageMouth_Image.sprite = nil
 end
 
 function Form_Dialogue:OnTimelineEnd()
@@ -198,6 +203,7 @@ function Form_Dialogue:SwitchMode(mode)
     return
   end
   self.mode = mode
+  self.m_panel_end:SetActive(false)
   if mode == 1 then
     self.m_pnl:SetActive(true)
     self.m_pnl_options:SetActive(false)
@@ -290,6 +296,14 @@ function Form_Dialogue:FillDialogueContent(tCineVoiceExpressionInfo, isLast)
   local sName = CS.MultiLanguageManager.Instance:GetPlotText(tCineVoiceExpressionInfo.m_RoleName)
   local dialogueContent = CS.MultiLanguageManager.Instance:GetPlotText(tCineVoiceExpressionInfo.m_DialogueContent)
   self.m_iDialogueStyle = tCineVoiceExpressionInfo.m_DialogueStyle
+  if self.m_iDialogueStyle == 0 then
+    self.m_panel_end:SetActive(true)
+    self.m_pnl:SetActive(false)
+    self.m_txt_title_Text.text = dialogueContent
+    return
+  end
+  self.m_panel_end:SetActive(false)
+  self.m_pnl:SetActive(true)
   local pnlName = "m_panelStyle" .. self.m_iDialogueStyle
   for k, v in pairs(self.subPnls) do
     v:SetActive(k == pnlName)
@@ -313,7 +327,7 @@ function Form_Dialogue:FillDialogueContent(tCineVoiceExpressionInfo, isLast)
     CS.UI.UILuaHelper.StartPlaySFX(tCineVoiceExpressionInfo.m_Voice, nil, handler(self, self.OnPlaySFXStart), handler(self, self.OnPlaySFXFinish))
   end
   self:SetExpression(tCineVoiceExpressionInfo)
-  if string.isnullorempty(sName) then
+  if string.isnullorempty(sName) or ConfigManager:CheckConfigFieldStrIsEmpty(sName) then
     self.m_imgTextNameBg:SetActive(false)
   else
     self.m_imgTextNameBg:SetActive(true)

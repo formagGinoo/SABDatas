@@ -759,7 +759,39 @@ function TimeUtil:TimeTableToFormatCNStr3(timeTb)
   local sec_str = self:GetCommonCountDownSecondStr()
   if timeTb.day > 0 then
     return string.gsubNumberReplace(day_str, timeTb.day) .. string.gsubNumberReplace(hour_str, sHour)
-  elseif timeTb.day == 0 and timeTb.hour > 1 then
+  elseif timeTb.day == 0 and timeTb.hour >= 1 then
+    return string.gsubNumberReplace(hour_str, sHour) .. string.gsubNumberReplace(min_str, sMin)
+  else
+    return string.gsubNumberReplace(min_str, sMin) .. string.gsubNumberReplace(sec_str, sSec)
+  end
+end
+
+function TimeUtil:SecondsToFormatCNStr4(s)
+  local timeTb = self:SecondsToFourUnit(s)
+  return self:TimeTableToFormatCNStr4(timeTb)
+end
+
+function TimeUtil:TimeTableToFormatCNStr4(timeTb)
+  local sHour
+  if timeTb.hour < 10 then
+    sHour = "0" .. timeTb.hour
+  else
+    sHour = timeTb.hour
+  end
+  local sMin
+  if 10 > timeTb.min then
+    sMin = "0" .. timeTb.min
+  else
+    sMin = timeTb.min
+  end
+  local sSec = string.format("%02d", math.floor(timeTb.sec))
+  local day_str = self:GetCommonCountDownDayStr()
+  local hour_str = self:GetCommonCountDownHourStr2()
+  local min_str = self:GetCommonCountDownMinuteStr2()
+  local sec_str = self:GetCommonCountDownSecondStr()
+  if timeTb.day > 0 then
+    return string.gsubNumberReplace(day_str, timeTb.day) .. string.gsubNumberReplace(hour_str, sHour)
+  elseif timeTb.day == 0 and timeTb.hour >= 1 then
     return string.gsubNumberReplace(hour_str, sHour) .. string.gsubNumberReplace(min_str, sMin)
   else
     return string.gsubNumberReplace(min_str, sMin) .. string.gsubNumberReplace(sec_str, sSec)
@@ -828,6 +860,20 @@ function TimeUtil:GetCommonCountDownSecondStr()
     self.m_sCommonCountDownSecondStr = CS.ConfFact.LangFormat4DataInit("CommonCountDownSecond")
   end
   return self.m_sCommonCountDownSecondStr
+end
+
+function TimeUtil:GetCommonCountDownHourStr2()
+  if self.m_sCommonCountDownHourStr2 == nil then
+    self.m_sCommonCountDownHourStr2 = CS.ConfFact.LangFormat4DataInit("CommonCountDownHourShort")
+  end
+  return self.m_sCommonCountDownHourStr2
+end
+
+function TimeUtil:GetCommonCountDownMinuteStr2()
+  if self.m_sCommonCountDownMinuteStr2 == nil then
+    self.m_sCommonCountDownMinuteStr2 = CS.ConfFact.LangFormat4DataInit("CommonCountDownMinuteShort")
+  end
+  return self.m_sCommonCountDownMinuteStr2
 end
 
 return TimeUtil

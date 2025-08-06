@@ -15,14 +15,14 @@ function QSDKManager:OnUpdate(dt)
 end
 
 function QSDKManager:RegisterEvent()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return
   end
   CS.QSDKUtils.Instance:RegisterEvent(handler(self, self.OnSwitchAccountCB), handler(self, self.OnLogoutCB))
 end
 
 function QSDKManager:Initialize(OnInitSuccessCB, OnInitFailCB)
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient = QSdkWindowsClient.new()
     self.m_qSdkWindowsClient:Initialize(OnInitSuccessCB)
   else
@@ -31,7 +31,7 @@ function QSDKManager:Initialize(OnInitSuccessCB, OnInitFailCB)
 end
 
 function QSDKManager:Login(OnLoginSuccessCB, OnLoginFailCB)
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient:Login(OnLoginSuccessCB, OnLoginFailCB)
   else
     CS.QSDKUtils.Instance:Login(function(userData)
@@ -40,6 +40,18 @@ function QSDKManager:Login(OnLoginSuccessCB, OnLoginFailCB)
         OnLoginSuccessCB(userData)
       end
     end, OnLoginFailCB)
+  end
+end
+
+function QSDKManager:LoginWithPhone(phoneNumber, verifyCode, OnLoginSuccessCB, OnLoginFailCB)
+  if ChannelManager:IsQSDKWindowsChannel() then
+    self.m_qSdkWindowsClient:LoginWithPhone(phoneNumber, verifyCode, OnLoginSuccessCB, OnLoginFailCB)
+  end
+end
+
+function QSDKManager:GetPhoneVerifyCode(phoneNumber, OnLoginSuccessCB, OnLoginFailCB)
+  if ChannelManager:IsQSDKWindowsChannel() then
+    self.m_qSdkWindowsClient:GetPhoneVerifyCode(phoneNumber, OnLoginSuccessCB, OnLoginFailCB)
   end
 end
 
@@ -108,7 +120,7 @@ function QSDKManager:OnLogoutCB()
 end
 
 function QSDKManager:GetOaid()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return ""
   else
     return CS.QSDKUtils.Instance:GetOaid()
@@ -143,7 +155,7 @@ function QSDKManager:CreateRoleBaseInfo()
 end
 
 function QSDKManager:CreateRole()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient:CreateRole(QSDKManager:CreateRoleBaseInfo())
   else
     CS.QSDKUtils.Instance:CreateRole(QSDKManager:CreateRoleBaseInfo())
@@ -151,7 +163,7 @@ function QSDKManager:CreateRole()
 end
 
 function QSDKManager:EnterGame()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient:EnterGame(QSDKManager:CreateRoleBaseInfo())
   else
     CS.QSDKUtils.Instance:EnterGame(QSDKManager:CreateRoleBaseInfo())
@@ -159,7 +171,7 @@ function QSDKManager:EnterGame()
 end
 
 function QSDKManager:UpdateRole()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient:UpdateRole(QSDKManager:CreateRoleBaseInfo())
   else
     CS.QSDKUtils.Instance:UpdateRole(QSDKManager:CreateRoleBaseInfo())
@@ -177,7 +189,11 @@ function QSDKManager:Pay(productID, productSubID, exParam, price, OnPayCB)
   else
     orderInfo.goodsName = exParam.productName
   end
-  orderInfo.goodsDesc = exParam.productDesc or ""
+  if exParam.productDesc == nil or exParam.productDesc == "" then
+    orderInfo.goodsDesc = orderInfo.goodsName
+  else
+    orderInfo.goodsDesc = exParam.productDesc
+  end
   orderInfo.quantifier = "个"
   local vCreateRoleBaseInfo = QSDKManager:CreateRoleBaseInfo()
   local vExtrasParams = {}
@@ -198,7 +214,7 @@ function QSDKManager:Pay(productID, productSubID, exParam, price, OnPayCB)
   orderInfo.price = price
   orderInfo.callbackUrl = ""
   orderInfo.cpOrderID = exParam.cpOrderID
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return self.m_qSdkWindowsClient:Pay(orderInfo, vCreateRoleBaseInfo, OnPayCB)
   else
     return CS.QSDKUtils.Instance:Pay(orderInfo, vCreateRoleBaseInfo, OnPayCB)
@@ -206,7 +222,7 @@ function QSDKManager:Pay(productID, productSubID, exParam, price, OnPayCB)
 end
 
 function QSDKManager:OnWebVeiwCloseCb()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     self.m_qSdkWindowsClient:CloseWebView()
   else
     self:broadcastEvent("eGameEvent_Colse_UniWebView")
@@ -214,12 +230,18 @@ function QSDKManager:OnWebVeiwCloseCb()
 end
 
 function QSDKManager:SetMiscData(data)
+  if data and data.quick_pc_logout_time and tonumber(data.quick_pc_logout_time) > 0 then
+    self.m_logoutTime = tonumber(data.quick_pc_logout_time)
+  end
 end
 
 function QSDKManager:CheckAntiAddiction()
   if self.m_logoutTime ~= nil and TimeUtil:GetServerTimeS() >= self.m_logoutTime then
     utils.CheckAndPushCommonTips({
-      tipsID = 1125,
+      title = "",
+      content = "根据国家新闻出版署《关于进一步严格管理 切实防止未成年人沉迷网络游戏的通知》规定，未成年玩家仅可在周五、周六、周日及法定节假日，每日20 时至 21 时期间登录游戏，其他时间无法登录游戏。",
+      funcText1 = "确定",
+      btnNum = 1,
       bLockBack = true,
       func1 = function()
         CS.ApplicationManager.Instance:RestartGame()
@@ -249,23 +271,29 @@ function QSDKManager:IsSandBox()
 end
 
 function QSDKManager:IsFunctionSupport(funcId)
-  if ChannelManager:IsWindows() then
-    return false
+  if ChannelManager:IsQSDKWindowsChannel() then
+    if funcId == 209 then
+      return true
+    else
+      return false
+    end
   else
     return CS.QSDKUtils.Instance:IsFunctionSupport(funcId)
   end
 end
 
 function QSDKManager:CallFunction(successCB, failCB, funcId)
-  if ChannelManager:IsWindows() then
-    return false
+  if ChannelManager:IsQSDKWindowsChannel() then
+    if funcId == 209 then
+      self.m_qSdkWindowsClient:ShowUserCenter()
+    end
   else
     return CS.QSDKUtils.Instance:CallFunction(successCB, failCB, funcId)
   end
 end
 
 function QSDKManager:GetChannelType()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return self.m_qSdkWindowsClient:GetChannelType()
   else
     return tostring(CS.QSDKUtils.Instance:GetChannelType())
@@ -273,7 +301,7 @@ function QSDKManager:GetChannelType()
 end
 
 function QSDKManager:GetParentChannelType()
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return self.m_qSdkWindowsClient:GetParentChannelType()
   else
     return CS.QSDKUtils.Instance:GetParentChannelType()
@@ -281,7 +309,7 @@ function QSDKManager:GetParentChannelType()
 end
 
 function QSDKManager:GetSubChannelCode()
-  if not ChannelManager:IsWindows() and self:IsFunctionSupport(0) then
+  if not ChannelManager:IsQSDKWindowsChannel() and self:IsFunctionSupport(0) then
     return self:CallFunction(nil, nil, 0)
   end
   return ""
@@ -304,7 +332,7 @@ function QSDKManager:GetPackageChannel(sChannel)
 end
 
 function QSDKManager:ReportReYunEvent(eventName, params)
-  if ChannelManager:IsWindows() then
+  if ChannelManager:IsQSDKWindowsChannel() then
     return
   end
   local csharpDict

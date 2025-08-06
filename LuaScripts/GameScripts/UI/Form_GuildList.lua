@@ -165,6 +165,11 @@ function Form_GuildList:OnBtnrefreshClicked()
 end
 
 function Form_GuildList:OnBtncreateClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_GUILDCREATE)
 end
 
@@ -173,6 +178,7 @@ function Form_GuildList:OnBtninvitationsClicked()
   if inviteData then
     utils.CheckAndPushCommonTips({
       tipsID = 1504,
+      bUseSystemWord = true,
       fContentCB = function(content)
         return string.gsubnumberreplace(content, inviteData.stInviteUser.sRoleName, inviteData.stBriefInfo.sName, inviteData.stBriefInfo.iAllianceId)
       end,

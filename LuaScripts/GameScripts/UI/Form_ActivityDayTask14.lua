@@ -74,7 +74,7 @@ function Form_ActivityDayTask14:OnActive()
   self.m_iHandlerIDTakeQuestReward = self:addEventListener("eGameEvent_Activity_CommonQuest_TakeQuestReward", handler(self, self.OnEventTakeQuestReward))
   self.m_iHandlerIDTakeDailyReward = self:addEventListener("eGameEvent_Activity_CommonQuest_TakeDailyReward", handler(self, self.OnEventTakeDailyReward))
   self.m_iHandlerIDTakeFinalReward = self:addEventListener("eGameEvent_Activity_CommonQuest_TakeFinalReward", handler(self, self.OnEventTakeFinalReward))
-  self.m_iHandlerIDReload = self:addEventListener("eGameEvent_Activity_Reload", handler(self, self.OnEventActivityReload))
+  self.m_iHandlerIDReload = self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnEventActivityReload))
 end
 
 function Form_ActivityDayTask14:OnInactive()

@@ -166,12 +166,12 @@ function Form_PersonalRaidRankList:UpdateRankScrollViewCell(index, cell_object, 
   local data = RankManager:GetOwnerRankDataListBySystemId(RankManager.RankType.PersonalRaid)
   local showRank = PersonalRaidManager:GetRankNameByRankAndTotal(cell_data.iRank, data.iRankSize)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_rank2", showRank)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_name2", cell_data.stRoleSimple.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_name2", cell_data.stRoleSimple.sName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_damage", cell_data.iScore)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_power2", cell_data.stRoleSimple.mSimpleData[MTTDProto.CmdSimpleDataType_TopFiveHeroPower] or 0)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_guild_name", cell_data.stRoleSimple.mSimpleData[MTTDProto.CmdSimpleDataType_TopFiveHeroPower] or 0)
   local guildName = cell_data.stRoleSimple.sAlliance ~= "" and cell_data.stRoleSimple.sAlliance or ConfigManager:GetCommonTextById(20111) or ""
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_guild_name2", guildName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_guild_name2", guildName)
   local c_circle_headTrans = transform:Find("m_img_rank_item2/m_circle_head2")
   if c_circle_headTrans then
     local headObj = c_circle_headTrans.gameObject

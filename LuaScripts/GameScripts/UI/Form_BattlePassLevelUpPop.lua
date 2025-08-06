@@ -72,8 +72,11 @@ function Form_BattlePassLevelUpPop:SetTargetLevel(toLevel)
   self.m_diamond_num_Text.text = self.m_needDiamond
   if ItemManager:GetItemNum(MTTDProto.SpecialItem_ShowDiamond) < self.m_needDiamond then
     self.m_diamond_num_Text.color = Color.red
+    self.m_diamond_num2_Text.text = self.m_needDiamond
+    UILuaHelper.SetActive(self.m_btn_grey, true)
   else
     self.m_diamond_num_Text.color = self.m_oldColor
+    UILuaHelper.SetActive(self.m_btn_grey, false)
   end
   self:FreshLevelInfoShow()
   self:FreshItemRewardData()
@@ -200,6 +203,18 @@ function Form_BattlePassLevelUpPop:OnBtnconfirmClicked()
     StackTop:Push(UIDefines.ID_FORM_COMMON_TOAST, 20100)
     self:CloseForm()
   end)
+end
+
+function Form_BattlePassLevelUpPop:OnBtngreyClicked()
+  if ItemManager:GetItemNum(MTTDProto.SpecialItem_ShowDiamond) < self.m_needDiamond then
+    utils.CheckAndPushCommonTips({
+      tipsID = 1750,
+      func1 = function()
+        QuickOpenFuncUtil:OpenFunc(GlobalConfig.RECHARGE_JUMP)
+      end
+    })
+    return
+  end
 end
 
 function Form_BattlePassLevelUpPop:OnNumChangeCB()

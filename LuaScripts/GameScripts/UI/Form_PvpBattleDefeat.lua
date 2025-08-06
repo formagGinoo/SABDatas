@@ -85,6 +85,10 @@ function Form_PvpBattleDefeat:OnBtnBgCloseClicked()
   BattleFlowManager:ExitBattle()
 end
 
+function Form_PvpBattleDefeat:OnBtnDataClicked()
+  StackFlow:Push(UIDefines.ID_FORM_BATTLECHARACTERDATA)
+end
+
 local fullscreen = true
 ActiveLuaUI("Form_PvpBattleDefeat", Form_PvpBattleDefeat)
 return Form_PvpBattleDefeat

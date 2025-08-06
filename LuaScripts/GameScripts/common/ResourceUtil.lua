@@ -179,7 +179,7 @@ function ResourceUtil:GetProcessRewardData(data, customData)
       log.error("ResourceUtil GetProcessRewardData PlayerHead_Element is error id ==" .. tostring(data_id))
       return
     end
-    item_data.name = cfg.mItemName
+    item_data.name = cfg.m_mItemName
     item_data.icon_name = cfg.m_ItemIcon
     item_data.description = cfg.m_mHeadDesc
     item_data.quality = cfg.m_ItemRarity
@@ -290,7 +290,7 @@ function ResourceUtil:CreatIconById(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_Equip_Min and id <= MTTDProto.ItemIdSeg_Equip_Max then
     self:CreateEquipIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_Head_Min and id <= MTTDProto.ItemIdSeg_Head_Max then
-    self:CreateHeroHeadIcon(imageItem, id)
+    self:CreateHeroHeadIconReal(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_Legacy_Min and id <= MTTDProto.ItemIdSeg_Legacy_Max then
     self:CreateLegacyIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_HeadFrame_Min and id <= MTTDProto.ItemIdSeg_HeadFrame_Max then
@@ -474,6 +474,19 @@ function ResourceUtil:CreateHeroHeadIcon(imageItem, heroId, star)
     return
   end
   local szIcon = InGameCharacterIns.m_ItemIcon
+  CS.UI.UILuaHelper.SetAtlasSprite(imageItem, szIcon, nil, nil, true)
+end
+
+function ResourceUtil:CreateHeroHeadIconReal(imageItem, headId)
+  if not headId then
+    return
+  end
+  local playHeadIns = ConfigManager:GetConfigInsByName("PlayerHead")
+  local playerHeadCfg = playHeadIns:GetValue_ByHeadID(headId)
+  if playerHeadCfg:GetError() then
+    return
+  end
+  local szIcon = playerHeadCfg.m_ItemIcon
   CS.UI.UILuaHelper.SetAtlasSprite(imageItem, szIcon, nil, nil, true)
 end
 

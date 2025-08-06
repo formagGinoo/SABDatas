@@ -11,11 +11,13 @@ function UIHeroActTaskItem:OnInit()
       commonItem = self:createCommonItem(cloneObj)
     }
   end
+  self.sAniIn = "Lamiri_Task_scrollview_in"
+  self.sAniOut = "Lamiri_Task_scrollview_to"
 end
 
 function UIHeroActTaskItem:OnFreshData()
   if self.needPlayAni then
-    UILuaHelper.PlayAnimationByName(self.m_itemRootObj, "Lamiri_Task_scrollview_in")
+    UILuaHelper.PlayAnimationByName(self.m_itemRootObj, self.sAniIn)
   end
   self.needPlayAni = true
   self:SetTaskInfo(self.m_itemData)
@@ -74,7 +76,7 @@ function UIHeroActTaskItem:OnBtngoClicked()
 end
 
 function UIHeroActTaskItem:OnBtnreceiveClicked()
-  UILuaHelper.PlayAnimationByName(self.m_itemRootObj, "Lamiri_Task_scrollview_to")
+  UILuaHelper.PlayAnimationByName(self.m_itemRootObj, self.sAniOut)
   if self.timer then
     TimeService:KillTimer(self.timer)
     self.timer = nil

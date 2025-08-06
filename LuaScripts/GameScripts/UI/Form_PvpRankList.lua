@@ -102,11 +102,11 @@ function Form_PvpRankList:UpdateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_icon_rank3", cell_data.iRank == 3)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_icon_rank4", cell_data.iRank > 3)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_rank", cell_data.iRank)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_name", stRole.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_name", stRole.sName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_lv", stRole.iLevel)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_achievement", cell_data.iScore)
   local temp = stRole.sAlliance ~= "" and stRole.sAlliance or ConfigManager:GetCommonTextById(20111) or ""
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_guild_name", temp)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_guild_name", temp)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_power", stRole.mSimpleData[MTTDProto.CmdSimpleDataType_OriginalPvpDefend] or 0)
   local color = cell_data.iRank <= 3 and TOP_COLOR or NORMAL_COLOR
   LuaBehaviourUtil.setTextMeshProColor(luaBehaviour, "m_txt_rank", color)

@@ -8,6 +8,8 @@ function GameScene_LevelMap:OnEnterScene(iSceneIDPrev)
   if vRootGO.Length > 0 then
     local tempGoRoot = vRootGO[0]
     self.m_cameraLevelMap = tempGoRoot.transform:Find("Camera/MainStoryCamera"):GetComponent(T_Camera)
+    self.m_chapterRootTrans = tempGoRoot.transform:Find("LevelRoot").transform
+    self.m_poolRootTrans = tempGoRoot.transform:Find("GameObjectPoolRoot").transform
   end
   if self.m_cameraLevelMap then
     UILuaHelper.InsertCameraToUIRootStack(self.m_cameraLevelMap, 0)
@@ -18,6 +20,43 @@ function GameScene_LevelMap:OnLeaveScene(iSceneIDNext)
   self.super.OnLeaveScene(self, iSceneIDNext)
   if self.m_cameraLevelMap then
     UILuaHelper.RemoveCameraFromUIRootStack(self.m_cameraLevelMap)
+  end
+  if CS.GameQualityManager.DestroyLevelMapAsset then
+    if self.m_chapterRootTrans then
+      local childNum = self.m_chapterRootTrans.childCount
+      for i = 1, childNum do
+        local chapterNode = self.m_chapterRootTrans:GetChild(i - 1)
+        if chapterNode then
+          local chapterNodeStr = chapterNode.name
+          local allChildRefComArray = chapterNode:GetComponentsInChildren(typeof(CS.mufplugin.Common.Extension.SpriteRefHolder), true)
+          if allChildRefComArray and allChildRefComArray.Length then
+            local refComNum = allChildRefComArray.Length
+            for i = 1, refComNum do
+              local tempRefCom = allChildRefComArray[i - 1]
+              if tempRefCom and tempRefCom.SpriteName then
+                CS.MUF.Resource.ResourceManager.UnloadAsset(tempRefCom.SpriteName, CS.MUF.Resource.ResourceType.Atlas)
+              end
+            end
+          end
+          GameObject.Destroy(chapterNode.gameObject)
+          CS.MUF.Resource.ResourceManager.UnloadAsset(chapterNodeStr, CS.MUF.Resource.ResourceType.UI)
+        end
+      end
+    end
+    self.m_chapterRootTrans = nil
+    if self.m_poolRootTrans then
+      local allChildRefComArray = self.m_poolRootTrans:GetComponentsInChildren(typeof(CS.mufplugin.Common.Extension.SpriteRefHolder), true)
+      if allChildRefComArray and allChildRefComArray.Length then
+        local refComNum = allChildRefComArray.Length
+        for i = 1, refComNum do
+          local tempRefCom = allChildRefComArray[i - 1]
+          if tempRefCom and tempRefCom.SpriteName then
+            CS.MUF.Resource.ResourceManager.UnloadAsset(tempRefCom.SpriteName, CS.MUF.Resource.ResourceType.Atlas)
+          end
+        end
+      end
+    end
+    self.m_poolRootTrans = nil
   end
 end
 

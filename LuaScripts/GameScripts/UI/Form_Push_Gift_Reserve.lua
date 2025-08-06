@@ -79,6 +79,7 @@ function Form_Push_Gift_Reserve:OnRefreshUI(isPlayAnim)
   self:RefreshPrice()
   self:RefreshPoint()
   self:UpdateArrowVisibility()
+  self:OnRefreshGiftPoint()
 end
 
 function Form_Push_Gift_Reserve:DealCountDownTimer()
@@ -193,18 +194,22 @@ function Form_Push_Gift_Reserve:OnBtnpushgiftClicked()
   local baseStoreBuyParam = MTTDProto.CmdActEmergencyGiftBuyParam()
   baseStoreBuyParam.iActivityId = self.m_activity:getID()
   local storeParam = sdp.pack(baseStoreBuyParam)
-  local productNameTemp = "Lucky Gift"
-  local productDescTemp = "Lucky Gift"
-  if ChannelManager:IsChinaChannel() then
-    productNameTemp = "神秘好礼"
-    productDescTemp = "神秘好礼"
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(self.m_curSelectPackData.GiftInfo.sProductId)
+  local rewardList = {}
+  for i, v in ipairs(self.m_curSelectPackData.GiftInfo.stItem) do
+    table.insert(rewardList, v)
+  end
+  if isShowPoint then
+    table.insert(rewardList, pointReward)
   end
   if self.m_curSelectPackData then
+    local productNameTemp = self.m_activity:getLangText(self.m_curSelectPackData.GiftInfo.iProductNameId)
+    local productDescTemp = self.m_activity:getLangText(self.m_curSelectPackData.GiftInfo.sProductDesc)
     local ProductInfo = {
       productId = self.m_curSelectPackData.GiftInfo.sProductId,
       productSubId = self.m_curSelectPackData.ProductInfo.iSubProductId,
       iStoreType = MTTDProto.IAPStoreType_ActEmergencyGift,
-      rewardList = self.m_curSelectPackData.GiftInfo.stItem,
+      rewardList = rewardList,
       productName = productNameTemp,
       productDesc = productDescTemp
     }
@@ -221,6 +226,26 @@ function Form_Push_Gift_Reserve:OnBuyResult(isSuccess, param1, param2)
   self:OnRefreshData()
   self:OnRefreshUI(false)
   self:broadcastEvent("eGameEvent_Activity_EmergencyGiftPush", {isPush = false})
+end
+
+function Form_Push_Gift_Reserve:OnRefreshGiftPoint()
+  local productId = self.m_curSelectPackData.GiftInfo.sProductId
+  if not productId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function Form_Push_Gift_Reserve:AddEventListeners()

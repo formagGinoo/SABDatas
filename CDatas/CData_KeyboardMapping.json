@@ -1,0 +1,527 @@
+{
+  "className": "CData_KeyboardMapping",
+  "data": {
+    "\"Form_Hall\"": {
+      "_type": "nested_dictionary",
+      "_count": 12,
+      "_processed": 12,
+      "data": {
+        "\"m_btn_left_top_02\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_top_02\"",
+          "m_Key": "\"f1\"",
+          "m_DisplayKey": "\"F1\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_top_06\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_top_06\"",
+          "m_Key": "\"f2\"",
+          "m_DisplayKey": "\"F2\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_top_04\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_top_04\"",
+          "m_Key": "\"f3\"",
+          "m_DisplayKey": "\"F3\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_top_05\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_top_05\"",
+          "m_Key": "\"f4\"",
+          "m_DisplayKey": "\"F4\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_hangup\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_hangup\"",
+          "m_Key": "\"tab\"",
+          "m_DisplayKey": "\"Tab\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_pnl_task_panel\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_pnl_task_panel\"",
+          "m_Key": "\"\"",
+          "m_DisplayKey": "\"J\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": null
+        },
+        "\"m_btn_task\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_task\"",
+          "m_Key": "\"j\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_down01\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_down01\"",
+          "m_Key": "\"c\"",
+          "m_DisplayKey": "\"C\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_down05\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_down05\"",
+          "m_Key": "\"s\"",
+          "m_DisplayKey": "\"S\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_down06\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_down06\"",
+          "m_Key": "\"e\"",
+          "m_DisplayKey": "\"E\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_left_down03\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_left_down03\"",
+          "m_Key": "\"d\"",
+          "m_DisplayKey": "\"D\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_fight\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_fight\"",
+          "m_Key": "\"f\"",
+          "m_DisplayKey": "\"F\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Atlas_Cha\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_btn_hall_activity\"": {
+          "m_bError": null,
+          "m_Form": "\"Atlas_Cha\"",
+          "m_Button": "\"m_btn_hall_activity\"",
+          "m_Key": "\"A\"",
+          "m_DisplayKey": "\"Q\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_LevelMain\"": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "\"m_btn_chapter_now\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_LevelMain\"",
+          "m_Button": "\"m_btn_chapter_now\"",
+          "m_Key": "\"tab\"",
+          "m_DisplayKey": "\"Tab\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_next_stage\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_LevelMain\"",
+          "m_Button": "\"m_btn_next_stage\"",
+          "m_Key": "\"f\"",
+          "m_DisplayKey": "\"F\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "2"
+        },
+        "\"m_btn_chapter_close\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_LevelMain\"",
+          "m_Button": "\"m_btn_chapter_close\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "2"
+        },
+        "\"m_btn_back\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_LevelMain\"",
+          "m_Button": "\"m_btn_back\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_Dialogue\"": {
+      "_type": "nested_dictionary",
+      "_count": 7,
+      "_processed": 7,
+      "data": {
+        "\"m_btnReview\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnReview\"",
+          "m_Key": "\"tab\"",
+          "m_DisplayKey": "\"Tab\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btnAuto\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnAuto\"",
+          "m_Key": "\"a\"",
+          "m_DisplayKey": "\"A\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btnSkip\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnSkip\"",
+          "m_Key": "\"space\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btnManual\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnManual\"",
+          "m_Key": "\"a\"",
+          "m_DisplayKey": "\"A\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btnSpeed\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnSpeed\"",
+          "m_Key": "\"b\"",
+          "m_DisplayKey": "\"B\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btnContinue\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_btnContinue\"",
+          "m_Key": "\"f\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_pnl\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Dialogue\"",
+          "m_Button": "\"m_pnl\"",
+          "m_Key": "\"\"",
+          "m_DisplayKey": "\"F\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_battle_main\"": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "\"m_btn_pause\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_pause\"",
+          "m_Key": "\"space,ESC\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_img_speed\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_img_speed\"",
+          "m_Key": "\"\"",
+          "m_DisplayKey": "\"B\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_speed01\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_speed01\"",
+          "m_Key": "\"b\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_speed02\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_speed02\"",
+          "m_Key": "\"b\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_speed03\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_speed03\"",
+          "m_Key": "\"b\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_speed01_forbid\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_speed01_forbid\"",
+          "m_Key": "\"b\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_switch_auto\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_switch_auto\"",
+          "m_Key": "\"a\"",
+          "m_DisplayKey": "\"A\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_formation\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_main\"",
+          "m_Button": "\"m_btn_formation\"",
+          "m_Key": "\"f\"",
+          "m_DisplayKey": "\"F\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_battle_fighting\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_battle_hero\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_battle_fighting\"",
+          "m_Button": "\"m_battle_hero\"",
+          "m_Key": "\"1\"",
+          "m_DisplayKey": "\"1\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_PauseTips\"": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "\"m_btn_giveup\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_PauseTips\"",
+          "m_Button": "\"m_btn_giveup\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"Esc\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_restart\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_PauseTips\"",
+          "m_Button": "\"m_btn_restart\"",
+          "m_Key": "\"r\"",
+          "m_DisplayKey": "\"R\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_restart_wave\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_PauseTips\"",
+          "m_Button": "\"m_btn_restart_wave\"",
+          "m_Key": "\"r\"",
+          "m_DisplayKey": "\"R\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "2"
+        },
+        "\"m_btn_return\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_PauseTips\"",
+          "m_Button": "\"m_btn_return\"",
+          "m_Key": "\"space\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_Activity101Lamia_Defeat\"": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "\"m_btn_Restart\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Activity101Lamia_Defeat\"",
+          "m_Button": "\"m_btn_Restart\"",
+          "m_Key": "\"r\"",
+          "m_DisplayKey": "\"R\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_pnl_btn_quit\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Activity101Lamia_Defeat\"",
+          "m_Button": "\"m_pnl_btn_quit\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"Esc\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_GachaTouchNew\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_btn_skip\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_GachaTouchNew\"",
+          "m_Button": "\"m_btn_skip\"",
+          "m_Key": "\"space\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_Viedo\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_Skip\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Viedo\"",
+          "m_Button": "\"m_Skip\"",
+          "m_Key": "\"space\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"ui_level_panel_detail\"": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "\"m_btn_battle\"": {
+          "m_bError": null,
+          "m_Form": "\"ui_level_panel_detail\"",
+          "m_Button": "\"m_btn_battle\"",
+          "m_Key": "\"f\"",
+          "m_DisplayKey": "\"F\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"\"": {
+          "m_bError": null,
+          "m_Form": "\"ui_level_panel_detail\"",
+          "m_Button": "\"\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"10,200\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_BattleDefeat\"": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "\"m_btn_Restart\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_BattleDefeat\"",
+          "m_Button": "\"m_btn_Restart\"",
+          "m_Key": "\"r\"",
+          "m_DisplayKey": "\"R\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_pnl_btn_quit\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_BattleDefeat\"",
+          "m_Button": "\"m_pnl_btn_quit\"",
+          "m_Key": "\"ESC\"",
+          "m_DisplayKey": "\"Esc\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_HeroShow\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_btn_skip\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_HeroShow\"",
+          "m_Button": "\"m_btn_skip\"",
+          "m_Key": "\"space\"",
+          "m_DisplayKey": "\"Space\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    },
+    "\"Form_Guide\"": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "\"m_Mask_Btn\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Guide\"",
+          "m_Button": "\"m_Mask_Btn\"",
+          "m_Key": "\"ESC,f1,f2,f3,f4,1,2,3,tab,q,e,r,a,s,d,f,g,j,c,b,space\"",
+          "m_DisplayKey": "\"\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        }
+      }
+    }
+  },
+  "status": "processed_14_items"
+}

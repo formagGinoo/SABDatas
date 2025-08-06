@@ -562,7 +562,7 @@ function HuntingRaidManager:StartEnterBattle(levelType, levelID, bossId)
 end
 
 function HuntingRaidManager:BeforeEnterBattle(levelType, levelID, bossId)
-  self.m_activity = ActivityManager:GetActivityByType(MTTD.ActivityType_Hunting)
+  local m_activity = ActivityManager:GetActivityByType(MTTD.ActivityType_Hunting)
   local levelSubType = self:GetFightSubTypeByLevelId(levelID)
   local inputLevelData = {
     levelType = levelType or 0,
@@ -570,7 +570,7 @@ function HuntingRaidManager:BeforeEnterBattle(levelType, levelID, bossId)
     levelID = levelID,
     heroList = HeroManager:GetHeroServerList(),
     buffList = self:GetBossBuffById(bossId),
-    activeId = self.m_activity:getID(),
+    activeId = m_activity:getID(),
     bossId = bossId,
     damageRecord = self:GetBossRealDamageById(bossId)
   }

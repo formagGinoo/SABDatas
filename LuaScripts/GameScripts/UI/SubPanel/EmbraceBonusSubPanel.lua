@@ -35,7 +35,6 @@ function EmbraceBonusSubPanel:OnInit()
   self.m_curChooseIndex = nil
   self.m_list_item_InfinityGrid:RegisterBindCallback(handler(self, self.OnHeroItemBind))
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
-  self:AddEventListeners()
 end
 
 function EmbraceBonusSubPanel:OnHeroItemBind(templateCache, gameObject, index)
@@ -360,7 +359,7 @@ function EmbraceBonusSubPanel:GetDownloadResourceExtra(param)
   return vPackage, vResourceExtra
 end
 
-function EmbraceBonusSubPanel:OnInactivePanel()
+function EmbraceBonusSubPanel:OnInactive()
   self:CheckRecycleSpine(true)
 end
 

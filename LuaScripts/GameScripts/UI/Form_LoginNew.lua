@@ -43,6 +43,9 @@ function Form_LoginNew:AfterInit()
   self.m_pnl_load:SetActive(true)
   self.m_pnl_start:SetActive(false)
   self.m_btn_setting:SetActive(false)
+  if self.m_btn_binding then
+    self.m_btn_binding:SetActive(false)
+  end
   if self.m_btn_cadpa then
     self.m_btn_cadpa:SetActive(false)
   end
@@ -228,10 +231,20 @@ function Form_LoginNew:OnUpdate(dt)
       else
         self.m_btn_account:SetActive(true)
       end
-    elseif ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-      self.m_btn_account:SetActive(true)
     else
-      self.m_btn_account:SetActive(false)
+      if ChannelManager:IsUsingQSDK() then
+        if ChannelManager:IsIOS() then
+          self.m_btn_account:SetActive(true)
+        elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+          self.m_btn_account:SetActive(true)
+        else
+          self.m_btn_account:SetActive(false)
+        end
+      else
+      end
+      if ChannelManager:IsWegameChannel() and self.m_btn_binding then
+        self.m_btn_binding:SetActive(true)
+      end
     end
     self:PlayerLogVoice()
     self.m_btn_setting:SetActive(true)
@@ -253,14 +266,31 @@ function Form_LoginNew:OnBtnannouncementClicked()
 end
 
 function Form_LoginNew:OnBtnaccountClicked()
-  if ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-    QSDKManager:CallFunction(function()
-      log.info("open usercenter success")
-    end, function()
-      log.info("open usercenter failed")
-    end, 209)
+  if ChannelManager:IsUsingQSDK() then
+    if ChannelManager:IsIOS() then
+      QSDKManager:CallFunction(function()
+        log.info("enter usercenter success")
+      end, function()
+        log.info("enter usercenter failed")
+      end, 102)
+    elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+      QSDKManager:CallFunction(function()
+        log.info("open usercenter success")
+      end, function()
+        log.info("open usercenter failed")
+      end, 209)
+    end
   else
     StackPopup:Push(UIDefines.ID_FORM_PLAYERCENTERPOP)
+  end
+end
+
+function Form_LoginNew:OnBtnbindingClicked()
+  local phone = self:CheckBindingStatus()
+  if phone then
+    StackPopup:Push(UIDefines.ID_FORM_BONDPHONEPOP, {iType = 2, phone = phone})
+  else
+    StackPopup:Push(UIDefines.ID_FORM_BONDPHONEPOP, {iType = 1})
   end
 end
 
@@ -277,14 +307,14 @@ function Form_LoginNew:OnEventShowAccountInfo(stShowAccountInfo)
   self.m_z_txt_ver:SetActive(true)
   self.m_z_txt_ver_Text.text = CS.ConfFact.LangFormat4DataInit("LoginVersionDesc")
   self.m_pnl_accountinfo:SetActive(true)
-  self.m_pnl_accountinfo.transform:Find("txt_zone"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginZoneDesc")
+  self.m_pnl_accountinfo.transform:Find("txt_zone"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginZoneDesc")
   if stShowAccountInfo.iAccountID then
     self.m_txt_accountid:SetActive(true)
     self.m_txt_accountid_Text.text = stShowAccountInfo.iAccountID
   else
     self.m_txt_accountid:SetActive(false)
   end
-  self.m_pnl_accountinfo.transform:Find("txt_account"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginAccountDesc")
+  self.m_pnl_accountinfo.transform:Find("txt_account"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginAccountDesc")
   if stShowAccountInfo.iZoneID then
     self.m_txt_zoneid:SetActive(true)
     self.m_txt_zoneid_Text.text = stShowAccountInfo.iZoneID
@@ -349,6 +379,18 @@ function Form_LoginNew:PlayerLogVoice()
       self.m_playingId = nil
     end)
   end
+end
+
+function Form_LoginNew:CheckBindingStatus()
+  local vAccountInfo = UserDataManager:GetAccountInfo()
+  if vAccountInfo then
+    for k, v in pairs(vAccountInfo) do
+      if string.find(v.sAccountName, "quicksdk") then
+        return v.mData.quick_username
+      end
+    end
+  end
+  return nil
 end
 
 local fullscreen = true

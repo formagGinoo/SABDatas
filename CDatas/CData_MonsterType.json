@@ -5,31 +5,41 @@
       "m_bError": null,
       "m_ID": "1",
       "m_Icon": "\"Atlas_LevelTag/level_info_icon_attack_03\"",
-      "m_TipID": "1185"
+      "m_TipID": "1185",
+      "m_mName": "\"P. ATK\"",
+      "m_mDesc": "\"Enemy mainly deals <style=Highlight>P.</style> DMG. Consider improving your Lineup's P. DEF.\""
     },
     "2": {
       "m_bError": null,
       "m_ID": "2",
       "m_Icon": "\"Atlas_LevelTag/level_info_icon_attack_02\"",
-      "m_TipID": "1186"
+      "m_TipID": "1186",
+      "m_mName": "\"M. ATK\"",
+      "m_mDesc": "\"Enemy mainly deals <style=Highlight>M.</style> DMG. Consider improving your Lineup's M. DEF.\""
     },
     "3": {
       "m_bError": null,
       "m_ID": "3",
       "m_Icon": "\"Atlas_LevelTag/level_info_icon_defense_03\"",
-      "m_TipID": "1187"
+      "m_TipID": "1187",
+      "m_mName": "\"P. DEF\"",
+      "m_mDesc": "\"Enemy has strong <style=Highlight>P. DEF</style>. Consider using Magic attacks to deal more DMG.\""
     },
     "4": {
       "m_bError": null,
       "m_ID": "4",
       "m_Icon": "\"Atlas_LevelTag/level_info_icon_defense_02\"",
-      "m_TipID": "1188"
+      "m_TipID": "1188",
+      "m_mName": "\"M. DEF\"",
+      "m_mDesc": "\"Enemy has strong <style=Highlight>M. DEF</style>. Consider using Physical attacks to deal more DMG.\""
     },
     "5": {
       "m_bError": null,
       "m_ID": "5",
       "m_Icon": "\"Atlas_LevelTag/level_info_icon_defense_01\"",
-      "m_TipID": "1189"
+      "m_TipID": "1189",
+      "m_mName": "\"Balanced DEF\"",
+      "m_mDesc": "\"Enemy has balanced DEF with no P. DEF/M. DEF advantage.\""
     }
   },
   "status": "processed_5_items"

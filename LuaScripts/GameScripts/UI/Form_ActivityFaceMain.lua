@@ -47,6 +47,12 @@ function Form_ActivityFaceMain:AfterInit()
       subPanelName = "ActivityBellaFaceSubPanel",
       backFun = function()
       end
+    },
+    [25009] = {
+      obj = self.m_bella_root,
+      subPanelName = "Activity105FaceSubPanel",
+      backFun = function()
+      end
     }
   }
 end
@@ -159,6 +165,9 @@ function Form_ActivityFaceMain:GetDownloadResourceExtra(tParam)
       },
       [25007] = {
         subPanelName = "ActivityBellaFaceSubPanel"
+      },
+      [25009] = {
+        subPanelName = "Activity105FaceSubPanel"
       }
     }
     if activity then

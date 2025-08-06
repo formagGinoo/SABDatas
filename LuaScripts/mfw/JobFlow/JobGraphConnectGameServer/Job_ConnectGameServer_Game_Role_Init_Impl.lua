@@ -44,6 +44,9 @@ function Job_ConnectGameServer_Game_Role_Init_Impl.RequestRoleInit(jobNode)
   elseif ChannelManager:IsDMMChannel() then
     local dmmAccountInfo = DmmManager:GetAccountInfo()
     reqMsg.sAccount = "dmm_" .. dmmAccountInfo.viewerId
+  elseif ChannelManager:IsWegameChannel() then
+    local wegameAccountInfo = WegameManager:GetAccountInfo()
+    reqMsg.sAccount = "wegame_" .. wegameAccountInfo.railId
   else
     reqMsg.sAccount = "msdk_" .. CS.AccountManager.Instance:GetAccountID()
   end
@@ -78,6 +81,9 @@ function Job_ConnectGameServer_Game_Role_Init_Impl.RequestRoleInit(jobNode)
       QSDKManager:EnterGame()
       local qsdkAccountInfo = QSDKManager:GetAccountInfo()
       CS.GameProtectBridge.Instance:SetUserInfo(0, qsdkAccountInfo.uid, UserDataManager:GetZoneID(), RoleManager:GetUID())
+    elseif ChannelManager:IsWegameChannel() then
+      local wegameAccountInfo = WegameManager:GetAccountInfo()
+      CS.GameProtectBridge.Instance:SetUserInfo(0, wegameAccountInfo.railId, UserDataManager:GetZoneID(), RoleManager:GetUID())
     else
       CS.GameProtectBridge.Instance:SetUserInfo(0, CS.AccountManager.Instance:GetAccountID(), UserDataManager:GetZoneID(), RoleManager:GetUID())
     end

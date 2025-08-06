@@ -6,6 +6,9 @@ function Job_Startup_DownloadAllResource_Impl.OnDownloadAllResource(jobNode)
   local function OnDownloadCompleteAfter()
     ReportManager:ReportLoginProcess("DownloadAllResource", "Success")
     
+    local versionContext = CS.VersionContext.GetContext()
+    local sLocalResVer = CS.VersionUtil.GetResVer(versionContext.ClientLocalVersion)
+    LocalDataManager:SetStringSimple("Login_Download_LocalVersion", sLocalResVer)
     if CS.GameQualityManager.Instance.IsSimulator then
       DownloadManager:SetThrottleNetSpeed(20971520)
     end
@@ -30,13 +33,14 @@ function Job_Startup_DownloadAllResource_Impl.OnDownloadAllResource(jobNode)
   local iNewbieMainLevelID = tonumber(ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("NewbieMainLevelID").m_Value)
   local bNewbie = not LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, iNewbieMainLevelID)
   local sNewbiePrefix = bNewbie and "Newbie_" or "Baisc_"
+  local sCoreResourcePackName, sExpansionResourcePackName = DownloadManager:GetLoginResourcePackName()
   local vFilePathShouldDownload = {}
   local isForceDownload = RoleManager:GetABTestDownloadAllResourceNewbie() == 2
   local vPackage = {}
   local vExtraResource = {}
   local loginDownloadTipsSelect = LocalDataManager:GetIntSimple("LoginDownloadTipsSelect", 2)
   if loginDownloadTipsSelect == 2 then
-    local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("CoreResourcePack").m_Value
+    local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sCoreResourcePackName).m_Value
     local vPackages = string.split(sPackages, "/")
     for k, v in ipairs(vPackages) do
       if not bNewbie and v == "Pack_Hall" then
@@ -65,7 +69,7 @@ function Job_Startup_DownloadAllResource_Impl.OnDownloadAllResource(jobNode)
         end
       end
     end
-    sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ExpansionResourcePack").m_Value
+    sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sExpansionResourcePackName).m_Value
     vPackages = string.split(sPackages, "/")
     for k, v in ipairs(vPackages) do
       vPackage[#vPackage + 1] = {

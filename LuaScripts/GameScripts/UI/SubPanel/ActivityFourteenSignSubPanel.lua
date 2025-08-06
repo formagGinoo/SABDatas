@@ -3,7 +3,6 @@ local ActivityFourteenSignSubPanel = class("ActivityFourteenSignSubPanel", UISub
 local SignMaxNum = 14
 
 function ActivityFourteenSignSubPanel:OnInit()
-  self:AddEventListeners()
   self.m_rewardInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_pnl_reward_InfinityGrid, "ActivityReward/ActFourteenSignRewardItem")
 end
 
@@ -17,8 +16,15 @@ function ActivityFourteenSignSubPanel:RemoveAllEventListeners()
 end
 
 function ActivityFourteenSignSubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self:RefreshUI()
   self:AutoRequestSign()
+end
+
+function ActivityFourteenSignSubPanel:OnInactive()
+  self:RemoveAllEventListeners()
+  self:killRemainTimer()
 end
 
 function ActivityFourteenSignSubPanel:RefreshUI()

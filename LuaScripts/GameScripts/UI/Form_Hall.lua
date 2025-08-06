@@ -8,6 +8,7 @@ local PROGRESS_UNIT = CommonTextIns:GetValue_ById(100009).m_mMessage
 local GUILD_REFRESH_CD = tonumber(GlobalManagerIns:GetValue_ByName("GuildRefreshCD").m_Value)
 local Banner_Scroll_Interval = 10
 local PreHangUpStr = "xq_"
+local PreHangUpAnimationStr_CN = "m_eff_sand"
 local OneDayOfSecond = 86400
 local DeltaGachaNum = 10
 local HeroActChangeInt = tonumber(GlobalManagerIns:GetValue_ByName("HallActivitySwitchTime").m_Value) or 5
@@ -35,6 +36,7 @@ function Form_Hall:AfterInit()
   self.m_headFrameEftStr = nil
   self.m_headFrameEftObj = nil
   self.m_gachaFrameNum = 0
+  self.sufHangUpAnimationNum_CN = 0
   self.m_iTimeDurationOneSecond = 0
   UILuaHelper.SetActive(self.m_hangup_unlock, false)
   UILuaHelper.SetActive(self.m_img_lock_hangup, true)
@@ -60,6 +62,7 @@ function Form_Hall:AfterInit()
     btnExtern.BeginDrag = handler(self, self.OnBannerBeginDrag)
     btnExtern.EndDrag = handler(self, self.OnBannerEndDrag)
   end
+  UserDataManager:SetLoginToHallFlag(true)
 end
 
 function Form_Hall:OnActive()
@@ -142,6 +145,9 @@ function Form_Hall:ClearUI3DModel()
 end
 
 function Form_Hall:CheckAndRqsHeroAct()
+  if self.bIsWaittingActData then
+    return
+  end
   self.heroActTimer = {}
   local allCfg = HeroActivityManager:GetAllMainInfoConfig()
   local list = HeroActivityManager:GetOpenActList()
@@ -158,6 +164,11 @@ function Form_Hall:CheckAndRqsHeroAct()
         local temp_time = closeTime ~= 0 and closeTime or endTime
         local main_open_flag = TimeUtil:IsInTime(startTime, temp_time)
         if main_open_flag then
+          if self.heroActTimer[v.m_ActivityID] then
+            TimeService:KillTimer(self.heroActTimer[v.m_ActivityID])
+            self.heroActTimer[v.m_ActivityID] = nil
+          end
+          self.bIsWaittingActData = true
           HeroActivityManager:OnDailyReset()
         else
           local cur_time = TimeUtil:GetServerTimeS()
@@ -168,6 +179,7 @@ function Form_Hall:CheckAndRqsHeroAct()
               self.heroActTimer[v.m_ActivityID] = nil
             end
             self.heroActTimer[v.m_ActivityID] = TimeService:SetTimer(last_time, 1, function()
+              self.bIsWaittingActData = true
               HeroActivityManager:OnDailyReset()
             end)
           end
@@ -175,7 +187,7 @@ function Form_Hall:CheckAndRqsHeroAct()
       end
       local jumpIns = ConfigManager:GetConfigInsByName("Jump")
       local jump_item = jumpIns:GetValue_ByJumpID(v.m_ShopJumpID)
-      local windowId = jump_item.m_WindowID
+      local windowId = 0 < jump_item.m_Param.Length and tonumber(jump_item.m_Param[0]) or 0
       local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
       local shop_id
       for i, vv in ipairs(shop_list) do
@@ -243,8 +255,10 @@ function Form_Hall:ShowHangUpBoxAnim(progressNum)
     return
   end
   local showProgressNum = 0
+  local sufHangUpAnimationNum_CN = 2
   if 0 <= progressNum and progressNum < 25 then
     showProgressNum = 0
+    sufHangUpAnimationNum_CN = 1
   elseif 25 <= progressNum and progressNum < 50 then
     showProgressNum = 25
   elseif 50 <= progressNum and progressNum < 75 then
@@ -253,6 +267,18 @@ function Form_Hall:ShowHangUpBoxAnim(progressNum)
     showProgressNum = 75
   elseif 100 <= progressNum then
     showProgressNum = 100
+    sufHangUpAnimationNum_CN = 3
+  end
+  if self.sufHangUpAnimationNum_CN ~= sufHangUpAnimationNum_CN then
+    local preHangUpAnimationStr = PreHangUpAnimationStr_CN .. self.sufHangUpAnimationNum_CN
+    local curHangUpAnimationStr = PreHangUpAnimationStr_CN .. sufHangUpAnimationNum_CN
+    if self[preHangUpAnimationStr] then
+      UILuaHelper.SetActive(self[preHangUpAnimationStr], false)
+    end
+    if self[curHangUpAnimationStr] then
+      UILuaHelper.SetActive(self[curHangUpAnimationStr], true)
+    end
+    self.sufHangUpAnimationNum_CN = sufHangUpAnimationNum_CN
   end
   UILuaHelper.SpinePlayAnimWithBack(self.m_spine_global, 0, PreHangUpStr .. showProgressNum, true, false)
   self.m_txt_percentage_Text.text = progressNum .. "%"
@@ -399,7 +425,7 @@ function Form_Hall:OnBannerClicked(pointerEventData)
   if jumpType and jumpParam then
     ActivityManager:DealJump(jumpType, jumpParam)
   else
-    StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, activityId)
+    StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, {activityId = activityId})
   end
 end
 
@@ -456,6 +482,7 @@ function Form_Hall:ScrollBanner(isRight)
   end
   local activityId = self.m_vScrollActivityList[nextIndex]
   local pic = ActivityManager:GetBannerPic(activityId)
+  local picCdn = ActivityManager:GetBannerCdnPic(activityId)
   local act = ActivityManager:GetActivityByID(self.m_vScrollActivityList[nextIndex])
   if act and act:getData().sBriefDesc then
     UILuaHelper.SetActive(self.m_txt_bannertitle, true)
@@ -469,7 +496,8 @@ function Form_Hall:ScrollBanner(isRight)
     self.curActivityDesc = ""
     self.m_txt_bannertitle_Text.text = ""
   end
-  UILuaHelper.SetAtlasSprite(self.m_curBannerImg, pic, function()
+  
+  local function PlayAnim()
     if self.m_curBannerImg then
       local animString = "ActivityMain_banner_down"
       if not isRight then
@@ -487,7 +515,16 @@ function Form_Hall:ScrollBanner(isRight)
         self.m_bannerScrollTime = self.m_bannerScrollTime + self.m_bannerLockTime
       end
     end
-  end)
+  end
+  
+  if picCdn ~= "" then
+    local actData = ActivityManager:GetActivityDataByID(activityId)
+    if actData then
+      ActivityManager:SetActivityImage(actData, self.m_curBannerImg, picCdn, PlayAnim)
+    end
+  else
+    UILuaHelper.SetAtlasSprite(self.m_curBannerImg, pic, PlayAnim)
+  end
 end
 
 function Form_Hall:OnBannerTick(dt)
@@ -787,6 +824,7 @@ function Form_Hall:RefreshHallActivityStatus_LevelAward()
 end
 
 function Form_Hall:RefreshHeroAct()
+  self.bIsWaittingActData = false
   self:RefreshHallActivityStatus_HeroAct()
   self:FreshHeroActSignPush()
 end
@@ -867,6 +905,10 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
     local heroAct_List = {}
     for k, v in pairs(list) do
       local config = HeroActivityManager:GetMainInfoByActID(k)
+      if not config then
+        log.error("Form_Hall:RefreshHallActivityStatus_HeroAct error! k = " .. tostring(k))
+        return
+      end
       local is_open = HeroActivityManager:IsMainActIsOpenByID(k)
       if is_open then
         local startTime = TimeUtil:TimeStringToTimeSec(config.m_OpenTime) or 0
@@ -878,6 +920,9 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
     end)
     self.m_btn_activity:SetActive(0 < #heroAct_List)
     self.m_btn_switch:SetActive(1 < #heroAct_List)
+    if 0 < #heroAct_List then
+      self:CheckShowActEnterTimer()
+    end
     if self.iHeroActIdx > #heroAct_List then
       self.iHeroActIdx = 1
     end
@@ -912,6 +957,10 @@ function Form_Hall:FreshHeroActSignPush()
     local heroAct_List = {}
     for k, v in pairs(list) do
       local config = HeroActivityManager:GetMainInfoByActID(k)
+      if not config then
+        log.error("Form_Hall:FreshHeroActSignPush error! k = " .. tostring(k))
+        return
+      end
       local is_open = HeroActivityManager:IsMainActIsOpenByID(k)
       if is_open then
         table.insert(heroAct_List, {config = config})
@@ -933,10 +982,10 @@ function Form_Hall:FreshHeroActSignPush()
                 is_pushFace = true
               })
             end)
+            HeroActivityManager:SetPushFlag()
           end
         end
       end
-      HeroActivityManager:SetPushFlag()
     end
   end
 end
@@ -976,9 +1025,7 @@ function Form_Hall:RefreshMainActivityUI()
   end
   self.m_btnActSign:SetActive(0 < activeCount)
   self.m_imageActSignRed:SetActive(0 < redDotCount)
-  if 0 < activeCount then
-    self:CheckShowActEnterTimer()
-  end
+  self:CheckShowActEnterTimer()
   local scrollCount = #self.m_vScrollActivityList
   while bannerCount < scrollCount do
     table.remove(self.m_vScrollActivityList, scrollCount)
@@ -994,8 +1041,16 @@ function Form_Hall:RefreshMainActivityUI()
       self.m_bannerScrollTime = nil
     end
     if 0 < bannerCount then
+      local cdnPic = ActivityManager:GetBannerCdnPic(self.m_vScrollActivityList[1])
       local pic = ActivityManager:GetBannerPic(self.m_vScrollActivityList[1])
-      UILuaHelper.SetAtlasSprite(self.m_btn_img_banner_Image, pic)
+      if cdnPic ~= "" then
+        local actData = ActivityManager:GetActivityDataByID(self.m_vScrollActivityList[1])
+        if actData then
+          ActivityManager:SetActivityImage(actData, self.m_btn_img_banner_Image, cdnPic)
+        end
+      else
+        UILuaHelper.SetAtlasSprite(self.m_btn_img_banner_Image, pic)
+      end
       local act = ActivityManager:GetActivityByID(self.m_vScrollActivityList[1])
       if act and act:getData().sBriefDesc then
         UILuaHelper.SetActive(self.m_txt_bannertitle, true)

@@ -77,6 +77,7 @@ function Form_BattleSystemPop1:OnBtnRClicked()
     DownloadManager:DeleteMultiLanguageVoice(selectVoiceID)
     utils.CheckAndPushCommonTips({
       tipsID = 1604,
+      bUseSystemWord = true,
       fContentCB = function(content)
         return string.format(content, settingLanguageCfg.m_mVoiceName)
       end,

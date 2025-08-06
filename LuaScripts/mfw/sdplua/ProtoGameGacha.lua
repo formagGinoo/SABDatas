@@ -13,17 +13,22 @@ CmdId_Gacha_GetWishList_CS = 10757
 CmdId_Gacha_GetWishList_SC = 10758
 CmdId_Gacha_GetRecord_CS = 10759
 CmdId_Gacha_GetRecord_SC = 10760
+CmdId_Gacha_TakeStepSeq_CS = 10761
+CmdId_Gacha_TakeStepSeq_SC = 10762
 GachaType_Hero = 1
 GachaTimesType_One = 1
 GachaTimesType_Ten = 10
 GachaUnlockType_StageMain = 1
 GachaUnlockType_RoleLevel = 2
 GachaUnlockType_Guide = 3
+GachaDiscountType_None = 0
 GachaDiscountType_Cheap = 1
 GachaDiscountType_Free = 2
+GachaDiscountType_SpecialTen = 3
 GachaGuaranteeType_Guarantee = 1
 GachaGuaranteeType_MustGain = 2
 GachaGuaranteeType_UpProtect = 3
+GachaGuaranteeType_ExtraGuarantee = 4
 Cmd_Gacha_GetGacha_CS = sdp.SdpStruct("Cmd_Gacha_GetGacha_CS")
 Cmd_Gacha_GetGacha_CS.Definition = {
   "vGachaId",
@@ -43,6 +48,7 @@ CmdGachaPool.Definition = {
   "iCheapTimes",
   "iFreeTimes",
   "iFreeTimesTen",
+  "vTakenStepSeq",
   iGachaId = {
     0,
     0,
@@ -84,6 +90,12 @@ CmdGachaPool.Definition = {
     0,
     8,
     0
+  },
+  vTakenStepSeq = {
+    7,
+    0,
+    sdp.SdpVector(8),
+    nil
   }
 }
 Cmd_Gacha_GetGacha_SC = sdp.SdpStruct("Cmd_Gacha_GetGacha_SC")
@@ -351,6 +363,47 @@ Cmd_Gacha_GetRecord_SC.Definition = {
     4,
     0,
     sdp.SdpVector(CmdGachaRecord),
+    nil
+  }
+}
+Cmd_Gacha_TakeStepSeq_CS = sdp.SdpStruct("Cmd_Gacha_TakeStepSeq_CS")
+Cmd_Gacha_TakeStepSeq_CS.Definition = {
+  "iGachaId",
+  "vSeq",
+  iGachaId = {
+    0,
+    0,
+    8,
+    0
+  },
+  vSeq = {
+    1,
+    0,
+    sdp.SdpVector(8),
+    nil
+  }
+}
+Cmd_Gacha_TakeStepSeq_SC = sdp.SdpStruct("Cmd_Gacha_TakeStepSeq_SC")
+Cmd_Gacha_TakeStepSeq_SC.Definition = {
+  "iGachaId",
+  "vSeq",
+  "vReward",
+  iGachaId = {
+    0,
+    0,
+    8,
+    0
+  },
+  vSeq = {
+    1,
+    0,
+    sdp.SdpVector(8),
+    nil
+  },
+  vReward = {
+    2,
+    0,
+    sdp.SdpVector(CmdIDNum),
     nil
   }
 }

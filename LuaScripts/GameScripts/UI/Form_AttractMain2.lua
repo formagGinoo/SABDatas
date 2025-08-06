@@ -3,8 +3,12 @@ local Form_AttractMain2 = class("Form_AttractMain2", require("UI/UIFrames/Form_A
 function Form_AttractMain2:SetInitParam(param)
 end
 
+local HeroSortCfg = HeroCouncilSortCfg
+
 function Form_AttractMain2:AfterInit()
   self.super.AfterInit(self)
+  self.m_heroSort = HeroManager:GetHeroSort()
+  self.m_curFilterIndex = nil
   local goRoot = self.m_csui.m_uiGameObject
   local goBackBtnRoot = goRoot.transform:Find("content_node/ui_common_top_back").gameObject
   self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1121)
@@ -27,10 +31,17 @@ function Form_AttractMain2:OnActive()
   self:InitData()
   self:FreshUI()
   StackTop:DestroyUI(UIDefines.ID_FORM_GAMESCENELOADING)
+  GlobalManagerIns:TriggerWwiseBGMState(195)
+  self:addEventListener("eGameEvent_Form_FilterClosed", function()
+    TimeService:SetTimer(0.05, 1, function()
+      AttractManager:SetRaycastOn(true)
+    end)
+  end)
 end
 
 function Form_AttractMain2:OnInactive()
   self.super.OnInactive(self)
+  self:clearEventListener()
   AttractManager:SetRaycastOn(false)
 end
 
@@ -62,21 +73,45 @@ function Form_AttractMain2:InitData()
       end
     end
   end
+  self.m_filterData = {}
+  if self.m_curFilterIndex == nil then
+    self.m_bFilterDown = false
+    self.m_curFilterIndex = self.m_curFilterIndex or 1
+  end
 end
 
 function Form_AttractMain2:FreshUI()
+  self:OnFilterChanged()
   self:FreshHeroList()
   self:FreshHeroCard()
 end
 
+function Form_AttractMain2:FreshSortHero()
+  self.m_heroSort:SortCouncilHeroList(self.m_allHeroList, self.m_curFilterIndex, self.m_bFilterDown)
+  if not self.m_curShowHeroData then
+    self.m_curChooseHeroIndex = 1
+    return
+  end
+  for i, v in ipairs(self.m_allShowHeroList) do
+    local hero_id = self.m_curShowHeroData.serverData.iHeroId
+    if v.serverData.iHeroId == hero_id then
+      v.bIsAttractSelected = true
+      self.m_curShowHeroData = v
+      self.m_curChooseHeroIndex = i
+      break
+    end
+  end
+end
+
+function Form_AttractMain2:OnHeroSortChanged(iIndex, bDown)
+  self.m_curFilterIndex = iIndex
+  self.m_bFilterDown = bDown
+  self:FreshSortHero()
+  self:FreshHeroList()
+end
+
 function Form_AttractMain2:FreshHeroList()
-  for i, v in ipairs(self.m_allHeroList) do
-    v.bIsAttractSelected = false
-  end
-  if self.m_curShowHeroData then
-    self.m_curShowHeroData.bIsAttractSelected = true
-  end
-  self.m_luaHeroListInfinityGrid:ShowItemList(self.m_allHeroList)
+  self.m_luaHeroListInfinityGrid:ShowItemList(self.m_allShowHeroList)
   self.m_luaHeroListInfinityGrid:LocateTo(self.m_curChooseHeroIndex - 1)
 end
 
@@ -127,13 +162,13 @@ function Form_AttractMain2:OnHeroItemClick(index, go)
     return
   end
   self.bIsLoading = true
-  AttractManager:LoadFavorabilityHero(self.m_allHeroList[itemIndex].serverData.iHeroId, nil, function()
+  AttractManager:LoadFavorabilityHero(self.m_allShowHeroList[itemIndex].serverData.iHeroId, nil, function()
     if self.m_curShowHeroData then
       self.m_curShowHeroData.bIsAttractSelected = false
       self.m_luaHeroListInfinityGrid:ReBind(self.m_curChooseHeroIndex)
     end
     self.m_curChooseHeroIndex = itemIndex
-    self.m_curShowHeroData = self.m_allHeroList[itemIndex]
+    self.m_curShowHeroData = self.m_allShowHeroList[itemIndex]
     self.m_curShowHeroData.bIsAttractSelected = true
     self:FreshHeroCard()
     self.m_luaHeroListInfinityGrid:ReBind(itemIndex)
@@ -197,6 +232,7 @@ end
 
 function Form_AttractMain2:OnBackClk()
   GameSceneManager:ChangeGameScene(GameSceneManager.SceneID.MainCity, function()
+    GlobalManagerIns:TriggerWwiseBGMState(13)
     StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_ATTRACTMAIN2)
     self:GoBackFormHall()
     self.m_curChooseHeroIndex = nil
@@ -233,6 +269,51 @@ function Form_AttractMain2:GetDownloadResourceExtra(params)
     eType = DownloadManager.ResourceType.UITexture
   }
   return vPackage, vResourceAB
+end
+
+function Form_AttractMain2:OnFilterChanged()
+  self.m_allShowHeroList = self.m_heroSort:FilterHeroList(self.m_allHeroList, self.m_filterData)
+  for i, v in ipairs(self.m_allHeroList) do
+    v.bIsAttractSelected = false
+  end
+  if self.m_curShowHeroData then
+    self.m_curShowHeroData.bIsAttractSelected = true
+  end
+  local bIsFind = false
+  for i, v in ipairs(self.m_allShowHeroList) do
+    local hero_id = self.m_curShowHeroData.serverData.iHeroId
+    if v.serverData.iHeroId == hero_id then
+      v.bIsAttractSelected = true
+      self.m_curShowHeroData = v
+      bIsFind = true
+      break
+    end
+  end
+  if not bIsFind and self.m_curShowHeroData then
+    table.insert(self.m_allShowHeroList, 1, self.m_curShowHeroData)
+    self.m_curChooseHeroIndex = 1
+  end
+  self:OnHeroSortChanged(self.m_curFilterIndex, self.m_bFilterDown)
+end
+
+function Form_AttractMain2:OnBtnFilterClicked()
+  local function chooseBackFun(filterData)
+    self.m_filterData = filterData
+    
+    self:OnFilterChanged()
+    UILuaHelper.SetActive(self.m_filter_select, false)
+    if self.m_filterData then
+      for _, value in pairs(self.m_filterData) do
+        if value ~= 0 then
+          UILuaHelper.SetActive(self.m_filter_select, true)
+          break
+        end
+      end
+    end
+  end
+  
+  AttractManager:SetRaycastOn(false)
+  utils.openForm_filter(self.m_filterData, self.m_btn_Filter.transform, {x = 0, y = 0}, {x = -932, y = 78}, chooseBackFun, false)
 end
 
 local fullscreen = true

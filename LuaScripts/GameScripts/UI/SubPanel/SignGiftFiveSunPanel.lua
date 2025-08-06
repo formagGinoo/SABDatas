@@ -42,6 +42,7 @@ function SignGiftFiveSunPanel:OnFreshData()
   self:RefreshReward()
   self:RefreshSpine()
   self:RefreshBtn()
+  self:OnRefreshGiftPoint()
 end
 
 function SignGiftFiveSunPanel:RefreshReward()
@@ -207,6 +208,29 @@ function SignGiftFiveSunPanel:OnBtnbuyClicked()
 end
 
 function SignGiftFiveSunPanel:OnBtnsoldoutClicked()
+end
+
+function SignGiftFiveSunPanel:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  local productId = self.m_stActivity:GetCommonCfg().sProductId
+  if not productId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function SignGiftFiveSunPanel:GetDownloadResourceExtra(subPanelCfg)

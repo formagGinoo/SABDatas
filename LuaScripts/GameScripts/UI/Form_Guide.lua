@@ -50,6 +50,8 @@ function Form_Guide:EndGuide()
   self.guideData = nil
   self.subStepData = nil
   self.mainTarget = nil
+  CS.UI.UILuaHelper.GuideGlobalLockCastSkill = false
+  CS.UI.UILuaHelper.SetPauseExcept(false)
 end
 
 function Form_Guide:RemoveScheduler()
@@ -833,10 +835,13 @@ function Form_Guide:OnGuideLegacyClick(gridx, gridz)
 end
 
 function Form_Guide:OnGuideClick(go, mapclick, manualFinish)
+  if go and type(go) == "userdata" and go == self.m_SkipGuide_Btn then
+    return false
+  end
   if self.subStepData and self.subStepData.Type == "legacygridclick" then
     return true
   end
-  if self.subStepData and (self.subStepData.Type == "wait" or self.subStepData.Type == "waitframe" or self.subStepData.Type == "battleskill") then
+  if self.subStepData and (self.subStepData.Type == "wait" or self.subStepData.Type == "waitframe") then
     return true
   end
   if not self.subStepData or self.subStepData.Type ~= "mapclick" or mapclick then
@@ -857,6 +862,9 @@ function Form_Guide:OnGuideClick(go, mapclick, manualFinish)
   if self.subStepData and not string.IsNullOrEmpty(self.subStepData.WndName) and go and type(go) == "userdata" and go.transform and not CS.UI.UILuaHelper.CheckGuideClickInView(go.transform, self.subStepData.WndName) then
     return false
   end
+  if self.subStepData and self.subStepData.Type == "battleskill" then
+    return true
+  end
   if self.subStepData and (self.subStepData.Type == "battlewaitenergy" or self.subStepData.Type == "waitingbattletime") then
     return true
   end
@@ -864,7 +872,7 @@ function Form_Guide:OnGuideClick(go, mapclick, manualFinish)
     return true
   end
   if self.subStepData and (self.subStepData.Type == "click" or self.subStepData.Type == "battleclick") and self.mainTarget then
-    if go == self.m_FilterMask_Btn or go == self.m_Mask_Btn then
+    if go == self.m_FilterMask_Btn or go == self.m_Mask_Btn or go == self.m_SkipGuide_Btn then
       return false
     end
     if go == self.mainTarget then
@@ -1068,6 +1076,7 @@ function Form_Guide:InitTipsView()
     self.subStepData.TipsOffset = string.split("520;520;" .. self.subStepData.TargetOffset[0] .. ";" .. self.subStepData.TargetOffset[1] .. ";0;0;150;150;0;0", ";")
   end
   CS.UI.UILuaHelper.InitGuideTipsView(self.m_mask_center, self.m_talk_OffSetContainer, self.subStepData.TipsOffset)
+  self.m_SkipGuide_Btn:SetActive(0 < self.subStepData.CanSkip.Length)
 end
 
 function Form_Guide:ShowTipsGuide()
@@ -1081,6 +1090,26 @@ end
 
 function Form_Guide:OnFilterMaskBtnClicked()
   self.m_FilterTipsContainer:SetActive(false)
+end
+
+function Form_Guide:OnSkipGuideBtnClicked()
+  if CS.UI.UILuaHelper.GetDayCount("GuideSkip") > 0 then
+    GuideManager:SkipCurrentGuide()
+  else
+    StackPopup:Push(UIDefines.ID_FORM_GUIDESKIPPOP)
+  end
+end
+
+function Form_Guide:SkipCurrentGuide()
+  if self.guideData and self.subStepData and self.subStepData.CanSkip.Length > 0 then
+    local guides = {}
+    for i = 0, self.subStepData.CanSkip.Length - 1 do
+      table.insert(guides, self.subStepData.CanSkip[i])
+    end
+    GuideManager:FinishStepGuides(guides)
+  end
+  self:EndGuide()
+  self:CloseForm()
 end
 
 function Form_Guide:FinishSubStepGuide()

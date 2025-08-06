@@ -220,7 +220,7 @@
     "1000409": {
       "m_bError": null,
       "m_ID": "1000409",
-      "m_mDesc": "\"Repel the mutated <#A65F30>Clive Jr.</color>\"",
+      "m_mDesc": "\"Repel the mutated <#A65F30>Clive Jr.</color>.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[1000409]",
       "m_FailAnd": "1",
@@ -778,7 +778,7 @@
     "1000907": {
       "m_bError": null,
       "m_ID": "1000907",
-      "m_mDesc": "\"Defeat Acappella and her choir\"",
+      "m_mDesc": "\"Defeat Acappella and her choir.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -805,7 +805,7 @@
     "1000910": {
       "m_bError": null,
       "m_ID": "1000910",
-      "m_mDesc": "\"Keep Agares alive and defeat all slaves\"",
+      "m_mDesc": "\"Keep Agares alive and defeat all slaves.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -814,7 +814,7 @@
     "1000911": {
       "m_bError": null,
       "m_ID": "1000911",
-      "m_mDesc": "\"Defeat the Carrelle family guards\"",
+      "m_mDesc": "\"Defeat the Carrelle family guards.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -823,7 +823,7 @@
     "1000912": {
       "m_bError": null,
       "m_ID": "1000912",
-      "m_mDesc": "\"Hold out until Brennholt arrives and defeat all Carrelle family guards\"",
+      "m_mDesc": "\"Hold out until Brennholt arrives and defeat all Carrelle family guards.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -832,7 +832,7 @@
     "1000913": {
       "m_bError": null,
       "m_ID": "1000913",
-      "m_mDesc": "\"Defeat the spirits obstructing Agares\"",
+      "m_mDesc": "\"Defeat the spirits obstructing Agares.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -868,7 +868,7 @@
     "1000917": {
       "m_bError": null,
       "m_ID": "1000917",
-      "m_mDesc": "\"Defeat <#A65F30>Blake</color>, \"Shrine of the Unknown Hero\"\"",
+      "m_mDesc": "\"Defeat <#A65F30>Blake</color>, \"Shrine of the Unknown Hero.\"\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1225,6 +1225,87 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101,10071613]"
     },
+    "1011011": {
+      "m_bError": null,
+      "m_ID": "1011011",
+      "m_mDesc": "\"Protect <#A65F30>Theophane</color> and survive the attack for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101,10110111]"
+    },
+    "1011021": {
+      "m_bError": null,
+      "m_ID": "1011021",
+      "m_mDesc": "\"Defeat the pursuing Bloodborn.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011031": {
+      "m_bError": null,
+      "m_ID": "1011031",
+      "m_mDesc": "\"Defeat the Bloodborn and Black Blood carriers drawn by strange sounds.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011041": {
+      "m_bError": null,
+      "m_ID": "1011041",
+      "m_mDesc": "\"Defeat the attacking Bloodborn and Black Blood carriers under the protection of the Colossus.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011051": {
+      "m_bError": null,
+      "m_ID": "1011051",
+      "m_mDesc": "\"Defeat the Bloodborn and Black Blood carriers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011061": {
+      "m_bError": null,
+      "m_ID": "1011061",
+      "m_mDesc": "\"Defeat the Camel Centaur assaulting the camp.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011071": {
+      "m_bError": null,
+      "m_ID": "1011071",
+      "m_mDesc": "\"Defeat the Camel Centaur circling the camp.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011081": {
+      "m_bError": null,
+      "m_ID": "1011081",
+      "m_mDesc": "\"Defeat the Camel Centaurs attacking the camp with Ottavia's aid.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011091": {
+      "m_bError": null,
+      "m_ID": "1011091",
+      "m_mDesc": "\"Defeat the Desert Rangers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[10110911]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "1020001": {
       "m_bError": null,
       "m_ID": "1020001",
@@ -1453,16 +1534,34 @@
     "2100031": {
       "m_bError": null,
       "m_ID": "2100031",
-      "m_mDesc": "\"Defeat Little Bella No. 13\"",
+      "m_mDesc": "\"Defeat Little Bella No. 13.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100041": {
+      "m_bError": null,
+      "m_ID": "2100041",
+      "m_mDesc": "\"Defeat Weathered Flames of War.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100041]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100048": {
+      "m_bError": null,
+      "m_ID": "2100048",
+      "m_mDesc": "\"Defeat Weathered Flames of War.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100048]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
     "2200001": {
       "m_bError": null,
       "m_ID": "2200001",
-      "m_mDesc": "\"Defeat the Dire Wolf Siblings\"",
+      "m_mDesc": "\"Defeat the Dire Wolf siblings.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[22000011]",
       "m_FailAnd": "1",
@@ -1549,6 +1648,33 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[101]"
     },
+    "2400006": {
+      "m_bError": null,
+      "m_ID": "2400006",
+      "m_mDesc": "\"Defeat the Plague Queen as quickly as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2400006]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2400007": {
+      "m_bError": null,
+      "m_ID": "2400007",
+      "m_mDesc": "\"Defeat as many Crabs as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400008": {
+      "m_bError": null,
+      "m_ID": "2400008",
+      "m_mDesc": "\"Defeat the Avatar of Calamitous Death as quickly as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2400008]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "2500001": {
       "m_bError": null,
       "m_ID": "2500001",
@@ -1597,7 +1723,7 @@
     "4000001": {
       "m_bError": null,
       "m_ID": "4000001",
-      "m_mDesc": "\"Defeat as many enemies as possible in a limited time!\"",
+      "m_mDesc": "\"Defeat as many enemies as possible in a limited time.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1822,7 +1948,7 @@
     "6000308": {
       "m_bError": null,
       "m_ID": "6000308",
-      "m_mDesc": "\"Team up with the Siren to help Isaac Van Helsing escape from prison.\"",
+      "m_mDesc": "\"Team up with the siren to help Isaac Van Helsing escape from prison.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1948,7 +2074,7 @@
     "6000410": {
       "m_bError": null,
       "m_ID": "6000410",
-      "m_mDesc": "\"Team up with the Siren and defeat the guards.\"",
+      "m_mDesc": "\"Team up with the siren and defeat the guards.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1966,7 +2092,115 @@
     "6000412": {
       "m_bError": null,
       "m_ID": "6000412",
-      "m_mDesc": "\"Defeat Bella No. 13 and thwart Joyce's plan.\"",
+      "m_mDesc": "\"Defeat Little Bella No. 13 and thwart Joyce's plan.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000501": {
+      "m_bError": null,
+      "m_ID": "6000501",
+      "m_mDesc": "\"Defeat all Sand Golems.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000502": {
+      "m_bError": null,
+      "m_ID": "6000502",
+      "m_mDesc": "\"Defeat all assassins.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000503": {
+      "m_bError": null,
+      "m_ID": "6000503",
+      "m_mDesc": "\"Defeat all Alita guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000504": {
+      "m_bError": null,
+      "m_ID": "6000504",
+      "m_mDesc": "\"Defeat all assassins.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000505": {
+      "m_bError": null,
+      "m_ID": "6000505",
+      "m_mDesc": "\"Defeat all guards and escape from prison.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000506": {
+      "m_bError": null,
+      "m_ID": "6000506",
+      "m_mDesc": "\"Defeat Weathered Flames of War.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000507": {
+      "m_bError": null,
+      "m_ID": "6000507",
+      "m_mDesc": "\"Survive Sand Golems for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "6000508": {
+      "m_bError": null,
+      "m_ID": "6000508",
+      "m_mDesc": "\"Defeat Weathered Zagon.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000509": {
+      "m_bError": null,
+      "m_ID": "6000509",
+      "m_mDesc": "\"Defeat all Sand Golems.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000510": {
+      "m_bError": null,
+      "m_ID": "6000510",
+      "m_mDesc": "\"Defeat all Sand Golems.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000511": {
+      "m_bError": null,
+      "m_ID": "6000511",
+      "m_mDesc": "\"Defeat all \"Shades.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000512": {
+      "m_bError": null,
+      "m_ID": "6000512",
+      "m_mDesc": "\"Defeat Weathered Flames of War.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2164,7 +2398,7 @@
     "10009022": {
       "m_bError": null,
       "m_ID": "10009022",
-      "m_mDesc": "\"Defeat the attacking Church soldiers together with Sir Gadric\"",
+      "m_mDesc": "\"Defeat the attacking Church soldiers together with Sir Gadric.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2200,7 +2434,7 @@
     "10200091": {
       "m_bError": null,
       "m_ID": "10200091",
-      "m_mDesc": "\"Defeat <#A65F30>Baphomet, \"The Soulless\"</color>.\"",
+      "m_mDesc": "\"Defeat <#A65F30>Baphomet, \"The Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2209,7 +2443,7 @@
     "10200092": {
       "m_bError": null,
       "m_ID": "10200092",
-      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless\"</color>.\"",
+      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless.\"</color>.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200092]",
       "m_FailAnd": "1",
@@ -2218,12 +2452,12 @@
     "10200093": {
       "m_bError": null,
       "m_ID": "10200093",
-      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless\"</color>.\"",
+      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless.\"</color>.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200093]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_247_items"
+  "status": "processed_273_items"
 }

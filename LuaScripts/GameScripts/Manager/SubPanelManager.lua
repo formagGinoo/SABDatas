@@ -68,6 +68,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity104_dialoguedetial",
     LuaPath = "UI/SubPanel/LevelDetailLuoleilaiSubPanel"
   },
+  LevelDetail105SubPanel = {
+    PrefabPath = "ui_activity105_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetail105SubPanel"
+  },
   LegacyLevelDetailSubPanel = {
     PrefabPath = "ui_legacy_panel_detail",
     LuaPath = "UI/SubPanel/LegacyLevelDetailSubPanel"
@@ -106,11 +110,11 @@ SubPanelManager.SubPanelCfg = {
   },
   GachaSubPanel1001 = {
     PrefabPath = "ui_gacha_panel_1001",
-    LuaPath = "UI/SubPanel/GachaSubPanel"
+    LuaPath = "UI/SubPanel/GachaSubPanels/GachaSubPanelAct101"
   },
   GachaSubPanel1002 = {
     PrefabPath = "ui_gacha_panel_1002",
-    LuaPath = "UI/SubPanel/GachaSubPanel"
+    LuaPath = "UI/SubPanel/GachaSubPanels/GachaSubPanelAct102"
   },
   GachaSubPanel1003 = {
     PrefabPath = "ui_gacha_panel_1003",
@@ -119,6 +123,10 @@ SubPanelManager.SubPanelCfg = {
   GachaSubPanel1004 = {
     PrefabPath = "ui_gacha_panel_1004",
     LuaPath = "UI/SubPanel/GachaSubPanels/BellaSummerGachaSubPanel"
+  },
+  GachaSubPanel1005 = {
+    PrefabPath = "ui_gacha_panel_1005",
+    LuaPath = "UI/SubPanel/GachaSubPanels/GachaSubPanelAct101_Step"
   },
   GachaDalCaroPushFaceSubPanel = {
     PrefabPath = "ui_activity_dalcaroface",
@@ -154,6 +162,10 @@ SubPanelManager.SubPanelCfg = {
   },
   ActivityQigeLunaSubPanel = {
     PrefabPath = "ui_activity_qigelunaface",
+    LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
+  Activity105FaceSubPanel = {
+    PrefabPath = "ui_activity_105",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
   },
   GuildActiveSubPanel = {
@@ -248,6 +260,14 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_embracebonus",
     LuaPath = "UI/SubPanel/EmbraceBonusSubPanel"
   },
+  ReturnBackSignSubPanel = {
+    PrefabPath = "ui_activity_panel_seven_sign",
+    LuaPath = "UI/SubPanel/ReturnBackSignSubPanel"
+  },
+  ChargeRebateSubPanel = {
+    PrefabPath = "ui_activity_panel_chargerebate",
+    LuaPath = "UI/SubPanel/ChargeRebateSubPanel"
+  },
   PvPEnterSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/PVPEnterSubPanel"
@@ -267,6 +287,14 @@ SubPanelManager.SubPanelCfg = {
   HallBgSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/HallBgSubPanel"
+  },
+  BattlePassRewardSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/BattlePassRewardSubPanel"
+  },
+  BattlePassTaskSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/BattlePassTaskSubPanel"
   },
   HallBattlePassSubPanel = {
     PrefabPath = nil,
@@ -333,7 +361,7 @@ function SubPanelManager:LoadSubPanel(subPanelName, parentObj, parentLua, initDa
   self:LoadSubUIPrefab(subPaneCfg.PrefabPath, function(uiObject)
     local luaPath = subPaneCfg.LuaPath
     local subPanelLua = require(luaPath).new()
-    subPanelLua:Init(parentObj, uiObject, parentLua, initData, paramData)
+    subPanelLua:Init(parentObj, uiObject, parentLua, initData, paramData, subPanelName)
     if loadBack then
       loadBack(subPanelLua)
     end
@@ -350,7 +378,7 @@ function SubPanelManager:LoadSubPanelWithPanelRoot(subPanelName, panelRoot, pare
   end
   local luaPath = subPaneCfg.LuaPath
   local subPanelLua = require(luaPath).new()
-  subPanelLua:Init(nil, panelRoot, parentLua, initData, paramData)
+  subPanelLua:Init(nil, panelRoot, parentLua, initData, paramData, subPanelName)
   return subPanelLua
 end
 
@@ -382,6 +410,22 @@ function SubPanelManager:GetSubPanelDownloadResourceExtra(subPanelName)
     end
   end
   return vPackage, vResourceExtra
+end
+
+function SubPanelManager:CheckUnloadAsset(panelStr)
+  if not panelStr then
+    return
+  end
+  if not CS.GameQualityManager.DestroyUIImmediately then
+    return
+  end
+  local subPanelCfg = SubPanelManager.SubPanelCfg[panelStr]
+  if not subPanelCfg then
+    return
+  end
+  if subPanelCfg.PrefabPath ~= nil and subPanelCfg.PrefabPath ~= "" then
+    CS.MUF.Resource.ResourceManager.UnloadAsset(subPanelCfg.PrefabPath, CS.MUF.Resource.ResourceType.UI)
+  end
 end
 
 return SubPanelManager

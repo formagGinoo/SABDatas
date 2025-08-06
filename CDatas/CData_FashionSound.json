@@ -1,0 +1,116 @@
+{
+  "className": "CData_FashionSound",
+  "data": {
+    "6016001": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "\"Play_vo_20160_battle_attack\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_attack\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_attack_A2_01\""
+        },
+        "\"Play_vo_20160_battle_skill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_skill01\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_skill01_A2_01\""
+        },
+        "\"Play_vo_20160_battle_maxskill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_maxskill01\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_maxskill01_A2_01\""
+        },
+        "\"Play_vo_20160_battle_maxskill02\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_maxskill02\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_maxskill02_A2_01\""
+        },
+        "\"Play_vo_20160_battle_array\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_array\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_array_A2_01\""
+        },
+        "\"Play_vo_20160_battle_death\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_death\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_death_A2_01\""
+        },
+        "\"Play_vo_20160_battle_hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_hit\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_hit_A2_01\""
+        },
+        "\"Play_vo_20160_battle_stagewin\"": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_InitSound": "\"Play_vo_20160_battle_stagewin\"",
+          "m_FashionSound": "\"Play_vo_20160_battle_stagewin_A2_01\""
+        }
+      }
+    },
+    "6023001": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "\"Play_vo_20230_battle_attack\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_attack\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_attack_A2_01\""
+        },
+        "\"Play_vo_20230_battle_skill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_skill01\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_skill01_A2_01\""
+        },
+        "\"Play_vo_20230_battle_maxskill01\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_maxskill01\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_maxskill01_A2_01\""
+        },
+        "\"Play_vo_20230_battle_maxskill02\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_maxskill02\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_maxskill02_A2_01\""
+        },
+        "\"Play_vo_20230_battle_array\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_array\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_array_A2_01\""
+        },
+        "\"Play_vo_20230_battle_death\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_death\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_death_A2_01\""
+        },
+        "\"Play_vo_20230_battle_hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_hit\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_hit_A2_01\""
+        },
+        "\"Play_vo_20230_battle_stagewin\"": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_InitSound": "\"Play_vo_20230_battle_stagewin\"",
+          "m_FashionSound": "\"Play_vo_20230_battle_stagewin_A2_01\""
+        }
+      }
+    }
+  },
+  "status": "processed_2_items"
+}

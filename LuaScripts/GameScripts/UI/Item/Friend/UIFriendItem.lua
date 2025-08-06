@@ -149,6 +149,7 @@ end
 function UIFriendItem:OnBtnforbidClicked()
   utils.popUpDirectionsUI({
     tipsID = 1171,
+    bUseSystemWord = true,
     fContentCB = function(content)
       local str = self.m_itemData and self.m_itemData.sName or ""
       return string.gsubnumberreplace(content, str)
@@ -170,6 +171,7 @@ end
 function UIFriendItem:OnBtnforbidgrayClicked()
   utils.popUpDirectionsUI({
     tipsID = 1172,
+    bUseSystemWord = true,
     fContentCB = function(content)
       local str = self.m_itemData and self.m_itemData.sName or ""
       return string.gsubnumberreplace(content, str)
@@ -224,6 +226,7 @@ function UIFriendItem:OnBtnrejectClicked()
   elseif FriendManager:GetCurFriendTab() == 4 then
     utils.popUpDirectionsUI({
       tipsID = 1172,
+      bUseSystemWord = true,
       fContentCB = function(content)
         local str = self.m_itemData and self.m_itemData.sName or ""
         return string.gsubnumberreplace(content, str)

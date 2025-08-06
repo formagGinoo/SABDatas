@@ -1,0 +1,856 @@
+{
+  "className": "CData_BGMScene",
+  "data": {
+    "\"ExHall01A_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01A_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01B_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01B_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01C1_broken_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01C1_broken_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01C1_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01C1_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01C2_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01C2_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01C3_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01C3_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01C4_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01C4_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01D_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01D_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01E_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01E_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall01F_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01F_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall_Container_1_A_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall_Container_1_A_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall_DiningRoom_1_A_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall_DiningRoom_1_A_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"ExHall_Laboratory_4_A_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall_Laboratory_4_A_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall01a_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall01a_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall01b_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall01b_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall01c_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall01c_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall_Prison_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall_Prison_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall_Rebirth_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall_Rebirth_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"Ophall_Throne_SceneRoot\"": {
+      "m_bError": null,
+      "m_ID": "\"Ophall_Throne_SceneRoot\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"TimeTower_ExHall_1\"": {
+      "m_bError": null,
+      "m_ID": "\"TimeTower_ExHall_1\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
+    "\"wolfvillage_1_A_gate\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_A_gate\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_1_B_excution\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_B_excution\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_1_C_deadtree\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_C_deadtree\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_1_D_tomb\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_D_tomb\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_1_E\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_E\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_1_F\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_1_F\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_A_giantbell\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_A_giantbell\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_B\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_B\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_C\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_C\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_D\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_D\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_E\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_E\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_F\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_F\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"wolfvillage_2_G\"": {
+      "m_bError": null,
+      "m_ID": "\"wolfvillage_2_G\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"TimeTower_wolfvillage_1\"": {
+      "m_bError": null,
+      "m_ID": "\"TimeTower_wolfvillage_1\"",
+      "m_BGM": "[[1,100301],[3,100302]]"
+    },
+    "\"Spore_0_A_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_0_A_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_0_B_Now_mushroomdec\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_0_B_Now_mushroomdec\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_0_B_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_0_B_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_A_door_Now\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_A_door_Now\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_A_mural_Now_confinement\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_A_mural_Now_confinement\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_A_mural_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_A_mural_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_B_mural_Now_confinement\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_B_mural_Now_confinement\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_B_mural_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_B_mural_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_C_mural_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_C_mural_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_D_BOSS_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_D_BOSS_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_E_BOSSbroken_now\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_E_BOSSbroken_now\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_1_F_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_1_F_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_A_campfire_Now_confinement\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_A_campfire_Now_confinement\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_A_campfire_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_A_campfire_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_B_mushroom_Now_collapse\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_B_mushroom_Now_collapse\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_B_mushroom_Now_confinement\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_B_mushroom_Now_confinement\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_B_mushroom_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_B_mushroom_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_C_Now_confinement\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_C_Now_confinement\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Spore_2_C_Past\"": {
+      "m_bError": null,
+      "m_ID": "\"Spore_2_C_Past\"",
+      "m_BGM": "[[1,100401],[3,100402]]"
+    },
+    "\"Ship01A\"": {
+      "m_bError": null,
+      "m_ID": "\"Ship01A\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"Ship01A_boss_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"Ship01A_boss_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"Ship01A_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"Ship01A_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01B_restroom01\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01B_restroom01\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01B_restroom01_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01B_restroom01_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01B_restroom02\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01B_restroom02\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01B_restroom02_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01B_restroom02_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin01\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin01\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin02\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin02\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin02_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin02_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin03\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin03\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin03_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin03_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin04\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin04\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin04_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin04_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01C_cabin04_TowerDefense\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01C_cabin04_TowerDefense\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01D_cabin01\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01D_cabin01\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01D_cabin02\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01D_cabin02\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01D_cabin02_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01D_cabin02_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated01\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated01\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated02\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated02\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated03\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated03\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated03_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated03_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated04_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated04_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01J_contaminated05_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01J_contaminated05_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01K_contaminated\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01K_contaminated\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship01K_contaminated_broken\"": {
+      "m_bError": null,
+      "m_ID": "\"ship01K_contaminated_broken\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship_prison_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"ship_prison_2A\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"ship_prisonboss_1A\"": {
+      "m_bError": null,
+      "m_ID": "\"ship_prisonboss_1A\"",
+      "m_BGM": "[[1,298],[3,299]]"
+    },
+    "\"TimeTower_Ship_1\"": {
+      "m_bError": null,
+      "m_ID": "\"TimeTower_Ship_1\"",
+      "m_BGM": "[[1,100501],[3,100502]]"
+    },
+    "\"homeland_memory_2_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_memory_2_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_memory_2_A_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_memory_2_A_BG\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_0_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_0_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_0_A_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_0_A_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_A_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_A_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_B\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_B\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_B_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_B_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_C\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_C\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_C_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_C_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_D\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_D\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_D_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_D_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_1_E\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_1_E\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_A_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_A_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_B\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_B\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_B_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_B_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_C\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_C\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_mountain_2_C_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_mountain_2_C_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_paradice_1_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_paradice_1_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_paradice_1_Aplot\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_paradice_1_Aplot\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_seaside_2_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_seaside_2_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_seaside_2_A_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_seaside_2_A_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_seaside_4_A_A\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_seaside_4_A_A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"homeland_seaside_4_A_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"homeland_seaside_4_A_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"TimeTower_homeland_1\"": {
+      "m_bError": null,
+      "m_ID": "\"TimeTower_homeland_1\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"TimeTower_homeland_1_Night\"": {
+      "m_bError": null,
+      "m_ID": "\"TimeTower_homeland_1_Night\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"module_moonvalley02a\"": {
+      "m_bError": null,
+      "m_ID": "\"module_moonvalley02a\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_coast_4_A\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_coast_4_A\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_warzone_1_A\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_warzone_1_A\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_warzone_2_A\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_warzone_2_A\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_warzone_2_B\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_warzone_2_B\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_warzone_2_C\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_warzone_2_C\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"moonvalley_warzone_2_D\"": {
+      "m_bError": null,
+      "m_ID": "\"moonvalley_warzone_2_D\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_biggate\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_biggate\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_biggate_boss\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_biggate_boss\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_Blue\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_Blue\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_Boss\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_Boss\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_Boss_red\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_Boss_red\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_Boss_sky\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_Boss_sky\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_brokenbridge\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_brokenbridge\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_grey\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_grey\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_Red\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_Red\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"SealCastle_BG_White\"": {
+      "m_bError": null,
+      "m_ID": "\"SealCastle_BG_White\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_biggate\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_biggate\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_biggate_New\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_biggate_New\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_brokenbridge\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_brokenbridge\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_horizontalpassage_blue\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_horizontalpassage_blue\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"Sealcastle_horizontalpassage_grey\"": {
+      "m_bError": null,
+      "m_ID": "\"Sealcastle_horizontalpassage_grey\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_horizontalpassage_red\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_horizontalpassage_red\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealcastle_horizontalpassage_white\"": {
+      "m_bError": null,
+      "m_ID": "\"sealcastle_horizontalpassage_white\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_courtyard\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_courtyard\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_courtyard_red\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_courtyard_red\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_courtyard_sky\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_courtyard_sky\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_curvedpassage_blue\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_curvedpassage_blue\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_curvedpassage_grey\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_curvedpassage_grey\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_curvedpassage_red\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_curvedpassage_red\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"sealedcastle_curvedpassage_white\"": {
+      "m_bError": null,
+      "m_ID": "\"sealedcastle_curvedpassage_white\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"Sealedcastle_hall\"": {
+      "m_bError": null,
+      "m_ID": "\"Sealedcastle_hall\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"Sealedcastle_hall_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"Sealedcastle_hall_BG\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"port_auction_1A\"": {
+      "m_bError": null,
+      "m_ID": "\"port_auction_1A\"",
+      "m_BGM": "[[1,101001],[3,101002]]"
+    },
+    "\"port_carnival_1B\"": {
+      "m_bError": null,
+      "m_ID": "\"port_carnival_1B\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"port_carnival_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"port_carnival_2A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"port_landstage_1B\"": {
+      "m_bError": null,
+      "m_ID": "\"port_landstage_1B\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"port_landstage_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"port_landstage_2A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"port_seaside_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"port_seaside_2A\"",
+      "m_BGM": "[[1,100701],[3,100702]]"
+    },
+    "\"desert_desertactivities_0A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_0A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_1A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_1A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_1A_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_1A_BG\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_1B\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_1B\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_1B_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_1B_BG\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_2A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_2B\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_2B\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_BG\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_boss\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_boss\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_desertactivities_boss_BG\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_desertactivities_boss_BG\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_canyon_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_canyon_2A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_canyon_2B\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_canyon_2B\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_canyon_2C\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_canyon_2C\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_canyon_2D\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_canyon_2D\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_canyon_2E\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_canyon_2E\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_lake_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_lake_2A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_lake_2B\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_lake_2B\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_lake_2C\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_lake_2C\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_plain_2A\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_plain_2A\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_plain_2B\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_plain_2B\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_plain_2C\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_plain_2C\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    },
+    "\"desert_plain_2D\"": {
+      "m_bError": null,
+      "m_ID": "\"desert_plain_2D\"",
+      "m_BGM": "[[1,101101],[3,101102]]"
+    }
+  },
+  "status": "processed_170_items"
+}

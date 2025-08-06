@@ -5,12 +5,14 @@ CastleStoryManager.TextTypeEnum = {
   Choose = 2,
   Text = 3
 }
+CastleStoryManager.ShowStoryType = {Plot = 1, Playback = 2}
 
 function CastleStoryManager:OnCreate()
   self.mWaitStory = {}
   self.iStoryTimes = 0
   self.iCurClkPlace = nil
   self.mAllPlaceCurStory = {}
+  self.m_mFinishedStory = {}
   self:addEventListener("eGameEvent_Item_SetItem", handler(self, self.OnItemChange))
   self:addEventListener("eGameEvent_Castle_UnlockPlace", handler(self, self.OnUnlockPlace))
 end
@@ -39,6 +41,7 @@ end
 function CastleStoryManager:OnCastleGetPlaceSC(data)
   self.mWaitStory = data.mWaitStory
   self.iStoryTimes = data.iStoryTimes
+  self.m_mFinishedStory = data.mFinishedStory
   self:FormatCurStoryList()
   self:FreshEventEntryRedDot()
   self:broadcastEvent("eGameEvent_CastleStoryFresh")
@@ -51,6 +54,7 @@ function CastleStoryManager:RqsCastleDoPlaceStory(iStoryId, is_skip, callback)
   RPCS():Castle_DoPlaceStory(msg, function(data)
     self.mWaitStory[data.iStoryId] = nil
     self.iStoryTimes = data.iStoryTimes
+    self.m_mFinishedStory[data.iStoryId] = data.iStoryTimes
     local reward_list = data.vReward
     if reward_list and next(reward_list) then
       utils.popUpRewardUI(reward_list, callback)
@@ -259,6 +263,38 @@ function CastleStoryManager:IsStoryCanShow(storydata)
       return true
     end
   end
+end
+
+function CastleStoryManager:GetFinishedStory()
+  return self.m_mFinishedStory
+end
+
+function CastleStoryManager:GetAllFinishedStoryInfo()
+  local list = {}
+  local cfgList = {}
+  for iStoryId, time in pairs(self.m_mFinishedStory) do
+    local cfg = self:GetCastleStoryInfoCfgByStoryID(iStoryId)
+    if cfg then
+      list[#list + 1] = {
+        cfg = cfg,
+        iStoryId = iStoryId,
+        time = time
+      }
+    end
+  end
+  if 0 < #list then
+    table.sort(list, function(a, b)
+      if a.time ~= b.time then
+        return a.time < b.time
+      elseif a.iStoryId ~= b.iStoryId then
+        return a.iStoryId < b.iStoryId
+      end
+    end)
+    for i, v in ipairs(list) do
+      cfgList[#cfgList + 1] = v.cfg
+    end
+  end
+  return cfgList, list
 end
 
 return CastleStoryManager

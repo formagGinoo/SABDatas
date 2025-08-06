@@ -6,12 +6,12 @@ end
 
 function Form_PlayerCenterAccountBind:OnActive()
   self.super.OnActive(self)
-  self.m_csui.m_uiGameObject.transform:Find("ui_common_frame_middle/img_txt_bg/txt_frame_middle_title"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindTitle")
-  self.m_csui.m_uiGameObject.transform:Find("txt_word"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindDesc")
-  self.m_btn_facebook.transform:Find("txt_facebook"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindFacebook")
-  self.m_btn_sign.transform:Find("txt_sign_desc1"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGoogle")
-  self.m_btn_appleid.transform:Find("txt_appleid"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindAppleID")
-  self.m_btn_notsign.transform:Find("txt_sign_desc2"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGuest")
+  self.m_csui.m_uiGameObject.transform:Find("ui_common_frame_middle/img_txt_bg/txt_frame_middle_title"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindTitle")
+  self.m_csui.m_uiGameObject.transform:Find("txt_word"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindDesc")
+  self.m_btn_facebook.transform:Find("txt_facebook"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindFacebook")
+  self.m_btn_sign.transform:Find("txt_sign_desc1"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGoogle")
+  self.m_btn_appleid.transform:Find("txt_appleid"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindAppleID")
+  self.m_btn_notsign.transform:Find("txt_sign_desc2"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGuest")
   self.onCloseCallBack = self.m_csui.m_param
   self.m_btn_sign:SetActive(SDKUtil.CheckIsShowLoginMode(SDKUtil.LoginMode.Google))
   self.m_btn_facebook:SetActive(SDKUtil.CheckIsShowLoginMode(SDKUtil.LoginMode.Facebook))

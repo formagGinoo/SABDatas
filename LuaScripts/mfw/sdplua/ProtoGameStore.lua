@@ -14,6 +14,8 @@ CmdId_Store_IAP_Deliver_Welfare_CS = 11909
 CmdId_Store_IAP_Deliver_Welfare_SC = 11910
 CmdId_Store_IAP_Deliver_DMM_CS = 11911
 CmdId_Store_IAP_Deliver_DMM_SC = 11912
+CmdId_Store_WeGame_Session_Start_CS = 11913
+CmdId_Store_WeGame_Session_Start_SC = 11914
 IAPReceiptType_Apple = 1
 IAPReceiptType_Google = 2
 IAPReceiptType_MSDK = 3
@@ -22,7 +24,8 @@ IAPReceiptType_QuickGame = 5
 IAPReceiptType_Welfare = 6
 IAPReceiptType_Mobapay = 7
 IAPReceiptType_DMM = 8
-IAPReceiptType_Max = IAPReceiptType_DMM + 1
+IAPReceiptType_WeGame = 9
+IAPReceiptType_Max = IAPReceiptType_WeGame + 1
 IAPStoreType_BaseStore = 1
 IAPStoreType_ActPayStore = 2
 IAPStoreType_ActBattlePass = 3
@@ -442,5 +445,119 @@ Cmd_Store_IAP_Deliver_DMM_SC.Definition = {
     0,
     8,
     0
+  }
+}
+WeGameProductInfo = sdp.SdpStruct("WeGameProductInfo")
+WeGameProductInfo.Definition = {
+  "sProductClassId",
+  "iProductCount",
+  "sProductPrice",
+  "sProductName",
+  "sProductIconUrl",
+  "sProductDescription",
+  sProductClassId = {
+    0,
+    0,
+    13,
+    ""
+  },
+  iProductCount = {
+    1,
+    0,
+    8,
+    0
+  },
+  sProductPrice = {
+    2,
+    0,
+    13,
+    ""
+  },
+  sProductName = {
+    3,
+    0,
+    13,
+    ""
+  },
+  sProductIconUrl = {
+    4,
+    0,
+    13,
+    ""
+  },
+  sProductDescription = {
+    5,
+    0,
+    13,
+    ""
+  }
+}
+Cmd_Store_WeGame_Session_Start_CS = sdp.SdpStruct("Cmd_Store_WeGame_Session_Start_CS")
+Cmd_Store_WeGame_Session_Start_CS.Definition = {
+  "sProductId",
+  "iProductSubId",
+  "iStoreType",
+  "sStoreParam",
+  "sRailId",
+  "iNeedAultLimit",
+  sProductId = {
+    0,
+    0,
+    13,
+    ""
+  },
+  iProductSubId = {
+    1,
+    0,
+    8,
+    0
+  },
+  iStoreType = {
+    2,
+    0,
+    8,
+    0
+  },
+  sStoreParam = {
+    3,
+    0,
+    13,
+    ""
+  },
+  sRailId = {
+    4,
+    0,
+    13,
+    ""
+  },
+  iNeedAultLimit = {
+    6,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Store_WeGame_Session_Start_SC = sdp.SdpStruct("Cmd_Store_WeGame_Session_Start_SC")
+Cmd_Store_WeGame_Session_Start_SC.Definition = {
+  "sRailOrderId",
+  "sRailGameId",
+  "sRailId",
+  sRailOrderId = {
+    0,
+    0,
+    13,
+    ""
+  },
+  sRailGameId = {
+    1,
+    0,
+    13,
+    ""
+  },
+  sRailId = {
+    2,
+    0,
+    13,
+    ""
   }
 }

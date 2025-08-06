@@ -52,7 +52,7 @@ function Form_Activity103Luoleilai_DialogueFastPass:FreshStepperShow()
   if not self.m_numStepper then
     return
   end
-  local totalLeftNum = self:GetCostItemNum() or 0
+  local totalLeftNum = self:GetTotalLeftTimes()
   self.m_numStepper:SetNumShowMax(true)
   self.m_numStepper:SetNumMax(totalLeftNum)
   self.m_numStepper:SetNumCur(self.m_curSweepNum)

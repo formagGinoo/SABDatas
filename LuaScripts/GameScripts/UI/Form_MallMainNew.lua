@@ -1,4 +1,5 @@
 local Form_MallMainNew = class("Form_MallMainNew", require("UI/UIFrames/Form_MallMainNewUI"))
+local ItemIns = ConfigManager:GetConfigInsByName("Item")
 local PaystoreType2SubPanel = {
   [MTTDProto.CmdActPayStoreType_Up] = "LimitUpPackSubPanel",
   [MTTDProto.CmdActPayStoreType_StepupGift] = "StepGiftSubPanel",
@@ -120,6 +121,14 @@ function Form_MallMainNew:OnDestroy()
   self.m_MainTabItemCache = {}
   self.m_SubTabItemCache = {}
   self:ReSetSubPanel()
+  if self.m_subPanelCache then
+    for k, v in pairs(self.m_subPanelCache) do
+      if v.subPanelLua and v.subPanelLua.dispose then
+        v.subPanelLua:dispose()
+        v.subPanelLua = nil
+      end
+    end
+  end
   if self.timer then
     TimeService:KillTimer(self.timer)
     self.timer = nil
@@ -191,6 +200,7 @@ function Form_MallMainNew:RefreshUI(force_fresh)
   self:ChangeSubPanel()
   self:RefreshJpRaw()
   self:RefreshRedDot()
+  self:RefreshPackScore()
 end
 
 function Form_MallMainNew:RefreshTab()
@@ -267,10 +277,12 @@ function Form_MallMainNew:FreshTime()
       TimeService:KillTimer(self.timer)
       self.timer = nil
     end
-    self.m_txt_timeleft_Text.text = TimeUtil:SecondsToFormatCNStr(ileftTime)
+    local lastTime = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+    self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTime)
     self.timer = TimeService:SetTimer(1, ileftTime, function()
       ileftTime = ileftTime - 1
-      self.m_txt_timeleft_Text.text = TimeUtil:SecondsToFormatCNStr(ileftTime)
+      local lastTimeCur = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+      self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTimeCur)
       if ileftTime <= 0 then
         TimeService:KillTimer(self.timer)
         self.timer = nil
@@ -306,11 +318,11 @@ function Form_MallMainNew:FreshTime()
         TimeService:KillTimer(self.timer)
         self.timer = nil
       end
-      local lastTime = TimeUtil:SecondsToFormatCNStr(ileftTime)
+      local lastTime = TimeUtil:SecondsToFormatCNStr3(ileftTime)
       self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(tipsTd), lastTime)
       self.timer = TimeService:SetTimer(1, ileftTime, function()
         ileftTime = ileftTime - 1
-        local lastTimeCur = TimeUtil:SecondsToFormatCNStr(ileftTime)
+        local lastTimeCur = TimeUtil:SecondsToFormatCNStr3(ileftTime)
         self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(tipsTd), lastTimeCur)
         if ileftTime <= 0 then
           TimeService:KillTimer(self.timer)
@@ -341,10 +353,12 @@ function Form_MallMainNew:FreshTime()
       self:RefreshUI(true)
       return
     end
-    self.m_txt_timeleft_Text.text = TimeUtil:SecondsToFormatCNStr(ileftTime)
+    local lastTime = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+    self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220022), lastTime)
     self.timer = TimeService:SetTimer(1, ileftTime, function()
       ileftTime = ileftTime - 1
-      self.m_txt_timeleft_Text.text = TimeUtil:SecondsToFormatCNStr(ileftTime)
+      local lastTimeCur = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+      self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220022), lastTimeCur)
       if ileftTime <= 0 then
         TimeService:KillTimer(self.timer)
         self.timer = nil
@@ -568,6 +582,7 @@ function Form_MallMainNew:OnInitSubTabItem(go, idx)
       return
     end
     self.iCurSelectSubTab = index
+    GlobalManagerIns:TriggerWwiseBGMState(189)
     self.m_SubTabHelper:Refresh()
     self:ChangeSubPanel()
   end)
@@ -655,6 +670,27 @@ function Form_MallMainNew:GetOtherActRedState()
   if self.m_PayStoreActivity then
     self.m_PayStoreActivity:OnGetMallStoreOtherActRed()
     self:OnMallDataRefresh()
+  end
+end
+
+function Form_MallMainNew:OnBtnpackscoreClicked()
+  local act = ActivityManager:GetActivityByType(MTTD.ActivityType_ConsumeReward)
+  if act and act:checkCondition() then
+    ActivityManager:DealJump(ActivityManager.JumpType.Activity, act:getID())
+  end
+end
+
+function Form_MallMainNew:RefreshPackScore()
+  local isShow, itemId = ActivityManager:GetConsumeRewardState()
+  if isShow and itemId then
+    self.m_pnl_packscore:SetActive(true)
+    local itemCfg = ItemIns:GetValue_ByItemID(itemId)
+    if not itemCfg:GetError() then
+      UILuaHelper.SetAtlasSprite(self.m_icon_packscore_Image, "Atlas_Item/" .. itemCfg.m_IconPath)
+      self.m_txt_packscore_Text.text = ConfigManager:GetCommonTextById(220025)
+    end
+  else
+    self.m_pnl_packscore:SetActive(false)
   end
 end
 

@@ -11,6 +11,16 @@ function Form_HuntingNightBuffChoose:AfterInit()
   }
   self.m_buffInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_buff_list_InfinityGrid, "HuntingRaid/UHuntingRaidBuffItem", initGridData)
   self.m_buffInfinityGrid:RegisterButtonCallback("c_item_buff", handler(self, self.OnSkillItemClk))
+  self.NumberEnum = {
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII"
+  }
 end
 
 function Form_HuntingNightBuffChoose:OnActive()
@@ -20,6 +30,7 @@ function Form_HuntingNightBuffChoose:OnActive()
     return
   end
   self.m_bossId = tParam.bossId
+  self.m_idx = tParam.idx
   self.m_selSkillIndex = nil
   self.m_chooseBuffList = {}
   self:RefreshUI()
@@ -69,6 +80,13 @@ function Form_HuntingNightBuffChoose:RefreshUI()
   self.m_skillList, self.m_chooseBuffList = self:GenerateData()
   self.m_buffInfinityGrid:ShowItemList(self.m_skillList)
   self.m_buffInfinityGrid:LocateTo(0)
+  local cfg = HuntingRaidManager:GetHuntingRaidBossCfgById(self.m_bossId)
+  if cfg then
+    self.m_txt_levelname_Text.text = tostring(cfg.m_mName)
+  end
+  if self.m_idx then
+    self.m_txt_level_Text.text = tostring(self.NumberEnum[self.m_idx])
+  end
   self:RefreshSkillInfo()
 end
 
@@ -84,15 +102,15 @@ function Form_HuntingNightBuffChoose:RefreshBuffList()
 end
 
 function Form_HuntingNightBuffChoose:RefreshSkillInfo(switchIndex)
-  UILuaHelper.SetActive(self.m_z_txt_buffempty, not self.m_selSkillIndex)
-  UILuaHelper.SetActive(self.m_pnl_normal, self.m_selSkillIndex)
+  self.m_pnl_tips_skill_huntnight:SetActive(self.m_selSkillIndex)
   if self.m_selSkillIndex and self.m_skillList[self.m_selSkillIndex] then
     local info = self.m_skillList[self.m_selSkillIndex]
     local skillCfg = info.cfg
     if skillCfg then
-      self.m_txt_buffname_Text.text = skillCfg.m_mName
+      self.m_txt_skill_name_huntnight_Text.text = skillCfg.m_mName
+      UILuaHelper.SetAtlasSprite(self.m_img_iconskillbuff1_huntnight_Image, skillCfg.m_Icon)
     end
-    self.m_txt_buffdes_Text.text = tostring(info.des)
+    self.m_txt_skill_describe_huntnight_Text.text = tostring(info.des)
   end
   for i = 1, SKILL_NUM do
     UILuaHelper.SetActive(self["m_img_iconskillbuff" .. i], self.m_chooseBuffList[i])
@@ -104,12 +122,16 @@ function Form_HuntingNightBuffChoose:RefreshSkillInfo(switchIndex)
     end
     if self.m_selSkillIndex and self.m_skillList[self.m_selSkillIndex] and not table.indexof(self.m_chooseBuffList, self.m_skillList[self.m_selSkillIndex].skillId) then
       UILuaHelper.SetActive(self["m_btn_refresh0" .. i], true)
-      UILuaHelper.SetActive(self["m_fx_tips_loop" .. i], true)
+      UILuaHelper.SetActive(self["m_fx_bg_loop" .. i], true)
     else
       UILuaHelper.SetActive(self["m_btn_refresh0" .. i], false)
-      UILuaHelper.SetActive(self["m_fx_tips_loop" .. i], false)
+      UILuaHelper.SetActive(self["m_fx_bg_loop" .. i], false)
     end
     UILuaHelper.SetActive(self["m_fx_iconskill_switch" .. i], switchIndex == i)
+  end
+  if #self.m_chooseBuffList == 0 then
+    self.m_fx_bg_loop1:SetActive(true)
+    self.m_fx_bg_loop2:SetActive(true)
   end
 end
 
@@ -175,13 +197,23 @@ function Form_HuntingNightBuffChoose:IsSameTab(tab1, tab2)
   return same
 end
 
-function Form_HuntingNightBuffChoose:IsOpenGuassianBlur()
-  return true
-end
-
 function Form_HuntingNightBuffChoose:OnBtncancelClicked()
   self:CloseForm()
   StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 54005)
+end
+
+function Form_HuntingNightBuffChoose:OnBtncloseClicked()
+  if not self.m_selSkillIndex then
+    self:CloseForm()
+    return
+  end
+  self.m_selSkillIndex = nil
+  for i, v in ipairs(self.m_skillList) do
+    v.is_select = false
+  end
+  self:RefreshSkillInfo()
+  self:RefreshBuffList()
+  self.m_pnl_tips_skill_huntnight:SetActive(false)
 end
 
 function Form_HuntingNightBuffChoose:OnDestroy()

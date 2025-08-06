@@ -20,6 +20,7 @@ function meta:OnLoad()
   self:bindFunction("createTaskBar")
   self:bindFunction("createPlayerHead")
   self:bindFunction("createRogueItemIcon")
+  self:bindFunction("createPackGiftPoint")
 end
 
 function meta:createBackButton(...)
@@ -114,6 +115,12 @@ end
 
 function meta:createRogueItemIcon(...)
   local prefab = require("UI/Widgets/RogueItemIcon").new(...)
+  table.insert(self.m_vWidgetList, prefab)
+  return prefab
+end
+
+function meta:createPackGiftPoint(...)
+  local prefab = require("UI/Widgets/PackGiftPoint").new(...)
   table.insert(self.m_vWidgetList, prefab)
   return prefab
 end

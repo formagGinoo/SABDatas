@@ -23,7 +23,9 @@ function Form_EquipmentCopyMainChoose:OnActive()
   self.m_boss_levelSubType_list = {}
   self:AddEventListeners()
   self:RefreshBossPanel()
-  self.m_ownerModule:CreateBossPosNode()
+  if not CS.GameQualityManager.DestroyBossChapterInBattle then
+    self.m_ownerModule:CreateBossPosNode()
+  end
   GlobalManagerIns:TriggerWwiseBGMState(154)
   GlobalManagerIns:TriggerWwiseBGMState(155)
   self:StartLoopBirdMusic()
@@ -181,6 +183,7 @@ function Form_EquipmentCopyMainChoose:OnBack()
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_EQUIPMENTCOPYMAINCHOOSE)
   StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
   self.m_ownerModule:ClearAllBossRes()
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_EquipmentCopyMainChoose:OnBackHome()
@@ -191,6 +194,7 @@ function Form_EquipmentCopyMainChoose:OnBackHome()
     GameSceneManager:CheckChangeSceneToMainCity(nil, true)
   end
   self.m_ownerModule:ClearAllBossRes()
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_EquipmentCopyMainChoose:IsFullScreen()

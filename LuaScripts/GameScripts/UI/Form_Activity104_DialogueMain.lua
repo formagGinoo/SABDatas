@@ -36,6 +36,7 @@ end
 function Form_Activity104_DialogueMain:FreshUI()
   Form_Activity104_DialogueMain.super.FreshUI(self)
   self:FreshDegreeLevelList()
+  self.m_curDegreeIndex = self.m_curDegreeIndex or self:GetChooseIndex() or 1
   self:FreshLevelTab(self.m_curDegreeIndex)
 end
 
@@ -46,6 +47,7 @@ function Form_Activity104_DialogueMain:FreshLevelTab(index)
     self.m_luaextensionInfinityGrid:ShowItemList(curDegreeData.levelList)
     local chooseItemIndex = self:GetLevelIndexByLevelID(index, curDegreeData.currentID)
     if not chooseItemIndex then
+      self.m_luaextensionInfinityGrid:LocateTo(self.iPerPageNum)
       return
     end
     self.m_luaextensionInfinityGrid:LocateTo(chooseItemIndex - 2)

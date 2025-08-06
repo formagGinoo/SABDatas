@@ -12,6 +12,7 @@ enum AccountType {
   AccountType_GSDK = 4;
   AccountType_QuickSDK = 5;
   AccountType_DMM = 6;
+  AccountType_WeGame = 7;
 }
 
 enum ActCfgNewDirectPushGiftType {
@@ -99,6 +100,9 @@ enum ActivityType {
   ActivityType_Refund = 140;
   ActivityType_SignGift = 141;
   ActivityType_GachaFree = 142;
+  ActivityType_ForbidCustomDescManager = 143;
+  ActivityType_ReturnSign = 144;
+  ActivityType_ConsumeReward = 145;
   ActivityType_TimelineJump = 146;
 }
 
@@ -446,6 +450,11 @@ enum CmdId_Act_CommonQuest {
   CmdId_Act_CommonQuest_TakeFinalReward_SC = 59834;
 }
 
+enum CmdId_Act_ConsumeReward {
+  CmdId_Act_ConsumeReward_TakeReward_CS = 60541;
+  CmdId_Act_ConsumeReward_TakeReward_SC = 60542;
+}
+
 enum CmdId_Act_DailyGiftNew {
   CmdId_Act_DailyGiftNew_BuyFreeGift_CS = 57901;
   CmdId_Act_DailyGiftNew_BuyFreeGift_SC = 57902;
@@ -499,6 +508,11 @@ enum CmdId_Act_Recharge {
   CmdId_Act_Recharge_IAP_GetFreeReward_SC = 50106;
   CmdId_Act_Recharge_SelectGift_CS = 50107;
   CmdId_Act_Recharge_SelectGift_SC = 50108;
+}
+
+enum CmdId_Act_ReturnSign {
+  CmdId_Act_ReturnSign_GetSignReward_CS = 60521;
+  CmdId_Act_ReturnSign_GetSignReward_SC = 60522;
 }
 
 enum CmdId_Act_Sign {
@@ -904,6 +918,8 @@ enum CmdId_Gacha {
   CmdId_Gacha_GetWishList_SC = 10758;
   CmdId_Gacha_GetRecord_CS = 10759;
   CmdId_Gacha_GetRecord_SC = 10760;
+  CmdId_Gacha_TakeStepSeq_CS = 10761;
+  CmdId_Gacha_TakeStepSeq_SC = 10762;
 }
 
 enum CmdId_Game_Push {
@@ -1184,6 +1200,8 @@ enum CmdId_Lamia {
   CmdId_Lamia_GameQuest_GetAllAward_SC = 19124;
   CmdId_Lamia_GetClueAward_CS = 19125;
   CmdId_Lamia_GetClueAward_SC = 19126;
+  CmdId_Lamia_GetSubActAward_CS = 19127;
+  CmdId_Lamia_GetSubActAward_SC = 19128;
 }
 
 enum CmdId_Legacy {
@@ -1582,6 +1600,8 @@ enum CmdId_Store {
   CmdId_Store_IAP_Deliver_Welfare_SC = 11910;
   CmdId_Store_IAP_Deliver_DMM_CS = 11911;
   CmdId_Store_IAP_Deliver_DMM_SC = 11912;
+  CmdId_Store_WeGame_Session_Start_CS = 11913;
+  CmdId_Store_WeGame_Session_Start_SC = 11914;
 }
 
 enum CmdId_Strategy {
@@ -1761,8 +1781,10 @@ enum ErrorCode {
   Error_Signature_Error = 1096;
   Error_Token_Error = 1097;
   Error_Req_TooFrequent = 1098;
+  Error_Role_NotRealName = 1099;
   Error_Limit_Times = 1100;
   Error_Limit_ReportLimit = 1101;
+  Error_HasDirty = 1102;
   Error_Quest_HaveNoQuest = 1121;
   Error_Quest_NotFinish = 1122;
   Error_Quest_Over = 1123;
@@ -2179,6 +2201,9 @@ enum ErrorCode {
   Error_Gacha_CheapTimesLimit = 2671;
   Error_Gacha_GuaranteeGroupError = 2672;
   Error_Gacha_FreeTimesLimit = 2673;
+  Error_Gacha_StepNotOpen = 2674;
+  Error_Gacha_StepSeqTaken = 2675;
+  Error_Gacha_StepSeqCantTake = 2676;
   Error_Legacy_NotExist = 2700;
   Error_Legacy_HeroInstalled = 2701;
   Error_Legacy_HeroNotInstalled = 2702;
@@ -2251,6 +2276,7 @@ enum ErrorCode {
   Error_Activity_NotInActTime = 3018;
   Error_Activity_StageNotFinish = 3019;
   Error_Activity_GuideNotFinish = 3020;
+  Error_ActConsumeReward_NoReward = 3040;
   Error_Activity_InviteNotifyInCD = 3392;
   Error_Activity_AccountCreateTime = 3393;
   Error_Activity_NeedPassStage = 3394;
@@ -2351,6 +2377,8 @@ enum ErrorCode {
   Error_Lamia_ExploreDataSizeError = 6517;
   Error_Lamia_CluPreStageNotPass = 6518;
   Error_Lamia_ClueAlreadyGet = 6519;
+  Error_Lamia_LegacyStageNotPass = 6520;
+  Error_Lamia_SubActAlreadyGet = 6521;
   Error_BalanceFightTest_TeamEmpty = 6551;
   Error_BalanceFightTest_TeamSizeWrong = 6552;
   Error_BalanceFightTest_SeasonFinished = 6553;
@@ -2379,6 +2407,10 @@ enum ErrorCode {
   Error_Activity_SignInGift_BuyTimeLimit = 6634;
   Error_Act_BattlePass_AlreadyBuy = 6641;
   Error_Act_BattlePass_None = 6642;
+  Error_Activity_ForbidCustomDesc = 6651;
+  Error_Activity_ForbidCustomDescEmergency = 6652;
+  Error_Activity_ReturnSign_CfgError = 6661;
+  Error_Activity_ReturnSign_NotOpen = 6662;
   Error_Activity_TimelineJump_Error = 6671;
   Error_Activity_TimelineJump_Rewarded = 6672;
 }
@@ -2477,6 +2509,9 @@ enum FightVerifyCheatType {
   FightVerifyCheatType_InRange = 1;
   FightVerifyCheatType_OutRange = 2;
   FightVerifyCheatType_FrameDiff = 3;
+  FightVerifyCheatType_AllowInRange = 4;
+  FightVerifyCheatType_AllowOutRange = 5;
+  FightVerifyCheatType_AllowFrameDiff = 6;
 }
 
 enum FormHeroType {
@@ -2496,14 +2531,17 @@ enum FormPresetId {
 }
 
 enum GachaDiscountType {
+  GachaDiscountType_None = 0;
   GachaDiscountType_Cheap = 1;
   GachaDiscountType_Free = 2;
+  GachaDiscountType_SpecialTen = 3;
 }
 
 enum GachaGuaranteeType {
   GachaGuaranteeType_Guarantee = 1;
   GachaGuaranteeType_MustGain = 2;
   GachaGuaranteeType_UpProtect = 3;
+  GachaGuaranteeType_ExtraGuarantee = 4;
 }
 
 enum GachaTimesType {
@@ -2571,7 +2609,8 @@ enum IAPReceiptType {
   IAPReceiptType_Welfare = 6;
   IAPReceiptType_Mobapay = 7;
   IAPReceiptType_DMM = 8;
-  IAPReceiptType_Max = 9;
+  IAPReceiptType_WeGame = 9;
+  IAPReceiptType_Max = 10;
 }
 
 enum IAPStoreType {
@@ -2700,6 +2739,7 @@ enum LamiaMiniGameMode {
 enum LamiaMiniGameType {
   LamiaMiniGameType_Memory = 1;
   LamiaMiniGameType_Whacka = 2;
+  LamiaMiniGameType_LegacyStage = 3;
   LamiaMiniGameType_Explore = 1001;
 }
 
@@ -2953,15 +2993,15 @@ enum ReplaceArenaSubType {
 enum ReportMessageType {
   ReportMessageType_RoleName = 6;
   ReportMessageType_AllianceName = 7;
+  ReportMessageType_Profile = 10;
+  ReportMessageType_Unknow = 11;
 }
 
 enum ReportReasonType {
-  ReportReasonType_Spamming = 1;
-  ReportReasonType_Advertisment = 2;
-  ReportReasonType_Abuse = 3;
-  ReportReasonType_Sex = 4;
-  ReportReasonType_Fake = 5;
-  ReportReasonType_Other = 6;
+  ReportReasonType_RoleNameIllegal = 1;
+  ReportReasonType_DataAbnormal = 2;
+  ReportReasonType_RoleSignatureIllegal = 3;
+  ReportReasonType_Other = 4;
 }
 
 enum RogueSubFightType {
@@ -3504,6 +3544,16 @@ message Cmd_Act_CommonQuest_TakeFinalReward_SC {
   repeated CmdIDNum vReward = 3;
 }
 
+message Cmd_Act_ConsumeReward_TakeReward_CS {
+  uint32 iActivityId = 1;
+}
+
+message Cmd_Act_ConsumeReward_TakeReward_SC {
+  uint32 iActivityId = 1;
+  repeated SdpUInt vTakenReward = 2;
+  repeated CmdIDNum vShowReward = 3;
+}
+
 message Cmd_Act_DailyGiftNew_BuyFreeGift_CS {
   uint32 iActivityId = 1;
   uint32 iIndex = 2;
@@ -3646,6 +3696,16 @@ message Cmd_Act_Recharge_SelectGift_CS {
 message Cmd_Act_Recharge_SelectGift_SC {
   uint32 iActivityId = 1;
   uint32 iGiftIndex = 2;
+}
+
+message Cmd_Act_ReturnSign_GetSignReward_CS {
+  uint32 iActivityId = 1;
+}
+
+message Cmd_Act_ReturnSign_GetSignReward_SC {
+  uint32 iActivityId = 1;
+  uint32 iMaxAwardedDays = 2;
+  repeated CmdIDNum vReward = 3;
 }
 
 message Cmd_Act_Sign_Sign_CS {
@@ -4392,6 +4452,7 @@ message Cmd_Castle_GetPlace_SC {
   repeated SdpUInt vUnlockPlace = 1;
   map<SdpUInt, SdpUInt> mWaitStory = 2;
   uint32 iStoryTimes = 3;
+  map<SdpUInt, SdpUInt> mFinishedStory = 4;
 }
 
 message Cmd_Castle_GetStarRoom_SC {
@@ -5122,6 +5183,17 @@ message Cmd_Gacha_SetWishList_SC {
   repeated SdpUInt vHeroIdList = 2;
 }
 
+message Cmd_Gacha_TakeStepSeq_CS {
+  uint32 iGachaId = 1;
+  repeated SdpUInt vSeq = 2;
+}
+
+message Cmd_Gacha_TakeStepSeq_SC {
+  uint32 iGachaId = 1;
+  repeated SdpUInt vSeq = 2;
+  repeated CmdIDNum vReward = 3;
+}
+
 message Cmd_Guide_GetGuide_SC {
   map<SdpUInt, SdpUInt> mGuideData = 1;
 }
@@ -5465,6 +5537,17 @@ message Cmd_Lamia_GetExploreData_SC {
 
 message Cmd_Lamia_GetList_SC {
   repeated LamiaData vList = 1;
+}
+
+message Cmd_Lamia_GetSubActAward_CS {
+  uint32 iActId = 1;
+  uint32 iSubActId = 2;
+}
+
+message Cmd_Lamia_GetSubActAward_SC {
+  uint32 iActId = 1;
+  repeated SdpUInt vAwardedSubAct = 2;
+  repeated CmdIDNum vRewards = 3;
 }
 
 message Cmd_Lamia_MiniGame_Finish_CS {
@@ -6737,7 +6820,7 @@ message Cmd_Push_RoomDiscard {
 
 message Cmd_Push_RoomEnter {
   PlayerIDType stPlayer = 1;
-  RoomInfo stRoom = 2;
+  MTTDProto.RoomInfo stRoom = 2;
 }
 
 message Cmd_Push_RoomInvite {
@@ -6759,7 +6842,7 @@ message Cmd_Push_RoomKick {
 
 message Cmd_Push_RoomLeave {
   PlayerIDType stPlayer = 1;
-  RoomInfo stRoom = 2;
+  MTTDProto.RoomInfo stRoom = 2;
   SdpString sLeaveName = 3;
 }
 
@@ -7268,10 +7351,9 @@ message Cmd_Role_RandomName_SC {
 message Cmd_Role_Report_CS {
   uint32 iType = 1;
   uint64 iTargetUid = 2;
-  SdpString sReason = 3;
-  uint32 iZoneId = 4;
-  uint32 iPicTime = 5;
-  uint32 iReportReasonType = 6;
+  uint32 iZoneId = 3;
+  repeated SdpUInt iReportReasonType = 4;
+  SdpString sReason = 5;
 }
 
 message Cmd_Role_ReportFace_CS {
@@ -7471,7 +7553,7 @@ message Cmd_Room_Create_CS {
 }
 
 message Cmd_Room_Create_SC {
-  RoomInfo stRoom = 1;
+  MTTDProto.RoomInfo stRoom = 1;
 }
 
 message Cmd_Room_Enter_CS {
@@ -7481,11 +7563,11 @@ message Cmd_Room_Enter_CS {
 
 message Cmd_Room_Enter_SC {
   uint32 iRet = 1;
-  RoomInfo stRoom = 2;
+  MTTDProto.RoomInfo stRoom = 2;
 }
 
 message Cmd_Room_GetInfo_SC {
-  RoomInfo stRoom = 1;
+  MTTDProto.RoomInfo stRoom = 1;
 }
 
 message Cmd_Room_Invite_CS {
@@ -7507,7 +7589,7 @@ message Cmd_Room_Kick_CS {
 
 message Cmd_Room_Kick_SC {
   uint32 iRet = 1;
-  RoomInfo stRoom = 2;
+  MTTDProto.RoomInfo stRoom = 2;
 }
 
 message Cmd_Room_Leave_SC {
@@ -7843,6 +7925,21 @@ message Cmd_Store_Trace_IAPBuy_CS {
   SdpString sReportPrice = 5;
 }
 
+message Cmd_Store_WeGame_Session_Start_CS {
+  SdpString sProductId = 1;
+  uint32 iProductSubId = 2;
+  uint32 iStoreType = 3;
+  SdpString sStoreParam = 4;
+  SdpString sRailId = 5;
+  uint32 iNeedAultLimit = 6;
+}
+
+message Cmd_Store_WeGame_Session_Start_SC {
+  SdpString sRailOrderId = 1;
+  SdpString sRailGameId = 2;
+  SdpString sRailId = 3;
+}
+
 message Cmd_Strategy_Add_CS {
   uint32 iIndex = 1;
 }
@@ -7991,6 +8088,21 @@ message CmdActCfgCommunityEntranceCommunityCfg {
   SdpString sButtonName = 6;
 }
 
+message CmdActCfgConsumeReward {
+  CmdActCommonCfgConsumeReward stCommonCfg = 1;
+}
+
+message CmdActCfgConsumeRewardPointReward {
+  uint32 iNeedPoint = 1;
+  repeated CmdIDNum vReward = 2;
+  uint32 bFinal = 3;
+}
+
+message CmdActCfgConsumeRewardProducts {
+  SdpString sProductId = 1;
+  uint32 iPoint = 2;
+}
+
 message CmdActCfgEmergencyGift {
   CmdActCommonCfgEmergencyGift stCommonCfg = 1;
 }
@@ -8009,10 +8121,30 @@ message CmdActCfgEmergencyGiftGift {
   SdpString sConditionPassStage = 11;
   SdpString sConditionPayAmountRMB = 12;
   SdpString sConditionPayAmount = 13;
+  SdpString iProductNameId = 14;
+  SdpString sProductDesc = 15;
 }
 
 message CmdActCfgFightDebug {
   CmdActCommonCfgFightDebug stCommonCfg = 1;
+}
+
+message CmdActCfgForbidCustomDescManager {
+  CmdActCommonCfgForbidCustomDescManager stCommonCfg = 1;
+}
+
+message CmdActCfgForbidCustomDescManagerForbidCustomDesc {
+  uint32 id = 1;
+  SdpString begin_time = 2;
+  SdpString end_time = 3;
+  SdpString comment = 4;
+}
+
+message CmdActCfgForbidCustomDescManagerForbidCustomDescEmergency {
+  uint32 id = 1;
+  uint32 begin_time = 2;
+  uint32 end_time = 3;
+  SdpString comment = 4;
 }
 
 message CmdActCfgFullBurstDay {
@@ -8361,6 +8493,10 @@ message CmdActCfgRefundRefundGoods {
   uint32 iDiamond = 4;
 }
 
+message CmdActCfgReturnSign {
+  CmdActCommonCfgReturnSign stCommonCfg = 1;
+}
+
 message CmdActCfgSign {
   uint32 iUiType = 1;
   uint32 bSeasonAct = 2;
@@ -8591,6 +8727,9 @@ message CmdActClientCfgGameNotice {
   SdpString sJumpContent = 6;
   uint32 iJumpTypeLast = 7;
   SdpString sJumpParamLast = 8;
+  uint32 iHideTime = 9;
+  SdpString sClientVersion = 10;
+  uint32 iQuestId = 11;
 }
 
 message CmdActClientCfgLevelAward {
@@ -8696,6 +8835,14 @@ message CmdActCommonCfgCensor {
   uint32 bCensor = 1;
 }
 
+message CmdActCommonCfgConsumeReward {
+  uint32 iPointItem = 1;
+  uint32 iResendMail = 2;
+  uint32 iPopId = 3;
+  map<SdpUInt, CmdActCfgConsumeRewardPointReward> mPointReward = 4;
+  map<SdpString, CmdActCfgConsumeRewardProducts> mProducts = 5;
+}
+
 message CmdActCommonCfgEmergencyGift {
   map<SdpUInt, CmdActCfgEmergencyGiftGift> mGift = 1;
   repeated SdpUInt vProductSubIdLimit = 2;
@@ -8707,6 +8854,11 @@ message CmdActCommonCfgFightDebug {
   SdpString sReportAccount = 3;
   SdpString sReportPassword = 4;
   uint32 iFightDebugSizeLimit = 5;
+}
+
+message CmdActCommonCfgForbidCustomDescManager {
+  map<SdpUInt, CmdActCfgForbidCustomDescManagerForbidCustomDesc> mForbidCustomDesc = 1;
+  map<SdpUInt, CmdActCfgForbidCustomDescManagerForbidCustomDescEmergency> mForbidCustomDescEmergency = 2;
 }
 
 message CmdActCommonCfgFullBurstDay {
@@ -8787,6 +8939,14 @@ message CmdActCommonCfgRefund {
   map<SdpUInt, CmdActCfgRefundRefundGoods> mRefundGoods = 10;
 }
 
+message CmdActCommonCfgReturnSign {
+  uint32 iActiveDay = 1;
+  uint32 iCloseDay = 2;
+  uint32 iCDDay = 3;
+  uint32 iResendMailTemplateId = 4;
+  map<SdpUInt, repeated CmdIDNum> mReward = 5;
+}
+
 message CmdActCommonCfgSignGift {
   SdpString sProductId = 1;
   uint32 iProductSubId = 2;
@@ -8825,6 +8985,11 @@ message CmdActCommonQuest_Status {
   repeated SdpUInt vTakenFinalReward = 5;
   repeated CmdQuest vQuest = 6;
   repeated SdpUInt vOver = 7;
+}
+
+message CmdActConsumeReward_Status {
+  repeated SdpUInt vTakenReward = 1;
+  uint32 iPoint = 2;
 }
 
 message CmdActDailyGiftNew_Status {
@@ -8930,6 +9095,7 @@ message CmdActivityData {
   map<SdpString, SdpString> mCfgMultiLanguage = 60;
   map<SdpString, SdpString> mDownloadPictureCDN = 61;
   SdpString sJumpParam = 62;
+  repeated SdpUInt vLanguageId = 63;
 }
 
 message CmdActivityMainCityIcon {
@@ -9107,6 +9273,14 @@ message CmdActRecharge_IAPPhaseGiftStatus {
 
 message CmdActRechargeRebate_Status {
   uint32 iRabateTime = 1;
+}
+
+message CmdActReturnSign_Status {
+  uint32 iActivityId = 1;
+  uint32 iOpenTime = 2;
+  uint32 iCloseTime = 3;
+  uint32 iLoginDay = 4;
+  uint32 iMaxAwardedDays = 5;
 }
 
 message CmdActSign_Status {
@@ -9817,6 +9991,7 @@ message CmdGachaPool {
   uint32 iCheapTimes = 5;
   uint32 iFreeTimes = 6;
   uint32 iFreeTimesTen = 7;
+  repeated SdpUInt vTakenStepSeq = 8;
 }
 
 message CmdGachaRecord {
@@ -10538,6 +10713,7 @@ message LamiaData {
   LamiaMiniGame stMiniGame = 4;
   map<SdpUInt, LamiaStage> mStageStat = 5;
   repeated SdpUInt vAwardedClue = 6;
+  repeated SdpUInt vAwardedSubAct = 7;
 }
 
 message LamiaMiniGame {
@@ -10899,6 +11075,15 @@ message ServerGroupInfo {
 message SessionKeyAddition {
   uint32 iBattleSvrId = 1;
   uint32 iZoneId = 2;
+}
+
+message WeGameProductInfo {
+  SdpString sProductClassId = 1;
+  uint32 iProductCount = 2;
+  SdpString sProductPrice = 3;
+  SdpString sProductName = 4;
+  SdpString sProductIconUrl = 5;
+  SdpString sProductDescription = 6;
 }
 
 message ZoneInfo {

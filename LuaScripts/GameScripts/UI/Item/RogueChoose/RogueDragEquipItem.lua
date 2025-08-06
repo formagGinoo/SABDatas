@@ -211,9 +211,6 @@ function RogueDragEquipItem:FreshIconShow()
   end
   UILuaHelper.SetActive(self.m_icon_dust, maskIcon and maskIcon ~= "")
   UILuaHelper.SetActive(self.m_icon_black, maskIcon and maskIcon ~= "")
-  UILuaHelper.SetAtlasSprite(self.m_icon2_Image, self.m_rogueEquipItemData.rogueStageItemCfg.m_ItemIcon)
-  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon2_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
-  UILuaHelper.SetLocalPosition(self.m_icon2, 0, 0, 0)
 end
 
 function RogueDragEquipItem:FreshGridLocalPos(deltaPosX, deltaPosY)
@@ -271,6 +268,12 @@ end
 
 function RogueDragEquipItem:FreshLineShow(lineNode, showSpecialLine)
   if not lineNode then
+    return
+  end
+  if not lineNode.lineTrans then
+    return
+  end
+  if utils.isNull(lineNode.lineTrans) then
     return
   end
   local followRogueItem = lineNode.followRogueItem
@@ -599,6 +602,9 @@ end
 function RogueDragEquipItem:PlayCombineOverAnim()
   UILuaHelper.SetActive(self.m_vx_get, false)
   UILuaHelper.SetActive(self.m_vx_get, true)
+  UILuaHelper.SetAtlasSprite(self.m_icon2_Image, self.m_rogueEquipItemData.rogueStageItemCfg.m_ItemIcon)
+  UILuaHelper.SetSizeWithCurrentAnchors(self.m_icon2_Image, self.m_GridXNum * GridSizeX + BorderWidth, self.m_GridYNum * GridSizeY + BorderHeight)
+  UILuaHelper.SetLocalPosition(self.m_icon2, 0, 0, 0)
 end
 
 function RogueDragEquipItem:PlayEquippedAnim()

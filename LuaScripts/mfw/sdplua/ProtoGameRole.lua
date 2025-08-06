@@ -101,6 +101,7 @@ AccountType_MSdk = 3
 AccountType_GSDK = 4
 AccountType_QuickSDK = 5
 AccountType_DMM = 6
+AccountType_WeGame = 7
 AccountChannelGroupType_General = 1
 AccountChannelGroupType_Other = 6
 EnumDebugFlag_ShowDebug = 1
@@ -123,6 +124,12 @@ RolePushNoticeType_Mail_Arena = RolePushNoticeType_Mail_BeAttack + 1
 RolePushNoticeType_PushSet = RolePushNoticeType_Mail_Arena + 1
 ReportMessageType_RoleName = 6
 ReportMessageType_AllianceName = 7
+ReportMessageType_Profile = 10
+ReportMessageType_Unknow = ReportMessageType_Profile + 1
+ReportReasonType_RoleNameIllegal = 1
+ReportReasonType_DataAbnormal = 2
+ReportReasonType_RoleSignatureIllegal = 3
+ReportReasonType_Other = ReportReasonType_RoleSignatureIllegal + 1
 UserTokenType_Web = 1
 CmdServerConfigData = sdp.SdpStruct("CmdServerConfigData")
 CmdServerConfigData.Definition = {
@@ -1427,10 +1434,9 @@ Cmd_Role_Report_CS = sdp.SdpStruct("Cmd_Role_Report_CS")
 Cmd_Role_Report_CS.Definition = {
   "iType",
   "iTargetUid",
-  "sReason",
   "iZoneId",
-  "iPicTime",
   "iReportReasonType",
+  "sReason",
   iType = {
     0,
     0,
@@ -1443,29 +1449,23 @@ Cmd_Role_Report_CS.Definition = {
     10,
     "0"
   },
-  sReason = {
-    2,
-    0,
-    13,
-    ""
-  },
   iZoneId = {
-    3,
-    0,
-    8,
-    0
-  },
-  iPicTime = {
-    4,
+    2,
     0,
     8,
     0
   },
   iReportReasonType = {
-    5,
+    3,
     0,
-    8,
-    0
+    sdp.SdpVector(8),
+    nil
+  },
+  sReason = {
+    4,
+    0,
+    13,
+    ""
   }
 }
 Cmd_Role_Report_SC = sdp.SdpStruct("Cmd_Role_Report_SC")

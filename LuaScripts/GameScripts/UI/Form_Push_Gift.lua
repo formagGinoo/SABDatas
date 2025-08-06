@@ -12,6 +12,22 @@ function Form_Push_Gift:OnActive()
   self.super.OnActive(self)
   self.m_cutDownTime = 0
   self.m_giftData = self.m_csui.m_param
+  self:InitData()
+  self:RefreshUI()
+  self:AddEventListeners()
+end
+
+function Form_Push_Gift:OnInactive()
+  self.super.OnInactive(self)
+  if self.m_downTimer then
+    TimeService:KillTimer(self.m_downTimer)
+    self.m_downTimer = nil
+  end
+  self.m_cutDownTime = 0
+  self:RemoveAllEventListeners()
+end
+
+function Form_Push_Gift:InitData()
   self.m_stActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
   self.m_stPushGiftActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PushGift)
   if not self.m_stActivity or not self.m_stPushGiftActivity then
@@ -20,19 +36,16 @@ function Form_Push_Gift:OnActive()
     return
   end
   self.m_giftDataList = self:GeneratedData()
-  self:RefreshUI()
-  self:AddEventListeners()
 end
 
-function Form_Push_Gift:OnInactive()
-  self.super.OnInactive(self)
-  TimeService:KillTimer(self.m_downTimer)
-  self.m_cutDownTime = 0
-  self:RemoveAllEventListeners()
+function Form_Push_Gift:OnActivityResetData()
+  self:InitData()
+  self:RefreshUI()
 end
 
 function Form_Push_Gift:AddEventListeners()
   self:addEventListener("eGameEvent_Buy_Gift_Success", handler(self, self.CloseUI))
+  self:addEventListener("eGameEvent_Activity_ResetData", handler(self, self.OnActivityResetData))
 end
 
 function Form_Push_Gift:RemoveAllEventListeners()
@@ -76,19 +89,21 @@ function Form_Push_Gift:RefreshUI()
   self.m_ListInfinityGrid:ShowItemList(self.m_giftDataList)
   self.m_ListInfinityGrid:LocateTo(0)
   self.m_cutDownTime = self.m_giftData.iExpireTime - TimeUtil:GetServerTimeS()
-  self.m_txt_frame_leftnum_Text.text = self:SecondToTimeText(self.m_cutDownTime)
+  local lastTime = TimeUtil:SecondsToFormatCNStr4(self.m_cutDownTime)
+  self.m_txt_frame_leftnum_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTime)
   if self.m_downTimer then
     TimeService:KillTimer(self.m_downTimer)
     self.m_downTimer = nil
   end
-  self.m_downTimer = TimeService:SetTimer(self.m_cutDownTime, -1, function()
+  self.m_downTimer = TimeService:SetTimer(1, self.m_cutDownTime, function()
     self.m_cutDownTime = self.m_cutDownTime - 1
     if self.m_cutDownTime < 0 then
       TimeService:KillTimer(self.m_downTimer)
       self:CloseUI()
       return
     end
-    self.m_txt_frame_leftnum_Text.text = TimeUtil:SecondToTimeText(self.m_cutDownTime)
+    local lastTimeCur = TimeUtil:SecondsToFormatCNStr4(self.m_cutDownTime)
+    self.m_txt_frame_leftnum_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTimeCur)
   end)
 end
 
@@ -130,7 +145,10 @@ end
 
 function Form_Push_Gift:OnDestroy()
   self.super.OnDestroy(self)
-  TimeService:KillTimer(self.m_downTimer)
+  if self.m_downTimer then
+    TimeService:KillTimer(self.m_downTimer)
+    self.m_downTimer = nil
+  end
 end
 
 local fullscreen = true

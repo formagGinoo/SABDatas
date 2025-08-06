@@ -1024,6 +1024,17 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "10300610": {
+      "m_bError": null,
+      "m_ItemID": "10300610",
+      "m_Desc": "\"尘封的「时之匕首」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "10300640": {
       "m_bError": null,
       "m_ItemID": "10300640",
@@ -1563,6 +1574,17 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100610": {
+      "m_bError": null,
+      "m_ItemID": "20100610",
+      "m_Desc": "\"时之匕首\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100640": {
       "m_bError": null,
       "m_ItemID": "20100640",
@@ -1740,5 +1762,5 @@
       "m_HeroHeadPos": "[0,0,0]"
     }
   },
-  "status": "processed_158_items"
+  "status": "processed_160_items"
 }

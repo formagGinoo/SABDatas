@@ -183,7 +183,7 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt04", false)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_mail01", false)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_timeline", false)
-  local bIsUnlock, iUnlockAttractRank = AttractManager:IsArchiveUnlock(iHeroId, iArchiveId)
+  local bIsUnlock, iUnlockAttractRank, unlockStr = AttractManager:IsArchiveUnlock(iHeroId, iArchiveId)
   local bIsRewardRecived = AttractManager:IsArchiveRewardRecived(iHeroId, iArchiveId)
   if attractArchiveCfg.m_ArchiveSubType == AttractManager.ArchiveSubType.NormalStory then
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt02", true)
@@ -211,6 +211,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt02_lock", true)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title02_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title02_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title02_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -242,6 +244,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt01_lock", true)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title01_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title01_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title01_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -273,6 +277,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt03_lock", true)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title03_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title03_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title03_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -304,6 +310,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_txt04_lock", true)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title04_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title04_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_title04_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -340,6 +348,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_mail01_lock", true)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_mail01_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_mail01_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_mail01_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -374,6 +384,8 @@ function Form_AttractBook2:FreshPageItem(go, idx, attractArchiveCfg)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_nml_timeline_unlock", false)
       if iUnlockAttractRank then
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_timeline_lock", string.gsubNumberReplace(ConfigManager:GetCommonTextById(100801), iUnlockAttractRank))
+      elseif unlockStr then
+        LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_timeline_lock", unlockStr)
       else
         LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_timeline_lock", ConfigManager:GetCommonTextById(100802))
       end
@@ -465,11 +477,19 @@ function Form_AttractBook2:OnBtnItemClicked(params)
     elseif attractArchiveCfg.m_ArchiveSubType == AttractManager.ArchiveSubType.SpecialLetter then
       self.m_UILockID = UILockIns:Lock(1)
       local externRes = {}
-      local depen = CS.VisualFavorability.GetDepenResource(attractArchiveCfg.m_TimelineType, attractArchiveCfg.m_TimelineId)
-      for k, v in pairs(depen) do
-        table.insert(externRes, {sName = k, eType = v})
+      local vPackage = {}
+      if attractArchiveCfg.m_TimelineType == 1 then
+        local depen = CS.VisualFavorability.GetDepenResource(attractArchiveCfg.m_TimelineType, attractArchiveCfg.m_TimelineId)
+        for k, v in pairs(depen) do
+          table.insert(externRes, {sName = k, eType = v})
+        end
+      else
+        table.insert(vPackage, {
+          sName = attractArchiveCfg.m_TimelineId,
+          eType = DownloadManager.ResourcePackageType.Timeline
+        })
       end
-      DownloadManager:DownloadResourceWithUI(nil, externRes, "Form_AttractBook2:OnClickAcceptInviteCallback", nil, nil, function()
+      DownloadManager:DownloadResourceWithUI(vPackage, externRes, "Form_AttractBook2:OnClickAcceptInviteCallback", nil, nil, function()
         self:OnClickAcceptInviteCallback(attractArchiveCfg)
       end, nil, nil, nil, nil, function()
         if self.m_UILockID then

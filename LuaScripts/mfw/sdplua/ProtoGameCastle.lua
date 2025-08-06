@@ -490,6 +490,7 @@ Cmd_Castle_GetPlace_SC.Definition = {
   "vUnlockPlace",
   "mWaitStory",
   "iStoryTimes",
+  "mFinishedStory",
   vUnlockPlace = {
     0,
     0,
@@ -507,6 +508,12 @@ Cmd_Castle_GetPlace_SC.Definition = {
     0,
     8,
     0
+  },
+  mFinishedStory = {
+    3,
+    0,
+    sdp.SdpMap(8, 8),
+    nil
   }
 }
 Cmd_Castle_UnlockKeyPlace_CS = sdp.SdpStruct("Cmd_Castle_UnlockKeyPlace_CS")

@@ -40,6 +40,7 @@ function ActTaskTabItem:OnItemClicked()
   if not self.m_itemIndex then
     return
   end
+  GlobalManagerIns:TriggerWwiseBGMState(189)
   if self.m_itemInitData and self.m_itemInitData.itemClkBackFun then
     self.m_itemInitData.itemClkBackFun(self.m_itemIndex)
   end

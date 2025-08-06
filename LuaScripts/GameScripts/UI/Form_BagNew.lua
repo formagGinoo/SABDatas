@@ -149,10 +149,12 @@ function Form_BagNew:RefreshItemList()
     self.m_img_rl_bg:SetActive(true)
     if not self.m_equipTagCur or self.m_equipTagCur == 0 then
       self.m_itemList = EquipManager:GetUnOverLoadEquipDataList()
-      self.m_txt_rl_num_Text.text = string.format(ConfigManager:GetCommonTextById(20050), #self.m_itemList, ConfigManager:GetGlobalSettingsByKey("EquipMaxSpace"))
+      local list = EquipManager:GetEquipList()
+      self.m_txt_rl_num_Text.text = string.format(ConfigManager:GetCommonTextById(20050), table.getn(list), ConfigManager:GetGlobalSettingsByKey("EquipMaxSpace"))
     else
       self.m_itemList = EquipManager:GetUnOverLoadEquipDataListByPos(self.m_equipTagCur)
-      self.m_txt_rl_num_Text.text = #self.m_itemList
+      local list = EquipManager:GetEquipDataByPos(self.m_equipTagCur)
+      self.m_txt_rl_num_Text.text = table.getn(list)
     end
     self.m_itemList = EquipManager:EquipmentStacked(self.m_itemList)
     if self.m_iFilterTabIndex == SortType.Quality then

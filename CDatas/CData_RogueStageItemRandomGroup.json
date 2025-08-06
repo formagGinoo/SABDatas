@@ -1313,20 +1313,9 @@
     },
     "1001001": {
       "_type": "nested_dictionary",
-      "_count": 61,
+      "_count": 62,
       "_processed": 50,
       "data": {
-        "10200001": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001001",
-          "m_ItemID": "10200001",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10200001,20200001]",
-          "m_IsTech": "1"
-        },
         "10300010": {
           "m_bError": null,
           "m_RandomGroupID": "1001001",
@@ -1820,6 +1809,17 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300570,20100570]",
+          "m_IsTech": null
+        },
+        "10300610": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300610",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300610,20100610]",
           "m_IsTech": null
         },
         "10300640": {
@@ -1870,8 +1870,8 @@
     },
     "1001002": {
       "_type": "nested_dictionary",
-      "_count": 49,
-      "_processed": 49,
+      "_count": 50,
+      "_processed": 50,
       "data": {
         "10300010": {
           "m_bError": null,
@@ -2366,6 +2366,17 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300570,20100570]",
+          "m_IsTech": null
+        },
+        "10300610": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300610",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300610,20100610]",
           "m_IsTech": null
         },
         "10300640": {

@@ -61,6 +61,7 @@ function MallGoodsChapterNewSubPanel:ReFreshUI()
   self.m_lastBuyState = self.is_Purchased
   self.m_bg_getall_normal:SetActive(self.have_RewardCanGet)
   self.m_bg_getall_grey:SetActive(not self.have_RewardCanGet)
+  self:OnRefreshGiftPoint()
 end
 
 function MallGoodsChapterNewSubPanel:RefreshTitle()
@@ -125,6 +126,27 @@ end
 
 function MallGoodsChapterNewSubPanel:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function MallGoodsChapterNewSubPanel:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  if not self.goodsChapterCfg or not self.goodsChapterCfg.m_ProductID then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(self.goodsChapterCfg.m_ProductID)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function MallGoodsChapterNewSubPanel:OnDestroy()

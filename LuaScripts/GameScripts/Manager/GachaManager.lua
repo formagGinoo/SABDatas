@@ -26,7 +26,8 @@ end
 function GachaManager:OnAfterInitConfig()
   GachaManager.GachaDiscountType = {
     Cheap = MTTDProto.GachaDiscountType_Cheap,
-    Free = MTTDProto.GachaDiscountType_Free
+    Free = MTTDProto.GachaDiscountType_Free,
+    SpecialTen = MTTDProto.GachaDiscountType_SpecialTen
   }
   local GachaIns = ConfigManager:GetConfigInsByName("Gacha")
   self.m_gachaAllCfg = GachaIns:GetAll()
@@ -366,6 +367,10 @@ function GachaManager:RequestGachaResult(param)
       end
     end
   end
+  if iTimesType == 10 and iDiscountType == 3 then
+    self:ReqDoGacha(iGachaId, 10, false, 3)
+    return
+  end
   if iDiscountType ~= 0 then
     self:ReqDoGacha(iGachaId, iTimesType, true, iDiscountType)
   elseif wishCostNum and 0 < wishCostNum and costNum == 0 and costItemId ~= -1 then
@@ -507,12 +512,18 @@ function GachaManager:CheckGachaPoolHaveRedDotById(gachaId)
         show = true
       end
     end
+    if self:IsHaveSpecialGacha10(gachaId) then
+      show = true
+    end
     if 0 < cfg.m_DailyMax then
       local dailyTimes = self:GetGachaDailyTimesById(gachaId)
       dailyTimes = cfg.m_DailyMax - dailyTimes
       if dailyTimes < 10 then
         show = false
       end
+    end
+    if self:CheckStepGachaHaveRedPoint(gachaId) then
+      show = true
     end
     local redDot = self:CheckDailyFreeGachaRedDotById(gachaId)
     if redDot then
@@ -541,6 +552,9 @@ function GachaManager:CheckGachaPoolHaveRedDot()
             show = true
           end
         end
+        if self:IsHaveSpecialGacha10(itemCfg.m_GachaID) then
+          show = true
+        end
         local gachaDailyMax = itemCfg.m_DailyMax
         if gachaDailyMax and 0 < tonumber(gachaDailyMax) then
           local dailyTimes = self:GetGachaDailyTimesById(itemCfg.m_GachaID)
@@ -548,6 +562,9 @@ function GachaManager:CheckGachaPoolHaveRedDot()
           if dailyTimes < 10 then
             show = false
           end
+        end
+        if self:CheckStepGachaHaveRedPoint(itemCfg.m_GachaID) then
+          show = true
         end
         if show then
           return show
@@ -561,6 +578,21 @@ function GachaManager:CheckGachaPoolHaveRedDot()
       end
       local redDot = self:CheckDailyFreeGachaRedDotById(gachaId)
       if redDot then
+        return true
+      end
+    end
+  end
+  return false
+end
+
+function GachaManager:CheckStepGachaHaveRedPoint(gachaId)
+  local gachaConfig = self:GetGachaConfig(gachaId)
+  if gachaConfig.m_StepID > 0 then
+    local gachaCount = self:GetGachaCountById(gachaId)
+    local gachaStepIns = ConfigManager:GetConfigInsByName("GachaStep")
+    local gachaStepCfg = gachaStepIns:GetValue_ByStepID(gachaConfig.m_StepID) or {}
+    for i, v in pairs(gachaStepCfg) do
+      if gachaCount >= v.m_GachaNum and not self:IsStepReceived(gachaId, i) then
         return true
       end
     end
@@ -969,6 +1001,41 @@ function GachaManager:CheckGacha1HaveRedDotById(gachaId)
       end
     end
   end
+end
+
+function GachaManager:IsHaveSpecialGacha10(gachaId)
+  local gachaConfig = self:GetGachaConfig(gachaId)
+  local specialWish10Token = utils.changeCSArrayToLuaTable(gachaConfig.m_Special10Token)
+  if specialWish10Token and 0 < #specialWish10Token then
+    local itemId = specialWish10Token[1]
+    local itemNum = specialWish10Token[2]
+    local userNum = ItemManager:GetItemNum(tonumber(itemId), true)
+    if itemNum <= userNum then
+      return true, itemId, itemNum, userNum
+    end
+  end
+  return false
+end
+
+function GachaManager:GetGachaTakenStepSeqById(iGachaId)
+  local gachaPool = self.mGachaPool[iGachaId] or {}
+  return gachaPool.vTakenStepSeq or {}
+end
+
+function GachaManager:SetGachaTakenStepSeqById(gachaId, takenStepSeq)
+  local gachaPool = self.mGachaPool[gachaId] or {}
+  gachaPool.vTakenStepSeq = takenStepSeq
+  self.mGachaPool[gachaId] = gachaPool
+end
+
+function GachaManager:IsStepReceived(iGachaId, stepId)
+  local takenStepSeq = self:GetGachaTakenStepSeqById(iGachaId)
+  for _, claimedId in ipairs(takenStepSeq) do
+    if claimedId == stepId then
+      return true
+    end
+  end
+  return false
 end
 
 return GachaManager

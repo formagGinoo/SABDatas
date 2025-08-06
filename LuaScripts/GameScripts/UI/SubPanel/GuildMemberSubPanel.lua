@@ -103,7 +103,7 @@ function GuildMemberSubPanel:updateScrollViewCell(index, cell_object, cell_data)
   end
   local active = string.gsubnumberreplace(ConfigManager:GetCommonTextById(100041), tostring(cell_data.iTodayActive or 0))
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_num_member_activity", active)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_name", cell_data.sRoleName)
+  LuaBehaviourUtil.setText(luaBehaviour, "c_txt_name", cell_data.sRoleName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_power", cell_data.iPower)
   local img_careericon = UIUtil.findImage(transform, "c_root_node/c_txt_name/c_img_careericon")
   ResourceUtil:CreateGuildPostIconByPost(img_careericon, cell_data.iPost)

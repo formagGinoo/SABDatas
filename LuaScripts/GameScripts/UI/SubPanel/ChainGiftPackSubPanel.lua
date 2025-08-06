@@ -51,6 +51,7 @@ function ChainGiftPackSubPanel:RefreshUI()
     UILuaHelper.SetActive(self.m_img_soldoutmask, self.isOver)
   end
   self.m_txt_countnum_Text.text = ConfigManager:GetCommonTextById(20109)
+  self:OnRefreshGiftPoint()
 end
 
 function ChainGiftPackSubPanel:OnBtnbuyClicked()
@@ -78,6 +79,29 @@ function ChainGiftPackSubPanel:OnBtnbuyClicked()
       IAPManager:OnCallbackFail(param1, param2)
     end
   end)
+end
+
+function ChainGiftPackSubPanel:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  local productId = self.m_curShowGoodInfo.sProductId
+  if not productId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function ChainGiftPackSubPanel:OnIconboxClicked()

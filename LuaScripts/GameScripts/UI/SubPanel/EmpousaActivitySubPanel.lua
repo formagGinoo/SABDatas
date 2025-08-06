@@ -3,7 +3,6 @@ local EmpousaActivitySubPanel = class("EmpousaActivitySubPanel", UISubPanelBase)
 local iMaxCount = 3
 
 function EmpousaActivitySubPanel:OnInit()
-  self:AddEventListeners()
   self.mComponents = {}
   for i = 1, iMaxCount do
     local trans = self["m_btn_item_task" .. i].transform
@@ -22,6 +21,7 @@ function EmpousaActivitySubPanel:OnInit()
 end
 
 function EmpousaActivitySubPanel:OnInActive()
+  self:RemoveAllEventListeners()
   self:CheckRecycleSpine(self.iHeroId)
   if self.m_UILockID and UILockIns:IsValidLocker(self.m_UILockID) then
     UILockIns:Unlock(self.m_UILockID)
@@ -37,6 +37,8 @@ function EmpousaActivitySubPanel:OnDestroy()
 end
 
 function EmpousaActivitySubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self:RefreshUI()
 end
 
@@ -65,9 +67,6 @@ function EmpousaActivitySubPanel:OnLevelAwardUpdate(stParam)
       end
     end
   end
-end
-
-function EmpousaActivitySubPanel:killRemainTimer()
 end
 
 function EmpousaActivitySubPanel:RefreshUI()

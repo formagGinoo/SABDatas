@@ -1,0 +1,93 @@
+{
+  "className": "CData_MiniGameLegacyStage",
+  "data": {
+    "1056": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "305001": {
+          "m_bError": null,
+          "m_SubActID": "1056",
+          "m_LevelID": "305001",
+          "m_OpenTime": "\"2025-07-18 04:00:00\"",
+          "m_OderLevel": null,
+          "m_UnlockLevel": null,
+          "m_mLevelNum": "\"P 1-1\"",
+          "m_mLevelName": "\"Crestfallen\"",
+          "m_mPuzzleTItle": "\"Set the pointers to the position indicated in the hint.\"",
+          "m_mPuzzleDesc": "\"Alone, he pressed on toward the light, leaving all behind.\nHis resolve never faltered, yet when he reached the top, he found his own radiance had waned, as faint as a <color=#a65f30>crescent moon</color>.\"",
+          "m_mPuzzleHint": "\"Please set to <color=#a65f30>[Crescent Moon]</color>\"",
+          "m_AnswerID": "270",
+          "m_PiecesID": "3",
+          "m_PlayDialogue": "[\"Tutor_1050_305001_01\",\"Tutor_1050_305001_02\",\"Tutor_1050_305001_03\"]"
+        },
+        "305002": {
+          "m_bError": null,
+          "m_SubActID": "1056",
+          "m_LevelID": "305002",
+          "m_OpenTime": "\"2025-07-19 04:00:00\"",
+          "m_OderLevel": "305001",
+          "m_UnlockLevel": "105101",
+          "m_mLevelNum": "\"P 1-2\"",
+          "m_mLevelName": "\"Enter Shadow\"",
+          "m_mPuzzleTItle": "\"Set the pointers to the position indicated in the hint.\"",
+          "m_mPuzzleDesc": "\"All his life, he pursued the sun.\nA distant flame to yearn for, yet never to face.\nHis story began in the shadowed depths of night, beneath the fading light of a <color=#a65f30>waning moon</color>.\"",
+          "m_mPuzzleHint": "\"Please set to <color=#a65f30>[Waning Moon]</color>\"",
+          "m_AnswerID": "90",
+          "m_PiecesID": "2",
+          "m_PlayDialogue": "[\"Tutor_1050_305002_01\",\"Tutor_1050_305002_02\"]"
+        },
+        "305003": {
+          "m_bError": null,
+          "m_SubActID": "1056",
+          "m_LevelID": "305003",
+          "m_OpenTime": "\"2025-07-20 04:00:00\"",
+          "m_OderLevel": "305002",
+          "m_UnlockLevel": "105101",
+          "m_mLevelNum": "\"P 1-3\"",
+          "m_mLevelName": "\"At the Precipice\"",
+          "m_mPuzzleTItle": "\"Set the pointers to the position indicated in the hint.\"",
+          "m_mPuzzleDesc": "\"Carrying the weight of her family's name, she journeyed with two dear friends.\nThey were the brightest stars on the continent.\nUntil she glimpsed a future where choices had to be made.\n<color=#a65f30>The new moon</color> marked both an ending and a beginning.\"",
+          "m_mPuzzleHint": "\"Please set to <color=#a65f30>[Crescent Moon]</color>\"",
+          "m_AnswerID": "270",
+          "m_PiecesID": "1",
+          "m_PlayDialogue": "[\"Tutor_1050_305003_01\",\"Tutor_1050_305003_02\"]"
+        },
+        "305004": {
+          "m_bError": null,
+          "m_SubActID": "1056",
+          "m_LevelID": "305004",
+          "m_OpenTime": "\"2025-07-21 04:00:00\"",
+          "m_OderLevel": "305003",
+          "m_UnlockLevel": "105101",
+          "m_mLevelNum": "\"P 1-4\"",
+          "m_mLevelName": "\"Heart of the Void\"",
+          "m_mPuzzleTItle": "\"Set the pointers to the position indicated in the hint.\"",
+          "m_mPuzzleDesc": "\"This is the dawn of time, and its end.\nIn the endless void of oblivion, a hero remembered by none fights a futile battle, over and over.\nStill, she holds to the belief that the <color=#a65f30>eclipse</color> will one day break into dawn.\"",
+          "m_mPuzzleHint": "\"Please set to <color=#a65f30>[Eclipse]</color>\"",
+          "m_AnswerID": "180",
+          "m_PiecesID": "5",
+          "m_PlayDialogue": "[\"Tutor_1050_305004_01\",\"Tutor_1050_305004_02\"]"
+        },
+        "305005": {
+          "m_bError": null,
+          "m_SubActID": "1056",
+          "m_LevelID": "305005",
+          "m_OpenTime": "\"2025-07-22 04:00:00\"",
+          "m_OderLevel": "305004",
+          "m_UnlockLevel": "105101",
+          "m_mLevelNum": "\"P 1-5\"",
+          "m_mLevelName": "\"The Reunion\"",
+          "m_mPuzzleTItle": "\"Set the pointers to the position indicated in the hint.\"",
+          "m_mPuzzleDesc": "\"He perished in flames, only to be reborn from death's embrace.\nWith fractured memories, he seeks his true self and the Moonblessed.\nWhen the Moonblessed reunite, the <color=#a65f30>full moon</color> shall rise for the Bloodborn once more.\"",
+          "m_mPuzzleHint": "\"Please set to <color=#a65f30>[Full Moon]</color>\"",
+          "m_AnswerID": null,
+          "m_PiecesID": "4",
+          "m_PlayDialogue": "[\"Tutor_1050_305005_01\",\"Tutor_1050_305005_02\"]"
+        }
+      }
+    }
+  },
+  "status": "processed_1_items"
+}

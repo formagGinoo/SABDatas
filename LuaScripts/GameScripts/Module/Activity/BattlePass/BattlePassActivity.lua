@@ -47,6 +47,7 @@ function BattlePassActivity:RequestGetLevelReward(iLevel, callback)
       callback()
     end
     self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self:getID())
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RewardGet", self:getID())
   end)
 end
 
@@ -449,6 +450,28 @@ function BattlePassActivity:HasUnclaimedTask()
     end
   end
   return false
+end
+
+function BattlePassActivity:HasRewardRed()
+  local isRed = false
+  local dataCfg = self:GetLevelCfg()
+  local curLevel = self:GetCurLevel()
+  local isHaveBuy = self:IsHaveBuy()
+  for _, data in pairs(dataCfg) do
+    local levelCfg = data.levelCfg
+    local drawStatus = self:GetDrawStatus(data.iLevel)
+    local isNotGetLevel = curLevel < data.iLevel
+    if not isNotGetLevel then
+      if drawStatus == 0 then
+        return true
+      elseif drawStatus == 1 and isHaveBuy then
+        return true
+      elseif drawStatus == 2 then
+        isRed = false
+      end
+    end
+  end
+  return isRed
 end
 
 function BattlePassActivity:OnPushDailyRefresh(sc, msg)

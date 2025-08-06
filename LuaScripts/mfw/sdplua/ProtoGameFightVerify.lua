@@ -65,6 +65,9 @@ FightVerifyCheatType_None = 0
 FightVerifyCheatType_InRange = 1
 FightVerifyCheatType_OutRange = 2
 FightVerifyCheatType_FrameDiff = 3
+FightVerifyCheatType_AllowInRange = 4
+FightVerifyCheatType_AllowOutRange = 5
+FightVerifyCheatType_AllowFrameDiff = 6
 CmdStartChallengeInfoCS = sdp.SdpStruct("CmdStartChallengeInfoCS")
 CmdStartChallengeInfoCS.Definition = {
   "sCSharpMd5",

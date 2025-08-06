@@ -40,8 +40,8 @@ function GameScene_ActExplore:OnLeaveScene(iSceneIDNext)
   StackBottom:DestroyUI(UIDefines.ID_FORM_ACTEXPLOREMAIN)
   StackFlow:DestroyUI(UIDefines.ID_FORM_WHACKMOLEBATTLEMAIN)
   StackFlow:DestroyUI(UIDefines.ID_FORM_WHACKMOLEMAIN)
+  StackFlow:DestroyUI(UIDefines.ID_FORM_ACTEXPLOREEXIT)
   UILuaHelper.RemoveCameraFromUIRootStack(CS.UnityEngine.Camera.main)
-  StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_ACTEXPLOREEXIT)
   self.exploreWorld:Destroy()
   self.exploreWorld = nil
   self.sceneName = nil

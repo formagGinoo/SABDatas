@@ -107,7 +107,7 @@ function Job_Login_Login_CheckUpgrade_Impl.DownloadUpgradePatch(jobNode, scLogin
     end
     local freeSpaceSize = CS.DeviceUtil.GetPersistentDataPathAvailableSize()
     local virNeedSpaceSize = (needSpaceSize or 0) / 1024 / 1024 * 6
-    log.error("needSpaceSize: " .. needSpaceSize .. " freeSpaceSize: " .. freeSpaceSize)
+    log.info("needSpaceSize: " .. needSpaceSize .. " freeSpaceSize: " .. freeSpaceSize)
     if freeSpaceSize < virNeedSpaceSize then
       utils.CheckAndPushCommonTips({
         title = CS.ConfFact.LangFormat4DataInit("CommonError"),
@@ -134,14 +134,14 @@ function Job_Login_Login_CheckUpgrade_Impl.DownloadUpgradePatch(jobNode, scLogin
       local iCurrDownloadSize = stDownloadHandler.CurrDownloadSize
       local iNeedDownloadSize = stDownloadHandler.NeedDownloadSize
       if iCurrDownloadSize < iNeedDownloadSize then
-        jobNode.UnitProgress = iCurrDownloadSize / iNeedDownloadSize * 0.7
+        jobNode.UnitProgress = iCurrDownloadSize / iNeedDownloadSize * 0.7 * 0.6
         local sProgress = DownloadManager:GetDownloadProgressStr(iCurrDownloadSize, iNeedDownloadSize)
         EventCenter.Broadcast(EventDefine.eGameEvent_Login_ShowDownloadProgress, {bShow = true, sProgress = sProgress})
       else
         local iCurrUnZipFileSize = stDownloadHandler.CurrUnZipFileSize
         local iNeedUnZipFileSize = stDownloadHandler.NeedUnZipFileSize
         if 0 < iNeedUnZipFileSize then
-          jobNode.UnitProgress = 0.7 + iCurrUnZipFileSize / iNeedUnZipFileSize * 0.3
+          jobNode.UnitProgress = (0.7 + iCurrUnZipFileSize / iNeedUnZipFileSize * 0.3) * 0.6
           local sProgress = string.format(CS.ConfFact.LangFormat4DataInit("LoginCheckUpgradeUnzip") .. " %d / %d", iCurrUnZipFileSize, iNeedUnZipFileSize)
           EventCenter.Broadcast(EventDefine.eGameEvent_Login_ShowDownloadProgress, {bShow = true, sProgress = sProgress})
         else
@@ -157,31 +157,62 @@ function Job_Login_Login_CheckUpgrade_Impl.DownloadUpgradePatch(jobNode, scLogin
         ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatch_Success")
         log.info("UpgradePatch Succeed")
         CS.MUF.Download.UpgradePatch.Instance:CheckVersion()
-        if DownloadManager:NeedRestartOnUpgradePatch() then
-          utils.CheckAndPushCommonTips({
-            title = CS.ConfFact.LangFormat4DataInit("UpdateComplete"),
-            content = CS.ConfFact.LangFormat4DataInit("UpdateRestartConfirm"),
-            funcText1 = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes"),
-            btnNum = 1,
-            bLockBack = true,
-            func1 = function()
-              CS.ApplicationManager.Instance:RestartGame()
-            end
-          })
+        local iTimerCopyAddResPreProgress = -1
+        
+        local function OnCopyAddResPreFinished()
+          ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_CopyAddResPre_Success")
+          TimeService:KillTimer(iTimerCopyAddResPreProgress)
+          CS.TGRPDownloaderAddResPre.Instance:ClearAddResPreDir()
+          if DownloadManager:NeedRestartOnUpgradePatch() then
+            utils.CheckAndPushCommonTips({
+              title = CS.ConfFact.LangFormat4DataInit("UpdateComplete"),
+              content = CS.ConfFact.LangFormat4DataInit("UpdateRestartConfirm"),
+              funcText1 = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes"),
+              btnNum = 1,
+              bLockBack = true,
+              func1 = function()
+                CS.ApplicationManager.Instance:RestartGame()
+              end
+            })
+          else
+            EventCenter.Broadcast(EventDefine.eGameEvent_Login_ShowDownloadProgress, {bShow = false})
+            jobNode.UnitProgress = 1
+            EventCenter.Broadcast(EventDefine.eGameEvent_Login_SetProgressClamp, {
+              jobFlow = require("JobFlow/JobGraphStartup/JobGraphStartup").Instance(),
+              fMin = 0,
+              fMax = 1
+            })
+            StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_LOGINANNOUNCEMENTUPGRADE)
+            CS.VersionContext.GetContext():Reload()
+            CS.LuaManager.Instance:ReloadLuaBundle()
+            CS.MUF.Download.DownloadResource.Instance:Reload()
+            CS.MultiLanguageManager.Instance:ReloadLanguageConfig()
+            Job_Login_Login_CheckUpgrade_Impl.OnCheckUpgradeComplete(jobNode, scLoginCheckUpgrade)
+          end
+        end
+        
+        local function OnCopyAddResPreProgress()
+          local iCopiedFiles = CS.TGRPDownloaderAddResPre.Instance.CopiedFiles
+          local iCopiedFilesTotal = CS.TGRPDownloaderAddResPre.Instance.CopiedFilesTotal
+          if iCopiedFiles >= iCopiedFilesTotal then
+            OnCopyAddResPreFinished()
+          end
+          if iCopiedFilesTotal == 0 then
+            iCopiedFilesTotal = 1
+          end
+          jobNode.UnitProgress = 0.6 + iCopiedFiles / iCopiedFilesTotal * 0.4
+          local sProgress = string.format(CS.ConfFact.LangFormat4DataInit("LoginCheckUpgradeAddResPreCopy") .. " %d / %d", iCopiedFiles, iCopiedFilesTotal)
+          EventCenter.Broadcast(EventDefine.eGameEvent_Login_ShowDownloadProgress, {bShow = true, sProgress = sProgress})
+        end
+        
+        local sTargetResVersion = CS.VersionUtil.GetResVer(sClientVersion)
+        local sAddResPreResVer = LocalDataManager:GetStringSimple("DownloadAddResPre_Start", "")
+        if sTargetResVersion == sAddResPreResVer then
+          ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_CopyAddResPre_Start")
+          iTimerCopyAddResPreProgress = TimeService:SetTimer(0.05, -1, OnCopyAddResPreProgress)
+          CS.TGRPDownloaderAddResPre.Instance:Copy2PersistentDataPath(sTargetResVersion)
         else
-          EventCenter.Broadcast(EventDefine.eGameEvent_Login_ShowDownloadProgress, {bShow = false})
-          jobNode.UnitProgress = 1
-          EventCenter.Broadcast(EventDefine.eGameEvent_Login_SetProgressClamp, {
-            jobFlow = require("JobFlow/JobGraphStartup/JobGraphStartup").Instance(),
-            fMin = 0,
-            fMax = 1
-          })
-          StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_LOGINANNOUNCEMENTUPGRADE)
-          CS.VersionContext.GetContext():Reload()
-          CS.LuaManager.Instance:ReloadLuaBundle()
-          CS.MUF.Download.DownloadResource.Instance:Reload()
-          CS.MultiLanguageManager.Instance:ReloadLanguageConfig()
-          Job_Login_Login_CheckUpgrade_Impl.OnCheckUpgradeComplete(jobNode, scLoginCheckUpgrade)
+          OnCopyAddResPreFinished()
         end
       else
         ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatch_Failed" .. "Patch_DownloadPatch_Failed" .. "@" .. tostring(handler.ErrorCode) .. "@" .. tostring(handler.ErrorMessage))

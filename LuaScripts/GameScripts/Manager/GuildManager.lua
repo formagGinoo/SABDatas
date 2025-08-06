@@ -114,7 +114,7 @@ function GuildManager:OnCreate()
   self.m_iLikeTimes = 0
   self.m_iSignNum = nil
   self.m_iSignTime = nil
-  self.m_vApplyList = nil
+  self.m_vApplyList = {}
   self.m_guildBossData = {}
   self.m_dailyChallengeTimes = 0
   self.m_usedFightHero = {}
@@ -135,6 +135,7 @@ function GuildManager:OnInitNetwork()
   RPCS():Listen_Push_Alliance_DelRoleApply(handler(self, self.OnPushDelRoleApply), "GuildManager")
   RPCS():Listen_Push_AllianceBattle_NewRound(handler(self, self.OnPushAllianceBattleNewRound), "GuildManager")
   RPCS():Listen_Push_Alliance_Battle_Boss(handler(self, self.OnPushAllianceBattleBoss), "GuildManager")
+  RPCS():Listen_Push_Alliance_AddApplyMember(handler(self, self.OnPushAllianceAddApplyMember), "GuildManager")
   self:addEventListener("eGameEvent_Alliance_GetRecommendList", handler(self, self.OnGetGuildListData))
 end
 
@@ -281,6 +282,11 @@ end
 
 function GuildManager:OnPushAllianceBattleBoss(data)
   self.m_battleResultData = data
+end
+
+function GuildManager:OnPushAllianceAddApplyMember(data)
+  table.insert(self.m_vApplyList, data.stRoleData)
+  self:broadcastEvent("eGameEvent_Alliance_GetApplyList_RedPoint")
 end
 
 function GuildManager:ReqAllianceGetInit()
@@ -619,10 +625,20 @@ end
 
 function GuildManager:OnReqOpenAllianceGetApplyListSC(data)
   self.m_vApplyList = data.vApplyList
-  self:broadcastEvent("eGameEvent_Alliance_GetApplyList_RedPoint", data)
+  self:broadcastEvent("eGameEvent_Alliance_GetApplyList_RedPoint")
+end
+
+function GuildManager:RemoveApplyListData(iOperUid)
+  for i, v in ipairs(self.m_vApplyList) do
+    if v.stRoleId.iUid == iOperUid then
+      table.remove(self.m_vApplyList, i)
+      break
+    end
+  end
 end
 
 function GuildManager:ReqAllianceOperateApplyCS(iOperUid, bAccept, iOperZoneId)
+  self:RemoveApplyListData(iOperUid)
   local reqMsg = MTTDProto.Cmd_Alliance_OperateApply_CS()
   reqMsg.iOperUid = iOperUid
   reqMsg.bAccept = bAccept
@@ -658,6 +674,7 @@ function GuildManager:ReqAllianceRefuseAllCS()
 end
 
 function GuildManager:OnReqAllianceRefuseAllSC(data)
+  self.m_vApplyList = {}
   self:broadcastEvent("eGameEvent_Alliance_RefuseAll", data)
 end
 
@@ -1165,7 +1182,38 @@ function GuildManager:CheckGuildEntryHaveRedPoint()
     return flag
   end
   flag = AncientManager:CheckAncientEnterRedDot()
+  if flag and 0 < flag then
+    return flag
+  end
+  flag = self:CheckGuildApplyListHaveRedPoint()
   return flag
+end
+
+function GuildManager:CheckGuildApplyListHaveRedPoint()
+  local flag = 0
+  local id, _ = RoleManager:GetRoleAllianceInfo()
+  if id and id ~= "0" and id ~= 0 then
+    if self.m_vApplyList then
+      if 0 < table.getn(self.m_vApplyList) then
+        flag = 1
+      end
+    else
+      self:ReqGetOwnerAllianceDetailOnFirstEnterHall(id)
+    end
+  end
+  return flag
+end
+
+function GuildManager:ReqGetOwnerAllianceDetailOnFirstEnterHall(iAllianceId)
+  local reqMsg = MTTDProto.Cmd_Alliance_GetDetail_CS()
+  reqMsg.iAllianceId = iAllianceId
+  RPCS():Alliance_GetDetail(reqMsg, function(stData, msg)
+    self.m_ownerGuildDetail = stData.stAllianceData
+    local memberData = self:GetOwnerGuildMemberDataByUID(RoleManager:GetUID())
+    if memberData.iPost ~= GuildManager.AlliancePost.Member then
+      self:ReqOpenAllianceGetApplyListCS()
+    end
+  end)
 end
 
 function GuildManager:GetGuildBossData()

@@ -429,11 +429,13 @@ function Form_RogueStageMain:OnBackClk()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
   self:CloseForm()
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_RogueStageMain:OnBackHome()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_RogueStageMain:OnPnlClivebigClicked()

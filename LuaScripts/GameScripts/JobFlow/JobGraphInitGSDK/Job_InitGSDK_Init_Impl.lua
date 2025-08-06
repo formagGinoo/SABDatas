@@ -5,6 +5,10 @@ function Job_InitGSDK_Init_Impl.OnInit(jobNode)
     ReportManager:ReportLoginProcess("InitDMM_Init", "Start", true)
     DmmManager:Initialize()
     jobNode.Status = JobStatus.Success
+  elseif ChannelManager:IsWegameChannel() then
+    ReportManager:ReportLoginProcess("InitWegame_Init", "Start", true)
+    WegameManager:Initialize()
+    jobNode.Status = JobStatus.Success
   else
     ReportManager:ReportLoginProcess("InitQSDK_Init", "Start", true)
     

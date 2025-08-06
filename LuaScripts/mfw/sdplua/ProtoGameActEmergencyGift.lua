@@ -99,6 +99,8 @@ CmdActCfgEmergencyGiftGift.Definition = {
   "sConditionPassStage",
   "sConditionPayAmountRMB",
   "sConditionPayAmount",
+  "iProductNameId",
+  "sProductDesc",
   iGiftID = {
     0,
     0,
@@ -173,6 +175,18 @@ CmdActCfgEmergencyGiftGift.Definition = {
   },
   sConditionPayAmount = {
     12,
+    0,
+    13,
+    ""
+  },
+  iProductNameId = {
+    13,
+    0,
+    13,
+    ""
+  },
+  sProductDesc = {
+    14,
     0,
     13,
     ""

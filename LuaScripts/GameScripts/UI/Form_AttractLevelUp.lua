@@ -38,7 +38,6 @@ end
 
 function Form_AttractLevelUp:OnInactive()
   self.super.OnInactive(self)
-  self:CheckRecycleSpine(true)
   if self.callback then
     self.callback()
     self.callback = nil
@@ -56,7 +55,7 @@ function Form_AttractLevelUp:InitView()
   self.m_delayTime = 0.2
   self.m_cachedEffect = {}
   self:FreshAttrInfo()
-  self:FreshHeroSpine()
+  self:FreshHeroIcon()
 end
 
 function Form_AttractLevelUp:FreshAttrInfo()
@@ -88,6 +87,12 @@ function Form_AttractLevelUp:FreshAttrInfo()
   else
     self.m_loop_scroll_view:reloadData(scrollData)
   end
+end
+
+function Form_AttractLevelUp:FreshHeroIcon()
+  local iHeroId = self.m_curShowHeroData.characterCfg.m_HeroID
+  local szIcon = ResourceUtil:GetHeroIconPath(iHeroId, self.m_curShowHeroData.characterCfg)
+  UILuaHelper.SetAtlasSprite(self.m_img_role_Image, szIcon, nil, nil, true)
 end
 
 local CellDelayTime = 0.1
@@ -132,83 +137,8 @@ function Form_AttractLevelUp:updateAttrCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_after_num", cell_data.newAttr.num)
 end
 
-function Form_AttractLevelUp:FreshHeroSpine()
-  if not self.m_curShowHeroData then
-    return
-  end
-  local heroCfg = self.m_curShowHeroData.characterCfg
-  if heroCfg.m_HeroID == 0 then
-    return
-  end
-  self:ShowHeroSpine(heroCfg.m_Spine)
-end
-
-function Form_AttractLevelUp:ShowHeroSpine(heroSpinePathStr)
-  if not self.m_HeroSpineDynamicLoader then
-    return
-  end
-  self:CheckRecycleSpine()
-  local typeStr = SpinePlaceCfg.HeroDetail
-  self.m_HeroSpineDynamicLoader:LoadHeroSpine(heroSpinePathStr, typeStr, self.m_hero_root, function(spineLoadObj)
-    self:CheckRecycleSpine()
-    self.m_curHeroSpineObj = spineLoadObj
-    UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
-    self:OnLoadSpineBack()
-  end)
-end
-
-function Form_AttractLevelUp:CheckRecycleSpine(isNeedResetParam)
-  if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
-    if isNeedResetParam then
-      UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
-    end
-    self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
-    self.m_curHeroSpineObj = nil
-  end
-end
-
-function Form_AttractLevelUp:OnLoadSpineBack()
-  if not self.m_curHeroSpineObj then
-    return
-  end
-  self.m_spineDitherExtension = self.m_curHeroSpineObj.spineTrans:GetComponent("SpineDitherExtension")
-  if self.m_dragEndTimer then
-    local leftTime = TimeService:GetTimerLeftTime(self.m_dragEndTimer)
-    if leftTime and 0 < leftTime then
-      self.m_spineDitherExtension:SetToDither(1.0, 0.0, leftTime)
-    else
-      self.m_spineDitherExtension:StopToDither(true)
-    end
-  else
-    self.m_spineDitherExtension:StopToDither(true)
-  end
-  self:FreshShowSpineMaskAndGray()
-end
-
-function Form_AttractLevelUp:FreshShowSpineMaskAndGray()
-  local tempTabSpinCfg = ShowTabHeroPos[HeroTagCfg.Attract]
-  if not tempTabSpinCfg then
-    return
-  end
-  local isMaskAndGray = tempTabSpinCfg.isMaskAndGray
-  if self.m_spineDitherExtension and not UILuaHelper.IsNull(self.m_spineDitherExtension) and isMaskAndGray ~= nil then
-    self.m_spineDitherExtension:SetSpineMaskAndGray(isMaskAndGray)
-    if self.m_curHeroSpineObj then
-      local spineObj = self.m_curHeroSpineObj.spineObj
-      if spineObj then
-        if isMaskAndGray then
-          UILuaHelper.SetSpineTimeScale(spineObj, 0)
-        else
-          UILuaHelper.SetSpineTimeScale(spineObj, 1)
-        end
-      end
-    end
-  end
-end
-
 function Form_AttractLevelUp:OnDestroy()
   self.super.OnDestroy(self)
-  self:CheckRecycleSpine(true)
 end
 
 function Form_AttractLevelUp:IsFullScreen()

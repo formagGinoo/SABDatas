@@ -2,7 +2,6 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local ActivityRebateSubPanel = class("ActivityRebateSubPanel", UISubPanelBase)
 
 function ActivityRebateSubPanel:OnInit()
-  self:AddEventListeners()
   self.m_itemListParent = self.m_item.transform.parent
   self.m_itemListCfg = nil
   self.m_ItemCache = {}

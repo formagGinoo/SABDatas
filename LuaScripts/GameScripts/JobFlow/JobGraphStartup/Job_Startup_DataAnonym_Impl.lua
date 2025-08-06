@@ -9,6 +9,8 @@ function Job_Startup_DataAnonym_Impl.TryRequestDataAnonym(jobNode)
         if not CS.UnityEngine.Application.isEditor then
           CS.BugSplatUtils.Instance:SetDeviceId(CS.DeviceUtil.GetDeviceID())
         end
+      elseif CS.HotUpdateHelper.Instance:IsUsingBuglyPro() then
+        CS.CrashSightUtils.Instance:SetDeviceId(CS.DeviceUtil.GetDeviceID())
       else
         CS.BuglyUtils.Instance:SetDeviceId(CS.DeviceUtil.GetDeviceID())
       end

@@ -528,4 +528,23 @@ function BattleFlowManager:SetLevelData(fightType, fightSubType, fightId)
   CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)
 end
 
+function BattleFlowManager:CheckShowFormHall()
+  local isShowFormHallBG = false
+  local serverIndex = RoleManager:GetMainBackGroundIndex()
+  local heroPosData = RoleManager:GetMainBackGroundDataList()
+  local tempServerData = heroPosData[serverIndex]
+  if tempServerData and tempServerData.iType == RoleManager.MainBgType.Fashion then
+    local lastSaveTimer = LocalDataManager:GetIntSimple("HallBackGroundShowTime", 0)
+    if TimeUtil:IsCurDayTime(lastSaveTimer) ~= true then
+      isShowFormHallBG = true
+    end
+  end
+  if isShowFormHallBG then
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALLBACKGROUND)
+    LocalDataManager:SetIntSimple("HallBackGroundShowTime", TimeUtil:GetServerTimeS())
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+  end
+end
+
 return BattleFlowManager

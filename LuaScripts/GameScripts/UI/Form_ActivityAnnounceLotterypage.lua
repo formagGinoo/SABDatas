@@ -422,6 +422,8 @@ function Form_ActivityAnnounceLotterypage:UpdateActivityData()
         table.insert(self.m_systemDataList, cfgEntireInfo)
       elseif cfgDataInfo.iNoticeType == 3 then
         table.insert(self.m_consultDataList, cfgEntireInfo)
+      elseif cfgDataInfo.iNoticeType == 4 and v:CanShowAddResPre() then
+        table.insert(self.m_systemDataList, cfgEntireInfo)
       end
     end
   end
@@ -612,6 +614,9 @@ end
 
 function Form_ActivityAnnounceLotterypage:OnBtngoClicked()
   local announceCfg = self.curShowList[self.cur_leftselect_idx].m_stSdpConfig.stClientCfg
+  if announceCfg.iNoticeType == 4 then
+    DownloadManager:DownloadPreChangeStatus(true)
+  end
   self:DealJump(announceCfg.iJumpTypeLast, announceCfg.sJumpParamLast)
 end
 

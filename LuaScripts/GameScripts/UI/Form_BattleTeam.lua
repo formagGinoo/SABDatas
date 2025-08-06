@@ -49,6 +49,7 @@ function Form_BattleTeam:OnActive()
   self.notRecoValue = CS.BattleGlobalManager.Instance:GetNotRecoValue()
   self:InitView()
   self:AddEventListeners()
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(328)
 end
 
 function Form_BattleTeam:OnInactive()
@@ -259,6 +260,7 @@ end
 
 function Form_BattleTeam:OnBtnmaskClicked()
   self:CloseBattleTeam()
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(327)
 end
 
 function Form_BattleTeam:CloseBattleTeam()

@@ -244,12 +244,17 @@
     "2029": {
       "m_bError": null,
       "m_Id": "2029",
-      "m_mMessage": "\"Extracting resources:\""
+      "m_mMessage": "\"Loading：\""
     },
     "2030": {
       "m_bError": null,
       "m_Id": "2030",
-      "m_mMessage": "\"Initializing shaders...<br><alpha=#50>First launch may take longer than usual. Please be patient.\""
+      "m_mMessage": "\"Loading...\""
+    },
+    "2031": {
+      "m_bError": null,
+      "m_Id": "2031",
+      "m_mMessage": "\"Copying Resources...\""
     },
     "2100": {
       "m_bError": null,
@@ -340,6 +345,11 @@
       "m_bError": null,
       "m_Id": "2126",
       "m_mMessage": "\"※ Herald Rules\nThe Promise in the Wind limited Embrace Event is now open.\nThis is a limited Embrace Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Fleeting Bella</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Fleeting Bella</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>.\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Fleeting Bella</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Promise in the Wind limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2127": {
+      "m_bError": null,
+      "m_Id": "2127",
+      "m_mMessage": "\"※Herald Rules\nThe Cycle of Destruction Ancestral Herald event is now open, and SSR Ancestral Vassal <style=Highlight>Timeless Aiona</style> is here!\nThis is a [Ancestral Herald Event] and shares pity mechanics with other Ancestral Herald events.\nDuring the event, SSR Vassal <style=Highlight>Timeless Aiona</style> will see significantly increased rates.\n• All Vassals default to base rates, though specific rules apply for rate UP, pity, etc.\n\n※Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 25% chance it will be the featured Vassal <style=Highlight>Timeless Aiona</style>.\n• Ancestral Herald events do not have Inspired Herald and Featured Vassal Protection Rules.\n\n※Special Pity Rules\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if no SSR Vassal is obtained within 59 Heralds, the next Herald will guarantee an SSR Vassal</style>.\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if Ancestral Vassal Timeless Aiona is not obtained within 119 Heralds, the next Herald will guarantee Timeless Aiona</style>.\n• As an Ancestral Herald events, the pity counter is shared across other Ancestral Herald events, meaning it will not reset when an Ancestral Herald event ends, but will carry over to subsequent Ancestral Herald events.\n• Ancestral Herald events are different from Limited Herald events and do not share pity counters.\n\n※Ancestral Covenant Rules\n• When reaching certain Herald counts in the Cycle of Destruction event, you can claim Ancestral Covenant milestone rewards.\n• The Ancestral Covenant milestone rewards include the special item Broken Tiara. Consuming a Broken Tiara performs a 10x Herald in the Cycle of Destruction event.\n• Ancestral Pacts and Broken Tiaras are only valid during the Cycle of Destruction event period. <style=Highlight>Progress and items will reset after this Herald event ends and cannot carry over to the next Cycle of Destruction Herald or other Herald events</style>.\n\n※Spirits\n• When obtaining duplicate Vassals, you will receive the corresponding Vassal's Spirit instead.\n• Spirits are used for Spirit Siphon, which increases a Vassal's LV. cap.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\n\n\""
     },
     "3001": {
       "m_bError": null,
@@ -1236,6 +1246,26 @@
       "m_Id": "20351",
       "m_mMessage": "\"Rank {0}\""
     },
+    "20353": {
+      "m_bError": null,
+      "m_Id": "20353",
+      "m_mMessage": "\"Invalid Name\""
+    },
+    "20354": {
+      "m_bError": null,
+      "m_Id": "20354",
+      "m_mMessage": "\"Cheating\""
+    },
+    "20355": {
+      "m_bError": null,
+      "m_Id": "20355",
+      "m_mMessage": "\"Other\""
+    },
+    "20356": {
+      "m_bError": null,
+      "m_Id": "20356",
+      "m_mMessage": "\"{0} will be cleared after the Herald event ends.\""
+    },
     "30001": {
       "m_bError": null,
       "m_Id": "30001",
@@ -1546,6 +1576,16 @@
       "m_Id": "32006",
       "m_mMessage": "\"{0}s\""
     },
+    "32007": {
+      "m_bError": null,
+      "m_Id": "32007",
+      "m_mMessage": "\"{0} H\""
+    },
+    "32008": {
+      "m_bError": null,
+      "m_Id": "32008",
+      "m_mMessage": "\"{0} M\""
+    },
     "40001": {
       "m_bError": null,
       "m_Id": "40001",
@@ -1649,7 +1689,7 @@
     "50107": {
       "m_bError": null,
       "m_Id": "50107",
-      "m_mMessage": "\"Deal enough DMG to interrupt Phantom of Aeon's charged skill!\""
+      "m_mMessage": "\"Deal enough DMG to interrupt Phantom of Aeon's charge.\""
     },
     "50108": {
       "m_bError": null,
@@ -1719,17 +1759,37 @@
     "50121": {
       "m_bError": null,
       "m_Id": "50121",
-      "m_mMessage": "\"Deal enough DMG to interrupt Bella No. 13's charged skill!\""
+      "m_mMessage": "\"Deal enough DMG to interrupt Little Bella No. 13's charge!\""
     },
     "50122": {
       "m_bError": null,
       "m_Id": "50122",
-      "m_mMessage": "\"Use movement or purify abilities to break free from Bella No. 13!\""
+      "m_mMessage": "\"Use movement or purify abilities to break free from Little Bella No. 13!\""
     },
     "50123": {
       "m_bError": null,
       "m_Id": "50123",
-      "m_mMessage": "\"\""
+      "m_mMessage": "\"Defeat Plague Wing to seal this skill.\""
+    },
+    "50124": {
+      "m_bError": null,
+      "m_Id": "50124",
+      "m_mMessage": "\"Destroy Entropic Flame to reduce DMG taken.\""
+    },
+    "50125": {
+      "m_bError": null,
+      "m_Id": "50125",
+      "m_mMessage": "\"Standing on the glowing rune on the ground can revert time and change the direction of the Entropic Flame.\""
+    },
+    "50126": {
+      "m_bError": null,
+      "m_Id": "50126",
+      "m_mMessage": "\"Scorching Plume has dropped. Attacking Scorching Plume deals equal DMG to Flames of War.\""
+    },
+    "50127": {
+      "m_bError": null,
+      "m_Id": "50127",
+      "m_mMessage": "\"Eliminate Phoenix Shade to avoid taking DMG.\""
     },
     "100001": {
       "m_bError": null,
@@ -1764,7 +1824,7 @@
     "100007": {
       "m_bError": null,
       "m_Id": "100007",
-      "m_mMessage": "\"Mission{0}\""
+      "m_mMessage": "\"Mission {0}\""
     },
     "100008": {
       "m_bError": null,
@@ -1909,7 +1969,7 @@
     "100037": {
       "m_bError": null,
       "m_Id": "100037",
-      "m_mMessage": "\"{0}<style=Highlight><color=#a65f30>{1}</style>\""
+      "m_mMessage": "\"{0}<color=#a65f30>{1}</color>\""
     },
     "100038": {
       "m_bError": null,
@@ -2044,7 +2104,7 @@
     "100065": {
       "m_bError": null,
       "m_Id": "100065",
-      "m_mMessage": "\"Insufficient Crucible Passes. Redeem with {0}×{1}?<line-height=105%>\n<size=32><alpha=#80><line-height=125%>Free Challenge Attempts will be used first. When out of free attempts, each attempt costs 1 Crucible Pass.\""
+      "m_mMessage": "\"Insufficient Crucible Pass. Would you like to spend {0} x{1} to purchase?<line-height=105%>\n<size=32><alpha=#80><line-height=125%>Prioritize using Moon Tears (Free).\nMoon Tears (Paid) will be deducted when Moon Tears (Free) are insufficient.\""
     },
     "100067": {
       "m_bError": null,
@@ -2189,7 +2249,7 @@
     "100096": {
       "m_bError": null,
       "m_Id": "100096",
-      "m_mMessage": "\"\""
+      "m_mMessage": "\"Insufficient Arena Pass. Would you like to spend {0} x{1} to purchase?<line-height=105%>\n<size=32><alpha=#80><line-height=125%>Prioritize using Moon Tears (Free).\nMoon Tears (Paid) will be deducted when Moon Tears (Free) are insufficient.\""
     },
     "100100": {
       "m_bError": null,
@@ -2285,6 +2345,11 @@
       "m_bError": null,
       "m_Id": "100213",
       "m_mMessage": "\"Explore the locations in Chapter {0} to obtain this Lost Memory.\""
+    },
+    "100214": {
+      "m_bError": null,
+      "m_Id": "100214",
+      "m_mMessage": "\"{0}{1}\""
     },
     "100301": {
       "m_bError": null,
@@ -2625,6 +2690,16 @@
       "m_bError": null,
       "m_Id": "100814",
       "m_mMessage": "\"Herald limit reached.\""
+    },
+    "100815": {
+      "m_bError": null,
+      "m_Id": "100815",
+      "m_mMessage": "\"Unlocks after clearing {0} {1}.\""
+    },
+    "100816": {
+      "m_bError": null,
+      "m_Id": "100816",
+      "m_mMessage": "\"Unlocks after clearing {0}.\""
     },
     "200001": {
       "m_bError": null,
@@ -2974,22 +3049,42 @@
     "220020": {
       "m_bError": null,
       "m_Id": "220020",
-      "m_mMessage": "\"Purchase ends in {0}.\""
+      "m_mMessage": "\"The sale ends in {0}.\""
     },
     "220021": {
       "m_bError": null,
       "m_Id": "220021",
       "m_mMessage": "\"LV. {0}\""
     },
+    "220022": {
+      "m_bError": null,
+      "m_Id": "220022",
+      "m_mMessage": "\"Shop refreshes in {0}.\""
+    },
+    "220023": {
+      "m_bError": null,
+      "m_Id": "220023",
+      "m_mMessage": "\"{0} +{1}\""
+    },
+    "220024": {
+      "m_bError": null,
+      "m_Id": "220024",
+      "m_mMessage": "\"Sold Out\""
+    },
+    "220025": {
+      "m_bError": null,
+      "m_Id": "220025",
+      "m_mMessage": "\"Go to Event\""
+    },
     "230001": {
       "m_bError": null,
       "m_Id": "230001",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><#b2452b><u>User Agreement</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/eu/gp/en.html><color=#b2452b>User Agreement</color></link>\""
     },
     "230002": {
       "m_bError": null,
       "m_Id": "230002",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/eu/gp/en.html><color=#b2452b>Privacy Policy</color></link>\""
     },
     "230003": {
       "m_bError": null,
@@ -3004,12 +3099,12 @@
     "230005": {
       "m_bError": null,
       "m_Id": "230005",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><#b2452b><u>Privacy Policy</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/us/gp/en.html><color=#b2452b>Privacy Policy</color></link>\""
     },
     "230006": {
       "m_bError": null,
       "m_Id": "230006",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><#b2452b><u>Terms of Service</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/us/gp/en.html><color=#b2452b>Terms of Service</color></link>\""
     },
     "230007": {
       "m_bError": null,
@@ -3024,12 +3119,12 @@
     "230009": {
       "m_bError": null,
       "m_Id": "230009",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><#b2452b><u>隐私协议</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/privacy/4400/ap/gp/ja.html><color=#b2452b>Privacy Policy</color></link>\""
     },
     "230010": {
       "m_bError": null,
       "m_Id": "230010",
-      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><#b2452b><u>用户协议</u></color></link>\""
+      "m_mMessage": "\"<link=WebView_Url;https://www.mpub-static.com/agreement/userterms/4400/ap/gp/ja.html><color=#b2452b>Terms of Service</color></link>\""
     },
     "230011": {
       "m_bError": null,
@@ -3087,5 +3182,5 @@
       "m_mMessage": "\"Defeat the wolf pack to interrupt the skill.\""
     }
   },
-  "status": "processed_617_items"
+  "status": "processed_636_items"
 }

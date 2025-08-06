@@ -126,7 +126,28 @@
       "m_mTips": "\"Distracting Shot\"",
       "m_mText": "\"\"The Star\" can fire a signal arrow drawing the attention of surrounding units, who will come investigate in the following round.\"",
       "m_Pic": "\"\""
+    },
+    "501": {
+      "m_bError": null,
+      "m_ID": "501",
+      "m_mTips": "\"Inverted Clock\"",
+      "m_mText": "\"Timeless Aiona travels through time. Sand Golems and landscapes change with every timeline.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_20\""
+    },
+    "502": {
+      "m_bError": null,
+      "m_ID": "502",
+      "m_mTips": "\"Regeneration Clock\"",
+      "m_mText": "\"Timeless Aiona can change the growth state of certain trees.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_21\""
+    },
+    "503": {
+      "m_bError": null,
+      "m_ID": "503",
+      "m_mTips": "\"Regeneration Clock\"",
+      "m_mText": "\"At the same time, the same tree in another timeline will also change accordingly.\"",
+      "m_Pic": "\"Atlas_LegacyGuide/legacy_battle_help_22\""
     }
   },
-  "status": "processed_18_items"
+  "status": "processed_21_items"
 }

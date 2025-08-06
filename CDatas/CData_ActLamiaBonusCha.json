@@ -237,7 +237,94 @@
           "m_Rate": "10"
         }
       }
+    },
+    "1050": {
+      "_type": "nested_dictionary",
+      "_count": 10,
+      "_processed": 10,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20610",
+          "m_Rate": "60"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "2",
+          "m_Sort": "2",
+          "m_Character": "20390",
+          "m_Rate": "40"
+        },
+        "3": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "3",
+          "m_Sort": "3",
+          "m_Character": "20180",
+          "m_Rate": "40"
+        },
+        "4": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "4",
+          "m_Sort": "4",
+          "m_Character": "20120",
+          "m_Rate": "40"
+        },
+        "5": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "5",
+          "m_Sort": "5",
+          "m_Character": "20290",
+          "m_Rate": "20"
+        },
+        "6": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "6",
+          "m_Sort": "6",
+          "m_Character": "20130",
+          "m_Rate": "20"
+        },
+        "7": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "7",
+          "m_Sort": "7",
+          "m_Character": "20060",
+          "m_Rate": "20"
+        },
+        "8": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "8",
+          "m_Sort": "8",
+          "m_Character": "20040",
+          "m_Rate": "10"
+        },
+        "9": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "9",
+          "m_Sort": "9",
+          "m_Character": "20030",
+          "m_Rate": "10"
+        },
+        "10": {
+          "m_bError": null,
+          "m_ActivityID": "1050",
+          "m_UID": "10",
+          "m_Sort": "10",
+          "m_Character": "20010",
+          "m_Rate": "10"
+        }
+      }
     }
   },
-  "status": "processed_3_items"
+  "status": "processed_4_items"
 }

@@ -28,7 +28,14 @@ function PushGiftItem:OnFreshData()
     end
   end
   local itemRoot = self.m_pnl_itemgift.transform
-  self:UpdateChildCount(itemRoot, #config.sGiftItems)
+  local count = #config.sGiftItems
+  local pointRewardIndex = 0
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductID)
+  if isShowPoint then
+    count = count + 1
+    pointRewardIndex = count - 1
+  end
+  self:UpdateChildCount(itemRoot, count)
   for i, v in ipairs(config.sGiftItems) do
     local itemObj = itemRoot:GetChild(i - 1).gameObject
     local common_item = self:createCommonItem(itemObj)
@@ -38,6 +45,18 @@ function PushGiftItem:OnFreshData()
     local processItemData = ResourceUtil:GetProcessRewardData({
       iID = v.iID,
       iNum = v.iNum
+    })
+    common_item:SetItemInfo(processItemData)
+  end
+  if isShowPoint then
+    local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
+    local common_item = self:createCommonItem(itemObj)
+    common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+      utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+    end)
+    local processItemData = ResourceUtil:GetProcessRewardData({
+      iID = pointReward.iID,
+      iNum = pointReward.iNum
     })
     common_item:SetItemInfo(processItemData)
   end
@@ -79,6 +98,14 @@ function PushGiftItem:OnBtnbuyClicked()
   if not self.m_Activity then
     return
   end
+  local rewardList = {}
+  for i, v in ipairs(config.sGiftItems) do
+    table.insert(rewardList, v)
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductID)
+  if isShowPoint then
+    table.insert(rewardList, pointReward)
+  end
   local ProductInfo = {
     productId = config.sProductID,
     productSubId = config.iSubProductID,
@@ -86,7 +113,7 @@ function PushGiftItem:OnBtnbuyClicked()
     productName = self.m_Activity:getLangText(config.sGiftName),
     productDesc = self.m_Activity:getLangText(config.sGiftStr),
     giftPackType = 2,
-    rewardList = config.sGiftItems
+    rewardList = rewardList
   }
   local baseStoreBuyParam = MTTDProto.CmdActPushGiftBuyParam()
   baseStoreBuyParam.iActivityId = self.m_Activity:getID()

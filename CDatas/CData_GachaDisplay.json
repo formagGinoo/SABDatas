@@ -84,7 +84,19 @@
       "m_DisplayUpContent": "[20660]",
       "m_PreviewCharacter": "[20660]",
       "m_PoolID": "5001"
+    },
+    "1008": {
+      "m_bError": null,
+      "m_DisplayID": "1008",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "2500",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20610]",
+      "m_PreviewCharacter": "[20610]",
+      "m_PoolID": "6001"
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_8_items"
 }

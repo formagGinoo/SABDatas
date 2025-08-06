@@ -30,6 +30,10 @@ end
 function Form_GetSkin:OnDestroy()
   self.super.OnDestroy(self)
   self:CheckRecycleSpine(true)
+  if self.m_showClickTween and self.m_showClickTween:IsPlaying() then
+    self.m_showClickTween:Kill()
+  end
+  self.m_showClickTween = nil
 end
 
 function Form_GetSkin:FreshData()
@@ -147,12 +151,18 @@ function Form_GetSkin:CheckShowSpineAnim()
     UILuaHelper.SpinePlayAnim(heroSpineObj, 0, "idle", true)
   end
   UILuaHelper.SetCanvasGroupAlpha(self.m_hero_root, 1)
-  local sequence = Tweening.DOTween.Sequence()
-  sequence:AppendInterval(1)
-  sequence:OnComplete(function()
-    self.m_img_click:SetActive(true)
+  if self.m_showClickTween and self.m_showClickTween:IsPlaying() then
+    self.m_showClickTween:Kill()
+  end
+  self.m_showClickTween = nil
+  self.m_showClickTween = Tweening.DOTween.Sequence()
+  self.m_showClickTween:AppendInterval(1)
+  self.m_showClickTween:OnComplete(function()
+    if self.m_img_click and not utils.isNull(self.m_img_click) then
+      self.m_img_click:SetActive(true)
+    end
   end)
-  sequence:SetAutoKill(true)
+  self.m_showClickTween:SetAutoKill(true)
 end
 
 function Form_GetSkin:CheckRecycleSpine(isResetParam)

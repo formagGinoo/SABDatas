@@ -833,7 +833,7 @@
       "m_bError": null,
       "m_ID": "6000322",
       "m_SourceID": "20130",
-      "m_Level": "30",
+      "m_Level": "60",
       "m_OverridePropertyID": null,
       "m_OverrideSkillGroupID": "[]",
       "m_OverrideSkillLevel": "[]",
@@ -845,6 +845,30 @@
       "m_bError": null,
       "m_ID": "6000404",
       "m_SourceID": "20660",
+      "m_Level": "30",
+      "m_OverridePropertyID": null,
+      "m_OverrideSkillGroupID": "[]",
+      "m_OverrideSkillLevel": "[]",
+      "m_Label": "\"\"",
+      "m_FightValue": null,
+      "m_FixedGrid": null
+    },
+    "6000512": {
+      "m_bError": null,
+      "m_ID": "6000512",
+      "m_SourceID": "20610",
+      "m_Level": "70",
+      "m_OverridePropertyID": null,
+      "m_OverrideSkillGroupID": "[]",
+      "m_OverrideSkillLevel": "[]",
+      "m_Label": "\"\"",
+      "m_FightValue": "3300",
+      "m_FixedGrid": null
+    },
+    "6100404": {
+      "m_bError": null,
+      "m_ID": "6100404",
+      "m_SourceID": "20660",
       "m_Level": "90",
       "m_OverridePropertyID": null,
       "m_OverrideSkillGroupID": "[]",
@@ -853,16 +877,16 @@
       "m_FightValue": null,
       "m_FixedGrid": null
     },
-    "6100404": {
+    "6100512": {
       "m_bError": null,
-      "m_ID": "6100404",
-      "m_SourceID": "20660",
-      "m_Level": "60",
+      "m_ID": "6100512",
+      "m_SourceID": "20610",
+      "m_Level": "110",
       "m_OverridePropertyID": null,
       "m_OverrideSkillGroupID": "[]",
       "m_OverrideSkillLevel": "[]",
       "m_Label": "\"\"",
-      "m_FightValue": null,
+      "m_FightValue": "7300",
       "m_FixedGrid": null
     },
     "10004131": {
@@ -986,5 +1010,5 @@
       "m_FixedGrid": null
     }
   },
-  "status": "processed_82_items"
+  "status": "processed_84_items"
 }

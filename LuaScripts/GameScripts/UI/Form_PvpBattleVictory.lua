@@ -212,6 +212,10 @@ function Form_PvpBattleVictory:OnBtnBgCloseClicked()
   BattleFlowManager:ExitBattle()
 end
 
+function Form_PvpBattleVictory:OnBtnDataClicked()
+  StackFlow:Push(UIDefines.ID_FORM_BATTLECHARACTERDATA)
+end
+
 function Form_PvpBattleVictory:GetDownloadResourceExtra(tParam)
   local vPackage = {}
   local vResourceExtra = {}

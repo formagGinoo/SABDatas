@@ -143,7 +143,7 @@ function UI103NormalLevelItem:OnBtnRepeatClk()
         local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_levelCfg.m_ActivityID)
         local jumpIns = ConfigManager:GetConfigInsByName("Jump")
         local jump_item = jumpIns:GetValue_ByJumpID(mainActInfoCfg.m_ShopJumpID)
-        local windowId = tonumber(jump_item.m_Param[0])
+        local windowId = jump_item.m_Param.Length > 0 and tonumber(jump_item.m_Param[0]) or 0
         local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
         local shop_id
         for i, v in ipairs(shop_list) do
@@ -189,8 +189,10 @@ function UI103NormalLevelItem:GetCostItemNum()
   end
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_levelCfg.m_ActivityID)
   local costItemID = mainActInfoCfg.m_PassItem
-  local costItemNum = ItemManager:GetItemNum(costItemID)
-  return costItemNum
+  local costItemNum = ItemManager:GetItemNum(costItemID) or 0
+  local freeItemId = mainActInfoCfg.m_FreePassItem
+  local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
+  return costItemNum + freeitemNum
 end
 
 return UI103NormalLevelItem

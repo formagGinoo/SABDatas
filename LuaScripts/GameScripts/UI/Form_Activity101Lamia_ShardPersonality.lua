@@ -38,7 +38,7 @@ function Form_Activity101Lamia_ShardPersonality:OnActive()
   self.act_id = self.m_csui.m_param.main_id
   self.sub_id = self.m_csui.m_param.sub_id
   self:addEventListener("eGameEvent_ActMemory_GetAllReward", handler(self, self.FreshUI))
-  self:addEventListener("eGameEvent_ActMemory_MemoryFinish", handler(self, self.FreshUI))
+  self:addEventListener("eGameEvent_ActMinigame_Finish", handler(self, self.FreshUI))
   self:InitUI()
   self:RegisterRedDot()
   self:FreshUI()

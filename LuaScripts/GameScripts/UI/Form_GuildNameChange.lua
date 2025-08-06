@@ -5,7 +5,7 @@ end
 
 function Form_GuildNameChange:AfterInit()
   self.super.AfterInit(self)
-  self.m_inputfield_TMP_InputField.onValueChanged:AddListener(function()
+  self.m_inputfield_InputField.onValueChanged:AddListener(function()
     self:ResetTips()
   end)
 end
@@ -15,7 +15,7 @@ function Form_GuildNameChange:OnActive()
   self.m_canChangeName = false
   self.m_needItemId = nil
   self:AddEventListeners()
-  self.m_inputfield_TMP_InputField.text = ""
+  self.m_inputfield_InputField.text = ""
   self:RefreshUI()
 end
 
@@ -59,7 +59,7 @@ function Form_GuildNameChange:RefreshUI()
 end
 
 function Form_GuildNameChange:RefreshRandomName(nameStr)
-  self.m_inputfield_TMP_InputField.text = tostring(nameStr)
+  self.m_inputfield_InputField.text = tostring(nameStr)
 end
 
 function Form_GuildNameChange:ChangeRandomNameTips(flag)
@@ -68,17 +68,12 @@ function Form_GuildNameChange:ChangeRandomNameTips(flag)
 end
 
 function Form_GuildNameChange:OnBtnrenamelightClicked()
-  local nameStr = self.m_inputfield_TMP_InputField.text
+  local nameStr = self.m_inputfield_InputField.text
   if nameStr ~= "" then
     if not self.m_canChangeName and self.m_needItemId then
       local itemCfg = ItemManager:GetItemConfigById(self.m_needItemId)
       local str = ConfigManager:GetCommonTextById(20026)
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, string.format(str, tostring(itemCfg.m_mItemName)))
-      return
-    end
-    local bDirty = DirtyCharManager:FilterString(nameStr)
-    if bDirty then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30013)
       return
     end
     local spacing = string.checkFirstCharIsSpacing(nameStr)
@@ -115,10 +110,10 @@ function Form_GuildNameChange:SetNameNotOnly()
 end
 
 function Form_GuildNameChange:CheckStrIsCorrect()
-  local text = self.m_inputfield_TMP_InputField.text
+  local text = self.m_inputfield_InputField.text
   if text ~= "" then
     local str = string.GetTextualNorms(text)
-    self.m_inputfield_TMP_InputField.text = str
+    self.m_inputfield_InputField.text = str
   end
 end
 

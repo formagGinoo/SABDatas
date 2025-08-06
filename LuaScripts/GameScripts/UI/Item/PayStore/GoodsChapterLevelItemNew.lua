@@ -52,7 +52,7 @@ function GoodsChapterLevelItemNew:OnFreshData()
     freeWidget:SetItemInfo(processItemData)
     freeWidget:SetItemIconClickCB(handler(self, self.OnItemIconClickedFree))
     freeWidget:SetActive(true)
-    self.m_txt_nml_Text.text = self.freeConfig.m_mLevelName
+    self.m_txt_nml_Text.text = self.freeConfig.m_LevelName
   end
   local payReward_list = utils.changeCSArrayToLuaTable(self.PayConfig.m_PayReward) or {}
   if payReward_list and payReward_list[1] then
@@ -73,7 +73,7 @@ function GoodsChapterLevelItemNew:OnFreshData()
     payWidget:SetItemInfo(processItemData)
     payWidget:SetItemIconClickCB(handler(self, self.OnItemIconClickedPay))
     payWidget:SetActive(true)
-    self.m_txt_nml_Text.text = self.PayConfig.m_mLevelName
+    self.m_txt_nml_Text.text = self.PayConfig.m_LevelName
   end
   self.m_mask_advanced:SetActive(not self.is_Purchased)
 end

@@ -58,6 +58,8 @@ function IAPManager:Initialize(callback)
     self.m_storeImpl = require("Manager/IAPStore/StoreQSDK")
   elseif ChannelManager:IsDMMChannel() then
     self.m_storeImpl = require("Manager/IAPStore/StoreDMM")
+  elseif ChannelManager:IsWegameChannel() then
+    self.m_storeImpl = require("Manager/IAPStore/StoreWegame")
   elseif ChannelManager:IsWindows() then
     self.m_storeImpl = require("Manager/IAPStore/StoreMSDKPc")
   elseif CS.UnityEngine.Application.isEditor then
@@ -104,23 +106,34 @@ function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storePar
     end
     return
   end
-  if self:GetStoreType() ~= StoreType.MSDKPc then
+  if self:GetStoreType() ~= StoreType.MSDKPc and self:GetStoreType() ~= StoreType.Wegame then
     self.m_productBuying[productId] = true
   end
-  local msg = MTTDProto.Cmd_Store_Request_IAPBuy_CS()
-  msg.sProductId = productId
-  msg.iProductSubId = productSubId
-  if isBuyWithWelfare then
-    msg.iReceiptType = MTTDProto.IAPReceiptType_Welfare
+  local msg
+  if ChannelManager:IsWegameChannel() then
+    msg = MTTDProto.Cmd_Store_WeGame_Session_Start_CS()
+    msg.sProductId = productId
+    msg.iProductSubId = productSubId
+    msg.iStoreType = iStoreType
+    msg.sStoreParam = storeParam
+    msg.sRailId = WegameManager:GetRailID()
+    msg.iNeedAultLimit = 1
   else
-    msg.iReceiptType = self.m_storeImpl:GetIAPReceiptType()
-  end
-  msg.iStoreType = iStoreType
-  msg.sStoreParam = storeParam
-  if exParam and exParam.panelName then
-    msg.sExtraData = exParam.panelName
-  else
-    msg.sExtraData = "Form_MallMainNew"
+    msg = MTTDProto.Cmd_Store_Request_IAPBuy_CS()
+    msg.sProductId = productId
+    msg.iProductSubId = productSubId
+    if isBuyWithWelfare then
+      msg.iReceiptType = MTTDProto.IAPReceiptType_Welfare
+    else
+      msg.iReceiptType = self.m_storeImpl:GetIAPReceiptType()
+    end
+    msg.iStoreType = iStoreType
+    msg.sStoreParam = storeParam
+    if exParam and exParam.panelName then
+      msg.sExtraData = exParam.panelName
+    else
+      msg.sExtraData = "Form_MallMainNew"
+    end
   end
   
   local function OnSdkCallback(isSuccess, param1, param2)
@@ -143,6 +156,9 @@ function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storePar
     exParam.cpOrderID = sc.sTraceFlowId
     if isBuyWithWelfare then
       self:OnBuyWithWelfare(productId, productSubId, exParam, iStoreType, storeParam, OnSdkCallback)
+    elseif ChannelManager:IsWegameChannel() then
+      log.info("OnRequestSuccessCB msg.sOrderId:" .. sc.sRailOrderId)
+      self.m_storeImpl:RealPay(sc.sRailOrderId, productSubId, exParam, OnSdkCallback)
     else
       self.m_storeImpl:RealPay(productId, productSubId, exParam, OnSdkCallback)
     end
@@ -150,7 +166,11 @@ function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storePar
   
   local function OnRequestFailedCB(msg)
     self.m_productBuying[productId] = nil
-    log.error("Cmd_Store_Request_IAPBuy_CS failed, rspCode:" .. msg.rspcode)
+    if ChannelManager:IsWegameChannel() then
+      log.error("Cmd_Store_WeGame_Session_Start_CS failed, rspCode:" .. msg.rspcode)
+    else
+      log.error("Cmd_Store_Request_IAPBuy_CS failed, rspCode:" .. msg.rspcode)
+    end
     if callback then
       callback(false, "network", msg)
     end
@@ -158,10 +178,18 @@ function IAPManager:RealBuyProduct(productId, productSubId, iStoreType, storePar
   
   local function OnRequestTimeoutCB()
     self.m_productBuying[productId] = nil
-    log.error("Cmd_Store_Request_IAPBuy_CS timeout")
+    if ChannelManager:IsWegameChannel() then
+      log.error("Cmd_Store_WeGame_Session_Start_CS timeout")
+    else
+      log.error("Cmd_Store_Request_IAPBuy_CS timeout")
+    end
   end
   
-  RPCS():Store_Request_IAPBuy(msg, OnRequestSuccessCB, OnRequestFailedCB, OnRequestTimeoutCB)
+  if ChannelManager:IsWegameChannel() then
+    RPCS():Store_WeGame_Session_Start(msg, OnRequestSuccessCB, OnRequestFailedCB, OnRequestTimeoutCB)
+  else
+    RPCS():Store_Request_IAPBuy(msg, OnRequestSuccessCB, OnRequestFailedCB, OnRequestTimeoutCB)
+  end
 end
 
 function IAPManager:OnBuyWithWelfare(productId, productSubId, exParam, iStoreType, storeParam, OnSdkCallback)

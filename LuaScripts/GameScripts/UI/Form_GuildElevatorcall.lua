@@ -406,6 +406,9 @@ function Form_GuildElevatorcall:OnBtnbackClicked()
 end
 
 function Form_GuildElevatorcall:OnEventLeaveAlliance()
+  if GuideManager:CheckGuideIsActive(300) then
+    GuideManager:SkipCurrentGuide()
+  end
   self:OnBtnhomeClicked()
 end
 

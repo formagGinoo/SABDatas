@@ -30,34 +30,32 @@ function Form_PickUpWindow_new:InitData()
   self.giftInfo = self.m_csui.m_param.giftInfo
   self.activity = self.m_csui.m_param.activity
   self.mOriGridRewardIndex = self.giftInfo and table.copy(self.giftInfo.mGridRewardIndex) or {}
+  self.m_isSoldOut = self.giftInfo and self.giftInfo.iBoughtNum >= self.giftCfg.iBuyLimit
 end
 
 function Form_PickUpWindow_new:FreshUI()
   local giftCfg = self.giftCfg
   local giftInfo = self.giftInfo
-  local price = IAPManager:GetProductPrice(giftCfg.sProductId, true)
-  self.m_txt_buygrey_Text.text = price
-  self.m_txt_buysel_Text.text = price
   local tempList = {}
   for i, v in ipairs(giftCfg.stGrids.mGridCfg) do
-    table.insert(tempList, {
-      cfg = v,
-      chooseIdx = giftInfo and giftInfo.mGridRewardIndex[i] or nil
-    })
-  end
-  self.m_InfinityGrid:ShowItemList(tempList)
-  local count = 0
-  local max_count = #giftCfg.stGrids.mGridCfg
-  if giftInfo then
-    for _, v in pairs(giftInfo.mGridRewardIndex) do
-      count = count + 1
+    if i ~= 1 then
+      table.insert(tempList, {
+        cfg = v,
+        chooseIdx = giftInfo and giftInfo.mGridRewardIndex[i] or nil
+      })
+    else
+      self.m_txt_giftnum_Text.text = v[1].iNum
     end
   end
-  self.m_btn_buysel:SetActive(count == max_count)
-  self.m_btn_buygrey:SetActive(max_count > count)
+  self.m_InfinityGrid:ShowItemList(tempList)
+  self.m_btn_save:SetActive(not self.m_isSoldOut)
 end
 
 function Form_PickUpWindow_new:OnCommonItemClk(index, chooseIdx)
+  if self.m_isSoldOut then
+    return
+  end
+  index = index + 1
   local giftInfo = self.giftInfo or {}
   local mGridRewardIndex = giftInfo.mGridRewardIndex or {}
   mGridRewardIndex[index] = chooseIdx - 1
@@ -67,16 +65,38 @@ function Form_PickUpWindow_new:OnCommonItemClk(index, chooseIdx)
 end
 
 function Form_PickUpWindow_new:OnBtnCloseClicked()
+  local flag = table.deepcompare(self.giftInfo.mGridRewardIndex, self.mOriGridRewardIndex)
+  if not flag then
+    utils.CheckAndPushCommonTips({
+      tipsID = 1236,
+      func1 = function()
+        self:CloseForm()
+        self.giftInfo.mGridRewardIndex = self.mOriGridRewardIndex
+      end
+    })
+    return
+  end
   self:CloseForm()
   self.giftInfo.mGridRewardIndex = self.mOriGridRewardIndex
 end
 
 function Form_PickUpWindow_new:OnBtnReturnClicked()
+  local flag = table.deepcompare(self.giftInfo.mGridRewardIndex, self.mOriGridRewardIndex)
+  if not flag then
+    utils.CheckAndPushCommonTips({
+      tipsID = 1236,
+      func1 = function()
+        self:CloseForm()
+        self.giftInfo.mGridRewardIndex = self.mOriGridRewardIndex
+      end
+    })
+    return
+  end
   self:CloseForm()
   self.giftInfo.mGridRewardIndex = self.mOriGridRewardIndex
 end
 
-function Form_PickUpWindow_new:OnBtnsaveClicked(dontShowTips)
+function Form_PickUpWindow_new:OnBtnsaveClicked()
   if self.giftInfo then
     local isSoldOut = self.giftInfo and self.giftInfo.iBoughtNum >= self.giftCfg.iBuyLimit
     if isSoldOut then
@@ -89,44 +109,9 @@ function Form_PickUpWindow_new:OnBtnsaveClicked(dontShowTips)
     if 0 < count then
       self.activity:RqsSetReward(self.giftCfg.iGiftId, self.giftInfo.mGridRewardIndex)
     end
-    if not dontShowTips then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52005))
-      self:CloseForm()
-    else
-    end
-  end
-end
-
-function Form_PickUpWindow_new:OnBtnbuygreyClicked()
-  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52004))
-end
-
-function Form_PickUpWindow_new:OnBtnbuyselClicked()
-  local baseStoreBuyParam = MTTDProto.CmdActPickupGiftBuyParam()
-  baseStoreBuyParam.iActivityId = self.activity:getID()
-  baseStoreBuyParam.mGridRewardIndex = self.giftInfo.mGridRewardIndex
-  local storeParam = sdp.pack(baseStoreBuyParam)
-  self:OnBtnsaveClicked(true)
-  local reward = {}
-  for index, v in ipairs(self.giftInfo.mGridRewardIndex) do
-    if self.giftCfg.stGrids and self.giftCfg.stGrids.mGridCfg and self.giftCfg.stGrids.mGridCfg[index] and self.giftCfg.stGrids.mGridCfg[index][v + 1] then
-      reward[#reward + 1] = self.giftCfg.stGrids.mGridCfg[index][v + 1]
-    end
-  end
-  local ProductInfo = {
-    productId = self.giftCfg.sProductId,
-    productSubId = self.giftCfg.iProductSubId,
-    iStoreType = MTTDProto.IAPStoreType_ActPickupGift,
-    productName = self.activity:getLangText(self.giftCfg.sGiftName) or "",
-    productDesc = self.activity:getLangText(self.giftCfg.sGiftDesc) or "",
-    rewardList = reward
-  }
-  IAPManager:BuyProductByStoreType(ProductInfo, storeParam, function(isSuccess, param1, param2)
-    if not isSuccess then
-      IAPManager:OnCallbackFail(param1, param2)
-    end
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52005))
     self:CloseForm()
-  end)
+  end
 end
 
 function Form_PickUpWindow_new:IsOpenGuassianBlur()

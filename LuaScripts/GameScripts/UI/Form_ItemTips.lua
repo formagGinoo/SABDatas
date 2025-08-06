@@ -139,15 +139,14 @@ end
 function Form_ItemTips:RefreshLeftUI()
   self.m_widgetItemIcon:SetItemInfo(self.m_stItemData)
   if CS.UnityEngine.Application.isEditor then
-    self.m_iWidgetItemIconClickLastTime = 0
-    self.m_widgetItemIcon:SetItemIconClickCB(handler(self, self.OnWidgetItemIconClicked))
+    self:FreshGMBtn()
   else
-    self.m_widgetItemIcon:SetItemIconClickCB(nil)
+    UILuaHelper.SetActive(self.m_btn_gm, false)
   end
   self.m_txt_name_Text.text = self.m_stItemData.name
   local total = self.m_stItemData.sub_type == ItemManager.ItemSubType.Equipment and EquipManager:GetEquipNumByCfgID(self.m_iID) or ItemManager:GetItemNum(self.m_iID)
   self.m_txt_num_Text.text = BigNumFormat(total)
-  if self.m_stItemData.config.m_ItemMaxNum and 0 < self.m_stItemData.config.m_ItemMaxNum and self.m_iNum >= self.m_stItemData.config.m_ItemMaxNum then
+  if self.m_stItemData.config.m_ItemMaxNum and self.m_stItemData.config.m_ItemMaxNum > 0 and self.m_iNum >= self.m_stItemData.config.m_ItemMaxNum then
     self.m_img_max:SetActive(true)
     UILuaHelper.SetColor(self.m_txt_num_Text, table.unpack(GlobalConfig.COMMON_COLOR.Red))
   else
@@ -163,6 +162,17 @@ function Form_ItemTips:RefreshLeftUI()
   else
     UILuaHelper.SetActive(self.m_pnl_num, true)
     UILuaHelper.ForceRebuildLayoutImmediate(self.m_pnl_num)
+  end
+  local act = ActivityManager:GetActivityByType(MTTD.ActivityType_ConsumeReward)
+  if act then
+    if not act:checkCondition() then
+      return
+    end
+    local pointItemId = act:GetPointItemId()
+    if pointItemId == self.m_iID then
+      local total = act:GetCurPoint()
+      self.m_txt_num_Text.text = BigNumFormat(total)
+    end
   end
 end
 
@@ -741,13 +751,14 @@ function Form_ItemTips:OnDestroy()
   self:DestroyObj()
 end
 
-function Form_ItemTips:OnWidgetItemIconClicked()
-  local iDiff = CS.Util.GetTime() - self.m_iWidgetItemIconClickLastTime
-  if iDiff <= 300 then
-    local loginContext = CS.LoginContext.GetContext()
-    Util.RequestGM(loginContext.CurZoneInfo.iZoneId, "add_item " .. loginContext.AccountID .. " " .. self.m_iID .. " 999")
-  end
-  self.m_iWidgetItemIconClickLastTime = CS.Util.GetTime()
+function Form_ItemTips:FreshGMBtn()
+  local curValue = LocalDataManager:GetIntSimple("PREF_STR_ITEM999TOOL_OPEN", 0)
+  UILuaHelper.SetActive(self.m_btn_gm, curValue == 1)
+end
+
+function Form_ItemTips:OnBtngmClicked()
+  local loginContext = CS.LoginContext.GetContext()
+  Util.RequestGM(loginContext.CurZoneInfo.iZoneId, "add_item " .. loginContext.AccountID .. " " .. self.m_iID .. " 999")
 end
 
 function Form_ItemTips:OnRewardItemClick(itemID, itemNum, itemCom)

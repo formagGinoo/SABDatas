@@ -69,7 +69,7 @@ function Form_PopoverSkill:RefreshUI()
       TimeService:KillTimer(self.m_waitDescTimer)
       self.m_waitDescTimer = nil
     end
-    self.m_waitDescTimer = TimeService:SetTimer(0.01, 1, function()
+    self.m_waitDescTimer = TimeService:SetTimer(0.06, 1, function()
       self.m_waitDescTimer = nil
       if self and not utils.isNull(self.m_scroll_content) then
         self:CheckSetScrollTypeAndZeroPos()

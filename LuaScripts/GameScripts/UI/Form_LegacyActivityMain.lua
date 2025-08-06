@@ -16,7 +16,7 @@ function Form_LegacyActivityMain:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1167)
+  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1167)
   local initGridData = {
     itemClkBackFun = function(itemIndex)
       self:OnChapterItemClk(itemIndex)
@@ -312,6 +312,16 @@ function Form_LegacyActivityMain:OnBackClk()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
   self:CloseForm()
+end
+
+function Form_LegacyActivityMain:OnBackHome()
+  if BattleFlowManager:IsInBattle() == true then
+    BattleFlowManager:FromBattleToHall()
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+    GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  end
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_LegacyActivityMain:OnLevelDetailBgClk()

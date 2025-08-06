@@ -1,6 +1,8 @@
 local Form_CastleEventMain = class("Form_CastleEventMain", require("UI/UIFrames/Form_CastleEventMainUI"))
+local CastleStoryPerformAutoTime = tonumber(ConfigManager:GetGlobalSettingsByKey("CastleStoryPerformAutoTime"))
 local CardMaxCount = 4
 local LeadList = {}
+local StoryPlayType = {Manual = 1, Auto = 2}
 local TextEnterAniEnum = {
   [1] = "m_pnl_paper_dialogue_in1",
   [2] = "m_pnl_paper_dialogue_in2",
@@ -52,6 +54,7 @@ end
 function Form_CastleEventMain:OnActive()
   self.super.OnActive(self)
   local iStoryId = self.m_csui.m_param.cfg.m_StoryID
+  self.m_showStoryType = self.m_csui.m_param.showStoryType
   self.mCharacter = utils.changeCSArrayToLuaTable(self.m_csui.m_param.cfg.m_Character)
   self.cfg = CastleStoryManager:GetCastleStoryPerformCfgByStoryID(iStoryId)
   self.curTextID = {
@@ -59,14 +62,24 @@ function Form_CastleEventMain:OnActive()
   }
   self.LoadedHeroList = {}
   self.mTextCache = {}
+  self.m_storyPlayType = StoryPlayType.Manual
+  self.m_chooseState = false
+  self:StopAutoPlayStoryTimer()
   self:FreshUI()
+  self:RefreshPlayTypeBtnState()
   self:ResetUI()
   self:ShowCurText()
 end
 
 function Form_CastleEventMain:OnInactive()
   self.super.OnInactive(self)
+  self:StopAutoPlayStoryTimer()
   self:CheckRecycleAllSpine()
+  if not self.m_enterAnimTimer then
+    TimeService:KillTimer(self.m_enterAnimTimer)
+    self.m_enterAnimTimer = nil
+  end
+  self.m_chooseState = false
 end
 
 function Form_CastleEventMain:OnDestroy()
@@ -204,6 +217,29 @@ function Form_CastleEventMain:FreshUI()
   self.m_txt_placename_Text.text = placeCfg.m_mName
 end
 
+function Form_CastleEventMain:RefreshPlayTypeBtnState()
+  self.m_btn_manual:SetActive(self.m_storyPlayType == StoryPlayType.Manual)
+  self.m_btn_auto:SetActive(self.m_storyPlayType == StoryPlayType.Auto)
+end
+
+function Form_CastleEventMain:AutoPlayStoryTimer(time)
+  if not time or time == 0 then
+    time = CastleStoryPerformAutoTime
+  end
+  self:StopAutoPlayStoryTimer()
+  self.m_autoPlayStoryTimer = TimeService:SetTimer(time, 1, function()
+    self:StopAutoPlayStoryTimer()
+    self:DoNextStep()
+  end)
+end
+
+function Form_CastleEventMain:StopAutoPlayStoryTimer()
+  if self.m_autoPlayStoryTimer then
+    TimeService:KillTimer(self.m_autoPlayStoryTimer)
+    self.m_autoPlayStoryTimer = nil
+  end
+end
+
 function Form_CastleEventMain:ResetUI()
   for i, v in ipairs(self.mCradCompnents) do
     v.obj:SetActive(false)
@@ -276,6 +312,7 @@ function Form_CastleEventMain:ShowCurText()
   local textCom = self.mTextCompnents[self.curTextComIdx]
   textCom.mCanvasGroup.alpha = 0
   local textType = info.m_TextType
+  self:ChangeBg(info)
   if textType == CastleStoryManager.TextTypeEnum.Speak then
     textCom.m_BG_Normal:SetActive(false)
     textCom.m_BG_Important:SetActive(true)
@@ -305,6 +342,7 @@ function Form_CastleEventMain:ShowCurText()
           self:PlayAniAndChangeOrder(speaker, true)
         end)
       else
+        self.mCradCompnents[speaker].obj:SetActive(true)
         self:PlayAniAndChangeOrder(speaker)
       end
     else
@@ -343,6 +381,7 @@ function Form_CastleEventMain:ShowCurText()
       self.mCradCompnents[role].maskobj:SetActive(true)
     end
   end
+  self:SpeakerGoOut(info)
   if info.m_ItemPic and info.m_ItemPic ~= "" then
     self.m_txt_iconname_Text.text = info.m_mItemName
     UILuaHelper.SetAtlasSprite(self.m_icon_item_Image, info.m_ItemPic)
@@ -364,10 +403,16 @@ function Form_CastleEventMain:ShowCurText()
   textCom.go.transform:SetAsLastSibling()
   UILuaHelper.PlayAnimationByName(textCom.go, aniName)
   local aniLen = UILuaHelper.GetAnimationLengthByName(textCom.go, aniName)
-  TimeService:SetTimer(aniLen, 1, function()
-    self.m_btn_continue:SetActive(true)
-    self.m_btn_next:SetActive(true)
-    self:CheckShowEnd()
+  if not self.m_enterAnimTimer then
+    TimeService:KillTimer(self.m_enterAnimTimer)
+    self.m_enterAnimTimer = nil
+  end
+  self.m_enterAnimTimer = TimeService:SetTimer(aniLen, 1, function()
+    if not utils.isNull(self.m_btn_continue) then
+      self.m_btn_continue:SetActive(true)
+      self.m_btn_next:SetActive(true)
+      self:CheckShowEnd()
+    end
   end)
   for i, v in ipairs(self.mTextCompnents) do
     if self.curTextComIdx ~= i then
@@ -392,6 +437,51 @@ function Form_CastleEventMain:ShowCurText()
     self.curTextComIdx = 1
   end
   CS.GlobalManager.Instance:TriggerWwiseBGMState(217)
+  if self.m_storyPlayType == StoryPlayType.Auto and info.m_AutoTime then
+    self:AutoPlayStoryTimer(info.m_AutoTime)
+  end
+end
+
+function Form_CastleEventMain:SpeakerGoOut(info)
+  if not info then
+    return
+  end
+  local outSpeakerList = utils.changeCSArrayToLuaTable(info.m_OutSpeaker)
+  if table.getn(outSpeakerList) > 0 then
+    for i, outSpeaker in ipairs(outSpeakerList) do
+      local heroID
+      if outSpeaker and 0 < outSpeaker then
+        heroID = self.mCharacter[outSpeaker]
+      end
+      if heroID then
+        UILuaHelper.PlayAnimationByName(self.mCradCompnents[outSpeaker].obj, CardAniList[outSpeaker].ani_out)
+        local aniLen = UILuaHelper.GetAnimationLengthByName(self.mCradCompnents[outSpeaker].obj, CardAniList[outSpeaker].ani_out)
+        local sequenceJump = Tweening.DOTween.Sequence()
+        sequenceJump:AppendInterval(aniLen)
+        sequenceJump:OnComplete(function()
+          if not utils.isNull(self.mCradCompnents[outSpeaker].obj) then
+            self.mCradCompnents[outSpeaker].obj:SetActive(false)
+          end
+        end)
+        sequenceJump:SetAutoKill(true)
+      end
+    end
+  end
+end
+
+function Form_CastleEventMain:ChangeBg(info)
+  if not info then
+    return
+  end
+  if info.m_PlaceBG and info.m_PlaceBG ~= "" then
+    UILuaHelper.SetAtlasSprite(self.m_img_bg_Image, info.m_PlaceBG)
+  end
+  local placeID = self.m_csui.m_param.cfg.m_PlaceID
+  local placeCfg = CastleManager:GetCastlePlaceCfgByID(placeID)
+  local flag = ConfigManager:CheckConfigFieldStrIsEmpty(info.m_mPlaceSubName)
+  if not flag and placeCfg then
+    self.m_txt_placename_Text.text = placeCfg.m_mName .. tostring(info.m_mPlaceSubName)
+  end
 end
 
 function Form_CastleEventMain:ShowCurChoose()
@@ -433,6 +523,7 @@ function Form_CastleEventMain:DoNextStep()
     info = self.cfg[self.curTextID[self.curChoose]]
     self.mTextCache[#self.mTextCache].chooseIdx = self.curChoose
     self.curChoose = nil
+    self.m_chooseState = false
   else
     info = self.cfg[self.curTextID[1]]
   end
@@ -449,7 +540,9 @@ function Form_CastleEventMain:DoNextStep()
       return
     end
     if self.cfg[nextID].m_TextType == CastleStoryManager.TextTypeEnum.Choose then
+      self:StopAutoPlayStoryTimer()
       self:ShowCurChoose()
+      self.m_chooseState = true
     else
       self:ShowCurText()
     end
@@ -478,6 +571,7 @@ end
 function Form_CastleEventMain:PlayAniAndChangeOrder(speaker, is_first)
   if (speaker == 1 or speaker == 3) and self.curLeft ~= speaker then
     if is_first then
+      UILuaHelper.SetLocalPosition(self.mCradCompnents[speaker].obj, 10000, 0, 0)
       UILuaHelper.PlayAnimationByName(self.mCradCompnents[speaker].obj, CardAniList[speaker].ani_in)
       self.mCradCompnents[speaker].obj.transform:SetAsLastSibling()
     else
@@ -491,6 +585,7 @@ function Form_CastleEventMain:PlayAniAndChangeOrder(speaker, is_first)
     self.curLeft = speaker
   elseif (speaker == 2 or speaker == 4) and self.curRight ~= speaker then
     if is_first then
+      UILuaHelper.SetLocalPosition(self.mCradCompnents[speaker].obj, 10000, 0, 0)
       UILuaHelper.PlayAnimationByName(self.mCradCompnents[speaker].obj, CardAniList[speaker].ani_in)
       self.mCradCompnents[speaker].obj.transform:SetAsLastSibling()
     else
@@ -568,7 +663,23 @@ function Form_CastleEventMain:LoadHeroSpine(heroID, heroSpineAssetName, uiParent
   end
 end
 
+function Form_CastleEventMain:OnBtnautoClicked()
+  self.m_storyPlayType = StoryPlayType.Manual
+  self:RefreshPlayTypeBtnState()
+  self:StopAutoPlayStoryTimer()
+end
+
+function Form_CastleEventMain:OnBtnmanualClicked()
+  self.m_storyPlayType = StoryPlayType.Auto
+  self:RefreshPlayTypeBtnState()
+  if self.m_chooseState then
+    return
+  end
+  self:AutoPlayStoryTimer()
+end
+
 function Form_CastleEventMain:OnBtnreviewClicked()
+  self:OnBtnautoClicked()
   StackPopup:Push(UIDefines.ID_FORM_CASTLEEVENTSTORY, {
     cache = self.mTextCache,
     cfg = self.cfg
@@ -576,16 +687,24 @@ function Form_CastleEventMain:OnBtnreviewClicked()
 end
 
 function Form_CastleEventMain:OnBtnskipClicked()
-  utils.popUpDirectionsUI({
-    tipsID = 1179,
-    func1 = function()
-      self:RqsFinishEvent(true)
-    end
-  })
+  if self.m_showStoryType == CastleStoryManager.ShowStoryType.Playback then
+    self:CloseForm()
+  else
+    utils.popUpDirectionsUI({
+      tipsID = 1179,
+      func1 = function()
+        self:RqsFinishEvent(true)
+      end
+    })
+  end
 end
 
 function Form_CastleEventMain:OnBtnblockClicked()
-  self:RqsFinishEvent()
+  if self.m_showStoryType == CastleStoryManager.ShowStoryType.Playback then
+    self:CloseForm()
+  else
+    self:RqsFinishEvent()
+  end
 end
 
 function Form_CastleEventMain:OnBtncontinue1Clicked()

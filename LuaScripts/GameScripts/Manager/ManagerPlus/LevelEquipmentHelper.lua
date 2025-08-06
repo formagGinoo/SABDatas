@@ -440,9 +440,12 @@ function LevelEquipmentHelper:GetTodayBossResName()
   local animNameList = {}
   local cfgList = self:GetTodayAllBossCfg()
   for i, cfg in pairs(cfgList) do
-    posNameList[cfg.m_Order] = cfg.m_Point
-    bossNameList[cfg.m_Order] = cfg.m_Model
-    animNameList[cfg.m_Order] = cfg.m_Animator
+    local isUnlock = self:IsChapterSubTypeUnlock(cfg.m_LevelSubType)
+    if isUnlock then
+      posNameList[cfg.m_Order] = cfg.m_Point
+      bossNameList[cfg.m_Order] = cfg.m_Model
+      animNameList[cfg.m_Order] = cfg.m_Animator
+    end
   end
   return posNameList, bossNameList, animNameList
 end

@@ -134,6 +134,13 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
     print("dmmAccountInfo.viewerId", dmmAccountInfo.viewerId)
     print("dmmAccountInfo.signature", dmmAccountInfo.signature)
     print("dmmAccountInfo.sAuthKey", reqMsg.sAuthKey)
+  elseif ChannelManager:IsWegameChannel() then
+    local wegameAccountInfo = WegameManager:GetAccountInfo()
+    reqMsg.sAccountName = "wegame_" .. wegameAccountInfo.railId
+    reqMsg.sAuthKey = ""
+    reqMsg.mMiscData.session_ticket = wegameAccountInfo.ticket
+    print("wegameAccountInfo.sAccountName", reqMsg.sAccountName)
+    print("wegameAccountInfo.auth_ticket", wegameAccountInfo.ticket)
   else
     reqMsg.sAccountName = "msdk_" .. CS.AccountManager.Instance:GetAccountID()
     reqMsg.sAuthKey = CS.AccountManager.Instance:GetAccountToken()
@@ -182,6 +189,8 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
       if not CS.UnityEngine.Application.isEditor then
         CS.BugSplatUtils.Instance:SetUserId(tostring(sc.iAccountId))
       end
+    elseif CS.HotUpdateHelper.Instance:IsUsingBuglyPro() then
+      CS.CrashSightUtils.Instance:SetUserId(tostring(sc.iAccountId))
     else
       CS.BuglyUtils.Instance:SetUserId(tostring(sc.iAccountId))
     end
@@ -197,6 +206,7 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
     })
     local sAndroidId = CS.DeviceUtil.GetAndroidID()
     UserDataManager:SetAndroidID(sAndroidId)
+    UserDataManager:SetAccountInfo(sc.vAccountInfo)
     loginContext.AccountList = sc.vAccountInfo
     loginContext.UserIP = sc.sUserIP
     loginContext.Country = sc.sCountry or ""
@@ -208,13 +218,16 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
     if IsIPhonePlatform() and sc.stZone.iFlag == MTTDProto.EM_ZoneFlag_Audit then
       commonContext.BIOSReview = true
     end
-    if sc.mMiscData and ChannelManager:IsUsingQSDK() then
+    if sc.mMiscData and ChannelManager:IsQSDKWindowsChannel() then
       QSDKManager:SetMiscData(sc.mMiscData)
     end
-    if ChannelManager:IsUsingQSDK() then
+    if ChannelManager:IsQSDKWindowsChannel() then
       if QSDKManager:CheckAntiAddictionNeedShowTips() then
         utils.CheckAndPushCommonTips({
-          tipsID = 1125,
+          title = "",
+          content = "根据国家新闻出版署《关于进一步严格管理 切实防止未成年人沉迷网络游戏的通知》规定，未成年玩家仅可在周五、周六、周日及法定节假日，每日20 时至 21 时期间登录游戏，其他时间无法登录游戏。",
+          funcText1 = "确定",
+          btnNum = 1,
           bLockBack = true,
           func1 = function()
             if fResultCB then

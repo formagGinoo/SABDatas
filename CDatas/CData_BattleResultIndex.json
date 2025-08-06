@@ -571,11 +571,51 @@
       "m_mConditonReason": "\"\"",
       "m_IsShowConditonReason": null
     },
+    "2100041": {
+      "m_bError": null,
+      "m_ID": "2100041",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31672,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2100048": {
+      "m_bError": null,
+      "m_ID": "2100048",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31673,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
     "2400004": {
       "m_bError": null,
       "m_ID": "2400004",
       "m_Conditontype": "1005",
       "m_ConditonParam": "[90401,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2400006": {
+      "m_bError": null,
+      "m_ID": "2400006",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[90601,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2400008": {
+      "m_bError": null,
+      "m_ID": "2400008",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[90804,0]",
       "m_ConditionStart": null,
       "m_ConditonEnd": null,
       "m_mConditonReason": "\"\"",
@@ -1198,7 +1238,7 @@
       "m_ConditonParam": "[1000716,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Piera</color> got devoured.\"",
+      "m_mConditonReason": "\"<#F11E1D>Piera</color> was devoured.\"",
       "m_IsShowConditonReason": "1"
     },
     "10071613": {
@@ -1208,8 +1248,28 @@
       "m_ConditonParam": "[1300716,0]",
       "m_ConditionStart": "2",
       "m_ConditonEnd": null,
-      "m_mConditonReason": "\"<#F11E1D>Piera</color> got devoured.\"",
+      "m_mConditonReason": "\"<#F11E1D>Piera</color> was devoured.\"",
       "m_IsShowConditonReason": "1"
+    },
+    "10110111": {
+      "m_bError": null,
+      "m_ID": "10110111",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[10192,0]",
+      "m_ConditionStart": "2",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"<#A65F30>Theophane</color> defeated.\"",
+      "m_IsShowConditonReason": "1"
+    },
+    "10110911": {
+      "m_bError": null,
+      "m_ID": "10110911",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31282,0]",
+      "m_ConditionStart": "4",
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
     },
     "10200022": {
       "m_bError": null,
@@ -1342,5 +1402,5 @@
       "m_IsShowConditonReason": null
     }
   },
-  "status": "processed_134_items"
+  "status": "processed_140_items"
 }

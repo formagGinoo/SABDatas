@@ -1,6 +1,4 @@
 local Form_WhackMoleMain = class("Form_WhackMoleMain", require("UI/UIFrames/Form_WhackMoleMainUI"))
-local EventCenter = require("events/EventCenter")
-local EventDefine = require("events/EventDefine")
 local ITEM_HEIGHT = 180
 
 function Form_WhackMoleMain:AfterInit()
@@ -16,18 +14,19 @@ function Form_WhackMoleMain:AfterInit()
   UILuaHelper.SetActive(self.m_btn_home, true)
   self.m_levelListInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_level_list_InfinityGrid, "WhackMole/UIWhackMoleLevelItem")
   CS.UnityEngine.Canvas.ForceUpdateCanvases()
+  self.decNum = 1
   self.extraItemNum = math.floor(self:GetCacheItemNum() / 2)
   self.selectIndex = 1 + self.extraItemNum
-  self.levelSelectHandler = EventCenter.AddListener(EventDefine.eGameEvent_WhackMole_Level_Select, function(selectIndex)
-    self.m_levelListInfinityGrid:ScrollTo(selectIndex - 1)
+  self:addEventListener("eGameEvent_WhackMole_Level_Select", function(selectIndex)
+    self.m_levelListInfinityGrid:ScrollTo(selectIndex - self.decNum)
   end)
-  self:addEventListener("eGameEvent_ActMemory_MemoryFinish", function()
+  self:addEventListener("eGameEvent_ActMinigame_Finish", function()
     local preIndex = self.selectIndex
     self:OnRefreshData()
     if self.selectIndex == preIndex and self.m_levelListInfinityGrid then
       self.m_levelListInfinityGrid:GetShowItemByIndex(self.selectIndex):ShowSelectStyle(true)
     else
-      self.m_levelListInfinityGrid:ScrollTo(self.selectIndex - 1)
+      self.m_levelListInfinityGrid:ScrollTo(self.selectIndex - self.decNum)
     end
   end)
   self.m_isGetFirstCfg = false
@@ -65,7 +64,6 @@ end
 function Form_WhackMoleMain:OnDestroy()
   self.super.OnDestroy(self)
   self.m_levelListScrollRect.onValueChanged:RemoveListener(self.ScrollRectHandler)
-  EventCenter.RemoveListener(EventDefine.eGameEvent_WhackMole_Level_Select, self.levelSelectHandler)
   self:clearEventListener()
 end
 
@@ -96,7 +94,7 @@ function Form_WhackMoleMain:OnScrollValueChanged()
     if firstShowItem then
       firstShowItem:ShowSelectStyle(true)
     end
-    self.m_levelListInfinityGrid:ScrollTo(self.selectIndex - 1)
+    self.m_levelListInfinityGrid:ScrollTo(self.selectIndex - self.decNum)
     if not self.levelViewCenterPosY then
       self.levelViewCenterPosY = self.m_levelListInfinityGrid:GetShowItemByIndex(self.extraItemNum + 1).m_itemTemplateCache.transform.position.y
     end
@@ -217,6 +215,9 @@ end
 
 function Form_WhackMoleMain:GetCacheItemNum()
   local count = math.ceil(self.m_levelListScrollRect.viewport.rect.height / ITEM_HEIGHT)
+  if count % 2 == 0 then
+    self.decNum = 2
+  end
   return count
 end
 

@@ -1,5 +1,6 @@
 local Form_EquipT10OverloadRandomWord = class("Form_EquipT10OverloadRandomWord", require("UI/UIFrames/Form_EquipT10OverloadRandomWordUI"))
 local SHOW_ATTR_TIPS_NUM = 6
+local MaxAttrItemNum = 3
 local ATTR_MAX_LEVEL = 20
 
 function Form_EquipT10OverloadRandomWord:SetInitParam(param)
@@ -20,6 +21,7 @@ function Form_EquipT10OverloadRandomWord:OnActive()
     iID = self.m_equipData.iBaseId,
     iNum = 0
   }, self.m_equipData)
+  self.m_replaceBackFun = self.m_csui.m_param.replaceBackFun
   self:RefreshUI()
 end
 
@@ -50,6 +52,36 @@ end
 
 function Form_EquipT10OverloadRandomWord:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function Form_EquipT10OverloadRandomWord:CheckGetChangeEffectList()
+  local changeEffectList = {}
+  if not self.m_equipData then
+    return changeEffectList
+  end
+  local tempChangeEffectMap = table.deepcopy(self.m_equipData.mChangingEffect)
+  local overloadEffectMap = self.m_equipData.mOverloadEffect
+  for i = 1, MaxAttrItemNum do
+    local isHaveDataCurrent = overloadEffectMap[i] ~= nil
+    local isHaveDataAfterChange = tempChangeEffectMap[i] ~= nil
+    local isHaveChange = false
+    if isHaveDataCurrent ~= isHaveDataAfterChange then
+      isHaveChange = true
+    elseif isHaveDataAfterChange then
+      local tempCurEffectData = overloadEffectMap[i]
+      local tempChangeEffectData = tempChangeEffectMap[i]
+      if tempCurEffectData.iGroupId ~= tempChangeEffectData.iGroupId or tempCurEffectData.iEffectLevel ~= tempChangeEffectData.iEffectLevel then
+        isHaveChange = true
+      end
+    end
+    if isHaveChange then
+      local changeData = {
+        equipEffectData = tempChangeEffectMap[i]
+      }
+      changeEffectList[i] = changeData
+    end
+  end
+  return changeEffectList
 end
 
 function Form_EquipT10OverloadRandomWord:RefreshOverLoadExAttr()
@@ -130,8 +162,16 @@ function Form_EquipT10OverloadRandomWord:OnBtnsaveClicked()
   EquipManager:OnReqEquipSaveReOverload(self.m_equipData.iEquipUid, false)
 end
 
-function Form_EquipT10OverloadRandomWord:OnEventSaveReOverload()
+function Form_EquipT10OverloadRandomWord:OnEventSaveReOverload(params)
+  if not params then
+    return
+  end
   self:OnBtnCloseClicked()
+  if self.m_replaceBackFun ~= nil then
+    local changeEffectList = self:CheckGetChangeEffectList()
+    self.m_replaceBackFun(params.bSave, self.m_equipData.iEquipUid, changeEffectList)
+    self.m_replaceBackFun = nil
+  end
 end
 
 function Form_EquipT10OverloadRandomWord:OnBtnCloseClicked()

@@ -24,6 +24,7 @@ function Form_HuntingNight:OnActive()
     log.error("get ActivityType_Hunting error !!!")
     return
   end
+  self.m_iActivityId = self.m_activity:getID()
   self.m_curStageCfg = nil
   self.m_bossCfg = nil
   self.m_bossList = self.m_activity:GetHuntingRaidBossList()
@@ -85,10 +86,22 @@ function Form_HuntingNight:AddEventListeners()
   self:addEventListener("eGameEvent_HuntingRaid_GetMyRank", handler(self, self.RefreshMyRank))
   self:addEventListener("eGameEvent_HuntingRaid_GetTotalRank", handler(self, self.OnPullOpenUI))
   self:addEventListener("eGameEvent_Hunting_TakeBossReward", handler(self, self.OnTakeBossReward))
+  self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnAnywayReload))
 end
 
 function Form_HuntingNight:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function Form_HuntingNight:OnAnywayReload()
+  if self.m_iActivityId then
+    self.m_stActivity = ActivityManager:GetActivityByID(self.m_iActivityId)
+    if not self.m_stActivity then
+      self:CloseForm()
+    else
+      self:RefreshUI()
+    end
+  end
 end
 
 function Form_HuntingNight:InitUI()
@@ -359,13 +372,15 @@ end
 
 function Form_HuntingNight:OnSkilltemplate1Clicked()
   StackFlow:Push(UIDefines.ID_FORM_HUNTINGNIGHTBUFFCHOOSE, {
-    bossId = self.m_selBossId
+    bossId = self.m_selBossId,
+    idx = self.m_selStageIndex
   })
 end
 
 function Form_HuntingNight:OnSkilltemplate2Clicked()
   StackFlow:Push(UIDefines.ID_FORM_HUNTINGNIGHTBUFFCHOOSE, {
-    bossId = self.m_selBossId
+    bossId = self.m_selBossId,
+    idx = self.m_selStageIndex
   })
 end
 
@@ -437,6 +452,7 @@ function Form_HuntingNight:OnBtnbackClicked()
   self:CloseForm()
   HuntingRaidManager:SetEnterStageBossId(nil)
   self:GoBackFormHall()
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_HuntingNight:OnBtnhomeClicked()
@@ -446,6 +462,7 @@ function Form_HuntingNight:OnBtnhomeClicked()
     StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   end
   HuntingRaidManager:SetEnterStageBossId(nil)
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_HuntingNight:OnDestroy()

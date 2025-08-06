@@ -101,7 +101,7 @@
       "m_bError": null,
       "m_StoryID": "100702",
       "m_PreStoryID": "[]",
-      "m_mTitle": "\"Mission: Become a Legendary Cook!\"",
+      "m_mTitle": "\"Goal: Legendary Cook!\"",
       "m_PlaceID": "7",
       "m_ShowCharacter": "20660",
       "m_Character": "[20650,20660]",
@@ -130,7 +130,7 @@
       "m_ShowCharacter": "20290",
       "m_Character": "[20120,20180,20290]",
       "m_Rewards": "[[800003,1]]",
-      "m_UnlockMainline": "1106070",
+      "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
     "200102": {
@@ -202,7 +202,7 @@
       "m_ShowCharacter": "20130",
       "m_Character": "[20130,20030,20060]",
       "m_Rewards": "[[800003,1]]",
-      "m_UnlockMainline": "1104060",
+      "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
     "200402": {
@@ -214,7 +214,7 @@
       "m_ShowCharacter": "20160",
       "m_Character": "[20130,20030,20160]",
       "m_Rewards": "[[800003,1]]",
-      "m_UnlockMainline": "1106080",
+      "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
     "200501": {
@@ -226,7 +226,7 @@
       "m_ShowCharacter": "20200",
       "m_Character": "[20130,20200,20510]",
       "m_Rewards": "[[800003,1]]",
-      "m_UnlockMainline": "1104060",
+      "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
     "200502": {
@@ -238,7 +238,7 @@
       "m_ShowCharacter": "20020",
       "m_Character": "[20130,20030,20020]",
       "m_Rewards": "[[800003,1]]",
-      "m_UnlockMainline": "1104060",
+      "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
     "200601": {
@@ -274,6 +274,18 @@
       "m_ShowCharacter": "20300",
       "m_Character": "[20300,20470]",
       "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
+    "200702": {
+      "m_bError": null,
+      "m_StoryID": "200702",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Acorellia Wool Shawl\"",
+      "m_PlaceID": "2007",
+      "m_ShowCharacter": "20610",
+      "m_Character": "[20120,20290,20180,20610]",
+      "m_Rewards": "[[800003,2]]",
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
@@ -326,5 +338,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_27_items"
+  "status": "processed_28_items"
 }

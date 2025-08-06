@@ -9,6 +9,9 @@ function FilterButton:ctor(goRoot)
   self.m_goFilterTabCur = self.m_goRoot.transform:Find("btn").gameObject
   UILuaHelper.BindButtonClickManual(self, self.m_goFilterTabCur:GetComponent("Button"), handler(self, self.OnBtnFilterTabCurClicked))
   self.m_textFilterCur = self.m_goFilterTabCur.transform:Find("common_filter_txt_name"):GetComponent(T_TextMeshProUGUI)
+  if not self.m_textFilterCur then
+    self.m_textFilterCur = self.m_goFilterTabCur.transform:Find("common_filter_txt_name"):GetComponent(T_Text)
+  end
   self.m_bShowFilterTabList = false
   local temp = self.m_goFilterTabCur.transform:Find("list_bg") or self.m_goFilterTabCur.transform:Find("scroll/view/list_bg")
   self.m_goFilterTabList = temp.gameObject
@@ -53,14 +56,16 @@ function FilterButton:OnUpdate(dt)
 end
 
 function FilterButton:RefreshFilterBtnCur()
-  for _, stTagConfig in ipairs(self.m_vTabConfig) do
-    if stTagConfig.iIndex == self.m_iIndexCur then
-      if self.m_fBindSelectCB then
-        self.m_textFilterCur.text = self.m_fBindSelectCB(stTagConfig)
+  if self.m_textFilterCur then
+    for _, stTagConfig in ipairs(self.m_vTabConfig) do
+      if stTagConfig.iIndex == self.m_iIndexCur then
+        if self.m_fBindSelectCB then
+          self.m_textFilterCur.text = self.m_fBindSelectCB(stTagConfig)
+          break
+        end
+        self.m_textFilterCur.text = ConfigManager:GetCommonTextById(stTagConfig.sTitle)
         break
       end
-      self.m_textFilterCur.text = ConfigManager:GetCommonTextById(stTagConfig.sTitle)
-      break
     end
   end
 end
@@ -118,10 +123,18 @@ function FilterButton:RefreshFilterList()
       if self.m_fBindCB then
         self.m_fBindCB(goFilterTab, stTabConfig)
       else
-        goFilterTab.transform:Find("common_filter_tab_name"):GetComponent(T_TextMeshProUGUI).text = ConfigManager:GetCommonTextById(stTabConfig.sTitle)
+        local sTitle = ConfigManager:GetCommonTextById(stTabConfig.sTitle)
+        local titleText = goFilterTab.transform:Find("common_filter_tab_name"):GetComponent(T_TextMeshProUGUI)
+        titleText = titleText or goFilterTab.transform:Find("common_filter_tab_name"):GetComponent(T_Text)
+        if titleText then
+          titleText.text = sTitle
+        end
         if not utils.isNull(selectedObj) then
           local selectedText = selectedObj.transform:Find("c_txt_selected"):GetComponent(T_TextMeshProUGUI)
-          selectedText.text = ConfigManager:GetCommonTextById(stTabConfig.sTitle)
+          selectedText = selectedText or selectedObj.transform:Find("c_txt_selected"):GetComponent(T_Text)
+          if selectedText then
+            selectedText.text = ConfigManager:GetCommonTextById(stTabConfig.sTitle)
+          end
         end
       end
       if not utils.isNull(selectedObj) then

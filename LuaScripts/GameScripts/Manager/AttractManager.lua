@@ -571,6 +571,22 @@ function AttractManager:IsArchiveUnlock(iHeroId, iArchiveId)
   if not self:IsArchiveRewardRecived(iHeroId, cfg.m_PreArchiveId) then
     return false
   end
+  local actUnlockCondition = utils.changeCSArrayToLuaTable(cfg.m_UnlockActivityLevel)
+  if actUnlockCondition and actUnlockCondition[1] and actUnlockCondition[1] > 0 then
+    local iActId = actUnlockCondition[1]
+    local is_open = HeroActivityManager:IsMainActIsOpenByID(iActId)
+    if is_open then
+      local iLevel = actUnlockCondition[2]
+      if iLevel and 0 < iLevel then
+        local bIsUnlock = LevelHeroLamiaActivityManager:GetLevelHelper():IsLevelHavePass(iLevel)
+        if not bIsUnlock then
+          local levelCfg = LevelHeroLamiaActivityManager:GetLevelHelper():GetLevelCfgByID(iLevel)
+          local unlockStr = HeroActivityManager:GetLevelUnlockStr(levelCfg)
+          return false, nil, unlockStr
+        end
+      end
+    end
+  end
   return true
 end
 

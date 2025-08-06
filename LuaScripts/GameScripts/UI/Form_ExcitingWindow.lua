@@ -75,6 +75,12 @@ end
 
 function Form_ExcitingWindow:OnDestroy()
   self.super.OnDestroy(self)
+  for i, v in pairs(self.m_subPanelData) do
+    if v.subPanelLua then
+      v.subPanelLua:dispose()
+      v.subPanelLua = nil
+    end
+  end
 end
 
 function Form_ExcitingWindow:OnBtncloseClicked()

@@ -32,6 +32,9 @@ function UIBase:OnActiveEx()
     self.m_systemOpenTime = TimeUtil:GetServerTimeS()
     ReportManager:ReportSystemOpen(GlobalConfig.REPORT_SYSTEM_ID_MAP[self:GetID()], self.m_systemOpenTime)
   end
+  if KeyboardMappingManager then
+    KeyboardMappingManager:SetActiveConfig(self:GetFramePrefabName(), self, true)
+  end
 end
 
 function UIBase:OnInactive()
@@ -43,6 +46,9 @@ end
 function UIBase:OnInactiveEx()
   if self.m_ownerModule and GlobalConfig.REPORT_SYSTEM_ID_MAP[self:GetID()] then
     ReportManager:ReportSystemClose(GlobalConfig.REPORT_SYSTEM_ID_MAP[self:GetID()], self.m_systemOpenTime)
+  end
+  if KeyboardMappingManager then
+    KeyboardMappingManager:DeActiveConfig(self:GetFramePrefabName())
   end
 end
 
@@ -253,6 +259,16 @@ end
 
 function UIBase:CloseForm()
   self:OwnerStack():RemoveUIFromStack(self:GetID())
+end
+
+function UIBase:DestroyForm()
+  self:OwnerStack():DestroyUI(self:GetID())
+end
+
+function UIBase:DestroyBigSystemUIImmediately()
+  if CS.GameQualityManager.DestroyBigSystemUIImmediately then
+    self:DestroyForm()
+  end
 end
 
 function UIBase:SetConsistentActive(isConsistentActive)

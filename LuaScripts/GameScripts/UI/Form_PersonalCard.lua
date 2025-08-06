@@ -454,6 +454,11 @@ function Form_PersonalCard:OnBtncloseClicked()
 end
 
 function Form_PersonalCard:OnBtniconrenameClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_PERSONALRENAME)
 end
 
@@ -483,6 +488,14 @@ function Form_PersonalCard:OnBtnHaveFriendClicked()
     return
   end
   StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10321))
+end
+
+function Form_PersonalCard:OnBtnberichtClicked()
+  StackPopup:Push(UIDefines.ID_FORM_PERSONALBLOWWHISTLE, {
+    name = self:GetName(),
+    uid = self:GetUID(),
+    zoneID = self:GetServerZone()
+  })
 end
 
 function Form_PersonalCard:OnBtncardcreatClicked()

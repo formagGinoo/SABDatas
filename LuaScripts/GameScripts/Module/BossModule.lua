@@ -115,6 +115,73 @@ function BossModule:CreateBossPosNode(allLoadBackFun)
   end
 end
 
+function BossModule:CreateBossPosNodeBySortId(sortId, allLoadBackFun)
+  local monoTrans = self:GetMonoGameObjectTrans()
+  if not monoTrans or UILuaHelper.IsNull(monoTrans) then
+    return
+  end
+  local equipmentHelper = LevelManager:GetLevelEquipmentHelper()
+  if not equipmentHelper then
+    return
+  end
+  local chapterInfo = equipmentHelper:GetDunChapterByOrderId(sortId)
+  if not chapterInfo then
+    return
+  end
+  local posRes = chapterInfo.m_Point
+  local maxResListNum = 1
+  local curLoadBackNum = 0
+  
+  local function checkAllLoadEnd()
+    curLoadBackNum = curLoadBackNum + 1
+    if curLoadBackNum >= maxResListNum and allLoadBackFun then
+      allLoadBackFun()
+    end
+  end
+  
+  if not self.m_bossPosResNameList then
+    self.m_bossPosResNameList = {}
+  end
+  local isHave = table.indexof(self.m_bossPosResNameList, posRes)
+  if not isHave and posRes and posRes ~= "" then
+    self.m_bossPosResNameList[#self.m_bossPosResNameList + 1] = posRes
+    local pObj = monoTrans:Find(posRes)
+    if utils.isNull(pObj) then
+      ResourceUtil:LoadPrefabAsync(posRes, function(object)
+        local itemRoot = GameObject.Instantiate(object, monoTrans)
+        itemRoot.name = posRes
+        UILuaHelper.SetActive(itemRoot, false)
+        if not utils.isNull(self.m_bossPosObjTab[posRes]) and table.indexof(self.m_bossPosResNameList, posRes) and allLoadBackFun then
+          local itemObj = self.m_bossPosObjTab[posRes]
+          GameObject.Destroy(itemObj)
+          self.m_bossPosObjTab[posRes] = itemRoot
+          UILuaHelper.SetParent(itemRoot, monoTrans, true)
+          UILuaHelper.SetLocalPosition(itemRoot, 10000, 10000, 0)
+          log.error("bossPosObj is repeat !!!")
+        elseif not utils.isNull(self.m_bossPosObjTab[posRes]) and table.indexof(self.m_bossPosResNameList, posRes) and not allLoadBackFun then
+          GameObject.Destroy(itemRoot)
+        else
+          self.m_bossPosObjTab[posRes] = itemRoot
+          UILuaHelper.SetParent(itemRoot, monoTrans, true)
+          UILuaHelper.SetLocalPosition(itemRoot, 10000, 10000, 0)
+        end
+        checkAllLoadEnd()
+      end)
+    else
+      self.m_bossPosObjTab[posRes] = pObj
+      checkAllLoadEnd()
+    end
+  elseif not self.m_bossPosObjTab[posRes] then
+    local pObj = monoTrans:Find(posRes)
+    if not utils.isNull(pObj) then
+      self.m_bossPosObjTab[posRes] = pObj
+      checkAllLoadEnd()
+    end
+  else
+    checkAllLoadEnd()
+  end
+end
+
 function BossModule:ClearAllBossRes()
   self.m_bossCameraTab = {}
   self.m_bossLightObjTab = {}
@@ -132,6 +199,7 @@ function BossModule:ClearBossPosNode()
     end
     self.m_bossPosObjTab = {}
   end
+  self.m_bossPosResNameList = {}
 end
 
 function BossModule:ForceRemoveBossPosNode()
@@ -218,7 +286,11 @@ function BossModule:CreateBoss3DResBySortId(sortId)
       self:CreateBoss3DResBySortId(sortId)
     end
     
-    self:CreateBossPosNode(callBack)
+    if CS.GameQualityManager.DestroyBossChapterInBattle then
+      self:CreateBossPosNodeBySortId(sortId, callBack)
+    else
+      self:CreateBossPosNode(callBack)
+    end
   end
 end
 

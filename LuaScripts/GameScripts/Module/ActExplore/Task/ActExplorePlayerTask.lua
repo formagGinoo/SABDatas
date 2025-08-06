@@ -10,7 +10,7 @@ function ActExplorePlayerTask:OnCreate(world, entityObj)
   entityObj.playerInteractive.OnTriggerStateChange = handler(world, world.OnTriggerStateChange)
   local playerController = entityObj.gameObject:AddComponent(typeof(CS.ActExploreMoveController))
   entityObj.playerController = playerController
-  playerController.SpeedCurve = self.playerConfig.SpeedCurve
+  playerController.SpeedCurve = self.playerConfig.SpeedCurve:ToAnimationCurve()
   playerController.MoveSpeed = self.playerConfig.MaxSpeed
   playerController.PathFinder = world.exploreManager.PathFinder
   playerController.SceneSDF = world.exploreManager.SceneSDF

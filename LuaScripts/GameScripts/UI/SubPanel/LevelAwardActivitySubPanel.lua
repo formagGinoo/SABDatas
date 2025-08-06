@@ -3,7 +3,6 @@ local LevelAwardActivitySubPanel = class("LevelAwardActivitySubPanel", UISubPane
 local iMaxCount = 8
 
 function LevelAwardActivitySubPanel:OnInit()
-  self:AddEventListeners()
   self.mComponents = {}
   for i = 1, iMaxCount do
     local trans = self["m_activity_levelitem" .. i].transform
@@ -23,7 +22,10 @@ function LevelAwardActivitySubPanel:OnInit()
 end
 
 function LevelAwardActivitySubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self:RefreshUI()
+  GlobalManagerIns:TriggerWwiseBGMState(275)
 end
 
 function LevelAwardActivitySubPanel:AddEventListeners()
@@ -32,6 +34,10 @@ end
 
 function LevelAwardActivitySubPanel:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function LevelAwardActivitySubPanel:OnInactive()
+  self:RemoveAllEventListeners()
 end
 
 function LevelAwardActivitySubPanel:OnLevelAwardUpdate(stParam)

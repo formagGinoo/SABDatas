@@ -18,7 +18,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"1\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"1\"]]",
+      "m_Rewards": "[]"
     },
     "1012": {
       "m_bError": null,
@@ -37,7 +38,8 @@
       "m_UnlockData": "[[1012]]",
       "m_Prefab": "\"Form_Activity101Lamia_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"2\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"model\",\"2\"]]",
+      "m_Rewards": "[]"
     },
     "1013": {
       "m_bError": null,
@@ -56,7 +58,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_Challenge\"",
       "m_SubPrefab": "\"LevelDetailLamiaSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"sub_id\",\"1013\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1010\"],[\"sub_id\",\"1013\"]]",
+      "m_Rewards": "[]"
     },
     "1014": {
       "m_bError": null,
@@ -75,7 +78,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamiri_Sign\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1015": {
       "m_bError": null,
@@ -94,7 +98,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_Task\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1016": {
       "m_bError": null,
@@ -113,7 +118,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity101Lamia_ShardPersonality\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1021": {
       "m_bError": null,
@@ -132,7 +138,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"1\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"1\"]]",
+      "m_Rewards": "[]"
     },
     "1022": {
       "m_bError": null,
@@ -151,7 +158,8 @@
       "m_UnlockData": "[[102112]]",
       "m_Prefab": "\"Form_Activity102Dalcaro_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"2\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"model\",\"2\"]]",
+      "m_Rewards": "[]"
     },
     "1023": {
       "m_bError": null,
@@ -170,7 +178,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Challenge\"",
       "m_SubPrefab": "\"LevelDetailDalcaroSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"sub_id\",\"1023\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1020\"],[\"sub_id\",\"1023\"]]",
+      "m_Rewards": "[]"
     },
     "1024": {
       "m_bError": null,
@@ -189,7 +198,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Sign\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1025": {
       "m_bError": null,
@@ -208,7 +218,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Task\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1031": {
       "m_bError": null,
@@ -227,7 +238,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity103Luoleilai_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetailLuoleilaiSubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]",
+      "m_Rewards": "[]"
     },
     "1032": {
       "m_bError": null,
@@ -246,7 +258,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity103Luoleilai_Challenge\"",
       "m_SubPrefab": "\"LevelDetailLuoleilaiSubPanel2\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1032\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1032\"]]",
+      "m_Rewards": "[]"
     },
     "1033": {
       "m_bError": null,
@@ -265,7 +278,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity103Luoleilai_Sign\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1034": {
       "m_bError": null,
@@ -284,7 +298,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_103Achievement\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1035": {
       "m_bError": null,
@@ -303,7 +318,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_103Achievement\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1036": {
       "m_bError": null,
@@ -322,7 +338,8 @@
       "m_UnlockData": "[[103102]]",
       "m_Prefab": "\"Form_WhackMoleMain\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1036\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1036\"]]",
+      "m_Rewards": "[]"
     },
     "1037": {
       "m_bError": null,
@@ -341,7 +358,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity102Dalcaro_Task\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1038": {
       "m_bError": null,
@@ -360,7 +378,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_WhackMoleTask\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1038\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"sub_id\",\"1038\"]]",
+      "m_Rewards": "[]"
     },
     "1039": {
       "m_bError": null,
@@ -379,7 +398,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_WhackMoleMain\"",
       "m_SubPrefab": "\"\"",
-      "m_PrefabParam": "[]"
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
     },
     "1040": {
       "m_bError": null,
@@ -398,7 +418,8 @@
       "m_UnlockData": "[]",
       "m_Prefab": "\"Form_Activity104_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetail104SubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"1\"]]",
+      "m_Rewards": "[]"
     },
     "1041": {
       "m_bError": null,
@@ -417,8 +438,129 @@
       "m_UnlockData": "[[104012]]",
       "m_Prefab": "\"Form_Activity104_DialogueMain\"",
       "m_SubPrefab": "\"LevelDetail104SubPanel\"",
-      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"2\"]]"
+      "m_PrefabParam": "[[\"main_id\",\"1030\"],[\"model\",\"2\"]]",
+      "m_Rewards": "[]"
+    },
+    "1051": {
+      "m_bError": null,
+      "m_ActivitySubID": "1051",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Twilight Before The Dawn - Normal\"",
+      "m_ActivitySubType": "11",
+      "m_Part": null,
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": "1051",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity105_DialogueMain\"",
+      "m_SubPrefab": "\"LevelDetail105SubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1050\"],[\"model\",\"1\"]]",
+      "m_Rewards": "[]"
+    },
+    "1052": {
+      "m_bError": null,
+      "m_ActivitySubID": "1052",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Twilight Before The Dawn - Nightmare\"",
+      "m_ActivitySubType": "12",
+      "m_Part": null,
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": "1051",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[1]",
+      "m_UnlockData": "[[105112]]",
+      "m_Prefab": "\"Form_Activity105_DialogueMain\"",
+      "m_SubPrefab": "\"LevelDetail105SubPanel\"",
+      "m_PrefabParam": "[[\"main_id\",\"1050\"],[\"model\",\"2\"]]",
+      "m_Rewards": "[]"
+    },
+    "1053": {
+      "m_bError": null,
+      "m_ActivitySubID": "1053",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Cosmic Singularity\"",
+      "m_ActivitySubType": "13",
+      "m_Part": null,
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": "1053",
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity103Luoleilai_Challenge\"",
+      "m_SubPrefab": "\"LevelDetailLuoleilaiSubPanel2\"",
+      "m_PrefabParam": "[[\"main_id\",\"1050\"],[\"sub_id\",\"1053\"]]",
+      "m_Rewards": "[]"
+    },
+    "1054": {
+      "m_bError": null,
+      "m_ActivitySubID": "1054",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Cycle of the Cosmos\"",
+      "m_ActivitySubType": "14",
+      "m_Part": null,
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"If the stars fall and the sun fades to oblivion, does time still matter?\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity105_Sign\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
+    },
+    "1055": {
+      "m_bError": null,
+      "m_ActivitySubID": "1055",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Ritual Offerings\"",
+      "m_ActivitySubType": "15",
+      "m_Part": null,
+      "m_MiniGameType": null,
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity105Task\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[]"
+    },
+    "1056": {
+      "m_bError": null,
+      "m_ActivitySubID": "1056",
+      "m_ActivityID": "1050",
+      "m_mActivityTitle": "\"Whispers of Yesterday\"",
+      "m_ActivitySubType": "16",
+      "m_Part": null,
+      "m_MiniGameType": "3",
+      "m_SubTypeIndex": "1",
+      "m_LevelLimit": null,
+      "m_mDes": "\"\"",
+      "m_OpenTime": "\"2025-05-01 04:00:00\"",
+      "m_EndTime": "\"2025-05-20 03:59:59\"",
+      "m_UnlockType": "[]",
+      "m_UnlockData": "[]",
+      "m_Prefab": "\"Form_Activity105Minigame_Main\"",
+      "m_SubPrefab": "\"\"",
+      "m_PrefabParam": "[]",
+      "m_Rewards": "[[1600006,1]]"
     }
   },
-  "status": "processed_22_items"
+  "status": "processed_28_items"
 }

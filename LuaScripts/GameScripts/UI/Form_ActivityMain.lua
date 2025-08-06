@@ -14,22 +14,29 @@ function Form_ActivityMain:AfterInit()
 end
 
 function Form_ActivityMain:OnActive()
+  self:addEventListener("eGameEvent_Activity_ResetData", handler(self, self.OnActivityResetData))
   self:RefreshActivityList()
   local param = self.m_csui.m_param
   local selectIndex
   self.subPanelTabIndex = nil
   if param ~= nil then
-    if type(param) == "number" then
-      selectIndex = self:GetSelecteIndex(param)
-      self.m_csui.m_param = nil
-    else
-      selectIndex = self:GetSelecteIndex(param.activityId)
+    selectIndex = self:GetSelecteIndex(param.activityId)
+    self.m_csui.m_param = nil
+    if param.cliveType then
       self.subPanelTabIndex = param.cliveType
-      self.m_csui.m_param = nil
     end
   end
   selectIndex = selectIndex or self.m_selectIndex or 1
   self.m_selectIndex = nil
+  self:OnSelectIndex(selectIndex)
+end
+
+function Form_ActivityMain:OnActivityResetData()
+  self:RefreshActivityList()
+  local selectIndex = self.m_selectIndex or 1
+  if selectIndex > #self.m_vActivityList then
+    selectIndex = 1
+  end
   self:OnSelectIndex(selectIndex)
 end
 
@@ -140,7 +147,6 @@ function Form_ActivityMain:OnSelectIndex(index)
   if not curActivity then
     return
   end
-  local activityType = curActivity:getType()
   local activityId = curActivity:getID()
   local curSubPanelData = self.m_subPanelData[activityId]
   if not curSubPanelData then
@@ -158,28 +164,21 @@ function Form_ActivityMain:OnSelectIndex(index)
       end
     end
     
-    if activityType == MTTD.ActivityType_Sign and curSubPanelData.getSubPanelName and curSubPanelData:getSubPanelName() == ActivityManager.ActivitySubPanelName.ActivitySPName_Sign7 then
-      SubPanelManager:LoadSubPanel(panelName, self.m_root_sevendays, self, nil, {activity = curActivity}, loadCallBack)
-    else
-      SubPanelManager:LoadSubPanel(panelName, self.m_root_activity, self, {
-        cliveType = self.subPanelTabIndex
-      }, {
-        activity = curActivity,
-        cliveType = self.subPanelTabIndex
-      }, loadCallBack)
-    end
+    SubPanelManager:LoadSubPanel(panelName, self.m_root_activity, self, {
+      cliveType = self.subPanelTabIndex
+    }, {
+      activity = curActivity,
+      cliveType = self.subPanelTabIndex
+    }, loadCallBack)
   end
   for k, v in pairs(self.m_subPanelData) do
     local isOpen = k == activityId
     if v.IsActive ~= isOpen then
       if v.subPanelLua and v.IsActive ~= isOpen then
         v.subPanelLua:SetActive(isOpen)
-        if isOpen then
-          if self.subPanelTabIndex then
-            v.subPanelLua:SetCurTabIdx(self.subPanelTabIndex)
-            self.subPanelTabIndex = nil
-          end
-          v.subPanelLua:OnFreshData()
+        if isOpen and self.subPanelTabIndex and v.subPanelLua.SetCurTabIdx then
+          v.subPanelLua:SetCurTabIdx(self.subPanelTabIndex)
+          self.subPanelTabIndex = nil
         end
       end
       v.IsActive = isOpen
@@ -188,7 +187,7 @@ function Form_ActivityMain:OnSelectIndex(index)
       end
     end
     if v.IsActive and v.subPanelLua and v.subPanelLua.OnFreshData then
-      if self.subPanelTabIndex then
+      if self.subPanelTabIndex and v.subPanelLua.SetCurTabIdx then
         v.subPanelLua:SetCurTabIdx(self.subPanelTabIndex)
         self.subPanelTabIndex = nil
       end
@@ -220,6 +219,7 @@ function Form_ActivityMain:OnInactive()
       end
     end
   end
+  self:clearEventListener()
 end
 
 function Form_ActivityMain:OnDestroy()
@@ -227,12 +227,16 @@ function Form_ActivityMain:OnDestroy()
   self.m_TabItemCache = {}
   if self.m_subPanelData then
     for i, info in pairs(self.m_subPanelData) do
+      if info.subPanelLua and info.subPanelLua.OnInactive then
+        info.subPanelLua:OnInactive()
+      end
       if info.subPanelLua and info.subPanelLua.dispose then
         info.subPanelLua:dispose()
         info.subPanelLua = nil
       end
     end
   end
+  self:clearEventListener()
 end
 
 function Form_ActivityMain:OnBackClk()

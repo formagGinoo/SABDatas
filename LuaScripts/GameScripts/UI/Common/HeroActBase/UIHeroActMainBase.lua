@@ -65,7 +65,7 @@ function UIHeroActMainBase:OnDestroy()
 end
 
 function UIHeroActMainBase:CheckRecycleBgNode()
-  if self.m_curBgPrefabStr and self.m_curBgObj then
+  if self.m_curBgPrefabStr and not utils.isNull(self.m_curBgObj) then
     utils.RecycleInParentUIPrefab(self.m_curBgPrefabStr, self.m_curBgObj)
   end
   self.m_curBgPrefabStr = nil
@@ -73,7 +73,7 @@ function UIHeroActMainBase:CheckRecycleBgNode()
 end
 
 function UIHeroActMainBase:CheckAndCreatBg()
-  if not self.m_BGRoot then
+  if utils.isNull(self.m_BGRoot) then
     return
   end
   if self.m_BGRoot.transform.childCount > 0 then
@@ -91,8 +91,12 @@ end
 
 function UIHeroActMainBase:FreshUI()
   local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
-  self.m_txt_title_Text.text = config.m_mActivityTitle
-  self.m_txt_des_Text.text = config.m_mActivityDes
+  if not utils.isNull(self.m_txt_title_Text) then
+    self.m_txt_title_Text.text = config.m_mActivityTitle
+  end
+  if not utils.isNull(self.m_txt_des_Text) then
+    self.m_txt_des_Text.text = config.m_mActivityDes
+  end
   local curTimer = TimeUtil:GetServerTimeS()
   local open_state, endTime = HeroActivityManager:GetActOpenState(self.act_id)
   if not endTime then
@@ -104,12 +108,16 @@ function UIHeroActMainBase:FreshUI()
     StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
     return
   end
-  if open_state == HeroActivityManager.ActOpenState.Normal then
-    self.m_txt_remaining_time_Text.text = ConfigManager:GetCommonTextById(100072)
-  elseif open_state == HeroActivityManager.ActOpenState.WaitingClose then
-    self.m_txt_remaining_time_Text.text = ConfigManager:GetCommonTextById(100073)
+  if not utils.isNull(self.m_txt_remaining_time_Text) then
+    if open_state == HeroActivityManager.ActOpenState.Normal then
+      self.m_txt_remaining_time_Text.text = ConfigManager:GetCommonTextById(100072)
+    elseif open_state == HeroActivityManager.ActOpenState.WaitingClose then
+      self.m_txt_remaining_time_Text.text = ConfigManager:GetCommonTextById(100073)
+    end
   end
-  self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(left_time)
+  if not utils.isNull(self.m_txt_time_Text) then
+    self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(left_time)
+  end
   if self.timer then
     TimeService:KillTimer(self.timer)
   end
@@ -124,41 +132,67 @@ function UIHeroActMainBase:FreshUI()
         self:FreshUI()
       end
     end
-    self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(left_time)
+    if not utils.isNull(self.m_txt_time_Text) then
+      self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(left_time)
+    end
   end)
   if open_state == HeroActivityManager.ActOpenState.Normal then
     local challenge_config_id = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.ChallengeLevel)
     local unlock_flag, unlock_type, lock_str = HeroActivityManager:IsSubActIsOpenByID(self.act_id, challenge_config_id)
-    self.m_txt_challenge_tips:SetActive(not unlock_flag)
-    self.m_img_lock:SetActive(not unlock_flag)
-    self.m_txt_new:SetActive(false)
+    if not utils.isNull(self.m_txt_challenge_tips) then
+      self.m_txt_challenge_tips:SetActive(not unlock_flag)
+    end
+    if not utils.isNull(self.m_img_lock) then
+      self.m_img_lock:SetActive(not unlock_flag)
+    end
+    if not utils.isNull(self.m_txt_new) then
+      self.m_txt_new:SetActive(false)
+    end
     if not unlock_flag then
       local challenge_config = HeroActivityManager:GetSubInfoByID(challenge_config_id)
-      self.m_txt_challenge_tips_Text.text = lock_str or ""
+      if not utils.isNull(self.m_txt_challenge_tips_Text) then
+        self.m_txt_challenge_tips_Text.text = lock_str or ""
+      end
       local is_corved, t1, t2 = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.sub, challenge_config_id)
       if is_corved then
-        self.m_txt_challenge_tips_time_Text.text = TimeUtil:TimerToString3(t1)
-      else
+        if not utils.isNull(self.m_txt_challenge_tips_time_Text) then
+          self.m_txt_challenge_tips_time_Text.text = TimeUtil:TimerToString3(t1)
+        end
+      elseif not utils.isNull(self.m_txt_challenge_tips_time_Text) then
         self.m_txt_challenge_tips_time_Text.text = challenge_config.m_OpenTime
       end
     end
   else
-    self.m_z_txt_challenge_end:SetActive(true)
-    self.m_img_activity_end:SetActive(true)
-    self.m_txt_challenge_tips:SetActive(false)
-    self.m_txt_new:SetActive(false)
+    if not utils.isNull(self.m_z_txt_challenge_end) then
+      self.m_z_txt_challenge_end:SetActive(true)
+    end
+    if not utils.isNull(self.m_img_activity_end) then
+      self.m_img_activity_end:SetActive(true)
+    end
+    if not utils.isNull(self.m_txt_challenge_tips) then
+      self.m_txt_challenge_tips:SetActive(false)
+    end
+    if not utils.isNull(self.m_txt_new) then
+      self.m_txt_new:SetActive(false)
+    end
   end
   local itemCfg = ItemIns:GetValue_ByItemID(config.m_ShopItem)
   if not itemCfg then
     log.error("UIHeroActMainBase:FreshUI Shop itemCfg is nil ItemID: " .. config.m_ShopItem)
     return
   end
-  UILuaHelper.SetAtlasSprite(self.m_icon1_Image, "Atlas_Item/" .. itemCfg.m_IconPath)
-  self.m_txt_num1_Text.text = ItemManager:GetItemNum(config.m_ShopItem)
+  if not utils.isNull(self.m_icon1_Image) then
+    UILuaHelper.SetAtlasSprite(self.m_icon1_Image, "Atlas_Item/" .. itemCfg.m_IconPath)
+  end
+  if not utils.isNull(self.m_txt_num1_Text) then
+    self.m_txt_num1_Text.text = ItemManager:GetItemNum(config.m_ShopItem)
+  end
   local time_line = config.m_ActivityAnimation
   if not time_line or time_line == "" then
-    self.m_btn_introduction:SetActive(false)
-  else
+    if not utils.isNull(self.m_btn_introduction) then
+      self.m_btn_introduction:SetActive(false)
+    end
+  elseif not utils.isNull(self.m_btn_introduction) then
     self.m_btn_introduction:SetActive(true)
   end
   self:FreshGachaBanner()
@@ -170,16 +204,24 @@ function UIHeroActMainBase:FreshSecondHalf()
   if config.m_ActivityType ~= HeroActivityManager.ActivityType.Stages then
     return
   end
-  self.m_img_lock_activity:SetActive(false)
+  if not utils.isNull(self.m_img_lock_activity) then
+    self.m_img_lock_activity:SetActive(false)
+  end
   local open_state, endTime = HeroActivityManager:GetActOpenState(self.act_id, true)
   if open_state == HeroActivityManager.ActOpenState.Normal then
-    self.m_img_lock_activity2:SetActive(false)
-  else
+    if not utils.isNull(self.m_img_lock_activity2) then
+      self.m_img_lock_activity2:SetActive(false)
+    end
+  elseif not utils.isNull(self.m_img_lock_activity2) then
     self.m_img_lock_activity2:SetActive(true)
   end
   if self.m_img_title1 then
-    self.m_img_title1:SetActive(open_state)
-    self.m_img_title:SetActive(not open_state)
+    if not utils.isNull(self.m_img_title1) then
+      self.m_img_title1:SetActive(open_state == HeroActivityManager.ActOpenState.Normal)
+    end
+    if not utils.isNull(self.m_img_title) then
+      self.m_img_title:SetActive(open_state ~= HeroActivityManager.ActOpenState.Normal)
+    end
   end
 end
 
@@ -188,8 +230,8 @@ function UIHeroActMainBase:RegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_task_redpoint, RedDotDefine.ModuleType.HeroActTaskEntry, self.act_id)
   local challengeSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.ChallengeLevel)
   self:RegisterOrUpdateRedDotItem(self.m_challenge_redpoint, RedDotDefine.ModuleType.HeroActChallengeEntry, challengeSubActID)
-  local hardSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.DiffLevel)
-  self:RegisterOrUpdateRedDotItem(self.m_activity_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, hardSubActID)
+  local normalSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.NormalLevel)
+  self:RegisterOrUpdateRedDotItem(self.m_activity_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, normalSubActID)
   self:RegisterOrUpdateRedDotItem(self.m_storyentry_redpoint, RedDotDefine.ModuleType.HeroActMemoryEntry, self.act_id)
   self:RegisterOrUpdateRedDotItem(self.m_store_redpoint, RedDotDefine.ModuleType.HeroActShopEntry, self.act_id)
 end
@@ -229,7 +271,7 @@ function UIHeroActMainBase:OnBtnstoreClicked()
   local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
   local jumpIns = ConfigManager:GetConfigInsByName("Jump")
   local jump_item = jumpIns:GetValue_ByJumpID(config.m_ShopJumpID)
-  local windowId = jump_item.m_WindowID
+  local windowId = jump_item.m_Param.Length > 0 and tonumber(jump_item.m_Param[0]) or 0
   local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
   local shop_id
   for i, v in ipairs(shop_list) do
@@ -344,17 +386,21 @@ function UIHeroActMainBase:FreshGachaBanner()
   if config.m_ActivityType ~= HeroActivityManager.ActivityType.Stages then
     return
   end
-  local btnExtern1 = self.m_btn_img_banner1:GetComponent("ButtonExtensions")
-  if btnExtern1 then
-    btnExtern1.Clicked = handler(self, self.OnBannerClicked)
-    btnExtern1.BeginDrag = handler(self, self.OnBannerBeginDrag)
-    btnExtern1.EndDrag = handler(self, self.OnBannerEndDrag)
+  if not utils.isNull(self.m_btn_img_banner1) then
+    local btnExtern1 = self.m_btn_img_banner1:GetComponent("ButtonExtensions")
+    if btnExtern1 then
+      btnExtern1.Clicked = handler(self, self.OnBannerClicked)
+      btnExtern1.BeginDrag = handler(self, self.OnBannerBeginDrag)
+      btnExtern1.EndDrag = handler(self, self.OnBannerEndDrag)
+    end
   end
-  local btnExtern2 = self.m_btn_img_banner2:GetComponent("ButtonExtensions")
-  if btnExtern2 then
-    btnExtern2.Clicked = handler(self, self.OnBannerClicked)
-    btnExtern2.BeginDrag = handler(self, self.OnBannerBeginDrag)
-    btnExtern2.EndDrag = handler(self, self.OnBannerEndDrag)
+  if not utils.isNull(self.m_btn_img_banner2) then
+    local btnExtern2 = self.m_btn_img_banner2:GetComponent("ButtonExtensions")
+    if btnExtern2 then
+      btnExtern2.Clicked = handler(self, self.OnBannerClicked)
+      btnExtern2.BeginDrag = handler(self, self.OnBannerBeginDrag)
+      btnExtern2.EndDrag = handler(self, self.OnBannerEndDrag)
+    end
   end
   UILuaHelper.SetActive(self.m_pnl_banner, true)
   self.iCurBannerIdx = 1

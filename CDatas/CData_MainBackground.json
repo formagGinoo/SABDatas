@@ -26,8 +26,8 @@
       "m_mGetwayDes": "\"Far Side of the Moon Redemption\"",
       "m_mItemName": "\"Memory: Far Side of the Moon\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_02_s\"",
-      "m_mItemDec": "\"Unlock the Far Side of the Moon in [Customize] - Memories.\n<alpha=#80>Ambling down the dim corridor, will the moon present itself to me at long last?\"",
-      "m_HideType": "1"
+      "m_mItemDec": "\"Unlock the Far Side of the Moon in Customize - Memories.\n<alpha=#80>Ambling down the dim corridor, I wonder if the moon will finally reveal itself to me.\"",
+      "m_HideType": null
     },
     "1600003": {
       "m_bError": null,
@@ -41,7 +41,7 @@
       "m_mItemName": "\"Memory: As Tears Fade Into The Sunset\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
       "m_mItemDec": "\"Unlock the Scene As Tears Fade Into The Sunset in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
-      "m_HideType": "1"
+      "m_HideType": null
     },
     "1600004": {
       "m_bError": null,
@@ -55,6 +55,34 @@
       "m_mItemName": "\"Memories: The Last Summer on Sapphire Isle\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_04_s\"",
       "m_mItemDec": "\"Unlock the scene The Last Summer on Sapphire Isle in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
+      "m_HideType": null
+    },
+    "1600005": {
+      "m_bError": null,
+      "m_BDID": "1600005",
+      "m_mBDName": "\"Ashes of Time\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg105_1\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner05\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_05\"",
+      "m_mGetwayDes": "\"Ashes of Time Redemption\"",
+      "m_mItemName": "\"Memories: Ashes of Time\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_05_s\"",
+      "m_mItemDec": "\"Unlock Ashes of Time in Customize - Memories.\n'I am <i>human</i>... I am Aiona, of the Alita. I fight for the flow of time. I remember... yes, I remember it all now.'\"",
+      "m_HideType": "1"
+    },
+    "1600006": {
+      "m_bError": null,
+      "m_BDID": "1600006",
+      "m_mBDName": "\"Cycle of Destruction\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg105_2\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner06\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_06\"",
+      "m_mGetwayDes": "\"Ashes of Time Redemption\"",
+      "m_mItemName": "\"Memories: Cycle of Destruction\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_06_s\"",
+      "m_mItemDec": "\"Unlocks the scene Cycle of Destruction in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
       "m_HideType": "1"
     },
     "1600007": {
@@ -72,5 +100,5 @@
       "m_HideType": null
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_7_items"
 }

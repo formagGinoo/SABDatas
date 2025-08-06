@@ -79,7 +79,7 @@
           "m_BOSSID": "3",
           "m_Sequence": "1",
           "m_AchieveType": "1",
-          "m_GoalNum": "40",
+          "m_GoalNum": "10",
           "m_mText": "\"Defeat {0} Blood Servant(s).\"",
           "m_Reward": "[[101,150],[1204,50]]"
         },
@@ -88,7 +88,7 @@
           "m_BOSSID": "3",
           "m_Sequence": "2",
           "m_AchieveType": "1",
-          "m_GoalNum": "80",
+          "m_GoalNum": "20",
           "m_mText": "\"Defeat {0} Blood Servant(s).\"",
           "m_Reward": "[[50004,5],[30001,3]]"
         },
@@ -97,7 +97,7 @@
           "m_BOSSID": "3",
           "m_Sequence": "3",
           "m_AchieveType": "1",
-          "m_GoalNum": "120",
+          "m_GoalNum": "40",
           "m_mText": "\"Defeat {0} Blood Servant(s).\"",
           "m_Reward": "[[1050,2],[800003,3]]"
         }
@@ -170,7 +170,109 @@
           "m_Reward": "[[1050,2],[800003,3]]"
         }
       }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "6",
+          "m_Sequence": "1",
+          "m_AchieveType": "2",
+          "m_GoalNum": "300000",
+          "m_mText": "\"Defeat the Plague Queen within {0} sec.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "6",
+          "m_Sequence": "2",
+          "m_AchieveType": "2",
+          "m_GoalNum": "250000",
+          "m_mText": "\"Defeat the Plague Queen within {0} sec.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "6",
+          "m_Sequence": "3",
+          "m_AchieveType": "2",
+          "m_GoalNum": "200000",
+          "m_mText": "\"Defeat the Plague Queen within {0} sec.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "7",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Capture {0} Crabs.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "7",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "20",
+          "m_mText": "\"Capture {0} Crabs.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "7",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "30",
+          "m_mText": "\"Capture {0} Crabs.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "8",
+          "m_Sequence": "1",
+          "m_AchieveType": "2",
+          "m_GoalNum": "300000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "8",
+          "m_Sequence": "2",
+          "m_AchieveType": "2",
+          "m_GoalNum": "250000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "8",
+          "m_Sequence": "3",
+          "m_AchieveType": "2",
+          "m_GoalNum": "200000",
+          "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
+          "m_Reward": "[[1050,2],[800003,3]]"
+        }
+      }
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_8_items"
 }

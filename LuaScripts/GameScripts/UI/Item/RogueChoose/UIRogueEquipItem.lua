@@ -144,7 +144,7 @@ function UIRogueEquipItem:GetPropertySkillDesc()
   end
   local showStrTab = {}
   local itemCfg = self.m_equipItemData.rogueStageItemCfg
-  if itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " " then
+  if itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " " and itemCfg.m_mItemDesc2 ~= "******" then
     local skillStr = itemCfg.m_mItemDesc2
     showStrTab[#showStrTab + 1] = skillStr
   end

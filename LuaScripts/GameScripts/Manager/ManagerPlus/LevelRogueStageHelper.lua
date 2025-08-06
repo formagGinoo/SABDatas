@@ -1101,6 +1101,31 @@ function LevelRogueStageHelper:GetRogueHandBookCfgs()
   return configs
 end
 
+function LevelRogueStageHelper:IsExclusiveHide(cfg, activityCom)
+  if not cfg then
+    return
+  end
+  local hideType = self:GetRogueExclusiveHideTypeByID(cfg.m_ItemID, cfg.m_HideType, activityCom)
+  if hideType == 1 then
+    return true
+  end
+  return false
+end
+
+function LevelRogueStageHelper:GetRogueExclusiveHideTypeByID(exclusiveID, configHideTypeValue, activityCom)
+  if not exclusiveID then
+    return configHideTypeValue
+  end
+  if not activityCom then
+    return configHideTypeValue
+  end
+  local isMatch, serverValue = activityCom:GetRogueExclusiveStatusByID(exclusiveID)
+  if isMatch == true then
+    configHideTypeValue = serverValue
+  end
+  return configHideTypeValue
+end
+
 function LevelRogueStageHelper:IsRogueHandBookItemHaveNew(params)
   local id = params.id
   local bIsActive = params.bIsActive

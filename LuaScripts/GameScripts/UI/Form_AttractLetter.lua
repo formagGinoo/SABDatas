@@ -39,11 +39,15 @@ function Form_AttractLetter:AfterInit()
   self.mLetterScroll = self.m_letterScroll:GetComponent("ScrollRect")
   local btnNext = self.m_Content:GetComponent("ButtonExtensions")
   btnNext.Clicked = handler(self, self.OnBtnnextClicked)
+  local globalSettings = ConfigManager:GetConfigInsByName("GlobalSettings")
+  self.iWaittingTime = tonumber(globalSettings:GetValue_ByName("AttractLetterStayTime").m_Value or 0)
+  self.iInputTime = tonumber(globalSettings:GetValue_ByName("AttractLetterAutoTime").m_Value or 0)
 end
 
 function Form_AttractLetter:OnActive()
   self.super.OnActive(self)
   self.bIsActive = true
+  self:ResetTimer()
   self:FreshUI()
 end
 
@@ -59,10 +63,40 @@ function Form_AttractLetter:OnInactive()
     UILockIns:Unlock(self.m_UILockID)
   end
   self.iPreStep = 0
+  self.bIsNeedTimer = false
+end
+
+function Form_AttractLetter:OnUpdate(dt)
+  if not self.bIsNeedTimer then
+    return
+  end
+  if self.bIsWriting then
+    self.fTimer2 = self.fTimer2 + dt
+    if self.fTimer2 >= self.iInputTime then
+      self.bIsWriting = false
+      self.fTimer2 = 0
+      self.bIsNeedTimer = false
+      self:OnBtnnextClicked()
+    end
+  else
+    self.fTimer1 = self.fTimer1 + dt
+    if self.fTimer1 >= self.iWaittingTime then
+      self.bIsWriting = true
+      self.fTimer1 = 0
+      self:ShowInputState(true)
+    end
+  end
 end
 
 function Form_AttractLetter:OnDestroy()
   self.super.OnDestroy(self)
+end
+
+function Form_AttractLetter:ResetTimer()
+  self.bIsNeedTimer = false
+  self.bIsWriting = false
+  self.fTimer1 = 0
+  self.fTimer2 = 0
 end
 
 function Form_AttractLetter:ResetLetterNode()
@@ -70,6 +104,12 @@ function Form_AttractLetter:ResetLetterNode()
     obj.transform:SetParent(self.m_recircleNode.transform)
     obj.transform.localPosition = Vector3.zero
   end
+  self.m_pnl_btn_invite.transform:SetParent(self.m_recircleNode.transform)
+  self.m_pnl_btn_invite:SetActive(false)
+  self.m_pnl_talk_continue.transform:SetParent(self.m_recircleNode.transform)
+  self.m_pnl_talk_continue:SetActive(false)
+  self.m_pnl_talk_continue02.transform:SetParent(self.m_recircleNode.transform)
+  self.m_pnl_talk_continue02:SetActive(false)
 end
 
 function Form_AttractLetter:FreshUI()
@@ -363,16 +403,108 @@ function Form_AttractLetter:FreshHistoryNode()
     else
       self.mLetterScroll.verticalNormalizedPosition = 0
     end
+    local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(letterData.iLetterId, self.iCurCreateStep)
+    self:CheckIsNeedTimer(letterCfg)
   else
     self.bIsInitHostory = false
     self.iCurCreateStep = 1
     self:AddLetterNode()
+    local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(letterData.iLetterId, self.iCurCreateStep)
+    self:CheckIsNeedTimer(letterCfg)
+  end
+end
+
+function Form_AttractLetter:CheckIsNeedTimer(letterCfg)
+  if not letterCfg then
+    return
+  end
+  if letterCfg.m_DialogueType == self.DialogueNodeType.HeroTalk or letterCfg.m_DialogueType == self.DialogueNodeType.NoahTalk then
+    self.bIsNeedTimer = true
+    if not (letterCfg.m_NextStep and letterCfg.m_NextStep[0]) or letterCfg.m_NextStep[0] == 0 then
+      self.bIsNeedTimer = false
+    end
+  else
+    self.bIsNeedTimer = false
+    if letterCfg.m_DialogueType == self.DialogueNodeType.Choose then
+      local vReply = self.letterData and self.letterData.vReply or {}
+      for _, step in ipairs(vReply) do
+        if letterCfg.m_Step == step then
+          self.bIsNeedTimer = true
+          return
+        end
+      end
+    end
+    self.bIsNeedTimer = false
+  end
+end
+
+function Form_AttractLetter:ShowInputState(bIsShow)
+  local parentNode = bIsShow and self.m_Content.transform or self.m_recircleNode.transform
+  if utils.isNull(parentNode) then
+    return
+  end
+  if not bIsShow then
+    self.m_pnl_talk_continue.transform:SetParent(parentNode)
+    self.m_pnl_talk_continue.transform.localScale = Vector3.one
+    self.m_pnl_talk_continue:SetActive(bIsShow)
+    self.m_pnl_talk_continue02.transform:SetParent(parentNode)
+    self.m_pnl_talk_continue02.transform.localScale = Vector3.one
+    self.m_pnl_talk_continue02:SetActive(bIsShow)
+  else
+    local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, self.iCurCreateStep)
+    if not letterCfg then
+      return
+    end
+    if letterCfg.m_NextStep and letterCfg.m_NextStep[0] ~= 0 then
+      local nextStep = letterCfg.m_NextStep[0]
+      local nextCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, nextStep)
+      if not nextCfg then
+        return
+      end
+      if nextCfg.m_DialogueType == self.DialogueNodeType.HeroTalk then
+        self.m_pnl_talk_continue.transform:SetParent(parentNode)
+        self.m_pnl_talk_continue.transform.localScale = Vector3.one
+        self.m_pnl_talk_continue:SetActive(bIsShow)
+      elseif nextCfg.m_DialogueType == self.DialogueNodeType.NoahTalk then
+        self.m_pnl_talk_continue02.transform:SetParent(parentNode)
+        self.m_pnl_talk_continue02.transform.localScale = Vector3.one
+        self.m_pnl_talk_continue02:SetActive(bIsShow)
+      end
+    end
+  end
+end
+
+function Form_AttractLetter:CheckShowInviteState(letterCfg)
+  if utils.isNull(self.m_pnl_btn_invite) or not letterCfg then
+    return
+  end
+  if self.bIsInAttract or not self.bIsReading then
+    self.m_pnl_btn_invite.transform:SetParent(self.m_recircleNode.transform)
+    self.m_pnl_btn_invite:SetActive(false)
+    return
+  end
+  if not (letterCfg.m_NextStep and letterCfg.m_NextStep[0]) or letterCfg.m_NextStep[0] == 0 then
+    if letterCfg.m_DialogueType == self.DialogueNodeType.Invite then
+      local bIsSaw = AttractManager:IsMailSaw(self.iCurHeroId, self.letterData.iArchiveId)
+      if not bIsSaw then
+        self.m_pnl_btn_invite.transform:SetParent(self.m_recircleNode.transform)
+        self.m_pnl_btn_invite:SetActive(false)
+        return
+      end
+    end
+    self.m_pnl_btn_invite.transform:SetParent(self.m_Content.transform)
+    self.m_pnl_btn_invite.transform.localScale = Vector3.one
+    self.m_pnl_btn_invite:SetActive(true)
   end
 end
 
 function Form_AttractLetter:AddLetterNode()
   if self.bIsWaitting and not self.bIsInitHostory then
     return
+  end
+  if self.bIsWriting then
+    self.bIsWriting = false
+    self:ShowInputState(false)
   end
   if self.curAniItem and self.curAniItem.canvasGroup then
     self.curAniItem.canvasGroup.alpha = 1
@@ -388,8 +520,10 @@ function Form_AttractLetter:AddLetterNode()
   end
   self:DealNodeWithType(item, letterCfg)
   if self.bIsInitHostory then
+    self:CheckShowInviteState(letterCfg)
     return
   end
+  self:CheckIsNeedTimer(letterCfg)
   UILuaHelper.ForceRebuildLayoutImmediate(self.m_Content)
   if self.iCurCreateStep == 1 then
     self.mLetterScroll.verticalNormalizedPosition = 1
@@ -398,6 +532,7 @@ function Form_AttractLetter:AddLetterNode()
   end
   UILuaHelper.PlayAnimationByName(item.root, item.aniName)
   self.curAniItem = item
+  self:CheckShowInviteState(letterCfg)
 end
 
 function Form_AttractLetter:DealNodeWithType(item, letterCfg)
@@ -656,6 +791,7 @@ function Form_AttractLetter:OnClickChoose(params)
     else
       item.imgObj:SetActive(false)
     end
+    self:CheckIsNeedTimer(letterCfg)
   end)
 end
 
@@ -663,11 +799,19 @@ function Form_AttractLetter:OnClickAcceptInvite(params)
   self.bIsWaitting = false
   self.m_UILockID = UILockIns:Lock(1)
   local externRes = {}
-  local depen = CS.VisualFavorability.GetDepenResource(params.timelineType, params.timelineId)
-  for k, v in pairs(depen) do
-    table.insert(externRes, {sName = k, eType = v})
+  local vPackage = {}
+  if params.timelineType == 1 then
+    local depen = CS.VisualFavorability.GetDepenResource(params.timelineType, params.timelineId)
+    for k, v in pairs(depen) do
+      table.insert(externRes, {sName = k, eType = v})
+    end
+  else
+    table.insert(vPackage, {
+      sName = params.timelineId,
+      eType = DownloadManager.ResourcePackageType.Timeline
+    })
   end
-  DownloadManager:DownloadResourceWithUI(nil, externRes, "Form_AttractLetter:OnClickAcceptInviteCallback", nil, nil, function()
+  DownloadManager:DownloadResourceWithUI(vPackage, externRes, "Form_AttractLetter:OnClickAcceptInviteCallback", nil, nil, function()
     self:OnClickAcceptInviteCallback(params)
   end, nil, nil, nil, nil, function()
     if self.m_UILockID then
@@ -721,6 +865,9 @@ function Form_AttractLetter:OnBtnnextClicked()
   if self.bIsWaitting then
     return
   end
+  self.bIsWriting = false
+  self.fTimer2 = 0
+  self:ShowInputState(false)
   local letterCfg = AttractManager:GetAttractLetterCfgByIDAndStep(self.letterData.iLetterId, self.iCurCreateStep)
   if not letterCfg then
     return
@@ -753,6 +900,7 @@ function Form_AttractLetter:OnBtnnextClicked()
     return
   end
   if not stepList[1] or stepList[1] == 0 then
+    self:CheckShowInviteState(letterCfg)
     return
   end
   self.iPreStep = self.iCurCreateStep or 0
@@ -799,6 +947,13 @@ function Form_AttractLetter:ReqSetLetter(bIsClose)
       self:CloseSelfAndCheck2Hall()
     end
   end)
+end
+
+function Form_AttractLetter:OnPnlbtninviteClicked()
+  self:OnBtncloseClicked()
+  AttractManager:LoadFavorabilityScene(nil, {
+    hero_id = self.iCurHeroId
+  })
 end
 
 function Form_AttractLetter:OnBtncloseClicked()

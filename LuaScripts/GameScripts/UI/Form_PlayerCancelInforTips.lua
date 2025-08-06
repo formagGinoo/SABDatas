@@ -14,7 +14,7 @@ function Form_PlayerCancelInforTips:OnActive()
   if not self.urlString then
     return
   end
-  self.m_btn_yes.transform:Find("txt_yes"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes")
+  self.m_btn_yes.transform:Find("txt_yes"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes")
   self.m_btnClose:SetActive(true)
   local theFirst = string.sub(self.urlString, 1, 4)
   TimeService:SetTimer(0.05, 1, function()
@@ -44,7 +44,7 @@ end
 function Form_PlayerCancelInforTips:OnBtnyesClicked()
   if self.tempWebView then
     GameObject.Destroy(self.tempWebView)
-    self.tempWebView = nil
+    self.tempWebView = nilForm_PlayerCenterAccountBind
   end
   StackPopup:RemoveUIFromStack(UIDefines.ID_FORM_PLAYERCANCELINFORTIPS)
 end

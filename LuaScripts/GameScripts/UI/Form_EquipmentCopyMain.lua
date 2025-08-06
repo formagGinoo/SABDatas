@@ -150,6 +150,10 @@ function Form_EquipmentCopyMain:FreshData()
   self.m_curDungeonLevelPhaseCfgList = self.m_equipmentHelper:GetDungeonLevelPhaseCfgListByID(self.m_curLevelID)
   self.m_curDamageNum = self.m_equipmentHelper:GetLevelTopDamageByLevelID(self.m_curLevelID)
   self.m_curStageIndex = self.m_equipmentHelper:GetLevelStageByDamage(self.m_curLevelID, self.m_curDamageNum)
+  if tParam.createBoss then
+    self.m_ownerModule:HideAllBossPosAndResetMainCamera(self.m_curLevelSubType)
+    self.m_ownerModule:CreateBoss3DResBySortId(self.m_selBossChapterIndex)
+  end
 end
 
 function Form_EquipmentCopyMain:FreshUI()
@@ -361,6 +365,13 @@ function Form_EquipmentCopyMain:OpenBossShowPanelAndWaitBack(maxAnimLen)
   })
 end
 
+function Form_EquipmentCopyMain:ClearBossRes()
+  if CS.GameQualityManager.DestroyBossChapterInBattle then
+    self.m_ownerModule:HideAllBossPosAndResetMainCamera(self.m_curLevelSubType)
+    self.m_ownerModule:ClearAllBossRes()
+  end
+end
+
 function Form_EquipmentCopyMain:CheckCreateFunctions()
   local maxBossType = self.m_uiVariables.MaxBossType
   for i = 1, maxBossType do
@@ -419,6 +430,7 @@ function Form_EquipmentCopyMain:OnBtnStartClicked()
     })
     return
   end
+  self:ClearBossRes()
   BattleFlowManager:StartEnterBattle(LevelManager.LevelType.Dungeon, self.m_curLevelCfg.m_LevelID)
 end
 
@@ -443,6 +455,7 @@ function Form_EquipmentCopyMain:OnBtnSimClicked()
     })
     return
   end
+  self:ClearBossRes()
   BattleFlowManager:StartEnterBattle(LevelManager.LevelType.Dungeon, self.m_curLevelCfg.m_LevelID, true)
 end
 
@@ -496,6 +509,7 @@ function Form_EquipmentCopyMain:OnBackClk()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackFlow:Push(UIDefines.ID_FORM_EQUIPMENTCOPYMAINCHOOSE)
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_EQUIPMENTCOPYMAIN)
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_EquipmentCopyMain:OnBackHome()
@@ -503,6 +517,7 @@ function Form_EquipmentCopyMain:OnBackHome()
   StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
   self.m_ownerModule:ClearAllBossRes()
   GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_EquipmentCopyMain:IsFullScreen()

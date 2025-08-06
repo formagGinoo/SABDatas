@@ -259,6 +259,7 @@ function GuideManager:InitGuideConfData()
       local itemData = {}
       itemData.ID = k
       itemData.Type = v.m_Type
+      itemData.CanSkip = v.m_CanSkip
       itemData.TypeParam = v.m_TypeParam
       itemData.TypeExeraParam = v.m_TypeExeraParam
       itemData.WndName = v.m_WndName
@@ -684,6 +685,13 @@ function GuideManager:ManualGuideClick(go, manualFinish)
     guideBlocked = guideForm:OnGuideClick(go, false, manualFinish)
   end
   return guideBlocked
+end
+
+function GuideManager:SkipCurrentGuide()
+  local guideForm = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_GUIDE)
+  if guideForm ~= nil then
+    guideForm:SkipCurrentGuide()
+  end
 end
 
 return GuideManager

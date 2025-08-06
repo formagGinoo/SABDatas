@@ -52,6 +52,7 @@ local function SDKLoginErrorResult(result)
   end
   utils.CheckAndPushCommonTips({
     content = errorMsg,
+    bUseSystemWord = true,
     btnNum = 1,
     funcText1 = CS.ConfFact.LangFormat4DataInit("CommonConfirm")
   })

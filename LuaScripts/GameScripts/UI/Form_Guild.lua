@@ -209,7 +209,7 @@ function Form_Guild:OnEventGetApplyList(data)
     vApplyList = data.vApplyList,
     callFun = function()
       if self.OnCheckApplyListRedPoint then
-        self:OnCheckApplyListRedPoint()
+        self:broadcastEvent("eGameEvent_Alliance_GetApplyList_RedPoint")
       end
     end
   })
@@ -334,6 +334,11 @@ function Form_Guild:OnBtnexitClicked()
 end
 
 function Form_Guild:OnBtneditClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_GUILDNOTICECHANGE, {openType = 1})
 end
 

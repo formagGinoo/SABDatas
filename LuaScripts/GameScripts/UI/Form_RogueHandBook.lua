@@ -13,7 +13,7 @@ function Form_RogueHandBook:AfterInit()
   self.super.AfterInit(self)
   local goRoot = self.m_csui.m_uiGameObject
   local goBackBtnRoot = goRoot.transform:Find("content_node/ui_common_top_back").gameObject
-  self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1204)
+  self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1204)
   self.m_InfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_pnl_handbook_InfinityGrid, "RogueChoose/RogueHandBookItem")
   self:RegisterOrUpdateRedDotItem(self.m_exclusive_new, RedDotDefine.ModuleType.RogueHandBookTabRedDot, RogueStageManager.HandBookType.Exclusive)
   self:RegisterOrUpdateRedDotItem(self.m_common_new, RedDotDefine.ModuleType.RogueHandBookTabRedDot, RogueStageManager.HandBookType.Normal)
@@ -89,8 +89,8 @@ function Form_RogueHandBook:ClearNewMark()
 end
 
 function Form_RogueHandBook:FreshUI()
-  local m_levelRogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
-  local HandBookCfgs = m_levelRogueStageHelper:GetRogueHandBookCfgs()
+  self.m_levelRogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
+  local HandBookCfgs = self.m_levelRogueStageHelper:GetRogueHandBookCfgs()
   if not HandBookCfgs then
     return
   end
@@ -99,35 +99,39 @@ function Form_RogueHandBook:FreshUI()
     return
   end
   self.vClearNewMarkTab[#self.vClearNewMarkTab + 1] = self.iCurTabIdx
-  for i, v in ipairs(cfgs) do
+  local activityCom = ActivityManager:GetActivityByType(MTTD.ActivityType_UpTimeManager)
+  local finalCfgs = {}
+  for _, v in ipairs(cfgs) do
     local cfg = v.cfg
-    self.m_levelRogueStageHelper = RogueStageManager:GetLevelRogueStageHelper()
-    local serverData = self.m_levelRogueStageHelper:GetRogueServerData()
-    v.iState = nil
-    if not serverData then
-      v.iState = RogueHandBookItemState.Locked
-    else
-      local iLimitTechID = cfg.m_TechID
-      local mTech = serverData.mTech
-      if mTech and 0 < iLimitTechID and (mTech[iLimitTechID] == nil or mTech[iLimitTechID] == 0) then
+    if not self.m_levelRogueStageHelper:IsExclusiveHide(cfg, activityCom) then
+      local serverData = self.m_levelRogueStageHelper:GetRogueServerData()
+      v.iState = nil
+      if not serverData then
+        v.iState = RogueHandBookItemState.Locked
+      else
+        local iLimitTechID = cfg.m_TechID
+        local mTech = serverData.mTech
+        if mTech and 0 < iLimitTechID and (mTech[iLimitTechID] == nil or mTech[iLimitTechID] == 0) then
+          v.iState = RogueHandBookItemState.Locked
+        end
+        local mHandbook = serverData.mHandbook
+        if mHandbook and not v.iState then
+          v.iState = mHandbook[cfg.m_ItemID] ~= nil and 0 < mHandbook[cfg.m_ItemID] and RogueHandBookItemState.Active or RogueHandBookItemState.UnActive
+        end
+      end
+      if v.iState == 0 then
         v.iState = RogueHandBookItemState.Locked
       end
-      local mHandbook = serverData.mHandbook
-      if mHandbook and not v.iState then
-        v.iState = mHandbook[cfg.m_ItemID] ~= nil and 0 < mHandbook[cfg.m_ItemID] and RogueHandBookItemState.Active or RogueHandBookItemState.UnActive
-      end
-    end
-    if v.iState == 0 then
-      v.iState = RogueHandBookItemState.Locked
+      table.insert(finalCfgs, v)
     end
   end
-  table.sort(cfgs, function(a, b)
+  table.sort(finalCfgs, function(a, b)
     if a.iState ~= b.iState then
       return a.iState < b.iState
     end
     return a.cfg.m_HandbookOrder < b.cfg.m_HandbookOrder
   end)
-  self.m_InfinityGrid:ShowItemList(cfgs)
+  self.m_InfinityGrid:ShowItemList(finalCfgs)
   self.m_InfinityGrid:LocateTo(0)
   self:FreshTab()
 end
@@ -189,6 +193,13 @@ end
 
 function Form_RogueHandBook:OnBackClk()
   self:CloseForm()
+  self:DestroyBigSystemUIImmediately()
+end
+
+function Form_RogueHandBook:OnBackHome()
+  StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+  GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_RogueHandBook:IsFullScreen()

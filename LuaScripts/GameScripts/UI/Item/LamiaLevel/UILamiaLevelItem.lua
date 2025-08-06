@@ -118,8 +118,10 @@ function UILamiaLevelItem:GetCostItemNum()
   end
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_levelCfg.m_ActivityID)
   local costItemID = mainActInfoCfg.m_PassItem
-  local costItemNum = ItemManager:GetItemNum(costItemID)
-  return costItemNum
+  local costItemNum = ItemManager:GetItemNum(costItemID) or 0
+  local freeItemId = mainActInfoCfg.m_FreePassItem
+  local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
+  return costItemNum + freeitemNum
 end
 
 return UILamiaLevelItem

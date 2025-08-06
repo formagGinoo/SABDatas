@@ -386,9 +386,9 @@
       "m_ID": "\"B_CorruptedWolf_Base_Turn_Left\"",
       "m_AudioEvent": "\"Play_B_CorruptedWolf_Base_Turn_Left\""
     },
-    "\"\"This time, it won't be the same.\"": {
+    "\"B_CorruptedWolf_Middle_Turn_Right\"": {
       "m_bError": null,
-      "m_ID": "\"\"This time, it won't be the same.\"",
+      "m_ID": "\"B_CorruptedWolf_Middle_Turn_Right\"",
       "m_AudioEvent": "\"Play_B_CorruptedWolf_Middle_Turn_Right\""
     },
     "\"B_Garlic_Sit01_End\"": {
@@ -436,9 +436,9 @@
       "m_ID": "\"B_Garlic_MaxSkill01_Attack\"",
       "m_AudioEvent": "\"Play_B_Garlic_MaxSkill01_Attack\""
     },
-    "\"雅辛塔LookBack01_End\"": {
+    "\"B_Garlic_LookBack01_End\"": {
       "m_bError": null,
-      "m_ID": "\"雅辛塔LookBack01_End\"",
+      "m_ID": "\"B_Garlic_LookBack01_End\"",
       "m_AudioEvent": "\"Play_B_Garlic_LookBack01_End\""
     },
     "\"B_Garlic_Laugh\"": {

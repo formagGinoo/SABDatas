@@ -131,7 +131,7 @@
           "m_VoiceId": "60001009",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"It seems you still haven't realized what's of value to me.\"",
+          "m_mText": "\"It seems you still haven't realized what might be of value to me.\"",
           "m_voice": "\"Play_vo_20230_system_show_A2_01\""
         }
       }
@@ -450,7 +450,457 @@
           "m_voice": "\"Play_vo_20230_str_calm_A2_01\""
         }
       }
+    },
+    "60003001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_battle_attack_A2_01\""
+        }
+      }
+    },
+    "60003002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My passion knows no limits!\"",
+          "m_voice": "\"Play_vo_20160_battle_maxskill01_A2_01\""
+        }
+      }
+    },
+    "60003003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_battle_maxskill02_A2_01\""
+        }
+      }
+    },
+    "60003004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Let the flames rise!\"",
+          "m_voice": "\"Play_vo_20160_battle_skill01_A2_01\""
+        }
+      }
+    },
+    "60003005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_battle_hit_A2_01\""
+        }
+      }
+    },
+    "60003006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's not... my time...\"",
+          "m_voice": "\"Play_vo_20160_battle_death_A2_01\""
+        }
+      }
+    },
+    "60003007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This outfit... it's a bit hard to move in.\"",
+          "m_voice": "\"Play_vo_20160_battle_array_A2_01\""
+        }
+      }
+    },
+    "60003008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Let's take care of this quickly. The ceremony can't wait.\"",
+          "m_voice": "\"Play_vo_20160_battle_stagewin_A2_01\""
+        }
+      }
+    },
+    "60003009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My devotion is pure, like this white gown.\"",
+          "m_voice": "\"Play_vo_20160_system_show_A2_01\""
+        }
+      }
+    },
+    "60003010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Whatever this journey may bring, I will be there along with you.\"",
+          "m_voice": "\"Play_vo_20160_system_greet_A2_01\""
+        }
+      }
+    },
+    "60003011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I won't let my loved ones get hurt anymore.\"",
+          "m_voice": "\"Play_vo_20160_system_levelup_A2_01\""
+        }
+      }
+    },
+    "60003012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Could this be the power of hope?\"",
+          "m_voice": "\"Play_vo_20160_system_breakthrough_A2_01\""
+        }
+      }
+    },
+    "60003013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Is this really the time for that...\"",
+          "m_voice": "\"Play_vo_20160_system_dispatch_A2_01\""
+        }
+      }
+    },
+    "60003014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Take your time. I've waited this long for you—what's a moment more?\"",
+          "m_voice": "\"Play_vo_20160_system_idle_A2_01\""
+        }
+      }
+    },
+    "60003015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I should have changed my outfit first!\"",
+          "m_voice": "\"Play_vo_20160_system_transfusion_A2_01\""
+        }
+      }
+    },
+    "60003016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Feeling alright? It's not like you to get all nervous.\"",
+          "m_voice": "\"Play_vo_20160_system_gift01_A2_01\""
+        }
+      }
+    },
+    "60003017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Wow... you've always known what I love, haven't you?\"",
+          "m_voice": "\"Play_vo_20160_system_gift02_A2_01\""
+        }
+      }
+    },
+    "60003018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I can't feel anything... have I become jaded already?\"",
+          "m_voice": "\"Play_vo_20160_system_affinityup_A2_01\""
+        }
+      }
+    },
+    "60003019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"As I put on this gown, I feel something stir within me... and I know it’s because of you.\"",
+          "m_voice": "\"Play_vo_20160_system_affinitymax_A2_01\""
+        }
+      }
+    },
+    "60003020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Did I let you down?\"",
+          "m_voice": "\"Play_vo_20160_system_tapgeneric01_A2_01\""
+        }
+      }
+    },
+    "60003021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My dress...it's slipping a little... Could you help me with it?\"",
+          "m_voice": "\"Play_vo_20160_system_tapgeneric02_A2_01\""
+        }
+      }
+    },
+    "60003022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Keep this up and you'll make me angry!\"",
+          "m_voice": "\"Play_vo_20160_system_taphead01_A2_01\""
+        }
+      }
+    },
+    "60003023": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003023",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Without even noticing, you've grown so reliable and composed... it makes me feel a little lonely.\"",
+          "m_voice": "\"Play_vo_20160_system_taphead02_A2_01\""
+        }
+      }
+    },
+    "60003024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"What's this? Why are you so focused on my hands—are you planning to give me something?\"",
+          "m_voice": "\"Play_vo_20160_system_tapsp01_A2_01\""
+        }
+      }
+    },
+    "60003025": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003025",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"No matter how difficult or dangerous the path ahead may be, I will fight to protect our future.\"",
+          "m_voice": "\"Play_vo_20160_system_tapsp02_A2_01\""
+        }
+      }
+    },
+    "60003026": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003026",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_str_surprised_A2_01\""
+        }
+      }
+    },
+    "60003027": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003027",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_str_joyful_A2_01\""
+        }
+      }
+    },
+    "60003028": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003028",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_str_irritated_A2_01\""
+        }
+      }
+    },
+    "60003029": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003029",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_str_confused_A2_01\""
+        }
+      }
+    },
+    "60003030": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60003030",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Utterance).\"",
+          "m_voice": "\"Play_vo_20160_str_calm_A2_01\""
+        }
+      }
     }
   },
-  "status": "processed_30_items"
+  "status": "processed_60_items"
 }

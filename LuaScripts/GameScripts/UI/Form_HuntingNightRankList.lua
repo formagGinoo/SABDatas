@@ -279,9 +279,9 @@ function Form_HuntingNightRankList:UpdateRankScrollViewCell(index, cell_object, 
   end
   local showRank, point = HuntingRaidManager:GetHuntingRaidRankStrAndPointsByRank(cell_data.iRank, iRankSize)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_rank", showRank)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_name", cell_data.stRoleSimple.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_name", cell_data.stRoleSimple.sName)
   local guildName = cell_data.stRoleSimple.sAlliance ~= "" and cell_data.stRoleSimple.sAlliance or ConfigManager:GetCommonTextById(20111) or ""
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_guild_name", guildName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_guild_name", guildName)
   if self.m_selRankTabIndex ~= 0 then
     local bossId = self.m_rankTabList[self.m_selRankTabIndex].iBossId
     local damage = HuntingRaidManager:GetBossRealDamageByIdAndServerDamage(bossId, cell_data.iValue)

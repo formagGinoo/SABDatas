@@ -48,6 +48,8 @@ function ConfigManager:CacheInstance()
       FashionVoiceInfo = CS.CData_FashionVoiceInfo.GetInstance(),
       FashionVoiceText = CS.CData_FashionVoiceText.GetInstance(),
       FashionEffects = CS.CData_FashionEffects.GetInstance(),
+      FashionMovie = CS.CData_FashionMovie.GetInstance(),
+      FashionSound = CS.CData_FashionSound.GetInstance(),
       Skill = CS.CData_Skill.GetInstance(),
       SkillBuff = CS.CData_SkillBuff.GetInstance(),
       Presentation = CS.CData_Presentation.GetInstance(),
@@ -82,6 +84,7 @@ function ConfigManager:CacheInstance()
       LegacyEnemyLine = CS.CData_LegacyEnemyLine.GetInstance(),
       LegacyGameSkill = CS.CData_LegacyGameSkill.GetInstance(),
       LegacyStageLevelTips = CS.CData_LegacyStageLevelTips.GetInstance(),
+      LegacyStageArea = CS.CData_LegacyStageArea.GetInstance(),
       ResourcesCheckSwitch = CS.CData_ResourcesCheckSwitch.GetInstance(),
       InteractiveGameDialog = CS.CData_InteractiveGameDialog.GetInstance()
     },
@@ -122,6 +125,7 @@ function ConfigManager:CacheInstance()
       CineExpressionAnimation = CS.CData_CineExpressionAnimation.GetInstance(),
       ActionSoundEffects = CS.CData_ActionSoundEffects.GetInstance(),
       BGMStateGroup = CS.CData_BGMStateGroup.GetInstance(),
+      BGMScene = CS.CData_BGMScene.GetInstance(),
       Property = CS.CData_Property.GetInstance(),
       PropertyIndex = CS.CData_PropertyIndex.GetInstance(),
       BattleDefeatPrompt = CS.CData_BattleDefeatPrompt.GetInstance(),
@@ -180,6 +184,7 @@ function ConfigManager:CacheInstance()
       GachaPool = CS.CData_GachaPool.GetInstance(),
       GachaTemplate = CS.CData_GachaTemplate.GetInstance(),
       GachaWishList = CS.CData_GachaWishList.GetInstance(),
+      GachaStep = CS.CData_GachaStep.GetInstance(),
       Shop = CS.CData_Shop.GetInstance(),
       ShopGoods = CS.CData_ShopGoods.GetInstance(),
       TaskResourceDownload = CS.CData_TaskResourceDownload.GetInstance(),
@@ -209,6 +214,7 @@ function ConfigManager:CacheInstance()
       ActTask = CS.CData_ActTask.GetInstance(),
       ActTaskDailyReward = CS.CData_ActTaskDailyReward.GetInstance(),
       Act4Clue = CS.CData_Act4Clue.GetInstance(),
+      MiniGameLegacyStage = CS.CData_MiniGameLegacyStage.GetInstance(),
       SkillTip = CS.CData_SkillTip.GetInstance(),
       GMCommand = CS.CData_GMCommand.GetInstance(),
       GMShortcuts = CS.CData_GMShortcuts.GetInstance()
@@ -537,6 +543,12 @@ function ConfigManager:GetVerifyPathBySourceStr(sourceStr)
     return ""
   end
   return self:_GetResourcesCheckSwitchValueByCache(sourceStr)
+end
+
+function ConfigManager:CheckConfigFieldStrIsEmpty(str)
+  if str and (str == "" or str == "******") then
+    return true
+  end
 end
 
 return ConfigManager

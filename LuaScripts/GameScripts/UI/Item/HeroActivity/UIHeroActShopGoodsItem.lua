@@ -31,7 +31,7 @@ function UIHeroActShopGoodsItem:OnFreshData()
     self.m_sold_time:SetActive(false)
     self.m_buy_obj:SetActive(true)
   else
-    local left_time = m_showTime - cur_time
+    local left_time = m_showTime - cur_time + 5
     self.m_txt_soldtime_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(20097), TimeUtil:SecondsToFormatCNStr(math.floor(left_time)))
     if self.timer then
       TimeService:KillTimer(self.timer)
@@ -41,6 +41,7 @@ function UIHeroActShopGoodsItem:OnFreshData()
       if left_time <= 0 then
         TimeService:KillTimer(self.timer)
         self.m_sold_time:SetActive(false)
+        self.m_buy_obj:SetActive(true)
       end
       self.m_txt_soldtime_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(20097), TimeUtil:SecondsToFormatCNStr(math.floor(left_time)))
     end)

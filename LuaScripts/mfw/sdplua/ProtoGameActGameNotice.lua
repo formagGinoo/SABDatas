@@ -88,6 +88,9 @@ CmdActClientCfgGameNotice.Definition = {
   "sJumpContent",
   "iJumpTypeLast",
   "sJumpParamLast",
+  "iHideTime",
+  "sClientVersion",
+  "iQuestId",
   iNoticeType = {
     0,
     0,
@@ -135,6 +138,24 @@ CmdActClientCfgGameNotice.Definition = {
     0,
     13,
     ""
+  },
+  iHideTime = {
+    8,
+    0,
+    8,
+    0
+  },
+  sClientVersion = {
+    9,
+    0,
+    13,
+    ""
+  },
+  iQuestId = {
+    10,
+    0,
+    8,
+    0
   }
 }
 CmdActCfgGameNotice = sdp.SdpStruct("CmdActCfgGameNotice")

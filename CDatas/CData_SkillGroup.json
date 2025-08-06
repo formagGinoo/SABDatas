@@ -5061,6 +5061,31 @@
         }
       }
     },
+    "201902": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "20190110": {
+          "m_bError": null,
+          "m_SkillGroupID": "201902",
+          "m_SkillID": "20190110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": "13"
+        },
+        "20190160": {
+          "m_bError": null,
+          "m_SkillGroupID": "201902",
+          "m_SkillID": "20190160",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": "13"
+        }
+      }
+    },
     "201905": {
       "_type": "nested_dictionary",
       "_count": 4,
@@ -7018,6 +7043,22 @@
         }
       }
     },
+    "204102": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "20410110": {
+          "m_bError": null,
+          "m_SkillGroupID": "204102",
+          "m_SkillID": "20410110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": "11"
+        }
+      }
+    },
     "204201": {
       "_type": "nested_dictionary",
       "_count": 5,
@@ -8208,6 +8249,49 @@
           "m_SkillShowType": "1",
           "m_SkillShow": "2",
           "m_SkillTemplateID": "11"
+        }
+      }
+    },
+    "206101": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "20610110": {
+          "m_bError": null,
+          "m_SkillGroupID": "206101",
+          "m_SkillID": "20610110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": "14"
+        },
+        "20610120": {
+          "m_bError": null,
+          "m_SkillGroupID": "206101",
+          "m_SkillID": "20610120",
+          "m_SkillType": "40",
+          "m_SkillShowType": "3",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": "24"
+        },
+        "20610140": {
+          "m_bError": null,
+          "m_SkillGroupID": "206101",
+          "m_SkillID": "20610140",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "20610160": {
+          "m_bError": null,
+          "m_SkillGroupID": "206101",
+          "m_SkillID": "20610160",
+          "m_SkillType": "100",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": "14"
         }
       }
     },
@@ -12338,15 +12422,6 @@
       "_count": 3,
       "_processed": 3,
       "data": {
-        "31230150": {
-          "m_bError": null,
-          "m_SkillGroupID": "312401",
-          "m_SkillID": "31230150",
-          "m_SkillType": "50",
-          "m_SkillShowType": "4",
-          "m_SkillShow": null,
-          "m_SkillTemplateID": null
-        },
         "31240110": {
           "m_bError": null,
           "m_SkillGroupID": "312401",
@@ -12364,6 +12439,15 @@
           "m_SkillShowType": "2",
           "m_SkillShow": null,
           "m_SkillTemplateID": null
+        },
+        "31260150": {
+          "m_bError": null,
+          "m_SkillGroupID": "312401",
+          "m_SkillID": "31260150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
         }
       }
     },
@@ -12372,15 +12456,6 @@
       "_count": 3,
       "_processed": 3,
       "data": {
-        "31230150": {
-          "m_bError": null,
-          "m_SkillGroupID": "312501",
-          "m_SkillID": "31230150",
-          "m_SkillType": "50",
-          "m_SkillShowType": "4",
-          "m_SkillShow": null,
-          "m_SkillTemplateID": null
-        },
         "31250110": {
           "m_bError": null,
           "m_SkillGroupID": "312501",
@@ -12398,6 +12473,15 @@
           "m_SkillShowType": "2",
           "m_SkillShow": null,
           "m_SkillTemplateID": null
+        },
+        "31260150": {
+          "m_bError": null,
+          "m_SkillGroupID": "312501",
+          "m_SkillID": "31260150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
         }
       }
     },
@@ -12406,15 +12490,6 @@
       "_count": 3,
       "_processed": 3,
       "data": {
-        "31230150": {
-          "m_bError": null,
-          "m_SkillGroupID": "312601",
-          "m_SkillID": "31230150",
-          "m_SkillType": "50",
-          "m_SkillShowType": "4",
-          "m_SkillShow": null,
-          "m_SkillTemplateID": null
-        },
         "31260110": {
           "m_bError": null,
           "m_SkillGroupID": "312601",
@@ -12430,6 +12505,15 @@
           "m_SkillID": "31260120",
           "m_SkillType": "20",
           "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31260150": {
+          "m_bError": null,
+          "m_SkillGroupID": "312601",
+          "m_SkillID": "31260150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
           "m_SkillShow": null,
           "m_SkillTemplateID": null
         }
@@ -12454,7 +12538,7 @@
           "m_SkillGroupID": "312701",
           "m_SkillID": "31270120",
           "m_SkillType": "50",
-          "m_SkillShowType": "3",
+          "m_SkillShowType": "4",
           "m_SkillShow": null,
           "m_SkillTemplateID": null
         },
@@ -12465,22 +12549,6 @@
           "m_SkillType": "100",
           "m_SkillShowType": "2",
           "m_SkillShow": "1",
-          "m_SkillTemplateID": null
-        }
-      }
-    },
-    "312702": {
-      "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
-      "data": {
-        "31270110": {
-          "m_bError": null,
-          "m_SkillGroupID": "312702",
-          "m_SkillID": "31270110",
-          "m_SkillType": "1",
-          "m_SkillShowType": "1",
-          "m_SkillShow": "2",
           "m_SkillTemplateID": null
         }
       }
@@ -13611,6 +13679,439 @@
           "m_SkillID": "31600150",
           "m_SkillType": "50",
           "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316401": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "31640110": {
+          "m_bError": null,
+          "m_SkillGroupID": "316401",
+          "m_SkillID": "31640110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": null
+        },
+        "31640120": {
+          "m_bError": null,
+          "m_SkillGroupID": "316401",
+          "m_SkillID": "31640120",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31640150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316401",
+          "m_SkillID": "31640150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316501": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "31650110": {
+          "m_bError": null,
+          "m_SkillGroupID": "316501",
+          "m_SkillID": "31650110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": null
+        },
+        "31650120": {
+          "m_bError": null,
+          "m_SkillGroupID": "316501",
+          "m_SkillID": "31650120",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31650150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316501",
+          "m_SkillID": "31650150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316601": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "31660110": {
+          "m_bError": null,
+          "m_SkillGroupID": "316601",
+          "m_SkillID": "31660110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": null
+        },
+        "31660120": {
+          "m_bError": null,
+          "m_SkillGroupID": "316601",
+          "m_SkillID": "31660120",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31660150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316601",
+          "m_SkillID": "31660150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316701": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "31670110": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670120": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670120",
+          "m_SkillType": "40",
+          "m_SkillShowType": "3",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670121": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670121",
+          "m_SkillType": "24",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670140": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670140",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670160": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670160",
+          "m_SkillType": "21",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670170": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670170",
+          "m_SkillType": "22",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670180": {
+          "m_bError": null,
+          "m_SkillGroupID": "316701",
+          "m_SkillID": "31670180",
+          "m_SkillType": "23",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316711": {
+      "_type": "nested_dictionary",
+      "_count": 6,
+      "_processed": 6,
+      "data": {
+        "31670110": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670140": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670140",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670160": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670160",
+          "m_SkillType": "21",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670170": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670170",
+          "m_SkillType": "22",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31670180": {
+          "m_bError": null,
+          "m_SkillGroupID": "316711",
+          "m_SkillID": "31670180",
+          "m_SkillType": "23",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316751": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31675150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316751",
+          "m_SkillID": "31675150",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316752": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31675140": {
+          "m_bError": null,
+          "m_SkillGroupID": "316752",
+          "m_SkillID": "31675140",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316753": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31670340": {
+          "m_bError": null,
+          "m_SkillGroupID": "316753",
+          "m_SkillID": "31670340",
+          "m_SkillType": "50",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316761": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31676150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316761",
+          "m_SkillID": "31676150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316771": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31677150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316771",
+          "m_SkillID": "31677150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316781": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31678150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316781",
+          "m_SkillID": "31678150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316791": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "31679150": {
+          "m_bError": null,
+          "m_SkillGroupID": "316791",
+          "m_SkillID": "31679150",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "316840": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "4001101": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001101",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": null
+        },
+        "4001102": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001102",
+          "m_SkillType": "40",
+          "m_SkillShowType": "3",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001103": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001103",
+          "m_SkillType": "20",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001111": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001111",
+          "m_SkillType": "22",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001112": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001112",
+          "m_SkillType": "23",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001116": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001116",
+          "m_SkillType": "50",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001118": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001118",
+          "m_SkillType": "51",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "4001119": {
+          "m_bError": null,
+          "m_SkillGroupID": "316840",
+          "m_SkillID": "4001119",
+          "m_SkillType": "52",
+          "m_SkillShowType": null,
           "m_SkillShow": null,
           "m_SkillTemplateID": null
         }
@@ -15374,6 +15875,22 @@
           "m_SkillGroupID": "502001",
           "m_SkillID": "50200165",
           "m_SkillType": "25",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "502101": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "50210110": {
+          "m_bError": null,
+          "m_SkillGroupID": "502101",
+          "m_SkillID": "50210110",
+          "m_SkillType": "20",
           "m_SkillShowType": null,
           "m_SkillShow": null,
           "m_SkillTemplateID": null
@@ -18041,6 +18558,92 @@
         }
       }
     },
+    "908040": {
+      "_type": "nested_dictionary",
+      "_count": 7,
+      "_processed": 7,
+      "data": {
+        "31330110": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330110",
+          "m_SkillType": "1",
+          "m_SkillShowType": "1",
+          "m_SkillShow": "2",
+          "m_SkillTemplateID": null
+        },
+        "31330141": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330141",
+          "m_SkillType": "50",
+          "m_SkillShowType": "4",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31330161": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330161",
+          "m_SkillType": "21",
+          "m_SkillShowType": "2",
+          "m_SkillShow": "3",
+          "m_SkillTemplateID": null
+        },
+        "31330162": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330162",
+          "m_SkillType": "22",
+          "m_SkillShowType": "2",
+          "m_SkillShow": "3",
+          "m_SkillTemplateID": null
+        },
+        "31330164": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330164",
+          "m_SkillType": "24",
+          "m_SkillShowType": "2",
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "31330165": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "31330165",
+          "m_SkillType": "25",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        },
+        "90804163": {
+          "m_bError": null,
+          "m_SkillGroupID": "908040",
+          "m_SkillID": "90804163",
+          "m_SkillType": "23",
+          "m_SkillShowType": "2",
+          "m_SkillShow": "3",
+          "m_SkillTemplateID": null
+        }
+      }
+    },
+    "908041": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "90804164": {
+          "m_bError": null,
+          "m_SkillGroupID": "908041",
+          "m_SkillID": "90804164",
+          "m_SkillType": "20",
+          "m_SkillShowType": null,
+          "m_SkillShow": null,
+          "m_SkillTemplateID": null
+        }
+      }
+    },
     "2017015": {
       "_type": "nested_dictionary",
       "_count": 4,
@@ -18726,5 +19329,5 @@
       }
     }
   },
-  "status": "processed_583_items"
+  "status": "processed_601_items"
 }

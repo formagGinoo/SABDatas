@@ -497,6 +497,7 @@ function Form_WhackMoleBattleMain:FreshBoss()
     self.iBossBornCount = self.iBossBornCount + 1
     local bossCfg = HeroActivityManager:GetWhackaMoleEnemyCfgByID(self.iBossID)
     mCurBossData.obj:SetActive(true)
+    mCurBossData.obj.transform:Find("Sprite"):GetComponent("SpriteRenderer").sortingOrder = self.mCanvas.sortingOrder + 1
     mCurBossData.iShield = bossCfg.m_Shield
     mCurBossData.iStunTime = bossCfg.m_DizzinessTime / 1000
     self:PlayBossAnim(mCurBossData.obj, self.BossAniEnum.Born, self.BossAniEnum.ShieldRestore, nil, function()
@@ -593,6 +594,7 @@ function Form_WhackMoleBattleMain:ActiveMonster(posIdx, monsterID)
     moletrans.gameObject:SetActive(true)
     moleData.moletrans = moletrans
   end
+  moletrans.transform:Find("Sprite"):GetComponent("SpriteRenderer").sortingOrder = self.mCanvas.sortingOrder + 1
   moletrans.localScale = Vector3.one * monsterCfg.m_Scale[0]
   moleData.iAliveTime = monsterCfg.m_RetreatTime / 1000
   moleData.bIsRetreating = false
@@ -877,6 +879,7 @@ function Form_WhackMoleBattleMain:GetAHammerObj()
   local hammerData = {}
   local hammerObj = self.m_cacheNode.transform:Find("ui_hammer")
   if hammerObj then
+    hammerObj.transform:Find("Sprite"):GetComponent("SpriteRenderer").sortingOrder = self.mCanvas.sortingOrder + 2
   else
     hammerObj = GameObject.Instantiate(self.m_ui_hammer).transform
     hammerObj.gameObject.name = "ui_hammer"

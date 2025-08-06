@@ -34,10 +34,6 @@ function Job_Startup_DownloadNecessaryResource_Impl.RefreshMultiLan(jobNode)
 end
 
 function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(jobNode)
-  local versionContext = CS.VersionContext.GetContext()
-  local sLocalResVer = CS.VersionUtil.GetResVer(versionContext.ClientLocalVersion)
-  local sCacheResVer = LocalDataManager:GetStringSimple("Login_Download_LocalVersion", sLocalResVer)
-  log.info("Login DownloadNecessaryResource CacheResVersion: " .. sCacheResVer)
   ReportManager:ReportLoginProcess("DownloadNecessaryResource", "Start")
   DownloadManager:SetThrottleNetSpeed(0)
   local vExtraResourceMultiLan = {}
@@ -61,7 +57,6 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
   
   local function OnDownloadCompleteAfter()
     ReportManager:ReportLoginProcess("DownloadNecessaryResource", "Success")
-    LocalDataManager:SetStringSimple("Login_Download_LocalVersion", sLocalResVer)
     if bDownloadMultiLan then
       Job_Startup_DownloadNecessaryResource_Impl.RefreshMultiLan(jobNode)
     else
@@ -73,6 +68,24 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
   local bNewbie = not LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, iNewbieMainLevelID)
   local sNewbiePrefix = bNewbie and "Newbie_" or "Baisc_"
   local iDownloadBigSize = tonumber(ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("LoginMinResourceLimit").m_Value) * 1024 * 1024
+  local versionContext = CS.VersionContext.GetContext()
+  local sLocalResVer = CS.VersionUtil.GetResVer(versionContext.ClientLocalVersion)
+  local sCacheResVer = LocalDataManager:GetStringSimple("Login_Download_LocalVersion", sLocalResVer)
+  log.info("Login DownloadNecessaryResource LocalResVersion: " .. sLocalResVer)
+  log.info("Login DownloadNecessaryResource CacheResVersion: " .. sCacheResVer)
+  local sCoreResourcePackName = ""
+  local sExpansionResourcePackName = ""
+  if bNewbie then
+    sCoreResourcePackName = "CoreResourcePack"
+    sExpansionResourcePackName = "ExpansionResourcePack"
+  elseif sLocalResVer == sCacheResVer then
+    sCoreResourcePackName = "CoreResourcePack"
+    sExpansionResourcePackName = "ExpansionResourcePack"
+  else
+    sCoreResourcePackName = "UpgradeCoreResourcePack"
+    sExpansionResourcePackName = "UpgradeExpansionResourcePack"
+  end
+  DownloadManager:SetLoginResourcePackName(sCoreResourcePackName, sExpansionResourcePackName)
   
   local function OnConfirmDownloadResource(vPackage, vExtraResource, lSizeTotal, lSizeDownloaded, eNetworkStatus, vResourceABSpecified)
     local bDownloadBig = lSizeTotal - lSizeDownloaded > iDownloadBigSize
@@ -164,7 +177,7 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
   
   local vPackageAll = {}
   local vExtraResourceAll = {}
-  local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("CoreResourcePack").m_Value
+  local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sCoreResourcePackName).m_Value
   local vCorePackages = string.split(sPackages, "/")
   for k, v in ipairs(vCorePackages) do
     vPackageAll[#vPackageAll + 1] = {
@@ -190,7 +203,7 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
       end
     end
   end
-  sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ExpansionResourcePack").m_Value
+  sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sExpansionResourcePackName).m_Value
   local vExpansionPackages = string.split(sPackages, "/")
   for k, v in ipairs(vExpansionPackages) do
     vPackageAll[#vPackageAll + 1] = {

@@ -398,6 +398,7 @@ function Form_FriendMain:OnBtnitemdeletClicked()
   local item = self.curItem
   utils.popUpDirectionsUI({
     tipsID = 1173,
+    bUseSystemWord = true,
     fContentCB = function(content)
       local str = item.m_itemData and item.m_itemData.sName or ""
       return string.gsubnumberreplace(content, str)
@@ -421,6 +422,7 @@ function Form_FriendMain:OnBtnitemblockClicked()
   local item = self.curItem
   utils.popUpDirectionsUI({
     tipsID = 1171,
+    bUseSystemWord = true,
     fContentCB = function(content)
       local str = item.m_itemData and item.m_itemData.sName or ""
       return string.gsubnumberreplace(content, str)

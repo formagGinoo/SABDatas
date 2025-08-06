@@ -110,6 +110,7 @@ function LegacyLevelManager:InitGlobalCfg()
   LegacyLevelManager.LevelType = {
     LegacyLevel = MTTDProto.FightType_LegacyStage
   }
+  LegacyLevelManager.LegacyLevelType = {LegacyLevel = 1, ActivityLevel = 2}
 end
 
 function LegacyLevelManager:InitLevelCfgData()
@@ -921,13 +922,26 @@ function LegacyLevelManager:OnBackLobby(fCB)
     if isSuc then
       log.info("OnBackLobby MainCity LoadBack")
       if self.m_curLevelType == LegacyLevelManager.LevelType.LegacyLevel then
-        local isOpen, _ = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.LegacyLevel)
-        if isOpen then
-          StackFlow:Push(UIDefines.ID_FORM_LEGACYACTIVITYMAIN, self:GetLegacyBackParamTab())
-          formStr = "Form_LegacyActivityMain"
-        else
-          StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
-          formStr = "Form_HallActivityMain"
+        if self.m_curLevelID then
+          local cfg = self:GetLevelConfigByID(self.m_curLevelID)
+          if cfg and cfg.m_LevelType == LegacyLevelManager.LegacyLevelType.ActivityLevel then
+            local iActId, iSubActId = HeroActivityManager:GetMinigameHelper():GetCurLevelInfo()
+            local isOpen = HeroActivityManager:IsSubActIsOpenByID(iActId, iSubActId)
+            if isOpen then
+              StackFlow:Push(UIDefines.ID_FORM_ACTIVITY105MINIGAME_MAIN, {main_id = iActId, sub_id = iSubActId})
+              formStr = "Form_Activity105Minigame_Main"
+            end
+            HeroActivityManager:GetMinigameHelper():ClearCurLevelInfo()
+          else
+            local isOpen, _ = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.LegacyLevel)
+            if isOpen then
+              StackFlow:Push(UIDefines.ID_FORM_LEGACYACTIVITYMAIN, self:GetLegacyBackParamTab())
+              formStr = "Form_LegacyActivityMain"
+            else
+              StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
+              formStr = "Form_HallActivityMain"
+            end
+          end
         end
       else
         StackFlow:Push(UIDefines.ID_FORM_HALL)

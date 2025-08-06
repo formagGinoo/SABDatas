@@ -114,7 +114,9 @@ function Form_BattleRecord:OnHeroListBind(cache, go, index)
   if infoTable == nil then
     return
   end
-  cache:TMPPro("c_txt_heroname").text = infoTable.stRoleInfo.sName
+  if cache:Text("c_txt_heroname") then
+    cache:Text("c_txt_heroname").text = infoTable.stRoleInfo.sName
+  end
   cache:TMPPro("c_txt_lv").text = infoTable.stRoleInfo.iLevel
   cache:TMPPro("c_txt_teambattle").text = infoTable.stStageArrange.iTotalPower
   cache:TMPPro("c_txt_complete").text = UILuaHelper.GetCommonText(20325)

@@ -2,6 +2,7 @@ local BaseManager = require("Manager/Base/BaseManager")
 local DownloadManager = class("DownloadManager", BaseManager)
 local DownloadResource = CS.MUF.Download.DownloadResource.Instance
 local ResourcePackageAllStr = "All"
+local ResourcePackagePreStr = "Pre"
 DownloadManager.NetworkStatus = {
   None = 0,
   Wifi = 1,
@@ -12,7 +13,24 @@ DownloadManager.TaskTag = {
   Newbie = 1,
   MainLevel = 2,
   Activity = 3,
-  Ignore = 4
+  Ignore = 4,
+  AddResPre = 5
+}
+DownloadManager.DownloadPreStatus = {
+  None = 0,
+  PatchListDownloading = 1,
+  PatchListDownloaded = 2,
+  PatchListDownloadFailed = 3,
+  AddResListDownloading = 11,
+  AddResListDownloaded = 12,
+  AddResListDownloadFailed = 13,
+  InitStatusFinished = 20,
+  PatchDownloading = 21,
+  PatchDownloaded = 22,
+  PatchDownloadFailed = 23,
+  AddResDownloading = 31,
+  AddResDownloaded = 32,
+  AddResDownloadFailed = 33
 }
 
 function DownloadManager:OnCreate()
@@ -35,6 +53,7 @@ function DownloadManager:OnCreate()
   self.m_iDownloadResourceWithUIMobileTipsTime = nil
   self.m_vDownloadResourceAllConfig = {}
   self.m_iConfigUID = 0
+  self.m_stDownloadPreConfig = nil
   self:addEventListener("eGameEvent_NetworkGame_Reconnect", handler(self, self.OnEventNetworkGameReconnect))
   self:addEventListener("eGameEvent_ResourceDownload_UIManualClosed", handler(self, self.OnDownloadUIManualClosed))
 end
@@ -78,6 +97,27 @@ function DownloadManager:GetPackageAdditionalResource(sPackageName, ePackageType
             end
           end
         end
+      end
+    elseif sPackageName == "Pack_UI_Extended" then
+      local versionContext = CS.VersionContext.GetContext()
+      local strBigVer = CS.VersionUtil.GetBigVer(versionContext.ClientStreamVersion)
+      local iForceUpdateCompare = CS.VersionUtil.CompareBigVerPart(strBigVer, "1.1.374")
+      local addHQVideo = false
+      if strBigVer == "1.1.10" then
+        iForceUpdateCompare = 1
+      end
+      if 0 < iForceUpdateCompare then
+        if CS.DeviceUtil.IsSupport1080p() then
+          addHQVideo = true
+        end
+      elseif CS.GameQualityManager.Instance.IsUltraDevice then
+        addHQVideo = true
+      end
+      if addHQVideo then
+        vPackageAdditional[#vPackageAdditional + 1] = {
+          sName = "Pack_LoginVideo",
+          eType = self.ResourcePackageType.Custom
+        }
       end
     elseif sPackageName == "Pack_Hall" and NetworkManager and NetworkManager.m_bNetworkInited then
       local heroPosData = RoleManager:GetMainBackGroundDataList()
@@ -856,7 +896,11 @@ function DownloadManager:GetTaskDownloadResourceAll()
   for i, v in pairs(self.m_vTaskDownloadResourceAll) do
     local bAdd = true
     local tConfigTaskResourceDownload = v.tConfig
-    if tConfigTaskResourceDownload.m_TaskTag == self.TaskTag.Activity and not self:TaskDownloadActivityCanShow(v.iID) then
+    if tConfigTaskResourceDownload.m_TaskTag == self.TaskTag.Activity then
+      if not self:TaskDownloadActivityCanShow(v.iID) then
+        bAdd = false
+      end
+    elseif tConfigTaskResourceDownload.m_TaskTag == self.TaskTag.AddResPre and v.iState ~= MTTDProto.QuestState_Finish and not self:TaskDownloadAddResPreCanShow(v.iID) then
       bAdd = false
     end
     if bAdd then
@@ -1059,6 +1103,9 @@ function DownloadManager:DownloadAddResAll_Single(tConfigTaskResourceDownload, m
         log.info(string.format("DownloadAddResAll_Single %s: ResourcePackageName %s, Download Complete", iTaskID, sResourcePackageName))
         stSubConfig.lSize = 0
         self:SetTaskDownloadProgress(iTaskID, sResourcePackageName, lTotalBytesBase + lTotalBytes, lTotalBytesBase + lTotalBytes, 1)
+        if self.m_stDownloadPreConfig ~= nil then
+          self:DownloadPreUpdateStatus()
+        end
       else
         log.error(string.format("DownloadAddResAll_Single %s: ResourcePackageName %s, Download Fail", iTaskID, sResourcePackageName))
       end
@@ -1193,6 +1240,9 @@ function DownloadManager:DownloadAddResAll_Other(tConfigTaskResourceDownload, mF
       log.info(string.format("DownloadAddResAll_Other %s: ResourcePackageName AllOther, Download Complete", iTaskID))
       stSubConfig.lSize = 0
       self:SetTaskDownloadProgress(iTaskID, ResourcePackageAllStr, lTotalBytesAllOther, lTotalBytesAllOther, 1)
+      if self.m_stDownloadPreConfig ~= nil then
+        self:DownloadPreUpdateStatus()
+      end
     else
       log.error(string.format("DownloadAddResAll_Other %s: ResourcePackageName AllOther, Download Fail", iTaskID))
       if not ret then
@@ -1215,6 +1265,9 @@ function DownloadManager:DownloadAddResAll_Other(tConfigTaskResourceDownload, mF
   end
 end
 
+function DownloadManager:DownloadAddResAll_AddResPre(tConfigTaskResourceDownloadAddResPre)
+end
+
 function DownloadManager:DownloadAddResAll()
   if self.m_bDownloadAddResAll then
     return
@@ -1226,6 +1279,7 @@ function DownloadManager:DownloadAddResAll()
   local tConfigTaskResourceDownloadAll
   local vConfigTaskResourceDownload = {}
   local vConfigTaskResourceDownloadIgnore = {}
+  local vConfigTaskResourceDownloadAddResPre = {}
   local configInstance = ConfigManager:GetConfigInsByName("TaskResourceDownload")
   local iNewbieMainLevelID = tonumber(ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ResourceTaskTagMainLevelID").m_Value)
   local bNewbie = not LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, iNewbieMainLevelID)
@@ -1236,6 +1290,8 @@ function DownloadManager:DownloadAddResAll()
       end
     elseif tConfigTaskResourceDownload.m_TaskTag == self.TaskTag.Ignore then
       vConfigTaskResourceDownloadIgnore[#vConfigTaskResourceDownloadIgnore + 1] = tConfigTaskResourceDownload
+    elseif tConfigTaskResourceDownload.m_TaskTag == self.TaskTag.AddResPre then
+      vConfigTaskResourceDownloadAddResPre[#vConfigTaskResourceDownloadAddResPre + 1] = tConfigTaskResourceDownload
     else
       vConfigTaskResourceDownload[#vConfigTaskResourceDownload + 1] = tConfigTaskResourceDownload
     end
@@ -1263,6 +1319,9 @@ function DownloadManager:DownloadAddResAll()
     end
     self:DownloadAddResAll_Other(tConfigTaskResourceDownloadAll, mFilePathIncluded, lFileSizeIncluded)
   end
+  for _, tConfigTaskResourceDownloadAddResPre in ipairs(vConfigTaskResourceDownloadAddResPre) do
+    self:DownloadAddResAll_AddResPre(tConfigTaskResourceDownloadAddResPre)
+  end
   self.m_bDownloadAddResAllInit = true
   if not ActivityManager:IsOpenBackgroundDownloadAllResource() or self.m_eNetworkStatus ~= self.NetworkStatus.Wifi and not self:CanDownloadInMobile() then
     self:PauseDownloadAddResAll()
@@ -1277,6 +1336,12 @@ function DownloadManager:PauseDownloadAddResAll()
           CS.TGRPDownloader.PauseDownload(stSubConfig.iBatchID)
         end
       end
+    end
+  end
+  if self.m_stDownloadPreConfig ~= nil then
+    self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+    if 0 <= self.m_stDownloadPreConfig.iBatchID then
+      CS.TGRPDownloaderAddResPre.Instance:PauseDownload(self.m_stDownloadPreConfig.iBatchID)
     end
   end
 end
@@ -1297,6 +1362,9 @@ function DownloadManager:ResumeDownloadAddResAll()
       end
     end
   end
+  if lFileSizeIncluded == 0 and self.m_stDownloadPreConfig ~= nil then
+    self:DownloadPreUpdateStatus()
+  end
 end
 
 function DownloadManager:IsAutoDownloadAddResAllSingle(iTaskID)
@@ -1304,6 +1372,9 @@ function DownloadManager:IsAutoDownloadAddResAllSingle(iTaskID)
     if stConfig.iTaskID == iTaskID then
       return stConfig.bDownload
     end
+  end
+  if self.m_stDownloadPreConfig and self.m_stDownloadPreConfig.iTaskID == iTaskID then
+    return self.m_stDownloadPreConfig.bDownload
   end
   return false
 end
@@ -1359,6 +1430,29 @@ function DownloadManager:TaskDownloadActivityCanShow(iTaskID)
   end
   local eOpenState, _ = HeroActivityManager:GetActOpenState(iActivityID)
   if eOpenState == HeroActivityManager.ActOpenState.Normal or eOpenState == HeroActivityManager.ActOpenState.WaitingClose then
+    return true
+  end
+  return false
+end
+
+function DownloadManager:TaskDownloadAddResPreCanShow(iTaskID)
+  local vActivityGameNotice = ActivityManager:GetActivityListByType(MTTD.ActivityType_GameNotice)
+  if not vActivityGameNotice or #vActivityGameNotice == 0 then
+    return false
+  end
+  local sClientVersion
+  for _, stActivityGameNotice in ipairs(vActivityGameNotice) do
+    local sClientVersionTmp, iQuestIdTmp = stActivityGameNotice:GetAddResPreConfig()
+    if sClientVersionTmp and iQuestIdTmp and iQuestIdTmp == iTaskID then
+      sClientVersion = sClientVersionTmp
+      break
+    end
+  end
+  if sClientVersion == nil then
+    return false
+  end
+  local sClientVersionTmp = LocalDataManager:GetStringSimple("DownloadAddResPre_Start", "")
+  if sClientVersionTmp == sClientVersion then
     return true
   end
   return false
@@ -1693,6 +1787,17 @@ function DownloadManager:GetGBStr()
   return self.m_sGBStr
 end
 
+function DownloadManager:SetLoginResourcePackName(sCoreResourcePackName, sExpansionResourcePackName)
+  self.m_sCoreResourcePackName = sCoreResourcePackName
+  self.m_sExpansionResourcePackName = sExpansionResourcePackName
+end
+
+function DownloadManager:GetLoginResourcePackName()
+  local sCoreResourcePackName = self.m_sCoreResourcePackName or "CoreResourcePack"
+  local sExpansionResourcePackName = self.m_sExpansionResourcePackName or "ExpansionResourcePack"
+  return sCoreResourcePackName, sExpansionResourcePackName
+end
+
 function DownloadManager:GetDownloadSizeStr(lSizeBytes)
   local lSizeKB = lSizeBytes / 1024
   if lSizeKB < 1024 then
@@ -1718,6 +1823,256 @@ function DownloadManager:GetDownloadProgressStr(lCurBytes, lTotalBytes)
     sProgress = string.format("%.02f %s / %.02f %s", lCurBytes / 1024 / 1024, sMBStr, lTotalBytes / 1024 / 1024, sMBStr)
   end
   return sProgress
+end
+
+function DownloadManager:DownloadPreInitStatus(iTaskID, sPreClientVersion)
+  self.m_stDownloadPreConfig = {
+    iTaskID = iTaskID,
+    bDownload = false,
+    eStatus = self.DownloadPreStatus.None,
+    sClientVersion = sPreClientVersion,
+    iPatchSize = 0,
+    bPatchDownloaded = false,
+    vAddResFileList = nil,
+    iBatchID = -1,
+    lAddResTotalBytes = 0,
+    lAddResDownloadedBytes = 0
+  }
+  local sClientVersionTmp = LocalDataManager:GetStringSimple("DownloadAddResPre_Start", "")
+  if sClientVersionTmp == sPreClientVersion then
+    self.m_stDownloadPreConfig.bDownload = true
+  end
+  self:SetTaskDownloadProgress(self.m_stDownloadPreConfig.iTaskID, ResourcePackagePreStr, 0, 0, 0)
+  self:DownloadPrePatchList()
+end
+
+function DownloadManager:DownloadPreChangeStatus(bDownload)
+  if self.m_stDownloadPreConfig == nil then
+    return
+  end
+  if bDownload then
+    self.m_stDownloadPreConfig.bDownload = true
+    LocalDataManager:SetStringSimple("DownloadAddResPre_Start", self.m_stDownloadPreConfig.sClientVersion, true)
+    self:DownloadPreUpdateStatus()
+  else
+    self.m_stDownloadPreConfig.bDownload = false
+    LocalDataManager:SetStringSimple("DownloadAddResPre_Start", "", true)
+  end
+end
+
+function DownloadManager:DownloadPreTryStart()
+  if self.m_stDownloadPreConfig == nil or not self.m_stDownloadPreConfig.bDownload then
+    return
+  end
+  local bDownload = true
+  for _, stConfig in ipairs(self.m_vDownloadAddResAllConfig) do
+    for _, stSubConfig in ipairs(stConfig.vSubConfig) do
+      if stSubConfig.iBatchID and stSubConfig.iBatchID >= 0 then
+        bDownload = false
+        break
+      end
+    end
+  end
+  if not bDownload then
+    return
+  end
+  local lSpaceFree = CS.DeviceUtil.GetPersistentDataPathAvailableSize() * 1024 * 1024
+  local lSpaceNeed = self.m_stDownloadPreConfig.lAddResTotalBytes - self.m_stDownloadPreConfig.lAddResDownloadedBytes
+  if not self.m_stDownloadPreConfig.bPatchDownloaded then
+    lSpaceNeed = lSpaceNeed + self.m_stDownloadPreConfig.iPatchSize
+    if lSpaceFree >= lSpaceNeed then
+      self:DownloadPrePatch()
+    end
+  elseif lSpaceFree >= lSpaceNeed then
+    self:DownloadPreAddRes()
+  end
+end
+
+function DownloadManager:DownloadPreUpdateStatus()
+  if self.m_stDownloadPreConfig == nil then
+    return
+  end
+  if self.m_stDownloadPreConfig.eStatus == self.DownloadPreStatus.PatchListDownloadFailed or self.m_stDownloadPreConfig.eStatus == self.DownloadPreStatus.AddResListDownloadFailed then
+    local iTaskID = self.m_stDownloadPreConfig.iTaskID
+    local sPreClientVersion = self.m_stDownloadPreConfig.sClientVersion
+    self:DownloadPreInitStatus(iTaskID, sPreClientVersion)
+    return
+  end
+  if self.m_stDownloadPreConfig.eStatus == self.DownloadPreStatus.PatchListDownloaded then
+    local versionContext = CS.VersionContext.GetContext()
+    local stPatchZipInfo = CS.MUF.Download.UpgradePatch.Instance:GetUpgradePatchInfo(versionContext.ClientLocalVersion)
+    if CS.MUF.Download.UpgradePatch.Instance:CheckPreRes(versionContext.ClientLocalVersion) then
+      self.m_stDownloadPreConfig.bPatchDownloaded = true
+    end
+    if stPatchZipInfo ~= nil then
+      self.m_stDownloadPreConfig.iPatchSize = stPatchZipInfo.size
+    end
+    self:DownloadPreAddResList()
+  elseif self.m_stDownloadPreConfig.eStatus == self.DownloadPreStatus.AddResListDownloaded then
+    self.m_stDownloadPreConfig.vAddResFileList = CS.TGRPDownloaderAddResPre.Instance:GetAddResDiffFileList()
+    local lTotalBytesAddResPre = CS.TGRPDownloaderAddResPre.Instance:GetListResDataTotalBytes(self.m_stDownloadPreConfig.vAddResFileList)
+    self.m_stDownloadPreConfig.lAddResTotalBytes = lTotalBytesAddResPre
+    local lDownloadedBytesAddResPre = CS.TGRPDownloaderAddResPre.Instance:GetListResDataDownloadedBytes(self.m_stDownloadPreConfig.vAddResFileList)
+    self.m_stDownloadPreConfig.lAddResDownloadedBytes = lDownloadedBytesAddResPre
+    local lTotalBytes = lTotalBytesAddResPre + self.m_stDownloadPreConfig.iPatchSize
+    local lDownloadedBytes = lDownloadedBytesAddResPre
+    if self.m_stDownloadPreConfig.bPatchDownloaded then
+      lDownloadedBytes = lDownloadedBytes + self.m_stDownloadPreConfig.iPatchSize
+    end
+    local lRemainBytes = lTotalBytes - lDownloadedBytes
+    if 0 < lRemainBytes then
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+      self:SetTaskDownloadProgress(self.m_stDownloadPreConfig.iTaskID, ResourcePackagePreStr, lDownloadedBytes, lTotalBytes, 0)
+      self:DownloadPreUpdateStatus()
+    else
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResDownloaded
+      self:SetTaskDownloadProgress(self.m_stDownloadPreConfig.iTaskID, ResourcePackagePreStr, lTotalBytes, lTotalBytes, 1)
+    end
+  elseif self.m_stDownloadPreConfig.eStatus == self.DownloadPreStatus.InitStatusFinished then
+    self:DownloadPreTryStart()
+  end
+end
+
+function DownloadManager:DownloadPrePatchList()
+  local sClientVersion = self.m_stDownloadPreConfig.sClientVersion
+  sClientVersion = "1.1.10." .. sClientVersion
+  local vResPatch = CS.MUF.Download.UpgradePatch.Instance:GetPatchCDNList()
+  
+  local function OnDownloadUpgradePatchListComplete(sVersion)
+    if sVersion == "0" then
+      log.error(string.format("DownloadPre UpgradePatchList Failed: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloadFailed
+      return
+    end
+    local versionContext = CS.VersionContext.GetContext()
+    log.info("DownloadPre UpgradePatchList VersionContext.ClientLocalVersion :", versionContext.ClientLocalVersion)
+    log.info("DownloadPre UpgradePatchList Server Client Version :", sVersion)
+    local localResVersion = CS.VersionUtil.GetResVer(versionContext.ClientLocalVersion)
+    local compare = CS.VersionUtil.CompareResVerPart(localResVersion, sVersion)
+    log.info("DownloadPre UpgradePatchList Compare :", compare)
+    if 0 <= compare then
+      log.error(string.format("DownloadPre UpgradePatchList NotMatch: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloadFailed
+      return
+    end
+    self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloaded
+    self:DownloadPreUpdateStatus()
+  end
+  
+  self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloading
+  local sCDNVersion = CS.CDNHelper.Instance.m_sCDNVersion
+  CS.MUF.Download.UpgradePatch.Instance:DownloadUpgradeByServer(sClientVersion, vResPatch, OnDownloadUpgradePatchListComplete, 10, sCDNVersion)
+end
+
+function DownloadManager:DownloadPrePatch()
+  local iTaskID = self.m_stDownloadPreConfig.iTaskID
+  local versionContext = CS.VersionContext.GetContext()
+  
+  local function OnDownloadUpgradePatchProgress(stDownloadHandler)
+    local iCurrDownloadSize = stDownloadHandler.CurrDownloadSize
+    local iNeedDownloadSize = stDownloadHandler.NeedDownloadSize
+    if iCurrDownloadSize < iNeedDownloadSize then
+      self:SetTaskDownloadProgress(iTaskID, ResourcePackagePreStr, self.m_stDownloadPreConfig.lAddResDownloadedBytes + iCurrDownloadSize, self.m_stDownloadPreConfig.lAddResTotalBytes + iNeedDownloadSize, 0)
+    end
+  end
+  
+  local function OnDownloadUpgradePatchComplete(handler)
+    if handler.Status == CS.MUF.Download.DownloadStatus.Success then
+      log.info("DownloadPre UpgradePatch Succeed")
+      self.m_stDownloadPreConfig.bPatchDownloaded = true
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+      local iPatchSize = self.m_stDownloadPreConfig.iPatchSize
+      self:SetTaskDownloadProgress(iTaskID, ResourcePackagePreStr, self.m_stDownloadPreConfig.lAddResDownloadedBytes + iPatchSize, self.m_stDownloadPreConfig.lAddResTotalBytes + iPatchSize, 0)
+      self:DownloadPreUpdateStatus()
+    else
+      log.error("DownloadPre UpgradePatch Failed")
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+    end
+  end
+  
+  self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchDownloading
+  CS.MUF.Download.UpgradePatch.Instance:StartUpgradePatch(versionContext.ClientLocalVersion, true, OnDownloadUpgradePatchComplete, OnDownloadUpgradePatchProgress)
+end
+
+function DownloadManager:DownloadPreAddResList()
+  self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResListDownloading
+  local sClientVersion = self.m_stDownloadPreConfig.sClientVersion
+  local util = require("common/XLua/util")
+  CS.MonoMethodUtil.StartCoroutine(util.cs_generator(function()
+    coroutine.yield(CS.TGRPDownloaderAddResPre.Instance:InitAddResPreDownloader(sClientVersion))
+    
+    local function OnDownloadAddResListComplete(sVersion)
+      if sVersion == "0" then
+        log.error(string.format("DownloadPre AddResList Failed: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+        self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResListDownloadFailed
+        return
+      end
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResListDownloaded
+      self:DownloadPreUpdateStatus()
+    end
+    
+    local sCDNVersion = CS.CDNHelper.Instance.m_sCDNVersion
+    CS.TGRPDownloaderAddResPre.Instance:DownloadFileListDiff(sClientVersion, OnDownloadAddResListComplete, 10, sCDNVersion)
+  end))
+end
+
+function DownloadManager:DownloadPreAddRes()
+  local iTaskID = self.m_stDownloadPreConfig.iTaskID
+  local iPatchSize = self.m_stDownloadPreConfig.iPatchSize
+  
+  local function OnDownloadPreAddResStart(curBytes, totalBytes)
+    log.info(string.format("DownloadPreAddRes %s: ResourcePackageName Pre, Download Start %s", iTaskID, self:GetDownloadProgressStr(curBytes, totalBytes)))
+    self.m_stDownloadPreConfig.lAddResDownloadedBytes = curBytes
+    self.m_stDownloadPreConfig.lAddResTotalBytes = totalBytes
+    self:SetTaskDownloadProgress(iTaskID, ResourcePackagePreStr, curBytes + iPatchSize, totalBytes + iPatchSize, 0)
+    if self.m_bDownloadAddResAllInit then
+      local lSpaceFreeTmp = CS.DeviceUtil.GetPersistentDataPathAvailableSize() * 1024 * 1024
+      if lSpaceFreeTmp < totalBytes - curBytes then
+        self:PauseDownloadAddResAll()
+      end
+      if self.m_eNetworkStatus ~= self.NetworkStatus.Wifi and not self:CanDownloadInMobile() then
+        CS.TGRPDownloaderAddResPre.Instance:PauseDownload(self.m_stDownloadPreConfig.iBatchID)
+        self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+      end
+      if not ActivityManager:IsOpenBackgroundDownloadAllResource() then
+        CS.TGRPDownloaderAddResPre.Instance:PauseDownload(self.m_stDownloadPreConfig.iBatchID)
+        self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.InitStatusFinished
+      end
+    end
+  end
+  
+  local function OnDownloadPreAddResProgress(curBytes, totalBytes, speed)
+    log.info(string.format("DownloadPreAddRes %s: ResourcePackageName Pre, Download Progress %s", iTaskID, self:GetDownloadProgressStr(curBytes, totalBytes)))
+    self.m_stDownloadPreConfig.lAddResDownloadedBytes = curBytes
+    self.m_stDownloadPreConfig.lAddResTotalBytes = totalBytes
+    self:SetTaskDownloadProgress(iTaskID, ResourcePackagePreStr, curBytes + iPatchSize, totalBytes + iPatchSize, 0)
+  end
+  
+  local function OnDownloadPreAddResComplete(ret)
+    self.m_stDownloadPreConfig.iBatchID = -1
+    if ret then
+      log.info(string.format("DownloadPreAddRes %s: ResourcePackageName Pre, Download Complete", iTaskID))
+      self.m_stDownloadPreConfig.lAddResDownloadedBytes = self.m_stDownloadPreConfig.lAddResTotalBytes
+      self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResDownloaded
+      self:SetTaskDownloadProgress(iTaskID, ResourcePackagePreStr, self.m_stDownloadPreConfig.lAddResTotalBytes + iPatchSize, self.m_stDownloadPreConfig.lAddResTotalBytes + iPatchSize, 1)
+    else
+      log.error(string.format("DownloadPreAddRes %s: ResourcePackageName Pre, Download Fail", iTaskID))
+      if not ret then
+        self.m_bDownloadAddResAll = false
+      end
+    end
+  end
+  
+  local vFileList = self.m_stDownloadPreConfig.vAddResFileList
+  self.m_stDownloadPreConfig.iBatchID = CS.TGRPDownloaderAddResPre.Instance:DownloadResList(vFileList, OnDownloadPreAddResComplete, OnDownloadPreAddResStart, OnDownloadPreAddResProgress)
+  self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResDownloading
+end
+
+function DownloadManager:DownloadPreGetTotalSize()
+  if self.m_stDownloadPreConfig == nil then
+    return 0
+  end
+  return self.m_stDownloadPreConfig.iPatchSize + self.m_stDownloadPreConfig.lAddResTotalBytes
 end
 
 return DownloadManager

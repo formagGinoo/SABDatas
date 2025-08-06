@@ -15,10 +15,10 @@ end
 
 function Form_GuildCreate:AfterInit()
   self.super.AfterInit(self)
-  self.m_inputfield_TMP_InputField.onEndEdit:AddListener(function()
+  self.m_inputfield_InputField.onEndEdit:AddListener(function()
     self:CheckStrIsCorrect()
   end)
-  self.m_inputfield_TMP_InputField.onValueChanged:AddListener(function()
+  self.m_inputfield_InputField.onValueChanged:AddListener(function()
     self:CheckStrIsCorrect()
   end)
   self.m_widgetBtnJoinTypeFilter = self:createFilterButton(self.m_filter_type)
@@ -55,7 +55,7 @@ end
 function Form_GuildCreate:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
-  self.m_inputfield_TMP_InputField.text = ""
+  self.m_inputfield_InputField.text = ""
 end
 
 function Form_GuildCreate:AddEventListeners()
@@ -125,10 +125,10 @@ function Form_GuildCreate:OnJoinLevelChanged(iIndex, bDown)
 end
 
 function Form_GuildCreate:CheckStrIsCorrect()
-  local text = self.m_inputfield_TMP_InputField.text
+  local text = self.m_inputfield_InputField.text
   if text ~= "" then
     local str = string.GetTextualNorms(text)
-    self.m_inputfield_TMP_InputField.text = str
+    self.m_inputfield_InputField.text = str
   end
 end
 
@@ -142,7 +142,7 @@ function Form_GuildCreate:OnBtnchangelogoClicked()
 end
 
 function Form_GuildCreate:OnBtnconsumeClicked()
-  local nameStr = self.m_inputfield_TMP_InputField.text
+  local nameStr = self.m_inputfield_InputField.text
   if nameStr ~= "" then
     local ownerNum = ItemManager:GetItemNum(self.m_needItemId, true)
     if ownerNum < self.m_needCost then
@@ -153,11 +153,6 @@ function Form_GuildCreate:OnBtnconsumeClicked()
           StackPopup:RemoveUIFromStack(UIDefines.ID_FORM_GUILDCREATE)
         end
       })
-      return
-    end
-    local bDirty = DirtyCharManager:FilterString(nameStr)
-    if bDirty then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30013)
       return
     end
     local spacing = string.checkFirstCharIsSpacing(nameStr)

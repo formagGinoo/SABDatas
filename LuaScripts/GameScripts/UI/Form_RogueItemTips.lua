@@ -113,8 +113,8 @@ function Form_RogueItemTips:RefreshUI()
       self.m_pnl_profession:SetActive(false)
     end
     self.m_btn_formula:SetActive(itemCfg.m_ItemType == RogueStageManager.RogueStageItemType.Material)
-    self.m_img_bg_skillbuf:SetActive(itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " ")
-    self.m_pnl_skillnuffinfor:SetActive(itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " ")
+    self.m_img_bg_skillbuf:SetActive(itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " " and itemCfg.m_mItemDesc2 ~= "******")
+    self.m_pnl_skillnuffinfor:SetActive(itemCfg.m_mItemDesc2 ~= "" and itemCfg.m_mItemDesc2 ~= " " and itemCfg.m_mItemDesc2 ~= "******")
     self.m_txt_skillbuff_Text.text = itemCfg.m_mItemDesc2
     self.m_txt_story_Text.text = itemCfg.m_mItemDesc3
     self:RefreshItemPropertyUI(self.m_itemId)

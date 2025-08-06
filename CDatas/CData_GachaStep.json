@@ -1,0 +1,48 @@
+{
+  "className": "CData_GachaStep",
+  "data": {
+    "1005": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_StepID": "1005",
+          "m_Sequences": "1",
+          "m_GachaNum": "10",
+          "m_StepReward": "[1501,1]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_StepID": "1005",
+          "m_Sequences": "2",
+          "m_GachaNum": "30",
+          "m_StepReward": "[30017,1]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_StepID": "1005",
+          "m_Sequences": "3",
+          "m_GachaNum": "50",
+          "m_StepReward": "[1501,1]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_StepID": "1005",
+          "m_Sequences": "4",
+          "m_GachaNum": "70",
+          "m_StepReward": "[1330001,1]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_StepID": "1005",
+          "m_Sequences": "5",
+          "m_GachaNum": "100",
+          "m_StepReward": "[1501,1]"
+        }
+      }
+    }
+  },
+  "status": "processed_1_items"
+}

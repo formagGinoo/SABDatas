@@ -212,8 +212,15 @@ function Form_ItemTipsT10:OnEventSetEffectLock(stData)
   self:RefreshLockIcon(stData.iEquipUid)
 end
 
-function Form_ItemTipsT10:OnEventSaveReOverload(iEquipUid)
-  self.m_equipData = EquipManager:GetEquipDataByID(iEquipUid)
+function Form_ItemTipsT10:OnEventSaveReOverload(param)
+  if not param then
+    return
+  end
+  local tempEquipData = EquipManager:GetEquipDataByID(param.iEquipUid)
+  if not tempEquipData then
+    return
+  end
+  self.m_equipData = tempEquipData
   self:RefreshUI()
 end
 

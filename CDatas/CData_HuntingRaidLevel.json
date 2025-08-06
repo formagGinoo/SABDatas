@@ -55,7 +55,40 @@
       "m_HeroModify": "6001",
       "m_FightSubType": "5",
       "m_CountType": "3"
+    },
+    "2102060": {
+      "m_bError": null,
+      "m_LevelID": "2102060",
+      "m_MapID": "2400006",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "6",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "6",
+      "m_CountType": "2"
+    },
+    "2102070": {
+      "m_bError": null,
+      "m_LevelID": "2102070",
+      "m_MapID": "2400007",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "7",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "7",
+      "m_CountType": "3"
+    },
+    "2102080": {
+      "m_bError": null,
+      "m_LevelID": "2102080",
+      "m_MapID": "2400008",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "8",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "8",
+      "m_CountType": "2"
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_8_items"
 }

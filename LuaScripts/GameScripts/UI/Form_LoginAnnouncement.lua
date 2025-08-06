@@ -37,14 +37,14 @@ function Form_LoginAnnouncement:ResetBulletin()
       if contentOne.sTitle and contentOne.sTitle ~= "" then
         textBulletinTitle:SetActive(true)
         bShowTitle = true
-        textBulletinTitle:GetComponent(T_TextMeshProUGUI).text = contentOne.sTitle
+        textBulletinTitle:GetComponent(T_Text).text = contentOne.sTitle
       else
         textBulletinTitle:SetActive(false)
       end
       local textBulletinContent = panelBulletinContent.transform:Find("m_textContentTemplate").gameObject
       if contentOne.sContent and contentOne.sContent ~= "" then
         textBulletinContent:SetActive(true)
-        textBulletinContent:GetComponent(T_TextMeshProUGUI).text = contentOne.sContent
+        textBulletinContent:GetComponent(T_Text).text = contentOne.sContent
       else
         textBulletinContent:SetActive(false)
       end

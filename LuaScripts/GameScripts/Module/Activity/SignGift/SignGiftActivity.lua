@@ -106,6 +106,7 @@ function SignGiftActivity:GetLimitBuyTimes()
   else
     return self.m_stActivityData.iEndTime
   end
+  return 0
 end
 
 function SignGiftActivity:CheckOtherCondition()

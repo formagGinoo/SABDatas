@@ -38,6 +38,7 @@ function Form_MonsterIntroduction:OnActive()
   self:broadcastEvent("eGameEvent_DeactiveVideoForm")
   self:FreshData()
   self:FreshUI()
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(104)
 end
 
 function Form_MonsterIntroduction:OnInactive()

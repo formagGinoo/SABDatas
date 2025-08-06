@@ -60,6 +60,7 @@ function Form_Filter:OnActive()
       UILuaHelper.SetLocalPosition(self.m_choose_list, 0, 0, 0)
     end
   end)
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(323)
 end
 
 function Form_Filter:InitSetPos()
@@ -74,6 +75,7 @@ end
 function Form_Filter:OnInactive()
   self.super.OnInactive(self)
   self:ClearDataRefresh()
+  self:broadcastEvent("eGameEvent_Form_FilterClosed")
 end
 
 function Form_Filter:OnDestroy()
@@ -164,6 +166,7 @@ function Form_Filter:OnChooseClk(filterType, index, isFirst)
   if self.m_chooseBackFun and not isFirst then
     self.m_chooseBackFun(self.m_curChooseFilterType)
   end
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(322)
 end
 
 function Form_Filter:ClearDataRefresh()

@@ -1,6 +1,7 @@
 local Form_EquipT10PopChange = class("Form_EquipT10PopChange", require("UI/UIFrames/Form_EquipT10PopChangeUI"))
 local SHOW_ATTR_TIPS_NUM = 3
 local ATTR_MAX_LEVEL = 20
+local FreshAnimStr = "EquipT10PopChange_refresh"
 
 function Form_EquipT10PopChange:SetInitParam(param)
 end
@@ -20,6 +21,7 @@ function Form_EquipT10PopChange:OnActive()
     iID = self.m_equipData.iBaseId,
     iNum = 0
   }, self.m_equipData)
+  self.m_overLoadNewItemList = {}
   self:RefreshUI()
 end
 
@@ -32,7 +34,6 @@ end
 function Form_EquipT10PopChange:AddEventListeners()
   self:addEventListener("eGameEvent_SetEffectLock", handler(self, self.OnEventSetEffectLock))
   self:addEventListener("eGameEvent_ReOverload", handler(self, self.OnEventReOverload))
-  self:addEventListener("eGameEvent_SaveReOverload", handler(self, self.OnEventSaveReOverload))
 end
 
 function Form_EquipT10PopChange:RemoveAllEventListeners()
@@ -48,6 +49,14 @@ end
 function Form_EquipT10PopChange:RefreshOverLoadExAttr()
   local overloadEffect = self.m_equipData.mOverloadEffect
   for i = 1, SHOW_ATTR_TIPS_NUM do
+    local tempItemNew = self["m_attr_item" .. i .. "_new"]
+    UILuaHelper.SetActive(tempItemNew, false)
+    local itemParentTrans = tempItemNew.transform.parent
+    local animStr = FreshAnimStr
+    if 1 < i then
+      animStr = FreshAnimStr .. i
+    end
+    UILuaHelper.ResetAnimationByName(itemParentTrans, animStr)
     if overloadEffect[i] then
       local effectCfg = EquipManager:GetEquipEffectCfgByIdLv(overloadEffect[i].iGroupId, overloadEffect[i].iEffectLevel)
       local highQuality = effectCfg.m_HighQuality
@@ -147,6 +156,73 @@ function Form_EquipT10PopChange:ShowOverLoadAttrLevel(cloneObj, showRed)
   UILuaHelper.SetActive(cloneObj, true)
 end
 
+function Form_EquipT10PopChange:ShowNewAttrEffectListAndAnim(changeEffectMap, backFun)
+  if not changeEffectMap then
+    return
+  end
+  local animLen
+  for i = 1, SHOW_ATTR_TIPS_NUM do
+    local changeEffectData = changeEffectMap[i]
+    if changeEffectData then
+      local tempChangeEffect = changeEffectData.equipEffectData
+      UILuaHelper.SetActive(self["m_attr_item" .. i .. "_new"], tempChangeEffect ~= nil)
+      UILuaHelper.SetActive(self["m_img_empty" .. i], tempChangeEffect == nil)
+      if tempChangeEffect then
+        local effectCfg = EquipManager:GetEquipEffectCfgByIdLv(tempChangeEffect.iGroupId, tempChangeEffect.iEffectLevel)
+        local highQuality = effectCfg.m_HighQuality
+        self["m_bg_special" .. i .. "_new"]:SetActive(highQuality == 1)
+        self["m_txt_item_rank" .. i .. "_new_Text"].text = string.format(ConfigManager:GetCommonTextById(20033), tostring(tempChangeEffect.iEffectLevel))
+        local cfgList = EquipManager:GetEquipEffectCfgByGroupId(tempChangeEffect.iGroupId)
+        if self.m_overLoadNewItemList[i] then
+          for _, obj in pairs(self.m_overLoadNewItemList[i]) do
+            UILuaHelper.SetActive(obj, false)
+          end
+        end
+        for m = 1, cfgList.Count do
+          self["m_item_red" .. i .. "_new"]:SetActive(false)
+          if not self.m_overLoadNewItemList[i] then
+            self.m_overLoadNewItemList[i] = {}
+          end
+          if not self.m_overLoadNewItemList[i][m] then
+            local cloneObj = self:CreateOverLoadItem(self["m_item_red" .. i .. "_new"], self["m_img_list_schedule" .. i .. "_new"].transform)
+            self.m_overLoadNewItemList[i][m] = cloneObj
+          end
+          local showRed = m <= tempChangeEffect.iEffectLevel
+          self:ShowOverLoadAttrLevel(self.m_overLoadNewItemList[i][m], showRed)
+        end
+        self["m_txt_item_name" .. i .. "_new_Text"].text = tostring(effectCfg.m_mDesc)
+        self["m_txt_item_num" .. i .. "_new_Text"].text = tostring(effectCfg.m_Data)
+        self["m_attr_item" .. i .. "_new"]:SetActive(true)
+        self["m_icon_lock" .. i .. "_new"]:SetActive(tempChangeEffect.bLock)
+        self["m_icon_lock_un" .. i .. "_new"]:SetActive(not tempChangeEffect.bLock)
+      end
+      local parentTransform = self["m_attr_item" .. i .. "_new"].transform.parent
+      local animStr = FreshAnimStr
+      if 1 < i then
+        animStr = animStr .. i
+      end
+      if animLen == nil then
+        animLen = UILuaHelper.GetAnimationLengthByName(parentTransform, animStr)
+      end
+      UILuaHelper.PlayAnimationByName(parentTransform, animStr)
+    end
+  end
+  if animLen then
+    if self.m_animFreshTimer ~= nil then
+      TimeService:KillTimer(self.m_animFreshTimer)
+      self.m_animFreshTimer = nil
+    end
+    self.m_animFreshTimer = TimeService:SetTimer(animLen, 1, function()
+      self.m_animFreshTimer = nil
+      if backFun then
+        backFun()
+      end
+    end)
+  elseif backFun then
+    backFun()
+  end
+end
+
 function Form_EquipT10PopChange:OnEventSetEffectLock(stData)
   if stData.bLock then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 20037)
@@ -161,13 +237,48 @@ function Form_EquipT10PopChange:OnEventReOverload(iEquipUid)
   local equipData = EquipManager:GetEquipDataByID(iEquipUid)
   StackPopup:Push(UIDefines.ID_FORM_EQUIPT10OVERLOADRANDOMWORD, {
     equipData = equipData,
-    openType = self.m_openType
+    openType = self.m_openType,
+    replaceBackFun = function(isSave, iEquipUID, changeEffectList)
+      self:OnRandomReplaceBack(isSave, iEquipUID, changeEffectList)
+    end
   })
 end
 
-function Form_EquipT10PopChange:OnEventSaveReOverload(iEquipUid)
-  self.m_equipData = EquipManager:GetEquipDataByID(iEquipUid)
-  self:RefreshUI()
+function Form_EquipT10PopChange:OnRandomReplaceBack(isSave, iEquipUID, changeEffectList)
+  if not self.m_equipData then
+    return
+  end
+  if not iEquipUID then
+    return
+  end
+  if not next(changeEffectList) then
+    return
+  end
+  if iEquipUID ~= self.m_equipData.iEquipUid then
+    return
+  end
+  
+  local function freshUIFun()
+    local tempEquipData = EquipManager:GetEquipDataByID(iEquipUID)
+    if tempEquipData then
+      self.m_equipData = tempEquipData
+      self:RefreshUI()
+    end
+  end
+  
+  local isFreshUINow = false
+  if isSave then
+    if changeEffectList then
+      self:ShowNewAttrEffectListAndAnim(changeEffectList, freshUIFun)
+    else
+      isFreshUINow = true
+    end
+  else
+    isFreshUINow = true
+  end
+  if isFreshUINow then
+    freshUIFun()
+  end
 end
 
 function Form_EquipT10PopChange:DestroyItem()
@@ -182,6 +293,17 @@ function Form_EquipT10PopChange:DestroyItem()
     end
   end
   self.m_overLoadItemList = {}
+  if self.m_overLoadNewItemList and 0 < table.getn(self.m_overLoadNewItemList) then
+    for i = SHOW_ATTR_TIPS_NUM, 1, -1 do
+      for m = ATTR_MAX_LEVEL, 1, -1 do
+        if self.m_overLoadNewItemList[i] and self.m_overLoadNewItemList[i][m] then
+          CS.UnityEngine.GameObject.Destroy(self.m_overLoadNewItemList[i][m])
+          self.m_overLoadNewItemList[i][m] = nil
+        end
+      end
+    end
+  end
+  self.m_overLoadNewItemList = {}
 end
 
 function Form_EquipT10PopChange:OnBtnlock1Clicked()

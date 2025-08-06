@@ -2,21 +2,6 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local GachaSubPanel = class("GachaSubPanel", UISubPanelBase)
 local GachaDisplayIns = ConfigManager:GetConfigInsByName("GachaDisplay")
 local DeltaFrameNum = 10
-local SpineStrCfg = {
-  ui_gacha_panel_1001 = "empusae_final",
-  ui_gacha_panel_1002 = "jacinta_base",
-  ui_gacha_panel_1003 = "Loreley_Base",
-  ui_gacha_panel_1004 = "Bella_summer"
-}
-
-function GachaSubPanel:GetSubPanelPrefabNameStr()
-  local rootObjNameStr = self.m_rootObj.transform.name
-  local nameStrSplitList = string.split(rootObjNameStr, "(")
-  if 1 < #nameStrSplitList then
-    return nameStrSplitList[1]
-  end
-  return rootObjNameStr
-end
 
 function GachaSubPanel:OnInit()
   self.m_curFrameNum = 0
@@ -25,17 +10,18 @@ function GachaSubPanel:OnInit()
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
   self.m_curShowSpineStr = nil
-  local prefabName = self:GetSubPanelPrefabNameStr()
-  self:LoadShowSpine(prefabName)
+  if self.m_initData and self.m_initData.m_Spine then
+    self:LoadShowSpine(self.m_initData.m_Spine)
+  end
 end
 
 function GachaSubPanel:OnFreshData()
   self.m_gachaConfig = self.m_panelData.gachaConfig or {}
   self.m_freeGacha10CDFlag = false
-  self:RefreshDailyTimes()
   self:RefreshUI()
   self:RefreshTime()
   self:CheckFreshDiscountBtnShow()
+  self:CheckFreshClearBtnShow()
   self:CheckFreshFreeBtnShow()
 end
 
@@ -54,41 +40,37 @@ function GachaSubPanel:OnHidePanel()
 end
 
 function GachaSubPanel:RefreshTime()
-  self.m_iTimeDurationOneSecond = 1
-  if self.m_txt_time and self.m_gachaConfig.m_EndTime ~= "" then
-    local endTime = TimeUtil:TimeStringToTimeSec2(self.m_gachaConfig.m_EndTime)
-    local is_corved, t1, t2 = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.gacha, {
-      id = self.m_gachaConfig.m_ActId,
-      gacha_id = self.m_gachaConfig.m_GachaID
-    })
-    if is_corved then
-      endTime = t2
-    end
-    self.m_iTimeTick = endTime - TimeUtil:GetServerTimeS()
-    self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(math.floor(self.m_iTimeTick))
-  end
 end
 
-function GachaSubPanel:RefreshDailyTimes()
-  if self.m_gachaConfig.m_DailyMax <= 0 then
-    return
+function GachaSubPanel:GetGachaBtnState()
+  local gacha1 = true
+  local gacha10 = true
+  if self.m_gachaConfig.m_DailyMax > 0 then
+    local dailyTimes = GachaManager:GetGachaDailyTimesById(self.m_gachaConfig.m_GachaID)
+    dailyTimes = self.m_gachaConfig.m_DailyMax - dailyTimes
+    if dailyTimes < 10 and 1 <= dailyTimes then
+      gacha10 = false
+    elseif dailyTimes < 1 then
+      gacha1 = false
+      gacha10 = false
+    end
+    if not gacha1 and not gacha10 then
+      return gacha1, gacha10
+    end
   end
-  local dailyTimes = GachaManager:GetGachaDailyTimesById(self.m_gachaConfig.m_GachaID)
-  dailyTimes = self.m_gachaConfig.m_DailyMax - dailyTimes
-  if dailyTimes < 1 then
-    self.m_btn_consumegray1:SetActive(true)
-    self.m_btn_consume1:SetActive(false)
-  else
-    self.m_btn_consumegray1:SetActive(false)
-    self.m_btn_consume1:SetActive(true)
+  local gachaCount = GachaManager:GetGachaCountById(self.m_gachaConfig.m_GachaID)
+  if 0 < self.m_gachaConfig.m_WishTimesRes and 10 > self.m_gachaConfig.m_WishTimesRes - gachaCount then
+    gacha10 = false
   end
-  if dailyTimes < 10 then
-    self.m_btn_consumegray10:SetActive(true)
-    self.m_btn_consume10:SetActive(false)
-  else
-    self.m_btn_consumegray10:SetActive(false)
-    self.m_btn_consume10:SetActive(true)
-  end
+  return gacha1, gacha10
+end
+
+function GachaSubPanel:FreshGachaBtn()
+  local consume1Active, consume10Active = self:GetGachaBtnState()
+  self.m_btn_consume1:SetActive(consume1Active)
+  self.m_btn_consumegray1:SetActive(not consume1Active)
+  self.m_btn_consume10:SetActive(consume10Active)
+  self.m_btn_consumegray10:SetActive(not consume10Active)
 end
 
 function GachaSubPanel:CheckFreshDiscountBtnShow()
@@ -135,10 +117,25 @@ function GachaSubPanel:FreshShowDiscountLeftTimeStr()
   end
 end
 
+function GachaSubPanel:CheckFreshClearBtnShow()
+  local have_special10Token, itemId, itemNum, userNum = GachaManager:IsHaveSpecialGacha10(self.m_gachaConfig.m_GachaID)
+  if have_special10Token then
+    ResourceUtil:CreateItemIcon(self.m_clear_icon10_Image, itemId)
+    self.m_clear_num10_Text.text = itemNum .. " / " .. userNum
+    UILuaHelper.SetColor(self.m_clear_num10_Text, 247, 246, 244, 1)
+    self.m_txt_clear10_Text.text = string.gsub(ConfigManager:GetCommonTextById(20356), "{0}", ItemManager:GetItemName(itemId))
+  end
+  UILuaHelper.SetActive(self.m_img_txt_clear10, have_special10Token)
+  UILuaHelper.SetActive(self.m_redpoint_clearR, have_special10Token)
+  UILuaHelper.SetActive(self.m_pnl_clear10, have_special10Token)
+  UILuaHelper.SetActive(self.m_pnl_comsumeR, not have_special10Token)
+end
+
 function GachaSubPanel:CheckFreshFreeBtnShow()
   self.m_nextDayDownTimer = nil
   self.m_freeGacha10CDFlag = false
   local isShowFreeBtn = false
+  local originalComsumeRActive = self.m_pnl_comsumeR.activeSelf
   local openFlag = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaFree)
   if self.m_gachaConfig.m_FreeTimes > 0 and openFlag then
     local curDayUseFreeTimes = GachaManager:GetGachaFreeTimes(self.m_gachaConfig.m_GachaID)
@@ -165,6 +162,7 @@ function GachaSubPanel:CheckFreshFreeBtnShow()
       isShowFreeBtn = true
       local freeNumStr = string.CS_Format(ConfigManager:GetCommonTextById(20348), leftFreeTimes, iDailyFreeTimesTen)
       self.m_txt_dailyfreenum10_Text.text = freeNumStr
+      UILuaHelper.SetActive(self.m_pnl_clear10, false)
     elseif not GachaManager:CheckIsLastDayById(self.m_gachaConfig.m_GachaID) then
       self.m_freeGacha10CDFlag = true
       if not self.m_nextDayDownTimer then
@@ -175,7 +173,7 @@ function GachaSubPanel:CheckFreshFreeBtnShow()
   end
   UILuaHelper.SetActive(self.m_pnl_dailyfree10, isShowFreeBtn)
   UILuaHelper.SetActive(self.m_redpoint_dailyfree10, isShowFreeBtn)
-  UILuaHelper.SetActive(self.m_pnl_comsumeR, not isShowFreeBtn)
+  UILuaHelper.SetActive(self.m_pnl_comsumeR, not isShowFreeBtn and originalComsumeRActive)
   UILuaHelper.SetActive(self.m_img_txt_bg10, self.m_nextDayDownTimer ~= nil)
 end
 
@@ -210,27 +208,12 @@ end
 function GachaSubPanel:OnDailyReset()
   self:RefreshUI()
   self:CheckFreshDiscountBtnShow()
+  self:CheckFreshClearBtnShow()
   self:CheckFreshFreeBtnShow()
 end
 
 function GachaSubPanel:OnUpdate(dt)
   self:NextFreeDayUpdate()
-  if not self.m_txt_time_Text then
-    return
-  end
-  if not self.m_iTimeTick then
-    return
-  end
-  self.m_iTimeTick = self.m_iTimeTick - dt
-  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond - dt
-  if self.m_iTimeDurationOneSecond <= 0 then
-    self.m_iTimeDurationOneSecond = 1
-    self.m_txt_time_Text.text = TimeUtil:SecondsToFormatCNStr(math.floor(self.m_iTimeTick))
-  end
-  if self.m_iTimeTick <= 0 then
-    self.m_iTimeTick = nil
-    self.m_txt_time_Text.text = ""
-  end
 end
 
 function GachaSubPanel:NextFreeDayUpdate()
@@ -248,14 +231,8 @@ function GachaSubPanel:NextFreeDayUpdate()
 end
 
 function GachaSubPanel:RefreshUI()
-  if not utils.isNull(self.m_img_bg01) and ActivityManager:IsInCensorOpen() then
-    UILuaHelper.SetActive(self.m_img_bg01, ActivityManager:IsInCensorOpen())
-    if not utils.isNull(self.m_img_bg) then
-      UILuaHelper.SetActive(self.m_img_bg, false)
-    end
-  elseif not utils.isNull(self.m_img_bg) then
-    UILuaHelper.SetActive(self.m_img_bg, true)
-  end
+  self:FreshGachaBtn()
+  self:RefreshInCensorOpen()
   local have_Token = false
   local wish1Token = utils.changeCSArrayToLuaTable(self.m_gachaConfig.m_Wish1Token)
   if wish1Token and 0 < #wish1Token then
@@ -311,82 +288,58 @@ function GachaSubPanel:RefreshUI()
       end
     end
   end
-  local gachaCount = GachaManager:GetGachaCountById(self.m_gachaConfig.m_GachaID)
-  if 0 < self.m_gachaConfig.m_WishTimesRes and 10 > self.m_gachaConfig.m_WishTimesRes - gachaCount then
-    self.m_btn_consume10:SetActive(false)
-    self.m_btn_gray:SetActive(true)
-  else
-    self.m_btn_consume10:SetActive(true)
-    if self.m_btn_gray then
-      self.m_btn_gray:SetActive(false)
-    end
-  end
-  if self.m_txt_time then
-    self.m_txt_time_Text.text = ""
-  end
   if self.m_gachaConfig.m_WishTimesRes ~= 0 then
+    local gachaCount = GachaManager:GetGachaCountById(self.m_gachaConfig.m_GachaID)
     self.m_txt_num_Text.text = self.m_gachaConfig.m_WishTimesRes - gachaCount
     self.m_txt_countnum_Text.text = ConfigManager:GetCommonTextById(20109)
   end
-  if self.m_gachaConfig.m_ShopJump and self.m_gachaConfig.m_ShopJump ~= 0 then
-    local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
-    if payStoreActivity then
-      local isCanJump = payStoreActivity:GetChainPackState()
-      if not utils.isNull(self.m_z_txt_get) then
-        UILuaHelper.SetActive(self.m_z_txt_get, isCanJump)
-      end
-      if not utils.isNull(self.m_z_txt_got) then
-        UILuaHelper.SetActive(self.m_z_txt_got, not isCanJump)
-      end
-      if not utils.isNull(self.m_vx_glow2) then
-        UILuaHelper.SetActive(self.m_vx_glow2, isCanJump)
-      end
-      if not utils.isNull(self.m_vx_glow1) then
-        UILuaHelper.SetActive(self.m_vx_glow1, isCanJump)
-      end
-      if not utils.isNull(self.m_img_bg3) and not isCanJump then
-        UILuaHelper.StopAnimation(self.m_img_bg3)
-      end
-    end
+  self:DealNewGachaPoolJump()
+  self:FreshEmbbounsState()
+end
+
+function GachaSubPanel:FreshEmbbounsState()
+  if utils.isNull(self.m_btn_embbouns) then
+    return
   end
-  if self.m_btn_embbouns then
-    self.m_btn_embbouns:SetActive(false)
-    local activityList = ActivityManager:GetMainActivityList()
-    for i, v in ipairs(activityList) do
-      if v.SubPanelName and v.Activity:checkCondition(true) then
-        local act = v.Activity
-        if act.GetClientCfg then
-          local cfg = act:GetClientCfg()
-          if cfg.iShowType == 4 then
-            local quest = {}
-            quest = act.m_stSdpConfig.mQuest
-            local firstQuestId = act:GetRedQuestId()
-            local questList = {}
-            for _, vv in pairs(quest) do
-              if tonumber(vv.iId) ~= firstQuestId then
-                questList[#questList + 1] = vv
-              end
+  self.m_btn_embbouns:SetActive(false)
+  local activityList = ActivityManager:GetMainActivityList()
+  if not activityList then
+    return
+  end
+  for i, v in ipairs(activityList) do
+    if v.SubPanelName and v.Activity:checkCondition(true) then
+      local act = v.Activity
+      if act and act.GetClientCfg then
+        local cfg = act:GetClientCfg()
+        if cfg.iShowType == 4 then
+          local quest = {}
+          quest = act.m_stSdpConfig.mQuest
+          local firstQuestId = act:GetRedQuestId()
+          local questList = {}
+          for _, vv in pairs(quest) do
+            if tonumber(vv.iId) ~= firstQuestId then
+              questList[#questList + 1] = vv
             end
-            if 1 <= #questList then
-              table.sort(questList, function(a, b)
-                return a.iId < b.iId
-              end)
-            end
-            for _, info in ipairs(questList) do
-              local questState = act:GetQuestState(info.iId)
-              if questState and (questState.iState == TaskManager.TaskState.Doing or questState.iState == TaskManager.TaskState.Finish) then
-                local force = act:GetQuestState(questList[#questList].iId).vCondStep[1] or 0
-                if force < info.iObjectiveCount then
-                  self.m_txt_embnum_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(2111), force, info.iObjectiveCount)
-                else
-                  self.m_txt_embnum_Text.text = force .. "/" .. info.iObjectiveCount
-                end
-                self.m_btn_embbouns:SetActive(true)
-                self.iActivityId = act:getID()
-                self.m_wish_redpoint:SetActive(questState.iState == TaskManager.TaskState.Finish)
-                self.m_vx_glow:SetActive(questState.iState == TaskManager.TaskState.Finish)
-                break
+          end
+          if 1 <= #questList then
+            table.sort(questList, function(a, b)
+              return a.iId < b.iId
+            end)
+          end
+          for _, info in ipairs(questList) do
+            local questState = act:GetQuestState(info.iId)
+            if questState and (questState.iState == TaskManager.TaskState.Doing or questState.iState == TaskManager.TaskState.Finish) then
+              local force = act:GetQuestState(questList[#questList].iId).vCondStep[1] or 0
+              if force < info.iObjectiveCount then
+                self.m_txt_embnum_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(2111), force, info.iObjectiveCount)
+              else
+                self.m_txt_embnum_Text.text = force .. "/" .. info.iObjectiveCount
               end
+              self.m_btn_embbouns:SetActive(true)
+              self.iActivityId = act:getID()
+              self.m_wish_redpoint:SetActive(questState.iState == TaskManager.TaskState.Finish)
+              self.m_vx_glow:SetActive(questState.iState == TaskManager.TaskState.Finish)
+              break
             end
           end
         end
@@ -518,11 +471,7 @@ function GachaSubPanel:CheckRecycleSpine(isResetParam)
   end
 end
 
-function GachaSubPanel:LoadShowSpine(prefabName)
-  if not prefabName then
-    return
-  end
-  local spineStr = SpineStrCfg[prefabName]
+function GachaSubPanel:LoadShowSpine(spineStr)
   if not spineStr then
     return
   end
@@ -531,21 +480,55 @@ function GachaSubPanel:LoadShowSpine(prefabName)
     UILuaHelper.SetParent(object, self.m_root_hero, true)
     UILuaHelper.SetActive(object, true)
     UILuaHelper.SpineResetMatParam(object)
+    UILuaHelper.SetSpineTimeScale(object, 1)
+    if UILuaHelper.CheckIsHaveSpineAnim(object, "idle2") then
+      UILuaHelper.SpinePlayAnimWithBack(object, 0, "idle2", true, false)
+    else
+      UILuaHelper.SpinePlayAnimWithBack(object, 0, "idle", true, false)
+    end
     self.m_curHeroSpineObj = object
     self.m_curShowSpineStr = nameStr
   end)
 end
 
+function GachaSubPanel:RefreshInCensorOpen()
+  if not utils.isNull(self.m_img_bg01) and ActivityManager:IsInCensorOpen() then
+    UILuaHelper.SetActive(self.m_img_bg01, ActivityManager:IsInCensorOpen())
+    if not utils.isNull(self.m_img_bg) then
+      UILuaHelper.SetActive(self.m_img_bg, false)
+    end
+  elseif not utils.isNull(self.m_img_bg) then
+    UILuaHelper.SetActive(self.m_img_bg, true)
+  end
+end
+
+function GachaSubPanel:DealNewGachaPoolJump()
+  if self.m_gachaConfig.m_ShopJump and self.m_gachaConfig.m_ShopJump ~= 0 then
+    local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
+    if payStoreActivity then
+      local isCanJump = payStoreActivity:GetChainPackState()
+      if not utils.isNull(self.m_z_txt_get) then
+        UILuaHelper.SetActive(self.m_z_txt_get, isCanJump)
+      end
+      if not utils.isNull(self.m_z_txt_got) then
+        UILuaHelper.SetActive(self.m_z_txt_got, not isCanJump)
+      end
+      if not utils.isNull(self.m_vx_glow2) then
+        UILuaHelper.SetActive(self.m_vx_glow2, isCanJump)
+      end
+      if not utils.isNull(self.m_vx_glow1) then
+        UILuaHelper.SetActive(self.m_vx_glow1, isCanJump)
+      end
+      if not utils.isNull(self.m_img_bg3) and not isCanJump then
+        UILuaHelper.StopAnimation(self.m_img_bg3)
+      end
+    end
+  end
+end
+
 function GachaSubPanel:GetDownloadResourceExtra(subPanelCfg)
-  local spineStr = SpineStrCfg[subPanelCfg.PrefabPath]
   local vPackage = {}
   local vResourceExtra = {}
-  if spineStr then
-    vResourceExtra[#vResourceExtra + 1] = {
-      sName = spineStr,
-      eType = DownloadManager.ResourceType.UI
-    }
-  end
   return vPackage, vResourceExtra
 end
 

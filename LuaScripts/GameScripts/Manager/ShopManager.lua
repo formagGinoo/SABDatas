@@ -167,31 +167,33 @@ function ShopManager:GetShopGoodsByShopId(shopId)
   local vGoods = shopData.vGoods or {}
   for i, v in ipairs(vGoods) do
     local goodCfg = self:GetShopGoodsConfig(v.iGroupId, v.iGoodsId)
-    if goodCfg.m_ConditionType == ShopManager.ShopGoodsConditionType.ShopGoodsConditionType_PreTime then
-      local goodInfo = table.deepcopy(v)
-      goodInfo.iShopId = shopId
-      local confitionTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_ConditionTime) or 0
-      local shopCfg = ShopManager:GetShopConfig(shopId)
-      local is_corved, corveCfg = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.shopGoods, {
-        id = shopCfg.m_ActId,
-        iGroupID = goodCfg.m_GoodsGroupID,
-        iGoodsId = goodCfg.m_GoodsID
-      })
-      local endTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_EndTime) or 0
-      if is_corved then
-        confitionTime = corveCfg.iConditionTime
-        endTime = corveCfg.iEndTime
-      end
-      if TimeUtil:IsInTime(confitionTime, endTime) then
-        goods[#goods + 1] = goodInfo
-      end
-    else
-      local showTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_ShowTime) or 0
-      local endTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_EndTime) or 0
-      if TimeUtil:IsInTime(showTime, endTime) then
+    if goodCfg and not goodCfg:GetError() then
+      if goodCfg.m_ConditionType == ShopManager.ShopGoodsConditionType.ShopGoodsConditionType_PreTime then
         local goodInfo = table.deepcopy(v)
         goodInfo.iShopId = shopId
-        goods[#goods + 1] = goodInfo
+        local confitionTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_ConditionTime) or 0
+        local shopCfg = ShopManager:GetShopConfig(shopId)
+        local is_corved, corveCfg = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.shopGoods, {
+          id = shopCfg.m_ActId,
+          iGroupID = goodCfg.m_GoodsGroupID,
+          iGoodsId = goodCfg.m_GoodsID
+        })
+        local endTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_EndTime) or 0
+        if is_corved then
+          confitionTime = corveCfg.iConditionTime
+          endTime = corveCfg.iEndTime
+        end
+        if TimeUtil:IsInTime(confitionTime, endTime) then
+          goods[#goods + 1] = goodInfo
+        end
+      else
+        local showTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_ShowTime) or 0
+        local endTime = TimeUtil:TimeStringToTimeSec2(goodCfg.m_EndTime) or 0
+        if TimeUtil:IsInTime(showTime, endTime) then
+          local goodInfo = table.deepcopy(v)
+          goodInfo.iShopId = shopId
+          goods[#goods + 1] = goodInfo
+        end
       end
     end
   end
@@ -248,6 +250,39 @@ function ShopManager:GetShopGoodsStockBought(shopId, goodsGroupId, goodsId)
   return count
 end
 
+function ShopManager:GetCurInStockNum(shopID, goodsGroupID, goodsID)
+  if not shopID then
+    return
+  end
+  if not goodsGroupID then
+    return
+  end
+  if not goodsID then
+    return
+  end
+  local ShopGoodsIns = ConfigManager:GetConfigInsByName("ShopGoods")
+  local goodsCfg = ShopGoodsIns:GetValue_ByGoodsGroupIDAndGoodsID(goodsGroupID, goodsID)
+  if not goodsCfg then
+    return
+  end
+  if goodsCfg:GetError() == true then
+    return
+  end
+  local iBought = self:GetShopGoodsStockBought(shopID, goodsGroupID, goodsID) or 0
+  local allBoughtNum = self:GetShopGoodsBought(shopID, goodsGroupID, goodsID) or 0
+  local cfgMaxNum = goodsCfg.m_ItemQuantity
+  if goodsCfg.m_ResType ~= 0 then
+    local limitNum = goodsCfg.m_ResTimes
+    if cfgMaxNum > limitNum then
+      cfgMaxNum = limitNum
+    end
+  else
+    return cfgMaxNum
+  end
+  cfgMaxNum = cfgMaxNum - (allBoughtNum - iBought)
+  return cfgMaxNum
+end
+
 function ShopManager:CheckIsReachedPurchaseLimit(shopId, goodsGroupId, goodsId)
   local limit = false
   local ShopGoodsIns = ConfigManager:GetConfigInsByName("ShopGoods")
@@ -292,11 +327,16 @@ function ShopManager:SetShopBuyChangeData(shopId, goodsGroupId, goodsId, iStockB
   local shopData = self.m_allShopServerDataList[shopId]
   if shopData then
     local mGoodsBought = shopData.mGoodsBought
-    for shopGroupId, v in pairs(mGoodsBought) do
-      if shopGroupId == goodsGroupId and v[1] == goodsId then
-        v[2] = iLimitBought
-      end
+    if mGoodsBought == nil then
+      mGoodsBought = {}
+      shopData.mGoodsBought = mGoodsBought
     end
+    local goodsGroupData = mGoodsBought[goodsGroupId]
+    if goodsGroupData == nil then
+      goodsGroupData = {}
+      mGoodsBought[goodsGroupId] = goodsGroupData
+    end
+    goodsGroupData[goodsId] = iLimitBought
     local vGoods = shopData.vGoods
     for i, v in pairs(vGoods) do
       if v.iGroupId == goodsGroupId and v.iGoodsId == goodsId then
@@ -403,7 +443,7 @@ function ShopManager:CheckShopRedPointByShopId(shopId)
 end
 
 function ShopManager:GetAllShopRedPointInfo()
-  local shopCfgList = self:GetShopConfigList()
+  local shopCfgList = self:GetShopConfigList(ShopManager.ShopType.ShopType_Normal)
   local redFlag = 0
   for i, goods in ipairs(shopCfgList) do
     local flag = self:CheckShopRedPointByShopId(goods.m_ShopID)

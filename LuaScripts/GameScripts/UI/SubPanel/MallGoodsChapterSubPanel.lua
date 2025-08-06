@@ -76,7 +76,7 @@ function MallGoodsChapterSubPanel:FreshFreeItem()
   self.m_txt_num_silver_Text.text = "X" .. free_reward[2]
   self.free_reward = free_reward
   self.free_Level = free_config.m_Level
-  self.m_txt_chapter_sliver_Text.text = free_config.m_mLevelName
+  self.m_txt_chapter_sliver_Text.text = free_config.m_LevelName
 end
 
 function MallGoodsChapterSubPanel:FreshPaidUnlockItem()

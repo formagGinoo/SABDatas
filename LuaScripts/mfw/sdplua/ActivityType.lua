@@ -58,4 +58,7 @@ ActivityType_WebReward = 139
 ActivityType_Refund = 140
 ActivityType_SignGift = 141
 ActivityType_GachaFree = 142
+ActivityType_ForbidCustomDescManager = 143
+ActivityType_ReturnSign = 144
+ActivityType_ConsumeReward = 145
 ActivityType_TimelineJump = 146

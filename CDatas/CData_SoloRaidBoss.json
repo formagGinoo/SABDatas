@@ -4,7 +4,7 @@
     "1": {
       "m_bError": null,
       "m_BOSSID": "1",
-      "m_mName": "\"Summons 3 \"",
+      "m_mName": "\"Clive Ganelon\"",
       "m_mDesc": "\"These resurgent demons hail from the Other Side, temporarily manifesting in the mortal realm during periods of invasion. Like a spectre, they haunt the land of Minexus.\"",
       "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_role_03\"",
       "m_Background2": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\""
@@ -24,7 +24,15 @@
       "m_mDesc": "\"These resurgent demons hail from the Other Side, temporarily manifesting in the mortal realm during periods of invasion. Like a spectre, they haunt the land of Minexus.\"",
       "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_role_06_02\"",
       "m_Background2": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper06\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_BOSSID": "4",
+      "m_mName": "\"\"Massive Supernova,\" Weathered Flames of War\"",
+      "m_mDesc": "\"These resurgent demons hail from the Other Side, temporarily manifesting in the mortal realm during periods of invasion. Like a spectre, they haunt the land of Minexus.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_role_07_02\"",
+      "m_Background2": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper07\""
     }
   },
-  "status": "processed_3_items"
+  "status": "processed_4_items"
 }

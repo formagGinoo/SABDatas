@@ -3,7 +3,6 @@ local ActivityLoginSendItemSubPanel = class("ActivityLoginSendItemSubPanel", UIS
 local SignMaxNum = 14
 
 function ActivityLoginSendItemSubPanel:OnInit()
-  self:AddEventListeners()
 end
 
 function ActivityLoginSendItemSubPanel:AddEventListeners()
@@ -15,8 +14,14 @@ function ActivityLoginSendItemSubPanel:RemoveAllEventListeners()
 end
 
 function ActivityLoginSendItemSubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self.m_stActivity = self.m_panelData.activity
   self:RefreshUI()
+end
+
+function ActivityLoginSendItemSubPanel:OnInactive()
+  self:RemoveAllEventListeners()
 end
 
 function ActivityLoginSendItemSubPanel:RefreshUI()

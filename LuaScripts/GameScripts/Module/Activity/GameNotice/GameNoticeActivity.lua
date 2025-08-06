@@ -19,6 +19,10 @@ function GameNoticeActivity:OnResetSdpConfig()
     for iIndex, stInfo in pairs(self.m_stSdpConfig.stClientCfg) do
     end
   end
+  if self.m_stSdpConfig and self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.iNoticeType == 4 then
+    local sClientVersion, iQuestId = self:GetAddResPreConfig()
+    DownloadManager:DownloadPreInitStatus(iQuestId, sClientVersion)
+  end
 end
 
 function GameNoticeActivity:GetActiveAnnouncementList()
@@ -48,7 +52,28 @@ function GameNoticeActivity:checkCondition()
   if not self:IsShowSurveyAnnounce() then
     return false
   end
+  if not self:isInActivityLanguageShow() then
+    return false
+  end
   return true
+end
+
+function GameNoticeActivity:isInActivityLanguageShow()
+  if self.m_stActivityData.vLanguageId then
+    local langId = CS.MultiLanguageManager.g_iLanguageID
+    langId = CS.MultiLanguageManager.Instance:GetLanIDById(langId)
+    local langList = self.m_stActivityData.vLanguageId or {}
+    if table.getn(langList) > 0 then
+      for k, v in pairs(langList) do
+        if v == langId then
+          return true
+        end
+      end
+    else
+      return true
+    end
+  end
+  return false
 end
 
 function GameNoticeActivity:OnResetStatusData()
@@ -67,6 +92,31 @@ function GameNoticeActivity:IsShowSurveyAnnounce()
         return false
       end
     end
+  end
+  return true
+end
+
+function GameNoticeActivity:GetAddResPreConfig()
+  local iNoticeType
+  if self.m_stSdpConfig and self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.iNoticeType == 4 then
+    iNoticeType = self.m_stSdpConfig.stClientCfg.iNoticeType
+  end
+  if iNoticeType ~= 4 then
+    return nil, nil
+  end
+  local sClientVersion = self.m_stSdpConfig.stClientCfg.sClientVersion
+  local iQuestId = self.m_stSdpConfig.stClientCfg.iQuestId
+  return sClientVersion, iQuestId
+end
+
+function GameNoticeActivity:CanShowAddResPre()
+  local iHideTime
+  if self.m_stSdpConfig and self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.iHideTime then
+    iHideTime = self.m_stSdpConfig.stClientCfg.iHideTime
+  end
+  local iServerTime = TimeUtil:GetServerTimeS()
+  if iHideTime and iHideTime < iServerTime then
+    return false
   end
   return true
 end

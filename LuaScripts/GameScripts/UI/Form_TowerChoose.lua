@@ -14,7 +14,7 @@ function Form_TowerChoose:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1103)
+  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1103)
   local resourceBarRoot = self.m_rootTrans:Find("content_node/ui_common_top_resource").gameObject
   self.m_widgetResourceBar = self:createResourceBar(resourceBarRoot)
   self.m_levelTowerHelper = LevelManager:GetLevelHelperByType(LevelManager.LevelType.Tower)
@@ -280,6 +280,17 @@ function Form_TowerChoose:OnBackClk()
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_HALLACTIVITYMAIN)
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_TOWERCHOOSE)
   StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN)
+  self:DestroyBigSystemUIImmediately()
+end
+
+function Form_TowerChoose:OnBackHome()
+  if BattleFlowManager:IsInBattle() == true then
+    BattleFlowManager:FromBattleToHall()
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+    GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  end
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_TowerChoose:OnBtnstartClicked()

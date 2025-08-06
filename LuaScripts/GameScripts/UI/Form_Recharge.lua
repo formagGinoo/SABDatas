@@ -90,6 +90,7 @@ function Form_Recharge:OnActive()
       self.m_icon_item2.gameObject:SetActive(true)
     end)
   end
+  self:OnRefreshGiftPoint()
 end
 
 function Form_Recharge:OnDestroy()
@@ -134,6 +135,29 @@ end
 
 function Form_Recharge:OnImgbgcloseClicked()
   self:CloseForm()
+end
+
+function Form_Recharge:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  local productId = self.m_itemData.sProductId
+  if not productId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(self.m_itemData.sProductId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function Form_Recharge:OnBtncouponClicked()

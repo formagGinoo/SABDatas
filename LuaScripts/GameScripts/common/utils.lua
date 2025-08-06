@@ -846,6 +846,11 @@ function utils.ShowDialogueGame(dialogId, finishFc)
   StackFlow:Push(UIDefines.ID_FORM_INTERACTIVEGAME, params)
 end
 
+function utils.PlayPlotClock(finishFc)
+  local params = {finishFc = finishFc}
+  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY105PLOTCLOCK, params)
+end
+
 function utils.openForm_filter(filterData, click_transform, content_pivot, pos_offset, chooseBackFun, isHideShowMoonType, isInBattle, isHideCamp)
   local params = {
     filterData = filterData,

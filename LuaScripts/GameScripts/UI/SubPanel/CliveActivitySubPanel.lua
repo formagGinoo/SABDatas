@@ -3,7 +3,6 @@ local CliveActivitySubPanel = class("CliveActivitySubPanel", UISubPanelBase)
 local iMaxCount = 6
 
 function CliveActivitySubPanel:OnInit()
-  self:AddEventListeners()
   self.mComponents = {}
   for i = 1, iMaxCount do
     local trans = self["m_btn_task" .. i].transform
@@ -30,6 +29,7 @@ function CliveActivitySubPanel:OnInit()
 end
 
 function CliveActivitySubPanel:OnInActive()
+  self:RemoveAllEventListeners()
   if self.m_UILockID and UILockIns:IsValidLocker(self.m_UILockID) then
     UILockIns:Unlock(self.m_UILockID)
   end
@@ -45,6 +45,9 @@ function CliveActivitySubPanel:OnDestroy()
 end
 
 function CliveActivitySubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
+  GlobalManagerIns:TriggerWwiseBGMState(273)
   self.m_stActivity = self.m_panelData.activity
   local clientCfg = self.m_stActivity:GetClientCfg()
   table.sort(clientCfg.vHeroConfig, function(a, b)

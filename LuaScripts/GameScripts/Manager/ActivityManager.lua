@@ -33,7 +33,9 @@ ActivityManager.ActivitySubPanelName = {
   ActivitySPName_EmpousaActivity = "EmpousaActivitySubPanel",
   ActivitySPName_CliveActivity = "CliveActivitySubPanel",
   ActivitySPName_EmbraceBonusActivity = "EmbraceBonusSubPanel",
-  ActivitySPName_FirstRechargeActivity = "FirstRechargeActivitySubPanel"
+  ActivitySPName_FirstRechargeActivity = "FirstRechargeActivitySubPanel",
+  ActivitySPName_ReturnBackSignActivity = "ReturnBackSignSubPanel",
+  ActivitySPName_ConsumeRewardActivity = "ChargeRebateSubPanel"
 }
 ActivityManager.ActStateEnum = {
   Normal = 0,
@@ -124,6 +126,9 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/VoucherControl/VoucherControlActivity")
   self:LoadActivity("Module/Activity/SignGift/SignGiftActivity")
   self:LoadActivity("Module/Activity/Gacha/Gacha10FreeActivity")
+  self:LoadActivity("Module/Activity/ForbidCustomDescAct/ForbidCustomDescMgrActivity")
+  self:LoadActivity("Module/Activity/ReturnBackSign/ReturnBackSignActivity")
+  self:LoadActivity("Module/Activity/ConsumeReward/ConsumeRewardActivity")
   self:LoadActivity("Module/Activity/JumpFace/TimelinePushfaceActivity")
 end
 
@@ -395,6 +400,14 @@ function ActivityManager:GetBannerPic(iActivityID)
   local data = self:GetActivityDataByID(iActivityID)
   if data then
     return data.sActivityPic
+  end
+  return ""
+end
+
+function ActivityManager:GetBannerCdnPic(iActivityID)
+  local data = self:GetActivityDataByID(iActivityID)
+  if data then
+    return data.sActBanner or ""
   end
   return ""
 end
@@ -1240,6 +1253,14 @@ function ActivityManager:IsFullBurstDayOpen()
   return act:IsFullBurstDay()
 end
 
+function ActivityManager:IsInForbidCustomLimitTime()
+  local activityCom = self:GetActivityByType(MTTD.ActivityType_ForbidCustomDescManager)
+  if not activityCom then
+    return false
+  end
+  return activityCom:IsInLimitTime()
+end
+
 function ActivityManager:CheckEmergencyGift()
   local act = self:GetActivityByType(MTTD.ActivityType_EmergencyGift)
   if act then
@@ -1263,6 +1284,35 @@ function ActivityManager:OnCheckBattlePassRedInHall(actId)
     end
   end
   return 0
+end
+
+function ActivityManager:GetConsumeRewardState()
+  local act = self:GetActivityByType(MTTD.ActivityType_ConsumeReward)
+  if act and act:checkCondition() then
+    return true, act:GetPointItemId()
+  end
+  return false
+end
+
+function ActivityManager:GetPayPointsCondition(sProductId)
+  if not sProductId or sProductId == "" then
+    return false
+  end
+  local pointReward = {}
+  local act = self:GetActivityByType(MTTD.ActivityType_ConsumeReward)
+  if act then
+    if not act:checkCondition() then
+      return false
+    end
+    local pointNum = act:GetProductPointInfo(sProductId)
+    local pointItemId = act:GetPointItemId()
+    if not pointNum or not pointItemId then
+      return false
+    end
+    pointReward = {iID = pointItemId, iNum = pointNum}
+    return true, pointReward
+  end
+  return false
 end
 
 function ActivityManager:OnInitFetchMoreDataMustFail(messageId, msg)

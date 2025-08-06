@@ -36,14 +36,14 @@ function Form_LoginAnnouncementUpgrade:ResetUpgrade()
     if contentOne.sTitle and contentOne.sTitle ~= "" then
       textUpgradeTitle:SetActive(true)
       bShowTitle = true
-      textUpgradeTitle:GetComponent(T_TextMeshProUGUI).text = contentOne.sTitle
+      textUpgradeTitle:GetComponent(T_Text).text = contentOne.sTitle
     else
       textUpgradeTitle:SetActive(false)
     end
     local textUpgradeContent = panelUpgradeContent.transform:Find("m_textContentTemplate").gameObject
     if contentOne.sContent and contentOne.sContent ~= "" then
       textUpgradeContent:SetActive(true)
-      textUpgradeContent:GetComponent(T_TextMeshProUGUI).text = contentOne.sContent
+      textUpgradeContent:GetComponent(T_Text).text = contentOne.sContent
     else
       textUpgradeContent:SetActive(false)
     end

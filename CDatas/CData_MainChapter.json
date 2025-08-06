@@ -4,7 +4,7 @@
     "1": {
       "m_bError": null,
       "m_ChapterID": "1",
-      "m_ChapterTitle": "\"�\"",
+      "m_ChapterTitle": "\"00\"",
       "m_ChapterType": "1",
       "m_mChapterName": "\"Black Blood and Silver Hair\"",
       "m_UnlockConditionType": "[2]",
@@ -265,7 +265,7 @@
       "m_Hide": "1",
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "20": {
       "m_bError": null,
@@ -545,7 +545,7 @@
       "m_Hide": null,
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "519": {
       "m_bError": null,

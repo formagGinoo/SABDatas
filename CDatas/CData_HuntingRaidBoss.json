@@ -75,7 +75,52 @@
       "m_AchieveType": "1",
       "m_BuffPool": "[4901000,4902000,4903000,4905000,4909000,4913000,4916000]",
       "m_Use64Rank": null
+    },
+    "6": {
+      "m_bError": null,
+      "m_BOSSID": "6",
+      "m_mName": "\"Cradle of Torment\"",
+      "m_mDesc": "\"<style=Highlight>Assist Clive Jr. in swiftly eliminating the resurgent Plague.</style>\nBlossoming Wolfsbane buried the past.\nBut the Plague is back once more.\nClive Jr. will never let the Ganelon down.\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20510",
+      "m_mRequire": "\"I will do everything in my power to protect everyone!\"",
+      "m_LevelID": "2102060",
+      "m_mTitle1": "\"Best Time (sec)\"",
+      "m_mTitle2": "\"Clear Time (sec)\"",
+      "m_AchieveType": "2",
+      "m_BuffPool": "[4901000,4902000,4903000,4907000,4910000,4915000,4922000]",
+      "m_Use64Rank": null
+    },
+    "7": {
+      "m_bError": null,
+      "m_BOSSID": "7",
+      "m_mName": "\"Crustacean Crisis\"",
+      "m_mDesc": "\"<style=Highlight>Catch as many escaped crabs as possible—Ami has her own ways of dealing with them.</style>\nThe escaped crabs are destroying the food chain.\nMany of Ami's food friends have fallen victim to their claws.\nAs the future Captain of the El Dorado, she cannot stand idly by.\n\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20060",
+      "m_mRequire": "\"Get ready to be steamed, stirred, braised, and fried, you crabs.\"",
+      "m_LevelID": "2102070",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4909000,4915000,4919000,4920000]",
+      "m_Use64Rank": null
+    },
+    "8": {
+      "m_bError": null,
+      "m_BOSSID": "8",
+      "m_mName": "\"Living Nightmare\"",
+      "m_mDesc": "\"<style=Highlight>Help Piera swiftly purify the desecrated longing.</style>\nWhat lies at the end of death?\nIs it eternal nothingness, or a gateway to rebirth?\nFaced with the nightmare born from longing, Piera opened the coffin behind her.\n\"",
+      "m_Background": "\"Atlas_ActivityPersonalRaid/personalraid_img_paper02\"",
+      "m_HeroID": "20270",
+      "m_mRequire": "\"This longing must never be desecrated!\"",
+      "m_LevelID": "2102080",
+      "m_mTitle1": "\"Best Time (sec)\"",
+      "m_mTitle2": "\"Clear Time (sec)\"",
+      "m_AchieveType": "2",
+      "m_BuffPool": "[4901000,4902000,4903000,4904000,4908000,4917000,4921000]",
+      "m_Use64Rank": null
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_8_items"
 }

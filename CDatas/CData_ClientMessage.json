@@ -409,7 +409,7 @@
     "904": {
       "m_bError": null,
       "m_ID": "904",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+      "m_mContent": "\"[Jump] Unlocks after clearing [Threads of Fate] <style=Clientmessage01>1-4</style>.\""
     },
     "905": {
       "m_bError": null,
@@ -1221,6 +1221,11 @@
       "m_ID": "13028",
       "m_mContent": "\"Capacity reached. Please summon Ancient Vassal.\""
     },
+    "13029": {
+      "m_bError": null,
+      "m_ID": "13029",
+      "m_mContent": "\"Report successful.\""
+    },
     "20000": {
       "m_bError": null,
       "m_ID": "20000",
@@ -1489,7 +1494,7 @@
     "21009": {
       "m_bError": null,
       "m_ID": "21009",
-      "m_mContent": "\"\""
+      "m_mContent": "\"Boon From Afar Unavailable\""
     },
     "30001": {
       "m_bError": null,
@@ -1891,6 +1896,16 @@
       "m_ID": "40050",
       "m_mContent": "\"Vassal pinned to top.\""
     },
+    "40051": {
+      "m_bError": null,
+      "m_ID": "40051",
+      "m_mContent": "\"Requirement: Clear <style=Highlight>{0}</style> within <style=Highlight>{1}</style>.\""
+    },
+    "40052": {
+      "m_bError": null,
+      "m_ID": "40052",
+      "m_mContent": "\"Previous Stage Not Completed\""
+    },
     "41001": {
       "m_bError": null,
       "m_ID": "41001",
@@ -1989,7 +2004,7 @@
     "45003": {
       "m_bError": null,
       "m_ID": "45003",
-      "m_mContent": "\"Upgrade Hall of Honor to unlock Quick Dispatch.\""
+      "m_mContent": "\"Upgrade Hall of Honor to unlock Quick Expedition.\""
     },
     "45004": {
       "m_bError": null,
@@ -1999,7 +2014,7 @@
     "45005": {
       "m_bError": null,
       "m_ID": "45005",
-      "m_mContent": "\"No Missions available for Quick Dispatch.\""
+      "m_mContent": "\"No Missions available for Quick Expedition.\""
     },
     "45006": {
       "m_bError": null,
@@ -2091,6 +2106,11 @@
       "m_ID": "48004",
       "m_mContent": "\"Narrator\""
     },
+    "48005": {
+      "m_bError": null,
+      "m_ID": "48005",
+      "m_mContent": "\"Are you sure you want to review [{0}]?\""
+    },
     "49001": {
       "m_bError": null,
       "m_ID": "49001",
@@ -2125,6 +2145,11 @@
       "m_bError": null,
       "m_ID": "49007",
       "m_mContent": "\"No stamina left. Cannot move!\""
+    },
+    "49008": {
+      "m_bError": null,
+      "m_ID": "49008",
+      "m_mContent": "\"A powerful force is preventing Aiona from crossing to another timeline.\""
     },
     "50001": {
       "m_bError": null,
@@ -2164,7 +2189,7 @@
     "52004": {
       "m_bError": null,
       "m_ID": "52004",
-      "m_mContent": "\"Please select the desired items for your Custom Package before proceeding with the purchase.\""
+      "m_mContent": "\"Please customize your gifts before purchasing.\""
     },
     "52005": {
       "m_bError": null,
@@ -2257,5 +2282,5 @@
       "m_mContent": "\"Unlocked by default.\""
     }
   },
-  "status": "processed_451_items"
+  "status": "processed_456_items"
 }

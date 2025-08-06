@@ -28,10 +28,6 @@ function PickUpChooseItem:OnFreshData()
     item:SetItemIconLongPress(handler(self, self.OnItemLongClk))
   end, cfg)
   local bIsChoose = chooseIdx and true or false
-  self.m_img_bk_unselect:SetActive(not bIsChoose)
-  self.m_img_bk_select:SetActive(bIsChoose)
-  self.m_arrow_unselected:SetActive(not bIsChoose)
-  self.m_arrow_selected:SetActive(bIsChoose)
   self.m_common_item_selected:SetActive(bIsChoose)
   if bIsChoose then
     local pickUpReward = cfg[chooseIdx + 1]
@@ -56,13 +52,6 @@ end
 
 function PickUpChooseItem:OnItemLongClk(itemID, itemNum)
   utils.openItemDetailPop({iID = itemID, iNum = itemNum})
-end
-
-function PickUpChooseItem:SetSelected(index, isSelectedBG)
-  local isSelected = index + 1 == self.m_itemIndex
-  self.m_img_select_kuang:SetActive(isSelected)
-  self.m_img_unselect:SetActive(not isSelected and index ~= -1)
-  self.m_img_select_bk:SetActive(isSelectedBG)
 end
 
 return PickUpChooseItem

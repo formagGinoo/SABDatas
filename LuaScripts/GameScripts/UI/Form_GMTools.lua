@@ -193,6 +193,19 @@ function Form_GMTools:OnBtnGetStrKeyClicked()
   self:SwitchShowMode(ShowMode.TextPickMode)
 end
 
+function Form_GMTools:OnBtnItem999Clicked()
+  local curValue = LocalDataManager:GetIntSimple("PREF_STR_ITEM999TOOL_OPEN", 0)
+  local finalValue
+  if curValue == 1 then
+    finalValue = 0
+  else
+    finalValue = 1
+  end
+  LocalDataManager:SetIntSimple("PREF_STR_ITEM999TOOL_OPEN", finalValue, true)
+  UILuaHelper.SetActive(self.m_z_this_open, finalValue == 1)
+  UILuaHelper.SetActive(self.m_z_this_close, finalValue == 0)
+end
+
 function Form_GMTools:OnBtninputCommandClicked()
   self:SwitchPanel(1)
 end
@@ -261,6 +274,15 @@ function Form_GMTools:SwitchPanel(index)
   end
   for i, v in ipairs(self.TablePanels) do
     v:SetActive(i == index)
+  end
+  self:FreshPanel(index)
+end
+
+function Form_GMTools:FreshPanel(index)
+  if index == 3 then
+    local curValue = LocalDataManager:GetIntSimple("PREF_STR_ITEM999TOOL_OPEN", 0)
+    UILuaHelper.SetActive(self.m_z_this_open, curValue == 1)
+    UILuaHelper.SetActive(self.m_z_this_close, curValue == 0)
   end
 end
 

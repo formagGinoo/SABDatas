@@ -356,6 +356,7 @@ function Form_PvpReplaceMain:FreshRewardStatus()
       if self.m_canShowAnim then
         self.m_canShowAnim = false
         UILuaHelper.StopAnimation(self.m_img_icon)
+        UILuaHelper.ResetAnimationByName(self.m_img_icon, "box_loop2", -1)
       end
       local percentNum = (curServerTime - lastTakeTime) / limitTimeSecNum
       if percentNum < 0 then
@@ -506,8 +507,8 @@ function Form_PvpReplaceMain:InitEnemyItem(itemObj, index)
   local node_img_free = itemTrans:Find("m_img_free")
   local node_PvP_money = itemTrans:Find("m_rival_pvpmoney")
   local img_PvP_money_icon = itemTrans:Find("m_rival_pvpmoney/m_icon_rival_pvpmoney"):GetComponent(T_Image)
-  local txt_name = itemTrans:Find("m_txt_rival_name"):GetComponent(T_TextMeshProUGUI)
-  local txt_guild_name = itemTrans:Find("m_txt_rival_guild_name"):GetComponent(T_TextMeshProUGUI)
+  local txt_name = itemTrans:Find("m_txt_rival_name"):GetComponent(T_Text)
+  local txt_guild_name = itemTrans:Find("m_txt_rival_guild_name"):GetComponent(T_Text)
   local rankImg = itemTrans:Find("bg_rank/m_img_rank"):GetComponent(T_Image)
   local txt_rankName = itemTrans:Find("m_pnl_enemyrankname/m_txt_enemyrankname"):GetComponent(T_TextMeshProUGUI)
   local playerHeadObj = itemTrans:Find("c_circle_head").gameObject

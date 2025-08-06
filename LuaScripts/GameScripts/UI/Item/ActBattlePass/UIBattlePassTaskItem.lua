@@ -9,9 +9,11 @@ function UIBattlePassTaskItem:OnFreshData()
   local iQuestId = data.iQuestId
   local stActivity = data.activity
   local taskCfg = data.questCfg
+  local isFull = data.isFull
   self.m_taskCfg = taskCfg
   self.m_txt_content_Text.text = taskCfg.m_mTaskName
   self.m_txt_point_Text.text = taskCfg.m_Score
+  self.m_pnl_btn:SetActive(not isFull)
   local questStatus = stActivity:GetQuestStatus(iQuestId)
   if questStatus == nil then
     self.m_btn_receive:SetActive(false)
@@ -58,19 +60,24 @@ function UIBattlePassTaskItem:OnBtnreceiveClicked()
 end
 
 function UIBattlePassTaskItem:RefreshItemFx(delay)
-  self.m_itemRootObj:SetActive(false)
+  if not utils.isNull(self.m_itemRootObj) then
+    self.m_itemRootObj:SetActive(false)
+  end
   local sequence = Tweening.DOTween.Sequence()
   sequence:AppendInterval(delay)
   sequence:OnComplete(function()
-    self.m_itemRootObj:SetActive(true)
-    UILuaHelper.PlayAnimationByName(self.m_itemRootObj, "pnl_task_list_item_in")
+    if not utils.isNull(self.m_itemRootObj) then
+      self.m_itemRootObj:SetActive(true)
+      UILuaHelper.PlayAnimationByName(self.m_itemRootObj, "pnl_task_list_item_in")
+    end
   end)
   sequence:SetAutoKill(true)
 end
 
 function UIBattlePassTaskItem:PlayTaskComplateAnim()
-  if self.m_img_complete.activeSelf then
-    UILuaHelper.PlayAnimationByName(self.m_img_complete, "BattlePassTask_get")
+  if self.m_img_complete then
+    UILuaHelper.SetActive(self.m_img_complete, true)
+    UILuaHelper.PlayAnimationByName(self.m_img_complete, "BattlePass_Up_task_get")
   end
 end
 

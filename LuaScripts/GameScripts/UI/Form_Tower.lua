@@ -13,7 +13,7 @@ function Form_Tower:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1103)
+  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1103)
   local resourceBarRoot = self.m_rootTrans:Find("content_node/ui_common_top_resource").gameObject
   self.m_widgetResourceBar = self:createResourceBar(resourceBarRoot)
   self.m_levelTowerHelper = LevelManager:GetLevelHelperByType(LevelManager.LevelType.Tower)
@@ -64,6 +64,15 @@ function Form_Tower:OnDestroy()
   if self.m_luaDetailLevel then
     self.m_luaDetailLevel:dispose()
     self.m_luaDetailLevel = nil
+  end
+  if CS.GameQualityManager.DestroyLevelMapAsset and self.m_towerBgNodeDic then
+    for levelSubType, tempBgNode in pairs(self.m_towerBgNodeDic) do
+      if tempBgNode then
+        GameObject.Destroy(tempBgNode.gameObject)
+        CS.MUF.Resource.ResourceManager.UnloadAsset("ui_tower_tower_bg" .. levelSubType, CS.MUF.Resource.ResourceType.UI)
+      end
+    end
+    self.m_towerBgNodeDic = {}
   end
 end
 
@@ -450,6 +459,17 @@ function Form_Tower:OnBackClk()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackFlow:Push(UIDefines.ID_FORM_TOWERCHOOSE)
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_TOWER)
+  self:DestroyBigSystemUIImmediately()
+end
+
+function Form_Tower:OnBackHome()
+  if BattleFlowManager:IsInBattle() == true then
+    BattleFlowManager:FromBattleToHall()
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+    GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  end
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_Tower:OnBtnLastClicked()

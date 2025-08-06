@@ -8,13 +8,6 @@
       "m_android": "[\"Roboto-Regular\",\"NotoSansSC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKSC-Regular\",\"NotoSansTC-Regular\",\"NotoSansCJK-Regular:NotoSansCJKTC-Regular\",\"NotoSansJP-Regular\",\"NotoSansCJK-Regular:NotoSansCJKJP-Regular\",\"NotoSansKR-Regular\",\"NotoSansCJK-Regular:NotoSansCJKKR-Regular\",\"NotoSansThai-Regular\"]",
       "m_windows": "[]"
     },
-    "\"win_eu\"": {
-      "m_bError": null,
-      "m_channel": "\"win_eu\"",
-      "m_ios": "[]",
-      "m_android": "[]",
-      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
-    },
     "\"and_jp\"": {
       "m_bError": null,
       "m_channel": "\"and_jp\"",
@@ -102,6 +95,13 @@
     "\"win_ap\"": {
       "m_bError": null,
       "m_channel": "\"win_ap\"",
+      "m_ios": "[]",
+      "m_android": "[]",
+      "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"
+    },
+    "\"win_eu\"": {
+      "m_bError": null,
+      "m_channel": "\"win_eu\"",
       "m_ios": "[]",
       "m_android": "[]",
       "m_windows": "[\"arial\",\"msyh\",\"msyh:MicrosoftYaHei-Regular\",\"msjh\",\"msjh:MicrosoftJhengHei-Regular\",\"YuGothR\",\"YuGothR:YuGothic-Regular\",\"malgun\",\"malgun:malgun\",\"LeelawUI\",\"LeelawUI:LeelawUI\"]"

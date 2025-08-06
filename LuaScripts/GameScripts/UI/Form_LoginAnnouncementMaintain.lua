@@ -16,7 +16,7 @@ end
 function Form_LoginAnnouncementMaintain:OnActive()
   self.m_stMaintainInfo = self.m_csui.m_param.stMaintainInfo
   self:ResetMaintain()
-  self.m_panelServer.transform:Find("PanelCountDown/TextCountDownDesc"):GetComponent(T_TextMeshProUGUI).text = CS.ConfFact.LangFormat4DataInit("LoginAnnouncementMaintainCountDownDesc")
+  self.m_panelServer.transform:Find("PanelCountDown/TextCountDownDesc"):GetComponent(T_Text).text = CS.ConfFact.LangFormat4DataInit("LoginAnnouncementMaintainCountDownDesc")
   self.m_Btn_Close:GetComponent(T_Button).onClick:RemoveAllListeners()
   self.m_Btn_Return:SetActive(false)
   self.m_Btn_Return:GetComponent(T_Button).onClick:RemoveAllListeners()
@@ -48,14 +48,14 @@ function Form_LoginAnnouncementMaintain:ResetMaintain()
       if contentOne.sTitle and contentOne.sTitle ~= "" then
         textMaintainTitle:SetActive(true)
         bShowTitle = true
-        textMaintainTitle:GetComponent(T_TextMeshProUGUI).text = contentOne.sTitle
+        textMaintainTitle:GetComponent(T_Text).text = contentOne.sTitle
       else
         textMaintainTitle:SetActive(false)
       end
       local textMaintainContent = panelMaintainContent.transform:Find("m_textContentTemplate").gameObject
       if contentOne.sContent and contentOne.sContent ~= "" then
         textMaintainContent:SetActive(true)
-        textMaintainContent:GetComponent(T_TextMeshProUGUI).text = contentOne.sContent
+        textMaintainContent:GetComponent(T_Text).text = contentOne.sContent
       else
         textMaintainContent:SetActive(false)
       end

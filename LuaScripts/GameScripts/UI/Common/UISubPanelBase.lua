@@ -1,11 +1,12 @@
 local BaseNode = require("Base/BaseNode")
 local UISubPanelBase = class("UISubPanelBase", BaseNode)
 
-function UISubPanelBase:Init(parentObj, subPanelObj, parentLua, initData, panelData)
+function UISubPanelBase:Init(parentObj, subPanelObj, parentLua, initData, panelData, panelStr)
   self.m_parentObj = parentObj
   self.m_rootObj = subPanelObj
   self.m_parentLua = parentLua
   self.m_initData = initData
+  self.m_panelStr = panelStr
   self.m_redDotItemList = {}
   self.m_subPanelList = nil
   self.m_uiVariables = nil
@@ -29,6 +30,9 @@ function UISubPanelBase:InitSubUI()
   end
   UILuaHelper.BindViewObjectsManual(self, self.m_rootObj, self:getName())
   UILuaHelper.FreshViewMultiLanguage(self.m_rootObj)
+  if KeyboardMappingManager then
+    KeyboardMappingManager:AddSubConfig(self.m_parentLua:getName(), self.m_rootObj.name, self, true)
+  end
   self:doEvent("OnInit")
 end
 
@@ -46,6 +50,7 @@ function UISubPanelBase:OnDestroy()
   self:RemoveAllSubPanel()
   UILuaHelper.UnbindViewObjectsManual(self, self.m_rootObj, self:getName())
   GameObject.Destroy(self.m_rootObj)
+  SubPanelManager:CheckUnloadAsset(self.m_panelStr)
   self.m_parentObj = nil
   self.m_rootObj = nil
   self.m_parentLua = nil
@@ -54,6 +59,13 @@ end
 function UISubPanelBase:SetActive(isActive)
   if self.m_rootObj then
     self.m_rootObj:SetActive(isActive)
+  end
+  if KeyboardMappingManager then
+    if isActive then
+      KeyboardMappingManager:AddSubConfig(self.m_parentLua:getName(), self.m_rootObj.name, self, true)
+    else
+      KeyboardMappingManager:RemoveSubConfig(self.m_parentLua:getName(), self.m_rootObj.name)
+    end
   end
 end
 

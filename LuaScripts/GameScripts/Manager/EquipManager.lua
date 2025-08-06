@@ -204,7 +204,7 @@ function EquipManager:OnReqEquipSaveReOverload(iEquipUid, bSave)
 end
 
 function EquipManager:OnReqSaveReOverloadSC(stData, msg)
-  self:broadcastEvent("eGameEvent_SaveReOverload", stData.iEquipUid)
+  self:broadcastEvent("eGameEvent_SaveReOverload", stData)
 end
 
 function EquipManager:GetEquipList()

@@ -704,6 +704,9 @@ function Form_LevelMain:FreshLevelDetailShow()
         self.m_luaDetailLevel:AddEventListeners()
       end)
     else
+      if KeyboardMappingManager then
+        KeyboardMappingManager:SetSubConfigInValid(self:GetFramePrefabName(), SubPanelManager.SubPanelCfg.LevelDetailSubPanel and SubPanelManager.SubPanelCfg.LevelDetailSubPanel.PrefabPath or "", self.m_luaDetailLevel, true, false)
+      end
       self.m_luaDetailLevel:FreshData({
         levelType = LevelManager.LevelType.MainLevel,
         levelSubType = self.m_curShowLevelSubType,
@@ -1218,6 +1221,9 @@ function Form_LevelMain:OnHardChapterItemClick(itemIndex)
 end
 
 function Form_LevelMain:OnLevelDetailBgClick()
+  if KeyboardMappingManager then
+    KeyboardMappingManager:SetSubConfigInValid(self:GetFramePrefabName(), SubPanelManager.SubPanelCfg.LevelDetailSubPanel and SubPanelManager.SubPanelCfg.LevelDetailSubPanel.PrefabPath or "", nil, nil, true)
+  end
   if self.m_curDetailLevelID then
     local tempLevelID = self.m_curDetailLevelID
     self.m_curDetailLevelID = nil

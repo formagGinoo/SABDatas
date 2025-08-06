@@ -212,28 +212,23 @@ __funcList[26005] = function(extData)
   StackFlow:Push(UIDefines.ID_FORM_SHOP, {sel_shop = 26005})
 end
 __funcList[26006] = function(extData)
-  local openFlag = ShopManager:CheckShopIsOpenByWinId(26006)
+  if not (extData and extData.ex_param) or not extData.ex_param[1] then
+    log.error("QuickOpenFuncUtil:26006 extData is nil")
+    return
+  end
+  local ShopDefineID = {
+    [26006] = UIDefines.ID_FORM_ACTIVITY101LAMIA_SHOP,
+    [26007] = UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP,
+    [26008] = UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP,
+    [26009] = UIDefines.ID_FORM_ACTIVITY105AIONA_SHOP
+  }
+  local iWindowID = tonumber(extData.ex_param[1])
+  local openFlag = ShopManager:CheckShopIsOpenByWinId(iWindowID)
   if not openFlag then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
     return
   end
-  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY101LAMIA_SHOP, {sel_shop = 26006})
-end
-__funcList[26007] = function(extData)
-  local openFlag = ShopManager:CheckShopIsOpenByWinId(26007)
-  if not openFlag then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
-    return
-  end
-  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP, {sel_shop = 26007})
-end
-__funcList[26008] = function(extData)
-  local openFlag = ShopManager:CheckShopIsOpenByWinId(26008)
-  if not openFlag then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
-    return
-  end
-  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP, {sel_shop = 26008})
+  StackFlow:Push(ShopDefineID[iWindowID], {sel_shop = iWindowID})
 end
 __funcList[27001] = function(extData)
   StackPopup:Push(UIDefines.ID_FORM_GUILDSIGN)
@@ -332,7 +327,9 @@ __funcList[30001] = function(extData)
   if uiInfo and uiInfo.m_csui and uiInfo:IsActive() then
     uiInfo:ChooseActivityByID(tonumber(extData.activityId))
   else
-    StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, tonumber(extData.activityId))
+    StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, {
+      activityId = tonumber(extData.activityId)
+    })
   end
 end
 __funcList[30002] = function(extData)
@@ -512,6 +509,9 @@ __funcList[60010] = function(extData)
   local main_id = extData.ex_param[1] and tonumber(extData.ex_param[1])
   local sub_id = extData.ex_param[2] and tonumber(extData.ex_param[2])
   HeroActivityManager:GotoHeroActivity({main_id = main_id, sub_id = sub_id})
+end
+__funcList[54001] = function(extData)
+  StackFlow:Push(UIDefines.ID_FORM_DOWNLOADPOPUP)
 end
 __funcList[2901] = function(extData)
   if not extData then

@@ -87,8 +87,8 @@ function Form_RankListMain:OnInitLeftRankItem(go, index)
     node_none = transform:Find("m_levelitem_none").gameObject,
     node_lock = transform:Find("m_levelitem_lock").gameObject,
     img_head = transform:Find("m_levelitem_normal/m_levelitem_circle_head/pnl_head_mask/c_img_head"):GetComponent("Image"),
-    txt_name = transform:Find("m_levelitem_normal/m_txt_levelitem_name"):GetComponent("TMPPro"),
-    txt_guildname = transform:Find("m_levelitem_normal/m_txt_levelitem_guildname"):GetComponent("TMPPro"),
+    txt_name = transform:Find("m_levelitem_normal/m_txt_levelitem_name"):GetComponent("Text"),
+    txt_guildname = transform:Find("m_levelitem_normal/m_txt_levelitem_guildname"):GetComponent("Text"),
     cfg = cfg,
     redDot = transform:Find("m_levelitem_redpoint").gameObject,
     aniGo3 = go
@@ -118,8 +118,8 @@ function Form_RankListMain:OnInitRightRankItem(go, index)
     node_none = transform:Find("m_toweritem_none").gameObject,
     node_lock = transform:Find("m_toweritem_lock").gameObject,
     img_head = transform:Find("m_toweritem_normal/m_toweritem_circle_head/pnl_head_mask/c_img_head"):GetComponent("Image"),
-    txt_name = transform:Find("m_toweritem_normal/m_txt_toweritem_name"):GetComponent("TMPPro"),
-    txt_guildname = transform:Find("m_toweritem_normal/m_txt_toweritem_guildname"):GetComponent("TMPPro"),
+    txt_name = transform:Find("m_toweritem_normal/m_txt_toweritem_name"):GetComponent("Text"),
+    txt_guildname = transform:Find("m_toweritem_normal/m_txt_toweritem_guildname"):GetComponent("Text"),
     cfg = cfg,
     redDot = transform:Find("m_toweritem_redpoint").gameObject,
     aniGo4 = go

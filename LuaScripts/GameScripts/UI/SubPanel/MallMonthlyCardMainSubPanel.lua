@@ -66,6 +66,7 @@ function MallMonthlyCardMainSubPanel:RefreshByUserInfo()
     self.m_black_time:SetActive(true)
     self.m_black_valid_time_Text.text = bigCardDays
   end
+  self:OnRefreshGiftPointAll()
 end
 
 function MallMonthlyCardMainSubPanel:OnBtnWhiteRewardClicked()
@@ -133,6 +134,57 @@ function MallMonthlyCardMainSubPanel:OnBuyResult(isSuccess, msg, res)
     else
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, res)
     end
+  end
+end
+
+function MallMonthlyCardMainSubPanel:OnRefreshGiftPointAll()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  self:OnRefreshGiftPoint()
+  self:OnRefreshGiftPoint1()
+end
+
+function MallMonthlyCardMainSubPanel:OnRefreshGiftPoint()
+  local whiteElement = MonthlyCardManager:GetSmallCardCfg()
+  if whiteElement:GetError() or not whiteElement.m_ProductID then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(whiteElement.m_ProductID)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
+end
+
+function MallMonthlyCardMainSubPanel:OnRefreshGiftPoint1()
+  if utils.isNull(self.m_packgift_point1) then
+    return
+  end
+  local blackElement = MonthlyCardManager:GetBigCardCfg()
+  if blackElement:GetError() or not blackElement.m_ProductID then
+    self.m_packgift_point1:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(blackElement.m_ProductID)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point1:SetActive(true)
+    if self.m_paidGiftPoint1 then
+      self.m_paidGiftPoint1:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint1 = self:createPackGiftPoint(self.m_packgift_point1, pointParams)
+    end
+  else
+    self.m_packgift_point1:SetActive(false)
   end
 end
 

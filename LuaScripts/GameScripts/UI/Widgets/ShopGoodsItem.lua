@@ -52,8 +52,9 @@ function ShopGoodsItem:SetItemInfo(itemData)
     self.m_sold_out_obj:SetActive(soldOut)
     self.m_shop_root_obj:SetActive(not soldOut)
     self.m_txt_shopitem_name.text = processData.name
-    self.m_txt_shopitem_remain.text = string.format(ConfigManager:GetCommonTextById(20047), goodCfg.m_ItemQuantity - iBought, goodCfg.m_ItemQuantity)
-    self.m_tag_obj:SetActive(goodCfg.m_Recommend > 0 and not soldOut)
+    local totalNum = ShopManager:GetCurInStockNum(iShopId, groupId, goodsId) or 0
+    self.m_txt_shopitem_remain.text = string.format(ConfigManager:GetCommonTextById(20047), totalNum - iBought, totalNum)
+    self.m_tag_obj:SetActive(0 < goodCfg.m_Recommend and not soldOut)
     local currency = utils.changeCSArrayToLuaTable(goodCfg.m_Currency) or {}
     local originalPrice = currency[2]
     local finalPrice = currency[3]

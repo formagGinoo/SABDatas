@@ -4,16 +4,18 @@ local iMaxCount = 4
 local DefaultShowSpineName = ConfigManager:GetGlobalSettingsByKey("FirstChargeHeroShow") or "Hippocratic_Base"
 
 function FirstRechargeActivitySubPanel:OnInit()
-  self:AddEventListeners()
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
 end
 
 function FirstRechargeActivitySubPanel:OnInActive()
+  self:RemoveAllEventListeners()
   self:CheckRecycleSpine(true)
 end
 
 function FirstRechargeActivitySubPanel:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self.m_stActivity = self.m_panelData.activity
   local clientCfg = self.m_stActivity:GetClientCfg()
   local iRedQuestId = clientCfg.iRedQuestId

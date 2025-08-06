@@ -43,7 +43,7 @@ function GuildNewsSubPanel:updateScrollViewCell(index, cell_object, cell_data)
     local time = TimeUtil:TimerToString2(cell_data.iTime)
     LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "txt_days", time)
   end
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "txt_news", self:GetGuildNewsByType(cell_data))
+  LuaBehaviourUtil.setText(luaBehaviour, "txt_news", self:GetGuildNewsByType(cell_data))
 end
 
 function GuildNewsSubPanel:GetGuildNewsByType(cell_data)

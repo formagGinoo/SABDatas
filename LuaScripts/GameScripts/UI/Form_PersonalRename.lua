@@ -5,10 +5,10 @@ end
 
 function Form_PersonalRename:AfterInit()
   self.super.AfterInit(self)
-  self.m_inputfield_TMP_InputField.onEndEdit:AddListener(function()
+  self.m_inputfield_InputField.onEndEdit:AddListener(function()
     self:CheckNameDuplication()
   end)
-  self.m_inputfield_TMP_InputField.onValueChanged:AddListener(function()
+  self.m_inputfield_InputField.onValueChanged:AddListener(function()
     self:ResetTips()
   end)
 end
@@ -18,7 +18,7 @@ function Form_PersonalRename:OnActive()
   self.m_canChangeName = false
   self.m_needItemId = nil
   self:AddEventListeners()
-  self.m_inputfield_TMP_InputField.text = ""
+  self.m_inputfield_InputField.text = ""
   self:RefreshUI()
   self.guideReName = self.m_csui.m_param
   RoleManager:ReqGetRandomNameFirst()
@@ -80,7 +80,7 @@ function Form_PersonalRename:RefreshUI()
 end
 
 function Form_PersonalRename:RefreshRandomName(nameStr)
-  self.m_inputfield_TMP_InputField.text = tostring(nameStr)
+  self.m_inputfield_InputField.text = tostring(nameStr)
 end
 
 function Form_PersonalRename:ChangeRandomNameTips(flag)
@@ -89,18 +89,17 @@ function Form_PersonalRename:ChangeRandomNameTips(flag)
 end
 
 function Form_PersonalRename:OnBtnrenameClicked()
-  local nameStr = self.m_inputfield_TMP_InputField.text
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+  end
+  local nameStr = self.m_inputfield_InputField.text
   if nameStr ~= "" then
     self.guideReName = false
     if not self.m_canChangeName and self.m_needItemId then
       local itemCfg = ItemManager:GetItemConfigById(self.m_needItemId)
       local str = ConfigManager:GetCommonTextById(20026)
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, string.format(str, tostring(itemCfg.m_mItemName)))
-      return
-    end
-    local bDirty = DirtyCharManager:FilterString(nameStr)
-    if bDirty then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30013)
       return
     end
     local spacing = string.checkFirstCharIsSpacing(nameStr)
@@ -111,6 +110,9 @@ function Form_PersonalRename:OnBtnrenameClicked()
     local isdigit = string.isdigit(nameStr)
     if isdigit then
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30018)
+      return
+    end
+    if isInLimitTime == true then
       return
     end
     RoleManager:ReqRoleSetName(string.trim(nameStr))
@@ -150,6 +152,11 @@ function Form_PersonalRename:SetRoleName()
 end
 
 function Form_PersonalRename:OnRandobtnClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   RoleManager:ReqGetRandomName()
 end
 
@@ -158,9 +165,15 @@ function Form_PersonalRename:OnBtnReturnClicked()
 end
 
 function Form_PersonalRename:CheckNameDuplication()
-  if self.m_inputfield_TMP_InputField.text ~= "" then
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    self.m_inputfield_InputField.text = ""
+    return
+  end
+  if self.m_inputfield_InputField.text ~= "" then
     self:CheckStrIsCorrect()
-    RoleManager:ReqVerifyNameIsOnly(self.m_inputfield_TMP_InputField.text)
+    RoleManager:ReqVerifyNameIsOnly(self.m_inputfield_InputField.text)
   end
 end
 
@@ -174,10 +187,10 @@ function Form_PersonalRename:SetNameNotOnly()
 end
 
 function Form_PersonalRename:CheckStrIsCorrect()
-  local text = self.m_inputfield_TMP_InputField.text
+  local text = self.m_inputfield_InputField.text
   if text ~= "" then
     local str = string.GetTextualNorms(text)
-    self.m_inputfield_TMP_InputField.text = str
+    self.m_inputfield_InputField.text = str
   end
 end
 

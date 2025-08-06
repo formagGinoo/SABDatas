@@ -6,12 +6,12 @@ end
 function Form_LoginDownloadTips:AfterInit()
   self.super.AfterInit(self)
   self.m_sForceTitle = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsForce")
-  self.m_btn_upgrade_force.transform:Find("txt02"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownload")
+  self.m_btn_upgrade_force.transform:Find("txt02"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownload")
   self.m_sNormalNecessaryTitle = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsNecessaryNormal")
-  self.m_btn_necessary_normal.transform:Find("txt_black_necessary_normal"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownloadNecessary")
+  self.m_btn_necessary_normal.transform:Find("txt_black_necessary_normal"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownloadNecessary")
   self.m_sNormalAllTitle = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsAllNormal")
-  self.m_btn_later_normal.transform:Find("txt_black_later_normal"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsLater")
-  self.m_btn_upgrade_right_normal.transform:Find("txt"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownload")
+  self.m_btn_later_normal.transform:Find("txt_black_later_normal"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsLater")
+  self.m_btn_upgrade_right_normal.transform:Find("txt"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsDownload")
   self.m_sAutoConfirmText = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsCountDown")
   self.m_sTipsCommon03 = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsSpaceDesc")
   self.m_z_txt_tips_common04_Text.text = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsMobilePrompt")
@@ -60,9 +60,10 @@ function Form_LoginDownloadTips:OnActive()
 end
 
 function Form_LoginDownloadTips:RefreshDownloadAllInfo()
+  local sCoreResourcePackName, sExpansionResourcePackName = DownloadManager:GetLoginResourcePackName()
   local vPackage = {}
   local vExtraResource = {}
-  local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("CoreResourcePack").m_Value
+  local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sCoreResourcePackName).m_Value
   local vCorePackages = string.split(sPackages, "/")
   for k, v in ipairs(vCorePackages) do
     vPackage[#vPackage + 1] = {
@@ -88,7 +89,7 @@ function Form_LoginDownloadTips:RefreshDownloadAllInfo()
       end
     end
   end
-  sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ExpansionResourcePack").m_Value
+  sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName(sExpansionResourcePackName).m_Value
   local vExpansionPackages = string.split(sPackages, "/")
   for k, v in ipairs(vExpansionPackages) do
     vPackage[#vPackage + 1] = {
@@ -159,10 +160,12 @@ function Form_LoginDownloadTips:RefreshConnectStatus()
     self.m_fAutoConfirmTime = 0
   end
   if self.m_bAutoConfirm then
-    self.m_countDownTxt.gameObject:SetActive(true)
+    if not utils.isNull(self.m_countDownTxt) then
+      self.m_countDownTxt.gameObject:SetActive(true)
+    end
     self.m_z_txt_tips_common04:SetActive(false)
   else
-    if self.m_countDownTxt then
+    if not utils.isNull(self.m_countDownTxt) then
       self.m_countDownTxt.gameObject:SetActive(false)
     end
     self.m_z_txt_tips_common04:SetActive(true)

@@ -118,10 +118,25 @@ function Form_HallDecorateShow:OnLoadSpineBack()
   local spineRootObj = self.m_curHeroSpineObj.spineObj
   UILuaHelper.SpineResetMatParam(spineRootObj)
   UILuaHelper.SetSpineTimeScale(spineRootObj, 1)
-  UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", true, false)
-  if spineRootObj:GetComponent("SpineSkeletonPosControl") then
-    spineRootObj:GetComponent("SpineSkeletonPosControl"):OnResetInit()
+  if self.m_curMainBgData.iType == MainBgType.Fashion then
+    UILuaHelper.SetActive(self.m_btn_back, false)
+    UILuaHelper.SetActive(self.m_btnSkip, true)
+    UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "chuchang2", false, false, function()
+      self:ShowIdleAnim()
+    end)
+  else
+    self:ShowIdleAnim()
   end
+end
+
+function Form_HallDecorateShow:ShowIdleAnim()
+  UILuaHelper.SetActive(self.m_btn_back, true)
+  UILuaHelper.SetActive(self.m_btnSkip, false)
+  if not self.m_curHeroSpineObj then
+    return
+  end
+  local spineRootObj = self.m_curHeroSpineObj.spineObj
+  UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", true, false)
 end
 
 function Form_HallDecorateShow:CheckRecycleBgNode()
@@ -163,6 +178,13 @@ function Form_HallDecorateShow:FreshBgChild()
       UILuaHelper.SetActive(subNode, true)
     end
   end
+end
+
+function Form_HallDecorateShow:OnBtnSkipClicked()
+  if self.m_curHeroSpineObj then
+    UILuaHelper.SpineClearAnimPlayBack(self.m_curHeroSpineObj.spineObj)
+  end
+  self:ShowIdleAnim()
 end
 
 function Form_HallDecorateShow:OnBackClk()

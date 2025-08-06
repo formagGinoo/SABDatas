@@ -15,6 +15,7 @@ RedDotDefine.ModuleType = {
   HeroFashion = "HeroFashion",
   HeroAttractEntry = "HeroAttractEntry",
   MailEntry = "MailEntry",
+  CollectMailEntry = "CollectMailEntry",
   MailHaveRec = "MailHaveRec",
   MainItem = "MailItem",
   MainItemCanRec = "MainItemCanRec",
@@ -50,6 +51,7 @@ RedDotDefine.ModuleType = {
   HeroActClueItemCanRec = "HeroActClueItemCanRec",
   HeroActMiniGameEntry = "HeroActMiniGameEntry",
   HeroActMiniGameTask = "HeroActMiniGameTask",
+  HeroActMiniGamePuzzleEntry = "HeroActMiniGamePuzzleEntry",
   CastleStatueRewardEntry = "CastleStatueRewardEntry",
   CastleStatueReward = "CastleStatueReward",
   MainExploreEntry = "MainExploreEntry",
@@ -276,6 +278,13 @@ RedDotDefine.ModuleDetail = {
     getCountFunName = "IsHeroFashionHaveRedDot"
   },
   [ModuleType.MailEntry] = {
+    parent = nil,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
+  [ModuleType.CollectMailEntry] = {
     parent = nil,
     eventNameList = nil,
     isParamRedDot = false,
@@ -550,7 +559,7 @@ RedDotDefine.ModuleDetail = {
     parent = nil,
     eventNameList = {
       "eGameEvent_Level_Lamia_DailyReset",
-      "eGameEvent_ActMemory_MemoryFinish",
+      "eGameEvent_ActMinigame_Finish",
       "eGameEvent_Item_SetItem"
     },
     isParamRedDot = true,
@@ -579,7 +588,7 @@ RedDotDefine.ModuleDetail = {
     parent = nil,
     eventNameList = {
       "eGameEvent_ActTask_GetReward",
-      "eGameEvent_ActMemory_MemoryFinish"
+      "eGameEvent_ActMinigame_Finish"
     },
     isParamRedDot = true,
     managerName = "HeroActivityManager",
@@ -593,6 +602,16 @@ RedDotDefine.ModuleDetail = {
     isParamRedDot = true,
     managerName = "HeroActivityManager",
     getCountFunName = "CheckHaveFinishWhackMoleTask"
+  },
+  [ModuleType.HeroActMiniGamePuzzleEntry] = {
+    parent = nil,
+    eventNameList = {
+      "eGameEvent_ActMinigame_Finish",
+      "eGameEvent_ActMinigame_GetReward"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsHeroActMiniGamePuzzleEntryHaveRedDot"
   },
   [ModuleType.CastleStatueRewardEntry] = {
     parent = ModuleType.CastleEntry,
@@ -840,7 +859,8 @@ RedDotDefine.ModuleDetail = {
       "eGameEvent_Ancient_TakeQuestAward",
       "eGameEvent_Ancient_ChangeHero",
       "eGameEvent_Ancient_AddEnergy",
-      "eGameEvent_Ancient_SummonHero"
+      "eGameEvent_Ancient_SummonHero",
+      "eGameEvent_Alliance_GetApplyList_RedPoint"
     },
     isParamRedDot = true,
     managerName = "GuildManager",

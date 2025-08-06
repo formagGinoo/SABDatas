@@ -229,7 +229,7 @@ function Form_ActExploreMain:OnStartDrag(pointerEventData)
 end
 
 function Form_ActExploreMain:OnScreenDrag(pointerEventData)
-  if self.world ~= nil then
+  if self.world ~= nil and self.startDragPosition ~= nil then
     local isHit, hitPoint = CS.UI.UILuaHelper.RayCastScreenPointToPlane(pointerEventData.position, CS.UnityEngine.Vector3.up, 0)
     if isHit then
       local offsetX = hitPoint.x - self.startDragPosition.x

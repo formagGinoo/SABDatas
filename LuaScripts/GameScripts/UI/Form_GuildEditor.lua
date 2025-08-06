@@ -155,10 +155,20 @@ function Form_GuildEditor:OnBtnchangelogoClicked()
 end
 
 function Form_GuildEditor:OnBtnnamenoticeeditorClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_GUILDNOTICECHANGE, {openType = 2})
 end
 
 function Form_GuildEditor:OnBtnnameeditorClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_GUILDNAMECHANGE)
 end
 

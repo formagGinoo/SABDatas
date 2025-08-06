@@ -103,7 +103,7 @@ function Form_GuildManagePop:updateScrollViewCell(index, cell_object, cell_data)
   local transform = cell_object.transform
   local luaBehaviour = UIUtil.findLuaBehaviour(transform)
   local c_circle_head = luaBehaviour:FindGameObject("c_circle_head")
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_player_name", cell_data.sRoleName)
+  LuaBehaviourUtil.setText(luaBehaviour, "c_txt_player_name", cell_data.sRoleName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_power", tostring(cell_data.iPower))
   local playerHeadCom = self:createPlayerHead(c_circle_head)
   playerHeadCom:SetPlayerHeadInfo(cell_data)

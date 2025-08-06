@@ -70,6 +70,7 @@ end
 function FashionStoreSubPanel:ChooseGoods()
   self:RefreshShopItem()
   self:RefreshSpine()
+  self:OnRefreshGiftPoint()
 end
 
 function FashionStoreSubPanel:RefreshShopItem()
@@ -197,7 +198,7 @@ function FashionStoreSubPanel:refreshLoopScroll()
       end,
       click_func = function(index, cell_object, cell_data, click_object, click_name)
         if click_name == "cell_" .. index and cell_data and cell_data.skinCfg then
-          CS.GlobalManager.Instance:TriggerWwiseBGMState(62)
+          CS.GlobalManager.Instance:TriggerWwiseBGMState(21)
           local refreshRedDot = false
           if LocalDataManager:GetIntSimple("Red_Point_FashionStore_" .. tostring(cell_data.skinCfg.m_FashionID) .. tostring(cell_data.index), 0) == 0 then
             LocalDataManager:SetIntSimple("Red_Point_FashionStore_" .. tostring(cell_data.skinCfg.m_FashionID) .. tostring(cell_data.index), 1)
@@ -383,6 +384,29 @@ function FashionStoreSubPanel:SetToBeReleasedCommodityRefresh()
         end)
       end
     end
+  end
+end
+
+function FashionStoreSubPanel:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  local data = self.m_shopData[self.m_selTabIndex]
+  if not (data and data.goodsCfg) or not data.goodsCfg.sProductId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(data.goodsCfg.sProductId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
   end
 end
 

@@ -34,17 +34,22 @@ local function build_signature_string(params)
 end
 
 function QSDKWindowsClient:Initialize(successCB)
-  self.m_openid = "XGWNhT"
-  self.m_openKey = "M8gE3h5hhAEAk7wURMPNmIde5bV1YdUL"
-  self.m_productCode = "47307270774782153075014942885550"
   self.m_successUrl = "http://47.101.215.195:8095/loginSuccess"
   self.m_cancelUrl = "http://47.101.215.195:8095/loginCancel"
   self.m_paySuccessUrl = "http://47.101.215.195:8095/paySuccess"
   self.m_payCancelUrl = "http://47.101.215.195:8095/payCancel"
   self.m_payCheckoutUrl = "payStatusCheck/stop"
+  self.m_logoutUrl = "PCEvent_logoutTheGame"
+  self.m_changeAccountUrl = "PCEvent_changeAccount"
   if self:IsSandBox() then
+    self.m_openid = "XGWNhT"
+    self.m_openKey = "M8gE3h5hhAEAk7wURMPNmIde5bV1YdUL"
+    self.m_productCode = "47307270774782153075014942885550"
     self.m_baseUrl = "http://sdkapi.sandbox.yyf.moontonapp.com"
   else
+    self.m_openid = "UHina0"
+    self.m_openKey = "7Kx4RRSLbMLf5rWpLs4PvjUxePfwcpxk"
+    self.m_productCode = "21149258986031525117919940602125"
     self.m_baseUrl = "http://sdkapi.yyf.muyinetwork.com"
   end
   if successCB then
@@ -60,7 +65,7 @@ function QSDKWindowsClient:GenerateSign(params, openKey)
 end
 
 function QSDKWindowsClient:IsSandBox()
-  return true
+  return QSDKManager:IsSandBox()
 end
 
 function QSDKWindowsClient:Login(OnLoginSuccessCB, OnLoginFailCB)
@@ -85,7 +90,7 @@ function QSDKWindowsClient:Login(OnLoginSuccessCB, OnLoginFailCB)
     closeFunc = "OnWebVeiwCloseCb",
     urlChangedCb = handler(self, self.OnUrlChangedCb),
     width = 470,
-    height = 475
+    height = 350
   })
 end
 
@@ -125,6 +130,14 @@ function QSDKWindowsClient:OnUrlChangedCb(changedUrl)
       self.m_OnPayCB(-1)
     end
     self:CloseWebView()
+  elseif string.find(changedUrl, self.m_logoutUrl) then
+    log.info("退出登录")
+    CS.ApplicationManager.Instance:ExitGame()
+    self:CloseWebView()
+  elseif string.find(changedUrl, "PCEvent_changeAccount") then
+    log.info("切换账号")
+    CS.ApplicationManager.Instance:ExitGame()
+    self:CloseWebView()
   end
   log.info("QSDKWindowsClient:OnUrlChangedCb:" .. changedUrl)
 end
@@ -162,13 +175,15 @@ function QSDKWindowsClient:ShowUserCenter()
   urlString = urlString .. "?appProduct=" .. self.m_productCode
   urlString = urlString .. "&channelCode=" .. self:GetChannelType()
   urlString = urlString .. "&authToken=" .. self.m_accountInfo.token
+  urlString = urlString .. "&stopClose=0"
   StackPopup:Push(UIDefines.ID_FORM_WEBVIEWFULLSCREEN, {
     url = urlString,
+    enbaleClose = true,
     isShowTop = false,
     closeClass = "QSDKManager",
     closeFunc = "OnWebVeiwCloseCb",
     urlChangedCb = handler(self, self.OnUrlChangedCb),
-    width = 470,
+    width = 720,
     height = 475
   })
 end
@@ -227,8 +242,8 @@ function QSDKWindowsClient:Pay(orderInfo, roleBaseInfo, OnPayCB)
   postParams.extrasParams = orderInfo.extrasParams
   postParams.successUrl = self.m_paySuccessUrl
   postParams.cancelUrl = self.m_payCancelUrl
-  postParams.sign = self:GenerateSign(postParams, self.m_openKey)
   postParams.theme = "novaGame"
+  postParams.sign = self:GenerateSign(postParams, self.m_openKey)
   Util.DoHttpPost(url, postParams, function(isSuccess, message)
     if isSuccess then
       local retTable = json.decode(message)
@@ -250,6 +265,60 @@ function QSDKWindowsClient:Pay(orderInfo, roleBaseInfo, OnPayCB)
       OnPayCB(-2)
     end
     log.info("Pay isSuccess:" .. tostring(isSuccess) .. ", message:" .. tostring(message))
+  end)
+end
+
+function QSDKWindowsClient:LoginWithPhone(phoneNumber, verifyCode, OnSuccessCB, OnFailedCB)
+  local url = self.m_baseUrl .. "/webOpen/loginByPhone"
+  local postParams = {}
+  postParams.openId = self.m_openid
+  postParams.productCode = self.m_productCode
+  postParams.channelCode = self:GetChannelType()
+  postParams.phone = phoneNumber
+  postParams.code = verifyCode
+  postParams.sign = self:GenerateSign(postParams, self.m_openKey)
+  Util.DoHttpPost(url, postParams, function(isSuccess, message)
+    if isSuccess then
+      local retTable = json.decode(message)
+      if retTable.status == true then
+        if OnSuccessCB then
+          OnSuccessCB(retTable.data)
+        end
+      elseif OnFailedCB then
+        OnFailedCB(retTable.message)
+      end
+    elseif OnFailedCB then
+      OnFailedCB()
+    end
+    log.info("LoginWithPhone isSuccess:" .. tostring(isSuccess))
+  end)
+end
+
+function QSDKWindowsClient:GetPhoneVerifyCode(phoneNumber, OnSuccessCB, OnFailedCB)
+  local url = self.m_baseUrl .. "/webOpen/sendCodeByPhone"
+  local postParams = {}
+  postParams.openId = self.m_openid
+  postParams.productCode = self.m_productCode
+  postParams.channelCode = self:GetChannelType()
+  postParams.phone = phoneNumber
+  log.info("phone:" .. phoneNumber)
+  postParams.sendType = 1
+  postParams.sign = self:GenerateSign(postParams, self.m_openKey)
+  Util.DoHttpPost(url, postParams, function(isSuccess, message)
+    if isSuccess then
+      log.info("GetPhoneVerifyCode message:" .. tostring(message))
+      local retTable = json.decode(message)
+      if retTable.status == true then
+        if OnSuccessCB then
+          OnSuccessCB()
+        end
+      elseif OnFailedCB then
+        OnFailedCB(retTable.message)
+      end
+    elseif OnFailedCB then
+      OnFailedCB()
+    end
+    log.info("GetPhoneVerifyCode isSuccess:" .. tostring(isSuccess))
   end)
 end
 

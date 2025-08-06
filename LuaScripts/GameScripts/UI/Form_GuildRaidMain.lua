@@ -10,7 +10,7 @@ local selectBossAnim = "m_pnl_raidmain_right_in"
 function Form_GuildRaidMain:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
-  self.m_widgetBtnBack = self:createBackButton(self.m_common_top_back, handler(self, self.OnBackClk), nil, nil, 1115)
+  self.m_widgetBtnBack = self:createBackButton(self.m_common_top_back, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1115)
   local initGridData = {
     itemClkBackFun = handler(self, self.OnCommonItemClk)
   }
@@ -176,7 +176,7 @@ function Form_GuildRaidMain:RefreshRightUI()
     for i = 1, 2 do
       local id = monsterType[i]
       local cfg = GuildManager:GetMonsterTypeCfgByID(id)
-      self.m_curMonsterTypeTipsList[i] = cfg.m_TipID
+      self.m_curMonsterTypeTipsList[i] = cfg
       CS.UI.UILuaHelper.SetAtlasSprite(self["m_icon_leveltype" .. i .. "_Image"], cfg.m_Icon, nil, nil, true)
     end
     local reward = utils.changeCSArrayToLuaTable(levelCfg.m_ClientMustDrop)[1]
@@ -204,6 +204,16 @@ function Form_GuildRaidMain:RefreshRightUI()
     else
       self.m_txt_levellock_Text.text = ""
       self.m_txt_levellocklock_Text.text = ""
+    end
+    local effectId = levelCfg.m_BattleGlobalEffectID
+    if effectId and effectId ~= 0 then
+      UILuaHelper.SetActive(self.m_btn_leveltype3, true)
+      local effectCfg = HuntingRaidManager:GetBattleGlobalEffectCfgById(effectId)
+      if effectCfg then
+        UILuaHelper.SetAtlasSprite(self.m_icon_leveltype3_Image, effectCfg.m_Icon)
+      end
+    else
+      UILuaHelper.SetActive(self.m_btn_leveltype3, false)
     end
   end
   local isOpen = GuildManager:CheckGuildBossIsOpen()
@@ -257,6 +267,9 @@ end
 function Form_GuildRaidMain:OnBossItemClk(index, go, notRes)
   local fjItemIndex = index + 1
   if not fjItemIndex then
+    return
+  end
+  if self.m_selItemIndex == fjItemIndex then
     return
   end
   UILuaHelper.PlayAnimationByName(self.m_rootTrans, selectBossAnim)
@@ -317,17 +330,36 @@ end
 
 function Form_GuildRaidMain:OnBtnleveltype1Clicked()
   if self.m_curMonsterTypeTipsList and self.m_curMonsterTypeTipsList[1] then
-    utils.popUpDirectionsUI({
-      tipsID = self.m_curMonsterTypeTipsList[1]
+    StackPopup:Push(UIDefines.ID_FORM_GUILDRAIDTIP, {
+      cfg = self.m_curMonsterTypeTipsList[1],
+      click_transform = self.m_btn_leveltype1.transform,
+      rootTrans = self.m_rootTrans
     })
   end
 end
 
 function Form_GuildRaidMain:OnBtnleveltype2Clicked()
   if self.m_curMonsterTypeTipsList and self.m_curMonsterTypeTipsList[2] then
-    utils.popUpDirectionsUI({
-      tipsID = self.m_curMonsterTypeTipsList[2]
+    StackPopup:Push(UIDefines.ID_FORM_GUILDRAIDTIP, {
+      cfg = self.m_curMonsterTypeTipsList[2],
+      click_transform = self.m_btn_leveltype2.transform,
+      rootTrans = self.m_rootTrans
     })
+  end
+end
+
+function Form_GuildRaidMain:OnBtnleveltype3Clicked()
+  local bossData = self.m_guildBossInfoList[self.m_selItemIndex]
+  if bossData then
+    local levelCfg = bossData.levelCfg
+    if levelCfg then
+      local effectId = levelCfg.m_BattleGlobalEffectID
+      StackPopup:Push(UIDefines.ID_FORM_GUILDRAIDTIP, {
+        effectId = effectId,
+        click_transform = self.m_btn_leveltype3.transform,
+        rootTrans = self.m_rootTrans
+      })
+    end
   end
 end
 
@@ -518,6 +550,17 @@ end
 function Form_GuildRaidMain:OnBackClk()
   StackFlow:Push(UIDefines.ID_FORM_GUILD)
   self:CloseForm()
+  self:DestroyBigSystemUIImmediately()
+end
+
+function Form_GuildRaidMain:OnBackHome()
+  if BattleFlowManager:IsInBattle() == true then
+    BattleFlowManager:FromBattleToHall()
+  else
+    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
+    GameSceneManager:CheckChangeSceneToMainCity(nil, true)
+  end
+  self:DestroyBigSystemUIImmediately()
 end
 
 function Form_GuildRaidMain:OnDestroy()

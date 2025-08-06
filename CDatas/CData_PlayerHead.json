@@ -12,7 +12,7 @@
       "m_FashionID": null,
       "m_mItemName": "\"Noah Avatar\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked by Default\"",
+      "m_mGetwayDes": "\"The celestial dance of stars whisp\"",
       "m_ItemIcon": "\"Atlas_Role/Noah_Full002\"",
       "m_mHeadDesc": "\"Obtain to unlock Noah avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Noah_Full002\"",
@@ -286,7 +286,7 @@
       "m_ItemIcon": "\"Atlas_Role/Lamia_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Lamia avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Lamia_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300017": {
@@ -484,7 +484,7 @@
       "m_ItemIcon": "\"Atlas_Role/Dalcarlo_Veil002\"",
       "m_mHeadDesc": "\"Obtain to unlock Dalcarlo avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Dalcarlo_Veil002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300028": {
@@ -826,7 +826,7 @@
       "m_ItemIcon": "\"Atlas_Role/Selena_Summer002\"",
       "m_mHeadDesc": "\"Obtain to unlock Jinxed Selena avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Selena_Summer002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300047": {
@@ -844,7 +844,7 @@
       "m_ItemIcon": "\"Atlas_Role/Lorelei_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Lorelei avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Lorelei_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300048": {
@@ -862,7 +862,7 @@
       "m_ItemIcon": "\"Atlas_Role/Bella_Summer_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Fleeting Bella avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Bella_Summer_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300049": {
@@ -880,6 +880,24 @@
       "m_ItemIcon": "\"Atlas_Role/Siegrune_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Sirene avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Siegrune_Base002\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1300050": {
+      "m_bError": null,
+      "m_HeadID": "1300050",
+      "m_mHeadName": "\"Timeless Aiona\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20610",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Timeless Aiona Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Timeless Aiona.\"",
+      "m_ItemIcon": "\"Atlas_Role/Aiona_Covenant002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Timeless Aiona avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Aiona_Covenant002\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1168,7 +1186,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_empusae_final_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Lamia - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_empusae_final_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": null
     },
     "1310017": {
@@ -1366,7 +1384,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_jacinta_base_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Dalcarlo - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_jacinta_base_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": null
     },
     "1310028": {
@@ -1524,7 +1542,7 @@
       "m_FashionID": null,
       "m_mItemName": "\"Avatar: Tris - Spirit Siphon\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked after Tris reaches Spirit Siphon - Tier 3\"",
+      "m_mGetwayDes": "\"Unlocks after Tris reaches Spirit Siphon - Tier 3\"",
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_cross_base_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Tris - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_cross_base_01\"",
@@ -1704,11 +1722,11 @@
       "m_FashionID": null,
       "m_mItemName": "\"Jinxed Selena - Spirit Siphon Avatar\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked after Jinxed Selena reaches Spirit Siphon - Tier 2\"",
+      "m_mGetwayDes": "\"Unlocks after Jinxed Selena reaches Spirit Siphon - Tier 2\"",
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_salina_summer_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Jinxed Selena avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_salina_summer_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310047": {
@@ -1722,11 +1740,11 @@
       "m_FashionID": null,
       "m_mItemName": "\"Lorelei - Spirit Siphon Avatar\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked after Lorelei reaches Spirit Siphon - Tier 3\"",
+      "m_mGetwayDes": "\"Unlocks after Lorelei reaches Spirit Siphon - Tier 3\"",
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_loreley_base_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Lorelei avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_loreley_base_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310048": {
@@ -1740,11 +1758,11 @@
       "m_FashionID": null,
       "m_mItemName": "\"Fleeting Bella - Spirit Siphon Avatar\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked after Fleeting Bella reaches Spirit Siphon - Tier 3\"",
+      "m_mGetwayDes": "\"Unlocks after Fleeting Bella reaches Spirit Siphon - Tier 3\"",
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_bella_summer_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Fleeting Bella avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_bella_summer_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310049": {
@@ -1758,10 +1776,28 @@
       "m_FashionID": null,
       "m_mItemName": "\"Sirene - Spirit Siphon Avatar\"",
       "m_ItemRarity": "3",
-      "m_mGetwayDes": "\"Unlocked after Sirene reaches Spirit Siphon - Tier 3\"",
+      "m_mGetwayDes": "\"Unlocks after Sirene reaches Spirit Siphon - Tier 3\"",
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_siegrune_base_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Sirene avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_siegrune_base_01\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1310050": {
+      "m_bError": null,
+      "m_HeadID": "1310050",
+      "m_mHeadName": "\"Timeless Aiona - Spirit Siphon\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20610",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Timeless Aiona - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after Timeless Aiona reaches Spirit Siphon - Tier 3.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_aorin_ur_01\"",
+      "m_mHeadDesc": "\"Obtain to unlock Timeless Aiona - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_aorin_ur_01\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1780,7 +1816,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320001\"",
       "m_mHeadDesc": "\"Obtain to unlock Midnight Lotus avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320001\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1320002": {
@@ -1798,7 +1834,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320002\"",
       "m_mHeadDesc": "\"Obtain to unlock Pearlescent Dreams avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1320003": {
@@ -1816,6 +1852,42 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320003\"",
       "m_mHeadDesc": "\"Obtain to unlock Paradise Lost avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320003\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1320004": {
+      "m_bError": null,
+      "m_HeadID": "1320004",
+      "m_mHeadName": "\"White Wedding\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6016001",
+      "m_mItemName": "\"White Wedding Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - White Wedding.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320004\"",
+      "m_mHeadDesc": "\"Obtain to unlock White Wedding avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320004\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1320005": {
+      "m_bError": null,
+      "m_HeadID": "1320005",
+      "m_mHeadName": "\"The Oscillating Shadow\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6012001",
+      "m_mItemName": "\"The Oscillating Shadow Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - The Oscillating Shadow.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320005\"",
+      "m_mHeadDesc": "\"Obtain to unlock The Oscillating Shadow avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320005\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1834,6 +1906,24 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1329001\"",
       "m_mHeadDesc": "\"Obtain to unlock The Kindled Flame avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1329001\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1330001": {
+      "m_bError": null,
+      "m_HeadID": "1330001",
+      "m_mHeadName": "\"Cycle of Destruction\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Cycle of Destruction Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Cycle of Destruction Ancestral Pact Stage Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330001\"",
+      "m_mHeadDesc": "\"Obtain to unlock Cycle of Destruction avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330001\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1946,5 +2036,5 @@
       "m_CensorHideType": null
     }
   },
-  "status": "processed_108_items"
+  "status": "processed_113_items"
 }

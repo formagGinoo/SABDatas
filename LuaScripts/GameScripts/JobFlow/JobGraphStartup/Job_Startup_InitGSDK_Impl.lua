@@ -1,7 +1,7 @@
 local Job_Startup_InitGSDK_Impl = {}
 
 function Job_Startup_InitGSDK_Impl.OnInitGSDK(jobNode)
-  if ChannelManager:IsUsingQSDK() or ChannelManager:IsDMMChannel() then
+  if ChannelManager:IsUsingQSDK() or ChannelManager:IsDMMChannel() or ChannelManager:IsWegameChannel() then
     local InitGSDKFlow = require("JobFlow/JobGraphInitGSDK/JobGraphInitGSDK")
     InitGSDKFlow.Instance():Run(function(node, before, after)
       jobNode.UnitProgress = InitGSDKFlow.Instance():GetJobProgress()

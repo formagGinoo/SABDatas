@@ -12,7 +12,13 @@
       "m_ID": "2",
       "m_PlotIDs": "[\"Legacy_Enemy_01_01\",\"Legacy_Enemy_01_02\",\"Legacy_Enemy_01_03\",\"Legacy_Enemy_01_04\"]",
       "m_Duration": "3"
+    },
+    "3": {
+      "m_bError": null,
+      "m_ID": "3",
+      "m_PlotIDs": "[\"Legacy_Enemy_02_01\",\"Legacy_Enemy_02_02\",\"Legacy_Enemy_02_03\"]",
+      "m_Duration": "3"
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_3_items"
 }

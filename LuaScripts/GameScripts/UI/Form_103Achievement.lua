@@ -24,10 +24,18 @@ end
 
 function Form_103Achievement:OnInactive()
   self.super.OnInactive(self)
+  if self.m_timer then
+    TimeService:KillTimer(self.m_timer)
+    self.m_timer = nil
+  end
 end
 
 function Form_103Achievement:OnDestroy()
   self.super.OnDestroy(self)
+  if self.m_timer then
+    TimeService:KillTimer(self.m_timer)
+    self.m_timer = nil
+  end
 end
 
 function Form_103Achievement:AddEventListeners()

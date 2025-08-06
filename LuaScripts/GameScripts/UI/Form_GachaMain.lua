@@ -70,13 +70,31 @@ function Form_GachaMain:OnActive()
   end
 end
 
-function Form_GachaMain:PreLoadUI()
-  StackFlow:TryLoadUI(UIDefines.ID_FORM_GACHASHOW, nil, nil)
+function Form_GachaMain:OnInactive()
+  self.super.OnInactive(self)
+  self.m_selTabObj = nil
+  self.m_gachaData = nil
+  if self.m_csui.m_param.isPlayAudio then
+    self.m_csui.m_param.isPlayAudio = false
+  end
+  if self.m_subPanelData then
+    for i, panelData in pairs(self.m_subPanelData) do
+      if panelData.subPanelLua and panelData.subPanelLua.dispose then
+        panelData.subPanelLua:dispose()
+        panelData.subPanelLua = nil
+      end
+    end
+    self.m_subPanelData = {}
+  end
+  for key, v in pairs(self.timerList or {}) do
+    TimeService:KillTimer(v)
+  end
+  self.timerList = nil
+  self.m_changeTabLockUI = false
 end
 
-function Form_GachaMain:OnFirstGachaVideoPlayFinish()
-  self.m_content_node:SetActive(false)
-  self.m_content_node:SetActive(true)
+function Form_GachaMain:PreLoadUI()
+  StackFlow:TryLoadUI(UIDefines.ID_FORM_GACHASHOW, nil, nil)
 end
 
 function Form_GachaMain:SetChooseTab(windowId)
@@ -100,6 +118,16 @@ function Form_GachaMain:RefreshResourceBar()
   end
 end
 
+function Form_GachaMain:OnUpdate(dt)
+  if self.m_subPanelData then
+    for i, v in ipairs(self.m_subPanelData) do
+      if v.subPanelLua and v.subPanelLua.OnUpdate then
+        v.subPanelLua:OnUpdate(dt)
+      end
+    end
+  end
+end
+
 function Form_GachaMain:AddEventListeners()
   self:addEventListener("eGameEvent_DoGacha", handler(self, self.OnEventGachaResult))
   self:addEventListener("eGameEvent_GetGachaWishHeroList", handler(self, self.OnGetWishHeroList))
@@ -107,10 +135,31 @@ function Form_GachaMain:AddEventListeners()
   self:addEventListener("eGameEvent_GachaFirstVideoFinish", handler(self, self.OnFirstGachaVideoPlayFinish))
   self:addEventListener("eGameEvent_VideoStart", handler(self, self.OnVideoPlayStart))
   self:addEventListener("eGameEvent_Gacha_DailyResetGetData", handler(self, self.OnDailyReset))
+  self:addEventListener("eGameEvent_Gacha_StepGachaGetReward", handler(self, self.OnFreshTab))
 end
 
 function Form_GachaMain:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function Form_GachaMain:OnDailyReset()
+  if self.m_subPanelData then
+    for i, v in ipairs(self.m_subPanelData) do
+      if v.subPanelLua and v.subPanelLua.OnDailyReset then
+        v.subPanelLua:OnDailyReset()
+      end
+    end
+  end
+end
+
+function Form_GachaMain:OnFreshTab(iGachaID)
+  self.m_subPanelData[self.m_curChooseTab].redDot = GachaManager:CheckGachaPoolHaveRedDotById(iGachaID)
+  self:refreshTabLoopScroll()
+end
+
+function Form_GachaMain:OnFirstGachaVideoPlayFinish()
+  self.m_content_node:SetActive(false)
+  self.m_content_node:SetActive(true)
 end
 
 function Form_GachaMain:OnEventGachaResult(gachaData)
@@ -167,26 +216,6 @@ function Form_GachaMain:OnVideoPlayStart(videoName)
   end
 end
 
-function Form_GachaMain:OnDailyReset()
-  if self.m_subPanelData then
-    for i, v in ipairs(self.m_subPanelData) do
-      if v.subPanelLua and v.subPanelLua.OnDailyReset then
-        v.subPanelLua:OnDailyReset()
-      end
-    end
-  end
-end
-
-function Form_GachaMain:OnUpdate(dt)
-  if self.m_subPanelData then
-    for i, v in ipairs(self.m_subPanelData) do
-      if v.subPanelLua and v.subPanelLua.OnUpdate then
-        v.subPanelLua:OnUpdate(dt)
-      end
-    end
-  end
-end
-
 function Form_GachaMain:GeneratedGachaList()
   local gachaAllCfg = GachaIns:GetAll()
   self.m_subPanelData = {}
@@ -211,29 +240,6 @@ function Form_GachaMain:GeneratedGachaList()
   if not self.m_subPanelData[self.m_curChooseTab] then
     self.m_curChooseTab = 1
   end
-end
-
-function Form_GachaMain:OnInactive()
-  self.super.OnInactive(self)
-  self.m_selTabObj = nil
-  self.m_gachaData = nil
-  if self.m_csui.m_param.isPlayAudio then
-    self.m_csui.m_param.isPlayAudio = false
-  end
-  if self.m_subPanelData then
-    for i, panelData in pairs(self.m_subPanelData) do
-      if panelData.subPanelLua and panelData.subPanelLua.dispose then
-        panelData.subPanelLua:dispose()
-        panelData.subPanelLua = nil
-      end
-    end
-    self.m_subPanelData = {}
-  end
-  for key, v in pairs(self.timerList or {}) do
-    TimeService:KillTimer(v)
-  end
-  self.timerList = nil
-  self.m_changeTabLockUI = false
 end
 
 function Form_GachaMain:refreshTabLoopScroll()
@@ -296,8 +302,7 @@ function Form_GachaMain:updateScrollViewCell(index, cell_object, cell_data)
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_bg2", false)
     else
       LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_bg2", true)
-      local MultiColorChange = luaBehaviour:FindGameObject("c_img_bg2"):GetComponent("MultiColorChange")
-      MultiColorChange:SetColorByIndex(config.m_TagType - 1)
+      UILuaHelper.SetColorByMultiIndex(luaBehaviour:FindGameObject("c_img_bg2"), (config.m_TagType + 2) % 3)
     end
   end
   if config.m_EndTime ~= "" then
@@ -386,55 +391,6 @@ function Form_GachaMain:ChangeTab(index, cell_data)
   end
 end
 
-function Form_GachaMain:RefreshWishBtnState()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab] or {}
-  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaWishList)
-  local config = curSubPanelData.config
-  if isOpen and config and config.m_WishListID and config.m_WishListID ~= 0 then
-    self.m_wish_pnl:SetActive(true)
-    local flag, gachaNum = GachaManager:CheckGachaWishListUnlock(config.m_WishListID)
-    self.m_btn_wish_lock:SetActive(not flag)
-    self.m_btn_wish_normal:SetActive(flag)
-    if flag then
-      local iWishRed = LocalDataManager:GetIntSimple("GachaWish" .. config.m_GachaID, 0)
-      UILuaHelper.SetActive(self.m_wish_redpoint, iWishRed == 0)
-    end
-    if not flag and gachaNum then
-      self.m_txt_wish_time_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(100092), gachaNum)
-    end
-    self.m_btn_wish_activate:SetActive(GachaManager:CheckWishHeroIsActivate(config.m_GachaID))
-  else
-    self.m_wish_pnl:SetActive(false)
-  end
-end
-
-function Form_GachaMain:RefreshGachaRedDat(index, cell_data)
-  if cell_data then
-    local config = cell_data.config
-    local isOpen = PlayerPrefs.GetInt("Gacha_" .. tostring(config.m_GachaID), 0)
-    if isOpen ~= 1 then
-      PlayerPrefs.SetInt("Gacha_" .. tostring(config.m_GachaID), 1)
-      PlayerPrefs.Save()
-      self.m_subPanelData[index].redDot = false
-    end
-  end
-end
-
-function Form_GachaMain:SetGachaBg()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
-  if curSubPanelData then
-    local config = curSubPanelData.config
-    ResourceUtil:CreateIconByPath(self.m_img_bg_Image, config.m_BG)
-    for i = 0, self.m_other_effect.transform.childCount - 1 do
-      local child = self.m_other_effect.transform:GetChild(i)
-      child.gameObject:SetActive(false)
-      if child.gameObject.name == curSubPanelData.subPanelName then
-        UILuaHelper.SetActive(child, true)
-      end
-    end
-  end
-end
-
 function Form_GachaMain:RefreshCurTabSubPanelInfo()
   if not self.m_curChooseTab then
     return
@@ -465,6 +421,111 @@ function Form_GachaMain:ChangeGachaTabPanel(index)
         lastSubPanelData.subPanelLua:OnHidePanel()
       end
     end
+  end
+end
+
+function Form_GachaMain:RefreshWishBtnState()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab] or {}
+  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaWishList)
+  local config = curSubPanelData.config
+  if isOpen and config and config.m_WishListID and config.m_WishListID ~= 0 then
+    self.m_wish_pnl:SetActive(true)
+    local flag, gachaNum = GachaManager:CheckGachaWishListUnlock(config.m_WishListID)
+    self.m_btn_wish_lock:SetActive(not flag)
+    self.m_btn_wish_normal:SetActive(flag)
+    if flag then
+      local iWishRed = LocalDataManager:GetIntSimple("GachaWish" .. config.m_GachaID, 0)
+      UILuaHelper.SetActive(self.m_wish_redpoint, iWishRed == 0)
+    end
+    if not flag and gachaNum then
+      self.m_txt_wish_time_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(100092), gachaNum)
+    end
+    self.m_btn_wish_activate:SetActive(GachaManager:CheckWishHeroIsActivate(config.m_GachaID))
+  else
+    self.m_wish_pnl:SetActive(false)
+  end
+end
+
+function Form_GachaMain:OnGetWishHeroList()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
+  if curSubPanelData then
+    local config = curSubPanelData.config
+    LocalDataManager:SetIntSimple("GachaWish" .. config.m_GachaID, 1)
+    UILuaHelper.SetActive(self.m_wish_redpoint, false)
+    StackPopup:Push(UIDefines.ID_FORM_GACHAWISHPOP, {
+      wishListID = config.m_WishListID,
+      gachaID = config.m_GachaID
+    })
+  end
+end
+
+function Form_GachaMain:OnBtnwishnormalClicked()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
+  if curSubPanelData then
+    local config = curSubPanelData.config
+    GachaManager:ReqGachaGetWishList(config.m_GachaID)
+  end
+end
+
+function Form_GachaMain:OnBtnwishlockClicked()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab] or {}
+  local isOpen, tipsId = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaWishList)
+  local config = curSubPanelData.config
+  if isOpen and config and config.m_WishListID and config.m_WishListID ~= 0 then
+    local flag, gachaNum = GachaManager:CheckGachaWishListUnlock(config.m_WishListID)
+    local str = string.gsubNumberReplace(ConfigManager:GetCommonTextById(100092), gachaNum)
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, str)
+  else
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tipsId)
+  end
+end
+
+function Form_GachaMain:OnSaveWishHeroList()
+  self:RefreshWishBtnState()
+end
+
+function Form_GachaMain:RefreshGachaRedDat(index, cell_data)
+  if cell_data then
+    local config = cell_data.config
+    local isOpen = PlayerPrefs.GetInt("Gacha_" .. tostring(config.m_GachaID), 0)
+    if isOpen ~= 1 then
+      PlayerPrefs.SetInt("Gacha_" .. tostring(config.m_GachaID), 1)
+      PlayerPrefs.Save()
+      self.m_subPanelData[index].redDot = false
+    end
+  end
+end
+
+function Form_GachaMain:SetGachaBg()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
+  if curSubPanelData then
+    local config = curSubPanelData.config
+    ResourceUtil:CreateIconByPath(self.m_img_bg_Image, config.m_BG)
+    for i = 0, self.m_other_effect.transform.childCount - 1 do
+      local child = self.m_other_effect.transform:GetChild(i)
+      child.gameObject:SetActive(false)
+      if child.gameObject.name == curSubPanelData.subPanelName then
+        UILuaHelper.SetActive(child, true)
+      end
+    end
+  end
+end
+
+function Form_GachaMain:OnBtnmoreClicked()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
+  if curSubPanelData then
+    local config = curSubPanelData.config
+    StackPopup:Push(UIDefines.ID_FORM_GACHAMOREPOP, {
+      gacha_id = config.m_GachaID
+    })
+  end
+end
+
+function Form_GachaMain:OnBtnshopClicked()
+  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
+  if curSubPanelData then
+    local config = curSubPanelData.config
+    QuickOpenFuncUtil:OpenFunc(config.m_Jump)
   end
 end
 
@@ -509,14 +570,20 @@ function Form_GachaMain:GetDownloadResourceExtra(tParam)
       local sSubPanelName = itemCfg.m_GachaCover
       local vPackageSub, vResourceExtraSub = SubPanelManager:GetSubPanelDownloadResourceExtra(sSubPanelName)
       if vPackageSub ~= nil then
-        for i = 1, #vPackageSub do
-          vPackage[#vPackage + 1] = vPackageSub[i]
+        for m = 1, #vPackageSub do
+          vPackage[#vPackage + 1] = vPackageSub[m]
         end
       end
       if vResourceExtraSub ~= nil then
-        for i = 1, #vResourceExtraSub do
-          vResourceExtra[#vResourceExtra + 1] = vResourceExtraSub[i]
+        for n = 1, #vResourceExtraSub do
+          vResourceExtra[#vResourceExtra + 1] = vResourceExtraSub[n]
         end
+      end
+      if itemCfg.m_Spine and itemCfg.m_Spine ~= "" then
+        vResourceExtra[#vResourceExtra + 1] = {
+          sName = itemCfg.m_Spine,
+          eType = DownloadManager.ResourceType.UI
+        }
       end
     end
   end
@@ -553,62 +620,6 @@ function Form_GachaMain:GetDownloadResourceExtra(tParam)
     }
   end
   return vPackage, vResourceExtra
-end
-
-function Form_GachaMain:OnBtnmoreClicked()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
-  if curSubPanelData then
-    local config = curSubPanelData.config
-    StackPopup:Push(UIDefines.ID_FORM_GACHAMOREPOP, {
-      gacha_id = config.m_GachaID
-    })
-  end
-end
-
-function Form_GachaMain:OnBtnshopClicked()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
-  if curSubPanelData then
-    local config = curSubPanelData.config
-    QuickOpenFuncUtil:OpenFunc(config.m_Jump)
-  end
-end
-
-function Form_GachaMain:OnBtnwishnormalClicked()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
-  if curSubPanelData then
-    local config = curSubPanelData.config
-    GachaManager:ReqGachaGetWishList(config.m_GachaID)
-  end
-end
-
-function Form_GachaMain:OnBtnwishlockClicked()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab] or {}
-  local isOpen, tipsId = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaWishList)
-  local config = curSubPanelData.config
-  if isOpen and config and config.m_WishListID and config.m_WishListID ~= 0 then
-    local flag, gachaNum = GachaManager:CheckGachaWishListUnlock(config.m_WishListID)
-    local str = string.gsubNumberReplace(ConfigManager:GetCommonTextById(100092), gachaNum)
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, str)
-  else
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tipsId)
-  end
-end
-
-function Form_GachaMain:OnGetWishHeroList()
-  local curSubPanelData = self.m_subPanelData[self.m_curChooseTab]
-  if curSubPanelData then
-    local config = curSubPanelData.config
-    LocalDataManager:SetIntSimple("GachaWish" .. config.m_GachaID, 1)
-    UILuaHelper.SetActive(self.m_wish_redpoint, false)
-    StackPopup:Push(UIDefines.ID_FORM_GACHAWISHPOP, {
-      wishListID = config.m_WishListID,
-      gachaID = config.m_GachaID
-    })
-  end
-end
-
-function Form_GachaMain:OnSaveWishHeroList()
-  self:RefreshWishBtnState()
 end
 
 function Form_GachaMain:GetGuideConditionIsOpen(conditionType, conditionParam)

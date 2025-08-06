@@ -94,12 +94,20 @@ function GameOpenGiftSubPanel:PushBuyWindow(idx)
   if buyTimes >= config.iLimitNum and config.iLimitNum > 0 then
     return
   end
+  local isShow, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+  local rewardList = {}
+  for k, v in ipairs(config.vReward) do
+    rewardList[#rewardList + 1] = v
+  end
+  if isShow then
+    rewardList[#rewardList + 1] = pointReward
+  end
   local param = {
     Name = payStoreActivity:getLangText(config.sGoodsName),
     Desc = payStoreActivity:getLangText(config.sGoodsDesc),
     Icon = config.sGoodsPic,
     PriceText = IAPManager:GetProductPrice(config.sProductId, true),
-    Reward = config.vReward,
+    Reward = rewardList,
     ProductInfo = {
       productId = config.sProductId,
       productSubId = config.iProductSubId,
@@ -107,7 +115,7 @@ function GameOpenGiftSubPanel:PushBuyWindow(idx)
       GoodsID = config.iGoodsId,
       iStoreType = MTTDProto.IAPStoreType_ActPayStore,
       GiftPackType = 1,
-      rewardList = config.vReward
+      rewardList = rewardList
     }
   }
   if config.sProductId == "" then

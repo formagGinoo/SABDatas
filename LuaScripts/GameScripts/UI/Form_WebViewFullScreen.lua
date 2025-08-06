@@ -23,11 +23,18 @@ function Form_WebViewFullScreen:OnActive()
   end
   local closeClass = param.closeClass or "ActivityManager"
   local closeFunc = param.closeFunc or "ColseFormWebViewFullScreen"
+  self.m_enbaleClose = param.enbaleClose
   self.tempWebView = GameObject.Instantiate(self.m_webView, self.m_WebViewRoot.transform)
   UILuaHelper.SetActive(self.m_webView, false)
   UILuaHelper.SetActive(self.tempWebView, true)
   self.tempWebView.transform.localPosition = Vector2.zero
   UILuaHelper.SetWebView(self.tempWebView, urlString, param.isShowTop == nil and true or param.isShowTop, returnTxt, titleTxt, closeClass, closeFunc, param.urlChangedCb, param.width or -1, param.height or -1)
+end
+
+function Form_WebViewFullScreen:OnPnlcloseClicked()
+  if self.m_enbaleClose then
+    self:OnCloseWebView()
+  end
 end
 
 function Form_WebViewFullScreen:AddEventListeners()

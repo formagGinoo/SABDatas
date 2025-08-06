@@ -273,7 +273,46 @@
       "m_MovePower": "6",
       "m_AnimationSpeed": "1.5",
       "m_MoveSpeed": "4"
+    },
+    "20611": {
+      "m_bError": null,
+      "m_ID": "20611",
+      "m_mName": "\"Aiona\"",
+      "m_Quality": "2",
+      "m_mInfo": "\"Aiona walks the endless sands, searching for the one true path.\"",
+      "m_Presentation": "20611",
+      "m_Controller": "\"\"",
+      "m_Skill": "[206101]",
+      "m_MovePower": "12",
+      "m_AnimationSpeed": "1.5",
+      "m_MoveSpeed": "4"
+    },
+    "20612": {
+      "m_bError": null,
+      "m_ID": "20612",
+      "m_mName": "\"Aiona\"",
+      "m_Quality": "2",
+      "m_mInfo": "\"Aiona walks the endless sands, searching for the one true path.\"",
+      "m_Presentation": "20611",
+      "m_Controller": "\"\"",
+      "m_Skill": "[206101,206102]",
+      "m_MovePower": "6",
+      "m_AnimationSpeed": "1.5",
+      "m_MoveSpeed": "4"
+    },
+    "20613": {
+      "m_bError": null,
+      "m_ID": "20613",
+      "m_mName": "\"Aiona\"",
+      "m_Quality": "2",
+      "m_mInfo": "\"Aiona walks the endless sands, searching for the one true path.\"",
+      "m_Presentation": "20611",
+      "m_Controller": "\"\"",
+      "m_Skill": "[206103,206104]",
+      "m_MovePower": "8",
+      "m_AnimationSpeed": "1.5",
+      "m_MoveSpeed": "4"
     }
   },
-  "status": "processed_21_items"
+  "status": "processed_24_items"
 }

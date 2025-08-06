@@ -316,7 +316,7 @@ function Form_PvpMain:InitEnemyItem(itemObj, index)
   local node_img_free = itemTrans:Find("m_img_free")
   local node_PvP_money = itemTrans:Find("m_rival_pvpmoney")
   local img_PvP_money_icon = itemTrans:Find("m_rival_pvpmoney/m_icon_rival_pvpmoney"):GetComponent(T_Image)
-  local txt_name = itemTrans:Find("m_txt_rival_name"):GetComponent(T_TextMeshProUGUI)
+  local txt_name = itemTrans:Find("m_txt_rival_name"):GetComponent(T_Text)
   local txt_achievement = itemTrans:Find("icon_rival_achievement/m_txt_rival_achievement"):GetComponent(T_TextMeshProUGUI)
   local fx_fresh = itemTrans:Find("m_enemy_refresh_fx")
   local playerHeadObj = itemTrans:Find("c_circle_head2").gameObject
@@ -429,6 +429,7 @@ function Form_PvpMain:CheckBuyTicket(waitEnemyIndex)
     beforeItemNum = needCostNum,
     afterItemID = PvPNewCoinID,
     afterItemNum = 1,
+    commonTextID = 100096,
     funSure = function()
       if waitEnemyIndex then
         self.m_waitEnemyIndex = waitEnemyIndex

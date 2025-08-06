@@ -28,6 +28,7 @@ end
 function Form_Activity103Luoleilai_Challenge:OnActive()
   self.super.OnActive(self)
   self:AddEventListeners()
+  self.bIsShowArrow = false
   self:FreshData()
   self:FreshUI()
   self.openTime = TimeUtil:GetServerTimeS()
@@ -130,6 +131,7 @@ function Form_Activity103Luoleilai_Challenge:FreshLevelList()
       currentLevelID = tempCfg.m_LevelID
     end
   end
+  self.bIsShowArrow = #showLevelItemList > self.iPerPageLevelNum
   self.m_levelDataList = showLevelItemList
   self.m_currentLevelID = currentLevelID
   self.iCurPage = math.ceil(iCurIdx / self.iPerPageLevelNum)
@@ -171,8 +173,8 @@ end
 function Form_Activity103Luoleilai_Challenge:FreshCurPage()
   self.m_level_list1:SetActive(self.iCurPage == 1)
   self.m_level_list2:SetActive(self.iCurPage == 2)
-  self.m_btn_arrorl:SetActive(self.iCurPage > 1)
-  self.m_btn_arrorr:SetActive(self.iCurPage < self.iMaxPage)
+  self.m_btn_arrorl:SetActive(self.iCurPage > 1 and self.bIsShowArrow)
+  self.m_btn_arrorr:SetActive(self.iCurPage < self.iMaxPage and self.bIsShowArrow)
 end
 
 function Form_Activity103Luoleilai_Challenge:FreshLevelDetailShow(forceHide)

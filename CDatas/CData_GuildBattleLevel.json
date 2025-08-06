@@ -12,7 +12,8 @@
       "m_BossLevel": "60",
       "m_HeroModify": null,
       "m_MainTargetID": "[32300]",
-      "m_ClientMustDrop": "[[1060,40]]"
+      "m_ClientMustDrop": "[[1060,40]]",
+      "m_BattleGlobalEffectID": null
     },
     "5101020": {
       "m_bError": null,
@@ -25,7 +26,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[32300]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": null
     },
     "5101030": {
       "m_bError": null,
@@ -38,7 +40,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[32300]",
-      "m_ClientMustDrop": "[[1060,60]]"
+      "m_ClientMustDrop": "[[1060,60]]",
+      "m_BattleGlobalEffectID": null
     },
     "5101040": {
       "m_bError": null,
@@ -51,7 +54,8 @@
       "m_BossLevel": "120",
       "m_HeroModify": null,
       "m_MainTargetID": "[32300]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": null
     },
     "5101050": {
       "m_bError": null,
@@ -64,7 +68,8 @@
       "m_BossLevel": "140",
       "m_HeroModify": null,
       "m_MainTargetID": "[32300]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": null
     },
     "5102010": {
       "m_bError": null,
@@ -77,7 +82,8 @@
       "m_BossLevel": "60",
       "m_HeroModify": null,
       "m_MainTargetID": "[32301]",
-      "m_ClientMustDrop": "[[1060,40]]"
+      "m_ClientMustDrop": "[[1060,40]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5102020": {
       "m_bError": null,
@@ -90,7 +96,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[32301]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5102030": {
       "m_bError": null,
@@ -103,7 +110,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[32301]",
-      "m_ClientMustDrop": "[[1060,60]]"
+      "m_ClientMustDrop": "[[1060,60]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5102040": {
       "m_bError": null,
@@ -116,7 +124,8 @@
       "m_BossLevel": "120",
       "m_HeroModify": null,
       "m_MainTargetID": "[32301]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5102050": {
       "m_bError": null,
@@ -129,7 +138,8 @@
       "m_BossLevel": "140",
       "m_HeroModify": null,
       "m_MainTargetID": "[32301]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5103010": {
       "m_bError": null,
@@ -142,7 +152,8 @@
       "m_BossLevel": "60",
       "m_HeroModify": null,
       "m_MainTargetID": "[32302]",
-      "m_ClientMustDrop": "[[1060,40]]"
+      "m_ClientMustDrop": "[[1060,40]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5103020": {
       "m_bError": null,
@@ -155,7 +166,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[32302]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5103030": {
       "m_bError": null,
@@ -168,7 +180,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[32302]",
-      "m_ClientMustDrop": "[[1060,60]]"
+      "m_ClientMustDrop": "[[1060,60]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5103040": {
       "m_bError": null,
@@ -181,7 +194,8 @@
       "m_BossLevel": "120",
       "m_HeroModify": null,
       "m_MainTargetID": "[32302]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5103050": {
       "m_bError": null,
@@ -194,7 +208,8 @@
       "m_BossLevel": "140",
       "m_HeroModify": null,
       "m_MainTargetID": "[32302]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5104010": {
       "m_bError": null,
@@ -207,7 +222,8 @@
       "m_BossLevel": "60",
       "m_HeroModify": null,
       "m_MainTargetID": "[30320]",
-      "m_ClientMustDrop": "[[1060,40]]"
+      "m_ClientMustDrop": "[[1060,40]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5104020": {
       "m_bError": null,
@@ -220,7 +236,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[30320]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5104030": {
       "m_bError": null,
@@ -233,7 +250,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[30320]",
-      "m_ClientMustDrop": "[[1060,60]]"
+      "m_ClientMustDrop": "[[1060,60]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5104040": {
       "m_bError": null,
@@ -246,7 +264,8 @@
       "m_BossLevel": "120",
       "m_HeroModify": null,
       "m_MainTargetID": "[30320]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5104050": {
       "m_bError": null,
@@ -259,7 +278,8 @@
       "m_BossLevel": "140",
       "m_HeroModify": null,
       "m_MainTargetID": "[30320]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5105010": {
       "m_bError": null,
@@ -272,7 +292,8 @@
       "m_BossLevel": "60",
       "m_HeroModify": null,
       "m_MainTargetID": "[32010]",
-      "m_ClientMustDrop": "[[1060,40]]"
+      "m_ClientMustDrop": "[[1060,40]]",
+      "m_BattleGlobalEffectID": "1001001"
     },
     "5105020": {
       "m_bError": null,
@@ -285,7 +306,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[32010]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5105030": {
       "m_bError": null,
@@ -298,7 +320,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[32010]",
-      "m_ClientMustDrop": "[[1060,60]]"
+      "m_ClientMustDrop": "[[1060,60]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5105040": {
       "m_bError": null,
@@ -311,7 +334,8 @@
       "m_BossLevel": "120",
       "m_HeroModify": null,
       "m_MainTargetID": "[32010]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5105050": {
       "m_bError": null,
@@ -324,7 +348,8 @@
       "m_BossLevel": "140",
       "m_HeroModify": null,
       "m_MainTargetID": "[32010]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5201010": {
       "m_bError": null,
@@ -337,7 +362,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[30256]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5201020": {
       "m_bError": null,
@@ -350,7 +376,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[30256]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5201030": {
       "m_bError": null,
@@ -363,7 +390,8 @@
       "m_BossLevel": "130",
       "m_HeroModify": null,
       "m_MainTargetID": "[30256]",
-      "m_ClientMustDrop": "[[1060,100]]"
+      "m_ClientMustDrop": "[[1060,100]]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5201040": {
       "m_bError": null,
@@ -376,7 +404,8 @@
       "m_BossLevel": "200",
       "m_HeroModify": "7001",
       "m_MainTargetID": "[30256]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000702"
     },
     "5202010": {
       "m_bError": null,
@@ -389,7 +418,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[31916]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5202020": {
       "m_bError": null,
@@ -402,7 +432,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[31916]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5202030": {
       "m_bError": null,
@@ -415,7 +446,8 @@
       "m_BossLevel": "130",
       "m_HeroModify": null,
       "m_MainTargetID": "[31916]",
-      "m_ClientMustDrop": "[[1060,100]]"
+      "m_ClientMustDrop": "[[1060,100]]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5202040": {
       "m_bError": null,
@@ -428,7 +460,8 @@
       "m_BossLevel": "200",
       "m_HeroModify": "7001",
       "m_MainTargetID": "[31916]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000703"
     },
     "5203010": {
       "m_bError": null,
@@ -441,7 +474,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[31925]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5203011": {
       "m_bError": null,
@@ -454,7 +488,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[31925]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5203012": {
       "m_bError": null,
@@ -467,7 +502,8 @@
       "m_BossLevel": "130",
       "m_HeroModify": null,
       "m_MainTargetID": "[31925]",
-      "m_ClientMustDrop": "[[1060,100]]"
+      "m_ClientMustDrop": "[[1060,100]]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5203013": {
       "m_bError": null,
@@ -480,7 +516,8 @@
       "m_BossLevel": "200",
       "m_HeroModify": "7001",
       "m_MainTargetID": "[31925]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1000704"
     },
     "5204010": {
       "m_bError": null,
@@ -493,7 +530,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[30417]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1001001"
     },
     "5204020": {
       "m_bError": null,
@@ -506,7 +544,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[30417]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1001001"
     },
     "5204030": {
       "m_bError": null,
@@ -519,7 +558,8 @@
       "m_BossLevel": "130",
       "m_HeroModify": null,
       "m_MainTargetID": "[30417]",
-      "m_ClientMustDrop": "[[1060,100]]"
+      "m_ClientMustDrop": "[[1060,100]]",
+      "m_BattleGlobalEffectID": "1001001"
     },
     "5204040": {
       "m_bError": null,
@@ -532,7 +572,8 @@
       "m_BossLevel": "200",
       "m_HeroModify": "7001",
       "m_MainTargetID": "[30417]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1001001"
     },
     "5205010": {
       "m_bError": null,
@@ -545,7 +586,8 @@
       "m_BossLevel": "80",
       "m_HeroModify": null,
       "m_MainTargetID": "[30173]",
-      "m_ClientMustDrop": "[[1060,50]]"
+      "m_ClientMustDrop": "[[1060,50]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5205020": {
       "m_bError": null,
@@ -558,7 +600,8 @@
       "m_BossLevel": "100",
       "m_HeroModify": null,
       "m_MainTargetID": "[30173]",
-      "m_ClientMustDrop": "[[1060,70]]"
+      "m_ClientMustDrop": "[[1060,70]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5205030": {
       "m_bError": null,
@@ -571,7 +614,8 @@
       "m_BossLevel": "130",
       "m_HeroModify": null,
       "m_MainTargetID": "[30173]",
-      "m_ClientMustDrop": "[[1060,100]]"
+      "m_ClientMustDrop": "[[1060,100]]",
+      "m_BattleGlobalEffectID": "1001002"
     },
     "5205040": {
       "m_bError": null,
@@ -584,7 +628,8 @@
       "m_BossLevel": "200",
       "m_HeroModify": "7001",
       "m_MainTargetID": "[30173]",
-      "m_ClientMustDrop": "[]"
+      "m_ClientMustDrop": "[]",
+      "m_BattleGlobalEffectID": "1001002"
     }
   },
   "status": "processed_45_items"

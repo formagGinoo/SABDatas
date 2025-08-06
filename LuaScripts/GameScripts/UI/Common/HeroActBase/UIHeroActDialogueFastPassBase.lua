@@ -162,9 +162,15 @@ end
 
 function UIHeroActDialogueFastPassBase:GetCostItemNum()
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    log.error("UIHeroActDialogueFastPassBase:GetCostItemNum error! mainActInfoCfg = " .. tostring(mainActInfoCfg))
+    return 0
+  end
   local costItemID = mainActInfoCfg.m_PassItem
   local costItemNum = ItemManager:GetItemNum(costItemID)
-  return costItemNum
+  local freeItemId = mainActInfoCfg.m_FreePassItem
+  local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
+  return costItemNum + freeitemNum
 end
 
 function UIHeroActDialogueFastPassBase:GetTotalLeftTimes()
@@ -329,6 +335,10 @@ function UIHeroActDialogueFastPassBase:FreshShowCostItemIcon()
     return
   end
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    log.error("UIHeroActDialogueFastPassBase:FreshShowCostItemIcon error! mainActInfoCfg = " .. tostring(mainActInfoCfg))
+    return
+  end
   local costItemID = mainActInfoCfg.m_PassItem
   local iconPath = ItemManager:GetItemIconPathByID(costItemID)
   if iconPath then

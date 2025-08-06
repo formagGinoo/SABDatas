@@ -10,18 +10,6 @@ function Job_InitGSDK_Login_Impl.OnLogin(jobNode)
         local tryLoginDmm
         
         local function OnLoginCallback(result, error)
-          if CS.UnityEngine.Application.isEditor then
-            local info = {
-              viewerId = 115789,
-              onetimeToken = "4ecdd2c47a2fda6ab66e67d1360bf43d",
-              accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOjExMjcsImNvbnN1bWVyX2tleSI6IjdScTd2NWVzWmh5Y0cxSmkiLCJjb25zdW1lcl9zZWNyZXQiOiJEeWJBVGI2YTBmQ0lKNFtWLT81bk0kP3c_d01vdmg5RSIsInZpZXdlcl9pZCI6MTE1Nzg5LCJvbmV0aW1lX3Rva2VuIjoiNGVjZGQyYzQ3YTJmZGE2YWI2NmU2N2QxMzYwYmY0M2QifQ.mk0Y3xGhwh39Q98q4pIYDIEVOggQ_9mqgIe0_-zRljw",
-              openId = "115789",
-              pfAccessToken = "Lr0SevWxnb3UN4VM5oZaGhpAFygdCD6wOKEmJ9Hft1QlXYTPqs8u2IR7kjizcB"
-            }
-            DmmManager:SetAccountInfo(info)
-            jobNode.Status = JobStatus.Success
-            return
-          end
           if not error or error == 0 then
             log.info("DMMSDK OnLoginSuccessCB " .. tostring(result))
             local resultTable = json.decode(result)
@@ -36,13 +24,27 @@ function Job_InitGSDK_Login_Impl.OnLogin(jobNode)
         end
         
         function tryLoginDmm()
-          DmmManager:Login(OnLoginCallback)
+          local status, err = pcall(function()
+            DmmManager:Login(OnLoginCallback)
+          end)
+          if not status then
+            log.error("DmmManager:Login failed: " .. tostring(err))
+            ReportManager:ReportLoginProcess("InitDMMSDK_Login", "Failed_InitError", true)
+            TimeService:SetTimer(1.0, 1, function()
+              tryLoginDmm()
+            end)
+          end
         end
         
         TimeService:SetTimer(0.1, 1, function()
           tryLoginDmm()
         end)
       else
+        local args = CS.Environment.GetCommandLineArgs()
+        for i = 1, #args do
+          CS.UnityEngine.Debug.LogError(args[i])
+        end
+        CS.Debug.LogError("InitDMMSDK_Login failed: " .. tostring(message))
         utils.CheckAndPushCommonTips({
           title = CS.ConfFact.LangFormat4DataInit("CommonError"),
           content = CS.ConfFact.LangFormat4DataInit("InitMSDKAccountInitFail"),
@@ -55,6 +57,44 @@ function Job_InitGSDK_Login_Impl.OnLogin(jobNode)
         })
         jobNode.Status = JobStatus.Failed
       end
+    end)
+  elseif ChannelManager:IsWegameChannel() then
+    ReportManager:ReportLoginProcess("InitWegame_Login", "Start", true)
+    local tryLoginWegame
+    
+    local function OnLoginCallback(response)
+      local resultTable = json.decode(response)
+      if resultTable.result == 0 then
+        log.info("Wegame OnLoginSuccessCB " .. resultTable.session_ticket.ticket)
+        ReportManager:ReportLoginProcess("InitWegame_Login", "Success", true)
+        WegameManager:SetTicket(resultTable.session_ticket.ticket)
+        jobNode.Status = JobStatus.Success
+      else
+        log.info("Wegame OnLoginFailCB: " .. tostring(error))
+        ReportManager:ReportLoginProcess("InitWegame_Login", "Failed_" .. tostring(error), true)
+        tryLoginWegame()
+      end
+    end
+    
+    function tryLoginWegame()
+      if not WegameManager.wegameManager then
+        log.warn("WegameManager not initialized, attempting to initialize...")
+        WegameManager:Initialize()
+      end
+      local status, err = pcall(function()
+        WegameManager:Login(OnLoginCallback)
+      end)
+      if not status then
+        log.error("WegameManager:Login failed: " .. tostring(err))
+        ReportManager:ReportLoginProcess("InitWegame_Login", "Failed_InitError", true)
+        TimeService:SetTimer(1.0, 1, function()
+          tryLoginWegame()
+        end)
+      end
+    end
+    
+    TimeService:SetTimer(0.1, 1, function()
+      tryLoginWegame()
     end)
   else
     ReportManager:ReportLoginProcess("InitQSDK_Login", "Start", true)
@@ -78,7 +118,16 @@ function Job_InitGSDK_Login_Impl.OnLogin(jobNode)
     end
     
     function tryLogin()
-      QSDKManager:Login(OnLoginSuccessCB, OnLoginFailCB)
+      local status, err = pcall(function()
+        QSDKManager:Login(OnLoginSuccessCB, OnLoginFailCB)
+      end)
+      if not status then
+        log.error("QSDKManager:Login failed: " .. tostring(err))
+        ReportManager:ReportLoginProcess("InitQSDK_Login", "Failed_InitError", true)
+        TimeService:SetTimer(1.0, 1, function()
+          tryLogin()
+        end)
+      end
     end
     
     TimeService:SetTimer(0.1, 1, function()

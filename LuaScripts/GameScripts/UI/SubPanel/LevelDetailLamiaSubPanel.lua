@@ -157,7 +157,9 @@ function LevelDetailLamiaSubPanel:GetCostItemNum()
   local mainActInfoCfg = self.m_mainInfoCfg
   local costItemID = mainActInfoCfg.m_PassItem
   local costItemNum = ItemManager:GetItemNum(costItemID)
-  return costItemNum
+  local freeItemId = mainActInfoCfg.m_FreePassItem
+  local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
+  return costItemNum + freeitemNum
 end
 
 function LevelDetailLamiaSubPanel:IsHaveEnoughTimes()
@@ -494,7 +496,7 @@ function LevelDetailLamiaSubPanel:ConfirmJumpShop()
     func1 = function()
       local jumpIns = ConfigManager:GetConfigInsByName("Jump")
       local jump_item = jumpIns:GetValue_ByJumpID(self.m_mainInfoCfg.m_ShopJumpID)
-      local windowId = jump_item.m_WindowID
+      local windowId = jump_item.m_Param.Length > 0 and tonumber(jump_item.m_Param[0]) or 0
       local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
       local shop_id
       for i, v in ipairs(shop_list) do

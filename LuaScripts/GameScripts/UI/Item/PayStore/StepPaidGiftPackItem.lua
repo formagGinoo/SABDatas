@@ -83,7 +83,14 @@ function StepPaidGiftPackItem:OnFreshData()
   self.m_uifx_loop:SetActive(not config.isBlockBuy and not config.m_Sellout)
   self.m_uifx_box_loop:SetActive(not config.isBlockBuy and not config.m_Sellout)
   local itemRoot = self.m_pnl_itemgift.transform
-  self:UpdateChildCount(itemRoot, #config.vReward)
+  local count = #config.vReward
+  local pointRewardIndex = 0
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+  if isShowPoint then
+    count = count + 1
+    pointRewardIndex = count - 1
+  end
+  self:UpdateChildCount(itemRoot, count)
   for i, v in ipairs(config.vReward) do
     local itemObj = itemRoot:GetChild(i - 1).gameObject
     local common_item = self:createCommonItem(itemObj)
@@ -93,6 +100,18 @@ function StepPaidGiftPackItem:OnFreshData()
     local processItemData = ResourceUtil:GetProcessRewardData({
       iID = v.iID,
       iNum = v.iNum
+    })
+    common_item:SetItemInfo(processItemData)
+  end
+  if isShowPoint then
+    local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
+    local common_item = self:createCommonItem(itemObj)
+    common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+      utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+    end)
+    local processItemData = ResourceUtil:GetProcessRewardData({
+      iID = pointReward.iID,
+      iNum = pointReward.iNum
     })
     common_item:SetItemInfo(processItemData)
   end
@@ -131,6 +150,14 @@ function StepPaidGiftPackItem:OnBtnbuyClicked()
   if buyTimes >= config.iLimitNum and config.iLimitNum > 0 then
     return
   end
+  local rewardList = {}
+  for i, v in ipairs(config.vReward) do
+    table.insert(rewardList, v)
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+  if isShowPoint then
+    table.insert(rewardList, pointReward)
+  end
   local ProductInfo = {
     StoreID = config.iStoreId,
     GoodsID = config.iGoodsId,
@@ -141,7 +168,7 @@ function StepPaidGiftPackItem:OnBtnbuyClicked()
     productDesc = payStoreActivity:getLangText(config.sGoodsDesc),
     iActivityId = payStoreActivity:getID(),
     GiftPackType = 1,
-    rewardList = config.vReward
+    rewardList = rewardList
   }
   IAPManager:BuyProductByStoreType(ProductInfo, nil, function(isSuccess, param1, param2)
     if not isSuccess then

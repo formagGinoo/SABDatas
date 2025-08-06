@@ -148,7 +148,7 @@ function HeroFashion:IsHeroFashionHaveRedDot(heroID)
   end
   local fashionInfoList = self:GetFashionInfoListByHeroID(heroID)
   if not fashionInfoList then
-    return
+    return 0
   end
   for i, v in ipairs(fashionInfoList) do
     if self:IsFashionHaveNewFlag(v.m_FashionID) == true then

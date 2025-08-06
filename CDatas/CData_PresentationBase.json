@@ -22,7 +22,7 @@
           "m_bError": null,
           "m_ID": "1",
           "m_Key": "\"L_Hand\"",
-          "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand\""
+          "m_Value": "\"40002,1;40012,1;40022,1is/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand\""
         },
         "\"R_Hand\"": {
           "m_bError": null,
@@ -77,7 +77,7 @@
           "m_bError": null,
           "m_ID": "2",
           "m_Key": "\"Head\"",
-          "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001 Neck/Bip001 Head\""
+          "m_Value": "\"30004Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001 Neck/Bip001 Head\""
         },
         "\"L_Hand\"": {
           "m_bError": null,
@@ -85,10 +85,10 @@
           "m_Key": "\"L_Hand\"",
           "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand\""
         },
-        "\"R_Hand\"": {
+        "\"Blood \"": {
           "m_bError": null,
           "m_ID": "2",
-          "m_Key": "\"R_Hand\"",
+          "m_Key": "\"Blood \"",
           "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
         },
         "\"L_Foot\"": {
@@ -201,11 +201,11 @@
           "m_Key": "\"L_Hand\"",
           "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand\""
         },
-        "\"R_Hand\"": {
+        "\"31026d\"": {
           "m_bError": null,
           "m_ID": "4",
-          "m_Key": "\"R_Hand\"",
-          "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
+          "m_Key": "\"31026d\"",
+          "m_Value": "\"30004Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
         },
         "\"L_Foot\"": {
           "m_bError": null,
@@ -475,10 +475,10 @@
           "m_Key": "\"Root\"",
           "m_Value": "\"root\""
         },
-        "\"Dum_Hit\"": {
+        "\"80005it\"": {
           "m_bError": null,
           "m_ID": "8",
-          "m_Key": "\"Dum_Hit\"",
+          "m_Key": "\"80005it\"",
           "m_Value": "\"root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1\""
         }
       }
@@ -632,7 +632,7 @@
           "m_bError": null,
           "m_ID": "11",
           "m_Key": "\"L_Hand\"",
-          "m_Value": "\"Root/BoneRoot/Bone_Body/Bone_Shengti_01/Bone_Shengti_02/Bone_L_Chushou_01/Bone_L_Chushou_02\""
+          "m_Value": "\"50002:50eRoot/Bone_Body/Bone_Shengti_01/Bone_Shengti_02/Bone_L_Chushou_01/Bone_L_Chushou_02\""
         },
         "\"R_Hand\"": {
           "m_bError": null,
@@ -757,10 +757,10 @@
           "m_Key": "\"L_Foot\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot\""
         },
-        "\"R_Foot\"": {
+        "\"70150t\"": {
           "m_bError": null,
           "m_ID": "14",
-          "m_Key": "\"R_Foot\"",
+          "m_Key": "\"70150t\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001 R Foot\""
         },
         "\"Weapon01\"": {
@@ -812,10 +812,10 @@
           "m_Key": "\"R_Hand\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand\""
         },
-        "\"L_Foot\"": {
+        "\"L_F011\"": {
           "m_bError": null,
           "m_ID": "15",
-          "m_Key": "\"L_Foot\"",
+          "m_Key": "\"L_F011\"",
           "m_Value": "\"Root/Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001 L Foot\""
         },
         "\"R_Foot\"": {

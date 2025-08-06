@@ -12,7 +12,6 @@ local PicPath = {
 }
 
 function OnePicActivitySubPanel:OnInit()
-  self:AddEventListeners()
 end
 
 function OnePicActivitySubPanel:OnFreshData()

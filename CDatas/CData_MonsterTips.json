@@ -392,7 +392,7 @@
       "m_bError": null,
       "m_MonsterID": "30610",
       "m_MonsterType": "2",
-      "m_mIntroduce": "\"The captain of the \"El Dorado.\" Capable of dealing powerful, ranged single-target and AoE DMG. He restores HP for himself when his HP is low.\"",
+      "m_mIntroduce": "\"The Captain of the \"El Dorado.\" Capable of dealing powerful, ranged single-target and AoE DMG. He restores HP for himself when his HP is low.\"",
       "m_MonsterIcon": "\"Atlas_Monster/C_Goldenland_Base001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -784,6 +784,60 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "31230": {
+      "m_bError": null,
+      "m_MonsterID": "31230",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Bloodborn servant that launches a scythe forward to cut through enemies along the path. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Assassin001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31240": {
+      "m_bError": null,
+      "m_MonsterID": "31240",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Bloodborn servant who heals allies after <color=#D63536>channeling</color>. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31250": {
+      "m_bError": null,
+      "m_MonsterID": "31250",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Bloodborn servant who blocks all ATK with the shield bestowed by their master. While <color=#D63536>channeling</color>, resonates with other Bloodborn to increase their DEF. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Shield001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31260": {
+      "m_bError": null,
+      "m_MonsterID": "31260",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A Bloodborn servant who wields a blade to deal DMG to all enemies they face. Keep a loose formation.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31270": {
+      "m_bError": null,
+      "m_MonsterID": "31270",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Part human, part camel. This Blood Beast charges forward into battle. It's recommended to dodge or block their ATK swiftly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Camel_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31280": {
+      "m_bError": null,
+      "m_MonsterID": "31280",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Part human, part camel. This Blood Beast deals continuous DMG in a circle after <color=#D63536>channeling</color>. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Camel_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "31300": {
       "m_bError": null,
       "m_MonsterID": "31300",
@@ -808,6 +862,15 @@
       "m_MonsterType": "1",
       "m_mIntroduce": "\"An incarnation of the Calamity \"Death\", avoid getting too close when it charges up. Below certain HP, it plants a Seed of Calamity that Self-Destructs once charged up, dealing strong DMG to all enemies. Prioritize destroying the seed.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Lord001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31340": {
+      "m_bError": null,
+      "m_MonsterID": "31340",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Part human, part camel. Once an paragon of valor, this Blood Beast still attacks with speed and strength.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Camel_Warrior001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
@@ -943,6 +1006,51 @@
       "m_MonsterType": "1",
       "m_mIntroduce": "\"War Machines cast spells that envelop targets, dealing Continuous DMG.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_WarMachine_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31640": {
+      "m_bError": null,
+      "m_MonsterID": "31640",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The Sand Golem Ringer continuously heals allies after the battle begins. Focus fire on it.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SandMonster_Bell001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31650": {
+      "m_bError": null,
+      "m_MonsterID": "31650",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Sand Golem Cutter's Special deals DMG to all Vassals they face. Keep a loose formation.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SandMonster_Blade001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31660": {
+      "m_bError": null,
+      "m_MonsterID": "31660",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"The Temporal Sand Golem deals strong DMG to the target and inflicts Control effects upon channeling. Interrupt when possible.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_SandMonster_Hourglass001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31670": {
+      "m_bError": null,
+      "m_MonsterID": "31670",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"After Flames of War casts its Ultimate and summons Entropic Flames, Revert time before they explode to make them fly back and deal DMG to Flames of War.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Faust_Desert_Ultimate001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31671": {
+      "m_bError": null,
+      "m_MonsterID": "31671",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Flames of War summons a Phoenix Shade that dives and attacks a random unit. Focus fire on it.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Faust_Desert_Ultimate001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
@@ -1189,6 +1297,15 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "50210": {
+      "m_bError": null,
+      "m_MonsterID": "50210",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Duststorm roams the frozen desert to slow anyone caught within, cutting wounds. It's recommended to avoid it.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Storm_Sand001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "60010": {
       "m_bError": null,
       "m_MonsterID": "60010",
@@ -1235,5 +1352,5 @@
       "m_Video1": "[]"
     }
   },
-  "status": "processed_137_items"
+  "status": "processed_150_items"
 }

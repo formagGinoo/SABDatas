@@ -8,6 +8,7 @@ function UserDataManager:OnCreate()
   self.m_sAccountName = nil
   self.m_sAndroidId = nil
   self.m_bEuropeOpenProtocol = false
+  self.m_LoginToHall = false
 end
 
 function UserDataManager:GetZoneID()
@@ -48,6 +49,14 @@ end
 
 function UserDataManager:SetAccountName(accountNameStr)
   self.m_sAccountName = accountNameStr
+end
+
+function UserDataManager:GetAccountInfo()
+  return self.m_vAccountInfo
+end
+
+function UserDataManager:SetAccountInfo(accountInfo)
+  self.m_vAccountInfo = accountInfo
 end
 
 function UserDataManager:GetLoginGetZoneSC()
@@ -93,6 +102,14 @@ end
 
 function UserDataManager:SetAndroidID(sAndroidId)
   self.m_sAndroidId = sAndroidId
+end
+
+function UserDataManager:GetLoginToHallFlag()
+  return self.m_LoginToHall
+end
+
+function UserDataManager:SetLoginToHallFlag(flag)
+  self.m_LoginToHall = flag
 end
 
 return UserDataManager

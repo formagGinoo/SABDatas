@@ -6,7 +6,13 @@ function StoreQSDK:OnCreate()
 end
 
 function StoreQSDK:RealPay(productId, productSubId, exParam, OnSdkCallback)
+  if ChannelManager:IsTapTapChannel() then
+    CS.Form_Waiting.Show(true)
+  end
   QSDKManager:Pay(productId, productSubId, exParam, self:GetProductPrice(productId, false), function(code, payResult)
+    if ChannelManager:IsTapTapChannel() then
+      CS.Form_Waiting.Hide()
+    end
     if code == 0 then
       OnSdkCallback(true, payResult)
     elseif code == -1 then

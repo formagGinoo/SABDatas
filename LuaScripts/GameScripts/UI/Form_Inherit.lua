@@ -201,9 +201,16 @@ function Form_Inherit:OnLockBtnClk(index, go)
     return
   end
   local vInfo = string.split(INHERIT_SYNC_UNLOCK_COST, ",")
+  local processData = ResourceUtil:GetProcessRewardData({
+    tonumber(vInfo[1]),
+    1
+  })
   utils.ShowCommonTipCost({
     beforeItemID = tonumber(vInfo[1]),
     beforeItemNum = tonumber(vInfo[2]),
+    formatFun = function(sContent)
+      return string.format(sContent, tostring(processData.name), vInfo[2])
+    end,
     confirmCommonTipsID = 1218,
     funSure = function()
       InheritManager:ReqInheritUnlockGrid()

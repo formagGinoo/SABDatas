@@ -2,6 +2,7 @@ local Job_Startup_InitConfig_Impl = {}
 local ConfigManager = _ENV.ConfigManager
 
 function Job_Startup_InitConfig_Impl.OnInitConfig(jobNode)
+  CS.System.Threading.Thread.CurrentThread.CurrentCulture = CS.System.Globalization.CultureInfo.InvariantCulture
   ReportManager:ReportLoginProcess("InitConfig", "Start")
   ConfigManager:InitConfig(function(fUnitProgress)
     jobNode.UnitProgress = fUnitProgress

@@ -48,7 +48,7 @@
           "m_Sort": "3",
           "m_mTitle": "\"Deployment\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
-          "m_VoiceBank": "\"\"Before th\""
+          "m_VoiceBank": "\"Vo_C_20010\""
         },
         "2001007": {
           "m_bError": null,
@@ -112,7 +112,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
@@ -146,7 +146,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001016": {
@@ -156,8 +156,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001017": {
@@ -168,7 +168,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001018": {
@@ -179,7 +179,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001019": {
@@ -190,7 +190,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001020": {
@@ -201,7 +201,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001021": {
@@ -212,7 +212,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001022": {
@@ -223,7 +223,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         }
       }
@@ -339,7 +339,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
@@ -373,7 +373,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002016": {
@@ -383,8 +383,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002017": {
@@ -395,7 +395,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002018": {
@@ -406,7 +406,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002019": {
@@ -417,7 +417,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002020": {
@@ -428,7 +428,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002021": {
@@ -439,7 +439,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002022": {
@@ -450,7 +450,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         }
       }
@@ -566,7 +566,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
@@ -600,7 +600,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003016": {
@@ -610,8 +610,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003017": {
@@ -622,7 +622,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003018": {
@@ -633,7 +633,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003019": {
@@ -644,7 +644,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003020": {
@@ -655,7 +655,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003021": {
@@ -666,7 +666,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003022": {
@@ -677,7 +677,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         }
       }
@@ -793,7 +793,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
@@ -827,7 +827,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004016": {
@@ -837,8 +837,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004017": {
@@ -849,7 +849,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004018": {
@@ -860,7 +860,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004019": {
@@ -871,7 +871,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004020": {
@@ -882,7 +882,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004021": {
@@ -893,7 +893,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004022": {
@@ -904,7 +904,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         }
       }
@@ -1020,7 +1020,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
@@ -1054,7 +1054,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005016": {
@@ -1064,8 +1064,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005017": {
@@ -1076,7 +1076,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005018": {
@@ -1087,7 +1087,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005019": {
@@ -1098,7 +1098,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005020": {
@@ -1109,7 +1109,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005021": {
@@ -1120,7 +1120,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005022": {
@@ -1131,7 +1131,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         }
       }
@@ -1247,7 +1247,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
@@ -1281,7 +1281,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006016": {
@@ -1291,8 +1291,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006017": {
@@ -1303,7 +1303,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006018": {
@@ -1314,7 +1314,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006019": {
@@ -1325,7 +1325,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006020": {
@@ -1336,7 +1336,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006021": {
@@ -1347,7 +1347,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006022": {
@@ -1358,7 +1358,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         }
       }
@@ -1474,7 +1474,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
@@ -1508,7 +1508,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007016": {
@@ -1518,8 +1518,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007017": {
@@ -1530,7 +1530,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007018": {
@@ -1541,7 +1541,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007019": {
@@ -1552,7 +1552,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007020": {
@@ -1563,7 +1563,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007021": {
@@ -1574,7 +1574,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007022": {
@@ -1585,7 +1585,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         }
       }
@@ -1701,7 +1701,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
@@ -1735,7 +1735,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008016": {
@@ -1745,8 +1745,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008017": {
@@ -1757,7 +1757,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008018": {
@@ -1768,7 +1768,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008019": {
@@ -1779,7 +1779,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008020": {
@@ -1790,7 +1790,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008021": {
@@ -1801,7 +1801,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008022": {
@@ -1812,7 +1812,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         }
       }
@@ -1928,7 +1928,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
@@ -1962,7 +1962,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009016": {
@@ -1972,8 +1972,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009017": {
@@ -1984,7 +1984,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009018": {
@@ -1995,7 +1995,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009019": {
@@ -2006,7 +2006,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009020": {
@@ -2017,7 +2017,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009021": {
@@ -2028,7 +2028,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009022": {
@@ -2039,7 +2039,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         }
       }
@@ -2155,7 +2155,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
@@ -2189,7 +2189,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010016": {
@@ -2199,8 +2199,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010017": {
@@ -2211,7 +2211,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010018": {
@@ -2222,7 +2222,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010019": {
@@ -2233,7 +2233,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010020": {
@@ -2244,7 +2244,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010021": {
@@ -2255,7 +2255,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010022": {
@@ -2266,7 +2266,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         }
       }
@@ -2382,7 +2382,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
@@ -2416,7 +2416,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011016": {
@@ -2426,8 +2426,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011017": {
@@ -2438,7 +2438,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011018": {
@@ -2449,7 +2449,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011019": {
@@ -2460,7 +2460,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011020": {
@@ -2471,7 +2471,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011021": {
@@ -2482,7 +2482,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011022": {
@@ -2493,7 +2493,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         }
       }
@@ -2609,7 +2609,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
@@ -2643,7 +2643,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012016": {
@@ -2653,8 +2653,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012017": {
@@ -2665,7 +2665,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012018": {
@@ -2676,7 +2676,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012019": {
@@ -2687,7 +2687,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012020": {
@@ -2698,7 +2698,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012021": {
@@ -2709,7 +2709,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012022": {
@@ -2720,7 +2720,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         }
       }
@@ -2836,7 +2836,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
@@ -2870,7 +2870,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013016": {
@@ -2880,8 +2880,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013017": {
@@ -2892,7 +2892,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013018": {
@@ -2903,7 +2903,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013019": {
@@ -2914,7 +2914,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013020": {
@@ -2925,7 +2925,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013021": {
@@ -2936,7 +2936,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013022": {
@@ -2947,7 +2947,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         }
       }
@@ -3063,7 +3063,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
@@ -3097,7 +3097,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014016": {
@@ -3107,8 +3107,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014017": {
@@ -3119,7 +3119,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014018": {
@@ -3130,7 +3130,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014019": {
@@ -3141,7 +3141,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014020": {
@@ -3152,7 +3152,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014021": {
@@ -3163,7 +3163,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014022": {
@@ -3174,7 +3174,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         }
       }
@@ -3290,7 +3290,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
@@ -3324,7 +3324,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015016": {
@@ -3334,8 +3334,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015017": {
@@ -3346,7 +3346,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015018": {
@@ -3357,7 +3357,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015019": {
@@ -3368,7 +3368,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015020": {
@@ -3379,7 +3379,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015021": {
@@ -3390,7 +3390,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015022": {
@@ -3401,7 +3401,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         }
       }
@@ -3517,7 +3517,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
@@ -3551,7 +3551,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016016": {
@@ -3561,8 +3561,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016017": {
@@ -3573,7 +3573,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016018": {
@@ -3584,7 +3584,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016019": {
@@ -3595,7 +3595,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016020": {
@@ -3606,7 +3606,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016021": {
@@ -3617,7 +3617,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016022": {
@@ -3628,7 +3628,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         }
       }
@@ -3744,7 +3744,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
@@ -3778,7 +3778,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017016": {
@@ -3788,8 +3788,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017017": {
@@ -3800,7 +3800,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017018": {
@@ -3811,7 +3811,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017019": {
@@ -3822,7 +3822,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017020": {
@@ -3833,7 +3833,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017021": {
@@ -3844,7 +3844,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017022": {
@@ -3855,7 +3855,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         }
       }
@@ -3971,7 +3971,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
@@ -4005,7 +4005,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018016": {
@@ -4015,8 +4015,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018017": {
@@ -4027,7 +4027,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018018": {
@@ -4038,7 +4038,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018019": {
@@ -4049,7 +4049,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018020": {
@@ -4060,7 +4060,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018021": {
@@ -4071,7 +4071,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018022": {
@@ -4082,7 +4082,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         }
       }
@@ -4198,7 +4198,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
@@ -4232,7 +4232,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019016": {
@@ -4242,8 +4242,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019017": {
@@ -4254,7 +4254,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019018": {
@@ -4265,7 +4265,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019019": {
@@ -4276,7 +4276,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019020": {
@@ -4287,7 +4287,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019021": {
@@ -4298,7 +4298,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019022": {
@@ -4309,7 +4309,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         }
       }
@@ -4425,7 +4425,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
@@ -4459,7 +4459,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020016": {
@@ -4469,8 +4469,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020017": {
@@ -4481,7 +4481,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020018": {
@@ -4492,7 +4492,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020019": {
@@ -4503,7 +4503,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020020": {
@@ -4514,7 +4514,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020021": {
@@ -4525,7 +4525,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020022": {
@@ -4536,7 +4536,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         }
       }
@@ -4652,7 +4652,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
@@ -4686,7 +4686,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021016": {
@@ -4696,8 +4696,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021017": {
@@ -4708,7 +4708,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021018": {
@@ -4719,7 +4719,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021019": {
@@ -4730,7 +4730,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021020": {
@@ -4741,7 +4741,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021021": {
@@ -4752,7 +4752,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021022": {
@@ -4763,7 +4763,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         }
       }
@@ -4879,7 +4879,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
@@ -4913,7 +4913,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022016": {
@@ -4923,8 +4923,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022017": {
@@ -4935,7 +4935,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022018": {
@@ -4946,7 +4946,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022019": {
@@ -4957,7 +4957,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022020": {
@@ -4968,7 +4968,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022021": {
@@ -4979,7 +4979,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022022": {
@@ -4990,7 +4990,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         }
       }
@@ -5106,7 +5106,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
@@ -5140,7 +5140,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023016": {
@@ -5150,8 +5150,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023017": {
@@ -5162,7 +5162,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023018": {
@@ -5173,7 +5173,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023019": {
@@ -5184,7 +5184,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023020": {
@@ -5195,7 +5195,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023021": {
@@ -5206,7 +5206,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023022": {
@@ -5217,7 +5217,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         }
       }
@@ -5333,7 +5333,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
@@ -5367,7 +5367,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027016": {
@@ -5377,8 +5377,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027017": {
@@ -5389,7 +5389,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027018": {
@@ -5400,7 +5400,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027019": {
@@ -5411,7 +5411,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027020": {
@@ -5422,7 +5422,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027021": {
@@ -5433,7 +5433,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027022": {
@@ -5444,7 +5444,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         }
       }
@@ -5560,7 +5560,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
@@ -5594,7 +5594,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028016": {
@@ -5604,8 +5604,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028017": {
@@ -5616,7 +5616,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028018": {
@@ -5627,7 +5627,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028019": {
@@ -5638,7 +5638,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028020": {
@@ -5649,7 +5649,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028021": {
@@ -5660,7 +5660,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028022": {
@@ -5671,7 +5671,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         }
       }
@@ -5787,7 +5787,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
@@ -5821,7 +5821,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029016": {
@@ -5831,8 +5831,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029017": {
@@ -5843,7 +5843,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029018": {
@@ -5854,7 +5854,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029019": {
@@ -5865,7 +5865,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029020": {
@@ -5876,7 +5876,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029021": {
@@ -5887,7 +5887,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029022": {
@@ -5898,7 +5898,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         }
       }
@@ -6014,7 +6014,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
@@ -6048,7 +6048,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030016": {
@@ -6058,8 +6058,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030017": {
@@ -6070,7 +6070,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030018": {
@@ -6081,7 +6081,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030019": {
@@ -6092,7 +6092,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030020": {
@@ -6103,7 +6103,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030021": {
@@ -6114,7 +6114,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030022": {
@@ -6125,7 +6125,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         }
       }
@@ -6241,7 +6241,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocked by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20310\""
         },
@@ -6468,7 +6468,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
@@ -6502,7 +6502,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033016": {
@@ -6512,8 +6512,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033017": {
@@ -6524,7 +6524,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033018": {
@@ -6535,7 +6535,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033019": {
@@ -6546,7 +6546,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033020": {
@@ -6557,7 +6557,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033021": {
@@ -6568,7 +6568,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033022": {
@@ -6579,7 +6579,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         }
       }
@@ -6695,7 +6695,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
@@ -6729,7 +6729,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034016": {
@@ -6739,8 +6739,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034017": {
@@ -6751,7 +6751,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034018": {
@@ -6762,7 +6762,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034019": {
@@ -6773,7 +6773,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034020": {
@@ -6784,7 +6784,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034021": {
@@ -6795,7 +6795,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034022": {
@@ -6806,7 +6806,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         }
       }
@@ -6922,7 +6922,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
@@ -6956,7 +6956,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035016": {
@@ -6966,8 +6966,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035017": {
@@ -6978,7 +6978,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035018": {
@@ -6989,7 +6989,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035019": {
@@ -7000,7 +7000,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035020": {
@@ -7011,7 +7011,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035021": {
@@ -7022,7 +7022,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035022": {
@@ -7033,7 +7033,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         }
       }
@@ -7149,7 +7149,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
@@ -7183,7 +7183,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037016": {
@@ -7193,8 +7193,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037017": {
@@ -7205,7 +7205,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037018": {
@@ -7216,7 +7216,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037019": {
@@ -7227,7 +7227,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037020": {
@@ -7238,7 +7238,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037021": {
@@ -7249,7 +7249,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037022": {
@@ -7260,7 +7260,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         }
       }
@@ -7376,7 +7376,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
@@ -7410,7 +7410,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038016": {
@@ -7420,8 +7420,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038017": {
@@ -7432,7 +7432,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038018": {
@@ -7443,7 +7443,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038019": {
@@ -7454,7 +7454,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038020": {
@@ -7465,7 +7465,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038021": {
@@ -7476,7 +7476,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038022": {
@@ -7487,7 +7487,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         }
       }
@@ -7603,7 +7603,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocked by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20390\""
         },
@@ -7830,7 +7830,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
@@ -7864,7 +7864,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040016": {
@@ -7874,8 +7874,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040017": {
@@ -7886,7 +7886,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040018": {
@@ -7897,7 +7897,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040019": {
@@ -7908,7 +7908,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040020": {
@@ -7919,7 +7919,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040021": {
@@ -7930,7 +7930,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040022": {
@@ -7941,7 +7941,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         }
       }
@@ -8057,7 +8057,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
@@ -8091,7 +8091,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042016": {
@@ -8101,8 +8101,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042017": {
@@ -8113,7 +8113,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042018": {
@@ -8124,7 +8124,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042019": {
@@ -8135,7 +8135,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042020": {
@@ -8146,7 +8146,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042021": {
@@ -8157,7 +8157,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042022": {
@@ -8168,7 +8168,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         }
       }
@@ -8284,7 +8284,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
@@ -8318,7 +8318,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043016": {
@@ -8328,8 +8328,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043017": {
@@ -8340,7 +8340,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043018": {
@@ -8351,7 +8351,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043019": {
@@ -8362,7 +8362,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043020": {
@@ -8373,7 +8373,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043021": {
@@ -8384,7 +8384,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043022": {
@@ -8395,7 +8395,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         }
       }
@@ -8511,7 +8511,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
@@ -8545,7 +8545,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045016": {
@@ -8555,8 +8555,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045017": {
@@ -8567,7 +8567,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045018": {
@@ -8578,7 +8578,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045019": {
@@ -8589,7 +8589,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045020": {
@@ -8600,7 +8600,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045021": {
@@ -8611,7 +8611,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045022": {
@@ -8622,7 +8622,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         }
       }
@@ -8738,7 +8738,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
@@ -8772,7 +8772,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047016": {
@@ -8782,8 +8782,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047017": {
@@ -8794,7 +8794,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047018": {
@@ -8805,7 +8805,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047019": {
@@ -8816,7 +8816,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047020": {
@@ -8827,7 +8827,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047021": {
@@ -8838,7 +8838,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047022": {
@@ -8849,7 +8849,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         }
       }
@@ -8965,7 +8965,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
@@ -8999,7 +8999,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048016": {
@@ -9009,8 +9009,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048017": {
@@ -9021,7 +9021,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048018": {
@@ -9032,7 +9032,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048019": {
@@ -9043,7 +9043,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048020": {
@@ -9054,7 +9054,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048021": {
@@ -9065,7 +9065,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048022": {
@@ -9076,7 +9076,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         }
       }
@@ -9192,7 +9192,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
@@ -9226,7 +9226,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049016": {
@@ -9236,8 +9236,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049017": {
@@ -9248,7 +9248,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049018": {
@@ -9259,7 +9259,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049019": {
@@ -9270,7 +9270,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049020": {
@@ -9281,7 +9281,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049021": {
@@ -9292,7 +9292,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049022": {
@@ -9303,7 +9303,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         }
       }
@@ -9419,7 +9419,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
@@ -9453,7 +9453,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050016": {
@@ -9463,8 +9463,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050017": {
@@ -9475,7 +9475,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050018": {
@@ -9486,7 +9486,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050019": {
@@ -9497,7 +9497,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050020": {
@@ -9508,7 +9508,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050021": {
@@ -9519,7 +9519,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050022": {
@@ -9530,7 +9530,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         }
       }
@@ -9646,7 +9646,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
@@ -9680,7 +9680,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051016": {
@@ -9690,8 +9690,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051017": {
@@ -9702,7 +9702,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051018": {
@@ -9713,7 +9713,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051019": {
@@ -9724,7 +9724,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051020": {
@@ -9735,7 +9735,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051021": {
@@ -9746,7 +9746,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051022": {
@@ -9757,7 +9757,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         }
       }
@@ -9873,7 +9873,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
@@ -9907,7 +9907,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052016": {
@@ -9917,8 +9917,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052017": {
@@ -9929,7 +9929,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052018": {
@@ -9940,7 +9940,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052019": {
@@ -9951,7 +9951,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052020": {
@@ -9962,7 +9962,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052021": {
@@ -9973,7 +9973,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052022": {
@@ -9984,7 +9984,7 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         }
       }
@@ -10100,7 +10100,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
@@ -10134,7 +10134,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057016": {
@@ -10144,8 +10144,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Upgrade Vassal Affinity to Rank 10\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 10\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057017": {
@@ -10156,7 +10156,7 @@
           "m_UnlockData": "1",
           "m_Sort": "16",
           "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057018": {
@@ -10167,7 +10167,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057019": {
@@ -10178,7 +10178,7 @@
           "m_UnlockData": "1",
           "m_Sort": "17",
           "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057020": {
@@ -10189,7 +10189,7 @@
           "m_UnlockData": "8",
           "m_Sort": "20",
           "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 8\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057021": {
@@ -10200,7 +10200,7 @@
           "m_UnlockData": "1",
           "m_Sort": "18",
           "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 1\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057022": {
@@ -10211,8 +10211,246 @@
           "m_UnlockData": "9",
           "m_Sort": "21",
           "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 9\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
+        }
+      }
+    },
+    "20610": {
+      "_type": "nested_dictionary",
+      "_count": 21,
+      "_processed": 21,
+      "data": {
+        "2061001": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061001",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "2",
+          "m_mTitle": "\"Ultimate\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_C_20610\""
+        },
+        "2061002": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061002",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "1",
+          "m_mTitle": "\"Special\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_C_20610\""
+        },
+        "2061003": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061003",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "7",
+          "m_mTitle": "\"Death\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_C_20610\""
+        },
+        "2061004": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061004",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Deployment\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_C_20610\""
+        },
+        "2061007": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061007",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "6",
+          "m_mTitle": "\"Victory\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_C_20610\""
+        },
+        "2061008": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061008",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "8",
+          "m_mTitle": "\"Obtain\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061009": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061009",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "9",
+          "m_mTitle": "\"Character Select\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061010": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061010",
+          "m_UnlockType": "2",
+          "m_UnlockData": "2",
+          "m_Sort": "11",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061011": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061011",
+          "m_UnlockType": "3",
+          "m_UnlockData": "1",
+          "m_Sort": "12",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks After Spirit Siphon\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061012": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061012",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "10",
+          "m_mTitle": "\"Idle\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061013": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061013",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "13",
+          "m_mTitle": "\"Transfusion\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061014": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061014",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "14",
+          "m_mTitle": "\"Banquet\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061015": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061015",
+          "m_UnlockType": "4",
+          "m_UnlockData": "5",
+          "m_Sort": "15",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061016": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061016",
+          "m_UnlockType": "4",
+          "m_UnlockData": "10",
+          "m_Sort": "22",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061017": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061017",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "16",
+          "m_mTitle": "\"Converse I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061018": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061018",
+          "m_UnlockType": "4",
+          "m_UnlockData": "7",
+          "m_Sort": "19",
+          "m_mTitle": "\"Charm I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061019": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061019",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "17",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061020": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061020",
+          "m_UnlockType": "4",
+          "m_UnlockData": "8",
+          "m_Sort": "20",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061021": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061021",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "18",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061022": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061022",
+          "m_UnlockType": "4",
+          "m_UnlockData": "9",
+          "m_Sort": "21",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
+        },
+        "2061024": {
+          "m_bError": null,
+          "m_HeroID": "20610",
+          "m_VoiceId": "2061024",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Dispatch\"",
+          "m_mUnlockDesc": "\"Unlocks by default.\"",
+          "m_VoiceBank": "\"Vo_System_C_20610\""
         }
       }
     },
@@ -10316,7 +10554,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "11",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by default.\"",
           "m_VoiceBank": "\"Vo_System_C_20640\""
         },
@@ -10587,7 +10825,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by default.\"",
           "m_VoiceBank": "\"Vo_System_C_20650\""
         },
@@ -10598,7 +10836,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "13",
-          "m_mTitle": "\"The Sunsion\"",
+          "m_mTitle": "\"Transfusion\"",
           "m_mUnlockDesc": "\"Unlocks by default.\"",
           "m_VoiceBank": "\"Vo_System_C_20650\""
         },
@@ -10814,7 +11052,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by default.\"",
           "m_VoiceBank": "\"Vo_System_C_20660\""
         },
@@ -11041,7 +11279,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlocks by default.\"",
           "m_VoiceBank": "\"Vo_System_C_20700\""
         },
@@ -11158,5 +11396,5 @@
       }
     }
   },
-  "status": "processed_49_items"
+  "status": "processed_50_items"
 }

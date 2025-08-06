@@ -601,6 +601,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "1099": {
+      "m_bError": null,
+      "m_ID": "1099",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "1100": {
       "m_bError": null,
       "m_ID": "1100",
@@ -613,6 +621,14 @@
       "m_bError": null,
       "m_ID": "1101",
       "m_mMessage": "\"Report Limit\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1102": {
+      "m_bError": null,
+      "m_ID": "1102",
+      "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -1196,7 +1212,7 @@
     "1209": {
       "m_bError": null,
       "m_ID": "1209",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"Battle Map Error\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -1204,7 +1220,7 @@
     "1210": {
       "m_bError": null,
       "m_ID": "1210",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"Unusual Blood Power Imbalance\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -1212,7 +1228,7 @@
     "1211": {
       "m_bError": null,
       "m_ID": "1211",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"Low Combat FPS\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -1220,7 +1236,7 @@
     "1212": {
       "m_bError": null,
       "m_ID": "1212",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"Combat Cheating\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -3945,6 +3961,30 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "2674": {
+      "m_bError": null,
+      "m_ID": "2674",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2675": {
+      "m_bError": null,
+      "m_ID": "2675",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2676": {
+      "m_bError": null,
+      "m_ID": "2676",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "2700": {
       "m_bError": null,
       "m_ID": "2700",
@@ -4348,7 +4388,7 @@
     "2950": {
       "m_bError": null,
       "m_ID": "2950",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"[Timeworn Mausoleum] Stage Updated\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -4517,6 +4557,14 @@
       "m_bError": null,
       "m_ID": "3020",
       "m_mMessage": "\"Tutorial Incomplete\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "3040": {
+      "m_bError": null,
+      "m_ID": "3040",
+      "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -5321,6 +5369,22 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "6520": {
+      "m_bError": null,
+      "m_ID": "6520",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6521": {
+      "m_bError": null,
+      "m_ID": "6521",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "6551": {
       "m_bError": null,
       "m_ID": "6551",
@@ -5541,6 +5605,38 @@
       "m_bError": null,
       "m_ID": "6642",
       "m_mMessage": "\"Battle Pass Does Not Exist\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6651": {
+      "m_bError": null,
+      "m_ID": "6651",
+      "m_mMessage": "\"This feature is temporarily unavailable due to date restrictions.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "6652": {
+      "m_bError": null,
+      "m_ID": "6652",
+      "m_mMessage": "\"This feature is temporarily unavailable due to technical issues.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "2",
+      "m_MultLong": "\"\""
+    },
+    "6661": {
+      "m_bError": null,
+      "m_ID": "6661",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6662": {
+      "m_bError": null,
+      "m_ID": "6662",
+      "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6868,7 +6964,7 @@
     "-851": {
       "m_bError": null,
       "m_ID": "-851",
-      "m_mMessage": "\"\"",
+      "m_mMessage": "\"bigp command not processed.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6876,11 +6972,27 @@
     "-852": {
       "m_bError": null,
       "m_ID": "-852",
+      "m_mMessage": "\"bigp Command forwarded to other server.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-826": {
+      "m_bError": null,
+      "m_ID": "-826",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "-827": {
+      "m_bError": null,
+      "m_ID": "-827",
       "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     }
   },
-  "status": "processed_860_items"
+  "status": "processed_874_items"
 }

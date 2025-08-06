@@ -204,6 +204,7 @@ CmdActivityData.Definition = {
   "mCfgMultiLanguage",
   "mDownloadPictureCDN",
   "sJumpParam",
+  "vLanguageId",
   iActivityId = {
     0,
     0,
@@ -575,6 +576,12 @@ CmdActivityData.Definition = {
     0,
     13,
     ""
+  },
+  vLanguageId = {
+    64,
+    0,
+    sdp.SdpVector(8),
+    nil
   }
 }
 CmdActivityStatus = sdp.SdpStruct("CmdActivityStatus")

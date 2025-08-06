@@ -517,6 +517,18 @@
       "m_RoleScake": "1",
       "m_RoleOffset": "[]"
     },
+    "20610": {
+      "m_bError": null,
+      "m_ID": "20610",
+      "m_AgreeText": "\"0/CouncilHall_Agree_20610_01\"",
+      "m_NeutralText": "\"0/CouncilHall_Neutral_20610_01\"",
+      "m_DisgreeText": "\"0/CouncilHall_Disagree_20610_01\"",
+      "m_AcceptedText": "\"0/CouncilHall_Accepted_20610_01\"",
+      "m_DisapprovedText": "\"0/CouncilHall_Disapproved_20610_01\"",
+      "m_ChangeText": "\"0/CouncilHall_Change_20610_01\"",
+      "m_RoleScake": "1",
+      "m_RoleOffset": "[]"
+    },
     "20640": {
       "m_bError": null,
       "m_ID": "20640",
@@ -566,5 +578,5 @@
       "m_RoleOffset": "[]"
     }
   },
-  "status": "processed_47_items"
+  "status": "processed_48_items"
 }

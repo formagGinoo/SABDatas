@@ -18,7 +18,7 @@ function ChannelManager:IsAPChannel()
 end
 
 function ChannelManager:IsUsingQSDK()
-  return not self.m_versionContext:IsUsingQSDK() and self:IsWindows() and self:IsChinaChannel()
+  return self.m_versionContext:IsUsingQSDK()
 end
 
 function ChannelManager:GetContext()
@@ -43,6 +43,18 @@ end
 
 function ChannelManager:IsDMMChannel()
   return self.m_versionContext:IsDMMChannel()
+end
+
+function ChannelManager:IsWegameChannel()
+  return self.m_versionContext:IsWegameChannel()
+end
+
+function ChannelManager:IsTapTapChannel()
+  return self.m_versionContext:IsTapTapChannel()
+end
+
+function ChannelManager:IsQSDKWindowsChannel()
+  return self.m_versionContext:IsQSDKWindowsChannel()
 end
 
 function ChannelManager:IsExeVerBig(targetVer)

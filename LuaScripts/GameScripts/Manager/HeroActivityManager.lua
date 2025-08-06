@@ -52,6 +52,7 @@ function HeroActivityManager:OnCreate()
   self.m_cacheReportData = {}
   self.isPush = false
   self.MainIDMapSubID = {}
+  self:addEventListener("eGameEvent_Legacy_ActivityTreasureBox", handler(self, self.OpenTreasureBox))
 end
 
 function HeroActivityManager:OnInitNetwork()
@@ -248,7 +249,7 @@ function HeroActivityManager:LamiaGameFinishSC(data)
   if act_data then
     act_data.server_data.stMiniGame.mGameStat[data.iGameId] = data.iGameStat
   end
-  self:broadcastEvent("eGameEvent_ActMemory_MemoryFinish")
+  self:broadcastEvent("eGameEvent_ActMinigame_Finish", data.vAward)
 end
 
 function HeroActivityManager:ReqHeroActMiniGameFinishCS_UI(iActId, iSubActId, iGameId, iScore)
@@ -306,12 +307,59 @@ function HeroActivityManager:LamiaClueGetAwardSC(data)
   self:broadcastEvent("eGameEvent_Act4ClueGetAward")
 end
 
+function HeroActivityManager:ReqLamiaGetSubActAwardCS(iActId, iSubActId, callback)
+  local rqs_getAward = MTTDProto.Cmd_Lamia_GetSubActAward_CS()
+  rqs_getAward.iActId = iActId
+  rqs_getAward.iSubActId = iSubActId
+  RPCS():Lamia_GetSubActAward(rqs_getAward, function(data)
+    local reward_list = data.vRewards
+    if reward_list and next(reward_list) then
+      utils.popUpRewardUI(reward_list)
+    end
+    local act_data = self:GetHeroActData(iActId)
+    if not act_data then
+      log.error("GetActTaskServerData is error act_id = " .. tostring(iActId))
+      return
+    end
+    local server_data = act_data.server_data
+    if server_data then
+      server_data.vAwardedSubAct = data.vAwardedSubAct
+    end
+    if callback then
+      callback(data)
+    end
+    self:broadcastEvent("eGameEvent_ActMinigame_GetReward")
+  end)
+end
+
+function HeroActivityManager:IsSubActAwarded(iActId, iSubActId)
+  local act_data = self:GetHeroActData(iActId)
+  if not act_data then
+    return false
+  end
+  if not act_data.server_data or not act_data.server_data.vAwardedSubAct then
+    return false
+  end
+  local bIsGot = false
+  for i, v in ipairs(act_data.server_data.vAwardedSubAct) do
+    if v == iSubActId then
+      bIsGot = true
+      break
+    end
+  end
+  return bIsGot
+end
+
 function HeroActivityManager:_MapMainIDAndSubId()
   local list = self:GetOpenActList()
   self.MainIDMapSubID = {}
   for config_id, act_data in pairs(list) do
     self.MainIDMapSubID[config_id] = self.MainIDMapSubID[config_id] or {}
     local main_config = self:GetMainInfoByActID(config_id)
+    if not main_config then
+      log.error("HeroActivityManager:_MapMainIDAndSubId error! config_id = " .. tostring(config_id))
+      return
+    end
     local sub_function_ids = utils.changeCSArrayToLuaTable(main_config.m_SubFunctionID)
     for _, sub_config_id in pairs(sub_function_ids) do
       local sub_config = self:GetSubInfoByID(sub_config_id)
@@ -509,6 +557,10 @@ end
 
 function HeroActivityManager:GetAllActTimeByActID(act_id)
   local main_config = self:GetMainInfoByActID(act_id)
+  if not main_config then
+    log.error("HeroActivityManager:GetAllActTimeByActID error！act_id：", act_id)
+    return 0, 0, 0, 0
+  end
   local startTime = TimeUtil:TimeStringToTimeSec2(main_config.m_OpenTime) or 0
   local changeTime = TimeUtil:TimeStringToTimeSec2(main_config.m_ChangeTime) or 0
   local endTime = TimeUtil:TimeStringToTimeSec2(main_config.m_EndTime) or 0
@@ -702,6 +754,10 @@ end
 
 function HeroActivityManager:IsMainActIsOpenByID(config_id)
   local main_config = self:GetMainInfoByActID(config_id)
+  if not main_config then
+    log.error("HeroActivityManager:IsMainActIsOpenByID error! config_id = " .. tostring(config_id))
+    return false
+  end
   local startTime, changeTime, endTime, closeTime = self:GetAllActTimeByActID(config_id)
   local is_corved, t1, t2 = self:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.main, config_id)
   if is_corved then
@@ -730,9 +786,12 @@ function HeroActivityManager:IsSubActIsOpenByID(config_id, sub_config_id)
     return unlock_flag, unlock_type, lock_str
   end
   local main_config = self:GetMainInfoByActID(config_id)
+  if not main_config then
+    log.error("HeroActivityManager:IsSubActIsOpenByID error! config_id = " .. tostring(config_id))
+    return false
+  end
   local sub_function_ids = utils.changeCSArrayToLuaTable(main_config.m_SubFunctionID)
   if not table.find(sub_function_ids, sub_config_id) then
-    log.error("传入的主活动配置id与子配置id不匹配！main_id：" .. config_id .. ";   sub_config_id" .. sub_config_id)
     return false
   end
   local sub_config = self:GetSubInfoByID(sub_config_id)
@@ -786,6 +845,10 @@ function HeroActivityManager:GetActJumpInfo(main_id, sub_id)
   else
     config = self:GetMainInfoByActID(main_id)
   end
+  if not config then
+    log.error("HeroActivityManager:GetActJumpInfo error! main_id = " .. tostring(main_id) .. "; sub_id = " .. tostring(sub_id))
+    return false
+  end
   local prefabStr = config.m_Prefab
   local ui_name = config.m_Prefab
   if not sub_id and config.m_ActivityType == HeroActivityManager.ActivityType.Stages then
@@ -825,6 +888,10 @@ function HeroActivityManager:GotoHeroActivity(params)
     return
   end
   local config = self:GetMainInfoByActID(params.main_id)
+  if not config then
+    log.error("HeroActivityManager:GotoHeroActivity error! main_id = " .. tostring(params.main_id) .. "; sub_id = " .. tostring(params.sub_id))
+    return
+  end
   if config.m_ActivityType == 2 and config.m_ExploreScene ~= "" then
     local vResource = {}
     table.insert(vResource, {
@@ -833,7 +900,7 @@ function HeroActivityManager:GotoHeroActivity(params)
     })
     table.insert(vResource, {
       sName = config.m_ExploreScene,
-      eType = CS.MUF.Resource.ResourceType.MaterialReplace
+      eType = CS.MUF.Resource.ResourceType.Bytes
     })
     local allCfg = CS.CData_ActExploreInteractive.GetInstance():GetAll()
     for _, element in pairs(allCfg) do
@@ -861,8 +928,13 @@ function HeroActivityManager:DoGotoHeroActivity(params)
   end
   local key = params.main_id .. "FirstInHeroAct"
   local config = self:GetMainInfoByActID(params.main_id)
+  if not config then
+    log.error("HeroActivityManager:DoGotoHeroActivity error! main_id = " .. tostring(params.main_id) .. "; sub_id = " .. tostring(params.sub_id))
+    return
+  end
   local time_line = config.m_ActivityAnimation
   local vResource = {}
+  local vPackage = {}
   if config.m_ActivityType == 2 and config.m_ExploreScene ~= "" then
     local preload = GameSceneManager:GetGameScene(GameSceneManager.SceneID.ActExplore):GetPreload(config.m_ExploreScene)
     local res = preload:GetDepenResources(true)
@@ -886,12 +958,12 @@ function HeroActivityManager:DoGotoHeroActivity(params)
       sName = "746112276.wem",
       eType = DownloadManager.ResourceType.Audio
     })
-    local depen = CS.VisualFavorability.GetDepenResource(0, time_line)
-    for k, v in pairs(depen) do
-      table.insert(vResource, {sName = k, eType = v})
-    end
+    table.insert(vPackage, {
+      sName = time_line,
+      eType = DownloadManager.ResourcePackageType.Timeline
+    })
   end
-  DownloadManager:DownloadResourceWithUI(nil, vResource, "GotoHeroActivity" .. key, nil, nil, function()
+  DownloadManager:DownloadResourceWithUI(vPackage, vResource, "GotoHeroActivity" .. key, nil, nil, function()
     self:DoOpen(config, ui_id, params, {
       key = key,
       time_line = time_line,
@@ -945,6 +1017,37 @@ function HeroActivityManager:IsSubActivityUnlock(unlockTypeList, unlockCondition
     end
   end
   return true
+end
+
+function HeroActivityManager:GetMinigameUnlockStr(levelCfg, iMiniGameId)
+  if not levelCfg then
+    return
+  end
+  local openTimeStr = ""
+  local unlockLevelStr
+  local subCfg = self:GetSubInfoByID(levelCfg.m_ActivitySubID)
+  if subCfg then
+    local subName = subCfg.m_mActivityTitle
+    unlockLevelStr = subName .. " " .. levelCfg.m_LevelRef
+  else
+    unlockLevelStr = levelCfg.m_LevelRef or ""
+  end
+  local is_corved, t1 = self:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.minigame, {
+    id = levelCfg.m_ActivityID,
+    m_MemoryID = iMiniGameId
+  })
+  if is_corved then
+    openTimeStr = TimeUtil:TimerToString3(t1)
+  end
+  local formatUnlockStr
+  if openTimeStr ~= "" then
+    formatUnlockStr = ConfigManager:GetClientMessageTextById(40039)
+    formatUnlockStr = string.CS_Format(formatUnlockStr, unlockLevelStr, openTimeStr)
+  else
+    formatUnlockStr = ConfigManager:GetClientMessageTextById(40036)
+    formatUnlockStr = string.CS_Format(formatUnlockStr, unlockLevelStr)
+  end
+  return formatUnlockStr
 end
 
 function HeroActivityManager:GetLevelUnlockStr(levelCfg)
@@ -1206,7 +1309,13 @@ function HeroActivityManager:GetActTaskCfgByActiveId(activeId)
 end
 
 function HeroActivityManager:GetActDailyTaskCfgByActiveId(activeId)
+  if not activeId then
+    return
+  end
   local taskCfgId = self:GetSubFuncID(activeId, HeroActivityManager.SubActTypeEnum.DailyTask)
+  if not taskCfgId then
+    return
+  end
   local sub_config = self:GetSubInfoByID(taskCfgId)
   if not sub_config then
     log.error("GetActTaskCfgByActiveId is error activeId = " .. tostring(activeId))
@@ -1313,17 +1422,22 @@ function HeroActivityManager:CheckTaskCanReceive(activeId, isDailyTask, isAll)
   if isAll then
     return self:CheckTaskCanReceive(activeId) or self:CheckTaskCanReceive(activeId, true)
   end
+  local data = self:GetActTaskServerData(activeId)
+  local cfgs = self:GetActTaskDailyRewardCfg()
+  local isAllCompleted = data and data.iDaiyQuestActive and data.iDaiyQuestActive >= cfgs[#cfgs].m_RequiredScore
   local flag = false
   local cfgList, pinCfgList = self:GetActTaskCfgByActiveId(activeId)
   if isDailyTask then
     cfgList, pinCfgList = self:GetActDailyTaskCfgByActiveId(activeId)
+  else
+    isAllCompleted = false
   end
   flag = self:CheckTaskCanReceiveByCfgList(activeId, cfgList)
   if flag then
-    return flag
+    return flag and not isAllCompleted
   end
   flag = self:CheckTaskCanReceiveByCfgList(activeId, pinCfgList)
-  return flag
+  return flag and not isAllCompleted
 end
 
 function HeroActivityManager:CheckTaskCanReceiveByCfgList(activeId, cfgList)
@@ -1343,6 +1457,9 @@ end
 
 function HeroActivityManager:GetDailyTaskCanReceiveList(activeId)
   local cfgList = self:GetActDailyTaskCfgByActiveId(activeId)
+  if not cfgList then
+    return {}
+  end
   local vQuestId = {}
   for i, v in ipairs(cfgList) do
     local serverData = self:GetActTaskServerDataById(activeId, v.m_UID)
@@ -1527,8 +1644,12 @@ function HeroActivityManager:HeroActHallEntryHaveRedDot(params)
   if flag then
     return 1
   end
-  local hardSubActID = self:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.DiffLevel)
-  flag = 0 < LevelHeroLamiaActivityManager:IsSubActEnterHaveRedDot(hardSubActID)
+  local normalSubActID = self:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.NormalLevel)
+  flag = 0 < LevelHeroLamiaActivityManager:IsSubActEnterHaveRedDot(normalSubActID)
+  if flag then
+    return 1
+  end
+  flag = self:IsHeroActMiniGamePuzzleEntryHaveRedDot({actId = act_id}) == 1
   if flag then
     return 1
   end
@@ -1613,9 +1734,12 @@ end
 
 function HeroActivityManager:IsActShopEntryHaveRedDot(iActID)
   local config = HeroActivityManager:GetMainInfoByActID(iActID)
+  if not config then
+    return 0
+  end
   local jumpIns = ConfigManager:GetConfigInsByName("Jump")
   local jump_item = jumpIns:GetValue_ByJumpID(config.m_ShopJumpID)
-  local windowId = jump_item.m_WindowID
+  local windowId = 0 < jump_item.m_Param.Length and tonumber(jump_item.m_Param[0]) or 0
   local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
   local shop_id
   for i, v in ipairs(shop_list) do
@@ -1641,6 +1765,10 @@ end
 
 function HeroActivityManager:IsShopGoodsHaveRedDot(params)
   local main_config = self:GetMainInfoByActID(params.iActID)
+  if not main_config then
+    log.error("HeroActivityManager:IsShopGoodsHaveRedDot error! iActID = " .. tostring(params.iActID))
+    return 0
+  end
   local startTime = TimeUtil:TimeStringToTimeSec2(main_config.m_OpenTime) or 0
   local is_act_corved, t1 = self:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.main, params.iActID)
   if is_act_corved then
@@ -1723,6 +1851,55 @@ function HeroActivityManager:SetExploreData(iActID, vExplore)
   rqs_msg.iActId = iActID
   rqs_msg.vExplore = vExplore
   RPCS():Lamia_SetExploreData(rqs_msg, nil)
+end
+
+function HeroActivityManager:GetMinigameHelper()
+  local minigameHelper = self.m_minigameHelper
+  if minigameHelper == nil then
+    minigameHelper = require("Manager/ManagerPlus/HeroActivityHelper/MinigameHelper").new()
+    self.m_minigameHelper = minigameHelper
+  end
+  return minigameHelper
+end
+
+function HeroActivityManager:OpenTreasureBox(param)
+  StackFlow:Push(UIDefines.ID_FORM_ACTIVITY105MINIGAME, {str = param})
+end
+
+function HeroActivityManager:IsHeroActMiniGamePuzzleEntryHaveRedDot(param)
+  local subActId = self:GetSubFuncID(param.actId, HeroActivityManager.SubActTypeEnum.MiniGame)
+  local miniGameIsOpen = self:IsSubActIsOpenByID(param.actId, subActId)
+  if not miniGameIsOpen then
+    return 0
+  end
+  local curLevelId = self:GetMinigameHelper():GetCurLevelCfg(param.actId, subActId)
+  if not curLevelId or curLevelId == 0 then
+    return 0
+  end
+  if self:GetMinigameHelper():IsMiniGamePuzzleRewardCanGet(param.actId, subActId) then
+    return 1
+  end
+  local act_data = self:GetHeroActData(param.actId)
+  if not act_data then
+    return 0
+  end
+  local stMiniGame = act_data.server_data.stMiniGame
+  if not stMiniGame then
+    return 0
+  end
+  local bIsPass = stMiniGame.mGameStat[curLevelId] == 1
+  if bIsPass then
+    return 0
+  end
+  if not self:IsTodayEnterMinigamePuzzle(curLevelId) then
+    return 0
+  end
+  return 1
+end
+
+function HeroActivityManager:IsTodayEnterMinigamePuzzle(curLevelId)
+  local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+  return nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroActMiniGamePuzzle_Entry_Red_Point_" .. curLevelId, 0)
 end
 
 return HeroActivityManager

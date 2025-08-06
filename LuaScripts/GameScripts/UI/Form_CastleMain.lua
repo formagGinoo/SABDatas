@@ -28,6 +28,7 @@ end
 function Form_CastleMain:OnActive()
   self.super.OnActive(self)
   self.m_pnl_event:SetActive(false)
+  self.m_ShowStoryType = CastleStoryManager.ShowStoryType.Plot
   self:FreshData()
   self:FreshUI()
   self:InitStatus()
@@ -360,7 +361,21 @@ function Form_CastleMain:FreshStoryState()
   local leftTimes = maxTimes - CastleStoryManager:GetiStoryTimes()
   self.leftTimes = leftTimes
   self.m_txt_num_strength_Text.text = leftTimes .. "/" .. maxTimes
-  local storyList = CastleStoryManager:GetAllPlaceCurStoryList()
+  local storyList = {}
+  if self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Plot then
+    storyList = CastleStoryManager:GetAllPlaceCurStoryList()
+  else
+    storyList = CastleStoryManager:GetAllFinishedStoryInfo()
+  end
+  UILuaHelper.SetActive(self.m_img_bg_light, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Plot)
+  UILuaHelper.SetActive(self.m_icon_light, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Plot)
+  UILuaHelper.SetActive(self.m_icon_dark, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Playback)
+  UILuaHelper.SetActive(self.m_img_bg_light02, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Playback)
+  UILuaHelper.SetActive(self.m_icon_dark02, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Plot)
+  UILuaHelper.SetActive(self.m_icon_light02, self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Playback)
+  if not utils.isNull(self.m_common_empty) then
+    UILuaHelper.SetActive(self.m_common_empty, #storyList == 0)
+  end
   local count = #storyList
   self.m_txt_num_event_Text.text = count
   self.storyList = storyList
@@ -377,7 +392,7 @@ end
 function Form_CastleMain:OnInitStoryItem(go, index)
   local idx = index + 1
   UILuaHelper.SetCanvasGroupAlpha(go, 0)
-  TimeService:SetTimer(0.1 * index, 1, function()
+  TimeService:SetTimer(0.06 * index, 1, function()
     UILuaHelper.SetCanvasGroupAlpha(go, 1)
     UILuaHelper.PlayAnimationByName(go, "m_pnl_event_tab_in")
   end)
@@ -391,11 +406,15 @@ function Form_CastleMain:OnInitStoryItem(go, index)
   local btn = go:GetComponent("Button")
   btn.onClick:RemoveAllListeners()
   btn.onClick:AddListener(function()
-    if self.leftTimes < 1 then
-      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(48001))
-      return
+    if self.m_ShowStoryType == CastleStoryManager.ShowStoryType.Plot then
+      if self.leftTimes < 1 then
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(48001))
+        return
+      end
+      self:OnStoryItemClk(cfg)
+    else
+      self:OnStoryPlaybackItemClk(cfg)
     end
-    self:OnStoryItemClk(cfg)
   end)
 end
 
@@ -414,6 +433,18 @@ function Form_CastleMain:OnStoryItemClk(storyCfg)
       self:CheckChangeSceneView(castlePlaceCfg)
     end,
     is_FullScreen = castlePlaceCfg.m_Type == 1
+  })
+  self:OnBtnblockClicked()
+end
+
+function Form_CastleMain:OnStoryPlaybackItemClk(storyCfg)
+  local placeID = storyCfg.m_PlaceID
+  local tempPlaceButtonData = self.m_castlePlaceButtons[placeID]
+  local castlePlaceCfg = tempPlaceButtonData.castlePlaceCfg
+  StackFlow:Push(UIDefines.ID_FORM_CASTLEEVENTPOP, {
+    cfg = storyCfg,
+    is_FullScreen = castlePlaceCfg.m_Type == 1,
+    showStoryType = self.m_ShowStoryType
   })
   self:OnBtnblockClicked()
 end
@@ -575,10 +606,6 @@ function Form_CastleMain:OnBtnblockClicked()
 end
 
 function Form_CastleMain:OnBtneventClicked()
-  if not self.storyList or #self.storyList == 0 then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(48002))
-    return
-  end
   if self.m_pnl_event.activeSelf then
     self.m_pnl_event:SetActive(false)
     self.m_icon_arrow.transform.localScale = Vector3(1, -1, 1)
@@ -601,6 +628,16 @@ function Form_CastleMain:OnInheritUnLockResponse()
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_INHERIT)
+end
+
+function Form_CastleMain:OnBtndialogueClicked()
+  self.m_ShowStoryType = CastleStoryManager.ShowStoryType.Plot
+  self:FreshStoryState()
+end
+
+function Form_CastleMain:OnBtnreviewClicked()
+  self.m_ShowStoryType = CastleStoryManager.ShowStoryType.Playback
+  self:FreshStoryState()
 end
 
 function Form_CastleMain:IsFullScreen()

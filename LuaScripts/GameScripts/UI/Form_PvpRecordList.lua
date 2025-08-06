@@ -51,9 +51,9 @@ function Form_PvpRecordList:UpdateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_z_txt_win", cell_data.bWin == 1)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_z_txt_lose", cell_data.bWin == 0)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_rank_num", cell_data.iMyNewRank)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_name", stRole.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_name", stRole.sName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_lv", stRole.iLevel)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_guild_name", "")
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_guild_name", "")
   local changeRank = cell_data.iMyOldRank - cell_data.iMyNewRank
   if changeRank == 0 then
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "icon_arrow01", false)

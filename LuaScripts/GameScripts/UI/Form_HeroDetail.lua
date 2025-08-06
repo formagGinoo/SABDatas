@@ -254,6 +254,7 @@ function Form_HeroDetail:AddEventListeners()
   self:addEventListener("eGameEvent_Hero_EnterUpgrade", handler(self, self.OnShowHeroUpgrade))
   self:addEventListener("eGameEvent_Hero_RefreshSpine", handler(self, self.OnRefreshHeroSpine))
   self:addEventListener("eGameEvent_Hero_Jump", handler(self, self.OnBackClk))
+  self:addEventListener("eGameEvent_Hero_SetFashion", handler(self, self.OnSetFashion))
 end
 
 function Form_HeroDetail:RemoveAllEventListeners()
@@ -553,6 +554,10 @@ end
 function Form_HeroDetail:OnEventRefreshPower()
   self.m_txt_power_value_Text.text = BigNumFormat(self.m_curShowHeroData.serverData.iPower)
   self.m_txt_power_value2_Text.text = BigNumFormat(self.m_curShowHeroData.serverData.iPower)
+end
+
+function Form_HeroDetail:OnSetFashion()
+  self:FreshShowHeroInfo()
 end
 
 function Form_HeroDetail:OnRefreshHeroSpine()
@@ -1189,10 +1194,12 @@ function Form_HeroDetail:OnBtnskinClicked()
   end
   local heroCfg = self.m_curShowHeroData.characterCfg
   local fashionID = self.m_curShowHeroData.serverData.iFashion
-  StackFlow:Push(UIDefines.ID_FORM_FASHION, {
+  StackPopup:Push(UIDefines.ID_FORM_FASHION, {
     heroID = heroCfg.m_HeroID,
     fashionID = fashionID
   })
+  self:StopCurDisPlayPlayingVoice()
+  self:KillVoiceTimer()
 end
 
 function Form_HeroDetail:IsFullScreen()

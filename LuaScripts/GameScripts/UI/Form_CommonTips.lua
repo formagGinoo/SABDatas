@@ -16,6 +16,16 @@ function Form_CommonTips:GetRootTransformType()
 end
 
 function Form_CommonTips:AfterInit()
+  self:ReplaceTextComponent()
+end
+
+function Form_CommonTips:ReplaceTextComponent()
+  if not utils.isNull(self.m_word_tp) then
+    self.m_word_tp:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_word) then
+    self.m_word:SetActive(not self.m_bUseSystemWord)
+  end
 end
 
 function Form_CommonTips:OnActive()
@@ -23,11 +33,13 @@ function Form_CommonTips:OnActive()
   if not tParam then
     return
   end
+  self.m_param = tParam
+  self.m_bUseSystemWord = self:CheckUseSystemWord()
+  self:ReplaceTextComponent()
   self:SetLockTop(tParam.bLockTop)
   self.m_BtnYesBack = nil
   self.m_BtnNoBack = nil
   self.m_BtnYes2Back = nil
-  self.m_param = tParam
   self.m_contentOri = nil
   self:CheckFreshParam()
   self:CheckShowContent()
@@ -58,6 +70,17 @@ function Form_CommonTips:OnActive()
     self.m_bAutoClose = self.m_param.bAutoClose
   end
   self.m_Btn_Close:SetActive(not self.m_param.bLockBack)
+end
+
+function Form_CommonTips:CheckUseSystemWord()
+  if self.m_param and self.m_param.bUseSystemWord then
+    return true
+  end
+  local loginToHallFlag = UserDataManager:GetLoginToHallFlag()
+  if not loginToHallFlag then
+    return true
+  end
+  return false
 end
 
 function Form_CommonTips:OnInactive()
@@ -180,12 +203,23 @@ function Form_CommonTips:CheckShowContent()
     return
   end
   local contentShowStr = self:GetShowStr(self.m_param.content) or ""
-  self.m_word_Text.text = contentShowStr
-  local contentAlign = self.m_param.contentAlign
-  if contentAlign == nil then
-    contentAlign = CS.TMPro.TextAlignmentOptions.Center
+  if not self.m_bUseSystemWord then
+    self.m_word_Text.text = contentShowStr
+    local contentAlign = self.m_param.contentAlign
+    if contentAlign == nil then
+      contentAlign = CS.TMPro.TextAlignmentOptions.Center
+    end
+    self.m_word_Text.alignment = contentAlign
+  elseif not utils.isNull(self.m_word_tp) then
+    self.m_word_tp_Text.text = contentShowStr
+    local contentAlign = self.m_param.contentAlign
+    if contentAlign == CS.TMPro.TextAlignmentOptions.Left then
+      contentAlign = CS.UnityEngine.TextAnchor.MiddleLeft
+    else
+      contentAlign = CS.UnityEngine.TextAnchor.MiddleCenter
+    end
+    self.m_word_tp_Text.alignment = contentAlign
   end
-  self.m_word_Text.alignment = contentAlign
 end
 
 function Form_CommonTips:CheckShowTitle()
@@ -234,7 +268,12 @@ function Form_CommonTips:CheckShowButtons()
     self.m_BtnNoBack = self.m_param.func2
     self.m_txt_yes_01_Text.text = self:GetShowStr(self.m_param.funcText1) or "Yes"
   end
-  local sizeDelta = self.m_word:GetComponent("RectTransform").sizeDelta
+  local sizeDelta
+  if not utils.isNull(self.m_word_tp) and self.m_bUseSystemWord then
+    sizeDelta = self.m_word_tp:GetComponent("RectTransform").sizeDelta
+  else
+    sizeDelta = self.m_word:GetComponent("RectTransform").sizeDelta
+  end
   if self.m_param.showToggle then
     self.m_Toggle:SetActive(true)
     self.m_Toggle_Toggle.isOn = false
@@ -245,11 +284,19 @@ function Form_CommonTips:CheckShowButtons()
     end
     UILuaHelper.ForceRebuildLayoutImmediate(self.m_Toggle)
     sizeDelta.y = 290
-    self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
+    if self.m_bUseSystemWord then
+      self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
+    elseif not utils.isNull(self.m_word_tp) then
+      self.m_word_tp:GetComponent("RectTransform").sizeDelta = sizeDelta
+    end
   else
     self.m_Toggle:SetActive(false)
     sizeDelta.y = 350
-    self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
+    if self.m_bUseSystemWord then
+      self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
+    elseif not utils.isNull(self.m_word_tp) then
+      self.m_word_tp:GetComponent("RectTransform").sizeDelta = sizeDelta
+    end
   end
   if self.m_param.bShowToggleYes then
     self.m_toggle_yes:SetActive(true)

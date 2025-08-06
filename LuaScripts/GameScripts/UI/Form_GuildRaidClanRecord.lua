@@ -111,7 +111,7 @@ function Form_GuildRaidClanRecord:UpdateScrollViewCell(index, cell_object, cell_
     LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_lv", string.format(ConfigManager:GetCommonTextById(20033), tostring(levelCfg.m_BossLevel)))
   end
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_round", string.gsubNumberReplace(ConfigManager:GetCommonTextById(10006), cell_data.iRound))
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_playername", cell_data.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_playername", cell_data.sName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_damage", cell_data.iRealDamage)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_pnl_titlelaunched", self.m_selTabIndex == index)
   local heroList = cell_data.vHero

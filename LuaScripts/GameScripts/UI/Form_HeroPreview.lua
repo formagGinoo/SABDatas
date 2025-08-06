@@ -278,12 +278,14 @@ function Form_HeroPreview:FreshShowBackSliderUI()
       UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 90)
       UILuaHelper.PlayAnimationByName(self.m_slider_root_ver, "heropreview_hor_in")
     end
-  elseif self.m_landscapeMode then
-    UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 0)
-    UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
-  else
-    UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 90)
-    UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
+  elseif self.m_zoomLock then
+    if self.m_landscapeMode then
+      UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 0)
+      UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
+    else
+      UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 90)
+      UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
+    end
   end
 end
 

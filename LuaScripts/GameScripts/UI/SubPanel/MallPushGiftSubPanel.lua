@@ -187,15 +187,22 @@ function MallPushGiftSubPanel:SecondToTimeText(second)
   if second <= 0 then
     return ""
   end
-  local timeTb = TimeUtil:SecondsToFourUnit(second)
-  if 0 <= timeTb.day or 0 <= timeTb.hour or 0 < timeTb.min then
-    local day_str = UnlockSystemUtil:GetLockClientMessage(10305)
-    local min = timeTb.day * 24 + timeTb.hour * 60 + timeTb.min
-    return string.gsubNumberReplace(day_str, min)
-  elseif timeTb.day == 0 and timeTb.hour == 0 and timeTb.min == 0 then
-    local day_str = UnlockSystemUtil:GetLockClientMessage(10216)
-    return string.gsubNumberReplace(day_str, timeTb.sec)
+  local lastTime = TimeUtil:SecondsToFormatCNStr4(second)
+  self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTime)
+  if self.m_downTimer then
+    TimeService:KillTimer(self.m_downTimer)
+    self.m_downTimer = nil
   end
+  self.m_downTimer = TimeService:SetTimer(1, second, function()
+    second = second - 1
+    if second < 0 then
+      TimeService:KillTimer(self.m_downTimer)
+      self:broadcastEvent("eGameEvent_Activity_RefreshPayStore")
+      return
+    end
+    local lastTimeCur = TimeUtil:SecondsToFormatCNStr4(second)
+    self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTimeCur)
+  end)
 end
 
 function MallPushGiftSubPanel:RefreshList()
@@ -216,9 +223,17 @@ function MallPushGiftSubPanel:OnSelectTable(index)
     self.m_ListInfinityGrid:LocateTo(0)
     UILuaHelper.PlayAnimationByName(self.m_hero_list, CHANGE_TAG_ANIM_STR)
     local time = self.m_GiftShowTab[index].iExpireTime - TimeUtil:GetServerTimeS()
-    self.m_txt_timeleft_Text.text = self:SecondToTimeText(time)
+    self:SecondToTimeText(time)
   end
   self:SendReportData()
+end
+
+function MallPushGiftSubPanel:OnDestroy()
+  self.super.OnDestroy(self)
+  if self.m_downTimer then
+    TimeService:KillTimer(self.m_downTimer)
+    self.m_downTimer = nil
+  end
 end
 
 return MallPushGiftSubPanel

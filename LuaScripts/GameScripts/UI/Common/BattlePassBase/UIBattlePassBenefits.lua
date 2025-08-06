@@ -190,6 +190,7 @@ function UIBattlePassBenefits:FreshUI()
   self:FreshAdvancePanel()
   self:FreshPriceShow()
   self:FreshBgPic()
+  self:OnRefreshGiftPoint()
 end
 
 function UIBattlePassBenefits:CheckFreshAdvanceUpShow()
@@ -537,6 +538,27 @@ function UIBattlePassBenefits:OnRewardItemClick(itemID, itemNum, itemCom)
     return
   end
   utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+end
+
+function UIBattlePassBenefits:OnRefreshGiftPoint()
+  if utils.isNull(self.m_packgift_point) then
+    return
+  end
+  if not self.m_stActivity then
+    self.m_packgift_point:SetActive(false)
+  end
+  local productID, productSubID = self.m_stActivity:GetProductID()
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productID)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
+  end
 end
 
 function UIBattlePassBenefits.SortComparator(a, b)

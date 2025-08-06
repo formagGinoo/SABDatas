@@ -631,7 +631,10 @@ function LevelManager:OnBackLobby(fCB)
           StackFlow:Push(UIDefines.ID_FORM_EQUIPMENTCOPYMAINCHOOSE)
           formStr = "Form_EquipmentCopyMainChoose"
         else
-          StackFlow:Push(UIDefines.ID_FORM_EQUIPMENTCOPYMAIN, {chapterIndex = tempChapterIndex})
+          StackFlow:Push(UIDefines.ID_FORM_EQUIPMENTCOPYMAIN, {
+            chapterIndex = tempChapterIndex,
+            createBoss = CS.GameQualityManager.DestroyBossChapterInBattle
+          })
           formStr = "Form_EquipmentCopyMain"
         end
       elseif self.m_curBattleLevelType == LevelManager.LevelType.Goblin then
@@ -815,6 +818,16 @@ function LevelManager:GetMainlevelNextId()
     return self.m_levelMainHelper:GetLastPassLevelIDBySubType(LevelManager.MainLevelSubType.MainStory)
   end
   return 0
+end
+
+function LevelManager:GetBattleGlobalEffectCfgById(id)
+  local BattleGlobalEffectIns = ConfigManager:GetConfigInsByName("BattleGlobalEffect")
+  local cfg = BattleGlobalEffectIns:GetValue_ByID(id)
+  if cfg:GetError() then
+    log.error("LevelManager GetBattleGlobalEffectCfgById  id  " .. tostring(id))
+    return
+  end
+  return cfg
 end
 
 return LevelManager

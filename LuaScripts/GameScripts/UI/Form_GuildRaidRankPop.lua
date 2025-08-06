@@ -182,7 +182,7 @@ function Form_GuildRaidRankPop:UpdateRankScrollViewCell(index, cell_object, cell
   local grade, gradeCfg = GuildManager:GetGuildBossGradeByRank(cell_data.iRank, self.m_myBossRankSize)
   local showRank = GuildManager:GetGuildBossRankNumStr(cell_data.iRank, self.m_myBossRankSize)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_ranknum", showRank)
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_name", guildInfo.sName)
+  LuaBehaviourUtil.setText(luaBehaviour, "m_txt_name", guildInfo.sName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "m_txt_power", cell_data.iScore)
   local m_img_sword = LuaBehaviourUtil.findImg(luaBehaviour, "m_img_sword")
   ResourceUtil:CreateGuildIconById(m_img_sword, guildInfo.iBadgeId)

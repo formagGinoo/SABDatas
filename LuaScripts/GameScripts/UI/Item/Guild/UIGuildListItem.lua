@@ -4,7 +4,7 @@ local UIGuildListItem = class("UIGuildListItem", UIItemBase)
 function UIGuildListItem:OnInit()
   self.m_imgLogo = self.m_itemRootObj.transform:Find("c_img_logo"):GetComponent(T_Image)
   self.m_txtLvText = self.m_itemRootObj.transform:Find("bg_lv/c_txt_lv"):GetComponent(T_TextMeshProUGUI)
-  self.m_txtGuildNameText = self.m_itemRootObj.transform:Find("c_txt_guild_name"):GetComponent(T_TextMeshProUGUI)
+  self.m_txtGuildNameText = self.m_itemRootObj.transform:Find("c_txt_guild_name"):GetComponent(T_Text)
   self.m_txtMbText = self.m_itemRootObj.transform:Find("c_txt_mb"):GetComponent(T_TextMeshProUGUI)
   self.m_iconRankObj = self.m_itemRootObj.transform:Find("c_icon_rank").gameObject
   self.m_tagApplyObj = self.m_itemRootObj.transform:Find("c_tag_apply").gameObject

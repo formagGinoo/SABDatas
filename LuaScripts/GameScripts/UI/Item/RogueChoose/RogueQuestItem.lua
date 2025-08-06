@@ -29,6 +29,7 @@ function RogueQuestItem:OnFreshData()
     item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
       self:OnRewardCommonItemClk(itemID, itemNum, itemCom)
     end)
+    go.transform.localScale = Vector3.one * 0.67
   end, rewards)
   local iState = m_quest.iState
   if iState == MTTDProto.QuestState_Doing then

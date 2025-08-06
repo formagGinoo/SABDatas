@@ -6,7 +6,6 @@ local MaxRewardNumOneDay = 3
 local spineStr = "saint_base"
 
 function ActivitySevenDaysSubPanel_ByMain:OnInit()
-  self:AddEventListeners()
   self.m_vPanelItemConfig = {}
   for i = 1, SignMaxNum do
     self.m_vPanelItemConfig[i] = {}
@@ -36,6 +35,8 @@ function ActivitySevenDaysSubPanel_ByMain:RemoveAllEventListeners()
 end
 
 function ActivitySevenDaysSubPanel_ByMain:OnFreshData()
+  self:RemoveAllEventListeners()
+  self:AddEventListeners()
   self:RefreshUI()
   self:AutoRequestSign()
 end
@@ -48,6 +49,9 @@ function ActivitySevenDaysSubPanel_ByMain:OnEventUpdateSign(stParam)
   if self.m_rootObj.activeInHierarchy then
     utils.popUpRewardUI(stParam.vReward)
     self:RefreshReward()
+    if self.m_parentLua then
+      self.m_parentLua:RefreshTableButtonList()
+    end
   end
 end
 
@@ -206,7 +210,8 @@ function ActivitySevenDaysSubPanel_ByMain:killRemainTimer()
   end
 end
 
-function ActivitySevenDaysSubPanel_ByMain:OnInactivePanel()
+function ActivitySevenDaysSubPanel_ByMain:OnInactive()
+  self:RemoveAllEventListeners()
   self:killRemainTimer()
 end
 

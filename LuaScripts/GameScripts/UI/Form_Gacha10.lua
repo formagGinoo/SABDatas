@@ -6,7 +6,7 @@ end
 function Form_Gacha10:AfterInit()
   self.super.AfterInit(self)
   self.m_widgetResourceBar = self:createResourceBar(self.m_common_top_resource)
-  self.m_vHeroListItem = {}
+  self:HideHeroItems()
 end
 
 function Form_Gacha10:OnActive()
@@ -16,36 +16,32 @@ function Form_Gacha10:OnActive()
   self.m_changeItemList = self.tParam.vRealItem
   self.m_scroreItem = self.tParam.vScoreItem
   self.m_discountType = self.tParam.iDiscountType
-  self.m_vHeroListItem = {}
   self.m_wishCostId = 0
   self.m_wishCostNum = 0
   self.m_costItemId = 0
   self.m_costNum = 0
   self.m_showGachaFreeFlag = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.GachaFree)
+  self:HideHeroItems()
   self:StopSequence()
   self:RefreshHeroList()
   self:RefreshUI()
   self:FreshDiscountBtnShow()
+  self:FreshGacha10SpecialBtnShow()
   self:FreshGacha10FreeBtnShow()
   self:AddEventListeners()
   self:FreshMoreBtnStatus()
-  local id = #self.m_vHeroListItem == 1 and 113 or 114
+  local id = table.getn(self.m_gachaIdList) == 1 and 113 or 114
   GlobalManagerIns:TriggerWwiseBGMState(id)
 end
 
 function Form_Gacha10:OnInactive()
   self.super.OnInactive(self)
-  if self.m_vHeroListItem then
-    for i = 1, #self.m_vHeroListItem do
-      GameObject.Destroy(self.m_vHeroListItem[i].go)
-    end
-  end
-  self.m_vHeroListItem = {}
   self.m_wishCostId = 0
   self.m_wishCostNum = 0
   self.m_costItemId = 0
   self.m_costNum = 0
   self.m_btn_panel:SetActive(true)
+  self:HideHeroItems()
   self:StopSequence()
   self:RemoveAllEventListeners()
 end
@@ -57,6 +53,14 @@ end
 
 function Form_Gacha10:RemoveAllEventListeners()
   self:clearEventListener()
+end
+
+function Form_Gacha10:HideHeroItems()
+  for i = 1, 10 do
+    if not utils.isNull(self["m_pnl_card" .. i]) then
+      UILuaHelper.SetActive(self["m_pnl_card" .. i], false)
+    end
+  end
 end
 
 function Form_Gacha10:OnPauseGame(bPaused)
@@ -167,7 +171,7 @@ function Form_Gacha10:RefreshUI()
   end
   self.m_btn_panel:SetActive(false)
   local sequence = Tweening.DOTween.Sequence()
-  sequence:AppendInterval(0.12 * table.getn(self.m_gachaIdList))
+  sequence:AppendInterval(0.1 * table.getn(self.m_gachaIdList))
   sequence:OnComplete(function()
     if not utils.isNull(self.m_btn_panel) then
       self.m_btn_panel:SetActive(true)
@@ -205,6 +209,10 @@ function Form_Gacha10:IsHideBtnMore()
     local isHave = GachaManager:CheckGacha10HaveFreeTimesById(self.tParam.iGachaId)
     hide = isHave
   end
+  if not hide and self.tParam.iTimesType == 10 then
+    local isHave = GachaManager:IsHaveSpecialGacha10(self.tParam.iGachaId)
+    hide = isHave
+  end
   return hide
 end
 
@@ -219,9 +227,26 @@ function Form_Gacha10:FreshGacha10FreeBtnShow()
       isShowFreeBtn = true
       local freeNumStr = string.CS_Format(ConfigManager:GetCommonTextById(20348), leftFreeTimes, iDailyFreeTimesTen)
       self.m_txt_dailyfreenum10_Text.text = freeNumStr
+      UILuaHelper.SetActive(self.m_pnl_clear10, false)
     end
   end
   UILuaHelper.SetActive(self.m_pnl_dailyfree10, isShowFreeBtn)
+end
+
+function Form_Gacha10:FreshGacha10SpecialBtnShow()
+  if self.tParam.iTimesType == 10 then
+    local have_special10Token, itemId, itemNum, userNum = GachaManager:IsHaveSpecialGacha10(self.tParam.iGachaId)
+    if have_special10Token then
+      ResourceUtil:CreateItemIcon(self.m_clear_icon10_Image, itemId)
+      self.m_clear_num10_Text.text = itemNum .. " / " .. userNum
+      UILuaHelper.SetColor(self.m_clear_num10_Text, 247, 246, 244, 1)
+      UILuaHelper.SetActive(self.m_pnl_clear10, have_special10Token)
+      self.m_txt_clear10_Text.text = string.gsub(ConfigManager:GetCommonTextById(20356), "{0}", ItemManager:GetItemName(itemId))
+    end
+    UILuaHelper.SetActive(self.m_pnl_clear10, have_special10Token)
+  else
+    UILuaHelper.SetActive(self.m_pnl_clear10, false)
+  end
 end
 
 function Form_Gacha10:FreshDiscountBtnShow()
@@ -247,114 +272,64 @@ end
 
 function Form_Gacha10:RefreshHeroList()
   local mItemInfo = self.m_gachaIdList
-  local iCount = 0
-  self.m_pnl_card:SetActive(false)
-  local layout = self.m_list_card.transform:GetComponent(T_HorizontalLayoutGroup)
-  if 1 < #mItemInfo then
-    layout.childAlignment = CS.UnityEngine.TextAnchor.MiddleLeft
-  else
-    layout.childAlignment = CS.UnityEngine.TextAnchor.MiddleCenter
-  end
   for i = 1, table.getn(mItemInfo) do
     local vItemInfo = mItemInfo[i]
     if vItemInfo then
-      iCount = iCount + 1
-      local panelProbabilityItemInfo = self.m_vHeroListItem[iCount]
-      if panelProbabilityItemInfo == nil then
-        panelProbabilityItemInfo = {}
-        panelProbabilityItemInfo.go = CS.UnityEngine.GameObject.Instantiate(self.m_pnl_card, self.m_list_card.transform)
-        self.m_vHeroListItem[iCount] = panelProbabilityItemInfo
-      end
-      local goProbabilityItemInfo = panelProbabilityItemInfo.go
-      goProbabilityItemInfo:SetActive(i == 1)
       local heroData = ResourceUtil:GetProcessRewardData(vItemInfo)
       if heroData == nil then
-        goProbabilityItemInfo:SetActive(false)
         log.error("can not find heroId == " .. tostring(vItemInfo.iID) .. " cfg")
         break
       end
-      local img_head = goProbabilityItemInfo.transform:Find("mask_head/m_img_head"):GetComponent(T_Image)
-      ResourceUtil:CreatHeroBust(img_head, heroData.data_id)
-      local sequenceNew = Tweening.DOTween.Sequence()
-      sequenceNew:AppendInterval(0.11 * i)
-      sequenceNew:OnComplete(function()
-        if not utils.isNull(goProbabilityItemInfo) then
-          goProbabilityItemInfo:SetActive(true)
-        end
-      end)
-      local icon_up = goProbabilityItemInfo.transform:Find("m_icon_up").gameObject
+      ResourceUtil:CreatHeroBust(self["m_img_head" .. i .. "_Image"], heroData.data_id)
       local isUp = GachaManager:CheckIsUpHero(self.tParam.iGachaId, heroData.data_id)
-      icon_up:SetActive(isUp)
-      sequenceNew:SetAutoKill(true)
-      self.m_sequenceList[#self.m_sequenceList + 1] = sequenceNew
-      local item_debris = goProbabilityItemInfo.transform:Find("m_pnl_card_transform").gameObject
-      local icon_new = goProbabilityItemInfo.transform:Find("m_icon_new").gameObject
+      UILuaHelper.SetActive(self["m_icon_up" .. i], isUp)
+      UILuaHelper.SetActive(self["m_pnl_card_transform" .. i], false)
       if self.m_changeItemList[i] and self.m_changeItemList[i].iID ~= 0 then
-        icon_new:SetActive(false)
-        local item_icon = goProbabilityItemInfo.transform:Find("m_pnl_card_transform/m_item_icon"):GetComponent(T_Image)
-        local txt_iconnum = goProbabilityItemInfo.transform:Find("m_pnl_card_transform/m_txt_iconnum"):GetComponent(T_TextMeshProUGUI)
-        ResourceUtil:CreatIconById(item_icon, self.m_changeItemList[i].iID)
-        txt_iconnum.text = string.format(ConfigManager:GetCommonTextById(20049), tostring(self.m_changeItemList[i].iNum))
+        UILuaHelper.SetActive(self["m_icon_new" .. i], false)
+        ResourceUtil:CreatIconById(self["m_item_icon" .. i .. "_Image"], self.m_changeItemList[i].iID)
+        self["m_txt_iconnum" .. i .. "_Text"].text = string.format(ConfigManager:GetCommonTextById(20049), tostring(self.m_changeItemList[i].iNum))
         local sequence2 = Tweening.DOTween.Sequence()
-        sequence2:AppendInterval(0.11 * (table.getn(mItemInfo) - 1))
+        sequence2:AppendInterval(0.1 * (table.getn(mItemInfo) - 1))
         sequence2:OnComplete(function()
-          if not utils.isNull(item_debris) and not utils.isNull(self.m_btn_panel) then
-            item_debris:SetActive(true)
-            UILuaHelper.PlayAnimationByName(item_debris, "m_pnl_card_transform_in")
+          if not utils.isNull(self["m_pnl_card_transform" .. i]) and not utils.isNull(self.m_btn_panel) then
+            UILuaHelper.SetActive(self["m_pnl_card_transform" .. i], true)
+            UILuaHelper.PlayAnimationByName(self["m_pnl_card_transform" .. i], "m_pnl_card_transform_in")
             self.m_btn_panel:SetActive(true)
-          end
-          if not utils.isNull(goProbabilityItemInfo) then
-            goProbabilityItemInfo:SetActive(true)
           end
         end)
         sequence2:SetAutoKill(true)
         self.m_sequenceList[#self.m_sequenceList + 1] = sequence2
       else
-        icon_new:SetActive(true)
-        item_debris:SetActive(false)
-        icon_up:SetActive(false)
+        UILuaHelper.SetActive(self["m_icon_new" .. i], true)
+        UILuaHelper.SetActive(self["m_icon_up" .. i], false)
       end
-      local img_bg_ssr = goProbabilityItemInfo.transform:Find("m_img_bg_ssr").gameObject
-      local img_bg_r = goProbabilityItemInfo.transform:Find("m_img_bg_r").gameObject
-      img_bg_ssr:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      img_bg_r:SetActive(heroData.quality ~= GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      local m_img_r = goProbabilityItemInfo.transform:Find("m_icon_qualitylist/m_img_r").gameObject
-      local m_img_sr = goProbabilityItemInfo.transform:Find("m_icon_qualitylist/m_img_sr").gameObject
-      local m_img_srr = goProbabilityItemInfo.transform:Find("m_icon_qualitylist/m_img_srr").gameObject
-      m_img_r:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.R)
-      m_img_sr:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SR)
-      m_img_srr:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      local img_frame_ssr = goProbabilityItemInfo.transform:Find("m_img_frame_ssr").gameObject
-      local img_frame_r = goProbabilityItemInfo.transform:Find("m_img_frame_r").gameObject
-      img_frame_ssr:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      img_frame_r:SetActive(heroData.quality ~= GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      local m_FX_Card_SSR = goProbabilityItemInfo.transform:Find("m_FX_Card_SSR").gameObject
-      local m_FX_Card_SR = goProbabilityItemInfo.transform:Find("m_FX_Card_SR").gameObject
-      local m_FX_Card_R = goProbabilityItemInfo.transform:Find("m_FX_Card_R").gameObject
-      m_FX_Card_SSR:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
-      m_FX_Card_SR:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SR)
-      m_FX_Card_R:SetActive(heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.R)
-      local m_btn_click_hero = goProbabilityItemInfo.transform:Find("m_btn_click_hero"):GetComponent(T_Button)
-      m_btn_click_hero.onClick:RemoveAllListeners()
-      UILuaHelper.BindButtonClickManual(self, m_btn_click_hero, function()
+      UILuaHelper.SetActive(self["m_img_bg_ssr" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      UILuaHelper.SetActive(self["m_img_bg_r" .. i], heroData.quality ~= GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      UILuaHelper.SetActive(self["m_img_r" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.R)
+      UILuaHelper.SetActive(self["m_img_sr" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SR)
+      UILuaHelper.SetActive(self["m_img_srr" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      UILuaHelper.SetActive(self["m_img_frame_r" .. i], heroData.quality ~= GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      UILuaHelper.SetActive(self["m_img_frame_ssr" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      UILuaHelper.SetActive(self["m_FX_Card_R" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.R)
+      UILuaHelper.SetActive(self["m_FX_Card_SR" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SR)
+      UILuaHelper.SetActive(self["m_FX_Card_SSR" .. i], heroData.quality == GlobalConfig.QUALITY_COMMON_ENUM.SSR)
+      self["m_btn_click_hero" .. i .. "_Button"].onClick:RemoveAllListeners()
+      UILuaHelper.BindButtonClickManual(self, self["m_btn_click_hero" .. i .. "_Button"], function()
         utils.openItemDetailPop({
           iID = heroData.data_id,
           iNum = 1
         })
       end)
       local isWish = GachaManager:CheckIsWishHero(self.tParam.iGachaId, heroData.data_id)
-      local m_img_wish = goProbabilityItemInfo.transform:Find("m_img_wish").gameObject
-      m_img_wish:SetActive(isWish)
+      UILuaHelper.SetActive(self["m_img_wish" .. i], isWish)
     end
   end
-  for i = iCount + 1, #self.m_vHeroListItem do
-    self.m_vHeroListItem[i].go:SetActive(false)
-  end
+  local animName = 1 < #mItemInfo and "Gacha10_in_10" or "Gacha10_in_1"
+  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, animName)
 end
 
 function Form_Gacha10:OnDestroy()
   self.super.OnDestroy(self)
-  self.m_vHeroListItem = nil
   self:RemoveAllEventListeners()
 end
 
@@ -430,6 +405,18 @@ function Form_Gacha10:OnBtncountitemClicked()
       GachaManager:RequestGachaResult(params)
     end
   })
+end
+
+function Form_Gacha10:OnBtnclear10Clicked()
+  GachaManager:SetSkippedInteract(true)
+  GachaManager:SetSkippedHeroShow(false)
+  UILuaHelper.SetPlayVideoIsSkipped(false)
+  local params = {
+    iGachaId = self.tParam.iGachaId,
+    iTimesType = self.tParam.iTimesType,
+    iDiscountType = self.tParam.iDiscountType
+  }
+  GachaManager:RequestGachaResult(params)
 end
 
 function Form_Gacha10:OnBtndailyfree10Clicked()

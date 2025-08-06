@@ -35,21 +35,39 @@ function Form_PlayerProtocolPop:OnDestroy()
 end
 
 function Form_PlayerProtocolPop:RefreshUI()
-  self.m_csui.m_uiGameObject.transform:Find("ui_common_frame_big/img_txt_bg/txt_frame_big_title"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolTitle")
-  self.m_btn_yes.transform:Find("txt_yes"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolYes")
-  self.m_btn_cancle.transform:Find("txt_upgrade_black"):GetComponent("TextMeshProUGUI").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolNo")
+  self.m_csui.m_uiGameObject.transform:Find("ui_common_frame_big/img_txt_bg/txt_frame_big_title"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolTitle")
+  self.m_btn_yes.transform:Find("txt_yes"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolYes")
+  self.m_btn_cancle.transform:Find("txt_upgrade_black"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolNo")
   self.m_textContent_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerProtocolContent")
-  self.m_toggle_txt_user_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerUserToggle")
-  self.m_toggle_txt_privacypolicy_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggle")
+  local userContent = ""
+  userContent = CS.ConfFact.LangFormat4DataInit("PlayerUserToggle")
+  local userPrivacy = ""
+  userPrivacy = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggle")
   if ChannelManager:IsUSChannel() then
-    self.m_toggle_txt_user_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerUserToggleUs")
-    self.m_toggle_txt_privacypolicy_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggleUs")
+    userContent = CS.ConfFact.LangFormat4DataInit("PlayerUserToggleUs")
+    userPrivacy = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggleUs")
   end
   if ChannelManager:IsDMMChannel() then
-    self.m_toggle_txt_user_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerUserToggleDMM")
-    self.m_toggle_txt_privacypolicy_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggleDMM")
+    userContent = CS.ConfFact.LangFormat4DataInit("PlayerUserToggleDMM")
+    userPrivacy = CS.ConfFact.LangFormat4DataInit("PlayerPrivacyToggleDMM")
   end
   self.m_toggle_txt_ageagreement_Text.text = CS.ConfFact.LangFormat4DataInit("PlayerAgeToggle")
+  local userUrl, useTxt = self:DealAgreement(userContent)
+  self.m_toggle_txt_user_Text.text = tostring(useTxt)
+  local useBtn = self.m_toggle_txt_user:GetComponent("Button")
+  if useBtn then
+    UILuaHelper.BindButtonClickManual(useBtn, function()
+      self:DealJump(userUrl)
+    end)
+  end
+  local privacyUrl, privacyTxt = self:DealAgreement(userPrivacy)
+  self.m_toggle_txt_privacypolicy_Text.text = tostring(privacyTxt)
+  local privacyBtn = self.m_toggle_txt_privacypolicy:GetComponent("Button")
+  if privacyBtn then
+    UILuaHelper.BindButtonClickManual(privacyBtn, function()
+      self:DealJump(privacyUrl)
+    end)
+  end
 end
 
 function Form_PlayerProtocolPop:OnBtnCloseClicked()
@@ -121,6 +139,20 @@ function Form_PlayerProtocolPop:OnBtncancleClicked()
   self.m_Toggle_user_Toggle.isOn = true
   self.m_Toggle_privacypolicy_Toggle.isOn = true
   self.m_Toggle_ageagreement_Toggle.isOn = true
+end
+
+function Form_PlayerProtocolPop:DealAgreement(str)
+  local linkPattern = "<link=(.-)>(.-)</link>"
+  local linkID, displayText = string.match(str, linkPattern)
+  return linkID, displayText
+end
+
+function Form_PlayerProtocolPop:DealJump(str)
+  local input = str
+  local params = string.split(input, ";")
+  if params[2] then
+    StackPopup:Push(UIDefines.ID_FORM_PLAYERCANCELINFORTIPS, params[2])
+  end
 end
 
 function Form_PlayerProtocolPop:IsOpenGuassianBlur()

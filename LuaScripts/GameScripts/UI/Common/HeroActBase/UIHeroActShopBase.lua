@@ -48,6 +48,23 @@ function UIHeroActShopBase:OnInactive()
     self.timer = nil
   end
   self.m_GoodsListInfinityGrid:dispose()
+  self:SetShopItemRedDot()
+end
+
+function UIHeroActShopBase:SetShopItemRedDot()
+  local goods = ShopManager:GetShopGoodsByShopId(self.m_ShopID) or {}
+  for _, v in ipairs(goods) do
+    local flag = HeroActivityManager:IsShopGoodsHaveRedDot({
+      iActID = self.config.m_ActId,
+      iGroupID = v.iGroupId,
+      iGoodsId = v.iGoodsId,
+      iBought = v.iBought
+    })
+    if flag == 1 then
+      LocalDataManager:SetIntSimple(self.config.m_ActId .. "_ActShopGoodsRedDot_" .. v.iGroupId .. "_" .. v.iGoodsId, 1, true)
+      self:broadcastEvent("eGameEvent_Level_Lamia_ShopGoodsClicked")
+    end
+  end
 end
 
 function UIHeroActShopBase:CheckShowEnterAnim()
@@ -81,6 +98,7 @@ function UIHeroActShopBase:AddEventListeners()
   self:addEventListener("eGameEvent_RefreshShopItem", handler(self, self.OnEventShopItemRefresh))
   self:addEventListener("eGameEvent_ShopSoldOut", handler(self, self.RefreshShopItemSoldOutAnim))
   self:addEventListener("eGameEvent_Item_SetItem", handler(self, self.RefreshSetItem))
+  self:addEventListener("eGameEvent_HeroAct_DailyReset", handler(self, self.OnEventShopRefresh))
 end
 
 function UIHeroActShopBase:RefreshUI()

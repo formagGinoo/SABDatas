@@ -2,7 +2,7 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local PushJumpFaceActivity = class("PushJumpFaceActivity", UISubPanelBase)
 local SpineStrCfg = {
   ui_activity_lamiaface = "empusae_final",
-  ui_activity_huntingnightface = "cidhall_base",
+  ui_activity_huntingnightface = "clivejr_base",
   ui_activity_qigelunaface = "siegrune_base"
 }
 

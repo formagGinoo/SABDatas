@@ -1,16 +1,13 @@
 local UIHeroActDialogueMainBase = class("UIHeroActDialogueMainBase", require("UI/Common/UIBase"))
 local HeroActivityManager = _ENV.HeroActivityManager
 local LevelHeroLamiaActivityManager = _ENV.LevelHeroLamiaActivityManager
-local UILamiaLevelItem = require("UI/Item/LamiaLevel/UILamiaLevelItem")
 local LevelDegree = LevelHeroLamiaActivityManager.LevelDegree
-local DefaultDegreeIndex = 1
 
 function UIHeroActDialogueMainBase:AfterInit()
   UIHeroActDialogueMainBase.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1117)
-  self.m_widgetResourceBar = self:createResourceBar(self.m_top_resource)
   self.m_activityID = nil
   self.m_intoModel = nil
   self.m_luaDetailLevel = nil
@@ -96,15 +93,18 @@ end
 
 function UIHeroActDialogueMainBase:RegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_hard_red_dot, RedDotDefine.ModuleType.HeroActActivityEntry, self.DegreeCfgTab[LevelDegree.Hard].activitySubID)
-  self:RegisterOrUpdateRedDotItem(self.m_task_red_dot, RedDotDefine.ModuleType.HeroActTaskEntry, self.m_activityID)
+  if not utils.isNull(self.m_task_red_dot) then
+    self:RegisterOrUpdateRedDotItem(self.m_task_red_dot, RedDotDefine.ModuleType.HeroActTaskEntry, self.m_activityID)
+  end
   self:RegisterOrUpdateRedDotItem(self.m_recount_red_dot, RedDotDefine.ModuleType.HeroActMemoryEntry, self.m_activityID)
-  self:RegisterOrUpdateRedDotItem(self.m_store_redpoint, RedDotDefine.ModuleType.HeroActShopEntry, self.m_activityID)
+  if not utils.isNull(self.m_store_redpoint) then
+    self:RegisterOrUpdateRedDotItem(self.m_store_redpoint, RedDotDefine.ModuleType.HeroActShopEntry, self.m_activityID)
+  end
 end
 
 function UIHeroActDialogueMainBase:AddEventListeners()
   self:addEventListener("eGameEvent_Level_Lamia_Sweep", handler(self, self.OnEventLamiaSweep))
   self:addEventListener("eGameEvent_HeroAct_DailyReset", handler(self, self.OnHeroActDailyReset))
-  self:addEventListener("eGameEvent_Item_SetItem", handler(self, self.FreshShopEnterItem))
   self:addEventListener("eGameEvent_Level_Lamia_StageFresh", handler(self, self.OnFreshLamiaStageFresh))
   self:addEventListener("eGameEvent_RefreshShopData", handler(self, self.OnEventShopRefresh))
   if self.m_luaDetailLevel then
@@ -164,9 +164,6 @@ function UIHeroActDialogueMainBase:GetHardTimeUnlockStr()
 end
 
 function UIHeroActDialogueMainBase:GetChooseIndex()
-  if self.m_intoModel then
-    return self.m_intoModel
-  end
   local degreeCfgTab = self.DegreeCfgTab[LevelDegree.Normal]
   if not degreeCfgTab then
     return
@@ -228,9 +225,6 @@ function UIHeroActDialogueMainBase:FreshUI()
   self:FreshHardLockStatus()
   self.m_curDetailLevelID = nil
   self:FreshLevelDetailShow()
-  self.m_curDegreeIndex = self.m_curDegreeIndex or self:GetChooseIndex() or DefaultDegreeIndex
-  self:FreshItemIcon()
-  self:FreshShopEnterItem()
   self:FreshFreeNums()
   self:CheckPopUpLastPassSpecialReward()
 end
@@ -255,29 +249,21 @@ end
 function UIHeroActDialogueMainBase:FreshFreeNums()
   local totalFreeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("ActLamiaPassDailyLimit") or 0)
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    log.error("UIHeroActDialogueMainBase:FreshFreeNums error! mainActInfoCfg = " .. tostring(mainActInfoCfg))
+    return
+  end
   local costItemID = mainActInfoCfg.m_PassItem
   local itemNum = ItemManager:GetItemNum(costItemID)
-  self.m_txt_consume_num_Text.text = itemNum .. "/" .. totalFreeNum
+  self.m_txt_consume_num_Text.text = itemNum
+  local freeItemId = mainActInfoCfg.m_FreePassItem
+  local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
+  if not utils.isNull(self.m_txt_consume_numadd_Text) then
+    self.m_txt_consume_numadd_Text.text = freeitemNum .. "/" .. totalFreeNum
+  end
 end
 
 function UIHeroActDialogueMainBase:FreshShopEnterItem()
-  local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
-  local itemID = mainActInfoCfg.m_ShopItem
-  local itemPath = ItemManager:GetItemIconPathByID(itemID)
-  if itemPath then
-    UILuaHelper.SetAtlasSprite(self.m_icon_shop_Image, itemPath)
-  end
-  self.m_txt_icon_num_Text.text = ItemManager:GetItemNum(itemID) or 0
-end
-
-function UIHeroActDialogueMainBase:FreshItemIcon()
-  if self.m_widgetResourceBar then
-    local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
-    local costItemID = mainActInfoCfg.m_PassItem
-    self.m_widgetResourceBar:FreshChangeItems({
-      [1] = costItemID
-    })
-  end
 end
 
 function UIHeroActDialogueMainBase:FreshLevelTab(index)
@@ -317,18 +303,20 @@ end
 function UIHeroActDialogueMainBase:FreshHardLockStatus()
   local subActivityID = self.DegreeCfgTab[LevelDegree.Hard].activitySubID
   local isOpen = HeroActivityManager:IsSubActIsOpenByID(self.m_activityID, subActivityID)
-  if not isOpen then
-    local isInTime = HeroActivityManager:IsSubActInOpenTime(subActivityID)
-    UILuaHelper.SetActive(self.m_txt_locktime, not isInTime)
-    UILuaHelper.SetActive(self.m_txt_lock_condition, isInTime)
-    if isInTime then
-      self.m_txt_lock_condition_Text.text = self:GetHardLevelUnlockStr()
+  if not utils.isNull(self.m_txt_locktime) then
+    if not isOpen then
+      local isInTime = HeroActivityManager:IsSubActInOpenTime(subActivityID)
+      UILuaHelper.SetActive(self.m_txt_locktime, not isInTime)
+      UILuaHelper.SetActive(self.m_txt_lock_condition, isInTime)
+      if isInTime then
+        self.m_txt_lock_condition_Text.text = self:GetHardLevelUnlockStr()
+      else
+        self.m_txt_locktime_Text.text = self:GetHardTimeUnlockStr()
+      end
     else
-      self.m_txt_locktime_Text.text = self:GetHardTimeUnlockStr()
+      UILuaHelper.SetActive(self.m_txt_locktime, false)
+      UILuaHelper.SetActive(self.m_txt_lock_condition, false)
     end
-  else
-    UILuaHelper.SetActive(self.m_txt_locktime, false)
-    UILuaHelper.SetActive(self.m_txt_lock_condition, false)
   end
   UILuaHelper.SetActive(self.m_hard_lock, not isOpen)
   self.m_isHarLock = not isOpen
@@ -372,6 +360,10 @@ function UIHeroActDialogueMainBase:OnEventShopRefresh()
   if not self.m_activityID then
     return
   end
+  if not config then
+    log.error("UIHeroActDialogueMainBase:OnEventShopRefresh error! config = " .. tostring(config))
+    return
+  end
   if self.bIsWaitingShopData then
     QuickOpenFuncUtil:OpenFunc(config.m_ShopJumpID)
     self.bIsWaitingShopData = false
@@ -383,9 +375,12 @@ function UIHeroActDialogueMainBase:OnBtnshopClicked()
     return
   end
   local config = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not config then
+    return
+  end
   local jumpIns = ConfigManager:GetConfigInsByName("Jump")
   local jump_item = jumpIns:GetValue_ByJumpID(config.m_ShopJumpID)
-  local windowId = jump_item.m_WindowID
+  local windowId = jump_item.m_Param.Length > 0 and tonumber(jump_item.m_Param[0]) or 0
   local shop_list = ShopManager:GetShopConfigList(ShopManager.ShopType.ShopType_Activity)
   local shop_id
   for i, v in ipairs(shop_list) do
@@ -407,6 +402,9 @@ end
 
 function UIHeroActDialogueMainBase:OnIconshopClicked()
   local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    return
+  end
   local itemID = mainActInfoCfg.m_ShopItem
   local itemNum = ItemManager:GetItemNum(itemID)
   utils.openItemDetailPop({iID = itemID, iNum = itemNum})

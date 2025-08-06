@@ -47,7 +47,19 @@ function PaidGiftPackUpCommonItem:RefreshReward()
   if self.m_pnl_itemgift then
     local itemRoot = self.m_pnl_itemgift.transform
     local bHaveExtraReward = config.vRewardExt and #config.vRewardExt > 0
-    self:UpdateChildCount(itemRoot, bHaveExtraReward and #config.vReward + 1 or #config.vReward)
+    local exTraRewardIndex = 0
+    local pointRewardIndex = 0
+    local count = #config.vReward
+    if bHaveExtraReward then
+      count = count + 1
+      exTraRewardIndex = count - 1
+    end
+    local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+    if isShowPoint then
+      count = count + 1
+      pointRewardIndex = count - 1
+    end
+    self:UpdateChildCount(itemRoot, count)
     for i, v in ipairs(config.vReward) do
       local itemObj = itemRoot:GetChild(i - 1).gameObject
       local common_item = self:createCommonItem(itemObj)
@@ -61,7 +73,7 @@ function PaidGiftPackUpCommonItem:RefreshReward()
       common_item:SetItemInfo(processItemData)
     end
     if bHaveExtraReward then
-      local itemObj = itemRoot:GetChild(#config.vReward).gameObject
+      local itemObj = itemRoot:GetChild(exTraRewardIndex).gameObject
       local common_item = self:createCommonItem(itemObj)
       common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
         utils.openItemDetailPop({iID = itemID, iNum = itemNum})
@@ -72,6 +84,18 @@ function PaidGiftPackUpCommonItem:RefreshReward()
       })
       common_item:SetItemInfo(processItemData)
       common_item:SetGiftIcon(true)
+    end
+    if isShowPoint then
+      local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
+      local common_item = self:createCommonItem(itemObj)
+      common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+        utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+      end)
+      local processItemData = ResourceUtil:GetProcessRewardData({
+        iID = pointReward.iID,
+        iNum = pointReward.iNum
+      })
+      common_item:SetItemInfo(processItemData)
     end
   end
 end
@@ -211,6 +235,13 @@ function PaidGiftPackUpCommonItem:OnBtnbuyClicked()
   local rewardList = {}
   for i, v in ipairs(config.vReward) do
     table.insert(rewardList, v)
+  end
+  if config.vRewardExt and 0 < #config.vRewardExt then
+    table.insert(rewardList, config.vRewardExt[1])
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+  if isShowPoint then
+    table.insert(rewardList, pointReward)
   end
   local ProductInfo = {
     StoreID = config.iStoreId,

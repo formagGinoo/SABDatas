@@ -113,7 +113,7 @@
       "m_StartTime": "\"\"",
       "m_EndTime": "\"\"",
       "m_MainCurrency": "[1060]",
-      "m_GoodsGroupID": "[110005,110006,110007,110008,110009]",
+      "m_GoodsGroupID": "[110005,110006,110007,110008,110009,110010]",
       "m_CensorGoodsGroupID": "[110005,110006,110007,110008,110009]",
       "m_RefreshNum": null,
       "m_RefreshCost": "[]",
@@ -192,7 +192,31 @@
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
       "m_mLockDesc": "\"\""
+    },
+    "9005": {
+      "m_bError": null,
+      "m_ShopID": "9005",
+      "m_WindowID": "26009",
+      "m_ShopVersion": "1",
+      "m_Type": "2",
+      "m_ActId": "1050",
+      "m_Order": "1",
+      "m_IsOn": "1",
+      "m_mName": "\"Reserved String\"",
+      "m_IconPath": "\"\"",
+      "m_IconPathClick": "\"\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"2025-6-10 04:00:00\"",
+      "m_EndTime": "\"2025-7-24 03:59:59\"",
+      "m_MainCurrency": "[500052,99]",
+      "m_GoodsGroupID": "[900501,900502,900503,900504,900505,900506,900507,900508,900509,900510,900511,900512,900513,900514,900515,900516,900517,900518,900519,900520,900521,900522]",
+      "m_CensorGoodsGroupID": "[900501,900502,900503,900504,900505,900506,900507,900508,900509,900510,900511,900512,900513,900514,900515,900516,900517,900518,900519,900520,900521,900522]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\""
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_9_items"
 }

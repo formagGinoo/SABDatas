@@ -277,6 +277,18 @@
       "m_BuffList": "[]",
       "m_ShowBuffDesc": "[]"
     },
+    "3167001": {
+      "m_bError": null,
+      "m_ID": "3167001",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Flames of War\"",
+      "m_mDesc": "\"When Flames of War is hit by two explosions from Entropic Flames, it becomes Weakened.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
     "3200001": {
       "m_bError": null,
       "m_ID": "3200001",
@@ -517,6 +529,66 @@
       "m_BuffList": "[4917]",
       "m_ShowBuffDesc": "[4917]"
     },
+    "4918000": {
+      "m_bError": null,
+      "m_ID": "4918000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4918000\"",
+      "m_mName": "\"Devouring Codex\"",
+      "m_mDesc": "\"When a Vassal eliminates a monster, increases ATK by <style=Highlight>{0}</style> Basic ATK until the end of battle.\"",
+      "m_Param": "[49180001]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4918]",
+      "m_ShowBuffDesc": "[4918]"
+    },
+    "4919000": {
+      "m_bError": null,
+      "m_ID": "4919000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4919000\"",
+      "m_mName": "\"Stellar Geomancy\"",
+      "m_mDesc": "\"When Blood Moon is active, gain an additional Malediction card. Malediction cards deal massive DMG to targets.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4919]",
+      "m_ShowBuffDesc": "[4919]"
+    },
+    "4920000": {
+      "m_bError": null,
+      "m_ID": "4920000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4920000\"",
+      "m_mName": "\"Blood Craze\"",
+      "m_mDesc": "\"When the battle begins, every <style=Highlight>{0}</style> sec, all allies lose HP equal to <style=Highlight>{1}</style> of Max HP. Ultimate cost is reduced by 1.\"",
+      "m_Param": "[49200001,49200002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4920]",
+      "m_ShowBuffDesc": "[4920]"
+    },
+    "4921000": {
+      "m_bError": null,
+      "m_ID": "4921000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4921000\"",
+      "m_mName": "\"Infernal Comet\"",
+      "m_mDesc": "\"When allied summons die, they deal <style=Highlight>{0}</style> ATK (M. DMG) to nearby enemies based on the summoner's ATK.\"",
+      "m_Param": "[49210001]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4921]",
+      "m_ShowBuffDesc": "[4921]"
+    },
+    "4922000": {
+      "m_bError": null,
+      "m_ID": "4922000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4922000\"",
+      "m_mName": "\"Primal Roar\"",
+      "m_mDesc": "\"When performing Basic ATKs, gains ATK SPD +<style=Highlight>{0}</style>, CRIT Hit Rate +<style=Highlight>{1}</style>, and CRIT DMG Dealt +<style=Highlight>{2}</style> until the battle ends.\"",
+      "m_Param": "[49220001,49220002,49220003]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4922]",
+      "m_ShowBuffDesc": "[4922]"
+    },
     "6000201": {
       "m_bError": null,
       "m_ID": "6000201",
@@ -662,5 +734,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_55_items"
+  "status": "processed_61_items"
 }

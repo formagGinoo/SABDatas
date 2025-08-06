@@ -30,7 +30,8 @@ end
 
 function Form_CastleEventPop02:OnBtnCloseClicked()
   StackFlow:Push(UIDefines.ID_FORM_CASTLEEVENTMAIN, {
-    cfg = self.m_csui.m_param.cfg
+    cfg = self.m_csui.m_param.cfg,
+    showStoryType = self.m_csui.m_param.showStoryType
   })
   self:CloseForm()
 end

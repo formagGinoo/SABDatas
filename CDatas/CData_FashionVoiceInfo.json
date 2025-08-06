@@ -112,7 +112,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by default\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
@@ -146,7 +146,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003018": {
@@ -201,7 +201,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003023": {
@@ -225,233 +225,6 @@
           "m_mTitle": "\"Charm III\"",
           "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
-        }
-      }
-    },
-    "6021001": {
-      "_type": "nested_dictionary",
-      "_count": 20,
-      "_processed": 20,
-      "data": {
-        "60002002": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002002",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "2",
-          "m_mTitle": "\"Ultimate\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_C_20210\""
-        },
-        "60002004": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002004",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "1",
-          "m_mTitle": "\"Special\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_C_20210\""
-        },
-        "60002006": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002006",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "7",
-          "m_mTitle": "\"Death\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_C_20210\""
-        },
-        "60002007": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002007",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "3",
-          "m_mTitle": "\"Deployment\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_C_20210\""
-        },
-        "60002008": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002008",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "6",
-          "m_mTitle": "\"Victory\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_C_20210\""
-        },
-        "60002009": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002009",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "8",
-          "m_mTitle": "\"Obtain\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002010": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002010",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "9",
-          "m_mTitle": "\"Character Select\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002011": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002011",
-          "m_UnlockType": "2",
-          "m_UnlockData": "2",
-          "m_Sort": "11",
-          "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002012": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002012",
-          "m_UnlockType": "3",
-          "m_UnlockData": "1",
-          "m_Sort": "12",
-          "m_mTitle": "\"Spirit Siphon\"",
-          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002014": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002014",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002015": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002015",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "13",
-          "m_mTitle": "\"Transfusion\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002016": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002016",
-          "m_UnlockType": "1",
-          "m_UnlockData": null,
-          "m_Sort": "14",
-          "m_mTitle": "\"Banquet\"",
-          "m_mUnlockDesc": "\"Unlock by default\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002017": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002017",
-          "m_UnlockType": "4",
-          "m_UnlockData": "5",
-          "m_Sort": "15",
-          "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002018": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002018",
-          "m_UnlockType": "4",
-          "m_UnlockData": "10",
-          "m_Sort": "22",
-          "m_mTitle": "\"Reach Affinity Rank 10\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002019": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002019",
-          "m_UnlockType": "4",
-          "m_UnlockData": "1",
-          "m_Sort": "16",
-          "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002020": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002020",
-          "m_UnlockType": "4",
-          "m_UnlockData": "1",
-          "m_Sort": "17",
-          "m_mTitle": "\"Converse II\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002021": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002021",
-          "m_UnlockType": "4",
-          "m_UnlockData": "1",
-          "m_Sort": "18",
-          "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002022": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002022",
-          "m_UnlockType": "4",
-          "m_UnlockData": "7",
-          "m_Sort": "19",
-          "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002023": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002023",
-          "m_UnlockType": "4",
-          "m_UnlockData": "8",
-          "m_Sort": "20",
-          "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
-        },
-        "60002024": {
-          "m_bError": null,
-          "m_FashionID": "6021001",
-          "m_VoiceId": "60002024",
-          "m_UnlockType": "4",
-          "m_UnlockData": "9",
-          "m_Sort": "21",
-          "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
-          "m_VoiceBank": "\"Vo_System_C_20210\""
         }
       }
     },
@@ -544,7 +317,7 @@
           "m_UnlockType": "1",
           "m_UnlockData": null,
           "m_Sort": "10",
-          "m_mTitle": "\"Journal Select\"",
+          "m_mTitle": "\"Idle\"",
           "m_mUnlockDesc": "\"Unlock by default\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
@@ -578,7 +351,7 @@
           "m_UnlockData": "5",
           "m_Sort": "15",
           "m_mTitle": "\"Affinity LV. UP\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 5\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001018": {
@@ -633,7 +406,7 @@
           "m_UnlockData": "7",
           "m_Sort": "19",
           "m_mTitle": "\"Charm I\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal Affinity to Rank 7\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001023": {
@@ -661,5 +434,5 @@
       }
     }
   },
-  "status": "processed_3_items"
+  "status": "processed_2_items"
 }
