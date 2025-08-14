@@ -3,7 +3,7 @@ local Job_Startup_InitMSDK_Impl = {}
 function Job_Startup_InitMSDK_Impl.OnInitMSDK(jobNode)
   CS.LuaCallCS.AddLuaSearchPath("MufLibs/com.muf.net.client.mfw/", false)
   CS.LuaCallCS.AddLuaSearchPath("MufLibs/com.muf.net.client.mfw/sdplua/", false)
-  if ChannelManager:IsUsingQSDK() or ChannelManager:IsDMMChannel() then
+  if ChannelManager:IsUsingQSDK() or ChannelManager:IsDMMChannel() or ChannelManager:IsWegameChannel() then
     jobNode.Status = JobStatus.Success
   else
     local InitMSDKFlow = require("JobFlow/JobGraphInitMSDK/JobGraphInitMSDK")

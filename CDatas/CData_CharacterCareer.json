@@ -14,8 +14,8 @@
       "m_CareerID": "2",
       "m_mCareerName": "\"Assassin\"",
       "m_mCareerDesc": "\"Adept at breaking through or avoiding the front line, directly striking the weaker middle and backline enemies.\"",
-      "m_CareerIcon": "\"q_btn_hall_activityer/Career2\"",
-      "m_FilterIcon": "\"Qtlas_CharacterCareer/common_career2\""
+      "m_CareerIcon": "\"Atlas_CharacterCareer/Career2\"",
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career2\""
     },
     "3": {
       "m_bError": null,
@@ -31,7 +31,7 @@
       "m_mCareerName": "\"Marksman\"",
       "m_mCareerDesc": "\"Deals consistent, strong DMG to a single target or targets in a small area.\"",
       "m_CareerIcon": "\"Atlas_CharacterCareer/Career4\"",
-      "m_FilterIcon": "\"Form_HallracterCareer/common_career4\""
+      "m_FilterIcon": "\"Atlas_CharacterCareer/common_career4\""
     },
     "5": {
       "m_bError": null,

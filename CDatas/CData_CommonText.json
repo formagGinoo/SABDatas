@@ -356,6 +356,21 @@
       "m_Id": "3001",
       "m_mMessage": "\"Max: LV. {0}\""
     },
+    "4004": {
+      "m_bError": null,
+      "m_Id": "4004",
+      "m_mMessage": "\"Smoke Signals\""
+    },
+    "4005": {
+      "m_bError": null,
+      "m_Id": "4005",
+      "m_mMessage": "\"New Event [Against The Dying Light] Starts <color=#81BAF5>08/21</color>\""
+    },
+    "4006": {
+      "m_bError": null,
+      "m_Id": "4006",
+      "m_mMessage": "\"Sign in 6 days to activate all pieces and unlock <color=#81BAF5>Smoke Signals</color> in Main Hall - Customize.\""
+    },
     "10001": {
       "m_bError": null,
       "m_Id": "10001",
@@ -3182,5 +3197,5 @@
       "m_mMessage": "\"Defeat the wolf pack to interrupt the skill.\""
     }
   },
-  "status": "processed_636_items"
+  "status": "processed_639_items"
 }

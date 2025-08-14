@@ -1,6 +1,9 @@
 local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local ActivitySignSixPuzzleSubPanel = class("ActivitySignSixPuzzleSubPanel", UISubPanelBase)
 local SignMaxNum = 6
+local titleTxt = ConfigManager:GetCommonTextById(4004)
+local openTimeTxt = ConfigManager:GetCommonTextById(4005)
+local tipsTxt = ConfigManager:GetCommonTextById(4006)
 
 function ActivitySignSixPuzzleSubPanel:OnInit()
   self.m_vPanelItemConfig = {}
@@ -16,6 +19,7 @@ function ActivitySignSixPuzzleSubPanel:OnInit()
   local m_PrefabHelper = self.m_reward:GetComponent("PrefabHelper")
   self.m_PrefabHelper = m_PrefabHelper
   self.m_exRewardList = {}
+  self:RefreshConfigTxt()
 end
 
 function ActivitySignSixPuzzleSubPanel:AddEventListeners()
@@ -115,7 +119,7 @@ function ActivitySignSixPuzzleSubPanel:RefreshSignReward()
               local bSignToday = self.m_stActivity:IsSignToday()
               if not bSignToday then
                 stPanelItemConfig.rewardFinish:SetActive(true)
-                UILuaHelper.PlayAnimationByName(stPanelItemConfig.rewardFinish, "m_pnl_puzzle_item_done_in")
+                UILuaHelper.PlayAnimationByName(stPanelItemConfig.rewardFinish, "m_pnl_106warmup_item_done_in")
                 self:KillRewardTimer()
                 self.m_getRewardTimer = TimeService:SetTimer(1, 1, function()
                   self.m_stActivity:RequestSign(stSignInfo.iIndex)
@@ -137,12 +141,17 @@ function ActivitySignSixPuzzleSubPanel:RefreshSignReward()
         if isShowReward then
           ResourceUtil:CreatIconById(stPanelItemConfig.rewardItemIcon, stSignInfoReward.iID)
           stPanelItemConfig.rewardNum.text = stSignInfoReward.iNum
-          UILuaHelper.BindButtonClickManual(stPanelItemConfig.rewardItemBtn, function()
-            utils.openItemDetailPop({
-              iID = stSignInfoReward.iID,
-              iNum = stSignInfoReward.iNum
-            })
-          end)
+          if i == iSignNum + 1 and not bSignToday then
+            stPanelItemConfig.rewardItemBtn.enabled = false
+          else
+            stPanelItemConfig.rewardItemBtn.enabled = true
+            UILuaHelper.BindButtonClickManual(stPanelItemConfig.rewardItemBtn, function()
+              utils.openItemDetailPop({
+                iID = stSignInfoReward.iID,
+                iNum = stSignInfoReward.iNum
+              })
+            end)
+          end
         end
         if i == SignMaxNum and stSignInfo.stRewardInfo[2] then
           self.m_exRewardList = {}
@@ -184,6 +193,12 @@ end
 function ActivitySignSixPuzzleSubPanel:ShowItemTips(iID, iNum)
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   utils.openItemDetailPop({iID = iID, iNum = iNum})
+end
+
+function ActivitySignSixPuzzleSubPanel:RefreshConfigTxt()
+  self.m_txt_title_Text.text = tostring(titleTxt)
+  self.m_txt_opentime_Text.text = tostring(openTimeTxt)
+  self.m_txt_tips_Text.text = tostring(tipsTxt)
 end
 
 function ActivitySignSixPuzzleSubPanel:KillRewardTimer()

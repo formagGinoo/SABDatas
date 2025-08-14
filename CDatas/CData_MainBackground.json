@@ -98,7 +98,21 @@
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_07_s\"",
       "m_mItemDec": "\"Unlock the [Twilight Before The Dawn] scene in Customize - Memories.\n<alpha=#80>Through those eyes, one can seemingly glimpse the moon of their homeland once more, shining upon companions of the past.\"",
       "m_HideType": null
+    },
+    "1600009": {
+      "m_bError": null,
+      "m_BDID": "1600009",
+      "m_mBDName": "\"Smoke Signals\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg106_1\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner09\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_09\"",
+      "m_mGetwayDes": "\"[Smoke Signals] Rewards\"",
+      "m_mItemName": "\"Memories: Smoke Signals\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_09_s\"",
+      "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace…find its rest...\"",
+      "m_HideType": null
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_8_items"
 }

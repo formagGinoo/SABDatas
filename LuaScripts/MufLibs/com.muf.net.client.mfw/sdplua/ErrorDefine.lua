@@ -345,6 +345,7 @@ Error_Mail_Invalid = 1284
 Error_Mail_BanReceive = 1285
 Error_Mail_Read = 1286
 Error_Mail_TakeAllInvalid = 1287
+Error_Mail_CollectMailExist = 1288
 Error_Name_RoleNameExist = 1290
 Error_Name_RoleNameSame = 1291
 Error_Name_LengthLimit = 1293

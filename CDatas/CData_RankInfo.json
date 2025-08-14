@@ -1,6 +1,21 @@
 {
   "className": "CData_RankInfo",
   "data": {
+    "1001": {
+      "m_bError": null,
+      "m_RankID": "1001",
+      "m_ShowType": null,
+      "m_ShowSubType": null,
+      "m_mName": "\"Threads of Fate: Normal\"",
+      "m_ICON": "\"\"",
+      "m_SystemID": "2",
+      "m_GetOn": "1101030",
+      "m_mGetOnText": "\"Rank Requirement: Clear [Threads of Fate] Normal - Chapter 0.\"",
+      "m_Num": "100",
+      "m_IsShow": null,
+      "m_mPowerText": "\"\"",
+      "m_mTitleText": "\"\""
+    },
     "1002": {
       "m_bError": null,
       "m_RankID": "1002",
@@ -227,5 +242,5 @@
       "m_mTitleText": "\"\""
     }
   },
-  "status": "processed_15_items"
+  "status": "processed_16_items"
 }
