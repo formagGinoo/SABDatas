@@ -73,6 +73,9 @@ function Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource(
   local sCacheResVer = LocalDataManager:GetStringSimple("Login_Download_LocalVersion", sLocalResVer)
   log.info("Login DownloadNecessaryResource LocalResVersion: " .. sLocalResVer)
   log.info("Login DownloadNecessaryResource CacheResVersion: " .. sCacheResVer)
+  local sStreamResVer = CS.VersionUtil.GetResVer(versionContext.ClientStreamVersion)
+  log.info("Login DownloadNecessaryResource StreamResVer: " .. sStreamResVer)
+  sCacheResVer = sStreamResVer
   local sCoreResourcePackName = ""
   local sExpansionResourcePackName = ""
   if bNewbie then

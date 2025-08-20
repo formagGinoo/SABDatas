@@ -28,6 +28,7 @@ function Form_103Achievement:OnInactive()
     TimeService:KillTimer(self.m_timer)
     self.m_timer = nil
   end
+  self:clearEventListener()
 end
 
 function Form_103Achievement:OnDestroy()

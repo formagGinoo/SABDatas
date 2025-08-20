@@ -43,6 +43,7 @@ HeroActivityManager.WhackMoleLevelType = {
   InfinityType = 3
 }
 HeroActivityManager.ActivityType = {Normal = 1, Stages = 2}
+HeroActivityManager.ClientDataKey = {DialogueMainDraw = "Draw"}
 local ActMemoryTextFormatByType = {}
 local pairs = _ENV.pairs
 local ipairs = _ENV.ipairs
@@ -52,6 +53,8 @@ function HeroActivityManager:OnCreate()
   self.m_cacheReportData = {}
   self.isPush = false
   self.MainIDMapSubID = {}
+  self.vActLostStoryCfgs = {}
+  self.ClientDataList = {}
   self:addEventListener("eGameEvent_Legacy_ActivityTreasureBox", handler(self, self.OpenTreasureBox))
 end
 
@@ -101,7 +104,8 @@ function HeroActivityManager:OnLamiaGetListSC(act_list_data)
   for k, data in pairs(list) do
     m_actList[data.iActId] = {
       config = self:GetMainInfoByActID(data.iActId),
-      server_data = data
+      server_data = data,
+      client_data = self:DealClientData(data.sClientData)
     }
   end
   self.m_actList = m_actList
@@ -307,7 +311,7 @@ function HeroActivityManager:LamiaClueGetAwardSC(data)
   self:broadcastEvent("eGameEvent_Act4ClueGetAward")
 end
 
-function HeroActivityManager:ReqLamiaGetSubActAwardCS(iActId, iSubActId, callback)
+function HeroActivityManager:ReqLamiaGetSubActAwardCS(iActId, iSubActId)
   local rqs_getAward = MTTDProto.Cmd_Lamia_GetSubActAward_CS()
   rqs_getAward.iActId = iActId
   rqs_getAward.iSubActId = iSubActId
@@ -324,9 +328,6 @@ function HeroActivityManager:ReqLamiaGetSubActAwardCS(iActId, iSubActId, callbac
     local server_data = act_data.server_data
     if server_data then
       server_data.vAwardedSubAct = data.vAwardedSubAct
-    end
-    if callback then
-      callback(data)
     end
     self:broadcastEvent("eGameEvent_ActMinigame_GetReward")
   end)
@@ -575,6 +576,43 @@ function HeroActivityManager:GetAct4ClueCfgByID(id)
     return
   end
   return act4ClueCfg
+end
+
+function HeroActivityManager:GetAllActLostStoryCfg(iActID)
+  if self.vActLostStoryCfgs[iActID] then
+    return self.vActLostStoryCfgs[iActID]
+  end
+  local ActLostStoryIns = ConfigManager:GetConfigInsByName("ActLostStory")
+  if not ActLostStoryIns then
+    log.error("HeroActivityManager:GetAllActLostStoryCfg error！ActLostStoryIns is nil")
+    return
+  end
+  local vCfgs = {}
+  local allCfg = ActLostStoryIns:GetAll()
+  for _, v in pairs(allCfg) do
+    if v.m_StoryID and v.m_StoryID > 0 and v.m_ActivityID == iActID then
+      table.insert(vCfgs, v)
+    end
+  end
+  table.sort(vCfgs, function(a, b)
+    return a.m_StoryID < b.m_StoryID
+  end)
+  self.vActLostStoryCfgs[iActID] = vCfgs
+  return vCfgs
+end
+
+function HeroActivityManager:GetActLostStoryCfgByID(id)
+  local ActLostStoryIns = ConfigManager:GetConfigInsByName("ActLostStory")
+  if not ActLostStoryIns then
+    log.error("HeroActivityManager:GetActLostStoryCfgByID error！ActLostStoryIns is nil")
+    return
+  end
+  local cfg = ActLostStoryIns:GetValue_ByStoryID(id)
+  if cfg:GetError() then
+    log.error("HeroActivityManager:GetActLostStoryCfgByID error！id：", id)
+    return
+  end
+  return cfg
 end
 
 function HeroActivityManager:GetOpenActList()
@@ -875,6 +913,17 @@ function HeroActivityManager:IsSecondHalf(main_id)
   local temp_time = closeTime ~= 0 and closeTime or endTime
   local bIsSecondHalf = TimeUtil:IsInTime(changeTime, temp_time)
   return bIsSecondHalf
+end
+
+function HeroActivityManager:IsSecondGachaOpen(main_id)
+  local config = self:GetMainInfoByActID(main_id)
+  local gachaJumpIDArray = utils.changeCSArrayToLuaTable(config.m_GachaJumpID)
+  if #gachaJumpIDArray <= 1 then
+    return false
+  end
+  local gachaId = gachaJumpIDArray[2][1]
+  local flag = UnlockSystemUtil:CheckGachaIsOpenById(gachaId)
+  return flag
 end
 
 function HeroActivityManager:GotoHeroActivity(params)
@@ -1620,6 +1669,9 @@ function HeroActivityManager:HeroActHallEntryHaveRedDot(params)
   if self:IsActShopEntryHaveRedDot(act_id) == 1 then
     return 1
   end
+  if self:IsHeroActFreeEntryHaveRedDot(act_id) == 1 then
+    return 1
+  end
   local flag = self:CheckTaskCanReceive(act_id, nil, true)
   if flag then
     return 1
@@ -1763,6 +1815,32 @@ function HeroActivityManager:IsActShopEntryHaveRedDot(iActID)
   return flag and 1 or 0
 end
 
+function HeroActivityManager:IsHeroActFreeEntryHaveRedDot(iActID)
+  local list = ActivityManager:GetActivityListByType(MTTD.ActivityType_CommonQuest)
+  local curAct
+  for _, act in pairs(list) do
+    if act:GetUpActivityID() == iActID then
+      curAct = act
+      break
+    end
+  end
+  if not curAct or not curAct:checkCondition() then
+    return 0
+  end
+  if curAct:isAllTaskFinished() then
+    return 0
+  end
+  local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+  local bIsNewDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroActFreeEntry_Red_Point_" .. iActID, 0)
+  if bIsNewDay then
+    return 1
+  end
+  if curAct:checkShowRed() then
+    return 1
+  end
+  return 0
+end
+
 function HeroActivityManager:IsShopGoodsHaveRedDot(params)
   local main_config = self:GetMainInfoByActID(params.iActID)
   if not main_config then
@@ -1847,7 +1925,7 @@ function HeroActivityManager:OnLamia_GetExploreData(iActId, msg)
 end
 
 function HeroActivityManager:SetExploreData(iActID, vExplore)
-  local rqs_msg = MTTDProto:Cmd_Lamia_SetExploreData_CS()
+  local rqs_msg = MTTDProto.Cmd_Lamia_SetExploreData_CS()
   rqs_msg.iActId = iActID
   rqs_msg.vExplore = vExplore
   RPCS():Lamia_SetExploreData(rqs_msg, nil)
@@ -1900,6 +1978,81 @@ end
 function HeroActivityManager:IsTodayEnterMinigamePuzzle(curLevelId)
   local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
   return nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroActMiniGamePuzzle_Entry_Red_Point_" .. curLevelId, 0)
+end
+
+function HeroActivityManager:CheckShowEnterAnim(go, sFlatStr, sAnimNameFirst, sAnimNameEvery, iAudioID)
+  local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+  local bIsNewDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple(sFlatStr, 0)
+  if bIsNewDay then
+    LocalDataManager:SetIntSimple(sFlatStr, nextDayResetTime)
+    if iAudioID and 0 < iAudioID then
+      CS.GlobalManager.Instance:TriggerWwiseBGMState(iAudioID)
+    end
+    UILuaHelper.PlayAnimationByName(go, sAnimNameFirst)
+    local fAniLength = UILuaHelper.GetAnimationLengthByName(go, sAnimNameFirst)
+    UILockIns:Lock(fAniLength)
+  else
+    UILuaHelper.PlayAnimationByName(go, sAnimNameEvery)
+    local fAniLength = UILuaHelper.GetAnimationLengthByName(go, sAnimNameEvery)
+    UILockIns:Lock(fAniLength)
+  end
+end
+
+function HeroActivityManager:DealClientData(sClientData)
+  if not sClientData or sClientData == "" then
+    return {}
+  end
+  local t = {}
+  local clientData = string.split(sClientData, "|")
+  for _, v in ipairs(clientData) do
+    local params = string.split(v, ";")
+    if params and params[1] and params[2] then
+      t[params[1]] = params[2]
+    end
+  end
+  return t
+end
+
+function HeroActivityManager:GetClientData(iActId, key)
+  local act_data = self:GetHeroActData(iActId)
+  if not act_data then
+    return nil
+  end
+  if not act_data.client_data then
+    return nil
+  end
+  return act_data.client_data[key]
+end
+
+function HeroActivityManager:SetClientData(iActId, key, value)
+  local act_data = self:GetHeroActData(iActId)
+  if not act_data then
+    return
+  end
+  local sClientData
+  local t = act_data.client_data
+  if not t or next(t) == nil then
+    sClientData = key .. ";" .. value
+  else
+    sClientData = ""
+    for k, v in pairs(t) do
+      if k == key then
+        sClientData = sClientData .. k .. ";" .. value .. "|"
+      else
+        sClientData = sClientData .. k .. ";" .. v .. "|"
+      end
+    end
+  end
+  local rqs_msg = MTTDProto.Cmd_Lamia_SetClientData_CS()
+  rqs_msg.iActId = iActId
+  rqs_msg.sClientData = sClientData
+  RPCS():Lamia_SetClientData(rqs_msg, function(sc)
+    local data = self:GetHeroActData(iActId)
+    if not data then
+      return
+    end
+    data.client_data = self:DealClientData(sc.sClientData)
+  end)
 end
 
 return HeroActivityManager

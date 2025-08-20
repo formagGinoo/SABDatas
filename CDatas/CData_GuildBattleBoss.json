@@ -80,7 +80,47 @@
       "m_Avatar": "\"GuildRaid_head10\"",
       "m_BG": "\"boss_role_10\"",
       "m_MonsterTypeID": "[1,5]"
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_mName": "\"Holy Blade\"",
+      "m_Avatar": "\"GuildRaid_head11\"",
+      "m_BG": "\"boss_role_11\"",
+      "m_MonsterTypeID": "[1,4]"
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_mName": "\"Soul Pyre\"",
+      "m_Avatar": "\"GuildRaid_head12\"",
+      "m_BG": "\"boss_role_12\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "13": {
+      "m_bError": null,
+      "m_ID": "13",
+      "m_mName": "\"Brutal Blood Servant\"",
+      "m_Avatar": "\"GuildRaid_head13\"",
+      "m_BG": "\"boss_role_13\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "14": {
+      "m_bError": null,
+      "m_ID": "14",
+      "m_mName": "\"Stone Golem\"",
+      "m_Avatar": "\"GuildRaid_head14\"",
+      "m_BG": "\"boss_role_14\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "15": {
+      "m_bError": null,
+      "m_ID": "15",
+      "m_mName": "\"Venomous Swampling\"",
+      "m_Avatar": "\"GuildRaid_head15\"",
+      "m_BG": "\"boss_role_15\"",
+      "m_MonsterTypeID": "[1,5]"
     }
   },
-  "status": "processed_10_items"
+  "status": "processed_15_items"
 }

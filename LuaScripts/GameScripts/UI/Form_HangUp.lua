@@ -216,6 +216,7 @@ end
 
 function Form_HangUp:OnDestroy()
   self.super.OnDestroy(self)
+  UILuaHelper.CheckClearSkeletonAssetData(self.m_spine_global)
   self:ClearData()
 end
 

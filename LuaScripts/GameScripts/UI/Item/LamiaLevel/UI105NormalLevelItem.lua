@@ -48,6 +48,7 @@ function UI105NormalLevelItem:OnFreshData()
   self.iCurPage = self.m_itemData.iCurPage
   self:FreshItemUI()
   self:ChangeChoose(self.m_isChoose)
+  UILuaHelper.SetChildIndex(self.m_itemRootObj, self.m_itemIndex)
 end
 
 function UI105NormalLevelItem:FreshItemUI()

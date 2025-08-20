@@ -95,7 +95,6 @@ function BaseActivity:resetData()
   self:doEvent("OnResetData", self.m_stActivityData)
   self:doEvent("OnPushPanel")
   self:checkActivityState()
-  self:broadcastEvent("eGameEvent_Activity_ResetData")
 end
 
 function BaseActivity:resetTimer()

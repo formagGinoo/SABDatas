@@ -223,7 +223,7 @@
       "m_SystemID": "54",
       "m_WindowID": "54001",
       "m_Param": "[]",
-      "m_mName": "\"\""
+      "m_mName": "\"Resource Center\""
     },
     "29": {
       "m_bError": null,
@@ -384,6 +384,14 @@
       "m_WindowID": "26006",
       "m_Param": "[26009]",
       "m_mName": "\"Reserved String\""
+    },
+    "2610": {
+      "m_bError": null,
+      "m_JumpID": "2610",
+      "m_SystemID": "26",
+      "m_WindowID": "26006",
+      "m_Param": "[26010]",
+      "m_mName": "\"Timewalker's Satchel\""
     },
     "2701": {
       "m_bError": null,
@@ -577,6 +585,22 @@
       "m_Param": "[]",
       "m_mName": "\"Embrace - Cycle of Destruction\""
     },
+    "25010": {
+      "m_bError": null,
+      "m_JumpID": "25010",
+      "m_SystemID": "25",
+      "m_WindowID": "1006",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - The Lost Nightingale\""
+    },
+    "25011": {
+      "m_bError": null,
+      "m_JumpID": "25011",
+      "m_SystemID": "25",
+      "m_WindowID": "1007",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Shadows of Tomorrow\""
+    },
     "30001": {
       "m_bError": null,
       "m_JumpID": "30001",
@@ -689,13 +713,21 @@
       "m_Param": "[3,6016001]",
       "m_mName": "\"Go to Event\""
     },
+    "50004": {
+      "m_bError": null,
+      "m_JumpID": "50004",
+      "m_SystemID": null,
+      "m_WindowID": "500001",
+      "m_Param": "[2,6018001]",
+      "m_mName": "\"Go to Event\""
+    },
     "60010": {
       "m_bError": null,
       "m_JumpID": "60010",
       "m_SystemID": null,
       "m_WindowID": "60010",
       "m_Param": "[1030,1031]",
-      "m_mName": "\"Sapphire Isle!\""
+      "m_mName": "\"Sapphire Isle\""
     },
     "60011": {
       "m_bError": null,
@@ -2034,5 +2066,5 @@
       "m_mName": "\"[Threads of Fate] Hard 16-8\""
     }
   },
-  "status": "processed_254_items"
+  "status": "processed_258_items"
 }

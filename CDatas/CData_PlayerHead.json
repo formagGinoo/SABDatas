@@ -898,6 +898,42 @@
       "m_ItemIcon": "\"Atlas_Role/Aiona_Covenant002\"",
       "m_mHeadDesc": "\"Obtain to unlock Timeless Aiona avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Aiona_Covenant002\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1300051": {
+      "m_bError": null,
+      "m_HeadID": "1300051",
+      "m_mHeadName": "\"Quinn\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20620",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Quinn Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Quinn.\"",
+      "m_ItemIcon": "\"Atlas_Role/Quinn_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Quinn avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Quinn_Base002\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1300052": {
+      "m_bError": null,
+      "m_HeadID": "1300052",
+      "m_mHeadName": "\"Agnes\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20630",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Agnes Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Agnes.\"",
+      "m_ItemIcon": "\"Atlas_Role/Agatha_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Agnes avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Agatha_Base002\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1798,6 +1834,42 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_aorin_ur_01\"",
       "m_mHeadDesc": "\"Obtain to unlock Timeless Aiona - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_aorin_ur_01\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1310051": {
+      "m_bError": null,
+      "m_HeadID": "1310051",
+      "m_mHeadName": "\"Quinn - Spirit Siphon\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20620",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Quinn - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"You...?\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_quinn_base_01\"",
+      "m_mHeadDesc": "\"Obtain to unlock Quinn - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_quinn_base_01\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1310052": {
+      "m_bError": null,
+      "m_HeadID": "1310052",
+      "m_mHeadName": "\"Agnes - Spirit Siphon\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20630",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Agnes - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after Agnes reaches Spirit Siphon - Tier 3\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_agatha_base_01\"",
+      "m_mHeadDesc": "\"Obtain to unlock Agnes - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_agatha_base_01\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1870,7 +1942,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320004\"",
       "m_mHeadDesc": "\"Obtain to unlock White Wedding avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320004\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1320005": {
@@ -1888,6 +1960,24 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320005\"",
       "m_mHeadDesc": "\"Obtain to unlock The Oscillating Shadow avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320005\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1320006": {
+      "m_bError": null,
+      "m_HeadID": "1320006",
+      "m_mHeadName": "\"The Briar Rose\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6062001",
+      "m_mItemName": "\"The Briar Rose Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - The Briar Rose.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320006\"",
+      "m_mHeadDesc": "\"Obtain to unlock The Briar Rose avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320006\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -1909,6 +1999,24 @@
       "m_HideType": null,
       "m_CensorHideType": "1"
     },
+    "1329002": {
+      "m_bError": null,
+      "m_HeadID": "1329002",
+      "m_mHeadName": "\"Forsworn Fate\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6018001",
+      "m_mItemName": "\"Forsworn Fate Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - Forsworn Fate.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1329002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Forsworn Fate avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1329002\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
     "1330001": {
       "m_bError": null,
       "m_HeadID": "1330001",
@@ -1924,7 +2032,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330001\"",
       "m_mHeadDesc": "\"Obtain to unlock Cycle of Destruction avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330001\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1390001": {
@@ -2036,5 +2144,5 @@
       "m_CensorHideType": null
     }
   },
-  "status": "processed_113_items"
+  "status": "processed_119_items"
 }

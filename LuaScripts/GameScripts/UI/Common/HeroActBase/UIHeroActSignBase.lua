@@ -1,4 +1,5 @@
 local UIHeroActSignBase = class("UIHeroActShopBase", require("UI/Common/UIBase"))
+local fLockTime = 0.6
 
 function UIHeroActSignBase:AfterInit()
   UIHeroActSignBase.super.AfterInit(self)
@@ -11,6 +12,8 @@ function UIHeroActSignBase:AfterInit()
   self.m_luaSignItemInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_reward_list_InfinityGrid, "HeroActivity/UIActSignItem", initGridData)
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.fDelayShowItemListAnim = 0.1
+  self.fDelayShowItem = 0.1
 end
 
 function UIHeroActSignBase:OnActive()
@@ -21,6 +24,9 @@ function UIHeroActSignBase:OnActive()
     self.m_btn_close:SetActive(self.m_csui.m_param.is_pushFace)
   end
   self.goBackBtnRoot:SetActive(not self.m_csui.m_param.is_pushFace)
+  if not utils.isNull(self.m_common_click) then
+    self.m_common_click:SetActive(self.m_csui.m_param.is_pushFace)
+  end
   self:RemoveEventListeners()
   self:BindEventListeners()
   self:FreshUI()
@@ -48,8 +54,8 @@ function UIHeroActSignBase:OnInactive()
       end
     end
   end
-  PushFaceManager:CheckShowNextPopPanel()
   self:CheckRecycleSpine(true)
+  PushFaceManager:CheckShowNextPopPanel()
 end
 
 function UIHeroActSignBase:RemoveEventListeners()
@@ -101,34 +107,40 @@ function UIHeroActSignBase:FreshUI()
   end
   self:FreshSignItemList(act_data.server_data.stSign.iAwardedMaxDays)
   if self.m_csui.m_param.is_pushFace and HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) then
-    self.lockId = UILockIns:Lock(0.6)
-    TimeService:SetTimer(0.6, 1, function()
-      HeroActivityManager:RequestRecReward(self.act_id)
+    self.lockId = UILockIns:Lock(fLockTime)
+    TimeService:SetTimer(fLockTime, 1, function()
+      if HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) then
+        HeroActivityManager:RequestRecReward(self.act_id)
+      end
     end)
   end
 end
 
 function UIHeroActSignBase:CheckShowEnterAnim()
-  local showItemList = self.m_luaSignItemInfinityGrid:GetAllShownItemList()
-  self.m_itemInitShowNum = #showItemList
-  for i, tempItem in ipairs(showItemList) do
-    local tempObj = tempItem:GetItemRootObj()
-    UILuaHelper.SetCanvasGroupAlpha(tempObj, 0)
-  end
-  TimeService:SetTimer(0.1, 1, function()
+  TimeService:SetTimer(self.fDelayShowItemListAnim, 1, function()
     self:ShowItemListAnim()
   end)
 end
 
 function UIHeroActSignBase:ShowItemListAnim()
+  if utils.isNull(self.m_luaSignItemInfinityGrid) then
+    return
+  end
+  if utils.isNull(self.m_reward_list) then
+    return
+  end
+  self.m_reward_list:SetActive(true)
   local showItemList = self.m_luaSignItemInfinityGrid:GetAllShownItemList()
   self.m_itemInitShowNum = #showItemList
   for i, tempItem in ipairs(showItemList) do
     local tempObj = tempItem:GetItemRootObj()
-    tempObj:SetActive(false)
+    tempItem:SetActive(false)
     UILuaHelper.SetCanvasGroupAlpha(tempObj, 0)
-    self["ItemInitTimer" .. i] = TimeService:SetTimer(i * 0.1, 1, function()
-      tempObj:SetActive(true)
+    self["ItemInitTimer" .. i] = TimeService:SetTimer((i - 1) * self.fDelayShowItem, 1, function()
+      if utils.isNull(tempObj) then
+        return
+      end
+      tempItem:SetActive(true)
       UILuaHelper.SetCanvasGroupAlpha(tempObj, 1)
     end)
   end

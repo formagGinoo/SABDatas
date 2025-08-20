@@ -511,4 +511,41 @@ function ItemManager:CheckFragmentCertainRedPointById(itemId, iNum)
   return flag
 end
 
+function ItemManager:GetRandomPoolCfgById(id)
+  local cfgIns = ConfigManager:GetConfigInsByName("Randompool")
+  local cfg = cfgIns:GetValue_ByRandompoolID(id)
+  if cfg:GetError() then
+    log.error("ItemManager GetRandomPoolCfgById  id  " .. tostring(id))
+    return
+  end
+  return cfg
+end
+
+function ItemManager:GetItemRandomPoolContentById(id, censorFlag)
+  local randomCfg = self:GetRandomPoolCfgById(id)
+  local contentTab = {}
+  if randomCfg then
+    local vRandomItemInfo = censorFlag and utils.changeCSArrayToLuaTable(randomCfg.m_CensorRandompoolContent) or utils.changeCSArrayToLuaTable(randomCfg.m_RandompoolContent)
+    local iWeightTotal = 0
+    if 0 < table.getn(vRandomItemInfo) then
+      for i = 1, #vRandomItemInfo do
+        local vItemInfoStr = vRandomItemInfo[i]
+        local iGetItemID = tonumber(vItemInfoStr[1])
+        local iGetItemNum = tonumber(vItemInfoStr[2])
+        local iWeight = tonumber(vItemInfoStr[3])
+        iWeightTotal = iWeightTotal + iWeight
+        contentTab[#contentTab + 1] = {
+          iID = iGetItemID,
+          iNum = iGetItemNum,
+          iWeight = iWeight
+        }
+      end
+      for i, v in ipairs(contentTab) do
+        v.iWeight = v.iWeight / iWeightTotal
+      end
+    end
+  end
+  return contentTab
+end
+
 return ItemManager

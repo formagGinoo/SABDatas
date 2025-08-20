@@ -506,8 +506,10 @@ function Form_AttractLetter:AddLetterNode()
     self.bIsWriting = false
     self:ShowInputState(false)
   end
-  if self.curAniItem and self.curAniItem.canvasGroup then
-    self.curAniItem.canvasGroup.alpha = 1
+  if self.curAniItem then
+    if self.curAniItem.canvasGroup then
+      self.curAniItem.canvasGroup.alpha = 1
+    end
     UILuaHelper.ResetAnimationByName(self.curAniItem.root, self.curAniItem.aniName, -1)
   end
   self.bIsWaitting = false

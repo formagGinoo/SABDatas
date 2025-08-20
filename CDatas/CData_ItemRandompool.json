@@ -73,10 +73,98 @@
       "m_RandompoolContent": "[[601911,1,100],[601912,1,100],[601913,1,100],[601914,1,100]]",
       "m_CensorRandompoolContent": "[[601911,1,100],[601912,1,100],[601913,1,100],[601914,1,100]]"
     },
+    "30028": {
+      "m_bError": null,
+      "m_RandompoolID": "30028",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[601921,1,100],[601922,1,100],[601923,1,100],[601924,1,100]]",
+      "m_CensorRandompoolContent": "[[601921,1,100],[601922,1,100],[601923,1,100],[601924,1,100]]"
+    },
+    "30029": {
+      "m_bError": null,
+      "m_RandompoolID": "30029",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[601931,1,100],[601932,1,100],[601933,1,100],[601934,1,100]]",
+      "m_CensorRandompoolContent": "[[601931,1,100],[601932,1,100],[601933,1,100],[601934,1,100]]"
+    },
+    "30030": {
+      "m_bError": null,
+      "m_RandompoolID": "30030",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[602911,1,100],[602912,1,100],[602913,1,100],[602914,1,100]]",
+      "m_CensorRandompoolContent": "[[602911,1,100],[602912,1,100],[602913,1,100],[602914,1,100]]"
+    },
+    "30031": {
+      "m_bError": null,
+      "m_RandompoolID": "30031",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[602921,1,100],[602922,1,100],[602923,1,100],[602924,1,100]]",
+      "m_CensorRandompoolContent": "[[602921,1,100],[602922,1,100],[602923,1,100],[602924,1,100]]"
+    },
+    "30032": {
+      "m_bError": null,
+      "m_RandompoolID": "30032",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[602931,1,100],[602932,1,100],[602933,1,100],[602934,1,100]]",
+      "m_CensorRandompoolContent": "[[602931,1,100],[602932,1,100],[602933,1,100],[602934,1,100]]"
+    },
+    "30033": {
+      "m_bError": null,
+      "m_RandompoolID": "30033",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[603911,1,100],[603912,1,100],[603913,1,100],[603914,1,100]]",
+      "m_CensorRandompoolContent": "[[603911,1,100],[603912,1,100],[603913,1,100],[603914,1,100]]"
+    },
+    "30034": {
+      "m_bError": null,
+      "m_RandompoolID": "30034",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[603921,1,100],[603922,1,100],[603923,1,100],[603924,1,100]]",
+      "m_CensorRandompoolContent": "[[603921,1,100],[603922,1,100],[603923,1,100],[603924,1,100]]"
+    },
+    "30035": {
+      "m_bError": null,
+      "m_RandompoolID": "30035",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[603931,1,100],[603932,1,100],[603933,1,100],[603934,1,100]]",
+      "m_CensorRandompoolContent": "[[603931,1,100],[603932,1,100],[603933,1,100],[603934,1,100]]"
+    },
+    "30036": {
+      "m_bError": null,
+      "m_RandompoolID": "30036",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[604911,1,100],[604912,1,100],[604913,1,100],[604914,1,100]]",
+      "m_CensorRandompoolContent": "[[604911,1,100],[604912,1,100],[604913,1,100],[604914,1,100]]"
+    },
+    "30037": {
+      "m_bError": null,
+      "m_RandompoolID": "30037",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[604921,1,100],[604922,1,100],[604923,1,100],[604924,1,100]]",
+      "m_CensorRandompoolContent": "[[604921,1,100],[604922,1,100],[604923,1,100],[604924,1,100]]"
+    },
+    "30038": {
+      "m_bError": null,
+      "m_RandompoolID": "30038",
+      "m_RandompoolUIType": "2",
+      "m_Randomcnt": "1",
+      "m_RandompoolContent": "[[604931,1,100],[604932,1,100],[604933,1,100],[604934,1,100]]",
+      "m_CensorRandompoolContent": "[[604931,1,100],[604932,1,100],[604933,1,100],[604934,1,100]]"
+    },
     "31023": {
       "m_bError": null,
       "m_RandompoolID": "31023",
-      "m_RandompoolUIType": "1",
+      "m_RandompoolUIType": "2",
       "m_Randomcnt": "1",
       "m_RandompoolContent": "[[1050,5,100],[1050,1,900],[101,1000,100],[101,200,1000],[101,100,4000],[50004,10,200],[50004,5,1000],[50004,2,2700]]",
       "m_CensorRandompoolContent": "[[1050,5,100],[1050,1,1000],[101,1000,300],[101,200,1500],[101,100,3000],[50004,10,400],[50004,5,1200],[50004,2,2500]]"
@@ -84,7 +172,7 @@
     "31025": {
       "m_bError": null,
       "m_RandompoolID": "31025",
-      "m_RandompoolUIType": "1",
+      "m_RandompoolUIType": "2",
       "m_Randomcnt": "1",
       "m_RandompoolContent": "[[101,130,7800],[101,200,800],[101,400,100],[1050,1,1100],[1050,3,150],[1050,10,50]]",
       "m_CensorRandompoolContent": "[[101,200,7600],[101,300,800],[101,500,100],[1050,1,1350],[1050,5,100],[1050,10,50]]"
@@ -92,7 +180,7 @@
     "31026": {
       "m_bError": null,
       "m_RandompoolID": "31026",
-      "m_RandompoolUIType": "1",
+      "m_RandompoolUIType": "2",
       "m_Randomcnt": "1",
       "m_RandompoolContent": "[[101,100,7000],[101,150,2300],[101,200,500],[1050,1,200]]",
       "m_CensorRandompoolContent": "[[101,100,7000],[101,150,2300],[101,200,500],[1050,1,200]]"
@@ -962,5 +1050,5 @@
       "m_CensorRandompoolContent": "[[600811,1,7500],[600812,1,7500],[600813,1,7500],[600814,1,7500],[600831,1,7500],[600832,1,7500],[600833,1,7500],[600834,1,7500],[600821,1,7500],[600822,1,7500],[600823,1,7500],[600824,1,7500]]"
     }
   },
-  "status": "processed_120_items"
+  "status": "processed_131_items"
 }

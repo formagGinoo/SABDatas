@@ -116,14 +116,9 @@ local function pendingStoreReview()
   if ChannelManager:IsAndroid() and not ChannelManager:IsChinaChannel() then
     CS.MSDKManager.Instance:RequestReview()
   elseif ChannelManager:IsChinaChannel() and ChannelManager:IsAndroid() then
-    if QSDKManager:IsFunctionSupport(207) then
-      utils.CheckAndPushCommonTips({
-        tipsID = 1233,
-        bLockBack = true,
-        func1 = function()
-          QSDKManager:CallTapTap()
-        end
-      })
+    local versionContext = CS.VersionContext.GetContext()
+    if string.find(versionContext.Channel, "taptap") ~= nil and QSDKManager:IsFunctionSupport(207) then
+      StackTop:Push(UIDefines.ID_FORM_POPUPTAPTAP)
     end
   elseif ChannelManager:IsIOS() then
     CS.UnityEngine.iOS.Device.RequestStoreReview()

@@ -21,7 +21,7 @@
           "m_bError": null,
           "m_StoryID": "1",
           "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Mysteries of Black Blood\"",
+          "m_mStoryTitle": "\"Ganelon family clash.\nCondition:\"",
           "m_mSubsectionTitle": "\"Silver Blood Trials Record\"",
           "m_mText": "\"To the venerable Saint Seth and my fellow members of the Church Tribunal:\nI, David Petri, the appointed trial witness, hereby document the thirteenth Silver Blood Trial.\nSeven individuals, including two heretics, were chosen from the monastery by Aeon's will.\nAfter baptism and confession, they were each seated at the Blood Purification Altar for Holy Communion and ablution with Holy Water.\nUpon the first dose, using Divine Blood, three who did not have Black Blood disease perished, unable to withstand Aeon's grace. The remaining four showed no abnormalities.\nAfter the second dose, with Silver Blood this time, a woman who did not have Black Blood disease and a male heretic died from excessive hemorrhaging, accompanied by severe convulsions and incontinence. The remaining two survived, though the female heretic experienced hair loss and molting of the skin.\nAfter the third dose, once again with Silver Blood, a man who did not have Black Blood disease bled from eyes, nose, and ears, then died from a sudden rise in body temperature. The female heretic, despite her earlier symptoms, rapidly recovered and revealed a 'divine mark' on her hand.\nUpon examination, her blood had turned a semi-transparent silver, free of Black Blood, and she retained her consciousness and memories. Moreover, she inherited the memories of an individual known as 'Darcias.'\nMay the martyrs return to Aeon.\nAn esteemed Bell Ringer will administer the next trial for the Silver Blood successor.\"",
           "m_Reward": "[]",
@@ -145,8 +145,8 @@
     },
     "4": {
       "_type": "nested_dictionary",
-      "_count": 2,
-      "_processed": 2,
+      "_count": 3,
+      "_processed": 3,
       "data": {
         "1": {
           "m_bError": null,
@@ -169,319 +169,143 @@
           "m_Reward": "[]",
           "m_icon": "[]",
           "m_MainChapterClue": "[6,2]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_StoryID": "4",
+          "m_SubsectionID": "8",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
+          "m_Reward": "[[],[],[]]",
+          "m_icon": "[]",
+          "m_MainChapterClue": "[]"
         }
       }
     },
-    "5": {
+    "256": {
       "_type": "nested_dictionary",
-      "_count": 3,
-      "_processed": 3,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "1180160": {
           "m_bError": null,
-          "m_StoryID": "5",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Collection of Family Ballads\"",
-          "m_mSubsectionTitle": "\"Ganelon\"",
-          "m_mText": "\"In the forest, the wind sings of sorrow,\nFallen leaves, oh, who has left you for tomorrow?\nWolfsbane blooms beneath the moon's soft grace,\nThe promised home waits beyond the sky's embrace.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1416,1]",
-          "m_MainChapterClue": "[4,2]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "5",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Collection of Family Ballads\"",
-          "m_mSubsectionTitle": "\"Landis\"",
-          "m_mText": "\"With a tranquil heart, I gaze across the sea,\nWhere familiar mountains stand steadfast and free.\nTonight, I pray for peace from where I stand,\nMay you find the courage to explore new lands,\nAnd may you raise the sails on your journey home.\"",
+          "m_StoryID": "256",
+          "m_SubsectionID": "1180160",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
           "m_Reward": "[]",
           "m_icon": "[]",
-          "m_MainChapterClue": "[8,6]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "5",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Collection of Family Ballads\"",
-          "m_mSubsectionTitle": "\"Nevernight\"",
-          "m_mText": "\"I was born to chase the sun's bright glow,\nThe little man sings through the day's ebb and flow,\nYearning for the light, for home's embrace.\nAs the long night comes, the sunset parts its final glow,\nThe little man continues to sing, with a voice never dull.\nDarkness looms, shadows stretch across the sky,\nYet I will chase the sun, alone, with hope held high.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[11,2]"
+          "m_MainChapterClue": "[184549376]"
         }
       }
     },
-    "6": {
+    "768": {
       "_type": "nested_dictionary",
-      "_count": 3,
-      "_processed": 3,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "33554432": {
           "m_bError": null,
-          "m_StoryID": "6",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Sailor's Diary\"",
-          "m_mSubsectionTitle": "\"Sailor's Diary I\"",
-          "m_mText": "\"Today marks my first day aboard the El Dorado, and I'm thrilled to have been chosen by Captain Goldland. We enjoyed a fantastic meal with fellow townsfolk this evening—everyone was in high spirits. After all, it's not every day you set out on such an adventure, so a little celebration the night before seems appropriate.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1412,1]",
-          "m_MainChapterClue": "[7,4]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "6",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Sailor's Diary\"",
-          "m_mSubsectionTitle": "\"Sailor's Diary II\"",
-          "m_mText": "\"\"Yesterday the Captain had some cargo brought aboard and specifically instructed us to keep our distance. Yet I keep catching whiffs of a peculiar fishy smell. What could be so mysterious?\"\n\n\"Met the Captain's brother on deck tonight. William, I think his name was? He was pouring something into the sea while muttering about not disappointing his brother again. Rather unsettling.\"\"",
-          "m_Reward": "[]",
+          "m_StoryID": "768",
+          "m_SubsectionID": "33554432",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
+          "m_Reward": "[[],[],[],[100663296,16777216],[],[],[],[25858],[],[33554432,1412,1,1794,1024,1536,512,33554432,7,1,6,3,134348800,33554432,117440512,16777216,16777216,25858,12800,92733952,65536,268566528,50331648,117440512,33554432,0,983552,131072,458752,196608,0,3586,256,1792,1024,33554432,16,1,8,1,6619649,3276800,-2029912064,16777221,33554432,9,4,8,2,167903232],[]]",
           "m_icon": "[]",
-          "m_MainChapterClue": "[7,1]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "6",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Sailor's Diary\"",
-          "m_mSubsectionTitle": "\"Sailor's Diary III\"",
-          "m_mText": "\"\"Ran into the Captain on deck. He was in high spirits and smelled of alcohol, kept bragging about his clever brother. Why not tell that to the man himself?\"\n\n\"There've been strange thuds coming from the lower deck where the mysterious cargo is stored, as if something's alive down there... Some crew members suggest it might be haunted, but I doubt it. They're betting on who'll dare to check it out tonight. I hope everything turns out alright.\"\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[8,2]"
+          "m_MainChapterClue": "[]"
         }
       }
     },
-    "7": {
+    "1026": {
       "_type": "nested_dictionary",
-      "_count": 4,
-      "_processed": 4,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "512": {
           "m_bError": null,
-          "m_StoryID": "7",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
-          "m_mSubsectionTitle": "\"Bloodborn Lore Notes I\"",
-          "m_mText": "\"'Just got a mission to track the Bloodborn and document it. She said it's too risky, but the reward is too good to pass up...'\n'I'm taking it. Luck is always on my side—I'm always one step ahead of death. This'll be no different.'\n'What a coincidence! I won a map from an El Dorado crew member in a dice game. It shows where the Bloodborn were last seen.'\n'On my way to the spot on the map, I ran into a red-eyed traveler. I've made a note, but he looked pretty ordinary.'\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1415,1]",
-          "m_MainChapterClue": "[16,3]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "7",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
-          "m_mSubsectionTitle": "\"Bloodborn Lore Notes II\"",
-          "m_mText": "\"'Today I tracked the trail to the 'depths.' The air here is thick and damp, and the whole place feels eerie.'\n'Yesterday's rainfall washed away the soil along the riverbank and uncovered what looked like freshly spilled blood. Oddly, I didn't hear a sound all night.'\n'I'm nearing the legendary Bloodborn territory, and the forest is growing denser as well.'\n'Tonight's moon is rather unsettling, and it sounds like someone in the forest is calling for help. I need to investigate.'\n...\nThe rest of the notes are blank, with only a few dried bloodstains smeared across the yellowed paper.\"",
+          "m_StoryID": "1026",
+          "m_SubsectionID": "512",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
           "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[15,2]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "7",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
-          "m_mSubsectionTitle": "\"Bloodborn Lore Notes III\"",
-          "m_mText": "\"When the silver-haired, red-eyed one arrives, the land will be engulfed in strife.\nIn the end, silence will reign.\nAs moonlight blankets the countless graves of those lost.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[14,1]"
-        },
-        "4": {
-          "m_bError": null,
-          "m_StoryID": "7",
-          "m_SubsectionID": "4",
-          "m_mStoryTitle": "\"Bloodborn Lore Notes\"",
-          "m_mSubsectionTitle": "\"Bloodborn Lore Notes IV\"",
-          "m_mText": "\"When the ■■■■ is stained crimson, the land will bleed, and the Bloodborn will return to their promised home.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[16,1]"
+          "m_icon": "[33554432,0,524800,393216,327680]",
+          "m_MainChapterClue": "[]"
         }
       }
     },
-    "8": {
+    "3074": {
       "_type": "nested_dictionary",
-      "_count": 3,
-      "_processed": 3,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "256": {
           "m_bError": null,
-          "m_StoryID": "8",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Legend of the Sea God\"",
-          "m_mSubsectionTitle": "\"Legend of the Sea God I\"",
-          "m_mText": "\"Anyone who has passed through this sea has heard legends surrounding the terrifying entity purported to lurk in these depths. Its body is clad in the bones of the drowned, and light has never graced its domain. Darkness and terror follow it like an unshakable shadow, with countless islands devoured and ill omens scattered in its wake.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1415,1]",
-          "m_MainChapterClue": "[9,4]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "8",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Legend of the Sea God\"",
-          "m_mSubsectionTitle": "\"Legend of the Sea God II\"",
-          "m_mText": "\"'I saw... I saw His silhouette. I was aboard the El Dorado, en route to the mainland. At night, whispers clawed at my ears without end. On a moonless night, I went up to the deck for fresh air and was met with the most terrifying sight of my life. His appearance defied description, but the moment you lay eyes on His form, you know—it's Him. A terror came over me so profound that I lost consciousness. When I awoke, it was already morning.'\"",
+          "m_StoryID": "3074",
+          "m_SubsectionID": "256",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
           "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[10,4]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "8",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Legend of the Sea God\"",
-          "m_mSubsectionTitle": "\"Legend of the Sea God III\"",
-          "m_mText": "\"Years ago, this sea was not so treacherous. The Landis family was still flourishing, acting as protectors of the ocean, and the Sea God was merely a protective deity in their family's lore. But one day, their island suddenly crumbled, rumored to be a result of the Sea God's almighty wrath. Not only did the entire family vanish without a trace, but the sea itself has been shrouded in mystery ever since.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[12,1]"
+          "m_icon": "[16777216,16777216,25858,12800,92799488,65536,167903232,100663296,150994944]",
+          "m_MainChapterClue": "[]"
         }
       }
     },
-    "9": {
+    "131072": {
       "_type": "nested_dictionary",
-      "_count": 5,
-      "_processed": 5,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "0": {
           "m_bError": null,
-          "m_StoryID": "9",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Prophet's Revelation\"",
-          "m_mSubsectionTitle": "\"Prophet's Revelation: The Beginning\"",
-          "m_mText": "\"Inspired by the prophet, a revelation was given.\nAt the dawn of life, the fall of Minexus gave birth to existence: from its shattered remains, the earth was formed and gave rise to space. This is known as the 'Divine Body.'\nAt the dawn of time, the descent of the temporal deity Aeon ushered in life: the deity's will shaped the heavens and the earth, weaving the fabric of time itself. This is known as the 'Tempus.'\nThe Divine Body and the Tempus are two sides of the same coin, giving rise to all that exists—they are the genesis of the world.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1416,1]",
-          "m_MainChapterClue": "[10,6]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "9",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Prophet's Revelation\"",
-          "m_mSubsectionTitle": "\"Prophet's Revelation: Civilization\"",
-          "m_mText": "\"Inspired by the prophet, a revelation was given.\nAll things in the world emerged from the fall of Minexus.\nIts body nurtured life and gifted twenty-four primal beings.\nClothes and spices, the flesh and blood they bestowed;\nWords and language, the soul they granted;\nFire and the forge, the will they empowered.\nThey passed down their bloodlines and gave shape to what would be humanity.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[10,2]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "9",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Prophet's Revelation\"",
-          "m_mSubsectionTitle": "\"Prophet's Revelation: Memory\"",
-          "m_mText": "\"Inspired by the prophet, a revelation was given.\nThe memory of history begins at time's end, holding secrets beyond our grasp: the circular ouroboros, the dot of the raven's eye, the linear black tortoise.\nThe memory of war starts where history fades, veiling visions beyond our understanding: soaring silver wings, swimming rusted fish, and pounding steel hooves.\nThese are the vestiges granted by the great prophet.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[12,2]"
-        },
-        "4": {
-          "m_bError": null,
-          "m_StoryID": "9",
-          "m_SubsectionID": "4",
-          "m_mStoryTitle": "\"Prophet's Revelation\"",
-          "m_mSubsectionTitle": "\"Prophet's Revelation: The Other Side\"",
-          "m_mText": "\"Inspired by the prophet, a revelation was given.\nIt is a realm we cannot behold.\nIn the depths of darkness lies a mirror of our world, severed by invisible threads.\nIn the distant, dreamlike glow, the same mountains rise, the same cities stretch, and the same 'us' wander.\nIt appears as if our homeland arises from the reflection in our eyes.\nYet, that homeland does not truly exist.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[13,1]"
-        },
-        "5": {
-          "m_bError": null,
-          "m_StoryID": "9",
-          "m_SubsectionID": "5",
-          "m_mStoryTitle": "\"Prophet's Revelation\"",
-          "m_mSubsectionTitle": "\"Prophet's Revelation: The End\"",
-          "m_mText": "\"Inspired by the prophet, a revelation was given.\nThese words have not been seen by anyone else—not inherited from the primal beings but penned by the prophet.\nThough their meaning remains elusive, within the vertical lines and curved circles, we seem to glimpse the essence of the world, touch the pulse of life, and feel the whisper of the soul.\nSuch enigmatic scripture. Perhaps this is the final legacy the prophet bestowed upon us before his departure.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[15,3]"
+          "m_StoryID": "131072",
+          "m_SubsectionID": null,
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
+          "m_Reward": "[[33554432,150994944,50331648,0,786944,131072,589824,262144,0,3330],[]]",
+          "m_icon": "[150994944]",
+          "m_MainChapterClue": "[]"
         }
       }
     },
-    "10": {
+    "327680": {
       "_type": "nested_dictionary",
-      "_count": 3,
-      "_processed": 3,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "0": {
           "m_bError": null,
-          "m_StoryID": "10",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Crimson Inquisition\"",
-          "m_mSubsectionTitle": "\"The Sentence\"",
-          "m_mText": "\"Vampires are heretics, followers of the demons of chaos, vassals of Dracula, and the source of the sins of the last judgment.\nThey must all be eradicated, purified by the Church.\nThose born with white hair are vampires;\nThose born with red eyes are vampires;\nThose who claim to have memories from a past life are vampires;\nThose who would conduct sorcery against the Church are vampires;\nThose who transform under the blood moon are vampires;\n...\nWitch Hunters will earn Aeon's blessing based on the number of vampires they have slain.\nPurge the sins caused by those who stray from the path and become part of the exalted and eternal.\nBetter to kill an innocent than to allow a vampire to escape judgment.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1415,1]",
-          "m_MainChapterClue": "[18,2]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "10",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Crimson Inquisition\"",
-          "m_mSubsectionTitle": "\"Trial By Flame\"",
-          "m_mText": "\"Vampires can be identified by four physical features: White skin, pointed ears, sharp molars, and blood sigils.\nThey feed on human blood to sustain their bloodless forms;\ntheir ears are tools for capturing living beings;\ntheir teeth are daggers for piercing human skin;\nand their sigils support their deceitful appearances.\nIf identification is uncertain, use holy fire.\nHoly fire shall reveal the truth hidden beneath the blood sigils.\nBind them to a cross and ignite the holy fire with kindling. If they emit a piercing wail and their bones do not melt after the flames die out, you may confirm their identity as a vampire.\"",
-          "m_Reward": "[]",
+          "m_StoryID": "327680",
+          "m_SubsectionID": null,
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
+          "m_Reward": "[[50331648,167772160,16777216,16777216,25858,12800,92733952,65536,302120960,33554432,167772160,33554432,0,1114624,65536],[]]",
           "m_icon": "[]",
-          "m_MainChapterClue": "[17,1]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "10",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Crimson Inquisition\"",
-          "m_mSubsectionTitle": "\"Punishing Heretics\"",
-          "m_mText": "\"Vampires are Heretics and corrupted spirits of evil.\nThey roam, hoarding wealth and leeching life, complicit in the apocalypse.\nWhen executed, their crimes must be made known to the faithful:\nOne, for the sin of murder, for bringing death to the living;\nTwo, for the sin of greed, for chasing gold and other treasures;\nThree, for the sin of apostasy, for forsaking the faith and embracing heresy.\nExecuting vampires is both a means to preserve balance and a sacred duty bestowed upon us by Aeon.\nUpon their death, their property and financial assets are to be seized.\nTheir family, friends, and neighbors may also be tainted. If there is even a hint of corruption, they must be eradicated as well.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[18,3]"
+          "m_MainChapterClue": "[50331648,0,1180160,196608,720896,65536,33619968,101,50,361474]"
         }
       }
     },
-    "11": {
+    "6619649": {
       "_type": "nested_dictionary",
-      "_count": 3,
-      "_processed": 3,
+      "_count": 1,
+      "_processed": 1,
       "data": {
-        "1": {
+        "3276800": {
           "m_bError": null,
-          "m_StoryID": "11",
-          "m_SubsectionID": "1",
-          "m_mStoryTitle": "\"Song of Durendal\"",
-          "m_mSubsectionTitle": "\"The Other Side\"",
-          "m_mText": "\"I hear the voice at the end of time—\nLike the ancient strings at the dawn of the world,\nLike the soft murmur of all living things.\nThe river flows from that far shore,\nOn this side, it nurtures will, memory, and civilization;\nOn the Other Side, it nurtures the sun, stars, and moon.\nAeon takes my hand as we sail on the river,\nOn the left, the clamor of iron forges and silhouettes of travelers,\nOn the right, the loneliness of home and the morning stars of the night.\nI shall Embark from this shore,\nTaking Aeon's hand, to journey towards the Other Side.\"",
-          "m_Reward": "[[101,50]]",
-          "m_icon": "[1412,1]",
-          "m_MainChapterClue": "[18,1]"
-        },
-        "2": {
-          "m_bError": null,
-          "m_StoryID": "11",
-          "m_SubsectionID": "2",
-          "m_mStoryTitle": "\"Song of Durendal\"",
-          "m_mSubsectionTitle": "\"Death and Legacy\"",
-          "m_mText": "\"Beneath the waterfall, I heard a clamor.\nIt seemed like two voices engaged in an argument,\nOr perhaps the lament of a solitary soul.\nI heard a voice speak of life's torment,\n\"Death is what keeps us from ever smiling again.\"\nAnother voice arose, softly praising life's treasure,\n\"Legacy is what allows us to bask in light.\"\nI moved forward,\nBut there was no one in sight—only a white flower entwined with thriving grass.\nThe petals were withered,\nYet the grass was lush.\"",
+          "m_StoryID": "6619649",
+          "m_SubsectionID": "3276800",
+          "m_mStoryTitle": "\"\"",
+          "m_mSubsectionTitle": "\"\"",
+          "m_mText": "\"\"",
           "m_Reward": "[]",
           "m_icon": "[]",
-          "m_MainChapterClue": "[17,4]"
-        },
-        "3": {
-          "m_bError": null,
-          "m_StoryID": "11",
-          "m_SubsectionID": "3",
-          "m_mStoryTitle": "\"Song of Durendal\"",
-          "m_mSubsectionTitle": "\"Mountain of Longing\"",
-          "m_mText": "\"As we ventured into the depths of the canyon, Aeon called for me to halt,\n'Look, that is the cliff no one can conquer.'\nA mighty eagle circled above the peak,\nA black serpent licked its fangs within the trees,\nA white lamb wept at the mountain's base.\nI asked the lamb why it wept; it gazed at the cliff,\n'I can no longer reach the Other Side.'\nI asked the serpent why it coiled; it looked at the cliff,\n'I shall drag that eagle down from the peak.'\nI asked the eagle why it refused to land; it did not reply,\nBut dropped skeletal remains at my feet.\nI saw clearly—it was a lamb's bones cloaked in snakeskin,\nThe bones hung their head in sorrow,\nWhile the snakeskin fluttered in the wind's grip.\"",
-          "m_Reward": "[]",
-          "m_icon": "[]",
-          "m_MainChapterClue": "[17,3]"
+          "m_MainChapterClue": "[1416,1]"
         }
       }
     }

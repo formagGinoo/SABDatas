@@ -77,6 +77,9 @@ function UIHeroActDialogueMainBase:OnInactive()
   HeroActivityManager:ReportActClose(self.report_name, {
     openTime = self.openTime
   })
+  if not utils.isNull(self.m_level_detail_root) then
+    UILuaHelper.SetActive(self.m_level_detail_root, false)
+  end
 end
 
 function UIHeroActDialogueMainBase:OnDestroy()
@@ -256,10 +259,22 @@ function UIHeroActDialogueMainBase:FreshFreeNums()
   local costItemID = mainActInfoCfg.m_PassItem
   local itemNum = ItemManager:GetItemNum(costItemID)
   self.m_txt_consume_num_Text.text = itemNum
+  if not utils.isNull(self.m_time_iconcost_Image) then
+    local itemPath = ItemManager:GetItemIconPathByID(costItemID)
+    if itemPath then
+      UILuaHelper.SetAtlasSprite(self.m_time_iconcost_Image, itemPath)
+    end
+  end
   local freeItemId = mainActInfoCfg.m_FreePassItem
   local freeitemNum = ItemManager:GetItemNum(freeItemId) or 0
   if not utils.isNull(self.m_txt_consume_numadd_Text) then
     self.m_txt_consume_numadd_Text.text = freeitemNum .. "/" .. totalFreeNum
+  end
+  if not utils.isNull(self.m_time_iconfree_Image) then
+    local itemPath = ItemManager:GetItemIconPathByID(freeItemId)
+    if itemPath then
+      UILuaHelper.SetAtlasSprite(self.m_time_iconfree_Image, itemPath)
+    end
   end
 end
 

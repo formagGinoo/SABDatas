@@ -2,41 +2,70 @@ local Job_Login_MiniPatchUpgrade_Impl = {}
 local EventCenter = require("events/EventCenter")
 local EventDefine = require("events/EventDefine")
 
-function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
-  ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Start")
-  
+function Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+  utils.CheckAndPushCommonTips({
+    title = CS.ConfFact.LangFormat4DataInit("UpdateComplete"),
+    content = CS.ConfFact.LangFormat4DataInit("UpdateRestartConfirm"),
+    funcText1 = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes"),
+    btnNum = 1,
+    bLockBack = true,
+    func1 = function()
+      CS.ApplicationManager.Instance:RestartGame()
+    end
+  })
+end
+
+function Job_Login_MiniPatchUpgrade_Impl.RealMiniPatchUpgrade(jobNode)
   local function OnDownloadCompleteAfter()
     ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Success")
+    
     jobNode.Status = JobStatus.Success
   end
   
   if ChannelManager:IsWindows() then
     log.info("Windows MiniPatch Not Open")
-    ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Winddows_NotOpen")
+    ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Windows_NotOpen")
     OnDownloadCompleteAfter()
     return
   end
   local isOpen = CS.TGRPDownloaderMiniPatch.IsMiniPatchOpen
+  local cur_mini_patch_version = DownloadManager:GetMiniPatchVersion()
+  local mini_patch_version_number = 0
+  if cur_mini_patch_version then
+    mini_patch_version_number = tonumber(cur_mini_patch_version)
+  end
+  local iOldMiniPatchVersion = CS.TGRPDownloaderMiniPatch.Instance:GetCurrentMiniPatchVersion()
+  local bClearMiniPatchRes = false
+  if isOpen and mini_patch_version_number ~= nil then
+    bClearMiniPatchRes = mini_patch_version_number < iOldMiniPatchVersion
+  else
+    bClearMiniPatchRes = 0 < iOldMiniPatchVersion
+  end
+  if bClearMiniPatchRes then
+    log.info("Job_Login_MiniPatchUpgrade_Impl ClearMiniPatchRes")
+    CS.TGRPDownloaderMiniPatch.Instance:ClearMiniPatchRes()
+  end
   log.info("MiniPatch is open" .. tostring(isOpen))
   if isOpen == false then
     log.info("MiniPatch is disable, skip MiniPatchUpgrade")
-    ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NotOpen")
-    OnDownloadCompleteAfter()
+    if bClearMiniPatchRes then
+      ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NotOpen_BackRestart")
+      Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+    else
+      ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NotOpen")
+      OnDownloadCompleteAfter()
+    end
     return
   end
-  log.info("MiniPatchUpgrade Start")
-  local cur_mini_patch_version = DownloadManager:GetMiniPatchVersion()
-  if cur_mini_patch_version == nil then
-    log.info("MiniPatch version is nil, skip MiniPatchUpgrade")
-    ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "VersionError")
-    OnDownloadCompleteAfter()
-    return
-  end
-  local mini_patch_version_number = tonumber(cur_mini_patch_version)
   if mini_patch_version_number == nil or mini_patch_version_number <= 0 then
     log.info("MiniPatch version number <= 0, skip MiniPatchUpgrade")
-    ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "VersionError")
-    OnDownloadCompleteAfter()
+    if bClearMiniPatchRes then
+      ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "VersionError_BackRestart")
+      Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+    else
+      ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "VersionError")
+      OnDownloadCompleteAfter()
+    end
     return
   end
   local util = require("common/XLua/util")
@@ -46,8 +75,13 @@ function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
     ReportManager:ReportLoginProcess("MiniPatchUpgrade", "InitDownloader" .. mini_patch_version_number .. "_Success")
     local lUnDownloadedSize = CS.TGRPDownloaderMiniPatch.Instance.UnDownloadedMiniPatchSize
     if lUnDownloadedSize <= 0 then
-      ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NoNeedDownload")
-      OnDownloadCompleteAfter()
+      if bClearMiniPatchRes then
+        ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NoNeedDownload_BackRestart")
+        Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+      else
+        ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "NoNeedDownload")
+        OnDownloadCompleteAfter()
+      end
       return
     end
     local bBackground = DownloadManager:IsMiniPatchBackground()
@@ -102,16 +136,12 @@ function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
           CS.TGRPDownloaderMiniPatch.Instance:Reload()
         elseif bNeedRestart then
           ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "DownloadSuccess_Restart")
-          utils.CheckAndPushCommonTips({
-            title = CS.ConfFact.LangFormat4DataInit("UpdateComplete"),
-            content = CS.ConfFact.LangFormat4DataInit("UpdateRestartConfirm"),
-            funcText1 = CS.ConfFact.LangFormat4DataInit("PlayerCancelInfoYes"),
-            btnNum = 1,
-            bLockBack = true,
-            func1 = function()
-              CS.ApplicationManager.Instance:RestartGame()
-            end
-          })
+          Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+          return
+        elseif bClearMiniPatchRes then
+          ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "DownloadSuccess_NotRestart_BackRestart")
+          Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+          return
         else
           ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "DownloadSuccess_NotRestart")
           CS.TGRPDownloaderMiniPatch.Instance:Reload()
@@ -154,7 +184,13 @@ function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
     ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Download" .. cur_mini_patch_version .. (bBackground and "_Background" or "_Foreground"))
     if bBackground then
       CS.TGRPDownloaderMiniPatch.Instance:StartMiniPatchDownload(OnDownloadComplete, OnDownloadStart, OnDownloadProgress)
-      OnDownloadCompleteAfter()
+      if bClearMiniPatchRes then
+        ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Download" .. cur_mini_patch_version .. (bBackground and "_Background" or "_Foreground") .. "_BackRestart")
+        Job_Login_MiniPatchUpgrade_Impl.TryShowRestart()
+        return
+      else
+        OnDownloadCompleteAfter()
+      end
     else
       jobNode.UnitProgress = 1
       local fJobProgressMax = jobNode.Graph:GetJobProgress()
@@ -169,6 +205,11 @@ function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
       CS.TGRPDownloaderMiniPatch.Instance:StartMiniPatchDownload(OnDownloadComplete, OnDownloadStart, OnDownloadProgress)
     end
   end))
+end
+
+function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgrade(jobNode)
+  ReportManager:ReportLoginProcess("InitNetwork_Login_MiniPatchUpgrade", "Start")
+  Job_Login_MiniPatchUpgrade_Impl.RealMiniPatchUpgrade(jobNode)
 end
 
 function Job_Login_MiniPatchUpgrade_Impl.OnMiniPatchUpgradeSuccess(jobNode)

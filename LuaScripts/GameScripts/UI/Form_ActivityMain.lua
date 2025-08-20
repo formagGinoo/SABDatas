@@ -14,7 +14,7 @@ function Form_ActivityMain:AfterInit()
 end
 
 function Form_ActivityMain:OnActive()
-  self:addEventListener("eGameEvent_Activity_ResetData", handler(self, self.OnActivityResetData))
+  self:addEventListener("eGameEvent_Activity_Reload", handler(self, self.OnActivityResetData))
   self:RefreshActivityList()
   local param = self.m_csui.m_param
   local selectIndex

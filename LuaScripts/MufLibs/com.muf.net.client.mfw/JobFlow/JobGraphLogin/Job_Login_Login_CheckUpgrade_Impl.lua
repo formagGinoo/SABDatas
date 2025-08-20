@@ -240,31 +240,46 @@ function Job_Login_Login_CheckUpgrade_Impl.DownloadUpgradePatch(jobNode, scLogin
       end
     end
     
-    utils.CheckAndPushCommonTips({
-      title = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTitle"),
-      content = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsForce"),
-      fContentCB = function(sContent)
-        local sContentNew = string.customizereplace(sContent, {"{size}"}, DownloadManager:GetDownloadSizeStr(needSpaceSize))
-        return sContentNew
-      end,
-      funcText1 = CS.ConfFact.LangFormat4DataInit("CommonDownload"),
-      btnNum = 1,
-      bLockBack = true,
-      func1 = function()
-        jobNode.UnitProgress = 1
-        local fJobProgressMax = jobNode.Graph:GetJobProgress()
-        jobNode.UnitProgress = 0
-        local fJobProgressMin = jobNode.Graph:GetJobProgress()
-        EventCenter.Broadcast(EventDefine.eGameEvent_Login_SetProgressClamp, {
-          jobFlow = jobNode.Graph,
-          fMin = fJobProgressMin,
-          fMax = fJobProgressMax,
-          jobProgressSpeedMulti = 1
-        })
-        ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatch_Start")
-        CS.MUF.Download.UpgradePatch.Instance:StartUpgradePatch(versionContext.ClientLocalVersion, false, OnDownloadUpgradePatchComplete, OnDownloadUpgradePatchProgress)
-      end
-    })
+    if CS.MUF.Download.UpgradePatch.Instance:CheckPreRes(versionContext.ClientLocalVersion) then
+      jobNode.UnitProgress = 1
+      local fJobProgressMax = jobNode.Graph:GetJobProgress()
+      jobNode.UnitProgress = 0
+      local fJobProgressMin = jobNode.Graph:GetJobProgress()
+      EventCenter.Broadcast(EventDefine.eGameEvent_Login_SetProgressClamp, {
+        jobFlow = jobNode.Graph,
+        fMin = fJobProgressMin,
+        fMax = fJobProgressMax,
+        jobProgressSpeedMulti = 1
+      })
+      ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatch_Start")
+      CS.MUF.Download.UpgradePatch.Instance:StartUpgradePatch(versionContext.ClientLocalVersion, false, OnDownloadUpgradePatchComplete, OnDownloadUpgradePatchProgress)
+    else
+      utils.CheckAndPushCommonTips({
+        title = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTitle"),
+        content = CS.ConfFact.LangFormat4DataInit("LoginDownloadNecessaryResourceTipsForce"),
+        fContentCB = function(sContent)
+          local sContentNew = string.customizereplace(sContent, {"{size}"}, DownloadManager:GetDownloadSizeStr(needSpaceSize))
+          return sContentNew
+        end,
+        funcText1 = CS.ConfFact.LangFormat4DataInit("CommonDownload"),
+        btnNum = 1,
+        bLockBack = true,
+        func1 = function()
+          jobNode.UnitProgress = 1
+          local fJobProgressMax = jobNode.Graph:GetJobProgress()
+          jobNode.UnitProgress = 0
+          local fJobProgressMin = jobNode.Graph:GetJobProgress()
+          EventCenter.Broadcast(EventDefine.eGameEvent_Login_SetProgressClamp, {
+            jobFlow = jobNode.Graph,
+            fMin = fJobProgressMin,
+            fMax = fJobProgressMax,
+            jobProgressSpeedMulti = 1
+          })
+          ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatch_Start")
+          CS.MUF.Download.UpgradePatch.Instance:StartUpgradePatch(versionContext.ClientLocalVersion, false, OnDownloadUpgradePatchComplete, OnDownloadUpgradePatchProgress)
+        end
+      })
+    end
   end
   
   ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "Patch_DownloadPatchList_Start")
@@ -300,6 +315,18 @@ function Job_Login_Login_CheckUpgrade_Impl.OnCheckUpgradeComplete(jobNode, scLog
   CS.TGRPDownloaderMiniPatch.IsMiniPatchReport = true
   CS.CDNHelper.Instance:SetMiniPatchCDNList(vMiniPatch)
   DownloadManager:SetMiniPatchConfig(scLoginCheckUpgrade.iMiniPatchVersion, scLoginCheckUpgrade.bMiniPatchBackground, scLoginCheckUpgrade.bMiniPatchRestart)
+  local vStateScript = {
+    scLoginCheckUpgrade.sStateScriptPath
+  }
+  local sStateScriptCdn = Job_Login_Login_CheckUpgrade_Impl.PharseCDN(scLoginCheckUpgrade.sStateScriptPath)
+  for i = 1, #scLoginCheckUpgrade.vCdnList do
+    local sCdn = scLoginCheckUpgrade.vCdnList[i]
+    vStateScript[i + 1] = string.gsub(scLoginCheckUpgrade.sStateScriptPath, sStateScriptCdn, sCdn)
+  end
+  CS.TGRPDownloaderStateScript.IsOpen = scLoginCheckUpgrade.bStateScriptOpen
+  CS.TGRPDownloaderStateScript.IsReport = true
+  CS.CDNHelper.Instance:SetStateScriptCDNList(vStateScript)
+  DownloadManager:SetStateScriptConfig(scLoginCheckUpgrade.iStateScriptVersion)
   if scLoginCheckUpgrade.vProxyConnServer ~= "" then
     ReportManager:ReportLoginProcess("InitNetwork_Login_CheckUpgrade", "CheckUpgrade_ProxyConnServer:" .. table.serialize(scLoginCheckUpgrade.vProxyConnServer))
     for _, sIpData in pairs(scLoginCheckUpgrade.vProxyConnServer) do

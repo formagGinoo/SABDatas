@@ -388,6 +388,8 @@ function StargazingManager:GetCastleStarTechEffectByType(effectType)
         end
       end
       effectMap[effectType] = count
+    elseif effectType == StargazingManager.CastleStarEffectType.Boss then
+      return effectList
     else
       for i, v in ipairs(effectList) do
         for m, n in ipairs(v) do

@@ -36,8 +36,8 @@ function UIBattlePassMain:AfterInit()
   self.m_lastBuState = 0
   self.m_curSelectTab = TopTabType.RewardPanel
   self.m_firstEnterPlay = true
-  self:FreshData()
   self.m_isFirstEnterFreshPanel = true
+  self.m_animTime = UILuaHelper.GetAnimationLengthByName(self.m_vx_barglow, "BattlePass_Up_bar")
 end
 
 function UIBattlePassMain:OnGetFirstEnterType()
@@ -84,6 +84,7 @@ end
 function UIBattlePassMain:OnActive()
   UIBattlePassMain.super.OnActive(self)
   self:AddEventListeners()
+  self:FreshData()
   if not self.m_isFirstEnterFreshPanel then
     self:OnGetFirstEnterType()
   end
@@ -97,6 +98,10 @@ function UIBattlePassMain:OnOpen()
 end
 
 function UIBattlePassMain:OnUncoverd()
+  if self.m_stActivity == nil then
+    self:CloseForm()
+    return
+  end
   self:CheckShowLevelUp10()
   self:FreshShowActSpineInfo()
   if self.m_lastBuState ~= self.m_stActivity:GetBuyStatus() then
@@ -115,6 +120,7 @@ function UIBattlePassMain:OnInactive()
       panelLua:OnInActive()
     end
   end
+  self:ClearAnimTimer()
   self:RemoveAllEventListeners()
   self:CheckRecycleSpine(true)
 end
@@ -192,6 +198,7 @@ function UIBattlePassMain:OnTaskUpdate(data)
   if data.iActivityID == self.m_stActivity:getID() then
     self:FreshTaskLevelInfoShow()
     self:FreshTaskRedShow()
+    self:FreshRewardRedShow()
   end
 end
 
@@ -298,6 +305,13 @@ function UIBattlePassMain:FreshProgress()
   end
   if not self.m_firstEnterPlay and lastFillAmount ~= self.m_img_bar_Image.fillAmount then
     UILuaHelper.SetActive(self.m_vx_barglow, true)
+    if self.m_animTime then
+      self:ClearAnimTimer()
+      self.m_animaTimer = TimeService:SetTimer(self.m_animTime, 1, function()
+        UILuaHelper.SetActive(self.m_vx_barglow, false)
+        self.m_animaTimer = nil
+      end)
+    end
   end
 end
 
@@ -477,6 +491,13 @@ function UIBattlePassMain:OnBtncheck3Clicked()
   local skinId = self.m_stActivity:GetSkinId()
   if heroId and skinId then
     StackFlow:Push(UIDefines.ID_FORM_FASHION, {heroID = heroId, fashionID = skinId})
+  end
+end
+
+function UIBattlePassMain:ClearAnimTimer()
+  if self.m_animaTimer then
+    TimeService:KillTimer(self.m_animaTimer)
+    self.m_animaTimer = nil
   end
 end
 

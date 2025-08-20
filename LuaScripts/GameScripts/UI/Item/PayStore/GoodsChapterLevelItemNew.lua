@@ -3,6 +3,18 @@ local GoodsChapterLevelItemNew = class("GoodsChapterLevelItemNew", UIItemBase)
 
 function GoodsChapterLevelItemNew:OnInit()
   self.c_item_advanced = self.m_itemTemplateCache:GameObject("c_item_advanced")
+  self.m_btnUp = self.m_btn_up:GetComponent("ButtonExtensions")
+  if self.m_btnUp then
+    function self.m_btnUp.Clicked()
+      self:OnBtnBuyUp()
+    end
+  end
+  self.m_btnDown = self.m_btn_down:GetComponent("ButtonExtensions")
+  if self.m_btnDown then
+    function self.m_btnDown.Clicked()
+      self:OnBtnBuyDown()
+    end
+  end
 end
 
 function GoodsChapterLevelItemNew:OnFreshData()
@@ -22,22 +34,16 @@ function GoodsChapterLevelItemNew:OnFreshData()
   self.is_Purchased = data and data.iBuyTime > 0 and true or false
   self.m_bg_light1:SetActive(not self.freeGot and self.is_unlock)
   self.m_bg_light2:SetActive(not self.payGot and self.is_unlock and self.is_Purchased)
-  self.m_btnUp = self.m_btn_up:GetComponent("ButtonExtensions")
-  if self.m_btnUp then
-    function self.m_btnUp.Clicked()
-      self:OnBtnBuyUp()
-    end
-  end
-  self.m_btnDown = self.m_btn_down:GetComponent("ButtonExtensions")
-  if self.m_btnDown then
-    function self.m_btnDown.Clicked()
-      self:OnBtnBuyDown()
-    end
-  end
   if freeReward_list and freeReward_list[1] then
     local childCount = self.m_item_pos01.transform.childCount
     if childCount <= 0 then
       local obj = GameObject.Instantiate(self.c_item_advanced, self.m_item_pos01.transform)
+    end
+    if 0 < self.m_item_pos01.transform.childCount then
+      local rewardFx = self.m_item_pos01.transform:GetChild(0).gameObject.transform:Find("c_pnl_receive")
+      if not utils.isNull(rewardFx) then
+        rewardFx.gameObject:SetActive(not self.freeGot and self.is_unlock)
+      end
     end
     local widget = self.m_item_pos01.transform:GetChild(0).gameObject
     widget:SetActive(true)
@@ -59,6 +65,13 @@ function GoodsChapterLevelItemNew:OnFreshData()
     local childCount = self.m_item_pos02.transform.childCount
     if childCount <= 0 then
       local obj = GameObject.Instantiate(self.c_item_advanced, self.m_item_pos02.transform)
+      self.m_rewardFx02 = obj.transform:Find("c_pnl_receive")
+    end
+    if 0 < self.m_item_pos02.transform.childCount then
+      local rewardFx = self.m_item_pos02.transform:GetChild(0).gameObject.transform:Find("c_pnl_receive")
+      if not utils.isNull(rewardFx) then
+        rewardFx.gameObject:SetActive(not self.payGot and self.is_unlock and self.is_Purchased)
+      end
     end
     local widget = self.m_item_pos02.transform:GetChild(0).gameObject
     widget:SetActive(true)

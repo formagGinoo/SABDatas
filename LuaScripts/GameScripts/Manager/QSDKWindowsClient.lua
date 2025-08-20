@@ -41,6 +41,7 @@ function QSDKWindowsClient:Initialize(successCB)
   self.m_payCheckoutUrl = "payStatusCheck/stop"
   self.m_logoutUrl = "PCEvent_logoutTheGame"
   self.m_changeAccountUrl = "PCEvent_changeAccount"
+  self.m_exitUrl = "PCEvent_exitGame"
   if self:IsSandBox() then
     self.m_openid = "XGWNhT"
     self.m_openKey = "M8gE3h5hhAEAk7wURMPNmIde5bV1YdUL"
@@ -134,8 +135,12 @@ function QSDKWindowsClient:OnUrlChangedCb(changedUrl)
     log.info("退出登录")
     CS.ApplicationManager.Instance:ExitGame()
     self:CloseWebView()
-  elseif string.find(changedUrl, "PCEvent_changeAccount") then
+  elseif string.find(changedUrl, self.m_changeAccountUrl) then
     log.info("切换账号")
+    CS.ApplicationManager.Instance:ExitGame()
+    self:CloseWebView()
+  elseif string.find(changedUrl, self.m_exitUrl) then
+    log.info("退出游戏")
     CS.ApplicationManager.Instance:ExitGame()
     self:CloseWebView()
   end

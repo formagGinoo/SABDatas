@@ -942,6 +942,9 @@ function LegacyLevelManager:OnBackLobby(fCB)
               formStr = "Form_HallActivityMain"
             end
           end
+        else
+          StackFlow:Push(UIDefines.ID_FORM_HALL)
+          formStr = "Form_Hall"
         end
       else
         StackFlow:Push(UIDefines.ID_FORM_HALL)

@@ -5,6 +5,11 @@ local MaxTTRTimeNum = 2000
 local CsTime = CS.UnityEngine.Time
 local OneSecondOfMS = 1000
 RoleManager.MaxHallBgPosNum = 5
+RoleManager.BanType = {
+  None = 0,
+  CheatBan = 1,
+  NormalBan = 2
+}
 local DefaultMainBgIndex = 1
 
 function RoleManager:OnCreate()
@@ -22,6 +27,7 @@ function RoleManager:OnCreate()
   self.m_bNewRole = false
   self.iRoleRegTime = nil
   self.m_reqSceneRealTime = nil
+  self.m_sSignature = nil
   self.m_headID = nil
   self.m_headCfgDic = {}
   self.m_headFrameID = nil
@@ -53,6 +59,10 @@ function RoleManager:OnItemChange(changeItemDataList)
       local headCfg = self:GetPlayerHeadCfg(v.iID)
       if headCfg ~= nil then
         self:SetRoleHeadNewFlag(v.iID, 1)
+      end
+      local bgCfg = self:GetPlayerHeadBackgroundCfg(v.iID)
+      if bgCfg ~= nil then
+        self:SetRoleHeadBackgroundNewFlag(v.iID, 1)
       end
       local mainBgCfg = self:GetMainBackgroundCfg(v.iID)
       if mainBgCfg ~= nil then
@@ -93,6 +103,7 @@ function RoleManager:OnAfterFreshData()
   self:CheckUpdateHeadRedDotCount()
   self:CheckUpdateHeadFrameRedDotCount()
   self:CheckUpdateMainBackgroundRedDotCount()
+  self:CheckUpdateHeadBackGroundRedDotCount()
   self:FreshMainBGDataList(self.m_mainBGDataList or {})
   self:CheckFreshHallDecorateFirstEnterRedDotCount()
 end
@@ -163,6 +174,16 @@ function RoleManager:OnRoleGetNoticeSC(data, msg)
   end
 end
 
+function RoleManager:ReqGetRandomName()
+  if self.vRandomNameList and #self.vRandomNameList > 0 then
+    self:broadcastEvent("eGameEvent_Rename_GetRename", self.vRandomNameList[1])
+    table.remove(self.vRandomNameList, 1)
+    return
+  end
+  local randomNameCSMsg = MTTDProto.Cmd_Role_RandomName_CS()
+  RPCS():Role_RandomName(randomNameCSMsg, handler(self, self.OnRandomNameSC))
+end
+
 function RoleManager:ReqGetRandomNameFirst()
   if self.vRandomNameList and #self.vRandomNameList > 0 then
     return
@@ -173,16 +194,6 @@ end
 
 function RoleManager:OnRandomNameSCFirst(data, msg)
   self.vRandomNameList = data.vName
-end
-
-function RoleManager:ReqGetRandomName()
-  if self.vRandomNameList and #self.vRandomNameList > 0 then
-    self:broadcastEvent("eGameEvent_Rename_GetRename", self.vRandomNameList[1])
-    table.remove(self.vRandomNameList, 1)
-    return
-  end
-  local randomNameCSMsg = MTTDProto.Cmd_Role_RandomName_CS()
-  RPCS():Role_RandomName(randomNameCSMsg, handler(self, self.OnRandomNameSC))
 end
 
 function RoleManager:OnRandomNameSC(data, msg)
@@ -336,6 +347,17 @@ function RoleManager:OnRoleSetMainBackgroundIndexSC(stRoleSetMainBackgroundIndex
   self:broadcastEvent("eGameEvent_Role_SetMainBackgroundIndex")
 end
 
+function RoleManager:ReqSetSignatureCS(signatureStr)
+  local randomNameCSMsg = MTTDProto.Cmd_Role_SetSignature_CS()
+  randomNameCSMsg.sSignature = signatureStr
+  RPCS():Role_SetSignature(randomNameCSMsg, handler(self, self.OnSetSignatureSC))
+end
+
+function RoleManager:OnSetSignatureSC(data, msg)
+  self.m_sSignature = data.sSignature
+  self:broadcastEvent("eGameEvent_Role_SetSignature", data.sSignature)
+end
+
 function RoleManager:GetDefaultHeadID()
   local headIns = ConfigManager:GetConfigInsByName("PlayerHead")
   local allCfgDic = headIns:GetAll()
@@ -344,6 +366,10 @@ function RoleManager:GetDefaultHeadID()
       return v.m_HeadID
     end
   end
+end
+
+function RoleManager:GetRoleSignature()
+  return self.m_sSignature or ""
 end
 
 function RoleManager:GetDefaultHeadFrameID()
@@ -411,6 +437,25 @@ function RoleManager:CheckUpdateHeadFrameRedDotCount()
   end
   self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
     redDotKey = RedDotDefine.ModuleType.PersonalCardHeadFrameTab,
+    count = redDotCount
+  })
+end
+
+function RoleManager:CheckUpdateHeadBackGroundRedDotCount()
+  if not self.m_headBackgroundID then
+    return
+  end
+  local redDotCount = 0
+  local headFrameIns = ConfigManager:GetConfigInsByName("PlayerBackground")
+  local allCfgDic = headFrameIns:GetAll()
+  for _, v in pairs(allCfgDic) do
+    local isNewFlag = self:GetRoleHeadBackgroundNewFlag(v.m_CardBGID)
+    if isNewFlag == true then
+      redDotCount = redDotCount + 1
+    end
+  end
+  self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+    redDotKey = RedDotDefine.ModuleType.PersonalCardBgTab,
     count = redDotCount
   })
 end
@@ -497,6 +542,7 @@ function RoleManager:InitRole(initRoleSerData)
   self.m_bNewRole = initRoleSerData.bNewRole
   self.iRoleRegTime = initRoleSerData.iRoleRegTime
   self.m_headID = initRoleSerData.iHeadId
+  self.m_sSignature = initRoleSerData.sSignature
   self.m_headFrameID = initRoleSerData.iHeadFrameId
   self.m_headFrameExpireTime = initRoleSerData.iHeadFrameExpireTime
   self.m_headBackgroundID = initRoleSerData.iShowBackgroundId
@@ -649,6 +695,19 @@ function RoleManager:GetHeadFrameIDByIDAndExpireTime(headFrameID, expireTime)
   return headFrameID
 end
 
+function RoleManager:GetBgIDByIDAndExpireTime(bgID, expireTime)
+  if bgID == nil or bgID == 0 then
+    return self:GetDefaultMainBackgroundID()
+  end
+  if expireTime ~= nil and expireTime ~= 0 then
+    local curServerTime = TimeUtil:GetServerTimeS()
+    if expireTime <= curServerTime then
+      return self:GetDefaultMainBackgroundID()
+    end
+  end
+  return bgID
+end
+
 function RoleManager:GetHeadBackGroundID()
   if self.m_headBackgroundID == nil or self.m_headBackgroundID == 0 then
     return self:GetDefaultHeadBackGroundID()
@@ -723,6 +782,32 @@ function RoleManager:IsPlayerHeadHide(playerHeadCfg)
   return false
 end
 
+function RoleManager:GetPlayerBgHideTypeValue(playerBgID, configHideTypeValue)
+  if not playerBgID then
+    return configHideTypeValue
+  end
+  local activityCom = ActivityManager:GetActivityByType(MTTD.ActivityType_UpTimeManager)
+  if not activityCom then
+    return configHideTypeValue
+  end
+  local isMatch, serverValue = activityCom:GetPlayerBgStatusByID(configHideTypeValue)
+  if isMatch == true then
+    configHideTypeValue = serverValue
+  end
+  return configHideTypeValue
+end
+
+function RoleManager:IsPlayerBgHide(playerBgCfg)
+  if not playerBgCfg then
+    return
+  end
+  local hideType = self:GetPlayerBgHideTypeValue(playerBgCfg.m_CardBGID, playerBgCfg.m_HideType)
+  if hideType == 1 then
+    return true
+  end
+  return false
+end
+
 function RoleManager:GetPlayerHeadFrameCfg(headFrameID)
   if not headFrameID then
     return
@@ -756,7 +841,7 @@ function RoleManager:GetPlayerHeadFrameHideTypeValue(playerHeadFrameID, configHi
   return configHideTypeValue
 end
 
-function RoleManager:GetPlayerBackgroundCfg(backgroundID)
+function RoleManager:GetPlayerHeadBackgroundCfg(backgroundID)
   if not backgroundID then
     return
   end
@@ -765,7 +850,7 @@ function RoleManager:GetPlayerBackgroundCfg(backgroundID)
     tempCfg = self.m_playerBackgroundCfgDic[backgroundID]
   else
     local headBackgroundIns = ConfigManager:GetConfigInsByName("PlayerBackground")
-    local tempBackgroundCfg = headBackgroundIns:GetValue_ByHeadFrameID(backgroundID)
+    local tempBackgroundCfg = headBackgroundIns:GetValue_ByCardBGID(backgroundID)
     if tempBackgroundCfg:GetError() ~= true then
       tempCfg = tempBackgroundCfg
       self.m_playerBackgroundCfgDic[backgroundID] = tempCfg
@@ -864,6 +949,19 @@ function RoleManager:SetRoleHeadFrameNewFlag(headID, flagNum, isNotFreshRedDot)
   end
 end
 
+function RoleManager:SetAllRoleHeadBackgroundNewFlag()
+  local PlayerBackgroundIns = ConfigManager:GetConfigInsByName("PlayerBackground")
+  local allCfgDic = PlayerBackgroundIns:GetAll()
+  for _, v in pairs(allCfgDic) do
+    local bgID = v.m_CardBGID
+    local isNewFlag = self:GetPlayerHeadBackgroundCfg(bgID)
+    if isNewFlag == true then
+      self:SetRoleHeadBackgroundNewFlag(bgID, -1)
+    end
+  end
+  self:CheckUpdateHeadBackGroundRedDotCount()
+end
+
 function RoleManager:GetRoleHeadBackgroundNewFlag(headBackGroundID)
   if not headBackGroundID then
     return
@@ -879,6 +977,7 @@ function RoleManager:SetRoleHeadBackgroundNewFlag(headBackGroundID, flagNum)
   end
   local keyStr = "RoleHeadBackGround_" .. headBackGroundID
   LocalDataManager:SetIntSimple(keyStr, flagNum, true)
+  self:CheckUpdateHeadBackGroundRedDotCount()
 end
 
 function RoleManager:GetRoleHeadFrameNewFlag(headFrameID)
@@ -919,10 +1018,6 @@ function RoleManager:GetMainBackGroundIndex()
   return self.m_mainBGIndex
 end
 
-function RoleManager:GetMainBackGroundDataList()
-  return self.m_mainBGDataList
-end
-
 function RoleManager:ReqGetUserToken(url)
   if not url then
     log.error("Web Act Url Error")
@@ -944,11 +1039,15 @@ function RoleManager:ReqGetUserToken(url)
       else
         separator = "?"
       end
-      local actUrl = string.format("%s%sclientparams=%s", url, separator, base64)
+      local actUrl = string.format("%s%slang=%s&clientparams=%s", url, separator, langId, base64)
       CS.DeviceUtil.OpenURLNew(actUrl)
       log.info("Web Act Url:" .. actUrl)
     end
   end)
+end
+
+function RoleManager:GetMainBackGroundDataList()
+  return self.m_mainBGDataList
 end
 
 function RoleManager:GetMinePlayerInfoTab()

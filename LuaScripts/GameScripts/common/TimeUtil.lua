@@ -536,6 +536,16 @@ function TimeUtil:ServerTimerToServerString(timeSec)
   return os.date("%Y/%m/%d %H:%M:%S", timeSec)
 end
 
+function TimeUtil:ServerTimerToServerString2(timeSec)
+  if not timeSec then
+    return
+  end
+  local server_time_zone = TimeUtil:GetServerTimeGmtOff()
+  local local_time_zone = TimeUtil:GetClientTimeGmtOff()
+  timeSec = timeSec - local_time_zone + server_time_zone
+  return os.date("%Y/%m/%d", timeSec)
+end
+
 function TimeUtil:TimerToString(timeSec)
   if not timeSec then
     return

@@ -1,0 +1,138 @@
+{
+  "className": "CData_ActLostStory",
+  "data": {
+    "106001": {
+      "m_bError": null,
+      "m_StoryID": "106001",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106101",
+      "m_Type": "1",
+      "m_mTitle": "\"The Ashen Garden\"",
+      "m_mText": "\"The region now known to the world as the Ganelon Forbidden Grounds bore a vastly different name in 1053— the \"The Ashen Garden.\" The Ganelons of that era regarded this place as a paradise on earth, and when Pestilence ravaged the land, people fled here en masse seeking sanctuary.\n\nYet the cruel irony lay in the fact that the very plague which claimed countless lives had its true source hidden deep within this \"Ashen Garden\"—namely in its underground river, seemingly placid on the surface, but turbulent beneath.\"",
+      "m_mFootnote": "\"Cartographer's Journal 1\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img01\""
+    },
+    "106002": {
+      "m_bError": null,
+      "m_StoryID": "106002",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106102",
+      "m_Type": "2",
+      "m_mTitle": "\"Wolfsbane\"",
+      "m_mText": "\"The white flowers that now bloom only within Lupine Forest once grew in unprecedented abundance in 1053—these blossoms spread far and wide, even crossing the territorial boundaries between the great houses of Bathory and Ganelon.\n\nThese elegant little flowers were revered for their miraculous medicinal properties: they could both heal bodily wounds and dispel the spectre of plague. Thus, the local populace venerated them as symbols of protection. People had firmly believed this sea of pure white blossoms would shield their lands from disease and calamity, granting eternal peace.\"",
+      "m_mFootnote": "\"Cartographer's Journal 2\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img02\""
+    },
+    "106003": {
+      "m_bError": null,
+      "m_StoryID": "106003",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106103",
+      "m_Type": "1",
+      "m_mTitle": "\"Mutation\"",
+      "m_mText": "\"Clearly, the people of 1053 knew nothing about symptoms of mutation brought by the Black Blood disease.\n\nAside from the precious few who could harness the power of Black Blood for their own purposes, for the masses, once tainted by this cursed blood, they would embark upon a path of no return—over the following weeks, their minds would slowly erode and their humanity slowly fractured, bit by bit, until they devolved into creatures driven by bloodlust, gaining brute strength far beyond that of any ordinary mortal.\n\nEven more disturbing was how humans of different bloodlines mutated in completely different fashions: Ganelons transformed into bloodthirsty wolves, and Bathorys metamorphosed into bats of the dark night, while the seafaring people of Landis would mutate into the most terrifying sea monsters of the deep.\"",
+      "m_mFootnote": "\"Cartographer's Journal 3\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img03\""
+    },
+    "106004": {
+      "m_bError": null,
+      "m_StoryID": "106004",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106104",
+      "m_Type": "2",
+      "m_mTitle": "\"Moontide Canal\"",
+      "m_mText": "\"This ancient river, which has long since dried up in the current age, once flowed like a silver ribbon across the territories between the great houses of Bathory and Ganelon. In the era of abundant water and lush vegetation, it became the traditional boundary which both clans had respected for generations.\n\nHowever, as the peninsula's ecosystem gradually withered, the once-flowing water began to dwindle, and this precious resource became as rare as nectar. The two great houses that once coexisted in harmony now turned their blades against each other over this sole remaining source of life, locked in a bitter struggle.\"",
+      "m_mFootnote": "\"Cartographer's Journal 4\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img04\""
+    },
+    "106005": {
+      "m_bError": null,
+      "m_StoryID": "106005",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106105",
+      "m_Type": "1",
+      "m_mTitle": "\"The Cartographer\"",
+      "m_mText": "\"Guided by the philosophy of \"measuring the world with one's own feet,\" Cartographers scatter to every corner of the globe, traversing every realm and temporal node throughout history.\n\nThey survey the mysterious territories of continents still undiscovered, conducting research across cultural, civilizational, and archaeological boundaries. Each map bears the weight of history buried by time; each survey continues the legacy of human memory.\"",
+      "m_mFootnote": "\"Cartographer's Journal 5\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img05\""
+    },
+    "106006": {
+      "m_bError": null,
+      "m_StoryID": "106006",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106106",
+      "m_Type": "1",
+      "m_mTitle": "\"Family Feud\"",
+      "m_mText": "\"The year 1053 marked the beginning of the fateful entanglement between the houses of Bathory and Ganelon.\n\nFrom territorial disputes over rivers and control of precious natural resources, to fundamental philosophical differences—the Bathorys cherished elegant and reserved aristocratic refinement, while the Ganelons upheld frank and forthright candor—even their long-guarded cultural heritage became kindling for the growing tensions between them.\n\nThis centuries-long feud grew ever more intense, like an unending tragedy. This persisted until 1353, when the great plague descended like death incarnate, and the hundred-year vendetta between the two clans finally reached its somber end beneath the shifting sands.\"",
+      "m_mFootnote": "\"Cartographer's Journal 6\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img06\""
+    },
+    "106007": {
+      "m_bError": null,
+      "m_StoryID": "106007",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106107",
+      "m_Type": "2",
+      "m_mTitle": "\"The Crawleys\"",
+      "m_mText": "\"A new discovery from this survey—the house of Crowley.\n\nThis minor clan, vassals to the Duchy of Ganelon, had dwelt for generations in the northern regions of the Lupine Forest. The Crawleys possessed distinctive physical traits, namely red hair and pale skin. Due to their unique Blood Power, they are often misunderstood by Ganelons as outcasts who practice \"witchcraft.\"\n\nThe women of Crawley possess even more distinctive Blood Powers, expending mental strength to negate physical harm. In other words, they are born with the miraculous power to protect others.\"",
+      "m_mFootnote": "\"Cartographer's Journal 7\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img07\""
+    },
+    "106008": {
+      "m_bError": null,
+      "m_StoryID": "106008",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106108",
+      "m_Type": "2",
+      "m_mTitle": "\"Twilight Citadel\"",
+      "m_mText": "\"This survey revealed that the house of Bathory's betrayal of the Church occurred much earlier than Cartographers once thought—even before 1053.\n\nHowever, every house bears the sacred duty to obey the Church and guard the Divine Body. What impact might Bathory's heretical actions have on the Divine Body's sealing power? What unspeakable horrors lie hidden within the legendary Divine Body, sealed beneath the castle and piercing through the earth's core? Further investigation is required.\"",
+      "m_mFootnote": "\"Cartographer's Journal 8\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img08\""
+    },
+    "106009": {
+      "m_bError": null,
+      "m_StoryID": "106009",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106109",
+      "m_Type": "2",
+      "m_mTitle": "\"The Bloodletting\"",
+      "m_mText": "\"According to Cain, the mysterious Bloodletting ritual was meticulously formed to fulfill an old patriarch's cherished wish—to guide power from the \"Long Night\" into the mortal realm. However, this ritual resembles an insatiable, bottomless abyss, requiring an endless stream of blood sacrifice to maintain its operation.\n\nThe truth of his words remains uncertain, but one thing is clear: the catastrophe that erupted in 1053 was but a minor prologue for the true descent of the Long Night.\"",
+      "m_mFootnote": "\"Cartographer's Journal 9\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img09\""
+    },
+    "106010": {
+      "m_bError": null,
+      "m_StoryID": "106010",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106110",
+      "m_Type": "1",
+      "m_mTitle": "\"The Gargoyle\"",
+      "m_mText": "\"Legend states that every stone gargoyle originates from the same ancient primordial boulder, their hierarchical ranks determined by the order in which they were cleaved from the mother stone.\n\nOnce separated from this stone, skilled artisans would carve them into distinct forms and adorn them with varied colors and patterns. Yet despite their countless external differences, these gargoyles share a single thread of consciousness—they are united in thought and purpose, working in perfect harmony to fulfill their sacred duty of guarding the castle and protecting the young Vassals who have yet to reach maturity.\"",
+      "m_mFootnote": "\"Cartographer's Journal 10\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img10\""
+    },
+    "106011": {
+      "m_bError": null,
+      "m_StoryID": "106011",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106111",
+      "m_Type": "1",
+      "m_mTitle": "\"Timeworn Mausoleum\"",
+      "m_mText": "\"The Tower situated at the base of Bathory Castle was reportedly constructed to seal a mysterious temporal rift. To maintain the Tower's structural integrity, the family has expended countless artisans over hundreds of years for maintenance. Perhaps due to prolonged erosion by the temporal rift, the once-abstract laws of time and space have manifested in tangible form.\"",
+      "m_mFootnote": "\"Cartographer's Journal 11\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img11\""
+    },
+    "106012": {
+      "m_bError": null,
+      "m_StoryID": "106012",
+      "m_ActivityID": "1060",
+      "m_LevelID": "106112",
+      "m_Type": "2",
+      "m_mTitle": "\"Lost Diary\"",
+      "m_mText": "\"Several withered Wolfsbane petals and a diary written in elegant script reveal the identity of its owner.\n\nThe entry reads: I have lived for hundreds of years and witnessed far too many joys and sorrows. The light that once burned in my heart from love, victory, and peace has gradually dimmed with the passage of time. Whenever this happens, I think of you—knowing that you exist somewhere in the future, living and breathing—and I find the strength to endure it all. Your existence means everything to me.\"",
+      "m_mFootnote": "\"Cartographer's Journal 12\"",
+      "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img12\""
+    }
+  },
+  "status": "processed_12_items"
+}

@@ -126,14 +126,19 @@ function Form_CastleDispatchMap:RefreshUI(showAnimIndexTab)
   self.m_dispatchLevel = CastleDispatchManager:GetDispatchLevel()
   self.m_dispatchDataMap = CastleDispatchManager:GetDispatchData()
   self.m_initDispatchDataMap = table.deepcopy(self.m_dispatchDataMap)
+  local isEmpty = true
   for i = 1, 10 do
     if self.m_dispatchDataMap[i] then
       self:RefreshOnePlaceUI(i, self.m_dispatchDataMap[i], showAnimIndexTab ~= nil and showAnimIndexTab[i] or false)
       self:RefreshTime(i, self.m_dispatchDataMap[i])
+      if self.m_dispatchDataMap[i] and self.m_dispatchDataMap[i].iRewardTime == 0 then
+        isEmpty = false
+      end
     else
       self["m_incident" .. i]:SetActive(false)
     end
   end
+  self.m_pnl_empty:SetActive(isEmpty)
   self:RefreshBtnState()
   local maxGrade, minGrade = CastleDispatchManager:GetDispatchMaxMinStar()
   local str = string.gsubNumberReplace(ConfigManager:GetClientMessageTextById(45011), minGrade, maxGrade)

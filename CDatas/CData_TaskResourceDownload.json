@@ -22,13 +22,13 @@
       "m_ActivityID": null,
       "m_Priority": "20",
       "m_Reward": "[[101,100]]",
-      "m_ResourcePackage": "[[\"Pack_MainLevel_1\",\"1\"],[\"Pack_MainLevel_2\",\"2\"],[\"Pack_MainLevel_3\",\"3\"],[\"Pack_MainLevel_4\",\"4\"],[\"Pack_MainLevel_5\",\"5\"],[\"Pack_ActExplore1030\",\"6\"],[\"Pack_Activity103_Luoleilai\",\"7\"],[\"Pack_MainLevel_6\",\"8\"],[\"Pack_PermanentLevel_1\",\"9\"],[\"Pack_MainLevel_7\",\"10\"]]",
+      "m_ResourcePackage": "[[\"Pack_MainLevel_1\",\"1\"],[\"Pack_MainLevel_2\",\"2\"],[\"Pack_MainLevel_3\",\"3\"],[\"Pack_MainLevel_4\",\"4\"],[\"Pack_MainLevel_5\",\"5\"],[\"Pack_ActExplore1030\",\"6\"],[\"Pack_Activity_105Aiona\",\"7\"],[\"Pack_MainLevel_6\",\"8\"],[\"Pack_PermanentLevel_1\",\"9\"],[\"Pack_MainLevel_7\",\"10\"],[\"Pack_Activity_106Quinn\",\"11\"]]",
       "m_mTaskConditionNote": "\"\""
     },
     "3": {
       "m_bError": null,
       "m_TaskID": "3",
-      "m_mTaskName": "\"Character Resource Pack\"",
+      "m_mTaskName": "\"H-horror stories...?ack\"",
       "m_TaskTag": null,
       "m_TaskCondition": null,
       "m_ActivityID": null,
@@ -85,6 +85,54 @@
       "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
       "m_mTaskConditionNote": "\"\""
     },
+    "101": {
+      "m_bError": null,
+      "m_TaskID": "101",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "102": {
+      "m_bError": null,
+      "m_TaskID": "102",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "103": {
+      "m_bError": null,
+      "m_TaskID": "103",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "104": {
+      "m_bError": null,
+      "m_TaskID": "104",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
     "999": {
       "m_bError": null,
       "m_TaskID": "999",
@@ -94,9 +142,9 @@
       "m_ActivityID": null,
       "m_Priority": "200",
       "m_Reward": "[]",
-      "m_ResourcePackage": "[[\"Custom_Pack_Draft\",\"1\"]]",
+      "m_ResourcePackage": "[[\"Custom_Pack_Draft\",\"1\"],[\"Pack_Activity_101Lamia\",\"2\"],[\"Pack_Activity_102Dalcaro\",\"3\"],[\"Pack_Activity103_Luoleilai\",\"4\"],[\"Pack_ActExplore1030\",\"5\"]]",
       "m_mTaskConditionNote": "\"\""
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_12_items"
 }

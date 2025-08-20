@@ -14,7 +14,8 @@ function UIBossRewardItem:OnInit()
 end
 
 function UIBossRewardItem:OnFreshData()
-  self.m_dungeonLevelPhaseCfg = self.m_itemData
+  self.m_dungeonLevelPhaseCfg = self.m_itemData.cfg
+  self.m_starTechEffect = self.m_itemData.starTechEffect
   self:FreshItemUI()
 end
 
@@ -34,6 +35,7 @@ function UIBossRewardItem:FreshRewardList()
   local proRewardList = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_ClientProDrop)
   local rewardTab = {}
   local customDataTab = {}
+  local starTechEffectTab = {}
   for i, v in ipairs(proRewardList) do
     rewardTab[#rewardTab + 1] = {
       v[1],
@@ -46,7 +48,22 @@ function UIBossRewardItem:FreshRewardList()
   for i, v in ipairs(rewardList) do
     customDataTab[#customDataTab + 1] = {percentage = 100}
   end
+  if table.getn(self.m_starTechEffect) > 0 then
+    for i, v in ipairs(self.m_starTechEffect) do
+      starTechEffectTab[#starTechEffectTab + 1] = {
+        v.iID,
+        v.iNum
+      }
+      customDataTab[#customDataTab + 1] = {
+        percentage = math.floor(v.iWeight * 100),
+        starTechEffect = true
+      }
+    end
+  end
   table.insertto(rewardTab, rewardList)
+  if 0 < #starTechEffectTab then
+    table.insertto(rewardTab, starTechEffectTab)
+  end
   self:FreshRewardItems(rewardTab, customDataTab)
   local quality = self.m_dungeonLevelPhaseCfg.m_ClientQuality
   ResourceUtil:CreateEquipCommonQualityImg(self.m_bg_equipbg_Image, quality)

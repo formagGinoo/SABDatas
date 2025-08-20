@@ -429,4 +429,15 @@ function LevelTowerHelper:IsHaveRedDot()
   return redDotNum
 end
 
+function LevelTowerHelper:GetTowerCfgByLevelSubType(levelSubType)
+  if not levelSubType then
+    return
+  end
+  local subLevelData = self.m_towerLevelDic[levelSubType]
+  if not subLevelData then
+    return
+  end
+  return subLevelData.towerCfg
+end
+
 return LevelTowerHelper

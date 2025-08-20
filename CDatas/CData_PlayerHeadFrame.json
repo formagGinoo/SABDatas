@@ -790,6 +790,24 @@
       "m_mHeadFrameDesc": "\"Unlocks the \"Temporal Void\" profile frame. Can be changed in Profile Settings.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1420005\"",
       "m_HeadFrameEft": "\"\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
+    },
+    "1420006": {
+      "m_bError": null,
+      "m_HeadFrameID": "1420006",
+      "m_mHeadName": "\"Nightwalker\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Avatar Border: Nightwalker\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"\"Against The Dying Light\" Event Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1420006\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Nightwalker\" Avatar Border. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1420006\"",
+      "m_HeadFrameEft": "\"\"",
       "m_HideType": "1",
       "m_QucikChannelCode": null
     },
@@ -1136,5 +1154,5 @@
       "m_QucikChannelCode": null
     }
   },
-  "status": "processed_63_items"
+  "status": "processed_64_items"
 }

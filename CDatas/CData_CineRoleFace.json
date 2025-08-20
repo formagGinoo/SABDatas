@@ -36,9 +36,9 @@
       "m_PosY": "154",
       "m_Replace": null
     },
-    "\"Albert_Base003\"": {
+    "\"Alff_Dot_se003\"": {
       "m_bError": null,
-      "m_ID": "\"Albert_Base003\"",
+      "m_ID": "\"Alff_Dot_se003\"",
       "m_PosX": "107",
       "m_PosY": "154",
       "m_Replace": null
@@ -190,9 +190,9 @@
       "m_PosY": "128",
       "m_Replace": null
     },
-    "\"Garlic_Base003\"": {
+    "\"\"Every {0} sec\"": {
       "m_bError": null,
-      "m_ID": "\"Garlic_Base003\"",
+      "m_ID": "\"\"Every {0} sec\"",
       "m_PosX": null,
       "m_PosY": null,
       "m_Replace": "1"
@@ -302,23 +302,23 @@
       "m_PosY": "168",
       "m_Replace": null
     },
-    "\"Piera_Astray003\"": {
+    "\"1iera_Astray003\"": {
       "m_bError": null,
-      "m_ID": "\"Piera_Astray003\"",
+      "m_ID": "\"1iera_Astray003\"",
       "m_PosX": "109",
       "m_PosY": "158",
       "m_Replace": null
     },
-    "\"Piera_Base003\"": {
+    "\"2%era_Base003\"": {
       "m_bError": null,
-      "m_ID": "\"Piera_Base003\"",
+      "m_ID": "\"2%era_Base003\"",
       "m_PosX": "126",
       "m_PosY": "148",
       "m_Replace": null
     },
-    "\"Ressa_Base003\"": {
+    "\"Buff_Dot_1s_F\"": {
       "m_bError": null,
-      "m_ID": "\"Ressa_Base003\"",
+      "m_ID": "\"Buff_Dot_1s_F\"",
       "m_PosX": "129",
       "m_PosY": "143",
       "m_Replace": null
@@ -539,7 +539,84 @@
       "m_PosX": "129",
       "m_PosY": "143",
       "m_Replace": null
+    },
+    "\"Ezareth_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ezareth_Base003\"",
+      "m_PosX": "109",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Gini_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Gini_Base003\"",
+      "m_PosX": "129",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Isabelle_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Isabelle_Base003\"",
+      "m_PosX": "129",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"James_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"James_Base003\"",
+      "m_PosX": "129",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Julius_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Julius_Base003\"",
+      "m_PosX": "99",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Quinn_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Quinn_Base003\"",
+      "m_PosX": "109",
+      "m_PosY": "93",
+      "m_Replace": null
+    },
+    "\"Quinn_Mark003\"": {
+      "m_bError": null,
+      "m_ID": "\"Quinn_Mark003\"",
+      "m_PosX": "109",
+      "m_PosY": "93",
+      "m_Replace": null
+    },
+    "\"Quinn_Traveler003\"": {
+      "m_bError": null,
+      "m_ID": "\"Quinn_Traveler003\"",
+      "m_PosX": "109",
+      "m_PosY": "93",
+      "m_Replace": null
+    },
+    "\"Quinn_TravelerHat003\"": {
+      "m_bError": null,
+      "m_ID": "\"Quinn_TravelerHat003\"",
+      "m_PosX": "109",
+      "m_PosY": "93",
+      "m_Replace": null
+    },
+    "\"Agatha_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Agatha_Base003\"",
+      "m_PosX": "139",
+      "m_PosY": "143",
+      "m_Replace": null
+    },
+    "\"Baphomet_Lily003\"": {
+      "m_bError": null,
+      "m_ID": "\"Baphomet_Lily003\"",
+      "m_PosX": null,
+      "m_PosY": null,
+      "m_Replace": "1"
     }
   },
-  "status": "processed_77_items"
+  "status": "processed_88_items"
 }

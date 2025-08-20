@@ -12,8 +12,8 @@
       "m_GainItemID": "[[101,1000]]",
       "m_ProductID": "\"com.moonton.nova_gift1999\"",
       "m_ProductSubID": "58",
-      "m_NextGoods": "301002",
-      "m_mItemHint": "\"Instantly receive <color=#b2452b>1000 Moon Tear (Free)</color> upon purchase, for a total of up to <color=#b2452b>10000 Moon Tear (Free)</color>.\"",
+      "m_NextGoods": null,
+      "m_mItemHint": "\"Instantly receive <color=#ffd8a6>1,000 Moon Tear (Free)</color> upon purchase, for a total of up to <color=#ffd8a6>10,000 Moon Tear (Free)</color>.\"",
       "m_DiscountNum": "650"
     },
     "301002": {
@@ -28,7 +28,7 @@
       "m_ProductID": "\"com.moonton.nova_gift1999\"",
       "m_ProductSubID": "59",
       "m_NextGoods": null,
-      "m_mItemHint": "\"Instantly receive <color=#b2452b>1000 Moon Tear (Free)</color> upon purchase, for a total of up to <color=#b2452b>10000 Moon Tear (Free)</color>.\"",
+      "m_mItemHint": "\"Instantly receive <color=#ffd8a6>1,000 Moon Tear (Free)</color> upon purchase, for a total of up to <color=#ffd8a6>10,000 Moon Tear (Free)</color>.\"",
       "m_DiscountNum": "650"
     }
   },

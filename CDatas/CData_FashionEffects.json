@@ -911,7 +911,110 @@
           "m_FashionFX": "\"fx_c_aiona_origin_passiveskill_rogue_a1_01\""
         }
       }
+    },
+    "6062001": {
+      "_type": "nested_dictionary",
+      "_count": 16,
+      "_processed": 16,
+      "data": {
+        "\"fx_c_quinn_base_attack01_cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_attack01_cast\"",
+          "m_FashionFX": "\"fx_c_quinn_base_attack01_cast_a1_01\""
+        },
+        "\"fx_c_quinn_base_attack02_cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_attack02_cast\"",
+          "m_FashionFX": "\"fx_c_quinn_base_attack02_cast_a1_01\""
+        },
+        "\"fx_c_quinn_base_attack_hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_attack_hit\"",
+          "m_FashionFX": "\"fx_c_quinn_base_attack_hit_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_buff\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_buff\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_buff_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_buff_02\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_buff_02\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_buff_02_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_buff_03\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_buff_03\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_buff_03_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_cast\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_cast_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_cast2\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_cast2\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_cast2_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_cast_bone91\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_cast_bone91\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_cast_bone91_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_cast_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_cast_rogue\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_cast_rogue_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_end\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_end\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_end_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_hit_rogue\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_hit_rogue\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_hit_rogue_a1_01\""
+        },
+        "\"fx_c_quinn_base_maxskill_loop\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_maxskill_loop\"",
+          "m_FashionFX": "\"fx_c_quinn_base_maxskill_loop_a1_01\""
+        },
+        "\"fx_c_quinn_base_skill01_cast\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_skill01_cast\"",
+          "m_FashionFX": "\"fx_c_quinn_base_skill01_cast_a1_01\""
+        },
+        "\"fx_c_quinn_base_skill01_hit\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_skill01_hit\"",
+          "m_FashionFX": "\"fx_c_quinn_base_skill01_hit_a1_01\""
+        },
+        "\"fx_c_quinn_base_skill01_hit2\"": {
+          "m_bError": null,
+          "m_FashionID": "6062001",
+          "m_InitFX": "\"fx_c_quinn_base_skill01_hit2\"",
+          "m_FashionFX": "\"fx_c_quinn_base_skill01_hit2_a1_01\""
+        }
+      }
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_6_items"
 }

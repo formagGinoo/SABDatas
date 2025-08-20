@@ -1313,7 +1313,7 @@
     },
     "1001001": {
       "_type": "nested_dictionary",
-      "_count": 62,
+      "_count": 64,
       "_processed": 50,
       "data": {
         "10300010": {
@@ -1822,6 +1822,28 @@
           "m_LimitValue": "[10300610,20100610]",
           "m_IsTech": null
         },
+        "10300620": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300620",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300620,20100620]",
+          "m_IsTech": null
+        },
+        "10300630": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300630",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300630,20100630]",
+          "m_IsTech": null
+        },
         "10300640": {
           "m_bError": null,
           "m_RandomGroupID": "1001001",
@@ -1842,35 +1864,13 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300650,20100650]",
-          "m_IsTech": null
-        },
-        "10300660": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001001",
-          "m_ItemID": "10300660",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300660,20100660]",
-          "m_IsTech": null
-        },
-        "10300700": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001001",
-          "m_ItemID": "10300700",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300700,20100700]",
           "m_IsTech": null
         }
       }
     },
     "1001002": {
       "_type": "nested_dictionary",
-      "_count": 50,
+      "_count": 52,
       "_processed": 50,
       "data": {
         "10300010": {
@@ -2379,6 +2379,28 @@
           "m_LimitValue": "[10300610,20100610]",
           "m_IsTech": null
         },
+        "10300620": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300620",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300620,20100620]",
+          "m_IsTech": null
+        },
+        "10300630": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300630",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300630,20100630]",
+          "m_IsTech": null
+        },
         "10300640": {
           "m_bError": null,
           "m_RandomGroupID": "1001002",
@@ -2399,28 +2421,6 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300650,20100650]",
-          "m_IsTech": null
-        },
-        "10300660": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001002",
-          "m_ItemID": "10300660",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300660,20100660]",
-          "m_IsTech": null
-        },
-        "10300700": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001002",
-          "m_ItemID": "10300700",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300700,20100700]",
           "m_IsTech": null
         }
       }

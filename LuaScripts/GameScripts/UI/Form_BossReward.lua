@@ -30,7 +30,25 @@ function Form_BossReward:FreshData()
   local tParam = self.m_csui.m_param
   if tParam then
     self.m_levelID = tParam.levelID
+    self.m_levelSubType = tParam.levelSubType
+    self.m_showData = {}
     self.m_curDungeonLevelPhaseCfgList = self.m_equipmentHelper:GetDungeonLevelPhaseCfgListByID(self.m_levelID) or {}
+    local effectList = StargazingManager:GetCastleStarTechEffectByType(StargazingManager.CastleStarEffectType.Boss)
+    local randomPoolId = 0
+    local starTechEffect = {}
+    if 0 < table.getn(effectList) then
+      for i, v in ipairs(effectList) do
+        for m, n in ipairs(v) do
+          if n[1] == self.m_levelSubType then
+            randomPoolId = n[2]
+          end
+        end
+      end
+      starTechEffect = ItemManager:GetItemRandomPoolContentById(randomPoolId)
+    end
+    for i, cfg in ipairs(self.m_curDungeonLevelPhaseCfgList) do
+      self.m_showData[i] = {cfg = cfg, starTechEffect = starTechEffect}
+    end
   end
 end
 
@@ -38,7 +56,7 @@ function Form_BossReward:FreshUI()
   if not self.m_luaStageRewardInfinityGrid then
     return
   end
-  self.m_luaStageRewardInfinityGrid:ShowItemList(self.m_curDungeonLevelPhaseCfgList)
+  self.m_luaStageRewardInfinityGrid:ShowItemList(self.m_showData)
   self.m_luaStageRewardInfinityGrid:LocateTo()
 end
 

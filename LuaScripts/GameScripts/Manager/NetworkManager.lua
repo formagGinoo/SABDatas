@@ -17,6 +17,15 @@ function NetworkManager:OnCreate()
 end
 
 function NetworkManager:RegisterNetwork()
+  self.m_rspcodeToReasonIdMap = {
+    [MTTD.Error_Client_TooOld] = MTTDProto.KickReason_ClientNewVersion,
+    [MTTD.Error_KickPlyaer_RepeatedLogin] = MTTDProto.KickReason_RepeatedLogin,
+    [MTTD.Error_KickPlyaer_ClientNewVersion] = MTTDProto.KickReason_ClientNewVersion,
+    [MTTD.Error_KickPlyaer_BanLogin] = MTTDProto.KickReason_BanLogin,
+    [MTTD.Error_KickPlyaer_OnlyRecharge] = MTTDProto.KickReason_OnlyRecharge,
+    [MTTD.Error_KickPlyaer_Maintain] = MTTDProto.KickReason_Maintain,
+    [MTTD.Error_KickPlyaer_Addict] = MTTDProto.KickReason_Addict
+  }
   self.m_bNetworkInited = true
   self.m_netClientGame = RPCS().CsSession:GetNetClient(NetClientTypes.Game)
   self:InitRpcCallback()
@@ -40,6 +49,10 @@ function NetworkManager:RegisterNetwork()
       if msg.rspcode == MTTD.Error_SessionExpired or msg.rspcode == MTTD.Error_NoAuth then
         self.m_bSessionExpired = true
       end
+      local iReasonId = self.m_rspcodeToReasonIdMap[msg.rspcode]
+      if iReasonId and msg.rspcode ~= MTTD.Error_Client_TooOld then
+        PushMessageManager:OnPushMessage({iReason = iReasonId})
+      end
       fResultCB(false)
     end
     
@@ -59,6 +72,10 @@ function NetworkManager:RegisterNetwork()
   end)
   self.m_netClientGame:RemoveListenByEventId(CsNetCore.NetworkEvent.ConnectFailed)
   self.m_netClientGame:Listen(CsNetCore.NetworkEvent.ConnectFailed, function()
+    if self.m_netClientGame == nil then
+      log.error("NetworkManager:OnConnectFailed, m_netClientGame is nil")
+      return
+    end
     local netUC = CS.com.muf.net.client.mfw.NetUIController.Instance
     local iRequestLockerCount = 0
     local sRequestLockerDetail = ""
@@ -253,10 +270,9 @@ function NetworkManager:OnRpcCallbackCommon(rec, msg, bt)
     self.m_bSessionExpired = true
     self:OnSessionExpired()
   end
-  if msg.rspcode == MTTD.Error_Client_TooOld then
-    PushMessageManager:OnPushMessage({
-      iReason = MTTDProto.KickReason_ClientNewVersion
-    })
+  local iReasonId = self.m_rspcodeToReasonIdMap[msg.rspcode]
+  if iReasonId then
+    PushMessageManager:OnPushMessage({iReason = iReasonId})
   end
 end
 

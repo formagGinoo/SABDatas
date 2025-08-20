@@ -141,6 +141,9 @@ function MallGoodsChapterManager:GetStoreBaseGoodsChapterListByID(m_GoodsID)
 end
 
 function MallGoodsChapterManager:__GetCurGiftInfo(config)
+  if not self.server_data then
+    return
+  end
   local server_chapter_data = self.server_data.stChapter.mChapter
   local data = server_chapter_data[config.m_GoodsID]
   if data then
@@ -163,6 +166,21 @@ function MallGoodsChapterManager:__GetCurGiftInfo(config)
   return config
 end
 
+function MallGoodsChapterManager:IsShowGoodChapterGift()
+  if not self.server_data then
+    return false
+  end
+  local showGiftList = {}
+  local allCfg = self:GetAllStoreBaseGoodsChapterCfg()
+  for _, v in pairs(allCfg) do
+    local cfg, _, isHide = self:__GetCurGiftInfo(v)
+    if not isHide then
+      showGiftList[#showGiftList + 1] = cfg
+    end
+  end
+  return table.getn(showGiftList) > 0, showGiftList
+end
+
 function MallGoodsChapterManager:GetCurStoreBaseGoodsChapterCfg()
   if not self.server_data then
     return false
@@ -177,6 +195,9 @@ function MallGoodsChapterManager:GetServerData()
 end
 
 function MallGoodsChapterManager:IsLevelRewardCanGet(level_config)
+  if not self.server_data then
+    return false
+  end
   local server_chapter_data = self.server_data.stChapter.mChapter
   local data = server_chapter_data[level_config.m_GoodsID]
   if not data or data.iBuyTime <= 0 then
@@ -189,6 +210,9 @@ function MallGoodsChapterManager:IsLevelRewardCanGet(level_config)
 end
 
 function MallGoodsChapterManager:IsFreeLevelRewardCanGet(level_config)
+  if not self.server_data then
+    return false
+  end
   local server_chapter_data = self.server_data.stChapter.mChapter
   local data = server_chapter_data[level_config.m_GoodsID]
   local level = level_config.m_Level
@@ -200,6 +224,9 @@ function MallGoodsChapterManager:IsFreeLevelRewardCanGet(level_config)
 end
 
 function MallGoodsChapterManager:HaveFreeLevelRewardCanGet(m_GoodsID)
+  if not self.server_data then
+    return false
+  end
   local server_chapter_data = self.server_data.stChapter.mChapter
   local data = server_chapter_data[m_GoodsID]
   local goodsChapterLevelList = self:GetStoreBaseGoodsChapterListByID(m_GoodsID)
@@ -228,8 +255,24 @@ function MallGoodsChapterManager:HaveFreeLevelRewardCanGet(m_GoodsID)
 end
 
 function MallGoodsChapterManager:HaveAnyRewardsAvailable()
-  local goodsChapterCfg, server_data = self:GetCurStoreBaseGoodsChapterCfg()
-  local goodsChapterLevelList = self:GetStoreBaseGoodsChapterListByID(goodsChapterCfg.m_GoodsID)
+  local goodsChapterCfgList = self:GetAllStoreBaseGoodsChapterCfg()
+  for _, v in pairs(goodsChapterCfgList) do
+    local goodsChapterLevelList = self:GetStoreBaseGoodsChapterListByID(v.m_GoodsID)
+    for _, v in pairs(goodsChapterLevelList) do
+      if v.m_Type == MTTDProto.BaseStoreChapterRewardType_Pay then
+        if self:IsLevelRewardCanGet(v) then
+          return true
+        end
+      elseif v.m_Type == MTTDProto.BaseStoreChapterRewardType_Free and self:IsFreeLevelRewardCanGet(v) then
+        return true
+      end
+    end
+  end
+  return false
+end
+
+function MallGoodsChapterManager:HaveRewardAvailableWithGoodsIs(goodID)
+  local goodsChapterLevelList = self:GetStoreBaseGoodsChapterListByID(goodID)
   for _, v in pairs(goodsChapterLevelList) do
     if v.m_Type == MTTDProto.BaseStoreChapterRewardType_Pay then
       if self:IsLevelRewardCanGet(v) then

@@ -1,18 +1,5 @@
 local UIItemBase = require("UI/Common/UIItemBase")
 local UIAct103SignItem = class("UIAct103SignItem", UIItemBase)
-local ColorEnum = {
-  yellow = Color(1.0, 0.9372549019607843, 0.803921568627451)
-}
-local FrameHeightEnum = {
-  NormalOne = Vector2.New(132, 133),
-  NormalTwo = Vector2.New(132, 244),
-  SpecialOne = Vector2.New(195, 189),
-  SpecialTwo = Vector2.New(195, 310)
-}
-local FrameHeightEnum2 = {
-  NormalOne = Vector2.New(132, 133),
-  NormalTwo = Vector2.New(132, 244)
-}
 
 function UIAct103SignItem:OnInit()
   self.m_txt_day_Text = self.m_itemTemplateCache:TMPPro("c_txt_day")

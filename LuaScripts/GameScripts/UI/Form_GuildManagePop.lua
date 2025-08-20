@@ -13,6 +13,7 @@ function Form_GuildManagePop:OnActive()
   if not tParam then
     return
   end
+  self.m_PlayerHeadCache = {}
   self.m_vApplyList = tParam.vApplyList
   self.m_callFun = tParam.callFun
   self.m_selMemberUid = nil
@@ -23,6 +24,7 @@ end
 function Form_GuildManagePop:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_GuildManagePop:AddEventListeners()
@@ -105,8 +107,18 @@ function Form_GuildManagePop:updateScrollViewCell(index, cell_object, cell_data)
   local c_circle_head = luaBehaviour:FindGameObject("c_circle_head")
   LuaBehaviourUtil.setText(luaBehaviour, "c_txt_player_name", cell_data.sRoleName)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_power", tostring(cell_data.iPower))
-  local playerHeadCom = self:createPlayerHead(c_circle_head)
-  playerHeadCom:SetPlayerHeadInfo(cell_data)
+  if c_circle_head then
+    if not self.m_PlayerHeadCache then
+      self.m_PlayerHeadCache = {}
+    end
+    local gameObjectHashCode = c_circle_head:GetHashCode()
+    local tempPlayerHeadCom = self.m_PlayerHeadCache[gameObjectHashCode]
+    if not tempPlayerHeadCom then
+      tempPlayerHeadCom = self:createPlayerHead(c_circle_head)
+      self.m_PlayerHeadCache[gameObjectHashCode] = tempPlayerHeadCom
+    end
+    tempPlayerHeadCom:SetPlayerHeadInfo(cell_data)
+  end
 end
 
 function Form_GuildManagePop:OnBtninviteClicked()
@@ -134,6 +146,7 @@ end
 
 function Form_GuildManagePop:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = nil
 end
 
 local fullscreen = true

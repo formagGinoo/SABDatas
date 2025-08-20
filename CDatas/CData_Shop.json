@@ -216,7 +216,31 @@
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
       "m_mLockDesc": "\"\""
+    },
+    "9006": {
+      "m_bError": null,
+      "m_ShopID": "9006",
+      "m_WindowID": "26010",
+      "m_ShopVersion": "1",
+      "m_Type": "2",
+      "m_ActId": "1060",
+      "m_Order": "1",
+      "m_IsOn": "1",
+      "m_mName": "\"Timewalker's Satchel\"",
+      "m_IconPath": "\"\"",
+      "m_IconPathClick": "\"\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"2025-6-10 04:00:00\"",
+      "m_EndTime": "\"2025-7-24 03:59:59\"",
+      "m_MainCurrency": "[500063,99]",
+      "m_GoodsGroupID": "[900601,900602,900603,900604,900605,900606,900607,900608,900609,900610,900611,900612,900613,900614,900615,900616,900617,900618,900619,900620,900621,900622]",
+      "m_CensorGoodsGroupID": "[900601,900602,900603,900604,900605,900606,900607,900608,900609,900610,900611,900612,900613,900614,900615,900616,900617,900618,900619,900620,900621,900622]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\""
     }
   },
-  "status": "processed_9_items"
+  "status": "processed_10_items"
 }

@@ -263,6 +263,18 @@ function HeroIcon:FreshNotHave()
 end
 
 function HeroIcon:FreshInherit()
+  if not self.m_heroData.iOriLevel then
+    if self.m_txt_Lv_num then
+      UILuaHelper.SetColor(self.m_txt_Lv_num, 255, 255, 255, 1)
+    end
+    if self.m_txt_Lv_num_big then
+      UILuaHelper.SetColor(self.m_txt_Lv_num_big, 255, 255, 255, 1)
+    end
+    if self.m_inheritTran then
+      self.m_inheritTran.gameObject:SetActive(false)
+    end
+    return
+  end
   local resetFlag, isHave = InheritManager:CheckCanResetLvById(self.m_heroData.iHeroId)
   if self.m_inheritTran then
     self.m_inheritTran.gameObject:SetActive(not resetFlag and isHave)

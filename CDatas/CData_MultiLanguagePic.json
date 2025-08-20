@@ -298,6 +298,42 @@
       "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1005_title_cht\"",
       "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1005_title_kr\""
     },
+    "35": {
+      "m_bError": null,
+      "m_PicID": "35",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1006_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1006_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1006_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1006_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1006_title_kr\""
+    },
+    "36": {
+      "m_bError": null,
+      "m_PicID": "36",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1007_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1007_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1007_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1007_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1007_title_kr\""
+    },
+    "37": {
+      "m_bError": null,
+      "m_PicID": "37",
+      "m_PicPath10": "\"Atlas_MultiLan_en/gacha_1007_titleFX_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/gacha_1007_titleFX_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/gacha_1007_titleFX_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/gacha_1007_titleFX_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/gacha_1007_titleFX_kr\""
+    },
+    "38": {
+      "m_bError": null,
+      "m_PicID": "38",
+      "m_PicPath10": "\"Atlas_MultiLan_en/activity106quinn_img_title_en\"",
+      "m_PicPath22": "\"Atlas_MultiLan_ja/activity106quinn_img_title_ja\"",
+      "m_PicPath6": "\"Atlas_MultiLan_en/activity106quinn_img_title_en\"",
+      "m_PicPath41": "\"Atlas_MultiLan_cn_cht/activity106quinn_img_title_cht\"",
+      "m_PicPath23": "\"Atlas_MultiLan_kr/activity106quinn_img_title_kr\""
+    },
     "66601": {
       "m_bError": null,
       "m_PicID": "66601",
@@ -335,5 +371,5 @@
       "m_PicPath23": "\"Atlas_TutorialTips/TutorialTips_3_P2_1\""
     }
   },
-  "status": "processed_37_items"
+  "status": "processed_41_items"
 }

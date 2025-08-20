@@ -989,6 +989,40 @@ function GuildManager:GetOwnerGuildMemberDataByUID(uid)
   end
 end
 
+function GuildManager:GetGuildMemberDataByZoneAndUID(zoneID, uid)
+  if not zoneID then
+    return
+  end
+  if not uid then
+    return
+  end
+  local guildData = self:GetOwnerGuildDetail()
+  if guildData then
+    for i, v in ipairs(guildData.vMember) do
+      if v.stRoleId and v.stRoleId.iUid == uid and v.stRoleId.iZoneId == zoneID then
+        return v
+      end
+    end
+  end
+end
+
+function GuildManager:IsMemberBanByUID(zoneID, uid)
+  if not uid then
+    return false
+  end
+  if not zoneID then
+    return false
+  end
+  local memberData = self:GetGuildMemberDataByZoneAndUID(zoneID, uid)
+  if not memberData then
+    return false
+  end
+  if memberData.iBanShowType and memberData.iBanShowType > 0 and memberData.iBanEndTime and 0 < memberData.iBanEndTime and memberData.iBanEndTime > TimeUtil:GetServerTimeS() then
+    return true
+  end
+  return false
+end
+
 function GuildManager:GetRecommendGuildTimer()
   return self.m_recommendGuildTimer or 0
 end
@@ -1498,7 +1532,21 @@ function GuildManager:GetGuildBossGradeByRank(rank, rankCountMax)
 end
 
 function GuildManager:GetGuildBossHistory()
-  return self.m_guildBossHistory
+  local tempHistory = {}
+  if self.m_guildBossHistory then
+    for k, tempDayData in pairs(self.m_guildBossHistory) do
+      local tempDataList = {}
+      tempHistory[k] = tempDataList
+      if tempDayData and next(tempDayData) then
+        for i, v in ipairs(tempDayData) do
+          if not self:IsMemberBanByUID(v.stRoleId.iZoneId, v.stRoleId.iUid) then
+            tempDataList[#tempDataList + 1] = v
+          end
+        end
+      end
+    end
+  end
+  return tempHistory
 end
 
 function GuildManager:GetBossMaxHp(levelId)

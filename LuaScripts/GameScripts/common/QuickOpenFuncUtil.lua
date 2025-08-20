@@ -220,7 +220,8 @@ __funcList[26006] = function(extData)
     [26006] = UIDefines.ID_FORM_ACTIVITY101LAMIA_SHOP,
     [26007] = UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP,
     [26008] = UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP,
-    [26009] = UIDefines.ID_FORM_ACTIVITY105AIONA_SHOP
+    [26009] = UIDefines.ID_FORM_ACTIVITY105AIONA_SHOP,
+    [26010] = UIDefines.ID_FORM_ACTIVITY106QUINN_SHOP
   }
   local iWindowID = tonumber(extData.ex_param[1])
   local openFlag = ShopManager:CheckShopIsOpenByWinId(iWindowID)
@@ -228,7 +229,12 @@ __funcList[26006] = function(extData)
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
     return
   end
-  StackFlow:Push(ShopDefineID[iWindowID], {sel_shop = iWindowID})
+  local UIID = ShopDefineID[iWindowID]
+  if UIID then
+    StackFlow:Push(UIID, {sel_shop = iWindowID})
+  else
+    log.error("QuickOpenFuncUtil:26006 UIID is nil")
+  end
 end
 __funcList[27001] = function(extData)
   StackPopup:Push(UIDefines.ID_FORM_GUILDSIGN)
@@ -620,6 +626,33 @@ function M:CheckTowerLevelSubType(subTowerType)
     return
   end
   return true
+end
+
+function M:JumpUpActivity14DayTaskForm(iUpActivityID)
+  local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_CommonQuest)
+  local stActivity
+  for _, act in pairs(act_list) do
+    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 and act:GetUpActivityID() == iUpActivityID then
+      stActivity = act
+      break
+    end
+  end
+  if stActivity then
+    local activityData = stActivity:getData()
+    if activityData then
+      local jumpParam = activityData.sJumpParam
+      for k, v in pairs(UINames) do
+        if jumpParam == v then
+          StackFlow:Push(k)
+          return
+        end
+      end
+      log.error("Find UIForm Failed!!! Check Config or Prefab!!! ")
+    end
+  else
+    local paramData = {delayClose = 2, prompts = 30014}
+    utils.createPromptTips(paramData)
+  end
 end
 
 return M

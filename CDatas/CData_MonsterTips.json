@@ -788,7 +788,7 @@
       "m_bError": null,
       "m_MonsterID": "31230",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"A Bloodborn servant that launches a scythe forward to cut through enemies along the path. Prioritize eliminating them.\"",
+      "m_mIntroduce": "\"A Bloodborn Vassal that launche a scythe forward to cutting through enemies along the path. Prioritize eliminating them.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Assassin001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -797,7 +797,7 @@
       "m_bError": null,
       "m_MonsterID": "31240",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"A Bloodborn servant who heals allies after <color=#D63536>channeling</color>. Prioritize eliminating them.\"",
+      "m_mIntroduce": "\"A Bloodborn Vassal who heals other allies upon <color=#D63536>channeling</color>. Prioritize eliminating them.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Vampire_Mage001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -1135,6 +1135,15 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "33200": {
+      "m_bError": null,
+      "m_MonsterID": "33200",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Lord Ezareth continuously deals strong DMG to a single target after <color=#D63536>Channeling</color>. Timely heals or DMG mitigation is recommended. Summoned soldiers also provide Lord Ezareth with additional buff effects while on the field. Prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Role/Ezareth_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "40039": {
       "m_bError": null,
       "m_MonsterID": "40039",
@@ -1352,5 +1361,5 @@
       "m_Video1": "[]"
     }
   },
-  "status": "processed_150_items"
+  "status": "processed_151_items"
 }

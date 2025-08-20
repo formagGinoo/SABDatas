@@ -1,5 +1,12 @@
 local BaseActivity = require("Base/BaseActivity")
 local GameNoticeActivity = class("GameNoticeActivity", BaseActivity)
+local UITypeSubPanel = {
+  [1] = "AnnouncementPushFaceGachaSubPanel",
+  [2] = "AnnouncementPushFacePersonalRaidSubPanel",
+  [3] = "AnnouncementPushFaceGuildRaidSubPanel",
+  [4] = "AnnouncementPushFaceHuntingSubPanel"
+}
+local RewardType = {PushFaceReward = 1}
 
 function GameNoticeActivity.getActivityType(_)
   return MTTD.ActivityType_GameNotice
@@ -31,6 +38,30 @@ end
 
 function GameNoticeActivity:GetSystemAnnouncementList()
   return self.m_systemAnnouncement
+end
+
+function GameNoticeActivity:checkShowRed()
+  if not self:checkCondition() then
+    return false
+  end
+  local isShowRed = false
+  local isPushJumpAnnouncement = self:CheckIsPushJumpAnnouncement()
+  if isPushJumpAnnouncement then
+    if self:GetPushJumpIsGotReward() then
+      isShowRed = false
+    else
+      isShowRed = ActivityManager:CanShowRedCurrentLogin(self:getID())
+      if not isShowRed then
+        local reward = self:GetPushJumpWindowRewardReward()
+        if reward and table.getn(reward) > 0 and self:GetPushJumpWindowRewardTime() < TimeUtil:GetServerTimeS() then
+          isShowRed = true
+        end
+      end
+    end
+  else
+    isShowRed = ActivityManager:CanShowRedCurrentLogin(self:getID())
+  end
+  return isShowRed
 end
 
 function GameNoticeActivity:checkCondition()
@@ -79,9 +110,6 @@ end
 function GameNoticeActivity:OnResetStatusData()
 end
 
-function GameNoticeActivity:checkShowRed()
-end
-
 function GameNoticeActivity:IsShowSurveyAnnounce()
   local paramArray = string.split(self.m_stSdpConfig.stClientCfg.sJumpParamLast, "|")
   if paramArray[1] and paramArray[2] then
@@ -94,6 +122,83 @@ function GameNoticeActivity:IsShowSurveyAnnounce()
     end
   end
   return true
+end
+
+function GameNoticeActivity:GetAnnouncementShowWeight()
+  return self.m_stSdpConfig.stClientCfg.iShowWeight or 0
+end
+
+function GameNoticeActivity:GetPushJumpData()
+  local pushFaceJump = self.m_stSdpConfig.stClientCfg.vJumpContent
+  if table.getn(pushFaceJump) > 0 then
+    return pushFaceJump[1]
+  end
+end
+
+function GameNoticeActivity:CheckIsPushJumpAnnouncement()
+  local pushFaceJump = self.m_stSdpConfig.stClientCfg.vJumpContent
+  if table.getn(pushFaceJump) > 0 then
+    return true
+  end
+  return false
+end
+
+function GameNoticeActivity:GetPushJumpIsGotReward()
+  if self.m_stStatusData then
+    return self.m_stStatusData.bIsRewarded or false
+  end
+  return false
+end
+
+function GameNoticeActivity:GetPushJumpSubPanelWithUiType()
+  local pushFaceJump = self.m_stSdpConfig.stClientCfg.vJumpContent
+  if table.getn(pushFaceJump) > 0 then
+    return UITypeSubPanel[pushFaceJump[1].type]
+  end
+end
+
+function GameNoticeActivity:GetPushJumpTimeWindow()
+  local pushFaceJump = self.m_stSdpConfig.stClientCfg.vJumpContent
+  if table.getn(pushFaceJump) > 0 then
+    return pushFaceJump[1].iActivityOpenTime, pushFaceJump[1].iActivityEndTime
+  end
+end
+
+function GameNoticeActivity:GetPushJumpWindowRewardTime()
+  local commonCfg = self.m_stSdpConfig.stCommonCfg
+  return commonCfg.iCanGetRewardTime or 0
+end
+
+function GameNoticeActivity:GetPushJumpGetRewardType()
+  local commonCfg = self.m_stSdpConfig.stCommonCfg
+  return commonCfg.reward_type
+end
+
+function GameNoticeActivity:ReqGetRewardCS()
+  if not self:checkCondition() then
+    return
+  end
+  local getRewardType = self:GetPushJumpGetRewardType()
+  if getRewardType == RewardType.PushFaceReward then
+    local isGot = self:GetPushJumpIsGotReward()
+    local rewardTime = self:GetPushJumpWindowRewardTime()
+    if isGot or rewardTime > TimeUtil:GetServerTimeS() then
+      return
+    end
+    local reqMsg = MTTDProto.Cmd_Act_GameNotice_ReqGetWard_CS()
+    reqMsg.iActivityId = self:getID()
+    RPCS():Act_GameNotice_ReqGetWard(reqMsg, function(sc, msg)
+      utils.popUpRewardUI(sc.vReward)
+      self:broadcastEvent("eGameEvent_Activity_PushFaceReserve", {
+        iActivityID = self:getID()
+      })
+    end)
+  end
+end
+
+function GameNoticeActivity:GetPushJumpWindowRewardReward()
+  local commonCfg = self.m_stSdpConfig.stCommonCfg
+  return commonCfg.mReward
 end
 
 function GameNoticeActivity:GetAddResPreConfig()

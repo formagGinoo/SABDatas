@@ -9,6 +9,7 @@ end
 
 function Form_PlayerCenterPop2:OnActive()
   self.super.OnActive(self)
+  self:FreshText()
   self:RefreshView()
 end
 
@@ -68,6 +69,17 @@ end
 
 function Form_PlayerCenterPop2:OnBtnappleidClicked()
   self:OnSwitchAccount("APPLE")
+end
+
+function Form_PlayerCenterPop2:FreshText()
+  self.m_csui.m_uiGameObject.transform:Find("ui_common_frame_middle/img_txt_bg/txt_frame_middle_title"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2Title")
+  self.m_csui.m_uiGameObject.transform:Find("pnl_item_account/txt_id_desc"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2CurName")
+  self.m_csui.m_uiGameObject.transform:Find("txt_otherway"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2OtherWay")
+  self.m_btn_google.transform:Find("txt_google"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2Google")
+  self.m_btn_facebook.transform:Find("txt_facebook"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2FaceBook")
+  self.m_btn_x.transform:Find("txt_x"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2X")
+  self.m_btn_appleid.transform:Find("txt_appleid"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2AppleId")
+  self.m_btn_email.transform:Find("txt_email"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("Form_PlayerCenterPop2Email")
 end
 
 function Form_PlayerCenterPop2:OnSwitchAccount(thirdParty)

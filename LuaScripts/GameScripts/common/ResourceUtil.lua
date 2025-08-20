@@ -10,6 +10,7 @@ ResourceUtil.RESOURCE_TYPE = {
   ATTRACT_GIFT = 800001,
   HEAD_ICONS = 1300001,
   HEAD_FRAME_ICONS = 1400001,
+  HEAD_Bg = 1500001,
   BackGround = 1600001,
   Fashion = 6000001
 }
@@ -55,10 +56,12 @@ function ResourceUtil:GetProcessRewardData(data, customData)
     sel_upgrade_item_num = nil,
     equip_bg = nil,
     is_extra = false,
-    is_can_get = false
+    is_can_get = false,
+    starTechEffect = false
   }
   item_data.is_extra = customData and customData.is_extra
   item_data.is_can_get = customData and customData.is_can_get
+  item_data.starTechEffect = customData and customData.starTechEffect
   if data_type == ResourceUtil.RESOURCE_TYPE.EQUIPS then
     local cfg = EquipManager:GetEquipCfgByBaseId(data_id)
     item_data.name = cfg.m_mEquipName
@@ -204,6 +207,21 @@ function ResourceUtil:GetProcessRewardData(data, customData)
       item_data.in_bag = customData.bBag
       item_data.percentage = customData.percentage
     end
+  elseif data_type == ResourceUtil.RESOURCE_TYPE.HEAD_Bg then
+    local cfg = CS.CData_PlayerBackground.GetInstance():GetValue_ByCardBGID(data_id)
+    if cfg:GetError() then
+      log.error("ResourceUtil GetProcessRewardData GetValue_ByCardBGID is error id ==" .. tostring(data_id))
+      return
+    end
+    item_data.name = cfg.mCardBGName
+    item_data.icon_name = cfg.m_ItemIcon
+    item_data.quality = cfg.m_ItemRarity
+    item_data.description = cfg.m_mCardBGDesc
+    item_data.config = cfg
+    if customData then
+      item_data.in_bag = customData.bBag
+      item_data.percentage = customData.percentage
+    end
   elseif data_type == ResourceUtil.RESOURCE_TYPE.BackGround then
     local cfg = CS.CData_MainBackground.GetInstance():GetValue_ByBDID(data_id)
     if cfg:GetError() then
@@ -212,6 +230,7 @@ function ResourceUtil:GetProcessRewardData(data, customData)
     end
     item_data.name = cfg.m_mItemName
     item_data.icon_name = cfg.m_ItemIcon
+    item_data.quality = cfg.m_ItemRarity
     item_data.description = cfg.m_mItemDec
     item_data.config = cfg
     if customData then
@@ -271,6 +290,8 @@ function ResourceUtil:GetResourceTypeById(id)
     resourceType = ResourceUtil.RESOURCE_TYPE.HEAD_ICONS
   elseif id >= MTTDProto.ItemIdSeg_HeadFrame_Min and id <= MTTDProto.ItemIdSeg_HeadFrame_Max then
     resourceType = ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS
+  elseif id >= MTTDProto.ItemIdSeg_ShowBackground_Min and id <= MTTDProto.ItemIdSeg_ShowBackground_Max then
+    resourceType = ResourceUtil.RESOURCE_TYPE.HEAD_Bg
   elseif id >= MTTDProto.ItemIdSeg_MainBackground_Min and id <= MTTDProto.ItemIdSeg_MainBackground_Max then
     resourceType = ResourceUtil.RESOURCE_TYPE.BackGround
   elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
@@ -295,6 +316,8 @@ function ResourceUtil:CreatIconById(imageItem, id)
     self:CreateLegacyIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_HeadFrame_Min and id <= MTTDProto.ItemIdSeg_HeadFrame_Max then
     self:CreateHeadFrameIcon(imageItem, id)
+  elseif id >= MTTDProto.ItemIdSeg_ShowBackground_Min and id <= MTTDProto.ItemIdSeg_ShowBackground_Max then
+    self:CreateHeadBgIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
     self:CreateFashionIcon(imageItem, id)
   else
@@ -529,6 +552,17 @@ function ResourceUtil:CreateFashionIcon(imageItem, fashionID)
     return
   end
   UILuaHelper.SetAtlasSprite(imageItem, config.m_FashionItemPic, nil, nil, true)
+end
+
+function ResourceUtil:CreateHeadBgIcon(imageItem, bgId)
+  if not bgId then
+    return
+  end
+  local config = RoleManager:GetPlayerHeadBackgroundCfg(bgId)
+  if not config then
+    return
+  end
+  UILuaHelper.SetAtlasSprite(imageItem, config.m_ItemIcon, nil, nil, true)
 end
 
 function ResourceUtil:CreateFashionBust(imageItem, fashionID)

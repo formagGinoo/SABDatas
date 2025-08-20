@@ -174,12 +174,41 @@ function Form_BattleRecord:GetHeroListData(ArrangeType)
   RPCS():Misc_QueryPassStageArrange(msg, handler1(self, self.OnGetHeroListData, ArrangeType))
 end
 
+function Form_BattleRecord:IsBan(roleInfo)
+  if not roleInfo then
+    return false
+  end
+  if roleInfo.iBanShowType and roleInfo.iBanShowType > 0 and roleInfo.iBanEndTime and 0 < roleInfo.iBanEndTime and roleInfo.iBanEndTime > TimeUtil:GetServerTimeS() then
+    return true
+  end
+  return false
+end
+
+function Form_BattleRecord:FilterBanRoleArrange(roleArrangeList)
+  local tempList = {}
+  if not roleArrangeList then
+    return tempList
+  end
+  for i, v in ipairs(roleArrangeList) do
+    if v and v.stRoleInfo then
+      local tempStRoleInfo = v.stRoleInfo
+      if self:IsBan(tempStRoleInfo) ~= true then
+        tempList[#tempList + 1] = v
+      end
+    end
+  end
+  return tempList
+end
+
 function Form_BattleRecord:OnGetHeroListData(arrangeType, data, msg)
   if not data then
     log.error("SCData == nil")
     return
   end
-  self.heroListData[arrangeType] = data.vRoleArrange
+  if not data.vRoleArrange then
+    return
+  end
+  self.heroListData[arrangeType] = self:FilterBanRoleArrange(data.vRoleArrange)
   self:SetHerolistData()
   self:SetEmptyShow()
   if #self.heroListData[self.curChooseIndexTab + 1] ~= 0 then

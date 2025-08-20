@@ -15,6 +15,7 @@ function Form_GuildDetailPop:OnActive()
   if not tParam then
     return
   end
+  self.m_PlayerHeadCache = {}
   self.m_selectTab = TAB_TYPE.Detail
   self.m_guildData = tParam.guildData
   self.m_hideJoinBtn = tParam.hideJoinBtn
@@ -25,6 +26,7 @@ end
 function Form_GuildDetailPop:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_GuildDetailPop:RemoveAllEventListeners()
@@ -124,8 +126,18 @@ function Form_GuildDetailPop:updateScrollViewCell(index, cell_object, cell_data)
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_timedes", timeDes)
   local c_img_persontag = UIUtil.findImage(transform, "offset/c_txt_name/c_img_persontag")
   ResourceUtil:CreateGuildPostIconByPost(c_img_persontag, cell_data.iPost)
-  local playerHeadCom = self:createPlayerHead(c_circle_head)
-  playerHeadCom:SetPlayerHeadInfo(cell_data)
+  if c_circle_head then
+    if not self.m_PlayerHeadCache then
+      self.m_PlayerHeadCache = {}
+    end
+    local gameObjectHashCode = c_circle_head:GetHashCode()
+    local tempPlayerHeadCom = self.m_PlayerHeadCache[gameObjectHashCode]
+    if not tempPlayerHeadCom then
+      tempPlayerHeadCom = self:createPlayerHead(c_circle_head)
+      self.m_PlayerHeadCache[gameObjectHashCode] = tempPlayerHeadCom
+    end
+    tempPlayerHeadCom:SetPlayerHeadInfo(cell_data)
+  end
 end
 
 function Form_GuildDetailPop:OnPlayerHeadClk(stRoleId)
@@ -172,6 +184,7 @@ end
 
 function Form_GuildDetailPop:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = nil
 end
 
 local fullscreen = true

@@ -235,4 +235,8 @@ function UIHeroActDialogueCollectionBase:OnBtnreturnClicked()
   self:CloseForm()
 end
 
+function UIHeroActDialogueCollectionBase:IsOpenGuassianBlur()
+  return true
+end
+
 return UIHeroActDialogueCollectionBase

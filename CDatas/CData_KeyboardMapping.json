@@ -3,8 +3,8 @@
   "data": {
     "\"Form_Hall\"": {
       "_type": "nested_dictionary",
-      "_count": 12,
-      "_processed": 12,
+      "_count": 13,
+      "_processed": 13,
       "data": {
         "\"m_btn_left_top_02\"": {
           "m_bError": null,
@@ -48,6 +48,15 @@
           "m_Button": "\"m_btn_hangup\"",
           "m_Key": "\"tab\"",
           "m_DisplayKey": "\"Tab\"",
+          "m_TriggerPos": "\"\"",
+          "m_Priority": "1"
+        },
+        "\"m_btn_hall_activity\"": {
+          "m_bError": null,
+          "m_Form": "\"Form_Hall\"",
+          "m_Button": "\"m_btn_hall_activity\"",
+          "m_Key": "\"q\"",
+          "m_DisplayKey": "\"Q\"",
           "m_TriggerPos": "\"\"",
           "m_Priority": "1"
         },
@@ -111,22 +120,6 @@
           "m_Button": "\"m_btn_fight\"",
           "m_Key": "\"f\"",
           "m_DisplayKey": "\"F\"",
-          "m_TriggerPos": "\"\"",
-          "m_Priority": "1"
-        }
-      }
-    },
-    "\"Atlas_Cha\"": {
-      "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
-      "data": {
-        "\"m_btn_hall_activity\"": {
-          "m_bError": null,
-          "m_Form": "\"Atlas_Cha\"",
-          "m_Button": "\"m_btn_hall_activity\"",
-          "m_Key": "\"A\"",
-          "m_DisplayKey": "\"Q\"",
           "m_TriggerPos": "\"\"",
           "m_Priority": "1"
         }
@@ -324,22 +317,6 @@
         }
       }
     },
-    "\"Form_battle_fighting\"": {
-      "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
-      "data": {
-        "\"m_battle_hero\"": {
-          "m_bError": null,
-          "m_Form": "\"Form_battle_fighting\"",
-          "m_Button": "\"m_battle_hero\"",
-          "m_Key": "\"1\"",
-          "m_DisplayKey": "\"1\"",
-          "m_TriggerPos": "\"\"",
-          "m_Priority": "1"
-        }
-      }
-    },
     "\"Form_PauseTips\"": {
       "_type": "nested_dictionary",
       "_count": 4,
@@ -523,5 +500,5 @@
       }
     }
   },
-  "status": "processed_14_items"
+  "status": "processed_12_items"
 }

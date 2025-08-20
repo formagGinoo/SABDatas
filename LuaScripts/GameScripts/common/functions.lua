@@ -1700,6 +1700,16 @@ function ResourceNumFormat(num)
   end
 end
 
+function BigNumFormatPayItem(num)
+  if not num then
+    return "0"
+  end
+  local str = tostring(num)
+  local integer, decimal = str:match("^(%d*)(%.?%d*)$")
+  integer = integer:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+  return integer .. decimal
+end
+
 function BigNumFormat(num)
   local isCN = ChannelManager:IsChinaChannel()
   if isCN then

@@ -120,6 +120,29 @@ function UpTimeManagerActivity:GetHeadFrameStatusByID(conditionID)
   return false
 end
 
+function UpTimeManagerActivity:GetPlayerBgStatusByID(conditionID)
+  if not conditionID then
+    return
+  end
+  if not self.m_stClientCfg then
+    return
+  end
+  local statusMap = self.m_stClientCfg.mHeadFrame
+  if not statusMap then
+    return
+  end
+  local tempData = statusMap[conditionID]
+  if not tempData then
+    return
+  end
+  local curTimer = TimeUtil:GetServerTimeS()
+  local conditionTimer = tempData.iUnlockTime
+  if curTimer >= conditionTimer then
+    return true, tempData.iShield
+  end
+  return false
+end
+
 function UpTimeManagerActivity:GetFashionStatusByID(conditionID)
   if not conditionID then
     return

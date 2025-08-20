@@ -15,6 +15,7 @@ end
 function Form_LegacyActivityMain:AfterInit()
   self.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
+  self.m_spineBg = self.m_rootTrans:Find("legacystage_bg")
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1167)
   local initGridData = {
@@ -94,6 +95,8 @@ function Form_LegacyActivityMain:OnDestroy()
       self["ItemInitTimer" .. i] = nil
     end
   end
+  UILuaHelper.CheckClearSkeletonAssetData(self.m_spineBg)
+  self.m_spineBg = nil
 end
 
 function Form_LegacyActivityMain:FreshData()

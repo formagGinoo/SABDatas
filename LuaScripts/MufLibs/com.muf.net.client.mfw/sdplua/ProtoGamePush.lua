@@ -160,12 +160,12 @@ CmdId_Push_NewActivityPickupGift = 20638
 CmdId_Push_SoloRaid_RankUpdate = 20639
 CmdId_Push_NewRankTarget = 20640
 CmdId_Push_Notify_HuntingRankReward = 20641
-KickReason_RepeatedLogin = 0
 KickReason_ClientNewVersion = 1
 KickReason_BanLogin = 2
 KickReason_OnlyRecharge = 3
 KickReason_Maintain = 4
 KickReason_Addict = 5
+KickReason_RepeatedLogin = 6
 CmdOriginalArenaRewardType_Daily = 1
 CmdOriginalArenaRewardType_Season = 2
 Cmd_Push_Error = sdp.SdpStruct("Cmd_Push_Error")
@@ -2345,6 +2345,8 @@ Cmd_Push_ReplaceArena_BattleEndUpdate.Definition = {
   "stEnemyId",
   "stAfk",
   "iReplaceArenaPlaySeason",
+  "iEnemyRank",
+  "iEnemyOldRank",
   iRet = {
     0,
     0,
@@ -2389,6 +2391,18 @@ Cmd_Push_ReplaceArena_BattleEndUpdate.Definition = {
   },
   iReplaceArenaPlaySeason = {
     7,
+    0,
+    8,
+    0
+  },
+  iEnemyRank = {
+    8,
+    0,
+    8,
+    0
+  },
+  iEnemyOldRank = {
+    9,
     0,
     8,
     0

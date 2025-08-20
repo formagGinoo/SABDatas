@@ -286,9 +286,8 @@ function CastleStoryManager:GetAllFinishedStoryInfo()
     table.sort(list, function(a, b)
       if a.time ~= b.time then
         return a.time < b.time
-      elseif a.iStoryId ~= b.iStoryId then
-        return a.iStoryId < b.iStoryId
       end
+      return a.iStoryId < b.iStoryId
     end)
     for i, v in ipairs(list) do
       cfgList[#cfgList + 1] = v.cfg

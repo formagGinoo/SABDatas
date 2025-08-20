@@ -12,6 +12,10 @@ function ReportManager:OnInitNetwork()
   self.m_bInitNetwork = true
 end
 
+function ReportManager:GetLoginTime()
+  return self.m_loginTime or 0
+end
+
 function ReportManager:SetLoginTime()
   self.m_loginTime = TimeUtil:GetServerTimeS()
   local report_time_interval = tonumber(ConfigManager:GetGlobalSettingsByKey("iReportInterval") or 60)
@@ -385,6 +389,13 @@ function ReportManager:ReportFlog(flogLevel)
   else
     CS.UI.UILuaHelper.ReportFlog(flogLevel)
   end
+end
+
+function ReportManager:ReportClientGlobalResEnabled(bEnabled)
+  local stReportData = CS.ReportDataPool.Instance:RequestReportDataByType(CS.ReportDataDefines.Client_useGlobal)
+  stReportData.Enabled = bEnabled
+  CS.ReportService.Instance:Report(stReportData)
+  CS.ReportDataPool.Instance:ReturnReportDataByType(stReportData)
 end
 
 function ReportManager:ReportMessage(reportDataDefine, params)

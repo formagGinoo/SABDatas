@@ -35,7 +35,7 @@ end
 function ActivitySignTenDaySubPanel:OnInactive()
   self:RemoveEventListeners()
   self:KillRemainTimer()
-  self:FreshShowSpine()
+  self:CheckRecycleSpine()
 end
 
 function ActivitySignTenDaySubPanel:RefreshUI()

@@ -75,7 +75,7 @@ function Form_CastleEventMain:OnInactive()
   self.super.OnInactive(self)
   self:StopAutoPlayStoryTimer()
   self:CheckRecycleAllSpine()
-  if not self.m_enterAnimTimer then
+  if self.m_enterAnimTimer then
     TimeService:KillTimer(self.m_enterAnimTimer)
     self.m_enterAnimTimer = nil
   end
@@ -403,7 +403,7 @@ function Form_CastleEventMain:ShowCurText()
   textCom.go.transform:SetAsLastSibling()
   UILuaHelper.PlayAnimationByName(textCom.go, aniName)
   local aniLen = UILuaHelper.GetAnimationLengthByName(textCom.go, aniName)
-  if not self.m_enterAnimTimer then
+  if self.m_enterAnimTimer then
     TimeService:KillTimer(self.m_enterAnimTimer)
     self.m_enterAnimTimer = nil
   end

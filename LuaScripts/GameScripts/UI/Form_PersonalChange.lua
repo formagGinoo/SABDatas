@@ -1,9 +1,14 @@
 local Form_PersonalChange = class("Form_PersonalChange", require("UI/UIFrames/Form_PersonalChangeUI"))
 local PlayerHeadIns = ConfigManager:GetConfigInsByName("PlayerHead")
 local PlayerHeadFrameIns = ConfigManager:GetConfigInsByName("PlayerHeadFrame")
-local RolePageType = {Head = 1, HeadFrame = 2}
+local PlayerBackgroundIns = ConfigManager:GetConfigInsByName("PlayerBackground")
+local RolePageType = {
+  Head = 1,
+  HeadFrame = 2,
+  BackGround = 3
+}
 local DefaultIndex = 1
-local MaxPageToggleNum = 2
+local MaxPageToggleNum = 3
 local MaxHeadToggleNum = 4
 local MaxHeadFrameToggleNum = 4
 local DeltaFrameNum = 30
@@ -76,6 +81,16 @@ function Form_PersonalChange:AfterInit()
       checkFreshRedDotFun = self.CheckFreshHeadFrameRedDot,
       freshFun = self.FreshHeadFramePanelShow,
       changeToggleFun = self.ChangeHeadFrameToggleShow
+    },
+    [RolePageType.BackGround] = {
+      toggleIndex = nil,
+      panelNode = self.m_pnl_account_bg,
+      nodeSelect = self.m_img_page3,
+      contentNode = self.m_head_frame_content,
+      animStr = "PersonalChange_hero",
+      checkFreshRedDotFun = self.CheckFreshHeadBgRedDot,
+      freshFun = self.FreshBgPanelShow,
+      changeToggleFun = self.ChangeBgToggleShow
     }
   }
   self.m_paramChooseIndex = nil
@@ -93,15 +108,23 @@ function Form_PersonalChange:AfterInit()
     end
   }
   self.m_luaHeadFrameInfinityGrid = self:CreateInfinityGrid(self.m_scroll_headfarme_InfinityGrid, "PersonalRole/UIRoleHeadFrameItem", initHeadFrameGridData)
+  local initBgGridData = {
+    itemClkBackFun = function(itemIndex)
+      self:OnRoleBgItemClk(itemIndex)
+    end
+  }
+  self.m_luaBgInfinityGrid = self:CreateInfinityGrid(self.m_scroll_bglist_InfinityGrid, "PersonalRole/UIRoleBgItem", initBgGridData)
   self.m_curPageIndex = nil
   self.m_headDataList = nil
   self.m_showHeadDataList = nil
   self.m_headFrameDataList = nil
-  self.m_showHeadFrameDataList = nil
+  self.m_bgDataList = nil
   self.m_curUseHeadID = nil
   self.m_curHeadID = nil
   self.m_curUseHeadFrameID = nil
   self.m_curHeadFrameID = nil
+  self.m_curUseBgID = nil
+  self.m_curBgID = nil
   self.m_headFrameEndTime = nil
   self.m_isHaveHeadFrameUpdate = nil
   self.m_curFrameDeltaNum = 0
@@ -117,6 +140,7 @@ function Form_PersonalChange:OnActive()
   self:FreshData()
   self:FreshUI()
   self:RegisterRedDot()
+  self:FreshSignatures()
 end
 
 function Form_PersonalChange:OnInactive()
@@ -135,11 +159,29 @@ function Form_PersonalChange:OnUpdate(dt)
       self:FreshHeadFrameLeftTimeStr()
     end
   end
+  if self.m_isHaveBgUpdate then
+    if self.m_curBgDeltaNum < DeltaFrameNum then
+      self.m_curBgDeltaNum = self.m_curBgDeltaNum + 1
+    else
+      self.m_curBgDeltaNum = 0
+      self:FreshBgLeftTimeStr()
+    end
+  end
 end
 
 function Form_PersonalChange:OnDestroy()
   self.super.OnDestroy(self)
   self:CheckRecycleHeadFrameNode()
+end
+
+function Form_PersonalChange:FreshSignatures()
+  local sSignature = RoleManager:GetRoleSignature() or ""
+  local hasSignature = sSignature and sSignature ~= ""
+  self.m_txt_signature:SetActive(hasSignature)
+  self.m_z_txt:SetActive(not hasSignature)
+  if hasSignature then
+    self.m_txt_signature_Text.text = tostring(sSignature)
+  end
 end
 
 function Form_PersonalChange:FreshData()
@@ -156,6 +198,8 @@ function Form_PersonalChange:FreshData()
   self.m_curUseHeadID = RoleManager:GetHeadID()
   self.m_curHeadFrameID = RoleManager:GetHeadFrameID()
   self.m_curUseHeadFrameID = RoleManager:GetHeadFrameID()
+  self.m_curBgID = RoleManager:GetHeadBackGroundID()
+  self.m_curUseBgID = RoleManager:GetHeadBackGroundID()
   self:InitCreateListData()
   self.m_paramChooseID = nil
 end
@@ -232,6 +276,7 @@ function Form_PersonalChange:InitCreateListData()
     end
     return headIDA < headIDB
   end)
+  self:InitCreateBgData()
 end
 
 function Form_PersonalChange:FreshHeadDataList()
@@ -330,12 +375,41 @@ function Form_PersonalChange:GetShowHeadFrameIndexByID(headFrameID)
   end
 end
 
+function Form_PersonalChange:GetBgIndexByID(bgId)
+  if not bgId then
+    return
+  end
+  if not self.m_bgDataList then
+    return
+  end
+  for i, v in ipairs(self.m_bgDataList) do
+    if v.cfg.m_CardBGID == bgId then
+      return i
+    end
+  end
+end
+
+function Form_PersonalChange:GetShowBgIndexByID(bgId)
+  if not bgId then
+    return
+  end
+  if not self.m_showBgDataList then
+    return
+  end
+  for i, v in ipairs(self.m_showBgDataList) do
+    if v.cfg.m_CardBGID == bgId then
+      return i
+    end
+  end
+end
+
 function Form_PersonalChange:ClearCacheData()
 end
 
 function Form_PersonalChange:RegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_head_tab_red_dot, RedDotDefine.ModuleType.PersonalCardHeadTab)
   self:RegisterOrUpdateRedDotItem(self.m_head_frame_tab_red_dot, RedDotDefine.ModuleType.PersonalCardHeadFrameTab)
+  self:RegisterOrUpdateRedDotItem(self.m_bg_tab_red_dot, RedDotDefine.ModuleType.PersonalCardBgTab)
 end
 
 function Form_PersonalChange:AddEventListeners()
@@ -404,6 +478,7 @@ end
 function Form_PersonalChange:FreshRoleBaseInfo()
   self:FreshLeftHeadShow()
   self:FreshLeftHeadFrameShow()
+  self:FreshLeftHeadBgShow()
   self.m_txt_name_Text.text = tostring(RoleManager:GetName())
   self.m_txt_level_Text.text = tostring(RoleManager:GetLevel())
   local roleExp = RoleManager:GetRoleExp() or 0
@@ -506,7 +581,8 @@ end
 function Form_PersonalChange:FreshButtonsShow()
   local headFrameID = RoleManager:GetHeadFrameID()
   local headID = RoleManager:GetHeadID()
-  local isHaveChange = headFrameID ~= self.m_curHeadFrameID or headID ~= self.m_curHeadID
+  local bgId = RoleManager:GetHeadBackGroundID()
+  local isHaveChange = headFrameID ~= self.m_curHeadFrameID or headID ~= self.m_curHeadID or bgId ~= self.m_curBgID
   UILuaHelper.SetActive(self.m_btn_reset, isHaveChange)
   UILuaHelper.SetActive(self.m_btn_reset_gray, not isHaveChange)
 end
@@ -730,6 +806,166 @@ function Form_PersonalChange:FreshShowHeadFrameChild()
   end
 end
 
+function Form_PersonalChange:FreshBgPanelShow()
+  if not self.m_curPageIndex then
+    return
+  end
+  local pageToggleData = self.PageToggleTab[self.m_curPageIndex]
+  if not pageToggleData then
+    return
+  end
+  self:FreshFilterHeadBgList(true)
+  self:FreshHeadBgContentShow()
+  self:FreshLeftHeadBgShow()
+  self:FreshButtonsShow()
+end
+
+function Form_PersonalChange:FreshLeftHeadBgShow()
+  if not self.m_curBgID then
+    return
+  end
+  local playerBgCfg = RoleManager:GetPlayerHeadBackgroundCfg(self.m_curBgID)
+  if not playerBgCfg then
+    return
+  end
+  UILuaHelper.SetAtlasSprite(self.m_img_bg_Image, playerBgCfg.m_CardBGPic, function()
+    if not UILuaHelper.IsNull(self.m_img_bg_Image) then
+      UILuaHelper.SetNativeSize(self.m_img_bg_Image)
+    end
+  end)
+end
+
+function Form_PersonalChange:FreshHeadBgContentShow()
+  if not self.m_curHeadFrameID then
+    return
+  end
+  local playerBgCfg = RoleManager:GetPlayerHeadBackgroundCfg(self.m_curBgID)
+  if not playerBgCfg then
+    return
+  end
+  self.m_txt_bg_name_Text.text = playerBgCfg.m_mCardBGName
+  self.m_txt_bginfor_Text.text = playerBgCfg.m_mCardBGDesc
+  self:CheckStartBgLeftTime()
+end
+
+function Form_PersonalChange:CheckStartBgLeftTime()
+  if not self.m_curBgID then
+    return
+  end
+  local expireTime = ItemManager:GetItemExpireTime(self.m_curBgID)
+  local serverTime = TimeUtil:GetServerTimeS()
+  if expireTime and expireTime > serverTime then
+    local leftSec = expireTime - serverTime
+    self.m_txt_bg_lefttime_Text.text = TimeUtil:SecondToTimeText(leftSec)
+    self.m_curBgDeltaNum = 0
+    self.m_headBgEndTime = expireTime
+    self.m_isHaveBgUpdate = true
+    self:FreshBgLeftTimeStr()
+  else
+    self.m_isHaveBgUpdate = false
+    self.m_curBgDeltaNum = 0
+    self.m_headBgEndTime = nil
+    UILuaHelper.SetActive(self.m_pnl_left_bg_time, false)
+  end
+end
+
+function Form_PersonalChange:FreshBgLeftTimeStr()
+  if not self.m_isHaveBgUpdate then
+    return
+  end
+  local serverTime = TimeUtil:GetServerTimeS()
+  local leftSec = self.m_headBgEndTime - serverTime
+  if leftSec <= 0 then
+    UILuaHelper.SetActive(self.m_pnl_left_bg_time, false)
+    self.m_isHaveBgUpdate = false
+    self.m_curBgDeltaNum = 0
+    self.m_headBgEndTime = nil
+    self.m_curUseHeadFrameID = RoleManager:GetHeadFrameID()
+    self:InitCreateListData()
+    self:FreshFilterHeadFrameList()
+    self:FreshLeftHeadFrameShow()
+    self:FreshHeadFrameContentShow()
+    self:FreshButtonsShow()
+  else
+    UILuaHelper.SetActive(self.m_pnl_left_time, true)
+    self.m_txt_lefttimeheadfarme_Text.text = TimeUtil:SecondToTimeText(leftSec)
+  end
+end
+
+function Form_PersonalChange:FreshFilterHeadBgList(isResetPos)
+  self:FreshBgDataList()
+  self:FreshBgListShow(isResetPos)
+end
+
+function Form_PersonalChange:FreshBgDataList()
+  self.m_showBgDataList = {}
+  local pageToggleData = self.PageToggleTab[self.m_curPageIndex]
+  if not pageToggleData then
+    return
+  end
+  self.m_showBgDataList = self.m_bgDataList
+end
+
+function Form_PersonalChange:FreshBgListShow(isResetPos)
+  if not self.m_showBgDataList then
+    return
+  end
+  self.m_luaBgInfinityGrid:ShowItemList(self.m_showBgDataList)
+  if isResetPos then
+    self.m_luaBgInfinityGrid:LocateTo()
+  end
+  local headToggleData = self.PageToggleTab[RolePageType.BackGround]
+  if headToggleData then
+    UILuaHelper.PlayAnimationByName(headToggleData.contentNode, headToggleData.animStr)
+  end
+end
+
+function Form_PersonalChange:CheckFreshHeadBgRedDot()
+  if self.m_curPageIndex ~= RolePageType.BackGround then
+    return
+  end
+  RoleManager:SetAllRoleHeadBackgroundNewFlag()
+end
+
+function Form_PersonalChange:OnRoleBgItemClk(bgIndex)
+  if not bgIndex then
+    return
+  end
+  local toChooseBgItemData = self.m_showBgDataList[bgIndex]
+  if not toChooseBgItemData then
+    return
+  end
+  local toChooseBgdID = toChooseBgItemData.cfg.m_CardBGID
+  if toChooseBgdID == self.m_curBgID then
+    return
+  end
+  local curChooseIndex = self:GetShowBgIndexByID(self.m_curBgID)
+  if curChooseIndex then
+    local showItem = self.m_luaBgInfinityGrid:GetShowItemByIndex(curChooseIndex)
+    if showItem then
+      showItem:ChangeItemChooseStatus(false)
+    else
+      local showItemData = self.m_showBgDataList[curChooseIndex]
+      showItemData.isSelect = false
+    end
+  else
+    local allHeadIndex = self:GetBgIndexByID(self.m_curBgID)
+    if allHeadIndex then
+      local headItemData = self.m_bgDataList[allHeadIndex]
+      headItemData.isSelect = false
+    end
+  end
+  local toShowItem = self.m_luaBgInfinityGrid:GetShowItemByIndex(bgIndex)
+  if toShowItem then
+    toShowItem:ChangeItemChooseStatus(true)
+    toShowItem:ShowChooseStatusAnim()
+  end
+  self.m_curBgID = toChooseBgdID
+  self:FreshHeadBgContentShow()
+  self:FreshLeftHeadBgShow()
+  self:FreshButtonsShow()
+end
+
 function Form_PersonalChange:CloseFormAndCheckFreshRedDot()
   if self.m_curPageIndex then
     local toggleTab = self.PageToggleTab[self.m_curPageIndex]
@@ -903,18 +1139,19 @@ function Form_PersonalChange:OnBtnCancelClicked()
 end
 
 function Form_PersonalChange:OnBtnConfirmClicked()
-  if self.m_curHeadID == self.m_curUseHeadID and self.m_curHeadFrameID == self.m_curUseHeadFrameID then
+  if self.m_curHeadID == self.m_curUseHeadID and self.m_curHeadFrameID == self.m_curUseHeadFrameID and self.m_curHeadID == self.m_curUseBgID then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 51003)
     self:CloseFormAndCheckFreshRedDot()
     return
   end
   local isHaveHead = ItemManager:GetItemNum(self.m_curHeadID) > 0
   local isHaveHeadFrame = ItemManager:GetItemNum(self.m_curHeadFrameID) > 0
-  if not isHaveHead or not isHaveHeadFrame then
+  local isHaveBgFrame = 0 < ItemManager:GetItemNum(self.m_curBgID)
+  if not (isHaveHead and isHaveHeadFrame) or not isHaveBgFrame then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 51002)
     return
   end
-  RoleManager:ReqRoleSetCard(self.m_curHeadID, self.m_curHeadFrameID)
+  RoleManager:ReqRoleSetCard(self.m_curHeadID, self.m_curHeadFrameID, self.m_curBgID)
 end
 
 function Form_PersonalChange:OnBtniconcopybgClicked()
@@ -940,6 +1177,44 @@ function Form_PersonalChange:GetDownloadResourceExtra(tParam)
     end
   end
   return vPackage, vResourceExtra
+end
+
+function Form_PersonalChange:InitCreateBgData()
+  local allBgCfgDic = PlayerBackgroundIns:GetAll()
+  local toChooseBgID = self.m_curBgID
+  if self.m_paramChooseIndex == RolePageType.BackGround and self.m_paramChooseID ~= nil then
+    toChooseBgID = self.m_paramChooseID
+  end
+  self.m_bgDataList = {}
+  for _, v in pairs(allBgCfgDic) do
+    local isPlayerHeadHid = RoleManager:IsPlayerBgHide(v)
+    if isPlayerHeadHid ~= true then
+      local tempHeadData = {
+        cfg = v,
+        isSelect = v.m_CardBGID == toChooseBgID,
+        isHave = ItemManager:GetItemNum(v.m_CardBGID) > 0
+      }
+      self.m_bgDataList[#self.m_bgDataList + 1] = tempHeadData
+    end
+  end
+  table.sort(self.m_bgDataList, function(a, b)
+    local headIDA = a.cfg.m_CardBGID
+    local headIDB = b.cfg.m_CardBGID
+    local isUseA = headIDA == self.m_curUseBgID
+    local isUseB = headIDB == self.m_curUseBgID
+    if isUseA ~= isUseB then
+      return isUseA
+    end
+    local isNewA = RoleManager:GetRoleMainBackgroundNewFlag(headIDA)
+    local isNewB = RoleManager:GetRoleMainBackgroundNewFlag(headIDB)
+    if isNewA ~= isNewB then
+      return isNewA
+    end
+    if a.isHave ~= b.isHave then
+      return a.isHave
+    end
+    return headIDA < headIDB
+  end)
 end
 
 local fullscreen = true

@@ -57,8 +57,10 @@ function Form_Shop:OnActive()
 end
 
 function Form_Shop:OnActiveSame()
-  self:refreshTabLoopScroll()
-  self:RefreshShopItemInfo()
+  if not utils.isNull(self.m_scrollView) then
+    self:refreshTabLoopScroll()
+    self:RefreshShopItemInfo()
+  end
 end
 
 function Form_Shop:OnInactive()
@@ -332,17 +334,27 @@ function Form_Shop:OnBtntimeClicked()
       local itemCfg = ItemManager:GetItemConfigById(refreshCost[1])
       local curRefreshShopTimes = ShopManager:GetShopCurFreeRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
       local currefreshCost = freeRefreshTimes > curRefreshShopTimes and 0 or refreshCost[2]
-      utils.ShowCommonTipCost({
-        beforeItemID = refreshCost[1],
-        beforeItemNum = currefreshCost,
-        formatFun = function(sContent)
-          return string.format(sContent, tostring(itemCfg.m_mItemName), currefreshCost)
-        end,
-        confirmCommonTipsID = 1400,
-        funSure = function()
-          ShopManager:ReqShopRefresh(self.m_chooseShopCfg.m_ShopID)
-        end
-      })
+      if 0 < currefreshCost then
+        utils.ShowCommonTipCost({
+          beforeItemID = refreshCost[1],
+          beforeItemNum = currefreshCost,
+          formatFun = function(sContent)
+            return string.format(sContent, tostring(itemCfg.m_mItemName), currefreshCost)
+          end,
+          confirmCommonTipsID = 1400,
+          funSure = function()
+            ShopManager:ReqShopRefresh(self.m_chooseShopCfg.m_ShopID)
+          end
+        })
+      else
+        utils.CheckAndPushCommonTips({
+          tipsID = 1238,
+          bLockBack = true,
+          func1 = function()
+            ShopManager:ReqShopRefresh(self.m_chooseShopCfg.m_ShopID)
+          end
+        })
+      end
     else
       StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10105)
     end

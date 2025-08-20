@@ -108,6 +108,7 @@ function UIEmailItem:FreshSpecialMailShow()
   UILuaHelper.SetActive(self.m_bg_grey_specialmail, isRcv)
   UILuaHelper.SetActive(self.m_bg_normal_specialmail, not isRcv)
   UILuaHelper.SetActive(self.m_pnl_read_specialmail, isRcv)
+  UILuaHelper.SetActive(self.m_img_cake, templateCfg.m_CakeIcon == 1)
 end
 
 function UIEmailItem:FreshItemName()

@@ -1902,6 +1902,8 @@ CmdRoleSimpleInfo.Definition = {
   "iHeadFrameId",
   "iHeadFrameExpireTime",
   "iReplaceArenaPlaySeason",
+  "iBanEndTime",
+  "iBanShowType",
   stRoleId = {
     0,
     0,
@@ -2039,6 +2041,18 @@ CmdRoleSimpleInfo.Definition = {
     0,
     8,
     0
+  },
+  iBanEndTime = {
+    24,
+    0,
+    8,
+    0
+  },
+  iBanShowType = {
+    25,
+    0,
+    8,
+    0
   }
 }
 CmdRoleBusinessCard = sdp.SdpStruct("CmdRoleBusinessCard")
@@ -2058,6 +2072,8 @@ CmdRoleBusinessCard.Definition = {
   "mmProgress",
   "sSignature",
   "iShowBackgroundExpireTime",
+  "iBanEndTime",
+  "iBanShowType",
   stRoleId = {
     0,
     0,
@@ -2144,6 +2160,18 @@ CmdRoleBusinessCard.Definition = {
   },
   iShowBackgroundExpireTime = {
     14,
+    0,
+    8,
+    0
+  },
+  iBanEndTime = {
+    15,
+    0,
+    8,
+    0
+  },
+  iBanShowType = {
+    16,
     0,
     8,
     0
@@ -2234,6 +2262,8 @@ CmdAllianceMemberData.Definition = {
   "iHeadId",
   "iHeadFrameId",
   "iHeadFrameExpireTime",
+  "iBanEndTime",
+  "iBanShowType",
   stRoleId = {
     0,
     0,
@@ -2314,6 +2344,18 @@ CmdAllianceMemberData.Definition = {
   },
   iHeadFrameExpireTime = {
     13,
+    0,
+    8,
+    0
+  },
+  iBanEndTime = {
+    14,
+    0,
+    8,
+    0
+  },
+  iBanShowType = {
+    15,
     0,
     8,
     0

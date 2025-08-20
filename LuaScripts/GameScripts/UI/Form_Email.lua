@@ -4,6 +4,7 @@ local next = _ENV.next
 local defaultChooseIndex = 1
 local MailLimitCount = 4
 local MailFJLimitCount = 5
+local AddCollectionEmailAnimStr = "Form_Email_content"
 local EmailManager = _ENV.EmailManager
 
 function Form_Email:SetInitParam(param)
@@ -258,6 +259,7 @@ function Form_Email:AddEventListeners()
   self:addEventListener("eGameEvent_Email_ReadEmail", handler(self, self.OnEventReadEmail))
   self:addEventListener("eGameEvent_Email_DelEmail", handler(self, self.OnEventDelEmail))
   self:addEventListener("eGameEvent_Email_AttachEmail", handler(self, self.OnEventAttachEmail))
+  self:addEventListener("eGameEvent_Email_AddCollectEmail_ShowRewardBack", handler(self, self.OnEventEmailAddCollectEmail_ShowRewardBack))
 end
 
 function Form_Email:RemoveAllEventListeners()
@@ -308,7 +310,7 @@ function Form_Email:OnEventDelEmail(emailIDList)
     self.m_curChooseIndex = defaultChooseIndex
     local curChooseItem = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
     if curChooseItem then
-      curChooseItem.isChoose = false
+      curChooseItem.isChoose = true
     end
     self:FreshUI()
   else
@@ -332,6 +334,16 @@ function Form_Email:OnEventAttachEmail(emailID)
     self:CheckReqReadEmail()
     self:FreshShowContent()
   end
+end
+
+function Form_Email:OnEventEmailAddCollectEmail_ShowRewardBack()
+  if not self.m_btn_collection then
+    return
+  end
+  if utils.isNull(self.m_btn_collection) then
+    return
+  end
+  UILuaHelper.PlayAnimationByName(self.m_btn_collection, AddCollectionEmailAnimStr)
 end
 
 function Form_Email:ShowEmptyNode()
@@ -512,6 +524,10 @@ function Form_Email:OnBtndeceiveallClicked()
   if isHaveCanAttachMailData == true then
     EmailManager:ReqRcvAllMailAttach()
   end
+end
+
+function Form_Email:OnBtncollectionClicked()
+  StackFlow:Push(UIDefines.ID_FORM_COLLECTIONEMAIL)
 end
 
 function Form_Email:IsFullScreen()

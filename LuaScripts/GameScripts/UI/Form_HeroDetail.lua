@@ -530,16 +530,20 @@ function Form_HeroDetail:PlayHeroDisPlayVoice()
   end)
 end
 
+function Form_HeroDetail:StopCurVoiceEvent()
+  if self.m_playingDisplayId3 then
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId3)
+  end
+end
+
 function Form_HeroDetail:StopCurDisPlayPlayingVoice()
   if self.m_playingDisplayId then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
   end
   if self.m_playingDisplayId2 then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
   end
-  if self.m_playingDisplayId3 then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId3)
-  end
+  self:StopCurVoiceEvent()
 end
 
 function Form_HeroDetail:FreshHeroAttract(iAttractRankTemplate, iAttractRank)
@@ -1138,6 +1142,9 @@ function Form_HeroDetail:OnHeroTabClk(index)
 end
 
 function Form_HeroDetail:OnTabbaseClicked()
+  if self.m_curChooseTab ~= HeroTagCfg.Base then
+    self:StopCurVoiceEvent()
+  end
   self:OnHeroTabClk(HeroTagCfg.Base)
 end
 
@@ -1146,6 +1153,9 @@ function Form_HeroDetail:OnTabskillClicked()
   if not openFlag then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tipsId)
     return
+  end
+  if self.m_curChooseTab ~= HeroTagCfg.Skill then
+    self:StopCurVoiceEvent()
   end
   self:OnHeroTabClk(HeroTagCfg.Skill)
 end
@@ -1168,6 +1178,9 @@ function Form_HeroDetail:OnTabequipClicked()
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tipsId)
     return
   end
+  if self.m_curChooseTab ~= HeroTagCfg.Equip then
+    self:StopCurVoiceEvent()
+  end
   self:OnHeroTabClk(HeroTagCfg.Equip)
 end
 
@@ -1176,6 +1189,9 @@ function Form_HeroDetail:OnTablegacyClicked()
   if not openFlag then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tipsId)
     return
+  end
+  if self.m_curChooseTab ~= HeroTagCfg.Legacy then
+    self:StopCurVoiceEvent()
   end
   self:OnHeroTabClk(HeroTagCfg.Legacy)
 end
@@ -1376,7 +1392,7 @@ function Form_HeroDetail:GetRandomTimerPlayVoice(limit, upper, heroID, fashionID
     self.voiceTimer = TimeService:SetTimer(during, 1, function()
       local voice = HeroManager:GetHeroVoice():GetHeroIdleVoice(heroID, fashionID)
       if voice and voice ~= "" then
-        CS.UI.UILuaHelper.StartPlaySFX(voice, nil, function(playingDisplayId)
+        UILuaHelper.StartPlaySFX(voice, nil, function(playingDisplayId)
           self.m_playingDisplayId2 = playingDisplayId
         end, function()
           self.m_playingDisplayId2 = nil

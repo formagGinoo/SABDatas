@@ -26,7 +26,7 @@
       "m_mGetwayDes": "\"Far Side of the Moon Redemption\"",
       "m_mItemName": "\"Memory: Far Side of the Moon\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_02_s\"",
-      "m_mItemDec": "\"Unlock the Far Side of the Moon in Customize - Memories.\n<alpha=#80>Ambling down the dim corridor, I wonder if the moon will finally reveal itself to me.\"",
+      "m_mItemDec": "\"Unlock the [Far Side of the Moon] scene in Customize - Memories.\n<alpha=#80>Ambling down the dim corridor, I wonder if the moon will finally reveal itself to me.\"",
       "m_HideType": null
     },
     "1600003": {
@@ -40,7 +40,7 @@
       "m_mGetwayDes": "\"As Tears Fade Into The Sunset Redemption\"",
       "m_mItemName": "\"Memory: As Tears Fade Into The Sunset\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
-      "m_mItemDec": "\"Unlock the Scene As Tears Fade Into The Sunset in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
+      "m_mItemDec": "\"Unlock the [As Tears Fade Into The Sunset] scene in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
       "m_HideType": null
     },
     "1600004": {
@@ -52,9 +52,9 @@
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner04\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_04\"",
       "m_mGetwayDes": "\"The Last Summer on Sapphire Isle Redemption\"",
-      "m_mItemName": "\"Memories: The Last Summer on Sapphire Isle\"",
+      "m_mItemName": "\"Memory: The Last Summer on Sapphire Isle\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_04_s\"",
-      "m_mItemDec": "\"Unlock the scene The Last Summer on Sapphire Isle in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
+      "m_mItemDec": "\"Unlock [The Last Summer on Sapphire Isle] scene in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
       "m_HideType": null
     },
     "1600005": {
@@ -66,10 +66,10 @@
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner05\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_05\"",
       "m_mGetwayDes": "\"Ashes of Time Redemption\"",
-      "m_mItemName": "\"Memories: Ashes of Time\"",
+      "m_mItemName": "\"Memory: Ashes of Time\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_05_s\"",
-      "m_mItemDec": "\"Unlock Ashes of Time in Customize - Memories.\n'I am <i>human</i>... I am Aiona, of the Alita. I fight for the flow of time. I remember... yes, I remember it all now.'\"",
-      "m_HideType": "1"
+      "m_mItemDec": "\"Unlock the [Ashes of Time] scene in Customize - Memories.\n'I am <i>human</i>... I am Aiona, of the Alita. I fight for the flow of time. I remember... yes, I remember it all now.'\"",
+      "m_HideType": null
     },
     "1600006": {
       "m_bError": null,
@@ -80,10 +80,10 @@
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner06\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_06\"",
       "m_mGetwayDes": "\"Ashes of Time Redemption\"",
-      "m_mItemName": "\"Memories: Cycle of Destruction\"",
+      "m_mItemName": "\"Memory: Cycle of Destruction\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_06_s\"",
-      "m_mItemDec": "\"Unlocks the scene Cycle of Destruction in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
-      "m_HideType": "1"
+      "m_mItemDec": "\"Unlocks the [Cycle of Destruction] scene in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
+      "m_HideType": null
     },
     "1600007": {
       "m_bError": null,
@@ -93,11 +93,25 @@
       "m_Prefabs": "\"ui_panel_activity_bg105_3\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner07\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_07\"",
-      "m_mGetwayDes": "\"Whispers of Yesterday Rewards\"",
+      "m_mGetwayDes": "\"Whispers of Yesterday Redemption\"",
       "m_mItemName": "\"Memories: Twilight Before The Dawn\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_07_s\"",
       "m_mItemDec": "\"Unlock the [Twilight Before The Dawn] scene in Customize - Memories.\n<alpha=#80>Through those eyes, one can seemingly glimpse the moon of their homeland once more, shining upon companions of the past.\"",
       "m_HideType": null
+    },
+    "1600008": {
+      "m_bError": null,
+      "m_BDID": "1600008",
+      "m_mBDName": "\"Against The Dying Light\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg106\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner08\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_08\"",
+      "m_mGetwayDes": "\"Against The Dying Light Redemption\"",
+      "m_mItemName": "\"Memories: Against The Dying Light\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_08_s\"",
+      "m_mItemDec": "\"Unlock the [Against The Dying Light] scene in Customize - Memories.\n<alpha=#80> Perhaps she could have endured the darkness, had she never seen the sun.\"",
+      "m_HideType": "1"
     },
     "1600009": {
       "m_bError": null,
@@ -107,12 +121,12 @@
       "m_Prefabs": "\"ui_panel_activity_bg106_1\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner09\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_09\"",
-      "m_mGetwayDes": "\"[Smoke Signals] Rewards\"",
-      "m_mItemName": "\"Memories: Smoke Signals\"",
+      "m_mGetwayDes": "\"Smoke Signals Redemption\"",
+      "m_mItemName": "\"Memory: Smoke Signals\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_09_s\"",
-      "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace…find its rest...\"",
+      "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace... find its rest...\"",
       "m_HideType": null
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_9_items"
 }

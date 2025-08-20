@@ -89,6 +89,8 @@ function Form_Recharge:OnActive()
     UILuaHelper.SetAtlasSprite(self.m_icon_item2_Image, processItemData.icon_name, function()
       self.m_icon_item2.gameObject:SetActive(true)
     end)
+    self.m_pnl_firstrecharge:SetActive(isFirstBuy)
+    self.m_pnl_otherrecharge:SetActive(not isFirstBuy)
   end
   self:OnRefreshGiftPoint()
 end

@@ -8,6 +8,7 @@ function LevelManager:OnCreate()
   self.m_reqEnterBattleTimer = nil
   self.m_cacheLevelCfgTab = {}
   self.m_isSim = nil
+  self.m_towerAutoBattleEffective = false
 end
 
 function LevelManager:OnInitNetwork()
@@ -513,12 +514,18 @@ end
 
 function LevelManager:PushInnerGameData(levelType, levelID, isSim)
   local subType = self:GetLevelSunType(levelType, levelID)
+  local towerAutoBattle = false
+  if levelType == LevelManager.LevelType.Tower and self.m_towerAutoBattleEffective then
+    towerAutoBattle = LocalDataManager:GetIntSimple("Tower_Auto_Battle", 0) == 1
+    self.m_towerAutoBattleEffective = false
+  end
   local inputLevelData = {
     levelType = levelType or 0,
     levelSubType = subType or 0,
     levelID = levelID or 0,
     isSim = isSim or false,
-    heroList = HeroManager:GetHeroServerList()
+    heroList = HeroManager:GetHeroServerList(),
+    towerAutoBattle = towerAutoBattle
   }
   CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)
   RoleManager:ClearOldLevel()
@@ -828,6 +835,10 @@ function LevelManager:GetBattleGlobalEffectCfgById(id)
     return
   end
   return cfg
+end
+
+function LevelManager:SetTowerAutoBattleEffective(effective)
+  self.m_towerAutoBattleEffective = effective
 end
 
 return LevelManager

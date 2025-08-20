@@ -96,6 +96,7 @@ function Form_PopoverSkill:CheckSetScrollTypeAndZeroPos()
   if utils.isNull(self.m_content_node) then
     return
   end
+  UILuaHelper.ForceRebuildLayoutImmediate(self.m_scroll_content)
   local _, scrollContentH = UILuaHelper.GetUISize(self.m_scroll_content)
   local curListX, _ = UILuaHelper.GetUISize(self.m_scrollView_list)
   local curListH

@@ -14,10 +14,14 @@ function Form_Diamond:OnActive()
   self.super.OnActive(self)
   self.iVirtualDiamondsID = self.m_csui.m_param.iID
   local iRechargeCount = ItemManager:GetItemNum(RechargeCurrencyID)
-  self.m_txt_ownpay_Text.text = iRechargeCount
+  local showPayDiamond = BigNumFormatPayItem(iRechargeCount) or ""
+  self.m_txt_ownpay_Text.text = showPayDiamond
   local iFreeCount = ItemManager:GetItemNum(FreeCurrencyID)
-  self.m_txt_ownfree_Text.text = iFreeCount
-  self.m_txt_all_Text.text = iRechargeCount + iFreeCount
+  local showFreeDiamond = BigNumFormatPayItem(iFreeCount) or ""
+  self.m_txt_ownfree_Text.text = showFreeDiamond
+  local totalNum = iRechargeCount + iFreeCount
+  local totalNumText = BigNumFormatPayItem(totalNum) or ""
+  self.m_txt_all_Text.text = totalNumText
   self:addEventListener("eGameEvent_Item_Jump", handler(self, self.OnBtnCloseClicked))
 end
 

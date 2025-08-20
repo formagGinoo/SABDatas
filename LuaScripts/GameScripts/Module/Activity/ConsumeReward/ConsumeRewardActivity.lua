@@ -38,7 +38,7 @@ function ConsumeRewardActivity:checkCondition()
 end
 
 function ConsumeRewardActivity:GetPointItemId()
-  return self.m_pointItemId
+  return self.m_pointItemId or -1
 end
 
 function ConsumeRewardActivity:checkShowRed()

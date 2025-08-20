@@ -138,7 +138,21 @@ function LevelMainHelper:IsChapterUnlock(chapterID)
 end
 
 function LevelMainHelper:IsLevelUnLock(levelID)
+  if not levelID then
+    local params = {
+      LogInfo = "LevelMainHelper_IsLevelUnLock_levelID_nil_" .. tostring(levelID)
+    }
+    ReportManager:ReportMessage(CS.ReportDataDefines.Flog_report, params)
+    return
+  end
   local levelMainCfg = self:GetLevelCfgByID(levelID)
+  if not levelMainCfg then
+    local params = {
+      LogInfo = "LevelMainHelper_IsLevelUnLock_levelMainCfg_nil_" .. tostring(levelID)
+    }
+    ReportManager:ReportMessage(CS.ReportDataDefines.Flog_report, params)
+    return
+  end
   local unlockLevelID = levelMainCfg.m_LevelUnlock
   local chapterID = levelMainCfg.m_ChapterID
   local isChapterUnlock, unlockType, unlockStr = self:IsChapterUnlock(chapterID)

@@ -15,12 +15,14 @@ end
 
 function Form_Activity105Minigame_Puzzle:OnActive()
   self.super.OnActive(self)
+  self:addEventListener("eGameEvent_ActMinigame_GetReward", handler(self, self.OnActMinigameGetReward))
   self:InitData()
   self:RefreshUI()
 end
 
 function Form_Activity105Minigame_Puzzle:OnInactive()
   self.super.OnInactive(self)
+  self:clearEventListener()
 end
 
 function Form_Activity105Minigame_Puzzle:OnDestroy()
@@ -34,6 +36,10 @@ function Form_Activity105Minigame_Puzzle:InitData()
     self.iSubActId = params.sub_id
     params = nil
   end
+end
+
+function Form_Activity105Minigame_Puzzle:OnActMinigameGetReward()
+  self:RefreshUI()
 end
 
 function Form_Activity105Minigame_Puzzle:RefreshUI()
@@ -78,9 +84,7 @@ function Form_Activity105Minigame_Puzzle:OnRewardCommonItemClk(itemID, itemNum, 
     return
   end
   if not HeroActivityManager:IsSubActAwarded(self.iActId, self.iSubActId) and self.iFinishCoun >= iMaxLevelNum then
-    HeroActivityManager:ReqLamiaGetSubActAwardCS(self.iActId, self.iSubActId, function()
-      self:RefreshUI()
-    end)
+    HeroActivityManager:ReqLamiaGetSubActAwardCS(self.iActId, self.iSubActId)
     return
   end
   utils.openItemDetailPop({iID = itemID, iNum = itemNum})
@@ -127,9 +131,7 @@ function Form_Activity105Minigame_Puzzle:OnBtngetrewardClicked()
     return
   end
   if not HeroActivityManager:IsSubActAwarded(self.iActId, self.iSubActId) and self.iFinishCoun >= iMaxLevelNum then
-    HeroActivityManager:ReqLamiaGetSubActAwardCS(self.iActId, self.iSubActId, function()
-      self:RefreshUI()
-    end)
+    HeroActivityManager:ReqLamiaGetSubActAwardCS(self.iActId, self.iSubActId)
     return
   end
 end

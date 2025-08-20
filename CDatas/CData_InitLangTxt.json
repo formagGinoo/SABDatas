@@ -64,7 +64,7 @@
     "\"PlayerProtocolContent\"": {
       "m_bError": null,
       "m_Index": "\"PlayerProtocolContent\"",
-      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! We ask that you read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge the content of these terms. By tapping Cancel, you will be unable to proceed.##14:Merci de soutenir L'Argent et le Sang ! Nous vous demandons de lire les Conditions d'utilisation et la Politique de confidentialité suivantes avant de continuer. En appuyant sur Confirmer, vous reconnaissez les avoir comprises. En appuyant sur Annuler, vous ne pourrez pas poursuivre.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgende Nutzungsvereinbarung und Datenschutzerklärung durch, bevor du fortfährst. Indem du auf „Bestätigen“ tippst, bestätigst du, dass du den Inhalt dieser Bedingungen verstanden hast. Wenn du auf „Abbrechen“ tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar Silver and Blood! Te pedimos que leas el siguiente Acuerdo de usuario y la Política de privacidad antes de continuar. Al pulsar Confirmar, reconoces el contenido de estos términos. Si pulsas Cancelar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน 'Silver and Blood' ขอความกรุณาท่านโปรดอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกด 'ยืนยัน' จะหมายถึงท่านได้รับทราบเนื้อหาของข้อตกลงเหล่านี้แล้ว การกด 'ยกเลิก' จะทำให้ท่านไม่สามารถดำเนินการต่อไปได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
+      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! Please read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge your acceptance of these terms. You'll need to accept these terms to continue.##14:Merci de soutenir L'Argent et le Sang ! Nous vous demandons de lire les Conditions d'utilisation et la Politique de confidentialité suivantes avant de continuer. En appuyant sur Confirmer, vous reconnaissez les avoir comprises. En appuyant sur Annuler, vous ne pourrez pas poursuivre.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgende Nutzungsvereinbarung und Datenschutzerklärung durch, bevor du fortfährst. Indem du auf „Bestätigen“ tippst, bestätigst du, dass du den Inhalt dieser Bedingungen verstanden hast. Wenn du auf „Abbrechen“ tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar Silver and Blood! Te pedimos que leas el siguiente Acuerdo de usuario y la Política de privacidad antes de continuar. Al pulsar Confirmar, reconoces el contenido de estos términos. Si pulsas Cancelar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน 'Silver and Blood' ขอความกรุณาท่านโปรดอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกด 'ยืนยัน' จะหมายถึงท่านได้รับทราบเนื้อหาของข้อตกลงเหล่านี้แล้ว การกด 'ยกเลิก' จะทำให้ท่านไม่สามารถดำเนินการต่อไปได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
     },
     "\"PlayerUserToggle\"": {
       "m_bError": null,
@@ -209,7 +209,7 @@
     "\"StartCheckNetworkFail\"": {
       "m_bError": null,
       "m_Index": "\"StartCheckNetworkFail\"",
-      "m_Name": "\"\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\"\""
+      "m_Name": "\"\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa \"\"Volver a intentar\"\" para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\"\""
     },
     "\"LowStorageWarning\"": {
       "m_bError": null,
@@ -364,7 +364,7 @@
     "\"InitMSDKPermissionRequestTipsNote\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKPermissionRequestTipsNote\"",
-      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Darf „Silber und Blut“ dir Benachrichtigungen schicken?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
+      "m_Name": "\"\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Darf „Silver and Blood“ dir Benachrichtigungen schicken?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que \"\"Silver and Blood\"\" te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\"\""
     },
     "\"InitMSDKPermissionRequestTipsTitle\"": {
       "m_bError": null,
@@ -876,11 +876,6 @@
       "m_Index": "\"MSDKErrorCode5010090\"",
       "m_Name": "\"##6:设备id和账号id不匹配##10:Device ID and account ID do not match.##14:Les identifiants de l'appareil et du compte ne correspondent pas.##15:Geräte-ID und Konto-ID stimmen nicht überein.##22:端末IDとアカウントIDが一致していません。##23:기기 ID와 계정 ID가 일치하지 않습니다.##34:La ID de dispositivo y de cuenta no coinciden.##36:ID อุปกรณ์ และ ID บัญชีไม่ตรงกัน##41:裝置ID和帳號ID不相符\""
     },
-    "\"MSDKErrorCodeM10000\"": {
-      "m_bError": null,
-      "m_Index": "\"MSDKErrorCodeM10000\"",
-      "m_Name": "\"\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\"\""
-    },
     "\"MSDKErrorCodeM4\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM4\"",
@@ -1024,7 +1019,7 @@
     "\"ConfirmCommonTipsContent1134\"": {
       "m_bError": null,
       "m_Index": "\"ConfirmCommonTipsContent1134\"",
-      "m_Name": "\"\"##6:如果您有绑定游戏数据的其他账号，登入后可以继续之前的存档。请注意，如果您当\n前账号未绑定任何三方账号，当前账号可能会无法找回。请谨慎操作!##10:If you have other accounts with bound game data, you can log in to them to continue from your previous save.\nPlease note that if your current account is not bound to any third-party account, it may not be recoverable. Please proceed with caution!##14:Si vous avez d'autres comptes liés à vos données de jeu, connectez-vous-y pour reprendre à partir de votre dernière sauvegarde.\nSi votre compte actuel n'est pas lié à un autre compte tiers, il pourrait ne pas être récupérable. Faites bien attention !##15:Falls du weitere Konten mit verknüpften Spieldaten hast, kannst du dich bei ihnen anmelden, um deinen vorherigen Spielstand fortzusetzen.\nFalls dein aktuelles Konto nicht mit einem Drittanbieter-Konto verknüpft ist, kann es möglicherweise nicht wiederhergestellt werden. Bitte sei vorsichtig!##22:他のアカウントにゲームデータを連携している場合、そのアカウントでログインすると、前のセーブデータを引き続き利用できます。\n現在のアカウントがサードパーティアカウントに連携されていない場合、アカウントが復元できない可能性がありますので、十分にご注意のうえ、慎重に操作してください。##23:게임 데이터를 다른 계정에 연동한 경우, 해당 계정에 로그인해 이전의 세이브파일을 불러올 수 있습니다.\n주의: 계정이 제삼자 계정에 연동되지 않은 상태면 해당 계정은 되찾을 수 없을 수도 있습니다. 신중히 진행하시길 바랍니다!##34:Si tienes otras cuentas con datos de juego vinculados, puedes conectarte a ellas para continuar desde tu partida guardada anterior.\nTen en cuenta que si tu cuenta actual no está vinculada a ninguna cuenta de terceros, es posible que no pueda recuperarse. Procede con precaución.##36:หากท่านมีบัญชีอื่นที่ผูกกับข้อมูลเกมอยู่ ท่านสามารถเข้าสู่ระบบเพื่อดำเนินการต่อจากบันทึกก่อนหน้านี้ได้\nโปรดทราบว่า หากบัญชีตอนนี้ของท่านไม่ได้ผูกกับบัญชีภายนอกไว้ อาจจะไม่สามารถกู้คืนได้ โปรดดำเนินการด้วยความระมัดระวัง!##41:如果您有綁定遊戲資料的其他帳號，登入便可以繼續之前的存檔。請注意，如果您目\n前帳號未綁定任何第三方帳號，則目前的帳號可能會無法復原。請謹慎操作！\"\""
+      "m_Name": "\"\"##6:如果您有绑定游戏数据的其他账号，登入后可以继续之前的存档。请注意，如果您当前账号未绑定任何三方账号，当前账号可能会无法找回。请谨慎操作!##10:If you have other accounts with bound game data, you can log in to them to continue from your previous save.Please note that if your current account is not bound to any third-party account, it may not be recoverable. Please proceed with caution!##14:Si vous avez d'autres comptes liés à vos données de jeu, connectez-vous-y pour reprendre à partir de votre dernière sauvegarde.Si votre compte actuel n'est pas lié à un autre compte tiers, il pourrait ne pas être récupérable. Faites bien attention !##15:Falls du weitere Konten mit verknüpften Spieldaten hast, kannst du dich bei ihnen anmelden, um deinen vorherigen Spielstand fortzusetzen.Falls dein aktuelles Konto nicht mit einem  Drittanbieter-Konto verknüpft ist, kann es möglicherweise nicht wiederhergestellt werden. Bitte sei vorsichtig!##22:他のアカウントにゲームデータを連携している場合、そのアカウントでログインすると、前のセーブデータを引き続き利用できます。現在のアカウントがサードパーティアカウントに連携されていない場合、アカウントが復元できない可能性がありますので、十分にご注意のうえ、慎重に操作してください。##23:게임 데이터를 다른 계정에 연동한 경우, 해당 계정에 로그인해 이전의 세이브파일을 불러올 수 있습니다.주의: 계정이 제삼자 계정에 연동되지 않은 상태면 해당 계정은 되찾을 수 없을 수도 있습니다. 신중히 진행하시길 바랍니다!##34:Si tienes otras cuentas con datos de juego vinculados, puedes conectarte a ellas para continuar desde tu partida guardada anterior.Ten en cuenta que si tu cuenta actual no está vinculada a ninguna cuenta de terceros, es posible que no pueda recuperarse. Procede con precaución.##36:หากท่านมีบัญชีอื่นที่ผูกกับข้อมูลเกมอยู่ ท่านสามารถเข้าสู่ระบบเพื่อดำเนินการต่อจากบันทึกก่อนหน้านี้ได้โปรดทราบว่า หากบัญชีตอนนี้ของท่านไม่ได้ผูกกับบัญชีภายนอกไว้ อาจจะไม่สามารถกู้คืนได้ โปรดดำเนินการด้วยความระมัดระวัง!##41:如果您有綁定遊戲資料的其他帳號，登入便可以繼續之前的存檔。請注意，如果您目前帳號未綁定任何第三方帳號，則目前的帳號可能會無法復原。請謹慎操作！\"\""
     },
     "\"ConfirmCommonTipsButton11134\"": {
       "m_bError": null,
@@ -1064,13 +1059,58 @@
     "\"LoginCheckUpgradeAddResPreCopy\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeAddResPreCopy\"",
-      "m_Name": "\"##6:拷贝资源中：##10:Copying Resources...##14:Copie des ressources en cours...##15:Ressourcen werden kopiert ...##22:リソースをコピー中：##23:리소스 복사 중:##34:Copiando recursos...##36:กำลังคัดลอกทรัพยากร...##41:正在複製檔案：\""
+      "m_Name": "\"##6:拷贝资源中：##10:Copying resources...##14:Copie des ressources...##15:Ressourcen werden kopiert ...##22:リソースをコピー中：##23:리소스 복사 중:##34:Copiando recursos...##36:กำลังคัดลอกทรัพยากร...##41:正在複製檔案：\""
     },
     "\"LoginCheckUpgradeResourceCheck\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeResourceCheck\"",
       "m_Name": "\"##6:即将准备就绪...##10:Ready soon...##14:Bientôt prêt...##15:Bald bereit ...##22:まもなく準備完了……##23:잠시 후 준비 완료...##34:Listo en breve…##36:พร้อมใช้งานเร็ว ๆ นี้...##41:即將準備就緒……\""
+    },
+    "\"Form_PlayerCenterPop2Title\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2Title\"",
+      "m_Name": "\"##6:切换账号##10:Switch Account##14:Changer de compte##15:Konto wechseln##22:アカウント切り替え##23:계정 전환##34:Cambiar de cuenta##36:เปลี่ยนบัญชี##41:切換帳號\""
+    },
+    "\"Form_PlayerCenterPop2CurName\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2CurName\"",
+      "m_Name": "\"##6:当前账号##10:Current Account##14:Compte actuel##15:Aktuelles Konto##22:現在のアカウント##23:현재 계정##34:Cuenta actual##36:บัญชีปัจจุบัน##41:目前帳號\""
+    },
+    "\"Form_PlayerCenterPop2OtherWay\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2OtherWay\"",
+      "m_Name": "\"##6:其他方式登入##10:Other Login Option##14:Autre option de connexion##15:Andere Login-Option##22:他のログイン方法##23:다른 방식으로 로그인##34:Otra opción de inicio de sesión##36:ล็อกอินทางอื่น##41:其他方式登入\""
+    },
+    "\"Form_PlayerCenterPop2Google\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2Google\"",
+      "m_Name": "\"##6:Google##10:Google##14:Google##15:Google##22:Google##23:Google##34:Google##36:Google##41:Google\""
+    },
+    "\"Form_PlayerCenterPop2FaceBook\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2FaceBook\"",
+      "m_Name": "\"##6:FaceBook##10:Facebook##14:Facebook##15:Facebook##22:FaceBook##23:페이스북##34:Facebook##36:Facebook##41:Facebook\""
+    },
+    "\"Form_PlayerCenterPop2X\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2X\"",
+      "m_Name": "\"##6:X##10:X##14:X##15:X##22:X##23:X##34:X##36:X##41:X\""
+    },
+    "\"Form_PlayerCenterPop2AppleId\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2AppleId\"",
+      "m_Name": "\"##6:Apple##10:Apple##14:Apple##15:Apple##22:Apple##23:Apple##34:Apple##36:Apple##41:Apple\""
+    },
+    "\"Form_PlayerCenterPop2Email\"": {
+      "m_bError": null,
+      "m_Index": "\"Form_PlayerCenterPop2Email\"",
+      "m_Name": "\"##6:Email##10:Email##14:Email##15:E-Mail##22:Email##23:Email##34:Correo electrónico##36:อีเมล##41:Email\""
+    },
+    "\"CommonCancel\"": {
+      "m_bError": null,
+      "m_Index": "\"CommonCancel\"",
+      "m_Name": "\"##6:取消##10:Cancel##14:Annuler##15:Abbrechen##22:キャンセル##23:취소##34:Cancelar##36:ยกเลิก##41:取消\""
     }
   },
-  "status": "processed_214_items"
+  "status": "processed_222_items"
 }

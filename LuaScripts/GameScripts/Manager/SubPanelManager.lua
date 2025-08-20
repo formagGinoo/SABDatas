@@ -72,6 +72,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity105_dialoguedetial",
     LuaPath = "UI/SubPanel/LevelDetail105SubPanel"
   },
+  LevelDetail106SubPanel = {
+    PrefabPath = "ui_activity106_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetail106SubPanel"
+  },
   LegacyLevelDetailSubPanel = {
     PrefabPath = "ui_legacy_panel_detail",
     LuaPath = "UI/SubPanel/LegacyLevelDetailSubPanel"
@@ -128,6 +132,14 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_gacha_panel_1005",
     LuaPath = "UI/SubPanel/GachaSubPanels/GachaSubPanelAct101_Step"
   },
+  GachaSubPanel1006 = {
+    PrefabPath = "ui_gacha_panel_1006",
+    LuaPath = "UI/SubPanel/GachaSubPanels/QuinnGachaSubPanel"
+  },
+  GachaSubPanel1007 = {
+    PrefabPath = "ui_gacha_panel_1007",
+    LuaPath = "UI/SubPanel/GachaSubPanels/AgathaGachaSubPanel"
+  },
   GachaDalCaroPushFaceSubPanel = {
     PrefabPath = "ui_activity_dalcaroface",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
@@ -167,6 +179,22 @@ SubPanelManager.SubPanelCfg = {
   Activity105FaceSubPanel = {
     PrefabPath = "ui_activity_105",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
+  },
+  AnnouncementPushFaceGachaSubPanel = {
+    PrefabPath = "ui_annoucement_gacha",
+    LuaPath = "UI/SubPanel/AnnouncementPushFaceGachaSubPanel"
+  },
+  AnnouncementPushFaceGuildRaidSubPanel = {
+    PrefabPath = "ui_annoucement_guildraid",
+    LuaPath = "UI/SubPanel/AnnouncementPushFaceGuildRaidSubPanel"
+  },
+  AnnouncementPushFaceHuntingSubPanel = {
+    PrefabPath = "ui_annoucement_huntingnight",
+    LuaPath = "UI/SubPanel/AnnouncementPushFaceHuntingSubPanel"
+  },
+  AnnouncementPushFacePersonalRaidSubPanel = {
+    PrefabPath = "ui_annoucement_personalraid",
+    LuaPath = "UI/SubPanel/AnnouncementPushFacePersonalRaidSubPanel"
   },
   GuildActiveSubPanel = {
     PrefabPath = "ui_guild_panel_event",

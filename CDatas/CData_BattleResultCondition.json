@@ -1273,7 +1273,7 @@
     "1011061": {
       "m_bError": null,
       "m_ID": "1011061",
-      "m_mDesc": "\"Defeat the Camel Centaur assaulting the camp.\"",
+      "m_mDesc": "\"Defeat the Camel Centaurs assaulting the camp.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1282,7 +1282,7 @@
     "1011071": {
       "m_bError": null,
       "m_ID": "1011071",
-      "m_mDesc": "\"Defeat the Camel Centaur circling the camp.\"",
+      "m_mDesc": "\"Defeat the Camel Centaurs circling the camp.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1720,6 +1720,51 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2510001": {
+      "m_bError": null,
+      "m_ID": "2510001",
+      "m_mDesc": "\"Defeat Holy Blade.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2510001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2510002": {
+      "m_bError": null,
+      "m_ID": "2510002",
+      "m_mDesc": "\"Defeat Soul Pyre.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2510003": {
+      "m_bError": null,
+      "m_ID": "2510003",
+      "m_mDesc": "\"Defeat the Brutal Blood Servants.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2510003]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2510004": {
+      "m_bError": null,
+      "m_ID": "2510004",
+      "m_mDesc": "\"Defeat the Stone Golems.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2510004]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2510005": {
+      "m_bError": null,
+      "m_ID": "2510005",
+      "m_mDesc": "\"Defeat the Venomous Swampling.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2510005]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "4000001": {
       "m_bError": null,
       "m_ID": "4000001",
@@ -1984,7 +2029,7 @@
     "6000312": {
       "m_bError": null,
       "m_ID": "6000312",
-      "m_mDesc": "\"Defeat Lorelei, the \"Mistbound Terror\".\"",
+      "m_mDesc": "\"Defeat Lorelei, the \"Mistbound Terror.\"\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[6000312]",
       "m_FailAnd": "1",
@@ -2203,6 +2248,114 @@
       "m_mDesc": "\"Defeat Weathered Flames of War.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000601": {
+      "m_bError": null,
+      "m_ID": "6000601",
+      "m_mDesc": "\"Defeat the incoming Werewolves.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000602": {
+      "m_bError": null,
+      "m_ID": "6000602",
+      "m_mDesc": "\"Teach the arrogant bat servants a lesson.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000603": {
+      "m_bError": null,
+      "m_ID": "6000603",
+      "m_mDesc": "\"Teach Johannes a lesson.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000604": {
+      "m_bError": null,
+      "m_ID": "6000604",
+      "m_mDesc": "\"Protect <#A65F30>Jamie</color> and defeat the hostile villagers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101,6000604]"
+    },
+    "6000605": {
+      "m_bError": null,
+      "m_ID": "6000605",
+      "m_mDesc": "\"Defeat the Bloodborn girl and the Mouret boy.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000606": {
+      "m_bError": null,
+      "m_ID": "6000606",
+      "m_mDesc": "\"Defeat Lord Ezareth.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000606]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000607": {
+      "m_bError": null,
+      "m_ID": "6000607",
+      "m_mDesc": "\"Defeat the Ganelon Soldier.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000608": {
+      "m_bError": null,
+      "m_ID": "6000608",
+      "m_mDesc": "\"Defeat the spirits sent by Tertius.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000609": {
+      "m_bError": null,
+      "m_ID": "6000609",
+      "m_mDesc": "\"Defeat the Blood Servants coming to \"dine.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000610": {
+      "m_bError": null,
+      "m_ID": "6000610",
+      "m_mDesc": "\"Dispel the spirits of Michelangelo and the soldiers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000611": {
+      "m_bError": null,
+      "m_ID": "6000611",
+      "m_mDesc": "\"Defeat Sirene.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000611]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000612": {
+      "m_bError": null,
+      "m_ID": "6000612",
+      "m_mDesc": "\"Defeat Tertius Baphomet.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6000612]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
@@ -2443,7 +2596,7 @@
     "10200092": {
       "m_bError": null,
       "m_ID": "10200092",
-      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless.\"</color>.\"",
+      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200092]",
       "m_FailAnd": "1",
@@ -2452,12 +2605,12 @@
     "10200093": {
       "m_bError": null,
       "m_ID": "10200093",
-      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless.\"</color>.\"",
+      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200093]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_273_items"
+  "status": "processed_290_items"
 }

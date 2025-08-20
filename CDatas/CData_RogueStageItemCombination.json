@@ -369,6 +369,22 @@
       "m_MaterialID_3": "10100013",
       "m_MaterialID_4": "10100026"
     },
+    "20100620": {
+      "m_bError": null,
+      "m_RougeItemID": "20100620",
+      "m_MaterialID_1": "10300620",
+      "m_MaterialID_2": "10100003",
+      "m_MaterialID_3": "10100025",
+      "m_MaterialID_4": null
+    },
+    "20100630": {
+      "m_bError": null,
+      "m_RougeItemID": "20100630",
+      "m_MaterialID_1": "10300630",
+      "m_MaterialID_2": "10100005",
+      "m_MaterialID_3": "10100014",
+      "m_MaterialID_4": null
+    },
     "20100640": {
       "m_bError": null,
       "m_RougeItemID": "20100640",
@@ -498,5 +514,5 @@
       "m_MaterialID_4": null
     }
   },
-  "status": "processed_62_items"
+  "status": "processed_64_items"
 }

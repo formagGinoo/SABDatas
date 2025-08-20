@@ -12,6 +12,7 @@ function Form_PlayerCenterAccountBind:OnActive()
   self.m_btn_sign.transform:Find("txt_sign_desc1"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGoogle")
   self.m_btn_appleid.transform:Find("txt_appleid"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindAppleID")
   self.m_btn_notsign.transform:Find("txt_sign_desc2"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("PlayerCenterAccountBindGuest")
+  self.m_btn_change_account.transform:Find("txt_sign_desc2"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("LoginRoleBanChangeAccount")
   self.onCloseCallBack = self.m_csui.m_param
   self.m_btn_sign:SetActive(SDKUtil.CheckIsShowLoginMode(SDKUtil.LoginMode.Google))
   self.m_btn_facebook:SetActive(SDKUtil.CheckIsShowLoginMode(SDKUtil.LoginMode.Facebook))
@@ -95,6 +96,29 @@ function Form_PlayerCenterAccountBind:OnBtnnotsignClicked()
     event = "success"
   }
   ReportManager:ReportAccountBindStep(reportData)
+end
+
+function Form_PlayerCenterAccountBind:DoSwitchAndRestartGame()
+  StackPopup:Push(UIDefines.ID_FORM_PLAYERCENTERPOP2)
+end
+
+function Form_PlayerCenterAccountBind:OnBtnchangeaccountClicked()
+  local hasBindAccount = SDKUtil.HasBindingWithThirdParty()
+  if hasBindAccount then
+    self:DoSwitchAndRestartGame()
+  else
+    utils.CheckAndPushCommonTips({
+      title = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsTitle1134"),
+      content = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsContent1134"),
+      funcText1 = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsButton11134"),
+      funcText2 = CS.ConfFact.LangFormat4DataInit("CommonCancel"),
+      btnNum = 2,
+      bLockBack = true,
+      func1 = function()
+        self:DoSwitchAndRestartGame()
+      end
+    })
+  end
 end
 
 function Form_PlayerCenterAccountBind:OnBtnReturnClicked()

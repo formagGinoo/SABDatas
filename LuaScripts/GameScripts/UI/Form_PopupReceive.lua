@@ -15,10 +15,22 @@ function Form_PopupReceive:OnActive()
   local tParam = self.m_csui.m_param
   self.m_closeCallBack = tParam.closeCallBack
   self.m_updateQueueItemBig:clear()
+  self.m_updateQueueItemBig:setInterval(IntervalNum)
+  self.m_clickNum = 0
   self.m_vItem = tParam.vItem
+  self.m_lockUI = true
+  self:LockTimer()
   self:RefreshItemList()
   GlobalManagerIns:TriggerWwiseBGMState(40)
   self:AddEventListeners()
+end
+
+function Form_PopupReceive:LockTimer()
+  local time = table.getn(self.m_vItem) * 0.08 + 0.2
+  self.m_lockTimer = TimeService:SetTimer(time, 1, function()
+    self.m_lockUI = false
+    self.m_lockTimer = nil
+  end)
 end
 
 function Form_PopupReceive:OnInactive()
@@ -33,6 +45,11 @@ function Form_PopupReceive:OnInactive()
       TimeService:KillTimer(self["ItemTimerNext" .. i])
       self["ItemTimerNext" .. i] = nil
     end
+  end
+  self.m_clickNum = 0
+  if self.m_lockTimer then
+    TimeService:KillTimer(self.m_lockTimer)
+    self.m_lockTimer = nil
   end
 end
 
@@ -120,6 +137,11 @@ function Form_PopupReceive:OnItemIconClicked(iID, iNum)
 end
 
 function Form_PopupReceive:OnBtnCloseClicked()
+  self.m_clickNum = self.m_clickNum + 1
+  if self.m_lockUI and self.m_clickNum < 3 then
+    self.m_updateQueueItemBig:setInterval(1)
+    return
+  end
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackPopup:RemoveUIFromStack(UIDefines.ID_FORM_POPUPRECEIVE)
   PushFaceManager:CheckShowNextPopRewardPanel()

@@ -241,6 +241,26 @@
       "m_IgnoreLegacy": null,
       "m_IgnoreXunHuanShi": "1"
     },
+    "2006": {
+      "m_bError": null,
+      "m_ID": "2006",
+      "m_ForceLevel": "140",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
+    "2007": {
+      "m_bError": null,
+      "m_ID": "2007",
+      "m_ForceLevel": "160",
+      "m_ForceBreak": "1",
+      "m_ForceAttractRank": "1",
+      "m_IgnoreEquip": "1",
+      "m_IgnoreLegacy": null,
+      "m_IgnoreXunHuanShi": "1"
+    },
     "3001": {
       "m_bError": null,
       "m_ID": "3001",
@@ -472,5 +492,5 @@
       "m_IgnoreXunHuanShi": null
     }
   },
-  "status": "processed_47_items"
+  "status": "processed_49_items"
 }

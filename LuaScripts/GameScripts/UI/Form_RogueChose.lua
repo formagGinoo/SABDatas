@@ -1055,6 +1055,11 @@ function Form_RogueChose:OnItemClk(itemIndex)
 end
 
 function Form_RogueChose:OnDragEquipItemClk(equipItemData, itemTrans)
+  if self.m_startDragType ~= nil and self.m_dragEquipItem ~= nil then
+    self:CheckPutBack()
+    self:CheckFreshShowPosAndDelShow(false)
+    return
+  end
   if not equipItemData then
     return
   end

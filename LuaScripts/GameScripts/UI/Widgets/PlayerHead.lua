@@ -6,6 +6,8 @@ function PlayerHead:ctor(goRoot)
   self.m_headID = nil
   self.m_headFrameID = nil
   self.m_headFrameExpireTime = nil
+  self.m_showBanShowType = nil
+  self.m_banEndTime = nil
   self.m_playerHeadClickBackFun = nil
   self.m_isNotClk = false
   self.m_headFrameEftStr = nil
@@ -54,6 +56,8 @@ function PlayerHead:SetPlayerHeadInfo(params)
   self.m_headFrameID = params.iHeadFrameId
   self.m_headFrameExpireTime = params.iHeadFrameExpireTime or 0
   self.m_stRoleId = params.stRoleId
+  self.m_showBanShowType = params.iBanShowType
+  self.m_banEndTime = params.iBanEndTime
   self:FreshHeadShow()
   self:FreshHeadFrameShow()
   self:FreshLvNode(params.iLevel)
@@ -70,9 +74,16 @@ function PlayerHead:SetStopClkStatus(isNotClk)
   self.m_isNotClk = isNotClk
 end
 
+function PlayerHead:IsBan()
+  if self.m_showBanShowType and self.m_showBanShowType > 0 and self.m_banEndTime and 0 < self.m_banEndTime and self.m_banEndTime > TimeUtil:GetServerTimeS() then
+    return true
+  end
+  return false
+end
+
 function PlayerHead:GetHeadID()
   local tempHeadID = self.m_headID
-  if tempHeadID == nil or tempHeadID == 0 then
+  if tempHeadID == nil or tempHeadID == 0 or self:IsBan() == true then
     tempHeadID = RoleManager:GetDefaultHeadID()
   end
   return tempHeadID
@@ -104,7 +115,12 @@ function PlayerHead:FreshHeadFrameShow()
   if not self.m_img_head_frame then
     return
   end
-  local headFrameID = RoleManager:GetHeadFrameIDByIDAndExpireTime(self.m_headFrameID, self.m_headFrameExpireTime)
+  local headFrameID
+  if self:IsBan() == true then
+    headFrameID = RoleManager:GetDefaultHeadFrameID()
+  else
+    headFrameID = RoleManager:GetHeadFrameIDByIDAndExpireTime(self.m_headFrameID, self.m_headFrameExpireTime)
+  end
   local roleHeadFrameCfg = RoleManager:GetPlayerHeadFrameCfg(headFrameID)
   if not roleHeadFrameCfg then
     return

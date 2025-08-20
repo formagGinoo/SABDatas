@@ -49,6 +49,8 @@ CmdId_Lamia_GetClueAward_CS = 19125
 CmdId_Lamia_GetClueAward_SC = 19126
 CmdId_Lamia_GetSubActAward_CS = 19127
 CmdId_Lamia_GetSubActAward_SC = 19128
+CmdId_Lamia_SetClientData_CS = 19129
+CmdId_Lamia_SetClientData_SC = 19130
 LamiaGameStat_Doing = 0
 LamiaGameStat_Finish = 1
 LamiaSignIn = sdp.SdpStruct("LamiaSignIn")
@@ -156,6 +158,7 @@ LamiaData.Definition = {
   "mStageStat",
   "vAwardedClue",
   "vAwardedSubAct",
+  "sClientData",
   iActId = {
     0,
     0,
@@ -197,6 +200,12 @@ LamiaData.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  },
+  sClientData = {
+    7,
+    0,
+    13,
+    ""
   }
 }
 Cmd_Lamia_GetList_CS = sdp.SdpStruct("Cmd_Lamia_GetList_CS")
@@ -807,5 +816,39 @@ Cmd_Lamia_GetSubActAward_SC.Definition = {
     0,
     sdp.SdpVector(CmdIDNum),
     nil
+  }
+}
+Cmd_Lamia_SetClientData_CS = sdp.SdpStruct("Cmd_Lamia_SetClientData_CS")
+Cmd_Lamia_SetClientData_CS.Definition = {
+  "iActId",
+  "sClientData",
+  iActId = {
+    0,
+    0,
+    8,
+    0
+  },
+  sClientData = {
+    1,
+    0,
+    13,
+    ""
+  }
+}
+Cmd_Lamia_SetClientData_SC = sdp.SdpStruct("Cmd_Lamia_SetClientData_SC")
+Cmd_Lamia_SetClientData_SC.Definition = {
+  "iActId",
+  "sClientData",
+  iActId = {
+    0,
+    0,
+    8,
+    0
+  },
+  sClientData = {
+    1,
+    0,
+    13,
+    ""
   }
 }

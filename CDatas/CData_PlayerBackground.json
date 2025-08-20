@@ -4,14 +4,16 @@
     "1500001": {
       "m_bError": null,
       "m_CardBGID": "1500001",
-      "m_mCardBGName": "\"Reserved String\"",
+      "m_mCardBGName": "\"Background\"",
       "m_DefaultType": "1",
       "m_TermType": null,
       "m_EffectTime": null,
+      "m_ItemRarity": "1",
       "m_mGetwayDes": "\"Default\"",
-      "m_ItemIcon": "\"Atlas_Role/Conifer_Base001\"",
+      "m_ItemIcon": "\"Atlas_Item/500061\"",
       "m_mCardBGDesc": "\"\"",
-      "m_CardBGPic": "\"Atlas_Role/Conifer_Base001\"",
+      "m_SmallPic": "\"Atlas_PersonCard/PersonCard_show_01\"",
+      "m_CardBGPic": "\"Atlas_PersonCard/PersonCard_bg_01\"",
       "m_CardBGEft": "\"\"",
       "m_HideType": null
     }

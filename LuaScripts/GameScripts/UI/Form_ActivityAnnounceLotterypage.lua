@@ -69,6 +69,8 @@ function Form_ActivityAnnounceLotterypage:AfterInit()
   }
   self.m_pnl_activity_titleBig:SetActive(false)
   self.contentShowBigTitleListCatch = {}
+  self.m_pushSubPanel = {}
+  self.m_curSelectPushSubPanel = nil
   self:CheckRegisterRedDot()
 end
 
@@ -89,12 +91,10 @@ function Form_ActivityAnnounceLotterypage:OnActive()
   self:RefreshUI()
 end
 
-function Form_ActivityAnnounceLotterypage:OnDestroy()
-  self.super.OnDestroy(self)
-end
-
 function Form_ActivityAnnounceLotterypage:AddEventListeners()
   self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnGetActivityResetData))
+  self:addEventListener("eGameEvent_Activity_CloseActivityAnnouncement", handler(self, self.CloseForm))
+  self:addEventListener("eGameEvent_Activity_PushFaceReserve", handler(self, self.OnGetPushJumpAnnouncementReward))
 end
 
 function Form_ActivityAnnounceLotterypage:OnGetActivityResetData()
@@ -112,6 +112,14 @@ function Form_ActivityAnnounceLotterypage:OnGetActivityResetData()
   self:RefreshUI()
 end
 
+function Form_ActivityAnnounceLotterypage:OnGetPushJumpAnnouncementReward()
+  self:RefreshUI()
+end
+
+function Form_ActivityAnnounceLotterypage:OnDestroy()
+  self.super.OnDestroy(self)
+end
+
 function Form_ActivityAnnounceLotterypage:RemoveAllEventListeners()
   self:clearEventListener()
 end
@@ -126,8 +134,6 @@ function Form_ActivityAnnounceLotterypage:CheckRegisterRedDot()
 end
 
 function Form_ActivityAnnounceLotterypage:RefreshUI()
-  self.m_stActivity = ActivityManager:GetActivityInShowTimeByType(MTTD.ActivityType_GameNotice)
-  self:UpdateActivityData()
   self:RefreshTopTab()
   self:RefreshLeftTab()
   self:RefreshContent()
@@ -178,23 +184,40 @@ function Form_ActivityAnnounceLotterypage:OnInitTabItem(go, index)
   local transform = go.transform
   local item = self.m_TabItemCache[idx]
   local data = self.curShowList[idx].m_stSdpConfig.stClientCfg
+  local isPushJumpType = self.curShowList[idx]:CheckIsPushJumpAnnouncement()
   if not item then
     item = {
       btn = transform:GetComponent(T_Button),
       m_tab_select = transform:Find("m_img_percenti_select").gameObject,
       m_tab_unselect = transform:Find("m_img_percent_grey").gameObject,
-      m_img_reddot_tabview = transform:Find("m_img_reddot_tabview").gameObject
+      m_img_reddot_tabview = transform:Find("m_img_reddot_tabview").gameObject,
+      m_ready = transform:Find("m_pnl_ready").gameObject,
+      m_ongoing = transform:Find("m_pnl_ongoing").gameObject
     }
     self.m_TabItemCache[idx] = item
-    if ActivityManager:CanShowRedCurrentLogin(self.curShowList[idx].m_stActivityData.iActivityId) then
+    if self.curShowList[idx]:checkShowRed() then
       item.m_img_reddot_tabview:SetActive(true)
       if idx == 1 then
-        item.m_img_reddot_tabview:SetActive(false)
         ActivityManager:SetShowRedCurrentLogin(self.curShowList[idx].m_stActivityData.iActivityId, self.curShowList[idx].m_stActivityData.iShowReddotNew)
+        if self.curShowList[idx]:checkShowRed() then
+          item.m_img_reddot_tabview:SetActive(true)
+        else
+          item.m_img_reddot_tabview:SetActive(false)
+        end
       end
     else
       item.m_img_reddot_tabview:SetActive(false)
     end
+  end
+  if isPushJumpType then
+    local serverTime = TimeUtil:GetServerTimeS()
+    local openTime, endTime = self.curShowList[idx]:GetPushJumpTimeWindow()
+    local isOpen = serverTime > openTime and serverTime < endTime
+    item.m_ready:SetActive(not isOpen)
+    item.m_ongoing:SetActive(isOpen)
+  else
+    item.m_ready:SetActive(false)
+    item.m_ongoing:SetActive(false)
   end
   local m_txt_percent_seltitle = transform:Find("m_img_percent_grey/m_txt_percent_greytitle"):GetComponent(T_TextMeshProUGUI)
   m_txt_percent_seltitle.text = self.curShowList[idx]:getLangText(tostring(data.sTitle))
@@ -204,9 +227,16 @@ function Form_ActivityAnnounceLotterypage:OnInitTabItem(go, index)
   item.m_tab_unselect:SetActive(self.cur_leftselect_idx ~= idx)
   if item.btn then
     UILuaHelper.BindButtonClickManual(item.btn, function()
+      if self.cur_leftselect_idx == idx then
+        return
+      end
       self.cur_leftselect_idx = idx
-      self.m_img_reddot_tabview:SetActive(false)
       ActivityManager:SetShowRedCurrentLogin(self.curShowList[idx].m_stActivityData.iActivityId, self.curShowList[idx].m_stActivityData.iShowReddotNew)
+      if self.curShowList[idx]:checkShowRed() then
+        item.m_img_reddot_tabview:SetActive(true)
+      else
+        item.m_img_reddot_tabview:SetActive(false)
+      end
       self:RefreshLeftTab()
       self:RefreshContent()
       UILuaHelper.PlayAnimationByName(self.m_pnl_group_activity, "lotterypage_content_in")
@@ -229,16 +259,48 @@ function Form_ActivityAnnounceLotterypage:RefreshContent()
   if not announceCfg then
     return
   end
-  local contentInfo = announceCfg.vContentConfig
-  if not contentInfo then
+  if self.m_curSelectPushSubPanel and self.m_curSelectPushSubPanel.SetActive and self.m_curSelectPushSubPanel.OnInactivePanel then
+    self.m_curSelectPushSubPanel:SetActive(false)
+    self.m_curSelectPushSubPanel:OnInactivePanel()
+  end
+  local pushFaceJump = announceCfg.vJumpContent
+  if table.getn(pushFaceJump) > 0 then
+    self.m_pnl_group_activity:SetActive(false)
+    self.m_pnl_annoucement_root:SetActive(true)
+    local curAct = self.curShowList[self.cur_leftselect_idx]
+    if not self.m_pushSubPanel[curAct:getID()] then
+      local function loadCallBack(subPanelLua)
+        if subPanelLua then
+          self.m_pushSubPanel[curAct:getID()] = subPanelLua
+          
+          self.m_curSelectPushSubPanel = self.m_pushSubPanel[curAct:getID()]
+        end
+      end
+      
+      local curSubPanelLua = curAct:GetPushJumpSubPanelWithUiType()
+      SubPanelManager:LoadSubPanel(curSubPanelLua, self.m_pnl_annoucement_root, self, curAct, {activity = curAct}, loadCallBack)
+    else
+      self.m_pushSubPanel[curAct:getID()]:OnFreshData()
+      self.m_pushSubPanel[curAct:getID()]:SetActive(true)
+    end
+    self.m_curSelectPushSubPanel = self.m_pushSubPanel[curAct:getID()]
     return
   end
+  self.m_curSelectPushSubPanel = nil
+  local contentInfo = announceCfg.vContentConfig
+  if not contentInfo then
+    self.m_pnl_group_activity:SetActive(false)
+    self.m_pnl_annoucement_root:SetActive(false)
+    return
+  end
+  self.m_pnl_group_activity:SetActive(true)
+  self.m_pnl_annoucement_root:SetActive(false)
   self:RefreshBottomJump(announceCfg)
   self:DealPoolList()
   for i = 1, #contentInfo do
     if contentInfo[i].iType == ContentPrefabType.PicturePre then
       local obj
-      if #self.contentShowPicListPool > 0 then
+      if 0 < #self.contentShowPicListPool then
         obj = self.contentShowPicListPool[1]
         table.insert(self.contentShowPicListCatch, obj)
         table.remove(self.contentShowPicListPool, 1)
@@ -367,7 +429,7 @@ end
 function Form_ActivityAnnounceLotterypage:CheckActivityAnnounmentReddot()
   local shouldShowRed = 0
   for i = 1, #self.m_activityDataList do
-    if ActivityManager:CanShowRedCurrentLogin(self.m_activityDataList[i].m_stActivityData.iActivityId) then
+    if self.m_activityDataList[i]:checkShowRed() then
       shouldShowRed = shouldShowRed + 1
     end
   end
@@ -380,7 +442,7 @@ end
 function Form_ActivityAnnounceLotterypage:CheckSystemAnnounmentReddot()
   local shouldShowRed = 0
   for i = 1, #self.m_systemDataList do
-    if ActivityManager:CanShowRedCurrentLogin(self.m_systemDataList[i].m_stActivityData.iActivityId) then
+    if self.m_systemDataList[i]:checkShowRed() then
       shouldShowRed = shouldShowRed + 1
     end
   end
@@ -393,7 +455,7 @@ end
 function Form_ActivityAnnounceLotterypage:CheckConsultAnnounmentReddot()
   local shouldShowRed = 0
   for i = 1, #self.m_consultDataList do
-    if ActivityManager:CanShowRedCurrentLogin(self.m_consultDataList[i].m_stActivityData.iActivityId) then
+    if self.m_consultDataList[i]:checkShowRed() then
       shouldShowRed = shouldShowRed + 1
     end
   end
@@ -428,15 +490,24 @@ function Form_ActivityAnnounceLotterypage:UpdateActivityData()
     end
   end
   table.sort(self.m_activityDataList, function(a, b)
-    return a.m_stSdpConfig.stClientCfg.iShowWeight > b.m_stSdpConfig.stClientCfg.iShowWeight
+    if a:checkShowRed() ~= b:checkShowRed() then
+      return a:checkShowRed()
+    end
+    return a:GetAnnouncementShowWeight() > b:GetAnnouncementShowWeight()
   end)
   self.m_tabactive:SetActive(table.getn(self.m_activityDataList) > 0)
   table.sort(self.m_systemDataList, function(a, b)
-    return a.m_stSdpConfig.stClientCfg.iShowWeight > b.m_stSdpConfig.stClientCfg.iShowWeight
+    if a:checkShowRed() ~= b:checkShowRed() then
+      return a:checkShowRed()
+    end
+    return a:GetAnnouncementShowWeight() > b:GetAnnouncementShowWeight()
   end)
   self.m_tabsystem:SetActive(table.getn(self.m_systemDataList) > 0)
   table.sort(self.m_consultDataList, function(a, b)
-    return a.m_stSdpConfig.stClientCfg.iShowWeight > b.m_stSdpConfig.stClientCfg.iShowWeight
+    if a:checkShowRed() ~= b:checkShowRed() then
+      return a:checkShowRed()
+    end
+    return a:GetAnnouncementShowWeight() > b:GetAnnouncementShowWeight()
   end)
   self.m_tabask:SetActive(table.getn(self.m_consultDataList) > 0)
 end
@@ -630,8 +701,17 @@ end
 
 function Form_ActivityAnnounceLotterypage:OnInactive()
   self.super.OnInactive(self)
+  self:DealAnnouncementInactive()
   self:RemoveAllEventListeners()
   PushFaceManager:CheckShowNextPopPanel()
+end
+
+function Form_ActivityAnnounceLotterypage:DealAnnouncementInactive()
+  for _, subPanelLua in pairs(self.m_pushSubPanel) do
+    if subPanelLua and subPanelLua.OnInactivePanel then
+      subPanelLua:OnInactivePanel()
+    end
+  end
 end
 
 local fullscreen = true

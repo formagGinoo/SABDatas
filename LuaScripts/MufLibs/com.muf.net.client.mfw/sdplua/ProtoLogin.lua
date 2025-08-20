@@ -667,6 +667,9 @@ Cmd_Login_CheckUpgrade_SC.Definition = {
   "sMiniPatchPath",
   "bMiniPatchBackground",
   "bMiniPatchRestart",
+  "bStateScriptOpen",
+  "iStateScriptVersion",
+  "sStateScriptPath",
   iZoneId = {
     0,
     0,
@@ -792,6 +795,24 @@ Cmd_Login_CheckUpgrade_SC.Definition = {
     0,
     1,
     false
+  },
+  bStateScriptOpen = {
+    21,
+    0,
+    1,
+    false
+  },
+  iStateScriptVersion = {
+    22,
+    0,
+    8,
+    0
+  },
+  sStateScriptPath = {
+    23,
+    0,
+    13,
+    ""
   }
 }
 Cmd_Login_GetBulletin_CS = sdp.SdpStruct("Cmd_Login_GetBulletin_CS")

@@ -66,7 +66,7 @@
       "m_ID": "1000808",
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000501\"",
-      "m_mName": "\"Reserved String\"",
+      "m_mName": "\"In The Spotlight\"",
       "m_mDesc": "\"Only the enemy in the spotlight can use Ultimate, but takes 50% more DMG.\"",
       "m_Param": "[]",
       "m_ScriptName": "\"\"",
@@ -227,6 +227,66 @@
       "m_Param": "[20000031,20000032,20000033,20000034]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6003]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000004": {
+      "m_bError": null,
+      "m_ID": "2000004",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Hunter's Mark\"",
+      "m_mDesc": "\"Enemy units gain 1 stack of Hunter's Mark upon taking Basic ATK DMG. When Hunter's Mark reaches {0} stack(s), deals P. DMG (based on the Basic ATK of the ally with the highest ATK) to all enemies around the marked unit and removes all stack(s). When the battle begins, enemy units permanently gain M. DMG Taken Down (Major).\"",
+      "m_Param": "[20000111]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6004]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000005": {
+      "m_bError": null,
+      "m_ID": "2000005",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Hunter's Mark\"",
+      "m_mDesc": "\"Enemy units gain 1 stack of Hunter's Mark upon taking Basic ATK DMG. When Hunter's Mark reaches {0} stack(s), deals P. DMG (based on the Basic ATK of the ally with the highest ATK) to the marked unit and removes all stack(s).\"",
+      "m_Param": "[20000111]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6005]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000006": {
+      "m_bError": null,
+      "m_ID": "2000006",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Cross Fire\"",
+      "m_mDesc": "\"Ranged enemy units switch between Scatter Shot and Aimed Shot every {0} sec and are immune to Control effects. Healing to allied units is reduced by {1}.\nAimed Shot: Basic ATK deals multiple instances of M. DMG to the ally closest to the enemy.\nScatter Shot: Each Basic ATK deals M. DMG to all enemies.\"",
+      "m_Param": "[20000131,20000132]",
+      "m_ScriptName": "\"GuildRaid_S2_3\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000007": {
+      "m_bError": null,
+      "m_ID": "2000007",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Dark Omen\"",
+      "m_mDesc": "\"For every {0} allied summon(s), grants 1 Luminescence or Solar Flare free of cost. Enemy units are immune to Control effects.\nLuminescence: Deals high M. DMG to all enemies (DMG based on the Basic ATK of the ally with the highest ATK and the number of allied summons on the field).\nSolar Flare: Inflicts All DMG Up (Major) on a select ally for {1} sec.\"",
+      "m_Param": "[20000141,20000143]",
+      "m_ScriptName": "\"GuildRaid_S2_4\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000008": {
+      "m_bError": null,
+      "m_ID": "2000008",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Blood Ritual\"",
+      "m_mDesc": "\"When a unit is eliminated, allied units have a {1} chance to gain {0} Bloodsoul.\"",
+      "m_Param": "[20000151,20000152]",
+      "m_ScriptName": "\"GuildRaid_S2_5\"",
+      "m_BuffList": "[]",
       "m_ShowBuffDesc": "[]"
     },
     "3040001": {
@@ -734,5 +794,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_61_items"
+  "status": "processed_66_items"
 }

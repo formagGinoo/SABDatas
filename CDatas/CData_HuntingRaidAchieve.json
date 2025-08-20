@@ -11,7 +11,7 @@
           "m_BOSSID": "1",
           "m_Sequence": "1",
           "m_AchieveType": "2",
-          "m_GoalNum": "90000",
+          "m_GoalNum": "200000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
           "m_Reward": "[[101,150],[1204,50]]"
         },
@@ -20,7 +20,7 @@
           "m_BOSSID": "1",
           "m_Sequence": "2",
           "m_AchieveType": "2",
-          "m_GoalNum": "70000",
+          "m_GoalNum": "160000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
           "m_Reward": "[[50004,5],[30001,3]]"
         },
@@ -29,7 +29,7 @@
           "m_BOSSID": "1",
           "m_Sequence": "3",
           "m_AchieveType": "2",
-          "m_GoalNum": "50000",
+          "m_GoalNum": "120000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
           "m_Reward": "[[1050,2],[800003,3]]"
         }
@@ -113,7 +113,7 @@
           "m_BOSSID": "4",
           "m_Sequence": "1",
           "m_AchieveType": "2",
-          "m_GoalNum": "130000",
+          "m_GoalNum": "280000",
           "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
           "m_Reward": "[[101,150],[1204,50]]"
         },
@@ -122,7 +122,7 @@
           "m_BOSSID": "4",
           "m_Sequence": "2",
           "m_AchieveType": "2",
-          "m_GoalNum": "115000",
+          "m_GoalNum": "240000",
           "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
           "m_Reward": "[[50004,5],[30001,3]]"
         },
@@ -131,7 +131,7 @@
           "m_BOSSID": "4",
           "m_Sequence": "3",
           "m_AchieveType": "2",
-          "m_GoalNum": "100000",
+          "m_GoalNum": "200000",
           "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
           "m_Reward": "[[1050,2],[800003,3]]"
         }

@@ -57,7 +57,7 @@ function Form_MallMainNew:OnActive()
   self.super.OnActive(self)
   self:RefreshResourceBar()
   self:AddEventListeners()
-  self.is_GoodsChapterOpen, _, self.is_hide = MallGoodsChapterManager:GetCurStoreBaseGoodsChapterCfg()
+  self.is_show = MallGoodsChapterManager:IsShowGoodChapterGift()
   self:InitSubPanelInfo()
   self:InitData()
   self:RefreshUI()
@@ -104,6 +104,7 @@ function Form_MallMainNew:OnInactive()
     TimeService:KillTimer(self.timer)
     self.timer = nil
   end
+  self:OnClosePanelToFreshInitData()
 end
 
 function Form_MallMainNew:OnUpdate(dt)
@@ -161,7 +162,7 @@ function Form_MallMainNew:OnMallDataRefresh()
   if not ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore) then
     return
   end
-  self.is_GoodsChapterOpen, _, self.is_hide = MallGoodsChapterManager:GetCurStoreBaseGoodsChapterCfg()
+  self.is_show = MallGoodsChapterManager:IsShowGoodChapterGift()
   self:InitSubPanelInfo()
   self:InitCurSelectTab(self.iStoreId)
   self:RefreshUI()
@@ -213,7 +214,7 @@ function Form_MallMainNew:RefreshTab()
   local subStoreList = self.m_StoreList[self.iCurSelectMainTab]
   local store = subStoreList[self.iCurSelectSubTab]
   local subTabCount = #subStoreList
-  if store and subTabCount <= 1 and (store.iStoreType == MTTDProto.CmdActPayStoreType_PushGift or store.iShowSingleTab and store.iShowSingleTab == 0) then
+  if store and subTabCount <= 1 and (store.iStoreType == MTTDProto.CmdActPayStoreType_PushGift or store.iStoreType == MTTDProto.CmdActPayStoreType_MainStage or store.iShowSingleTab and store.iShowSingleTab == 0) then
     self.m_subpnl_tab:SetActive(false)
     return
   end
@@ -382,7 +383,7 @@ function Form_MallMainNew:ExtraCheckStoreOpen(store)
       return false
     end
   elseif store.iStoreType == MTTDProto.CmdActPayStoreType_MainStage then
-    return not self.is_hide
+    return self.is_show
   elseif store.iStoreType == MTTDProto.CmdActPayStoreType_OpenCard then
     local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
     local isShow = payStoreActivity:GetChainPackState()
@@ -458,6 +459,14 @@ function Form_MallMainNew:ReSetSubPanel(subPanel)
       if v.subPanelLua.OnInactivePanel then
         v.subPanelLua:OnInactivePanel()
       end
+    end
+  end
+end
+
+function Form_MallMainNew:OnClosePanelToFreshInitData(subPanel)
+  for k, v in pairs(self.m_subPanelCache) do
+    if v ~= subPanel and v.subPanelLua and v.subPanelLua.OnCloseParentPanel then
+      v.subPanelLua:OnCloseParentPanel()
     end
   end
 end

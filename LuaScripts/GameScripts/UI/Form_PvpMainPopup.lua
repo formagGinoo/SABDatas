@@ -60,7 +60,7 @@ function Form_PvpMainPopup:FreshFormData()
     local heroID = v.iHeroId
     local serverHeroData = self.m_serverHeroDataDic[heroID]
     if serverHeroData then
-      local heroData = ArenaManager:GeneratePvpHeroModifyData(serverHeroData)
+      local heroData = ArenaManager:GeneratePvpHeroModifyData(serverHeroData, true)
       self.m_heroFormDataList[#self.m_heroFormDataList + 1] = heroData
     end
   end

@@ -199,13 +199,13 @@ function Form_PvpReplaceBattleVictory:FreshRoundInfo()
     UILuaHelper.SetAtlasSprite(self.m_icon_left_Image, rankCfg.m_RankIcon)
     self.m_txt_left_Text.text = rankNum
   end
+  local enemyRankNum = self.m_resultData.iEnemyRank
   local enemyDetail = PvpReplaceManager:GetEnemyDetail()
   if enemyDetail then
     local roleSimpleInfo = enemyDetail.stRoleSimple
     self.m_otherPlayerHeadCom:SetPlayerHeadInfo(roleSimpleInfo)
   end
-  local enemyBaseInfo = PvpReplaceManager:GetCurBattleEnemy() or {}
-  local showRankNum = self.m_finishErrorCode == MTTD.Error_ReplaceArena_EnemyRankLow and enemyBaseInfo.iRank or oldRankNum
+  local showRankNum = enemyRankNum
   local enemyRankCfg = PvpReplaceManager:GetReplaceRankCfgByRankNum(showRankNum)
   if enemyRankCfg then
     UILuaHelper.SetAtlasSprite(self.m_icon_right_Image, enemyRankCfg.m_RankIcon)

@@ -43,6 +43,7 @@ function Form_PersonalCard:AddEventListeners()
   self:addEventListener("eGameEvent_Rename_SetName", handler(self, self.SetRoleName))
   self:addEventListener("eGameEvent_RoleBusinessCard", handler(self, self.OnSeeOtherInfo))
   self:addEventListener("eGameEvent_RoleSetCard", handler(self, self.OnRoleSetCard))
+  self:addEventListener("eGameEvent_Role_SetSignature", handler(self, self.OnRoleSetSignature))
 end
 
 function Form_PersonalCard:OnSeeOtherInfo(paramTab)
@@ -64,6 +65,11 @@ function Form_PersonalCard:OnRoleSetCard(paramTab)
   end
   self:FreshLeftHeadShow()
   self:FreshLeftHeadFrameShow()
+  self:FreshLeftBgShow()
+end
+
+function Form_PersonalCard:OnRoleSetSignature()
+  self:FreshSignatures()
 end
 
 function Form_PersonalCard:FreshData()
@@ -219,7 +225,7 @@ end
 function Form_PersonalCard:GetHeadID()
   if self.m_otherRoleInfo then
     local tempHeadID = self.m_otherRoleInfo.iHeadId
-    if tempHeadID == nil or tempHeadID == 0 then
+    if tempHeadID == nil or tempHeadID == 0 or self:IsBan() == true then
       tempHeadID = RoleManager:GetDefaultHeadID()
     end
     return tempHeadID
@@ -230,10 +236,29 @@ end
 
 function Form_PersonalCard:GetHeadFrameID()
   if self.m_otherRoleInfo then
+    if self:IsBan() == true then
+      return RoleManager:GetDefaultHeadFrameID()
+    end
     return RoleManager:GetHeadFrameIDByIDAndExpireTime(self.m_otherRoleInfo.iHeadFrameId, self.m_otherRoleInfo.iHeadFrameExpireTime)
   else
     return RoleManager:GetHeadFrameID()
   end
+end
+
+function Form_PersonalCard:IsBan()
+  local isBan = false
+  local isOtherRole = self.m_otherRoleInfo ~= nil
+  if isOtherRole then
+    local banNum = 0
+    local banEndTime = self.m_otherRoleInfo.iBanEndTime
+    if banEndTime ~= nil and banEndTime ~= nil and tonumber(banEndTime) > TimeUtil:GetServerTimeS() then
+      banNum = self.m_otherRoleInfo.iBanShowType
+    end
+    if banNum ~= RoleManager.BanType.None then
+      isBan = true
+    end
+  end
+  return isBan
 end
 
 function Form_PersonalCard:FreshUI()
@@ -247,6 +272,8 @@ function Form_PersonalCard:FreshUI()
   self:RefreshTopFiveHero()
   self:FreshEditorShow()
   self:FreshFriendShow()
+  self:FreshBanShow()
+  self:FreshSignatures()
 end
 
 function Form_PersonalCard:FreshRoleBaseInfo()
@@ -265,6 +292,7 @@ function Form_PersonalCard:FreshRoleBaseInfo()
   self.m_txt_guild_tips_Text.text = self:GetGuildStr()
   self:FreshLeftHeadShow()
   self:FreshLeftHeadFrameShow()
+  self:FreshLeftBgShow()
 end
 
 function Form_PersonalCard:FreshLeftHeadShow()
@@ -303,6 +331,40 @@ function Form_PersonalCard:FreshLeftHeadFrameShow()
     end)
   else
     UILuaHelper.SetActiveChildren(self.m_leftHeadFrameTrans, false)
+  end
+end
+
+function Form_PersonalCard:FreshSignatures()
+  local sSignature = self.m_otherRoleInfo and self.m_otherRoleInfo.sSignature or RoleManager:GetRoleSignature()
+  if self:IsBan() == true then
+    sSignature = ""
+  end
+  local hasSignature = sSignature and sSignature ~= ""
+  self.m_txt_signature:SetActive(hasSignature)
+  self.m_z_txt:SetActive(not hasSignature)
+  if hasSignature then
+    self.m_txt_signature_Text.text = tostring(sSignature)
+  end
+end
+
+function Form_PersonalCard:FreshLeftBgShow()
+  local bgID = self:GetBgId()
+  local roleBgCfg = RoleManager:GetPlayerHeadBackgroundCfg(bgID)
+  if not roleBgCfg then
+    return
+  end
+  UILuaHelper.SetAtlasSprite(self.m_img_bg_Image, roleBgCfg.m_CardBGPic, function()
+    if not UILuaHelper.IsNull(self.m_img_bg_Image) then
+      UILuaHelper.SetNativeSize(self.m_img_bg_Image)
+    end
+  end)
+end
+
+function Form_PersonalCard:GetBgId()
+  if self.m_otherRoleInfo then
+    return RoleManager:GetBgIDByIDAndExpireTime(self.m_otherRoleInfo.iShowBackgroundId, self.m_otherRoleInfo.iShowBackgroundExpireTime)
+  else
+    return RoleManager:GetHeadBackGroundID()
   end
 end
 
@@ -410,6 +472,7 @@ function Form_PersonalCard:FreshEditorShow()
   local isCanEditor = self.m_otherRoleInfo == nil
   UILuaHelper.SetActive(self.m_btn_cardcreat, isCanEditor)
   UILuaHelper.SetActive(self.m_btn_icon_rename, isCanEditor)
+  UILuaHelper.SetActive(self.m_btn_information, isCanEditor)
 end
 
 function Form_PersonalCard:FreshFriendShow()
@@ -428,6 +491,24 @@ function Form_PersonalCard:FreshFriendShow()
     UILuaHelper.SetActive(self.m_btn_WaitPass, not isFriend and isAdded)
     UILuaHelper.SetActive(self.m_btn_CanAdd, not isFriend and not isAdded)
     UILuaHelper.SetActive(self.m_btn_HaveFriend, isFriend)
+  end
+end
+
+function Form_PersonalCard:FreshBanShow()
+  local isOtherRole = self.m_otherRoleInfo ~= nil
+  if isOtherRole then
+    local banNum = 0
+    local banEndTime = self.m_otherRoleInfo.iBanEndTime
+    if banEndTime ~= nil and banEndTime ~= nil and tonumber(banEndTime) > TimeUtil:GetServerTimeS() then
+      banNum = self.m_otherRoleInfo.iBanShowType
+    end
+    UILuaHelper.SetActive(self.m_pnl_ban, banNum ~= RoleManager.BanType.None)
+    if banNum ~= RoleManager.BanType.None then
+      UILuaHelper.SetActive(self.m_img_ban_yellow, banNum == RoleManager.BanType.NormalBan)
+      UILuaHelper.SetActive(self.m_img_ban_red, banNum == RoleManager.BanType.CheatBan)
+    end
+  else
+    UILuaHelper.SetActive(self.m_pnl_ban, false)
   end
 end
 
@@ -460,6 +541,10 @@ function Form_PersonalCard:OnBtniconrenameClicked()
     return
   end
   StackPopup:Push(UIDefines.ID_FORM_PERSONALRENAME)
+end
+
+function Form_PersonalCard:OnBtninformationClicked()
+  StackPopup:Push(UIDefines.ID_FORM_PERSONALCARDSIGNATURE)
 end
 
 function Form_PersonalCard:OnBtniconcopybgClicked()

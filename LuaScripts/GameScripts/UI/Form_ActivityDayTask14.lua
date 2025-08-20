@@ -1,6 +1,7 @@
 local Form_ActivityDayTask14 = class("Form_ActivityDayTask14", require("UI/UIFrames/Form_ActivityDayTask14UI"))
 local DefaultShowSpineName = "merchant"
 local maxDailyReward = 7
+local iUpActivityID = 0
 local RewardStatus = {
   CannotTake = 1,
   CanTake = 2,
@@ -11,6 +12,7 @@ local QuestStatusPriority = {
   [MTTDProto.QuestState_Doing] = 2,
   [MTTDProto.QuestState_Over] = 3
 }
+local doingTxt = ConfigManager:GetCommonTextById(250001)
 local ScrollViewAnimStr = "m_scrollView_in"
 
 function Form_ActivityDayTask14:SetInitParam(param)
@@ -169,7 +171,7 @@ end
 function Form_ActivityDayTask14:RefreshUI()
   local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_CommonQuest)
   for _, act in pairs(act_list) do
-    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 then
+    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 and act:GetUpActivityID() == iUpActivityID then
       self.m_stActivity = act
       break
     end
@@ -476,6 +478,7 @@ function Form_ActivityDayTask14:updateScrollViewCell(index, cell_object, cell_da
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_go", stQuestStatus.iState == MTTDProto.QuestState_Doing)
   else
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_txt_doing", true)
+    LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_doing", doingTxt)
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_go", false)
   end
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_receive", stQuestStatus.iState == MTTDProto.QuestState_Finish)

@@ -10454,6 +10454,460 @@
         }
       }
     },
+    "20620": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "2062001": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062001",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "2",
+          "m_mTitle": "\"Ultimate\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20620\""
+        },
+        "2062002": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062002",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "1",
+          "m_mTitle": "\"Special\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20620\""
+        },
+        "2062003": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062003",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "7",
+          "m_mTitle": "\"Death\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20620\""
+        },
+        "2062004": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062004",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Deployment\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20620\""
+        },
+        "2062005": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062005",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "6",
+          "m_mTitle": "\"Victory\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20620\""
+        },
+        "2062006": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062006",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "8",
+          "m_mTitle": "\"Obtain\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062007": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062007",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "9",
+          "m_mTitle": "\"Character Select\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062008": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062008",
+          "m_UnlockType": "2",
+          "m_UnlockData": "2",
+          "m_Sort": "11",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 2\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062009": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062009",
+          "m_UnlockType": "3",
+          "m_UnlockData": "1",
+          "m_Sort": "12",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks After Spirit Siphon\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062010": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062010",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "10",
+          "m_mTitle": "\"Idle\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062011": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062011",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "13",
+          "m_mTitle": "\"Transfusion\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062012": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062012",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "14",
+          "m_mTitle": "\"Banquet\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062013": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062013",
+          "m_UnlockType": "4",
+          "m_UnlockData": "5",
+          "m_Sort": "15",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062014": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062014",
+          "m_UnlockType": "4",
+          "m_UnlockData": "10",
+          "m_Sort": "22",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062015": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062015",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "16",
+          "m_mTitle": "\"Converse I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062016": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062016",
+          "m_UnlockType": "4",
+          "m_UnlockData": "7",
+          "m_Sort": "19",
+          "m_mTitle": "\"Charm I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062017": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062017",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "17",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062018": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062018",
+          "m_UnlockType": "4",
+          "m_UnlockData": "8",
+          "m_Sort": "20",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062019": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062019",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "18",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        },
+        "2062020": {
+          "m_bError": null,
+          "m_HeroID": "20620",
+          "m_VoiceId": "2062020",
+          "m_UnlockType": "4",
+          "m_UnlockData": "9",
+          "m_Sort": "21",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_VoiceBank": "\"Vo_System_C_20620\""
+        }
+      }
+    },
+    "20630": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "2063001": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063001",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "2",
+          "m_mTitle": "\"Ultimate\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20630\""
+        },
+        "2063002": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063002",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "1",
+          "m_mTitle": "\"Special\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20630\""
+        },
+        "2063003": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063003",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "7",
+          "m_mTitle": "\"Death\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20630\""
+        },
+        "2063004": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063004",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Deployment\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20630\""
+        },
+        "2063005": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063005",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "6",
+          "m_mTitle": "\"Victory\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20630\""
+        },
+        "2063006": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063006",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "8",
+          "m_mTitle": "\"Obtain\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063007": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063007",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "9",
+          "m_mTitle": "\"Character Select\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063008": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063008",
+          "m_UnlockType": "2",
+          "m_UnlockData": "2",
+          "m_Sort": "11",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 2\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063009": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063009",
+          "m_UnlockType": "3",
+          "m_UnlockData": "1",
+          "m_Sort": "12",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks After Spirit Siphon\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063010": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063010",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "10",
+          "m_mTitle": "\"Idle\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063011": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063011",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "13",
+          "m_mTitle": "\"Transfusion\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063012": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063012",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "14",
+          "m_mTitle": "\"Banquet\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063013": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063013",
+          "m_UnlockType": "4",
+          "m_UnlockData": "5",
+          "m_Sort": "15",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063014": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063014",
+          "m_UnlockType": "4",
+          "m_UnlockData": "10",
+          "m_Sort": "22",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063015": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063015",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "16",
+          "m_mTitle": "\"Converse I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063016": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063016",
+          "m_UnlockType": "4",
+          "m_UnlockData": "7",
+          "m_Sort": "19",
+          "m_mTitle": "\"Charm I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063017": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063017",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "17",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063018": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063018",
+          "m_UnlockType": "4",
+          "m_UnlockData": "8",
+          "m_Sort": "20",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063019": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063019",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "18",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        },
+        "2063020": {
+          "m_bError": null,
+          "m_HeroID": "20630",
+          "m_VoiceId": "2063020",
+          "m_UnlockType": "4",
+          "m_UnlockData": "9",
+          "m_Sort": "21",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_VoiceBank": "\"Vo_System_C_20630\""
+        }
+      }
+    },
     "20640": {
       "_type": "nested_dictionary",
       "_count": 23,
@@ -11268,7 +11722,7 @@
           "m_UnlockType": "3",
           "m_UnlockData": "1",
           "m_Sort": "12",
-          "m_mTitle": "\"FX_Headframe_\"",
+          "m_mTitle": "\"Spirit Siphon\"",
           "m_mUnlockDesc": "\"Unlocks After Spirit Siphon\"",
           "m_VoiceBank": "\"Vo_System_C_20700\""
         },
@@ -11396,5 +11850,5 @@
       }
     }
   },
-  "status": "processed_50_items"
+  "status": "processed_52_items"
 }

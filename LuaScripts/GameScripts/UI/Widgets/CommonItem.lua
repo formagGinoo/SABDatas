@@ -127,6 +127,11 @@ function CommonItem:ctor(goRoot)
     self.m_c_img_gift = c_img_gift.gameObject
     self.m_c_img_gift:SetActive(false)
   end
+  local c_img_star = self.m_goRoot.transform:Find("c_img_star")
+  if not utils.isNull(c_img_star) then
+    self.m_img_star = c_img_star.gameObject
+    self.m_img_star:SetActive(false)
+  end
 end
 
 function CommonItem:RefreshNum(iNum)
@@ -230,7 +235,7 @@ function CommonItem:SetItemInfo(itemData)
     end
     self.m_imgHeroBg:SetActive(false)
     self.m_equipCampBg:SetActive(false)
-  elseif itemData.data_type == ResourceUtil.RESOURCE_TYPE.HEAD_ICONS or itemData.data_type == ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS then
+  elseif itemData.data_type == ResourceUtil.RESOURCE_TYPE.HEAD_ICONS or itemData.data_type == ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS or itemData.data_type == ResourceUtil.RESOURCE_TYPE.HEAD_Bg then
     ResourceUtil:CreateQualityImg(self.m_imageGrade, itemData.quality)
     if self.headFrame then
       UILuaHelper.SetActive(self.headFrame, true)
@@ -318,6 +323,9 @@ function CommonItem:SetItemInfo(itemData)
   end
   if not utils.isNull(self.m_c_img_gift) then
     self.m_c_img_gift:SetActive(false)
+  end
+  if not utils.isNull(self.m_img_star) then
+    self.m_img_star:SetActive(itemData.starTechEffect)
   end
 end
 

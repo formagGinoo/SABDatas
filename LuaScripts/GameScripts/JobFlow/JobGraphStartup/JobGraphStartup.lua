@@ -19,6 +19,7 @@ local Job_Startup_CheckAccountState_Impl = require("JobFlow/JobGraphStartup/Job_
 local Job_Startup_FetchMoreServerData_Impl = require("JobFlow/JobGraphStartup/Job_Startup_FetchMoreServerData_Impl")
 local Job_Startup_DataAnonym_Impl = require("JobFlow/JobGraphStartup/Job_Startup_DataAnonym_Impl")
 local Job_Startup_InitUsercentrics_Impl = require("JobFlow/JobGraphStartup/Job_Startup_InitUsercentrics_Impl")
+local Job_Startup_DownloadStateScript_Impl = require("JobFlow/JobGraphStartup/Job_Startup_DownloadStateScript_Impl")
 JobGraphStartup.s_instance = nil
 
 function JobGraphStartup:ctor()
@@ -52,23 +53,23 @@ function JobGraphStartup:BuildGraph()
     en.Y = -456
     jn = JobNode.CreateNode("Finished", 0, 5, false, Job_Startup_Finished_Impl.OnFinished, Job_Startup_Finished_Impl.OnFinishedSuccess, Job_Startup_Finished_Impl.OnFinishedFailed, Job_Startup_Finished_Impl.OnFinishedTimeOut, Job_Startup_Finished_Impl.OnFinishedDispose)
     csg:AddNode(jn)
-    jn.X = -1224
+    jn.X = 392
     jn.Y = 568
     jn = JobNode.CreateNode("InitConfigFirst", 0, 5, false, Job_Startup_InitConfigFirst_Impl.OnInitConfigFirst, Job_Startup_InitConfigFirst_Impl.OnInitConfigFirstSuccess, Job_Startup_InitConfigFirst_Impl.OnInitConfigFirstFailed, Job_Startup_InitConfigFirst_Impl.OnInitConfigFirstTimeOut, Job_Startup_InitConfigFirst_Impl.OnInitConfigFirstDispose)
     csg:AddNode(jn)
-    jn.X = -8
+    jn.X = -72
     jn.Y = -456
     jn = JobNode.CreateNode("InitDownloadResource", 0, 1, false, Job_Startup_InitDownloadResource_Impl.OnInitDownloadResource, Job_Startup_InitDownloadResource_Impl.OnInitDownloadResourceSuccess, Job_Startup_InitDownloadResource_Impl.OnInitDownloadResourceFailed, Job_Startup_InitDownloadResource_Impl.OnInitDownloadResourceTimeOut, Job_Startup_InitDownloadResource_Impl.OnInitDownloadResourceDispose)
     csg:AddNode(jn)
-    jn.X = -824
+    jn.X = -840
     jn.Y = -456
     jn = JobNode.CreateNode("InitConfig", 0, 10, false, Job_Startup_InitConfig_Impl.OnInitConfig, Job_Startup_InitConfig_Impl.OnInitConfigSuccess, Job_Startup_InitConfig_Impl.OnInitConfigFailed, Job_Startup_InitConfig_Impl.OnInitConfigTimeOut, Job_Startup_InitConfig_Impl.OnInitConfigDispose)
     csg:AddNode(jn)
-    jn.X = 376
-    jn.Y = 56
+    jn.X = -1224
+    jn.Y = 312
     jn = JobNode.CreateNode("CheckPreRes", 0, 1, false, Job_Startup_CheckPreRes_Impl.OnCheckPreRes, Job_Startup_CheckPreRes_Impl.OnCheckPreResSuccess, Job_Startup_CheckPreRes_Impl.OnCheckPreResFailed, Job_Startup_CheckPreRes_Impl.OnCheckPreResTimeOut, Job_Startup_CheckPreRes_Impl.OnCheckPreResDispose)
     csg:AddNode(jn)
-    jn.X = -408
+    jn.X = -456
     jn.Y = -456
     jn = JobNode.CreateNode("InitNetwork", 0, 20, false, Job_Startup_InitNetwork_Impl.OnInitNetwork, Job_Startup_InitNetwork_Impl.OnInitNetworkSuccess, Job_Startup_InitNetwork_Impl.OnInitNetworkFailed, Job_Startup_InitNetwork_Impl.OnInitNetworkTimeOut, Job_Startup_InitNetwork_Impl.OnInitNetworkDispose)
     csg:AddNode(jn)
@@ -80,35 +81,35 @@ function JobGraphStartup:BuildGraph()
     jn.Y = -456
     jn = JobNode.CreateNode("InitMSDK", 0, 20, false, Job_Startup_InitMSDK_Impl.OnInitMSDK, Job_Startup_InitMSDK_Impl.OnInitMSDKSuccess, Job_Startup_InitMSDK_Impl.OnInitMSDKFailed, Job_Startup_InitMSDK_Impl.OnInitMSDKTimeOut, Job_Startup_InitMSDK_Impl.OnInitMSDKDispose)
     csg:AddNode(jn)
-    jn.X = -424
+    jn.X = -456
     jn.Y = -200
     jn = JobNode.CreateNode("InitNetworkGame", 0, 20, false, Job_Startup_InitNetworkGame_Impl.OnInitNetworkGame, Job_Startup_InitNetworkGame_Impl.OnInitNetworkGameSuccess, Job_Startup_InitNetworkGame_Impl.OnInitNetworkGameFailed, Job_Startup_InitNetworkGame_Impl.OnInitNetworkGameTimeOut, Job_Startup_InitNetworkGame_Impl.OnInitNetworkGameDispose)
     csg:AddNode(jn)
-    jn.X = -408
+    jn.X = -456
     jn.Y = 56
     jn = JobNode.CreateNode("DownloadAllResource", 0, 5, false, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResource, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceSuccess, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceFailed, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceTimeOut, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceDispose)
     csg:AddNode(jn)
-    jn.X = -8
+    jn.X = 312
     jn.Y = 312
     jn = JobNode.CreateNode("MergeInit", 0, 5, false, Job_Startup_MergeInit_Impl.OnMergeInit, Job_Startup_MergeInit_Impl.OnMergeInitSuccess, Job_Startup_MergeInit_Impl.OnMergeInitFailed, Job_Startup_MergeInit_Impl.OnMergeInitTimeOut, Job_Startup_MergeInit_Impl.OnMergeInitDispose)
     csg:AddNode(jn)
-    jn.X = -1224
+    jn.X = -840
     jn.Y = 312
     jn = JobNode.CreateNode("DownloadNecessaryResource", 0, 5, false, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceSuccess, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceFailed, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceTimeOut, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceDispose)
     csg:AddNode(jn)
-    jn.X = -408
+    jn.X = -72
     jn.Y = 312
     jn = JobNode.CreateNode("InitGSDK", 0, 20, false, Job_Startup_InitGSDK_Impl.OnInitGSDK, Job_Startup_InitGSDK_Impl.OnInitGSDKSuccess, Job_Startup_InitGSDK_Impl.OnInitGSDKFailed, Job_Startup_InitGSDK_Impl.OnInitGSDKTimeOut, Job_Startup_InitGSDK_Impl.OnInitGSDKDispose)
     csg:AddNode(jn)
-    jn.X = 408
+    jn.X = 312
     jn.Y = -200
     jn = JobNode.CreateNode("InitTGRPAddRes", 0, 5, false, Job_Startup_InitTGRPAddRes_Impl.OnInitTGRPAddRes, Job_Startup_InitTGRPAddRes_Impl.OnInitTGRPAddResSuccess, Job_Startup_InitTGRPAddRes_Impl.OnInitTGRPAddResFailed, Job_Startup_InitTGRPAddRes_Impl.OnInitTGRPAddResTimeOut, Job_Startup_InitTGRPAddRes_Impl.OnInitTGRPAddResDispose)
     csg:AddNode(jn)
-    jn.X = -824
+    jn.X = -840
     jn.Y = 56
     jn = JobNode.CreateNode("IniIapManager", 0, 5, false, Job_Startup_IniIapManager_Impl.OnIniIapManager, Job_Startup_IniIapManager_Impl.OnIniIapManagerSuccess, Job_Startup_IniIapManager_Impl.OnIniIapManagerFailed, Job_Startup_IniIapManager_Impl.OnIniIapManagerTimeOut, Job_Startup_IniIapManager_Impl.OnIniIapManagerDispose)
     csg:AddNode(jn)
-    jn.X = -8
+    jn.X = 312
     jn.Y = 56
     jn = JobNode.CreateNode("CheckNetwork", 0, 1, false, Job_Startup_CheckNetwork_Impl.OnCheckNetwork, Job_Startup_CheckNetwork_Impl.OnCheckNetworkSuccess, Job_Startup_CheckNetwork_Impl.OnCheckNetworkFailed, Job_Startup_CheckNetwork_Impl.OnCheckNetworkTimeOut, Job_Startup_CheckNetwork_Impl.OnCheckNetworkDispose)
     csg:AddNode(jn)
@@ -116,20 +117,24 @@ function JobGraphStartup:BuildGraph()
     jn.Y = -200
     jn = JobNode.CreateNode("CheckAccountState", 0, 5, false, Job_Startup_CheckAccountState_Impl.OnCheckAccountState, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateSuccess, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateFailed, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateTimeOut, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateDispose)
     csg:AddNode(jn)
-    jn.X = 392
-    jn.Y = 312
+    jn.X = -1224
+    jn.Y = 568
     jn = JobNode.CreateNode("FetchMoreServerData", 0, 5, false, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerData, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataSuccess, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataFailed, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataTimeOut, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataDispose)
     csg:AddNode(jn)
-    jn.X = -824
+    jn.X = -456
     jn.Y = 312
     jn = JobNode.CreateNode("DataAnonym", 0, 5, false, Job_Startup_DataAnonym_Impl.OnDataAnonym, Job_Startup_DataAnonym_Impl.OnDataAnonymSuccess, Job_Startup_DataAnonym_Impl.OnDataAnonymFailed, Job_Startup_DataAnonym_Impl.OnDataAnonymTimeOut, Job_Startup_DataAnonym_Impl.OnDataAnonymDispose)
     csg:AddNode(jn)
-    jn.X = -8
+    jn.X = -72
     jn.Y = -200
     jn = JobNode.CreateNode("InitUsercentrics", 0, 20, false, Job_Startup_InitUsercentrics_Impl.OnInitUsercentrics, Job_Startup_InitUsercentrics_Impl.OnInitUsercentricsSuccess, Job_Startup_InitUsercentrics_Impl.OnInitUsercentricsFailed, Job_Startup_InitUsercentrics_Impl.OnInitUsercentricsTimeOut, Job_Startup_InitUsercentrics_Impl.OnInitUsercentricsDispose)
     csg:AddNode(jn)
-    jn.X = -824
+    jn.X = -840
     jn.Y = -200
+    jn = JobNode.CreateNode("DownloadStateScript", 0, 5, false, Job_Startup_DownloadStateScript_Impl.OnDownloadStateScript, Job_Startup_DownloadStateScript_Impl.OnDownloadStateScriptSuccess, Job_Startup_DownloadStateScript_Impl.OnDownloadStateScriptFailed, Job_Startup_DownloadStateScript_Impl.OnDownloadStateScriptTimeOut, Job_Startup_DownloadStateScript_Impl.OnDownloadStateScriptDispose)
+    csg:AddNode(jn)
+    jn.X = -72
+    jn.Y = 56
     csg:GetNode(1):AddTrigger(csg:GetNode(17))
     csg:GetNode(2):AddTrigger(csg:GetNode(5))
     csg:GetNode(3):AddTrigger(csg:GetNode(7))
@@ -144,12 +149,13 @@ function JobGraphStartup:BuildGraph()
     csg:GetNode(12):AddTrigger(csg:GetNode(18))
     csg:GetNode(13):AddTrigger(csg:GetNode(19))
     csg:GetNode(14):AddTrigger(csg:GetNode(6))
-    csg:GetNode(15):AddTrigger(csg:GetNode(9))
+    csg:GetNode(15):AddTrigger(csg:GetNode(21))
     csg:GetNode(16):AddTrigger(csg:GetNode(2))
     csg:GetNode(17):AddTrigger(csg:GetNode(10))
     csg:GetNode(18):AddTrigger(csg:GetNode(11))
     csg:GetNode(19):AddTrigger(csg:GetNode(8))
     csg:GetNode(20):AddTrigger(csg:GetNode(16))
+    csg:GetNode(21):AddTrigger(csg:GetNode(9))
     self.m_builded = true
   end
 end

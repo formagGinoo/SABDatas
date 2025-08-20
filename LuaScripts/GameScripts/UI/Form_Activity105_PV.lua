@@ -22,6 +22,7 @@ end
 
 function Form_Activity105_PV:OnDestroy()
   self.super.OnDestroy(self)
+  self.activity = nil
 end
 
 function Form_Activity105_PV:InitData()

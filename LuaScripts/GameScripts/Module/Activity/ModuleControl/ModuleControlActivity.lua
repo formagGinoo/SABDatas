@@ -50,4 +50,11 @@ function ModuleControlActivity:GetCommonParamByKey(sKey)
   return self.m_mCommParam[sKey]
 end
 
+function ModuleControlActivity:CloseGlobalRes()
+  if self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.bCloseComplianceResourceSwitch then
+    return self.m_stSdpConfig.stClientCfg.bCloseComplianceResourceSwitch
+  end
+  return false
+end
+
 return ModuleControlActivity

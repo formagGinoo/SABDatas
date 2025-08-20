@@ -32,7 +32,9 @@ function UIHeroActTaskItem:SetTaskInfo(itemData)
   self.m_txt_content_Text.text = tostring(itemCfg.m_mTaskName)
   self.m_txt_progress_cur_Text.text = iNum
   self.m_txt_progress_max_Text.text = itemCfg.m_ObjectiveCount
-  self.m_img_bar_Image.fillAmount = iNum / itemCfg.m_ObjectiveCount
+  if not utils.isNull(self.m_img_bar_Image) then
+    self.m_img_bar_Image.fillAmount = iNum / itemCfg.m_ObjectiveCount
+  end
   self:SetBtnState(completed)
   local rewardList = utils.changeCSArrayToLuaTable(itemCfg.m_Reward)
   for i = 1, 2 do
@@ -50,7 +52,9 @@ function UIHeroActTaskItem:SetTaskInfo(itemData)
       self.m_rewardObjList[i].obj:SetActive(false)
     end
   end
-  self.m_tag_day:SetActive(HeroActivityManager.HeroActTaskType.daily == itemCfg.m_Type)
+  if not utils.isNull(self.m_tag_day) then
+    self.m_tag_day:SetActive(HeroActivityManager.HeroActTaskType.daily == itemCfg.m_Type)
+  end
 end
 
 function UIHeroActTaskItem:SetBtnState(state)

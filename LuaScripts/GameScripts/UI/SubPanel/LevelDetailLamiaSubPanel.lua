@@ -462,6 +462,12 @@ function LevelDetailLamiaSubPanel:FreshEnterBattle()
   UILuaHelper.SetActive(self.m_pnl_free, isShowFree)
   UILuaHelper.SetActive(self.m_node_lock, not isUnlock)
   UILuaHelper.SetActive(self.m_node_pass, not isRepeat and isHavePass)
+  if not utils.isNull(self.m_icon_free_Image) then
+    local itemPath = ItemManager:GetItemIconPathByID(self.m_mainInfoCfg.m_PassItem)
+    if itemPath then
+      UILuaHelper.SetAtlasSprite(self.m_icon_free_Image, itemPath)
+    end
+  end
 end
 
 function LevelDetailLamiaSubPanel:CheckShowAnimIn()
@@ -544,7 +550,7 @@ function LevelDetailLamiaSubPanel:OnEnemyIconClk(monsterID)
 end
 
 function LevelDetailLamiaSubPanel:OnBtnbattleClicked()
-  if not self.m_curLevelID then
+  if not self.m_curLevelID or not self.m_activityID then
     return
   end
   if not self.m_levelCfg then
@@ -578,7 +584,7 @@ function LevelDetailLamiaSubPanel:OnBtnbattlegrayClicked()
 end
 
 function LevelDetailLamiaSubPanel:OnBtnquickClicked()
-  if not self.m_curLevelID then
+  if not self.m_curLevelID or not self.m_activityID then
     return
   end
   local isHaveEnough, totalTimes = self:IsHaveEnoughTimes()
@@ -613,7 +619,7 @@ function LevelDetailLamiaSubPanel:OnBtnquickgrayClicked()
 end
 
 function LevelDetailLamiaSubPanel:OnBtnbuffheroClicked()
-  if not self.m_curLevelID then
+  if not self.m_activityID then
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_ACTIVITY101LAMIA_BUFFHEROLIST, {
@@ -622,7 +628,7 @@ function LevelDetailLamiaSubPanel:OnBtnbuffheroClicked()
 end
 
 function LevelDetailLamiaSubPanel:OnBtnchallengebuffheroClicked()
-  if not self.m_curLevelID then
+  if not self.m_activityID then
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_ACTIVITY101LAMIA_CHALLENGEHERO, {

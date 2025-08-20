@@ -133,7 +133,10 @@ function Form_EquipmentCopyMain:OnEventLevelSweep(param)
 end
 
 function Form_EquipmentCopyMain:FreshData()
-  local tParam = self.m_csui.m_param or {}
+  local tParam = self.m_csui.m_param
+  if not tParam then
+    return
+  end
   self.m_selBossChapterIndex = tParam.chapterIndex or 1
   local chapterInfo = self.m_equipmentHelper:GetDunChapterByOrderId(self.m_selBossChapterIndex)
   if not chapterInfo then
@@ -154,6 +157,7 @@ function Form_EquipmentCopyMain:FreshData()
     self.m_ownerModule:HideAllBossPosAndResetMainCamera(self.m_curLevelSubType)
     self.m_ownerModule:CreateBoss3DResBySortId(self.m_selBossChapterIndex)
   end
+  self.m_csui.m_param = nil
 end
 
 function Form_EquipmentCopyMain:FreshUI()
@@ -240,6 +244,34 @@ function Form_EquipmentCopyMain:FreshRewardList()
     customDataTab[#customDataTab + 1] = {percentage = 100}
   end
   table.insertto(rewardTab, rewardList)
+  local effectList = StargazingManager:GetCastleStarTechEffectByType(StargazingManager.CastleStarEffectType.Boss)
+  if table.getn(effectList) > 0 and self.m_curDungeonChapterCfg then
+    local randomPoolId = 0
+    local starTechEffectTab = {}
+    for i, v in ipairs(effectList) do
+      for m, n in ipairs(v) do
+        if n[1] == self.m_curDungeonChapterCfg.m_LevelSubType then
+          randomPoolId = n[2]
+        end
+      end
+    end
+    if randomPoolId ~= 0 then
+      local starTechEffect = ItemManager:GetItemRandomPoolContentById(randomPoolId)
+      for i, v in ipairs(starTechEffect) do
+        starTechEffectTab[#starTechEffectTab + 1] = {
+          v.iID,
+          v.iNum
+        }
+        customDataTab[#customDataTab + 1] = {
+          percentage = math.floor(v.iWeight * 100),
+          starTechEffect = true
+        }
+      end
+      if table.getn(starTechEffectTab) > 0 then
+        table.insertto(rewardTab, starTechEffectTab)
+      end
+    end
+  end
   self.m_dungeonStageRewardList = rewardTab
   local dataList = {}
   for i, v in ipairs(rewardTab) do
@@ -409,7 +441,8 @@ function Form_EquipmentCopyMain:OnBtnRewardDetailClicked()
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_BOSSREWARD, {
-    levelID = self.m_curLevelCfg.m_LevelID
+    levelID = self.m_curLevelCfg.m_LevelID,
+    levelSubType = self.m_curLevelCfg.m_LevelSubType
   })
 end
 

@@ -157,7 +157,7 @@ function Form_ItemTips:RefreshLeftUI()
     self.m_txt_num_Text.text = self.m_iNum or 0
   end
   local item_type = ResourceUtil:GetResourceTypeById(self.m_iID)
-  if item_type == ResourceUtil.RESOURCE_TYPE.HEAD_ICONS or item_type == ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS then
+  if item_type == ResourceUtil.RESOURCE_TYPE.HEAD_ICONS or item_type == ResourceUtil.RESOURCE_TYPE.HEAD_FRAME_ICONS or item_type == ResourceUtil.RESOURCE_TYPE.HEAD_Bg then
     UILuaHelper.SetActive(self.m_pnl_num, false)
   else
     UILuaHelper.SetActive(self.m_pnl_num, true)

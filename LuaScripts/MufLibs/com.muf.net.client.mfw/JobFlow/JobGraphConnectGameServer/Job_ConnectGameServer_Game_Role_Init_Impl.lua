@@ -107,25 +107,44 @@ function Job_ConnectGameServer_Game_Role_Init_Impl.RequestRoleInit(jobNode)
     ReportManager:ReportLoginProcess("InitNetworkGame_RoleInit", "RoleInit_Failed")
     log.info("--- game role init failed : ", msg.rspcode, " ---")
     if msg.rspcode == MTTD.Error_Role_BanLogin then
-      utils.CheckAndPushCommonTips({
-        title = CS.ConfFact.LangFormat4DataInit("LoginRoleBanTitle"),
-        content = CS.ConfFact.LangFormat4DataInit("LoginRoleBanDesc"),
-        fContentCB = function(content)
-          local info = sdp.unpack(msg.bt:ToBytes(), MTTDProto.Cmd_Push_Error)
-          local timestamp = info.mParam.ban_remain + TimeUtil:GetServerTimeS()
-          return string.gsubnumberreplace(content, os.date("%Y-%m-%d %H:%M:%S", timestamp))
-        end,
-        funcText1 = CS.ConfFact.LangFormat4DataInit("LoginRoleBanChangeAccount"),
-        funcText2 = CS.ConfFact.LangFormat4DataInit("LoginRoleBanCustomer"),
-        btnNum = 2,
-        bLockBack = true,
-        func1 = function()
-          SDKUtil.SwitchAccount()
-        end,
-        func2 = function()
-          SettingManager:PullAiHelpMessage("E002")
-        end
-      })
+      local isCN = ChannelManager:IsChinaChannel()
+      if isCN then
+        utils.CheckAndPushCommonTips({
+          title = CS.ConfFact.LangFormat4DataInit("LoginRoleBanTitle"),
+          content = CS.ConfFact.LangFormat4DataInit("LoginRoleBanDesc"),
+          fContentCB = function(content)
+            local info = sdp.unpack(msg.bt:ToBytes(), MTTDProto.Cmd_Push_Error)
+            local timestamp = info.mParam.ban_remain + TimeUtil:GetServerTimeS()
+            return string.gsubnumberreplace(content, os.date("%Y-%m-%d %H:%M:%S", timestamp))
+          end,
+          funcText1 = CS.ConfFact.LangFormat4DataInit("LoginRoleBanCustomer"),
+          btnNum = 1,
+          bLockBack = true,
+          func1 = function()
+            SettingManager:PullAiHelpMessage("E002")
+          end
+        })
+      else
+        utils.CheckAndPushCommonTips({
+          title = CS.ConfFact.LangFormat4DataInit("LoginRoleBanTitle"),
+          content = CS.ConfFact.LangFormat4DataInit("LoginRoleBanDesc"),
+          fContentCB = function(content)
+            local info = sdp.unpack(msg.bt:ToBytes(), MTTDProto.Cmd_Push_Error)
+            local timestamp = info.mParam.ban_remain + TimeUtil:GetServerTimeS()
+            return string.gsubnumberreplace(content, os.date("%Y-%m-%d %H:%M:%S", timestamp))
+          end,
+          funcText1 = CS.ConfFact.LangFormat4DataInit("LoginRoleBanChangeAccount"),
+          funcText2 = CS.ConfFact.LangFormat4DataInit("LoginRoleBanCustomer"),
+          btnNum = 2,
+          bLockBack = true,
+          func1 = function()
+            StackPopup:Push(UIDefines.ID_FORM_PLAYERCENTERPOP2)
+          end,
+          func2 = function()
+            SettingManager:PullAiHelpMessage("E002")
+          end
+        })
+      end
     else
       utils.CheckAndPushCommonTips({
         title = CS.ConfFact.LangFormat4DataInit("CommonError"),

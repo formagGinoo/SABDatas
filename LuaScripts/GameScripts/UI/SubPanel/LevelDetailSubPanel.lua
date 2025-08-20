@@ -510,6 +510,10 @@ function LevelDetailSubPanel:OnBtnStoryBackClicked()
   if not self.m_curLevelID then
     return
   end
+  local mainHelper = LevelManager:GetLevelMainHelper()
+  local levelSubType = self.m_curSubLevelType
+  local chapterIndex = mainHelper:GetChapterIndexBySubType(levelSubType, self.m_levelCfg.m_ChapterID)
+  local levelID = self.m_levelCfg.m_LevelID
   BattleFlowManager:EnterShowPlot(self.m_curLevelID, self.m_curBattleWorldCfg.m_MapID, self.m_levelType, {
     self.m_curLevelID
   }, function(backFun)
@@ -517,7 +521,11 @@ function LevelDetailSubPanel:OnBtnStoryBackClicked()
       log.info("LevelDetailSubPanel OnBtnStoryBackClicked LevelMap LoadBack")
       BattleFlowManager:CheckSetEnterTimer(LevelManager.LevelType.MainLevel)
       local formStr = "Form_LevelMain"
-      StackFlow:Push(UIDefines.ID_FORM_LEVELMAIN)
+      StackFlow:Push(UIDefines.ID_FORM_LEVELMAIN, {
+        levelSubType = levelSubType,
+        chapterIndex = chapterIndex,
+        levelID = levelID
+      })
       if backFun then
         backFun(formStr)
       end

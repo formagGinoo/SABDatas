@@ -501,7 +501,7 @@ function Form_Guide:DoBattleDragMoveCmp()
 end
 
 function Form_Guide:GuideBattleSkillCallback(ret)
-  if ret then
+  if ret and self.subStepData and self.subStepData.Type == "battleskill" then
     CS.UI.UILuaHelper.RegisterGuideCallback(nil)
     CS.UI.UILuaHelper.KillTween("DoMoveTween")
     CS.UI.UILuaHelper.KillTween("DoLocalMoveTween")

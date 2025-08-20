@@ -7,6 +7,34 @@ function UIPvpReplaceBattleRankItem:OnInit()
   self.m_playerHeadCom:SetStopClkStatus(true)
 end
 
+function UIPvpReplaceBattleRankItem:IsBan()
+  if not self.m_itemData then
+    return false
+  end
+  local simpleInfo = self.m_itemData.stRoleSimple
+  if not simpleInfo then
+    return false
+  end
+  if simpleInfo.iBanShowType and simpleInfo.iBanShowType > 0 and simpleInfo.iBanEndTime and 0 < simpleInfo.iBanEndTime and simpleInfo.iBanEndTime > TimeUtil:GetServerTimeS() then
+    return true
+  end
+  return false
+end
+
+function UIPvpReplaceBattleRankItem:GetPlayerName()
+  if not self.m_itemData then
+    return
+  end
+  local simpleInfo = self.m_itemData.stRoleSimple
+  if not simpleInfo then
+    return
+  end
+  if self:IsBan() then
+    return ConfigManager:GetCommonTextById(20367)
+  end
+  return simpleInfo.sName
+end
+
 function UIPvpReplaceBattleRankItem:OnFreshData()
   self:FreshRankShow()
 end
@@ -23,7 +51,7 @@ function UIPvpReplaceBattleRankItem:FreshRankShow()
   UILuaHelper.SetActive(self.m_icon_battle_rank4, rankNum > MaxRankTopNum)
   self.m_txt_rank2_Text.text = rankNum
   self.m_playerHeadCom:SetPlayerHeadInfo(rankInfo.stRoleSimple)
-  self.m_txt_name2_Text.text = rankInfo.stRoleSimple.sName
+  self.m_txt_name2_Text.text = self:GetPlayerName() or ""
   self.m_txt_power2_Text.text = rankInfo.stRoleSimple.mSimpleData[MTTDProto.CmdSimpleDataType_ReplaceArenaDefence] or 0
   self.m_txt_guild_name2_Text.text = rankInfo.stRoleSimple.sAlliance ~= "" and rankInfo.stRoleSimple.sAlliance or ConfigManager:GetCommonTextById(20111) or ""
   local rankCfg = PvpReplaceManager:GetReplaceRankCfgByRankNum(rankNum, rankInfo.stRoleSimple.iReplaceArenaPlaySeason)

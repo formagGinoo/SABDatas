@@ -293,6 +293,15 @@ function GachaSubPanel:RefreshUI()
     self.m_txt_num_Text.text = self.m_gachaConfig.m_WishTimesRes - gachaCount
     self.m_txt_countnum_Text.text = ConfigManager:GetCommonTextById(20109)
   end
+  if not self.m_heroCfg then
+    self.m_heroCfg = ConfigManager:GetConfigInsByName("CharacterInfo"):GetValue_ByHeroID(self.m_gachaConfig.m_Upprotect)
+  end
+  if self.m_img_career_Image then
+    ResourceUtil:CreateCareerImg(self.m_img_career_Image, self.m_heroCfg.m_Career)
+  end
+  if self.m_txt_heroname then
+    self.m_txt_heroname_Text.text = self.m_heroCfg.m_mName
+  end
   self:DealNewGachaPoolJump()
   self:FreshEmbbounsState()
 end
@@ -388,6 +397,15 @@ function GachaSubPanel:OnBtnmoreClicked()
   utils.openItemDetailPop({
     iID = character[1],
     iNum = 1
+  })
+end
+
+function GachaSubPanel:OnBtnCareerDetailClicked()
+  if not self.m_heroCfg then
+    return
+  end
+  StackPopup:Push(UIDefines.ID_FORM_HEROCAREERDETAIL, {
+    heroCfg = self.m_heroCfg
   })
 end
 

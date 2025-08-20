@@ -80,6 +80,12 @@ function Form_HeroPreview:OnActive()
   self:FreshData()
   self:FreshUI()
   self:FreshShowBackSliderUI()
+  self:ResetRootHeroNode()
+end
+
+function Form_HeroPreview:ResetRootHeroNode()
+  UILuaHelper.SetLocalRotationParam(self.m_root_hero, 0, 0, 0)
+  UILuaHelper.SetLocalPosition(self.m_root_hero, 0, 0, 0)
 end
 
 function Form_HeroPreview:OnInactive()
@@ -88,11 +94,13 @@ function Form_HeroPreview:OnInactive()
   self.m_dragExtension.isCanRecInput = false
   Input.multiTouchEnabled = false
   self.m_landscapeMode = true
+  self:CheckRecycleSpine(true)
 end
 
 function Form_HeroPreview:OnDestroy()
   self.super.OnDestroy(self)
   self.m_scale_change_Slider.onValueChanged:RemoveAllListeners()
+  self:CheckRecycleSpine(true)
 end
 
 function Form_HeroPreview:AddEventListeners()

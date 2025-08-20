@@ -8,6 +8,7 @@ function UIHeroActMainBase:AfterInit()
   self.m_curBgPrefabStr = nil
   self.m_curBgObj = nil
   self.iInterval = 10
+  self._14DaysActState = {Normal = 1, Lock = 2}
 end
 
 function UIHeroActMainBase:OnUpdate(dt)
@@ -16,6 +17,7 @@ end
 
 function UIHeroActMainBase:OnActive()
   UIHeroActMainBase.super.OnActive(self)
+  self.iCurGachaIndex = 1
   self.act_id = self.m_csui.m_param.main_id
   self.openTime = TimeUtil:GetServerTimeS()
   self.report_name = self.act_id .. "/" .. self:GetFramePrefabName()
@@ -29,10 +31,12 @@ function UIHeroActMainBase:OnActive()
   end
   local config = HeroActivityManager:GetMainInfoByActID(self.m_csui.m_param.main_id)
   self:createBackButton(self.goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, config.m_TipsID)
+  self:addEventListener("eGameEvent_Activity_Reload", handler(self, self.Fresh14DaysActState))
   self:addEventListener("eGameEvent_RefreshShopData", handler(self, self.OnEventShopRefresh))
   self:RegisterRedDot()
   self:CheckAndCreatBg()
   self:FreshUI()
+  self:Fresh14DaysActState()
 end
 
 function UIHeroActMainBase:OnGetGachaData(windowId)
@@ -48,12 +52,20 @@ function UIHeroActMainBase:OnInactive()
   UIHeroActMainBase.super.OnInactive(self)
   if self.timer then
     TimeService:KillTimer(self.timer)
+    self.timer = nil
+  end
+  if self.i14Daytimer then
+    TimeService:KillTimer(self.i14Daytimer)
+    self.i14Daytimer = nil
   end
   HeroActivityManager:ReportActClose(self.report_name, {
     openTime = self.openTime
   })
   self:CheckRecycleBgNode()
   self:clearEventListener()
+  if self.m_UILockID and UILockIns:IsValidLocker(self.m_UILockID) then
+    UILockIns:Unlock(self.m_UILockID)
+  end
 end
 
 function UIHeroActMainBase:OnDestroy()
@@ -61,6 +73,11 @@ function UIHeroActMainBase:OnDestroy()
   self:CheckRecycleBgNode()
   if self.timer then
     TimeService:KillTimer(self.timer)
+    self.timer = nil
+  end
+  if self.i14Daytimer then
+    TimeService:KillTimer(self.i14Daytimer)
+    self.i14Daytimer = nil
   end
 end
 
@@ -120,6 +137,7 @@ function UIHeroActMainBase:FreshUI()
   end
   if self.timer then
     TimeService:KillTimer(self.timer)
+    self.timer = nil
   end
   self.timer = TimeService:SetTimer(1, -1, function()
     left_time = left_time - 1
@@ -197,6 +215,7 @@ function UIHeroActMainBase:FreshUI()
   end
   self:FreshGachaBanner()
   self:FreshSecondHalf()
+  self:FreshGachaUI()
 end
 
 function UIHeroActMainBase:FreshSecondHalf()
@@ -234,6 +253,7 @@ function UIHeroActMainBase:RegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_activity_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, normalSubActID)
   self:RegisterOrUpdateRedDotItem(self.m_storyentry_redpoint, RedDotDefine.ModuleType.HeroActMemoryEntry, self.act_id)
   self:RegisterOrUpdateRedDotItem(self.m_store_redpoint, RedDotDefine.ModuleType.HeroActShopEntry, self.act_id)
+  self:RegisterOrUpdateRedDotItem(self.m_free_redpoint, RedDotDefine.ModuleType.HeroActFreeEntry, self.act_id)
 end
 
 function UIHeroActMainBase:OnBtnintroductionClicked()
@@ -305,10 +325,58 @@ function UIHeroActMainBase:OnBtntaskClicked()
   })
 end
 
+function UIHeroActMainBase:FreshGachaUI()
+  local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
+  if not config then
+    return
+  end
+  local gachaJumpIDArray = utils.changeCSArrayToLuaTable(config.m_GachaJumpID)
+  if #gachaJumpIDArray <= 1 then
+    return
+  end
+  if utils.isNull(self.m_DoubleGacha) or utils.isNull(self.m_Gacha) or utils.isNull(self.m_btn_convert) then
+    return
+  end
+  local bIsSecondGachaOpen = HeroActivityManager:IsSecondGachaOpen(self.act_id)
+  if not bIsSecondGachaOpen then
+    self.m_DoubleGacha:SetActive(false)
+    self.m_Gacha:SetActive(true)
+    self.m_btn_convert:SetActive(false)
+  else
+    self.m_DoubleGacha:SetActive(true)
+    self.m_Gacha:SetActive(false)
+    self.m_btn_convert:SetActive(true)
+  end
+  self.m_img_bom_icon01:SetActive(self.iCurGachaIndex ~= 1)
+  self.m_img_bom_icon02:SetActive(self.iCurGachaIndex ~= 2)
+  self.m_img_top_icon01:SetActive(self.iCurGachaIndex == 1)
+  self.m_img_top_icon02:SetActive(self.iCurGachaIndex == 2)
+end
+
+function UIHeroActMainBase:OnBtnconvertClicked()
+  if utils.isNull(self.m_DoubleGacha) then
+    return
+  end
+  local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
+  local gachaJumpIDArray = utils.changeCSArrayToLuaTable(config.m_GachaJumpID)
+  self.iCurGachaIndex = self.iCurGachaIndex + 1
+  if self.iCurGachaIndex > #gachaJumpIDArray then
+    self.iCurGachaIndex = 1
+  end
+  local sAniName = self.iCurGachaIndex == 1 and "Activity106Main_GachaBtn_switch2" or "Activity106Main_GachaBtn_switch1"
+  UILuaHelper.PlayAnimationByName(self.m_DoubleGacha, sAniName)
+  local fAniLen = UILuaHelper.GetAnimationLengthByName(self.m_DoubleGacha, sAniName)
+  self.m_UILockID = UILockIns:Lock(fAniLen)
+  self:FreshGachaUI()
+end
+
 function UIHeroActMainBase:OnBtngachaClicked()
   local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
   local gachaJumpIDArray = utils.changeCSArrayToLuaTable(config.m_GachaJumpID)
-  self:GotoGacha(gachaJumpIDArray[1])
+  if self.iCurGachaIndex > #gachaJumpIDArray then
+    self.iCurGachaIndex = 1
+  end
+  self:GotoGacha(gachaJumpIDArray[self.iCurGachaIndex])
 end
 
 function UIHeroActMainBase:GotoGacha(gachaInfo)
@@ -404,7 +472,7 @@ function UIHeroActMainBase:FreshGachaBanner()
   end
   UILuaHelper.SetActive(self.m_pnl_banner, true)
   self.iCurBannerIdx = 1
-  local bIsSecondHalf = HeroActivityManager:IsSecondHalf(self.act_id)
+  local bIsSecondHalf = HeroActivityManager:IsSecondGachaOpen(self.act_id)
   self.bannerCount = 1
   if bIsSecondHalf then
     self.bannerCount = 2
@@ -504,6 +572,86 @@ function UIHeroActMainBase:ChangeBanner(isRight)
     UILuaHelper.SetActive(self.m_btn_img_banner2, true)
     UILuaHelper.SetActive(self.m_img_star_light1, false)
     UILuaHelper.SetActive(self.m_img_star_light2, true)
+  end
+end
+
+function UIHeroActMainBase:Fresh14DaysActState()
+  local list = ActivityManager:GetActivityListByType(MTTD.ActivityType_CommonQuest)
+  local curAct
+  for _, act in pairs(list) do
+    if act:GetUpActivityID() == self.act_id then
+      curAct = act
+      break
+    end
+  end
+  self.curAct = curAct
+  local state, iTime = self:Get14DaysActState(curAct)
+  if 0 < state then
+    self.m_btn_free:SetActive(true)
+    local bIsLock = state == self._14DaysActState.Lock
+    self.m_time_node:SetActive(bIsLock)
+    self.m_img_free_light:SetActive(not bIsLock)
+    self.m_img_free_gray:SetActive(bIsLock)
+    if bIsLock then
+      if self.i14Daytimer then
+        TimeService:KillTimer(self.i14Daytimer)
+        self.i14Daytimer = nil
+      end
+      if iTime <= 0 then
+        self.m_btn_free:SetActive(false)
+        return
+      end
+      self.m_txt_free_time_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(20358), TimeUtil:SecondsToFormatCNStr(iTime))
+      self.i14Daytimer = TimeService:SetTimer(1, -1, function()
+        iTime = iTime - 1
+        if iTime <= 0 then
+          TimeService:KillTimer(self.i14Daytimer)
+        end
+        if utils.isNull(self.m_txt_free_time_Text) then
+          TimeService:KillTimer(self.i14Daytimer)
+          return
+        end
+        self.m_txt_free_time_Text.text = string.gsubNumberReplace(ConfigManager:GetCommonTextById(20358), TimeUtil:SecondsToFormatCNStr(iTime))
+      end)
+    end
+  elseif not utils.isNull(self.m_btn_free) then
+    self.m_btn_free:SetActive(false)
+  end
+end
+
+function UIHeroActMainBase:Get14DaysActState(act)
+  if not act then
+    return 0
+  end
+  if act:checkCondition() then
+    return self._14DaysActState.Normal
+  else
+    local iCurTime = TimeUtil:GetServerTimeS()
+    if iCurTime < act.m_stActivityData.iBeginTime then
+      return self._14DaysActState.Lock, act.m_stActivityData.iBeginTime - iCurTime
+    elseif iCurTime > act.m_stActivityData.iEndTime then
+      return 0
+    else
+      return self._14DaysActState.Normal
+    end
+  end
+end
+
+function UIHeroActMainBase:OnBtnfreeClicked()
+  if self.curAct then
+    local state, iTime = self:Get14DaysActState(self.curAct)
+    if state == self._14DaysActState.Normal then
+      QuickOpenFuncUtil:JumpUpActivity14DayTaskForm(self.act_id)
+      local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+      local bIsNewDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroActFreeEntry_Red_Point_" .. self.act_id, 0)
+      if bIsNewDay then
+        LocalDataManager:SetIntSimple("HeroActFreeEntry_Red_Point_" .. self.act_id, nextDayResetTime, true)
+      end
+    else
+      StackFlow:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetCommonTextById(20068))
+    end
+  else
+    StackFlow:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetCommonTextById(20068))
   end
 end
 

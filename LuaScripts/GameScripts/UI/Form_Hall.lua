@@ -225,6 +225,9 @@ function Form_Hall:OnUncoverd()
 end
 
 function Form_Hall:OnActiveTransitionDone()
+  if utils.isNull(self.m_rootTrans) then
+    return
+  end
   self:CheckClearPopPanelStatus()
   self:CheckSystemPopup()
   ActivityManager:CheckEmergencyGift()
@@ -324,6 +327,7 @@ end
 
 function Form_Hall:OnDestroy()
   self.super.OnDestroy(self)
+  UILuaHelper.CheckClearSkeletonAssetData(self.m_spine_global)
   self:CheckRecycleHeadFrameNode()
   self:RemoveAllEventListeners()
   if self.iHeroActChangeTimer then
@@ -579,6 +583,7 @@ end
 function Form_Hall:CheckRegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_hero_red_dot, RedDotDefine.ModuleType.HeroEntry)
   self:RegisterOrUpdateRedDotItem(self.m_mail_red_dot, RedDotDefine.ModuleType.MailEntry)
+  self:RegisterOrUpdateRedDotItem(self.m_icon_mail1, RedDotDefine.ModuleType.CollectMailEntry)
   self:RegisterOrUpdateRedDotItem(self.m_bag_red_dot, RedDotDefine.ModuleType.BagEntry)
   self:RegisterOrUpdateRedDotItem(self.m_level_main_red_dot, RedDotDefine.ModuleType.LevelEntry, {
     LevelManager.LevelType.MainLevel
@@ -766,7 +771,7 @@ function Form_Hall:RefreshHallActivityStatus_Announment()
     if m_totalDataList then
       local curShouldShow = 0
       for i = 1, #m_totalDataList do
-        if m_totalDataList[i]:checkCondition() and ActivityManager:CanShowRedCurrentLogin(m_totalDataList[i].m_stActivityData.iActivityId) then
+        if m_totalDataList[i]:checkCondition() and m_totalDataList[i]:checkShowRed() then
           curShouldShow = curShouldShow + 1
         end
       end
@@ -811,7 +816,7 @@ function Form_Hall:RefreshHallActivityStatus_CommonQuest()
       local bShowRed = act:checkShowRed()
       self.m_QuestAct7 = act
     end
-    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 and act:checkCondition(true) then
+    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 and act:checkCondition(true) and act:GetUpActivityID() == 0 then
       self.m_btnActQuest14:SetActive(true)
       local bShowRed = act:checkShowRed()
       self.m_imageActQuest14:SetActive(bShowRed)
@@ -1620,6 +1625,10 @@ function Form_Hall:OnEmergencyGift(params)
 end
 
 function Form_Hall:OnRefreshEmergencyGift(isPush)
+  if utils.isNull(self.m_btn_store_push) then
+    return
+  end
+  local isShowPushGiftBtn = false
   local act = ActivityManager:GetActivityByType(MTTD.ActivityType_EmergencyGift)
   if act then
     local pushGift = act:GetPackList()
@@ -1649,13 +1658,10 @@ function Form_Hall:OnRefreshEmergencyGift(isPush)
           self:OnRefreshEmergencyGift(false)
         end
       end)
-      self.m_btn_store_push:SetActive(true)
-    else
-      self.m_btn_store_push:SetActive(false)
+      isShowPushGiftBtn = true
     end
-  else
-    self.m_btn_store_push:SetActive(false)
   end
+  self.m_btn_store_push:SetActive(isShowPushGiftBtn)
 end
 
 function Form_Hall:ClearEmergencyGiftTimer()

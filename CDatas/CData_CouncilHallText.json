@@ -529,6 +529,30 @@
       "m_RoleScake": "1",
       "m_RoleOffset": "[]"
     },
+    "20620": {
+      "m_bError": null,
+      "m_ID": "20620",
+      "m_AgreeText": "\"0/CouncilHall_Agree_20620_01\"",
+      "m_NeutralText": "\"0/CouncilHall_Neutral_20620_01\"",
+      "m_DisgreeText": "\"0/CouncilHall_Disagree_20620_01\"",
+      "m_AcceptedText": "\"0/CouncilHall_Accepted_20620_01\"",
+      "m_DisapprovedText": "\"0/CouncilHall_Disapproved_20620_01\"",
+      "m_ChangeText": "\"0/CouncilHall_Change_20620_01\"",
+      "m_RoleScake": "1",
+      "m_RoleOffset": "[]"
+    },
+    "20630": {
+      "m_bError": null,
+      "m_ID": "20630",
+      "m_AgreeText": "\"0/CouncilHall_Agree_20630_01\"",
+      "m_NeutralText": "\"0/CouncilHall_Neutral_20630_01\"",
+      "m_DisgreeText": "\"0/CouncilHall_Disagree_20630_01\"",
+      "m_AcceptedText": "\"0/CouncilHall_Accepted_20630_01\"",
+      "m_DisapprovedText": "\"0/CouncilHall_Disapproved_20630_01\"",
+      "m_ChangeText": "\"0/CouncilHall_Change_20630_01\"",
+      "m_RoleScake": "1",
+      "m_RoleOffset": "[]"
+    },
     "20640": {
       "m_bError": null,
       "m_ID": "20640",
@@ -578,5 +602,5 @@
       "m_RoleOffset": "[]"
     }
   },
-  "status": "processed_48_items"
+  "status": "processed_50_items"
 }

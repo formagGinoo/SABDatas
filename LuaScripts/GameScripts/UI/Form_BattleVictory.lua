@@ -5,6 +5,8 @@ local AccountLevelIns = ConfigManager:GetConfigInsByName("AccountLevel")
 local GlobalSettingsIns = ConfigManager:GetConfigInsByName("GlobalSettings")
 local AFK_LEVEL_CNT = tonumber(GlobalSettingsIns:GetValue_ByName("AFKLevelCnt").m_Value) or 5
 local GoblinRewardIns = ConfigManager:GetConfigInsByName("GoblinReward")
+local TOWER_AUTO_CD = tonumber(ConfigManager:GetGlobalSettingsByKey("TowerAutoCD"))
+local TOWER_AUTO_EXIT_TIME = tonumber(ConfigManager:GetGlobalSettingsByKey("TowerAutoExitTime"))
 local AFKEXPAnim = "ash_in"
 local AFKEXPAnimDeltaTime = 0.8
 local RoleExpTime = 1.5
@@ -30,6 +32,15 @@ function Form_BattleVictory:AfterInit()
   self.m_curHeroSpineObj = nil
   self.m_HeroFashion = HeroManager:GetHeroFashion()
   self.m_HeroVoice = HeroManager:GetHeroVoice()
+  self.m_autoBattleStr = ConfigManager:GetCommonTextById(20357)
+  self.m_auto_toggle_Toggle.onValueChanged:AddListener(function()
+    self:OnToggleValueChanged()
+  end)
+end
+
+function Form_BattleVictory:OnToggleValueChanged()
+  LocalDataManager:SetIntSimple("Tower_Auto_Battle", self.m_auto_toggle_Toggle.isOn == true and 1 or 0)
+  self:FreshShowNextLevel()
 end
 
 function Form_BattleVictory:OnActive()
@@ -51,6 +62,8 @@ end
 function Form_BattleVictory:OnDestroy()
   self.super.OnDestroy(self)
   self:CheckRecycleSpine(true)
+  self:StopAutoBattleTimer()
+  self:StopAutoBattleExit()
   for i = 0, AFK_LEVEL_CNT do
     if self["AFKExpUpTimer" .. i] then
       TimeService:KillTimer(self["AFKExpUpTimer" .. i])
@@ -432,10 +445,74 @@ function Form_BattleVictory:FreshShowNextLevel()
   end
   local isShowBattleTimes = self.m_levelType == LevelManager.LevelType.Tower and subType ~= LevelManager.TowerLevelSubType.Main
   UILuaHelper.SetActive(self.m_btn_level_bg, isShowNextBtn)
+  UILuaHelper.SetActive(self.m_btn_cancel, isShowNextBtn)
+  UILuaHelper.SetActive(self.m_pnl_auto, isShowNextBtn)
+  UILuaHelper.SetActive(self.m_txt_battletime, isShowNextBtn and isShowBattleTimes)
   UILuaHelper.SetActive(self.m_txt_battletime, isShowNextBtn and isShowBattleTimes)
   if isShowNextBtn and isShowBattleTimes then
     local leftTimes = (maxTimes or 0) - (curTime or 0)
     self.m_txt_battletime_Text.text = String_Format(ConfigManager:GetCommonTextById(20036), leftTimes, maxTimes)
+  end
+  self.m_txt_nextnum_Text.text = ""
+  self.m_z_txt_next:SetActive(true)
+  self:StopAutoBattleTimer()
+  self.m_auto_toggle_Toggle.isOn = LocalDataManager:GetIntSimple("Tower_Auto_Battle", 0) == 1
+  if isShowNextBtn and self.m_auto_toggle_Toggle.isOn then
+    self:RefreshAutoBattleUI()
+  elseif self.m_levelType == LevelManager.LevelType.Tower and isOpen then
+    if not isHaveTimes then
+      local towerCfg = levelTowerHelper:GetTowerCfgByLevelSubType(subType)
+      if towerCfg then
+        local str = string.gsubnumberreplace(ConfigManager:GetClientMessageTextById(10432), TOWER_AUTO_EXIT_TIME, towerCfg.m_mName)
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, str)
+      end
+      self:AutoBattleExit()
+    elseif levelTowerHelper:IsSubTowerAllLevelPass(subType) then
+      local towerCfg = levelTowerHelper:GetTowerCfgByLevelSubType(subType)
+      if towerCfg then
+        local str = string.gsubnumberreplace(ConfigManager:GetClientMessageTextById(10431), TOWER_AUTO_EXIT_TIME, towerCfg.m_mName)
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, str)
+      end
+      self:AutoBattleExit()
+    end
+  end
+end
+
+function Form_BattleVictory:StopAutoBattleTimer()
+  if self.m_cutDownAutoBattleTimer then
+    TimeService:KillTimer(self.m_cutDownAutoBattleTimer)
+    self.m_cutDownAutoBattleTimer = nil
+  end
+end
+
+function Form_BattleVictory:RefreshAutoBattleUI()
+  self:StopAutoBattleTimer()
+  self.m_z_txt_next:SetActive(false)
+  self.m_txt_nextnum_Text.text = string.gsubnumberreplace(self.m_autoBattleStr, TOWER_AUTO_CD)
+  self.m_autoBattleCutDownTime = TOWER_AUTO_CD
+  self.m_cutDownAutoBattleTimer = TimeService:SetTimer(1, -1, function()
+    self.m_autoBattleCutDownTime = self.m_autoBattleCutDownTime - 1
+    self.m_txt_nextnum_Text.text = string.gsubnumberreplace(self.m_autoBattleStr, self.m_autoBattleCutDownTime)
+    if self.m_autoBattleCutDownTime <= 0 then
+      self:StopAutoBattleTimer()
+      self:OnBtnlevelbgClicked()
+    end
+  end)
+end
+
+function Form_BattleVictory:AutoBattleExit()
+  self:StopAutoBattleExit()
+  self.m_cutDownAutoBattleExitTimer = TimeService:SetTimer(TOWER_AUTO_EXIT_TIME, 1, function()
+    self:StopAutoBattleExit()
+    self:OnBtnMaskSkipClicked()
+    self:OnBtnBgCloseClicked()
+  end)
+end
+
+function Form_BattleVictory:StopAutoBattleExit()
+  if self.m_cutDownAutoBattleExitTimer then
+    TimeService:KillTimer(self.m_cutDownAutoBattleExitTimer)
+    self.m_cutDownAutoBattleExitTimer = nil
   end
 end
 
@@ -759,6 +836,10 @@ function Form_BattleVictory:OnRewardItemClick(itemID, itemNum, itemCom)
   if not itemID then
     return
   end
+  if self.m_levelType == LevelManager.LevelType.Tower then
+    LocalDataManager:SetIntSimple("Tower_Auto_Battle", 0)
+    self:FreshShowNextLevel()
+  end
   utils.openItemDetailPop({iID = itemID, iNum = itemNum})
 end
 
@@ -802,6 +883,10 @@ function Form_BattleVictory:OnBtnDataClicked()
   if self.m_isShowAnim then
     return
   end
+  if self.m_levelType == LevelManager.LevelType.Tower then
+    LocalDataManager:SetIntSimple("Tower_Auto_Battle", 0)
+    self:FreshShowNextLevel()
+  end
   StackFlow:Push(UIDefines.ID_FORM_BATTLECHARACTERDATA)
 end
 
@@ -820,8 +905,13 @@ function Form_BattleVictory:OnBtnlevelbgClicked()
   if not nextLevelCfg then
     return
   end
+  LevelManager:SetTowerAutoBattleEffective(true)
   local nextLevelID = nextLevelCfg.m_LevelID
   BattleFlowManager:EnterNextBattle(self.m_levelType, nextLevelID)
+end
+
+function Form_BattleVictory:OnBtncancelClicked()
+  self:OnBtnBgCloseClicked()
 end
 
 function Form_BattleVictory:OnBtnMaskSkipClicked()
@@ -862,6 +952,8 @@ function Form_BattleVictory:OnBtnMaskSkipClicked()
     TimeService:KillTimer(self.m_roleExpUpTimer)
     self.m_roleExpUpTimer = nil
   end
+  self:StopAutoBattleTimer()
+  self:StopAutoBattleExit()
   local curRoleLv = RoleManager:GetLevel() or 0
   local roleExp = RoleManager:GetRoleExp() or 0
   self:FreshShowRoleLvAndExp(curRoleLv, roleExp)

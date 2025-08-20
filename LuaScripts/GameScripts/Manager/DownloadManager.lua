@@ -1755,6 +1755,14 @@ function DownloadManager:IsMiniPatchNeedRestart()
   return self.m_bMiniPatchNeedRestart
 end
 
+function DownloadManager:SetStateScriptConfig(iStateScriptVersion)
+  self.m_iStateScriptVersion = iStateScriptVersion
+end
+
+function DownloadManager:GetStateScriptVersion()
+  return self.m_iStateScriptVersion
+end
+
 function DownloadManager:NeedRestartOnUpgradePatch()
   return true
 end
@@ -1940,7 +1948,11 @@ function DownloadManager:DownloadPrePatchList()
   
   local function OnDownloadUpgradePatchListComplete(sVersion)
     if sVersion == "0" then
-      log.error(string.format("DownloadPre UpgradePatchList Failed: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+      local sResPathLog = ""
+      for i = 0, vResPatch.Count - 1 do
+        sResPathLog = sResPathLog .. vResPatch[i] .. ";"
+      end
+      log.error(string.format("DownloadPre UpgradePatchList Failed: CDN-%s, Version-%s", sResPathLog, sClientVersion))
       self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloadFailed
       return
     end
@@ -1951,7 +1963,11 @@ function DownloadManager:DownloadPrePatchList()
     local compare = CS.VersionUtil.CompareResVerPart(localResVersion, sVersion)
     log.info("DownloadPre UpgradePatchList Compare :", compare)
     if 0 <= compare then
-      log.error(string.format("DownloadPre UpgradePatchList NotMatch: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+      local sResPathLog = ""
+      for i = 0, vResPatch.Count - 1 do
+        sResPathLog = sResPathLog .. vResPatch[i] .. ";"
+      end
+      log.error(string.format("DownloadPre UpgradePatchList NotMatch: CDN-%s, Version-%s", sResPathLog, sClientVersion))
       self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.PatchListDownloadFailed
       return
     end
@@ -2003,7 +2019,7 @@ function DownloadManager:DownloadPreAddResList()
     
     local function OnDownloadAddResListComplete(sVersion)
       if sVersion == "0" then
-        log.error(string.format("DownloadPre AddResList Failed: CDN-%s, Version-%s", table.serialize(vResPatch), sClientVersion))
+        log.error(string.format("DownloadPre AddResList Failed: Version-%s", sClientVersion))
         self.m_stDownloadPreConfig.eStatus = self.DownloadPreStatus.AddResListDownloadFailed
         return
       end

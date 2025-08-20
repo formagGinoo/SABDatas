@@ -18,10 +18,13 @@ end
 function CommonQuestActivity:OnCreate()
   self.m_vQuest = {}
   self.m_vQuestOver = {}
-  RPCS():Listen_Push_SetQuestDataBatch(handler(self, self.OnPushSetQuestDataBatch), "CommonQuestActivity")
 end
 
 function CommonQuestActivity:OnResetSdpConfig()
+  if not self.isListen then
+    RPCS():Listen_Push_SetQuestDataBatch(handler(self, self.OnPushSetQuestDataBatch), "CommonQuestActivity" .. self.m_stActivityData.iActivityId)
+    self.isListen = true
+  end
   self.m_mQuestConfig = {}
   for _, stQuestConfig in pairs(self.m_stSdpConfig.mQuest) do
     self.m_mQuestConfig[stQuestConfig.iId] = stQuestConfig
@@ -31,23 +34,24 @@ function CommonQuestActivity:OnResetSdpConfig()
     self.m_mDailyRewardConfig[stDailyReward.iOpenDay] = stDailyReward
   end
   self.m_mFinalRewardConfig = {}
+  self.iFinalScore = 0
   for iScore, stFinalReward in pairs(self.m_stSdpConfig.mFinalReward) do
     self.m_mFinalRewardConfig[iScore] = stFinalReward
+    if iScore > self.iFinalScore then
+      self.iFinalScore = iScore
+    end
   end
   self.m_UIType = self.m_stSdpConfig.iUiType or 0
+  self.m_UpActivityID = self.m_stSdpConfig.iLamiaActId or 0
   iDayMax = #self.m_mDailyRewardConfig
   self:ResetCommonQuestRefreshTime()
 end
 
 function CommonQuestActivity:OnResetStatusData()
-  self.m_stActivityData.iBeginTime = self.m_stStatusData.iBeginTime
-  self.m_stActivityData.iEndTime = self.m_stStatusData.iEndTime
-  self.m_stActivityData.iShowTimeBegin = self.m_stStatusData.iBeginTime
-  self.m_stActivityData.iShowTimeEnd = self.m_stStatusData.iEndTime
-  if self.m_stActivityData.iBeginTime <= 0 then
+  if self.m_stStatusData.iBeginTime <= 0 then
     self.m_iDayNum = 1
   else
-    self.m_iDayNum = TimeUtil:GetPassedServerDay(self.m_stActivityData.iBeginTime)
+    self.m_iDayNum = TimeUtil:GetPassedServerDay(self.m_stStatusData.iBeginTime)
   end
   self.m_vQuest = self.m_stStatusData.vQuest
   self.m_vQuestOver = self.m_stStatusData.vOver
@@ -116,6 +120,10 @@ end
 
 function CommonQuestActivity:GetUIType()
   return self.m_UIType
+end
+
+function CommonQuestActivity:GetUpActivityID()
+  return self.m_UpActivityID
 end
 
 function CommonQuestActivity:GetActMaxDay()
@@ -255,6 +263,16 @@ function CommonQuestActivity:CheckShowRedFinalReward()
       if not bTaken then
         return true
       end
+    end
+  end
+  return false
+end
+
+function CommonQuestActivity:IsFinalRewardReceived()
+  local vFinalRewardTakenInfo = self:GetFinalRewardTakenInfo()
+  for _, iScoreTaken in ipairs(vFinalRewardTakenInfo) do
+    if iScoreTaken == self.iFinalScore then
+      return true
     end
   end
   return false

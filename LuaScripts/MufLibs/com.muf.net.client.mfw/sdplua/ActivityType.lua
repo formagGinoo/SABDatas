@@ -62,3 +62,4 @@ ActivityType_ForbidCustomDescManager = 143
 ActivityType_ReturnSign = 144
 ActivityType_ConsumeReward = 145
 ActivityType_TimelineJump = 146
+ActivityType_FightDataUpdate = 147

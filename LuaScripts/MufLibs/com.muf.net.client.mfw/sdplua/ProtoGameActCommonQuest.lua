@@ -70,6 +70,7 @@ CmdActCfgCommonQuestQuest.Definition = {
   "iOpenDay",
   "iJump",
   "sName",
+  "iSpecialType",
   iId = {
     0,
     0,
@@ -123,6 +124,12 @@ CmdActCfgCommonQuestQuest.Definition = {
     0,
     13,
     ""
+  },
+  iSpecialType = {
+    9,
+    0,
+    8,
+    0
   }
 }
 CmdActCfgCommonQuestDailyReward = sdp.SdpStruct("CmdActCfgCommonQuestDailyReward")
@@ -162,6 +169,7 @@ CmdActCfgCommonQuest.Definition = {
   "sAtmosphericAnimation",
   "sSignInFloorPlan",
   "iUiType",
+  "iLamiaActId",
   sHelpTips = {
     0,
     0,
@@ -224,6 +232,12 @@ CmdActCfgCommonQuest.Definition = {
   },
   iUiType = {
     10,
+    0,
+    8,
+    0
+  },
+  iLamiaActId = {
+    11,
     0,
     8,
     0

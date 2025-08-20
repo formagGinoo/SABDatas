@@ -40,6 +40,38 @@ for k, v in pairs(UINames) do
   CS.UIDefinesForLua.Register(k, v)
 end
 if CS.UnityEngine.Application.isPlaying then
+  local bCloseComplianceResourceSwitch = CS.UnityEngine.PlayerPrefs.GetInt("CloseComplianceResourceSwitch", 0)
+  local gloablFilePath = CS.MUF.Resource.ResourceLocationHelper.Instance.PersistentDataPath .. "/" .. "localization.txt"
+  if not CS.System.IO.File.Exists(gloablFilePath) then
+    local file = io.open(gloablFilePath, "w")
+    file:write("resourceVersion = local")
+    file:close()
+  end
+  local file = io.open(gloablFilePath, "r")
+  if file then
+    local function trim(s)
+      if s == nil then
+        return ""
+      end
+      return string.match(s, "^%s*(.-)%s*$")
+    end
+    
+    for line in file:lines() do
+      local list = line:split("=")
+      key = trim(list[1])
+      value = trim(list[2])
+      if key == "resourceVersion" and value == "global" then
+        CS.MUF.Resource.ResourceManager.SetUseGlobalLocal(true)
+        if bCloseComplianceResourceSwitch == 0 then
+          CS.MUF.Resource.ResourceManager.SetUseGlobal(true)
+        end
+        break
+      end
+    end
+    file:close()
+  end
+  log.info("localization path:" .. gloablFilePath .. " " .. tostring(CS.MUF.Resource.ResourceManager.GetUseGlobal()))
+  CS.MUF.Download.DownloadResource.Instance:InitDownload()
   StackTop:TryLoadUI(UIDefines.ID_FORM_WAITING, nil, nil)
   local bHQ = CS.MUF.Resource.ResourceManager.GetHQ2D()
   StackSpecial:TryLoadUI(UIDefines.ID_FORM_VIEDO, function()

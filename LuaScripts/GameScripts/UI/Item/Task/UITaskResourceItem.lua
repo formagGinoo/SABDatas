@@ -15,6 +15,19 @@ function UITaskResourceItem:OnFreshData()
     lCurBytes = lCurBytes + stProgressInfo.lCurBytes
     lTotalBytes = lTotalBytes + stProgressInfo.lTotalBytes
   end
+  local itemRootObj = self.m_itemIconReward:GetItemRoot().gameObject
+  local c_bg_tips = itemRootObj.transform:Find("c_bg_tips")
+  if iState == MTTDProto.QuestState_Over then
+    itemRootObj:SetActive(false)
+    if c_bg_tips then
+      c_bg_tips.gameObject:SetActive(false)
+    end
+  else
+    itemRootObj:SetActive(true)
+    if c_bg_tips then
+      c_bg_tips.gameObject:SetActive(true)
+    end
+  end
   if bDownloading then
     self.m_bg_item_finish:SetActive(false)
     self.m_icon_download:SetActive(true)
@@ -64,6 +77,13 @@ function UITaskResourceItem:OnFreshData()
     self.m_itemIconReward:SetItemInfo(processData)
   end
   self.m_txt_name_Text.text = tConfigTaskResourceDownload.m_mTaskName
+  if self.m_txt_download_Text then
+    if tConfigTaskResourceDownload.m_TaskTag ~= 5 then
+      self.m_txt_download_Text.text = ConfigManager:GetCommonTextById(2032)
+    else
+      self.m_txt_download_Text.text = ConfigManager:GetCommonTextById(2033)
+    end
+  end
   self:RefreshDownloadProgress()
 end
 

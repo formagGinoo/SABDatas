@@ -8,6 +8,7 @@ function GuildMemberSubPanel:OnInit()
   self.m_curFilterIndex = 1
   self.m_bFilterDown = false
   self.m_grayImgMaterial = self.m_img_gray_Image.material
+  self.m_PlayerHeadCache = {}
 end
 
 function GuildMemberSubPanel:OnFreshData()
@@ -109,16 +110,34 @@ function GuildMemberSubPanel:updateScrollViewCell(index, cell_object, cell_data)
   ResourceUtil:CreateGuildPostIconByPost(img_careericon, cell_data.iPost)
   local likeFlag = GuildManager:CheckIsLikedByMemberId(cell_data.stRoleId.iUid, cell_data.stRoleId.iZoneId)
   local _, likeNum = GuildManager:GetAllianceDailyLikedInfo()
-  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_like", not likeFlag)
-  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_liked", likeFlag)
+  local banNum = 0
+  local banEndTime = cell_data.iBanEndTime
+  if banEndTime ~= nil and banEndTime ~= nil and tonumber(banEndTime) > TimeUtil:GetServerTimeS() then
+    banNum = cell_data.iBanShowType or 0
+  end
+  local isBan = banNum ~= RoleManager.BanType.None
+  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_like", not isBan and not likeFlag)
+  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_btn_liked", not isBan and likeFlag)
+  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_txt_ban", banNum == RoleManager.BanType.NormalBan)
+  LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_txt_ban_red", banNum == RoleManager.BanType.CheatBan)
   local c_btn_like = UIUtil.findImage(transform, "c_root_node/c_btn_like")
   if 0 < likeNum and likeFlag == false then
     c_btn_like.material = self.m_grayImgMaterial
   else
     c_btn_like.material = nil
   end
-  local playerHeadCom = self:createPlayerHead(c_circle_head)
-  playerHeadCom:SetPlayerHeadInfo(cell_data)
+  if c_circle_head then
+    if not self.m_PlayerHeadCache then
+      self.m_PlayerHeadCache = {}
+    end
+    local gameObjectHashCode = c_circle_head:GetHashCode()
+    local tempPlayerHeadCom = self.m_PlayerHeadCache[gameObjectHashCode]
+    if not tempPlayerHeadCom then
+      tempPlayerHeadCom = self:createPlayerHead(c_circle_head)
+      self.m_PlayerHeadCache[gameObjectHashCode] = tempPlayerHeadCom
+    end
+    tempPlayerHeadCom:SetPlayerHeadInfo(cell_data)
+  end
 end
 
 function GuildMemberSubPanel:OnPlayerHeadClk(stRoleId)
@@ -130,6 +149,11 @@ function GuildMemberSubPanel:OnPlayerHeadClk(stRoleId)
     zoneID = tempStRoleID.iZoneId,
     otherRoleID = tempStRoleID.iUid
   })
+end
+
+function GuildMemberSubPanel:dispose()
+  GuildMemberSubPanel.super.dispose(self)
+  self.m_PlayerHeadCache = {}
 end
 
 return GuildMemberSubPanel

@@ -1,0 +1,20 @@
+{
+  "className": "CData_PVPArenaBuff",
+  "data": {
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_ArenaType": "1",
+      "m_BuffID": "1720",
+      "m_ActiveTime": "90"
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_ArenaType": "2",
+      "m_BuffID": "1720",
+      "m_ActiveTime": "90"
+    }
+  },
+  "status": "processed_2_items"
+}

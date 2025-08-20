@@ -52,6 +52,7 @@ RedDotDefine.ModuleType = {
   HeroActMiniGameEntry = "HeroActMiniGameEntry",
   HeroActMiniGameTask = "HeroActMiniGameTask",
   HeroActMiniGamePuzzleEntry = "HeroActMiniGamePuzzleEntry",
+  HeroActFreeEntry = "HeroActFreeEntry",
   CastleStatueRewardEntry = "CastleStatueRewardEntry",
   CastleStatueReward = "CastleStatueReward",
   MainExploreEntry = "MainExploreEntry",
@@ -96,6 +97,7 @@ RedDotDefine.ModuleType = {
   PersonalCardEntry = "PersonalCardEntry",
   PersonalCardHeadTab = "PersonalCardHeadTab",
   PersonalCardHeadFrameTab = "PersonalCardHeadFrameTab",
+  PersonalCardBgTab = "PersonalCardBgTab",
   HallFunctionEntry = "HallFunctionEntry",
   HallDecorateEntry = "HallDecorateEntry",
   HallDecorateActTab = "HallDecorateActTab",
@@ -542,6 +544,18 @@ RedDotDefine.ModuleDetail = {
     managerName = "HeroActivityManager",
     getCountFunName = "IsActShopEntryHaveRedDot"
   },
+  [ModuleType.HeroActFreeEntry] = {
+    parent = nil,
+    eventNameList = {
+      "eGameEvent_Activity_Reload",
+      "eGameEvent_Activity_CommonQuest_TakeQuestReward",
+      "eGameEvent_Activity_CommonQuest_TakeDailyReward",
+      "eGameEvent_Activity_CommonQuest_TakeFinalReward"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsHeroActFreeEntryHaveRedDot"
+  },
   [ModuleType.HeroActHallEntry] = {
     parent = nil,
     eventNameList = {
@@ -960,6 +974,13 @@ RedDotDefine.ModuleDetail = {
     getCountFunName = nil
   },
   [ModuleType.PersonalCardHeadFrameTab] = {
+    parent = ModuleType.PersonalCardEntry,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
+  [ModuleType.PersonalCardBgTab] = {
     parent = ModuleType.PersonalCardEntry,
     eventNameList = nil,
     isParamRedDot = false,

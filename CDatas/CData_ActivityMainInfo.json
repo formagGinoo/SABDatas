@@ -140,7 +140,42 @@
       "m_ExploreScene": "\"\"",
       "m_ExploreSceneChar": "[]",
       "m_SigninSpine": "\"aorin_ur\""
+    },
+    "1060": {
+      "m_bError": null,
+      "m_ActivityID": "1060",
+      "m_mActivityTitle": "\"Against The Dying Light\"",
+      "m_mActivityTitleExtra": "\"\"",
+      "m_ActivityType": "1",
+      "m_FightType": "5",
+      "m_ShopJumpID": "2610",
+      "m_ShopItem": "500063",
+      "m_PassItem": "500061",
+      "m_FreePassItem": "500062",
+      "m_GachaJumpID": "[[1006,25010],[1007,25011]]",
+      "m_TipsID": "1240",
+      "m_SubFunctionID": "[1061,1062,1063,1064,1065]",
+      "m_BonusGroup": "1060",
+      "m_PowerGroup": "1060",
+      "m_ActivityBanner": "\"Atlas_ActivityBanner/1060\"",
+      "m_Wwise": "346",
+      "m_ActivityAnimation": "\"\"",
+      "m_ActivityAnimationReplay": null,
+      "m_mActivityDes": "\"Clear [Accursed Journey] and complete [Path of No Return] to obtain the event item [Crude Coin], which can be redeemed for generous rewards at [Vagabond's Encampment].\"",
+      "m_OpenTime": "\"2025-07-05 04:00:00\"",
+      "m_ChangeTime": "\"\"",
+      "m_EndTime": "\"2025-07-17 03:59:59\"",
+      "m_CloseTime": "\"2025-07-17 03:59:59\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1103010]]",
+      "m_Prefab": "\"Form_Activity106Main\"",
+      "m_BattleLoadingPrefab": "\"Form_Activity106_Loading\"",
+      "m_UpCharacter": "[20620,20630]",
+      "m_BCPrefab": "\"ui_panel_activity_bg106\"",
+      "m_ExploreScene": "\"\"",
+      "m_ExploreSceneChar": "[]",
+      "m_SigninSpine": "\"quinn_base\""
     }
   },
-  "status": "processed_4_items"
+  "status": "processed_5_items"
 }

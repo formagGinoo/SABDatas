@@ -358,20 +358,6 @@
       "m_DialogueList": "[\"L_Lorelie_10_18c_01\",\"L_Lorelie_10_18c_02\"]",
       "m_OptionList": "[]"
     },
-    "\"L_Sirene_10_38a\"": {
-      "m_bError": null,
-      "m_ID": "\"L_Sirene_10_38a\"",
-      "m_OptionContent": "\"Dialogue_L_Sirene_10_38a\"",
-      "m_DialogueList": "[\"L_Sirene_10_38a_01\"]",
-      "m_OptionList": "[]"
-    },
-    "\"L_Sirene_10_38b\"": {
-      "m_bError": null,
-      "m_ID": "\"L_Sirene_10_38b\"",
-      "m_OptionContent": "\"Dialogue_L_Sirene_10_38b\"",
-      "m_DialogueList": "[\"L_Sirene_10_38b_01\"]",
-      "m_OptionList": "[]"
-    },
     "\"B_110001_Clip18_041\"": {
       "m_bError": null,
       "m_ID": "\"B_110001_Clip18_041\"",
@@ -509,21 +495,21 @@
       "m_bError": null,
       "m_ID": "\"E_40001_Clip07_32\"",
       "m_OptionContent": "\"Dialogue_E_40001_Clip07_32\"",
-      "m_DialogueList": "[\"Dialogue_E_40001_Clip07_30a\"]",
+      "m_DialogueList": "[\"E_40001_Clip07_30a\"]",
       "m_OptionList": "[]"
     },
     "\"E_40001_Clip07_33\"": {
       "m_bError": null,
       "m_ID": "\"E_40001_Clip07_33\"",
       "m_OptionContent": "\"Dialogue_E_40001_Clip07_33\"",
-      "m_DialogueList": "[\"Dialogue_E_40001_Clip07_33a\"]",
+      "m_DialogueList": "[\"E_40001_Clip07_33a\"]",
       "m_OptionList": "[]"
     },
     "\"E_40001_Clip07_34\"": {
       "m_bError": null,
       "m_ID": "\"E_40001_Clip07_34\"",
       "m_OptionContent": "\"Dialogue_E_40001_Clip07_34\"",
-      "m_DialogueList": "[\"Dialogue_E_40001_Clip07_33a\"]",
+      "m_DialogueList": "[\"E_40001_Clip07_33a\"]",
       "m_OptionList": "[]"
     },
     "\"L_Aiona_Covenant_09_06a\"": {
@@ -574,7 +560,91 @@
       "m_OptionContent": "\"Dialogue_E_50001_Clip01_10\"",
       "m_DialogueList": "[]",
       "m_OptionList": "[]"
+    },
+    "\"L_Agatha_09_46a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Agatha_09_46a\"",
+      "m_OptionContent": "\"Dialogue_L_Agatha_09_46a\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Agatha_09_46b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Agatha_09_46b\"",
+      "m_OptionContent": "\"Dialogue_L_Agatha_09_46b\"",
+      "m_DialogueList": "[]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Quinn_09_18a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Quinn_09_18a\"",
+      "m_OptionContent": "\"Dialogue_L_Quinn_09_18a\"",
+      "m_DialogueList": "[\"L_Quinn_09_18a_01\",\"L_Quinn_09_18a_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Quinn_09_18b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Quinn_09_18b\"",
+      "m_OptionContent": "\"Dialogue_L_Quinn_09_18b\"",
+      "m_DialogueList": "[\"L_Quinn_09_18b_01\",\"L_Quinn_09_18b_02\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Quinn_09_43a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Quinn_09_43a\"",
+      "m_OptionContent": "\"Dialogue_L_Quinn_09_43a\"",
+      "m_DialogueList": "[\"L_Quinn_09_43a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Quinn_09_43b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Quinn_09_43b\"",
+      "m_OptionContent": "\"Dialogue_L_Quinn_09_43b\"",
+      "m_DialogueList": "[\"L_Quinn_09_43b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_03a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_03a\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_03a\"",
+      "m_DialogueList": "[\"L_Sirene_10_04\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_03b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_03b\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_03b\"",
+      "m_DialogueList": "[\"L_Sirene_10_04\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_23a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_23a\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_23a\"",
+      "m_DialogueList": "[\"L_Sirene_10_24\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_38a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_38a\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_38a\"",
+      "m_DialogueList": "[\"L_Sirene_10_38a_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_38b\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_38b\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_38b\"",
+      "m_DialogueList": "[\"L_Sirene_10_38b_01\"]",
+      "m_OptionList": "[]"
+    },
+    "\"L_Sirene_10_43a\"": {
+      "m_bError": null,
+      "m_ID": "\"L_Sirene_10_43a\"",
+      "m_OptionContent": "\"Dialogue_L_Sirene_10_43a\"",
+      "m_DialogueList": "[\"L_Sirene_10_43a_01\"]",
+      "m_OptionList": "[]"
     }
   },
-  "status": "processed_82_items"
+  "status": "processed_92_items"
 }

@@ -130,6 +130,7 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/ReturnBackSign/ReturnBackSignActivity")
   self:LoadActivity("Module/Activity/ConsumeReward/ConsumeRewardActivity")
   self:LoadActivity("Module/Activity/JumpFace/TimelinePushfaceActivity")
+  self:LoadActivity("Module/Activity/GameActFightDataUpdate/GameActFightDataUpdateActivity")
 end
 
 function ActivityManager:LoadActivity(sActivityPath)
@@ -458,6 +459,20 @@ function ActivityManager:GetActivityList(bReload, isShowWaitView)
     end
     self:broadcastEvent("eGameEvent_Activity_AnywayReload")
     self:CheckShowUidAndMaking()
+    local moduleControlActivity = self:GetActivityByType(MTTD.ActivityType_ModuleControl)
+    if moduleControlActivity and moduleControlActivity:CloseGlobalRes() then
+      CS.MUF.Resource.ResourceManager.SetUseGlobal(false)
+      CS.UnityEngine.PlayerPrefs.SetInt("CloseComplianceResourceSwitch", 1)
+    else
+      CS.MUF.Resource.ResourceManager.SetUseGlobal(CS.MUF.Resource.ResourceManager.GetUseGlobalLocal())
+      CS.UnityEngine.PlayerPrefs.SetInt("CloseComplianceResourceSwitch", 0)
+    end
+    local savedUseGlobalLocal = CS.UnityEngine.PlayerPrefs.GetInt("UseGlobalLocal", -1)
+    local useGlobalLocal = CS.MUF.Resource.ResourceManager.GetUseGlobalLocal() and 1 or 0
+    if useGlobalLocal == -1 or useGlobalLocal ~= savedUseGlobalLocal then
+      ReportManager:ReportClientGlobalResEnabled(useGlobalLocal)
+      CS.UnityEngine.PlayerPrefs.SetInt("UseGlobalLocal", useGlobalLocal)
+    end
   end, self.OnReqGetListFailed)
 end
 
@@ -1313,6 +1328,14 @@ function ActivityManager:GetPayPointsCondition(sProductId)
     return true, pointReward
   end
   return false
+end
+
+function ActivityManager:CheckCanStartGame(playerIds, monsterIds)
+  local act = self:GetActivityByType(MTTD.ActivityType_FightDataUpdate)
+  if not act then
+    return true
+  end
+  return act:CheckCanStartGame(playerIds, monsterIds)
 end
 
 function ActivityManager:OnInitFetchMoreDataMustFail(messageId, msg)

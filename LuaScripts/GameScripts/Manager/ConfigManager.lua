@@ -73,7 +73,8 @@ function ConfigManager:CacheInstance()
       CirculationLevel = CS.CData_CirculationLevel.GetInstance(),
       Legacy = CS.CData_Legacy.GetInstance(),
       LegacyLevel = CS.CData_LegacyLevel.GetInstance(),
-      LineUpRecommend = CS.CData_LineUpRecommend.GetInstance()
+      LineUpRecommend = CS.CData_LineUpRecommend.GetInstance(),
+      PVPArenaBuff = CS.CData_PVPArenaBuff.GetInstance()
     },
     {
       LegacyStageLevelInfo = CS.CData_LegacyStageLevelInfo.GetInstance(),
@@ -215,6 +216,7 @@ function ConfigManager:CacheInstance()
       ActTaskDailyReward = CS.CData_ActTaskDailyReward.GetInstance(),
       Act4Clue = CS.CData_Act4Clue.GetInstance(),
       MiniGameLegacyStage = CS.CData_MiniGameLegacyStage.GetInstance(),
+      ActLostStory = CS.CData_ActLostStory.GetInstance(),
       SkillTip = CS.CData_SkillTip.GetInstance(),
       GMCommand = CS.CData_GMCommand.GetInstance(),
       GMShortcuts = CS.CData_GMShortcuts.GetInstance()

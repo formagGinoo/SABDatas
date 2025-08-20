@@ -61,6 +61,18 @@
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
+    "100402": {
+      "m_bError": null,
+      "m_StoryID": "100402",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Mario and Juliet\"",
+      "m_PlaceID": "4",
+      "m_ShowCharacter": "20620",
+      "m_Character": "[20630,20620,20530,20700]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
     "100601": {
       "m_bError": null,
       "m_StoryID": "100601",
@@ -285,7 +297,7 @@
       "m_PlaceID": "2007",
       "m_ShowCharacter": "20610",
       "m_Character": "[20120,20290,20180,20610]",
-      "m_Rewards": "[[800003,2]]",
+      "m_Rewards": "[[800003,1]]",
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
@@ -338,5 +350,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_28_items"
+  "status": "processed_29_items"
 }

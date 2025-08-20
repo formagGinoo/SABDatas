@@ -213,6 +213,7 @@ end
 function ActivitySevenDaysSubPanel_ByMain:OnInactive()
   self:RemoveAllEventListeners()
   self:killRemainTimer()
+  self:DestroySpine()
 end
 
 function ActivitySevenDaysSubPanel_ByMain:ShowItemTips(iID, iNum)

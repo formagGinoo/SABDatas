@@ -668,6 +668,7 @@ function AttractManager:ResetCamera()
   end
   self.m_camera.enabled = true
   utils.AdaptCamera(self.m_camera)
+  CS.UnityEngine.Shader.SetGlobalFloat("_PlanarGlobalGroundY", 0)
 end
 
 function AttractManager:SetFavorabilityModel(chairModel, OtherModel)

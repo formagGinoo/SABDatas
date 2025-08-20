@@ -37,6 +37,7 @@ function UIDalcaroItem:OnFreshData()
   self.m_isUnlock, _, self.m_unlockStr = LevelHeroLamiaActivityManager:GetLevelHelper():IsLevelUnLock(self.m_levelCfg.m_LevelID)
   self:FreshItemUI()
   self:ChangeChoose(self.m_isChoose)
+  UILuaHelper.SetChildIndex(self.m_itemRootObj, self.m_itemIndex)
 end
 
 function UIDalcaroItem:FreshItemUI()

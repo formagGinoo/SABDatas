@@ -127,8 +127,8 @@ function ResourceBar:FreshItemData(item, itemData)
   end
   item.itemData = itemData
   local itemNum = ItemManager:GetItemNum(itemData.itemID)
-  if itemData.itemID == MTTDProto.SpecialItem_Welfare then
-    item.txt_num.text = tostring(itemNum)
+  if itemData.itemID == MTTDProto.SpecialItem_Welfare or itemData.itemID == MTTDProto.SpecialItem_ShowDiamond then
+    item.txt_num.text = BigNumFormatPayItem(itemNum)
   else
     item.txt_num.text = BigNumFormat(itemNum)
   end

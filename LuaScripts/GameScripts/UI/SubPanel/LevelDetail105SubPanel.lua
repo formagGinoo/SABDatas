@@ -4,7 +4,7 @@ local EnterAnimStr = "Dalcaro_dialoguedetial_in"
 local OutAnimStr = "Dalcaro_dialoguedetial_out"
 
 function LevelDetail105SubPanel:OnBtnbuffheroClicked()
-  if not self.m_curLevelID then
+  if not self.m_activityID then
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_BUFFHEROLIST, {
@@ -13,7 +13,7 @@ function LevelDetail105SubPanel:OnBtnbuffheroClicked()
 end
 
 function LevelDetail105SubPanel:OnBtnchallengebuffheroClicked()
-  if not self.m_curLevelID then
+  if not self.m_activityID then
     return
   end
   StackFlow:Push(UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_CHALLENGEHERO, {
@@ -22,7 +22,7 @@ function LevelDetail105SubPanel:OnBtnchallengebuffheroClicked()
 end
 
 function LevelDetail105SubPanel:OnBtnquickClicked()
-  if not self.m_curLevelID then
+  if not self.m_curLevelID or not self.m_activityID then
     return
   end
   local isHaveEnough, totalTimes = self:IsHaveEnoughTimes()

@@ -311,13 +311,22 @@
     },
     "20180": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 2,
+      "_processed": 2,
       "data": {
         "0": {
           "m_bError": null,
           "m_ID": "20180",
           "m_FashionID": null,
+          "m_RoleScake": "0.8399999737739563",
+          "m_RoleOffset": "[-0.02500000037252903,-0.3409999907016754,0.0560000017285347]",
+          "m_RoleRotaion": null,
+          "m_IsShowChar": "1"
+        },
+        "6018001": {
+          "m_bError": null,
+          "m_ID": "20180",
+          "m_FashionID": "6018001",
           "m_RoleScake": "0.8399999737739563",
           "m_RoleOffset": "[-0.02500000037252903,-0.3409999907016754,0.0560000017285347]",
           "m_RoleRotaion": null,
@@ -823,6 +832,47 @@
         }
       }
     },
+    "20620": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20620",
+          "m_FashionID": null,
+          "m_RoleScake": "0.6700000166893005",
+          "m_RoleOffset": "[0.6000000238418579,-0.36000001430511475,0.019999999552965164]",
+          "m_RoleRotaion": "40",
+          "m_IsShowChar": null
+        },
+        "6062001": {
+          "m_bError": null,
+          "m_ID": "20620",
+          "m_FashionID": "6062001",
+          "m_RoleScake": "0.6700000166893005",
+          "m_RoleOffset": "[0.30000001192092896,-0.36000001430511475,0]",
+          "m_RoleRotaion": "20",
+          "m_IsShowChar": null
+        }
+      }
+    },
+    "20630": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20630",
+          "m_FashionID": null,
+          "m_RoleScake": "0.6499999761581421",
+          "m_RoleOffset": "[0.6800000071525574,-0.3499999940395355,0.6439999938011169]",
+          "m_RoleRotaion": "35.5",
+          "m_IsShowChar": null
+        }
+      }
+    },
     "20640": {
       "_type": "nested_dictionary",
       "_count": 2,
@@ -897,5 +947,5 @@
       }
     }
   },
-  "status": "processed_52_items"
+  "status": "processed_54_items"
 }

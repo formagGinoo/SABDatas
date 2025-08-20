@@ -45,7 +45,7 @@ end
 
 function Form_Push_Gift:AddEventListeners()
   self:addEventListener("eGameEvent_Buy_Gift_Success", handler(self, self.CloseUI))
-  self:addEventListener("eGameEvent_Activity_ResetData", handler(self, self.OnActivityResetData))
+  self:addEventListener("eGameEvent_Activity_Reload", handler(self, self.OnActivityResetData))
 end
 
 function Form_Push_Gift:RemoveAllEventListeners()

@@ -1,4 +1,5 @@
 local Form_GuildRaidTip = class("Form_GuildRaidTip", require("UI/UIFrames/Form_GuildRaidTipUI"))
+local InitPosTime = 0.06
 
 function Form_GuildRaidTip:SetInitParam(param)
 end
@@ -14,13 +15,21 @@ function Form_GuildRaidTip:OnActive()
   if not tParam then
     return
   end
+  UILuaHelper.SetLocalPosition(self.m_content_node, 10000, 10000, 0)
   self.m_effectId = tParam.effectId
   self.m_monsterTypeCfg = tParam.cfg
   self.m_click_transform = tParam.click_transform
   self.m_parentRootTransform = tParam.rootTrans
-  self.m_pivot = {x = 0, y = 0.5}
+  self.m_posOffset = tParam.pos_offset or {x = 0, y = 0}
+  self.m_pivot = {x = 0, y = 0}
   self:RefreshUI()
-  self:InitSetPos()
+  self:setTimer(InitPosTime, 1, function()
+    if self.m_click_transform then
+      self:InitSetPos()
+    else
+      UILuaHelper.SetLocalPosition(self.m_content_node, 0, 0, 0)
+    end
+  end)
 end
 
 function Form_GuildRaidTip:OnInactive()

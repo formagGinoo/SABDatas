@@ -13,6 +13,7 @@ function Form_EquipmentCopyMainChoose:AfterInit()
   self.super.AfterInit(self)
   local goRoot = self.m_csui.m_uiGameObject
   local goBackBtnRoot = goRoot.transform:Find("content_node/ui_common_top_back").gameObject
+  self.m_spineBg = self.m_img_choose_bg.transform:Find("dungeon_bg")
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBack), nil, handler(self, self.OnBackHome), 1102)
   self.m_equipmentHelper = LevelManager:GetLevelEquipmentHelper()
   self:PlayVoiceOnFirstEnter()
@@ -203,6 +204,8 @@ end
 
 function Form_EquipmentCopyMainChoose:OnDestroy()
   self.super.OnDestroy(self)
+  UILuaHelper.CheckClearSkeletonAssetData(self.m_spineBg)
+  self.m_spineBg = nil
 end
 
 function Form_EquipmentCopyMainChoose:GetDownloadResourceExtra()
