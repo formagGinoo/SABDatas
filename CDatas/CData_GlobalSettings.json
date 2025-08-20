@@ -61,7 +61,7 @@
       "m_bError": null,
       "m_Name": "\"SoloRaidBattleTimes\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"\"\"",
+      "m_Value": "\"3\"",
       "m_Desc": "\"个人RAID参与挑战后的战斗次数\""
     },
     "\"DispatchInitLevel\"": {
@@ -1156,9 +1156,9 @@
       "m_Value": "\"5\"",
       "m_Desc": "\"每次挂机等级提升需要通关多少次指定类型的关卡\""
     },
-    "\"艾米rage\"": {
+    "\"AFKStorage\"": {
       "m_bError": null,
-      "m_Name": "\"艾米rage\"",
+      "m_Name": "\"AFKStorage\"",
       "m_Type": "\"int\"",
       "m_Value": "\"43200\"",
       "m_Desc": "\"最长挂机存储时长\""
@@ -3319,9 +3319,9 @@
       "m_Value": "\"Play_vo_20040_system_eventarena01\"",
       "m_Desc": "\"打开竞技场语音\""
     },
-    "\"玛伊露娜ce\"": {
+    "\"ShopEnterVoice\"": {
       "m_bError": null,
-      "m_Name": "\"玛伊露娜ce\"",
+      "m_Name": "\"ShopEnterVoice\"",
       "m_Type": "\"string\"",
       "m_Value": "\"Play_vo_20080_system_shopgreeting\"",
       "m_Desc": "\"打开商店语音\""

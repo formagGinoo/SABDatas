@@ -5209,6 +5209,37 @@
       "m_mUnlockText": "\"\"",
       "m_HideType": null
     },
+    "20200017": {
+      "m_bError": null,
+      "m_ItemID": "20200017",
+      "m_ItemGroupID": "4087",
+      "m_mItemName": "\"Ice Ocarina\"",
+      "m_ItemIcon": "\"Atlas_Rouge/tongyong_119\"",
+      "m_ItemVolume": "[[1],[1],[1]]",
+      "m_VolumeIcon": "\"Atlas_SimulationRogue/rougue_grid4\"",
+      "m_MaskIcon": "\"\"",
+      "m_ItemType": "2",
+      "m_ItemSubType": "202",
+      "m_ItemLevel": "1",
+      "m_ItemProperty": "[[26,8000,0],[43,500,0],[14,1000,0],[16,1500,0]]",
+      "m_Skill": "7100901",
+      "m_Character": null,
+      "m_Job": "[]",
+      "m_Camp": "[]",
+      "m_TechID": "205",
+      "m_Range": null,
+      "m_RangeEffectID": null,
+      "m_EffectRange": null,
+      "m_EffectRangeValue": "[]",
+      "m_Quality": "1",
+      "m_mItemDesc1": "\"\"",
+      "m_mItemDesc2": "\"Periodically place an ice trap at random locations that continuously slow nearby enemies and deal DMG. Freezes enemies when hitting a certain speed.\"",
+      "m_mItemDesc3": "\"A clay instrument with small holes. When the right tune is played, strange phenomena seem to awaken.\"",
+      "m_HandbookType": "2",
+      "m_HandbookOrder": "10",
+      "m_mUnlockText": "\"Unlocks after activating Talent Tree - New Recipe 5\"",
+      "m_HideType": null
+    },
     "20200018": {
       "m_bError": null,
       "m_ItemID": "20200018",
@@ -5396,5 +5427,5 @@
       "m_HideType": null
     }
   },
-  "status": "processed_174_items"
+  "status": "processed_175_items"
 }
