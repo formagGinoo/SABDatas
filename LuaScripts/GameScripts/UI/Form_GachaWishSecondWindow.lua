@@ -290,11 +290,11 @@ function Form_GachaWishSecondWindow:OnBtnsendsureClicked()
       utils.popUpDirectionsUI({
         tipsID = 1157,
         func1 = function()
-          GachaManager:ReqGachaSetWishList(self.m_gachaId, selList)
+          GachaManager:ReqGachaSetWishList(self.m_gachaId, selList, GachaManager.WishListSetType.Manual)
         end
       })
     else
-      GachaManager:ReqGachaSetWishList(self.m_gachaId, selList)
+      GachaManager:ReqGachaSetWishList(self.m_gachaId, selList, GachaManager.WishListSetType.Manual)
     end
   end
 end

@@ -24,6 +24,7 @@ FightType_Rogue = 11
 FightType_ReplaceArena = 12
 FightType_Hunting = 13
 FightType_Letter = 14
+FightType_HeroTrial = 15
 FightType_Test = 99
 FightType_Friend = 33
 BattleWorldType_Normal = 0

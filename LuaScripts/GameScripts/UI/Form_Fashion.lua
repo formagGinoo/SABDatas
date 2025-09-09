@@ -35,6 +35,13 @@ function Form_Fashion:AfterInit()
     self.m_root_hero_BtnEx.Drag = handler(self, self.OnImgDrag)
     self.m_root_hero_BtnEx.EndDrag = handler(self, self.OnImgEndBDrag)
   end
+  self.m_lastPlayTouchVoiceTime = 0
+  self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
+  if self.m_spineClick then
+    self.m_spineClick.raycaster = self.m_rootTrans:GetComponent("GraphicRaycasterBugFixed")
+    self.m_spineClick.Touched = handler(self, self.OnSpineTouchClick)
+    self:StopCurTouchPlayingVoice()
+  end
   self.m_groupCam = self:OwnerStack().Group:GetCamera()
   self.m_startDragPos = nil
   self.m_startDragUIPosX = nil
@@ -50,6 +57,8 @@ function Form_Fashion:AfterInit()
   self.m_heroFashionInfoList = nil
   self.m_curChooseIndex = nil
   self.m_curShowFashion = nil
+  self.m_isFromHeroCheck = false
+  self.m_spineClickServerData = nil
   self.m_groupCam = self:OwnerStack().Group:GetCamera()
   self.m_curShowTab = nil
 end
@@ -63,6 +72,7 @@ end
 
 function Form_Fashion:OnInactive()
   self.super.OnInactive(self)
+  self:StopCurTouchPlayingVoice()
   self:ClearCacheData()
   self:CheckRecycleSpine(true)
   self:RemoveAllEventListeners()
@@ -70,6 +80,8 @@ end
 
 function Form_Fashion:OnDestroy()
   self.super.OnDestroy(self)
+  self:ClearCacheData()
+  self:StopCurTouchPlayingVoice()
   self:CheckRecycleSpine(true)
 end
 
@@ -86,11 +98,37 @@ function Form_Fashion:FreshData()
       self.m_curChooseIndex = 1
     end
     self.m_curShowFashion = self.m_heroFashionInfoList[self.m_curChooseIndex]
+    self.m_isFromHeroCheck = tParam.isFromHeroCheck
+    self:FreshSpineClickData()
     self.m_csui.m_param = nil
   end
 end
 
 function Form_Fashion:ClearCacheData()
+  self.m_startDragPos = nil
+  self.m_startDragUIPosX = nil
+end
+
+function Form_Fashion:FreshSpineClickData()
+  if not self.m_heroID then
+    return
+  end
+  if not self.m_curShowFashion then
+    return
+  end
+  local fashionID = self.m_curShowFashion.m_FashionID
+  local clickSpineID = fashionID
+  if self.m_curShowFashion.m_Type == 0 then
+    clickSpineID = 0
+  end
+  local spineClickData = {serverData = nil, iFashion = clickSpineID}
+  local isHaveFashion = self.m_HeroFashion:IsFashionHave(fashionID)
+  if self.m_isFromHeroCheck == true or self.m_heroData == nil or isHaveFashion ~= true then
+    spineClickData.serverData = AttractManager:GetOneLvHeroData(self.m_heroID)
+  else
+    spineClickData.serverData = self.m_heroData.serverData
+  end
+  self.m_spineClickServerData = spineClickData
 end
 
 function Form_Fashion:FreshFashionList()
@@ -277,6 +315,9 @@ function Form_Fashion:FreshShowFashionInfo()
 end
 
 function Form_Fashion:CheckRecycleSpine(isResetParam)
+  if self.m_spineClick then
+    self.m_spineClick:DestroyFollowerList()
+  end
   if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
     if isResetParam then
       UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
@@ -293,12 +334,17 @@ function Form_Fashion:ShowHeroSpine(heroSpinePathStr)
   if not self.m_HeroSpineDynamicLoader then
     return
   end
+  self:StopCurTouchPlayingVoice()
   self:CheckRecycleSpine()
   local typeStr = SpinePlaceCfg.HeroFashionItem
   self.m_HeroSpineDynamicLoader:LoadHeroSpine(heroSpinePathStr, typeStr, self.m_root_hero, function(spineLoadObj)
     self:CheckRecycleSpine()
     self.m_curHeroSpineObj = spineLoadObj
     self:OnLoadSpineBack()
+    if self.m_spineClick and self.m_curHeroSpineObj and not utils.isNull(self.m_curHeroSpineObj.spineObj) then
+      local spineStr = self.m_curHeroSpineObj.assetSpineStr
+      self.m_spineClick:BindingSpine("hero_place_" .. spineStr .. "," .. typeStr .. "," .. spineStr)
+    end
   end)
 end
 
@@ -377,6 +423,35 @@ function Form_Fashion:SpinePlayRandomAnim()
   end)
 end
 
+function Form_Fashion:PlayTouchVoice(voiceInfo)
+  UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
+    self.m_playingId = playingId
+    local tempVoiceInfo = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if tempVoiceInfo then
+      UILuaHelper.SetActive(self.m_dialog_root, true)
+      self.m_txt_dialog_Text.text = tempVoiceInfo.subtitle
+    end
+  end, function()
+    self.m_playTouchSubIndex = self.m_playTouchSubIndex + 1
+    local nextVoice = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if nextVoice ~= nil then
+      self:PlayTouchVoice(nextVoice)
+    else
+      self.m_playingId = nil
+      UILuaHelper.SetActive(self.m_dialog_root, false)
+    end
+  end)
+end
+
+function Form_Fashion:StopCurTouchPlayingVoice()
+  self.m_playTouchSubIndex = 1
+  if self.m_playingId then
+    UILuaHelper.StopPlaySFX(self.m_playingId)
+    self.m_playingId = nil
+  end
+  UILuaHelper.SetActive(self.m_dialog_root, false)
+end
+
 function Form_Fashion:OnBackClk()
   self:CheckRecycleSpine(true)
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
@@ -413,9 +488,7 @@ function Form_Fashion:OnImgEndBDrag(pointerEventData)
   local absDeltaNum = math.abs(deltaNum)
   if absDeltaNum < self.m_uiVariables.DragLimitNum then
     self:CheckShowDragBackTween()
-    return
-  end
-  if 0 < deltaNum then
+  elseif 0 < deltaNum then
     self:CheckShowLast()
   else
     self:CheckShowNext()
@@ -459,6 +532,7 @@ end
 function Form_Fashion:TryChangeCurFashion(toIndex)
   self.m_curChooseIndex = toIndex
   self.m_curShowFashion = self.m_heroFashionInfoList[self.m_curChooseIndex]
+  self:FreshSpineClickData()
   self:FreshShowFashionInfo()
   self:FreshCurTabSubPanelInfo(true)
   self:FreshVoiceOrFashionBtnShow()
@@ -571,6 +645,7 @@ function Form_Fashion:OnSubPanelFashionChange(index)
   end
   self.m_curChooseIndex = index
   self.m_curShowFashion = self.m_heroFashionInfoList[self.m_curChooseIndex]
+  self:FreshSpineClickData()
   self:FreshShowFashionInfo()
   self:FreshVoiceOrFashionBtnShow()
 end
@@ -606,6 +681,7 @@ function Form_Fashion:OnBtnvoiceClicked()
   end
   self:ChangeSubPanelShow(FashionTagCfg.Voice)
   self:FreshVoiceOrFashionBtnShow(true)
+  self:StopCurTouchPlayingVoice()
 end
 
 function Form_Fashion:OnBtnfashionClicked()
@@ -626,6 +702,34 @@ function Form_Fashion:OnBtninfoClicked()
   StackPopup:Push(UIDefines.ID_FORM_HEROPREVIEW, {
     fashionId = self.m_curShowFashion.m_FashionID
   })
+end
+
+function Form_Fashion:OnSpineTouchClick(name, localpos)
+  log.info("Form_Fashion spineClick:" .. tostring(name))
+  if self.m_startDragUIPosX then
+    return
+  end
+  local isStatic = LocalDataManager:GetIntSimple("FashionStaticToggle", 0) == 1
+  if isStatic then
+    return
+  end
+  if self.m_spineClickServerData == nil then
+    return
+  end
+  local curServerTime = TimeUtil:GetServerTimeS()
+  if curServerTime - self.m_lastPlayTouchVoiceTime < self.m_uiVariables.LimitVoiceSecNum then
+    return
+  end
+  self.m_lastPlayTouchVoiceTime = TimeUtil:GetServerTimeS()
+  local serverData = self.m_spineClickServerData.serverData
+  local heroID = serverData.iHeroId
+  local fashionID = self.m_spineClickServerData.iFashion
+  local vVoiceText = AttractManager:GetTouchVoice(serverData, heroID, fashionID, name)
+  if vVoiceText then
+    self:StopCurTouchPlayingVoice()
+    self.m_vVoiceTouchText = vVoiceText
+    self:PlayTouchVoice(self.m_vVoiceTouchText[self.m_playTouchSubIndex])
+  end
 end
 
 function Form_Fashion:GetDownloadResourceExtra(tParam)

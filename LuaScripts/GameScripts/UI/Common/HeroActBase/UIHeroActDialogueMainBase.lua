@@ -6,6 +6,7 @@ local LevelDegree = LevelHeroLamiaActivityManager.LevelDegree
 function UIHeroActDialogueMainBase:AfterInit()
   UIHeroActDialogueMainBase.super.AfterInit(self)
   self.m_rootTrans = self.m_csui.m_uiGameObject.transform
+  self.LevelDegree = LevelHeroLamiaActivityManager.LevelDegree
   local goBackBtnRoot = self.m_rootTrans:Find("content_node/ui_common_top_back").gameObject
   self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil, nil, 1117)
   self.m_activityID = nil
@@ -55,6 +56,7 @@ function UIHeroActDialogueMainBase:AfterInit()
       maxPageNum = nil
     }
   }
+  self.sSubPanelName = "LevelDetailLuoleilaiSubPanel"
 end
 
 function UIHeroActDialogueMainBase:OnActive()
@@ -80,12 +82,24 @@ function UIHeroActDialogueMainBase:OnInactive()
   if not utils.isNull(self.m_level_detail_root) then
     UILuaHelper.SetActive(self.m_level_detail_root, false)
   end
+  if self.m_hard_lock_timer then
+    TimeService:KillTimer(self.m_hard_lock_timer)
+    self.m_hard_lock_timer = nil
+  end
 end
 
 function UIHeroActDialogueMainBase:OnDestroy()
   UIHeroActDialogueMainBase.super.OnDestroy(self)
   self:ClearCacheData()
   self:UnRegisterAllRedDotItem()
+  if self.m_luaextensionInfinityGrid then
+    self.m_luaextensionInfinityGrid:dispose()
+    self.m_luaextensionInfinityGrid = nil
+  end
+  if self.m_hard_lock_timer then
+    TimeService:KillTimer(self.m_hard_lock_timer)
+    self.m_hard_lock_timer = nil
+  end
 end
 
 function UIHeroActDialogueMainBase:ClearCacheData()
@@ -286,18 +300,29 @@ function UIHeroActDialogueMainBase:FreshLevelTab(index)
   if index then
     self.m_curDegreeIndex = index
     local curDegreeData = self.DegreeCfgTab[index]
-    UILuaHelper.SetActive(curDegreeData.nodeSelect, true)
-    UILuaHelper.SetActive(curDegreeData.nodeUnSelect, false)
-    UILuaHelper.SetActive(curDegreeData.bgNode, true)
-    if curDegreeData.extensionChooseBg then
-      UILuaHelper.SetActive(curDegreeData.extensionChooseBg, true)
+    if not utils.isNull(curDegreeData.nodeSelect) then
+      UILuaHelper.SetActive(curDegreeData.nodeSelect, true)
+      UILuaHelper.SetActive(curDegreeData.nodeUnSelect, false)
+      UILuaHelper.SetActive(curDegreeData.bgNode, true)
+      if curDegreeData.extensionChooseBg then
+        UILuaHelper.SetActive(curDegreeData.extensionChooseBg, true)
+      end
     end
+    self.m_luaextensionInfinityGrid:ShowItemList(curDegreeData.levelList)
+    local chooseItemIndex = self:GetLevelIndexByLevelID(index, curDegreeData.currentID)
+    if not chooseItemIndex then
+      return
+    end
+    self.m_luaextensionInfinityGrid:LocateTo(chooseItemIndex - 2)
   end
 end
 
 function UIHeroActDialogueMainBase:CloseAllDegreeNode(ignoreIndex)
   for i, v in ipairs(self.DegreeCfgTab) do
     if ignoreIndex ~= i then
+      if utils.isNull(v.nodeUnSelect) then
+        return
+      end
       UILuaHelper.SetActive(v.nodeUnSelect, true)
       UILuaHelper.SetActive(v.nodeSelect, false)
       UILuaHelper.SetActive(v.bgNode, false)
@@ -316,6 +341,9 @@ function UIHeroActDialogueMainBase:FreshDegreeSubActivityID()
 end
 
 function UIHeroActDialogueMainBase:FreshHardLockStatus()
+  if utils.isNull(self.m_btn_Hard) then
+    return
+  end
   local subActivityID = self.DegreeCfgTab[LevelDegree.Hard].activitySubID
   local isOpen = HeroActivityManager:IsSubActIsOpenByID(self.m_activityID, subActivityID)
   if not utils.isNull(self.m_txt_locktime) then
@@ -333,13 +361,137 @@ function UIHeroActDialogueMainBase:FreshHardLockStatus()
       UILuaHelper.SetActive(self.m_txt_lock_condition, false)
     end
   end
-  UILuaHelper.SetActive(self.m_hard_lock, not isOpen)
+  if isOpen then
+    local flag = LocalDataManager:GetIntSimple("HeroActDialogueMainHardEntryUnlock" .. self.m_activityID, 0) == 0
+    if flag then
+      LocalDataManager:SetIntSimple("HeroActDialogueMainHardEntryUnlock" .. self.m_activityID, 1)
+      UILuaHelper.SetActive(self.m_hard_lock, true)
+      UILuaHelper.PlayAnimationByName(self.m_hard_lock, "Activity109_Level_HardLevelBtn_Unlock")
+      if self.m_hard_lock_timer then
+        TimeService:KillTimer(self.m_hard_lock_timer)
+        self.m_hard_lock_timer = nil
+      end
+      local fAniLength = UILuaHelper.GetAnimationLengthByName(self.m_hard_lock, "Activity109_Level_HardLevelBtn_Unlock")
+      self.m_hard_lock_timer = TimeService:SetTimer(fAniLength, 1, function()
+        if not utils.isNull(self.m_hard_lock) then
+          UILuaHelper.SetActive(self.m_hard_lock, false)
+        end
+      end)
+    else
+      UILuaHelper.SetActive(self.m_hard_lock, false)
+    end
+  else
+    UILuaHelper.SetActive(self.m_hard_lock, true)
+  end
   self.m_isHarLock = not isOpen
   local flag = LocalDataManager:GetIntSimple("HeroActDialogueMainHardEntry" .. self.m_activityID, 0) == 0
   self.m_hard_new:SetActive(flag)
 end
 
 function UIHeroActDialogueMainBase:FreshLevelDetailShow()
+  if self.m_curDetailLevelID then
+    UILuaHelper.SetActive(self.m_level_detail_root, true)
+    if self.m_luaDetailLevel == nil then
+      self:CreateSubPanel(self.sSubPanelName, self.m_level_detail_root, self, {
+        bgBackFun = handler(self, self.OnLevelDetailBgClick)
+      }, {
+        activityID = self.m_activityID,
+        levelID = self.m_curDetailLevelID
+      }, function(luaPanel)
+        self.m_luaDetailLevel = luaPanel
+        self.m_luaDetailLevel:AddEventListeners()
+      end)
+    else
+      self.m_luaDetailLevel:FreshData({
+        activityID = self.m_activityID,
+        levelID = self.m_curDetailLevelID
+      })
+    end
+    GlobalManagerIns:TriggerWwiseBGMState(95)
+  else
+    TimeService:SetTimer(0.2, 1, function()
+      if utils.isNull(self.m_level_detail_root) then
+        return
+      end
+      UILuaHelper.SetActive(self.m_level_detail_root, false)
+    end)
+    GlobalManagerIns:TriggerWwiseBGMState(96)
+  end
+end
+
+function UIHeroActDialogueMainBase:FreshDegreeLevelList()
+  for _, v in ipairs(self.DegreeCfgTab) do
+    local levelData = self.m_levelHelper:GetLevelDataByActAndSubID(self.m_activityID, v.activitySubID) or {}
+    local levelCfgList = levelData.levelCfgList
+    local curlevelCfg = self.m_levelHelper:GetCurLevel(self.m_activityID, v.activitySubID) or {}
+    local nextLevelID = curlevelCfg.m_LevelID or 0
+    local showLevelItemList = {}
+    for index, tempCfg in ipairs(levelCfgList) do
+      local isCurrent = tempCfg.m_LevelID == nextLevelID
+      local tempShowLevelItem = {
+        levelCfg = tempCfg,
+        isChoose = false,
+        bIsCurrent = isCurrent
+      }
+      showLevelItemList[#showLevelItemList + 1] = tempShowLevelItem
+      if isCurrent then
+        v.currentID = tempCfg.m_LevelID
+      end
+    end
+    for _, vv in ipairs(showLevelItemList) do
+      vv.maxNum = #showLevelItemList
+    end
+    v.levelList = showLevelItemList
+  end
+end
+
+function UIHeroActDialogueMainBase:OnItemClick(index)
+  if not index then
+    return
+  end
+  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
+  local levelList = degreeCfgTab.levelList
+  if not levelList then
+    return
+  end
+  local curLevelData = levelList[index]
+  local curLevelID = curLevelData.levelCfg.m_LevelID
+  degreeCfgTab.currentID = curLevelID
+  self.m_curDetailLevelID = curLevelID
+  self:FreshLevelDetailShow()
+  self:FreshSelecteLevel(index)
+end
+
+function UIHeroActDialogueMainBase:FreshSelecteLevel(index)
+  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
+  local levelList = degreeCfgTab.levelList
+  if not levelList then
+    return
+  end
+  for _, v in ipairs(levelList) do
+    v.isChoose = false
+  end
+  if index then
+    levelList[index].isChoose = true
+  end
+  if not utils.isNull(self.m_luaextensionInfinityGrid) then
+    self.m_luaextensionInfinityGrid:ReBindAll()
+  end
+end
+
+function UIHeroActDialogueMainBase:GetLevelIndexByLevelID(levelDegree, levelID)
+  if not levelDegree then
+    return
+  end
+  if not levelID then
+    return
+  end
+  local levelDataList = self.DegreeCfgTab[levelDegree].levelList
+  for i, v in ipairs(levelDataList) do
+    if v.levelCfg.m_LevelID == levelID then
+      return i
+    end
+  end
 end
 
 function UIHeroActDialogueMainBase:OnBackClk()
@@ -429,7 +581,28 @@ function UIHeroActDialogueMainBase:OnLevelDetailBgClick()
   if self.m_curDetailLevelID then
     self.m_curDetailLevelID = nil
     self:FreshLevelDetailShow()
+    self:FreshSelecteLevel()
   end
+end
+
+function UIHeroActDialogueMainBase:OnConsumetimeClicked()
+  local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    return
+  end
+  local costItemID = mainActInfoCfg.m_PassItem
+  local itemNum = ItemManager:GetItemNum(costItemID)
+  utils.openItemDetailPop({iID = costItemID, iNum = itemNum})
+end
+
+function UIHeroActDialogueMainBase:OnConsumetimefreeClicked()
+  local mainActInfoCfg = HeroActivityManager:GetMainInfoByActID(self.m_activityID)
+  if not mainActInfoCfg then
+    return
+  end
+  local costItemID = mainActInfoCfg.m_FreePassItem
+  local itemNum = ItemManager:GetItemNum(costItemID)
+  utils.openItemDetailPop({iID = costItemID, iNum = itemNum})
 end
 
 function UIHeroActDialogueMainBase:GetDownloadResourceExtra(tParam)

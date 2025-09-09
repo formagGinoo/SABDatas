@@ -205,6 +205,7 @@ CmdActivityData.Definition = {
   "mDownloadPictureCDN",
   "sJumpParam",
   "vLanguageId",
+  "iSortIndex",
   iActivityId = {
     0,
     0,
@@ -582,6 +583,12 @@ CmdActivityData.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  },
+  iSortIndex = {
+    65,
+    0,
+    8,
+    0
   }
 }
 CmdActivityStatus = sdp.SdpStruct("CmdActivityStatus")

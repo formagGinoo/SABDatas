@@ -8,7 +8,7 @@ function Form_ActivityMain:AfterInit()
   self.m_TabItemCache = {}
   self.m_subPanelData = {}
   local goBackBtnRoot = self.m_csui.m_uiGameObject.transform:Find("content_node/ui_common_top_back").gameObject
-  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk))
+  self.m_widgetBtnBack = self:createBackButton(goBackBtnRoot, handler(self, self.OnBackClk), nil)
   self.m_btn_symbol:SetActive(false)
   self.m_curType = nil
 end
@@ -22,8 +22,8 @@ function Form_ActivityMain:OnActive()
   if param ~= nil then
     selectIndex = self:GetSelecteIndex(param.activityId)
     self.m_csui.m_param = nil
-    if param.cliveType then
-      self.subPanelTabIndex = param.cliveType
+    if param.subPanelTabIndex then
+      self.subPanelTabIndex = param.subPanelTabIndex
     end
   end
   selectIndex = selectIndex or self.m_selectIndex or 1
@@ -38,6 +38,16 @@ function Form_ActivityMain:OnActivityResetData()
     selectIndex = 1
   end
   self:OnSelectIndex(selectIndex)
+end
+
+function Form_ActivityMain:OnUpdate(dt)
+  if self.m_subPanelData then
+    for _, v in pairs(self.m_subPanelData) do
+      if v.subPanelLua and v.subPanelLua.OnUpdate then
+        v.subPanelLua:OnUpdate(dt)
+      end
+    end
+  end
 end
 
 function Form_ActivityMain:GetSelecteIndex(param)
@@ -161,14 +171,15 @@ function Form_ActivityMain:OnSelectIndex(index)
       if subPanelLua then
         curSubPanelData.subPanelLua = subPanelLua
         subPanelLua:SetActive(curSubPanelData.IsActive)
+        self.subPanelTabIndex = nil
       end
     end
     
     SubPanelManager:LoadSubPanel(panelName, self.m_root_activity, self, {
-      cliveType = self.subPanelTabIndex
+      subPanelTabIndex = self.subPanelTabIndex
     }, {
       activity = curActivity,
-      cliveType = self.subPanelTabIndex
+      subPanelTabIndex = self.subPanelTabIndex
     }, loadCallBack)
   end
   for k, v in pairs(self.m_subPanelData) do
@@ -242,6 +253,7 @@ end
 function Form_ActivityMain:OnBackClk()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   StackFlow:RemoveUIFromStack(UIDefines.ID_FORM_ACTIVITYMAIN)
+  self:GoBackFormHall()
 end
 
 function Form_ActivityMain:OnBtnheroClicked()

@@ -215,11 +215,12 @@ function RogueStageManager:OnBackLobby(fCB)
     if isSuc then
       log.info("OnBackLobby MainCity LoadBack")
       formStr = "Form_Hall"
-      StackFlow:Push(UIDefines.ID_FORM_HALL)
       local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.RogueStage)
       if isOpen then
         formStr = "Form_RogueStageMain"
         StackFlow:Push(UIDefines.ID_FORM_ROGUESTAGEMAIN)
+      else
+        StackFlow:Push(UIDefines.ID_FORM_HALL)
       end
       if fCB then
         fCB(formStr)

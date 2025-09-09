@@ -50,6 +50,7 @@ function ConfigManager:CacheInstance()
       FashionEffects = CS.CData_FashionEffects.GetInstance(),
       FashionMovie = CS.CData_FashionMovie.GetInstance(),
       FashionSound = CS.CData_FashionSound.GetInstance(),
+      FashionTouch = CS.CData_FashionTouch.GetInstance(),
       Skill = CS.CData_Skill.GetInstance(),
       SkillBuff = CS.CData_SkillBuff.GetInstance(),
       Presentation = CS.CData_Presentation.GetInstance(),
@@ -67,6 +68,7 @@ function ConfigManager:CacheInstance()
       CharacterBattleStar = CS.CData_CharacterBattleStar.GetInstance(),
       CharacterLevelLock = CS.CData_CharacterLevelLock.GetInstance(),
       CharacterTrial = CS.CData_CharacterTrial.GetInstance(),
+      CharacterTrialLevel = CS.CData_CharacterTrialLevel.GetInstance(),
       CharacterTag = CS.CData_CharacterTag.GetInstance(),
       CharacterCampSub = CS.CData_CharacterCampSub.GetInstance(),
       CirculationType = CS.CData_CirculationType.GetInstance(),
@@ -124,7 +126,9 @@ function ConfigManager:CacheInstance()
       CineDialogueOption = CS.CData_CineDialogueOption.GetInstance(),
       CineRoleFace = CS.CData_CineRoleFace.GetInstance(),
       CineExpressionAnimation = CS.CData_CineExpressionAnimation.GetInstance(),
+      AVGDialogue = CS.CData_AVGDialogue.GetInstance(),
       ActionSoundEffects = CS.CData_ActionSoundEffects.GetInstance(),
+      TimelineSoundEffects = CS.CData_TimelineSoundEffects.GetInstance(),
       BGMStateGroup = CS.CData_BGMStateGroup.GetInstance(),
       BGMScene = CS.CData_BGMScene.GetInstance(),
       Property = CS.CData_Property.GetInstance(),
@@ -239,7 +243,11 @@ function ConfigManager:CacheInstance()
       CastleDispatchLocation = CS.CData_CastleDispatchLocation.GetInstance(),
       CastleStoryInfo = CS.CData_CastleStoryInfo.GetInstance(),
       CastleStoryPerform = CS.CData_CastleStoryPerform.GetInstance(),
-      ActExploreInteractive = CS.CData_ActExploreInteractive.GetInstance()
+      ActExploreInteractive = CS.CData_ActExploreInteractive.GetInstance(),
+      MiniGame108Level = CS.CData_MiniGame108Level.GetInstance(),
+      MiniGame108Event = CS.CData_MiniGame108Event.GetInstance(),
+      MiniGame108Equipment = CS.CData_MiniGame108Equipment.GetInstance(),
+      MiniGame108Guide = CS.CData_MiniGame108Guide.GetInstance()
     },
     {
       GuildLevel = CS.CData_GuildLevel.GetInstance(),

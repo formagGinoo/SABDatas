@@ -72,6 +72,7 @@ SpinePlaceCfg = {
   MainShow = "mainshow",
   MainShowSmall = "mainshowsmall",
   ActivityGacha = "activity_gacha",
+  ActivityHeroTrial = "herotrial",
   HuntingRaid = "huntingraid",
   HeroFashionItem = "herofashionitem",
   HeroBpMain = "herobpmain",
@@ -480,13 +481,17 @@ function HeroManager:OnHeroResetLevelSC(stData, msg)
   self:broadcastEvent("eGameEvent_Hero_ResetLevel")
 end
 
-function HeroManager:ReqSetPreset(presetID, heroIDList)
+function HeroManager:ReqSetPreset(presetID, heroIDList, isCopy)
   if not presetID or not heroIDList then
     return
+  end
+  if isCopy == nil then
+    isCopy = false
   end
   local msg = MTTDProto.Cmd_Form_SetPreset_CS()
   msg.iPresetId = presetID
   msg.vHeroId = heroIDList
+  msg.bIsCopy = isCopy
   RPCS():Form_SetPreset(msg, handler(self, self.OnSetFormPresetSC))
 end
 

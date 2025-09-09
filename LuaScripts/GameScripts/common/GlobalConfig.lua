@@ -220,6 +220,17 @@ M.QUALITY_EQUIP_ENUM = {
   T9 = 9,
   T10 = 10
 }
+M.QUALITY_EQUIP_Filter = {
+  {name = 1101},
+  {name = 1102},
+  {name = 1103},
+  {name = 1104},
+  {name = 1105},
+  {name = 1106},
+  {name = 1107},
+  {name = 1108},
+  {name = 1109}
+}
 M.QUALITY_COMMON_SETTING = {
   {
     name = 1001,

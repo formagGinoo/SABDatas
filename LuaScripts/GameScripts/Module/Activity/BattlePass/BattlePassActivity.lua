@@ -209,6 +209,14 @@ function BattlePassActivity:GetAdvancedAddLv()
   return self.m_stSdpConfig.stCommonCfg.iAdvancedExtraLevel
 end
 
+function BattlePassActivity:GetBarBg(bIsTask)
+  local sBarBg = self.m_stSdpConfig.stClientCfg.sRewardExpBackgroundPic
+  if bIsTask then
+    sBarBg = self.m_stSdpConfig.stClientCfg.sQuestExpBackgroundPic
+  end
+  return sBarBg
+end
+
 function BattlePassActivity:BuyAdvancedPass(productID, productSubID)
   if not productID then
     return
@@ -317,6 +325,14 @@ end
 
 function BattlePassActivity:GetBpName()
   return self:getLangText(self.m_stSdpConfig.stClientCfg.sName)
+end
+
+function BattlePassActivity:GetBPIcon()
+  return self.m_stSdpConfig.stClientCfg.sBPIcon
+end
+
+function BattlePassActivity:GetBpJumpId()
+  return self.m_stSdpConfig.stClientCfg.iJumpId
 end
 
 function BattlePassActivity:GetHeroId()

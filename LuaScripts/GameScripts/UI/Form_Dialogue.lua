@@ -36,6 +36,8 @@ function Form_Dialogue:AfterInit()
     local name = child.name
     if string.startsWith(name, "m_panelStyle") then
       self.subPnls[name] = child.gameObject
+      self.subPnls[name]:SetActive(true)
+      self.subPnls[name]:SetActive(false)
     end
   end
   self.expressionAnimation = self.m_imagePortrait:GetComponent(typeof(CS.CinExpressionAnimation))
@@ -44,6 +46,7 @@ function Form_Dialogue:AfterInit()
   self:SwitchMode(0)
   self:RefreshSpeedUp()
   self:SetDisableSpeedUp(true)
+  self.m_btnallskip:SetActive(false)
 end
 
 function Form_Dialogue:IsSpedUp()
@@ -81,6 +84,7 @@ function Form_Dialogue:CloseForm()
   self:SetAutoAndManual(false)
   self.m_btnReview:SetActive(false)
   self.m_btnSkip:SetActive(false)
+  self.m_btnallskip:SetActive(false)
   self.m_btnCannotSkip:SetActive(false)
   self.m_btnAuto:SetActive(false)
   self.m_btnManual:SetActive(false)
@@ -265,22 +269,16 @@ function Form_Dialogue:FillOption(message, showCountDown)
     local optionTrans = child:Find("m_pnl_option")
     local text = optionTrans:Find("txt_option"):GetComponent(T_TextMeshProUGUI)
     local key = message[i].Key
-    table.insert(reviewData.Options, key)
     local v = CS.MultiLanguageManager.Instance:GetPlotText(key)
     if v == nil then
       v = key
     end
     text.text = v
+    table.insert(reviewData.Options, v)
   end
 end
 
 function Form_Dialogue:FillDialogueContent(tCineVoiceExpressionInfo, isLast)
-  if self.fromTimeLine then
-    self:AddReviewData({
-      Type = 0,
-      Message = tCineVoiceExpressionInfo.m_ID
-    })
-  end
   self.m_fTime = 0
   self.m_fDuration = tCineVoiceExpressionInfo.m_Duration
   if isLast and self.m_bAutoPlayForce then
@@ -295,6 +293,18 @@ function Form_Dialogue:FillDialogueContent(tCineVoiceExpressionInfo, isLast)
   end
   local sName = CS.MultiLanguageManager.Instance:GetPlotText(tCineVoiceExpressionInfo.m_RoleName)
   local dialogueContent = CS.MultiLanguageManager.Instance:GetPlotText(tCineVoiceExpressionInfo.m_DialogueContent)
+  if self.fromTimeLine then
+    local reviewData = {
+      Type = 0,
+      RoleName = sName,
+      DialogueContent = dialogueContent,
+      Voice = tCineVoiceExpressionInfo.m_Voice
+    }
+    if tCineVoiceExpressionInfo.m_RoleName == "Role_Name_narration" then
+      reviewData.RoleName = ConfigManager:GetClientMessageTextById(48004)
+    end
+    self:AddReviewData(reviewData)
+  end
   self.m_iDialogueStyle = tCineVoiceExpressionInfo.m_DialogueStyle
   if self.m_iDialogueStyle == 0 then
     self.m_panel_end:SetActive(true)
@@ -516,6 +526,10 @@ function Form_Dialogue:SetSkip(bCanSkip)
   end
 end
 
+function Form_Dialogue:SetAllSkip(bCanAllSkip)
+  self.m_btnallskip:SetActive(bCanAllSkip)
+end
+
 function Form_Dialogue:SetReview(bCanReview)
   self.closeReview = bCanReview
 end
@@ -659,6 +673,26 @@ function Form_Dialogue:RefreshSpeedUp()
 end
 
 function Form_Dialogue:OnBtnSkipClicked()
+  self:OnSkipBefore()
+  self:broadcastEvent("eGameEvent_DialogueSkip")
+end
+
+function Form_Dialogue:OnBtnallskipClicked()
+  local showToggle = LocalDataManager:GetIntSimple("DialogueAllSkip", 0)
+  if showToggle ~= 1 then
+    StackTop:Push(UIDefines.ID_FORM_GUIDEALLSKIPPOP, {
+      func1 = function()
+        self:broadcastEvent("eGameEvent_DialogueAllSkip")
+        self:OnSkipBefore()
+      end
+    })
+  else
+    self:broadcastEvent("eGameEvent_DialogueAllSkip")
+    self:OnSkipBefore()
+  end
+end
+
+function Form_Dialogue:OnSkipBefore()
   self:StopSFX()
   self:broadcastEvent("eGameEvent_DialogueShowEnd")
   self:broadcastEvent("eGameEvent_DialogueOptionSelect", 0)
@@ -667,7 +701,6 @@ function Form_Dialogue:OnBtnSkipClicked()
   end
   self:CloseForm()
   self.expressionAnimation:ReleaseResource()
-  self:broadcastEvent("eGameEvent_DialogueSkip")
 end
 
 function Form_Dialogue:OnBtnCannotSkipClicked()
@@ -691,7 +724,13 @@ function Form_Dialogue:OnBtnReviewClicked()
   end
   CS.TimelineExtension.TimelineAssembler.SetPause(true)
   self:SetPause(true)
-  StackSpecial:Push(UIDefines.ID_FORM_DIALOGUEREVIEW, self.m_review)
+  StackSpecial:Push(UIDefines.ID_FORM_DIALOGUEREVIEW, {
+    data = self.m_review,
+    onClose = function()
+      CS.TimelineExtension.TimelineAssembler.SetPause(false)
+      self:SetPause(false)
+    end
+  })
 end
 
 function Form_Dialogue:RemoveEventListeners()

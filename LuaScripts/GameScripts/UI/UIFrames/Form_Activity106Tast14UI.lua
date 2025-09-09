@@ -1,4 +1,4 @@
-local Form_Activity106Tast14UI = class("Form_Activity106Tast14UI", require("UI/Common/UIBase"))
+local Form_Activity106Tast14UI = class("Form_Activity106Tast14UI", require("UI/Common/UIActivityTask14Base"))
 
 function Form_Activity106Tast14UI:Init(gameObject, csui)
   if gameObject == nil then

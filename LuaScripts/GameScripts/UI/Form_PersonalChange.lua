@@ -880,15 +880,16 @@ function Form_PersonalChange:FreshBgLeftTimeStr()
     self.m_isHaveBgUpdate = false
     self.m_curBgDeltaNum = 0
     self.m_headBgEndTime = nil
-    self.m_curUseHeadFrameID = RoleManager:GetHeadFrameID()
+    self.m_curUseBgID = RoleManager:GetHeadBackGroundID()
+    self.m_curBgID = self.m_curUseBgID
     self:InitCreateListData()
-    self:FreshFilterHeadFrameList()
-    self:FreshLeftHeadFrameShow()
-    self:FreshHeadFrameContentShow()
+    self:FreshFilterHeadBgList()
+    self:FreshHeadBgContentShow()
+    self:FreshLeftHeadBgShow()
     self:FreshButtonsShow()
   else
-    UILuaHelper.SetActive(self.m_pnl_left_time, true)
-    self.m_txt_lefttimeheadfarme_Text.text = TimeUtil:SecondToTimeText(leftSec)
+    UILuaHelper.SetActive(self.m_pnl_left_bg_time, true)
+    self.m_txt_bg_lefttime_Text.text = TimeUtil:SecondToTimeText(leftSec)
   end
 end
 
@@ -949,10 +950,10 @@ function Form_PersonalChange:OnRoleBgItemClk(bgIndex)
       showItemData.isSelect = false
     end
   else
-    local allHeadIndex = self:GetBgIndexByID(self.m_curBgID)
-    if allHeadIndex then
-      local headItemData = self.m_bgDataList[allHeadIndex]
-      headItemData.isSelect = false
+    local allBgIndex = self:GetBgIndexByID(self.m_curBgID)
+    if allBgIndex then
+      local bgItemData = self.m_bgDataList[allBgIndex]
+      bgItemData.isSelect = false
     end
   end
   local toShowItem = self.m_luaBgInfinityGrid:GetShowItemByIndex(bgIndex)
@@ -1120,13 +1121,18 @@ function Form_PersonalChange:OnBtnresetClicked()
   self.m_curUseHeadID = self.m_curHeadID
   self.m_curHeadFrameID = RoleManager:GetHeadFrameID()
   self.m_curUseHeadFrameID = self.m_curHeadFrameID
+  self.m_curBgID = RoleManager:GetHeadBackGroundID()
+  self.m_curUseBgID = self.m_curBgID
   self:InitCreateListData()
   self:FreshFilterHeadList()
   self:FreshFilterHeadFrameList()
+  self:FreshFilterHeadBgList()
   self:FreshLeftHeadShow()
   self:FreshLeftHeadFrameShow()
+  self:FreshLeftHeadBgShow()
   self:FreshHeadContentShow()
   self:FreshHeadFrameContentShow()
+  self:FreshHeadBgContentShow()
   self:FreshButtonsShow()
 end
 
@@ -1205,8 +1211,8 @@ function Form_PersonalChange:InitCreateBgData()
     if isUseA ~= isUseB then
       return isUseA
     end
-    local isNewA = RoleManager:GetRoleMainBackgroundNewFlag(headIDA)
-    local isNewB = RoleManager:GetRoleMainBackgroundNewFlag(headIDB)
+    local isNewA = RoleManager:GetRoleHeadBackgroundNewFlag(headIDA)
+    local isNewB = RoleManager:GetRoleHeadBackgroundNewFlag(headIDB)
     if isNewA ~= isNewB then
       return isNewA
     end

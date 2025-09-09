@@ -160,7 +160,8 @@ function Form_ActivityDayTask14:OnEventTakeFinalReward(sc)
   if sc.iActivityId ~= self.m_stActivity:getID() then
     return
   end
-  utils.popUpRewardUI(sc.vReward)
+  utils.popUpRewardUI(sc.vReward, function()
+  end, sc.mChangeReward)
   self:RefreshFinalReward()
 end
 

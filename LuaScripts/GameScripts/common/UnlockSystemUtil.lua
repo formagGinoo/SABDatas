@@ -23,6 +23,14 @@ function M:GetSystemUnlockConfig(id)
   return configInstance:GetValue_BySystemID(id)
 end
 
+function M:GetSystemName(id)
+  local cfg = self:GetSystemUnlockConfig(id)
+  if cfg and not cfg:GetError() then
+    return cfg.m_mName
+  end
+  return ""
+end
+
 function M:GetLockClientMessage(id)
   local configInstance = ConfigManager:GetConfigInsByName("ClientMessage")
   local cfg = configInstance:GetValue_ByID(id)

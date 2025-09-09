@@ -41,7 +41,7 @@
       "m_bError": null,
       "m_ID": "7",
       "m_mName": "\"Lifesteal\"",
-      "m_mDesc": "\"Lifesteal: Converts a portion of damage dealt into HP recovery.\""
+      "m_mDesc": "\"Lifesteal: Recovers HP equal to a percentage of HP loss inflicted.\""
     },
     "8": {
       "m_bError": null,
@@ -60,6 +60,12 @@
       "m_ID": "10",
       "m_mName": "\"Effective Range\"",
       "m_mDesc": "\"DMG dealt by this Vassal varies with range. It increases by up to 50% at the farthest target while decreasing by up to 50% at the target nearby.\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_ID": "11",
+      "m_mName": "\"Piercing DMG\"",
+      "m_mDesc": "\"A special type of DMG. When inflicted, it ignores a certain amount of P. DEF and M. DEF and deals 200% DMG to Shields. This DMG type is not affected by P. DMG and M. DMG related effects.\""
     },
     "20080": {
       "m_bError": null,
@@ -115,6 +121,12 @@
       "m_mName": "\"Planar Regression\"",
       "m_mDesc": "\"Basic ATK turns into boomerang attacks, targeting enemies within the Projected Plane.\""
     },
+    "20690": {
+      "m_bError": null,
+      "m_ID": "20690",
+      "m_mName": "\"Overdrive\"",
+      "m_mDesc": "\"When above 50% Bloodsoul, can be cast even with insufficient Bloodsoul. If there is extra Bloodsoul when casting, enters Overdrive, during which any Ultimates costing over 0 cannot be cast, however Bloodsoul recovery rate is increased by 20%. Overload ends when Bloodsoul recovers to 0.\""
+    },
     "30130": {
       "m_bError": null,
       "m_ID": "30130",
@@ -122,5 +134,5 @@
       "m_mDesc": "\"A summon that performs Basic ATKs.\""
     }
   },
-  "status": "processed_20_items"
+  "status": "processed_22_items"
 }

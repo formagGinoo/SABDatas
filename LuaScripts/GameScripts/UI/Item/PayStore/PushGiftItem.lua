@@ -10,7 +10,6 @@ end
 
 function PushGiftItem:OnFreshData()
   local config = self.m_itemData
-  self.m_txt_titlegift_Text.text = self.m_Activity:getLangText(config.sGiftName)
   self.m_txt_profit_num_Text.text = tonumber(config.iGiftDiscount) .. "%"
   if config.sIcon ~= "" then
     UILuaHelper.SetAtlasSprite(self.m_icon_box_Image, config.sIcon)
@@ -19,6 +18,8 @@ function PushGiftItem:OnFreshData()
   self.m_img_bg1:SetActive(config.sortIndex == 1)
   self.m_img_bg2:SetActive(config.sortIndex == 2)
   self.m_img_bg3:SetActive(config.sortIndex == 3)
+  self.m_img_cutline:SetActive(config.sortIndex ~= 3)
+  self.m_img_soldoutmask:SetActive(false)
   if config.sProductID == "" then
     self.m_txt_price_Text.text = ConfigManager:GetCommonTextById(20041)
   else
@@ -29,12 +30,6 @@ function PushGiftItem:OnFreshData()
   end
   local itemRoot = self.m_pnl_itemgift.transform
   local count = #config.sGiftItems
-  local pointRewardIndex = 0
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductID)
-  if isShowPoint then
-    count = count + 1
-    pointRewardIndex = count - 1
-  end
   self:UpdateChildCount(itemRoot, count)
   for i, v in ipairs(config.sGiftItems) do
     local itemObj = itemRoot:GetChild(i - 1).gameObject
@@ -48,27 +43,29 @@ function PushGiftItem:OnFreshData()
     })
     common_item:SetItemInfo(processItemData)
   end
-  if isShowPoint then
-    local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
-    local common_item = self:createCommonItem(itemObj)
-    common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
-      utils.openItemDetailPop({iID = itemID, iNum = itemNum})
-    end)
-    local processItemData = ResourceUtil:GetProcessRewardData({
-      iID = pointReward.iID,
-      iNum = pointReward.iNum
-    })
-    common_item:SetItemInfo(processItemData)
+  self:FreshPointReward()
+end
+
+function PushGiftItem:FreshPointReward()
+  if utils.isNull(self.m_packgift_point) then
+    return
   end
-  local iconBtn = self.m_icon_box:GetComponent(T_Button)
-  if utils.isNull(iconBtn) then
-    iconBtn = self.m_icon_box:AddComponent(T_Button)
-    local iconImg = self.m_icon_box:GetComponent(T_Image)
-    iconImg.raycastTarget = true
-    iconBtn.onClick:RemoveAllListeners()
-    iconBtn.onClick:AddListener(function()
-      self:OnBtnbuyClicked()
-    end)
+  local productId = self.m_itemData.sProductID
+  if not productId then
+    self.m_packgift_point:SetActive(false)
+    return
+  end
+  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
+  local pointParams = {pointReward = pointReward}
+  if isShowPoint then
+    self.m_packgift_point:SetActive(true)
+    if self.m_paidGiftPoint then
+      self.m_paidGiftPoint:SetFreshInfo(pointParams)
+    else
+      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
+    end
+  else
+    self.m_packgift_point:SetActive(false)
   end
 end
 

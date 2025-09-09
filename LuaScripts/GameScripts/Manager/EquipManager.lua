@@ -1,5 +1,12 @@
 local BaseManager = require("Manager/Base/BaseManager")
 local EquipManager = class("EquipManager", BaseManager)
+EquipManager.EquipFilterType = {
+  Pos = 1,
+  Camp = 2,
+  EquipType = 3,
+  Quality = 4,
+  Enhance = 5
+}
 
 function EquipManager:OnCreate()
   self.m_EquipList = {}
@@ -13,6 +20,8 @@ end
 
 function EquipManager:OnAfterInitConfig()
   self.m_equipCfgIns = ConfigManager:GetConfigInsByName("Equipment")
+  local equipUpgradeItem = ConfigManager:GetGlobalSettingsByKey("EquipUpgradeItem") or ""
+  self.m_EquipUpgradeItemIds = string.split(equipUpgradeItem, ",") or {}
   self.m_equipCfgCacheList = {}
 end
 
@@ -66,6 +75,20 @@ function EquipManager:OnReqEquipAddExpSC(stEquipData, msg)
     vReturnItem = stEquipData.vReturnItem,
     iExp = stEquipData.iExp
   })
+end
+
+function EquipManager:ReqEquipDecompose(vEquipUid)
+  local reqMsg = MTTDProto.Cmd_Equip_Decompose_CS()
+  reqMsg.vEquipUid = vEquipUid
+  reqMsg.bConfirm = true
+  RPCS():Equip_Decompose(reqMsg, handler(self, self.OnReqEquipDecomposeSC))
+end
+
+function EquipManager:OnReqEquipDecomposeSC(stEquipData, msg)
+  if stEquipData and table.getn(stEquipData.vReturnItem) > 0 then
+    utils.popUpRewardUI(stEquipData.vReturnItem)
+  end
+  self:broadcastEvent("eGameEvent_Equip_Decompose")
 end
 
 function EquipManager:OnPushSetEquipData(stEquipData, msg)
@@ -211,18 +234,48 @@ function EquipManager:GetEquipList()
   return self.m_EquipList
 end
 
-function EquipManager:GetUnOverLoadEquipDataList()
-  local tempHeroIdList = {}
+function EquipManager:GetAllBagEquipDataList()
+  local tempEquipList = {}
   for _, v in ipairs(self.m_EquipList) do
-    if v.iOverloadHero == 0 and v.iHeroId == 0 then
-      tempHeroIdList[#tempHeroIdList + 1] = {
+    tempEquipList[#tempEquipList + 1] = {
+      iID = v.iBaseId,
+      iNum = 1,
+      data = v
+    }
+  end
+  return tempEquipList
+end
+
+function EquipManager:GetBagEquipDataListByPos(pos)
+  if not pos then
+    return
+  end
+  local equipList = {}
+  for _, v in ipairs(self.m_EquipList) do
+    local cfg = self:GetEquipCfgByBaseId(v.iBaseId)
+    if cfg and cfg.m_PosRes == pos then
+      equipList[#equipList + 1] = {
         iID = v.iBaseId,
         iNum = 1,
         data = v
       }
     end
   end
-  return tempHeroIdList
+  return equipList
+end
+
+function EquipManager:GetUnOverLoadEquipDataList()
+  local tempEquipList = {}
+  for _, v in ipairs(self.m_EquipList) do
+    if v.iOverloadHero == 0 and v.iHeroId == 0 then
+      tempEquipList[#tempEquipList + 1] = {
+        iID = v.iBaseId,
+        iNum = 1,
+        data = v
+      }
+    end
+  end
+  return tempEquipList
 end
 
 function EquipManager:GetUnOverLoadEquipDataListByPos(pos)
@@ -530,23 +583,26 @@ function EquipManager:GetEquipOverLoadExAttr(iEquipUid)
     local PropertyIndexIns = ConfigManager:GetConfigInsByName("PropertyIndex")
     local propertyIndexCfg = PropertyIndexIns:GetAll()
     local attrOverloadEffect = equipData.mOverloadEffect
-    for pos, propertyID in pairs(attrOverloadEffect) do
-      local basePropertyCfg = PropertyIns:GetValue_ByPropertyID(propertyID)
-      for attrId, v in pairs(propertyIndexCfg) do
-        if v.m_Compute == 1 then
-          local propertyNum = basePropertyCfg["m_" .. v.m_ENName]
-          if v.m_ENName and propertyNum and 0 < propertyNum then
-            attrInfoList[pos] = {
-              cfg = v,
-              num = propertyNum,
-              id = attrId
-            }
-            attrList[pos] = {attrId, propertyNum}
-          end
-          if not attrDic[v.m_ENName] then
-            attrDic[v.m_ENName] = propertyNum
-          else
-            attrDic[v.m_ENName] = attrDic[v.m_ENName] + propertyNum
+    for pos, effect in pairs(attrOverloadEffect) do
+      local effectCfg = self:GetEquipEffectCfgByIdLv(effect.iGroupId, effect.iEffectLevel)
+      if effectCfg then
+        local basePropertyCfg = PropertyIns:GetValue_ByPropertyID(effectCfg.m_PropertyID)
+        for attrId, v in pairs(propertyIndexCfg) do
+          if v.m_Compute == 1 then
+            local propertyNum = basePropertyCfg["m_" .. v.m_ENName]
+            if v.m_ENName and propertyNum and 0 < propertyNum then
+              attrInfoList[pos] = {
+                cfg = v,
+                num = propertyNum,
+                id = attrId
+              }
+              attrList[pos] = {attrId, propertyNum}
+            end
+            if not attrDic[v.m_ENName] then
+              attrDic[v.m_ENName] = propertyNum
+            else
+              attrDic[v.m_ENName] = attrDic[v.m_ENName] + propertyNum
+            end
           end
         end
       end
@@ -565,7 +621,8 @@ function EquipManager:GetHeroEquippedDataByHeroServerData(severHeroData)
     local tmp = {
       equipBaseId = equipData.iBaseId,
       level = equipData.iLevel,
-      iOverloadHero = equipData.iOverloadHero
+      iOverloadHero = equipData.iOverloadHero,
+      equipUid = equipData.iEquipUid
     }
     retTab[#retTab + 1] = tmp
   end
@@ -718,14 +775,22 @@ function EquipManager:SortEquipListByQuality(equipList, filterDown)
     local quality2 = equipCfg2.m_Quality
     if data1.data and data2.data then
       if quality1 == quality2 then
-        if data1.data.iLevel == data2.data.iLevel then
-          if data1.data.iHeroId == data2.data.iHeroId then
-            return data1.iID > data2.iID
+        local overLoad1 = data1.data.iOverloadHero ~= 0 and 1 or 0
+        local overLoad2 = data2.data.iOverloadHero ~= 0 and 1 or 0
+        if overLoad1 == overLoad2 then
+          if data1.data.iLevel == data2.data.iLevel then
+            if data1.data.iHeroId == data2.data.iHeroId then
+              return data1.iID > data2.iID
+            else
+              return data1.data.iHeroId > data2.data.iHeroId
+            end
           else
-            return data1.data.iHeroId > data2.data.iHeroId
+            return data1.data.iLevel > data2.data.iLevel
           end
+        elseif filterDown == false then
+          return overLoad1 > overLoad2
         else
-          return data1.data.iLevel > data2.data.iLevel
+          return overLoad1 < overLoad2
         end
       elseif filterDown == false then
         return quality1 > quality2
@@ -752,9 +817,19 @@ function EquipManager:SortEquipListByLevel(equipList, filterDown)
     local quality1 = equipCfg1.m_Quality
     local quality2 = equipCfg2.m_Quality
     if data1.data and data2.data then
+      local overLoad1 = data1.data.iOverloadHero ~= 0 and 1 or 0
+      local overLoad2 = data2.data.iOverloadHero ~= 0 and 1 or 0
       if data1.data.iLevel == data2.data.iLevel then
         if quality1 == quality2 then
-          return data1.data.iHeroId > data2.data.iHeroId
+          if overLoad1 == overLoad2 then
+            if data1.data.iHeroId == data2.data.iHeroId then
+              return data1.iID < data2.iID
+            else
+              return data1.data.iHeroId > data2.data.iHeroId
+            end
+          else
+            return overLoad1 > overLoad2
+          end
         else
           return quality1 > quality2
         end
@@ -817,6 +892,10 @@ end
 function EquipManager:GetEquipEXPValueById(equipUid)
   local EquipLevelIns = ConfigManager:GetConfigInsByName("EquipLevel")
   local equipData = self:GetEquipDataByID(equipUid)
+  if not equipData then
+    log.error("GetEquipEXPValueById equipData is nil equipUid == " .. tostring(equipUid))
+    return 0
+  end
   local equipCfg = self:GetEquipCfgByBaseId(equipData.iBaseId)
   local levelTemplateID = equipData.iOverloadHero == 0 and equipCfg.m_LevelTemplate or equipCfg.m_OverloadLevelTemplate
   local lvCfg = EquipLevelIns:GetValue_ByEquipLevelTemplateAndEquipLevel(levelTemplateID, equipData.iLevel)
@@ -1009,7 +1088,7 @@ end
 function EquipManager:GetSameEquipByEquipUid(equipUid)
   local equipList = {}
   local equipData = self:GetEquipDataByID(equipUid)
-  if equipData then
+  if equipData and equipData.iLevel == 0 and equipData.iExp == 0 then
     local equipDataList = self:GetEquipDataByCfgID(equipData.iBaseId)
     for i, v in ipairs(equipDataList) do
       if v.iHeroId == 0 and v.iLevel == equipData.iLevel and v.iExp == equipData.iExp then
@@ -1022,6 +1101,8 @@ function EquipManager:GetSameEquipByEquipUid(equipUid)
     end
     
     table.sort(equipDataList, sortFun)
+  else
+    equipList[#equipList + 1] = equipData
   end
   return equipList
 end
@@ -1034,6 +1115,234 @@ function EquipManager:GetEquipTypeCfgById(equipType)
     return
   end
   return stItemData
+end
+
+local __EquipFilterType = {}
+__EquipFilterType[EquipManager.EquipFilterType.Pos] = function(cfg, pos)
+  return cfg.m_PosRes == pos
+end
+__EquipFilterType[EquipManager.EquipFilterType.Camp] = function(cfg, camp)
+  return cfg.m_BonusCamp == camp
+end
+__EquipFilterType[EquipManager.EquipFilterType.EquipType] = function(cfg, equipType)
+  return cfg.m_EquiptypeRes == equipType
+end
+__EquipFilterType[EquipManager.EquipFilterType.Quality] = function(cfg, quality)
+  return cfg.m_Quality == quality
+end
+__EquipFilterType[EquipManager.EquipFilterType.Enhance] = function(equipData)
+  if equipData and equipData.iLevel and equipData.iLevel > 0 then
+    return true
+  end
+end
+
+function EquipManager:FilterEquipByConditions(equipList, filterConditions)
+  local equips = {}
+  local equipIdTab = {}
+  if table.getn(filterConditions) == 0 or table.getn(equipList) == 0 then
+    return equips, equipIdTab
+  end
+  local includeEnhance = filterConditions[EquipManager.EquipFilterType.Enhance]
+  for i, v in pairs(equipList) do
+    local baseId = v.iID or v.iBaseId
+    if baseId and ResourceUtil:GetResourceTypeById(baseId) == ResourceUtil.RESOURCE_TYPE.EQUIPS then
+      local cfg = self:GetEquipCfgByBaseId(baseId)
+      if cfg then
+        local matchFlag = true
+        local equipData = v.data or v.customData or v
+        if not includeEnhance and __EquipFilterType[EquipManager.EquipFilterType.Enhance](equipData) then
+          matchFlag = false
+        else
+          for equipFilterType, filters in pairs(filterConditions) do
+            if equipFilterType ~= EquipManager.EquipFilterType.Enhance then
+              local chooseFlag = false
+              for condition, _ in pairs(filters) do
+                if __EquipFilterType[equipFilterType](cfg, condition) then
+                  chooseFlag = true
+                  break
+                end
+              end
+              if not chooseFlag then
+                matchFlag = false
+                break
+              end
+            end
+          end
+        end
+        if matchFlag then
+          table.insert(equips, v)
+          if equipData.iEquipUid then
+            equipIdTab[equipData.iEquipUid] = v
+          end
+        end
+      end
+    else
+      log.error("EquipManager FilterEquipByConditions baseId is nil !!!")
+    end
+  end
+  return equips, equipIdTab
+end
+
+function EquipManager:FilterUpgradeEquipByConditions(equipList, filterConditions)
+  local equips = {}
+  local equipIdTab = {}
+  if table.getn(filterConditions) == 0 or table.getn(equipList) == 0 then
+    return equips, equipIdTab
+  end
+  local includeEnhance = filterConditions[EquipManager.EquipFilterType.Enhance]
+  for i, v in pairs(equipList) do
+    local baseId = v.iID or v.iBaseId
+    if baseId and ResourceUtil:GetResourceTypeById(baseId) == ResourceUtil.RESOURCE_TYPE.EQUIPS then
+      local cfg = self:GetEquipCfgByBaseId(baseId)
+      if cfg then
+        local matchFlag = true
+        local equipData = v.data or v.customData or v
+        local lvUpFlag = __EquipFilterType[EquipManager.EquipFilterType.Enhance](equipData)
+        if not includeEnhance and not lvUpFlag then
+          for equipFilterType, filters in pairs(filterConditions) do
+            if equipFilterType ~= EquipManager.EquipFilterType.Enhance then
+              local chooseFlag = false
+              for condition, _ in pairs(filters) do
+                if __EquipFilterType[equipFilterType](cfg, condition) then
+                  chooseFlag = true
+                  break
+                end
+              end
+              if not chooseFlag then
+                matchFlag = false
+                break
+              end
+            end
+          end
+        elseif includeEnhance and lvUpFlag then
+          for equipFilterType, filters in pairs(filterConditions) do
+            if equipFilterType ~= EquipManager.EquipFilterType.Enhance then
+              local chooseFlag = false
+              for condition, _ in pairs(filters) do
+                if __EquipFilterType[equipFilterType](cfg, condition) then
+                  chooseFlag = true
+                  break
+                end
+              end
+              if not chooseFlag then
+                matchFlag = false
+                break
+              end
+            end
+          end
+        else
+          matchFlag = false
+        end
+        if matchFlag then
+          table.insert(equips, v)
+          if equipData.iEquipUid then
+            equipIdTab[equipData.iEquipUid] = v
+          end
+        end
+      end
+    else
+      log.error("EquipManager FilterEquipByConditions baseId is nil !!!")
+    end
+  end
+  return equips, equipIdTab
+end
+
+function EquipManager:GetSameEquipInListByEquipUid(equipDataLists, equipUid)
+  local equipList = {}
+  local equipData
+  for _, v in ipairs(equipDataLists) do
+    if v.data and v.data.iEquipUid == equipUid then
+      equipData = v.data
+    end
+  end
+  if equipData and equipData.iLevel == 0 and equipData.iExp == 0 then
+    local equipDataList = self:GetEquipDataInListByCfgID(equipDataLists, equipData.iBaseId)
+    for i, v in ipairs(equipDataList) do
+      if v.iHeroId == 0 and v.iLevel == equipData.iLevel and v.iExp == equipData.iExp then
+        equipList[#equipList + 1] = v
+      end
+    end
+    
+    local function sortFun(a, b)
+      return tonumber(a.iEquipUid) < tonumber(b.iEquipUid)
+    end
+    
+    table.sort(equipDataList, sortFun)
+  else
+    equipList[#equipList + 1] = equipData
+  end
+  return equipList
+end
+
+function EquipManager:GetEquipDataInListByCfgID(equipDataLists, cfgID)
+  if not cfgID then
+    return
+  end
+  local equipList = {}
+  for _, v in ipairs(equipDataLists) do
+    if v.data and v.data.iBaseId == cfgID then
+      equipList[#equipList + 1] = v.data
+    end
+  end
+  return equipList
+end
+
+function EquipManager:GetEquipReachLvNeedExp(iLevel, levelTemplateID, upLv)
+  local totalExp = 0
+  local lv = iLevel
+  local maxLv = false
+  local EquipLevelIns = ConfigManager:GetConfigInsByName("EquipLevel")
+  for i = lv, upLv - 1 do
+    local lvCfg = EquipLevelIns:GetValue_ByEquipLevelTemplateAndEquipLevel(levelTemplateID, lv)
+    if not lvCfg:GetError() and 0 < lvCfg.m_EXPConsume then
+      local EXPConsume = lvCfg.m_EXPConsume
+      totalExp = EXPConsume + totalExp
+    else
+      maxLv = true
+      break
+    end
+    lv = lv + 1
+  end
+  return totalExp, maxLv, lv
+end
+
+function EquipManager:ResolveEquipToExpItemByEquipMap(equipTab)
+  local resolvedExp = 0
+  for uid, v in pairs(equipTab) do
+    resolvedExp = resolvedExp + self:GetEquipEXPValueById(uid)
+  end
+  if resolvedExp <= 0 then
+    return {}
+  end
+  local itemList = {}
+  for i = #self.m_EquipUpgradeItemIds, 1, -1 do
+    local itemId = tonumber(self.m_EquipUpgradeItemIds[i])
+    local itemCfg = ItemManager:GetItemConfigById(itemId)
+    if itemCfg then
+      itemList[#itemList + 1] = {
+        itemId = itemId,
+        itemUse = tonumber(itemCfg.m_ItemUse)
+      }
+    end
+  end
+  
+  local function sortFun(a, b)
+    return a.itemUse > b.itemUse
+  end
+  
+  table.sort(itemList, sortFun)
+  local items = {}
+  for i, v in ipairs(itemList) do
+    local itemNum = resolvedExp // v.itemUse
+    if 0 < itemNum then
+      items[#items + 1] = {
+        iID = v.itemId,
+        iNum = itemNum
+      }
+      resolvedExp = resolvedExp - itemNum * v.itemUse
+    end
+  end
+  return items
 end
 
 return EquipManager

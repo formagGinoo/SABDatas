@@ -10,6 +10,7 @@ function MallGoodsChapterNewSubPanel:OnInit()
   self.m_SubTabHelper:RegisterCallback(handler(self, self.OnInitSubTabItem))
   self.m_moveToIndex = 0
   self.m_isFreshCfg = true
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
 end
 
 function MallGoodsChapterNewSubPanel:OnInitSubTabItem(go, idx)
@@ -77,6 +78,7 @@ function MallGoodsChapterNewSubPanel:OnFreshData(params)
     return
   end
   self.iGoodsId = self.goodsChapterCfg.m_GoodsID
+  UILuaHelper.PlayAnimationByName(self.m_rootObj, "goodschapternew_in")
   self.m_SubTabHelper:Refresh()
   self:ReFreshUI()
 end
@@ -157,6 +159,8 @@ function MallGoodsChapterNewSubPanel:RefreshRewardItemList()
       
       checkUnlockAndMoveToIndex(v.freeData and v.freeData[1], false)
       checkUnlockAndMoveToIndex(v.payData and v.payData[1], true)
+    else
+      self.m_moveToIndexLock = 0
     end
   end
   self.m_ListInfinityGrid:ShowItemList(finData)
@@ -208,24 +212,12 @@ function MallGoodsChapterNewSubPanel:RemoveAllEventListeners()
 end
 
 function MallGoodsChapterNewSubPanel:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
+  if not self.goodsChapterCfg then
     return
   end
-  if not self.goodsChapterCfg or not self.goodsChapterCfg.m_ProductID then
-    self.m_packgift_point:SetActive(false)
-    return
-  end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(self.goodsChapterCfg.m_ProductID)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({
+    productId = self.goodsChapterCfg.m_ProductID
+  })
 end
 
 function MallGoodsChapterNewSubPanel:OnDestroy()

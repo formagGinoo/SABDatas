@@ -196,6 +196,8 @@ function Form_BattleVictory:GetShowSpineAndVoice()
       local heroData = HeroManager:GetHeroDataByID(heroID)
       if heroData then
         fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroID, heroData.serverData.iFashion or 0)
+      else
+        fashionInfo = self.m_HeroFashion:GetFashionInfoByHeroIDAndFashionID(heroID, 0)
       end
     end
   end
@@ -314,6 +316,10 @@ function Form_BattleVictory:FreshUI()
 end
 
 function Form_BattleVictory:FreshShowAddExpInfo()
+  if self.m_levelType and self.m_levelType == LevelManager.LevelType.HeroTrial then
+    UILuaHelper.SetActive(self.m_pnl_experience, false)
+    return
+  end
   local oldRoleLv = RoleManager:GetOldLevel()
   local curRoleLv = RoleManager:GetLevel() or 0
   local oldRoleExp = RoleManager:GetOldRoleExp()
@@ -424,6 +430,10 @@ function Form_BattleVictory:GetGoblinRewardIndex(levelCfg)
 end
 
 function Form_BattleVictory:FreshHangUpShow()
+  if self.m_levelType and self.m_levelType == LevelManager.LevelType.HeroTrial then
+    UILuaHelper.SetActive(self.m_hangup_level, false)
+    return
+  end
   local isShowHangUp = true
   if self.m_levelType == LevelManager.LevelType.Tower or UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.AFK) ~= true or self.m_levelType == LevelManager.LevelType.Dungeon or self.m_levelType == AttractManager.FightType_Attract then
     isShowHangUp = false
@@ -456,8 +466,9 @@ function Form_BattleVictory:FreshShowNextLevel()
   self.m_txt_nextnum_Text.text = ""
   self.m_z_txt_next:SetActive(true)
   self:StopAutoBattleTimer()
-  self.m_auto_toggle_Toggle.isOn = LocalDataManager:GetIntSimple("Tower_Auto_Battle", 0) == 1
-  if isShowNextBtn and self.m_auto_toggle_Toggle.isOn then
+  local isOn = LocalDataManager:GetIntSimple("Tower_Auto_Battle", 0) == 1
+  self.m_auto_toggle_Toggle.isOn = isOn
+  if isShowNextBtn and isOn then
     self:RefreshAutoBattleUI()
   elseif self.m_levelType == LevelManager.LevelType.Tower and isOpen then
     if not isHaveTimes then

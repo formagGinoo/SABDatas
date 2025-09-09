@@ -7,7 +7,7 @@ end
 
 function Form_PersonalRaidMain:AfterInit()
   self.super.AfterInit(self)
-  self.m_widgetBtnBack = self:createBackButton(self.m_common_top_back, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1141)
+  self.m_widgetBtnBack = self:createBackButton(self.m_common_top_back, handler(self, self.OnBackClk), nil, nil, 1141)
   local cfgList = self:GenerateData()
   local stageNum = table.getn(cfgList) == 0 and STAGE_NUM or table.getn(cfgList)
   self.m_stageObjList = {}
@@ -486,14 +486,6 @@ end
 
 function Form_PersonalRaidMain:OnBackClk()
   self:CloseForm()
-end
-
-function Form_PersonalRaidMain:OnBackHome()
-  if BattleFlowManager:IsInBattle() == true then
-    BattleFlowManager:FromBattleToHall()
-  else
-    StackFlow:PopAllAndReplace(UIDefines.ID_FORM_HALL)
-  end
 end
 
 function Form_PersonalRaidMain:OnBtnteamClicked()

@@ -530,6 +530,9 @@ function RogueDragEquipItem:RemoveLineNodeByItem(rogueDragEquipItem)
   if not rogueDragEquipItem then
     return
   end
+  if utils.isNull(self.m_itemRootObj) then
+    return
+  end
   local itemIndex = self:GetItemIndexByRogueItem(rogueDragEquipItem)
   local nodeIndex = self:GetItemIndexOfLineNodeList(rogueDragEquipItem)
   if not itemIndex or not nodeIndex then
@@ -543,7 +546,9 @@ function RogueDragEquipItem:RemoveLineNodeByItem(rogueDragEquipItem)
     lineNode.followRogueItem = nil
   end
   table.remove(self.m_lineRogueDragItemList, itemIndex)
-  UILuaHelper.SetActive(lineNode.lineTrans, false)
+  if not utils.isNull(lineNode.lineTrans) then
+    UILuaHelper.SetActive(lineNode.lineTrans, false)
+  end
 end
 
 function RogueDragEquipItem:FreshLineShowByItem(rogueDragEquipItem)

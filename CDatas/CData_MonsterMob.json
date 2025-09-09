@@ -1844,6 +1844,44 @@
       "m_MonsterMobType": null,
       "m_InterceptCount": "3"
     },
+    "316902": {
+      "m_bError": null,
+      "m_MobID": "316902",
+      "m_Type": null,
+      "m_IsShowHp": null,
+      "m_Atrinherit": "[[2,1,1000],[2,2,6000],[2,3,8000],[2,4,8000]]",
+      "m_Career": "1",
+      "m_MaxEnergy": "1000",
+      "m_PerformanceID": "[31694]",
+      "m_AI": "\"CommonAI_Mob\"",
+      "m_SkillGroupID": "316902",
+      "m_CampRelation": "1",
+      "m_Tag": "1",
+      "m_MonsterType": null,
+      "m_mName": "\"\"",
+      "m_BirthBuff": "[[1626],[1616]]",
+      "m_MonsterMobType": "2",
+      "m_InterceptCount": "3"
+    },
+    "316903": {
+      "m_bError": null,
+      "m_MobID": "316903",
+      "m_Type": "3",
+      "m_IsShowHp": null,
+      "m_Atrinherit": "[[2,1,1000],[2,2,6000],[2,3,8000],[2,4,8000]]",
+      "m_Career": "1",
+      "m_MaxEnergy": "1000",
+      "m_PerformanceID": "[31692]",
+      "m_AI": "\"CommonAI_Mob\"",
+      "m_SkillGroupID": "316903",
+      "m_CampRelation": "1",
+      "m_Tag": "1",
+      "m_MonsterType": null,
+      "m_mName": "\"Energy Core\"",
+      "m_BirthBuff": "[[1625],[1626],[1616]]",
+      "m_MonsterMobType": null,
+      "m_InterceptCount": "3"
+    },
     "320001": {
       "m_bError": null,
       "m_MobID": "320001",
@@ -2001,10 +2039,10 @@
       "m_MobID": "331010",
       "m_Type": null,
       "m_IsShowHp": null,
-      "m_Atrinherit": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+      "m_Atrinherit": "[[2,1,500],[2,2,10000],[2,3,10000],[2,4,10000]]",
       "m_Career": "3",
       "m_MaxEnergy": "1000",
-      "m_PerformanceID": "[30030]",
+      "m_PerformanceID": "[33101]",
       "m_AI": "\"CommonAI_Mob\"",
       "m_SkillGroupID": "330003",
       "m_CampRelation": "1",
@@ -2020,10 +2058,10 @@
       "m_MobID": "331011",
       "m_Type": null,
       "m_IsShowHp": null,
-      "m_Atrinherit": "[[2,1,10000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+      "m_Atrinherit": "[[2,1,500],[2,2,10000],[2,3,10000],[2,4,10000]]",
       "m_Career": "3",
       "m_MaxEnergy": "1000",
-      "m_PerformanceID": "[30030]",
+      "m_PerformanceID": "[33102]",
       "m_AI": "\"CommonAI_Mob\"",
       "m_SkillGroupID": "330004",
       "m_CampRelation": "1",
@@ -2336,6 +2374,25 @@
       "m_mName": "\"\"",
       "m_BirthBuff": "[]",
       "m_MonsterMobType": null,
+      "m_InterceptCount": "3"
+    },
+    "502301": {
+      "m_bError": null,
+      "m_MobID": "502301",
+      "m_Type": null,
+      "m_IsShowHp": null,
+      "m_Atrinherit": "[[2,1,5000],[2,2,10000],[2,3,10000],[2,4,10000]]",
+      "m_Career": "1",
+      "m_MaxEnergy": "1000",
+      "m_PerformanceID": "[50000]",
+      "m_AI": "\"CommonAI_Idle\"",
+      "m_SkillGroupID": "502301",
+      "m_CampRelation": "1",
+      "m_Tag": "1",
+      "m_MonsterType": null,
+      "m_mName": "\"\"",
+      "m_BirthBuff": "[[1625],[1626],[1616]]",
+      "m_MonsterMobType": "2",
       "m_InterceptCount": "3"
     },
     "600010": {
@@ -2909,5 +2966,5 @@
       "m_InterceptCount": "3"
     }
   },
-  "status": "processed_153_items"
+  "status": "processed_156_items"
 }

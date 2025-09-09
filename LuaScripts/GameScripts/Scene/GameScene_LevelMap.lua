@@ -21,43 +21,23 @@ function GameScene_LevelMap:OnLeaveScene(iSceneIDNext)
   if self.m_cameraLevelMap then
     UILuaHelper.RemoveCameraFromUIRootStack(self.m_cameraLevelMap)
   end
-  if CS.GameQualityManager.DestroyLevelMapAsset then
-    if self.m_chapterRootTrans then
-      local childNum = self.m_chapterRootTrans.childCount
-      for i = 1, childNum do
-        local chapterNode = self.m_chapterRootTrans:GetChild(i - 1)
-        if chapterNode then
-          local chapterNodeStr = chapterNode.name
-          local allChildRefComArray = chapterNode:GetComponentsInChildren(typeof(CS.mufplugin.Common.Extension.SpriteRefHolder), true)
-          if allChildRefComArray and allChildRefComArray.Length then
-            local refComNum = allChildRefComArray.Length
-            for i = 1, refComNum do
-              local tempRefCom = allChildRefComArray[i - 1]
-              if tempRefCom and tempRefCom.SpriteName then
-                CS.MUF.Resource.ResourceManager.UnloadAsset(tempRefCom.SpriteName, CS.MUF.Resource.ResourceType.Atlas)
-              end
-            end
-          end
-          GameObject.Destroy(chapterNode.gameObject)
-          CS.MUF.Resource.ResourceManager.UnloadAsset(chapterNodeStr, CS.MUF.Resource.ResourceType.UI)
-        end
+  if self.m_chapterRootTrans then
+    local childNum = self.m_chapterRootTrans.childCount
+    for i = 1, childNum do
+      local chapterNode = self.m_chapterRootTrans:GetChild(i - 1)
+      if chapterNode then
+        local chapterNodeStr = chapterNode.name
+        UILuaHelper.DestroyReleaseSpriteRefHolder(chapterNode)
+        GameObject.Destroy(chapterNode.gameObject)
+        CS.MUF.Resource.ResourceManager.UnloadAsset(chapterNodeStr, CS.MUF.Resource.ResourceType.UI)
       end
     end
-    self.m_chapterRootTrans = nil
-    if self.m_poolRootTrans then
-      local allChildRefComArray = self.m_poolRootTrans:GetComponentsInChildren(typeof(CS.mufplugin.Common.Extension.SpriteRefHolder), true)
-      if allChildRefComArray and allChildRefComArray.Length then
-        local refComNum = allChildRefComArray.Length
-        for i = 1, refComNum do
-          local tempRefCom = allChildRefComArray[i - 1]
-          if tempRefCom and tempRefCom.SpriteName then
-            CS.MUF.Resource.ResourceManager.UnloadAsset(tempRefCom.SpriteName, CS.MUF.Resource.ResourceType.Atlas)
-          end
-        end
-      end
-    end
-    self.m_poolRootTrans = nil
   end
+  self.m_chapterRootTrans = nil
+  if self.m_poolRootTrans then
+    UILuaHelper.DestroyReleaseSpriteRefHolder(self.m_poolRootTrans)
+  end
+  self.m_poolRootTrans = nil
 end
 
 function GameScene_LevelMap:GetEnterSceneUIDefineIDDefault()

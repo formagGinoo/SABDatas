@@ -10,7 +10,7 @@ function UIAttractTabItem:OnFreshData()
   self.m_txt_des_Colorchange = self.m_txt_des:GetComponent("MultiColorChange")
   self.m_stHero = itemData.stHero
   UILuaHelper.ResetAnimationByName(self.m_img_lock, "dialogue_m_img_lock_out")
-  if AttractManager:CheckVoiceUnlockCondition(self.m_stHero, stVoice.m_UnlockType, stVoice.m_UnlockData) then
+  if AttractManager:CheckVoiceUnlockCondition(self.m_stHero.serverData, stVoice.m_UnlockType, stVoice.m_UnlockData) then
     self.m_img_lock:SetActive(false)
     self.m_img_bk_lock:SetActive(false)
     self.m_img_play:SetActive(true)

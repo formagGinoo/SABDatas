@@ -808,6 +808,40 @@ function TimeUtil:TimeTableToFormatCNStr4(timeTb)
   end
 end
 
+function TimeUtil:SecondsToFormatCNStr5(s)
+  local timeTb = self:SecondsToFourUnit(s)
+  return self:TimeTableToFormatCNStr5(timeTb)
+end
+
+function TimeUtil:TimeTableToFormatCNStr5(timeTb)
+  local sHour
+  if timeTb.hour < 10 then
+    sHour = "0" .. timeTb.hour
+  else
+    sHour = timeTb.hour
+  end
+  local sMin
+  if 10 > timeTb.min then
+    sMin = "0" .. timeTb.min
+  else
+    sMin = timeTb.min
+  end
+  local sSec = string.format("%02d", math.floor(timeTb.sec))
+  local day_str = self:GetCommonCountDownDayStr()
+  local hour_str = self:GetCommonCountDownHourStr2()
+  local min_str = self:GetCommonCountDownMinuteStr2()
+  local sec_str = self:GetCommonCountDownSecondStr()
+  if timeTb.day > 0 then
+    return string.gsubNumberReplace(day_str, timeTb.day)
+  elseif timeTb.hour > 0 then
+    return string.gsubNumberReplace(hour_str, sHour)
+  elseif timeTb.min > 0 then
+    return string.gsubNumberReplace(min_str, sMin)
+  else
+    return string.gsubNumberReplace(sec_str, sSec)
+  end
+end
+
 function TimeUtil:GetAFewDayDifference(beginTime, endTime)
   local time = endTime - beginTime
   return math.ceil(time / __oneDayOfSecond)

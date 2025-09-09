@@ -14,6 +14,8 @@ function FriendManager:OnInitNetwork()
   RPCS():Listen_Push_Friend_AddFriendRequest(handler(self, self.OnPushAddFriendRequest), "FriendManager")
   RPCS():Listen_Push_Friend_DelFriend(handler(self, self.OnPushDelFriend), "FriendManager")
   RPCS():Listen_Push_Friend_RecieveHeart(handler(self, self.OnPushRecieveHeart), "FriendManager")
+  RPCS():Listen_Push_FriendOnline(handler(self, self.OnPushFriendOnline), "FriendManager")
+  RPCS():Listen_Push_FriendOffline(handler(self, self.OnPushFriendOffline), "FriendManager")
 end
 
 function FriendManager:OnDailyReset()
@@ -32,6 +34,36 @@ end
 
 function FriendManager:OnInitMustRequestInFetchMore()
   self:DealFriendData()
+end
+
+function FriendManager:OnPushFriendOnline(data)
+  if not self.mFriendData then
+    return
+  end
+  if not self.mFriendData.vFriend then
+    return
+  end
+  for i, v in ipairs(self.mFriendData.vFriend) do
+    if v.stRoleId and v.stRoleId.iUid == data.stRoleId.iUid and v.stRoleId.iZoneId == data.stRoleId.iZoneId then
+      v.iLogoutTime = 0
+      break
+    end
+  end
+end
+
+function FriendManager:OnPushFriendOffline(data)
+  if not self.mFriendData then
+    return
+  end
+  if not self.mFriendData.vFriend then
+    return
+  end
+  for i, v in ipairs(self.mFriendData.vFriend) do
+    if v.stRoleId and v.stRoleId.iUid == data.stRoleId.iUid and v.stRoleId.iZoneId == data.stRoleId.iZoneId then
+      v.iLogoutTime = TimeUtil:GetServerTimeS()
+      break
+    end
+  end
 end
 
 function FriendManager:RqsFriendInfo(callback)
@@ -71,7 +103,7 @@ end
 function FriendManager:OnPushAddFriend(data)
   table.insert(self.mFriendData.vFriend, data.stFriendInfo)
   for i, v in ipairs(self.mFriendData.vFriendRequest) do
-    if v.stRoleId.iUid == data.stFriendInfo.stRoleId.iUid and v.stRoleId.iZoneId == data.stFriendInfo.stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == data.stFriendInfo.stRoleId.iUid and v.stRoleId.iZoneId == data.stFriendInfo.stRoleId.iZoneId then
       table.remove(self.mFriendData.vFriendRequest, i)
       break
     end
@@ -84,7 +116,7 @@ function FriendManager:OnPushAddFriendRequest(data)
   local GlobalManagerIns = ConfigManager:GetConfigInsByName("GlobalSettings")
   local maxFriendApplyAccept = tonumber(GlobalManagerIns:GetValue_ByName("FriendApplyAccept").m_Value)
   for i, v in ipairs(self.mFriendData.vFriendRequest) do
-    if v.stRoleId.iUid == data.stRequestInfo.stRoleId.iUid and v.stRoleId.iZoneId == data.stRequestInfo.stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == data.stRequestInfo.stRoleId.iUid and v.stRoleId.iZoneId == data.stRequestInfo.stRoleId.iZoneId then
       table.remove(self.mFriendData.vFriendRequest, i)
       break
     end
@@ -100,7 +132,7 @@ end
 function FriendManager:OnPushDelFriend(data)
   local stRoleId = data.stRoleId
   for i, v in ipairs(self.mFriendData.vFriend) do
-    if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
       table.remove(self.mFriendData.vFriend, i)
       break
     end
@@ -120,6 +152,9 @@ function FriendManager:OnPushRecieveHeart(data)
 end
 
 function FriendManager:RqsGetHeart(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   if not self:PlayerIsFriend(stRoleId) then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10301))
     self:broadcastEvent("eGameEvent_UpdateFriendUIState")
@@ -144,6 +179,9 @@ function FriendManager:RqsGetHeart(stRoleId, callback)
 end
 
 function FriendManager:RqsSendHeart(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   if not self:PlayerIsFriend(stRoleId) then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10301))
     self:broadcastEvent("eGameEvent_UpdateFriendUIState")
@@ -189,11 +227,14 @@ function FriendManager:RqsGetAndSendAll(callback)
 end
 
 function FriendManager:RqsDeleteFriend(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   local msg = MTTDProto.Cmd_Friend_DelFriend_CS()
   msg.stRoleId = stRoleId
   RPCS():Friend_DelFriend(msg, function()
     for i, v in ipairs(self.mFriendData.vFriend) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.mFriendData.vFriend, i)
         break
       end
@@ -208,6 +249,9 @@ function FriendManager:RqsDeleteFriend(stRoleId, callback)
 end
 
 function FriendManager:RqsBlockFriend(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   if RoleManager:GetUID() == stRoleId.iUid and UserDataManager:GetZoneID() == stRoleId.iZoneId then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10326))
     return
@@ -223,21 +267,21 @@ function FriendManager:RqsBlockFriend(stRoleId, callback)
   msg.stRoleId = stRoleId
   local roleData
   for i, v in ipairs(self.mFriendData.vFriend) do
-    if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
       roleData = v
       break
     end
   end
   RPCS():Chat_AddToShield(msg, function(data)
     for i, v in ipairs(self.vRecommendFriend or {}) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.vRecommendFriend, i)
         roleData = roleData or v
         break
       end
     end
     for i, v in ipairs(self.vSearchList or {}) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.vSearchList, i)
         roleData = roleData or v
         break
@@ -253,11 +297,14 @@ function FriendManager:RqsBlockFriend(stRoleId, callback)
 end
 
 function FriendManager:RqsRemoveFromShield(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   local msg = MTTDProto.Cmd_Chat_RemoveFromShield_CS()
   msg.stRoleId = stRoleId
   RPCS():Chat_RemoveFromShield(msg, function()
     for i, v in ipairs(self.vShieldRole) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.vShieldRole, i)
         break
       end
@@ -291,6 +338,9 @@ function FriendManager:RqsSearchRole(iRoleId, callback)
 end
 
 function FriendManager:RqsAddFriend(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   if RoleManager:GetUID() == stRoleId.iUid and UserDataManager:GetZoneID() == stRoleId.iZoneId then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(10325))
     return
@@ -345,6 +395,9 @@ function FriendManager:RqsAddFriendBatch(callback)
 end
 
 function FriendManager:RqsConfirmFriendRequest(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   local GlobalManagerIns = ConfigManager:GetConfigInsByName("GlobalSettings")
   local MaxFriendCount = tonumber(GlobalManagerIns:GetValue_ByName("FriendMaxNumber").m_Value)
   local count = #self.mFriendData.vFriend
@@ -356,7 +409,7 @@ function FriendManager:RqsConfirmFriendRequest(stRoleId, callback)
   msg.stRoleId = stRoleId
   RPCS():Friend_ConfirmFriendRequest(msg, function()
     for i, v in ipairs(self.mFriendData.vFriendRequest) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.mFriendData.vFriendRequest, i)
         break
       end
@@ -378,7 +431,7 @@ function FriendManager:RqsConfirmFriendRequest(stRoleId, callback)
     end
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(iStrId))
     for i, v in ipairs(self.mFriendData.vFriendRequest) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.mFriendData.vFriendRequest, i)
         break
       end
@@ -391,11 +444,14 @@ function FriendManager:RqsConfirmFriendRequest(stRoleId, callback)
 end
 
 function FriendManager:RqsDelFriendRequest(stRoleId, callback)
+  if not stRoleId then
+    return
+  end
   local msg = MTTDProto.Cmd_Friend_DelFriendRequest_CS()
   msg.stRoleId = stRoleId
   RPCS():Friend_DelFriendRequest(msg, function()
     for i, v in ipairs(self.mFriendData.vFriendRequest) do
-      if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
         table.remove(self.mFriendData.vFriendRequest, i)
         break
       end
@@ -461,6 +517,9 @@ function FriendManager:GetCurFriendTab()
 end
 
 function FriendManager:GetFriendHeartState(stRoleId)
+  if not stRoleId then
+    return false
+  end
   local data = self.mFriendHeartRecieve
   local GlobalManagerIns = ConfigManager:GetConfigInsByName("GlobalSettings")
   local maxTimes = tonumber(GlobalManagerIns:GetValue_ByName("FriendPointsAcceptMax").m_Value)
@@ -477,6 +536,9 @@ function FriendManager:GetFriendHeartState(stRoleId)
 end
 
 function FriendManager:GetFriendSendHeartState(stRoleId)
+  if not stRoleId then
+    return false
+  end
   local data = self.mFriendData.vFriendHeartSend
   for i, v in pairs(data) do
     if v.iUid == stRoleId.iUid and v.iZoneId == stRoleId.iZoneId then
@@ -487,8 +549,11 @@ function FriendManager:GetFriendSendHeartState(stRoleId)
 end
 
 function FriendManager:PlayerIsFriend(stRoleId)
+  if not stRoleId then
+    return false
+  end
   for i, v in ipairs(self.mFriendData.vFriend) do
-    if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
       return true
     end
   end
@@ -496,8 +561,11 @@ function FriendManager:PlayerIsFriend(stRoleId)
 end
 
 function FriendManager:PlayerIsShield(stRoleId)
+  if not stRoleId then
+    return false
+  end
   for i, v in ipairs(self.vShieldRole) do
-    if v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
+    if v.stRoleId and v.stRoleId.iUid == stRoleId.iUid and v.stRoleId.iZoneId == stRoleId.iZoneId then
       return true
     end
   end
@@ -532,7 +600,7 @@ function FriendManager:CanGetAndSendAll()
   for i, v in ipairs(self.mFriendData.vFriend) do
     local is_have = false
     for _, vv in ipairs(self.mFriendData.vFriendHeartSend) do
-      if v.stRoleId.iUid == vv.iUid and v.stRoleId.iZoneId == vv.iZoneId then
+      if v.stRoleId and v.stRoleId.iUid == vv.iUid and v.stRoleId.iZoneId == vv.iZoneId then
         is_have = true
       end
     end
@@ -558,11 +626,17 @@ function FriendManager:CanRqsAddAllFriend()
 end
 
 function FriendManager:IsFriendInAddedList(stRoleId)
+  if not stRoleId then
+    return false
+  end
   local tempstr = stRoleId.iUid .. ";" .. stRoleId.iZoneId
   return self.mAlreadyRqsAddedList[tempstr]
 end
 
 function FriendManager:SetRqsAddeddata2Local(stRoleId)
+  if not stRoleId then
+    return
+  end
   local tempstr = stRoleId.iUid .. ";" .. stRoleId.iZoneId
   self.mAlreadyRqsAddedList[tempstr] = true
 end

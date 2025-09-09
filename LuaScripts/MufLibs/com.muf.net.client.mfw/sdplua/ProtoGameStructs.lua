@@ -62,6 +62,8 @@ SystemType_CDKey = 59
 SystemType_Hunting = 60
 SystemType_AttractLetter = 61
 SystemType_Ancient = 62
+SystemType_Fashion = 63
+SystemType_EquipDecompose = 64
 SystemType_Hero = 101
 SystemType_HeroLevel = 102
 SystemType_Goblin = 200
@@ -962,6 +964,7 @@ CmdHeroBriefData.Definition = {
   "mEquip",
   "mSkill",
   "iFashion",
+  "iOriLevel",
   iHeroId = {
     0,
     0,
@@ -1012,6 +1015,12 @@ CmdHeroBriefData.Definition = {
   },
   iFashion = {
     8,
+    0,
+    8,
+    0
+  },
+  iOriLevel = {
+    9,
     0,
     8,
     0
@@ -1728,6 +1737,7 @@ CmdFightVerifyOutput.Definition = {
   "stDebugInfo",
   "stPassthrough",
   "bWin",
+  "iDamage",
   iScore = {
     0,
     0,
@@ -1757,6 +1767,12 @@ CmdFightVerifyOutput.Definition = {
     0,
     1,
     false
+  },
+  iDamage = {
+    5,
+    0,
+    10,
+    "0"
   }
 }
 CmdFightReport = sdp.SdpStruct("CmdFightReport")

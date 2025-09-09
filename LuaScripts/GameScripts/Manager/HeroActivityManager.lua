@@ -43,7 +43,8 @@ HeroActivityManager.WhackMoleLevelType = {
   InfinityType = 3
 }
 HeroActivityManager.ActivityType = {Normal = 1, Stages = 2}
-HeroActivityManager.ClientDataKey = {DialogueMainDraw = "Draw"}
+HeroActivityManager.ClientDataKey = {DialogueMainDraw = "Draw", DialogueMainLevelUnlock = "DMUnlock"}
+HeroActivityManager.ExtraActState = {Normal = 1, Lock = 2}
 local ActMemoryTextFormatByType = {}
 local pairs = _ENV.pairs
 local ipairs = _ENV.ipairs
@@ -60,6 +61,7 @@ end
 
 function HeroActivityManager:OnInitNetwork()
   RPCS():Listen_Push_Lamia_Quest(handler(self, self.OnPushLamiaQuest), "HeroActivityManager")
+  RPCS():Listen_Push_Lamia_Item(handler(self, self.OnPushLamiaItem), "HeroActivityManager")
   local report_time_interval = tonumber(ConfigManager:GetGlobalSettingsByKey("iReportInterval") or 60)
   TimeService:SetTimer(report_time_interval, -1, function()
     self:ReportActInfo()
@@ -68,14 +70,22 @@ end
 
 function HeroActivityManager:OnDailyReset()
   self.isPush = false
-  local lamia_getlist_msg = MTTDProto.Cmd_Lamia_GetList_CS()
-  RPCS():Lamia_GetList(lamia_getlist_msg, handler(self, self.OnLamiaGetListSC))
+  self:ReqGetList()
 end
 
 function HeroActivityManager:OnDailyZeroReset()
   self.isPush = false
-  local lamia_getlist_msg = MTTDProto.Cmd_Lamia_GetList_CS()
-  RPCS():Lamia_GetList(lamia_getlist_msg, handler(self, self.OnLamiaGetListSC))
+  self:ReqGetList()
+end
+
+function HeroActivityManager:ReqGetList()
+  local time = self.iLastRqsTime or 0
+  local cur_time = TimeUtil:GetServerTimeS()
+  if 10 <= cur_time - time then
+    local lamia_getlist_msg = MTTDProto.Cmd_Lamia_GetList_CS()
+    RPCS():Lamia_GetList(lamia_getlist_msg, handler(self, self.OnLamiaGetListSC))
+    self.iLastRqsTime = TimeUtil:GetServerTimeS()
+  end
 end
 
 function HeroActivityManager:OnDestroy()
@@ -86,8 +96,7 @@ function HeroActivityManager:OnInitMustRequestInFetchMore()
 end
 
 function HeroActivityManager:DealActivityData()
-  local lamia_getlist_msg = MTTDProto.Cmd_Lamia_GetList_CS()
-  RPCS():Lamia_GetList(lamia_getlist_msg, handler(self, self.OnLamiaGetListSC))
+  self:ReqGetList()
 end
 
 function HeroActivityManager:OnPushLamiaQuest(data)
@@ -96,6 +105,11 @@ function HeroActivityManager:OnPushLamiaQuest(data)
     self:UpdateLamiaQuestInfo(iActId, v)
   end
   self:broadcastEvent("eGameEvent_ActTask_GetReward")
+end
+
+function HeroActivityManager:OnPushLamiaItem(data)
+  local iActId = data.iActId
+  self.m_actList[data.iActId].server_data.vItem = data.vItem
 end
 
 function HeroActivityManager:OnLamiaGetListSC(act_list_data)
@@ -252,6 +266,14 @@ function HeroActivityManager:LamiaGameFinishSC(data)
   local act_data = self:GetHeroActData(data.iActId)
   if act_data then
     act_data.server_data.stMiniGame.mGameStat[data.iGameId] = data.iGameStat
+    if act_data.server_data.stMiniGame.mGameScore[data.iGameId] == nil then
+      act_data.server_data.stMiniGame.mGameScore[data.iGameId] = data.iScore
+    else
+      local now_score = act_data.server_data.stMiniGame.mGameScore[data.iGameId]
+      if now_score > data.iScore then
+        act_data.server_data.stMiniGame.mGameScore[data.iGameId] = data.iScore
+      end
+    end
   end
   self:broadcastEvent("eGameEvent_ActMinigame_Finish", data.vAward)
 end
@@ -377,7 +399,7 @@ end
 
 function HeroActivityManager:GetMainInfoByActID(config_id)
   if not config_id then
-    log.error("获取角色活动配置失败，config_id不能为nil！")
+    log.error("获取角色活动配置失败，config_id不能为nil！" .. debug.traceback())
     return
   end
   local config = ConfigManager:GetConfigInsByName("ActivityMainInfo"):GetValue_ByActivityID(config_id)
@@ -804,7 +826,6 @@ function HeroActivityManager:IsMainActIsOpenByID(config_id)
   local temp_time = closeTime ~= 0 and closeTime or endTime
   local main_open_flag = TimeUtil:IsInTime(startTime, temp_time)
   if not main_open_flag then
-    log.info(string.format("TODO: 返回一个提示时间不对的提示字符串%s---%s", startTime, temp_time))
     return false
   end
   local unlockTypeArray = main_config.m_UnlockConditionType
@@ -1683,6 +1704,9 @@ function HeroActivityManager:HeroActHallEntryHaveRedDot(params)
   if miniGameTask == 1 then
     return 1
   end
+  if self:IsMiniGamePuzzleHaveRedDot(act_id) == 1 then
+    return 1
+  end
   flag = self:GetMemoryEntryHaveRedFlag(act_id)
   if flag then
     return 1
@@ -1975,9 +1999,60 @@ function HeroActivityManager:IsHeroActMiniGamePuzzleEntryHaveRedDot(param)
   return 1
 end
 
+function HeroActivityManager:IsMiniGamePuzzleHaveRedDot(act_id)
+  log.info("HeroActivityManager:IsMiniGamePuzzleHaveRedDot act_id:" .. tostring(act_id))
+  return self:GetMinigameHelper():IsMiniGamePuzzleHaveRedDot(act_id, self:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.MiniGame))
+end
+
 function HeroActivityManager:IsTodayEnterMinigamePuzzle(curLevelId)
   local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
   return nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroActMiniGamePuzzle_Entry_Red_Point_" .. curLevelId, 0)
+end
+
+function HeroActivityManager:GetActState(act)
+  if not act or not act.m_stActivityData then
+    return 0
+  end
+  if act:checkCondition() then
+    return HeroActivityManager.ExtraActState.Normal
+  else
+    local iCurTime = TimeUtil:GetServerTimeS()
+    if iCurTime < act.m_stActivityData.iBeginTime then
+      return HeroActivityManager.ExtraActState.Lock, act.m_stActivityData.iBeginTime - iCurTime, act.m_stActivityData.iBeginTime
+    elseif iCurTime > act.m_stActivityData.iEndTime then
+      return 0
+    else
+      return HeroActivityManager.ExtraActState.Normal
+    end
+  end
+end
+
+function HeroActivityManager:GetCurExtraActByType(iType, iActID)
+  local vList = ActivityManager:GetActivityListByType(iType)
+  if #vList <= 0 then
+    return nil
+  end
+  if 1 < #vList then
+    table.sort(vList, function(a, b)
+      return a.m_stActivityData.iBeginTime < b.m_stActivityData.iBeginTime
+    end)
+  end
+  for _, act in ipairs(vList) do
+    local state = self:GetActState(act)
+    if state == HeroActivityManager.ExtraActState.Normal or state == HeroActivityManager.ExtraActState.Lock then
+      return act
+    end
+  end
+  local lastAct = vList[#vList]
+  local startTime = self:GetAllActTimeByActID(iActID)
+  local is_corved, t1 = self:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.main, iActID)
+  if is_corved then
+    startTime = t1
+  end
+  if startTime < lastAct.m_stActivityData.iEndTime then
+    return lastAct
+  end
+  return nil
 end
 
 function HeroActivityManager:CheckShowEnterAnim(go, sFlatStr, sAnimNameFirst, sAnimNameEvery, iAudioID)

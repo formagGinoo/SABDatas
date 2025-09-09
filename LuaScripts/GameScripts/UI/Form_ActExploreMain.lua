@@ -30,11 +30,11 @@ function Form_ActExploreMain:AfterInit()
   self.m_pnl_anounce:SetActive(false)
   self.interactiveTexts = {}
   self.m_Stick:SetActive(false)
-  self:RefreshAmountUI()
   self.bIsShow = false
   self.m_pnl_event:SetActive(self.bIsShow)
   self.m_pnl_tipsnew:SetActive(false)
   self:addEventListener("eGameEvent_ActExploreUIReady", handler(self, self.OnUIReady))
+  self:addEventListener("eGameEvent_ActExploreIconVisuable", handler(self, self.OnIconShow))
   self:SetVisable(false)
 end
 
@@ -46,6 +46,10 @@ function Form_ActExploreMain:SetWorld(world)
     joyStick.TransformCamera = CS.UnityEngine.Camera.main
     joyStick.OnValueChange:AddListener(handler(self.world, self.world.OnMoveInput))
   end
+end
+
+function Form_ActExploreMain:OnIconShow(bShow)
+  self.m_pnl_event:SetActive(bShow)
 end
 
 function Form_ActExploreMain:OnUIReady()
@@ -62,28 +66,15 @@ function Form_ActExploreMain:OnUIReady()
   end
 end
 
-function Form_ActExploreMain:SetPickupAmount(amount, count)
-  self.pickUpTip = tostring(count) .. "/" .. tostring(amount)
-  self:RefreshAmountUI()
-end
-
-function Form_ActExploreMain:RefreshAmountUI()
-  if self.m_txt_collectnum then
-    self.m_txt_collectnum_Text.text = self.pickUpTip or ""
-  end
-end
-
 function Form_ActExploreMain:OnActive()
   self.super.OnActive(self)
   self.dialogueShowEndHandler = self:addEventListener("eGameEvent_DialogueShowEnd", handler(self, self.OnDialogueShowEnd))
 end
 
 function Form_ActExploreMain:OnPnlClick(pointerEventData)
-  if self.world ~= nil then
-    local isHit, hitPoint = CS.UI.UILuaHelper.RayCastScreenPointToPlane(pointerEventData.position, CS.UnityEngine.Vector3.up, 0)
-    if isHit then
-      self.world:OnMoveTo(hitPoint)
-    end
+  local isHit, hitPoint = CS.UI.UILuaHelper.RayCastScreenPointToPlane(pointerEventData.position, CS.UnityEngine.Vector3.up, 0)
+  if isHit and self.world then
+    self.world:OnMoveTo(hitPoint)
   end
 end
 
@@ -168,6 +159,9 @@ function Form_ActExploreMain:OnInteractiveDestroy(id)
 end
 
 function Form_ActExploreMain:SetIcon(gameObject, iconName, heightOffset)
+  if gameObject == nil then
+    return
+  end
   local instanceID = gameObject:GetInstanceID()
   local exist = self.bindIcons[instanceID]
   if exist ~= nil then
@@ -215,7 +209,6 @@ end
 function Form_ActExploreMain:OnBtnhideClicked()
   self.bIsShow = not self.bIsShow
   self.m_pnl_event:SetActive(self.bIsShow)
-  self:broadcastEvent("eGameEvent_ActExploreIconVisuable", not self.bIsShow)
 end
 
 function Form_ActExploreMain:OnStartDrag(pointerEventData)

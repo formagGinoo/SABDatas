@@ -4,7 +4,8 @@ local PlotStepIns = ConfigManager:GetConfigInsByName("PlotStep")
 local PlotMatchDic = {
   [BattleFlowManager.PlotActionType.Video] = true,
   [BattleFlowManager.PlotActionType.TimeLine] = true,
-  [BattleFlowManager.PlotActionType.Black] = true
+  [BattleFlowManager.PlotActionType.Black] = true,
+  [BattleFlowManager.PlotActionType.AVG] = true
 }
 
 function UIHeroActDialogueCollectionBase:AfterInit()

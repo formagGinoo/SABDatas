@@ -70,6 +70,7 @@ function meta:OnCreate()
   self:loadManager("Manager/HuntingRaidManager")
   self:loadManager("Manager/AncientManager")
   self:loadManager("Manager/KeyboardMappingManager")
+  self:loadManager("Manager/DeeplinkManager")
 end
 
 function meta:loadManager(managerpath, ...)

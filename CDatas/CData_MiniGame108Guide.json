@@ -1,0 +1,41 @@
+{
+  "className": "CData_MiniGame108Guide",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_StepID": "1",
+      "m_mTitle": "\"Get Ready\"",
+      "m_mDesc": "\"After selecting a difficulty, choose your destination and attempt the stage for your fastest clear time!\"",
+      "m_GudiePic": "\"Atlas_MiniGame108/act108minigame_guide_1\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_StepID": "2",
+      "m_mTitle": "\"Assemble Spider\"",
+      "m_mDesc": "\"Build your mechanical spider based on the recommendations for the best results!\nComplete tasks to obtain new Spider Parts.\"",
+      "m_GudiePic": "\"Atlas_MiniGame108/act108minigame_guide_2\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_StepID": "3",
+      "m_mTitle": "\"Set Out\"",
+      "m_mDesc": "\"You'll encounter many events during your adventure, some of which require making choices. These events take varying amounts of time, and your Mechanical Spider risks taking damage.\"",
+      "m_GudiePic": "\"Atlas_MiniGame108/act108minigame_guide_3\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_StepID": "4",
+      "m_mTitle": "\"Victory/Defeat\"",
+      "m_mDesc": "\"Victory is achieved by completing all events and reaching the final destination. Trophies will be awarded based on the finish time.\nAn attempt ends when durability reaches 0.\"",
+      "m_GudiePic": "\"Atlas_MiniGame108/act108minigame_guide_4\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_StepID": "5",
+      "m_mTitle": "\"Rewards Obtained\"",
+      "m_mDesc": "\"Complete stages to obtain new Spider Parts. After earning a number of trophies, you may claim your rewards!\"",
+      "m_GudiePic": "\"Atlas_MiniGame108/act108minigame_guide_5\""
+    }
+  },
+  "status": "processed_5_items"
+}

@@ -15,6 +15,10 @@ RogueTechEffect_FightHeroNum = 3
 RogueTechEffect_UnlockItem = 4
 RogueTechEffect_AddProperty = 5
 RogueTechEffect_TempBag = 6
+RogueHundBookType_None = 0
+RogueHundBookType_Hero = 1
+RogueHundBookType_General = 2
+RogueHundBookType_Material = 3
 CmdRogueStage = sdp.SdpStruct("CmdRogueStage")
 CmdRogueStage.Definition = {
   "iStageId",

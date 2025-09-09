@@ -25,7 +25,7 @@
       "m_UnlockConditionData": "[1]",
       "m_Order": "2",
       "m_Hide": "1",
-      "m_ReturnType": null,
+      "m_ReturnType": "1",
       "m_ChapterTaskID": "[]",
       "m_IsClose": null
     },
@@ -244,7 +244,7 @@
       "m_ChapterID": "18",
       "m_ChapterTitle": "\"17\"",
       "m_ChapterType": "1",
-      "m_mChapterName": "\"ye of Dormanny\t\"",
+      "m_mChapterName": "\"The End and the Beginning\"",
       "m_UnlockConditionType": "[5]",
       "m_UnlockConditionData": "[17]",
       "m_Order": "18",
@@ -272,14 +272,14 @@
       "m_ChapterID": "20",
       "m_ChapterTitle": "\"19\"",
       "m_ChapterType": "1",
-      "m_mChapterName": "\"Meeting and Parting\"",
+      "m_mChapterName": "\"Sacrifice and Inception\"",
       "m_UnlockConditionType": "[5]",
       "m_UnlockConditionData": "[19]",
       "m_Order": "20",
       "m_Hide": "1",
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     },
     "500": {
       "m_bError": null,
@@ -552,14 +552,14 @@
       "m_ChapterID": "519",
       "m_ChapterTitle": "\"19\"",
       "m_ChapterType": "2",
-      "m_mChapterName": "\"Meeting and Parting\"",
+      "m_mChapterName": "\"Sacrifice and Inception\"",
       "m_UnlockConditionType": "[5]",
       "m_UnlockConditionData": "[518]",
       "m_Order": "20",
       "m_Hide": null,
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
-      "m_IsClose": "1"
+      "m_IsClose": null
     }
   },
   "status": "processed_40_items"

@@ -2091,4 +2091,100 @@ function DownloadManager:DownloadPreGetTotalSize()
   return self.m_stDownloadPreConfig.iPatchSize + self.m_stDownloadPreConfig.lAddResTotalBytes
 end
 
+function DownloadManager:ClearOldResource(finishCallback)
+  local vPackage = {}
+  local vExtraResource = {}
+  local sIgnore = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ActivityResourcePackExclusionList").m_Value
+  local vIgnorePackages = string.split(sIgnore, "/")
+  local mIgnoreAB = {}
+  if 0 < #vIgnorePackages then
+    local vPackageIgnore = {}
+    for k, v in ipairs(vIgnorePackages) do
+      vPackageIgnore[#vPackageIgnore + 1] = {
+        sName = v,
+        eType = self.ResourcePackageType.Custom
+      }
+    end
+    local _, vAllResourceAB = self:GetResourceABList(vPackageIgnore, vExtraResource, true)
+    for k, v in ipairs(vAllResourceAB) do
+      mIgnoreAB[v] = true
+    end
+  end
+  local sPackages = ConfigManager:GetConfigInsByName("GlobalSettings"):GetValue_ByName("ResourcePackCleanupPlan").m_Value
+  local vClearPackages = string.split(sPackages, "/")
+  for k, v in ipairs(vClearPackages) do
+    vPackage[#vPackage + 1] = {
+      sName = v,
+      eType = self.ResourcePackageType.Custom
+    }
+  end
+  local _, vDownloadAllResourceAB = self:GetResourceABList(vPackage, vExtraResource, true)
+  if 0 < #vDownloadAllResourceAB then
+    log.info("DownloadManager:ClearOldResource, Clear Resource ABs: " .. #vDownloadAllResourceAB)
+    local fullPath
+    local vDeleteList = {}
+    for k, resPath in pairs(vDownloadAllResourceAB) do
+      fullPath = CS.MUF.Resource.ResourceLocationHelper.Instance.PersistentDataAssetsPath .. "/" .. resPath
+      if not mIgnoreAB[resPath] and DownloadResource:IsValidAsset(resPath) and not CS.MUF.Resource.ResourceManager.IsAssetLoaded(resPath, CS.MUF.Resource.ResourceType.AssetBundle) and CS.System.IO.File.Exists(fullPath) then
+        vDeleteList[#vDeleteList + 1] = resPath
+      end
+    end
+    local totalSize = self:GetResourceABListTotalBytes(vDeleteList)
+    local totalSizeStr = DownloadManager:GetDownloadSizeStr(totalSize)
+    local reportStr = "click_clean"
+    local params = {Event_id = reportStr, Extra_1 = totalSizeStr}
+    ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+    if 1048576 < totalSize then
+      utils.CheckAndPushCommonTips({
+        tipsID = 9959,
+        fContentCB = function(content)
+          return string.gsub(content, "{size}", totalSizeStr)
+        end,
+        func1 = function()
+          local reportStr = "click_start_clean"
+          local params = {Event_id = reportStr, Extra_1 = totalSizeStr}
+          ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+          StackPopup:Push(UIDefines.ID_FORM_DOWNLOADCLEANTIPS, {
+            vDeleteList = vDeleteList,
+            finishCallback = function(bSuccess)
+              if bSuccess then
+                local reportStr = "click_success"
+                local params = {Event_id = reportStr, Extra_1 = totalSizeStr}
+                ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+                StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10340)
+                if finishCallback then
+                  finishCallback()
+                end
+              else
+                StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10342)
+              end
+            end
+          })
+        end,
+        func2 = function()
+          local reportStr = "click_think"
+          local params = {Event_id = reportStr, Extra_1 = totalSizeStr}
+          ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+        end
+      })
+    else
+      do
+        local reportStr = "clean_new"
+        local params = {Event_id = reportStr}
+        ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+        StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10341)
+      end
+    end
+  else
+    local reportStr = "click_clean"
+    local params = {Event_id = reportStr, Extra_1 = "0B"}
+    ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+    local reportStr = "clean_new"
+    local params = {Event_id = reportStr}
+    ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+    log.info("DownloadManager:ClearOldResource, No Resource ABs to Clear")
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10341)
+  end
+end
+
 return DownloadManager

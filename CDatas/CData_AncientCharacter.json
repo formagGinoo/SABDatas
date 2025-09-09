@@ -1,6 +1,17 @@
 {
   "className": "CData_AncientCharacter",
   "data": {
+    "20690": {
+      "m_bError": null,
+      "m_HeroID": "20690",
+      "m_Type": "2",
+      "m_Unlock": "[[20700,4],[20710,4]]",
+      "m_SummonHero": "20000",
+      "m_SummonChip": "20000",
+      "m_Display": "1",
+      "m_Limit": "11",
+      "m_Position": "2"
+    },
     "20700": {
       "m_bError": null,
       "m_HeroID": "20700",
@@ -11,7 +22,18 @@
       "m_Display": "1",
       "m_Limit": "11",
       "m_Position": "1"
+    },
+    "20710": {
+      "m_bError": null,
+      "m_HeroID": "20710",
+      "m_Type": "1",
+      "m_Unlock": "[]",
+      "m_SummonHero": "10000",
+      "m_SummonChip": "10000",
+      "m_Display": "1",
+      "m_Limit": "11",
+      "m_Position": "3"
     }
   },
-  "status": "processed_1_items"
+  "status": "processed_3_items"
 }

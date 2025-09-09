@@ -76,6 +76,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity106_dialoguedetial",
     LuaPath = "UI/SubPanel/LevelDetail106SubPanel"
   },
+  LevelDetail109SubPanel = {
+    PrefabPath = "ui_activity109_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetail109SubPanel"
+  },
   LegacyLevelDetailSubPanel = {
     PrefabPath = "ui_legacy_panel_detail",
     LuaPath = "UI/SubPanel/LegacyLevelDetailSubPanel"
@@ -139,6 +143,14 @@ SubPanelManager.SubPanelCfg = {
   GachaSubPanel1007 = {
     PrefabPath = "ui_gacha_panel_1007",
     LuaPath = "UI/SubPanel/GachaSubPanels/AgathaGachaSubPanel"
+  },
+  GachaSubPanel1008 = {
+    PrefabPath = "ui_gacha_panel_1008",
+    LuaPath = "UI/SubPanel/GachaSubPanels/ShiDaiLaGachaSubPanel"
+  },
+  GachaSubPanel1009 = {
+    PrefabPath = "ui_gacha_panel_1009",
+    LuaPath = "UI/SubPanel/GachaSubPanels/AerboteGachaSubPanel"
   },
   GachaDalCaroPushFaceSubPanel = {
     PrefabPath = "ui_activity_dalcaroface",
@@ -207,6 +219,10 @@ SubPanelManager.SubPanelCfg = {
   GuildNewsSubPanel = {
     PrefabPath = "ui_guild_panel_news",
     LuaPath = "UI/SubPanel/GuildNewsSubPanel"
+  },
+  GuildMessageSubPanel = {
+    PrefabPath = "ui_guild_panel_message",
+    LuaPath = "UI/SubPanel/GuildMessageSubPanel"
   },
   MallMonthlyCardMainSubPanel = {
     PrefabPath = "ui_mall_MonthlyCardMain",
@@ -348,6 +364,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_clive",
     LuaPath = "UI/SubPanel/CliveActivitySubPanel"
   },
+  HeroTrialActivitySubPanel = {
+    PrefabPath = "ui_activity_panel_role_trial",
+    LuaPath = "UI/SubPanel/HeroTrialActivitySubPanel"
+  },
   FirstRechargeActivitySubPanel = {
     PrefabPath = "ui_activity_panel_firstrecharge",
     LuaPath = "UI/SubPanel/FirstRechargeActivitySubPanel"
@@ -442,9 +462,6 @@ end
 
 function SubPanelManager:CheckUnloadAsset(panelStr)
   if not panelStr then
-    return
-  end
-  if not CS.GameQualityManager.DestroyUIImmediately then
     return
   end
   local subPanelCfg = SubPanelManager.SubPanelCfg[panelStr]

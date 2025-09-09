@@ -1,4 +1,4 @@
-local Form_103AchievementUI = class("Form_103AchievementUI", require("UI/Common/UIBase"))
+local Form_103AchievementUI = class("Form_103AchievementUI", require("UI/Common/HeroActBase/UIHeroActAchievementBase"))
 
 function Form_103AchievementUI:Init(gameObject, csui)
   if gameObject == nil then

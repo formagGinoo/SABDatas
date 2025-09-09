@@ -169,12 +169,15 @@ function Form_MallMainNew:OnMallDataRefresh()
 end
 
 function Form_MallMainNew:InitCurSelectTab(iStoreId)
+  if not self.m_StoreList then
+    return
+  end
   if not iStoreId then
     if not self.iCurSelectMainTab or self.iCurSelectMainTab > #self.m_StoreList then
       self.iCurSelectMainTab = 1
       self.iCurSelectSubTab = 1
     end
-    if not self.iCurSelectSubTab or self.iCurSelectSubTab > #self.m_StoreList[self.iCurSelectMainTab] then
+    if not (self.iCurSelectSubTab and self.m_StoreList[self.iCurSelectMainTab]) or self.iCurSelectSubTab > #self.m_StoreList[self.iCurSelectMainTab] then
       self.iCurSelectSubTab = 1
     end
   else
@@ -403,6 +406,14 @@ function Form_MallMainNew:ExtraCheckStoreOpen(store)
     local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
     local isShow = payStoreActivity:CheckIsShowFashionStore()
     return isShow
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGift then
+    local vActList = ActivityManager:GetActivityListByType(MTTD.ActivityType_PickupGift)
+    for _, v in ipairs(vActList) do
+      local relationShopId = v:GetRelationShopId()
+      if relationShopId == store.iStoreId then
+        return true
+      end
+    end
   end
   return true
 end
@@ -471,7 +482,7 @@ function Form_MallMainNew:OnClosePanelToFreshInitData(subPanel)
   end
 end
 
-function Form_MallMainNew:ChangeSubPanel()
+function Form_MallMainNew:ChangeSubPanel(bIsForceRefresh)
   if not self.m_StoreList or not self.m_StoreList[self.iCurSelectMainTab] then
     return
   end
@@ -507,7 +518,7 @@ function Form_MallMainNew:ChangeSubPanel()
   else
     self:ReSetSubPanel(subPanel)
     subPanel.subPanelLua:SetActive(true)
-    subPanel.subPanelLua:FreshData({storeData = store})
+    subPanel.subPanelLua:FreshData({storeData = store, bIsForceRefresh = bIsForceRefresh})
     if subPanel.subPanelLua.OnActivePanel then
       TimeService:SetTimer(0.05, 1, function()
         subPanel.subPanelLua:OnActivePanel()
@@ -593,7 +604,7 @@ function Form_MallMainNew:OnInitSubTabItem(go, idx)
     self.iCurSelectSubTab = index
     GlobalManagerIns:TriggerWwiseBGMState(189)
     self.m_SubTabHelper:Refresh()
-    self:ChangeSubPanel()
+    self:ChangeSubPanel(true)
   end)
 end
 

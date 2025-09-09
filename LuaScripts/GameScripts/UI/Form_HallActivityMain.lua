@@ -74,6 +74,7 @@ function Form_HallActivityMain:OnActive()
     self:OnBtnpvpClicked()
   end
   GlobalManagerIns:TriggerWwiseBGMState(254)
+  UserDataManager:CheckPopupSuggestQuality()
 end
 
 function Form_HallActivityMain:OnInactive()

@@ -32,7 +32,15 @@
       "m_mSettingTip": "\"Adjust Aspect Ratio\"",
       "m_Hide": null,
       "m_Order": "2"
+    },
+    "5": {
+      "m_bError": null,
+      "m_GraphicID": "5",
+      "m_mSettingTitle": "\"Use Hotkeys\"",
+      "m_mSettingTip": "\"When disabled, hotkey positions will not be displayed and hotkey functionality will be deactivated.\"",
+      "m_Hide": null,
+      "m_Order": "5"
     }
   },
-  "status": "processed_4_items"
+  "status": "processed_5_items"
 }

@@ -153,7 +153,7 @@ function Form_Guide:ShowSubStepGuide()
   if self.guideSubStep > self.guideData.SubStepIds.Length then
     GuideManager:GuideDebug("guide_所有步骤执行完，引导结束::::::id:" .. self.guideData.ID)
     local guideId = self.guideData.ID
-    GuideManager:FinishSubStepGuide(guideId, true)
+    GuideManager:FinishSubStepGuide(GuideManager:GetFinishStepData(guideId, 0), true)
     self:EndGuide()
     GuideManager:OnGuideFinish(guideId)
   else
@@ -165,7 +165,7 @@ function Form_Guide:ShowSubStepGuide()
     end
     GuideManager:GuideDebug("guide_ShowStepGuide:ID:" .. self.guideData.ID .. ":::step_id:" .. self.subStepData.ID .. "::type:" .. self.subStepData.Type .. "::wndname::" .. self.subStepData.WndName)
     local lockTime = 0.5
-    if (self.subStepData.Type == "wait" or self.subStepData.Type == "tips") and self.subStepData.TypeParam.Length > 0 and 0 < tonumber(self.subStepData.TypeParam[0]) and lockTime < tonumber(self.subStepData.TypeParam[0]) then
+    if (self.subStepData.Type == "wait" or self.subStepData.Type == "tips") and 0 < self.subStepData.TypeParam.Length and 0 < tonumber(self.subStepData.TypeParam[0]) and lockTime < tonumber(self.subStepData.TypeParam[0]) then
       lockTime = tonumber(self.subStepData.TypeParam[0])
     end
     self:LockInput(lockTime)
@@ -859,8 +859,13 @@ function Form_Guide:OnGuideClick(go, mapclick, manualFinish)
     end
     return true
   end
-  if self.subStepData and not string.IsNullOrEmpty(self.subStepData.WndName) and go and type(go) == "userdata" and go.transform and not CS.UI.UILuaHelper.CheckGuideClickInView(go.transform, self.subStepData.WndName) then
-    return false
+  if self.subStepData and not string.IsNullOrEmpty(self.subStepData.WndName) and go and type(go) == "userdata" and go.transform then
+    if go.name == "m_btn_pause" and self.subStepData and (self.subStepData.Type == "battleskill" or self.subStepData.Type == "battlewaitenergy" or self.subStepData.Type == "waitingbattletime" or self.subStepData.Type == "wait" or self.subStepData.Type == "tips") then
+      return true
+    end
+    if not CS.UI.UILuaHelper.CheckGuideClickInView(go.transform, self.subStepData.WndName) then
+      return false
+    end
   end
   if self.subStepData and self.subStepData.Type == "battleskill" then
     return true
@@ -1104,7 +1109,7 @@ function Form_Guide:SkipCurrentGuide()
   if self.guideData and self.subStepData and self.subStepData.CanSkip.Length > 0 then
     local guides = {}
     for i = 0, self.subStepData.CanSkip.Length - 1 do
-      table.insert(guides, self.subStepData.CanSkip[i])
+      table.insert(guides, GuideManager:GetFinishStepData(self.subStepData.CanSkip[i], 0))
     end
     GuideManager:FinishStepGuides(guides)
   end
@@ -1117,7 +1122,7 @@ function Form_Guide:FinishSubStepGuide()
   self:ResetRegisterClick()
   self:ResetView()
   GuideManager:GuideDebug("guide_FinishSubStepGuide:::::step_id:" .. self.subStepData.ID .. "::type:" .. self.subStepData.Type)
-  GuideManager:FinishSubStepGuide(self.subStepData.ID, self.subStepData.IsRepeat == 0)
+  GuideManager:FinishSubStepGuide(GuideManager:GetFinishStepData(self.guideData.ID, self.subStepData.ID), self.subStepData.IsRepeat == 0)
   self:FinishStepGuides(self.subStepData.EndFinishGuide)
   if self.subStepData.DelayShowNextStep and self.guideSubStep < self.guideData.SubStepIds.Length then
     self:LockInput(0.5)
@@ -1140,7 +1145,7 @@ function Form_Guide:FinishStepGuides(finishGuides)
     for i = 1, #finishGuides do
       local guideId = tonumber(finishGuides[i])
       if 0 < guideId then
-        table.insert(completeGuides, guideId)
+        table.insert(completeGuides, GuideManager:GetFinishStepData(guideId, 0))
       end
     end
     if 0 < #completeGuides then

@@ -17,6 +17,9 @@ function UIBattlePassBenefits:AfterInit()
   self.m_isInitRewardItem = false
   self.m_isInitRewardItemAdvanced = false
   self.m_titleType = 1
+  if not utils.isNull(self.m_packgift_point) then
+    self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
+  end
 end
 
 function UIBattlePassBenefits:OnActive()
@@ -541,24 +544,11 @@ function UIBattlePassBenefits:OnRewardItemClick(itemID, itemNum, itemCom)
 end
 
 function UIBattlePassBenefits:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
+  if not self.m_stActivity or not self.m_paidGiftPoint then
     return
   end
-  if not self.m_stActivity then
-    self.m_packgift_point:SetActive(false)
-  end
   local productID, productSubID = self.m_stActivity:GetProductID()
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productID)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({productId = productID})
 end
 
 function UIBattlePassBenefits.SortComparator(a, b)

@@ -136,21 +136,6 @@ function Form_Activity101Lamia_DialogueMain:FreshPageItems(degreeCfgTab, pageInd
   degreeCfgTab.pageIndex = pageIndex
 end
 
-function Form_Activity101Lamia_DialogueMain:GetLevelIndexByLevelID(levelDegree, levelID)
-  if not levelDegree then
-    return
-  end
-  if not levelID then
-    return
-  end
-  local levelDataList = self.DegreeCfgTab[levelDegree].levelList
-  for i, v in ipairs(levelDataList) do
-    if v.levelCfg.m_LevelID == levelID then
-      return i
-    end
-  end
-end
-
 function Form_Activity101Lamia_DialogueMain:GetShowItemComByIndex(levelDegree, levelID)
   if not levelDegree then
     return

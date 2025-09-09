@@ -20,11 +20,53 @@ function Form_CommonTips:AfterInit()
 end
 
 function Form_CommonTips:ReplaceTextComponent()
-  if not utils.isNull(self.m_word_tp) then
-    self.m_word_tp:SetActive(self.m_bUseSystemWord)
-  end
   if not utils.isNull(self.m_word) then
-    self.m_word:SetActive(not self.m_bUseSystemWord)
+    self.m_word:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_word_tmp) then
+    self.m_word_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_title) then
+    self.m_txt_title:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_title_tmp) then
+    self.m_txt_title_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes) then
+    self.m_txt_yes:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_tmp) then
+    self.m_txt_yes_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_countdown) then
+    self.m_txt_yes_countdown:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_countdown_tmp) then
+    self.m_txt_yes_countdown_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_no) then
+    self.m_txt_no:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_no_tmp) then
+    self.m_txt_no_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_01) then
+    self.m_txt_yes_01:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_01_tmp) then
+    self.m_txt_yes_01_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_countdown_02) then
+    self.m_txt_yes_countdown_02:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_txt_yes_countdown_02_tmp) then
+    self.m_txt_yes_countdown_02_tmp:SetActive(not self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_consume_num) then
+    self.m_consume_num:SetActive(self.m_bUseSystemWord)
+  end
+  if not utils.isNull(self.m_consume_num_tmp) then
+    self.m_consume_num_tmp:SetActive(not self.m_bUseSystemWord)
   end
 end
 
@@ -46,24 +88,32 @@ function Form_CommonTips:OnActive()
   self:CheckShowTitle()
   self:CheckShowButtons()
   self:CheckShowConsumePanel()
+  local showCountDownFlag = false
+  local showCountDown2Flag = false
   if self.m_param.btnNum == ConfirmCommonTipsStyle.OneButtonAutoConfirm then
     self.m_bShowAutoConfirm = true
-    self.m_txt_yes_countdown_02:SetActive(true)
-    self.m_txt_yes_countdown:SetActive(false)
+    showCountDownFlag = false
+    showCountDown2Flag = true
     self.m_fAutoConfirmTime = 0
     self.m_sAutoConfirmText = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsAutoStart")
     self:RefreshAutoConfirm(0)
   elseif self.m_param.btnNum == ConfirmCommonTipsStyle.TwoButtonAutoConfirm then
     self.m_bShowAutoConfirm = true
-    self.m_txt_yes_countdown_02:SetActive(false)
-    self.m_txt_yes_countdown:SetActive(true)
+    showCountDownFlag = true
+    showCountDown2Flag = false
     self.m_fAutoConfirmTime = 0
     self.m_sAutoConfirmText = CS.ConfFact.LangFormat4DataInit("ConfirmCommonTipsAutoStart")
     self:RefreshAutoConfirm(0)
   else
     self.m_bShowAutoConfirm = false
-    self.m_txt_yes_countdown_02:SetActive(false)
-    self.m_txt_yes_countdown:SetActive(false)
+    showCountDownFlag = false
+    showCountDown2Flag = false
+  end
+  self.m_txt_yes_countdown_02:SetActive(showCountDown2Flag and self.m_bUseSystemWord)
+  self.m_txt_yes_countdown:SetActive(showCountDownFlag and self.m_bUseSystemWord)
+  if not utils.isNull(self.m_txt_yes_countdown_tmp) then
+    self.m_txt_yes_countdown_tmp:SetActive(not self.m_bUseSystemWord and showCountDownFlag)
+    self.m_txt_yes_countdown_02_tmp:SetActive(not self.m_bUseSystemWord and showCountDown2Flag)
   end
   self.m_bAutoClose = true
   if self.m_param.bAutoClose ~= nil then
@@ -152,16 +202,26 @@ function Form_CommonTips:RefreshAutoConfirm(dt)
     bShowAutoConfirm = self.m_param.fRefreshAutoConfirmCB()
   end
   if self.m_bShowAutoConfirm ~= bShowAutoConfirm then
+    local showCountDownFlag = false
+    local showCountDown2Flag = false
     if bShowAutoConfirm then
       if self.m_param.btnNum == ConfirmCommonTipsStyle.OneButtonAutoConfirm then
-        self.m_txt_yes_countdown_02:SetActive(true)
+        showCountDown2Flag = true
+        showCountDownFlag = false
       else
-        self.m_txt_yes_countdown:SetActive(true)
+        showCountDown2Flag = false
+        showCountDownFlag = true
       end
       self.m_fAutoConfirmTime = 0
     else
-      self.m_txt_yes_countdown_02:SetActive(false)
-      self.m_txt_yes_countdown:SetActive(false)
+      showCountDown2Flag = false
+      showCountDownFlag = false
+    end
+    self.m_txt_yes_countdown_02:SetActive(showCountDown2Flag and self.m_bUseSystemWord)
+    self.m_txt_yes_countdown:SetActive(showCountDownFlag and self.m_bUseSystemWord)
+    if not utils.isNull(self.m_txt_yes_countdown_tmp) then
+      self.m_txt_yes_countdown_tmp:SetActive(not self.m_bUseSystemWord and showCountDownFlag)
+      self.m_txt_yes_countdown_02_tmp:SetActive(not self.m_bUseSystemWord and showCountDown2Flag)
     end
     self.m_bShowAutoConfirm = bShowAutoConfirm
   end
@@ -170,8 +230,14 @@ function Form_CommonTips:RefreshAutoConfirm(dt)
     local fRemainTime = self.m_param.fAutoConfirmDelay - self.m_fAutoConfirmTime
     if self.m_param.btnNum == ConfirmCommonTipsStyle.OneButtonAutoConfirm then
       self.m_txt_yes_countdown_02_Text.text = string.gsub(self.m_sAutoConfirmText, "{num}", math.ceil(fRemainTime))
+      if not utils.isNull(self.m_txt_yes_countdown_02_tmp_Text) then
+        self.m_txt_yes_countdown_02_tmp_Text.text = string.gsub(self.m_sAutoConfirmText, "{num}", math.ceil(fRemainTime))
+      end
     else
       self.m_txt_yes_countdown_Text.text = string.gsub(self.m_sAutoConfirmText, "{num}", math.ceil(fRemainTime))
+      if not utils.isNull(self.m_txt_yes_countdown_tmp_Text) then
+        self.m_txt_yes_countdown_tmp_Text.text = string.gsub(self.m_sAutoConfirmText, "{num}", math.ceil(fRemainTime))
+      end
     end
     if fRemainTime <= 0 then
       self.m_fAutoConfirmTime = 0
@@ -204,21 +270,22 @@ function Form_CommonTips:CheckShowContent()
   end
   local contentShowStr = self:GetShowStr(self.m_param.content) or ""
   if not self.m_bUseSystemWord then
-    self.m_word_Text.text = contentShowStr
+    self.m_word_tmp_Text.text = contentShowStr
     local contentAlign = self.m_param.contentAlign
     if contentAlign == nil then
       contentAlign = CS.TMPro.TextAlignmentOptions.Center
     end
-    self.m_word_Text.alignment = contentAlign
-  elseif not utils.isNull(self.m_word_tp) then
-    self.m_word_tp_Text.text = contentShowStr
+    self.m_word_tmp_Text.alignment = contentAlign
+  elseif not utils.isNull(self.m_word) then
+    self.m_word_Text.text = contentShowStr
     local contentAlign = self.m_param.contentAlign
     if contentAlign == CS.TMPro.TextAlignmentOptions.Left then
       contentAlign = CS.UnityEngine.TextAnchor.MiddleLeft
     else
       contentAlign = CS.UnityEngine.TextAnchor.MiddleCenter
     end
-    self.m_word_tp_Text.alignment = contentAlign
+    self.m_word_Text.alignment = contentAlign
+    UILuaHelper.SetActive(self.m_word, self.m_bUseSystemWord)
   end
 end
 
@@ -230,6 +297,9 @@ function Form_CommonTips:CheckShowTitle()
   if self.m_param.m_isShowTitle and self.m_param.m_isShowTitle == 1 and self.m_param.title then
     self.m_txt_title_bg:SetActive(true)
     self.m_txt_title_Text.text = tostring(self.m_param.title)
+    if not utils.isNull(self.m_txt_title_tmp_Text) then
+      self.m_txt_title_tmp_Text.text = tostring(self.m_param.title)
+    end
   end
 end
 
@@ -248,6 +318,14 @@ function Form_CommonTips:CheckShowConsumePanel()
     else
       UILuaHelper.SetColor(self.m_consume_num_Text, 255, 255, 255, 1)
     end
+    if not utils.isNull(self.self.m_consume_num_tmp_Text) then
+      self.self.m_consume_num_tmp_Text.text = tostring(consumeData[2])
+      if userNum < tonumber(consumeData[2]) then
+        UILuaHelper.SetColor(self.m_consume_num_tmp_Text, 255, 0, 0, 1)
+      else
+        UILuaHelper.SetColor(self.m_consume_num_tmp_Text, 255, 255, 255, 1)
+      end
+    end
   end
 end
 
@@ -260,6 +338,12 @@ function Form_CommonTips:CheckShowButtons()
     self.m_BtnNoBack = self.m_param.func2
     self.m_txt_yes_Text.text = self:GetShowStr(self.m_param.funcText1) or "Yes"
     self.m_txt_no_Text.text = self:GetShowStr(self.m_param.funcText2) or "No"
+    if not utils.isNull(self.m_txt_yes_tmp_Text) then
+      self.m_txt_yes_tmp_Text.text = self:GetShowStr(self.m_param.funcText1) or "Yes"
+    end
+    if not utils.isNull(self.m_txt_no_tmp_Text) then
+      self.m_txt_no_tmp_Text.text = self:GetShowStr(self.m_param.funcText2) or "No"
+    end
   else
     self.m_btn_yes_02:SetActive(true)
     self.m_btn_yes:SetActive(false)
@@ -267,12 +351,15 @@ function Form_CommonTips:CheckShowButtons()
     self.m_BtnYes2Back = self.m_param.func1
     self.m_BtnNoBack = self.m_param.func2
     self.m_txt_yes_01_Text.text = self:GetShowStr(self.m_param.funcText1) or "Yes"
+    if not utils.isNull(self.m_txt_yes_01_tmp_Text) then
+      self.m_txt_yes_01_tmp_Text.text = self:GetShowStr(self.m_param.funcText1) or "Yes"
+    end
   end
   local sizeDelta
-  if not utils.isNull(self.m_word_tp) and self.m_bUseSystemWord then
-    sizeDelta = self.m_word_tp:GetComponent("RectTransform").sizeDelta
-  else
+  if not utils.isNull(self.m_word) and self.m_bUseSystemWord then
     sizeDelta = self.m_word:GetComponent("RectTransform").sizeDelta
+  else
+    sizeDelta = self.m_word_tmp:GetComponent("RectTransform").sizeDelta
   end
   if self.m_param.showToggle then
     self.m_Toggle:SetActive(true)
@@ -286,16 +373,16 @@ function Form_CommonTips:CheckShowButtons()
     sizeDelta.y = 290
     if self.m_bUseSystemWord then
       self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
-    elseif not utils.isNull(self.m_word_tp) then
-      self.m_word_tp:GetComponent("RectTransform").sizeDelta = sizeDelta
+    elseif not utils.isNull(self.m_word_tmp) then
+      self.m_word_tmp:GetComponent("RectTransform").sizeDelta = sizeDelta
     end
   else
     self.m_Toggle:SetActive(false)
     sizeDelta.y = 350
     if self.m_bUseSystemWord then
       self.m_word:GetComponent("RectTransform").sizeDelta = sizeDelta
-    elseif not utils.isNull(self.m_word_tp) then
-      self.m_word_tp:GetComponent("RectTransform").sizeDelta = sizeDelta
+    elseif not utils.isNull(self.m_word_tmp) then
+      self.m_word_tmp:GetComponent("RectTransform").sizeDelta = sizeDelta
     end
   end
   if self.m_param.bShowToggleYes then
@@ -317,8 +404,8 @@ end
 
 function Form_CommonTips:OnBtnyesClicked(bAutoConfirm)
   if self.m_BtnYesBack then
-    self.m_BtnYesBack(bAutoConfirm)
     self:SetToggleStateCB()
+    self.m_BtnYesBack(bAutoConfirm)
   end
   self:SaveToggleYes()
   if self.m_bAutoClose then
@@ -337,8 +424,8 @@ end
 
 function Form_CommonTips:OnBtnyes02Clicked(bAutoConfirm)
   if self.m_BtnYes2Back then
-    self.m_BtnYes2Back(bAutoConfirm)
     self:SetToggleStateCB()
+    self.m_BtnYes2Back(bAutoConfirm)
   end
   if self.m_bAutoClose then
     self:CloseUI()

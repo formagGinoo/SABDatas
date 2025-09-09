@@ -7,7 +7,7 @@
       "m_Title": "\"01\"",
       "m_mName": "\"Stage\"",
       "m_TaskList": "[301001,301002,301003]",
-      "m_Reward": "[[50004,5],[1001,170000],[999,5000]]",
+      "m_Reward": "[[50004,5],[1001,80000],[999,5000]]",
       "m_NextMainTaskID": "2",
       "m_mRewardDes": "\"Story Stage-01 Rewards Available\""
     },
@@ -378,9 +378,29 @@
       "m_mName": "\"Stage\"",
       "m_TaskList": "[301112,301113,301114]",
       "m_Reward": "[[50004,10],[51010,50]]",
+      "m_NextMainTaskID": "39",
+      "m_mRewardDes": "\"Main Story Stage-38 Rewards Available\""
+    },
+    "39": {
+      "m_bError": null,
+      "m_ID": "39",
+      "m_Title": "\"39\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301115,301116,301117]",
+      "m_Reward": "[[50004,10],[51010,50]]",
+      "m_NextMainTaskID": "40",
+      "m_mRewardDes": "\"Main Story Stage-39 Rewards Available\""
+    },
+    "40": {
+      "m_bError": null,
+      "m_ID": "40",
+      "m_Title": "\"40\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301118,301119,301120]",
+      "m_Reward": "[[50004,10],[51010,50]]",
       "m_NextMainTaskID": null,
       "m_mRewardDes": "\"\""
     }
   },
-  "status": "processed_38_items"
+  "status": "processed_40_items"
 }

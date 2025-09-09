@@ -15,18 +15,10 @@ end
 
 function Form_Activity106Main:OnInactive()
   self.super.OnInactive(self)
-  if self.timer then
-    TimeService:KillTimer(self.timer)
-    self.timer = nil
-  end
 end
 
 function Form_Activity106Main:OnDestroy()
   self.super.OnDestroy(self)
-  if self.timer then
-    TimeService:KillTimer(self.timer)
-    self.timer = nil
-  end
 end
 
 function Form_Activity106Main:OnBtnheroClicked()

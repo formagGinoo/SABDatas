@@ -259,6 +259,11 @@ function Form_ActivityAnnounceLotterypage:RefreshContent()
   if not announceCfg then
     return
   end
+  if announceCfg.iNoticeType ~= nil and announceCfg.iNoticeType == 5 then
+    local reportStr = "click_notice_clean"
+    local params = {Event_id = reportStr}
+    ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
+  end
   if self.m_curSelectPushSubPanel and self.m_curSelectPushSubPanel.SetActive and self.m_curSelectPushSubPanel.OnInactivePanel then
     self.m_curSelectPushSubPanel:SetActive(false)
     self.m_curSelectPushSubPanel:OnInactivePanel()
@@ -484,7 +489,11 @@ function Form_ActivityAnnounceLotterypage:UpdateActivityData()
         table.insert(self.m_systemDataList, cfgEntireInfo)
       elseif cfgDataInfo.iNoticeType == 3 then
         table.insert(self.m_consultDataList, cfgEntireInfo)
-      elseif cfgDataInfo.iNoticeType == 4 and v:CanShowAddResPre() then
+      elseif cfgDataInfo.iNoticeType == 4 then
+        if v:CanShowAddResPre() then
+          table.insert(self.m_systemDataList, cfgEntireInfo)
+        end
+      elseif cfgDataInfo.iNoticeType == 5 then
         table.insert(self.m_systemDataList, cfgEntireInfo)
       end
     end
@@ -687,6 +696,10 @@ function Form_ActivityAnnounceLotterypage:OnBtngoClicked()
   local announceCfg = self.curShowList[self.cur_leftselect_idx].m_stSdpConfig.stClientCfg
   if announceCfg.iNoticeType == 4 then
     DownloadManager:DownloadPreChangeStatus(true)
+  elseif announceCfg.iNoticeType == 5 then
+    DownloadManager:ClearOldResource(function()
+      self:CloseForm()
+    end)
   end
   self:DealJump(announceCfg.iJumpTypeLast, announceCfg.sJumpParamLast)
 end

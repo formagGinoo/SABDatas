@@ -4,7 +4,7 @@
     "1": {
       "m_bError": null,
       "m_ID": "1",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-1</style> to unlock.\""
     },
     "2": {
       "m_bError": null,
@@ -19,7 +19,7 @@
     "4": {
       "m_bError": null,
       "m_ID": "4",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-9</style> to unlock.\""
     },
     "5": {
       "m_bError": null,
@@ -29,7 +29,7 @@
     "6": {
       "m_bError": null,
       "m_ID": "6",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-5</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock\""
     },
     "8": {
       "m_bError": null,
@@ -74,7 +74,7 @@
     "17": {
       "m_bError": null,
       "m_ID": "17",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-1</style> to unlock.\""
     },
     "18": {
       "m_bError": null,
@@ -99,7 +99,7 @@
     "22": {
       "m_bError": null,
       "m_ID": "22",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>0-3</style> to unlock.\""
     },
     "23": {
       "m_bError": null,
@@ -256,10 +256,15 @@
       "m_ID": "60",
       "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-1</style> to unlock.\""
     },
+    "61": {
+      "m_bError": null,
+      "m_ID": "61",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock\""
+    },
     "101": {
       "m_bError": null,
       "m_ID": "101",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>0-3</style> to unlock.\""
     },
     "102": {
       "m_bError": null,
@@ -811,6 +816,16 @@
       "m_ID": "10249",
       "m_mContent": "\"Please select Agree or Disagree.\""
     },
+    "10250": {
+      "m_bError": null,
+      "m_ID": "10250",
+      "m_mContent": "\"Messages can only be sent 1 hour after joining a Clan.\""
+    },
+    "10251": {
+      "m_bError": null,
+      "m_ID": "10251",
+      "m_mContent": "\"Message Cooldown\""
+    },
     "10300": {
       "m_bError": null,
       "m_ID": "10300",
@@ -956,6 +971,21 @@
       "m_ID": "10328",
       "m_mContent": "\"Clan Hunt is locked.\""
     },
+    "10340": {
+      "m_bError": null,
+      "m_ID": "10340",
+      "m_mContent": "\"Resource Cleanup Successful\""
+    },
+    "10341": {
+      "m_bError": null,
+      "m_ID": "10341",
+      "m_mContent": "\"No Resources to Clean Up\""
+    },
+    "10342": {
+      "m_bError": null,
+      "m_ID": "10342",
+      "m_mContent": "\"Resource Cleanup Failed\""
+    },
     "10400": {
       "m_bError": null,
       "m_ID": "10400",
@@ -1040,6 +1070,11 @@
       "m_bError": null,
       "m_ID": "10512",
       "m_mContent": "\"Unlocking Requirement: Clear [Sapphire Isle] <style=Highlight>{0}</style>.\""
+    },
+    "10513": {
+      "m_bError": null,
+      "m_ID": "10513",
+      "m_mContent": "\"Unlocks after {0}.\""
     },
     "11126": {
       "m_bError": null,
@@ -1144,7 +1179,7 @@
     "13011": {
       "m_bError": null,
       "m_ID": "13011",
-      "m_mContent": "\"Quick Sending unlocks after the first clear (resets daily).\""
+      "m_mContent": "\"No Exorcise Spirit records. Unable to perform Quick Exorcise.\""
     },
     "13012": {
       "m_bError": null,
@@ -1235,6 +1270,16 @@
       "m_bError": null,
       "m_ID": "13029",
       "m_mContent": "\"Report successful.\""
+    },
+    "13030": {
+      "m_bError": null,
+      "m_ID": "13030",
+      "m_mContent": "\"<style=Clientmessage01>{0}</style> opens at <style=Highlight>{1}</style>.\""
+    },
+    "13031": {
+      "m_bError": null,
+      "m_ID": "13031",
+      "m_mContent": "\"<style=Clientmessage01>{0}</style> has ended.\""
     },
     "20000": {
       "m_bError": null,
@@ -1506,6 +1551,11 @@
       "m_ID": "21009",
       "m_mContent": "\"Boon From Afar Unavailable\""
     },
+    "21010": {
+      "m_bError": null,
+      "m_ID": "21010",
+      "m_mContent": "\"All Files Verified Successfully\""
+    },
     "30001": {
       "m_bError": null,
       "m_ID": "30001",
@@ -1724,7 +1774,7 @@
     "40014": {
       "m_bError": null,
       "m_ID": "40014",
-      "m_mContent": "\"New Season soon.\""
+      "m_mContent": "\"New Season Incoming\""
     },
     "40015": {
       "m_bError": null,
@@ -1916,6 +1966,11 @@
       "m_ID": "40052",
       "m_mContent": "\"Previous Stage Not Completed\""
     },
+    "40053": {
+      "m_bError": null,
+      "m_ID": "40053",
+      "m_mContent": "\"Selected Equipment Unchanged\""
+    },
     "41001": {
       "m_bError": null,
       "m_ID": "41001",
@@ -1990,6 +2045,11 @@
       "m_bError": null,
       "m_ID": "42002",
       "m_mContent": "\"Altar of Invocation settings saved.\""
+    },
+    "42003": {
+      "m_bError": null,
+      "m_ID": "42003",
+      "m_mContent": "\"Altar of Invocation is full.\""
     },
     "43001": {
       "m_bError": null,
@@ -2211,6 +2271,31 @@
       "m_ID": "52006",
       "m_mContent": "\"Order(s) pending. Try again later or contact customer service.\""
     },
+    "52007": {
+      "m_bError": null,
+      "m_ID": "52007",
+      "m_mContent": "\"Please select a Boon event first.\""
+    },
+    "52008": {
+      "m_bError": null,
+      "m_ID": "52008",
+      "m_mContent": "\"No Available Boon\""
+    },
+    "52009": {
+      "m_bError": null,
+      "m_ID": "52009",
+      "m_mContent": "\"Boon event ended\""
+    },
+    "52010": {
+      "m_bError": null,
+      "m_ID": "52010",
+      "m_mContent": "\"Cannot unlock this Boon repeatedly.\""
+    },
+    "52011": {
+      "m_bError": null,
+      "m_ID": "52011",
+      "m_mContent": "\"{0} has been successfully unlocked.\""
+    },
     "53001": {
       "m_bError": null,
       "m_ID": "53001",
@@ -2286,11 +2371,16 @@
       "m_ID": "56005",
       "m_mContent": "\"All rewards claimed, event closing.\""
     },
+    "56006": {
+      "m_bError": null,
+      "m_ID": "56006",
+      "m_mContent": "\"Auto-setup complete.\""
+    },
     "99999": {
       "m_bError": null,
       "m_ID": "99999",
       "m_mContent": "\"Unlocked by default.\""
     }
   },
-  "status": "processed_458_items"
+  "status": "processed_476_items"
 }

@@ -9,6 +9,9 @@ function UICommonItem:OnInit()
   self.m_itemIcon:SetItemDelClickCB(function()
     self:OnItemDelBtnClk()
   end)
+  self.m_itemIcon:SetItemIconLongPress(function()
+    self:OnItemLongClk()
+  end)
 end
 
 function UICommonItem:OnFreshData()
@@ -46,6 +49,15 @@ function UICommonItem:OnItemDelBtnClk()
   end
   if self.m_itemInitData and self.m_itemInitData.itemDelClkBackFun then
     self.m_itemInitData.itemDelClkBackFun(self.m_itemIndex - 1, self.m_itemRootObj, self.m_itemIcon)
+  end
+end
+
+function UICommonItem:OnItemLongClk()
+  if not self.m_itemIndex then
+    return
+  end
+  if self.m_itemInitData and self.m_itemInitData.itemLongClkBackFun then
+    self.m_itemInitData.itemLongClkBackFun(self.m_itemIndex - 1, self.m_itemRootObj, self.m_itemIcon)
   end
 end
 

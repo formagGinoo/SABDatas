@@ -7,6 +7,7 @@ local RogueStageItemSubType = RogueStageManager.RogueStageItemSubType
 local MaxTempPosNum = 5
 local __RogueChose_inone = "RogueChose_inone"
 local __RogueChose_in = "RogueChose_in"
+local CombineLockTime = 0.5
 
 function Form_RogueChose:SetInitParam(param)
 end
@@ -128,10 +129,20 @@ function Form_RogueChose:OnInactive()
   self.super.OnInactive(self)
   self:ClearCacheData()
   self:RemoveAllEventListeners()
+  if self.m_combineTimer then
+    TimeService:KillTimer(self.m_combineTimer)
+    self.m_combineTimer = nil
+  end
+  self:CheckCombineUnLock()
 end
 
 function Form_RogueChose:OnDestroy()
   self.GuideRecordActiveCount = 0
+  if self.m_combineTimer then
+    TimeService:KillTimer(self.m_combineTimer)
+    self.m_combineTimer = nil
+  end
+  self:CheckCombineUnLock()
   self.super.OnDestroy(self)
 end
 
@@ -625,9 +636,13 @@ function Form_RogueChose:CombineItem(mapRogueDragEquipItem, materialRogueDragIte
       self.m_tempRoundCombineItemIDList[#self.m_tempRoundCombineItemIDList + 1] = v.m_rogueEquipItemData.rogueStageItemCfg.m_ItemID
     end
   end
-  local sequence = Tweening.DOTween.Sequence()
-  sequence:AppendInterval(0.5)
-  sequence:OnComplete(function()
+  if self.m_combineTimer then
+    TimeService:KillTimer(self.m_combineTimer)
+    self.m_combineTimer = nil
+  end
+  self:CheckCombineUnLock()
+  self.m_uiLockID = UILockIns:Lock(CombineLockTime)
+  self.m_combineTimer = TimeService:SetTimer(CombineLockTime, 1, function()
     if self and self.DestroyEquipItem then
       self:DestroyEquipItem(materialRogueDragItemList)
     end
@@ -638,8 +653,9 @@ function Form_RogueChose:CombineItem(mapRogueDragEquipItem, materialRogueDragIte
     if self and self.FreshAllMapCombineLineInEquipGrid then
       self:FreshAllMapCombineLineInEquipGrid()
     end
+    self.m_combineTimer = nil
+    self:CheckCombineUnLock()
   end)
-  sequence:SetAutoKill(true)
 end
 
 function Form_RogueChose:DestroyEquipItem(materialRogueDragItemList)
@@ -835,6 +851,13 @@ function Form_RogueChose:CheckFreshShowPosAndDelShow(isEnterDrag)
       UILuaHelper.SetActive(self["m_img_lock_" .. i], isShowLock)
     end
   end
+end
+
+function Form_RogueChose:CheckCombineUnLock()
+  if self.m_uiLockID and UILockIns:IsValidLocker(self.m_uiLockID) then
+    UILockIns:Unlock(self.m_uiLockID)
+  end
+  self.m_uiLockID = nil
 end
 
 function Form_RogueChose:OnItemEnterDrag(itemIndex, dragPos)

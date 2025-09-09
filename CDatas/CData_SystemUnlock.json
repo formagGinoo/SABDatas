@@ -8,7 +8,7 @@
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Task\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1102040]]",
+      "m_UnlockConditionData": "[[1102010]]",
       "m_ClientMessage": "[1]"
     },
     "2": {
@@ -38,7 +38,7 @@
       "m_UnlockType": "1",
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_AFK\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1103060]]",
+      "m_UnlockConditionData": "[[1102090]]",
       "m_ClientMessage": "[4]"
     },
     "5": {
@@ -58,7 +58,7 @@
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Equipment\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1102050]]",
+      "m_UnlockConditionData": "[[1102040]]",
       "m_ClientMessage": "[6]"
     },
     "8": {
@@ -148,7 +148,7 @@
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Task_Main\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1102040]]",
+      "m_UnlockConditionData": "[[1102010]]",
       "m_ClientMessage": "[17]"
     },
     "18": {
@@ -198,7 +198,7 @@
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Char_Breakthrough\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1102040]]",
+      "m_UnlockConditionData": "[[1101030]]",
       "m_ClientMessage": "[22]"
     },
     "23": {
@@ -499,7 +499,7 @@
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_DownloadTask\"",
       "m_UnlockConditionType": "[3]",
       "m_UnlockConditionData": "[[1102040]]",
-      "m_ClientMessage": "[22]"
+      "m_ClientMessage": "[61]"
     },
     "55": {
       "m_bError": null,
@@ -591,6 +591,16 @@
       "m_UnlockConditionData": "[[1102040]]",
       "m_ClientMessage": "[55]"
     },
+    "64": {
+      "m_bError": null,
+      "m_SystemID": "64",
+      "m_mName": "\"Equipment Dismantling\"",
+      "m_UnlockType": null,
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_EquipDecomposition\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1102040]]",
+      "m_ClientMessage": "[6]"
+    },
     "101": {
       "m_bError": null,
       "m_SystemID": "101",
@@ -598,7 +608,7 @@
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Character\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1102040]]",
+      "m_UnlockConditionData": "[[1101030]]",
       "m_ClientMessage": "[101]"
     },
     "102": {
@@ -634,7 +644,7 @@
     "105": {
       "m_bError": null,
       "m_SystemID": "105",
-      "m_mName": "\"Recommendation\"",
+      "m_mName": "\"Recommended\"",
       "m_UnlockType": null,
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Team_Recommend\"",
       "m_UnlockConditionType": "[3]",
@@ -752,5 +762,5 @@
       "m_ClientMessage": "[905]"
     }
   },
-  "status": "processed_75_items"
+  "status": "processed_76_items"
 }

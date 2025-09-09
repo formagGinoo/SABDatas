@@ -26,7 +26,7 @@ end
 
 function UIHeroFashionVoiceItem:FreshStatus()
   local voiceInfoCfg = self.m_voiceItemData.voiceInfoCfg
-  local isUnlock = AttractManager:CheckVoiceUnlockCondition(self.m_voiceItemData.heroData, voiceInfoCfg.m_UnlockType, voiceInfoCfg.m_UnlockData)
+  local isUnlock = AttractManager:CheckVoiceUnlockCondition(self.m_voiceItemData.heroData.serverData, voiceInfoCfg.m_UnlockType, voiceInfoCfg.m_UnlockData)
   UILuaHelper.SetActive(self.m_img_lock, not isUnlock)
   local isPlaying = self.m_voiceItemData.isPlaying
   UILuaHelper.SetActive(self.m_img_play, isUnlock and not isPlaying)

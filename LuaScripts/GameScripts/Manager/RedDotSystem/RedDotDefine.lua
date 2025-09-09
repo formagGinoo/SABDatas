@@ -38,6 +38,8 @@ RedDotDefine.ModuleType = {
   BagTab1 = "BagTab1",
   FreeShop = "FreeShop",
   HallActivityEntry = "HallActivityEntry",
+  MiniGame108Entry = "MiniGame108Entry",
+  MiniGame108 = "MiniGame108",
   HeroActHallEntry = "HeroActHallEntry",
   HeroActSignEntry = "HeroActSignEntry",
   HeroActTaskEntry = "HeroActTaskEntry",
@@ -129,6 +131,22 @@ RedDotDefine.ModuleDetail = {
     isParamRedDot = false,
     managerName = nil,
     getCountFunName = nil
+  },
+  [ModuleType.MiniGame108Entry] = {
+    parent = nil,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
+  [ModuleType.MiniGame108] = {
+    parent = ModuleType.MiniGame108Entry,
+    eventNameList = {
+      "eGameEvent_MiniGame_RedDot_ChangeCount"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsMiniGamePuzzleHaveRedDot"
   },
   [ModuleType.HeroLevelUp] = {
     parent = nil,
@@ -538,7 +556,9 @@ RedDotDefine.ModuleDetail = {
     eventNameList = {
       "eGameEvent_Level_Lamia_DailyReset",
       "eGameEvent_Level_Lamia_ShopGoodsClicked",
-      "eGameEvent_RefreshShopData"
+      "eGameEvent_RefreshShopData",
+      "eGameEvent_ShopBuy",
+      "eGameEvent_ShopSoldOut"
     },
     isParamRedDot = true,
     managerName = "HeroActivityManager",
@@ -874,7 +894,9 @@ RedDotDefine.ModuleDetail = {
       "eGameEvent_Ancient_ChangeHero",
       "eGameEvent_Ancient_AddEnergy",
       "eGameEvent_Ancient_SummonHero",
-      "eGameEvent_Alliance_GetApplyList_RedPoint"
+      "eGameEvent_Alliance_GetApplyList_RedPoint",
+      "eGameEvent_Alliance_MessageNoticeLeave",
+      "eGameEvent_Alliance_MessageNoticeChange"
     },
     isParamRedDot = true,
     managerName = "GuildManager",

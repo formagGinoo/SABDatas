@@ -57,8 +57,12 @@ function PaidGiftPackItem:OnFreshData()
   if config.sGoodsPic ~= "" then
     UILuaHelper.SetAtlasSprite(self.m_icon_box_Image, config.sGoodsPic)
   end
-  self.m_img_soldoutmask:SetActive(buyTimes >= config.iLimitNum and 0 < config.iLimitNum)
-  self.m_count_mask:SetActive(buyTimes >= config.iLimitNum and 0 < config.iLimitNum)
+  local isSoldout = buyTimes >= config.iLimitNum and 0 < config.iLimitNum
+  self.m_img_soldoutmask:SetActive(isSoldout)
+  self.m_count_mask:SetActive(isSoldout)
+  if not utils.isNull(self.m_redpoint) then
+    self.m_redpoint:SetActive(isFree and not isSoldout)
+  end
   if isFree then
     self.m_txt_price_free_Text.text = ConfigManager:GetCommonTextById(20041)
     self.m_txt_titlegift_free_Text.text = payStoreActivity:getLangText(config.sGoodsName)
@@ -93,6 +97,19 @@ function PaidGiftPackItem:OnFreshData()
       exTraRewardIndex = count - 1
     end
     local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
+    if not utils.isNull(self.m_pnl_dollscore) then
+      UILuaHelper.SetActive(self.m_pnl_dollscore, isShowPoint)
+    end
+    if isShowPoint and not utils.isNull(self.m_txt_dollscore_Text) then
+      self.m_txt_dollscore_Text.text = pointReward.iNum
+      UILuaHelper.BindButtonClickManual(self.m_pnl_dollscore_Button, function()
+        utils.openItemDetailPop({
+          iID = pointReward.iID,
+          iNum = pointReward.iNum
+        })
+      end)
+    end
+    isShowPoint = isShowPoint and utils.isNull(self.m_pnl_dollscore)
     if isShowPoint then
       count = count + 1
       pointRewardIndex = count - 1
@@ -124,16 +141,18 @@ function PaidGiftPackItem:OnFreshData()
       common_item:SetGiftIcon(true)
     end
     if isShowPoint then
-      local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
-      local common_item = self:createCommonItem(itemObj)
-      common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
-        utils.openItemDetailPop({iID = itemID, iNum = itemNum})
-      end)
-      local processItemData = ResourceUtil:GetProcessRewardData({
-        iID = pointReward.iID,
-        iNum = pointReward.iNum
-      })
-      common_item:SetItemInfo(processItemData)
+      do
+        local itemObj = itemRoot:GetChild(pointRewardIndex).gameObject
+        local common_item = self:createCommonItem(itemObj)
+        common_item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+          utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+        end)
+        local processItemData = ResourceUtil:GetProcessRewardData({
+          iID = pointReward.iID,
+          iNum = pointReward.iNum
+        })
+        common_item:SetItemInfo(processItemData)
+      end
     end
   end
 end
@@ -181,29 +200,6 @@ function PaidGiftPackItem:OnBtnbuyClicked()
   local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(config.sProductId)
   if isShowPoint then
     table.insert(rewardList, pointReward)
-  end
-  if config.iStoreType == MTTDProto.CmdActPayStoreType_Permanent then
-    local param = {
-      Name = payStoreActivity:getLangText(config.sGoodsName),
-      Desc = payStoreActivity:getLangText(config.sGoodsDesc),
-      Icon = config.sGoodsPic,
-      PriceText = IAPManager:GetProductPrice(config.sProductId, true),
-      Reward = rewardList,
-      ProductInfo = {
-        productId = config.sProductId,
-        productSubId = config.iProductSubId,
-        StoreID = config.iStoreId,
-        GoodsID = config.iGoodsId,
-        iStoreType = MTTDProto.IAPStoreType_ActPayStore,
-        GiftPackType = 1,
-        rewardList = rewardList
-      }
-    }
-    if config.sProductId == "" then
-      param.PriceText = ConfigManager:GetCommonTextById(20041)
-    end
-    StackPopup:Push(UIDefines.ID_FORM_FIXEDGIFTWINDOW, param)
-    return
   end
   local ProductInfo = {
     StoreID = config.iStoreId,

@@ -127,7 +127,7 @@ function UpTimeManagerActivity:GetPlayerBgStatusByID(conditionID)
   if not self.m_stClientCfg then
     return
   end
-  local statusMap = self.m_stClientCfg.mHeadFrame
+  local statusMap = self.m_stClientCfg.mBackground
   if not statusMap then
     return
   end

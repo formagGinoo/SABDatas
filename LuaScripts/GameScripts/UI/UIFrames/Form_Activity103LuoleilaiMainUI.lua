@@ -1,4 +1,4 @@
-local Form_Activity103LuoleilaiMainUI = class("Form_Activity103LuoleilaiMainUI", require("UI/Common/HeroActBase/UIHeroActMainBase"))
+local Form_Activity103LuoleilaiMainUI = class("Form_Activity103LuoleilaiMainUI", require("UI/Common/HeroActBase/UIHeroActMainSecondBase"))
 
 function Form_Activity103LuoleilaiMainUI:Init(gameObject, csui)
   if gameObject == nil then

@@ -153,7 +153,7 @@ end
 
 function HeroFashionVoiceSubPanel:OnVoiceClick(index)
   local voiceCfg = self.m_showVoiceInfoList[index].voiceInfoCfg
-  if not AttractManager:CheckVoiceUnlockCondition(self.m_heroData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData) then
+  if not AttractManager:CheckVoiceUnlockCondition(self.m_heroData.serverData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData) then
     return
   end
   self:StopCurPlayingVoice()

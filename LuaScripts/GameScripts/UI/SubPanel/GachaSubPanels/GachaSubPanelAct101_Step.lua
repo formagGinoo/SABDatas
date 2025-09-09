@@ -1,13 +1,12 @@
 local GachaSubPanelAct101 = require("UI/SubPanel/GachaSubPanels/GachaSubPanelAct101")
 local GachaSubPanelAct101_Step = class("GachaSubPanelAct101_Step", GachaSubPanelAct101)
 local isShowProgress = true
+local SequencesMax = 5
 
 function GachaSubPanelAct101_Step:OnInit()
   GachaSubPanelAct101_Step.super.OnInit(self)
   if self.m_initData.m_StepID > 0 then
-    local stepId = self.m_initData.m_StepID
-    local gachaStepIns = ConfigManager:GetConfigInsByName("GachaStep")
-    self.gachaStepCfg = gachaStepIns:GetValue_ByStepID(stepId) or {}
+    self.gachaStepCfg = GachaManager:GetStepConfigByStepID(self.m_initData.m_StepID)
     for i, v in pairs(self.gachaStepCfg) do
       local itemtext = self["m_txt_num" .. i .. "_Text"]
       if itemtext then
@@ -22,6 +21,12 @@ function GachaSubPanelAct101_Step:OnInit()
     end
   end
   self.takenStepSeqs = {}
+  for i = 1, SequencesMax do
+    UILuaHelper.BindButtonClickManual(self["m_btn_reward" .. i .. "_Button"], function()
+      self:ReqGetReward(i)
+    end)
+  end
+  self:addEventListener("eGameEvent_Gacha_StepGachaGetReward", handler(self, self.OnStepGachaGetReward))
 end
 
 function GachaSubPanelAct101_Step:RefreshUI()
@@ -35,7 +40,7 @@ function GachaSubPanelAct101_Step:RefreshUI()
     UILuaHelper.SetActive(self["m_img_bg_light" .. i], false)
     UILuaHelper.SetActive(self["m_img_bg_lock" .. i], false)
     if gachaCount >= v.m_GachaNum then
-      local isReceived = self:IsStepReceived(i)
+      local isReceived = GachaManager:IsStepReceived(self.m_initData.m_GachaID, i)
       UILuaHelper.SetActive(self["m_img_bg_lock" .. i], isReceived)
       UILuaHelper.SetActive(self["m_img_bg_light" .. i], not isReceived)
       self:SetImageFillAmount(i - 1, 1)
@@ -43,7 +48,7 @@ function GachaSubPanelAct101_Step:RefreshUI()
         IsAllReceived = false
       end
     elseif not calBetweenOver and i ~= 1 then
-      local lastNum = self:GetCurStepInfo(i - 1).m_GachaNum
+      local lastNum = GachaManager:GetCurSequencesInfo(i - 1).m_GachaNum
       local num = (gachaCount - lastNum) / (v.m_GachaNum - lastNum)
       self:SetImageFillAmount(i - 1, num)
       calBetweenOver = true
@@ -65,57 +70,19 @@ function GachaSubPanelAct101_Step:SetImageFillAmount(index, num)
   end
 end
 
-function GachaSubPanelAct101_Step:GetCurStepInfo(sequencesId)
-  for id, v in pairs(self.gachaStepCfg) do
-    if id == sequencesId then
-      return v
-    end
-  end
-  return nil
-end
-
-function GachaSubPanelAct101_Step:IsStepReceived(stepId)
-  for _, claimedId in ipairs(self.takenStepSeqs) do
-    if claimedId == stepId then
-      return true
-    end
-  end
-  return false
-end
-
-function GachaSubPanelAct101_Step:IsAllReceived()
-  for i, v in pairs(self.gachaStepCfg) do
-    local isReceived = self:IsStepReceived(i)
-    if not isReceived then
-      return false
-    end
-  end
-  return true
-end
-
 function GachaSubPanelAct101_Step:ReqGetReward(index)
   local finalSeq = {}
-  local gachaCount = GachaManager:GetGachaCountById(self.m_initData.m_GachaID)
+  local iGachaID = self.m_initData.m_GachaID
+  local gachaCount = GachaManager:GetGachaCountById(iGachaID)
   for i, v in pairs(self.gachaStepCfg) do
-    if i <= index and not self:IsStepReceived(i) and gachaCount >= v.m_GachaNum then
+    if i <= index and not GachaManager:IsStepReceived(iGachaID, i) and gachaCount >= v.m_GachaNum then
       table.insert(finalSeq, i)
     end
   end
   if 0 < #finalSeq then
-    local reqMsg = MTTDProto.Cmd_Gacha_TakeStepSeq_SC()
-    reqMsg.iGachaId = self.m_initData.m_GachaID
-    reqMsg.vSeq = finalSeq
-    RPCS():Gacha_TakeStepSeq(reqMsg, function(sc)
-      for _, v in pairs(sc.vSeq) do
-        table.insert(self.takenStepSeqs, v)
-      end
-      GachaManager:SetGachaTakenStepSeqById(sc.iGachaId, self.takenStepSeqs)
-      utils.popUpRewardUI(sc.vReward)
-      self:OnFreshData()
-      self:broadcastEvent("eGameEvent_Gacha_StepGachaGetReward", self.m_initData.m_GachaID)
-    end)
+    GachaManager:ReqGetStepReward(self.m_initData.m_GachaID, finalSeq)
   else
-    local stepCfg = self:GetCurStepInfo(index)
+    local stepCfg = GachaManager:GetCurSequencesInfo(index)
     local stepReward = utils.changeCSArrayToLuaTable(stepCfg.m_StepReward)
     utils.openItemDetailPop({
       iID = stepReward[1],
@@ -136,24 +103,11 @@ function GachaSubPanelAct101_Step:OnBtnprogressClicked()
   end
 end
 
-function GachaSubPanelAct101_Step:OnBtnreward1Clicked()
-  self:ReqGetReward(1)
-end
-
-function GachaSubPanelAct101_Step:OnBtnreward2Clicked()
-  self:ReqGetReward(2)
-end
-
-function GachaSubPanelAct101_Step:OnBtnreward3Clicked()
-  self:ReqGetReward(3)
-end
-
-function GachaSubPanelAct101_Step:OnBtnreward4Clicked()
-  self:ReqGetReward(4)
-end
-
-function GachaSubPanelAct101_Step:OnBtnreward5Clicked()
-  self:ReqGetReward(5)
+function GachaSubPanelAct101_Step:OnStepGachaGetReward(iGachaId, vReward)
+  if iGachaId == self.m_initData.m_GachaID then
+    utils.popUpRewardUI(vReward)
+    self:OnFreshData()
+  end
 end
 
 function GachaSubPanelAct101_Step:OnBtnclear10Clicked()

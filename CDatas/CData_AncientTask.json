@@ -4,7 +4,7 @@
     "1": {
       "m_bError": null,
       "m_UID": "1",
-      "m_mTaskName": "\"Attempt [Infinite Abyss] stages {0} time(s).\"",
+      "m_mTaskName": "\"Challenge [Infinite Abyss] {0} time(s).\"",
       "m_DescParam": "[\"3\"]",
       "m_ObjectiveType": "203",
       "m_ObjectiveData": "[3,0]",
@@ -15,7 +15,7 @@
     "2": {
       "m_bError": null,
       "m_UID": "2",
-      "m_mTaskName": "\"Attempt [Infinite Abyss] stages {0} time(s).\"",
+      "m_mTaskName": "\"Challenge [Infinite Abyss] {0} time(s).\"",
       "m_DescParam": "[\"1\"]",
       "m_ObjectiveType": "203",
       "m_ObjectiveData": "[3,0]",

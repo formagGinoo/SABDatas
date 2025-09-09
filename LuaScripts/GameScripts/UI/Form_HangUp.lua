@@ -110,15 +110,19 @@ function Form_HangUp:ShowHangUpBoxAnim(progressNum)
     return
   end
   local showProgressNum = 0
-  if 0 <= progressNum and progressNum < 25 then
-    showProgressNum = 0
-  elseif 25 <= progressNum and progressNum < 50 then
-    showProgressNum = 25
-  elseif 50 <= progressNum and progressNum < 75 then
+  if 0 < progressNum and progressNum < 8 then
+    showProgressNum = 1
+  elseif 8 <= progressNum and progressNum < 23 then
+    showProgressNum = 15
+  elseif 23 <= progressNum and progressNum < 40 then
+    showProgressNum = 30
+  elseif 40 <= progressNum and progressNum < 60 then
     showProgressNum = 50
-  elseif 75 <= progressNum and progressNum < 100 then
-    showProgressNum = 75
-  elseif 100 <= progressNum then
+  elseif 60 <= progressNum and progressNum < 78 then
+    showProgressNum = 70
+  elseif 78 <= progressNum and progressNum < 93 then
+    showProgressNum = 80
+  elseif 93 <= progressNum then
     showProgressNum = 100
   end
   UILuaHelper.SetActive(self.m_FX_HangUp_Bar100, 100 <= progressNum)
@@ -270,7 +274,7 @@ end
 
 function Form_HangUp:GeneratedListData()
   local dataList = {}
-  for i, v in ipairs(self.m_hangUpRewardList) do
+  for i, v in pairs(self.m_hangUpRewardList) do
     local processData = table.deepcopy(ResourceUtil:GetProcessRewardData({
       iID = v[1],
       iNum = v[2]
@@ -342,7 +346,9 @@ end
 
 function Form_HangUp:OnBtnreceiveClicked()
   self:HangUpRewardTips()
-  if TimeUtil:GetServerTimeS() - tonumber(HangUpManager.m_iTakeRewardTime) > AFK_REQUEST_INTERVAL then
+  local dataList = self:GeneratedListData()
+  local isReward = table.getn(dataList) > 0
+  if TimeUtil:GetServerTimeS() - tonumber(HangUpManager.m_iTakeRewardTime) > AFK_REQUEST_INTERVAL or isReward then
     HangUpManager:ReqTakeReward()
   else
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 20010)

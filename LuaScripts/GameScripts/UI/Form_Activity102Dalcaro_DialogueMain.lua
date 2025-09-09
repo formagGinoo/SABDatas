@@ -35,19 +35,6 @@ function Form_Activity102Dalcaro_DialogueMain:FreshUI()
   self:FreshLevelTab(self.m_curDegreeIndex)
 end
 
-function Form_Activity102Dalcaro_DialogueMain:FreshLevelTab(index)
-  self.super.FreshLevelTab(self, index)
-  if index then
-    local curDegreeData = self.DegreeCfgTab[index]
-    self.m_luaextensionInfinityGrid:ShowItemList(curDegreeData.levelList)
-    local chooseItemIndex = self:GetLevelIndexByLevelID(index, curDegreeData.currentID)
-    if not chooseItemIndex then
-      return
-    end
-    self.m_luaextensionInfinityGrid:LocateTo(chooseItemIndex - 1)
-  end
-end
-
 function Form_Activity102Dalcaro_DialogueMain:FreshLevelDetailShow()
   if self.m_curDetailLevelID then
     UILuaHelper.SetActive(self.m_level_detail_root, true)
@@ -72,7 +59,13 @@ function Form_Activity102Dalcaro_DialogueMain:FreshLevelDetailShow()
     GlobalManagerIns:TriggerWwiseBGMState(95)
   else
     TimeService:SetTimer(0.2, 1, function()
+      if utils.isNull(self.m_level_detail_root) then
+        return
+      end
       UILuaHelper.SetActive(self.m_level_detail_root, false)
+      if utils.isNull(self.m_button_extension_choose) then
+        return
+      end
       UILuaHelper.SetActive(self.m_button_extension_choose, false)
     end)
     GlobalManagerIns:TriggerWwiseBGMState(96)
@@ -95,59 +88,6 @@ function Form_Activity102Dalcaro_DialogueMain:FreshChooseItemNode()
     return
   end
   self.itemCom:FreshData(itemData, chooseItemIndex)
-end
-
-function Form_Activity102Dalcaro_DialogueMain:GetLevelIndexByLevelID(levelDegree, levelID)
-  if not levelDegree then
-    return
-  end
-  if not levelID then
-    return
-  end
-  local levelDataList = self.DegreeCfgTab[levelDegree].levelList
-  for i, v in ipairs(levelDataList) do
-    if v.levelCfg.m_LevelID == levelID then
-      return i
-    end
-  end
-end
-
-function Form_Activity102Dalcaro_DialogueMain:FreshDegreeLevelList()
-  for _, v in ipairs(self.DegreeCfgTab) do
-    local levelData = self.m_levelHelper:GetLevelDataByActAndSubID(self.m_activityID, v.activitySubID) or {}
-    local levelCfgList = levelData.levelCfgList
-    local curlevelCfg = self.m_levelHelper:GetCurLevel(self.m_activityID, v.activitySubID) or {}
-    local nextLevelID = curlevelCfg.m_LevelID or 0
-    local showLevelItemList = {}
-    for index, tempCfg in ipairs(levelCfgList) do
-      local isCurrent = tempCfg.m_LevelID == nextLevelID
-      local tempShowLevelItem = {levelCfg = tempCfg, isChoose = isCurrent}
-      showLevelItemList[#showLevelItemList + 1] = tempShowLevelItem
-      if isCurrent then
-        v.currentID = tempCfg.m_LevelID
-      end
-    end
-    for _, vv in ipairs(showLevelItemList) do
-      vv.maxNum = #showLevelItemList
-    end
-    v.levelList = showLevelItemList
-  end
-end
-
-function Form_Activity102Dalcaro_DialogueMain:OnItemClick(index)
-  if not index then
-    return
-  end
-  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
-  local levelList = degreeCfgTab.levelList
-  if not levelList then
-    return
-  end
-  local curLevelData = levelList[index]
-  local curLevelID = curLevelData.levelCfg.m_LevelID
-  degreeCfgTab.currentID = curLevelID
-  self.m_curDetailLevelID = curLevelID
-  self:FreshLevelDetailShow()
 end
 
 function Form_Activity102Dalcaro_DialogueMain:OnBtnNormalClicked()

@@ -900,7 +900,457 @@
           "m_voice": "\"Play_vo_20160_str_calm_A2_01\""
         }
       }
+    },
+    "60004001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Vocalizing)\"",
+          "m_voice": "\"Play_vo_20070_battle_attack_A1_01\""
+        }
+      }
+    },
+    "60004002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Savor the serpent's kiss.\"",
+          "m_voice": "\"Play_vo_20070_battle_maxskill01_A1_01\""
+        }
+      }
+    },
+    "60004003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Vocalizing)\"",
+          "m_voice": "\"Play_vo_20070_battle_maxskill02_A1_01\""
+        }
+      }
+    },
+    "60004004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Why do you struggle?\"",
+          "m_voice": "\"Play_vo_20070_battle_skill01_A1_01\""
+        }
+      }
+    },
+    "60004005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"(Vocalizing)\"",
+          "m_voice": "\"Play_vo_20070_battle_hit_A1_01\""
+        }
+      }
+    },
+    "60004006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Await my rebirth...\"",
+          "m_voice": "\"Play_vo_20070_battle_death_A1_01\""
+        }
+      }
+    },
+    "60004007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Such exquisite attire is hardly suited for the battlefield.\"",
+          "m_voice": "\"Play_vo_20070_battle_array_A1_01\""
+        }
+      }
+    },
+    "60004008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"They've ruined my gown... How do you propose to remedy this?\"",
+          "m_voice": "\"Play_vo_20070_battle_stagewin_A1_01\""
+        }
+      }
+    },
+    "60004009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I sense a most fervent gaze upon me.\"",
+          "m_voice": "\"Play_vo_20070_system_show_A1_01\""
+        }
+      }
+    },
+    "60004010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ah, just in time... How do I look?\"",
+          "m_voice": "\"Play_vo_20070_system_greet_A1_01\""
+        }
+      }
+    },
+    "60004011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I suppose this tribute will do.\"",
+          "m_voice": "\"Play_vo_20070_system_levelup_A1_01\""
+        }
+      }
+    },
+    "60004012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My, how considerate of you.\"",
+          "m_voice": "\"Play_vo_20070_system_breakthrough_A1_01\""
+        }
+      }
+    },
+    "60004013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"To command me... Are you prepared for the consequences?\"",
+          "m_voice": "\"Play_vo_20070_system_dispatch_A1_01\""
+        }
+      }
+    },
+    "60004014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"If those hands are idle, you may tend to my wardrobe.\"",
+          "m_voice": "\"Play_vo_20070_system_idle_A1_01\""
+        }
+      }
+    },
+    "60004015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"And where, pray tell, are you taking me?\"",
+          "m_voice": "\"Play_vo_20070_system_transfusion_A1_01\""
+        }
+      }
+    },
+    "60004016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Is this your little surprise? How... charming.\"",
+          "m_voice": "\"Play_vo_20070_system_gift01_A1_01\""
+        }
+      }
+    },
+    "60004017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"One deserves a reward for such a thoughtful gift. Come, don't be shy.\"",
+          "m_voice": "\"Play_vo_20070_system_gift02_A1_01\""
+        }
+      }
+    },
+    "60004018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You play a dangerous game.\"",
+          "m_voice": "\"Play_vo_20070_system_affinityup_A1_01\""
+        }
+      }
+    },
+    "60004019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"What an exquisite Blood Moon tonight. Why don't you stay... and enjoy it with me?\"",
+          "m_voice": "\"Play_vo_20070_system_affinitymax_A1_01\""
+        }
+      }
+    },
+    "60004020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You'll find I'm nothing like your usual encounters.\"",
+          "m_voice": "\"Play_vo_20070_system_tapgeneric01_A1_01\""
+        }
+      }
+    },
+    "60004021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"If you wish to close this distance between us, then do as you desire... Come, let nothing remain between us.\"",
+          "m_voice": "\"Play_vo_20070_system_tapgeneric02_A1_01\""
+        }
+      }
+    },
+    "60004022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Sometimes... it is only by veiling our eyes that we glimpse the deeper truths, especially where you are concerned.\"",
+          "m_voice": "\"Play_vo_20070_system_taphead01_A1_01\""
+        }
+      }
+    },
+    "60004023": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004023",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Even without removing this veil, I have already committed every detail of you to memory—through senses far more intimate than sight.\"",
+          "m_voice": "\"Play_vo_20070_system_taphead02_A1_01\""
+        }
+      }
+    },
+    "60004024": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004024",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hm? Does this particular spot capture your interest?\"",
+          "m_voice": "\"Play_vo_20070_system_tapsp01_A1_01\""
+        }
+      }
+    },
+    "60004025": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004025",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Careful now... if you become entangled, you may never find your way out. I'm referring to my hair, of course.\"",
+          "m_voice": "\"Play_vo_20070_system_tapsp02_A1_01\""
+        }
+      }
+    },
+    "60004026": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004026",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Reserved String\"",
+          "m_voice": "\"Play_vo_20070_str_surprised_A1_01\""
+        }
+      }
+    },
+    "60004027": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004027",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Reserved String\"",
+          "m_voice": "\"Play_vo_20070_str_joyful_A1_01\""
+        }
+      }
+    },
+    "60004028": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004028",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Reserved String\"",
+          "m_voice": "\"Play_vo_20070_str_irritated_A1_01\""
+        }
+      }
+    },
+    "60004029": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004029",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Reserved String\"",
+          "m_voice": "\"Play_vo_20070_str_confused_A1_01\""
+        }
+      }
+    },
+    "60004030": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "60004030",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Reserved String\"",
+          "m_voice": "\"Play_vo_20070_str_calm_A1_01\""
+        }
+      }
     }
   },
-  "status": "processed_60_items"
+  "status": "processed_90_items"
 }

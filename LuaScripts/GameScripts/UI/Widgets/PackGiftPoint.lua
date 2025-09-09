@@ -14,30 +14,31 @@ function PackGiftPoint:ctor(goRoot, params)
     self.m_txt_num_Text = self.m_txt_num:GetComponent(T_TextMeshProUGUI)
   end
   self.m_pnl_Tips = self.m_goRootTrans:Find("c_btn_rule/c_pnl_rule")
+  self:SetFreshInfo(params)
+end
+
+function PackGiftPoint:SetFreshInfo(params)
+  if not (params and params.productId) or params.productId == "" then
+    self.m_goRoot:SetActive(false)
+    return
+  end
   self:FreshUI(params)
 end
 
 function PackGiftPoint:FreshUI(params)
-  if not params then
-    log.error("PackGiftPoint:FreshUI params  error")
-    return
-  end
+  local isShow = true
   local itemId
   local itemNum = 0
+  local reward
   local isShowTips = params.isShowTips or false
-  if params.pointReward and params.pointReward.iNum then
-    itemNum = params.pointReward.iNum
-  end
-  if params.pointReward and params.pointReward.iID then
-    itemId = params.pointReward.iID
-  end
-  if not itemId or itemNum == 0 then
-    if utils.isNull(self.m_goRoot) then
-      UILuaHelper.SetActive(self.m_goRoot, false)
-    end
-    log.error("PackGiftPoint:FreshUI params iD error")
+  isShow, reward = ActivityManager:GetPayPointsCondition(params.productId)
+  if not isShow then
+    UILuaHelper.SetActive(self.m_goRoot, false)
     return
   end
+  UILuaHelper.SetActive(self.m_goRoot, true)
+  itemId = reward.iID
+  itemNum = reward.iNum
   if not utils.isNull(self.m_pnl_Tips) and not utils.isNull(self.m_btn_tips) then
     local tipsId
     UILuaHelper.SetActive(self.m_pnl_Tips, false)
@@ -70,10 +71,6 @@ function PackGiftPoint:FreshUI(params)
       utils.openItemDetailPop({iID = id, iNum = iNum})
     end
   end)
-end
-
-function PackGiftPoint:SetFreshInfo(itemId, point)
-  self:FreshUI(itemId, point)
 end
 
 function PackGiftPoint:GetRootTrans()

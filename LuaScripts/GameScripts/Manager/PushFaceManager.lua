@@ -89,6 +89,12 @@ local PopPanelCfg = {
     SortNum = 108,
     paramData = nil,
     onlyDisplayInLobby = true
+  },
+  WelfareShow = {
+    FormID = UIDefines.ID_FORM_ACTIVITYPARTY,
+    SortNum = 200,
+    paramData = nil,
+    onlyDisplayInLobby = true
   }
 }
 
@@ -148,6 +154,7 @@ function PushFaceManager:AddEventListeners()
   self:addEventListener("eGameEvent_HeroActSign", handler(self, self.OnPushHeroActSign))
   self:addEventListener("eGameEvent_EmergencyGiftPushFace", handler(self, self.OnPushEmergencyGift))
   self:addEventListener("eGameEvent_TimelinePushface", handler(self, self.OnPushTimelinePushface))
+  self:addEventListener("eGameEvent_WelfareShowPushFace", handler(self, self.OnPushWelfareShow))
 end
 
 function PushFaceManager:OnHangUpLevelUpSystem(param)
@@ -190,6 +197,14 @@ function PushFaceManager:OnPushTimelinePushface(param)
     return
   end
   self:PushFacePanel("TimelinePushface", param)
+  self:CheckIsNotShowAndPopPanel()
+end
+
+function PushFaceManager:OnPushWelfareShow(param)
+  if not param then
+    return
+  end
+  self:PushFacePanel("WelfareShow", param)
   self:CheckIsNotShowAndPopPanel()
 end
 
@@ -356,6 +371,25 @@ function PushFaceManager:PushFacePanel(popParamStr, paramData)
   self:AddShowPopPanelList(tempPopPanelCfg)
 end
 
+function PushFaceManager:PushCustomFacePanel(jumpId, param)
+  if not jumpId then
+    return
+  end
+  for k, v in ipairs(self.m_showPopPanelList) do
+    if v.jumpId ~= nil then
+      return
+    end
+  end
+  local config = {
+    FormID = nil,
+    SortNum = 9999,
+    paramData = param,
+    onlyDisplayInLobby = true,
+    jumpId = jumpId
+  }
+  self:AddShowPopPanelList(config)
+end
+
 function PushFaceManager:CheckClearPopPanelStatus()
   if not self.m_isInShowPanel then
     return
@@ -402,19 +436,25 @@ function PushFaceManager:CheckShowNextPopPanel()
   if firstShowPopPanelCfg then
     local canShow = self:CheckActivityCanShowByType(firstShowPopPanelCfg)
     if canShow then
-      if firstShowPopPanelCfg.FormID == UIDefines.ID_FORM_POPUPUNLOCK or firstShowPopPanelCfg.FormID == UIDefines.ID_FORM_ACTIVITYANNOUNCELOTTERYPAGE then
+      if firstShowPopPanelCfg.FormID == UIDefines.ID_FORM_POPUPUNLOCK or firstShowPopPanelCfg.FormID == UIDefines.ID_FORM_ACTIVITYANNOUNCELOTTERYPAGE or firstShowPopPanelCfg.FormID == UIDefines.ID_FORM_ACTIVITYPARTY then
         StackFlow:Push(firstShowPopPanelCfg.FormID, firstShowPopPanelCfg.paramData)
         self.m_curShowPanelId = firstShowPopPanelCfg.FormID
       elseif firstShowPopPanelCfg.FormID then
         StackPopup:Push(firstShowPopPanelCfg.FormID, firstShowPopPanelCfg.paramData)
         self.m_curShowPanelId = firstShowPopPanelCfg.FormID
+      elseif firstShowPopPanelCfg.jumpId ~= nil then
+        QuickOpenFuncUtil:OpenFunc(firstShowPopPanelCfg.jumpId, firstShowPopPanelCfg.paramData)
       else
         StackFlow:Push(firstShowPopPanelCfg.paramData.FormID, firstShowPopPanelCfg.paramData)
         self.m_curShowPanelId = firstShowPopPanelCfg.paramData.FormID
       end
     end
     table.remove(self.m_showPopPanelList, 1)
-    self.m_isInShowPanel = true
+    if firstShowPopPanelCfg.jumpId ~= nil then
+      self.m_isInShowPanel = false
+    else
+      self.m_isInShowPanel = true
+    end
   end
 end
 
@@ -471,7 +511,13 @@ end
 function PushFaceManager:CheckActivityCanShowByType(popPanelCfg)
   local canShow = true
   if popPanelCfg and popPanelCfg.iActivityType and MTTD then
-    local activity = ActivityManager:GetActivityByType(MTTD[popPanelCfg.iActivityType])
+    local iType
+    if type(popPanelCfg.iActivityType) == "number" then
+      iType = popPanelCfg.iActivityType
+    elseif type(popPanelCfg.iActivityType) == "string" then
+      iType = MTTD[popPanelCfg.iActivityType]
+    end
+    local activity = ActivityManager:GetActivityByType(iType)
     if activity == nil or activity.isInActivityShowTime and not activity:isInActivityShowTime() then
       canShow = false
     end
@@ -482,6 +528,9 @@ function PushFaceManager:CheckActivityCanShowByType(popPanelCfg)
     if not unlock_flag then
       canShow = false
     end
+  end
+  if popPanelCfg and popPanelCfg.jumpId ~= nil and GuideManager:GuideIsActive() then
+    canShow = false
   end
   return canShow
 end

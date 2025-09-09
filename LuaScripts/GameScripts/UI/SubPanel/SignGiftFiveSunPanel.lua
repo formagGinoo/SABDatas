@@ -21,6 +21,7 @@ function SignGiftFiveSunPanel:OnInit()
       self.m_vPanelItemConfig[i].childsItemIcon[j] = self.m_vPanelItemConfig[i].panel.transform:Find("img_item/pnl_itemlist" .. "/c_common_item" .. j).gameObject
     end
   end
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
 end
 
@@ -211,26 +212,12 @@ function SignGiftFiveSunPanel:OnBtnsoldoutClicked()
 end
 
 function SignGiftFiveSunPanel:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
+  if not self.m_stActivity then
     return
   end
-  local productId = self.m_stActivity:GetCommonCfg().sProductId
-  if not productId then
-    self.m_packgift_point:SetActive(false)
-    return
-  end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point:SetActive(true)
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({
+    productId = self.m_stActivity:GetCommonCfg().sProductId
+  })
 end
 
 function SignGiftFiveSunPanel:GetDownloadResourceExtra(subPanelCfg)

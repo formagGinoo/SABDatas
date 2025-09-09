@@ -14,6 +14,7 @@ function Form_GachaWishPop:OnActive()
   self.m_gachaID = params.gachaID
   self.m_wishPoolID = 0
   self.m_wishData = {}
+  self.m_isAllFillWishList = false
   if not self.m_wishListID or self.m_wishListID == 0 then
     self:OnBtnCloseClicked()
     return
@@ -135,13 +136,8 @@ function Form_GachaWishPop:UpdateScrollViewCell(index, cell_object, cell_data)
 end
 
 function Form_GachaWishPop:OnBtnCloseClicked()
-  local num = 0
-  for i, v in pairs(self.m_wishData) do
-    num = num + (v.heroNum or 0)
-  end
-  local wishList = GachaManager:GetGachaWishListById(self.m_gachaID)
   local cfg = GachaManager:GetGachaWishListConfig(self.m_wishListID)
-  if num > table.getn(wishList) then
+  if not self:CheckWishListNumIsFull() then
     utils.popUpDirectionsUI({
       tipsID = tonumber(cfg.m_ConfirmCommonTips),
       func1 = function()
@@ -155,6 +151,63 @@ end
 
 function Form_GachaWishPop:OnBtnReturnClicked()
   self:OnBtnCloseClicked()
+end
+
+function Form_GachaWishPop:CheckWishListNumIsFull()
+  local num = 0
+  for i, v in pairs(self.m_wishData) do
+    num = num + (v.heroNum or 0)
+  end
+  local wishList = GachaManager:GetGachaWishListById(self.m_gachaID)
+  if num > table.getn(wishList) then
+    return false
+  end
+  return true
+end
+
+function Form_GachaWishPop:OnBtnfillClicked()
+  if not self:CheckWishListNumIsFull() then
+    self.m_isAllFillWishList = false
+    utils.popUpDirectionsUI({
+      tipsID = 1249,
+      showToggle = true,
+      toggleText = ConfigManager:GetCommonTextById(2035),
+      toggleCallBack = function(isOn)
+        self.m_isAllFillWishList = isOn
+      end,
+      func1 = function()
+        self:FillWishLisByDefaultCfg()
+      end
+    })
+  else
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 42003)
+  end
+end
+
+function Form_GachaWishPop:FillWishLisByDefaultCfg()
+  local selList = {}
+  local wishListInitialRoleData = GachaManager:GetWishListInitialRoleData()
+  for _, v in pairs(self.m_wishData) do
+    local campHeroListData = wishListInitialRoleData[v.camp]
+    local map = {}
+    if not self.m_isAllFillWishList then
+      local wishHeroList = v.wishHeroList
+      for i, data in ipairs(wishHeroList) do
+        map[data.serverData.iHeroId] = i
+      end
+    end
+    for _, HeroId in ipairs(campHeroListData) do
+      if not map[HeroId] and table.getn(map) < v.heroNum then
+        map[HeroId] = table.getn(map) + 1
+      end
+    end
+    local list = {}
+    for i, k in pairs(map) do
+      list[k] = i
+    end
+    table.insertto(selList, list)
+  end
+  GachaManager:ReqGachaSetWishList(self.m_gachaID, selList, GachaManager.WishListSetType.Fill)
 end
 
 function Form_GachaWishPop:IsOpenGuassianBlur()

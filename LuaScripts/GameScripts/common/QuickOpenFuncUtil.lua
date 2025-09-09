@@ -221,7 +221,8 @@ __funcList[26006] = function(extData)
     [26007] = UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP,
     [26008] = UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP,
     [26009] = UIDefines.ID_FORM_ACTIVITY105AIONA_SHOP,
-    [26010] = UIDefines.ID_FORM_ACTIVITY106QUINN_SHOP
+    [26010] = UIDefines.ID_FORM_ACTIVITY106QUINN_SHOP,
+    [26011] = UIDefines.ID_FORM_ACTIVITY108SHOP
   }
   local iWindowID = tonumber(extData.ex_param[1])
   local openFlag = ShopManager:CheckShopIsOpenByWinId(iWindowID)
@@ -331,10 +332,16 @@ __funcList[30001] = function(extData)
     return
   end
   if uiInfo and uiInfo.m_csui and uiInfo:IsActive() then
-    uiInfo:ChooseActivityByID(tonumber(extData.activityId))
+    local activityId = tonumber(extData.activityId)
+    uiInfo:ChooseActivityByID(activityId)
+    local subPanel = uiInfo:GetActivitySubPanel(activityId)
+    if subPanel and subPanel.subPanelLua.OnClickTab then
+      subPanel.subPanelLua:OnClickTab(extData.subPanelTabIndex)
+    end
   else
     StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, {
-      activityId = tonumber(extData.activityId)
+      activityId = tonumber(extData.activityId),
+      subPanelTabIndex = extData.subPanelTabIndex
     })
   end
 end
@@ -494,7 +501,10 @@ __funcList[500001] = function(extData)
       local formUid = stActivity:GetBattlePassMainPrefab()
       
       local function requestHandler()
-        StackFlow:Push(formUid, {stActivity = stActivity})
+        StackFlow:Push(formUid, {
+          stActivity = stActivity,
+          callback = extData.callback
+        })
       end
       
       if stActivity:GetCurLevel() > 0 then

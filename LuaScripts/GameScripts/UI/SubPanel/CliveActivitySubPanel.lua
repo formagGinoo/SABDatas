@@ -21,8 +21,8 @@ function CliveActivitySubPanel:OnInit()
   self.aniHeroRoot = self.m_old_hero.transform.parent.gameObject
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.LoadedHeroList = {}
-  if self.m_initData.cliveType then
-    self.iCurTabIdx = self.m_initData.cliveType
+  if self.m_initData.subPanelTabIndex then
+    self.iCurTabIdx = self.m_initData.subPanelTabIndex
   else
     self.iCurTabIdx = 1
   end

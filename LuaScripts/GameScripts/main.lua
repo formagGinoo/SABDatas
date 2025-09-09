@@ -40,15 +40,15 @@ for k, v in pairs(UINames) do
   CS.UIDefinesForLua.Register(k, v)
 end
 if CS.UnityEngine.Application.isPlaying then
-  local bCloseComplianceResourceSwitch = CS.UnityEngine.PlayerPrefs.GetInt("CloseComplianceResourceSwitch", 0)
-  local gloablFilePath = CS.MUF.Resource.ResourceLocationHelper.Instance.PersistentDataPath .. "/" .. "localization.txt"
-  if not CS.System.IO.File.Exists(gloablFilePath) then
-    local file = io.open(gloablFilePath, "w")
-    file:write("resourceVersion = local")
-    file:close()
-  end
-  local file = io.open(gloablFilePath, "r")
-  if file then
+  CS.System.Threading.Thread.CurrentThread.CurrentCulture = CS.System.Globalization.CultureInfo.InvariantCulture
+  local success, err = pcall(function()
+    local bCloseComplianceResourceSwitch = CS.UnityEngine.PlayerPrefs.GetInt("CloseComplianceResourceSwitch", 0)
+    local globalFilePath = CS.MUF.Resource.ResourceLocationHelper.Instance.PersistentDataPath .. "/" .. "localization.txt"
+    if not CS.System.IO.File.Exists(globalFilePath) then
+      CS.System.IO.File.WriteAllText(globalFilePath, "resourceVersion = local")
+    end
+    local lines = CS.System.IO.File.ReadAllLines(globalFilePath)
+    
     local function trim(s)
       if s == nil then
         return ""
@@ -56,7 +56,8 @@ if CS.UnityEngine.Application.isPlaying then
       return string.match(s, "^%s*(.-)%s*$")
     end
     
-    for line in file:lines() do
+    for i = 0, lines.Length - 1 do
+      local line = lines[i]
       local list = line:split("=")
       key = trim(list[1])
       value = trim(list[2])
@@ -68,9 +69,11 @@ if CS.UnityEngine.Application.isPlaying then
         break
       end
     end
-    file:close()
+    log.info("localization path:" .. globalFilePath .. " " .. tostring(CS.MUF.Resource.ResourceManager.GetUseGlobal()))
+  end)
+  if not success then
+    log.info("Failed to use UseGlobal: " .. tostring(err))
   end
-  log.info("localization path:" .. gloablFilePath .. " " .. tostring(CS.MUF.Resource.ResourceManager.GetUseGlobal()))
   CS.MUF.Download.DownloadResource.Instance:InitDownload()
   StackTop:TryLoadUI(UIDefines.ID_FORM_WAITING, nil, nil)
   local bHQ = CS.MUF.Resource.ResourceManager.GetHQ2D()
@@ -80,7 +83,12 @@ if CS.UnityEngine.Application.isPlaying then
     camera1.enabled = false
     CS.UI.UILuaHelper.SetMainCamera(true, cameraRoot)
     cameraRoot.enabled = true
-    CS.VideoManager.Instance:PlayFromAddResReal("UI_Login_Main", "", false, nil, CS.UnityEngine.ScaleMode.ScaleAndCrop, false, true, false, false, bHQ)
+    local videoName = "UI_Login_Main"
+    local tempVideoName = DealPlaySelectVideo()
+    if tempVideoName and CS.MUF.Resource.ResourceLocationHelper.Instance:IsFileExists(tempVideoName .. ".mp4", CS.MUF.Resource.ResourceType.Video) then
+      videoName = tempVideoName
+    end
+    CS.VideoManager.Instance:PlayFromAddResReal(videoName, "", false, nil, CS.UnityEngine.ScaleMode.ScaleAndCrop, false, true, false, false, bHQ)
     StackFlow:Push(UIDefines.ID_FORM_LOGINNEW)
     local CanvasSharder = CS.UnityEngine.GameObject.Find("Canvas")
     CanvasSharder.gameObject:SetActive(false)
@@ -94,6 +102,17 @@ function MainUpdate(dt)
   if GameManager ~= nil then
     GameManager:update(dt)
   end
+end
+
+function DealPlaySelectVideo()
+  local GlobalSettingsIns = CS.CData_GlobalSettings.GetInstance()
+  GlobalSettingsIns:Init()
+  local value
+  local tempCfg = GlobalSettingsIns:GetValue_ByName("MainLoginVideo")
+  if tempCfg and tempCfg:GetError() ~= true then
+    value = tempCfg.m_Value
+  end
+  return value
 end
 
 function ViewUpdate(dt)

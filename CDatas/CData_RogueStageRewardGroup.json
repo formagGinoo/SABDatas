@@ -10,35 +10,35 @@
           "m_bError": null,
           "m_GroupID": "1001",
           "m_Gear": "1",
-          "m_Condition": "20",
+          "m_Condition": "15",
           "m_KeyLevel": "1"
         },
         "2": {
           "m_bError": null,
           "m_GroupID": "1001",
           "m_Gear": "2",
-          "m_Condition": "40",
+          "m_Condition": "30",
           "m_KeyLevel": "2"
         },
         "3": {
           "m_bError": null,
           "m_GroupID": "1001",
           "m_Gear": "3",
-          "m_Condition": "60",
+          "m_Condition": "45",
           "m_KeyLevel": "3"
         },
         "4": {
           "m_bError": null,
           "m_GroupID": "1001",
           "m_Gear": "4",
-          "m_Condition": "85",
+          "m_Condition": "60",
           "m_KeyLevel": "4"
         },
         "5": {
           "m_bError": null,
           "m_GroupID": "1001",
           "m_Gear": "5",
-          "m_Condition": "111",
+          "m_Condition": "75",
           "m_KeyLevel": "5"
         }
       }

@@ -52,6 +52,12 @@ function Form_ItemTips:AfterInit()
   self.m_widgetNumStepper = self:createNumStepper(self.m_pnl_use)
   self.m_grayImgMaterial = self.m_img_gray_Image.material
   self.m_updateQueueItemBig = self:addComponent("UpdateQueue", IntervalNum)
+  local initData = {
+    itemClkBackFun = handler(self, self.OnBPItemClick),
+    itemInfoClickFun = handler(self, self.OnBtnbpInfoClicked),
+    parentLua = self
+  }
+  self.m_uiCloneMulItemList = self:CreateCloneMulItemList(self.m_pnl_bp_choose, self.m_bp_Item, "Bag/UITipsBPItem", initData)
 end
 
 function Form_ItemTips:OnActive()
@@ -183,6 +189,7 @@ function Form_ItemTips:RefreshRightUI()
   self.m_pnl_gift:SetActive(false)
   self.m_pnl_reward:SetActive(false)
   self.m_img_t10_quality:SetActive(false)
+  self.m_pnl_bp:SetActive(false)
   self:RefreshJump()
   if self.m_stItemData.sub_type == ItemManager.ItemSubType.Equipment then
     self.m_pnl_down_item:SetActive(false)
@@ -203,7 +210,7 @@ function Form_ItemTips:RefreshRightUI()
     self.m_img_t10_quality:SetActive(true)
     self:ShowEquipQuality()
     local showOverLoad = EquipManager:CheckEquipCanOverloadById(self.m_equipData.iEquipUid)
-    self.m_btn_overload:SetActive(showOverLoad and not self.m_bBag)
+    self.m_btn_overload:SetActive(showOverLoad)
     if showBtn and (showUpgrade or showOverLoad) then
       UILuaHelper.SetLocalPosition(self.m_btn_change, table.unpack(BTN_CHANGE_POS1))
       UILuaHelper.SetLocalPosition(self.m_btn_takeoff, table.unpack(BTN_TAKEOFF_POS1))
@@ -229,7 +236,7 @@ function Form_ItemTips:RefreshRightUI()
     self.m_btn_overload:SetActive(false)
     self:RefreshGift()
   end
-  if (self.m_pnl_des.activeSelf or self.m_pnl_jump.activeSelf) and not self.m_pnl_attributes.activeSelf and not self.m_pnl_camp.activeSelf and not self.m_pnl_gift.activeSelf then
+  if (self.m_pnl_des.activeSelf or self.m_pnl_jump.activeSelf) and not self.m_pnl_attributes.activeSelf and not self.m_pnl_camp.activeSelf and not self.m_pnl_gift.activeSelf and not self.m_pnl_bp.activeSelf then
     self:RefreshDesc(true)
   else
     self:RefreshDesc()
@@ -273,6 +280,7 @@ function Form_ItemTips:RefreshGift()
   local vGetItemInfo = {}
   local maxNum = self.m_iNum
   self.m_pnl_down_item:SetActive(true)
+  self.m_btn_bp:SetActive(false)
   local showMax = false
   if self.m_stItemData.sub_type == ItemManager.ItemSubType.ChestCertain or self.m_stItemData.sub_type == ItemManager.ItemSubType.ChestCustom or self.m_stItemData.sub_type == ItemManager.ItemSubType.IdleCapsule then
     self.m_pnl_gift:SetActive(true)
@@ -333,10 +341,24 @@ function Form_ItemTips:RefreshGift()
     maxNum = 1
     self.m_iNumCur = 1
     showMax = true
+    self.m_btn_bp_gray:SetActive(false)
+    self.m_btn_bp:SetActive(false)
+    self.m_pnl_bp:SetActive(false)
+    if self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_BattlePass and self.m_bBag then
+      self.m_pnl_use:SetActive(false)
+      self.m_pnl_use_btn:SetActive(false)
+      self.m_btn_bp:SetActive(false)
+      self.m_btn_bp_gray:SetActive(true)
+      self.m_pnl_bp:SetActive(true)
+      self:FreshBattlePass()
+      return
+    end
   else
     self.m_pnl_use:SetActive(false)
     self.m_pnl_use_btn:SetActive(false)
     self.m_img_line:SetActive(false)
+    self.m_btn_bp:SetActive(false)
+    self.m_btn_bp_gray:SetActive(false)
     return
   end
   if self.m_bBag then
@@ -547,37 +569,6 @@ function Form_ItemTips:OnPnlusebtnClicked()
           end
         })
       end
-    elseif self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_BattlePass then
-      local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_BattlePass)
-      local act
-      local openFlagBP = false
-      for _, v in ipairs(act_list) do
-        if v:checkCondition() and v:isInActivityShowTime() and v:GetItemBaseId() == self.m_iID then
-          openFlagBP = true
-          act = v
-          break
-        end
-      end
-      if not openFlagBP then
-        utils.popUpDirectionsUI({
-          tipsID = 1027,
-          func1 = function()
-            self:OnBtnCloseClicked()
-          end
-        })
-      elseif act then
-        local isIsAdvanced = act:IsHaveBuy()
-        if not isIsAdvanced then
-          ItemManager:RequestItemUse(self.m_iID, 1)
-        else
-          utils.popUpDirectionsUI({
-            tipsID = 1026,
-            func1 = function()
-              self:OnBtnCloseClicked()
-            end
-          })
-        end
-      end
     end
   end
 end
@@ -623,6 +614,11 @@ function Form_ItemTips:OnEventItemUse(stItemUseInfo)
     if ItemUseSC.vItem and next(ItemUseSC.vItem) then
       utils.popUpRewardUI(ItemUseSC.vItem, function()
       end, ItemUseSC.mChangeReward)
+    end
+    if self.m_stItemData and self.m_stItemData.config and self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_BattlePass and self.mCurBPAct then
+      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, string.gsubNumberReplace(ConfigManager:GetClientMessageTextById(52011), self.mCurBPAct:GetTitleAndEnterName()))
+      self.mCurBPAct = nil
+      self.iCurBPIndex = 0
     end
     StackPopup:RemoveUIFromStack(UIDefines.ID_FORM_ITEMTIPS)
   end
@@ -694,6 +690,109 @@ function Form_ItemTips:OnBtnupgradeClicked()
     equipData = self.m_equipData,
     pos = self.m_selPos
   })
+  self:broadcastEvent("eGameEvent_ItemTips_OpenEquipmentUpgrade")
+end
+
+function Form_ItemTips:FreshBattlePass()
+  local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_BattlePass)
+  local vActList = {}
+  for _, v in ipairs(act_list) do
+    if v:checkCondition() and v:isInActivityShowTime() and v:GetItemBaseId() == self.m_iID then
+      local status = v:IsHaveBuy() and 1 or 0
+      table.insert(vActList, {
+        act = v,
+        status = status,
+        bIsChoose = false
+      })
+    end
+  end
+  if 0 < #vActList then
+    table.sort(vActList, function(a, b)
+      if a.status ~= b.status then
+        return a.status < b.status
+      end
+      local iUITypeA = a.act:GetUiType()
+      local iUITypeB = b.act:GetUiType()
+      if iUITypeA ~= iUITypeB then
+        return iUITypeA > iUITypeB
+      end
+      return a.act.m_stActivityData.iBeginTime < b.act.m_stActivityData.iBeginTime
+    end)
+    self.m_pnl_bp_choose:SetActive(true)
+    self.m_common_empty:SetActive(false)
+    self.m_uiCloneMulItemList:ShowItemList(vActList)
+    self.vActList = vActList
+  else
+    self.m_pnl_bp_choose:SetActive(false)
+    self.m_common_empty:SetActive(true)
+  end
+end
+
+function Form_ItemTips:OnBPItemClick(itemIndex, bIsAdvanced)
+  if bIsAdvanced then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52010))
+  else
+    local oldItem = self.m_uiCloneMulItemList:GetShowItemByIndex(self.iCurBPIndex)
+    if oldItem then
+      oldItem:SetChoose(false)
+    end
+    self.iCurBPIndex = itemIndex
+    self.m_btn_bp:SetActive(true)
+    self.m_btn_bp_gray:SetActive(false)
+    self.mCurBPAct = self.vActList[itemIndex].act
+    local newItem = self.m_uiCloneMulItemList:GetShowItemByIndex(itemIndex)
+    if newItem then
+      newItem:SetChoose(true)
+    end
+  end
+end
+
+function Form_ItemTips:OnBtnbpClicked()
+  if not self.mCurBPAct then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52008))
+    return
+  end
+  if not self.mCurBPAct:checkCondition() or not self.mCurBPAct:isInActivityShowTime() then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52009))
+    return
+  end
+  if self.mCurBPAct:IsHaveBuy() then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52010))
+    return
+  end
+  local stItemUseData = MTTDProto.ItemUseData()
+  stItemUseData.iSelectId = self.mCurBPAct:getID()
+  ItemManager:RequestItemUse(self.m_iID, 1, stItemUseData)
+end
+
+function Form_ItemTips:OnBtnbpInfoClicked(act)
+  if not act then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52009))
+    return
+  end
+  if not act:checkCondition() or not act:isInActivityShowTime() then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52009))
+    return
+  end
+  local iJumpId = act:GetBpJumpId()
+  if iJumpId then
+    self:OnBtnCloseClicked()
+    local iID = self.m_iID
+    local iNum = self.m_iNum
+    QuickOpenFuncUtil:OpenFunc(iJumpId, {
+      callback = function()
+        utils.openItemDetailPop({iID = iID, iNum = iNum}, nil, self.m_bBag)
+      end
+    })
+  end
+end
+
+function Form_ItemTips:OnBtnbpgrayClicked()
+  if not self.vActList or #self.vActList == 0 then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52008))
+    return
+  end
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(52007))
 end
 
 function Form_ItemTips:OnBtnCloseClicked()

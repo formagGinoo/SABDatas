@@ -291,7 +291,11 @@ function Form_BattleSetting:InitQualityPanel()
     end
   end
   if IsAndroidPlatform() or IsIPhonePlatform() then
-    local hideGrapId = {3, 4}
+    local hideGrapId = {
+      3,
+      4,
+      5
+    }
     for _, key in ipairs(hideGrapId) do
       GraphicHideList[key] = 1
     end

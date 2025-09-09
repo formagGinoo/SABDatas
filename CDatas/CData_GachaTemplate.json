@@ -151,6 +151,36 @@
         }
       }
     },
+    "1009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1009",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[9001,9001,9001,9001,9001,9001,9001,9001,9001,9001]"
+        }
+      }
+    },
+    "1010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1010",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[10001,10001,10001,10001,10001,10001,10001,10001,10001,10001]"
+        }
+      }
+    },
     "9999999": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -167,5 +197,5 @@
       }
     }
   },
-  "status": "processed_11_items"
+  "status": "processed_13_items"
 }

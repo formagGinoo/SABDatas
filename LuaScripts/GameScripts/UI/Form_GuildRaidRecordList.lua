@@ -29,10 +29,19 @@ function Form_GuildRaidRecordList:SortMemberByTime(list)
   end
   
   local function sortFun(data1, data2)
-    return data1.iTime > data2.iTime
+    return data1.iTime < data2.iTime
   end
   
   table.sort(list, sortFun)
+  for i, v in ipairs(list) do
+    v.sortIndex = i
+  end
+  
+  local function sortFun2(data1, data2)
+    return data1.iTime > data2.iTime
+  end
+  
+  table.sort(list, sortFun2)
   return list
 end
 
@@ -75,7 +84,7 @@ function Form_GuildRaidRecordList:UpdateScrollViewCell(index, cell_object, cell_
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_hero_" .. i, heroList[i])
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_heroempty_" .. i, not heroList[i])
   end
-  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_rankingnum", index)
+  LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_rankingnum", cell_data.sortIndex or "")
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_recordround", string.gsubNumberReplace(ConfigManager:GetCommonTextById(10006), cell_data.iRound))
   LuaBehaviourUtil.setTextMeshPro(luaBehaviour, "c_txt_damage", cell_data.iRealDamage)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_img_bg_deafeated", cell_data.bKill)

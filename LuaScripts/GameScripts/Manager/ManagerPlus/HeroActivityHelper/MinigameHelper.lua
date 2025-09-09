@@ -95,4 +95,67 @@ function MinigameHelper:IsMiniGamePuzzleRewardCanGet(iActId, iSubActId)
   return iMaxLevelNum <= iFinishCoun and not HeroActivityManager:IsSubActAwarded(iActId, iSubActId)
 end
 
+function MinigameHelper:IsMiniGameNewOpen(iActId, iSubActId)
+  local activitySubInfoCfg = HeroActivityManager:GetSubInfoByID(iSubActId)
+  log.info("MinigameHelper:IsMiniGameNewOpen activitySubInfoCfg.m_MiniGameMainDoc:" .. activitySubInfoCfg.m_MiniGameMainDoc)
+  if activitySubInfoCfg.m_MiniGameMainDoc == "" then
+    log.error("MinigameHelper:IsMiniGameNewOpen error! iActId:" .. tostring(iActId) .. " iSubActId: " .. tostring(iSubActId))
+    return false
+  end
+  local levelTb = ConfigManager:GetConfigInsByName(activitySubInfoCfg.m_MiniGameMainDoc)
+  if not levelTb then
+    log.error("MinigameHelper:IsMiniGameNewOpen error! iActId:" .. tostring(iActId) .. " iSubActId: " .. tostring(iSubActId))
+    return false
+  end
+  local levelConfigsAll = levelTb:GetValue_BySubActID(iSubActId)
+  local difficultys = {}
+  for k, v in pairs(levelConfigsAll) do
+    if difficultys[v.m_DifficultyID] then
+      table.insert(difficultys[v.m_DifficultyID], v)
+    else
+      difficultys[v.m_DifficultyID] = {v}
+    end
+  end
+  for k, v in pairs(difficultys) do
+    local open_time = 0
+    if v[1].m_OpenTime and v[1].m_OpenTime ~= "" then
+      open_time = TimeUtil:TimeStringToTimeSec2(v[1].m_OpenTime) or 0
+    end
+    local is_corved, t1 = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.minigame, {
+      id = iActId,
+      m_MemoryID = v[1].m_LevelID
+    })
+    if is_corved then
+      open_time = t1
+    end
+    local cur_time = TimeUtil:GetServerTimeS()
+    local unlock = open_time <= cur_time
+    if unlock and LocalDataManager:GetIntSimple("Activity_MiniGame_Red_Point" .. iActId .. "_" .. iSubActId .. "_" .. k, 0) == 0 then
+      log.info("MinigameHelper:IsMiniGameNewOpen unlock")
+      return true
+    end
+  end
+  return lastConfirmDifficulty == 0
+end
+
+function MinigameHelper:IsMiniGamePuzzleHaveRedDot(iActId, iSubActId)
+  log.info("MinigameHelper:IsMiniGameHaveRedDot iActId:" .. tostring(iActId) .. " iSubActId: " .. tostring(iSubActId))
+  local miniGameIsOpen = HeroActivityManager:IsSubActIsOpenByID(iActId, iSubActId)
+  if not miniGameIsOpen then
+    log.info("MinigameHelper:IsMiniGameHaveRedDot miniGameIsOpen false! iActId:" .. tostring(iActId) .. " iSubActId: " .. tostring(iSubActId))
+    return 0
+  end
+  local taskId = HeroActivityManager:GetSubFuncID(iActId, HeroActivityManager.SubActTypeEnum.GameTask)
+  local param = {actId = iActId, whackMoleTaskId = taskId}
+  local taskRed = HeroActivityManager:CheckHaveFinishWhackMoleTask(param)
+  if taskRed ~= 0 then
+    return 1
+  end
+  if self:IsMiniGameNewOpen(iActId, iSubActId) then
+    log.info("MinigameHelper:IsMiniGameHaveRedDot IsMiniGameNewOpen true! iActId:" .. tostring(iActId) .. " iSubActId: " .. tostring(iSubActId))
+    return 1
+  end
+  return 0
+end
+
 return MinigameHelper

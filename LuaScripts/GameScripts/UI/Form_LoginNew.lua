@@ -66,6 +66,7 @@ function Form_LoginNew:AfterInit()
   self.m_btn_account:SetActive(false)
   self.m_btn_announcement:SetActive(false)
   self.m_btn_pilotcode:SetActive(false)
+  self.m_btn_install:SetActive(false)
   self:ShowVersionAndRoleID()
   self:addEventListener("eGameEvent_Login_ShowBtnAnnouncement", handler(self, self.OnEventShowBtnAnnouncement))
   self:addEventListener("eGameEvent_Login_ShowDownloadProgress", handler(self, self.OnEventShowDownloadProgress))
@@ -185,7 +186,6 @@ function Form_LoginNew:PlayOpenDoorAnimAndEnterGame()
     CS.GameFlowManager.Instance:OnJobStartupFinished()
     ReportManager:SetLoginTime()
   end)
-  local __LoginSceneRoot = CS.UnityEngine.GameObject.Find("Login_Scene")
 end
 
 function Form_LoginNew:OnInactive()
@@ -232,15 +232,10 @@ function Form_LoginNew:OnUpdate(dt)
         self.m_btn_account:SetActive(true)
       end
     else
-      if ChannelManager:IsUsingQSDK() then
-        if ChannelManager:IsIOS() then
-          self.m_btn_account:SetActive(true)
-        elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-          self.m_btn_account:SetActive(true)
-        else
-          self.m_btn_account:SetActive(false)
-        end
+      if ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+        self.m_btn_account:SetActive(true)
       else
+        self.m_btn_account:SetActive(false)
       end
       if ChannelManager:IsWegameChannel() and self.m_btn_binding then
         self.m_btn_binding:SetActive(true)
@@ -248,6 +243,7 @@ function Form_LoginNew:OnUpdate(dt)
     end
     self:PlayerLogVoice()
     self.m_btn_setting:SetActive(true)
+    self.m_btn_install:SetActive(not ChannelManager:IsWindows())
   end
 end
 
@@ -266,20 +262,12 @@ function Form_LoginNew:OnBtnannouncementClicked()
 end
 
 function Form_LoginNew:OnBtnaccountClicked()
-  if ChannelManager:IsUsingQSDK() then
-    if ChannelManager:IsIOS() then
-      QSDKManager:CallFunction(function()
-        log.info("enter usercenter success")
-      end, function()
-        log.info("enter usercenter failed")
-      end, 102)
-    elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-      QSDKManager:CallFunction(function()
-        log.info("open usercenter success")
-      end, function()
-        log.info("open usercenter failed")
-      end, 209)
-    end
+  if ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+    QSDKManager:CallFunction(function()
+      log.info("open usercenter success")
+    end, function()
+      log.info("open usercenter failed")
+    end, 209)
   else
     StackPopup:Push(UIDefines.ID_FORM_PLAYERCENTERPOP)
   end
@@ -307,14 +295,14 @@ function Form_LoginNew:OnEventShowAccountInfo(stShowAccountInfo)
   self.m_z_txt_ver:SetActive(true)
   self.m_z_txt_ver_Text.text = CS.ConfFact.LangFormat4DataInit("LoginVersionDesc")
   self.m_pnl_accountinfo:SetActive(true)
-  self.m_pnl_accountinfo.transform:Find("txt_zone"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginZoneDesc")
+  self.m_pnl_accountinfo.transform:Find("txt_zone"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("LoginZoneDesc")
   if stShowAccountInfo.iAccountID then
     self.m_txt_accountid:SetActive(true)
     self.m_txt_accountid_Text.text = stShowAccountInfo.iAccountID
   else
     self.m_txt_accountid:SetActive(false)
   end
-  self.m_pnl_accountinfo.transform:Find("txt_account"):GetComponent("Text").text = CS.ConfFact.LangFormat4DataInit("LoginAccountDesc")
+  self.m_pnl_accountinfo.transform:Find("txt_account"):GetComponent("TextPro").text = CS.ConfFact.LangFormat4DataInit("LoginAccountDesc")
   if stShowAccountInfo.iZoneID then
     self.m_txt_zoneid:SetActive(true)
     self.m_txt_zoneid_Text.text = stShowAccountInfo.iZoneID
@@ -328,6 +316,97 @@ function Form_LoginNew:OnBtnservercenterClicked()
     return
   end
   SettingManager:PullAiHelpMessage("E002")
+end
+
+function Form_LoginNew:OnBtninstallClicked()
+  local function OnDownloadStart(curBytes, totalBytes)
+    self.m_pnl_load:SetActive(true)
+    
+    self.m_pnl_start:SetActive(false)
+    self.m_txt_download_total:SetActive(true)
+    self.m_txt_download_total_Text.text = DownloadManager:GetDownloadSizeStr(curBytes) .. "/" .. DownloadManager:GetDownloadSizeStr(totalBytes)
+    self.m_txt_detail_Text.text = ConfigManager:GetCommonTextById(100718)
+    self.m_bar_Image.fillAmount = math.max(curBytes, 0) / totalBytes
+    local anchoredPositionBarLight = self.m_bar_light:GetComponent("RectTransform").anchoredPosition
+    anchoredPositionBarLight.x = self.m_bar:GetComponent("RectTransform").sizeDelta.x * self.m_bar_Image.fillAmount
+    self.m_bar_light:GetComponent("RectTransform").anchoredPosition = anchoredPositionBarLight
+  end
+  
+  local function OnDownloadComplete(ret)
+    if ret then
+      log.info("下载完成")
+    else
+      log.info("下载失败")
+    end
+    self.m_txt_download_total:SetActive(false)
+    self.m_pnl_load:SetActive(false)
+    self.m_pnl_start:SetActive(true)
+  end
+  
+  local function OnDownloadProgress(curBytes, totalBytes, speed)
+    self.m_txt_download_total_Text.text = DownloadManager:GetDownloadSizeStr(curBytes) .. "/" .. DownloadManager:GetDownloadSizeStr(totalBytes)
+  end
+  
+  StackPopup:Push(UIDefines.ID_FORM_LOGININSTALLPOP, {
+    onDownloadComplete = function(complted, totalcount, filelist, filelength)
+      if complted == totalcount then
+        if 0 < filelength then
+          if filelength > CS.DeviceUtil.GetPersistentDataPathAvailableSize() * 1024 * 1024 then
+            utils.CheckAndPushCommonTips({
+              tipsID = 1252,
+              bLockBack = true,
+              fContentCB = function(sContent)
+                local totalSize = DownloadManager:GetDownloadSizeStr(filelength)
+                local avalibaleSize = DownloadManager:GetDownloadSizeStr(CS.DeviceUtil.GetPersistentDataPathAvailableSize() * 1024 * 1024)
+                local neededSize = DownloadManager:GetDownloadSizeStr(filelength - CS.DeviceUtil.GetPersistentDataPathAvailableSize() * 1024 * 1024)
+                local sContentNew = string.customizereplace(sContent, {
+                  "{needed_size}"
+                }, neededSize)
+                sContentNew = string.customizereplace(sContentNew, {
+                  "{available_size}"
+                }, avalibaleSize)
+                sContentNew = string.customizereplace(sContentNew, {
+                  "{total_size}"
+                }, totalSize)
+                return sContentNew
+              end
+            })
+          else
+            utils.CheckAndPushCommonTips({
+              tipsID = 1251,
+              bLockBack = true,
+              fContentCB = function(sContent)
+                local sContentNew = string.customizereplace(sContent, {"{size}"}, DownloadManager:GetDownloadSizeStr(filelength))
+                return sContentNew
+              end,
+              func1 = function()
+                CS.TGRPDownloader.DownloadResListWithDesc(filelist, "verifyFile", OnDownloadComplete, OnDownloadStart, OnDownloadProgress, 0)
+              end
+            })
+          end
+          log.info("校验失败" .. DownloadManager:GetDownloadSizeStr(filelength))
+        else
+          StackTop:Push(UIDefines.ID_FORM_COMMON_TOAST, 21010)
+        end
+        self.m_pnl_load:SetActive(false)
+        self.m_pnl_start:SetActive(true)
+        self.m_pnl_button:SetActive(true)
+      else
+        self.m_txt_download_total:SetActive(true)
+        self.m_txt_download_total_Text.text = complted .. "/" .. totalcount
+        self.m_txt_detail_Text.text = ConfigManager:GetCommonTextById(100717)
+        self.m_bar_Image.fillAmount = math.max(complted, 0) / totalcount
+        local anchoredPositionBarLight = self.m_bar_light:GetComponent("RectTransform").anchoredPosition
+        anchoredPositionBarLight.x = self.m_bar:GetComponent("RectTransform").sizeDelta.x * self.m_bar_Image.fillAmount
+        self.m_bar_light:GetComponent("RectTransform").anchoredPosition = anchoredPositionBarLight
+        self.m_pnl_load:SetActive(true)
+        self.m_pnl_start:SetActive(false)
+      end
+    end,
+    onBeginDownload = function()
+      self.m_pnl_button:SetActive(false)
+    end
+  })
 end
 
 function Form_LoginNew:OnEventSetProgressClamp(stProgressClampInfo)

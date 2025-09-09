@@ -76,6 +76,7 @@ function Form_CastleStarMain:RefreshStarChart()
     }
     self.m_loop_scroll_view_star = CircleLoopScrollViewUtil.new(params)
   else
+    UILuaHelper.DestroyReleaseSpriteRefHolder(self.m_scrollview_circle)
     self.m_loop_scroll_view_star:setAutoMove(true)
     self.m_loop_scroll_view_star:reloadData(data)
   end

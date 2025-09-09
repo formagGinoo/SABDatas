@@ -418,6 +418,8 @@ function Form_Shop:LoadShowSpine()
     UILuaHelper.SetParent(object, self.m_root_hero, true)
     UILuaHelper.SetActive(object, true)
     UILuaHelper.SpineResetMatParam(object)
+    UILuaHelper.SetSpineTimeScale(object, 1)
+    UILuaHelper.SpinePlayAnim(object, 0, "idle", true)
     self.m_curHeroSpineObj = object
   end)
 end

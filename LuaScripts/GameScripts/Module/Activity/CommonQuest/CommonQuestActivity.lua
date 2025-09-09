@@ -356,4 +356,10 @@ function CommonQuestActivity:RequestTakeFinalReward(iScore)
   RPCS():Act_CommonQuest_TakeFinalReward(reqMsg, OnTaskFinalRewardSC)
 end
 
+function CommonQuestActivity:OnDispose()
+  local actId = self:getID()
+  self.isListen = nil
+  RPCS():RemoveListen_Push_SetQuestDataBatch_ByTag("CommonQuestActivity" .. actId)
+end
+
 return CommonQuestActivity

@@ -94,9 +94,6 @@ function PushGiftActivity:IsInActivityTime()
   if not self.m_stActivityData then
     return false
   end
-  if self.m_stActivityData.iBeginTime == 0 or self.m_stActivityData.iEndTime == 0 then
-    return false
-  end
   return TimeUtil:IsInTime(self.m_stActivityData.iBeginTime, self.m_stActivityData.iEndTime)
 end
 
@@ -108,6 +105,46 @@ function PushGiftActivity:IsInActivityShowTime()
     return false
   end
   return TimeUtil:IsInTime(self.m_stActivityData.iShowTimeBegin, self.m_stActivityData.iShowTimeEnd)
+end
+
+function PushGiftActivity:CheckIsNeedPushNewGift()
+  if not self:checkCondition() then
+    return false
+  end
+  if not self.m_stSdpConfig then
+    return false
+  end
+  if not self.m_stSdpConfig.stCommonCfg then
+    return false
+  end
+  local giftData = self.m_stStatusData
+  if not giftData then
+    return false
+  end
+  local iGiftDisplayMax = self.m_stSdpConfig.stCommonCfg.iGiftDisplayMax or 0
+  if 0 < iGiftDisplayMax then
+    local vPushGift = self:GetInTimePushGift()
+    if vPushGift and iGiftDisplayMax <= #vPushGift then
+      return false
+    end
+  end
+  if giftData.iLastPushTime and 0 < giftData.iLastPushTime then
+    local iInterval = TimeUtil:GetServerTimeS() - giftData.iLastPushTime
+    if iInterval <= self.m_stSdpConfig.stCommonCfg.iPushInterval then
+      return false
+    end
+  end
+  if giftData.iPushTimesDaily and 0 < giftData.iPushTimesDaily and giftData.iPushTimesDaily >= self.m_stSdpConfig.stCommonCfg.iTotalPushCountDaily then
+    return false
+  end
+  return giftData.bHasTriggeredGift
+end
+
+function PushGiftActivity:SetPushGiftTrigger(bHasTriggeredGift)
+  if not self.m_stStatusData then
+    return
+  end
+  self.m_stStatusData.bHasTriggeredGift = bHasTriggeredGift
 end
 
 return PushGiftActivity

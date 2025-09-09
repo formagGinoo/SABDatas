@@ -775,6 +775,51 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "31110": {
+      "m_bError": null,
+      "m_MonsterID": "31110",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A melee ATK type among the spider constructs whose shell gradually hardens as energy decreases.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MachineSpider_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31120": {
+      "m_bError": null,
+      "m_MonsterID": "31120",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A ranged ATK type among the spider constructs. Its shell gradually hardens as its energy decreases.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MachineSpider_Purple001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31131": {
+      "m_bError": null,
+      "m_MonsterID": "31131",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An elite spider construct. Not only does its shell gradually harden as its energy decreases, but it can also attack all enemies it faces simultaneously.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MachineSpider_Blue001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31140": {
+      "m_bError": null,
+      "m_MonsterID": "31140",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A ranged ATK type among the bee constructs that randomly attacks targets identified as enemies. Its shell gradually hardens as energy decreases.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MachineWasp_Purple001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31150": {
+      "m_bError": null,
+      "m_MonsterID": "31150",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A support type among the bee constructs that provides Energy Shields to other constructs. Its shell gradually hardens as energy decreases.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_MachineWasp_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "31200": {
       "m_bError": null,
       "m_MonsterID": "31200",
@@ -1051,6 +1096,15 @@
       "m_MonsterType": "1",
       "m_mIntroduce": "\"Flames of War summons a Phoenix Shade that dives and attacks a random unit. Focus fire on it.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Faust_Desert_Ultimate001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31690": {
+      "m_bError": null,
+      "m_MonsterID": "31690",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"When any character on the field has Paralysis, the Formless accumulates energy. It is recommended to clear Induction promptly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Mechenicarm_Base001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
@@ -1361,5 +1415,5 @@
       "m_Video1": "[]"
     }
   },
-  "status": "processed_151_items"
+  "status": "processed_157_items"
 }

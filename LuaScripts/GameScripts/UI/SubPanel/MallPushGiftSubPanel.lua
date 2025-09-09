@@ -1,6 +1,7 @@
 local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local MallPushGiftSubPanel = class("MallPushGiftSubPanel", UISubPanelBase)
 local CHANGE_TAG_ANIM_STR = "activity_panel_fixedgift_item_all"
+local FLASHSALE_IN = "activity_panel_flashsale_in"
 
 function MallPushGiftSubPanel:OnInit()
   self.m_ListInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_hero_list_InfinityGrid, "PayStore/PushGiftItem")
@@ -224,6 +225,7 @@ function MallPushGiftSubPanel:OnSelectTable(index)
     UILuaHelper.PlayAnimationByName(self.m_hero_list, CHANGE_TAG_ANIM_STR)
     local time = self.m_GiftShowTab[index].iExpireTime - TimeUtil:GetServerTimeS()
     self:SecondToTimeText(time)
+    UILuaHelper.PlayAnimationByName(self.m_rootObj, FLASHSALE_IN)
   end
   self:SendReportData()
 end

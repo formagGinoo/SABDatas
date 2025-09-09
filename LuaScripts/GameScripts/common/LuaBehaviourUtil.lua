@@ -29,6 +29,14 @@ function M.setImg(luaBehaviour, key, img_name, img_atlas)
   return img
 end
 
+function M.setTpImg(luaBehaviour, key, img_name, img_atlas)
+  local img = luaBehaviour:FindImage(key)
+  if img then
+    CS.UI.UILuaHelper.SetTPAtlasSprite(img, img_name, nil, nil, true)
+  end
+  return img
+end
+
 function M.setImgFillAmount(luaBehaviour, key, num)
   local img = luaBehaviour:FindImage(key)
   if img then

@@ -37,6 +37,8 @@ function Form_Hall:AfterInit()
   self.m_headFrameEftObj = nil
   self.m_gachaFrameNum = 0
   self.sufHangUpAnimationNum_CN = 0
+  self.m_uifx_star_trail:SetActive(false)
+  self.m_uifx_star_trail_move = self.m_uifx_star_trail:GetComponent(typeof(CS.BezierMove))
   self.m_iTimeDurationOneSecond = 0
   UILuaHelper.SetActive(self.m_hangup_unlock, false)
   UILuaHelper.SetActive(self.m_img_lock_hangup, true)
@@ -73,12 +75,10 @@ function Form_Hall:OnActive()
   self:CheckShowGachaDownTime()
   self:CheckFreshBgSubPanelShow()
   self:InitHangUpUI()
-  if self.m_csui == StackFlow:GetTopUI() then
-    CS.GlobalManager.Instance:TriggerWwiseBGMState(13)
-  end
   StackFlow:DestroyUI(UIDefines.ID_FORM_LOGINNEW)
   self:CheckAndRqsHeroAct()
   self:CheckAndShowTimelinePushface()
+  ActivityManager:CheckAndPushNewGift()
   RequestLuaCodeStatus(function(iSeverityMax)
     if iSeverityMax == 3 then
       utils.CheckAndPushCommonTips({
@@ -99,11 +99,26 @@ function Form_Hall:OnActive()
     end
   end)
   self.m_iHandlerBackPressed = self:addEventListener("eGameEvent_OnBackPressed", handler(self, self.OnBackPressed))
+  self.m_iHandlerDeepLinkActivated = self:addEventListener("eGameEvent_OnDeepLinkActivated", handler(self, self.OnDeepLinkActivated))
+  self.m_iHandlerKeyboardBindingChange = self:addEventListener("eGameEvent_KeyboardBinding_Change", handler(self, self.OnKeyboardBindingChange))
+  if not utils.isNull(self.m_uifx_star_trail) then
+    self.m_uifx_star_trail:SetActive(false)
+  end
 end
 
 function Form_Hall:OnBackPressed()
   if ChannelManager:IsUsingQSDK() then
     QSDKManager:Exit()
+  end
+end
+
+function Form_Hall:OnDeepLinkActivated()
+  self:CheckShowNextPopPanel()
+end
+
+function Form_Hall:OnKeyboardBindingChange()
+  if KeyboardMappingManager then
+    KeyboardMappingManager:SetActiveConfig(self:GetFramePrefabName(), self, true)
   end
 end
 
@@ -123,9 +138,13 @@ function Form_Hall:OnInactive()
     self:removeEventListener("eGameEvent_OnBackPressed", self.m_iHandlerBackPressed)
     self.m_iHandlerBackPressed = nil
   end
-  if self.iHeroActChangeTimer then
-    TimeService:KillTimer(self.iHeroActChangeTimer)
-    self.iHeroActChangeTimer = nil
+  if self.m_iHandlerDeepLinkActivated then
+    self:removeEventListener("eGameEvent_OnDeepLinkActivated", self.m_iHandlerDeepLinkActivated)
+    self.m_iHandlerDeepLinkActivated = nil
+  end
+  if self.m_iHandlerKeyboardBindingChange then
+    self:removeEventListener("eGameEvent_KeyboardBinding_Change", self.m_iHandlerKeyboardBindingChange)
+    self.m_iHandlerKeyboardBindingChange = nil
   end
   if self.ChangeActTimer then
     TimeService:KillTimer(self.ChangeActTimer)
@@ -258,19 +277,28 @@ function Form_Hall:ShowHangUpBoxAnim(progressNum)
     return
   end
   local showProgressNum = 0
-  local sufHangUpAnimationNum_CN = 2
-  if 0 <= progressNum and progressNum < 25 then
-    showProgressNum = 0
+  local sufHangUpAnimationNum_CN = 1
+  if 0 < progressNum and progressNum < 8 then
+    showProgressNum = 1
     sufHangUpAnimationNum_CN = 1
-  elseif 25 <= progressNum and progressNum < 50 then
-    showProgressNum = 25
-  elseif 50 <= progressNum and progressNum < 75 then
-    showProgressNum = 50
-  elseif 75 <= progressNum and progressNum < 100 then
-    showProgressNum = 75
-  elseif 100 <= progressNum then
-    showProgressNum = 100
+  elseif 8 <= progressNum and progressNum < 23 then
+    showProgressNum = 15
+    sufHangUpAnimationNum_CN = 2
+  elseif 23 <= progressNum and progressNum < 40 then
+    showProgressNum = 30
     sufHangUpAnimationNum_CN = 3
+  elseif 40 <= progressNum and progressNum < 60 then
+    showProgressNum = 50
+    sufHangUpAnimationNum_CN = 3
+  elseif 60 <= progressNum and progressNum < 78 then
+    showProgressNum = 70
+    sufHangUpAnimationNum_CN = 4
+  elseif 78 <= progressNum and progressNum < 93 then
+    showProgressNum = 80
+    sufHangUpAnimationNum_CN = 4
+  elseif 93 <= progressNum then
+    showProgressNum = 100
+    sufHangUpAnimationNum_CN = 5
   end
   if self.sufHangUpAnimationNum_CN ~= sufHangUpAnimationNum_CN then
     local preHangUpAnimationStr = PreHangUpAnimationStr_CN .. self.sufHangUpAnimationNum_CN
@@ -330,10 +358,6 @@ function Form_Hall:OnDestroy()
   UILuaHelper.CheckClearSkeletonAssetData(self.m_spine_global)
   self:CheckRecycleHeadFrameNode()
   self:RemoveAllEventListeners()
-  if self.iHeroActChangeTimer then
-    TimeService:KillTimer(self.iHeroActChangeTimer)
-    self.iHeroActChangeTimer = nil
-  end
   if self.ChangeActTimer then
     TimeService:KillTimer(self.ChangeActTimer)
     self.ChangeActTimer = nil
@@ -902,10 +926,6 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
   self.m_activity1:SetActive(false)
   self.m_activity2:SetActive(false)
   local list = HeroActivityManager:GetOpenActList()
-  if self.iHeroActChangeTimer then
-    TimeService:KillTimer(self.iHeroActChangeTimer)
-    self.iHeroActChangeTimer = nil
-  end
   if list and next(list) then
     local heroAct_List = {}
     for k, v in pairs(list) do
@@ -917,6 +937,10 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
       local is_open = HeroActivityManager:IsMainActIsOpenByID(k)
       if is_open then
         local startTime = TimeUtil:TimeStringToTimeSec(config.m_OpenTime) or 0
+        local is_corved, t1 = HeroActivityManager:CheckIsCorveTimeByType(HeroActivityManager.CorveTimeType.main, k)
+        if is_corved then
+          startTime = t1
+        end
         table.insert(heroAct_List, {config = config, startTime = startTime})
       end
     end
@@ -945,11 +969,6 @@ function Form_Hall:RefreshHallActivityStatus_HeroAct()
     end
     self.heroAct_List = heroAct_List
     self:ChangeHeroActShow()
-    if 1 < #heroAct_List then
-      self.iHeroActChangeTimer = TimeService:SetTimer(HeroActChangeInt, -1, function()
-        self:OnBtnswitchClicked()
-      end)
-    end
   end
 end
 
@@ -1099,7 +1118,7 @@ function Form_Hall:ReFreshWelFareShow()
     local bShowRed = stActivity:checkShowRed()
     self.m_imageParty:SetActive(bShowRed)
     if stActivity:IsNeedPushFace() then
-      StackFlow:Push(UIDefines.ID_FORM_ACTIVITYPARTY, {m_stActivity = stActivity})
+      self:broadcastEvent("eGameEvent_WelfareShowPushFace", {m_stActivity = stActivity})
     end
   else
     self.m_btnParty:SetActive(false)
@@ -1112,15 +1131,6 @@ function Form_Hall:OnBtnswitchClicked()
   end
   self.iHeroActIdx = self.iHeroActIdx == 1 and 2 or 1
   self:ChangeHeroActShow()
-  if self.iHeroActChangeTimer then
-    TimeService:KillTimer(self.iHeroActChangeTimer)
-    self.iHeroActChangeTimer = nil
-  end
-  if #self.heroAct_List == 2 then
-    self.iHeroActChangeTimer = TimeService:SetTimer(HeroActChangeInt, -1, function()
-      self:OnBtnswitchClicked()
-    end)
-  end
 end
 
 function Form_Hall:FreshMainStoryProcess()
@@ -1212,6 +1222,7 @@ function Form_Hall:AddEventListeners()
   self:addEventListener("eGameEvent_Rename_SetName", handler(self, self.FreshRoleName))
   self:addEventListener("eGameEvent_Activity_FullBurstDayUpdate", handler(self, self.OnFullBurstDayUpdate))
   self:addEventListener("eGameEvent_Activity_EmergencyGiftPush", handler(self, self.OnEmergencyGift))
+  self:addEventListener("eGameEvent_Push_Gift_Closed", handler(self, self.OnPushGiftClosed))
 end
 
 function Form_Hall:RemoveAllEventListeners()
@@ -1729,6 +1740,25 @@ end
 
 function Form_Hall:OnBtnAttractClicked()
   StackFlow:Push(UIDefines.ID_FORM_ATTRACTLETTER, {bIsInAttract = false, isReading = true})
+end
+
+function Form_Hall:OnPushGiftClosed()
+  self.m_uifx_star_trail:SetActive(true)
+  UILuaHelper.PlayAnimationByName(self.m_uifx_star_trail, "m_pnl_pushgift_star_trail_in")
+  self.m_uifx_star_trail_move:StartMove(function()
+    if utils.isNull(self.m_uifx_star_trail) then
+      return
+    end
+    UILuaHelper.PlayAnimationByName(self.m_uifx_star_trail, "m_pnl_pushgift_star_trail_out")
+    local fAniLength = UILuaHelper.GetAnimationLengthByName(self.m_uifx_star_trail, "m_pnl_pushgift_star_trail_out")
+    TimeService:SetTimer(fAniLength, 1, function()
+      if utils.isNull(self.m_uifx_star_trail) then
+        return
+      end
+      self.m_uifx_star_trail:SetActive(false)
+      UILuaHelper.ResetLocalRectTransform(self.m_uifx_star_trail)
+    end)
+  end)
 end
 
 function Form_Hall:GetDownloadResourceExtra(tParam)

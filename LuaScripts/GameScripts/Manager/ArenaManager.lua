@@ -398,18 +398,14 @@ function ArenaManager:GetPvpHeroModifyCfg()
   return self.m_PvpHeroModifyCfg
 end
 
-function ArenaManager:GeneratePvpHeroModifyData(heroData, isHideOriLevel)
+function ArenaManager:GeneratePvpHeroModifyData(heroData)
   local heroModifyCfg = self:GetPvpHeroModifyCfg()
   if heroModifyCfg then
     local tempData = {}
     tempData.iPower = heroData.iPower
     tempData.mHeroAttr = heroData.mHeroAttr
     tempData.iBaseId = heroData.iBaseId
-    if isHideOriLevel then
-      tempData.iOriLevel = nil
-    else
-      tempData.iOriLevel = heroData.iOriLevel
-    end
+    tempData.iOriLevel = heroData.iOriLevel
     tempData.bLove = heroData.bLove
     tempData.iFashion = heroData.iFashion
     tempData.iHeroId = heroData.iHeroId
@@ -422,9 +418,6 @@ function ArenaManager:GeneratePvpHeroModifyData(heroData, isHideOriLevel)
     tempData.stLegacy = heroModifyCfg.m_IgnoreLegacy == 0 and heroData.stLegacy or {}
     return tempData
   else
-    if isHideOriLevel then
-      heroData.iOriLevel = nil
-    end
     return heroData
   end
 end

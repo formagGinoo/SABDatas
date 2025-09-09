@@ -244,6 +244,7 @@ function Form_CastleMeetingrRoom:OnHeroSaying(textstr)
           local obj = heroObjList[index]
           if data.ResultType == MTTDProto.CouncilHeroResultType_Same or data.ResultType == MTTDProto.CouncilHeroResultType_Critical then
             UILuaHelper.PlayAnimatorByNameInChildren(obj, "show_yes")
+            CouncilHallManager:PlayHeroAnimator(obj, "show_yes")
             if data.ResultType == MTTDProto.CouncilHeroResultType_Same then
               self["m_UIFX_yes" .. trueIdx]:SetActive(true)
               CS.GlobalManager.Instance:TriggerWwiseBGMState(192)
@@ -253,6 +254,7 @@ function Form_CastleMeetingrRoom:OnHeroSaying(textstr)
             end
           else
             UILuaHelper.PlayAnimatorByNameInChildren(obj, "show_no")
+            CouncilHallManager:PlayHeroAnimator(obj, "show_no")
             self["m_UIFX_no" .. trueIdx]:SetActive(true)
             CS.GlobalManager.Instance:TriggerWwiseBGMState(193)
           end

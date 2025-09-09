@@ -157,7 +157,7 @@ end
 
 function Form_AttractDialogue:OnVoiceClick(idx, gameObject)
   local voiceCfg = self.m_vVoiceInfo[idx + 1]
-  if not AttractManager:CheckVoiceUnlockCondition(self.m_curShowHeroData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData) then
+  if not AttractManager:CheckVoiceUnlockCondition(self.m_curShowHeroData.serverData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData) then
     return
   end
   self:StopCurPlayingVoice()

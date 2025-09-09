@@ -3,6 +3,8 @@ local _G = _ENV._G
 local sdp = require("sdp")
 require("ProtoGameStructs")
 module("MTTDProto")
+CmdId_Act_PushGift_GetNewGiftList_CS = 60031
+CmdId_Act_PushGift_GetNewGiftList_SC = 60032
 ActPushGiftTriggerType_PassStage = 1
 ActPushGiftTriggerType_RoleBreak = 2
 ActPushGiftTriggerType_RoleLevelBreak = 3
@@ -327,6 +329,7 @@ CmdActCommonCfgPushGift.Definition = {
   "iPushType",
   "mPushGroup",
   "stPayConfig",
+  "iGiftDisplayMax",
   iPayStoreActivityID = {
     0,
     0,
@@ -374,6 +377,12 @@ CmdActCommonCfgPushGift.Definition = {
     0,
     CmdActCfgPushGiftPayConfig,
     nil
+  },
+  iGiftDisplayMax = {
+    8,
+    0,
+    8,
+    0
   }
 }
 CmdActCfgPushGift = sdp.SdpStruct("CmdActCfgPushGift")
@@ -459,6 +468,9 @@ CmdActPushGift_Status = sdp.SdpStruct("CmdActPushGift_Status")
 CmdActPushGift_Status.Definition = {
   "iActivityId",
   "vPushGift",
+  "bHasTriggeredGift",
+  "iLastPushTime",
+  "iPushTimesDaily",
   iActivityId = {
     0,
     0,
@@ -466,6 +478,51 @@ CmdActPushGift_Status.Definition = {
     0
   },
   vPushGift = {
+    1,
+    0,
+    sdp.SdpVector(CmdActPushGiftInfo),
+    nil
+  },
+  bHasTriggeredGift = {
+    2,
+    0,
+    1,
+    false
+  },
+  iLastPushTime = {
+    3,
+    0,
+    8,
+    0
+  },
+  iPushTimesDaily = {
+    4,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Act_PushGift_GetNewGiftList_CS = sdp.SdpStruct("Cmd_Act_PushGift_GetNewGiftList_CS")
+Cmd_Act_PushGift_GetNewGiftList_CS.Definition = {
+  "iActivityID",
+  iActivityID = {
+    0,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Act_PushGift_GetNewGiftList_SC = sdp.SdpStruct("Cmd_Act_PushGift_GetNewGiftList_SC")
+Cmd_Act_PushGift_GetNewGiftList_SC.Definition = {
+  "iActivityId",
+  "vPushGiftNew",
+  iActivityId = {
+    0,
+    0,
+    8,
+    0
+  },
+  vPushGiftNew = {
     1,
     0,
     sdp.SdpVector(CmdActPushGiftInfo),

@@ -117,4 +117,8 @@ function GameScene_ActExplore:Unlock()
   end
 end
 
+function GameScene_ActExplore:GetWorld()
+  return self.exploreWorld
+end
+
 return GameScene_ActExplore

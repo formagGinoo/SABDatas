@@ -2,7 +2,8 @@ local Form_Guild = class("Form_Guild", require("UI/UIFrames/Form_GuildUI"))
 local GuildPanelTab = {
   Active = 1,
   Member = 2,
-  News = 3
+  News = 3,
+  Message = 4
 }
 
 function Form_Guild:SetInitParam(param)
@@ -37,6 +38,15 @@ function Form_Guild:AfterInit()
       subPanelName = "GuildNewsSubPanel",
       selImg = self.m_btn_bg03,
       redDot = self.m_icon_redpoint03,
+      backFun = nil
+    },
+    [GuildPanelTab.Message] = {
+      panelRoot = self.m_pnl_message,
+      imgTab = self.m_btn_message_Image,
+      txtTab = self.m_z_txt_message_Text,
+      subPanelName = "GuildMessageSubPanel",
+      selImg = self.m_btn_bg04,
+      redDot = self.m_icon_redpoint04,
       backFun = nil
     }
   }
@@ -94,6 +104,8 @@ function Form_Guild:AddEventListeners()
   self:addEventListener("eGameEvent_Alliance_RefreshTransformGuild", handler(self, self.RefreshUI))
   self:addEventListener("eGameEvent_Alliance_StartTransformGuild", handler(self, self.DealCalmDownTranGuild))
   self:addEventListener("eGameEvent_Alliance_CancelTransformGuild", handler(self, self.OnCancelTransformGuild))
+  self:addEventListener("eGameEvent_Alliance_MessageNoticeLeave", handler(self, self.CheckMessageRedPoint))
+  self:addEventListener("eGameEvent_Alliance_MessageNoticeChange", handler(self, self.CheckMessageRedPoint))
 end
 
 function Form_Guild:RemoveAllEventListeners()
@@ -117,6 +129,10 @@ function Form_Guild:RefreshGuildInfo()
   self.m_txt_notice_desc_Text.text = self.m_allianceBriefData.sBulletin
 end
 
+function Form_Guild:CheckMessageRedPoint()
+  self.m_icon_redpoint04:SetActive(GuildManager:CheckGuildMessageRedPoint() > 0)
+end
+
 function Form_Guild:RefreshUI()
   self.m_allianceBriefData = GuildManager:GetOwnerGuildDetail()
   local stBriefData = self.m_allianceBriefData.stBriefData or {}
@@ -131,6 +147,7 @@ function Form_Guild:RefreshUI()
   self.m_icon_redpoint01:SetActive(false)
   self.m_icon_redpoint02:SetActive(false)
   self.m_icon_redpoint03:SetActive(false)
+  self.m_icon_redpoint04:SetActive(GuildManager:CheckGuildMessageRedPoint() > 0)
   local memberData = GuildManager:GetOwnerGuildMemberDataByUID(RoleManager:GetUID())
   if memberData then
     self.m_btn_edit:SetActive(memberData.iPost ~= GuildManager.AlliancePost.Member)
@@ -298,6 +315,10 @@ end
 
 function Form_Guild:OnBtnnewsClicked()
   self:OnTabClk(GuildPanelTab.News)
+end
+
+function Form_Guild:OnBtnmessageClicked()
+  self:OnTabClk(GuildPanelTab.Message)
 end
 
 function Form_Guild:OnBtnexitClicked()

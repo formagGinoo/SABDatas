@@ -115,6 +115,10 @@ function SDKUtil.LoginWithThirdParty(thirdParty, onResult)
   MSDKLogin:LoginWithThirdParty(thirdParty, sdkResult)
 end
 
+function SDKUtil.GameCenterAuthLocalPlayer(onResult)
+  MSDKLogin:GameCenterAuthLocalPlayer(onResult)
+end
+
 function SDKUtil.GetTransferCode(onResult)
   local function sdkResult(result)
     if onResult then

@@ -62,4 +62,13 @@ function ChannelManager:IsExeVerBig(targetVer)
   return CS.VersionUtil.CompareBigVerPart(strBigVer, targetVer)
 end
 
+function ChannelManager:IsResVerBig(sourceResVer, targetResVer)
+  local strSourceResVer = CS.VersionUtil.GetResVer(sourceResVer)
+  local strTargetResVer = CS.VersionUtil.GetResVer(targetResVer)
+  if strSourceResVer == "100.1" or strSourceResVer == "390.1" then
+    return 1
+  end
+  return CS.VersionUtil.CompareResVerPart(strSourceResVer, strTargetResVer)
+end
+
 return ChannelManager

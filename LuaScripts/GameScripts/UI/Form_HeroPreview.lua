@@ -65,6 +65,13 @@ function Form_HeroPreview:AfterInit()
   self.m_backFun = nil
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_MinScale = MinScale
+  self.m_MaxScale = MaxScale
+  self.m_spineSkeletonPosControl = nil
+  self.m_spineSkeletonGraphic = nil
+  self.m_initScaleX = nil
+  self.m_initScaleY = nil
+  self.m_spineSkeletonBone = nil
 end
 
 function Form_HeroPreview:OnActive()
@@ -120,6 +127,10 @@ function Form_HeroPreview:SetUILockState(fashionId)
     self.m_rotationLock = cfg.m_RotationLock == 1
     self.m_zoomLock = cfg.m_ZoomLock == 1
   end
+  if cfg and cfg.m_ZoomRange and cfg.m_ZoomRange.Length > 0 then
+    self.m_MaxScale = cfg.m_ZoomRange[0] / 100
+    self.m_MinScale = cfg.m_ZoomRange[1] / 100
+  end
 end
 
 function Form_HeroPreview:FreshData()
@@ -161,6 +172,14 @@ function Form_HeroPreview:CheckRecycleSpine(isResetParam)
     end
     self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
     self.m_curHeroSpineObj = nil
+    if self.m_spineSkeletonPosControl and self.m_spineSkeletonBone then
+      self.m_spineSkeletonBone.ScaleX = self.m_initScaleX or 1
+      self.m_spineSkeletonBone.ScaleY = self.m_initScaleY or 1
+    end
+    self.m_spineSkeletonBone = nil
+    self.m_spineSkeletonPosControl = nil
+    self.m_initScaleX = nil
+    self.m_initScaleY = nil
   end
 end
 
@@ -190,10 +209,19 @@ function Form_HeroPreview:OnLoadSpineBack()
   self.m_spineDitherExtension = spineRootObj:GetComponent("SpineDitherExtension")
   self.m_spineDitherExtension:SetSpineMaskAndGray(false)
   UILuaHelper.SetSpineTimeScale(spineRootObj, 1)
-  UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", false, false)
   UILuaHelper.SpineResetInit(spineRootObj)
-  if spineRootObj:GetComponent("SpineSkeletonPosControl") then
-    spineRootObj:GetComponent("SpineSkeletonPosControl"):OnResetInit()
+  self.m_spineSkeletonPosControl = spineRootObj:GetComponent("SpineSkeletonPosControl")
+  self.m_spineSkeletonGraphic = spineRootObj:GetComponent("SkeletonGraphic")
+  if self.m_spineSkeletonPosControl and self.m_spineSkeletonGraphic then
+    self.m_spineSkeletonPosControl:OnResetInit()
+    local boneNameStr = self.m_spineSkeletonPosControl.boneName
+    self.m_spineSkeletonBone = self.m_spineSkeletonGraphic.Skeleton:FindBone(boneNameStr)
+    if self.m_spineSkeletonBone then
+      self.m_initScaleX = self.m_spineSkeletonBone.ScaleX
+      self.m_initScaleY = self.m_spineSkeletonBone.ScaleY
+      self.m_spineSkeletonBone.ScaleX = 0
+      self.m_spineSkeletonBone.ScaleY = 0
+    end
   end
   self.m_spineW, self.m_spineH = UILuaHelper.GetUISize(spineRootObj)
   UILuaHelper.SetSizeWithCurrentAnchors(self.m_root_hero, self.m_spineW, self.m_spineH)
@@ -201,17 +229,22 @@ function Form_HeroPreview:OnLoadSpineBack()
   self:FreshHeroRootPos(0, 0)
   local scale = self:GetLimitScale(DefaultScale)
   self:FreshHeroRootScale(scale)
+  if UILuaHelper.CheckIsHaveSpineAnim(spineRootObj, "idle2") then
+    UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle2", true, false)
+  else
+    UILuaHelper.SpinePlayAnimWithBack(spineRootObj, 0, "idle", true, false)
+  end
 end
 
 function Form_HeroPreview:GetLimitScale(scale)
   if not scale then
     return
   end
-  if scale < MinScale then
-    scale = MinScale
+  if scale < self.m_MinScale then
+    scale = self.m_MinScale
   end
-  if scale > MaxScale then
-    scale = MaxScale
+  if scale > self.m_MaxScale then
+    scale = self.m_MaxScale
   end
   return scale
 end
@@ -224,7 +257,7 @@ function Form_HeroPreview:FreshHeroRootScale(scale, isNotFreshBar)
   local x, y = self:GetLimitMovePos(curX, curY)
   UILuaHelper.SetLocalPosition(self.m_root_hero, x, y)
   if isNotFreshBar ~= true then
-    local percent = (self.m_curScale - MinScale) / (MaxScale - MinScale)
+    local percent = (self.m_curScale - self.m_MinScale) / (self.m_MaxScale - self.m_MinScale)
     self.m_scale_change_Slider.value = percent
   end
 end
@@ -429,7 +462,7 @@ function Form_HeroPreview:OnScaleValueChange(value)
   if self.m_zoomLock then
     return
   end
-  local scale = MinScale + (MaxScale - MinScale) * value
+  local scale = self.m_MinScale + (self.m_MaxScale - self.m_MinScale) * value
   if scale == self.m_curScale then
     return
   end

@@ -13,7 +13,8 @@
       "m_mItemName": "\"Memory: Black Blood and Silver Hair\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_01_s\"",
       "m_mItemDec": "\"\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": null
     },
     "1600002": {
       "m_bError": null,
@@ -27,21 +28,23 @@
       "m_mItemName": "\"Memory: Far Side of the Moon\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_02_s\"",
       "m_mItemDec": "\"Unlock the [Far Side of the Moon] scene in Customize - Memories.\n<alpha=#80>Ambling down the dim corridor, I wonder if the moon will finally reveal itself to me.\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": "58"
     },
     "1600003": {
       "m_bError": null,
       "m_BDID": "1600003",
-      "m_mBDName": "\"As Tears Fade Into The Sunset\"",
+      "m_mBDName": "\"As Tears Fade Into the Sunset\"",
       "m_DefaultType": null,
       "m_Prefabs": "\"ui_panel_activity_bg102dalcaro\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner03\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_03\"",
-      "m_mGetwayDes": "\"As Tears Fade Into The Sunset Redemption\"",
-      "m_mItemName": "\"Memory: As Tears Fade Into The Sunset\"",
+      "m_mGetwayDes": "\"As Tears Fade Into the Sunset Redemption\"",
+      "m_mItemName": "\"Memory: As Tears Fade Into the Sunset\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
-      "m_mItemDec": "\"Unlock the [As Tears Fade Into The Sunset] scene in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
-      "m_HideType": null
+      "m_mItemDec": "\"Unlock the [As Tears Fade Into the Sunset] scene in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
+      "m_HideType": null,
+      "m_WwiseBg": "115"
     },
     "1600004": {
       "m_bError": null,
@@ -55,7 +58,8 @@
       "m_mItemName": "\"Memory: The Last Summer on Sapphire Isle\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_04_s\"",
       "m_mItemDec": "\"Unlock [The Last Summer on Sapphire Isle] scene in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": "297"
     },
     "1600005": {
       "m_bError": null,
@@ -69,7 +73,8 @@
       "m_mItemName": "\"Memory: Ashes of Time\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_05_s\"",
       "m_mItemDec": "\"Unlock the [Ashes of Time] scene in Customize - Memories.\n'I am <i>human</i>... I am Aiona, of the Alita. I fight for the flow of time. I remember... yes, I remember it all now.'\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": "330"
     },
     "1600006": {
       "m_bError": null,
@@ -83,7 +88,8 @@
       "m_mItemName": "\"Memory: Cycle of Destruction\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_06_s\"",
       "m_mItemDec": "\"Unlocks the [Cycle of Destruction] scene in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": "330"
     },
     "1600007": {
       "m_bError": null,
@@ -96,22 +102,24 @@
       "m_mGetwayDes": "\"Whispers of Yesterday Redemption\"",
       "m_mItemName": "\"Memories: Twilight Before The Dawn\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_07_s\"",
-      "m_mItemDec": "\"Unlock the [Twilight Before The Dawn] scene in Customize - Memories.\n<alpha=#80>Through those eyes, one can seemingly glimpse the moon of their homeland once more, shining upon companions of the past.\"",
-      "m_HideType": null
+      "m_mItemDec": "\"Unlock the [Twilight Before The Dawn] scene in Decoration - Memories.\n<alpha=#80>Through those eyes, I seem to glimpse the moon of my homeland once more, shining upon old companions.\"",
+      "m_HideType": null,
+      "m_WwiseBg": "330"
     },
     "1600008": {
       "m_bError": null,
       "m_BDID": "1600008",
-      "m_mBDName": "\"Against The Dying Light\"",
+      "m_mBDName": "\"Against the Dying Light\"",
       "m_DefaultType": null,
       "m_Prefabs": "\"ui_panel_activity_bg106\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner08\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_08\"",
-      "m_mGetwayDes": "\"Against The Dying Light Redemption\"",
-      "m_mItemName": "\"Memories: Against The Dying Light\"",
+      "m_mGetwayDes": "\"Against the Dying Light Redemption\"",
+      "m_mItemName": "\"Memory: Against the Dying Light\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_08_s\"",
-      "m_mItemDec": "\"Unlock the [Against The Dying Light] scene in Customize - Memories.\n<alpha=#80> Perhaps she could have endured the darkness, had she never seen the sun.\"",
-      "m_HideType": "1"
+      "m_mItemDec": "\"Unlock the [Against the Dying Light] scene in Customize - Memories.\n<alpha=#80>Perhaps she could have endured the darkness, had she never seen the sun.\"",
+      "m_HideType": null,
+      "m_WwiseBg": "345"
     },
     "1600009": {
       "m_bError": null,
@@ -125,8 +133,39 @@
       "m_mItemName": "\"Memory: Smoke Signals\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_09_s\"",
       "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace... find its rest...\"",
-      "m_HideType": null
+      "m_HideType": null,
+      "m_WwiseBg": null
+    },
+    "1600010": {
+      "m_bError": null,
+      "m_BDID": "1600010",
+      "m_mBDName": "\"Remains of Time\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg108\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner10\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_10\"",
+      "m_mGetwayDes": "\"Among Strangers Redemption\"",
+      "m_mItemName": "\"Memory: Remains of Time\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_10_s\"",
+      "m_mItemDec": "\"Unlock the Scene [Remains of Time] in Customize - Memories.\n<alpha=#80>The bells of Asta will never ring again, time forever frozen on that harvest festival day.\n'Rather than await inevitable destruction, let us seek hope in the foreign land.'\"",
+      "m_HideType": "1",
+      "m_WwiseBg": null
+    },
+    "1600011": {
+      "m_bError": null,
+      "m_BDID": "1600011",
+      "m_mBDName": "\"A Shared Decision\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg108_1\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner11\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_11\"",
+      "m_mGetwayDes": "\"[A Shared Decision] Event Rewards\"",
+      "m_mItemName": "\"Memory: A Shared Decision\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_11_s\"",
+      "m_mItemDec": "\"Unlock the Scene [A Shared Decision] in Customize - Memories.\n<alpha=#80> When nothingness is perceived, even a colorless void takes on a fresh hue.\"",
+      "m_HideType": null,
+      "m_WwiseBg": null
     }
   },
-  "status": "processed_9_items"
+  "status": "processed_11_items"
 }

@@ -155,6 +155,11 @@ function FilterButton:ForceChangeTabIndex(iFilterIndex)
   self:RefreshFilterBtnCur()
 end
 
+function FilterButton:ForceChangeUpDownBtn(upDown)
+  self.m_bFilterDown = upDown
+  self:RefreshFilterupDown()
+end
+
 function FilterButton:OnBtnFilterTabClicked(iIndex)
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   self.m_iIndexCur = iIndex

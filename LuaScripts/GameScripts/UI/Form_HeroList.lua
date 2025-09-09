@@ -58,12 +58,12 @@ function Form_HeroList:OnActive()
     self.m_curFilterIndex = nil
     self.m_bFilterDown = nil
     self.m_filterData = {}
+    self.m_filterMoon = 0
+    self.m_filterData[HeroManager.FilterType.MoonType] = self.m_filterMoon
+    UILuaHelper.SetActive(self.m_filter_select, false)
   end
   self:FreshUI()
   self:CheckShowEnterAnim()
-  UILuaHelper.SetActive(self.m_filter_select, false)
-  self.m_filterMoon = 0
-  self.m_filterData[HeroManager.FilterType.MoonType] = self.m_filterMoon
   if not self.m_LockScrollPos or is_from_hall then
     self.m_luaHeroListInfinityGrid:LocateTo()
     if self.m_csui.m_param then
@@ -397,6 +397,8 @@ function Form_HeroList:OnBtndependentsClicked()
   self.m_isShowHeroList = true
   self.m_filterData = {}
   self.m_bFilterDown = nil
+  UILuaHelper.SetActive(self.m_filter_select, false)
+  self.m_filterData[HeroManager.FilterType.MoonType] = self.m_filterMoon
   self:FreshHeroGuideTabShow()
   self.m_curFilterIndex = DefaultChooseFilterIndex
   self.m_widgetBtnFilter:RefreshTabConfig(HeroSortCfg, self.m_curFilterIndex, self.m_bFilterDown, function(filterIndex, isFilterDown)
@@ -416,6 +418,8 @@ function Form_HeroList:OnBtnbookClicked()
   self.m_curFilterIndex = DefaultChooseFilterIndex
   self.m_bFilterDown = nil
   self.m_filterData = {}
+  UILuaHelper.SetActive(self.m_filter_select, false)
+  self.m_filterData[HeroManager.FilterType.MoonType] = self.m_filterMoon
   self:FreshHeroGuideTabShow()
   self.m_widgetBtnFilter:RefreshTabConfig(HeroGuideSortCfg, self.m_curFilterIndex, self.m_bFilterDown, function(filterIndex, isFilterDown)
     self:OnHeroSortChanged(filterIndex, isFilterDown)

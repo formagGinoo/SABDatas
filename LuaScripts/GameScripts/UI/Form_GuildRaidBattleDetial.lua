@@ -75,15 +75,25 @@ function Form_GuildRaidBattleDetial:FreshShowSpine(showHeroID)
   if not showHeroID then
     return
   end
-  local heroCfg = HeroManager:GetHeroConfigByID(showHeroID)
-  if not heroCfg then
+  local heroData
+  if showHeroID ~= nil then
+    heroData = HeroManager:GetHeroDataByID(showHeroID)
+  else
+    local showHeroDataList = HeroManager:GetTopFiveHeroByCombat()
+    local randomIndex = self:GetRandom(1, #showHeroDataList)
+    heroData = showHeroDataList[randomIndex]
+  end
+  if not heroData then
     return
   end
-  local spineStr = heroCfg.m_Spine
-  if not spineStr then
-    return
+  local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(heroData.serverData.iHeroId, heroData.serverData.iFashion)
+  if fashionInfo then
+    local spineStr = fashionInfo.m_Spine
+    if not spineStr then
+      return
+    end
+    self:LoadHeroSpine(spineStr, "battlewin", self.m_hero_root)
   end
-  self:LoadHeroSpine(spineStr, "battlewin", self.m_hero_root)
 end
 
 function Form_GuildRaidBattleDetial:LoadHeroSpine(heroSpineAssetName, showTypeStr, uiParent)

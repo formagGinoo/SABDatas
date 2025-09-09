@@ -2,6 +2,8 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local MallMonthlyCardMainSubPanel = class("MallMonthlyCardMainSubPanel", UISubPanelBase)
 
 function MallMonthlyCardMainSubPanel:OnInit()
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
+  self.m_paidGiftPoint1 = self:createPackGiftPoint(self.m_packgift_point1)
   self:RefreshByConfig()
   self:RefreshByUserInfo()
 end
@@ -138,54 +140,28 @@ function MallMonthlyCardMainSubPanel:OnBuyResult(isSuccess, msg, res)
 end
 
 function MallMonthlyCardMainSubPanel:OnRefreshGiftPointAll()
-  if utils.isNull(self.m_packgift_point) then
-    return
-  end
   self:OnRefreshGiftPoint()
   self:OnRefreshGiftPoint1()
 end
 
 function MallMonthlyCardMainSubPanel:OnRefreshGiftPoint()
   local whiteElement = MonthlyCardManager:GetSmallCardCfg()
-  if whiteElement:GetError() or not whiteElement.m_ProductID then
-    self.m_packgift_point:SetActive(false)
+  if whiteElement:GetError() then
     return
   end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(whiteElement.m_ProductID)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point:SetActive(true)
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({
+    productId = whiteElement.m_ProductID
+  })
 end
 
 function MallMonthlyCardMainSubPanel:OnRefreshGiftPoint1()
-  if utils.isNull(self.m_packgift_point1) then
-    return
-  end
   local blackElement = MonthlyCardManager:GetBigCardCfg()
-  if blackElement:GetError() or not blackElement.m_ProductID then
-    self.m_packgift_point1:SetActive(false)
+  if blackElement:GetError() then
     return
   end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(blackElement.m_ProductID)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point1:SetActive(true)
-    if self.m_paidGiftPoint1 then
-      self.m_paidGiftPoint1:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint1 = self:createPackGiftPoint(self.m_packgift_point1, pointParams)
-    end
-  else
-    self.m_packgift_point1:SetActive(false)
-  end
+  self.m_paidGiftPoint1:SetFreshInfo({
+    productId = blackElement.m_ProductID
+  })
 end
 
 return MallMonthlyCardMainSubPanel

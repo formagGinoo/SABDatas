@@ -113,4 +113,31 @@ source:]],
   ILog.Report(tostring(report))
 end
 
+function log.info_tab(var, name)
+  name = name or ""
+  if type(var) == "table" then
+    ILog.Info(name .. " = " .. table.dump(var, true, 5))
+  else
+    ILog.Info(name .. " = " .. tostring(var))
+  end
+end
+
+function log.warn_tab(var, name)
+  name = name or ""
+  if type(var) == "table" then
+    ILog.Warn(name .. " = " .. table.dump(var, true, 5))
+  else
+    ILog.Warn(name .. " = " .. tostring(var))
+  end
+end
+
+function log.error_tab(var, name)
+  name = name or ""
+  if type(var) == "table" then
+    ILog.Error(name .. " = " .. table.dump(var, true, 5))
+  else
+    ILog.Error(name .. " = " .. tostring(var))
+  end
+end
+
 return log

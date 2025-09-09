@@ -1,5 +1,4 @@
 local UIBattlePassMain = class("UIBattlePassMain", require("UI/Common/UIBase"))
-local CharacterInfoIns = ConfigManager:GetConfigInsByName("CharacterInfo")
 local BattlePassBuyStatus = ActivityManager.BattlePassBuyStatus
 local TopTabType = {RewardPanel = 1, TaskPanel = 2}
 
@@ -53,6 +52,13 @@ function UIBattlePassMain:OnGetFirstEnterType()
 end
 
 function UIBattlePassMain:FreshTopTabAndPanel()
+  if not self.m_stActivity then
+    return
+  end
+  local sBarBg = self.m_stActivity:GetBarBg(self.m_curSelectTab == TopTabType.TaskPanel)
+  if not utils.isNull(self.m_img_bg_mask_Image) and sBarBg and sBarBg ~= "" then
+    UILuaHelper.SetAtlasSprite(self.m_img_bg_mask_Image, sBarBg)
+  end
   if not utils.isNull(self.m_img_star) then
     self.m_img_star:SetActive(self.m_curSelectTab == TopTabType.TaskPanel)
   end
@@ -123,6 +129,7 @@ function UIBattlePassMain:OnInactive()
   self:ClearAnimTimer()
   self:RemoveAllEventListeners()
   self:CheckRecycleSpine(true)
+  self.m_callback = nil
 end
 
 function UIBattlePassMain:OnUpdate(dt)
@@ -144,9 +151,9 @@ function UIBattlePassMain:OnDestroy()
 end
 
 function UIBattlePassMain:FreshData()
-  self.m_stActivity = nil
   local tParam = self.m_csui.m_param
   if tParam then
+    self.m_stActivity = nil
     self.m_stActivity = tParam.stActivity
     self.m_curBuyStatus = self.m_stActivity:GetBuyStatus()
     self.m_lastBuState = self.m_curBuyStatus
@@ -154,6 +161,7 @@ function UIBattlePassMain:FreshData()
     self.m_iActivityId = self.m_stActivity:getID()
     self.m_csui.m_param = nil
     self.m_lastLevel = self.m_stActivity:GetCurLevel()
+    self.m_callback = tParam.callback
   end
 end
 
@@ -452,6 +460,10 @@ end
 
 function UIBattlePassMain:OnBackClk()
   self:CloseForm()
+  if self.m_callback then
+    self.m_callback()
+    self.m_callback = nil
+  end
 end
 
 function UIBattlePassMain:OnBackHome()

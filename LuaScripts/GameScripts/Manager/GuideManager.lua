@@ -332,7 +332,7 @@ function GuideManager:CheckFinishCondition(guideConf)
       end
     end
     if finishGuide then
-      self:FinishSubStepGuide(guideConf.ID, true)
+      self:FinishSubStepGuide(self:GetFinishStepData(guideConf.ID, 0), true)
     end
   end
 end
@@ -609,25 +609,53 @@ end
 
 function GuideManager:FinishStepGuides(guides)
   for i = 1, #guides do
-    CS.UI.UILuaHelper.SendReport(CS.LogicDefine.LogicReportType.eGuideFinish, guides[i])
-    if self.completeGuideDic[guides[i]] == nil then
-      self.completeGuideDic[guides[i]] = guides[i]
-      self:ReqFinishGuide(guides[i])
+    CS.UI.UILuaHelper.SendReport(CS.LogicDefine.LogicReportType.eGuideFinish, guides[i].ID, guides[i].subStepGuideId, guides[i].EventType, "2")
+    local stepGuideId = tonumber(guides[i].subStepGuideId)
+    if stepGuideId == 0 then
+      stepGuideId = tonumber(guides[i].ID)
+    end
+    if self.completeGuideDic[stepGuideId] == nil then
+      self.completeGuideDic[stepGuideId] = stepGuideId
+      self:ReqFinishGuide(stepGuideId)
     end
   end
 end
 
-function GuideManager:FinishSubStepGuide(subStepGuideId, reqFinish)
-  CS.UI.UILuaHelper.SendReport(CS.LogicDefine.LogicReportType.eGuideFinish, subStepGuideId)
-  if self.completeGuideDic[subStepGuideId] == nil then
-    self.completeGuideDic[subStepGuideId] = subStepGuideId
+function GuideManager:FinishSubStepGuide(data, reqFinish)
+  if not data then
+    log.error("GuideManager:FinishSubStepGuide() Error!!!  data = nil!!!")
+    return
+  end
+  CS.UI.UILuaHelper.SendReport(CS.LogicDefine.LogicReportType.eGuideFinish, data.ID, data.subStepGuideId, data.EventType, "1")
+  local stepGuideId = tonumber(data.subStepGuideId)
+  if stepGuideId == 0 then
+    stepGuideId = tonumber(data.ID)
+  end
+  if self.completeGuideDic[stepGuideId] == nil then
+    self.completeGuideDic[stepGuideId] = stepGuideId
     if reqFinish then
-      self:ReqFinishGuide(subStepGuideId)
+      self:ReqFinishGuide(stepGuideId)
     end
   end
   if reqFinish then
-    EventCenter.Broadcast(EventDefine.eGameEvent_GuideFinish, subStepGuideId)
+    EventCenter.Broadcast(EventDefine.eGameEvent_GuideFinish, stepGuideId)
   end
+end
+
+function GuideManager:GetFinishStepData(stepId, subStepId)
+  local data = {
+    ID = tostring(stepId),
+    subStepGuideId = tostring(subStepId),
+    EventType = ""
+  }
+  if self.guideStepConfData[stepId] then
+    local eventArr = self.guideStepConfData[stepId].EventType
+    local length = eventArr.Length
+    for i = 0, length - 1 do
+      data.EventType = data.EventType .. tostring(eventArr[i]) .. ";"
+    end
+  end
+  return data
 end
 
 function GuideManager:CheckSubStepGuideCmp(subStepGuideId)
@@ -654,10 +682,10 @@ end
 
 function GuideManager:SkipGuide()
   local guides = {}
-  table.insert(guides, self.SkipGuideId)
+  table.insert(guides, self:GetFinishStepData(self.SkipGuideId, 0))
   local guideStepDatas = CS.CData_GuideStep.GetInstance():GetAll()
   for k, v in pairs(guideStepDatas) do
-    table.insert(guides, k)
+    table.insert(guides, self:GetFinishStepData(k, 0))
   end
   self:FinishStepGuides(guides)
   local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_GUIDE)

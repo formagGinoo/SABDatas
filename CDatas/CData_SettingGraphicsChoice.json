@@ -88,7 +88,23 @@
       "m_GameValue": null,
       "m_mSettingText": "\"21:9\"",
       "m_Hide": null
+    },
+    "501": {
+      "m_bError": null,
+      "m_ChoiceID": "501",
+      "m_GraphicID": "5",
+      "m_GameValue": "1",
+      "m_mSettingText": "\"Yes\"",
+      "m_Hide": null
+    },
+    "502": {
+      "m_bError": null,
+      "m_ChoiceID": "502",
+      "m_GraphicID": "5",
+      "m_GameValue": null,
+      "m_mSettingText": "\"No\"",
+      "m_Hide": null
     }
   },
-  "status": "processed_11_items"
+  "status": "processed_13_items"
 }

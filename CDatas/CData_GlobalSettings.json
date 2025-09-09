@@ -8,6 +8,13 @@
       "m_Value": "\"1\"",
       "m_Desc": "\"加速值1\""
     },
+    "\"EquipUpgradeItem\"": {
+      "m_bError": null,
+      "m_Name": "\"EquipUpgradeItem\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"1101,1102\"",
+      "m_Desc": "\"装备升级道具（itemid）\""
+    },
     "\"InheritLevelParam\"": {
       "m_bError": null,
       "m_Name": "\"InheritLevelParam\"",
@@ -42,6 +49,34 @@
       "m_Type": "\"int\"",
       "m_Value": "\"3\"",
       "m_Desc": "\"公会战每日出刀次数\""
+    },
+    "\"GuildMessagePermissions\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessagePermissions\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"0\"",
+      "m_Desc": "\"公会成员（首领、长老永远有权限）是否有权限留言 1=有    0 =没有   0\""
+    },
+    "\"GuildMessageStart\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageStart\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"3600\"",
+      "m_Desc": "\"加入公会可留言时间（秒）3600\""
+    },
+    "\"GuildMessageCD\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageCD\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"60\"",
+      "m_Desc": "\"公会留言CD时间（秒）60\""
+    },
+    "\"GuildMessageNotice\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageNotice\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"公会留言每天通知全员次数  2\""
     },
     "\"SoloRaidNormalTimes\"": {
       "m_bError": null,
@@ -166,7 +201,7 @@
       "m_bError": null,
       "m_Name": "\"ReplaceArenaAFKLimit\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"43200\"",
+      "m_Value": "\"86400\"",
       "m_Desc": "\"换位PVP挂机时长\""
     },
     "\"CastleStoryLimitInitial\"": {
@@ -182,20 +217,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"14400\"",
       "m_Desc": "\"统一重置时间，相较于0点的秒数偏移\""
-    },
-    "\"FriendPointsAcceptMax\"": {
-      "m_bError": null,
-      "m_Name": "\"FriendPointsAcceptMax\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"15\"",
-      "m_Desc": "\"好友 友情点每日可接收次数（15）\""
-    },
-    "\"FriendPointsNumber\"": {
-      "m_bError": null,
-      "m_Name": "\"FriendPointsNumber\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"好友 友情点每次收发获得的点数\""
     },
     "\"NewbieMainLevelID\"": {
       "m_bError": null,
@@ -222,7 +243,7 @@
       "m_bError": null,
       "m_Name": "\"ExpansionResourcePack\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Activity_106Quinn\"",
+      "m_Value": "\"Pack_Activity_108/Pack_ActExplore1080\"",
       "m_Desc": "\"新玩家全量下载的扩展资源包，string数组，填资源包名\""
     },
     "\"ResourceTaskTagMainLevelID\"": {
@@ -231,6 +252,13 @@
       "m_Type": "\"int\"",
       "m_Value": "\"1102090\"",
       "m_Desc": "\"后台资源下载新玩家判定标准（填入通关的mainlevelID，通关此关卡之前判定为新玩家）\""
+    },
+    "\"FriendPointsNumber\"": {
+      "m_bError": null,
+      "m_Name": "\"FriendPointsNumber\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"好友 友情点每次收发获得的点数\""
     },
     "\"LogoVoice\"": {
       "m_bError": null,
@@ -1146,7 +1174,7 @@
       "m_bError": null,
       "m_Name": "\"AFKStartLevel\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"1103050\"",
+      "m_Value": "\"1102080\"",
       "m_Desc": "\"开始计数挂机通关次数的起始主线关卡id\""
     },
     "\"AFKLevelCnt\"": {
@@ -1160,8 +1188,15 @@
       "m_bError": null,
       "m_Name": "\"AFKStorage\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"43200\"",
+      "m_Value": "\"86400\"",
       "m_Desc": "\"最长挂机存储时长\""
+    },
+    "\"AFKInitialItem\"": {
+      "m_bError": null,
+      "m_Name": "\"AFKInitialItem\"",
+      "m_Type": "\"int[][]\"",
+      "m_Value": "\"999/5000;1001/90000;1002/80\"",
+      "m_Desc": "\"挂机系统初始开始计算时（1-8）填充道具\""
     },
     "\"WeekTimeReset\"": {
       "m_bError": null,
@@ -1369,9 +1404,16 @@
     "\"RealHurtShieldScale\"": {
       "m_bError": null,
       "m_Name": "\"RealHurtShieldScale\"",
-      "m_Type": "\"float\"",
+      "m_Type": "\"int\"",
       "m_Value": "\"2\"",
-      "m_Desc": "\"护盾值加到角色身上，结算时扣除，真实伤害放大系数\""
+      "m_Desc": "\"护盾值加到角色身上，结算时扣除，真实伤害和穿透伤害放大系数\""
+    },
+    "\"PenetrationHurtPassRate\"": {
+      "m_bError": null,
+      "m_Name": "\"PenetrationHurtPassRate\"",
+      "m_Type": "\"float\"",
+      "m_Value": "\"0.3\"",
+      "m_Desc": "\"穿透伤害无视敌方防御比例\""
     },
     "\"isMonsterDeathInBattleResultWaitTimeControl\"": {
       "m_bError": null,
@@ -1702,13 +1744,6 @@
       "m_Value": "\"0.8\"",
       "m_Desc": "\"初始音量-语音\""
     },
-    "\"EquipUpgradeItem\"": {
-      "m_bError": null,
-      "m_Name": "\"EquipUpgradeItem\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"1101,1102\"",
-      "m_Desc": "\"装备升级道具（itemid）\""
-    },
     "\"EquipEXPRatio\"": {
       "m_bError": null,
       "m_Name": "\"EquipEXPRatio\"",
@@ -1790,7 +1825,7 @@
       "m_bError": null,
       "m_Name": "\"UpgradeCoreResourcePack\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Char\"",
+      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Char/Pack_UI_Extended\"",
       "m_Desc": "\"老玩家版更时全量下载的基础资源包，string数组，填资源包名\""
     },
     "\"UpgradeExpansionResourcePack\"": {
@@ -1807,12 +1842,26 @@
       "m_Value": "\"Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video\"",
       "m_Desc": "\"流量下载触发边下边玩时，后台下载的系统资源，string数组，填资源包名\""
     },
-    "\"StreamingTriggerCountThreshold\"": {
+    "\"FCM ServgTriErerCountThreshold\"": {
       "m_bError": null,
-      "m_Name": "\"StreamingTriggerCountThreshold\"",
+      "m_Name": "\"FCM ServgTriErerCountThreshold\"",
       "m_Type": "\"int\"",
       "m_Value": "\"2\"",
       "m_Desc": "\"流量下第N次触发边下边玩后，开启后台下载弹窗\""
+    },
+    "\"ResourcePackCleanupPlan\"": {
+      "m_bError": null,
+      "m_Name": "\"ResourcePackCleanupPlan\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"Pack_Activity_101Lamia/Pack_Activity_102Dalcaro/Pack_Activity103_Luoleilai/Pack_ActExplore1030/Pack_Activity_105Aiona/Pack_Activity_106Quinn\"",
+      "m_Desc": "\"资源清理，清理列表，string数组，填资源包名\""
+    },
+    "\"ActivityResourcePackExclusionList\"": {
+      "m_bError": null,
+      "m_Name": "\"ActivityResourcePackExclusionList\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video/Pack_Char/Pack_PermanentLevel_1/Pack_UI_Extended/Pack_Prologue/Pack_0-3/Pack_2-1/Pack_Guide/Pack_PermanentLevel_2/Pack_MainLevel_1/Pack_MainLevel_2/Pack_MainLevel_3/Pack_MainLevel_4/Pack_MainLevel_5/Pack_MainLevel_6/Pack_MainLevel_7/Pack_MainLevel_8/Pack_MainLevel_9/Pack_MainLevel_10/Pack_MainLevel_11/Pack_MainLevel_12/Pack_MainLevel_13/Pack_MainLevel_14/Pack_MainLevel_15/Pack_MainLevel_16/Pack_MainLevel_17/Pack_MainLevel_18/Pack_MainLevel_19/Pack_Activity_106Quinn/Pack_Activity_108/Pack_ActExplore1080/Pack_ActivityResourceExclusionList\"",
+      "m_Desc": "\"活动相关自定义资源包资源排除列表\""
     },
     "\"FullDownloadCountdown\"": {
       "m_bError": null,
@@ -1820,6 +1869,13 @@
       "m_Type": "\"int\"",
       "m_Value": "\"30\"",
       "m_Desc": "\"全量下载倒计时，单位秒\""
+    },
+    "\"MainLoginVideo\"": {
+      "m_bError": null,
+      "m_Name": "\"MainLoginVideo\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"\"",
+      "m_Desc": "\"登录界面下载视频，填写资源名，资源路径：Assets\\BundleResource\\Video\""
     },
     "\"FormPresetMaxCount\"": {
       "m_bError": null,
@@ -2065,6 +2121,20 @@
       "m_Type": "\"int\"",
       "m_Value": "\"7\"",
       "m_Desc": "\"公会首领不上线自动转让时间（秒数）7天\""
+    },
+    "\"GuildMessageMax\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageMax\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"50\"",
+      "m_Desc": "\"公会留言条目上限\""
+    },
+    "\"GuildMessageCount\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageCount\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"50\"",
+      "m_Desc": "\"公会留言字数限制\""
     },
     "\"AncientResourceOnce\"": {
       "m_bError": null,
@@ -3018,6 +3088,13 @@
       "m_Value": "\"30\"",
       "m_Desc": "\"好友 友情点每日可发送次数（30）\""
     },
+    "\"FCM PusointsledeptMax\"": {
+      "m_bError": null,
+      "m_Name": "\"FCM PusointsledeptMax\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"15\"",
+      "m_Desc": "\"好友 友情点每日可接收次数（15）\""
+    },
     "\"FriendPointsItem\"": {
       "m_bError": null,
       "m_Name": "\"FriendPointsItem\"",
@@ -3654,7 +3731,56 @@
       "m_Type": "\"int[]\"",
       "m_Value": "\"28800;10\"",
       "m_Desc": "\"举报极限值，X小时仅可举报Y个玩家（秒;人数）\""
+    },
+    "\"NewbieAdjustGachaItemCompensation\"": {
+      "m_bError": null,
+      "m_Name": "\"NewbieAdjustGachaItemCompensation\"",
+      "m_Type": "\"int[]\"",
+      "m_Value": "\"1101030;1102040;1050;10\"",
+      "m_Desc": "\"+8版本调整新手内容，如果玩家更新前在这个关卡区间（已通过左边，未通过右边），则在更新后直接往玩家身上塞一份十连道具（道具id；道具数量）\""
+    },
+    "\"NewbieAdjustAFKProgress\"": {
+      "m_bError": null,
+      "m_Name": "\"NewbieAdjustAFKProgress\"",
+      "m_Type": "\"int[]\"",
+      "m_Value": "\"1102090;1103010;1103020;1103030;1103040;1103050\"",
+      "m_Desc": "\"+8版本调整新手内容，如果玩家更新前已解锁挂机功能，则在更新后直接往玩家身上塞一份挂机进度。配置的关卡玩家每经过一关+1点经验\""
+    },
+    "\"PlotPlaySkipType\"": {
+      "m_bError": null,
+      "m_Name": "\"PlotPlaySkipType\"",
+      "m_Type": "\"int[]\"",
+      "m_Value": "\"2;3;4;5;6\"",
+      "m_Desc": "\"plotplay表中可以全部跳过的plotstep类型\""
+    },
+    "\"WishListInitialRole\"": {
+      "m_bError": null,
+      "m_Name": "\"WishListInitialRole\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"2/20400,20210,20300,20340,20100;3/20230,20080,20620,20110,20280;4/20290,20630,20070,20160,20180\"",
+      "m_Desc": "\"心愿单一键初始角色\""
+    },
+    "\"AdjustQuality\"": {
+      "m_bError": null,
+      "m_Name": "\"AdjustQuality\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1103010\"",
+      "m_Desc": "\"调整画质完成\""
+    },
+    "\"GuozaiGetEnergySpeed\"": {
+      "m_bError": null,
+      "m_Name": "\"GuozaiGetEnergySpeed\"",
+      "m_Type": "\"float\"",
+      "m_Value": "\"1.2\"",
+      "m_Desc": "\"过载回能加速倍率\""
+    },
+    "\"GuozaiAllowUsedEnergyRate\"": {
+      "m_bError": null,
+      "m_Name": "\"GuozaiAllowUsedEnergyRate\"",
+      "m_Type": "\"float\"",
+      "m_Value": "\"0.5\"",
+      "m_Desc": "\"允许过载施放奥义所需的血魂比例\""
     }
   },
-  "status": "processed_522_items"
+  "status": "processed_540_items"
 }

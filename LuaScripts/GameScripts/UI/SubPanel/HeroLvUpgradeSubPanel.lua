@@ -17,17 +17,20 @@ local LevelUpgradeCfg = {
   LvExp = {
     ItemID = tonumber(LvExpItemID),
     NeedNum = 0,
-    ShowCostNum = 0
+    ShowCostNum = 0,
+    configKey = "LvExp"
   },
   LvMoney = {
     ItemID = tonumber(LvMoneyItemID),
     NeedNum = 0,
-    ShowCostNum = 0
+    ShowCostNum = 0,
+    configKey = "LvMoney"
   },
   LvBreakthrough = {
     ItemID = tonumber(LvBreakthroughItemID),
     NeedNum = 0,
-    ShowCostNum = 0
+    ShowCostNum = 0,
+    configKey = "LvBreakthrough"
   }
 }
 local EnterAnimStr = "lv_in"
@@ -162,11 +165,12 @@ function HeroLvUpgradeSubPanel:FreshCostItemData()
   end
   self.m_needItemList = {}
   local characterLevelCfg = CharacterLevelIns:GetValue_ByCharacterLv(self.m_curServerLv)
-  for keyStr, v in pairs(LevelUpgradeCfg) do
-    local paramNum = characterLevelCfg["m_" .. keyStr]
+  for i = 1, MaxCostItemNum do
+    local levelUpgradeCfg = ShowLevelUpgrade[i]
+    local paramNum = characterLevelCfg["m_" .. levelUpgradeCfg.configKey]
     if 0 < paramNum then
       self.m_needItemList[#self.m_needItemList + 1] = {
-        v.ItemID,
+        levelUpgradeCfg.ItemID,
         paramNum
       }
     end

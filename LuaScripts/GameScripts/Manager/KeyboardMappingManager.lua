@@ -6,11 +6,32 @@ function KeyboardMappingManager:OnCreate()
   self.m_isDirty = false
   self.m_configMap = {}
   self.m_affectUIs = {}
+  self:CheckEnable()
 end
 
-function KeyboardMappingManager:RegistrySingleConfig(uiPrefabName, uiObject, bindKey, bindType)
+function KeyboardMappingManager:OnKeyboardBindingChange()
+  self:CheckEnable()
+end
+
+function KeyboardMappingManager:CheckEnable()
+  local value = CS.UnityEngine.PlayerPrefs.GetInt("KeyboardBind_Index_Key", 1)
+  self.m_enableBinding = value == 1
+end
+
+function KeyboardMappingManager:RegistrySingleConfig(uiPrefabName, uiObject, uiDisplayObject, bindKey, bindType)
   if uiObject == nil then
     return
+  end
+  if uiDisplayObject then
+    if self.m_enableBinding then
+      uiDisplayObject:SetActive(true)
+      local labelText = uiDisplayObject.transform:Find("key_root/c_txt_key"):GetComponent(T_TextMeshProUGUI)
+      if labelText then
+        labelText.text = bindKey
+      end
+    else
+      uiDisplayObject:SetActive(false)
+    end
   end
   if self.m_configMap[uiPrefabName] == nil then
     self.m_configMap[uiPrefabName] = {}
@@ -52,7 +73,7 @@ function KeyboardMappingManager:GenerateConfig(uiPrefabName, uiInstance, isLua)
       if mappingButton then
         local buttonLabel = mappingButton.transform:Find("c_common_item_key")
         if buttonLabel then
-          if ChannelManager:IsWindows() and mappingElement.m_DisplayKey ~= "" then
+          if ChannelManager:IsWindows() and self.m_enableBinding and mappingElement.m_DisplayKey ~= "" then
             local keyboardBindComp = mappingButton:GetComponent(typeof(CS.KeyboardBindComp))
             if keyboardBindComp == nil then
               keyboardBindComp = mappingButton:AddComponent(typeof(CS.KeyboardBindComp))
@@ -252,6 +273,9 @@ function KeyboardMappingManager:OnUpdate(dt)
 end
 
 function KeyboardMappingManager:OnKeyboardUpdate()
+  if not self.m_enableBinding then
+    return
+  end
   if #self.m_affectUIs > 0 then
     local hasTrigger = false
     for i, prefabName in ipairs(self.m_affectUIs) do

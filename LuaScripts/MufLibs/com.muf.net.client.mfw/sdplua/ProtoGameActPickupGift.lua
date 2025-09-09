@@ -32,6 +32,16 @@ CmdActPickupGift_Status.Definition = {
     nil
   }
 }
+CmdActClientCfgPickupGift = sdp.SdpStruct("CmdActClientCfgPickupGift")
+CmdActClientCfgPickupGift.Definition = {
+  "iRelationShopId",
+  iRelationShopId = {
+    0,
+    0,
+    8,
+    0
+  }
+}
 CmdActCfgPickupGiftGrids = sdp.SdpStruct("CmdActCfgPickupGiftGrids")
 CmdActCfgPickupGiftGrids.Definition = {
   "mGridCfg",
@@ -127,7 +137,14 @@ CmdActCommonCfgPickupGift.Definition = {
 }
 CmdActCfgPickupGift = sdp.SdpStruct("CmdActCfgPickupGift")
 CmdActCfgPickupGift.Definition = {
+  "stClientCfg",
   "stCommonCfg",
+  stClientCfg = {
+    0,
+    0,
+    CmdActClientCfgPickupGift,
+    nil
+  },
   stCommonCfg = {
     1,
     0,

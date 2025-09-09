@@ -17,6 +17,7 @@ LamiaSubActType_GameQuest = 19
 LamiaMiniGameType_Memory = 1
 LamiaMiniGameType_Whacka = 2
 LamiaMiniGameType_LegacyStage = 3
+LamiaMiniGameType_Spider = 4
 LamiaMiniGameType_Explore = 1001
 LamiaMiniGameMode_Normal = 1
 LamiaMiniGameMode_Boss = 2
@@ -112,6 +113,7 @@ LamiaMiniGame = sdp.SdpStruct("LamiaMiniGame")
 LamiaMiniGame.Definition = {
   "mGameStat",
   "iMaxAwardedGame",
+  "mGameScore",
   mGameStat = {
     0,
     0,
@@ -123,6 +125,12 @@ LamiaMiniGame.Definition = {
     0,
     8,
     0
+  },
+  mGameScore = {
+    2,
+    0,
+    sdp.SdpMap(8, 8),
+    nil
   }
 }
 LamiaStage = sdp.SdpStruct("LamiaStage")
@@ -159,6 +167,7 @@ LamiaData.Definition = {
   "vAwardedClue",
   "vAwardedSubAct",
   "sClientData",
+  "vItem",
   iActId = {
     0,
     0,
@@ -206,6 +215,12 @@ LamiaData.Definition = {
     0,
     13,
     ""
+  },
+  vItem = {
+    8,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
   }
 }
 Cmd_Lamia_GetList_CS = sdp.SdpStruct("Cmd_Lamia_GetList_CS")
@@ -367,6 +382,7 @@ Cmd_Lamia_MiniGame_Finish_SC.Definition = {
   "iGameId",
   "iGameStat",
   "vAward",
+  "iScore",
   iActId = {
     0,
     0,
@@ -396,6 +412,12 @@ Cmd_Lamia_MiniGame_Finish_SC.Definition = {
     0,
     sdp.SdpVector(CmdIDNum),
     nil
+  },
+  iScore = {
+    5,
+    0,
+    8,
+    0
   }
 }
 Cmd_Lamia_MiniGame_GetAllAward_CS = sdp.SdpStruct("Cmd_Lamia_MiniGame_GetAllAward_CS")

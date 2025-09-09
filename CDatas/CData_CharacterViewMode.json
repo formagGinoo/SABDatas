@@ -4,17 +4,11 @@
     "6035000": {
       "m_bError": null,
       "m_FashionId": "6035000",
-      "m_MoveLock": "1",
-      "m_RotationLock": "1",
-      "m_ZoomLock": "1"
-    },
-    "6040000": {
-      "m_bError": null,
-      "m_FashionId": "6040000",
-      "m_MoveLock": "1",
-      "m_RotationLock": "1",
-      "m_ZoomLock": "1"
+      "m_MoveLock": null,
+      "m_RotationLock": null,
+      "m_ZoomLock": null,
+      "m_ZoomRange": "[200,50]"
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_1_items"
 }

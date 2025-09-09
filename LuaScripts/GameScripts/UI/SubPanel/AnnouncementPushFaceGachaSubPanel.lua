@@ -18,7 +18,7 @@ function AnnouncementPushFaceGachaSubPanel:UpdateLeftPanel()
       self.m_txt_heronameLeft_Text.text = heroCfg.m_mName
       local careerCfg = CareerCfgIns:GetValue_ByCareerID(heroCfg.m_Career)
       if not careerCfg:GetError() then
-        UILuaHelper.SetAtlasSprite(self.m_img_career_Image, careerCfg.m_CareerIcon)
+        UILuaHelper.SetAtlasSprite(self.m_img_careerLeft_Image, careerCfg.m_CareerIcon)
       end
     end
   end
@@ -35,7 +35,7 @@ function AnnouncementPushFaceGachaSubPanel:UpdateRightPanel()
       self.m_txt_heronameRight_Text.text = heroCfg.m_mName
       local careerCfg = CareerCfgIns:GetValue_ByCareerID(heroCfg.m_Career)
       if not careerCfg:GetError() then
-        UILuaHelper.SetAtlasSprite(self.m_img_career_Image, careerCfg.m_CareerIcon)
+        UILuaHelper.SetAtlasSprite(self.m_img_careerRight_Image, careerCfg.m_CareerIcon)
       end
     end
   end

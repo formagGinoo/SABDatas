@@ -8,6 +8,7 @@ function FashionStoreSubPanel:OnInit()
   self.m_selTabIndex = nil
   self.m_cutDownTimeTab = {}
   self.m_cutDownToBeReleasedTimeTab = {}
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
 end
 
 function FashionStoreSubPanel:OnInactivePanel()
@@ -388,25 +389,11 @@ function FashionStoreSubPanel:SetToBeReleasedCommodityRefresh()
 end
 
 function FashionStoreSubPanel:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
-    return
-  end
-  local data = self.m_shopData[self.m_selTabIndex]
-  if not (data and data.goodsCfg) or not data.goodsCfg.sProductId then
-    self.m_packgift_point:SetActive(false)
-    return
-  end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(data.goodsCfg.sProductId)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point:SetActive(true)
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
+  if table.getn(self.m_shopData) > 0 and self.m_shopData[self.m_selTabIndex] then
+    local data = self.m_shopData[self.m_selTabIndex]
+    self.m_paidGiftPoint:SetFreshInfo({
+      productId = data.goodsCfg.sProductId
+    })
   end
 end
 

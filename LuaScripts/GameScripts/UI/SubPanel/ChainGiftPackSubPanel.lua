@@ -3,6 +3,7 @@ local ChainGiftPackSubPanel = class("ChainGiftPackSubPanel", UISubPanelBase)
 local newGachaWindowId = 25002
 
 function ChainGiftPackSubPanel:OnInit()
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
 end
 
 function ChainGiftPackSubPanel:OnFreshData()
@@ -82,26 +83,12 @@ function ChainGiftPackSubPanel:OnBtnbuyClicked()
 end
 
 function ChainGiftPackSubPanel:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
+  if not self.m_curShowGoodInfo then
     return
   end
-  local productId = self.m_curShowGoodInfo.sProductId
-  if not productId then
-    self.m_packgift_point:SetActive(false)
-    return
-  end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point:SetActive(true)
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({
+    productId = self.m_curShowGoodInfo.sProductId
+  })
 end
 
 function ChainGiftPackSubPanel:OnIconboxClicked()

@@ -76,7 +76,6 @@ function Form_PvpReplaceDetails:FreshFormData()
       local heroID = v.iHeroId
       local serverHeroData = serverHeroDataDic[heroID]
       if serverHeroData then
-        serverHeroData.iOriLevel = nil
         tempFormHeroDataList[#tempFormHeroDataList + 1] = serverHeroData
       end
     end

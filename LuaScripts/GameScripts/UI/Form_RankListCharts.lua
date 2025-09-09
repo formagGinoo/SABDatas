@@ -21,6 +21,7 @@ function Form_RankListCharts:AfterInit()
   if self.m_DoubleTrigger then
     self.m_DoubleTrigger.Clicked = handler(self, self.OnBtncloseTipsClicked)
   end
+  self.playerHeadCom = self:createPlayerHead(self.m_circle_head)
   self.FreshRecord = {}
   self.mRankListCache = {}
 end
@@ -115,7 +116,7 @@ function Form_RankListCharts:RefreshRankList(data)
 end
 
 function Form_RankListCharts:RefreshMyRankInfo(myRankInfo)
-  local playerHeadCom = self:createPlayerHead(self.m_circle_head)
+  local playerHeadCom = self.playerHeadCom
   local valueType = GlobalRankManager.RankType2RankValueType[self.m_CurSelectRankID]
   if valueType == GlobalRankManager.RankValueType.MainLevel or valueType == GlobalRankManager.RankValueType.Tower then
     self.m_icon_achievement_mine:SetActive(true)

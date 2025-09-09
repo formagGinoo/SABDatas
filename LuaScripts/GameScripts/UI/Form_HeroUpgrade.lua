@@ -50,6 +50,8 @@ function Form_HeroUpgrade:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
   self:CheckRecycleSpine(true)
+  self.m_startDragPos = nil
+  self.m_startDragUIPosX = nil
 end
 
 function Form_HeroUpgrade:OnDestroy()
@@ -70,6 +72,8 @@ function Form_HeroUpgrade:OnDestroy()
   if self.m_closeUpgradeBackFun then
     self.m_closeUpgradeBackFun = nil
   end
+  self.m_startDragPos = nil
+  self.m_startDragUIPosX = nil
 end
 
 function Form_HeroUpgrade:AddEventListeners()
@@ -333,9 +337,7 @@ function Form_HeroUpgrade:OnImgEndBDrag(pointerEventData)
   local absDeltaNum = math.abs(deltaNum)
   if absDeltaNum < self.m_uiVariables.DragLimitNum then
     self:CheckShowDragBackTween()
-    return
-  end
-  if 0 < deltaNum then
+  elseif 0 < deltaNum then
     self:CheckShowLastHero()
   else
     self:CheckShowNextHero()

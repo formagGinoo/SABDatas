@@ -100,6 +100,7 @@ GuildManager.AllianceSettingsType = {
   Recruit = 6,
   Bulletin = 7
 }
+GuildManager.AllianceMessageType = {Normal = 1, All = 2}
 
 function GuildManager:OnCreate()
   self.m_ownerGuildDetail = nil
@@ -122,6 +123,10 @@ function GuildManager:OnCreate()
   self.m_guildBossRankList = {}
   self.m_myBossRank = 0
   self.m_battleResultData = {}
+  self.m_messageNoticeList = {}
+  self.m_iTopNoticeID = 0
+  self.m_iLastSendTime = 0
+  self.m_iSendAllTimesToday = 0
 end
 
 function GuildManager:OnInitNetwork()
@@ -136,17 +141,28 @@ function GuildManager:OnInitNetwork()
   RPCS():Listen_Push_AllianceBattle_NewRound(handler(self, self.OnPushAllianceBattleNewRound), "GuildManager")
   RPCS():Listen_Push_Alliance_Battle_Boss(handler(self, self.OnPushAllianceBattleBoss), "GuildManager")
   RPCS():Listen_Push_Alliance_AddApplyMember(handler(self, self.OnPushAllianceAddApplyMember), "GuildManager")
+  RPCS():Listen_Push_Alliance_MessageNotice_New(handler(self, self.OnPushAllianceMessageNoticeNew), "GuildManager")
+  RPCS():Listen_Push_Alliance_MessageNotice_Change(handler(self, self.OnPushAllianceMessageNoticeChange), "GuildManager")
+  RPCS():Listen_Push_Alliance_MessageNotice_PinChange(handler(self, self.OnPushAllianceMessageNoticePinChange), "GuildManager")
   self:addEventListener("eGameEvent_Alliance_GetRecommendList", handler(self, self.OnGetGuildListData))
 end
 
 function GuildManager:OnInitMustRequestInFetchMore()
   self:ReqAllianceGetInit()
+  self.m_stMyRoleId = {
+    iZoneId = UserDataManager:GetZoneID(),
+    iUid = RoleManager:GetUID()
+  }
 end
 
 function GuildManager:OnAfterInitConfig()
   self.m_guildBattleTimesCfgNum = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildBattleTimes"))
   GuildManager.FightType_AllianceBattle = MTTDProto.FightType_AllianceBattle
   GuildManager.FightAllianceBattleSubType_Battle = MTTDProto.FightAllianceBattleSubType_Battle
+  self.m_guildMessagePermissions = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessagePermissions") or 1)
+  self.m_guildMessageStart = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageStart") or 0) or 0
+  self.m_guildMessageCD = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageCD") or 0) or 0
+  self.m_guildMessageNoticeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageNotice") or 0) or 0
 end
 
 function GuildManager:OnDailyReset()
@@ -194,6 +210,7 @@ function GuildManager:OnPushAllianceMemberJoin(data)
     })
     self.m_AllianceInviteList = {}
     self.m_roleApplyIdList = {}
+    self:ReqAllianceMessageNoticeGetListCS(data.iAllianceId)
   else
     local guildData = self:GetOwnerGuildDetail()
     if guildData then
@@ -220,10 +237,7 @@ end
 
 function GuildManager:OnPushAllianceMemberLeave(data)
   if data.stRoleId.iUid == RoleManager:GetUID() then
-    RoleManager:SetRoleAllianceInfo({})
-    self.m_ownerGuildDetail = nil
-    self.m_AllianceInviteList = {}
-    self.m_roleApplyIdList = {}
+    self:ClearGuildInfo()
     self:broadcastEvent("eGameEvent_Alliance_Leave")
     return
   end
@@ -260,8 +274,7 @@ function GuildManager:OnPushAllianceTransfer(data)
 end
 
 function GuildManager:OnPushAllianceDestroy(data)
-  self.m_ownerGuildDetail = nil
-  RoleManager:SetRoleAllianceInfo({})
+  self:ClearGuildInfo()
   self:broadcastEvent("eGameEvent_Alliance_Leave")
 end
 
@@ -304,6 +317,9 @@ function GuildManager:OnReqAlliance_GetInitSC(stData, msg)
   self.m_dailyChallengeTimes = stData.iBattleTimes
   if stData.bHaveInvite then
     self:ReqAllianceGetInviteListCS()
+  end
+  if stData.iAllianceId and stData.iAllianceId ~= 0 and stData.iAllianceId ~= "0" then
+    self:ReqAllianceMessageNoticeGetListCS(stData.iAllianceId)
   end
 end
 
@@ -416,8 +432,7 @@ function GuildManager:ReqLeaveAlliance()
 end
 
 function GuildManager:OnReqLeaveAllianceSC(stData, msg)
-  RoleManager:SetRoleAllianceInfo({})
-  self.m_ownerGuildDetail = nil
+  self:ClearGuildInfo()
   self:broadcastEvent("eGameEvent_Alliance_Leave")
 end
 
@@ -531,8 +546,7 @@ function GuildManager:ReqAllianceDestroy()
 end
 
 function GuildManager:OnReqAllianceDestroySC(stData, msg)
-  self.m_ownerGuildDetail = nil
-  RoleManager:SetRoleAllianceInfo({})
+  self:ClearGuildInfo()
   self:broadcastEvent("eGameEvent_Alliance_Destroy")
 end
 
@@ -1006,6 +1020,16 @@ function GuildManager:GetGuildMemberDataByZoneAndUID(zoneID, uid)
   end
 end
 
+function GuildManager:IsMemberBanByMemberData(memberData)
+  if not memberData then
+    return false
+  end
+  if memberData.iBanShowType and memberData.iBanShowType > 0 and memberData.iBanEndTime and 0 < memberData.iBanEndTime and memberData.iBanEndTime > TimeUtil:GetServerTimeS() then
+    return true
+  end
+  return false
+end
+
 function GuildManager:IsMemberBanByUID(zoneID, uid)
   if not uid then
     return false
@@ -1017,10 +1041,7 @@ function GuildManager:IsMemberBanByUID(zoneID, uid)
   if not memberData then
     return false
   end
-  if memberData.iBanShowType and memberData.iBanShowType > 0 and memberData.iBanEndTime and 0 < memberData.iBanEndTime and memberData.iBanEndTime > TimeUtil:GetServerTimeS() then
-    return true
-  end
-  return false
+  return self:IsMemberBanByMemberData(memberData)
 end
 
 function GuildManager:GetRecommendGuildTimer()
@@ -1220,6 +1241,10 @@ function GuildManager:CheckGuildEntryHaveRedPoint()
     return flag
   end
   flag = self:CheckGuildApplyListHaveRedPoint()
+  if 0 < flag then
+    return flag
+  end
+  flag = self:CheckGuildMessageRedPoint()
   return flag
 end
 
@@ -1339,6 +1364,12 @@ function GuildManager:GetPersonalHistory()
         end
         table.insert(personalHistoryTab[n.stRoleId.iUid], n)
       end
+    end
+  end
+  for uid, v in pairs(personalHistoryTab) do
+    local memberData = self:GetOwnerGuildMemberDataByUID(uid)
+    if memberData and self:IsMemberBanByMemberData(memberData) == true then
+      personalHistoryTab[uid] = nil
     end
   end
   for i, v in pairs(personalHistoryTab) do
@@ -1778,6 +1809,380 @@ function GuildManager:GetDownloadResourceExtra()
     eType = DownloadManager.ResourcePackageType.UI
   }
   return vPackage, nil
+end
+
+function GuildManager:ReqAllianceMessageNoticeGetListCS(iAllianceId)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_GetList_CS()
+  reqMsg.iAllianceId = iAllianceId
+  RPCS():Alliance_MessageNotice_GetList(reqMsg, handler(self, self.OnReqAllianceMessageNoticeGetListSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeGetListSC(stData, msg)
+  self.m_messageNoticeList = stData.vMessageNotice
+  self.m_iTopNoticeID = stData.iTopNoticeID
+  self.m_iLastSendTime = stData.iLastSendTime
+  self.m_iSendAllTimesToday = stData.iSendAllTimesToday
+end
+
+function GuildManager:ReqAllianceMessageNoticeLeaveCS(iAllianceId, sContent, iNoticeType, bPin)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_Leave_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.sContent = sContent
+  reqMsg.iNoticeType = iNoticeType
+  reqMsg.bPin = bPin
+  RPCS():Alliance_MessageNotice_Leave(reqMsg, handler(self, self.OnReqAllianceMessageNoticeLeaveSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeLeaveSC(stData, msg)
+  self.m_iLastSendTime = stData.iLastSendTime
+  self.m_iSendAllTimesToday = stData.iSendAllTimesToday
+end
+
+function GuildManager:ReqAllianceMessageNoticeEditCS(iAllianceId, sContent, iNoticeID)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_Edit_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.iNoticeID = iNoticeID
+  reqMsg.sContent = sContent
+  RPCS():Alliance_MessageNotice_Edit(reqMsg, handler(self, self.OnReqAllianceMessageNoticeEditSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeEditSC(stData, msg)
+end
+
+function GuildManager:ReqAllianceMessageNoticeDeleteCS(iAllianceId, iNoticeID)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_Delete_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.iNoticeID = iNoticeID
+  RPCS():Alliance_MessageNotice_Delete(reqMsg, handler(self, self.OnReqAllianceMessageNoticeDeleteSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeDeleteSC(stData, msg)
+end
+
+function GuildManager:ReqAllianceMessageNoticeConfirmCS(iAllianceId, iNoticeID)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_Confirm_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.iNoticeID = iNoticeID
+  RPCS():Alliance_MessageNotice_Confirm(reqMsg, handler(self, self.OnReqAllianceMessageNoticeConfirmSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeConfirmSC(stData, msg)
+end
+
+function GuildManager:ReqAllianceMessageNoticePinCS(iAllianceId, iNoticeID)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_Pin_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.iNoticeID = iNoticeID
+  RPCS():Alliance_MessageNotice_Pin(reqMsg, handler(self, self.OnReqAllianceMessageNoticePinSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticePinSC(stData, msg)
+end
+
+function GuildManager:ReqAllianceMessageNoticeUnPinCS(iAllianceId, iNoticeID)
+  local reqMsg = MTTDProto.Cmd_Alliance_MessageNotice_UnPin_CS()
+  reqMsg.iAllianceId = iAllianceId
+  reqMsg.iNoticeID = iNoticeID
+  RPCS():Alliance_MessageNotice_UnPin(reqMsg, handler(self, self.OnReqAllianceMessageNoticeUnPinSC))
+end
+
+function GuildManager:OnReqAllianceMessageNoticeUnPinSC(stData, msg)
+end
+
+function GuildManager:OnPushAllianceMessageNoticeNew(stData, msg)
+  if not self.m_messageNoticeList then
+    self.m_messageNoticeList = {}
+  end
+  self.m_messageNoticeList[#self.m_messageNoticeList + 1] = stData.stMessageNotice
+  if stData.iTopNoticeID and stData.iTopNoticeID ~= 0 then
+    self.m_iTopNoticeID = stData.iTopNoticeID
+  end
+  if stData.iDeletedNoticeID and stData.iDeletedNoticeID ~= 0 then
+    for i = #self.m_messageNoticeList, 1, -1 do
+      if self.m_messageNoticeList[i].iNoticeID == stData.iDeletedNoticeID then
+        table.remove(self.m_messageNoticeList, i)
+        break
+      end
+    end
+  end
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticeLeave")
+end
+
+function GuildManager:OnPushAllianceMessageNoticeChange(stData, msg)
+  local stMessageNotice = stData.stMessageNotice
+  if table.getn(self.m_messageNoticeList) > 0 then
+    for i, v in ipairs(self.m_messageNoticeList) do
+      if v.iNoticeID == stMessageNotice.iNoticeID then
+        self.m_messageNoticeList[i] = stData.stMessageNotice
+        break
+      end
+    end
+  else
+    self.m_messageNoticeList = {}
+    self.m_messageNoticeList[#self.m_messageNoticeList + 1] = stData.stMessageNotice
+  end
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticeChange")
+end
+
+function GuildManager:OnPushAllianceMessageNoticePinChange(stData, msg)
+  self.m_iTopNoticeID = stData.iTopNoticeID
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticePin")
+end
+
+function GuildManager:GetOwnPost()
+  local memberData = self:GetOwnerGuildMemberDataByUID(RoleManager:GetUID())
+  if memberData then
+    return memberData.iPost
+  end
+end
+
+function GuildManager:CheckOwnHaveMessagePermission()
+  local ownPost = self:GetOwnPost()
+  if ownPost == GuildManager.AlliancePost.Member then
+    return self.m_guildMessagePermissions == 1
+  else
+    return true
+  end
+end
+
+function GuildManager:CheckOwnHaveDelMessagePermission(message)
+  if not message or not message.stSender then
+    return
+  end
+  local isOwn = self:CheckGuildMemberDataByPlayerIDType(message.stSender, self.m_stMyRoleId)
+  if isOwn then
+    return true
+  end
+  local ownPost = self:GetOwnPost()
+  if ownPost then
+    local member = self:GetGuildMemberDataByPlayerIDType(message.stSender)
+    local iPost = member and member.iPost or GuildManager.AlliancePost.Member
+    if ownPost < iPost then
+      return true
+    end
+  end
+end
+
+function GuildManager:CheckOwnHavePinMessagePermission()
+  local ownPost = self:GetOwnPost()
+  if ownPost and (ownPost == GuildManager.AlliancePost.Master or ownPost == GuildManager.AlliancePost.Vice) then
+    return true
+  end
+end
+
+function GuildManager:CheckOwnHaveBroadcastMessagePermission()
+  local ownPost = self:GetOwnPost()
+  if ownPost and (ownPost == GuildManager.AlliancePost.Master or ownPost == GuildManager.AlliancePost.Vice) then
+    return true
+  end
+end
+
+function GuildManager:CheckOwnHaveEditMessagePermission(message)
+  local delFlag = self:CheckOwnHaveDelMessagePermission(message)
+  local pinFlag = self:CheckOwnHavePinMessagePermission()
+  if delFlag or pinFlag then
+    return true
+  end
+end
+
+function GuildManager:GetAllianceMessageById(id)
+  if table.getn(self.m_messageNoticeList) > 0 then
+    for i, v in ipairs(self.m_messageNoticeList) do
+      if v.iNoticeID == id then
+        return v
+      end
+    end
+  end
+end
+
+function GuildManager:GetAllAllianceMessages()
+  if not self.m_messageNoticeList then
+    self.m_messageNoticeList = {}
+  end
+  table.sort(self.m_messageNoticeList, function(a, b)
+    local top1 = a.iNoticeID == self.m_iTopNoticeID and 1 or 0
+    local top2 = b.iNoticeID == self.m_iTopNoticeID and 1 or 0
+    if top1 == top2 then
+      return a.iSendTime > b.iSendTime
+    else
+      return top1 > top2
+    end
+  end)
+  return self.m_messageNoticeList
+end
+
+function GuildManager:GetTopMessage()
+  if self.m_iTopNoticeID then
+    return self:GetAllianceMessageById(self.m_iTopNoticeID)
+  end
+end
+
+function GuildManager:GetTopMessageId()
+  return self.m_iTopNoticeID
+end
+
+function GuildManager:GetGuildMemberDataByPlayerIDType(playerIDType)
+  if not playerIDType then
+    return
+  end
+  local guildData = self:GetOwnerGuildDetail()
+  if guildData then
+    for i, v in ipairs(guildData.vMember) do
+      if v.stRoleId.iUid == playerIDType.iUid and v.stRoleId.iZoneId == playerIDType.iZoneId then
+        return v
+      end
+    end
+  end
+end
+
+function GuildManager:CheckGuildMemberDataByPlayerIDType(playerIDType1, playerIDType2)
+  if not playerIDType1 or not playerIDType2 then
+    return
+  end
+  if playerIDType1.iZoneId == playerIDType2.iZoneId and playerIDType1.iUid == playerIDType2.iUid then
+    return true
+  end
+end
+
+function GuildManager:ClearGuildInfo()
+  RoleManager:SetRoleAllianceInfo({})
+  self.m_messageNoticeList = {}
+  self.m_iTopNoticeID = 0
+  self.m_ownerGuildDetail = nil
+  self.m_AllianceInviteList = {}
+  self.m_roleApplyIdList = {}
+end
+
+function GuildManager:CheckMessageIsDone(messageData, playerIDType)
+  if not messageData or not playerIDType then
+    return
+  end
+  if messageData.iDeleteTime ~= 0 then
+    return true
+  end
+  local isOwn = self:CheckGuildMemberDataByPlayerIDType(messageData.stSender, playerIDType)
+  if isOwn then
+    return true
+  elseif messageData.vReadInfo then
+    for _, v in pairs(messageData.vReadInfo) do
+      if self:CheckGuildMemberDataByPlayerIDType(v.stRole, playerIDType) then
+        return true
+      end
+    end
+  end
+  return false
+end
+
+function GuildManager:GetMessageConfirmPlayer(messageData)
+  local confirmList = {}
+  local unconfirmedList = {}
+  if not messageData then
+    return confirmList, unconfirmedList
+  end
+  local guildData = self:GetOwnerGuildDetail()
+  if guildData and guildData.vMember then
+    for i, v in ipairs(guildData.vMember) do
+      local isDone = self:CheckMessageIsDone(messageData, v.stRoleId)
+      if isDone then
+        confirmList[#confirmList + 1] = v
+      else
+        unconfirmedList[#unconfirmedList + 1] = v
+      end
+    end
+  end
+  return confirmList, unconfirmedList
+end
+
+function GuildManager:CheckMessageNeedRemindAll(message)
+  if not message then
+    return
+  end
+  local time = TimeUtil:GetServerTimeS() - message.iSendTime
+  local oneDay = TimeUtil:GetOneDayOfSecond()
+  if message.iNoticeType == GuildManager.AllianceMessageType.All and time < oneDay then
+    return true
+  end
+end
+
+function GuildManager:GetMyAllianceJoinTime()
+  local guildData = self:GetOwnerGuildDetail()
+  if guildData then
+    for i, v in ipairs(guildData.vMember) do
+      if v.stRoleId.iUid == self.m_stMyRoleId.iUid and v.stRoleId.iZoneId == self.m_stMyRoleId.iZoneId then
+        return v.iJoinTime
+      end
+    end
+  end
+  return 0
+end
+
+function GuildManager:GetGuildMessageCd()
+  return self.m_guildMessageCD, self.m_guildMessageStart
+end
+
+function GuildManager:GetLastSendMessageTime()
+  return self.m_iLastSendTime or 0
+end
+
+function GuildManager:GetSendAllMessageTimesToday()
+  return self.m_iSendAllTimesToday or 0
+end
+
+function GuildManager:GetSendAllMessageDailyNum()
+  return self.m_guildMessageNoticeNum or 0
+end
+
+function GuildManager:CheckNeedRemindMessageUpDown(messagesIndexes, activeCellIndexes)
+  local upList = {}
+  local downList = {}
+  if table.getn(messagesIndexes) == 0 or table.getn(activeCellIndexes) == 0 then
+    return upList, downList
+  end
+  local upIndex = 999
+  local downIndex = 0
+  for m, n in ipairs(activeCellIndexes) do
+    if n < upIndex then
+      upIndex = n
+    end
+    if n > downIndex then
+      downIndex = n
+    end
+  end
+  for i, v in ipairs(messagesIndexes) do
+    local isHave = table.indexof(activeCellIndexes, v)
+    if not isHave then
+      if v < upIndex then
+        upList[#upList + 1] = v
+      end
+      if v > downIndex then
+        downList[#downList + 1] = v
+      end
+    end
+  end
+  return upList, downList
+end
+
+function GuildManager:GetAllNeedRemindMessagesIndex(data)
+  local indexList = {}
+  if not data then
+    return indexList
+  end
+  for i, v in ipairs(data) do
+    local isOwn = self:CheckGuildMemberDataByPlayerIDType(v.stSender, self.m_stMyRoleId)
+    if not isOwn and self:CheckMessageNeedRemindAll(v) and not self:CheckMessageIsDone(v, self.m_stMyRoleId) then
+      indexList[#indexList + 1] = i
+    end
+  end
+  return indexList
+end
+
+function GuildManager:GetAllNeedRemindMessages()
+  local indexList = self:GetAllNeedRemindMessagesIndex(self.m_messageNoticeList)
+  return indexList
+end
+
+function GuildManager:CheckGuildMessageRedPoint()
+  return table.getn(self:GetAllNeedRemindMessages())
 end
 
 return GuildManager

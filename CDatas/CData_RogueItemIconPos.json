@@ -1024,6 +1024,39 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "10300580": {
+      "m_bError": null,
+      "m_ItemID": "10300580",
+      "m_Desc": "\"尘封的「反抗之刃」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300590": {
+      "m_bError": null,
+      "m_ItemID": "10300590",
+      "m_Desc": "\"尘封的「遗忘骸骨」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300600": {
+      "m_bError": null,
+      "m_ItemID": "10300600",
+      "m_Desc": "\"尘封的「求知的坚定」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "10300610": {
       "m_bError": null,
       "m_ItemID": "10300610",
@@ -1090,6 +1123,17 @@
       "m_SmallBagItemPos": "[0,0,170]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "10300690": {
+      "m_bError": null,
+      "m_ItemID": "10300690",
+      "m_Desc": "\"尘封的「骷髅骑枪」\"",
+      "m_BagItemPos": "[0,0,40]",
+      "m_TipsPos": "[0,0,25]",
+      "m_CombinationPos": "[0,0,30]",
+      "m_HandBookPos": "[0,60,40]",
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "10300700": {
       "m_bError": null,
       "m_ItemID": "10300700",
@@ -1099,6 +1143,17 @@
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
       "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300710": {
+      "m_bError": null,
+      "m_ItemID": "10300710",
+      "m_Desc": "\"尘封的「染血飞刀」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20100010": {
@@ -1596,6 +1651,39 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100580": {
+      "m_bError": null,
+      "m_ItemID": "20100580",
+      "m_Desc": "\"反抗之刃\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100590": {
+      "m_bError": null,
+      "m_ItemID": "20100590",
+      "m_Desc": "\"遗忘骸骨\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100600": {
+      "m_bError": null,
+      "m_ItemID": "20100600",
+      "m_Desc": "\"求知的坚定\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100610": {
       "m_bError": null,
       "m_ItemID": "20100610",
@@ -1662,6 +1750,17 @@
       "m_SmallBagItemPos": "[0,0,170]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100690": {
+      "m_bError": null,
+      "m_ItemID": "20100690",
+      "m_Desc": "\"骷髅骑枪\"",
+      "m_BagItemPos": "[0,0,40]",
+      "m_TipsPos": "[0,0,25]",
+      "m_CombinationPos": "[0,0,30]",
+      "m_HandBookPos": "[0,60,40]",
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100700": {
       "m_bError": null,
       "m_ItemID": "20100700",
@@ -1671,6 +1770,17 @@
       "m_CombinationPos": "[0,0,55]",
       "m_HandBookPos": "[0,60,55]",
       "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100710": {
+      "m_bError": null,
+      "m_ItemID": "20100710",
+      "m_Desc": "\"染血飞刀\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
     "20200001": {
@@ -1806,5 +1916,5 @@
       "m_HeroHeadPos": "[0,0,0]"
     }
   },
-  "status": "processed_164_items"
+  "status": "processed_174_items"
 }

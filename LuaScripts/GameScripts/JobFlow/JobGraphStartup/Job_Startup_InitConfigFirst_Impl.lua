@@ -2,7 +2,6 @@ local Job_Startup_InitConfigFirst_Impl = {}
 
 function Job_Startup_InitConfigFirst_Impl.OnInitConfigFirst(jobNode)
   CS.AssetBundleHolder.Instance:HoldCommonAssetBundle()
-  CS.System.Threading.Thread.CurrentThread.CurrentCulture = CS.System.Globalization.CultureInfo.InvariantCulture
   ConfigManager:InitFirstMustCfg(function(fUnitProgress)
     jobNode.UnitProgress = fUnitProgress
   end, function()

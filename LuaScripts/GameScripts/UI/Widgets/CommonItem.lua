@@ -104,11 +104,6 @@ function CommonItem:ctor(goRoot)
   end
   self.m_btnGift = self.m_goRoot.transform:Find("c_btn_gift").gameObject
   self.m_btnLikeGift = self.m_goRoot.transform:Find("c_btn_like_gift").gameObject
-  self.m_img_gray = self.m_goRoot.transform:Find("c_img_gray").gameObject
-  if self.m_img_gray then
-    self.m_img_gray_Image = self.m_img_gray:GetComponent("Image")
-    self.m_grayImgMaterial = self.m_img_gray_Image.material
-  end
   self.m_clickShadow = self.m_goRoot.transform:Find("ClickShadow")
   if not utils.isNull(self.m_clickShadow) then
     self.m_clickShadowImg = self.m_clickShadow:GetComponent("Image")
@@ -210,9 +205,9 @@ function CommonItem:SetItemInfo(itemData)
       if customData.iEquipUid then
         local flag = EquipManager:CheckIsShowCampAttAddExt(customData.iEquipUid)
         if flag then
-          self.m_equipCampImg.material = nil
+          UILuaHelper.SetColor(self.m_equipCampImg, 225, 203, 154, 1)
         else
-          self.m_equipCampImg.material = self.m_grayImgMaterial
+          UILuaHelper.SetColor(self.m_equipCampImg, 132, 132, 132, 1)
         end
         for i = 1, 5 do
           if self.m_equipCampFxList[i] then

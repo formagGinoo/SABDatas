@@ -254,7 +254,7 @@
     "2031": {
       "m_bError": null,
       "m_Id": "2031",
-      "m_mMessage": "\"Copying resources...\""
+      "m_mMessage": "\"Decompressing resources (no data usage):\""
     },
     "2032": {
       "m_bError": null,
@@ -265,6 +265,16 @@
       "m_bError": null,
       "m_Id": "2033",
       "m_mMessage": "\"Pre-Download Reward\""
+    },
+    "2034": {
+      "m_bError": null,
+      "m_Id": "2034",
+      "m_mMessage": "\"Don't show this again.\""
+    },
+    "2035": {
+      "m_bError": null,
+      "m_Id": "2035",
+      "m_mMessage": "\"Reset Altar of Invocation according to recommended lineup.\""
     },
     "2100": {
       "m_bError": null,
@@ -314,12 +324,12 @@
     "2109": {
       "m_bError": null,
       "m_Id": "2109",
-      "m_mMessage": "\"※ Herald Rules\nThe Lost Heirs of Hecate limited Herald Event is now open. This is a limited Herald Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Lamia</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lamia</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Lost Heirs of Hecate limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Lost Heirs of Hecate limited Herald Event is now open. This is a limited Herald Event that shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Lamia</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lamia</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Lost Heirs of Hecate limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2110": {
       "m_bError": null,
       "m_Id": "2110",
-      "m_mMessage": "\"※ Herald Rules\nThe Whispers of the Deep limited Herald Event is now open. This is a limited Herald Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Dalcarlo</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Dalcarlo</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Whispers of the Deep limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Whispers of the Deep limited Herald Event is now open. This is a limited Herald Event that shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Dalcarlo</style> has a significantly increased rate\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Dalcarlo</style>\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Whispers of the Deep limited Herald Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2111": {
       "m_bError": null,
@@ -349,27 +359,37 @@
     "2125": {
       "m_bError": null,
       "m_Id": "2125",
-      "m_mMessage": "\"※ Herald Rules\nThe Midsummer Eclipse limited Embrace Event is now open. \nThis is a limited Embrace Event witch shares pity mechanics with other limited Embrace events.\nDuring the event, SSR Vassal <style=Highlight>Lorelei</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lorelei</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates).</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Lorelei</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Midsummer Eclipse limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Midsummer Eclipse limited Embrace Event is now open. \nThis is a limited Embrace Event that shares the pity counter with other limited Embrace events.\nDuring the event, SSR Vassal <style=Highlight>Lorelei</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Lorelei</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates).</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Lorelei</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Midsummer Eclipse limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2126": {
       "m_bError": null,
       "m_Id": "2126",
-      "m_mMessage": "\"※ Herald Rules\nThe Promise in the Wind limited Embrace Event is now open.\nThis is a limited Embrace Event that shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Fleeting Bella</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Fleeting Bella</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>.\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Fleeting Bella</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Promise in the Wind limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Promise in the Wind limited Embrace Event is now open.\nThis is a limited Embrace Event that shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Fleeting Bella</style> has a significantly increased rate.\n• All Vassals default at base rates, though specific rules apply for featured rates, or when pity is triggered.\n\n※ Featured Vassals\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Fleeting Bella</style>.\n• If the SSR obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>.\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Embrace Events, meaning it will not reset at the end of an event, but carry over to other limited Embrace Events.\n• Featured Vassal <style=Highlight>Fleeting Bella</style> is a timed Vassal and will temporarily not be available through other means after the event ends.\n\n※ Special Pity Rule\n• During the Promise in the Wind limited Embrace Event, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Embrace Events, meaning it will not reset at the end of the event, but carry over to other limited Embrace Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2127": {
       "m_bError": null,
       "m_Id": "2127",
-      "m_mMessage": "\"※Herald Rules\nThe Cycle of Destruction Ancestral Herald event is now open, and SSR Ancestral Vassal <style=Highlight>Timeless Aiona</style> is here!\nThis is a [Ancestral Herald Event] and shares pity mechanics with other Ancestral Herald events.\nDuring the event, SSR Vassal <style=Highlight>Timeless Aiona</style> will see significantly increased rates.\n• All Vassals default to base rates, though specific rules apply for rate UP, pity, etc.\n\n※Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 25% chance it will be the featured Vassal <style=Highlight>Timeless Aiona</style>.\n• Ancestral Herald events do not have Inspired Herald and Featured Vassal Protection Rules.\n\n※Special Pity Rules\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if no SSR Vassal is obtained within 59 Heralds, the next Herald will guarantee an SSR Vassal</style>.\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if Ancestral Vassal Timeless Aiona is not obtained within 119 Heralds, the next Herald will guarantee Timeless Aiona</style>.\n• As an Ancestral Herald events, the pity counter is shared across other Ancestral Herald events, meaning it will not reset when an Ancestral Herald event ends, but will carry over to subsequent Ancestral Herald events.\n• Ancestral Herald events are different from Limited Herald events and do not share pity counters.\n\n※Ancestral Covenant Rules\n• When reaching certain Herald counts in the Cycle of Destruction event, you can claim Ancestral Covenant milestone rewards.\n• The Ancestral Covenant milestone rewards include the special item Broken Tiara. Consuming a Broken Tiara performs a 10x Herald in the Cycle of Destruction event.\n• Ancestral Pacts and Broken Tiaras are only valid during the Cycle of Destruction event period. <style=Highlight>Progress and items will reset after this Herald event ends and cannot carry over to the next Cycle of Destruction Herald or other Herald events</style>.\n\n※Spirits\n• When obtaining duplicate Vassals, you will receive the corresponding Vassal's Spirit instead.\n• Spirits are used for Spirit Siphon, which increases a Vassal's LV. cap.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※Herald Rules\nThe Cycle of Destruction Ancestral Herald event is now open, and SSR Ancestral Vassal <style=Highlight>Timeless Aiona</style> is here!\nThis is a [Ancestral Herald Event] and shares the pity counter with other Ancestral Herald events.\nDuring the event, SSR Vassal <style=Highlight>Timeless Aiona</style> will see significantly increased rates.\n• All Vassals default to base rates, though specific rules apply for rate UP, pity, etc.\n\n※Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 25% chance it will be the featured Vassal <style=Highlight>Timeless Aiona</style>.\n• Ancestral Herald events do not have Inspired Herald and Featured Vassal Pity Rules.\n\n※Special Pity Rules\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if no SSR Vassal is obtained within 59 Heralds, the next Herald will guarantee an SSR Vassal</style>.\n• During the Cycle of Destruction Ancestral Herald event, <style=Highlight>if Ancestral Vassal Timeless Aiona is not obtained within 119 Heralds, the next Herald will guarantee Timeless Aiona</style>.\n• As an Ancestral Herald event, the pity counter is shared across other Ancestral Herald events, meaning it will not reset when an Ancestral Herald event ends, but will carry over to subsequent Ancestral Herald events.\n• Ancestral Herald events are different from Limited Herald events and do not share pity counters.\n\n※Ancestral Covenant Rules\n• When reaching certain Herald counts in the Cycle of Destruction event, you can claim Ancestral Covenant milestone rewards.\n• The Ancestral Covenant milestone rewards include the special item Broken Tiara. Consuming a Broken Tiara performs a 10x Herald in the Cycle of Destruction event.\n• Ancestral Pacts and Broken Tiaras are only valid during the Cycle of Destruction event period. <style=Highlight>Progress and items will reset after this Herald event ends and cannot carry over to the next Cycle of Destruction Herald or other Herald events</style>.\n\n※Spirits\n• When obtaining duplicate Vassals, you will receive the corresponding Vassal's Spirit instead.\n• Spirits are used for Spirit Siphon, which increases a Vassal's LV. cap.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2128": {
       "m_bError": null,
       "m_Id": "2128",
-      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [The Lost Nightingale] is now live, offering an opportunity for Featured Vassals.\nAs a Limited Herald, it shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Quinn</style> will enjoy a significantly increased drop rate\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be Featured Vassal <style=Highlight>Quinn</style>\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During The Lost Nightingale limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [The Lost Nightingale] is now live, offering an opportunity for Featured Vassals.\nAs a Limited Herald, it shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Quinn</style> will enjoy a significantly increased drop rate\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be Featured Vassal <style=Highlight>Quinn</style>\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During The Lost Nightingale limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "2129": {
       "m_bError": null,
       "m_Id": "2129",
-      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [Shadows of Tomorrow] is now live, offering an opportunity for Featured Vassals.\nAs a Limited Herald, it shares pity mechanics with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Agnes</style> will enjoy a significantly increased drop rate\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Agnes</style>\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this protection mechanic is reset\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• Protection mechanics are shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During The [Shadows of Tomorrow] Limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [Shadows of Tomorrow] is now live, offering an opportunity for Featured Vassals.\nAs a Limited Herald, it shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Agnes</style> will enjoy a significantly increased drop rate\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Agnes</style>\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, and Transcendent Noah</style>\n• The pity counter is shared across all limited Herald Events, meaning it will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During The [Shadows of Tomorrow] Limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carry over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increase a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2130": {
+      "m_bError": null,
+      "m_Id": "2130",
+      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [Interstellar Contact] is now live, offering an opportunity for Featured Vassals.\nAs a Limited Herald, it shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Stella</style> will enjoy a significantly increased drop rate.\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be Featured Vassal <style=Highlight>Stella</style>.\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style>.\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, Transcendent Noah, and Timeless Aiona</style>.\n• The pity counter is shared across all limited Herald Events, meaning they will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During the Interstellar Contact limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carries over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increases a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
+    },
+    "2131": {
+      "m_bError": null,
+      "m_Id": "2131",
+      "m_mMessage": "\"※ Herald Rules\nThe Limited Herald [Chasing Shadows] is now live, offering an opportunity for Featured Vassals. \nAs a Limited Herald, it shares the pity counter with other limited events.\nDuring the event, SSR Vassal <style=Highlight>Albrecht</style> will enjoy a significantly increased drop rate.\n• All Vassals default at base rates, though specific rules apply for Featured rates, or when pity is triggered.\n\n※ Featured Vassal Rules\n• When obtaining an SSR Vassal, there is a 50% chance it will be featured Vassal <style=Highlight>Albrecht</style>.\n• If the SSR Vassal obtained is not <style=Highlight>a Featured Vassal or a common Ancestral Vassal</style>, an Inspired Herald will be triggered, and the next SSR Vassal is guaranteed to be <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates).</style>\n• When an Inspired Herald yields an <style=Highlight>Ancestral Vassal</style>, the next SSR Vassal will still be either <style=Highlight>a Featured Vassal or a common Ancestral Vassal (default Ancestral Faction rates)</style> until <style=Highlight>the Featured Vassal is obtained</style>, at which point this pity counter is reset.\n• Common Ancestral faction Vassals include: <style=Highlight>Limine, Transcendent Hati, Incendiary Agares, Transcendent Ami, Seth, Transcendent Noah, and Timeless Aiona</style>.\n• The pity counter is shared across all limited Herald Events, meaning they will not reset at the end of an event, but carry over to other limited Herald Events.\n\n※ Special Pity Rule\n• During The [Chasing Shadows] Limited Herald, <style=Highlight>if no SSR Vassal is obtained within 59 consecutive Heralds, the next Herald will guarantee an SSR Vassal.</style>\n• The pity counter is shared across other limited Herald Events, meaning it will not reset at the end of the event, but carries over to other limited Herald Events.\n\n※ Spirits\n• If a duplicate Vassal is obtained, you will receive its Spirit instead.\n• Spirits are used for Spirit Siphon, which increases a Vassal's Max LV.\n\n※ Spirit Scraps\n• When obtaining duplicates of Vassals whose Spirit Siphon is at Max LV., or when you have enough Spirits to reach a Vassal's Spirit Siphon Max LV., you will receive Spirit Scraps instead.\n• Can be used to redeem items in Shop - Covenant Shop.\""
     },
     "3001": {
       "m_bError": null,
@@ -379,17 +399,22 @@
     "4004": {
       "m_bError": null,
       "m_Id": "4004",
-      "m_mMessage": "\"Smoke Signals\""
+      "m_mMessage": "\"A Shared Decision\""
     },
     "4005": {
       "m_bError": null,
       "m_Id": "4005",
-      "m_mMessage": "\"New Event [Against The Dying Light] Starts on <color=#81BAF5>08/21</color>\""
+      "m_mMessage": "\"New Event [Among Strangers] Starts on <color=#81BAF5>09/10</color>\""
     },
     "4006": {
       "m_bError": null,
       "m_Id": "4006",
-      "m_mMessage": "\"Sign in 6 days to activate all pieces and unlock <color=#81BAF5>Smoke Signals</color> in Main Hall - Customize.\""
+      "m_mMessage": "\"Sign in for 6 days to activate all pieces and unlock <color=#81BAF5>A Shared Decision</color> in Main Hall - Customize.\""
+    },
+    "4007": {
+      "m_bError": null,
+      "m_Id": "4007",
+      "m_mMessage": "\"No messages\""
     },
     "10001": {
       "m_bError": null,
@@ -435,6 +460,11 @@
       "m_bError": null,
       "m_Id": "10009",
       "m_mMessage": "\"Remaining Time: {0}\""
+    },
+    "10010": {
+      "m_bError": null,
+      "m_Id": "10010",
+      "m_mMessage": "\"Today's remaining Quick-Clears: <color=#B2452B>{0}</color>\""
     },
     "20001": {
       "m_bError": null,
@@ -1209,17 +1239,17 @@
     "20337": {
       "m_bError": null,
       "m_Id": "20337",
-      "m_mMessage": "\"Bottom 500 Rewards\""
+      "m_mMessage": "\"Beyond Rank 500 Rewards\""
     },
     "20338": {
       "m_bError": null,
       "m_Id": "20338",
-      "m_mMessage": "\"Rank Rules: 1-3000\""
+      "m_mMessage": "\"Top 3000 Point Rules\""
     },
     "20339": {
       "m_bError": null,
       "m_Id": "20339",
-      "m_mMessage": "\"Bottom 3000 Rules\""
+      "m_mMessage": "\"Beyond Rank 3000 Point Rules\""
     },
     "20340": {
       "m_bError": null,
@@ -1360,6 +1390,86 @@
       "m_bError": null,
       "m_Id": "20367",
       "m_mMessage": "\"Unidentified Player\""
+    },
+    "20368": {
+      "m_bError": null,
+      "m_Id": "20368",
+      "m_mMessage": "\"Opens in {0}.\""
+    },
+    "20369": {
+      "m_bError": null,
+      "m_Id": "20369",
+      "m_mMessage": "\"Ended\""
+    },
+    "20370": {
+      "m_bError": null,
+      "m_Id": "20370",
+      "m_mMessage": "\"Grasslands\""
+    },
+    "20371": {
+      "m_bError": null,
+      "m_Id": "20371",
+      "m_mMessage": "\"Ranch\""
+    },
+    "20372": {
+      "m_bError": null,
+      "m_Id": "20372",
+      "m_mMessage": "\"Wilderness\""
+    },
+    "20373": {
+      "m_bError": null,
+      "m_Id": "20373",
+      "m_mMessage": "\"Desert\""
+    },
+    "20374": {
+      "m_bError": null,
+      "m_Id": "20374",
+      "m_mMessage": "\"Frozen Tundra\""
+    },
+    "20375": {
+      "m_bError": null,
+      "m_Id": "20375",
+      "m_mMessage": "\"Snow Peaks\""
+    },
+    "20376": {
+      "m_bError": null,
+      "m_Id": "20376",
+      "m_mMessage": "\"{0}s\""
+    },
+    "20377": {
+      "m_bError": null,
+      "m_Id": "20377",
+      "m_mMessage": "\"Within {0}s\""
+    },
+    "20378": {
+      "m_bError": null,
+      "m_Id": "20378",
+      "m_mMessage": "\"Defeat\""
+    },
+    "20379": {
+      "m_bError": null,
+      "m_Id": "20379",
+      "m_mMessage": "\"0 Durability\""
+    },
+    "20380": {
+      "m_bError": null,
+      "m_Id": "20380",
+      "m_mMessage": "\"Success\""
+    },
+    "20381": {
+      "m_bError": null,
+      "m_Id": "20381",
+      "m_mMessage": "\"Total Time: {0}s\""
+    },
+    "20382": {
+      "m_bError": null,
+      "m_Id": "20382",
+      "m_mMessage": "\"Calculating results...\""
+    },
+    "20383": {
+      "m_bError": null,
+      "m_Id": "20383",
+      "m_mMessage": "\"Not Attempted\""
     },
     "30001": {
       "m_bError": null,
@@ -1889,17 +1999,42 @@
     "50128": {
       "m_bError": null,
       "m_Id": "50128",
-      "m_mMessage": "\"Start Aimed Shot\""
+      "m_mMessage": "\"Focus Fire\""
     },
     "50129": {
       "m_bError": null,
       "m_Id": "50129",
-      "m_mMessage": "\"End Aimed Shot\""
+      "m_mMessage": "\"Start Aimed Shot\""
     },
     "50130": {
       "m_bError": null,
       "m_Id": "50130",
-      "m_mMessage": "\"\""
+      "m_mMessage": "\"End Aimed Shot\""
+    },
+    "50131": {
+      "m_bError": null,
+      "m_Id": "50131",
+      "m_mMessage": "\"Deal enough DMG to stop Theophane from casting \"Cursed Left - Hellfire.\"\""
+    },
+    "50132": {
+      "m_bError": null,
+      "m_Id": "50132",
+      "m_mMessage": "\"Break Theophane's shields to avoid taking extra DMG from \"Feedback Barrier.\"\""
+    },
+    "50133": {
+      "m_bError": null,
+      "m_Id": "50133",
+      "m_mMessage": "\"Eliminate the Worker Bees quickly, or the Formless will absorb their energy.\""
+    },
+    "50134": {
+      "m_bError": null,
+      "m_Id": "50134",
+      "m_mMessage": "\"Focus fire to destroy the Energy Core and interrupt its Ultimate.\""
+    },
+    "50135": {
+      "m_bError": null,
+      "m_Id": "50135",
+      "m_mMessage": "\"Warning! The Formless will begin absorbing in 10 seconds!\""
     },
     "100001": {
       "m_bError": null,
@@ -2391,6 +2526,51 @@
       "m_Id": "100105",
       "m_mMessage": "\"No Vassals available for Transfusion.\""
     },
+    "100106": {
+      "m_bError": null,
+      "m_Id": "100106",
+      "m_mMessage": "\"Message Deleted\""
+    },
+    "100107": {
+      "m_bError": null,
+      "m_Id": "100107",
+      "m_mMessage": "\"Edited\""
+    },
+    "100108": {
+      "m_bError": null,
+      "m_Id": "100108",
+      "m_mMessage": "\"Confirmed: {0}\""
+    },
+    "100109": {
+      "m_bError": null,
+      "m_Id": "100109",
+      "m_mMessage": "\"Unconfirmed: {0}\""
+    },
+    "100110": {
+      "m_bError": null,
+      "m_Id": "100110",
+      "m_mMessage": "\"{0} deleted a message from {1}.\""
+    },
+    "100111": {
+      "m_bError": null,
+      "m_Id": "100111",
+      "m_mMessage": "\"{0} deleted a message.\""
+    },
+    "100112": {
+      "m_bError": null,
+      "m_Id": "100112",
+      "m_mMessage": "\"Cooldown ({0}s)\""
+    },
+    "100113": {
+      "m_bError": null,
+      "m_Id": "100113",
+      "m_mMessage": "\"Confirmed {0}/{1}\""
+    },
+    "100114": {
+      "m_bError": null,
+      "m_Id": "100114",
+      "m_mMessage": "\"Pending Confirmation: {0}\""
+    },
     "100201": {
       "m_bError": null,
       "m_Id": "100201",
@@ -2731,6 +2911,16 @@
       "m_Id": "100716",
       "m_mMessage": "\"Select 2 ({0}/{1})\""
     },
+    "100717": {
+      "m_bError": null,
+      "m_Id": "100717",
+      "m_mMessage": "\"Analyzing file integrity...\""
+    },
+    "100718": {
+      "m_bError": null,
+      "m_Id": "100718",
+      "m_mMessage": "\"Repairing/downloading files...\""
+    },
     "100801": {
       "m_bError": null,
       "m_Id": "100801",
@@ -2810,6 +3000,26 @@
       "m_bError": null,
       "m_Id": "100816",
       "m_mMessage": "\"Unlocks after clearing {0}.\""
+    },
+    "100817": {
+      "m_bError": null,
+      "m_Id": "100817",
+      "m_mMessage": "\"[{0}]\""
+    },
+    "100818": {
+      "m_bError": null,
+      "m_Id": "100818",
+      "m_mMessage": "\"You have selected <color=#B2452B>{0}</color> pieces of Equipment, and will receive:\""
+    },
+    "100819": {
+      "m_bError": null,
+      "m_Id": "100819",
+      "m_mMessage": "\"Select Enhanced Equipment\""
+    },
+    "100820": {
+      "m_bError": null,
+      "m_Id": "100820",
+      "m_mMessage": "\"Show Enhanced Equipment Only\""
     },
     "200001": {
       "m_bError": null,
@@ -2914,7 +3124,7 @@
     "210005": {
       "m_bError": null,
       "m_Id": "210005",
-      "m_mMessage": "\"One of the strongest warriors chosen by the Kingdom. Guards the Divine Body sealed within the forbidden grounds.To fulfill the next periodic cycle, known as the 'future,' they willingly remain trapped between present and past.\""
+      "m_mMessage": "\"One of the strongest warriors chosen by the Kingdom. Guards the Divine Body sealed within the forbidden grounds.\nTo fulfill the next periodic cycle, known as the 'future,' they willingly remain trapped between present and past.\""
     },
     "210006": {
       "m_bError": null,
@@ -3329,7 +3539,7 @@
     "250001": {
       "m_bError": null,
       "m_Id": "250001",
-      "m_mMessage": "\"Progress\""
+      "m_mMessage": "\"In progress\""
     },
     "501080": {
       "m_bError": null,
@@ -3337,5 +3547,5 @@
       "m_mMessage": "\"Defeat the wolf pack to interrupt the skill.\""
     }
   },
-  "status": "processed_667_items"
+  "status": "processed_709_items"
 }

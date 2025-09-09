@@ -42,6 +42,9 @@ function Form_HeroAbilityDetail:InitData()
       self.m_showAttrMoreCfgList[#self.m_showAttrMoreCfgList + 1] = tempCfg
     end
   end
+  table.sort(self.m_showAttrMoreCfgList, function(a, b)
+    return a.m_Num < b.m_Num
+  end)
 end
 
 function Form_HeroAbilityDetail:InitUI()
@@ -73,7 +76,12 @@ function Form_HeroAbilityDetail:FreshUI()
     end
     local showStr = BigNumFormat(serverAttrValue)
     if attrItem.propertyCfg.m_Type == HeroManager.AttrType.TenThousandPercent then
-      showStr = math.floor(serverAttrValue / 100) .. "%"
+      local percentLeftNum = serverAttrValue % 100
+      if 10 < percentLeftNum then
+        showStr = string.format("%.1f", serverAttrValue / 100) .. "%"
+      else
+        showStr = math.floor(serverAttrValue / 100) .. "%"
+      end
     end
     attrItem.attrNumText.text = showStr
   end

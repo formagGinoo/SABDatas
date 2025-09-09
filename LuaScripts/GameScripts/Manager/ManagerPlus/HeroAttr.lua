@@ -435,6 +435,17 @@ function HeroAttr:GetHeroAttrByParam(heroID, param, serverData)
             end
           end
         end
+        local equipUid = v.equipUid
+        if equipUid then
+          local _, _, attrDic = EquipManager:GetEquipOverLoadExAttr(equipUid)
+          if attrDic and next(attrDic) then
+            for paramStr, tempValue in pairs(attrDic) do
+              if breakLvAttr[paramStr] then
+                breakLvAttr[paramStr] = breakLvAttr[paramStr] + tempValue
+              end
+            end
+          end
+        end
       end
     end
   end

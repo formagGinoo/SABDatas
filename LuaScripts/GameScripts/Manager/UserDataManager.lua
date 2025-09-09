@@ -112,4 +112,39 @@ function UserDataManager:SetLoginToHallFlag(flag)
   self.m_LoginToHall = flag
 end
 
+function UserDataManager:CheckPopupSuggestQuality()
+  if ChannelManager:IsIOS() ~= true then
+    return
+  end
+  local popupSuggestQualityNum = LocalDataManager:GetIntSimple("PopupSuggestQuality", 0)
+  if popupSuggestQualityNum == 1 then
+    return
+  end
+  local unlockMainLevelID = tonumber(ConfigManager:GetGlobalSettingsByKey("AdjustQuality") or 0)
+  if unlockMainLevelID == 0 then
+    return
+  end
+  if LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, unlockMainLevelID) ~= true then
+    return
+  end
+  LocalDataManager:SetIntSimple("PopupSuggestQuality", 1)
+  local suggestQualityNum = CS.GameQualityManager.Instance:CheckSuggestAjustQuality()
+  if suggestQualityNum < 0 then
+    return
+  end
+  if StackFlow:GetUIInstance(UIDefines.ID_FORM_BATTLESETTING) ~= nil then
+    StackFlow:DestroyUI(UIDefines.ID_FORM_BATTLESETTING)
+  end
+  utils.CheckAndPushCommonTips({
+    tipsID = 1255,
+    bLockBack = true,
+    func1 = function()
+      CS.GameQualityManager.Instance.CustomQualityLevel = suggestQualityNum
+      CS.GameQualityManager.Instance:ApplySettings()
+      StackFlow:Push(UIDefines.ID_FORM_BATTLESETTING, {iSelect = 1})
+      StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 56006)
+    end
+  })
+end
+
 return UserDataManager

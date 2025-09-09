@@ -189,18 +189,33 @@ function UIHeroActShopBase:OnBackClk()
   self:CloseForm()
 end
 
+function UIHeroActShopBase:OnBtncloseClicked()
+  self:CloseForm()
+end
+
 function UIHeroActShopBase:OnShopBuyBtnClk(index, go)
   curBuyItem = go
   local goods = self.m_shopGoods[index + 1]
   LocalDataManager:SetIntSimple(self.config.m_ActId .. "_ActShopGoodsRedDot_" .. goods.iGroupId .. "_" .. goods.iGoodsId, 1, true)
   self:broadcastEvent("eGameEvent_Level_Lamia_ShopGoodsClicked")
+  local bCanBuy = ShopManager:CheckHaveAnyStock(self.m_ShopID, goods.iGroupId, goods.iGoodsId)
+  if not bCanBuy then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10104)
+  else
+    local param = {
+      shopId = self.m_ShopID,
+      goodsInfo = goods,
+      bSkipVoice = true
+    }
+    StackPopup:Push(UIDefines.ID_FORM_SHOPCONFIRMPOP, param)
+  end
 end
 
 function UIHeroActShopBase:OnDestroy()
   UIHeroActShopBase.super.OnDestroy(self)
 end
 
-function UIHeroActShopBase:IsFullScreen()
+function UIHeroActShopBase:IsOpenGuassianBlur()
   return true
 end
 

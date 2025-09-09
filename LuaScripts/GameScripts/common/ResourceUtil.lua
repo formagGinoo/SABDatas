@@ -12,6 +12,7 @@ ResourceUtil.RESOURCE_TYPE = {
   HEAD_FRAME_ICONS = 1400001,
   HEAD_Bg = 1500001,
   BackGround = 1600001,
+  MiniGame108Item = 1710001,
   Fashion = 6000001
 }
 
@@ -237,6 +238,17 @@ function ResourceUtil:GetProcessRewardData(data, customData)
       item_data.in_bag = customData.bBag
       item_data.percentage = customData.percentage
     end
+  elseif data_type == ResourceUtil.RESOURCE_TYPE.MiniGame108Item then
+    local MiniGame108EquipmentIns = ConfigManager:GetConfigInsByName("MiniGame108Equipment")
+    local cfg = MiniGame108EquipmentIns:GetValue_ByEquipmentID(data_id)
+    if cfg:GetError() then
+      log.error("ResourceUtil MiniGame108Equipment GetValue_ByEquipmentID is error id ==" .. tostring(data_id))
+      return
+    end
+    item_data.name = cfg.m_mName
+    item_data.icon_name = cfg.m_IconPath
+    item_data.description = cfg.m_mDesc
+    item_data.config = cfg
   else
     local cfg = CS.CData_Item.GetInstance():GetValue_ByItemID(data_id)
     if cfg:GetError() then
@@ -296,6 +308,8 @@ function ResourceUtil:GetResourceTypeById(id)
     resourceType = ResourceUtil.RESOURCE_TYPE.BackGround
   elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
     resourceType = ResourceUtil.RESOURCE_TYPE.Fashion
+  elseif id >= MTTDProto.ItemIdSeg_MiniGameSpider_Min and id <= MTTDProto.ItemIdSeg_MiniGameSpider_Max then
+    resourceType = ResourceUtil.RESOURCE_TYPE.MiniGame108Item
   end
   return resourceType
 end
@@ -320,6 +334,8 @@ function ResourceUtil:CreatIconById(imageItem, id)
     self:CreateHeadBgIcon(imageItem, id)
   elseif id >= MTTDProto.ItemIdSeg_Fashion_Min and id <= MTTDProto.ItemIdSeg_Fashion_Max then
     self:CreateFashionIcon(imageItem, id)
+  elseif id >= MTTDProto.ItemIdSeg_MiniGameSpider_Min and id <= MTTDProto.ItemIdSeg_MiniGameSpider_Max then
+    self:Create108MiniGameIcon(imageItem, id)
   else
     self:CreateItemIcon(imageItem, id)
   end
@@ -343,6 +359,19 @@ function ResourceUtil:CreateItemIcon(imageItem, itemID)
     return
   end
   CS.UI.UILuaHelper.SetAtlasSprite(imageItem, "Atlas_Item/" .. stItemData.m_IconPath, nil, nil, true)
+end
+
+function ResourceUtil:Create108MiniGameIcon(imageItem, itemID)
+  local MiniGame108EquipmentIns = ConfigManager:GetConfigInsByName("MiniGame108Equipment")
+  local stItemData = MiniGame108EquipmentIns:GetValue_ByEquipmentID(itemID)
+  if stItemData:GetError() then
+    log.error("ResourceUtil createMiniGameIcon item id  " .. tostring(itemID))
+    return
+  end
+  if not stItemData.m_IconPath then
+    return
+  end
+  CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.m_IconPath, nil, nil, true)
 end
 
 function ResourceUtil:CreateEquipIcon(imageItem, equipID)

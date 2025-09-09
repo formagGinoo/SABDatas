@@ -1,10 +1,12 @@
 local Form_GuildElevatorMain = class("Form_GuildElevatorMain", require("UI/UIFrames/Form_GuildElevatorMainUI"))
+local PanelOutAni = "UIFX_GuideElevatorMain_out"
 
 function Form_GuildElevatorMain:SetInitParam(param)
 end
 
 function Form_GuildElevatorMain:AfterInit()
   self.super.AfterInit(self)
+  LocalDataManager:SetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorMain", TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime()), true)
 end
 
 function Form_GuildElevatorMain:OnActive()
@@ -23,6 +25,7 @@ end
 function Form_GuildElevatorMain:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
+  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, PanelOutAni)
 end
 
 function Form_GuildElevatorMain:AddEventListeners()
@@ -35,12 +38,16 @@ function Form_GuildElevatorMain:RemoveAllEventListeners()
 end
 
 function Form_GuildElevatorMain:OnChangeHero()
-  StackFlow:Push(UIDefines.ID_FORM_GUILDELEVATORCALL)
   self:CloseForm()
+  StackFlow:Push(UIDefines.ID_FORM_GUILDELEVATORCALL)
 end
 
 function Form_GuildElevatorMain:RefreshUI()
-  self.m_cfgList = self:GetAncientCharacterInfo()
+  self.m_cfgList = AncientManager:GetAncientCharacterInfo()
+  local trialAct = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+  local trialActIsCondition = trialAct and trialAct:checkCondition()
+  local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+  local isNextDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorMain", 0)
   for i = 1, 3 do
     local cfg = self.m_cfgList[i]
     if not utils.isNull(self["m_pnl_normal_0" .. i]) then
@@ -65,6 +72,12 @@ function Form_GuildElevatorMain:RefreshUI()
           sequence:SetAutoKill(true)
         else
           UILuaHelper.SetActive(self["m_img_bg_lock_0" .. i], cfg.m_Display ~= 1 or not unlock)
+        end
+        UILuaHelper.SetActive(self["m_trial_node_" .. i], trialActIsCondition and trialAct:CheckLevelIsExist(cfg.m_HeroID))
+        if isNextDay then
+          UILuaHelper.SetActive(self["m_go_redpoint_" .. i], trialAct and not trialAct:CheckLevelIsFinishByHeroId(cfg.m_HeroID))
+        else
+          UILuaHelper.SetActive(self["m_go_redpoint_" .. i], false)
         end
         if cfg.m_Display == 1 and unlock then
           local summonHero = AncientManager:GetAncientSummonHeroById(cfg.m_HeroID)
@@ -127,16 +140,6 @@ function Form_GuildElevatorMain:RefreshUI()
   end
 end
 
-function Form_GuildElevatorMain:GetAncientCharacterInfo()
-  local cfgList = {}
-  local characterIns = ConfigManager:GetConfigInsByName("AncientCharacter")
-  local characterAll = characterIns:GetAll()
-  for i, v in pairs(characterAll) do
-    cfgList[v.m_Position] = v
-  end
-  return cfgList
-end
-
 function Form_GuildElevatorMain:ChooseHeroByIndex(index)
   if self.m_cfgList[index] and self.m_cfgList[index].m_HeroID then
     local heroId = AncientManager:GetCurHeroID()
@@ -158,6 +161,30 @@ end
 
 function Form_GuildElevatorMain:OnPnlnormal03Clicked()
   self:ChooseHeroByIndex(3)
+end
+
+function Form_GuildElevatorMain:GoToTrialCharacterActivity(index)
+  if self.m_cfgList[index] and self.m_cfgList[index].m_HeroID then
+    local act = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+    if act and act:checkCondition() then
+      QuickOpenFuncUtil:OpenFunc(30001, {
+        activityId = act:getID(),
+        subPanelTabIndex = self.m_cfgList[index].m_HeroID
+      })
+    end
+  end
+end
+
+function Form_GuildElevatorMain:OnBtngo1Clicked()
+  self:GoToTrialCharacterActivity(1)
+end
+
+function Form_GuildElevatorMain:OnBtngo2Clicked()
+  self:GoToTrialCharacterActivity(2)
+end
+
+function Form_GuildElevatorMain:OnBtngo3Clicked()
+  self:GoToTrialCharacterActivity(3)
 end
 
 function Form_GuildElevatorMain:OnBtnsymbolClicked()

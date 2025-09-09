@@ -47,6 +47,8 @@ ItemIdSeg_ShowBackground_Min = 1500001
 ItemIdSeg_ShowBackground_Max = 1599999
 ItemIdSeg_MainBackground_Min = 1600001
 ItemIdSeg_MainBackground_Max = 1699999
+ItemIdSeg_MiniGameSpider_Min = 1710001
+ItemIdSeg_MiniGameSpider_Max = 1719999
 ItemIdSeg_Fashion_Min = 6000001
 ItemIdSeg_Fashion_Max = 6999999
 ItemType_SpecialItem = 1
@@ -65,6 +67,7 @@ ItemType_Head = 130
 ItemType_HeadFrame = 140
 ItemType_ShowBackground = 150
 ItemType_MainBackground = 160
+ItemType_MiniGameSpider = 171
 ItemType_ActVirtualItem = 200
 ItemSubType_SmallMonthCard = 1
 ItemSubType_BigMonthCard = 2
@@ -163,11 +166,18 @@ Cmd_Item_Sell_SC.Definition = {
 ItemUseData = sdp.SdpStruct("ItemUseData")
 ItemUseData.Definition = {
   "mIndexIdNum",
+  "iSelectId",
   mIndexIdNum = {
     0,
     0,
     sdp.SdpMap(8, 8),
     nil
+  },
+  iSelectId = {
+    1,
+    0,
+    8,
+    0
   }
 }
 Cmd_Item_Use_CS = sdp.SdpStruct("Cmd_Item_Use_CS")

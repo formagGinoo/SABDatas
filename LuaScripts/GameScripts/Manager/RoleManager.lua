@@ -35,6 +35,7 @@ function RoleManager:OnCreate()
   self.m_headFrameExpireTime = nil
   self.m_headBackgroundID = nil
   self.m_playerBackgroundCfgDic = {}
+  self.m_headBackgroundExpireTime = nil
   self.m_mainBGIndex = nil
   self.m_mainBGDataList = {}
   self.m_mainBGCfgDic = {}
@@ -305,6 +306,7 @@ function RoleManager:OnRoleSetCardSC(stRoleSetCardSC, msg)
   self.m_headFrameID = stRoleSetCardSC.iHeadFrameId
   self.m_headFrameExpireTime = ItemManager:GetItemExpireTime(self.m_headFrameID) or 0
   self.m_headBackgroundID = stRoleSetCardSC.iShowBackgroundId
+  self.m_headBackgroundExpireTime = ItemManager:GetItemExpireTime(self.m_headBackgroundID) or 0
   self:broadcastEvent("eGameEvent_RoleSetCard", {
     headID = stRoleSetCardSC.iHeadId,
     headFrameID = stRoleSetCardSC.iHeadFrameId,
@@ -356,6 +358,21 @@ end
 function RoleManager:OnSetSignatureSC(data, msg)
   self.m_sSignature = data.sSignature
   self:broadcastEvent("eGameEvent_Role_SetSignature", data.sSignature)
+end
+
+function RoleManager:ReqRoleReportCS(param)
+  local reqMsg = MTTDProto.Cmd_Role_Report_CS()
+  reqMsg.iType = 10
+  reqMsg.iTargetUid = param.targetPlayerId
+  reqMsg.iZoneId = param.targetPlayerZoneID
+  reqMsg.iReportReasonType = param.reportReasonType
+  reqMsg.sReason = param.text
+  RPCS():Role_Report(reqMsg, handler(self, self.OnRoleReportSC))
+end
+
+function RoleManager:OnRoleReportSC(data, msg)
+  self.m_sSignature = data.sSignature
+  self:broadcastEvent("eGameEvent_Role_RoleReport")
 end
 
 function RoleManager:GetDefaultHeadID()
@@ -546,6 +563,7 @@ function RoleManager:InitRole(initRoleSerData)
   self.m_headFrameID = initRoleSerData.iHeadFrameId
   self.m_headFrameExpireTime = initRoleSerData.iHeadFrameExpireTime
   self.m_headBackgroundID = initRoleSerData.iShowBackgroundId
+  self.m_headBackgroundExpireTime = initRoleSerData.iShowBackgroundExpireTime
   self.m_mainBGIndex = initRoleSerData.iMainBackgroundIndex
   self.m_mainBGDataList = initRoleSerData.vMainBackground
   self.m_mABTest = initRoleSerData.mABTest
@@ -697,12 +715,12 @@ end
 
 function RoleManager:GetBgIDByIDAndExpireTime(bgID, expireTime)
   if bgID == nil or bgID == 0 then
-    return self:GetDefaultMainBackgroundID()
+    return self:GetHeadBackGroundID()
   end
   if expireTime ~= nil and expireTime ~= 0 then
     local curServerTime = TimeUtil:GetServerTimeS()
     if expireTime <= curServerTime then
-      return self:GetDefaultMainBackgroundID()
+      return self:GetHeadBackGroundID()
     end
   end
   return bgID
@@ -711,6 +729,12 @@ end
 function RoleManager:GetHeadBackGroundID()
   if self.m_headBackgroundID == nil or self.m_headBackgroundID == 0 then
     return self:GetDefaultHeadBackGroundID()
+  end
+  if self.m_headBackgroundExpireTime ~= nil and self.m_headBackgroundExpireTime ~= 0 then
+    local curServerTime = TimeUtil:GetServerTimeS()
+    if curServerTime >= self.m_headBackgroundExpireTime then
+      return self:GetDefaultHeadBackGroundID()
+    end
   end
   return self.m_headBackgroundID
 end

@@ -15,6 +15,7 @@ function Form_Activity105_DialogueMain:AfterInit()
   self.iPerPageNum = 6
   self.iNormalPart1 = 1
   self.iNormalPart2 = 2
+  self.sSubPanelName = "LevelDetail105SubPanel"
 end
 
 function Form_Activity105_DialogueMain:OnActive()
@@ -93,34 +94,6 @@ function Form_Activity105_DialogueMain:FreshLevelTab(index)
       return
     end
     self.m_luaextensionInfinityGrid:LocateTo(chooseItemIndex - 2)
-  end
-end
-
-function Form_Activity105_DialogueMain:FreshLevelDetailShow()
-  if self.m_curDetailLevelID then
-    UILuaHelper.SetActive(self.m_level_detail_root, true)
-    if self.m_luaDetailLevel == nil then
-      self:CreateSubPanel("LevelDetail105SubPanel", self.m_level_detail_root, self, {
-        bgBackFun = handler(self, self.OnLevelDetailBgClick)
-      }, {
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      }, function(luaPanel)
-        self.m_luaDetailLevel = luaPanel
-        self.m_luaDetailLevel:AddEventListeners()
-      end)
-    else
-      self.m_luaDetailLevel:FreshData({
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      })
-    end
-    GlobalManagerIns:TriggerWwiseBGMState(95)
-  else
-    TimeService:SetTimer(0.2, 1, function()
-      UILuaHelper.SetActive(self.m_level_detail_root, false)
-    end)
-    GlobalManagerIns:TriggerWwiseBGMState(96)
   end
 end
 
@@ -211,6 +184,30 @@ function Form_Activity105_DialogueMain:OnItemClick(index)
   degreeCfgTab.currentID = curLevelID
   self.m_curDetailLevelID = curLevelID
   self:FreshLevelDetailShow()
+  self:FreshSelecteLevel(index)
+end
+
+function Form_Activity105_DialogueMain:FreshSelecteLevel(index)
+  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
+  local levelList = degreeCfgTab.levelList
+  if not levelList then
+    return
+  end
+  local temp = {}
+  if self.m_curDegreeIndex == LevelDegree.Normal then
+    temp = levelList[self.iCurNormalPage]
+  else
+    temp = levelList
+  end
+  for _, v in ipairs(temp) do
+    v.isChoose = false
+  end
+  if index then
+    temp[index].isChoose = true
+  end
+  if not utils.isNull(self.m_luaextensionInfinityGrid) then
+    self.m_luaextensionInfinityGrid:ReBindAll()
+  end
 end
 
 function Form_Activity105_DialogueMain:OnBtnNormalClicked()

@@ -1,0 +1,51 @@
+{
+  "className": "CData_CharacterTrialLevel",
+  "data": {
+    "2058001": {
+      "m_bError": null,
+      "m_LevelID": "2058001",
+      "m_MapID": "4400004",
+      "m_HeroID": "20580",
+      "m_OpenTime": "\"2025-09-10 10:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2060001": {
+      "m_bError": null,
+      "m_LevelID": "2060001",
+      "m_MapID": "4400005",
+      "m_HeroID": "20600",
+      "m_OpenTime": "\"2025-09-17 04:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2069001": {
+      "m_bError": null,
+      "m_LevelID": "2069001",
+      "m_MapID": "4400003",
+      "m_HeroID": "20690",
+      "m_OpenTime": "\"2025-09-09 12:00:00\"",
+      "m_CloseTime": "\"\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2070001": {
+      "m_bError": null,
+      "m_LevelID": "2070001",
+      "m_MapID": "4400001",
+      "m_HeroID": "20700",
+      "m_OpenTime": "\"2025-09-09 12:00:00\"",
+      "m_CloseTime": "\"\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2071001": {
+      "m_bError": null,
+      "m_LevelID": "2071001",
+      "m_MapID": "4400002",
+      "m_HeroID": "20710",
+      "m_OpenTime": "\"2025-09-09 12:00:00\"",
+      "m_CloseTime": "\"\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    }
+  },
+  "status": "processed_5_items"
+}

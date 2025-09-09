@@ -425,6 +425,7 @@ Cmd_Form_SetPreset_CS = sdp.SdpStruct("Cmd_Form_SetPreset_CS")
 Cmd_Form_SetPreset_CS.Definition = {
   "iPresetId",
   "vHeroId",
+  "bIsCopy",
   iPresetId = {
     0,
     0,
@@ -436,6 +437,12 @@ Cmd_Form_SetPreset_CS.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  },
+  bIsCopy = {
+    2,
+    0,
+    1,
+    false
   }
 }
 Cmd_Form_SetPreset_SC = sdp.SdpStruct("Cmd_Form_SetPreset_SC")

@@ -205,6 +205,18 @@
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
+    "200303": {
+      "m_bError": null,
+      "m_StoryID": "200303",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Warship El Dorado 2589\"",
+      "m_PlaceID": "2003",
+      "m_ShowCharacter": "20580",
+      "m_Character": "[20520,20520,20580,20590]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
     "200401": {
       "m_bError": null,
       "m_StoryID": "200401",
@@ -350,5 +362,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_29_items"
+  "status": "processed_30_items"
 }

@@ -5,7 +5,7 @@
       "m_bError": null,
       "m_DamageType": "1",
       "m_mDamageTypeName": "\"P. DMG\"",
-      "m_mDamageTypeDesc": "\"om this type.\u0006P. DMG\u001bTo Those Who Still Remember\u0013Isle of Eternal Sun\u0018Solace Beneath The Waves\u0014'The Empress' Ritual\"",
+      "m_mDamageTypeDesc": "\"DMG dealt through physical means like swords and bows. Increasing P. DEF reduces DMG taken from this type.\"",
       "m_DamageTypeIcon": "\"Atlas_LevelTag/level_info_icon_attack_03\""
     },
     "2": {
@@ -14,7 +14,14 @@
       "m_mDamageTypeName": "\"M. DMG\"",
       "m_mDamageTypeDesc": "\"DMG dealt through magical means like blood formulas and alchemical formulas. Increasing M. DEF reduces DMG taken from this type.\"",
       "m_DamageTypeIcon": "\"Atlas_LevelTag/level_info_icon_attack_02\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_DamageType": "4",
+      "m_mDamageTypeName": "\"Piercing DMG\"",
+      "m_mDamageTypeDesc": "\"A special type of DMG. When inflicted, it ignores a certain amount of P. DEF and M. DEF and deals 200% DMG to Shields. This DMG type is not affected by P. DMG and M. DMG related effects.\"",
+      "m_DamageTypeIcon": "\"Atlas_LevelTag/level_info_icon_attack_04\""
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_3_items"
 }

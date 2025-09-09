@@ -65,7 +65,7 @@ function Form_Tower:OnDestroy()
     self.m_luaDetailLevel:dispose()
     self.m_luaDetailLevel = nil
   end
-  if CS.GameQualityManager.DestroyLevelMapAsset and self.m_towerBgNodeDic then
+  if self.m_towerBgNodeDic then
     for levelSubType, tempBgNode in pairs(self.m_towerBgNodeDic) do
       if tempBgNode then
         GameObject.Destroy(tempBgNode.gameObject)

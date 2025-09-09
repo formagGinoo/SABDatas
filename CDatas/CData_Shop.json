@@ -240,7 +240,31 @@
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
       "m_mLockDesc": "\"\""
+    },
+    "9008": {
+      "m_bError": null,
+      "m_ShopID": "9008",
+      "m_WindowID": "26011",
+      "m_ShopVersion": "1",
+      "m_Type": "2",
+      "m_ActId": "1080",
+      "m_Order": "1",
+      "m_IsOn": "1",
+      "m_mName": "\"Festival Shop\"",
+      "m_IconPath": "\"\"",
+      "m_IconPathClick": "\"\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"2025-6-10 04:00:00\"",
+      "m_EndTime": "\"2025-7-24 03:59:59\"",
+      "m_MainCurrency": "[500083,99]",
+      "m_GoodsGroupID": "[900701,900702,900703,900704,900705,900706,900707,900708,900709,900710,900711,900712,900713,900714,900715,900716,900717,900718,900719,900720,900721,900722]",
+      "m_CensorGoodsGroupID": "[900701,900702,900703,900704,900705,900706,900707,900708,900709,900710,900711,900712,900713,900714,900715,900716,900717,900718,900719,900720,900721,900722]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\""
     }
   },
-  "status": "processed_10_items"
+  "status": "processed_11_items"
 }

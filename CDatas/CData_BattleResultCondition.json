@@ -1306,6 +1306,87 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "1011101": {
+      "m_bError": null,
+      "m_ID": "1011101",
+      "m_mDesc": "\"Defeat the enemies trying to steal the \"key.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011111": {
+      "m_bError": null,
+      "m_ID": "1011111",
+      "m_mDesc": "\"Survive Dark Colossus and crystallized monsters for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1011121": {
+      "m_bError": null,
+      "m_ID": "1011121",
+      "m_mDesc": "\"Defeat the enemies drawn by sounds.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011131": {
+      "m_bError": null,
+      "m_ID": "1011131",
+      "m_mDesc": "\"Defeat the enemies entrenched in this area.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011141": {
+      "m_bError": null,
+      "m_ID": "1011141",
+      "m_mDesc": "\"Defeat the enemies attacking the camp.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011151": {
+      "m_bError": null,
+      "m_ID": "1011151",
+      "m_mDesc": "\"Survive the siege for 60 sec.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1011161": {
+      "m_bError": null,
+      "m_ID": "1011161",
+      "m_mDesc": "\"Try to stop Colossus Max from advancing.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011171": {
+      "m_bError": null,
+      "m_ID": "1011171",
+      "m_mDesc": "\"Defeat the enemies controlled by Pavana.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1011181": {
+      "m_bError": null,
+      "m_ID": "1011181",
+      "m_mDesc": "\"Defeat Dark Colossus.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "1020001": {
       "m_bError": null,
       "m_ID": "1020001",
@@ -1558,6 +1639,24 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2100051": {
+      "m_bError": null,
+      "m_ID": "2100051",
+      "m_mDesc": "\"Defeat the Formless lurking around.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100051]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100058": {
+      "m_bError": null,
+      "m_ID": "2100058",
+      "m_mDesc": "\"Defeat the Formless lurking around.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100058]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "2200001": {
       "m_bError": null,
       "m_ID": "2200001",
@@ -1765,6 +1864,51 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2520001": {
+      "m_bError": null,
+      "m_ID": "2520001",
+      "m_mDesc": "\"Defeat Void Golem.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2520001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2520002": {
+      "m_bError": null,
+      "m_ID": "2520002",
+      "m_mDesc": "\"Defeat the Corrosive Spider.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2520002]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2520003": {
+      "m_bError": null,
+      "m_ID": "2520003",
+      "m_mDesc": "\"Defeat Timewarp Golem.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2520003]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2520004": {
+      "m_bError": null,
+      "m_ID": "2520004",
+      "m_mDesc": "\"Defeat the Spider Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2520004]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2520005": {
+      "m_bError": null,
+      "m_ID": "2520005",
+      "m_mDesc": "\"Defeat the Bee Swarm.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2520005]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "4000001": {
       "m_bError": null,
       "m_ID": "4000001",
@@ -1782,6 +1926,51 @@
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
+    },
+    "4400001": {
+      "m_bError": null,
+      "m_ID": "4400001",
+      "m_mDesc": "\"Try to use <#A65F30>Sirene</color> and defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400002": {
+      "m_bError": null,
+      "m_ID": "4400002",
+      "m_mDesc": "\"Use <#A65F30>Julius</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400003": {
+      "m_bError": null,
+      "m_ID": "4400003",
+      "m_mDesc": "\"Use <#A65F30>Valora</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400004": {
+      "m_bError": null,
+      "m_ID": "4400004",
+      "m_mDesc": "\"Use <#A65F30>Stella</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400005": {
+      "m_bError": null,
+      "m_ID": "4400005",
+      "m_mDesc": "\"Use <#A65F30>Albrecht</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
     },
     "6000112": {
       "m_bError": null,
@@ -2359,6 +2548,222 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "6000801": {
+      "m_bError": null,
+      "m_ID": "6000801",
+      "m_mDesc": "\"Defeat the attacking spider constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000802": {
+      "m_bError": null,
+      "m_ID": "6000802",
+      "m_mDesc": "\"Defeat the incoming spider constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000803": {
+      "m_bError": null,
+      "m_ID": "6000803",
+      "m_mDesc": "\"Complete Albrecht's trial.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000804": {
+      "m_bError": null,
+      "m_ID": "6000804",
+      "m_mDesc": "\"Defeat the invading spider constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000805": {
+      "m_bError": null,
+      "m_ID": "6000805",
+      "m_mDesc": "\"Defeat the invading spider constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000806": {
+      "m_bError": null,
+      "m_ID": "6000806",
+      "m_mDesc": "\"Knock back Regina and the nearby spider constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000807": {
+      "m_bError": null,
+      "m_ID": "6000807",
+      "m_mDesc": "\"Defeat the bee constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000808": {
+      "m_bError": null,
+      "m_ID": "6000808",
+      "m_mDesc": "\"Defeat the bee constructs.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000809": {
+      "m_bError": null,
+      "m_ID": "6000809",
+      "m_mDesc": "\"Defeat the construct army attempting to encircle.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000810": {
+      "m_bError": null,
+      "m_ID": "6000810",
+      "m_mDesc": "\"Defeat the construct army attempting to encircle.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000811": {
+      "m_bError": null,
+      "m_ID": "6000811",
+      "m_mDesc": "\"Defeat the construct army attempting to encircle.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000812": {
+      "m_bError": null,
+      "m_ID": "6000812",
+      "m_mDesc": "\"Defeat the giant construct attacking the El Dorado.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000901": {
+      "m_bError": null,
+      "m_ID": "6000901",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000902": {
+      "m_bError": null,
+      "m_ID": "6000902",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000903": {
+      "m_bError": null,
+      "m_ID": "6000903",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000904": {
+      "m_bError": null,
+      "m_ID": "6000904",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000905": {
+      "m_bError": null,
+      "m_ID": "6000905",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000906": {
+      "m_bError": null,
+      "m_ID": "6000906",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000907": {
+      "m_bError": null,
+      "m_ID": "6000907",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000908": {
+      "m_bError": null,
+      "m_ID": "6000908",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000909": {
+      "m_bError": null,
+      "m_ID": "6000909",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000910": {
+      "m_bError": null,
+      "m_ID": "6000910",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000911": {
+      "m_bError": null,
+      "m_ID": "6000911",
+      "m_mDesc": "\"Defeat the attacking construct army.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6000912": {
+      "m_bError": null,
+      "m_ID": "6000912",
+      "m_mDesc": "\"Destroy the Mastermind's construct, the Formless.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "7101101": {
       "m_bError": null,
       "m_ID": "7101101",
@@ -2515,7 +2920,7 @@
     "10000131": {
       "m_bError": null,
       "m_ID": "10000131",
-      "m_mDesc": "\"Defeat <#A65F30>Zagon</color>, The Rat King of Starfall Valley.\"",
+      "m_mDesc": "\"Defeat <#A65F30>Zagon</color>, the Rat King of Starfall Valley.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10000131]",
       "m_FailAnd": "1",
@@ -2587,7 +2992,7 @@
     "10200091": {
       "m_bError": null,
       "m_ID": "10200091",
-      "m_mDesc": "\"Defeat <#A65F30>Baphomet, \"The Soulless.\"</color>\"",
+      "m_mDesc": "\"Defeat <#A65F30>Baphomet, \"the Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2596,7 +3001,7 @@
     "10200092": {
       "m_bError": null,
       "m_ID": "10200092",
-      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"The Soulless.\"</color>\"",
+      "m_mDesc": "\"Defeat <#A65F31>Baphomet, \"the Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200092]",
       "m_FailAnd": "1",
@@ -2605,12 +3010,12 @@
     "10200093": {
       "m_bError": null,
       "m_ID": "10200093",
-      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"The Soulless.\"</color>\"",
+      "m_mDesc": "\"Defeat <#A65F32>Baphomet, \"the Soulless.\"</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[10200093]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_290_items"
+  "status": "processed_335_items"
 }

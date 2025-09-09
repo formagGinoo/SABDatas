@@ -119,8 +119,48 @@
       "m_mName": "\"Venomous Swampling\"",
       "m_Avatar": "\"GuildRaid_head15\"",
       "m_BG": "\"boss_role_15\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "16": {
+      "m_bError": null,
+      "m_ID": "16",
+      "m_mName": "\"Void Golem\"",
+      "m_Avatar": "\"GuildRaid_head16\"",
+      "m_BG": "\"boss_role_16\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "17": {
+      "m_bError": null,
+      "m_ID": "17",
+      "m_mName": "\"Corrosive Spider\"",
+      "m_Avatar": "\"GuildRaid_head17\"",
+      "m_BG": "\"boss_role_17\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "18": {
+      "m_bError": null,
+      "m_ID": "18",
+      "m_mName": "\"Timewarp Golem\"",
+      "m_Avatar": "\"GuildRaid_head18\"",
+      "m_BG": "\"boss_role_18\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "19": {
+      "m_bError": null,
+      "m_ID": "19",
+      "m_mName": "\"Spider Swarm\"",
+      "m_Avatar": "\"GuildRaid_head19\"",
+      "m_BG": "\"boss_role_19\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "20": {
+      "m_bError": null,
+      "m_ID": "20",
+      "m_mName": "\"Bee Swarm\"",
+      "m_Avatar": "\"GuildRaid_head20\"",
+      "m_BG": "\"boss_role_20\"",
       "m_MonsterTypeID": "[1,5]"
     }
   },
-  "status": "processed_15_items"
+  "status": "processed_20_items"
 }

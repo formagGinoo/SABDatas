@@ -1,0 +1,90 @@
+{
+  "className": "CData_FashionTouch",
+  "data": {
+    "6007001": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_FashionID": "6007001",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[60004020,60004021]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_FashionID": "6007001",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[60004022,60004023]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_FashionID": "6007001",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[60004024,60004025]"
+        }
+      }
+    },
+    "6016001": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[60003020,60003021]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[60003022,60003023]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_FashionID": "6016001",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[60003024,60003025]"
+        }
+      }
+    },
+    "6023001": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[60001020,60001021]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[60001022,60001023]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_FashionID": "6023001",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[60001024,60001025]"
+        }
+      }
+    }
+  },
+  "status": "processed_3_items"
+}

@@ -13,7 +13,7 @@ function PlayPlotEventHandler.OnEvent(world, entity, event)
       iCineStepID = event.PlotID,
       iSubCineStepID = element.m_InBattleCineSubStepID,
       fWaitTimeMax = element.m_WaitMax,
-      bottomOffset = 150
+      bottomOffset = 200
     }
     StackBottom:Push(UIDefines.ID_FORM_DIALOGUE_POPO, stEventParam)
     world.form:broadcastEvent("eGameEvent_CineVoiceInBattle_AddDialoguePop", stEventParam)

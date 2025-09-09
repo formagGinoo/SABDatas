@@ -120,7 +120,31 @@
       "m_DisplayUpContent": "[20630]",
       "m_PreviewCharacter": "[20630]",
       "m_PoolID": "8001"
+    },
+    "1011": {
+      "m_bError": null,
+      "m_DisplayID": "1011",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20580]",
+      "m_PreviewCharacter": "[20580]",
+      "m_PoolID": "9001"
+    },
+    "1012": {
+      "m_bError": null,
+      "m_DisplayID": "1012",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20600]",
+      "m_PreviewCharacter": "[20600]",
+      "m_PoolID": "10001"
     }
   },
-  "status": "processed_10_items"
+  "status": "processed_12_items"
 }

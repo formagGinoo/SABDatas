@@ -922,7 +922,7 @@ function string.GetTextualNormsGuildNotice(str)
     end
     local subStr = string.sub(str, i, i + byteCount - 1)
     local charUnicodeNum = string.utf8_to_unicode(subStr)
-    if 60 <= charUnicodeNum and charUnicodeNum < 63 or 123 <= charUnicodeNum and charUnicodeNum < 183 or charUnicodeNum == 215 or charUnicodeNum == 247 or 183 < charUnicodeNum and charUnicodeNum <= 191 then
+    if 60 <= charUnicodeNum and charUnicodeNum < 63 or 123 <= charUnicodeNum and charUnicodeNum < 183 or charUnicodeNum == 215 or charUnicodeNum == 247 or 183 < charUnicodeNum and charUnicodeNum <= 191 or charUnicodeNum == 10 or charUnicodeNum == 13 or charUnicodeNum == 8232 or charUnicodeNum == 8233 then
     else
       table.insert(resultChar, subStr)
     end

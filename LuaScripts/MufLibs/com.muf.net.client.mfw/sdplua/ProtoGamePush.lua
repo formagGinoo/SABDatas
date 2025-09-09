@@ -108,6 +108,9 @@ CmdId_Push_NotifyAllianceMail = 20121
 CmdId_Push_SetAllianceMailSendNum = 20122
 CmdId_Push_Alliance_SetTotalActive = 20123
 CmdId_Push_AllianceBattle_NewRound = 20124
+CmdId_Push_Alliance_MessageNotice_New = 20125
+CmdId_Push_Alliance_MessageNotice_Change = 20126
+CmdId_Push_Alliance_MessageNotice_PinChange = 20127
 CmdId_Push_RoomEnter = 20201
 CmdId_Push_RoomLeave = 20202
 CmdId_Push_RoomInvite = 20203
@@ -148,6 +151,8 @@ CmdId_Push_Ancient_Quest = 20329
 CmdId_Push_NewGift = 20330
 CmdId_Push_LegacyStage = 20331
 CmdId_Push_Letter_Quest = 20332
+CmdId_Push_PushGiftTrigger = 20333
+CmdId_Push_Lamia_Item = 20334
 CmdId_Push_BaseStoreMonthlyCard = 20630
 CmdId_Push_BaseStoreMonthlyCardReward = 20631
 CmdId_Push_BaseStoreChapter = 20632
@@ -160,6 +165,7 @@ CmdId_Push_NewActivityPickupGift = 20638
 CmdId_Push_SoloRaid_RankUpdate = 20639
 CmdId_Push_NewRankTarget = 20640
 CmdId_Push_Notify_HuntingRankReward = 20641
+CmdId_Push_ResetLegacyLevel = 20642
 KickReason_ClientNewVersion = 1
 KickReason_BanLogin = 2
 KickReason_OnlyRecharge = 3
@@ -2195,6 +2201,23 @@ Cmd_Push_Lamia_Stage.Definition = {
     nil
   }
 }
+Cmd_Push_Lamia_Item = sdp.SdpStruct("Cmd_Push_Lamia_Item")
+Cmd_Push_Lamia_Item.Definition = {
+  "iActId",
+  "vItem",
+  iActId = {
+    0,
+    0,
+    8,
+    0
+  },
+  vItem = {
+    1,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  }
+}
 Cmd_Push_BaseStoreMonthlyCard = sdp.SdpStruct("Cmd_Push_BaseStoreMonthlyCard")
 Cmd_Push_BaseStoreMonthlyCard.Definition = {
   "stMonthlyCard",
@@ -2320,6 +2343,16 @@ Cmd_Push_NewGift.Definition = {
   },
   iTotalRecharge = {
     7,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Push_PushGiftTrigger = sdp.SdpStruct("Cmd_Push_PushGiftTrigger")
+Cmd_Push_PushGiftTrigger.Definition = {
+  "iActivityID",
+  iActivityID = {
+    0,
     0,
     8,
     0
@@ -2588,6 +2621,16 @@ Cmd_Push_LegacyStage.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  }
+}
+Cmd_Push_ResetLegacyLevel = sdp.SdpStruct("Cmd_Push_ResetLegacyLevel")
+Cmd_Push_ResetLegacyLevel.Definition = {
+  "iLevelId",
+  iLevelId = {
+    0,
+    0,
+    8,
+    0
   }
 }
 Cmd_Push_Hero_AddFashion = sdp.SdpStruct("Cmd_Push_Hero_AddFashion")
@@ -2961,5 +3004,70 @@ Cmd_Push_Letter_Quest.Definition = {
     0,
     sdp.SdpVector(CmdQuest),
     nil
+  }
+}
+Cmd_Push_Alliance_MessageNotice_New = sdp.SdpStruct("Cmd_Push_Alliance_MessageNotice_New")
+Cmd_Push_Alliance_MessageNotice_New.Definition = {
+  "iAllianceId",
+  "stMessageNotice",
+  "iTopNoticeID",
+  "iDeletedNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  stMessageNotice = {
+    1,
+    0,
+    AllianceMessageNotice,
+    nil
+  },
+  iTopNoticeID = {
+    2,
+    0,
+    8,
+    0
+  },
+  iDeletedNoticeID = {
+    3,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Push_Alliance_MessageNotice_Change = sdp.SdpStruct("Cmd_Push_Alliance_MessageNotice_Change")
+Cmd_Push_Alliance_MessageNotice_Change.Definition = {
+  "iAllianceId",
+  "stMessageNotice",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  stMessageNotice = {
+    1,
+    0,
+    AllianceMessageNotice,
+    nil
+  }
+}
+Cmd_Push_Alliance_MessageNotice_PinChange = sdp.SdpStruct("Cmd_Push_Alliance_MessageNotice_PinChange")
+Cmd_Push_Alliance_MessageNotice_PinChange.Definition = {
+  "iAllianceId",
+  "iTopNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iTopNoticeID = {
+    1,
+    0,
+    8,
+    0
   }
 }

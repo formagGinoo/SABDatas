@@ -305,4 +305,22 @@ function M:getInitCells()
   return self.m_init_cells
 end
 
+function M:GetActiveCellsIndexList()
+  local cellIndexList = {}
+  local cellNameMap = {}
+  if table.getn(self.m_cache_cells) > 0 then
+    for i, cell_object in pairs(self.m_cache_cells) do
+      if not utils.isNull(cell_object) and not cellNameMap[cell_object.name] then
+        local vTouch = string.split(cell_object.name, "_")
+        if vTouch and vTouch[2] then
+          local index = tonumber(vTouch[2])
+          cellIndexList[#cellIndexList + 1] = index
+        end
+        cellNameMap[cell_object.name] = true
+      end
+    end
+  end
+  return cellIndexList
+end
+
 return M

@@ -13,21 +13,5 @@ function Form_Activity101Lamia_Shop:OnActive()
   GlobalManagerIns:TriggerWwiseBGMState(102)
 end
 
-function Form_Activity101Lamia_Shop:OnShopBuyBtnClk(index, go)
-  self.super.OnShopBuyBtnClk(self, index, go)
-  local goods = self.m_shopGoods[index + 1]
-  local bCanBuy = ShopManager:CheckHaveAnyStock(self.m_ShopID, goods.iGroupId, goods.iGoodsId)
-  if not bCanBuy then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10104)
-  else
-    local param = {
-      shopId = self.m_ShopID,
-      goodsInfo = goods,
-      bSkipVoice = true
-    }
-    StackPopup:Push(UIDefines.ID_FORM_SHOPCONFIRMPOP, param)
-  end
-end
-
 ActiveLuaUI("Form_Activity101Lamia_Shop", Form_Activity101Lamia_Shop)
 return Form_Activity101Lamia_Shop

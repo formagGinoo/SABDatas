@@ -153,6 +153,13 @@ function Form_HeroDetail:AfterInit()
     self.m_root_hero_BtnEx.Drag = handler(self, self.OnImgDrag)
     self.m_root_hero_BtnEx.EndDrag = handler(self, self.OnImgEndBDrag)
   end
+  self.m_lastPlayTouchVoiceTime = 0
+  self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
+  if self.m_spineClick then
+    self.m_spineClick.raycaster = self.m_rootTrans:GetComponent("GraphicRaycasterBugFixed")
+    self.m_spineClick.Touched = handler(self, self.OnSpineTouchClick)
+    self:StopCurTouchPlayingVoice()
+  end
   self.m_pnl_attract_touch_exp:SetActive(false)
   self.m_iAttractTouchReward = tonumber(GlobalCfgIns:GetValue_ByName("AttractTouchReward").m_Value)
   self.m_iAttractTouchLimit = tonumber(GlobalCfgIns:GetValue_ByName("AttractTouchLimit").m_Value)
@@ -205,9 +212,6 @@ function Form_HeroDetail:OnInactive()
   self:RemoveAllEventListeners()
   self:ClearData()
   self:PlayTouchDisappearAnimation()
-  if self.m_spineClick then
-    self.m_spineClick:DestroyFollowerList()
-  end
   self:StopCurDisPlayPlayingVoice()
   self:KillVoiceTimer()
 end
@@ -229,6 +233,7 @@ end
 
 function Form_HeroDetail:OnDestroy()
   self.super.OnDestroy(self)
+  self:ClearData()
   self:CheckRecycleCurSpine(true)
   for i, panelData in pairs(self.m_subPanelData) do
     if panelData.subPanelLua ~= nil then
@@ -300,6 +305,8 @@ function Form_HeroDetail:OnShowHeroUpgrade(param)
 end
 
 function Form_HeroDetail:ClearData()
+  self.m_startDragPos = nil
+  self.m_startDragUIPosX = nil
 end
 
 function Form_HeroDetail:FreshData()
@@ -499,6 +506,58 @@ function Form_HeroDetail:FreshShowHeroInfo(isEnterFresh)
   self:CheckFreshRedDot()
 end
 
+function Form_HeroDetail:OnSpineTouchClick(name, localpos)
+  log.info("Form_HeroDetail spineClick:" .. tostring(name))
+  if self.m_curChooseTab ~= HeroTagCfg.Base then
+    return
+  end
+  if self.m_startDragUIPosX or self.m_curShowHeroData == nil then
+    return
+  end
+  local curServerTime = TimeUtil:GetServerTimeS()
+  if curServerTime - self.m_lastPlayTouchVoiceTime < self.m_uiVariables.LimitVoiceSecNum then
+    return
+  end
+  self.m_lastPlayTouchVoiceTime = TimeUtil:GetServerTimeS()
+  local vVoiceText = AttractManager:GetTouchVoice(self.m_curShowHeroData.serverData, self.m_curShowHeroData.characterCfg.m_HeroID, self.m_curShowHeroData.serverData.iFashion, name)
+  if vVoiceText then
+    self:StopCurCharDisplayVoice()
+    self:StopCurTouchPlayingVoice()
+    self:StopRandomIdleVoice()
+    self.m_vVoiceTouchText = vVoiceText
+    self:PlayTouchVoice(self.m_vVoiceTouchText[self.m_playTouchSubIndex])
+  end
+end
+
+function Form_HeroDetail:PlayTouchVoice(voiceInfo)
+  UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
+    self.m_playingId = playingId
+    local tempVoiceInfo = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if tempVoiceInfo then
+      UILuaHelper.SetActive(self.m_dialog_root, true)
+      self.m_txt_dialog_Text.text = tempVoiceInfo.subtitle
+    end
+  end, function()
+    self.m_playTouchSubIndex = self.m_playTouchSubIndex + 1
+    local nextVoice = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if nextVoice ~= nil then
+      self:PlayTouchVoice(nextVoice)
+    else
+      self.m_playingId = nil
+      UILuaHelper.SetActive(self.m_dialog_root, false)
+    end
+  end)
+end
+
+function Form_HeroDetail:StopCurTouchPlayingVoice()
+  self.m_playTouchSubIndex = 1
+  if self.m_playingId then
+    UILuaHelper.StopPlaySFX(self.m_playingId)
+    self.m_playingId = nil
+  end
+  UILuaHelper.SetActive(self.m_dialog_root, false)
+end
+
 function Form_HeroDetail:PlayHeroDisPlayVoice()
   if not self.m_curShowHeroData then
     return
@@ -530,20 +589,32 @@ function Form_HeroDetail:PlayHeroDisPlayVoice()
   end)
 end
 
+function Form_HeroDetail:StopCurCharDisplayVoice()
+  if self.m_playingDisplayId then
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
+    self.m_playingDisplayId = nil
+  end
+end
+
 function Form_HeroDetail:StopCurVoiceEvent()
   if self.m_playingDisplayId3 then
     UILuaHelper.StopPlaySFX(self.m_playingDisplayId3)
+    self.m_playingDisplayId3 = nil
+  end
+end
+
+function Form_HeroDetail:StopRandomIdleVoice()
+  if self.m_playingDisplayId2 then
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
+    self.m_playingDisplayId2 = nil
   end
 end
 
 function Form_HeroDetail:StopCurDisPlayPlayingVoice()
-  if self.m_playingDisplayId then
-    UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
-  end
-  if self.m_playingDisplayId2 then
-    UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
-  end
+  self:StopCurCharDisplayVoice()
+  self:StopRandomIdleVoice()
   self:StopCurVoiceEvent()
+  self:StopCurTouchPlayingVoice()
 end
 
 function Form_HeroDetail:FreshHeroAttract(iAttractRankTemplate, iAttractRank)
@@ -591,7 +662,7 @@ function Form_HeroDetail:ShowHeroSpine(heroSpinePathStr, isEnterFresh)
     self:CheckRecycleCurSpine()
     self.m_curHeroSpineObj = spineLoadObj
     self:OnLoadSpineBack(isEnterFresh)
-    if self.m_spineClick then
+    if self.m_spineClick and self.m_curHeroSpineObj and not utils.isNull(self.m_curHeroSpineObj.spineObj) then
       local spineStr = self.m_curHeroSpineObj.assetSpineStr
       self.m_spineClick:BindingSpine("hero_place_" .. spineStr .. "," .. typeStr .. "," .. spineStr)
     end
@@ -844,6 +915,9 @@ function Form_HeroDetail:CheckRecycleCurSpine(isResetParam)
   if isResetParam then
     UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
   end
+  if self.m_spineClick then
+    self.m_spineClick:DestroyFollowerList()
+  end
   self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
   self.m_curHeroSpineObj = nil
 end
@@ -902,9 +976,7 @@ function Form_HeroDetail:OnImgEndBDrag(pointerEventData)
   local absDeltaNum = math.abs(deltaNum)
   if absDeltaNum < DragLimitNum then
     self:CheckShowDragBackTween()
-    return
-  end
-  if 0 < deltaNum then
+  elseif 0 < deltaNum then
     self:CheckShowLastHero()
   else
     self:CheckShowNextHero()
@@ -1139,11 +1211,13 @@ function Form_HeroDetail:OnHeroTabClk(index)
       self:SpinePlayRandomAnim()
     end
   end
+  self:broadcastEvent("eGameEvent_WndActive", self:GetFramePrefabName())
 end
 
 function Form_HeroDetail:OnTabbaseClicked()
   if self.m_curChooseTab ~= HeroTagCfg.Base then
     self:StopCurVoiceEvent()
+    self:StopCurTouchPlayingVoice()
   end
   self:OnHeroTabClk(HeroTagCfg.Base)
 end
@@ -1156,6 +1230,7 @@ function Form_HeroDetail:OnTabskillClicked()
   end
   if self.m_curChooseTab ~= HeroTagCfg.Skill then
     self:StopCurVoiceEvent()
+    self:StopCurTouchPlayingVoice()
   end
   self:OnHeroTabClk(HeroTagCfg.Skill)
 end
@@ -1180,6 +1255,7 @@ function Form_HeroDetail:OnTabequipClicked()
   end
   if self.m_curChooseTab ~= HeroTagCfg.Equip then
     self:StopCurVoiceEvent()
+    self:StopCurTouchPlayingVoice()
   end
   self:OnHeroTabClk(HeroTagCfg.Equip)
 end
@@ -1192,6 +1268,7 @@ function Form_HeroDetail:OnTablegacyClicked()
   end
   if self.m_curChooseTab ~= HeroTagCfg.Legacy then
     self:StopCurVoiceEvent()
+    self:StopCurTouchPlayingVoice()
   end
   self:OnHeroTabClk(HeroTagCfg.Legacy)
 end
@@ -1295,13 +1372,21 @@ function Form_HeroDetail:GetGuideConditionIsOpen(conditionType, conditionParam)
       return false
     end
     return heroCfg.m_AttractArchiveIsOpen == 1
+  elseif conditionType == 15 then
+    local conditionValue = tonumber(conditionParam)
+    if conditionValue <= 4 then
+      local quality = self:GetCurrentHeroQuality()
+      return conditionValue <= quality
+    elseif conditionValue == 101 then
+      return self.m_curChooseTab == HeroTagCfg.Base
+    elseif conditionValue == 102 then
+      return self.m_curChooseTab == HeroTagCfg.Equip
+    elseif conditionValue == 103 then
+      return self.m_curChooseTab == HeroTagCfg.Skill
+    elseif conditionValue == 104 then
+      return self.m_curChooseTab == HeroTagCfg.Legacy
+    end
   end
-  local quality = self:GetCurrentHeroQuality()
-  local ret = false
-  if quality >= tonumber(conditionParam) then
-    ret = true
-  end
-  return ret
 end
 
 function Form_HeroDetail:FreshAttractHeroInfo()

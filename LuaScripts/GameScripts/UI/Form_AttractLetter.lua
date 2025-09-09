@@ -990,10 +990,15 @@ function Form_AttractLetter:GetDownloadResourceExtra(params)
   for k, v in pairs(cfgs) do
     if v.m_HeroID and v.m_HeroID > 0 then
       for _, cfg in ipairs(v) do
-        if cfg.m_TimelineType and cfg.m_TimelineType == 1 then
+        if cfg.m_TimelineType == 1 then
           vResourceExtra[#vResourceExtra + 1] = {
             sName = cfg.m_TimelineId,
             eType = DownloadManager.ResourceType.MaterialReplace
+          }
+        elseif cfg.m_TimelineType == 3 then
+          vResourceExtra[#vResourceExtra + 1] = {
+            sName = cfg.m_TimelineId,
+            eType = DownloadManager.ResourceType.Bytes
           }
         end
       end

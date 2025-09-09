@@ -128,7 +128,7 @@ function Form_PersonalRename:OnBtnCloseClicked()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(2)
   local guideId = 36
   if not GuideManager:CheckSubStepGuideCmp(guideId) then
-    GuideManager:FinishSubStepGuide(guideId, true)
+    GuideManager:FinishSubStepGuide(GuideManager:GetFinishStepData(guideId, 0), true)
     local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_GUIDE)
     if form ~= nil and form.guideData ~= nil then
       form:EndGuide()
@@ -141,7 +141,7 @@ end
 function Form_PersonalRename:SetRoleName()
   local guideId = 36
   if not GuideManager:CheckSubStepGuideCmp(guideId) then
-    GuideManager:FinishSubStepGuide(guideId, true)
+    GuideManager:FinishSubStepGuide(GuideManager:GetFinishStepData(guideId, 0), true)
     local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_GUIDE)
     if form ~= nil and form.guideData ~= nil then
       form:EndGuide()

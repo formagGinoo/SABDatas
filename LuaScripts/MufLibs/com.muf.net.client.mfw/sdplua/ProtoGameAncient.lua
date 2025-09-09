@@ -15,6 +15,8 @@ CmdId_Ancient_AddEnergy_CS = 11109
 CmdId_Ancient_AddEnergy_SC = 11110
 CmdId_Ancient_SummonHero_CS = 11111
 CmdId_Ancient_SummonHero_SC = 11112
+CmdId_Ancient_ResetEnergy_CS = 11113
+CmdId_Ancient_ResetEnergy_SC = 11114
 AncientHeroType_Normal = 0
 CmdAncientHero = sdp.SdpStruct("CmdAncientHero")
 CmdAncientHero.Definition = {
@@ -204,6 +206,25 @@ Cmd_Ancient_SummonHero_SC.Definition = {
   },
   vItem = {
     3,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  }
+}
+Cmd_Ancient_ResetEnergy_CS = sdp.SdpStruct("Cmd_Ancient_ResetEnergy_CS")
+Cmd_Ancient_ResetEnergy_CS.Definition = {}
+Cmd_Ancient_ResetEnergy_SC = sdp.SdpStruct("Cmd_Ancient_ResetEnergy_SC")
+Cmd_Ancient_ResetEnergy_SC.Definition = {
+  "iOldEnergy",
+  "vItem",
+  iOldEnergy = {
+    0,
+    0,
+    8,
+    0
+  },
+  vItem = {
+    1,
     0,
     sdp.SdpVector(CmdIDNum),
     nil

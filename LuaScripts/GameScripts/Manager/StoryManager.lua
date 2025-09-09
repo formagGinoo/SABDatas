@@ -5,12 +5,14 @@ function StoryManager:OnCreate()
   self:addEventListener("eGameEvent_DialogueShow", handler(self, self.OnEventDialogueShow))
   self:addEventListener("eGameEvent_DialogueOptionShow", handler(self, self.OnEventDialogueOptionsShow))
   self:addEventListener("eGameEvent_DialogueChangeSkip", handler(self, self.OnEventDialogueChangeSkip))
+  self:addEventListener("eGameEvent_DialogueChangeAllSkip", handler(self, self.OnEventDialogueChangeAllSkip))
   self:addEventListener("eGameEvent_DialogueCloseReview", handler(self, self.OnEventDialogueCloseReview))
   self:addEventListener("eGameEvent_DialogueCloseAutoAndManual", handler(self, self.OnEventDialogueCloseAutoAndManual))
   self:addEventListener("eGameEvent_DialogueDisableSpeedUp", handler(self, self.OnEventDialogueDisableSpeedUp))
   self:addEventListener("eGameEvent_DialogueCaptionsShow", handler(self, self.OnEventDialogueCaptionsShow))
   self:addEventListener("eGameEvent_DialogueCaptionsShowEnd", handler(self, self.OnEventDialogueCaptionsShowEnd))
   self:addEventListener("eGameEvent_TimelineStop", handler(self, self.OnTimelineStop))
+  self:addEventListener("eGameEvent_PlayAVG", handler(self, self.OnPlayAVG))
 end
 
 function StoryManager:OnUpdate(dt)
@@ -36,6 +38,13 @@ function StoryManager:OnEventDialogueChangeSkip(bCanSkip)
   local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_DIALOGUE)
   if form ~= nil then
     form:SetSkip(bCanSkip)
+  end
+end
+
+function StoryManager:OnEventDialogueChangeAllSkip(bCanAllSkip)
+  local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_DIALOGUE)
+  if form ~= nil then
+    form:SetAllSkip(bCanAllSkip)
   end
 end
 
@@ -65,6 +74,33 @@ function StoryManager:OnTimelineStop()
   if form ~= nil then
     form:OnTimelineEnd()
   end
+end
+
+function StoryManager:OnPlayAVG(name, onFinished)
+  local vPackage = {}
+  local vResource = {}
+  local depen = CS.AVGLoader.GetDepenResource(name)
+  table.insert(vResource, {
+    sName = "Form_AVGDialogue",
+    eType = CS.MUF.Resource.ResourceType.UI
+  })
+  for k, v in pairs(depen) do
+    table.insert(vResource, {sName = k, eType = v})
+  end
+  DownloadManager:DownloadResourceWithUI(vPackage, vResource, "play_avg_" .. name, nil, nil, function()
+    self.AVGList = self.AVGList or {}
+    table.insert(self.AVGList, {Name = name, OnFinished = onFinished})
+    StackSpecial:Push(UIDefines.ID_FORM_AVGDIALOGUE)
+  end)
+end
+
+function StoryManager:PopAVGInfo()
+  if self.AVGList and #self.AVGList > 0 then
+    local info = self.AVGList[1]
+    table.remove(self.AVGList, 1)
+    return info
+  end
+  return nil
 end
 
 function StoryManager:getAutoStatus()

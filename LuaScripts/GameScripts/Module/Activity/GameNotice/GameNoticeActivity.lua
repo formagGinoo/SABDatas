@@ -86,6 +86,9 @@ function GameNoticeActivity:checkCondition()
   if not self:isInActivityLanguageShow() then
     return false
   end
+  if not self:isShowClearResourceAnnounce() then
+    return false
+  end
   return true
 end
 
@@ -105,6 +108,10 @@ function GameNoticeActivity:isInActivityLanguageShow()
     end
   end
   return false
+end
+
+function GameNoticeActivity:isShowClearResourceAnnounce()
+  return true
 end
 
 function GameNoticeActivity:OnResetStatusData()

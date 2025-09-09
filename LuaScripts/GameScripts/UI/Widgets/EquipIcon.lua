@@ -167,11 +167,7 @@ function EquipIcon:SetEquipInfo(stEquipData)
     self.m_equipCampBg:SetActive(false)
   end
   if self.m_imageGradeFxObj then
-    if itemData.quality == 4 then
-      self.m_imageGradeFxObj:SetActive(true)
-    else
-      self.m_imageGradeFxObj:SetActive(false)
-    end
+    self.m_imageGradeFxObj:SetActive(false)
   end
   if not utils.isNull(self.m_pnlEquipUpgrade) then
     if itemData.sel_upgrade_item_num then

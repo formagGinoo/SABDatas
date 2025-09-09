@@ -75,7 +75,7 @@ function Form_Activity103Luoleilai_DialogueMain:FreshDegreeLevelList()
     local showLevelItemList = {}
     for index, tempCfg in ipairs(levelCfgList) do
       local isCurrent = tempCfg.m_LevelID == nextLevelID
-      local tempShowLevelItem = {levelCfg = tempCfg, isChoose = isCurrent}
+      local tempShowLevelItem = {levelCfg = tempCfg, isChoose = false}
       showLevelItemList[#showLevelItemList + 1] = tempShowLevelItem
       if isCurrent then
         v.currentID = tempCfg.m_LevelID
@@ -85,50 +85,6 @@ function Form_Activity103Luoleilai_DialogueMain:FreshDegreeLevelList()
       vv.maxNum = #showLevelItemList
     end
     v.levelList = showLevelItemList
-  end
-end
-
-function Form_Activity103Luoleilai_DialogueMain:OnItemClick(index)
-  if not index then
-    return
-  end
-  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
-  local levelList = degreeCfgTab.levelList
-  if not levelList then
-    return
-  end
-  local curLevelData = levelList[index]
-  local curLevelID = curLevelData.levelCfg.m_LevelID
-  degreeCfgTab.currentID = curLevelID
-  self.m_curDetailLevelID = curLevelID
-  self:FreshLevelDetailShow()
-end
-
-function Form_Activity103Luoleilai_DialogueMain:FreshLevelDetailShow()
-  if self.m_curDetailLevelID then
-    UILuaHelper.SetActive(self.m_level_detail_root, true)
-    if self.m_luaDetailLevel == nil then
-      self:CreateSubPanel("LevelDetailLuoleilaiSubPanel", self.m_level_detail_root, self, {
-        bgBackFun = handler(self, self.OnLevelDetailBgClick)
-      }, {
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      }, function(luaPanel)
-        self.m_luaDetailLevel = luaPanel
-        self.m_luaDetailLevel:AddEventListeners()
-      end)
-    else
-      self.m_luaDetailLevel:FreshData({
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      })
-    end
-    GlobalManagerIns:TriggerWwiseBGMState(95)
-  else
-    TimeService:SetTimer(0.2, 1, function()
-      UILuaHelper.SetActive(self.m_level_detail_root, false)
-    end)
-    GlobalManagerIns:TriggerWwiseBGMState(96)
   end
 end
 

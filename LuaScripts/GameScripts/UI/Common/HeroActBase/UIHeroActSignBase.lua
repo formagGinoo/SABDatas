@@ -71,6 +71,7 @@ function UIHeroActSignBase:OnEventGetReward(iAwardedMaxDays)
   for i = 1, iAwardedMaxDays do
     self.m_luaSignItemInfinityGrid:ReBind(i)
   end
+  self.bIsWaittingActData = false
 end
 
 function UIHeroActSignBase:FreshUI()
@@ -109,7 +110,8 @@ function UIHeroActSignBase:FreshUI()
   if self.m_csui.m_param.is_pushFace and HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) then
     self.lockId = UILockIns:Lock(fLockTime)
     TimeService:SetTimer(fLockTime, 1, function()
-      if HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) then
+      if HeroActivityManager:GetHeroActSignHaveRedFlag(self.act_id) and not self.bIsWaittingActData then
+        self.bIsWaittingActData = true
         HeroActivityManager:RequestRecReward(self.act_id)
       end
     end)
@@ -186,6 +188,7 @@ function UIHeroActSignBase:LoadShowSpine()
     UILuaHelper.SetParent(object, self.m_root_hero, true)
     UILuaHelper.SetActive(object, true)
     UILuaHelper.SpineResetMatParam(object)
+    UILuaHelper.SetSpineTimeScale(object, 1)
     self.m_curHeroSpineObj = object
   end)
 end

@@ -14,6 +14,7 @@ function Form_Push_Gift_Reserve:AfterInit()
   self.m_rewardItemParent = self.m_pnl_reward.transform
   self.m_pointItemParent = self.m_pnl_switch.transform
   self.m_pnl_switch:SetActive(true)
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
 end
 
 function Form_Push_Gift_Reserve:OnActive()
@@ -229,22 +230,10 @@ function Form_Push_Gift_Reserve:OnBuyResult(isSuccess, param1, param2)
 end
 
 function Form_Push_Gift_Reserve:OnRefreshGiftPoint()
-  local productId = self.m_curSelectPackData.GiftInfo.sProductId
-  if not productId then
-    self.m_packgift_point:SetActive(false)
-    return
-  end
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(productId)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    self.m_packgift_point:SetActive(true)
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
+  if self.m_curSelectPackData then
+    self.m_paidGiftPoint:SetFreshInfo({
+      productId = self.m_curSelectPackData.GiftInfo.sProductId
+    })
   end
 end
 

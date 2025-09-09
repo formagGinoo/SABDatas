@@ -18,6 +18,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20010]",
+      "m_SpecialPerformanceID": "[20010]",
+      "m_SpecialTips": null,
       "m_Spine": "\"nevernight_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -28,7 +30,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6001001": {
       "m_bError": null,
@@ -47,6 +50,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20000]",
+      "m_SpecialPerformanceID": "[20000]",
+      "m_SpecialTips": null,
       "m_Spine": "\"nevernight_final\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -57,7 +62,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6002000": {
       "m_bError": null,
@@ -76,6 +82,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20020]",
+      "m_SpecialPerformanceID": "[20020]",
+      "m_SpecialTips": null,
       "m_Spine": "\"aile_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -86,7 +94,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6003000": {
       "m_bError": null,
@@ -105,6 +114,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20030]",
+      "m_SpecialPerformanceID": "[20030]",
+      "m_SpecialTips": null,
       "m_Spine": "\"empusae_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -115,7 +126,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6004000": {
       "m_bError": null,
@@ -134,6 +146,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20040]",
+      "m_SpecialPerformanceID": "[20040]",
+      "m_SpecialTips": null,
       "m_Spine": "\"aorin_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -144,7 +158,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6005000": {
       "m_bError": null,
@@ -163,6 +178,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20050]",
+      "m_SpecialPerformanceID": "[20050]",
+      "m_SpecialTips": null,
       "m_Spine": "\"shila_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -173,7 +190,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6006000": {
       "m_bError": null,
@@ -192,6 +210,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20060]",
+      "m_SpecialPerformanceID": "[20060]",
+      "m_SpecialTips": null,
       "m_Spine": "\"ami_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -202,7 +222,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6007000": {
       "m_bError": null,
@@ -221,6 +242,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20070]",
+      "m_SpecialPerformanceID": "[20070]",
+      "m_SpecialTips": null,
       "m_Spine": "\"cecia_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -231,7 +254,40 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6007001": {
+      "m_bError": null,
+      "m_FashionID": "6007001",
+      "m_CharacterId": "20070",
+      "m_Order": "2",
+      "m_Type": "1",
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Garden of Purple\"",
+      "m_FashionTheme": "\"A皮\"",
+      "m_mFashionTag": "\"Luxury Couture\"",
+      "m_mFashionDes": "\"A sleeping beauty, cradled in the embrace of dreams.\nIn this velvet night, she longs for the one to unravel her fragile fantasy.\"",
+      "m_FashionItemPic": "\"Atlas_Role/Cecia_Blindfold003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6007001\"",
+      "m_TransformItemID": "[101,1500]",
+      "m_IsShow": "1",
+      "m_PerformanceID": "[2007001]",
+      "m_SpecialPerformanceID": "[2007001]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"cecia_base_a2_01\"",
+      "m_FashionSuffix": "\"A2_01\"",
+      "m_FashionEffectSuffix": "\"A2_01\"",
+      "m_HideType": "1",
+      "m_GetType": "2",
+      "m_GetTypeValue": "[]",
+      "m_JumpID": "50005",
+      "m_IsShowVoice": "1",
+      "m_mCVChinese": "\"山新\"",
+      "m_mCVJapanese": "\"You Taichi\"",
+      "m_mCVEnglish": "\"Nina Zendejas\"",
+      "m_AnnexID": null
     },
     "6008000": {
       "m_bError": null,
@@ -250,6 +306,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20080]",
+      "m_SpecialPerformanceID": "[20080]",
+      "m_SpecialTips": null,
       "m_Spine": "\"merchant\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -260,7 +318,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6009000": {
       "m_bError": null,
@@ -279,6 +338,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20090]",
+      "m_SpecialPerformanceID": "[20090]",
+      "m_SpecialTips": null,
       "m_Spine": "\"cain_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -289,7 +350,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6010000": {
       "m_bError": null,
@@ -308,6 +370,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20100]",
+      "m_SpecialPerformanceID": "[20100]",
+      "m_SpecialTips": null,
       "m_Spine": "\"faust_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -318,7 +382,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6010001": {
       "m_bError": null,
@@ -337,6 +402,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2010001]",
+      "m_SpecialPerformanceID": "[2010001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"faust_base_b1_01\"",
       "m_FashionSuffix": "\"B_01\"",
       "m_FashionEffectSuffix": "\"B_01\"",
@@ -347,7 +414,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6011000": {
       "m_bError": null,
@@ -366,6 +434,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20110]",
+      "m_SpecialPerformanceID": "[20110]",
+      "m_SpecialTips": null,
       "m_Spine": "\"empusae_final\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -376,7 +446,40 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6011001": {
+      "m_bError": null,
+      "m_FashionID": "6011001",
+      "m_CharacterId": "20110",
+      "m_Order": "2",
+      "m_Type": "1",
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Maiden's Grace\"",
+      "m_FashionTheme": "\"A皮\"",
+      "m_mFashionTag": "\"Luxury Couture\"",
+      "m_mFashionDes": "\"Even dressed like a maid, she commands the room as the castle's true heir.\nEvery cup of tea she offers carries the scarlet legacy of the Bathory.\"",
+      "m_FashionItemPic": "\"Atlas_Role/Lamia_Maid003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6011001\"",
+      "m_TransformItemID": "[101,1500]",
+      "m_IsShow": "1",
+      "m_PerformanceID": "[2011001]",
+      "m_SpecialPerformanceID": "[2011001]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"empusae_final_a1_01\"",
+      "m_FashionSuffix": "\"A1_01\"",
+      "m_FashionEffectSuffix": "\"A1_01\"",
+      "m_HideType": "1",
+      "m_GetType": "1",
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6012000": {
       "m_bError": null,
@@ -395,6 +498,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20120]",
+      "m_SpecialPerformanceID": "[20120]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Jilaner_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -405,7 +510,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6012001": {
       "m_bError": null,
@@ -424,6 +530,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2012001]",
+      "m_SpecialPerformanceID": "[2012001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"jilaner_base_a1_01\"",
       "m_FashionSuffix": "\"A1_01\"",
       "m_FashionEffectSuffix": "\"A1_01\"",
@@ -434,7 +542,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6013000": {
       "m_bError": null,
@@ -453,6 +562,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20130]",
+      "m_SpecialPerformanceID": "[20130]",
+      "m_SpecialTips": null,
       "m_Spine": "\"silvan_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -463,7 +574,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6013001": {
       "m_bError": null,
@@ -482,6 +594,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2013001]",
+      "m_SpecialPerformanceID": "[2013001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"silvan_base_a1_01\"",
       "m_FashionSuffix": "\"A1_01\"",
       "m_FashionEffectSuffix": "\"A1_01\"",
@@ -492,7 +606,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6014000": {
       "m_bError": null,
@@ -511,6 +626,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20140]",
+      "m_SpecialPerformanceID": "[20140]",
+      "m_SpecialTips": null,
       "m_Spine": "\"cidhall_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -521,7 +638,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6015000": {
       "m_bError": null,
@@ -540,6 +658,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[201501]",
+      "m_SpecialPerformanceID": "[201501]",
+      "m_SpecialTips": null,
       "m_Spine": "\"shadow_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -550,7 +670,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6016000": {
       "m_bError": null,
@@ -569,6 +690,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20160]",
+      "m_SpecialPerformanceID": "[20160]",
+      "m_SpecialTips": null,
       "m_Spine": "\"resha_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -579,7 +702,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6016001": {
       "m_bError": null,
@@ -598,6 +722,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2016001]",
+      "m_SpecialPerformanceID": "[2016001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"resha_base_a2_01\"",
       "m_FashionSuffix": "\"A2_01\"",
       "m_FashionEffectSuffix": "\"A2_01\"",
@@ -608,7 +734,8 @@
       "m_IsShowVoice": "1",
       "m_mCVChinese": "\"贺文潇\"",
       "m_mCVJapanese": "\"Ikumi Hasegawa\"",
-      "m_mCVEnglish": "\"Jenna Sharpe\""
+      "m_mCVEnglish": "\"Jenna Sharpe\"",
+      "m_AnnexID": null
     },
     "6017000": {
       "m_bError": null,
@@ -627,6 +754,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20170]",
+      "m_SpecialPerformanceID": "[20170]",
+      "m_SpecialTips": null,
       "m_Spine": "\"darc_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -637,7 +766,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6018000": {
       "m_bError": null,
@@ -656,6 +786,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20180]",
+      "m_SpecialPerformanceID": "[20180]",
+      "m_SpecialTips": null,
       "m_Spine": "\"friedrich_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -666,7 +798,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6018001": {
       "m_bError": null,
@@ -685,17 +818,20 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2018001]",
+      "m_SpecialPerformanceID": "[2018001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"friedrich_base_b1_01\"",
       "m_FashionSuffix": "\"B_01\"",
       "m_FashionEffectSuffix": "\"B_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_GetType": "2",
       "m_GetTypeValue": "[]",
       "m_JumpID": "50004",
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6019000": {
       "m_bError": null,
@@ -714,6 +850,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20190]",
+      "m_SpecialPerformanceID": "[20190]",
+      "m_SpecialTips": null,
       "m_Spine": "\"theophrastus_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -724,7 +862,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6020000": {
       "m_bError": null,
@@ -743,6 +882,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20200]",
+      "m_SpecialPerformanceID": "[20200]",
+      "m_SpecialTips": null,
       "m_Spine": "\"garlic_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -753,7 +894,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6021000": {
       "m_bError": null,
@@ -772,6 +914,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20210]",
+      "m_SpecialPerformanceID": "[20210]",
+      "m_SpecialTips": null,
       "m_Spine": "\"acappella_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -782,7 +926,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6022000": {
       "m_bError": null,
@@ -801,6 +946,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20220]",
+      "m_SpecialPerformanceID": "[20220]",
+      "m_SpecialTips": null,
       "m_Spine": "\"saint_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -811,7 +958,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6023000": {
       "m_bError": null,
@@ -830,6 +978,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20230]",
+      "m_SpecialPerformanceID": "[20230]",
+      "m_SpecialTips": null,
       "m_Spine": "\"jacinta_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -840,7 +990,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6023001": {
       "m_bError": null,
@@ -859,6 +1010,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2023001]",
+      "m_SpecialPerformanceID": "[2023001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"jacinta_base_a2_01\"",
       "m_FashionSuffix": "\"A2_01\"",
       "m_FashionEffectSuffix": "\"A2_01\"",
@@ -869,7 +1022,8 @@
       "m_IsShowVoice": "1",
       "m_mCVChinese": "\"汤舟沉\"",
       "m_mCVJapanese": "\"Yukana\"",
-      "m_mCVEnglish": "\"Emily Jardine\""
+      "m_mCVEnglish": "\"Emily Jardine\"",
+      "m_AnnexID": null
     },
     "6024000": {
       "m_bError": null,
@@ -888,6 +1042,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20240]",
+      "m_SpecialPerformanceID": "[20240]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Catherine_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -898,7 +1054,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6025000": {
       "m_bError": null,
@@ -917,6 +1074,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20250]",
+      "m_SpecialPerformanceID": "[20250]",
+      "m_SpecialTips": null,
       "m_Spine": "\"sailor_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -927,7 +1086,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6026000": {
       "m_bError": null,
@@ -946,6 +1106,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20260]",
+      "m_SpecialPerformanceID": "[20260]",
+      "m_SpecialTips": null,
       "m_Spine": "\"jones_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -956,7 +1118,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6027000": {
       "m_bError": null,
@@ -975,6 +1138,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20270]",
+      "m_SpecialPerformanceID": "[20270]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Paimile_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -985,7 +1150,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6028000": {
       "m_bError": null,
@@ -1004,6 +1170,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20280]",
+      "m_SpecialPerformanceID": "[20280]",
+      "m_SpecialTips": null,
       "m_Spine": "\"augustine_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1014,7 +1182,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6029000": {
       "m_bError": null,
@@ -1033,6 +1202,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20290]",
+      "m_SpecialPerformanceID": "[20290]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Aiona_Origin\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1043,7 +1214,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6029001": {
       "m_bError": null,
@@ -1062,6 +1234,8 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2029001]",
+      "m_SpecialPerformanceID": "[2029001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Aiona_Origin_a1_01\"",
       "m_FashionSuffix": "\"A1_01\"",
       "m_FashionEffectSuffix": "\"A1_01\"",
@@ -1072,7 +1246,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6030000": {
       "m_bError": null,
@@ -1091,6 +1266,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20300]",
+      "m_SpecialPerformanceID": "[20300]",
+      "m_SpecialTips": null,
       "m_Spine": "\"edina_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1101,7 +1278,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6031000": {
       "m_bError": null,
@@ -1120,6 +1298,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20310]",
+      "m_SpecialPerformanceID": "[20310]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Peaucina_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1130,7 +1310,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6032000": {
       "m_bError": null,
@@ -1149,6 +1330,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20320]",
+      "m_SpecialPerformanceID": "[20320]",
+      "m_SpecialTips": null,
       "m_Spine": "\"fanu_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1159,7 +1342,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6033000": {
       "m_bError": null,
@@ -1178,6 +1362,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20330]",
+      "m_SpecialPerformanceID": "[20330]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Nicole_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1188,7 +1374,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6034000": {
       "m_bError": null,
@@ -1207,6 +1394,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20340]",
+      "m_SpecialPerformanceID": "[20340]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Hippocratic_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1217,7 +1406,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6035000": {
       "m_bError": null,
@@ -1236,6 +1426,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20350]",
+      "m_SpecialPerformanceID": "[20350]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Agares_Final\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1246,7 +1438,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6037000": {
       "m_bError": null,
@@ -1265,6 +1458,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20370]",
+      "m_SpecialPerformanceID": "[20370]",
+      "m_SpecialTips": null,
       "m_Spine": "\"cross_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1275,7 +1470,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6038000": {
       "m_bError": null,
@@ -1294,6 +1490,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20380]",
+      "m_SpecialPerformanceID": "[20380]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Salina_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1304,7 +1502,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6039000": {
       "m_bError": null,
@@ -1323,6 +1522,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20390]",
+      "m_SpecialPerformanceID": "[20390]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Noah_Covenant\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1333,7 +1534,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6040000": {
       "m_bError": null,
@@ -1352,6 +1554,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20400]",
+      "m_SpecialPerformanceID": "[20400]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Van_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1362,7 +1566,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6041000": {
       "m_bError": null,
@@ -1381,6 +1586,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20410]",
+      "m_SpecialPerformanceID": "[20410]",
+      "m_SpecialTips": null,
       "m_Spine": "\"alene_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1391,7 +1598,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6042000": {
       "m_bError": null,
@@ -1410,6 +1618,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20420]",
+      "m_SpecialPerformanceID": "[20420]",
+      "m_SpecialTips": null,
       "m_Spine": "\"joan_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1420,7 +1630,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6043000": {
       "m_bError": null,
@@ -1439,6 +1650,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20430]",
+      "m_SpecialPerformanceID": "[20430]",
+      "m_SpecialTips": null,
       "m_Spine": "\"ottavia_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1449,7 +1662,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6045000": {
       "m_bError": null,
@@ -1468,6 +1682,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20450]",
+      "m_SpecialPerformanceID": "[20450]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Hati_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1478,7 +1694,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6047000": {
       "m_bError": null,
@@ -1497,6 +1714,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20470]",
+      "m_SpecialPerformanceID": "[20470]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Yggdrasill_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1507,7 +1726,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6048000": {
       "m_bError": null,
@@ -1526,6 +1746,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20480]",
+      "m_SpecialPerformanceID": "[20480]",
+      "m_SpecialTips": null,
       "m_Spine": "\"ami_final\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1536,7 +1758,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6049000": {
       "m_bError": null,
@@ -1555,6 +1778,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20490]",
+      "m_SpecialPerformanceID": "[20490]",
+      "m_SpecialTips": null,
       "m_Spine": "\"soulless_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1565,7 +1790,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6050000": {
       "m_bError": null,
@@ -1584,6 +1810,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20500]",
+      "m_SpecialPerformanceID": "[20500]",
+      "m_SpecialTips": null,
       "m_Spine": "\"wolfman_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1594,7 +1822,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6051000": {
       "m_bError": null,
@@ -1613,6 +1842,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20510]",
+      "m_SpecialPerformanceID": "[20510]",
+      "m_SpecialTips": null,
       "m_Spine": "\"clivejr_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1623,7 +1854,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6052000": {
       "m_bError": null,
@@ -1642,6 +1874,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20520]",
+      "m_SpecialPerformanceID": "[20520]",
+      "m_SpecialTips": null,
       "m_Spine": "\"goldenland_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1652,7 +1886,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6053000": {
       "m_bError": null,
@@ -1671,6 +1906,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20530]",
+      "m_SpecialPerformanceID": "[20530]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Henry_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1681,7 +1918,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6054000": {
       "m_bError": null,
@@ -1700,6 +1938,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20540]",
+      "m_SpecialPerformanceID": "[20540]",
+      "m_SpecialTips": null,
       "m_Spine": "\"jenny_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1710,7 +1950,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6055000": {
       "m_bError": null,
@@ -1729,6 +1970,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20550]",
+      "m_SpecialPerformanceID": "[20550]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Leo_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1739,7 +1982,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6057000": {
       "m_bError": null,
@@ -1758,6 +2002,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20570]",
+      "m_SpecialPerformanceID": "[20570]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Lilith_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1768,7 +2014,104 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6058000": {
+      "m_bError": null,
+      "m_FashionID": "6058000",
+      "m_CharacterId": "20580",
+      "m_Order": "1",
+      "m_Type": null,
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Starbound Voyager\"",
+      "m_FashionTheme": "\"原皮\"",
+      "m_mFashionTag": "\"Default Outfit\"",
+      "m_mFashionDes": "\"Default Outfit\"",
+      "m_FashionItemPic": "\"Atlas_Role/Albert_Base003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6058000\"",
+      "m_TransformItemID": "[]",
+      "m_IsShow": null,
+      "m_PerformanceID": "[20580]",
+      "m_SpecialPerformanceID": "[20580]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"stella_base\"",
+      "m_FashionSuffix": "\"\"",
+      "m_FashionEffectSuffix": "\"\"",
+      "m_HideType": null,
+      "m_GetType": null,
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6059000": {
+      "m_bError": null,
+      "m_FashionID": "6059000",
+      "m_CharacterId": "20590",
+      "m_Order": "1",
+      "m_Type": null,
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Keeper of Yore\"",
+      "m_FashionTheme": "\"原皮\"",
+      "m_mFashionTag": "\"Default Outfit\"",
+      "m_mFashionDes": "\"Default Outfit\"",
+      "m_FashionItemPic": "\"Atlas_Role/Piera_Astray003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6059000\"",
+      "m_TransformItemID": "[]",
+      "m_IsShow": null,
+      "m_PerformanceID": "[20590]",
+      "m_SpecialPerformanceID": "[20590]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"paimile_world\"",
+      "m_FashionSuffix": "\"\"",
+      "m_FashionEffectSuffix": "\"\"",
+      "m_HideType": null,
+      "m_GetType": null,
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6060000": {
+      "m_bError": null,
+      "m_FashionID": "6060000",
+      "m_CharacterId": "20600",
+      "m_Order": "1",
+      "m_Type": null,
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Crystal Sage\"",
+      "m_FashionTheme": "\"原皮\"",
+      "m_mFashionTag": "\"Default Outfit\"",
+      "m_mFashionDes": "\"Default Outfit\"",
+      "m_FashionItemPic": "\"Atlas_Role/Albert_Base003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6060000\"",
+      "m_TransformItemID": "[]",
+      "m_IsShow": null,
+      "m_PerformanceID": "[20600]",
+      "m_SpecialPerformanceID": "[20600]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"albert_base\"",
+      "m_FashionSuffix": "\"\"",
+      "m_FashionEffectSuffix": "\"\"",
+      "m_HideType": null,
+      "m_GetType": null,
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6061000": {
       "m_bError": null,
@@ -1787,6 +2130,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20610]",
+      "m_SpecialPerformanceID": "[20610]",
+      "m_SpecialTips": null,
       "m_Spine": "\"aorin_ur\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1797,7 +2142,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6062000": {
       "m_bError": null,
@@ -1816,6 +2162,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20620]",
+      "m_SpecialPerformanceID": "[20620]",
+      "m_SpecialTips": null,
       "m_Spine": "\"quinn_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1826,7 +2174,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6062001": {
       "m_bError": null,
@@ -1845,17 +2194,20 @@
       "m_TransformItemID": "[101,1500]",
       "m_IsShow": "1",
       "m_PerformanceID": "[2062001]",
+      "m_SpecialPerformanceID": "[2062001]",
+      "m_SpecialTips": null,
       "m_Spine": "\"quinn_base_a1_01\"",
       "m_FashionSuffix": "\"A1_01\"",
       "m_FashionEffectSuffix": "\"A1_01\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_GetType": "1",
       "m_GetTypeValue": "[]",
       "m_JumpID": null,
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6063000": {
       "m_bError": null,
@@ -1874,6 +2226,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20630]",
+      "m_SpecialPerformanceID": "[20630]",
+      "m_SpecialTips": null,
       "m_Spine": "\"agatha_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1884,7 +2238,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6064000": {
       "m_bError": null,
@@ -1903,6 +2258,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20640,20641]",
+      "m_SpecialPerformanceID": "[20640,20641]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Loreley_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1913,7 +2270,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6064001": {
       "m_bError": null,
@@ -1932,6 +2290,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20641]",
+      "m_SpecialPerformanceID": "[20641]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Loreley_Base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1942,7 +2302,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6065000": {
       "m_bError": null,
@@ -1961,6 +2322,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20650]",
+      "m_SpecialPerformanceID": "[20650]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Salina_summer\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -1971,7 +2334,8 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6066000": {
       "m_bError": null,
@@ -1990,6 +2354,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20660]",
+      "m_SpecialPerformanceID": "[20660]",
+      "m_SpecialTips": null,
       "m_Spine": "\"Bella_summer\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -2000,7 +2366,40 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6069000": {
+      "m_bError": null,
+      "m_FashionID": "6069000",
+      "m_CharacterId": "20690",
+      "m_Order": "1",
+      "m_Type": null,
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"Steeled Mare\"",
+      "m_FashionTheme": "\"原皮\"",
+      "m_mFashionTag": "\"Default Outfit\"",
+      "m_mFashionDes": "\"Default Outfit\"",
+      "m_FashionItemPic": "\"Atlas_Role/Isabelle_Base003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6069000\"",
+      "m_TransformItemID": "[]",
+      "m_IsShow": null,
+      "m_PerformanceID": "[20690]",
+      "m_SpecialPerformanceID": "[20690]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"Gerhilde_Base\"",
+      "m_FashionSuffix": "\"\"",
+      "m_FashionEffectSuffix": "\"\"",
+      "m_HideType": null,
+      "m_GetType": null,
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     },
     "6070000": {
       "m_bError": null,
@@ -2019,6 +2418,8 @@
       "m_TransformItemID": "[]",
       "m_IsShow": null,
       "m_PerformanceID": "[20700]",
+      "m_SpecialPerformanceID": "[20700]",
+      "m_SpecialTips": null,
       "m_Spine": "\"siegrune_base\"",
       "m_FashionSuffix": "\"\"",
       "m_FashionEffectSuffix": "\"\"",
@@ -2029,8 +2430,41 @@
       "m_IsShowVoice": null,
       "m_mCVChinese": "\"\"",
       "m_mCVJapanese": "\"\"",
-      "m_mCVEnglish": "\"\""
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
+    },
+    "6071000": {
+      "m_bError": null,
+      "m_FashionID": "6071000",
+      "m_CharacterId": "20710",
+      "m_Order": "1",
+      "m_Type": null,
+      "m_Quality": "4",
+      "m_Priority": "1",
+      "m_mFashionName": "\"The Notched Halberd\"",
+      "m_FashionTheme": "\"原皮\"",
+      "m_mFashionTag": "\"Default Outfit\"",
+      "m_mFashionDes": "\"Default Outfit\"",
+      "m_FashionItemPic": "\"Atlas_Role/Julius_Base003\"",
+      "m_FashionPic": "\"Atlas_Roleskin/6071000\"",
+      "m_TransformItemID": "[]",
+      "m_IsShow": null,
+      "m_PerformanceID": "[20710]",
+      "m_SpecialPerformanceID": "[20710]",
+      "m_SpecialTips": null,
+      "m_Spine": "\"julius_base\"",
+      "m_FashionSuffix": "\"\"",
+      "m_FashionEffectSuffix": "\"\"",
+      "m_HideType": null,
+      "m_GetType": null,
+      "m_GetTypeValue": "[]",
+      "m_JumpID": null,
+      "m_IsShowVoice": null,
+      "m_mCVChinese": "\"\"",
+      "m_mCVJapanese": "\"\"",
+      "m_mCVEnglish": "\"\"",
+      "m_AnnexID": null
     }
   },
-  "status": "processed_70_items"
+  "status": "processed_77_items"
 }

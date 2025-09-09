@@ -4,21 +4,13 @@ function Form_Activity103LuoleilaiMain:SetInitParam(param)
 end
 
 function Form_Activity103LuoleilaiMain:AfterInit()
-  self.super.AfterInit(self)
+  Form_Activity103LuoleilaiMain.super.AfterInit(self)
   self.miniGameIsOpen = false
   UILuaHelper.SetActive(self.m_challenge_redpointhammersiren, false)
-  if self.m_btn_hide then
-    self.m_btn_hide:SetActive(false)
-  end
-  if self.m_pnl_colloction then
-    self.m_pnl_colloction:SetActive(false)
-  end
 end
 
 function Form_Activity103LuoleilaiMain:OnActive()
-  self.super.OnActive(self)
-  self:addEventListener("eGameEvent_ActExploreUIVisuable", handler(self, self.OnUIActiveEvent))
-  self:addEventListener("eGameEvent_ActExploreIconVisuable", handler(self, self.OnPartUIActiveEvent))
+  Form_Activity103LuoleilaiMain.super.OnActive(self)
   if self.m_btn_activity then
     self.m_eff2:SetActive(true)
   end
@@ -39,38 +31,24 @@ function Form_Activity103LuoleilaiMain:OnActive()
 end
 
 function Form_Activity103LuoleilaiMain:OnInactive()
-  self.super.OnInactive(self)
+  Form_Activity103LuoleilaiMain.super.OnInactive(self)
 end
 
 function Form_Activity103LuoleilaiMain:OnDestroy()
-  self.super.OnDestroy(self)
+  Form_Activity103LuoleilaiMain.super.OnDestroy(self)
 end
 
 function Form_Activity103LuoleilaiMain:FreshUI()
-  self.super.FreshUI(self)
-  local bIsSecondHalf = HeroActivityManager:IsSecondHalf(self.act_id)
-  UILuaHelper.SetActive(self.m_txt_title, false)
-  self.miniGameIsOpen = HeroActivityManager:IsSubActIsOpenByID(self.act_id, HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.MiniGame))
+  Form_Activity103LuoleilaiMain.super.FreshUI(self)
   UILuaHelper.SetActive(self.m_z_txt_hammersiren_name, self.miniGameIsOpen)
   UILuaHelper.SetActive(self.m_img_lockhammersiren, not self.miniGameIsOpen)
 end
 
 function Form_Activity103LuoleilaiMain:RegisterRedDot()
   Form_Activity103LuoleilaiMain.super.RegisterRedDot(self)
-  local hardSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.DiffLevel, 1)
-  self:RegisterOrUpdateRedDotItem(self.m_activity2_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, hardSubActID)
-  self:RegisterOrUpdateRedDotItem(self.m_storyentry_redpoint2, RedDotDefine.ModuleType.HeroActMemoryEntry, self.act_id)
   self:RegisterOrUpdateRedDotItem(self.m_challenge_redpointhammersiren, RedDotDefine.ModuleType.HeroActMiniGameEntry, {
     actId = self.act_id,
     whackMoleActivityId = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.MiniGame)
-  })
-end
-
-function Form_Activity103LuoleilaiMain:OnBtntaskClicked()
-  HeroActivityManager:GotoHeroActivity({
-    main_id = self.act_id,
-    sub_id = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.Task),
-    iDailySubActId = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.DailyTask)
   })
 end
 
@@ -85,21 +63,6 @@ function Form_Activity103LuoleilaiMain:OnBtnhammersirenClicked()
     main_id = self.act_id,
     sub_id = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.MiniGame)
   })
-end
-
-function Form_Activity103LuoleilaiMain:OnUIActiveEvent(active)
-  local content_node = self.m_csui.m_uiGameObject.transform:Find("content_node").gameObject
-  if content_node then
-    content_node:SetActive(active)
-  end
-end
-
-function Form_Activity103LuoleilaiMain:OnPartUIActiveEvent(active)
-  self.m_pnl_right:SetActive(active)
-end
-
-function Form_Activity103LuoleilaiMain:IsFullScreen()
-  return true
 end
 
 function Form_Activity103LuoleilaiMain:GetDownloadResourceExtra(tParam)

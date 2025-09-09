@@ -35,7 +35,8 @@ ActivityManager.ActivitySubPanelName = {
   ActivitySPName_EmbraceBonusActivity = "EmbraceBonusSubPanel",
   ActivitySPName_FirstRechargeActivity = "FirstRechargeActivitySubPanel",
   ActivitySPName_ReturnBackSignActivity = "ReturnBackSignSubPanel",
-  ActivitySPName_ConsumeRewardActivity = "ChargeRebateSubPanel"
+  ActivitySPName_ConsumeRewardActivity = "ChargeRebateSubPanel",
+  ActivitySPName_HeroTrialActivity = "HeroTrialActivitySubPanel"
 }
 ActivityManager.ActStateEnum = {
   Normal = 0,
@@ -131,6 +132,7 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/ConsumeReward/ConsumeRewardActivity")
   self:LoadActivity("Module/Activity/JumpFace/TimelinePushfaceActivity")
   self:LoadActivity("Module/Activity/GameActFightDataUpdate/GameActFightDataUpdateActivity")
+  self:LoadActivity("Module/Activity/HeroTrial/HeroTrialActivity")
 end
 
 function ActivityManager:LoadActivity(sActivityPath)
@@ -252,7 +254,7 @@ function ActivityManager:OnInitNetwork()
   RPCS():Listen_Push_Activity_ChangeBatch(handler(self, self.OnPushActivityChangeBatch), "ActivityManager")
   RPCS():Listen_Push_Activity_Reload(handler(self, self.OnPushActivityReload), "ActivityManager")
   RPCS():Listen_Push_SurveyStatus(handler(self, self.OnPushSurveyStatus), "ActivityManager")
-  RPCS():Listen_Push_NewGift(handler(self, self.OnPushNewGift), "ActivityManager")
+  RPCS():Listen_Push_PushGiftTrigger(handler(self, self.OnPushPushGiftTrigger), "ActivityManager")
   RPCS():Listen_Push_NewActivityPickupGift(handler(self, self.OnPushNewActivityPickupGift), "ActivityManager")
   RPCS():Listen_Push_UploadFlog(handler(self, self.OnPushFlogReport), "ActivityManager")
 end
@@ -308,12 +310,15 @@ function ActivityManager:SetActivityDataList(msg)
     [MTTD.ActivityType_PayStore] = 200
   }
   table.sort(self.m_vActivityData, function(a, b)
+    if a.iSortIndex ~= b.iSortIndex then
+      return a.iSortIndex < b.iSortIndex
+    end
     local aSort = ActivitySort[a.iActivityType] or 0
     local bSort = ActivitySort[b.iActivityType] or 0
-    if aSort == bSort then
-      return a.iActivityId < b.iActivityId
+    if aSort ~= bSort then
+      return aSort < bSort
     end
-    return aSort < bSort
+    return a.iActivityId < b.iActivityId
   end)
   self.m_pushList = {}
   self.m_vActivity = {}
@@ -695,9 +700,32 @@ function ActivityManager:OnPushSurveyStatus(sc, msg)
   end
 end
 
-function ActivityManager:OnPushNewGift(sc, msg)
-  self:broadcastEvent("eGameEvent_Push_Gift", sc)
-  self:RefreshPushGiftRedPoint()
+function ActivityManager:OnPushPushGiftTrigger(sc, msg)
+  local iActivityID = sc.iActivityID
+  local activity = self:GetActivityByID(iActivityID)
+  if activity then
+    activity:SetPushGiftTrigger(true)
+  end
+end
+
+function ActivityManager:CheckAndPushNewGift()
+  local activity = self:GetActivityByType(MTTD.ActivityType_PushGift)
+  if not activity or not activity:checkCondition() then
+    return
+  end
+  local bIsNeedFresh = activity:CheckIsNeedPushNewGift()
+  if not bIsNeedFresh then
+    return
+  end
+  local reqMsg = MTTDProto.Cmd_Act_PushGift_GetNewGiftList_CS()
+  reqMsg.iActivityID = activity:getID()
+  RPCS():Act_PushGift_GetNewGiftList(reqMsg, function(sc, msg)
+    if not (sc and sc.vPushGiftNew) or not next(sc.vPushGiftNew) then
+      return
+    end
+    self:broadcastEvent("eGameEvent_Push_Gift", sc)
+    self:RefreshPushGiftRedPoint()
+  end)
 end
 
 function ActivityManager:OnPushNewActivityPickupGift(sc, msg)

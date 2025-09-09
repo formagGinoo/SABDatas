@@ -3,6 +3,7 @@ local GachaManager = class("GachaManager", BaseManager)
 GachaManager.FirstGachaStr = "gacha"
 local PlayerPrefs = CS.UnityEngine.PlayerPrefs
 GachaManager.WishListUnlockType = {GachaNum = 1}
+GachaManager.WishListSetType = {Fill = 1, Manual = 1}
 
 function GachaManager:OnCreate()
   self.m_chooseWindowId = nil
@@ -154,10 +155,11 @@ function GachaManager:OnReqDoGachaSC(stData, msg)
   self:broadcastEvent("eGameEvent_DoGacha", stData)
 end
 
-function GachaManager:ReqGachaSetWishList(iGachaId, vHeroIdList)
+function GachaManager:ReqGachaSetWishList(iGachaId, vHeroIdList, iSetType)
   local reqMsg = MTTDProto.Cmd_Gacha_SetWishList_CS()
   reqMsg.iGachaId = iGachaId
   reqMsg.vHeroIdList = vHeroIdList
+  reqMsg.iSetType = iSetType
   RPCS():Gacha_SetWishList(reqMsg, handler(self, self.OnReqGachaSetWishListSC))
 end
 
@@ -217,6 +219,23 @@ end
 function GachaManager:GetGachaWishListById(iGachaId)
   local gachaPool = self.mGachaPool[iGachaId] or {}
   return gachaPool.vWishList or {}
+end
+
+function GachaManager:GetWishListInitialRoleData()
+  if not self.wishListInitialRoleData then
+    self.wishListInitialRoleData = {}
+    local cfgArr = string.split(ConfigManager:GetGlobalSettingsByKey("WishListInitialRole"), ";")
+    for _, v in pairs(cfgArr) do
+      local simpleStr = string.split(v, "/")
+      local tempList = {}
+      local charList = string.split(simpleStr[2], ",")
+      for _, k in pairs(charList) do
+        table.insert(tempList, tonumber(k))
+      end
+      self.wishListInitialRoleData[tonumber(simpleStr[1])] = tempList
+    end
+  end
+  return self.wishListInitialRoleData
 end
 
 function GachaManager:GetGachaDailyTimesById(iGachaId)
@@ -1003,6 +1022,35 @@ function GachaManager:CheckGacha1HaveRedDotById(gachaId)
   end
 end
 
+function GachaManager:GetStepConfigByStepID(stepId)
+  if not self.gachaStepCfg then
+    local gachaStepIns = ConfigManager:GetConfigInsByName("GachaStep")
+    self.gachaStepCfg = gachaStepIns:GetValue_ByStepID(stepId) or {}
+  end
+  return self.gachaStepCfg
+end
+
+function GachaManager:GetCurSequencesInfo(sequencesId)
+  for id, v in pairs(self.gachaStepCfg) do
+    if id == sequencesId then
+      return v
+    end
+  end
+  return nil
+end
+
+function GachaManager:ReqGetStepReward(iGachaId, finalSeq)
+  local reqMsg = MTTDProto.Cmd_Gacha_TakeStepSeq_SC()
+  reqMsg.iGachaId = iGachaId
+  reqMsg.vSeq = finalSeq
+  RPCS():Gacha_TakeStepSeq(reqMsg, handler(self, self.OnReqGetStepRewardSC))
+end
+
+function GachaManager:OnReqGetStepRewardSC(sc, msg)
+  self:SetGachaTakenStepSeqById(sc.iGachaId, sc.vSeq)
+  self:broadcastEvent("eGameEvent_Gacha_StepGachaGetReward", sc.iGachaId, sc.vReward)
+end
+
 function GachaManager:IsHaveSpecialGacha10(gachaId)
   local gachaConfig = self:GetGachaConfig(gachaId)
   local specialWish10Token = utils.changeCSArrayToLuaTable(gachaConfig.m_Special10Token)
@@ -1024,7 +1072,9 @@ end
 
 function GachaManager:SetGachaTakenStepSeqById(gachaId, takenStepSeq)
   local gachaPool = self.mGachaPool[gachaId] or {}
-  gachaPool.vTakenStepSeq = takenStepSeq
+  for _, v in pairs(takenStepSeq) do
+    table.insert(gachaPool.vTakenStepSeq, v)
+  end
   self.mGachaPool[gachaId] = gachaPool
 end
 

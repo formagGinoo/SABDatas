@@ -42,7 +42,13 @@ function Form_LoginDownload:OnInactive()
   VideoManager:Stop()
   self:removeEventListener("eGameEvent_Login_ShowDownloadProgressBig", self.m_iHandlerIDShowDownloadProgress)
   local bHQ = CS.MUF.Resource.ResourceManager.GetHQ2D()
-  CS.VideoManager.Instance:PlayFromAddResReal("UI_Login_Main", "", false, nil, CS.UnityEngine.ScaleMode.ScaleAndCrop, false, true, false, false, bHQ)
+  local videoName = "UI_Login_Main"
+  local GlobalSettingsIns = CS.CData_GlobalSettings.GetInstance()
+  local tempVideoName = GlobalSettingsIns:GetValue_ByName("MainLoginVideo").m_Value
+  if tempVideoName and CS.MUF.Resource.ResourceLocationHelper.Instance:IsFileExists(tempVideoName .. ".mp4", CS.MUF.Resource.ResourceType.Video) then
+    videoName = tempVideoName
+  end
+  CS.VideoManager.Instance:PlayFromAddResReal(videoName, "", false, nil, CS.UnityEngine.ScaleMode.ScaleAndCrop, false, true, false, false, bHQ)
   local obj = CS.UnityEngine.GameObject.Find("Form_Viedo"):GetComponent("Canvas")
   obj.sortingOrder = 2000
 end

@@ -21,6 +21,7 @@ function AttractManager:OnCreate()
   self.m_allExpList = {}
   self.mLoadedHeroList = {}
   self.mHeroObjList = {}
+  self.mHeroSubObjList = {}
   self.mSerializationCfgList = {}
   self.mShowLetterList = {}
 end
@@ -44,6 +45,9 @@ function AttractManager:OnAfterInitConfig()
   self.m_attractTouchCfgIns = ConfigManager:GetConfigInsByName("AttractTouch")
   self.m_attractVoiceInfoIns = ConfigManager:GetConfigInsByName("AttractVoiceInfo")
   self.m_attractVoiceTextCfgIns = ConfigManager:GetConfigInsByName("AttractVoiceText")
+  self.m_FashionTouchCfgIns = ConfigManager:GetConfigInsByName("FashionTouch")
+  self.m_FashionVoiceInfoIns = ConfigManager:GetConfigInsByName("FashionVoiceInfo")
+  self.m_FashionVoiceTextCfgIns = ConfigManager:GetConfigInsByName("FashionVoiceText")
 end
 
 function AttractManager:OnDailyReset()
@@ -108,80 +112,227 @@ function AttractManager:GetBaseAttr(iPropertyID)
   return attrInfoList, attrList
 end
 
-function AttractManager:CheckVoiceUnlockCondition(stHero, iUnlockType, iUnlockData)
+function AttractManager:CheckVoiceUnlockCondition(heroServerData, iUnlockType, iUnlockData)
+  if not heroServerData then
+    return
+  end
   if iUnlockType == 1 then
     return true
   elseif iUnlockType == 2 then
-    return iUnlockData <= stHero.serverData.iLevel
+    return iUnlockData <= heroServerData.iLevel
   elseif iUnlockType == 3 then
-    return iUnlockData <= stHero.serverData.iBreak
+    return iUnlockData <= heroServerData.iBreak
   elseif iUnlockType == 4 then
-    return iUnlockData <= stHero.serverData.iAttractRank
+    return iUnlockData <= heroServerData.iAttractRank
   elseif iUnlockType == 5 then
-    local stAttractInfo = self:GetHeroAttractById(stHero.serverData.iHeroId)
+    local stAttractInfo = self:GetHeroAttractById(heroServerData.iHeroId)
     return stAttractInfo and stAttractInfo.vSendGift and #stAttractInfo.vSendGift > 0
   end
   return false
 end
 
-function AttractManager:GetTouchVoice(stHero, iHeroId, touchstr)
-  local mTouchBox = self.m_attractTouchCfgIns:GetValue_ByHeroID(iHeroId)
-  local vTouch = string.split(touchstr, ",")
-  local mTouch = {}
-  for k, v in ipairs(vTouch) do
-    mTouch[v] = true
+function AttractManager:GetOneLvHeroData(heroID)
+  if not heroID then
+    return
+  end
+  local heroCfg = HeroManager:GetHeroConfigByID(heroID)
+  if not heroCfg then
+    return
+  end
+  local serverData = {
+    iHeroId = heroID,
+    iLevel = 1,
+    iBreak = 0,
+    iAttractRank = 1
+  }
+  return serverData
+end
+
+AttractManager.FashionTouchBosEnum = {
+  "touchsp",
+  "touchhead",
+  "touchnormal",
+  "background"
+}
+
+function AttractManager:GetTouchPosStr(touchStr)
+  if not touchStr then
+    return
+  end
+  local vTouch = string.split(touchStr, ",")
+  if not vTouch or not next(vTouch) then
+    return
   end
   local touch
-  if mTouch.touchsp then
-    touch = "touchsp"
-  elseif mTouch.touchhead then
-    touch = "touchhead"
-  elseif mTouch.touchnormal then
-    touch = "touchnormal"
-  elseif mTouch.background then
-    touch = "background"
-  end
-  if touch then
-    local vVoiceList
-    for k, v in pairs(mTouchBox) do
-      if v.m_BoundingBox == touch then
-        vVoiceList = v.m_VoiceId
+  for _, v in ipairs(AttractManager.FashionTouchBosEnum) do
+    for _, tempTouchStr in ipairs(vTouch) do
+      if tempTouchStr == v then
+        touch = v
         break
       end
     end
-    if vVoiceList == nil then
-      return nil
+    if touch then
+      break
     end
-    local unlockList = {}
-    local vVoiceListLua = utils.changeCSArrayToLuaTable(vVoiceList)
-    for k, v in ipairs(vVoiceListLua) do
-      local voiceCfg = self.m_attractVoiceInfoIns:GetValue_ByHeroIDAndVoiceId(iHeroId, v)
-      if not voiceCfg:GetError() and self:CheckVoiceUnlockCondition(stHero, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData) then
+  end
+  return touch
+end
+
+function AttractManager:GetPlayVoiceList(vVoiceTextList)
+  if not vVoiceTextList then
+    return
+  end
+  local vVoiceTextListLua = {}
+  for k2, v2 in pairs(vVoiceTextList) do
+    vVoiceTextListLua[k2] = v2
+  end
+  local vTextList = {}
+  local firstId = 1
+  local firstText = vVoiceTextListLua[firstId]
+  while firstText do
+    vTextList[#vTextList + 1] = {
+      voice = firstText.m_voice,
+      subtitle = firstText.m_mText
+    }
+    firstText = vVoiceTextListLua[firstText.m_NextId]
+  end
+  return vTextList
+end
+
+function AttractManager:GetFashionTouchUnlockVoiceList(heroServerData, fashionID, voiceIDList)
+  if not heroServerData then
+    return
+  end
+  if not fashionID then
+    return
+  end
+  if not voiceIDList then
+    return
+  end
+  local unlockList = {}
+  for _, v in ipairs(voiceIDList) do
+    local voiceCfg = self.m_FashionVoiceInfoIns:GetValue_ByFashionIDAndVoiceId(fashionID, v)
+    if voiceCfg then
+      local isUnlock = self:CheckVoiceUnlockCondition(heroServerData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData)
+      if isUnlock then
         unlockList[#unlockList + 1] = v
       end
     end
-    if 0 < #unlockList then
-      local randomIndex = math.random(1, #unlockList)
-      local iVoiceId = unlockList[randomIndex]
-      local vVoiceTextList = self.m_attractVoiceTextCfgIns:GetValue_ByVoiceId(iVoiceId)
-      local vVoiceTextListLua = {}
-      for k2, v2 in pairs(vVoiceTextList) do
-        vVoiceTextListLua[k2] = v2
-      end
-      local vTextList = {}
-      local firstId = 1
-      local firstText = vVoiceTextListLua[firstId]
-      while firstText do
-        vTextList[#vTextList + 1] = {
-          voice = firstText.m_voice,
-          subtitle = firstText.m_mText
-        }
-        firstText = vVoiceTextListLua[firstText.m_NextId]
-      end
-      return vTextList
+  end
+  return unlockList
+end
+
+function AttractManager:GetFashionTouchVoice(heroServerData, fashionID, firstTouchStr)
+  if not heroServerData then
+    return
+  end
+  if not fashionID then
+    return
+  end
+  if not firstTouchStr then
+    return
+  end
+  local mTouchBox = self.m_FashionTouchCfgIns:GetValue_ByFashionID(fashionID)
+  if not mTouchBox then
+    return
+  end
+  local vVoiceList
+  for _, v in pairs(mTouchBox) do
+    if v.m_BoundingBox == firstTouchStr then
+      vVoiceList = v.m_VoiceId
+      break
     end
   end
-  return nil
+  if vVoiceList == nil then
+    return
+  end
+  local voiceIDList = utils.changeCSArrayToLuaTable(vVoiceList)
+  local unlockList = self:GetFashionTouchUnlockVoiceList(heroServerData, fashionID, voiceIDList)
+  if not unlockList or #unlockList == 0 then
+    return
+  end
+  local randomIndex = math.random(1, #unlockList)
+  local iVoiceId = unlockList[randomIndex]
+  local vVoiceTextList = self.m_FashionVoiceTextCfgIns:GetValue_ByVoiceId(iVoiceId)
+  return self:GetPlayVoiceList(vVoiceTextList)
+end
+
+function AttractManager:GetHeroTouchUnlockVoiceList(heroServerData, heroID, voiceIDList)
+  if not heroServerData then
+    return
+  end
+  if not heroID then
+    return
+  end
+  if not voiceIDList then
+    return
+  end
+  local unlockList = {}
+  for _, v in ipairs(voiceIDList) do
+    local voiceCfg = self.m_attractVoiceInfoIns:GetValue_ByHeroIDAndVoiceId(heroID, v)
+    if voiceCfg then
+      local isUnlock = self:CheckVoiceUnlockCondition(heroServerData, voiceCfg.m_UnlockType, voiceCfg.m_UnlockData)
+      if isUnlock then
+        unlockList[#unlockList + 1] = v
+      end
+    end
+  end
+  return unlockList
+end
+
+function AttractManager:GetHeroTouchVoice(heroServerData, heroID, firstTouchStr)
+  if not heroServerData then
+    return
+  end
+  if not heroID then
+    return
+  end
+  if not firstTouchStr then
+    return
+  end
+  local mTouchBox = self.m_attractTouchCfgIns:GetValue_ByHeroID(heroID)
+  if not mTouchBox then
+    return
+  end
+  local vVoiceList
+  for _, v in pairs(mTouchBox) do
+    if v.m_BoundingBox == firstTouchStr then
+      vVoiceList = v.m_VoiceId
+      break
+    end
+  end
+  if vVoiceList == nil then
+    return
+  end
+  local voiceIDList = utils.changeCSArrayToLuaTable(vVoiceList)
+  local unlockList = self:GetHeroTouchUnlockVoiceList(heroServerData, heroID, voiceIDList)
+  if not unlockList or #unlockList == 0 then
+    return
+  end
+  local randomIndex = math.random(1, #unlockList)
+  local iVoiceId = unlockList[randomIndex]
+  local vVoiceTextList = self.m_attractVoiceTextCfgIns:GetValue_ByVoiceId(iVoiceId)
+  return self:GetPlayVoiceList(vVoiceTextList)
+end
+
+function AttractManager:GetTouchVoice(heroServerData, iHeroId, iFashionID, touchStr)
+  if not heroServerData then
+    return
+  end
+  if not iHeroId then
+    return
+  end
+  local touch = self:GetTouchPosStr(touchStr)
+  if not touch then
+    return
+  end
+  local fashionID = iFashionID or 0
+  local fashionTouchDic = self.m_FashionTouchCfgIns:GetValue_ByFashionID(fashionID)
+  if fashionTouchDic == nil or fashionTouchDic.Count == 0 then
+    return self:GetHeroTouchVoice(heroServerData, iHeroId, touch)
+  else
+    return self:GetFashionTouchVoice(heroServerData, iFashionID, touch)
+  end
 end
 
 function AttractManager:ReqGetAttract()
@@ -715,6 +866,9 @@ function AttractManager:SetCurLightSettings(prefabName)
 end
 
 function AttractManager:SetFavorabilityCameraInit(bIsInit)
+  if utils.isNull(self.cameraInit) or utils.isNull(self.cameraFocus) then
+    return
+  end
   self.cameraInit:SetActive(bIsInit)
   self.cameraFocus:SetActive(not bIsInit)
 end
@@ -754,19 +908,19 @@ function AttractManager:LoadFavorabilityHero(hero_id, params, callback, cancelCa
   end
   
   local iFasionId = self:GetAttractFasionID(hero_id) or HeroManager:GetCurUseFashionID(hero_id) or 0
-  local m_PerformanceID
+  local m_SpecialPerformanceID
   local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(hero_id, iFasionId)
   if not fashionCfg then
     log.error("can not find fashion cfg in HeroFashion config  id==" .. tostring(iFasionId))
     OnLoadFavorabilityHeroEnd()
     return
   end
-  m_PerformanceID = fashionCfg.m_PerformanceID[0]
+  m_SpecialPerformanceID = fashionCfg.m_SpecialPerformanceID[0]
   local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
+  local presentationData = PresentationIns:GetValue_ByPerformanceID(m_SpecialPerformanceID)
   local role_name = presentationData.m_Prefab
   if not role_name then
-    log.error("can not find cfg in Presentation config  id==" .. tostring(m_PerformanceID))
+    log.error("can not find cfg in Presentation config  id==" .. tostring(m_SpecialPerformanceID))
     OnLoadFavorabilityHeroEnd()
     return
   end
@@ -821,6 +975,7 @@ function AttractManager:LoadFavorabilityHero(hero_id, params, callback, cancelCa
           self:SetChairModelActive(true)
         end
         self.curShowHeroObj = result
+        self:CheckAndLoadHeroSubObj(role_name, result, presentationData.m_InitAnnex)
         UILuaHelper.PlayAnimatorByNameInChildren(result, "study_idle")
         self:CheckResCacheOut()
         OnLoadFavorabilityHeroEnd()
@@ -842,10 +997,57 @@ function AttractManager:CheckResCacheOut()
         if k == name then
           Role3DManager:DestroyRoleObj(v, name, aniName)
           self.mHeroObjList[k] = nil
+          if self.mHeroSubObjList[k] then
+            for sub_role_name, sub_role_obj in pairs(self.mHeroSubObjList[k]) do
+              Role3DManager:DestroyRoleObj(sub_role_obj, sub_role_name, AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr)
+              self.mHeroSubObjList[k][sub_role_name] = nil
+            end
+            self.mHeroSubObjList[k] = nil
+          end
         end
       end
     end
     table.remove(self.mLoadedHeroList, 1)
+  end
+end
+
+function AttractManager:CheckAndLoadHeroSubObj(role_name, heroObj, annexList)
+  if not (not utils.isNull(heroObj) and annexList) or not role_name then
+    return
+  end
+  local _vInitAnnex = utils.changeCSArrayToLuaTable(annexList)
+  if #_vInitAnnex == 0 then
+    return
+  end
+  for _, v in ipairs(_vInitAnnex) do
+    local sub_role_name = v[1]
+    if not sub_role_name then
+      return
+    end
+    local aniName = AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr
+    local vResourceExtra = {}
+    table.insert(vResourceExtra, {
+      sName = sub_role_name,
+      eType = DownloadManager.ResourceType.Role
+    })
+    table.insert(vResourceExtra, {
+      sName = aniName,
+      eType = DownloadManager.ResourceType.Animation
+    })
+    DownloadManager:DownloadResourceWithUI(nil, vResourceExtra, "CouncilHallManager:CheckAndLoadHeroSubObj" .. tostring(sub_role_name), nil, nil, function()
+      Role3DManager:LoadRoleAsync(sub_role_name, aniName, function(name, result)
+        self.mHeroSubObjList[role_name] = self.mHeroSubObjList[role_name] or {}
+        self.mHeroSubObjList[role_name][sub_role_name] = result
+        local parentTrans = CS.CommonExtensions.FindIteratively(heroObj.transform, v[2])
+        if not utils.isNull(parentTrans) then
+          result.transform:SetParent(parentTrans, true)
+          result.transform.localRotation = Vector3.zero
+          result.transform.localPosition = Vector3.zero
+          result.transform.localScale = Vector3.one
+          UILuaHelper.PlayAnimatorByNameInChildren(result, "study_idle")
+        end
+      end)
+    end)
   end
 end
 
@@ -860,10 +1062,18 @@ end
 function AttractManager:UnloadAssets()
   for i = table.getn(self.mLoadedHeroList), 1, -1 do
     local info = self.mLoadedHeroList[i]
-    if not utils.isNull(self.mHeroObjList[info.role_name]) then
-      Role3DManager:DestroyRoleObj(self.mHeroObjList[info.role_name], info.role_name, info.aniName)
+    local role_name = info.role_name
+    if not utils.isNull(self.mHeroObjList[role_name]) then
+      Role3DManager:DestroyRoleObj(self.mHeroObjList[role_name], role_name, info.aniName)
       self.mLoadedHeroList[i] = nil
-      self.mHeroObjList[info.role_name] = nil
+      self.mHeroObjList[role_name] = nil
+      if self.mHeroSubObjList[role_name] then
+        for sub_role_name, sub_role_obj in pairs(self.mHeroSubObjList[role_name]) do
+          Role3DManager:DestroyRoleObj(sub_role_obj, sub_role_name, AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr)
+          self.mHeroSubObjList[role_name][sub_role_name] = nil
+        end
+        self.mHeroSubObjList[role_name] = nil
+      end
     end
   end
   if self.mHeroObjList and table.getn(self.mHeroObjList) > 0 then
@@ -873,7 +1083,6 @@ function AttractManager:UnloadAssets()
       end
     end
   end
-  self.mHeroObjList = {}
 end
 
 function AttractManager:IsAttractBiographyHaveRedDot(iHeroId)

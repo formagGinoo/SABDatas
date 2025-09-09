@@ -8,6 +8,7 @@ local DelayShowTimer = 1.6
 function CouncilHallManager:OnCreate()
   self.mLoadedHeroList = {}
   self.mHeroObjList = {}
+  self.mHeroSubObjList = {}
   self.curShowHeroObjList = {}
   self.ChairList = nil
   self.stCouncil = nil
@@ -385,6 +386,13 @@ function CouncilHallManager:CheckResCacheOut()
         if k == name then
           Role3DManager:DestroyRoleObj(v, name, aniName)
           self.mHeroObjList[k] = nil
+          if self.mHeroSubObjList[k] then
+            for sub_role_name, sub_role_obj in pairs(self.mHeroSubObjList[k]) do
+              Role3DManager:DestroyRoleObj(sub_role_obj, sub_role_name, AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr)
+              self.mHeroSubObjList[k][sub_role_name] = nil
+            end
+            self.mHeroSubObjList[k] = nil
+          end
         end
       end
     end
@@ -407,19 +415,19 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
     end
   end
   for i, hero_id in ipairs(heroList) do
-    local m_PerformanceID
+    local m_SpecialPerformanceID
     local iFasionId = HeroManager:GetCurUseFashionID(hero_id) or 0
     local fashionCfg = HeroManager:GetHeroFashion():GetFashionInfoByHeroIDAndFashionID(hero_id, iFasionId)
     if not fashionCfg then
       return
     end
-    m_PerformanceID = fashionCfg.m_PerformanceID[0]
+    m_SpecialPerformanceID = fashionCfg.m_SpecialPerformanceID[0]
     local roleSizeCfg = self:GetCouncilHallRoleSize(hero_id, iFasionId)
     local PresentationIns = ConfigManager:GetConfigInsByName("Presentation")
-    local presentationData = PresentationIns:GetValue_ByPerformanceID(m_PerformanceID)
+    local presentationData = PresentationIns:GetValue_ByPerformanceID(m_SpecialPerformanceID)
     local role_name = presentationData.m_Prefab
     if not role_name then
-      log.error("can not find cfg in Presentation config  id==" .. tostring(m_PerformanceID))
+      log.error("can not find cfg in Presentation config  id==" .. tostring(m_SpecialPerformanceID))
       self:broadcastEvent("eGameEvent_LoadCouncilHallRoleFinish")
       return
     end
@@ -454,12 +462,6 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
           sName = tostring(hero_id),
           eType = DownloadManager.ResourcePackageType.Level_Character
         }
-        local vResourceExtra = {
-          {
-            sName = aniName,
-            eType = DownloadManager.ResourceType.Animation
-          }
-        }
         DownloadManager:DownloadResourceWithUI(vPackage, nil, "CouncilHallManager:LoadCouncilHallHero" .. tostring(hero_id), nil, nil, function()
           Role3DManager:LoadRoleAsync(role_name, aniName, function(name, result)
             self.mLoadedHeroList[#self.mLoadedHeroList + 1] = {role_name = role_name, aniName = aniName}
@@ -478,6 +480,7 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
               result.transform.localPosition = Vector3.zero
               result.transform.localScale = Vector3.one
             end
+            self:CheckAndLoadHeroSubObj(role_name, result, presentationData.m_InitAnnex)
             self.curShowHeroObjList[i] = result
             count = count + 1
             UILuaHelper.PlayAnimatorByNameInChildren(result, "show_idle")
@@ -497,6 +500,59 @@ function CouncilHallManager:LoadCouncilHallHero(heroList)
   end
 end
 
+function CouncilHallManager:CheckAndLoadHeroSubObj(role_name, heroObj, annexList)
+  if not (not utils.isNull(heroObj) and annexList) or not role_name then
+    return
+  end
+  local _vInitAnnex = utils.changeCSArrayToLuaTable(annexList)
+  if #_vInitAnnex == 0 then
+    return
+  end
+  for _, v in ipairs(_vInitAnnex) do
+    local sub_role_name = v[1]
+    if not sub_role_name then
+      return
+    end
+    local aniName = AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr
+    local vResourceExtra = {}
+    table.insert(vResourceExtra, {
+      sName = sub_role_name,
+      eType = DownloadManager.ResourceType.Role
+    })
+    table.insert(vResourceExtra, {
+      sName = aniName,
+      eType = DownloadManager.ResourceType.Animation
+    })
+    DownloadManager:DownloadResourceWithUI(nil, vResourceExtra, "CouncilHallManager:CheckAndLoadHeroSubObj" .. tostring(sub_role_name), nil, nil, function()
+      Role3DManager:LoadRoleAsync(sub_role_name, aniName, function(name, result)
+        self.mHeroSubObjList[role_name] = self.mHeroSubObjList[role_name] or {}
+        self.mHeroSubObjList[role_name][sub_role_name] = result
+        local parentTrans = CS.CommonExtensions.FindIteratively(heroObj.transform, v[2])
+        if not utils.isNull(parentTrans) then
+          result.transform:SetParent(parentTrans, true)
+          result.transform.localRotation = Vector3.zero
+          result.transform.localPosition = Vector3.zero
+          result.transform.localScale = Vector3.one
+          UILuaHelper.PlayAnimatorByNameInChildren(result, "show_idle")
+        end
+      end)
+    end)
+  end
+end
+
+function CouncilHallManager:PlayHeroAnimator(heroObj, animatorName)
+  if utils.isNull(heroObj) then
+    return
+  end
+  UILuaHelper.PlayAnimatorByNameInChildren(heroObj, animatorName)
+  local role_name = string.replace(heroObj.name, "(Clone)", "")
+  if self.mHeroSubObjList[role_name] then
+    for k, v in pairs(self.mHeroSubObjList[role_name]) do
+      UILuaHelper.PlayAnimatorByNameInChildren(v, animatorName)
+    end
+  end
+end
+
 function CouncilHallManager:IsLoaded(role_name)
   for i, v in ipairs(self.mLoadedHeroList) do
     if v.role_name == role_name then
@@ -508,10 +564,18 @@ end
 function CouncilHallManager:UnloadAssets()
   for i = table.getn(self.mLoadedHeroList), 1, -1 do
     local info = self.mLoadedHeroList[i]
-    if not utils.isNull(self.mHeroObjList[info.role_name]) then
-      Role3DManager:DestroyRoleObj(self.mHeroObjList[info.role_name], info.role_name, info.aniName)
+    local role_name = info.role_name
+    if not utils.isNull(self.mHeroObjList[role_name]) then
+      Role3DManager:DestroyRoleObj(self.mHeroObjList[role_name], role_name, info.aniName)
       self.mLoadedHeroList[i] = nil
-      self.mHeroObjList[info.role_name] = nil
+      self.mHeroObjList[role_name] = nil
+      if self.mHeroSubObjList[role_name] then
+        for sub_role_name, sub_role_obj in pairs(self.mHeroSubObjList[role_name]) do
+          Role3DManager:DestroyRoleObj(sub_role_obj, sub_role_name, AnimatorPrefixStr .. sub_role_name .. AnimatorsuffixStr)
+          self.mHeroSubObjList[role_name][sub_role_name] = nil
+        end
+        self.mHeroSubObjList[role_name] = nil
+      end
     end
   end
   if self.mHeroObjList and table.getn(self.mHeroObjList) > 0 then

@@ -78,6 +78,10 @@ function HeroIcon:InitComponents()
   if txtLvObj then
     self.m_txt_Lv_num = txtLvObj:GetComponent(T_TextMeshProUGUI)
   end
+  local img_lvBgObj = self.m_goRootTrans:Find("c_battle_card/img_lvbg")
+  if img_lvBgObj then
+    self.m_img_lv_bg_obj = img_lvBgObj
+  end
   local txtLvObjBig = self.m_goRootTrans:Find("c_battle_card/txt_lv/c_txt_lv_num")
   if txtLvObjBig then
     self.m_txt_Lv_num_big = txtLvObjBig:GetComponent(T_TextMeshProUGUI)
@@ -263,31 +267,20 @@ function HeroIcon:FreshNotHave()
 end
 
 function HeroIcon:FreshInherit()
-  if not self.m_heroData.iOriLevel then
-    if self.m_txt_Lv_num then
-      UILuaHelper.SetColor(self.m_txt_Lv_num, 255, 255, 255, 1)
-    end
-    if self.m_txt_Lv_num_big then
-      UILuaHelper.SetColor(self.m_txt_Lv_num_big, 255, 255, 255, 1)
-    end
-    if self.m_inheritTran then
-      self.m_inheritTran.gameObject:SetActive(false)
-    end
-    return
-  end
-  local resetFlag, isHave = InheritManager:CheckCanResetLvById(self.m_heroData.iHeroId)
+  local evoBeginLv = InheritManager:GetInheritEvoBeginLevel()
+  local isInherit = self.m_heroData.iOriLevel and self.m_heroData.iOriLevel > 0 or self.m_heroData.iLevel and evoBeginLv < self.m_heroData.iLevel
   if self.m_inheritTran then
-    self.m_inheritTran.gameObject:SetActive(not resetFlag and isHave)
+    self.m_inheritTran.gameObject:SetActive(isInherit)
   end
   if self.m_txt_Lv_num then
-    if not resetFlag and isHave then
+    if isInherit then
       UILuaHelper.SetColor(self.m_txt_Lv_num, 178, 72, 91, 1)
     else
       UILuaHelper.SetColor(self.m_txt_Lv_num, 255, 255, 255, 1)
     end
   end
   if self.m_txt_Lv_num_big then
-    if not resetFlag and isHave then
+    if isInherit then
       UILuaHelper.SetColor(self.m_txt_Lv_num_big, 178, 72, 91, 1)
     else
       UILuaHelper.SetColor(self.m_txt_Lv_num_big, 255, 255, 255, 1)
@@ -562,13 +555,37 @@ end
 
 function HeroIcon:SetObtainActive(isActive)
   if self.c_no_obtain then
-    self.c_no_obtain.gameObject:SetActive(isActive)
+    UILuaHelper.SetActive(self.c_no_obtain, isActive)
   end
   if self.m_star_node then
-    self.m_star_node.gameObject:SetActive(not isActive)
+    UILuaHelper.SetActive(self.m_star_node, not isActive)
   end
   if self.m_img_career then
-    self.m_img_career.transform.parent.gameObject:SetActive(not isActive)
+    UILuaHelper.SetActive(self.m_img_career.transform.parent, not isActive)
+  end
+end
+
+function HeroIcon:SetObtainObjActive(isActive)
+  if self.c_no_obtain then
+    UILuaHelper.SetActive(self.c_no_obtain, isActive)
+  end
+end
+
+function HeroIcon:SetStarNodeActive(isActive)
+  if self.m_star_node then
+    UILuaHelper.SetActive(self.m_star_node, isActive)
+  end
+end
+
+function HeroIcon:SetCareerIconActive(isActive)
+  if self.m_img_career then
+    UILuaHelper.SetActive(self.m_img_career.transform.parent, isActive)
+  end
+end
+
+function HeroIcon:SetImgLvBgObjActive(isActive)
+  if self.m_img_lv_bg_obj then
+    UILuaHelper.SetActive(self.m_img_lv_bg_obj, isActive)
   end
 end
 

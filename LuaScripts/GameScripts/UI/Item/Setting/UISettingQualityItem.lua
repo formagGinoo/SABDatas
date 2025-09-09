@@ -23,6 +23,9 @@ function UISettingQualityItem:OnFreshData()
     elseif self.m_GraphicID == 4 then
       self.m_iMaxLevel = 2
       self.m_iSelectLevel = self:GetAspectRatioSetting()
+    elseif self.m_GraphicID == 5 then
+      self.m_iMaxLevel = 2
+      self.m_iSelectLevel = self:GetKeyboardBindSetting()
     end
     self.m_iCurSelectIndex = 1
     local vChoiceList = {}
@@ -162,6 +165,20 @@ function UISettingQualityItem:OnSelectChoice(iFilterIndex, iChoiceID, iValue)
       CS.FixedAspectRatioWindow.Instance():SetAspectRatio(2.3333333333333335)
     end
     return
+  elseif iChoiceID == 501 then
+    if ChannelManager:IsWindows() then
+      CS.UnityEngine.PlayerPrefs.SetInt("KeyboardBind_Index_Key", 1)
+      KeyboardMappingManager:OnKeyboardBindingChange()
+      self:broadcastEvent("eGameEvent_KeyboardBinding_Change")
+    end
+    return
+  elseif iChoiceID == 502 then
+    if ChannelManager:IsWindows() then
+      CS.UnityEngine.PlayerPrefs.SetInt("KeyboardBind_Index_Key", 0)
+      KeyboardMappingManager:OnKeyboardBindingChange()
+      self:broadcastEvent("eGameEvent_KeyboardBinding_Change")
+    end
+    return
   end
 end
 
@@ -173,6 +190,12 @@ function UISettingQualityItem:GetAspectRatioSetting()
     return epsilon > math.abs(ratio - targetRatio) and 0 or 1
   end
   return 1
+end
+
+function UISettingQualityItem:GetKeyboardBindSetting()
+  if ChannelManager:IsWindows() then
+    return CS.UnityEngine.PlayerPrefs.GetInt("KeyboardBind_Index_Key", 1)
+  end
 end
 
 function UISettingQualityItem:GetFPSSetting()

@@ -5,7 +5,7 @@ function ActExplorePlaySoundTask:ctor(eventName)
 end
 
 function ActExplorePlaySoundTask:OnCreate(world, entityObj)
-  CS.WwiseMusicPlayer.Instance:StartPlay(self.eventName, entityObj.gameObject, nil)
+  CS.UI.UILuaHelper.StartPlaySFX(self.eventName, entityObj.gameObject)
 end
 
 return ActExplorePlaySoundTask

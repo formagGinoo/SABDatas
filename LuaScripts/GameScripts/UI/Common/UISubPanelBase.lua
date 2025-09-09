@@ -49,6 +49,7 @@ function UISubPanelBase:OnDestroy()
   self:UnRegisterAllRedDotItem()
   self:RemoveAllSubPanel()
   UILuaHelper.UnbindViewObjectsManual(self, self.m_rootObj, self:getName())
+  UILuaHelper.DestroyReleaseSpriteRefHolder(self.m_rootObj)
   GameObject.Destroy(self.m_rootObj)
   SubPanelManager:CheckUnloadAsset(self.m_panelStr)
   self.m_parentObj = nil

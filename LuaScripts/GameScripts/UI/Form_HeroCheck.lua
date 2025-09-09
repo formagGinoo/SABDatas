@@ -40,6 +40,13 @@ function Form_HeroCheck:AfterInit()
   self:InitShowAttr()
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
+  self.m_lastPlayTouchVoiceTime = 0
+  self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
+  if self.m_spineClick then
+    self.m_spineClick.raycaster = self.m_rootTrans:GetComponent("GraphicRaycasterBugFixed")
+    self.m_spineClick.Touched = handler(self, self.OnSpineTouchClick)
+    self:StopCurTouchPlayingVoice()
+  end
 end
 
 function Form_HeroCheck:OnActive()
@@ -68,19 +75,19 @@ function Form_HeroCheck:PlayHeroDisPlayVoice(heroCfg)
     return
   end
   if self.m_playingDisplayId then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
     self.m_playingDisplayId = nil
   end
   if self.m_playingDisplayId2 then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
     self.m_playingDisplayId2 = nil
   end
-  CS.UI.UILuaHelper.StartPlaySFX(presentationData.m_CharDisplayVoice, nil, function(playingDisplayId)
+  UILuaHelper.StartPlaySFX(presentationData.m_CharDisplayVoice, nil, function(playingDisplayId)
     self.m_playingDisplayId = playingDisplayId
   end, function()
     self.m_playingDisplayId = nil
   end)
-  CS.UI.UILuaHelper.StartPlaySFX(presentationData.m_GainVoiceEvent, nil, function(playingDisplayId)
+  UILuaHelper.StartPlaySFX(presentationData.m_GainVoiceEvent, nil, function(playingDisplayId)
     self.m_playingDisplayId2 = playingDisplayId
   end, function()
     self.m_playingDisplayId2 = nil
@@ -99,12 +106,13 @@ function Form_HeroCheck:FreshDamageType(heroAttribute)
 end
 
 function Form_HeroCheck:OnInactive()
+  self:StopCurTouchPlayingVoice()
   if self.m_playingDisplayId then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId)
     self.m_playingDisplayId = nil
   end
   if self.m_playingDisplayId2 then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
+    UILuaHelper.StopPlaySFX(self.m_playingDisplayId2)
     self.m_playingDisplayId2 = nil
   end
   self:CheckRecycleSpine(true)
@@ -125,6 +133,7 @@ function Form_HeroCheck:OnBtnswitchClicked()
 end
 
 function Form_HeroCheck:OnDestroy()
+  self:StopCurTouchPlayingVoice()
   self:CheckRecycleSpine(true)
   self.super.OnDestroy(self)
   if self.m_startInAnimTimer then
@@ -272,6 +281,9 @@ function Form_HeroCheck:FreshShowHeroInfo()
 end
 
 function Form_HeroCheck:CheckRecycleSpine(isResetParam)
+  if self.m_spineClick then
+    self.m_spineClick:DestroyFollowerList()
+  end
   if self.m_HeroSpineDynamicLoader and self.m_curHeroSpineObj then
     if isResetParam then
       UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
@@ -294,6 +306,10 @@ function Form_HeroCheck:ShowHeroSpine(heroSpinePathStr)
     self:CheckRecycleSpine()
     self.m_curHeroSpineObj = spineLoadObj
     self:OnLoadSpineBack()
+    if self.m_spineClick and self.m_curHeroSpineObj and not utils.isNull(self.m_curHeroSpineObj.spineObj) then
+      local spineStr = self.m_curHeroSpineObj.assetSpineStr
+      self.m_spineClick:BindingSpine("hero_place_" .. spineStr .. "," .. typeStr .. "," .. spineStr)
+    end
   end)
 end
 
@@ -550,7 +566,11 @@ function Form_HeroCheck:FreshShowHeroPower()
   end
   local breakNum = self.m_heroBreak or 0
   local power = self.m_serverPower
-  power = power or BigNumFormat(self.m_heroAttr:GetHeroPower(self.m_curHeroID, self.m_heroMaxLevelNum, breakNum, self.m_heroSkillList))
+  if not power then
+    power = BigNumFormat(self.m_heroAttr:GetHeroPower(self.m_curHeroID, self.m_heroMaxLevelNum, breakNum, self.m_heroSkillList))
+  else
+    power = BigNumFormat(power)
+  end
   self.m_txt_power_value_Text.text = power
 end
 
@@ -579,6 +599,35 @@ function Form_HeroCheck:ShowSkillStarChangePanelAnim(isShowSkillPanel, backFun)
       backFun()
     end
   end)
+end
+
+function Form_HeroCheck:PlayTouchVoice(voiceInfo)
+  UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
+    self.m_playingId = playingId
+    local tempVoiceInfo = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if tempVoiceInfo then
+      UILuaHelper.SetActive(self.m_dialog_root, true)
+      self.m_txt_dialog_Text.text = tempVoiceInfo.subtitle
+    end
+  end, function()
+    self.m_playTouchSubIndex = self.m_playTouchSubIndex + 1
+    local nextVoice = self.m_vVoiceTouchText[self.m_playTouchSubIndex]
+    if nextVoice ~= nil then
+      self:PlayTouchVoice(nextVoice)
+    else
+      self.m_playingId = nil
+      UILuaHelper.SetActive(self.m_dialog_root, false)
+    end
+  end)
+end
+
+function Form_HeroCheck:StopCurTouchPlayingVoice()
+  self.m_playTouchSubIndex = 1
+  if self.m_playingId then
+    UILuaHelper.StopPlaySFX(self.m_playingId)
+    self.m_playingId = nil
+  end
+  UILuaHelper.SetActive(self.m_dialog_root, false)
 end
 
 function Form_HeroCheck:OnBackClk()
@@ -727,8 +776,28 @@ function Form_HeroCheck:OnBtnskinClicked()
     return
   end
   StackPopup:Push(UIDefines.ID_FORM_FASHION, {
-    heroID = self.m_heroCfg.m_HeroID
+    heroID = self.m_heroCfg.m_HeroID,
+    isFromHeroCheck = true
   })
+end
+
+function Form_HeroCheck:OnSpineTouchClick(name, localpos)
+  log.info("Form_HeroCheck spineClick:" .. tostring(name))
+  if self.m_curHeroID == nil then
+    return
+  end
+  local curServerTime = TimeUtil:GetServerTimeS()
+  if curServerTime - self.m_lastPlayTouchVoiceTime < self.m_uiVariables.LimitVoiceSecNum then
+    return
+  end
+  self.m_lastPlayTouchVoiceTime = TimeUtil:GetServerTimeS()
+  local oneLevelHeroData = AttractManager:GetOneLvHeroData(self.m_curHeroID)
+  local vVoiceText = AttractManager:GetTouchVoice(oneLevelHeroData, self.m_curHeroID, 0, name)
+  if vVoiceText then
+    self:StopCurTouchPlayingVoice()
+    self.m_vVoiceTouchText = vVoiceText
+    self:PlayTouchVoice(self.m_vVoiceTouchText[self.m_playTouchSubIndex])
+  end
 end
 
 function Form_HeroCheck:GetDownloadResourceExtra(tParam)

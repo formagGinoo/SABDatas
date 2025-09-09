@@ -119,7 +119,7 @@ function ActivitySignSixPuzzleSubPanel:RefreshSignReward()
               local bSignToday = self.m_stActivity:IsSignToday()
               if not bSignToday then
                 stPanelItemConfig.rewardFinish:SetActive(true)
-                UILuaHelper.PlayAnimationByName(stPanelItemConfig.rewardFinish, "m_pnl_106warmup_item_done_in")
+                UILuaHelper.PlayAnimationByName(stPanelItemConfig.rewardFinish, "m_pnl_108warmup_item_done_in")
                 self:KillRewardTimer()
                 self.m_getRewardTimer = TimeService:SetTimer(1, 1, function()
                   self.m_stActivity:RequestSign(stSignInfo.iIndex)

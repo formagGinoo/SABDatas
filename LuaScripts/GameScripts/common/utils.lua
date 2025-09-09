@@ -622,6 +622,10 @@ function utils.openItemDetailPop(itemData, callBackFun, inBag)
       heroServerData = itemData.heroServerData,
       callBackFun = callBackFun
     })
+  elseif itemType == ResourceUtil.RESOURCE_TYPE.MiniGame108Item then
+    StackPopup:Push(UIDefines.ID_FORM_ACTIVITYMINIGAME108TIP, {
+      itemId = itemData.iID
+    })
   elseif itemType == ResourceUtil.RESOURCE_TYPE.Fashion then
     local fashionInfo = HeroManager:GetHeroFashion():GetFashionInfoByID(itemData.iID)
     if fashionInfo then
@@ -1043,6 +1047,20 @@ function utils.RecycleInParentUIPrefab(prefabStr, prefabObj)
     return
   end
   UIDynamicObjectManager:RecycleObjectByName(prefabStr, prefabObj)
+end
+
+function utils.openFormBagEquipFilter(equipDataList, click_transform, content_pivot, pos_offset, chooseBackFun, chooseFilterType, equipSlot, openFormBag)
+  local params = {
+    equipDataList = equipDataList,
+    click_transform = click_transform,
+    content_pivot = content_pivot,
+    pos_offset = pos_offset,
+    chooseBackFun = chooseBackFun,
+    chooseFilterType = chooseFilterType,
+    equipSlot = equipSlot,
+    openFormBag = openFormBag
+  }
+  StackPopup:Push(UIDefines.ID_FORM_BAGFILTER, params)
 end
 
 return utils

@@ -4,6 +4,7 @@ local __AncientResourceOnce = tonumber(ConfigManager:GetGlobalSettingsByKey("Anc
 local __AncientResourceContinue = tonumber(ConfigManager:GetGlobalSettingsByKey("AncientResourceContinue") or 0)
 local __AncientResourceItem = tonumber(ConfigManager:GetGlobalSettingsByKey("AncientResourceItem") or 0)
 local __AncientTaskRefresh = ConfigManager:GetGlobalSettingsByKey("AncientTaskRefresh")
+local PanelOutAni = "GuildElevatorcall_out1"
 
 function Form_GuildElevatorcall:SetInitParam(param)
 end
@@ -21,6 +22,7 @@ function Form_GuildElevatorcall:AfterInit()
   self.m_greenCostStr = ConfigManager:GetCommonTextById(100813)
   self.m_scheduleTotalStr = ConfigManager:GetCommonTextById(20045)
   self.m_scheduleNumStr = ConfigManager:GetCommonTextById(100811)
+  LocalDataManager:SetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorcall", TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime()), true)
 end
 
 function Form_GuildElevatorcall:OnActive()
@@ -51,6 +53,7 @@ end
 
 function Form_GuildElevatorcall:OnInactive()
   self.super.OnInactive(self)
+  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, PanelOutAni)
   self.m_scheduleNum = nil
   self.m_summonHeroCfg = nil
   self.m_summonEnergyMax = nil
@@ -71,6 +74,7 @@ function Form_GuildElevatorcall:AddEventListeners()
   self:addEventListener("eGameEvent_Ancient_AddEnergy", handler(self, self.OnAddEnergy))
   self:addEventListener("eGameEvent_Ancient_SummonHero", handler(self, self.OnSummonHero))
   self:addEventListener("eGameEvent_Alliance_Leave", handler(self, self.OnEventLeaveAlliance))
+  self:addEventListener("eGameEvent_Ancient_ResetEnergy", handler(self, self.OnAddEnergy))
 end
 
 function Form_GuildElevatorcall:RemoveAllEventListeners()
@@ -94,9 +98,43 @@ function Form_GuildElevatorcall:RefreshUI()
     local itemData = ResourceUtil:GetProcessRewardData({iID = heroId, iNum = 0})
     self.m_widgetItemIcon:SetItemInfo(itemData)
   end
+  self:RefreshTrialActUI(heroId)
   UILuaHelper.SetActive(self.m_uifx_img_bg_bar03, true)
   self:RefreshTaskUI()
   self:RefreshRightUI()
+end
+
+function Form_GuildElevatorcall:RefreshTrialActUI(heroId)
+  local trialAct = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+  if trialAct then
+    UILuaHelper.SetActive(self.m_trial_node, trialAct:checkCondition() and trialAct:CheckLevelIsExist(heroId))
+    local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+    local isNextDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorcall", 0)
+    if isNextDay then
+      UILuaHelper.SetActive(self.m_go_redpoint, not trialAct:CheckLevelIsFinishByHeroId(heroId))
+      local cfgList = AncientManager:GetAncientCharacterInfo()
+      local isShowChangeRedpoint = false
+      for _, v in pairs(cfgList) do
+        local result = trialAct:CheckLevelIsFinishByHeroId(v.m_HeroID)
+        if result == false then
+          isShowChangeRedpoint = true
+          break
+        end
+      end
+      UILuaHelper.SetActive(self.m_change_redpoint, isShowChangeRedpoint)
+    else
+      UILuaHelper.SetActive(self.m_go_redpoint, false)
+      local isNextDay_GuildElevatorMain = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorMain", 0)
+      if isNextDay_GuildElevatorMain then
+        UILuaHelper.SetActive(self.m_change_redpoint, true)
+      else
+        UILuaHelper.SetActive(self.m_change_redpoint, false)
+      end
+    end
+  else
+    UILuaHelper.SetActive(self.m_trial_node, false)
+    UILuaHelper.SetActive(self.m_change_redpoint, false)
+  end
 end
 
 function Form_GuildElevatorcall:RefreshResourceBar()
@@ -191,6 +229,7 @@ function Form_GuildElevatorcall:RefreshRightUI()
       UILuaHelper.SetActive(self.m_pnl_schedule_close, true)
       UILuaHelper.SetActive(self.m_txt_contentgray02, true)
     end
+    UILuaHelper.SetActive(self.m_btn_reset, self.m_curSummonEnergy and 0 < self.m_curSummonEnergy)
   else
     UILuaHelper.SetActive(self.m_pnl_right, false)
   end
@@ -317,7 +356,6 @@ function Form_GuildElevatorcall:PressEnter()
   UILuaHelper.SetActive(self.m_uifx_injection, true)
   UILuaHelper.SetActive(self.m_uifx_injection_one, false)
   UILuaHelper.SetActive(self.m_uifx_injection_one, true)
-  UILuaHelper.PlayAnimationByName(self.m_csui.m_uiGameObject, "GuildElevatorcall_loop")
 end
 
 function Form_GuildElevatorcall:PressExit()
@@ -397,12 +435,34 @@ function Form_GuildElevatorcall:OnBtnsummonClicked()
   self.m_summon_sequence:SetAutoKill(true)
 end
 
+function Form_GuildElevatorcall:OnBtnresetClicked()
+  utils.popUpDirectionsUI({
+    tipsID = 1250,
+    func1 = function()
+      AncientManager:ReqAncientResetEnergyCS()
+    end
+  })
+end
+
 function Form_GuildElevatorcall:OnBtnbackClicked()
   local form = StackSpecial:GetUIInstanceLua(UIDefines.ID_FORM_GUILD)
   if form == nil then
     StackFlow:Push(UIDefines.ID_FORM_GUILD)
   end
   self:CloseForm()
+end
+
+function Form_GuildElevatorcall:OnBtngoClicked()
+  local heroId = AncientManager:GetCurHeroID()
+  if heroId and heroId ~= 0 then
+    local act = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+    if act and act:checkCondition() then
+      QuickOpenFuncUtil:OpenFunc(30001, {
+        activityId = act:getID(),
+        subPanelTabIndex = heroId
+      })
+    end
+  end
 end
 
 function Form_GuildElevatorcall:OnEventLeaveAlliance()

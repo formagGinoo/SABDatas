@@ -88,8 +88,9 @@ function Form_PersonalRaidBattleInfo:refreshLoopScroll(recordList)
       end,
       click_func = function(index, cell_object, cell_data, click_object, click_name)
         if click_name == "m_btn_copyteam" then
-          StackPopup:Push(UIDefines.ID_FORM_PERSONALRAIDCOPYTEAM, {
-            otherPlayerTeam = cell_data.heroList
+          StackPopup:Push(UIDefines.ID_FORM_HEROCOPYTEAM, {
+            otherPlayerTeam = cell_data.heroList,
+            formType = HeroManager.TeamTypeBase.SoloRaid
           })
         end
       end

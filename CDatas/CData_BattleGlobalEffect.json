@@ -1,18 +1,6 @@
 {
   "className": "CData_BattleGlobalEffect",
   "data": {
-    "1000701": {
-      "m_bError": null,
-      "m_ID": "1000701",
-      "m_CampType": "1",
-      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_1000701\"",
-      "m_mName": "\"Drowsy\"",
-      "m_mDesc": "\"Gains 1 stack of Slow every {0} sec. When {1} stacks are reached, it turns into Sleep. Each Basic ATK received removes 1 stack of Slow.\"",
-      "m_Param": "[415001,415002]",
-      "m_ScriptName": "\"GlobalBuff_1000701\"",
-      "m_BuffList": "[]",
-      "m_ShowBuffDesc": "[]"
-    },
     "1000702": {
       "m_bError": null,
       "m_ID": "1000702",
@@ -133,6 +121,30 @@
       "m_BuffList": "[4147]",
       "m_ShowBuffDesc": "[4147]"
     },
+    "1001109": {
+      "m_bError": null,
+      "m_ID": "1001109",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Strange Spear\"",
+      "m_mDesc": "\"Unknown Lance. When thrown at a select location, deals weak P. DMG to all enemies in a circle and Taunts them for {1} sec.\"",
+      "m_Param": "[81001101,81001102,81001103]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[1408]"
+    },
+    "1001114": {
+      "m_bError": null,
+      "m_ID": "1001114",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_SnowStorm\"",
+      "m_mName": "\"Blizzard\"",
+      "m_mDesc": "\"Allied Units: After battle begins, loses {0} of Max HP every {1} sec for the entire battle.\"",
+      "m_Param": "[10011141,10011142]",
+      "m_ScriptName": "\"GlobalBuff_1001114\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
     "1001201": {
       "m_bError": null,
       "m_ID": "1001201",
@@ -199,7 +211,7 @@
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Malevolent Spirit\"",
-      "m_mDesc": "\"When Continuous DMG takes effect, there is a {0} chance to deal True DMG equal to 100% of the damage dealt to nearby enemies in a circle. Each instance of Continuous DMG on an enemy increases the continuous damage they take by {1}, up to a maximum of {2}.\"",
+      "m_mDesc": "\"Each tick of Continuous DMG has a {0} chance to deal {3} True DMG to nearby enemies. For each Continuous DMG effect on the enemy, the DMG taken will increase by {1}, up to a maximum of {2}.\"",
       "m_Param": "[20000011,20000012,20000013,20000014]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6001]",
@@ -235,7 +247,7 @@
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Hunter's Mark\"",
-      "m_mDesc": "\"Enemy units gain 1 stack of Hunter's Mark upon taking Basic ATK DMG. When Hunter's Mark reaches {0} stack(s), deals P. DMG (based on the Basic ATK of the ally with the highest ATK) to all enemies around the marked unit and removes all stack(s). When the battle begins, enemy units permanently gain M. DMG Taken Down (Major).\"",
+      "m_mDesc": "\"Enemy units gain 1 stack of Hunter's Mark upon taking Basic ATK DMG. When Hunter's Mark reaches {0} stack(s), deals P. DMG (based on the Basic ATK of the ally with the highest ATK) to all enemies around the marked unit and removes all stack(s). When the battle begins, enemy units permanently gain M. DMG Taken Down (Major), CRIT Resist Rate UP, CRIT DMG Mitigation UP, and All DMG Reduction.\"",
       "m_Param": "[20000111]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6004]",
@@ -259,7 +271,7 @@
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Cross Fire\"",
-      "m_mDesc": "\"Ranged enemy units switch between Scatter Shot and Aimed Shot every {0} sec and are immune to Control effects. Healing to allied units is reduced by {1}.\nAimed Shot: Basic ATK deals multiple instances of M. DMG to the ally closest to the enemy.\nScatter Shot: Each Basic ATK deals M. DMG to all enemies.\"",
+      "m_mDesc": "\"Ranged enemy units switch between Scatter Shot and Aimed Shot every {0} sec, become immune to Control effects, and increase DMG resistance. Healing to allied units is reduced by {1}.\nAimed Shot: Basic ATK deals multiple instances of M. DMG to the ally closest to the enemy.\nScatter Shot: Each Basic ATK deals M. DMG to all enemies.\"",
       "m_Param": "[20000131,20000132]",
       "m_ScriptName": "\"GuildRaid_S2_3\"",
       "m_BuffList": "[]",
@@ -271,7 +283,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Dark Omen\"",
-      "m_mDesc": "\"For every {0} allied summon(s), grants 1 Luminescence or Solar Flare free of cost. Enemy units are immune to Control effects.\nLuminescence: Deals high M. DMG to all enemies (DMG based on the Basic ATK of the ally with the highest ATK and the number of allied summons on the field).\nSolar Flare: Inflicts All DMG Up (Major) on a select ally for {1} sec.\"",
+      "m_mDesc": "\"For every {0} allied summon(s), grants 1 Luminescence or Solar Flare free of cost. Enemy units are immune to Control effects and gain certain All DMG Reduction.\nLuminescence: Deals high M. DMG to all enemies (DMG based on the Basic ATK of the ally with the highest ATK and the number of allied summons on the field).\nSolar Flare: Inflicts All DMG Up (Major) on a select ally for {1} sec.\"",
       "m_Param": "[20000141,20000143]",
       "m_ScriptName": "\"GuildRaid_S2_4\"",
       "m_BuffList": "[]",
@@ -283,10 +295,58 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Blood Ritual\"",
-      "m_mDesc": "\"When a unit is eliminated, allied units have a {1} chance to gain {0} Bloodsoul.\"",
+      "m_mDesc": "\"When a unit is eliminated, allied units have a {1} chance to gain {0} Bloodsoul. Enemy units gain certain CRIT DMG Mitigation.\"",
       "m_Param": "[20000151,20000152]",
       "m_ScriptName": "\"GuildRaid_S2_5\"",
       "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000009": {
+      "m_bError": null,
+      "m_ID": "2000009",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Zero-Sum\"",
+      "m_mDesc": "\"The closer allied units are to their target when dealing DMG, the higher the DMG dealt, by up to {0}. The enemy unit periodically knocks back all allied units.\"",
+      "m_Param": "[20000211]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6008]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000010": {
+      "m_bError": null,
+      "m_ID": "2000010",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Static Detonation\"",
+      "m_mDesc": "\"When taking DMG, the enemy will create an electrical field surrounding itself that deals M. DMG to allies within range, and which has a {0} chance to Stun for {1} sec. Can only be triggered once every {2} sec.\"",
+      "m_Param": "[20000222,20000223,20000224]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6009]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000011": {
+      "m_bError": null,
+      "m_ID": "2000011",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Repulsion Field\"",
+      "m_mDesc": "\"When the battle begins, enemies gain P. DMG Taken Down (Major) and M. DMG Taken Down (Major) which cannot be dispelled. Additionally, they gain a Shield based on Max HP every {0} sec, lasting {1} sec.\"",
+      "m_Param": "[20000231,20000232,20000233]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6010]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000012": {
+      "m_bError": null,
+      "m_ID": "2000012",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Noxious Gas\"",
+      "m_mDesc": "\"While vapors shroud the field, allies lose HP equal to {0} of their Max HP per sec. ATK SPD is reduced by {2} for units with HP Percentage below {1}. Units with HP Percentage below {3} become Stunned.\"",
+      "m_Param": "[20000251,20000032,20000033,20000034]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6011]",
       "m_ShowBuffDesc": "[]"
     },
     "3040001": {
@@ -337,6 +397,18 @@
       "m_BuffList": "[]",
       "m_ShowBuffDesc": "[]"
     },
+    "3111017": {
+      "m_bError": null,
+      "m_ID": "3111017",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Indomitable\"",
+      "m_mDesc": "\"After 90 sec, increases all allies' ATK.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[3111017]",
+      "m_ShowBuffDesc": "[]"
+    },
     "3167001": {
       "m_bError": null,
       "m_ID": "3167001",
@@ -344,6 +416,18 @@
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Flames of War\"",
       "m_mDesc": "\"When Flames of War is hit by two explosions from Entropic Flames, it becomes Weakened.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "3169001": {
+      "m_bError": null,
+      "m_ID": "3169001",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"The Formless\"",
+      "m_mDesc": "\"The Formless casts Ultimate once its power is sufficient.\"",
       "m_Param": "[]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[]",
@@ -559,7 +643,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4915000\"",
       "m_mName": "\"Unfettered Rage\"",
-      "m_mDesc": "\"When using Ultimate, increases ATK by <style=Highlight>{0}</style> for <style=Highlight>{1}</style> sec.\"",
+      "m_mDesc": "\"When using Ultimate, increases ATK by <style=Highlight>{0}</style> of Basic ATK for <style=Highlight>{1}</style> sec.\"",
       "m_Param": "[49150001,49150002]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4915]",
@@ -794,5 +878,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_66_items"
+  "status": "processed_73_items"
 }

@@ -61,6 +61,10 @@ function PickUpGiftActivity:GetPickUpGifyInfo()
   return self.mGiftInfo
 end
 
+function PickUpGiftActivity:GetRelationShopId()
+  return self.m_stSdpConfig and self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.iRelationShopId or 0
+end
+
 function PickUpGiftActivity:RqsSetReward(iGiftId, mGridRewardIndex)
   local msg = MTTDProto.Cmd_Act_PickupGift_SetReward_CS()
   msg.iActivityId = self:getID()

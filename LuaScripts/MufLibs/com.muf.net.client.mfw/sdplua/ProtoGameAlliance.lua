@@ -70,6 +70,20 @@ CmdId_Alliance_Battle_GetBattleHistory_CS = 11606
 CmdId_Alliance_Battle_GetBattleHistory_SC = 11607
 CmdId_Alliance_Battle_GetRankList_CS = 11608
 CmdId_Alliance_Battle_GetRankList_SC = 11609
+CmdId_Alliance_MessageNotice_GetList_CS = 11620
+CmdId_Alliance_MessageNotice_GetList_SC = 11621
+CmdId_Alliance_MessageNotice_Leave_CS = 11622
+CmdId_Alliance_MessageNotice_Leave_SC = 11623
+CmdId_Alliance_MessageNotice_Edit_CS = 11624
+CmdId_Alliance_MessageNotice_Edit_SC = 11625
+CmdId_Alliance_MessageNotice_Delete_CS = 11626
+CmdId_Alliance_MessageNotice_Delete_SC = 11627
+CmdId_Alliance_MessageNotice_Confirm_CS = 11628
+CmdId_Alliance_MessageNotice_Confirm_SC = 11629
+CmdId_Alliance_MessageNotice_Pin_CS = 11630
+CmdId_Alliance_MessageNotice_Pin_SC = 11631
+CmdId_Alliance_MessageNotice_UnPin_CS = 11632
+CmdId_Alliance_MessageNotice_UnPin_SC = 11633
 AllianceJoinType_Review = 0
 AllianceJoinType_All = 1
 AllianceJoinType_None = 2
@@ -102,6 +116,8 @@ AllianceReportType_Bulletin = 2
 AllianceBattleStatus_None = 0
 AllianceBattleStatus_Battle = 1
 AllianceBattleStatus_Settle = 2
+AllianceMessageNoticeType_Normal = 1
+AllianceMessageNoticeType_All = 2
 Cmd_Alliance_GetInit_CS = sdp.SdpStruct("Cmd_Alliance_GetInit_CS")
 Cmd_Alliance_GetInit_CS.Definition = {}
 Cmd_Alliance_GetInit_SC = sdp.SdpStruct("Cmd_Alliance_GetInit_SC")
@@ -1247,5 +1263,333 @@ Cmd_Alliance_Battle_GetRankList_SC.Definition = {
     0,
     8,
     0
+  }
+}
+AllianceMessageNoticeReadInfo = sdp.SdpStruct("AllianceMessageNoticeReadInfo")
+AllianceMessageNoticeReadInfo.Definition = {
+  "stRole",
+  "iReadTime",
+  stRole = {
+    0,
+    0,
+    _G.MTTDProto.PlayerIDType,
+    nil
+  },
+  iReadTime = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+AllianceMessageNotice = sdp.SdpStruct("AllianceMessageNotice")
+AllianceMessageNotice.Definition = {
+  "iNoticeID",
+  "iNoticeType",
+  "stSender",
+  "iSendTime",
+  "sContent",
+  "vReadInfo",
+  "iLastEditTime",
+  "iDeleteTime",
+  "stDeleter",
+  iNoticeID = {
+    0,
+    0,
+    8,
+    0
+  },
+  iNoticeType = {
+    1,
+    0,
+    8,
+    0
+  },
+  stSender = {
+    2,
+    0,
+    _G.MTTDProto.PlayerIDType,
+    nil
+  },
+  iSendTime = {
+    3,
+    0,
+    8,
+    0
+  },
+  sContent = {
+    4,
+    0,
+    13,
+    ""
+  },
+  vReadInfo = {
+    5,
+    0,
+    sdp.SdpVector(AllianceMessageNoticeReadInfo),
+    nil
+  },
+  iLastEditTime = {
+    6,
+    0,
+    8,
+    0
+  },
+  iDeleteTime = {
+    7,
+    0,
+    8,
+    0
+  },
+  stDeleter = {
+    8,
+    0,
+    _G.MTTDProto.PlayerIDType,
+    nil
+  }
+}
+Cmd_Alliance_MessageNotice_GetList_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_GetList_CS")
+Cmd_Alliance_MessageNotice_GetList_CS.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  }
+}
+Cmd_Alliance_MessageNotice_GetList_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_GetList_SC")
+Cmd_Alliance_MessageNotice_GetList_SC.Definition = {
+  "iAllianceId",
+  "vMessageNotice",
+  "iTopNoticeID",
+  "iLastSendTime",
+  "iSendAllTimesToday",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  vMessageNotice = {
+    1,
+    0,
+    sdp.SdpVector(AllianceMessageNotice),
+    nil
+  },
+  iTopNoticeID = {
+    2,
+    0,
+    8,
+    0
+  },
+  iLastSendTime = {
+    3,
+    0,
+    8,
+    0
+  },
+  iSendAllTimesToday = {
+    4,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_Leave_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Leave_CS")
+Cmd_Alliance_MessageNotice_Leave_CS.Definition = {
+  "iAllianceId",
+  "sContent",
+  "iNoticeType",
+  "bPin",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  sContent = {
+    1,
+    0,
+    13,
+    ""
+  },
+  iNoticeType = {
+    2,
+    0,
+    8,
+    0
+  },
+  bPin = {
+    3,
+    0,
+    1,
+    false
+  }
+}
+Cmd_Alliance_MessageNotice_Leave_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Leave_SC")
+Cmd_Alliance_MessageNotice_Leave_SC.Definition = {
+  "iAllianceId",
+  "iLastSendTime",
+  "iSendAllTimesToday",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iLastSendTime = {
+    1,
+    0,
+    8,
+    0
+  },
+  iSendAllTimesToday = {
+    2,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_Edit_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Edit_CS")
+Cmd_Alliance_MessageNotice_Edit_CS.Definition = {
+  "iAllianceId",
+  "iNoticeID",
+  "sContent",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iNoticeID = {
+    1,
+    0,
+    8,
+    0
+  },
+  sContent = {
+    2,
+    0,
+    13,
+    ""
+  }
+}
+Cmd_Alliance_MessageNotice_Edit_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Edit_SC")
+Cmd_Alliance_MessageNotice_Edit_SC.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  }
+}
+Cmd_Alliance_MessageNotice_Delete_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Delete_CS")
+Cmd_Alliance_MessageNotice_Delete_CS.Definition = {
+  "iAllianceId",
+  "iNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iNoticeID = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_Delete_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Delete_SC")
+Cmd_Alliance_MessageNotice_Delete_SC.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  }
+}
+Cmd_Alliance_MessageNotice_Confirm_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Confirm_CS")
+Cmd_Alliance_MessageNotice_Confirm_CS.Definition = {
+  "iAllianceId",
+  "iNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iNoticeID = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_Confirm_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Confirm_SC")
+Cmd_Alliance_MessageNotice_Confirm_SC.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  }
+}
+Cmd_Alliance_MessageNotice_Pin_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Pin_CS")
+Cmd_Alliance_MessageNotice_Pin_CS.Definition = {
+  "iAllianceId",
+  "iNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iNoticeID = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_Pin_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_Pin_SC")
+Cmd_Alliance_MessageNotice_Pin_SC.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  }
+}
+Cmd_Alliance_MessageNotice_UnPin_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_UnPin_CS")
+Cmd_Alliance_MessageNotice_UnPin_CS.Definition = {
+  "iAllianceId",
+  "iNoticeID",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
+  },
+  iNoticeID = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Alliance_MessageNotice_UnPin_SC = sdp.SdpStruct("Cmd_Alliance_MessageNotice_UnPin_SC")
+Cmd_Alliance_MessageNotice_UnPin_SC.Definition = {
+  "iAllianceId",
+  iAllianceId = {
+    0,
+    0,
+    10,
+    "0"
   }
 }

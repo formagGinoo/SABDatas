@@ -141,6 +141,23 @@ function AncientManager:OnReqAncientSummonHeroSC(stData)
   end
 end
 
+function AncientManager:ReqAncientResetEnergyCS()
+  local reqMsg = MTTDProto.Cmd_Ancient_ResetEnergy_CS()
+  RPCS():Ancient_ResetEnergy(reqMsg, handler(self, self.OnReqAncientResetEnergySC))
+end
+
+function AncientManager:OnReqAncientResetEnergySC(stData)
+  local iCurHero = self:GetCurHeroID()
+  if iCurHero and self.m_stAncient.mSummonHero and self.m_stAncient.mSummonHero[iCurHero] then
+    self.m_stAncient.mSummonHero[iCurHero].iCurEnergy = 0
+  end
+  if stData.vItem and next(stData.vItem) then
+    utils.popUpRewardUI(stData.vItem, function()
+      self:broadcastEvent("eGameEvent_Ancient_ResetEnergy")
+    end)
+  end
+end
+
 function AncientManager:GetCurHeroID()
   if self.m_stAncient and self.m_stAncient.iCurHero then
     return self.m_stAncient.iCurHero
@@ -161,6 +178,18 @@ function AncientManager:GetAncientSummonHeroById(heroId)
   if self.m_stAncient and self.m_stAncient.mSummonHero and heroId then
     return self.m_stAncient.mSummonHero[heroId]
   end
+end
+
+function AncientManager:GetAncientCharacterInfo()
+  if not self.cfgList then
+    self.cfgList = {}
+    local characterIns = ConfigManager:GetConfigInsByName("AncientCharacter")
+    local characterAll = characterIns:GetAll()
+    for i, v in pairs(characterAll) do
+      self.cfgList[v.m_Position] = v
+    end
+  end
+  return self.cfgList
 end
 
 function AncientManager:GetTaskRefreshTimes()
@@ -259,7 +288,8 @@ function AncientManager:CheckAncientEnterRedDot()
   end
   local taskIds = self:GetCanReceiveTaskIds()
   local gachaFlag = self:CheckAncientCanGachaHero()
-  local flag = 0 < table.getn(taskIds) or gachaFlag
+  local trialActFlag = self:CheckTrialActHaveRed()
+  local flag = 0 < table.getn(taskIds) or gachaFlag or trialActFlag
   return flag and 1 or 0
 end
 
@@ -271,6 +301,23 @@ function AncientManager:CheckAncientCanGachaHero()
       local summonEnergyMax = summonHero.iSummonTimes == 0 and summonHeroCfg.m_SummonHero or summonHeroCfg.m_SummonChip
       if summonEnergyMax <= summonHero.iCurEnergy then
         return true
+      end
+    end
+  end
+end
+
+function AncientManager:CheckTrialActHaveRed()
+  local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
+  local isNextDay = nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorMain", 0)
+  isNextDay = isNextDay or nextDayResetTime - 1000 > LocalDataManager:GetIntSimple("HeroTrialActivity_Red_Point_Form_GuildElevatorcall", 0)
+  if isNextDay then
+    self:GetAncientCharacterInfo()
+    local trialAct = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+    if trialAct then
+      for _, v in pairs(self.cfgList) do
+        if trialAct:CheckLevelIsFinishByHeroId(v.m_HeroID) == false then
+          return true
+        end
       end
     end
   end

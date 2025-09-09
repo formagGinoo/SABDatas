@@ -24,6 +24,9 @@ function UIHeroAct103DailyTaskItem:SetBtnState(state)
   self.m_btn_receive1:SetActive(TaskManager.TaskState.Finish == state)
   local canJump = HeroActivityManager:CheckTaskIsCanJump(self.m_itemData.cfg.m_UID)
   self.m_btn_go1:SetActive(TaskManager.TaskState.Doing == state and canJump)
+  if not utils.isNull(self.m_pnl_uncomplete3) then
+    self.m_pnl_uncomplete3:SetActive(TaskManager.TaskState.Doing == state and not canJump)
+  end
   self.m_img_tag_done1:SetActive(TaskManager.TaskState.Completed == state)
   self.m_UIFX_task_nml_loop1:SetActive(TaskManager.TaskState.Finish == state)
 end

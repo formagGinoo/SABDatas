@@ -157,8 +157,14 @@ function HangUpManager:SortAndFormatRewardTab(serverRewardTab)
       }
     end
   end
-  table.insertto(commonRewardTab, rewardTab)
-  return commonRewardTab
+  local rewardList = {}
+  for i = 1, 10 do
+    if commonRewardTab[i] then
+      rewardList[#rewardList + 1] = commonRewardTab[i]
+    end
+  end
+  table.insertto(rewardList, rewardTab)
+  return rewardList
 end
 
 function HangUpManager:SortAndFormatRewardTab2(serverRewardTab)
@@ -172,8 +178,14 @@ function HangUpManager:SortAndFormatRewardTab2(serverRewardTab)
       rewardTab[#rewardTab + 1] = {k, v}
     end
   end
-  table.insertto(commonRewardTab, rewardTab)
-  return commonRewardTab
+  local rewardList = {}
+  for i = 1, 10 do
+    if commonRewardTab[i] then
+      rewardList[#rewardList + 1] = commonRewardTab[i]
+    end
+  end
+  table.insertto(rewardList, rewardTab)
+  return rewardList
 end
 
 function HangUpManager:GetCommonRewardIdTab()

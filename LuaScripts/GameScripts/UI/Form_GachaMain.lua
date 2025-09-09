@@ -152,7 +152,7 @@ function Form_GachaMain:OnDailyReset()
   end
 end
 
-function Form_GachaMain:OnFreshTab(iGachaID)
+function Form_GachaMain:OnFreshTab(iGachaID, vReward)
   self.m_subPanelData[self.m_curChooseTab].redDot = GachaManager:CheckGachaPoolHaveRedDotById(iGachaID)
   self:refreshTabLoopScroll()
 end

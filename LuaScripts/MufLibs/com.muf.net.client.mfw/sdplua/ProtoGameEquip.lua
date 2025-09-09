@@ -15,6 +15,8 @@ CmdId_Equip_ReOverload_CS = 18009
 CmdId_Equip_ReOverload_SC = 18010
 CmdId_Equip_SaveReOverload_CS = 18011
 CmdId_Equip_SaveReOverload_SC = 18012
+CmdId_Equip_Decompose_CS = 18013
+CmdId_Equip_Decompose_SC = 18014
 EquipQuality_T1 = 1
 EquipQuality_T2 = 2
 EquipQuality_T3 = 3
@@ -226,5 +228,39 @@ Cmd_Equip_SaveReOverload_SC.Definition = {
     0,
     1,
     false
+  }
+}
+Cmd_Equip_Decompose_CS = sdp.SdpStruct("Cmd_Equip_Decompose_CS")
+Cmd_Equip_Decompose_CS.Definition = {
+  "vEquipUid",
+  "bConfirm",
+  vEquipUid = {
+    0,
+    0,
+    sdp.SdpVector(10),
+    nil
+  },
+  bConfirm = {
+    1,
+    0,
+    1,
+    false
+  }
+}
+Cmd_Equip_Decompose_SC = sdp.SdpStruct("Cmd_Equip_Decompose_SC")
+Cmd_Equip_Decompose_SC.Definition = {
+  "vEquipUid",
+  "vReturnItem",
+  vEquipUid = {
+    0,
+    0,
+    sdp.SdpVector(10),
+    nil
+  },
+  vReturnItem = {
+    1,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
   }
 }

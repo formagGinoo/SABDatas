@@ -6,6 +6,30 @@ local CharacterInfoIns = ConfigManager:GetConfigInsByName("CharacterInfo")
 function UIHeroListSmallItem5:OnInit()
 end
 
+function UIHeroListSmallItem5:GenHeroIDToServerData()
+  if not self.m_itemData then
+    return
+  end
+  local heroIDList = self.m_itemData.vHeroId
+  if not heroIDList then
+    return
+  end
+  local tempHeroDataList = {}
+  for _, heroID in ipairs(heroIDList) do
+    local tempData = {
+      iHeroId = heroID,
+      iLevel = 0,
+      iBreak = 0,
+      iBaseId = 0,
+      iOriLevel = 0,
+      iPower = 0,
+      iFashion = 0
+    }
+    tempHeroDataList[#tempHeroDataList + 1] = tempData
+  end
+  return tempHeroDataList
+end
+
 function UIHeroListSmallItem5:OnFreshData()
   self:InitItem()
   if not self.m_heroWidgetList then
@@ -65,6 +89,19 @@ function UIHeroListSmallItem5:InitItem()
         heroCamp = tempitem.transform:Find("m_pnl_camp/img_bg_camp/m_icon_camp"):GetComponent(T_Image)
       }
       table.insert(self.m_heroWidgetList, item)
+    end
+  end
+end
+
+function UIHeroListSmallItem5:OnBtndesClicked()
+  if self.m_itemData then
+    local heroDataList = self:GenHeroIDToServerData()
+    if heroDataList and next(heroDataList) then
+      StackPopup:Push(UIDefines.ID_FORM_HEROCOPYTEAM, {
+        otherPlayerTeam = heroDataList,
+        isHideDevelopInfo = true,
+        formType = HeroManager.TeamTypeBase.Default
+      })
     end
   end
 end

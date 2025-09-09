@@ -2,6 +2,7 @@ local UISubPanelBase = require("UI/Common/UISubPanelBase")
 local PickupGiftSubPanel = class("PickupGiftSubPanel", UISubPanelBase)
 
 function PickupGiftSubPanel:OnInit()
+  self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point)
 end
 
 local iMaxGiftNum = 3
@@ -12,7 +13,19 @@ function PickupGiftSubPanel:OnInactivePanel()
 end
 
 function PickupGiftSubPanel:OnFreshData()
-  local activity = ActivityManager:GetActivityByType(MTTD.ActivityType_PickupGift)
+  self.m_storeData = self.m_panelData.storeData
+  if self.m_panelData.bIsForceRefresh then
+    self.iCurSelectIdx = nil
+  end
+  local vActList = ActivityManager:GetActivityListByType(MTTD.ActivityType_PickupGift)
+  local activity
+  for _, v in ipairs(vActList) do
+    local relationShopId = v:GetRelationShopId()
+    if relationShopId == self.m_storeData.iStoreId then
+      activity = v
+      break
+    end
+  end
   if not activity then
     return
   end
@@ -20,6 +33,7 @@ function PickupGiftSubPanel:OnFreshData()
   self.giftList = activity:GetPickUpGiftList()
   self.giftInfo = activity:GetPickUpGifyInfo()
   self:RefreshList()
+  UILuaHelper.PlayAnimationByName(self.m_rootObj, "activity_panel_pickup_in")
 end
 
 function PickupGiftSubPanel:RefreshList()
@@ -220,25 +234,12 @@ function PickupGiftSubPanel:OnBtntipspickupClicked()
 end
 
 function PickupGiftSubPanel:OnRefreshGiftPoint()
-  if utils.isNull(self.m_packgift_point) then
-    return
-  end
   if not self.giftList[self.iCurSelectIdx] or not self.giftList[self.iCurSelectIdx].sProductId then
-    self.m_packgift_point:SetActive(false)
     return
   end
-  self.m_packgift_point:SetActive(true)
-  local isShowPoint, pointReward = ActivityManager:GetPayPointsCondition(self.giftList[self.iCurSelectIdx].sProductId)
-  local pointParams = {pointReward = pointReward}
-  if isShowPoint then
-    if self.m_paidGiftPoint then
-      self.m_paidGiftPoint:SetFreshInfo(pointParams)
-    else
-      self.m_paidGiftPoint = self:createPackGiftPoint(self.m_packgift_point, pointParams)
-    end
-  else
-    self.m_packgift_point:SetActive(false)
-  end
+  self.m_paidGiftPoint:SetFreshInfo({
+    productId = self.giftList[self.iCurSelectIdx].sProductId
+  })
 end
 
 function PickupGiftSubPanel:OnBtnbuyClicked()

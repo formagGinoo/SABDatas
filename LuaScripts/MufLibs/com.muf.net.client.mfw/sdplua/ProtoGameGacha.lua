@@ -29,6 +29,8 @@ GachaGuaranteeType_Guarantee = 1
 GachaGuaranteeType_MustGain = 2
 GachaGuaranteeType_UpProtect = 3
 GachaGuaranteeType_ExtraGuarantee = 4
+SetWishListType_Auto = 1
+SetWishListType_Self = 2
 Cmd_Gacha_GetGacha_CS = sdp.SdpStruct("Cmd_Gacha_GetGacha_CS")
 Cmd_Gacha_GetGacha_CS.Definition = {
   "vGachaId",
@@ -223,6 +225,7 @@ Cmd_Gacha_SetWishList_CS = sdp.SdpStruct("Cmd_Gacha_SetWishList_CS")
 Cmd_Gacha_SetWishList_CS.Definition = {
   "iGachaId",
   "vHeroIdList",
+  "iSetType",
   iGachaId = {
     0,
     0,
@@ -234,12 +237,19 @@ Cmd_Gacha_SetWishList_CS.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  },
+  iSetType = {
+    2,
+    0,
+    8,
+    0
   }
 }
 Cmd_Gacha_SetWishList_SC = sdp.SdpStruct("Cmd_Gacha_SetWishList_SC")
 Cmd_Gacha_SetWishList_SC.Definition = {
   "iGachaId",
   "vHeroIdList",
+  "iSetType",
   iGachaId = {
     0,
     0,
@@ -251,6 +261,12 @@ Cmd_Gacha_SetWishList_SC.Definition = {
     0,
     sdp.SdpVector(8),
     nil
+  },
+  iSetType = {
+    2,
+    0,
+    8,
+    0
   }
 }
 Cmd_Gacha_GetWishList_CS = sdp.SdpStruct("Cmd_Gacha_GetWishList_CS")

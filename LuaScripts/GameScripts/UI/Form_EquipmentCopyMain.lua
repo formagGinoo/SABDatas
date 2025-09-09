@@ -37,6 +37,7 @@ function Form_EquipmentCopyMain:AfterInit()
 end
 
 function Form_EquipmentCopyMain:OnActive()
+  self.super.OnActive(self)
   self:AddEventListeners()
   self:FreshData()
   self.m_failLoadNum = 0
@@ -113,20 +114,7 @@ function Form_EquipmentCopyMain:OnEventLevelSweep(param)
     return
   end
   local levelType = param.levelType
-  local rewardList = param.rewards
-  local extraReward = param.extraReward
   if levelType == LevelManager.LevelType.Dungeon then
-    local damageNum = self.m_equipmentHelper:GetLevelTopDamageByLevelID(self.m_curLevelCfg.m_LevelID)
-    StackFlow:Push(UIDefines.ID_FORM_BOSSBATTLEVICTORY, {
-      levelType = levelType,
-      levelID = self.m_curLevelID,
-      rewardData = rewardList,
-      extraReward = extraReward,
-      isSweep = true,
-      isSim = false,
-      showHeroID = nil,
-      damageNum = damageNum
-    })
     self:FreshStageInfoShow()
     self:FreshButtonsShow()
   end
@@ -300,7 +288,7 @@ function Form_EquipmentCopyMain:FreshButtonsShow()
       self.m_txt_levellock_Text.text = string.CS_Format(ConfigManager:GetCommonTextById(20204), heroModifyCfg.m_ForceLevel)
     end
   end
-  UILuaHelper.SetActive(self.m_btn_Quick, 0 < curUseTimes and 0 < leftTimes)
+  UILuaHelper.SetActive(self.m_btn_Quick, self.m_curStageIndex and 0 < self.m_curStageIndex and 0 < leftTimes)
   local finishNum = self.m_equipmentHelper:GetLevelFinishNumByLevelID(self.m_curLevelID)
   UILuaHelper.SetActive(self.m_btn_Quick_Grey, finishNum <= 0 or leftTimes <= 0)
 end
@@ -493,7 +481,10 @@ function Form_EquipmentCopyMain:OnBtnSimClicked()
 end
 
 function Form_EquipmentCopyMain:OnBtnQuickClicked()
-  if not self.m_curLevelCfg then
+  if not self.m_curLevelCfg or not self.m_curStageIndex then
+    return
+  end
+  if self.m_curStageIndex and self.m_curStageIndex == 0 then
     return
   end
   local flag = self.m_equipmentHelper:CheckTodayBossIsTrue(self.m_curLevelSubType)
@@ -506,7 +497,11 @@ function Form_EquipmentCopyMain:OnBtnQuickClicked()
     })
     return
   end
-  LevelManager:ReqStageMopUp(LevelManager.LevelType.Dungeon, self.m_curLevelCfg.m_LevelID, 1)
+  StackPopup:Push(UIDefines.ID_FORM_EQUIPMENTSWEEP, {
+    levelID = self.m_curLevelCfg.m_LevelID,
+    stageIndex = self.m_curStageIndex,
+    curDungeonChapterCfg = self.m_curDungeonChapterCfg
+  })
 end
 
 function Form_EquipmentCopyMain:OnBtnQuickGreyClicked()

@@ -143,7 +143,7 @@ function Form_Activity101Lamia_Victory:InsertTopFive(bonusData)
   if self.m_heroTopBonus and #self.m_heroTopBonus > 0 then
     if not insertIndex and #self.m_heroTopBonus >= FormPlotMaxNum then
       return
-    else
+    elseif not insertIndex then
       insertIndex = #self.m_heroTopBonus + 1
     end
   else

@@ -12,6 +12,7 @@ function Form_Activity104_DialogueMain:AfterInit()
   }
   self.m_luaextensionInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_scroll_extension_InfinityGrid, "LamiaLevel/UI104NormalLevelItem", initGridData)
   self.DegreeCfgTab[LevelDegree.Normal].activitySubIndex = 2
+  self.sSubPanelName = "LevelDetail104SubPanel"
 end
 
 function Form_Activity104_DialogueMain:OnActive()
@@ -38,101 +39,6 @@ function Form_Activity104_DialogueMain:FreshUI()
   self:FreshDegreeLevelList()
   self.m_curDegreeIndex = self.m_curDegreeIndex or self:GetChooseIndex() or 1
   self:FreshLevelTab(self.m_curDegreeIndex)
-end
-
-function Form_Activity104_DialogueMain:FreshLevelTab(index)
-  Form_Activity104_DialogueMain.super.FreshLevelTab(self, index)
-  if index then
-    local curDegreeData = self.DegreeCfgTab[index]
-    self.m_luaextensionInfinityGrid:ShowItemList(curDegreeData.levelList)
-    local chooseItemIndex = self:GetLevelIndexByLevelID(index, curDegreeData.currentID)
-    if not chooseItemIndex then
-      self.m_luaextensionInfinityGrid:LocateTo(self.iPerPageNum)
-      return
-    end
-    self.m_luaextensionInfinityGrid:LocateTo(chooseItemIndex - 2)
-  end
-end
-
-function Form_Activity104_DialogueMain:FreshLevelDetailShow()
-  if self.m_curDetailLevelID then
-    UILuaHelper.SetActive(self.m_level_detail_root, true)
-    if self.m_luaDetailLevel == nil then
-      self:CreateSubPanel("LevelDetail104SubPanel", self.m_level_detail_root, self, {
-        bgBackFun = handler(self, self.OnLevelDetailBgClick)
-      }, {
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      }, function(luaPanel)
-        self.m_luaDetailLevel = luaPanel
-        self.m_luaDetailLevel:AddEventListeners()
-      end)
-    else
-      self.m_luaDetailLevel:FreshData({
-        activityID = self.m_activityID,
-        levelID = self.m_curDetailLevelID
-      })
-    end
-    GlobalManagerIns:TriggerWwiseBGMState(95)
-  else
-    TimeService:SetTimer(0.2, 1, function()
-      UILuaHelper.SetActive(self.m_level_detail_root, false)
-    end)
-    GlobalManagerIns:TriggerWwiseBGMState(96)
-  end
-end
-
-function Form_Activity104_DialogueMain:GetLevelIndexByLevelID(levelDegree, levelID)
-  if not levelDegree then
-    return
-  end
-  if not levelID then
-    return
-  end
-  local levelDataList = self.DegreeCfgTab[levelDegree].levelList
-  for i, v in ipairs(levelDataList) do
-    if v.levelCfg.m_LevelID == levelID then
-      return i
-    end
-  end
-end
-
-function Form_Activity104_DialogueMain:FreshDegreeLevelList()
-  for _, v in ipairs(self.DegreeCfgTab) do
-    local levelData = self.m_levelHelper:GetLevelDataByActAndSubID(self.m_activityID, v.activitySubID) or {}
-    local levelCfgList = levelData.levelCfgList
-    local curlevelCfg = self.m_levelHelper:GetCurLevel(self.m_activityID, v.activitySubID) or {}
-    local nextLevelID = curlevelCfg.m_LevelID or 0
-    local showLevelItemList = {}
-    for index, tempCfg in ipairs(levelCfgList) do
-      local isCurrent = tempCfg.m_LevelID == nextLevelID
-      local tempShowLevelItem = {levelCfg = tempCfg, isChoose = isCurrent}
-      showLevelItemList[#showLevelItemList + 1] = tempShowLevelItem
-      if isCurrent then
-        v.currentID = tempCfg.m_LevelID
-      end
-    end
-    for _, vv in ipairs(showLevelItemList) do
-      vv.maxNum = #showLevelItemList
-    end
-    v.levelList = showLevelItemList
-  end
-end
-
-function Form_Activity104_DialogueMain:OnItemClick(index)
-  if not index then
-    return
-  end
-  local degreeCfgTab = self.DegreeCfgTab[self.m_curDegreeIndex]
-  local levelList = degreeCfgTab.levelList
-  if not levelList then
-    return
-  end
-  local curLevelData = levelList[index]
-  local curLevelID = curLevelData.levelCfg.m_LevelID
-  degreeCfgTab.currentID = curLevelID
-  self.m_curDetailLevelID = curLevelID
-  self:FreshLevelDetailShow()
 end
 
 function Form_Activity104_DialogueMain:OnBtnNormalClicked()

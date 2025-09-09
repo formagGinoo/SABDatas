@@ -257,6 +257,13 @@ end
 
 function Form_CastleStarUnlock:OnDestroy()
   self.super.OnDestroy(self)
+  if self.m_oldUiObject and self.m_subPanelLua then
+    local oldPanelStr = self.m_subPanelLua.m_panelStr
+    self.m_subPanelLua:dispose()
+    CS.MUF.Resource.ResourceManager.UnloadAsset(oldPanelStr, CS.MUF.Resource.ResourceType.UI)
+    self.m_subPanelLua = nil
+    self.m_oldUiObject = nil
+  end
 end
 
 function Form_CastleStarUnlock:InitView()
@@ -621,8 +628,11 @@ function Form_CastleStarUnlock:RefreshConstellation(iConstellationID, iStarID, i
     return
   end
   self.m_iSelectConstellationID = iConstellationID
-  if self.m_oldUiObject then
-    CS.UnityEngine.Object.DestroyImmediate(self.m_oldUiObject)
+  if self.m_oldUiObject and self.m_subPanelLua then
+    local oldPanelStr = self.m_subPanelLua.m_panelStr
+    self.m_subPanelLua:dispose()
+    CS.MUF.Resource.ResourceManager.UnloadAsset(oldPanelStr, CS.MUF.Resource.ResourceType.UI)
+    self.m_subPanelLua = nil
     self.m_oldUiObject = nil
   end
   self.m_subPanelLua = nil
@@ -632,7 +642,7 @@ function Form_CastleStarUnlock:RefreshConstellation(iConstellationID, iStarID, i
     local luaPath = "UI/SubPanel/CastleStarUnlockSubPanel"
     self.m_oldUiObject = uiObject
     self.m_subPanelLua = require(luaPath).new()
-    self.m_subPanelLua:Init(self.m_pnl_constellation, uiObject, self, nil, {iConstellationID = iConstellationID, iStarID = _iStarID})
+    self.m_subPanelLua:Init(self.m_pnl_constellation, uiObject, self, nil, {iConstellationID = iConstellationID, iStarID = _iStarID}, prefabName)
     self:setTouchMaskEnabled(false)
   end, function(errorStr)
     log.info("Form_CastleStarUnlock LoadConstellation Fail errorStr: ", errorStr)

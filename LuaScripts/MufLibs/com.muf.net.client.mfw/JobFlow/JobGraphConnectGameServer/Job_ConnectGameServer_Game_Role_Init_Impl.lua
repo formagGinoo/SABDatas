@@ -102,6 +102,16 @@ function Job_ConnectGameServer_Game_Role_Init_Impl.RequestRoleInit(jobNode)
     TimeUtil:InitTimer()
     ItemManager:SetSpecialItem(sc.mSpecialItem)
     PushNotificationManager:SetPushOptionFromServer(sc.mPushOption)
+    local isCN = ChannelManager:IsChinaChannel()
+    if IsIPhonePlatform() and not isCN then
+      SDKUtil.GameCenterAuthLocalPlayer(function(result)
+        if result.resultCode == 1 then
+          log.info("--- game center login success ---")
+        else
+          log.info("--- game center login faied ---", result.resultMessage)
+        end
+      end)
+    end
     jobNode.Status = JobStatus.Success
   end, function(msg)
     ReportManager:ReportLoginProcess("InitNetworkGame_RoleInit", "RoleInit_Failed")

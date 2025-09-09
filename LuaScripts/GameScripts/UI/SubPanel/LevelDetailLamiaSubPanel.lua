@@ -10,7 +10,9 @@ local EnterAnimStr = "level_panel_detail_in"
 local OutAnimStr = "level_panel_detail_out"
 local ColorEnum = {
   red = Color(0.5411764705882353, 0.023529411764705882, 0.19607843137254902),
-  gray = Color(0.3215686274509804, 0.34509803921568627, 0.3411764705882353)
+  gray = Color(0.3215686274509804, 0.34509803921568627, 0.3411764705882353),
+  enough = Color(0.21176470588235294, 0.16862745098039217, 0.08235294117647059),
+  notEnough = Color(0.5372549019607843, 0.1607843137254902, 0.1607843137254902)
 }
 
 function LevelDetailLamiaSubPanel:OnInit()
@@ -455,9 +457,9 @@ function LevelDetailLamiaSubPanel:FreshEnterBattle()
   local isShowConsume = not isChallenge and isUnlock and (isRepeat and not isHaveFree or not isRepeat and not isHaveFree and not isHavePass)
   local isShowFree = not isChallenge and isUnlock and (isRepeat and isHaveFree or not isRepeat and isHaveFree and not isHavePass)
   UILuaHelper.SetActive(self.m_pnl_consume, isShowConsume)
+  self.isShowConsume = isShowConsume
   if isShowConsume then
-    local colorTab = isHaveEnough and GlobalConfig.COMMON_COLOR.Normal2 or GlobalConfig.COMMON_COLOR.Red
-    UILuaHelper.SetColor(self.m_txt_consume_num, table.unpack(colorTab))
+    self.m_txt_consume_num_Text.color = isHaveEnough and ColorEnum.enough or ColorEnum.notEnough
   end
   UILuaHelper.SetActive(self.m_pnl_free, isShowFree)
   UILuaHelper.SetActive(self.m_node_lock, not isUnlock)

@@ -142,6 +142,23 @@ Cmd_Stage_MopUp_CS.Definition = {
     0
   }
 }
+StageMopReward = sdp.SdpStruct("StageMopReward")
+StageMopReward.Definition = {
+  "vReward",
+  "vExtraReward",
+  vReward = {
+    0,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  vExtraReward = {
+    1,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  }
+}
 Cmd_Stage_MopUp_SC = sdp.SdpStruct("Cmd_Stage_MopUp_SC")
 Cmd_Stage_MopUp_SC.Definition = {
   "iStageType",
@@ -149,6 +166,7 @@ Cmd_Stage_MopUp_SC.Definition = {
   "iMopTimes",
   "vReward",
   "vExtraReward",
+  "vMopReward",
   iStageType = {
     0,
     0,
@@ -177,6 +195,12 @@ Cmd_Stage_MopUp_SC.Definition = {
     4,
     0,
     sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  vMopReward = {
+    5,
+    0,
+    sdp.SdpVector(StageMopReward),
     nil
   }
 }

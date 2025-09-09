@@ -422,7 +422,10 @@ function ReportManager:ReportTrackAttributionEvent(tag, data)
   if type(data) == "table" then
     jsonData = json.encode(data)
   end
-  MSDKManagerInstance:ReportTrackAttributionEvent(tag, jsonData)
+  if data == {} then
+    jsonData = "{}"
+  end
+  CS.MSDKManager.Instance:ReportTrackAttributionEvent(tag, jsonData)
 end
 
 return ReportManager

@@ -251,9 +251,6 @@ function Form_EquipT10PopChange:OnRandomReplaceBack(isSave, iEquipUID, changeEff
   if not iEquipUID then
     return
   end
-  if not next(changeEffectList) then
-    return
-  end
   if iEquipUID ~= self.m_equipData.iEquipUid then
     return
   end
@@ -268,7 +265,7 @@ function Form_EquipT10PopChange:OnRandomReplaceBack(isSave, iEquipUID, changeEff
   
   local isFreshUINow = false
   if isSave then
-    if changeEffectList then
+    if changeEffectList and next(changeEffectList) then
       self:ShowNewAttrEffectListAndAnim(changeEffectList, freshUIFun)
     else
       isFreshUINow = true

@@ -42,7 +42,8 @@ function LevelManager:InitGlobalCfg()
     MainLevel = MTTDProto.FightType_Main,
     Dungeon = MTTDProto.FightType_Dungeon,
     Tower = MTTDProto.FightType_Tower,
-    Goblin = MTTDProto.FightType_Goblin
+    Goblin = MTTDProto.FightType_Goblin,
+    HeroTrial = MTTDProto.FightType_HeroTrial
   }
   LevelManager.MainLevelSubType = {
     MainStory = MTTDProto.FightMainSubType_Main,
@@ -161,9 +162,9 @@ function LevelManager:OnGetStageDetailSC(stStageDetailData, msg)
   self:broadcastEvent("eGameEvent_Level_StageDetailFresh")
 end
 
-function LevelManager:StartEnterBattle(levelType, levelID, isSim)
+function LevelManager:StartEnterBattle(levelType, levelID, isSim, miscParam)
   if isSim == true then
-    self:EnterBattle(levelType, levelID, isSim)
+    self:EnterBattle(levelType, levelID, isSim, miscParam)
   else
     self:ReqStageEnterChallenge(levelType, levelID)
   end
@@ -292,12 +293,14 @@ function LevelManager:OnStageMopUpSC(stStageMopUpData, msg)
   local times = stStageMopUpData.iMopTimes
   local rewards = stStageMopUpData.vReward
   local exRewards = stStageMopUpData.vExtraReward
+  local vMopReward = stStageMopUpData.vMopReward
   self:broadcastEvent("eGameEvent_Level_MopUp", {
     levelType = levelType,
     levelID = levelID,
     times = times,
     rewards = rewards,
-    extraReward = exRewards
+    extraReward = exRewards,
+    vMopReward = vMopReward
   })
 end
 
@@ -359,9 +362,11 @@ function LevelManager:GetLevelCfgTableByType(levelType)
       levelCfgTable = ConfigManager:GetConfigInsByName("TribeTowerLevel")
     elseif levelType == LevelManager.LevelType.Dungeon then
       levelCfgTable = ConfigManager:GetConfigInsByName("DunLevel")
+    elseif levelType == LevelManager.LevelType.Goblin then
+      levelCfgTable = ConfigManager:GetConfigInsByName("GoblinLevel")
     else
-      if levelType == LevelManager.LevelType.Goblin then
-        levelCfgTable = ConfigManager:GetConfigInsByName("GoblinLevel")
+      if levelType == LevelManager.LevelType.HeroTrial then
+        levelCfgTable = ConfigManager:GetConfigInsByName("CharacterTrialLevel")
       else
       end
     end
@@ -512,7 +517,7 @@ function LevelManager:IsLevelHavePass(levelType, levelID)
   end
 end
 
-function LevelManager:PushInnerGameData(levelType, levelID, isSim)
+function LevelManager:PushInnerGameData(levelType, levelID, isSim, miscParam)
   local subType = self:GetLevelSunType(levelType, levelID)
   local towerAutoBattle = false
   if levelType == LevelManager.LevelType.Tower and self.m_towerAutoBattleEffective then
@@ -525,7 +530,8 @@ function LevelManager:PushInnerGameData(levelType, levelID, isSim)
     levelID = levelID or 0,
     isSim = isSim or false,
     heroList = HeroManager:GetHeroServerList(),
-    towerAutoBattle = towerAutoBattle
+    towerAutoBattle = towerAutoBattle,
+    miscParam = miscParam
   }
   CS.BattleGlobalManager.Instance:SetLevelData(inputLevelData)
   RoleManager:ClearOldLevel()
@@ -536,16 +542,16 @@ function LevelManager:PushInnerGameData(levelType, levelID, isSim)
   HangUpManager:CacheAFKLevelAndExpAsOld()
 end
 
-function LevelManager:BeforeEnterBattle(levelType, levelID, isSim)
+function LevelManager:BeforeEnterBattle(levelType, levelID, isSim, miscParam)
   LevelManager.super.BeforeEnterBattle(self)
   if not levelType or not levelID then
     return
   end
-  self:PushInnerGameData(levelType, levelID, isSim)
+  self:PushInnerGameData(levelType, levelID, isSim, miscParam)
   self:CacheCurBattleInfo(levelType, levelID, isSim)
 end
 
-function LevelManager:EnterBattle(levelType, levelID, isSim)
+function LevelManager:EnterBattle(levelType, levelID, isSim, miscParam)
   if not levelType or not levelID then
     return
   end
@@ -553,7 +559,7 @@ function LevelManager:EnterBattle(levelType, levelID, isSim)
   if not mapID then
     return
   end
-  self:BeforeEnterBattle(levelType, levelID, isSim)
+  self:BeforeEnterBattle(levelType, levelID, isSim, miscParam)
   self:EnterPVEBattle(mapID)
 end
 
@@ -584,6 +590,16 @@ function LevelManager:OnBattleEnd(isSuc, stageFinishChallengeSc, finishErrorCode
           extraReward = extraRewardData,
           isSim = self.m_isSim,
           damageNum = damageNum,
+          showHeroID = randomShowHeroID
+        })
+      elseif levelType == LevelManager.LevelType.HeroTrial then
+        local levelCfg = self:GetLevelCfgByTypeAndLevelID(levelType, levelID)
+        if levelCfg and not levelCfg:GetError() then
+          randomShowHeroID = levelCfg.m_HeroID
+        end
+        StackFlow:Push(UIDefines.ID_FORM_BATTLEVICTORY, {
+          levelType = levelType,
+          levelID = levelID,
           showHeroID = randomShowHeroID
         })
       else
@@ -649,9 +665,32 @@ function LevelManager:OnBackLobby(fCB)
           levelID = self.m_curBattleLevelID
         })
         formStr = "Form_MaterialsMain"
+      elseif self.m_curBattleLevelType == LevelManager.LevelType.HeroTrial then
+        local levelCfg = self:GetLevelCfgByTypeAndLevelID(self.m_curBattleLevelType, self.m_curBattleLevelID)
+        local isBackHall = false
+        if levelCfg and not levelCfg:GetError() then
+          local act = ActivityManager:GetActivityByType(MTTD.ActivityType_HeroTrial)
+          if act then
+            if act:checkCondition() then
+              QuickOpenFuncUtil:OpenFunc(30001, {
+                activityId = act:getID(),
+                subPanelTabIndex = levelCfg.m_HeroID
+              })
+              formStr = "Form_ActivityMain"
+            else
+              isBackHall = true
+            end
+          else
+            isBackHall = true
+          end
+        else
+          isBackHall = true
+        end
+        if isBackHall then
+          formStr = self:BackHall()
+        end
       else
-        StackFlow:Push(UIDefines.ID_FORM_HALL)
-        formStr = "Form_Hall"
+        formStr = self:BackHall()
       end
       if fCB then
         fCB(formStr)
@@ -659,6 +698,11 @@ function LevelManager:OnBackLobby(fCB)
       self:ClearCurBattleInfo()
     end, true)
   end
+end
+
+function LevelManager:BackHall()
+  StackFlow:Push(UIDefines.ID_FORM_HALL)
+  return "Form_Hall"
 end
 
 function LevelManager:BackMainCityScene(backFun, bHideLoading)

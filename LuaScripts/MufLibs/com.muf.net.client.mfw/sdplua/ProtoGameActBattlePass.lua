@@ -10,6 +10,11 @@ CmdId_Act_BattlePass_BuyExp_SC = 59934
 BattlePassBuyStatus_Free = 0
 BattlePassBuyStatus_Paid = 1
 BattlePassBuyStatus_Advanced = 2
+ActBattlePassAddExpType_Unkown = 0
+ActBattlePassAddExpType_OnFinishQuest = 1
+ActBattlePassAddExpType_AdvancedExtraExp = 2
+ActBattlePassAddExpType_BuyExp = 3
+ActBattlePassAddExpType_GM = 4
 CmdActBattlePass_Status = sdp.SdpStruct("CmdActBattlePass_Status")
 CmdActBattlePass_Status.Definition = {
   "iCurLevel",
@@ -64,6 +69,10 @@ CmdActClientCfgBattlePass.Definition = {
   "iActivityRulesPopupId",
   "sBuyBackgroundPic",
   "sBuyBackgroundPicMask",
+  "sRewardExpBackgroundPic",
+  "sQuestExpBackgroundPic",
+  "sBPIcon",
+  "iJumpId",
   sName = {
     0,
     0,
@@ -147,6 +156,30 @@ CmdActClientCfgBattlePass.Definition = {
     0,
     13,
     ""
+  },
+  sRewardExpBackgroundPic = {
+    14,
+    0,
+    13,
+    ""
+  },
+  sQuestExpBackgroundPic = {
+    15,
+    0,
+    13,
+    ""
+  },
+  sBPIcon = {
+    16,
+    0,
+    13,
+    ""
+  },
+  iJumpId = {
+    17,
+    0,
+    8,
+    0
   }
 }
 CmdActCfgBattlePassLevelCfg = sdp.SdpStruct("CmdActCfgBattlePassLevelCfg")

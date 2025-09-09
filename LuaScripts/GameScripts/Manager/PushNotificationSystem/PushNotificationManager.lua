@@ -69,6 +69,9 @@ function PushNotificationManager:RegisterTest()
   SROptionsModify.AddSROptionMethod("测试客户端数据上报", function()
     ReportManager:ReportClientDebugInfo("test", "test1")
   end, "Debug", 0)
+  SROptionsModify.AddSROptionMethod("测试删除老资源", function()
+    DownloadManager:ClearOldResource()
+  end, "Debug", 0)
 end
 
 function PushNotificationManager:TestNotification()

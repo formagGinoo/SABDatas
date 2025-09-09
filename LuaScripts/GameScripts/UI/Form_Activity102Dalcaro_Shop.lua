@@ -16,21 +16,6 @@ function Form_Activity102Dalcaro_Shop:OnActive()
   CS.GlobalManager.Instance:TriggerWwiseBGMState(119)
 end
 
-function Form_Activity102Dalcaro_Shop:OnShopBuyBtnClk(index, go)
-  self.super.OnShopBuyBtnClk(self, index, go)
-  local goods = self.m_shopGoods[index + 1]
-  local bCanBuy = ShopManager:CheckHaveAnyStock(self.m_ShopID, goods.iGroupId, goods.iGoodsId)
-  if not bCanBuy then
-    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10104)
-  else
-    local param = {
-      shopId = self.m_ShopID,
-      goodsInfo = goods
-    }
-    StackPopup:Push(UIDefines.ID_FORM_102DALCAROSHOPCONFIRMPOP, param)
-  end
-end
-
 local fullscreen = true
 ActiveLuaUI("Form_Activity102Dalcaro_Shop", Form_Activity102Dalcaro_Shop)
 return Form_Activity102Dalcaro_Shop

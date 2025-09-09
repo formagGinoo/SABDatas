@@ -12,6 +12,7 @@ function ActExploreWorld:ctor(onLoadFinish)
   self.objects = {}
   self.delayDestroy = {}
   self:RegisterEventHandler()
+  self.pickupInfo = {Count = 0, Amount = 0}
 end
 
 function ActExploreWorld:GenObjectID()
@@ -291,6 +292,9 @@ function ActExploreWorld:InitCreate()
         if 0 < cfg.InteractiveRadius and 0 < element.m_InteractivityType and element.m_InteractivityType < 3 then
           player:AddTask(self, ActExploreTask.InteractiveChange.new(interact.objectID, 0, cfg.Transform.Position, CS.VisualActExploreUtil.Rotate(cfg.Transform, cfg.Center), cfg.InteractiveRadius, element.m_InteractivityType == 1))
         end
+        if element.m_AudioEvent ~= "" then
+          interact:AddTask(self, ActExploreTask.PlaySound.new(element.m_AudioEvent))
+        end
         if serverData ~= nil then
           for k, v in pairs(serverData.counters) do
             system:SetCounter(interactEntityID, k, v, false)
@@ -554,8 +558,13 @@ function ActExploreWorld:UpdatePickUpAmount()
       count = count + 1
     end
   end
-  self.form:SetPickupAmount(amount, count)
-  return amount, count
+  self.pickupInfo.Amount = amount
+  self.pickupInfo.Count = count
+  self.form:broadcastEvent("eGameEvent_ActExplorePickupCountChanged")
+end
+
+function ActExploreWorld:GetPickupInfo()
+  return self.pickupInfo
 end
 
 function ActExploreWorld:CheckInteractiveIsUnlock(element)

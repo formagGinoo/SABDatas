@@ -223,6 +223,8 @@ function HeroFashionSubPanel:FreshDownStatusShow(fashionInfoCfg)
   UILuaHelper.SetActive(self.m_btn_equip, isShowEquipBtn)
   local isShowHaveSkinNoHero = not isHaveHero and isHaveFashion
   UILuaHelper.SetActive(self.m_z_txt_haveskin, isShowHaveSkinNoHero)
+  local isShowTips = fashionInfoCfg.m_SpecialTips == 1
+  UILuaHelper.SetActive(self.m_z_txt_tips, isShowTips)
   local isGetBuyMoney = fashionInfoCfg.m_GetType == 1
   local isCanBuy = false
   local priceStr = ""

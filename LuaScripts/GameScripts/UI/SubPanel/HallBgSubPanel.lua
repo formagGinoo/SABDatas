@@ -14,6 +14,7 @@ local DefaultBgSpineTab = {
     bgPathStr = "role_Empusae"
   }
 }
+local DefaultBGMusic = 13
 
 function HallBgSubPanel:OnInit()
   self.m_showPosDataList = {}
@@ -38,36 +39,24 @@ function HallBgSubPanel:OnInit()
   self.m_HeroSpineDynamicLoader = UIDynamicObjectManager:GetCustomLoaderByType(UIDynamicObjectManager.CustomLoaderType.Spine)
   self.m_curHeroSpineObj = nil
   self.m_HeroFashion = HeroManager:GetHeroFashion()
+  self.m_spineClickServerData = nil
   self.m_lastPlayVoiceTime = 0
   self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
   if self.m_spineClick then
-    function self.m_spineClick.Touched(name, localpos)
-      log.info("spineClick:" .. tostring(name))
-      
-      if self.m_isDrag or self.m_curShowHeroData == nil then
-        self.m_isDrag = false
-        return
-      end
-      local curServerTime = TimeUtil:GetServerTimeS()
-      if curServerTime - self.m_lastPlayVoiceTime < self.m_uiVariables.LimitVoiceSecNum then
-        return
-      end
-      self.m_lastPlayVoiceTime = TimeUtil:GetServerTimeS()
-      local vVoiceText = AttractManager:GetTouchVoice(self.m_curShowHeroData, self.m_curShowHeroData.characterCfg.m_HeroID, name)
-      if vVoiceText then
-        self:StopCurPlayingVoice()
-        self.m_vVoiceText = vVoiceText
-        self:PlayVoice(self.m_vVoiceText[self.m_playSubIndex])
-      else
-        return
-      end
-    end
+    self.m_spineClick.raycaster = self.m_parentLua.m_rootTrans:GetComponent("GraphicRaycasterBugFixed")
+    self.m_spineClick.Touched = handler(self, self.OnSpineTouchClick)
+    self:StopCurPlayingVoice()
   end
 end
 
 function HallBgSubPanel:PlayVoice(voiceInfo)
-  CS.UI.UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
+  UILuaHelper.StartPlaySFX(voiceInfo.voice, nil, function(playingId)
     self.m_playingId = playingId
+    local tempVoiceInfo = self.m_vVoiceText[self.m_playSubIndex]
+    if tempVoiceInfo then
+      UILuaHelper.SetActive(self.m_dialog_root, true)
+      self.m_txt_dialog_Text.text = tempVoiceInfo.subtitle
+    end
   end, function()
     self.m_playSubIndex = self.m_playSubIndex + 1
     local nextVoice = self.m_vVoiceText[self.m_playSubIndex]
@@ -75,6 +64,7 @@ function HallBgSubPanel:PlayVoice(voiceInfo)
       self:PlayVoice(nextVoice)
     else
       self.m_playingId = nil
+      UILuaHelper.SetActive(self.m_dialog_root, false)
     end
   end)
 end
@@ -82,8 +72,10 @@ end
 function HallBgSubPanel:StopCurPlayingVoice()
   self.m_playSubIndex = 1
   if self.m_playingId then
-    CS.UI.UILuaHelper.StopPlaySFX(self.m_playingId)
+    UILuaHelper.StopPlaySFX(self.m_playingId)
+    self.m_playingId = nil
   end
+  UILuaHelper.SetActive(self.m_dialog_root, false)
 end
 
 function HallBgSubPanel:AddEventListeners()
@@ -95,26 +87,21 @@ end
 
 function HallBgSubPanel:OnActive()
   self:AddEventListeners()
-  if self.m_spineClick == nil then
-    self.m_spineClick = self.m_root_hero:GetComponent("SpineClick")
-  end
   self:FreshCreateShowBgList()
   self:FreshShowCurrentPos()
 end
 
 function HallBgSubPanel:OnInActive()
+  self:StopCurPlayingVoice()
   self:CheckRecycleSpine(true)
   self:CheckRecycleBgNode()
   self:ClearData()
   self:CheckReqSetMainBgIndexToServer()
-  if self.m_spineClick then
-    self.m_spineClick:DestroyFollowerList()
-    self.m_spineClick = nil
-  end
   self:RemoveAllEventListeners()
 end
 
 function HallBgSubPanel:OnDestroy()
+  self:StopCurPlayingVoice()
   self:CheckRecycleSpine(true)
   self:CheckRecycleBgNode()
   self:RemoveAllEventListeners()
@@ -124,6 +111,8 @@ end
 
 function HallBgSubPanel:ClearData()
   self.m_spineDitherExtension = nil
+  self.m_startDragPos = nil
+  self.m_startDragUIPosX = nil
 end
 
 function HallBgSubPanel:FreshCreateShowBgList()
@@ -221,6 +210,7 @@ function HallBgSubPanel:FreshShowCurrentPos()
   local isShowFashion = curChoseData.iType == MainBgType.Fashion
   self:StopCurPlayingVoice()
   UILuaHelper.SetActive(self.m_heroDefaultBg, isShowRole or isShowFashion)
+  self.m_spineClickServerData = nil
   if isShowRole or isShowFashion then
     self:HideBgRootChild()
     local showSpineStr
@@ -231,12 +221,22 @@ function HallBgSubPanel:FreshShowCurrentPos()
       if fashionInfo then
         showSpineStr = fashionInfo.m_Spine
       end
+      self.m_spineClickServerData = {
+        serverData = self.m_curShowHeroData.serverData,
+        iFashion = 0
+      }
     else
       showSpineStr = curShowPosData.fashionInfo.m_Spine
+      local heroID = curShowPosData.fashionInfo.m_CharacterId
+      local heroData = HeroManager:GetHeroDataByID(heroID)
+      local fashionID = curShowPosData.fashionInfo.m_FashionID
+      local tempSeverData = heroData and heroData.serverData or AttractManager:GetOneLvHeroData(heroID)
+      self.m_spineClickServerData = {serverData = tempSeverData, iFashion = fashionID}
     end
     if showSpineStr ~= nil and showSpineStr ~= "" then
       self:ShowHeroSpine(showSpineStr)
     end
+    CS.GlobalManager.Instance:TriggerWwiseBGMState(DefaultBGMusic)
   elseif isShowBg then
     self:HideCurSpine()
     self:ShowMainBg()
@@ -289,6 +289,7 @@ function HallBgSubPanel:ShowMainBg()
       self.m_curBgNodeObj = gameObject
       self:FreshBgChild()
       self:CheckShowDefaultSpineWithHave()
+      self:PlayBgMusic()
     end)
   end
 end
@@ -358,6 +359,9 @@ function HallBgSubPanel:CheckRecycleSpine(isResetParam)
     if isResetParam then
       UILuaHelper.SpineResetMatParam(self.m_curHeroSpineObj.spineObj)
     end
+    if self.m_spineClick then
+      self.m_spineClick:DestroyFollowerList()
+    end
     self.m_HeroSpineDynamicLoader:RecycleHeroSpineObject(self.m_curHeroSpineObj)
     self.m_curHeroSpineObj = nil
   end
@@ -413,7 +417,7 @@ function HallBgSubPanel:OnLoadSpineBack()
   self:SpinePlayIdleAnim()
   if self.m_spineClick and self.m_curHeroSpineObj and not utils.isNull(self.m_curHeroSpineObj.spineObj) then
     local typeStr = SpinePlaceCfg.MainShow
-    local spineStr = self.m_curHeroSpineObj.spineStr
+    local spineStr = self.m_curHeroSpineObj.assetSpineStr
     self.m_spineClick:BindingSpine("hero_place_" .. spineStr .. "," .. typeStr .. "," .. spineStr)
   end
 end
@@ -453,9 +457,7 @@ function HallBgSubPanel:OnImgEndBDrag(pointerEventData)
   local absDeltaNum = math.abs(deltaNum)
   if absDeltaNum < self.m_uiVariables.DragLimitNum then
     self:CheckShowDragBackTween()
-    return
-  end
-  if 0 < deltaNum then
+  elseif 0 < deltaNum then
     self:CheckShowLastPos()
   else
     self:CheckShowNextPos()
@@ -595,6 +597,44 @@ function HallBgSubPanel:CheckShowDragBackTween()
     self.m_dragTimer = nil
     self:CheckKillDragDoTween()
   end)
+end
+
+function HallBgSubPanel:PlayBgMusic()
+  local uiInfo = StackFlow:GetTopUI()
+  if utils.isNull(uiInfo) then
+    return
+  end
+  local name = uiInfo:GetFramePrefabName()
+  if name ~= "Form_Hall" then
+    return
+  end
+  local bgState = DefaultBGMusic
+  if self.m_curMainBackgroundCfg and self.m_curMainBackgroundCfg.m_WwiseBg and self.m_curMainBackgroundCfg.m_WwiseBg ~= 0 then
+    bgState = self.m_curMainBackgroundCfg.m_WwiseBg
+  end
+  CS.GlobalManager.Instance:TriggerWwiseBGMState(bgState)
+end
+
+function HallBgSubPanel:OnSpineTouchClick(name, localpos)
+  log.info("HallBgSubPanel spineClick:" .. tostring(name))
+  if self.m_startDragUIPosX or self.m_spineClickServerData == nil then
+    return
+  end
+  local curServerTime = TimeUtil:GetServerTimeS()
+  if curServerTime - self.m_lastPlayVoiceTime < self.m_uiVariables.LimitVoiceSecNum then
+    return
+  end
+  self.m_lastPlayVoiceTime = TimeUtil:GetServerTimeS()
+  local serverData = self.m_spineClickServerData.serverData
+  local fashionID = self.m_spineClickServerData.iFashion
+  local vVoiceText = AttractManager:GetTouchVoice(serverData, serverData.iHeroId, fashionID, name)
+  if vVoiceText then
+    self:StopCurPlayingVoice()
+    self.m_vVoiceText = vVoiceText
+    self:PlayVoice(self.m_vVoiceText[self.m_playSubIndex])
+  else
+    return
+  end
 end
 
 function HallBgSubPanel:GetDownloadResourceExtra()

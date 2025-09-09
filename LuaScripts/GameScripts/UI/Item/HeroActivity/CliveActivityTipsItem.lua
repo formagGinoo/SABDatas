@@ -150,7 +150,7 @@ function CliveActivityTipsItem:OnClick()
     else
       StackFlow:Push(UIDefines.ID_FORM_ACTIVITYMAIN, {
         activityId = activityId,
-        cliveType = self.m_itemInitData.cliveType
+        subPanelTabIndex = self.m_itemInitData.cliveType
       })
     end
   end

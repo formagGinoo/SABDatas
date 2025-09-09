@@ -11,7 +11,8 @@ BattleFlowManager.PlotActionType = {
   Dialog = 3,
   Black = 4,
   Wait = 5,
-  AllPlayerCtrl = 6
+  AllPlayerCtrl = 6,
+  AVG = 9
 }
 
 function BattleFlowManager:OnCreate()

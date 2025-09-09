@@ -15,7 +15,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": "1",
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "1"
     },
     "2": {
       "m_bError": null,
@@ -31,7 +32,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": "1",
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "2"
     },
     "3": {
       "m_bError": null,
@@ -47,7 +49,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": "1",
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "3"
     },
     "4": {
       "m_bError": null,
@@ -63,7 +66,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": "1",
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "4"
     },
     "5": {
       "m_bError": null,
@@ -79,7 +83,8 @@
       "m_MinNum": "-8000",
       "m_MaxNum": "20000",
       "m_InheriteType": "1",
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "5"
     },
     "6": {
       "m_bError": null,
@@ -95,7 +100,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "7"
     },
     "7": {
       "m_bError": null,
@@ -111,7 +117,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "8"
     },
     "8": {
       "m_bError": null,
@@ -127,7 +134,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "9"
     },
     "9": {
       "m_bError": null,
@@ -143,7 +151,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "10"
     },
     "10": {
       "m_bError": null,
@@ -159,7 +168,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "11"
     },
     "11": {
       "m_bError": null,
@@ -175,7 +185,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "12"
     },
     "12": {
       "m_bError": null,
@@ -191,7 +202,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "13"
     },
     "13": {
       "m_bError": null,
@@ -207,7 +219,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "14"
     },
     "14": {
       "m_bError": null,
@@ -223,23 +236,25 @@
       "m_MinNum": "-8000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "15"
     },
     "15": {
       "m_bError": null,
       "m_PropertyID": "15",
-      "m_PropertyIcon": "\"\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_15_AntiCrit_Rate\"",
       "m_mCNName": "\"CRIT Resist Rate\"",
       "m_ENName": "\"AntiCrit_Rate\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-8000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "16"
     },
     "16": {
       "m_bError": null,
@@ -255,23 +270,25 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "17"
     },
     "17": {
       "m_bError": null,
       "m_PropertyID": "17",
-      "m_PropertyIcon": "\"\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_17_AntiCrit_Ratio\"",
       "m_mCNName": "\"CRIT DMG Mitigation\"",
       "m_ENName": "\"AntiCrit_Ratio\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "18"
     },
     "18": {
       "m_bError": null,
@@ -287,7 +304,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "19"
     },
     "19": {
       "m_bError": null,
@@ -303,7 +321,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "20"
     },
     "20": {
       "m_bError": null,
@@ -319,7 +338,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "21"
     },
     "21": {
       "m_bError": null,
@@ -335,7 +355,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "22"
     },
     "22": {
       "m_bError": null,
@@ -351,7 +372,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "23"
     },
     "23": {
       "m_bError": null,
@@ -367,7 +389,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "24"
     },
     "24": {
       "m_bError": null,
@@ -383,7 +406,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "25"
     },
     "25": {
       "m_bError": null,
@@ -399,7 +423,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "26"
     },
     "26": {
       "m_bError": null,
@@ -415,7 +440,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "27"
     },
     "27": {
       "m_bError": null,
@@ -431,7 +457,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "28"
     },
     "28": {
       "m_bError": null,
@@ -447,7 +474,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "29"
     },
     "29": {
       "m_bError": null,
@@ -463,7 +491,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "30000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "30"
     },
     "30": {
       "m_bError": null,
@@ -479,7 +508,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "31"
     },
     "31": {
       "m_bError": null,
@@ -495,7 +525,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "32"
     },
     "32": {
       "m_bError": null,
@@ -511,7 +542,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "33"
     },
     "33": {
       "m_bError": null,
@@ -527,7 +559,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "34"
     },
     "34": {
       "m_bError": null,
@@ -543,7 +576,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "35"
     },
     "35": {
       "m_bError": null,
@@ -559,7 +593,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "36"
     },
     "36": {
       "m_bError": null,
@@ -575,7 +610,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "37"
     },
     "37": {
       "m_bError": null,
@@ -591,7 +627,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "38"
     },
     "38": {
       "m_bError": null,
@@ -607,7 +644,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "39"
     },
     "39": {
       "m_bError": null,
@@ -623,7 +661,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "40"
     },
     "40": {
       "m_bError": null,
@@ -639,7 +678,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "41"
     },
     "41": {
       "m_bError": null,
@@ -655,7 +695,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "42"
     },
     "42": {
       "m_bError": null,
@@ -671,7 +712,8 @@
       "m_MinNum": null,
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "43"
     },
     "43": {
       "m_bError": null,
@@ -687,7 +729,8 @@
       "m_MinNum": null,
       "m_MaxNum": "5000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "44"
     },
     "44": {
       "m_bError": null,
@@ -703,7 +746,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "45"
     },
     "45": {
       "m_bError": null,
@@ -719,7 +763,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "46"
     },
     "46": {
       "m_bError": null,
@@ -735,7 +780,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "47"
     },
     "47": {
       "m_bError": null,
@@ -751,7 +797,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "48"
     },
     "48": {
       "m_bError": null,
@@ -767,7 +814,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "49"
     },
     "49": {
       "m_bError": null,
@@ -783,7 +831,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "50"
     },
     "50": {
       "m_bError": null,
@@ -799,7 +848,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "51"
     },
     "51": {
       "m_bError": null,
@@ -815,7 +865,8 @@
       "m_MinNum": "-5000",
       "m_MaxNum": "10000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "52"
     },
     "52": {
       "m_bError": null,
@@ -831,7 +882,8 @@
       "m_MinNum": "-10000",
       "m_MaxNum": "20000",
       "m_InheriteType": "1",
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "53"
     },
     "53": {
       "m_bError": null,
@@ -847,7 +899,8 @@
       "m_MinNum": null,
       "m_MaxNum": "1000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "54"
     },
     "54": {
       "m_bError": null,
@@ -863,7 +916,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "55"
     },
     "55": {
       "m_bError": null,
@@ -879,7 +933,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "56"
     },
     "56": {
       "m_bError": null,
@@ -895,7 +950,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "57"
     },
     "57": {
       "m_bError": null,
@@ -911,7 +967,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "58"
     },
     "58": {
       "m_bError": null,
@@ -927,7 +984,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "1"
+      "m_Compute": "1",
+      "m_Num": "6"
     },
     "100": {
       "m_bError": null,
@@ -943,7 +1001,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "59"
     },
     "101": {
       "m_bError": null,
@@ -959,7 +1018,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "60"
     },
     "102": {
       "m_bError": null,
@@ -975,7 +1035,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "61"
     },
     "103": {
       "m_bError": null,
@@ -991,7 +1052,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "62"
     },
     "104": {
       "m_bError": null,
@@ -1007,7 +1069,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "63"
     },
     "105": {
       "m_bError": null,
@@ -1023,7 +1086,8 @@
       "m_MinNum": "-10000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "64"
     },
     "106": {
       "m_bError": null,
@@ -1039,7 +1103,8 @@
       "m_MinNum": "-10000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "65"
     },
     "107": {
       "m_bError": null,
@@ -1055,7 +1120,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "66"
     },
     "108": {
       "m_bError": null,
@@ -1071,7 +1137,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "67"
     },
     "109": {
       "m_bError": null,
@@ -1087,7 +1154,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "68"
     },
     "110": {
       "m_bError": null,
@@ -1103,7 +1171,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "69"
     },
     "111": {
       "m_bError": null,
@@ -1119,7 +1188,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "70"
     },
     "112": {
       "m_bError": null,
@@ -1135,7 +1205,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "71"
     },
     "114": {
       "m_bError": null,
@@ -1151,7 +1222,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "72"
     },
     "115": {
       "m_bError": null,
@@ -1167,7 +1239,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "73"
     },
     "116": {
       "m_bError": null,
@@ -1183,7 +1256,8 @@
       "m_MinNum": "-20000",
       "m_MaxNum": "20000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "74"
     },
     "117": {
       "m_bError": null,
@@ -1199,7 +1273,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "75"
     },
     "118": {
       "m_bError": null,
@@ -1215,7 +1290,8 @@
       "m_MinNum": "-10000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "76"
     },
     "119": {
       "m_bError": null,
@@ -1231,7 +1307,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "77"
     },
     "120": {
       "m_bError": null,
@@ -1247,39 +1324,42 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "78"
     },
     "121": {
       "m_bError": null,
       "m_PropertyID": "121",
-      "m_PropertyIcon": "\"\"",
-      "m_mCNName": "\"Reserved String\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_18_AllPntrate_Rate\"",
+      "m_mCNName": "\"Total DMG Increase\"",
       "m_ENName": "\"FinalDamage_Add\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-50000",
       "m_MaxNum": "50000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "79"
     },
     "122": {
       "m_bError": null,
       "m_PropertyID": "122",
-      "m_PropertyIcon": "\"\"",
-      "m_mCNName": "\"Reserved String\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_19_AntiAllPntrate_Rate\"",
+      "m_mCNName": "\"Total DMG Decrease\"",
       "m_ENName": "\"FinalDamage_Reduce\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-50000",
       "m_MaxNum": "50000",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "80"
     },
     "123": {
       "m_bError": null,
@@ -1295,7 +1375,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "81"
     },
     "124": {
       "m_bError": null,
@@ -1311,7 +1392,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "82"
     },
     "125": {
       "m_bError": null,
@@ -1327,7 +1409,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "83"
     },
     "126": {
       "m_bError": null,
@@ -1343,7 +1426,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "84"
     },
     "127": {
       "m_bError": null,
@@ -1359,7 +1443,8 @@
       "m_MinNum": "-100",
       "m_MaxNum": "100",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "85"
     },
     "128": {
       "m_bError": null,
@@ -1375,7 +1460,8 @@
       "m_MinNum": "-100",
       "m_MaxNum": "100",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "86"
     },
     "129": {
       "m_bError": null,
@@ -1391,7 +1477,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "87"
     },
     "130": {
       "m_bError": null,
@@ -1407,7 +1494,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "88"
     },
     "131": {
       "m_bError": null,
@@ -1423,7 +1511,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "89"
     },
     "132": {
       "m_bError": null,
@@ -1439,7 +1528,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "90"
     },
     "133": {
       "m_bError": null,
@@ -1455,7 +1545,8 @@
       "m_MinNum": "-50000",
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "91"
     },
     "134": {
       "m_bError": null,
@@ -1471,7 +1562,8 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "92"
     },
     "135": {
       "m_bError": null,
@@ -1487,8 +1579,26 @@
       "m_MinNum": null,
       "m_MaxNum": "2147483647",
       "m_InheriteType": null,
-      "m_Compute": "2"
+      "m_Compute": "2",
+      "m_Num": "93"
+    },
+    "136": {
+      "m_bError": null,
+      "m_PropertyID": "136",
+      "m_PropertyIcon": "\"\"",
+      "m_mCNName": "\"\"",
+      "m_ENName": "\"FrozenHp\"",
+      "m_Type": "1",
+      "m_Show": "2",
+      "m_FVNum": null,
+      "m_FVPercent": null,
+      "m_PropertyType": "2",
+      "m_MinNum": null,
+      "m_MaxNum": "2147483647",
+      "m_InheriteType": null,
+      "m_Compute": "2",
+      "m_Num": "94"
     }
   },
-  "status": "processed_93_items"
+  "status": "processed_94_items"
 }

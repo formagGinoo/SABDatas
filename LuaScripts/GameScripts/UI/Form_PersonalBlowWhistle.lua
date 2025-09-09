@@ -1,20 +1,7 @@
 local Form_PersonalBlowWhistle = class("Form_PersonalBlowWhistle", require("UI/UIFrames/Form_PersonalBlowWhistleUI"))
-local ReportConfig = {
-  maxReportsPerDay = 0,
-  singlePlayerCooldownHours = 0,
-  maxPlayersPerTimeWindow = 0,
-  timeWindowHours = 0
-}
-local ReportLimitData = {reportData = ""}
-local PlayerReportTimes = {}
-local WindowStartTime = 0
-local ReportedCount = 0
-local LastResetDay = 0
-local DailyReportCount = 0
 
 function Form_PersonalBlowWhistle:AfterInit()
   self.super.AfterInit(self)
-  self:InitData()
   self.toggles = {}
   local itemInstance = self.m_toggle_1
   local maxToggleCount = string.split(ConfigManager:GetGlobalSettingsByKey("PersoncardReportType"), ";")
@@ -31,14 +18,28 @@ function Form_PersonalBlowWhistle:AfterInit()
     })
   end
   itemInstance:SetActive(false)
+  self.ReportConfig = {
+    maxReportsPerDay = 0,
+    singlePlayerCooldownHours = 0,
+    maxPlayersPerTimeWindow = 0,
+    timeWindowHours = 0
+  }
+  self.ReportLimitData = {reportData = ""}
+  self.PlayerReportTimes = {}
+  self.WindowStartTime = 0
+  self.ReportedCount = 0
+  self.LastResetDay = 0
+  self.DailyReportCount = 0
+  self:InitData()
+  self:addEventListener("eGameEvent_Role_RoleReport", handler(self, self.OnRecordReport))
 end
 
 function Form_PersonalBlowWhistle:InitData()
-  ReportConfig.maxReportsPerDay = tonumber(ConfigManager:GetGlobalSettingsByKey("PersoncardReportDayMax"))
-  ReportConfig.singlePlayerCooldownHours = tonumber(ConfigManager:GetGlobalSettingsByKey("PersoncardReportSingleTime"))
+  self.ReportConfig.maxReportsPerDay = tonumber(ConfigManager:GetGlobalSettingsByKey("PersoncardReportDayMax"))
+  self.ReportConfig.singlePlayerCooldownHours = tonumber(ConfigManager:GetGlobalSettingsByKey("PersoncardReportSingleTime"))
   local personcardReportLimit = string.split(ConfigManager:GetGlobalSettingsByKey("PersoncardReportLimit"), ";")
-  ReportConfig.maxPlayersPerTimeWindow = tonumber(personcardReportLimit[2])
-  ReportConfig.timeWindowHours = tonumber(personcardReportLimit[1])
+  self.ReportConfig.maxPlayersPerTimeWindow = tonumber(personcardReportLimit[2])
+  self.ReportConfig.timeWindowHours = tonumber(personcardReportLimit[1])
 end
 
 function Form_PersonalBlowWhistle:OnActive()
@@ -51,10 +52,6 @@ function Form_PersonalBlowWhistle:OnInactive()
   self.super.OnInactive(self)
 end
 
-function Form_PersonalBlowWhistle:OnDestroy()
-  self.super.OnDestroy(self)
-end
-
 function Form_PersonalBlowWhistle:ReSetData()
   if self.toggles[1] then
     self.toggles[1].go:GetComponent("ActiveToggle").isOn = true
@@ -65,7 +62,7 @@ function Form_PersonalBlowWhistle:ReSetData()
     self.targetPlayerZoneID = self.m_csui.m_param.zoneID or 0
   end
   self.m_inputfield_InputField.text = ""
-  ReportLimitData.reportData = LocalDataManager:GetStringSimple("ReportLimitData", "")
+  self.ReportLimitData.reportData = LocalDataManager:GetStringSimple("ReportLimitData", "")
   self:ParseReportData()
 end
 
@@ -85,78 +82,78 @@ end
 
 function Form_PersonalBlowWhistle:CheckDailyLimit()
   self:CheckAndResetDailyCount()
-  return DailyReportCount < ReportConfig.maxReportsPerDay
+  return self.DailyReportCount < self.ReportConfig.maxReportsPerDay
 end
 
 function Form_PersonalBlowWhistle:CheckSinglePlayerCooldown(currentTime)
-  if not PlayerReportTimes[self.targetPlayerId] then
+  if not self.PlayerReportTimes[self.targetPlayerId] then
     return true
   end
-  local lastReportTime = PlayerReportTimes[self.targetPlayerId]
-  local cooldownSeconds = ReportConfig.singlePlayerCooldownHours
+  local lastReportTime = self.PlayerReportTimes[self.targetPlayerId]
+  local cooldownSeconds = self.ReportConfig.singlePlayerCooldownHours
   return cooldownSeconds <= currentTime - lastReportTime
 end
 
 function Form_PersonalBlowWhistle:CheckTimeWindowLimit(currentTime)
-  local windowStart = currentTime - ReportConfig.timeWindowHours
-  if currentTime - WindowStartTime >= ReportConfig.timeWindowHours then
+  local windowStart = currentTime - self.ReportConfig.timeWindowHours
+  if currentTime - self.WindowStartTime >= self.ReportConfig.timeWindowHours then
     self:ResetTimeWindow(currentTime)
   end
-  if PlayerReportTimes[self.targetPlayerId] then
-    local lastReportTime = PlayerReportTimes[self.targetPlayerId]
+  if self.PlayerReportTimes[self.targetPlayerId] then
+    local lastReportTime = self.PlayerReportTimes[self.targetPlayerId]
     if windowStart <= lastReportTime then
       return false
     end
   end
   local currentWindowReports = 0
-  for playerId, reportTime in pairs(PlayerReportTimes) do
+  for playerId, reportTime in pairs(self.PlayerReportTimes) do
     if reportTime >= windowStart then
       currentWindowReports = currentWindowReports + 1
     end
   end
-  return currentWindowReports < ReportConfig.maxPlayersPerTimeWindow
+  return currentWindowReports < self.ReportConfig.maxPlayersPerTimeWindow
 end
 
-function Form_PersonalBlowWhistle:RecordReport()
+function Form_PersonalBlowWhistle:OnRecordReport()
   local currentTime = TimeUtil:GetServerTimeS()
-  PlayerReportTimes[self.targetPlayerId] = currentTime
-  ReportedCount = ReportedCount + 1
-  DailyReportCount = DailyReportCount + 1
+  self.PlayerReportTimes[self.targetPlayerId] = currentTime
+  self.ReportedCount = self.ReportedCount + 1
+  self.DailyReportCount = self.DailyReportCount + 1
   self:SaveReportData()
 end
 
 function Form_PersonalBlowWhistle:ResetTimeWindow(currentTime)
-  WindowStartTime = currentTime
-  ReportedCount = 0
+  self.WindowStartTime = currentTime
+  self.ReportedCount = 0
   self:CleanupExpiredData()
 end
 
 function Form_PersonalBlowWhistle:CleanupExpiredData()
   local currentTime = TimeUtil:GetServerTimeS()
-  local maxAge = math.max(ReportConfig.singlePlayerCooldownHours, ReportConfig.timeWindowHours)
+  local maxAge = math.max(self.ReportConfig.singlePlayerCooldownHours, self.ReportConfig.timeWindowHours)
   local expiredPlayers = {}
-  for playerId, reportTime in pairs(PlayerReportTimes) do
+  for playerId, reportTime in pairs(self.PlayerReportTimes) do
     if maxAge < currentTime - reportTime then
       table.insert(expiredPlayers, playerId)
     end
   end
   for _, playerId in ipairs(expiredPlayers) do
-    PlayerReportTimes[playerId] = nil
+    self.PlayerReportTimes[playerId] = nil
   end
 end
 
 function Form_PersonalBlowWhistle:ParseReportData()
-  if ReportLimitData.reportData == "" then
-    PlayerReportTimes = {}
-    WindowStartTime = TimeUtil:GetServerTimeS()
-    ReportedCount = 0
-    LastResetDay = self:GetCurrentDay()
-    DailyReportCount = 0
+  if self.ReportLimitData.reportData == "" then
+    self.PlayerReportTimes = {}
+    self.WindowStartTime = TimeUtil:GetServerTimeS()
+    self.ReportedCount = 0
+    self.LastResetDay = self:GetCurrentDay()
+    self.DailyReportCount = 0
     return
   end
-  local parts = self:SplitString(ReportLimitData.reportData, "|")
+  local parts = self:SplitString(self.ReportLimitData.reportData, "|")
   if 5 <= #parts then
-    PlayerReportTimes = {}
+    self.PlayerReportTimes = {}
     if parts[1] ~= "" then
       local playerReports = self:SplitString(parts[1], ",")
       for _, report in ipairs(playerReports) do
@@ -164,44 +161,44 @@ function Form_PersonalBlowWhistle:ParseReportData()
         if #kvp == 2 then
           local timestamp = tonumber(kvp[2])
           if timestamp then
-            PlayerReportTimes[kvp[1]] = timestamp
+            self.PlayerReportTimes[kvp[1]] = timestamp
           end
         end
       end
     end
     local windowStart = tonumber(parts[2])
     if windowStart then
-      WindowStartTime = windowStart
+      self.WindowStartTime = windowStart
     end
     local count = tonumber(parts[3])
     if count then
-      ReportedCount = count
+      self.ReportedCount = count
     end
     local lastReset = tonumber(parts[4])
     if lastReset then
-      LastResetDay = lastReset
+      self.LastResetDay = lastReset
     end
     local dailyCount = tonumber(parts[5])
     if dailyCount then
-      DailyReportCount = dailyCount
+      self.DailyReportCount = dailyCount
     end
   end
 end
 
 function Form_PersonalBlowWhistle:SaveReportData()
   local playerReports = {}
-  for playerId, timestamp in pairs(PlayerReportTimes) do
+  for playerId, timestamp in pairs(self.PlayerReportTimes) do
     table.insert(playerReports, string.format("%s:%d", playerId, timestamp))
   end
-  ReportLimitData.reportData = string.format("%s|%d|%d|%d|%d", table.concat(playerReports, ","), WindowStartTime, ReportedCount, LastResetDay, DailyReportCount)
-  LocalDataManager:SetStringSimple("ReportLimitData", ReportLimitData.reportData)
+  self.ReportLimitData.reportData = string.format("%s|%d|%d|%d|%d", table.concat(playerReports, ","), self.WindowStartTime, self.ReportedCount, self.LastResetDay, self.DailyReportCount)
+  LocalDataManager:SetStringSimple("ReportLimitData", self.ReportLimitData.reportData)
 end
 
 function Form_PersonalBlowWhistle:CheckAndResetDailyCount()
   local currentDay = self:GetCurrentDay()
-  if currentDay > LastResetDay then
-    DailyReportCount = 0
-    LastResetDay = currentDay
+  if currentDay > self.LastResetDay then
+    self.DailyReportCount = 0
+    self.LastResetDay = currentDay
     self:SaveReportData()
   end
 end
@@ -226,15 +223,12 @@ end
 
 function Form_PersonalBlowWhistle:OnNodelightClicked()
   if self:CanReportPlayer() then
-    local reqMsg = MTTDProto.Cmd_Role_Report_CS()
-    reqMsg.iType = 10
-    reqMsg.iTargetUid = self.targetPlayerId
-    reqMsg.iZoneId = self.targetPlayerZoneID
-    reqMsg.iReportReasonType = self:GetReportReasonType()
-    reqMsg.sReason = self.m_inputfield_InputField.text
-    RPCS():Role_Report(reqMsg, function(sc)
-      self:RecordReport()
-    end)
+    RoleManager:ReqRoleReportCS({
+      targetPlayerId = self.targetPlayerId,
+      targetPlayerZoneID = self.targetPlayerZoneID,
+      reportReasonTypype = self:GetReportReasonType(),
+      text = self.m_inputfield_InputField.text
+    })
   end
   StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(13029))
   self:CloseForm()
