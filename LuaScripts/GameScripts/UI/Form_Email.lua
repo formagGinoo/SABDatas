@@ -125,6 +125,9 @@ function Form_Email:CheckReqReadEmail()
   if not self.m_curChooseIndex then
     return
   end
+  if not self.m_allShowEmailItemDataList then
+    return
+  end
   local curEmailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
   if not curEmailData then
     return
@@ -244,6 +247,12 @@ function Form_Email:GetContentRewardList(rewardList)
   if not rewardList then
     return
   end
+  if not self.m_allShowEmailItemDataList then
+    return
+  end
+  if not self.m_curChooseIndex then
+    return
+  end
   local emailFJItemDataList = {}
   local curChooseEmailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
   local isRcv = curChooseEmailData.mailData.serverData.iRcvAttachTime ~= 0
@@ -285,6 +294,9 @@ end
 function Form_Email:OnEventDelEmail(emailIDList)
   log.info("Form_Email OnEventDelEmail emailIDList : ", tostring(emailIDList))
   if not emailIDList then
+    return
+  end
+  if not self.m_allShowEmailItemDataList then
     return
   end
   local curChooseEmailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
@@ -372,6 +384,9 @@ function Form_Email:FreshShowContent()
   if not self.m_curChooseIndex then
     return
   end
+  if not self.m_allShowEmailItemDataList then
+    return
+  end
   self.m_bg_02:SetActive(true)
   local emailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
   if not emailData then
@@ -437,18 +452,21 @@ function Form_Email:OnEmailTabClick(index)
   if itemIndex == self.m_curChooseIndex then
     return
   end
+  if not self.m_allShowEmailItemDataList then
+    return
+  end
   local lastChooseIndex = self.m_curChooseIndex
   local lastShowItem = self.m_luaEmailListInfinityGrid:GetShowItemByIndex(lastChooseIndex)
   if lastShowItem then
     lastShowItem:ChangeChooseStatus(false)
-  else
+  elseif lastChooseIndex and self.m_allShowEmailItemDataList[lastChooseIndex] then
     self.m_allShowEmailItemDataList[lastChooseIndex].isChoose = false
   end
   self.m_curChooseIndex = itemIndex
   local curChooseItem = self.m_luaEmailListInfinityGrid:GetShowItemByIndex(self.m_curChooseIndex)
   if curChooseItem then
     curChooseItem:ChangeChooseStatus(true)
-  else
+  elseif self.m_curChooseIndex and self.m_allShowEmailItemDataList[self.m_curChooseIndex] then
     self.m_allShowEmailItemDataList[self.m_curChooseIndex].isChoose = true
   end
   self:CheckReqReadEmail()
@@ -474,6 +492,9 @@ function Form_Email:OnBtnreceiveClicked()
   if not self.m_curChooseIndex then
     return
   end
+  if not self.m_allShowEmailItemDataList then
+    return
+  end
   local emailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]
   if not emailData then
     return
@@ -488,6 +509,9 @@ end
 
 function Form_Email:OnBtndeleteClicked()
   if not self.m_curChooseIndex then
+    return
+  end
+  if not self.m_allShowEmailItemDataList then
     return
   end
   local emailData = self.m_allShowEmailItemDataList[self.m_curChooseIndex]

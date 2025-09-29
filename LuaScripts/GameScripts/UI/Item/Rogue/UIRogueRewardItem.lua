@@ -56,6 +56,12 @@ function UIRogueRewardItem:FreshRewardList()
     return
   end
   local rewardList = utils.changeCSArrayToLuaTable(self.m_rogueStageRewardGroupCfg.m_Rewards)
+  local privilegeReword = utils.changeCSArrayToLuaTable(self.m_rogueStageRewardGroupCfg.m_MonthlyPrivilegeReward)
+  for i, v in ipairs(privilegeReword) do
+    v.monthlyPrivilege = true
+    v.bIsGray = not MonthlyCardManager:IsPrivilegeEffect()
+  end
+  table.insertto(rewardList, privilegeReword)
   self:FreshRewardItems(rewardList)
 end
 
@@ -80,7 +86,9 @@ function UIRogueRewardItem:FreshRewardItems(rewardList)
         iNum = tonumber(itemData[2])
       }, {
         is_have_get = self.m_state == 1,
-        is_can_get = self.m_state == 2
+        is_can_get = self.m_state == 2,
+        monthlyPrivilege = itemData.monthlyPrivilege,
+        bIsGray = itemData.bIsGray
       })
       itemWidget:SetItemInfo(processItemData)
       itemWidget:SetActive(true)
@@ -94,7 +102,9 @@ function UIRogueRewardItem:FreshRewardItems(rewardList)
         iNum = tonumber(itemData[2])
       }, {
         is_have_get = self.m_state == 1,
-        is_can_get = self.m_state == 2
+        is_can_get = self.m_state == 2,
+        monthlyPrivilege = itemData.monthlyPrivilege,
+        bIsGray = itemData.bIsGray
       })
       itemWidget:SetItemInfo(processItemData)
       itemWidget:SetItemIconClickCB(function(itemID, itemNum, itemCom)

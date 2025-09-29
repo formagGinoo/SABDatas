@@ -421,6 +421,7 @@ CmdFinishChallengeInfoSC.Definition = {
   "stVerifyResult",
   "stMultiFightTestInfo",
   "bWin",
+  "vMonthCardExtraReward",
   vReward = {
     0,
     0,
@@ -462,6 +463,12 @@ CmdFinishChallengeInfoSC.Definition = {
     0,
     1,
     false
+  },
+  vMonthCardExtraReward = {
+    7,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
   }
 }
 Cmd_Fight_StartChallenge_CS = sdp.SdpStruct("Cmd_Fight_StartChallenge_CS")

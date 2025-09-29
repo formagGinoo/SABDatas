@@ -17,7 +17,8 @@ ActivityManager.PayStoreSubPanelEnum = {
   "LimitUpPackSubPanel",
   "ChainGiftPackSubPanel",
   "SignGiftFiveSunPanel",
-  "FashionStoreSubPanel"
+  "FashionStoreSubPanel",
+  "CharacterDevelopSubPanel"
 }
 ActivityManager.ActivitySubPanelName = {
   ActivitySPName_Sign7 = "ActivitySevenDaysSubPanel_ByMain",
@@ -36,7 +37,9 @@ ActivityManager.ActivitySubPanelName = {
   ActivitySPName_FirstRechargeActivity = "FirstRechargeActivitySubPanel",
   ActivitySPName_ReturnBackSignActivity = "ReturnBackSignSubPanel",
   ActivitySPName_ConsumeRewardActivity = "ChargeRebateSubPanel",
-  ActivitySPName_HeroTrialActivity = "HeroTrialActivitySubPanel"
+  ActivitySPName_HeroTrialActivity = "HeroTrialActivitySubPanel",
+  ActivitySPName_MinigameFlopCardActivity = "Activity10WarmupMinigameFlopCardSubPanel",
+  ActivitySPName_PreviewActivity = "PreviewActivitySubPanel"
 }
 ActivityManager.ActStateEnum = {
   Normal = 0,
@@ -44,6 +47,7 @@ ActivityManager.ActStateEnum = {
   Locked = 2,
   NotOpen = 3
 }
+ActivityManager.Red_Point_NewGoods = "_Red_Point_NewGoods_"
 ActivityManager.JumpType = {
   Activity = 0,
   Url = 1,
@@ -126,6 +130,7 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/HuntingRaid/HuntingRaidActivity")
   self:LoadActivity("Module/Activity/VoucherControl/VoucherControlActivity")
   self:LoadActivity("Module/Activity/SignGift/SignGiftActivity")
+  self:LoadActivity("Module/Activity/ReturnTask/ReturnTaskActivity")
   self:LoadActivity("Module/Activity/Gacha/Gacha10FreeActivity")
   self:LoadActivity("Module/Activity/ForbidCustomDescAct/ForbidCustomDescMgrActivity")
   self:LoadActivity("Module/Activity/ReturnBackSign/ReturnBackSignActivity")
@@ -133,6 +138,9 @@ function ActivityManager:LoadAllActivity()
   self:LoadActivity("Module/Activity/JumpFace/TimelinePushfaceActivity")
   self:LoadActivity("Module/Activity/GameActFightDataUpdate/GameActFightDataUpdateActivity")
   self:LoadActivity("Module/Activity/HeroTrial/HeroTrialActivity")
+  self:LoadActivity("Module/Activity/MiniGame/MinigameFlopCardActivity")
+  self:LoadActivity("Module/Activity/ActivityPreview/PreviewActivity")
+  self:LoadActivity("Module/Activity/Train/TrainActivity")
 end
 
 function ActivityManager:LoadActivity(sActivityPath)
@@ -267,6 +275,13 @@ function ActivityManager:OnDailyReset()
   self:GetActivityList(true)
 end
 
+function ActivityManager:OnDailyZeroReset()
+  local mPreviewActivity = self:GetActivityByType(MTTD.ActivityType_Calendar)
+  if mPreviewActivity and mPreviewActivity:checkCondition() then
+    mPreviewActivity:OnDailyZeroReset()
+  end
+end
+
 function ActivityManager:GetAllActivityList()
   return self.m_vActivity or {}
 end
@@ -307,6 +322,7 @@ function ActivityManager:SetActivityDataList(msg)
   
   local ActivitySort = {
     [MTTD.ActivityType_SignGift] = 100,
+    [MTTD.ActivityType_Train] = 110,
     [MTTD.ActivityType_PayStore] = 200
   }
   table.sort(self.m_vActivityData, function(a, b)
@@ -464,20 +480,6 @@ function ActivityManager:GetActivityList(bReload, isShowWaitView)
     end
     self:broadcastEvent("eGameEvent_Activity_AnywayReload")
     self:CheckShowUidAndMaking()
-    local moduleControlActivity = self:GetActivityByType(MTTD.ActivityType_ModuleControl)
-    if moduleControlActivity and moduleControlActivity:CloseGlobalRes() then
-      CS.MUF.Resource.ResourceManager.SetUseGlobal(false)
-      CS.UnityEngine.PlayerPrefs.SetInt("CloseComplianceResourceSwitch", 1)
-    else
-      CS.MUF.Resource.ResourceManager.SetUseGlobal(CS.MUF.Resource.ResourceManager.GetUseGlobalLocal())
-      CS.UnityEngine.PlayerPrefs.SetInt("CloseComplianceResourceSwitch", 0)
-    end
-    local savedUseGlobalLocal = CS.UnityEngine.PlayerPrefs.GetInt("UseGlobalLocal", -1)
-    local useGlobalLocal = CS.MUF.Resource.ResourceManager.GetUseGlobalLocal() and 1 or 0
-    if useGlobalLocal == -1 or useGlobalLocal ~= savedUseGlobalLocal then
-      ReportManager:ReportClientGlobalResEnabled(useGlobalLocal)
-      CS.UnityEngine.PlayerPrefs.SetInt("UseGlobalLocal", useGlobalLocal)
-    end
   end, self.OnReqGetListFailed)
 end
 
@@ -628,6 +630,18 @@ function ActivityManager:GetActivityListByType(iActivityType)
   if self.m_vActivity then
     for _, activity in ipairs(self.m_vActivity) do
       if activity:getType() == iActivityType then
+        table.insert(activityList, activity)
+      end
+    end
+  end
+  return activityList
+end
+
+function ActivityManager:GetAllPreviewActivityList()
+  local activityList = {}
+  if self.m_vActivity then
+    for _, activity in ipairs(self.m_vActivity) do
+      if activity.m_stActivityData.bInCalendar then
         table.insert(activityList, activity)
       end
     end

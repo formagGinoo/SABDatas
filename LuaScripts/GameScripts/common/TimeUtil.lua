@@ -338,6 +338,17 @@ function TimeUtil:GetServerTimeWeekDayHaveCommonOffset()
   return curW
 end
 
+function TimeUtil:GetMonday0Clock(timestamp)
+  timestamp = self:GetZeroClockTimeSParam(timestamp)
+  local date = self:GetServerDate(timestamp)
+  local wday = date.wday
+  local diffDays = wday - 2
+  if diffDays < 0 then
+    diffDays = diffDays + 7
+  end
+  return timestamp - diffDays * __oneDayOfSecond
+end
+
 function TimeUtil:GetZeroClockTimeS()
   return self:GetZeroClockTimeSParam(self:GetServerTimeS())
 end

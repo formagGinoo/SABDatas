@@ -163,6 +163,7 @@ function GuildManager:OnAfterInitConfig()
   self.m_guildMessageStart = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageStart") or 0) or 0
   self.m_guildMessageCD = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageCD") or 0) or 0
   self.m_guildMessageNoticeNum = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildMessageNotice") or 0) or 0
+  self.GuildInvitationExpired = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildInvitationExpired"))
 end
 
 function GuildManager:OnDailyReset()
@@ -315,6 +316,7 @@ function GuildManager:OnReqAlliance_GetInitSC(stData, msg)
   self.m_iSignNum = stData.iSignNum
   self.m_iSignTime = stData.iSignTime
   self.m_dailyChallengeTimes = stData.iBattleTimes
+  self.iLastLeaveAllianceTime = stData.iLastLeaveAllianceTime
   if stData.bHaveInvite then
     self:ReqAllianceGetInviteListCS()
   end
@@ -709,6 +711,7 @@ end
 
 function GuildManager:OnReqAllianceGetInviteListSC(data)
   self.m_AllianceInviteList = data.vList
+  self:broadcastEvent("eGameEvent_Alliance_Get_Invitations")
 end
 
 function GuildManager:ReqAllianceReplyInviteCS(iAllianceId, bAccept)
@@ -1176,19 +1179,24 @@ function GuildManager:GetAllianceInviteList()
   return self.m_AllianceInviteList
 end
 
-function GuildManager:GetLastAllianceInvite()
-  local inviteData
+function GuildManager:GetSortAllianceInvite()
+  local filterList = {}
   local inviteList = self:GetAllianceInviteList()
-  if inviteList and 0 < #inviteList then
+  local length = inviteList and #inviteList or 0
+  for i = 1, length do
+    local expiredTime = inviteList[i].stInviteUser.iInviteTime + self.GuildInvitationExpired - TimeUtil:GetServerTimeS()
+    if 0 < expiredTime then
+      table.insert(filterList, inviteList[i])
+    end
+  end
+  if filterList and 0 < #filterList then
     local function sortFun(data1, data2)
       return data1.stInviteUser.iInviteTime < data2.stInviteUser.iInviteTime
     end
     
-    table.sort(inviteList, sortFun)
-    inviteData = inviteList[#inviteList]
-    inviteList[#inviteList] = nil
-    return inviteData
+    table.sort(filterList, sortFun)
   end
+  return filterList
 end
 
 function GuildManager:GetOpenedGuildEventList()
@@ -1223,12 +1231,25 @@ function GuildManager:CheckGuildIsCanSign()
   return flag
 end
 
+function GuildManager:CheckGuildIsInvited()
+  local id = RoleManager:GetRoleAllianceInfo()
+  if id and id ~= 0 and id ~= "0" then
+    return 0
+  end
+  local invitedList = self:GetSortAllianceInvite()
+  return #invitedList
+end
+
 function GuildManager:CheckGuildEntryHaveRedPoint()
   local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Guild)
   if isOpen ~= true then
     return 0
   end
   local flag = self:CheckGuildIsCanSign()
+  if 0 < flag then
+    return flag
+  end
+  flag = self:CheckGuildIsInvited()
   if 0 < flag then
     return flag
   end
@@ -1877,6 +1898,7 @@ function GuildManager:ReqAllianceMessageNoticePinCS(iAllianceId, iNoticeID)
 end
 
 function GuildManager:OnReqAllianceMessageNoticePinSC(stData, msg)
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticePin")
 end
 
 function GuildManager:ReqAllianceMessageNoticeUnPinCS(iAllianceId, iNoticeID)
@@ -1887,6 +1909,7 @@ function GuildManager:ReqAllianceMessageNoticeUnPinCS(iAllianceId, iNoticeID)
 end
 
 function GuildManager:OnReqAllianceMessageNoticeUnPinSC(stData, msg)
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticeUnPin")
 end
 
 function GuildManager:OnPushAllianceMessageNoticeNew(stData, msg)
@@ -1926,7 +1949,7 @@ end
 
 function GuildManager:OnPushAllianceMessageNoticePinChange(stData, msg)
   self.m_iTopNoticeID = stData.iTopNoticeID
-  self:broadcastEvent("eGameEvent_Alliance_MessageNoticePin")
+  self:broadcastEvent("eGameEvent_Alliance_MessageNoticeChange")
 end
 
 function GuildManager:GetOwnPost()
@@ -2046,6 +2069,7 @@ end
 
 function GuildManager:ClearGuildInfo()
   RoleManager:SetRoleAllianceInfo({})
+  self:ReqAllianceGetInit()
   self.m_messageNoticeList = {}
   self.m_iTopNoticeID = 0
   self.m_ownerGuildDetail = nil

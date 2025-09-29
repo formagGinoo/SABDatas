@@ -11,10 +11,17 @@ function Form_GuildSign:AfterInit()
     local rootObj = self["m_pnl_item" .. i]
     self.m_rewardList[i].c_reward1 = rootObj.transform:Find("c_reward1").gameObject
     self.m_rewardList[i].c_reward2 = rootObj.transform:Find("c_reward2").gameObject
+    self.m_rewardList[i].c_light1 = rootObj.transform:Find("c_reward1/c_free_light").gameObject
+    self.m_rewardList[i].c_light2 = rootObj.transform:Find("c_reward2/c_free_light").gameObject
     self.m_rewardList[i].c_txt_day_Text = rootObj.transform:Find("c_txt_day1"):GetComponent(T_TextMeshProUGUI)
     self.m_rewardList[i].c_img_got = rootObj.transform:Find("c_img_got").gameObject
     self.m_rewardList[i].c_get_anim = rootObj.transform:Find("FX_ActivityLevel_get").gameObject
-    self.m_rewardList[i].c_txt_unlock = rootObj.transform:Find("c_txt_unlock").gameObject
+    self.m_rewardList[i].m_img_get = rootObj.transform:Find("m_img_get").gameObject
+    self.m_rewardList[i].m_img_redbg = rootObj.transform:Find("m_img_redbg").gameObject
+    self.m_rewardList[i].c_txt_rcd = rootObj.transform:Find("c_txt_rcd").gameObject
+    self.m_rewardList[i].m_img_get:SetActive(false)
+    self.m_rewardList[i].c_btn_touch = rootObj.transform:Find("c_btn_touch").gameObject
+    self.m_rewardList[i].c_btn_touch:SetActive(false)
     local c_btn_touch = rootObj.transform:Find("c_btn_touch"):GetComponent(T_Button)
     c_btn_touch.onClick:RemoveAllListeners()
     c_btn_touch.onClick:AddListener(function()
@@ -80,29 +87,38 @@ function Form_GuildSign:RefreshUI()
     self.m_rewardList[i].signReward:SetItemIconClickCB(function(itemID, itemNum, itemCom)
       self:OnItemClick(itemID, itemNum, itemCom)
     end)
+    self.m_rewardList[i].c_img_got:SetActive(false)
+    self.m_rewardList[i].m_img_get:SetActive(false)
+    self.m_rewardList[i].m_img_redbg:SetActive(false)
+    self.m_rewardList[i].c_light1:SetActive(false)
+    self.m_rewardList[i].c_light2:SetActive(false)
     self.m_rewardList[i].c_txt_day_Text.text = itemData.m_SignName
     local day, time = GuildManager:GetGuildSignNum()
     local num = (day or 0) % 7
     if num and num < itemData.m_ID then
-      self.m_rewardList[i].c_img_got:SetActive(false)
       local flag = TimeUtil:CheckTimeIsToDay(time)
       if not flag and num + 1 == i then
         self.m_rewardList[i].c_get_anim:SetActive(true)
-        self.m_rewardList[i].c_txt_unlock:SetActive(false)
+        self.m_rewardList[i].m_img_get:SetActive(true)
+        self.m_rewardList[i].c_light1:SetActive(true)
+        self.m_rewardList[i].c_light2:SetActive(true)
+        self.m_rewardList[i].m_img_redbg:SetActive(true)
+        self.m_rewardList[i].c_btn_touch:SetActive(true)
+        self.m_rewardList[i].c_txt_rcd:SetActive(false)
         self.m_rewardList[i].c_img_got:SetActive(false)
       elseif flag and num == 0 then
         self.m_rewardList[i].c_get_anim:SetActive(false)
+        self.m_rewardList[i].c_txt_rcd:SetActive(true)
         self.m_rewardList[i].c_img_got:SetActive(true)
-        self.m_rewardList[i].c_txt_unlock:SetActive(false)
       else
-        self.m_rewardList[i].c_txt_unlock:SetActive(true)
         self.m_rewardList[i].c_get_anim:SetActive(false)
+        self.m_rewardList[i].c_txt_rcd:SetActive(false)
         self.m_rewardList[i].c_img_got:SetActive(false)
       end
     else
       self.m_rewardList[i].c_img_got:SetActive(true)
+      self.m_rewardList[i].c_txt_rcd:SetActive(true)
       self.m_rewardList[i].c_get_anim:SetActive(false)
-      self.m_rewardList[i].c_txt_unlock:SetActive(false)
     end
   end
 end

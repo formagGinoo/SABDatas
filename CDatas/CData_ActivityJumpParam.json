@@ -1,0 +1,48 @@
+{
+  "className": "CData_ActivityJumpParam",
+  "data": {
+    "26006": {
+      "m_bError": null,
+      "m_JumpParam": "26006",
+      "m_ActivityID": "1010",
+      "m_ActivitySubType": "\"Form_Activity101Lamia_Shop\""
+    },
+    "26007": {
+      "m_bError": null,
+      "m_JumpParam": "26007",
+      "m_ActivityID": "1020",
+      "m_ActivitySubType": "\"Form_Activity102Dalcaro_Shop\""
+    },
+    "26008": {
+      "m_bError": null,
+      "m_JumpParam": "26008",
+      "m_ActivityID": "1030",
+      "m_ActivitySubType": "\"Form_Activity103Luoleilai_Shop\""
+    },
+    "26009": {
+      "m_bError": null,
+      "m_JumpParam": "26009",
+      "m_ActivityID": "1050",
+      "m_ActivitySubType": "\"Form_Activity105Aiona_Shop\""
+    },
+    "26010": {
+      "m_bError": null,
+      "m_JumpParam": "26010",
+      "m_ActivityID": "1060",
+      "m_ActivitySubType": "\"Form_Activity106Quinn_Shop\""
+    },
+    "26011": {
+      "m_bError": null,
+      "m_JumpParam": "26011",
+      "m_ActivityID": "1080",
+      "m_ActivitySubType": "\"Form_Activity108Shop\""
+    },
+    "26012": {
+      "m_bError": null,
+      "m_JumpParam": "26012",
+      "m_ActivityID": "1100",
+      "m_ActivitySubType": "\"Form_Activity110Shop\""
+    }
+  },
+  "status": "processed_7_items"
+}

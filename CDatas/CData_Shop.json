@@ -113,7 +113,7 @@
       "m_StartTime": "\"\"",
       "m_EndTime": "\"\"",
       "m_MainCurrency": "[1060]",
-      "m_GoodsGroupID": "[110005,110006,110007,110008,110009,110010]",
+      "m_GoodsGroupID": "[110005,110006,110007,110008,110009,110010,110011]",
       "m_CensorGoodsGroupID": "[110005,110006,110007,110008,110009]",
       "m_RefreshNum": null,
       "m_RefreshCost": "[]",
@@ -264,7 +264,31 @@
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
       "m_mLockDesc": "\"\""
+    },
+    "9010": {
+      "m_bError": null,
+      "m_ShopID": "9010",
+      "m_WindowID": "26012",
+      "m_ShopVersion": "1",
+      "m_Type": "2",
+      "m_ActId": "1100",
+      "m_Order": "1",
+      "m_IsOn": "1",
+      "m_mName": "\"Joyce's Sundries\"",
+      "m_IconPath": "\"\"",
+      "m_IconPathClick": "\"\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"2025-6-10 04:00:00\"",
+      "m_EndTime": "\"2025-7-24 03:59:59\"",
+      "m_MainCurrency": "[500103,99]",
+      "m_GoodsGroupID": "[900801,900802,900803,900804,900805,900806,900807,900808,900809,900810,900811,900812,900813,900814,900815,900816,900817,900818,900819,900820,900821,900822]",
+      "m_CensorGoodsGroupID": "[900801,900802,900803,900804,900805,900806,900807,900808,900809,900810,900811,900812,900813,900814,900815,900816,900817,900818,900819,900820,900821,900822]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\""
     }
   },
-  "status": "processed_11_items"
+  "status": "processed_12_items"
 }

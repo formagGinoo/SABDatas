@@ -120,6 +120,8 @@ function HeroFashionVoiceSubPanel:StopCurPlayingVoice()
   local voiceItem = self.m_luaVoiceInfinityGrid:GetShowItemByIndex(self.m_curIdx)
   if voiceItem then
     voiceItem:StopVoiceAnim()
+  elseif self.m_showVoiceInfoList and self.m_showVoiceInfoList[self.m_curIdx] then
+    self.m_showVoiceInfoList[self.m_curIdx].isPlaying = false
   end
   self.m_txt_voicedesc_Text.text = ""
   UILuaHelper.SetActive(self.m_img_bg_voice02, false)

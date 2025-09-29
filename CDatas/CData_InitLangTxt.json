@@ -9,7 +9,7 @@
     "\"WinGameName\"": {
       "m_bError": null,
       "m_Index": "\"WinGameName\"",
-      "m_Name": "\"##6:银与血##10:Silver and Blood##14:L'Argent et le Sang##15:Silver and Blood##22:シルバー・アンド・ブラッド##23:실버 앤 블러드##34:Silver and Blood##36:Silver and Blood##41:銀與血\""
+      "m_Name": "\"##6:银与血##10:Silver and Blood##14:Silver and Blood##15:Silver and Blood##22:シルバー・アンド・ブラッド##23:실버 앤 블러드##34:Silver and Blood##36:Silver and Blood##41:銀與血\""
     },
     "\"LoginInitMSDK\"": {
       "m_bError": null,
@@ -24,17 +24,22 @@
     "\"LoginVersionDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginVersionDesc\"",
-      "m_Name": "\"##6:版本号：##10:Version:##14:Version :##15:Version:##22:バージョン：##23:버전:##34:Versión:##36:เวอร์ชัน:##41:版本編號：\""
+      "m_Name": "\"##6:版本号：##10:Patch:##14:Patch :##15:Patch:##22:バージョン：##23:버전:##34:Parche:##36:แพตช์:##41:版本編號：\""
     },
     "\"LoginZoneDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginZoneDesc\"",
-      "m_Name": "\"##6:领主大区：##10:Server:##14:Serveur :##15:Server:##22:領主サーバー：##23:영주 서버:##34:Servidor:##36:เซิร์ฟเวอร์:##41:領主伺服器：\""
+      "m_Name": "\"##6:领主大区：##10:Server:##14:Serveur :##15:Server:##22:領主サーバー：##23:영주 서버:##34:Servidor:##36:เซิร์ฟเวอร์:##41:領主大區：\""
     },
     "\"LoginAccountDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginAccountDesc\"",
       "m_Name": "\"##6:领主编号：##10:Lord No.:##14:No. de Seigneur :##15:Lord Nr.:##22:領主ID：##23:영주 No:##34:N.º de señor:##36:หมายเลขลอร์ด:##41:領主編號：\""
+    },
+    "\"LoginInitNetworkGame\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitNetworkGame\"",
+      "m_Name": "\"##6:正在连接至领地...##10:Connecting to territory...##14:Connexion au territoire...##15:Mit Gebiet verbinden ...##22:領土に接続中……##23:영지에 연결 중...##34:Conectando con el territorio…##36:กำลังเชื่อมต่อกับเขตแดน...##41:正在連線到領地……\""
     },
     "\"CommonError\"": {
       "m_bError": null,
@@ -54,17 +59,17 @@
     "\"InitMSDKAccountInitFail\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKAccountInitFail\"",
-      "m_Name": "\"##6:账号初始化失败##10:Account Initialization Failed##14:Échec de l'initialisation du compte.##15:Kontoinitialisierung fehlgeschlagen##22:アカウントの初期化に失敗しました##23:계정 초기화 실패##34:Error en la inicialización de la cuenta##36:การเริ่มต้นบัญชีล้มเหลว##41:帳號初始化失敗\""
+      "m_Name": "\"##6:账号初始化失败，请您尝试切换WiFi或蜂窝数据运营商后再重新登录##10:Account initialization failed. Try switching your WiFi or cellular data provider and attempt logging in again.##14:Échec d'initialisation du compte. Veuillez changer de réseau Wi-Fi ou de fournisseur de données mobile et réessayez.##15:Kontoinitialisierung fehlgeschlagen. Versuche dein WLAN oder deinen mobilen Datenanbieter zu wechseln und melde dich erneut an.##22:アカウントの初期化に失敗しました。インターネット接続を確認してから再度ログインしてください##23:계정 초기화에 실패했습니다. Wi-Fi 또는 셀룰러 데이터로 변경한 후 다시 로그인해 보세요.##34:Error en la inicialización de la cuenta. Prueba cambiar de wifi o proveedor de datos móviles y vuelve a intentar iniciar sesión.##36:การเริ่มต้นบัญชีล้มเหลว ลองเปลี่ยน Wi-Fi หรือข้อมูลมือถือของท่าน และพยายามเข้าสู่ระบบใหม่อีกครั้ง##41:帳號初始化失敗，請您嘗試切換Wi-Fi或行動網路後再重新登入。\""
     },
     "\"InitMSDKGetAccountInfoFail\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKGetAccountInfoFail\"",
-      "m_Name": "\"##6:账号信息获取失败##10:Failed to Retrieve Account Info##14:Impossible de récupérer les informations sur le compte.##15:Abrufen der Kontoinformationen fehlgeschlagen##22:アカウント情報の取得に失敗しました##23:계정 정보 가져오기 실패##34:Error al recuperar la información de la cuenta##36:ไม่สามารถดึงข้อมูลบัญชีได้##41:帳號資訊取得失敗\""
+      "m_Name": "\"##6:账号信息获取失败，请您尝试切换WiFi或蜂窝数据运营商后再重新登录##10:Failed to retrieve Account information. Try switching your WiFi or cellular data provider and attempt logging in again.##14:Échec de récupération des informations du compte. Veuillez changer de réseau Wi-Fi ou de fournisseur de données mobile et réessayez.##15:Konto-Informationen konnten nicht abgerufen werden. Versuche dein WLAN oder deinen mobilen Datenanbieter zu wechseln und melde dich erneut an.##22:アカウント情報の取得に失敗しました。インターネット接続を確認してから再度ログインしてください##23:계정 정보를 가져올 수 없습니다. Wi-Fi 또는 셀룰러 데이터로 변경한 후 다시 로그인해 보세요.##34:Error al recuperar la información de la cuenta. Prueba cambiar de wifi o proveedor de datos móviles y vuelve a intentar iniciar sesión.##36:ไม่สามารถดึงข้อมูลบัญชีได้ ลองเปลี่ยน Wi-Fi หรือข้อมูลมือถือของท่าน และพยายามเข้าสู่ระบบใหม่อีกครั้ง##41:帳號資訊獲得失敗，請您嘗試切換Wi-Fi或行動網路後再重新登入。\""
     },
     "\"PlayerProtocolContent\"": {
       "m_bError": null,
       "m_Index": "\"PlayerProtocolContent\"",
-      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! Please read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge your acceptance of these terms. You'll need to accept these terms to continue.##14:Merci de soutenir L'Argent et le Sang ! Nous vous demandons de lire les Conditions d'utilisation et la Politique de confidentialité suivantes avant de continuer. En appuyant sur Confirmer, vous reconnaissez les avoir comprises. En appuyant sur Annuler, vous ne pourrez pas poursuivre.##15:Vielen Dank für deine Unterstützung von Silber und Blut! Bitte lies die folgende Nutzungsvereinbarung und Datenschutzerklärung durch, bevor du fortfährst. Indem du auf „Bestätigen“ tippst, bestätigst du, dass du den Inhalt dieser Bedingungen verstanden hast. Wenn du auf „Abbrechen“ tippst, kannst du nicht fortfahren.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar Silver and Blood! Te pedimos que leas el siguiente Acuerdo de usuario y la Política de privacidad antes de continuar. Al pulsar Confirmar, reconoces el contenido de estos términos. Si pulsas Cancelar, no podrás continuar.##36:ขอขอบคุณที่สนับสนุน 'Silver and Blood' ขอความกรุณาท่านโปรดอ่านข้อตกลงผู้ใช้และนโยบายความเป็นส่วนตัวก่อนดำเนินการต่อ การกด 'ยืนยัน' จะหมายถึงท่านได้รับทราบเนื้อหาของข้อตกลงเหล่านี้แล้ว การกด 'ยกเลิก' จะทำให้ท่านไม่สามารถดำเนินการต่อไปได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
+      "m_Name": "\"\"##6:感谢您对银与血的喜爱与理解,进入本游戏前请仔细阅读以下用户协议和隐私政策,您阅读并认可该条款内容后应点击同意,如您拒绝将无法进入游戏。##10:Thank you for supporting Silver and Blood! Please read the following User Agreement and Privacy Policy before continuing. By tapping Confirm, you acknowledge your acceptance of these terms. You'll need to accept these terms to continue.##14:Merci de soutenir Silver and Blood ! Veuillez lire les Conditions d'utilisation et la Politique de confidentialité ci-dessous avant de continuer. En appuyant sur Confirmer, vous acceptez ces conditions, ce qui est nécessaire pour poursuivre.##15:Vielen Dank für deine Unterstützung von Silver and Blood! Bitte lies die folgende Nutzervereinbarung und Datenschutzerklärung durch, bevor du fortfährst. Indem du auf „Bestätigen“ tippst, bestätigst du, dass du diese Bedingungen akzeptiert hast. Du musst diese Bedingungen akzeptieren, um fortfahren zu können.##22:『シルバー・アンド・ブラッド』をご愛顧いただき、誠にありがとうございます。\nゲームを開始する前に、必ず下記の「利用規約」と「プライバシーポリシー」をご確認ください。\n内容をご確認のうえ、同意される場合は「同意する」をクリックしてください。\n同意いただけない場合は、ゲームに進むことができません。##23:실버 앤 블러드에 보내주시는 사랑과 양해에 감사드립니다. 게임 접속 전 다음 이용 약관과 개인정보 처리방침을 자세히 읽고 확인한 후 동의를 터치해 주세요. 거절 시 게임에 접속할 수 없습니다.##34:¡Gracias por apoyar Silver and Blood! Te pedimos que leas el siguiente Acuerdo de usuario y la Política de privacidad antes de continuar. Al pulsar Confirmar, reconoces que aceptas estos términos. Debes aceptar estos términos para continuar.##36:ขอบคุณที่ให้การสนับสนุน 'Silver and Blood'! โปรดอ่าน 'ข้อตกลงผู้ใช้งาน' และ 'นโยบายความเป็นส่วนตัว' ต่อไปนี้ให้ครบถ้วนก่อนดำเนินการต่อ การกดที่ปุ่ม 'ยืนยัน' ถือว่าท่านได้รับทราบและยอมรับข้อกำหนดเหล่านี้แล้ว ท่านจำเป็นต้องยอมรับข้อกำหนดเหล่านี้จึงจะสามารถดำเนินการต่อไปได้##41:感謝您對《銀與血》的喜愛！進入本遊戲前，請仔細閱讀以下服務條款和隱私權政策，您閱讀並認可該條款內容後應點擊同意，您若拒絕將無法進入遊戲。\"\""
     },
     "\"PlayerUserToggle\"": {
       "m_bError": null,
@@ -114,7 +119,7 @@
     "\"PlayerCenterAccountBindDesc\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountBindDesc\"",
-      "m_Name": "\"\"##6:点击下方按钮可绑定您的第三方账户。如果您需要切至已有账号，可以选择“游客登录”，在开始游戏前通过右上角的 [用户中心] 进行账户切换##10:Tap below to bind your third-party accounts. Should you need to switch to an existing game account, you can select _$$Guest Login_$$ and switch accounts through [User Center] in the upper right corner before starting the game.##14:Appuyez ci-dessous pour lier vos comptes tiers. Si vous devez passer à un compte de jeu existant, vous pouvez sélectionner « Connexion invité » et changer de compte via le [Centre utilisateur] dans le coin supérieur droit avant de commencer le jeu.##15:Tippe unten, um deine Drittanbieter-Konten zu verknüpfen. Wenn du zu einem vorhandenen Spielkonto wechseln musst, wähle „Gast-Login“ aus und wechsle über das [Nutzerzentrum] oben rechts das Konto, bevor du dem Spiel beitrittst.##22:下のボタンから外部アカウントを連携できます。既存のアカウントを使う場合は「ゲストログイン」を選択し、【ゲームログイン画面】右上の「ユーザーセンター」からアカウントを切り替えてください。##23:아래 버튼을 눌러 제3자 계정을 연동하세요. 기존 계정으로 전환하려면 '게스트 로그인' 후, 게임 시작 전 우측 상단의 [사용자 센터]에서 진행하실 수 있습니다.##34:Toca abajo para vincular tus cuentas de terceros. Si necesitas cambiar a una cuenta de juego existente, puedes seleccionar _$$Continuar como invitado_$$ y cambiar de cuenta a través del [Centro de usuario] en la esquina superior derecha antes de iniciar el juego.##36:กดที่ด้านล่างนี้เพื่อผูกบัญชีบุคคลที่สามของท่าน หากท่านต้องการสลับไปยังบัญชีเกมที่มีอยู่แล้ว ท่านสามารถเลือก _$$ล็อกอินแบบผู้เยี่ยมชม_$$ และทำการสลับบัญชีผ่านทาง [ศูนย์ผู้ใช้] ได้ตรงมุมขวาบน ก่อนที่จะเริ่มเกม##41:點擊下方按鈕可綁定您的第三方帳戶。如果您需要切換至已有帳號，可以選擇「遊客登入」，在開始遊戲前透過右上角的 「用戶中心]」進行帳戶切換\"\""
+      "m_Name": "\"##6:点击下方按钮可绑定您的第三方账户。如果您需要切至已有账号，可以选择“游客登录”，在开始游戏前通过右上角的 [用户中心] 进行账户切换##10:Tap below to bind your third-party accounts. Should you need to switch to an existing game account, you can select _$$Guest Login_$$ and switch accounts through [User Center] in the upper right corner before starting the game.##14:Appuyez ci-dessous pour lier vos comptes tiers. Si vous devez passer à un compte de jeu existant, vous pouvez sélectionner « Connexion invité » et changer de compte via le [Centre utilisateur] dans le coin supérieur droit avant de commencer le jeu.##15:Tippe unten, um deine Drittanbieter-Konten zu verknüpfen. Wenn du zu einem vorhandenen Spielkonto wechseln musst, wähle „Gast-Login“ aus und wechsle über das [Nutzerzentrum] oben rechts das Konto, bevor du dem Spiel beitrittst.##22:下のボタンから外部アカウントを連携できます。既存のアカウントを使う場合は「ゲストログイン」を選択し、【ゲームログイン画面】右上の「ユーザーセンター」からアカウントを切り替えてください。##23:아래 버튼을 눌러 제3자 계정을 연동하세요. 기존 계정으로 전환하려면 '게스트 로그인' 후, 게임 시작 전 우측 상단의 [사용자 센터]에서 진행하실 수 있습니다.##34:Toca abajo para vincular tus cuentas de terceros. Si necesitas cambiar a una cuenta de juego existente, puedes seleccionar _$$Continuar como invitado_$$ y cambiar de cuenta a través del [Centro de usuario] en la esquina superior derecha antes de iniciar el juego.##36:กดที่ด้านล่างนี้เพื่อผูกบัญชีบุคคลที่สามของท่าน หากท่านต้องการสลับไปยังบัญชีเกมที่มีอยู่แล้ว ท่านสามารถเลือก _$$ล็อกอินแบบผู้เยี่ยมชม_$$ และทำการสลับบัญชีผ่านทาง [ศูนย์ผู้ใช้] ได้ตรงมุมขวาบน ก่อนที่จะเริ่มเกม##41:點擊下方按鈕可綁定您的第三方帳戶。如果您需要切換至已有帳號，可以選擇「遊客登入」，在開始遊戲前透過右上角的 「用戶中心]」進行帳戶切換\""
     },
     "\"PlayerCenterAccountBindFacebook\"": {
       "m_bError": null,
@@ -189,7 +194,7 @@
     "\"LoginMiniPatchUpgradeDownloadFail\"": {
       "m_bError": null,
       "m_Index": "\"LoginMiniPatchUpgradeDownloadFail\"",
-      "m_Name": "\"\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\"\""
+      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
     },
     "\"CommonConfirm\"": {
       "m_bError": null,
@@ -199,7 +204,7 @@
     "\"InitTGRPAddResNotEnoughSpace\"": {
       "m_bError": null,
       "m_Index": "\"InitTGRPAddResNotEnoughSpace\"",
-      "m_Name": "\"\"##6:存储空间不足。更新共需{total_size}存储空间，设备剩余存储空间为{available_size}。请释放至少{needed_size}的存储空间后重试。##10:Insufficient storage. Update requires {total_size} of storage, but your device only has {available_size} available. Please free up (at least) {needed_size} of storage and try again.##14:Espace de stockage insuffisant. La mise à jour requiert {total_size} d'espace libre, mais votre appareil ne dispose que de {available_size}. Veuillez libérer au moins {needed_size} d'espace et réessayez.##15:Nicht genügend Speicherplatz. Das Update benötigt {total_size} Speicherplatz, aber auf deinem Gerät sind nur {available_size} verfügbar. Bitte schaffe mindestens {needed_size} Speicherplatz und versuche es erneut.##22:ストレージ容量が足りません。アップデートには合計 {total_size} のストレージが必要ですが、デバイスの空き容量は {available_size} です。 {needed_size} 以上のストレージを空けてから、もう一度お試しください。##23:저장 공간이 부족합니다. 업데이트에는 총 {total_size}의 저장 공간이 필요하며, 현재 기기의 남은 저장 공간은 {available_size}입니다. 저장 공간을 {needed_size} 이상 확보하고 다시 시도해 주세요.##34:Espacio insuficiente. La actualización requiere {total_size} de almacenamiento, pero tu dispositivo solo tiene {available_size} disponibles. Libera (al menos) {needed_size} de almacenamiento y vuelve a intentarlo.##36:พื้นที่เก็บข้อมูลไม่เพียงพอ การอัปเดตจะต้องใช้พื้นที่เก็บข้อมูล {total_size} แต่อุปกรณ์ของท่านมีเพียง {available_size} โปรดเพิ่มพื้นที่ (อย่างน้อย) {needed_size} แล้วลองใหม่อีกครั้ง##41:儲存空間不足。更新共需 {total_size} 儲存空間，裝置剩餘儲存空間為 {available_size}。請釋放至少 {needed_size} 的儲存空間後再重試\"\""
+      "m_Name": "\"##6:存储空间不足。更新共需{total_size}存储空间，设备剩余存储空间为{available_size}。请释放至少{needed_size}的存储空间后重试。##10:Insufficient storage. Update requires {total_size} of storage, but your device only has {available_size} available. Please free up (at least) {needed_size} of storage and try again.##14:Espace de stockage insuffisant. La mise à jour requiert {total_size} d'espace libre, mais votre appareil ne dispose que de {available_size}. Veuillez libérer au moins {needed_size} d'espace et réessayez.##15:Nicht genügend Speicherplatz. Das Update benötigt {total_size} Speicherplatz, aber auf deinem Gerät sind nur {available_size} verfügbar. Bitte schaffe mindestens {needed_size} Speicherplatz und versuche es erneut.##22:ストレージ容量が足りません。アップデートには合計 {total_size} のストレージが必要ですが、デバイスの空き容量は {available_size} です。 {needed_size} 以上のストレージを空けてから、もう一度お試しください。##23:저장 공간이 부족합니다. 업데이트에는 총 {total_size}의 저장 공간이 필요하며, 현재 기기의 남은 저장 공간은 {available_size}입니다. 저장 공간을 {needed_size} 이상 확보하고 다시 시도해 주세요.##34:Espacio insuficiente. La actualización requiere {total_size} de almacenamiento, pero tu dispositivo solo tiene {available_size} disponibles. Libera (al menos) {needed_size} de almacenamiento y vuelve a intentarlo.##36:พื้นที่เก็บข้อมูลไม่เพียงพอ การอัปเดตจะต้องใช้พื้นที่เก็บข้อมูล {total_size} แต่อุปกรณ์ของท่านมีเพียง {available_size} โปรดเพิ่มพื้นที่ (อย่างน้อย) {needed_size} แล้วลองใหม่อีกครั้ง##41:儲存空間不足。更新共需 {total_size} 儲存空間，裝置剩餘儲存空間為 {available_size}。請釋放至少 {needed_size} 的儲存空間後再重試\""
     },
     "\"LoginInitTGRPFail\"": {
       "m_bError": null,
@@ -209,7 +214,7 @@
     "\"StartCheckNetworkFail\"": {
       "m_bError": null,
       "m_Index": "\"StartCheckNetworkFail\"",
-      "m_Name": "\"\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\"\""
+      "m_Name": "\"##6:登录失败，请检查您的网络设置。点击重试以重新连接。##10:Login failed. Please check your network settings and tap Try Again to reconnect.##14:Échec de connexion. Vérifiez vos paramètres réseau et appuyez sur réessayer pour vous reconnecter.##15:Login fehlgeschlagen. Bitte überprüfe deine Netzwerkverbindung und tippe auf „Erneut versuchen“, um dich neu zu verbinden.##22:ログインできませんでした。ネットワーク接続を確認し、もう一度お試しください##23:로그인에 실패했습니다. 네트워크 상태를 확인해 주세요. 다시 연결하려면 재시도를 터치하세요.##34:Error de inicio de sesión. Por favor, comprueba tu conexión de red y pulsa _$$Volver a intentar_$$ para volver a conectarte.##36:ล็อกอินไม่สำเร็จ โปรดตรวจสอบการตั้งค่าเครือข่าย แล้วกด 'ลองใหม่' เพื่อเชื่อมต่อใหม่อีกครั้ง##41:登入失敗，請檢查您的網路設定。點擊重試以重新連線。\""
     },
     "\"LowStorageWarning\"": {
       "m_bError": null,
@@ -229,7 +234,7 @@
     "\"LoginRoleInitFail\"": {
       "m_bError": null,
       "m_Index": "\"LoginRoleInitFail\"",
-      "m_Name": "\"##6:眷属信息拉取失败##10:Failed to retrieve Vassal information.##14:Impossible de récupérer les informations sur le Vassal.##15:Vasalleninformationen konnten nicht abgerufen werden.##22:眷属情報の取得に失敗しました##23:권속 정보 가져오기 실패##34:Error al recuperar la información del vasallo.##36:ไม่สามารถดึงข้อมูลบริพารได้##41:眷屬資訊讀取失敗\""
+      "m_Name": "\"##6:登录信息拉取失败##10:Failed to retrieve login information.##14:Impossible de récupérer les informations de connexion.##15:Login-Informationen konnten nicht abgerufen werden.##22:ログイン情報の取得に失敗しました##23:로그인 정보 가져오기 실패##34:Error al recuperar la información de inicio de sesión.##36:ไม่สามารถดึงข้อมูลการล็อกอินได้##41:登入資訊讀取失敗\""
     },
     "\"LoginRoleBanTitle\"": {
       "m_bError": null,
@@ -239,7 +244,7 @@
     "\"LoginRoleBanDesc\"": {
       "m_bError": null,
       "m_Index": "\"LoginRoleBanDesc\"",
-      "m_Name": "\"\"##6:您的账号已封禁到{0}，如有疑问您可以前往客服处反馈。##10:Your account has been banned until {0}. If you have any questions, you can contact customer service for feedback.##14:Votre compte est banni jusqu'au {0}. En cas de question, adressez-vous au service client pour en savoir plus.##15:Dein Konto wurde bis {0} gesperrt. Falls du Fragen hast, wende dich bitte an den Kundendienst.##22:アカウントは{0}まで制限されています。ご不明な点がございましたら、カスタマーサポートにお問い合わせください。##23:귀하의 계정은 {0}까지 정지되었습니다. 문의 사항은 고객센터로 연락해 주시기 바랍니다.##34:Tu cuenta ha sido bloqueada hasta {0}. Si tienes alguna pregunta, puedes ponerte en contacto con el servicio de atención al cliente para más información.##36:บัญชีของท่านถูกแบนจนถึง {0} หากท่านมีคำถามใด ๆ สามารถติดต่อบริการลูกค้าเพื่อขอข้อมูลเพิ่มเติมได้เสมอ##41:您的帳號已遭封鎖，將持續到{0}，如有疑問可向客服反應\"\""
+      "m_Name": "\"##6:您的账号已封禁到{0}，如有疑问您可以前往客服处反馈。##10:Your account has been banned until {0}. If you have any questions, you can contact customer service for feedback.##14:Votre compte est banni jusqu'au {0}. En cas de question, adressez-vous au service client pour en savoir plus.##15:Dein Konto wurde bis {0} gesperrt. Falls du Fragen hast, wende dich bitte an den Kundendienst.##22:アカウントは{0}まで制限されています。ご不明な点がございましたら、カスタマーサポートにお問い合わせください。##23:귀하의 계정은 {0}까지 정지되었습니다. 문의 사항은 고객센터로 연락해 주시기 바랍니다.##34:Tu cuenta ha sido bloqueada hasta {0}. Si tienes alguna pregunta, puedes ponerte en contacto con el servicio de atención al cliente para más información.##36:บัญชีของท่านถูกแบนจนถึง {0} หากท่านมีคำถามใด ๆ สามารถติดต่อบริการลูกค้าเพื่อขอข้อมูลเพิ่มเติมได้เสมอ##41:您的帳號已遭封鎖，將持續到{0}，如有疑問可向客服反應\""
     },
     "\"LoginRoleBanChangeAccount\"": {
       "m_bError": null,
@@ -254,7 +259,7 @@
     "\"LoginDownloadNecessaryResourceFail\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceFail\"",
-      "m_Name": "\"\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\"\""
+      "m_Name": "\"##6:当前网络连接不稳定，下载更新中断，是否重新启动游戏以再次尝试下载？##10:The update was interrupted due to an unstable network connection. Restart the game to download again?##14:La mise à jour a été interrompue en raison d'une connexion réseau instable. Redémarrer le jeu pour la télécharger à nouveau ?##15:Das Update wurde aufgrund eines instabilen Netzwerks unterbrochen. Spiel neu starten, um es erneut herunterzuladen?##22:ネットワーク接続が不安定のため、ダウンロードが中断されました。ゲームを再起動して再度ダウンロードしますか？##23:현재 네트워크 연결이 불안정해 업데이트 다운로드가 중단되었습니다. 게임을 재실행해 다시 다운로드를 시도하시겠습니까?##34:La actualización se ha interrumpido debido a una conexión de red inestable. ¿Reiniciar el juego para volver a descargar?##36:การอัปเดตถูกขัดจังหวะเนื่องจากการเชื่อมต่อเครือข่ายไม่เสถียร รีสตาร์ทเกมเพื่อดาวน์โหลดอีกครั้งหรือไม่##41:目前的網路連線不穩定，更新下載中斷，是否重新啟動遊戲再次嘗試下載？\""
     },
     "\"LoginDownloadNecessaryResourceTitle\"": {
       "m_bError": null,
@@ -274,7 +279,7 @@
     "\"LoginDownloadNecessaryResourceTipsForce\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsForce\"",
-      "m_Name": "\"\"##6:进入领地前需要下载{size}必要资源，请问是否现在开始下载？##10:You need to download {size} of necessary resources before entering your territory. Start downloading now?##14:Vous devez télécharger {size} de ressources nécessaires avant d'entrer dans votre territoire. Commencer le téléchargement maintenant ?##15:Du musst {size} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Jetzt herunterladen?##22:領地に入る前に、{size}の必要なリソースをダウンロードする必要があります。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size}의 필수 리소스를 다운로드해야 합니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size} de recursos necesarios antes de acceder a tu territorio. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size} ก่อนเข้าสู่อาณาเขตของท่าน ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size}必要檔案，請問是否現在開始下載？\"\""
+      "m_Name": "\"##6:进入领地前需要下载{size}必要资源，请问是否现在开始下载？##10:You need to download {size} of necessary resources before entering your territory. Start downloading now?##14:Vous devez télécharger {size} de ressources nécessaires avant d'entrer dans votre territoire. Commencer le téléchargement maintenant ?##15:Du musst {size} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Jetzt herunterladen?##22:領地に入る前に、{size}の必要なリソースをダウンロードする必要があります。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size}의 필수 리소스를 다운로드해야 합니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size} de recursos necesarios antes de acceder a tu territorio. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size} ก่อนเข้าสู่อาณาเขตของท่าน ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size}必要檔案，請問是否現在開始下載？\""
     },
     "\"LoginDownloadNecessaryResourceTipsDownload\"": {
       "m_bError": null,
@@ -289,7 +294,7 @@
     "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadNecessaryResourceTipsNecessaryNormal\"",
-      "m_Name": "\"\"##6:进入领地前需要下载{size1}必要资源。后续全量资源较大，为了您有更好的游戏体验，可以选择提前下载{size2}基础资源。请问是否现在开始下载？##10:You need to download {size1} of necessary resources before entering your territory. The remaining resources ({size2}) can be downloaded in advance for a better gaming experience. Start download now?##14:Vous devez télécharger {size1} de ressources nécessaires avant d'entrer dans votre territoire. Les ressources restantes ({size2}) peuvent être téléchargées à l'avance pour une meilleure expérience de jeu. Commencer le téléchargement maintenant ?##15:Du musst {size1} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Die verbleibenden Ressourcen ({size2}) kannst du für ein besseres Spielerlebnis im Voraus herunterladen. Jetzt herunterladen?##22:領地に入る前に、{size1}の必要なリソースをダウンロードする必要があります。また、ゲーム全体のリソース容量が大きいため、より快適にプレイしていただくために、{size2}の基本リソースを事前にダウンロードすることもできます。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size1}의 필수 리소스를 다운로드해야 합니다. 이후 전체 리소스 용량이 크므로 원활한 플레이를 위해 {size2}의 기본 리소스를 미리 다운로드할 수 있습니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size1} de recursos necesarios antes de acceder a tu territorio. Los recursos restantes ({size2}) pueden descargarse por adelantado para una mejor experiencia de juego. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size1} ก่อนเข้าสู่อาณาเขตของท่าน ส่วนทรัพยากรที่เหลือ ({size2}) สามารถดาวน์โหลดล่วงหน้าได้ เพื่อส่งมอบประสบการณ์การเล่นเกมที่ดียิ่งขึ้น ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size1}必要檔案。後續完整檔案較大，為了讓您有更好的遊戲體驗，可以選擇提前下載{size2}基礎檔案。請問是否現在開始下載？\"\""
+      "m_Name": "\"##6:进入领地前需要下载{size1}必要资源。后续全量资源较大，为了您有更好的游戏体验，可以选择提前下载{size2}基础资源。请问是否现在开始下载？##10:You need to download {size1} of necessary resources before entering your territory. The remaining resources ({size2}) can be downloaded in advance for a better gaming experience. Start download now?##14:Vous devez télécharger {size1} de ressources nécessaires avant d'entrer dans votre territoire. Les ressources restantes ({size2}) peuvent être téléchargées à l'avance pour une meilleure expérience de jeu. Commencer le téléchargement maintenant ?##15:Du musst {size1} an erforderlichen Ressourcen herunterladen, bevor du dein Gebiet betreten kannst. Die verbleibenden Ressourcen ({size2}) kannst du für ein besseres Spielerlebnis im Voraus herunterladen. Jetzt herunterladen?##22:領地に入る前に、{size1}の必要なリソースをダウンロードする必要があります。また、ゲーム全体のリソース容量が大きいため、より快適にプレイしていただくために、{size2}の基本リソースを事前にダウンロードすることもできます。今すぐダウンロードを開始しますか？##23:영지에 입장하려면 {size1}의 필수 리소스를 다운로드해야 합니다. 이후 전체 리소스 용량이 크므로 원활한 플레이를 위해 {size2}의 기본 리소스를 미리 다운로드할 수 있습니다. 지금 다운로드를 시작하시겠습니까?##34:Necesitas descargar {size1} de recursos necesarios antes de acceder a tu territorio. Los recursos restantes ({size2}) pueden descargarse por adelantado para una mejor experiencia de juego. ¿Empezar la descarga ahora?##36:ท่านต้องดาวน์โหลดทรัพยากรที่จำเป็น ขนาด {size1} ก่อนเข้าสู่อาณาเขตของท่าน ส่วนทรัพยากรที่เหลือ ({size2}) สามารถดาวน์โหลดล่วงหน้าได้ เพื่อส่งมอบประสบการณ์การเล่นเกมที่ดียิ่งขึ้น ต้องการเริ่มดาวน์โหลดเลยหรือไม่##41:進入領地前需要下載{size1}必要檔案。後續完整檔案較大，為了讓您有更好的遊戲體驗，可以選擇提前下載{size2}基礎檔案。請問是否現在開始下載？\""
     },
     "\"LoginDownloadNecessaryResourceTipsAllNormal\"": {
       "m_bError": null,
@@ -326,11 +331,6 @@
       "m_Index": "\"ClientErrorDesc\"",
       "m_Name": "\"##6:客户端发生意外错误，需重启游戏##10:A client error has occurred. Please relaunch the game.##14:Une erreur client est survenue. Veuillez relancer le jeu.##15:Ein Client-Fehler ist aufgetreten. Bitte starte das Spiel neu.##22:エラーが発生しました。ゲームを再起動してください##23:클라이언트 오류 발생. 게임을 재실행하세요.##34:Se ha producido un error de cliente. Vuelve a iniciar el juego.##36:เกิดข้อผิดพลาดของไคลเอนต์ โปรดรีสตาร์ทเกม##41:用戶端發生意外錯誤，需要重新啟動遊戲\""
     },
-    "\"LoginInitNetworkGame\"": {
-      "m_bError": null,
-      "m_Index": "\"LoginInitNetworkGame\"",
-      "m_Name": "\"##6:正在连接至领地...##10:Connecting to territory...##14:Connexion au territoire...##15:Mit Gebiet verbinden ...##22:領土に接続中……##23:영지에 연결 중...##34:Conectando con el territorio…##36:กำลังเชื่อมต่อกับเขตแดน...##41:正在連線到領地……\""
-    },
     "\"LoginDownloadUIDetail\"": {
       "m_bError": null,
       "m_Index": "\"LoginDownloadUIDetail\"",
@@ -364,7 +364,7 @@
     "\"InitMSDKPermissionRequestTipsNote\"": {
       "m_bError": null,
       "m_Index": "\"InitMSDKPermissionRequestTipsNote\"",
-      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « L'Argent et le Sang » à vous envoyer des notifications ?##15:Darf „Silver and Blood“ dir Benachrichtigungen schicken?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
+      "m_Name": "\"##6:是否允许“银与血”向你发送通知？##10:Allow 'Silver and Blood' to send you notifications?##14:Autoriser « Silver and Blood » à vous envoyer des notifications ?##15:Darf „Silver and Blood“ dir Benachrichtigungen schicken?##22:『シルバー・アンド・ブラッド』からの通知を許可しますか？##23:'실버 앤 블러드'에서 알림을 보내도록 허용하시겠습니까?##34:¿Permitir que _$$Silver and Blood_$$ te envíe notificaciones?##36:อนุญาตให้ 'Silver and Blood' ส่งการแจ้งเตือนถึงท่านหรือไม่##41:是否允許「銀與血」向你傳送通知？\""
     },
     "\"InitMSDKPermissionRequestTipsTitle\"": {
       "m_bError": null,
@@ -394,12 +394,12 @@
     "\"LoginCheckUpgradeChangeZoneDescNoMatch\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeChangeZoneDescNoMatch\"",
-      "m_Name": "\"\"##6:检测到客户端版本%s，无匹配服务器，请前往GM页面确认详情（当前服务器%s，账号%s）##10:Client Version %s has been detected, but no matching server was found. Please check the details on the GM page (Current Server: %s. Account: %s).##14:La version client %s a été détectée, mais aucun serveur correspondant n'a été trouvé. Veuillez consulter les détails sur la page GM (serveur actuel : %s ; compte : %s).##15:Client-Version %s wurde erkannt, aber kein passender Server gefunden. Bitte überprüfe die Details auf der GM-Seite (Aktueller Server: %s. Konto: %s)##22:現在のクライアントバージョン%sにマッチするサーバーがありません。詳しくはGMページにてご確認ください。（現在のサーバー%s、アカウント%s）##23:클라이언트 버전 %s와(과) 매칭되는 서버가 없습니다. GM 화면으로 이동해 상세 내용을 확인하세요(현재 서버: %s, 계정: %s).##34:Se ha detectado la versión de cliente %s, pero no se ha encontrado ningún servidor que coincida. Comprueba los detalles en la página de GM (Servidor actual: %s. Cuenta: %s).##36:ตรวจพบ 'ไคลเอนต์เวอร์ชัน' %s แต่ไม่พบเซิร์ฟเวอร์ที่ตรงกัน โปรดตรวจสอบรายละเอียดในหน้า GM (เซิร์ฟเวอร์ปัจจุบัน: %s บัญชี: %s)##41:偵測到用戶端版本%s無相符伺服器，請前往GM頁面確認詳情（目前伺服器%s，帳號%s）\"\""
+      "m_Name": "\"##6:检测到客户端版本%s，无匹配服务器，请前往GM页面确认详情（当前服务器%s，账号%s）##10:Client Version %s has been detected, but no matching server was found. Please check the details on the GM page (Current Server: %s. Account: %s).##14:La version client %s a été détectée, mais aucun serveur correspondant n'a été trouvé. Veuillez consulter les détails sur la page GM (serveur actuel : %s ; compte : %s).##15:Client-Version %s wurde erkannt, aber kein passender Server gefunden. Bitte überprüfe die Details auf der GM-Seite (Aktueller Server: %s. Konto: %s)##22:現在のクライアントバージョン%sにマッチするサーバーがありません。詳しくはGMページにてご確認ください。（現在のサーバー%s、アカウント%s）##23:클라이언트 버전 %s와(과) 매칭되는 서버가 없습니다. GM 화면으로 이동해 상세 내용을 확인하세요(현재 서버: %s, 계정: %s).##34:Se ha detectado la versión de cliente %s, pero no se ha encontrado ningún servidor que coincida. Comprueba los detalles en la página de GM (Servidor actual: %s. Cuenta: %s).##36:ตรวจพบ 'ไคลเอนต์เวอร์ชัน' %s แต่ไม่พบเซิร์ฟเวอร์ที่ตรงกัน โปรดตรวจสอบรายละเอียดในหน้า GM (เซิร์ฟเวอร์ปัจจุบัน: %s บัญชี: %s)##41:偵測到用戶端版本%s無相符伺服器，請前往GM頁面確認詳情（目前伺服器%s，帳號%s）\""
     },
     "\"LoginCheckUpgradeWindowsForce\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeWindowsForce\"",
-      "m_Name": "\"\"##6:检测当前客户端不是最新版本，请领主大人点击下载按钮，移步至官网下载并安装新客户端##10:Your current client version is outdated. Please tap the Download button to visit our official website and install the new client.##14:La version actuelle de votre client est obsolète. Veuillez appuyer sur le bouton Télécharger pour installer le nouveau client depuis notre site officiel.##15:Deine aktuelle Client-Version ist veraltet. Bitte tippe auf die Schaltfläche Herunterladen, besuche unsere offizielle Website und installiere den neuen Client.##22:現在ご利用のクライアントは最新版ではありません。ロード様、ダウンロードボタンをタップし、公式サイトより最新クライアントのダウンロードとインストールをお願いいたします。##23:현재 클라이언트 버전이 최신이 아닙니다. 다운로드 버튼을 터치하여 공식 홈페이지에서 최신 클라이언트를 설치해 주세요.##34:Tu versión del cliente está desactualizada. Pulsa el botón Descargar para visitar nuestra página web oficial e instalar el nuevo cliente.##36:ไคลเอนต์ของท่านล้าสมัยแล้ว โปรดกดที่ปุ่ม 'ดาวน์โหลด' เพื่อไปยังเว็บไซต์อย่างเป็นทางการของเรา และทำการติดตั้งไคลเอนต์ใหม่##41:偵測到目前用戶端非最新版本，請領主大人點擊下載按鈕，移步至官網下載並安裝新用戶端。\"\""
+      "m_Name": "\"##6:检测当前客户端不是最新版本，请领主大人点击下载按钮，移步至官网下载并安装新客户端##10:Your current client version is outdated. Please tap the Download button to visit our official website and install the new client.##14:La version actuelle de votre client est obsolète. Veuillez appuyer sur le bouton Télécharger pour installer le nouveau client depuis notre site officiel.##15:Deine aktuelle Client-Version ist veraltet. Bitte tippe auf die Schaltfläche Herunterladen, besuche unsere offizielle Website und installiere den neuen Client.##22:現在ご利用のクライアントは最新版ではありません。ロード様、ダウンロードボタンをタップし、公式サイトより最新クライアントのダウンロードとインストールをお願いいたします。##23:현재 클라이언트 버전이 최신이 아닙니다. 다운로드 버튼을 터치하여 공식 홈페이지에서 최신 클라이언트를 설치해 주세요.##34:Tu versión del cliente está desactualizada. Pulsa el botón Descargar para visitar nuestra página web oficial e instalar el nuevo cliente.##36:ไคลเอนต์ของท่านล้าสมัยแล้ว โปรดกดที่ปุ่ม 'ดาวน์โหลด' เพื่อไปยังเว็บไซต์อย่างเป็นทางการของเรา และทำการติดตั้งไคลเอนต์ใหม่##41:偵測到目前用戶端非最新版本，請領主大人點擊下載按鈕，移步至官網下載並安裝新用戶端。\""
     },
     "\"LoginDownloadNecessaryResourceMobilePrompt\"": {
       "m_bError": null,
@@ -804,7 +804,7 @@
     "\"MSDKErrorCode5010509\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCode5010509\"",
-      "m_Name": "\"\"##6:注销条件不满足，无法注销##10:Conditions unmet, cannot cancel account.##14:Conditions non remplies pour résilier le compte.##15:Bedingungen nicht erfüllt, Konto kann nicht gelöscht werden.##22:削除条件を満たしてないため、削除できません。##23:계정 삭제 조건을 충족하지 않아 삭제할 수 없습니다.##34:No se cumplen los requisitos, no se puede cancelar la cuenta.##36:เงื่อนไขไม่ครบถ้วน ไม่สามารถยกเลิกบัญชีได้##41:刪除條件不滿足，無法刪除\"\""
+      "m_Name": "\"##6:注销条件不满足，无法注销##10:Conditions unmet, cannot cancel account.##14:Conditions non remplies pour résilier le compte.##15:Bedingungen nicht erfüllt, Konto kann nicht gelöscht werden.##22:削除条件を満たしてないため、削除できません。##23:계정 삭제 조건을 충족하지 않아 삭제할 수 없습니다.##34:No se cumplen los requisitos, no se puede cancelar la cuenta.##36:เงื่อนไขไม่ครบถ้วน ไม่สามารถยกเลิกบัญชีได้##41:刪除條件不滿足，無法刪除\""
     },
     "\"MSDKErrorCode5010506\"": {
       "m_bError": null,
@@ -819,7 +819,7 @@
     "\"MSDKErrorCode5010401\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCode5010401\"",
-      "m_Name": "\"\"##6:您切换的第三方账户（如 Facebook账户）尚未绑定游戏角色，无法完成切换。##10:Unable to switch accounts. The third-party account (e.g. Facebook) is not bound to any game profile.##14:Impossible de changer de compte. Le compte tiers (p. ex., Facebook) n'est lié à aucun profil de jeu.##15:Kontowechsel nicht möglich. Das Drittanbieter-Konto (z. B. Facebook) ist mit keinem Spielprofil verknüpft.##22:切り替えようとした外部アカウント（例：Facebookアカウント）は、ゲーム内のキャラクターと連携されていないため、アカウントの切り替えを完了できません。##23:전환한 제3자 계정(Facebook 등)에 연동된 게임 캐릭터가 없어 전환할 수 없습니다.##34:No se ha podido cambiar las cuentas. La cuenta de terceros (p. ej., Facebook) no está vinculada a ningún perfil de juego.##36:ไม่สามารถเปลี่ยนบัญชีได้ เนื่องจากบัญชีบุคคลที่สาม (เช่น Facebook) ไม่ได้ผูกกับโพรไฟล์เกมใด ๆ ไว้เลย##41:您切換的第三方帳戶（如Facebook帳戶）尚未綁定遊戲角色，無法完成切換。\"\""
+      "m_Name": "\"##6:您切换的第三方账户（如 Facebook账户）尚未绑定游戏角色，无法完成切换。##10:Unable to switch accounts. The third-party account (e.g. Facebook) is not bound to any game profile.##14:Impossible de changer de compte. Le compte tiers (p. ex., Facebook) n'est lié à aucun profil de jeu.##15:Kontowechsel nicht möglich. Das Drittanbieter-Konto (z. B. Facebook) ist mit keinem Spielprofil verknüpft.##22:切り替えようとした外部アカウント（例：Facebookアカウント）は、ゲーム内のキャラクターと連携されていないため、アカウントの切り替えを完了できません。##23:전환한 제3자 계정(Facebook 등)에 연동된 게임 캐릭터가 없어 전환할 수 없습니다.##34:No se ha podido cambiar las cuentas. La cuenta de terceros (p. ej., Facebook) no está vinculada a ningún perfil de juego.##36:ไม่สามารถเปลี่ยนบัญชีได้ เนื่องจากบัญชีบุคคลที่สาม (เช่น Facebook) ไม่ได้ผูกกับโพรไฟล์เกมใด ๆ ไว้เลย##41:您切換的第三方帳戶（如Facebook帳戶）尚未綁定遊戲角色，無法完成切換。\""
     },
     "\"MSDKErrorCode5010304\"": {
       "m_bError": null,
@@ -839,7 +839,7 @@
     "\"MSDKErrorCode5010301\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCode5010301\"",
-      "m_Name": "\"##6:解绑失败，触达解绑限制##10:Unbind failed: Limit reached.##14:Échec de la dissociation : limite atteinte.##15:Entfernen der Verknüpfung fehlgeschlagen: Limit erreicht.##22:連携解除失敗。連携解除制限が発動しました。##23:연동 해제 실패. 연동 해제가 제한됩니다.##34:Ha fallado la desvinculación: límite alcanzado.##36:ยกเลิกผูกบัญชีล้มเหลว: ถึงขีดจำกัดแล้ว##41:綁定解除失敗，觸及綁定解除限制\""
+      "m_Name": "\"##6:为保护您的账号安全，请勿解绑您最后绑定的三方账号##10:To keep your account secure, please do not remove your last bound account.##14:Pour garantir la sécurité de votre compte, veuillez ne pas supprimer votre dernier compte associé.##15:Zum Schutz deines Kontos solltest du dein letztes verknüpftes Konto nicht entfernen.##22:ご利用のアカウントのセキュリティのため、最後に連携した外部アカウントを解除しないようお願いいたします##23:계정 보안을 위해 마지막으로 연동된 소셜 계정을 해제하지 마세요.##34:Para mantener tu cuenta segura, no elimines tu última cuenta vinculada.##36:เพื่อรักษาความปลอดภัยของบัญชี โปรดอย่าลบบัญชีของท่านที่ผูกเอาไว้ล่าสุด##41:為保護您的帳號安全，請勿解除綁定您最後綁定的第三方帳號\""
     },
     "\"MSDKErrorCode5010206\"": {
       "m_bError": null,
@@ -879,17 +879,17 @@
     "\"MSDKErrorCodeM10000\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM10000\"",
-      "m_Name": "\"\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\"\""
+      "m_Name": "\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\""
     },
     "\"MSDKErrorCodeM4\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM4\"",
-      "m_Name": "\"\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\"\""
+      "m_Name": "\"##6:授权登录失败请检查账号状态##10:Authorization failed. Please check account status.##14:Échec de l'autorisation. Merci de vérifier le statut du compte.##15:Autorisierung fehlgeschlagen. Bitte überprüfe den Kontostatus.##22:ログイン認証に失敗しました。アカウントの状態を確認してください。##23:로그인 실패, 계정 상태를 확인해 주세요.##34:La autorización falló. Comprueba el estado de la cuenta.##36:การอนุญาตล้มเหลว โปรดตรวจสอบสถานะบัญชี##41:授權登入失敗，請檢查帳號狀態\""
     },
     "\"MSDKErrorCodeM3\"": {
       "m_bError": null,
       "m_Index": "\"MSDKErrorCodeM3\"",
-      "m_Name": "\"\"##6:授权登录失败请重新尝试##10:Authorization failed. Please try again.##14:Échec de l'autorisation. Merci de réessayer.##15:Autorisierung fehlgeschlagen. Bitte versuche es erneut.##22:ログイン認証に失敗しました。再試行してください。##23:로그인 실패, 다시 시도해 주세요.##34:La autorización falló. Vuelve a intentarlo.##36:การอนุญาตล้มเหลว โปรดลองใหม่อีกครั้ง##41:授權登入失敗，請重新嘗試\"\""
+      "m_Name": "\"##6:授权登录失败请重新尝试##10:Authorization failed. Please try again.##14:Échec de l'autorisation. Merci de réessayer.##15:Autorisierung fehlgeschlagen. Bitte versuche es erneut.##22:ログイン認証に失敗しました。再試行してください。##23:로그인 실패, 다시 시도해 주세요.##34:La autorización falló. Vuelve a intentarlo.##36:การอนุญาตล้มเหลว โปรดลองใหม่อีกครั้ง##41:授權登入失敗，請重新嘗試\""
     },
     "\"MSDKErrorCodeM2\"": {
       "m_bError": null,
@@ -944,7 +944,7 @@
     "\"ConfirmCommonTipsContent9998\"": {
       "m_bError": null,
       "m_Index": "\"ConfirmCommonTipsContent9998\"",
-      "m_Name": "\"\"##6:服务器日常维护已开始，请在维护结束后重新登录。##10:Routine server maintenance has begun. You can log in after the maintenance is completed.##14:La maintenance de routine du serveur a commencé. Vous pourrez vous connecter une fois la maintenance terminée.##15:Die regelmäßige Serverwartung hat begonnen. Du kannst dich wieder anmelden, wenn die Wartung abgeschlossen wurde.##22:サーバーの定期メンテナンス中です。メンテナンスが終了してから再ログインしてください。##23:서버 정기 점검이 시작되었습니다. 점검이 끝난 후 다시 로그인하세요.##34:Se ha iniciado el mantenimiento rutinario del servidor. Podrás conectarte una vez que termine el mantenimiento.##36:การปรับปรุงเซิร์ฟเวอร์ตามปกติได้เริ่มต้นขึ้นแล้ว หลังปรับปรุงเสร็จสิ้นแล้ว ท่านจะสามารถเข้าสู่ระบบได้ตามปกติ##41:伺服器日常維護已開始，請在維護結束後再重新登入。\"\""
+      "m_Name": "\"##6:服务器日常维护已开始，请在维护结束后重新登录。##10:Routine server maintenance has begun. You can log in after the maintenance is completed.##14:La maintenance de routine du serveur a commencé. Vous pourrez vous connecter une fois la maintenance terminée.##15:Die regelmäßige Serverwartung hat begonnen. Du kannst dich wieder anmelden, wenn die Wartung abgeschlossen wurde.##22:サーバーの定期メンテナンス中です。メンテナンスが終了してから再ログインしてください。##23:서버 정기 점검이 시작되었습니다. 점검이 끝난 후 다시 로그인하세요.##34:Se ha iniciado el mantenimiento rutinario del servidor. Podrás conectarte una vez que termine el mantenimiento.##36:การปรับปรุงเซิร์ฟเวอร์ตามปกติได้เริ่มต้นขึ้นแล้ว หลังปรับปรุงเสร็จสิ้นแล้ว ท่านจะสามารถเข้าสู่ระบบได้ตามปกติ##41:伺服器日常維護已開始，請在維護結束後再重新登入。\""
     },
     "\"ConfirmCommonTipsTitle9997\"": {
       "m_bError": null,
@@ -1009,7 +1009,7 @@
     "\"ConfirmCommonTipsContent9967\"": {
       "m_bError": null,
       "m_Index": "\"ConfirmCommonTipsContent9967\"",
-      "m_Name": "\"\"##6:网络连接异常，请确认您的网络环境后重新尝试下载。若多次尝试失败，请尝试重新登录游戏。##10:Network connection error. Please check your network and try downloading again. If multiple attempts fail, try re-logging into the game.##14:Erreur de connexion réseau. Veuillez vérifier votre réseau et essayer de télécharger à nouveau. Si le problème persiste après plusieurs tentatives, essayez de vous reconnecter au jeu.##15:Fehler bei der Netzwerkverbindung. Bitte überprüfe dein Netzwerk und versuche erneut, die Inhalte herunterzuladen. Wenn mehrere Versuche fehlschlagen, versuche dich erneut im Spiel anzumelden.##22:ネットワーク接続が異常です。ネットワーク環境をご確認の上、再度ダウンロードをお試しください。複数回失敗する場合は、ゲームに再ログインしてください。##23:네트워크 연결이 불안정합니다. 네트워크 환경을 확인한 후 다시 다운로드해 주세요. 여러 번 시도해도 실패할 경우 게임에 다시 로그인해 주세요.##34:Error de conexión de red. Comprueba tu red e intenta descargar de nuevo. Si fallan varios intentos, prueba volver a iniciar sesión en el juego.##36:ข้อผิดพลาดในการเชื่อมต่อเครือข่าย โปรดตรวจสอบเครือข่ายของท่านและลองดาวน์โหลดอีกครั้ง หากพยายามหลายครั้งไม่สำเร็จ ลองออกจากเกมแล้วเข้าสู่เกมใหม่อีกครั้ง##41:網路連線異常，請確認您的網路環境後重新嘗試下載。若多次嘗試失敗，請嘗試重新登入遊戲。\"\""
+      "m_Name": "\"##6:网络连接异常，请确认您的网络环境后重新尝试下载。若多次尝试失败，请尝试重新登录游戏。##10:Network connection error. Please check your network and try downloading again. If multiple attempts fail, try re-logging into the game.##14:Erreur de connexion réseau. Veuillez vérifier votre réseau et essayer de télécharger à nouveau. Si le problème persiste après plusieurs tentatives, essayez de vous reconnecter au jeu.##15:Fehler bei der Netzwerkverbindung. Bitte überprüfe dein Netzwerk und versuche erneut, die Inhalte herunterzuladen. Wenn mehrere Versuche fehlschlagen, versuche dich erneut im Spiel anzumelden.##22:ネットワーク接続が異常です。ネットワーク環境をご確認の上、再度ダウンロードをお試しください。複数回失敗する場合は、ゲームに再ログインしてください。##23:네트워크 연결이 불안정합니다. 네트워크 환경을 확인한 후 다시 다운로드해 주세요. 여러 번 시도해도 실패할 경우 게임에 다시 로그인해 주세요.##34:Error de conexión de red. Comprueba tu red e intenta descargar de nuevo. Si fallan varios intentos, prueba volver a iniciar sesión en el juego.##36:ข้อผิดพลาดในการเชื่อมต่อเครือข่าย โปรดตรวจสอบเครือข่ายของท่านและลองดาวน์โหลดอีกครั้ง หากพยายามหลายครั้งไม่สำเร็จ ลองออกจากเกมแล้วเข้าสู่เกมใหม่อีกครั้ง##41:網路連線異常，請確認您的網路環境後重新嘗試下載。若多次嘗試失敗，請嘗試重新登入遊戲。\""
     },
     "\"ConfirmCommonTipsButton19967\"": {
       "m_bError": null,
@@ -1024,7 +1024,7 @@
     "\"ConfirmCommonTipsContent1134\"": {
       "m_bError": null,
       "m_Index": "\"ConfirmCommonTipsContent1134\"",
-      "m_Name": "\"\"##6:如果您有绑定游戏数据的其他账号，登入后可以继续之前的存档。请注意，如果您当\n前账号未绑定任何三方账号，当前账号可能会无法找回。请谨慎操作!##10:If you have other accounts with bound game data, you can log in to them to continue from your previous save.\nPlease note that if your current account is not bound to any third-party account, it may not be recoverable. Please proceed with caution!##14:Si vous avez d'autres comptes liés à vos données de jeu, connectez-vous-y pour reprendre à partir de votre dernière sauvegarde.\nSi votre compte actuel n'est pas lié à un autre compte tiers, il pourrait ne pas être récupérable. Faites bien attention !##15:Falls du weitere Konten mit verknüpften Spieldaten hast, kannst du dich bei ihnen anmelden, um deinen vorherigen Spielstand fortzusetzen.\nFalls dein aktuelles Konto nicht mit einem Drittanbieter-Konto verknüpft ist, kann es möglicherweise nicht wiederhergestellt werden. Bitte sei vorsichtig!##22:他のアカウントにゲームデータを連携している場合、そのアカウントでログインすると、前のセーブデータを引き続き利用できます。\n現在のアカウントがサードパーティアカウントに連携されていない場合、アカウントが復元できない可能性がありますので、十分にご注意のうえ、慎重に操作してください。##23:게임 데이터를 다른 계정에 연동한 경우, 해당 계정에 로그인해 이전의 세이브파일을 불러올 수 있습니다.\n주의: 계정이 제삼자 계정에 연동되지 않은 상태면 해당 계정은 되찾을 수 없을 수도 있습니다. 신중히 진행하시길 바랍니다!##34:Si tienes otras cuentas con datos de juego vinculados, puedes conectarte a ellas para continuar desde tu partida guardada anterior.\nTen en cuenta que si tu cuenta actual no está vinculada a ninguna cuenta de terceros, es posible que no pueda recuperarse. Procede con precaución.##36:หากท่านมีบัญชีอื่นที่ผูกกับข้อมูลเกมอยู่ ท่านสามารถเข้าสู่ระบบเพื่อดำเนินการต่อจากบันทึกก่อนหน้านี้ได้\nโปรดทราบว่า หากบัญชีตอนนี้ของท่านไม่ได้ผูกกับบัญชีภายนอกไว้ อาจจะไม่สามารถกู้คืนได้ โปรดดำเนินการด้วยความระมัดระวัง!##41:如果您有綁定遊戲資料的其他帳號，登入便可以繼續之前的存檔。請注意，如果您目\n前帳號未綁定任何第三方帳號，則目前的帳號可能會無法復原。請謹慎操作！\"\""
+      "m_Name": "\"\"##6:如果您有绑定游戏数据的其他账号，登入后可以继续之前的存档。请注意，如果您当前账号未绑定任何三方账号，当前账号可能会无法找回。请谨慎操作!##10:If you have other accounts with bound game data, you can log in to them to continue from your previous save.\nPlease note that if your current account is not bound to any third-party account, it may not be recoverable. Please proceed with caution!##14:Si vous avez d'autres comptes liés à vos données de jeu, connectez-vous-y pour reprendre à partir de votre dernière sauvegarde.\nSi votre compte actuel n'est pas lié à un autre compte tiers, il pourrait ne pas être récupérable. Faites bien attention !##15:Falls du weitere Konten mit verknüpften Spieldaten hast, kannst du dich bei ihnen anmelden, um deinen vorherigen Spielstand fortzusetzen.\nFalls dein aktuelles Konto nicht mit einem Drittanbieter-Konto verknüpft ist, kann es möglicherweise nicht wiederhergestellt werden. Bitte sei vorsichtig!##22:他のアカウントにゲームデータを連携している場合は、ログイン後に以前のセーブデータを引き継ぐことができます。未連携の場合、データが復元できない可能性があります。ご注意ください。##23:게임 데이터를 다른 계정에 연동한 경우, 해당 계정에 로그인해 이전의 세이브파일을 불러올 수 있습니다.\n주의: 계정이 제삼자 계정에 연동되지 않은 상태면 해당 계정은 되찾을 수 없을 수도 있습니다. 신중히 진행하시길 바랍니다!##34:Si tienes otras cuentas con datos de juego vinculados, puedes conectarte a ellas para continuar desde tu partida guardada anterior.\nTen en cuenta que si tu cuenta actual no está vinculada a ninguna cuenta de terceros, es posible que no pueda recuperarse. Procede con precaución.##36:หากท่านมีบัญชีอื่นที่ผูกกับข้อมูลเกมอยู่ ท่านสามารถเข้าสู่ระบบเพื่อดำเนินการต่อจากบันทึกก่อนหน้านี้ได้\nโปรดทราบว่า หากบัญชีตอนนี้ของท่านไม่ได้ผูกกับบัญชีภายนอกไว้ อาจจะไม่สามารถกู้คืนได้ โปรดดำเนินการด้วยความระมัดระวัง!##41:如果您有綁定遊戲資料的其他帳號，登入便可以繼續之前的存檔。\n請注意，如果您目前帳號未綁定任何第三方帳號，則目前的帳號可能會無法復原。\n請謹慎操作！\"\""
     },
     "\"ConfirmCommonTipsButton11134\"": {
       "m_bError": null,
@@ -1049,7 +1049,7 @@
     "\"PlayerCenterAccountUnpack\"": {
       "m_bError": null,
       "m_Index": "\"PlayerCenterAccountUnpack\"",
-      "m_Name": "\"\"##6:解绑三方账户需要您使用当前绑定的三方账户进行授权##10:To unbind a third-party account, you must first log in and authorize this action.##14:Pour délier un compte tiers, vous devez d'abord vous connecter et autoriser cette action.##15:Zum Entfernen eines Drittanbieter-Kontos musst du dich zuerst anmelden und die Aktion bestätigen.##22:連携解除には、現在連携中の外部アカウントでの認証が必要です。##23:제3자 계정 연동을 해제하려면, 현재 연동된 계정으로 인증하셔야 합니다.##34:Para desvincular una cuenta de terceros, primero tienes que iniciar sesión y autorizar esta acción.##36:ในการยกเลิกการผูกบัญชีบุคคลที่สาม ท่านจะต้องล็อกอิน และให้สิทธิ์การดำเนินการนี้ก่อน##41:解除綁定需要您使用目前已綁定的第三方帳戶進行授權\"\""
+      "m_Name": "\"##6:解绑三方账户需要您使用当前绑定的三方账户进行授权##10:To unbind a third-party account, you must first log in and authorize this action.##14:Pour délier un compte tiers, vous devez d'abord vous connecter et autoriser cette action.##15:Zum Entfernen eines Drittanbieter-Kontos musst du dich zuerst anmelden und die Aktion bestätigen.##22:連携解除には、現在連携中の外部アカウントでの認証が必要です。##23:제3자 계정 연동을 해제하려면, 현재 연동된 계정으로 인증하셔야 합니다.##34:Para desvincular una cuenta de terceros, primero tienes que iniciar sesión y autorizar esta acción.##36:ในการยกเลิกการผูกบัญชีบุคคลที่สาม ท่านจะต้องล็อกอิน และให้สิทธิ์การดำเนินการนี้ก่อน##41:解除綁定需要您使用目前已綁定的第三方帳戶進行授權\""
     },
     "\"CommonCountDownHourShort\"": {
       "m_bError": null,
@@ -1064,7 +1064,7 @@
     "\"LoginCheckUpgradeAddResPreCopy\"": {
       "m_bError": null,
       "m_Index": "\"LoginCheckUpgradeAddResPreCopy\"",
-      "m_Name": "\"##6:拷贝资源中：##10:Copying resources...##14:Copie des ressources...##15:Ressourcen werden kopiert ...##22:リソースをコピー中：##23:리소스 복사 중:##34:Copiando recursos...##36:กำลังคัดลอกทรัพยากร...##41:正在複製檔案：\""
+      "m_Name": "\"##6:资源解压中（此过程不消耗流量）：##10:Decompressing resources (no data usage):##14:Décompression des ressources (sans utilisation de données) :##15:Ressourcen werden dekomprimiert (kein Datenverbrauch):##22:リソースを解凍中（この過程に通信量は消費されません）：##23:리소스 압축 해제 중(이 과정에서는 데이터가 소모되지 않습니다):##34:Descomprimiendo recursos (sin uso de datos):##36:กำลังแตกไฟล์ทรัพยากร (ไม่ใช้ข้อมูลอินเทอร์เน็ต):##41:資源解壓中（此過程不消耗流量）：\""
     },
     "\"LoginCheckUpgradeResourceCheck\"": {
       "m_bError": null,
@@ -1094,12 +1094,12 @@
     "\"Form_PlayerCenterPop2FaceBook\"": {
       "m_bError": null,
       "m_Index": "\"Form_PlayerCenterPop2FaceBook\"",
-      "m_Name": "\"##6:FaceBook##10:Facebook##14:Facebook##15:Facebook##22:FaceBook##23:페이스북##34:Facebook##36:Facebook##41:Facebook\""
+      "m_Name": "\"##6:FaceBook##10:Facebook##14:Facebook##15:Facebook##22:FaceBook##23:Facebook##34:Facebook##36:Facebook##41:Facebook\""
     },
     "\"Form_PlayerCenterPop2X\"": {
       "m_bError": null,
       "m_Index": "\"Form_PlayerCenterPop2X\"",
-      "m_Name": "\"##6:X##10:X##14:X##15:X##22:X##23:X##34:X##36:X##41:X\""
+      "m_Name": "\"##6:X##10:X##14:X##15:X##22:X##23:X##34:X##36:X##41:×\""
     },
     "\"Form_PlayerCenterPop2AppleId\"": {
       "m_bError": null,
@@ -1109,7 +1109,7 @@
     "\"Form_PlayerCenterPop2Email\"": {
       "m_bError": null,
       "m_Index": "\"Form_PlayerCenterPop2Email\"",
-      "m_Name": "\"##6:Email##10:Email##14:Email##15:E-Mail##22:Email##23:Email##34:Correo electrónico##36:อีเมล##41:Email\""
+      "m_Name": "\"##6:Email##10:Email##14:E-mail##15:E-Mail##22:Email##23:Email##34:Correo electrónico##36:อีเมล##41:電子郵件\""
     },
     "\"CommonCancel\"": {
       "m_bError": null,

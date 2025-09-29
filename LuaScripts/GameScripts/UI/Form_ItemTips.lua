@@ -281,6 +281,7 @@ function Form_ItemTips:RefreshGift()
   local maxNum = self.m_iNum
   self.m_pnl_down_item:SetActive(true)
   self.m_btn_bp:SetActive(false)
+  self.m_btn_bp_gray:SetActive(false)
   local showMax = false
   if self.m_stItemData.sub_type == ItemManager.ItemSubType.ChestCertain or self.m_stItemData.sub_type == ItemManager.ItemSubType.ChestCustom or self.m_stItemData.sub_type == ItemManager.ItemSubType.IdleCapsule then
     self.m_pnl_gift:SetActive(true)
@@ -548,7 +549,7 @@ function Form_ItemTips:OnPnlusebtnClicked()
     end
   elseif self.m_stItemData.config.m_ItemType == MTTDProto.ItemType_StoreExchange then
     if self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_SmallMonthCard then
-      if MonthlyCardManager:CheckCanBuyCard(true) then
+      if MonthlyCardManager:CheckCanBuyCard(GlobalConfig.MonthlyType.Small) then
         ItemManager:RequestItemUse(self.m_iID, 1)
       else
         utils.popUpDirectionsUI({
@@ -559,11 +560,22 @@ function Form_ItemTips:OnPnlusebtnClicked()
         })
       end
     elseif self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_BigMonthCard then
-      if MonthlyCardManager:CheckCanBuyCard(false) then
+      if MonthlyCardManager:CheckCanBuyCard(GlobalConfig.MonthlyType.Big) then
         ItemManager:RequestItemUse(self.m_iID, 1)
       else
         utils.popUpDirectionsUI({
           tipsID = 1025,
+          func1 = function()
+            self:OnBtnCloseClicked()
+          end
+        })
+      end
+    elseif self.m_stItemData.config.m_ItemSubType == MTTDProto.ItemSubType_DiamondBigMonthCard then
+      if MonthlyCardManager:CheckCanBuyCard(GlobalConfig.MonthlyType.Middle) then
+        ItemManager:RequestItemUse(self.m_iID, 1)
+      else
+        utils.popUpDirectionsUI({
+          tipsID = 1040,
           func1 = function()
             self:OnBtnCloseClicked()
           end

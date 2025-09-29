@@ -189,13 +189,20 @@ function AVGRole:SetScale(v)
 end
 
 function AVGRole:SetSpeekTimes(loopTimes)
-  if loopTimes == 0 then
-    self.mouthIndex = -1
-    self.mouthTime = 0
-    self.mouthImage.sprite = nil
-    self.mouthImage.enabled = false
-  end
+  self.mouthIndex = -1
+  self.mouthTime = 0
+  self.loopTimes = 0
+  self.mouthImage.sprite = nil
+  self.mouthImage.enabled = false
   self.speekLoopTimes = loopTimes
+end
+
+function AVGRole:SetSpeekMinTimes(loopTimes)
+  if loopTimes < self.loopTimes then
+    self.speekLoopTimes = 1
+  else
+    self.speekLoopTimes = math.max(loopTimes - self.loopTimes, 1)
+  end
 end
 
 function AVGRole:StopSpeek()
@@ -231,6 +238,7 @@ function AVGRole:Update(dt)
         if self.mouthIndex >= self.faceData.Mouth.Sprites.Length then
           self.mouthIndex = -1
           self.speekLoopTimes = self.speekLoopTimes - 1
+          self.mouthTime = self.loopTimes + 1
         end
         if self.speekLoopTimes == 0 then
           self.mouthIndex = -1

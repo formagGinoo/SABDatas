@@ -1313,7 +1313,7 @@
     },
     "1001001": {
       "_type": "nested_dictionary",
-      "_count": 69,
+      "_count": 71,
       "_processed": 50,
       "data": {
         "10300010": {
@@ -1624,6 +1624,17 @@
           "m_LimitValue": "[10300310,20100310]",
           "m_IsTech": null
         },
+        "10300320": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001001",
+          "m_ItemID": "10300320",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300320,20100320]",
+          "m_IsTech": null
+        },
         "10300330": {
           "m_bError": null,
           "m_RandomGroupID": "1001001",
@@ -1853,24 +1864,13 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300640,20100640]",
-          "m_IsTech": null
-        },
-        "10300650": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001001",
-          "m_ItemID": "10300650",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300650,20100650]",
           "m_IsTech": null
         }
       }
     },
     "1001002": {
       "_type": "nested_dictionary",
-      "_count": 57,
+      "_count": 59,
       "_processed": 50,
       "data": {
         "10300010": {
@@ -2181,6 +2181,17 @@
           "m_LimitValue": "[10300310,20100310]",
           "m_IsTech": null
         },
+        "10300320": {
+          "m_bError": null,
+          "m_RandomGroupID": "1001002",
+          "m_ItemID": "10300320",
+          "m_weigth": "1000",
+          "m_MaterialWeigth": null,
+          "m_SurelyDropNum": null,
+          "m_LimitType": "1",
+          "m_LimitValue": "[10300320,20100320]",
+          "m_IsTech": null
+        },
         "10300330": {
           "m_bError": null,
           "m_RandomGroupID": "1001002",
@@ -2410,17 +2421,6 @@
           "m_SurelyDropNum": null,
           "m_LimitType": "1",
           "m_LimitValue": "[10300640,20100640]",
-          "m_IsTech": null
-        },
-        "10300650": {
-          "m_bError": null,
-          "m_RandomGroupID": "1001002",
-          "m_ItemID": "10300650",
-          "m_weigth": "1000",
-          "m_MaterialWeigth": null,
-          "m_SurelyDropNum": null,
-          "m_LimitType": "1",
-          "m_LimitValue": "[10300650,20100650]",
           "m_IsTech": null
         }
       }

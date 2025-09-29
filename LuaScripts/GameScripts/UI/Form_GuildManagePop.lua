@@ -5,6 +5,7 @@ end
 
 function Form_GuildManagePop:AfterInit()
   self.super.AfterInit(self)
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_GuildManagePop:OnActive()
@@ -13,7 +14,6 @@ function Form_GuildManagePop:OnActive()
   if not tParam then
     return
   end
-  self.m_PlayerHeadCache = {}
   self.m_vApplyList = tParam.vApplyList
   self.m_callFun = tParam.callFun
   self.m_selMemberUid = nil
@@ -24,7 +24,6 @@ end
 function Form_GuildManagePop:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
-  self.m_PlayerHeadCache = {}
 end
 
 function Form_GuildManagePop:AddEventListeners()

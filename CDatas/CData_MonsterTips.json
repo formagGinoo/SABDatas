@@ -905,7 +905,7 @@
       "m_bError": null,
       "m_MonsterID": "31330",
       "m_MonsterType": "1",
-      "m_mIntroduce": "\"An incarnation of the Calamity \"Death\", avoid getting too close when it charges up. Below certain HP, it plants a Seed of Calamity that Self-Destructs once charged up, dealing strong DMG to all enemies. Prioritize destroying the seed.\"",
+      "m_mIntroduce": "\"An incarnation of the Calamity \"Death,\" avoid getting too close when it charges up. Below certain HP, it plants a Seed of Calamity that Self-Destructs once charged up, dealing strong DMG to all enemies. Prioritize destroying the seed.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Nightmare_Lord001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
@@ -1198,6 +1198,33 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "33330": {
+      "m_bError": null,
+      "m_MonsterID": "33330",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blessed with a protective shield and well balanced in attributes. Excels in melee combat.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Priestess_Wand001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "33340": {
+      "m_bError": null,
+      "m_MonsterID": "33340",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blessed with a protective Shield. Deals AoE DMG to the target and surrounding units through Special. Spread out to reduce DMG taken or focus fire to eliminate them quickly.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Priestess_Bow001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "33350": {
+      "m_bError": null,
+      "m_MonsterID": "33350",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"Blessed with a protective Shield. <color=#D63536>Upon channeling</color>, grants Shields to allies. Interrupt their skills in time.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Priestess_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "40039": {
       "m_bError": null,
       "m_MonsterID": "40039",
@@ -1415,5 +1442,5 @@
       "m_Video1": "[]"
     }
   },
-  "status": "processed_157_items"
+  "status": "processed_160_items"
 }

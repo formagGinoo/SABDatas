@@ -2,8 +2,6 @@ local Form_Activity106Tast14 = class("Form_Activity106Tast14", require("UI/UIFra
 
 function Form_Activity106Tast14:AfterInit()
   self.super.AfterInit(self)
-  self.DefaultShowSpineName = "agatha_base"
-  self.iUpActivityID = 1060
 end
 
 ActiveLuaUI("Form_Activity106Tast14", Form_Activity106Tast14)

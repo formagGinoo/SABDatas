@@ -7,6 +7,10 @@ end
 function Form_GuildDetailPop:AfterInit()
   self.super.AfterInit(self)
   self.m_formatStr = ConfigManager:GetCommonTextById(20048)
+  self.m_formatCD = ConfigManager:GetCommonTextById(100153)
+  self.m_PlayerHeadCache = {}
+  self.GuildJoinCD = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildJoinCD"))
+  self.m_iTimeDurationOneSecond = 1
 end
 
 function Form_GuildDetailPop:OnActive()
@@ -15,10 +19,10 @@ function Form_GuildDetailPop:OnActive()
   if not tParam then
     return
   end
-  self.m_PlayerHeadCache = {}
   self.m_selectTab = TAB_TYPE.Detail
   self.m_guildData = tParam.guildData
   self.m_hideJoinBtn = tParam.hideJoinBtn
+  self.m_isInvited = tParam.isInvited
   self:RefreshUI()
   self:AddEventListeners()
 end
@@ -26,7 +30,6 @@ end
 function Form_GuildDetailPop:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
-  self.m_PlayerHeadCache = {}
 end
 
 function Form_GuildDetailPop:RemoveAllEventListeners()
@@ -36,6 +39,7 @@ end
 function Form_GuildDetailPop:AddEventListeners()
   self:addEventListener("eGameEvent_Alliance_Apply", handler(self, self.OnGuildApply))
   self:addEventListener("eGameEvent_Alliance_RemoveGuildData", handler(self, self.OnGuildRemoveGuildData))
+  self:addEventListener("eGameEvent_Alliance_ReplyInvite", handler(self, self.OnGuildReplyInvite))
 end
 
 function Form_GuildDetailPop:OnGuildApply()
@@ -43,6 +47,15 @@ function Form_GuildDetailPop:OnGuildApply()
 end
 
 function Form_GuildDetailPop:OnGuildRemoveGuildData()
+  self:OnBtnReturnClicked()
+end
+
+function Form_GuildDetailPop:OnGuildReplyInvite(data)
+  if data.bAccept then
+    self:OnBtnReturnClicked()
+  else
+    GuildManager:ReqAllianceGetInviteListCS()
+  end
   self:OnBtnReturnClicked()
 end
 
@@ -58,8 +71,28 @@ function Form_GuildDetailPop:RefreshUI()
   self.m_txt_guild_uid_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(100053), stBriefData.iAllianceId)
   ResourceUtil:CreateGuildIconById(self.m_img_logo_Image, stBriefData.iBadgeId)
   self:RefreshContent()
-  self.m_btn_join:SetActive(not self.m_hideJoinBtn)
+  self.m_btn_refuse:SetActive(self.m_isInvited ~= nil)
+  self:RefreshJoinBtn()
   self:RefreshGuildGrade()
+end
+
+function Form_GuildDetailPop:RefreshJoinBtn()
+  if self.m_hideJoinBtn then
+    self.m_btn_joinlock:SetActive(false)
+    self.m_btn_join:SetActive(false)
+    self.m_pnl_cd:SetActive(false)
+  else
+    local disTime = GuildManager.iLastLeaveAllianceTime + self.GuildJoinCD - TimeUtil:GetServerTimeS()
+    self.m_txt_time_Text.text = string.CS_Format(self.m_formatCD, TimeUtil:SecondsToFormatCNStr4(math.floor(disTime)))
+    if self.m_guildData.stBriefData.iJoinLevel > RoleManager:GetLevel() or 0 < disTime then
+      self.canAccept = false
+    else
+      self.canAccept = true
+    end
+    self.m_btn_joinlock:SetActive(not self.canAccept)
+    self.m_pnl_cd:SetActive(0 < disTime)
+    self.m_btn_join:SetActive(self.canAccept)
+  end
 end
 
 function Form_GuildDetailPop:RefreshGuildGrade()
@@ -93,7 +126,15 @@ function Form_GuildDetailPop:RefreshDetail()
     local joinType = GuildManager.GuildJoinType[stBriefData.iJoinType + 1].sTitle
     self.m_txt_infor2_type_Text.text = ConfigManager:GetCommonTextById(joinType)
   end
-  self.m_txt_info_des_Text.text = self.m_guildData.stBriefData.sRecruit
+  self.m_txt_info_des_Text.text = self.m_guildData.stBriefData.sRecruit ~= "" and self.m_guildData.stBriefData.sRecruit or ConfigManager:GetCommonTextById(100150)
+end
+
+function Form_GuildDetailPop:OnUpdate(dt)
+  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond + dt
+  if self.m_iTimeDurationOneSecond >= 1 then
+    self.m_iTimeDurationOneSecond = 0
+    self:RefreshJoinBtn()
+  end
 end
 
 function Form_GuildDetailPop:refreshLoopScroll()
@@ -158,8 +199,24 @@ function Form_GuildDetailPop:ChangeTab(index)
   end
 end
 
+function Form_GuildDetailPop:OnBtnjoinlockClicked()
+  if self.m_guildData.stBriefData.iJoinLevel > RoleManager:GetLevel() then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10273)
+  else
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10272)
+  end
+end
+
 function Form_GuildDetailPop:OnBtnjoinClicked()
-  GuildManager:OnReqAllianceApplyCS(self.m_guildData.stBriefData.iAllianceId)
+  if not self.m_isInvited then
+    GuildManager:OnReqAllianceApplyCS(self.m_guildData.stBriefData.iAllianceId)
+  else
+    GuildManager:ReqAllianceReplyInviteCS(self.m_guildData.stBriefData.iAllianceId, true)
+  end
+end
+
+function Form_GuildDetailPop:OnBtnrefuseClicked()
+  GuildManager:ReqAllianceReplyInviteCS(self.m_guildData.stBriefData.iAllianceId, false)
 end
 
 function Form_GuildDetailPop:OnNormal2Clicked()

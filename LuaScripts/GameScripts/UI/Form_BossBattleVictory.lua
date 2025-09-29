@@ -67,6 +67,7 @@ function Form_BossBattleVictory:FreshData()
     self.m_curLevelID = tParam.levelID
     self.m_csRewardList = tParam.rewardData
     self.m_csExRewardList = tParam.extraReward
+    self.m_csMonthCardExtraRewardList = tParam.vMonthCardExtraReward
     self.m_finishErrorCode = tParam.finishErrorCode
     self.m_showHeroID = tParam.showHeroID
     self.m_isSweep = tParam.isSweep
@@ -92,6 +93,18 @@ function Form_BossBattleVictory:FreshRewardListData()
           iID = rewardCsData.iID,
           iNum = rewardCsData.iNum,
           is_extra = true
+        }
+        self.m_itemDataListEx[#self.m_itemDataListEx + 1] = tempReward
+      end
+    end
+  end
+  if self.m_csMonthCardExtraRewardList then
+    for _, rewardCsData in pairs(self.m_csMonthCardExtraRewardList) do
+      if rewardCsData then
+        local tempReward = {
+          iID = rewardCsData.iID,
+          iNum = rewardCsData.iNum,
+          monthlyPrivilege = true
         }
         self.m_itemDataListEx[#self.m_itemDataListEx + 1] = tempReward
       end

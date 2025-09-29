@@ -367,13 +367,20 @@
     },
     "20270": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 2,
+      "_processed": 2,
       "data": {
         "0": {
           "m_bError": null,
           "m_ID": "20270",
           "m_FashionID": null,
+          "m_RoleOffset": "[0,0.014999999664723873,0]",
+          "m_RoleScake": "0.8999999761581421"
+        },
+        "6027001": {
+          "m_bError": null,
+          "m_ID": "20270",
+          "m_FashionID": "6027001",
           "m_RoleOffset": "[0,0.014999999664723873,0]",
           "m_RoleScake": "0.8999999761581421"
         }
@@ -452,7 +459,7 @@
           "m_ID": "20320",
           "m_FashionID": null,
           "m_RoleOffset": "[-0.10000000149011612,0.054999999701976776,0]",
-          "m_RoleScake": "0.7799999713897705"
+          "m_RoleScake": "0.7599999904632568"
         }
       }
     },
@@ -827,6 +834,20 @@
         }
       }
     },
+    "20680": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20680",
+          "m_FashionID": null,
+          "m_RoleOffset": "[0,0.03799999877810478,0]",
+          "m_RoleScake": "0.8700000047683716"
+        }
+      }
+    },
     "20690": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -870,5 +891,5 @@
       }
     }
   },
-  "status": "processed_57_items"
+  "status": "processed_58_items"
 }

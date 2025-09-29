@@ -20,6 +20,7 @@ local Job_Startup_FetchMoreServerData_Impl = require("JobFlow/JobGraphStartup/Jo
 local Job_Startup_DataAnonym_Impl = require("JobFlow/JobGraphStartup/Job_Startup_DataAnonym_Impl")
 local Job_Startup_InitUsercentrics_Impl = require("JobFlow/JobGraphStartup/Job_Startup_InitUsercentrics_Impl")
 local Job_Startup_DownloadStateScript_Impl = require("JobFlow/JobGraphStartup/Job_Startup_DownloadStateScript_Impl")
+local Job_Startup_CheckGlobalRes_Impl = require("JobFlow/JobGraphStartup/Job_Startup_CheckGlobalRes_Impl")
 JobGraphStartup.s_instance = nil
 
 function JobGraphStartup:ctor()
@@ -89,15 +90,15 @@ function JobGraphStartup:BuildGraph()
     jn.Y = 56
     jn = JobNode.CreateNode("DownloadAllResource", 0, 5, false, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResource, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceSuccess, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceFailed, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceTimeOut, Job_Startup_DownloadAllResource_Impl.OnDownloadAllResourceDispose)
     csg:AddNode(jn)
-    jn.X = 312
-    jn.Y = 312
+    jn.X = -1224
+    jn.Y = 568
     jn = JobNode.CreateNode("MergeInit", 0, 5, false, Job_Startup_MergeInit_Impl.OnMergeInit, Job_Startup_MergeInit_Impl.OnMergeInitSuccess, Job_Startup_MergeInit_Impl.OnMergeInitFailed, Job_Startup_MergeInit_Impl.OnMergeInitTimeOut, Job_Startup_MergeInit_Impl.OnMergeInitDispose)
     csg:AddNode(jn)
     jn.X = -840
     jn.Y = 312
     jn = JobNode.CreateNode("DownloadNecessaryResource", 0, 5, false, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResource, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceSuccess, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceFailed, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceTimeOut, Job_Startup_DownloadNecessaryResource_Impl.OnDownloadNecessaryResourceDispose)
     csg:AddNode(jn)
-    jn.X = -72
+    jn.X = 312
     jn.Y = 312
     jn = JobNode.CreateNode("InitGSDK", 0, 20, false, Job_Startup_InitGSDK_Impl.OnInitGSDK, Job_Startup_InitGSDK_Impl.OnInitGSDKSuccess, Job_Startup_InitGSDK_Impl.OnInitGSDKFailed, Job_Startup_InitGSDK_Impl.OnInitGSDKTimeOut, Job_Startup_InitGSDK_Impl.OnInitGSDKDispose)
     csg:AddNode(jn)
@@ -117,7 +118,7 @@ function JobGraphStartup:BuildGraph()
     jn.Y = -200
     jn = JobNode.CreateNode("CheckAccountState", 0, 5, false, Job_Startup_CheckAccountState_Impl.OnCheckAccountState, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateSuccess, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateFailed, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateTimeOut, Job_Startup_CheckAccountState_Impl.OnCheckAccountStateDispose)
     csg:AddNode(jn)
-    jn.X = -1224
+    jn.X = -840
     jn.Y = 568
     jn = JobNode.CreateNode("FetchMoreServerData", 0, 5, false, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerData, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataSuccess, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataFailed, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataTimeOut, Job_Startup_FetchMoreServerData_Impl.OnFetchMoreServerDataDispose)
     csg:AddNode(jn)
@@ -135,6 +136,10 @@ function JobGraphStartup:BuildGraph()
     csg:AddNode(jn)
     jn.X = -72
     jn.Y = 56
+    jn = JobNode.CreateNode("CheckGlobalRes", 0, 5, false, Job_Startup_CheckGlobalRes_Impl.OnCheckGlobalRes, Job_Startup_CheckGlobalRes_Impl.OnCheckGlobalResSuccess, Job_Startup_CheckGlobalRes_Impl.OnCheckGlobalResFailed, Job_Startup_CheckGlobalRes_Impl.OnCheckGlobalResTimeOut, Job_Startup_CheckGlobalRes_Impl.OnCheckGlobalResDispose)
+    csg:AddNode(jn)
+    jn.X = -72
+    jn.Y = 312
     csg:GetNode(1):AddTrigger(csg:GetNode(17))
     csg:GetNode(2):AddTrigger(csg:GetNode(5))
     csg:GetNode(3):AddTrigger(csg:GetNode(7))
@@ -146,7 +151,7 @@ function JobGraphStartup:BuildGraph()
     csg:GetNode(9):AddTrigger(csg:GetNode(14))
     csg:GetNode(10):AddTrigger(csg:GetNode(12))
     csg:GetNode(11):AddTrigger(csg:GetNode(4))
-    csg:GetNode(12):AddTrigger(csg:GetNode(18))
+    csg:GetNode(12):AddTrigger(csg:GetNode(22))
     csg:GetNode(13):AddTrigger(csg:GetNode(19))
     csg:GetNode(14):AddTrigger(csg:GetNode(6))
     csg:GetNode(15):AddTrigger(csg:GetNode(21))
@@ -156,6 +161,7 @@ function JobGraphStartup:BuildGraph()
     csg:GetNode(19):AddTrigger(csg:GetNode(8))
     csg:GetNode(20):AddTrigger(csg:GetNode(16))
     csg:GetNode(21):AddTrigger(csg:GetNode(9))
+    csg:GetNode(22):AddTrigger(csg:GetNode(18))
     self.m_builded = true
   end
 end

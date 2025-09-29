@@ -95,6 +95,7 @@ function Form_ActivityAnnounceLotterypage:AddEventListeners()
   self:addEventListener("eGameEvent_Activity_AnywayReload", handler(self, self.OnGetActivityResetData))
   self:addEventListener("eGameEvent_Activity_CloseActivityAnnouncement", handler(self, self.CloseForm))
   self:addEventListener("eGameEvent_Activity_PushFaceReserve", handler(self, self.OnGetPushJumpAnnouncementReward))
+  self:addEventListener("eGameEvent_Activity_AnnouncePushTypeClose", handler(self, self.OnGetActivityResetData))
 end
 
 function Form_ActivityAnnounceLotterypage:OnGetActivityResetData()
@@ -210,9 +211,8 @@ function Form_ActivityAnnounceLotterypage:OnInitTabItem(go, index)
     end
   end
   if isPushJumpType then
-    local serverTime = TimeUtil:GetServerTimeS()
     local openTime, endTime = self.curShowList[idx]:GetPushJumpTimeWindow()
-    local isOpen = serverTime > openTime and serverTime < endTime
+    local isOpen = TimeUtil:IsInTime(openTime, endTime)
     item.m_ready:SetActive(not isOpen)
     item.m_ongoing:SetActive(isOpen)
   else
@@ -251,6 +251,10 @@ function Form_ActivityAnnounceLotterypage:RefreshContent()
   if #self.curShowList < self.cur_leftselect_idx then
     self.m_pnl_activity:SetActive(false)
     self.m_btn_go:SetActive(false)
+    if self.m_curSelectPushSubPanel then
+      self.m_curSelectPushSubPanel:SetActive(false)
+      self.m_curSelectPushSubPanel:OnInactivePanel()
+    end
     return
   end
   self.m_pnl_activity:SetActive(true)

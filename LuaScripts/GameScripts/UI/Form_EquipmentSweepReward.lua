@@ -75,12 +75,20 @@ function Form_EquipmentSweepReward:RefreshUI()
       else
         self["m_normal_reward" .. i]:SetActive(false)
       end
-      if 0 < table.getn(rewards.vExtraReward) then
+      if 0 < table.getn(rewards.vExtraReward) or 0 < table.getn(rewards.vMonthCardReward) then
         local exRewards = rewards.vExtraReward
         local dataList = {}
-        for _, v in ipairs(exRewards) do
-          local processData = ResourceUtil:GetProcessRewardData(v, {is_extra = true})
-          dataList[#dataList + 1] = processData
+        if exRewards and 0 < #exRewards then
+          for _, v in ipairs(exRewards) do
+            local processData = ResourceUtil:GetProcessRewardData(v, {is_extra = true})
+            dataList[#dataList + 1] = processData
+          end
+        end
+        if rewards.vMonthCardReward and 0 < #rewards.vMonthCardReward then
+          for _, v in ipairs(rewards.vMonthCardReward) do
+            local processData = ResourceUtil:GetProcessRewardData(v, {monthlyPrivilege = true})
+            dataList[#dataList + 1] = processData
+          end
         end
         local list = self:SortItemByQuality(dataList)
         self["m_mulItemDoubleList" .. i]:ShowItemList(list)

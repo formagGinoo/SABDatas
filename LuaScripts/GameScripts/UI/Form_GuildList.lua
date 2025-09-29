@@ -14,6 +14,9 @@ function Form_GuildList:AfterInit()
   end)
   self.m_widgetResourceBar = self:createResourceBar(self.m_common_top_resource)
   self.m_widgetBtnBack = self:createBackButton(self.m_common_top_back, handler(self, self.OnBackClk), nil, handler(self, self.OnBackHome), 1113)
+  self.GuildJoinCD = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildJoinCD"))
+  self.m_iTimeDurationOneSecond = 1
+  self.m_formatCD = ConfigManager:GetCommonTextById(100153)
   local guildGridData = {
     itemClkBackFun = handler(self, self.OnGuildItemClk)
   }
@@ -48,6 +51,7 @@ function Form_GuildList:AddEventListeners()
   self:addEventListener("eGameEvent_Alliance_ReplyInvite", handler(self, self.OnGuildReplyInvite))
   self:addEventListener("eGameEvent_Alliance_RemoveGuildData", handler(self, self.OnGuildRemoveGuildData))
   self:addEventListener("eGameEvent_Alliance_Refresh_Invitations", handler(self, self.OnGuildRefreshInvitations))
+  self:addEventListener("eGameEvent_Alliance_Get_Invitations", handler(self, self.OnGuildRefreshInvitations))
 end
 
 function Form_GuildList:RemoveAllEventListeners()
@@ -116,6 +120,20 @@ function Form_GuildList:CheckStrIsCorrect()
   end
 end
 
+function Form_GuildList:OnUpdate(dt)
+  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond + dt
+  if self.m_iTimeDurationOneSecond >= 1 then
+    self.m_iTimeDurationOneSecond = 0
+    local disTime = GuildManager.iLastLeaveAllianceTime + self.GuildJoinCD - TimeUtil:GetServerTimeS()
+    if 0 < disTime then
+      self.m_pnl_cd:SetActive(true)
+      self.m_txt_time_Text.text = string.CS_Format(self.m_formatCD, TimeUtil:SecondsToFormatCNStr4(math.floor(disTime)))
+    else
+      self.m_pnl_cd:SetActive(false)
+    end
+  end
+end
+
 function Form_GuildList:OnGuildItemClk(index, go)
   local fjItemIndex = index + 1
   if not fjItemIndex then
@@ -174,21 +192,10 @@ function Form_GuildList:OnBtncreateClicked()
 end
 
 function Form_GuildList:OnBtninvitationsClicked()
-  local inviteData = GuildManager:GetLastAllianceInvite()
-  if inviteData then
-    utils.CheckAndPushCommonTips({
-      tipsID = 1504,
-      bUseSystemWord = true,
-      fContentCB = function(content)
-        return string.gsubnumberreplace(content, inviteData.stInviteUser.sRoleName, inviteData.stBriefInfo.sName, inviteData.stBriefInfo.iAllianceId)
-      end,
-      func1 = function()
-        GuildManager:ReqAllianceReplyInviteCS(inviteData.stBriefInfo.iAllianceId, true)
-      end,
-      func2 = function()
-        GuildManager:ReqAllianceReplyInviteCS(inviteData.stBriefInfo.iAllianceId, false)
-      end
-    })
+  local inviteData = GuildManager:GetSortAllianceInvite()
+  GuildManager:ReqAllianceGetInviteListCS()
+  if inviteData and 0 < #inviteData then
+    StackFlow:Push(UIDefines.ID_FORM_GUILDINVITATIONPOP, inviteData)
   else
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10242)
   end

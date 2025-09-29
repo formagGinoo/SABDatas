@@ -88,6 +88,7 @@ function Form_CommonTips:OnActive()
   self:CheckShowTitle()
   self:CheckShowButtons()
   self:CheckShowConsumePanel()
+  self:CheckShowPrivilege()
   local showCountDownFlag = false
   local showCountDown2Flag = false
   if self.m_param.btnNum == ConfirmCommonTipsStyle.OneButtonAutoConfirm then
@@ -394,6 +395,18 @@ function Form_CommonTips:CheckShowButtons()
     self.m_toggle_yes:SetActive(false)
   end
   self.m_btn_Return:SetActive(not self.m_param.bLockBack)
+end
+
+function Form_CommonTips:CheckShowPrivilege()
+  if not self.m_param then
+    if not utils.isNull(self.m_common_privilege) then
+      self.m_common_privilege:SetActive(false)
+    end
+    return
+  end
+  if not utils.isNull(self.m_common_privilege) then
+    self.m_common_privilege:SetActive(self.m_param.bCommonPrivilege)
+  end
 end
 
 function Form_CommonTips:CloseUI()

@@ -142,6 +142,14 @@ function HeroLvUpgradeSubPanel:GetHeroCanLevelUpMaxLv()
   return curMaxLv
 end
 
+function HeroLvUpgradeSubPanel:IsHeroCanLevelUpMaxLvByBreak()
+  log.info(self.m_beforeShowLv .. " >= " .. self.m_curBreakMaxLvNum)
+  if not (self.m_beforeShowLv >= self.m_curBreakMaxLvNum) then
+    return false
+  end
+  return self:IsCanBreak()
+end
+
 function HeroLvUpgradeSubPanel:FreshCostItemData()
   local beforeShowLv = self.m_beforeShowLv
   local afterShowLv = self.m_afterShowLv
@@ -315,6 +323,7 @@ function HeroLvUpgradeSubPanel:FreshUI()
   self:FreshShowBeforeUp()
   self:FreshShowAfterUp()
   self:FreshLvChange()
+  self:FreshUpLimit()
   self:ResetAnimIn()
 end
 
@@ -373,6 +382,52 @@ function HeroLvUpgradeSubPanel:FreshCostItem()
   end
 end
 
+function HeroLvUpgradeSubPanel:FreshUpLimit()
+  UILuaHelper.SetActive(self.m_hero_break_red_point, false)
+  local quality = self.m_curShowHeroData.serverData.iQuality
+  local breakNum = self.m_curHeroBreakNum
+  local SSRBreakNum = HeroManager.SSRBreakNum
+  local isCanBreak = self:IsCanBreak()
+  if quality == HeroManager.QualityType.R then
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SR, false)
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SSR, false)
+    UILuaHelper.SetActive(self.m_img_break_SSR4, false)
+  elseif quality == HeroManager.QualityType.SR then
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SR, true)
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SSR, false)
+    UILuaHelper.SetActive(self.m_img_break_SSR4, false)
+    for i = 1, HeroManager.SRBreakNum do
+      UILuaHelper.SetActive(self["m_img_break_SR" .. i], i <= breakNum)
+    end
+  else
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SR, false)
+    UILuaHelper.SetActive(self.m_breakthrough_progress_SSR, breakNum <= SSRBreakNum)
+    UILuaHelper.SetActive(self.m_img_break_SSR4, breakNum > SSRBreakNum)
+    if breakNum <= SSRBreakNum then
+      for i = 1, HeroManager.SSRBreakNum do
+        UILuaHelper.SetActive(self["m_img_break_SSR" .. i], i <= breakNum)
+      end
+    end
+    if breakNum > SSRBreakNum then
+      local maxNum = self.m_maxBreakNum - SSRBreakNum
+      for i = 1, maxNum do
+        if not utils.isNull(self["m_pnl_break_light" .. i]) then
+          UILuaHelper.SetActive(self["m_pnl_break_light" .. i], i <= breakNum - SSRBreakNum)
+        end
+      end
+    else
+      UILuaHelper.SetActive(self.m_img_break_SSR4, false)
+    end
+  end
+end
+
+function HeroLvUpgradeSubPanel:OnBtnBreakClicked()
+  StackPopup:Push(UIDefines.ID_FORM_HEROBREAKTHROUGHPOP, {
+    heroDataList = self.m_allHeroList,
+    chooseHeroIndex = self.m_curChooseHeroIndex
+  })
+end
+
 function HeroLvUpgradeSubPanel:FreshAddLevelNode()
   local afterShowLv = self.m_afterShowLv
   local isMin = self:IsMin()
@@ -415,6 +470,7 @@ function HeroLvUpgradeSubPanel:FreshUpgrade()
     UILuaHelper.SetActive(self.m_node_upgrade_gray, isOverUpMax)
     UILuaHelper.SetActive(self.m_node_upgrade_light, not isOverUpMax)
   end
+  self.m_pnl_up_limit:SetActive(self:IsHeroCanLevelUpMaxLvByBreak())
 end
 
 function HeroLvUpgradeSubPanel:CheckAutoUpLv()

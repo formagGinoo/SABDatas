@@ -34,6 +34,7 @@ function AVGPlayableBranch:ShowDialogue()
   }
   self.context:AddReviewData(self.DataIndex, reviewData)
   local loopTimes = element.m_MouthAnimation
+  self.mouthLoopTimes = loopTimes
   if element.m_Audio ~= "" then
     CS.UI.UILuaHelper.StartPlaySFX(element.m_Audio, nil, handler(self, self.OnPlaySFXStart), handler(self, self.OnPlaySFXFinish))
     loopTimes = -1
@@ -100,6 +101,7 @@ function AVGPlayableBranch:OnClickContinue()
       self.textTypeWriter:FinishShowText()
       self.textTypeWriter = nil
     end
+    self:StopSpeek()
     if self.passedTime < self.duration then
       self.passedTime = self.duration
     end
@@ -123,12 +125,7 @@ function AVGPlayableBranch:OnDialogueUpdate(dt)
   else
     self.passedTime = self.passedTime + dt
   end
-  if self.playingId == nil then
-    if self.duration < self.passedTime then
-      self:StopSpeek()
-      self.stage = BranchStageType.Choice
-    end
-  elseif self.passedTime > 20 then
+  if (self.playingId == nil or self.passedTime > 20) and self.duration < self.passedTime and self.textTypeWriter == nil then
     self:StopSpeek()
     self.stage = BranchStageType.Choice
   end
@@ -155,7 +152,12 @@ end
 function AVGPlayableBranch:OnPlaySFXFinish(playingId)
   if self.playingId == playingId then
     self.playingId = nil
-    self:StopSpeek()
+    if self.playableData.DialogueRole >= 0 then
+      local role = self.context:GetRole(self.playableData.DialogueRole)
+      if role then
+        role:SetSpeekMinTimes(self.mouthLoopTimes)
+      end
+    end
   end
 end
 

@@ -54,7 +54,7 @@
       "m_EventID": "1007",
       "m_EventType": "1",
       "m_PropertyLimit": "[]",
-      "m_mResult1Desc": "\"'Stinking bat!' 'Dumb wolf!'\nWalked into in an argument only to be kicked away by someone's foot.\"",
+      "m_mResult1Desc": "\"'Stinking bat!' 'Dumb wolf!'\nWalked into an argument only to be kicked away by someone's foot.\"",
       "m_Result1Cost": "25",
       "m_Result1HP": "-10",
       "m_mResult2Desc": "\"\"",
@@ -1756,9 +1756,9 @@
       "m_mResult2Desc": "\"\"",
       "m_Result2Cost": null,
       "m_Result2HP": null,
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"Charge\"",
       "m_Select1Event": "34211",
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"Wait Together\"",
       "m_Select2Event": "34212"
     },
     "34211": {
@@ -1772,9 +1772,9 @@
       "m_mResult2Desc": "\"'Protecting yourself also takes courage—don't bear too much weight for others.'\nThis statement is true indeed.\"",
       "m_Result2Cost": "50",
       "m_Result2HP": "-20",
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"\"",
       "m_Select1Event": null,
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"\"",
       "m_Select2Event": null
     },
     "34212": {
@@ -1804,9 +1804,9 @@
       "m_mResult2Desc": "\"\"",
       "m_Result2Cost": null,
       "m_Result2HP": null,
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"Charge\"",
       "m_Select1Event": "34221",
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"Wait Together\"",
       "m_Select2Event": "34222"
     },
     "34221": {
@@ -1820,9 +1820,9 @@
       "m_mResult2Desc": "\"'Protecting yourself also takes courage—don't bear too much weight for others.'\nThis statement is true indeed.\"",
       "m_Result2Cost": "50",
       "m_Result2HP": "-20",
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"\"",
       "m_Select1Event": null,
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"\"",
       "m_Select2Event": null
     },
     "34222": {
@@ -1852,9 +1852,9 @@
       "m_mResult2Desc": "\"\"",
       "m_Result2Cost": null,
       "m_Result2HP": null,
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"Charge\"",
       "m_Select1Event": "34231",
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"Wait Together\"",
       "m_Select2Event": "34232"
     },
     "34231": {
@@ -1868,9 +1868,9 @@
       "m_mResult2Desc": "\"'Protecting yourself also takes courage—don't bear too much weight for others.'\nThis statement is true indeed.\"",
       "m_Result2Cost": "50",
       "m_Result2HP": "-20",
-      "m_mSelect1Text": "\"Charge!\"",
+      "m_mSelect1Text": "\"\"",
       "m_Select1Event": null,
-      "m_mSelect2Text": "\"Let's wait\"",
+      "m_mSelect2Text": "\"\"",
       "m_Select2Event": null
     },
     "34232": {

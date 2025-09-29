@@ -161,9 +161,23 @@ function Form_ActivityMinigame108Assemble:OnActive()
   self.m_csui.m_param.spindata = self.spindata
   self.m_txt_racetrack_Text.text = self.lvconfig.m_mLevelName
   self:TabChange(EquipType.HEAD)
+  self:ChangeSpineSkin(self.spindata)
+  for i = 1, 4 do
+    self["myProperty" .. self.m_allShowTabDataList[1][1].cfg.m_Type][i] = self.m_allShowTabDataList[1][1].cfg["m_Property" .. i .. "Num"]
+  end
+  for i = 1, 4 do
+    local value = 0
+    for j = 1, 4 do
+      value = value + self["myProperty" .. j][i]
+    end
+    self.myProperty[i] = value
+  end
   self:FreshProperty()
   UILuaHelper.SetUITexture(self.m_img_bg1_Image, MapBgDic[self.lvconfig.m_MapType][1])
   UILuaHelper.SetUITexture(self.m_img_bg2_Image, MapBgDic[self.lvconfig.m_MapType][2])
+end
+
+function Form_ActivityMinigame108Assemble:InitProperty()
 end
 
 function Form_ActivityMinigame108Assemble:FreshProperty()

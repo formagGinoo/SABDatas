@@ -902,6 +902,8 @@ function Form_BattleVictory:OnBtnDataClicked()
 end
 
 function Form_BattleVictory:OnBtnlevelbgClicked()
+  self:StopAutoBattleTimer()
+  self:StopAutoBattleExit()
   if self.m_levelType ~= LevelManager.LevelType.Tower then
     return
   end

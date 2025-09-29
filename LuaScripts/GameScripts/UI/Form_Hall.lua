@@ -126,6 +126,9 @@ function Form_Hall:OnInactive()
   if self.m_bgPanelCom then
     self.m_bgPanelCom:OnInActive()
   end
+  if self.m_battlePassPanel then
+    self.m_battlePassPanel:OnInActive()
+  end
   self:CheckRecycleHeadFrameNode()
   if self.heroActTimer then
     for i, v in pairs(self.heroActTimer) do
@@ -873,7 +876,7 @@ function Form_Hall:ChangeHeroActShow()
     TimeService:KillTimer(self.ChangeActTimer)
     self.ChangeActTimer = nil
   end
-  if #self.heroAct_List == 2 then
+  if #self.heroAct_List >= 2 then
     if self.iHeroActIdx == 1 then
       UILuaHelper.PlayAnimationByName(self.m_btn_activity, "hall_activity_cut2")
       self.ChangeActTimer = TimeService:SetTimer(0.2, 1, function()
@@ -1407,7 +1410,7 @@ function Form_Hall:OnBtnleftdown06Clicked()
 end
 
 function Form_Hall:OnBtnleftdown07Clicked()
-  local openFlag, tips_id = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Circulation)
+  local openFlag, tips_id = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Career)
   if not openFlag then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tips_id)
     return

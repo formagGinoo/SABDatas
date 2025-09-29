@@ -1000,19 +1000,10 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
-    "1001015": {
-      "m_bError": null,
-      "m_ID": "1001015",
-      "m_mDesc": "\"Reserved String\"",
-      "m_SuccessAnd": null,
-      "m_ConditonSuccess": "[100]",
-      "m_FailAnd": "1",
-      "m_ConditionFail": "[1,101]"
-    },
     "1001016": {
       "m_bError": null,
       "m_ID": "1001016",
-      "m_mDesc": "\"Reserved String\"",
+      "m_mDesc": "\"Defeat \"Fallen Red Lotus,\" <#A65F30>Agares Samael</color>\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -1657,6 +1648,24 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2100061": {
+      "m_bError": null,
+      "m_ID": "2100061",
+      "m_mDesc": "\"Defeat Clive Ganelon.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100061]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2100068": {
+      "m_bError": null,
+      "m_ID": "2100068",
+      "m_mDesc": "\"Defeat Clive Ganelon.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2100068]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "2200001": {
       "m_bError": null,
       "m_ID": "2200001",
@@ -1773,6 +1782,51 @@
       "m_ConditonSuccess": "[2400008]",
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
+    },
+    "2400009": {
+      "m_bError": null,
+      "m_ID": "2400009",
+      "m_mDesc": "\"Hunt down more monsters to gain higher Hunting Points.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400010": {
+      "m_bError": null,
+      "m_ID": "2400010",
+      "m_mDesc": "\"Break the Shields as many times as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400011": {
+      "m_bError": null,
+      "m_ID": "2400011",
+      "m_mDesc": "\"Hunt down as many Werewolves as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400012": {
+      "m_bError": null,
+      "m_ID": "2400012",
+      "m_mDesc": "\"Hunt down as many Bloodborn as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400013": {
+      "m_bError": null,
+      "m_ID": "2400013",
+      "m_mDesc": "\"Fight with full strength, dealing as much DMG to enemies as possible.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[6,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
     },
     "2500001": {
       "m_bError": null,
@@ -1967,6 +2021,24 @@
       "m_bError": null,
       "m_ID": "4400005",
       "m_mDesc": "\"Use <#A65F30>Albrecht</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400006": {
+      "m_bError": null,
+      "m_ID": "4400006",
+      "m_mDesc": "\"Use <#A65F30>Fanny</color>, feel her power, and defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400007": {
+      "m_bError": null,
+      "m_ID": "4400007",
+      "m_mDesc": "\"Use <#A65F30>Genevieve</color>, witness her loyalty, and defeat all enemies.\"",
       "m_SuccessAnd": "1",
       "m_ConditonSuccess": "[1,100,101]",
       "m_FailAnd": "1",
@@ -2650,7 +2722,7 @@
     "6000812": {
       "m_bError": null,
       "m_ID": "6000812",
-      "m_mDesc": "\"Defeat the giant construct attacking the El Dorado.\"",
+      "m_mDesc": "\"Defeat the giant construct.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2759,6 +2831,114 @@
       "m_bError": null,
       "m_ID": "6000912",
       "m_mDesc": "\"Destroy the Mastermind's construct, the Formless.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001001": {
+      "m_bError": null,
+      "m_ID": "6001001",
+      "m_mDesc": "\"Defeat the gaolers in the corridor.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001002": {
+      "m_bError": null,
+      "m_ID": "6001002",
+      "m_mDesc": "\"Defeat the Church weapons from the sky.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001003": {
+      "m_bError": null,
+      "m_ID": "6001003",
+      "m_mDesc": "\"Defeat the Church weapons on the road and escape their pursuit.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001004": {
+      "m_bError": null,
+      "m_ID": "6001004",
+      "m_mDesc": "\"Defeat the provocative prisoners.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001005": {
+      "m_bError": null,
+      "m_ID": "6001005",
+      "m_mDesc": "\"Defeat the gaolers at the interrogation chamber door.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001006": {
+      "m_bError": null,
+      "m_ID": "6001006",
+      "m_mDesc": "\"Defeat the gaolers in the exercise yard.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001007": {
+      "m_bError": null,
+      "m_ID": "6001007",
+      "m_mDesc": "\"Defeat the gate gaolers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001008": {
+      "m_bError": null,
+      "m_ID": "6001008",
+      "m_mDesc": "\"Handle the pursuing gaolers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001009": {
+      "m_bError": null,
+      "m_ID": "6001009",
+      "m_mDesc": "\"Defeat the gaolers guarding the gate.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001010": {
+      "m_bError": null,
+      "m_ID": "6001010",
+      "m_mDesc": "\"Defeat all Church weapons.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001011": {
+      "m_bError": null,
+      "m_ID": "6001011",
+      "m_mDesc": "\"Defeat the gaolers guarding Fanny's door.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001012": {
+      "m_bError": null,
+      "m_ID": "6001012",
+      "m_mDesc": "\"Defeat Fanny and grant her true freedom.\"",
       "m_SuccessAnd": null,
       "m_ConditonSuccess": "[100]",
       "m_FailAnd": "1",
@@ -2971,6 +3151,15 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "10010151": {
+      "m_bError": null,
+      "m_ID": "10010151",
+      "m_mDesc": "\"Defeat Agares in his <#A65F30>Covenant Form</color>.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "10200021": {
       "m_bError": null,
       "m_ID": "10200021",
@@ -3017,5 +3206,5 @@
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_335_items"
+  "status": "processed_356_items"
 }

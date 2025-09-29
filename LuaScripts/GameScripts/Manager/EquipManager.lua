@@ -1147,7 +1147,7 @@ function EquipManager:FilterEquipByConditions(equipList, filterConditions)
     local baseId = v.iID or v.iBaseId
     if baseId and ResourceUtil:GetResourceTypeById(baseId) == ResourceUtil.RESOURCE_TYPE.EQUIPS then
       local cfg = self:GetEquipCfgByBaseId(baseId)
-      if cfg then
+      if cfg and cfg.m_Quality ~= 9 then
         local matchFlag = true
         local equipData = v.data or v.customData or v
         if not includeEnhance and __EquipFilterType[EquipManager.EquipFilterType.Enhance](equipData) then

@@ -2221,11 +2221,18 @@ Cmd_Push_Lamia_Item.Definition = {
 Cmd_Push_BaseStoreMonthlyCard = sdp.SdpStruct("Cmd_Push_BaseStoreMonthlyCard")
 Cmd_Push_BaseStoreMonthlyCard.Definition = {
   "stMonthlyCard",
+  "iCardID",
   stMonthlyCard = {
     0,
     0,
     CmdBaseStoreMonthlyCard,
     nil
+  },
+  iCardID = {
+    1,
+    0,
+    8,
+    0
   }
 }
 Cmd_Push_BaseStoreMonthlyCardRewardData = sdp.SdpStruct("Cmd_Push_BaseStoreMonthlyCardRewardData")

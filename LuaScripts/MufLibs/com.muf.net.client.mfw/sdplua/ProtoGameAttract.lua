@@ -23,6 +23,8 @@ CmdId_Attract_SetLetter_CS = 10917
 CmdId_Attract_SetLetter_SC = 10918
 CmdId_Attract_LetterSubmitItem_CS = 10919
 CmdId_Attract_LetterSubmitItem_SC = 10920
+CmdId_Attract_LoungeBond_CS = 10921
+CmdId_Attract_LoungeBond_SC = 10922
 AttractArchiveType_Archive = 1
 AttractArchiveType_Story = 2
 AttractArchiveType_Letter = 3
@@ -34,6 +36,11 @@ CouncilHeroResultType_Same = 1
 CouncilHeroResultType_NotSame = 2
 CouncilHeroResultType_Critical = 3
 CouncilHeroResultType_None = 4
+LoungeCharType_Hero = 1
+LoungeCharType_Item = 2
+LoungeBondStatus_Init = 0
+LoungeBondStatus_Unlock = 1
+LoungeBondStatus_Bond = 2
 CmdLetter = sdp.SdpStruct("CmdLetter")
 CmdLetter.Definition = {
   "iLetterId",
@@ -145,6 +152,9 @@ CmdCouncil.Definition = {
   "vFinishIssue",
   "vHero",
   "iStartTime",
+  "iConcilTimes",
+  "iConcilMonthCardTimes",
+  "vDailyFinishIssue",
   vDailyIssue = {
     0,
     0,
@@ -174,12 +184,48 @@ CmdCouncil.Definition = {
     0,
     8,
     0
+  },
+  iConcilTimes = {
+    5,
+    0,
+    8,
+    0
+  },
+  iConcilMonthCardTimes = {
+    6,
+    0,
+    8,
+    0
+  },
+  vDailyFinishIssue = {
+    7,
+    0,
+    sdp.SdpVector(8),
+    nil
+  }
+}
+CmdHeroLounge = sdp.SdpStruct("CmdHeroLounge")
+CmdHeroLounge.Definition = {
+  "iHeroId",
+  "iStatus",
+  iHeroId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iStatus = {
+    1,
+    0,
+    8,
+    0
   }
 }
 CmdAllAttract = sdp.SdpStruct("CmdAllAttract")
 CmdAllAttract.Definition = {
   "mHeroAttract",
   "stCouncil",
+  "mHeroLounge",
   mHeroAttract = {
     0,
     0,
@@ -190,6 +236,12 @@ CmdAllAttract.Definition = {
     1,
     0,
     CmdCouncil,
+    nil
+  },
+  mHeroLounge = {
+    2,
+    0,
+    sdp.SdpMap(8, CmdHeroLounge),
     nil
   }
 }
@@ -401,8 +453,22 @@ Cmd_Attract_StartCouncil_CS.Definition = {}
 Cmd_Attract_StartCouncil_SC = sdp.SdpStruct("Cmd_Attract_StartCouncil_SC")
 Cmd_Attract_StartCouncil_SC.Definition = {
   "iStartTime",
+  "iConcilTimes",
+  "iConcilMonthCardTimes",
   iStartTime = {
     0,
+    0,
+    8,
+    0
+  },
+  iConcilTimes = {
+    1,
+    0,
+    8,
+    0
+  },
+  iConcilMonthCardTimes = {
+    2,
     0,
     8,
     0
@@ -461,6 +527,10 @@ Cmd_Attract_EndCouncil_SC.Definition = {
   "iIssue",
   "iOpinion",
   "vHeroResult",
+  "iConcilTimes",
+  "iConcilMonthCardTimes",
+  "vDailyIssue",
+  "vDailyFinishIssue",
   iIssue = {
     0,
     0,
@@ -477,6 +547,30 @@ Cmd_Attract_EndCouncil_SC.Definition = {
     2,
     0,
     sdp.SdpVector(CmdCouncilHeroResult),
+    nil
+  },
+  iConcilTimes = {
+    3,
+    0,
+    8,
+    0
+  },
+  iConcilMonthCardTimes = {
+    4,
+    0,
+    8,
+    0
+  },
+  vDailyIssue = {
+    5,
+    0,
+    sdp.SdpVector(8),
+    nil
+  },
+  vDailyFinishIssue = {
+    6,
+    0,
+    sdp.SdpVector(8),
     nil
   }
 }
@@ -585,6 +679,33 @@ Cmd_Attract_LetterSubmitItem_SC.Definition = {
   },
   iQuestId = {
     2,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Attract_LoungeBond_CS = sdp.SdpStruct("Cmd_Attract_LoungeBond_CS")
+Cmd_Attract_LoungeBond_CS.Definition = {
+  "iHeroId",
+  iHeroId = {
+    0,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Attract_LoungeBond_SC = sdp.SdpStruct("Cmd_Attract_LoungeBond_SC")
+Cmd_Attract_LoungeBond_SC.Definition = {
+  "iHeroId",
+  "iStatus",
+  iHeroId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iStatus = {
+    1,
     0,
     8,
     0

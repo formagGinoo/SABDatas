@@ -80,7 +80,8 @@ SpinePlaceCfg = {
   HeroFashionStore = "fashionstore",
   HeroNewSkin = "getskin",
   SignIn10DayFace = "signin10dayface",
-  SignIn10DaySystem = "signin10daysystem"
+  SignIn10DaySystem = "signin10daysystem",
+  GrowUpGift = "growupgift"
 }
 AttrShowType = {
   Camp = 1,
@@ -164,6 +165,8 @@ function HeroManager:OnCreate()
     [HeroManager.FilterType.MoonType] = self.m_HeroSort.HeroMoonTypeFilter
   }
   self.m_circulationDic = nil
+  self.m_circulationCareerDic = {}
+  self.m_careerLocationHero = {}
   self.m_cacheCharacterCfgDic = {}
   self.m_monsterLevelTemplateCache = {}
   self.m_cacheCharacterViewModeCfgDic = {}
@@ -212,6 +215,7 @@ function HeroManager:OnInitNetwork()
   RPCS():Listen_Push_FormPower(handler(self, self.OnPushFormPower), "HeroManager")
   RPCS():Listen_Push_Hero_AddFashion(handler(self, self.OnPushHeroAddFashion), "HeroManager")
   self:ReqGetCirculation()
+  self:ReqGetCirculationCareer()
   self:ReqGetRecommendData()
 end
 
@@ -265,6 +269,7 @@ function HeroManager:OnHeroGetListSC(stHeroListData, msg)
   self.m_HeroVoice = require("Manager/ManagerPlus/HeroVoice").new()
   self.CharacterLevelIns = ConfigManager:GetConfigInsByName("CharacterLevel")
   self.GlobalSettingsIns = ConfigManager:GetConfigInsByName("GlobalSettings")
+  self.CareerLevelCharLocationIns = ConfigManager:GetConfigInsByName("CareerLevelCharLocation")
   self.CharacterLevelLockIns = ConfigManager:GetConfigInsByName("CharacterLevelLock")
   self.LvExpItemID = tonumber(self.GlobalSettingsIns:GetValue_ByName("CharacterlvEXPitem").m_Value)
   self.LvMoneyItemID = tonumber(self.GlobalSettingsIns:GetValue_ByName("CharacterlvCurrencyitem").m_Value)
@@ -588,8 +593,49 @@ function HeroManager:OnGetCirculation(stGetCirculation, msg)
   self:FreshUpdateCirculationEntryRedDot()
 end
 
+function HeroManager:ReqGetCirculationCareer()
+  local msg = MTTDProto.Cmd_Role_GetCirculationCareer_CS()
+  RPCS():Role_GetCirculationCareer(msg, handler(self, self.OnGetCirculationCareer))
+end
+
+function HeroManager:OnGetCirculationCareer(stGetCirculationCareer, msg)
+  if not stGetCirculationCareer then
+    return
+  end
+  self.m_circulationCareerDic = stGetCirculationCareer.mCirculationCareerItem or {}
+  self.m_careerLocationHero = stGetCirculationCareer.mCareerLocationHero or {}
+  self:FreshUpdateCirculationEntryRedDot()
+end
+
+function HeroManager:GetCareerLocationLock(careerID, pos)
+  local cfg = self.CareerLevelCharLocationIns:GetValue_ByCareerTypeAndLocation(careerID, pos)
+  local locked = not LevelManager:IsLevelHavePass(LevelManager.LevelType.MainLevel, cfg.m_LevelID)
+  return locked, cfg.m_LevelID
+end
+
+function HeroManager:GetLocationHeroByCareerID(careerID)
+  if not self.m_careerLocationHero[careerID] then
+    self.m_careerLocationHero[careerID] = {}
+  end
+  return self.m_careerLocationHero[careerID]
+end
+
+function HeroManager:GetAllLocationHeros()
+  local MaxResonationID = 6
+  local heroList = {}
+  for i = 1, MaxResonationID do
+    local heroCareerList = self:GetLocationHeroByCareerID(i)
+    for pos, heroID in pairs(heroCareerList) do
+      if heroID and 0 < heroID then
+        table.insert(heroList, heroID)
+      end
+    end
+  end
+  return heroList
+end
+
 function HeroManager:ReqUpgradeCirculation(typeID, itemNum)
-  if not type then
+  if not typeID then
     return
   end
   if not itemNum then
@@ -612,6 +658,60 @@ function HeroManager:OnUpgradeCirculation(stUpgradeCirculation, msg)
   local type = circulationItem.iTypeID
   self.m_circulationDic[type] = circulationItem
   self:broadcastEvent("eGameEvent_Hero_CirculationUpgrade", circulationItem)
+  self:FreshUpdateCirculationEntryRedDot()
+end
+
+function HeroManager:ReqUpgradeCirculationCareer(typeID, itemNum)
+  if not typeID then
+    return
+  end
+  if not itemNum then
+    return
+  end
+  local msg = MTTDProto.Cmd_Role_UpgradeCirculationCareer_CS()
+  msg.iCareerType = typeID
+  msg.iItemNum = itemNum
+  RPCS():Role_UpgradeCirculationCareer(msg, handler(self, self.OnUpgradeCirculationCareer))
+end
+
+function HeroManager:OnUpgradeCirculationCareer(stUpgradeCirculationCareer, msg)
+  if not stUpgradeCirculationCareer then
+    return
+  end
+  local circulationItem = stUpgradeCirculationCareer.stCirculationItem
+  if not circulationItem then
+    return
+  end
+  local type = circulationItem.iCareerType
+  self.m_circulationCareerDic[type] = circulationItem
+  self:broadcastEvent("eGameEvent_Hero_CirculationCareerUpgrade", circulationItem)
+  self:FreshUpdateCirculationEntryRedDot()
+end
+
+function HeroManager:ReqSetCirculationCareerHero(vSetList)
+  if not vSetList then
+    return
+  end
+  local msg = MTTDProto.Cmd_Role_SetCirculationCareerHero_CS()
+  msg.vSetList = vSetList
+  RPCS():Role_SetCirculationCareerHero(msg, handler(self, self.OnSetCirculationCareerHero))
+end
+
+function HeroManager:OnSetCirculationCareerHero(stSetCirculationCareer, msg)
+  if not stSetCirculationCareer then
+    return
+  end
+  local vSetList = stSetCirculationCareer.vSetList
+  for _, info in pairs(vSetList) do
+    local iCareerType = info.iCareerType
+    local iLocation = info.iLocation
+    local iHeroID = info.iHeroID
+    if not self.m_careerLocationHero[iCareerType] then
+      self.m_careerLocationHero[iCareerType] = {}
+    end
+    self.m_careerLocationHero[iCareerType][iLocation] = iHeroID
+  end
+  self:broadcastEvent("eGameEvent_Hero_SetCirculationCareerHero", stSetCirculationCareer)
   self:FreshUpdateCirculationEntryRedDot()
 end
 
@@ -839,6 +939,27 @@ function HeroManager:GetHeroServerList()
     end
   end
   return tempHeroList
+end
+
+function HeroManager:GetHeroMaxLevel(heroID)
+  if not heroID then
+    return
+  end
+  local heroData = self:GetHeroDataByID(heroID)
+  local characterCfg = self:GetHeroConfigByID(heroID)
+  local limitBreakTemplateID = characterCfg.m_Quality
+  local iBreak = heroData.serverData.iBreak
+  local CharacterLimitBreakIns = ConfigManager:GetConfigInsByName("CharacterLimitBreak")
+  if not CharacterLimitBreakIns then
+    return 0
+  end
+  local allCharacterLimitBreaks = CharacterLimitBreakIns:GetValue_ByLimitBreakTemplate(limitBreakTemplateID)
+  for _, breakCfg in pairs(allCharacterLimitBreaks) do
+    if breakCfg.m_LimitBreakLevel == iBreak then
+      return breakCfg.m_MaxLevel
+    end
+  end
+  return 0
 end
 
 function HeroManager:GetHeroDataByID(heroID)
@@ -1228,6 +1349,22 @@ function HeroManager:SetFormData(levelType, levelSubType, formatData)
   self.m_cacheFormDic[levelType][levelSubType] = formatData
 end
 
+function HeroManager:GetCirculationCareerLvByID(careerID)
+  if not careerID then
+    return
+  end
+  local circulationItem = self.m_circulationCareerDic[careerID] or {}
+  return circulationItem.iLevel or 0
+end
+
+function HeroManager:GetCirculationCareerExpByID(careerID)
+  if not careerID then
+    return
+  end
+  local circulationItem = self.m_circulationCareerDic[careerID] or {}
+  return circulationItem.iExp or 0
+end
+
 function HeroManager:GetCirculationLvByID(circulationID)
   if not circulationID then
     return
@@ -1291,13 +1428,31 @@ function HeroManager:GetCirculationListByHeroID(heroID)
   return circulationTab
 end
 
+function HeroManager:GetCirculationCareerByHeroID(heroID)
+  local heroCfg = self:GetHeroConfigByID(heroID)
+  if not heroCfg then
+    return
+  end
+  local circulationCareerTab = {}
+  local lv = self:GetCirculationCareerLvByID(heroCfg.m_Career)
+  circulationCareerTab.lvInfo = {
+    careerID = heroCfg.m_Career,
+    level = lv
+  }
+  circulationCareerTab.locatedHeros = self:GetAllLocationHeros()
+  return circulationCareerTab
+end
+
 function HeroManager:FreshUpdateCirculationEntryRedDot()
   if not self.m_circulationDic then
     return
   end
   local redDotNum = self:IsCirculationEntryHaveRedDot()
+  if redDotNum == 0 then
+    redDotNum = self:IsCirculationCareerEntryHaveRedDot()
+  end
   self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
-    redDotKey = RedDotDefine.ModuleType.HeroCirculationEntry,
+    redDotKey = RedDotDefine.ModuleType.HeroCareerEntry,
     count = redDotNum
   })
 end
@@ -1312,6 +1467,23 @@ function HeroManager:IsCirculationEntryHaveRedDot()
   local redDotNum = 0
   for circulationID, v in pairs(allCfg) do
     if 0 < self:IsCirculationIDHaveRedDot(circulationID) then
+      redDotNum = 1
+      return redDotNum
+    end
+  end
+  return redDotNum
+end
+
+function HeroManager:IsCirculationCareerEntryHaveRedDot()
+  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Career)
+  if isOpen ~= true then
+    return 0
+  end
+  local redDotNum = 0
+  local CareerCfgIns = ConfigManager:GetConfigInsByName("CharacterCareer")
+  local cfgs = CareerCfgIns:GetAll()
+  for i, v in pairs(cfgs) do
+    if 0 < self:IsCirculationCareerIDHaveRedDot(v.m_CareerID) then
       redDotNum = 1
       return redDotNum
     end
@@ -1352,6 +1524,99 @@ function HeroManager:IsCirculationIDHaveRedDot(circulationID)
         conditionNum = self:GetCirculationLvByID(HeroManager.CirculationRootID)
       end
       if conditionNum < circulationCfg.m_SynchronizeLevel then
+        return 0
+      else
+        return 1
+      end
+    else
+      return 1
+    end
+  end
+  return 0
+end
+
+function HeroManager:IsCirculationCareerTotalRedDot()
+  for careerID = 1, 6 do
+    local lvRedNum = self:IsCirculationCareerIDHaveRedDot(careerID)
+    if 0 < lvRedNum then
+      return lvRedNum
+    end
+  end
+  return 0
+end
+
+function HeroManager:IsCirculationCareerIDHaveRedDot(careerID)
+  local lvRedNum = self:IsCareerLevelIDHaveRedDot(careerID)
+  if 0 < lvRedNum then
+    return lvRedNum
+  end
+  return self:IsCareerLocationIDHaveRedDot(careerID)
+end
+
+function HeroManager:IsCareerLocationIDHaveRedDot(careerID)
+  local emptyNum, equipNum = self:GetEmptyLocationNum(careerID)
+  if emptyNum < 1 then
+    return 0
+  end
+  local heroNum = 0
+  local filterHeros = self:GetHeroList()
+  for i, v in ipairs(filterHeros) do
+    if v.characterCfg.m_Career == careerID then
+      heroNum = heroNum + 1
+      if 0 < heroNum - equipNum then
+        return 1
+      end
+    end
+  end
+  return 0
+end
+
+function HeroManager:GetEmptyLocationNum(careerID)
+  local emptyNum = 0
+  local equipNum = 0
+  local MAX_SLOT_NUM = 5
+  local locationHeros = self:GetLocationHeroByCareerID(careerID)
+  for i = 1, MAX_SLOT_NUM do
+    if not locationHeros[i] then
+      local lock, _ = self:GetCareerLocationLock(careerID, i)
+      if not lock then
+        emptyNum = emptyNum + 1
+      end
+    else
+      equipNum = equipNum + 1
+    end
+  end
+  return emptyNum, equipNum
+end
+
+function HeroManager:IsCareerLevelIDHaveRedDot(careerID)
+  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Career)
+  if isOpen ~= true then
+    return 0
+  end
+  if not careerID then
+    return 0
+  end
+  local CareerLevelValueIns = ConfigManager:GetConfigInsByName("CareerLevelValue")
+  local circulationCareerLv = self:GetCirculationCareerLvByID(careerID) or 0
+  if circulationCareerLv < 0 then
+    return 0
+  end
+  local circulationcareerCfg = CareerLevelValueIns:GetValue_ByCareerTypeAndLevel(careerID, circulationCareerLv)
+  if circulationcareerCfg:GetError() == true then
+    return 0
+  end
+  local upAllExp = circulationcareerCfg.m_Exp
+  if upAllExp <= 0 then
+    return 0
+  end
+  local curExp = self:GetCirculationCareerExpByID(careerID) or 0
+  local upNeedExp = upAllExp - curExp
+  local haveItemNum = ItemManager:GetItemNum(circulationcareerCfg.m_ItemID)
+  if upNeedExp <= haveItemNum then
+    if circulationcareerCfg.m_SynchronizeLevel ~= 0 then
+      local conditionNum = InheritManager:GetInheritLevel()
+      if conditionNum < circulationcareerCfg.m_SynchronizeLevel then
         return 0
       else
         return 1
@@ -1559,6 +1824,15 @@ function HeroManager:GetSkillDescriptionBySkillIdAndLv(skillId, skillLv, showNex
     skillParams[#skillParams + 1] = value
   end
   return string.gsubnumberreplace(des, table.unpack(skillParams))
+end
+
+function HeroManager:GetSkillTypeById(skillId)
+  local skillCfg = self:GetSkillConfigById(skillId)
+  if not skillCfg then
+    log.error("Cannot Find SkillConfig" .. skillId)
+    return nil
+  end
+  return skillCfg.m_SkillType
 end
 
 function HeroManager:GetSkillMaxLevelById(skillGroupId, skillId)

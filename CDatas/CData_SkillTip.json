@@ -121,11 +121,17 @@
       "m_mName": "\"Planar Regression\"",
       "m_mDesc": "\"Basic ATK turns into boomerang attacks, targeting enemies within the Projected Plane.\""
     },
+    "20680": {
+      "m_bError": null,
+      "m_ID": "20680",
+      "m_mName": "\"War Golem\"",
+      "m_mDesc": "\"Summon (1 max). Cannot move, and is not prioritized as a target. Performs Basic ATK against nearby enemies, triggering Special after 4 Basic ATKs that deals DMG to enemies within range and Stunning them. Upgrade Genevieve's Basic ATK and Special Skill to increase War Golem's Basic ATK and Special DMG.\""
+    },
     "20690": {
       "m_bError": null,
       "m_ID": "20690",
       "m_mName": "\"Overdrive\"",
-      "m_mDesc": "\"When above 50% Bloodsoul, can be cast even with insufficient Bloodsoul. If there is extra Bloodsoul when casting, enters Overdrive, during which any Ultimates costing over 0 cannot be cast, however Bloodsoul recovery rate is increased by 20%. Overload ends when Bloodsoul recovers to 0.\""
+      "m_mDesc": "\"Ultimates can be cast when current Bloodsoul exceeds 50% of their cost, even if insufficient. Overdrive is triggered when casting an Ultimate that creates a Bloodsoul deficit. During Overdrive, only Ultimates with 0 Bloodsoul cost can be used, but the Bloodsoul recovery rate increases by 20%. Overdrive ends when Bloodsoul restores to 0.\""
     },
     "30130": {
       "m_bError": null,
@@ -134,5 +140,5 @@
       "m_mDesc": "\"A summon that performs Basic ATKs.\""
     }
   },
-  "status": "processed_22_items"
+  "status": "processed_23_items"
 }

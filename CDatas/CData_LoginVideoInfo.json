@@ -1,0 +1,22 @@
+{
+  "className": "CData_LoginVideoInfo",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_VideoID": "1",
+      "m_Type": null,
+      "m_VideoName": "\"UI_Login_Main\"",
+      "m_PrefabName": "\"ui_panel_loginnew\"",
+      "m_Audio": "1"
+    },
+    "2": {
+      "m_bError": null,
+      "m_VideoID": "2",
+      "m_Type": "1",
+      "m_VideoName": "\"UI_Login_10\"",
+      "m_PrefabName": "\"ui_panel_loginnew\"",
+      "m_Audio": "387"
+    }
+  },
+  "status": "processed_2_items"
+}

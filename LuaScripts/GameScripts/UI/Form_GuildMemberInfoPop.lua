@@ -5,6 +5,7 @@ end
 
 function Form_GuildMemberInfoPop:AfterInit()
   self.super.AfterInit(self)
+  self.m_playerHeadCom = self:createPlayerHead(self.m_circle_head)
 end
 
 function Form_GuildMemberInfoPop:OnActive()
@@ -66,8 +67,7 @@ function Form_GuildMemberInfoPop:RefreshUI()
   ResourceUtil:CreateGuildPostIconByPost(self.m_img_post_Image, self.m_memberInfo.iPost)
   self.m_txt_guild_uid_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(100053), self.m_memberInfo.stRoleId.iUid)
   self:ShowBtn()
-  local playerHeadCom = self:createPlayerHead(self.m_circle_head)
-  playerHeadCom:SetPlayerHeadInfo(self.m_memberInfo)
+  self.m_playerHeadCom:SetPlayerHeadInfo(self.m_memberInfo)
 end
 
 function Form_GuildMemberInfoPop:ShowBtn()
@@ -90,7 +90,7 @@ function Form_GuildMemberInfoPop:ShowBtn()
         local endTime = transferEffectTime
         local lastTime = endTime - TimeUtil:GetServerTimeS()
         local timeCfgText = ConfigManager:GetCommonTextById(20212)
-        self.m_txt_stopchangetips_Text.text = string.gsubnumberreplace(timeCfgText, TimeUtil:SecondsToFormatStrDHOrHMS(lastTime))
+        self.m_txt_stopchangetips_Text.text = string.gsubnumberreplace(timeCfgText, TimeUtil:SecondsToFormatCNStr4(lastTime))
         if not self.m_calmDownTimer then
           self.m_calmDownTimer = TimeService:SetTimer(1, -1, function()
             lastTime = endTime - TimeUtil:GetServerTimeS()
@@ -100,7 +100,7 @@ function Form_GuildMemberInfoPop:ShowBtn()
               self:CloseForm()
               return
             end
-            self.m_txt_stopchangetips_Text.text = string.gsubnumberreplace(timeCfgText, TimeUtil:SecondsToFormatStrDHOrHMS(lastTime))
+            self.m_txt_stopchangetips_Text.text = string.gsubnumberreplace(timeCfgText, TimeUtil:SecondsToFormatCNStr4(lastTime))
           end)
         end
       else

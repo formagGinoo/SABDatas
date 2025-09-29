@@ -7,6 +7,7 @@ local DialogueType = {
   End = 2,
   Solo = 3
 }
+local iDefaultMaxTimes = 1
 
 function Form_CastleMeetingrRoom:SetInitParam(param)
 end
@@ -47,6 +48,7 @@ function Form_CastleMeetingrRoom:AddEventListeners()
   self:addEventListener("eGameEvent_LoadCouncilHallRoleFinish", handler(self, self.OnLoadCouncilHallHeroEnd))
   self:addEventListener("eGameEvent_OnRolePlayDialogue", handler(self, self.OnHeroSaying))
   self:addEventListener("eGameEvent_OnAttract_GetAttract", handler(self, self.OnDailyReset))
+  self:addEventListener("eGameEvent_OnAttract_EndCouncil", handler(self, self.StartEndFlow))
 end
 
 function Form_CastleMeetingrRoom:RemoveAllEventListeners()
@@ -78,11 +80,26 @@ function Form_CastleMeetingrRoom:FreshData()
     self.m_csui.m_param = nil
   end
   local stCouncil = CouncilHallManager:GetCouncilData()
-  self.vDailyIssue = stCouncil.vDailyIssue
+  self.vDailyIssue = stCouncil.vDailyIssue or {}
+  self.vDailyFinishIssue = stCouncil.vDailyFinishIssue or {}
+  for _, issue in ipairs(self.vDailyFinishIssue) do
+    for i, v in ipairs(self.vDailyIssue) do
+      if issue == v then
+        table.remove(self.vDailyIssue, i)
+        break
+      end
+    end
+  end
+  if #self.vDailyIssue == 0 then
+    self.vDailyIssue[1] = self.vDailyFinishIssue[1]
+  end
   self.iChosenIssue = stCouncil.iChosenIssue
   self.vHero = stCouncil.vHero
+  self.iConcilTimes = stCouncil.iConcilTimes or 0
+  self.iConcilMonthCardTimes = stCouncil.iConcilMonthCardTimes or 0
+  self.bIsPrivilege, self.vPrivilegeData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.CouncilHallFreeTimes)
+  self.bCanStartCouncil = CouncilHallManager:GetCouncilHallCanStartCouncil()
   self.curIssueIdx = 1
-  self.curIssue = self.iChosenIssue and self.iChosenIssue > 0 and self.iChosenIssue or self.vDailyIssue[self.curIssueIdx]
 end
 
 function Form_CastleMeetingrRoom:FreshUI()
@@ -91,6 +108,7 @@ function Form_CastleMeetingrRoom:FreshUI()
 end
 
 function Form_CastleMeetingrRoom:ResetUI()
+  self.m_meeting_node:SetActive(true)
   self.m_pnl_meetingentered:SetActive(true)
   self.m_pnl_meetingstart:SetActive(false)
   self.m_pnl_invitewaiting:SetActive(false)
@@ -109,16 +127,18 @@ function Form_CastleMeetingrRoom:ResetUI()
 end
 
 function Form_CastleMeetingrRoom:FreshIssueInfo()
-  if self.iChosenIssue and self.iChosenIssue > 0 then
+  if not self.bCanStartCouncil then
     self.m_btn_refesh:SetActive(false)
     self.m_btn_end:SetActive(true)
     self.m_btn_chooserole:SetActive(false)
     self.m_btn_start_grey:SetActive(true)
     self.m_btn_start_normal:SetActive(false)
+    self.m_img_privilege:SetActive(false)
   else
     self.m_btn_refesh:SetActive(true)
     self.m_btn_end:SetActive(false)
     self.m_btn_chooserole:SetActive(true)
+    self.m_img_privilege:SetActive(self.bIsPrivilege and self.vPrivilegeData[1][1] - self.iConcilMonthCardTimes > 0)
     if self.vHero and 0 < #self.vHero then
       self.m_btn_start_grey:SetActive(false)
       self.m_btn_start_normal:SetActive(true)
@@ -126,7 +146,9 @@ function Form_CastleMeetingrRoom:FreshIssueInfo()
       self.m_btn_start_grey:SetActive(true)
       self.m_btn_start_normal:SetActive(false)
     end
+    self.iChosenIssue = nil
   end
+  self.curIssue = self.iChosenIssue and 0 < self.iChosenIssue and self.iChosenIssue or self.vDailyIssue[self.curIssueIdx]
   local cfg = CouncilHallManager:GetCouncilHallIssueCfgByID(self.curIssue)
   self.m_txt_meetingcontent_Text.text = cfg.m_mIssue
   self.m_txt_meetingcontent02_Text.text = cfg.m_mIssue
@@ -134,6 +156,16 @@ function Form_CastleMeetingrRoom:FreshIssueInfo()
   self.m_txt_title_Text.text = cfg.m_mAgreeText
   self.m_txt_title02_Text.text = cfg.m_mNeutralText
   self.m_txt_title03_Text.text = cfg.m_mDisgreeText
+  if self.bIsPrivilege then
+    self.m_mid_img:SetActive(true)
+    self.m_privilege_num:SetActive(true)
+    local privilegeMaxTimes = self.vPrivilegeData[1][1] or 0
+    self.m_privilege_num_Text.text = privilegeMaxTimes - self.iConcilMonthCardTimes .. "/" .. (self.bIsPrivilege and self.vPrivilegeData[1][1] or 0)
+  else
+    self.m_mid_img:SetActive(false)
+    self.m_privilege_num:SetActive(false)
+  end
+  self.m_meeting_num_Text.text = iDefaultMaxTimes - self.iConcilTimes .. "/" .. iDefaultMaxTimes
 end
 
 function Form_CastleMeetingrRoom:SetHeroMessageShow(hero_id)
@@ -186,6 +218,7 @@ function Form_CastleMeetingrRoom:StartDialogue()
   self.m_pnl_meetingentered:SetActive(false)
   self.m_pnl_meetingstart:SetActive(true)
   self.m_img_bg_meeing:SetActive(true)
+  self.m_meeting_node:SetActive(false)
   self.bIsdialguing = true
   self.timer = TimeService:SetTimer(2, 1, function()
     self:PlayText(DialogueType.Start)
@@ -323,7 +356,7 @@ function Form_CastleMeetingrRoom:RqsEndCouncil(councilOpinionType)
     local m_oldRank = m_curShowHeroData.serverData.iAttractRank
     self.mOldRankList[hero_id] = m_oldRank
   end
-  CouncilHallManager:RqsEndCouncil(self.curIssue, councilOpinionType, handler(self, self.StartEndFlow))
+  CouncilHallManager:RqsEndCouncil(self.curIssue, councilOpinionType)
   self.m_meeting_dialogue:SetActive(false)
 end
 
@@ -346,6 +379,8 @@ function Form_CastleMeetingrRoom:StartEndFlow(vHeroResult)
       }
     end
   end
+  self.bIsdialguing = false
+  self:OnDailyReset()
 end
 
 function Form_CastleMeetingrRoom:OnBackClk()
@@ -433,11 +468,11 @@ function Form_CastleMeetingrRoom:OnBtnstartnormalClicked()
 end
 
 function Form_CastleMeetingrRoom:OnBtnstartgreyClicked()
-  if self.iChosenIssue and self.iChosenIssue > 0 then
+  if not self.bCanStartCouncil then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(47002))
     return
   end
-  if not self.vHero or 0 >= #self.vHero then
+  if not self.vHero or #self.vHero <= 0 then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, ConfigManager:GetClientMessageTextById(47001))
     return
   end

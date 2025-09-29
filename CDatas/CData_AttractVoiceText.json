@@ -2052,7 +2052,7 @@
           "m_TextId": "1",
           "m_NextId": null,
           "m_mText": "\"The count has increased.\"",
-          "m_voice": "\"乔伊斯0070_battle_boost01_60210\""
+          "m_voice": "\"Play_vo_20070_battle_boost01\""
         }
       }
     },
@@ -2501,7 +2501,7 @@
           "m_VoiceId": "2008013",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Self: One's own abilities is also important.\"",
+          "m_mText": "\"Self: One's own abilities are also important.\"",
           "m_voice": "\"Play_vo_20080_system_transfusion\""
         }
       }
@@ -9241,6 +9241,336 @@
         }
       }
     },
+    "2032001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Repent for your sins!\"",
+          "m_voice": "\"Play_vo_20320_battle_maxskill01\""
+        }
+      }
+    },
+    "2032002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Welcome to my garden of pain.\"",
+          "m_voice": "\"Play_vo_20320_battle_skill01\""
+        }
+      }
+    },
+    "2032003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"If only… I could see you once more…\"",
+          "m_voice": "\"Play_vo_20320_battle_death\""
+        }
+      }
+    },
+    "2032004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Allow me to grant you, the sweetest death.\"",
+          "m_voice": "\"Play_vo_20320_battle_array\""
+        }
+      }
+    },
+    "2032005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ah… I bathe in the radiance of the divine.\"",
+          "m_voice": "\"Play_vo_20320_battle_stagewin\""
+        }
+      }
+    },
+    "2032006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hush… feel my presence with your body.\"",
+          "m_voice": "\"Play_vo_20320_system_show\""
+        }
+      }
+    },
+    "2032007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Our struggle for power never ends. Only death can shatter the illusion.\"",
+          "m_voice": "\"Play_vo_20320_system_greet\""
+        }
+      }
+    },
+    "2032008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I can still endure more.\"",
+          "m_voice": "\"Play_vo_20320_system_levelup\""
+        }
+      }
+    },
+    "2032009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The pain you bring is sweet, like honey.\"",
+          "m_voice": "\"Play_vo_20320_system_breakthrough\""
+        }
+      }
+    },
+    "2032010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I obey your command.\"",
+          "m_voice": "\"Play_vo_20320_system_dispatch\""
+        }
+      }
+    },
+    "2032011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"More… I need more.\"",
+          "m_voice": "\"Play_vo_20320_system_idle\""
+        }
+      }
+    },
+    "2032012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A strange sensation surges within me…\"",
+          "m_voice": "\"Play_vo_20320_system_transfusion\""
+        }
+      }
+    },
+    "2032013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Is this a reward… or my punishment?\"",
+          "m_voice": "\"Play_vo_20320_system_gift01\""
+        }
+      }
+    },
+    "2032014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A new toy? Do tell me, what new games have you been fantasizing about?\"",
+          "m_voice": "\"Play_vo_20320_system_gift02\""
+        }
+      }
+    },
+    "2032015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"From these wounds flows all that you've given me.\"",
+          "m_voice": "\"Play_vo_20320_system_affinityup\""
+        }
+      }
+    },
+    "2032016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This devotion could bring the world to ruin. And it's all yours to take.\"",
+          "m_voice": "\"Play_vo_20320_system_affinitymax\""
+        }
+      }
+    },
+    "2032017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Pain reveals our true colors… don't you agree?\"",
+          "m_voice": "\"Play_vo_20320_system_tapgeneric01\""
+        }
+      }
+    },
+    "2032018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I like the feel of your fingers.\"",
+          "m_voice": "\"Play_vo_20320_system_tapgeneric02\""
+        }
+      }
+    },
+    "2032019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's still daytime...\"",
+          "m_voice": "\"Play_vo_20320_system_taphead01\""
+        }
+      }
+    },
+    "2032020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My hair... my cheek... will you continue...?\"",
+          "m_voice": "\"Play_vo_20320_system_taphead02\""
+        }
+      }
+    },
+    "2032021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Maybe I should lock you up.\"",
+          "m_voice": "\"Play_vo_20320_system_tapsp01\""
+        }
+      }
+    },
+    "2032022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2032022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's only us here now. You can come closer.\"",
+          "m_voice": "\"Play_vo_20320_system_tapsp02\""
+        }
+      }
+    },
     "2033001": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -15221,7 +15551,7 @@
           "m_VoiceId": "2059003",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Is this were 'longing' ends...\"",
+          "m_mText": "\"Is this where 'longing' ends...\"",
           "m_voice": "\"Play_vo_20590_battle_death\""
         }
       }
@@ -15326,7 +15656,7 @@
           "m_VoiceId": "2059010",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"I've been meaning to stretch my legs. Let's see how the world’s changed.\"",
+          "m_mText": "\"I've been meaning to stretch my legs. Let's see how the world's changed.\"",
           "m_voice": "\"Play_vo_20590_system_dispatch\""
         }
       }
@@ -15641,7 +15971,7 @@
           "m_VoiceId": "2060009",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"Perhaps now is the time to seek out that solution.\"",
+          "m_mText": "\"Perhaps now is the time to seek out that \"solution.\"\"",
           "m_voice": "\"Play_vo_20600_system_breakthrough\""
         }
       }
@@ -17746,6 +18076,336 @@
         }
       }
     },
+    "2068001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Stand as my accomplice.\"",
+          "m_voice": "\"Play_vo_20680_battle_maxskill01\""
+        }
+      }
+    },
+    "2068002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Your end is near!\"",
+          "m_voice": "\"Play_vo_20680_battle_skill01\""
+        }
+      }
+    },
+    "2068003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Sacrifice... for the greater good...\"",
+          "m_voice": "\"Play_vo_20680_battle_death\""
+        }
+      }
+    },
+    "2068004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The plan is laid—now we advance.\"",
+          "m_voice": "\"Play_vo_20680_battle_array\""
+        }
+      }
+    },
+    "2068005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A battle worthy of record.\"",
+          "m_voice": "\"Play_vo_20680_battle_stagewin\""
+        }
+      }
+    },
+    "2068006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The pleasure is mine.\"",
+          "m_voice": "\"Play_vo_20680_system_show\""
+        }
+      }
+    },
+    "2068007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Pray that time encroaches no further…\"",
+          "m_voice": "\"Play_vo_20680_system_greet\""
+        }
+      }
+    },
+    "2068008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Clear the field. This game is set to my design.\"",
+          "m_voice": "\"Play_vo_20680_system_levelup\""
+        }
+      }
+    },
+    "2068009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Victory is ours.\"",
+          "m_voice": "\"Play_vo_20680_system_breakthrough\""
+        }
+      }
+    },
+    "2068010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Your campaign is mine to serve.\"",
+          "m_voice": "\"Play_vo_20680_system_dispatch\""
+        }
+      }
+    },
+    "2068011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Shall I remind you of your next move?\"",
+          "m_voice": "\"Play_vo_20680_system_idle\""
+        }
+      }
+    },
+    "2068012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A power that matches my own.\"",
+          "m_voice": "\"Play_vo_20680_system_transfusion\""
+        }
+      }
+    },
+    "2068013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Not a trophy of war, but a gift... This is unexpected.\"",
+          "m_voice": "\"Play_vo_20680_system_gift01\""
+        }
+      }
+    },
+    "2068014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Come, let us carve a new history together.\"",
+          "m_voice": "\"Play_vo_20680_system_gift02\""
+        }
+      }
+    },
+    "2068015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Care for a match?\"",
+          "m_voice": "\"Play_vo_20680_system_affinityup\""
+        }
+      }
+    },
+    "2068016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The king and queen… inseparable, through every game.\"",
+          "m_voice": "\"Play_vo_20680_system_affinitymax\""
+        }
+      }
+    },
+    "2068017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Such conduct is unbecoming of a gentleman.\"",
+          "m_voice": "\"Play_vo_20680_system_tapgeneric01\""
+        }
+      }
+    },
+    "2068018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"To love is to be vulnerable. I never wished for it, and yet…\"",
+          "m_voice": "\"Play_vo_20680_system_tapgeneric02\""
+        }
+      }
+    },
+    "2068019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"We have not reached that level of trust.\"",
+          "m_voice": "\"Play_vo_20680_system_taphead01\""
+        }
+      }
+    },
+    "2068020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You would brush my hair...? Thank you.\"",
+          "m_voice": "\"Play_vo_20680_system_taphead02\""
+        }
+      }
+    },
+    "2068021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Clearly, you require instruction in noble conduct.\"",
+          "m_voice": "\"Play_vo_20680_system_tapsp01\""
+        }
+      }
+    },
+    "2068022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2068022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My scars? When there is time, I’ll share their stories with you.\"",
+          "m_voice": "\"Play_vo_20680_system_tapsp02\""
+        }
+      }
+    },
     "2069001": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -18707,5 +19367,5 @@
       }
     }
   },
-  "status": "processed_1247_items"
+  "status": "processed_1291_items"
 }

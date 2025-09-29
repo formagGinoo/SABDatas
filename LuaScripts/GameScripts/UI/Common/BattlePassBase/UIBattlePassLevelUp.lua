@@ -38,6 +38,7 @@ function UIBattlePassLevelUp:FreshData()
     self.m_isReachMax = self.m_stActivity:ReachMaxLevel()
     self.m_curBuyStatus = self.m_stActivity:GetBuyStatus()
     self.m_hasAdvanced = self.m_stActivity:GetBattlePassHasAdvance()
+    self.m_iType = tParam.iType
     self:FreshUpItemDataList()
     if self.m_hasAdvanced then
       self:FreshDownItemDataList()
@@ -175,6 +176,15 @@ function UIBattlePassLevelUp:FreshUpItemDataList()
   self.m_upItemDataList = {}
   if self.m_isReachMax then
     self.m_upItemDataList = self:GetAllPaidRewardItemDataList()
+  elseif self.m_iType then
+    if self.m_iType == 1 then
+      self.m_upItemDataList = self:GetAllFinalFreeAndAllPaidRewardItemDataList()
+      LocalDataManager:SetIntSimple("BattlePassBuyTipsEnd" .. self.m_stActivity:getID(), 1)
+    else
+      _, self.m_upItemDataList = self.m_stActivity:GetBPUnLockReward()
+      LocalDataManager:SetIntSimple("BattlePassRewardTipsEnd" .. self.m_stActivity:getID(), 1)
+    end
+    self:broadcastEvent("eGameEvent_Activity_BattlePass_RedRefresh", self.m_stActivity:getID())
   elseif self.m_curBuyStatus == BattlePassBuyStatus.Free then
     self.m_upItemDataList = self:GetAllFinalFreeAndAllPaidRewardItemDataList()
   elseif self.m_curBuyStatus == BattlePassBuyStatus.Paid then
@@ -234,8 +244,6 @@ function UIBattlePassLevelUp:FreshUI()
     closeFormLevel = BattlePassBuyStatus.Advanced
   end
   if self.m_curBuyStatus == closeFormLevel then
-    self:CloseForm()
-    return
   end
   self:FreshUpRewardItems()
   if not utils.isNull(self.m_pnl_list2) then
@@ -249,20 +257,42 @@ end
 
 function UIBattlePassLevelUp:FreshTypeUIShow()
   local isReachMax = self.m_isReachMax
-  UILuaHelper.SetActive(self.m_img_bg1, isReachMax)
-  UILuaHelper.SetActive(self.m_img_bg2, not isReachMax)
-  UILuaHelper.SetActive(self.m_z_txt_leveluptitle1, isReachMax)
-  UILuaHelper.SetActive(self.m_z_txt_leveluptitle2, not isReachMax)
-  UILuaHelper.SetActive(self.m_z_txt_levelnow1, isReachMax)
-  UILuaHelper.SetActive(self.m_z_txt_levelnow2, not isReachMax)
+  if not self.m_iType then
+    UILuaHelper.SetActive(self.m_img_bg1, isReachMax)
+    UILuaHelper.SetActive(self.m_img_bg2, not isReachMax)
+    UILuaHelper.SetActive(self.m_z_txt_leveluptitle1, isReachMax)
+    UILuaHelper.SetActive(self.m_z_txt_leveluptitle2, not isReachMax)
+    UILuaHelper.SetActive(self.m_z_txt_levelnow1, isReachMax)
+    UILuaHelper.SetActive(self.m_z_txt_levelnow2, not isReachMax)
+    self.m_z_txt_leveluptitle3:SetActive(false)
+    self.m_z_txt_levelnow3:SetActive(false)
+    self.m_z_txt_leveluptitle4:SetActive(false)
+    self.m_z_txt_levelnow4:SetActive(false)
+  else
+    UILuaHelper.SetActive(self.m_img_bg1, true)
+    UILuaHelper.SetActive(self.m_img_bg2, false)
+    self.m_z_txt_leveluptitle3:SetActive(self.m_iType == 1)
+    self.m_z_txt_levelnow3:SetActive(self.m_iType == 1)
+    self.m_z_txt_leveluptitle4:SetActive(self.m_iType == 2)
+    self.m_z_txt_levelnow4:SetActive(self.m_iType == 2)
+    UILuaHelper.SetActive(self.m_z_txt_leveluptitle1, false)
+    UILuaHelper.SetActive(self.m_z_txt_leveluptitle2, false)
+    UILuaHelper.SetActive(self.m_z_txt_levelnow1, false)
+    UILuaHelper.SetActive(self.m_z_txt_levelnow2, false)
+  end
+  if self.m_iType and self.m_iType == 2 then
+    UILuaHelper.SetActive(self.m_btn_buyexp, true)
+    UILuaHelper.SetActive(self.m_btn_confirm, false)
+    UILuaHelper.SetActive(self.m_btn_price, false)
+  else
+    UILuaHelper.SetActive(self.m_btn_buyexp, false)
+    UILuaHelper.SetActive(self.m_btn_confirm, isReachMax and self.m_hasAdvanced)
+    UILuaHelper.SetActive(self.m_btn_price, not isReachMax or not self.m_hasAdvanced)
+  end
   UILuaHelper.SetActive(self.m_z_txt_levelother1, isReachMax)
   UILuaHelper.SetActive(self.m_z_txt_levelother2, not isReachMax)
-  UILuaHelper.SetActive(self.m_img_bg1, isReachMax)
-  UILuaHelper.SetActive(self.m_img_bg2, not isReachMax)
   UILuaHelper.SetActive(self.m_item_level10, not isReachMax)
   UILuaHelper.SetChildIndex(self.m_item_level10, -1)
-  UILuaHelper.SetActive(self.m_btn_confirm, isReachMax and self.m_hasAdvanced)
-  UILuaHelper.SetActive(self.m_btn_price, not isReachMax or not self.m_hasAdvanced)
   if self.m_hasAdvanced then
     if not isReachMax then
       local priceNum = 0
@@ -412,6 +442,16 @@ function UIBattlePassLevelUp:OnBtnquitClicked()
     return
   end
   self:CloseForm()
+end
+
+function UIBattlePassLevelUp:OnBtnbuyexpClicked()
+  if not self.m_stActivity then
+    return
+  end
+  self:CloseForm()
+  StackFlow:Push(UIDefines.ID_FORM_BATTLEPASSLEVELUPPOP, {
+    stActivity = self.m_stActivity
+  })
 end
 
 function UIBattlePassLevelUp.SortComparator(a, b)

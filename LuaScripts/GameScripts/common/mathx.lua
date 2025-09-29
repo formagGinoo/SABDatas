@@ -189,3 +189,60 @@ function math.ispointequal(pt1, pt2)
   end
   return false
 end
+
+local sqrt2 = math.sqrt(2) / 2
+local dir8 = {
+  [0] = {x = 0, y = 1},
+  [45] = {x = sqrt2, y = sqrt2},
+  [90] = {x = 1, y = 0},
+  [135] = {
+    x = sqrt2,
+    y = -sqrt2
+  },
+  [180] = {x = 0, y = -1},
+  [225] = {
+    x = -sqrt2,
+    y = -sqrt2
+  },
+  [270] = {x = -1, y = 0},
+  [315] = {
+    x = -sqrt2,
+    y = sqrt2
+  }
+}
+
+function math.GetQuadrant(dx, dy)
+  if 0 < dx and 0 < dy then
+    return 1
+  elseif dx < 0 and 0 < dy then
+    return 2
+  elseif dx < 0 and dy < 0 then
+    return 3
+  elseif 0 < dx and dy < 0 then
+    return 4
+  elseif dx == 0 and dy == 0 then
+    return 0
+  else
+    return nil
+  end
+end
+
+function math.GetProjOnAngle(A, B, thetaDeg)
+  local dx = B.x - A.x
+  local dy = B.y - A.y
+  local d = dir8[thetaDeg]
+  local ux, uy
+  if d then
+    ux, uy = d.x, d.y
+  else
+    local thetaRad = thetaDeg * math.pi / 180
+    ux = math.cos(thetaRad)
+    uy = math.sin(thetaRad)
+  end
+  local proj_signed = dx * ux + dy * uy
+  local proj_abs = math.abs(proj_signed)
+  local proj_vec_x = proj_signed * ux
+  local proj_vec_y = proj_signed * uy
+  local quadrant = math.GetQuadrant(dx, dy)
+  return proj_signed, proj_abs, {x = proj_vec_x, y = proj_vec_y}, quadrant
+end

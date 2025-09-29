@@ -17,6 +17,7 @@ CmdAfk.Definition = {
   "iTakeRewardTime",
   "iInstantTimes",
   "mReward",
+  "iMonthCardInstantTimes",
   iAfkLevel = {
     0,
     0,
@@ -52,6 +53,12 @@ CmdAfk.Definition = {
     0,
     sdp.SdpMap(8, 8),
     nil
+  },
+  iMonthCardInstantTimes = {
+    6,
+    0,
+    8,
+    0
   }
 }
 Cmd_Afk_GetData_CS = sdp.SdpStruct("Cmd_Afk_GetData_CS")
@@ -99,6 +106,7 @@ Cmd_Afk_TakeInstant_SC = sdp.SdpStruct("Cmd_Afk_TakeInstant_SC")
 Cmd_Afk_TakeInstant_SC.Definition = {
   "iInstantTimes",
   "vReward",
+  "iMonthCardInstantTimes",
   iInstantTimes = {
     0,
     0,
@@ -110,5 +118,11 @@ Cmd_Afk_TakeInstant_SC.Definition = {
     0,
     sdp.SdpVector(CmdIDNum),
     nil
+  },
+  iMonthCardInstantTimes = {
+    2,
+    0,
+    8,
+    0
   }
 }

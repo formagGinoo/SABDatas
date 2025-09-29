@@ -1,5 +1,5 @@
 local Form_CastleDispatchMap = class("Form_CastleDispatchMap", require("UI/UIFrames/Form_CastleDispatchMapUI"))
-local __DISPATCH_COUNT = 10
+local __DISPATCH_COUNT = 13
 local __DispatchRefreshCost = utils.changeStringRewardToLuaTable(ConfigManager:GetGlobalSettingsByKey("DispatchRefreshCost"))
 
 function Form_CastleDispatchMap:SetInitParam(param)
@@ -127,7 +127,7 @@ function Form_CastleDispatchMap:RefreshUI(showAnimIndexTab)
   self.m_dispatchDataMap = CastleDispatchManager:GetDispatchData()
   self.m_initDispatchDataMap = table.deepcopy(self.m_dispatchDataMap)
   local isEmpty = true
-  for i = 1, 10 do
+  for i = 1, __DISPATCH_COUNT do
     if self.m_dispatchDataMap[i] then
       self:RefreshOnePlaceUI(i, self.m_dispatchDataMap[i], showAnimIndexTab ~= nil and showAnimIndexTab[i] or false)
       self:RefreshTime(i, self.m_dispatchDataMap[i])
@@ -236,6 +236,17 @@ function Form_CastleDispatchMap:RefreshOnePlaceUI(index, data, playAnim)
       objTab.txt_name_Text.text = locationCfg.m_mDispatchLocation
     end
     self["m_incident" .. index]:SetActive(true)
+    self["m_normal_privilege" .. index]:SetActive(false)
+    self["m_receive_privilege" .. index]:SetActive(false)
+    local bIsEffective, privilegeEffectData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.DispatchExPos)
+    if bIsEffective and privilegeEffectData then
+      for i, v in ipairs(privilegeEffectData) do
+        if v[1] == index then
+          self["m_normal_privilege" .. index]:SetActive(true)
+          self["m_receive_privilege" .. index]:SetActive(true)
+        end
+      end
+    end
   else
     self["m_incident" .. index]:SetActive(false)
   end

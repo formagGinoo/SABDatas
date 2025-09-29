@@ -13,7 +13,10 @@
       "m_Duration": "2592000",
       "m_MaxDuration": "15552000",
       "m_ProductID": "\"com.moonton.nova_gift499\"",
-      "m_ProductSubID": "56"
+      "m_ProductSubID": "56",
+      "m_type": "1",
+      "m_DiscountNum": "1800",
+      "m_RemindTime": "259200"
     },
     "201002": {
       "m_bError": null,
@@ -27,8 +30,28 @@
       "m_Duration": "2592000",
       "m_MaxDuration": "15552000",
       "m_ProductID": "\"com.moonton.nova_gift1499\"",
-      "m_ProductSubID": "57"
+      "m_ProductSubID": "57",
+      "m_type": "3",
+      "m_DiscountNum": "1250",
+      "m_RemindTime": "259200"
+    },
+    "201003": {
+      "m_bError": null,
+      "m_GoodsID": "201003",
+      "m_StoreID": "1001",
+      "m_IsOn": "1",
+      "m_mItemName": "\"Crescent Moon Pact\"",
+      "m_mItemDesc": "\"Item effect extends by 30 days upon each purchase. Purchase Rewards are available immediately, and Daily Rewards are available upon login each day.\"",
+      "m_ItemID": "[[100,1210]]",
+      "m_DailyReward": "[[101,280]]",
+      "m_Duration": "2592000",
+      "m_MaxDuration": "15552000",
+      "m_ProductID": "\"com.moonton.nova_gift1499\"",
+      "m_ProductSubID": "60",
+      "m_type": "2",
+      "m_DiscountNum": "800",
+      "m_RemindTime": "259200"
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_3_items"
 }

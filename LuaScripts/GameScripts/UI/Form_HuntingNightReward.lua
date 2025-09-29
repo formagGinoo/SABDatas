@@ -15,6 +15,7 @@ function Form_HuntingNightReward:AfterInit()
   }
   self.m_TabInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_tab_list_InfinityGrid, "HuntingRaid/UHuntingRaidRewardTabItem", initGridData)
   self.m_TabInfinityGrid:RegisterButtonCallback("c_item_tab", handler(self, self.OnTabItemClk))
+  self.m_commonItemCache = {}
 end
 
 function Form_HuntingNightReward:OnActive()
@@ -167,11 +168,16 @@ function Form_HuntingNightReward:UpdateScrollViewCell(index, cell_object, cell_d
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_z_txt_Incomplete", cell_data.state == __HuntingNightRewardState.Default)
   LuaBehaviourUtil.setObjectVisible(luaBehaviour, "m_img_complete", cell_data.state == __HuntingNightRewardState.IsTaken)
   local rewardList = utils.changeCSArrayToLuaTable(cfg.m_Reward)
-  for i = 1, 2 do
+  for i = 1, 3 do
     LuaBehaviourUtil.setObjectVisible(luaBehaviour, "c_common_item" .. i, rewardList[i])
     if rewardList[i] then
       local common_item = LuaBehaviourUtil.findGameObject(luaBehaviour, "c_common_item" .. i)
-      local item = self:createCommonItem(common_item)
+      local gameObjectHashCode = common_item:GetHashCode()
+      if not self.m_commonItemCache[gameObjectHashCode] then
+        local item = self:createCommonItem(common_item)
+        self.m_commonItemCache[gameObjectHashCode] = item
+      end
+      local item = self.m_commonItemCache[gameObjectHashCode]
       item:SetItemIconClickCB(function(itemID, itemNum, itemCom)
         utils.openItemDetailPop({iID = itemID, iNum = itemNum})
       end)
@@ -225,6 +231,7 @@ end
 
 function Form_HuntingNightReward:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_commonItemCache = {}
 end
 
 local fullscreen = true

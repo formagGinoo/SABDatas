@@ -91,7 +91,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004013": {
@@ -101,8 +101,8 @@
           "m_UnlockType": "3",
           "m_UnlockData": "1",
           "m_Sort": "12",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004014": {
@@ -145,8 +145,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "5",
           "m_Sort": "15",
-          "m_mTitle": "\"Reach Affinity Rank 10\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004019": {
@@ -156,8 +156,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004020": {
@@ -167,7 +167,7 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "16",
-          "m_mTitle": "\"Converse II\"",
+          "m_mTitle": "\"Converse I\"",
           "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
@@ -178,8 +178,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "8",
           "m_Sort": "20",
-          "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004022": {
@@ -200,8 +200,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "18",
-          "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004024": {
@@ -211,8 +211,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "17",
-          "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004025": {
@@ -222,8 +222,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "9",
           "m_Sort": "21",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         }
       }
@@ -328,8 +328,8 @@
           "m_UnlockType": "3",
           "m_UnlockData": "1",
           "m_Sort": "12",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003014": {
@@ -372,8 +372,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "5",
           "m_Sort": "15",
-          "m_mTitle": "\"Reach Affinity Rank 10\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003019": {
@@ -383,8 +383,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003020": {
@@ -394,7 +394,7 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "16",
-          "m_mTitle": "\"Converse II\"",
+          "m_mTitle": "\"Converse I\"",
           "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
@@ -405,8 +405,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "8",
           "m_Sort": "20",
-          "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003022": {
@@ -427,8 +427,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "18",
-          "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003024": {
@@ -438,8 +438,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "17",
-          "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003025": {
@@ -449,8 +449,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "9",
           "m_Sort": "21",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         }
       }
@@ -533,8 +533,8 @@
           "m_UnlockType": "3",
           "m_UnlockData": "1",
           "m_Sort": "12",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001014": {
@@ -577,8 +577,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "5",
           "m_Sort": "15",
-          "m_mTitle": "\"Reach Affinity Rank 10\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001019": {
@@ -588,8 +588,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "10",
           "m_Sort": "22",
-          "m_mTitle": "\"Converse I\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001020": {
@@ -599,7 +599,7 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "16",
-          "m_mTitle": "\"Converse II\"",
+          "m_mTitle": "\"Converse I\"",
           "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
@@ -610,8 +610,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "8",
           "m_Sort": "20",
-          "m_mTitle": "\"Converse III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001022": {
@@ -632,8 +632,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "18",
-          "m_mTitle": "\"Charm II\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001024": {
@@ -643,8 +643,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "1",
           "m_Sort": "17",
-          "m_mTitle": "\"Charm III\"",
-          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001025": {
@@ -654,8 +654,8 @@
           "m_UnlockType": "4",
           "m_UnlockData": "9",
           "m_Sort": "21",
-          "m_mTitle": "\"\"",
-          "m_mUnlockDesc": "\"\"",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         }
       }

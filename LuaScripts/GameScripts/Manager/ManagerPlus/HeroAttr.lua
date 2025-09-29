@@ -8,6 +8,8 @@ local CirculationTypeIns = ConfigManager:GetConfigInsByName("CirculationType")
 local CirculationLevelIns = ConfigManager:GetConfigInsByName("CirculationLevel")
 local LegacyLevelIns = ConfigManager:GetConfigInsByName("LegacyLevel")
 local AttractAddIns = ConfigManager:GetConfigInsByName("AttractAdd")
+local CareerLevelValueIns = ConfigManager:GetConfigInsByName("CareerLevelValue")
+local CareerLevelCharLocationValueIns = ConfigManager:GetConfigInsByName("CareerLevelCharLocationValue")
 local string_format = string.format
 AttrBaseShowCfg = {
   [1] = true,
@@ -147,7 +149,7 @@ function HeroAttr:GetLvBreakBaseAttr(heroID, level, breakNum, circulationParamTa
   return retParamTab
 end
 
-function HeroAttr:GetLvBreakAllAttr(heroID, level, breakNum, circulationParamTab, attractRank)
+function HeroAttr:GetLvBreakAllAttr(heroID, level, breakNum, circulationParamTab, attractRank, loungeAttrIds, circulationCareerParamTab)
   if not heroID then
     return
   end
@@ -173,7 +175,9 @@ function HeroAttr:GetLvBreakAllAttr(heroID, level, breakNum, circulationParamTab
     overLimitBreakOtherPropertyCfg = self:GetLimitBreakPropertyCfg(limitBreakCfg, HeroManager.BreakTypeEnum.OverLimit)
   end
   local circulationAttrTab = self:GetCirculationAttrByParams(circulationParamTab) or {}
+  local circulationCareerAttrTab = self:GetCirculationCarrerAttrByParams(circulationCareerParamTab) or {}
   local attractAttrTab = self:GetAttractAttr(characterInfoCfg.m_AttractAddTemplate, attractRank) or {}
+  local loungeAttrTab = self:GetLoungeAttr(loungeAttrIds) or {}
   local retParamTab = {}
   if tempLevelCfg then
     local levelTemplateCfg = tempLevelCfg.levelTemplateCfg
@@ -188,7 +192,9 @@ function HeroAttr:GetLvBreakAllAttr(heroID, level, breakNum, circulationParamTab
           otherPropertyNum = otherPropertyCfg["m_" .. paramStr]
         end
         local circulationPropertyNum = circulationAttrTab[paramStr] or 0
+        local circulationCareerNum = circulationCareerAttrTab[paramStr] or 0
         local attractPropertyNum = attractAttrTab[paramStr] or 0
+        local loungePropertyNum = loungeAttrTab[paramStr] or 0
         local levelTemplateParam = levelTemplateCfg[string_format("m_%sParam", paramStr)]
         local breakOtherPropertyNum = 0
         if limitBreakOtherPropertyCfg then
@@ -214,6 +220,8 @@ function HeroAttr:GetLvBreakAllAttr(heroID, level, breakNum, circulationParamTab
             local overLimitBreakParam = self:GetLimitBreakParam(limitBreakCfg, HeroManager.BreakTypeEnum.OverLimit, paramStr)
             paramNum = paramNum * overLimitBreakParam + overBreakOtherPropertyNum
           end
+          paramNum = paramNum + circulationCareerNum
+          paramNum = paramNum + loungePropertyNum
           retParamTab[paramStr] = paramNum
         else
           if basePropertyNum == nil then
@@ -243,6 +251,63 @@ function HeroAttr:GetHeroPower(heroID, level, breakNum, skills, attractRank)
     totalPower = totalPower * (1 + skillPotencyParam) + skillPotency
   end
   return math.floor(totalPower)
+end
+
+function HeroAttr:GetResonationBaseAttr(resonationID, lv)
+  if not resonationID then
+    return
+  end
+  if not lv then
+    return
+  end
+  local resonationCfg = CareerLevelValueIns:GetValue_ByCareerTypeAndLevel(resonationID, lv)
+  if resonationCfg:GetError() == true then
+    return
+  end
+  local propertyID = resonationCfg.m_PropertyID
+  local propertyCfg = PropertyIns:GetValue_ByPropertyID(propertyID)
+  local retParamTab = {}
+  if propertyCfg:GetError() == true then
+    return retParamTab
+  end
+  for i = 1, 4 do
+    local propertyIndexCfg = PropertyIndexIns:GetValue_ByPropertyID(i)
+    local paramStr = propertyIndexCfg.m_ENName
+    local propertyNum = propertyCfg["m_" .. paramStr]
+    retParamTab[paramStr] = math.floor(propertyNum)
+  end
+  return retParamTab
+end
+
+function HeroAttr:GetCareerLocationBaseAttr(heroList)
+  if not heroList then
+    return
+  end
+  local retParamTab = {}
+  for i = 1, 4 do
+    local propertyIndexCfg = PropertyIndexIns:GetValue_ByPropertyID(i)
+    local paramStr = propertyIndexCfg.m_ENName
+    retParamTab[paramStr] = 0
+  end
+  for _, heroID in pairs(heroList) do
+    local heroData = HeroManager:GetHeroDataByID(heroID)
+    local characterCfg = HeroManager:GetHeroConfigByID(heroID)
+    local iQuality = characterCfg.m_Quality
+    local iBreak = heroData.serverData.iBreak or 0
+    local locationCfg = CareerLevelCharLocationValueIns:GetValue_ByLimitBreakLevelAndQuality(iBreak, iQuality)
+    local propertyID = locationCfg.m_PropertyID
+    local propertyCfg = PropertyIns:GetValue_ByPropertyID(propertyID)
+    if propertyCfg:GetError() == true then
+      return retParamTab
+    end
+    for i = 1, 4 do
+      local propertyIndexCfg = PropertyIndexIns:GetValue_ByPropertyID(i)
+      local paramStr = propertyIndexCfg.m_ENName
+      local propertyNum = propertyCfg["m_" .. paramStr]
+      retParamTab[paramStr] = retParamTab[paramStr] + math.floor(propertyNum)
+    end
+  end
+  return retParamTab
 end
 
 function HeroAttr:GetCirculationBaseAttr(circulationID, lv)
@@ -320,6 +385,22 @@ function HeroAttr:GetCirculationAttrByParams(paramTabs)
           tempAttrTab[key] = tempAttrTab[key] + valueNum
         end
       end
+    end
+  end
+  return tempAttrTab
+end
+
+function HeroAttr:GetCirculationCarrerAttrByParams(paramTabs)
+  if not paramTabs then
+    return
+  end
+  local locatedHeros = paramTabs.locatedHeros
+  local tempAttrTab = self:GetCareerLocationBaseAttr(locatedHeros)
+  local lvInfo = paramTabs.lvInfo
+  local lvAttrTab = self:GetResonationBaseAttr(lvInfo.careerID, lvInfo.level)
+  for key, valueNum in pairs(lvAttrTab) do
+    if tempAttrTab[key] then
+      tempAttrTab[key] = tempAttrTab[key] + valueNum
     end
   end
   return tempAttrTab
@@ -404,7 +485,15 @@ function HeroAttr:GetHeroAttrByParam(heroID, param, serverData)
   if param.ignoreXunHuanShi then
     circulationTab = nil
   end
-  local breakLvAttr = self:GetLvBreakAllAttr(heroID, heroLv, breakNum, circulationTab, attractRank)
+  local circulationCareerTab = param.circulationCareerParam or HeroManager:GetCirculationCareerByHeroID(heroID)
+  if param.ignoreCareer then
+    circulationCareerTab = nil
+  end
+  local loungeAttrIds = param.loungeParam or LoungeManager:GetLoungeAllAttrsId()
+  if param.ignoreLounge then
+    loungeAttrIds = nil
+  end
+  local breakLvAttr = self:GetLvBreakAllAttr(heroID, heroLv, breakNum, circulationTab, attractRank, loungeAttrIds, circulationCareerTab)
   if not breakLvAttr then
     return
   end
@@ -486,6 +575,32 @@ function HeroAttr:GetHeroPowerByParam(heroID, param, serverData)
     totalPower = totalPower * (1 + skillPotencyParam) + skillPotency
   end
   return math.floor(totalPower)
+end
+
+function HeroAttr:GetLoungeAttr(attrIds)
+  local retParamTab = {}
+  if not attrIds or not next(attrIds) then
+    return retParamTab
+  end
+  for i, propertyID in ipairs(attrIds) do
+    local propertyCfg = PropertyIns:GetValue_ByPropertyID(propertyID)
+    if propertyCfg:GetError() == true then
+      return retParamTab
+    end
+    local allPropertyIndexCfg = PropertyIndexIns:GetAll()
+    for _, propertyIndexCfg in pairs(allPropertyIndexCfg) do
+      if propertyIndexCfg and propertyIndexCfg.m_Compute == 1 then
+        local paramStr = propertyIndexCfg.m_ENName
+        local propertyNum = propertyCfg["m_" .. paramStr]
+        if retParamTab[paramStr] then
+          retParamTab[paramStr] = retParamTab[paramStr] + propertyNum
+        else
+          retParamTab[paramStr] = propertyNum
+        end
+      end
+    end
+  end
+  return retParamTab
 end
 
 return HeroAttr

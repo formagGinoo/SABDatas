@@ -225,6 +225,14 @@
       "m_MaterialID_3": "10100024",
       "m_MaterialID_4": null
     },
+    "20100320": {
+      "m_bError": null,
+      "m_RougeItemID": "20100320",
+      "m_MaterialID_1": "10300320",
+      "m_MaterialID_2": "10100006",
+      "m_MaterialID_3": "10100006",
+      "m_MaterialID_4": null
+    },
     "20100330": {
       "m_bError": null,
       "m_RougeItemID": "20100330",
@@ -433,6 +441,14 @@
       "m_MaterialID_3": "10100023",
       "m_MaterialID_4": null
     },
+    "20100680": {
+      "m_bError": null,
+      "m_RougeItemID": "20100680",
+      "m_MaterialID_1": "10300680",
+      "m_MaterialID_2": "10100007",
+      "m_MaterialID_3": "10100008",
+      "m_MaterialID_4": null
+    },
     "20100690": {
       "m_bError": null,
       "m_RougeItemID": "20100690",
@@ -554,5 +570,5 @@
       "m_MaterialID_4": null
     }
   },
-  "status": "processed_69_items"
+  "status": "processed_71_items"
 }

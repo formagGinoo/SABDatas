@@ -18,6 +18,9 @@ function Form_HuntingNightRankList:AfterInit()
   }
   self.m_scrollView_tab = self:CreateInfinityGrid(self.m_pnl_left_InfinityGrid, "HuntingRaid/UIHuntingRaidRankTabItem", initGridData)
   self.m_scrollView_tab:RegisterButtonCallback("c_pnl_itemrank", handler(self, self.OnTabItemClk))
+  self.m_PlayerHeadCache = {}
+  self.m_playerHeadCom = self:createPlayerHead(self.m_circle_head)
+  self.m_playerHeadCom1 = self:createPlayerHead(self.m_circle_head1)
 end
 
 function Form_HuntingNightRankList:OnActive()
@@ -26,7 +29,6 @@ function Form_HuntingNightRankList:OnActive()
   self.m_changeRankTab = true
   self.m_selTabIndex = 1
   self.m_selRankTabIndex = 0
-  self.m_PlayerHeadCache = {}
   self.m_myRewardCommonItemList = {}
   self.m_ruleDataList = self:GenerateRuleData()
   self.m_rewardDataList = self:GenerateRewardData()
@@ -47,7 +49,6 @@ end
 function Form_HuntingNightRankList:OnInactive()
   self.super.OnInactive(self)
   self:RemoveAllEventListeners()
-  self.m_PlayerHeadCache = {}
   self.m_myRewardCommonItemList = {}
   self.m_load_end = false
   self.m_changeRankTab = nil
@@ -325,8 +326,7 @@ function Form_HuntingNightRankList:RefreshOwnerRankInfo()
     rankSize = data.iRankSize
     iMyValue = data.iMyValue
   end
-  local playerHeadCom = self:createPlayerHead(self.m_circle_head)
-  playerHeadCom:SetPlayerHeadInfo(RoleManager:GetMinePlayerInfoTab())
+  self.m_playerHeadCom:SetPlayerHeadInfo(RoleManager:GetMinePlayerInfoTab())
   self.m_txt_name_mine_Text.text = tostring(RoleManager:GetName())
   self.m_txt_guild_name_mine_Text.text = RoleManager:GetAllianceName()
   if rank and 0 < rank then
@@ -480,8 +480,7 @@ end
 
 function Form_HuntingNightRankList:RefreshOwnerRankRewardInfo()
   local data = HuntingRaidManager:GetTotalRankOwnerDate()
-  local playerHeadCom = self:createPlayerHead(self.m_circle_head1)
-  playerHeadCom:SetPlayerHeadInfo(RoleManager:GetMinePlayerInfoTab())
+  self.m_playerHeadCom1:SetPlayerHeadInfo(RoleManager:GetMinePlayerInfoTab())
   self.m_txt_reward_mine_Text.text = tostring(RoleManager:GetName())
   self.m_txt_reward_guild_mine_Text.text = RoleManager:GetAllianceName()
   if table.getn(data) > 0 and data.iMyRank ~= 0 then
@@ -708,6 +707,7 @@ end
 
 function Form_HuntingNightRankList:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = {}
 end
 
 local fullscreen = true

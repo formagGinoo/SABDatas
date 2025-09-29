@@ -55,10 +55,17 @@ function Form_PersonalCardSignature:CheckStrIsCorrect()
 end
 
 function Form_PersonalCardSignature:OnBtnsaveClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+  end
   local text = self.m_inputfield_InputField.text
   local spacing = string.checkFirstCharIsSpacing(text)
   if spacing then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 30020)
+    return
+  end
+  if isInLimitTime == true then
     return
   end
   RoleManager:ReqSetSignatureCS(text)

@@ -4,7 +4,8 @@ local UITypeSubPanel = {
   [1] = "AnnouncementPushFaceGachaSubPanel",
   [2] = "AnnouncementPushFacePersonalRaidSubPanel",
   [3] = "AnnouncementPushFaceGuildRaidSubPanel",
-  [4] = "AnnouncementPushFaceHuntingSubPanel"
+  [4] = "AnnouncementPushFaceHuntingSubPanel",
+  [5] = "AnnouncementPushFaceFashionSubPanel"
 }
 local RewardType = {PushFaceReward = 1}
 
@@ -87,6 +88,9 @@ function GameNoticeActivity:checkCondition()
     return false
   end
   if not self:isShowClearResourceAnnounce() then
+    return false
+  end
+  if self:GetCheckReturnTaskAct() and self.m_stStatusData.bIsActReturnOpen == false then
     return false
   end
   return true
@@ -174,6 +178,11 @@ end
 function GameNoticeActivity:GetPushJumpWindowRewardTime()
   local commonCfg = self.m_stSdpConfig.stCommonCfg
   return commonCfg.iCanGetRewardTime or 0
+end
+
+function GameNoticeActivity:GetCheckReturnTaskAct()
+  local commonCfg = self.m_stSdpConfig.stCommonCfg
+  return commonCfg.bIfCheckReturnTaskAct
 end
 
 function GameNoticeActivity:GetPushJumpGetRewardType()

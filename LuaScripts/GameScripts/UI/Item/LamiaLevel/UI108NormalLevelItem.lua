@@ -54,14 +54,16 @@ function UI108NormalLevelItem:OnFreshData()
   self.m_isChoose = self.m_itemData.isChoose
   self.m_isUnlock, _, self.m_unlockStr = LevelHeroLamiaActivityManager:GetLevelHelper():IsLevelUnLock(self.m_levelCfg.m_LevelID)
   self.m_bg_unlock:SetActive(false)
+  if self.m_timer then
+    TimeService:KillTimer(self.m_timer)
+    self.m_timer = nil
+  end
+  UILuaHelper.ResetAnimationByName(self.m_itemTrans, "Activity108_DialogueMain_in")
   self:FreshItemUI()
   self:ChangeChoose(self.m_isChoose)
   UILuaHelper.SetChildIndex(self.m_itemRootObj, self.m_itemIndex)
   self:CheckShowUnlockAnim()
   local bIsCurrent = self.m_itemData.bIsCurrent
-  if not utils.isNull(self.m_choose_image) then
-    UILuaHelper.SetActive(self.m_choose_image, bIsCurrent)
-  end
   if not utils.isNull(self.m_move_left_chilun) then
     UILuaHelper.SetActive(self.m_move_left_chilun, bIsCurrent)
   end
@@ -229,11 +231,18 @@ function UI108NormalLevelItem:CheckShowUnlockAnim()
   end
   UILuaHelper.PlayAnimationByName(self.m_itemTrans, "Activity108_DialogueMain_in")
   local fAniLength = UILuaHelper.GetAnimationLengthByName(self.m_itemTrans, "Activity108_DialogueMain_in")
-  TimeService:SetTimer(fAniLength, 1, function()
+  self.m_timer = TimeService:SetTimer(fAniLength, 1, function()
     if not utils.isNull(self.m_bg_lock) then
       UILuaHelper.SetActive(self.m_bg_lock, false)
     end
   end)
+end
+
+function UI108NormalLevelItem:dispose()
+  if self.m_timer then
+    TimeService:KillTimer(self.m_timer)
+    self.m_timer = nil
+  end
 end
 
 return UI108NormalLevelItem

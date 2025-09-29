@@ -141,14 +141,11 @@ end
 
 function MallMonthlyCardMainSubPanel:OnRefreshGiftPointAll()
   self:OnRefreshGiftPoint()
-  self:OnRefreshGiftPoint1()
+  self:OnRefreshGiftPoint2()
+  self:OnRefreshGiftPoint3()
 end
 
 function MallMonthlyCardMainSubPanel:OnRefreshGiftPoint()
-  local whiteElement = MonthlyCardManager:GetSmallCardCfg()
-  if whiteElement:GetError() then
-    return
-  end
   self.m_paidGiftPoint:SetFreshInfo({
     productId = whiteElement.m_ProductID
   })

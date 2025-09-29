@@ -40,6 +40,16 @@ CmdBaseStoreBuyParam.Definition = {
     0
   }
 }
+CmdStoreCommonBuyParam = sdp.SdpStruct("CmdStoreCommonBuyParam")
+CmdStoreCommonBuyParam.Definition = {
+  "iActivityId",
+  iActivityId = {
+    0,
+    0,
+    8,
+    0
+  }
+}
 CmdBaseStoreMonthlyCardGoods = sdp.SdpStruct("CmdBaseStoreMonthlyCardGoods")
 CmdBaseStoreMonthlyCardGoods.Definition = {
   "iCardId",

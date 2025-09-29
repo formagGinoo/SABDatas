@@ -79,7 +79,18 @@ end
 function GuildMessageSubPanel:AddEventListeners()
   self:addEventListener("eGameEvent_Alliance_MessageNoticeLeave", handler(self, self.OnNewMessageCB))
   self:addEventListener("eGameEvent_Alliance_MessageNoticeChange", handler(self, self.OnFreshData))
-  self:addEventListener("eGameEvent_Alliance_MessageNoticePin", handler(self, self.OnFreshData))
+  self:addEventListener("eGameEvent_Alliance_MessageNoticePin", handler(self, self.OnPinMessage))
+  self:addEventListener("eGameEvent_Alliance_MessageNoticeUnPin", handler(self, self.OnUnPinMessage))
+end
+
+function GuildMessageSubPanel:OnPinMessage()
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10252)
+  self:OnFreshData()
+end
+
+function GuildMessageSubPanel:OnUnPinMessage()
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10253)
+  self:OnFreshData()
 end
 
 function GuildMessageSubPanel:RemoveAllEventListeners()

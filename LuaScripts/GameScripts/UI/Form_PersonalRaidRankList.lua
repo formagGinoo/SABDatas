@@ -26,6 +26,7 @@ function Form_PersonalRaidRankList:AfterInit()
   self.m_battleMineInfo = nil
   self.m_curRankTabType = RankTabType.Grade
   self.m_txt_lv_mine_Text = self.m_circle_head1.transform:Find("bg_lv/c_txt_lv"):GetComponent("TMPPro")
+  self.m_PlayerHeadCache = {}
   self.m_playerHeadCom = self:createPlayerHead(self.m_circle_head)
   self.m_playerHeadCom1 = self:createPlayerHead(self.m_circle_head1)
 end
@@ -34,7 +35,6 @@ function Form_PersonalRaidRankList:OnActive()
   self.super.OnActive(self)
   self.m_load_end = false
   self.m_firstOpenFlag = true
-  self.m_PlayerHeadCache = {}
   self:RefreshUI()
   self:OnTab1Clicked()
   self:AddEventListeners()
@@ -44,7 +44,6 @@ function Form_PersonalRaidRankList:OnInactive()
   self.super.OnInactive(self)
   self.m_rewardAnimFlag = false
   self.m_load_end = false
-  self.m_PlayerHeadCache = {}
   self:RemoveAllEventListeners()
 end
 
@@ -483,6 +482,7 @@ end
 
 function Form_PersonalRaidRankList:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = nil
 end
 
 local fullscreen = true

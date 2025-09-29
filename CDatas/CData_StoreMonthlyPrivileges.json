@@ -1,0 +1,60 @@
+{
+  "className": "CData_StoreMonthlyPrivileges",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_PrivilegeID": "1",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_02\"",
+      "m_EffectType": "1",
+      "m_EffectData": "[[3]]",
+      "m_mEffectDes": "\"<style=Highlight>[Moonlight Tribute]</style> Daily Extra Sermon Free Attempts +<style=Highlight>3</style>\"",
+      "m_Jump": "3"
+    },
+    "2": {
+      "m_bError": null,
+      "m_PrivilegeID": "2",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_05\"",
+      "m_EffectType": "2",
+      "m_EffectData": "[[2]]",
+      "m_mEffectDes": "\"<style=Highlight>[General Store]</style> Daily Free Refresh Attempts +<style=Highlight>2</style>\"",
+      "m_Jump": "2601"
+    },
+    "3": {
+      "m_bError": null,
+      "m_PrivilegeID": "3",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_01\"",
+      "m_EffectType": "3",
+      "m_EffectData": "[[1]]",
+      "m_mEffectDes": "\"<style=Highlight>[Council Chamber]</style> Daily Meeting +<style=Highlight>1</style>\"",
+      "m_Jump": "5301"
+    },
+    "4": {
+      "m_bError": null,
+      "m_PrivilegeID": "4",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_04\"",
+      "m_EffectType": "4",
+      "m_EffectData": "[[11],[12]]",
+      "m_mEffectDes": "\"<style=Highlight>[Wilderness Expedition]</style> Monthly Pass <style=Highlight>Exclusive Missions added</style>\"",
+      "m_Jump": "5101"
+    },
+    "5": {
+      "m_bError": null,
+      "m_PrivilegeID": "5",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_06\"",
+      "m_EffectType": "5",
+      "m_EffectData": "[]",
+      "m_mEffectDes": "\"<style=Highlight>[Tomb of the Fallen]</style> drops provide <style=Highlight>extra Equipment Enhancement Materials</style>.\"",
+      "m_Jump": "14"
+    },
+    "6": {
+      "m_bError": null,
+      "m_PrivilegeID": "6",
+      "m_Icon": "\"Atlas_MonthlyCard/monthly_bg_card_tab_icon_03\"",
+      "m_EffectType": "6",
+      "m_EffectData": "[]",
+      "m_mEffectDes": "\"<style=Highlight>[Timeworn Mausoleum]</style> rewards provide <style=Highlight>additional Skill Upgrade Materials</style>.\"",
+      "m_Jump": "26"
+    }
+  },
+  "status": "processed_6_items"
+}

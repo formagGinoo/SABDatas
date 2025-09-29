@@ -1,0 +1,109 @@
+{
+  "className": "CData_LoungeCharIdle",
+  "data": {
+    "20320": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "\"idle_01\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"idle_01\"",
+          "m_SpineIdleSubtitle": "\"Lounge_Idle_01\"",
+          "m_SpineIdleVoice": "\"Play_vo_20320_Restroom_Locked_Loop\"",
+          "m_SpineIdleShow": "\"idle_01_show\"",
+          "m_SpineIdleShowSubtitle": "\"Lounge_Idle_Show_01\"",
+          "m_SpineIdleShowVoice": "\"Play_vo_20320_Restroom_Locked_Idle\"",
+          "m_SpineRefuseSubtitle": "\"Lounge_Refuse_01\"",
+          "m_SpineRefuseVoice": "\"Play_vo_20320_Restroom_Locked_Refuse\""
+        },
+        "\"idle_01_key\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"idle_01_key\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"\"",
+          "m_SpineIdleShowSubtitle": "\"\"",
+          "m_SpineIdleShowVoice": "\"\"",
+          "m_SpineRefuseSubtitle": "\"\"",
+          "m_SpineRefuseVoice": "\"\""
+        },
+        "\"idle_02\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"idle_02\"",
+          "m_SpineIdleSubtitle": "\"Lounge_Idle_02\"",
+          "m_SpineIdleVoice": "\"Play_vo_20320_Restroom_Unlocked_Loop\"",
+          "m_SpineIdleShow": "\"idle_02_show\"",
+          "m_SpineIdleShowSubtitle": "\"Lounge_Idle_Show_02\"",
+          "m_SpineIdleShowVoice": "\"Play_vo_20320_Restroom_Unlocked_Idle\"",
+          "m_SpineRefuseSubtitle": "\"Lounge_Refuse_01\"",
+          "m_SpineRefuseVoice": "\"Play_vo_20320_Restroom_Locked_Refuse\""
+        },
+        "\"idle_03\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"idle_03\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"idle_03_show\"",
+          "m_SpineIdleShowSubtitle": "\"Lounge_Idle_Show_02\"",
+          "m_SpineIdleShowVoice": "\"Play_vo_20320_Restroom_Unlocked_Idle\"",
+          "m_SpineRefuseSubtitle": "\"Lounge_Refuse_01\"",
+          "m_SpineRefuseVoice": "\"Play_vo_20320_Restroom_Locked_Refuse\""
+        },
+        "\"bite_idle_02\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"bite_idle_02\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"\"",
+          "m_SpineIdleShowSubtitle": "\"\"",
+          "m_SpineIdleShowVoice": "\"\"",
+          "m_SpineRefuseSubtitle": "\"\"",
+          "m_SpineRefuseVoice": "\"\""
+        },
+        "\"key_idle_01\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"key_idle_01\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"\"",
+          "m_SpineIdleShowSubtitle": "\"\"",
+          "m_SpineIdleShowVoice": "\"\"",
+          "m_SpineRefuseSubtitle": "\"\"",
+          "m_SpineRefuseVoice": "\"\""
+        },
+        "\"key_up\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"key_up\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"\"",
+          "m_SpineIdleShowSubtitle": "\"\"",
+          "m_SpineIdleShowVoice": "\"\"",
+          "m_SpineRefuseSubtitle": "\"\"",
+          "m_SpineRefuseVoice": "\"\""
+        },
+        "\"key_idle_02\"": {
+          "m_bError": null,
+          "m_CharID": "20320",
+          "m_SpineIdle": "\"key_idle_02\"",
+          "m_SpineIdleSubtitle": "\"\"",
+          "m_SpineIdleVoice": "\"\"",
+          "m_SpineIdleShow": "\"\"",
+          "m_SpineIdleShowSubtitle": "\"\"",
+          "m_SpineIdleShowVoice": "\"\"",
+          "m_SpineRefuseSubtitle": "\"\"",
+          "m_SpineRefuseVoice": "\"\""
+        }
+      }
+    }
+  },
+  "status": "processed_1_items"
+}

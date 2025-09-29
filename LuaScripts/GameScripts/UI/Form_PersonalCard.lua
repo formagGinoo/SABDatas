@@ -384,6 +384,7 @@ function Form_PersonalCard:FreshShowLeftHeadFrameChild()
 end
 
 function Form_PersonalCard:FreshZoneAndUIDInfo()
+  self.m_num_Text.characterSpacing = 0
   self.m_num_Text.text = tostring(self:GetUID())
   self.m_servenum_Text.text = tostring(self:GetServerZone())
 end
@@ -544,6 +545,11 @@ function Form_PersonalCard:OnBtniconrenameClicked()
 end
 
 function Form_PersonalCard:OnBtninformationClicked()
+  local isInLimitTime, limitStr = ActivityManager:IsInForbidCustomLimitTime()
+  if isInLimitTime == true then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST_SPE, limitStr)
+    return
+  end
   StackPopup:Push(UIDefines.ID_FORM_PERSONALCARDSIGNATURE)
 end
 

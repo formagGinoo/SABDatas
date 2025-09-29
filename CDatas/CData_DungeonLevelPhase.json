@@ -14,7 +14,9 @@
           "m_ClientMustDrop": "[[1101,2],[33001,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "2"
+          "m_ClientQuality": "2",
+          "m_MonthlyPrivilegeReward": "[[1101,2]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "2": {
           "m_bError": null,
@@ -24,7 +26,9 @@
           "m_ClientMustDrop": "[[1101,3],[33002,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "2"
+          "m_ClientQuality": "2",
+          "m_MonthlyPrivilegeReward": "[[1101,4]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "3": {
           "m_bError": null,
@@ -34,7 +38,9 @@
           "m_ClientMustDrop": "[[1101,4],[33003,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "2"
+          "m_ClientQuality": "2",
+          "m_MonthlyPrivilegeReward": "[[1101,6]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "4": {
           "m_bError": null,
@@ -44,7 +50,9 @@
           "m_ClientMustDrop": "[[1101,5],[33004,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "3"
+          "m_ClientQuality": "3",
+          "m_MonthlyPrivilegeReward": "[[1101,8]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "5": {
           "m_bError": null,
@@ -54,7 +62,9 @@
           "m_ClientMustDrop": "[[1101,6],[33005,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "4"
+          "m_ClientQuality": "4",
+          "m_MonthlyPrivilegeReward": "[[1101,10]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "6": {
           "m_bError": null,
@@ -64,7 +74,9 @@
           "m_ClientMustDrop": "[[1101,7],[33006,5]]",
           "m_ClientProDrop": "[[33106,15]]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "4"
+          "m_ClientQuality": "4",
+          "m_MonthlyPrivilegeReward": "[[1101,12]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "7": {
           "m_bError": null,
@@ -74,7 +86,9 @@
           "m_ClientMustDrop": "[[1101,8],[33007,5]]",
           "m_ClientProDrop": "[[33107,30]]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "4"
+          "m_ClientQuality": "4",
+          "m_MonthlyPrivilegeReward": "[[1101,14]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "8": {
           "m_bError": null,
@@ -84,7 +98,9 @@
           "m_ClientMustDrop": "[[1101,9],[33008,5]]",
           "m_ClientProDrop": "[[33108,60]]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "4"
+          "m_ClientQuality": "4",
+          "m_MonthlyPrivilegeReward": "[[1101,16]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "9": {
           "m_bError": null,
@@ -94,7 +110,9 @@
           "m_ClientMustDrop": "[[1101,10],[33009,5]]",
           "m_ClientProDrop": "[[33109,90]]",
           "m_ClientStarDrop": "[[1101,10]]",
-          "m_ClientQuality": "4"
+          "m_ClientQuality": "4",
+          "m_MonthlyPrivilegeReward": "[[1101,18]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         }
       }
     },
@@ -111,7 +129,9 @@
           "m_ClientMustDrop": "[[1101,11],[34001,5]]",
           "m_ClientProDrop": "[[34101,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "5"
+          "m_ClientQuality": "5",
+          "m_MonthlyPrivilegeReward": "[[1101,20]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "2": {
           "m_bError": null,
@@ -121,7 +141,9 @@
           "m_ClientMustDrop": "[[1101,12],[34002,5]]",
           "m_ClientProDrop": "[[34102,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "5"
+          "m_ClientQuality": "5",
+          "m_MonthlyPrivilegeReward": "[[1101,22]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "3": {
           "m_bError": null,
@@ -131,7 +153,9 @@
           "m_ClientMustDrop": "[[1101,13],[34003,5]]",
           "m_ClientProDrop": "[[34103,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "5"
+          "m_ClientQuality": "5",
+          "m_MonthlyPrivilegeReward": "[[1101,24]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "4": {
           "m_bError": null,
@@ -141,7 +165,9 @@
           "m_ClientMustDrop": "[[1101,14],[34004,5]]",
           "m_ClientProDrop": "[[34104,50]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "5"
+          "m_ClientQuality": "5",
+          "m_MonthlyPrivilegeReward": "[[1101,26]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "5": {
           "m_bError": null,
@@ -151,7 +177,9 @@
           "m_ClientMustDrop": "[[1102,2],[34005,5]]",
           "m_ClientProDrop": "[[34105,20]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "6"
+          "m_ClientQuality": "6",
+          "m_MonthlyPrivilegeReward": "[[1101,28]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "6": {
           "m_bError": null,
@@ -161,7 +189,9 @@
           "m_ClientMustDrop": "[[1102,3],[34006,5]]",
           "m_ClientProDrop": "[[34106,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "6"
+          "m_ClientQuality": "6",
+          "m_MonthlyPrivilegeReward": "[[1101,30]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "7": {
           "m_bError": null,
@@ -171,7 +201,9 @@
           "m_ClientMustDrop": "[[1102,4],[34007,5]]",
           "m_ClientProDrop": "[[34107,10]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "6"
+          "m_ClientQuality": "6",
+          "m_MonthlyPrivilegeReward": "[[1101,32]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "8": {
           "m_bError": null,
@@ -181,7 +213,9 @@
           "m_ClientMustDrop": "[[1102,5],[34008,5]]",
           "m_ClientProDrop": "[[34108,20]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "6"
+          "m_ClientQuality": "6",
+          "m_MonthlyPrivilegeReward": "[[1101,34]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "9": {
           "m_bError": null,
@@ -191,7 +225,9 @@
           "m_ClientMustDrop": "[[1102,5],[34009,5]]",
           "m_ClientProDrop": "[[34109,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "6"
+          "m_ClientQuality": "6",
+          "m_MonthlyPrivilegeReward": "[[1101,36]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         }
       }
     },
@@ -208,7 +244,9 @@
           "m_ClientMustDrop": "[[1102,6],[35001,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,4]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "2": {
           "m_bError": null,
@@ -218,7 +256,9 @@
           "m_ClientMustDrop": "[[1102,6],[35002,5]]",
           "m_ClientProDrop": "[[35102,20]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,4]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "3": {
           "m_bError": null,
@@ -228,7 +268,9 @@
           "m_ClientMustDrop": "[[1102,7],[35003,5]]",
           "m_ClientProDrop": "[[35103,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,5]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "4": {
           "m_bError": null,
@@ -238,7 +280,9 @@
           "m_ClientMustDrop": "[[1102,7],[35004,5]]",
           "m_ClientProDrop": "[[35104,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,5]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "5": {
           "m_bError": null,
@@ -248,7 +292,9 @@
           "m_ClientMustDrop": "[[1102,8],[35005,5]]",
           "m_ClientProDrop": "[[35105,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,6]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "6": {
           "m_bError": null,
@@ -258,7 +304,9 @@
           "m_ClientMustDrop": "[[1102,8],[35006,5]]",
           "m_ClientProDrop": "[[35106,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,6]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "7": {
           "m_bError": null,
@@ -268,7 +316,9 @@
           "m_ClientMustDrop": "[[1102,9],[35007,5]]",
           "m_ClientProDrop": "[[35107,50]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,7]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "8": {
           "m_bError": null,
@@ -278,7 +328,9 @@
           "m_ClientMustDrop": "[[1102,10],[35008,5]]",
           "m_ClientProDrop": "[[35108,70]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,7]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "9": {
           "m_bError": null,
@@ -288,7 +340,9 @@
           "m_ClientMustDrop": "[[1102,11],[35009,5]]",
           "m_ClientProDrop": "[[35109,60]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,8]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         }
       }
     },
@@ -305,7 +359,9 @@
           "m_ClientMustDrop": "[[1102,6],[35001,5]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,4]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "2": {
           "m_bError": null,
@@ -315,7 +371,9 @@
           "m_ClientMustDrop": "[[1102,6],[35002,5]]",
           "m_ClientProDrop": "[[35102,20]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,4]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "3": {
           "m_bError": null,
@@ -325,7 +383,9 @@
           "m_ClientMustDrop": "[[1102,7],[35003,5]]",
           "m_ClientProDrop": "[[35103,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,5]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "4": {
           "m_bError": null,
@@ -335,7 +395,9 @@
           "m_ClientMustDrop": "[[1102,7],[35004,5]]",
           "m_ClientProDrop": "[[35104,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,5]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "5": {
           "m_bError": null,
@@ -345,7 +407,9 @@
           "m_ClientMustDrop": "[[1102,8],[35005,5]]",
           "m_ClientProDrop": "[[35105,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,6]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "6": {
           "m_bError": null,
@@ -355,7 +419,9 @@
           "m_ClientMustDrop": "[[1102,8],[35006,5]]",
           "m_ClientProDrop": "[[35106,40]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,6]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "7": {
           "m_bError": null,
@@ -365,7 +431,9 @@
           "m_ClientMustDrop": "[[1102,9],[35007,5]]",
           "m_ClientProDrop": "[[35107,50]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,7]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "8": {
           "m_bError": null,
@@ -375,7 +443,9 @@
           "m_ClientMustDrop": "[[1102,10],[35008,5]]",
           "m_ClientProDrop": "[[35108,70]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "7"
+          "m_ClientQuality": "7",
+          "m_MonthlyPrivilegeReward": "[[1102,7]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "9": {
           "m_bError": null,
@@ -385,7 +455,9 @@
           "m_ClientMustDrop": "[[1102,11],[35009,5]]",
           "m_ClientProDrop": "[[35109,60]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,8]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         }
       }
     },
@@ -399,90 +471,108 @@
           "m_LevelID": "2105010",
           "m_Phase": "1",
           "m_DamageLevel": null,
-          "m_ClientMustDrop": "[[1102,13],[35201,5]]",
+          "m_ClientMustDrop": "[[51010,8],[35201,7],[1102,13]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,8],[35201,2]]"
         },
         "2": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "2",
           "m_DamageLevel": "1000",
-          "m_ClientMustDrop": "[[1102,14],[35202,5]]",
+          "m_ClientMustDrop": "[[51010,9],[35202,7],[1102,14]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,9],[35202,2]]"
         },
         "3": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "3",
           "m_DamageLevel": "2000",
-          "m_ClientMustDrop": "[[1102,16],[35203,5]]",
+          "m_ClientMustDrop": "[[51010,10],[35203,7],[1102,16]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,10],[35203,2]]"
         },
         "4": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "4",
           "m_DamageLevel": "3000",
-          "m_ClientMustDrop": "[[1102,17],[35204,5]]",
+          "m_ClientMustDrop": "[[51010,12],[35204,7],[1102,17]]",
           "m_ClientProDrop": "[[35304,25]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,12],[35204,2]]"
         },
         "5": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "5",
           "m_DamageLevel": "4000",
-          "m_ClientMustDrop": "[[1102,18],[35205,5]]",
+          "m_ClientMustDrop": "[[51010,13],[35205,7],[1102,18]]",
           "m_ClientProDrop": "[[35305,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,11]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,13],[35205,2]]"
         },
         "6": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "6",
           "m_DamageLevel": "5000",
-          "m_ClientMustDrop": "[[1102,22],[35206,5]]",
+          "m_ClientMustDrop": "[[51010,14],[35206,7],[1102,22]]",
           "m_ClientProDrop": "[[35306,34]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,12]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,14],[35206,2]]"
         },
         "7": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "7",
           "m_DamageLevel": "6500",
-          "m_ClientMustDrop": "[[1102,24],[35207,5]]",
+          "m_ClientMustDrop": "[[51010,16],[35207,7],[1102,24]]",
           "m_ClientProDrop": "[[35307,38]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,13]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,16],[35207,2]]"
         },
         "8": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "8",
           "m_DamageLevel": "8000",
-          "m_ClientMustDrop": "[[1102,26],[35208,5]]",
+          "m_ClientMustDrop": "[[51010,18],[35208,7],[1102,26]]",
           "m_ClientProDrop": "[[35308,42]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,14]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,18],[35208,2]]"
         },
         "9": {
           "m_bError": null,
           "m_LevelID": "2105010",
           "m_Phase": "9",
           "m_DamageLevel": "10000",
-          "m_ClientMustDrop": "[[1102,30],[35209,5]]",
+          "m_ClientMustDrop": "[[51010,20],[35209,7],[1102,30]]",
           "m_ClientProDrop": "[[35309,85]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,15]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,20],[35209,2]]"
         }
       }
     },
@@ -496,90 +586,108 @@
           "m_LevelID": "2106010",
           "m_Phase": "1",
           "m_DamageLevel": null,
-          "m_ClientMustDrop": "[[1102,13],[35201,5]]",
+          "m_ClientMustDrop": "[[51010,8],[35201,7],[1102,13]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,8],[35201,2]]"
         },
         "2": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "2",
           "m_DamageLevel": "1000",
-          "m_ClientMustDrop": "[[1102,14],[35202,5]]",
+          "m_ClientMustDrop": "[[51010,9],[35202,7],[1102,14]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,9],[35202,2]]"
         },
         "3": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "3",
           "m_DamageLevel": "2000",
-          "m_ClientMustDrop": "[[1102,16],[35203,5]]",
+          "m_ClientMustDrop": "[[51010,10],[35203,7],[1102,16]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,10],[35203,2]]"
         },
         "4": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "4",
           "m_DamageLevel": "3000",
-          "m_ClientMustDrop": "[[1102,17],[35204,5]]",
+          "m_ClientMustDrop": "[[51010,12],[35204,7],[1102,17]]",
           "m_ClientProDrop": "[[35304,25]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,12],[35204,2]]"
         },
         "5": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "5",
           "m_DamageLevel": "4000",
-          "m_ClientMustDrop": "[[1102,18],[35205,5]]",
+          "m_ClientMustDrop": "[[51010,13],[35205,7],[1102,18]]",
           "m_ClientProDrop": "[[35305,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,11]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,13],[35205,2]]"
         },
         "6": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "6",
           "m_DamageLevel": "5000",
-          "m_ClientMustDrop": "[[1102,22],[35206,5]]",
+          "m_ClientMustDrop": "[[51010,14],[35206,7],[1102,22]]",
           "m_ClientProDrop": "[[35306,34]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,12]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,14],[35206,2]]"
         },
         "7": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "7",
           "m_DamageLevel": "6500",
-          "m_ClientMustDrop": "[[1102,24],[35207,5]]",
+          "m_ClientMustDrop": "[[51010,16],[35207,7],[1102,24]]",
           "m_ClientProDrop": "[[35307,38]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,13]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,16],[35207,2]]"
         },
         "8": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "8",
           "m_DamageLevel": "8000",
-          "m_ClientMustDrop": "[[1102,26],[35208,5]]",
+          "m_ClientMustDrop": "[[51010,18],[35208,7],[1102,26]]",
           "m_ClientProDrop": "[[35308,42]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,14]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,18],[35208,2]]"
         },
         "9": {
           "m_bError": null,
           "m_LevelID": "2106010",
           "m_Phase": "9",
           "m_DamageLevel": "10000",
-          "m_ClientMustDrop": "[[1102,30],[35209,5]]",
+          "m_ClientMustDrop": "[[51010,20],[35209,7],[1102,30]]",
           "m_ClientProDrop": "[[35309,85]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,15]]",
+          "m_EquipDungeonRewardCompensate": "[[51010,20],[35209,2]]"
         }
       }
     },
@@ -596,7 +704,9 @@
           "m_ClientMustDrop": "[[51010,8],[35201,7],[1102,13]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "2": {
           "m_bError": null,
@@ -606,7 +716,9 @@
           "m_ClientMustDrop": "[[51010,9],[35202,7],[1102,14]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,9]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "3": {
           "m_bError": null,
@@ -616,7 +728,9 @@
           "m_ClientMustDrop": "[[51010,10],[35203,7],[1102,16]]",
           "m_ClientProDrop": "[]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "4": {
           "m_bError": null,
@@ -626,7 +740,9 @@
           "m_ClientMustDrop": "[[51010,12],[35204,7],[1102,17]]",
           "m_ClientProDrop": "[[35304,25]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "8"
+          "m_ClientQuality": "8",
+          "m_MonthlyPrivilegeReward": "[[1102,10]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "5": {
           "m_bError": null,
@@ -636,7 +752,9 @@
           "m_ClientMustDrop": "[[51010,13],[35205,7],[1102,18]]",
           "m_ClientProDrop": "[[35305,30]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,11]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "6": {
           "m_bError": null,
@@ -646,7 +764,9 @@
           "m_ClientMustDrop": "[[51010,14],[35206,7],[1102,22]]",
           "m_ClientProDrop": "[[35306,34]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,12]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "7": {
           "m_bError": null,
@@ -656,7 +776,9 @@
           "m_ClientMustDrop": "[[51010,16],[35207,7],[1102,24]]",
           "m_ClientProDrop": "[[35307,38]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,13]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "8": {
           "m_bError": null,
@@ -666,7 +788,9 @@
           "m_ClientMustDrop": "[[51010,18],[35208,7],[1102,26]]",
           "m_ClientProDrop": "[[35308,42]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,14]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         },
         "9": {
           "m_bError": null,
@@ -676,7 +800,9 @@
           "m_ClientMustDrop": "[[51010,20],[35209,7],[1102,30]]",
           "m_ClientProDrop": "[[35309,85]]",
           "m_ClientStarDrop": "[[1102,5]]",
-          "m_ClientQuality": "9"
+          "m_ClientQuality": "9",
+          "m_MonthlyPrivilegeReward": "[[1102,15]]",
+          "m_EquipDungeonRewardCompensate": "[]"
         }
       }
     }

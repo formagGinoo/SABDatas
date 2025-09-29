@@ -124,9 +124,6 @@ function Form_ActivityMinigame108:OnActive()
   if act_data then
     self.server_gameStat = act_data.server_data.stMiniGame.mGameStat
     self.server_gameScore = act_data.server_data.stMiniGame.mGameScore
-    if gameStat == nil or table.size(gameStat) ~= 0 then
-    else
-    end
   end
   local difficult_unlock = 1
   self.m_pnl_lock1:SetActive(false)

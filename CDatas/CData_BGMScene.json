@@ -101,6 +101,11 @@
       "m_ID": "\"TimeTower_ExHall_1\"",
       "m_BGM": "[[1,100201],[3,100202]]"
     },
+    "\"ExHall01A_prison\"": {
+      "m_bError": null,
+      "m_ID": "\"ExHall01A_prison\"",
+      "m_BGM": "[[1,100201],[3,100202]]"
+    },
     "\"wolfvillage_1_A_gate\"": {
       "m_bError": null,
       "m_ID": "\"wolfvillage_1_A_gate\"",
@@ -887,5 +892,5 @@
       "m_BGM": "[[1,100701],[3,100702]]"
     }
   },
-  "status": "processed_177_items"
+  "status": "processed_178_items"
 }

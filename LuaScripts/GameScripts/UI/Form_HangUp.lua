@@ -52,6 +52,7 @@ end
 
 function Form_HangUp:CheckRegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_common_redpoint, RedDotDefine.ModuleType.HangUpMain)
+  self:RegisterOrUpdateRedDotItem(self.m_common_privilege, RedDotDefine.ModuleType.HangUpMainVip)
 end
 
 function Form_HangUp:OnActive()

@@ -75,6 +75,17 @@ if CS.UnityEngine.Application.isPlaying then
     log.info("Failed to use UseGlobal: " .. tostring(err))
   end
   CS.MUF.Download.DownloadResource.Instance:InitDownload()
+  if CS.MUF.Resource.ResourceManager.GetUseGlobal() then
+    local newGroupIDStr = CS.UnityEngine.PlayerPrefs.GetString("CloseComplianceResourceGroupID", "")
+    if newGroupIDStr ~= "" then
+      local vNewGroupID = string.split(newGroupIDStr, ";")
+      local groudIdList = CS.System.Collections.Generic.List(CS.System.String)()
+      for k, v in ipairs(vNewGroupID) do
+        groudIdList:Add(tostring(v))
+      end
+      CS.MUF.Resource.ResourceManager.SetGlobalResGroup(groudIdList)
+    end
+  end
   StackTop:TryLoadUI(UIDefines.ID_FORM_WAITING, nil, nil)
   local bHQ = CS.MUF.Resource.ResourceManager.GetHQ2D()
   StackSpecial:TryLoadUI(UIDefines.ID_FORM_VIEDO, function()
@@ -84,12 +95,16 @@ if CS.UnityEngine.Application.isPlaying then
     CS.UI.UILuaHelper.SetMainCamera(true, cameraRoot)
     cameraRoot.enabled = true
     local videoName = "UI_Login_Main"
-    local tempVideoName = DealPlaySelectVideo()
+    local tempVideoName, prefabName, defalutPrefabName = DealPlaySelectVideo()
     if tempVideoName and CS.MUF.Resource.ResourceLocationHelper.Instance:IsFileExists(tempVideoName .. ".mp4", CS.MUF.Resource.ResourceType.Video) then
       videoName = tempVideoName
     end
+    if not prefabName or not CS.MUF.Resource.ResourceLocationHelper.Instance:IsFileExists(prefabName, CS.MUF.Resource.ResourceType.UI) then
+      prefabName = defalutPrefabName
+    end
     CS.VideoManager.Instance:PlayFromAddResReal(videoName, "", false, nil, CS.UnityEngine.ScaleMode.ScaleAndCrop, false, true, false, false, bHQ)
-    StackFlow:Push(UIDefines.ID_FORM_LOGINNEW)
+    log.info("videoName:" .. videoName)
+    StackFlow:Push(UIDefines.ID_FORM_LOGINNEW, {bConnectGameServer = false, prefabName = prefabName})
     local CanvasSharder = CS.UnityEngine.GameObject.Find("Canvas")
     CanvasSharder.gameObject:SetActive(false)
   end, function()
@@ -105,14 +120,22 @@ function MainUpdate(dt)
 end
 
 function DealPlaySelectVideo()
-  local GlobalSettingsIns = CS.CData_GlobalSettings.GetInstance()
-  GlobalSettingsIns:Init()
-  local value
-  local tempCfg = GlobalSettingsIns:GetValue_ByName("MainLoginVideo")
-  if tempCfg and tempCfg:GetError() ~= true then
-    value = tempCfg.m_Value
+  local LoginVideoInfoIns = CS.CData_LoginVideoInfo.GetInstance()
+  LoginVideoInfoIns:Init()
+  local value, prefabName
+  local defalutPrefabName = LoginVideoInfoIns:GetValue_ByVideoID(1).m_PrefabName
+  local audioId = 0
+  local order = -1
+  local tempCfg = LoginVideoInfoIns:GetAll()
+  for _, v in pairs(tempCfg) do
+    if order < v.m_Type then
+      value = v.m_VideoName
+      prefabName = v.m_PrefabName
+      audioId = v.m_Audio
+      order = v.m_Type
+    end
   end
-  return value
+  return value, prefabName, defalutPrefabName, audioId
 end
 
 function ViewUpdate(dt)

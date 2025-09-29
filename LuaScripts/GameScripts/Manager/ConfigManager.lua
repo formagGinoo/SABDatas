@@ -73,6 +73,9 @@ function ConfigManager:CacheInstance()
       CharacterCampSub = CS.CData_CharacterCampSub.GetInstance(),
       CirculationType = CS.CData_CirculationType.GetInstance(),
       CirculationLevel = CS.CData_CirculationLevel.GetInstance(),
+      CareerLevelValue = CS.CData_CareerLevelValue.GetInstance(),
+      CareerLevelCharLocation = CS.CData_CareerLevelCharLocation.GetInstance(),
+      CareerLevelCharLocationValue = CS.CData_CareerLevelCharLocationValue.GetInstance(),
       Legacy = CS.CData_Legacy.GetInstance(),
       LegacyLevel = CS.CData_LegacyLevel.GetInstance(),
       LineUpRecommend = CS.CData_LineUpRecommend.GetInstance(),
@@ -92,6 +95,7 @@ function ConfigManager:CacheInstance()
       InteractiveGameDialog = CS.CData_InteractiveGameDialog.GetInstance()
     },
     {
+      MovieLengthData = CS.CData_MovieLengthDataNew.GetInstance(),
       BattleMD5 = CS.CData_BattleMD5.GetInstance(),
       Monster = CS.CData_Monster.GetInstance(),
       ResultConditionType = CS.CData_ResultConditionType.GetInstance(),
@@ -167,10 +171,14 @@ function ConfigManager:CacheInstance()
       EquipEffectSlotLock = CS.CData_EquipEffectSlotLock.GetInstance(),
       EquipEffectGroup = CS.CData_EquipEffectGroup.GetInstance(),
       EquipEffectSlot = CS.CData_EquipEffectSlot.GetInstance(),
+      EquipQuality = CS.CData_EquipQuality.GetInstance(),
       MoonType = CS.CData_MoonType.GetInstance(),
       CharacterDamageType = CS.CData_CharacterDamageType.GetInstance(),
       SystemUnlock = CS.CData_SystemUnlock.GetInstance(),
       AccountLevel = CS.CData_AccountLevel.GetInstance(),
+      StoreMonthlyPrivileges = CS.CData_StoreMonthlyPrivileges.GetInstance()
+    },
+    {
       Task = CS.CData_Task.GetInstance(),
       MainTaskReward = CS.CData_TaskMainReward.GetInstance(),
       DailyTaskReward = CS.CData_TaskDailyReward.GetInstance(),
@@ -221,6 +229,7 @@ function ConfigManager:CacheInstance()
       Act4Clue = CS.CData_Act4Clue.GetInstance(),
       MiniGameLegacyStage = CS.CData_MiniGameLegacyStage.GetInstance(),
       ActLostStory = CS.CData_ActLostStory.GetInstance(),
+      ActivityJumpParam = CS.CData_ActivityJumpParam.GetInstance(),
       SkillTip = CS.CData_SkillTip.GetInstance(),
       GMCommand = CS.CData_GMCommand.GetInstance(),
       GMShortcuts = CS.CData_GMShortcuts.GetInstance()
@@ -247,7 +256,15 @@ function ConfigManager:CacheInstance()
       MiniGame108Level = CS.CData_MiniGame108Level.GetInstance(),
       MiniGame108Event = CS.CData_MiniGame108Event.GetInstance(),
       MiniGame108Equipment = CS.CData_MiniGame108Equipment.GetInstance(),
-      MiniGame108Guide = CS.CData_MiniGame108Guide.GetInstance()
+      MiniGame108Guide = CS.CData_MiniGame108Guide.GetInstance(),
+      MiniGameFlopLevelInfo = CS.CData_MiniGameFlopLevelInfo.GetInstance(),
+      MiniGameFlopCardInfo = CS.CData_MiniGameFlopCardInfo.GetInstance(),
+      MiniGameFlopClueInfo = CS.CData_MiniGameFlopClueInfo.GetInstance(),
+      MiniGameFlopClueRewards = CS.CData_MiniGameFlopClueRewards.GetInstance(),
+      MiniGameA10LevelInfo = CS.CData_MiniGameA10LevelInfo.GetInstance(),
+      MiniGameA10CharParts = CS.CData_MiniGameA10CharParts.GetInstance(),
+      MiniGameA10RewardGroup = CS.CData_MiniGameA10RewardGroup.GetInstance(),
+      MiniGameA10Rewards = CS.CData_MiniGameA10Rewards.GetInstance()
     },
     {
       GuildLevel = CS.CData_GuildLevel.GetInstance(),
@@ -269,7 +286,9 @@ function ConfigManager:CacheInstance()
       HuntingRaidLevel = CS.CData_HuntingRaidLevel.GetInstance(),
       HuntingRaidRank = CS.CData_HuntingRaidRank.GetInstance(),
       HuntingRaidReward = CS.CData_HuntingRaidReward.GetInstance(),
-      HuntingRaidAchieve = CS.CData_HuntingRaidAchieve.GetInstance(),
+      HuntingRaidAchieve = CS.CData_HuntingRaidAchieve.GetInstance()
+    },
+    {
       RogueStageItemInfo = CS.CData_RogueStageItemInfo.GetInstance(),
       RogueStageItemDrop = CS.CData_RogueStageItemDrop.GetInstance(),
       RogueStageDropInfo = CS.CData_RogueStageDropInfo.GetInstance(),
@@ -301,7 +320,13 @@ function ConfigManager:CacheInstance()
       MiniGameA3WhackaMoleLevel = CS.CData_MiniGameA3WhackaMoleLevel.GetInstance(),
       MiniGameA3WhackaMoleEnemy = CS.CData_MiniGameA3WhackaMoleEnemy.GetInstance(),
       RegionMapping = CS.CData_RegionMapping.GetInstance(),
-      CharacterViewMode = CS.CData_CharacterViewMode.GetInstance()
+      CharacterViewMode = CS.CData_CharacterViewMode.GetInstance(),
+      LoungeChar = CS.CData_LoungeChar.GetInstance(),
+      LoungeCharParts = CS.CData_LoungeCharParts.GetInstance(),
+      LoungeCharProcess = CS.CData_LoungeCharProcess.GetInstance(),
+      LoungeItem = CS.CData_LoungeItem.GetInstance(),
+      LoungeValueLevel = CS.CData_LoungeValueLevel.GetInstance(),
+      LoungeCharIdle = CS.CData_LoungeCharIdle.GetInstance()
     }
   }
   self.m_mConfigInstanceCache = {}

@@ -1198,7 +1198,7 @@ function DownloadManager:DownloadAddResAll_Other(tConfigTaskResourceDownload, mF
   local iCountAllOtherReal = 0
   for i = 0, vFileInfoAll.Count - 1 do
     local sFilePath = vFileInfoAll[i]:GetResPath()
-    if not mFilePathIncluded[sFilePath] then
+    if not mFilePathIncluded[sFilePath] and not CS.AssetPackDownloader.IsAssetInPack(sFilePath, vFileInfoAll[i]:GetResMD5()) then
       iCountAllOtherReal = iCountAllOtherReal + 1
       vFilePathAllOther[iCountAllOtherReal] = sFilePath
     end

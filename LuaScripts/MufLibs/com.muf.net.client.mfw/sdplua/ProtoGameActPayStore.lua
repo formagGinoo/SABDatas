@@ -26,6 +26,8 @@ CmdActPayStoreType_DaimondBuy = 21
 CmdActPayStoreType_SignGift = 22
 CmdActPayStoreType_FashionStore = 23
 CmdActPayStoreType_PickupGiftNew = 24
+CmdActPayStoreType_Train = 25
+CmdActPayStoreType_Return = 26
 CmdActPayStoreBuyParam = sdp.SdpStruct("CmdActPayStoreBuyParam")
 CmdActPayStoreBuyParam.Definition = {
   "iActivityId",

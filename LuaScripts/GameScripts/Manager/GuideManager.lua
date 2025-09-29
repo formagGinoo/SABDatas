@@ -648,7 +648,7 @@ function GuideManager:GetFinishStepData(stepId, subStepId)
     subStepGuideId = tostring(subStepId),
     EventType = ""
   }
-  if self.guideStepConfData[stepId] then
+  if self.guideStepConfData and self.guideStepConfData[stepId] then
     local eventArr = self.guideStepConfData[stepId].EventType
     local length = eventArr.Length
     for i = 0, length - 1 do

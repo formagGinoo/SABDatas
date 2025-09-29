@@ -1,0 +1,146 @@
+{
+  "className": "CData_MiniGameA10RewardGroup",
+  "data": {
+    "1001": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "1",
+          "m_Condition": null,
+          "m_KeyLevel": "1"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "2",
+          "m_Condition": "50",
+          "m_KeyLevel": "2"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "3",
+          "m_Condition": "100",
+          "m_KeyLevel": "3"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1001",
+          "m_Gear": "4",
+          "m_Condition": "150",
+          "m_KeyLevel": "4"
+        }
+      }
+    },
+    "1002": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "1",
+          "m_Condition": null,
+          "m_KeyLevel": "5"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "2",
+          "m_Condition": "75",
+          "m_KeyLevel": "6"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "3",
+          "m_Condition": "150",
+          "m_KeyLevel": "7"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1002",
+          "m_Gear": "4",
+          "m_Condition": "225",
+          "m_KeyLevel": "8"
+        }
+      }
+    },
+    "1003": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "1",
+          "m_Condition": null,
+          "m_KeyLevel": "9"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "2",
+          "m_Condition": "100",
+          "m_KeyLevel": "10"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "11"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1003",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "12"
+        }
+      }
+    },
+    "1004": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "1004",
+          "m_Gear": "1",
+          "m_Condition": null,
+          "m_KeyLevel": "13"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "1004",
+          "m_Gear": "2",
+          "m_Condition": "100",
+          "m_KeyLevel": "14"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "1004",
+          "m_Gear": "3",
+          "m_Condition": "200",
+          "m_KeyLevel": "15"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "1004",
+          "m_Gear": "4",
+          "m_Condition": "300",
+          "m_KeyLevel": "16"
+        }
+      }
+    }
+  },
+  "status": "processed_4_items"
+}

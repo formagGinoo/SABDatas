@@ -10,24 +10,28 @@ local PaystoreType2SubPanel = {
   [MTTDProto.CmdActPayStoreType_PushGift] = "PushGiftSubPanel",
   [MTTDProto.CmdActPayStoreType_Permanent] = "MallDailyPackSubPanel",
   [MTTDProto.CmdActPayStoreType_MainStage] = "MallGoodsChapterSubPanel",
-  [MTTDProto.CmdActPayStoreType_MonthlyCard] = "MallMonthlyCardMainSubPanel",
+  [MTTDProto.CmdActPayStoreType_MonthlyCard] = "MallMonthlyCardMainSubPanelNew",
   [MTTDProto.CmdActPayStoreType_DaimondBuy] = "RechargeSubPanel",
   [MTTDProto.CmdActPayStoreType_SignGift] = "SignGiftFiveSunPanel",
   [MTTDProto.CmdActPayStoreType_FashionStore] = "FashionStoreSubPanel",
-  [MTTDProto.CmdActPayStoreType_PickupGiftNew] = "CommonUpPackSubPanel"
+  [MTTDProto.CmdActPayStoreType_PickupGiftNew] = "CommonUpPackSubPanel",
+  [MTTDProto.CmdActPayStoreType_Return] = "ActivityReturnSubPanel",
+  [MTTDProto.CmdActPayStoreType_Train] = "CharacterDevelopSubPanel"
 }
 local TabIdxToRedEunm = {
   [MTTDProto.CmdActPayStoreType_MonthlyCard] = RedDotDefine.ModuleType.MallMonthlyCardTab,
   [MTTDProto.CmdActPayStoreType_MainStage] = RedDotDefine.ModuleType.MallGoodsChapterTab,
   [MTTDProto.CmdActPayStoreType_PushGift] = RedDotDefine.ModuleType.MallPushGiftTab,
   [MTTDProto.CmdActPayStoreType_FashionStore] = RedDotDefine.ModuleType.MallFashionTab,
-  [MTTDProto.CmdActPayStoreType_SignGift] = RedDotDefine.ModuleType.MallNewStudentsSupplyPackTab
+  [MTTDProto.CmdActPayStoreType_SignGift] = RedDotDefine.ModuleType.MallNewStudentsSupplyPackTab,
+  [MTTDProto.CmdActPayStoreType_Return] = RedDotDefine.ModuleType.MallReturnTaskTab
 }
 local WindowRedEnum = {
   [1] = RedDotDefine.ModuleType.MallNewbieGiftPackTabl,
   [2] = RedDotDefine.ModuleType.ActivityGiftPackTabl,
   [3] = RedDotDefine.ModuleType.MallDailyPackTabl,
-  [8] = RedDotDefine.ModuleType.MallFashionTab
+  [8] = RedDotDefine.ModuleType.MallFashionTab,
+  [9] = RedDotDefine.ModuleType.MallReturnTaskTab
 }
 
 function Form_MallMainNew:SetInitParam(param)
@@ -141,6 +145,7 @@ function Form_MallMainNew:AddEventListeners()
   self:addEventListener("eGameEvent_Activity_ResetStatus", handler(self, self.OnMallDataRefresh))
   self:addEventListener("eGameEvent_Activity_OtherRefreshRed", handler(self, self.GetOtherActRedState))
   self:addEventListener("eGameEvent_Activity_RefreshPayStoreTimer", handler(self, self.FreshTime))
+  self:addEventListener("eGameEvent_PayStore_RedDot_ChangeCount", handler(self, self.RefreshTabRedDot))
 end
 
 function Form_MallMainNew:RemoveAllEventListeners()
@@ -258,11 +263,17 @@ function Form_MallMainNew:RefreshRedDot()
   end
 end
 
+function Form_MallMainNew:RefreshTabRedDot()
+  self:RefreshRedDot()
+  self.m_SubTabHelper:Refresh()
+end
+
 function Form_MallMainNew:FreshTime()
   local store = self.m_StoreList[self.iCurSelectMainTab][self.iCurSelectSubTab]
   if store.sColorType and store.sColorType ~= "" then
     local _, color = CS.UnityEngine.ColorUtility.TryParseHtmlString(store.sColorType)
     self.m_txt_timeleft_Text.color = color
+    self.m_img_time_Image.color = color
   end
   self.m_img_timeleft:SetActive(false)
   if store.iStoreType == MTTDProto.CmdActPayStoreType_OpenNewShop or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenCard or store.iStoreType == MTTDProto.CmdActPayStoreType_Up or store.iStoreType == MTTDProto.CmdActPayStoreType_OpenBeginner or store.iStoreType == MTTDProto.CmdActPayStoreType_StepupGift or store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGiftNew or store.iStoreType == MTTDProto.CmdActPayStoreType_PickupGift then
@@ -370,6 +381,34 @@ function Form_MallMainNew:FreshTime()
       end
     end)
     self.m_img_timeleft:SetActive(true)
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_Return then
+    local returnTaskAct = ActivityManager:GetActivityByType(MTTD.ActivityType_ReturnTask)
+    local iEndTime = returnTaskAct and returnTaskAct:GetEndTime() or 0
+    local iServerTime = TimeUtil:GetServerTimeS()
+    local ileftTime = iEndTime - iServerTime
+    ileftTime = ileftTime + 1
+    if ileftTime <= 0 then
+      self:RefreshUI(true)
+      return
+    end
+    if self.timer then
+      TimeService:KillTimer(self.timer)
+      self.timer = nil
+    end
+    local lastTime = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+    self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTime)
+    self.timer = TimeService:SetTimer(1, ileftTime, function()
+      ileftTime = ileftTime - 1
+      local lastTimeCur = TimeUtil:SecondsToFormatCNStr4(ileftTime)
+      self.m_txt_timeleft_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(220020), lastTimeCur)
+      if ileftTime <= 0 then
+        TimeService:KillTimer(self.timer)
+        self.timer = nil
+        self:InitSubPanelInfo()
+        self:RefreshUI(true)
+      end
+    end)
+    self.m_img_timeleft:SetActive(true)
   else
     self.m_img_timeleft:SetActive(false)
   end
@@ -414,6 +453,12 @@ function Form_MallMainNew:ExtraCheckStoreOpen(store)
         return true
       end
     end
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_Return then
+    local returnTaskAct = ActivityManager:GetActivityByType(MTTD.ActivityType_ReturnTask)
+    if not returnTaskAct then
+      return false
+    end
+    return returnTaskAct:IsActive()
   end
   return true
 end

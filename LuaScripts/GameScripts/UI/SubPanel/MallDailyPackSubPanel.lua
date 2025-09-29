@@ -3,6 +3,7 @@ local MallDailyPackSubPanel = class("MallDailyPackSubPanel", UISubPanelBase)
 
 function MallDailyPackSubPanel:OnInit()
   self.m_ListInfinityGrid = require("UI/Common/UIInfinityGrid").new(self.m_daily_list_InfinityGrid, "PayStore/PaidGiftPackItem", nil, true)
+  self.m_cutDownTimeTab = {}
 end
 
 local ITEM_WIDTH = 435
@@ -26,6 +27,7 @@ end
 function MallDailyPackSubPanel:OnFreshData()
   self:SendReportData()
   self.openTime = TimeUtil:GetServerTimeS()
+  self:KillCutDownTimeTab()
 end
 
 function MallDailyPackSubPanel:SetCellPerLine()
@@ -50,7 +52,8 @@ function MallDailyPackSubPanel:FreshUI()
     end
   end
   self.goodsList = {}
-  for k, v in pairs(store.stGoodsConfig.mGoods) do
+  local tempGoodsList = payStoreActivity:GetShowGoodsByStoreId(store.iStoreId)
+  for k, v in pairs(tempGoodsList) do
     v.iStoreId = store.iStoreId
     local buyTimes = payStoreActivity:GetBuyCount(v.iStoreId, v.iGoodsId)
     v.SortOrder = v.iShowOrder
@@ -69,11 +72,32 @@ function MallDailyPackSubPanel:FreshUI()
   end
   
   table.sort(self.goodsList, sortFunc)
+  self:KillCutDownTimeTab()
+  local iNewGoodIndex = 0
   for i, v in ipairs(self.goodsList) do
     v.delalyActiveTime = math.floor((i - 1) / self.m_daily_list_InfinityGrid.CellPerLine) * 0.1 + 0.1
+    if v.iLaunchTime and v.iRemovalTime and 0 < v.iLaunchTime and TimeUtil:IsInTime(v.iLaunchTime, v.iRemovalTime) then
+      local flag = LocalDataManager:GetIntSimple(tostring(store.iStoreId) .. ActivityManager.Red_Point_NewGoods .. tostring(v.iGoodsId), 0) == 0
+      if flag then
+        iNewGoodIndex = i
+        break
+      end
+    end
+    if 0 < v.iRemovalTime then
+      local curTime = TimeUtil:GetServerTimeS()
+      local left_time = v.iRemovalTime - curTime
+      self.m_cutDownTimeTab[i] = TimeService:SetTimer(1, -1, function()
+        left_time = left_time - 1
+        if left_time < 0 and self.m_cutDownTimeTab and self.m_cutDownTimeTab[i] then
+          TimeService:KillTimer(self.m_cutDownTimeTab[i])
+          self.m_cutDownTimeTab[i] = nil
+          self:FreshUI()
+        end
+      end)
+    end
   end
   self.m_ListInfinityGrid:ShowItemList(self.goodsList)
-  self.m_ListInfinityGrid:LocateTo(0)
+  self.m_ListInfinityGrid:LocateTo(iNewGoodIndex)
 end
 
 function MallDailyPackSubPanel:OnInactivePanel()
@@ -83,6 +107,16 @@ function MallDailyPackSubPanel:OnInactivePanel()
   if self.timer then
     TimeService:KillTimer(self.timer)
     self.timer = nil
+  end
+  self:KillCutDownTimeTab()
+end
+
+function MallDailyPackSubPanel:KillCutDownTimeTab()
+  if self.m_cutDownTimeTab then
+    for _, v in pairs(self.m_cutDownTimeTab) do
+      TimeService:KillTimer(v)
+    end
+    self.m_cutDownTimeTab = {}
   end
 end
 

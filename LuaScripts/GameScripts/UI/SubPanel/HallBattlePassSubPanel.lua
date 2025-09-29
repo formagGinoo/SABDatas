@@ -7,19 +7,28 @@ function HallBattlePassSubPanel:OnInit()
       btnObj = self.m_btn_store_bp,
       txtTitle = self.m_txt_shop_bp_Text,
       txtDefault = self.m_btn_store_bp.transform:Find("txt_shop_bp"),
-      redDot = self.m_bp_red_dot
+      redDot = self.m_bp_red_dot,
+      timeObj = self.m_bg_bptime,
+      timeTxt = self.m_txt_bptime_Text,
+      timer = nil
     },
     [ActivityManager.BattlePassType.MonthBp] = {
       btnObj = self.m_btn_store_month,
       txtTitle = self.m_txt_shop_month_Text,
       txtDefault = self.m_btn_store_month.transform:Find("txt_shop_month"),
-      redDot = self.m_month_red_dot
+      redDot = self.m_month_red_dot,
+      timeObj = self.m_bg_bptime_month,
+      timeTxt = self.m_txt_monthbptime_Text,
+      timer = nil
     },
     [ActivityManager.BattlePassType.ActivityUpBp] = {
       btnObj = self.m_btn_store_bp_up,
       txtTitle = self.m_txt_bp_up_Text,
       txtDefault = self.m_btn_store_bp_up.transform:Find("txt_bp_up"),
-      redDot = self.m_bp_up_red_dot
+      redDot = self.m_bp_up_red_dot,
+      timeObj = self.m_bg_bptime_up,
+      timeTxt = self.m_txt_upbptime_Text,
+      timer = nil
     }
   }
 end
@@ -29,6 +38,9 @@ function HallBattlePassSubPanel:OnActive()
 end
 
 function HallBattlePassSubPanel:OnInActive()
+  for _, v in pairs(self.configBpBtn) do
+    self:ClearAllTimer(v)
+  end
 end
 
 function HallBattlePassSubPanel:OnRefreshUI()
@@ -59,6 +71,7 @@ function HallBattlePassSubPanel:ProcessBattlePassActivity(activity)
   self:UpdateButtonDisplay(btnConfig, activity)
   self:RegisterRedDot(btnConfig, activity)
   self:BindButtonAction(btnConfig, activity)
+  self:UpdateLastTime(btnConfig, activity)
 end
 
 function HallBattlePassSubPanel:UpdateButtonDisplay(config, activity)
@@ -82,6 +95,27 @@ end
 function HallBattlePassSubPanel:RegisterRedDot(config, activity)
   if config.redDot then
     self:RegisterOrUpdateRedDotItem(config.redDot, RedDotDefine.ModuleType.BattlePass, activity:getID())
+  end
+end
+
+function HallBattlePassSubPanel:UpdateLastTime(config, activity)
+  if activity:IsShowEndTimeInHall() then
+    local endTime = activity:getActivityEndTime()
+    config.timeObj:SetActive(true)
+    self:ClearAllTimer(config)
+    config.timer = TimeService:SetTimer(1, -1, function()
+      local time = endTime - TimeUtil:GetServerTimeS()
+      config.timeTxt.text = TimeUtil:SecondsToFormatCNStr4(time)
+    end)
+  else
+    config.timeObj:SetActive(false)
+  end
+end
+
+function HallBattlePassSubPanel:ClearAllTimer(config)
+  if config.timer then
+    TimeService:KillTimer(config.timer)
+    config.timer = nil
   end
 end
 

@@ -78,8 +78,8 @@ function Form_RogueReward:FreshUI()
       end
     end)
   end
-  local rewardList = self.m_rogueStageHelper:GetCurRogueStageRewards()
-  local rewards = self:GetRewards(rewardList)
+  local rewardList, privilegeRewardList = self.m_rogueStageHelper:GetCurRogueStageRewards()
+  local rewards = self:GetRewards(rewardList, privilegeRewardList)
   self.m_rewardListInfinityGrid:ShowItemList(rewards)
   self.m_btn_get:SetActive(table.getn(rewardList) > 0)
   self.m_btn_get_gary:SetActive(table.getn(rewardList) == 0)
@@ -87,25 +87,45 @@ function Form_RogueReward:FreshUI()
   self.m_z_txt_noreward:SetActive(table.getn(rewardList) == 0)
 end
 
-function Form_RogueReward:GetRewards(rewardList)
+function Form_RogueReward:GetRewards(rewardList, privilegeRewardList)
   local rewards = {}
-  local customData
-  local GetRewardCounts = 1
   local isRewardDouble = ActivityManager:IsFullBurstDayOpen()
   if isRewardDouble then
-    GetRewardCounts = 2
-  end
-  for i = 1, GetRewardCounts do
-    if isRewardDouble then
-      if i == 1 then
-        customData = {is_extra = isRewardDouble}
-      else
-        customData = nil
+    local temp = {}
+    for _, v in ipairs(rewardList) do
+      temp[#temp + 1] = {
+        v[1],
+        v[2]
+      }
+    end
+    for _, v in ipairs(privilegeRewardList) do
+      local bIsFound = false
+      for index, value in ipairs(temp) do
+        if value[1] == v[1] then
+          value[2] = value[2] + v[2]
+          bIsFound = true
+          break
+        end
+      end
+      if not bIsFound then
+        temp[#temp + 1] = {
+          v[1],
+          v[2]
+        }
       end
     end
-    for _, v in ipairs(rewardList) do
-      rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v, customData)
+    for _, v in ipairs(temp) do
+      rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v, {is_extra = isRewardDouble})
     end
+  end
+  for _, v in ipairs(privilegeRewardList) do
+    rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v, {
+      monthlyPrivilege = true,
+      bIsGray = not MonthlyCardManager:IsPrivilegeEffect()
+    })
+  end
+  for _, v in ipairs(rewardList) do
+    rewards[#rewards + 1] = ResourceUtil:GetProcessRewardData(v, nil)
   end
   return rewards
 end

@@ -170,6 +170,8 @@ CmdActCfgCommonQuest.Definition = {
   "sSignInFloorPlan",
   "iUiType",
   "iLamiaActId",
+  "sSpineName",
+  "iHeroID",
   sHelpTips = {
     0,
     0,
@@ -238,6 +240,18 @@ CmdActCfgCommonQuest.Definition = {
   },
   iLamiaActId = {
     11,
+    0,
+    8,
+    0
+  },
+  sSpineName = {
+    12,
+    0,
+    13,
+    ""
+  },
+  iHeroID = {
+    13,
     0,
     8,
     0

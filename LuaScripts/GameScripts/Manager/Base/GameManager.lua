@@ -69,6 +69,7 @@ function meta:OnCreate()
   self:loadManager("Manager/RogueStageManager")
   self:loadManager("Manager/HuntingRaidManager")
   self:loadManager("Manager/AncientManager")
+  self:loadManager("Manager/LoungeManager")
   self:loadManager("Manager/KeyboardMappingManager")
   self:loadManager("Manager/DeeplinkManager")
 end
@@ -147,6 +148,14 @@ function meta:OnAfterInitConfig()
   for _, manager in ipairs(self.m_vManagerList) do
     if manager and manager.OnAfterInitConfig then
       manager:OnAfterInitConfig()
+    end
+  end
+end
+
+function meta:OnComplianceSwitch()
+  for _, manager in ipairs(self.m_vManagerList) do
+    if manager and manager.OnComplianceSwitch then
+      manager:OnComplianceSwitch()
     end
   end
 end

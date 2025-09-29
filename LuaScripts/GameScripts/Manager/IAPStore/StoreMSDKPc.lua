@@ -3,6 +3,7 @@ local StoreMSDKPc = class("StoreMSDKPc", StoreBase)
 
 function StoreMSDKPc:OnCreate()
   log.info("StoreMSDKPc:OnCreate")
+  self.m_bIsLoginCountry = false
 end
 
 function StoreMSDKPc:InitStore(callback)
@@ -35,7 +36,12 @@ function StoreMSDKPc:OnAfterFreshData()
 end
 
 function StoreMSDKPc:GetCreateRoleCountry()
-  return RoleManager:GetLoginRoleCountry()
+  if not self.m_bIsLoginCountry then
+    self.m_bIsLoginCountry = true
+    return RoleManager:GetLoginRoleCountry()
+  end
+  self.m_bIsLoginCountry = false
+  return RoleManager:GetCreateRoleCountry()
 end
 
 function StoreMSDKPc:GetProductInfo(productId)
@@ -61,6 +67,8 @@ function StoreMSDKPc:QueryProductsDetail(callback)
     CS.MSDKPay.Instance:QueryProductsDetailPc(_sProductList, function(isSuccess, skuInfos, code, message)
       if isSuccess then
         self.m_needQuery = false
+      else
+        CS.MSDKPay.Instance.createRoleCountry = self:GetCreateRoleCountry()
       end
       if self.m_queryCallback then
         self.m_queryCallback(isSuccess)

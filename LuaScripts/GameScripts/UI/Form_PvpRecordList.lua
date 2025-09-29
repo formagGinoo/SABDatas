@@ -5,18 +5,17 @@ end
 
 function Form_PvpRecordList:AfterInit()
   self.super.AfterInit(self)
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_PvpRecordList:OnActive()
   self.super.OnActive(self)
   self.m_recordList = self.m_csui.m_param.vRecord or {}
-  self.m_PlayerHeadCache = {}
   self:refreshLoopScroll()
 end
 
 function Form_PvpRecordList:OnInactive()
   self.super.OnInactive(self)
-  self.m_PlayerHeadCache = {}
 end
 
 function Form_PvpRecordList:refreshLoopScroll()
@@ -121,6 +120,7 @@ end
 
 function Form_PvpRecordList:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_PvpRecordList:IsOpenGuassianBlur()

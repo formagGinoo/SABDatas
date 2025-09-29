@@ -27,9 +27,6 @@ function Minigame108EventItem:OnInit()
       panel = self.m_pnl_choose
     }
   }
-  self.m_normalTxtMultColor = self.m_txt_normalnum:GetComponent("MultiColorChange")
-  self.m_successTxtMultColor = self.m_txt_successnum:GetComponent("MultiColorChange")
-  self.m_failTxtMultColor = self.m_txt_failnum:GetComponent("MultiColorChange")
 end
 
 function Minigame108EventItem:OnFreshData()
@@ -71,28 +68,16 @@ function Minigame108EventItem:FreshUI()
     self.m_txt_normal_Text.text = self.m_eventCfg.m_mResult1Desc
     self.m_txt_normaltime_Text.text = self.m_eventCfg.m_Result1Cost
     self.m_txt_normalnum_Text.text = self.m_eventCfg.m_Result1HP
-    if self.m_normalTxtMultColor and isnumber(self.m_eventCfg.m_Result1HP) then
-      local idx = self.m_eventCfg.m_Result1HP >= 0 and 0 or 1
-      self.m_normalTxtMultColor:SetColorByIndex(idx)
-    end
   end
   if type == EventType.JudgementSc then
     self.m_txt_success_Text.text = self.m_eventCfg.m_mResult1Desc
     self.m_txt_successtime_Text.text = self.m_eventCfg.m_Result1Cost
     self.m_txt_successnum_Text.text = self.m_eventCfg.m_Result1HP
-    if self.m_successTxtMultColor and isnumber(self.m_eventCfg.m_Result1HP) then
-      local idx = self.m_eventCfg.m_Result1HP >= 0 and 0 or 1
-      self.m_successTxtMultColor:SetColorByIndex(idx)
-    end
   end
   if type == EventType.JudgementFail then
     self.m_txt_fail_Text.text = self.m_eventCfg.m_mResult2Desc
     self.m_txt_failtime_Text.text = self.m_eventCfg.m_Result2Cost
     self.m_txt_failnum_Text.text = self.m_eventCfg.m_Result2HP
-  end
-  if self.m_failTxtMultColor and isnumber(self.m_eventCfg.m_Result2HP) then
-    local idx = 0 <= self.m_eventCfg.m_Result2HP and 0 or 1
-    self.m_failTxtMultColor:SetColorByIndex(idx)
   end
 end
 

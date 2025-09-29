@@ -19,6 +19,7 @@ function Form_Inherit:AfterInit()
   self.m_InheritListInfinityGrid:RegisterButtonCallback("c_btn_empty", handler(self, self.OnEmptyItemClk))
   self.m_InheritListInfinityGrid:RegisterButtonCallback("c_btn_lock", handler(self, self.OnLockBtnClk))
   self.m_InheritListInfinityGrid:RegisterButtonCallback("c_btnClick", handler(self, self.OnHeroItemClk))
+  self.m_btn_uplv_undo:SetActive(false)
   self.m_inherit_lv = 0
   self.m_unlockPosNum = 5
   self.m_maxSlotNum = tonumber(INHERIT_SYNC_GRIDS)
@@ -51,6 +52,7 @@ function Form_Inherit:AddEventListeners()
   self:addEventListener("eGameEvent_Inherit_Change", handler(self, self.RefreshUI))
   self:addEventListener("eGameEvent_Inherit_Evolve", handler(self, self.OnEvolveSuccess))
   self:addEventListener("eGameEvent_Inherit_EvolveClose", handler(self, self.OnEvolveSuccessClose))
+  self:addEventListener("eGameEvent_Inherit_LevelUp", handler(self, self.RefreshUI))
 end
 
 function Form_Inherit:RemoveAllEventListeners()
@@ -85,8 +87,14 @@ function Form_Inherit:RefreshEvoUI()
   local isEvo = InheritManager:GetInheritIsEvo()
   local beginEvoLv = InheritManager:GetInheritEvoBeginLevel()
   self.m_inheritMaxLv = InheritManager:GetInheritMaxLv()
-  self.m_btn_uplv_undo:SetActive(beginEvoLv > self.m_inherit_lv or self.m_inherit_lv == self.m_inheritMaxLv and isEvo)
+  if self.m_inherit_lv < 200 then
+    self.m_btn_uplv_undo:SetActive(false)
+  else
+    self.m_btn_uplv_undo:SetActive(beginEvoLv > self.m_inherit_lv or self.m_inherit_lv == self.m_inheritMaxLv and isEvo)
+  end
   self.m_btn_uplv:SetActive(beginEvoLv <= self.m_inherit_lv and self.m_inherit_lv < self.m_inheritMaxLv and isEvo or self.m_inherit_lv == beginEvoLv and not isEvo)
+  self.m_btn_quick_red:SetActive(self.m_inherit_lv < 200)
+  self.m_btn_quick_gray:SetActive(false)
   self.m_pnl_lv_limit:SetActive(beginEvoLv <= self.m_inherit_lv and isEvo)
   self.m_img_blood5:SetActive(not isEvo)
   self.m_pnl_tree_undo:SetActive(not isEvo)
@@ -280,6 +288,13 @@ function Form_Inherit:OnBtnuplvundoClicked()
   else
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10420)
   end
+end
+
+function Form_Inherit:OnBtnquickredClicked()
+  StackFlow:Push(UIDefines.ID_FORM_INHERITLEVELQUICKUP, {
+    closeBackFun = function()
+    end
+  })
 end
 
 function Form_Inherit:OnBtniconruleClicked()

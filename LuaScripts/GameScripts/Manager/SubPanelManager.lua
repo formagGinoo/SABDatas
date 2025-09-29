@@ -80,6 +80,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity109_dialoguedetial",
     LuaPath = "UI/SubPanel/LevelDetail109SubPanel"
   },
+  LevelDetail110SubPanel = {
+    PrefabPath = "ui_activity110_dialoguedetial",
+    LuaPath = "UI/SubPanel/LevelDetail110SubPanel"
+  },
   LegacyLevelDetailSubPanel = {
     PrefabPath = "ui_legacy_panel_detail",
     LuaPath = "UI/SubPanel/LegacyLevelDetailSubPanel"
@@ -152,6 +156,14 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_gacha_panel_1009",
     LuaPath = "UI/SubPanel/GachaSubPanels/AerboteGachaSubPanel"
   },
+  GachaSubPanel1010 = {
+    PrefabPath = "ui_gacha_panel_1010",
+    LuaPath = "UI/SubPanel/GachaSubPanels/GachaSubPanel_Lounge"
+  },
+  GachaSubPanel1011 = {
+    PrefabPath = "ui_gacha_panel_1011",
+    LuaPath = "UI/SubPanel/GachaSubPanels/Act1011GachaSubPanel"
+  },
   GachaDalCaroPushFaceSubPanel = {
     PrefabPath = "ui_activity_dalcaroface",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
@@ -192,6 +204,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_105",
     LuaPath = "UI/SubPanel/PushJumpFaceActivity"
   },
+  Activity10WarmupMinigameFlopCardSubPanel = {
+    PrefabPath = "ui_activity110_filpcard",
+    LuaPath = "UI/SubPanel/ActivityMinigameFlopCardSubPanel"
+  },
   AnnouncementPushFaceGachaSubPanel = {
     PrefabPath = "ui_annoucement_gacha",
     LuaPath = "UI/SubPanel/AnnouncementPushFaceGachaSubPanel"
@@ -207,6 +223,10 @@ SubPanelManager.SubPanelCfg = {
   AnnouncementPushFacePersonalRaidSubPanel = {
     PrefabPath = "ui_annoucement_personalraid",
     LuaPath = "UI/SubPanel/AnnouncementPushFacePersonalRaidSubPanel"
+  },
+  AnnouncementPushFaceFashionSubPanel = {
+    PrefabPath = "ui_annoucement_common_1",
+    LuaPath = "UI/SubPanel/AnnouncementPushFaceFashionSubPanel"
   },
   GuildActiveSubPanel = {
     PrefabPath = "ui_guild_panel_event",
@@ -224,9 +244,13 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_guild_panel_message",
     LuaPath = "UI/SubPanel/GuildMessageSubPanel"
   },
-  MallMonthlyCardMainSubPanel = {
-    PrefabPath = "ui_mall_MonthlyCardMain",
-    LuaPath = "UI/SubPanel/MallMonthlyCardMainSubPanel"
+  MallMonthlyCardMainSubPanelNew = {
+    PrefabPath = "ui_mall_MonthlyCardMain_New",
+    LuaPath = "UI/SubPanel/MallMonthlyCardMainSubPanelNew"
+  },
+  ActivityReturnSubPanel = {
+    PrefabPath = "ui_activity_panel_return",
+    LuaPath = "UI/SubPanel/ActivityReturnSubPanel"
   },
   MallNewbieGiftSubPanel = {
     PrefabPath = "ui_activity_panel_NewbieGift",
@@ -312,6 +336,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = "ui_activity_panel_chargerebate",
     LuaPath = "UI/SubPanel/ChargeRebateSubPanel"
   },
+  PreviewActivitySubPanel = {
+    PrefabPath = "ui_activity_panel_eventcalendar",
+    LuaPath = "UI/SubPanel/PreviewActivitySubPanel"
+  },
   PvPEnterSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/PVPEnterSubPanel"
@@ -332,6 +360,10 @@ SubPanelManager.SubPanelCfg = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/HallBgSubPanel"
   },
+  HallBattlePassSubPanel = {
+    PrefabPath = nil,
+    LuaPath = "UI/SubPanel/HallBattlePassSubPanel"
+  },
   BattlePassRewardSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/BattlePassRewardSubPanel"
@@ -339,10 +371,6 @@ SubPanelManager.SubPanelCfg = {
   BattlePassTaskSubPanel = {
     PrefabPath = nil,
     LuaPath = "UI/SubPanel/BattlePassTaskSubPanel"
-  },
-  HallBattlePassSubPanel = {
-    PrefabPath = nil,
-    LuaPath = "UI/SubPanel/HallBattlePassSubPanel"
   },
   OnePicActivitySubPanel = {
     PrefabPath = "ui_activity_single_pic",
@@ -379,6 +407,10 @@ SubPanelManager.SubPanelCfg = {
   RogueTechTreeDetailSubPanel = {
     PrefabPath = "ui_rogue_talentwindow",
     LuaPath = "UI/SubPanel/RogueTechTreeDetailSubPanel"
+  },
+  CharacterDevelopSubPanel = {
+    PrefabPath = "ui_activity_panel_LVL",
+    LuaPath = "UI/SubPanel/CharacterDevelopSubPanel"
   }
 }
 

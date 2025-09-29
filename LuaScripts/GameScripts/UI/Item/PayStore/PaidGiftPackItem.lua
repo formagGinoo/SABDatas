@@ -155,6 +155,33 @@ function PaidGiftPackItem:OnFreshData()
       end
     end
   end
+  self:RefreshNewRedDot()
+end
+
+function PaidGiftPackItem:RefreshNewRedDot()
+  local payStoreActivity = ActivityManager:GetActivityByType(MTTD.ActivityType_PayStore)
+  if not payStoreActivity then
+    return
+  end
+  local config = self.m_itemData
+  if utils.isNull(self.m_icon_new) then
+    return
+  end
+  if config.iLaunchTime and config.iRemovalTime and config.iLaunchTime > 0 then
+    local flag = LocalDataManager:GetIntSimple(tostring(config.iStoreId) .. ActivityManager.Red_Point_NewGoods .. tostring(config.iGoodsId), 0) == 0
+    self.m_icon_new:SetActive(flag)
+    if not utils.isNull(self.m_fx_buynew_loop) then
+      self.m_fx_buynew_loop:SetActive(flag)
+    end
+    LocalDataManager:SetIntSimple(tostring(config.iStoreId) .. ActivityManager.Red_Point_NewGoods .. tostring(config.iGoodsId), 1, true)
+    payStoreActivity:OnGetMallStoreOtherActRed()
+    self:broadcastEvent("eGameEvent_PayStore_RedDot_ChangeCount")
+  else
+    self.m_icon_new:SetActive(false)
+    if not utils.isNull(self.m_fx_buynew_loop) then
+      self.m_fx_buynew_loop:SetActive(false)
+    end
+  end
 end
 
 function PaidGiftPackItem:UpdateChildCount(transform, count)

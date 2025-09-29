@@ -38,8 +38,8 @@ end
 
 function UIHeroActMainSecondBase:RegisterRedDot()
   UIHeroActMainSecondBase.super.RegisterRedDot(self)
-  local hardSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.DiffLevel, 1)
-  self:RegisterOrUpdateRedDotItem(self.m_activity2_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, hardSubActID)
+  local normalSubActID = HeroActivityManager:GetSubFuncID(self.act_id, HeroActivityManager.SubActTypeEnum.NormalLevel, 2)
+  self:RegisterOrUpdateRedDotItem(self.m_activity2_redpoint, RedDotDefine.ModuleType.HeroActActivityEntry, normalSubActID)
   self:RegisterOrUpdateRedDotItem(self.m_storyentry_redpoint2, RedDotDefine.ModuleType.HeroActMemoryEntry, self.act_id)
 end
 

@@ -118,6 +118,14 @@ function HeroBaseInfoSubPanel:RefreshInheritUI()
   else
     UILuaHelper.SetColor(self.m_txt_lv_num_Text, 255, 255, 255, 1)
   end
+  local hero = InheritManager:GetTopFiveHero()
+  self.m_btn_face:SetActive(false)
+  for i = 1, 5 do
+    if hero[i] and hero[i].serverData.iHeroId == self.m_curShowHeroData.serverData.iHeroId and (resetFlag or not isHave) then
+      self.m_btn_face:SetActive(true)
+      break
+    end
+  end
 end
 
 function HeroBaseInfoSubPanel:IsCanBreak()
@@ -286,6 +294,16 @@ function HeroBaseInfoSubPanel:FreshAttrAndCareer()
   local careerCfg = CareerCfgIns:GetValue_ByCareerID(heroCfg.m_Career)
   if not careerCfg:GetError() then
     UILuaHelper.SetAtlasSprite(self.m_img_career_Image, careerCfg.m_CareerIcon)
+    local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Career)
+    UILuaHelper.SetActive(self.m_img_career_bg, isOpen)
+    if isOpen then
+      local lineIndex = self.m_img_line.transform:GetSiblingIndex()
+      local careerIndex = self.m_btn_Career_Detail.transform:GetSiblingIndex()
+      if lineIndex < careerIndex then
+        self.m_btn_Career_Detail.transform:SetSiblingIndex(lineIndex)
+        self.m_img_line.transform:SetSiblingIndex(careerIndex)
+      end
+    end
   end
 end
 
@@ -461,6 +479,7 @@ function HeroBaseInfoSubPanel:BindRedDot(heroCfg)
   local equipType = heroCfg.m_Equiptype
   local equipCirculationID = HeroManager:GetCirculationIDByType(HeroManager.CirculationType.Equip, equipType)
   self:RegisterOrUpdateRedDotItem(self.m_hero_equip_red_point, RedDotDefine.ModuleType.HeroCirculationUp, equipCirculationID)
+  self:RegisterOrUpdateRedDotItem(self.m_hero_career_red_point, RedDotDefine.ModuleType.HeroCirculationCareerUp, heroCfg.m_Career)
 end
 
 function HeroBaseInfoSubPanel:OnBtnattractClicked()
@@ -569,9 +588,15 @@ function HeroBaseInfoSubPanel:OnBtnCareerDetailClicked()
   if not self.m_curShowHeroData then
     return
   end
-  StackPopup:Push(UIDefines.ID_FORM_HEROCAREERDETAIL, {
-    heroCfg = self.m_curShowHeroData.characterCfg
-  })
+  local isOpen = UnlockSystemUtil:IsSystemOpen(GlobalConfig.SYSTEM_ID.Career)
+  if isOpen ~= true then
+    StackPopup:Push(UIDefines.ID_FORM_HEROCAREERDETAIL, {
+      heroCfg = self.m_curShowHeroData.characterCfg
+    })
+  else
+    local careerID = self.m_curShowHeroData.characterCfg.m_Career
+    StackPopup:Push(UIDefines.ID_FORM_CIRCULATIONRESONANCEPOP, {careerID = careerID, isShowBack = true})
+  end
 end
 
 function HeroBaseInfoSubPanel:OnBtnmoonClicked()
@@ -630,6 +655,10 @@ function HeroBaseInfoSubPanel:OnBtnPreviewClicked()
   if fashionId and fashionId ~= 0 then
     StackFlow:Push(UIDefines.ID_FORM_HEROPREVIEW, {fashionId = fashionId})
   end
+end
+
+function HeroBaseInfoSubPanel:OnBtnfaceClicked()
+  StackFlow:Push(UIDefines.ID_FORM_INHERIT)
 end
 
 function HeroBaseInfoSubPanel:OnBtnskillresetgreyClicked()

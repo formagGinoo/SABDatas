@@ -88,7 +88,7 @@ function Form_LegacyActivityGuide:GetLegacyOpenCfgListAndIndex(legacyGuideItemDa
       local tempLegacyCfg = tempLegacyGuideItemData.legacyGuideData.legacyCfg
       legacyCfgList[#legacyCfgList + 1] = tempLegacyCfg
       if tempLegacyCfg.m_ID == tempLegacyID then
-        chooseIndex = index
+        chooseIndex = #legacyCfgList
       end
     end
   end

@@ -93,7 +93,7 @@ function Form_PopupReceive:RefreshItemList()
         local processData = ResourceUtil:GetProcessRewardData({
           iID = stItemInfo.iID,
           iNum = stItemInfo.iNum
-        })
+        }, stItemInfo)
         goPanelItemBig.widget:SetItemInfo(processData)
         goPanelItemBig.widget:SetItemIconClickCB(handler(self, self.OnItemIconClicked))
         if goPanelItemBig.go.transform:Find("m_fx_switch") then
@@ -112,7 +112,7 @@ function Form_PopupReceive:RefreshItemList()
                   local tempprocessData = ResourceUtil:GetProcessRewardData({
                     iID = stItemInfo.isTrunId,
                     iNum = stItemInfo.isTrunNum
-                  })
+                  }, stItemInfo)
                   goPanelItemBig.widget:SetItemInfo(tempprocessData)
                   goPanelItemBig.widget:SetItemIconClickCB(handler(self, self.OnItemIconClicked))
                 end)

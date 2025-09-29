@@ -1,0 +1,38 @@
+{
+  "className": "CData_LoungeChar",
+  "data": {
+    "102": {
+      "m_bError": null,
+      "m_ID": "102",
+      "m_Type": "2",
+      "m_Sort": null,
+      "m_mCharName": "\"\"",
+      "m_SpineName": "\"fanu_base_key\"",
+      "m_DefaultIdle": "\"\"",
+      "m_EngravingRefuse": "[]",
+      "m_MinigameOverIdle": null,
+      "m_Collision": "[15,16,17,18]",
+      "m_UnlockLimitBreakLevel": null,
+      "m_LevelExp": null,
+      "m_PropertyID": null,
+      "m_UnlockClientMessage": null
+    },
+    "20320": {
+      "m_bError": null,
+      "m_ID": "20320",
+      "m_Type": "1",
+      "m_Sort": "1",
+      "m_mCharName": "\"Fanny\"",
+      "m_SpineName": "\"fanu_base_lounge\"",
+      "m_DefaultIdle": "\"idle_01\"",
+      "m_EngravingRefuse": "[34,35,36]",
+      "m_MinigameOverIdle": "19",
+      "m_Collision": "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]",
+      "m_UnlockLimitBreakLevel": "3",
+      "m_LevelExp": "100",
+      "m_PropertyID": "1009001",
+      "m_UnlockClientMessage": "10270"
+    }
+  },
+  "status": "processed_2_items"
+}

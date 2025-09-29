@@ -289,8 +289,8 @@ function PushFaceManager:CheckIsCanAdd(CfgStr)
   return true
 end
 
-function PushFaceManager:OnMonthlyCardDailyReward()
-  self:PushFacePanel("MonthlyCardDailyReward")
+function PushFaceManager:OnMonthlyCardDailyReward(param)
+  self:PushFacePanel("MonthlyCardDailyReward", param)
   self:CheckIsNotShowAndPopPanel()
 end
 

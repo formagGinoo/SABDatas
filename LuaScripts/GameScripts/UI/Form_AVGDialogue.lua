@@ -186,6 +186,7 @@ end
 
 function Form_AVGDialogue:SetCurtainLayer(type)
   local back
+  self.m_curtain.transform:SetAsLastSibling()
   if type == 0 then
     back = self.m_bg.transform
   elseif type == 1 then

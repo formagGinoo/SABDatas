@@ -100,6 +100,13 @@ function RogueStageManager:OnRogueTakeRewardSC(stData, msg)
   local vReward = stData.vReward
   if stData.vActivityReward then
     for _, v in ipairs(stData.vActivityReward) do
+      v.is_extra = true
+      table.insert(vReward, v)
+    end
+  end
+  if stData.vMonthCardReward then
+    for _, v in ipairs(stData.vMonthCardReward) do
+      v.monthlyPrivilege = true
       table.insert(vReward, v)
     end
   end

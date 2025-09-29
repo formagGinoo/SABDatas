@@ -127,6 +127,16 @@ function CommonItem:ctor(goRoot)
     self.m_img_star = c_img_star.gameObject
     self.m_img_star:SetActive(false)
   end
+  local c_img_privilege = self.m_goRoot.transform:Find("c_img_privilege")
+  if not utils.isNull(c_img_privilege) then
+    self.m_c_img_privilege = c_img_privilege.gameObject
+    self.m_c_img_privilege:SetActive(false)
+  end
+  self.m_img_gray = self.m_goRoot.transform:Find("c_img_gray")
+  if not utils.isNull(self.m_img_gray) then
+    self.m_img_gray_Image = self.m_img_gray:GetComponent("Image")
+    self.m_grayImgMaterial = self.m_img_gray_Image.material
+  end
 end
 
 function CommonItem:RefreshNum(iNum)
@@ -135,6 +145,18 @@ function CommonItem:RefreshNum(iNum)
   end
   self.m_imageNumBG:SetActive(true)
   self.m_textNum.text = BigNumFormat(iNum)
+end
+
+function CommonItem:SetGray(active)
+  if not utils.isNull(self.m_imageItem) then
+    self.m_imageItem.material = active and self.m_grayImgMaterial or nil
+  end
+  if not utils.isNull(self.m_imageBG) then
+    self.m_imageBG.material = active and self.m_grayImgMaterial or nil
+  end
+  if not utils.isNull(self.m_imageGrade) then
+    self.m_imageGrade.material = active and self.m_grayImgMaterial or nil
+  end
 end
 
 function CommonItem:SetNumActive(active)
@@ -322,6 +344,10 @@ function CommonItem:SetItemInfo(itemData)
   if not utils.isNull(self.m_img_star) then
     self.m_img_star:SetActive(itemData.starTechEffect)
   end
+  if not utils.isNull(self.m_c_img_privilege) then
+    self.m_c_img_privilege:SetActive(itemData.monthlyPrivilege)
+  end
+  self:SetGray(itemData.bIsGray)
 end
 
 function CommonItem:SetUpGradeNum(iNum)

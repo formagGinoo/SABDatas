@@ -16,6 +16,7 @@ function Form_CastleMain:AfterInit()
   self.storyHelper = self.m_Content:GetComponent("PrefabHelper")
   self.storyHelper:RegisterCallback(handler(self, self.OnInitStoryItem))
   self.m_grayImgMaterial = self.m_icon_arrow_Image.material
+  self.leftTimes = 0
   self.m_castlePlaceButtons = {}
   self.m_backLobbyLockerID = nil
   self.m_popPanelLockerID = nil
@@ -65,17 +66,19 @@ function Form_CastleMain:CheckRegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_showroom_redpoint, RedDotDefine.ModuleType.CastleStatueRewardEntry)
   self:RegisterOrUpdateRedDotItem(self.m_hangUp_redpoint, RedDotDefine.ModuleType.HangUpEntry)
   self:RegisterOrUpdateRedDotItem(self.m_star_redpoint, RedDotDefine.ModuleType.StarPlatform)
-  self:RegisterOrUpdateRedDotItem(self.m_circulation_redpoint, RedDotDefine.ModuleType.HeroCirculationEntry)
+  self:RegisterOrUpdateRedDotItem(self.m_circulation_redpoint, RedDotDefine.ModuleType.HeroCareerEntry)
   self:RegisterOrUpdateRedDotItem(self.m_showroom_redpoint2, RedDotDefine.ModuleType.CastleStatueRewardEntry)
   self:RegisterOrUpdateRedDotItem(self.m_hangUp_redpoint2, RedDotDefine.ModuleType.HangUpEntry)
   self:RegisterOrUpdateRedDotItem(self.m_star_redpoint2, RedDotDefine.ModuleType.StarPlatform)
-  self:RegisterOrUpdateRedDotItem(self.m_circulation_redpoint2, RedDotDefine.ModuleType.HeroCirculationEntry)
+  self:RegisterOrUpdateRedDotItem(self.m_circulation_redpoint2, RedDotDefine.ModuleType.HeroCareerEntry)
   self:RegisterOrUpdateRedDotItem(self.m_wild_redpoint2, RedDotDefine.ModuleType.DispatchEntry)
   self:RegisterOrUpdateRedDotItem(self.m_wild_redpoint, RedDotDefine.ModuleType.DispatchEntry)
   self:RegisterOrUpdateRedDotItem(self.m_stronghold_redpoint, RedDotDefine.ModuleType.CastleEventEntry)
   self:RegisterOrUpdateRedDotItem(self.m_stronghold_redpoint2, RedDotDefine.ModuleType.CastleEventEntry)
   self:RegisterOrUpdateRedDotItem(self.m_meeting_redpoint, RedDotDefine.ModuleType.CastleCouncilEntry)
   self:RegisterOrUpdateRedDotItem(self.m_meeting_redpoint2, RedDotDefine.ModuleType.CastleCouncilEntry)
+  self:RegisterOrUpdateRedDotItem(self.m_lounge_redpoint, RedDotDefine.ModuleType.HeroLoungeEntry)
+  self:RegisterOrUpdateRedDotItem(self.m_lounge_redpoint2, RedDotDefine.ModuleType.HeroLoungeEntry)
   self:RegisterOrUpdateRedDotItem(self.m_vault_redpoint, RedDotDefine.ModuleType.CastlePlaceItem, {placeID = 6})
   self:RegisterOrUpdateRedDotItem(self.m_hall_redpoint, RedDotDefine.ModuleType.CastlePlaceItem, {placeID = 7})
   self:RegisterOrUpdateRedDotItem(self.m_vault_redpoint2, RedDotDefine.ModuleType.CastlePlaceItem, {placeID = 6})
@@ -277,6 +280,7 @@ function Form_CastleMain:InitPlaceButtonItem(itemNodeTrans, castlePlaceCfg)
   if nodeHero then
     heroIcon = itemNodeTrans:Find("btn_hero/img_bg/c_head_mask/icon_hero"):GetComponent(T_Image)
     btnIcon = itemNodeTrans:Find("btn_hero"):GetComponent(T_Button)
+    UILuaHelper.SetActive(nodeHero, false)
     if btnIcon then
       UILuaHelper.BindButtonClickManual(btnIcon, function()
         if self.leftTimes < 1 then
@@ -548,6 +552,11 @@ function Form_CastleMain:OnPlaceEnterItemClk(placeID, subPlaceID)
     elseif systemID == UIDefines.ID_FORM_HANGUP then
       QuickOpenFuncUtil:OpenFunc(3)
       return
+    elseif systemID == UIDefines.ID_FORM_LOUNGE then
+      local params = {
+        Event_id = "click_lounge_1"
+      }
+      ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
     end
     self:CheckEnterForm(castlePlaceCfg, subPlaceID)
     local floatWindow = castlePlaceCfg.m_FloatWindow

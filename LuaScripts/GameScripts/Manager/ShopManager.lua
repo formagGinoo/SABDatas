@@ -143,6 +143,11 @@ function ShopManager:GetShopCurFreeRefreshTimesByShopId(shopId)
   return shopData.iFreeRefreshTimes or 0
 end
 
+function ShopManager:GetShopPrivilegeFreeRefreshTimesByShopId(shopId)
+  local shopData = self.m_allShopServerDataList[shopId] or {}
+  return shopData.iMonthCardFreeRefreshTimes or 0
+end
+
 function ShopManager:GetShopCanRefreshMaxTimesByShopId(shopId)
   local shopList = self:GetShopConfigList()
   local maxRefreshTimes = 0
@@ -154,11 +159,16 @@ function ShopManager:GetShopCanRefreshMaxTimesByShopId(shopId)
       end
     end
   end
+  local privilegeTimes = 0
   if shopId == 101 then
     freeRefreshTimes = StatueShowroomManager:GetStatueEffectValue("StatueEffect_ShopNormalFreeResetMaxCount") or 0
+    local bIsEffective, privilegeEffectData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.ShopFreeFreshTimes)
+    if bIsEffective and privilegeEffectData then
+      privilegeTimes = privilegeEffectData[1][1]
+    end
   end
   maxRefreshTimes = maxRefreshTimes + freeRefreshTimes
-  return maxRefreshTimes, freeRefreshTimes
+  return maxRefreshTimes, freeRefreshTimes, privilegeTimes
 end
 
 function ShopManager:GetShopGoodsByShopId(shopId)

@@ -217,6 +217,7 @@ function Form_EquipmentCopyMain:FreshRewardList()
   end
   local rewardList = utils.changeCSArrayToLuaTable(maxPhaseCfg.m_ClientMustDrop)
   local proRewardList = utils.changeCSArrayToLuaTable(maxPhaseCfg.m_ClientProDrop)
+  local privilegeReword = utils.changeCSArrayToLuaTable(maxPhaseCfg.m_MonthlyPrivilegeReward)
   local rewardTab = {}
   local customDataTab = {}
   for i, v in ipairs(proRewardList) do
@@ -259,6 +260,15 @@ function Form_EquipmentCopyMain:FreshRewardList()
         table.insertto(rewardTab, starTechEffectTab)
       end
     end
+  end
+  for i, v in ipairs(privilegeReword) do
+    customDataTab[#customDataTab + 1] = {
+      monthlyPrivilege = true,
+      bIsGray = not MonthlyCardManager:IsPrivilegeEffect()
+    }
+  end
+  if 0 < #privilegeReword then
+    table.insertto(rewardTab, privilegeReword)
   end
   self.m_dungeonStageRewardList = rewardTab
   local dataList = {}

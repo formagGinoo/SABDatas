@@ -1,0 +1,228 @@
+{
+  "className": "CData_CareerLevelCharLocation",
+  "data": {
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "1",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "1",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "1",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "1",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "1",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "2",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "2",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "2",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "2",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "2",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "3",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "3",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "3",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "3",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "3",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "4",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "4",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "4",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "4",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "4",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "5",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "5",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "5",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "5",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "5",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_CareerType": "6",
+          "m_Location": "1",
+          "m_LevelID": "1102090"
+        },
+        "2": {
+          "m_bError": null,
+          "m_CareerType": "6",
+          "m_Location": "2",
+          "m_LevelID": "1107080"
+        },
+        "3": {
+          "m_bError": null,
+          "m_CareerType": "6",
+          "m_Location": "3",
+          "m_LevelID": "1111080"
+        },
+        "4": {
+          "m_bError": null,
+          "m_CareerType": "6",
+          "m_Location": "4",
+          "m_LevelID": "1113070"
+        },
+        "5": {
+          "m_bError": null,
+          "m_CareerType": "6",
+          "m_Location": "5",
+          "m_LevelID": "1115090"
+        }
+      }
+    }
+  },
+  "status": "processed_6_items"
+}

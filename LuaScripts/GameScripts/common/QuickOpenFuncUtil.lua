@@ -34,6 +34,9 @@ end
 __funcList[3001] = function(extData)
   StackFlow:Push(UIDefines.ID_FORM_TEAM, extData)
 end
+__funcList[3002] = function(extData)
+  StackFlow:Push(UIDefines.ID_FORM_HALLACTIVITYMAIN, extData)
+end
 __funcList[4001] = function(extData)
   local GlobalManagerIns = ConfigManager:GetConfigInsByName("GlobalSettings")
   local time = tonumber(GlobalManagerIns:GetValue_ByName("AFKRequestInterval").m_Value) or 5
@@ -216,21 +219,20 @@ __funcList[26006] = function(extData)
     log.error("QuickOpenFuncUtil:26006 extData is nil")
     return
   end
-  local ShopDefineID = {
-    [26006] = UIDefines.ID_FORM_ACTIVITY101LAMIA_SHOP,
-    [26007] = UIDefines.ID_FORM_ACTIVITY102DALCARO_SHOP,
-    [26008] = UIDefines.ID_FORM_ACTIVITY103LUOLEILAI_SHOP,
-    [26009] = UIDefines.ID_FORM_ACTIVITY105AIONA_SHOP,
-    [26010] = UIDefines.ID_FORM_ACTIVITY106QUINN_SHOP,
-    [26011] = UIDefines.ID_FORM_ACTIVITY108SHOP
-  }
   local iWindowID = tonumber(extData.ex_param[1])
   local openFlag = ShopManager:CheckShopIsOpenByWinId(iWindowID)
   if not openFlag then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10107)
     return
   end
-  local UIID = ShopDefineID[iWindowID]
+  local ActivityJumpParamIns = ConfigManager:GetConfigInsByName("ActivityJumpParam")
+  local config = ActivityJumpParamIns:GetValue_ByJumpParam(iWindowID)
+  if config:GetError() then
+    log.error("QuickOpenFuncUtil:26006 ActivityJumpParamConfig is nil, iWindowID: " .. iWindowID)
+    return
+  end
+  local sFormStr = config.m_ActivitySubType
+  local UIID = UIDefines["ID_" .. string.upper(sFormStr)]
   if UIID then
     StackFlow:Push(UIID, {sel_shop = iWindowID})
   else
@@ -653,7 +655,8 @@ function M:JumpUpActivity14DayTaskForm(iUpActivityID)
       local jumpParam = activityData.sJumpParam
       for k, v in pairs(UINames) do
         if jumpParam == v then
-          StackFlow:Push(k)
+          local params = {stActivity = stActivity}
+          StackFlow:Push(k, params)
           return
         end
       end
@@ -665,4 +668,9 @@ function M:JumpUpActivity14DayTaskForm(iUpActivityID)
   end
 end
 
+__funcList[70001] = function(extData)
+  if extData.ex_param[1] then
+    QuickOpenFuncUtil:JumpUpActivity14DayTaskForm(extData.ex_param[1])
+  end
+end
 return M

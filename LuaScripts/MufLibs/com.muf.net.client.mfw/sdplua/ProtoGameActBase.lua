@@ -206,6 +206,7 @@ CmdActivityData.Definition = {
   "sJumpParam",
   "vLanguageId",
   "iSortIndex",
+  "bInCalendar",
   iActivityId = {
     0,
     0,
@@ -589,6 +590,12 @@ CmdActivityData.Definition = {
     0,
     8,
     0
+  },
+  bInCalendar = {
+    66,
+    0,
+    1,
+    false
   }
 }
 CmdActivityStatus = sdp.SdpStruct("CmdActivityStatus")

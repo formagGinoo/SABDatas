@@ -274,6 +274,9 @@ function HeroActivityManager:LamiaGameFinishSC(data)
         act_data.server_data.stMiniGame.mGameScore[data.iGameId] = data.iScore
       end
     end
+    if act_data.server_data.stMiniGame.stMGLoveWhipInfo and data.stMGLoveWhipInfo then
+      act_data.server_data.stMiniGame.stMGLoveWhipInfo = data.stMGLoveWhipInfo
+    end
   end
   self:broadcastEvent("eGameEvent_ActMinigame_Finish", data.vAward)
 end
@@ -312,6 +315,25 @@ function HeroActivityManager:LamiaGameGetAllAwardSC(data)
     act_data.server_data.stMiniGame.iMaxAwardedGame = data.iMaxAwardedGame
   end
   self:broadcastEvent("eGameEvent_ActMemory_GetAllReward")
+end
+
+function HeroActivityManager:ReqLamiaGameRewardLoveWhipCS(iActId, iSubActId)
+  local rqs_GetAllAward = MTTDProto.Cmd_Lamia_MiniGame_LoveWhip_GetAward_CS()
+  rqs_GetAllAward.iActId = iActId
+  rqs_GetAllAward.iSubActId = iSubActId
+  RPCS():Lamia_MiniGame_LoveWhip_GetAward(rqs_GetAllAward, handler(self, self.LamiaGameRewardLoveWhipSC))
+end
+
+function HeroActivityManager:LamiaGameRewardLoveWhipSC(data)
+  local reward_list = data.vAward
+  if reward_list and next(reward_list) then
+    utils.popUpRewardUI(reward_list)
+  end
+  local act_data = self:GetHeroActData(data.iActId)
+  if act_data then
+    act_data.server_data.stMiniGame.stMGLoveWhipInfo = data.stMGLoveWhipInfo
+  end
+  self:broadcastEvent("eGameEvent_ActMinigame_GetRewardLoveWhip")
 end
 
 function HeroActivityManager:ReqAct4ClueGetAwardCS(iActId, iClueId)
@@ -711,7 +733,7 @@ function HeroActivityManager:CheckGachaIsCorveTime(params)
     if cfg then
       local corveCfg = cfg.mGachaCfg[params.gacha_id]
       if corveCfg then
-        return true, corveCfg.iBeginTime or 0, corveCfg.iEndTime or 0
+        return true, corveCfg.iBeginTime, corveCfg.iEndTime
       end
     end
   end
@@ -749,7 +771,7 @@ function HeroActivityManager:CheckShopIsCorveTime(params)
     if cfg then
       local corveCfg = cfg.mShopCfg[params.shop_id]
       if corveCfg then
-        return true, corveCfg.iBeginTime or 0, corveCfg.iEndTime or 0
+        return true, corveCfg.iBeginTime, corveCfg.iEndTime
       end
     end
   end
@@ -762,7 +784,7 @@ function HeroActivityManager:CheckMemoryIsCorveTime(params)
     if cfg then
       local corveCfg = cfg.mMiniGameCfg[params.m_MemoryID]
       if corveCfg then
-        return true, corveCfg.iOpenTime or 0, 0
+        return true, corveCfg.iOpenTime, 0
       end
     end
   end
@@ -775,7 +797,7 @@ function HeroActivityManager:CheckLevelIsCoverTime(levelCfg)
     if corveCfg then
       local cfg = corveCfg.mActLamiaLevelCfg[levelCfg.m_LevelID]
       if cfg then
-        return true, cfg.iOpenTime or 0, 0
+        return true, cfg.iOpenTime, 0
       end
     end
   end
@@ -790,8 +812,8 @@ function HeroActivityManager:CheckSubIsCoverTime(sub_id)
     if cfg then
       local corveCfg = cfg.mActivitySubCfg[sub_id]
       if corveCfg then
-        startTime = corveCfg.iBeginTime or 0
-        closeTime = corveCfg.iEndTime or 0
+        startTime = corveCfg.iBeginTime
+        closeTime = corveCfg.iEndTime
         return true, startTime, closeTime
       end
     end
@@ -804,9 +826,9 @@ function HeroActivityManager:CheckMainIsCoverTime(main_id)
     local startTime, closeTime, changeTime
     local cfg = mHeroActTimeActivity:GetHeroActTimeCfgByActID(main_id)
     if cfg then
-      startTime = cfg.iOpenTime or 0
-      closeTime = cfg.iCloseTime or 0
-      changeTime = cfg.iChangeTime or 0
+      startTime = cfg.iOpenTime
+      closeTime = cfg.iCloseTime
+      changeTime = cfg.iChangeTime
       return true, startTime, closeTime, changeTime
     end
   end
@@ -1543,6 +1565,18 @@ function HeroActivityManager:GetDailyTaskCanReceiveList(activeId)
   return vQuestId
 end
 
+function HeroActivityManager:IsHeroAct110MiniGameEntry(act_id)
+  return self:GetMinigameHelper():IsMiniGame110Entry(act_id)
+end
+
+function HeroActivityManager:IsHeroAct110MiniGameReward(act_id)
+  return self:GetMinigameHelper():IsMiniGame110HaveReward(act_id)
+end
+
+function HeroActivityManager:IsHeroAct110MiniGameStartBtnRedDot(act_id)
+  return self:GetMinigameHelper():IsHeroAct110MiniGameStartBtnRedDot(act_id)
+end
+
 function HeroActivityManager:IsHeroActSignEntryHaveRedDot(act_id)
   local flag = self:GetHeroActSignHaveRedFlag(act_id)
   return flag and 1 or 0
@@ -1707,7 +1741,7 @@ function HeroActivityManager:HeroActHallEntryHaveRedDot(params)
   if self:IsMiniGamePuzzleHaveRedDot(act_id) == 1 then
     return 1
   end
-  flag = self:GetMemoryEntryHaveRedFlag(act_id)
+  flag = self.m_minigameHelper:IsMiniGameHaveRedDot(act_id)
   if flag then
     return 1
   end
@@ -1722,10 +1756,6 @@ function HeroActivityManager:HeroActHallEntryHaveRedDot(params)
   end
   local normalSubActID = self:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.NormalLevel)
   flag = 0 < LevelHeroLamiaActivityManager:IsSubActEnterHaveRedDot(normalSubActID)
-  if flag then
-    return 1
-  end
-  flag = self:IsHeroActMiniGamePuzzleEntryHaveRedDot({actId = act_id}) == 1
   if flag then
     return 1
   end

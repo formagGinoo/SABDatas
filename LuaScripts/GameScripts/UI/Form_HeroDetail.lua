@@ -249,6 +249,10 @@ function Form_HeroDetail:OnDestroy()
     TimeService:KillTimer(self.m_dragEndTimer)
     self.m_dragEndTimer = nil
   end
+  if self.iLoungeAniTimer then
+    TimeService:KillTimer(self.iLoungeAniTimer)
+    self.iLoungeAniTimer = nil
+  end
 end
 
 function Form_HeroDetail:AddEventListeners()
@@ -260,6 +264,7 @@ function Form_HeroDetail:AddEventListeners()
   self:addEventListener("eGameEvent_Hero_RefreshSpine", handler(self, self.OnRefreshHeroSpine))
   self:addEventListener("eGameEvent_Hero_Jump", handler(self, self.OnBackClk))
   self:addEventListener("eGameEvent_Hero_SetFashion", handler(self, self.OnSetFashion))
+  self:addEventListener("eGameEvent_HeroBreakThroughPopClosed", handler(self, self.RefreshLoungeBtn))
 end
 
 function Form_HeroDetail:RemoveAllEventListeners()
@@ -367,6 +372,7 @@ function Form_HeroDetail:CheckFreshRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base3, RedDotDefine.ModuleType.HeroSkillLevelUp, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_attract, RedDotDefine.ModuleType.HeroAttractEntry, iHeroId)
   self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_Base4, RedDotDefine.ModuleType.HeroLegacyTab, iHeroId)
+  self:RegisterOrUpdateRedDotItem(self.m_img_RedDot_lounge, RedDotDefine.ModuleType.HeroLoungeEntry, iHeroId)
 end
 
 function Form_HeroDetail:FreshUI(showTabNum)
@@ -471,6 +477,36 @@ function Form_HeroDetail:FreshChangeHeroTab(index)
   self.m_btn_attract:SetActive(self.m_curShowHeroData.characterCfg.m_AttractRankTemplate > 0 and self.m_curChooseTab == HeroTagCfg.Base)
   UILuaHelper.SetActive(self.m_legacy_img_shadow, self.m_curChooseTab == HeroTagCfg.Legacy)
   UILuaHelper.SetActive(self.m_img_legacybk_top, self.m_curChooseTab == HeroTagCfg.Legacy)
+  self:RefreshLoungeBtn()
+end
+
+function Form_HeroDetail:RefreshLoungeBtn()
+  if self.m_curShowHeroData and self.m_curShowHeroData.characterCfg and self.m_curShowHeroData.characterCfg.m_HeroID then
+    local unlock, isLoungeHero = LoungeManager:CheckHeroLoungeUnlockById(self.m_curShowHeroData.characterCfg.m_HeroID)
+    local key = "HeroLoungeShowAni_" .. self.m_curShowHeroData.characterCfg.m_HeroID
+    local bIsShowAni = LocalDataManager:GetIntSimple(key, 0) == 0
+    local aniName = "Lounge_btn_lock_in"
+    if bIsShowAni and unlock and self.m_curChooseTab == HeroTagCfg.Base and isLoungeHero then
+      self.m_lock_lounge:SetActive(true)
+      UILuaHelper.PlayAnimationByName(self.m_btn_lounge, aniName)
+      LocalDataManager:SetIntSimple(key, 1)
+      local fAniLength = UILuaHelper.GetAnimationLengthByName(self.m_btn_lounge, aniName)
+      UILockIns:Lock(fAniLength)
+      if self.iLoungeAniTimer then
+        TimeService:KillTimer(self.iLoungeAniTimer)
+        self.iLoungeAniTimer = nil
+      end
+      self.iLoungeAniTimer = TimeService:SetTimer(fAniLength, 1, function()
+        self.m_btn_lounge:SetActive(self.m_curChooseTab == HeroTagCfg.Base and isLoungeHero)
+        self.m_lock_lounge:SetActive(self.m_curChooseTab == HeroTagCfg.Base and isLoungeHero and not unlock)
+      end)
+    else
+      self.m_btn_lounge:SetActive(self.m_curChooseTab == HeroTagCfg.Base and isLoungeHero)
+      self.m_lock_lounge:SetActive(self.m_curChooseTab == HeroTagCfg.Base and isLoungeHero and not unlock)
+    end
+  else
+    self.m_btn_lounge:SetActive(false)
+  end
 end
 
 function Form_HeroDetail:FreshShowJustOneShow()
@@ -1030,6 +1066,7 @@ function Form_HeroDetail:TryChangeCurHero(toHeroIndex)
     self:FreshCurTabSubPanelInfo(true)
     self:FreshHeroAttract(self.m_curShowHeroData.characterCfg.m_AttractRankTemplate, self.m_curShowHeroData.serverData.iAttractRank)
     self:CheckShowHeroTabInAim()
+    self:RefreshLoungeBtn()
   end
   
   local vPackage = {}
@@ -1293,6 +1330,27 @@ function Form_HeroDetail:OnBtnskinClicked()
   })
   self:StopCurDisPlayPlayingVoice()
   self:KillVoiceTimer()
+end
+
+function Form_HeroDetail:OnBtnloungeClicked()
+  if not self.m_curShowHeroData then
+    return
+  end
+  local heroCfg = self.m_curShowHeroData.characterCfg
+  local unlock, isLoungeHero, tips = LoungeManager:CheckHeroLoungeUnlockById(heroCfg.m_HeroID)
+  if (not unlock or not isLoungeHero) and tips then
+    StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, tips)
+    return
+  end
+  StackFlow:Push(UIDefines.ID_FORM_LOUNGE, {
+    heroId = heroCfg.m_HeroID
+  })
+  self:StopCurDisPlayPlayingVoice()
+  self:KillVoiceTimer()
+  local params = {
+    Event_id = "click_lounge_2"
+  }
+  ReportManager:ReportMessage(CS.ReportDataDefines.Client_click_event, params)
 end
 
 function Form_HeroDetail:IsFullScreen()

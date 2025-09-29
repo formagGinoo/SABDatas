@@ -348,7 +348,7 @@
       "m_UnlockType": "1",
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Castle\"",
       "m_UnlockConditionType": "[3]",
-      "m_UnlockConditionData": "[[1103060]]",
+      "m_UnlockConditionData": "[[1102090]]",
       "m_ClientMessage": "[39]"
     },
     "40": {
@@ -479,7 +479,7 @@
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_NightConversation\"",
       "m_UnlockConditionType": "[3]",
       "m_UnlockConditionData": "[[1103060]]",
-      "m_ClientMessage": "[51]"
+      "m_ClientMessage": "[52]"
     },
     "53": {
       "m_bError": null,
@@ -489,7 +489,7 @@
       "m_UnlockIcon": "\"Atlas_SystemUnlock/System_CastleMeeting\"",
       "m_UnlockConditionType": "[3]",
       "m_UnlockConditionData": "[[1103060]]",
-      "m_ClientMessage": "[51]"
+      "m_ClientMessage": "[53]"
     },
     "54": {
       "m_bError": null,
@@ -600,6 +600,26 @@
       "m_UnlockConditionType": "[3]",
       "m_UnlockConditionData": "[[1102040]]",
       "m_ClientMessage": "[6]"
+    },
+    "65": {
+      "m_bError": null,
+      "m_SystemID": "65",
+      "m_mName": "\"Satin Boudoir\"",
+      "m_UnlockType": "1",
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Lounge\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1102090]]",
+      "m_ClientMessage": "[65]"
+    },
+    "66": {
+      "m_bError": null,
+      "m_SystemID": "66",
+      "m_mName": "\"Ritual Chamber - Blood Covenant\"",
+      "m_UnlockType": "1",
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_Circulation\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1102090]]",
+      "m_ClientMessage": "[66]"
     },
     "101": {
       "m_bError": null,
@@ -762,5 +782,5 @@
       "m_ClientMessage": "[905]"
     }
   },
-  "status": "processed_76_items"
+  "status": "processed_78_items"
 }

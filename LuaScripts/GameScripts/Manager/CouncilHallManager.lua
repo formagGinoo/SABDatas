@@ -72,15 +72,17 @@ function CouncilHallManager:RqsStartCouncil(callback)
   end)
 end
 
-function CouncilHallManager:RqsEndCouncil(iIssue, iOpinion, callback)
+function CouncilHallManager:RqsEndCouncil(iIssue, iOpinion)
   local msg = MTTDProto.Cmd_Attract_EndCouncil_CS()
   msg.iIssue = iIssue
   msg.iOpinion = iOpinion
   RPCS():Attract_EndCouncil(msg, function(sc)
     self.stCouncil.iChosenIssue = iIssue
-    if callback then
-      callback(sc.vHeroResult)
-    end
+    self.stCouncil.iConcilTimes = sc.iConcilTimes
+    self.stCouncil.iConcilMonthCardTimes = sc.iConcilMonthCardTimes
+    self.stCouncil.vDailyIssue = sc.vDailyIssue
+    self.stCouncil.vDailyFinishIssue = sc.vDailyFinishIssue
+    self:broadcastEvent("eGameEvent_OnAttract_EndCouncil", sc.vHeroResult)
     AttractManager:UpdateHeroAttractExpFromCouncilHall(sc.vHeroResult)
     self:FreshCouncilEntryRedDot()
   end)
@@ -92,6 +94,16 @@ end
 
 function CouncilHallManager:GetCouncilHero()
   return self.stCouncil.vHero or {}
+end
+
+function CouncilHallManager:GetCouncilHallCanStartCouncil()
+  if not self.stCouncil then
+    return false
+  end
+  local iConcilTimes = self.stCouncil.iConcilTimes or 0
+  local iConcilMonthCardTimes = self.stCouncil.iConcilMonthCardTimes or 0
+  local bIsPrivilege, vPrivilegeData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.CouncilHallFreeTimes)
+  return iConcilTimes == 0 or bIsPrivilege and iConcilMonthCardTimes < vPrivilegeData[1][1]
 end
 
 function CouncilHallManager:GetCouncilHallIssueCfgByID(iIssue)
@@ -356,7 +368,7 @@ function CouncilHallManager:LoadCouncilHallScene(cancelcallback)
   GameSceneManager:ChangeGameScene(sceneID, function(isSuc)
     if isSuc then
       local heroList = self:GetCouncilHero()
-      if (not self.stCouncil.iChosenIssue or self.stCouncil.iChosenIssue == 0) and 0 < #heroList then
+      if self:GetCouncilHallCanStartCouncil() and 0 < #heroList then
         self:LoadCouncilHallHero(self.stCouncil.vHero)
       else
         self:CheckIsPlayEntryShow()
@@ -609,7 +621,7 @@ end
 
 function CouncilHallManager:IsDailyEntryCouncil()
   local nextDayResetTime = TimeUtil:GetNextResetTime(TimeUtil:GetCommonResetTime())
-  local todayFinished = self.stCouncil.iChosenIssue and self.stCouncil.iChosenIssue ~= 0
+  local todayFinished = not self:GetCouncilHallCanStartCouncil()
   if todayFinished then
     return
   end

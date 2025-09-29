@@ -1063,4 +1063,19 @@ function utils.openFormBagEquipFilter(equipDataList, click_transform, content_pi
   StackPopup:Push(UIDefines.ID_FORM_BAGFILTER, params)
 end
 
+function utils.hex2color(hex)
+  hex = hex:gsub("#", "")
+  if #hex ~= 6 and #hex ~= 8 then
+    error("Hexadecimal color code must be 6 or 8 characters long.")
+  end
+  local r = tonumber(hex:sub(1, 2), 16) / 255
+  local g = tonumber(hex:sub(3, 4), 16) / 255
+  local b = tonumber(hex:sub(5, 6), 16) / 255
+  local a = 1
+  if #hex == 8 then
+    a = tonumber(hex:sub(7, 8), 16) / 255
+  end
+  return Color.New(r, g, b, a)
+end
+
 return utils

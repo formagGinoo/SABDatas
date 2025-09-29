@@ -98,7 +98,21 @@
       "m_LegacyChapterID": null,
       "m_Order": "7",
       "m_UnlockIcon": "\"Atlas_Legacy/Legacy_900007_1\""
+    },
+    "90008": {
+      "m_bError": null,
+      "m_ID": "90008",
+      "m_Quality": "4",
+      "m_mName": "\"Peacemaker\"",
+      "m_mDesc": "\"The energy concealed within the Artifact can hugely enhance the combat abilities of Vassals.\n<alpha=#80>Forged in black iron, its heat clings to the skin, like the heartbeat of sin itself. Sparks ignite the powder within, and the abyss answers with a roar.\"",
+      "m_Icon": "\"Atlas_Legacy/Legacy_900008\"",
+      "m_Skillgroup1": "15",
+      "m_Skillgroup2": "16",
+      "m_Skillgroup3": null,
+      "m_LegacyChapterID": "10013",
+      "m_Order": "8",
+      "m_UnlockIcon": "\"Atlas_Legacy/Legacy_900008_1\""
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_8_items"
 }

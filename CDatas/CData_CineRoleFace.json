@@ -616,7 +616,28 @@
       "m_PosX": null,
       "m_PosY": null,
       "m_Replace": "1"
+    },
+    "\"Fanu_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Fanu_Base003\"",
+      "m_PosX": "390",
+      "m_PosY": "441",
+      "m_Replace": null
+    },
+    "\"Evna_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Evna_Base003\"",
+      "m_PosX": "455",
+      "m_PosY": "444",
+      "m_Replace": null
+    },
+    "\"Fanu_Young003\"": {
+      "m_bError": null,
+      "m_ID": "\"Fanu_Young003\"",
+      "m_PosX": "432",
+      "m_PosY": "584",
+      "m_Replace": null
     }
   },
-  "status": "processed_88_items"
+  "status": "processed_91_items"
 }

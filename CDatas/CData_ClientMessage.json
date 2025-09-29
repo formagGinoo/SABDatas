@@ -174,17 +174,17 @@
     "39": {
       "m_bError": null,
       "m_ID": "39",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-9</style> to unlock.\""
     },
     "40": {
       "m_bError": null,
       "m_ID": "40",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>3-3</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>3-3</style> to unlock [Observatory].\""
     },
     "41": {
       "m_bError": null,
       "m_ID": "41",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock [Hall of Honor].\""
     },
     "42": {
       "m_bError": null,
@@ -234,7 +234,17 @@
     "51": {
       "m_bError": null,
       "m_ID": "51",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock.\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock [Wilderness Expedition].\""
+    },
+    "52": {
+      "m_bError": null,
+      "m_ID": "52",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock [Starlit Memoir].\""
+    },
+    "53": {
+      "m_bError": null,
+      "m_ID": "53",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>2-6</style> to unlock [Council Chamber].\""
     },
     "55": {
       "m_bError": null,
@@ -260,6 +270,16 @@
       "m_bError": null,
       "m_ID": "61",
       "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock\""
+    },
+    "65": {
+      "m_bError": null,
+      "m_ID": "65",
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-9</style> to unlock.\""
+    },
+    "66": {
+      "m_bError": null,
+      "m_ID": "66",
+      "m_mContent": "\"Clear [Threads of Fate <style=Clientmessage01>1-9</style>] to unlock.\""
     },
     "101": {
       "m_bError": null,
@@ -826,6 +846,36 @@
       "m_ID": "10251",
       "m_mContent": "\"Message Cooldown\""
     },
+    "10252": {
+      "m_bError": null,
+      "m_ID": "10252",
+      "m_mContent": "\"Message Pinned\""
+    },
+    "10253": {
+      "m_bError": null,
+      "m_ID": "10253",
+      "m_mContent": "\"Unpinned\""
+    },
+    "10270": {
+      "m_bError": null,
+      "m_ID": "10270",
+      "m_mContent": "\"Unlocks at Spirit Siphon Phase {0}\""
+    },
+    "10271": {
+      "m_bError": null,
+      "m_ID": "10271",
+      "m_mContent": "\"Clan Establishment on Cooldown\""
+    },
+    "10272": {
+      "m_bError": null,
+      "m_ID": "10272",
+      "m_mContent": "\"Joining Clan on Cooldown\""
+    },
+    "10273": {
+      "m_bError": null,
+      "m_ID": "10273",
+      "m_mContent": "\"Minimum Joining LV. Not Met\""
+    },
     "10300": {
       "m_bError": null,
       "m_ID": "10300",
@@ -1091,6 +1141,21 @@
       "m_ID": "11128",
       "m_mContent": "\"Insufficient Vassals for Transfusion.\""
     },
+    "11901": {
+      "m_bError": null,
+      "m_ID": "11901",
+      "m_mContent": "\"Blood Covenant Successful\""
+    },
+    "11902": {
+      "m_bError": null,
+      "m_ID": "11902",
+      "m_mContent": "\"Clear [Threads of Fate <style=Clientmessage01>{0}</style>] to unlock.\""
+    },
+    "11903": {
+      "m_bError": null,
+      "m_ID": "11903",
+      "m_mContent": "\"No other available Vassals yet.\""
+    },
     "12001": {
       "m_bError": null,
       "m_ID": "12001",
@@ -1169,7 +1234,7 @@
     "13009": {
       "m_bError": null,
       "m_ID": "13009",
-      "m_mContent": "\"Spirit Siphon level cap reached.\""
+      "m_mContent": "\"Spirit Siphon Cap Reached\""
     },
     "13010": {
       "m_bError": null,
@@ -1280,6 +1345,11 @@
       "m_bError": null,
       "m_ID": "13031",
       "m_mContent": "\"<style=Clientmessage01>{0}</style> has ended.\""
+    },
+    "13032": {
+      "m_bError": null,
+      "m_ID": "13032",
+      "m_mContent": "\"Transfusion Upgrade Requirements Not Met!\""
     },
     "20000": {
       "m_bError": null,
@@ -1971,6 +2041,21 @@
       "m_ID": "40053",
       "m_mContent": "\"Selected Equipment Unchanged\""
     },
+    "40054": {
+      "m_bError": null,
+      "m_ID": "40054",
+      "m_mContent": "\"Requirement: Reach <style=Highlight>A</style> Grade on <style=Highlight>{0}</style> and time reaches <style=Highlight>{1}</style>.\""
+    },
+    "40055": {
+      "m_bError": null,
+      "m_ID": "40055",
+      "m_mContent": "\"Requirement: Clear <style=Highlight>{0}</style> and time reaches <style=Highlight>{1}</style>.\""
+    },
+    "40056": {
+      "m_bError": null,
+      "m_ID": "40056",
+      "m_mContent": "\"Unlocks when Vassal Fanny reaches Spirit Siphon Tier {0}.\""
+    },
     "41001": {
       "m_bError": null,
       "m_ID": "41001",
@@ -2296,6 +2381,16 @@
       "m_ID": "52011",
       "m_mContent": "\"{0} has been successfully unlocked.\""
     },
+    "52012": {
+      "m_bError": null,
+      "m_ID": "52012",
+      "m_mContent": "\"Please unlock {0} first.\""
+    },
+    "52013": {
+      "m_bError": null,
+      "m_ID": "52013",
+      "m_mContent": "\"Complete stage objectives to unlock Bundle.\""
+    },
     "53001": {
       "m_bError": null,
       "m_ID": "53001",
@@ -2382,5 +2477,5 @@
       "m_mContent": "\"Unlocked by default.\""
     }
   },
-  "status": "processed_476_items"
+  "status": "processed_495_items"
 }

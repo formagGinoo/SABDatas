@@ -37,6 +37,7 @@ function Form_CommonTipCostOne:FreshData()
     self.m_ConfirmCommonTipsID = tParam.confirmCommonTipsID
     self.m_formatFun = tParam.formatFun
     self.m_sureBackFun = tParam.funSure
+    self.m_bCommonPrivilege = tParam.bCommonPrivilege
     self.m_csui.m_param = nil
   end
 end
@@ -51,6 +52,7 @@ end
 function Form_CommonTipCostOne:FreshUI()
   self:FreshItemUI()
   self:FreshWord()
+  self:CheckShowPrivilege()
 end
 
 function Form_CommonTipCostOne:FreshItemUI()
@@ -76,6 +78,12 @@ function Form_CommonTipCostOne:FreshWord()
     commonTextStr = self:DefaultFormat(commonTextStr)
   end
   self.m_word_Text.text = commonTextStr
+end
+
+function Form_CommonTipCostOne:CheckShowPrivilege()
+  if not utils.isNull(self.m_common_privilege) then
+    self.m_common_privilege:SetActive(self.m_bCommonPrivilege)
+  end
 end
 
 function Form_CommonTipCostOne:DefaultFormat(commonTextStr)

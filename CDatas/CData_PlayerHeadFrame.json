@@ -805,7 +805,7 @@
       "m_ItemRarity": "3",
       "m_mGetwayDes": "\"Against the Dying Light Rewards\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1420006\"",
-      "m_mHeadFrameDesc": "\"Unlocks the \"Nightwalker\" Avatar Border. Can be changed in Profile Settings.\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Nightwalker\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1420006\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
@@ -823,8 +823,26 @@
       "m_ItemRarity": "3",
       "m_mGetwayDes": "\"Among Strangers Rewards\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1420007\"",
-      "m_mHeadFrameDesc": "\"Unlocks the \"Last Warmth\" avatar frame. Can be changed in Profile Settings.\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Last Warmth\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1420007\"",
+      "m_HeadFrameEft": "\"\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
+    },
+    "1420008": {
+      "m_bError": null,
+      "m_HeadFrameID": "1420008",
+      "m_mHeadName": "\"Cage of Thorns\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Cage of Thorns\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Love and Lust Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1420008\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Cage of Thorns\" avatar frame. Can be changed in Profile.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1420008\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": "1",
       "m_QucikChannelCode": null
@@ -1147,7 +1165,7 @@
       "m_ItemRarity": "3",
       "m_mGetwayDes": "\"Participate in Creator Events to obtain.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1430016\"",
-      "m_mHeadFrameDesc": "\"Unlocks the Creator's Exclusive avatar frame. Can be changed in Profile.\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Creator's Exclusive\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1430016\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
@@ -1165,12 +1183,12 @@
       "m_ItemRarity": "3",
       "m_mGetwayDes": "\"Participate in Art Contests to obtain.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1430017\"",
-      "m_mHeadFrameDesc": "\"Unlocks the Contest Winner's avatar frame. Can be changed in Profile.\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Contest Winner's\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1430017\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     }
   },
-  "status": "processed_65_items"
+  "status": "processed_66_items"
 }

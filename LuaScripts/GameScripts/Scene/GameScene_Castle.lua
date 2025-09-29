@@ -26,6 +26,7 @@ function GameScene_Castle:OnEnterScene(iSceneIDPrev)
       self.m_castleManager:SetCameraState2CouncilHall(placeID)
     end
   end
+  CS.GameQualityManager.Instance:SetSystemQuality()
 end
 
 function GameScene_Castle:OnLeaveScene(iSceneIDNext)
@@ -39,6 +40,7 @@ function GameScene_Castle:OnLeaveScene(iSceneIDNext)
     ModuleManager:GetModuleByName("CastleModule"):ClearCastleManager()
     self.m_castleManager = nil
   end
+  CS.GameQualityManager.Instance:ResetSystemQuality()
 end
 
 function GameScene_Castle:GetEnterSceneUIDefineIDDefault()

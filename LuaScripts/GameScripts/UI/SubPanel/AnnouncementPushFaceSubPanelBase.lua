@@ -20,8 +20,7 @@ function AnnouncementPushFaceSubPanelBase:OnFreshData()
   local serverTime = TimeUtil:GetServerTimeS()
   self.m_isLeft = self.m_pushFaceData.portraitPosition == 1
   self.m_openTime, self.m_endTime = self.m_curAct:GetPushJumpTimeWindow()
-  self.m_isOpen = serverTime > self.m_openTime and serverTime < self.m_endTime
-  self.m_isEnd = TimeUtil:GetServerTimeS() > self.m_endTime
+  self.m_isOpen = TimeUtil:IsInTime(self.m_openTime, self.m_endTime)
   self:RemoveAllEventListeners()
   self:AddEventListeners()
   self:FreshUI()
@@ -44,7 +43,6 @@ function AnnouncementPushFaceSubPanelBase:StartCountdown(endTime, updateCallback
   self.m_endTimer = TimeService:SetTimer(1, -1, function()
     local remainTime = endTime - TimeUtil:GetServerTimeS()
     if remainTime < 0 then
-      self.m_isEnd = true
       if self.m_isLeft then
         if not utils.isNull(self.m_pnl_timeLeft) then
           self.m_pnl_timeLeft:SetActive(false)
@@ -61,6 +59,8 @@ function AnnouncementPushFaceSubPanelBase:StartCountdown(endTime, updateCallback
         end
       end
       self:StopCountdown()
+      UILuaHelper.SetActive(self.m_pnl_reward, false)
+      self:broadcastEvent("eGameEvent_Activity_AnnouncePushTypeClose")
     else
       updateCallback(remainTime)
     end
@@ -78,7 +78,8 @@ function AnnouncementPushFaceSubPanelBase:FreshReward()
   local reward = self.m_curAct:GetPushJumpWindowRewardReward()
   local isShowReward = reward and table.getn(reward) > 0
   if not utils.isNull(self.m_pnl_reward) then
-    self.m_pnl_reward:SetActive(isShowReward)
+    local isShow = self.m_isOpen and isShowReward
+    self.m_pnl_reward:SetActive(isShow)
   end
   if not isShowReward then
     return
@@ -147,52 +148,76 @@ function AnnouncementPushFaceSubPanelBase:OnEventGetReward(stParam)
 end
 
 function AnnouncementPushFaceSubPanelBase:OnBtngotoLeftClicked()
-  QuickOpenFuncUtil:OpenFunc(self.m_pushFaceData.iJumpActivityId)
+  self:DealJump()
 end
 
 function AnnouncementPushFaceSubPanelBase:OnBtngotoRightClicked()
-  QuickOpenFuncUtil:OpenFunc(self.m_pushFaceData.iJumpActivityId)
+  self:DealJump()
 end
 
 function AnnouncementPushFaceSubPanelBase:OnBtnrewardClicked()
-  if not self.m_curAct or self.m_isEnd then
+  if not self.m_curAct then
     return
   end
   self.m_curAct:ReqGetRewardCS()
 end
 
+function AnnouncementPushFaceSubPanelBase:OnBtngoClicked()
+  self:DealJump()
+end
+
+function AnnouncementPushFaceSubPanelBase:DealJump()
+  if self.m_pushFaceData.iJumpActivityId and self.m_pushFaceData.iJumpActivityId ~= 0 and self.m_isOpen then
+    QuickOpenFuncUtil:OpenFunc(self.m_pushFaceData.iJumpActivityId)
+  end
+end
+
 function AnnouncementPushFaceSubPanelBase:UpdateLeftPanel()
-  if self.m_isOpen then
-    self:StartCountdown(self.m_endTime, function(remainTime)
+  if self.m_pushFaceData.iJumpActivityId and self.m_pushFaceData.iJumpActivityId ~= 0 then
+    self.m_pnl_btnLeft:SetActive(true)
+  else
+    self.m_pnl_btnLeft:SetActive(false)
+  end
+  if self.m_isOpen and self.m_endTime > TimeUtil:GetServerTimeS() then
+    self:StartCountdown(self.m_endTime + 1, function(remainTime)
       if not utils.isNull(self.m_txt_timeLeft) then
         self.m_txt_timeLeft_Text.text = string.CS_Format(EndTips, TimeUtil:SecondsToFormatCNStr4(remainTime))
       end
     end)
-    self.m_btn_readyLeft:SetActive(false)
-    self.m_btn_gotoLeft:SetActive(true)
   else
     self:StopCountdown()
-    self.m_btn_readyLeft:SetActive(true)
-    self.m_btn_gotoLeft:SetActive(false)
-    self.m_txt_timeLeft_Text.text = TimeUtil:ServerTimerToServerString2(self.m_openTime) .. "-" .. TimeUtil:ServerTimerToServerString2(self.m_endTime)
+    if 0 < self.m_openTime and 0 < self.m_endTime then
+      self.m_txt_timeLeft_Text.text = TimeUtil:ServerTimerToServerString2(self.m_openTime) .. "-" .. TimeUtil:ServerTimerToServerString2(self.m_endTime)
+    else
+      self.m_pnl_timeLeft:SetActive(false)
+    end
   end
+  self.m_btn_readyLeft:SetActive(not self.m_isOpen)
+  self.m_btn_gotoLeft:SetActive(self.m_isOpen)
 end
 
 function AnnouncementPushFaceSubPanelBase:UpdateRightPanel()
-  if self.m_isOpen then
-    self:StartCountdown(self.m_endTime, function(remainTime)
+  if self.m_pushFaceData.iJumpActivityId and self.m_pushFaceData.iJumpActivityId ~= 0 then
+    self.m_pnl_btnRight:SetActive(true)
+  else
+    self.m_pnl_btnRight:SetActive(false)
+  end
+  if self.m_isOpen and self.m_endTime > TimeUtil:GetServerTimeS() then
+    self:StartCountdown(self.m_endTime + 1, function(remainTime)
       if not utils.isNull(self.m_txt_timeRight) then
         self.m_txt_timeRight_Text.text = string.CS_Format(EndTips, TimeUtil:SecondsToFormatCNStr4(remainTime))
       end
     end)
-    self.m_btn_readyRight:SetActive(false)
-    self.m_btn_gotoRight:SetActive(true)
   else
     self:StopCountdown()
-    self.m_btn_readyRight:SetActive(true)
-    self.m_btn_gotoRight:SetActive(false)
-    self.m_txt_timeRight_Text.text = TimeUtil:ServerTimerToServerString2(self.m_openTime) .. "-" .. TimeUtil:ServerTimerToServerString2(self.m_endTime)
+    if 0 < self.m_openTime and 0 < self.m_endTime then
+      self.m_txt_timeRight_Text.text = TimeUtil:ServerTimerToServerString2(self.m_openTime) .. "-" .. TimeUtil:ServerTimerToServerString2(self.m_endTime)
+    else
+      self.m_pnl_timeRight:SetActive(false)
+    end
   end
+  self.m_btn_readyRight:SetActive(not self.m_isOpen)
+  self.m_btn_gotoRight:SetActive(self.m_isOpen)
 end
 
 return AnnouncementPushFaceSubPanelBase

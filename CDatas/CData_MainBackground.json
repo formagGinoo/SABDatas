@@ -87,7 +87,7 @@
       "m_mGetwayDes": "\"Ashes of Time Redemption\"",
       "m_mItemName": "\"Memory: Cycle of Destruction\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_06_s\"",
-      "m_mItemDec": "\"Unlocks the [Cycle of Destruction] scene in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
+      "m_mItemDec": "\"Unlock the [Cycle of Destruction] scene in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
       "m_HideType": null,
       "m_WwiseBg": "330"
     },
@@ -134,7 +134,7 @@
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_09_s\"",
       "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace... find its rest...\"",
       "m_HideType": null,
-      "m_WwiseBg": null
+      "m_WwiseBg": "345"
     },
     "1600010": {
       "m_bError": null,
@@ -148,8 +148,8 @@
       "m_mItemName": "\"Memory: Remains of Time\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_10_s\"",
       "m_mItemDec": "\"Unlock the Scene [Remains of Time] in Customize - Memories.\n<alpha=#80>The bells of Asta will never ring again, time forever frozen on that harvest festival day.\n'Rather than await inevitable destruction, let us seek hope in the foreign land.'\"",
-      "m_HideType": "1",
-      "m_WwiseBg": null
+      "m_HideType": null,
+      "m_WwiseBg": "361"
     },
     "1600011": {
       "m_bError": null,
@@ -159,13 +159,43 @@
       "m_Prefabs": "\"ui_panel_activity_bg108_1\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner11\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_11\"",
-      "m_mGetwayDes": "\"[A Shared Decision] Event Rewards\"",
+      "m_mGetwayDes": "\"A Shared Decision Redemption\"",
       "m_mItemName": "\"Memory: A Shared Decision\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_11_s\"",
-      "m_mItemDec": "\"Unlock the Scene [A Shared Decision] in Customize - Memories.\n<alpha=#80> When nothingness is perceived, even a colorless void takes on a fresh hue.\"",
+      "m_mItemDec": "\"Unlock the Scene [A Shared Decision] in Customize - Memories.\n<alpha=#80>When nothingness is perceived, even a colorless void takes on a fresh hue.\"",
       "m_HideType": null,
-      "m_WwiseBg": null
+      "m_WwiseBg": "360"
+    },
+    "1600012": {
+      "m_bError": null,
+      "m_BDID": "1600012",
+      "m_mBDName": "\"Broken Fetters\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg110\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner12\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_12\"",
+      "m_mGetwayDes": "\"Love and Lust Redemption\"",
+      "m_mItemName": "\"Memory: Broken Fetters\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_12_s\"",
+      "m_mItemDec": "\"Unlock the [Broken Fetters] scene in Customize - Memories.\n<alpha=#80>Shatter the chains; the caged bird shall take flight, seeking freedom in the boundless sky.\"",
+      "m_HideType": "1",
+      "m_WwiseBg": "415"
+    },
+    "1600013": {
+      "m_bError": null,
+      "m_BDID": "1600013",
+      "m_mBDName": "\"Toxic Salvation\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg110_1\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner13\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_13\"",
+      "m_mGetwayDes": "\"\"Memory Cards\" Rewards\"",
+      "m_mItemName": "\"Memory: Toxic Salvation\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_13_s\"",
+      "m_mItemDec": "\"Unlock the Toxic Salvation scene in Customize - Memories.\n<alpha=#80>Intimacy breathes as desire awakens. Hush—keep the secret locked in the gaol.\"",
+      "m_HideType": null,
+      "m_WwiseBg": "415"
     }
   },
-  "status": "processed_11_items"
+  "status": "processed_13_items"
 }

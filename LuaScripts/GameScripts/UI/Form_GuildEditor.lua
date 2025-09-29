@@ -63,7 +63,7 @@ end
 function Form_GuildEditor:RefreshUI()
   local guildData = GuildManager:GetOwnerGuildDetail()
   self.m_txt_name_Text.text = guildData.stBriefData.sName
-  self.m_txt_notice_Text.text = guildData.stBriefData.sRecruit
+  self.m_txt_notice_Text.text = guildData.stBriefData.sRecruit ~= "" and guildData.stBriefData.sRecruit or ConfigManager:GetCommonTextById(100150)
   self.m_curJoinTypeFilterIndex = guildData.stBriefData.iJoinType + 1
   self.m_curJoinLevelFilterIndex = self:GetJoinLevelIndexByLevel(guildData.stBriefData.iJoinLevel)
   self.m_widgetBtnJoinTypeFilter:RefreshTabConfig(GuildManager.GuildJoinType, self.m_curJoinTypeFilterIndex, nil, handler(self, self.OnJoinTypeChanged), nil, nil, handler(self, self.OnJoinTypeFilterOpenCB))

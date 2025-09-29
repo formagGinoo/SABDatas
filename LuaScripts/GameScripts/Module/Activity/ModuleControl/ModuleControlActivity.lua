@@ -50,11 +50,33 @@ function ModuleControlActivity:GetCommonParamByKey(sKey)
   return self.m_mCommParam[sKey]
 end
 
+function ModuleControlActivity:HasGlobalResConfig()
+  if self.m_stSdpConfig.stClientCfg and (self.m_stSdpConfig.stClientCfg.bCloseComplianceResourceSwitch ~= nil or self.m_stSdpConfig.stClientCfg.vCloseComplianceResourceGroupID ~= nil) then
+    return true
+  end
+  return false
+end
+
 function ModuleControlActivity:CloseGlobalRes()
   if self.m_stSdpConfig.stClientCfg and self.m_stSdpConfig.stClientCfg.bCloseComplianceResourceSwitch then
     return self.m_stSdpConfig.stClientCfg.bCloseComplianceResourceSwitch
   end
   return false
+end
+
+function ModuleControlActivity:SetCloseGlobalResGroupID()
+  if self.m_stSdpConfig.stClientCfg then
+    if self.m_stSdpConfig.stClientCfg.vCloseComplianceResourceGroupID and #self.m_stSdpConfig.stClientCfg.vCloseComplianceResourceGroupID > 0 then
+      local groudIdList = CS.System.Collections.Generic.List(CS.System.String)()
+      for k, v in ipairs(self.m_stSdpConfig.stClientCfg.vCloseComplianceResourceGroupID) do
+        groudIdList:Add(tostring(v))
+      end
+      CS.MUF.Resource.ResourceManager.SetGlobalResGroup(groudIdList)
+      CS.UnityEngine.PlayerPrefs.SetString("CloseComplianceResourceGroupID", table.concat(self.m_stSdpConfig.stClientCfg.vCloseComplianceResourceGroupID, ";"))
+    else
+      CS.UnityEngine.PlayerPrefs.SetString("CloseComplianceResourceGroupID", "")
+    end
+  end
 end
 
 return ModuleControlActivity

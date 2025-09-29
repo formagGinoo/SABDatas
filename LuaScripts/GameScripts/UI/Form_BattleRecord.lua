@@ -34,6 +34,7 @@ function Form_BattleRecord:AfterInit()
   self.curTimeType = TimeType.All
   self.isOrderAsc = false
   self.dropDownIsShow = false
+  self.m_PlayerHeadCache = {}
   self:InitUI()
   self.m_pnl_left_InfinityGrid:RegisterBindCallback(handler(self, self.OnTabBind))
   self.m_pnl_left_InfinityGrid:RegisterButtonCallback("c_btn_nor", handler(self, self.OnTabClick))
@@ -54,6 +55,7 @@ end
 
 function Form_BattleRecord:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_BattleRecord:HideSomeTimeTab()
@@ -74,8 +76,10 @@ function Form_BattleRecord:OnInitData()
   self:CreateDropDownTab()
 end
 
-function Form_BattleRecord:CreateHeroIconList(obj)
-  local item = obj.transform:Find("c_item_hero/m_pnl_listteam/m_form_rootrecom/c_common_hero_small")
+function Form_BattleRecord:CreateHeroIconList(item)
+  if not item then
+    return
+  end
   self.heroIconList = {}
   for i = 1, 5 do
     local go = item.parent:Find(tostring(i))
@@ -127,12 +131,21 @@ function Form_BattleRecord:OnHeroListBind(cache, go, index)
   local headData = RoleManager:GetPlayerHeadCfg(heroId)
   local headImage = cache:CircleImage("c_img_head")
   UILuaHelper.SetBaseImageAtlasSprite(headImage, headData.m_HeadPic)
-  local m_playerHeadCom = self:createPlayerHead(cache:GameObject("c_circle_head"))
-  m_playerHeadCom:SetPlayerHeadClickBackFun(function()
-    self:OnPlayerHeadClk(infoTable.stRoleInfo)
-  end)
+  local c_circle_head = cache:GameObject("c_circle_head")
+  if c_circle_head then
+    if not self.m_PlayerHeadCache then
+      self.m_PlayerHeadCache = {}
+    end
+    local gameObjectHashCode = c_circle_head:GetHashCode()
+    local tempPlayerHeadCom = self.m_PlayerHeadCache[gameObjectHashCode]
+    if not tempPlayerHeadCom then
+      tempPlayerHeadCom = self:createPlayerHead(c_circle_head)
+      self.m_PlayerHeadCache[gameObjectHashCode] = tempPlayerHeadCom
+    end
+    tempPlayerHeadCom:SetPlayerHeadInfo(infoTable.stRoleInfo)
+  end
   go.name = index
-  self:CreateHeroIconList(go)
+  self:CreateHeroIconList(cache:GameObject("c_common_hero_small").transform)
   self:RefreshHeroIcon(infoTable.stStageArrange.vHero)
 end
 

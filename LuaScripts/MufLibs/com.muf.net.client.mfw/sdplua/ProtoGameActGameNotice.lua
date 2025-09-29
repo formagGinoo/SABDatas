@@ -11,8 +11,15 @@ ActivityGameNoticeRewardType_Max = ActivityGameNoticeRewardType_Jump + 1
 CmdActGameNotice_Status = sdp.SdpStruct("CmdActGameNotice_Status")
 CmdActGameNotice_Status.Definition = {
   "bIsRewarded",
+  "bIsActReturnOpen",
   bIsRewarded = {
     0,
+    0,
+    1,
+    false
+  },
+  bIsActReturnOpen = {
+    1,
     0,
     1,
     false
@@ -256,6 +263,7 @@ CmdActCommonCfgGameNotice.Definition = {
   "reward_type",
   "mReward",
   "iCanGetRewardTime",
+  "bIfCheckReturnTaskAct",
   reward_type = {
     0,
     0,
@@ -273,6 +281,12 @@ CmdActCommonCfgGameNotice.Definition = {
     0,
     8,
     0
+  },
+  bIfCheckReturnTaskAct = {
+    3,
+    0,
+    1,
+    false
   }
 }
 CmdActCfgGameNotice = sdp.SdpStruct("CmdActCfgGameNotice")

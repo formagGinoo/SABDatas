@@ -64,3 +64,7 @@ ActivityType_ConsumeReward = 145
 ActivityType_TimelineJump = 146
 ActivityType_FightDataUpdate = 147
 ActivityType_HeroTrial = 148
+ActivityType_MiniGame = 149
+ActivityType_ReturnTask = 151
+ActivityType_Train = 152
+ActivityType_Calendar = 153

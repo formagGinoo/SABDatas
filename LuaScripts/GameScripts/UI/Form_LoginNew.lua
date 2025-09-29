@@ -25,65 +25,20 @@ function Form_LoginNew:AfterInit()
   local obj = CS.UnityEngine.GameObject.Find("Form_Viedo"):GetComponent("Canvas")
   obj.sortingOrder = 2000
   local bConnectGameServer = false
+  self.prefabName = nil
   if self.m_csui.m_param ~= nil then
-    bConnectGameServer = self.m_csui.m_param
+    bConnectGameServer = self.m_csui.m_param.bConnectGameServer
+    self.prefabName = self.m_csui.m_param.prefabName
   end
-  TimeService:SetTimer(1.0E-4, 1, function()
-    require("common/GlobalRequire")
-    if bConnectGameServer then
-      local ConnectGameServerFlow = require("JobFlow/JobGraphConnectGameServer/JobGraphConnectGameServer")
-      self.m_jobFlow = ConnectGameServerFlow.Instance()
-      self.m_jobFlow:Run(handler(self, self.OnStateChange))
-    else
-      local StartupFlow = require("JobFlow/JobGraphStartup/JobGraphStartup")
-      self.m_jobFlow = StartupFlow.Instance()
-      self.m_jobFlow:Run(handler(self, self.OnStateChange))
-    end
-  end)
-  self.m_pnl_load:SetActive(true)
-  self.m_pnl_start:SetActive(false)
-  self.m_btn_setting:SetActive(false)
-  if self.m_btn_binding then
-    self.m_btn_binding:SetActive(false)
+  self.m_loginVideoNode = nil
+  self.loadFinish = false
+  if not string.isnullorempty(self.prefabName) then
+    CS.UIManager.Instance:LoadUIPrefab(self.prefabName, function(uiName, uiObject)
+      CS.UI.UILuaHelper.SetParent(uiObject, self.m_root_login, true)
+      self.m_loginVideoNode = uiObject.transform
+      self:LoadSelfChildrenNode()
+    end)
   end
-  if self.m_btn_cadpa then
-    self.m_btn_cadpa:SetActive(false)
-  end
-  if self.m_pnl_statementinfo then
-    self.m_pnl_statementinfo:SetActive(false)
-  end
-  self.m_txt_detail_Text.text = ""
-  self.m_bar_Image.fillAmount = 0
-  local anchoredPositionBarLight = self.m_bar_light:GetComponent("RectTransform").anchoredPosition
-  anchoredPositionBarLight.x = 0
-  self.m_bar_light:GetComponent("RectTransform").anchoredPosition = anchoredPositionBarLight
-  self.m_jobProgress = 0
-  self.m_jobTargetProgress = 0
-  self.m_jobProgressClampMin = 0
-  self.m_jobProgressClampMax = 1
-  self.m_jobProgressSpeedMulti = JobProgressSpeedMultiDefault
-  self.m_txt_download_total:SetActive(false)
-  self.m_btn_account:SetActive(false)
-  self.m_btn_announcement:SetActive(false)
-  self.m_btn_pilotcode:SetActive(false)
-  self.m_btn_install:SetActive(false)
-  self:ShowVersionAndRoleID()
-  self:addEventListener("eGameEvent_Login_ShowBtnAnnouncement", handler(self, self.OnEventShowBtnAnnouncement))
-  self:addEventListener("eGameEvent_Login_ShowDownloadProgress", handler(self, self.OnEventShowDownloadProgress))
-  self:addEventListener("eGameEvent_Login_ShowAccountInfo", handler(self, self.OnEventShowAccountInfo))
-  self:addEventListener("eGameEvent_Login_SetProgressClamp", handler(self, self.OnEventSetProgressClamp))
-  self:addEventListener("eGameEvent_Login_SetRegisterRedDot", handler(self, self.OnEventSetRegisterRedDot))
-  self:addEventListener("eGameEvent_Login_FreshVersionInfo", handler(self, self.OnEventFreshVersionInfo))
-  self:addEventListener("eGameEvent_QSDKLogin_Failed", handler(self, self.OnQSDKLoginFailed))
-  self.m_iHandlerBackPressed = self:addEventListener("eGameEvent_OnBackPressed", handler(self, self.OnBackPressed))
-  self.m_z_txt_ver:SetActive(false)
-  local versionContext = CS.VersionContext.GetContext()
-  self.m_txt_version_Text.text = versionContext.ClientLocalVersionFull
-  self.m_pnl_accountinfo:SetActive(false)
-  self.m_txt_accountid:SetActive(false)
-  self.m_txt_zoneid:SetActive(false)
-  StackTop:Push(UIDefines.ID_FORM_SCREEN_CLICK)
-  self.m_bInitChannelManager = false
 end
 
 function Form_LoginNew:OnBackPressed()
@@ -108,14 +63,14 @@ function Form_LoginNew:OnEventSetRegisterRedDot()
 end
 
 function Form_LoginNew:OnActive()
-  if self.m_btn_useragreement then
-    self.m_btn_useragreement:SetActive(false)
-  end
-  if self.m_GmPos then
-    self.m_GmPos:SetActive(false)
-    if CS.ApplicationManager.Instance:IsEnableDebugNova() and CS.UI.UILuaHelper.IsAbleDebugger() then
-      self.m_GmPos:SetActive(true)
-    end
+end
+
+function Form_LoginNew:OnDestroy()
+  self.super.OnDestroy(self)
+  if self.m_loginVideoNode then
+    CS.UnityEngine.GameObject.Destroy(self.m_loginVideoNode.gameObject)
+    CS.MUF.Resource.ResourceManager.UnloadAsset(self.prefabName, CS.MUF.Resource.ResourceType.UI)
+    self.m_loginVideoNode = nil
   end
 end
 
@@ -124,6 +79,9 @@ function Form_LoginNew:CheckRegisterRedDot()
 end
 
 function Form_LoginNew:OnStateChange(node, before, after)
+  if not self.loadFinish then
+    return
+  end
   self.m_jobProgress = self.m_jobTargetProgress
   self.m_jobTargetProgress = self.m_jobFlow:GetJobProgress()
   local stNodeConfig = JobFlowNodeConfig[node.Name]
@@ -196,7 +154,7 @@ function Form_LoginNew:OnInactive()
 end
 
 function Form_LoginNew:OnUpdate(dt)
-  if self.m_jobFlow == nil then
+  if self.m_jobFlow == nil or not self.loadFinish then
     return
   end
   self.m_jobTargetProgress = self.m_jobFlow:GetJobProgress()
@@ -232,10 +190,15 @@ function Form_LoginNew:OnUpdate(dt)
         self.m_btn_account:SetActive(true)
       end
     else
-      if ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-        self.m_btn_account:SetActive(true)
+      if ChannelManager:IsUsingQSDK() then
+        if ChannelManager:IsIOS() then
+          self.m_btn_account:SetActive(true)
+        elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+          self.m_btn_account:SetActive(true)
+        else
+          self.m_btn_account:SetActive(false)
+        end
       else
-        self.m_btn_account:SetActive(false)
       end
       if ChannelManager:IsWegameChannel() and self.m_btn_binding then
         self.m_btn_binding:SetActive(true)
@@ -262,12 +225,20 @@ function Form_LoginNew:OnBtnannouncementClicked()
 end
 
 function Form_LoginNew:OnBtnaccountClicked()
-  if ChannelManager:IsUsingQSDK() and QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
-    QSDKManager:CallFunction(function()
-      log.info("open usercenter success")
-    end, function()
-      log.info("open usercenter failed")
-    end, 209)
+  if ChannelManager:IsUsingQSDK() then
+    if ChannelManager:IsIOS() then
+      QSDKManager:CallFunction(function()
+        log.info("enter usercenter success")
+      end, function()
+        log.info("enter usercenter failed")
+      end, 102)
+    elseif QSDKManager:GetParentChannelType() == "134" and QSDKManager:IsFunctionSupport(209) then
+      QSDKManager:CallFunction(function()
+        log.info("open usercenter success")
+      end, function()
+        log.info("open usercenter failed")
+      end, 209)
+    end
   else
     StackPopup:Push(UIDefines.ID_FORM_PLAYERCENTERPOP)
   end
@@ -470,6 +441,134 @@ function Form_LoginNew:CheckBindingStatus()
     end
   end
   return nil
+end
+
+function Form_LoginNew:LoadSelfChildrenNode()
+  self.m_GmPos = self.m_loginVideoNode:Find("m_GmPos").gameObject
+  self.m_pnl_start = self.m_loginVideoNode:Find("m_pnl_start").gameObject
+  self.m_pnl_start_Button = self.m_loginVideoNode:Find("m_pnl_start"):GetComponent("Button")
+  self:BindCallback(self.m_pnl_start_Button, handler(self, self.OnPnlstartClicked))
+  self.m_content_node = self.m_loginVideoNode:Find("m_content_node").gameObject
+  self.m_btn_cadpa = self.m_loginVideoNode:Find("m_content_node/m_btn_cadpa").gameObject
+  self.m_btn_cadpa_Button = self.m_loginVideoNode:Find("m_content_node/m_btn_cadpa"):GetComponent("Button")
+  self:BindCallback(self.m_btn_cadpa_Button, handler(self, self.OnBtncadpaClicked))
+  self.m_pnl_button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button").gameObject
+  self.m_btn_account = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_account").gameObject
+  self.m_btn_account_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_account"):GetComponent("Button")
+  self:BindCallback(self.m_btn_account_Button, handler(self, self.OnBtnaccountClicked))
+  self.m_LoginAccount_redPoint = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_account/m_LoginAccount_redPoint").gameObject
+  self.m_btn_announcement = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_announcement").gameObject
+  self.m_btn_announcement_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_announcement"):GetComponent("Button")
+  self:BindCallback(self.m_btn_announcement_Button, handler(self, self.OnBtnannouncementClicked))
+  self.m_btn_servercenter = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_servercenter").gameObject
+  self.m_btn_servercenter_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_servercenter"):GetComponent("Button")
+  self:BindCallback(self.m_btn_servercenter_Button, handler(self, self.OnBtnservercenterClicked))
+  self.m_serverReddotLogin = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_servercenter/icon_servercenter/m_serverReddotLogin").gameObject
+  self.m_btn_pilotcode = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_pilotcode").gameObject
+  self.m_btn_pilotcode_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_pilotcode"):GetComponent("Button")
+  self:BindCallback(self.m_btn_pilotcode_Button, handler(self, self.OnBtnpilotcodeClicked))
+  self.m_btn_setting = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_setting").gameObject
+  self.m_btn_setting_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_setting"):GetComponent("Button")
+  self:BindCallback(self.m_btn_setting_Button, handler(self, self.OnBtnsettingClicked))
+  self.m_btn_install = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_install").gameObject
+  self.m_btn_install_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_install"):GetComponent("Button")
+  self:BindCallback(self.m_btn_install_Button, handler(self, self.OnBtninstallClicked))
+  self.m_btn_binding = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_binding").gameObject
+  self.m_btn_binding_Button = self.m_loginVideoNode:Find("m_content_node/m_pnl_button/m_btn_binding"):GetComponent("Button")
+  self:BindCallback(self.m_btn_binding_Button, handler(self, self.OnBtnbindingClicked))
+  self.m_pnl_load = self.m_loginVideoNode:Find("m_content_node/m_pnl_load").gameObject
+  self.m_pnl_bottom = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom").gameObject
+  self.m_bar_bg = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_bar_bg").gameObject
+  self.m_bar_bg_01 = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_bar_bg/m_bar_bg_01").gameObject
+  self.m_bar = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_bar_bg/m_bar").gameObject
+  self.m_bar_Image = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_bar_bg/m_bar"):GetComponent("Image")
+  self.m_bar_light = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_bar_bg/m_bar_light").gameObject
+  self.m_txt_detail1 = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_detail1").gameObject
+  self.m_txt_detail1_Text = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_detail1"):GetComponent("TextPro")
+  self.m_txt_download_total = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_download_total").gameObject
+  self.m_txt_download_total_Text = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_download_total"):GetComponent("TextPro")
+  self.m_txt_detail = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_detail").gameObject
+  self.m_txt_detail_Text = self.m_loginVideoNode:Find("m_content_node/m_pnl_load/m_pnl_bottom/m_txt_detail"):GetComponent("TextPro")
+  self.m_z_txt_ver = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_z_txt_ver").gameObject
+  self.m_z_txt_ver_Text = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_z_txt_ver"):GetComponent("TextPro")
+  self.m_txt_version = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_z_txt_ver/m_txt_version").gameObject
+  self.m_txt_version_Text = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_z_txt_ver/m_txt_version"):GetComponent("TextPro")
+  self.m_pnl_accountinfo = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_pnl_accountinfo").gameObject
+  self.m_txt_accountid = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_pnl_accountinfo/m_txt_accountid").gameObject
+  self.m_txt_accountid_Text = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_pnl_accountinfo/m_txt_accountid"):GetComponent("TextPro")
+  self.m_txt_zoneid = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_pnl_accountinfo/m_txt_zoneid").gameObject
+  self.m_txt_zoneid_Text = self.m_loginVideoNode:Find("m_content_node/bg_ver/m_pnl_accountinfo/m_txt_zoneid"):GetComponent("TextPro")
+  CS.UI.UILuaHelper.FreshViewMultiLanguage(self.m_loginVideoNode.gameObject)
+  self:OnLoadFinishCallBack()
+  self.loadFinish = true
+end
+
+function Form_LoginNew:OnLoadFinishCallBack()
+  TimeService:SetTimer(1.0E-4, 1, function()
+    require("common/GlobalRequire")
+    if bConnectGameServer then
+      local ConnectGameServerFlow = require("JobFlow/JobGraphConnectGameServer/JobGraphConnectGameServer")
+      self.m_jobFlow = ConnectGameServerFlow.Instance()
+      self.m_jobFlow:Run(handler(self, self.OnStateChange))
+    else
+      local StartupFlow = require("JobFlow/JobGraphStartup/JobGraphStartup")
+      self.m_jobFlow = StartupFlow.Instance()
+      self.m_jobFlow:Run(handler(self, self.OnStateChange))
+    end
+  end)
+  self.m_pnl_load:SetActive(true)
+  self.m_pnl_start:SetActive(false)
+  self.m_btn_setting:SetActive(false)
+  if self.m_btn_binding then
+    self.m_btn_binding:SetActive(false)
+  end
+  if self.m_btn_cadpa then
+    self.m_btn_cadpa:SetActive(false)
+  end
+  if self.m_pnl_statementinfo then
+    self.m_pnl_statementinfo:SetActive(false)
+  end
+  self.m_txt_detail_Text.text = ""
+  self.m_bar_Image.fillAmount = 0
+  local anchoredPositionBarLight = self.m_bar_light:GetComponent("RectTransform").anchoredPosition
+  anchoredPositionBarLight.x = 0
+  self.m_bar_light:GetComponent("RectTransform").anchoredPosition = anchoredPositionBarLight
+  self.m_jobProgress = 0
+  self.m_jobTargetProgress = 0
+  self.m_jobProgressClampMin = 0
+  self.m_jobProgressClampMax = 1
+  self.m_jobProgressSpeedMulti = JobProgressSpeedMultiDefault
+  self.m_txt_download_total:SetActive(false)
+  self.m_btn_account:SetActive(false)
+  self.m_btn_announcement:SetActive(false)
+  self.m_btn_pilotcode:SetActive(false)
+  self.m_btn_install:SetActive(false)
+  self:ShowVersionAndRoleID()
+  self:addEventListener("eGameEvent_Login_ShowBtnAnnouncement", handler(self, self.OnEventShowBtnAnnouncement))
+  self:addEventListener("eGameEvent_Login_ShowDownloadProgress", handler(self, self.OnEventShowDownloadProgress))
+  self:addEventListener("eGameEvent_Login_ShowAccountInfo", handler(self, self.OnEventShowAccountInfo))
+  self:addEventListener("eGameEvent_Login_SetProgressClamp", handler(self, self.OnEventSetProgressClamp))
+  self:addEventListener("eGameEvent_Login_SetRegisterRedDot", handler(self, self.OnEventSetRegisterRedDot))
+  self:addEventListener("eGameEvent_Login_FreshVersionInfo", handler(self, self.OnEventFreshVersionInfo))
+  self:addEventListener("eGameEvent_QSDKLogin_Failed", handler(self, self.OnQSDKLoginFailed))
+  self.m_iHandlerBackPressed = self:addEventListener("eGameEvent_OnBackPressed", handler(self, self.OnBackPressed))
+  self.m_z_txt_ver:SetActive(false)
+  local versionContext = CS.VersionContext.GetContext()
+  self.m_txt_version_Text.text = versionContext.ClientLocalVersionFull
+  self.m_pnl_accountinfo:SetActive(false)
+  self.m_txt_accountid:SetActive(false)
+  self.m_txt_zoneid:SetActive(false)
+  StackTop:Push(UIDefines.ID_FORM_SCREEN_CLICK)
+  self.m_bInitChannelManager = false
+  if self.m_btn_useragreement then
+    self.m_btn_useragreement:SetActive(false)
+  end
+  if self.m_GmPos then
+    self.m_GmPos:SetActive(false)
+    if CS.ApplicationManager.Instance:IsEnableDebugNova() and CS.UI.UILuaHelper.IsAbleDebugger() then
+      self.m_GmPos:SetActive(true)
+    end
+  end
 end
 
 local fullscreen = true

@@ -10,7 +10,7 @@ end
 function Form_HangUpBattle:AfterInit()
   self.super.AfterInit(self)
   self.m_grayImgMaterial = self.m_img_gray_Image.material
-  self.m_max_times = AFKInstantRewardConfigInstance:GetCount()
+  self.m_max_normal_times = AFKInstantRewardConfigInstance:GetCount()
   self.m_rewardList = {}
   self.m_downTimer = nil
   self.m_cutDownTime = 0
@@ -26,6 +26,7 @@ end
 
 function Form_HangUpBattle:CheckRegisterRedDot()
   self:RegisterOrUpdateRedDotItem(self.m_common_redpoint, RedDotDefine.ModuleType.HangUpBattle)
+  self:RegisterOrUpdateRedDotItem(self.m_common_privilege, RedDotDefine.ModuleType.HangUpMainVip)
 end
 
 function Form_HangUpBattle:OnActive()
@@ -73,10 +74,11 @@ end
 function Form_HangUpBattle:RefreshUI()
   self.m_iInstantTimes = HangUpManager.m_iInstantTimes + 1
   self.m_iAfkLevel = HangUpManager.m_iAfkLevel
-  self.m_txt_countdown_03_Text.text = self.m_max_times - HangUpManager.m_iInstantTimes
+  self.m_txt_countdown_03_Text.text = self.m_max_normal_times - HangUpManager.m_iInstantTimes
+  self:RefreshPrivilegeInfo()
   local instantRewardCfg = AFKInstantRewardConfigInstance:GetValue_ByTimes(self.m_iInstantTimes)
   self:RefreshListView()
-  if not instantRewardCfg or self.m_max_times == HangUpManager.m_iInstantTimes then
+  if not instantRewardCfg or self.m_max_times == HangUpManager:GetCurReceiveTimes() then
     self.m_btn_fighting_02:SetActive(false)
     self.m_z_txt_received_max:SetActive(true)
     self.m_btn_fighting:SetActive(true)
@@ -88,7 +90,7 @@ function Form_HangUpBattle:RefreshUI()
   if self.m_consumptionCfg and self.m_consumptionCfg[1] then
     local consumption = self.m_consumptionCfg[1][2]
     local curHaveNum = ItemManager:GetItemNum(self.m_consumptionCfg[1][1], true)
-    if consumption == 0 then
+    if consumption == 0 or self.bIsHavePrivilegeTimes then
       self.m_btn_fighting:SetActive(true)
       self.m_btn_fighting_02:SetActive(false)
     else
@@ -149,6 +151,21 @@ function Form_HangUpBattle:SetCutDownTxt()
   })
 end
 
+function Form_HangUpBattle:RefreshPrivilegeInfo()
+  local bIsEffective, privilegeEffectData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.HangUpFreeTimes)
+  if bIsEffective and privilegeEffectData then
+    local freeTimes = privilegeEffectData[1][1]
+    local leftTimes = HangUpManager:GetLeftMonthCardInstantMonthTimes()
+    self.m_txt_privilege_Text.text = tostring(leftTimes) .. "/" .. tostring(freeTimes)
+    self.m_img_privilege:SetActive(true)
+    self.m_max_times = self.m_max_normal_times + freeTimes
+    self.bIsHavePrivilegeTimes = 0 < leftTimes
+  else
+    self.m_img_privilege:SetActive(false)
+    self.bIsHavePrivilegeTimes = false
+  end
+end
+
 function Form_HangUpBattle:OnEventHangUpGetInstantRewards()
   self:RefreshUI()
 end
@@ -177,7 +194,7 @@ function Form_HangUpBattle:OnRewardItemClk(index, go)
 end
 
 function Form_HangUpBattle:OnBtnfightingClicked()
-  if self.m_max_times == HangUpManager.m_iInstantTimes then
+  if self.m_max_times == HangUpManager:GetCurReceiveTimes() then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 20009)
     return
   end
@@ -191,7 +208,7 @@ function Form_HangUpBattle:OnBtnfightingClicked()
 end
 
 function Form_HangUpBattle:OnBtnfighting03Clicked()
-  if self.m_max_times == HangUpManager.m_iInstantTimes then
+  if self.m_max_times == HangUpManager:GetCurReceiveTimes() then
     StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 20009)
     return
   end

@@ -1,6 +1,200 @@
 {
   "className": "CData_CastleDispatchEvent",
   "data": {
+    "8888": {
+      "_type": "nested_dictionary",
+      "_count": 9,
+      "_processed": 9,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[101,100]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "2",
+          "m_Sort": "2",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[101,50]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "3",
+          "m_Sort": "3",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[50004,2]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "4",
+          "m_Sort": "4",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[800002,2]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "5",
+          "m_Sort": "5",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[40002,6]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "6",
+          "m_Sort": "6",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[40012,3]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "7",
+          "m_Sort": "7",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[40022,3]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "8",
+          "m_Sort": "8",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[31001,30]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "8888",
+          "m_EventID": "9",
+          "m_Sort": "9",
+          "m_Grade": "5",
+          "m_TimeMin": "90",
+          "m_Slot": "[[0,4],[0,3]]",
+          "m_Reward": "[[1102,20]]"
+        }
+      }
+    },
+    "9999": {
+      "_type": "nested_dictionary",
+      "_count": 9,
+      "_processed": 9,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "1",
+          "m_Sort": "1",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[50004,5]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "2",
+          "m_Sort": "2",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[101,300]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "3",
+          "m_Sort": "3",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[1050,1]]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "4",
+          "m_Sort": "4",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[800001,1]]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "5",
+          "m_Sort": "5",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[40005,1]]"
+        },
+        "6": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "6",
+          "m_Sort": "6",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[40014,1]]"
+        },
+        "7": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "7",
+          "m_Sort": "7",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[40024,1]]"
+        },
+        "8": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "8",
+          "m_Sort": "8",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[30010,1]]"
+        },
+        "9": {
+          "m_bError": null,
+          "m_GroupID": "9999",
+          "m_EventID": "9",
+          "m_Sort": "9",
+          "m_Grade": "6",
+          "m_TimeMin": "120",
+          "m_Slot": "[[0,4],[0,4],[0,3]]",
+          "m_Reward": "[[30011,1]]"
+        }
+      }
+    },
     "10000": {
       "_type": "nested_dictionary",
       "_count": 20,
@@ -1854,5 +2048,5 @@
       }
     }
   },
-  "status": "processed_6_items"
+  "status": "processed_8_items"
 }

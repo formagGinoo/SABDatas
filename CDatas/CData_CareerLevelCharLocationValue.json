@@ -1,0 +1,188 @@
+{
+  "className": "CData_CareerLevelCharLocationValue",
+  "data": {
+    "0": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "2": {
+          "m_bError": null,
+          "m_LimitBreakLevel": null,
+          "m_Quality": "2",
+          "m_Sorting": "1",
+          "m_PropertyID": "1008201"
+        },
+        "3": {
+          "m_bError": null,
+          "m_LimitBreakLevel": null,
+          "m_Quality": "3",
+          "m_Sorting": "2",
+          "m_PropertyID": "1008300"
+        },
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": null,
+          "m_Quality": "4",
+          "m_Sorting": "5",
+          "m_PropertyID": "1008400"
+        }
+      }
+    },
+    "1": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "1",
+          "m_Quality": "3",
+          "m_Sorting": "3",
+          "m_PropertyID": "1008301"
+        },
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "1",
+          "m_Quality": "4",
+          "m_Sorting": "6",
+          "m_PropertyID": "1008401"
+        }
+      }
+    },
+    "2": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "3": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "2",
+          "m_Quality": "3",
+          "m_Sorting": "4",
+          "m_PropertyID": "1008302"
+        },
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "2",
+          "m_Quality": "4",
+          "m_Sorting": "7",
+          "m_PropertyID": "1008402"
+        }
+      }
+    },
+    "3": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "3",
+          "m_Quality": "4",
+          "m_Sorting": "8",
+          "m_PropertyID": "1008403"
+        }
+      }
+    },
+    "4": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "4",
+          "m_Quality": "4",
+          "m_Sorting": "9",
+          "m_PropertyID": "1008404"
+        }
+      }
+    },
+    "5": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "5",
+          "m_Quality": "4",
+          "m_Sorting": "10",
+          "m_PropertyID": "1008405"
+        }
+      }
+    },
+    "6": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "6",
+          "m_Quality": "4",
+          "m_Sorting": "11",
+          "m_PropertyID": "1008406"
+        }
+      }
+    },
+    "7": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "7",
+          "m_Quality": "4",
+          "m_Sorting": "12",
+          "m_PropertyID": "1008407"
+        }
+      }
+    },
+    "8": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "8",
+          "m_Quality": "4",
+          "m_Sorting": "13",
+          "m_PropertyID": "1008408"
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "9",
+          "m_Quality": "4",
+          "m_Sorting": "14",
+          "m_PropertyID": "1008409"
+        }
+      }
+    },
+    "10": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4": {
+          "m_bError": null,
+          "m_LimitBreakLevel": "10",
+          "m_Quality": "4",
+          "m_Sorting": "15",
+          "m_PropertyID": "1008410"
+        }
+      }
+    }
+  },
+  "status": "processed_11_items"
+}

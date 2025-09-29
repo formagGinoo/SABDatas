@@ -441,6 +441,7 @@ CmdRepairStr.Definition = {
   "sValue2",
   "sItemKey",
   "sItemValue",
+  "iCNComplianceResSwitchOpen",
   iRepairType = {
     0,
     0,
@@ -488,6 +489,12 @@ CmdRepairStr.Definition = {
     0,
     13,
     ""
+  },
+  iCNComplianceResSwitchOpen = {
+    8,
+    0,
+    8,
+    0
   }
 }
 CmdMainBackground = sdp.SdpStruct("CmdMainBackground")

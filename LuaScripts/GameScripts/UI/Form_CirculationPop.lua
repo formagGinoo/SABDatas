@@ -424,7 +424,7 @@ end
 
 function Form_CirculationPop:OnBtnBackCirculationClicked()
   self:CloseForm()
-  StackFlow:Push(UIDefines.ID_FORM_CIRCULATIONMAIN)
+  StackFlow:Push(UIDefines.ID_FORM_CIRCULATIONMAIN, {isCirculation = true})
 end
 
 function Form_CirculationPop:OnBtnCloseClicked()

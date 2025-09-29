@@ -13,13 +13,19 @@ function Job_Startup_InitWwise_Impl.OnInitWwise(jobNode)
         EventCenter.AddListener(EventDefine.eGameEvent_PlayMusic, Job_Startup_InitWwise_Impl.PlayMusic)
         EventCenter.AddListener(EventDefine.eGameEvent_StopMusic, Job_Startup_InitWwise_Impl.StopMusic)
         EventCenter.AddListener(EventDefine.eGameEvent_StartAnimation, Job_Startup_InitWwise_Impl.StartAnimation)
-        CS.UI.UILuaHelper.StartPlayBGM("Play_Login")
+        CS.CData_BGMStateGroup.GetInstance():Init()
+        CS.GlobalManager.Instance:TriggerWwiseBGMState(Job_Startup_InitWwise_Impl.GetAudioId())
         TimeService:SetTimer(1.0E-4, 1, function()
           jobNode.Status = JobStatus.Success
         end)
       end)
     end)
   end)
+end
+
+function Job_Startup_InitWwise_Impl.GetAudioId()
+  local _, _, _, audioId = DealPlaySelectVideo()
+  return audioId
 end
 
 function Job_Startup_InitWwise_Impl.PlayMusic(bankName, eventName, bgmId)

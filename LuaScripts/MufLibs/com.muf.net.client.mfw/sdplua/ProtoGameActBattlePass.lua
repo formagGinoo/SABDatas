@@ -73,6 +73,8 @@ CmdActClientCfgBattlePass.Definition = {
   "sQuestExpBackgroundPic",
   "sBPIcon",
   "iJumpId",
+  "iPurchaseReminderDays",
+  "iRewardReminderDays",
   sName = {
     0,
     0,
@@ -177,6 +179,18 @@ CmdActClientCfgBattlePass.Definition = {
   },
   iJumpId = {
     17,
+    0,
+    8,
+    0
+  },
+  iPurchaseReminderDays = {
+    18,
+    0,
+    8,
+    0
+  },
+  iRewardReminderDays = {
+    19,
     0,
     8,
     0

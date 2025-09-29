@@ -127,7 +127,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Strange Spear\"",
-      "m_mDesc": "\"Unknown Lance. When thrown at a select location, deals weak P. DMG to all enemies in a circle and Taunts them for {1} sec.\"",
+      "m_mDesc": "\"Strange Spear. When thrown at a select location, deals weak P. DMG to all enemies in a circle and Taunts them for {1} sec.\"",
       "m_Param": "[81001101,81001102,81001103]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[]",
@@ -319,7 +319,7 @@
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Static Detonation\"",
-      "m_mDesc": "\"When taking DMG, the enemy will create an electrical field surrounding itself that deals M. DMG to allies within range, and which has a {0} chance to Stun for {1} sec. Can only be triggered once every {2} sec.\"",
+      "m_mDesc": "\"When taking DMG, the enemy unit creates an electrical field centered on self, dealing M. DMG to allied units within range, with a {0} chance to apply Stun for {1} sec. Can only be triggered once every {2} sec.\"",
       "m_Param": "[20000222,20000223,20000224]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6009]",
@@ -331,7 +331,7 @@
       "m_CampType": "2",
       "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
       "m_mName": "\"Repulsion Field\"",
-      "m_mDesc": "\"When the battle begins, enemies gain P. DMG Taken Down (Major) and M. DMG Taken Down (Major) which cannot be dispelled. Additionally, they gain a Shield based on Max HP every {0} sec, lasting {1} sec.\"",
+      "m_mDesc": "\"When the battle begins, enemies gain permanent P. DMG Taken Down (Major) and M. DMG Taken Down (Major) which cannot be dispelled. Additionally, they gain a Shield based on Max HP every {0} sec, lasting {1} sec.\"",
       "m_Param": "[20000231,20000232,20000233]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6010]",
@@ -347,6 +347,18 @@
       "m_Param": "[20000251,20000032,20000033,20000034]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6011]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "3031201": {
+      "m_bError": null,
+      "m_ID": "3031201",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Clive\"",
+      "m_mDesc": "\"Stop the Wolf Spirits from channeling at all costs, or Clive will gain Hypertension.\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[]",
       "m_ShowBuffDesc": "[]"
     },
     "3040001": {
@@ -702,8 +714,8 @@
       "m_ID": "4920000",
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4920000\"",
-      "m_mName": "\"Blood Craze\"",
-      "m_mDesc": "\"When the battle begins, every <style=Highlight>{0}</style> sec, all allies lose HP equal to <style=Highlight>{1}</style> of Max HP. Ultimate cost is reduced by 1.\"",
+      "m_mName": "\"Chop Chop\"",
+      "m_mDesc": "\"When the battle begins, all allies take M. DMG equal to <style=Highlight>{1}</style> of Max HP every <style=Highlight>{0}</style> sec. Ultimate cost is reduced by 1.\"",
       "m_Param": "[49200001,49200002]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4920]",
@@ -732,6 +744,114 @@
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4922]",
       "m_ShowBuffDesc": "[4922]"
+    },
+    "4923000": {
+      "m_bError": null,
+      "m_ID": "4923000",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4923000\"",
+      "m_mName": "\"Risk and Reward\"",
+      "m_mDesc": "\"Enemy unit emerges with a Shield (lasts for {1} sec) equal to {0} of HP and takes {2} less P. DMG and M. DMG. Defeating the enemy unit grants <style=Highlight>{3}</style> Hunting Points.\"",
+      "m_Param": "[49220004,49220005,49220006,49220007]",
+      "m_ScriptName": "\"MiniRaid_S4_3\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4924000": {
+      "m_bError": null,
+      "m_ID": "4924000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4924000\"",
+      "m_mName": "\"Clear Skies\"",
+      "m_mDesc": "\"Each Assassin and Sorcerer increases the lineup's Bloodsoul recovery rate by <style=Highlight>{0}</style>.\"",
+      "m_Param": "[49220008]",
+      "m_ScriptName": "\"MiniRaid_S4_1\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4925000": {
+      "m_bError": null,
+      "m_ID": "4925000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4925000\"",
+      "m_mName": "\"Trojan Horse\"",
+      "m_mDesc": "\"Every {0} sec, gains a Shield Breaker that costs {1} Bloodsoul, which <style=Highlight>immediately shatters all enemies' Shield effects</style>.\"",
+      "m_Param": "[49220009,49220010]",
+      "m_ScriptName": "\"MiniRaid_S4_2\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4926000": {
+      "m_bError": null,
+      "m_ID": "4926000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4926000\"",
+      "m_mName": "\"Protracted War\"",
+      "m_mDesc": "\"Allied units' Continuous DMG effects deal <style=Highlight>{0}</style> more DMG, and when allied units inflict Continuous DMG effects on enemies, there's a <style=Highlight>{1}</style> chance to gain <style=Highlight>{2}</style> Bloodsoul.\"",
+      "m_Param": "[49220011,49220012,49220021]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4924]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4927000": {
+      "m_bError": null,
+      "m_ID": "4927000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4927000\"",
+      "m_mName": "\"Fighting Spirit\"",
+      "m_mDesc": "\"For every Ultimate cast, that Vassal permanently increases ATK by <style=Highlight>{0}</style> and CRIT Hit DMG by <style=Highlight>{1}</style>.\"",
+      "m_Param": "[49220013,49220014]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4925]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4928000": {
+      "m_bError": null,
+      "m_ID": "4928000",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4928000\"",
+      "m_mName": "\"Tainted Blood\"",
+      "m_mDesc": "\"Enemy units take <style=Highlight>{0}</style> less M. DMG but <style=Highlight>{1}</style> more from all other DMG sources.\"",
+      "m_Param": "[49220015,49220016]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4926]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4929000": {
+      "m_bError": null,
+      "m_ID": "4929000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4929000\"",
+      "m_mName": "\"Volatile Strikes\"",
+      "m_mDesc": "\"When an ally performs Basic ATK to enemy units, there's a <style=Highlight>{0}</style> chance to trigger additional DMG equal to <style=Highlight>{1}</style> of the DMG dealt in a small area.\"",
+      "m_Param": "[49220017,49220018]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4927]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4930000": {
+      "m_bError": null,
+      "m_ID": "4930000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4930000\"",
+      "m_mName": "\"Bloodmoon Shadow\"",
+      "m_mDesc": "\"When dealing DMG, there's a <style=Highlight>{0}</style> chance to trigger an additional M. DMG equal to <style=Highlight>{1}</style> ATK.\"",
+      "m_Param": "[49220019,49220020]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4928]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4931000": {
+      "m_bError": null,
+      "m_ID": "4931000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4931000\"",
+      "m_mName": "\"Death Wish\"",
+      "m_mDesc": "\"When the battle begins, all allied melee units gain CRIT Rate UP (Major) and CRIT DMG Dealt UP (Major).\"",
+      "m_Param": "[]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4929]",
+      "m_ShowBuffDesc": "[4912]"
     },
     "6000201": {
       "m_bError": null,
@@ -878,5 +998,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_73_items"
+  "status": "processed_83_items"
 }

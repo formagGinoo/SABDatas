@@ -33,6 +33,7 @@ function UIBossRewardItem:FreshRewardList()
   end
   local rewardList = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_ClientMustDrop)
   local proRewardList = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_ClientProDrop)
+  local privilegeReword = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_MonthlyPrivilegeReward)
   local rewardTab = {}
   local customDataTab = {}
   local starTechEffectTab = {}
@@ -64,11 +65,24 @@ function UIBossRewardItem:FreshRewardList()
   if 0 < #starTechEffectTab then
     table.insertto(rewardTab, starTechEffectTab)
   end
+  for i, v in ipairs(privilegeReword) do
+    customDataTab[#customDataTab + 1] = {
+      monthlyPrivilege = true,
+      bIsGray = not MonthlyCardManager:IsPrivilegeEffect()
+    }
+  end
+  if 0 < #privilegeReword then
+    table.insertto(rewardTab, privilegeReword)
+  end
   self:FreshRewardItems(rewardTab, customDataTab)
   local quality = self.m_dungeonLevelPhaseCfg.m_ClientQuality
+  local dataConfig = ConfigManager:GetConfigInsByName("EquipQuality")
+  local data = dataConfig:GetValue_ByEquipQuality(quality)
   ResourceUtil:CreateEquipCommonQualityImg(self.m_bg_equipbg_Image, quality)
   ResourceUtil:CreateEquipCommonIconImg(self.m_icon_equiptype_Image, quality)
   ResourceUtil:CreateEquipQualityImg(self.m_equipborder_Image, quality)
+  ResourceUtil:CreateEquipCommonTxtBgImg(self.m_bg_equip_txtbg_Image, quality)
+  self.m_txt_tier_Text.text = data.m_mQualityname
 end
 
 function UIBossRewardItem:FreshRewardItems(rewardList, customDataTab)

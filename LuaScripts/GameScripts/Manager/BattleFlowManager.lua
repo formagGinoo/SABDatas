@@ -399,6 +399,8 @@ function ConvertLuaParam(param)
   end
   luaParam.circulationParam = circulationTab
   luaParam.ignoreXunHuanShi = param.ignoreXunHuanShi
+  luaParam.ignoreLounge = param.ignoreLounge
+  luaParam.ignoreCareer = param.ignoreCareer
   return luaParam
 end
 

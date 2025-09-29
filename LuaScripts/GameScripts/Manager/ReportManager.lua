@@ -153,6 +153,14 @@ function ReportManager:ReportLoginProcess(sJobName, sJobDetail, bImmediately)
   local stReportData = CS.ReportDataPool.Instance:RequestReportDataByType(CS.ReportDataDefines.Client_login_process)
   stReportData.Job_name = sJobName
   stReportData.Job_detail = sJobDetail
+  if self.m_caidParam == nil then
+    if CS.HotUpdateHelper.Instance:IsUsingCaid() then
+      self.m_caidParam = CS.DeviceUtil.GetCAIDParams()
+    else
+      self.m_caidParam = ""
+    end
+  end
+  stReportData.Caid_params = self.m_caidParam
   if bImmediately then
     CS.ReportService.Instance:ReportImmediately(stReportData)
   else

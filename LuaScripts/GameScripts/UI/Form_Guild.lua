@@ -126,7 +126,7 @@ function Form_Guild:RefreshGuildInfo()
   local stBriefData = briefData.stBriefData or {}
   ResourceUtil:CreateGuildIconById(self.m_img_guild_icon_Image, stBriefData.iBadgeId)
   self.m_txt_guild_name_Text.text = tostring(stBriefData.sName)
-  self.m_txt_notice_desc_Text.text = self.m_allianceBriefData.sBulletin
+  self.m_txt_notice_desc_Text.text = self.m_allianceBriefData.sBulletin ~= "" and self.m_allianceBriefData.sBulletin or ConfigManager:GetCommonTextById(100150)
 end
 
 function Form_Guild:CheckMessageRedPoint()
@@ -139,7 +139,7 @@ function Form_Guild:RefreshUI()
   ResourceUtil:CreateGuildIconById(self.m_img_guild_icon_Image, stBriefData.iBadgeId)
   self.m_txt_guild_name_Text.text = tostring(stBriefData.sName)
   self.m_txt_guild_level_Text.text = string.format(ConfigManager:GetCommonTextById(20033), tostring(stBriefData.iLevel))
-  self.m_txt_notice_desc_Text.text = self.m_allianceBriefData.sBulletin
+  self.m_txt_notice_desc_Text.text = self.m_allianceBriefData.sBulletin ~= "" and self.m_allianceBriefData.sBulletin or ConfigManager:GetCommonTextById(100150)
   self.m_num_activity_Text.text = string.gsubnumberreplace(ConfigManager:GetCommonTextById(20065), tostring(stBriefData.iSevenActive))
   local cfg = GuildManager:GetGuildLevelConfigByLv(stBriefData.iLevel)
   self.m_num_exp_Text.text = string.format(ConfigManager:GetCommonTextById(20048), tostring(self.m_allianceBriefData.iCurrDevelopment), cfg.m_NeedExp)
@@ -214,7 +214,14 @@ function Form_Guild:PushBLikeUI()
 end
 
 function Form_Guild:OnEventLeaveAlliance()
-  self:OnBackHome()
+  if self.timerLeave then
+    TimeService:KillTimer(self.timerLeave)
+    self.timerLeave = nil
+  end
+  self.timerLeave = TimeService:SetTimer(0.01, 1, function()
+    self:OnBackHome()
+    self.timerLeave = nil
+  end)
 end
 
 function Form_Guild:OnEventHistoryAlliance()
@@ -446,6 +453,10 @@ function Form_Guild:OnDestroy()
   if self.m_tips_sequence then
     self.m_tips_sequence:Kill()
     self.m_tips_sequence = nil
+  end
+  if self.timerLeave then
+    TimeService:KillTimer(self.timerLeave)
+    self.timerLeave = nil
   end
 end
 

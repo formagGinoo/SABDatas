@@ -7304,6 +7304,31 @@
         }
       }
     },
+    "110011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "110011",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "10",
+          "m_ItemID": "[900008,1]",
+          "m_ItemQuantity": "50",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[1060,200,200]",
+          "m_ConditionType": null,
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
     "900101": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -8872,7 +8897,7 @@
           "m_Currency": "[101,100,100]",
           "m_ConditionType": "4",
           "m_ConditionParam": "[]",
-          "m_ConditionTime": "\"Atlas_Skill/M_Plagu\"",
+          "m_ConditionTime": "\"2024-10-10 04:00:00\"",
           "m_ShowTime": "\"2024-10-11 04:00:00\"",
           "m_EndTime": "\"\"",
           "m_Recommend": null
@@ -11253,7 +11278,557 @@
           "m_Recommend": null
         }
       }
+    },
+    "900801": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900801",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[500101,5]",
+          "m_ItemQuantity": "4",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[101,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"2024-10-10 04:00:00\"",
+          "m_ShowTime": "\"2024-10-11 04:00:00\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900802": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900802",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[500101,5]",
+          "m_ItemQuantity": "2",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[101,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"2024-10-11 04:00:00\"",
+          "m_ShowTime": "\"2024-10-12 04:00:00\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900803": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900803",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[500101,10]",
+          "m_ItemQuantity": "2",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[101,200,200]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"2024-10-12 04:00:00\"",
+          "m_ShowTime": "\"2024-10-13 04:00:00\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900804": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900804",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[500101,20]",
+          "m_ItemQuantity": "2",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[101,400,400]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"2024-10-13 04:00:00\"",
+          "m_ShowTime": "\"2024-10-14 04:00:00\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900805": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900805",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1051,1]",
+          "m_ItemQuantity": "20",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,400,400]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900806": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900806",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1050,1]",
+          "m_ItemQuantity": "20",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,400,400]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900807": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900807",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1204,64]",
+          "m_ItemQuantity": "14",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,80,80]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900808": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900808",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1201,32]",
+          "m_ItemQuantity": "14",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,80,80]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900809": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900809",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1205,48]",
+          "m_ItemQuantity": "14",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900810": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900810",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1202,24]",
+          "m_ItemQuantity": "14",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900811": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900811",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[40012,3]",
+          "m_ItemQuantity": "8",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,250,250]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900812": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900812",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[40022,3]",
+          "m_ItemQuantity": "8",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,250,250]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900813": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900813",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901002,30]",
+          "m_ItemQuantity": "10",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,60,60]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900814": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900814",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901003,30]",
+          "m_ItemQuantity": "10",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,60,60]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900815": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900815",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901004,30]",
+          "m_ItemQuantity": "10",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,60,60]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900816": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900816",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901005,50]",
+          "m_ItemQuantity": "6",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900817": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900817",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901006,50]",
+          "m_ItemQuantity": "6",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900818": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900818",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901007,50]",
+          "m_ItemQuantity": "6",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900819": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900819",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901008,50]",
+          "m_ItemQuantity": "6",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,100,100]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900820": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900820",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[901001,10]",
+          "m_ItemQuantity": "20",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,50,50]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900821": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900821",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[1002,30]",
+          "m_ItemQuantity": "50",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,300,300]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
+    },
+    "900822": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GoodsGroupID": "900822",
+          "m_GoodsID": "1",
+          "m_IsOn": "1",
+          "m_ItemWeights": "100",
+          "m_ItemID": "[999,2000]",
+          "m_ItemQuantity": "9999",
+          "m_ResType": null,
+          "m_ResTimes": null,
+          "m_Currency": "[500103,10,10]",
+          "m_ConditionType": "4",
+          "m_ConditionParam": "[]",
+          "m_ConditionTime": "\"\"",
+          "m_ShowTime": "\"\"",
+          "m_EndTime": "\"\"",
+          "m_Recommend": null
+        }
+      }
     }
   },
-  "status": "processed_213_items"
+  "status": "processed_236_items"
 }

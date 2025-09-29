@@ -44,10 +44,6 @@ function SignActivity:OnResetSdpConfig()
 end
 
 function SignActivity:OnResetStatusData()
-  self.m_stActivityData.iBeginTime = self.m_stStatusData.iBeginTime
-  self.m_stActivityData.iEndTime = self.m_stStatusData.iEndTime
-  self.m_stActivityData.iShowTimeBegin = self.m_stStatusData.iBeginTime
-  self.m_stActivityData.iShowTimeEnd = self.m_stStatusData.iEndTime
 end
 
 function SignActivity:OnPushPanel()

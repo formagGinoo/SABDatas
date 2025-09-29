@@ -1,6 +1,15 @@
 {
   "className": "CData_CharacterTrialLevel",
   "data": {
+    "2032001": {
+      "m_bError": null,
+      "m_LevelID": "2032001",
+      "m_MapID": "4400006",
+      "m_HeroID": "20320",
+      "m_OpenTime": "\"2025-09-10 10:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
     "2058001": {
       "m_bError": null,
       "m_LevelID": "2058001",
@@ -15,6 +24,15 @@
       "m_LevelID": "2060001",
       "m_MapID": "4400005",
       "m_HeroID": "20600",
+      "m_OpenTime": "\"2025-09-17 04:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2068001": {
+      "m_bError": null,
+      "m_LevelID": "2068001",
+      "m_MapID": "4400007",
+      "m_HeroID": "20680",
       "m_OpenTime": "\"2025-09-17 04:00:00\"",
       "m_CloseTime": "\"2025-10-01 04:00:00\"",
       "m_FirstRewards": "[[101,50],[800003,1]]"
@@ -47,5 +65,5 @@
       "m_FirstRewards": "[[101,50],[800003,1]]"
     }
   },
-  "status": "processed_5_items"
+  "status": "processed_7_items"
 }

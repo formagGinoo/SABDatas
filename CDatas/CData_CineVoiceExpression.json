@@ -286,9 +286,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Ba20001_Clip01_004a_01\"": {
+    "\"B_20001_Clip01_004a_01\"": {
       "m_bError": null,
-      "m_ID": "\"Ba20001_Clip01_004a_01\"",
+      "m_ID": "\"B_20001_Clip01_004a_01\"",
       "m_RoleName": "\"Role_Name_Agares4\"",
       "m_Voice": "\"Play_vo_20100_str_01_002_006\"",
       "m_Expression": "\"Atlas_Role/Agares_Base003\"",
@@ -706,9 +706,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"范海辛lip02_007b\"": {
+    "\"B_20001_Clip02_007b\"": {
       "m_bError": null,
-      "m_ID": "\"范海辛lip02_007b\"",
+      "m_ID": "\"B_20001_Clip02_007b\"",
       "m_RoleName": "\"Role_Name_Noah3\"",
       "m_Voice": "\"Play_vo_20010_str_01_004_009\"",
       "m_Expression": "\"Atlas_Role/Noah_Base003\"",
@@ -7351,9 +7351,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"'I receiveipno not\"": {
+    "\"B_30001_Clip06_002\"": {
       "m_bError": null,
-      "m_ID": "\"'I receiveipno not\"",
+      "m_ID": "\"B_30001_Clip06_002\"",
       "m_RoleName": "\"Role_Name_Empousa2\"",
       "m_Voice": "\"Play_vo_20030_str_02_012_002\"",
       "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
@@ -7651,9 +7651,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"范海辛lip06_022\"": {
+    "\"B_30001_Clip06_022\"": {
       "m_bError": null,
-      "m_ID": "\"范海辛lip06_022\"",
+      "m_ID": "\"B_30001_Clip06_022\"",
       "m_RoleName": "\"Role_Name_Noah\"",
       "m_Voice": "\"Play_vo_20010_str_02_012_022\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
@@ -12766,9 +12766,9 @@
       "m_CloseDialogue": null,
       "m_Animation": "\"\""
     },
-    "\"范海辛lip03_48\"": {
+    "\"B_40001_Clip03_48\"": {
       "m_bError": null,
-      "m_ID": "\"范海辛lip03_48\"",
+      "m_ID": "\"B_40001_Clip03_48\"",
       "m_RoleName": "\"Role_Name_Empousa2\"",
       "m_Voice": "\"Play_vo_20030_str_03_003_050\"",
       "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
@@ -17146,9 +17146,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"范海辛lip08_30\"": {
+    "\"B_40001_Clip08_30\"": {
       "m_bError": null,
-      "m_ID": "\"范海辛lip08_30\"",
+      "m_ID": "\"B_40001_Clip08_30\"",
       "m_RoleName": "\"Role_Name_Skoll\"",
       "m_Voice": "\"Play_vo_npc18_str_03_008_026\"",
       "m_Expression": "\"\"",
@@ -96415,7 +96415,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "2",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_B_90001_Clip14_019\"",
+      "m_DialogueContent": "\"Reservee S_rin01_Clip14_019\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -115100,7 +115100,7 @@
       "m_bError": null,
       "m_ID": "\"B_110001_Clip08_040\"",
       "m_RoleName": "\"Role_Name_Ressa\"",
-      "m_Voice": "\"Play_vo_20340_str_10_008_040\"",
+      "m_Voice": "\"Play_vo_20160_str_10_008_040\"",
       "m_Expression": "\"Atlas_Role/Ressa_Base003\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
@@ -115130,7 +115130,7 @@
       "m_bError": null,
       "m_ID": "\"B_110001_Clip08_042\"",
       "m_RoleName": "\"Role_Name_Ressa\"",
-      "m_Voice": "\"Play_vo_20340_str_10_008_042\"",
+      "m_Voice": "\"Play_vo_20160_str_10_008_042\"",
       "m_Expression": "\"Atlas_Role/Ressa_Base003\"",
       "m_Face": "\"Angry\"",
       "m_DialogueStyle": "1",
@@ -115160,7 +115160,7 @@
       "m_bError": null,
       "m_ID": "\"B_110001_Clip08_044\"",
       "m_RoleName": "\"Role_Name_Ressa\"",
-      "m_Voice": "\"Play_vo_20340_str_10_008_044\"",
+      "m_Voice": "\"Play_vo_20160_str_10_008_044\"",
       "m_Expression": "\"Atlas_Role/Ressa_Base003\"",
       "m_Face": "\"Shock\"",
       "m_DialogueStyle": "1",
@@ -137060,7 +137060,7 @@
       "m_bError": null,
       "m_ID": "\"E_20001_Clip06_43\"",
       "m_RoleName": "\"Role_Name_Event2EarnestsVoice\"",
-      "m_Voice": "\"Play_vo_npc09_str_e02_06_43\"",
+      "m_Voice": "\"Play_vo_npc11_str_e02_06_43\"",
       "m_Expression": "\"\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "2",
@@ -153151,9 +153151,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Parameter ipror18\"": {
+    "\"E_30001_Clip10_18\"": {
       "m_bError": null,
-      "m_ID": "\"Parameter ipror18\"",
+      "m_ID": "\"E_30001_Clip10_18\"",
       "m_RoleName": "\"Role_Name_AmiCovenant\"",
       "m_Voice": "\"Play_vo_20060_str_e03_010_18\"",
       "m_Expression": "\"Atlas_Role/Ami_Covenant003\"",
@@ -155911,9 +155911,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Protocol Error_91\"": {
+    "\"E_30001_Clip12_91\"": {
       "m_bError": null,
-      "m_ID": "\"Protocol Error_91\"",
+      "m_ID": "\"E_30001_Clip12_91\"",
       "m_RoleName": "\"Role_Name_Noah\"",
       "m_Voice": "\"Play_vo_20010_str_e03_012_91\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
@@ -165271,9 +165271,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"No Accountip07_30a\"": {
+    "\"E_40001_Clip07_30a\"": {
       "m_bError": null,
-      "m_ID": "\"No Accountip07_30a\"",
+      "m_ID": "\"E_40001_Clip07_30a\"",
       "m_RoleName": "\"Role_Name_Bella\"",
       "m_Voice": "\"Play_vo_20660_str_e04_007_030a\"",
       "m_Expression": "\"Atlas_Role/Bella_Summer_Base003\"",
@@ -169531,9 +169531,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"No Accountipame54\"": {
+    "\"E_40001_Clip10_54\"": {
       "m_bError": null,
-      "m_ID": "\"No Accountipame54\"",
+      "m_ID": "\"E_40001_Clip10_54\"",
       "m_RoleName": "\"Role_Name_Selena\"",
       "m_Voice": "\"Play_vo_20650_str_e04_010_054\"",
       "m_Expression": "\"Atlas_Role/Selena_Summer003\"",
@@ -173101,9 +173101,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Session Expired45\"": {
+    "\"E_40001_Clip13_45\"": {
       "m_bError": null,
-      "m_ID": "\"Session Expired45\"",
+      "m_ID": "\"E_40001_Clip13_45\"",
       "m_RoleName": "\"Role_Name_VanHellsing\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/VanHellsing_Base003\"",
@@ -180646,9 +180646,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Risky GM Restrict\"": {
+    "\"E_50001_Clip09_34\"": {
       "m_bError": null,
-      "m_ID": "\"Risky GM Restrict\"",
+      "m_ID": "\"E_50001_Clip09_34\"",
       "m_RoleName": "\"Role_Name_GilrainAstray\"",
       "m_Voice": "\"Play_vo_20120_str_e05_009_034\"",
       "m_Expression": "\"Atlas_Role/Gilrain_Base_Astray003\"",
@@ -189541,9 +189541,9 @@
       "m_CloseDialogue": null,
       "m_Animation": "\"\""
     },
-    "\"Channel Alr\"": {
+    "\"Tutor_70_02\"": {
       "m_bError": null,
-      "m_ID": "\"Channel Alr\"",
+      "m_ID": "\"Tutor_70_02\"",
       "m_RoleName": "\"Role_Name_Aiona\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
@@ -192126,7 +192126,7 @@
       "m_ID": "\"Tutor_300_03\"",
       "m_RoleName": "\"Role_Name_Aiona\"",
       "m_Voice": "\"\"",
-      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_Expression": "\"1/23001ole/Aiona_Base003\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
@@ -192571,9 +192571,9 @@
       "m_CloseDialogue": null,
       "m_Animation": "\"\""
     },
-    "\"Channel Does Not \"": {
+    "\"Tutorframe_412_01\"": {
       "m_bError": null,
-      "m_ID": "\"Channel Does Not \"",
+      "m_ID": "\"Tutorframe_412_01\"",
       "m_RoleName": "\"Role_Name_AionaCovenant2\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Aiona_Covenant003\"",
@@ -193189,7 +193189,7 @@
     "\"CouncilHall_Agree_20080_02\"": {
       "m_bError": null,
       "m_ID": "\"CouncilHall_Agree_20080_02\"",
-      "m_RoleName": "\"Role_Name_Girlarrogant\"",
+      "m_RoleName": "\"吉尔兰·熙德哈�\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Bella_Doll003\"",
       "m_Face": "\"Happy\"",
@@ -193219,7 +193219,7 @@
     "\"CouncilHall_Agree_20100_01\"": {
       "m_bError": null,
       "m_ID": "\"CouncilHall_Agree_20100_01\"",
-      "m_RoleName": "\"Role_Name_Agares\"",
+      "m_RoleName": "\"拜冯特_Agares\"",
       "m_Voice": "\"Play_vo_20100_str_joyful\"",
       "m_Expression": "\"Atlas_Role/Agares_Base003\"",
       "m_Face": "\"Happy\"",
@@ -197056,9 +197056,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Account Boundhange_20030_01\"": {
+    "\"CouncilHall_Change_20030_01\"": {
       "m_bError": null,
-      "m_ID": "\"Account Boundhange_20030_01\"",
+      "m_ID": "\"CouncilHall_Change_20030_01\"",
       "m_RoleName": "\"Role_Name_Empousa\"",
       "m_Voice": "\"Play_vo_20030_str_joyful\"",
       "m_Expression": "\"Atlas_Role/Empousa_Base003\"",
@@ -199006,9 +199006,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Account Binding Authentication Fa\"": {
+    "\"CouncilHall_Issue_Question_114_01\"": {
       "m_bError": null,
-      "m_ID": "\"Account Binding Authentication Fa\"",
+      "m_ID": "\"CouncilHall_Issue_Question_114_01\"",
       "m_RoleName": "\"Role_Name_Noah\"",
       "m_Voice": "\"Play_vo_20010_str_confused\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
@@ -202306,9 +202306,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"APNS Service\"": {
+    "\"L_Hati_10_10\"": {
       "m_bError": null,
-      "m_ID": "\"APNS Service\"",
+      "m_ID": "\"L_Hati_10_10\"",
       "m_RoleName": "\"Role_Name_Noah\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
@@ -209116,9 +209116,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Outdateella_ent V\"": {
+    "\"L_Acappella_10_29\"": {
       "m_bError": null,
-      "m_ID": "\"Outdateella_ent V\"",
+      "m_ID": "\"L_Acappella_10_29\"",
       "m_RoleName": "\"Role_Name_Acappella\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Acappella_Base003\"",
@@ -210169,7 +210169,7 @@
     "\"L_Hati_Covenant_10_10\"": {
       "m_bError": null,
       "m_ID": "\"L_Hati_Covenant_10_10\"",
-      "m_RoleName": "\"Role_Name_Noah\"",
+      "m_RoleName": "\"\"In such dire \"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
       "m_Face": "\"\"",
@@ -211636,9 +211636,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Server Has Been Merge\"": {
+    "\"L_Bella_Summer_02_13b\"": {
       "m_bError": null,
-      "m_ID": "\"Server Has Been Merge\"",
+      "m_ID": "\"L_Bella_Summer_02_13b\"",
       "m_RoleName": "\"Role_Name_Noah\"",
       "m_Voice": "\"\"",
       "m_Expression": "\"Atlas_Role/Noah_Full003\"",
@@ -214506,7 +214506,7 @@
       "m_ID": "\"B_180001_Clip04_004\"",
       "m_RoleName": "\"Role_Name_Colossus\"",
       "m_Voice": "\"Play_vo_20190_str_18_004_004\"",
-      "m_Expression": "\"Atlas_Role/Theophane_Base003\"",
+      "m_Expression": "\"弗里德里希phane_Base003\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
@@ -214861,9 +214861,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"B_18on loClip.5_010\"": {
+    "\"B_180001_Clip05_010\"": {
       "m_bError": null,
-      "m_ID": "\"B_18on loClip.5_010\"",
+      "m_ID": "\"B_180001_Clip05_010\"",
       "m_RoleName": "\"Role_Name_Colossus\"",
       "m_Voice": "\"Play_vo_20190_str_18_005_010\"",
       "m_Expression": "\"Atlas_Role/Theophane_Base003\"",
@@ -216321,7 +216321,7 @@
       "m_ID": "\"B_180001_Clip08_021\"",
       "m_RoleName": "\"Role_Name_OttaviaQ\"",
       "m_Voice": "\"Play_vo_20430_str_18_008_021\"",
-      "m_Expression": "\"Atlas_Role/Ottavia_Base003\"",
+      "m_Expression": "\"该隐Role/Ottavia_Base003\"",
       "m_Face": "\"Sad\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
@@ -218316,7 +218316,7 @@
       "m_ID": "\"E_60001_Clip01_081\"",
       "m_RoleName": "\"Role_Name_Agatha\"",
       "m_Voice": "\"Play_vo_20630_str_e06_001_081\"",
-      "m_Expression": "\"Atlas_Role/Agatha_Base003\"",
+      "m_Expression": "\"哈缇Role/Agatha_Base003\"",
       "m_Face": "\"Thinking\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
@@ -219080,7 +219080,7 @@
       "m_bError": null,
       "m_ID": "\"E_60001_Clip02_036\"",
       "m_RoleName": "\"Role_Name_Keane\"",
-      "m_Voice": "\"Play_vo_npc137_str_e06_002_036\"",
+      "m_Voice": "\"莱夏o_npc137_str_e06_002_036\"",
       "m_Expression": "\"Atlas_Role/Gini_Base003\"",
       "m_Face": "\"Shock_2\"",
       "m_DialogueStyle": "1",
@@ -219265,7 +219265,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip02_048\"",
+      "m_DialogueContent": "\"Ressague_E_60001_Clip02_048\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -219475,7 +219475,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip02_062\"",
+      "m_DialogueContent": "\"Old Fighting Glovesip02_062\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -219544,13 +219544,13 @@
     "\"E_60001_Clip02_067\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip02_067\"",
-      "m_RoleName": "\"Role_Name_Quinn\"",
+      "m_RoleName": "\"Old Fighting Gl\"",
       "m_Voice": "\"Play_vo_20620_str_e06_002_067\"",
       "m_Expression": "\"Atlas_Role/Quinn_Traveler003\"",
-      "m_Face": "\"Touch\"",
+      "m_Face": "\"Atlas\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip02_067\"",
+      "m_DialogueContent": "\"哈缇ue_E_60001_Clip02_067\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -219580,7 +219580,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "2",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip02_069\"",
+      "m_DialogueContent": "\"angrygue_E_60001_Clip02_069\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -219700,7 +219700,7 @@
       "m_Face": "\"Serious\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip02_077\"",
+      "m_DialogueContent": "\"\"Hati sat on the roof, clut\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -220039,7 +220039,7 @@
     "\"E_60001_Clip02_100\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip02_100\"",
-      "m_RoleName": "\"Role_Name_Baphomet7\"",
+      "m_RoleName": "\"\"'Read your opponen\"",
       "m_Voice": "\"Play_vo_20490_str_e06_002_100\"",
       "m_Expression": "\"Atlas_Role/Baphomet_Lily003\"",
       "m_Face": "\"Angry\"",
@@ -220171,9 +220171,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Incorrect iprifica\"": {
+    "\"E_60001_Clip02_109\"": {
       "m_bError": null,
-      "m_ID": "\"Incorrect iprifica\"",
+      "m_ID": "\"E_60001_Clip02_109\"",
       "m_RoleName": "\"Role_Name_Baphomet7\"",
       "m_Voice": "\"Play_vo_20490_str_e06_002_109\"",
       "m_Expression": "\"Atlas_Role/Baphomet_Lily003\"",
@@ -220399,7 +220399,7 @@
     "\"E_60001_Clip03_010\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip03_010\"",
-      "m_RoleName": "\"Role_Name_Agatha\"",
+      "m_RoleName": "\"\"'Like maybe you\"",
       "m_Voice": "\"Play_vo_20630_str_e06_003_010\"",
       "m_Expression": "\"Atlas_Role/Agatha_Base003\"",
       "m_Face": "\"\"",
@@ -220414,7 +220414,7 @@
     "\"E_60001_Clip03_011\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip03_011\"",
-      "m_RoleName": "\"Role_Name_KimiMurray\"",
+      "m_RoleName": "\"加德里克miMurray\"",
       "m_Voice": "\"Play_vo_npc134_str_e06_003_011\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
       "m_Face": "\"\"",
@@ -220594,7 +220594,7 @@
     "\"E_60001_Clip03_023\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip03_023\"",
-      "m_RoleName": "\"Role_Name_Agatha\"",
+      "m_RoleName": "\"哈缇·伽尼�\"",
       "m_Voice": "\"Play_vo_20630_str_e06_003_023\"",
       "m_Expression": "\"Atlas_Role/Agatha_Base003\"",
       "m_Face": "\"\"",
@@ -221405,7 +221405,7 @@
       "m_bError": null,
       "m_ID": "\"E_60001_Clip03_077\"",
       "m_RoleName": "\"Role_Name_KimiMurray\"",
-      "m_Voice": "\"Play_vo_npc134_str_e06_003_077\"",
+      "m_Voice": "\"0lay_vo_npc134_str_e06_003_077\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
@@ -221794,7 +221794,7 @@
     "\"E_60001_Clip04_023\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip04_023\"",
-      "m_RoleName": "\"Role_Name_Quinn\"",
+      "m_RoleName": "\"\"'Yes, I've hea\"",
       "m_Voice": "\"Play_vo_20620_str_e06_004_023\"",
       "m_Expression": "\"Atlas_Role/Quinn_TravelerHat003\"",
       "m_Face": "\"Sad_2\"",
@@ -222070,7 +222070,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "2",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip04_041\"",
+      "m_DialogueContent": "\"Speakgue_E_60001_Clip04_041\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -222079,7 +222079,7 @@
     "\"E_60001_Clip04_042\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip04_042\"",
-      "m_RoleName": "\"Role_Name_ArrogantPerson\"",
+      "m_RoleName": "\"song_Name_ArrogantPerson\"",
       "m_Voice": "\"Play_vo_npc188_str_e06_004_042\"",
       "m_Expression": "\"\"",
       "m_Face": "\"\"",
@@ -222700,7 +222700,7 @@
       "m_Face": "\"\"",
       "m_DialogueStyle": "1",
       "m_Duration": "3.5",
-      "m_DialogueContent": "\"Dialogue_E_60001_Clip05_011\"",
+      "m_DialogueContent": "\"Empousae_E_60001_Clip05_011\"",
       "m_AnimPlayType": null,
       "m_Options": "[]",
       "m_CloseDialogue": "1",
@@ -222769,7 +222769,7 @@
     "\"E_60001_Clip05_017\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip05_017\"",
-      "m_RoleName": "\"Role_Name_Kimi\"",
+      "m_RoleName": "\"\"Edina cupped \"",
       "m_Voice": "\"Play_vo_npc134_str_e06_005_017\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
       "m_Face": "\"Happy\"",
@@ -222874,7 +222874,7 @@
     "\"E_60001_Clip05_024\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip05_024\"",
-      "m_RoleName": "\"Role_Name_Kimi\"",
+      "m_RoleName": "\"\"'Then I'll fi\"",
       "m_Voice": "\"Play_vo_npc134_str_e06_005_024\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
       "m_Face": "\"Freeze\"",
@@ -222946,9 +222946,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Already Registered\"": {
+    "\"E_60001_Clip05_029\"": {
       "m_bError": null,
-      "m_ID": "\"Already Registered\"",
+      "m_ID": "\"E_60001_Clip05_029\"",
       "m_RoleName": "\"Role_Name_Agatha\"",
       "m_Voice": "\"Play_vo_20630_str_e06_005_029\"",
       "m_Expression": "\"Atlas_Role/Agatha_Base003\"",
@@ -223624,7 +223624,7 @@
     "\"E_60001_Clip05_075\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip05_075\"",
-      "m_RoleName": "\"Role_Name_Kimi\"",
+      "m_RoleName": "\"伊甸娜_Kimi\"",
       "m_Voice": "\"Play_vo_npc134_str_e06_005_075\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
       "m_Face": "\"\"",
@@ -224105,7 +224105,7 @@
       "m_bError": null,
       "m_ID": "\"E_60001_Clip06_024\"",
       "m_RoleName": "\"Role_Name_CommanderAssef\"",
-      "m_Voice": "\"Play_vo_npc190_str_e06_006_024\"",
+      "m_Voice": "\"Edinavo_npc190_str_e06_006_024\"",
       "m_Expression": "\"Atlas_Role/Ezareth_Base003\"",
       "m_Face": "\"Happy\"",
       "m_DialogueStyle": "1",
@@ -225514,7 +225514,7 @@
     "\"E_60001_Clip06_117\"": {
       "m_bError": null,
       "m_ID": "\"E_60001_Clip06_117\"",
-      "m_RoleName": "\"Role_Name_Assef\"",
+      "m_RoleName": "\"Isaac Van Helsi\"",
       "m_Voice": "\"Play_vo_npc190_str_e06_006_117\"",
       "m_Expression": "\"Atlas_Role/Ezareth_Base003\"",
       "m_Face": "\"\"",
@@ -225710,7 +225710,7 @@
       "m_bError": null,
       "m_ID": "\"E_60001_Clip07_011\"",
       "m_RoleName": "\"Role_Name_EnolaLetter\"",
-      "m_Voice": "\"Play_vo_npc206_str_e06_007_011\"",
+      "m_Voice": "\"诺亚·奈蒙特r_e06_007_011\"",
       "m_Expression": "\"\"",
       "m_Face": "\"\"",
       "m_DialogueStyle": "2",
@@ -225931,9 +225931,9 @@
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
     },
-    "\"Incorrect Password\"": {
+    "\"E_60001_Clip07_025\"": {
       "m_bError": null,
-      "m_ID": "\"Incorrect Password\"",
+      "m_ID": "\"E_60001_Clip07_025\"",
       "m_RoleName": "\"Role_Name_Kimi\"",
       "m_Voice": "\"Play_vo_npc134_str_e06_007_025\"",
       "m_Expression": "\"Atlas_Role/James_Base003\"",
@@ -243885,7 +243885,247 @@
       "m_Options": "[]",
       "m_CloseDialogue": "1",
       "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Accepted_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Accepted_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Accepted_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Accepted_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Accepted_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Accepted_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Agree_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Agree_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Agree_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Agree_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Agree_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Agree_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Change_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Change_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Change_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Change_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Change_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_joyful\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Change_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Disagree_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Disagree_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_irritated\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Disagree_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Disagree_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Disagree_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_irritated\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Disagree_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Disapproved_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Disapproved_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_calm\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Disapproved_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Disapproved_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Disapproved_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_calm\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Disapproved_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Neutral_20320_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Neutral_20320_01\"",
+      "m_RoleName": "\"Role_Name_Fanny\"",
+      "m_Voice": "\"Play_vo_20320_str_calm\"",
+      "m_Expression": "\"Atlas_Role/Fanu_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Neutral_20320_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"CouncilHall_Neutral_20680_01\"": {
+      "m_bError": null,
+      "m_ID": "\"CouncilHall_Neutral_20680_01\"",
+      "m_RoleName": "\"Role_Name_Evna\"",
+      "m_Voice": "\"Play_vo_20680_str_calm\"",
+      "m_Expression": "\"Atlas_Role/Evna_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"CouncilHall_Neutral_20680_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"Tutor_413_01\"": {
+      "m_bError": null,
+      "m_ID": "\"Tutor_413_01\"",
+      "m_RoleName": "\"Role_Name_Aiona2\"",
+      "m_Voice": "\"\"",
+      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"Tutor_413_01\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"Tutor_413_02\"": {
+      "m_bError": null,
+      "m_ID": "\"Tutor_413_02\"",
+      "m_RoleName": "\"Role_Name_Aiona2\"",
+      "m_Voice": "\"\"",
+      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"Tutor_413_02\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"Tutor_413_05\"": {
+      "m_bError": null,
+      "m_ID": "\"Tutor_413_05\"",
+      "m_RoleName": "\"Role_Name_Aiona2\"",
+      "m_Voice": "\"\"",
+      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"Tutor_413_05\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
+    },
+    "\"Tutor_413_08\"": {
+      "m_bError": null,
+      "m_ID": "\"Tutor_413_08\"",
+      "m_RoleName": "\"Role_Name_Aiona2\"",
+      "m_Voice": "\"\"",
+      "m_Expression": "\"Atlas_Role/Aiona_Base003\"",
+      "m_Face": "\"\"",
+      "m_DialogueStyle": "1",
+      "m_Duration": "3.5",
+      "m_DialogueContent": "\"Tutor_413_08\"",
+      "m_AnimPlayType": null,
+      "m_Options": "[]",
+      "m_CloseDialogue": "1",
+      "m_Animation": "\"\""
     }
   },
-  "status": "processed_16259_items"
+  "status": "processed_16275_items"
 }

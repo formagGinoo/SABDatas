@@ -233,6 +233,14 @@
       "m_Param": "[]",
       "m_mName": "\"\""
     },
+    "30": {
+      "m_bError": null,
+      "m_JumpID": "30",
+      "m_SystemID": "20",
+      "m_WindowID": "3002",
+      "m_Param": "[]",
+      "m_mName": "\"Lost Courtyard\""
+    },
     "101": {
       "m_bError": null,
       "m_JumpID": "101",
@@ -400,6 +408,14 @@
       "m_WindowID": "26006",
       "m_Param": "[26011]",
       "m_mName": "\"Festival Shop\""
+    },
+    "2612": {
+      "m_bError": null,
+      "m_JumpID": "2612",
+      "m_SystemID": "26",
+      "m_WindowID": "26006",
+      "m_Param": "[26012]",
+      "m_mName": "\"Joyce's Sundries\""
     },
     "2701": {
       "m_bError": null,
@@ -615,7 +631,7 @@
       "m_SystemID": "25",
       "m_WindowID": "1008",
       "m_Param": "[]",
-      "m_mName": "\"\""
+      "m_mName": "\"Embrace - Interstellar Contact\""
     },
     "25013": {
       "m_bError": null,
@@ -623,7 +639,23 @@
       "m_SystemID": "25",
       "m_WindowID": "1009",
       "m_Param": "[]",
-      "m_mName": "\"\""
+      "m_mName": "\"Embrace - Chasing Shadows\""
+    },
+    "25014": {
+      "m_bError": null,
+      "m_JumpID": "25014",
+      "m_SystemID": "25",
+      "m_WindowID": "1010",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Chains of Sin\""
+    },
+    "25015": {
+      "m_bError": null,
+      "m_JumpID": "25015",
+      "m_SystemID": "25",
+      "m_WindowID": "1011",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Discordant Marks\""
     },
     "30001": {
       "m_bError": null,
@@ -753,6 +785,14 @@
       "m_Param": "[3,6007001]",
       "m_mName": "\"Go to Event\""
     },
+    "50006": {
+      "m_bError": null,
+      "m_JumpID": "50006",
+      "m_SystemID": null,
+      "m_WindowID": "500001",
+      "m_Param": "[2,6027001]",
+      "m_mName": "\"Go to Event\""
+    },
     "60010": {
       "m_bError": null,
       "m_JumpID": "60010",
@@ -800,6 +840,14 @@
       "m_WindowID": "60010",
       "m_Param": "[1030,1032]",
       "m_mName": "\"Cosmic Singularity\""
+    },
+    "70001": {
+      "m_bError": null,
+      "m_JumpID": "70001",
+      "m_SystemID": null,
+      "m_WindowID": "70001",
+      "m_Param": "[1100]",
+      "m_mName": "\"A Game of Chess\""
     },
     "90001": {
       "m_bError": null,
@@ -2098,5 +2146,5 @@
       "m_mName": "\"[Threads of Fate] Hard 16-8\""
     }
   },
-  "status": "processed_262_items"
+  "status": "processed_268_items"
 }

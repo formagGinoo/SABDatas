@@ -236,7 +236,7 @@ function HallBgSubPanel:FreshShowCurrentPos()
     if showSpineStr ~= nil and showSpineStr ~= "" then
       self:ShowHeroSpine(showSpineStr)
     end
-    CS.GlobalManager.Instance:TriggerWwiseBGMState(DefaultBGMusic)
+    self:PlayBgMusic(true)
   elseif isShowBg then
     self:HideCurSpine()
     self:ShowMainBg()
@@ -599,7 +599,7 @@ function HallBgSubPanel:CheckShowDragBackTween()
   end)
 end
 
-function HallBgSubPanel:PlayBgMusic()
+function HallBgSubPanel:PlayBgMusic(isDefault)
   local uiInfo = StackFlow:GetTopUI()
   if utils.isNull(uiInfo) then
     return
@@ -612,6 +612,7 @@ function HallBgSubPanel:PlayBgMusic()
   if self.m_curMainBackgroundCfg and self.m_curMainBackgroundCfg.m_WwiseBg and self.m_curMainBackgroundCfg.m_WwiseBg ~= 0 then
     bgState = self.m_curMainBackgroundCfg.m_WwiseBg
   end
+  bgState = isDefault and DefaultBGMusic or bgState
   CS.GlobalManager.Instance:TriggerWwiseBGMState(bgState)
 end
 

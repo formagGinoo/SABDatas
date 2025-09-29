@@ -82,7 +82,7 @@ function BattlePassActivity:RequestBuyExp(buyExpNum, callback)
 end
 
 function BattlePassActivity:RequestQuests(bForce, callback)
-  if self.m_questStatus == nil or bForce then
+  if self.m_questStatus == nil or table.getn(self.m_questStatus) == 0 or bForce then
     self.m_questStatus = {}
     local reqMsg = MTTDProto.Cmd_Quest_GetList_CS()
     reqMsg.iQuestType = self:getID()
@@ -536,6 +536,9 @@ function BattlePassActivity:CheckRed()
   if self:GetFirstUnclaimedLevel() ~= nil then
     return 1
   end
+  if self:IsCanShowBPBuyTips() or self:IsCanShowBPRewardTips() then
+    return 1
+  end
   if not self:ReachMaxLevel() and self:HasUnclaimedTask() then
     return 1
   end
@@ -568,6 +571,90 @@ function BattlePassActivity:OnPushIAPDelivery(data)
       iActivityID = self:getID()
     })
   end
+end
+
+function BattlePassActivity:IsShowEndTimeInHall()
+  local endTime = self:getActivityEndTime()
+  local serverTime = TimeUtil:GetServerTimeS()
+  return serverTime > endTime - self.m_stClientCfg.iPurchaseReminderDays * 86400
+end
+
+function BattlePassActivity:IsCanShowBPBuyTips()
+  if not self:IsHaveBuy() then
+    local isCanShowBuyTipsMark = LocalDataManager:GetIntSimple("BattlePassBuyTipsEnd" .. self:getID(), 0) == 0
+    local endTime = self:getActivityEndTime()
+    local serverTime = TimeUtil:GetServerTimeS()
+    return serverTime > endTime - self.m_stClientCfg.iPurchaseReminderDays * 86400 and isCanShowBuyTipsMark
+  end
+  return false
+end
+
+function BattlePassActivity:IsCanShowBPRewardTips()
+  if self:IsHaveBuy() then
+    local isCanShowRewardTipsMark = LocalDataManager:GetIntSimple("BattlePassRewardTipsEnd" .. self:getID(), 0) == 0
+    local endTime = self:getActivityEndTime()
+    local serverTime = TimeUtil:GetServerTimeS()
+    local isHasUnlockReward = self:GetBPUnLockReward()
+    return serverTime > endTime - self.m_stClientCfg.iPurchaseReminderDays * 86400 and isCanShowRewardTipsMark and isHasUnlockReward
+  end
+  return false
+end
+
+function BattlePassActivity:GetBPUnLockReward()
+  local curLv = self:GetCurLevel()
+  local levelCfgDic = self.m_vLevelCfg
+  local unLockList = {}
+  local isHas = false
+  for _, v in pairs(levelCfgDic) do
+    local tempCmdLevelBPCfg = v
+    if curLv < tempCmdLevelBPCfg.iLevel then
+      isHas = true
+      local freeRewardList = tempCmdLevelBPCfg.vFreeReward
+      for _, tempCmdIDNum in ipairs(freeRewardList) do
+        local itemID = tempCmdIDNum.iID
+        local itemNum = tempCmdIDNum.iNum
+        if unLockList[itemID] == nil then
+          unLockList[itemID] = {iID = itemID, iNum = itemNum}
+        else
+          unLockList[itemID].iNum = unLockList[itemID].iNum + itemNum
+        end
+      end
+      local paidRewardList = tempCmdLevelBPCfg.vPaidReward
+      for _, tempCmdIDNum in ipairs(paidRewardList) do
+        local itemID = tempCmdIDNum.iID
+        local itemNum = tempCmdIDNum.iNum
+        if unLockList[itemID] == nil then
+          unLockList[itemID] = {iID = itemID, iNum = itemNum}
+        else
+          unLockList[itemID].iNum = unLockList[itemID].iNum + itemNum
+        end
+      end
+    end
+  end
+  local rewardList = {}
+  if unLockList then
+    for _, v in pairs(unLockList) do
+      local processItemData = ResourceUtil:GetProcessRewardData(v)
+      v.itemData = processItemData
+      rewardList[#rewardList + 1] = v
+    end
+  end
+  return isHas, rewardList
+end
+
+function BattlePassActivity.SortComparator(a, b)
+  local aIsFashion = ResourceUtil:GetResourceTypeById(a.iID) == ResourceUtil.RESOURCE_TYPE.Fashion
+  local bIsFashion = ResourceUtil:GetResourceTypeById(b.iID) == ResourceUtil.RESOURCE_TYPE.Fashion
+  if aIsFashion ~= bIsFashion then
+    return aIsFashion
+  end
+  if a.itemData.quality ~= b.itemData.quality then
+    return a.itemData.quality > b.itemData.quality
+  end
+  return a.iID < b.iID
+end
+
+function BattlePassActivity:GetBPCurLockCanGetReward()
 end
 
 return BattlePassActivity

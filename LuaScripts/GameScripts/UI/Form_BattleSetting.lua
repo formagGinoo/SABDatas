@@ -214,6 +214,14 @@ function Form_BattleSetting:InitBattlePanel()
   elseif showSkillCutIn == 2 then
     self.m_btn_show_once_ActiveToggle.isOn = true
   end
+  local defaultShowBattleDamage = UILuaHelper.GetPlayerPreference(CS.LogicDefine.ShowBattleDamage, 0)
+  if defaultShowBattleDamage == 0 then
+    self.m_btn_jumpword_yes_ActiveToggle.isOn = true
+    BattleGlobalManager:SetShowBattleDamage(true)
+  else
+    self.m_btn_jumpword_no_ActiveToggle.isOn = true
+    BattleGlobalManager:SetShowBattleDamage(false)
+  end
   local showBattleBlood = UILuaHelper.GetPlayerPreference(CS.LogicDefine.ShowBattleBloodKey, 0)
   if showBattleBlood == 0 then
     self.m_btn_blood_yes_ActiveToggle.isOn = true
@@ -717,6 +725,13 @@ function Form_BattleSetting:Save()
     UILuaHelper.SetPlayerPreference(CS.LogicDefine.ShowSkillCutInKey, 1)
   elseif self.m_btn_show_once_ActiveToggle.isOn then
     UILuaHelper.SetPlayerPreference(CS.LogicDefine.ShowSkillCutInKey, 2)
+  end
+  if self.m_btn_jumpword_yes_ActiveToggle.isOn then
+    UILuaHelper.SetPlayerPreference(CS.LogicDefine.ShowBattleDamage, 0)
+    BattleGlobalManager:SetShowBattleDamage(true)
+  else
+    UILuaHelper.SetPlayerPreference(CS.LogicDefine.ShowBattleDamage, 1)
+    BattleGlobalManager:SetShowBattleDamage(false)
   end
   local showBattleBloodValue = 0
   if self.m_btn_blood_yes_ActiveToggle.isOn then

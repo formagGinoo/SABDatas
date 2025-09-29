@@ -85,7 +85,8 @@ function UIHeroActTaskItem:OnBtnreceiveClicked()
     TimeService:KillTimer(self.timer)
     self.timer = nil
   end
-  self.timer = TimeService:SetTimer(0.8, 1, function()
+  local fAniTime = UILuaHelper.GetAnimationLengthByName(self.m_itemRootObj, self.sAniOut)
+  self.timer = TimeService:SetTimer(fAniTime, 1, function()
     HeroActivityManager:ReqLamiaQuestGetAwardCS(self.m_itemData.activeId, self.m_itemData.cfg.m_UID)
   end)
 end

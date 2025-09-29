@@ -21,8 +21,11 @@ function Form_GuildCreate:AfterInit()
   self.m_inputfield_InputField.onValueChanged:AddListener(function()
     self:CheckStrIsCorrect()
   end)
+  self.GuildJoinCD = tonumber(ConfigManager:GetGlobalSettingsByKey("GuildJoinCD"))
+  self.m_iTimeDurationOneSecond = 1
   self.m_widgetBtnJoinTypeFilter = self:createFilterButton(self.m_filter_type)
   self.m_widgetBtnJoinLevelFilter = self:createFilterButton(self.m_filter_rank)
+  self.m_formatCD = ConfigManager:GetCommonTextById(100153)
   local vInfo = string.split(GuildMemberLevelStr, ",")
   for i, v in ipairs(vInfo) do
     local str = string.format(ConfigManager:GetCommonTextById(20033), v)
@@ -82,6 +85,24 @@ function Form_GuildCreate:GetDefaultGuildIcon()
   
   table.sort(iconList, sortFun)
   return iconList[1]
+end
+
+function Form_GuildCreate:OnUpdate(dt)
+  self.m_iTimeDurationOneSecond = self.m_iTimeDurationOneSecond + dt
+  if self.m_iTimeDurationOneSecond >= 1 then
+    self.m_iTimeDurationOneSecond = 0
+    local disTime = GuildManager.iLastLeaveAllianceTime + self.GuildJoinCD - TimeUtil:GetServerTimeS()
+    if 0 < disTime then
+      self.m_pnl_cd:SetActive(true)
+      self.m_btn_lock:SetActive(true)
+      self.m_btn_consume:SetActive(false)
+      self.m_txt_time_Text.text = string.CS_Format(self.m_formatCD, TimeUtil:SecondsToFormatCNStr4(math.floor(disTime)))
+    else
+      self.m_btn_consume:SetActive(true)
+      self.m_btn_lock:SetActive(false)
+      self.m_pnl_cd:SetActive(false)
+    end
+  end
 end
 
 function Form_GuildCreate:RefreshUI()
@@ -170,6 +191,10 @@ end
 
 function Form_GuildCreate:OnBtnemptyClicked()
   self:OnBtnReturnClicked()
+end
+
+function Form_GuildCreate:OnBtnlockClicked()
+  StackPopup:Push(UIDefines.ID_FORM_COMMON_TOAST, 10271)
 end
 
 function Form_GuildCreate:OnBtnReturnClicked()

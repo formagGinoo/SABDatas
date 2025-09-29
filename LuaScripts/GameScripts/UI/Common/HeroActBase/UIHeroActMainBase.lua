@@ -7,6 +7,8 @@ function UIHeroActMainBase:AfterInit()
   self.goBackBtnRoot = goRoot.transform:Find("content_node/ui_common_top_back").gameObject
   self.m_curBgPrefabStr = nil
   self.m_curBgObj = nil
+  self.sChangeGachaAniName1 = nil
+  self.sChangeGachaAniName2 = nil
 end
 
 function UIHeroActMainBase:OnActive()
@@ -81,6 +83,10 @@ function UIHeroActMainBase:CloseTimer()
   if self.iSoloRaidtimer then
     TimeService:KillTimer(self.iSoloRaidtimer)
     self.iSoloRaidtimer = nil
+  end
+  if self.m_switch_timer then
+    TimeService:KillTimer(self.m_switch_timer)
+    self.m_switch_timer = nil
   end
 end
 
@@ -322,6 +328,9 @@ function UIHeroActMainBase:FreshGachaUI()
     self.m_Gacha:SetActive(false)
     self.m_btn_convert:SetActive(true)
   end
+  if utils.isNull(self.m_img_bom_icon01) or utils.isNull(self.m_img_bom_icon02) or utils.isNull(self.m_img_top_icon01) or utils.isNull(self.m_img_top_icon02) then
+    return
+  end
   self.m_img_bom_icon01:SetActive(self.iCurGachaIndex ~= 1)
   self.m_img_bom_icon02:SetActive(self.iCurGachaIndex ~= 2)
   self.m_img_top_icon01:SetActive(self.iCurGachaIndex == 1)
@@ -340,6 +349,35 @@ function UIHeroActMainBase:OnBtnconvertClicked()
   end
   local sAniName = self.iCurGachaIndex == 1 and "Activity106Main_GachaBtn_switch2" or "Activity106Main_GachaBtn_switch1"
   UILuaHelper.PlayAnimationByName(self.m_DoubleGacha, sAniName)
+  local fAniLen = UILuaHelper.GetAnimationLengthByName(self.m_DoubleGacha, sAniName)
+  self.m_UILockID = UILockIns:Lock(fAniLen)
+  self:FreshGachaUI()
+end
+
+function UIHeroActMainBase:ChangeGachaUI()
+  if utils.isNull(self.m_DoubleGacha) then
+    return
+  end
+  local config = HeroActivityManager:GetMainInfoByActID(self.act_id)
+  local gachaJumpIDArray = utils.changeCSArrayToLuaTable(config.m_GachaJumpID)
+  self.iCurGachaIndex = self.iCurGachaIndex + 1
+  if self.iCurGachaIndex > #gachaJumpIDArray then
+    self.iCurGachaIndex = 1
+  end
+  local bTop2Btm = self.iCurGachaIndex == 1
+  local sAniName = bTop2Btm and self.sChangeGachaAniName2 or self.sChangeGachaAniName1
+  UILuaHelper.PlayAnimationByName(self.m_DoubleGacha, sAniName)
+  if self.m_switch_timer then
+    TimeService:KillTimer(self.m_switch_timer)
+    self.m_switch_timer = nil
+  end
+  self.m_switch_timer = TimeService:SetTimer(0.15, 1, function()
+    if utils.isNull(self.m_img_top_icon01) or utils.isNull(self.m_img_bom_icon01) then
+      return
+    end
+    UILuaHelper.SetChildIndex(self.m_img_top_icon01, bTop2Btm and 2 or 0)
+    UILuaHelper.SetChildIndex(self.m_img_bom_icon01, bTop2Btm and 0 or 2)
+  end)
   local fAniLen = UILuaHelper.GetAnimationLengthByName(self.m_DoubleGacha, sAniName)
   self.m_UILockID = UILockIns:Lock(fAniLen)
   self:FreshGachaUI()

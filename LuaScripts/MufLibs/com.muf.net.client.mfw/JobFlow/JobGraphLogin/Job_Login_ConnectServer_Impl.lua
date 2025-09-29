@@ -160,6 +160,13 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
     reqMsg.mMiscData.android_id = CS.DeviceUtil.GetAndroidID()
     reqMsg.mMiscData.gps_adid = CS.DeviceUtil.GetAdvertisingID()
   end
+  if IsIPhonePlatform() and ChannelManager:IsChinaChannel() then
+    if CS.HotUpdateHelper.Instance:IsUsingCaid() then
+      reqMsg.mMiscData.caid_params = CS.DeviceUtil.GetCAIDParams()
+    else
+      reqMsg.mMiscData.caid_params = ""
+    end
+  end
   fillDeviceInfo(reqMsg)
   local loginContext = CS.LoginContext.GetContext()
   local versionContext = CS.VersionContext.GetContext()
@@ -175,6 +182,9 @@ function Job_Login_ConnectServer_Impl.RequestLoginAuth(fResultCB)
     reqMsg.iOSType = MTTDProto.OSType_IOS
   else
     reqMsg.iOSType = MTTDProto.OSType_Win
+    if CS.DeviceUtil and CS.DeviceUtil.GetGclIdFromRegistry then
+      reqMsg.mMiscData.clid_id = CS.DeviceUtil.GetGclIdFromRegistry()
+    end
   end
   NetworkManager:InitCacheShowMessageCfg()
   RPCS():Login_Auth(reqMsg, function(sc, msg)

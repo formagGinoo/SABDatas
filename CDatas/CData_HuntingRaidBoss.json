@@ -120,7 +120,82 @@
       "m_AchieveType": "2",
       "m_BuffPool": "[4901000,4902000,4903000,4904000,4908000,4917000,4922000]",
       "m_Use64Rank": null
+    },
+    "9": {
+      "m_bError": null,
+      "m_BOSSID": "9",
+      "m_mName": "\"Plagued Nightmare\"",
+      "m_mDesc": "\"<style=Highlight>Earn 1 Hunting Point for each enemy unit defeated. Aim to achieve the highest Hunting Points possible.</style>\nUse the Seal <style=Highlight>Risk and Reward</style> and deal <style=Highlight>Piercing DMG</style> to earn more Huntting Points.\nTop Picks: Fanny, Stella, Acappella\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20120",
+      "m_mRequire": "\"Ever since that day, these vermin have been haunting my dreams...\"",
+      "m_LevelID": "2102090",
+      "m_mTitle1": "\"Highest Hunting Points\"",
+      "m_mTitle2": "\"Current Hunting Points\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4907000,4923000,4924000]",
+      "m_Use64Rank": null
+    },
+    "10": {
+      "m_bError": null,
+      "m_BOSSID": "10",
+      "m_mName": "\"Dawn Break\"",
+      "m_mDesc": "\"<style=Highlight>Find the construct's weakness and break as many shields as possible.</style>\nEnemies cannot be eliminated and shields keep regenerating. Use Seals <style=Highlight>Protracted War and Trojan Horse</style> and deal <style=Highlight>Continuous DMG</style> to accumulate Bloodsoul and quickly shatter shields.\nTop Picks: Fanny, Darcias, Agares, Transcendent Hati\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20580",
+      "m_mRequire": "\"I will burn your remains to celebrate the new dawn of my homeland.\"",
+      "m_LevelID": "2102100",
+      "m_mTitle1": "\"Most Shields Broken\"",
+      "m_mTitle2": "\"Shields Broken\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4909000,4925000,4926000]",
+      "m_Use64Rank": null
+    },
+    "11": {
+      "m_bError": null,
+      "m_BOSSID": "11",
+      "m_mName": "\"Creatures of the Night\"",
+      "m_mDesc": "\"<style=Highlight>Defeat more Werewolves to end this battle.</style>\nWerewolves appear around random allied Vassals. Use the Seal <style=Highlight>Death Wish</style> and deploy <style=Highlight>melee Vassals</style> to eliminate them quickly.\nTop Picks: Stella, Agnes, Darcias, Transcendent Hati\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20710",
+      "m_mRequire": "\"Has the endless war not yet worn out the night? So be it.\"",
+      "m_LevelID": "2102110",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4907000,4931000,4927000]",
+      "m_Use64Rank": null
+    },
+    "12": {
+      "m_bError": null,
+      "m_BOSSID": "12",
+      "m_mName": "\"Vampire Slayer\"",
+      "m_mDesc": "\"<style=Highlight>Defeat as many Bloodborn as possible.</style>\nBloodborn have high M. DEF. Use the Seal <style=Highlight>Tainted Blood</style> and deal <style=Highlight>P. DMG</style> to defeat them faster.\nTop Picks: Van Helsing, Agnes, Sirene, Timeless Aiona\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20630",
+      "m_mRequire": "\"I will return to that future, the future meant for us.\"",
+      "m_LevelID": "2102120",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4905000,4928000,4929000]",
+      "m_Use64Rank": null
+    },
+    "13": {
+      "m_bError": null,
+      "m_BOSSID": "13",
+      "m_mName": "\"Judgement Day\"",
+      "m_mDesc": "\"<style=Highlight>Deal as much DMG as possible to the Inquisitors within the time limit. No score will be recorded if the entire team dies.</style>\nUse the Seal <style=Highlight>Bloodmoon Shadow</style> and deploy high ATK SPD Vassals to deal higher DMG more easily.\nTop Picks: Julius, Timeless Aiona, Gilrain, Acappella\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20020",
+      "m_mRequire": "\"The shield of the Aegis will never falter!\"",
+      "m_LevelID": "2102130",
+      "m_mTitle1": "\"Highest DMG\"",
+      "m_mTitle2": "\"DMG Dealt\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4908000,4920000,4930000]",
+      "m_Use64Rank": "1"
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_13_items"
 }

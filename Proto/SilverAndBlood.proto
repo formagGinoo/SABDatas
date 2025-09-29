@@ -57,71 +57,6 @@ enum ActivityGameNoticeRewardType {
   ActivityGameNoticeRewardType_Max = 2;
 }
 
-enum ActivityType {
-  ActivityType_IAPBonus = 1;
-  ActivityType_VersionQuest = 2;
-  ActivityType_IAPSellModify = 3;
-  ActivityType_StoreGift = 4;
-  ActivityType_IAPBuy = 5;
-  ActivityType_AntiCheat = 6;
-  ActivityType_CreateRoleLimit = 7;
-  ActivityType_ModuleControl = 8;
-  ActivityType_PreUpgrade = 9;
-  ActivityType_ThirdPartyShop = 11;
-  ActivityType_GameNotice = 13;
-  ActivityType_GlobalPush = 14;
-  ActivityType_NewDirectPushGift = 15;
-  ActivityType_DailyGiftNew = 16;
-  ActivityType_PushGiftVirtualItem = 17;
-  ActivityType_CDKeyExchange = 18;
-  ActivityType_PreRegisterMail = 21;
-  ActivityType_ResourceMonitor = 22;
-  ActivityType_PersonalChatWeb = 23;
-  ActivityType_ResourceMonitorNew = 27;
-  ActivityType_SystemSwitch = 28;
-  ActivityType_FightDebug = 29;
-  ActivityType_Censor = 30;
-  ActivityType_Sign = 100;
-  ActivityType_CommonQuest = 101;
-  ActivityType_SurveyReward = 102;
-  ActivityType_AutoSendMail = 103;
-  ActivityType_LoginSelect = 104;
-  ActivityType_LevelAward = 105;
-  ActivityType_PayStore = 106;
-  ActivityType_BattlePass = 107;
-  ActivityType_CommunityEntrance = 108;
-  ActivityType_TvProjection = 110;
-  ActivityType_RechargeBack = 111;
-  ActivityType_PushGift = 112;
-  ActivityType_SoloRaid = 113;
-  ActivityType_GachaJump = 114;
-  ActivityType_RechargeRebate = 115;
-  ActivityType_PickupGift = 116;
-  ActivityType_AllianceBattle = 117;
-  ActivityType_FullBurstDay = 118;
-  ActivityType_LamiaTimeManager = 119;
-  ActivityType_ItemEmergencyShield = 120;
-  ActivityType_HeroSkillReset = 121;
-  ActivityType_OnePicAct = 122;
-  ActivityType_LoginSendItem = 123;
-  ActivityType_UpTimeManager = 124;
-  ActivityType_WelfareShow = 125;
-  ActivityType_ABTest = 126;
-  ActivityType_Hunting = 127;
-  ActivityType_EmergencyGift = 137;
-  ActivityType_VoucherControl = 138;
-  ActivityType_WebReward = 139;
-  ActivityType_Refund = 140;
-  ActivityType_SignGift = 141;
-  ActivityType_GachaFree = 142;
-  ActivityType_ForbidCustomDescManager = 143;
-  ActivityType_ReturnSign = 144;
-  ActivityType_ConsumeReward = 145;
-  ActivityType_TimelineJump = 146;
-  ActivityType_FightDataUpdate = 147;
-  ActivityType_HeroTrial = 148;
-}
-
 enum ActPushGiftPriceType {
   ActPushGiftPriceType_RegDays = 1;
   ActPushGiftPriceType_LastPayDate = 2;
@@ -382,6 +317,8 @@ enum CmdActPayStoreType {
   CmdActPayStoreType_SignGift = 22;
   CmdActPayStoreType_FashionStore = 23;
   CmdActPayStoreType_PickupGiftNew = 24;
+  CmdActPayStoreType_Train = 25;
+  CmdActPayStoreType_Return = 26;
 }
 
 enum CmdAllianceHistoryType {
@@ -520,6 +457,13 @@ enum CmdId_Act_LoginSendItem {
   CmdId_Act_LoginSendItem_TakeReward_SC = 60262;
 }
 
+enum CmdId_Act_MiniGame {
+  CmdId_Act_MiniGame_PassLevel_CS = 60621;
+  CmdId_Act_MiniGame_PassLevel_SC = 60622;
+  CmdId_Act_MiniGame_TakeGroupReward_CS = 60623;
+  CmdId_Act_MiniGame_TakeGroupReward_SC = 60624;
+}
+
 enum CmdId_Act_PayStore {
   CmdId_Act_PayStore_SelectReward_CS = 59911;
   CmdId_Act_PayStore_SelectReward_SC = 59912;
@@ -553,6 +497,13 @@ enum CmdId_Act_ReturnSign {
   CmdId_Act_ReturnSign_GetSignReward_SC = 60522;
 }
 
+enum CmdId_Act_ReturnTask {
+  CmdId_Act_ReturnTask_GetReward_CS = 60661;
+  CmdId_Act_ReturnTask_GetReward_SC = 60662;
+  CmdId_Act_ReturnTask_GetQuestReward_CS = 60663;
+  CmdId_Act_ReturnTask_GetQuestReward_SC = 60664;
+}
+
 enum CmdId_Act_Sign {
   CmdId_Act_Sign_Sign_CS = 59771;
   CmdId_Act_Sign_Sign_SC = 59772;
@@ -573,6 +524,11 @@ enum CmdId_Act_SurveyReward {
 enum CmdId_Act_TimelineJump {
   CmdId_Act_TimelineJump_GetReward_CS = 60561;
   CmdId_Act_TimelineJump_GetReward_SC = 60562;
+}
+
+enum CmdId_Act_Train {
+  CmdId_Act_Train_TakeTaskReward_CS = 60681;
+  CmdId_Act_Train_TakeTaskReward_SC = 60682;
 }
 
 enum CmdId_Afk {
@@ -714,6 +670,8 @@ enum CmdId_Attract {
   CmdId_Attract_SetLetter_SC = 10918;
   CmdId_Attract_LetterSubmitItem_CS = 10919;
   CmdId_Attract_LetterSubmitItem_SC = 10920;
+  CmdId_Attract_LoungeBond_CS = 10921;
+  CmdId_Attract_LoungeBond_SC = 10922;
 }
 
 enum CmdId_BaseStore {
@@ -1175,6 +1133,8 @@ enum CmdId_Hero {
   CmdId_Hero_SetFashion_SC = 10424;
   CmdId_Hero_SkillReset_CS = 10425;
   CmdId_Hero_SkillReset_SC = 10426;
+  CmdId_Hero_BatchLevelUp_CS = 10427;
+  CmdId_Hero_BatchLevelUp_SC = 10428;
   CmdId_Form_GetForm_CS = 10430;
   CmdId_Form_GetForm_SC = 10431;
   CmdId_Form_SetForm_CS = 10432;
@@ -1266,6 +1226,8 @@ enum CmdId_Lamia {
   CmdId_Lamia_GetSubActAward_SC = 19128;
   CmdId_Lamia_SetClientData_CS = 19129;
   CmdId_Lamia_SetClientData_SC = 19130;
+  CmdId_Lamia_MiniGame_LoveWhip_GetAward_CS = 19131;
+  CmdId_Lamia_MiniGame_LoveWhip_GetAward_SC = 19132;
 }
 
 enum CmdId_Legacy {
@@ -1563,6 +1525,15 @@ enum CmdId_Role {
   CmdId_Role_UpgradeCirculation_SC = 10200;
 }
 
+enum CmdId_Role_CirculationCareer {
+  CmdId_Role_GetCirculationCareer_CS = 60701;
+  CmdId_Role_GetCirculationCareer_SC = 60702;
+  CmdId_Role_UpgradeCirculationCareer_CS = 60703;
+  CmdId_Role_UpgradeCirculationCareer_SC = 60704;
+  CmdId_Role_SetCirculationCareerHero_CS = 60705;
+  CmdId_Role_SetCirculationCareerHero_SC = 60706;
+}
+
 enum CmdId_Room {
   CmdId_Room_Create_CS = 10800;
   CmdId_Room_Create_SC = 10801;
@@ -1767,742 +1738,6 @@ enum EquipQuality {
   EquipQuality_T8 = 8;
   EquipQuality_T9 = 9;
   EquipQuality_T10 = 10;
-}
-
-enum ErrorCode {
-  Error_Idip_AccountIsNull = 1;
-  Error_HaveNoRole = 1000;
-  Error_Gm_Param = 1001;
-  Error_Gm_NoParser = 1002;
-  Error_Role_Null = 1003;
-  Error_Sys_NoCmdParser = 1004;
-  Error_Invalid_Config = 1005;
-  Error_GUIDRepeat = 1006;
-  Error_Gm_Execute = 1007;
-  Error_Cmd_Execute = 1008;
-  Error_TableNoData = 1009;
-  Error_NoBagSpace = 1010;
-  Error_Item_NotEnough = 1011;
-  Error_Item_NotExist = 1012;
-  Error_Item_Invalid = 1013;
-  Error_ZoneIdExceedLimit = 1014;
-  Error_GUIDAllocExceedLimit = 1015;
-  Error_CoinNotEnough = 1016;
-  Error_DiamondNotEnough = 1017;
-  Error_LevelNotEnough = 1018;
-  Error_BagNoSpaceSendMail = 1019;
-  Error_Item_CannotSell = 1020;
-  Error_Item_CannotUse = 1021;
-  Error_Item_UseNoReward = 1022;
-  Error_Item_InvalidCost = 1023;
-  Error_NetBusy = 1024;
-  Error_FightVerify = 1025;
-  Error_RoleNameEmpty = 1026;
-  Error_DataNoChange = 1027;
-  Error_VipLevelNotEnough = 1028;
-  Error_Param_Duplicate = 1029;
-  Error_Role_BanLogin = 1031;
-  Error_Role_BanSpeak = 1032;
-  Error_Item_UseLimit = 1033;
-  Error_Role_NotNewRole = 1034;
-  Error_Role_HaveNotRecharge = 1035;
-  Error_LevelTooBig = 1038;
-  Error_Sys_CmdClosed = 1039;
-  Error_WrongChannel = 1041;
-  Error_CannotBindMultiple = 1042;
-  Error_WrongOSType = 1045;
-  Error_WrongCountry = 1046;
-  Error_NoHistoryFightReport = 1047;
-  Error_Data_NotChange = 1048;
-  Error_Face_Same = 1049;
-  Error_Face_Invalid = 1050;
-  Error_Role_GenderHasSet = 1051;
-  Error_IAP_ChannelRestrict = 1053;
-  Error_Role_BanMail = 1055;
-  Error_ReceiveShadowEliteReward = 1056;
-  Error_Role_BanUploadFace = 1057;
-  Error_BlackList_ForbidLogin = 1058;
-  Error_BlackList_ForbidPay = 1059;
-  Error_Role_NotCustomFace = 1061;
-  Error_Role_FaceUploadInCD = 1062;
-  Error_Role_FaceUploadClosed = 1063;
-  Error_Role_CantDailyRefresh = 1064;
-  Error_Zone_Updating = 1075;
-  Error_Zone_MaxRoleNum = 1082;
-  Error_Comm_NoCache = 1083;
-  Error_Role_BanRefund = 1084;
-  Error_Role_RefundOrderDealed = 1085;
-  Error_Role_HasTakeReward = 1086;
-  Error_InSendReward = 1087;
-  Error_Push_RoleOnline = 1088;
-  Error_Push_SettingNotOpen = 1089;
-  Error_Push_ContentEmpty = 1090;
-  Error_SelfAddOverflow = 1091;
-  Error_Role_SignatureInvalidEncoding = 1092;
-  Error_Role_SignatureLengthLimit = 1093;
-  Error_Role_SignatureDirtyWord = 1094;
-  Error_FightTypeError = 1095;
-  Error_Signature_Error = 1096;
-  Error_Token_Error = 1097;
-  Error_Req_TooFrequent = 1098;
-  Error_Role_NotRealName = 1099;
-  Error_Limit_Times = 1100;
-  Error_Limit_ReportLimit = 1101;
-  Error_HasDirty = 1102;
-  Error_Quest_HaveNoQuest = 1121;
-  Error_Quest_NotFinish = 1122;
-  Error_Quest_Over = 1123;
-  Error_Quest_Doing = 1124;
-  Error_Quest_NotDonePre = 1125;
-  Error_Quest_StepOperType = 1126;
-  Error_Quest_MainGroupNotFinish = 1127;
-  Error_Quest_MainGroupTaken = 1128;
-  Error_Quest_Lock = 1129;
-  Error_Quest_CondError = 1130;
-  Error_Quest_Disabled = 1131;
-  Error_Quest_NoReward = 1132;
-  Error_Quest_ActDayError = 1133;
-  Error_Quest_ActNotEnoughFinish = 1134;
-  Error_Quest_AchieveRewardTaken = 1135;
-  Error_Quest_AchieveScoreNotEnough = 1136;
-  Error_Quest_ConditionNotMatch = 1137;
-  Error_Form_DesignHero = 1139;
-  Error_Form_Empty = 1140;
-  Error_Form_InvalidPreset = 1141;
-  Error_Form_SameHero = 1142;
-  Error_Form_HeroNumMax = 1143;
-  Error_Form_NoChange = 1144;
-  Error_Form_HeroCampRes = 1145;
-  Error_Form_NoBattleMode = 1146;
-  Error_Form_SameIdentity = 1147;
-  Error_Form_CantSave = 1148;
-  Error_Form_PosInvalid = 1149;
-  Error_System_NotOpen = 1150;
-  Error_System_Closed = 1151;
-  Error_System_RoleLevelLow = 1152;
-  Error_System_StageMainNotPass = 1153;
-  Error_System_GuideNotPass = 1154;
-  Error_Stage_TypeError = 1160;
-  Error_Stage_SubTypeError = 1161;
-  Error_Stage_ChapterError = 1162;
-  Error_Stage_NotEnter = 1163;
-  Error_Stage_NotFinish = 1164;
-  Error_Stage_CantPlayAgain = 1165;
-  Error_Stage_PreNotFinish = 1166;
-  Error_Stage_MainNotFinish = 1167;
-  Error_Stage_MapError = 1168;
-  Error_Stage_CantMop = 1169;
-  Error_Stage_RoundError = 1170;
-  Error_Stage_UnlockTime = 1171;
-  Error_Stage_TowerClose = 1172;
-  Error_Stage_GoblinNoScore = 1173;
-  Error_Stage_GoblinNoReward = 1174;
-  Error_Stage_FightIdError = 1175;
-  Error_Stage_RequiredHero = 1176;
-  Error_Stage_ForbiddenHero = 1177;
-  Error_Stage_StarVerifyError = 1178;
-  Error_Stage_AreaFinish = 1179;
-  Error_Stage_AreaWrong = 1180;
-  Error_Stage_MainChapterNotFinish = 1181;
-  Error_Stage_DungeonClose = 1182;
-  Error_Stage_ForbiddenCareer = 1183;
-  Error_Stage_DungeonBossHpError = 1184;
-  Error_Stage_DungeonNotFight = 1185;
-  Error_Afk_SeeInCD = 1190;
-  Error_Afk_TakeInCD = 1191;
-  Error_Afk_NoReward = 1192;
-  Error_Afk_InstantMaxTimes = 1193;
-  Error_Fight_GenerateReportFail = 1200;
-  Error_Fight_ReportExpire = 1201;
-  Error_Fight_InvalidReport = 1202;
-  Error_Fight_NoReport = 1203;
-  Error_Fight_InvalidForm = 1204;
-  Error_Fight_HeroNotInForm = 1205;
-  Error_Fight_VerifyCheat = 1206;
-  Error_Fight_HeroDead = 1207;
-  Error_Fight_CantSkip = 1208;
-  Error_Fight_WorldIdError = 1209;
-  Error_Fight_PowerError = 1210;
-  Error_Fight_FrameMinLimit = 1211;
-  Error_Fight_MaliciousCheat = 1212;
-  Error_Arena_EnemyNotEnough = 1262;
-  Error_Arena_RankChanged = 1263;
-  Error_Mail_Role_Null = 1270;
-  Error_Mail_NotExist = 1271;
-  Error_Mail_NoAttach = 1272;
-  Error_Mail_LengthLimited = 1273;
-  Error_Mail_NeedRcvAttach = 1274;
-  Error_Mail_MailAttachNotRcv = 1275;
-  Error_Mail_RcvUserNotExit = 1276;
-  Error_Mail_SendToMyself = 1277;
-  Error_Mail_MailAttachHasRcv = 1278;
-  Error_Mail_CanNotDel = 1279;
-  Error_Mail_TemplateCanNotSend = 1280;
-  Error_Mail_TitleEmpty = 1281;
-  Error_Mail_ContentEmpty = 1282;
-  Error_Mail_CannotReportSystemMail = 1283;
-  Error_Mail_Invalid = 1284;
-  Error_Mail_BanReceive = 1285;
-  Error_Mail_Read = 1286;
-  Error_Mail_TakeAllInvalid = 1287;
-  Error_Mail_CollectMailExist = 1288;
-  Error_Name_RoleNameExist = 1290;
-  Error_Name_RoleNameSame = 1291;
-  Error_Name_LengthLimit = 1293;
-  Error_Name_HasDirty = 1296;
-  Error_Name_InvalidChar = 1297;
-  Error_Name_LengthShort = 1298;
-  Error_Name_IsDigit = 1299;
-  Error_Chat_InCD = 1301;
-  Error_Chat_Channel = 1302;
-  Error_Chat_MessageEmpty = 1303;
-  Error_Chat_WasInShieldedList = 1304;
-  Error_Chat_NotInShieldedList = 1305;
-  Error_Chat_MessageCharError = 1306;
-  Error_Chat_ForbidSystemChannel = 1307;
-  Error_Chat_ShieldLimit = 1308;
-  Error_Chat_Frequency = 1309;
-  Error_Chat_Create = 1310;
-  Error_Chat_NotCreate = 1311;
-  Error_Chat_Self = 1312;
-  Error_Chat_Report_frequently = 1313;
-  Error_Chat_NoEmoji = 1315;
-  Error_Chat_LanguageInvalid = 1316;
-  Error_Chat_LanguageExist = 1317;
-  Error_Chat_LanguageNotExist = 1318;
-  Error_Chat_RecruitChatMaxNum = 1319;
-  Error_Chat_InvalidFilter = 1320;
-  Error_Chat_InvalidWorldGroupKey = 1321;
-  Error_Chat_NotInGroup = 1322;
-  Error_Chat_MaxGroupMember = 1323;
-  Error_Chat_NotGroupHost = 1324;
-  Error_Chat_GroupNotExist = 1325;
-  Error_Chat_GroupInviteEmpty = 1326;
-  Error_Chat_InviteSelf = 1327;
-  Error_MP_KeyNotInZoneList = 1370;
-  Error_MP_NoCDKey = 1371;
-  Error_MP_CDKeyExpired = 1372;
-  Error_MP_InvalidCDKey = 1373;
-  Error_MP_CDKeyExchanged = 1374;
-  Error_MP_ExchangeBindLimited = 1375;
-  Error_MP_ExchangeNumLimited = 1376;
-  Error_MP_InvalidDivision = 1377;
-  Error_MP_LimitConfigError = 1378;
-  Error_MP_InDelivering = 1379;
-  Error_MP_CDKeyNotOpen = 1380;
-  Error_MP_CDKeyShareLimited = 1381;
-  Error_MP_NotNewRole = 1382;
-  Error_MP_HaveNotRecharge = 1383;
-  Error_MP_LevelTooBig = 1384;
-  Error_MP_ChannelMismatch = 1385;
-  Error_MP_ExchangeNumLimit = 1386;
-  Error_MP_TryExchangeNumLimit = 1387;
-  Error_MP_GroupExchangeNumLimit = 1388;
-  Error_Alliance_Null = 1400;
-  Error_Alliance_NotJoin = 1401;
-  Error_Alliance_HasJoin = 1402;
-  Error_Alliance_MasterCannotLeave = 1403;
-  Error_Alliance_NotMaster = 1404;
-  Error_Alliance_NotInMemberList = 1405;
-  Error_Alliance_Self = 1406;
-  Error_Alliance_MaxMember = 1407;
-  Error_Alliance_NotInSameAlliance = 1408;
-  Error_Alliance_InvalidName = 1409;
-  Error_Alliance_UnkownJoinType = 1410;
-  Error_Alliance_RecommendInvalid = 1411;
-  Error_Alliance_NotLeader = 1412;
-  Error_Alliance_NotInApplyList = 1413;
-  Error_Alliance_InvalidPost = 1414;
-  Error_Alliance_MaxLeader = 1415;
-  Error_Alliance_InvalidBulletin = 1416;
-  Error_Alliance_InvalidRecruit = 1417;
-  Error_Alliance_NotAllowApply = 1418;
-  Error_Alliance_LikeTimesLimit = 1419;
-  Error_Alliance_LikeRepeat = 1420;
-  Error_Alliance_LevelNotEnough = 1421;
-  Error_Alliance_LevelLimit = 1422;
-  Error_Alliance_MaxLevel = 1423;
-  Error_Alliance_MemberNotNull = 1424;
-  Error_Alliance_JoinLevelLow = 1425;
-  Error_Alliance_UnkownJoinLevel = 1426;
-  Error_Alliance_UnkownBadge = 1427;
-  Error_Alliance_BadgeLock = 1428;
-  Error_Alliance_JoinCD = 1429;
-  Error_Alliance_AlreadyApply = 1430;
-  Error_Alliance_PostError = 1431;
-  Error_Alliance_CreateError = 1432;
-  Error_Alliance_DataError = 1433;
-  Error_Alliance_ShopBuyLimit = 1434;
-  Error_Alliance_TodaySigned = 1435;
-  Error_Alliance_MaxApplyer = 1436;
-  Error_Alliance_ApplyNumLimit = 1437;
-  Error_Alliance_AlreadyTransferMaster = 1438;
-  Error_Alliance_NotTransferMaster = 1439;
-  Error_Alliance_SameName = 1440;
-  Error_Alliance_MailContentError = 1480;
-  Error_Alliance_MailSendLimit = 1481;
-  Error_Alliance_RepeateUserInvite = 1482;
-  Error_Alliance_RepeateBeInvite = 1483;
-  Error_Alliance_NoBeInvite = 1484;
-  Error_Alliance_Battle_DataError = 1500;
-  Error_Alliance_Battle_NotOpen = 1501;
-  Error_Alliance_Battle_NotBattle = 1502;
-  Error_Alliance_Battle_InSettle = 1503;
-  Error_Alliance_Battle_CantLeave = 1504;
-  Error_Alliance_Battle_CantKick = 1505;
-  Error_Alliance_Battle_CantDestroy = 1506;
-  Error_Alliance_Battle_NoBoss = 1507;
-  Error_Alliance_Battle_BossDead = 1508;
-  Error_Alliance_Battle_RoundError = 1509;
-  Error_Alliance_Battle_ChallengeTimes = 1510;
-  Error_Alliance_Battle_HeroUsed = 1511;
-  Error_Alliance_Battle_BossHpError = 1512;
-  Error_Alliance_Notice_NotFound = 1521;
-  Error_Alliance_Notice_AlreadyConfirmed = 1522;
-  Error_Alliance_Notice_NoPrivilege = 1523;
-  Error_Alliance_Notice_ContentTooLong = 1524;
-  Error_Alliance_Notice_TooManyPerDay = 1525;
-  Error_Alliance_Notice_NoNeedConfirm = 1526;
-  Error_Alliance_Notice_SendInCD = 1527;
-  Error_Alliance_Notice_SendTimesLimit = 1528;
-  Error_Alliance_Notice_AlreadyDeleted = 1529;
-  Error_Alliance_Notice_CannotDeleteTop = 1530;
-  Error_Alliance_Notice_AlreadyPinned = 1531;
-  Error_Alliance_Notice_NotPinned = 1532;
-  Error_Shop_NotOpen = 1600;
-  Error_Shop_NoConfig = 1601;
-  Error_Shop_Close = 1602;
-  Error_Shop_CantRefresh = 1603;
-  Error_Shop_RefreshMax = 1604;
-  Error_Shop_InfoExpire = 1605;
-  Error_Shop_NoGoods = 1606;
-  Error_Shop_StockNotEnough = 1607;
-  Error_Shop_LimitBought = 1608;
-  Error_Shop_GoodsNotShow = 1609;
-  Error_Shop_GoodsEnd = 1610;
-  Error_Store_WrongItemPrice = 1650;
-  Error_Store_NotOnSell = 1651;
-  Error_Store_BuyNumLimit = 1652;
-  Error_Store_InMonitor = 1653;
-  Error_BaseStore_NotOpen = 1700;
-  Error_BaseStore_NoConfig = 1701;
-  Error_BaseStore_Close = 1702;
-  Error_BaseStore_CantRefresh = 1703;
-  Error_BaseStore_RefreshMax = 1704;
-  Error_BaseStore_InfoExpire = 1705;
-  Error_BaseStore_NoGoods = 1706;
-  Error_BaseStore_StockNotEnough = 1707;
-  Error_BaseStore_LimitBought = 1708;
-  Error_BaseStore_GoodsNotShow = 1709;
-  Error_BaseStore_GoodsEnd = 1710;
-  Error_BaseStore_GoodsNotMatch = 1711;
-  Error_BaseStore_MonthlyCardMaxDuration = 1712;
-  Error_BaseStore_ChapterAlreadyBuy = 1713;
-  Error_BaseStore_ChapterPreGoodsNotConfig = 1714;
-  Error_BaseStore_ChapterPreGoodsNotBuy = 1715;
-  Error_BaseStore_ChapterPreGoodsNotFinish = 1716;
-  Error_BaseStore_GoodsNotOn = 1717;
-  Error_BaseStore_ChapterNotConfig = 1718;
-  Error_BaseStore_ChapterNotBuy = 1719;
-  Error_BaseStore_ChapterLevelNotEnough = 1720;
-  Error_BaseStore_ChapterAlreadyReward = 1721;
-  Error_BaseStore_ChapterLevelNotConfig = 1722;
-  Error_BaseStore_StoreIdNotMatch = 1723;
-  Error_BaseStore_StoreTypeNotSupport = 1724;
-  Error_ActPayStore_NotOpen = 1750;
-  Error_ActPayStore_ConfigError = 1751;
-  Error_ActPayStore_StoreTime = 1752;
-  Error_ActPayStore_Level = 1753;
-  Error_ActPayStore_MainStage = 1754;
-  Error_ActPayStore_Limit = 1755;
-  Error_ActPayStore_StatusNotOpen = 1756;
-  Error_ActPayStore_PreGoodsNotBuy = 1757;
-  Error_ActPayStore_FreeGoods = 1758;
-  Error_ActPayStore_Expire = 1759;
-  Error_ActPayStore_GoodsTime = 1760;
-  Error_ReplaceArena_RegroupNotOpen = 2000;
-  Error_ReplaceArena_NotInPlay = 2001;
-  Error_ReplaceArena_Enemy_Null = 2002;
-  Error_ReplaceArena_RefreshCD = 2003;
-  Error_ReplaceArena_SeasonError = 2004;
-  Error_ReplaceArena_GroupError = 2005;
-  Error_ReplaceArena_TicketError = 2006;
-  Error_ReplaceArena_TicketNotEnough = 2007;
-  Error_ReplaceArena_NoEnemyDetail = 2008;
-  Error_ReplaceArena_InBattle = 2009;
-  Error_ReplaceArena_BattleFormError = 2010;
-  Error_ReplaceArena_SeasonChange = 2011;
-  Error_ReplaceArena_NotInBattle = 2012;
-  Error_ReplaceArena_BattleEndException = 2013;
-  Error_ReplaceArena_EnemyGroupError = 2014;
-  Error_ReplaceArena_EnemyRankLow = 2015;
-  Error_ReplaceArena_NoAfkReward = 2016;
-  Error_ReplaceArena_SelfRankChange = 2017;
-  Error_ReplaceArena_EnemyRankChange = 2018;
-  Error_ReplaceArena_GradeRankNotInit = 2019;
-  Error_SoloRaid_NoActivity = 2100;
-  Error_SoloRaid_ActivityChange = 2101;
-  Error_SoloRaid_RaidBossError = 2102;
-  Error_SoloRaid_RaidLock = 2103;
-  Error_SoloRaid_CurRaidError = 2104;
-  Error_SoloRaid_RaidDayChange = 2105;
-  Error_SoloRaid_RaidPass = 2106;
-  Error_SoloRaid_RaidTimesLimit = 2107;
-  Error_SoloRaid_FightTimesLimit = 2108;
-  Error_SoloRaid_HeroUsed = 2109;
-  Error_SoloRaid_RaidNotPass = 2110;
-  Error_SoloRaid_RaidTodayNotPass = 2111;
-  Error_SoloRaid_HardCantMop = 2112;
-  Error_SoloRaid_NotChosen = 2113;
-  Error_SoloRaid_HasChosen = 2114;
-  Error_SoloRaid_ActivitySettle = 2115;
-  Error_Hunting_NoActivity = 2151;
-  Error_Hunting_ActivityChange = 2152;
-  Error_Hunting_ActivitySettle = 2153;
-  Error_Hunting_BossNotOpen = 2154;
-  Error_Hunting_BossFightEnd = 2155;
-  Error_Hunting_EffectNumLimit = 2156;
-  Error_Hunting_BossNoData = 2157;
-  Error_Hunting_BossRewardTaken = 2158;
-  Error_Hunting_BossRewardNotGet = 2159;
-  Error_Hunting_BossNoBuff = 2160;
-  Error_Hunting_NoGroupData = 2161;
-  Error_Hunting_NoSettleControl = 2162;
-  Error_Hunting_SettleAlready = 2163;
-  Error_Ancient_HeroLock = 2201;
-  Error_Ancient_NoHeroData = 2202;
-  Error_Ancient_AddEnergyMax = 2203;
-  Error_Ancient_QuestRefreshMax = 2204;
-  Error_Ancient_EnergyNotEnough = 2205;
-  Error_Ancient_NoEnergy = 2206;
-  Error_OriginalArena_BotLess = 2450;
-  Error_OriginalArena_Enemy_Null = 2451;
-  Error_OriginalArena_Over = 2452;
-  Error_OriginalArena_NotOpen = 2453;
-  Error_OriginalArena_BuyNumLimit = 2454;
-  Error_OriginalArena_RefreshCD = 2455;
-  Error_OriginalArena_UnkownEnemy = 2456;
-  Error_OriginalArena_NotPlayingTime = 2457;
-  Error_OriginalArena_CantFreeRefresh = 2458;
-  Error_OriginalArena_Ticket_NotEnough = 2459;
-  Error_OriginalArena_FinishChallenge = 2460;
-  Error_OriginalArena_RepeatInit = 2461;
-  Error_Hero_NumNoEnough = 2500;
-  Error_Hero_LevelTooHigh = 2501;
-  Error_Hero_NotInList = 2502;
-  Error_Hero_InList = 2503;
-  Error_Hero_BreakError = 2504;
-  Error_Hero_SpaceLimit = 2505;
-  Error_Hero_PosNoEquip = 2506;
-  Error_Hero_EquipPosError = 2507;
-  Error_Hero_EquipTypeError = 2508;
-  Error_Hero_NoEquip = 2509;
-  Error_Hero_NoNeedResetLevel = 2510;
-  Error_Hero_CantBreak = 2511;
-  Error_Hero_BreakMax = 2512;
-  Error_Hero_SkillCantLevelUp = 2513;
-  Error_Hero_SkillLevelMax = 2514;
-  Error_Hero_InheritCantLevel = 2515;
-  Error_Hero_LevelMaxLock = 2516;
-  Error_Hero_NoChange = 2517;
-  Error_Hero_NotHasFashion = 2518;
-  Error_Hero_FashionNotMatch = 2519;
-  Error_Hero_SameFashion = 2520;
-  Error_Hero_FashionNotShow = 2521;
-  Error_Hero_InheritMainLock = 2522;
-  Error_Hero_NoSkillResetAct = 2523;
-  Error_Hero_NoResetSkill = 2524;
-  Error_Hero_FashionOrigin = 2525;
-  Error_Equip_SpaceLimit = 2550;
-  Error_Equip_NotExist = 2551;
-  Error_Equip_Installed = 2552;
-  Error_Equip_MaxLevel = 2553;
-  Error_Equip_ExpItemError = 2554;
-  Error_Equip_Overload = 2555;
-  Error_Equip_QualityNotEnough = 2556;
-  Error_Equip_CantOverload = 2557;
-  Error_Equip_NotInstalled = 2558;
-  Error_Equip_HeroNotSameCamp = 2559;
-  Error_Equip_NotMaxLevel = 2560;
-  Error_Equip_NotOverload = 2561;
-  Error_Equip_OverloadNotSave = 2562;
-  Error_Equip_OverloadEffectEmpty = 2563;
-  Error_Equip_OverloadNotChange = 2564;
-  Error_Equip_OverloadAllLock = 2565;
-  Error_Equip_ExpEquipSame = 2566;
-  Error_Equip_OverloadAllLockLevel = 2567;
-  Error_Inherit_IsMainHero = 2600;
-  Error_Inherit_HeroAlreadyIn = 2601;
-  Error_Inherit_HeroNotIn = 2602;
-  Error_Inherit_GridLock = 2603;
-  Error_Inherit_GridInCD = 2604;
-  Error_Inherit_GridAlreadyUnlock = 2605;
-  Error_Inherit_GridCountMax = 2606;
-  Error_Inherit_GridHasHero = 2607;
-  Error_Inherit_GridNotCD = 2608;
-  Error_Inherit_AlreadyEvolve = 2609;
-  Error_Inherit_EvolveLevelLow = 2610;
-  Error_Inherit_NotEvolve = 2611;
-  Error_Inherit_LevelMax = 2612;
-  Error_Attract_LetterQuestCantFight = 2629;
-  Error_Attract_TouchLimit = 2630;
-  Error_Attract_MaxRank = 2631;
-  Error_Attract_HeroNoAttract = 2632;
-  Error_Attract_StoryRewardTaken = 2633;
-  Error_Attract_StoryLock = 2634;
-  Error_Attract_RankNotEnough = 2635;
-  Error_Attract_StorySaw = 2636;
-  Error_Attract_TouchHeroLimit = 2637;
-  Error_Attract_CouncilLimit = 2638;
-  Error_Attract_WrongIssue = 2639;
-  Error_Attract_CouncilNoHero = 2640;
-  Error_Attract_HeroCantCouncil = 2641;
-  Error_Attract_PreStoryNotReward = 2642;
-  Error_Attract_LetterNotFinish = 2643;
-  Error_Attract_LetterNotUnlock = 2644;
-  Error_Attract_LetterStepError = 2645;
-  Error_Attract_LetterReplyNumError = 2646;
-  Error_Attract_LetterReplyIdError = 2647;
-  Error_Attract_LetterQuestNotFinish = 2648;
-  Error_Attract_NoLetterQuest = 2649;
-  Error_Gacha_TimeNotOpen = 2650;
-  Error_Gacha_TimeEnd = 2651;
-  Error_Gacha_TimesLimit = 2652;
-  Error_Gacha_CantUseToken = 2653;
-  Error_Gacha_PoolError = 2654;
-  Error_Gacha_NotOpen = 2655;
-  Error_Gacha_WishListUnlock = 2656;
-  Error_Gacha_WishListNum = 2657;
-  Error_Gacha_WishListHero = 2658;
-  Error_Gacha_DailyTimesLimit = 2659;
-  Error_Gacha_DiscountError = 2670;
-  Error_Gacha_CheapTimesLimit = 2671;
-  Error_Gacha_GuaranteeGroupError = 2672;
-  Error_Gacha_FreeTimesLimit = 2673;
-  Error_Gacha_StepNotOpen = 2674;
-  Error_Gacha_StepSeqTaken = 2675;
-  Error_Gacha_StepSeqCantTake = 2676;
-  Error_Legacy_NotExist = 2700;
-  Error_Legacy_HeroInstalled = 2701;
-  Error_Legacy_HeroNotInstalled = 2702;
-  Error_Legacy_InstallMax = 2703;
-  Error_Legacy_MaxLevel = 2704;
-  Error_Legacy_HeroSameLegacy = 2705;
-  Error_Dispatch_DoAllLock = 2800;
-  Error_Dispatch_TakeAllLock = 2801;
-  Error_Dispatch_Taken = 2802;
-  Error_Dispatch_LocationError = 2803;
-  Error_Dispatch_Started = 2804;
-  Error_Dispatch_NeedRefresh = 2805;
-  Error_Dispatch_HeroError = 2806;
-  Error_Dispatch_HeroOccupy = 2807;
-  Error_Dispatch_MaxCount = 2808;
-  Error_Dispatch_HeroCamp = 2809;
-  Error_Dispatch_HeroQuality = 2810;
-  Error_Dispatch_NotStart = 2811;
-  Error_Dispatch_Finish = 2812;
-  Error_Dispatch_NotFinish = 2813;
-  Error_Explore_ClueTaken = 2814;
-  Error_Explore_ClueLock = 2815;
-  Error_Explore_StoryNotComplete = 2816;
-  Error_Explore_StorySaw = 2818;
-  Error_Explore_StoryNotSaw = 2819;
-  Error_Explore_StoryTaken = 2820;
-  Error_Statue_NoLevelReward = 2821;
-  Error_StarRoom_ConstellaUnlock = 2822;
-  Error_StarRoom_PreConstellaNotFinish = 2823;
-  Error_StarRoom_ConstellaLock = 2824;
-  Error_StarRoom_StarSaw = 2825;
-  Error_StarRoom_PreStarNotSaw = 2826;
-  Error_StarRoom_SeeStarHeroNotEnough = 2827;
-  Error_CastlePlace_NoNeedUnlock = 2828;
-  Error_CastlePlace_KeyPlaceLock = 2829;
-  Error_CastlePlace_KeyPlaceUnLock = 2830;
-  Error_CastlePlace_StoryNotWait = 2831;
-  Error_CastlePlace_PreStoryNotFinish = 2832;
-  Error_CastlePlace_MainlevelNotFinish = 2833;
-  Error_Explore_ChapterNotComplete = 2834;
-  Error_Explore_ChapterRewardTaken = 2835;
-  Error_Rogue_PreStageNotFinish = 2941;
-  Error_Rogue_TechUnlocked = 2942;
-  Error_Rogue_PreTechLock = 2943;
-  Error_Rogue_MonsterRecordWrong = 2944;
-  Error_Rogue_ItemLock = 2945;
-  Error_Rogue_RewardCantTake = 2946;
-  Error_Rogue_ScoreVerifyMax = 2947;
-  Error_Rogue_MonsterNumVerifyMax = 2948;
-  Error_Rogue_HeroQualityCantFight = 2949;
-  Error_Rogue_LevelChanged = 2950;
-  Error_Activity_NoSuch = 3000;
-  Error_Activity_Expire = 3001;
-  Error_Activity_Condition = 3002;
-  Error_Activity_CantTakeReward = 3003;
-  Error_Activity_RewardTaken = 3004;
-  Error_Activity_HideOnFinish = 3005;
-  Error_Activity_WrongType = 3006;
-  Error_Activity_Finished = 3007;
-  Error_Activity_NoSuchConfig = 3008;
-  Error_Activity_HideBeforeEnd = 3009;
-  Error_Activity_ProductHasBuy = 3010;
-  Error_Activity_Config = 3011;
-  Error_Activity_TimeNotReach = 3012;
-  Error_Activity_HasReceiveReward = 3013;
-  Error_Activity_Version = 3014;
-  Error_Activity_ExchangeLimit = 3015;
-  Error_Activity_AlreadyOpen = 3016;
-  Error_Activity_AlreadyClaimed = 3017;
-  Error_Activity_NotInActTime = 3018;
-  Error_Activity_StageNotFinish = 3019;
-  Error_Activity_GuideNotFinish = 3020;
-  Error_ActConsumeReward_NoReward = 3040;
-  Error_Activity_InviteNotifyInCD = 3392;
-  Error_Activity_AccountCreateTime = 3393;
-  Error_Activity_NeedPassStage = 3394;
-  Error_Activity_TimesLimit = 3400;
-  Error_Activity_AwardUnlock = 3401;
-  Error_Activity_SameSelect = 3402;
-  Error_Activity_NotSelect = 3403;
-  Error_Activity_ChallengeLimit = 3421;
-  Error_Activity_NotFishChallenge = 3422;
-  Error_ActSign_SignDayError = 3425;
-  Error_ActDailyGift_SelectRefreshed = 3426;
-  Error_ActDailyGift_RefreshLimit = 3427;
-  Error_ActDailyGift_RefreshOver = 3428;
-  Error_ActRecharge_NoFirstCharge = 3429;
-  Error_ActRecharge_FirstChargeClaimed = 3430;
-  Error_ActRecharge_NotEnoughBreakHeroNum = 3431;
-  Error_ActRecharge_SelectItemNum = 3432;
-  Error_ActRecharge_NotSelected = 3433;
-  Error_ActRechargeRebate_RoleRebated = 3440;
-  Error_ActRechargeRebate_WrongApp = 3441;
-  Error_ActRechargeRebate_OldRoleRebated = 3442;
-  Error_ActRechargeRebate_OldSdkRebated = 3443;
-  Error_ActRechargeRebate_SdkRebated = 3444;
-  Error_ActRechargeRebate_PlatformRebated = 3445;
-  Error_ActRechargeRebate_NoCharge = 3446;
-  Error_Achieve_RewardHasTaken = 4000;
-  Error_Achieve_NotCurRewardLevel = 4001;
-  Error_Friend_NoHeartRecieve = 4400;
-  Error_Friend_NotFriend = 4401;
-  Error_Friend_HasSendHeart = 4402;
-  Error_Friend_NoFriendRequest = 4403;
-  Error_Friend_FriendFull = 4404;
-  Error_Friend_OtherFriendFull = 4405;
-  Error_Friend_IsFriend = 4406;
-  Error_Friend_Self = 4407;
-  Error_Friend_HeartLimit = 4408;
-  Error_Friend_CannotAccept = 4409;
-  Error_Friend_HeartDailyLimit = 4410;
-  Error_Friend_Role_Null = 4411;
-  Error_Rank_NotInRank = 4589;
-  Error_Rank_TargetNotReached = 4590;
-  Error_Rank_TargetRewardDrawn = 4591;
-  Error_IAPRefund_DeviceLimit = 4690;
-  Error_IAPRefund_SmallChargeLimit = 4691;
-  Error_IAPRefund_IPLimit = 4692;
-  Error_Social_CantAddShield = 4750;
-  Error_Social_CantDelShield = 4751;
-  Error_Social_InShield = 4752;
-  Error_Social_OtherInShield = 4753;
-  Error_Social_RefuseStranger = 4754;
-  Error_PersonalChatWeb_CacheNull = 5642;
-  Error_PersonalChatWeb_Close = 5643;
-  Error_PersonalChatWeb_TooFast = 5644;
-  Error_PersonalChatWeb_Limit = 5645;
-  Error_Match_RoleInBattle = 6200;
-  Error_Match_RoleInMatch = 6201;
-  Error_Match_InvalidType = 6202;
-  Error_Match_StillInDriven = 6203;
-  Error_Match_TeamNotSupport = 6204;
-  Error_Match_StartBattleFail = 6205;
-  Error_Match_StateInvalid = 6206;
-  Error_Role_OperatorTooFast = 6216;
-  Error_Stragegy_Limit = 6230;
-  Error_Room_NotOwner = 6251;
-  Error_Room_KickSelf = 6252;
-  Error_Room_BeInRoom = 6253;
-  Error_Room_NotExist = 6254;
-  Error_Room_Full = 6255;
-  Error_FightReport_Save = 6256;
-  Error_Survey_NotExist = 6301;
-  Error_Survey_AlreadyAnswer = 6302;
-  Error_Survey_SurveyIdNotMatch = 6303;
-  Error_Survey_RewardType = 6304;
-  Error_Surver_NotAnswer = 6305;
-  Error_Surver_AlreadyReward = 6306;
-  Error_FightTest_StateInvalid = 6351;
-  Error_FightTest_HeroNotEnough = 6352;
-  Error_FightTest_InvalidParam = 6353;
-  Error_DirtyCheck_GSdkErr = 6401;
-  Error_Circulation_LevelFull = 6402;
-  Error_Circulation_LevelNotEnough = 6403;
-  Error_Lamia_NotExist = 6501;
-  Error_Lamia_DataError = 6502;
-  Error_Lamia_TableError = 6503;
-  Error_Lamia_SignInAwarded = 6504;
-  Error_Lamia_QuestCantAward = 6505;
-  Error_Lamia_GameAlreadyFinish = 6506;
-  Error_Lamia_GameHasNoAward = 6507;
-  Error_Lamia_PreStageNotPass = 6508;
-  Error_Lamia_StageNoTimes = 6509;
-  Error_Lamia_StageNotPass = 6510;
-  Error_Lamia_StageAlreadyPass = 6511;
-  Error_Lamia_StageNotRepeat = 6512;
-  Error_Lamia_StageTimeInvalid = 6513;
-  Error_Lamia_NotOpen = 6514;
-  Error_Lamia_SubActNotOpen = 6515;
-  Error_Lamia_StageNotOpen = 6516;
-  Error_Lamia_ExploreDataSizeError = 6517;
-  Error_Lamia_CluPreStageNotPass = 6518;
-  Error_Lamia_ClueAlreadyGet = 6519;
-  Error_Lamia_LegacyStageNotPass = 6520;
-  Error_Lamia_SubActAlreadyGet = 6521;
-  Error_Lamia_ClientDataTooLong = 6522;
-  Error_BalanceFightTest_TeamEmpty = 6551;
-  Error_BalanceFightTest_TeamSizeWrong = 6552;
-  Error_BalanceFightTest_SeasonFinished = 6553;
-  Error_BalanceFightTest_RoundFinished = 6554;
-  Error_BalanceFightTest_DataError = 6555;
-  Error_BalanceFightTest_TableError = 6556;
-  Error_AutoFightTest_TableError = 6560;
-  Error_AutoFightTest_DataError = 6561;
-  Error_AutoFightTest_StateError = 6562;
-  Error_LegacyStage_LevelLocked = 6601;
-  Error_LegacyStage_ChapterLocked = 6602;
-  Error_LegacyStage_GameStepOver = 6603;
-  Error_LegacyStage_GameRoundOver = 6604;
-  Error_LegacyStage_GameNotStart = 6605;
-  Error_LegacyStage_GameLastMonsterNotPass = 6606;
-  Error_LegacyStage_GameStepEmpty = 6607;
-  Error_LegacyStage_ChapterNotPass = 6608;
-  Error_LegacyStage_ChapterRewardTaken = 6609;
-  Error_LegacyStage_MonsterPassed = 6610;
-  Error_Activity_GachaJump_OrderAwardRecived = 6621;
-  Error_Activity_GachaJump_Config = 6622;
-  Error_Activity_GachaJump_OrderTime = 6623;
-  Error_Activity_SignInGift_CfgError = 6631;
-  Error_Activity_SignInGift_BuyTimesLimit = 6632;
-  Error_Activity_SignInGift_AwardEmpty = 6633;
-  Error_Activity_SignInGift_BuyTimeLimit = 6634;
-  Error_Act_BattlePass_AlreadyBuy = 6641;
-  Error_Act_BattlePass_None = 6642;
-  Error_Activity_ForbidCustomDesc = 6651;
-  Error_Activity_ForbidCustomDescEmergency = 6652;
-  Error_Activity_ReturnSign_CfgError = 6661;
-  Error_Activity_ReturnSign_NotOpen = 6662;
-  Error_Activity_TimelineJump_Error = 6671;
-  Error_Activity_TimelineJump_Rewarded = 6672;
-  Error_Activity_GameNotice_Error = 6681;
-  Error_Activity_GameNotice_Rewarded = 6682;
-  Error_Activity_GameNotice_RewardTimeNotArrive = 6683;
-  Error_Activity_GameNotice_RewardTypeInvalid = 6684;
-  Error_Activity_GiftPush_PushTimesDailyMax = 6691;
-  Error_Activity_GiftPush_PushInterval = 6692;
-  Error_Activity_GiftPush_PushGiftExistMax = 6693;
-  Error_Activity_GiftPush_TriggeredGiftEmpty = 6694;
-  Error_Activity_HeroTrial_LevelFinished = 6701;
-  Error_Activity_HeroTrial_LevelNotFinish = 6702;
-  Error_Activity_HeroTrial_LevelRewarded = 6703;
 }
 
 enum FaceType {
@@ -2718,7 +1953,9 @@ enum IAPStoreType {
   IAPStoreType_ActPushGift = 5;
   IAPStoreType_ActEmergencyGift = 6;
   IAPStoreType_ActSignGift = 7;
-  IAPStoreType_Max = 8;
+  IAPStoreType_ActTrain = 8;
+  IAPStoreType_ActReturnTask = 9;
+  IAPStoreType_Max = 10;
 }
 
 enum iFightDebugType {
@@ -2780,6 +2017,7 @@ enum ItemSubType {
   ItemSubType_SmallMonthCard = 1;
   ItemSubType_BigMonthCard = 2;
   ItemSubType_BattlePass = 3;
+  ItemSubType_DiamondBigMonthCard = 4;
   ItemSubType_Default = 10;
   ItemSubType_EquipExp = 11;
   ItemSubType_Treasure = 30;
@@ -2841,6 +2079,8 @@ enum LamiaMiniGameType {
   LamiaMiniGameType_Whacka = 2;
   LamiaMiniGameType_LegacyStage = 3;
   LamiaMiniGameType_Spider = 4;
+  LamiaMiniGameType_Flop = 5;
+  LamiaMiniGameType_LoveWhip = 6;
   LamiaMiniGameType_Explore = 1001;
 }
 
@@ -2873,6 +2113,17 @@ enum LoginType {
   LoginType_Login = 0;
   LoginType_Reconnect = 1;
   LoginType_Zero = 2;
+}
+
+enum LoungeBondStatus {
+  LoungeBondStatus_Init = 0;
+  LoungeBondStatus_Unlock = 1;
+  LoungeBondStatus_Bond = 2;
+}
+
+enum LoungeCharType {
+  LoungeCharType_Hero = 1;
+  LoungeCharType_Item = 2;
 }
 
 enum MailType {
@@ -3031,6 +2282,7 @@ enum QuestCond {
   QuestCond_OriginalArenaPlayTimes = 241;
   QuestCond_ReplaceArenaPlayTimesDay = 242;
   QuestCond_ReplaceArenaPlayTimes = 243;
+  QuestCond_ActReturnSign = 251;
   QuestCond_Gacha = 301;
   QuestCond_GachaHeroQuality = 302;
   QuestCond_AddHeroQuality = 303;
@@ -3376,6 +2628,8 @@ enum SystemType {
   SystemType_Ancient = 62;
   SystemType_Fashion = 63;
   SystemType_EquipDecompose = 64;
+  SystemType_Lounge = 65;
+  SystemType_CirculationCareer = 66;
   SystemType_Hero = 101;
   SystemType_HeroLevel = 102;
   SystemType_Goblin = 200;
@@ -3405,6 +2659,14 @@ enum SystemUnlockCondition {
 enum TemplateMailType {
   TemplateMailType_Normal = 0;
   TemplateMailType_Collect = 1;
+}
+
+enum TrainTaskType {
+  TrainTaskType_Hero = 1;
+  TrainTaskType_HeroBreak = 2;
+  TrainTaskType_SkillLevel = 3;
+  TrainTaskType_UltLevel = 4;
+  TrainTaskType_Attract = 5;
 }
 
 enum UserTokenType {
@@ -3466,6 +2728,8 @@ message AllianceMessageNotice {
   uint32 iLastEditTime = 7;
   uint32 iDeleteTime = 8;
   PlayerIDType stDeleter = 9;
+  SdpString sSenderName = 10;
+  uint32 iSenderLevel = 11;
 }
 
 message AllianceMessageNoticeReadInfo {
@@ -3808,6 +3072,31 @@ message Cmd_Act_LoginSendItem_TakeReward_SC {
   repeated CmdIDNum vReward = 3;
 }
 
+message Cmd_Act_MiniGame_PassLevel_CS {
+  uint32 iActivityId = 1;
+  uint32 iLevelId = 2;
+  uint32 iScore = 3;
+}
+
+message Cmd_Act_MiniGame_PassLevel_SC {
+  uint32 iActivityId = 1;
+  uint32 iLevelId = 2;
+  uint32 iScore = 3;
+  CmdActMiniGameLevel stLevel = 4;
+  repeated CmdIDNum vReward = 5;
+}
+
+message Cmd_Act_MiniGame_TakeGroupReward_CS {
+  uint32 iActivityId = 1;
+  map<SdpUInt, SdpUInt> mTakeGroupId = 2;
+}
+
+message Cmd_Act_MiniGame_TakeGroupReward_SC {
+  uint32 iActivityId = 1;
+  map<SdpUInt, SdpUInt> mTakenGroup = 2;
+  repeated CmdIDNum vReward = 3;
+}
+
 message Cmd_Act_NewbieLucky_SkillPoint_CS {
   uint32 iNum = 1;
 }
@@ -3881,6 +3170,26 @@ message Cmd_Act_ReturnSign_GetSignReward_SC {
   repeated CmdIDNum vReward = 3;
 }
 
+message Cmd_Act_ReturnTask_GetQuestReward_CS {
+  uint32 iActivityId = 1;
+}
+
+message Cmd_Act_ReturnTask_GetQuestReward_SC {
+  uint32 iActivityId = 1;
+  uint32 iQuestIndex = 2;
+  repeated CmdIDNum vReward = 3;
+}
+
+message Cmd_Act_ReturnTask_GetReward_CS {
+  uint32 iActivityId = 1;
+}
+
+message Cmd_Act_ReturnTask_GetReward_SC {
+  uint32 iActivityId = 1;
+  repeated CmdIDNum vReward = 2;
+  map<SdpUInt, XDictionary<SdpUInt, SdpUInt>> mQuestAwarded = 3;
+}
+
 message Cmd_Act_Sign_Sign_CS {
   uint32 iActivityId = 1;
   uint32 iIndex = 2;
@@ -3931,6 +3240,18 @@ message Cmd_Act_TimelineJump_GetReward_SC {
   repeated CmdIDNum vReward = 1;
 }
 
+message Cmd_Act_Train_TakeTaskReward_CS {
+  uint32 iActivityId = 1;
+  uint32 iIndexId = 2;
+}
+
+message Cmd_Act_Train_TakeTaskReward_SC {
+  uint32 iActivityId = 1;
+  uint32 iIndexId = 2;
+  CmdActTrainTask stTask = 3;
+  repeated CmdIDNum vReward = 4;
+}
+
 message Cmd_Afk_GetData_CS {
   bool bAuto = 1;
 }
@@ -3942,6 +3263,7 @@ message Cmd_Afk_GetData_SC {
 message Cmd_Afk_TakeInstant_SC {
   uint32 iInstantTimes = 1;
   repeated CmdIDNum vReward = 2;
+  uint32 iMonthCardInstantTimes = 3;
 }
 
 message Cmd_Afk_TakeReward_SC {
@@ -4335,6 +3657,10 @@ message Cmd_Attract_EndCouncil_SC {
   uint32 iIssue = 1;
   uint32 iOpinion = 2;
   repeated CmdCouncilHeroResult vHeroResult = 3;
+  uint32 iConcilTimes = 4;
+  uint32 iConcilMonthCardTimes = 5;
+  repeated SdpUInt vDailyIssue = 6;
+  repeated SdpUInt vDailyFinishIssue = 7;
 }
 
 message Cmd_Attract_GetAttract_SC {
@@ -4352,6 +3678,15 @@ message Cmd_Attract_LetterSubmitItem_SC {
   uint32 iHeroId = 1;
   uint32 iLetterId = 2;
   uint32 iQuestId = 3;
+}
+
+message Cmd_Attract_LoungeBond_CS {
+  uint32 iHeroId = 1;
+}
+
+message Cmd_Attract_LoungeBond_SC {
+  uint32 iHeroId = 1;
+  uint32 iStatus = 2;
 }
 
 message Cmd_Attract_SeeStory_CS {
@@ -4399,6 +3734,8 @@ message Cmd_Attract_SetLetter_SC {
 
 message Cmd_Attract_StartCouncil_SC {
   uint32 iStartTime = 1;
+  uint32 iConcilTimes = 2;
+  uint32 iConcilMonthCardTimes = 3;
 }
 
 message Cmd_Attract_TakeStoryReward_CS {
@@ -5470,6 +4807,14 @@ message Cmd_Guide_SetGuide_SC {
   uint32 iGuideStep = 2;
 }
 
+message Cmd_Hero_BatchLevelUp_CS {
+  map<SdpUInt, SdpUInt> mHeroIdNum = 1;
+}
+
+message Cmd_Hero_BatchLevelUp_SC {
+  repeated HeroLevelChangeInfo vHeroIdLevelChange = 1;
+}
+
 message Cmd_Hero_Break_CS {
   uint32 iHeroId = 1;
 }
@@ -5826,6 +5171,7 @@ message Cmd_Lamia_MiniGame_Finish_SC {
   uint32 iGameStat = 4;
   repeated CmdIDNum vAward = 5;
   uint32 iScore = 6;
+  MGLoveWhipInfo stMGLoveWhipInfo = 7;
 }
 
 message Cmd_Lamia_MiniGame_GetAllAward_CS {
@@ -5838,6 +5184,18 @@ message Cmd_Lamia_MiniGame_GetAllAward_SC {
   uint32 iSubActId = 2;
   repeated CmdIDNum vAward = 3;
   uint32 iMaxAwardedGame = 4;
+}
+
+message Cmd_Lamia_MiniGame_LoveWhip_GetAward_CS {
+  uint32 iActId = 1;
+  uint32 iSubActId = 2;
+}
+
+message Cmd_Lamia_MiniGame_LoveWhip_GetAward_SC {
+  uint32 iActId = 1;
+  uint32 iSubActId = 2;
+  repeated CmdIDNum vAward = 3;
+  MGLoveWhipInfo stMGLoveWhipInfo = 4;
 }
 
 message Cmd_Lamia_Quest_GetAllAward_CS {
@@ -6660,6 +6018,7 @@ message Cmd_Push_BaseStoreChapterReward {
 
 message Cmd_Push_BaseStoreMonthlyCard {
   CmdBaseStoreMonthlyCard stMonthlyCard = 1;
+  uint32 iCardID = 2;
 }
 
 message Cmd_Push_BaseStoreMonthlyCardReward {
@@ -7421,6 +6780,7 @@ message Cmd_Rogue_TakeReward_SC {
   uint32 iTakenReward = 1;
   repeated CmdIDNum vReward = 2;
   repeated CmdIDNum vActivityReward = 3;
+  repeated CmdIDNum vMonthCardReward = 4;
 }
 
 message Cmd_Rogue_UnlockTech_CS {
@@ -7481,6 +6841,11 @@ message Cmd_Role_GetBindAccount_SC {
 
 message Cmd_Role_GetCirculation_SC {
   map<SdpUInt, CmdCirculationItem> mCirculationItem = 1;
+}
+
+message Cmd_Role_GetCirculationCareer_SC {
+  map<SdpUInt, CmdCirculationCareerItem> mCirculationCareerItem = 1;
+  map<SdpUInt, XDictionary<SdpUInt, SdpUInt>> mCareerLocationHero = 2;
 }
 
 message Cmd_Role_GetFBFace_SC {
@@ -7721,6 +7086,14 @@ message Cmd_Role_SetCard_SC {
   uint32 iShowBackgroundId = 3;
 }
 
+message Cmd_Role_SetCirculationCareerHero_CS {
+  repeated CmdCirculationCareerHeroLocation vSetList = 1;
+}
+
+message Cmd_Role_SetCirculationCareerHero_SC {
+  repeated CmdCirculationCareerHeroLocation vSetList = 1;
+}
+
 message Cmd_Role_SetCountryId_CS {
   uint32 iCountryId = 1;
 }
@@ -7828,6 +7201,15 @@ message Cmd_Role_UpgradeCirculation_CS {
 
 message Cmd_Role_UpgradeCirculation_SC {
   CmdCirculationItem stCirculationItem = 1;
+}
+
+message Cmd_Role_UpgradeCirculationCareer_CS {
+  uint32 iCareerType = 1;
+  uint32 iItemNum = 2;
+}
+
+message Cmd_Role_UpgradeCirculationCareer_SC {
+  CmdCirculationCareerItem stCirculationItem = 1;
 }
 
 message Cmd_Role_UploadFBFaceId_CS {
@@ -8348,6 +7730,25 @@ message CmdActCfgBattlePassLevelCfg {
   repeated CmdIDNum vPaidReward = 3;
 }
 
+message CmdActCfgCalendar {
+  CmdActClientCfgCalendar stClientCfg = 1;
+}
+
+message CmdActCfgCalendarActStyle {
+  uint32 iActType = 1;
+  SdpString sIcon = 2;
+  uint32 iUiType = 3;
+  uint32 iOrder = 4;
+}
+
+message CmdActCfgCalendarUpcoming {
+  uint32 iId = 1;
+  SdpString sName = 2;
+  SdpString sIcon = 3;
+  SdpString sTime = 4;
+  repeated SdpUInt vReward = 5;
+}
+
 message CmdActCfgCensor {
   CmdActCommonCfgCensor stCommonCfg = 1;
 }
@@ -8365,6 +7766,8 @@ message CmdActCfgCommonQuest {
   SdpString sSignInFloorPlan = 10;
   uint32 iUiType = 11;
   uint32 iLamiaActId = 12;
+  SdpString sSpineName = 13;
+  uint32 iHeroID = 14;
 }
 
 message CmdActCfgCommonQuestDailyReward {
@@ -8637,6 +8040,16 @@ message CmdActCfgLoginSendItem {
   CmdActCommonCfgLoginSendItem stCommonCfg = 2;
 }
 
+message CmdActCfgMiniGame {
+  CmdActCommonCfgMiniGame stCommonCfg = 1;
+}
+
+message CmdActCfgMiniGameGameLevel {
+  uint32 iLevelId = 1;
+  uint32 iOpenTime = 2;
+  uint32 iCloseTime = 3;
+}
+
 message CmdActCfgModuleControl {
   map<SdpString, SdpString> mCommParam = 1;
   CmdActClientCfgModuleControl stClientCfg = 2;
@@ -8843,6 +8256,35 @@ message CmdActCfgReturnSign {
   CmdActCommonCfgReturnSign stCommonCfg = 1;
 }
 
+message CmdActCfgReturnTask {
+  CmdActCommonCfgReturnTask stCommonCfg = 1;
+}
+
+message CmdActCfgReturnTaskGoods {
+  uint32 iIndex = 1;
+  SdpString sProductId = 2;
+  uint32 iSubProductId = 3;
+  uint32 iCostEffectivenes = 4;
+  uint32 iExtraBonusProgressValue = 5;
+  SdpString iGiftPic = 6;
+  SdpString iGiftName = 7;
+}
+
+message CmdActCfgReturnTaskQuest {
+  uint32 iIndex = 1;
+  uint32 iMaxFinishTimes = 2;
+  uint32 iTaskID = 3;
+  uint32 iProgressValue = 4;
+  repeated CmdIDNum vReward = 5;
+}
+
+message CmdActCfgReturnTaskReward {
+  uint32 iProgressValue = 1;
+  repeated CmdIDNum vFreeReward = 2;
+  repeated CmdIDNum vLowerPayReward = 3;
+  repeated CmdIDNum vHigherPayReward = 4;
+}
+
 message CmdActCfgSign {
   uint32 iUiType = 1;
   uint32 bSeasonAct = 2;
@@ -8945,6 +8387,36 @@ message CmdActCfgTimelineJump {
   CmdActCommonCfgTimelineJump stCommonCfg = 2;
 }
 
+message CmdActCfgTrain {
+  CmdActClientCfgTrain stClientCfg = 1;
+  CmdActCommonCfgTrain stCommonCfg = 2;
+}
+
+message CmdActCfgTrainTaskGroup {
+  uint32 iGroupId = 1;
+  SdpString sTitle = 2;
+}
+
+message CmdActCfgTrainTaskType {
+  uint32 iTaskType = 1;
+  SdpString sDesc = 2;
+  uint32 iJump = 3;
+}
+
+message CmdActCfgTrainTrain {
+  uint32 iId = 1;
+  uint32 iTaskGroup = 2;
+  uint32 iTaskType = 3;
+  repeated SdpUInt vTaskParam = 4;
+  repeated CmdIDNum vTaskReward = 5;
+  SdpString sProductId = 6;
+  uint32 iProductSubId = 7;
+  uint32 iLimitNum = 8;
+  repeated CmdIDNum vProductReward = 9;
+  SdpString sProductName = 10;
+  uint32 iDiscount = 11;
+}
+
 message CmdActCfgTvProjection {
   CmdActClientCfgTvProjection stClientCfg = 1;
 }
@@ -9045,6 +8517,13 @@ message CmdActClientCfgBattlePass {
   SdpString sQuestExpBackgroundPic = 16;
   SdpString sBPIcon = 17;
   uint32 iJumpId = 18;
+  uint32 iPurchaseReminderDays = 19;
+  uint32 iRewardReminderDays = 20;
+}
+
+message CmdActClientCfgCalendar {
+  map<SdpUInt, CmdActCfgCalendarActStyle> mActStyle = 1;
+  map<SdpUInt, CmdActCfgCalendarUpcoming> mUpcoming = 2;
 }
 
 message CmdActClientCfgCommunityEntrance {
@@ -9114,6 +8593,7 @@ message CmdActClientCfgModuleControl {
   bool bCloseRogueJumpImprove = 4;
   repeated SdpUInt vCloseFightCheatType = 5;
   bool bCloseComplianceResourceSwitch = 6;
+  repeated SdpUInt vCloseComplianceResourceGroupID = 7;
 }
 
 message CmdActClientCfgOnePicAct {
@@ -9143,6 +8623,23 @@ message CmdActClientCfgSignGift {
 
 message CmdActClientCfgTimelineJump {
   SdpString sTimelineName = 1;
+}
+
+message CmdActClientCfgTrain {
+  SdpString sGiftBackground = 1;
+  SdpString sGiftPackMask = 2;
+  SdpString sTaskTypeTextColor = 3;
+  SdpString sTaskPhaseTextColor = 4;
+  SdpString sTaskTextColor = 5;
+  SdpString sTaskPlate = 6;
+  SdpString sGiftPackNameTextColor = 7;
+  SdpString sGiftPackPlate = 8;
+  SdpString sStockTextColor = 9;
+  SdpString sPurchasePriceTextColor = 10;
+  SdpString sValueForMoneyTextColor = 11;
+  SdpString sValueForMoneyBaseImage = 12;
+  SdpString sSoldOutTextColor = 13;
+  SdpString sSoldOutPic = 14;
 }
 
 message CmdActClientCfgTvProjection {
@@ -9241,6 +8738,7 @@ message CmdActCommonCfgGameNotice {
   uint32 reward_type = 1;
   repeated CmdIDNum mReward = 2;
   uint32 iCanGetRewardTime = 3;
+  bool bIfCheckReturnTaskAct = 4;
 }
 
 message CmdActCommonCfgHeroTrial {
@@ -9270,6 +8768,12 @@ message CmdActCommonCfgLamiaTimeManager {
 message CmdActCommonCfgLoginSendItem {
   uint32 iItemId = 1;
   uint32 iItemNum = 2;
+}
+
+message CmdActCommonCfgMiniGame {
+  uint32 iGameType = 1;
+  map<SdpUInt, CmdActCfgMiniGameGameLevel> mGameLevel = 2;
+  repeated SdpUInt vClueGroup = 3;
 }
 
 message CmdActCommonCfgPayStore {
@@ -9318,6 +8822,17 @@ message CmdActCommonCfgReturnSign {
   map<SdpUInt, repeated CmdIDNum> mReward = 5;
 }
 
+message CmdActCommonCfgReturnTask {
+  uint32 iActiveDay = 1;
+  uint32 iCloseDay = 2;
+  uint32 iCDDay = 3;
+  uint32 iResendMailTemplateId = 4;
+  uint32 iLeftDayRemind = 5;
+  map<SdpUInt, CmdActCfgReturnTaskGoods> mGoods = 6;
+  map<SdpUInt, CmdActCfgReturnTaskQuest> mQuest = 7;
+  map<SdpUInt, CmdActCfgReturnTaskReward> mReward = 8;
+}
+
 message CmdActCommonCfgSignGift {
   SdpString sProductId = 1;
   uint32 iProductSubId = 2;
@@ -9341,6 +8856,15 @@ message CmdActCommonCfgSystemSwitch {
 
 message CmdActCommonCfgTimelineJump {
   repeated CmdIDNum vReward = 1;
+}
+
+message CmdActCommonCfgTrain {
+  uint32 iHeroId = 1;
+  uint32 iStoreId = 2;
+  uint32 iResendMail = 3;
+  map<SdpUInt, CmdActCfgTrainTaskGroup> mTaskGroup = 4;
+  map<SdpUInt, CmdActCfgTrainTaskType> mTaskType = 5;
+  map<SdpUInt, CmdActCfgTrainTrain> mTrain = 6;
 }
 
 message CmdActCommonCfgVoucherControl {
@@ -9405,6 +8929,7 @@ message CmdActGachaJump_Status {
 
 message CmdActGameNotice_Status {
   bool bIsRewarded = 1;
+  bool bIsActReturnOpen = 2;
 }
 
 message CmdActHeroTrial_Status {
@@ -9476,6 +9001,7 @@ message CmdActivityData {
   SdpString sJumpParam = 62;
   repeated SdpUInt vLanguageId = 63;
   uint32 iSortIndex = 64;
+  bool bInCalendar = 65;
 }
 
 message CmdActivityMainCityIcon {
@@ -9534,6 +9060,18 @@ message CmdActLoginSelect_Status {
 
 message CmdActLoginSendItem_Status {
   uint32 iTakeNum = 1;
+}
+
+message CmdActMiniGame_Status {
+  map<SdpUInt, CmdActMiniGameLevel> mGameLevel = 1;
+  map<SdpUInt, SdpUInt> mTakenGroup = 2;
+}
+
+message CmdActMiniGameLevel {
+  uint32 iLevelId = 1;
+  uint32 iPassTime = 2;
+  uint32 iScore = 3;
+  uint32 iClueTime = 4;
 }
 
 message CmdActNewDirectPushGift {
@@ -9666,6 +9204,16 @@ message CmdActReturnSign_Status {
   uint32 iMaxAwardedDays = 5;
 }
 
+message CmdActReturnTask_Status {
+  uint32 iActivityId = 1;
+  uint32 iOpenTime = 2;
+  uint32 iCloseTime = 3;
+  uint32 iCurlProgressValue = 4;
+  map<SdpUInt, XDictionary<SdpUInt, SdpUInt>> mQuestAwarded = 5;
+  map<SdpUInt, SdpUInt> mGoodsBought = 6;
+  repeated CmdReturnTaskQuest vAllQuest = 7;
+}
+
 message CmdActSign_Status {
   uint32 iActivityId = 1;
   uint32 iBeginTime = 2;
@@ -9697,6 +9245,17 @@ message CmdActTimelineJump_Status {
   bool bIsRewarded = 1;
 }
 
+message CmdActTrain_Status {
+  uint32 iActivityId = 1;
+  map<SdpUInt, CmdActTrainTask> mTask = 2;
+}
+
+message CmdActTrainTask {
+  uint32 iIndexId = 1;
+  uint32 iTakeTime = 2;
+  uint32 iBought = 3;
+}
+
 message CmdAfk {
   uint32 iAfkLevel = 1;
   uint32 iAfkExp = 2;
@@ -9704,11 +9263,13 @@ message CmdAfk {
   uint32 iTakeRewardTime = 4;
   uint32 iInstantTimes = 5;
   map<SdpUInt, SdpUInt> mReward = 6;
+  uint32 iMonthCardInstantTimes = 7;
 }
 
 message CmdAllAttract {
   map<SdpUInt, CmdHeroAttract> mHeroAttract = 1;
   CmdCouncil stCouncil = 2;
+  map<SdpUInt, CmdHeroLounge> mHeroLounge = 3;
 }
 
 message CmdAllianceApplyerData {
@@ -10058,6 +9619,18 @@ message CmdChatLanguageGroup {
   uint32 iRoleNum = 2;
 }
 
+message CmdCirculationCareerHeroLocation {
+  uint32 iCareerType = 1;
+  uint32 iLocation = 2;
+  uint32 iHeroID = 3;
+}
+
+message CmdCirculationCareerItem {
+  uint32 iCareerType = 1;
+  uint32 iLevel = 2;
+  uint32 iExp = 3;
+}
+
 message CmdCirculationItem {
   uint32 iTypeID = 1;
   uint32 iLevel = 2;
@@ -10080,6 +9653,9 @@ message CmdCouncil {
   repeated SdpUInt vFinishIssue = 3;
   repeated SdpUInt vHero = 4;
   uint32 iStartTime = 5;
+  uint32 iConcilTimes = 6;
+  uint32 iConcilMonthCardTimes = 7;
+  repeated SdpUInt vDailyFinishIssue = 8;
 }
 
 message CmdCouncilHeroResult {
@@ -10318,6 +9894,7 @@ message CmdFinishChallengeInfoSC {
   CmdFightVerifyResult stVerifyResult = 5;
   CmdMultiFightTestInfo stMultiFightTestInfo = 6;
   bool bWin = 7;
+  repeated CmdIDNum vMonthCardExtraReward = 8;
 }
 
 message CmdForm {
@@ -10438,6 +10015,11 @@ message CmdHeroFightDamage {
 
 message CmdHeroFightData {
   uint32 iCurrHP = 1;
+}
+
+message CmdHeroLounge {
+  uint32 iHeroId = 1;
+  uint32 iStatus = 2;
 }
 
 message CmdHunting {
@@ -10719,6 +10301,7 @@ message CmdRepairStr {
   SdpString sValue2 = 6;
   SdpString sItemKey = 7;
   SdpString sItemValue = 8;
+  uint32 iCNComplianceResSwitchOpen = 9;
 }
 
 message CmdReplaceArenaAfk {
@@ -10775,6 +10358,14 @@ message CmdReplaceArenaSeasonReward {
   uint32 iRank = 2;
   uint32 iScore = 3;
   map<SdpUInt, SdpUInt> mLeftAfk = 4;
+}
+
+message CmdReturnTaskQuest {
+  uint32 iIndex = 1;
+  uint32 iQuestID = 2;
+  uint32 iAwardedTimes = 3;
+  uint32 iCurProgress = 4;
+  uint32 iFinishTimes = 5;
 }
 
 message CmdRogue {
@@ -10867,6 +10458,7 @@ message CmdShop {
   uint32 iVersion = 7;
   map<SdpUInt, XDictionary<SdpUInt, SdpUInt>> mGoodsBought = 8;
   uint32 iFreeRefreshTimes = 9;
+  uint32 iMonthCardFreeRefreshTimes = 10;
 }
 
 message CmdShopGoods {
@@ -10995,6 +10587,10 @@ message CmdStartChallengeInfoSC {
   CmdFightVerifyInput stVerifyInput = 2;
 }
 
+message CmdStoreCommonBuyParam {
+  uint32 iActivityId = 1;
+}
+
 message CmdStoreIAPMonitor {
   uint32 iDayNum = 1;
   uint32 iWeekNum = 2;
@@ -11093,6 +10689,12 @@ message GroupChatInfo {
   repeated PlayerChatInfo vChat = 8;
 }
 
+message HeroLevelChangeInfo {
+  uint32 iOldLevel = 1;
+  uint32 iNewLevel = 2;
+  uint32 iHeroId = 3;
+}
+
 message ItemUseData {
   map<SdpUInt, SdpUInt> mIndexIdNum = 1;
   uint32 iSelectId = 2;
@@ -11114,6 +10716,7 @@ message LamiaMiniGame {
   map<SdpUInt, SdpUInt> mGameStat = 1;
   uint32 iMaxAwardedGame = 2;
   map<SdpUInt, SdpUInt> mGameScore = 3;
+  MGLoveWhipInfo stMGLoveWhipInfo = 4;
 }
 
 message LamiaQuest {
@@ -11167,6 +10770,11 @@ message MatchBattleInfo {
   uint32 iUdpPort = 11;
   repeated PlayerMatchingInfo vUp = 12;
   repeated PlayerMatchingInfo vDown = 13;
+}
+
+message MGLoveWhipInfo {
+  uint32 iDailyCanRewardLevel = 1;
+  uint32 iDailyTakenRewardLevel = 2;
 }
 
 message OperType_Battle_CastSkill {
@@ -11475,6 +11083,7 @@ message SessionKeyAddition {
 message StageMopReward {
   repeated CmdIDNum vReward = 1;
   repeated CmdIDNum vExtraReward = 2;
+  repeated CmdIDNum vMonthCardReward = 3;
 }
 
 message WeGameProductInfo {

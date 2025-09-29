@@ -60,7 +60,25 @@
       "m_UID": "10",
       "m_mDispatchLocation": "\"Blood Moon Seal\"",
       "m_mLocationDes": "\"A mysterious forbidden ground lies deep within Starfall Valley, safeguarded by the Tempus Church and impenetrable to all. Some believe it to be the origin of the Black Blood disease, while others whisper of an unspeakable horror lurking within the sealed area—one capable of ending the world.\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_UID": "11",
+      "m_mDispatchLocation": "\"Frozen Fjord\"",
+      "m_mLocationDes": "\"Glaciers from ancient times melt and converge here, roaring down the slopes into the frigid sea. Bone-chilling winds and icy torrents batter this harsh land, shaping its people into silent, resilient souls who forge blades as sharp and unyielding as the ice itself.\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_UID": "12",
+      "m_mDispatchLocation": "\"Golden Ruins\"",
+      "m_mLocationDes": "\"A city that once basked in splendor, its prosperity celebrated in countless verses. Yet after a mysterious catastrophe, all wealth and glory crumbled to dust. Even now, travelers passing through the ruins can still hear echoes of those forgotten songs drifting through the crumbling stones.\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_UID": "13",
+      "m_mDispatchLocation": "\"Desert Bazaar\"",
+      "m_mLocationDes": "\"Traveling merchants from distant lands gather at this crossroads before setting forth once more. Their camel bells chime a melodious farewell as they carry precious cargo—goods, gold, and trade secrets—toward unknown horizons.\""
     }
   },
-  "status": "processed_10_items"
+  "status": "processed_13_items"
 }

@@ -84,7 +84,7 @@
       "m_mName": "\"Ritual Chamber\"",
       "m_mPlaceText": "\"The arcane rites of the ancients. Originally intended for self-enhancement, they were soon apprehended by the Bloodborn. After many massacres, the ultimate secret behind the ritual would be discovered: By offering souls similar in essence to the ritual's subject, the purest form of ancestral power could be harnessed.\"",
       "m_UnlockType": "3",
-      "m_UnlockData": "30",
+      "m_UnlockData": "66",
       "m_mUnlockText": "\"\"",
       "m_Index": "5",
       "m_Button": "\"tower\"",
@@ -188,6 +188,25 @@
       "m_PrefabParam": "[[\"placeID\",\"10\"]]",
       "m_FloatWindow": null,
       "m_Tips": "1180",
+      "m_StoryPic": "\"\"",
+      "m_KeyPic": "\"\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_PlaceID": "11",
+      "m_Type": "1",
+      "m_mName": "\"Satin Boudoir\"",
+      "m_mPlaceText": "\"\"",
+      "m_UnlockType": "3",
+      "m_UnlockData": "65",
+      "m_mUnlockText": "\"\"",
+      "m_Index": "11",
+      "m_Button": "\"lounge\"",
+      "m_Prefab": "\"Form_Lounge\"",
+      "m_MainLockAudio": null,
+      "m_PrefabParam": "[]",
+      "m_FloatWindow": null,
+      "m_Tips": null,
       "m_StoryPic": "\"\"",
       "m_KeyPic": "\"\""
     },
@@ -310,7 +329,7 @@
       "m_PlaceID": "2007",
       "m_Type": "2",
       "m_mName": "\"Thawpoint Lodge\"",
-      "m_mPlaceText": "\"The crackling of dry branches echo wantonly across the snow-covered plain. Can northbound travelers find even a morsel of warmth in this land of frigid memories?\n\"No need for dense forests to shield from wind and snow; I merely hope to be found. Now, then, bear forth my message, won't you? Engrave my epitaph behind the waystation.\"\nHaving finished telling his story to the young one, the elderly figure cast down a small wildflower, poured out a dram of spirits, and continued northward.\"",
+      "m_mPlaceText": "\"The crackling of dry branches echoes across the snow-covered plain. Can northbound travelers find even a morsel of warmth in this land of frigid memories?\n'No need for dense forests to shield from wind and snow; I merely hope to be found. Now, then, bear forth my message, won't you? Engrave my epitaph behind the waystation.'\nHaving finished telling his story to the young one, the elderly figure cast down a little wildflower, poured out a dram of spirits, and continued northward.\"",
       "m_UnlockType": "2",
       "m_UnlockData": "1428",
       "m_mUnlockText": "\"Key located in [Fated Ties] - Chapter 9\"",
@@ -344,5 +363,5 @@
       "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_06\""
     }
   },
-  "status": "processed_18_items"
+  "status": "processed_19_items"
 }

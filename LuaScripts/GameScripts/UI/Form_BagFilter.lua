@@ -14,6 +14,16 @@ function Form_BagFilter:AfterInit()
   if self.m_DoubleTrigger then
     self.m_DoubleTrigger.Clicked = handler(self, self.OnDoubleTriggerClk)
   end
+  local QUALITY_EQUIP_Filter = {
+    {name = 1101},
+    {name = 1102},
+    {name = 1103},
+    {name = 1104},
+    {name = 1105},
+    {name = 1106},
+    {name = 1107},
+    {name = 1108}
+  }
   self.FilterData = {
     [EquipManager.EquipFilterType.Pos] = {
       transRoot = self.m_equipposition_choose_root,
@@ -36,7 +46,7 @@ function Form_BagFilter:AfterInit()
     },
     [EquipManager.EquipFilterType.Quality] = {
       transRoot = self.m_equiplevel_choose_root,
-      Cfg = GlobalConfig.QUALITY_EQUIP_Filter,
+      Cfg = QUALITY_EQUIP_Filter,
       ChooseItemList = {}
     }
   }

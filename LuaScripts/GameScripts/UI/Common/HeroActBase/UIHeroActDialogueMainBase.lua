@@ -122,6 +122,7 @@ end
 function UIHeroActDialogueMainBase:AddEventListeners()
   self:addEventListener("eGameEvent_Level_Lamia_Sweep", handler(self, self.OnEventLamiaSweep))
   self:addEventListener("eGameEvent_HeroAct_DailyReset", handler(self, self.OnHeroActDailyReset))
+  self:addEventListener("eGameEvent_Item_SetItem", handler(self, self.OnFreshLamiaStageFresh))
   self:addEventListener("eGameEvent_Level_Lamia_StageFresh", handler(self, self.OnFreshLamiaStageFresh))
   self:addEventListener("eGameEvent_RefreshShopData", handler(self, self.OnEventShopRefresh))
   if self.m_luaDetailLevel then

@@ -16,6 +16,21 @@
         }
       }
     },
+    "888": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "888",
+          "m_Sequence": "1",
+          "m_RollinOrder": null,
+          "m_RollTimes": "29",
+          "m_PoolID": "[1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1005]"
+        }
+      }
+    },
     "1000": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -181,6 +196,36 @@
         }
       }
     },
+    "1011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1011",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[11001,11001,11001,11001,11001,11001,11001,11001,11001,11001]"
+        }
+      }
+    },
+    "1012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1012",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[12001,12001,12001,12001,12001,12001,12001,12001,12001,12001]"
+        }
+      }
+    },
     "9999999": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -197,5 +242,5 @@
       }
     }
   },
-  "status": "processed_13_items"
+  "status": "processed_16_items"
 }

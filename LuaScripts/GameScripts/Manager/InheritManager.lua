@@ -25,6 +25,7 @@ function InheritManager:OnAfterInitConfig()
   self.LvExpItemID = tonumber(ConfigManager:GetGlobalSettingsByKey("CharacterlvEXPitem"))
   self.LvMoneyItemID = tonumber(ConfigManager:GetGlobalSettingsByKey("CharacterlvCurrencyitem"))
   self.LvBreakthroughItemID = tonumber(ConfigManager:GetGlobalSettingsByKey("CharacterlvBreakthroughitem"))
+  self.globalSettingsIns = ConfigManager:GetConfigInsByName("GlobalSettings")
 end
 
 function InheritManager:OnPushInheritLevel(data, msg)
@@ -136,9 +137,21 @@ function InheritManager:ReqInheritLevelUp(iNum)
   RPCS():Inherit_LevelUp(inheritCSMsg, handler(self, self.OnInheritLevelUpSC))
 end
 
+function InheritManager:ReqInheritBatchLevelUp(heroIDList)
+  local inheritCSMsg = MTTDProto.Cmd_Hero_BatchLevelUp_CS()
+  inheritCSMsg.mHeroIdNum = heroIDList
+  RPCS():Hero_BatchLevelUp(inheritCSMsg, handler(self, self.OnHeroBatchLevelUpSC))
+end
+
 function InheritManager:OnInheritLevelUpSC(data, msg)
   self.m_inherit_level = data.iNewLevel
   self:broadcastEvent("eGameEvent_Inherit_LevelUp", data)
+end
+
+function InheritManager:OnHeroBatchLevelUpSC(data, msg)
+  log.info("OnHeroBatchLevelUpSC data: " .. table.serialize(data))
+  log.info("OnHeroBatchLevelUpSC msg: " .. table.serialize(msg))
+  self:broadcastEvent("eGameEvent_Inherit_BatchLevelUp", data)
 end
 
 function InheritManager:GetListOfInheritableHeroes()
@@ -284,6 +297,82 @@ function InheritManager:GetInheritMaxLv()
     level = math.floor(level + countParam * heroCount / 10000 + heroBreak * breakCountParam / 10000)
   end
   return math.min(self.m_inheritMaxEvoLevel, level)
+end
+
+function InheritManager:GetInheritBatchLevelUpNeedItem(lv)
+  local LvExpItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvEXPitem").m_Value
+  local LvMoneyItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvCurrencyitem").m_Value
+  local LvBreakthroughItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvBreakthroughitem").m_Value
+  local topFiveHero = self:GetTopFiveHero()
+  local total_LevelUpgradeCfg = {
+    LvExp = {
+      ItemID = tonumber(LvExpItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvExp"
+    },
+    LvMoney = {
+      ItemID = tonumber(LvMoneyItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvMoney"
+    },
+    LvBreakthrough = {
+      ItemID = tonumber(LvBreakthroughItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvBreakthrough"
+    }
+  }
+  for i, v in ipairs(topFiveHero) do
+    local data = self:GetInheriLevelUpNeedItem(v.serverData.iLevel, lv)
+    for keyStr, _ in pairs(total_LevelUpgradeCfg) do
+      total_LevelUpgradeCfg[keyStr].ShowCostNum = total_LevelUpgradeCfg[keyStr].ShowCostNum + data[keyStr].ShowCostNum
+      total_LevelUpgradeCfg[keyStr].NeedNum = total_LevelUpgradeCfg[keyStr].NeedNum + data[keyStr].NeedNum
+    end
+  end
+  return total_LevelUpgradeCfg
+end
+
+function InheritManager:GetInheriLevelUpNeedItem(curLv, lv)
+  local LvExpItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvEXPitem").m_Value
+  local LvMoneyItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvCurrencyitem").m_Value
+  local LvBreakthroughItemID = self.globalSettingsIns:GetValue_ByName("CharacterlvBreakthroughitem").m_Value
+  local m_LevelUpgradeCfg = {
+    LvExp = {
+      ItemID = tonumber(LvExpItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvExp"
+    },
+    LvMoney = {
+      ItemID = tonumber(LvMoneyItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvMoney"
+    },
+    LvBreakthrough = {
+      ItemID = tonumber(LvBreakthroughItemID),
+      NeedNum = 0,
+      ShowCostNum = 0,
+      configKey = "LvBreakthrough"
+    }
+  }
+  if lv <= curLv then
+    return m_LevelUpgradeCfg
+  end
+  for i = curLv, lv - 1 do
+    local characterLevelCfg = ConfigManager:GetConfigInsByName("CharacterLevel"):GetValue_ByCharacterLv(i)
+    for keyStr, _ in pairs(m_LevelUpgradeCfg) do
+      local paramNum = characterLevelCfg["m_" .. keyStr]
+      m_LevelUpgradeCfg[keyStr].ShowCostNum = m_LevelUpgradeCfg[keyStr].ShowCostNum + paramNum
+      m_LevelUpgradeCfg[keyStr].NeedNum = m_LevelUpgradeCfg[keyStr].NeedNum + paramNum
+    end
+  end
+  return m_LevelUpgradeCfg
+end
+
+function InheritManager:GetMaxBatchLevelUp(lv)
 end
 
 function InheritManager:GetInheritLevelUpItemId()

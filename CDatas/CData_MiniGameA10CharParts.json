@@ -1,0 +1,78 @@
+{
+  "className": "CData_MiniGameA10CharParts",
+  "data": {
+    "1001": {
+      "m_bError": null,
+      "m_ID": "1001",
+      "m_BoneName": "\"head_control\"",
+      "m_Collision": "\"head_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    },
+    "1002": {
+      "m_bError": null,
+      "m_ID": "1002",
+      "m_BoneName": "\"breast_l_control\"",
+      "m_Collision": "\"breast_l_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    },
+    "1003": {
+      "m_bError": null,
+      "m_ID": "1003",
+      "m_BoneName": "\"breast_r_control\"",
+      "m_Collision": "\"breast_r_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    },
+    "1004": {
+      "m_bError": null,
+      "m_ID": "1004",
+      "m_BoneName": "\"leg_l_control\"",
+      "m_Collision": "\"leg_l_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    },
+    "1005": {
+      "m_bError": null,
+      "m_ID": "1005",
+      "m_BoneName": "\"\"",
+      "m_Collision": "\"shackles_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    },
+    "1006": {
+      "m_bError": null,
+      "m_ID": "1006",
+      "m_BoneName": "\"\"",
+      "m_Collision": "\"armpit_range\"",
+      "m_State": "\"idle_01\"",
+      "m_Action": "\"touch_leg_01\"",
+      "m_RefuseAction": "\"touch_refuse_01\"",
+      "m_Gesture": "1",
+      "m_Voice": "[\"Play_vo_20320_str_joyful\",\"Play_vo_20700_str_calm\"]",
+      "m_Subtitle": "[\"Lounge_Shackles_01_20320\",\"Lounge_KeyOff_01_20320\"]"
+    }
+  },
+  "status": "processed_6_items"
+}

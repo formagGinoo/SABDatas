@@ -49,6 +49,18 @@
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
     },
+    "100203": {
+      "m_bError": null,
+      "m_StoryID": "100203",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"I Want to Become the Drama Queen!\"",
+      "m_PlaceID": "2",
+      "m_ShowCharacter": "20680",
+      "m_Character": "[20680,20150,20680]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
     "100401": {
       "m_bError": null,
       "m_StoryID": "100401",
@@ -362,5 +374,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_30_items"
+  "status": "processed_31_items"
 }

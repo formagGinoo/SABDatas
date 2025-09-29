@@ -181,7 +181,7 @@ end
 
 function AVGContext:OnSoundStart(id)
   if self.Stage == AVGStageType.Finished then
-    StopPlaySFX(id)
+    CS.UI.UILuaHelper.StopPlaySFX(id)
     return
   end
   if 0 < id then

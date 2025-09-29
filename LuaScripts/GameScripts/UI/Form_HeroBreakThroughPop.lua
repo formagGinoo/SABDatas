@@ -159,10 +159,12 @@ end
 
 function Form_HeroBreakThroughPop:OnBtnCloseClicked()
   self:CloseForm()
+  self:broadcastEvent("eGameEvent_HeroBreakThroughPopClosed")
 end
 
 function Form_HeroBreakThroughPop:OnBtnReturnClicked()
   self:CloseForm()
+  self:broadcastEvent("eGameEvent_HeroBreakThroughPopClosed")
 end
 
 function Form_HeroBreakThroughPop:OnBtnsymbolClicked()

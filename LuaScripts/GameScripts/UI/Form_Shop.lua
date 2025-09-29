@@ -197,6 +197,15 @@ function Form_Shop:RefreshShopItemInfo()
     self.m_chooseShopCfg = self.m_shopList[self.m_curChooseTab]
   end
   self.m_pnl_blocktips1:SetActive(false)
+  if self.m_chooseShopCfg.m_RefreshType ~= ShopManager.REFRESH_TYPE.NoRefresh then
+    local _, freeRefreshTimes, privilegeTimes = ShopManager:GetShopCanRefreshMaxTimesByShopId(self.m_chooseShopCfg.m_ShopID)
+    local curRefreshShopTimes = ShopManager:GetShopCurFreeRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
+    local curPrivilegeRefreshTimes = ShopManager:GetShopPrivilegeFreeRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
+    local bIsShowFree = freeRefreshTimes > curRefreshShopTimes
+    local bIsShowPrivilege = privilegeTimes > curPrivilegeRefreshTimes
+    self.m_free_refresh:SetActive(bIsShowFree and not bIsShowPrivilege)
+    self.m_privilege_refresh:SetActive(bIsShowPrivilege)
+  end
 end
 
 function Form_Shop:RefreshShopItemSoldOutAnim()
@@ -322,8 +331,9 @@ end
 function Form_Shop:OnBtntimeClicked()
   local shopMaxRefreshTimes = 0
   local freeRefreshTimes = 0
+  local privilegeTimes = 0
   if self.m_chooseShopCfg then
-    shopMaxRefreshTimes, freeRefreshTimes = ShopManager:GetShopCanRefreshMaxTimesByShopId(self.m_chooseShopCfg.m_ShopID)
+    shopMaxRefreshTimes, freeRefreshTimes, privilegeTimes = ShopManager:GetShopCanRefreshMaxTimesByShopId(self.m_chooseShopCfg.m_ShopID)
   end
   if self.m_chooseShopCfg and 0 < shopMaxRefreshTimes then
     local refreshNum = ShopManager:GetShopRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
@@ -333,7 +343,8 @@ function Form_Shop:OnBtntimeClicked()
       local refreshCost = refreshCostTab[refreshNum + 1] == nil and refreshCostTab[#refreshCostTab] or refreshCostTab[refreshNum + 1]
       local itemCfg = ItemManager:GetItemConfigById(refreshCost[1])
       local curRefreshShopTimes = ShopManager:GetShopCurFreeRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
-      local currefreshCost = freeRefreshTimes > curRefreshShopTimes and 0 or refreshCost[2]
+      local curPrivilegeRefreshTimes = ShopManager:GetShopPrivilegeFreeRefreshTimesByShopId(self.m_chooseShopCfg.m_ShopID)
+      local currefreshCost = privilegeTimes > curPrivilegeRefreshTimes and 0 or freeRefreshTimes > curRefreshShopTimes and 0 or refreshCost[2]
       if 0 < currefreshCost then
         utils.ShowCommonTipCost({
           beforeItemID = refreshCost[1],
@@ -352,7 +363,8 @@ function Form_Shop:OnBtntimeClicked()
           bLockBack = true,
           func1 = function()
             ShopManager:ReqShopRefresh(self.m_chooseShopCfg.m_ShopID)
-          end
+          end,
+          bCommonPrivilege = privilegeTimes > curPrivilegeRefreshTimes
         })
       end
     else

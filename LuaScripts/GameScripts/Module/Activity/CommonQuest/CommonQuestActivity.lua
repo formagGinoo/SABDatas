@@ -362,4 +362,12 @@ function CommonQuestActivity:OnDispose()
   RPCS():RemoveListen_Push_SetQuestDataBatch_ByTag("CommonQuestActivity" .. actId)
 end
 
+function CommonQuestActivity:GetSpineStr()
+  return self.m_stSdpConfig.sSpineName or ""
+end
+
+function CommonQuestActivity:GetCharacterId()
+  return self.m_stSdpConfig.iHeroID or 0
+end
+
 return CommonQuestActivity

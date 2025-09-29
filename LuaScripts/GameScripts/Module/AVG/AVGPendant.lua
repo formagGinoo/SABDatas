@@ -15,7 +15,6 @@ function AVGPendant:Show()
         root = self.context.form.m_roles.transform
       end
       self.obj = CS.UnityEngine.GameObject.Instantiate(prefab, root)
-      self.aninmation = self.obj:GetComponent(T_Animation)
     end
   end
   if self.obj then
@@ -24,8 +23,8 @@ function AVGPendant:Show()
 end
 
 function AVGPendant:PlayAnimation(name)
-  if self.aninmation then
-    self.aninmation:Play(name)
+  if self.obj then
+    CS.UI.UILuaHelper.PlayAnimationByName(self.obj, name, 1, 0)
   end
 end
 

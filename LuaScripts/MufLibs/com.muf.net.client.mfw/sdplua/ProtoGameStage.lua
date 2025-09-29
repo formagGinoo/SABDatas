@@ -146,6 +146,7 @@ StageMopReward = sdp.SdpStruct("StageMopReward")
 StageMopReward.Definition = {
   "vReward",
   "vExtraReward",
+  "vMonthCardReward",
   vReward = {
     0,
     0,
@@ -154,6 +155,12 @@ StageMopReward.Definition = {
   },
   vExtraReward = {
     1,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  vMonthCardReward = {
+    2,
     0,
     sdp.SdpVector(CmdIDNum),
     nil

@@ -3903,7 +3903,7 @@
     "\"Role_Name_AnxiousSoldier\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_AnxiousSoldier\"",
-      "m_mContent": "\"Panic Soldier\"",
+      "m_mContent": "\"Panic Ganelon Soldier\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4442,7 +4442,7 @@
     "\"Role_Name_Jailer\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer\"",
-      "m_mContent": "\"Jailer\"",
+      "m_mContent": "\"Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4470,14 +4470,14 @@
     "\"Role_Name_Jailer_Corridor\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Corridor\"",
-      "m_mContent": "\"Hallway Jailer\"",
+      "m_mContent": "\"Hallway Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Door\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Door\"",
-      "m_mContent": "\"Interrogation Jailer\"",
+      "m_mContent": "\"Interrogation Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4498,42 +4498,42 @@
     "\"Role_Name_Voice_Jailer\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Voice_Jailer\"",
-      "m_mContent": "\"Jailer's Voice\"",
+      "m_mContent": "\"Gaoler's Voice\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Anxious\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Anxious\"",
-      "m_mContent": "\"Restless Jailer\"",
+      "m_mContent": "\"Hasty Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Hurry\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Hurry\"",
-      "m_mContent": "\"Restless Jailer\"",
+      "m_mContent": "\"Restless Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Impatient\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Impatient\"",
-      "m_mContent": "\"Irascible Jailer\"",
+      "m_mContent": "\"Irascible Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Calm\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Calm\"",
-      "m_mContent": "\"Composed Jailer\"",
+      "m_mContent": "\"Composed Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Jailer_Gatekeeper\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Gatekeeper\"",
-      "m_mContent": "\"Gate Jailer\"",
+      "m_mContent": "\"Gate Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4547,7 +4547,7 @@
     "\"Role_Name_Jailer_Nervous\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Jailer_Nervous\"",
-      "m_mContent": "\"Anxious Jailer\"",
+      "m_mContent": "\"Anxious Gaoler\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4638,7 +4638,7 @@
     "\"Role_Name_Ghost\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Ghost\"",
-      "m_mContent": "\"Spectre\"",
+      "m_mContent": "\"Ghost\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4659,7 +4659,7 @@
     "\"Role_Name_Voice_Ghost\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Voice_Ghost\"",
-      "m_mContent": "\"Spectral Voice\"",
+      "m_mContent": "\"Ghost's Voice\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4722,7 +4722,7 @@
     "\"Role_Name_Explore_0803\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Explore_0803\"",
-      "m_mContent": "\"Little Construct\"",
+      "m_mContent": "\"Poor Construct\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4744,6 +4744,258 @@
       "m_bError": null,
       "m_Key": "\"Role_Name_Explore_0806\"",
       "m_mContent": "\"Panicked Resident\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Micalus\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Micalus\"",
+      "m_mContent": "\"Micala\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Compere\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Compere\"",
+      "m_mContent": "\"Arena Host\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Audience_Enthusiastic\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Audience_Enthusiastic\"",
+      "m_mContent": "\"Enthusiastic Spectator\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Lord_Estuofu\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Lord_Estuofu\"",
+      "m_mContent": "\"Lord Astolfo\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Cicero\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Cicero\"",
+      "m_mContent": "\"Sergio\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Dalcarlo_Merchant\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Dalcarlo_Merchant\"",
+      "m_mContent": "\"Wandering Merchant\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Merchant\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Merchant\"",
+      "m_mContent": "\"Merchant\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Stalker_Mysterious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Stalker_Mysterious\"",
+      "m_mContent": "\"Stalker\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Belisarius\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Belisarius\"",
+      "m_mContent": "\"Belissa\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Guard_Serious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Guard_Serious\"",
+      "m_mContent": "\"Stern Guard\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Intruder_Masked\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Intruder_Masked\"",
+      "m_mContent": "\"Masked Intruder\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Consul\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Consul\"",
+      "m_mContent": "\"Magistrate\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Earl_Karinian\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Earl_Karinian\"",
+      "m_mContent": "\"Sir Cornelius\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Subordinate_Earl\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Subordinate_Earl\"",
+      "m_mContent": "\"Cornelius's Man\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Voice_Far\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Voice_Far\"",
+      "m_mContent": "\"Distant Voice\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Audience_Discussions\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Audience_Discussions\"",
+      "m_mContent": "\"Murmuring Spectator\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Audience_Excited\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Audience_Excited\"",
+      "m_mContent": "\"Thrilled Spectator\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Audience_Excitement\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Audience_Excitement\"",
+      "m_mContent": "\"Excited Spectator\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Legion\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Legion\"",
+      "m_mContent": "\"Legion Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Lord_Karinian\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Lord_Karinian\"",
+      "m_mContent": "\"Lord Cornelius\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Far\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Far\"",
+      "m_mContent": "\"Distant Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Ferocious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Ferocious\"",
+      "m_mContent": "\"Ferocious Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_BlackCat_Mysterious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_BlackCat_Mysterious\"",
+      "m_mContent": "\"Mysterious Black Cat\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Alarmed\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Alarmed\"",
+      "m_mContent": "\"Terrified Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Slaves_Devout\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Slaves_Devout\"",
+      "m_mContent": "\"Devout Slaves\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Away\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Away\"",
+      "m_mContent": "\"Fleeing Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Collapsed\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Collapsed\"",
+      "m_mContent": "\"Collapsed Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Horn_Resonant\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Horn_Resonant\"",
+      "m_mContent": "\"Resonant Horn\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Bold\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Bold\"",
+      "m_mContent": "\"Bold Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Narration3\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Narration3\"",
+      "m_mContent": "\"\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Girl_Hurry\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Girl_Hurry\"",
+      "m_mContent": "\"Anxious Girl\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Father_Girl\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Father_Girl\"",
+      "m_mContent": "\"Girl's Father\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Father_Fanu\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Father_Fanu\"",
+      "m_mContent": "\"Fanny's Father\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Voice_Far2\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Voice_Far2\"",
+      "m_mContent": "\"Distant Voice\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Interrogator\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Interrogator\"",
+      "m_mContent": "\"Inquisitor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Isabelle2\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Isabelle2\"",
+      "m_mContent": "\"Valora\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -5576,7 +5828,7 @@
     "\"Dialogue_B_20001_Clip03_16\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_20001_Clip03_16\"",
-      "m_mContent": "\"Did you think disguising as an ordinary flower girl could fool the eyes of Nefertari Setti?!\"",
+      "m_mContent": "\"Did you think that disguising as an ordinary flower girl could fool the eyes of Nefertari Seti?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"涅飞塔丽·赛蒂\""
     },
@@ -5975,7 +6227,7 @@
     "\"Dialogue_B_20001_Clip03c_011\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_20001_Clip03c_011\"",
-      "m_mContent": "\"Don't be fooled by his laid-back attitude. I'll have you know he's one of the twelve <style=Highlight>Bell Ringers</style>, the... the highest-ranking members of the Church.\"",
+      "m_mContent": "\"Don't be fooled by his laid-back attitude. I'll have you know he's one of the twelve <style=Highlight>Bell Ringers</style>, the highest-ranking members of the Church.\"",
       "m_Type": "[]",
       "m_RoleName": "\"涅飞塔丽·赛蒂\""
     },
@@ -6684,7 +6936,7 @@
       "m_Key": "\"Dialogue_B_30001_Clip00_004\"",
       "m_mContent": "\"Well I think the Other Side is up there, beyond the pale moon, where the stars were born.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"小孩的塞特\""
+      "m_RoleName": "\"小孩的赛特\""
     },
     "\"Dialogue_B_30001_Clip00_005\"": {
       "m_bError": null,
@@ -7123,7 +7375,7 @@
     "\"Dialogue_B_30001_Clip02_003\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip02_003\"",
-      "m_mContent": "\"The special type... 'silver-haired'... I'll give you a chance to return to my side.\"",
+      "m_mContent": "\"The special type... 'silver-hair'... I'll give you a chance to return to my side.\"",
       "m_Type": "[]",
       "m_RoleName": "\"？？？（拉米娅）\""
     },
@@ -7165,7 +7417,7 @@
     "\"Dialogue_B_30001_Clip02_009\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip02_009\"",
-      "m_mContent": "\"Hmph, now that you've seen through me, there's no point hiding it. Naturally, my beauty far eclipses that hideous creature.\"",
+      "m_mContent": "\"Hmph. Well, now that you've seen through me, there's no point hiding it. Naturally, my beauty far eclipses that hideous creature.\"",
       "m_Type": "[]",
       "m_RoleName": "\"？？？（拉米娅）\""
     },
@@ -7186,7 +7438,7 @@
     "\"Dialogue_B_30001_Clip02_012\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip02_012\"",
-      "m_mContent": "\"Out of this vile lot, you're the first I want to tear apart!\"",
+      "m_mContent": "\"Out of this vile lot, you're the first one I want to tear apart!\"",
       "m_Type": "[]",
       "m_RoleName": "\"拉米娅\""
     },
@@ -7403,7 +7655,7 @@
     "\"Dialogue_B_30001_Clip03_007\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip03_007\"",
-      "m_mContent": "\"Elders, please hear me out. Yes, lady Empousa's violated the tenets, but it was to rescue a special type. It was an emergency...\"",
+      "m_mContent": "\"Elders, please hear me out. Yes, lady Empousa violated the tenets, but it was to rescue a special type. It was an emergency...\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -7459,7 +7711,7 @@
     "\"Dialogue_B_30001_Clip03_015\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip03_015\"",
-      "m_mContent": "\"Silence! You have long lost the trust of the Council of Elders, Cain Lamboza.\"",
+      "m_mContent": "\"Silence! You have long lost the trust of the Council of Elders, Cain.\"",
       "m_Type": "[]",
       "m_RoleName": "\"拜冯特“无魂者”\""
     },
@@ -7473,7 +7725,7 @@
     "\"Dialogue_B_30001_Clip03_017\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip03_017\"",
-      "m_mContent": "\"That's not what I meant. But all Bloodborn must have heard of the legend: the Moonblessed will lead us back to our <style=Highlight>promised home</style>.\"",
+      "m_mContent": "\"That's not what I meant. But all Bloodborn must have heard the legend: the Moonblessed will lead us back to our <style=Highlight>promised home</style>.\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -7704,7 +7956,7 @@
     "\"Dialogue_B_30001_Clip03a_005\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip03a_005\"",
-      "m_mContent": "\"Huh? Is the old-timer thinking of using the silver-haired one as a new test subject?\"",
+      "m_mContent": "\"Huh? Is the old-timer thinking of using the silver-hair as a new test subject?\"",
       "m_Type": "[]",
       "m_RoleName": "\"小人偶\""
     },
@@ -7760,7 +8012,7 @@
     "\"Dialogue_B_30001_Clip04_003\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip04_003\"",
-      "m_mContent": "\"My thoughts are so muddled, my memories before the carriage crash...very hazy.\"",
+      "m_mContent": "\"My thoughts are so muddled, my memories before the crash...very hazy.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚·奈蒙特\""
     },
@@ -7865,7 +8117,7 @@
     "\"Dialogue_B_30001_Clip04_018\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip04_018\"",
-      "m_mContent": "\"Wait, did you just mean you're also one of the Moonblessed?!\"",
+      "m_mContent": "\"Wait, wait, wait... did you just mean you're also one of the Moonblessed?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"洁丝蒂忒·翼吉斯（？？）\""
     },
@@ -7879,7 +8131,7 @@
     "\"Dialogue_B_30001_Clip04_020\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip04_020\"",
-      "m_mContent": "\"You know Aiona, that Aiona Alita!? She's...\"",
+      "m_mContent": "\"You... you know Aiona, Aiona Alita!? She's...\"",
       "m_Type": "[]",
       "m_RoleName": "\"洁丝蒂忒·翼吉斯（？？）\""
     },
@@ -7900,7 +8152,7 @@
     "\"Dialogue_B_30001_Clip04_023\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip04_023\"",
-      "m_mContent": "\"Did you have a grudge against him too?\"",
+      "m_mContent": "\"Do you have a grudge against him too?\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚·奈蒙特\""
     },
@@ -7991,7 +8243,7 @@
     "\"Dialogue_B_30001_Clip04_036\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip04_036\"",
-      "m_mContent": "\"This warrior with the booming voice is...\"",
+      "m_mContent": "\"Oh, uh... this warrior with the booming voice is...\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛·阿伊塔\""
     },
@@ -8075,7 +8327,7 @@
     "\"Dialogue_B_30001_Clip05_005\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip05_005\"",
-      "m_mContent": "\"That's not it, we've just been taking the wrong turns.\"",
+      "m_mContent": "\"No, that's not it, we've just been taking the wrong turns.\"",
       "m_Type": "[]",
       "m_RoleName": "\"洁丝蒂忒·翼吉斯\""
     },
@@ -8698,7 +8950,7 @@
     "\"Dialogue_B_30001_Clip07_022\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip07_022\"",
-      "m_mContent": "\"Lady Empousa, be careful! They are not Lady Lamia!\"",
+      "m_mContent": "\"Lady Empousa, be careful! They are not Lamia!\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -8719,7 +8971,7 @@
     "\"Dialogue_B_30001_Clip07a_003\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip07a_003\"",
-      "m_mContent": "\"Even if I really die, there will still be... these 'sisters' to replace me... Now you understand why I said that...\"",
+      "m_mContent": "\"If I really die, there will still be... these 'sisters' to replace me... Now you understand why I said that...\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -9013,7 +9265,7 @@
     "\"Dialogue_B_30001_Clip08a_004\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip08a_004\"",
-      "m_mContent": "\"And Aiona and Setti.\"",
+      "m_mContent": "\"And Aiona, and Setti.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -9139,7 +9391,7 @@
     "\"Dialogue_B_30001_Clip09_005\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip09_005\"",
-      "m_mContent": "\"I don't think you're weak. Don't forget we've crossed swords before, even though you lost that time, too.\"",
+      "m_mContent": "\"I don't think you're weak. Don't forget we've crossed swords before, although you lost that time, too.\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -9286,7 +9538,7 @@
     "\"Dialogue_B_30001_Clip09b_008\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip09b_008\"",
-      "m_mContent": "\"You actually made it all the way here. I'm almost tempted to believe in the prophecy of the Moonblessed.\"",
+      "m_mContent": "\"You actually made it all the way here. This old man is almost tempted to believe in the prophecy of the Moonblessed.\"",
       "m_Type": "[]",
       "m_RoleName": "\"拜冯特无魂者\""
     },
@@ -9713,7 +9965,7 @@
     "\"Dialogue_B_30001_Clip09d_025a\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip09d_025a\"",
-      "m_mContent": "\"If I'm Noah Nevernight... I should return to the home where Ressa is waiting... but...\"",
+      "m_mContent": "\"If I am Noah Nevernight... I should return to the home where Ressa is waiting... but...\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚·奈蒙特\""
     },
@@ -13801,7 +14053,7 @@
     "\"Dialogue_B_40001_Clip11_41\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_40001_Clip11_41\"",
-      "m_mContent": "\"Okay!\"",
+      "m_mContent": "\"Yes!\"",
       "m_Type": "[]",
       "m_RoleName": "\"小克莱夫\""
     },
@@ -22922,7 +23174,7 @@
     "\"Dialogue_B_60001_Clip05_28\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip05_28\"",
-      "m_mContent": "\"What? Why would anyone...\"",
+      "m_mContent": "\"What? Why would someone...\"",
       "m_Type": "[]",
       "m_RoleName": "\"威廉\""
     },
@@ -25568,14 +25820,14 @@
     "\"Dialogue_B_60001_Clip08_25\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip08_25\"",
-      "m_mContent": "\"The culprit prepared a long rope in advance, looping it over the mast so that both ends fell to opposite sides of the deck.\"",
+      "m_mContent": "\"The culprit prepared a long rope in advance, looping it over the yardarm on the mast so that both ends dropped to opposite sides of the deck.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
     "\"Dialogue_B_60001_Clip08_26\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip08_26\"",
-      "m_mContent": "\"One end was fed through the ventilation panel into the guest cabin—the rust marks on the panel where the rope touched are solid evidence.\"",
+      "m_mContent": "\"One end was fed through the ventilation panel into the guest cabin—the rust marks on the rope, left by the panel, are solid evidence.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -27724,7 +27976,7 @@
     "\"Dialogue_B_60001_Clip11_58\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip11_58\"",
-      "m_mContent": "\"And if he was Aaron's accomplice in murder, then the place where Aaron was killed—right before he died—suddenly takes on far more weight.\"",
+      "m_mContent": "\"And if he really was the accomplice in Aaron's murder, then the place where Aaron was last seen is now a lot more... interesting.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -29460,7 +29712,7 @@
     "\"Dialogue_B_60001_Clip14_102\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_60001_Clip14_102\"",
-      "m_mContent": "\"If I'm correct, it leads to the rest area beneath Jones's cabin.\"",
+      "m_mContent": "\"If I'm right, it should lead down to the quarters where Jones used to stay.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -34521,7 +34773,7 @@
     "\"Dialogue_B_70001_Clip13_064\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_70001_Clip13_064\"",
-      "m_mContent": "\"I thought a family like Bathory—Apostates yourselves—would understand the truth behind the Moonblessed. But I see now... your blood only gets duller with each generation.\"",
+      "m_mContent": "\"You Bathorys turned your back on the Church too. The Moonblessed were branded Calamities, not born monsters. But I guess your blood's thinned too much to remember that.\"",
       "m_Type": "[]",
       "m_RoleName": "\"兰蒂斯族裔\""
     },
@@ -34612,7 +34864,7 @@
     "\"Dialogue_B_70001_Clip13_077\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_70001_Clip13_077\"",
-      "m_mContent": "\"What are you planning!?\"",
+      "m_mContent": "\"Wait, what are you planning?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -34738,7 +34990,7 @@
     "\"Dialogue_B_70001_Clip13_095\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_70001_Clip13_095\"",
-      "m_mContent": "\"W-what was that?!\"",
+      "m_mContent": "\"W-what's that?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -36537,7 +36789,7 @@
     "\"Dialogue_B_80001_Clip01_22\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_80001_Clip01_22\"",
-      "m_mContent": "\"As I recall, Goldland's notes also mentioned that they would mark their Blood Beast experiments.\"",
+      "m_mContent": "\"As I recall, Goldland's notes also mentioned that they would mark their Blood Beast experiment subjects.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -37776,7 +38028,7 @@
     "\"Dialogue_B_80001_Clip05_16\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_80001_Clip05_16\"",
-      "m_mContent": "\"Even though we, The Choir, were the ones who captured him on this very island 66 years ago, he still remains a thorn in my side.\"",
+      "m_mContent": "\"Even though we, the Choir, were the ones who captured him on this very island 66 years ago, he still remains a thorn in my side.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿卡贝拉\""
     },
@@ -44419,7 +44671,7 @@
     "\"Dialogue_B_80001_Clip16_38\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_80001_Clip16_38\"",
-      "m_mContent": "\"Play_vo_20010_system_transfusione who can accompany you on the journey ahead...\"",
+      "m_mContent": "\"But in the end... I'm not the one who can accompany you on the journey ahead...\"",
       "m_Type": "[]",
       "m_RoleName": "\"佩尔\""
     },
@@ -44657,7 +44909,7 @@
     "\"Dialogue_B_90001_Clip01_018\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip01_018\"",
-      "m_mContent": "\"Oh right! Everyone in the village talks about you—and Mother and Father always praise you too!\"",
+      "m_mContent": "\"Oh right! Everyone in the village always talks about you—and Mother and Father always praise you too!\"",
       "m_Type": "[]",
       "m_RoleName": "\"雷蒙\""
     },
@@ -44916,7 +45168,7 @@
     "\"Dialogue_B_90001_Clip02_001\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip02_001\"",
-      "m_mContent": "\"I feel like I've walked this path so many times before, but I can't remember... How strange.\"",
+      "m_mContent": "\"I feel I've walked this path so many times before, but I can't remember... How strange.\"",
       "m_Type": "[]",
       "m_RoleName": "\"雷蒙\""
     },
@@ -44951,7 +45203,7 @@
     "\"Dialogue_B_90001_Clip02_006\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip02_006\"",
-      "m_mContent": "\"That voice... Pega?\"",
+      "m_mContent": "\"That voice... Regina?\"",
       "m_Type": "[]",
       "m_RoleName": "\"雷蒙\""
     },
@@ -45511,7 +45763,7 @@
     "\"Dialogue_B_90001_Clip03_019\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip03_019\"",
-      "m_mContent": "\"But now... they've turned on us. Which can only mean... The balance has already shattered.\"",
+      "m_mContent": "\"Now... they've turned on us. Which can only mean... The balance has already shattered.\"",
       "m_Type": "[]",
       "m_RoleName": "\"莱夏\""
     },
@@ -46064,7 +46316,7 @@
     "\"Dialogue_B_90001_Clip05_026\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip05_026\"",
-      "m_mContent": "\"Don't suggest something that vile without an expression.\"",
+      "m_mContent": "\"Don't suggest something that vile with a straight face.\"",
       "m_Type": "[]",
       "m_RoleName": "\"莱夏\""
     },
@@ -47422,7 +47674,7 @@
     "\"Dialogue_B_90001_Clip08_019\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip08_019\"",
-      "m_mContent": "\"Now that I think about it, you were the naive fool who once believed death could be cured. Who even dared imagine it might be kind.\"",
+      "m_mContent": "\"Now that I think about it, you were the naive fool who once believed death could be cured. Who even dared to imagine it might be kind.\"",
       "m_Type": "[]",
       "m_RoleName": "\"多蕾丝\""
     },
@@ -47772,7 +48024,7 @@
     "\"Dialogue_B_90001_Clip08_069\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip08_069\"",
-      "m_mContent": "\"And I know this as well. The eternity given to Bell Ringers is nothing but a curse. Every choice we make is already inscribed in the will of Aeon.\"",
+      "m_mContent": "\"And I know this as well. The eternity given to the Bell Ringers is nothing but a curse. Every choice we make is already inscribed in the will of Aeon.\"",
       "m_Type": "[]",
       "m_RoleName": "\"多蕾丝\""
     },
@@ -48038,7 +48290,7 @@
     "\"Dialogue_B_90001_Clip09_026\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip09_026\"",
-      "m_mContent": "\"Wait—you're saying she alone shattered the sky with salt?\"",
+      "m_mContent": "\"Wait—you're saying one person shattered the sky with salt?\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -48227,7 +48479,7 @@
     "\"Dialogue_B_90001_Clip09_053\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip09_053\"",
-      "m_mContent": "\"I'm nothing more than a longing now. Sunset Isle is no more... and soon, I as well.\"",
+      "m_mContent": "\"I'm nothing more than a longing now. Sunset Isle is no more... and soon, so will I.\"",
       "m_Type": "[]",
       "m_RoleName": "\"多蕾丝\""
     },
@@ -48367,7 +48619,7 @@
     "\"Dialogue_B_90001_Clip10_015\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip10_015\"",
-      "m_mContent": "\"He just turned into an egg! He's not dead! You're not the one suffering here!\"",
+      "m_mContent": "\"He's just turned into an egg! He's not dead! You're not the one suffering here!\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿卡贝拉\""
     },
@@ -48815,7 +49067,7 @@
     "\"Dialogue_B_90001_Clip11_006\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip11_006\"",
-      "m_mContent": "\"...Her power spirals out of control?\"",
+      "m_mContent": "\"...Her power spiraled out of control?\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -49270,7 +49522,7 @@
     "\"Dialogue_B_90001_Clip12_038\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip12_038\"",
-      "m_mContent": "\"'(sighing) Withdraw your power. You cannot afford to damage the test subject.'\"",
+      "m_mContent": "\"(sighing)... Withdraw your power. If the test subject is damaged, you will bear the consequences.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
@@ -49347,7 +49599,7 @@
     "\"Dialogue_B_90001_Clip12_049\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip12_049\"",
-      "m_mContent": "\"Now it's just the two of us, my silver-haired friend…\"",
+      "m_mContent": "\"Now it's just the two of us, Noah…\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿加雷斯\""
     },
@@ -49585,7 +49837,7 @@
     "\"Dialogue_B_90001_Clip13_018\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip13_018\"",
-      "m_mContent": "\"Can't believe you actually...\"",
+      "m_mContent": "\"Lifeless eyes...\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -49746,7 +49998,7 @@
     "\"Dialogue_B_90001_Clip14_011\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip14_011\"",
-      "m_mContent": "\"And she is a testament to the bonds you've made.\"",
+      "m_mContent": "\"And she is the testament to the bonds you've made.\"",
       "m_Type": "[]",
       "m_RoleName": "\"死亡\""
     },
@@ -49935,7 +50187,7 @@
     "\"Dialogue_B_90001_Clip14_038\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip14_038\"",
-      "m_mContent": "\"Don't keep them waiting... \"Knight.\"\"",
+      "m_mContent": "\"We shouldn't keep them waiting... \"Knight.\"\"",
       "m_Type": "[]",
       "m_RoleName": "\"死亡\""
     },
@@ -50215,7 +50467,7 @@
     "\"Dialogue_B_90001_Clip15_032\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip15_032\"",
-      "m_mContent": "\"The anomaly within the Divine Body… You've all felt it, haven't you?\"",
+      "m_mContent": "\"The anomaly within the Divine Body... I believe you can all sense it to some extent.\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -50236,7 +50488,7 @@
     "\"Dialogue_B_90001_Clip16_002\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip16_002\"",
-      "m_mContent": "\"That... That's one enormous head!\"",
+      "m_mContent": "\"That's... That's one enormous head!\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -50418,7 +50670,7 @@
     "\"Dialogue_B_90001_Clip16_028\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip16_028\"",
-      "m_mContent": "\"This guy's always been trouble...\"",
+      "m_mContent": "\"This thing is a real trouble...\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -59273,7 +59525,7 @@
     "\"Dialogue_B_110001_Clip10_038\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_110001_Clip10_038\"",
-      "m_mContent": "\"Then let me see if your strength matches the praise I gave you.\"",
+      "m_mContent": "\"Then let me see if your strength matches the praise he gave you.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿加雷斯\""
     },
@@ -61380,7 +61632,7 @@
     "\"Dialogue_B_110001_Clip16_038\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_110001_Clip16_038\"",
-      "m_mContent": "\"...Who or what is \"Dracula\", exactly?\"",
+      "m_mContent": "\"...Who or what is \"Dracula,\" exactly?\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -62521,7 +62773,7 @@
     "\"Dialogue_B_110001_Clip18_028\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_110001_Clip18_028\"",
-      "m_mContent": "\"To think that you, who bears the name of \"Death\", would fear death itself.\"",
+      "m_mContent": "\"To think that you, who bears the name of \"Death,\" would fear death itself.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿加雷斯\""
     },
@@ -63097,14 +63349,14 @@
       "m_Key": "\"Dialogue_B_110001_Clip18_108\"",
       "m_mContent": "\"You lingered long in thought this time.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"圣女塞特\""
+      "m_RoleName": "\"圣女赛特\""
     },
     "\"Dialogue_B_110001_Clip18_109\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_110001_Clip18_109\"",
       "m_mContent": "\"Have you decided on your next move?\"",
       "m_Type": "[]",
-      "m_RoleName": "\"圣女塞特\""
+      "m_RoleName": "\"圣女赛特\""
     },
     "\"Dialogue_B_110001_Clip18_110\"": {
       "m_bError": null,
@@ -65314,7 +65566,7 @@
     "\"Dialogue_E_10001_Clip04_02\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_10001_Clip04_02\"",
-      "m_mContent": "\"Calling it cute... I can't quite agree with that.\"",
+      "m_mContent": "\"In what way was it adorable?\"",
       "m_Type": "[]",
       "m_RoleName": "\"少女79\""
     },
@@ -65629,7 +65881,7 @@
     "\"Dialogue_E_10001_Clip04_46\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_10001_Clip04_46\"",
-      "m_mContent": "\"If we're talking about who's responsible, I bear the larger share. Take my life but spare hers, shopkeeper.\"",
+      "m_mContent": "\"If we're talking about who's responsible, I bear the larger share. Take my life but spare her, shopkeeper.\"",
       "m_Type": "[]",
       "m_RoleName": "\"少女79\""
     },
@@ -65650,7 +65902,7 @@
     "\"Dialogue_E_10001_Clip04_49\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_10001_Clip04_49\"",
-      "m_mContent": "\"Are you two arguing or bonding? Is this what they call 'friendship'? Or 'love'?\"",
+      "m_mContent": "\"Are you two arguing or bonding? Is this what they call 'friendship'? Or... or 'love'?\"",
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·索莱德\""
     },
@@ -72573,7 +72825,7 @@
     "\"Dialogue_E_30001_Clip02_08\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_30001_Clip02_08\"",
-      "m_mContent": "\"I love it… It's perfect! I feel... younger than ever!\"",
+      "m_mContent": "\"I love it… It's perfect!\"",
       "m_Type": "[]",
       "m_RoleName": "\"苍凛\""
     },
@@ -77522,7 +77774,7 @@
     "\"Dialogue_E_30001_Clip10_17\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_30001_Clip10_17\"",
-      "m_mContent": "\"The strange dreams we’ve had since arriving at the Isle—they must be the effects of 'Siren's Tear.'\"",
+      "m_mContent": "\"The strange dreams we've had since arriving at the bay—they must be the effects of this 'Siren's Tear.'\"",
       "m_Type": "[]",
       "m_RoleName": "\"诺亚\""
     },
@@ -82639,7 +82891,7 @@
     "\"Dialogue_E_40001_Clip06_38\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_40001_Clip06_38\"",
-      "m_mContent": "\"Atlas_Role/Noah_Full002n't you rise again in that freshly dredged corpse?\"",
+      "m_mContent": "\"You're one to talk. Didn't you rise again in that freshly dredged corpse?\"",
       "m_Type": "[]",
       "m_RoleName": "\"亚力克莎\""
     },
@@ -83444,21 +83696,28 @@
     "\"Dialogue_E_40001_Clip07_53\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_40001_Clip07_53\"",
-      "m_mContent": "\"B_20001_Clip01_007c_01 log was completed by his assistant. Only routine data is recorded.\"",
+      "m_mContent": "\"Last week's experiment log was completed by his assistant. Only routine data is recorded.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
     "\"Dialogue_E_40001_Clip07_54\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_40001_Clip07_54\"",
-      "m_mContent": "\"B_30001_Clip06_006ice that you've completed the experiment, nor do I know when you left. I submitted this report of my own accord in hopes it would help track your experiment's progress.'\"",
+      "m_mContent": "\"'I received no notice that you've completed the experiment, nor do I know when you left. I submitted this report of my own accord in hopes it would help track your experiment's progress.'\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
     "\"Dialogue_E_40001_Clip07_55\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_40001_Clip07_55\"",
-      "m_mContent": "\"B_40001_Clip03_32c'Lord Albrecht, my research has reached a critical juncture, but my situation is now extremely perilous. Perhaps you could help me escape from the bay—I plan to...'\"",
+      "m_mContent": "\"An unsent letter: 'Lord Albrecht, my research has reached a critical juncture, but my situation is now extremely perilous. Perhaps you could help me escape from the bay—I plan to...'\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"范海辛\""
+    },
+    "\"Dialogue_E_40001_Clip07_56\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_E_40001_Clip07_56\"",
+      "m_mContent": "\"The text ends abruptly—likely an abandoned cry for help. Its author may not have survived.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
     },
@@ -90675,7 +90934,7 @@
     "\"Dialogue_E_50001_Clip04_28\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_50001_Clip04_28\"",
-      "m_mContent": "\"Ey<alpha=#AA>es<alpha=#66>... <alpha=#FF>they <alpha=#CC>feel <alpha=#AA>at <alpha=#88>peace<alpha=#66>...\"",
+      "m_mContent": "\"Ey<alpha=#AA>es<alpha=#66>... <alpha=#FF>fe <alpha=#CC>el <alpha=#AA>... <alpha=#88>peace<alpha=#66>...\"",
       "m_Type": "[]",
       "m_RoleName": "\"？？？（UR苍凛）\""
     },
@@ -94063,7 +94322,7 @@
     "\"Dialogue_C_30001_Clip01_21\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_C_30001_Clip01_21\"",
-      "m_mContent": "\"As you seek out the Moonblessed and grow the family's strength, I shall transform your influence into a following that ensures your path remains untroubled.\"",
+      "m_mContent": "\"As you seek out the Moonblessed and grow the family's strength, I shall transform your influence into a reward that ensures your path remains untroubled.\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -97262,7 +97521,7 @@
     "\"Tutorial_Dialogue_200026\"": {
       "m_bError": null,
       "m_Key": "\"Tutorial_Dialogue_200026\"",
-      "m_mContent": "\"So you're the type that repays their debts? Well, now it's time to show us what you're capable of, \"Moonblessed\".\"",
+      "m_mContent": "\"So you're the type that repays their debts? Well, now it's time to show us what you're capable of, \"Moonblessed.\"\"",
       "m_Type": "[]",
       "m_RoleName": "\"0\""
     },
@@ -97507,14 +97766,14 @@
     "\"Tutorial_Dialogue_202301\"": {
       "m_bError": null,
       "m_Key": "\"Tutorial_Dialogue_202301\"",
-      "m_mContent": "\"Very well... I've decided. First I'll kill everyone except the silver-haired, and then...\"",
+      "m_mContent": "\"Very well... I've decided. First I'll kill everyone except the silver-hair, and then...\"",
       "m_Type": "[]",
       "m_RoleName": "\"拉米娅\""
     },
     "\"Tutorial_Dialogue_202302\"": {
       "m_bError": null,
       "m_Key": "\"Tutorial_Dialogue_202302\"",
-      "m_mContent": "\"I'll have the elders execute Empousa and make the silver-haired mine!\"",
+      "m_mContent": "\"I'll have the elders execute Empousa and make silver-hair mine!\"",
       "m_Type": "[]",
       "m_RoleName": "\"拉米娅\""
     },
@@ -100909,7 +101168,7 @@
     "\"CouncilHall_Neutral_20070_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Neutral_20070_01\"",
-      "m_mContent": "\"hat if I said I did take a look at the new merchandise instead?2Puppet: Eh, we don't re\"",
+      "m_mContent": "\"What if I said I didn't care? Would that bother you?\"",
       "m_Type": "[]",
       "m_RoleName": "\"切西亚\""
     },
@@ -104346,7 +104605,7 @@
     "\"Tutor_310_03\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_310_03\"",
-      "m_mContent": "\"After the previous two, on the third day I received another letter from Tris.\"",
+      "m_mContent": "\"Indeed, Noah. You have entrusted me with this authority, and I am deeply honored. However, each day brings important matters that require your personal judgment.\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -111003,7 +111262,7 @@
     "\"Dialogue_E_60001_Clip01_017\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_60001_Clip01_017\"",
-      "m_mContent": "\"The <style=Highlight>ballad</style> she penned is absolutely breathtaking... I must treasure it in secret, where no soul will ever discover it.\"",
+      "m_mContent": "\"The <style=Highlight>song</style> she penned is absolutely breathtaking... I must treasure it in secret, where no soul will ever discover it.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿伽莎\""
     },
@@ -119179,7 +119438,7 @@
     "\"Tutor_130_09\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_130_09\"",
-      "m_mContent": "\"To rouse a soul long sealed in slumber, one requires a singular reagent—the \"Mead of Rebirth\".\"",
+      "m_mContent": "\"To rouse a soul long sealed in slumber, one requires a singular reagent—the \"Mead of Rebirth.\"\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -122630,7 +122889,7 @@
     "\"Dialogue_B_190001_Clip05_007\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_190001_Clip05_007\"",
-      "m_mContent": "\"Quinnare you alright?!\"",
+      "m_mContent": "\"Hey, are you alright?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"哈桑\""
     },
@@ -125017,7 +125276,7 @@
     "\"QE_90001_Clip99_03\"": {
       "m_bError": null,
       "m_Key": "\"QE_90001_Clip99_03\"",
-      "m_mContent": "\"How troubling... With water like this, my fruit trees haven't a chance of survival.\"",
+      "m_mContent": "\"How troubling... With water like this, my fruit trees don't stand a chance of survival.\"",
       "m_Type": "[]",
       "m_RoleName": "\"忧郁的商人\""
     },
@@ -125150,7 +125409,7 @@
     "\"Dialogue_E_80001_Clip99_17\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_80001_Clip99_17\"",
-      "m_mContent": "\"I'd barely unlocked my doors this morning when some little creature came barreling through and turned everything into absolute chaos—\"",
+      "m_mContent": "\"I'd barely opened my doors this morning when some little creature came barreling through and turned everything into absolute chaos—\"",
       "m_Type": "[]",
       "m_RoleName": "\"疲惫的商人\""
     },
@@ -125524,7 +125783,224 @@
       "m_mContent": "\"I hope this 'gift' I've prepared will open his eyes—even if only slightly.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
+    },
+    "\"Lounge_Idle_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Idle_01_20320\"",
+      "m_mContent": "\"(soft panting) Is someone there…?\nPlease, I just need... a hand.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Idle_Show_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Idle_Show_01_20320\"",
+      "m_mContent": "\"(soft panting) Just need... your hand... here.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Shackles_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Shackles_01_20320\"",
+      "m_mContent": "\"I-it hurts…! Please… gentler… punish me slow… nghhh… (heavy panting)\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Breast_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Breast_01_20320\"",
+      "m_mContent": "\"Hey—! (Ngh) How did you... know I...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Leg_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Leg_01_20320\"",
+      "m_mContent": "\"(Ngh) W-wait...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Armpit_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Armpit_01_20320\"",
+      "m_mContent": "\"Hehe, ah! (Ngh) You're just... teasing me...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Head_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Head_01_20320\"",
+      "m_mContent": "\"My face... your hands... it feels so...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Armpit_02_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Armpit_02_20320\"",
+      "m_mContent": "\"(Panting) Don't... stop... Oh... you found my little key.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_KeyUp_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_KeyUp_01_20320\"",
+      "m_mContent": "\"Well… don't just hold it… c'mon, use it… set me free…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Refuse_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Refuse_01_20320\"",
+      "m_mContent": "\"No... Slowly...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Idle_02_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Idle_02_20320\"",
+      "m_mContent": "\"Th-thank you… I didn't think… it'd feel like this…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Idle_Show_02_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Idle_Show_02_20320\"",
+      "m_mContent": "\"This one, too. Just need... a hand... again.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_KeyOff_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_KeyOff_01_20320\"",
+      "m_mContent": "\"You have to rub it... just... the right... way.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Hand_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Hand_01_20320\"",
+      "m_mContent": "\"I'll keep... rubbing... untill... Almost... done... Ah!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Bite_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Bite_01_20320\"",
+      "m_mContent": "\"I was thinking, maybe you'd leave me with something.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Rune_01_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Rune_01_20320\"",
+      "m_mContent": "\"Gentle! Ugh, you're hopeless... That tickles!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Lounge_Refuse_02_20320\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Refuse_02_20320\"",
+      "m_mContent": "\"Don't rush… you'll get there…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_01\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_01\"",
+      "m_mContent": "\"Alchemy rituals are an important means for the Bloodborn to enhance themselves.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_02\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_02\"",
+      "m_mContent": "\"Absorbing Fragments of the corresponding Role allows one to access their memories, thereby increasing the Blood Power for Vassals of the same Role.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_03\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_03\"",
+      "m_mContent": "\"Tap to select a Role.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_04\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_04\"",
+      "m_mContent": "\"Tap to Add Fragments\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_05\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_05\"",
+      "m_mContent": "\"Experienced Vassals can share memories with novice Vassals through Blood Covenant.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_06\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_06\"",
+      "m_mContent": "\"Tap \"Bond\"\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_07\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_07\"",
+      "m_mContent": "\"The higher the rarity and Spirit Siphon phase of the selected Vassal, the greater the attribute bonus.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"Tutor_413_08\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutor_413_08\"",
+      "m_mContent": "\"Using Ritual wisely can improve Vassals's strength.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"\""
+    },
+    "\"CouncilHall_Accepted_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20680_01\"",
+      "m_mContent": "\"Checkmate.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
+    "\"CouncilHall_Agree_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20680_01\"",
+      "m_mContent": "\"Hmm, a nice move.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
+    "\"CouncilHall_Change_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20680_01\"",
+      "m_mContent": "\"Did I miscalculate, or did you think it through more thoroughly?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
+    "\"CouncilHall_Disagree_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20680_01\"",
+      "m_mContent": "\"Stalemate. You are trapped.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
+    "\"CouncilHall_Disapproved_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20680_01\"",
+      "m_mContent": "\"I don't recommend you do this.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
+    "\"CouncilHall_Neutral_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20680_01\"",
+      "m_mContent": "\"This move... is questionable.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
     }
   },
-  "status": "processed_17932_items"
+  "status": "processed_18000_items"
 }

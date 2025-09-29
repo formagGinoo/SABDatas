@@ -1,0 +1,86 @@
+{
+  "className": "CData_EquipQuality",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_EquipQuality": "1",
+      "m_mQualityname": "\"Tier 1\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_1\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_01\"",
+      "m_QualityPic": "\"\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_EquipQuality": "2",
+      "m_mQualityname": "\"Tier 2\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_2\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_01\"",
+      "m_QualityPic": "\"\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_EquipQuality": "3",
+      "m_mQualityname": "\"Tier 3\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_3\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_01\"",
+      "m_QualityPic": "\"\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_EquipQuality": "4",
+      "m_mQualityname": "\"Tier 4\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_4\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_02\"",
+      "m_QualityPic": "\"\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_EquipQuality": "5",
+      "m_mQualityname": "\"Tier 5\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_5\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_03\"",
+      "m_QualityPic": "\"\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_EquipQuality": "6",
+      "m_mQualityname": "\"Tier 6\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_6\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_04\"",
+      "m_QualityPic": "\"\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_EquipQuality": "7",
+      "m_mQualityname": "\"Tier 7\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_7\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_05\"",
+      "m_QualityPic": "\"\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_EquipQuality": "8",
+      "m_mQualityname": "\"Tier 8\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_8\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_05\"",
+      "m_QualityPic": "\"Atlas_Equipment/Quality_bg_8b\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_EquipQuality": "9",
+      "m_mQualityname": "\"Tier 9\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_9\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_06\"",
+      "m_QualityPic": "\"Atlas_Equipment/Quality_bg_9b\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_EquipQuality": "10",
+      "m_mQualityname": "\"Tier 10\"",
+      "m_QualityUI": "\"Atlas_Equipment/Quality_10\"",
+      "m_Pic": "\"Atlas_Item/Quality_equipment_07\"",
+      "m_QualityPic": "\"Atlas_Equipment/Quality_10b\""
+    }
+  },
+  "status": "processed_10_items"
+}

@@ -1293,6 +1293,8 @@ AllianceMessageNotice.Definition = {
   "iLastEditTime",
   "iDeleteTime",
   "stDeleter",
+  "sSenderName",
+  "iSenderLevel",
   iNoticeID = {
     0,
     0,
@@ -1346,6 +1348,18 @@ AllianceMessageNotice.Definition = {
     0,
     _G.MTTDProto.PlayerIDType,
     nil
+  },
+  sSenderName = {
+    9,
+    0,
+    13,
+    ""
+  },
+  iSenderLevel = {
+    10,
+    0,
+    8,
+    0
   }
 }
 Cmd_Alliance_MessageNotice_GetList_CS = sdp.SdpStruct("Cmd_Alliance_MessageNotice_GetList_CS")

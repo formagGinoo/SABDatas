@@ -63,6 +63,7 @@ CmdShop.Definition = {
   "iVersion",
   "mGoodsBought",
   "iFreeRefreshTimes",
+  "iMonthCardFreeRefreshTimes",
   iShopId = {
     0,
     0,
@@ -113,6 +114,12 @@ CmdShop.Definition = {
   },
   iFreeRefreshTimes = {
     8,
+    0,
+    8,
+    0
+  },
+  iMonthCardFreeRefreshTimes = {
+    9,
     0,
     8,
     0

@@ -64,6 +64,8 @@ SystemType_AttractLetter = 61
 SystemType_Ancient = 62
 SystemType_Fashion = 63
 SystemType_EquipDecompose = 64
+SystemType_Lounge = 65
+SystemType_CirculationCareer = 66
 SystemType_Hero = 101
 SystemType_HeroLevel = 102
 SystemType_Goblin = 200
@@ -3574,6 +3576,30 @@ CmdCirculationItem.Definition = {
   "iLevel",
   "iExp",
   iTypeID = {
+    0,
+    0,
+    8,
+    0
+  },
+  iLevel = {
+    1,
+    0,
+    8,
+    0
+  },
+  iExp = {
+    2,
+    0,
+    8,
+    0
+  }
+}
+CmdCirculationCareerItem = sdp.SdpStruct("CmdCirculationCareerItem")
+CmdCirculationCareerItem.Definition = {
+  "iCareerType",
+  "iLevel",
+  "iExp",
+  iCareerType = {
     0,
     0,
     8,

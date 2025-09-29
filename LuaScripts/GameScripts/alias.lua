@@ -32,6 +32,7 @@ Role3DManager = CS.Role3DManager.Instance
 UIMultiTypeObjectPoolManager = CS.UIMultiTypeObjectPoolManager.Instance
 UIMultiPoolType = CS.UIMultiPoolType
 GameCameraManager = CS.GameCameraManager
+LoungeSpineClick = typeof(CS.LoungeSpineClick)
 T_Canvas = typeof(CS.UnityEngine.Canvas)
 T_Camera = typeof(CS.UnityEngine.Camera)
 T_LineRenderer = typeof(CS.UnityEngine.LineRenderer)

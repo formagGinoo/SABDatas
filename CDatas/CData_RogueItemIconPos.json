@@ -837,6 +837,17 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "10300320": {
+      "m_bError": null,
+      "m_ItemID": "10300320",
+      "m_Desc": "\"尘封的「慈爱枷锁」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "10300330": {
       "m_bError": null,
       "m_ItemID": "10300330",
@@ -1116,6 +1127,17 @@
       "m_bError": null,
       "m_ItemID": "10300660",
       "m_Desc": "\"尘封的「被遗忘的誓言」\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300680": {
+      "m_bError": null,
+      "m_ItemID": "10300680",
+      "m_Desc": "\"尘封的「黑曜皇后」\"",
       "m_BagItemPos": "[0,0,70]",
       "m_TipsPos": "[0,0,55]",
       "m_CombinationPos": "[0,0,55]",
@@ -1464,6 +1486,17 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100320": {
+      "m_bError": null,
+      "m_ItemID": "20100320",
+      "m_Desc": "\"慈爱枷锁\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100330": {
       "m_bError": null,
       "m_ItemID": "20100330",
@@ -1750,6 +1783,17 @@
       "m_SmallBagItemPos": "[0,0,170]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100680": {
+      "m_bError": null,
+      "m_ItemID": "20100680",
+      "m_Desc": "\"黑曜皇后\"",
+      "m_BagItemPos": "[0,0,70]",
+      "m_TipsPos": "[0,0,55]",
+      "m_CombinationPos": "[0,0,55]",
+      "m_HandBookPos": "[0,60,55]",
+      "m_SmallBagItemPos": "[0,0,170]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100690": {
       "m_bError": null,
       "m_ItemID": "20100690",
@@ -1916,5 +1960,5 @@
       "m_HeroHeadPos": "[0,0,0]"
     }
   },
-  "status": "processed_174_items"
+  "status": "processed_178_items"
 }

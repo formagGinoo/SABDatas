@@ -24,6 +24,7 @@ end
 
 function Form_ActivityParty:OnInactive()
   self.super.OnInactive(self)
+  PushFaceManager:CheckShowNextPopPanel()
 end
 
 function Form_ActivityParty:OnDestroy()

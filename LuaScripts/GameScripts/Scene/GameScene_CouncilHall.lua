@@ -28,6 +28,7 @@ function GameScene_CouncilHall:OnEnterScene(iSceneIDPrev)
     UILuaHelper.InsertCameraToUIRootStack(self.m_camera, 0)
     utils.AdaptCamera(self.m_camera)
   end
+  CS.GameQualityManager.Instance:SetSystemQuality()
 end
 
 function GameScene_CouncilHall:OnLeaveScene(iSceneIDNext)
@@ -35,6 +36,7 @@ function GameScene_CouncilHall:OnLeaveScene(iSceneIDNext)
   if self.m_camera then
     UILuaHelper.RemoveCameraFromUIRootStack(self.m_camera)
   end
+  CS.GameQualityManager.Instance:ResetSystemQuality()
   CouncilHallManager:UnloadAssets()
 end
 

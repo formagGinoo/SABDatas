@@ -1,0 +1,81 @@
+{
+  "className": "CData_MiniGameA10LevelInfo",
+  "data": {
+    "1106": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1001": {
+          "m_bError": null,
+          "m_SubActID": "1106",
+          "m_LevelID": "1001",
+          "m_OrderLevel": null,
+          "m_mLevelName": "\"Easy\"",
+          "m_Times": "45",
+          "m_MaxAreaNum": "3",
+          "m_CharParts": "[1001,1002,1003,1004,1005,1006]",
+          "m_OpenTime": "\"2025-08-22 4:00:00\"",
+          "m_RewardGroup": "1001",
+          "m_AskTimes": "2700",
+          "m_Points": "[10,0]",
+          "m_UnlockPoints": "100",
+          "m_ActionSpeed": "300",
+          "m_TipsCD": "2500"
+        },
+        "1002": {
+          "m_bError": null,
+          "m_SubActID": "1106",
+          "m_LevelID": "1002",
+          "m_OrderLevel": "1001",
+          "m_mLevelName": "\"Normal\"",
+          "m_Times": "60",
+          "m_MaxAreaNum": "4",
+          "m_CharParts": "[1001,1002,1003,1004,1005,1006]",
+          "m_OpenTime": "\"2025-08-22 4:00:00\"",
+          "m_RewardGroup": "1002",
+          "m_AskTimes": "3200",
+          "m_Points": "[10,0]",
+          "m_UnlockPoints": "150",
+          "m_ActionSpeed": "300",
+          "m_TipsCD": "2500"
+        },
+        "1003": {
+          "m_bError": null,
+          "m_SubActID": "1106",
+          "m_LevelID": "1003",
+          "m_OrderLevel": "1002",
+          "m_mLevelName": "\"Hard\"",
+          "m_Times": "75",
+          "m_MaxAreaNum": "5",
+          "m_CharParts": "[1001,1002,1003,1004,1005,1006]",
+          "m_OpenTime": "\"2025-08-23 4:00:00\"",
+          "m_RewardGroup": "1003",
+          "m_AskTimes": "3500",
+          "m_Points": "[10,-5]",
+          "m_UnlockPoints": "200",
+          "m_ActionSpeed": "300",
+          "m_TipsCD": "3000"
+        },
+        "1004": {
+          "m_bError": null,
+          "m_SubActID": "1106",
+          "m_LevelID": "1004",
+          "m_OrderLevel": "1003",
+          "m_mLevelName": "\"Expert\"",
+          "m_Times": "90",
+          "m_MaxAreaNum": "6",
+          "m_CharParts": "[1001,1002,1003,1004,1005,1006]",
+          "m_OpenTime": "\"2025-08-23 4:00:00\"",
+          "m_RewardGroup": "1004",
+          "m_AskTimes": "3600",
+          "m_Points": "[10,-10]",
+          "m_UnlockPoints": null,
+          "m_ActionSpeed": "300",
+          "m_TipsCD": "3000"
+        }
+      }
+    }
+  },
+  "status": "processed_1_items"
+}

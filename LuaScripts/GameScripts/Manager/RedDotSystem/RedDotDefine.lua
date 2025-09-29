@@ -8,7 +8,11 @@ RedDotDefine.ModuleType = {
   HeroListItem = "HeroListItem",
   HeroSkillLevelUp = "HeroSkillLevelUp",
   HeroCirculationEntry = "HeroCirculationEntry",
+  HeroCareerEntry = "HeroCareerEntry",
   HeroCirculationUp = "HeroCirculationUp",
+  HeroCirculationCareerEntry = "HeroCirculationCareerEntry",
+  HeroCirculationCareerUp = "HeroCirculationCareerUp",
+  HeroCareerLocationUp = "HeroCareerLocationUp",
   HeroLegacyTab = "HeroLegacyTab",
   HeroLegacyWare = "HeroLegacyWare",
   LegacyUp = "LegacyUp",
@@ -29,6 +33,7 @@ RedDotDefine.ModuleType = {
   LevelSubTowerEntry = "LevelSubTowerEntry",
   HangUpEntry = "HangUpEntry",
   HangUpMain = "HangUpMain",
+  HangUpMainVip = "HangUpMainVip",
   HangUpBattle = "HangUpBattle",
   EquipmentChapterEntry = "EquipmentChapterEntry",
   EquipmentChapterBoss1 = "EquipmentChapterBoss1",
@@ -40,6 +45,9 @@ RedDotDefine.ModuleType = {
   HallActivityEntry = "HallActivityEntry",
   MiniGame108Entry = "MiniGame108Entry",
   MiniGame108 = "MiniGame108",
+  MiniGame110Entry = "MiniGame110Entry",
+  MiniGame110Reward = "MiniGame110Reward",
+  MiniGame110StartBtn = "MiniGame110StartBtn",
   HeroActHallEntry = "HeroActHallEntry",
   HeroActSignEntry = "HeroActSignEntry",
   HeroActTaskEntry = "HeroActTaskEntry",
@@ -69,6 +77,7 @@ RedDotDefine.ModuleType = {
   MallPushGiftTab = "MallPushGiftTab",
   MallDailyPackTabl = "MallDailyPackTabl",
   MallFashionTab = "MallFashionTab",
+  MallReturnTaskTab = "MallReturnTaskTab",
   SettingEntry = "SettingEntry",
   SettingAccount = "SettingAccount",
   SettingCustomerService = "SettingCustomerService",
@@ -114,7 +123,8 @@ RedDotDefine.ModuleType = {
   RogueTechBtnRedDot = "RogueTechBtnRedDot",
   RogueDailyRedDot = "RogueDailyRedDot",
   RogueNewStage = "RogueNewStage",
-  AttractBiographyEntry = "AttractBiographyEntry"
+  AttractBiographyEntry = "AttractBiographyEntry",
+  HeroLoungeEntry = "HeroLoungeEntry"
 }
 local ModuleType = RedDotDefine.ModuleType
 RedDotDefine.ModuleDetail = {
@@ -147,6 +157,36 @@ RedDotDefine.ModuleDetail = {
     isParamRedDot = true,
     managerName = "HeroActivityManager",
     getCountFunName = "IsMiniGamePuzzleHaveRedDot"
+  },
+  [ModuleType.MiniGame110Entry] = {
+    parent = ModuleType.MiniGame110Entry,
+    eventNameList = {
+      "eGameEvent_ActMinigame_GetRewardLoveWhip",
+      "eGameEvent_ActMinigame_Finish",
+      "eGameEvent_Today_Play"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsHeroAct110MiniGameEntry"
+  },
+  [ModuleType.MiniGame110Reward] = {
+    parent = ModuleType.MiniGame110Reward,
+    eventNameList = {
+      "eGameEvent_ActMinigame_GetRewardLoveWhip",
+      "eGameEvent_ActMinigame_Finish"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsHeroAct110MiniGameReward"
+  },
+  [ModuleType.MiniGame110StartBtn] = {
+    parent = ModuleType.MiniGame110StartBtn,
+    eventNameList = {
+      "eGameEvent_ActMinigame_StartGame"
+    },
+    isParamRedDot = true,
+    managerName = "HeroActivityManager",
+    getCountFunName = "IsHeroAct110MiniGameStartBtnRedDot"
   },
   [ModuleType.HeroLevelUp] = {
     parent = nil,
@@ -229,11 +269,18 @@ RedDotDefine.ModuleDetail = {
     getCountFunName = "IsHeroListItemHaveRedDot"
   },
   [ModuleType.HeroCirculationEntry] = {
-    parent = ModuleType.CastleEntry,
-    eventNameList = nil,
-    isParamRedDot = false,
-    managerName = nil,
-    getCountFunName = nil
+    parent = ModuleType.HeroCareerEntry,
+    eventNameList = {
+      "eGameEvent_Hero_SetHeroData",
+      "eGameEvent_Item_SetItem",
+      "eGameEvent_Inherit_Push",
+      "eGameEvent_Inherit_Change",
+      "eGameEvent_PopupUnlockSystem",
+      "eGameEvent_Hero_CirculationUpgrade"
+    },
+    isParamRedDot = true,
+    managerName = "HeroManager",
+    getCountFunName = "IsCirculationEntryHaveRedDot"
   },
   [ModuleType.HeroCirculationUp] = {
     parent = nil,
@@ -248,6 +295,60 @@ RedDotDefine.ModuleDetail = {
     isParamRedDot = true,
     managerName = "HeroManager",
     getCountFunName = "IsCirculationIDHaveRedDot"
+  },
+  [ModuleType.HeroCirculationCareerEntry] = {
+    parent = ModuleType.HeroCareerEntry,
+    eventNameList = {
+      "eGameEvent_Hero_SetHeroData",
+      "eGameEvent_Item_SetItem",
+      "eGameEvent_Inherit_Push",
+      "eGameEvent_Inherit_Change",
+      "eGameEvent_PopupUnlockSystem",
+      "eGameEvent_Hero_CirculationUpgrade",
+      "eGameEvent_Hero_CirculationCareerUpgrade",
+      "eGameEvent_Hero_SetCirculationCareerHero"
+    },
+    isParamRedDot = true,
+    managerName = "HeroManager",
+    getCountFunName = "IsCirculationCareerTotalRedDot"
+  },
+  [ModuleType.HeroCareerEntry] = {
+    parent = nil,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
+  [ModuleType.HeroCirculationCareerUp] = {
+    parent = nil,
+    eventNameList = {
+      "eGameEvent_Hero_SetHeroData",
+      "eGameEvent_Item_SetItem",
+      "eGameEvent_Inherit_Push",
+      "eGameEvent_Inherit_Change",
+      "eGameEvent_PopupUnlockSystem",
+      "eGameEvent_Hero_CirculationUpgrade",
+      "eGameEvent_Hero_CirculationCareerUpgrade",
+      "eGameEvent_Hero_SetCirculationCareerHero"
+    },
+    isParamRedDot = true,
+    managerName = "HeroManager",
+    getCountFunName = "IsCirculationCareerIDHaveRedDot"
+  },
+  [ModuleType.HeroCareerLocationUp] = {
+    parent = nil,
+    eventNameList = {
+      "eGameEvent_Hero_SetHeroData",
+      "eGameEvent_Item_SetItem",
+      "eGameEvent_Inherit_Push",
+      "eGameEvent_Inherit_Change",
+      "eGameEvent_PopupUnlockSystem",
+      "eGameEvent_Hero_CirculationUpgrade",
+      "eGameEvent_Hero_SetCirculationCareerHero"
+    },
+    isParamRedDot = true,
+    managerName = "HeroManager",
+    getCountFunName = "IsCareerLocationIDHaveRedDot"
   },
   [ModuleType.HeroLegacyTab] = {
     parent = nil,
@@ -413,6 +514,13 @@ RedDotDefine.ModuleDetail = {
     getCountFunName = nil
   },
   [ModuleType.HangUpMain] = {
+    parent = ModuleType.HangUpEntry,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
+  [ModuleType.HangUpMainVip] = {
     parent = ModuleType.HangUpEntry,
     eventNameList = nil,
     isParamRedDot = false,
@@ -743,6 +851,13 @@ RedDotDefine.ModuleDetail = {
     managerName = nil,
     getCountFunName = nil
   },
+  [ModuleType.MallReturnTaskTab] = {
+    parent = ModuleType.HallMallMainEntry,
+    eventNameList = nil,
+    isParamRedDot = false,
+    managerName = nil,
+    getCountFunName = nil
+  },
   [ModuleType.MallNewStudentsSupplyPackTab] = {
     parent = nil,
     eventNameList = nil,
@@ -896,7 +1011,9 @@ RedDotDefine.ModuleDetail = {
       "eGameEvent_Ancient_SummonHero",
       "eGameEvent_Alliance_GetApplyList_RedPoint",
       "eGameEvent_Alliance_MessageNoticeLeave",
-      "eGameEvent_Alliance_MessageNoticeChange"
+      "eGameEvent_Alliance_MessageNoticeChange",
+      "eGameEvent_Alliance_ReplyInvite",
+      "eGameEvent_Alliance_Get_Invitations"
     },
     isParamRedDot = true,
     managerName = "GuildManager",
@@ -1130,6 +1247,17 @@ RedDotDefine.ModuleDetail = {
     isParamRedDot = true,
     managerName = "AttractManager",
     getCountFunName = "IsAttractBiographyHaveRedDot"
+  },
+  [ModuleType.HeroLoungeEntry] = {
+    parent = nil,
+    eventNameList = {
+      "eGameEvent_Hero_SetHeroData",
+      "eGameEvent_PopupUnlockSystem",
+      "eGameEvent_Lounge_Mark"
+    },
+    isParamRedDot = true,
+    managerName = "LoungeManager",
+    getCountFunName = "CheckHeroLoungeHaveRedDot"
   }
 }
 return RedDotDefine

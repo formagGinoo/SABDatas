@@ -4,6 +4,42 @@ function MinigameHelper:ctor()
   self.vAllLegacyStageCfg = {}
 end
 
+local MiniGameRedDotCheckFunc = {}
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_Memory] = function(act_id)
+  return HeroActivityManager:GetMemoryEntryHaveRedFlag(act_id)
+end
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_Whacka] = function(act_id)
+  return false
+end
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_LegacyStage] = function(act_id)
+  return HeroActivityManager:IsHeroActMiniGamePuzzleEntryHaveRedDot(act_id) == 1
+end
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_Spider] = function(act_id)
+  return false
+end
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_Flop] = function(act_id)
+  return false
+end
+MiniGameRedDotCheckFunc[MTTDProto.LamiaMiniGameType_LoveWhip] = function(act_id)
+  return MinigameHelper:IsMiniGame110TypeHaveRedDot(act_id) == 1
+end
+
+function MinigameHelper:IsMiniGameHaveRedDot(act_id)
+  local subActId = HeroActivityManager:GetSubFuncID(act_id, HeroActivityManager.SubActTypeEnum.MiniGame)
+  local miniGameIsOpen = HeroActivityManager:IsSubActIsOpenByID(act_id, subActId)
+  if not miniGameIsOpen then
+    return false
+  end
+  local subConfig = HeroActivityManager:GetSubInfoByID(subActId)
+  if not subConfig then
+    return false
+  end
+  if MiniGameRedDotCheckFunc[subConfig.m_MiniGameType] then
+    return MiniGameRedDotCheckFunc[subConfig.m_MiniGameType](act_id)
+  end
+  return false
+end
+
 function MinigameHelper:GetSubActMiniGameAllLegacyStageCfg(iSubActID)
   if self.vAllLegacyStageCfg[iSubActID] then
     return self.vAllLegacyStageCfg[iSubActID]
@@ -156,6 +192,71 @@ function MinigameHelper:IsMiniGamePuzzleHaveRedDot(iActId, iSubActId)
     return 1
   end
   return 0
+end
+
+function MinigameHelper:IsMiniGame110TypeHaveRedDot(iActId)
+  if not iActId then
+    return 0
+  end
+  if self:IsMiniGame110HaveReward(iActId) == 1 then
+    return 1
+  end
+  return 0
+end
+
+function MinigameHelper:IsMiniGame110Entry(iActId)
+  if not iActId then
+    return 0
+  end
+  if self:IsMiniGame110HaveReward(iActId) == 1 then
+    return 1
+  end
+  if self:IsHeroAct110MiniGameStartBtnRedDot(iActId) == 1 then
+    return 1
+  end
+  return 0
+end
+
+function MinigameHelper:IsMiniGame110HaveReward(iActId, iSubActId)
+  if not iActId then
+    return 0
+  end
+  if not self.m_reward110List then
+    local MiniGameA10RewardsIns = ConfigManager:GetConfigInsByName("MiniGameA10Rewards")
+    self.m_reward110List = MiniGameA10RewardsIns:GetAll()
+  end
+  local stMiniGame = HeroActivityManager:GetHeroActData(iActId).server_data.stMiniGame
+  local iDayCanRewardLv = 0
+  local iDayTakenRewardLv = 0
+  if stMiniGame.stMGLoveWhipInfo then
+    iDayCanRewardLv = stMiniGame.stMGLoveWhipInfo.iDailyCanRewardLevel
+  end
+  if stMiniGame.stMGLoveWhipInfo then
+    iDayTakenRewardLv = stMiniGame.stMGLoveWhipInfo.iDailyTakenRewardLevel
+  end
+  if iDayCanRewardLv <= iDayTakenRewardLv then
+    return 0
+  end
+  for k, v in pairs(self.m_reward110List) do
+    if iDayTakenRewardLv < v.m_KeyLevel and iDayCanRewardLv < v.m_KeyLevel then
+      local rewardList = utils.changeCSArrayToLuaTable(v.m_Rewards)
+      if next(rewardList) ~= nil then
+        return 1
+      end
+    end
+  end
+  return 0
+end
+
+function MinigameHelper:IsHeroAct110MiniGameStartBtnRedDot()
+  local curServerDate = TimeUtil:GetServerDate(TimeUtil:GetServerTimeS())
+  local timeStr = curServerDate.year .. curServerDate.month .. curServerDate.day
+  self.lastRdDate = LocalDataManager:GetStringSimple("Minigame_Aiyuefa_DayilyRedpointDt", "")
+  if self.lastRdDate ~= timeStr then
+    return 1
+  else
+    return 0
+  end
 end
 
 return MinigameHelper

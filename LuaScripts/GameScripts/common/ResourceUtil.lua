@@ -58,11 +58,15 @@ function ResourceUtil:GetProcessRewardData(data, customData)
     equip_bg = nil,
     is_extra = false,
     is_can_get = false,
-    starTechEffect = false
+    starTechEffect = false,
+    monthlyPrivilege = false,
+    bIsGray = false
   }
   item_data.is_extra = customData and customData.is_extra
   item_data.is_can_get = customData and customData.is_can_get
   item_data.starTechEffect = customData and customData.starTechEffect
+  item_data.monthlyPrivilege = customData and customData.monthlyPrivilege
+  item_data.bIsGray = customData and customData.bIsGray
   if data_type == ResourceUtil.RESOURCE_TYPE.EQUIPS then
     local cfg = EquipManager:GetEquipCfgByBaseId(data_id)
     item_data.name = cfg.m_mEquipName
@@ -515,6 +519,18 @@ function ResourceUtil:CreateEquipCommonIconImg(imageItem, quality)
   CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.itemIcon, nil, nil, true)
 end
 
+function ResourceUtil:CreateEquipCommonTxtBgImg(imageItem, quality)
+  local stItemData = GlobalConfig.QUALITY_EQUIP_SETTING[quality]
+  if not stItemData then
+    log.error("ResourceUtil CreateEquipCommonQualityImg quality  " .. tostring(quality))
+    return
+  end
+  if not stItemData.icon2 then
+    return
+  end
+  CS.UI.UILuaHelper.SetAtlasSprite(imageItem, stItemData.icon2, nil, nil, true)
+end
+
 function ResourceUtil:CreateHeroHeadIcon(imageItem, heroId, star)
   if not heroId then
     return
@@ -832,9 +848,11 @@ function ResourceUtil:CreateGuildBossIconByName(imageItem, iconName)
   CS.UI.UILuaHelper.SetAtlasSprite(imageItem, "Atlas_Guild/" .. iconName, nil, nil, true)
 end
 
-function ResourceUtil:CreateUIPrefab(prefab_name, subBack, failBack)
+function ResourceUtil:CreateUIPrefab(prefab_name, parentObj, subBack, failBack)
   local function successCB(uiName, uiObject)
-    if subBack then
+    if subBack and not utils.isNull(parentObj) then
+      UILuaHelper.SetParent(uiObject, parentObj, true)
+      
       subBack(uiObject)
     end
   end
@@ -851,6 +869,13 @@ end
 
 function ResourceUtil:UnloadUIPrefab(prefab_name)
   CS.MUF.Resource.ResourceManager.UnloadAsset(prefab_name, CS.MUF.Resource.ResourceType.UI)
+end
+
+function ResourceUtil:DestroyAndUnloadUIPrefab(obj, prefab_name)
+  if not utils.isNull(obj) then
+    GameObject.Destroy(obj)
+    CS.MUF.Resource.ResourceManager.UnloadAsset(prefab_name, CS.MUF.Resource.ResourceType.UI)
+  end
 end
 
 function ResourceUtil:CreatePrefab(prefab_name, parent)

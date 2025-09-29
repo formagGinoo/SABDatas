@@ -85,6 +85,7 @@ function UIBattlePassMain:OnActiveTransitionDone()
     self:OnGetFirstEnterType()
     self.m_isFirstEnterFreshPanel = false
   end
+  self:CheckShowLevelUp10EndTips()
 end
 
 function UIBattlePassMain:OnActive()
@@ -455,6 +456,27 @@ function UIBattlePassMain:CheckShowLevelUp10()
       })
       LocalDataManager:SetIntSimple("BattlePassInAdvanceAddLvShowPanel" .. actID, 1)
     end
+  end
+end
+
+function UIBattlePassMain:CheckShowLevelUp10EndTips()
+  if not self.m_stActivity then
+    return
+  end
+  local levelPrefabId = self.m_stActivity:GetBuyPanel2Prefab()
+  local curBuyStatus = self.m_stActivity:GetBuyStatus()
+  if curBuyStatus == BattlePassBuyStatus.Free then
+    if self.m_stActivity:IsCanShowBPBuyTips() then
+      StackFlow:Push(levelPrefabId, {
+        stActivity = self.m_stActivity,
+        iType = 1
+      })
+    end
+  elseif self.m_stActivity:IsCanShowBPRewardTips() then
+    StackFlow:Push(levelPrefabId, {
+      stActivity = self.m_stActivity,
+      iType = 2
+    })
   end
 end
 

@@ -226,7 +226,7 @@ end
 
 function Form_ActivityMinigame108BattleMain:FreshEventPanel(itemData)
   self:FreshGrid()
-  if itemData.cfg.m_EventType == EventType.Judgement then
+  if itemData.cfg.m_EventType == EventType.Judgement or itemData.cfg.m_EventType == EventType.Normal then
     self.m_pnl_choose:SetActive(false)
     self.m_pnl_next:SetActive(true)
     self.m_btn_confirm:SetActive(false)
@@ -387,7 +387,7 @@ function Form_ActivityMinigame108BattleMain:OnBtnchoose1Clicked()
 end
 
 function Form_ActivityMinigame108BattleMain:OnBtnchoose2Clicked()
-  local eventId = self.m_curEventCfg.m_Select1Event
+  local eventId = self.m_curEventCfg.m_Select2Event
   self:AddSpecialEvent(eventId)
 end
 

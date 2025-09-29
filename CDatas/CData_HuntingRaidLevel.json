@@ -8,6 +8,7 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "1",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
       "m_FightSubType": "1",
       "m_CountType": "2"
@@ -19,6 +20,7 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[90201]",
       "m_BOSSID": "2",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
       "m_FightSubType": "2",
       "m_CountType": "1"
@@ -30,6 +32,7 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "3",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
       "m_FightSubType": "3",
       "m_CountType": "3"
@@ -41,8 +44,9 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "4",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
-      "m_FightSubType": "4",
+      "m_FightSubType": "1",
       "m_CountType": "2"
     },
     "2102050": {
@@ -52,8 +56,9 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "5",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
-      "m_FightSubType": "5",
+      "m_FightSubType": "3",
       "m_CountType": "3"
     },
     "2102060": {
@@ -63,8 +68,9 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "6",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
-      "m_FightSubType": "6",
+      "m_FightSubType": "1",
       "m_CountType": "2"
     },
     "2102070": {
@@ -74,8 +80,9 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "7",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
-      "m_FightSubType": "7",
+      "m_FightSubType": "3",
       "m_CountType": "3"
     },
     "2102080": {
@@ -85,10 +92,71 @@
       "m_LevelType": "13",
       "m_MainTargetID": "[]",
       "m_BOSSID": "8",
+      "m_MonsterScore": "[]",
       "m_HeroModify": "6001",
-      "m_FightSubType": "8",
+      "m_FightSubType": "1",
       "m_CountType": "2"
+    },
+    "2102090": {
+      "m_bError": null,
+      "m_LevelID": "2102090",
+      "m_MapID": "2400009",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "9",
+      "m_MonsterScore": "[[90901,1]]",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "4",
+      "m_CountType": "4"
+    },
+    "2102100": {
+      "m_bError": null,
+      "m_LevelID": "2102100",
+      "m_MapID": "2400010",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "10",
+      "m_MonsterScore": "[]",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "6",
+      "m_CountType": "6"
+    },
+    "2102110": {
+      "m_bError": null,
+      "m_LevelID": "2102110",
+      "m_MapID": "2400011",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "11",
+      "m_MonsterScore": "[]",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "3",
+      "m_CountType": "3"
+    },
+    "2102120": {
+      "m_bError": null,
+      "m_LevelID": "2102120",
+      "m_MapID": "2400012",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[]",
+      "m_BOSSID": "12",
+      "m_MonsterScore": "[]",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "3",
+      "m_CountType": "3"
+    },
+    "2102130": {
+      "m_bError": null,
+      "m_LevelID": "2102130",
+      "m_MapID": "2400013",
+      "m_LevelType": "13",
+      "m_MainTargetID": "[91301]",
+      "m_BOSSID": "13",
+      "m_MonsterScore": "[]",
+      "m_HeroModify": "6001",
+      "m_FightSubType": "2",
+      "m_CountType": "1"
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_13_items"
 }

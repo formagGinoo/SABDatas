@@ -352,6 +352,28 @@ function PayStoreActivity:GetFashionStoreToBeReleasedCommodity()
   return goods
 end
 
+function PayStoreActivity:GetShowGoodsByStoreId(iStoreId)
+  local goods = {}
+  for _, v in ipairs(self.m_NewSortConfig or {}) do
+    for index, store in ipairs(v) do
+      if store.iStoreId == iStoreId then
+        local goodsData = store.stGoodsConfig.mGoods
+        for m, goodsInfo in pairs(goodsData) do
+          if goodsInfo.iLaunchTime and goodsInfo.iRemovalTime then
+            if TimeUtil:IsInTime(goodsInfo.iLaunchTime, goodsInfo.iRemovalTime) then
+              table.insert(goods, goodsInfo)
+            end
+          else
+            table.insert(goods, goodsInfo)
+          end
+        end
+        break
+      end
+    end
+  end
+  return goods
+end
+
 function PayStoreActivity:OnResetSdpConfig(m_stSdpConfig)
   self:InitData(m_stSdpConfig)
   self:broadcastEvent("eGameEvent_Activity_RefreshPayStore")
@@ -361,7 +383,8 @@ local WindowRedEnum = {
   [1] = RedDotDefine.ModuleType.MallNewbieGiftPackTabl,
   [2] = RedDotDefine.ModuleType.ActivityGiftPackTabl,
   [3] = RedDotDefine.ModuleType.MallDailyPackTabl,
-  [8] = RedDotDefine.ModuleType.MallFashionTab
+  [8] = RedDotDefine.ModuleType.MallFashionTab,
+  [9] = RedDotDefine.ModuleType.MallReturnTaskTab
 }
 
 function PayStoreActivity:OnResetStatusData()
@@ -420,14 +443,46 @@ function PayStoreActivity:HasStoreRedDot(store)
     return false
   elseif store.iStoreType == MTTDProto.CmdActPayStoreType_FashionStore then
     return self:CheckFashionStoreRedPoint()
+  elseif store.iStoreType == MTTDProto.CmdActPayStoreType_Return then
+    local returnTaskAct = ActivityManager:GetActivityByType(MTTD.ActivityType_ReturnTask)
+    if not returnTaskAct then
+      return false
+    end
+    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+      redDotKey = RedDotDefine.ModuleType.MallReturnTaskTab,
+      count = returnTaskAct:checkShowRed() and 1 or 0
+    })
+    return returnTaskAct:checkShowRed()
   end
-  for _, good in pairs(store.stGoodsConfig.mGoods) do
+  local goodsList = self:GetShowGoodsByStoreId(store.iStoreId)
+  for _, good in pairs(goodsList) do
     if good.sProductId == "" then
       local count = self:GetBuyCount(store.iStoreId, good.iGoodsId)
       if count < good.iLimitNum then
         return true
       end
     end
+  end
+  if store.iStoreType == MTTDProto.CmdActPayStoreType_Permanent then
+    for _, good in pairs(goodsList) do
+      if good.iLaunchTime and good.iRemovalTime and 0 < good.iLaunchTime and TimeUtil:IsInTime(good.iLaunchTime, good.iRemovalTime) then
+        local flag = LocalDataManager:GetIntSimple(tostring(store.iStoreId) .. ActivityManager.Red_Point_NewGoods .. tostring(good.iGoodsId), 0) == 0
+        if flag then
+          return true
+        end
+      end
+    end
+  end
+  if store.iStoreType == MTTDProto.CmdActPayStoreType_Train then
+    local payStoreActivitys = ActivityManager:GetActivityListByType(MTTD.ActivityType_Train)
+    local isShowRed = false
+    for _, payStoreActivity in ipairs(payStoreActivitys) do
+      if payStoreActivity:checkShowRed() then
+        isShowRed = true
+        break
+      end
+    end
+    return isShowRed
   end
   return false
 end
@@ -464,6 +519,17 @@ function PayStoreActivity:GetCfgByStoreId(storeId)
     for index, store in ipairs(v) do
       if store.iStoreId == storeId then
         return store
+      end
+    end
+  end
+end
+
+function PayStoreActivity:GetReturnTaskStoreId()
+  local configList = self.m_NewSortConfig
+  for i, v in ipairs(configList) do
+    for index, store in ipairs(v) do
+      if store.iStoreType == MTTDProto.CmdActPayStoreType_Return then
+        return store.iStoreId
       end
     end
   end

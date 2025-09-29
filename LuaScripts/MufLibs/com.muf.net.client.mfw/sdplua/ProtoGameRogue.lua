@@ -141,6 +141,7 @@ Cmd_Rogue_TakeReward_SC.Definition = {
   "iTakenReward",
   "vReward",
   "vActivityReward",
+  "vMonthCardReward",
   iTakenReward = {
     0,
     0,
@@ -155,6 +156,12 @@ Cmd_Rogue_TakeReward_SC.Definition = {
   },
   vActivityReward = {
     2,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  vMonthCardReward = {
+    3,
     0,
     sdp.SdpVector(CmdIDNum),
     nil

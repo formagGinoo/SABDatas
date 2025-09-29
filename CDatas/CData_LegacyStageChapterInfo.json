@@ -157,6 +157,19 @@
       "m_PreChapterID": "10011",
       "m_ChapterReward": "[[101,500]]"
     },
+    "10013": {
+      "m_bError": null,
+      "m_ChapterID": "10013",
+      "m_ChapterType": "1",
+      "m_mChapterName": "\"Arsenal I\"",
+      "m_mChapterDesc": "\"\"",
+      "m_mChapterPrompt": "\"\"",
+      "m_RewardPic": "\"Atlas_Legacy/Legacy_900008\"",
+      "m_RewardPicNoGet": "\"Atlas_Legacy/Legacy_900008\"",
+      "m_UnlockMainLevel": "1119090",
+      "m_PreChapterID": "10012",
+      "m_ChapterReward": "[[101,500]]"
+    },
     "20001": {
       "m_bError": null,
       "m_ChapterID": "20001",
@@ -184,5 +197,5 @@
       "m_ChapterReward": "[[101,500]]"
     }
   },
-  "status": "processed_14_items"
+  "status": "processed_15_items"
 }

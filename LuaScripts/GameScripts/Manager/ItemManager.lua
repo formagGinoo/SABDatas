@@ -284,6 +284,84 @@ function ItemManager:GetDiamondTotalNum()
   return totalNum, freeNum
 end
 
+function ItemManager:GetItemNumWithBagItems(iItemID, useBagItems)
+  local num = self:GetItemNum(iItemID)
+  if useBagItems then
+    local lst = self:GetItemListByType(ItemManager.ItemType.IdleCapsule)
+    for _, v in pairs(lst) do
+      local itemCfg = ResourceUtil:GetProcessRewardData(v)
+      local vGetItemInfo = string.split(itemCfg.config.m_ItemUse, ";")
+      for i = 1, #vGetItemInfo do
+        local vItemInfoStr = string.split(vGetItemInfo[i], ",")
+        local iGetItemID = tonumber(vItemInfoStr[1])
+        local iGetItemNum = tonumber(vItemInfoStr[2])
+        if iGetItemID == iItemID then
+          num = num + HangUpManager:GetItemProductionByIdAndSeconds(iGetItemID, iGetItemNum) * v.iNum
+        end
+      end
+    end
+  end
+  return num
+end
+
+function ItemManager:GetItemListByIdleCapsuleBase(iItemID, targetNum)
+  local itemList = {}
+  local outputItemList = {}
+  local lst = self:GetItemListByType(ItemManager.ItemType.IdleCapsule)
+  for _, v in pairs(lst) do
+    local itemCfg = ResourceUtil:GetProcessRewardData(v)
+    local vGetItemInfo = string.split(itemCfg.config.m_ItemUse, ";")
+    for i = 1, #vGetItemInfo do
+      local vItemInfoStr = string.split(vGetItemInfo[i], ",")
+      local iGetItemID = tonumber(vItemInfoStr[1])
+      local iGetItemNum = tonumber(vItemInfoStr[2])
+      if iGetItemID == iItemID then
+        itemList[#itemList + 1] = {
+          iID = v.iID,
+          iGetItemID = iGetItemID,
+          iNum = iGetItemNum,
+          iHave = v.iNum,
+          iRarity = itemCfg.config.m_Rarity
+        }
+      end
+    end
+  end
+  table.sort(itemList, function(a, b)
+    if a.iRarity == b.iRarity then
+      return a.iID < b.iID
+    else
+      return a.iRarity < b.iRarity
+    end
+  end)
+  local totalNum = 0
+  for i = 1, #itemList do
+    if targetNum > totalNum then
+      local singleNum = HangUpManager:GetItemProductionByIdAndSeconds(itemList[i].iGetItemID, itemList[i].iNum)
+      if targetNum > singleNum * itemList[i].iHave + totalNum then
+        table.insert(outputItemList, {
+          iID = itemList[i].iID,
+          iNum = itemList[i].iHave,
+          iRarity = itemList[i].iRarity
+        })
+        totalNum = totalNum + singleNum * itemList[i].iHave
+      else
+        for j = 1, itemList[i].iHave do
+          totalNum = totalNum + singleNum
+          if targetNum < totalNum then
+            table.insert(outputItemList, {
+              iID = itemList[i].iID,
+              iNum = j,
+              iRarity = itemList[i].iRarity
+            })
+            break
+          end
+        end
+      end
+    end
+  end
+  return outputItemList
+end
+
 function ItemManager:GetItemNum(iItemID, bIsPurchasing)
   if iItemID == MTTDProto.SpecialItem_ShowDiamond or iItemID == MTTDProto.SpecialItem_FreeDiamond and bIsPurchasing then
     return self:GetDiamondTotalNum()

@@ -10,6 +10,7 @@ function HangUpManager:OnCreate()
   self.m_iInstantTimes = 0
   self.m_iSeeRewardTime = 0
   self.m_Reward = {}
+  self.iMonthCardInstantTimes = 0
 end
 
 function HangUpManager:OnInitNetwork()
@@ -31,6 +32,7 @@ end
 
 function HangUpManager:OnDailyReset()
   self.m_iInstantTimes = 0
+  self.iMonthCardInstantTimes = 0
   self:ReqGetHangUpDataOnUnlockSystem()
 end
 
@@ -61,6 +63,7 @@ function HangUpManager:OnInitAfkInfoSC(afkData, msg)
   self.m_iTakeRewardTime = stAfkData.iTakeRewardTime
   self.m_iInstantTimes = stAfkData.iInstantTimes
   self.m_iSeeRewardTime = stAfkData.iSeeRewardTime
+  self.iMonthCardInstantTimes = stAfkData.iMonthCardInstantTimes
   self.m_Reward = self:SortAndFormatRewardTab2(stAfkData.mReward)
   self:CheckHangUpHaveFreeGetNum()
 end
@@ -79,6 +82,7 @@ function HangUpManager:OnAfkGetInfoSC(afkData, msg)
   self.m_iTakeRewardTime = stAfkData.iTakeRewardTime
   self.m_iInstantTimes = stAfkData.iInstantTimes
   self.m_iSeeRewardTime = stAfkData.iSeeRewardTime
+  self.iMonthCardInstantTimes = stAfkData.iMonthCardInstantTimes
   self.m_Reward = self:SortAndFormatRewardTab2(stAfkData.mReward)
   self:broadcastEvent("eGameEvent_HangUp_GetData")
   self:CheckHangUpHaveFreeGetNum()
@@ -97,6 +101,7 @@ function HangUpManager:OnAfkDataOnUnlockSystemSC(afkData, msg)
   self.m_iTakeRewardTime = stAfkData.iTakeRewardTime
   self.m_iInstantTimes = stAfkData.iInstantTimes
   self.m_iSeeRewardTime = stAfkData.iSeeRewardTime
+  self.iMonthCardInstantTimes = stAfkData.iMonthCardInstantTimes
   self.m_Reward = self:SortAndFormatRewardTab2(stAfkData.mReward)
   self:CheckHangUpHaveFreeGetNum()
   self:broadcastEvent("eGameEvent_HangUp_Unlock")
@@ -133,6 +138,7 @@ end
 function HangUpManager:OnReqTakeInstantSC(tableRewardData, msg)
   local rewardList = tableRewardData.vReward
   self.m_iInstantTimes = tableRewardData.iInstantTimes
+  self.iMonthCardInstantTimes = tableRewardData.iMonthCardInstantTimes
   if rewardList and next(rewardList) then
     utils.popUpRewardUI(self:SortAndFormatRewardTab(rewardList))
   end
@@ -238,6 +244,19 @@ function HangUpManager:ClearOldAFKExp()
   self.m_iOldAfkExp = nil
 end
 
+function HangUpManager:GetCurReceiveTimes()
+  return self.iMonthCardInstantTimes + self.m_iInstantTimes
+end
+
+function HangUpManager:GetLeftMonthCardInstantMonthTimes()
+  local bIsEffective, privilegeEffectData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.HangUpFreeTimes)
+  if bIsEffective and privilegeEffectData then
+    local freeTimes = privilegeEffectData[1][1]
+    return freeTimes - self.iMonthCardInstantTimes
+  end
+  return 0
+end
+
 function HangUpManager:GetItemProductionByIdAndSeconds(itemId, second)
   local count = 0
   local AFKLevelConfigInstance = ConfigManager:GetConfigInsByName("AFKLevel")
@@ -258,6 +277,14 @@ function HangUpManager:GetItemProductionByIdAndSeconds(itemId, second)
 end
 
 function HangUpManager:CheckHangUpHaveFreeGetNum()
+  local privilegeFreeNum = self:CheckHangUpHavePrivilegeFreeGetNum()
+  if privilegeFreeNum == 1 then
+    self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+      redDotKey = RedDotDefine.ModuleType.HangUpBattle,
+      count = 0
+    })
+    return 0
+  end
   local AFKInstantRewardConfigInstance = ConfigManager:GetConfigInsByName("AFKInstantReward")
   local instantRewardCfg = AFKInstantRewardConfigInstance:GetValue_ByTimes(self.m_iInstantTimes + 1)
   if instantRewardCfg then
@@ -275,6 +302,25 @@ function HangUpManager:CheckHangUpHaveFreeGetNum()
   end
   self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
     redDotKey = RedDotDefine.ModuleType.HangUpBattle,
+    count = 0
+  })
+  return 0
+end
+
+function HangUpManager:CheckHangUpHavePrivilegeFreeGetNum()
+  local bIsEffective, privilegeEffectData = MonthlyCardManager:GetPrivilegeEffectByType(MonthlyCardManager.PrivilegeEffectType.HangUpFreeTimes)
+  if bIsEffective and privilegeEffectData then
+    local freeTimes = privilegeEffectData[1][1]
+    if freeTimes > self.iMonthCardInstantTimes then
+      self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+        redDotKey = RedDotDefine.ModuleType.HangUpMainVip,
+        count = 1
+      })
+      return 1
+    end
+  end
+  self:broadcastEvent("eGameEvent_RedDot_ChangeCount", {
+    redDotKey = RedDotDefine.ModuleType.HangUpMainVip,
     count = 0
   })
   return 0

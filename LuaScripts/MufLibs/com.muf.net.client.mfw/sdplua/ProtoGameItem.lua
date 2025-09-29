@@ -72,6 +72,7 @@ ItemType_ActVirtualItem = 200
 ItemSubType_SmallMonthCard = 1
 ItemSubType_BigMonthCard = 2
 ItemSubType_BattlePass = 3
+ItemSubType_DiamondBigMonthCard = 4
 ItemSubType_Default = 10
 ItemSubType_EquipExp = 11
 ItemSubType_Treasure = 30

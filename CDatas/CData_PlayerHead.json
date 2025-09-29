@@ -952,7 +952,7 @@
       "m_ItemIcon": "\"Atlas_Role/Piera_Astray002\"",
       "m_mHeadDesc": "\"Obtain to unlock Regina avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Piera_Astray002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300054": {
@@ -970,7 +970,7 @@
       "m_ItemIcon": "\"Atlas_Role/Stella_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Stella avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Stella_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300055": {
@@ -988,7 +988,7 @@
       "m_ItemIcon": "\"Atlas_Role/Albert_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Albrecht avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Albert_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300056": {
@@ -1025,6 +1025,42 @@
       "m_mHeadDesc": "\"Obtain to unlock Julius avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Julius_Base002\"",
       "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1300058": {
+      "m_bError": null,
+      "m_HeadID": "1300058",
+      "m_mHeadName": "\"Fanny\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20320",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Fanny Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Fanny.\"",
+      "m_ItemIcon": "\"Atlas_Role/Fanu_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Fanny avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Fanu_Base002\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1300059": {
+      "m_bError": null,
+      "m_HeadID": "1300059",
+      "m_mHeadName": "\"Genevieve\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20680",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Genevieve Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Genevieve.\"",
+      "m_ItemIcon": "\"Atlas_Role/Evna_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Genevieve avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Evna_Base002\"",
+      "m_HideType": "1",
       "m_CensorHideType": "1"
     },
     "1310001": {
@@ -1978,7 +2014,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310053\"",
       "m_mHeadDesc": "\"Obtain to unlock Regina - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310053\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310054": {
@@ -1996,7 +2032,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310054\"",
       "m_mHeadDesc": "\"Obtain to unlock Stella - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310054\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310055": {
@@ -2014,7 +2050,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310055\"",
       "m_mHeadDesc": "\"Obtain to unlock Albrecht - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310055\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310056": {
@@ -2051,6 +2087,42 @@
       "m_mHeadDesc": "\"Obtain to unlock Julius - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310057\"",
       "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1310058": {
+      "m_bError": null,
+      "m_HeadID": "1310058",
+      "m_mHeadName": "\"Fanny - Spirit Siphon\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20320",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Fanny - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after Fanny reaches Spirit Siphon - Tier 3\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310058\"",
+      "m_mHeadDesc": "\"Obtain to unlock Fanny - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310058\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1310059": {
+      "m_bError": null,
+      "m_HeadID": "1310059",
+      "m_mHeadName": "\"Genevieve - Spirit Siphon\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20680",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Genevieve - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after Genevieve reaches Spirit Siphon - Tier 3\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310059\"",
+      "m_mHeadDesc": "\"Obtain to unlock Genevieve - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310059\"",
+      "m_HideType": "1",
       "m_CensorHideType": "1"
     },
     "1320001": {
@@ -2176,7 +2248,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320007\"",
       "m_mHeadDesc": "\"Obtain to unlock Maiden's Grace avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320007\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1320008": {
@@ -2194,7 +2266,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1320008\"",
       "m_mHeadDesc": "\"Obtain to unlock Garden of Purple avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1320008\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1329001": {
@@ -2233,6 +2305,24 @@
       "m_HideType": null,
       "m_CensorHideType": "1"
     },
+    "1329003": {
+      "m_bError": null,
+      "m_HeadID": "1329003",
+      "m_mHeadName": "\"Dawn's Rosy Sky\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6027001",
+      "m_mItemName": "\"Dawn's Rosy Sky Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - Dawn's Rosy Sky.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1329003\"",
+      "m_mHeadDesc": "\"Obtain to unlock Dawn's Rosy Sky avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1329003\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
     "1330001": {
       "m_bError": null,
       "m_HeadID": "1330001",
@@ -2248,6 +2338,24 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330001\"",
       "m_mHeadDesc": "\"Obtain to unlock Cycle of Destruction avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330001\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1330002": {
+      "m_bError": null,
+      "m_HeadID": "1330002",
+      "m_mHeadName": "\"Warden's File\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Warden's File Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Night of the Hunt Rank Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Warden's File avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330002\"",
       "m_HideType": null,
       "m_CensorHideType": "1"
     },
@@ -2360,5 +2468,5 @@
       "m_CensorHideType": null
     }
   },
-  "status": "processed_131_items"
+  "status": "processed_137_items"
 }

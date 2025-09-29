@@ -661,6 +661,23 @@ function AttractManager:GetHeroAttractById(iHeroId)
   return self.m_stAttract.mHeroAttract[iHeroId]
 end
 
+function AttractManager:GetHeroLoungeDataById(iHeroId)
+  return self.m_stAttract.mHeroLounge[iHeroId]
+end
+
+function AttractManager:SetHeroLoungeDataById(iHeroId, data)
+  if self.m_stAttract.mHeroLounge[iHeroId] then
+    if data.iStatus then
+      self.m_stAttract.mHeroLounge[iHeroId].iStatus = data.iStatus
+    end
+    if data.stHeroLounge then
+      self.m_stAttract.mHeroLounge[iHeroId] = data.stHeroLounge
+    end
+  else
+    self.m_stAttract.mHeroLounge[iHeroId] = data
+  end
+end
+
 function AttractManager:IsMailSaw(iHeroId, iArchiveId)
   local stHeroAttract = self:GetHeroAttractById(iHeroId)
   if not stHeroAttract then

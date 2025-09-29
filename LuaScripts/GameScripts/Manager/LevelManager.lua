@@ -581,6 +581,7 @@ function LevelManager:OnBattleEnd(isSuc, stageFinishChallengeSc, finishErrorCode
       local stFinishChallengeInfoSC = stageFinishChallengeSc.stFinishChallengeInfoSC or {}
       local rewardData = stFinishChallengeInfoSC.vReward
       local extraRewardData = stFinishChallengeInfoSC.vExtraReward
+      local vMonthCardExtraReward = stFinishChallengeInfoSC.vMonthCardExtraReward
       if levelType == LevelManager.LevelType.Dungeon then
         local damageNum = self.m_isSim and damage or self.m_levelEquipmentHelper:GetLevelDamageByLevelID(levelID)
         StackFlow:Push(UIDefines.ID_FORM_BOSSBATTLEVICTORY, {
@@ -588,6 +589,7 @@ function LevelManager:OnBattleEnd(isSuc, stageFinishChallengeSc, finishErrorCode
           levelID = levelID,
           rewardData = rewardData,
           extraReward = extraRewardData,
+          vMonthCardExtraReward = vMonthCardExtraReward,
           isSim = self.m_isSim,
           damageNum = damageNum,
           showHeroID = randomShowHeroID

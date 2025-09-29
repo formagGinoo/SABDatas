@@ -106,6 +106,7 @@ CmdActClientCfgModuleControl.Definition = {
   "bCloseRogueJumpImprove",
   "vCloseFightCheatType",
   "bCloseComplianceResourceSwitch",
+  "vCloseComplianceResourceGroupID",
   vLogReportPercent = {
     0,
     0,
@@ -141,6 +142,12 @@ CmdActClientCfgModuleControl.Definition = {
     0,
     1,
     false
+  },
+  vCloseComplianceResourceGroupID = {
+    6,
+    0,
+    sdp.SdpVector(8),
+    nil
   }
 }
 CmdActCfgModuleControl = sdp.SdpStruct("CmdActCfgModuleControl")

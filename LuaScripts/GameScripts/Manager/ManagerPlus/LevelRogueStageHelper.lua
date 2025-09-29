@@ -351,9 +351,11 @@ end
 
 function LevelRogueStageHelper:GetCurRogueStageRewards()
   local rewardList = {}
+  local privilegeRewardList = {}
   if self.m_iDailyReward > self.m_iTakenReward then
     local startStep = self.m_iTakenReward
     local rewardTab = {}
+    local privilegeRewardTab = {}
     for n = startStep + 1, self.m_iDailyReward do
       local cfg = self.m_LevelRewardCfgList[n]
       if cfg then
@@ -365,13 +367,24 @@ function LevelRogueStageHelper:GetCurRogueStageRewards()
             rewardTab[item[0]] = item[1]
           end
         end
+        for i = 0, cfg.m_MonthlyPrivilegeReward.Length - 1 do
+          local item = cfg.m_MonthlyPrivilegeReward[i]
+          if item and item[0] and privilegeRewardTab[item[0]] then
+            privilegeRewardTab[item[0]] = privilegeRewardTab[item[0]] + item[1]
+          else
+            privilegeRewardTab[item[0]] = item[1]
+          end
+        end
       end
     end
     for i, v in pairs(rewardTab) do
       rewardList[#rewardList + 1] = {i, v}
     end
+    for i, v in pairs(privilegeRewardTab) do
+      privilegeRewardList[#privilegeRewardList + 1] = {i, v}
+    end
   end
-  return rewardList
+  return rewardList, privilegeRewardList
 end
 
 function LevelRogueStageHelper:IsHaveRewards()

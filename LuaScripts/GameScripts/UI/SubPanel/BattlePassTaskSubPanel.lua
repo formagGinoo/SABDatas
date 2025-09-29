@@ -59,6 +59,7 @@ function BattlePassTaskSubPanel:OnTaskUpdate(data)
   end
   self:FreshTaskDataList()
   self:FreshTaskView(true)
+  self:FreshButtonsStatus()
 end
 
 function BattlePassTaskSubPanel:FreshUI()

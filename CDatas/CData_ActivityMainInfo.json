@@ -210,7 +210,42 @@
       "m_ExploreScene": "\"ActExplore_02\"",
       "m_ExploreSceneChar": "[]",
       "m_SigninSpine": "\"paimile_world\""
+    },
+    "1100": {
+      "m_bError": null,
+      "m_ActivityID": "1100",
+      "m_mActivityTitle": "\"Love and Lust\"",
+      "m_mActivityTitleExtra": "\"\"",
+      "m_ActivityType": "1",
+      "m_FightType": "5",
+      "m_ShopJumpID": "2612",
+      "m_ShopItem": "500103",
+      "m_PassItem": "500101",
+      "m_FreePassItem": "500102",
+      "m_GachaJumpID": "[[1010,25014],[1011,25015]]",
+      "m_TipsID": "1263",
+      "m_SubFunctionID": "[1101,1102,1103,1104,1105,1106]",
+      "m_BonusGroup": "1100",
+      "m_PowerGroup": "1100",
+      "m_ActivityBanner": "\"Atlas_ActivityBanner/1100\"",
+      "m_Wwise": "416",
+      "m_ActivityAnimation": "\"\"",
+      "m_ActivityAnimationReplay": null,
+      "m_mActivityDes": "\"Clear [Heart of Darkness] and complete [Cosmic Singularity] to obtain the event item \"Gilded Insignia,\" which can be redeemed at [Joyce's Sundries] for abundant rewards.\"",
+      "m_OpenTime": "\"2025-07-05 04:00:00\"",
+      "m_ChangeTime": "\"\"",
+      "m_EndTime": "\"2025-07-17 03:59:59\"",
+      "m_CloseTime": "\"2025-07-17 03:59:59\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1103010]]",
+      "m_Prefab": "\"Form_Activity110Main\"",
+      "m_BattleLoadingPrefab": "\"Form_Activity110_Loading\"",
+      "m_UpCharacter": "[20320,20680]",
+      "m_BCPrefab": "\"ui_panel_activity_bg110\"",
+      "m_ExploreScene": "\"\"",
+      "m_ExploreSceneChar": "[]",
+      "m_SigninSpine": "\"fanu_base\""
     }
   },
-  "status": "processed_6_items"
+  "status": "processed_7_items"
 }

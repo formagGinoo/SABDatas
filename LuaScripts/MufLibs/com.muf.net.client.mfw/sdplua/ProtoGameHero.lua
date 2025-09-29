@@ -29,6 +29,8 @@ CmdId_Hero_SetFashion_CS = 10423
 CmdId_Hero_SetFashion_SC = 10424
 CmdId_Hero_SkillReset_CS = 10425
 CmdId_Hero_SkillReset_SC = 10426
+CmdId_Hero_BatchLevelUp_CS = 10427
+CmdId_Hero_BatchLevelUp_SC = 10428
 CmdId_Form_GetForm_CS = 10430
 CmdId_Form_GetForm_SC = 10431
 CmdId_Form_SetForm_CS = 10432
@@ -99,6 +101,50 @@ Cmd_Hero_LevelUp_CS.Definition = {
 }
 Cmd_Hero_LevelUp_SC = sdp.SdpStruct("Cmd_Hero_LevelUp_SC")
 Cmd_Hero_LevelUp_SC.Definition = {}
+Cmd_Hero_BatchLevelUp_CS = sdp.SdpStruct("Cmd_Hero_BatchLevelUp_CS")
+Cmd_Hero_BatchLevelUp_CS.Definition = {
+  "mHeroIdNum",
+  mHeroIdNum = {
+    0,
+    0,
+    sdp.SdpMap(8, 8),
+    nil
+  }
+}
+HeroLevelChangeInfo = sdp.SdpStruct("HeroLevelChangeInfo")
+HeroLevelChangeInfo.Definition = {
+  "iOldLevel",
+  "iNewLevel",
+  "iHeroId",
+  iOldLevel = {
+    0,
+    0,
+    8,
+    0
+  },
+  iNewLevel = {
+    1,
+    0,
+    8,
+    0
+  },
+  iHeroId = {
+    2,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Hero_BatchLevelUp_SC = sdp.SdpStruct("Cmd_Hero_BatchLevelUp_SC")
+Cmd_Hero_BatchLevelUp_SC.Definition = {
+  "vHeroIdLevelChange",
+  vHeroIdLevelChange = {
+    0,
+    0,
+    sdp.SdpVector(HeroLevelChangeInfo),
+    nil
+  }
+}
 Cmd_Hero_InstallEquipBatch_CS = sdp.SdpStruct("Cmd_Hero_InstallEquipBatch_CS")
 Cmd_Hero_InstallEquipBatch_CS.Definition = {
   "iHeroId",

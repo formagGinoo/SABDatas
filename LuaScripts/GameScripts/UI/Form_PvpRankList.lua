@@ -10,6 +10,7 @@ end
 
 function Form_PvpRankList:AfterInit()
   self.super.AfterInit(self)
+  self.m_PlayerHeadCache = {}
   self.m_load_end = false
 end
 
@@ -17,7 +18,6 @@ function Form_PvpRankList:OnActive()
   self.super.OnActive(self)
   self.m_load_end = false
   self.m_firstOpenFlag = true
-  self.m_PlayerHeadCache = {}
   self.m_playerHeadCom = self:createPlayerHead(self.m_mine_head)
   self.m_playerHeadCom:SetStopClkStatus(true)
   self:RefreshUI()
@@ -29,7 +29,6 @@ function Form_PvpRankList:OnInactive()
   self:RemoveAllEventListeners()
   self.m_load_end = false
   self.m_loop_scroll_view = nil
-  self.m_PlayerHeadCache = {}
 end
 
 function Form_PvpRankList:RefreshUI()
@@ -192,6 +191,7 @@ end
 
 function Form_PvpRankList:OnDestroy()
   self.super.OnDestroy(self)
+  self.m_PlayerHeadCache = {}
 end
 
 function Form_PvpRankList:IsOpenGuassianBlur()

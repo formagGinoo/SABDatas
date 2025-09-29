@@ -78,14 +78,17 @@ function Form_PopupQuickBag:RefreshUI()
   self.m_listInfinityGrid:ShowItemList(self.m_ItemList)
   local costList = {}
   for i, v in ipairs(self.m_costList) do
+    log.info("v: " .. table.serialize(v))
     costList[#costList + 1] = ResourceUtil:GetProcessRewardData({
       v[1],
       0
     })
   end
+  local isEmpty = true
   for i = 1, 4 do
     self["m_cost_item" .. i]:SetActive(i <= #costList)
     if i <= #costList then
+      isEmpty = false
       if self.m_costItemList[i] == nil then
         self.m_costItemList[i] = self:createCommonItem(self["m_cost_item" .. i])
       end
@@ -95,6 +98,7 @@ function Form_PopupQuickBag:RefreshUI()
       self.m_costItemList[i]:SetNeedNum(self.m_costList[i][2], userItemNum)
     end
   end
+  self.m_pnl_content_top:SetActive(not isEmpty)
 end
 
 function Form_PopupQuickBag:OnItemClk(index, go)

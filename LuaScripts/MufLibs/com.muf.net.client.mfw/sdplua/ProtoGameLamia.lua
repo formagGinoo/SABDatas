@@ -18,6 +18,8 @@ LamiaMiniGameType_Memory = 1
 LamiaMiniGameType_Whacka = 2
 LamiaMiniGameType_LegacyStage = 3
 LamiaMiniGameType_Spider = 4
+LamiaMiniGameType_Flop = 5
+LamiaMiniGameType_LoveWhip = 6
 LamiaMiniGameType_Explore = 1001
 LamiaMiniGameMode_Normal = 1
 LamiaMiniGameMode_Boss = 2
@@ -52,6 +54,8 @@ CmdId_Lamia_GetSubActAward_CS = 19127
 CmdId_Lamia_GetSubActAward_SC = 19128
 CmdId_Lamia_SetClientData_CS = 19129
 CmdId_Lamia_SetClientData_SC = 19130
+CmdId_Lamia_MiniGame_LoveWhip_GetAward_CS = 19131
+CmdId_Lamia_MiniGame_LoveWhip_GetAward_SC = 19132
 LamiaGameStat_Doing = 0
 LamiaGameStat_Finish = 1
 LamiaSignIn = sdp.SdpStruct("LamiaSignIn")
@@ -109,11 +113,29 @@ LamiaQuest.Definition = {
     0
   }
 }
+MGLoveWhipInfo = sdp.SdpStruct("MGLoveWhipInfo")
+MGLoveWhipInfo.Definition = {
+  "iDailyCanRewardLevel",
+  "iDailyTakenRewardLevel",
+  iDailyCanRewardLevel = {
+    0,
+    0,
+    8,
+    0
+  },
+  iDailyTakenRewardLevel = {
+    1,
+    0,
+    8,
+    0
+  }
+}
 LamiaMiniGame = sdp.SdpStruct("LamiaMiniGame")
 LamiaMiniGame.Definition = {
   "mGameStat",
   "iMaxAwardedGame",
   "mGameScore",
+  "stMGLoveWhipInfo",
   mGameStat = {
     0,
     0,
@@ -130,6 +152,12 @@ LamiaMiniGame.Definition = {
     2,
     0,
     sdp.SdpMap(8, 8),
+    nil
+  },
+  stMGLoveWhipInfo = {
+    3,
+    0,
+    MGLoveWhipInfo,
     nil
   }
 }
@@ -383,6 +411,7 @@ Cmd_Lamia_MiniGame_Finish_SC.Definition = {
   "iGameStat",
   "vAward",
   "iScore",
+  "stMGLoveWhipInfo",
   iActId = {
     0,
     0,
@@ -418,6 +447,12 @@ Cmd_Lamia_MiniGame_Finish_SC.Definition = {
     0,
     8,
     0
+  },
+  stMGLoveWhipInfo = {
+    6,
+    0,
+    MGLoveWhipInfo,
+    nil
   }
 }
 Cmd_Lamia_MiniGame_GetAllAward_CS = sdp.SdpStruct("Cmd_Lamia_MiniGame_GetAllAward_CS")
@@ -872,5 +907,53 @@ Cmd_Lamia_SetClientData_SC.Definition = {
     0,
     13,
     ""
+  }
+}
+Cmd_Lamia_MiniGame_LoveWhip_GetAward_CS = sdp.SdpStruct("Cmd_Lamia_MiniGame_LoveWhip_GetAward_CS")
+Cmd_Lamia_MiniGame_LoveWhip_GetAward_CS.Definition = {
+  "iActId",
+  "iSubActId",
+  iActId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iSubActId = {
+    1,
+    0,
+    8,
+    0
+  }
+}
+Cmd_Lamia_MiniGame_LoveWhip_GetAward_SC = sdp.SdpStruct("Cmd_Lamia_MiniGame_LoveWhip_GetAward_SC")
+Cmd_Lamia_MiniGame_LoveWhip_GetAward_SC.Definition = {
+  "iActId",
+  "iSubActId",
+  "vAward",
+  "stMGLoveWhipInfo",
+  iActId = {
+    0,
+    0,
+    8,
+    0
+  },
+  iSubActId = {
+    1,
+    0,
+    8,
+    0
+  },
+  vAward = {
+    2,
+    0,
+    sdp.SdpVector(CmdIDNum),
+    nil
+  },
+  stMGLoveWhipInfo = {
+    3,
+    0,
+    MGLoveWhipInfo,
+    nil
   }
 }

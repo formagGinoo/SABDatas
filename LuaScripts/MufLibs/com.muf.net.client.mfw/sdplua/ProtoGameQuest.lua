@@ -96,6 +96,7 @@ QuestCond_OriginalArenaPlayTimesDay = 240
 QuestCond_OriginalArenaPlayTimes = 241
 QuestCond_ReplaceArenaPlayTimesDay = 242
 QuestCond_ReplaceArenaPlayTimes = 243
+QuestCond_ActReturnSign = 251
 QuestCond_Gacha = 301
 QuestCond_GachaHeroQuality = 302
 QuestCond_AddHeroQuality = 303

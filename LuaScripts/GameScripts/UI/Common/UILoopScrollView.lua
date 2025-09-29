@@ -53,6 +53,10 @@ function UILoopScrollView:OnItemBind(loopScrollView, actionType, index, gameObje
   end
 end
 
+function UILoopScrollView:SetCellSizeForIndexDelegate(delegate)
+  self.m_loopScrollView:SetCellSizeForIndexDelegate(delegate)
+end
+
 function UILoopScrollView:OnUpdate(dt)
   if self.m_itemCache then
     for i, itemLuaPanel in pairs(self.m_itemCache) do
@@ -77,10 +81,10 @@ function UILoopScrollView:ShowItemList(itemDataList, forceRefresh)
   elseif #self.m_itemDataList ~= #itemDataList or forceRefresh then
     self:DisPoseItems()
     self.m_itemDataList = itemDataList
-    self.m_loopScrollView:ReloadData(#self.m_itemDataList, true)
+    self:ReBindAll(false)
   else
     self.m_itemDataList = itemDataList
-    self:ReBindAll()
+    self:ReBindAll(true)
   end
 end
 
@@ -94,17 +98,17 @@ function UILoopScrollView:SetPullFreshBackFun(fun)
   self.m_pullFreshBackFun = fun
 end
 
-function UILoopScrollView:ReBindAll(isResetPos)
+function UILoopScrollView:ReBindAll(isKeepOffset)
   if not self.m_loopScrollView then
     return
   end
   if not self.m_itemDataList then
     return
   end
-  if isResetPos == nil then
-    isResetPos = false
+  if isKeepOffset == nil then
+    isKeepOffset = true
   end
-  self.m_loopScrollView:ReloadData(#self.m_itemDataList, isResetPos)
+  self.m_loopScrollView:ReloadData(#self.m_itemDataList, isKeepOffset)
 end
 
 function UILoopScrollView:ReBind(itemIndex)

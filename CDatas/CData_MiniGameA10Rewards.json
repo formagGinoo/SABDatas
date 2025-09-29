@@ -1,0 +1,108 @@
+{
+  "className": "CData_MiniGameA10Rewards",
+  "data": {
+    "0": {
+      "m_bError": null,
+      "m_KeyLevel": null,
+      "m_Rewards": "[]",
+      "m_mDesc": "\"\""
+    },
+    "1": {
+      "m_bError": null,
+      "m_KeyLevel": "1",
+      "m_Rewards": "[[500103,40]]",
+      "m_mDesc": "\"Achieve <style=Highlight>C</style> Grade on <style=Highlight>Easy</style>\""
+    },
+    "2": {
+      "m_bError": null,
+      "m_KeyLevel": "2",
+      "m_Rewards": "[[500103,40]]",
+      "m_mDesc": "\"Achieve <style=Highlight>B</style> Grade on <style=Highlight>Easy</style>\""
+    },
+    "3": {
+      "m_bError": null,
+      "m_KeyLevel": "3",
+      "m_Rewards": "[[40001,3]]",
+      "m_mDesc": "\"Achieve <style=Highlight>A</style> Grade on <style=Highlight>Easy</style>\""
+    },
+    "4": {
+      "m_bError": null,
+      "m_KeyLevel": "4",
+      "m_Rewards": "[[101,30]]",
+      "m_mDesc": "\"Achieve <style=Highlight>S</style> Grade on <style=Highlight>Easy</style>\""
+    },
+    "5": {
+      "m_bError": null,
+      "m_KeyLevel": "5",
+      "m_Rewards": "[[500103,50]]",
+      "m_mDesc": "\"Achieve <style=Highlight>C</style> Grade on <style=Highlight>Normal</style>\""
+    },
+    "6": {
+      "m_bError": null,
+      "m_KeyLevel": "6",
+      "m_Rewards": "[[500103,50]]",
+      "m_mDesc": "\"Achieve <style=Highlight>B</style> Grade on <style=Highlight>Normal</style>\""
+    },
+    "7": {
+      "m_bError": null,
+      "m_KeyLevel": "7",
+      "m_Rewards": "[[40011,2]]",
+      "m_mDesc": "\"Achieve <style=Highlight>A</style> Grade on <style=Highlight>Normal</style>\""
+    },
+    "8": {
+      "m_bError": null,
+      "m_KeyLevel": "8",
+      "m_Rewards": "[[800002,1]]",
+      "m_mDesc": "\"Achieve <style=Highlight>S</style> Grade on <style=Highlight>Normal</style>\""
+    },
+    "9": {
+      "m_bError": null,
+      "m_KeyLevel": "9",
+      "m_Rewards": "[[500103,50]]",
+      "m_mDesc": "\"Achieve <style=Highlight>C</style> Grade on <style=Highlight>Hard</style>\""
+    },
+    "10": {
+      "m_bError": null,
+      "m_KeyLevel": "10",
+      "m_Rewards": "[[500103,50]]",
+      "m_mDesc": "\"Achieve <style=Highlight>B</style> Grade on <style=Highlight>Hard</style>\""
+    },
+    "11": {
+      "m_bError": null,
+      "m_KeyLevel": "11",
+      "m_Rewards": "[[40021,2]]",
+      "m_mDesc": "\"Achieve <style=Highlight>A</style> Grade on <style=Highlight>Hard</style>\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_KeyLevel": "12",
+      "m_Rewards": "[[101,40]]",
+      "m_mDesc": "\"Achieve <style=Highlight>S</style> Grade on <style=Highlight>Hard</style>\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_KeyLevel": "13",
+      "m_Rewards": "[[30001,1]]",
+      "m_mDesc": "\"Achieve <style=Highlight>C</style> Grade on <style=Highlight>Expert</style>\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_KeyLevel": "14",
+      "m_Rewards": "[[1050,1]]",
+      "m_mDesc": "\"Achieve <style=Highlight>B</style> Grade on <style=Highlight>Expert</style>\""
+    },
+    "15": {
+      "m_bError": null,
+      "m_KeyLevel": "15",
+      "m_Rewards": "[[500103,60]]",
+      "m_mDesc": "\"Achieve <style=Highlight>A</style> Grade on <style=Highlight>Expert</style>\""
+    },
+    "16": {
+      "m_bError": null,
+      "m_KeyLevel": "16",
+      "m_Rewards": "[[500103,60]]",
+      "m_mDesc": "\"Achieve <style=Highlight>S</style> Grade on <style=Highlight>Expert</style>\""
+    }
+  },
+  "status": "processed_17_items"
+}

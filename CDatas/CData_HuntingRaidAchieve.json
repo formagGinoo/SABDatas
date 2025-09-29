@@ -22,7 +22,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "160000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -31,7 +31,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "120000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -56,7 +56,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "1500000",
           "m_mText": "\"Deal {0} DMG to enemies.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -65,7 +65,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "2000000",
           "m_mText": "\"Deal {0} DMG to enemies.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -90,7 +90,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "20",
           "m_mText": "\"Defeat {0} Blood Servant(s).\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -99,7 +99,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "40",
           "m_mText": "\"Defeat {0} Blood Servant(s).\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -124,7 +124,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "240000",
           "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -133,7 +133,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "200000",
           "m_mText": "\"Defeat the Heretic Inquisitor within {0} sec.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -158,7 +158,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "45",
           "m_mText": "\"Defeat {0} Puppet(s).\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -167,7 +167,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "60",
           "m_mText": "\"Defeat {0} Puppet(s).\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -192,7 +192,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "250000",
           "m_mText": "\"Defeat the Plague Queen within {0} sec.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -201,7 +201,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "200000",
           "m_mText": "\"Defeat the Plague Queen within {0} sec.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -226,7 +226,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "20",
           "m_mText": "\"Capture {0} Crabs.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -235,7 +235,7 @@
           "m_AchieveType": "1",
           "m_GoalNum": "30",
           "m_mText": "\"Capture {0} Crabs.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
         }
       }
     },
@@ -260,7 +260,7 @@
           "m_AchieveType": "2",
           "m_GoalNum": "250000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
-          "m_Reward": "[[50004,5],[30001,3]]"
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
         },
         "3": {
           "m_bError": null,
@@ -269,10 +269,180 @@
           "m_AchieveType": "2",
           "m_GoalNum": "200000",
           "m_mText": "\"Defeat the Nightmare within {0} sec.\"",
-          "m_Reward": "[[1050,2],[800003,3]]"
+          "m_Reward": "[[39002,15],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "9": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "9",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Earn {0} hunting points.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "9",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "20",
+          "m_mText": "\"Earn {0} hunting points.\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "9",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "40",
+          "m_mText": "\"Earn {0} hunting points.\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "10": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "10",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Break {0} Shield(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "10",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "20",
+          "m_mText": "\"Break {0} Shield(s).\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "10",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "30",
+          "m_mText": "\"Break {0} Shield(s).\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "11": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "11",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Defeat {0} Werewolf(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "11",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "20",
+          "m_mText": "\"Defeat {0} Werewolf(s).\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "11",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "30",
+          "m_mText": "\"Defeat {0} Werewolf(s).\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "12": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "12",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "2",
+          "m_mText": "\"Defeat {0} Bloodborn.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "12",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "5",
+          "m_mText": "\"Defeat {0} Bloodborn.\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "12",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Defeat {0} Bloodborn.\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "13": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "13",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "300000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "13",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "600000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "13",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "1200000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
         }
       }
     }
   },
-  "status": "processed_8_items"
+  "status": "processed_13_items"
 }

@@ -44,7 +44,8 @@ function HeroSpineDynamicLoader:CheckFreshPlaceSpineObj(heroSpineLoadObj)
               GameObject.Destroy(tempSpineTrans.gameObject)
               heroSpineLoadObj.spineObj = nil
               heroSpineLoadObj.spineTrans = nil
-              return
+            else
+              GameObject.Destroy(tempSpineTrans.gameObject)
             end
           end
         end

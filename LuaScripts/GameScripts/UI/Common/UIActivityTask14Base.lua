@@ -29,6 +29,8 @@ function UIActivityTask14Base:AfterInit()
   UILuaHelper.SetActive(self.m_btn_finalreward_receive, false)
   self.DefaultShowSpineName = nil
   self.iUpActivityID = nil
+  self.m_curCharacterId = nil
+  self.m_iActivityId = nil
 end
 
 function UIActivityTask14Base:BindItemAndData()
@@ -79,6 +81,19 @@ end
 
 function UIActivityTask14Base:OnActive()
   UIActivityTask14Base.super.OnActive(self)
+  local tParam = self.m_csui.m_param
+  if tParam and tParam.stActivity then
+    self.m_stActivity = nil
+    self.m_stActivity = tParam.stActivity
+    self.DefaultShowSpineName = self.m_stActivity:GetSpineStr()
+    self.m_curCharacterId = self.m_stActivity:GetCharacterId()
+    self.iUpActivityID = self.m_stActivity:GetUpActivityID()
+    self.m_iActivityId = self.m_stActivity:getID()
+  end
+  if not self.m_stActivity then
+    self:CloseForm()
+    return
+  end
   self:LoadShowSpine()
   UILuaHelper.SetActive(self.m_reward_pop, false)
   UILuaHelper.SetActive(self.m_btnClosePop, false)
@@ -177,17 +192,13 @@ function UIActivityTask14Base:OnEventTakeFinalReward(sc)
 end
 
 function UIActivityTask14Base:OnEventActivityReload()
-  self:RefreshUI()
+  if self.m_iActivityId then
+    self.m_stActivity = ActivityManager:GetActivityByID(self.m_iActivityId)
+    self:RefreshUI()
+  end
 end
 
 function UIActivityTask14Base:RefreshUI()
-  local act_list = ActivityManager:GetActivityListByType(MTTD.ActivityType_CommonQuest)
-  for _, act in pairs(act_list) do
-    if act:GetUIType() == GlobalConfig.CommonQuestActType.DayTask_14 and act:GetUpActivityID() == self.iUpActivityID then
-      self.m_stActivity = act
-      break
-    end
-  end
   if self.m_stActivity == nil then
     self:CloseForm()
     return
@@ -198,8 +209,8 @@ function UIActivityTask14Base:RefreshUI()
   self:RefreshFinalReward()
   self:RefreshRemainTime()
   self:refreshTaskLoopScroll()
-  if self.m_txt_name and self.heroId then
-    local cfg = characterInfoCfg:GetValue_ByHeroID(self.heroId)
+  if self.m_txt_name and self.m_curCharacterId then
+    local cfg = characterInfoCfg:GetValue_ByHeroID(self.m_curCharacterId)
     if not cfg:GetError() then
       self.m_txt_name_Text.text = cfg.m_mName
     end
@@ -517,9 +528,9 @@ function UIActivityTask14Base:OnBtngetallClicked()
 end
 
 function UIActivityTask14Base:OnBtnsearchClicked()
-  if self.heroId then
+  if self.m_curCharacterId then
     StackPopup:Push(UIDefines.ID_FORM_HEROCHECK, {
-      heroID = self.heroId
+      heroID = self.m_curCharacterId
     })
   end
 end
@@ -571,7 +582,7 @@ function UIActivityTask14Base:CheckRecycleSpine(isResetParam)
 end
 
 function UIActivityTask14Base:LoadShowSpine()
-  if not self.m_HeroSpineDynamicLoader then
+  if not self.m_HeroSpineDynamicLoader or not self.DefaultShowSpineName then
     return
   end
   self:CheckRecycleSpine()
@@ -598,16 +609,15 @@ end
 function UIActivityTask14Base:GetDownloadResourceExtra(tParam)
   local vPackage = {}
   local vResourceExtra = {}
-  local DefaultShowSpineName = "agatha_base"
-  vResourceExtra[#vResourceExtra + 1] = {
-    sName = DefaultShowSpineName,
-    eType = DownloadManager.ResourceType.UI
-  }
-  DefaultShowSpineName = "albert_base"
-  vResourceExtra[#vResourceExtra + 1] = {
-    sName = DefaultShowSpineName,
-    eType = DownloadManager.ResourceType.UI
-  }
+  if tParam and tParam.stActivity and tParam.stActivity.GetSpineStr then
+    local spineName = tParam.stActivity:GetSpineStr()
+    if not spineName then
+      vResourceExtra[#vResourceExtra + 1] = {
+        sName = spineName,
+        eType = DownloadManager.ResourceType.UI
+      }
+    end
+  end
   return vPackage, vResourceExtra
 end
 
