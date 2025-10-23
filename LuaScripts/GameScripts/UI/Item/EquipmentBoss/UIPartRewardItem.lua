@@ -1,0 +1,130 @@
+local UIItemBase = require("UI/Common/UIItemBase")
+local UIPartRewardItem = class("UIPartRewardItem", UIItemBase)
+
+function UIPartRewardItem:OnInit()
+  self.m_dungeonLevelPhaseCfg = nil
+  local itemWidget = self:createCommonItem(self.m_reward_item)
+  itemWidget:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+    self:OnRewardItemClick(itemID, itemNum, itemCom)
+  end)
+  self.m_itemNameStr = self.m_reward_item.name
+  self.m_reward_item.name = self.m_itemNameStr .. 1
+  self.m_ItemRewardWidgetList = {}
+  self.m_ItemRewardWidgetList[#self.m_ItemRewardWidgetList + 1] = itemWidget
+end
+
+function UIPartRewardItem:OnFreshData()
+  self.m_dungeonLevelPhaseCfg = self.m_itemData.cfg
+  self.m_starTechEffect = self.m_itemData.starTechEffect
+  self:FreshItemUI()
+end
+
+function UIPartRewardItem:FreshItemUI()
+  if not self.m_dungeonLevelPhaseCfg then
+    return
+  end
+  self.m_txt_level_Text.text = self.m_dungeonLevelPhaseCfg.m_mName
+  self:FreshRewardList()
+end
+
+function UIPartRewardItem:FreshRewardList()
+  if not self.m_dungeonLevelPhaseCfg then
+    return
+  end
+  local rewardList = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_ClientMustDrop)
+  local proRewardList = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_ClientProDrop)
+  local privilegeReword = utils.changeCSArrayToLuaTable(self.m_dungeonLevelPhaseCfg.m_MonthlyPrivilegeReward)
+  local rewardTab = {}
+  local customDataTab = {}
+  local starTechEffectTab = {}
+  for i, v in ipairs(proRewardList) do
+    rewardTab[#rewardTab + 1] = {
+      v[1],
+      1
+    }
+    customDataTab[#customDataTab + 1] = {
+      percentage = v[2]
+    }
+  end
+  for i, v in ipairs(rewardList) do
+    customDataTab[#customDataTab + 1] = {percentage = 100}
+  end
+  if table.getn(self.m_starTechEffect) > 0 then
+    for i, v in ipairs(self.m_starTechEffect) do
+      starTechEffectTab[#starTechEffectTab + 1] = {
+        v.iID,
+        v.iNum
+      }
+      customDataTab[#customDataTab + 1] = {
+        percentage = math.floor(v.iWeight * 100),
+        starTechEffect = true
+      }
+    end
+  end
+  table.insertto(rewardTab, rewardList)
+  if 0 < #starTechEffectTab then
+    table.insertto(rewardTab, starTechEffectTab)
+  end
+  for i, v in ipairs(privilegeReword) do
+    customDataTab[#customDataTab + 1] = {
+      monthlyPrivilege = true,
+      bIsGray = not MonthlyCardManager:IsPrivilegeEffect()
+    }
+  end
+  if 0 < #privilegeReword then
+    table.insertto(rewardTab, privilegeReword)
+  end
+  self:FreshRewardItems(rewardTab, customDataTab)
+end
+
+function UIPartRewardItem:FreshRewardItems(rewardList, customDataTab)
+  if not rewardList then
+    return
+  end
+  if not rewardList or #rewardList <= 0 then
+    return
+  end
+  local itemWidgets = self.m_ItemRewardWidgetList
+  local dataLen = #rewardList
+  local parentTrans = self.m_reward_root
+  local childCount = #itemWidgets
+  local totalFreshNum = dataLen < childCount and childCount or dataLen
+  for i = 1, totalFreshNum do
+    if i <= childCount and i <= dataLen then
+      local itemWidget = itemWidgets[i]
+      local itemData = rewardList[i]
+      local processItemData = ResourceUtil:GetProcessRewardData({
+        iID = tonumber(itemData[1]),
+        iNum = tonumber(itemData[2])
+      }, customDataTab[i])
+      itemWidget:SetItemInfo(processItemData)
+      itemWidget:SetActive(true)
+    elseif i > childCount and i <= dataLen then
+      local itemObj = GameObject.Instantiate(self.m_reward_item, parentTrans.transform).gameObject
+      itemObj.name = self.m_itemNameStr .. i
+      local itemWidget = self:createCommonItem(itemObj)
+      local itemData = rewardList[i]
+      local processItemData = ResourceUtil:GetProcessRewardData({
+        iID = tonumber(itemData[1]),
+        iNum = tonumber(itemData[2])
+      }, customDataTab[i])
+      itemWidget:SetItemInfo(processItemData)
+      itemWidget:SetItemIconClickCB(function(itemID, itemNum, itemCom)
+        self:OnRewardItemClick(itemID, itemNum, itemCom)
+      end)
+      itemWidgets[#itemWidgets + 1] = itemWidget
+      itemWidget:SetActive(true)
+    elseif i <= childCount and i > dataLen then
+      itemWidgets[i]:SetActive(false)
+    end
+  end
+end
+
+function UIPartRewardItem:OnRewardItemClick(itemID, itemNum, itemCom)
+  if not itemID then
+    return
+  end
+  utils.openItemDetailPop({iID = itemID, iNum = itemNum})
+end
+
+return UIPartRewardItem

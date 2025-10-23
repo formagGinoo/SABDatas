@@ -1,5 +1,6 @@
 {
   "className": "CData_GuideSubStep",
+  "timestamp": "2025-10-23T19:25:19.097Z",
   "data": {
     "100001": {
       "m_bError": null,
@@ -15423,10 +15424,10 @@
       "m_TypeParam": "[]",
       "m_TypeExeraParam": "[]",
       "m_WndName": "\"Form_Hall\"",
-      "m_TargetPath": "\"content_node/pnl_left_down/m_btn_left_down03\"",
+      "m_TargetPath": "\"content_node/pnl_left_down/m_btn_left_down05\"",
       "m_TargetOffset": "[100,-40]",
       "m_TargetRotationZ": "110",
-      "m_Tips": "\"Tutorframe_entercastle\"",
+      "m_Tips": "\"Tutorframe_enterinherit\"",
       "m_TipsPortrait": "\"Atlas_Guide/TutorCha01\"",
       "m_TipsOffset": "[525,522,118,-50,700,0,0,0,0,0]",
       "m_FilterTips": "\"\"",

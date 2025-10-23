@@ -1,5 +1,6 @@
 {
   "className": "CData_ActivityMainInfo",
+  "timestamp": "2025-10-23T19:24:50.951Z",
   "data": {
     "1010": {
       "m_bError": null,
@@ -245,7 +246,42 @@
       "m_ExploreScene": "\"\"",
       "m_ExploreSceneChar": "[]",
       "m_SigninSpine": "\"fanu_base\""
+    },
+    "1120": {
+      "m_bError": null,
+      "m_ActivityID": "1120",
+      "m_mActivityTitle": "\"On Wind and Wing\"",
+      "m_mActivityTitleExtra": "\"\"",
+      "m_ActivityType": "1",
+      "m_FightType": "5",
+      "m_ShopJumpID": "2614",
+      "m_ShopItem": "500123",
+      "m_PassItem": "500121",
+      "m_FreePassItem": "500122",
+      "m_GachaJumpID": "[[1012,25016],[1013,25017]]",
+      "m_TipsID": "1269",
+      "m_SubFunctionID": "[1121,1122,1123,1124,1125]",
+      "m_BonusGroup": "1120",
+      "m_PowerGroup": "1120",
+      "m_ActivityBanner": "\"Atlas_ActivityBanner/1120\"",
+      "m_Wwise": null,
+      "m_ActivityAnimation": "\"\"",
+      "m_ActivityAnimationReplay": null,
+      "m_mActivityDes": "\"Clear [The Black Mist] and complete [Cosmic Singularity] to obtain the event item \"Rough Silver Coin,\" which can be redeemed at [Clouded Outpost] for abundant rewards.\"",
+      "m_OpenTime": "\"2025-07-05 04:00:00\"",
+      "m_ChangeTime": "\"\"",
+      "m_EndTime": "\"2025-07-17 03:59:59\"",
+      "m_CloseTime": "\"2025-07-17 03:59:59\"",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[[1103010]]",
+      "m_Prefab": "\"Form_Activity112Main\"",
+      "m_BattleLoadingPrefab": "\"Form_Activity112_Loading\"",
+      "m_UpCharacter": "[20730,20720]",
+      "m_BCPrefab": "\"ui_panel_activity_bg112\"",
+      "m_ExploreScene": "\"\"",
+      "m_ExploreSceneChar": "[]",
+      "m_SigninSpine": "\"Typhoeus_Base\""
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_8_items"
 }

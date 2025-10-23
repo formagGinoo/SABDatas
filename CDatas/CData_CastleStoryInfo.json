@@ -1,5 +1,6 @@
 {
   "className": "CData_CastleStoryInfo",
+  "timestamp": "2025-10-23T19:25:09.483Z",
   "data": {
     "100102": {
       "m_bError": null,
@@ -66,7 +67,7 @@
       "m_StoryID": "100401",
       "m_PreStoryID": "[100202]",
       "m_mTitle": "\"Elder Council III\"",
-      "m_PlaceID": "4",
+      "m_PlaceID": "11",
       "m_ShowCharacter": "20080",
       "m_Character": "[20140,20490,20080]",
       "m_Rewards": "[[800003,1]]",
@@ -78,7 +79,7 @@
       "m_StoryID": "100402",
       "m_PreStoryID": "[]",
       "m_mTitle": "\"Mario and Juliet\"",
-      "m_PlaceID": "4",
+      "m_PlaceID": "11",
       "m_ShowCharacter": "20620",
       "m_Character": "[20630,20620,20530,20700]",
       "m_Rewards": "[[800003,1]]",
@@ -189,6 +190,18 @@
       "m_PlaceID": "2002",
       "m_ShowCharacter": "20340",
       "m_Character": "[20340,20100,20210,20170]",
+      "m_Rewards": "[[800003,1]]",
+      "m_UnlockMainline": null,
+      "m_IsCutinLine": null
+    },
+    "200203": {
+      "m_bError": null,
+      "m_StoryID": "200203",
+      "m_PreStoryID": "[]",
+      "m_mTitle": "\"Little Stella Looking for Her Mother\"",
+      "m_PlaceID": "2002",
+      "m_ShowCharacter": "20730",
+      "m_Character": "[20730,20580]",
       "m_Rewards": "[[800003,1]]",
       "m_UnlockMainline": null,
       "m_IsCutinLine": null
@@ -374,5 +387,5 @@
       "m_IsCutinLine": null
     }
   },
-  "status": "processed_31_items"
+  "status": "processed_32_items"
 }

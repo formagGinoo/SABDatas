@@ -1,0 +1,21 @@
+{
+  "className": "CData_PartDungeonDesc",
+  "timestamp": "2025-10-23T19:25:26.671Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_ID": "1",
+      "m_mName": "\"Feint\"",
+      "m_mDesc": "\"After taking a certain amount of DMG, Little Bella No. 13 immediately enters a Charging State. This state can be interrupted by dealing strong DMG to her within a short period. While Charging, Little Bella No. 13 takes reduced Non-CRIT DMG. Deploying Vassals who can deal steady CRIT DMG is recommended.\"",
+      "m_BuffParam": "[]"
+    },
+    "2": {
+      "m_bError": null,
+      "m_ID": "2",
+      "m_mName": "\"Bulwark\"",
+      "m_mDesc": "\"Little Bella No. 13 gained special protection: Non-CRIT DMG Taken -{0}, CRIT RES Rate +{1}, and CRIT DMG Down +{2}.\"",
+      "m_BuffParam": "[41033140,41033141,41033142]"
+    }
+  },
+  "status": "processed_2_items"
+}

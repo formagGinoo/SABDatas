@@ -1,20 +1,35 @@
 {
   "className": "CData_PVPArenaBuff",
+  "timestamp": "2025-10-23T19:25:36.893Z",
   "data": {
     "11": {
       "m_bError": null,
       "m_ID": "11",
       "m_ArenaType": "1",
+      "m_BuffID": "1604",
+      "m_ActiveTime": null
+    },
+    "12": {
+      "m_bError": null,
+      "m_ID": "12",
+      "m_ArenaType": "1",
       "m_BuffID": "1720",
-      "m_ActiveTime": "90"
+      "m_ActiveTime": "60"
     },
     "21": {
       "m_bError": null,
       "m_ID": "21",
       "m_ArenaType": "2",
+      "m_BuffID": "1604",
+      "m_ActiveTime": null
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_ArenaType": "2",
       "m_BuffID": "1720",
-      "m_ActiveTime": "90"
+      "m_ActiveTime": "60"
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_4_items"
 }

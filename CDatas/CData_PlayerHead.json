@@ -1,5 +1,6 @@
 {
   "className": "CData_PlayerHead",
+  "timestamp": "2025-10-23T19:25:26.674Z",
   "data": {
     "1300001": {
       "m_bError": null,
@@ -1042,7 +1043,7 @@
       "m_ItemIcon": "\"Atlas_Role/Fanu_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Fanny avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Fanu_Base002\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1300059": {
@@ -1060,6 +1061,42 @@
       "m_ItemIcon": "\"Atlas_Role/Evna_Base002\"",
       "m_mHeadDesc": "\"Obtain to unlock Genevieve avatar.\"",
       "m_HeadPic": "\"Atlas_Role/Evna_Base002\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1300060": {
+      "m_bError": null,
+      "m_HeadID": "1300060",
+      "m_mHeadName": "\"Letitia\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20730",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Letitia Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Letitia.\"",
+      "m_ItemIcon": "\"Atlas_Role/Typhoeus_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Letitia avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Typhoeus_Base002\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1300061": {
+      "m_bError": null,
+      "m_HeadID": "1300061",
+      "m_mHeadName": "\"Seraphina\"",
+      "m_Tag": "1",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20720",
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Seraphina Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Seraphina.\"",
+      "m_ItemIcon": "\"Atlas_Role/Selenia_Base002\"",
+      "m_mHeadDesc": "\"Obtain to unlock Seraphina avatar.\"",
+      "m_HeadPic": "\"Atlas_Role/Selenia_Base002\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -2104,7 +2141,7 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310058\"",
       "m_mHeadDesc": "\"Obtain to unlock Fanny - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310058\"",
-      "m_HideType": "1",
+      "m_HideType": null,
       "m_CensorHideType": "1"
     },
     "1310059": {
@@ -2122,6 +2159,42 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310059\"",
       "m_mHeadDesc": "\"Obtain to unlock Genevieve - Spirit Siphon avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310059\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1310060": {
+      "m_bError": null,
+      "m_HeadID": "1310060",
+      "m_mHeadName": "\"Letitia - Spirit Siphon\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20730",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Letitia - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocked after Letitia reaches Spirit Siphon - Tier 3\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310060\"",
+      "m_mHeadDesc": "\"Obtain to unlock Letitia - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310060\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1310061": {
+      "m_bError": null,
+      "m_HeadID": "1310061",
+      "m_mHeadName": "\"Seraphina - Spirit Siphon\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": "20720",
+      "m_LimitBreakLevel": "3",
+      "m_FashionID": null,
+      "m_mItemName": "\"Seraphina - Spirit Siphon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocked after Seraphina reaches Spirit Siphon - Tier 3\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1310061\"",
+      "m_mHeadDesc": "\"Obtain to unlock Seraphina - Spirit Siphon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1310061\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -2320,6 +2393,24 @@
       "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1329003\"",
       "m_mHeadDesc": "\"Obtain to unlock Dawn's Rosy Sky avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1329003\"",
+      "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1329004": {
+      "m_bError": null,
+      "m_HeadID": "1329004",
+      "m_mHeadName": "\"Starlit Maiden\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": "6058001",
+      "m_mItemName": "\"Starlit Maiden Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Unlocks after obtaining Outfit - Starlit Maiden.\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1329004\"",
+      "m_mHeadDesc": "\"Obtain to unlock Starlit Maiden avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1329004\"",
       "m_HideType": "1",
       "m_CensorHideType": "1"
     },
@@ -2357,6 +2448,42 @@
       "m_mHeadDesc": "\"Obtain to unlock Warden's File avatar.\"",
       "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330002\"",
       "m_HideType": null,
+      "m_CensorHideType": "1"
+    },
+    "1330003": {
+      "m_bError": null,
+      "m_HeadID": "1330003",
+      "m_mHeadName": "\"Breezy Afternoon\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Breezy Afternoon Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Journey From Beyond Progress Reward\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330003\"",
+      "m_mHeadDesc": "\"Obtain to unlock Breezy Afternoon avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330003\"",
+      "m_HideType": "1",
+      "m_CensorHideType": "1"
+    },
+    "1330004": {
+      "m_bError": null,
+      "m_HeadID": "1330004",
+      "m_mHeadName": "\"Soaring Spirit\"",
+      "m_Tag": "3",
+      "m_DefaultType": null,
+      "m_UnlockHeroID": null,
+      "m_LimitBreakLevel": null,
+      "m_FashionID": null,
+      "m_mItemName": "\"Soaring Spirit Avatar\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"Night of the Hunt Rank Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerhead/playerhead_1330004\"",
+      "m_mHeadDesc": "\"Obtain to unlock Soaring Spirit avatar.\"",
+      "m_HeadPic": "\"Atlas_Playerhead/playerhead_1330004\"",
+      "m_HideType": "1",
       "m_CensorHideType": "1"
     },
     "1390001": {
@@ -2468,5 +2595,5 @@
       "m_CensorHideType": null
     }
   },
-  "status": "processed_137_items"
+  "status": "processed_144_items"
 }

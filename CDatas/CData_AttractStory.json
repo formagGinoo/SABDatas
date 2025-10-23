@@ -1,5 +1,6 @@
 {
   "className": "CData_AttractStory",
+  "timestamp": "2025-10-23T19:25:02.940Z",
   "data": {
     "20010": {
       "_type": "nested_dictionary",
@@ -202,7 +203,7 @@
           "m_StoryId": "102",
           "m_PreStoryId": "101",
           "m_Type": "1",
-          "m_mHeadline": "\"Role_Name_Piera\"",
+          "m_mHeadline": "\"Reserved String\"",
           "m_mSectionTitle": "\"Reserved String\"",
           "m_mText": "\"Reserved String\"",
           "m_TimelineType": null,
@@ -6727,7 +6728,7 @@
           "m_StoryId": "301",
           "m_PreStoryId": null,
           "m_Type": "3",
-          "m_mHeadline": "\"Reservee S_rin0\"",
+          "m_mHeadline": "\"Reserved String\"",
           "m_mSectionTitle": "\"Reserved String\"",
           "m_mText": "\"Reserved String\"",
           "m_TimelineType": "1",

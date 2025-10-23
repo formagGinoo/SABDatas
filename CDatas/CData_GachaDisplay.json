@@ -1,5 +1,6 @@
 {
   "className": "CData_GachaDisplay",
+  "timestamp": "2025-10-23T19:25:18.807Z",
   "data": {
     "1001": {
       "m_bError": null,
@@ -168,7 +169,43 @@
       "m_DisplayUpContent": "[20680]",
       "m_PreviewCharacter": "[20680]",
       "m_PoolID": "12001"
+    },
+    "1015": {
+      "m_bError": null,
+      "m_DisplayID": "1015",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20730]",
+      "m_PreviewCharacter": "[20730]",
+      "m_PoolID": "13001"
+    },
+    "1016": {
+      "m_bError": null,
+      "m_DisplayID": "1016",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[20720]",
+      "m_PreviewCharacter": "[20720]",
+      "m_PoolID": "14001"
+    },
+    "2001": {
+      "m_bError": null,
+      "m_DisplayID": "2001",
+      "m_SSRTotalWeight": "400",
+      "m_SRTotalWeight": "4300",
+      "m_RTotalWeight": "5300",
+      "m_UpSSRWeight": "5000",
+      "m_UpSRWeight": null,
+      "m_DisplayUpContent": "[]",
+      "m_PreviewCharacter": "[]",
+      "m_PoolID": "900001"
     }
   },
-  "status": "processed_14_items"
+  "status": "processed_17_items"
 }

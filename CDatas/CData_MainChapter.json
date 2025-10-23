@@ -1,5 +1,6 @@
 {
   "className": "CData_MainChapter",
+  "timestamp": "2025-10-23T19:25:20.444Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -277,6 +278,20 @@
       "m_UnlockConditionData": "[19]",
       "m_Order": "20",
       "m_Hide": "1",
+      "m_ReturnType": null,
+      "m_ChapterTaskID": "[]",
+      "m_IsClose": null
+    },
+    "21": {
+      "m_bError": null,
+      "m_ChapterID": "21",
+      "m_ChapterTitle": "\"20\"",
+      "m_ChapterType": "1",
+      "m_mChapterName": "\"Beasts and the Lone Leopard\"",
+      "m_UnlockConditionType": "[5]",
+      "m_UnlockConditionData": "[20]",
+      "m_Order": "21",
+      "m_Hide": null,
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
       "m_IsClose": null
@@ -560,7 +575,21 @@
       "m_ReturnType": null,
       "m_ChapterTaskID": "[]",
       "m_IsClose": null
+    },
+    "520": {
+      "m_bError": null,
+      "m_ChapterID": "520",
+      "m_ChapterTitle": "\"20\"",
+      "m_ChapterType": "2",
+      "m_mChapterName": "\"Beasts and the Lone Leopard\"",
+      "m_UnlockConditionType": "[5]",
+      "m_UnlockConditionData": "[519]",
+      "m_Order": "21",
+      "m_Hide": null,
+      "m_ReturnType": null,
+      "m_ChapterTaskID": "[]",
+      "m_IsClose": null
     }
   },
-  "status": "processed_40_items"
+  "status": "processed_42_items"
 }

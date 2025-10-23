@@ -1,5 +1,6 @@
 {
   "className": "CData_HuntingRaidAchieve",
+  "timestamp": "2025-10-23T19:25:19.569Z",
   "data": {
     "1": {
       "_type": "nested_dictionary",
@@ -442,7 +443,177 @@
           "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
         }
       }
+    },
+    "14": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "14",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "5000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "14",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "14",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "15000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "15": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "15",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "2000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "15",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "5000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "15",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "8000000",
+          "m_mText": "\"Deal {0} DMG to enemies.\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "16": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "16",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "5",
+          "m_mText": "\"Defeat {0} Construct(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "16",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "10",
+          "m_mText": "\"Defeat {0} Construct(s).\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "16",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "15",
+          "m_mText": "\"Defeat {0} Construct(s).\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "17": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "17",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "1",
+          "m_mText": "\"Defeat {0} Pale Bloodwolf(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "17",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "2",
+          "m_mText": "\"Defeat {0} Pale Bloodwolf(s).\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "17",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "3",
+          "m_mText": "\"Defeat {0} Pale Bloodwolf(s).\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
+    },
+    "18": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_BOSSID": "18",
+          "m_Sequence": "1",
+          "m_AchieveType": "1",
+          "m_GoalNum": "20",
+          "m_mText": "\"Earn {0} Hunting Point(s).\"",
+          "m_Reward": "[[101,150],[1204,50]]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_BOSSID": "18",
+          "m_Sequence": "2",
+          "m_AchieveType": "1",
+          "m_GoalNum": "40",
+          "m_mText": "\"Earn {0} Hunting Point(s).\"",
+          "m_Reward": "[[39002,5],[50004,5],[30001,3]]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_BOSSID": "18",
+          "m_Sequence": "3",
+          "m_AchieveType": "1",
+          "m_GoalNum": "60",
+          "m_mText": "\"Earn {0} Hunting Point(s).\"",
+          "m_Reward": "[[39002,10],[1050,2],[800003,3]]"
+        }
+      }
     }
   },
-  "status": "processed_13_items"
+  "status": "processed_18_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_SkillTip",
+  "timestamp": "2025-10-23T19:25:41.496Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -133,6 +134,12 @@
       "m_mName": "\"Overdrive\"",
       "m_mDesc": "\"Ultimates can be cast when current Bloodsoul exceeds 50% of their cost, even if insufficient. Overdrive is triggered when casting an Ultimate that creates a Bloodsoul deficit. During Overdrive, only Ultimates with 0 Bloodsoul cost can be used, but the Bloodsoul recovery rate increases by 20%. Overdrive ends when Bloodsoul restores to 0.\""
     },
+    "20730": {
+      "m_bError": null,
+      "m_ID": "20730",
+      "m_mName": "\"Windchaser\"",
+      "m_mDesc": "\"Triggers a Synergy effect when deployed with a Windchaser Vassal.\""
+    },
     "30130": {
       "m_bError": null,
       "m_ID": "30130",
@@ -140,5 +147,5 @@
       "m_mDesc": "\"A summon that performs Basic ATKs.\""
     }
   },
-  "status": "processed_23_items"
+  "status": "processed_24_items"
 }

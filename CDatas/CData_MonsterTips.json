@@ -1,5 +1,6 @@
 {
   "className": "CData_MonsterTips",
+  "timestamp": "2025-10-23T19:25:26.355Z",
   "data": {
     "10238": {
       "m_bError": null,
@@ -820,12 +821,48 @@
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
+    "31180": {
+      "m_bError": null,
+      "m_MonsterID": "31180",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A warrior with antlers, wielding a shield, who protects other allies.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Deer_Base001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31190": {
+      "m_bError": null,
+      "m_MonsterID": "31190",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"An assassin with antlers, wielding an ice blade, who poses a threat to the backline.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Deer_Assassin001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
     "31200": {
       "m_bError": null,
       "m_MonsterID": "31200",
       "m_MonsterType": "1",
       "m_mIntroduce": "\"A creature that appeared following the island’s crystallization. Land CRIT Hits to shatter its crystal, reducing its DEF.\"",
       "m_MonsterIcon": "\"Atlas_Monster/M_Swordsman_Final_Crystal001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31210": {
+      "m_bError": null,
+      "m_MonsterID": "31210",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A wizard with antlers, wielding a staff, who can deal AoE DMG to enemies. Recommended to dodge or prioritize eliminating them.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Deer_Mage001\"",
+      "m_SkillCount": "[]",
+      "m_Video1": "[]"
+    },
+    "31220": {
+      "m_bError": null,
+      "m_MonsterID": "31220",
+      "m_MonsterType": "1",
+      "m_mIntroduce": "\"A sorcerer with antlers, holding ice flowers, who continuously heals other units. Recommended to interrupt.\"",
+      "m_MonsterIcon": "\"Atlas_Monster/M_Deer_Healer001\"",
       "m_SkillCount": "[]",
       "m_Video1": "[]"
     },
@@ -1442,5 +1479,5 @@
       "m_Video1": "[]"
     }
   },
-  "status": "processed_160_items"
+  "status": "processed_164_items"
 }

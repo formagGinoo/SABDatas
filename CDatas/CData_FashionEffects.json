@@ -1,5 +1,6 @@
 {
   "className": "CData_FashionEffects",
+  "timestamp": "2025-10-23T19:25:18.606Z",
   "data": {
     "6007001": {
       "_type": "nested_dictionary",
@@ -114,16 +115,16 @@
           "m_InitFX": "\"fx_c_cecia_base_maxskill01_smoke01\"",
           "m_FashionFX": "\"fx_c_cecia_base_maxskill01_smoke01_a1_01\""
         },
-        "\"Perhaps... this is what I once lon\"": {
+        "\"fx_c_cecia_base_maxskill01_smoke02\"": {
           "m_bError": null,
           "m_FashionID": "6007001",
-          "m_InitFX": "\"Perhaps... this is what I once lon\"",
+          "m_InitFX": "\"fx_c_cecia_base_maxskill01_smoke02\"",
           "m_FashionFX": "\"fx_c_cecia_base_maxskill01_smoke02_a1_01\""
         },
-        "\"Atlas_Role/Limine_Base001ttack_cast01\"": {
+        "\"fx_c_cecia_base_skill01_attack_cast01\"": {
           "m_bError": null,
           "m_FashionID": "6007001",
-          "m_InitFX": "\"Atlas_Role/Limine_Base001ttack_cast01\"",
+          "m_InitFX": "\"fx_c_cecia_base_skill01_attack_cast01\"",
           "m_FashionFX": "\"fx_c_cecia_base_skill01_attack_cast01_a1_01\""
         },
         "\"fx_c_cecia_base_skill01_attack_cast02\"": {

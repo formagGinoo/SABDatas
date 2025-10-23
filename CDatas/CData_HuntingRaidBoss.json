@@ -1,5 +1,6 @@
 {
   "className": "CData_HuntingRaidBoss",
+  "timestamp": "2025-10-23T19:25:19.589Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -195,7 +196,82 @@
       "m_AchieveType": "1",
       "m_BuffPool": "[4901000,4902000,4903000,4908000,4920000,4930000]",
       "m_Use64Rank": "1"
+    },
+    "14": {
+      "m_bError": null,
+      "m_BOSSID": "14",
+      "m_mName": "\"Mind Games\"",
+      "m_mDesc": "\"<style=Highlight>Deal as much DMG as possible to Lord Ezareth within the time limit. No score will be recorded if the entire team dies.</style>\nLord Ezareth deals DMG to a single allied Vassal based on <style=Highlight>a percentage of their Max HP</style> and summons soldiers to interrupt the team.\nTop Picks: Letitia, Seraphina, Albrecht, Ressa\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20600",
+      "m_mRequire": "\"To reach a desired result, methodology is the key.\"",
+      "m_LevelID": "2102140",
+      "m_mTitle1": "\"Highest DMG\"",
+      "m_mTitle2": "\"DMG Dealt\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4911000,4928000,4932000]",
+      "m_Use64Rank": "1"
+    },
+    "15": {
+      "m_bError": null,
+      "m_BOSSID": "15",
+      "m_mName": "\"Cobalt Depths\"",
+      "m_mDesc": "\"<style=Highlight>Deal as much DMG as possible to the Insatiable Newt within the time limit. No score will be recorded if the entire team dies.</style>\nThe Insatiable Newt summons Newt Hatchlings, which will self-destruct to attack your team. Using a <style=Highlight>lineup that excels at summoning</style> can slow them down.\nTop Picks: Transcendent Noah, Timeless Aiona, Genevieve, Bella\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20640",
+      "m_mRequire": "\"Air and hope have no place here.\"",
+      "m_LevelID": "2102150",
+      "m_mTitle1": "\"Highest DMG\"",
+      "m_mTitle2": "\"DMG Dealt\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4907000,4909000,4933000]",
+      "m_Use64Rank": "1"
+    },
+    "16": {
+      "m_bError": null,
+      "m_BOSSID": "16",
+      "m_mName": "\"Steel Lair\"",
+      "m_mDesc": "\"<style=Highlight>Defeat as many mechanical constructs as possible.</style>\nThe Pilot Bee will lead a construct swarm. Vassals that can deal high single-target DMG are recommended. Use the <style=Highlight>Unstable Force</style> Seal to quickly clear out the regular constructs.\nTop Picks: Letitia, Transcendent Hati, Agnes, Darcias\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20720",
+      "m_mRequire": "\"This sky must be cleansed.\"",
+      "m_LevelID": "2102160",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4911000,4931000,4934000]",
+      "m_Use64Rank": null
+    },
+    "17": {
+      "m_bError": null,
+      "m_BOSSID": "17",
+      "m_mName": "\"Silver Legacy\"",
+      "m_mDesc": "\"<style=Highlight>Defeat as many Pale Bloodwolves as possible.</style>\nWhen a Pale Bloodwolf appears, it summons multiple Red Wolves. <style=Highlight>Defeating the Pale Bloodwolf also takes out all Red Wolves</style>.\n<style=Highlight>Use the Illustrious Moon Seal in with \"Synergy: Windchaser\" Vassals to significantly boost team abilities.</style>\nTop Picks: Letitia, Seraphina, Van Helsing, Ressa\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20380",
+      "m_mRequire": "\"'I will deal with them before the full moon rises.'\"",
+      "m_LevelID": "2102170",
+      "m_mTitle1": "\"Most Hunts\"",
+      "m_mTitle2": "\"Total Hunts\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4915000,4918000,4935000]",
+      "m_Use64Rank": null
+    },
+    "18": {
+      "m_bError": null,
+      "m_BOSSID": "18",
+      "m_mName": "\"Sand Storm\"",
+      "m_mDesc": "\"<style=Highlight>Earn 1 Hunting Point for each enemy unit defeated. Aim to achieve the highest Hunting Points possible.</style>\nUse the <style=Highlight>Thick Skin</style> Seal with <style=Highlight>Vassals who excel in CRIT Hits</style> to earn more Hunting Points.\nTop Picks: Letitia, Seraphina, Van Helsing, Thibault\"",
+      "m_Background": "\"\"",
+      "m_HeroID": "20730",
+      "m_mRequire": "\"The shifting sands were never meant to claim the green...\"",
+      "m_LevelID": "2102180",
+      "m_mTitle1": "\"Highest Hunting Points\"",
+      "m_mTitle2": "\"Current Hunting Points\"",
+      "m_AchieveType": "1",
+      "m_BuffPool": "[4901000,4902000,4903000,4920000,4931000,4936000]",
+      "m_Use64Rank": null
     }
   },
-  "status": "processed_13_items"
+  "status": "processed_18_items"
 }

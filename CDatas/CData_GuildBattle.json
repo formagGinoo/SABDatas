@@ -1,5 +1,6 @@
 {
   "className": "CData_GuildBattle",
+  "timestamp": "2025-10-23T19:25:19.492Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -20,7 +21,12 @@
       "m_bError": null,
       "m_ID": "103",
       "m_BossID": "[16,17,18,19,20]"
+    },
+    "104": {
+      "m_bError": null,
+      "m_ID": "104",
+      "m_BossID": "[21,22,23,24,25]"
     }
   },
-  "status": "processed_4_items"
+  "status": "processed_5_items"
 }

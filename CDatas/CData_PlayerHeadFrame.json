@@ -1,5 +1,6 @@
 {
   "className": "CData_PlayerHeadFrame",
+  "timestamp": "2025-10-23T19:25:26.728Z",
   "data": {
     "1400001": {
       "m_bError": null,
@@ -844,6 +845,24 @@
       "m_mHeadFrameDesc": "\"Unlocks the \"Cage of Thorns\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1420008\"",
       "m_HeadFrameEft": "\"\"",
+      "m_HideType": null,
+      "m_QucikChannelCode": null
+    },
+    "1420009": {
+      "m_bError": null,
+      "m_HeadFrameID": "1420009",
+      "m_mHeadName": "\"Bluffs and Gales\"",
+      "m_Tag": "2",
+      "m_DefaultType": null,
+      "m_TermType": null,
+      "m_EffectTime": null,
+      "m_mItemName": "\"Frame: Bluffs and Gales\"",
+      "m_ItemRarity": "3",
+      "m_mGetwayDes": "\"On Wind and Wing Rewards\"",
+      "m_ItemIcon": "\"Atlas_Playerheadframe/1420009\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Bluffs and Gales\" profile frame. Can be changed in Profile Settings.\"",
+      "m_HeadFramePic": "\"Atlas_Playerheadframe/1420009\"",
+      "m_HeadFrameEft": "\"\"",
       "m_HideType": "1",
       "m_QucikChannelCode": null
     },
@@ -1183,12 +1202,12 @@
       "m_ItemRarity": "3",
       "m_mGetwayDes": "\"Participate in Art Contests to obtain.\"",
       "m_ItemIcon": "\"Atlas_Playerheadframe/1430017\"",
-      "m_mHeadFrameDesc": "\"Unlocks the \"Contest Winner's\" avatar frame. Can be changed in Profile.\"",
+      "m_mHeadFrameDesc": "\"Unlocks the \"Contest Winner\" avatar frame. Can be changed in Profile.\"",
       "m_HeadFramePic": "\"Atlas_Playerheadframe/1430017\"",
       "m_HeadFrameEft": "\"\"",
       "m_HideType": null,
       "m_QucikChannelCode": null
     }
   },
-  "status": "processed_66_items"
+  "status": "processed_67_items"
 }

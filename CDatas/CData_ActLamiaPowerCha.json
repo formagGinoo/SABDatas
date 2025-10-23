@@ -1,5 +1,6 @@
 {
   "className": "CData_ActLamiaPowerCha",
+  "timestamp": "2025-10-23T19:24:51.145Z",
   "data": {
     "1010": {
       "_type": "nested_dictionary",
@@ -159,7 +160,34 @@
           "m_SkillValue": "[\"30%\",\"30%\"]"
         }
       }
+    },
+    "1120": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_ActivityID": "1120",
+          "m_UID": "1",
+          "m_Sort": "1",
+          "m_Character": "20730",
+          "m_SkillBuffID": "[1108,1117]",
+          "m_mBuffDes": "\"DMG Dealt +{0}, All DMG Taken -{1}\"",
+          "m_SkillValue": "[\"30%\",\"30%\"]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_ActivityID": "1120",
+          "m_UID": "2",
+          "m_Sort": "2",
+          "m_Character": "20720",
+          "m_SkillBuffID": "[1108,1117]",
+          "m_mBuffDes": "\"DMG Dealt +{0}, All DMG Taken -{1}\"",
+          "m_SkillValue": "[\"30%\",\"30%\"]"
+        }
+      }
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_8_items"
 }

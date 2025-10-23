@@ -1,5 +1,6 @@
 {
   "className": "CData_ActLostStory",
+  "timestamp": "2025-10-23T19:24:51.151Z",
   "data": {
     "106001": {
       "m_bError": null,
@@ -132,7 +133,84 @@
       "m_mText": "\"Several withered Wolfsbane petals and a diary written in elegant script reveal the identity of its owner.\n\nThe entry reads: I have lived for hundreds of years and witnessed far too many joys and sorrows. The light that once burned in my heart from love, victory, and peace has gradually dimmed with the passage of time. Whenever this happens, I think of you—knowing that you exist somewhere in the future, living and breathing—and I find the strength to endure it all. Your existence means everything to me.\"",
       "m_mFootnote": "\"Cartographer's Journal 12\"",
       "m_StoryPic": "\"Atlas_Activity106/activity106level_book_img12\""
+    },
+    "112002": {
+      "m_bError": null,
+      "m_StoryID": "112002",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112102",
+      "m_Type": "1",
+      "m_mTitle": "\"The Elegy Of War\"",
+      "m_mText": "\"The tale unfolds in the distant future—\nA war without end, where children became soldiers, raised within the fire only to be devoured by smoke and steel.\nAmidst soldiers of the nameless, one silver-haired warrior carved legend after legend.\nYet, in the warrior's final trial, the last adversary was once a companion, united by the same fight.\"",
+      "m_mFootnote": "\"Windwing Fable I\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_01\""
+    },
+    "112005": {
+      "m_bError": null,
+      "m_StoryID": "112005",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112105",
+      "m_Type": "1",
+      "m_mTitle": "\"Hope In Vain\"",
+      "m_mText": "\"The war has ended, yet the undefeated hero is condemned to chains.\nWithin a prison carved from stone and despair, the warrior awaits judgement.\nYet, borne on the evening wind, comes but an alchemist with false smiles and hollow hope.\n'Poor soldier, as the land reeks of blood, why not rise on the wind, and pursue thy unfulfilled dreams?'\"",
+      "m_mFootnote": "\"Windwing Fable II\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_02\""
+    },
+    "112006": {
+      "m_bError": null,
+      "m_StoryID": "112006",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112106",
+      "m_Type": "1",
+      "m_mTitle": "\"The Awakening Dread\"",
+      "m_mText": "\"Wings lead the silver-haired warrior astray among the heavens, while in the twilight, the black-robed witch quietly awakens.\nBeasts flee, trees wither, and the breath of death spreads through the forest.\nThe great disaster has already arrived, yet the hero was nowhere to be found.\"",
+      "m_mFootnote": "\"Windwing Fable III\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_03\""
+    },
+    "112007": {
+      "m_bError": null,
+      "m_StoryID": "112007",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112107",
+      "m_Type": "1",
+      "m_mTitle": "\"Weeping In The Shadows\"",
+      "m_mText": "\"In the woodland untouched by creeping vapors, the white-robed witch hides herself.\n'Oh, our witch, we need you,' cry the beasts from across the forest.\nThe world is ending—where are you?' the spirits also whisper through the breeze.\nThe white-robed witch hears them, yet she cannot stop weeping.\nShe murmurs, 'Forgive me—I cannot triumph over myself.'\"",
+      "m_mFootnote": "\"Windwing Fable IV\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_04\""
+    },
+    "112008": {
+      "m_bError": null,
+      "m_StoryID": "112008",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112108",
+      "m_Type": "1",
+      "m_mTitle": "\"A Horrific Lie\"",
+      "m_mText": "\"Humans do not see the white-robed witch; they merely fight among themselves, hidden within their cities of stone.\nSoon, their greed and malice draw the black-robed witch to them.\nThe black-robed witch rejoices, lifting their stone city to the edge of the azure sky, that they might behold the greatest power in this world.\nYet the foolish humans do not know that disaster will devour their stone city first, and then undo the world itself.\"",
+      "m_mFootnote": "\"Windwing Fable V\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_05\""
+    },
+    "112010": {
+      "m_bError": null,
+      "m_StoryID": "112010",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112110",
+      "m_Type": "1",
+      "m_mTitle": "\"The Great Alliance\"",
+      "m_mText": "\"Messages in the wind catch the silver-haired warrior's attention.\nThe reckless warrior plunges into the forest where the white-robed witch hides, and the two become close friends.\n'Please, warrior, face my other self with your valor.'\n'Kind witch, please guide my wings to their true path.'\"",
+      "m_mFootnote": "\"Windwing Fable VI\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_06\""
+    },
+    "112011": {
+      "m_bError": null,
+      "m_StoryID": "112011",
+      "m_ActivityID": "1120",
+      "m_LevelID": "112111",
+      "m_Type": "1",
+      "m_mTitle": "\"The Last War\"",
+      "m_mText": "\"Hundreds of centuries pass in silence.\nAt the end of the azure sky, beyond the edge of the clouds.\nThe witch and the silver-haired warrior rise upon the wind, launching their final assault against the looming disaster.\nYet the ending remains unwritten—\nA clash of good and evil, a duel of black and white.\nThis time, which will claim victory?\"",
+      "m_mFootnote": "\"Windwing Fable: Final Act\"",
+      "m_StoryPic": "\"Atlas_Activity112/activity112level_story_07\""
     }
   },
-  "status": "processed_12_items"
+  "status": "processed_19_items"
 }

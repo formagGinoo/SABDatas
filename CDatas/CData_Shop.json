@@ -1,5 +1,6 @@
 {
   "className": "CData_Shop",
+  "timestamp": "2025-10-23T19:25:37.701Z",
   "data": {
     "101": {
       "m_bError": null,
@@ -23,7 +24,8 @@
       "m_RefreshCost": "[[101,100],[101,200],[101,300],[101,400],[101,500],[101,600],[101,700],[101,800],[101,900],[101,1000]]",
       "m_RefreshType": "1",
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "102": {
       "m_bError": null,
@@ -47,7 +49,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": "1",
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "103": {
       "m_bError": null,
@@ -71,7 +74,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": "1",
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "104": {
       "m_bError": null,
@@ -95,7 +99,8 @@
       "m_RefreshCost": "[[101,100],[101,200],[101,300],[101,400],[101,500],[101,600],[101,700],[101,800],[101,900],[101,1000]]",
       "m_RefreshType": "1",
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "105": {
       "m_bError": null,
@@ -119,7 +124,33 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": "4",
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
+    },
+    "107": {
+      "m_bError": null,
+      "m_ShopID": "107",
+      "m_WindowID": "26000",
+      "m_ShopVersion": "1",
+      "m_Type": "1",
+      "m_ActId": null,
+      "m_Order": "107",
+      "m_IsOn": "1",
+      "m_mName": "\"Synergy Bonus\"",
+      "m_IconPath": "\"Atlas_Tab/shop_tab_icon1_1\"",
+      "m_IconPathClick": "\"Atlas_Tab/shop_tab_icon1\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"\"",
+      "m_EndTime": "\"\"",
+      "m_MainCurrency": "[1076]",
+      "m_GoodsGroupID": "[105001]",
+      "m_CensorGoodsGroupID": "[105001]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": "1"
     },
     "9001": {
       "m_bError": null,
@@ -143,7 +174,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9002": {
       "m_bError": null,
@@ -167,7 +199,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9003": {
       "m_bError": null,
@@ -191,7 +224,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9005": {
       "m_bError": null,
@@ -215,7 +249,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9006": {
       "m_bError": null,
@@ -239,7 +274,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9008": {
       "m_bError": null,
@@ -263,7 +299,8 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     },
     "9010": {
       "m_bError": null,
@@ -287,8 +324,34 @@
       "m_RefreshCost": "[]",
       "m_RefreshType": null,
       "m_RefreshParam": "\"\"",
-      "m_mLockDesc": "\"\""
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
+    },
+    "9011": {
+      "m_bError": null,
+      "m_ShopID": "9011",
+      "m_WindowID": "26014",
+      "m_ShopVersion": "1",
+      "m_Type": "2",
+      "m_ActId": "1120",
+      "m_Order": "1",
+      "m_IsOn": "1",
+      "m_mName": "\"Clouded Outpost\"",
+      "m_IconPath": "\"\"",
+      "m_IconPathClick": "\"\"",
+      "m_SystemUnlockID": null,
+      "m_StartTime": "\"2025-6-10 04:00:00\"",
+      "m_EndTime": "\"2025-7-24 03:59:59\"",
+      "m_MainCurrency": "[500123,99]",
+      "m_GoodsGroupID": "[900901,900902,900903,900904,900905,900906,900907,900908,900909,900910,900911,900912,900913,900914,900915,900916,900917,900918,900919,900920,900921,900922]",
+      "m_CensorGoodsGroupID": "[900901,900902,900903,900904,900905,900906,900907,900908,900909,900910,900911,900912,900913,900914,900915,900916,900917,900918,900919,900920,900921,900922]",
+      "m_RefreshNum": null,
+      "m_RefreshCost": "[]",
+      "m_RefreshType": null,
+      "m_RefreshParam": "\"\"",
+      "m_mLockDesc": "\"\"",
+      "m_IsHide": null
     }
   },
-  "status": "processed_12_items"
+  "status": "processed_14_items"
 }

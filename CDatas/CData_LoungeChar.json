@@ -1,5 +1,6 @@
 {
   "className": "CData_LoungeChar",
+  "timestamp": "2025-10-23T19:25:20.377Z",
   "data": {
     "102": {
       "m_bError": null,
@@ -15,7 +16,8 @@
       "m_UnlockLimitBreakLevel": null,
       "m_LevelExp": null,
       "m_PropertyID": null,
-      "m_UnlockClientMessage": null
+      "m_UnlockClientMessage": null,
+      "m_UIPrefab": "\"\""
     },
     "20320": {
       "m_bError": null,
@@ -31,8 +33,26 @@
       "m_UnlockLimitBreakLevel": "3",
       "m_LevelExp": "100",
       "m_PropertyID": "1009001",
-      "m_UnlockClientMessage": "10270"
+      "m_UnlockClientMessage": "10270",
+      "m_UIPrefab": "\"LoungeFanuSubPanel\""
+    },
+    "20730": {
+      "m_bError": null,
+      "m_ID": "20730",
+      "m_Type": "1",
+      "m_Sort": "2",
+      "m_mCharName": "\"Letitia\"",
+      "m_SpineName": "\"Typhoeus_Base_Lounge_Mecanim\"",
+      "m_DefaultIdle": "\"idle_01\"",
+      "m_EngravingRefuse": "[]",
+      "m_MinigameOverIdle": null,
+      "m_Collision": "[]",
+      "m_UnlockLimitBreakLevel": "3",
+      "m_LevelExp": "100",
+      "m_PropertyID": "1009002",
+      "m_UnlockClientMessage": "10270",
+      "m_UIPrefab": "\"LoungeTyphoeusSubPanel\""
     }
   },
-  "status": "processed_2_items"
+  "status": "processed_3_items"
 }

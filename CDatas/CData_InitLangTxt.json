@@ -1,5 +1,6 @@
 {
   "className": "CData_InitLangTxt",
+  "timestamp": "2025-10-23T19:25:19.767Z",
   "data": {
     "\"InitShaders\"": {
       "m_bError": null,
@@ -35,11 +36,6 @@
       "m_bError": null,
       "m_Index": "\"LoginAccountDesc\"",
       "m_Name": "\"##6:领主编号：##10:Lord No.:##14:No. de Seigneur :##15:Lord Nr.:##22:領主ID：##23:영주 No:##34:N.º de señor:##36:หมายเลขลอร์ด:##41:領主編號：\""
-    },
-    "\"LoginInitNetworkGame\"": {
-      "m_bError": null,
-      "m_Index": "\"LoginInitNetworkGame\"",
-      "m_Name": "\"##6:正在连接至领地...##10:Connecting to territory...##14:Connexion au territoire...##15:Mit Gebiet verbinden ...##22:領土に接続中……##23:영지에 연결 중...##34:Conectando con el territorio…##36:กำลังเชื่อมต่อกับเขตแดน...##41:正在連線到領地……\""
     },
     "\"CommonError\"": {
       "m_bError": null,
@@ -330,6 +326,11 @@
       "m_bError": null,
       "m_Index": "\"ClientErrorDesc\"",
       "m_Name": "\"##6:客户端发生意外错误，需重启游戏##10:A client error has occurred. Please relaunch the game.##14:Une erreur client est survenue. Veuillez relancer le jeu.##15:Ein Client-Fehler ist aufgetreten. Bitte starte das Spiel neu.##22:エラーが発生しました。ゲームを再起動してください##23:클라이언트 오류 발생. 게임을 재실행하세요.##34:Se ha producido un error de cliente. Vuelve a iniciar el juego.##36:เกิดข้อผิดพลาดของไคลเอนต์ โปรดรีสตาร์ทเกม##41:用戶端發生意外錯誤，需要重新啟動遊戲\""
+    },
+    "\"LoginInitNetworkGame\"": {
+      "m_bError": null,
+      "m_Index": "\"LoginInitNetworkGame\"",
+      "m_Name": "\"##6:正在连接至领地...##10:Connecting to territory...##14:Connexion au territoire...##15:Mit Gebiet verbinden ...##22:領土に接続中……##23:영지에 연결 중...##34:Conectando con el territorio…##36:กำลังเชื่อมต่อกับเขตแดน...##41:正在連線到領地……\""
     },
     "\"LoginDownloadUIDetail\"": {
       "m_bError": null,
@@ -1115,7 +1116,27 @@
       "m_bError": null,
       "m_Index": "\"CommonCancel\"",
       "m_Name": "\"##6:取消##10:Cancel##14:Annuler##15:Abbrechen##22:キャンセル##23:취소##34:Cancelar##36:ยกเลิก##41:取消\""
+    },
+    "\"AgreementVersion_CN\"": {
+      "m_bError": null,
+      "m_Index": "\"AgreementVersion_CN\"",
+      "m_Name": "\"##6:version_2.0##10:version_2.0##14:version_2.0##15:version_2.0##22:version_2.0##23:version_2.0##34:version_2.0##36:version_2.0##41:version_2.0\""
+    },
+    "\"AgreementVersion_AP\"": {
+      "m_bError": null,
+      "m_Index": "\"AgreementVersion_AP\"",
+      "m_Name": "\"##6:version_2.1##10:version_2.1##14:version_2.1##15:version_2.1##22:version_2.1##23:version_2.1##34:version_2.1##36:version_2.1##41:version_2.1\""
+    },
+    "\"AgreementVersion_EU\"": {
+      "m_bError": null,
+      "m_Index": "\"AgreementVersion_EU\"",
+      "m_Name": "\"##6:version_2.1##10:version_2.1##14:version_2.1##15:version_2.1##22:version_2.1##23:version_2.1##34:version_2.1##36:version_2.1##41:version_2.1\""
+    },
+    "\"AgreementVersion_US\"": {
+      "m_bError": null,
+      "m_Index": "\"AgreementVersion_US\"",
+      "m_Name": "\"##6:version_2.1##10:version_2.1##14:version_2.1##15:version_2.1##22:version_2.1##23:version_2.1##34:version_2.1##36:version_2.1##41:version_2.1\""
     }
   },
-  "status": "processed_223_items"
+  "status": "processed_227_items"
 }

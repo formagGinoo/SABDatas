@@ -1,41 +1,12 @@
 {
   "className": "CData_UILanguage",
+  "timestamp": "2025-10-23T19:25:43.623Z",
   "data": {
     "\"Form_AutoFullTips_txt_frame_middle_title\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_AutoFullTips_txt_frame_middle_title\"",
       "m_mKeyValue": "\"Ability Dctails\"",
       "m_MultLong": "\"15\""
-    },
-    "\"Form_Dialogue_txt_x1\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_x1\"",
-      "m_mKeyValue": "\"x1\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_Dialogue_txt_x2\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_x2\"",
-      "m_mKeyValue": "\"x2\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_Dialogue_txt_option\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_option\"",
-      "m_mKeyValue": "\"Reserved String\"",
-      "m_MultLong": "\"37\""
-    },
-    "\"Form_Dialogue_txt_end\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Dialogue_txt_end\"",
-      "m_mKeyValue": "\"—The End—\"",
-      "m_MultLong": "\"126\""
-    },
-    "\"Form_Guide_txt_jump\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Guide_txt_jump\"",
-      "m_mKeyValue": "\"Skip Tutorial\"",
-      "m_MultLong": "\"20\""
     },
     "\"Form_AutoFullTips_txt_grey\"": {
       "m_bError": null,
@@ -427,6 +398,96 @@
       "m_mKeyValue": "\"Attribute Bonus:\"",
       "m_MultLong": "\"30\""
     },
+    "\"Form_Equipsmeltingmaterials_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_txt_frame_big_title\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Equipsmeltingmaterials_txt_pickdesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_txt_pickdesc\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Equipsmeltingmaterials_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_common_item_txt_LV\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Equipsmeltingmaterials_txt_empty\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_txt_empty\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"43\""
+    },
+    "\"Form_Equipsmeltingmaterials_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_txt_grey\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_Equipsmeltingmaterials_txt\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Equipsmeltingmaterials_txt\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_EquipT9Reset_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_frame_big_title\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EquipT9Reset_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_common_item_txt_LV\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_EquipT9Reset_txt_hold\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_hold\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"Form_EquipT9Reset_txt_pickdesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_pickdesc\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"65\""
+    },
+    "\"Form_EquipT9Reset_txt_ equipment_preview\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_ equipment_preview\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"52\""
+    },
+    "\"Form_EquipT9Reset_txt_details\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_details\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EquipT9Reset_txt_smelting\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_smelting\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EquipT9Reset_txt_choose\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_txt_choose\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"59\""
+    },
+    "\"Form_EquipT9Reset_m_z_txt_target\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipT9Reset_m_z_txt_target\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
     "\"Form_Filter_txt_module_name1\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Filter_txt_module_name1\"",
@@ -550,7 +611,7 @@
     "\"Form_Gm_txt_OpenAI\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Gm_txt_OpenAI\"",
-      "m_mKeyValue": "\"\"",
+      "m_mKeyValue": "\"Open AI\"",
       "m_MultLong": "\"7\""
     },
     "\"Form_Gm_txt_AddBlood\"": {
@@ -604,7 +665,7 @@
     "\"Form_Gm_txt_bs\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Gm_txt_bs\"",
-      "m_mKeyValue": "\"\"",
+      "m_mKeyValue": "\"Battle Settings\"",
       "m_MultLong": "\"6\""
     },
     "\"Form_Gm_txt_ChangeX\"": {
@@ -676,7 +737,7 @@
     "\"Form_Gm_Name\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Gm_Name\"",
-      "m_mKeyValue": "\"ssssss\"",
+      "m_mKeyValue": "\"mingc111111\"",
       "m_MultLong": "\"\""
     },
     "\"Form_Gm_Text4\"": {
@@ -937,6 +998,12 @@
       "m_mKeyValue": "\"Count\"",
       "m_MultLong": "\"\""
     },
+    "\"Form_Guide_txt_jump\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guide_txt_jump\"",
+      "m_mKeyValue": "\"Skip Tutorial\"",
+      "m_MultLong": "\"20\""
+    },
     "\"Form_GuideAllSkipPop_m_z_txt_grey\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_GuideAllSkipPop_m_z_txt_grey\"",
@@ -1015,10 +1082,34 @@
       "m_mKeyValue": "\"STORY\"",
       "m_MultLong": "\"10\""
     },
-    "\"Form_Hall_txt_HuntingNight\"": {
+    "\"Form_Hall_txt_Returne\"": {
       "m_bError": null,
-      "m_KeyName": "\"Form_Hall_txt_HuntingNight\"",
-      "m_mKeyValue": "\"Night of the Hunt\"",
+      "m_KeyName": "\"Form_Hall_txt_Returne\"",
+      "m_mKeyValue": "\"The Rebirth\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_Hall_txt_exercise\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Hall_txt_exercise\"",
+      "m_mKeyValue": "\"7-Day Sign-In\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Hall_m_z_txt_ActSign\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Hall_m_z_txt_ActSign\"",
+      "m_mKeyValue": "\"Event\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_Hall_m_z_txt_recharge\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Hall_m_z_txt_recharge\"",
+      "m_mKeyValue": "\"Black Lotus Bundle\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_Hall_txt_ActQuest14\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Hall_txt_ActQuest14\"",
+      "m_mKeyValue": "\"New Moon\"",
       "m_MultLong": "\"12\""
     },
     "\"Form_Hall_txt_party\"": {
@@ -1033,22 +1124,10 @@
       "m_mKeyValue": "\"Prophecy\"",
       "m_MultLong": "\"12\""
     },
-    "\"Form_Hall_txt_ActQuest14\"": {
+    "\"Form_Hall_txt_HuntingNight\"": {
       "m_bError": null,
-      "m_KeyName": "\"Form_Hall_txt_ActQuest14\"",
-      "m_mKeyValue": "\"New Moon\"",
-      "m_MultLong": "\"12\""
-    },
-    "\"Form_Hall_txt_exercise\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Hall_txt_exercise\"",
-      "m_mKeyValue": "\"7-Day Sign-In\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_Hall_m_z_txt_ActSign\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_Hall_m_z_txt_ActSign\"",
-      "m_mKeyValue": "\"Event\"",
+      "m_KeyName": "\"Form_Hall_txt_HuntingNight\"",
+      "m_mKeyValue": "\"Night of the Hunt\"",
       "m_MultLong": "\"12\""
     },
     "\"Form_Hall_txt_icon03\"": {
@@ -1092,6 +1171,12 @@
       "m_KeyName": "\"Form_Hall_txt_bp_up\"",
       "m_mKeyValue": "\"Bandit's Boon\"",
       "m_MultLong": "\"8\""
+    },
+    "\"Form_Hall_txt_push_stagegift\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Hall_txt_push_stagegift\"",
+      "m_mKeyValue": "\"Surprise Gift\"",
+      "m_MultLong": "\"11\""
     },
     "\"Form_Hall_txt_lv2\"": {
       "m_bError": null,
@@ -2285,7 +2370,7 @@
       "m_bError": null,
       "m_KeyName": "\"Form_ActivityDayTask14_txt_receive_item\"",
       "m_mKeyValue": "\"Claim\"",
-      "m_MultLong": "\"8\""
+      "m_MultLong": "\"9\""
     },
     "\"Form_ActivityDayTask14_txt_claim_normal\"": {
       "m_bError": null,
@@ -2359,6 +2444,30 @@
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"3\""
     },
+    "\"Form_ActivityIntegration_txt_dialogue\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityIntegration_txt_dialogue\"",
+      "m_mKeyValue": "\"Story Event\"",
+      "m_MultLong": "\"45\""
+    },
+    "\"Form_ActivityIntegration_txt_zen\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityIntegration_txt_zen\"",
+      "m_mKeyValue": "\"Gift\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_ActivityIntegration_txt_end\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityIntegration_txt_end\"",
+      "m_mKeyValue": "\"Ended\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_ActivityIntegration_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityIntegration_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
     "\"Form_ActivityMain_txt_back_name\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_ActivityMain_txt_back_name\"",
@@ -2412,6 +2521,90 @@
       "m_KeyName": "\"Form_ActivityParty_txt_back_name\"",
       "m_mKeyValue": "\"Back\"",
       "m_MultLong": "\"7\""
+    },
+    "\"Form_ActivityParty12_txt_content\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_content\"",
+      "m_mKeyValue": "\"Participate in the First Supper to get 160 summons and SSR Vassal Bella & Starry-Eyed Aiona!\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_ActivityParty12_txt_des_01\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_des_01\"",
+      "m_mKeyValue": "\"Login Rewards\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_ActivityParty12_txt_des_02\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_des_02\"",
+      "m_mKeyValue": "\"7-Day Login\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_ActivityParty12_txt_titlegift03\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_titlegift03\"",
+      "m_mKeyValue": "\"Get 2 <color=#E64728>SSR Vassals</color> in 20 Heralds.\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_ActivityParty12_txt_get_card\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_get_card\"",
+      "m_mKeyValue": "\"Get Up to 40 Summons\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"Form_ActivityParty12_txt_sign_get\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_sign_get\"",
+      "m_mKeyValue": "\"Sign-in Reward\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"Form_ActivityParty12_txt_titlegift04\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_titlegift04\"",
+      "m_mKeyValue": "\"Gift: Bella\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"Form_ActivityParty12_txt_des_05\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_des_05\"",
+      "m_mKeyValue": "\"7-Day Login\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_ActivityParty12_txt_des_06\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_des_06\"",
+      "m_mKeyValue": "\"Clear Chapter\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_ActivityParty12_txt_titlegift07\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_titlegift07\"",
+      "m_mKeyValue": "\"Gift: Starry-Eyed Aiona\"",
+      "m_MultLong": "\"23\""
+    },
+    "\"Form_ActivityParty12_txt_titlegift08\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_titlegift08\"",
+      "m_mKeyValue": "\"Top-up Gift: Midnight Lotus\"",
+      "m_MultLong": "\"23\""
+    },
+    "\"Form_ActivityParty12_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityParty12_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_ActivityReturnee_txt_sign_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityReturnee_txt_sign_desc\"",
+      "m_mKeyValue": "\"Seven Day Awakening\"",
+      "m_MultLong": "\"23\""
+    },
+    "\"Form_ActivityReturnee_txt_gift_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ActivityReturnee_txt_gift_desc\"",
+      "m_mKeyValue": "\"Gift of Rebirth\"",
+      "m_MultLong": "\"24\""
     },
     "\"Form_ActivitySevendaysFace_txt_click\"": {
       "m_bError": null,
@@ -2543,12 +2736,12 @@
       "m_bError": null,
       "m_KeyName": "\"ui_activity_embracebonus_txt_title\"",
       "m_mKeyValue": "\"Embrace Bonus\"",
-      "m_MultLong": "\"60\""
+      "m_MultLong": "\"27\""
     },
     "\"ui_activity_embracebonus_txt_condition\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_activity_embracebonus_txt_condition\"",
-      "m_mKeyValue": "\"Herald in Blue Dawn to earn bonus rewards.\"",
+      "m_mKeyValue": "\"Perform Heralds with Soothing Embrace to earn bonus rewards.\"",
       "m_MultLong": "\"70\""
     },
     "\"ui_activity_embracebonus_common_item_txt_LV\"": {
@@ -4612,7 +4805,7 @@
     "\"ui_activity102dalcaro_dialoguedetial_txt_news\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_activity102dalcaro_dialoguedetial_txt_news\"",
-      "m_mKeyValue": "\"Battle Info\"",
+      "m_mKeyValue": "\"Battlefield Info\"",
       "m_MultLong": "\"31\""
     },
     "\"ui_activity102dalcaro_dialoguedetial_txt_round\"": {
@@ -6898,7 +7091,7 @@
     "\"Form_Activity110Tast14_txt_go\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Activity110Tast14_txt_go\"",
-      "m_mKeyValue": "\"Skip\"",
+      "m_mKeyValue": "\"Go\"",
       "m_MultLong": "\"6\""
     },
     "\"Form_Activity110Tast14_txt_receive_item\"": {
@@ -7248,6 +7441,456 @@
       "m_KeyName": "\"ui_activity110_filpcard_txt_challenge\"",
       "m_mKeyValue": "\"Challenge\"",
       "m_MultLong": "\"20\""
+    },
+    "\"Form_112Achievement_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_112Achievement_m_z_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_m_z_txt_title\"",
+      "m_mKeyValue": "\"Trial of Wind\"",
+      "m_MultLong": "\"46\""
+    },
+    "\"Form_112Achievement_txt_progress_xian\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_progress_xian\"",
+      "m_mKeyValue": "\"/\"",
+      "m_MultLong": "\"5000\""
+    },
+    "\"Form_112Achievement_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_112Achievement_txt_receive_item2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_receive_item2\"",
+      "m_mKeyValue": "\"Claim\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_112Achievement_txt_uncom2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_uncom2\"",
+      "m_mKeyValue": "\"Unfinished\"",
+      "m_MultLong": "\"115\""
+    },
+    "\"Form_112Achievement_txt_go_item2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_go_item2\"",
+      "m_mKeyValue": "\"Go\"",
+      "m_MultLong": "\"6\""
+    },
+    "\"Form_112Achievement_txt_claim_normal\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_claim_normal\"",
+      "m_mKeyValue": "\"Claim All\"",
+      "m_MultLong": "\"19\""
+    },
+    "\"Form_112Achievement_txt_claim_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_112Achievement_txt_claim_grey\"",
+      "m_mKeyValue": "\"Claim All\"",
+      "m_MultLong": "\"19\""
+    },
+    "\"Form_Activity112Main_txt_login\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_login\"",
+      "m_mKeyValue": "\"Sign-in\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_Activity112Main_txt_task\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_task\"",
+      "m_mKeyValue": "\"Tasks\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_Activity112Main_txt_shop\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_shop\"",
+      "m_mKeyValue": "\"Shop\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_Activity112Main_txt_hero_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_hero_name\"",
+      "m_mKeyValue": "\"Imbued Vassals\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112Main_m_z_txt_mininame\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_m_z_txt_mininame\"",
+      "m_mKeyValue": "\"Love and Punishment\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_Activity112Main_txt_gacha_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_gacha_name\"",
+      "m_mKeyValue": "\"Embrace\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Activity112Main_txt_free_got\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_free_got\"",
+      "m_mKeyValue": "\"Wings of Flight\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"Form_Activity112Main_m_z_txt_challenge_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_m_z_txt_challenge_name\"",
+      "m_mKeyValue": "\"Cosmic Singularity\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112Main_m_z_txt_activity_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_m_z_txt_activity_name\"",
+      "m_mKeyValue": "\"The Black Mist\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Activity112Main_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Main_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Activity112Shop_txt_store_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_txt_store_name\"",
+      "m_mKeyValue": "\"Clouded Outpost\"",
+      "m_MultLong": "\"53\""
+    },
+    "\"Form_Activity112Shop_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Activity112Shop_txt_shopitem_saleout\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_txt_shopitem_saleout\"",
+      "m_mKeyValue": "\"Sold Out\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"Form_Activity112Shop_txt_soldtime1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_txt_soldtime1\"",
+      "m_mKeyValue": "\"Available in\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Activity112Shop_txt_item_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_txt_item_num\"",
+      "m_mKeyValue": "\"14.272M\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity112Shop_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Shop_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Activity112Tast14_txt_item_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_item_num\"",
+      "m_mKeyValue": "\"14.272M\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity112Tast14_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_title\"",
+      "m_mKeyValue": "\"Spread the Wings\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"Form_Activity112Tast14_txt_RemainTime_desc_short\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_RemainTime_desc_short\"",
+      "m_mKeyValue": "\"remaining\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity112Tast14_txt_comp\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_comp\"",
+      "m_mKeyValue": "\"Daily Stage Reward\"",
+      "m_MultLong": "\"29\""
+    },
+    "\"Form_Activity112Tast14_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Activity112Tast14_txt_numx\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_numx\"",
+      "m_mKeyValue": "\"x\"",
+      "m_MultLong": "\"2\""
+    },
+    "\"Form_Activity112Tast14_txt_star_number1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_star_number1\"",
+      "m_mKeyValue": "\"1\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Activity112Tast14_txt_break\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_break\"",
+      "m_mKeyValue": "\"Spirit Siphon Task\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity112Tast14_txt_go\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_go\"",
+      "m_mKeyValue": "\"Go\"",
+      "m_MultLong": "\"6\""
+    },
+    "\"Form_Activity112Tast14_txt_receive_item\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_receive_item\"",
+      "m_mKeyValue": "\"Claim\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_Activity112Tast14_txt_claim_normal\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_claim_normal\"",
+      "m_mKeyValue": "\"Claim All\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112Tast14_txt_claim_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_claim_grey\"",
+      "m_mKeyValue": "\"Claim All\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112Tast14_txt_RemainTime_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_RemainTime_desc\"",
+      "m_mKeyValue": "\"Refreshes at 04:00 daily.\"",
+      "m_MultLong": "\"29\""
+    },
+    "\"Form_Activity112Tast14_txt_receive\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_receive\"",
+      "m_mKeyValue": "\"Reserved String\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_Activity112Tast14_txt_name_preview\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_name_preview\"",
+      "m_mKeyValue": "\"Rewards\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_Activity112Tast14_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112Tast14_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Activity112_Dialogueclue_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Dialogueclue_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Activity112_DialogueCollection_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueCollection_txt_title\"",
+      "m_mKeyValue": "\"Story Recap\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Activity112_DialogueCollection_txt_empty\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueCollection_txt_empty\"",
+      "m_mKeyValue": "\"Story Locked\"",
+      "m_MultLong": "\"73\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_consume_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_consume_desc\"",
+      "m_mKeyValue": "\"5 restored daily.\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_collect_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_collect_name\"",
+      "m_mKeyValue": "\"Story Recap\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_buff_hero\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_buff_hero\"",
+      "m_mKeyValue": "\"Imbued Vassals\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_draw\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_draw\"",
+      "m_mKeyValue": "\"Windwing Fable\"",
+      "m_MultLong": "\"14\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_normal_unselect\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_normal_unselect\"",
+      "m_mKeyValue": "\"Normal\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_normal_select\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_normal_select\"",
+      "m_mKeyValue": "\"Normal\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_hard_unselect\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_hard_unselect\"",
+      "m_mKeyValue": "\"Nightmare\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"Form_Activity112_DialogueMain_txt_hard_select\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_DialogueMain_txt_hard_select\"",
+      "m_mKeyValue": "\"Nightmare\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Activity112_Sign_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_title\"",
+      "m_mKeyValue": "\"A Thousand Gales\"",
+      "m_MultLong": "\"84\""
+    },
+    "\"Form_Activity112_Sign_txt_titledesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_titledesc\"",
+      "m_mKeyValue": "\"Cross mountains and streams, through emerald woods and golden wheat.\"",
+      "m_MultLong": "\"103\""
+    },
+    "\"Form_Activity112_Sign_txt_got_day\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_got_day\"",
+      "m_mKeyValue": "\"Unfinished\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112_Sign_txt_got_finish\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_got_finish\"",
+      "m_mKeyValue": "\"Claimed\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112_Sign_txt_got\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_got\"",
+      "m_mKeyValue": "\"Claim\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_Activity112_Sign_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Activity112_Sign_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Activity112_Sign_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_enemy1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_enemy1\"",
+      "m_mKeyValue": "\"Recommended BP\"",
+      "m_MultLong": "\"24\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_ourside\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_ourside\"",
+      "m_mKeyValue": "\"Your BP\"",
+      "m_MultLong": "\"24\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_news\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_news\"",
+      "m_mKeyValue": "\"Battlefield Info\"",
+      "m_MultLong": "\"31\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_round\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_round\"",
+      "m_mKeyValue": "\"Round\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_bossteam\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_bossteam\"",
+      "m_mKeyValue": "\"Enemy Units\"",
+      "m_MultLong": "\"31\""
+    },
+    "\"ui_activity112_dialoguedetial_m_z_txt_award\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_m_z_txt_award\"",
+      "m_mKeyValue": "\"Rewards\"",
+      "m_MultLong": "\"31\""
+    },
+    "\"ui_activity112_dialoguedetial_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_bouns_tag\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_bouns_tag\"",
+      "m_mKeyValue": "\"Bonus\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_first_tag\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_first_tag\"",
+      "m_mKeyValue": "\"First Clear\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_quick\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_quick\"",
+      "m_mKeyValue": "\"Quick Clear\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_quick_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_quick_grey\"",
+      "m_mKeyValue": "\"Quick Clear\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_free_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_free_num\"",
+      "m_mKeyValue": "\"-1\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_activity112_dialoguedetial_txt\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt\"",
+      "m_mKeyValue": "\"Start\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_battle_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_battle_grey\"",
+      "m_mKeyValue": "\"Start\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_activity112_dialoguedetial_txt_have_pass\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_activity112_dialoguedetial_txt_have_pass\"",
+      "m_mKeyValue": "\"Cleared\"",
+      "m_MultLong": "\"10\""
     },
     "\"Form_ActivityAnnounceLotterypage_txt_frame_big_title\"": {
       "m_bError": null,
@@ -9148,7 +9791,7 @@
     "\"Form_BattleCardSetting_txt_frame_middle_title\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_BattleCardSetting_txt_frame_middle_title\"",
-      "m_mKeyValue": "\"Initial Hand Edit\"",
+      "m_mKeyValue": "\"Initial Ultimate Edit\"",
       "m_MultLong": "\"\""
     },
     "\"Form_BattleCardSetting_txt_num01\"": {
@@ -9186,6 +9829,96 @@
       "m_KeyName": "\"Form_BattleCardSetting_txt_yes\"",
       "m_mKeyValue": "\"Confirm\"",
       "m_MultLong": "\"21\""
+    },
+    "\"Form_BattleCardSortSetting_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_frame_big_title\"",
+      "m_mKeyValue": "\"Initial Ultimate Edit\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BattleCardSortSetting_txt_num01\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_num01\"",
+      "m_mKeyValue": "\"1\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BattleCardSortSetting_txt_num02\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_num02\"",
+      "m_mKeyValue": "\"2\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BattleCardSortSetting_txt_num03\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_num03\"",
+      "m_mKeyValue": "\"3\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BattleCardSortSetting_txt_cancel\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_cancel\"",
+      "m_mKeyValue": "\"Close\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BattleCardSortSetting_txt_yes\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_yes\"",
+      "m_mKeyValue": "\"Save Settings\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team1\"",
+      "m_mKeyValue": "\"Defense Lineup 1\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team_unselect1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team_unselect1\"",
+      "m_mKeyValue": "\"Defense Lineup 1\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_save1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_save1\"",
+      "m_mKeyValue": "\"Saved\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team2\"",
+      "m_mKeyValue": "\"Defense Lineup 2\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team_unselect2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team_unselect2\"",
+      "m_mKeyValue": "\"Defense Lineup 2\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_save2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_save2\"",
+      "m_mKeyValue": "\"Saved\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team3\"",
+      "m_mKeyValue": "\"Defense Lineup 3\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_team_unselect3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_team_unselect3\"",
+      "m_mKeyValue": "\"Defense Lineup 3\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_BattleCardSortSetting_txt_save3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleCardSortSetting_txt_save3\"",
+      "m_mKeyValue": "\"Saved\"",
+      "m_MultLong": "\"9\""
     },
     "\"Form_BattleCharacterData_txt_frame_big_title\"": {
       "m_bError": null,
@@ -9360,6 +10093,12 @@
       "m_KeyName": "\"Form_BattleRecord_txt_empty\"",
       "m_mKeyValue": "\"No Records Yet\"",
       "m_MultLong": "\"43\""
+    },
+    "\"Form_BattleRecord_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleRecord_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_BattleRecord_txt_noobtain\"": {
       "m_bError": null,
@@ -9895,6 +10634,12 @@
       "m_mKeyValue": "\"TEAM\"",
       "m_MultLong": "\"76\""
     },
+    "\"Form_BattleTeam_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleTeam_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_BattleTeam_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_BattleTeam_txt_noobtain\"",
@@ -9918,6 +10663,12 @@
       "m_KeyName": "\"Form_BattleTeamPopup_txt_team_empty\"",
       "m_mKeyValue": "\"TEAM\"",
       "m_MultLong": "\"76\""
+    },
+    "\"Form_BattleTeamPopup_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleTeamPopup_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_BattleTeamPopup_txt_noobtain\"": {
       "m_bError": null,
@@ -9960,6 +10711,12 @@
       "m_KeyName": "\"Form_BattleUpdate_txt_teamdesc1\"",
       "m_mKeyValue": "\"Copy Lineup\"",
       "m_MultLong": "\"12\""
+    },
+    "\"Form_BattleUpdate_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleUpdate_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_BattleUpdate_txt_noobtain\"": {
       "m_bError": null,
@@ -10050,6 +10807,12 @@
       "m_KeyName": "\"Form_BattleVictory_common_item_txt_LV\"",
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"3\""
+    },
+    "\"Form_BattleVictory_txt_ex\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BattleVictory_txt_ex\"",
+      "m_mKeyValue": "\"Weekend Double Rewards\"",
+      "m_MultLong": "\"\""
     },
     "\"Form_BattleVictory_txt_auto\"": {
       "m_bError": null,
@@ -10219,90 +10982,6 @@
       "m_mKeyValue": "\"Drop Rate\"",
       "m_MultLong": "\"\""
     },
-    "\"Form_battle_main_txt_powerdesc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_powerdesc\"",
-      "m_mKeyValue": "\"Recommend\"",
-      "m_MultLong": "\"8\""
-    },
-    "\"Form_battle_main_txt_powerdesc_mine_red\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_powerdesc_mine_red\"",
-      "m_mKeyValue": "\"Ally\"",
-      "m_MultLong": "\"8\""
-    },
-    "\"Form_battle_main_txt_powerdesc_mine_green\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_powerdesc_mine_green\"",
-      "m_mKeyValue": "\"Ally\"",
-      "m_MultLong": "\"8\""
-    },
-    "\"Form_battle_main_m_z_txt_moontime_desc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_m_z_txt_moontime_desc\"",
-      "m_mKeyValue": "\"Next Enemy Wave:\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_txt_round \"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_round \"",
-      "m_mKeyValue": "\"Round:\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_txt_our\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_our\"",
-      "m_mKeyValue": "\"Ally\"",
-      "m_MultLong": "\"6\""
-    },
-    "\"Form_battle_main_txt_enemy\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_enemy\"",
-      "m_mKeyValue": "\"Enemy\"",
-      "m_MultLong": "\"6\""
-    },
-    "\"Form_battle_main_txt_all\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_all\"",
-      "m_mKeyValue": "\"All\"",
-      "m_MultLong": "\"6\""
-    },
-    "\"Form_battle_main_txt_buff_des\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_buff_des\"",
-      "m_mKeyValue": "\"Reserved String\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_txt_reppvp\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_reppvp\"",
-      "m_mKeyValue": "\"Sync to Offense Team\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_txt_reppvp_opponents\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_reppvp_opponents\"",
-      "m_mKeyValue": "\"Opponent's Full Lineup\"",
-      "m_MultLong": "\"14\""
-    },
-    "\"Form_battle_main_m_z_txt_moontime_desc_tower\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_m_z_txt_moontime_desc_tower\"",
-      "m_mKeyValue": "\"Next Enemy Wave:\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_m_z_txt_rogue_desc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_m_z_txt_rogue_desc\"",
-      "m_mKeyValue": "\"Next Enemy Wave:\"",
-      "m_MultLong": "\"\""
-    },
-    "\"Form_battle_main_txt_extragain\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_battle_main_txt_extragain\"",
-      "m_mKeyValue": "\"Seal\"",
-      "m_MultLong": "\"14\""
-    },
     "\"Form_battle_main_txt_death_img\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_battle_main_txt_death_img\"",
@@ -10356,6 +11035,60 @@
       "m_KeyName": "\"Form_battle_main_txt_grey\"",
       "m_mKeyValue": "\"Quick Battle\"",
       "m_MultLong": "\"13\""
+    },
+    "\"Form_battle_main_txt_powerdesc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_powerdesc\"",
+      "m_mKeyValue": "\"Recommend\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_battle_main_txt_powerdesc_mine_red\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_powerdesc_mine_red\"",
+      "m_mKeyValue": "\"Ally\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_battle_main_txt_powerdesc_mine_green\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_powerdesc_mine_green\"",
+      "m_mKeyValue": "\"Ally\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_battle_main_m_z_txt_moontime_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_m_z_txt_moontime_desc\"",
+      "m_mKeyValue": "\"Next Enemy Wave:\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_txt_round \"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_round \"",
+      "m_mKeyValue": "\"Round:\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_txt_reppvp\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_reppvp\"",
+      "m_mKeyValue": "\"Sync to Offense Team\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_m_z_txt_moontime_desc_tower\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_m_z_txt_moontime_desc_tower\"",
+      "m_mKeyValue": "\"Next Enemy Wave:\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_m_z_txt_rogue_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_m_z_txt_rogue_desc\"",
+      "m_mKeyValue": "\"Next Enemy Wave:\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_txt_extragain\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_extragain\"",
+      "m_mKeyValue": "\"Seal\"",
+      "m_MultLong": "\"14\""
     },
     "\"Form_battle_main_txt_reppvp_num_grey1\"": {
       "m_bError": null,
@@ -10411,11 +11144,29 @@
       "m_mKeyValue": "\"Save Lineup\"",
       "m_MultLong": "\"13\""
     },
+    "\"Form_battle_main_txt_reppvp_opponents\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_reppvp_opponents\"",
+      "m_mKeyValue": "\"Opponent's Full Lineup\"",
+      "m_MultLong": "\"14\""
+    },
     "\"Form_battle_main_m_z_txt_time\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_battle_main_m_z_txt_time\"",
       "m_mKeyValue": "\"Survive {0}s\"",
       "m_MultLong": "\"\""
+    },
+    "\"Form_battle_main_txt_effect\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_effect\"",
+      "m_mKeyValue": "\"Synergy\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_battle_main_txt_buff\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_buff\"",
+      "m_mKeyValue": "\"Global\"",
+      "m_MultLong": "\"19\""
     },
     "\"Form_battle_main_txt_pt_desc\"": {
       "m_bError": null,
@@ -10428,6 +11179,30 @@
       "m_KeyName": "\"Form_battle_main_txt_level_tips\"",
       "m_mKeyValue": "\"Move character to reposition.\"",
       "m_MultLong": "\"45\""
+    },
+    "\"Form_battle_main_txt_our\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_our\"",
+      "m_mKeyValue": "\"Ally\"",
+      "m_MultLong": "\"6\""
+    },
+    "\"Form_battle_main_txt_enemy\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_enemy\"",
+      "m_mKeyValue": "\"Enemy\"",
+      "m_MultLong": "\"6\""
+    },
+    "\"Form_battle_main_txt_all\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_all\"",
+      "m_mKeyValue": "\"All\"",
+      "m_MultLong": "\"6\""
+    },
+    "\"Form_battle_main_txt_buff_des\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_battle_main_txt_buff_des\"",
+      "m_mKeyValue": "\"Reserved String\"",
+      "m_MultLong": "\"\""
     },
     "\"Form_battle_main_bossblood_m_z_blood_num\"": {
       "m_bError": null,
@@ -10662,6 +11437,12 @@
       "m_KeyName": "\"Form_ReferotherteamCopyTips_txt_desc1\"",
       "m_mKeyValue": "\"Copied Successfully\"",
       "m_MultLong": "\"64\""
+    },
+    "\"Form_ReferotherteamCopyTips_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_ReferotherteamCopyTips_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_ReferotherteamCopyTips_txt_noobtain\"": {
       "m_bError": null,
@@ -11362,7 +12143,7 @@
     "\"Form_BattlePass_Monthly_txt_free\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_BattlePass_Monthly_txt_free\"",
-      "m_mKeyValue": "\"Free Perks\"",
+      "m_mKeyValue": "\"Basic\"",
       "m_MultLong": "\"13\""
     },
     "\"Form_BattlePass_Monthly_txt_advanced\"": {
@@ -12083,7 +12864,7 @@
       "m_bError": null,
       "m_KeyName": "\"Form_CastleMain_txt_name\"",
       "m_mKeyValue": "\"Tribute\"",
-      "m_MultLong": "\"12\""
+      "m_MultLong": "\"17\""
     },
     "\"Form_CastleMain_txt_dialogue\"": {
       "m_bError": null,
@@ -12737,31 +13518,31 @@
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationMain_txt_resonate\"",
       "m_mKeyValue": "\"Blood Covenant\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_CirculationMain_txt_resonate_unselect\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationMain_txt_resonate_unselect\"",
       "m_mKeyValue": "\"Blood Covenant\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_CirculationMain_txt_culation\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationMain_txt_culation\"",
       "m_mKeyValue": "\"Lineage\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_CirculationMain_txt_culation_unselect\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationMain_txt_culation_unselect\"",
       "m_mKeyValue": "\"Lineage\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_CirculationMain_txt_culation_lock\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationMain_txt_culation_lock\"",
       "m_mKeyValue": "\"Lineage\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_CirculationPop_txt_frame_big_title\"": {
       "m_bError": null,
@@ -12907,6 +13688,12 @@
       "m_mKeyValue": "\"Auto-Select\"",
       "m_MultLong": "\"14\""
     },
+    "\"Form_CirculationResonancePop_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_CirculationResonancePop_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_CirculationResonancePop_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_CirculationResonancePop_txt_noobtain\"",
@@ -12996,6 +13783,12 @@
       "m_KeyName": "\"c_common_hero_big_txt_lv\"",
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"\""
+    },
+    "\"c_common_hero_small_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"c_common_hero_small_txt_entered\"",
+      "m_mKeyValue": "\"Deployed\"",
+      "m_MultLong": "\"27\""
     },
     "\"c_common_hero_small_txt_noobtain\"": {
       "m_bError": null,
@@ -13195,6 +13988,12 @@
       "m_mKeyValue": "\"TEAM\"",
       "m_MultLong": "\"76\""
     },
+    "\"ui_common_item_team_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_common_item_team_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"ui_common_item_team_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_common_item_team_txt_noobtain\"",
@@ -13327,6 +14126,12 @@
       "m_mKeyValue": "\"Copy Lineup\"",
       "m_MultLong": "\"12\""
     },
+    "\"Form_HeroCopyTeam_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroCopyTeam_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_HeroCopyTeam_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_HeroCopyTeam_txt_noobtain\"",
@@ -13356,6 +14161,12 @@
       "m_KeyName": "\"Form_HeroCopyTips_txt_desc1\"",
       "m_mKeyValue": "\"Copied\"",
       "m_MultLong": "\"64\""
+    },
+    "\"Form_HeroCopyTips_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroCopyTips_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_HeroCopyTips_txt_noobtain\"": {
       "m_bError": null,
@@ -13392,6 +14203,30 @@
       "m_KeyName": "\"Form_CutinSkip_TextSkip\"",
       "m_mKeyValue": "\"Skip\"",
       "m_MultLong": "\"6\""
+    },
+    "\"Form_Dialogue_txt_x1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_x1\"",
+      "m_mKeyValue": "\"x1\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Dialogue_txt_x2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_x2\"",
+      "m_mKeyValue": "\"x2\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Dialogue_txt_option\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_option\"",
+      "m_mKeyValue": "\"Reserved String\"",
+      "m_MultLong": "\"37\""
+    },
+    "\"Form_Dialogue_txt_end\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Dialogue_txt_end\"",
+      "m_mKeyValue": "\"—The End—\"",
+      "m_MultLong": "\"126\""
     },
     "\"Form_DialogueReview_txt_back_name\"": {
       "m_bError": null,
@@ -13470,6 +14305,150 @@
       "m_KeyName": "\"Form_BossBattleVictory_txt_empty\"",
       "m_mKeyValue": "\"Mock Battle does not offer rewards.\"",
       "m_MultLong": "\"43\""
+    },
+    "\"Form_BossEquipmentPart_txt_rewardview\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_rewardview\"",
+      "m_mKeyValue": "\"Drops\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_BossEquipmentPart_txt_bossinfor\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_bossinfor\"",
+      "m_mKeyValue": "\"Stage Details\"",
+      "m_MultLong": "\"44\""
+    },
+    "\"Form_BossEquipmentPart_txt_inviterole\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_inviterole\"",
+      "m_mKeyValue": "\"Recommended Vassal\"",
+      "m_MultLong": "\"44\""
+    },
+    "\"Form_BossEquipmentPart_txt_unget\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_unget\"",
+      "m_mKeyValue": "\"Unowned\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_BossEquipmentPart_txt_reward\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_reward\"",
+      "m_mKeyValue": "\"Reward <size=32>x2</size>\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BossEquipmentPart_txt_sim\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_sim\"",
+      "m_mKeyValue": "\"Trial Exorcism\"",
+      "m_MultLong": "\"19\""
+    },
+    "\"Form_BossEquipmentPart_txt_quick\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_quick\"",
+      "m_mKeyValue": "\"Quick Exorcise\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_BossEquipmentPart_txt_quick_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_quick_grey\"",
+      "m_mKeyValue": "\"Quick Exorcise\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_BossEquipmentPart_txt_start\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_start\"",
+      "m_mKeyValue": "\"Exorcise Spirit\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BossEquipmentPart_txt_startgrey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_startgrey\"",
+      "m_mKeyValue": "\"Exorcise Spirit\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BossEquipmentPart_txt_rewardpencent\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_rewardpencent\"",
+      "m_mKeyValue": "\"Guaranteed Drop\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_BossEquipmentPart_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPart_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_BossEquipmentPartQuick_txt_frame_middle_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_txt_frame_middle_title\"",
+      "m_mKeyValue": "\"Ability Details\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"Form_BossEquipmentPartQuick_txt_reward_tip\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_txt_reward_tip\"",
+      "m_mKeyValue": "\"Current Fragment Rewards\"",
+      "m_MultLong": "\"84\""
+    },
+    "\"Form_BossEquipmentPartQuick_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_BossEquipmentPartQuick_txt_lv\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_txt_lv\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_BossEquipmentPartQuick_common_stepper_txt_max\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_common_stepper_txt_max\"",
+      "m_mKeyValue": "\"Max\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"Form_BossEquipmentPartQuick_common_stepper_txt_min\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_common_stepper_txt_min\"",
+      "m_mKeyValue": "\"Min\"",
+      "m_MultLong": "\"4\""
+    },
+    "\"Form_BossEquipmentPartQuick_txt_start_sweep\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_txt_start_sweep\"",
+      "m_mKeyValue": "\"Quick Clear\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BossEquipmentPartQuick_txt_upgrade_black\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartQuick_txt_upgrade_black\"",
+      "m_mKeyValue": "\"Cancel\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_BossEquipmentPartReward_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartReward_txt_frame_big_title\"",
+      "m_mKeyValue": "\"Reward Info\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_BossEquipmentPartReward_txt_soul\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartReward_txt_soul\"",
+      "m_mKeyValue": "\"Stage\"",
+      "m_MultLong": "\"13\""
+    },
+    "\"Form_BossEquipmentPartReward_txt_reward\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartReward_txt_reward\"",
+      "m_mKeyValue": "\"Reward\"",
+      "m_MultLong": "\"40\""
+    },
+    "\"Form_BossEquipmentPartReward_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_BossEquipmentPartReward_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
     },
     "\"Form_BossReward_txt_frame_big_title\"": {
       "m_bError": null,
@@ -13552,13 +14531,13 @@
     "\"Form_EquipmentCopyMain_txt_quick\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentCopyMain_txt_quick\"",
-      "m_mKeyValue": "\"Quick Slay\"",
+      "m_mKeyValue": "\"Quick Exorcise\"",
       "m_MultLong": "\"15\""
     },
     "\"Form_EquipmentCopyMain_txt_quick_grey\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentCopyMain_txt_quick_grey\"",
-      "m_mKeyValue": "\"Quick Slay\"",
+      "m_mKeyValue": "\"Quick Exorcise\"",
       "m_MultLong": "\"15\""
     },
     "\"Form_EquipmentCopyMain_txt_start\"": {
@@ -13579,17 +14558,137 @@
       "m_mKeyValue": "\"Back\"",
       "m_MultLong": "\"7\""
     },
+    "\"Form_EquipmentCopyMainChoose_txt_basic\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_basic\"",
+      "m_mKeyValue": "\"Restless Crypt\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_EquipmentCopyMainChoose_txt_part\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_part\"",
+      "m_mKeyValue": "\"Haunted Sepulcher\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_EquipmentCopyMainChoose_txt_extra\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_extra\"",
+      "m_mKeyValue": "\"Possible Drop\"",
+      "m_MultLong": "\"10\""
+    },
     "\"Form_EquipmentCopyMainChoose_txt_time\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_time\"",
       "m_mKeyValue": "\"Remaining Challenge Attempts:\"",
       "m_MultLong": "\"\""
     },
+    "\"Form_EquipmentCopyMainChoose_txt_enter\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_enter\"",
+      "m_mKeyValue": "\"Journey From Beyond\"",
+      "m_MultLong": "\"18\""
+    },
     "\"Form_EquipmentCopyMainChoose_txt_reward\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentCopyMainChoose_txt_reward\"",
       "m_mKeyValue": "\"Reward <size=32>x2</size>\"",
       "m_MultLong": "\"\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_basic\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_basic\"",
+      "m_mKeyValue": "\"Restless Crypt\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_part\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_part\"",
+      "m_mKeyValue": "\"Haunted Sepulcher\"",
+      "m_MultLong": "\"15\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_extra\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_extra\"",
+      "m_mKeyValue": "\"Possible Drop\"",
+      "m_MultLong": "\"10\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_time\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_time\"",
+      "m_mKeyValue": "\"Remaining Challenge Attempts:\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_enter\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_enter\"",
+      "m_mKeyValue": "\"Journey From Beyond\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_opened1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_opened1\"",
+      "m_mKeyValue": "\"Journey From Beyond Now Live\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_reward\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_reward\"",
+      "m_mKeyValue": "\"Reward <size=32>x2</size>\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_opened2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_opened2\"",
+      "m_mKeyValue": "\"Journey From Beyond Now Live\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_opened3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_opened3\"",
+      "m_mKeyValue": "\"Journey From Beyond Now Live\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"Form_EquipmentCopyMainChoose2_txt_opened4\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentCopyMainChoose2_txt_opened4\"",
+      "m_mKeyValue": "\"Journey From Beyond Now Live\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"Form_EquipmentLimitTimeActivity_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentLimitTimeActivity_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_EquipmentLimitTimeActivity_txt_activity_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentLimitTimeActivity_txt_activity_title\"",
+      "m_mKeyValue": "\"Journey From Beyond\"",
+      "m_MultLong": "\"34\""
+    },
+    "\"Form_EquipmentLimitTimeActivity_m_z_activity_tip\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentLimitTimeActivity_m_z_activity_tip\"",
+      "m_mKeyValue": "\"Clear stages for points & great rewards!\"",
+      "m_MultLong": "\"58\""
+    },
+    "\"Form_EquipmentLimitTimeActivity_txt_task\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentLimitTimeActivity_txt_task\"",
+      "m_mKeyValue": "\"Personal Tasks\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"Form_EquipmentLimitTimeActivity_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EquipmentLimitTimeActivity_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
     },
     "\"Form_EquipmentSweep_txt_frame_middle_title\"": {
       "m_bError": null,
@@ -13666,7 +14765,7 @@
     "\"Form_EquipmentSweepReward_txt_double_reward_title1\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentSweepReward_txt_double_reward_title1\"",
-      "m_mKeyValue": "\"Double Extra Rewards\"",
+      "m_mKeyValue": "\"Extra Rewards\"",
       "m_MultLong": "\"70\""
     },
     "\"Form_EquipmentSweepReward_txt_title2\"": {
@@ -13684,7 +14783,7 @@
     "\"Form_EquipmentSweepReward_txt_double_reward_title2\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentSweepReward_txt_double_reward_title2\"",
-      "m_mKeyValue": "\"Double Extra Rewards\"",
+      "m_mKeyValue": "\"Extra Rewards\"",
       "m_MultLong": "\"70\""
     },
     "\"Form_EquipmentSweepReward_txt_title3\"": {
@@ -13702,7 +14801,7 @@
     "\"Form_EquipmentSweepReward_txt_double_reward_title3\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_EquipmentSweepReward_txt_double_reward_title3\"",
-      "m_mKeyValue": "\"Double Extra Rewards\"",
+      "m_mKeyValue": "\"Extra Rewards\"",
       "m_MultLong": "\"70\""
     },
     "\"Form_EquipmentSweepReward_txt_finsh\"": {
@@ -13717,11 +14816,41 @@
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"3\""
     },
+    "\"Form_EuipCrossTask_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EuipCrossTask_txt_frame_big_title\"",
+      "m_mKeyValue": "\"Tasks\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_EuipCrossTask_txt_receive\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EuipCrossTask_txt_receive\"",
+      "m_mKeyValue": "\"Claim\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_EuipCrossTask_m_z_txt_Incomplete\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_EuipCrossTask_m_z_txt_Incomplete\"",
+      "m_mKeyValue": "\"Unfinished\"",
+      "m_MultLong": "\"14\""
+    },
     "\"ui_btn_bosschoose_txt_reward\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_btn_bosschoose_txt_reward\"",
       "m_mKeyValue": "\"Reward <size=32>x2</size>\"",
       "m_MultLong": "\"8\""
+    },
+    "\"ui_btn_bosschoose2_txt_opened\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_btn_bosschoose2_txt_opened\"",
+      "m_mKeyValue": "\"Journey From Beyond Now Live\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"ui_btn_bosschoose2_txt_reward\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_btn_bosschoose2_txt_reward\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
     },
     "\"Form_EquipT10Overload_common_item_txt_LV\"": {
       "m_bError": null,
@@ -14285,6 +15414,30 @@
       "m_bError": null,
       "m_KeyName": "\"Form_GachaConfirm_txt\"",
       "m_mKeyValue": "\"Confirm\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GachaExchangePop_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GachaExchangePop_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_GachaExchangePop_txt_upgrade_black\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GachaExchangePop_txt_upgrade_black\"",
+      "m_mKeyValue": "\"Cancel\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GachaExchangePop_txt\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GachaExchangePop_txt\"",
+      "m_mKeyValue": "\"Redeem\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GachaExchangePop_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GachaExchangePop_txt_grey\"",
+      "m_mKeyValue": "\"Redeem\"",
       "m_MultLong": "\"21\""
     },
     "\"Form_GachaMain_txt_shopdesc\"": {
@@ -15037,12 +16190,6 @@
       "m_mKeyValue": "\"Herald x10\"",
       "m_MultLong": "\"22\""
     },
-    "\"ui_gacha_panel_1010_txt_timedesc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"ui_gacha_panel_1010_txt_timedesc\"",
-      "m_mKeyValue": "\"Ends in\"",
-      "m_MultLong": "\"10\""
-    },
     "\"ui_gacha_panel_1010_txt_desc\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_gacha_panel_1010_txt_desc\"",
@@ -15052,7 +16199,7 @@
     "\"ui_gacha_panel_1010_txt_door_tip\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_gacha_panel_1010_txt_door_tip\"",
-      "m_mKeyValue": "\"This Vassal features an exclusive interactive scene, available in the Satin Boudoir.\"",
+      "m_mKeyValue": "\"Reach Spirit Siphon Tier 3 with this Vassal to unlock an interactive feature in Satin Boudoir.\"",
       "m_MultLong": "\"32\""
     },
     "\"ui_gacha_panel_1010_txt_content2\"": {
@@ -15096,12 +16243,6 @@
       "m_KeyName": "\"ui_gacha_panel_1010_txt_cleargray10\"",
       "m_mKeyValue": "\"Herald x10\"",
       "m_MultLong": "\"22\""
-    },
-    "\"ui_gacha_panel_1011_txt_timedesc\"": {
-      "m_bError": null,
-      "m_KeyName": "\"ui_gacha_panel_1011_txt_timedesc\"",
-      "m_mKeyValue": "\"Ends in\"",
-      "m_MultLong": "\"10\""
     },
     "\"ui_gacha_panel_1011_txt_desc\"": {
       "m_bError": null,
@@ -15148,6 +16289,108 @@
     "\"ui_gacha_panel_1011_txt_cleargray10\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_gacha_panel_1011_txt_cleargray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_txt_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_desc\"",
+      "m_mKeyValue": "\"Limited-time Rate-UP!\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_gacha_panel_1012_txt_door_tip\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_door_tip\"",
+      "m_mKeyValue": "\"Reach Spirit Siphon Tier 3 with this Vassal to unlock an interactive feature in Satin Boudoir.\"",
+      "m_MultLong": "\"32\""
+    },
+    "\"ui_gacha_panel_1012_txt_content2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_content2\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_txt_contentgray1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_contentgray1\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_txt_content1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_content1\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_txt_contentgray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_contentgray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_dailyfree_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_dailyfree_num\"",
+      "m_mKeyValue": "\"508\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_gacha_panel_1012_txt_content10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_content10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1012_txt_cleargray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1012_txt_cleargray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_txt_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_desc\"",
+      "m_mKeyValue": "\"Limited-time Rate-UP!\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_gacha_panel_1013_txt_content2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_content2\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_txt_contentgray1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_contentgray1\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_txt_content1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_content1\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_txt_contentgray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_contentgray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_dailyfree_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_dailyfree_num\"",
+      "m_mKeyValue": "\"508\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_gacha_panel_1013_txt_content10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_content10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_1013_txt_cleargray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_1013_txt_cleargray10\"",
       "m_mKeyValue": "\"Herald x10\"",
       "m_MultLong": "\"22\""
     },
@@ -15228,6 +16471,72 @@
       "m_KeyName": "\"ui_gacha_panel_2_txt_desup3\"",
       "m_mKeyValue": "\"Herald requires Scroll of Firstborn.\"",
       "m_MultLong": "\"49\""
+    },
+    "\"ui_gacha_panel_2001_txt_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_desc\"",
+      "m_mKeyValue": "\"Synergy Vassal Limited Rate-UP!\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"ui_gacha_panel_2001_txt_name_desc\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_name_desc\"",
+      "m_mKeyValue": "\"Van Helsing, Ressa, Thibault, Tris\"",
+      "m_MultLong": "\"48\""
+    },
+    "\"ui_gacha_panel_2001_txt_emb\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_emb\"",
+      "m_mKeyValue": "\"Embrace Bonus\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"ui_gacha_panel_2001_txt_activity\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_activity\"",
+      "m_mKeyValue": "\"Synergy Bonus\"",
+      "m_MultLong": "\"17\""
+    },
+    "\"ui_gacha_panel_2001_txt_content2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_content2\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_2001_txt_contentgray1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_contentgray1\"",
+      "m_mKeyValue": "\"Herald x1\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_2001_txt_content1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_content1\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_2001_txt_contentgray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_contentgray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_2001_dailyfree_num\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_dailyfree_num\"",
+      "m_mKeyValue": "\"508\"",
+      "m_MultLong": "\"\""
+    },
+    "\"ui_gacha_panel_2001_txt_content10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_content10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
+    },
+    "\"ui_gacha_panel_2001_txt_cleargray10\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_gacha_panel_2001_txt_cleargray10\"",
+      "m_mKeyValue": "\"Herald x10\"",
+      "m_MultLong": "\"22\""
     },
     "\"ui_gacha_panel_3_m_z_txt_title\"": {
       "m_bError": null,
@@ -15331,6 +16640,36 @@
       "m_mKeyValue": "\"Event\"",
       "m_MultLong": "\"10\""
     },
+    "\"Form_Guild_txt_impeach\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guild_txt_impeach\"",
+      "m_mKeyValue": "\"Impeachment Vote\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_Guild_m_z_txt_vote1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guild_m_z_txt_vote1\"",
+      "m_mKeyValue": "\"Not Voted\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_Guild_m_z_txt_vote2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guild_m_z_txt_vote2\"",
+      "m_mKeyValue": "\"Voted\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_Guild_txt_opposition\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guild_txt_opposition\"",
+      "m_mKeyValue": "\"Against\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_Guild_txt_support\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Guild_txt_support\"",
+      "m_mKeyValue": "\"Support\"",
+      "m_MultLong": "\"\""
+    },
     "\"Form_Guild_txt_back_name\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Guild_txt_back_name\"",
@@ -15413,12 +16752,6 @@
       "m_bError": null,
       "m_KeyName": "\"Form_GuildCreate_txt_join\"",
       "m_mKeyValue": "\"Establish\"",
-      "m_MultLong": "\"22\""
-    },
-    "\"Form_GuildCreate_txt_contentgray\"": {
-      "m_bError": null,
-      "m_KeyName": "\"Form_GuildCreate_txt_contentgray\"",
-      "m_mKeyValue": "\"Start\"",
       "m_MultLong": "\"22\""
     },
     "\"Form_GuildCreate_txt_item_num\"": {
@@ -15679,6 +17012,96 @@
       "m_mKeyValue": "\"Back\"",
       "m_MultLong": "\"7\""
     },
+    "\"Form_GuildIImpeachVotePop_txt_frame_big_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_frame_big_title\"",
+      "m_mKeyValue": "\"Impeachment Vote\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_impeachtitle\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_impeachtitle\"",
+      "m_mKeyValue": "\"Initiate Impeachment\"",
+      "m_MultLong": "\"31\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_leader\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_leader\"",
+      "m_mKeyValue": "\"Current Leader\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_sell\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_sell\"",
+      "m_mKeyValue": "\"Transfer\"",
+      "m_MultLong": "\"23\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_netxleader\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_netxleader\"",
+      "m_mKeyValue": "\"Successor\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_support1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_support1\"",
+      "m_mKeyValue": "\"Support:\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_opposition1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_opposition1\"",
+      "m_mKeyValue": "\"Against:\"",
+      "m_MultLong": "\"20\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_support2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_support2\"",
+      "m_mKeyValue": "\"Support Impeachment\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_opposition2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_opposition2\"",
+      "m_mKeyValue": "\"Against Impeachment\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_result\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_result\"",
+      "m_mKeyValue": "\"Voted-\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"Form_GuildIImpeachVotePop_txt_endtime\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildIImpeachVotePop_txt_endtime\"",
+      "m_mKeyValue": "\"Voting Ends\"",
+      "m_MultLong": "\"28\""
+    },
+    "\"Form_GuildImpeachPop_txt_frame_middle_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildImpeachPop_txt_frame_middle_title\"",
+      "m_mKeyValue": "\"Invite Member\"",
+      "m_MultLong": "\"8\""
+    },
+    "\"Form_GuildImpeachPop_txt_impeach\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildImpeachPop_txt_impeach\"",
+      "m_mKeyValue": "\"Confirm to initiate the impeachment?\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_GuildImpeachPop_txt_upgrade_black\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildImpeachPop_txt_upgrade_black\"",
+      "m_mKeyValue": "\"Cancel\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_GuildImpeachPop_txt\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildImpeachPop_txt\"",
+      "m_mKeyValue": "\"Confirm\"",
+      "m_MultLong": "\"21\""
+    },
     "\"Form_GuildinvitationPop_txt_frame_big_title\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_GuildinvitationPop_txt_frame_big_title\"",
@@ -15852,6 +17275,24 @@
       "m_KeyName": "\"Form_GuildMemberInfoPop_txt_stopchange\"",
       "m_mKeyValue": "\"Cancel Transfer\"",
       "m_MultLong": "\"15\""
+    },
+    "\"Form_GuildMemberInfoPop_txt_impech\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildMemberInfoPop_txt_impech\"",
+      "m_mKeyValue": "\"Impeach\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_GuildMemberInfoPop_txt_impech_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildMemberInfoPop_txt_impech_grey\"",
+      "m_mKeyValue": "\"Impeach\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_GuildMemberInfoPop_m_z_txt_ruledescription\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildMemberInfoPop_m_z_txt_ruledescription\"",
+      "m_mKeyValue": "\"Rules\"",
+      "m_MultLong": "\"\""
     },
     "\"Form_GuildMemberInfoPop_txt_leave\"": {
       "m_bError": null,
@@ -16038,6 +17479,12 @@
       "m_KeyName": "\"Form_GuildRaidClanRecord_txt_team\"",
       "m_mKeyValue": "\"Lineup\"",
       "m_MultLong": "\"12\""
+    },
+    "\"Form_GuildRaidClanRecord_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildRaidClanRecord_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_GuildRaidClanRecord_txt_noobtain\"": {
       "m_bError": null,
@@ -16320,6 +17767,12 @@
       "m_KeyName": "\"Form_GuildRaidRecordList_txt_teamdisplay\"",
       "m_mKeyValue": "\"Lineup\"",
       "m_MultLong": "\"14\""
+    },
+    "\"Form_GuildRaidRecordList_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_GuildRaidRecordList_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_GuildRaidRecordList_txt_noobtain\"": {
       "m_bError": null,
@@ -16932,6 +18385,66 @@
       "m_KeyName": "\"Form_HeroEquipReplacePop_txt_back_name\"",
       "m_mKeyValue": "\"Back\"",
       "m_MultLong": "\"7\""
+    },
+    "\"Form_HeroHaloPop_txt_frame_middle_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloPop_txt_frame_middle_title\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_HeroHaloPop_txt_halorole\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloPop_txt_halorole\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"62\""
+    },
+    "\"Form_HeroHaloPop_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloPop_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
+    "\"Form_HeroHaloPop_txt_noobtain\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloPop_txt_noobtain\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"11\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_frame_middle_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_frame_middle_title\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_tips1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_tips1\"",
+      "m_mKeyValue": "\"Activation Details: Only one Oathsworn in a formation may activate a Synergy effect.\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_haloroleName\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_haloroleName\"",
+      "m_mKeyValue": "\"Oathsworn\"",
+      "m_MultLong": "\"9\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_name\"",
+      "m_mKeyValue": "\"Initiate\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_entered\"",
+      "m_mKeyValue": "\"Deployed\"",
+      "m_MultLong": "\"27\""
+    },
+    "\"Form_HeroHaloTipsPop_txt_noobtain\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HeroHaloTipsPop_txt_noobtain\"",
+      "m_mKeyValue": "\"Unowned\"",
+      "m_MultLong": "\"11\""
     },
     "\"Form_HeroLegacyChange_txt_frame_big_title\"": {
       "m_bError": null,
@@ -17815,6 +19328,12 @@
       "m_mKeyValue": "\"Score\"",
       "m_MultLong": "\"6\""
     },
+    "\"Form_Heroheat_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Heroheat_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_Heroheat_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Heroheat_txt_noobtain\"",
@@ -18055,6 +19574,12 @@
       "m_mKeyValue": "\"1\"",
       "m_MultLong": "\"4\""
     },
+    "\"Form_HuntingNightBattleInfo_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_HuntingNightBattleInfo_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_HuntingNightBattleInfo_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_HuntingNightBattleInfo_txt_noobtain\"",
@@ -18131,13 +19656,13 @@
       "m_bError": null,
       "m_KeyName": "\"Form_HuntingNightRankList_txt_tab_ranksel\"",
       "m_mKeyValue": "\"All Rankings\"",
-      "m_MultLong": "\"10\""
+      "m_MultLong": "\"13\""
     },
     "\"Form_HuntingNightRankList_txt_tabranknor\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_HuntingNightRankList_txt_tabranknor\"",
       "m_mKeyValue": "\"All Rankings\"",
-      "m_MultLong": "\"20\""
+      "m_MultLong": "\"13\""
     },
     "\"Form_HuntingNightRankList_txt_ranking\"": {
       "m_bError": null,
@@ -18379,6 +19904,12 @@
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"\""
     },
+    "\"Form_Inherit_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Inherit_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_Inherit_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Inherit_txt_noobtain\"",
@@ -18520,7 +20051,7 @@
     "\"Form_InheritLevelQuickUpResult_txt_click\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_InheritLevelQuickUpResult_txt_click\"",
-      "m_mKeyValue": "\"Reserved String\"",
+      "m_mKeyValue": "\"Tap to Continue\"",
       "m_MultLong": "\"\""
     },
     "\"Form_InheritLevelUp_txt_title\"": {
@@ -18583,6 +20114,12 @@
       "m_mKeyValue": "\"Notice\"",
       "m_MultLong": "\"\""
     },
+    "\"Form_InheritTips_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_InheritTips_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_InheritTips_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_InheritTips_txt_noobtain\"",
@@ -18618,6 +20155,12 @@
       "m_KeyName": "\"Form_InheritUpTips_txt_upgrade\"",
       "m_mKeyValue": "\"Evolve\"",
       "m_MultLong": "\"21\""
+    },
+    "\"Form_InheritUpTips_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_InheritUpTips_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_InheritUpTips_txt_noobtain\"": {
       "m_bError": null,
@@ -19327,6 +20870,18 @@
       "m_mKeyValue": "\"Story Recap\"",
       "m_MultLong": "\"21\""
     },
+    "\"ui_level_panel_detail_txt_quickbattle1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_level_panel_detail_txt_quickbattle1\"",
+      "m_mKeyValue": "\"Quick Clear\"",
+      "m_MultLong": "\"18\""
+    },
+    "\"ui_level_panel_detail_txt_quickbattle2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_level_panel_detail_txt_quickbattle2\"",
+      "m_mKeyValue": "\"Start\"",
+      "m_MultLong": "\"18\""
+    },
     "\"Form_BondPhonePop_m_z_txt_title_bond1\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_BondPhonePop_m_z_txt_title_bond1\"",
@@ -19354,7 +20909,7 @@
     "\"Form_BondPhonePop_Text\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_BondPhonePop_Text\"",
-      "m_mKeyValue": "\"PH-​\"",
+      "m_mKeyValue": "\" \"",
       "m_MultLong": "\"\""
     },
     "\"Form_BondPhonePop_txt_placeholder_code\"": {
@@ -20017,6 +21572,12 @@
       "m_mKeyValue": "\"Back\"",
       "m_MultLong": "\"7\""
     },
+    "\"Form_Lounge_txt_targettips\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_txt_targettips\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"26\""
+    },
     "\"Form_Lounge_txt_contract\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Lounge_txt_contract\"",
@@ -20029,6 +21590,12 @@
       "m_mKeyValue": "\"Hold to Mark\"",
       "m_MultLong": "\"24\""
     },
+    "\"Form_Lounge_txt_taggetpop\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_txt_taggetpop\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"41\""
+    },
     "\"Form_Lounge_txt_bloodaffinity\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Lounge_txt_bloodaffinity\"",
@@ -20038,19 +21605,25 @@
     "\"Form_Lounge_txt_unavailable\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Lounge_txt_unavailable\"",
-      "m_mKeyValue": "\"Reserved String\"",
+      "m_mKeyValue": "\"Coming Soon\"",
       "m_MultLong": "\"26\""
     },
     "\"Form_Lounge_txt_confirm\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Lounge_txt_confirm\"",
-      "m_mKeyValue": "\"Reserved String\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"Form_Lounge_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_txt_grey\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
       "m_MultLong": "\"21\""
     },
     "\"Form_Lounge_txt_tipconfigteam\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Lounge_txt_tipconfigteam\"",
-      "m_mKeyValue": "\"After reaching Spirit Siphon Phase 3 with the Vassal, unlocks an interactive feature.\"",
+      "m_mKeyValue": "\"After reaching Spirit Siphon Tier 3 with the Vassal, unlocks an interactive feature.\"",
       "m_MultLong": "\"48\""
     },
     "\"Form_Lounge_txt_empty\"": {
@@ -20137,6 +21710,12 @@
       "m_mKeyValue": "\"Confirm Switching\"",
       "m_MultLong": "\"21\""
     },
+    "\"Form_LoungeHeroChange_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_LoungeHeroChange_txt_grey\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
     "\"Form_LoungeUpgrade_txt_click\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_LoungeUpgrade_txt_click\"",
@@ -20202,6 +21781,186 @@
       "m_KeyName": "\"Form_LoungeVictory_txt_click\"",
       "m_mKeyValue": "\"Tap to Return\"",
       "m_MultLong": "\"\""
+    },
+    "\"Form_Lounge_Test_txt_switch\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_switch\"",
+      "m_mKeyValue": "\"Switch Vassals\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_Lounge_Test_txt_guide\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_guide\"",
+      "m_mKeyValue": "\"Guide\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_Lounge_Test_txt_addition\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_addition\"",
+      "m_mKeyValue": "\"Vassal Bonus\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_Lounge_Test_txt_reset\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_reset\"",
+      "m_mKeyValue": "\"Reset Progress\"",
+      "m_MultLong": "\"16\""
+    },
+    "\"Form_Lounge_Test_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_Lounge_Test_txt_bloodaffinity\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_bloodaffinity\"",
+      "m_mKeyValue": "\"Vassal List\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"Form_Lounge_Test_txt_unavailable\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_unavailable\"",
+      "m_mKeyValue": "\"Coming Soon\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"Form_Lounge_Test_txt_tipconfigteam\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_tipconfigteam\"",
+      "m_mKeyValue": "\"After reaching Spirit Siphon Tier 3 with the Vassal, unlocks an interactive feature.\"",
+      "m_MultLong": "\"48\""
+    },
+    "\"Form_Lounge_Test_txt_empty\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Lounge_Test_txt_empty\"",
+      "m_mKeyValue": "\"No Eligible Vassals\"",
+      "m_MultLong": "\"52\""
+    },
+    "\"ui_lounge_fanu_txt_targettips\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_targettips\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_lounge_fanu_txt_contract\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_contract\"",
+      "m_mKeyValue": "\"Crimson Brand\"",
+      "m_MultLong": "\"19\""
+    },
+    "\"ui_lounge_fanu_txt_contract2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_contract2\"",
+      "m_mKeyValue": "\"Hold to Mark\"",
+      "m_MultLong": "\"24\""
+    },
+    "\"ui_lounge_fanu_txt_taggetpop\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_taggetpop\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"41\""
+    },
+    "\"ui_lounge_fanu_txt_bloodaffinity\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_bloodaffinity\"",
+      "m_mKeyValue": "\"Vassal List\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"ui_lounge_fanu_txt_unavailable\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_unavailable\"",
+      "m_mKeyValue": "\"Coming Soon\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_lounge_fanu_txt_confirm\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_confirm\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_lounge_fanu_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_grey\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_lounge_fanu_txt_tipconfigteam\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_tipconfigteam\"",
+      "m_mKeyValue": "\"After reaching Spirit Siphon Tier 3 with the Vassal, unlocks an interactive feature.\"",
+      "m_MultLong": "\"48\""
+    },
+    "\"ui_lounge_fanu_txt_empty\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_fanu_txt_empty\"",
+      "m_mKeyValue": "\"No Eligible Vassals\"",
+      "m_MultLong": "\"52\""
+    },
+    "\"ui_lounge_typhoeus_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"ui_lounge_typhoeus_txt_targettips\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_targettips\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_lounge_typhoeus_txt_contract\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_contract\"",
+      "m_mKeyValue": "\"Crimson Brand\"",
+      "m_MultLong": "\"19\""
+    },
+    "\"ui_lounge_typhoeus_txt_contract2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_contract2\"",
+      "m_mKeyValue": "\"Hold to Mark\"",
+      "m_MultLong": "\"24\""
+    },
+    "\"ui_lounge_typhoeus_txt_taggetpop\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_taggetpop\"",
+      "m_mKeyValue": "\"Objective\"",
+      "m_MultLong": "\"41\""
+    },
+    "\"ui_lounge_typhoeus_txt_bloodaffinity\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_bloodaffinity\"",
+      "m_mKeyValue": "\"Vassal List\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"ui_lounge_typhoeus_txt_unavailable\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_unavailable\"",
+      "m_mKeyValue": "\"Coming Soon\"",
+      "m_MultLong": "\"26\""
+    },
+    "\"ui_lounge_typhoeus_txt_confirm\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_confirm\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_lounge_typhoeus_txt_grey\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_grey\"",
+      "m_mKeyValue": "\"Confirm Switching\"",
+      "m_MultLong": "\"21\""
+    },
+    "\"ui_lounge_typhoeus_txt_tipconfigteam\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_tipconfigteam\"",
+      "m_mKeyValue": "\"After reaching Spirit Siphon Tier 3 with the Vassal, unlocks an interactive feature.\"",
+      "m_MultLong": "\"48\""
+    },
+    "\"ui_lounge_typhoeus_txt_empty\"": {
+      "m_bError": null,
+      "m_KeyName": "\"ui_lounge_typhoeus_txt_empty\"",
+      "m_mKeyValue": "\"No Eligible Vassals\"",
+      "m_MultLong": "\"52\""
     },
     "\"Form_MainExploreDetial_txt_click\"": {
       "m_bError": null,
@@ -20398,7 +22157,7 @@
     "\"Form_MallMonthCardEndPop_txt_frame_big_title\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_MallMonthCardEndPop_txt_frame_big_title\"",
-      "m_mKeyValue": "\"Pact Perks\"",
+      "m_mKeyValue": "\"Pact Benefits\"",
       "m_MultLong": "\"\""
     },
     "\"Form_MallMonthCardEndPop_txt_go\"": {
@@ -20452,7 +22211,7 @@
     "\"Form_MallMonthCardUnlockTips_txt_name\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_MallMonthCardUnlockTips_txt_name\"",
-      "m_mKeyValue": "\"Unlocked\"",
+      "m_mKeyValue": "\"Pact Benefits Activated\"",
       "m_MultLong": "\"\""
     },
     "\"Form_PickUpWindow_txt_frame_big_title\"": {
@@ -20566,6 +22325,18 @@
     "\"Form_Push_Gift_Reserve_common_item_txt_LV\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_Push_Gift_Reserve_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_Push_StageGift_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Push_StageGift_txt_title\"",
+      "m_mKeyValue": "\"Surprise Gift\"",
+      "m_MultLong": "\"36\""
+    },
+    "\"Form_Push_StageGift_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_Push_StageGift_common_item_txt_LV\"",
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"3\""
     },
@@ -20707,9 +22478,9 @@
       "m_mKeyValue": "\"LV.\"",
       "m_MultLong": "\"3\""
     },
-    "\"ui_activity_panel_LVL_txt_soldout\"": {
+    "\"ui_activity_panel_LVL_m_z_txt_soldout\"": {
       "m_bError": null,
-      "m_KeyName": "\"ui_activity_panel_LVL_txt_soldout\"",
+      "m_KeyName": "\"ui_activity_panel_LVL_m_z_txt_soldout\"",
       "m_mKeyValue": "\"Sold Out\"",
       "m_MultLong": "\"14\""
     },
@@ -20795,7 +22566,7 @@
       "m_bError": null,
       "m_KeyName": "\"ui_activity_panel_return_txt_headline\"",
       "m_mKeyValue": "\"Gift of Rebirth\"",
-      "m_MultLong": "\"23\""
+      "m_MultLong": "\"\""
     },
     "\"ui_activity_panel_return_txt_tile\"": {
       "m_bError": null,
@@ -20873,7 +22644,7 @@
       "m_bError": null,
       "m_KeyName": "\"ui_activity_panel_return_txt_tilename2\"",
       "m_mKeyValue": "\"Extra Rewards\"",
-      "m_MultLong": "\"13\""
+      "m_MultLong": "\"21\""
     },
     "\"ui_activity_panel_role_trial_txt_reward_title\"": {
       "m_bError": null,
@@ -21095,7 +22866,7 @@
       "m_bError": null,
       "m_KeyName": "\"ui_mall_MonthlyCardMain_New_txt_lock\"",
       "m_mKeyValue": "\"Locked\"",
-      "m_MultLong": "\"\""
+      "m_MultLong": "\"6\""
     },
     "\"ui_mall_MonthlyCardMain_New_txt_purchase2\"": {
       "m_bError": null,
@@ -21136,14 +22907,14 @@
     "\"ui_mall_MonthlyCardMain_New_txt_tips1\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_mall_MonthlyCardMain_New_txt_tips1\"",
-      "m_mKeyValue": "\"Pacts valid for 30 days. Duration stackable. |Activate any 2 Pacts simultaneously to unlock bonus perks.\"",
+      "m_mKeyValue": "\"Pacts valid for 30 days. Duration stackable. |Activate any 2 Pacts simultaneously to unlock Pact benefits.\"",
       "m_MultLong": "\"40\""
     },
     "\"ui_mall_MonthlyCardMain_New_txt_info\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_mall_MonthlyCardMain_New_txt_info\"",
-      "m_mKeyValue": "\"Perks:\"",
-      "m_MultLong": "\"7\""
+      "m_mKeyValue": "\"Benefits:\"",
+      "m_MultLong": "\"8\""
     },
     "\"ui_mall_MonthlyCardMain_New_m_z_txt_lock\"": {
       "m_bError": null,
@@ -21348,6 +23119,12 @@
       "m_KeyName": "\"Form_PersonalCard_text_desc3\"",
       "m_mKeyValue": "\"Vassals\"",
       "m_MultLong": "\"20\""
+    },
+    "\"Form_PersonalCard_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PersonalCard_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_PersonalCard_txt_noobtain\"": {
       "m_bError": null,
@@ -21679,6 +23456,12 @@
       "m_mKeyValue": "\"1\"",
       "m_MultLong": "\"4\""
     },
+    "\"Form_PersonalRaidBattleInfo_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PersonalRaidBattleInfo_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_PersonalRaidBattleInfo_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_PersonalRaidBattleInfo_txt_noobtain\"",
@@ -21756,6 +23539,12 @@
       "m_KeyName": "\"Form_PersonalRaidCopyTips_txt_desc1\"",
       "m_mKeyValue": "\"Copied Successfully\"",
       "m_MultLong": "\"64\""
+    },
+    "\"Form_PersonalRaidCopyTips_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PersonalRaidCopyTips_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_PersonalRaidCopyTips_txt_noobtain\"": {
       "m_bError": null,
@@ -22243,6 +24032,12 @@
       "m_mKeyValue": "\"Edit Team\"",
       "m_MultLong": "\"6\""
     },
+    "\"Form_PvpMain_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PvpMain_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_PvpMain_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_PvpMain_txt_noobtain\"",
@@ -22573,6 +24368,12 @@
       "m_mKeyValue": "\"1\"",
       "m_MultLong": "\"4\""
     },
+    "\"Form_PvpReplaceDetails_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PvpReplaceDetails_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
+    },
     "\"Form_PvpReplaceDetails_txt_noobtain\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_PvpReplaceDetails_txt_noobtain\"",
@@ -22602,6 +24403,12 @@
       "m_KeyName": "\"Form_PvpReplaceDetailsIngame_txt_team\"",
       "m_mKeyValue": "\"Lineup 01\"",
       "m_MultLong": "\"\""
+    },
+    "\"Form_PvpReplaceDetailsIngame_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PvpReplaceDetailsIngame_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_PvpReplaceDetailsIngame_txt_noobtain\"": {
       "m_bError": null,
@@ -22698,6 +24505,12 @@
       "m_KeyName": "\"Form_PvpReplaceMain_txt_btn_defense\"",
       "m_mKeyValue": "\"Edit Lineup\"",
       "m_MultLong": "\"\""
+    },
+    "\"Form_PvpReplaceMain_txt_entered\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_PvpReplaceMain_txt_entered\"",
+      "m_mKeyValue": "\"\"",
+      "m_MultLong": "\"27\""
     },
     "\"Form_PvpReplaceMain_txt_noobtain\"": {
       "m_bError": null,
@@ -23341,6 +25154,72 @@
       "m_mKeyValue": "\"Purchase\"",
       "m_MultLong": "\"22\""
     },
+    "\"Form_RechargeReward_txt_click\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_click\"",
+      "m_mKeyValue": "\"Tap to Continue\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_RechargeReward_txt_back_name\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_back_name\"",
+      "m_mKeyValue": "\"Back\"",
+      "m_MultLong": "\"7\""
+    },
+    "\"Form_RechargeReward_txt_title\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_title\"",
+      "m_mKeyValue": "\"Black Lotus Bundle\"",
+      "m_MultLong": "\"\""
+    },
+    "\"Form_RechargeReward_txt_condition\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_condition\"",
+      "m_mKeyValue": "\"Make any purchase and receive Puppet Strings.\"",
+      "m_MultLong": "\"69\""
+    },
+    "\"Form_RechargeReward_m_z_txt_rewardany1\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_m_z_txt_rewardany1\"",
+      "m_mKeyValue": "\"Obtain Puppet Strings to claim.\"",
+      "m_MultLong": "\"40\""
+    },
+    "\"Form_RechargeReward_txt_rewardnow\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_rewardnow\"",
+      "m_mKeyValue": "\"Get Puppet Strings to collect all rewards.\"",
+      "m_MultLong": "\"58\""
+    },
+    "\"Form_RechargeReward_common_item_txt_LV\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_common_item_txt_LV\"",
+      "m_mKeyValue": "\"LV.\"",
+      "m_MultLong": "\"3\""
+    },
+    "\"Form_RechargeReward_txt_rewardany2\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_rewardany2\"",
+      "m_mKeyValue": "\"Obtain Puppet Strings to claim.\"",
+      "m_MultLong": "\"46\""
+    },
+    "\"Form_RechargeReward_txt_rewardany3\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_rewardany3\"",
+      "m_mKeyValue": "\"Obtain Puppet Strings for great rewards.\"",
+      "m_MultLong": "\"44\""
+    },
+    "\"Form_RechargeReward_txt_slidernow\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_slidernow\"",
+      "m_mKeyValue": "\"Current Puppet Strings\"",
+      "m_MultLong": "\"12\""
+    },
+    "\"Form_RechargeReward_txt_go\"": {
+      "m_bError": null,
+      "m_KeyName": "\"Form_RechargeReward_txt_go\"",
+      "m_mKeyValue": "\"Join Event\"",
+      "m_MultLong": "\"11\""
+    },
     "\"ui_panel_recharge_txt_tips\"": {
       "m_bError": null,
       "m_KeyName": "\"ui_panel_recharge_txt_tips\"",
@@ -23681,13 +25560,13 @@
       "m_bError": null,
       "m_KeyName": "\"Form_RogueStageMain_txt_key_desc_prew\"",
       "m_mKeyValue": "\"Today's Rewards\"",
-      "m_MultLong": "\"21\""
+      "m_MultLong": "\"16\""
     },
     "\"Form_RogueStageMain_txt_reward\"": {
       "m_bError": null,
       "m_KeyName": "\"Form_RogueStageMain_txt_reward\"",
       "m_mKeyValue": "\"Reward <size=32>x2</size>\"",
-      "m_MultLong": "\"14\""
+      "m_MultLong": "\"12\""
     },
     "\"Form_RogueStageMain_txt_back_name\"": {
       "m_bError": null,
@@ -24416,5 +26295,5 @@
       "m_MultLong": "\"10\""
     }
   },
-  "status": "processed_4069_items"
+  "status": "processed_4382_items"
 }

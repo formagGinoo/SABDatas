@@ -1,5 +1,6 @@
 {
   "className": "CData_AttractVoiceText",
+  "timestamp": "2025-10-23T19:25:03.496Z",
   "data": {
     "2001001": {
       "_type": "nested_dictionary",
@@ -15806,7 +15807,7 @@
           "m_VoiceId": "2059020",
           "m_TextId": "1",
           "m_NextId": null,
-          "m_mText": "\"It's been a long while since someone pat my head... How nostalgic.\"",
+          "m_mText": "\"It's been a long while since someone patted my head... How nostalgic.\"",
           "m_voice": "\"Play_vo_20590_system_taphead02\""
         }
       }
@@ -19365,7 +19366,667 @@
           "m_voice": "\"Play_vo_20710_system_dispatch\""
         }
       }
+    },
+    "2072001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Time for a real fight!\"",
+          "m_voice": "\"Play_vo_20720_battle_maxskill01\""
+        }
+      }
+    },
+    "2072002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You're wide open.\"",
+          "m_voice": "\"Play_vo_20720_battle_skill01\""
+        }
+      }
+    },
+    "2072003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'll never know… what lies beyond...\"",
+          "m_voice": "\"Play_vo_20720_battle_death\""
+        }
+      }
+    },
+    "2072004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Don't waste my time with fodder.\"",
+          "m_voice": "\"Play_vo_20720_battle_array\""
+        }
+      }
+    },
+    "2072005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'll call that a warm-up.\"",
+          "m_voice": "\"Play_vo_20720_battle_stagewin\""
+        }
+      }
+    },
+    "2072006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You certainly look the part. Let's see how much fight you've got.\"",
+          "m_voice": "\"Play_vo_20720_system_show\""
+        }
+      }
+    },
+    "2072007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Checking to see if the weapon's still sharp?\"",
+          "m_voice": "\"Play_vo_20720_system_greet\""
+        }
+      }
+    },
+    "2072008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hm… This will do.\"",
+          "m_voice": "\"Play_vo_20720_system_levelup\""
+        }
+      }
+    },
+    "2072009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Peak performance! The First of the Silver Cross will be ours.\"",
+          "m_voice": "\"Play_vo_20720_system_breakthrough\""
+        }
+      }
+    },
+    "2072010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Enough time for three trips.\"",
+          "m_voice": "\"Play_vo_20720_system_dispatch\""
+        }
+      }
+    },
+    "2072011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You've been staring. Inspecting my armor again?\"",
+          "m_voice": "\"Play_vo_20720_system_idle\""
+        }
+      }
+    },
+    "2072012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"A hall full of warriors, that's more like it.\"",
+          "m_voice": "\"Play_vo_20720_system_transfusion\""
+        }
+      }
+    },
+    "2072013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Usually, all I get are orders and kill lists.\"",
+          "m_voice": "\"Play_vo_20720_system_gift01\""
+        }
+      }
+    },
+    "2072014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Useless for combat... but I'll keep it. Thanks.\"",
+          "m_voice": "\"Play_vo_20720_system_gift02\""
+        }
+      }
+    },
+    "2072015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I usually operate alone… but it seems we have potential.\"",
+          "m_voice": "\"Play_vo_20720_system_affinityup\""
+        }
+      }
+    },
+    "2072016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Were it not for my Silver Blood and this suit of armor, perhaps my loyalty would lie with you.\"",
+          "m_voice": "\"Play_vo_20720_system_affinitymax\""
+        }
+      }
+    },
+    "2072017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Hands off. That edge will cut you.\"",
+          "m_voice": "\"Play_vo_20720_system_tapgeneric01\""
+        }
+      }
+    },
+    "2072018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"What, trying to pry off the armor? Hm… there. Go on, try again.\"",
+          "m_voice": "\"Play_vo_20720_system_tapgeneric02\""
+        }
+      }
+    },
+    "2072019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Our hair color isn't all that different.\"",
+          "m_voice": "\"Play_vo_20720_system_taphead01\""
+        }
+      }
+    },
+    "2072020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"So this is... trust. The ability to get close.\"",
+          "m_voice": "\"Play_vo_20720_system_taphead02\""
+        }
+      }
+    },
+    "2072021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Quit it. That tickles.\"",
+          "m_voice": "\"Play_vo_20720_system_tapsp01\""
+        }
+      }
+    },
+    "2072022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2072022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Shall we soar? You choose the destination.\"",
+          "m_voice": "\"Play_vo_20720_system_tapsp02\""
+        }
+      }
+    },
+    "2073001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073001",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This may hurt a little...\"",
+          "m_voice": "\"Play_vo_20730_battle_maxskill01\""
+        }
+      }
+    },
+    "2073002": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073002",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'm sorry… please step aside.\"",
+          "m_voice": "\"Play_vo_20730_battle_skill01\""
+        }
+      }
+    },
+    "2073003": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073003",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"The wind... has ceased...\"",
+          "m_voice": "\"Play_vo_20730_battle_death\""
+        }
+      }
+    },
+    "2073004": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073004",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Um… I-I'll do my best.\"",
+          "m_voice": "\"Play_vo_20730_battle_array\""
+        }
+      }
+    },
+    "2073005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073005",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Battles... they're so stressful...\"",
+          "m_voice": "\"Play_vo_20730_battle_stagewin\""
+        }
+      }
+    },
+    "2073006": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073006",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'm Letitia... I... Um, hope you don't mind... how I look...\"",
+          "m_voice": "\"Play_vo_20730_system_show\""
+        }
+      }
+    },
+    "2073007": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073007",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Ack, I didn't startle you with my appearance... did I...?\"",
+          "m_voice": "\"Play_vo_20730_system_greet\""
+        }
+      }
+    },
+    "2073008": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073008",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I think I've grown stronger...\"",
+          "m_voice": "\"Play_vo_20730_system_levelup\""
+        }
+      }
+    },
+    "2073009": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073009",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I hope this strength never harms those around me...\"",
+          "m_voice": "\"Play_vo_20730_system_breakthrough\""
+        }
+      }
+    },
+    "2073010": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073010",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"You're entrusting this to me? I-I'll do my best...\"",
+          "m_voice": "\"Play_vo_20730_system_dispatch\""
+        }
+      }
+    },
+    "2073011": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073011",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Just staying here with you feels so peaceful...\"",
+          "m_voice": "\"Play_vo_20730_system_idle\""
+        }
+      }
+    },
+    "2073012": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073012",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I'll do my best to fit in with everyone.\"",
+          "m_voice": "\"Play_vo_20730_system_transfusion\""
+        }
+      }
+    },
+    "2073013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073013",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's been so long since I received a gift... Thank you...\"",
+          "m_voice": "\"Play_vo_20730_system_gift01\""
+        }
+      }
+    },
+    "2073014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073014",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Oh my, this is too... Can I really have it?\"",
+          "m_voice": "\"Play_vo_20730_system_gift02\""
+        }
+      }
+    },
+    "2073015": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073015",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I have so many happy memories after meeting you...\"",
+          "m_voice": "\"Play_vo_20730_system_affinityup\""
+        }
+      }
+    },
+    "2073016": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073016",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Those endless days led me here, to this moment I've long awaited...\"",
+          "m_voice": "\"Play_vo_20730_system_affinitymax\""
+        }
+      }
+    },
+    "2073017": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073017",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This feels awkward...\"",
+          "m_voice": "\"Play_vo_20730_system_tapgeneric01\""
+        }
+      }
+    },
+    "2073018": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073018",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"My skin is cold to the touch... I hope it doesn't put you off...\"",
+          "m_voice": "\"Play_vo_20730_system_tapgeneric02\""
+        }
+      }
+    },
+    "2073019": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073019",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"Wah—! S-sorry... my horn... it's sensitive...\"",
+          "m_voice": "\"Play_vo_20730_system_taphead01\""
+        }
+      }
+    },
+    "2073020": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073020",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"It's comforting... Don't be afraid to use a little more strength...\"",
+          "m_voice": "\"Play_vo_20730_system_taphead02\""
+        }
+      }
+    },
+    "2073021": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073021",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"This... it's hideous... I don't want you to be afraid of me...\"",
+          "m_voice": "\"Play_vo_20730_system_tapsp01\""
+        }
+      }
+    },
+    "2073022": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_VoiceId": "2073022",
+          "m_TextId": "1",
+          "m_NextId": null,
+          "m_mText": "\"I heard swordsmen's hands are rough... but yours are so warm... Please stay a little longer...\"",
+          "m_voice": "\"Play_vo_20730_system_tapsp02\""
+        }
+      }
     }
   },
-  "status": "processed_1291_items"
+  "status": "processed_1335_items"
 }

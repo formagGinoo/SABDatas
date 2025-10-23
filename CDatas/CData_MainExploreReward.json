@@ -1,5 +1,6 @@
 {
   "className": "CData_MainExploreReward",
+  "timestamp": "2025-10-23T19:25:20.488Z",
   "data": {
     "2": {
       "m_bError": null,
@@ -95,7 +96,12 @@
       "m_bError": null,
       "m_MainChapter": "20",
       "m_MainChapterReward": "[[101,50]]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_MainChapter": "21",
+      "m_MainChapterReward": "[[101,50]]"
     }
   },
-  "status": "processed_19_items"
+  "status": "processed_20_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_MainExplore",
+  "timestamp": "2025-10-23T19:25:20.458Z",
   "data": {
     "2": {
       "_type": "nested_dictionary",
@@ -943,7 +944,64 @@
           "m_SubsectionID": "[]"
         }
       }
+    },
+    "21": {
+      "_type": "nested_dictionary",
+      "_count": 5,
+      "_processed": 5,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_MainChapter": "21",
+          "m_ClueID": "1",
+          "m_UnlockLevel": "1121020",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_MainChapter": "21",
+          "m_ClueID": "2",
+          "m_UnlockLevel": "1121040",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_MainChapter": "21",
+          "m_ClueID": "3",
+          "m_UnlockLevel": "1121050",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "4": {
+          "m_bError": null,
+          "m_MainChapter": "21",
+          "m_ClueID": "4",
+          "m_UnlockLevel": "1121070",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        },
+        "5": {
+          "m_bError": null,
+          "m_MainChapter": "21",
+          "m_ClueID": "5",
+          "m_UnlockLevel": "1121080",
+          "m_Type": null,
+          "m_RewardType": "1",
+          "m_Reward": "[[101,50]]",
+          "m_SubsectionID": "[]"
+        }
+      }
     }
   },
-  "status": "processed_19_items"
+  "status": "processed_20_items"
 }

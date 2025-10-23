@@ -1,5 +1,6 @@
 {
   "className": "CData_AttractStudyRoleSize",
+  "timestamp": "2025-10-23T19:25:03.096Z",
   "data": {
     "20010": {
       "_type": "nested_dictionary",
@@ -845,13 +846,22 @@
     },
     "20580": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 2,
+      "_processed": 2,
       "data": {
         "0": {
           "m_bError": null,
           "m_ID": "20580",
           "m_FashionID": null,
+          "m_RoleScake": "0.8199999928474426",
+          "m_RoleOffset": "[0.23999999463558197,-0.3100000023841858,0.3310000002384186]",
+          "m_RoleRotaion": "39.58000183105469",
+          "m_IsShowChar": "1"
+        },
+        "6058001": {
+          "m_bError": null,
+          "m_ID": "20580",
+          "m_FashionID": "6058001",
           "m_RoleScake": "0.8199999928474426",
           "m_RoleOffset": "[0.23999999463558197,-0.3100000023841858,0.3310000002384186]",
           "m_RoleRotaion": "39.58000183105469",
@@ -1068,7 +1078,39 @@
           "m_IsShowChar": "1"
         }
       }
+    },
+    "20720": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20720",
+          "m_FashionID": null,
+          "m_RoleScake": "0.6499999761581421",
+          "m_RoleOffset": "[0.05000000074505806,-0.35899999737739563,0.21699999272823334]",
+          "m_RoleRotaion": "36.5",
+          "m_IsShowChar": "1"
+        }
+      }
+    },
+    "20730": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20730",
+          "m_FashionID": null,
+          "m_RoleScake": "0.6800000071525574",
+          "m_RoleOffset": "[0.17900000512599945,-0.35899999737739563,0.21699999272823334]",
+          "m_RoleRotaion": "36.5",
+          "m_IsShowChar": "1"
+        }
+      }
     }
   },
-  "status": "processed_60_items"
+  "status": "processed_62_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_BattleGlobalEffect",
+  "timestamp": "2025-10-23T19:25:05.514Z",
   "data": {
     "1000702": {
       "m_bError": null,
@@ -347,6 +348,66 @@
       "m_Param": "[20000251,20000032,20000033,20000034]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[6011]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000013": {
+      "m_bError": null,
+      "m_ID": "2000013",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Plague Veil\"",
+      "m_mDesc": "\"A plague spreads: Allies lose HP equal to {0} of their Max HP every Basic ATK, and those with less than {0} of Max HP die instantly.\"",
+      "m_Param": "[20000261]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6012]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000014": {
+      "m_bError": null,
+      "m_ID": "2000014",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Sunder Armor\"",
+      "m_mDesc": "\"Every {0} sec, enemies gain a Shield equal to {1} of their Max HP. Once the Shield is broken, they gain 1 stack of Sunder Armor. Each stack reduces DEF by {2}.\"",
+      "m_Param": "[20000271,20000272,20000273]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6013]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000015": {
+      "m_bError": null,
+      "m_ID": "2000015",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Death Shroud\"",
+      "m_mDesc": "\"Every {0} sec, a Death Shroud emanates from the Frost Antler Assassin, lasting 10 sec. Enemies within the shroud lose HP equal to {1} of their Max HP every sec. If a unit's HP is lower than {1} of their Max HP, they die instantly.\"",
+      "m_Param": "[20000281,20000282]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6014]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000016": {
+      "m_bError": null,
+      "m_ID": "2000016",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Thunder Storm\"",
+      "m_mDesc": "\"A thunderstorm brews: Once an enemy takes CRIT DMG from an Ultimate {0} times, they are struck by lightning and lose HP equal to {1} of their Max HP.\"",
+      "m_Param": "[20000291,20000292]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6015]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "2000017": {
+      "m_bError": null,
+      "m_ID": "2000017",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/GlobalBuff_900001\"",
+      "m_mName": "\"Noxious Gas\"",
+      "m_mDesc": "\"Vapors shroud the field: Allies lose HP equal to {0} of their Max HP per sec, and ATK SPD is reduced by {2} for units with HP Percentage below {1}. Units with HP Percentage below {3} become Stunned.\"",
+      "m_Param": "[20000251,20000032,20000033,20000034]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[6016]",
       "m_ShowBuffDesc": "[]"
     },
     "3031201": {
@@ -799,7 +860,7 @@
       "m_CampType": "1",
       "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4927000\"",
       "m_mName": "\"Fighting Spirit\"",
-      "m_mDesc": "\"For every Ultimate cast, that Vassal permanently increases ATK by <style=Highlight>{0}</style> and CRIT Hit DMG by <style=Highlight>{1}</style>.\"",
+      "m_mDesc": "\"For every Ultimate cast, that Vassal permanently increases ATK by <style=Highlight>{0}</style> and CRIT DMG by <style=Highlight>{1}</style>.\"",
       "m_Param": "[49220013,49220014]",
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4925]",
@@ -852,6 +913,66 @@
       "m_ScriptName": "\"\"",
       "m_BuffList": "[4929]",
       "m_ShowBuffDesc": "[4912]"
+    },
+    "4932000": {
+      "m_bError": null,
+      "m_ID": "4932000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4932000\"",
+      "m_mName": "\"Unbridled Pain\"",
+      "m_mDesc": "\"Each time an ally deals CRIT DMG, their Ultimate DMG increases by <style=Highlight>{0}</style>. This effect can stack up to <style=Highlight>{1}</style> and lasts until the end of battle.\"",
+      "m_Param": "[49300001,49300002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4930]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4933000": {
+      "m_bError": null,
+      "m_ID": "4933000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4933000\"",
+      "m_mName": "\"Will to Power\"",
+      "m_mDesc": "\"Ultimate DMG increases by <style=Highlight>{0}</style>, but the caster will be inflicted with ATK SPD Down (Major) for <style=Highlight>{1}</style> sec.\"",
+      "m_Param": "[49310001,49310002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4931]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4934000": {
+      "m_bError": null,
+      "m_ID": "4934000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4934000\"",
+      "m_mName": "\"Unstable Force\"",
+      "m_mDesc": "\"Each time an ally deals CRIT DMG, there is a <style=Highlight>{0}</style> chance a small explosion unleashes around them, dealing <style=Highlight>{1}</style> ATK (P. DMG) to enemies.\"",
+      "m_Param": "[49320001,49320002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4932]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4935000": {
+      "m_bError": null,
+      "m_ID": "4935000",
+      "m_CampType": "1",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4935000\"",
+      "m_mName": "\"Illustrious Moon\"",
+      "m_mDesc": "\"<style=Highlight>Synergy: Windchasers</style> will have their Ultimate cost reduced by <style=Highlight>{0}</style> and DMG dealt increased by <style=Highlight>{1}</style> when the Blood Moon is active.\"",
+      "m_Param": "[49330001,49330002]",
+      "m_ScriptName": "\"\"",
+      "m_BuffList": "[4933]",
+      "m_ShowBuffDesc": "[]"
+    },
+    "4936000": {
+      "m_bError": null,
+      "m_ID": "4936000",
+      "m_CampType": "2",
+      "m_Icon": "\"Atlas_GlobalBuff/HuntingBuff_4936000\"",
+      "m_mName": "\"Thick Skin\"",
+      "m_mDesc": "\"Enemies only take CRIT DMG, but eliminating them grants <style=Highlight>{0}</style> Hunting Points.\"",
+      "m_Param": "[49340001]",
+      "m_ScriptName": "\"MiniRaid_S5_5\"",
+      "m_BuffList": "[]",
+      "m_ShowBuffDesc": "[]"
     },
     "6000201": {
       "m_bError": null,
@@ -998,5 +1119,5 @@
       "m_ShowBuffDesc": "[]"
     }
   },
-  "status": "processed_83_items"
+  "status": "processed_93_items"
 }

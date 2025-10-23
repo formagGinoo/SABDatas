@@ -1,5 +1,6 @@
 {
   "className": "CData_TaskMainReward",
+  "timestamp": "2025-10-23T19:25:43.020Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -398,9 +399,29 @@
       "m_mName": "\"Stage\"",
       "m_TaskList": "[301118,301119,301120]",
       "m_Reward": "[[50004,10],[51010,50]]",
+      "m_NextMainTaskID": "41",
+      "m_mRewardDes": "\"Story Stage-40 Rewards Available\""
+    },
+    "41": {
+      "m_bError": null,
+      "m_ID": "41",
+      "m_Title": "\"41\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301121,301122,301123]",
+      "m_Reward": "[[50004,10],[51010,50]]",
+      "m_NextMainTaskID": "42",
+      "m_mRewardDes": "\"Story Stage-41 Rewards Available\""
+    },
+    "42": {
+      "m_bError": null,
+      "m_ID": "42",
+      "m_Title": "\"42\"",
+      "m_mName": "\"Stage\"",
+      "m_TaskList": "[301124,301125,301126]",
+      "m_Reward": "[[50004,10],[51010,50]]",
       "m_NextMainTaskID": null,
       "m_mRewardDes": "\"\""
     }
   },
-  "status": "processed_40_items"
+  "status": "processed_42_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_GlobalSettings",
+  "timestamp": "2025-10-23T19:25:18.894Z",
   "data": {
     "\"SpeedMultiple1\"": {
       "m_bError": null,
@@ -7,6 +8,300 @@
       "m_Type": "\"float\"",
       "m_Value": "\"1\"",
       "m_Desc": "\"加速值1\""
+    },
+    "\"EquipUpgradeItem\"": {
+      "m_bError": null,
+      "m_Name": "\"EquipUpgradeItem\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"1101,1102\"",
+      "m_Desc": "\"装备升级道具（itemid）\""
+    },
+    "\"CampEquipMergeToken\"": {
+      "m_bError": null,
+      "m_Name": "\"CampEquipMergeToken\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"10001;100\"",
+      "m_Desc": "\"阵营装备兑换的道具及单次消耗数量\""
+    },
+    "\"CampEquipMergeCost\"": {
+      "m_bError": null,
+      "m_Name": "\"CampEquipMergeCost\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"阵营装备兑换单次消耗装备数\""
+    },
+    "\"EquipCampPoolId\"": {
+      "m_bError": null,
+      "m_Name": "\"EquipCampPoolId\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"1/31030;2/31031;3/31032;4/31033\"",
+      "m_Desc": "\"每个阵营的id与其对应的阵营装备兑换随机池的id\""
+    },
+    "\"InheritLevelParam\"": {
+      "m_bError": null,
+      "m_Name": "\"InheritLevelParam\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"200;10000;13340\"",
+      "m_Desc": "\"当前等级上限（向上取整）= 200(同步器进化开启等级) + （ 拥有眷属数*1(万分比) ）+（ 拥有眷属的同卡突破次数* 1.334(万分比) ）\""
+    },
+    "\"CharacterlvEXPitem\"": {
+      "m_bError": null,
+      "m_Name": "\"CharacterlvEXPitem\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1001\"",
+      "m_Desc": "\"角色升级经验道具(填itemid)\""
+    },
+    "\"CharacterlvCurrencyitem\"": {
+      "m_bError": null,
+      "m_Name": "\"CharacterlvCurrencyitem\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"999\"",
+      "m_Desc": "\"角色升级金币道具(填itemid)\""
+    },
+    "\"CharacterlvBreakthroughitem\"": {
+      "m_bError": null,
+      "m_Name": "\"CharacterlvBreakthroughitem\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1002\"",
+      "m_Desc": "\"角色升级突破道具(填itemid)\""
+    },
+    "\"GuildBattleTimes\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildBattleTimes\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"3\"",
+      "m_Desc": "\"公会战每日出刀次数\""
+    },
+    "\"GuildMessagePermissions\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessagePermissions\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"0\"",
+      "m_Desc": "\"公会成员（首领、长老永远有权限）是否有权限留言 1=有    0 =没有   0\""
+    },
+    "\"GuildMessageStart\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageStart\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"3600\"",
+      "m_Desc": "\"加入公会可留言时间（秒）3600\""
+    },
+    "\"GuildMessageCD\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageCD\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"60\"",
+      "m_Desc": "\"公会留言CD时间（秒）60\""
+    },
+    "\"GuildMessageNotice\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildMessageNotice\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"公会留言每天通知全员次数  2\""
+    },
+    "\"GuildInvitationExpired\"": {
+      "m_bError": null,
+      "m_Name": "\"GuildInvitationExpired\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"259200\"",
+      "m_Desc": "\"公会邀请过期时间（秒数）259200\""
+    },
+    "\"SoloRaidNormalTimes\"": {
+      "m_bError": null,
+      "m_Name": "\"SoloRaidNormalTimes\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"个人RAID挑战模式每日次数\""
+    },
+    "\"SoloRaidChallengeTimes\"": {
+      "m_bError": null,
+      "m_Name": "\"SoloRaidChallengeTimes\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"个人RAID普通模式每日次数\""
+    },
+    "\"SoloRaidBattleTimes\"": {
+      "m_bError": null,
+      "m_Name": "\"SoloRaidBattleTimes\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"3\"",
+      "m_Desc": "\"个人RAID参与挑战后的战斗次数\""
+    },
+    "\"DispatchInitLevel\"": {
+      "m_bError": null,
+      "m_Name": "\"DispatchInitLevel\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1\"",
+      "m_Desc": "\"派遣系统初始等级\""
+    },
+    "\"RogueStageLevelMonsterShowOrder\"": {
+      "m_bError": null,
+      "m_Name": "\"RogueStageLevelMonsterShowOrder\"",
+      "m_Type": "\"int[]\"",
+      "m_Value": "\"7;2;4;0;6\"",
+      "m_Desc": "\"时记塔楼关卡怪物提示根据怪物类型展示顺序\""
+    },
+    "\"HuntingRaidEffectMax\"": {
+      "m_bError": null,
+      "m_Name": "\"HuntingRaidEffectMax\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"猎杀之夜最大BUFF数量\""
+    },
+    "\"HuntingRaidTimeMax\"": {
+      "m_bError": null,
+      "m_Name": "\"HuntingRaidTimeMax\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1000000\"",
+      "m_Desc": "\"猎杀之夜倒计时最大时间（毫秒，计算倒计时用）\""
+    },
+    "\"LoungeValueEmpty\"": {
+      "m_bError": null,
+      "m_Name": "\"LoungeValueEmpty\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"4010000\"",
+      "m_Desc": "\"休息室0级时的属性\""
+    },
+    "\"DungeonLevelChallengetimes\"": {
+      "m_bError": null,
+      "m_Name": "\"DungeonLevelChallengetimes\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"3\"",
+      "m_Desc": "\"装备本 公用每日挑战次数\""
+    },
+    "\"SkillResetItem\"": {
+      "m_bError": null,
+      "m_Name": "\"SkillResetItem\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1207\"",
+      "m_Desc": "\"技能重置的道具ID\""
+    },
+    "\"SkillResetItemNum\"": {
+      "m_bError": null,
+      "m_Name": "\"SkillResetItemNum\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1\"",
+      "m_Desc": "\"技能重置所需消耗的道具数量\""
+    },
+    "\"PVPNewHeroModify\"": {
+      "m_bError": null,
+      "m_Name": "\"PVPNewHeroModify\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"9001\"",
+      "m_Desc": "\"新手竞技场是否开启等级拉平，若开启则拉平至多少级（填heromodify的id）|填0则不开启\""
+    },
+    "\"ReplaceArenaStartTime\"": {
+      "m_bError": null,
+      "m_Name": "\"ReplaceArenaStartTime\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"2025-06-29 04:00:00\"",
+      "m_Desc": "\"换位PVP默认的开启日期，基于此日期计算当前日期时竞技场处于赛季哪个阶段。YY-MM-DD HH:MM:SS\""
+    },
+    "\"ReplaceArenaCompeteTime\"": {
+      "m_bError": null,
+      "m_Name": "\"ReplaceArenaCompeteTime\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1123200\"",
+      "m_Desc": "\"换位PVP每个赛季的比赛期持续时长（秒数）\""
+    },
+    "\"ReplaceArenaSettleTime\"": {
+      "m_bError": null,
+      "m_Name": "\"ReplaceArenaSettleTime\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"86400\"",
+      "m_Desc": "\"换位PVP每个赛季的结算期持续时长（秒数）\""
+    },
+    "\"iReportInterval\"": {
+      "m_bError": null,
+      "m_Name": "\"iReportInterval\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"60\"",
+      "m_Desc": "\"功能使用时间统计打点上报间隔(s)\""
+    },
+    "\"SkillTypeSorting\"": {
+      "m_bError": null,
+      "m_Name": "\"SkillTypeSorting\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"3,2,1,4\"",
+      "m_Desc": "\"技能列表排序\""
+    },
+    "\"RanklistCommonPushCD\"": {
+      "m_bError": null,
+      "m_Name": "\"RanklistCommonPushCD\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"30\"",
+      "m_Desc": "\"排行榜通用拉取CD\""
+    },
+    "\"ReplaceArenaAFKLimit\"": {
+      "m_bError": null,
+      "m_Name": "\"ReplaceArenaAFKLimit\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"86400\"",
+      "m_Desc": "\"换位PVP挂机时长\""
+    },
+    "\"CastleStoryLimitInitial\"": {
+      "m_bError": null,
+      "m_Name": "\"CastleStoryLimitInitial\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"配置初始的突发事件体力上限\""
+    },
+    "\"DayTimeOffset\"": {
+      "m_bError": null,
+      "m_Name": "\"DayTimeOffset\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"14400\"",
+      "m_Desc": "\"统一重置时间，相较于0点的秒数偏移\""
+    },
+    "\"FriendPointsAcceptMax\"": {
+      "m_bError": null,
+      "m_Name": "\"FriendPointsAcceptMax\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"15\"",
+      "m_Desc": "\"好友 友情点每日可接收次数（15）\""
+    },
+    "\"FriendPointsNumber\"": {
+      "m_bError": null,
+      "m_Name": "\"FriendPointsNumber\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"2\"",
+      "m_Desc": "\"好友 友情点每次收发获得的点数\""
+    },
+    "\"NewbieMainLevelID\"": {
+      "m_bError": null,
+      "m_Name": "\"NewbieMainLevelID\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1101030\"",
+      "m_Desc": "\"未通关该关卡前，视为新玩家，登录界面必须下载新手期资源\""
+    },
+    "\"LoginMinResourceLimit\"": {
+      "m_bError": null,
+      "m_Name": "\"LoginMinResourceLimit\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"30\"",
+      "m_Desc": "\"登录界面最小资源下载检测（MB，下载的资源小于该容量不会打开下载界面）\""
+    },
+    "\"CoreResourcePack\"": {
+      "m_bError": null,
+      "m_Name": "\"CoreResourcePack\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video/Pack_Char/Pack_PermanentLevel_1/Pack_UI_Extended\"",
+      "m_Desc": "\"新玩家全量下载的基础资源包，string数组，填资源包名\""
+    },
+    "\"ExpansionResourcePack\"": {
+      "m_bError": null,
+      "m_Name": "\"ExpansionResourcePack\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"\"",
+      "m_Desc": "\"新玩家全量下载的扩展资源包，string数组，填资源包名\""
+    },
+    "\"ResourceTaskTagMainLevelID\"": {
+      "m_bError": null,
+      "m_Name": "\"ResourceTaskTagMainLevelID\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"1102090\"",
+      "m_Desc": "\"后台资源下载新玩家判定标准（填入通关的mainlevelID，通关此关卡之前判定为新玩家）\""
     },
     "\"SpeedMultiple2\"": {
       "m_bError": null,
@@ -694,6 +989,20 @@
       "m_Value": "\"100\"",
       "m_Desc": "\"Part_9取值范围参数（下限），取万分比\""
     },
+    "\"MaxAdditionDamagePercent\"": {
+      "m_bError": null,
+      "m_Name": "\"MaxAdditionDamagePercent\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"40000\"",
+      "m_Desc": "\"Part_10取值范围参数（上限），取万分比\""
+    },
+    "\"MinAdditionDamagePercent\"": {
+      "m_bError": null,
+      "m_Name": "\"MinAdditionDamagePercent\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"300\"",
+      "m_Desc": "\"Part_10取值范围参数（下限），取万分比\""
+    },
     "\"MaxRandom\"": {
       "m_bError": null,
       "m_Name": "\"MaxRandom\"",
@@ -726,7 +1035,7 @@
       "m_bError": null,
       "m_Name": "\"MaxCritio\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"25000\"",
+      "m_Value": "\"30000\"",
       "m_Desc": "\"暴击伤害取值上限，取万分比\""
     },
     "\"MinCritio\"": {
@@ -735,6 +1044,20 @@
       "m_Type": "\"int\"",
       "m_Value": "\"10000\"",
       "m_Desc": "\"暴击伤害取值下限，取万分比\""
+    },
+    "\"MaxNoneCritio\"": {
+      "m_bError": null,
+      "m_Name": "\"MaxNoneCritio\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"20000\"",
+      "m_Desc": "\"非暴击伤害取值上限，取万分比\""
+    },
+    "\"MinNoneCritio\"": {
+      "m_bError": null,
+      "m_Name": "\"MinNoneCritio\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"0\"",
+      "m_Desc": "\"非暴击伤害取值下限，取万分比\""
     },
     "\"MinBaseDamage\"": {
       "m_bError": null,
@@ -855,27 +1178,6 @@
       "m_Value": "\"5\"",
       "m_Desc": "\"单个编队中角色数量上限\""
     },
-    "\"CharacterlvCurrencyitem\"": {
-      "m_bError": null,
-      "m_Name": "\"CharacterlvCurrencyitem\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"999\"",
-      "m_Desc": "\"角色升级金币道具(填itemid)\""
-    },
-    "\"CharacterlvEXPitem\"": {
-      "m_bError": null,
-      "m_Name": "\"CharacterlvEXPitem\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1001\"",
-      "m_Desc": "\"角色升级经验道具(填itemid)\""
-    },
-    "\"CharacterlvBreakthroughitem\"": {
-      "m_bError": null,
-      "m_Name": "\"CharacterlvBreakthroughitem\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1002\"",
-      "m_Desc": "\"角色升级突破道具(填itemid)\""
-    },
     "\"SimRoomMonsterScore\"": {
       "m_bError": null,
       "m_Name": "\"SimRoomMonsterScore\"",
@@ -937,7 +1239,7 @@
       "m_Name": "\"AFKUnit\"",
       "m_Type": "\"string\"",
       "m_Value": "\"1,1,1,2\"",
-      "m_Desc": "\"Vo_System_C_20020�固定产出道具显示的单位类型。1=按分钟计算；2=按小时计算\""
+      "m_Desc": "\"配置挂机系统固定产出道具显示的单位类型。1=按分钟计算；2=按小时计算\""
     },
     "\"AFKLevelVerify\"": {
       "m_bError": null,
@@ -973,13 +1275,6 @@
       "m_Type": "\"int[][]\"",
       "m_Value": "\"999/5000;1001/90000;1002/80\"",
       "m_Desc": "\"挂机系统初始开始计算时（1-8）填充道具\""
-    },
-    "\"DayTimeOffset\"": {
-      "m_bError": null,
-      "m_Name": "\"DayTimeOffset\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"14400\"",
-      "m_Desc": "\"统一重置时间，相较于0点的秒数偏移\""
     },
     "\"WeekTimeReset\"": {
       "m_bError": null,
@@ -1408,13 +1703,6 @@
       "m_Value": "\"800103\"",
       "m_Desc": "\"背包满时添加道具自动发送到邮件的模板ID\""
     },
-    "\"iReportInterval\"": {
-      "m_bError": null,
-      "m_Name": "\"iReportInterval\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"60\"",
-      "m_Desc": "\"功能使用时间统计打点上报间隔(s)\""
-    },
     "\"isBattleFlyTextDoTween\"": {
       "m_bError": null,
       "m_Name": "\"isBattleFlyTextDoTween\"",
@@ -1471,13 +1759,6 @@
       "m_Value": "\"0\"",
       "m_Desc": "\"同步器中移除一个角色后格子的冷却时间（秒数）\""
     },
-    "\"InheritLevelParam\"": {
-      "m_bError": null,
-      "m_Name": "\"InheritLevelParam\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"200;10000;13340\"",
-      "m_Desc": "\"当前等级上限（向上取整）= 200(同步器进化开启等级) + （ 拥有眷属数*1(万分比) ）+（ 拥有眷属的同卡突破次数* 1.334(万分比) ）\""
-    },
     "\"FormationRoleRotationAdjustion\"": {
       "m_bError": null,
       "m_Name": "\"FormationRoleRotationAdjustion\"",
@@ -1489,7 +1770,7 @@
       "m_bError": null,
       "m_Name": "\"IgnoreRotateMonsterId\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"50010,30650,30660,30661,30664,30730,30731,50110,10131,30400,31410,31411,31412,31413,40038,50130,50131,10235,10239,50132,50040,50050,50051,50070,50071,50072,50073,32000,10275,30632,10270,50200,50150,50160,50170,50171,50180,50181.31330,32400,50200,31580,61030,61031,31684,33200,42010,42011\"",
+      "m_Value": "\"50010,30650,30660,30661,30664,30730,30731,50110,10131,30400,31410,31411,31412,31413,40038,50130,50131,10235,10239,50132,50040,50050,50051,50070,50071,50072,50073,32000,10275,30632,10270,50200,50150,50160,50170,50171,50180,50181.31330,32400,50200,31580,61030,61031,31684,33200,42010,42011,33460,41031,41302,41033\"",
       "m_Desc": "\"布阵时不旋转的怪物列表\""
     },
     "\"FormationRoleHpPosAdjustion\"": {
@@ -1541,13 +1822,6 @@
       "m_Value": "\"0.8\"",
       "m_Desc": "\"初始音量-语音\""
     },
-    "\"EquipUpgradeItem\"": {
-      "m_bError": null,
-      "m_Name": "\"EquipUpgradeItem\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"1101,1102\"",
-      "m_Desc": "\"装备升级道具（itemid）\""
-    },
     "\"EquipEXPRatio\"": {
       "m_bError": null,
       "m_Name": "\"EquipEXPRatio\"",
@@ -1568,13 +1842,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"3\"",
       "m_Desc": "\"配置技能副本玩法每日可挑战的次数限制\""
-    },
-    "\"SkillTypeSorting\"": {
-      "m_bError": null,
-      "m_Name": "\"SkillTypeSorting\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"3,2,1,4\"",
-      "m_Desc": "\"技能列表排序\""
     },
     "\"DefaultShowSkillCutIn\"": {
       "m_bError": null,
@@ -1611,13 +1878,6 @@
       "m_Value": "\"10\"",
       "m_Desc": "\"[剧情]对话选项倒计时\""
     },
-    "\"NewbieMainLevelID\"": {
-      "m_bError": null,
-      "m_Name": "\"NewbieMainLevelID\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1101030\"",
-      "m_Desc": "\"未通关该关卡前，视为新玩家，登录界面必须下载新手期资源\""
-    },
     "\"NewbieResourceCheckLevelID\"": {
       "m_bError": null,
       "m_Name": "\"NewbieResourceCheckLevelID\"",
@@ -1638,20 +1898,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"5\"",
       "m_Desc": "\"新玩家地图资源下载，填写章节ID，优先下载第0~4章内容\""
-    },
-    "\"CoreResourcePack\"": {
-      "m_bError": null,
-      "m_Name": "\"CoreResourcePack\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video/Pack_Char/Pack_PermanentLevel_1/Pack_UI_Extended\"",
-      "m_Desc": "\"新玩家全量下载的基础资源包，string数组，填资源包名\""
-    },
-    "\"ExpansionResourcePack\"": {
-      "m_bError": null,
-      "m_Name": "\"ExpansionResourcePack\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Activity_110\"",
-      "m_Desc": "\"新玩家全量下载的扩展资源包，string数组，填资源包名\""
     },
     "\"UpgradeCoreResourcePack\"": {
       "m_bError": null,
@@ -1685,14 +1931,14 @@
       "m_bError": null,
       "m_Name": "\"ResourcePackCleanupPlan\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Activity_101Lamia/Pack_Activity_102Dalcaro/Pack_Activity103_Luoleilai/Pack_ActExplore1030/Pack_Activity_105Aiona\"",
+      "m_Value": "\"Pack_Activity_101Lamia/Pack_Activity_102Dalcaro/Pack_Activity103_Luoleilai/Pack_ActExplore1030/Pack_Activity_105Aiona/Pack_Activity_106Quinn/Pack_Activity_108/Pack_Activity_110\"",
       "m_Desc": "\"资源清理，清理列表，string数组，填资源包名\""
     },
     "\"ActivityResourcePackExclusionList\"": {
       "m_bError": null,
       "m_Name": "\"ActivityResourcePackExclusionList\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video/Pack_Char/Pack_PermanentLevel_1/Pack_UI_Extended/Pack_Prologue/Pack_0-3/Pack_2-1/Pack_Guide/Pack_PermanentLevel_2/Pack_MainLevel_1/Pack_MainLevel_2/Pack_MainLevel_3/Pack_MainLevel_4/Pack_MainLevel_5/Pack_MainLevel_6/Pack_MainLevel_7/Pack_MainLevel_8/Pack_MainLevel_9/Pack_MainLevel_10/Pack_MainLevel_11/Pack_MainLevel_12/Pack_MainLevel_13/Pack_MainLevel_14/Pack_MainLevel_15/Pack_MainLevel_16/Pack_MainLevel_17/Pack_MainLevel_18/Pack_MainLevel_19/Pack_Activity_106Quinn/Pack_Activity_108/Pack_ActExplore1080/Pack_ActivityResourceExclusionList\"",
+      "m_Value": "\"Pack_Hall/Pack_UI_Char/Pack_UI_Basic/Pack_Gacha_Video/Pack_Char/Pack_PermanentLevel_1/Pack_UI_Extended/Pack_Prologue/Pack_0-3/Pack_2-1/Pack_Guide/Pack_PermanentLevel_2/Pack_MainLevel_1/Pack_MainLevel_2/Pack_MainLevel_3/Pack_MainLevel_4/Pack_MainLevel_5/Pack_MainLevel_6/Pack_MainLevel_7/Pack_MainLevel_8/Pack_MainLevel_9/Pack_MainLevel_10/Pack_MainLevel_11/Pack_MainLevel_12/Pack_MainLevel_13/Pack_MainLevel_14/Pack_MainLevel_15/Pack_MainLevel_16/Pack_MainLevel_17/Pack_MainLevel_18/Pack_MainLevel_19/Pack_MainLevel_20/Pack_ActivityResourceExclusionList/Pack_Activity_112\"",
       "m_Desc": "\"活动相关自定义资源包资源排除列表\""
     },
     "\"FullDownloadCountdown\"": {
@@ -1849,26 +2095,12 @@
       "m_Value": "\"10\"",
       "m_Desc": "\"个人最多收到多少条公会邀请\""
     },
-    "\"GuildInvitationExpired\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildInvitationExpired\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"259200\"",
-      "m_Desc": "\"公会邀请过期时间（秒数）259200\""
-    },
     "\"GuildMemberActive\"": {
       "m_bError": null,
       "m_Name": "\"GuildMemberActive\"",
       "m_Type": "\"int\"",
       "m_Value": "\"604800\"",
       "m_Desc": "\"公会成员活跃度保存时间（秒数）\""
-    },
-    "\"GuildBattleTimes\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildBattleTimes\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"3\"",
-      "m_Desc": "\"公会战每日出刀次数\""
     },
     "\"GuildBattleRentalCD\"": {
       "m_bError": null,
@@ -1958,29 +2190,8 @@
       "m_bError": null,
       "m_Name": "\"GuildLeaderRemovalTime\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"7\"",
-      "m_Desc": "\"公会首领不上线自动转让时间（秒数）7天\""
-    },
-    "\"GuildMessagePermissions\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildMessagePermissions\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"0\"",
-      "m_Desc": "\"公会成员（首领、长老永远有权限）是否有权限留言 1=有    0 =没有   0\""
-    },
-    "\"GuildMessageCD\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildMessageCD\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"60\"",
-      "m_Desc": "\"公会留言CD时间（秒）60\""
-    },
-    "\"GuildMessageStart\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildMessageStart\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"3600\"",
-      "m_Desc": "\"加入公会可留言时间（秒）3600\""
+      "m_Value": "\"604800\"",
+      "m_Desc": "\"公会首领不上线自动转让时间（秒数）7天 604800\""
     },
     "\"GuildMessageMax\"": {
       "m_bError": null,
@@ -1988,13 +2199,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"50\"",
       "m_Desc": "\"公会留言条目上限\""
-    },
-    "\"GuildMessageNotice\"": {
-      "m_bError": null,
-      "m_Name": "\"GuildMessageNotice\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"公会留言每天通知全员次数  2\""
     },
     "\"GuildMessageCount\"": {
       "m_bError": null,
@@ -2191,13 +2395,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"3\"",
       "m_Desc": "\"配置玩家在新手竞技场中，匹配保护的胜场数\""
-    },
-    "\"PVPNewHeroModify\"": {
-      "m_bError": null,
-      "m_Name": "\"PVPNewHeroModify\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"9001\"",
-      "m_Desc": "\"新手竞技场是否开启等级拉平，若开启则拉平至多少级（填heromodify的id）|填0则不开启\""
     },
     "\"FormationCoLineDelayTime\"": {
       "m_bError": null,
@@ -2465,13 +2662,6 @@
       "m_Value": "\"3,4,5\"",
       "m_Desc": "\"装备本 每日轮替BOSS顺序，填 DungeonChapter 表 LevelSubType\""
     },
-    "\"DungeonLevelChallengetimes\"": {
-      "m_bError": null,
-      "m_Name": "\"DungeonLevelChallengetimes\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"3\"",
-      "m_Desc": "\"装备本 公用每日挑战次数\""
-    },
     "\"ActLamiaPassDailyLimit\"": {
       "m_bError": null,
       "m_Name": "\"ActLamiaPassDailyLimit\"",
@@ -2486,33 +2676,12 @@
       "m_Value": "\"1\"",
       "m_Desc": "\"拉米娅-挑战关通关次数\""
     },
-    "\"LoginMinResourceLimit\"": {
-      "m_bError": null,
-      "m_Name": "\"LoginMinResourceLimit\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"30\"",
-      "m_Desc": "\"登录界面最小资源下载检测（MB，下载的资源小于该容量不会打开下载界面）\""
-    },
     "\"InGameMinResourceLimit\"": {
       "m_bError": null,
       "m_Name": "\"InGameMinResourceLimit\"",
       "m_Type": "\"int\"",
       "m_Value": "\"10\"",
       "m_Desc": "\"游戏内入口最小资源下载检测（MB，下载的资源小于该容量不会打开下载界面）\""
-    },
-    "\"ResourceTaskTagMainLevelID\"": {
-      "m_bError": null,
-      "m_Name": "\"ResourceTaskTagMainLevelID\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1102090\"",
-      "m_Desc": "\"后台资源下载新玩家判定标准（填入通关的mainlevelID，通关此关卡之前判定为新玩家）\""
-    },
-    "\"DispatchInitLevel\"": {
-      "m_bError": null,
-      "m_Name": "\"DispatchInitLevel\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1\"",
-      "m_Desc": "\"派遣系统初始等级\""
     },
     "\"DispatchInitLocationCount\"": {
       "m_bError": null,
@@ -2619,20 +2788,6 @@
       "m_Value": "\"1104020\"",
       "m_Desc": "\"装备tab红点主线进度条件\""
     },
-    "\"SoloRaidNormalTimes\"": {
-      "m_bError": null,
-      "m_Name": "\"SoloRaidNormalTimes\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"个人RAID挑战模式每日次数\""
-    },
-    "\"SoloRaidChallengeTimes\"": {
-      "m_bError": null,
-      "m_Name": "\"SoloRaidChallengeTimes\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"个人RAID普通模式每日次数\""
-    },
     "\"SoloRaidAwardMailNumber\"": {
       "m_bError": null,
       "m_Name": "\"SoloRaidAwardMailNumber\"",
@@ -2646,13 +2801,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"800404\"",
       "m_Desc": "\"个人RAID结算奖励邮件（百分比）\""
-    },
-    "\"SoloRaidBattleTimes\"": {
-      "m_bError": null,
-      "m_Name": "\"SoloRaidBattleTimes\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"3\"",
-      "m_Desc": "\"个人RAID参与挑战后的战斗次数\""
     },
     "\"SoloRaidDayEndHint\"": {
       "m_bError": null,
@@ -2696,20 +2844,6 @@
       "m_Value": "\"1\"",
       "m_Desc": "\"换位PVP重新分组间隔的赛季数\""
     },
-    "\"ReplaceArenaCompeteTime\"": {
-      "m_bError": null,
-      "m_Name": "\"ReplaceArenaCompeteTime\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1123200\"",
-      "m_Desc": "\"换位PVP每个赛季的比赛期持续时长（秒数）\""
-    },
-    "\"ReplaceArenaSettleTime\"": {
-      "m_bError": null,
-      "m_Name": "\"ReplaceArenaSettleTime\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"86400\"",
-      "m_Desc": "\"换位PVP每个赛季的结算期持续时长（秒数）\""
-    },
     "\"ReplaceArenaMapid\"": {
       "m_bError": null,
       "m_Name": "\"ReplaceArenaMapid\"",
@@ -2744,13 +2878,6 @@
       "m_Type": "\"string\"",
       "m_Value": "\"2024-08-01 04:00:00\"",
       "m_Desc": "\"换位PVP开始打标记时间\""
-    },
-    "\"ReplaceArenaStartTime\"": {
-      "m_bError": null,
-      "m_Name": "\"ReplaceArenaStartTime\"",
-      "m_Type": "\"string\"",
-      "m_Value": "\"2025-06-29 04:00:00\"",
-      "m_Desc": "\"换位PVP默认的开启日期，基于此日期计算当前日期时竞技场处于赛季哪个阶段。YY-MM-DD HH:MM:SS\""
     },
     "\"ReplaceArenaToken\"": {
       "m_bError": null,
@@ -2807,13 +2934,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"50\"",
       "m_Desc": "\"战斗排行榜上显示前多少名\""
-    },
-    "\"ReplaceArenaAFKLimit\"": {
-      "m_bError": null,
-      "m_Name": "\"ReplaceArenaAFKLimit\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"86400\"",
-      "m_Desc": "\"换位PVP挂机时长\""
     },
     "\"ReplaceArenaAFKMinTakeInterval\"": {
       "m_bError": null,
@@ -2905,13 +3025,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"0\"",
       "m_Desc": "\"技能是否结束摄像机是否归位\""
-    },
-    "\"CastleStoryLimitInitial\"": {
-      "m_bError": null,
-      "m_Name": "\"CastleStoryLimitInitial\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"配置初始的突发事件体力上限\""
     },
     "\"CastleStoryLimitRefreshTime\"": {
       "m_bError": null,
@@ -3045,20 +3158,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"30\"",
       "m_Desc": "\"好友 友情点每日可发送次数（30）\""
-    },
-    "\"FriendPointsAcceptMax\"": {
-      "m_bError": null,
-      "m_Name": "\"FriendPointsAcceptMax\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"15\"",
-      "m_Desc": "\"好友 友情点每日可接收次数（15）\""
-    },
-    "\"FriendPointsNumber\"": {
-      "m_bError": null,
-      "m_Name": "\"FriendPointsNumber\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"好友 友情点每次收发获得的点数\""
     },
     "\"FriendPointsItem\"": {
       "m_bError": null,
@@ -3396,20 +3495,6 @@
       "m_Value": "\"Play_vo_20080_system_shopleave\"",
       "m_Desc": "\"商店关闭语音\""
     },
-    "\"SkillResetItem\"": {
-      "m_bError": null,
-      "m_Name": "\"SkillResetItem\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1207\"",
-      "m_Desc": "\"技能重置的道具ID\""
-    },
-    "\"SkillResetItemNum\"": {
-      "m_bError": null,
-      "m_Name": "\"SkillResetItemNum\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1\"",
-      "m_Desc": "\"技能重置所需消耗的道具数量\""
-    },
     "\"HeadIconFlyTime\"": {
       "m_bError": null,
       "m_Name": "\"HeadIconFlyTime\"",
@@ -3494,13 +3579,6 @@
       "m_Value": "\"80001;80002;80003;80004;80005;80006;80007;80008;80009\"",
       "m_Desc": "\"时记塔楼假占位怪物id\""
     },
-    "\"RogueStageLevelMonsterShowOrder\"": {
-      "m_bError": null,
-      "m_Name": "\"RogueStageLevelMonsterShowOrder\"",
-      "m_Type": "\"int[]\"",
-      "m_Value": "\"7;2;4;0;6\"",
-      "m_Desc": "\"时记塔楼关卡怪物提示根据怪物类型展示顺序\""
-    },
     "\"RogueStageLevelKillNumShow\"": {
       "m_bError": null,
       "m_Name": "\"RogueStageLevelKillNumShow\"",
@@ -3578,20 +3656,6 @@
       "m_Value": "\"800702\"",
       "m_Desc": "\"头像框过期提醒邮件\""
     },
-    "\"HuntingRaidEffectMax\"": {
-      "m_bError": null,
-      "m_Name": "\"HuntingRaidEffectMax\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"2\"",
-      "m_Desc": "\"猎杀之夜最大BUFF数量\""
-    },
-    "\"HuntingRaidTimeMax\"": {
-      "m_bError": null,
-      "m_Name": "\"HuntingRaidTimeMax\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"1000000\"",
-      "m_Desc": "\"猎杀之夜倒计时最大时间（毫秒，计算倒计时用）\""
-    },
     "\"SendVerifyCodeMailId\"": {
       "m_bError": null,
       "m_Name": "\"SendVerifyCodeMailId\"",
@@ -3647,13 +3711,6 @@
       "m_Type": "\"int\"",
       "m_Value": "\"100\"",
       "m_Desc": "\"猎杀之夜排行榜（总榜）中显示前多少名的玩家\""
-    },
-    "\"RanklistCommonPushCD\"": {
-      "m_bError": null,
-      "m_Name": "\"RanklistCommonPushCD\"",
-      "m_Type": "\"int\"",
-      "m_Value": "\"30\"",
-      "m_Desc": "\"排行榜通用拉取CD\""
     },
     "\"FirstChargeHeroShow\"": {
       "m_bError": null,
@@ -3813,7 +3870,7 @@
       "m_bError": null,
       "m_Name": "\"MonthlyPrivilegesDungeonRewardInfo\"",
       "m_Type": "\"string\"",
-      "m_Value": "\"1104060/1;1108090/2;1113070/3;1113070/4;1116080/5;1116080/6;1116080/7\"",
+      "m_Value": "\"1104060/2101010;1108090/2102010;1113070/2103010;1113070/2104010;1116080/2105010;1116080/2106010;1116080/2107010\"",
       "m_Desc": "\"月卡特权装备本补偿-关卡开启条件(主线id，关卡id）\""
     },
     "\"EquipDungeonType\"": {
@@ -3823,13 +3880,41 @@
       "m_Value": "\"2105010;2106010\"",
       "m_Desc": "\"装备本增加奖励邮件补偿已消耗次数的玩家的补偿关卡类型\""
     },
-    "\"LoungeValueEmpty\"": {
+    "\"QuickMainLevelPowerRate\"": {
       "m_bError": null,
-      "m_Name": "\"LoungeValueEmpty\"",
+      "m_Name": "\"QuickMainLevelPowerRate\"",
       "m_Type": "\"int\"",
-      "m_Value": "\"4010000\"",
-      "m_Desc": "\"休息室0级时的属性\""
+      "m_Value": "\"0\"",
+      "m_Desc": "\"快速通关主线战力超越比例（万分比）\""
+    },
+    "\"ImpeachLeaderCD\"": {
+      "m_bError": null,
+      "m_Name": "\"ImpeachLeaderCD\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"86400\"",
+      "m_Desc": "\"公会首领被弹劾CD时间（秒）24小时 86400\""
+    },
+    "\"ImpeachCD\"": {
+      "m_bError": null,
+      "m_Name": "\"ImpeachCD\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"172800\"",
+      "m_Desc": "\"发起弹劾CD时间（秒）48小时  172800\""
+    },
+    "\"ImpeachmentDuration\"": {
+      "m_bError": null,
+      "m_Name": "\"ImpeachmentDuration\"",
+      "m_Type": "\"int\"",
+      "m_Value": "\"86400\"",
+      "m_Desc": "\"弹劾有效期（秒）24小时  86400\""
+    },
+    "\"PlayersReturnAVG\"": {
+      "m_bError": null,
+      "m_Name": "\"PlayersReturnAVG\"",
+      "m_Type": "\"string\"",
+      "m_Value": "\"E_huigui01\"",
+      "m_Desc": "\"回归签到剧情\""
     }
   },
-  "status": "processed_547_items"
+  "status": "processed_559_items"
 }

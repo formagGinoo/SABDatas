@@ -1,5 +1,6 @@
 {
   "className": "CData_SkillDamage",
+  "timestamp": "2025-10-23T19:25:40.174Z",
   "data": {
     "2": {
       "_type": "nested_dictionary",
@@ -3585,6 +3586,34 @@
           "m_PropertyType": "1",
           "m_DamagePercent": null,
           "m_DamagePercentValue": "20000221",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "2000005": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "2000005",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": "1",
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "20000292",
           "m_DamageAdd": null,
           "m_buff": "[]",
           "m_HurtEnergy": null,
@@ -17165,6 +17194,258 @@
         }
       }
     },
+    "20720210": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20720210",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2072001",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "3",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "20720220": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20720220",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2072002",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "4",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_DmgGroupID": "20720220",
+          "m_DmgID": "2",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2072003",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "20720260": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20720260",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2072004",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "20730210": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730210",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073001",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "20730220": {
+      "_type": "nested_dictionary",
+      "_count": 4,
+      "_processed": 4,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730220",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073002",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "5",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730220",
+          "m_DmgID": "2",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073015",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        },
+        "3": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730220",
+          "m_DmgID": "3",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073017",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        },
+        "4": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730220",
+          "m_DmgID": "4",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073018",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "20730260": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "20730260",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "2073009",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "2",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
     "30072110": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -25101,7 +25382,7 @@
           "m_HurtEnergy": null,
           "m_effectProbabilityFactor": "15",
           "m_SkillDmgPercent": "10000",
-          "m_DamageNum": "1",
+          "m_DamageNum": "2",
           "m_DmgReduceRate": null,
           "m_DmgAttributionType": null,
           "m_IsAOE": null,
@@ -25188,7 +25469,7 @@
           "m_DamageNum": "1",
           "m_DmgReduceRate": null,
           "m_DmgAttributionType": null,
-          "m_IsAOE": null,
+          "m_IsAOE": "1",
           "m_BonusCritRatio": null,
           "m_IsDot": null
         }
@@ -25233,7 +25514,7 @@
           "m_DmgID": "1",
           "m_DmgType": "3",
           "m_PropertyTarget": null,
-          "m_PropertyType": "2",
+          "m_PropertyType": "1",
           "m_DamagePercent": "10000",
           "m_DamagePercentValue": "31220121",
           "m_DamageAdd": null,
@@ -29541,6 +29822,146 @@
         }
       }
     },
+    "33460110": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "33460110",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "33460110",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "33460120": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "33460120",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "33460120",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "33460121": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "33460121",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "33460122",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "33460122": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "33460122",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "33460123",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "33460220": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "33460220",
+          "m_DmgID": "1",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "33460220",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
     "34000110": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -29912,6 +30333,195 @@
         }
       }
     },
+    "41033110": {
+      "_type": "nested_dictionary",
+      "_count": 2,
+      "_processed": 2,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41033110",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "41033110",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "15",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        },
+        "2": {
+          "m_bError": null,
+          "m_DmgGroupID": "41033110",
+          "m_DmgID": "2",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "41033111",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "15",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "41033120": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41033120",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "41033120",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "15",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "41033160": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41033160",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "41033160",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "15",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "41033161": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41033161",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "41033162",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "15",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "41035130": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41035130",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": "10000",
+          "m_DamagePercentValue": "41035130",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "10",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "41036200": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_DmgGroupID": "41036200",
+          "m_DmgID": "1",
+          "m_DmgType": "2",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": "10000",
+          "m_DamagePercentValue": "41036200",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": "10",
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
     "42010110": {
       "_type": "nested_dictionary",
       "_count": 2,
@@ -30124,6 +30734,34 @@
           "m_DmgReduceRate": null,
           "m_DmgAttributionType": null,
           "m_IsAOE": null,
+          "m_BonusCritRatio": null,
+          "m_IsDot": null
+        }
+      }
+    },
+    "49320001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "4932": {
+          "m_bError": null,
+          "m_DmgGroupID": "49320001",
+          "m_DmgID": "4932",
+          "m_DmgType": "1",
+          "m_PropertyTarget": null,
+          "m_PropertyType": "2",
+          "m_DamagePercent": null,
+          "m_DamagePercentValue": "49320002",
+          "m_DamageAdd": null,
+          "m_buff": "[]",
+          "m_HurtEnergy": null,
+          "m_effectProbabilityFactor": null,
+          "m_SkillDmgPercent": "10000",
+          "m_DamageNum": "1",
+          "m_DmgReduceRate": null,
+          "m_DmgAttributionType": null,
+          "m_IsAOE": "1",
           "m_BonusCritRatio": null,
           "m_IsDot": null
         }
@@ -31271,5 +31909,5 @@
       }
     }
   },
-  "status": "processed_843_items"
+  "status": "processed_862_items"
 }

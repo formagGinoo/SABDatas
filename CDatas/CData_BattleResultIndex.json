@@ -1,5 +1,6 @@
 {
   "className": "CData_BattleResultIndex",
+  "timestamp": "2025-10-23T19:25:05.700Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -811,6 +812,56 @@
       "m_mConditonReason": "\"\"",
       "m_IsShowConditonReason": null
     },
+    "2530001": {
+      "m_bError": null,
+      "m_ID": "2530001",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31950,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2530002": {
+      "m_bError": null,
+      "m_ID": "2530002",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31951,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2530003": {
+      "m_bError": null,
+      "m_ID": "2530003",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31952,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2530004": {
+      "m_bError": null,
+      "m_ID": "2530004",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31953,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
+    "2530005": {
+      "m_bError": null,
+      "m_ID": "2530005",
+      "m_Conditontype": "1005",
+      "m_ConditonParam": "[31954,0]",
+      "m_ConditionStart": null,
+      "m_ConditonEnd": null,
+      "m_mConditonReason": "\"\"",
+      "m_IsShowConditonReason": null
+    },
     "6000112": {
       "m_bError": null,
       "m_ID": "6000112",
@@ -1582,5 +1633,5 @@
       "m_IsShowConditonReason": null
     }
   },
-  "status": "processed_158_items"
+  "status": "processed_163_items"
 }

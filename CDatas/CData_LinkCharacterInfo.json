@@ -1,0 +1,22 @@
+{
+  "className": "CData_LinkCharacterInfo",
+  "timestamp": "2025-10-23T19:25:20.375Z",
+  "data": {
+    "1": {
+      "m_bError": null,
+      "m_LinkID": "1",
+      "m_mName": "\"Windchaser\"",
+      "m_HeroID": "20730",
+      "m_LinkHeroID": "[20220,20720,20400,20160,20340,20370]",
+      "m_mLink2Limit": "2",
+      "m_mLink2Des": "\"Synergized Vassals gain Synergy DMG +{0}, Synergy DMG Reduction +{5}, and {4} of Letitia's Windwing stacks.\nWindwing: CRIT Rate +{7}, Dodge +{8}. Stacks up to {9} times.\"",
+      "m_mLink3Limit": "3",
+      "m_mLink3Des": "\"Synergized Vassals gain Synergy DMG +{2}, Synergy DMG Reduction +{6}, and {4} of Letitia's Windwing stacks.\nWindwing: +{7} CRIT Rate, +{8} Dodge. Stacks up to {9} times.\"",
+      "m_BuffParam": "[2073022,2073020,2073023,2073021,2073005,2073024,2073019,2073012,2073013,2073014]",
+      "m_IconResourceKey": "\"collaboration_icon_buff_01_grey\"",
+      "m_IconResourceKey2": "\"collaboration_icon_buff_01_yellow\"",
+      "m_IconResourceKey3": "\"collaboration_icon_buff_01_red\""
+    }
+  },
+  "status": "processed_1_items"
+}

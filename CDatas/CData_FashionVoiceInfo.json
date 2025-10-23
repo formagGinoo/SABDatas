@@ -1,5 +1,6 @@
 {
   "className": "CData_FashionVoiceInfo",
+  "timestamp": "2025-10-23T19:25:18.729Z",
   "data": {
     "6007001": {
       "_type": "nested_dictionary",
@@ -91,7 +92,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "60004013": {
@@ -318,7 +319,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "60003013": {
@@ -523,7 +524,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "60001013": {

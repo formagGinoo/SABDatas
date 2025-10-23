@@ -1,5 +1,6 @@
 {
   "className": "CData_RogueItemIconPos",
+  "timestamp": "2025-10-23T19:25:37.020Z",
   "data": {
     "3001001": {
       "m_bError": null,
@@ -1178,6 +1179,28 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "10300720": {
+      "m_bError": null,
+      "m_ItemID": "10300720",
+      "m_Desc": "\"尘封的「毁灭之翼」\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "10300730": {
+      "m_bError": null,
+      "m_ItemID": "10300730",
+      "m_Desc": "\"尘封的「图腾祭器」\"",
+      "m_BagItemPos": "[0,0,40]",
+      "m_TipsPos": "[0,0,25]",
+      "m_CombinationPos": "[0,0,30]",
+      "m_HandBookPos": "[0,60,40]",
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20100010": {
       "m_bError": null,
       "m_ItemID": "20100010",
@@ -1827,6 +1850,28 @@
       "m_SmallBagItemPos": "[0,0,120]",
       "m_HeroHeadPos": "[-98,-20,40]"
     },
+    "20100720": {
+      "m_bError": null,
+      "m_ItemID": "20100720",
+      "m_Desc": "\"毁灭之翼\"",
+      "m_BagItemPos": "[0,0,50]",
+      "m_TipsPos": "[0,0,35]",
+      "m_CombinationPos": "[0,0,35]",
+      "m_HandBookPos": "[0,60,50]",
+      "m_SmallBagItemPos": "[0,0,120]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
+    "20100730": {
+      "m_bError": null,
+      "m_ItemID": "20100730",
+      "m_Desc": "\"图腾祭器\"",
+      "m_BagItemPos": "[0,0,40]",
+      "m_TipsPos": "[0,0,25]",
+      "m_CombinationPos": "[0,0,30]",
+      "m_HandBookPos": "[0,60,40]",
+      "m_SmallBagItemPos": "[0,0,90]",
+      "m_HeroHeadPos": "[-98,-20,40]"
+    },
     "20200001": {
       "m_bError": null,
       "m_ItemID": "20200001",
@@ -1960,5 +2005,5 @@
       "m_HeroHeadPos": "[0,0,0]"
     }
   },
-  "status": "processed_178_items"
+  "status": "processed_182_items"
 }

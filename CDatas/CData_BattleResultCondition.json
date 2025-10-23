@@ -1,5 +1,6 @@
 {
   "className": "CData_BattleResultCondition",
+  "timestamp": "2025-10-23T19:25:05.608Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -1009,6 +1010,87 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "1001201": {
+      "m_bError": null,
+      "m_ID": "1001201",
+      "m_mDesc": "\"Survive for 60 sec in a duel against Sergio.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[2,100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "1001202": {
+      "m_bError": null,
+      "m_ID": "1001202",
+      "m_mDesc": "\"Defeat the mysterious person stalking Pavana.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001203": {
+      "m_bError": null,
+      "m_ID": "1001203",
+      "m_mDesc": "\"Defeat the guards and prove your strength to the Lord.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001204": {
+      "m_bError": null,
+      "m_ID": "1001204",
+      "m_mDesc": "\"Defeat the intruders trying to seize the spring water.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001205": {
+      "m_bError": null,
+      "m_ID": "1001205",
+      "m_mDesc": "\"Defeat the Lord's men.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001206": {
+      "m_bError": null,
+      "m_ID": "1001206",
+      "m_mDesc": "\"Defeat the wolves and win the 999th match.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001207": {
+      "m_bError": null,
+      "m_ID": "1001207",
+      "m_mDesc": "\"Defeat the pursuing guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001208": {
+      "m_bError": null,
+      "m_ID": "1001208",
+      "m_mDesc": "\"Defeat the New Lord's guards.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "1001209": {
+      "m_bError": null,
+      "m_ID": "1001209",
+      "m_mDesc": "\"Defeat Frostfang and win the 1000th match.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "1003061": {
       "m_bError": null,
       "m_ID": "1003061",
@@ -1567,6 +1649,15 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2008001": {
+      "m_bError": null,
+      "m_ID": "2008001",
+      "m_mDesc": "\"Defeat the Little Bella No. 13 Spirit\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "2050001": {
       "m_bError": null,
       "m_ID": "2050001",
@@ -1828,6 +1919,51 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[101]"
     },
+    "2400014": {
+      "m_bError": null,
+      "m_ID": "2400014",
+      "m_mDesc": "\"Deal as much DMG to enemies as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400015": {
+      "m_bError": null,
+      "m_ID": "2400015",
+      "m_mDesc": "\"Deal as much DMG to enemies as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400016": {
+      "m_bError": null,
+      "m_ID": "2400016",
+      "m_mDesc": "\"Defeat as many mechanical constructs as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400017": {
+      "m_bError": null,
+      "m_ID": "2400017",
+      "m_mDesc": "\"Defeat as many Pale Bloodwolves as possible.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
+    "2400018": {
+      "m_bError": null,
+      "m_ID": "2400018",
+      "m_mDesc": "\"Defeat as many enemies as possible to earn Hunting Points.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[6]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[101]"
+    },
     "2500001": {
       "m_bError": null,
       "m_ID": "2500001",
@@ -1963,6 +2099,51 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "2530001": {
+      "m_bError": null,
+      "m_ID": "2530001",
+      "m_mDesc": "\"Defeat the enemies of \"Hunt the Deer.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2530001]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2530002": {
+      "m_bError": null,
+      "m_ID": "2530002",
+      "m_mDesc": "\"Defeat the enemies of \"Arrows in Shadows\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2530002]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2530003": {
+      "m_bError": null,
+      "m_ID": "2530003",
+      "m_mDesc": "\"Defeat the enemies of \"Phantoms in the Woods.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2530003]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2530004": {
+      "m_bError": null,
+      "m_ID": "2530004",
+      "m_mDesc": "\"Defeat Thunder Prophet.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2530004]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "2530005": {
+      "m_bError": null,
+      "m_ID": "2530005",
+      "m_mDesc": "\"Defeat the enemies of \"Cursed Blood.\"\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[2530005]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "4000001": {
       "m_bError": null,
       "m_ID": "4000001",
@@ -2039,6 +2220,24 @@
       "m_bError": null,
       "m_ID": "4400007",
       "m_mDesc": "\"Use <#A65F30>Genevieve</color>, witness her loyalty, and defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400008": {
+      "m_bError": null,
+      "m_ID": "4400008",
+      "m_mDesc": "\"Use <#A65F30>Letitia</color> to defeat all enemies.\"",
+      "m_SuccessAnd": "1",
+      "m_ConditonSuccess": "[1,100,101]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[]"
+    },
+    "4400009": {
+      "m_bError": null,
+      "m_ID": "4400009",
+      "m_mDesc": "\"Use <#A65F30>Seraphina</color> to defeat all enemies.\"",
       "m_SuccessAnd": "1",
       "m_ConditonSuccess": "[1,100,101]",
       "m_FailAnd": "1",
@@ -2944,6 +3143,114 @@
       "m_FailAnd": "1",
       "m_ConditionFail": "[1,101]"
     },
+    "6001201": {
+      "m_bError": null,
+      "m_ID": "6001201",
+      "m_mDesc": "\"Clear out the Blood Beasts in the disaster area.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001202": {
+      "m_bError": null,
+      "m_ID": "6001202",
+      "m_mDesc": "\"Break through the enemy siege.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001203": {
+      "m_bError": null,
+      "m_ID": "6001203",
+      "m_mDesc": "\"Defeat the mutated survivors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001204": {
+      "m_bError": null,
+      "m_ID": "6001204",
+      "m_mDesc": "\"Defeat the provocative enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001205": {
+      "m_bError": null,
+      "m_ID": "6001205",
+      "m_mDesc": "\"Defeat the enemies coming to search.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001206": {
+      "m_bError": null,
+      "m_ID": "6001206",
+      "m_mDesc": "\"Defeat the enemies in the sanctuary.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001207": {
+      "m_bError": null,
+      "m_ID": "6001207",
+      "m_mDesc": "\"Defeat the mutated survivors.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001208": {
+      "m_bError": null,
+      "m_ID": "6001208",
+      "m_mDesc": "\"Defeat the mutated villagers.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001209": {
+      "m_bError": null,
+      "m_ID": "6001209",
+      "m_mDesc": "\"Defeat all enemies.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001210": {
+      "m_bError": null,
+      "m_ID": "6001210",
+      "m_mDesc": "\"Defeat all Church weapons.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001211": {
+      "m_bError": null,
+      "m_ID": "6001211",
+      "m_mDesc": "\"Defeat Nightmarish Letitia.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
+    "6001212": {
+      "m_bError": null,
+      "m_ID": "6001212",
+      "m_mDesc": "\"Defeat Nightmarish Letitia.\"",
+      "m_SuccessAnd": null,
+      "m_ConditonSuccess": "[100]",
+      "m_FailAnd": "1",
+      "m_ConditionFail": "[1,101]"
+    },
     "7101101": {
       "m_bError": null,
       "m_ID": "7101101",
@@ -3206,5 +3513,5 @@
       "m_ConditionFail": "[1,101]"
     }
   },
-  "status": "processed_356_items"
+  "status": "processed_390_items"
 }

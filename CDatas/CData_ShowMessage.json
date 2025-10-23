@@ -1,5 +1,6 @@
 {
   "className": "CData_ShowMessage",
+  "timestamp": "2025-10-23T19:25:38.021Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -897,6 +898,14 @@
       "m_ShowType": "1",
       "m_MultLong": "\"\""
     },
+    "1155": {
+      "m_bError": null,
+      "m_ID": "1155",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
     "1160": {
       "m_bError": null,
       "m_ID": "1160",
@@ -1084,7 +1093,7 @@
     "1183": {
       "m_bError": null,
       "m_ID": "1183",
-      "m_mMessage": "\"Banned class has been deployed.\"",
+      "m_mMessage": "\"Banned role has been deployed.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -1101,6 +1110,22 @@
       "m_bError": null,
       "m_ID": "1185",
       "m_mMessage": "\"Equipment Raid hasn't been challenged today.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1186": {
+      "m_bError": null,
+      "m_ID": "1186",
+      "m_mMessage": "\"Stage Quick Clear Unavailable\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1187": {
+      "m_bError": null,
+      "m_ID": "1187",
+      "m_mMessage": "\"Insufficient Blood Power for Quick Clear\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -2149,6 +2174,78 @@
       "m_bError": null,
       "m_ID": "1440",
       "m_mMessage": "\"Clan Name Already Taken\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1441": {
+      "m_bError": null,
+      "m_ID": "1441",
+      "m_mMessage": "\"Impeachment on Cooldown\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1442": {
+      "m_bError": null,
+      "m_ID": "1442",
+      "m_mMessage": "\"Cannot impeach: Clan Leader's offline duration requirement not met.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1443": {
+      "m_bError": null,
+      "m_ID": "1443",
+      "m_mMessage": "\"Impeachment Vote Initiated\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1444": {
+      "m_bError": null,
+      "m_ID": "1444",
+      "m_mMessage": "\"Initiating Impeachment on Cooldown\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1445": {
+      "m_bError": null,
+      "m_ID": "1445",
+      "m_mMessage": "\"Impeachment Vote Not Started Yet\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1446": {
+      "m_bError": null,
+      "m_ID": "1446",
+      "m_mMessage": "\"Already Voted\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1447": {
+      "m_bError": null,
+      "m_ID": "1447",
+      "m_mMessage": "\"Cannot remove members during impeachment vote.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1448": {
+      "m_bError": null,
+      "m_ID": "1448",
+      "m_mMessage": "\"Cannot transfer leadership during impeachment vote.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "1449": {
+      "m_bError": null,
+      "m_ID": "1449",
+      "m_mMessage": "\"Cannot leave Clan during impeachment vote.\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -3741,6 +3838,22 @@
       "m_bError": null,
       "m_ID": "2567",
       "m_mMessage": "\"Unlock 1 Blessing to reforge.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2568": {
+      "m_bError": null,
+      "m_ID": "2568",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "2569": {
+      "m_bError": null,
+      "m_ID": "2569",
+      "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -5932,7 +6045,7 @@
     "6685": {
       "m_bError": null,
       "m_ID": "6685",
-      "m_mMessage": "\"Comeback Task Event Not Available Yet\"",
+      "m_mMessage": "\"Returning Task Event Not Available Yet\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6044,7 +6157,7 @@
     "6761": {
       "m_bError": null,
       "m_ID": "6761",
-      "m_mMessage": "\"Comeback Task Configuration Error\"",
+      "m_mMessage": "\"Returning Task Configuration Error\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6052,7 +6165,7 @@
     "6762": {
       "m_bError": null,
       "m_ID": "6762",
-      "m_mMessage": "\"Insufficient Comeback Task Progress\"",
+      "m_mMessage": "\"Insufficient Returning Task Progress\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6060,7 +6173,7 @@
     "6763": {
       "m_bError": null,
       "m_ID": "6763",
-      "m_mMessage": "\"Comeback Task Rewards Claimed\"",
+      "m_mMessage": "\"Returning Task Rewards Claimed\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6068,7 +6181,7 @@
     "6764": {
       "m_bError": null,
       "m_ID": "6764",
-      "m_mMessage": "\"Comeback Task Rewards Unavailable\"",
+      "m_mMessage": "\"Returning Task Rewards Unavailable\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6076,7 +6189,7 @@
     "6765": {
       "m_bError": null,
       "m_ID": "6765",
-      "m_mMessage": "\"Comeback Task Not Found\"",
+      "m_mMessage": "\"Returning Task Not Found\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6084,7 +6197,7 @@
     "6766": {
       "m_bError": null,
       "m_ID": "6766",
-      "m_mMessage": "\"Insufficient Comeback Tasks Completions\"",
+      "m_mMessage": "\"Insufficient Returning Tasks Completions\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6092,7 +6205,7 @@
     "6767": {
       "m_bError": null,
       "m_ID": "6767",
-      "m_mMessage": "\"Comeback Task Purchase Limit Exceeded\"",
+      "m_mMessage": "\"Returning Task Purchase Limit Exceeded\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
       "m_MultLong": "\"\""
@@ -6100,6 +6213,142 @@
     "6768": {
       "m_bError": null,
       "m_ID": "6768",
+      "m_mMessage": "\"No Claimable Returning Task Rewards\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6781": {
+      "m_bError": null,
+      "m_ID": "6781",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6782": {
+      "m_bError": null,
+      "m_ID": "6782",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6783": {
+      "m_bError": null,
+      "m_ID": "6783",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6784": {
+      "m_bError": null,
+      "m_ID": "6784",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6785": {
+      "m_bError": null,
+      "m_ID": "6785",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6786": {
+      "m_bError": null,
+      "m_ID": "6786",
+      "m_mMessage": "\"Surprise Gift Trigger Limit Reached\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6787": {
+      "m_bError": null,
+      "m_ID": "6787",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6788": {
+      "m_bError": null,
+      "m_ID": "6788",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6789": {
+      "m_bError": null,
+      "m_ID": "6789",
+      "m_mMessage": "\"Surprise Gift Trigger Requirement Not Met\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6790": {
+      "m_bError": null,
+      "m_ID": "6790",
+      "m_mMessage": "\"Surprise Gift Trigger Requirement Not Met\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6791": {
+      "m_bError": null,
+      "m_ID": "6791",
+      "m_mMessage": "\"Item Already Purchased\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6792": {
+      "m_bError": null,
+      "m_ID": "6792",
+      "m_mMessage": "\"Prerequisite Item Not Purchased\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6793": {
+      "m_bError": null,
+      "m_ID": "6793",
+      "m_mMessage": "\"Insufficient Points. Unable to Claim Reward.\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6794": {
+      "m_bError": null,
+      "m_ID": "6794",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6795": {
+      "m_bError": null,
+      "m_ID": "6795",
+      "m_mMessage": "\"Surprise Gift Event Data Error\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6796": {
+      "m_bError": null,
+      "m_ID": "6796",
+      "m_mMessage": "\"\"",
+      "m_IsShow": "1",
+      "m_ShowType": "1",
+      "m_MultLong": "\"\""
+    },
+    "6801": {
+      "m_bError": null,
+      "m_ID": "6801",
       "m_mMessage": "\"\"",
       "m_IsShow": "1",
       "m_ShowType": "1",
@@ -7490,5 +7739,5 @@
       "m_MultLong": "\"\""
     }
   },
-  "status": "processed_936_items"
+  "status": "processed_967_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_GachaTemplate",
+  "timestamp": "2025-10-23T19:25:18.882Z",
   "data": {
     "100": {
       "_type": "nested_dictionary",
@@ -226,6 +227,51 @@
         }
       }
     },
+    "1013": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1013",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[13001,13001,13001,13001,13001,13001,13001,13001,13001,13001]"
+        }
+      }
+    },
+    "1014": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "1014",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[14001,14001,14001,14001,14001,14001,14001,14001,14001,14001]"
+        }
+      }
+    },
+    "900001": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_GachaTemplate": "900001",
+          "m_Sequence": "1",
+          "m_RollinOrder": "1",
+          "m_RollTimes": "10",
+          "m_PoolID": "[900001,900001,900001,900001,900001,900001,900001,900001,900001,900001]"
+        }
+      }
+    },
     "9999999": {
       "_type": "nested_dictionary",
       "_count": 1,
@@ -242,5 +288,5 @@
       }
     }
   },
-  "status": "processed_16_items"
+  "status": "processed_19_items"
 }

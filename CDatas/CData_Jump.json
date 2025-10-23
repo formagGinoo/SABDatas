@@ -1,5 +1,6 @@
 {
   "className": "CData_Jump",
+  "timestamp": "2025-10-23T19:25:20.167Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -241,6 +242,14 @@
       "m_Param": "[]",
       "m_mName": "\"Lost Courtyard\""
     },
+    "31": {
+      "m_bError": null,
+      "m_JumpID": "31",
+      "m_SystemID": null,
+      "m_WindowID": "13101",
+      "m_Param": "[]",
+      "m_mName": "\"\""
+    },
     "101": {
       "m_bError": null,
       "m_JumpID": "101",
@@ -417,6 +426,14 @@
       "m_Param": "[26012]",
       "m_mName": "\"Joyce's Sundries\""
     },
+    "2614": {
+      "m_bError": null,
+      "m_JumpID": "2614",
+      "m_SystemID": "26",
+      "m_WindowID": "26006",
+      "m_Param": "[26014]",
+      "m_mName": "\"Clouded Outpost\""
+    },
     "2701": {
       "m_bError": null,
       "m_JumpID": "2701",
@@ -456,6 +473,22 @@
       "m_WindowID": "27005",
       "m_Param": "[]",
       "m_mName": "\"Ancestral Vault\""
+    },
+    "2706": {
+      "m_bError": null,
+      "m_JumpID": "2706",
+      "m_SystemID": null,
+      "m_WindowID": "27060",
+      "m_Param": "[]",
+      "m_mName": "\"Seven Day Awakening\""
+    },
+    "2707": {
+      "m_bError": null,
+      "m_JumpID": "2707",
+      "m_SystemID": null,
+      "m_WindowID": "27070",
+      "m_Param": "[]",
+      "m_mName": "\"Lord's Return Gift\""
     },
     "5101": {
       "m_bError": null,
@@ -657,6 +690,30 @@
       "m_Param": "[]",
       "m_mName": "\"Embrace - Discordant Marks\""
     },
+    "25016": {
+      "m_bError": null,
+      "m_JumpID": "25016",
+      "m_SystemID": "25",
+      "m_WindowID": "1012",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Azure Whispers\""
+    },
+    "25017": {
+      "m_bError": null,
+      "m_JumpID": "25017",
+      "m_SystemID": "25",
+      "m_WindowID": "1013",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Skyborn Lament\""
+    },
+    "25018": {
+      "m_bError": null,
+      "m_JumpID": "25018",
+      "m_SystemID": "25",
+      "m_WindowID": "12001",
+      "m_Param": "[]",
+      "m_mName": "\"Embrace - Whistling Peaks\""
+    },
     "30001": {
       "m_bError": null,
       "m_JumpID": "30001",
@@ -680,6 +737,14 @@
       "m_WindowID": "30003",
       "m_Param": "[4,6013001]",
       "m_mName": "\"Path of the Blooming Lotus\""
+    },
+    "30004": {
+      "m_bError": null,
+      "m_JumpID": "30004",
+      "m_SystemID": null,
+      "m_WindowID": "30004",
+      "m_Param": "[]",
+      "m_mName": "\"Black Lotus Bundle\""
     },
     "40001": {
       "m_bError": null,
@@ -745,6 +810,14 @@
       "m_Param": "[]",
       "m_mName": "\"Custom Couture\""
     },
+    "40009": {
+      "m_bError": null,
+      "m_JumpID": "40009",
+      "m_SystemID": null,
+      "m_WindowID": "40009",
+      "m_Param": "[]",
+      "m_mName": "\"\""
+    },
     "50001": {
       "m_bError": null,
       "m_JumpID": "50001",
@@ -791,6 +864,14 @@
       "m_SystemID": null,
       "m_WindowID": "500001",
       "m_Param": "[2,6027001]",
+      "m_mName": "\"Go to Event\""
+    },
+    "50007": {
+      "m_bError": null,
+      "m_JumpID": "50007",
+      "m_SystemID": null,
+      "m_WindowID": "500001",
+      "m_Param": "[2,6058001]",
       "m_mName": "\"Go to Event\""
     },
     "60010": {
@@ -2146,5 +2227,5 @@
       "m_mName": "\"[Threads of Fate] Hard 16-8\""
     }
   },
-  "status": "processed_268_items"
+  "status": "processed_278_items"
 }

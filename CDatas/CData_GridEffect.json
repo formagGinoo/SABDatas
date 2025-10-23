@@ -1,5 +1,6 @@
 {
   "className": "CData_GridEffect",
+  "timestamp": "2025-10-23T19:25:19.032Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -742,6 +743,25 @@
       "m_AddBuffOnLeave": "[]",
       "m_RemoveBuffOnLeave": "[]"
     },
+    "2072001": {
+      "m_bError": null,
+      "m_ID": "2072001",
+      "m_Type": null,
+      "m_Icon": "\"Atlas_Plot/Plot_7\"",
+      "m_mName": "\"Wings of Devotion\"",
+      "m_mDesc": "\"When the battle begins, Seraphina grants herself and these Vassals ATK SPD UP (Minor). The effect is permanent and cannot be dispelled.\"",
+      "m_DescParam": "[]",
+      "m_GridVFXOnBegin": "\"fx_c_selenia_base_floor\"",
+      "m_GridVFXOnDestory": "[]",
+      "m_GridVFXScale": "[1,1,1]",
+      "m_GridVFXPriority": "1",
+      "m_TriggerCount": null,
+      "m_AffectedCamp": null,
+      "m_AddBuffOnEnter": "[]",
+      "m_RemoveBuffOnEnter": "[]",
+      "m_AddBuffOnLeave": "[]",
+      "m_RemoveBuffOnLeave": "[]"
+    },
     "6000301": {
       "m_bError": null,
       "m_ID": "6000301",
@@ -800,5 +820,5 @@
       "m_RemoveBuffOnLeave": "[]"
     }
   },
-  "status": "processed_42_items"
+  "status": "processed_43_items"
 }

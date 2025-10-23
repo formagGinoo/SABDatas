@@ -1,5 +1,6 @@
 {
   "className": "CData_LoungeCharParts",
+  "timestamp": "2025-10-23T19:25:20.383Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -452,7 +453,7 @@
     "29": {
       "m_bError": null,
       "m_ID": "29",
-      "m_BoneName": "\"0\"",
+      "m_BoneName": "\"breast_l_control\"",
       "m_Collision": "\"breast_l_range\"",
       "m_State": "\"idle_03\"",
       "m_Action": "\"touch_breast_03\"",
@@ -468,7 +469,7 @@
     "30": {
       "m_bError": null,
       "m_ID": "30",
-      "m_BoneName": "\"0\"",
+      "m_BoneName": "\"breast_r_control\"",
       "m_Collision": "\"breast_r_range\"",
       "m_State": "\"idle_03\"",
       "m_Action": "\"touch_breast_03\"",
@@ -596,7 +597,7 @@
     "38": {
       "m_bError": null,
       "m_ID": "38",
-      "m_BoneName": "\"0\"",
+      "m_BoneName": "\"breast_l_control\"",
       "m_Collision": "\"breast_l_range\"",
       "m_State": "\"bite_idle_02\"",
       "m_Action": "\"touch_breast_04\"",
@@ -612,7 +613,7 @@
     "39": {
       "m_bError": null,
       "m_ID": "39",
-      "m_BoneName": "\"0\"",
+      "m_BoneName": "\"breast_r_control\"",
       "m_Collision": "\"breast_r_range\"",
       "m_State": "\"bite_idle_02\"",
       "m_Action": "\"touch_breast_04\"",

@@ -1,5 +1,6 @@
 {
   "className": "CData_AttractTouch",
+  "timestamp": "2025-10-23T19:25:03.130Z",
   "data": {
     "20010": {
       "_type": "nested_dictionary",
@@ -1652,7 +1653,63 @@
           "m_VoiceId": "[2071021,2071022]"
         }
       }
+    },
+    "20720": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2072017,2072018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2072019,2072020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2072021,2072022]"
+        }
+      }
+    },
+    "20730": {
+      "_type": "nested_dictionary",
+      "_count": 3,
+      "_processed": 3,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_UID": "1",
+          "m_BoundingBox": "\"touchnormal\"",
+          "m_VoiceId": "[2073017,2073018]"
+        },
+        "2": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_UID": "2",
+          "m_BoundingBox": "\"touchhead\"",
+          "m_VoiceId": "[2073019,2073020]"
+        },
+        "3": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_UID": "3",
+          "m_BoundingBox": "\"touchsp\"",
+          "m_VoiceId": "[2073021,2073022]"
+        }
+      }
     }
   },
-  "status": "processed_59_items"
+  "status": "processed_61_items"
 }

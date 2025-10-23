@@ -1,5 +1,6 @@
 {
   "className": "CData_RogueTaskAchieve",
+  "timestamp": "2025-10-23T19:25:37.499Z",
   "data": {
     "1001": {
       "_skipped": "Nested Dictionary (141 items - too large)",
@@ -4409,7 +4410,117 @@
           "m_TaskID": "85808"
         }
       }
+    },
+    "4060": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "1",
+          "m_TaskID": "85901"
+        },
+        "2": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "2",
+          "m_TaskID": "85902"
+        },
+        "3": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "3",
+          "m_TaskID": "85903"
+        },
+        "4": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "4",
+          "m_TaskID": "85904"
+        },
+        "5": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "5",
+          "m_TaskID": "85905"
+        },
+        "6": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "6",
+          "m_TaskID": "85906"
+        },
+        "7": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "7",
+          "m_TaskID": "85907"
+        },
+        "8": {
+          "m_bError": null,
+          "m_TaskGroup": "4060",
+          "m_Sequence": "8",
+          "m_TaskID": "85908"
+        }
+      }
+    },
+    "4061": {
+      "_type": "nested_dictionary",
+      "_count": 8,
+      "_processed": 8,
+      "data": {
+        "1": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "1",
+          "m_TaskID": "86001"
+        },
+        "2": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "2",
+          "m_TaskID": "86002"
+        },
+        "3": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "3",
+          "m_TaskID": "86003"
+        },
+        "4": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "4",
+          "m_TaskID": "86004"
+        },
+        "5": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "5",
+          "m_TaskID": "86005"
+        },
+        "6": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "6",
+          "m_TaskID": "86006"
+        },
+        "7": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "7",
+          "m_TaskID": "86007"
+        },
+        "8": {
+          "m_bError": null,
+          "m_TaskGroup": "4061",
+          "m_Sequence": "8",
+          "m_TaskID": "86008"
+        }
+      }
     }
   },
-  "status": "processed_81_items"
+  "status": "processed_83_items"
 }

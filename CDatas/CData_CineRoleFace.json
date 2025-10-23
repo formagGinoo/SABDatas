@@ -1,5 +1,6 @@
 {
   "className": "CData_CineRoleFace",
+  "timestamp": "2025-10-23T19:25:10.691Z",
   "data": {
     "\"Acappella_Base003\"": {
       "m_bError": null,
@@ -637,7 +638,35 @@
       "m_PosX": "432",
       "m_PosY": "584",
       "m_Replace": null
+    },
+    "\"Typhoeus_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Typhoeus_Base003\"",
+      "m_PosX": "334",
+      "m_PosY": "321",
+      "m_Replace": null
+    },
+    "\"Typhoeus_Evil003\"": {
+      "m_bError": null,
+      "m_ID": "\"Typhoeus_Evil003\"",
+      "m_PosX": "368",
+      "m_PosY": "308",
+      "m_Replace": null
+    },
+    "\"Ryan_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Ryan_Base003\"",
+      "m_PosX": "487",
+      "m_PosY": "404",
+      "m_Replace": null
+    },
+    "\"Selenia_Base003\"": {
+      "m_bError": null,
+      "m_ID": "\"Selenia_Base003\"",
+      "m_PosX": "471",
+      "m_PosY": "374",
+      "m_Replace": null
     }
   },
-  "status": "processed_91_items"
+  "status": "processed_95_items"
 }

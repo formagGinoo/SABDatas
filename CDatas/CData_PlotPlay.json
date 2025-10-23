@@ -1,5 +1,6 @@
 {
   "className": "CData_PlotPlay",
+  "timestamp": "2025-10-23T19:25:26.753Z",
   "data": {
     "21000411": {
       "m_bError": null,
@@ -2847,7 +2848,7 @@
       "m_MapID": "1001016",
       "m_TriggerType": "6",
       "m_TriggerData": null,
-      "m_PlotStepLst": "[1,1001018021,1001018025,1001018026,1001018027,1001018028,1001018029,1001018030,1001018031,1001018032,1001018033,1001018034,1001018035]",
+      "m_PlotStepLst": "[1,1001018021,1001018025,1001018026,1001018027,1001018028,1001018036]",
       "m_SkipAll": null,
       "m_DestroyBattleRes": null
     },
@@ -3258,6 +3259,176 @@
       "m_TriggerType": "3",
       "m_TriggerData": null,
       "m_PlotStepLst": "[1001118021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121001": {
+      "m_bError": null,
+      "m_ID": "100121001",
+      "m_MapID": "1001201",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001201011,1001201012]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121002": {
+      "m_bError": null,
+      "m_ID": "100121002",
+      "m_MapID": "1001201",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001201021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121101": {
+      "m_bError": null,
+      "m_ID": "100121101",
+      "m_MapID": "1001202",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001202011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121102": {
+      "m_bError": null,
+      "m_ID": "100121102",
+      "m_MapID": "1001202",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001202021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121201": {
+      "m_bError": null,
+      "m_ID": "100121201",
+      "m_MapID": "1001203",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001203011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121202": {
+      "m_bError": null,
+      "m_ID": "100121202",
+      "m_MapID": "1001203",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001203032]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121301": {
+      "m_bError": null,
+      "m_ID": "100121301",
+      "m_MapID": "1001204",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001204011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121302": {
+      "m_bError": null,
+      "m_ID": "100121302",
+      "m_MapID": "1001204",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001204021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121401": {
+      "m_bError": null,
+      "m_ID": "100121401",
+      "m_MapID": "1001205",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001205011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121402": {
+      "m_bError": null,
+      "m_ID": "100121402",
+      "m_MapID": "1001205",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001205021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121501": {
+      "m_bError": null,
+      "m_ID": "100121501",
+      "m_MapID": "1001206",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001206011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121502": {
+      "m_bError": null,
+      "m_ID": "100121502",
+      "m_MapID": "1001206",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001206021]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121601": {
+      "m_bError": null,
+      "m_ID": "100121601",
+      "m_MapID": "1001207",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001207011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121701": {
+      "m_bError": null,
+      "m_ID": "100121701",
+      "m_MapID": "1001208",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001208011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121702": {
+      "m_bError": null,
+      "m_ID": "100121702",
+      "m_MapID": "1001208",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001208021,1001208022]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "100121801": {
+      "m_bError": null,
+      "m_ID": "100121801",
+      "m_MapID": "1001209",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001209011]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "100121802": {
+      "m_bError": null,
+      "m_ID": "100121802",
+      "m_MapID": "1001209",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[1001209021,1001209022,1001209023]",
       "m_SkipAll": null,
       "m_DestroyBattleRes": "1"
     },
@@ -6940,7 +7111,247 @@
       "m_PlotStepLst": "[600101202,600101203,600101204,600101205]",
       "m_SkipAll": null,
       "m_DestroyBattleRes": "1"
+    },
+    "600120101": {
+      "m_bError": null,
+      "m_ID": "600120101",
+      "m_MapID": "6001201",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120101]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120102": {
+      "m_bError": null,
+      "m_ID": "600120102",
+      "m_MapID": "6001201",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120102]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120201": {
+      "m_bError": null,
+      "m_ID": "600120201",
+      "m_MapID": "6001202",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120201]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120202": {
+      "m_bError": null,
+      "m_ID": "600120202",
+      "m_MapID": "6001202",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120202]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120301": {
+      "m_bError": null,
+      "m_ID": "600120301",
+      "m_MapID": "6001203",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120301]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120302": {
+      "m_bError": null,
+      "m_ID": "600120302",
+      "m_MapID": "6001203",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120302]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120401": {
+      "m_bError": null,
+      "m_ID": "600120401",
+      "m_MapID": "6001204",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120401]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120402": {
+      "m_bError": null,
+      "m_ID": "600120402",
+      "m_MapID": "6001204",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120403]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120501": {
+      "m_bError": null,
+      "m_ID": "600120501",
+      "m_MapID": "6001205",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120501]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120502": {
+      "m_bError": null,
+      "m_ID": "600120502",
+      "m_MapID": "6001205",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120504]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120601": {
+      "m_bError": null,
+      "m_ID": "600120601",
+      "m_MapID": "6001206",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120601]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120602": {
+      "m_bError": null,
+      "m_ID": "600120602",
+      "m_MapID": "6001206",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120602]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120701": {
+      "m_bError": null,
+      "m_ID": "600120701",
+      "m_MapID": "6001207",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120701]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120702": {
+      "m_bError": null,
+      "m_ID": "600120702",
+      "m_MapID": "6001207",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120702]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120801": {
+      "m_bError": null,
+      "m_ID": "600120801",
+      "m_MapID": "6001208",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120801]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120802": {
+      "m_bError": null,
+      "m_ID": "600120802",
+      "m_MapID": "6001208",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120802]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600120901": {
+      "m_bError": null,
+      "m_ID": "600120901",
+      "m_MapID": "6001209",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120901]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600120902": {
+      "m_bError": null,
+      "m_ID": "600120902",
+      "m_MapID": "6001209",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600120902]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600121001": {
+      "m_bError": null,
+      "m_ID": "600121001",
+      "m_MapID": "6001210",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121001]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600121002": {
+      "m_bError": null,
+      "m_ID": "600121002",
+      "m_MapID": "6001210",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121002]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600121101": {
+      "m_bError": null,
+      "m_ID": "600121101",
+      "m_MapID": "6001211",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121101]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600121102": {
+      "m_bError": null,
+      "m_ID": "600121102",
+      "m_MapID": "6001211",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121102]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
+    },
+    "600121201": {
+      "m_bError": null,
+      "m_ID": "600121201",
+      "m_MapID": "6001212",
+      "m_TriggerType": "1",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121201]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": null
+    },
+    "600121202": {
+      "m_bError": null,
+      "m_ID": "600121202",
+      "m_MapID": "6001212",
+      "m_TriggerType": "3",
+      "m_TriggerData": null,
+      "m_PlotStepLst": "[600121202,600121203]",
+      "m_SkipAll": null,
+      "m_DestroyBattleRes": "1"
     }
   },
-  "status": "processed_694_items"
+  "status": "processed_735_items"
 }

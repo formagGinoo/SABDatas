@@ -1,5 +1,6 @@
 {
   "className": "CData_WwiseSoundbanksInfo",
+  "timestamp": "2025-10-23T19:25:44.589Z",
   "data": {
     "\"VO_MainLevel_02_01_EP01\"": {
       "m_bError": null,
@@ -14,52 +15,7 @@
       "m_bError": null,
       "m_EventName": "\"Play_Login\"",
       "m_BankName": "\"Login\"",
-      "m_SFX": "[\"252206363\",\"324652335\",\"528158577\",\"736692678\",\"937495755\"]",
-      "m_English_US": "[]",
-      "m_Japanese": "[]",
-      "m_Chinese_PRC": "[]"
-    },
-    "\"Play_Music\"": {
-      "m_bError": null,
-      "m_EventName": "\"Play_Music\"",
-      "m_BankName": "\"Music\"",
-      "m_SFX": "[\"2196439\",\"3721431\",\"7715155\",\"12803397\",\"15408496\",\"23822762\",\"25095971\",\"26977260\",\"28892743\",\"37265607\",\"38263168\",\"40460133\",\"41461456\",\"65689188\",\"70082008\",\"71428848\",\"73135762\",\"74438816\",\"80136551\",\"110343378\",\"118012417\",\"120611390\",\"122790830\",\"139462158\",\"142542951\",\"144527467\",\"148469843\",\"156342674\",\"159738192\",\"161463300\",\"164839487\",\"168372260\",\"177562773\",\"178173244\",\"186629557\",\"207074308\",\"227675577\",\"228392255\",\"233420964\",\"236056500\",\"247766442\",\"254011358\",\"256455552\",\"257096622\",\"274901753\",\"282015238\",\"282171532\",\"284023096\",\"291240806\",\"297845626\",\"300782620\",\"302529771\",\"307900268\",\"311755922\",\"314676854\",\"318487755\",\"322945515\",\"326029687\",\"333481466\",\"346940953\",\"347132206\",\"353745307\",\"357813325\",\"371159978\",\"373175552\",\"379240639\",\"383675006\",\"404114296\",\"404386021\",\"405365010\",\"406013065\",\"414674942\",\"419740930\",\"423107393\",\"429064954\",\"437193255\",\"455226260\",\"455646160\",\"463404328\",\"469736419\",\"472959455\",\"481101051\",\"482531846\",\"486203879\",\"490866007\",\"503347656\",\"507840388\",\"509038555\",\"512248639\",\"512634038\",\"513899413\",\"517548570\",\"524113166\",\"530809208\",\"535895350\",\"541374085\",\"547183576\",\"561143387\",\"567212498\",\"572077536\",\"580269847\",\"588785917\",\"590946191\",\"595300468\",\"596778041\",\"615955914\",\"618716667\",\"619989298\",\"621404886\",\"630647378\",\"634186560\",\"640854426\",\"646116752\",\"662743535\",\"668250542\",\"669474936\",\"676749089\",\"684758402\",\"691891069\",\"693188036\",\"706157477\",\"711734154\",\"726662969\",\"728119844\",\"732007987\",\"734216753\",\"735742554\",\"737352232\",\"738081211\",\"748199642\",\"749263426\",\"752693147\",\"754943779\",\"760147598\",\"769493700\",\"773572287\",\"773628846\",\"777777099\",\"785681715\",\"790281674\",\"793917094\",\"794667883\",\"801955044\",\"811465242\",\"814629778\",\"815316286\",\"824460362\",\"825969378\",\"829183257\",\"833025139\",\"836425036\",\"837639959\",\"851435845\",\"853222295\",\"855291033\",\"865697181\",\"872467323\",\"872637227\",\"873177657\",\"874185040\",\"874951884\",\"876318560\",\"889679253\",\"896231431\",\"899911493\",\"901915161\",\"915857577\",\"928444133\",\"937973942\",\"938752824\",\"950617519\",\"953111012\",\"953811155\",\"954608795\",\"958800207\",\"961721756\",\"962479466\",\"962516717\",\"962751362\",\"964814217\",\"971565395\",\"975938302\",\"978045390\",\"979298587\",\"982276770\",\"988538038\",\"995090489\",\"1002199078\",\"1017026745\",\"1039052220\",\"1039420312\",\"1056903572\",\"1057121383\",\"1059648130\",\"1063228892\",\"1070533947\"]",
-      "m_English_US": "[]",
-      "m_Japanese": "[]",
-      "m_Chinese_PRC": "[]"
-    },
-    "\"Gacha_Enter_1stTime\"": {
-      "m_bError": null,
-      "m_EventName": "\"Gacha_Enter_1stTime\"",
-      "m_BankName": "\"Gacha\"",
-      "m_SFX": "[\"980433795\"]",
-      "m_English_US": "[]",
-      "m_Japanese": "[]",
-      "m_Chinese_PRC": "[]"
-    },
-    "\"Vo_Gacha_Enter_1stTime\"": {
-      "m_bError": null,
-      "m_EventName": "\"Vo_Gacha_Enter_1stTime\"",
-      "m_BankName": "\"Vo_Gacha\"",
-      "m_SFX": "[]",
-      "m_English_US": "[]",
-      "m_Japanese": "[]",
-      "m_Chinese_PRC": "[]"
-    },
-    "\"Play_ui_login_effect\"": {
-      "m_bError": null,
-      "m_EventName": "\"Play_ui_login_effect\"",
-      "m_BankName": "\"Login\"",
-      "m_SFX": "[]",
-      "m_English_US": "[]",
-      "m_Japanese": "[]",
-      "m_Chinese_PRC": "[]"
-    },
-    "\"Play_vo_20040_system_halltitle\"": {
-      "m_bError": null,
-      "m_EventName": "\"Play_vo_20040_system_halltitle\"",
-      "m_BankName": "\"Vo_System_C_20040\"",
-      "m_SFX": "[]",
+      "m_SFX": "[\"252206363\",\"324652335\",\"528158577\",\"540563673\",\"736692678\",\"937495755\"]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
@@ -679,6 +635,15 @@
     "\"Play_ui_button_enter\"": {
       "m_bError": null,
       "m_EventName": "\"Play_ui_button_enter\"",
+      "m_BankName": "\"Login\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_login_effect\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_login_effect\"",
       "m_BankName": "\"Login\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
@@ -2425,6 +2390,33 @@
     "\"Play_B_61030_MaxSkill01_F_Break\"": {
       "m_bError": null,
       "m_EventName": "\"Play_B_61030_MaxSkill01_F_Break\"",
+      "m_BankName": "\"SFX_B_61030\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_61030_MaxSkill02_A_Start\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_61030_MaxSkill02_A_Start\"",
+      "m_BankName": "\"SFX_B_61030\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_61030_MaxSkill02_B_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_61030_MaxSkill02_B_Cast\"",
+      "m_BankName": "\"SFX_B_61030\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_61030_MaxSkill02_C_Explode\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_61030_MaxSkill02_C_Explode\"",
       "m_BankName": "\"SFX_B_61030\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
@@ -25381,6 +25373,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_Show_20720\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_Show_20720\"",
+      "m_BankName": "\"SFX_Show_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_ui_110Achievement\"": {
       "m_bError": null,
       "m_EventName": "\"Play_ui_110Achievement\"",
@@ -25511,6 +25512,69 @@
       "m_bError": null,
       "m_EventName": "\"Play_ui_MiniGameA10CharParts_wrong\"",
       "m_BankName": "\"SFX_UI_Activity110\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112_Achievement\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112_Achievement\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112_DialogueCollection\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112_DialogueCollection\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112_DialogueMain\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112_DialogueMain\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112_shop\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112_shop\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112_Sign\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112_Sign\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112Main_first_open\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112Main_first_open\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_Activity112Main_open\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_Activity112Main_open\"",
+      "m_BankName": "\"SFX_UI_Activity112\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -25745,6 +25809,15 @@
       "m_bError": null,
       "m_EventName": "\"Play_M_30150_Skill01_B_Hit\"",
       "m_BankName": "\"SFX_M_30150\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_Show_20730\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_Show_20730\"",
+      "m_BankName": "\"SFX_Show_20730\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -26542,6 +26615,159 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_vo_20720_system_affinitymax\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_affinitymax\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_affinityup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_affinityup\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_breakthrough\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_breakthrough\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_dispatch\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_dispatch\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_gift01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_gift01\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_gift02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_gift02\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_greet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_greet\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_idle\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_idle\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_levelup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_levelup\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_show\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_show\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_tapgeneric01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_tapgeneric01\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_tapgeneric02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_tapgeneric02\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_taphead01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_taphead01\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_taphead02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_taphead02\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_tapsp01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_tapsp01\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_tapsp02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_tapsp02\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_system_transfusion\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_system_transfusion\"",
+      "m_BankName": "\"Vo_System_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_vo_20200_system_affinitymax\"": {
       "m_bError": null,
       "m_EventName": "\"Play_vo_20200_system_affinitymax\"",
@@ -26744,6 +26970,159 @@
       "m_bError": null,
       "m_EventName": "\"Stop_ui_LegacyActivityMain_slide\"",
       "m_BankName": "\"Instance_Legacy\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_affinitymax\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_affinitymax\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_affinityup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_affinityup\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_breakthrough\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_breakthrough\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_dispatch\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_dispatch\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_gift01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_gift01\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_gift02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_gift02\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_greet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_greet\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_idle\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_idle\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_levelup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_levelup\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_show\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_show\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_tapgeneric01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_tapgeneric01\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_tapgeneric02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_tapgeneric02\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_taphead01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_taphead01\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_taphead02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_taphead02\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_tapsp01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_tapsp01\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_tapsp02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_tapsp02\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_system_transfusion\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_system_transfusion\"",
+      "m_BankName": "\"Vo_System_C_20730\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -38260,6 +38639,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_AMB_DesertTent\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_AMB_DesertTent\"",
+      "m_BankName": "\"AMB_Timeline\"",
+      "m_SFX": "[\"532408787\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_AMB_Event_Cabin\"": {
       "m_bError": null,
       "m_EventName": "\"Play_AMB_Event_Cabin\"",
@@ -38380,6 +38768,15 @@
     "\"Stop_AMB_Desert\"": {
       "m_bError": null,
       "m_EventName": "\"Stop_AMB_Desert\"",
+      "m_BankName": "\"AMB_Timeline\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_AMB_DesertTent\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_AMB_DesertTent\"",
       "m_BankName": "\"AMB_Timeline\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
@@ -42107,6 +42504,213 @@
       "m_bError": null,
       "m_EventName": "\"Play_vo_20230_str_e01_09_47\"",
       "m_BankName": "\"vo_str_e01_09\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack01_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack01_B_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack01_B_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack02_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack02_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack02_B_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack02_B_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack03_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack03_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack03_B_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack03_B_Bullet\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack03_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack03_C_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack04_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack04_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack04_B_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack04_B_Bullet\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Attack04_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Attack04_C_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill01_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill01_B_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill01_B_Bullet\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill01_C_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill02_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill02_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill02_B_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill02_B_Bullet\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill02_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill02_C_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill03_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill03_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill03_B_Impact\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill03_B_Impact\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill04_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill04_A_Cast\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill04_B_Impact\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill04_B_Impact\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill04_C_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill04_C_Bullet\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill04_D_Break\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill04_D_Break\"",
+      "m_BankName": "\"SFX_B_33460\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_33460_Skill04_E_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_33460_Skill04_E_Hit\"",
+      "m_BankName": "\"SFX_B_33460\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -62947,6 +63551,618 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_B_200001_Clip01b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01b_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01b_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01b_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01b_04\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_04\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_05\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[\"526310918\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_06\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_06\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_07\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_07\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_08\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_08\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip01c_09\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip01c_09\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip03a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip03a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip04a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip04a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip04a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip04a_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip04b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip04b_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip04b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip04b_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip04b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip04b_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip05a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip05a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip05a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip05a_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip06a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip06a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip06b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip06b_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip07a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip07a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip08b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip08b_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip08b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip08b_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip08b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip08b_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip08b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip08b_04\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09a_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09a_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_04\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_05\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_06\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_06\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_07\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_07\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09b_08\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09b_08\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[\"341122580\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09c_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09c_01\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09c_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09c_02\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_B_200001_Clip09c_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_B_200001_Clip09c_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_B_200001_Clip01c_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_B_200001_Clip01c_05\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_B_200001_Clip08b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_B_200001_Clip08b_03\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_B_200001_Clip09b_08\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_B_200001_Clip09b_08\"",
+      "m_BankName": "\"SFX_B_200001\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Action_Mark\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Action_Mark\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Action_Soak\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Action_Soak\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Action_Thigh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Action_Thigh\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Body\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Body\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Face\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Face\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Jewel1\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Jewel1\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Jewel2\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Jewel2\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Jewel3\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Jewel3\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Jewel4\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Jewel4\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Jewel5\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Jewel5\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Loop\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Loop\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Refuse\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Refuse\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_Tail\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_Tail\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_ThighL\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_ThighL\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Dry_ThighR\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Dry_ThighR\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_Body\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_Body\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_Bottle\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_Bottle\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_Face\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_Face\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_Full\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_Full\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_SprayBody\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_SprayBody\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_SprayFace\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_SprayFace\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_SprayThighL\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_SprayThighL\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_SprayThighR\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_SprayThighR\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_Restroom_Wet_Thigh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_Restroom_Wet_Thigh\"",
+      "m_BankName": "\"Vo_RestRoom_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_C_20330_Array\"": {
       "m_bError": null,
       "m_EventName": "\"Play_C_20330_Array\"",
@@ -67675,6 +68891,15 @@
     "\"Play_ui_rebirth_menu_open\"": {
       "m_bError": null,
       "m_EventName": "\"Play_ui_rebirth_menu_open\"",
+      "m_BankName": "\"SFX_UI_Activity\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_RechargeReward\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_RechargeReward\"",
       "m_BankName": "\"SFX_UI_Activity\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
@@ -85555,6 +86780,204 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_vo_20720_battle_array\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_array\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_attack\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_attack\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_death\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_death\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_hit\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_maxskill01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_maxskill01\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_maxskill02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_maxskill02\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_skill01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_skill01\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_battle_stagewin\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_battle_stagewin\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_agree\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_agree\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_breath\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_breath\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_calm\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_calm\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_confused\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_confused\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_disagree\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_disagree\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_impatient\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_impatient\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_irritated\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_irritated\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_joyful\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_joyful\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_laugh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_laugh\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_mock\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_mock\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_sad\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_sad\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_sigh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_sigh\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_surprised\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_surprised\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20720_str_thinking\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20720_str_thinking\"",
+      "m_BankName": "\"Vo_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_vo_20680_battle_array\"": {
       "m_bError": null,
       "m_EventName": "\"Play_vo_20680_battle_array\"",
@@ -86279,6 +87702,222 @@
       "m_bError": null,
       "m_EventName": "\"Play_vo_20030_str_upset\"",
       "m_BankName": "\"Vo_C_20030\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_array\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_array\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_attack\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_attack\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_death\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_death\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_hit\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_maxskill01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_maxskill01\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_maxskill02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_maxskill02\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_skill01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_skill01\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_battle_stagewin\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_battle_stagewin\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_agree\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_agree\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_breath\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_breath\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_calm\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_calm\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_confused\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_confused\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_disagree\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_disagree\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_impatient\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_impatient\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_irritated\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_irritated\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_joyful\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_joyful\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_laugh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_laugh\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_mad\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_mad\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_mock\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_mock\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_sad\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_sad\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_scream\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_scream\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_sigh\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_sigh\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_surprised\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_surprised\"",
+      "m_BankName": "\"Vo_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_vo_20730_str_thinking\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20730_str_thinking\"",
+      "m_BankName": "\"Vo_C_20730\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -90824,6 +92463,105 @@
       "m_bError": null,
       "m_EventName": "\"Play_vo_20630_str_surprised\"",
       "m_BankName": "\"Vo_C_20630\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_affinityup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_affinityup\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_box_open\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_box_open\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_grab_treasure\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_grab_treasure\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_heartbeat_f\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_heartbeat_f\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_heartbeat_m\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_heartbeat_m\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_heartbeat_s\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_heartbeat_s\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_perfume_clickdown\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_perfume_clickdown\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_perfume_clickup\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_perfume_clickup\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_perfume_spray\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_perfume_spray\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_rain\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_rain\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_ui_restroom_20730_sunshine\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_ui_restroom_20730_sunshine\"",
+      "m_BankName": "\"SFX_UI_RestRoom_20730\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -96166,6 +97904,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"VO_MainLevel_10_18_EP01\"": {
+      "m_bError": null,
+      "m_EventName": "\"VO_MainLevel_10_18_EP01\"",
+      "m_BankName": "\"VO_MainLevel_10_18_EP01\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"MainLevel_02_04_EP01\"": {
       "m_bError": null,
       "m_EventName": "\"MainLevel_02_04_EP01\"",
@@ -96620,6 +98367,15 @@
       "m_bError": null,
       "m_EventName": "\"Play_M_60000_PassiveSkill_A_Born\"",
       "m_BankName": "\"SFX_M_60000\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"MainLevel_10_18_EP01\"": {
+      "m_bError": null,
+      "m_EventName": "\"MainLevel_10_18_EP01\"",
+      "m_BankName": "\"MainLevel_10_18_EP01\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -121339,6 +123095,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_vo_20040_system_halltitle\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_vo_20040_system_halltitle\"",
+      "m_BankName": "\"Vo_System_C_20040\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_vo_20040_system_idle\"": {
       "m_bError": null,
       "m_EventName": "\"Play_vo_20040_system_idle\"",
@@ -132557,6 +134322,15 @@
       "m_bError": null,
       "m_EventName": "\"Play_vo_20350_system_transfusion\"",
       "m_BankName": "\"Vo_System_C_20350\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Vo_Gacha_Enter_1stTime\"": {
+      "m_bError": null,
+      "m_EventName": "\"Vo_Gacha_Enter_1stTime\"",
+      "m_BankName": "\"Vo_Gacha\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -149680,6 +151454,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Gacha_Enter_1stTime\"": {
+      "m_bError": null,
+      "m_EventName": "\"Gacha_Enter_1stTime\"",
+      "m_BankName": "\"Gacha\"",
+      "m_SFX": "[\"980433795\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Gacha_SSR_show\"": {
       "m_bError": null,
       "m_EventName": "\"Gacha_SSR_show\"",
@@ -164197,6 +165980,177 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_C_20720_Array\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Array\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Attack01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Attack01_A_Cast\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Attack01_B_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Attack01_B_Bullet\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Attack01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Attack01_C_Hit\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Attack02_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Attack02_A_Cast\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Die\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Die\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_A_Cast\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_B_Laser\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_B_Laser\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_C_Hit\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_D_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_D_Cast\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_E_Bullet\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_E_Bullet\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_F_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_F_Hit\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill01_G_Back\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill01_G_Back\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_MaxSkill_CutIn\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_MaxSkill_CutIn\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Run\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Run\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Skill01_A_Charge\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Skill01_A_Charge\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Skill01_B_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Skill01_B_Cast\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Skill01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Skill01_C_Hit\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20720_Skill01_D_End\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20720_Skill01_D_End\"",
+      "m_BankName": "\"SFX_C_20720\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_C_20640_Array\"": {
       "m_bError": null,
       "m_EventName": "\"Play_C_20640_Array\"",
@@ -164633,6 +166587,123 @@
       "m_bError": null,
       "m_EventName": "\"Play_B_30170_Skill03_A_Cast\"",
       "m_BankName": "\"SFX_B_30170\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Array\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Array\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Attack01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Attack01_A_Cast\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Attack01_B_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Attack01_B_Hit\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Die\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Die\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_MaxSkill01_A_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_MaxSkill01_A_Cast\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_MaxSkill01_B_Wind\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_MaxSkill01_B_Wind\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_MaxSkill01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_MaxSkill01_C_Hit\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_MaxSkill_CutIn\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_MaxSkill_CutIn\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Passive_A_Buff\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Passive_A_Buff\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Run\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Run\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Skill01_A_Charge\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Skill01_A_Charge\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Skill01_B_Cast\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Skill01_B_Cast\"",
+      "m_BankName": "\"SFX_C_20730\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_C_20730_Skill01_C_Hit\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_C_20730_Skill01_C_Hit\"",
+      "m_BankName": "\"SFX_C_20730\"",
       "m_SFX": "[]",
       "m_English_US": "[]",
       "m_Japanese": "[]",
@@ -174214,6 +176285,15 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Play_Music\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_Music\"",
+      "m_BankName": "\"Music\"",
+      "m_SFX": "[\"2196439\",\"3721431\",\"7715155\",\"12803397\",\"15408496\",\"23822762\",\"25095971\",\"26977260\",\"28892743\",\"37265607\",\"38263168\",\"40460133\",\"41461456\",\"65689188\",\"70082008\",\"71428848\",\"73135762\",\"74438816\",\"80136551\",\"110343378\",\"118012417\",\"120611390\",\"122790830\",\"134783242\",\"139462158\",\"142542951\",\"144527467\",\"148469843\",\"156342674\",\"159738192\",\"161463300\",\"164839487\",\"168372260\",\"177562773\",\"178173244\",\"186629557\",\"207074308\",\"227675577\",\"228392255\",\"233420964\",\"234257677\",\"236056500\",\"247766442\",\"254011358\",\"256455552\",\"257096622\",\"274901753\",\"282015238\",\"282171532\",\"284023096\",\"291240806\",\"297845626\",\"300782620\",\"302529771\",\"307900268\",\"311755922\",\"314676854\",\"318487755\",\"322945515\",\"326029687\",\"333481466\",\"346940953\",\"347132206\",\"353745307\",\"357813325\",\"371159978\",\"373175552\",\"379240639\",\"383675006\",\"404114296\",\"404386021\",\"405365010\",\"406013065\",\"414674942\",\"419740930\",\"423107393\",\"429064954\",\"437193255\",\"455226260\",\"455646160\",\"463404328\",\"469736419\",\"472959455\",\"481101051\",\"482531846\",\"486203879\",\"490866007\",\"503347656\",\"507840388\",\"509038555\",\"510985352\",\"512248639\",\"512634038\",\"513899413\",\"517548570\",\"524113166\",\"530809208\",\"535895350\",\"541374085\",\"547183576\",\"561143387\",\"567212498\",\"572077536\",\"580269847\",\"585770830\",\"588785917\",\"590946191\",\"595300468\",\"596778041\",\"615955914\",\"618716667\",\"619989298\",\"621404886\",\"630647378\",\"634186560\",\"640854426\",\"646116752\",\"660171630\",\"662743535\",\"668250542\",\"669474936\",\"676749089\",\"684758402\",\"691891069\",\"693188036\",\"706157477\",\"711734154\",\"717432991\",\"726662969\",\"728119844\",\"732007987\",\"734216753\",\"735742554\",\"737352232\",\"738081211\",\"748199642\",\"749263426\",\"752693147\",\"754943779\",\"760147598\",\"769493700\",\"773572287\",\"773628846\",\"777777099\",\"785681715\",\"790281674\",\"793917094\",\"794667883\",\"798883090\",\"801955044\",\"811465242\",\"814629778\",\"815316286\",\"824460362\",\"825969378\",\"829183257\",\"833025139\",\"836425036\",\"837639959\",\"841570194\",\"851435845\",\"853222295\",\"855291033\",\"865697181\",\"870242247\",\"872467323\",\"872637227\",\"873177657\",\"874185040\",\"874951884\",\"876318560\",\"889679253\",\"896231431\",\"899911493\",\"901915161\",\"915857577\",\"928444133\",\"937973942\",\"938752824\",\"942525873\",\"950617519\",\"953111012\",\"953811155\",\"954608795\",\"958800207\",\"961721756\",\"962479466\",\"962516717\",\"962751362\",\"964814217\",\"971565395\",\"975938302\",\"978045390\",\"979298587\",\"982276770\",\"988538038\",\"995090489\",\"1002199078\",\"1009331370\",\"1017026745\",\"1039052220\",\"1039420312\",\"1056903572\",\"1057121383\",\"1059648130\",\"1063228892\",\"1070533947\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_vo_20230_battle_array\"": {
       "m_bError": null,
       "m_EventName": "\"Play_vo_20230_battle_array\"",
@@ -179317,6 +181397,627 @@
       "m_Japanese": "[]",
       "m_Chinese_PRC": "[]"
     },
+    "\"Event_1201_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Event_1201_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"1014285066\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_AMB_E_1201_Prison\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_AMB_E_1201_Prison\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"364328545\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_AMB_E_1201_StormCity\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_AMB_E_1201_StormCity\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"57035771\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_AMB_E_1201_Valley\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_AMB_E_1201_Valley\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"909350445\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_AMB_E_1201_VolcanoForest\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_AMB_E_1201_VolcanoForest\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"528946487\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_01a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_01a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_01b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_01b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_02a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_02a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_02a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_02a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_02b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_02b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_06\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_06\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03a_07\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03a_07\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_03b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_03b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_04b_06\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_04b_06\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05a_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05a_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"673092991\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05a_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05a_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05a_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05a_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_05b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_05b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_06a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_06a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_06b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_06b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_06b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_06b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_06\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_06\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_07\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_07\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07a_08\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07a_08\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_07b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_07b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[\"597778297\"]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_09a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_09a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_09b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_09b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_09b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_09b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_09b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_09b_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_10b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_10b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_11b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_11b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_11b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_11b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_11b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_11b_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_11b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_11b_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_11b_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_11b_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12a_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12a_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12a_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12a_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12b_01\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12b_01\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12b_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12b_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12b_04\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12b_04\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Play_E_1201_12b_05\"": {
+      "m_bError": null,
+      "m_EventName": "\"Play_E_1201_12b_05\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_AMB_E_1201_Prison\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_AMB_E_1201_Prison\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_AMB_E_1201_StormCity\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_AMB_E_1201_StormCity\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_AMB_E_1201_Valley\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_AMB_E_1201_Valley\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_AMB_E_1201_VolcanoForest\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_AMB_E_1201_VolcanoForest\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_E_1201_05a_03\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_E_1201_05a_03\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
+    "\"Stop_E_1201_07b_02\"": {
+      "m_bError": null,
+      "m_EventName": "\"Stop_E_1201_07b_02\"",
+      "m_BankName": "\"SFX_Event12\"",
+      "m_SFX": "[]",
+      "m_English_US": "[]",
+      "m_Japanese": "[]",
+      "m_Chinese_PRC": "[]"
+    },
     "\"Play_B_40110_Attack01_A_Cast\"": {
       "m_bError": null,
       "m_EventName": "\"Play_B_40110_Attack01_A_Cast\"",
@@ -180722,5 +183423,5 @@
       "m_Chinese_PRC": "[]"
     }
   },
-  "status": "processed_20080_items"
+  "status": "processed_20380_items"
 }

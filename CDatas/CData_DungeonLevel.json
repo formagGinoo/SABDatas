@@ -1,5 +1,6 @@
 {
   "className": "CData_DungeonLevel",
+  "timestamp": "2025-10-23T19:25:17.867Z",
   "data": {
     "2101010": {
       "m_bError": null,
@@ -16,7 +17,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1101,3],[33001,5]]",
       "m_ClientProDrop": "[[600111]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2102010": {
       "m_bError": null,
@@ -33,7 +39,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,2],[34001,5]]",
       "m_ClientProDrop": "[[600511]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2103010": {
       "m_bError": null,
@@ -50,7 +61,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2104010": {
       "m_bError": null,
@@ -67,7 +83,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2105010": {
       "m_bError": null,
@@ -84,7 +105,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2106010": {
       "m_bError": null,
@@ -101,7 +127,12 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     },
     "2107010": {
       "m_bError": null,
@@ -118,8 +149,145 @@
       "m_Settlement": null,
       "m_ClientMustDrop": "[[1102,13],[35001,5]]",
       "m_ClientProDrop": "[[600811]]",
-      "m_Turn": "1"
+      "m_MonthlyPrivilegeReward": "[]",
+      "m_Turn": "1",
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
+    },
+    "2111010": {
+      "m_bError": null,
+      "m_LevelID": "2111010",
+      "m_MapID": "2008001",
+      "m_LevelType": "2",
+      "m_LevelSubType": "11",
+      "m_mName": "\"Floor 01\"",
+      "m_LevelUnlock": null,
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[51013,45],[51010,21],[35210,7],[1102,30]]",
+      "m_ClientProDrop": "[[1070,35]]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": "1",
+      "m_DescID": "[1,2]",
+      "m_CharacterID": "[20730,20210,20160,20600,20340,20610]",
+      "m_ItemID": null
+    },
+    "2111020": {
+      "m_bError": null,
+      "m_LevelID": "2111020",
+      "m_MapID": "2008002",
+      "m_LevelType": "2",
+      "m_LevelSubType": "11",
+      "m_mName": "\"Floor 02\"",
+      "m_LevelUnlock": "2111010",
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[51013,50],[51010,22],[35210,7],[1102,32]]",
+      "m_ClientProDrop": "[[1070,60]]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": "1",
+      "m_DescID": "[1,2]",
+      "m_CharacterID": "[20730,20210,20160,20600,20340,20610]",
+      "m_ItemID": null
+    },
+    "2111030": {
+      "m_bError": null,
+      "m_LevelID": "2111030",
+      "m_MapID": "2008003",
+      "m_LevelType": "2",
+      "m_LevelSubType": "11",
+      "m_mName": "\"Floor 03\"",
+      "m_LevelUnlock": "2111020",
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[51013,67],[51010,23],[35210,7],[1102,34]]",
+      "m_ClientProDrop": "[[1070,100]]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": "1",
+      "m_DescID": "[1,2]",
+      "m_CharacterID": "[20730,20210,20160,20600,20340,20610]",
+      "m_ItemID": "1070"
+    },
+    "2112010": {
+      "m_bError": null,
+      "m_LevelID": "2112010",
+      "m_MapID": "2008001",
+      "m_LevelType": "2",
+      "m_LevelSubType": "12",
+      "m_mName": "\"Floor 01\"",
+      "m_LevelUnlock": null,
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[1101,5],[33004,5]]",
+      "m_ClientProDrop": "[]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
+    },
+    "2113010": {
+      "m_bError": null,
+      "m_LevelID": "2113010",
+      "m_MapID": "2008001",
+      "m_LevelType": "2",
+      "m_LevelSubType": "13",
+      "m_mName": "\"Floor 01\"",
+      "m_LevelUnlock": null,
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[1101,5],[33004,5]]",
+      "m_ClientProDrop": "[]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
+    },
+    "2114010": {
+      "m_bError": null,
+      "m_LevelID": "2114010",
+      "m_MapID": "2008001",
+      "m_LevelType": "2",
+      "m_LevelSubType": "14",
+      "m_mName": "\"Floor 01\"",
+      "m_LevelUnlock": null,
+      "m_HeroModify": "3001",
+      "m_Difficulty": null,
+      "m_RecoEfficencyType": null,
+      "m_RecoEfficency": null,
+      "m_Settlement": null,
+      "m_ClientMustDrop": "[[1101,5],[33004,5]]",
+      "m_ClientProDrop": "[]",
+      "m_MonthlyPrivilegeReward": "[[1102,20]]",
+      "m_Turn": null,
+      "m_IsOpen": null,
+      "m_DescID": "[]",
+      "m_CharacterID": "[]",
+      "m_ItemID": null
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_13_items"
 }

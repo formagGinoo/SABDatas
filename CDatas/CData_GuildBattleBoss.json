@@ -1,5 +1,6 @@
 {
   "className": "CData_GuildBattleBoss",
+  "timestamp": "2025-10-23T19:25:19.493Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -160,7 +161,47 @@
       "m_Avatar": "\"GuildRaid_head20\"",
       "m_BG": "\"boss_role_20\"",
       "m_MonsterTypeID": "[1,5]"
+    },
+    "21": {
+      "m_bError": null,
+      "m_ID": "21",
+      "m_mName": "\"Hunt the Deer\"",
+      "m_Avatar": "\"GuildRaid_head21\"",
+      "m_BG": "\"boss_role_21\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "22": {
+      "m_bError": null,
+      "m_ID": "22",
+      "m_mName": "\"Arrows in Shadows\"",
+      "m_Avatar": "\"GuildRaid_head22\"",
+      "m_BG": "\"boss_role_22\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "23": {
+      "m_bError": null,
+      "m_ID": "23",
+      "m_mName": "\"Phantoms in the Woods\"",
+      "m_Avatar": "\"GuildRaid_head23\"",
+      "m_BG": "\"boss_role_23\"",
+      "m_MonsterTypeID": "[1,5]"
+    },
+    "24": {
+      "m_bError": null,
+      "m_ID": "24",
+      "m_mName": "\"Thunder Prophet\"",
+      "m_Avatar": "\"GuildRaid_head24\"",
+      "m_BG": "\"boss_role_24\"",
+      "m_MonsterTypeID": "[2,5]"
+    },
+    "25": {
+      "m_bError": null,
+      "m_ID": "25",
+      "m_mName": "\"Cursed Blood\"",
+      "m_Avatar": "\"GuildRaid_head25\"",
+      "m_BG": "\"boss_role_25\"",
+      "m_MonsterTypeID": "[1,5]"
     }
   },
-  "status": "processed_20_items"
+  "status": "processed_25_items"
 }

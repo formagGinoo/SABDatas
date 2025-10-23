@@ -1,0 +1,39 @@
+{
+  "className": "CData_PartDungeonChapter",
+  "timestamp": "2025-10-23T19:25:26.669Z",
+  "data": {
+    "11": {
+      "m_bError": null,
+      "m_LevelSubType": "11",
+      "m_mName": "\"Crypt of Doom\"",
+      "m_mDesc": "\"Drops Tier 9 Faction Ring Shards\"",
+      "m_Icon": "\"Atlas_BossEquipmentPart/PartDungeon_icon04\"",
+      "m_Background": "\"Atlas_NewEquipment/NewEquipment_role_01\""
+    },
+    "12": {
+      "m_bError": null,
+      "m_LevelSubType": "12",
+      "m_mName": "\"Shadowed Ruins\"",
+      "m_mDesc": "\"Drops Tier 9 Faction Armor Shards\"",
+      "m_Icon": "\"Atlas_BossEquipmentPart/PartDungeon_icon03\"",
+      "m_Background": "\"\""
+    },
+    "13": {
+      "m_bError": null,
+      "m_LevelSubType": "13",
+      "m_mName": "\"Temple of Light\"",
+      "m_mDesc": "\"Drops Tier 9 Faction Headgear Shards\"",
+      "m_Icon": "\"Atlas_BossEquipmentPart/PartDungeon_icon02\"",
+      "m_Background": "\"\""
+    },
+    "14": {
+      "m_bError": null,
+      "m_LevelSubType": "14",
+      "m_mName": "\"Ashes of War\"",
+      "m_mDesc": "\"Drops Tier 9 Faction Amulet Shards\"",
+      "m_Icon": "\"Atlas_BossEquipmentPart/PartDungeon_icon01\"",
+      "m_Background": "\"\""
+    }
+  },
+  "status": "processed_4_items"
+}

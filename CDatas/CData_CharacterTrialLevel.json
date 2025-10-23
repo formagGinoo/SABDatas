@@ -1,5 +1,6 @@
 {
   "className": "CData_CharacterTrialLevel",
+  "timestamp": "2025-10-23T19:25:10.525Z",
   "data": {
     "2032001": {
       "m_bError": null,
@@ -63,7 +64,25 @@
       "m_OpenTime": "\"2025-09-09 12:00:00\"",
       "m_CloseTime": "\"\"",
       "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2072001": {
+      "m_bError": null,
+      "m_LevelID": "2072001",
+      "m_MapID": "4400009",
+      "m_HeroID": "20720",
+      "m_OpenTime": "\"2025-09-10 10:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
+    },
+    "2073001": {
+      "m_bError": null,
+      "m_LevelID": "2073001",
+      "m_MapID": "4400008",
+      "m_HeroID": "20730",
+      "m_OpenTime": "\"2025-09-10 10:00:00\"",
+      "m_CloseTime": "\"2025-10-01 04:00:00\"",
+      "m_FirstRewards": "[[101,50],[800003,1]]"
     }
   },
-  "status": "processed_7_items"
+  "status": "processed_9_items"
 }

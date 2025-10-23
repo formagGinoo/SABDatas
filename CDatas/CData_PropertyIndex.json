@@ -1,5 +1,6 @@
 {
   "className": "CData_PropertyIndex",
+  "timestamp": "2025-10-23T19:25:36.848Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -234,7 +235,7 @@
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-8000",
-      "m_MaxNum": "30000",
+      "m_MaxNum": "50000",
       "m_InheriteType": null,
       "m_Compute": "1",
       "m_Num": "15"
@@ -251,7 +252,7 @@
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-8000",
-      "m_MaxNum": "20000",
+      "m_MaxNum": "50000",
       "m_InheriteType": null,
       "m_Compute": "1",
       "m_Num": "16"
@@ -268,7 +269,7 @@
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-20000",
-      "m_MaxNum": "30000",
+      "m_MaxNum": "50000",
       "m_InheriteType": null,
       "m_Compute": "1",
       "m_Num": "17"
@@ -285,7 +286,7 @@
       "m_FVPercent": null,
       "m_PropertyType": "2",
       "m_MinNum": "-20000",
-      "m_MaxNum": "30000",
+      "m_MaxNum": "50000",
       "m_InheriteType": null,
       "m_Compute": "1",
       "m_Num": "18"
@@ -939,11 +940,11 @@
     "56": {
       "m_bError": null,
       "m_PropertyID": "56",
-      "m_PropertyIcon": "\"\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_57_Dodge_AddRate\"",
       "m_mCNName": "\"Hit Bonus\"",
       "m_ENName": "\"Hit_AddRate\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
@@ -956,11 +957,11 @@
     "57": {
       "m_bError": null,
       "m_PropertyID": "57",
-      "m_PropertyIcon": "\"\"",
+      "m_PropertyIcon": "\"Atlas_Property/Property_56_Hit_AddRate\"",
       "m_mCNName": "\"Dodge Bonus\"",
       "m_ENName": "\"Dodge_AddRate\"",
       "m_Type": "2",
-      "m_Show": "2",
+      "m_Show": "1",
       "m_FVNum": null,
       "m_FVPercent": null,
       "m_PropertyType": "2",
@@ -986,6 +987,40 @@
       "m_InheriteType": null,
       "m_Compute": "1",
       "m_Num": "6"
+    },
+    "59": {
+      "m_bError": null,
+      "m_PropertyID": "59",
+      "m_PropertyIcon": "\"Atlas_Property/Property_59_AdditionDamage_Add\"",
+      "m_mCNName": "\"Synergy DMG\"",
+      "m_ENName": "\"AdditionDamage_Add\"",
+      "m_Type": "2",
+      "m_Show": "1",
+      "m_FVNum": null,
+      "m_FVPercent": null,
+      "m_PropertyType": "2",
+      "m_MinNum": "-50000",
+      "m_MaxNum": "50000",
+      "m_InheriteType": null,
+      "m_Compute": "2",
+      "m_Num": "59"
+    },
+    "60": {
+      "m_bError": null,
+      "m_PropertyID": "60",
+      "m_PropertyIcon": "\"Atlas_Property/Property_60_AdditionDamage_Reduce\"",
+      "m_mCNName": "\"Synergy DMG Reduction\"",
+      "m_ENName": "\"AdditionDamage_Reduce\"",
+      "m_Type": "2",
+      "m_Show": "1",
+      "m_FVNum": null,
+      "m_FVPercent": null,
+      "m_PropertyType": "2",
+      "m_MinNum": "-50000",
+      "m_MaxNum": "50000",
+      "m_InheriteType": null,
+      "m_Compute": "2",
+      "m_Num": "60"
     },
     "100": {
       "m_bError": null,
@@ -1600,5 +1635,5 @@
       "m_Num": "94"
     }
   },
-  "status": "processed_94_items"
+  "status": "processed_96_items"
 }

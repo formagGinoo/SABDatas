@@ -1,5 +1,6 @@
 {
   "className": "CData_DungeonChapter",
+  "timestamp": "2025-10-23T19:25:17.863Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -35,7 +36,7 @@
       "m_Rotation": null,
       "m_mNameList": "\"Armored Spirit\"",
       "m_HeroHeartIcon": "\"Atlas_HeroHeat/boss_equip_4\"",
-      "m_mHeroHeartText": "\"Armored Spirit the Soulless\"",
+      "m_mHeroHeartText": "\"Armored Spirit - The Soulless\"",
       "m_MonsterTypeID": "[1,5]",
       "m_Point": "\"3DUI_Souless_Final\"",
       "m_Model": "\"M_Soulless_Base\"",
@@ -91,7 +92,7 @@
       "m_mName": "\"Seed of Famine\"",
       "m_mDesc": "\"To the hungering soul, Landis's boundless greed was a feast, and the doom of the El Dorado became the first crack in her sanity.\"",
       "m_UnlockConditionType": "[1]",
-      "m_UnlockConditionData": "[1116080]",
+      "m_UnlockConditionData": "[1115090]",
       "m_Order": "4",
       "m_Hide": null,
       "m_Jump": "15",
@@ -112,7 +113,7 @@
       "m_mName": "\"Cosmic Will\"",
       "m_mDesc": "\"She never foresaw her dream for Sunset Isle unraveling, nor the day when Death would at last escape its cage.\"",
       "m_UnlockConditionType": "[1]",
-      "m_UnlockConditionData": "[1116080]",
+      "m_UnlockConditionData": "[1115090]",
       "m_Order": "4",
       "m_Hide": null,
       "m_Jump": "15",
@@ -133,7 +134,7 @@
       "m_mName": "\"Seed of War\"",
       "m_mDesc": "\"As the torchlight faded, his fervent soul cooled with it. Peace remained a distant dream—only war loomed on the horizon.\"",
       "m_UnlockConditionType": "[1]",
-      "m_UnlockConditionData": "[1116080]",
+      "m_UnlockConditionData": "[1115090]",
       "m_Order": "4",
       "m_Hide": null,
       "m_Jump": "15",

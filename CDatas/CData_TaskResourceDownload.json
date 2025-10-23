@@ -1,5 +1,6 @@
 {
   "className": "CData_TaskResourceDownload",
+  "timestamp": "2025-10-23T19:25:43.034Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -46,7 +47,7 @@
       "m_ActivityID": null,
       "m_Priority": "40",
       "m_Reward": "[[101,100]]",
-      "m_ResourcePackage": "[[\"Pack_UI_Extended\",\"1\"],[\"Pack_MainLevel_8\",\"2\"],[\"Pack_MainLevel_9\",\"3\"],[\"Pack_PermanentLevel_2\",\"4\"],[\"Pack_MainLevel_10\",\"5\"],[\"Pack_MainLevel_11\",\"6\"],[\"Pack_MainLevel_12\",\"7\"],[\"Pack_MainLevel_13\",\"8\"],[\"Pack_MainLevel_14\",\"9\"],[\"Pack_MainLevel_15\",\"10\"],[\"Pack_MainLevel_16\",\"11\"],[\"Pack_MainLevel_17\",\"12\"],[\"Pack_MainLevel_18\",\"13\"],[\"Pack_MainLevel_19\",\"14\"],[\"Pack_Activity_108\",\"15\"],[\"Pack_ActExplore1080\",\"16\"],[\"Pack_Activity_110\",\"17\"]]",
+      "m_ResourcePackage": "[[\"Pack_UI_Extended\",\"1\"],[\"Pack_MainLevel_8\",\"2\"],[\"Pack_MainLevel_9\",\"3\"],[\"Pack_PermanentLevel_2\",\"4\"],[\"Pack_MainLevel_10\",\"5\"],[\"Pack_MainLevel_11\",\"6\"],[\"Pack_MainLevel_12\",\"7\"],[\"Pack_MainLevel_13\",\"8\"],[\"Pack_MainLevel_14\",\"9\"],[\"Pack_MainLevel_15\",\"10\"],[\"Pack_MainLevel_16\",\"11\"],[\"Pack_MainLevel_17\",\"12\"],[\"Pack_MainLevel_18\",\"13\"],[\"Pack_MainLevel_19\",\"14\"],[\"Pack_MainLevel_20\",\"14\"]]",
       "m_mTaskConditionNote": "\"\""
     },
     "5": {
@@ -133,6 +134,162 @@
       "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
       "m_mTaskConditionNote": "\"\""
     },
+    "105": {
+      "m_bError": null,
+      "m_TaskID": "105",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "106": {
+      "m_bError": null,
+      "m_TaskID": "106",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "107": {
+      "m_bError": null,
+      "m_TaskID": "107",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "108": {
+      "m_bError": null,
+      "m_TaskID": "108",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "109": {
+      "m_bError": null,
+      "m_TaskID": "109",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "110": {
+      "m_bError": null,
+      "m_TaskID": "110",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "111": {
+      "m_bError": null,
+      "m_TaskID": "111",
+      "m_mTaskName": "\"\"",
+      "m_TaskTag": "5",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "100",
+      "m_Reward": "[[101,100]]",
+      "m_ResourcePackage": "[[\"Pre\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "201": {
+      "m_bError": null,
+      "m_TaskID": "201",
+      "m_mTaskName": "\"Love and Lust Resource Pack\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": "1100",
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_110\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "202": {
+      "m_bError": null,
+      "m_TaskID": "202",
+      "m_mTaskName": "\"Wind and Wing Resource Pack\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": "1120",
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_112\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "203": {
+      "m_bError": null,
+      "m_TaskID": "203",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_110\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "204": {
+      "m_bError": null,
+      "m_TaskID": "204",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_110\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "205": {
+      "m_bError": null,
+      "m_TaskID": "205",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_110\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
+    "206": {
+      "m_bError": null,
+      "m_TaskID": "206",
+      "m_mTaskName": "\"Reserved String\"",
+      "m_TaskTag": "3",
+      "m_TaskCondition": null,
+      "m_ActivityID": null,
+      "m_Priority": "300",
+      "m_Reward": "[[101,50]]",
+      "m_ResourcePackage": "[[\"Pack_Activity_110\",\"1\"]]",
+      "m_mTaskConditionNote": "\"\""
+    },
     "999": {
       "m_bError": null,
       "m_TaskID": "999",
@@ -140,11 +297,11 @@
       "m_TaskTag": "4",
       "m_TaskCondition": null,
       "m_ActivityID": null,
-      "m_Priority": "200",
+      "m_Priority": "999",
       "m_Reward": "[]",
-      "m_ResourcePackage": "[[\"Pack_Draft\",\"1\"],[\"Pack_Activity_101Lamia\",\"2\"],[\"Pack_Activity_102Dalcaro\",\"3\"],[\"Pack_Activity103_Luoleilai\",\"4\"],[\"Pack_ActExplore1030\",\"5\"],[\"Pack_Activity_105Aiona\",\"6\"]]",
+      "m_ResourcePackage": "[[\"Pack_Draft\",\"1\"],[\"Pack_ActExplore1030\",\"2\"],[\"Pack_ActExplore1080\",\"3\"],[\"Pack_Activity_101Lamia\",\"4\"],[\"Pack_Activity_102Dalcaro\",\"5\"],[\"Pack_Activity_105Aiona\",\"6\"],[\"Pack_Activity_106Quinn\",\"7\"],[\"Pack_Activity_108\",\"8\"],[\"Pack_Activity103_Luoleilai\",\"9\"]]",
       "m_mTaskConditionNote": "\"\""
     }
   },
-  "status": "processed_12_items"
+  "status": "processed_25_items"
 }

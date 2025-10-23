@@ -1,5 +1,6 @@
 {
   "className": "CData_MainBackground",
+  "timestamp": "2025-10-23T19:25:20.437Z",
   "data": {
     "1600001": {
       "m_bError": null,
@@ -13,6 +14,7 @@
       "m_mItemName": "\"Memory: Black Blood and Silver Hair\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_01_s\"",
       "m_mItemDec": "\"\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": null
     },
@@ -28,6 +30,7 @@
       "m_mItemName": "\"Memory: Far Side of the Moon\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_02_s\"",
       "m_mItemDec": "\"Unlock the [Far Side of the Moon] scene in Customize - Memories.\n<alpha=#80>Ambling down the dim corridor, I wonder if the moon will finally reveal itself to me.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "58"
     },
@@ -43,6 +46,7 @@
       "m_mItemName": "\"Memory: As Tears Fade Into the Sunset\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_03_s\"",
       "m_mItemDec": "\"Unlock the [As Tears Fade Into the Sunset] scene in Customize - Memories.\n<alpha=#80>Endless rain seeps through the distant memories. Yet the cat's eyes still gleam, finding delight in each falling drop.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "115"
     },
@@ -58,6 +62,7 @@
       "m_mItemName": "\"Memory: The Last Summer on Sapphire Isle\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_04_s\"",
       "m_mItemDec": "\"Unlock [The Last Summer on Sapphire Isle] scene in Customize - Memories.\n<alpha=#81>How endless summer feels in loneliness, yet how fleeting it is for love to bloom.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "297"
     },
@@ -73,6 +78,7 @@
       "m_mItemName": "\"Memory: Ashes of Time\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_05_s\"",
       "m_mItemDec": "\"Unlock the [Ashes of Time] scene in Customize - Memories.\n'I am <i>human</i>... I am Aiona, of the Alita. I fight for the flow of time. I remember... yes, I remember it all now.'\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "330"
     },
@@ -88,6 +94,7 @@
       "m_mItemName": "\"Memory: Cycle of Destruction\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_06_s\"",
       "m_mItemDec": "\"Unlock the [Cycle of Destruction] scene in Customize - Memories.\nIn this long and endless time, I'm willing to sacrifice my body, consciousness, soul, and everything to become—\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "330"
     },
@@ -103,6 +110,7 @@
       "m_mItemName": "\"Memories: Twilight Before The Dawn\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_07_s\"",
       "m_mItemDec": "\"Unlock the [Twilight Before The Dawn] scene in Decoration - Memories.\n<alpha=#80>Through those eyes, I seem to glimpse the moon of my homeland once more, shining upon old companions.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "330"
     },
@@ -118,6 +126,7 @@
       "m_mItemName": "\"Memory: Against the Dying Light\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_08_s\"",
       "m_mItemDec": "\"Unlock the [Against the Dying Light] scene in Customize - Memories.\n<alpha=#80>Perhaps she could have endured the darkness, had she never seen the sun.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "345"
     },
@@ -133,6 +142,7 @@
       "m_mItemName": "\"Memory: Smoke Signals\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_09_s\"",
       "m_mItemDec": "\"Unlock the Scene [Smoke Signals] in Customize - Memories.\n<alpha=#80> I shall become the vessel to tame these all-consuming flames. Let peace... find its rest...\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "345"
     },
@@ -148,6 +158,7 @@
       "m_mItemName": "\"Memory: Remains of Time\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_10_s\"",
       "m_mItemDec": "\"Unlock the Scene [Remains of Time] in Customize - Memories.\n<alpha=#80>The bells of Asta will never ring again, time forever frozen on that harvest festival day.\n'Rather than await inevitable destruction, let us seek hope in the foreign land.'\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "361"
     },
@@ -163,6 +174,7 @@
       "m_mItemName": "\"Memory: A Shared Decision\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_11_s\"",
       "m_mItemDec": "\"Unlock the Scene [A Shared Decision] in Customize - Memories.\n<alpha=#80>When nothingness is perceived, even a colorless void takes on a fresh hue.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "360"
     },
@@ -178,7 +190,8 @@
       "m_mItemName": "\"Memory: Broken Fetters\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_12_s\"",
       "m_mItemDec": "\"Unlock the [Broken Fetters] scene in Customize - Memories.\n<alpha=#80>Shatter the chains; the caged bird shall take flight, seeking freedom in the boundless sky.\"",
-      "m_HideType": "1",
+      "m_ItemRarity": "4",
+      "m_HideType": null,
       "m_WwiseBg": "415"
     },
     "1600013": {
@@ -189,13 +202,46 @@
       "m_Prefabs": "\"ui_panel_activity_bg110_1\"",
       "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner13\"",
       "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_13\"",
-      "m_mGetwayDes": "\"\"Memory Cards\" Rewards\"",
+      "m_mGetwayDes": "\"Obtain from Memory Card Event.\"",
       "m_mItemName": "\"Memory: Toxic Salvation\"",
       "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_13_s\"",
       "m_mItemDec": "\"Unlock the Toxic Salvation scene in Customize - Memories.\n<alpha=#80>Intimacy breathes as desire awakens. Hush—keep the secret locked in the gaol.\"",
+      "m_ItemRarity": "4",
       "m_HideType": null,
       "m_WwiseBg": "415"
+    },
+    "1600014": {
+      "m_bError": null,
+      "m_BDID": "1600014",
+      "m_mBDName": "\"Crumbling Heavens\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg112\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner14\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_14\"",
+      "m_mGetwayDes": "\"On Wind and Wing Redemption\"",
+      "m_mItemName": "\"Memory: Crumbling Heavens\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_14_s\"",
+      "m_mItemDec": "\"Unlock the Scene [Crumbling Heavens] in Customize - Memories.\n<alpha=#80>When the tempest bears malevolence and fury, even the heavens will fall to earth.\"",
+      "m_ItemRarity": "4",
+      "m_HideType": "1",
+      "m_WwiseBg": "427"
+    },
+    "1600015": {
+      "m_bError": null,
+      "m_BDID": "1600015",
+      "m_mBDName": "\"Sunkissed Memories\"",
+      "m_DefaultType": null,
+      "m_Prefabs": "\"ui_panel_activity_bg112_1\"",
+      "m_BannerPic": "\"Atlas_MainBackground/lobby_frame_activity02_banner15\"",
+      "m_SmallPic": "\"Atlas_MainBackground/lobby_img_bg_15\"",
+      "m_mGetwayDes": "\"Sunkissed Memories Redemption\"",
+      "m_mItemName": "\"Memory: Sunkissed Memories\"",
+      "m_ItemIcon": "\"Atlas_MainBackground/lobby_icon_15_s\"",
+      "m_mItemDec": "\"Unlock the Scene [Sunkissed Memories] in Customize - Memories.\n<alpha=#80>Break free from the shadow of memory, and race towards a brighter tomorrow.\"",
+      "m_ItemRarity": "4",
+      "m_HideType": null,
+      "m_WwiseBg": "426"
     }
   },
-  "status": "processed_13_items"
+  "status": "processed_15_items"
 }

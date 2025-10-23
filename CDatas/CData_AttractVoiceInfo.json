@@ -1,5 +1,6 @@
 {
   "className": "CData_AttractVoiceInfo",
+  "timestamp": "2025-10-23T19:25:03.182Z",
   "data": {
     "20010": {
       "_type": "nested_dictionary",
@@ -91,7 +92,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20010\""
         },
         "2001011": {
@@ -318,7 +319,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20020\""
         },
         "2002011": {
@@ -545,7 +546,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20030\""
         },
         "2003011": {
@@ -772,7 +773,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20040\""
         },
         "2004011": {
@@ -999,7 +1000,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20050\""
         },
         "2005011": {
@@ -1183,7 +1184,7 @@
           "m_Sort": "3",
           "m_mTitle": "\"Deployment\"",
           "m_mUnlockDesc": "\"Unlock by Default\"",
-          "m_VoiceBank": "\"intC_20060\""
+          "m_VoiceBank": "\"Vo_C_20060\""
         },
         "2006007": {
           "m_bError": null,
@@ -1226,7 +1227,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20060\""
         },
         "2006011": {
@@ -1453,7 +1454,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20070\""
         },
         "2007011": {
@@ -1680,7 +1681,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20080\""
         },
         "2008011": {
@@ -1907,7 +1908,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20090\""
         },
         "2009011": {
@@ -2134,7 +2135,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20100\""
         },
         "2010011": {
@@ -2361,7 +2362,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20110\""
         },
         "2011011": {
@@ -2588,7 +2589,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20120\""
         },
         "2012011": {
@@ -2815,7 +2816,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20130\""
         },
         "2013011": {
@@ -3042,7 +3043,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20140\""
         },
         "2014011": {
@@ -3269,7 +3270,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20150\""
         },
         "2015011": {
@@ -3496,7 +3497,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20160\""
         },
         "2016011": {
@@ -3723,7 +3724,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20170\""
         },
         "2017011": {
@@ -3950,7 +3951,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20180\""
         },
         "2018011": {
@@ -4177,7 +4178,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20190\""
         },
         "2019011": {
@@ -4404,7 +4405,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20200\""
         },
         "2020011": {
@@ -4631,7 +4632,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20210\""
         },
         "2021011": {
@@ -4858,7 +4859,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20220\""
         },
         "2022011": {
@@ -5085,7 +5086,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20230\""
         },
         "2023011": {
@@ -5312,7 +5313,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20270\""
         },
         "2027011": {
@@ -5518,7 +5519,7 @@
           "m_Sort": "8",
           "m_mTitle": "\"Obtain\"",
           "m_mUnlockDesc": "\"Unlocks by Default\"",
-          "m_VoiceBank": "\"Vo_System_C_20280\""
+          "m_VoiceBank": "\"1o_System_C_20280\""
         },
         "2028009": {
           "m_bError": null,
@@ -5539,7 +5540,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20280\""
         },
         "2028011": {
@@ -5766,7 +5767,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20290\""
         },
         "2029011": {
@@ -5993,7 +5994,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20300\""
         },
         "2030011": {
@@ -6220,7 +6221,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20310\""
         },
         "2031011": {
@@ -6447,7 +6448,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20320\""
         },
         "2032009": {
@@ -6674,7 +6675,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20330\""
         },
         "2033011": {
@@ -6901,7 +6902,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20340\""
         },
         "2034011": {
@@ -7128,7 +7129,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20350\""
         },
         "2035011": {
@@ -7355,7 +7356,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20370\""
         },
         "2037011": {
@@ -7582,7 +7583,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20380\""
         },
         "2038011": {
@@ -7809,7 +7810,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20390\""
         },
         "2039011": {
@@ -8036,7 +8037,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20400\""
         },
         "2040011": {
@@ -8263,7 +8264,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20420\""
         },
         "2042011": {
@@ -8490,7 +8491,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20430\""
         },
         "2043011": {
@@ -8717,7 +8718,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20450\""
         },
         "2045011": {
@@ -8944,7 +8945,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20470\""
         },
         "2047011": {
@@ -9171,7 +9172,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20480\""
         },
         "2048011": {
@@ -9398,7 +9399,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20490\""
         },
         "2049011": {
@@ -9625,7 +9626,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20500\""
         },
         "2050011": {
@@ -9852,7 +9853,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20510\""
         },
         "2051011": {
@@ -10079,7 +10080,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20520\""
         },
         "2052011": {
@@ -10306,7 +10307,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20570\""
         },
         "2057011": {
@@ -10533,7 +10534,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20580\""
         },
         "2058009": {
@@ -10760,7 +10761,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20590\""
         },
         "2059009": {
@@ -10987,7 +10988,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Upgrade Vassal to LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20600\""
         },
         "2060009": {
@@ -11214,7 +11215,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20610\""
         },
         "2061011": {
@@ -11452,7 +11453,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20620\""
         },
         "2062009": {
@@ -11679,7 +11680,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20630\""
         },
         "2063009": {
@@ -11895,7 +11896,7 @@
           "m_UnlockData": "2",
           "m_Sort": "12",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20640\""
         },
         "2064011": {
@@ -12166,7 +12167,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20650\""
         },
         "2065011": {
@@ -12393,7 +12394,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20660\""
         },
         "2066011": {
@@ -12620,7 +12621,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV.2\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20680\""
         },
         "2068009": {
@@ -12847,7 +12848,7 @@
           "m_UnlockData": "2",
           "m_Sort": "12",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20690\""
         },
         "2069011": {
@@ -13085,7 +13086,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20700\""
         },
         "2070011": {
@@ -13312,7 +13313,7 @@
           "m_UnlockData": "2",
           "m_Sort": "11",
           "m_mTitle": "\"Upgrade\"",
-          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2.\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
           "m_VoiceBank": "\"Vo_System_C_20710\""
         },
         "2071011": {
@@ -13459,7 +13460,461 @@
           "m_VoiceBank": "\"Vo_System_C_20710\""
         }
       }
+    },
+    "20720": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "2072001": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072001",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "2",
+          "m_mTitle": "\"Ultimate\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20720\""
+        },
+        "2072002": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072002",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "1",
+          "m_mTitle": "\"Special\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20720\""
+        },
+        "2072003": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072003",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "7",
+          "m_mTitle": "\"Death\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20720\""
+        },
+        "2072004": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072004",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Deployment\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20720\""
+        },
+        "2072005": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072005",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "6",
+          "m_mTitle": "\"Victory\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20720\""
+        },
+        "2072006": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072006",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "8",
+          "m_mTitle": "\"Obtain\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072007": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072007",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "9",
+          "m_mTitle": "\"Character Select\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072008": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072008",
+          "m_UnlockType": "2",
+          "m_UnlockData": "2",
+          "m_Sort": "11",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072009": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072009",
+          "m_UnlockType": "3",
+          "m_UnlockData": "1",
+          "m_Sort": "12",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072011": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072011",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "10",
+          "m_mTitle": "\"Idle\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072012": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072012",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "13",
+          "m_mTitle": "\"Transfusion\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072013": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072013",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "14",
+          "m_mTitle": "\"Banquet\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072015": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072015",
+          "m_UnlockType": "4",
+          "m_UnlockData": "5",
+          "m_Sort": "15",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072016": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072016",
+          "m_UnlockType": "4",
+          "m_UnlockData": "10",
+          "m_Sort": "22",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072017": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072017",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "16",
+          "m_mTitle": "\"Converse I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072018": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072018",
+          "m_UnlockType": "4",
+          "m_UnlockData": "7",
+          "m_Sort": "19",
+          "m_mTitle": "\"Charm I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072019": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072019",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "17",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072020": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072020",
+          "m_UnlockType": "4",
+          "m_UnlockData": "8",
+          "m_Sort": "20",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072021": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072021",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "18",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        },
+        "2072022": {
+          "m_bError": null,
+          "m_HeroID": "20720",
+          "m_VoiceId": "2072022",
+          "m_UnlockType": "4",
+          "m_UnlockData": "9",
+          "m_Sort": "21",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_VoiceBank": "\"Vo_System_C_20720\""
+        }
+      }
+    },
+    "20730": {
+      "_type": "nested_dictionary",
+      "_count": 20,
+      "_processed": 20,
+      "data": {
+        "2073001": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073001",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "2",
+          "m_mTitle": "\"Ultimate\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20730\""
+        },
+        "2073002": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073002",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "1",
+          "m_mTitle": "\"Special\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20730\""
+        },
+        "2073003": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073003",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "7",
+          "m_mTitle": "\"Death\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20730\""
+        },
+        "2073004": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073004",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "3",
+          "m_mTitle": "\"Deployment\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20730\""
+        },
+        "2073005": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073005",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "6",
+          "m_mTitle": "\"Victory\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_C_20730\""
+        },
+        "2073006": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073006",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "8",
+          "m_mTitle": "\"Obtain\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073007": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073007",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "9",
+          "m_mTitle": "\"Character Select\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073008": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073008",
+          "m_UnlockType": "2",
+          "m_UnlockData": "2",
+          "m_Sort": "11",
+          "m_mTitle": "\"Upgrade\"",
+          "m_mUnlockDesc": "\"Unlocks at Vassal LV. 2\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073009": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073009",
+          "m_UnlockType": "3",
+          "m_UnlockData": "1",
+          "m_Sort": "12",
+          "m_mTitle": "\"Spirit Siphon\"",
+          "m_mUnlockDesc": "\"Unlocks after Vassal Siphons Spirit\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073011": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073011",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "10",
+          "m_mTitle": "\"Idle\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073012": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073012",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "13",
+          "m_mTitle": "\"Transfusion\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073013": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073013",
+          "m_UnlockType": "1",
+          "m_UnlockData": null,
+          "m_Sort": "14",
+          "m_mTitle": "\"Banquet\"",
+          "m_mUnlockDesc": "\"Unlocked by Default\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073015": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073015",
+          "m_UnlockType": "4",
+          "m_UnlockData": "5",
+          "m_Sort": "15",
+          "m_mTitle": "\"Affinity LV. UP\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 5\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073016": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073016",
+          "m_UnlockType": "4",
+          "m_UnlockData": "10",
+          "m_Sort": "22",
+          "m_mTitle": "\"Reach Affinity Rank 10\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 10\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073017": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073017",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "16",
+          "m_mTitle": "\"Converse I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073018": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073018",
+          "m_UnlockType": "4",
+          "m_UnlockData": "7",
+          "m_Sort": "19",
+          "m_mTitle": "\"Charm I\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 7\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073019": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073019",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "17",
+          "m_mTitle": "\"Converse II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073020": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073020",
+          "m_UnlockType": "4",
+          "m_UnlockData": "8",
+          "m_Sort": "20",
+          "m_mTitle": "\"Charm II\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 8\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073021": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073021",
+          "m_UnlockType": "4",
+          "m_UnlockData": "1",
+          "m_Sort": "18",
+          "m_mTitle": "\"Converse III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 1\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        },
+        "2073022": {
+          "m_bError": null,
+          "m_HeroID": "20730",
+          "m_VoiceId": "2073022",
+          "m_UnlockType": "4",
+          "m_UnlockData": "9",
+          "m_Sort": "21",
+          "m_mTitle": "\"Charm III\"",
+          "m_mUnlockDesc": "\"Reach Affinity Rank 9\"",
+          "m_VoiceBank": "\"Vo_System_C_20730\""
+        }
+      }
     }
   },
-  "status": "processed_59_items"
+  "status": "processed_61_items"
 }

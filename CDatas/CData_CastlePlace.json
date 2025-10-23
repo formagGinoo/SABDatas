@@ -1,5 +1,6 @@
 {
   "className": "CData_CastlePlace",
+  "timestamp": "2025-10-23T19:25:09.444Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -18,7 +19,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_04\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "2": {
       "m_bError": null,
@@ -37,7 +39,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_06\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "3": {
       "m_bError": null,
@@ -56,7 +59,8 @@
       "m_FloatWindow": "1",
       "m_Tips": null,
       "m_StoryPic": "\"\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "4": {
       "m_bError": null,
@@ -75,7 +79,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_01\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": "1"
     },
     "5": {
       "m_bError": null,
@@ -94,7 +99,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_03\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "6": {
       "m_bError": null,
@@ -113,7 +119,8 @@
       "m_FloatWindow": null,
       "m_Tips": "1125",
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_05\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_09\"",
+      "m_IsShow": null
     },
     "7": {
       "m_bError": null,
@@ -132,7 +139,8 @@
       "m_FloatWindow": null,
       "m_Tips": "1126",
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_02\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_10\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_10\"",
+      "m_IsShow": null
     },
     "8": {
       "m_bError": null,
@@ -151,7 +159,8 @@
       "m_FloatWindow": null,
       "m_Tips": "1174",
       "m_StoryPic": "\"\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "9": {
       "m_bError": null,
@@ -170,7 +179,8 @@
       "m_FloatWindow": null,
       "m_Tips": "1190",
       "m_StoryPic": "\"\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "10": {
       "m_bError": null,
@@ -189,7 +199,8 @@
       "m_FloatWindow": null,
       "m_Tips": "1180",
       "m_StoryPic": "\"\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "11": {
       "m_bError": null,
@@ -202,13 +213,14 @@
       "m_mUnlockText": "\"\"",
       "m_Index": "11",
       "m_Button": "\"lounge\"",
-      "m_Prefab": "\"Form_Lounge\"",
+      "m_Prefab": "\"Form_Lounge_Test\"",
       "m_MainLockAudio": null,
       "m_PrefabParam": "[]",
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"\"",
-      "m_KeyPic": "\"\""
+      "m_KeyPic": "\"\"",
+      "m_IsShow": null
     },
     "2001": {
       "m_bError": null,
@@ -227,7 +239,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_09\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_07\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_07\"",
+      "m_IsShow": null
     },
     "2002": {
       "m_bError": null,
@@ -246,7 +259,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_13\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_02\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_02\"",
+      "m_IsShow": null
     },
     "2003": {
       "m_bError": null,
@@ -265,7 +279,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_14\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_01\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_01\"",
+      "m_IsShow": null
     },
     "2004": {
       "m_bError": null,
@@ -284,7 +299,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_11\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_08\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_08\"",
+      "m_IsShow": null
     },
     "2005": {
       "m_bError": null,
@@ -303,7 +319,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_10\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_05\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_05\"",
+      "m_IsShow": null
     },
     "2006": {
       "m_bError": null,
@@ -322,7 +339,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_07\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_03\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_03\"",
+      "m_IsShow": null
     },
     "2007": {
       "m_bError": null,
@@ -341,7 +359,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_08\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_04\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_04\"",
+      "m_IsShow": null
     },
     "2008": {
       "m_bError": null,
@@ -360,7 +379,8 @@
       "m_FloatWindow": null,
       "m_Tips": null,
       "m_StoryPic": "\"Atlas_CastleStory/castle_eventstory_img_12\"",
-      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_06\""
+      "m_KeyPic": "\"Atlas_CastleKey/CastleStory_icon_06\"",
+      "m_IsShow": null
     }
   },
   "status": "processed_19_items"

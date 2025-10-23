@@ -1,5 +1,6 @@
 {
   "className": "CData_ClientMessage",
+  "timestamp": "2025-10-23T19:25:17.544Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -281,6 +282,11 @@
       "m_ID": "66",
       "m_mContent": "\"Clear [Threads of Fate <style=Clientmessage01>1-9</style>] to unlock.\""
     },
+    "67": {
+      "m_bError": null,
+      "m_ID": "67",
+      "m_mContent": "\"Clear [Tomb of the Fallen - Restless Spirit II (Any)] <style=Clientmessage01>Tier 9</style> to unlock.\""
+    },
     "101": {
       "m_bError": null,
       "m_ID": "101",
@@ -429,7 +435,7 @@
     "903": {
       "m_bError": null,
       "m_ID": "903",
-      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock [Initial Hand Edit].\""
+      "m_mContent": "\"Clear [Threads of Fate] <style=Clientmessage01>1-4</style> to unlock [Initial Ultimate Edit].\""
     },
     "904": {
       "m_bError": null,
@@ -590,6 +596,16 @@
       "m_bError": null,
       "m_ID": "10107",
       "m_mContent": "\"Shop not yet open.\""
+    },
+    "10199": {
+      "m_bError": null,
+      "m_ID": "10199",
+      "m_mContent": "\"The impeachment vote initiated by {0} has been approved. {1} is now the new Leader.\""
+    },
+    "10200": {
+      "m_bError": null,
+      "m_ID": "10200",
+      "m_mContent": "\"The impeachment vote initiated by {0} was rejected.\""
     },
     "10201": {
       "m_bError": null,
@@ -859,7 +875,7 @@
     "10270": {
       "m_bError": null,
       "m_ID": "10270",
-      "m_mContent": "\"Unlocks at Spirit Siphon Phase {0}\""
+      "m_mContent": "\"Unlocks at Spirit Siphon Tier {0}\""
     },
     "10271": {
       "m_bError": null,
@@ -875,6 +891,26 @@
       "m_bError": null,
       "m_ID": "10273",
       "m_mContent": "\"Minimum Joining LV. Not Met\""
+    },
+    "10280": {
+      "m_bError": null,
+      "m_ID": "10280",
+      "m_mContent": "\"Another member has already initiated an impeachment.\""
+    },
+    "10281": {
+      "m_bError": null,
+      "m_ID": "10281",
+      "m_mContent": "\"The current Clan Leader is active; impeachment cannot be initiated.\""
+    },
+    "10282": {
+      "m_bError": null,
+      "m_ID": "10282",
+      "m_mContent": "\"You have cast a <style=Clientmessage01>Support</style> vote for this impeachment.\""
+    },
+    "10283": {
+      "m_bError": null,
+      "m_ID": "10283",
+      "m_mContent": "\"You have cast an <style=Clientmessage01>AGAINST</style> vote for this impeachment.\""
     },
     "10300": {
       "m_bError": null,
@@ -1351,6 +1387,21 @@
       "m_ID": "13032",
       "m_mContent": "\"Transfusion Upgrade Requirements Not Met!\""
     },
+    "13033": {
+      "m_bError": null,
+      "m_ID": "13033",
+      "m_mContent": "\"Stage locked. Future stages will become available later.\""
+    },
+    "13034": {
+      "m_bError": null,
+      "m_ID": "13034",
+      "m_mContent": "\"Insufficient Attempts for Today\""
+    },
+    "13035": {
+      "m_bError": null,
+      "m_ID": "13035",
+      "m_mContent": "\"Please clear previous stage first.\""
+    },
     "20000": {
       "m_bError": null,
       "m_ID": "20000",
@@ -1489,7 +1540,7 @@
     "20028": {
       "m_bError": null,
       "m_ID": "20028",
-      "m_mContent": "\"Initial Hand Edit invalid. Please reconfigure.\""
+      "m_mContent": "\"Initial Ultimate Edit invalid. Please reconfigure.\""
     },
     "20034": {
       "m_bError": null,
@@ -1575,6 +1626,11 @@
       "m_bError": null,
       "m_ID": "20055",
       "m_mContent": "\"While Blood Moon is active, DMG dealt is increased by 25%, and the Bloodsoul cost for each Ultimate is reduced by 1.\""
+    },
+    "20056": {
+      "m_bError": null,
+      "m_ID": "20056",
+      "m_mContent": "\"Insufficient Blood Power for Quick Clear\""
     },
     "20100": {
       "m_bError": null,
@@ -2056,6 +2112,26 @@
       "m_ID": "40056",
       "m_mContent": "\"Unlocks when Vassal Fanny reaches Spirit Siphon Tier {0}.\""
     },
+    "40057": {
+      "m_bError": null,
+      "m_ID": "40057",
+      "m_mContent": "\"Insufficient Synergy Talismans. Cannot redeem.\""
+    },
+    "40058": {
+      "m_bError": null,
+      "m_ID": "40058",
+      "m_mContent": "\"Current Synergy Vassal Already Redeemed.\""
+    },
+    "40059": {
+      "m_bError": null,
+      "m_ID": "40059",
+      "m_mContent": "\"The event begins on <style=Highlight>{0}</style>.\""
+    },
+    "40060": {
+      "m_bError": null,
+      "m_ID": "40060",
+      "m_mContent": "\"The event has ended.\""
+    },
     "41001": {
       "m_bError": null,
       "m_ID": "41001",
@@ -2391,6 +2467,11 @@
       "m_ID": "52013",
       "m_mContent": "\"Complete stage objectives to unlock Bundle.\""
     },
+    "52014": {
+      "m_bError": null,
+      "m_ID": "52014",
+      "m_mContent": "\"Purchase the prerequisite bundle to unlock.\""
+    },
     "53001": {
       "m_bError": null,
       "m_ID": "53001",
@@ -2471,11 +2552,86 @@
       "m_ID": "56006",
       "m_mContent": "\"Auto-setup complete.\""
     },
+    "57002": {
+      "m_bError": null,
+      "m_ID": "57002",
+      "m_mContent": "\"Defense Lineup 01 - Initial Ultimate Saved Successfully\""
+    },
+    "57003": {
+      "m_bError": null,
+      "m_ID": "57003",
+      "m_mContent": "\"Defense Lineup 02 - Initial Ultimate Saved Successfully\""
+    },
+    "57004": {
+      "m_bError": null,
+      "m_ID": "57004",
+      "m_mContent": "\"Defense Lineup 03 - Initial Ultimate Saved Successfully\""
+    },
+    "58001": {
+      "m_bError": null,
+      "m_ID": "58001",
+      "m_mContent": "\"Coming Soon\""
+    },
+    "58002": {
+      "m_bError": null,
+      "m_ID": "58002",
+      "m_mContent": "\"Insufficient Mithril for Salvage\""
+    },
+    "58003": {
+      "m_bError": null,
+      "m_ID": "58003",
+      "m_mContent": "\"Please select the Faction Equipment for consumption.\""
+    },
+    "58004": {
+      "m_bError": null,
+      "m_ID": "58004",
+      "m_mContent": "\"Please select 2 pieces of Equipment for Salvage.\""
+    },
+    "58005": {
+      "m_bError": null,
+      "m_ID": "58005",
+      "m_mContent": "\"Maximum Selection\""
+    },
+    "58006": {
+      "m_bError": null,
+      "m_ID": "58006",
+      "m_mContent": "\"(<color=#b2452b>{0}</color>/{1})\""
+    },
+    "58007": {
+      "m_bError": null,
+      "m_ID": "58007",
+      "m_mContent": "\"(<color=#368e72>{0}</color>/{1})\""
+    },
+    "58008": {
+      "m_bError": null,
+      "m_ID": "58008",
+      "m_mContent": "\"Don't show again today.\""
+    },
+    "58009": {
+      "m_bError": null,
+      "m_ID": "58009",
+      "m_mContent": "\"Show Unenhanced Equipment Only\""
+    },
+    "58010": {
+      "m_bError": null,
+      "m_ID": "58010",
+      "m_mContent": "\"[{0} Member(s)]\""
+    },
+    "58011": {
+      "m_bError": null,
+      "m_ID": "58011",
+      "m_mContent": "\"{0}/100\""
+    },
+    "58012": {
+      "m_bError": null,
+      "m_ID": "58012",
+      "m_mContent": "\"Selected Equipment belongs to the target Faction.\""
+    },
     "99999": {
       "m_bError": null,
       "m_ID": "99999",
       "m_mContent": "\"Unlocked by default.\""
     }
   },
-  "status": "processed_495_items"
+  "status": "processed_526_items"
 }

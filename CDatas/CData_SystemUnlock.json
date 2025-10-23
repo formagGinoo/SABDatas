@@ -1,5 +1,6 @@
 {
   "className": "CData_SystemUnlock",
+  "timestamp": "2025-10-23T19:25:42.284Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -621,6 +622,16 @@
       "m_UnlockConditionData": "[[1102090]]",
       "m_ClientMessage": "[66]"
     },
+    "67": {
+      "m_bError": null,
+      "m_SystemID": "67",
+      "m_mName": "\"Tomb of the Fallen - Haunted Sepulcher\"",
+      "m_UnlockType": "1",
+      "m_UnlockIcon": "\"Atlas_SystemUnlock/System_PartDungeon\"",
+      "m_UnlockConditionType": "[8]",
+      "m_UnlockConditionData": "[[2105010,2106010,2107010,9]]",
+      "m_ClientMessage": "[67]"
+    },
     "101": {
       "m_bError": null,
       "m_SystemID": "101",
@@ -754,7 +765,7 @@
     "903": {
       "m_bError": null,
       "m_SystemID": "903",
-      "m_mName": "\"Initial Hand Edit\"",
+      "m_mName": "\"Initial Ultimate Edit\"",
       "m_UnlockType": null,
       "m_UnlockIcon": "\"\"",
       "m_UnlockConditionType": "[3]",
@@ -782,5 +793,5 @@
       "m_ClientMessage": "[905]"
     }
   },
-  "status": "processed_78_items"
+  "status": "processed_79_items"
 }

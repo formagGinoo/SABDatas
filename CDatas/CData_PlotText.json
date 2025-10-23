@@ -1,5 +1,6 @@
 {
   "className": "CData_PlotText",
+  "timestamp": "2025-10-23T19:25:27.207Z",
   "data": {
     "\"Role_Name_Acappella\"": {
       "m_bError": null,
@@ -1243,7 +1244,7 @@
     "\"Role_Name_Narration\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Narration\"",
-      "m_mContent": "\" \"",
+      "m_mContent": "\"\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4589,14 +4590,14 @@
     "\"Role_Name_Voice_Help_Q\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Voice_Help_Q\"",
-      "m_mContent": "\"??? (Desperate Voice)\"",
+      "m_mContent": "\"???\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
     "\"Role_Name_Voice_Women_Q\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Voice_Women_Q\"",
-      "m_mContent": "\"??? (Female Voice)\"",
+      "m_mContent": "\"???\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4624,7 +4625,7 @@
     "\"Role_Name_Joyce_Thief_Q\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Joyce_Thief_Q\"",
-      "m_mContent": "\"??? (Bandit Joyce)\"",
+      "m_mContent": "\"???\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4666,7 +4667,7 @@
     "\"Role_Name_Chimera_Q\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Chimera_Q\"",
-      "m_mContent": "\"??? (Chimera)\"",
+      "m_mContent": "\"???\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4687,7 +4688,7 @@
     "\"Role_Name_Joyce_Princess_Q\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Joyce_Princess_Q\"",
-      "m_mContent": "\"??? (Princess Joyce)\"",
+      "m_mContent": "\"???\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4695,6 +4696,27 @@
       "m_bError": null,
       "m_Key": "\"Role_Name_Joyce_Princess\"",
       "m_mContent": "\"Princess Joyce\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_DragonHead\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_DragonHead\"",
+      "m_mContent": "\"Ladonis\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_LionHead\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_LionHead\"",
+      "m_mContent": "\"Nemea\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_DogHead\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_DogHead\"",
+      "m_mContent": "\"Garmzy\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4750,7 +4772,7 @@
     "\"Role_Name_Micalus\"": {
       "m_bError": null,
       "m_Key": "\"Role_Name_Micalus\"",
-      "m_mContent": "\"Micala\"",
+      "m_mContent": "\"Nephilia\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -4996,6 +5018,188 @@
       "m_bError": null,
       "m_Key": "\"Role_Name_Isabelle2\"",
       "m_mContent": "\"Valora\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Narration4\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Narration4\"",
+      "m_mContent": "\"\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Seraphina\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Seraphina\"",
+      "m_mContent": "\"Seraphina\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Girl_Shy\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Girl_Shy\"",
+      "m_mContent": "\"Shy Maiden\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Noisy\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Noisy\"",
+      "m_mContent": "\"Noisy Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Tired\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Tired\"",
+      "m_mContent": "\"Tired Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Commander_Serious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Commander_Serious\"",
+      "m_mContent": "\"Stern Captain\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Ryan\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Ryan\"",
+      "m_mContent": "\"Ryan\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Serious\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Serious\"",
+      "m_mContent": "\"Serious Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Doubtful\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Doubtful\"",
+      "m_mContent": "\"Doubtful Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_SelenaQ\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_SelenaQ\"",
+      "m_mContent": "\"???\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Wretched\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Wretched\"",
+      "m_mContent": "\"Wretched Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Irritable\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Irritable\"",
+      "m_mContent": "\"Irritable Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Letitia\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Letitia\"",
+      "m_mContent": "\"Letitia\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Panicked\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Panicked\"",
+      "m_mContent": "\"Panicked Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier_Comatose\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier_Comatose\"",
+      "m_mContent": "\"Unconscious Soldier\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Painful\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Painful\"",
+      "m_mContent": "\"Suffering Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Beastmen_Crooked\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Beastmen_Crooked\"",
+      "m_mContent": "\"Twisted Mutant\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Letitia_Evil\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Letitia_Evil\"",
+      "m_mContent": "\"Malevolent Letitia\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_LetitiaQ\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_LetitiaQ\"",
+      "m_mContent": "\"???\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_LetitiaQ_Gloomy\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_LetitiaQ_Gloomy\"",
+      "m_mContent": "\"???\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Letitia_Gloomy\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Letitia_Gloomy\"",
+      "m_mContent": "\"Nightmarish Letitia\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Beastmen\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Beastmen\"",
+      "m_mContent": "\"Mutated Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Villager_Sincere\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Villager_Sincere\"",
+      "m_mContent": "\"Sincere Villager\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Letitia_Gloomy2\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Letitia_Gloomy2\"",
+      "m_mContent": "\"Nightmarish Letitia\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Survivor_Weak\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Survivor_Weak\"",
+      "m_mContent": "\"Weak Survivor\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"剧情角色名\""
+    },
+    "\"Role_Name_Soldier10\"": {
+      "m_bError": null,
+      "m_Key": "\"Role_Name_Soldier10\"",
+      "m_mContent": "\"Soldier\"",
       "m_Type": "[]",
       "m_RoleName": "\"剧情角色名\""
     },
@@ -5828,7 +6032,7 @@
     "\"Dialogue_B_20001_Clip03_16\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_20001_Clip03_16\"",
-      "m_mContent": "\"Did you think that disguising as an ordinary flower girl could fool the eyes of Nefertari Seti?!\"",
+      "m_mContent": "\"Did you think that disguising as an ordinary flower girl could fool the eyes of Nefertari Setti?!\"",
       "m_Type": "[]",
       "m_RoleName": "\"涅飞塔丽·赛蒂\""
     },
@@ -10035,7 +10239,7 @@
     "\"Dialogue_B_30001_Clip09d_037\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_30001_Clip09d_037\"",
-      "m_mContent": "\"(Cinematic Subtitles) There are still four more Moonblessed mentioned in the Prophecy of the Apocalypse. Go and seek them out...\"",
+      "m_mContent": "\"There are still four more Moonblessed mentioned in the Prophecy of the Apocalypse. Go and seek them out...\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -49186,7 +49390,7 @@
     "\"Dialogue_B_90001_Clip11_023\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_90001_Clip11_023\"",
-      "m_mContent": "\"As expected, you really have a wolf's nose.\"",
+      "m_mContent": "\"As expected, you really have a dog's nose.\"",
       "m_Type": "[]",
       "m_RoleName": "\"安普莎\""
     },
@@ -53295,7 +53499,7 @@
     "\"Dialogue_B_100001_Clip06_052\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_100001_Clip06_052\"",
-      "m_mContent": "\"When I accepted the Silver Blood ritual, I let go. The pain of crossing to the Other Side… The comfort of living by your side… All of it was replaced by a single purpose.\"",
+      "m_mContent": "\"When I accepted the Silver Blood Ritual, I let go. The pain of crossing to the Other Side… The comfort of living by your side… All of it was replaced by a single purpose.\"",
       "m_Type": "[]",
       "m_RoleName": "\"希波蒂\""
     },
@@ -97892,7 +98096,7 @@
     "\"Tutorial_Dialogue_204102\"": {
       "m_bError": null,
       "m_Key": "\"Tutorial_Dialogue_204102\"",
-      "m_mContent": "\"You're so pathetic, black-haired show-off. Are these soulless soldiers really scaring you?\"",
+      "m_mContent": "\"You're so pathetic, black-haired exhibitionist. Are these soulless soldiers really scaring you?\"",
       "m_Type": "[]",
       "m_RoleName": "\"洁丝蒂忒·翼吉斯\""
     },
@@ -100006,7 +100210,7 @@
     "\"Tutorframe_1050_0\"": {
       "m_bError": null,
       "m_Key": "\"Tutorframe_1050_0\"",
-      "m_mContent": "\"Tap Initial Hand Edit to select Ultimates of deployed Vassals.\"",
+      "m_mContent": "\"Tap Initial Ultimate Edit to select Ultimates of deployed Vassals.\"",
       "m_Type": "[]",
       "m_RoleName": "\"系统引导\""
     },
@@ -100941,6 +101145,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Agree_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20320_01\"",
+      "m_mContent": "\"Ah... the pain... is a sign from the divine will!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Agree_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Agree_20330_01\"",
@@ -100989,6 +101200,13 @@
       "m_mContent": "\"Let's do it. This time, I'll lead the way.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Agree_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20410_01\"",
+      "m_mContent": "\"Oh, this isn't bad at all! I like it!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Agree_20420_01\"": {
       "m_bError": null,
@@ -101067,6 +101285,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Agree_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20580_01\"",
+      "m_mContent": "\"I trust your decision.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Agree_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20590_01\"",
+      "m_mContent": "\"Let's go with Noah's idea.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Agree_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20600_01\"",
+      "m_mContent": "\"Smarter than I gave you credit for.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Agree_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Agree_20610_01\"",
@@ -101109,6 +101348,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Agree_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20680_01\"",
+      "m_mContent": "\"Hmm, a nice move.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Agree_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Agree_20700_01\"",
@@ -101129,6 +101375,20 @@
       "m_mContent": "\"Suit yourself.\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Agree_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20720_01\"",
+      "m_mContent": "\"Just as I thought!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Agree_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Agree_20730_01\"",
+      "m_mContent": "\"I... I think it's quite good.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Neutral_20020_01\"": {
       "m_bError": null,
@@ -101326,6 +101586,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Neutral_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20320_01\"",
+      "m_mContent": "\"The divine will does not concern itself.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Neutral_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Neutral_20330_01\"",
@@ -101367,6 +101634,13 @@
       "m_mContent": "\"Is it really necessary to obsess over such trivial matters?\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Neutral_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20410_01\"",
+      "m_mContent": "\"Neither do I! You make the call!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Neutral_20420_01\"": {
       "m_bError": null,
@@ -101438,6 +101712,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Neutral_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20580_01\"",
+      "m_mContent": "\"I'm from the Other Side—my opinion doesn't matter here.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Neutral_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20590_01\"",
+      "m_mContent": "\"These decisions should be left to you young people.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Neutral_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20600_01\"",
+      "m_mContent": "\"Such matters are of no concern to me.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Neutral_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Neutral_20610_01\"",
@@ -101480,6 +101775,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Neutral_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20680_01\"",
+      "m_mContent": "\"This move... is questionable.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Neutral_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Neutral_20700_01\"",
@@ -101500,6 +101802,20 @@
       "m_mContent": "\"Is there really any point in fixating on such nonsense?\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Neutral_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20720_01\"",
+      "m_mContent": "\"I'll leave these petty concerns to you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Neutral_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Neutral_20730_01\"",
+      "m_mContent": "\"...You ask me? I, I don't know.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Disagree_20020_01\"": {
       "m_bError": null,
@@ -101725,6 +102041,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Disagree_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20320_01\"",
+      "m_mContent": "\"That won't do. I feel nothing.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Disagree_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disagree_20330_01\"",
@@ -101766,6 +102089,13 @@
       "m_mContent": "\"This is an affront to 'justice.'\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Disagree_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20410_01\"",
+      "m_mContent": "\"Not happening! If you've got a problem, then fight me!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Disagree_20420_01\"": {
       "m_bError": null,
@@ -101844,6 +102174,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Disagree_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20580_01\"",
+      "m_mContent": "\"I've known this feeling of failure before...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Disagree_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20590_01\"",
+      "m_mContent": "\"I don't think that's going to work.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Disagree_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20600_01\"",
+      "m_mContent": "\"Naive.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Disagree_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disagree_20610_01\"",
@@ -101886,6 +102237,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Disagree_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20680_01\"",
+      "m_mContent": "\"Stalemate. You are trapped.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Disagree_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disagree_20700_01\"",
@@ -101906,6 +102264,20 @@
       "m_mContent": "\"Even I can't bear to watch this.\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Disagree_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20720_01\"",
+      "m_mContent": "\"I disagree! We need a fight to find our common ground.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Disagree_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disagree_20730_01\"",
+      "m_mContent": "\"I don't think that's a good idea...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Accepted_20020_01\"": {
       "m_bError": null,
@@ -102103,6 +102475,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Accepted_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20320_01\"",
+      "m_mContent": "\"Can you… make it hurt a little more?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Accepted_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Accepted_20330_01\"",
@@ -102144,6 +102523,13 @@
       "m_mContent": "\"Save your gratitude. I'm merely adhering to my principles.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Accepted_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20410_01\"",
+      "m_mContent": "\"Ha! Told you I was right.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Accepted_20420_01\"": {
       "m_bError": null,
@@ -102215,6 +102601,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Accepted_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20580_01\"",
+      "m_mContent": "\"Truly worthy of the title \"Silver-haired.\"\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Accepted_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20590_01\"",
+      "m_mContent": "\"Well, it seems I haven't been left behind after all.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Accepted_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20600_01\"",
+      "m_mContent": "\"I see you've discovered the delight of knowledge.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Accepted_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Accepted_20610_01\"",
@@ -102257,6 +102664,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Accepted_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20680_01\"",
+      "m_mContent": "\"Checkmate.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Accepted_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Accepted_20700_01\"",
@@ -102277,6 +102691,20 @@
       "m_mContent": "\"I'll give you that much.\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Accepted_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20720_01\"",
+      "m_mContent": "\"Not bad, you're very capable!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Accepted_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Accepted_20730_01\"",
+      "m_mContent": "\"I'm so relieved.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Disapproved_20020_01\"": {
       "m_bError": null,
@@ -102474,6 +102902,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Disapproved_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20320_01\"",
+      "m_mContent": "\"How can you spurn the mercy that's been offered...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Disapproved_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disapproved_20330_01\"",
@@ -102522,6 +102957,13 @@
       "m_mContent": "\"The outcome is irrelevant to me. I act solely on my convictions.\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Disapproved_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20410_01\"",
+      "m_mContent": "\"What can I say? I can't beat you, so I'll go along.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Disapproved_20420_01\"": {
       "m_bError": null,
@@ -102593,6 +103035,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Disapproved_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20580_01\"",
+      "m_mContent": "\"Will this create a rift between us, too?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Disapproved_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20590_01\"",
+      "m_mContent": "\"My suggestions are merely guidelines—you're free to follow your own judgment.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Disapproved_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20600_01\"",
+      "m_mContent": "\"You're deliberately choosing ignorance.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Disapproved_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disapproved_20610_01\"",
@@ -102635,6 +103098,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Disapproved_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20680_01\"",
+      "m_mContent": "\"I don't recommend you do this.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Disapproved_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Disapproved_20700_01\"",
@@ -102655,6 +103125,20 @@
       "m_mContent": "\"Tell me that wasn't your best effort.\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Disapproved_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20720_01\"",
+      "m_mContent": "\"Whatever, but you'll regret it.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Disapproved_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Disapproved_20730_01\"",
+      "m_mContent": "\"Forgive me...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Change_20020_01\"": {
       "m_bError": null,
@@ -102859,6 +103343,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"波奇娜\""
     },
+    "\"CouncilHall_Change_20320_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20320_01\"",
+      "m_mContent": "\"Go on... a touch of suffering is all it takes to invite grace.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"珐缪\""
+    },
     "\"CouncilHall_Change_20330_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Change_20330_01\"",
@@ -102900,6 +103391,13 @@
       "m_mContent": "\"I understand now. You've embraced 'a different brand of justice.'\"",
       "m_Type": "[]",
       "m_RoleName": "\"范海辛\""
+    },
+    "\"CouncilHall_Change_20410_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20410_01\"",
+      "m_mContent": "\"Can't say I follow, but... it makes sense when you say it.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿莱尼\""
     },
     "\"CouncilHall_Change_20420_01\"": {
       "m_bError": null,
@@ -102971,6 +103469,27 @@
       "m_Type": "[]",
       "m_RoleName": "\"莉米姆\""
     },
+    "\"CouncilHall_Change_20580_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20580_01\"",
+      "m_mContent": "\"You know this place better than I—Adhering to your counsel would be wise.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"史黛拉\""
+    },
+    "\"CouncilHall_Change_20590_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20590_01\"",
+      "m_mContent": "\"Hmm... it seems there's still much for me to learn.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"佩吉娜\""
+    },
+    "\"CouncilHall_Change_20600_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20600_01\"",
+      "m_mContent": "\"Perhaps this problem has more than one solution.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
     "\"CouncilHall_Change_20610_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Change_20610_01\"",
@@ -103013,6 +103532,13 @@
       "m_Type": "[]",
       "m_RoleName": "\"贝拉·夏日\""
     },
+    "\"CouncilHall_Change_20680_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20680_01\"",
+      "m_mContent": "\"Did I miscalculate, or did you think it through more thoroughly?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"耶芙娜\""
+    },
     "\"CouncilHall_Change_20700_01\"": {
       "m_bError": null,
       "m_Key": "\"CouncilHall_Change_20700_01\"",
@@ -103033,6 +103559,20 @@
       "m_mContent": "\"Hmph. Seems I misjudged you after all.\"",
       "m_Type": "[]",
       "m_RoleName": "\"尤里乌斯\""
+    },
+    "\"CouncilHall_Change_20720_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20720_01\"",
+      "m_mContent": "\"Alright, you really are impressive.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"赛莉妮娅\""
+    },
+    "\"CouncilHall_Change_20730_01\"": {
+      "m_bError": null,
+      "m_Key": "\"CouncilHall_Change_20730_01\"",
+      "m_mContent": "\"I, I'll listen to you from now on...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰\""
     },
     "\"CouncilHall_Issue_Start_101_01\"": {
       "m_bError": null,
@@ -105260,13 +105800,6 @@
       "m_Type": "[]",
       "m_RoleName": "\"多蕾丝\""
     },
-    "\"Dialogue_L_Tris_10_12\"": {
-      "m_bError": null,
-      "m_Key": "\"Dialogue_L_Tris_10_12\"",
-      "m_mContent": "\"Being a Bell Ringer is my divine duty, but the choir... it's my haven in this cruel world.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"多蕾丝\""
-    },
     "\"Dialogue_L_Tris_10_13\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_L_Tris_10_13\"",
@@ -106100,6 +106633,34 @@
       "m_Type": "[]",
       "m_RoleName": "\"奥古斯丁\""
     },
+    "\"Tutorframe_92_01\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutorframe_92_01\"",
+      "m_mContent": "\"Behind each stained glass window lies a hidden temporal rift.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奥古斯丁\""
+    },
+    "\"Tutorframe_92_02\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutorframe_92_02\"",
+      "m_mContent": "\"However, within these rifts you shall not find phantoms, but beasts.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奥古斯丁\""
+    },
+    "\"Tutorframe_92_03\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutorframe_92_03\"",
+      "m_mContent": "\"To prevent more phantoms from escaping, the family has established rewards for the cleanup.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奥古斯丁\""
+    },
+    "\"Tutorframe_92_04\"": {
+      "m_bError": null,
+      "m_Key": "\"Tutorframe_92_04\"",
+      "m_mContent": "\"Each rift has a recommended DMG type.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奥古斯丁\""
+    },
     "\"Tutor_92_09\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_92_09\"",
@@ -106146,34 +106707,6 @@
       "m_bError": null,
       "m_Key": "\"Tutor_92_15\"",
       "m_mContent": "\"—Augustine. Those who know the name are among the family's most trusted... I can sense that your curiosity has led you here. Well, come then—You may enter freely, at your own will.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"奥古斯丁\""
-    },
-    "\"Tutorframe_92_01\"": {
-      "m_bError": null,
-      "m_Key": "\"Tutorframe_92_01\"",
-      "m_mContent": "\"Behind each stained glass window lies a hidden temporal rift.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"奥古斯丁\""
-    },
-    "\"Tutorframe_92_02\"": {
-      "m_bError": null,
-      "m_Key": "\"Tutorframe_92_02\"",
-      "m_mContent": "\"However, within these rifts you shall not find phantoms, but beasts.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"奥古斯丁\""
-    },
-    "\"Tutorframe_92_03\"": {
-      "m_bError": null,
-      "m_Key": "\"Tutorframe_92_03\"",
-      "m_mContent": "\"To prevent more phantoms from escaping, the family has established rewards for the cleanup.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"奥古斯丁\""
-    },
-    "\"Tutorframe_92_04\"": {
-      "m_bError": null,
-      "m_Key": "\"Tutorframe_92_04\"",
-      "m_mContent": "\"Each rift has a recommended DMG type.\"",
       "m_Type": "[]",
       "m_RoleName": "\"奥古斯丁\""
     },
@@ -106292,7 +106825,7 @@
     "\"Tutor_95_01\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_95_01\"",
-      "m_mContent": "\"Some items you collect remain sealed. This bow, for example, needs Basic Materia like saltpeter and lead to unseal.\"",
+      "m_mContent": "\"Some items you collect remain sealed. This bow, for example, needs Basic Materia like Niter and lead to unseal.\"",
       "m_Type": "[]",
       "m_RoleName": "\"奥古斯丁\""
     },
@@ -108560,7 +109093,7 @@
     "\"Dialogue_L_Darcias_09_22\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_L_Darcias_09_22\"",
-      "m_mContent": "\"After that, Tris brought me to the Church. I underwent the Silver Blood baptism.\"",
+      "m_mContent": "\"After that, Tris brought me to the Church. I underwent the Silver Blood Ritual.\"",
       "m_Type": "[]",
       "m_RoleName": "\"琪安德\""
     },
@@ -111514,7 +112047,7 @@
     "\"Dialogue_E_60001_Clip01_051\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_60001_Clip01_051\"",
-      "m_mContent": "\"(Clears throat) Hello, I'm Agnes Ganelon—licensed professional cartographer!\"",
+      "m_mContent": "\"(clearing throat) Hello, I'm Agnes Ganelon—licensed professional cartographer!\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿伽莎\""
     },
@@ -118836,7 +119369,7 @@
     "\"Dialogue_E_60001_Clip12_131\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_E_60001_Clip12_131\"",
-      "m_mContent": "\"Don't worry. After this battle, his Soul Pyre has been greatly weakened... He is no longer what he used to be.\"",
+      "m_mContent": "\"Don't worry. After this battle, his Soul Pyre has been greatly weakened... He can no longer do what he used to.\"",
       "m_Type": "[]",
       "m_RoleName": "\"该隐\""
     },
@@ -123078,7 +123611,7 @@
     "\"Dialogue_B_190001_Clip05_034\"": {
       "m_bError": null,
       "m_Key": "\"Dialogue_B_190001_Clip05_034\"",
-      "m_mContent": "\"Otherwise, kill, companions.\"",
+      "m_mContent": "\"Otherwise, kill, companion.\"",
       "m_Type": "[]",
       "m_RoleName": "\"超级金刚\""
     },
@@ -125014,213 +125547,2747 @@
       "m_Type": "[]",
       "m_RoleName": "\"奎茵\""
     },
-    "\"CouncilHall_Accepted_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_001\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20320_01\"",
-      "m_mContent": "\"Can you… make it hurt a little more?\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_001\"",
+      "m_mContent": "\"This room... it's freezing...\"",
       "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
+      "m_RoleName": "\"琼安\""
     },
-    "\"CouncilHall_Accepted_20410_01\"": {
+    "\"Dialogue_B_200001_Clip01_002\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20410_01\"",
-      "m_mContent": "\"Ha! Told you I was right.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_002\"",
+      "m_mContent": "\"My arms ache... my face hurts... What happened? Who hit me?\"",
       "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
+      "m_RoleName": "\"琼安\""
     },
-    "\"CouncilHall_Accepted_20580_01\"": {
+    "\"Dialogue_B_200001_Clip01_003\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20580_01\"",
-      "m_mContent": "\"Truly worthy of the title \"Silver-haired.\"\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_003\"",
+      "m_mContent": "\"Awake at last, Joan?\"",
       "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
+      "m_RoleName": "\"波奇娜\""
     },
-    "\"CouncilHall_Accepted_20590_01\"": {
+    "\"Dialogue_B_200001_Clip01_004\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20590_01\"",
-      "m_mContent": "\"Well, it seems I haven't been left behind after all.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_004\"",
+      "m_mContent": "\"If you didn't try to hit anyone who came near while you were out cold, I wouldn't have to slap you awake just to patch you up.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
+      "m_RoleName": "\"波奇娜\""
     },
-    "\"CouncilHall_Accepted_20600_01\"": {
+    "\"Dialogue_B_200001_Clip01_005\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20600_01\"",
-      "m_mContent": "\"I see you've discovered the delight of knowledge.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_005\"",
+      "m_mContent": "\"That mark on your face... Did I do that?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_006\"",
+      "m_mContent": "\"Well, I slapped your face too, so we're even.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_007\"",
+      "m_mContent": "\"Sorry... At least my strength was gone while I was out.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_008\"",
+      "m_mContent": "\"Hey!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_009\"",
+      "m_mContent": "\"Give me your hand—your blood's about to soak the sheets.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_010\"",
+      "m_mContent": "\"Don't worry, I'm fine.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_011\"",
+      "m_mContent": "\"Who said I'm worried about you? I'll be the one washing these sheets!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_012\"",
+      "m_mContent": "\"Joan, how are you feeling? There's some swaggering fool at the training grounds demanding to face you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_013\"",
+      "m_mContent": "\"And why are you binding your wounds again?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_014\"",
+      "m_mContent": "\"They must've split open in the night… Joan thrashes about in her sleep.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_015\"",
+      "m_mContent": "\"Joan, let me take him on instead! You know I can handle it!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_016\"",
+      "m_mContent": "\"You could not even evade the fists of one lying unconscious.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_017\"",
+      "m_mContent": "\"That's because I wasn't ready! Come on—let me go, let me go!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_018\"",
+      "m_mContent": "\"No.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_019\"",
+      "m_mContent": "\"Tsk...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_020\"",
+      "m_mContent": "\"That girl's forever dreaming of winning in the games, as you once did. She has not grasped how merciless they truly are.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_021\"",
+      "m_mContent": "\"Such a naïve child, blissfully unaware, kept safe by others.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_022\"",
+      "m_mContent": "\"Come. Let us go meet this challenger.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_023\"",
+      "m_mContent": "\"What about your wounds?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_024\"",
+      "m_mContent": "\"I know my limits.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_025\"",
+      "m_mContent": "\"Behold! The undefeated legend of the Capitolus Arena! The warrior who has crushed 998 souls beneath her heel!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip01_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_026\"",
+      "m_mContent": "\"Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip01_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_027\"",
+      "m_mContent": "\"Joan! Joan! The undefeated Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"热情的观众\""
+    },
+    "\"Dialogue_B_200001_Clip01_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_028\"",
+      "m_mContent": "\"And her challenger tonight—the blazing newcomer of the Decimus Arena! The brave warrior who carved his name with five victories in a single day—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip01_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_029\"",
+      "m_mContent": "\"Beast Tamer Sergio!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip01_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_030\"",
+      "m_mContent": "\"Sergio! Sergio! The new legend, Sergio!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"热情的观众\""
+    },
+    "\"Dialogue_B_200001_Clip01_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_031\"",
+      "m_mContent": "\"It seems mankind are universally drawn to the spectacle of mutual destruction.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
-    "\"CouncilHall_Agree_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_032\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20320_01\"",
-      "m_mContent": "\"Ah... the pain... is a sign from the divine will!\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_032\"",
+      "m_mContent": "\"Does such diversion displease you, Lord Albrecht? Actually…\"",
       "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
+      "m_RoleName": "\"艾斯托弗领主\""
     },
-    "\"CouncilHall_Agree_20410_01\"": {
+    "\"Dialogue_B_200001_Clip01_033\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20410_01\"",
-      "m_mContent": "\"Oh, this isn't bad at all! I like it!\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
-    },
-    "\"CouncilHall_Agree_20580_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20580_01\"",
-      "m_mContent": "\"I trust your decision.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
-    },
-    "\"CouncilHall_Agree_20590_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20590_01\"",
-      "m_mContent": "\"Let's go with Noah's idea.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
-    },
-    "\"CouncilHall_Agree_20600_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20600_01\"",
-      "m_mContent": "\"Smarter than I gave you credit for.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_033\"",
+      "m_mContent": "\"Such trifling affairs are too paltry even to stir my disdain.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
-    "\"CouncilHall_Change_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_034\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20320_01\"",
-      "m_mContent": "\"Go on... a touch of suffering is all it takes to invite grace.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_034\"",
+      "m_mContent": "\"Astolfo is a wasteland. Bloodlust and violence grow wild beneath these yellow sands, and they must be given an outlet. This spectacle is the only cure I have found.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
+      "m_RoleName": "\"艾斯托弗领主\""
     },
-    "\"CouncilHall_Change_20410_01\"": {
+    "\"Dialogue_B_200001_Clip01_035\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20410_01\"",
-      "m_mContent": "\"Can't say I follow, but... it makes sense when you say it.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_035\"",
+      "m_mContent": "\"But fortune smiles: two Bell Ringers have deigned to grace this land. With your spring water and verdant growth, Astolfo shall be restored.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
+      "m_RoleName": "\"艾斯托弗领主\""
     },
-    "\"CouncilHall_Change_20580_01\"": {
+    "\"Dialogue_B_200001_Clip01_036\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20580_01\"",
-      "m_mContent": "\"You know this place better than I—Adhering to your counsel would be wise.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
-    },
-    "\"CouncilHall_Change_20590_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20590_01\"",
-      "m_mContent": "\"Hmm... it seems there's still much for me to learn.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
-    },
-    "\"CouncilHall_Change_20600_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20600_01\"",
-      "m_mContent": "\"Perhaps this problem has more than one solution.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_036\"",
+      "m_mContent": "\"Is that truly your belief?\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
-    "\"CouncilHall_Disagree_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_037\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20320_01\"",
-      "m_mContent": "\"That won't do. I feel nothing.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
-    },
-    "\"CouncilHall_Disagree_20410_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20410_01\"",
-      "m_mContent": "\"Not happening! If you've got a problem, then fight me!\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
-    },
-    "\"CouncilHall_Disagree_20580_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20580_01\"",
-      "m_mContent": "\"I've known this feeling of failure before...\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
-    },
-    "\"CouncilHall_Disagree_20590_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20590_01\"",
-      "m_mContent": "\"I don't think that's going to work.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
-    },
-    "\"CouncilHall_Disagree_20600_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20600_01\"",
-      "m_mContent": "\"Naive.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_037\"",
+      "m_mContent": "\"Then the 'spring' I grant you shall never run dry until Astolfo falls.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
-    "\"CouncilHall_Disapproved_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_038\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20320_01\"",
-      "m_mContent": "\"How can you spurn the mercy that's been offered...\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
-    },
-    "\"CouncilHall_Disapproved_20410_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20410_01\"",
-      "m_mContent": "\"What can I say? I can't beat you, so I'll go along.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
-    },
-    "\"CouncilHall_Disapproved_20580_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20580_01\"",
-      "m_mContent": "\"Will this create a rift between us, too?\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
-    },
-    "\"CouncilHall_Disapproved_20590_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20590_01\"",
-      "m_mContent": "\"My suggestions are merely guidelines—you're free to follow your own judgment.\"",
-      "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
-    },
-    "\"CouncilHall_Disapproved_20600_01\"": {
-      "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20600_01\"",
-      "m_mContent": "\"You're deliberately choosing ignorance.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_038\"",
+      "m_mContent": "\"So long, of course, as you honor our agreement.\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
-    "\"CouncilHall_Neutral_20320_01\"": {
+    "\"Dialogue_B_200001_Clip01_039\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20320_01\"",
-      "m_mContent": "\"The divine will does not concern itself.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_039\"",
+      "m_mContent": "\"My devotion to the Church shall endure until the end of days.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"珐缪\""
+      "m_RoleName": "\"艾斯托弗领主\""
     },
-    "\"CouncilHall_Neutral_20410_01\"": {
+    "\"Dialogue_B_200001_Clip01_040\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20410_01\"",
-      "m_mContent": "\"Neither do I! You make the call!\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_040\"",
+      "m_mContent": "\"Let the fight—begin!\"",
       "m_Type": "[]",
-      "m_RoleName": "\"阿莱尼\""
+      "m_RoleName": "\"主持者\""
     },
-    "\"CouncilHall_Neutral_20580_01\"": {
+    "\"Dialogue_B_200001_Clip01_041\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20580_01\"",
-      "m_mContent": "\"I'm from the Other Side—my opinion doesn't matter here.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_041\"",
+      "m_mContent": "\"Joan's hand is bleeding. Her wound has torn open again!\"",
       "m_Type": "[]",
-      "m_RoleName": "\"史黛拉\""
+      "m_RoleName": "\"波奇娜\""
     },
-    "\"CouncilHall_Neutral_20590_01\"": {
+    "\"Dialogue_B_200001_Clip01_042\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20590_01\"",
-      "m_mContent": "\"These decisions should be left to you young people.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_042\"",
+      "m_mContent": "\"He's exploiting it, striking at her injury on purpose.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"佩吉娜\""
+      "m_RoleName": "\"奈法厄斯\""
     },
-    "\"CouncilHall_Neutral_20600_01\"": {
+    "\"Dialogue_B_200001_Clip01_043\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20600_01\"",
-      "m_mContent": "\"Such matters are of no concern to me.\"",
+      "m_Key": "\"Dialogue_B_200001_Clip01_043\"",
+      "m_mContent": "\"Despicable coward!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_044\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_044\"",
+      "m_mContent": "\"Her pride will cost her dearly.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_045\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_045\"",
+      "m_mContent": "\"Come on, Joan! Crush him!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_046\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_046\"",
+      "m_mContent": "\"No, more importantly, I must fetch the bandages and herbs for when the fight is done!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_047\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_047\"",
+      "m_mContent": "\"Wait, I'll come with you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_048\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_048\"",
+      "m_mContent": "\"I can manage on my own! Nephilia, you don't even know the first thing about herbs!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_049\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_049\"",
+      "m_mContent": "\"This whelp...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip01_050\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_050\"",
+      "m_mContent": "\"For the glory of Decimus—!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_051\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_051\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_052\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_052\"",
+      "m_mContent": "\"It has been far too long since I tasted a battle so exhilarating.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_053\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_053\"",
+      "m_mContent": "\"Why… how are you still speaking?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_054\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_054\"",
+      "m_mContent": "\"If you survive and return to the arena, I'll be the one my master kills.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_055\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_055\"",
+      "m_mContent": "\"I cannot allow it... You must die!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_056\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_056\"",
+      "m_mContent": "\"You fight only to survive, do you not?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_057\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_057\"",
+      "m_mContent": "\"Every slave in the arena fights to survive!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_058\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_058\"",
+      "m_mContent": "\"But I fight because I revel in it.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_059\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_059\"",
+      "m_mContent": "\"You fear battle, and so victory will never favor you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_060\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_060\"",
+      "m_mContent": "\"Listen to yourself—half-bled and still boasting...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_061\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_061\"",
+      "m_mContent": "\"You!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"西塞罗\""
+    },
+    "\"Dialogue_B_200001_Clip01_062\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_062\"",
+      "m_mContent": "\"This feeling… again. Just like that day.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_063\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_063\"",
+      "m_mContent": "\"Joan's power is spiraling out of control. There's so much more I need to prepare now.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip01_064\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_064\"",
+      "m_mContent": "\"You... you're quite an interesting opponent.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_065\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_065\"",
+      "m_mContent": "\"Hm? Already dead?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_066\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_066\"",
+      "m_mContent": "\"Victory! Joan of Capitolus delivers a stunning reversal to claim the match!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip01_067\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_067\"",
+      "m_mContent": "\"All this clamor… enough. Time for you to fall silent.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_068\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_068\"",
+      "m_mContent": "\"Silence—!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip01_069\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_069\"",
+      "m_mContent": "\"When did such a warrior rise in our arena? Guard—bring me every record of her bouts.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip01_070\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_070\"",
+      "m_mContent": "\"At once, my Lord.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"士兵\""
+    },
+    "\"Dialogue_B_200001_Clip01_071\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_071\"",
+      "m_mContent": "\"Even in wastelands, unexpected treasures may be unearthed.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
+    "\"Dialogue_B_200001_Clip01_072\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_072\"",
+      "m_mContent": "\"The last Chamber of War... Born and fallen to ruin here.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip01_073\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_073\"",
+      "m_mContent": "\"Perhaps it is the most desolate soil that breeds the most extraordinary life.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip01_074\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_074\"",
+      "m_mContent": "\"We're beginning to grasp why the Saint sent us to Astolfo.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
+    "\"Dialogue_B_200001_Clip01_075\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_075\"",
+      "m_mContent": "\"This merchandise is far more enticing than the spices and jewels Lord Astolfo promised in his letter.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"流浪商人（达尔卡罗）\""
+    },
+    "\"Dialogue_B_200001_Clip01_076\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip01_076\"",
+      "m_mContent": "\"Now… how best to steal it, meow...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"流浪商人（达尔卡罗）\""
+    },
+    "\"Dialogue_B_200001_Clip02_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_001\"",
+      "m_mContent": "\"No coin, no purchase! Out—out of my sight!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"商人\""
+    },
+    "\"Dialogue_B_200001_Clip02_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_002\"",
+      "m_mContent": "\"It's only thirty-six Soli. I'll return once I've scraped together the sum.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_003\"",
+      "m_mContent": "\"Even if you had it, I'd never sell to a slave. Look at the brand upon your arm—dealing with your kind is ill luck.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"商人\""
+    },
+    "\"Dialogue_B_200001_Clip02_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_004\"",
+      "m_mContent": "\"Soli bears no brand of noble or slave!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_005\"",
+      "m_mContent": "\"Filth, the very ground is fouled by your presence! Away from my stall!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"商人\""
+    },
+    "\"Dialogue_B_200001_Clip02_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_006\"",
+      "m_mContent": "\"This is the cheapest stall in the market, yet still they refuse me…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_007\"",
+      "m_mContent": "\"The thunder has stilled. I must gather what Joan needs before the next bell tolls, or her condition will...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_008\"",
+      "m_mContent": "\"But first, there's something far more pressing.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_009\"",
+      "m_mContent": "\"Who are you? Why have you been following me?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_010\"",
+      "m_mContent": "\"Wait! We're not here for your life.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的跟踪者\""
+    },
+    "\"Dialogue_B_200001_Clip02_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_011\"",
+      "m_mContent": "\"With that half-beast form of yours, you can still speak the language of humans?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_011a\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_011a\"",
+      "m_mContent": "\"Our master's capable of this, yes... and other things. Like those you might desire.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的跟踪者（鹿头人）\""
+    },
+    "\"Dialogue_B_200001_Clip02_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_012\"",
+      "m_mContent": "\"Whether it's coin you need—or goods from that stall—not a problem at all.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的跟踪者\""
+    },
+    "\"Dialogue_B_200001_Clip02_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_013\"",
+      "m_mContent": "\"And the price?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip02_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_014\"",
+      "m_mContent": "\"Come with us, and you shall see.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的跟踪者\""
+    },
+    "\"Dialogue_B_200001_Clip02_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_015\"",
+      "m_mContent": "\"Is that... Pavana?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip02_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip02_016\"",
+      "m_mContent": "\"Wasn't she supposed to be helping Joan gather herbs? Why is she with those suspicious-looking wealthy people...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_001\"",
+      "m_mContent": "\"Two days later.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"旁白\""
+    },
+    "\"Dialogue_B_200001_Clip03_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_002\"",
+      "m_mContent": "\"Joan?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_003\"",
+      "m_mContent": "\"Joan, I'm talking to you—hey—can you hear me?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_004\"",
+      "m_mContent": "\"Nngh—it hurts!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_005\"",
+      "m_mContent": "\"Did you cut yourself? Or bump into something?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_006\"",
+      "m_mContent": "\"No, it's because Joan feels all prickly when I touch her.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_007\"",
+      "m_mContent": "\"Why do you always use such strange words to describe people?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_008\"",
+      "m_mContent": "\"It really is!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_009\"",
+      "m_mContent": "\"Joan, where are you going?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_010\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip03_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_011\"",
+      "m_mContent": "\"Is it just me, or has Joan seemed like another person since she woke?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_012\"",
+      "m_mContent": "\"She barely stays with anyone, and when she does speak, her thoughts wander elsewhere.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_013\"",
+      "m_mContent": "\"Give her time. If she lives with us, walks beside us, feels everyone's 'love'…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_014\"",
+      "m_mContent": "\"You know what's going on, don't you?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_015\"",
+      "m_mContent": "\"Joan and I faced the same thing once, wandering the desert.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_016\"",
+      "m_mContent": "\"That explains her wounds after the last match. Even the healer our master summoned said she could not be saved.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_017\"",
+      "m_mContent": "\"Yet you spread that black paste across her body, and she woke.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip03_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_018\"",
+      "m_mContent": "\"Joan will return to herself soon. I know she will.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip03_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_019\"",
+      "m_mContent": "\"Where's Joan? Some well-dressed fellow is asking for her.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip03_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_020\"",
+      "m_mContent": "\"You're the undefeated legend of the arena?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"？？？\""
+    },
+    "\"Dialogue_B_200001_Clip03_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_021\"",
+      "m_mContent": "\"Then prove your strength once more.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"？？？\""
+    },
+    "\"Dialogue_B_200001_Clip03_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_022\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip03_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_023\"",
+      "m_mContent": "\"This is an order: defeat those soldiers.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"？？？\""
+    },
+    "\"Dialogue_B_200001_Clip03_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_024\"",
+      "m_mContent": "\"Your slaves are too weak.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip03_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_025\"",
+      "m_mContent": "\"How dare you!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"严肃的守卫\""
+    },
+    "\"Dialogue_B_200001_Clip03_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_026\"",
+      "m_mContent": "\"Your prowess is matched only by your arrogance.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"？？？\""
+    },
+    "\"Dialogue_B_200001_Clip03_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_027\"",
+      "m_mContent": "\"You dare stand before the Lord without bowing?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"严肃的守卫\""
+    },
+    "\"Dialogue_B_200001_Clip03_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_028\"",
+      "m_mContent": "\"I saw you in the stands—front row, third seat of the noble box.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip03_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_029\"",
+      "m_mContent": "\"So you're the Lord.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip03_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_030\"",
+      "m_mContent": "\"Your powers of observation and memory are both remarkable. Yet such gifts should not be squandered in the arena.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip03_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip03_031\"",
+      "m_mContent": "\"Join the Astolfo Legion, Joan.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_001\"",
+      "m_mContent": "\"Join the Astolfo Legion, Joan.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_002\"",
+      "m_mContent": "\"I decline.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_003\"",
+      "m_mContent": "\"Why? Even among nobles, the Legion is held as the highest honor.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_004\"",
+      "m_mContent": "\"What is it you desire? Wealth? Glory?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_005\"",
+      "m_mContent": "\"I desire battle. To claim victory in a thousand fights.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_006\"",
+      "m_mContent": "\"Join the Legion, and battles will never cease. Since the Bell Ringer left us those springs, invaders have come in endless waves to seize them.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_007\"",
+      "m_mContent": "\"The Legion needs fresh blood, warriors of your kind, if we...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_008\"",
+      "m_mContent": "\"(sounding of the war horn)\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"洪亮的号角\""
+    },
+    "\"Dialogue_B_200001_Clip04_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_009\"",
+      "m_mContent": "\"The war horn! We're under attack!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"士兵\""
+    },
+    "\"Dialogue_B_200001_Clip04_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_010\"",
+      "m_mContent": "\"Protect the Lord!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"士兵\""
+    },
+    "\"Dialogue_B_200001_Clip04_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_011\"",
+      "m_mContent": "\"Look—a water source!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"蒙面的入侵者\""
+    },
+    "\"Dialogue_B_200001_Clip04_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_012\"",
+      "m_mContent": "\"Take this place and we'll be rich!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"蒙面的入侵者\""
+    },
+    "\"Dialogue_B_200001_Clip04_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_013\"",
+      "m_mContent": "\"Even weaker than the last.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_014\"",
+      "m_mContent": "\"Arrogant wretch!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"蒙面的入侵者\""
+    },
+    "\"Dialogue_B_200001_Clip04_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_015\"",
+      "m_mContent": "\"Hey! I'm a Legion soldier, not your foe!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"士兵\""
+    },
+    "\"Dialogue_B_200001_Clip04_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_016\"",
+      "m_mContent": "\"Enough, Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_017\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_018\"",
+      "m_mContent": "\"So—it is battle itself you seek. Perhaps this pure pursuit is what grants you such strength.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_019\"",
+      "m_mContent": "\"...I don't understand.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_020\"",
+      "m_mContent": "\"You spoke of a thousand victories—you meant those in the arena, yes?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_021\"",
+      "m_mContent": "\"Then I shall see to it you are given the grandest thousandth match of all. Perform well.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_022\"",
+      "m_mContent": "\"After that, I hope you will reconsider my offer. For battles upon the field of war are far harsher than those of the arena.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_023\"",
+      "m_mContent": "\"Is that so?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip04_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_024\"",
+      "m_mContent": "\"I swear upon my title as Lord Astolfo—my word shall not be broken.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_025\"",
+      "m_mContent": "\"My Lord, the hour grows late. What brings you here?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"执政官\""
+    },
+    "\"Dialogue_B_200001_Clip04_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_026\"",
+      "m_mContent": "\"Do you recall the legend of Astolfo?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_027\"",
+      "m_mContent": "\"Which legend do you speak of?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"执政官\""
+    },
+    "\"Dialogue_B_200001_Clip04_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_028\"",
+      "m_mContent": "\"It is said the founder of Astolfo claimed a thousand victories upon this oasis, and thus won the sacred right to dwell in this land.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_029\"",
+      "m_mContent": "\"The Church, honoring his valor, bestowed the divine mandate to rule Astolfo. Such is the tale of our rise. But why speak of it now?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"执政官\""
+    },
+    "\"Dialogue_B_200001_Clip04_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_030\"",
+      "m_mContent": "\"Perhaps such tales are not without foundation.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"艾斯托弗领主\""
+    },
+    "\"Dialogue_B_200001_Clip04_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip04_031\"",
+      "m_mContent": "\"Father... you cannot mean...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_001\"",
+      "m_mContent": "\"Joan's 999th match is about to begin. Where in the world is Pavana?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip05_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_002\"",
+      "m_mContent": "\"She's been missing since morning.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip05_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_003\"",
+      "m_mContent": "\"Joan never misses a match... Something's wrong...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip05_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_004\"",
+      "m_mContent": "\"That figure there... doesn't it look like her?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip05_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_005\"",
+      "m_mContent": "\"Where?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip05_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_006\"",
+      "m_mContent": "\"The one walking with those wealthy folk. I saw her with them after Joan collapsed last time as well.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip05_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_007\"",
+      "m_mContent": "\"Pavana won't be tricked by them, will she? Come—we'll follow.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip05_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_008\"",
+      "m_mContent": "\"What? How did they vanish so quickly?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip05_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_009\"",
+      "m_mContent": "\"Could we have been mistaken?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip05_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_010\"",
+      "m_mContent": "\"We proceed as planned.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_011\"",
+      "m_mContent": "\"Keep her from today's match. Better yet, see she never sets foot in Astolfo again.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_012\"",
+      "m_mContent": "\"You… Polina, is it? Do this well, and I shall grant you freedom from slavery.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_013\"",
+      "m_mContent": "\"Spare me the prattle. I know what must be done.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_014\"",
+      "m_mContent": "\"Good.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_015\"",
+      "m_mContent": "\"Father… you fail to see. This barren desert cannot withstand an upheaval.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"卡里尼安伯爵\""
+    },
+    "\"Dialogue_B_200001_Clip05_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_016\"",
+      "m_mContent": "\"You arranged to meet that slave here, didn't you?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伯爵的手下\""
+    },
+    "\"Dialogue_B_200001_Clip05_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_017\"",
+      "m_mContent": "\"Yes.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_018\"",
+      "m_mContent": "\"Then we strike from here.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伯爵的手下\""
+    },
+    "\"Dialogue_B_200001_Clip05_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_019\"",
+      "m_mContent": "\"Now all you need to do is wait in silence—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_020\"",
+      "m_mContent": "\"Behold! With thunderous applause and roaring cheers, we welcome the long-absent legend of these sands—the undefeated myth, now approaching her 999th triumph—Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"遥远的声音\""
+    },
+    "\"Dialogue_B_200001_Clip05_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_021\"",
+      "m_mContent": "\"Wait... the slave we're meant to ambush—that's Joan, isn't it?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伯爵的手下\""
+    },
+    "\"Dialogue_B_200001_Clip05_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_022\"",
+      "m_mContent": "\"How is she already in the arena? Did you deceive us?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伯爵的手下\""
+    },
+    "\"Dialogue_B_200001_Clip05_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_023\"",
+      "m_mContent": "\"Standing across from her is—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"遥远的声音\""
+    },
+    "\"Dialogue_B_200001_Clip05_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_024\"",
+      "m_mContent": "\"I swore to Joan that I would witness her thousand victories in the arena.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_025\"",
+      "m_mContent": "\"That was our pact before we came to Astolfo. And I will let no one stand in its way.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_026\"",
+      "m_mContent": "\"You took the Lord's coin and gifts, and pledged—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伯爵的手下\""
+    },
+    "\"Dialogue_B_200001_Clip05_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_027\"",
+      "m_mContent": "\"And you truly thought I was one to keep promises?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_028\"",
+      "m_mContent": "\"Joan, do you see? I have the strength to stand against foes like these now.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip05_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip05_029\"",
+      "m_mContent": "\"So even if it is only me, I can still guard your back…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip06_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_001\"",
+      "m_mContent": "\"Behold! With thunderous applause and roaring cheers, we welcome the long-absent legend of these sands—the undefeated myth, now approaching her 999th triumph—Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip06_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_002\"",
+      "m_mContent": "\"Joan! Joan! The undefeated Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"热情的观众\""
+    },
+    "\"Dialogue_B_200001_Clip06_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_003\"",
+      "m_mContent": "\"And facing her now—the prized wolves of the Decimus Arena! Blood-drunk beasts clad in iron, bred only for slaughter.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip06_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_004\"",
+      "m_mContent": "\"Today they shall bare their fangs and unleash a magnificent duel!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"主持者\""
+    },
+    "\"Dialogue_B_200001_Clip06_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_005\"",
+      "m_mContent": "\"She means to face that many wolves alone? This is...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"议论纷纷的观众\""
+    },
+    "\"Dialogue_B_200001_Clip06_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_006\"",
+      "m_mContent": "\"Unbelievable!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"兴奋不已的观众\""
+    },
+    "\"Dialogue_B_200001_Clip06_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_007\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip06_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_008\"",
+      "m_mContent": "\"She's done it! Joan has won again!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip06_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_009\"",
+      "m_mContent": "\"Joan! Joan! The undefeated Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"兴奋的观众\""
+    },
+    "\"Dialogue_B_200001_Clip06_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_010\"",
+      "m_mContent": "\"We can’t see her through this crowd! Quickly, let's push to the front!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"贝利萨留\""
+    },
+    "\"Dialogue_B_200001_Clip06_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_011\"",
+      "m_mContent": "\"Too bad Pavana missed this—she'd have been overjoyed!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip06_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_012\"",
+      "m_mContent": "\"All these cheers are for you, Joan.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip06_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip06_013\"",
+      "m_mContent": "\"How wonderful and yet, why does my heart not soar as I thought it would?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_001\"",
+      "m_mContent": "\"Did you hear? They say the Lord himself will preside over Joan’s thousandth match in a few days.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_002\"",
+      "m_mContent": "\"And if she triumphs, she'll be granted a warrior's title by the Lord himself. From slave to nobility with a single victory!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_003\"",
+      "m_mContent": "\"The whole city's abuzz—whispers say she may not only gain status, but be granted a new family name.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_004\"",
+      "m_mContent": "\"A family name? Can't eat it, can't trade it at market. What good is that?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_005\"",
+      "m_mContent": "\"Fool. A new family name means the Lord might adopt Joan as his foster daughter.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_006\"",
+      "m_mContent": "\"No way! Joan and I are both abandoned orphans—we only have each other. I won't accept some false kin who appears out of nowhere!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_007\"",
+      "m_mContent": "\"You're sharp in some ways, but in others, you're still just a child.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_008\"",
+      "m_mContent": "\"Tch—Joan, tell her!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_009\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_010\"",
+      "m_mContent": "\"Joan still hasn't changed back...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_011\"",
+      "m_mContent": "\"Let her be. I hear the Lord's found a snow-white leopard for the thousandth match.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_012\"",
+      "m_mContent": "\"Snow-white leopard... What's snow?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_013\"",
+      "m_mContent": "\"It's something really cold that melts into water.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_014\"",
+      "m_mContent": "\"I wish it could snow here in Astolfo. Then we'd never thirst again, right?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_015\"",
+      "m_mContent": "\"Snow in the desert? Impossible.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_016\"",
+      "m_mContent": "\"Why not?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_017\"",
+      "m_mContent": "\"Because—children shouldn't ask so many questions. Sleep.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_018\"",
+      "m_mContent": "\"Tsk...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_019\"",
+      "m_mContent": "\"Good night, Joan; good night, Nephilia.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_020\"",
+      "m_mContent": "\"Good night, snow-white leopard.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_021\"",
+      "m_mContent": "\"The desert night sheds its searing veil, and upon a bed gone cold, the girl drifts into wintered dreams.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"旁白\""
+    },
+    "\"Dialogue_B_200001_Clip07_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_022\"",
+      "m_mContent": "\"There lies snow—bitter and endless. There stands Joan, distant and cold. There prowls the leopard, its indifferent gaze an enigma Pavana cannot unravel.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"旁白\""
+    },
+    "\"Dialogue_B_200001_Clip07_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_023\"",
+      "m_mContent": "\"When its maw yawns wide, the sound is not a beast's roar but the panicked clamor of multitudes—until the dream itself is swallowed whole.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"旁白\""
+    },
+    "\"Dialogue_B_200001_Clip07_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_024\"",
+      "m_mContent": "\"Wake—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_025\"",
+      "m_mContent": "\"Wake up, Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_026\"",
+      "m_mContent": "\"The Lord is dead, slain! The city's in chaos—everyone says Cornelius has seized the throne!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_027\"",
+      "m_mContent": "\"And what has that to do with me?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_028\"",
+      "m_mContent": "\"Normally nothing. But Cornelius's sent the Astolfo Legion to capture you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_029\"",
+      "m_mContent": "\"I'll kill them all.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_030\"",
+      "m_mContent": "\"It's not just you—they'll take everyone from the Capitolus Arena. Can you even keep everyone safe?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_031\"",
+      "m_mContent": "\"We must first escape tonight's capture—get everyone out, Joan.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_032\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_032\"",
+      "m_mContent": "\"They mean nothing to me—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_033\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_033\"",
+      "m_mContent": "\"Enough!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_034\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_034\"",
+      "m_mContent": "\"You've turned cold again, just as when you last lost control. Indifferent to the weak who stand beside you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_035\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_035\"",
+      "m_mContent": "\"But living alone in this world is misery—for you, and for me.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_036\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_036\"",
+      "m_mContent": "\"Do you remember our days in the arena? Please… be as you were then.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_037\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_037\"",
+      "m_mContent": "\"Joan... please.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip07_038\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_038\"",
+      "m_mContent": "\"I...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_038a\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_038a\"",
+      "m_mContent": "\"Monsters... The new Lord has sent many monsters to capture us!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_039\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_039\"",
+      "m_mContent": "\"Found them! Round up these slaves.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"军团士兵\""
+    },
+    "\"Dialogue_B_200001_Clip07_040\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_040\"",
+      "m_mContent": "\"You are... Domitian and Flavius. You serve at the Lord's side.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_041\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_041\"",
+      "m_mContent": "\"Y-you still remember our names?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"军团士兵\""
+    },
+    "\"Dialogue_B_200001_Clip07_041a\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_041a\"",
+      "m_mContent": "\"Joan! Don't let the past make you soft on our enemies!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip07_042\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_042\"",
+      "m_mContent": "\"I remember them all. Yet certain names… they echo differently.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_043\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_043\"",
+      "m_mContent": "\"Pavana. That name carries weight.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip07_044\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip07_044\"",
+      "m_mContent": "\"I remember… a promise left unfulfilled, bound to that name.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_001\"",
+      "m_mContent": "\"Eighteen days since we fled the capital.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_002\"",
+      "m_mContent": "\"Nineteen days now.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip08_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_003\"",
+      "m_mContent": "\"That hardly matters. Word is, the new Lord's decrees grow harsher—more slaves are fleeing to join us.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_004\"",
+      "m_mContent": "\"How should I draw the new Lord? Joan, have you seen him before?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_005\"",
+      "m_mContent": "\"If you mean that person who always lurked behind the old Lord on the dais... probably this.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_006\"",
+      "m_mContent": "\"Joan... are these even people?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_007\"",
+      "m_mContent": "\"Don't question my memory. That's exactly how he looks.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_008\"",
+      "m_mContent": "\"Day thirty-two since our flight from the capital. The new slaves whisper that the wells have begun to fail, and the plants wither.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_009\"",
+      "m_mContent": "\"They say the Saint has turned her will against the new Lord—that this is divine punishment. With no more water, even common folk now flee.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_010\"",
+      "m_mContent": "\"I almost welcome this life on the run. Since we left the capital, Joan has been herself once more.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_011\"",
+      "m_mContent": "\"Day fifty-one since we fled. More and more slaves and villagers join our march each day.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_012\"",
+      "m_mContent": "\"Joan is both fierce and righteous, driving back the desert beasts with her own hands. We have chosen her as our leader.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_013\"",
+      "m_mContent": "\"Not like those masters who held our contracts in the arena—she is a master who would die to shield us.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_014\"",
+      "m_mContent": "\"Together we agreed: Joan must lead us back to the capital, to overthrow the wicked new Lord.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_015\"",
+      "m_mContent": "\"Hope burns in everyone's eyes… but dread gnaws at mine.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_016\"",
+      "m_mContent": "\"When we return, will Joan turn cold again?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_017\"",
+      "m_mContent": "\"Day 90... We've returned to the capital again.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_018\"",
+      "m_mContent": "\"You are nothing but slaves. Now... you're rebelling?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_019\"",
+      "m_mContent": "\"Someone once told me: a master's worth lies in protecting those who follow. Without followers, there is no master.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_020\"",
+      "m_mContent": "\"You failed to protect Astolfo's people. You are no true master of this city.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_021\"",
+      "m_mContent": "\"Utter nonsense. Guards—remove them.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_022\"",
+      "m_mContent": "\"Still you cower behind the Legion's shadow. And I will defeat you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_023\"",
+      "m_mContent": "\"Cornelius, I challenge you to single combat. Will you face me or flee?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_024\"",
+      "m_mContent": "\"You? Alone? You could not even reach me.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_025\"",
+      "m_mContent": "\"Guards, stop her! Get me away from here!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_026\"",
+      "m_mContent": "\"Pavana, I need new weapons!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_027\"",
+      "m_mContent": "\"She didn't follow...?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_028\"",
+      "m_mContent": "\"She's out of weapons—strike her down!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"大胆的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip08_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_029\"",
+      "m_mContent": "\"I was a slave in the arena. I won my first victory with nothing but these hands!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_030\"",
+      "m_mContent": "\"Now!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"大胆的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip08_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_031\"",
+      "m_mContent": "\"If I fall here, I fail all who trust me.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_032\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_032\"",
+      "m_mContent": "\"If I fall here, our pact of a thousand victories...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_033\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_033\"",
+      "m_mContent": "\"Such bravado moments ago, and now look at you—broken and pitiful.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_034\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_034\"",
+      "m_mContent": "\"Very well, wretched slave. I accept your challenge. Let me grant you the mercy of death.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_035\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_035\"",
+      "m_mContent": "\"I will not fall.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_036\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_036\"",
+      "m_mContent": "\"I will defeat you all—kill every last one of you!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip08_037\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_037\"",
+      "m_mContent": "\"Joan's already charged in! She'll bring us victory—I know she will…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_038\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_038\"",
+      "m_mContent": "\"Joan...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"远处的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip08_039\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_039\"",
+      "m_mContent": "\"The slave Joan has fallen! The rest of you—lay down your arms!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"远处的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip08_040\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_040\"",
+      "m_mContent": "\"Impossible... Joan would never fall... (coughing)\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_041\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_041\"",
+      "m_mContent": "\"You're hurt! Let me get you to safety.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip08_042\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_042\"",
+      "m_mContent": "\"No! Let go of me!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_043\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_043\"",
+      "m_mContent": "\"You're bleeding—stop talking!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip08_044\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_044\"",
+      "m_mContent": "\"No! I'm not finished!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_045\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_045\"",
+      "m_mContent": "\"I was born an orphan, unwanted. Then sold into slavery. I've imagined so many different endings to my life.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_046\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_046\"",
+      "m_mContent": "\"Struck down in the arena, executed by a master for no cause, beaten to death for offending a noble…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_047\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_047\"",
+      "m_mContent": "\"Never did I dream I would die rebelling against a Lord. And that is already the finest end I could ask for.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_048\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_048\"",
+      "m_mContent": "\"So let me stand behind Joan—let me fight until my last breath!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_049\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_049\"",
+      "m_mContent": "\"Do not believe their lies! They want to break your spirit!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_050\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_050\"",
+      "m_mContent": "\"Joan won 999 matches—she even defeated the wolves alone. She is a legend!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_051\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_051\"",
+      "m_mContent": "\"And you cowards who fight with nothing but hollow lies… even I could crush you without effort!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_052\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_052\"",
+      "m_mContent": "\"Enough of your boasting!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"凶狠的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip08_053\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_053\"",
+      "m_mContent": "\"The thunder calls...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_054\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_054\"",
+      "m_mContent": "\"I must... reach her side at once...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip08_055\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_055\"",
+      "m_mContent": "\"The former Chamber of War's Eternity has chosen its heir.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip08_056\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_056\"",
+      "m_mContent": "\"I remember… that spear still lies where she fell—in the capital of Astolfo.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"多蕾丝\""
+    },
+    "\"Dialogue_B_200001_Clip08_057\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_057\"",
+      "m_mContent": "\"Desert! Scorching heat! And passionate beauties in flowing skirts!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip08_058\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_058\"",
+      "m_mContent": "\"Leave it to Joyce to fetch that chosen heir!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip08_059\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_059\"",
+      "m_mContent": "\"The chosen one must be 'her.' Joyce, I shall go with you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip08_060\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip08_060\"",
+      "m_mContent": "\"A journey into the desert… with a giant tree? That hardly sounds romantic.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_001\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_001\"",
+      "m_mContent": "\"No, we're completely surrounded! Is this... is this truly the end for us?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_002\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_002\"",
+      "m_mContent": "\"Joan… is this all I can do?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_003\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_003\"",
+      "m_mContent": "\"Pavana!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_004\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_004\"",
+      "m_mContent": "\"Meow!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的黑猫\""
+    },
+    "\"Dialogue_B_200001_Clip09_005\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_005\"",
+      "m_mContent": "\"What in the... why is there a black cat on the battlefield?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_006\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_006\"",
+      "m_mContent": "\"Th-that weapon in her hands… that's the spear from the square! The sacred relic left by the legendary Bell Ringer!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"惊恐的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_007\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_007\"",
+      "m_mContent": "\"Is she chosen by the Saint? Run!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"惊恐的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_008\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_008\"",
+      "m_mContent": "\"Stand your ground! You are sworn soldiers of Astolfo—sworn to protect me!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_009\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_009\"",
+      "m_mContent": "\"Merciful Saint, spare us! We never wished for this bloodshed…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"惊恐的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_010\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_010\"",
+      "m_mContent": "\"Curse it all...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_011\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_011\"",
+      "m_mContent": "\"I am the rightful heir of Astolfo! How could I—how could a nobleman fall to a wretched slave?!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_012\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_012\"",
+      "m_mContent": "\"But wait—the leopard my father brought… Yes, my last ace!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_013\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_013\"",
+      "m_mContent": "\"It has starved so long—it will relish every morsel of your flesh…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_014\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_014\"",
+      "m_mContent": "\"You... you actually... won...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_015\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_015\"",
+      "m_mContent": "\"Could father have been right all along? Could Astolfo truly be destined for a—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"领主卡里尼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_016\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_016\"",
+      "m_mContent": "\"She's slain the Lord!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"惊恐的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_017\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_017\"",
+      "m_mContent": "\"My thousandth battle… and I have triumphed.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_018\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_018\"",
+      "m_mContent": "\"Strange… why should the number one thousand matter to me?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_019\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_019\"",
+      "m_mContent": "\"It matters not. I need only continue to fight. Continue toward victory.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_020\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_020\"",
+      "m_mContent": "\"(coughing) ...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_021\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_021\"",
+      "m_mContent": "\"Why am I... awake again?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_022\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_022\"",
+      "m_mContent": "\"A black cat brought you back. It bore… an uncanny likeness to the goddess Mau herself.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_023\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_023\"",
+      "m_mContent": "\"Could the desert's ancient myths be true?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_024\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_024\"",
+      "m_mContent": "\"The cat goddess... the cat goddess truly walks among us!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"虔诚的奴隶们\""
+    },
+    "\"Dialogue_B_200001_Clip09_025\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_025\"",
+      "m_mContent": "\"Meow!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"神秘的黑猫\""
+    },
+    "\"Dialogue_B_200001_Clip09_026\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_026\"",
+      "m_mContent": "\"Is divine power truly capable of such feats?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_027\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_027\"",
+      "m_mContent": "\"Then… might even wilder dreams be born as truth?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_028\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_028\"",
+      "m_mContent": "\"Pavana, though this may sound harsh to say when you've only just awakened...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_029\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_029\"",
+      "m_mContent": "\"Didn't you say we needed to reach Joan at once?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_030\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_030\"",
+      "m_mContent": "\"We yield! We swear to serve you—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"惊恐的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_031\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_031\"",
+      "m_mContent": "\"Don't kill me! I dropped my weapon—urgh!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"逃窜的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_032\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_032\"",
+      "m_mContent": "\"She's mad! Run for your lives!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"崩溃的士兵\""
+    },
+    "\"Dialogue_B_200001_Clip09_033\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_033\"",
+      "m_mContent": "\"Joyce dances! Spins! Leaps with grace!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_034\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_034\"",
+      "m_mContent": "\"Ugh... ahhhhh... ugh... ahhh!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_035\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_035\"",
+      "m_mContent": "\"It stings! Please... oh please, do it again!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_036\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_036\"",
+      "m_mContent": "\"The power lingering within Eternity is still far too great for mortal souls to bear.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip09_037\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_037\"",
+      "m_mContent": "\"(sighing) Well, with the great tree watching, Joyce can't slack off any longer. Best seal this dangerous power before it consumes her.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_038\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_038\"",
+      "m_mContent": "\"Covenant—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_039\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_039\"",
+      "m_mContent": "\"Ah! What were Joyce's Covenant words again?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_040\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_040\"",
+      "m_mContent": "\"Oh, forget it! Joyce will improvise!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_041\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_041\"",
+      "m_mContent": "\"Covenant—Joyce's scorching desert belly dance!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_042\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_042\"",
+      "m_mContent": "\"Joan, we're here to help!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_043\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_043\"",
+      "m_mContent": "\"Where's Joan? She was right here… how could she vanish without a trace?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_044\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_044\"",
+      "m_mContent": "\"Could this also be a miracle? Two divine signs in a single day...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_045\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_045\"",
+      "m_mContent": "\"Joan, where have you gone...?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_046\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_046\"",
+      "m_mContent": "\"Where am I?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_047\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_047\"",
+      "m_mContent": "\"I saw you in the stands. Who are you?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_048\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_048\"",
+      "m_mContent": "\"We are Bell Ringers of the Tempus Church. You stand within a rift in time itself.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip09_049\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_049\"",
+      "m_mContent": "\"We have come seeking the inheritor chosen by our fallen predecessor's weapon.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip09_050\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_050\"",
+      "m_mContent": "\"The previous Bell Ringer's weapon… is it this lance?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_051\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_051\"",
+      "m_mContent": "\"Ooh, this gleaming, pointy lance! May Joyce touch it?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_052\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_052\"",
+      "m_mContent": "\"Owww, ahhhh—that really stings!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_053\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_053\"",
+      "m_mContent": "\"Come with us to the Tempus Church. There lies your destiny—your ultimate destination.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"伊戈德拉希尔\""
+    },
+    "\"Dialogue_B_200001_Clip09_054\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_054\"",
+      "m_mContent": "\"The Church... I'm not interested.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_055\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_055\"",
+      "m_mContent": "\"No interest? Impossible! Come with us, and you'll find endless—\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_056\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_056\"",
+      "m_mContent": "\"—fascinating opponents!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_057\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_057\"",
+      "m_mContent": "\"Every opponent I've faced thus far has been dull.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_058\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_058\"",
+      "m_mContent": "\"Then Joyce has a genius idea—divide your power into a hundred fragments! Every enemy you meet would grow stronger. Perfect, isn't it?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_059\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_059\"",
+      "m_mContent": "\"Joyce knew it from the start—you crave the thrill of a true fight, just like Joyce does.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_060\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_060\"",
+      "m_mContent": "\"That sounds... reasonable.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_061\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_061\"",
+      "m_mContent": "\"But how does one divide power into a hundred parts?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_062\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_062\"",
+      "m_mContent": "\"It's possible, of course! Your power conceals 'such' secrets.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_063\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_063\"",
+      "m_mContent": "\"...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_064\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_064\"",
+      "m_mContent": "\"I see... so that is 'such' a way.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_065\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_065\"",
+      "m_mContent": "\"If I go to the Church, I may find the purest of battles. If I leave this place, I need no longer harm others at the power's command.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_066\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_066\"",
+      "m_mContent": "\"I...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_067\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_067\"",
+      "m_mContent": "\"Enough wavering. You've never loved anything but battle. Those so-called companions and friends? Shackles that drag you down.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_068\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_068\"",
+      "m_mContent": "\"Joyce adores friends, but some souls are born with ice in their veins.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_069\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_069\"",
+      "m_mContent": "\"See? You've grown so numb that even Joyce's words cannot rouse your anger. How deliciously cold, how perfectly detached.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_070\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_070\"",
+      "m_mContent": "\"So you see—you're fated to destroy everyone who dares to care for you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_071\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_071\"",
+      "m_mContent": "\"Many praise my memory. I can recall every name of every soul I've met—yet each name is nothing but words.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_072\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_072\"",
+      "m_mContent": "\"I long to answer the faith Pavana, Nephilia, and the others place in me, but I know with agonizing clarity that I cannot.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_073\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_073\"",
+      "m_mContent": "\"If my power could be divided into a hundred parts, I would gladly give one to Pavana.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_074\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_074\"",
+      "m_mContent": "\"She would inherit my will, guard this desert, and protect all who call it home. Perhaps she is the one truly meant to be their master.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_075\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_075\"",
+      "m_mContent": "\"As for me—I know only battle. Through struggle alone can I give them a free Astolfo.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_076\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_076\"",
+      "m_mContent": "\"Very well. I will go with you to the Church.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_077\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_077\"",
+      "m_mContent": "\"Then let us depart at once!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_078\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_078\"",
+      "m_mContent": "\"The door vanished?!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"奈法厄斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_079\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_079\"",
+      "m_mContent": "\"Joan!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_080\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_080\"",
+      "m_mContent": "\"Where have you gone… Have you chosen to abandon us?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_081\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_081\"",
+      "m_mContent": "\"All I have left is this sliver of hope the goddess Mau has blessed me…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_082\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_082\"",
+      "m_mContent": "\"If they truly are gods, then surely—surely there must be a way to bring Joan back…\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"波奇娜\""
+    },
+    "\"Dialogue_B_200001_Clip09_083\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_083\"",
+      "m_mContent": "\"Forty years later.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"旁白\""
+    },
+    "\"Dialogue_B_200001_Clip09_084\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_084\"",
+      "m_mContent": "\"Hehe—congratulations, Joan! You've passed the Bell Ringer's trial!\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_085\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_085\"",
+      "m_mContent": "\"The Saint herself has charged Joyce, Chamber of War, to help you forge your very own Legion.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_086\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_086\"",
+      "m_mContent": "\"Now, what kind of Legion shall it be? Cute? Charming? Or perhaps… like Joyce?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"乔伊斯\""
+    },
+    "\"Dialogue_B_200001_Clip09_087\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_087\"",
+      "m_mContent": "\"I need no such thing. I already command the strongest Legion.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"琼安\""
+    },
+    "\"Dialogue_B_200001_Clip09_088\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_088\"",
+      "m_mContent": "\"Joyce—that rule-breaking thief—has been siphoning Joan's lightning for all these years.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"阿尔伯特\""
+    },
+    "\"Dialogue_B_200001_Clip09_089\"": {
+      "m_bError": null,
+      "m_Key": "\"Dialogue_B_200001_Clip09_089\"",
+      "m_mContent": "\"How utterly despicable...\"",
       "m_Type": "[]",
       "m_RoleName": "\"阿尔伯特\""
     },
@@ -125787,14 +128854,14 @@
     "\"Lounge_Idle_01_20320\"": {
       "m_bError": null,
       "m_Key": "\"Lounge_Idle_01_20320\"",
-      "m_mContent": "\"(soft panting) Is someone there…?\nPlease, I just need... a hand.\"",
+      "m_mContent": "\"Is someone there…? Please, I just need... a hand.\"",
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
     "\"Lounge_Idle_Show_01_20320\"": {
       "m_bError": null,
       "m_Key": "\"Lounge_Idle_Show_01_20320\"",
-      "m_mContent": "\"(soft panting) Just need... your hand... here.\"",
+      "m_mContent": "\"Just need... your hand... here.\"",
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
@@ -125815,7 +128882,7 @@
     "\"Lounge_Leg_01_20320\"": {
       "m_bError": null,
       "m_Key": "\"Lounge_Leg_01_20320\"",
-      "m_mContent": "\"(Ngh) W-wait...\"",
+      "m_mContent": "\"W-wait...\"",
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
@@ -125892,7 +128959,7 @@
     "\"Lounge_Rune_01_20320\"": {
       "m_bError": null,
       "m_Key": "\"Lounge_Rune_01_20320\"",
-      "m_mContent": "\"Gentle! Ugh, you're hopeless... That tickles!\"",
+      "m_mContent": "\"A little mark, right here... So that next time... Ah! Yes.\"",
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
@@ -125948,7 +129015,7 @@
     "\"Tutor_413_07\"": {
       "m_bError": null,
       "m_Key": "\"Tutor_413_07\"",
-      "m_mContent": "\"The higher the rarity and Spirit Siphon phase of the selected Vassal, the greater the attribute bonus.\"",
+      "m_mContent": "\"The higher the rarity and Spirit Siphon Tier of the selected Vassal, the greater the attribute bonus.\"",
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
@@ -125959,48 +129026,146 @@
       "m_Type": "[]",
       "m_RoleName": "\"\""
     },
-    "\"CouncilHall_Accepted_20680_01\"": {
+    "\"Lounge_Dry_Jewel5_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Accepted_20680_01\"",
-      "m_mContent": "\"Checkmate.\"",
+      "m_Key": "\"Lounge_Dry_Jewel5_20730\"",
+      "m_mContent": "\"Jewels...\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
     },
-    "\"CouncilHall_Agree_20680_01\"": {
+    "\"Lounge_Dry_Jewel4_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Agree_20680_01\"",
-      "m_mContent": "\"Hmm, a nice move.\"",
+      "m_Key": "\"Lounge_Dry_Jewel4_20730\"",
+      "m_mContent": "\"They hold no worth for me...\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
     },
-    "\"CouncilHall_Change_20680_01\"": {
+    "\"Lounge_Dry_Jewel3_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Change_20680_01\"",
-      "m_mContent": "\"Did I miscalculate, or did you think it through more thoroughly?\"",
+      "m_Key": "\"Lounge_Dry_Jewel3_20730\"",
+      "m_mContent": "\"As long as you're here...\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
     },
-    "\"CouncilHall_Disagree_20680_01\"": {
+    "\"Lounge_Dry_Loop_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Disagree_20680_01\"",
-      "m_mContent": "\"Stalemate. You are trapped.\"",
+      "m_Key": "\"Lounge_Dry_Loop_20730\"",
+      "m_mContent": "\"Such a long day... Come, rest in my embrace.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
     },
-    "\"CouncilHall_Disapproved_20680_01\"": {
+    "\"Lounge_Dry_Refuse_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Disapproved_20680_01\"",
-      "m_mContent": "\"I don't recommend you do this.\"",
+      "m_Key": "\"Lounge_Dry_Refuse_20730\"",
+      "m_mContent": "\"Nnh...! You're so naughty...\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
     },
-    "\"CouncilHall_Neutral_20680_01\"": {
+    "\"Lounge_Dry_Face_20730\"": {
       "m_bError": null,
-      "m_Key": "\"CouncilHall_Neutral_20680_01\"",
-      "m_mContent": "\"This move... is questionable.\"",
+      "m_Key": "\"Lounge_Dry_Face_20730\"",
+      "m_mContent": "\"Wherever you are, just whisper my name, and I'll come to you.\"",
       "m_Type": "[]",
-      "m_RoleName": "\"耶芙娜\""
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Dry_Body_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Dry_Body_20730\"",
+      "m_mContent": "\"Feeling better? Just leave everything to me...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Dry_ThighR_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Dry_ThighR_20730\"",
+      "m_mContent": "\"You really can't do without me, hm?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Dry_ThighL_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Dry_ThighL_20730\"",
+      "m_mContent": "\"There, there... you're being so good.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Dry_Tail_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Dry_Tail_20730\"",
+      "m_mContent": "\"Warm? Me too...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_Bottle_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_Bottle_20730\"",
+      "m_mContent": "\"Coming...?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_SprayFace_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_SprayFace_20730\"",
+      "m_mContent": "\"This sensation... I like it.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_SprayBody_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_SprayBody_20730\"",
+      "m_mContent": "\"Mm... Just don't think about anything and let me spoil you.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_SprayThighR_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_SprayThighR_20730\"",
+      "m_mContent": "\"Ah! Oh, don't worry... I'm just a little sensitive there...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_Face_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_Face_20730\"",
+      "m_mContent": "\"You're so well-behaved today... did something happen?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_Body_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_Body_20730\"",
+      "m_mContent": "\"Hehe... you're trying so hard.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Wet_Thigh_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Wet_Thigh_20730\"",
+      "m_mContent": "\"You're so gentle it makes me nervous... You can be a little bolder.\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Action_Soak_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Action_Soak_20730\"",
+      "m_mContent": "\"Well...? You've been eager for this, haven't you?\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Action_Thigh_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Action_Thigh_20730\"",
+      "m_mContent": "\"It's all right... whatever you want... I'll give it to you...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
+    },
+    "\"Lounge_Action_Mark_20730\"": {
+      "m_bError": null,
+      "m_Key": "\"Lounge_Action_Mark_20730\"",
+      "m_mContent": "\"Promise you'll never leave me...\"",
+      "m_Type": "[]",
+      "m_RoleName": "\"提丰休息室\""
     }
   },
-  "status": "processed_18000_items"
+  "status": "processed_18452_items"
 }

@@ -1,5 +1,6 @@
 {
   "className": "CData_Gacha",
+  "timestamp": "2025-10-23T19:25:18.790Z",
   "data": {
     "1": {
       "m_bError": null,
@@ -43,7 +44,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": null,
       "m_UpprotectNum": null,
-      "m_UpprotectGroup": "1"
+      "m_UpprotectGroup": "1",
+      "m_UpprotectNum2": null,
+      "m_SpecialGoodsGroupID": "[]"
     },
     "2": {
       "m_bError": null,
@@ -87,7 +90,9 @@
       "m_ConfirmText": "1022",
       "m_Upprotect": null,
       "m_UpprotectNum": null,
-      "m_UpprotectGroup": "2"
+      "m_UpprotectGroup": "2",
+      "m_UpprotectNum2": null,
+      "m_SpecialGoodsGroupID": "[]"
     },
     "3": {
       "m_bError": null,
@@ -131,7 +136,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": null,
       "m_UpprotectNum": null,
-      "m_UpprotectGroup": "3"
+      "m_UpprotectGroup": "3",
+      "m_UpprotectNum2": null,
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1001": {
       "m_bError": null,
@@ -175,7 +182,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20110",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1002": {
       "m_bError": null,
@@ -219,7 +228,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20230",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1003": {
       "m_bError": null,
@@ -263,7 +274,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20640",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1004": {
       "m_bError": null,
@@ -307,7 +320,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20660",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1005": {
       "m_bError": null,
@@ -351,7 +366,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20610",
       "m_UpprotectNum": null,
-      "m_UpprotectGroup": "5"
+      "m_UpprotectGroup": "5",
+      "m_UpprotectNum2": null,
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1006": {
       "m_bError": null,
@@ -395,7 +412,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20620",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1007": {
       "m_bError": null,
@@ -439,7 +458,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20630",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1008": {
       "m_bError": null,
@@ -483,7 +504,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20580",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1009": {
       "m_bError": null,
@@ -527,7 +550,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20600",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1010": {
       "m_bError": null,
@@ -571,7 +596,9 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20320",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
     },
     "1011": {
       "m_bError": null,
@@ -615,8 +642,148 @@
       "m_ConfirmText": null,
       "m_Upprotect": "20680",
       "m_UpprotectNum": "1",
-      "m_UpprotectGroup": "4"
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
+    },
+    "1012": {
+      "m_bError": null,
+      "m_GachaID": "1012",
+      "m_GachaType": "1",
+      "m_ActId": "1120",
+      "m_StepID": null,
+      "m_windowID": "1012",
+      "m_mName": "\"Azure Whispers\"",
+      "m_TagType": "4",
+      "m_mName2": "\"Limited\"",
+      "m_IsOpen": "1",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[43]",
+      "m_StartTime": "\"2024-10-10 04:00:00\"",
+      "m_EndTime": "\"2024-10-24 03:59:59\"",
+      "m_BannerOrder": "1012",
+      "m_BannerPic": "\"Atlas_Gacha/Gacha_1012\"",
+      "m_BG": "\"Atlas_Gacha/Gacha_BG_1012\"",
+      "m_GachaCover": "\"GachaSubPanel1012\"",
+      "m_Spine": "\"Typhoeus_Base\"",
+      "m_WishTimesRes": null,
+      "m_WishCost": "[101,300]",
+      "m_Wish1Token": "[1051,1]",
+      "m_Wish10Token": "[1051,10]",
+      "m_Special10Token": "[]",
+      "m_ScoreItem": "[]",
+      "m_Jump": "2603",
+      "m_GachaTemplate": "[[1013,101]]",
+      "m_Guarantee": "16",
+      "m_ExtraGuarantee": null,
+      "m_Info": "2134",
+      "m_DisplayID": "1015",
+      "m_MainCurrency": "[99,1051]",
+      "m_WishListID": null,
+      "m_FreeTimes": null,
+      "m_CheapCost": "[]",
+      "m_DayCheapTimes": null,
+      "m_DailyMax": "4999",
+      "m_ShopJump": null,
+      "m_ConfirmText": null,
+      "m_Upprotect": "20730",
+      "m_UpprotectNum": "1",
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
+    },
+    "1013": {
+      "m_bError": null,
+      "m_GachaID": "1013",
+      "m_GachaType": "1",
+      "m_ActId": "1120",
+      "m_StepID": null,
+      "m_windowID": "1013",
+      "m_mName": "\"Skyborn Lament\"",
+      "m_TagType": "4",
+      "m_mName2": "\"Limited\"",
+      "m_IsOpen": "1",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[43]",
+      "m_StartTime": "\"2024-10-10 04:00:00\"",
+      "m_EndTime": "\"2024-10-24 03:59:59\"",
+      "m_BannerOrder": "1013",
+      "m_BannerPic": "\"Atlas_Gacha/Gacha_1013\"",
+      "m_BG": "\"Atlas_Gacha/Gacha_BG_1013\"",
+      "m_GachaCover": "\"GachaSubPanel1013\"",
+      "m_Spine": "\"Selenia_Base\"",
+      "m_WishTimesRes": null,
+      "m_WishCost": "[101,300]",
+      "m_Wish1Token": "[1051,1]",
+      "m_Wish10Token": "[1051,10]",
+      "m_Special10Token": "[]",
+      "m_ScoreItem": "[]",
+      "m_Jump": "2603",
+      "m_GachaTemplate": "[[1014,101]]",
+      "m_Guarantee": "17",
+      "m_ExtraGuarantee": null,
+      "m_Info": "2135",
+      "m_DisplayID": "1016",
+      "m_MainCurrency": "[99,1051]",
+      "m_WishListID": null,
+      "m_FreeTimes": null,
+      "m_CheapCost": "[]",
+      "m_DayCheapTimes": null,
+      "m_DailyMax": "4999",
+      "m_ShopJump": null,
+      "m_ConfirmText": null,
+      "m_Upprotect": "20720",
+      "m_UpprotectNum": "1",
+      "m_UpprotectGroup": "4",
+      "m_UpprotectNum2": "3",
+      "m_SpecialGoodsGroupID": "[]"
+    },
+    "2001": {
+      "m_bError": null,
+      "m_GachaID": "2001",
+      "m_GachaType": "1",
+      "m_ActId": "1120",
+      "m_StepID": null,
+      "m_windowID": "12001",
+      "m_mName": "\"Whistling Peaks\"",
+      "m_TagType": "2",
+      "m_mName2": "\"Synergy\"",
+      "m_IsOpen": "1",
+      "m_UnlockConditionType": "[3]",
+      "m_UnlockConditionData": "[43]",
+      "m_StartTime": "\"2024-10-10 04:00:00\"",
+      "m_EndTime": "\"2024-10-24 03:59:59\"",
+      "m_BannerOrder": "201",
+      "m_BannerPic": "\"Atlas_Gacha/Gacha_2001\"",
+      "m_BG": "\"Atlas_Gacha/Gacha_BG_2001\"",
+      "m_GachaCover": "\"GachaSubPanel2001\"",
+      "m_Spine": "\"\"",
+      "m_WishTimesRes": null,
+      "m_WishCost": "[101,300]",
+      "m_Wish1Token": "[1050,1]",
+      "m_Wish10Token": "[1050,10]",
+      "m_Special10Token": "[]",
+      "m_ScoreItem": "[[1052,1],[1076,1]]",
+      "m_Jump": "2603",
+      "m_GachaTemplate": "[[900001,100]]",
+      "m_Guarantee": "18",
+      "m_ExtraGuarantee": null,
+      "m_Info": "2136",
+      "m_DisplayID": "2001",
+      "m_MainCurrency": "[99,1052,1050]",
+      "m_WishListID": null,
+      "m_FreeTimes": null,
+      "m_CheapCost": "[]",
+      "m_DayCheapTimes": null,
+      "m_DailyMax": "4999",
+      "m_ShopJump": null,
+      "m_ConfirmText": null,
+      "m_Upprotect": null,
+      "m_UpprotectNum": null,
+      "m_UpprotectGroup": "6",
+      "m_UpprotectNum2": null,
+      "m_SpecialGoodsGroupID": "[107,105001,1]"
     }
   },
-  "status": "processed_14_items"
+  "status": "processed_17_items"
 }

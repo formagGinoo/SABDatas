@@ -1,5 +1,6 @@
 {
   "className": "CData_CouncilHallRoleSize",
+  "timestamp": "2025-10-23T19:25:17.815Z",
   "data": {
     "20020": {
       "_type": "nested_dictionary",
@@ -703,13 +704,20 @@
     },
     "20580": {
       "_type": "nested_dictionary",
-      "_count": 1,
-      "_processed": 1,
+      "_count": 2,
+      "_processed": 2,
       "data": {
         "0": {
           "m_bError": null,
           "m_ID": "20580",
           "m_FashionID": null,
+          "m_RoleOffset": "[0,0.013000000268220901,0]",
+          "m_RoleScake": "0.9700000286102295"
+        },
+        "6058001": {
+          "m_bError": null,
+          "m_ID": "20580",
+          "m_FashionID": "6058001",
           "m_RoleOffset": "[0,0.013000000268220901,0]",
           "m_RoleScake": "0.9700000286102295"
         }
@@ -889,7 +897,35 @@
           "m_RoleScake": "0.9800000190734863"
         }
       }
+    },
+    "20720": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20720",
+          "m_FashionID": null,
+          "m_RoleOffset": "[0,0.03799999877810478,0]",
+          "m_RoleScake": "0.8700000047683716"
+        }
+      }
+    },
+    "20730": {
+      "_type": "nested_dictionary",
+      "_count": 1,
+      "_processed": 1,
+      "data": {
+        "0": {
+          "m_bError": null,
+          "m_ID": "20730",
+          "m_FashionID": null,
+          "m_RoleOffset": "[0,0.03799999877810478,0]",
+          "m_RoleScake": "0.8700000047683716"
+        }
+      }
     }
   },
-  "status": "processed_58_items"
+  "status": "processed_60_items"
 }
